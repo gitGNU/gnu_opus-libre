@@ -1,0 +1,31 @@
+ALREADY ACHIEVED:
+
+- global layout and source code organization
+- base functions and syntax
+- music from the first Act
+
+CURRENTLY PROCESSED:
+
+- Complete Vocal score (with piano accompaniment in instruments/reduction.ly)
+- Add dynamics and articulation marks
+
+NOT ACHIEVED YET:
+
+- Orchestration (full_score.ly)
+- Layout improvements (graphics, etc)
+- Interludes
+
+LONG-TERM TODO LIST:
+
+- Write the Overture
+- Edit the Interludes
+- Write makefiles
+- Vocal score first release candidate
+- Full score first release candidate
+- Individual parts release candidate
+
+LONG SHOT IMPROVEMENTS:
+
+- Foreign translations
+- Rewrite the \include function
+- ...

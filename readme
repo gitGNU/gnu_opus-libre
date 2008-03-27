@@ -1,0 +1,21 @@
+Opéra Libre is not a software, though it is 
+developed and licensed like one. Opéra libre is 
+just... an opera; a music score that is meant to be 
+printed, read, played and sung.
+
+
+To compile the source code and obtain the score as 
+a PDF, PostScript file, as a PNG image or a MIDI 
+sound file, you will have to use the LilyPond music 
+typesetting engine. It is a GNU Free software that 
+is both powerful and simple to learn, and that you 
+can download on http://www.lilypond.org. It runs on 
+most modern Operating Systems, and has been ported 
+for various architectures.
+
+
+Having installed LilyPond, just compile the main 
+source file, either vocal_score.ly for the Vocal 
+Score, full_score.ly for the Full score or 
+livret_score.ly for the libretto (these options are 
+not fully implemented yet).
