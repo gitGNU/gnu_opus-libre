@@ -7,6 +7,7 @@
 
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
+\include "./texte/didascalies.ly"
 
 \include "./definitions/functions.ly"
 \include "./definitions/structure.ly"
@@ -299,6 +300,31 @@ ActeDeuxSceneDeux={ \ReductionLayout
 >>
 }
 
+ActeDeuxSceneTrois={ \ReductionLayout
+<<
+\new ChoirStaff
+	<<
+		\new Staff \new Voice = "sopranoUn" \ActeDeuxSceneTroisSopranoUn
+    \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneTroisSopranoUnTexte }
+		\new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneTroisSopranoDeux
+    \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneTroisSopranoDeuxTexte }
+		\new Staff \new Voice = "contralto" \ActeDeuxSceneTroisContralto
+    \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneTroisContraltoTexte }
+    \new Staff \new Voice = "tenor" \ActeDeuxSceneTroisTenor
+    \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneTroisTenorTexte }
+    \new Staff \new Voice = "barytonUn" \ActeDeuxSceneTroisBarytonUn
+    \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneTroisBarytonUnTexte }
+    \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneTroisBarytonDeux
+    \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
+    >> 
+	\new PianoStaff { \Accompagnement <<
+	\new StaffPiano = "droite"		\ActeDeuxSceneTroisMainDroite
+	\new TimeSig {\PianoTimeSig \ActeDeuxSceneTroisMesures }
+	\new StaffPiano = "gauche"		\ActeDeuxSceneTroisMainGauche
+		>> }
+>>
+}
+
 \book {
   \header {
 	  title = \OperaTitre
@@ -307,7 +333,7 @@ ActeDeuxSceneDeux={ \ReductionLayout
 	  composer =  \OperaPartition
     tagline = \OperaNotice }
 
-%{\score {
+\score {
 	   \Prologue
     \header {
 	    piece = \PrologueTitre
@@ -367,7 +393,7 @@ ActeDeuxSceneDeux={ \ReductionLayout
 	    piece = \ActeDeuxSceneUnTitre
 	    }
 }%}
-\score {
+%{\score {
       \ActeDeuxSceneUnBis
       \header {
         piece = \Separateur

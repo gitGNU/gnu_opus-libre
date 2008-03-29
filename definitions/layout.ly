@@ -28,6 +28,8 @@ AdditionalLayout ={
   #(override-auto-beam-setting '(end 1 16 2 2) 1 4 'Score)
   #(override-auto-beam-setting '(end 1 16 2 2) 2 4 'Score)
   #(override-auto-beam-setting '(end 1 16 2 2) 3 4 'Score)
+  #(override-auto-beam-setting '(end 1 16 2 8) 1 4 'Score)
+  \set Score.tieWaitForNote = ##t
   \set Score.ignoreMelismata = ##t
   \override Score.LyricText #'self-alignment-X = #-0.5
   \override Score.PaperColumn #'keep-inside-line = ##t

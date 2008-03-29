@@ -2648,12 +2648,87 @@ ActeDeuxSceneDeuxMainGauche = {
 
 ActeDeuxSceneTroisMainDroite = {
   \relative {
+    \repeat unfold 8 { sold'16 sold la dod, sold' sold | la dod, sold' sold la dod, | }
+    \pl {\repeat unfold 6 {mi8 do si la sold la si} } {
+    \repeat unfold 21 {sold'16 sold la do,} } |
+    <la sold'> sold' <sold, la'> <sold la> <sold la> <sold la> |
+    <sold la> <sold la> <la sold'> <sold la> <la sold'> <sold la> |
+    <sold la'> <sold la> <sold la> <sold la> <sold la> <sold la> |
+    <sold la'> la' <sol, sib'> <sol lab> <la sold'> sol' |
+    <sold,la'> <sold la> <sold la> <sold la> <sold la> <sold la> |
+    <mi' lad> lad si mi, sold sold <mi la> la, lad' lad si mi, |
+    <la,sold'> sold' <sold, la'> <sold la> <sold la> <sold la> |
+    <sold la> <sold la> <la sold'> <sold la> <la sold'> <sold la> |
+    <sold la'> <sold la> <sold la> <sold la> <sold la> <sold la> |
+    <re' la'> la' sib mi, <sib fad'> fad' sol re la' la sib mib, |
+    <la,sold'> sold' <sold, la'> <sold la> <sold la> <sold la> |
+    <sold la> <sold la> <la sold'> <sold la> <la sold'> <sold la> |
+    <sold la'> <sold la> <sold la> <sold la> <sold la> <sold la> |
+    <la sold'> sold' <sold, la'> <sold la> <sold la> <sold la> |
+    <red' sid'> sid' dod sold <dod, lad'> lad' si re, sid' sid dod dod, |
+    si' <red, si'> do' do, <si sold'> <la sold'> |
+    <sold la'> <sold la> <sold la> <sold la> <sold la> <sold la> |
+    <la sold'> sold' <sold, la'> <sold la> <sold la> <sold la> 
     
+    \clef bass
+    <re sib' re> <re sib' re> <sib' re> <sib re> |
+    <re,sib' re> <re sib' re> <sib' re> <sib re> |
+    <re,sib' re> <sib' re> \clef treble <sib re sold> <sib re sold> |
+    <sib re la'> <sib re> <sib re fad> <sib re fad> |
+    <sib re sol> <sib re> <sib re> <sib re> \clef bass |
+    <re,sib' re> <re sib' re> <sib' re> <sib re> |
+    <re,sib' re> <re sib' re> <sib' re> <sib re> |
+    <mi, do' mi> <mi do'  mi> \clef treble <do'  mi sold> <do  mi sold> |
+    <do mi   la> <do mi>  <do fad>  <do fad> |
+    <do mi sib'> <do mi>  \clef bass <mi, do' mi> <do' mi> |
+    <mi, do' mi> <do' mi> \clef treble <do mi sold> <do mi sold> |
+    <do mi   la> <do mi>  \clef bass <mi, do' mi> <do' mi> |
+    <mi, do' mi> <do' mi> <mi, do' mi> <do' mi> |
+    <mi, do' mi> <do' mi> <mi, do' mi> <do' mi> \clef treble |
+    <si dod sold'> <si dod sold'> <si dod la'>  <si dod> \clef bass |
+    <mid,dod' mid> <mid dod' mid> <mid dod'mid> <mid dod' mid> \clef treble |
+    <si'dod sold'> <si dod> <si dod sold'>  <si dod> |
+    <si dod la'>  <dod mid> \clef bass <mid, dod' mid> <mid dod' mid>|
+    <mid dod' mid> <mid dod' mid> <mid dod'mid> <mid dod' mid> |
+    <mid dod' mid> <dod' mid> \clef treble <dod mid sold> <dod mid sold> |
+    <dod mid la> <dod mid> <dod fad> <dod fad> |
+    <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
+    <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
+    <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
+    R4
   }
 }
 
 ActeDeuxSceneTroisMainGauche = {
   \relative { \clef bass
+    R4.*9
+    <re,, la' mi'>4.~ <re la' mi'>~ <re la' mi'>4 r8 |
+    R4.
+    <fad dod' sold'>4.~ <fad dod' sold'>~ <fad dod' sold'>8 r4 |
+    <fa do' la'>4.\arpeggio \laissezVibrer s4.*6
+    <la mi' si'>4.\arpeggio \laissezVibrer s4.*3
+    <fa do' la'>4.\arpeggio \laissezVibrer s4.
+    <la mi'>4.
     
+    dod,16 <sold' la> <mi' fa>8 r | re, <si' fad' sol> r |
+    dod,16 <sold' la> <mi' fa>8 r | re, <lad' si fad'> r |
+    fad16 dod' sold'8 r |
+    sol32~ do,~ fa,~ re'~ <fa, do' re sol la>4~ <fa do' re sol la>4 r8 |
+    dod16  <sold' la> <mi' fa>8 r | re, <reb' mib> r |
+    dod,16 <fad sold> dod'8 r |
+    re32  sol, do,~ sol'~ <do, sol' re'>4~ | <do sol' re'>4 r8 |
+    dod16  <sold' la> <mi' fa>8 r | sol,, <lad' si fad'> r |
+    dod,16 <sold' la> <mi' fa>8 r | sol, <fa re' mib> lab |
+    fad'32~ si,~ mi,16~ <mi si' fad'>4~ <mi si' fad'> r8 | mi re fa
+    dod16  <sold' la> <mi' fa>8 r | r r16 dod, \t {dod dod dod} |
+    
+    \repeat unfold 7 {<re sib'>8 <sib' re>}
+    \repeat unfold 4 {<dod, sold'> sold'}
+    dod,16 <sold' la> <mi' fa>8  |
+    r sold, <dod,sold'> sold'
+    si,16 sold' <red' mi>8 r si,16 sold' <red' mi>8 r |
+    \repeat unfold 4 {<si,sold'>8 sold'}
+    \repeat unfold 3 {<sib, fa'>  fa'  }
+    R4
   }
 }

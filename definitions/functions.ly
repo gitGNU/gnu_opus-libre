@@ -195,3 +195,9 @@ startTxt =
 pl = 
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
+
+#(define-markup-command (did layout props text) (markup?)
+  (interpret-markup layout props
+    (markup #:override '(line-width . 40)
+    #:box #:wordwrap-string text)))
+   

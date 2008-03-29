@@ -10,8 +10,9 @@ PrologueMesures = {
   %%% Introduction %%%
   
   \time 3/4
-  \partial 4 s4 s2.*3
-  \time 4/4 s1
+  \partial 4 s4 R2.*3
+  \mark \markup \did \PrologueA
+  \time 4/4 R1
   \time 2/4
   \mark \markup{ \large \bold Largo } R2*2
   \time 3/4
@@ -27,7 +28,8 @@ PrologueMesures = {
   \time 2/4
   R2*2 |
   \time 3/4
-  R2. |
+  R2.
+  \mark \markup \did PrologueB
   \time 2/4
   R2*2 |
   \time 3/4
@@ -926,4 +928,12 @@ ActeDeuxSceneDeuxMesures = {
   \time 3/2 R1.*2
   \time 3/4 R2.
   \time 2/2 R1 \bar "||"
+}
+
+ActeDeuxSceneTroisMesures = {
+  \time 3/8
+  \mark \markup { \huge \bold "Larghetto" }
+  R4.*51 \bar "||"
+  \time 2/8 R4*25
+  
 }

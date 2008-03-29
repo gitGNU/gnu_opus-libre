@@ -88,3 +88,10 @@ ActeDeuxSceneDeuxContralto= { \Contralto
     R1 R4. | R1*5 | r4 mib'16 mib fa8 r2 |
   }
 }
+
+
+ActeDeuxSceneTroisContralto= { \Contralto
+  \relative {
+    
+  }
+}

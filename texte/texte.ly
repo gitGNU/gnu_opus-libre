@@ -747,4 +747,21 @@ ActeDeuxSceneDeuxBarytonDeuxTexte = \lyricmode {
 
 %%%%%%%%%%%%%%%%%%%%  Troisième Tableau %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+ActeDeuxSceneTroisSopranoUnTexte = \lyricmode {
+}
+
+ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
+}
+
+ActeDeuxSceneTroisContraltoTexte = \lyricmode {
+}
+
+ActeDeuxSceneTroisTenorTexte = \lyricmode {
+}
+
+ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
+}
+
+ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
+}
 

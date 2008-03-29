@@ -250,6 +250,17 @@ ActeDeuxSceneDeuxBarytonUn = { \BarytonUn
 
 ActeDeuxSceneTroisBarytonUn = { \BarytonUn
   \relative {
+    R4.*15 r4 r16 do, | mi8 dod r16 mi | sold8 sol r16 do, |
+    mi8. dod16 fa mi | sold4 r16 sol |
+    \times 3/4 {sold8 sol fa mi} sol r r16 sol |
+    \times 3/4 {sold8 sol fa mi} sol4 r8 |
+    r4 r16 mi | sold8 fa r16 sol | si8 sold r16 la |
+    \times 3/4 {sold8 la  si do} la8. la16 la8 |
+    \times 3/4 {sold8 la  si do} la4 r8 | R4.*20
     
+    R4*7 r8 si r16 si r do |
+    r si si dod sold4 |
+    r8 fa la mi \t {sold dod fa} | do,4 R4*8
+    r8 re
   }
 }

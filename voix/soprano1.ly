@@ -127,3 +127,10 @@ ActeDeuxSceneDeuxSopranoUn= { \SopranoUn
     la4 r16 la sol sib | fad2 r1 |
   }
 }
+
+
+ActeDeuxSceneTroisSopranoUn= { \SopranoUn
+  \relative {
+    
+  }
+}

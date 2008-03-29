@@ -299,6 +299,16 @@ ActeDeuxSceneDeuxBarytonDeux = { \BarytonDeux
 
 ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
   \relative {
-    
+    R4.*3 r4 dod,8 | mi4. dod4 r8 | r4 mi8 mi r16 mi8. |
+    r8 si' la | mi4.~ mi8 r mi | mi8. mi | r8 dod' si |
+    mi4. r8 mi la si mi, mi' | mi4.~ mi4 r8 | R4.*12
+    dod32 re, dod' dod mi4 dod32 re, dod' dod | mi8 r16 sib mib sib |
+    sol re si!8 r16 sib' | mib sib sol re si! sib' |
+    dod re, mi'8 \t {r16 re, dod'} | mi4.~ mi4 r8 |
+    r16 sib8 reb8. | lab4 sib8 | fa8. si!8 la!16 | re!4.~ re8 r4 |
+    r4 si8 | re16 si fad mib sib8 | r16 si'! re si fad mib |
+    sib4 r8 | r16 si'!8. re8 | sib4 r8 | r8 la do |
+    solb8. lab | mib8 sibb' lab | re4 | R4*14 r8 dod~ dod r |
+    mi4 R4*7
   }
 }
