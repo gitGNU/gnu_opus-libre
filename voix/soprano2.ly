@@ -156,8 +156,11 @@ ActeDeuxSceneDeuxSopranoDeux= { \SopranoDeux
 ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
   \relative {
     R4.*51 R4*2 mi32 mi sold16 r mi | re32 re la'16 r sold |
-    mi8 re32 mi la16~| la mi sold re'~| re la mi sold | si,4 R4*10
+    mi8 re32 mi la16~| la mi sold re'~| re la mi sold | si,4 R4*11
     sib'32 sib re16 r sib | la32 la mi'16 r8 |
-    re16 la re,32 mi sold16~| sold la sol' re | mi,4 R4*2
+    re16 la re,32 mi sold16~| sold la sol' re | mi,4 R4*3 R4. 
+    lab16. sol32 r16 do | r do do do | do re la8 |
+    r16 lab sol sol | si si \t {sib sib sib } | re4 | R4
+    R4.
   }
 }

@@ -184,5 +184,6 @@ ActeDeuxSceneDeuxTenor = { \Tenor
 ActeDeuxSceneTroisTenor = { \Tenor
   \relative {
     R4.*51 r8 sold16 sold la8 fad16 fad sol8 r |
+    R4*14  r8 sold16 sold la8 fad16 fad sol8 r |
   }
 }

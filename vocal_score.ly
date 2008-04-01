@@ -333,7 +333,7 @@ ActeDeuxSceneTrois={ \ReductionLayout
 	  composer =  \OperaPartition
     tagline = \OperaNotice }
 
-\score {
+%{\score {
 	   \Prologue
     \header {
 	    piece = \PrologueTitre
@@ -405,7 +405,7 @@ ActeDeuxSceneTrois={ \ReductionLayout
       piece = \ActeDeuxSceneDeuxTitre
     }
 }%}
-%{\score {
+\score {
     \ActeDeuxSceneTrois
     \header {
       piece = \ActeDeuxSceneTroisTitre

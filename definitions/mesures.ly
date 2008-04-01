@@ -934,6 +934,8 @@ ActeDeuxSceneTroisMesures = {
   \time 3/8
   \mark \markup { \huge \bold "Larghetto" }
   R4.*51 \bar "||"
-  \time 2/8 R4*25
-  
+  \time 2/8 R4*27
+  \time 3/8 R4.
+  \time 2/8 R4*7
+  \time 3/8 
 }

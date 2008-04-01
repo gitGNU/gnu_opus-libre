@@ -2682,7 +2682,7 @@ ActeDeuxSceneTroisMainDroite = {
     <do mi   la> <do mi>  <do fad>  <do fad> |
     <do mi sib'> <do mi>  \clef bass <mi, do' mi> <do' mi> |
     <mi, do' mi> <do' mi> \clef treble <do mi sold> <do mi sold> |
-    <do mi   la> <do mi>  \clef bass <mi, do' mi> <do' mi> |
+    <do mi   la> <do mi>  <do mi> <do mi> \clef bass |
     <mi, do' mi> <do' mi> <mi, do' mi> <do' mi> |
     <mi, do' mi> <do' mi> <mi, do' mi> <do' mi> \clef treble |
     <si dod sold'> <si dod sold'> <si dod la'>  <si dod> \clef bass |
@@ -2696,6 +2696,21 @@ ActeDeuxSceneTroisMainDroite = {
     <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
     <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
     R4
+    <lab re sol>16<lab re sol> <lab re sol> <lab re sol> |
+    <lab re sol>  <lab re sol> <lab re sol> <lab re sol> |
+    <lab re sol>  <lab re sol> <lab re sol> <lab re sol> r8 |
+    <lab dod sol'>16<lab dod sol'> <lab dod sol'> <lab dod sol'> |
+    <lab dod sol'>  <lab dod sol'> <lab dod sol'> <lab dod sol'> |
+    <lab dod sol'>  <lab dod sol'> <lab dod sol'> <lab dod sol'> |
+    R4
+    <fa do'!sol'>16<do' sol'> <fa, do' sol'> <do' sol'> |
+    <fa,do' sol'>  <fa do' sol'> <fa do' sol'> <fa do' sol'> |
+    <fa do' sol'>  <fa do' sol'> <fa do' sol'> <fa do' sol'> |
+    
+    <la mi' sold> <la mi' sold> <sold mi' la> <sold mi'> <sold mi'> <sold mi'> |
+    <sold mi'> <sold mi'> <la mi' sold> <la mi'> <la mi' sold> <la mi'> |
+    <sold mi' la> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'>|
+    <sold mi'> <sold mi'> <la mi' sold> <la mi'> <la mi' sold> <la mi'> |
   }
 }
 
@@ -2730,5 +2745,11 @@ ActeDeuxSceneTroisMainGauche = {
     \repeat unfold 4 {<si,sold'>8 sold'}
     \repeat unfold 3 {<sib, fa'>  fa'  }
     R4
+    \repeat unfold 3 {<sib mi la>8 <sib la'>} r8 |
+    \repeat unfold 3 {<sib mib la> <sib la'>} R4 |
+    \repeat unfold 4 sib8 r sib
+    
+    sold16 <red' mi> sol!8 r | re, <sib' mib> r |
+    sold   <red' mi> sol!8 r | re, <sib' mib> r |
   }
 }
