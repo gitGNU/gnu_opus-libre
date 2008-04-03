@@ -1,3 +1,11 @@
+%------------------------------------------------------------------%
+% Opéra Libre -- personnages.ly                                    %
+%                                                                  %
+% (c) Lewis Trondheim & Valentin Villenave, 2008                   %
+%                                                                  %
+%------------------------------------------------------------------%
+
+
 SopranoUnName=  "Le Docteur"
 SopranoUnShortName= "Doct."
 

@@ -41,7 +41,7 @@
     \override VerticalAxisGroup #'remove-empty = ##f
 		\remove "Time_signature_engraver"
   }
-  \context{
+  \context {
     \Staff
     \remove "Axis_group_engraver"
     \consists "Hara_kiri_engraver"
@@ -67,7 +67,7 @@
   between-system-padding = #1
 }
 
-Prologue={ \ReductionLayout
+Prologue = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -84,7 +84,7 @@ Prologue={ \ReductionLayout
 >>
 }
 
-ActeUnSceneUn={ \ReductionLayout
+ActeUnSceneUn = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -103,7 +103,7 @@ ActeUnSceneUn={ \ReductionLayout
 >>
 }
 
-ActeUnSceneUnBis={ \ReductionLayout
+ActeUnSceneUnBis = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -121,7 +121,7 @@ ActeUnSceneUnBis={ \ReductionLayout
 }
 
 
-ActeUnSceneDeux={ \ReductionLayout
+ActeUnSceneDeux = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -155,7 +155,7 @@ ActeUnSceneTrois = { \ReductionLayout
 >>
 }
 
-ActeUnSceneTroisBis ={ \ReductionLayout
+ActeUnSceneTroisBis = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -172,7 +172,7 @@ ActeUnSceneTroisBis ={ \ReductionLayout
 >>
 }
 
-ActeUnSceneTroisTer={ \ReductionLayout
+ActeUnSceneTroisTer = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -189,7 +189,7 @@ ActeUnSceneTroisTer={ \ReductionLayout
 >>
 }
 
-ActeUnSceneQuatre={ \ReductionLayout
+ActeUnSceneQuatre = { \ReductionLayout
 <<
 \new ChoirStaff
 	 <<
@@ -237,7 +237,7 @@ ActeUnSceneQuatre={ \ReductionLayout
 >>
 } %}
 
-ActeDeuxSceneUn={ \ReductionLayout
+ActeDeuxSceneUn = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -256,7 +256,7 @@ ActeDeuxSceneUn={ \ReductionLayout
 >>
 }
 
-ActeDeuxSceneUnBis={ \ReductionLayout
+ActeDeuxSceneUnBis = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -275,7 +275,7 @@ ActeDeuxSceneUnBis={ \ReductionLayout
 >>
 }
 
-ActeDeuxSceneDeux={ \ReductionLayout
+ActeDeuxSceneDeux = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<
@@ -300,7 +300,7 @@ ActeDeuxSceneDeux={ \ReductionLayout
 >>
 }
 
-ActeDeuxSceneTrois={ \ReductionLayout
+ActeDeuxSceneTrois = { \ReductionLayout
 <<
 \new ChoirStaff
 	<<

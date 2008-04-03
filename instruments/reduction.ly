@@ -2711,6 +2711,20 @@ ActeDeuxSceneTroisMainDroite = {
     <sold mi'> <sold mi'> <la mi' sold> <la mi'> <la mi' sold> <la mi'> |
     <sold mi' la> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'>|
     <sold mi'> <sold mi'> <la mi' sold> <la mi'> <la mi' sold> <la mi'> |
+    <sold mi' la> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'>|
+    <la mi' sold> <la mi' sold> <sold mi' la> <sold mi'> <sold mi'> <sold mi'> |
+    <sib mi> <sib mi> <la mi' sold> <la mi' sold> <sold mi' la> <sold mi'> |
+    \pl {<la fa'> <sib fa'> <sib fa'> <sib fa'> <sib fa'> <sib fa'>} {sib'4 r8}
+    <sib,mib>16 <sib mib> <sib mib sold> <sib mib sold> <sib mib la> <sib mib> |
+    \pl {<la fa'> <sib fa'> <sib fa'> <sib fa'> <sib fa'> <sib fa'>} {sib'4 r8}
+    <sib,mib>16 <sib mib> <sib mib lad> <sib mib lad> <sib mib si'!> <sib mib> |
+    <re do'> <la re sol> <la re sol> <la re sol> <la re sol> <la re sol> |
+    <sib mib> <sib mib> <sib mib la> <sib mib> <sib mib la> <sib mib> |
+    <do fa sib> <do fa> <sol do fa> <do fa> <re sold dod> <re sold dod> |
+    
+    <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
+    <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
+    <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
   }
 }
 
@@ -2749,7 +2763,14 @@ ActeDeuxSceneTroisMainGauche = {
     \repeat unfold 3 {<sib mib la> <sib la'>} R4 |
     \repeat unfold 4 sib8 r sib
     
+    sold16 <red' mi> sol!8 r | re, <fad mib'> r |
     sold16 <red' mi> sol!8 r | re, <sib' mib> r |
-    sold   <red' mi> sol!8 r | re, <sib' mib> r |
+    sold16 <red' mi> sol!8 r | r sold,16 sold la8 sol4 sib8 |
+    fad16  si <mi la>8 r | \pl {do,4 fa8} {r <si mi>4} |
+    fad16  si <mi la>8 r | \pl {do,4 fa8} {r <si mi>4} |
+    fad8   <si mi> fad
+    fa16   si mi8 r16 fad, | <mi re'>4 sol8 |
+    
+    
   }
 }

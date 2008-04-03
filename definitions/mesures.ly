@@ -937,5 +937,6 @@ ActeDeuxSceneTroisMesures = {
   \time 2/8 R4*27
   \time 3/8 R4.
   \time 2/8 R4*7
-  \time 3/8 
+  \time 3/8 R4.*14
+  \time 2/8 R4
 }

@@ -1,3 +1,11 @@
+%------------------------------------------------------------------%
+% Opéra Libre -- decoupage.ly                                      %
+%                                                                  %
+% (c) Lewis Trondheim & Valentin Villenave, 2008                   %
+%                                                                  %
+%------------------------------------------------------------------%
+
+
 OperaTitreTexte= "Affaire Étrangère"
 OperaSousTitreTexte= "Opéra en deux actes"
 OperaLivretTexte= "Lewis Trondheim"
