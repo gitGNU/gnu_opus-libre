@@ -768,8 +768,10 @@ ActeDeuxSceneTroisTenorTexte = \lyricmode {
 }
 
 ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
+  Que fai -- re_?
 }
 
 ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
+  Où \dash suis -- je_?
 }
 

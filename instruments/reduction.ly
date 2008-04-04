@@ -2725,6 +2725,27 @@ ActeDeuxSceneTroisMainDroite = {
     <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
     <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
     <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
+    <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
+    <do sol' re'> <do sol' re'> <do la'   > <do la'   > |
+    <re sib'> <re sib'> <fa lad si> <fa lad si> |
+    <mi sib' do> <mi sib' do> <mib sib' dod> <mib sib' dod> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <mi do' mi>8 r R4 | r8 <re sib' re>16 <re sib' re> <mi do' mi>8 r R4 | 
+    <dod sib' dod>16 <dod sib' dod> <re sib' re> <re sib' re> |
+    <mi do'! mi> mi <mi sold> <mi sold> <mi la> do <dod mi> <dod mi>|
+    <do fa> do <mi sold> <mi sold> | <mi la> <sold dod> <red la' red> <red la' red>|
+    <re la' mi'> <re la' mi'> <re si' mi> <re si' mi> |
+    <re la' mi'> <re la' mi'> <re si' mi> <re si' mi> |
+    <re la' mi'> <re mi> <re mi> <re mi> |
+    <re mi sold> <re mi> <re mi sold> <re mi> |
+    <re mi la> <re mi> <dod red> <dod red> |
+    <dod red fad> <dod red> <dod red fad> <dod red> |
+    <dod red sol> <dod red> <dod red> <dod red> |
+    <dod red> <do re sol> <do re sol> <do re sol> |
+    <do re sol> <do re sol> <do re sol> <do re sol> |
+    
+    
   }
 }
 
@@ -2770,7 +2791,15 @@ ActeDeuxSceneTroisMainGauche = {
     fad16  si <mi la>8 r | \pl {do,4 fa8} {r <si mi>4} |
     fad8   <si mi> fad
     fa16   si mi8 r16 fad, | <mi re'>4 sol8 |
-    
-    
+    mib32~ sib'~ fa'16~ <mib, sib' fa'>8~ | 
+    <mib sib' fa'>4~ <mib sib' fa'>~ <mib sib' fa'>~ <mib sib' fa'>8 r |
+    <mib sib'>4 sib' |
+    <re, sib'>8 <re sib'> <re sib'> <re sib'> <dod sold'> r R4 |
+    <sib' re>16 <sib re> <re,sib'> <re sib'> <dod sold'>8 r R4 |
+    <mib sib'>8 <re sib'>16 <re sib'>
+    <dod sold'>8 sold' <dod, sold'> sold' <dod, sold'> sold' <dod, sold'> sold'|
+    do,32[ ~ sol'~ <do, sol' re'>16 sol'8] |
+    <do, sol'> sol' <do, sol'> sol' <do, sol'> sol' <do, sol'> sol'  |
+    <do, sol'> <si sol'> <sol' si> sol <si, sol'> sol' <si, sol'> sol'|
   }
 }

@@ -92,7 +92,12 @@ ActeDeuxSceneDeuxContralto= { \Contralto
 
 ActeDeuxSceneTroisContralto= { \Contralto
   \relative {
-    R4.*51 R4*27 R4. R4*5 la16 do re8~ re lab16 do |
-    re8 r4 | R4.*13 
+    R4.*51 R4*27 R4. R4*5 
+    la16 do re8~ re lab16 do | re8 r4 | R4.*13 R4*7
+    la16 do re8  re16 mi sol8|
+    r8 sold16 sold la8 fad16 fad sol!4
+    r8 sold16 sold la8 fad16 fad sol!4 R4*4
+    r8 sold16 sold la8 fad16 fad sol!4 R4*6
+    
   }
 }

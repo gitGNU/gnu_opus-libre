@@ -161,6 +161,8 @@ ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
     re16 la re,32 mi sold16~| sold la sol' re | mi,4 R4*3 R4. 
     lab16. sol32 r16 do | r do do do | do re la8 |
     r16 lab sol sol | si si \t {sib sib sib } | re4 | R4
-    R4.*14 R4
+    R4.*14 R4*15 r8 r16 sold, | la sold mi re | mi8 sold |
+    la16 mi la re | mi4 | R4*3| r16 sold, sol fa | fa8 mib| R4*3
+    
   }
 }
