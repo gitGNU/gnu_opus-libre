@@ -701,6 +701,18 @@ ActeDeuxSceneUnBisBarytonDeuxTexte = \lyricmode {
   Qui a la chan -- ce de co -- nnaî -- tre  son sort, et la da -- te de sa mort_?
   U -- ne bo -- nne nou -- velle_? Très bo -- nne nou -- velle_?
   Ex -- trê -- me -- ment bo -- nne nou -- velle_!...
+  Aaah_! __ _ Aah_! \dash Ah -- ah_! \dash Ah -- aah_!
+  J'ai pris u -- ne nou -- ve -- lle dé -- ci -- sion
+  con -- cer -- nant vo -- tre mort_!
+  J'ai dé -- ci -- dé...
+  ON N'IN -- TERR -- ROMPT PAS LE ROI_!
+  JE SUIS LE ROI DE TOUT.
+  JE SUIS LE ROI DE TOUT.
+  JE SUIS LE ROI DE TOUT_! __ _
+  TAI -- \dash SEZ -- VOUS_!
+  Il se sou -- vient... __ _
+  Et moi, je me sou -- viens de vous châ -- tier en -- co -- re plus fort_;
+  je vais...
 }
 
 ActeDeuxSceneUnBisBarytonUnTexte = \lyricmode {
@@ -709,6 +721,21 @@ ActeDeuxSceneUnBisBarytonUnTexte = \lyricmode {
   A -- lors, en ce cas, j'ai pour vous u -- ne bo -- nne nou -- velle,
   très bo -- nne nou -- velle_; ex -- trê -- me -- ment __ _ bo -- nne nou -- velle_!...
   Vous a -- vez ga -- gné... un coup de poing gra -- tuit.
+  
+  E -- ssay -- ez... E -- ssay -- ez, et vous ve -- rrez.
+  Un pe -- tit coup. Un pe -- tit coup de rien du tout.
+  Ce -- tte dé -- ci -- sion, je m'en fi -- _ che_; je m'en fi -- _ che_;
+  je m'en fi -- _ che_; je m'en fi -- _ che_; je m'en fi -- _ che_; je...
+  Je m'en fi -- _ che,  je m'en fi -- _ che_!
+  Vous n'ê -- tes pas mon roi.
+  Le rien de rien du tout.
+  Le rien de rien du tout.
+  Le rien de rien du tout_! Les nu -- a -- ges \dash eux -- même
+  ne vous o -- bé -- i -- ssent pas_; moi, quand je vo -- lais,
+  je gli -- ssais par -- mi eux_; j'en fai -- sais mes a -- mis_;
+  j'a -- llais en leur coeur et re -- ssor -- tais i -- rra -- dié
+  de bo -- nheur... Oh. Je... Je me sou -- viens.
+  Je me sou -- viens... __ _
   
 }
 
@@ -727,6 +754,14 @@ ActeDeuxSceneUnBisTenorTexte = \lyricmode {
   Oui, di -- \dash tes -- moi... __ _
   L'es -- pa -- ce d'un in -- stant, on doit se croi -- re Roi. __ _ Ou mê -- me
   \ital Dieu, qui sait... __ _ Di --  \dash tes -- moi... Oui, di -- \dash tes -- moi...
+  Hein_? Qui_? Moi_? Non... MOI_?!! Non, non __ _ non, non non non non...
+  Ho -- la -- laa_! Ho -- la -- la -- laaa... __ _
+  AAAH_! __ _ C'est lui_! C'est lui_! Ma -- jes -- té, c'est l'É -- tran -- ger_!
+  Il vous a bou __ _ rré de coups de pied.
+  Ce -- tte dé -- ci -- si -- on se -- ra d'u -- ne beau -- té ba -- roque,
+  à l'i -- ma -- _ ge roy -- a -- le de mon fort es -- ti -- mé mo -- narque...
+  Tai -- \dash sez -- vous_! Pe -- tit de rien du tout.
+  Il se sou -- vient... __ _
 }
 
 %%%%%%%%%%%%%%%%%%%%  Deuxième Tableau  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -734,12 +769,21 @@ ActeDeuxSceneUnBisTenorTexte = \lyricmode {
 ActeDeuxSceneDeuxSopranoUnTexte = \lyricmode {
   Vous n'ê -- tes pas ré -- ta -- bli, vo -- tre tête est meur -- trie.
   Un ban -- dage, un ban -- dage \leftSyl …se -- rait plus sage.
+  
 }
 
 ActeDeuxSceneDeuxSopranoDeuxTexte = \lyricmode {
+  Vo -- ler... Vo -- ler...
+  Vo -- ler...
+  Vo -- ler, vo -- ler...
+  Gli -- sser en l'air et les nu -- ées...
+  S'é -- le -- ver, s'é -- le -- ver...
+  Res -- ter en la clar -- té de l'A -- stre d'é -- té,
+  et y brû -- ler de li -- ber -- té...
 }
 
 ActeDeuxSceneDeuxContraltoTexte = \lyricmode {
+  Brû -- lons ça... __ _
 }
 
 ActeDeuxSceneDeuxTenorTexte = \lyricmode {
@@ -747,10 +791,13 @@ ActeDeuxSceneDeuxTenorTexte = \lyricmode {
 
 ActeDeuxSceneDeuxBarytonUnTexte = \lyricmode {
   Ces briques… __ _ Je… Je me sou -- viens de ma mai -- son…
+  Ces crânes... __ _ Je... Je me sou -- viens de mes a -- mis...
 }
 
 ActeDeuxSceneDeuxBarytonDeuxTexte = \lyricmode {
   Chez moi, chez moi, je veux a -- ller chez moi_!
+  Ma tête, ma tête, j'ai très mal à ma tête_;
+  ex -- trê -- me -- ment mal à ma tête_!
 }
 
 %%%%%%%%%%%%%%%%%%%%  Troisième Tableau %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -759,19 +806,61 @@ ActeDeuxSceneTroisSopranoUnTexte = \lyricmode {
 }
 
 ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
+  Mon a -- mi, quelle bo -- nne mine_;
+  où donc a -- \dash llez -- vous, __ _ de ce pas __ _
+  si ma -- gna -- nime_?
+  L'É -- tran -- ger_? Ab -- sur -- di -- té_!
+  Le peu -- ple se -- ra __ _ scan -- da -- li -- sé_!
+  Non, non_; mais... \leftSyl …_Vous y a -- llez à pied_;
+  des por -- teurs doi -- vent vous e -- mme -- ner...
+  Ré -- pa -- rer la ma -- chi -- ne de __ _ l'É -- tran -- ger.
+  Ne vous dé -- plai -- se.
 }
 
 ActeDeuxSceneTroisContraltoTexte = \lyricmode {
+  Brû -- lons ça, __ _ brû -- lons ça...
+  Brû -- lons ça, brû -- lons ça_;
+  Brû -- lons ça, brû -- lons ça_!
+  Brû -- lons ça, brû -- lons ça_!
+  Brû -- lons ça, brû -- lons ça_!
 }
 
 ActeDeuxSceneTroisTenorTexte = \lyricmode {
+  Bou -- \dash clez -- la, bou -- \dash clez -- la.
+  Bou -- \dash clez -- la, bou -- \dash clez -- la.
+  Bou -- \dash clez -- la, bou -- \dash clez -- la_;
+  ça ne fait qu'un quart d'heure, un quart d'heure que vous ê -- tes là.
+  Bou -- clez la_! __ _
 }
 
 ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
-  Que fai -- re_?
+  Que fai -- re_? Que fai -- re_? Que faire en cette a -- ffaire_?
+  Je ne suis pas le Roi, je ne suis pas le Roi...
+  Pru -- den -- ce, pru -- den -- ce_;
+  c'est qu'il va me fa -- lloir jou -- er se -- rré, je le crois.
+  À... À... À... \leftSyl …_À la pri -- son_; pour li -- bé -- rer
+  l'É -- tran -- ger.
+  Un Roi ne \dash peut -- il s'a -- bai -- sser
+  à grâ -- ci -- er un tel pri -- so -- nnier_?
+  Et vous, où a -- \dash llez -- vous_?
+  La ré -- pa -- rer... J'ai -- me -- rais fort vous a -- ccom -- pa -- gner.
+  \leftSyl …_À pied.
 }
 
 ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
-  Où \dash suis -- je_?
+  Où \dash suis -- je_? Qu'est_-_ce donc que cet en -- droit_? __ _
+  Pour -- quoi moi, de quel droit_? Je __ _ suis __ _ le Roi... __ _
+  Sor -- \dash tez -- moi de là_! Sor -- \dash tez -- moi de là_!
+  Je ne peux res -- ter là_! Je ne peux res -- ter là_;
+  je suis le Roi, le __ _ Roi_! __ _
+  Je ne peux res -- ter i -- \dash ci bas... __ _
+  Je ne peux pas res -- ter_! Je ne peux pas res -- ter_;
+  ces \dash gens -- là ne m'ont pas é -- té pré -- sen -- tés...
+  Aah_! __ _ Ah_!
+  Je suis là de -- puis des jours, des mois, des a -- nnées_;
+  mon es -- to -- mac \dash doit -- il bra -- ver l'é -- ter -- ni -- té_?
+  À man -- ger_! À man -- ger_! Du san -- gli -- er, du che -- vreuil,
+  du man -- chot em -- pe -- reur_! __ _ Aah_! __ _ _ _ Aah_! __ _ _
+  
 }
 

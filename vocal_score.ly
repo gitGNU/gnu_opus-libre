@@ -399,7 +399,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
         piece = \Separateur
       }
 }%}
-%{\score { 
+%{\score {
     \ActeDeuxSceneDeux
     \header {
       piece = \ActeDeuxSceneDeuxTitre
