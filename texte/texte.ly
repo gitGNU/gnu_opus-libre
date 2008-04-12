@@ -769,7 +769,16 @@ ActeDeuxSceneUnBisTenorTexte = \lyricmode {
 ActeDeuxSceneDeuxSopranoUnTexte = \lyricmode {
   Vous n'ê -- tes pas ré -- ta -- bli, vo -- tre tête est meur -- trie.
   Un ban -- dage, un ban -- dage \leftSyl …se -- rait plus sage.
-  
+  Fi -- ni -- ssez, fi -- ni -- ssez...
+  Fi -- ni -- ssez ce pan -- se -- ment... J'ai
+  de nom -- breux pa -- tients.
+  La ma -- chine, la ma -- chine, a des lé -- sions bé -- nignes.
+  Cet en -- gin __ _ sou -- ffre d'an -- gi -- ne,
+  ces ti -- mons man -- quent de thy -- mine...
+  Pour la fai -- re, l'a -- ffaire, il su -- ffit
+  d'un ban -- da -- ge, un sou -- da -- ge,
+  u -- ne join -- tu -- re, u -- ne li -- ga -- tu -- re,
+  un pan -- se -- ment, et un ra -- ccor -- de -- ment...
 }
 
 ActeDeuxSceneDeuxSopranoDeuxTexte = \lyricmode {
@@ -783,7 +792,7 @@ ActeDeuxSceneDeuxSopranoDeuxTexte = \lyricmode {
 }
 
 ActeDeuxSceneDeuxContraltoTexte = \lyricmode {
-  Brû -- lons ça... __ _
+  Brû -- lons ça...
 }
 
 ActeDeuxSceneDeuxTenorTexte = \lyricmode {

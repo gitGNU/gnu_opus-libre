@@ -2636,8 +2636,8 @@ ActeDeuxSceneDeuxMainGauche = {
     mi8 si' <fad' dod'> dod, | mi <si' fad'> dod, do | mi <fad' si>16 <fad si>
     <mi dod'>8 mi, | mi16 sib' la do dod sol fa lab | mi4 r8 mi |\t {mi4 re fa} |
     
-    dod16 la' red si' mi8 \clef treble <dod sold'> <dod sold'> <dod la'> r4 |
-    <dod sold>8 <dod sold'> <dod la'>4 <dod sold'>8 <dod sold'> \clef bass
+    dod16 la'? red si' mi8 \clef treble <dod sold'> <dod sold'> <dod la'> r4 |
+    <dod sold'>8 <dod sold'> <dod la'>4 <dod sold'>8 <dod sold'> \clef bass
     dod,,1~ dod4 dod | <sol sol'>2. r4 | dod1~ dod4 dod |
     <sol sol' re' la'>1. \arpeggio ~ <sol sol' re' fa>2 r4 |
     <sol'' si> <re fad lad> r2 |

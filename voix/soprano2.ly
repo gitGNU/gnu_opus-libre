@@ -149,7 +149,15 @@ ActeDeuxSceneDeuxSopranoDeux= { \SopranoDeux
     dod2 r4 r8 la | 
     sold8. la16 dod red dod8. red16 mi!8. dod16 mi8 |
     mid4. r8 si8 mid,16 sold red' si red mid | lad2. r4 |
-    
+    R2. R1. R1*2 R2.*3 R2 R2.*3 R2 R4. R1*2
+    r2 r4 r16 la, re la | sold mi sold la re la sold8. mi16
+    re mi la sold la re | mi4 r r2 |
+    r8 si,16. si32 sold'8 dod,16 r |
+    r8 dod16. dod32 lad'8 red,16 r |
+    r16. fad32 fad16. fad32 si8 fad16 r |
+    r16. si32 si16. si32 mi8 si16 r|
+    r8 lad16. lad32 fad'16 r si,8  |
+    mi, fadd sold lad sold'2
   }
 }
 

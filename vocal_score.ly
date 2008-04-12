@@ -1,5 +1,5 @@
 %------------------------------------------------------------------%
-% Opéra Libre -- full_score.ly                                     %
+% Opéra Libre -- vocal_score.ly                                    %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
@@ -36,10 +36,17 @@
   \context {
     \Staff
     \type "Engraver_group"
-    \name "StaffPiano"
+    \name "StaffUp"
     \alias Staff
-    \override VerticalAxisGroup #'remove-empty = ##f
 		\remove "Time_signature_engraver"
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 5)
+  }
+  \context {
+    \StaffUp
+    \type "Engraver_group"
+    \name "StaffDown"
+    \alias Staff
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 3)
   }
   \context {
     \Staff
@@ -52,7 +59,8 @@
   \context { \PianoStaff 
     \denies "Staff"
     \accepts "TimeSig"
-    \accepts "StaffPiano"
+    \accepts "StaffUp"
+    \accepts "StaffDown"
     \remove "Time_signature_engraver"
     connectArpeggios = ##f % to avoid collisions with pianoTimeSigs
   }
@@ -60,11 +68,14 @@
 
 \paper {
   line-width = #180
-  %systemSeparatorMarkup = \slashSeparator
-  ragged-bottom = ##t
+  bottom-margin = #20
+  ragged-bottom = ##f
+  ragged-last-bottom = ##t
   left-margin = #20
-  between-system-space = 1.5\cm
-  between-system-padding = #1
+ % systemSeparatorMarkup = \slashSeparator
+ % between-system-space = 1.5\cm
+ % between-system-padding = #1
+ % annotate-spacing = ##t
 }
 
 Prologue = { \ReductionLayout
@@ -77,9 +88,9 @@ Prologue = { \ReductionLayout
     \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\PrologueMainDroite
+	\new StaffUp = "droite"		\PrologueMainDroite
  	\new TimeSig {\PianoTimeSig \PrologueMesures}
-	\new StaffPiano = "gauche"		\PrologueMainGauche
+	\new StaffDown = "gauche"		\PrologueMainGauche
 		>> }
 >>
 }
@@ -96,9 +107,9 @@ ActeUnSceneUn = { \ReductionLayout
 		\new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBarytonDeuxTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneUnMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneUnMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneUnMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneUnMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneUnMainGauche
 		>> }
 >>
 }
@@ -113,9 +124,9 @@ ActeUnSceneUnBis = { \ReductionLayout
 		\new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBisBarytonDeuxTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneUnBisMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneUnBisMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneUnBisMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneUnBisMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneUnBisMainGauche
 		>> }
 >>
 }
@@ -131,9 +142,9 @@ ActeUnSceneDeux = { \ReductionLayout
 		\new Lyrics \lyricsto "baryton" { \ActeUnSceneDeuxBarytonDeuxTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneDeuxMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneDeuxMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneDeuxMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneDeuxMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneDeuxMainGauche
 		>> }
 >>
 }
@@ -148,9 +159,9 @@ ActeUnSceneTrois = { \ReductionLayout
 		\new Lyrics \lyricsto "baryton" { \ActeUnSceneTroisBarytonUnTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneTroisMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneTroisMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneTroisMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneTroisMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneTroisMainGauche
 		>> }
 >>
 }
@@ -165,9 +176,9 @@ ActeUnSceneTroisBis = { \ReductionLayout
 		\new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneTroisBisBarytonDeuxTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneTroisBisMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneTroisBisMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneTroisBisMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneTroisBisMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneTroisBisMainGauche
 		>> }
 >>
 }
@@ -182,9 +193,9 @@ ActeUnSceneTroisTer = { \ReductionLayout
 		\new Lyrics \lyricsto "barytonUn" { \ActeUnSceneTroisTerBarytonUnTexte }
 	>>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneTroisTerMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneTroisTerMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneTroisTerMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneTroisTerMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneTroisTerMainGauche
 		>> }
 >>
 }
@@ -205,9 +216,9 @@ ActeUnSceneQuatre = { \ReductionLayout
      \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneQuatreBarytonDeuxTexte }
 	 >>
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeUnSceneQuatreMainDroite
+	\new StaffUp = "droite"		\ActeUnSceneQuatreMainDroite
 	\new TimeSig {\PianoTimeSig \ActeUnSceneQuatreMesures}
-	\new StaffPiano = "gauche"		\ActeUnSceneQuatreMainGauche
+	\new StaffDown = "gauche"		\ActeUnSceneQuatreMainGauche
 		>> }
 >>
 }
@@ -230,9 +241,9 @@ ActeUnSceneQuatre = { \ReductionLayout
     \new Lyrics \lyricsto "barytonDeux" { \EntracteBarytonDeuxTexte }
     >> 
 \new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\EntracteMainDroite
+	\new StaffUp = "droite"		\EntracteMainDroite
 	\new TimeSig {\PianoTimeSig \EntracteMesures}
-	\new StaffPiano = "gauche"		\EntracteMainGauche
+	\new StaffDown = "gauche"		\EntracteMainGauche
 		>> }
 >>
 } %}
@@ -249,9 +260,9 @@ ActeDeuxSceneUn = { \ReductionLayout
     \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneUnContraltoTexte }
 	>>
 	\new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeDeuxSceneUnMainDroite
+	\new StaffUp = "droite"		\ActeDeuxSceneUnMainDroite
 	\new TimeSig {\PianoTimeSig \ActeDeuxSceneUnMesures}
-	\new StaffPiano = "gauche"		\ActeDeuxSceneUnMainGauche
+	\new StaffDown = "gauche"		\ActeDeuxSceneUnMainGauche
 		>> }
 >>
 }
@@ -268,9 +279,9 @@ ActeDeuxSceneUnBis = { \ReductionLayout
     \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneUnBisBarytonDeuxTexte }
 	>>
 	\new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeDeuxSceneUnBisMainDroite
+	\new StaffUp = "droite"		\ActeDeuxSceneUnBisMainDroite
 	\new TimeSig {\PianoTimeSig \ActeDeuxSceneUnBisMesures}
-	\new StaffPiano = "gauche"		\ActeDeuxSceneUnBisMainGauche
+	\new StaffDown = "gauche"		\ActeDeuxSceneUnBisMainGauche
 		>> }
 >>
 }
@@ -293,9 +304,9 @@ ActeDeuxSceneDeux = { \ReductionLayout
     \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneDeuxBarytonDeuxTexte }
     >> 
 	\new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeDeuxSceneDeuxMainDroite
+	\new StaffUp = "droite"		\ActeDeuxSceneDeuxMainDroite
 	\new TimeSig {\PianoTimeSig \ActeDeuxSceneDeuxMesures }
-	\new StaffPiano = "gauche"		\ActeDeuxSceneDeuxMainGauche
+	\new StaffDown = "gauche"		\ActeDeuxSceneDeuxMainGauche
 		>> }
 >>
 }
@@ -318,9 +329,9 @@ ActeDeuxSceneTrois = { \ReductionLayout
     \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
     >> 
 	\new PianoStaff { \Accompagnement <<
-	\new StaffPiano = "droite"		\ActeDeuxSceneTroisMainDroite
+	\new StaffUp = "droite"		\ActeDeuxSceneTroisMainDroite
 	\new TimeSig {\PianoTimeSig \ActeDeuxSceneTroisMesures }
-	\new StaffPiano = "gauche"		\ActeDeuxSceneTroisMainGauche
+	\new StaffDown = "gauche"		\ActeDeuxSceneTroisMainGauche
 		>> }
 >>
 }
@@ -399,13 +410,13 @@ ActeDeuxSceneTrois = { \ReductionLayout
         piece = \Separateur
       }
 }%}
-%{\score {
+\score {
     \ActeDeuxSceneDeux
     \header {
       piece = \ActeDeuxSceneDeuxTitre
     }
 }%}
-\score {
+%{\score {
     \ActeDeuxSceneTrois
     \header {
       piece = \ActeDeuxSceneTroisTitre

@@ -14,7 +14,7 @@
 #(set-global-staff-size 12)
 
 %% Paper size -----------------------------------------------------%
-#(set-default-paper-size (if (ly:get-option 'letter) "letter" "a4"))
+% #(set-default-paper-size (if (ly:get-option 'letter) "letter" "a4"))
 
 %% Common Layout --------------------------------------------------%
 AdditionalLayout ={
@@ -34,7 +34,6 @@ AdditionalLayout ={
   \set Score.ignoreMelismata = ##t
   \override Score.LyricText #'self-alignment-X = #-0.5
   \override Score.PaperColumn #'keep-inside-line = ##t
-%  \override Score.TrillSpanner #'extra-offset = #'(2 . 0)
   \override Score.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
   \set Score.markFormatter = #format-mark-box-letters
   \override Score.RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
@@ -68,19 +67,18 @@ middleTimeSig = {
   \CoolSignatures
 %  \override TimeSignature #'break-visibility = ##(#f #t #f)
   \override TimeSig.TimeSignature #'font-size = #3
-  \override TimeSig.TimeSignature #'Y-extent = #'(-1 . 5)
+  \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
 }
 
 PianoTimeSig = {
   \override TimeSig.TimeSignature #'font-size = #1
-  \override TimeSig.TimeSignature #'Y-extent = #'(0 . 0 )
+  \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
 }
 
 
 %% Layout for the vocal score -------------------------------------%
 ReductionLayout ={
   \AdditionalLayout
-  %\override PianoStaff.VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
   \override Score.RehearsalMark #'font-size = #4
   \override Score.TimeSignature #'X-extent = #'(0 . 3)
 }
