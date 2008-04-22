@@ -6,16 +6,48 @@
 %------------------------------------------------------------------%
 
 
-%%% Thanks to Nicolas Sceaux for the following function
-cosmeticBreak =
-#(define-music-function (location parser sym) (symbol?)
-   (if (or (eqv? sym 'all)
-           (and (eqv? sym 'letter) (ly:get-option 'letter))
-           (and (eqv? sym 'a4) (not (ly:get-option 'letter))))
-       (make-event-chord (list (make-music 'LineBreakEvent
-                                'break-permission 'force)))
-       (make-event-chord (list))))
+%%%%%%%%%%%%%%%%%%%%%%%%% Music Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% Rhythm shortcuts -----------------------------------------------%
+
+t = 
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 2/3 $music #})
+
+tt = 
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 4/5 $music #})
+
+ttt = 
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 4/6 $music #})
+
+tttt = 
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 4/7 $music #})
+
+
+%% Polyphony shortcuts --------------------------------------------%
+
+pl = 
+#(define-music-function (parser location one two) (ly:music? ly:music?)
+#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
+
+parallel=
+#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
+#{ << 
+\context Staff = "droite"   $droite
+\context Staff = "gauche"   $gauche 
+>> #})
+
+PianoDeuxMains=
+#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
+#{ << 
+\new Staff = "droite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+   $droite
+\new Staff = "gauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+   $gauche 
+>> #})
 
 PianoDeuxMainsBroken=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
@@ -109,47 +141,17 @@ PianoDeuxMainsBroken=
     >>
 #})
 
-t = 
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 2/3 $music #})
 
-tt = 
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 4/5 $music #})
 
-ttt = 
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 4/6 $music #})
+%%%%%%%%%%%%%%%%%%%%%%%% Layout Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-tttt = 
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 4/7 $music #})
-
-PianoDeuxMains=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ << 
-\new Staff = "droite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-   $droite
-\new Staff = "gauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-   $gauche 
->> #})
+%% Music layout ---------------------------------------------------%
 
 droite = { \change Staff = "droite" }
 
 gauche = { \change Staff = "gauche" }
 
-parallel=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ << 
-\context Staff = "droite"   $droite
-\context Staff = "gauche"   $gauche 
->> #})
-
-parlato =
-#(define-music-function (parser location notes) (ly:music?)
-#{ \override NoteHead #'style = #'cross 
-	$notes
-\revert NoteHead #'style #})
+%% Music formatting -----------------------------------------------%
 
 graceNotes =
 #(define-music-function (parser location notes) (ly:music?)
@@ -162,6 +164,27 @@ CaV=
              (acons 'font-size -3
                     (ly:music-property m 'tweaks)))
 m)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Text Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% In-score text formatting ---------------------------------------%
+
+parlato =
+#(define-music-function (parser location notes) (ly:music?)
+#{ \override NoteHead #'style = #'cross 
+	$notes
+\revert NoteHead #'style #})
+
+
+startTxt =
+#(define-music-function (parser location text note)
+                     (string? ly:music?)
+ (#{ \override TextSpanner #'edge-text = #'($text . "")
+     $note 
+  %  \startTextSpan
+   #}))
+
+%% Lyrics formatting ----------------------------------------------%
 
 freestyleOn = {
 \override Lyrics . LyricExtender #'stencil = ##f }
@@ -181,23 +204,54 @@ dash = {
 ital = {
 \once \override LyricText #'font-shape = #'italic }
 
-startTxt =
-#(define-music-function (parser location text note)
-                                         (string? ly:music?)
-     (#{
-     \override TextSpanner #'edge-text = #'($text . "")
-     $note 
-  %  \startTextSpan
-   #}
-  )
-)
+%% Scenography formatting ---------------------------------------%
 
-pl = 
-#(define-music-function (parser location one two) (ly:music? ly:music?)
-#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
+#(define-public (rounded-box-stencil stencil thickness padding blot)
+   "Add a rounded box around STENCIL, producing a new stencil."  
+
+  (let* ((xext (interval-widen (ly:stencil-extent stencil 0) padding))
+	 (yext (interval-widen (ly:stencil-extent stencil 1) padding))
+   (min-ext (min (-(cdr xext) (car xext)) (-(cdr yext) (car yext))))
+   (ideal-blot (min blot (/ min-ext 2)))
+   (ideal-thickness (min thickness (/ min-ext 2)))
+	 (outer (ly:round-filled-box
+		   (interval-widen xext ideal-thickness) 
+       (interval-widen yext ideal-thickness) 
+            ideal-blot))
+	 (inner (ly:make-stencil (list 'color (x11-color 'white) (ly:stencil-expr (ly:round-filled-box 
+       (cons (+ (car xext) ideal-thickness) (- (cdr xext) ideal-thickness)) 
+       (cons (+ (car yext) ideal-thickness) (- (cdr yext) ideal-thickness)) 
+            (- ideal-blot (* ideal-thickness 2))))))))
+    (set! stencil (ly:stencil-add outer inner))
+    stencil))
+
+
+#(define-markup-command (rounded-box layout props arg) (markup?)
+  "@cindex enclosing text in a bow with rounded corners
+   @cindex drawing boxes with rounded corners around text
+Draw a box with rounded corners around @var{arg}.  Looks at @code{thickness},
+@code{box-padding} and @code{font-size} properties to determine line
+thickness and padding around the markup; the @code{corner-radius} property
+makes possible to define another shape for the corners (default is 1).
+
+@lilypond[quote,verbatim,fragment,relative=2]
+c^\\markup{ \\rounded-box Overtura }
+c,8. c16 c4 r
+@end lilypond" 
+  (let* ((th (*
+	      (ly:output-def-lookup layout 'line-thickness)
+	      (chain-assoc-get 'thickness props 1)))
+         (rad (chain-assoc-get 'corner-radius props 1))
+	 (size (chain-assoc-get 'font-size props 0))
+	 (pad (* (magstep size)
+		 (chain-assoc-get 'box-padding props 0.5)))
+	 (m (interpret-markup layout props arg)))
+    (ly:stencil-add (rounded-box-stencil m th pad rad)
+    m)))
+
 
 #(define-markup-command (did layout props text) (markup?)
   (interpret-markup layout props
     (markup #:override '(line-width . 40)
-    #:box #:wordwrap-string text)))
+    #:rounded-box #:wordwrap-string text)))
    

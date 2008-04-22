@@ -1,7 +1,6 @@
 %------------------------------------------------------------------%
 % Opéra Libre -- layout.ly                                         %
 %                                                                  %
-% (c) Valentin Villenave,     2008                                 %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
 %------------------------------------------------------------------%
@@ -76,7 +75,7 @@ PianoTimeSig = {
 }
 
 
-%% Layout for the vocal score -------------------------------------%
+%% Vocal score layout  --------------------------------------------%
 ReductionLayout ={
   \AdditionalLayout
   \override Score.RehearsalMark #'font-size = #4
