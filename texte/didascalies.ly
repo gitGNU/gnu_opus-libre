@@ -21,9 +21,11 @@ MmJeu = "Même jeu."
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 PrologueA ="Ce tableau se joue à l'avant-scène, rideau fermé.
-Entre le Chef de la Garde, par la même porte que le public.
+La musique commence dans le noir."
+
+PrologueAA = "Entre le Chef de la Garde, par la même porte que le public.
 Il traverse la salle vivement, semblant chercher quelqu'un dans le public,
-jusqu'au moment où on le découvre dans la lumière, et où commence la musique."
+jusqu'au moment où on le découvre dans la lumière."
 
 PrologueB ="Il arrive enfin sur scène, face public, de plus en plus
 exagérément lyrique..."

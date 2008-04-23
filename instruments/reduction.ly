@@ -17,12 +17,12 @@ PrologueMainDroite={
 	\relative{
     %%% Introduction %%%
     
-		\partial 4 #(set-octavation 1) r8 \ttt { \voiceTwo mi'32[ fa sib] \voiceOne si![ mi fa]} |
-    la4 r8 <lad' si> r4 | r8 <lad si> r4 r16 <lad si>8. |
-    <lad si>8 <lad si> \t {<lad si> <lad si> <lad si>} \tt {<lad si>16 <lad si> <lad si> <lad si> <lad si>}|
-    <lad si>1\glissando -\markup "(touches noires)" | #(set-octavation 0)
-    mi,,,2~ mi4 r | << {mi16 fa8.~fa2\laissezVibrer } \\ { mi,2.} >> \clef bass |
-    \repeat tremolo 8 {mi32 fa} \repeat tremolo 8 {mi32 fa} |
+		\partial 4 #(set-octavation 1) r8 \ttt { \voiceTwo mi'32[( fa sib] \voiceOne si![ mi fa]} |
+    \accdet la4) r8 \accst {<lad' si> r4 | r8 <lad si> r4 r16 <lad si>8.} |
+    \stdet <lad si>8 \st {<lad si> \t {<lad si> <lad si> <lad si>} \tt {<lad si>16 <lad si> <lad si> <lad si> <lad si>}}|
+    \accdet <lad si>1^\markup {\indic (touches noires)}\glissando | #(set-octavation 0)
+    \det mi,,,2~ mi4 r | << { \ind #"en dehors" mi16 fa8.~fa2\laissezVibrer } \\ { mi,2.} >> \clef bass |
+    \repeat tremolo 8 { mi32 fa} \repeat tremolo 8 {mi32 fa} |
     <<{mi'2.\laissezVibrer s4} \\ {red,4 mi2~ mi4}>> mi~| mi8 mi \t {mi mi mi} |
     \set Staff.timeSignatureFraction = #'(4 . 4)
          \compressMusic #'(3 . 4)
@@ -213,7 +213,7 @@ PrologueMainGauche={ \clef bass
     %%% Introduction %%%
     
 		\partial 4 r4 \clef treble |#(set-octavation 1) \repeat tremolo 12 {sib'''32 si!} |
-    \repeat tremolo 12 {sib32 si!} \repeat tremolo 12 {sib32 si!}|<< { la1 \glissando _\markup "(touches blanches)" #(set-octavation 0)\clef bass 
+    \repeat tremolo 12 {sib32 si!} \repeat tremolo 12 {sib32 si!}|<< { la1 \glissando _\markup {\indic (touches blanches)} #(set-octavation 0)\clef bass 
      <mi,,,, mi'>2\laissezVibrer } \\ { s1 s4 mi,4\laissezVibrer }>>|
     r4 <mi mi'>\laissezVibrer | r2 <mi mi'>4\laissezVibrer | r4 <mi mi'>\laissezVibrer |
     r8 <mi'> \t {mi mi mi} |
@@ -340,6 +340,23 @@ PrologueMainGauche={ \clef bass
     R2*3 <sib, dob>8 r r4 <mi, re'>8 r mi, r |
 	}
 }
+
+PrologueNuances = {
+  \partial 4 s4\< R2.\mp
+  R2.\< R2. R1 \fp \<  R2 \cmb #"mf" #"ample" R2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 
+  R2. R2*2 R2. R2 R2. R2 R2. R2 R2. R2 R2 R2. R2*8 R2.*10 R1 R2*2 R2
+  R1*2 R2. R1 R2. R1
+  R2*4 R2.*11 R4.
+  R4.*25
+  R4.*13
+  R4.*34
+  R2*5/4
+  R2.*3
+  R1*4 R1.*2 R1*3 R1.*2 R1*2 R2.
+  R2.*6 R2*2 R2. R2 R2.*2 R1*2 R2.*5 R2*2 R1 R2.
+  R2*23 R2*8
+}
+
 
 ActeUnSceneUnMainDroite= {
   \relative{

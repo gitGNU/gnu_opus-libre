@@ -11,8 +11,8 @@ PrologueMesures = {
   
   \time 3/4
   \partial 4 s4 R2.*3
-  \mark \markup \did \PrologueA
-  \time 4/4 R1
+ % \mark \markup \init-did \PrologueA
+  \time 4/4 R1 \bar "||"
   \time 2/4
   \mark \markup{ \large \bold Largo } R2*2
   \time 3/4
@@ -29,7 +29,7 @@ PrologueMesures = {
   R2*2 |
   \time 3/4
   R2.
-  \mark \markup \did PrologueB
+ % \mark \markup \did PrologueB
   \time 2/4
   R2*2 |
   \time 3/4

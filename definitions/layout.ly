@@ -10,7 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Staff size -----------------------------------------------------%
-#(set-global-staff-size 12)
+#(set-global-staff-size 14)
 
 %% Paper size -----------------------------------------------------%
 % #(set-default-paper-size (if (ly:get-option 'letter) "letter" "a4"))
@@ -35,6 +35,7 @@ AdditionalLayout ={
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
   \set Score.markFormatter = #format-mark-box-letters
+  \set Score.metronomeMarkFormatter = #format-movement-markup
   \override Score.RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
   \override Score.RehearsalMark #'font-size = #10
   \override Score.TimeSignature #'style = #'()
@@ -44,6 +45,7 @@ AdditionalLayout ={
   \override Score.Accidental #'minimum-X-extent = #'(-0.5 . 0 )
   \override Score.SystemStartBracket #'collapse-height = #1
   \override Score.SystemStartBrace #'collapse-height = #1
+  \override Score.BarLine #'hair-thickness = #1.2
   #(set-accidental-style 'modern 'Score)
 }
 
@@ -69,9 +71,9 @@ middleTimeSig = {
   \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
 }
 
-PianoTimeSig = {
-  \override TimeSig.TimeSignature #'font-size = #1
-  \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
+PianoDynaMeter = {
+  \override DynaMeter.TimeSignature #'font-size = #1
+  \override DynaMeter.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
 }
 
 
