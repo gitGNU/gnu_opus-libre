@@ -16,8 +16,6 @@
 
 \include "./texte/texte.ly"
 
-\version "2.10"
-
 \include "./voix/soprano1.ly"
 \include "./voix/soprano2.ly"
 \include "./voix/contralto.ly"
@@ -33,19 +31,19 @@
     \name "DynaMeter"
     \alias Voice
     \consists "Output_property_engraver"
-    \consists "Time_signature_engraver"
+   % \consists "Time_signature_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-    pedalSustainStrings = #'("Ped." "*Ped." "*")
-    pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-    \consists "Piano_pedal_engraver"
+   % pedalSustainStrings = #'("Ped." "*Ped." "*")
+   % pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+  %  \consists "Piano_pedal_engraver"
     \consists "Script_engraver"
     \consists "Dynamic_engraver"
     \consists "Text_engraver"
-    \override TextScript #'font-size = #2
-    \override TextScript #'font-shape = #'italic
-    \override DynamicText #'extra-offset = #'(0 . 2.5)
-    \override Hairpin #'extra-offset = #'(0 . 2.5)
-    \consists "Skip_event_swallow_translator"
+   % \override TextScript #'font-size = #2
+   % \override TextScript #'font-shape = #'italic
+   % \override DynamicText #'extra-offset = #'(0 . 2.5)
+   % \override Hairpin #'extra-offset = #'(0 . 2.5)
+   % \consists "Skip_event_swallow_translator"
     \consists "Axis_group_engraver"
     }
   \context {
@@ -53,7 +51,7 @@
     \type "Engraver_group"
     \name "StaffUp"
     \alias Staff
-		\remove "Time_signature_engraver"
+		%\remove "Time_signature_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 5)
     fontSize = #-1
     \override StaffSymbol #'staff-space = #(magstep -1)
@@ -79,9 +77,9 @@
     \accepts "DynaMeter"
     \accepts "Dynamics"
     \accepts "StaffDown"
-    \remove "Time_signature_engraver"
+    %\remove "Time_signature_engraver"
     connectArpeggios = ##f % to avoid collisions with pianoDynaMeters
-    \override VerticalAlignment #'forced-distance = #7
+   % \override VerticalAlignment #'forced-distance = #7
   }
 }
 

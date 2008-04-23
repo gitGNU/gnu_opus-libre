@@ -262,7 +262,7 @@ parlato =
 %% In-score text formatting ---------------------------------------%
 
 #(define-markup-command (indic layout props arg) (markup?)
-    (interpret-markup layout props arg
+    (interpret-markup layout props
     (markup #:whiteout #:small #:italic arg)))
 
 ten = 
