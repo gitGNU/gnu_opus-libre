@@ -31,6 +31,7 @@
     \name "DynaMeter"
     \alias Voice
     \consists "Output_property_engraver"
+    \consists "Axis_group_engraver"
    % \consists "Time_signature_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
    % pedalSustainStrings = #'("Ped." "*Ped." "*")
@@ -39,12 +40,11 @@
     \consists "Script_engraver"
     \consists "Dynamic_engraver"
     \consists "Text_engraver"
-   % \override TextScript #'font-size = #2
-   % \override TextScript #'font-shape = #'italic
-   % \override DynamicText #'extra-offset = #'(0 . 2.5)
-   % \override Hairpin #'extra-offset = #'(0 . 2.5)
-   % \consists "Skip_event_swallow_translator"
-    \consists "Axis_group_engraver"
+    \override TextScript #'font-size = #2
+    \override TextScript #'font-shape = #'italic
+    \override DynamicText #'extra-offset = #'(0 . 2.5)
+    \override Hairpin #'extra-offset = #'(0 . 2.5)
+    \consists "Skip_event_swallow_translator"
     }
   \context {
     \Staff
@@ -78,11 +78,11 @@
     \accepts "Dynamics"
     \accepts "StaffDown"
     %\remove "Time_signature_engraver"
-    connectArpeggios = ##f % to avoid collisions with pianoDynaMeters
-   % \override VerticalAlignment #'forced-distance = #7
+    connectArpeggios = ##t % to avoid collisions with pianoDynaMeters
+    %\override VerticalAlignment #'forced-distance = #7
   }
 }
-
+\version "2.10"
 \paper {
      %    line-width = \paper-width - 20
     %   horizontal-shift = 5

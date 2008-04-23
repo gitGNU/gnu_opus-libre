@@ -14,7 +14,9 @@ PrologueMesures = {
  % \mark \markup \init-did \PrologueA
   \time 4/4 R1 \bar "||"
   \time 2/4
-  \mark \markup{ \large \bold Largo } R2*2
+  \mark \markup{ \mvt Largo } 
+  \tempo 4 = 50
+  R2*2
   \time 3/4
   R2. |
   \time 2/4
@@ -33,7 +35,7 @@ PrologueMesures = {
   \time 2/4
   R2*2 |
   \time 3/4
-  \mark \markup{ \large \bold {Vivo subito} } R2. |
+  \mark \markup{ \mvt "Vivo subito" } R2. |
   \time 2/4
   R2*2 |
   \time 3/4
@@ -56,7 +58,7 @@ PrologueMesures = {
   \time 3/4
   R2.\stopTextSpan \bar "||"
   \time 2/4
-  \mark \markup{ \large \bold {Tempo giusto} }R2*8 |
+  \mark \markup{ \mvt{Tempo giusto} }R2*8 |
   \time 3/4
   R2.*10 |
   \time 4/4
@@ -64,7 +66,7 @@ PrologueMesures = {
   \time 2/4
   R2*2 | R2\fermata \bar "||"
   \time 4/4
-  \mark \markup{ \large \bold {Piu lento} } R1*2 |
+  \mark \markup{ \mvt {Piu lento} } R1*2 |
   \time 3/4
   R2. |
   \time 4/4
@@ -74,23 +76,23 @@ PrologueMesures = {
   \time 4/4
   R1 |
   \time 2/4
-  \mark \markup{ \large \bold Adagio } | R2*4 |
+  \mark \markup{ \mvt Adagio } | R2*4 |
   \time 3/4
   R2.*11 |
   \time 3/8
   R4. \bar"||"
-  \mark \markup { \large \bold Andantino }
+  \mark \markup { \mvt Andantino }
   R4.*25
-  \mark \markup { \large \bold "Poco a poco allargando..." }
+  \mark \markup { \mvt "Poco a poco allargando..." }
   R4.*13 \bar "||"
-  \mark \markup { \large \bold "A tempo, un poco piu vivo" }
+  \mark \markup { \mvt "A tempo, un poco piu vivo" }
   R4.*34
   \time 5/8
   R2*5/4
   \time 6/8
   R2.*3 \bar "||"
   \time 4/4
-  \mark \markup { \large \bold "Adagio, ad libitum" }
+  \mark \markup { \mvt "Adagio, ad libitum" }
   R1*4
   \time 6/4
   R1.*2
@@ -102,7 +104,7 @@ PrologueMesures = {
   R1*2
   \time 3/4
   R2. \bar "||"
-  \mark \markup { \large \bold "Mouvement de valse modérée" }
+  \mark \markup { \mvt "Mouvement de valse modérée" }
   R2.*6
   \time 2/4
   R2*2
@@ -123,15 +125,15 @@ PrologueMesures = {
   \time 3/4
   R2. \bar "||"
   \time 2/4
-  \mark \markup { \large \bold "Vivo al fine" }
+  \mark \markup { \mvt "Vivo al fine" }
   R2*23 \bar "||"
-  \mark \markup { \large \bold "Recitativo" }
+  \mark \markup { \mvt "Recitativo" }
   R2*8 \bar "|."
 }
 
 ActeUnSceneUnMesures= {
   \time 2/4
-  \mark \markup { \large \bold "Largo non troppo"}
+  \mark \markup { \mvt "Largo non troppo"}
   R2*2 |
   \time 3/4
   R2. |
@@ -156,7 +158,7 @@ ActeUnSceneUnMesures= {
   \time 3/4
   R2. |
   \time 4/4
-  \mark \markup { \large \bold "Poco a poco animando..."}
+  \mark \markup { \mvt "Poco a poco animando..."}
   R1 |
   \time 3/4
   R2. |
@@ -180,14 +182,14 @@ ActeUnSceneUnMesures= {
   R1 |
   \time 3/4
   R2. |
-  \mark \markup {\large \bold "Piu vivo"}
+  \mark \markup { \mvt "Piu vivo"}
   R2.*7|
   \time 4/4
   R1|
   \time 3/4
   R2. \bar "||"
   \time 4/4
-  \mark \markup {\large \bold "Ad libitum (stesso tempo)"}
+  \mark \markup { \mvt "Ad libitum (stesso tempo)"}
   R1|
   \time 3/4
   R2.*2
@@ -196,7 +198,7 @@ ActeUnSceneUnMesures= {
   \time 3/4
   R2.*2 \bar "||"
   \time 2/2
-  \mark \markup {\large \bold "Agitato"}
+  \mark \markup { \mvt "Agitato"}
   R1*6|
   \time 3/2
   R1.
@@ -218,7 +220,7 @@ ActeUnSceneUnMesures= {
   R1.*4 \bar "||"
   
   \time 4/4
-  \mark \markup {\large \bold "Allegro non troppo"}
+  \mark \markup { \mvt "Allegro non troppo"}
   R1
   \time 3/4
   R2.
@@ -237,7 +239,7 @@ ActeUnSceneUnMesures= {
   \time 4/4
   R1
   \time 3/4
-  \mark \markup {\large \bold "poco allargando..."}
+  \mark \markup { \mvt "poco allargando..."}
   R2.
   \time 4/4
   R1*5
@@ -246,7 +248,7 @@ ActeUnSceneUnMesures= {
   \time 4/4
   R1*6 \bar "||"
   \time 4/4
-  \mark \markup {\large \bold "Moderato"}
+  \mark \markup { \mvt "Moderato"}
   R1*2
   \time 3/4
   R2.*2
@@ -305,10 +307,10 @@ ActeUnSceneUnMesures= {
 
 ActeUnSceneUnBisMesures= {
   \time 3/4
-  \mark \markup { \large \bold "Agitato"}
+  \mark \markup { \mvt "Agitato"}
   R2.*7 |
   \time 4/4
-  \mark \markup { \large \bold "Piu vivo"}
+  \mark \markup { \mvt "Piu vivo"}
   R1
   \time 3/4
   R2.
@@ -318,14 +320,14 @@ ActeUnSceneUnBisMesures= {
   R2.*6
  \override TextSpanner #'edge-text = #'("molto rit." . "")
   R2. \startTextSpan R2.\stopTextSpan
-  \mark \markup { \large \bold "Tempo" }
+  \mark \markup { \mvt "Tempo" }
   R2.
   R2.\startTextSpan
   \time 4/4
   R1\stopTextSpan R1
   \time 2/4
   R2 \bar "||"
-  \mark \markup { \large \bold "Largo" }
+  \mark \markup { \mvt "Largo" }
   R2*3
   \time 3/4
   R2.
@@ -338,7 +340,7 @@ ActeUnSceneUnBisMesures= {
   \time 3/4
   R2.*2
   \time 4/4
-  \mark \markup { \large \bold "Risoluto" }
+  \mark \markup { \mvt "Risoluto" }
   R1*2
   \time 3/4
   R2.
@@ -361,21 +363,21 @@ ActeUnSceneUnBisMesures= {
   \time 3/4
   R2.
   \time 2/4
-  \mark \markup { \large \bold "Recitativo" }
+  \mark \markup { \mvt "Recitativo" }
   R2*3
   \time 3/4
   R2.*3 \bar "||"
   \time 4/4
-  \mark \markup { \large \bold "Adagio" }
+  \mark \markup { \mvt "Adagio" }
   R1*33 \bar "||"
   \time 2/4
-  \mark \markup { \large \bold "Risoluto" }
+  \mark \markup { \mvt "Risoluto" }
   R2*4 \bar "|."
 }
 
 ActeUnSceneDeuxMesures= {
   \time 3/4
-  \mark \markup { \large \bold "Cavatine" }
+  \mark \markup { \mvt "Cavatine" }
   R2.*2 |
   \time 2/2
   R1*2 |
@@ -446,7 +448,7 @@ ActeUnSceneDeuxMesures= {
   \time 3/4
   R2.*2 |
   \time 2/2
-  \mark \markup {\normalsize \bold "Ritenuto al fine..."}
+  \mark \markup { \mvt {\normalsize "Ritenuto al fine..."}}
   R1*2 |
   \time 3/4
   R2.*2 |
@@ -461,7 +463,7 @@ ActeUnSceneDeuxMesures= {
   \time 2/2
   R1*2  \bar "||"
   \time 3/4
-  \mark \markup { \large \bold "Recitativo"}
+  \mark \markup { \mvt "Recitativo"}
   R2.*2 |
   \time 4/4
   R1 |
@@ -482,7 +484,7 @@ ActeUnSceneDeuxMesures= {
   \time 4/4
   R1 \bar "||"
   \time 3/4
-  \mark \markup { \large \bold "Tempo giusto"}
+  \mark \markup { \mvt "Tempo giusto"}
   R2. |
   \time 4/4
   R1 |
@@ -515,7 +517,7 @@ ActeUnSceneDeuxMesures= {
   \time 4/4
   R1 \bar "||"
   \time 3/4
-  \mark \markup {\large \bold "Piu vivo"}
+  \mark \markup { \mvt "Piu vivo"}
   R2. |
   \time 4/4
   R1 |
@@ -534,9 +536,9 @@ ActeUnSceneDeuxMesures= {
   \time 3/4
   R2.*14
   \time 4/4
-  \mark \markup {\normalsize \bold "Poco allargando..."}
+  \mark \markup { \mvt { \normalsize "Poco allargando..."}}
   R1*3 \bar "||"
-  \mark \markup {\large \bold "Tempo giusto subito"}
+  \mark \markup { \mvt "Tempo giusto subito"}
   R1*5 |
   \time 3/4
   R2. |
@@ -553,7 +555,7 @@ ActeUnSceneDeuxMesures= {
   \time 3/4
   R2.*2 \bar "||"
   \time 4/4
-  \mark \markup {\large \bold "Largo assai al fine"}
+  \mark \markup { \mvt "Largo assai al fine"}
   R1 |
   \time 3/4
   R2.*3 |
@@ -567,10 +569,10 @@ ActeUnSceneDeuxMesures= {
 
 ActeUnSceneTroisMesures= {
   \time 3/4 
-  \mark \markup { \large \bold "Risoluto" }
+  \mark \markup { \mvt "Risoluto" }
   R2.*24 \bar "||"
   \time 6/4
-  \mark \markup { \large \bold "Lamento" }
+  \mark \markup { \mvt "Lamento" }
   R1.*6
   \time 5/4
   R1*5/4*5
@@ -581,10 +583,10 @@ ActeUnSceneTroisMesures= {
   \time 2/4
   R2*2 \bar "||"
   \time 3/4
-  \mark \markup { \large \bold "Tempo I" }
+  \mark \markup { \mvt "Tempo I" }
   R2.*14 \bar "||"
   \time 6/4
-  \mark \markup { \large \bold "Tempo II" }
+  \mark \markup { \mvt "Tempo II" }
   R1.*6
   \time 5/4
   R1*5/4
@@ -598,7 +600,7 @@ ActeUnSceneTroisMesures= {
 
 ActeUnSceneTroisBisMesures = {
   \time 4/4
-  \mark \markup { \large \bold "Andantino" }
+  \mark \markup { \mvt "Andantino" }
   R1*35
   \time 3/4
   R2.
@@ -612,17 +614,17 @@ ActeUnSceneTroisTerMesures= {
   \time 3/4 R2.  |
   \time 2/4 R2*2 |
   \time 3/4 R2. \bar "||"
-  \mark \markup { \huge \bold "Allegro non troppo" } R2.*6 |
+  \mark \markup { \mvt "Allegro non troppo" } R2.*6 |
   \time 4/4 R1*6 |
   \time 3/4 R2. \bar "||"
-  \mark \markup { \huge \bold "Poco meno" } R2.*39 |
+  \mark \markup { \mvt "Poco meno" } R2.*39 |
   \time 4/4 R1 \bar "||"
   \time 3/4 R2.*37  \bar "|."
 }
 
 ActeUnSceneQuatreMesures = {
   \time 2/4
-  \mark \markup { \huge \bold "Allegretto" }
+  \mark \markup { \mvt "Allegretto" }
   \partial 4 s4
   \time 5/8
   R2*5/4
@@ -635,7 +637,7 @@ ActeUnSceneQuatreMesures = {
   \time 3/4
   R2.
   \time 2/4
-  \mark \markup { \huge \bold "Adagio" }
+  \mark \markup { \mvt "Adagio" }
   R2*3 \bar "||"
   \time 4/4
   R1
@@ -652,7 +654,7 @@ ActeUnSceneQuatreMesures = {
   \time 2/2
   R1*2 \bar "||"
   \time 3/4
-  \mark \markup { \huge \bold "Agitato" }
+  \mark \markup { \mvt "Agitato" }
   R2.*27
   \time 4/4
   R1
@@ -675,7 +677,7 @@ ActeUnSceneQuatreMesures = {
   \time 3/4
   R2.
   \time 4/4
-  \mark \markup { \huge \bold "Placando assai" }
+  \mark \markup { \mvt"Placando assai" }
   R1*5
   \time 2/4
   R2
@@ -683,7 +685,7 @@ ActeUnSceneQuatreMesures = {
   R2.
   \time 4/4
   R1
-  \mark \markup { \huge \bold "Andante a piacere" }
+  \mark \markup { \mvt "Andante a piacere" }
   R1*9
   \time 3/4
   R2.
@@ -697,10 +699,10 @@ ActeUnSceneQuatreMesures = {
   R2*3
   \time 3/4
   R2.*2
-  \mark \markup { \huge \bold "Poco a poco pîù mosso..." }
+  \mark \markup { \mvt "Poco a poco pîù mosso..." }
   R2.*4
   \time 4/4
-  \mark \markup { \huge \bold "Agitato assai" }
+  \mark \markup { \mvt "Agitato assai" }
   R1*4
   \time 3/4
   R2.
@@ -749,7 +751,7 @@ ActeUnSceneQuatreMesures = {
   \time 3/4
   R2. \bar "||"
   \time 4/4
-  \mark \markup { \huge \bold "Risoluto" }
+  \mark \markup { \mvt "Risoluto" }
   R1*11 \bar "||"
   R1
   \time 2/4
@@ -761,7 +763,7 @@ ActeUnSceneQuatreMesures = {
   \time 4/4
   R1 \bar "||"
   \time 3/4
-  \mark \markup { \huge \bold "Plus lent" }
+  \mark \markup { \mvt "Plus lent" }
   R2.*21 \bar "||"
   \repeat unfold 5 {\time 3/2
   R1.
@@ -791,7 +793,7 @@ ActeUnSceneQuatreMesures = {
 
 EntracteMesures= {
   \time 2/4
-  \mark \markup{ \huge \bold Adagio }
+  \mark \markup{ \mvt Adagio }
   s2*9 \bar "||"
   \time 4/4
   s1*24
@@ -799,7 +801,7 @@ EntracteMesures= {
 
 ActeDeuxSceneUnMesures= { 
   \time 3/4
-  \mark \markup{ \huge \bold Animato }
+  \mark \markup{ \mvt Animato }
   s2.*4 |
   \time 2/4 s2 |
   \time 3/4 s2.*2 |
@@ -817,7 +819,7 @@ ActeDeuxSceneUnMesures= {
   \time 3/4 s2.*2 |
   \time 2/4 s2 |
   \time 3/4 
-    \mark \markup { \normalsize \bold "Poco stringendo..."}
+  \mark \markup { \mvt {\normalsize "Poco stringendo..."}}
     s2.*3 |
   \time 2/4 s2 |
   \time 3/4 s2.*2 |
@@ -828,7 +830,7 @@ ActeDeuxSceneUnMesures= {
   \time 2/4 s2 |
   \time 3/4 s2. |
   \time 4/4 s1 |
-    \mark \markup { \huge \bold Andantino }
+    \mark \markup { \mvt Andantino }
     s1*2
   \time 3/4 s2.*4 |
   \time 2/4 s2 |
@@ -901,7 +903,7 @@ ActeDeuxSceneUnBisMesures = {
 
 ActeDeuxSceneDeuxMesures = {
   \time 3/2
-  \mark \markup {\huge \bold "Andante tranquillo" }  
+  \mark \markup { \mvt "Andante tranquillo" }  
   R1.*6
   \time 2/2 R1*2
   \time 3/4 R2.*5
@@ -932,7 +934,7 @@ ActeDeuxSceneDeuxMesures = {
 
 ActeDeuxSceneTroisMesures = {
   \time 3/8
-  \mark \markup { \huge \bold "Larghetto" }
+  \mark \markup { \mvt "Larghetto" }
   R4.*51 \bar "||"
   \time 2/8 R4*27
   \time 3/8 R4.

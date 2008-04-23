@@ -143,14 +143,23 @@ PianoDeuxMainsBroken=
 
 %% Articulation shortcuts -----------------------------------------%
 
-#(define (add-script m t)
-   (if
-     (equal? (ly:music-property m 'name) 'EventChord)
-     (set! (ly:music-property m 'elements)
-           (append (ly:music-property m 'elements)
-                  (list (make-music 'ArticulationEvent
-               'articulation-type t)))))
-   m)
+#(define (make-script x)
+   (make-music 'ArticulationEvent
+               'articulation-type x))
+               
+#(define (add-script m x)
+ (let ( (eventname (ly:music-property m 'name)))
+  (if (equal? eventname 'EventChord)
+    (let ( (elements (ly:music-property m 'elements)) )
+      (if (not (equal? (ly:music-property (car elements)
+                'name) 'RestEvent))
+        (set! (ly:music-property m 'elements)
+          (append elements (list 
+          (make-script x)))))))
+          m))
+
+#(define (double-script m t tt)
+       (add-script (add-script m t) tt))
 
 st =
 #(define-music-function (parser location music) 
@@ -191,28 +200,28 @@ accdet =
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
-   (add-script (add-script m "tenuto") "accent"))
+   (double-script m "tenuto" "accent"))
 		(music-map make-script-music music))
 
 marcdet = 
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
-   (add-script (add-script m "tenuto") "marcato"))
+   (double-script m "tenuto" "marcato"))
 		(music-map make-script-music music))
 
 accst = 
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
-   (add-script (add-script m "accent") "staccato"))
+   (double-script m "accent" "staccato"))
 		(music-map make-script-music music))
     
 marcst = 
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
-   (add-script (add-script m "marcato") "staccato"))
+   (double-script m "marcato" "staccato"))
 		(music-map make-script-music music))
     
 CaV=
@@ -254,12 +263,16 @@ parlato =
       (make-simple-markup  "(")
       (make-general-align-markup Y DOWN note-mark)
       (make-simple-markup  "=")
-      (make-simple-markup (number->string count)
-      (make-simple-markup  ")"))))))
+      (make-simple-markup (number->string count))
+      (make-simple-markup  ")")))))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Text Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% In-score text formatting ---------------------------------------%
+
+#(define-markup-command (mvt layout props arg) (markup?)
+    (interpret-markup layout props
+    (markup #:huge #:bold arg)))
 
 #(define-markup-command (indic layout props arg) (markup?)
     (interpret-markup layout props
@@ -298,7 +311,10 @@ startTxt =
 
 cmb =
 #(define-music-function (parser location nuance texte) (string? string?)
-(make-dynamic-script (markup #:dynamic nuance #:text texte)))
+              (make-dynamic-script 
+              (markup #:dynamic nuance 
+              #:hspace .6
+              #:text #:medium #:upright texte)))
 
 %% Lyrics formatting ----------------------------------------------%
 
