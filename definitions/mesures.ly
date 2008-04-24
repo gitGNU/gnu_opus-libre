@@ -11,14 +11,15 @@ PrologueMesures = {
   
   \time 3/4
   \partial 4 s4 R2.*3
- % \mark \markup \init-did \PrologueA
+  \mark \markup \init-did \PrologueA
   \time 4/4 R1 \bar "||"
   \time 2/4
   \mark \markup{ \mvt Largo } 
   \tempo 4 = 50
   R2*2
   \time 3/4
-  R2. |
+  R2.
+  \mark \markup \did \PrologueAA
   \time 2/4
   R2*2 |
   \time 3/4
@@ -31,17 +32,19 @@ PrologueMesures = {
   R2*2 |
   \time 3/4
   R2.
- % \mark \markup \did PrologueB
+  \mark \markup \did \PrologueB
   \time 2/4
   R2*2 |
   \time 3/4
   \mark \markup{ \mvt "Vivo subito" } R2. |
   \time 2/4
+  \mark \markup \did \PrologueC
   R2*2 |
   \time 3/4
   R2. |
   \time 2/4
-  R2 |
+  R2
+  \mark \markup \did \PrologueD
   \time 3/4
   R2. |
   \time 2/4
@@ -52,13 +55,18 @@ PrologueMesures = {
   R2 |
   \time 3/4
   R2. |
-  \override TextSpanner #'edge-text = #'("rit." . "")
   \time 2/4
-  R2 | R2\startTextSpan |
+  \mark \markup \did \PrologueE
+  R2 | 
+  \startTxt #"rit."
+  R2 |
   \time 3/4
-  R2.\stopTextSpan \bar "||"
+  R2.\stopTxt \bar "||"
   \time 2/4
-  \mark \markup{ \mvt{Tempo giusto} }R2*8 |
+  \mark \markup{ \mvt "Tempo giusto" }
+  R2 
+  \mark \markup \did \PrologueF
+  R2*7 |
   \time 3/4
   R2.*10 |
   \time 4/4

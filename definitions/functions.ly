@@ -299,13 +299,20 @@ ind =
                   'text (markup #:indic text))))))
    music)
 
+#(define (make-text-span music t)
+ (set! (ly:music-property music 'elements)
+                       (append (ly:music-property music 'elements)
+                       (list (make-music 'TextSpanEvent
+                         'span-direction t))))
+                         music)
 startTxt =
-#(define-music-function (parser location text note)
-                     (string? ly:music?)
- (#{ \override TextSpanner #'edge-text = #'($text . "")
-     $note 
-  %  \startTextSpan
-   #}))
+#(define-music-function (parser location texte music ) (string? ly:music?)
+#{ \override TextSpanner #'bound-details #'left #'text = $texte
+                $(make-text-span music -1)#})
+
+stopTxt =
+#(define-music-function (parser location music ) (ly:music?)
+     (make-text-span music 1))
    
 %% Expressive indications -----------------------------------------%
 
@@ -314,7 +321,7 @@ cmb =
               (make-dynamic-script 
               (markup #:dynamic nuance 
               #:hspace .6
-              #:text #:medium #:upright texte)))
+              #:text #:medium #:upright texte )))
 
 %% Lyrics formatting ----------------------------------------------%
 
@@ -373,7 +380,7 @@ ital = {
     (markup #:override '(line-width . 40)
     #:override '(box-padding . 2)
     #:override '(corner-radius . 3)
-    #:rounded-box #:sans #:italic #:justify-string text)))
+    #:rounded-box #:sans #:italic #:tiny #:justify-string text)))
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props
