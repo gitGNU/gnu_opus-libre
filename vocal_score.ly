@@ -45,6 +45,8 @@
     \override DynamicText #'extra-offset = #'(0 . 2.5)
     \override Hairpin #'extra-offset = #'(0 . 2.5)
     \consists "Skip_event_swallow_translator"
+    %\consists "Bar_engraver"
+    %\override BarLine #'transparent = ##t
     }
   \context {
     \Staff
@@ -52,12 +54,14 @@
     \name "StaffUp"
     \alias Staff
 		%\remove "Time_signature_engraver"
+       \consists "Time_signature_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 5)
     fontSize = #-1
     \override StaffSymbol #'staff-space = #(magstep -1)
   }
   \context {
     \StaffUp
+       \consists "Time_signature_engraver"
     \type "Engraver_group"
     \name "StaffDown"
     \alias Staff
@@ -72,17 +76,16 @@
     \override VerticalAxisGroup #'remove-empty = ##t
   }
   \context { \PianoStaff 
-    \denies "Staff"
+   % \denies "Staff"
     \accepts "StaffUp"
     \accepts "DynaMeter"
-    \accepts "Dynamics"
     \accepts "StaffDown"
     %\remove "Time_signature_engraver"
     connectArpeggios = ##t % to avoid collisions with pianoDynaMeters
     %\override VerticalAlignment #'forced-distance = #7
   }
 }
-\version "2.10"
+
 \paper {
      %    line-width = \paper-width - 20
     %   horizontal-shift = 5

@@ -81,6 +81,6 @@ PianoDynaMeter = {
 ReductionLayout ={
   \AdditionalLayout
   \override Score.RehearsalMark #'font-size = #4
-  \override Score.TimeSignature #'X-extent = #'(0 . 3)
+  \override Score.TimeSignature #'X-extent = #'(0 . 2)
 }
 

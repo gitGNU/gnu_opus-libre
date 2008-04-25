@@ -311,9 +311,10 @@ parlato =
     (interpret-markup layout props
     (markup #:whiteout #:small #:italic arg)))
 
-cmb =
-#(define-music-function (parser location nuance texte) (string? string?)
-              (make-dynamic-script 
+cmb = 
+#(define-music-function (parser location nuance texte ) 
+(string? string? )
+(make-dynamic-script 
               (markup #:dynamic nuance 
               #:hspace .6
               #:text #:medium #:upright texte )))
@@ -348,7 +349,8 @@ ind =
                          music)
 startTxt =
 #(define-music-function (parser location texte music ) (string? ly:music?)
-#{ \override TextSpanner #'bound-details #'left #'text = $texte
+#{ \override TextSpanner #'bound-details #'left #'text = 
+  \markup { \bold $texte }
                 $(make-text-span music -1)#})
 
 stopTxt =
@@ -466,9 +468,9 @@ ital = {
 #(define-markup-command (did layout props text) (markup?)
   (interpret-markup layout props
     (markup #:override '(line-width . 40)
-    #:override '(box-padding . 2)
+    #:override '(box-padding . 1)
     #:override '(corner-radius . 3)
-    #:rounded-box #:sans #:italic #:tiny #:justify-string text)))
+    #:box #:sans #:italic #:tiny #:justify-string text)))
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props

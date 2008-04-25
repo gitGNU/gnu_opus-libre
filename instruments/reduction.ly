@@ -162,9 +162,9 @@ PrologueMainDroite={
     \new Voice { \voiceOne s4 #(set-octavation 1) <fa'' lab reb> <fa lab reb>}
     \new Voice { \voiceTwo r4 <mi, do'> <mi do'>} >> \oneVoice |
     r4 \pl <si! re> <sib' mib solb> <si re mib solb> |
-    #(set-octavation 0) r4 \pl <fa, lab reb> <mi'! la! do>
-    \pl <fa, lab reb> <mi' la do> |
-    r4 \pl <si,! re> <sib' mib solb> \pl <si, re> <sib' mib solb> |
+    #(set-octavation 0) r4 \pl { <fa, lab reb> <fa lab reb>}
+    { <mi'! la! do> <mi la do> }|
+    r4 \pl { <si,! re> <si re>} {<sib' mib solb> <sib mib solb>} |
     r4 <sold fad'> <sold mi'> r4 <sol! sib mib> <sol la mib'> |
     <fa! lab mib'> <fa lab reb> <sol red'> <mib lab dob> \clef bass |
     r8 re, mib sib' si fad' \clef treble | sol re' mib sib' | r8
@@ -217,7 +217,7 @@ PrologueMainGauche={ \clef bass
 		\partial 4 r4 \clef treble |#(set-octavation 1) \repeat tremolo 12 {sib'''32 si!} |
     \repeat tremolo 12 {sib32 si!} \repeat tremolo 12 {sib32 si!}|
     << { la1 \glissando _\markup {\indic "(touches blanches)" } #(set-octavation 0)\clef bass 
-     <mi,,,, mi'>2\laissezVibrer } \\ { s1 s4 mi,4\laissezVibrer }>>|
+       <mi,,,, mi'>2\laissezVibrer } \\ { s1 s4_\markup { \indic ample } mi,4\laissezVibrer }>>|
     r4 <mi mi'>\laissezVibrer | r2 <mi mi'>4\laissezVibrer | r4 <mi mi'>\laissezVibrer |
     r8 <mi'> \t {mi mi mi} |
     <mi, mi'>8\laissezVibrer \repeat tremolo 2 {mi'32 red'} \repeat tremolo 8 {mi,32 red'}
@@ -346,7 +346,7 @@ PrologueMainGauche={ \clef bass
 
 PrologueNuances = {
   \partial 4 s4\< R2.\mp
-  R2.\< R2. R1 \fp \<  R2 \cmb #"mf" #"ample" R2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 
+  R2.\< R2. R1 \fp \< R2 \mf R2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 
   R2. R2*2 R2. R2 R2. R2 R2. R2 R2. R2 R2 R2. R2*8 R2.*10 R1 R2*2 R2
   R1*2 R2. R1 R2. R1
   R2*4 R2.*11 R4.
