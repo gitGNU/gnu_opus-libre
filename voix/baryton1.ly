@@ -265,6 +265,6 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     re[ la] dod[ lab] \t {sib[ fa sol]} | re4 R4*6 R4.*14 R4*13
     re16 mi8. | r16 re re re | sold4 | R4*5
     r8 mib | \t {re fad sold} | R4*2 |
-    si16 si si dod lab8 sib | fa16 fa fa sol |
+    r16 si si dod lab8 sib | fa16 fa fa sol |
   }
 }

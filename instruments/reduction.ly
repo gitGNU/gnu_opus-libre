@@ -2765,7 +2765,50 @@ ActeDeuxSceneTroisMainDroite = {
     <dod red> <do re sol> <do re sol> <do re sol> |
     <do re sol> <do re sol> <do re sol> <do re sol> |
     
+    R2.*2 re'2.\laissezVibrer |
+    r8 <la, sold'>16 <la sold'> <sib la'>8 fad'16 fad sol8 r |
+    <mib re'>2.\laissezVibrer |
+    r8 <la, sold'>16 <la sold'> <sib la'>8 fad'16 fad sol8 r |
+    \pl { 
+    <mib re'>2.~ <mib re'>2\laissezVibrer } { s2.
+    sold16 sold la8 sold16 sold la la,} |
+    sold' sold la la, sold' sold la la, |
+    <mi' sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la, |
+    <sold' si> <sold si> <la do> do, <sold' si> <sold si> <la do> do, |
+    <mi  sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la, |
+    <sold' si> <sold si> <la do> do, <mid sold> <mid sold><fad la>la, |
+    <sold' si> <sold si> <la do> do, <si'   re> <si   re> <do mib>mib,|
+    <mi  sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la, |
+    <sold' si> <sold si> <la do> do, <sold' si> <sold si> <la do> do, |
+    <mid sold> <mid sold><fad la>la, <sold' si> <sold si> <la do> do, 
+    <si'   re> <si   re> <do mib>                                mib, |
+    <si'  red> <si  red> <do mi> mi, <si'  red> <si  red> <do mi> mi, |
+    <red' fad> <red fad> <mi sol>sol,<red' fad> <red fad> <mi sol>sol,|
+    <si   red> <si  red> <do mi> mi, <red' fad> <red fad> <mi sol>sol,|
+    <red' fad> <red fad> <mi sol>sol,<sid  red> <sid red> <dod mi>mi, |
+    <sid' red> <sid red> <dod mi>mi, <la    do> <la   do><lad dod>dod,|
+    <sid' red> <sid red> <dod mi>mi, <si'  red> <si  red> <do mi> mi, |
+    <red'fad><red fad><mi sol>fad,sol<red'fad><red fad><mi sol>fad,sol|
+    <fad' lad> <fad lad> <sol si>si, <fad' lad> <fad lad> <sol si>si, |
+    <lad' dod> <lad dod> <si re> re, <lad' dod> <lad dod> <si re> re, |
+    <fad  lad> <fad lad> <sol si>si, <fad' lad> <fad lad> <sol si>si, |
+    <lad' dod> <lad dod> <si re> re, <lad' dod> <lad dod> <si re> re, |
+    <fad  lad> <fad lad> <sol si>si, <fad' lad> <fad lad> <sol si>si, |
+    <lad' dod> <lad dod> <si re> re, <lad' dod> <lad dod> <si re> re, |
+    <fad  lad> <fad lad> <sol si>si, <lad' dod> <lad dod> <si re> re, |
+    <dod'  mi> <dod  mi> <re fa> fa, <dod'  mi> <dod  mi> <re fa> fa, |
+    <lad  dod> <lad dod> <si re> re, <lad' dod> <lad dod> <si re> re, |
+    <dod'  mi> <dod  mi> <re fa> fa, <dod'  mi> <re   fa> fa,<lad dod>|
+    <si    re> re,<dod' mi> <re fa>  fa,   <mi' sol> <fa  lab>   lab, |
+    <mi'  sol> <mi  sol> <fa lab>lab,<mi'  sol> <mi  sol> <fa lab>lab,|
+    <dod   mi> <dod  mi> <re fa> fa, <fad  lad> <fad lad> <sol si>si, |
+    <lad  dod> <lad dod> <si re> re, <dod'  mi> <dod  mi> <re fa> fa, |
+    <mi'  sol> <fa  lab> lab,<mi' sol> <mi sol> <fa  lab> lab<dod mi> |
+    <dod   mi> <re fa> fa, <dod' mi> <re fa>fa, <lad dod> <si re>     |
+    fa<mi'sol><mi sol><fa lab>lab,<mi'sol><fa lab>lab,<mi'sold><mi sold>|
     
+    <sol, la mi' la>8 sold, <sold, la'> <sib fad'> |
+    sib
   }
 }
 
@@ -2820,6 +2863,34 @@ ActeDeuxSceneTroisMainGauche = {
     <dod sold'>8 sold' <dod, sold'> sold' <dod, sold'> sold' <dod, sold'> sold'|
     do,32[ ~ sol'~ <do, sol' re'>16 sol'8] |
     <do, sol'> sol' <do, sol'> sol' <do, sol'> sol' <do, sol'> sol'  |
-    <do, sol'> <si sol'> <sol' si> sol <si, sol'> sol' <si, sol'> sol'|
+    <do, sol'> <si sol'> <sol' si> sol <si, sol'> sol' <si, sol'>sol'|
+    R2.*3
+    r8 sib16 sib si8 <lab sol'>16 <lab sol'> <la sold'>8 r |
+    R2.
+    r8 sib16  sib si8 <lab sol'>16 <lab sol'> <la sold'>8 r |
+    \pl {mi'?2.~ <fa, mi'>4. fa8~ fa4 fa }
+    {s2. r8 <sib la'>16 <sib la'> <si! sib'>8 s8
+    <dod do'!>16 <dod do'> <re dod'>8 r <mi red'>16 <mi red'> } |
+    fa,2~ fa~ fa4 si,~ si2~ si |
+    fa'2~ fa4. si8~ si2. |
+    fad2~ fad4~ fad16 do8.~ do4~ do8. 
+    fad16~ fad2~ fad16 do'8.~ do4~ do4. dod8~ dod2 r8 |
+    \set Score.tieWaitForNote = ##f
+    \oct { sol2~ sol~ sol~ sol4 mi~ mi2~ mi8 sol4.~ sol16 mi8.~ mi4~ | sol2~ sol4. } 
+    <sib,, sib'>8~ <sib sib'>2~ <sib sib'>4 <sol' sol'>~ <sol sol'>8.
+    <sib, sib'>16~ <sib sib'>4~ <sib sib'>16
+    <sol' sol'>8.~ <sol sol'>8 <sib sib'>
+    <sol' sol'>8. <sib, sib'>16~ <sib sib'> <dod dod'>8. <mi, mi'>2
+    <dod' dod'>4 <mi, mi'>~ <mi mi'>8. <sib' sib'>16 <dod dod'>8.
+    <mi, mi'>16 <dod' dod'> <sib sib'> |
+    <sol sol'> <re mib> la' <dod, re> sol <re' mib> la' <dod, re> |
+    \set Score.tieWaitForNote = ##t
+    \stemDown <sol fad'> <re' mib> s <lad' si> s8 \stemNeutral |
+    sol,16 <re' mib> r <dod re> sol <re' mib> la' <dod, re> |
+    \stemDown <sol  fa'> <re' mib> s <lad' si> s8 \stemNeutral |
+    mi,16 <la si> re <la si> mi <la si> re <la si> |
+    \stemDown <mi red'> la s8 <dod' re> s8 \stemNeutral |
+    re,,16 <re' mi> <dod red> \droite <re' mi> <dod red> <mib' fa> \gauche |
+    <dod,,, do'!>2\laissezVibrer r4 |
   }
 }

@@ -14,8 +14,7 @@ PrologueMesures = {
   \mark \markup \init-did \PrologueA
   \time 4/4 R1 \bar "||"
   \time 2/4
-  \mark \markup{ \mvt Largo } 
-  \tempo 4 = 50
+  \mouv #"Largo" #"4" #48
   R2*2
   \time 3/4
   R2.
@@ -949,4 +948,36 @@ ActeDeuxSceneTroisMesures = {
   \time 2/8 R4*7
   \time 3/8 R4.*14
   \time 2/8 R4*28
+  \time 3/4 R2.*7 \bar "||"
+  \time 2/4 R2*9
+  \time 3/4 R2.
+  \time 2/4 R2*6
+  \time 5/8 R1*5/8
+  \time 2/4 R2*16
+  \time 5/8 R1*5/8
+  \time 2/4 R2
+  \time 3/8 R4.
+  \time 2/4 R2
+  \time 3/8 R4.
+  \time 2/4 R2
+  \time 3/8 R4.*2 \bar "||"
+  \time 3/4 R2.*9
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 2/4 R2
+  \time 3/8 R4.
+  \time 2/4 R2
+  \time 3/8 R4.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
 }

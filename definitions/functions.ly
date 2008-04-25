@@ -233,6 +233,43 @@ CaV=
                                        m)
 
 
+%% Music shortcuts ------------------------------------------------%
+
+#(define (octave-up noteevent)
+ (let* ((pitch (ly:music-property noteevent 'pitch))
+        (octave (ly:pitch-octave pitch))
+        (note (ly:pitch-notename pitch))
+        (alteration (ly:pitch-alteration pitch))
+        (duration (ly:music-property noteevent 'duration))
+        (newnoteevent
+          (make-music 'NoteEvent
+            'duration duration
+            'pitch (ly:make-pitch (1- octave) note alteration))))
+   newnoteevent))
+
+#(define (octavize-chord elements)
+ (cond ((null? elements) elements)
+       ((eq? (ly:music-property (car elements) 'name) 'NoteEvent)
+         (cons (car elements)
+               (cons (octave-up (car elements))
+                     (octavize-chord (cdr elements)))))
+       (else (cons (car elements) (octavize-chord (cdr elements))))))
+
+#(define (octavize music)
+ (let* ((es (ly:music-property music 'elements))
+        (e (ly:music-property music 'element))
+        (name (ly:music-property music 'name)))
+   (cond ((eq? name 'EventChord)
+          (ly:music-set-property! music 'elements (octavize-chord es)))
+         ((pair? es)
+          (for-each (lambda(x) (octavize x)) es))
+         ((ly:music? e)
+          (octavize e))))
+ music)
+
+oct = #(define-music-function (parser location mus) (ly:music?)
+ (octavize mus))
+
 %%%%%%%%%%%%%%%%%%%%%%%% Layout Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Music layout ---------------------------------------------------%
@@ -253,7 +290,7 @@ parlato =
 	$notes
 \revert NoteHead #'style #})
 
-#(define-public (format-movement-markup dur count context)
+#(define-public (format-moveYment-markup dur count context)
   (let* ((note-mark (make-smaller-markup
 		     (make-note-by-number-markup (ly:duration-log dur)
 						 (ly:duration-dot-count dur)
@@ -266,17 +303,21 @@ parlato =
       (make-simple-markup (number->string count))
       (make-simple-markup  ")")))))
 
-%%%%%%%%%%%%%%%%%%%%%%%%%% Text Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% In-score text formatting ---------------------------------------%
-
-#(define-markup-command (mvt layout props arg) (markup?)
-    (interpret-markup layout props
-    (markup #:huge #:bold arg)))
+%% Expressive indications -----------------------------------------%
 
 #(define-markup-command (indic layout props arg) (markup?)
     (interpret-markup layout props
     (markup #:whiteout #:small #:italic arg)))
+
+cmb =
+#(define-music-function (parser location nuance texte) (string? string?)
+              (make-dynamic-script 
+              (markup #:dynamic nuance 
+              #:hspace .6
+              #:text #:medium #:upright texte )))
+
 
 ten = 
 #(define-music-function (parser location music) (ly:music?)
@@ -313,15 +354,62 @@ startTxt =
 stopTxt =
 #(define-music-function (parser location music ) (ly:music?)
      (make-text-span music 1))
-   
-%% Expressive indications -----------------------------------------%
+              
+%% Tempo indications ----------------------------------------------%
+              
+#(define (string->duration strElt)
+  ( let*((ptindex (string-index strElt #\. )) (ptnumber 0)
+     (val (string->number (if ptindex (substring strElt 0 ptindex) strElt)))
+     (dur (ly:intlog2 val)))
+(while ptindex (begin
+             (set! ptnumber (1+ ptnumber))
+             (set! ptindex (string-index strElt #\.  (1+ ptindex)))))
+     (ly:make-duration dur ptnumber 1 1)))
 
-cmb =
-#(define-music-function (parser location nuance texte) (string? string?)
-              (make-dynamic-script 
-              (markup #:dynamic nuance 
-              #:hspace .6
-              #:text #:medium #:upright texte )))
+#(define-markup-command (mvt layout props arg) (markup?)
+    (interpret-markup layout props
+    (markup #:huge #:bold arg)))
+
+mouv =
+#(define-music-function (parser location texte duration count music)
+(string? string? integer? ly:music?)
+(define (format-movement-markup dur count context) 
+    (make-line-markup
+     (list
+      (markup #:mvt texte #:hspace 1)
+      (make-simple-markup  "(")
+      (make-general-align-markup Y DOWN (make-smaller-markup
+		     (make-note-by-number-markup (ly:duration-log dur)
+						 (ly:duration-dot-count dur) 1)))
+      (make-simple-markup  "=")
+      (make-simple-markup (number->string count))
+      (make-simple-markup  ")"))))
+(make-music 'SequentialMusic 'elements 
+      (list (make-music 'ContextSpeccedMusic
+              'context-type 'Score 'element 
+              (make-music 'PropertySet
+                'value format-movement-markup
+                'symbol 'metronomeMarkFormatter))
+            (make-music 'ContextSpeccedMusic
+              'context-type 'Score 'element
+              (make-music 'SequentialMusic 'elements
+              (list (make-music 'PropertySet
+                     'value (ly:duration-length (string->duration duration))
+                     'symbol 'tempoWholesPerMinute)
+                    (make-music 'PropertySet
+                     'value (string->duration duration)
+                     'symbol 'tempoUnitDuration)
+                    (make-music 'PropertySet
+                     'value count
+                     'symbol 'tempoUnitCount))))
+                     music
+                     (make-music 'ContextSpeccedMusic
+              'context-type 'Score 'element 
+              (make-music 'PropertySet
+                'value format-metronome-markup
+                'symbol 'metronomeMarkFormatter)))))
+                     
+%%%%%%%%%%%%%%%%%%%%%%%%%% Text Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Lyrics formatting ----------------------------------------------%
 
@@ -385,25 +473,5 @@ ital = {
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props
     (markup #:fill-line ( #:did text))))
-    
-    
-#(define (string->duration strElt)
-  (
-     let*(
-     (ptindex (string-index strElt #\. ))
-               ;; position of "." in "4." for exemple. #f if no ".".
-     (ptnumber 0)
-     (val (string->number (if ptindex (substring strElt 0 ptindex) strElt)))
-               ;; val = 1 2 4 8 ... (without the ".")
-     (dur (ly:intlog2 val))
-               ;; dur = 0 1 2 3 ... (need for ly:make-duration)
-)
-               ;; find the number of "." in Duration
-(while ptindex (
-     begin
-             (set! ptnumber (1+ ptnumber))
-             (set! ptindex (string-index strElt #\.  (1+ ptindex) ))
-             )
-     )
-     (ly:make-duration dur ptnumber 1 1)
-  ))
+
+
