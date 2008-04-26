@@ -466,8 +466,8 @@ ital = {
 #(define-markup-command (did layout props text) (markup?)
   (interpret-markup layout props
     (markup #:override '(line-width . 40)
-    #:override '(box-padding . 2)
-    #:override '(corner-radius . 3)
+    #:override '(box-padding . 1)
+    #:override '(corner-radius . 2)
     #:rounded-box #:sans #:italic #:tiny #:justify-string text)))
 
 #(define-markup-command (init-did layout props text) (markup?)

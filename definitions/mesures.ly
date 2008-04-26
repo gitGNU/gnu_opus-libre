@@ -11,14 +11,13 @@ PrologueMesures = {
   
   \time 3/4
   \partial 4 s4 R2.*3
-  \mark \markup \init-did \PrologueA
+%  \mark \markup \init-did \PrologueA
   \time 4/4 R1 \bar "||"
   \time 2/4
   \mouv #"Largo" #"4" #48
   R2*2
   \time 3/4
-  R2.
-  \mark \markup \did \PrologueAA
+  r2.^\markup \did \PrologueAA
   \time 2/4
   R2*2 |
   \time 3/4
@@ -30,20 +29,18 @@ PrologueMesures = {
   \time 2/4
   R2*2 |
   \time 3/4
-  R2.
-  \mark \markup \did \PrologueB
+  r2.^\markup \did \PrologueB
   \time 2/4
   R2*2 |
   \time 3/4
   \mark \markup{ \mvt "Vivo subito" } R2. |
   \time 2/4
-  \mark \markup \did \PrologueC
-  R2*2 |
+  r2^\markup \did \PrologueC
+  R2 |
   \time 3/4
   R2. |
   \time 2/4
-  R2
-  \mark \markup \did \PrologueD
+  r2^\markup \did \PrologueD
   \time 3/4
   R2. |
   \time 2/4
@@ -55,16 +52,14 @@ PrologueMesures = {
   \time 3/4
   R2. |
   \time 2/4
-  \mark \markup \did \PrologueE
-  R2 | 
+  r2^\markup \did \PrologueE
   \startTxt #"rit."
   R2 |
   \time 3/4
   R2.\stopTxt \bar "||"
   \time 2/4
   \mark \markup{ \mvt "Tempo giusto" }
-  R2 
-  \mark \markup \did \PrologueF
+  r2^\markup \did \PrologueF
   R2*7 |
   \time 3/4
   R2.*10 |

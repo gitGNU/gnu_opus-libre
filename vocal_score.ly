@@ -75,7 +75,6 @@
     \denies "Staff"
     \accepts "StaffUp"
     \accepts "DynaMeter"
-    \accepts "Dynamics"
     \accepts "StaffDown"
     %\remove "Time_signature_engraver"
     connectArpeggios = ##t % to avoid collisions with pianoDynaMeters
@@ -98,7 +97,7 @@
 }
 
 Prologue = { \ReductionLayout
-<<
+  << \new DynaMeter \with { \remove "Dynamic_engraver" } \PrologueMesures
 \new ChoirStaff
 	<<
 		\new Staff \new Voice = "tenor" \PrologueTenor
@@ -108,7 +107,8 @@ Prologue = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\PrologueMainDroite
- 	\new DynaMeter <<\PianoDynaMeter \PrologueMesures \PrologueNuances >>
+ 	\new DynaMeter \with {
+  \remove "Text_engraver " \remove "Script_engraver" } <<\PianoDynaMeter \PrologueNuances >>
 	\new StaffDown = "gauche"		\PrologueMainGauche
 		>> }
 >>
