@@ -5,12 +5,11 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+\include "./definitions/functions.ly"
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
-\include "./texte/didascalies.ly"
-
-\include "./definitions/functions.ly"
 \include "./definitions/structure.ly"
+\include "./texte/didascalies.ly"
 \include "./definitions/layout.ly"
 \include "./definitions/mesures.ly"
 
@@ -28,33 +27,45 @@
 \layout {
   \context {
     \type "Engraver_group"
-    \name "DynaMeter"
+    \name "TopLine"
+    \consists "Output_property_engraver"
+    \consists "Axis_group_engraver"
+    \consists "Script_engraver"
+    \consists "Dynamic_engraver"
+    \consists "Mark_engraver"
+    \consists "Text_engraver"
+    \consists "Metronome_mark_engraver"
+    %\consists "Skip_event_swallow_translator"
+    %\consists "Time_signature_engraver"
+  }
+  \context {
+    \type "Engraver_group"
+    \name "Dynamics"
     \alias Voice
     \consists "Output_property_engraver"
     \consists "Axis_group_engraver"
-   % \consists "Time_signature_engraver"
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-   % pedalSustainStrings = #'("Ped." "*Ped." "*")
-   % pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-  %  \consists "Piano_pedal_engraver"
-    \consists "Script_engraver"
     \consists "Dynamic_engraver"
-    \consists "Text_engraver"
+    \consists "Skip_event_swallow_translator"
+    \consists "Piano_pedal_engraver"
+    %\consists "Bar_engraver"
+    %\override BarLine #'transparent = ##t
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     \override TextScript #'font-size = #2
     \override TextScript #'font-shape = #'italic
     \override DynamicText #'extra-offset = #'(0 . 2.5)
     \override Hairpin #'extra-offset = #'(0 . 2.5)
-    \consists "Skip_event_swallow_translator"
-    }
+    pedalSustainStrings = #'("Ped." "*Ped." "*")
+    pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+
+  }
   \context {
     \Staff
     \type "Engraver_group"
     \name "StaffUp"
     \alias Staff
-		%\remove "Time_signature_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 5)
-    fontSize = #-1
     \override StaffSymbol #'staff-space = #(magstep -1)
+    fontSize = #-1
   }
   \context {
     \StaffUp
@@ -72,46 +83,49 @@
     \override VerticalAxisGroup #'remove-empty = ##t
   }
   \context { \PianoStaff 
-    \denies "Staff"
     \accepts "StaffUp"
-    \accepts "DynaMeter"
+    \accepts "Dynamics"
     \accepts "StaffDown"
-    %\remove "Time_signature_engraver"
-    connectArpeggios = ##t % to avoid collisions with pianoDynaMeters
-    %\override VerticalAlignment #'forced-distance = #7
+    connectArpeggios = ##t % to avoid collisions with pianoDynamicss
+  }
+  \context { \Score
+    \remove "Mark_engraver"
+    \remove "Metronome_mark_engraver"
+    \accepts "TopLine"
   }
 }
-\version "2.10"
+
 \paper {
-     %    line-width = \paper-width - 20
-    %   horizontal-shift = 5
+  %line-width = \paper-width - 20
+  %horizontal-shift = 5
   line-width = #180
   bottom-margin = #20
   ragged-bottom = ##f
   ragged-last-bottom = ##t
   left-margin = #20
- % systemSeparatorMarkup = \slashSeparator
- % between-system-space = 1.5\cm
- % between-system-padding = #1
- % annotate-spacing = ##t
+  % systemSeparatorMarkup = \slashSeparator
+  % between-system-space = 1.5\cm
+  % between-system-padding = #1
+  % annotate-spacing = ##t
 }
 
 Prologue = { \ReductionLayout
-  << \new DynaMeter \with { \remove "Dynamic_engraver" } \PrologueMesures
-\new ChoirStaff
-	<<
-		\new Staff \new Voice = "tenor" \PrologueTenor
-    \new Lyrics \lyricsto "tenor" { \PrologueTenorTexte }
-		\new Staff \new Voice = "baryton" \PrologueBarytonDeux
-    \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
-	>>
-\new PianoStaff { \Accompagnement <<
-	\new StaffUp = "droite"		\PrologueMainDroite
- 	\new DynaMeter \with {
-  \remove "Text_engraver " \remove "Script_engraver" } <<\PianoDynaMeter \PrologueNuances >>
-	\new StaffDown = "gauche"		\PrologueMainGauche
-		>> }
->>
+  <<
+    \new TopLine \PrologueMesures
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "tenor" \PrologueTenor
+        \new Lyrics \lyricsto "tenor" { \PrologueTenorTexte }
+        \new Staff \new Voice = "baryton" \PrologueBarytonDeux
+        \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
+      >>
+    \new PianoStaff { \Accompagnement
+      <<
+        \new StaffUp = "droite"		\PrologueMainDroite
+        \new Dynamics << \PianoDynamics \PrologueNuances >>
+        \new StaffDown = "gauche"		\PrologueMainGauche
+      >> }
+  >>
 }
 
 ActeUnSceneUn = { \ReductionLayout
@@ -127,7 +141,7 @@ ActeUnSceneUn = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneUnMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneUnMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneUnMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneUnMainGauche
 		>> }
 >>
@@ -144,7 +158,7 @@ ActeUnSceneUnBis = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneUnBisMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneUnBisMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneUnBisMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneUnBisMainGauche
 		>> }
 >>
@@ -162,7 +176,7 @@ ActeUnSceneDeux = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneDeuxMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneDeuxMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneDeuxMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneDeuxMainGauche
 		>> }
 >>
@@ -179,7 +193,7 @@ ActeUnSceneTrois = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneTroisMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneTroisMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneTroisMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneTroisMainGauche
 		>> }
 >>
@@ -196,7 +210,7 @@ ActeUnSceneTroisBis = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneTroisBisMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneTroisBisMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneTroisBisMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneTroisBisMainGauche
 		>> }
 >>
@@ -213,7 +227,7 @@ ActeUnSceneTroisTer = { \ReductionLayout
 	>>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneTroisTerMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneTroisTerMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneTroisTerMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneTroisTerMainGauche
 		>> }
 >>
@@ -236,7 +250,7 @@ ActeUnSceneQuatre = { \ReductionLayout
 	 >>
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeUnSceneQuatreMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeUnSceneQuatreMesures >>
+	\new Dynamics <<\PianoDynamics \ActeUnSceneQuatreMesures >>
 	\new StaffDown = "gauche"		\ActeUnSceneQuatreMainGauche
 		>> }
 >>
@@ -261,7 +275,7 @@ ActeUnSceneQuatre = { \ReductionLayout
     >> 
 \new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\EntracteMainDroite
-	\new DynaMeter <<\PianoDynaMeter \EntracteMesures >>
+	\new Dynamics <<\PianoDynamics \EntracteMesures >>
 	\new StaffDown = "gauche"		\EntracteMainGauche
 		>> }
 >>
@@ -280,7 +294,7 @@ ActeDeuxSceneUn = { \ReductionLayout
 	>>
 	\new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeDeuxSceneUnMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeDeuxSceneUnMesures >>
+	\new Dynamics <<\PianoDynamics \ActeDeuxSceneUnMesures >>
 	\new StaffDown = "gauche"		\ActeDeuxSceneUnMainGauche
 		>> }
 >>
@@ -299,7 +313,7 @@ ActeDeuxSceneUnBis = { \ReductionLayout
 	>>
 	\new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeDeuxSceneUnBisMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeDeuxSceneUnBisMesures >>
+	\new Dynamics <<\PianoDynamics \ActeDeuxSceneUnBisMesures >>
 	\new StaffDown = "gauche"		\ActeDeuxSceneUnBisMainGauche
 		>> }
 >>
@@ -324,7 +338,7 @@ ActeDeuxSceneDeux = { \ReductionLayout
     >> 
 	\new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeDeuxSceneDeuxMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeDeuxSceneDeuxMesures >>
+	\new Dynamics <<\PianoDynamics \ActeDeuxSceneDeuxMesures >>
 	\new StaffDown = "gauche"		\ActeDeuxSceneDeuxMainGauche
 		>> }
 >>
@@ -349,7 +363,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
     >> 
 	\new PianoStaff { \Accompagnement <<
 	\new StaffUp = "droite"		\ActeDeuxSceneTroisMainDroite
-	\new DynaMeter <<\PianoDynaMeter \ActeDeuxSceneTroisMesures >>
+	\new Dynamics <<\PianoDynamics \ActeDeuxSceneTroisMesures >>
 	\new StaffDown = "gauche"		\ActeDeuxSceneTroisMainGauche
 		>> }
 >>
@@ -366,7 +380,12 @@ ActeDeuxSceneTrois = { \ReductionLayout
 \score {
 	   \Prologue
     \header {
-	    piece = \PrologueTitre
+      tableau = \PrologueTitre
+      indication = \PrologueAAA
+	    piece = \markup { \column {
+       \fill-line {  \fromproperty #'header:tableau }
+       \hspace #1
+       \fill-line {  \fromproperty #'header:indication }
 	    }
 }%}
 %{\score {

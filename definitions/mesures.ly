@@ -11,13 +11,12 @@ PrologueMesures = {
   
   \time 3/4
   \partial 4 s4 R2.*3
-%  \mark \markup \init-did \PrologueA
   \time 4/4 R1 \bar "||"
   \time 2/4
   \mouv #"Largo" #"4" #48
   R2*2
   \time 3/4
-  r2.^\markup \did \PrologueAA
+  r2.^\markup \did \PrologueA
   \time 2/4
   R2*2 |
   \time 3/4
@@ -33,10 +32,10 @@ PrologueMesures = {
   \time 2/4
   R2*2 |
   \time 3/4
-  \mark \markup{ \mvt "Vivo subito" } R2. |
+  \mouv #"Vivo subito" #"4" #120 
+  r2.^\markup \did \PrologueC |
   \time 2/4
-  r2^\markup \did \PrologueC
-  R2 |
+  R2*2 |
   \time 3/4
   R2. |
   \time 2/4
@@ -60,15 +59,24 @@ PrologueMesures = {
   \time 2/4
   \mark \markup{ \mvt "Tempo giusto" }
   r2^\markup \did \PrologueF
-  R2*7 |
+  r4
+  r4^\markup \did \PrologueG
+  R2*6 |
   \time 3/4
-  R2.*10 |
+  R2.*6 |
+  r2
+  r4^\markup \did \PrologueH
+  R2.
+  r2.^\markup\did \PrologueI
+  R2.
   \time 4/4
   R1 |
   \time 2/4
   R2*2 | R2\fermata \bar "||"
   \time 4/4
-  \mark \markup{ \mvt {Piu lento} } R1*2 |
+  \mouv #"Più lento" #"4" #60
+  r1^\markup \did \PrologueJ
+  R1 |
   \time 3/4
   R2. |
   \time 4/4
@@ -78,23 +86,32 @@ PrologueMesures = {
   \time 4/4
   R1 |
   \time 2/4
-  \mark \markup{ \mvt Adagio } | R2*4 |
+  \mouv #"Adagio" #"4" #52 R2*4 |
   \time 3/4
   R2.*11 |
   \time 3/8
-  R4. \bar"||"
-  \mark \markup { \mvt Andantino }
+  r4.^\markup \did \PrologueK
+  \bar"||"
+  \mouv #"Andantino" #"4." #56
   R4.*25
-  \mark \markup { \mvt "Poco a poco allargando..." }
-  R4.*13 \bar "||"
-  \mark \markup { \mvt "A tempo, un poco piu vivo" }
-  R4.*34
+  \startTxt #"Poco a poco allargando..."
+  R4.*9
+  r8
+  r4^\markup \did \PrologueL
+  R4.*3 \bar "||" \stopTxt
+  \mouv #"A tempo, un poco più vivo" #"4." #63
+  R4.*28
+  r4.^\markup\did \PrologueM
+  R4.*3
+  r4.^\markup\did \PrologueN
+  R4.
   \time 5/8
   R2*5/4
   \time 6/8
-  R2.*3 \bar "||"
+  r2.^\markup\did \PrologueO
+  R2.*2 \bar "||"
   \time 4/4
-  \mark \markup { \mvt "Adagio, ad libitum" }
+  \mouv #"Adagio ad lib." #"4" #66
   R1*4
   \time 6/4
   R1.*2
@@ -106,7 +123,7 @@ PrologueMesures = {
   R1*2
   \time 3/4
   R2. \bar "||"
-  \mark \markup { \mvt "Mouvement de valse modérée" }
+  \mouv #"Mouvement de valse modérée" #"4" #88
   R2.*6
   \time 2/4
   R2*2
@@ -123,11 +140,12 @@ PrologueMesures = {
   \time 2/4
   R2*2
   \time 4/4
+  \mark \markup { \mvt "Scherzando" }
   R1
   \time 3/4
   R2. \bar "||"
   \time 2/4
-  \mark \markup { \mvt "Vivo al fine" }
+  \mouv #"Vivo al fine" #"4" #120
   R2*23 \bar "||"
   \mark \markup { \mvt "Recitativo" }
   R2*8 \bar "|."

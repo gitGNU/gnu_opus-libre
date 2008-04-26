@@ -311,9 +311,10 @@ parlato =
     (interpret-markup layout props
     (markup #:whiteout #:small #:italic arg)))
 
-cmb =
-#(define-music-function (parser location nuance texte) (string? string?)
-              (make-dynamic-script 
+cmb = 
+#(define-music-function (parser location nuance texte ) 
+(string? string? )
+(make-dynamic-script 
               (markup #:dynamic nuance 
               #:hspace .6
               #:text #:medium #:upright texte )))
@@ -348,7 +349,8 @@ ind =
                          music)
 startTxt =
 #(define-music-function (parser location texte music ) (string? ly:music?)
-#{ \override TextSpanner #'bound-details #'left #'text = $texte
+#{ \override TextSpanner #'bound-details #'left #'text = 
+  \markup { \bold $texte }
                 $(make-text-span music -1)#})
 
 stopTxt =
@@ -468,10 +470,15 @@ ital = {
     (markup #:override '(line-width . 40)
     #:override '(box-padding . 1)
     #:override '(corner-radius . 2)
-    #:rounded-box #:sans #:italic #:tiny #:justify-string text)))
+    #:rounded-box #:sans #:italic #:small #:justify-string text)))
+
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props
     (markup #:fill-line ( #:did text))))
 
-
+#(define-markup-command (vspace layout props amount) (number?)
+  (let ((amount (* amount 3.0)))
+    (if (> amount 0)
+        (ly:make-stencil "" (cons -1 1) (cons 0 amount))
+        (ly:make-stencil "" (cons -1 1) (cons amount amount)))))

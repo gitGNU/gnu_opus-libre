@@ -36,10 +36,12 @@ AdditionalLayout ={
   \override Score.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
   \set Score.markFormatter = #format-mark-box-letters
  % \set Score.metronomeMarkFormatter = #format-movement-markup
+  \override Score.RehearsalMark #'side-axis = #Y
+  \override Score.RehearsalMark #'direction = #DOWN
   \override Score.RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
   \override Score.RehearsalMark #'font-size = #10
-  \override Score.TimeSignature #'style = #'()
   \override Score.RehearsalMark #'self-alignment-X = #left
+  \override Score.TimeSignature #'style = #'()
   \override Score.OttavaBracket #'dash-fraction = #0.05
   \override Score.OttavaBracket #'dash-period = #0.25
   \override Score.Accidental #'minimum-X-extent = #'(-0.5 . 0 )
@@ -71,9 +73,9 @@ middleTimeSig = {
   \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
 }
 
-PianoDynaMeter = {
-  \override DynaMeter.TimeSignature #'font-size = #1
-  \override DynaMeter.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
+PianoDynamics = {
+  \override Dynamics.TimeSignature #'font-size = #1
+  \override Dynamics.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
 }
 
 
@@ -81,6 +83,6 @@ PianoDynaMeter = {
 ReductionLayout ={
   \AdditionalLayout
   \override Score.RehearsalMark #'font-size = #4
-  \override Score.TimeSignature #'X-extent = #'(0 . 3)
+  \override Score.TimeSignature #'X-extent = #'(0 . 2)
 }
 

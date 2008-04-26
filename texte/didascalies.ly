@@ -20,10 +20,10 @@ MmJeu = "Même jeu."
 %                             Prologue                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-PrologueA ="Ce tableau se joue à l'avant-scène, rideau fermé.
+PrologueAAA = "Ce tableau se joue à l'avant-scène, rideau fermé.
 La musique commence dans le noir."
 
-PrologueAA = "Entre le Chef de la Garde, par la même porte que le public.
+PrologueA = "Entre le Chef de la Garde, par la même porte que le public.
 Il traverse la salle vivement, semblant chercher quelqu'un dans le public,
 jusqu'au moment où on le découvre dans la lumière."
 
@@ -54,14 +54,15 @@ PrologueL ="Le roi réfléchit, puis se penche un peu sur le côté."
 
 PrologueM ="Le Roi pousse une exclamation de dégoût."
 
-PrologueN ="Un temps. Le Roi et le Chef semblent chercher leurs mots...
-mais ne parviennent qu'à crier derechef, ensemble."
+PrologueN ="Un temps. Le Roi et le Chef semblent chercher leurs mots..."
 
-PrologueO ="Le Roi, déconcerté et pensif, marmonne en cherchant ses mots" 
+PrologueO ="mais ne parviennent qu'à crier derechef, ensemble."
 
-PrologueP ="Le Roi sort en continuant de chanter."
+PrologueP ="Le Roi, déconcerté et pensif, marmonne en cherchant ses mots" 
 
-PrologueQ ="Resté seul, le Chef regarde autour de lui, puis, au public :"
+PrologueQ ="Le Roi sort en continuant de chanter."
+
+PrologueR ="Resté seul, le Chef regarde autour de lui, puis, au public :"
 
 
 
