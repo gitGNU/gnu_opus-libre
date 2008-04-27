@@ -161,7 +161,7 @@ PianoDeuxMainsBroken=
 #(define (double-script m t tt)
        (add-script (add-script m t) tt))
 
-stacc =
+st =
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
@@ -223,21 +223,6 @@ marcst =
           (define (make-script-music m)
    (double-script m "marcato" "staccato"))
 		(music-map make-script-music music))
-
-#(define (s x) (st x))
-#(define (d x) (det x))
-#(define (a x) (acc x))
-#(define (m x) (marc x))
-#(define (sd x) (stdet x))
-#(define (ds x) (stdet x))
-#(define (ad x) (accdet x))
-#(define (da x) (accdet x))
-#(define (md x) (marcdet x))
-#(define (dm x) (marcdet x))
-#(define (as x) (accst x))
-#(define (sa x) (accst x))
-#(define (ms x) (marcst x))
-#(define (sm x) (marcst x))
 
 
 CaV=

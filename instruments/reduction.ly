@@ -18,10 +18,10 @@ PrologueMainDroite={
     %%% Introduction %%%
     
 		\partial 4 #(set-octavation 1) r8 \ttt { \voiceTwo mi'32[( fa sib] \voiceOne si![ mi fa]} |
-    \ad la4) r8 \as {<lad' si> r4 | r8 <lad si> r4 r16 <lad si>8.} |
-    \sd <lad si>8 \s {<lad si> \t {<lad si> <lad si> <lad si>} \tt {<lad si>16 <lad si> <lad si> <lad si> <lad si>}}|
-    \ad <lad si>1^\markup {\indic "(touches noires)"} \glissando | #(set-octavation 0)
-    \d mi,,,2~ mi4 r | << { \ind #"en dehors" mi16 fa8.~fa2\laissezVibrer } \\ { mi,2.} >> \clef bass |
+    \accdet la4) r8 \accst {<lad' si> r4 | r8 <lad si> r4 r16 <lad si>8.} |
+    \stdet <lad si>8 \st {<lad si> \t {<lad si> <lad si> <lad si>} \tt {<lad si>16 <lad si> <lad si> <lad si> <lad si>}}|
+    \accdet <lad si>1^\markup {\indic "(touches noires)"} \glissando | #(set-octavation 0)
+    \det mi,,,2~ mi4 r | << { \ind #"en dehors" mi16 fa8.~fa2\laissezVibrer } \\ { mi,2.} >> \clef bass |
     \repeat tremolo 8 { mi32 fa} \repeat tremolo 8 {mi32 fa} |
     <<{mi'2.\laissezVibrer s4} \\ {red,4 mi2~ mi4}>> mi~| mi8 mi \t {mi mi mi} |
     \set Staff.timeSignatureFraction = #'(4 . 4)

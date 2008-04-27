@@ -20,24 +20,27 @@ PrologueTenor = { \Tenor
     R2*2	R2. R2*2 | r2 r8. mi,32\mp ( mi | sold4--) r8. sol32( sol | si4--) r8. sib32( \< sib |
     re4.) \! r8 r8. mi,32\mf ( mi | la4-- ) r8. sol32 ( sol | do4-- ) r8. sib32( \< sib |
     mib4.)\! r8 r8. mi,!32\f ( mi | si'!4--) r8. la32 ( la | mi'4-- ) r8. re32 \< re |
-    \parlato la'4 \! r2 | R2*2 r8 mi? mi mi fa4~| fa8 r r4 | 
-    r8 mi mi mi mi mi | fa4 mi8 mi \t {sol mi mi} mi4. mi8 | r4 reb8 do reb do mi reb do4 |
-    r la \t {do la la} la2. |
-    R2 r4 sib16 la r8 | r do16 la r4 | R2
-    r4 \t {r8 dod si} | sold4. r8 | R2*2 R2.*6
-    r2 sib16 lab r8 | r4 do16 la r8 r4 | R2.*2
+    \parlato la'4 \! r2 | R2*2 r8 \stdet {mi? mi mi} fa4 ->- ~| fa8 r r4 | 
+    r8 \stdet {mi mi mi mi mi} | fa4-- \stdet {mi8 mi} \t {sol( mi mi} mi4.) mi8-. |
+    r4 \ind #"(meno)" reb8( do) reb( do) mi( reb) do4 |
+    r la\mp \t {do la la} << la2. \new Voice = "dummy" {s2\> s4\!}>> |
+    R2 r4 sib16-- ( \p  la ) r8 | r do16-- ( la ) r4 | R2
+    r4 \t {r8 dod ( \p \> si} | sold4. ) r8 \! | R2*2 R2.*6
+    r2 sib16 \mp ( lab ) r8 | r4 do16 ( la ) r8 r4 | R2.*2
     R1 R2*3
     
-    r2\fermata r4 \t {re re8 } | sol sol sol lab fa4 \t {r8 fa sol} |
-    re4 r \t {r si8} sib4 r8 dod~ \t {dod4 la la } | lab \t {r8 lab lab} sol4 |
-    r8 si4 sol8 \t {sol4 sol8~ } sol4~ | sol2 | R2*3 R2.*11 R4.*9
-    r4 lab16 lab  | sib8 sol16 r sib sib | reb8 r4 | R4.*4
-    si8 r si16 si | do4 r8 | R4.*2
-    si8 r si16 si | si4 r8 | R4.*2
-    la8 r16 la la8| la4 r8 | R4.*2
-    reb8 r mib16 reb reb4 r8|R4.*2
-    re!8 r fa16 re| re4 r8 | R4.*4
-    la8 la la | \parlato la r4 | R4.*7
+    r2\fermata r4 \t { \ind #"minaudant" re ( \pp re8 } | sol sol sol lab fa4 ) 
+    \t {r8 fa ( sol} |
+    re4  )r \t {r si8 ( } sib4 ) r8 dod ( -- ~ \t {dod4 la la } | lab ) 
+    \t {r8 lab ( lab} sol4 ) |
+    r8 si4 -- ( sol8 \t {sol4 sol8~ } sol4 ) ~ | sol2 \>  | R2*3\! R2.*11 R4.*9
+    r4 lab16 \p lab  | sib8 ( sol16) r sib sib | reb8 -- r4 | R4.*4
+    si8 \p r si16 si | do4 -- r8 | R4.*2
+    si8 \p r si16 si | si4 -- r8 | R4.*2
+    la8 \p r16 la \> la8| la4 \! r8 | R4.*2
+    reb8\pp -- r mib16 ( reb reb4 ) r8|R4.*2
+    re!8 -- r fa16 ( re| re4 ) r8 | R4.*4
+    \det {la8( la la }| \parlato la ) r4 | R4.*7
     r8 dod16 dod r dod | dod dod r dod dod r |
     dod dod r red32 dod mi8 | R4. r8 fa4 |
     r8 fa,16 fa re re | sol sol fa fa sib sib lab lab reb reb sib sib |

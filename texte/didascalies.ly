@@ -37,13 +37,13 @@ PrologueD ="Le roi, peu intéressé, regarde dans le vague..."
 
 PrologueE ="se fige..."
 
-PrologueF ="avant de réagir avec agitation."
+PrologueF ="... avant de réagir vivement."
 
 PrologueG ="Le chef se lamente avec affectation."
 
 PrologueH ="Même jeu du Chef, derrière le Roi..."
 
-PrologueI ="qui se retourne brusquement pour le prendre à partie."
+PrologueI ="... qui se retourne brusquement pour le prendre à partie."
 
 PrologueJ ="Un temps. Le Chef de la Garde hésite, va pour chanter,
 puis se ravise. Même jeu. Puis enfin, avec un regard en coin vers le Roi :"

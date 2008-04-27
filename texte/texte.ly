@@ -55,8 +55,8 @@ PrologueBarytonDeuxTexte = \lyricmode {
   Un é -- tran -- ger, \dash dis -- tu_?
   Ja -- mais je n'ai vu d'é -- tran -- ger par chez nous_;
   que fai -- re_? Que fai -- re_?
-  Quel con --seil sub -- til me prop -- po -- \dash ses -- tu_?
-  A -- llons a -- llons, chef de la ga -- rde,
+  Quel con --seil sub -- til me pro -- po -- \dash ses -- tu_?
+  A -- llons a -- llons, Chef de la Ga -- rde,
   j'ai trop be -- soin de toi en ces mo -- ments gra -- ves, très gra -- ves_;
   ex -- trê -- me -- ment graves... __ _
   Pa -- \dash rle -- moi un peu __ _ de cet é -- tran -- ger.

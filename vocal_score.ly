@@ -39,6 +39,7 @@
     \consists "Metronome_mark_engraver"
     %\consists "Skip_event_swallow_translator"
     %\consists "Time_signature_engraver"
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
   }
   \context {
     \type "Engraver_group"
@@ -106,8 +107,8 @@
   ragged-last-bottom = ##t
   left-margin = #20
   % systemSeparatorMarkup = \slashSeparator
-  % between-system-space = 1.5\cm
-  % between-system-padding = #1
+  between-system-space = 0.2\cm
+  between-system-padding = #0
   % annotate-spacing = ##t
 }
 
