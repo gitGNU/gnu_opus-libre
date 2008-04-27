@@ -31,11 +31,12 @@ AdditionalLayout ={
   #(override-auto-beam-setting '(end 1  8 2 8) 1 4 'Score)
   \set Score.tieWaitForNote = ##t
   \set Score.ignoreMelismata = ##t
+  \set Score.markFormatter = #format-mark-box-letters
   \override Score.LyricText #'self-alignment-X = #-0.5
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
-  \set Score.markFormatter = #format-mark-box-letters
- % \set Score.metronomeMarkFormatter = #format-movement-markup
+  \override Score.MetronomeMark #'side-axis = #Y
+  \override Score.MetronomeMark #'direction = #DOWN
   \override Score.RehearsalMark #'side-axis = #Y
   \override Score.RehearsalMark #'direction = #DOWN
   \override Score.RehearsalMark #'extra-offset = #'(0.0 . 0.0 )

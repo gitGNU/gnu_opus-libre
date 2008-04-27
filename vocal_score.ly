@@ -5,6 +5,8 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+\include "italiano.ly"
+
 \include "./definitions/functions.ly"
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
@@ -384,9 +386,11 @@ ActeDeuxSceneTrois = { \ReductionLayout
       indication = \PrologueAAA
 	    piece = \markup { \column {
        \fill-line {  \fromproperty #'header:tableau }
-       \hspace #1
-       \fill-line {  \fromproperty #'header:indication }
+       \vspace #4
+       \fill-line { \fromproperty #'header:indication }
+        }
 	    }
+    }
 }%}
 %{\score {
     \ActeUnSceneUn

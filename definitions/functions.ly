@@ -161,7 +161,7 @@ PianoDeuxMainsBroken=
 #(define (double-script m t tt)
        (add-script (add-script m t) tt))
 
-st =
+stacc =
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
@@ -174,19 +174,19 @@ acc =
           (define (make-script-music m)
    (add-script m "accent"))
 		(music-map make-script-music music))
-    
-marc = 
-#(define-music-function (parser location music) 
-					(ly:music?)
-          (define (make-script-music m)
-   (add-script m "marcato"))
-		(music-map make-script-music music))
 
 det = 
 #(define-music-function (parser location music) 
 					(ly:music?)
           (define (make-script-music m)
    (add-script m "tenuto"))
+		(music-map make-script-music music))
+    
+marc = 
+#(define-music-function (parser location music) 
+					(ly:music?)
+          (define (make-script-music m)
+   (add-script m "marcato"))
 		(music-map make-script-music music))
 
 stdet = 
@@ -223,7 +223,23 @@ marcst =
           (define (make-script-music m)
    (double-script m "marcato" "staccato"))
 		(music-map make-script-music music))
-    
+
+#(define (s x) (st x))
+#(define (d x) (det x))
+#(define (a x) (acc x))
+#(define (m x) (marc x))
+#(define (sd x) (stdet x))
+#(define (ds x) (stdet x))
+#(define (ad x) (accdet x))
+#(define (da x) (accdet x))
+#(define (md x) (marcdet x))
+#(define (dm x) (marcdet x))
+#(define (as x) (accst x))
+#(define (sa x) (accst x))
+#(define (ms x) (marcst x))
+#(define (sm x) (marcst x))
+
+
 CaV=
 #(let ((m (make-music 'ArticulationEvent
                           'articulation-type "flageolet")))
@@ -475,7 +491,10 @@ ital = {
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props
-    (markup #:fill-line ( #:did text))))
+    (markup #:override '(line-width . 100)
+    #:override '(box-padding . 1.5)
+    #:override '(corner-radius . 2)
+    #:rounded-box #:sans #:italic #:justify-string text)))
 
 #(define-markup-command (vspace layout props amount) (number?)
   (let ((amount (* amount 3.0)))

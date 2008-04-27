@@ -17,10 +17,10 @@ Tenor = {
 PrologueTenor = { \Tenor
 	\relative { 	
     \partial 4 r4 | R2.*3 | R1 |
-    R2*2	R2. R2*2 | r2 r8. mi,32 mi | sold4-- r8. sol32 sol | si4-- r8. sib32 sib |
-    re4. r8 r8. mi,32 mi | la4-- r8. sol32 sol | do4-- r8. sib32 sib |
-    mib4. r8 r8. mi,!32 mi | si'!4-- r8. la32 la | mi'4-- r8. re32 re |
-    \parlato la'4 r2 | R2*2 r8 mi? mi mi fa4~| fa8 r r4 | 
+    R2*2	R2. R2*2 | r2 r8. mi,32\mp ( mi | sold4--) r8. sol32( sol | si4--) r8. sib32( \< sib |
+    re4.) \! r8 r8. mi,32\mf ( mi | la4-- ) r8. sol32 ( sol | do4-- ) r8. sib32( \< sib |
+    mib4.)\! r8 r8. mi,!32\f ( mi | si'!4--) r8. la32 ( la | mi'4-- ) r8. re32 \< re |
+    \parlato la'4 \! r2 | R2*2 r8 mi? mi mi fa4~| fa8 r r4 | 
     r8 mi mi mi mi mi | fa4 mi8 mi \t {sol mi mi} mi4. mi8 | r4 reb8 do reb do mi reb do4 |
     r la \t {do la la} la2. |
     R2 r4 sib16 la r8 | r do16 la r4 | R2
