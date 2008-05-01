@@ -122,12 +122,12 @@ Prologue = { \ReductionLayout
         \new Staff \new Voice = "baryton" \PrologueBarytonDeux
         \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
       >>
-    \new PianoStaff { \Accompagnement
+     \new PianoStaff { \Accompagnement
       <<
         \new StaffUp = "droite"		\PrologueMainDroite
         \new Dynamics << \PianoDynamics \PrologueNuances >>
         \new StaffDown = "gauche"		\PrologueMainGauche
-      >> }
+      >> } 
   >>
 }
 
@@ -383,14 +383,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
 %{\score {
 	   \Prologue
     \header {
-      tableau = \PrologueTitre
-      indication = \PrologueAAA
-	    piece = \markup { \column {
-       \fill-line {  \fromproperty #'header:tableau }
-       \vspace #4
-       \fill-line { \fromproperty #'header:indication }
-        }
-	    }
+      piece = \PrologueTitre
     }
 }%}
 %{\score {
@@ -453,7 +446,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
         piece = \Separateur
       }
 }%}
-\score {
+%{\score {
     \ActeDeuxSceneDeux
     \header {
       tableau = \ActeDeuxSceneDeuxTitre
@@ -466,7 +459,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
 	    }
     }
 }%}
-%{\score {
+\score {
     \ActeDeuxSceneTrois
     \header {
       piece = \ActeDeuxSceneTroisTitre

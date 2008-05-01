@@ -20,8 +20,8 @@ MmJeu = "Même jeu."
 %                             Prologue                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-PrologueAAA = \markup { \init-did  "Ce tableau se joue à l'avant-scène, rideau fermé.
-  La musique commence dans le noir."  }
+PrologueAAA = "Ce tableau se joue à l'avant-scène, rideau fermé.
+  La musique commence dans le noir."
 
 PrologueA = "Entre le Chef de la Garde, par la même porte que le public.
 Il traverse la salle vivement, semblant chercher quelqu'un dans le public,

@@ -186,7 +186,7 @@ ActeDeuxSceneDeuxTenor = { \Tenor
 
 ActeDeuxSceneTroisTenor = { \Tenor
   \relative {
-    R4.*51 r8 sold16 sold la8 fad16 fad sol8 r |
+    R4.*51 r8 sold16 sold la8 sol16 sol sold8 r |
     R4*14  r8 sold16 sold la8 fad16 fad sol8 r | R4*7 R4. R4*7 
     R4.*14 r8 sold16 sold la8 fad16 fad sol8 r16 sold |
     la la fad fad sib8 la16 la dod dod \t {do do do} mi8 r16 fad,32 fa'! |

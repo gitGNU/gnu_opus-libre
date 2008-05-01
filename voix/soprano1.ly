@@ -142,6 +142,14 @@ ActeDeuxSceneDeuxSopranoUn= { \SopranoUn
 
 ActeDeuxSceneTroisSopranoUn= { \SopranoUn
   \relative {
-    
+    R4.*51 R4*27 R4. R4*7 R4.*14 R4*28 R2.*7 R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8
+    r8 sold'16 sold la8 fad16 fad sib8 r4 |
+    r8 sold16  sold la8 fa!16 fa  si!8 r4 |
+    r8 sold16  sold la8 re,16 sol dod8 r4 | R4. r2
+    r8\fermata sold16 sold la4 r sib,8 sib| mib4 r2 | R2.*4
+    R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
+    R2 R4. R2 R4. R2*2 R2. R2*2 R2. R2 R2. R2 R2*7
+    r8 sib' sib sib mib mib | sib sib mib4 la,8 la |
+    re4 sold, fad8 la | fa!4 r2 
   }
 }

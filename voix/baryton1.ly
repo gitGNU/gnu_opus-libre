@@ -272,5 +272,8 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     re16 mi8. | r16 re re re | sold4 | R4*5
     r8 mib | \t {re fad sold} | R4*2 |
     r16 si si dod lab8 sib | fa16 fa fa sol |
+    R2.-\fermataMarkup do,8 re r2 | R2.*5
+    R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
+    R4. 
   }
 }

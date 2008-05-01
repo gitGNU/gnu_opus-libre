@@ -95,9 +95,20 @@ ActeDeuxSceneTroisContralto= { \Contralto
     R4.*51 R4*27 R4. R4*5 
     la16 do re8~ re lab16 do | re8 r4 | R4.*13 R4*7
     la16 do re8  re16 mi sol8|
-    r8 sold16 sold la8 fad16 fad sol!4
-    r8 sold16 sold la8 fad16 fad sol!4 R4*4
+    r8 sold16 sold la8 sol16 sol sold4
+    r8 sold16 sold la8 sol16 sol sold4 R4*4
     r8 sold16 sold la8 fad16 fad sol!4 R4*6
+    R2.-\fermataMarkup R2.
+    r2 la,8 do re2 r4 | r2 mib8 fa lab2 r4 |
+    r4 r8 lab la do | re2~re4 r | R2*7 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
+    R4. R2 R4. R2 R4.*2
+    R2.*9 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2 R4. R2 R4.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 2/4 R2*2
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
     
   }
 }
