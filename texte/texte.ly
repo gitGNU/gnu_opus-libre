@@ -27,7 +27,7 @@ PrologueTenorTexte = \lyricmode {
   Aah_! __ _ Aah_! __ _ Aaah... __ _ _ Aah_! __ _ Aah_! __ _ 
   Me pu -- nir in -- ce -- ssa -- ment, Ma -- jes -- té_;
   j'ai dit_: \leftSyl « no -- _ tre châ -- teau » au lieu de_: \leftSyl « vo -- tre châ -- teau » __ _ _
-  \dash C'est -- \dash à -- \dash di -- re, Ma -- jes -- té_?
+  \dash C'est -- \dash à -- di -- re, Ma -- jes -- té_?
   Non, Ma -- jes -- té. Non, Ma -- jes -- té. Non, Ma -- jes -- té. Non, Ma -- jes -- té. Non, Ma -- jes -- té.
   Non  Ma -- jes -- t...
   C'est que per -- so -- nne ne le co -- nnaît, Ma -- jes -- té...

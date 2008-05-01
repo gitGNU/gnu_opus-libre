@@ -950,6 +950,27 @@ ActeDeuxSceneDeuxMesures = {
   \time 3/2 R1.*2
   \time 3/4 R2.
   \time 2/2 R1 \bar "||"
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2. \bar "||"
 }
 
 ActeDeuxSceneTroisMesures = {

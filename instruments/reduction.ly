@@ -2551,7 +2551,7 @@ ActeDeuxSceneDeuxMainDroite = {
     sold' <la, re> sold' <la, re> la' <sib, red mi> <sib red mi> <sib red mi>
     <sib red mi>8 <sib red mi>16 <sib red mi>|
     sold' <la, re> sold' <la, re>\t { la'8 <sib, mib> <si mib>}
-    \tt { \gauche si,16 fad' la \droite do mi!~} 
+    \tt { \gauche si,16 fad' la \droite do mi!} 
     << \voiceTwo <do mi>1.\arpeggio \\ \voiceOne {la'4 sol fa mi fa8 mi fa sol}>>
     la4 sol fa mi fa8 mi fa sol | <fa la>4 <dod mi> r1 |
     <dod fa la>4 <fa, la mi'> r2 | R1 | la'4 sol fa |
@@ -2607,6 +2607,31 @@ ActeDeuxSceneDeuxMainDroite = {
     la4 sol fa mi fa8 mi fa sol
     \pl <sib, re>1.\arpeggio {la'4 sol fa mi fa8 mi fa sol}
     \pl <si, dod>2 {la'4 mi} r | <dod fa la> <do mi> r2 |
+    \repeat tremolo 24 la'32 \pl {r8 sol~ sol2. fa2. r8 mi~ mi2. fa4 mi fa sol la2.} {
+    \repeat tremolo 32 la32
+    \repeat tremolo 24 la32
+    \repeat tremolo 32 la32
+    \repeat tremolo 24 la32
+    \repeat tremolo 32 la32 }
+    \repeat tremolo 24 la32 \pl {fa4 mi fa sol}
+    \repeat tremolo 32 la32
+    \repeat tremolo 12 {sib, la'} \pl {
+    \repeat tremolo 16 {sib, mi}} la1
+    \repeat tremolo 4  {sib,32 la'}
+    \repeat tremolo 4  {do, la'}
+    \repeat tremolo 4  {re, la'} \pl {mib2 mi8 red mi fad}
+    \repeat tremolo 32 la32
+    \repeat tremolo 12 {sold la}
+    \repeat tremolo 16 {sold la}
+    \repeat tremolo 24 la32
+    \repeat tremolo 32 la32 \pl { r4 sol2\laissezVibrer}
+    \repeat tremolo 24 la32 \pl {r2 fa4 mi}
+    \repeat tremolo 32 la32 \pl {fa4 sol}
+    \repeat tremolo 24 la32 
+    \repeat tremolo 24 la32
+    \pl {fa8 mi fa sol fa16 mi fa sol fa mi fa sol}
+    {la4 la la la}
+    
   }
 }
 
@@ -2659,10 +2684,15 @@ ActeDeuxSceneDeuxMainGauche = {
     dod16 la'? red si' mi8 \clef treble <dod sold'> <dod sold'> <dod la'> r4 |
     <dod sold'>8 <dod sold'> <dod la'>4 <dod sold'>8 <dod sold'> \clef bass
     dod,,1~ dod4 dod | <sol sol'>2. r4 | dod1~ dod4 dod |
+    \set tieWaitForNote = ##f
     <sol sol' re' la'>1. \arpeggio ~ <sol sol' re' fa>2 r4 |
+    \set tieWaitForNote = ##t
     <sol'' si> <re fad lad> r2 |
     
-    
+    <la la'>4\arpeggio r2 R1 R2. R1 R2. R1 \clef treble
+    mib''4 reb dob sib1 R2. R1 R2. R1 R2. fa'4 mi fa sol \clef bass |
+    <la,,la'>\arpeggio r2 R1 R2. R1 \clef treble r2 fa''4 mi fa sol r |
+    R2.
   }
 }
 
@@ -2875,7 +2905,7 @@ ActeDeuxSceneTroisMainGauche = {
     fa'2~ fa4. si8~ si2. |
     fad2~ fad4~ fad16 do8.~ do4~ do8. 
     fad16~ fad2~ fad16 do'8.~ do4~ do4. dod8~ dod2 r8 |
-    \set Score.tieWaitForNote = ##f
+    \set tieWaitForNote = ##f
     \oct { sol2~ sol~ sol~ sol4 mi~ mi2~ mi8 sol4.~ sol16 mi8.~ mi4~ | sol2~ sol4. } 
     <sib,, sib'>8~ <sib sib'>2~ <sib sib'>4 <sol' sol'>~ <sol sol'>8.
     <sib, sib'>16~ <sib sib'>4~ <sib sib'>16
@@ -2884,7 +2914,7 @@ ActeDeuxSceneTroisMainGauche = {
     <dod' dod'>4 <mi, mi'>~ <mi mi'>8. <sib' sib'>16 <dod dod'>8.
     <mi, mi'>16 <dod' dod'> <sib sib'> |
     <sol sol'> <re mib> la' <dod, re> sol <re' mib> la' <dod, re> |
-    \set Score.tieWaitForNote = ##t
+    \set tieWaitForNote = ##t
     \stemDown <sol fad'> <re' mib> s <lad' si> s8 \stemNeutral |
     sol,16 <re' mib> r <dod re> sol <re' mib> la' <dod, re> |
     \stemDown <sol  fa'> <re' mib> s <lad' si> s8 \stemNeutral |

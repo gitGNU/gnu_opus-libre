@@ -360,57 +360,48 @@ stopTxt =
               
 %% Tempo indications ----------------------------------------------%
               
-#(define (string->duration strElt)
-  ( let*((ptindex (string-index strElt #\. )) (ptnumber 0)
-     (val (string->number (if ptindex (substring strElt 0 ptindex) strElt)))
-     (dur (ly:intlog2 val)))
-(while ptindex (begin
-             (set! ptnumber (1+ ptnumber))
-             (set! ptindex (string-index strElt #\.  (1+ ptindex)))))
-     (ly:make-duration dur ptnumber 1 1)))
-
 #(define-markup-command (mvt layout props arg) (markup?)
     (interpret-markup layout props
     (markup #:huge #:bold arg)))
 
+#(define ((make-format-movement-markup-function text) duration count context)
+ (markup #:mvt text #:hspace 1
+         "("
+         #:general-align Y DOWN #:smaller
+            #:note-by-number (ly:duration-log duration)
+                             (ly:duration-dot-count duration)
+                             1
+         "="
+         (number->string count)
+         ")"))
+
+
+#(define (string->duration duration-string)
+ "Parse the `duration-string', e.g. ''4..'' or ''breve.'', and return a duration object."
+ (let* ((length (string-length duration-string))
+        (dot-index (or (string-index duration-string #\.) length))
+        (len (substring duration-string 0 dot-index))
+        (dots (- length dot-index)))
+  (ly:make-duration (cond ((string=? len "breve") -1)
+                          ((string=? len "longa") -2)
+                          ((string=? len "maxima") -3)
+                          (else (log2 (string->number len))))
+                    dots 1 1)))
+
 mouv =
-#(define-music-function (parser location texte duration count music)
-(string? string? integer? ly:music?)
-(define (format-movement-markup dur count context) 
-    (make-line-markup
-     (list
-      (markup #:mvt texte #:hspace 1)
-      (make-simple-markup  "(")
-      (make-general-align-markup Y DOWN (make-smaller-markup
-		     (make-note-by-number-markup (ly:duration-log dur)
-						 (ly:duration-dot-count dur) 1)))
-      (make-simple-markup  "=")
-      (make-simple-markup (number->string count))
-      (make-simple-markup  ")"))))
-(make-music 'SequentialMusic 'elements 
-      (list (make-music 'ContextSpeccedMusic
-              'context-type 'Score 'element 
-              (make-music 'PropertySet
-                'value format-movement-markup
-                'symbol 'metronomeMarkFormatter))
-            (make-music 'ContextSpeccedMusic
-              'context-type 'Score 'element
-              (make-music 'SequentialMusic 'elements
-              (list (make-music 'PropertySet
-                     'value (ly:duration-length (string->duration duration))
-                     'symbol 'tempoWholesPerMinute)
-                    (make-music 'PropertySet
-                     'value (string->duration duration)
-                     'symbol 'tempoUnitDuration)
-                    (make-music 'PropertySet
-                     'value count
-                     'symbol 'tempoUnitCount))))
-                     music
-                     (make-music 'ContextSpeccedMusic
-              'context-type 'Score 'element 
-              (make-music 'PropertySet
-                'value format-metronome-markup
-                'symbol 'metronomeMarkFormatter)))))
+#(define-music-function (parser location text duration count music)
+                       (string? string? integer? ly:music?)
+ #{
+   \set Score.metronomeMarkFormatter = #(make-format-movement-markup-function $text)
+   \set Score.tempoWholesPerMinute = #$(ly:moment-mul (ly:make-moment count 1)
+                                         (ly:duration-length
+                                           (string->duration duration)))
+   \set Score.tempoUnitDuration = #$(string->duration duration)
+   \set Score.tempoUnitCount = #$count
+   $music
+   \set Score.metronomeMarkFormatter = #format-metronome-markup
+ #})
+
                      
 %%%%%%%%%%%%%%%%%%%%%%%%%% Text Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -436,43 +427,12 @@ ital = {
 
 %% Scenography formatting ---------------------------------------%
 
-#(define-public (rounded-box-stencil stencil thickness padding blot)
-  (let* ((xext (interval-widen (ly:stencil-extent stencil 0) padding))
-	 (yext (interval-widen (ly:stencil-extent stencil 1) padding))
-   (min-ext (min (-(cdr xext) (car xext)) (-(cdr yext) (car yext))))
-   (ideal-blot (min blot (/ min-ext 2)))
-   (ideal-thickness (min thickness (/ min-ext 2)))
-	 (outer (ly:round-filled-box
-		   (interval-widen xext ideal-thickness) 
-       (interval-widen yext ideal-thickness) 
-            ideal-blot))
-	 (inner (ly:make-stencil (list 'color (x11-color 'white) (ly:stencil-expr (ly:round-filled-box 
-       (cons (+ (car xext) ideal-thickness) (- (cdr xext) ideal-thickness)) 
-       (cons (+ (car yext) ideal-thickness) (- (cdr yext) ideal-thickness)) 
-            (- ideal-blot (* ideal-thickness 2))))))))
-    (set! stencil (ly:stencil-add outer inner))
-    stencil))
-
-
-#(define-markup-command (rounded-box layout props arg) (markup?)
-  (let* ((th (*
-	      (ly:output-def-lookup layout 'line-thickness)
-	      (chain-assoc-get 'thickness props 1)))
-         (rad (chain-assoc-get 'corner-radius props 1))
-	 (size (chain-assoc-get 'font-size props 0))
-	 (pad (* (magstep size)
-		 (chain-assoc-get 'box-padding props 0.5)))
-	 (m (interpret-markup layout props arg)))
-    (ly:stencil-add (rounded-box-stencil m th pad rad)
-    m)))
-
 #(define-markup-command (did layout props text) (markup?)
   (interpret-markup layout props
     (markup #:override '(line-width . 40)
     #:override '(box-padding . 1)
     #:override '(corner-radius . 2)
     #:rounded-box #:sans #:italic #:small #:justify-string text)))
-
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props

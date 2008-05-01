@@ -380,7 +380,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
 	  composer =  \OperaPartition
     tagline = \OperaNotice }
 
-\score {
+%{\score {
 	   \Prologue
     \header {
       tableau = \PrologueTitre
@@ -453,10 +453,17 @@ ActeDeuxSceneTrois = { \ReductionLayout
         piece = \Separateur
       }
 }%}
-%{\score {
+\score {
     \ActeDeuxSceneDeux
     \header {
-      piece = \ActeDeuxSceneDeuxTitre
+      tableau = \ActeDeuxSceneDeuxTitre
+      indication = \ActeDeuxSceneDeuxAAA
+	    piece = \markup { \column {
+       \fill-line {  \fromproperty #'header:tableau }
+       \vspace #4
+   %    \fill-line { \init-did { \fromproperty #'header:indication } }
+        }
+	    }
     }
 }%}
 %{\score {

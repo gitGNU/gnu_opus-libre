@@ -267,21 +267,54 @@ ActeUnSceneTroisTerG = "Il sort, laissant l'Étranger seul en scène."
 
 %%%%%%%%%%%%%%%%%%%%%%  Quatrième Tableau %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-XXA = "La lumière monte dans le silence, dévoilant le
+ActeUnSceneQuatreA = "La lumière monte dans le silence, dévoilant le
 Roi, la Reine et l'Étranger attablés et en plein
 dîner ; immobiles et muets, ils ne se regardent
 pas."
 
-XXB = "La musique s'interrompt en suspens, dans un
+ActeUnSceneQuatreB = "La musique s'interrompt en suspens, dans un
 silence pesant. Le pianiste arpège un accord de dominante,
 en une manière d'encouragement ; mais tour à tour, les personnages
 vont pour chanter, et se ravisent."
 
-XXC = "Même jeu, plusieurs fois ; enfin la
+ActeUnSceneQuatreC = "Même jeu, plusieurs fois ; enfin la
 Reine prend la parole."
 
-XXD = "L'Étranger reste silencieux."
+ActeUnSceneQuatreD = "L'Étranger reste silencieux."
 
-XXE = "L'Étranger continue, pour lui-même..."
+ActeUnSceneQuatreE = "L'Étranger continue, pour lui-même..."
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             ACTE II                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%  Premier Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%  Deuxième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
+
+ActeDeuxSceneDeuxAAA = "Dans le noir apparaît à nouveau le machine
+de l'Étranger. La Reine est toujours à pied
+d'oeuvre, en silence, comme si elle n'avait
+cessé de s'y affairer pendant la scène
+précédente."
+
+ActeDeuxSceneDeuxA = "Soudain, sous l'effet d'une de ses
+manipulations, la machine esquisse un
+mouvement, ponctué par l'orchestre."
+
+ActeDeuxSceneDeuxB = "La lumière diminue sur la Reine, sans
+toutefois s'éteindre complètement. Sur scène,
+on retrouve l'Étranger, au cachot ; on le voit
+soit par une fenêtre ou un soupirail, soit par
+un mur absent."
+
+ActeDeuxSceneDeuxC = "Tout au long de la scène, chacun des
+personnages se trouvera ainsi dans un espace
+scénique différent, que la lumière délimitera à
+chaque fois qu'il prendra la parole."
+
+ActeDeuxSceneDeuxD = "Le Roi est sur un lit d'hôpital, maintenu par le
+Docteur."
 

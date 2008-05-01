@@ -34,6 +34,7 @@ AdditionalLayout ={
   \set Score.markFormatter = #format-mark-box-letters
   \override Score.LyricText #'self-alignment-X = #-0.5
   \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \override Score.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
   \override Score.MetronomeMark #'side-axis = #Y
   \override Score.MetronomeMark #'direction = #DOWN
@@ -45,11 +46,11 @@ AdditionalLayout ={
   \override Score.TimeSignature #'style = #'()
   \override Score.OttavaBracket #'dash-fraction = #0.05
   \override Score.OttavaBracket #'dash-period = #0.25
-  \override Score.Accidental #'minimum-X-extent = #'(-0.5 . 0 )
+ % \override Score.Accidental #'minimum-X-extent = #'(-0.5 . 0 )
   \override Score.SystemStartBracket #'collapse-height = #1
   \override Score.SystemStartBrace #'collapse-height = #1
   \override Score.BarLine #'hair-thickness = #1.2
-  #(set-accidental-style 'modern 'Score)
+  #(set-accidental-style 'neo-modern 'Score)
 }
 
 %% Time Signatures layouts ----------------------------------------%

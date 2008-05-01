@@ -241,10 +241,16 @@ ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
 ActeDeuxSceneDeuxBarytonUn = { \BarytonUn
   \relative {
     R1.*5 r2 r4 fa, dod'2~ | dod4 r r dod |
-    r8 dod dod dod do do si si | fa'2 r4 | R2.*4
+    r8 dod dod dod do do si si | fa'2 r4  | R2.*4
     R1.*2 r2 r4 fa, dod'2~ | dod4 r r dod | 
-    r8 dod dod dod re re dod dod | fad2 r4| R1 R4. |
-    R1*6
+    r8 dod dod dod re re dod dod | fad2 r4| R1 R4. R1*6 R2.
+    r1 r4 la,8 la do2 r8 la la la re2. r4 |
+    r4 r8 do, la' re | do sib sol la re,4 |
+    do r8 do  la' re | do si  sold4       |
+    r8 si sold4 la8 do | mi2. | do2 r4    | R2 R4. R1*5 R2*6 R1 R2. R1. R1
+    r1 r8 la la la | re2. r4 \t{re mi do} |
+    la2 r4 | r2 r8 r16 lab sib fa do re   | la4 r2
+    \repeat unfold 10 {R1 R2. }
   }
 }
 
