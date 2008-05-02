@@ -454,7 +454,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
 	    piece = \markup { \column {
        \fill-line {  \fromproperty #'header:tableau }
        \vspace #4
-   %    \fill-line { \init-did { \fromproperty #'header:indication } }
+       \init-did { \fromproperty #'header:indication } }
         }
 	    }
     }

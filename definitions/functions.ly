@@ -49,98 +49,6 @@ PianoDeuxMains=
    $gauche 
 >> #})
 
-PianoDeuxMainsBroken=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ <<
-  \new Staff \with {
-  \remove "Ottava_spanner_engraver"
-  \remove "Collision_engraver"
-  \remove "Rest_collision_engraver"
-  \remove "Accidental_engraver"
-  \remove "Key_engraver"
-  \remove "Clef_engraver"	} { <<
-    \new Voice \with {
-      \override VerticalAxisGroup #'minimum-Y-extent = ##f
-      localKeySignature = #'()
-      createSpacing = ##t
-      squashedPosition = #0 
-      \consists "Pitch_squash_engraver"
-      \remove "Rest_engraver"
-      \remove "Text_engraver"
-      \remove "Dynamic_engraver"
-      \remove "Fingering_engraver"
-      \remove "Slur_engraver"
-      \remove "Tie_engraver"
-      \remove "Script_engraver"
-      \remove "Script_column_engraver"
-      \remove "Stem_engraver"
-      \remove "Beam_engraver"
-      \remove "Dots_engraver" } {
-        \sequential {
-          \override NoteHead  #'transparent = ##t
-          \override NoteHead  #'no-ledgers = ##t
-          \override Arpeggio #'transparent = ##t
-          \override Clef #'transparent = ##t
-          \override MultiMeasureRest #'transparent = ##t
-          \override Rest #'transparent = ##t
-          \override TupletBracket #'transparent = ##t
-          \override TupletNumber #'transparent = ##t
-          \override Script #'transparent = ##t }
-      { \voiceFour $gauche }}
-    \new Voice \with{
-      \consists "Ottava_spanner_engraver"
-      \consists "Accidental_engraver"
-      \consists "Collision_engraver"
-      \consists "Rest_collision_engraver"
-      \consists "Key_engraver"
-      \consists "Clef_engraver" }
-      $droite >> }
-  \new Staff \with {
-  \remove "Ottava_spanner_engraver"
-  \remove "Collision_engraver"
-  \remove "Rest_collision_engraver"
-  \remove "Accidental_engraver"
-  \remove "Key_engraver"
-  \remove "Clef_engraver"	} { <<
-    \new Voice \with {
-      \override VerticalAxisGroup #'minimum-Y-extent = ##f
-      localKeySignature = #'()
-      createSpacing = ##t
-      squashedPosition = #0 
-      \consists "Pitch_squash_engraver"
-      \remove "Rest_engraver"
-      \remove "Text_engraver"
-      \remove "Dynamic_engraver"
-      \remove "Fingering_engraver"
-      \remove "Slur_engraver"
-      \remove "Tie_engraver"
-      \remove "Script_engraver"
-      \remove "Script_column_engraver"
-      \remove "Stem_engraver"
-      \remove "Beam_engraver"
-      \remove "Dots_engraver" } {
-        \sequential {
-          \override NoteHead  #'transparent = ##t
-          \override NoteHead  #'no-ledgers = ##t
-          \override Arpeggio #'transparent = ##t
-          \override Clef #'transparent = ##t
-          \override MultiMeasureRest #'transparent = ##t
-          \override Rest #'transparent = ##t
-          \override TupletBracket #'transparent = ##t
-          \override TupletNumber #'transparent = ##t
-          \override Script #'transparent = ##t }
-      {\voiceFour $droite }}
-    \new Voice \with{
-      \consists "Ottava_spanner_engraver"
-      \consists "Accidental_engraver"
-      \consists "Collision_engraver"
-      \consists "Rest_collision_engraver"
-      \consists "Key_engraver"
-      \consists "Clef_engraver" }
-      $gauche >> }
-    >>
-#})
-
 %% Articulation shortcuts -----------------------------------------%
 
 #(define (make-script x)
@@ -291,19 +199,6 @@ parlato =
 	$notes
 \revert NoteHead #'style #})
 
-#(define-public (format-moveYment-markup dur count context)
-  (let* ((note-mark (make-smaller-markup
-		     (make-note-by-number-markup (ly:duration-log dur)
-						 (ly:duration-dot-count dur)
-						 1))))  
-    (make-line-markup
-     (list
-      (make-simple-markup  "(")
-      (make-general-align-markup Y DOWN note-mark)
-      (make-simple-markup  "=")
-      (make-simple-markup (number->string count))
-      (make-simple-markup  ")")))))
-
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Expressive indications -----------------------------------------%
@@ -436,10 +331,13 @@ ital = {
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props
-    (markup #:override '(line-width . 100)
+    (markup 
+  ;  #:override (cons 'line-width (* 1 (chain-assoc-get 'line-width props)))
+    #:fill-line (
+    #:override '(line-width . 50)
     #:override '(box-padding . 1.5)
     #:override '(corner-radius . 2)
-    #:rounded-box #:sans #:italic #:justify-string text)))
+    #:rounded-box #:sans #:italic #:small #:justify-string  text))))
 
 #(define-markup-command (vspace layout props amount) (number?)
   (let ((amount (* amount 3.0)))
