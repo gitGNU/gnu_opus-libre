@@ -135,7 +135,13 @@ ActeDeuxSceneDeuxSopranoUn= { \SopranoUn
     R1 mi16 mi la8 re,16 re sold8 mi32 re16. si8 r sold16. sold32 |
     si4 sold16 r lad16.[ lad32] dod4 lad16 r32 dod dod16.[ dod32] |
     mi4 dod32 r lad lad lad16.[ lad32] fad'4 dod16 r32 mi mi16.[ mi32] |
-    fad4 r8 dod | sold lad si dod | si'2
+    fad4 r8 dod | sold lad si dod | si'2. r4 |
+    R2. R1. R1 R1.*2 R2. R1
+    R2. R1 R2. R1 R2.
+    r2 sold,4 sold la2 r4 | r2 r4 sold8 sold la4 r sold8 sold |
+    la4 r8 la sold sold la4 r sold sold | la2 r  | re,8 mi sold4 la la la la2 | R2. R1 R2. 
+    r2 r4 sold8 sold la4 r sold8 sold la2. r4 R2.|
+    
   }
 }
 

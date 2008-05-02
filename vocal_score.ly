@@ -446,7 +446,7 @@ ActeDeuxSceneTrois = { \ReductionLayout
         piece = \Separateur
       }
 }%}
-%{\score {
+\score {
     \ActeDeuxSceneDeux
     \header {
       tableau = \ActeDeuxSceneDeuxTitre
@@ -454,12 +454,12 @@ ActeDeuxSceneTrois = { \ReductionLayout
 	    piece = \markup { \column {
        \fill-line {  \fromproperty #'header:tableau }
        \vspace #4
-       \init-did { \fromproperty #'header:indication } }
+       %\init-did { \fromproperty #'header:indication }
         }
 	    }
     }
 }%}
-\score {
+%{\score {
     \ActeDeuxSceneTrois
     \header {
       piece = \ActeDeuxSceneTroisTitre

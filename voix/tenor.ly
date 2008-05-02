@@ -134,13 +134,6 @@ ActeUnSceneQuatreTenor = { \Tenor
   }
 }
 
-ITenor= { \Tenor
-	\relative do'
-	{
-				R2.*4 R2 R2.*2 R2 R2.*3 R2 |
-	}
-}
-
 ActeDeuxSceneUnBisTenor = { \Tenor
   \relative {
     R1 R2. R2 R1*5/4*15
@@ -180,7 +173,12 @@ ActeDeuxSceneUnBisTenor = { \Tenor
 
 ActeDeuxSceneDeuxTenor = { \Tenor
   \relative {
-    R1.*6 R1*2 R2.*5 R1.*3 R1*2 R2. R1 R4. R1*6 |
+    R1.*6 R1*2 R2.*5 R1.*3 R1*2 R2. R1 R4. R1*6 R2. R1. R1*2
+    R2.*3 R2 R2.*3 R2 R4. R1*5 R2*6 R1 R2. R1. R1 R1.*2 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
+    sold'8 sold mi2 mi8 re do si do16 si do re mi8 si
+    r4 re8 re sib4~ sib2 r2 | R2. R1 R2.
+    
   }
 }
 

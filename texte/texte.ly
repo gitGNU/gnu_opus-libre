@@ -796,6 +796,7 @@ ActeDeuxSceneDeuxContraltoTexte = \lyricmode {
 }
 
 ActeDeuxSceneDeuxTenorTexte = \lyricmode {
+  Vo -- yons ça...
 }
 
 ActeDeuxSceneDeuxBarytonUnTexte = \lyricmode {

@@ -255,16 +255,6 @@ ActeUnSceneQuatreBarytonDeux = { \BarytonDeux
   }
 }
 
-IBarytonDeux= { \BarytonDeux
-    << \new Voice = "IRoi"
-	\relative do,,
-	{
-		R2.*4 R2 R2.*2 R2 R2.*3 R2 |
-	}
-   % \new Lyrics \lyricsto "IRoi" { \IRoi }
-    >>
-}
-
 ActeDeuxSceneUnBisBarytonDeux = { \BarytonDeux
   \relative {
     R1 R2. R2 R1*5/4*11
@@ -302,7 +292,13 @@ ActeDeuxSceneDeuxBarytonDeux = { \BarytonDeux
     mi4 r2 | R2.*2 | R1.*3 R1*2 R2. |
     r16 dod mi8 dod16 mi8 dod16 dod dod do do mi8 r16 dod |
     sib do! sol la fad si | mi4 r r2 | R1*5 |
-    
+    R2. R1. R1*2 R2.*3 R2 R2.*3 R2 R4.
+    R1*5 R2*6 R1 R2. R1. R1 R1.*2 R2. R1
+    r2 mi,8 sol la2  r4     mib8 sol | la2 r4 | R1
+    r2 mi8  sol la2. r4 R2. mib8 sol   la2. R2.
+    r2 r4 fa8 sol sib2 mi,8 fad si!2. r4 |
+    fad8 la re2 | fa,4 si mi2 R2. R1 R2.
+    r2 r4 fa,8 fa mib4 r fad8 fad mi!2. r4 R2.
   }
 }
 

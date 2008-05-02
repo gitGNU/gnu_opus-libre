@@ -2840,6 +2840,58 @@ ActeDeuxSceneTroisMainDroite = {
     r8 <fad, sold'> <sol la'> <sold fad'> <re' sol dod>
     \gauche \stemUp <sol, lab>16 s \droite \stemNeutral <fad' sol> <do' reb>|
     s4. <sib la'>2\laissezVibrer r4
+    r8 sold16 sold la2~ | la4 sol fa mi2.~ mi2 |
+    \pl {r8 sold16 sold la4 r8 mi16 mi fa4 r8 re! do do sib sib}
+    {s4 r8 fad'16 fad sol4 r8 red mi4 fa8 mi fa sol} |
+    <sold, la'>2~ <sold la'>~ <sold la'>4 r sold'8 sold |
+    
+    \pl {
+      \t {lab,8 sib lab} \t {sib lab sib}
+      \t {lab,  sib lab} \t {sib lab sib}
+      \t {lab,  sib lab} \t {sib lab sib}
+    } {
+      la'!2. sol8 fa mi2
+    }
+    sold16 lab, sold' sib,
+    \pl {
+      \t {lab,8 sib lab} \t {sib lab sib}
+      \t {lab,  sib lab} \t {sib lab sib}
+      \t {lab,  sib lab} \t {sib lab sib}
+    } {
+      la'!2. sol8 fa mi4 fa8 mi
+    }
+    <fa re'> <sol re'>
+    \pl {\t {re8 mi? re} \t {mi re mi}} <la mib'>2\laissezVibrer
+    \t {re8 mi  re} \t {mi re mi} | \t {re sib lab}
+    \pl {\t {sib lab sib} \t {lab sib mib}} {r8 mi fa sol} |
+    \pl {re16 mi re sib lab sib re mi} la2\laissezVibrer
+    re,16 sib lab sib re mi re sib |
+    lab sib re mi sib re mi lab re, mi sold sold |
+    la la, <mi' sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la |
+    <solb sib> sib, <fa' la> <fa la> <solb sib> sib, <fa la> <fa la> |
+    <solb sib> sib, <fa' la> <fa la> <solb sib> sib |
+    <sol si> si, <fad' lad> <fad lad> <sol si> si, <fad' lad> <fad lad> |
+    <sol si> si, <red fad> <red fad> <mi sol> sol, <fad' lad> <fad lad> |
+    <sol si> si, <sol' si> <sold si> <la do> do, <si' re> <si re> <sid red> red, <sid' red> <dod red>|
+    <re mi sold> <re mi sold> <re mi la> <re mi> <re mi> <re mi> <la re mi> <la re mi> |
+    <sold re' mi> <sold re' mi> <la re mi> <la re mi>
+    <sold re' mi> <sold re' mi> <la re mi> <la re mi> |
+    <sold re' mi> <sold re' mi> <la re mi> <la re mi>
+    <sold re' mi> <sold re' mi> <la re mi> <la re mi>
+    <sold re' mi> <sold re' mi> <la re mi> <la re mi> |
+    <la re mi sold> <la re mi sold> <sold re' mi la> <sold re' mi la>
+    <la re mi sold> <la re mi sold> <sold re' mi la> <sold re' mi la>
+    <la reb mib sold> <la reb mib sold> <sold reb' mib la> <sold reb' mib la>
+    <sib do mib sold> <sib do mib sold> <sol! do mib la> <sol do mib la> |
+    <fa sol sib do> <fa sol sib do> <mi sol sib reb> <mi sol sib reb>
+    <re fa sol do> <re fa sol do> <si mi sol reb'> <si mi sol reb'>
+    <la si re mi> <la si re mi> <sold si re fa> <sold si re fa> \clef bass |
+    <fa sol sib do> <fa sol sib do> <mi sol sib reb> <mi sol sib reb>
+    <mi sold> <mi sold> <fa la> <fa la> |
+    re8 r r4 | R2
+    r4 <re sold>8 <re sold> <dod la'>4 <re sol>8 <re sol> <red sold >4 r |
+    r4 <re sold>8 <re sold> <mib la >4 <re sol>8 <re sol> <dod sold'> \clef treble
+    mib' <solb, mib'> <lab mib'> <mib' sib'>4 |
   }
 }
 
@@ -2920,6 +2972,16 @@ ActeDeuxSceneTroisMainGauche = {
     mi,16 <la si> re <la si> mi <la si> re <la si> |
     \stemDown <mi red'> la s <dod' re> s8 \stemNeutral |
     re,,16 <re' mi> <dod red> \droite <re' mi> <dod red> <mib' fa> \gauche |
-    <dod,,, do'!>2\laissezVibrer r4 |
+    <dod,,, do'!>2\laissezVibrer r4 | R2.*6 R2
+    sol'?2~ sol4 r2 |
+    do,8 <do sol'> \pl {\t{do do do}} si'4\laissezVibrer do,4
+    \pl {s4 fad,2\laissezVibrer} {do'4~ do do} r4
+    \pl {do8 do \t {do do do}} {si'4 sol\laissezVibrer} do,4
+    \pl {s4 fad,2\laissezVibrer} {do'4~ do do} \t {lab''8 sib mib}
+    <do,, reb'>8 solb' \t{fa' do, do} do4
+    \pl {s4 sol2\laissezVibrer} {do4~ do do } r4
+    \pl {do8 do \t {do do do} do2 do4 r8 do \t{do do do} }
+    {<sol' si>2 <fad dod'>4 <sol si> <fad dod'> <sol si> <fad dod'>8 <sol si>} |
+    
   }
 }

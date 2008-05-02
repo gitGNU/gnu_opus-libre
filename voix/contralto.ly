@@ -84,8 +84,15 @@ ActeDeuxSceneUnContralto= { \Contralto
 ActeDeuxSceneDeuxContralto= { \Contralto
   \relative {
     R1.*6 R1*2 R2.*5 |
-    r2 r4 lab8 do re2~| re4 r r1| R1. R1*2 R2. |
-    R1 R4. | R1*5 | r4 mib'16 mib fa8 r2 |
+    r2 r4 lab8 do re2~| re4 r r1 | R1. R1*2 R2. |
+    R1 R4. | R1*5 | r4 mib'16 mib fa8 r4 fad,8 la|
+    si2 r4 | R1. R1*2 R2.*3 R2 R2.*3 R2 si,16 re mi8 sib16 re |
+    mi4 r r2 | R1*4 R2*6 r8 sold16 sold la8 sol16 sol sold4 r |
+    r8 sold16 sold la8 r fad fad | sol2 r1 | R1 R1.*2 R2. R1
+    R2. R1 r2 si,8 re mi2 r4 sib8 do | fa2 r4 | R1 si,8 re mi2|
+    sib8 do fa2. | R2. R1 r2 si,8 re | mi2 r4 sib8 re mi2 r4  |
+    re8 mi sol2. | R2. R1 R2. r2 r4 la,8 la sib4 r lad8 lad si!2. r4 R2. |
+    
   }
 }
 
@@ -102,7 +109,7 @@ ActeDeuxSceneTroisContralto= { \Contralto
     r2 la,8 do re2 r4 | r2 mib8 fa lab2 r4 |
     r4 r8 lab la do | re2~re4 r | R2*7 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
     R4. R2 R4. R2 R4.*2
-    R2.*9 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2 R4. R2 R4.
+    R2.*7 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2 R4. R2 R4.
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
