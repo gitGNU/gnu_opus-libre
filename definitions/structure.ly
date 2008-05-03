@@ -5,53 +5,53 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-OperaTitre= \markup  {
+OperaTitre = \markup  {
 \center-align {\fontsize #8.5 \OperaTitreTexte
 \fontsize #5 \OperaSousTitreTexte }
 }
 
-OperaLivret= \markup  {
+OperaLivret = \markup  {
 \fontsize #5 \OperaLivretTexte 
 }
 
-OperaPartition= \markup  {
+OperaPartition = \markup  {
 \fontsize #5 \OperaPartitionTexte
 }
 
-OperaNotice= \OperaNoticeTexte
+OperaNotice = \OperaNoticeTexte
 
-FullScore= "Partitura"
+FullScore = "Partitura"
 
-Reduction= "Version avec piano"
+Reduction = "Version avec piano"
 
 %%%%%%
 
-PrologueTitre= \markup  {
+PrologueTitre = \markup  {
 \fill-line { \center-align {\fontsize #10 \PrologueTitreTexte " "}}
 }
 
-ActeUnSceneUnTitre= \markup {
+ActeUnSceneUnTitre = \markup {
 	\fill-line { \center-align {\fontsize #10 \ActeUnTitreTexte " "
 	\fontsize #6 \SceneUnTitreTexte " "}}
 }
 
-ActeUnSceneDeuxTitre= \markup {
+ActeUnSceneDeuxTitre = \markup {
 	\fill-line { \center-align {\fontsize #6 \SceneDeuxTitreTexte " "}}
 }
 
-ActeUnSceneTroisTitre= \markup {
+ActeUnSceneTroisTitre = \markup {
 	\fill-line { \center-align {\fontsize #6 \SceneTroisTitreTexte " "}}
 }
 
-ActeUnSceneQuatreTitre= \markup {
+ActeUnSceneQuatreTitre = \markup {
 	\fill-line { \center-align {\fontsize #6 \FinalTitreTexte " "}}
 }
 
-EntracteTitre= \markup {
+EntracteTitre = \markup {
 	\fill-line { \center-align {\fontsize #10 \EntracteTitreTexte " "}}
 }
 
-ActeDeuxSceneUnTitre= \markup {
+ActeDeuxSceneUnTitre = \markup {
 	\fill-line { \center-align {\fontsize #10 \ActeDeuxTitreTexte " "
 	\fontsize #6 \SceneUnTitreTexte " "}}
 }
@@ -64,6 +64,6 @@ ActeDeuxSceneTroisTitre = \markup {
   	\fill-line { \center-align {	\fontsize #6 \SceneTroisTitreTexte " "}}
 }
 
-Separateur= \markup {
+Separateur = \markup {
 	\fill-line { \center-align {\fontsize #6 " " "***" " "}}
 }

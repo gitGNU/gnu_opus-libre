@@ -178,7 +178,8 @@ ActeDeuxSceneDeuxTenor = { \Tenor
     R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
     sold'8 sold mi2 mi8 re do si do16 si do re mi8 si
     r4 re8 re sib4~ sib2 r2 | R2. R1 R2.
-    
+    la'2 R2 la2~ la4 r2 |
+    la1~ la4 r r2 | R1 R1*5/8*14
   }
 }
 

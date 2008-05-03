@@ -7,13 +7,13 @@
 
 \include "italiano.ly"
 
-Accompagnement={
+Accompagnement = {
   \set PianoStaff.instrumentName = \markup { \hcenter-in #27.5 "Piano  "}
   \set PianoStaff.shortInstrumentName = "Piano.  "
   \set PianoStaff.midiInstrument = "acoustic grand" 
 }
 
-PrologueMainDroite={
+PrologueMainDroite = {
 	\relative{
     %%% Introduction %%%
     
@@ -208,8 +208,9 @@ PrologueMainDroite={
 	}
 }
 
-PrologueMainGauche={ \clef bass
-	\relative{
+PrologueMainGauche = {
+	\relative{ \clef bass
+    
     %%% Introduction %%%
     
 		\partial 4 r4 \clef treble |#(set-octavation 1) \repeat tremolo 12 {sib'''32 si!} |
@@ -359,7 +360,7 @@ PrologueNuances = {
 }
 
 
-ActeUnSceneUnMainDroite= {
+ActeUnSceneUnMainDroite = {
   \relative{
     
     %%% Air du baryton Un %%%
@@ -593,8 +594,8 @@ ActeUnSceneUnMainDroite= {
   }
 }
 
-ActeUnSceneUnMainGauche={ \clef bass
-  \relative{
+ActeUnSceneUnMainGauche = {
+  \relative{ \clef bass
     
     %%% Air du baryton Un %%%
     
@@ -940,8 +941,8 @@ ActeUnSceneUnBisMainDroite = {
   } 
 }
 
-ActeUnSceneUnBisMainGauche = { \clef bass
-  \relative {
+ActeUnSceneUnBisMainGauche = {
+  \relative { \clef bass
     #(set-octavation -1)
     \repeat unfold 3 { \ttt {dod,,,16 sold' dod, sold' dod, sold'} }
     \ttt { <dod, dod'> sold' dod, sold' dod, sold' }
@@ -1014,7 +1015,7 @@ ActeUnSceneUnBisMainGauche = { \clef bass
   }
 }
 
-ActeUnSceneDeuxMainDroite={
+ActeUnSceneDeuxMainDroite = {
 	\relative{
 		
 		%%% Air de la Soprano2 %%%
@@ -1142,7 +1143,7 @@ ActeUnSceneDeuxMainDroite={
 	}
 }
 
-ActeUnSceneDeuxMainGauche={
+ActeUnSceneDeuxMainGauche = {
 	\relative{ \clef bass
 		
 		%%% Air de la Soprano2 %%%
@@ -1331,7 +1332,7 @@ ActeUnSceneTroisMainDroite = {
   }
 }
 
-ActeUnSceneTroisMainGauche= {
+ActeUnSceneTroisMainGauche = {
   \relative { \clef bass
     \repeat unfold 2 {
       do,,8. do16~ do8 do do do
@@ -1404,7 +1405,7 @@ ActeUnSceneTroisMainGauche= {
   }
 }
 
-ActeUnSceneTroisBisMainDroite= {
+ActeUnSceneTroisBisMainDroite = {
   \relative {
     \repeat unfold 6 {fad4 red8 r }
     <do fad> <red la'>4.\laissezVibrer r2 | r
@@ -1452,7 +1453,7 @@ ActeUnSceneTroisBisMainDroite= {
   }
 }
 
-ActeUnSceneTroisBisMainGauche= {
+ActeUnSceneTroisBisMainGauche = {
   \relative { \clef bass
     << do1 \\ {r8 la r la r la r la} >>
     << <sol dod>1 \\ {r8 la r la r la r la} >>
@@ -1503,7 +1504,7 @@ ActeUnSceneTroisBisMainGauche= {
   }
 }
 
-ActeUnSceneTroisTerMainDroite={
+ActeUnSceneTroisTerMainDroite = {
 	\relative{
 	
 	r4 r16 <sol' lab> <sol lab> <sol lab> | <do reb>2 | 
@@ -1596,7 +1597,7 @@ ActeUnSceneTroisTerMainDroite={
 	}
 }
 
-ActeUnSceneTroisTerMainGauche={
+ActeUnSceneTroisTerMainGauche = {
 	\relative{ \clef bass
 
 	R2*3 R2. R2*2 R2.*2
@@ -2002,7 +2003,7 @@ ActeUnSceneQuatreMainGauche = {
 }
 
 
-EntracteMainDroite={
+EntracteMainDroite = {
   \relative{
     R2 <<
     \new Voice{ \voiceOne
@@ -2018,8 +2019,8 @@ EntracteMainDroite={
   }
 }
 
-EntracteMainGauche={ \clef bass
-  \relative{
+EntracteMainGauche = {
+  \relative{  \clef bass
     << {sold,8 sold \t{sold sold sold}} \\ sold,2 >>
     <sold sold'>2~
     << {sold'8 sold \t{sold sold sold}} \\ sold,2 >>
@@ -2033,7 +2034,7 @@ EntracteMainGauche={ \clef bass
   }
 }
 
-ActeDeuxSceneUnMainDroite={
+ActeDeuxSceneUnMainDroite = {
 	\relative{
     #(set-octavation 1)
 		\repeat tremolo 12 {la''''32 la,}
@@ -2137,7 +2138,7 @@ ActeDeuxSceneUnMainDroite={
 	}
 }
 
-ActeDeuxSceneUnMainGauche={
+ActeDeuxSceneUnMainGauche = {
 	\relative{ \clef treble
 		<la' la'>8\arpeggio r r2 | <la' la'>8 r r4 la |
     la8 la \t{la la la}
@@ -2613,8 +2614,9 @@ ActeDeuxSceneDeuxMainDroite = {
     \repeat tremolo 32 la32 }
     \repeat tremolo 24 la32 \pl {fa4 mi fa sol}
     \repeat tremolo 32 la32
-    \repeat tremolo 12 {sib, la'} \pl {
-    \repeat tremolo 16 {sib, mi}} la1
+    \repeat tremolo 12 {sib, la'} \pl { \stemDown
+    \repeat tremolo 8  {sib, mi}
+    \repeat tremolo 8  {sib, mi}} la1
     \repeat tremolo 4  {sib,32 la'}
     \repeat tremolo 4  {do, la'}
     \repeat tremolo 4  {re, la'} \pl {mib2 mi8 red mi fad}
@@ -2630,6 +2632,27 @@ ActeDeuxSceneDeuxMainDroite = {
     \pl {fa8 mi fa sol fa16 mi fa sol fa mi fa sol}
     {la4 la la la}
     
+    %%% Course-poursuite %%%
+    
+    <fa la>16 mi fa sol la sold la si dod do reb mib fa mi fa sol |
+    \pl {fad, mi fa sol la sol lab sib} la'2
+    do,16 lad si dod red dod re mi fad mi fa sol |
+    <la, la'>2. r4 | r2 \gauche do,16 \droite la sib do mib dod re mi |
+    sol mi fa sol sib sold la si re si do re fa red mi fad |
+    <la, la'>4 <do, reb fa>8 <mi la do> <fa lab reb> |
+    <la sold'> <la sold'> <sold la'>4 <la, sold'>8 |
+    <sold la'>4 r8 <sold' la re mib> r |
+    <la sold'>8 <la sold'> <sold la'>4 <sold la re>8 |
+    <sold la mib'>4 <sold, la re>8 <sold la re> <sold la mib'> |
+    <la re sold>4 <la re sold> r8 |
+    <sold re' la'>4 r r8 |
+    <la' sold'>8 <la sold'> <sold la'>4 <mib re'>8 |
+    <mib re'> <re mib'> r4 r8 |
+    <la re sold>4 <la re sold> r8 |
+    <sold re' la'>4 r r8 |
+    <la sold'>8 <la sold'> <sold la'>4 r8 |
+    r <mi' sold>4 <mi sold> |
+    <sold, sib la'>4 r r8 |
   }
 }
 
@@ -2687,8 +2710,28 @@ ActeDeuxSceneDeuxMainGauche = {
     
     <la la'>4\arpeggio r2 R1 R2. R1 R2. R1 \clef treble
     mib''4 reb dob sib1 R2. R1 R2. R1 R2. fa'4 mi fa sol \clef bass |
-    <la,,la'>\arpeggio r2 R1 R2. R1 \clef treble r2 fa''4 mi fa sol r |
-    R2.
+    <la,,la'>\arpeggio r2 R1 R2. R1 \clef treble r2 fa''4 mi fa sol r \clef bass|
+    r2 r8 \t {la,,16 la, la'} |
+    
+    %%% Course-poursuite %%%
+    
+    la,2~ la4 r | <la' la'>2~ <la la'>2 r4 |
+    \pl la,2. {mib'16 do reb mib fad mi fa sol sib sol lab sib}
+    reb si do re | fa re mib fa lab fad sol la s2 | R1
+    <la,, sold'>8 <la sold'> <sold la'>4 r8 |
+    r4 r8 <la' re mib sold> r |
+    r <la, sold'> <la sold'> r <sold la'> |
+    r <la' re mib sold> <la sold'> <sold re' mib la> r |
+    <mib re'> <mib re'> <re mib'>4 r8 |
+    <sold, mib' la>4 <sold mib'la> r8 |
+    <la mib' sold>4 r r8 |
+    <sold la'>4 r8 <la're mib sold> r |
+    r4 <re mib sold>8 <la sold'> <sold la'>|
+    <re sold mib'>4 <re sold mib'> r8 |
+    <mib la re>4 r r8 |
+    <mi dod'>8 <mi dod'> <fa do'>4 r8 |
+    r <fad fa'! sol>4 <fad fa' sol> |
+    <sol si> r r8 |
   }
 }
 

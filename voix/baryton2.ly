@@ -299,6 +299,10 @@ ActeDeuxSceneDeuxBarytonDeux = { \BarytonDeux
     r2 r4 fa8 sol sib2 mi,8 fad si!2. r4 |
     fad8 la re2 | fa,4 si mi2 R2. R1 R2.
     r2 r4 fa,8 fa mib4 r fad8 fad mi!2. r4 R2.
+    R2*3 R2. R1*3 R1*5/8*5
+    re8 mib r re fa | r re fa mib fa | lab2 r8 | R1*5/8
+    sold8 la r sold si | r4 si8 si si| r4 r8 si sib R1*5/8
+    r4 r8 sib re |
   }
 }
 

@@ -29,6 +29,8 @@ AdditionalLayout ={
   #(override-auto-beam-setting '(end 1 16 2 2) 3 4 'Score)
   #(override-auto-beam-setting '(end 1 16 2 8) 1 4 'Score)
   #(override-auto-beam-setting '(end 1  8 2 8) 1 4 'Score)
+  #(override-auto-beam-setting '(be  * *  5 8) 1 8 'Score)
+  #(override-auto-beam-setting '(end * *  5 8) 5 8 'Score)
   \set Score.ignoreMelismata = ##t
   \set Score.markFormatter = #format-mark-box-letters
   \override Score.LyricText #'self-alignment-X = #-0.5

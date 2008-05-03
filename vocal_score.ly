@@ -167,7 +167,6 @@ ActeUnSceneUnBis = { \ReductionLayout
 >>
 }
 
-
 ActeUnSceneDeux = { \ReductionLayout
 <<
 \new ChoirStaff
@@ -259,7 +258,7 @@ ActeUnSceneQuatre = { \ReductionLayout
 >>
 }
 
-%{ Entracte={ \ReductionLayout
+%{ Entracte = { \ReductionLayout
 <<
 \new ChoirStaff
  <<
@@ -324,6 +323,7 @@ ActeDeuxSceneUnBis = { \ReductionLayout
 
 ActeDeuxSceneDeux = { \ReductionLayout
 <<
+\new TopLine \ActeDeuxSceneDeuxMesures
 \new ChoirStaff
 	<<
 		\new Staff \new Voice = "sopranoUn" \ActeDeuxSceneDeuxSopranoUn
@@ -435,14 +435,14 @@ ActeDeuxSceneTrois = { \ReductionLayout
       }
 }%}
 %{\score {
-	   \ActeDeuxSceneUn
+	  \ActeDeuxSceneUn
     \header {
 	    piece = \ActeDeuxSceneUnTitre
 	    }
 }%}
 %{\score {
-      \ActeDeuxSceneUnBis
-      \header {
+    \ActeDeuxSceneUnBis
+    \header {
         piece = \Separateur
       }
 }%}

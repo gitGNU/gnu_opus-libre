@@ -27,42 +27,42 @@ PrologueA = "Entre le Chef de la Garde, par la même porte que le public.
 Il traverse la salle vivement, semblant chercher quelqu'un dans le public,
 jusqu'au moment où on le découvre dans la lumière."
 
-PrologueB ="Il arrive enfin sur scène, face public, de plus en plus
+PrologueB = "Il arrive enfin sur scène, face public, de plus en plus
 exagérément lyrique..."
 
-PrologueC ="Entre le Roi, déboulant sur scène par le centre du rideau,
+PrologueC = "Entre le Roi, déboulant sur scène par le centre du rideau,
 derrière le Chef de la Garde, qui sursaute."
 
-PrologueD ="Le roi, peu intéressé, regarde dans le vague..."
+PrologueD = "Le roi, peu intéressé, regarde dans le vague..."
 
-PrologueE ="se fige..."
+PrologueE = "se fige..."
 
-PrologueF ="... avant de réagir vivement."
+PrologueF = "... avant de réagir vivement."
 
-PrologueG ="Le chef se lamente avec affectation."
+PrologueG = "Le chef se lamente avec affectation."
 
-PrologueH ="Même jeu du Chef, derrière le Roi..."
+PrologueH = "Même jeu du Chef, derrière le Roi..."
 
-PrologueI ="... qui se retourne brusquement pour le prendre à partie."
+PrologueI = "... qui se retourne brusquement pour le prendre à partie."
 
-PrologueJ ="Un temps. Le Chef de la Garde hésite, va pour chanter,
+PrologueJ = "Un temps. Le Chef de la Garde hésite, va pour chanter,
 puis se ravise. Même jeu. Puis enfin, avec un regard en coin vers le Roi :"
 
-PrologueK ="Le Roi, après être resté pensif un moment, semble se ressaisir."
+PrologueK = "Le Roi, après être resté pensif un moment, semble se ressaisir."
 
-PrologueL ="Le roi réfléchit, puis se penche un peu sur le côté."
+PrologueL = "Le roi réfléchit, puis se penche un peu sur le côté."
 
-PrologueM ="Le Roi pousse une exclamation de dégoût."
+PrologueM = "Le Roi pousse une exclamation de dégoût."
 
-PrologueN ="Un temps. Le Roi et le Chef semblent chercher leurs mots..."
+PrologueN = "Un temps. Le Roi et le Chef semblent chercher leurs mots..."
 
-PrologueO ="mais ne parviennent qu'à crier derechef, ensemble."
+PrologueO = "mais ne parviennent qu'à crier derechef, ensemble."
 
-PrologueP ="Le Roi, déconcerté et pensif, marmonne en cherchant ses mots" 
+PrologueP = "Le Roi, déconcerté et pensif, marmonne en cherchant ses mots" 
 
-PrologueQ ="Le Roi sort en continuant de chanter."
+PrologueQ = "Le Roi sort en continuant de chanter."
 
-PrologueR ="Resté seul, le Chef regarde autour de lui, puis, au public :"
+PrologueR = "Resté seul, le Chef regarde autour de lui, puis, au public :"
 
 
 

@@ -121,7 +121,7 @@ PrologueMesures = {
   \time 3/4 R2.*5
   \time 2/4 R2*2
   \time 4/4
-      \mark \markup { \mvt "Scherzando" }
+      \mark \markup { \mvt Scherzando }
             R1
   \time 3/4 R2.   \bar "||"
   
@@ -130,13 +130,13 @@ PrologueMesures = {
   \time 2/4
       \mouv #"Vivo al fine" #"4" #120
             R2*23 \bar "||"
-      \mark \markup { \mvt "Recitativo" }
+      \mark \markup { \mvt Recitativo }
             R2*8  \bar "|."
 }
 
-ActeUnSceneUnMesures= {
+ActeUnSceneUnMesures = {
   \time 2/4
-      \mark \markup { \mvt "Largo non troppo"}
+      \mouv #"Largo non troppo" #"4" #69
             R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
@@ -166,7 +166,7 @@ ActeUnSceneUnMesures= {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
-      \mark \markup { \mvt "Piu vivo"}
+      \mouv #"Piu vivo" #"4" #80
             R2.*7
   \time 4/4 R1
   \time 3/4 R2.   \bar "||"
@@ -176,8 +176,11 @@ ActeUnSceneUnMesures= {
   \time 3/4 R2.*2
   \time 4/4 R1
   \time 3/4 R2.*2 \bar "||"
+  
+  %%% Entrée Baryton 2 et Soprano 1 %%%
+  
   \time 2/2
-      \mark \markup { \mvt "Agitato"}
+      \mouv #"Agitato" #"2" #92
             R1*6
   \time 3/2 R1.
   \time 2/2 R1*2
@@ -189,10 +192,10 @@ ActeUnSceneUnMesures= {
   \time 2/2 R1
   \time 3/2 R1.*4 \bar "||"
   
-  %%% Entrée Baryton 2 et Soprano 1 %%%
+  %%% Duo Soprano 1 et Baryton 1 %%%
   
   \time 4/4
-      \mark \markup { \mvt "Allegro non troppo"}
+      \mouv  #"Allegro non troppo" #"4" #92
             R1
   \time 3/4 R2.
   \time 4/4 R1*5
@@ -209,7 +212,7 @@ ActeUnSceneUnMesures= {
   \time 3/4 R2.*3
   \time 4/4 R1*6  \bar "||"
   \time 4/4
-      \mark \markup { \mvt "Moderato"}
+      \mouv #"Moderato" #"4" #76
             R1*2
   \time 3/4 R2.*2
   \time 4/4 R1
@@ -230,7 +233,13 @@ ActeUnSceneUnMesures= {
   \time 3/4 R2.
   \time 4/4 R1
   \time 2/4 R2*4
-  \time 2/2 R1*23 \bar "||" R1*11
+  
+  %%% Trio %%%
+  
+  \time 2/2 
+      \mouv #"Allegro marcato" #"4" #132
+            R1*23 \bar "||"
+            R1*11
   \time 3/2 R1.
   \time 2/2 R1*2  \bar "||"
   \time 4/4 R1
@@ -239,9 +248,9 @@ ActeUnSceneUnMesures= {
   \time 4/4 R1*4  \bar "|."
 }
 
-ActeUnSceneUnBisMesures= {
+ActeUnSceneUnBisMesures = {
   \time 3/4
-      \mark \markup { \mvt "Agitato"}
+      \mark \markup { \mvt Agitato}
             R2.*7
   \time 4/4
       \mark \markup { \mvt "Piu vivo"}
@@ -253,9 +262,10 @@ ActeUnSceneUnBisMesures= {
   \time 3/4
             R2.*6
       \startTxt #"molto rit."
-            R2. R2.
+            R2. 
+            R2.
       \stopTxt
-      \mark \markup { \mvt "Tempo" }
+      \mark \markup { \mvt Tempo }
             R2.
       \startTxt #"molto rit."
             R2.
@@ -264,7 +274,7 @@ ActeUnSceneUnBisMesures= {
             R1 
             R1
   \time 2/4 R2    \bar "||"
-      \mark \markup { \mvt "Largo" }
+      \mark \markup { \mvt Largo }
             R2*3
   \time 3/4 R2.
   \time 2/4 R2
@@ -272,7 +282,7 @@ ActeUnSceneUnBisMesures= {
   \time 2/4 R2
   \time 3/4 R2.*2
   \time 4/4
-    \mark \markup { \mvt "Risoluto" }
+    \mark \markup { \mvt Risoluto }
             R1*2
   \time 3/4 R2.
   \time 2/4 R2
@@ -285,20 +295,20 @@ ActeUnSceneUnBisMesures= {
   \time 4/4 R1
   \time 3/4 R2.
   \time 2/4
-      \mark \markup { \mvt "Recitativo" }
+      \mark \markup { \mvt Recitativo }
             R2*3
   \time 3/4 R2.*3 \bar "||"
   \time 4/4
-      \mark \markup { \mvt "Adagio" }
+      \mark \markup { \mvt Adagio }
             R1*33 \bar "||"
   \time 2/4
-      \mark \markup { \mvt "Risoluto" }
+      \mark \markup { \mvt Risoluto }
             R2*4  \bar "|."
 }
 
-ActeUnSceneDeuxMesures= {
+ActeUnSceneDeuxMesures = {
   \time 3/4
-      \mark \markup { \mvt "Cavatine" }
+      \mark \markup { \mvt Cavatine }
             R2.*2
   \time 2/2 R1*2
   \time 3/4 R2.*2
@@ -344,7 +354,7 @@ ActeUnSceneDeuxMesures= {
   \time 3/4 R2.*2
   \time 2/2 R1*2  \bar "||"
   \time 3/4
-      \mark \markup { \mvt "Recitativo"}
+      \mark \markup { \mvt Recitativo}
             R2.*2
   \time 4/4 R1
   \time 3/4 R2.*3
@@ -405,12 +415,12 @@ ActeUnSceneDeuxMesures= {
   \time 4/4 R1*4  \bar "|."
 }
 
-ActeUnSceneTroisMesures= {
+ActeUnSceneTroisMesures = {
   \time 3/4 
-      \mark \markup { \mvt "Risoluto" }
+      \mark \markup { \mvt Risoluto }
             R2.*24\bar "||"
   \time 6/4
-      \mark \markup { \mvt "Lamento" }
+      \mark \markup { \mvt Lamento }
             R1.*6
   \time 5/4 R1*5/4*5
   \time 4/4 R1*4
@@ -430,13 +440,13 @@ ActeUnSceneTroisMesures= {
 
 ActeUnSceneTroisBisMesures = {
   \time 4/4
-      \mark \markup { \mvt "Andantino" }
+      \mark \markup { \mvt Andantino }
             R1*35
   \time 3/4 R2.
   \time 4/4 R1*35 \bar "|."
 }
 
-ActeUnSceneTroisTerMesures= {
+ActeUnSceneTroisTerMesures = {
 
   \time 2/4 R2*3
   \time 3/4 R2. 
@@ -454,7 +464,7 @@ ActeUnSceneTroisTerMesures= {
 
 ActeUnSceneQuatreMesures = {
   \time 2/4
-      \mark \markup { \mvt "Allegretto" }
+      \mark \markup { \mvt Allegretto }
   \partial 4 s4
   \time 5/8 R2*5/4
   \time 2/4 R2*3
@@ -462,7 +472,7 @@ ActeUnSceneQuatreMesures = {
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4
-      \mark \markup { \mvt "Adagio" }
+      \mark \markup { \mvt Adagio }
             R2*3  \bar "||"
   \time 4/4 R1
   \time 3/4 R2.
@@ -472,7 +482,7 @@ ActeUnSceneQuatreMesures = {
   \time 3/2 R1.
   \time 2/2 R1*2  \bar "||"
   \time 3/4
-      \mark \markup { \mvt "Agitato" }
+      \mark \markup { \mvt Agitato }
             R2.*27
   \time 4/4 R1
   \time 3/4 R2.
@@ -527,7 +537,7 @@ ActeUnSceneQuatreMesures = {
   \time 3/8 R4*3/2
   \time 3/4 R2.   \bar "||"
   \time 4/4
-      \mark \markup { \mvt "Risoluto" }
+      \mark \markup { \mvt Risoluto }
             R1*11 \bar "||"
             R1
   \time 2/4 R2
@@ -559,14 +569,14 @@ ActeUnSceneQuatreMesures = {
   \time 2/2 R1    \bar "|."
 }
 
-EntracteMesures= {
+EntracteMesures = {
   \time 2/4
       \mark \markup{ \mvt Adagio }
             R2*9  \bar "||"
   \time 4/4 R1*24
 }
 
-ActeDeuxSceneUnMesures= { 
+ActeDeuxSceneUnMesures = { 
   \time 3/4
       \mark \markup{ \mvt Animato }
             R2.*4
@@ -722,7 +732,7 @@ ActeDeuxSceneUnBisMesures = {
 
 ActeDeuxSceneDeuxMesures = {
   \time 3/2
-      \mark \markup { \mvt "Andante tranquillo" }  
+      \mouv #"Largo tranquillo" #"2" #46
             R1.*6
   \time 2/2 R1*2
   \time 3/4 R2.*5
@@ -782,7 +792,12 @@ ActeDeuxSceneDeuxMesures = {
   
   %%% Course-poursuite %%%
   
-  \time 2/4 R2
+  \time 2/4 
+      \mouv #"Presto (doppio tempo)" #"4" #176
+            R2*3
+  \time 3/4 R2.
+  \time 4/4 R1*3
+  \time 5/8 R1*5/8*14
 }
 
 ActeDeuxSceneTroisMesures = {
