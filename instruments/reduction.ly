@@ -2616,7 +2616,7 @@ ActeDeuxSceneDeuxMainDroite = {
     \repeat tremolo 32 la32
     \repeat tremolo 12 {sib, la'} \pl { \stemDown
     \repeat tremolo 8  {sib, mi}
-    \repeat tremolo 8  {sib, mi}} la1
+    \repeat tremolo 8  {sib  mi}} la1
     \repeat tremolo 4  {sib,32 la'}
     \repeat tremolo 4  {do, la'}
     \repeat tremolo 4  {re, la'} \pl {mib2 mi8 red mi fad}

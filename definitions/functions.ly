@@ -320,6 +320,13 @@ dash = {
 ital = {
 \once \override LyricText #'font-shape = #'italic }
 
+smallcaps = {
+\override LyricText  #'font-shape = #'caps }
+
+normal = {
+\revert LyricText #'font-shape }
+
+
 %% Scenography formatting ---------------------------------------%
 
 #(define-markup-command (did layout props text) (markup?)

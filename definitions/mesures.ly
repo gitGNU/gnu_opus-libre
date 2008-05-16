@@ -62,7 +62,7 @@ PrologueMesures = {
            ^\markup \did \PrologueH
             R2.
             r2.
-           ^\markup\did \PrologueI
+           ^\markup \did \PrologueI
             R2.
   \time 4/4 R1
   \time 2/4 R2*2 R2\fermata \bar "||"
@@ -94,14 +94,14 @@ PrologueMesures = {
       \mouv #"A tempo, un poco più vivo" #"4." #63
             R4.*28
             r4.
-           ^\markup\did \PrologueM
+           ^\markup \did \PrologueM
             R4.*3
             r4.
-           ^\markup\did \PrologueN
+           ^\markup \did \PrologueN
             R4.
   \time 5/8 R2*5/4
   \time 6/8 r2.
-           ^\markup\did \PrologueO
+           ^\markup \did \PrologueO
             R2.*2 \bar "||"
   \time 4/4
       \mouv #"Adagio ad lib." #"4" #66
@@ -118,6 +118,7 @@ PrologueMesures = {
   \time 2/4 R2
   \time 3/4 R2.*2
   \time 4/4 R1*2
+      \mark \markup \did \PrologueP
   \time 3/4 R2.*5
   \time 2/4 R2*2
   \time 4/4
@@ -129,7 +130,13 @@ PrologueMesures = {
   
   \time 2/4
       \mouv #"Vivo al fine" #"4" #120
-            R2*23 \bar "||"
+            R2*8
+      \mark \markup \did \PrologueQ
+            R2*14
+            r4 
+            r4
+           ^\markup \did \PrologueR
+                  \bar "||"
       \mark \markup { \mvt Recitativo }
             R2*8  \bar "|."
 }

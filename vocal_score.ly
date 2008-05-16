@@ -106,10 +106,8 @@
   ragged-bottom = ##f
   ragged-last-bottom = ##t
   left-margin = #20
-  % systemSeparatorMarkup = \slashSeparator
   between-system-space = 0.2\cm
   between-system-padding = #0
-  % annotate-spacing = ##t
 }
 
 Prologue = { \ReductionLayout
@@ -378,7 +376,8 @@ ActeDeuxSceneTrois = { \ReductionLayout
 	  subtitle = \Reduction
 	  poet = \OperaLivret
 	  composer =  \OperaPartition
-    tagline = \OperaNotice }
+    tagline = \OperaNotice
+  }
 
 %{\score {
 	   \Prologue
@@ -440,13 +439,13 @@ ActeDeuxSceneTrois = { \ReductionLayout
 	    piece = \ActeDeuxSceneUnTitre
 	    }
 }%}
-%{\score {
+\score {
     \ActeDeuxSceneUnBis
     \header {
         piece = \Separateur
       }
 }%}
-\score {
+%{\score {
     \ActeDeuxSceneDeux
     \header {
       tableau = \ActeDeuxSceneDeuxTitre
