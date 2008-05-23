@@ -10,7 +10,7 @@ OperaTitreTexte= "Affaire Étrangère"
 OperaSousTitreTexte= "Opéra en deux actes"
 OperaLivretTexte= "Lewis Trondheim"
 OperaPartitionTexte= "Valentin Villenave"
-OperaNoticeTexte= "Impression réalisée au moyen du Logiciel Libre GNU/LilyPond"
+OperaNoticeTexte= "Gravure réalisée au moyen du logiciel libre GNU LilyPond (www.lilypond.org)."
 
 %%%%
 
