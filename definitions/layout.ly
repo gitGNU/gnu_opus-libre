@@ -14,6 +14,19 @@
 
 %% Paper size -----------------------------------------------------%
 % #(set-default-paper-size (if (ly:get-option 'letter) "letter" "a4"))
+#(set-default-paper-size "a4" 'landscape)
+
+paperVariables = \paper {
+  line-width = #(- paper-width (* 40 mm))
+  %horizontal-shift = 5
+  bottom-margin = #20
+  ragged-bottom = ##t
+  ragged-last-bottom = ##t
+  left-margin = #20
+  between-system-space = 1\cm
+  between-system-padding = #5
+}
+
 
 %% Common Layout --------------------------------------------------%
 AdditionalLayout ={
@@ -40,7 +53,7 @@ AdditionalLayout ={
   \override Score.MetronomeMark #'side-axis = #Y
   \override Score.MetronomeMark #'direction = #DOWN
   \override Score.RehearsalMark #'side-axis = #Y
-  \override Score.RehearsalMark #'direction = #DOWN
+  \override Score.RehearsalMark #'direction = #UP
   \override Score.RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
   \override Score.RehearsalMark #'font-size = #10
   \override Score.RehearsalMark #'self-alignment-X = #left

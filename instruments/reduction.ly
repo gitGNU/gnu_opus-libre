@@ -813,6 +813,9 @@ ActeUnSceneUnMainGauche = {
   }
 }
 
+ActeUnSceneUnNuances = {
+}
+
 ActeUnSceneUnBisMainDroite = {
   \relative {
     R2.*3 \clef bass
@@ -1013,6 +1016,9 @@ ActeUnSceneUnBisMainGauche = {
     R2 <re, sold dod>8 r <sold, red' la'> r <fa reb' lab'> r r4 |
     r4 << {\voiceTwo <dod sold'> } \\ { \voiceOne <mi' si'> } >> |
   }
+}
+
+ActeUnSceneUnBisNuances = {
 }
 
 ActeUnSceneDeuxMainDroite = {
@@ -1258,6 +1264,9 @@ ActeUnSceneDeuxMainGauche = {
 	<sol si>4. r8 r4 | r <sol si> | <solb sib>2.~|<solb sib> r4 |
 	r2 <fa la>4 <mi sold> | <mib sol!> r <sib re> r | <re, re'> r r2 |		
 	}
+}
+
+ActeUnSceneDeuxNuances = {
 }
 
 ActeUnSceneTroisMainDroite = {

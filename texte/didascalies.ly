@@ -73,8 +73,10 @@ PrologueR = "Resté seul, le Chef regarde autour de lui, puis, au public :"
 
 %%%%%%%%%%%%%%%%%%%%%%  Premier Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ActeUnSceneUnA = "La lumière, montant avec la musique,
-délimite bientôt une cellule étroite dans
+ActeUnSceneUnAAA = "La lumière, montant avec la musique,
+délimite bientôt une cellule étroite..."
+
+ActeUnSceneUnA = "... dans
 laquelle se trouve l’Étranger , allongé sur un
 austère lit d’hôpital. Ses jambes sont
 entravées par une lanière, et sa tête disparaît
@@ -92,7 +94,7 @@ ActeUnSceneUnF = "Puis vers la gauche : même jeu, et ainsi de suite..."
 
 ActeUnSceneUnG = "Épuisé, il finit par s’affaler sur le lit."
 
-ActeUnSceneUnH = "Entrent le Roi et le Docteur , conversant avec agitation."
+ActeUnSceneUnH = "Entrent le Roi et le Docteur, conversant avec agitation."
 
 ActeUnSceneUnI = "Le Roi tente d’intervenir..."
 
@@ -103,7 +105,7 @@ ActeUnSceneUnK = "Il sort de sa poche, l’un après l’autre, divers
 objets — par exemple un canard en plastique,
 un très long parapluie, un bilboquet cassé."
 
-ActeUnSceneUnL = "Tour à tour , il les présente cérémonieusement
+ActeUnSceneUnL = "Tour à tour, il les présente cérémonieusement
 à l’Étranger , qui reste parfaitement impassible."
 
 ActeUnSceneUnM = "Il lui présente enfin une vieille chaussette
@@ -111,7 +113,7 @@ toute rapiécée, devant laquelle l’Étranger semble réfléchir..."
 
 ActeUnSceneUnN = "Le Docteur se tourne vers le Roi."
 
-ActeUnSceneUnO = "Puis il vers l’Étranger..."
+ActeUnSceneUnO = "Puis vers l’Étranger..."
 
 ActeUnSceneUnP = "mais ce dernier semble perdu dans ses pensées ;"
 
@@ -128,10 +130,13 @@ soudain très calme."
 
 %------------------------------------------------------------------%
 
-ActeUnSceneUnBisA = "La lumière revient peu à peu à mesure que la
+ActeUnSceneUnBisAAA = "La lumière revient peu à peu à mesure que la
 musique monte. On découvre le Roi, figé dans
 la même position à l’avant-scène. Le Docteur
 a disparu."
+
+ActeUnSceneUnBisA = "Le Roi s'anime tout d'un coup, dans la
+même dynamique que précédemment."
 
 ActeUnSceneUnBisB = "Il s’interrompt soudain, comme si une pensée
 gênante lui venait. Il cherche à se ressaisir..."

@@ -138,34 +138,52 @@ PrologueMesures = {
            ^\markup \did \PrologueR
                   \bar "||"
       \mark \markup { \mvt Recitativo }
-            R2*8  \bar "|."
+            R2*7
+            r4
+           ^\markup \Noir
+            r4
+                  \bar "|."
 }
 
 ActeUnSceneUnMesures = {
   \time 2/4
+      \mark \markup \init-did \ActeUnSceneUnAAA
       \mouv #"Largo non troppo" #"4" #69
             R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 R2.
-  \time 2/4 R2*2
+  \time 2/4
+      \mark \markup \did \ActeUnSceneUnA
+            R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 R2.
-  \time 2/4 R2*2
+  \time 2/4
+      \mark \markup \did \ActeUnSceneUnB
+            R2*2
   \time 3/4 R2.
-  \time 2/4 R2*2
+  \time 2/4
+      \mark \markup \did \ActeUnSceneUnC
+            R2*2
   \time 3/4 R2.
   
   %%% Air du Baryton 1 %%%
   
   \time 4/4
       \mark \markup { \mvt "Poco a poco animando..."}
+            r4
+      \mark \markup \did \ActeUnSceneUnD
+            r
+            r2
+  \time 3/4 R2.
+  \time 4/4
+      \mark \markup \did \ActeUnSceneUnE
             R1
   \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
+  \time 4/4
+      \mark \markup \did \ActeUnSceneUnF
+            R1
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -181,12 +199,15 @@ ActeUnSceneUnMesures = {
       \mark \markup { \mvt "Ad libitum (stesso tempo)"}
             R1
   \time 3/4 R2.*2
-  \time 4/4 R1
+  \time 4/4
+      \mark \markup \did \ActeUnSceneUnG
+            R1
   \time 3/4 R2.*2 \bar "||"
   
   %%% Entrée Baryton 2 et Soprano 1 %%%
   
   \time 2/2
+      \mark \markup \did \ActeUnSceneUnH
       \mouv #"Agitato" #"2" #92
             R1*6
   \time 3/2 R1.
@@ -215,10 +236,19 @@ ActeUnSceneUnMesures = {
   \time 3/4
       \mark \markup { \mvt "poco allargando..."}
             R2.
-  \time 4/4 R1*5
-  \time 3/4 R2.*3
-  \time 4/4 R1*6  \bar "||"
+  \time 4/4 R1
+      \mark \markup \did \ActeUnSceneUnI
+            R1
+      \mark \markup \did \ActeUnSceneUnJ
+            R1*3
+  \time 3/4 R2.*2
+      \mark \markup \did \ActeUnSceneUnK
+            R2.
+  \time 4/4 R1
+      \mark \markup \did \ActeUnSceneUnL
+            R1*5  \bar "||"
   \time 4/4
+      \mark \markup \did \ActeUnSceneUnM
       \mouv #"Moderato" #"4" #76
             R1*2
   \time 3/4 R2.*2
@@ -245,14 +275,29 @@ ActeUnSceneUnMesures = {
   
   \time 2/2 
       \mouv #"Allegro marcato" #"4" #132
-            R1*23 \bar "||"
+            R1*18
+      \mark \markup \did \ActeUnSceneUnN
+            R1*2
+      \mark \markup \did \ActeUnSceneUnO
+            R1
+      \mark \markup \did \ActeUnSceneUnP
+            R1*2  \bar "||"
+      \mark \markup \did \ActeUnSceneUnQ
+      \mouv #"Agitato" #"2" #80
             R1*11
   \time 3/2 R1.
   \time 2/2 R1*2  \bar "||"
   \time 4/4 R1
   \time 3/4 R2.
-  \time 2/4 R2*5  \bar "||"
-  \time 4/4 R1*4  \bar "|."
+  \time 2/4 R2*2
+      \mark \markup \did \ActeUnSceneUnR
+            R2*2
+      \mark \markup \did \ActeUnSceneUnS
+            R2    \bar "||"
+  \time 4/4 
+      \mark \markup \did \ActeUnSceneUnT
+      \mouv #"Ad libitum" #"4" #80
+            R1*4  \bar "|."
 }
 
 ActeUnSceneUnBisMesures = {
