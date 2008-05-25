@@ -27,6 +27,7 @@
 \include "./instruments/reduction.ly" 
 
 \layout {
+  \indentVariables
   \context {
     \type "Engraver_group"
     \name "TopLine"
@@ -99,7 +100,9 @@
 }
 
 \paper {
-  \paperVariables
+  \pageBreakingVariables
+  \horizontalMarginsVariables
+  \verticalMarginsVariables
 }
 
 Prologue = { \ReductionLayout

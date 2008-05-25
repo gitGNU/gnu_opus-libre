@@ -5,30 +5,66 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+#(use-modules (srfi srfi-39))
 #(ly:set-option 'point-and-click #f)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Paper Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Staff size -----------------------------------------------------%
 #(set-global-staff-size 14)
 
 %% Paper size -----------------------------------------------------%
-% #(set-default-paper-size (if (ly:get-option 'letter) "letter" "a4"))
 #(set-default-paper-size "a4" 'landscape)
 
-paperVariables = \paper {
-  line-width = #(- paper-width (* 40 mm))
-  %horizontal-shift = 5
-  bottom-margin = #20
-  ragged-bottom = ##t
-  ragged-last-bottom = ##t
-  left-margin = #20
-  between-system-space = 1\cm
-  between-system-padding = #5
+%% Page breaking --------------------------------------------------%
+#(define page-breaking ly:optimal-breaking)
+pageBreakingVariables = \paper {
+  page-limit-inter-system-space = ##t
+  page-limit-inter-system-space-factor = 1.4
 }
 
+%% Horizontal margins ---------------------------------------------%
+
+horizontalMarginsVariables = \paper {
+  left-margin = #20
+  right-margin = #20
+  line-width = #(- paper-width (* 40 mm))
+}
+
+%% Vertical margins -----------------------------------------------%
+
+verticalMarginsVariables = \paper {
+  page-top-space = #(* 5 mm)
+  between-system-space = 10 \mm
+  between-system-padding = 4 \mm
+  before-title-space = 10 \mm
+  between-title-space = 2 \mm
+  after-title-space = 5 \mm
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+  bottom-margin = #20
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Common Layout --------------------------------------------------%
+
+indentVariables = \layout {
+  #(define (compute-indent amount)
+    (let ((indent (* amount mm)))
+      (if (or (eqv? #t (ly:get-option 'ancient-style))
+              (eqv? #t (ly:get-option 'non-incipit)))
+          (begin ;(format #t "~% indent: ~a" indent)
+           indent)
+          (+ indent (* incipit-width mm)))))
+
+  smallindent = #(compute-indent 10)
+  noindent = #(compute-indent 0)
+  largeindent = #(compute-indent 25)
+  indent = \smallindent
+}
+  
+
 AdditionalLayout ={
   #(override-auto-beam-setting '(end * *  3 4) 1 4 'Score)
   #(override-auto-beam-setting '(end * *  3 4) 2 4 'Score)
@@ -66,6 +102,8 @@ AdditionalLayout ={
   \override Score.BarLine #'hair-thickness = #1.2
   #(set-accidental-style 'neo-modern 'Score)
 }
+
+
 
 %% Time Signatures layouts ----------------------------------------%
 CoolSignatures = {
