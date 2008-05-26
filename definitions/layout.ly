@@ -63,47 +63,75 @@ indentVariables = \layout {
   largeindent = #(compute-indent 25)
   indent = \smallindent
 }
-  
 
-AdditionalLayout ={
-  #(override-auto-beam-setting '(end * *  3 4) 1 4 'Score)
-  #(override-auto-beam-setting '(end * *  3 4) 2 4 'Score)
-  #(override-auto-beam-setting '(end * *  4 4) 1 4 'Score)
-  #(override-auto-beam-setting '(end * *  4 4) 3 4 'Score)
-  #(override-auto-beam-setting '(end * *  2 2) 1 4 'Score)
-  #(override-auto-beam-setting '(end * *  2 2) 2 4 'Score)
-  #(override-auto-beam-setting '(end * *  2 2) 3 4 'Score)
-  #(override-auto-beam-setting '(end 1 16 2 2) 1 4 'Score)
-  #(override-auto-beam-setting '(end 1 16 2 2) 2 4 'Score)
-  #(override-auto-beam-setting '(end 1 16 2 2) 3 4 'Score)
-  #(override-auto-beam-setting '(end 1 16 2 8) 1 4 'Score)
-  #(override-auto-beam-setting '(end 1  8 2 8) 1 4 'Score)
-  #(override-auto-beam-setting '(be  * *  5 8) 1 8 'Score)
-  #(override-auto-beam-setting '(end * *  5 8) 5 8 'Score)
-  \set Score.ignoreMelismata = ##t
-  \set Score.markFormatter = #format-mark-box-letters
-  \override Score.LyricText #'self-alignment-X = #-0.5
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \override Score.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
-  \override Score.MetronomeMark #'side-axis = #Y
-  \override Score.MetronomeMark #'direction = #DOWN
-  \override Score.RehearsalMark #'side-axis = #Y
-  \override Score.RehearsalMark #'direction = #UP
-  \override Score.RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
-  \override Score.RehearsalMark #'font-size = #10
-  \override Score.RehearsalMark #'self-alignment-X = #left
-  \override Score.TimeSignature #'style = #'()
-  \override Score.OttavaBracket #'dash-fraction = #0.05
-  \override Score.OttavaBracket #'dash-period = #0.25
-  \override Score.Accidental #'minimum-X-extent = #'(-0.2 . 0 )
-  \override Score.SystemStartBracket #'collapse-height = #1
-  \override Score.SystemStartBrace #'collapse-height = #1
-  \override Score.BarLine #'hair-thickness = #1.2
-  #(set-accidental-style 'neo-modern 'Score)
+spacingVariables = \layout {
+  \context {
+    \Staff
+    \remove "Axis_group_engraver"
+    \consists "Hara_kiri_engraver"
+    \accepts "Lyrics"
+    \override Beam #'auto-knee-gap = #'()
+    \override VerticalAxisGroup #'remove-empty = ##t
+  }
+  \context {
+    \Score
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
+  }
 }
 
+autoRulesVariables = \layout {
+  \context {
+    \Score
+    \override TimeSignature #'style = #'()
+    \override SystemStartBracket #'collapse-height = #1
+    \override SystemStartBrace #'collapse-height = #1
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoBeamSettings = #modern-auto-beam-settings
+    autoAccidentals = #modern-style
+    ignoreMelismata = ##t
+  }
+}
 
+textVariables = \layout {
+  \context {
+    \type "Engraver_group"
+    \name "TopLine"
+    \consists "Output_property_engraver"
+    \consists "Axis_group_engraver"
+    \consists "Script_engraver"
+    \consists "Dynamic_engraver"
+    \consists "Mark_engraver"
+    \consists "Text_engraver"
+    \consists "Metronome_mark_engraver"
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
+  }
+  \context {
+    \Score
+    \remove "Mark_engraver"
+    \remove "Metronome_mark_engraver"
+    \accepts "TopLine"
+    \override RehearsalMark #'side-axis = #Y
+    \override RehearsalMark #'direction = #UP
+    \override RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
+    \override RehearsalMark #'font-size = #10
+    \override RehearsalMark #'self-alignment-X = #left
+    \override MetronomeMark #'side-axis = #Y
+    \override MetronomeMark #'direction = #DOWN
+  }
+}
+
+miscVariables = \layout {
+  \context {
+    \Score
+    \override Accidental #'minimum-X-extent = #'(-0.2 . 0 )
+    \override BarLine #'hair-thickness = #1.2
+    \override OttavaBracket #'dash-fraction = #0.05
+    \override OttavaBracket #'dash-period = #0.25
+    \override LyricText #'self-alignment-X = #-0.5
+    markFormatter = #format-mark-box-letters
+  }
+}
 
 %% Time Signatures layouts ----------------------------------------%
 CoolSignatures = {
@@ -134,9 +162,50 @@ PianoDynamics = {
 
 
 %% Vocal score layout  --------------------------------------------%
-ReductionLayout ={
-  \AdditionalLayout
-  \override Score.RehearsalMark #'font-size = #4
-  \override Score.TimeSignature #'X-extent = #'(0 . 2)
+vocalScoreVariables = \layout {
+  \context {
+    \Staff
+    \type "Engraver_group"
+    \name "StaffUp"
+    \alias Staff
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 5)
+    \override StaffSymbol #'staff-space = #(magstep -1)
+    fontSize = #-1
+  }
+  \context {
+    \StaffUp
+    \type "Engraver_group"
+    \name "StaffDown"
+    \alias Staff
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-5 . 3)
+  }
+  \context {
+    \type "Engraver_group"
+    \name "Dynamics"
+    \alias Voice
+    \consists "Output_property_engraver"
+    \consists "Axis_group_engraver"
+    \consists "Dynamic_engraver"
+    \consists "Skip_event_swallow_translator"
+    \consists "Piano_pedal_engraver"
+    %\consists "Bar_engraver"
+    %\override BarLine #'transparent = ##t
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
+    \override TextScript #'font-size = #2
+    \override TextScript #'font-shape = #'italic
+    \override DynamicText #'extra-offset = #'(0 . 2.5)
+    \override Hairpin #'extra-offset = #'(0 . 2.5)
+    pedalSustainStrings = #'("Ped." "*Ped." "*")
+    pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+  }
+  \context { \PianoStaff 
+    \accepts "StaffUp"
+    \accepts "Dynamics"
+    \accepts "StaffDown"
+    connectArpeggios = ##t % to avoid collisions with pianoDynamicss
+  }
+  \context {
+    \Score
+    \override RehearsalMark #'font-size = #4
+    \override TimeSignature #'X-extent = #'(0 . 2)
 }
-

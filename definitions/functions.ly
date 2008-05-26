@@ -187,6 +187,27 @@ droite = { \change Staff = "droite" }
 
 gauche = { \change Staff = "gauche" }
 
+#(define modern-auto-beam-settings
+  (append default-auto-beam-settings
+  `(
+    ((end * * 3 4) . ,(ly:make-moment 1 4))
+    ((end * * 3 4) . ,(ly:make-moment 1 2))
+    ((end * * 4 4) . ,(ly:make-moment 1 4))
+    ((end * * 4 4) . ,(ly:make-moment 3 4))
+    ((end * * 2 2) . ,(ly:make-moment 1 4))
+    ((end * * 2 2) . ,(ly:make-moment 1 2))
+    ((end * * 2 2) . ,(ly:make-moment 3 4))
+    ((end * * 2 8) . ,(ly:make-moment 1 4))
+    ((be  * * 5 8) . ,(ly:make-moment 1 8))
+    ((end * * 5 8) . ,(ly:make-moment 5 8))
+    )))
+    
+#(define modern-style
+  '(Staff 
+    (same-octave . 0)
+    (any-octave  . 0)
+    (same-octave . 1)))
+
 %% Music formatting -----------------------------------------------%
 
 graceNotes =

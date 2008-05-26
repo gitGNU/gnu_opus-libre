@@ -28,75 +28,11 @@
 
 \layout {
   \indentVariables
-  \context {
-    \type "Engraver_group"
-    \name "TopLine"
-    \consists "Output_property_engraver"
-    \consists "Axis_group_engraver"
-    \consists "Script_engraver"
-    \consists "Dynamic_engraver"
-    \consists "Mark_engraver"
-    \consists "Text_engraver"
-    \consists "Metronome_mark_engraver"
-    %\consists "Skip_event_swallow_translator"
-    %\consists "Time_signature_engraver"
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
-  }
-  \context {
-    \type "Engraver_group"
-    \name "Dynamics"
-    \alias Voice
-    \consists "Output_property_engraver"
-    \consists "Axis_group_engraver"
-    \consists "Dynamic_engraver"
-    \consists "Skip_event_swallow_translator"
-    \consists "Piano_pedal_engraver"
-    %\consists "Bar_engraver"
-    %\override BarLine #'transparent = ##t
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-    \override TextScript #'font-size = #2
-    \override TextScript #'font-shape = #'italic
-    \override DynamicText #'extra-offset = #'(0 . 2.5)
-    \override Hairpin #'extra-offset = #'(0 . 2.5)
-    pedalSustainStrings = #'("Ped." "*Ped." "*")
-    pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
-  }
-  \context {
-    \Staff
-    \type "Engraver_group"
-    \name "StaffUp"
-    \alias Staff
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 5)
-    \override StaffSymbol #'staff-space = #(magstep -1)
-    fontSize = #-1
-  }
-  \context {
-    \StaffUp
-    \type "Engraver_group"
-    \name "StaffDown"
-    \alias Staff
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 3)
-  }
-  \context {
-    \Staff
-    \remove "Axis_group_engraver"
-    \consists "Hara_kiri_engraver"
-    \accepts "Lyrics"
-    \override Beam #'auto-knee-gap = #'()
-    \override VerticalAxisGroup #'remove-empty = ##t
-  }
-  \context { \PianoStaff 
-    \accepts "StaffUp"
-    \accepts "Dynamics"
-    \accepts "StaffDown"
-    connectArpeggios = ##t % to avoid collisions with pianoDynamicss
-  }
-  \context { \Score
-    \remove "Mark_engraver"
-    \remove "Metronome_mark_engraver"
-    \accepts "TopLine"
-  }
+  \spacingVariables
+  \autoRulesVariables
+  \textVariables
+  \miscVariables
+  \vocalScoreVariables
 }
 
 \paper {
@@ -105,7 +41,7 @@
   \verticalMarginsVariables
 }
 
-Prologue = { \ReductionLayout
+Prologue = {
   <<
     \new TopLine \PrologueMesures
     \new ChoirStaff
@@ -125,7 +61,7 @@ Prologue = { \ReductionLayout
   >>
 }
 
-ActeUnSceneUn = { \ReductionLayout
+ActeUnSceneUn = {
   <<
     \new TopLine \ActeUnSceneUnMesures
     \new ChoirStaff
@@ -147,7 +83,7 @@ ActeUnSceneUn = { \ReductionLayout
   >>
 }
 
-ActeUnSceneUnBis = { \ReductionLayout
+ActeUnSceneUnBis = {
   <<
     \new TopLine \ActeUnSceneUnBisMesures
     \new ChoirStaff
@@ -166,7 +102,7 @@ ActeUnSceneUnBis = { \ReductionLayout
   >>
 }
 
-ActeUnSceneDeux = { \ReductionLayout
+ActeUnSceneDeux = {
   <<
     \new ChoirStaff
       <<
@@ -185,7 +121,7 @@ ActeUnSceneDeux = { \ReductionLayout
   >>
 }
 
-ActeUnSceneTrois = { \ReductionLayout
+ActeUnSceneTrois = {
   <<
     \new ChoirStaff
       <<
@@ -204,7 +140,7 @@ ActeUnSceneTrois = { \ReductionLayout
   >>
 }
 
-ActeUnSceneTroisBis = { \ReductionLayout
+ActeUnSceneTroisBis = {
   <<
     \new ChoirStaff
       <<
@@ -223,7 +159,7 @@ ActeUnSceneTroisBis = { \ReductionLayout
   >>
 }
 
-ActeUnSceneTroisTer = { \ReductionLayout
+ActeUnSceneTroisTer = {
   <<
     \new ChoirStaff
       <<
@@ -242,7 +178,7 @@ ActeUnSceneTroisTer = { \ReductionLayout
   >>
 }
 
-ActeUnSceneQuatre = { \ReductionLayout
+ActeUnSceneQuatre = {
   <<
     \new ChoirStaff
        <<
@@ -267,7 +203,7 @@ ActeUnSceneQuatre = { \ReductionLayout
   >>
 }
 
-%{ Entracte = { \ReductionLayout
+%{ Entracte = {
 <<
 \new ChoirStaff
  <<
@@ -292,7 +228,7 @@ ActeUnSceneQuatre = { \ReductionLayout
 >>
 } %}
 
-ActeDeuxSceneUn = { \ReductionLayout
+ActeDeuxSceneUn = {
   <<
     \new ChoirStaff
       <<
@@ -313,7 +249,7 @@ ActeDeuxSceneUn = { \ReductionLayout
   >>
 }
 
-ActeDeuxSceneUnBis = { \ReductionLayout
+ActeDeuxSceneUnBis = {
   <<
     \new ChoirStaff
       <<
@@ -334,7 +270,7 @@ ActeDeuxSceneUnBis = { \ReductionLayout
   >>
 }
 
-ActeDeuxSceneDeux = { \ReductionLayout
+ActeDeuxSceneDeux = {
 <<
 \new TopLine \ActeDeuxSceneDeuxMesures
 \new ChoirStaff
@@ -360,7 +296,7 @@ ActeDeuxSceneDeux = { \ReductionLayout
 >>
 }
 
-ActeDeuxSceneTrois = { \ReductionLayout
+ActeDeuxSceneTrois = {
 <<
 \new ChoirStaff
 	<<
