@@ -5,6 +5,9 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%%% This is the main file for the full (orchestral) score.  This version
+%%% is (obviously) not ready yet; please compile vocal_score.ly instead...
+
 \version "2.11"
 
 \include "./texte/decoupage.ly"

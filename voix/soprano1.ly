@@ -99,6 +99,9 @@ ActeUnSceneTroisTerSopranoUn= { \SopranoUn
 	}
 }
 
+EntracteSopranoUn = {
+}
+
 ActeDeuxSceneUnSopranoUn= { \SopranoUn
 	\relative {
 		R2.*4 R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2

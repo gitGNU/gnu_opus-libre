@@ -111,7 +111,10 @@ ActeUnSceneQuatreSopranoDeux = { \SopranoDeux
   }
 }
 
-ActeDeuxSceneUnSopranoDeux= { \SopranoDeux
+EntracteSopranoDeux = {
+}
+
+ActeDeuxSceneUnSopranoDeux = { \SopranoDeux
 	\relative {
 		R2.*4 R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2 R2 R2.*3 R2 |
     r4 sold'8 sold sold4 | sol!8 si4 si8 sib sib | re4 r r8 re re re | 

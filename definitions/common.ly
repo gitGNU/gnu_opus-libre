@@ -5,6 +5,62 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Paper size -----------------------------------------------------%
+#(set-default-paper-size "a4" 'landscape)
+
+%% Page breaking --------------------------------------------------%
+#(define page-breaking ly:optimal-breaking)
+
+%% Staff size -----------------------------------------------------%
+#(set-global-staff-size 14)
+
+%% Time Signatures layouts ----------------------------------------%
+
+% FIXME: move to layout.ly
+
+CoolSignatures = {
+  \override TimeSignature #'break-visibility = #end-of-line-invisible
+  \override TimeSignature #'font-size = #3
+  \override TimeSignature #'break-align-symbol = ##f
+  \override TimeSignature #'X-offset = #ly:self-alignment-interface::x-aligned-on-self
+  \override TimeSignature #'self-alignment-X = #0
+  \override TimeSignature #'after-line-breaking = #shift-right-at-line-begin
+}
+
+topTimeSig = {
+  \CoolSignatures
+  \override TimeSignature #'font-size = #4
+}
+
+middleTimeSig = {
+  \CoolSignatures
+%  \override TimeSignature #'break-visibility = ##(#f #t #f)
+  \override TimeSig.TimeSignature #'font-size = #3
+  \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
+}
+
+PianoDynamics = {
+  \override Dynamics.TimeSignature #'font-size = #1
+  \override Dynamics.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%% Functions initialization %%%%%%%%%%%%%%%%%%%%%%
+
+#(use-modules (srfi srfi-39)(ice-9 regex))
+#(ly:set-option 'point-and-click #f)
+
+
+
+
+
+
+
+
+
 
 %%% -*- Mode: scheme -*-
 %%% The following functions were provided by
@@ -14,9 +70,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% Score Inclusion %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Scheme functions -----------------------------------------------%
-
-#(use-modules (srfi srfi-39)
-              (ice-9 regex))
 
 #(define *composer* (make-parameter ""))
 #(define *category* (make-parameter ""))

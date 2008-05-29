@@ -5,6 +5,7 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+% FIXME : find this file a relevant place.
 
 PrologueMesures = {
   %%% Introduction %%%

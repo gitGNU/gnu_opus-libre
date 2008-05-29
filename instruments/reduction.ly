@@ -2043,6 +2043,9 @@ EntracteMainGauche = {
   }
 }
 
+EntracteNuances = {
+}
+
 ActeDeuxSceneUnMainDroite = {
 	\relative{
     #(set-octavation 1)

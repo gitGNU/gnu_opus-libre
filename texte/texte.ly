@@ -630,6 +630,28 @@ ActeUnSceneQuatreContraltoTexte = \lyricmode {
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                            ENTR'ACTE                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+EntracteSopranoUnTexte = \lyricmode {
+}
+
+EntracteSopranoDeuxTexte = \lyricmode {
+}
+
+EntracteContraltoTexte = \lyricmode {
+}
+
+EntracteTenorTexte = \lyricmode {
+}
+
+EntracteBarytonUnTexte = \lyricmode {
+}
+
+EntracteBarytonDeuxTexte = \lyricmode {
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                             ACTE II                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -205,6 +205,9 @@ ActeUnSceneQuatreBarytonUn = { \BarytonUn
   }
 }
 
+EntracteBarytonUn = {
+}
+
 ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
   \relative {
     R1 R2. R2 R1*5/4*17

@@ -5,14 +5,28 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%%% This is the main file for the so-called vocal version, i.e. with
+%%% piano accompaniment.  Compile it using "lilypond vocal_score.ly"
+%%% and wait a few minutes...
+
+\version "2.11.47"
+%% This opéra has been coded on over two years, from version 2.9 to
+%% 2.12 -- some inconsistencies may remain through the code.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \include "italiano.ly"
 
+\include "./definitions/common.ly"
 \include "./definitions/functions.ly"
+\include "./definitions/paper.ly"
+\include "./definitions/layout.ly"
+\include "./definitions/markup.ly"
+
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
 \include "./definitions/structure.ly"
 \include "./texte/didascalies.ly"
-\include "./definitions/layout.ly"
 \include "./definitions/mesures.ly"
 
 \include "./texte/texte.ly"
@@ -26,20 +40,17 @@
 
 \include "./instruments/reduction.ly" 
 
-\layout {
-  \indentVariables
-  \spacingVariables
-  \autoRulesVariables
-  \textVariables
-  \miscVariables
-  \vocalScoreVariables
-}
+%%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
 
 \paper {
-  \pageBreakingVariables
-  \horizontalMarginsVariables
-  \verticalMarginsVariables
+  \includePaper
 }
+
+\layout {
+  \includeLayout
+}
+
+%%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
 Prologue = {
   <<
@@ -203,30 +214,32 @@ ActeUnSceneQuatre = {
   >>
 }
 
-%{ Entracte = {
-<<
-\new ChoirStaff
- <<
-    \new Staff \new Voice = "sopranoUn" \EntracteSopranoUn
-		\new Lyrics \lyricsto "sopranoUn" { \EntracteSopranoUnTexte }
-    \new Staff \new Voice = "sopranoDeux" \EntracteSopranoDeux
-		\new Lyrics \lyricsto "sopranoDeux" { \EntracteSopranoDeuxTexte }
-    \new Staff \new Voice = "alto" \EntracteAlto
-    \new Lyrics \lyricsto "alto" { \EntracteAltoTexte }
-    \new Staff \new Voice = "tenor" \EntracteTenor
-    \new Lyrics \lyricsto "tenor" { \EntracteTenorTexte }
-		\new Staff \new Voice = "barytonUn" \EntracteBarytonUn
-		\new Lyrics \lyricsto "barytonUn" { \EntracteBarytonUnTexte }
-    \new Staff \new Voice = "barytonDeux" \EntracteBarytonDeux
-    \new Lyrics \lyricsto "barytonDeux" { \EntracteBarytonDeuxTexte }
-    >> 
-\new PianoStaff { \Accompagnement <<
-	\new StaffUp = "droite"		\EntracteMainDroite
-	\new Dynamics << \PianoDynamics \EntracteMesures >>
-	\new StaffDown = "gauche"		\EntracteMainGauche
-		>> }
->>
-} %}
+Entracte = {
+  <<
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "sopranoUn" \EntracteSopranoUn
+        \new Lyrics \lyricsto "sopranoUn" { \EntracteSopranoUnTexte }
+        \new Staff \new Voice = "sopranoDeux" \EntracteSopranoDeux
+        \new Lyrics \lyricsto "sopranoDeux" { \EntracteSopranoDeuxTexte }
+        \new Staff \new Voice = "alto" \EntracteContralto
+        \new Lyrics \lyricsto "alto" { \EntracteContraltoTexte }
+        \new Staff \new Voice = "tenor" \EntracteTenor
+        \new Lyrics \lyricsto "tenor" { \EntracteTenorTexte }
+        \new Staff \new Voice = "barytonUn" \EntracteBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \EntracteBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \EntracteBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \EntracteBarytonDeuxTexte }
+      >> 
+    \new PianoStaff { \Accompagnement
+      <<
+        \new StaffUp = "droite"		\EntracteMainDroite
+        \new Dynamics << \PianoDynamics \EntracteNuances >>
+        \new StaffDown = "gauche"		\EntracteMainGauche
+      >>
+    }
+  >>
+}
 
 ActeDeuxSceneUn = {
   <<
@@ -271,55 +284,61 @@ ActeDeuxSceneUnBis = {
 }
 
 ActeDeuxSceneDeux = {
-<<
-\new TopLine \ActeDeuxSceneDeuxMesures
-\new ChoirStaff
-	<<
-		\new Staff \new Voice = "sopranoUn" \ActeDeuxSceneDeuxSopranoUn
-    \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneDeuxSopranoUnTexte }
-		\new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneDeuxSopranoDeux
-    \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneDeuxSopranoDeuxTexte }
-		\new Staff \new Voice = "contralto" \ActeDeuxSceneDeuxContralto
-    \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneDeuxContraltoTexte }
-    \new Staff \new Voice = "tenor" \ActeDeuxSceneDeuxTenor
-    \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneDeuxTenorTexte }
-    \new Staff \new Voice = "barytonUn" \ActeDeuxSceneDeuxBarytonUn
-    \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneDeuxBarytonUnTexte }
-    \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneDeuxBarytonDeux
-    \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneDeuxBarytonDeuxTexte }
-    >> 
-	\new PianoStaff { \Accompagnement <<
-	\new StaffUp = "droite"		\ActeDeuxSceneDeuxMainDroite
-	\new Dynamics << \PianoDynamics \ActeDeuxSceneDeuxMesures >>
-	\new StaffDown = "gauche"		\ActeDeuxSceneDeuxMainGauche
-		>> }
->>
+  <<
+    \new TopLine \ActeDeuxSceneDeuxMesures
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneDeuxSopranoUn
+        \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneDeuxSopranoUnTexte }
+        \new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneDeuxSopranoDeux
+        \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneDeuxSopranoDeuxTexte }
+        \new Staff \new Voice = "contralto" \ActeDeuxSceneDeuxContralto
+        \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneDeuxContraltoTexte }
+        \new Staff \new Voice = "tenor" \ActeDeuxSceneDeuxTenor
+        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneDeuxTenorTexte }
+        \new Staff \new Voice = "barytonUn" \ActeDeuxSceneDeuxBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneDeuxBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneDeuxBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneDeuxBarytonDeuxTexte }
+      >> 
+    \new PianoStaff { \Accompagnement
+      <<
+        \new StaffUp = "droite"		\ActeDeuxSceneDeuxMainDroite
+        \new Dynamics << \PianoDynamics \ActeDeuxSceneDeuxMesures >>
+        \new StaffDown = "gauche"		\ActeDeuxSceneDeuxMainGauche
+      >>
+    }
+  >>
 }
 
 ActeDeuxSceneTrois = {
-<<
-\new ChoirStaff
-	<<
-		\new Staff \new Voice = "sopranoUn" \ActeDeuxSceneTroisSopranoUn
-    \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneTroisSopranoUnTexte }
-		\new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneTroisSopranoDeux
-    \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneTroisSopranoDeuxTexte }
-		\new Staff \new Voice = "contralto" \ActeDeuxSceneTroisContralto
-    \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneTroisContraltoTexte }
-    \new Staff \new Voice = "tenor" \ActeDeuxSceneTroisTenor
-    \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneTroisTenorTexte }
-    \new Staff \new Voice = "barytonUn" \ActeDeuxSceneTroisBarytonUn
-    \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneTroisBarytonUnTexte }
-    \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneTroisBarytonDeux
-    \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
-    >> 
-	\new PianoStaff { \Accompagnement <<
-	\new StaffUp = "droite"		\ActeDeuxSceneTroisMainDroite
-	\new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
-	\new StaffDown = "gauche"		\ActeDeuxSceneTroisMainGauche
-		>> }
->>
+  <<
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneTroisSopranoUn
+        \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneTroisSopranoUnTexte }
+        \new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneTroisSopranoDeux
+        \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneTroisSopranoDeuxTexte }
+        \new Staff \new Voice = "contralto" \ActeDeuxSceneTroisContralto
+        \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneTroisContraltoTexte }
+        \new Staff \new Voice = "tenor" \ActeDeuxSceneTroisTenor
+        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneTroisTenorTexte }
+        \new Staff \new Voice = "barytonUn" \ActeDeuxSceneTroisBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneTroisBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneTroisBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
+      >> 
+    \new PianoStaff { \Accompagnement 
+      <<
+        \new StaffUp = "droite"		\ActeDeuxSceneTroisMainDroite
+        \new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
+        \new StaffDown = "gauche"		\ActeDeuxSceneTroisMainGauche
+      >>
+    }
+  >>
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
   \header {
@@ -329,90 +348,83 @@ ActeDeuxSceneTrois = {
 	  composer =  \OperaPartition
     tagline = \OperaNotice
   }
-
-%{\score {
+  
+  \score {
 	  \Prologue
     \header {
       piece = \PrologueTitre
     }
-}%}
-%{\score {
+  }
+  \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-}%}
-\score {
-    \ActeUnSceneUnBis
-    \header {
-      piece = \Separateur
-    }
-}%}
-%{\score {
-	  \ActeUnSceneDeux
-    \header {
-	    piece = \ActeUnSceneDeuxTitre
-	    }
-}%}
-%{\score {
-    \ActeUnSceneTrois
-    \header {
-	    piece = \ActeUnSceneTroisTitre
-	    }
-}%}
-%{\score {
-    \ActeUnSceneTroisBis
-    \header {
-	    piece = \Separateur
-	    }
-}%}
-%{\score {
-	  \ActeUnSceneTroisTer
-    \header {
-	    piece = \Separateur
-	    }
-}%}
-%{\score {
-	  \ActeUnSceneQuatre
-    \header {
-	    piece = \ActeUnSceneQuatreTitre
-	    }
-}%}
-%{\score {
-    \Entracte
-    \header {
-      piece = \EntracteTitre
-      }
-}%}
-%{\score {
-	  \ActeDeuxSceneUn
-    \header {
-	    piece = \ActeDeuxSceneUnTitre
-	    }
-}%}
-%{\score {
-    \ActeDeuxSceneUnBis
-    \header {
+  }
+  \score {
+      \ActeUnSceneUnBis
+      \header {
         piece = \Separateur
       }
-}%}
-%{\score {
-    \ActeDeuxSceneDeux
-    \header {
-      tableau = \ActeDeuxSceneDeuxTitre
-      indication = \ActeDeuxSceneDeuxAAA
-	    piece = \markup { \column {
-       \fill-line {  \fromproperty #'header:tableau }
-       \vspace #4
-       %\init-did { \fromproperty #'header:indication }
-        }
+    }
+    \score {
+      \ActeUnSceneDeux
+      \header {
+        piece = \ActeUnSceneDeuxTitre
 	    }
     }
-}%}
-%{\score {
-    \ActeDeuxSceneTrois
-    \header {
-      piece = \ActeDeuxSceneTroisTitre
+    \score {
+      \ActeUnSceneTrois
+      \header {
+        piece = \ActeUnSceneTroisTitre
+	    }
     }
-}%}
+    \score {
+      \ActeUnSceneTroisBis
+      \header {
+        piece = \Separateur
+	    }
+    }
+    \score {
+      \ActeUnSceneTroisTer
+      \header {
+        piece = \Separateur
+	    }
+    }
+    \score {
+      \ActeUnSceneQuatre
+      \header {
+        piece = \ActeUnSceneQuatreTitre
+	    }
+    }
+    \score {
+      \Entracte
+      \header {
+        piece = \EntracteTitre
+      }
+    }
+    \score {
+      \ActeDeuxSceneUn
+      \header {
+        piece = \ActeDeuxSceneUnTitre
+	    }
+    }
+    \score {
+      \ActeDeuxSceneUnBis
+      \header {
+        piece = \Separateur
+      }
+    }
+    \score {
+      \ActeDeuxSceneDeux
+      \header {
+        piece = \ActeDeuxSceneDeuxTitre
+      }
+    }
+    \score {
+      \ActeDeuxSceneTrois
+      \header {
+        piece = \ActeDeuxSceneTroisTitre
+      }
+    }
 }

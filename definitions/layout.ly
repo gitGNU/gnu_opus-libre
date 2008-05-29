@@ -5,66 +5,11 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-#(use-modules (srfi srfi-39))
-#(ly:set-option 'point-and-click #f)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Paper Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% Staff size -----------------------------------------------------%
-#(set-global-staff-size 14)
-
-%% Paper size -----------------------------------------------------%
-#(set-default-paper-size "a4" 'landscape)
-
-%% Page breaking --------------------------------------------------%
-#(define page-breaking ly:optimal-breaking)
-pageBreakingVariables = \paper {
-  page-limit-inter-system-space = ##t
-  page-limit-inter-system-space-factor = 1.4
-}
-
-%% Horizontal margins ---------------------------------------------%
-
-horizontalMarginsVariables = \paper {
-  left-margin = #20
-  right-margin = #20
-  line-width = #(- paper-width (* 40 mm))
-}
-
-%% Vertical margins -----------------------------------------------%
-
-verticalMarginsVariables = \paper {
-  page-top-space = #(* 5 mm)
-  between-system-space = 10 \mm
-  between-system-padding = 4 \mm
-  before-title-space = 10 \mm
-  between-title-space = 2 \mm
-  after-title-space = 5 \mm
-  ragged-bottom = ##f
-  ragged-last-bottom = ##f
-  bottom-margin = #20
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Common Layout --------------------------------------------------%
-
-indentVariables = \layout {
-  #(define (compute-indent amount)
-    (let ((indent (* amount mm)))
-      (if (or (eqv? #t (ly:get-option 'ancient-style))
-              (eqv? #t (ly:get-option 'non-incipit)))
-          (begin ;(format #t "~% indent: ~a" indent)
-           indent)
-          (+ indent (* incipit-width mm)))))
-
-  smallindent = #(compute-indent 10)
-  noindent = #(compute-indent 0)
-  largeindent = #(compute-indent 25)
-  indent = \smallindent
-}
-
-spacingVariables = \layout {
+includeLayout = \layout {
+%% Spacing Variables ----------------------------------------------%
+  indent = 2.0\cm
   \context {
     \Staff
     \remove "Axis_group_engraver"
@@ -77,9 +22,8 @@ spacingVariables = \layout {
     \Score
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
   }
-}
 
-autoRulesVariables = \layout {
+%% Notation Rules -------------------------------------------------%
   \context {
     \Score
     \override TimeSignature #'style = #'()
@@ -91,9 +35,8 @@ autoRulesVariables = \layout {
     autoAccidentals = #modern-style
     ignoreMelismata = ##t
   }
-}
 
-textVariables = \layout {
+%% Text inclusion -------------------------------------------------%
   \context {
     \type "Engraver_group"
     \name "TopLine"
@@ -119,9 +62,8 @@ textVariables = \layout {
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #DOWN
   }
-}
 
-miscVariables = \layout {
+%% Look and feel --------------------------------------------------%
   \context {
     \Score
     \override Accidental #'minimum-X-extent = #'(-0.2 . 0 )
@@ -131,38 +73,8 @@ miscVariables = \layout {
     \override LyricText #'self-alignment-X = #-0.5
     markFormatter = #format-mark-box-letters
   }
-}
-
-%% Time Signatures layouts ----------------------------------------%
-CoolSignatures = {
-  \override TimeSignature #'break-visibility = #end-of-line-invisible
-  \override TimeSignature #'font-size = #3
-  \override TimeSignature #'break-align-symbol = ##f
-  \override TimeSignature #'X-offset = #ly:self-alignment-interface::x-aligned-on-self
-  \override TimeSignature #'self-alignment-X = #0
-  \override TimeSignature #'after-line-breaking = #shift-right-at-line-begin
-}
-
-topTimeSig = {
-  \CoolSignatures
-  \override TimeSignature #'font-size = #4
-}
-
-middleTimeSig = {
-  \CoolSignatures
-%  \override TimeSignature #'break-visibility = ##(#f #t #f)
-  \override TimeSig.TimeSignature #'font-size = #3
-  \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
-}
-
-PianoDynamics = {
-  \override Dynamics.TimeSignature #'font-size = #1
-  \override Dynamics.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
-}
-
 
 %% Vocal score layout  --------------------------------------------%
-vocalScoreVariables = \layout {
   \context {
     \Staff
     \type "Engraver_group"
@@ -202,10 +114,13 @@ vocalScoreVariables = \layout {
     \accepts "StaffUp"
     \accepts "Dynamics"
     \accepts "StaffDown"
-    connectArpeggios = ##t % to avoid collisions with pianoDynamicss
+    connectArpeggios = ##t % to avoid collisions with pianoDynamics
   }
   \context {
     \Score
     \override RehearsalMark #'font-size = #4
     \override TimeSignature #'X-extent = #'(0 . 2)
+  }
+
+%%-----------------------------------------------------------------%
 }

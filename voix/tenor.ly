@@ -134,6 +134,9 @@ ActeUnSceneQuatreTenor = { \Tenor
   }
 }
 
+EntracteTenor = {
+}
+
 ActeDeuxSceneUnBisTenor = { \Tenor
   \relative {
     R1 R2. R2 R1*5/4*15
