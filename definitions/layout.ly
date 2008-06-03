@@ -46,6 +46,7 @@ includeLayout = \layout {
     \consists "Dynamic_engraver"
     \consists "Mark_engraver"
     \consists "Text_engraver"
+    \consists "Text_spanner_engraver"
     \consists "Metronome_mark_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
   }
@@ -68,8 +69,10 @@ includeLayout = \layout {
     \Score
     \override Accidental #'minimum-X-extent = #'(-0.2 . 0 )
     \override BarLine #'hair-thickness = #1.2
-    \override OttavaBracket #'dash-fraction = #0.05
-    \override OttavaBracket #'dash-period = #0.25
+    \override OttavaBracket #'dash-fraction = #0.3
+    \override OttavaBracket #'dash-period = #0.9
+    \override TextSpanner #'dash-fraction = #0.3
+    \override TextSpanner #'dash-period = #0.9
     \override LyricText #'self-alignment-X = #-0.5
     markFormatter = #format-mark-box-letters
   }

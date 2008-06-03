@@ -737,16 +737,24 @@ ActeDeuxSceneUnMesures = {
 }
 
 ActeDeuxSceneUnBisMesures = {
-  \time 4/4 R1
+  \time 4/4
+      \mouv #"Andante ad libitum" #"4" #76
+            R1
   \time 3/4 R2.
   \time 2/4 R2
-  \time 5/4 R1*5/4*45
+  \time 5/4
+      \mouv #"Presto Agitato" #"4" #192
+            R1*5/4*45
             R1*5/4*29
       \startTxt #"molto rit."
-            R1*5/4 R1*5/4*2  
+            r1*5/4
+            R1*5/4
+            r1
+      \stopTxt
+            r4
                   \bar "||"
   \time 7/4 
-      \stopTxt
+      \mouv #"Moderato assai" #"4" #104
             R1*7/4*7
   \time 3/4 R2.
   \time 4/4 R1
@@ -757,9 +765,12 @@ ActeDeuxSceneUnBisMesures = {
   \time 3/4 R2.*7
   \time 7/4 R1*7/4*9 
                   \bar "||"
-  
-  \time 3/2 R1.*5
-  \time 3/4 R2.*7
+  \time 3/2
+      \mouv #"Presto subito" #"2" #52
+            R1.*5
+  \time 3/4
+      \mouv #"Tempo giusto" #"4" #104
+            R2.*7
   \time 2/4 R2*2
   \time 3/4 R2.*4
   \time 2/4 R2
@@ -779,7 +790,9 @@ ActeDeuxSceneUnBisMesures = {
   \time 2/4 R2
   \time 5/8 R1*5/8
   \time 3/4 R2.
-  \time 4/4 R1
+  \time 4/4
+      \mouv #"Tempo primo" #"4" #192
+            R1
   \time 5/4 %%
 }
 

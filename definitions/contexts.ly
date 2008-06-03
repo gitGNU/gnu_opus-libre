@@ -6,6 +6,8 @@
 %------------------------------------------------------------------%
 
 %%% -*- Mode: scheme -*-
+%%% The following functions were provided by
+%%% Nicolas Sceaux <nicolas.sceaux@free.fr>
 
 #(use-modules (ice-9 format))
 #(define gen-unique-context

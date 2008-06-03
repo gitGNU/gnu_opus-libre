@@ -211,7 +211,7 @@ EntracteBarytonUn = {
 ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
   \relative {
     R1 R2. R2 R1*5/4*17
-    r4 r8 re re re mi re re mi | sol2. r2 |
+    r4 r8 sol sol lab sib sol lab sib | reb2. r2 |
     R1*5/4*6 | r2 r8 re,4. r4 | r mib mib2 r4 |
     r2 mib4 reb mi | do2 r r4 | R1*5/4*2 | r2 lab'4 lab sol8 sol |
     sib4 r sib8 sib sol4 sol8 sol | si!4 fad8 fad fad4 r2|
@@ -231,10 +231,10 @@ ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
     R2*2 R2.*2 r4 do8 fad mi sol | red'4 dod,8 sol' mi sold | red'4 r | R4. |
     r4 r8 sib | solb la fa sib | dod4 r | R4. r8 solb sib solb la fa |
     re4 r | R4. r8 solb sib fa la fad re4 r r8 | re'8 re4 re8 re4 re8|
-    re4. r8 re re | \t{re4 re mi} si | fad8 sold dod, fad mi la | re4
-    r8 fa4. | r4 r8 re solb, sib | fa'4 r8 solb,4 dod8 | fa4 la,8 re fa,4 |
-    r la4. dod8 | fa4 sib, re | solb,2 r4 | r dod,8 fa mi sold |
-    do4. mi,8 fa mi | sold4 sol8 sol \t {dod fad, la} | fa'2. |
+    re4. r8 re re | \t{re4 re mi} si | lab8 sib fa sol re sol | do4
+    r8 mib4. | r4 r8 do mi,! lab | mib'!4 r8 mi,!4 sib'8 | mib!4 sol,8 do mib,!4 |
+    r sol4. si!8 | mib4 lab, do | mi,!2 r4 | r si8 mib re fad |
+    sib4. re,8 mib re | fad4 fa8 fa \t {si mib, sol} | mi'!2. |
     r4 r8 fa r4 | r8 re r4 | fa8 re mi | si4 r | 
     la4 sib la8 | sib2.~ sib2. r4 |
     R1*5/4*3

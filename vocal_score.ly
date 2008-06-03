@@ -115,6 +115,7 @@ ActeUnSceneUnBis = {
 
 ActeUnSceneDeux = {
   <<
+    \new TopLine \ActeUnSceneDeuxMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "soprano" \ActeUnSceneDeuxSopranoDeux
@@ -134,6 +135,7 @@ ActeUnSceneDeux = {
 
 ActeUnSceneTrois = {
   <<
+    \new TopLine \ActeUnSceneTroisMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "tenor" \ActeUnSceneTroisTenor
@@ -153,6 +155,7 @@ ActeUnSceneTrois = {
 
 ActeUnSceneTroisBis = {
   <<
+    \new TopLine \ActeUnSceneTroisBisMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "alto" \ActeUnSceneTroisBisContralto
@@ -172,6 +175,7 @@ ActeUnSceneTroisBis = {
 
 ActeUnSceneTroisTer = {
   <<
+    \new TopLine \ActeUnSceneTroisTerMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "soprano" \ActeUnSceneTroisTerSopranoUn
@@ -191,6 +195,7 @@ ActeUnSceneTroisTer = {
 
 ActeUnSceneQuatre = {
   <<
+    \new TopLine \ActeUnSceneQuatreMesures
     \new ChoirStaff
        <<
          \new Staff \new Voice = "soprano" \ActeUnSceneQuatreSopranoDeux
@@ -216,6 +221,7 @@ ActeUnSceneQuatre = {
 
 Entracte = {
   <<
+    \new TopLine \EntracteMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "sopranoUn" \EntracteSopranoUn
@@ -243,6 +249,7 @@ Entracte = {
 
 ActeDeuxSceneUn = {
   <<
+    \new TopLine \ActeDeuxSceneUnMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneUnSopranoUn
@@ -264,6 +271,7 @@ ActeDeuxSceneUn = {
 
 ActeDeuxSceneUnBis = {
   <<
+    \new TopLine \ActeDeuxSceneUnBisMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "tenor" \ActeDeuxSceneUnBisTenor
@@ -313,6 +321,7 @@ ActeDeuxSceneDeux = {
 
 ActeDeuxSceneTrois = {
   <<
+    \new TopLine \ActeDeuxSceneTroisMesures
     \new ChoirStaff
       <<
         \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneTroisSopranoUn
@@ -348,83 +357,86 @@ ActeDeuxSceneTrois = {
 	  composer =  \OperaPartition
     tagline = \OperaNotice
   }
-  
+%{
   \score {
 	  \Prologue
     \header {
       piece = \PrologueTitre
     }
-  }
+  } %
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  }
+  } %
   \score {
       \ActeUnSceneUnBis
       \header {
         piece = \Separateur
       }
+  } %
+  \score {
+    \ActeUnSceneDeux
+    \header {
+      piece = \ActeUnSceneDeuxTitre
     }
-    \score {
-      \ActeUnSceneDeux
-      \header {
-        piece = \ActeUnSceneDeuxTitre
-	    }
+  } %
+  \score {
+    \ActeUnSceneTrois
+    \header {
+      piece = \ActeUnSceneTroisTitre
     }
-    \score {
-      \ActeUnSceneTrois
-      \header {
-        piece = \ActeUnSceneTroisTitre
-	    }
+  } %
+  \score {
+    \ActeUnSceneTroisBis
+    \header {
+      piece = \Separateur
     }
-    \score {
-      \ActeUnSceneTroisBis
-      \header {
-        piece = \Separateur
-	    }
+  } %
+  \score {
+    \ActeUnSceneTroisTer
+    \header {
+      piece = \Separateur
     }
-    \score {
-      \ActeUnSceneTroisTer
-      \header {
-        piece = \Separateur
-	    }
+  } %
+  \score {
+    \ActeUnSceneQuatre
+    \header {
+      piece = \ActeUnSceneQuatreTitre
     }
-    \score {
-      \ActeUnSceneQuatre
-      \header {
-        piece = \ActeUnSceneQuatreTitre
-	    }
+  } %
+  \score {
+    \Entracte
+    \header {
+      piece = \EntracteTitre
     }
-    \score {
-      \Entracte
-      \header {
-        piece = \EntracteTitre
-      }
+  } %
+  \score {
+    \ActeDeuxSceneUn
+    \header {
+      piece = \ActeDeuxSceneUnTitre
     }
-    \score {
-      \ActeDeuxSceneUn
-      \header {
-        piece = \ActeDeuxSceneUnTitre
-	    }
+  } %}
+  \score {
+    \ActeDeuxSceneUnBis
+    \header {
+      piece = \Separateur
     }
-    \score {
-      \ActeDeuxSceneUnBis
-      \header {
-        piece = \Separateur
-      }
+    \layout {}
+    \midi {}
+  } %{
+  \score {
+    \ActeDeuxSceneDeux
+    \header {
+      piece = \ActeDeuxSceneDeuxTitre
     }
-    \score {
-      \ActeDeuxSceneDeux
-      \header {
-        piece = \ActeDeuxSceneDeuxTitre
-      }
+  } %
+  \score {
+    \ActeDeuxSceneTrois
+    \header {
+      piece = \ActeDeuxSceneTroisTitre
     }
-    \score {
-      \ActeDeuxSceneTrois
-      \header {
-        piece = \ActeDeuxSceneTroisTitre
-      }
-    }
+  } %
+%}
 }
