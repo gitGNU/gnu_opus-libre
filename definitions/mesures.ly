@@ -793,7 +793,8 @@ ActeDeuxSceneUnBisMesures = {
   \time 4/4
       \mouv #"Tempo primo" #"4" #192
             R1
-  \time 5/4 %%
+  \time 5/4 R1*5/4*25
+                  \bar "|."
 }
 
 ActeDeuxSceneDeuxMesures = {

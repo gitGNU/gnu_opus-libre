@@ -423,8 +423,6 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-    \layout {}
-    \midi {}
   } %{
   \score {
     \ActeDeuxSceneDeux

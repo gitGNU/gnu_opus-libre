@@ -170,7 +170,19 @@ ActeDeuxSceneUnBisTenor = { \Tenor
     \tt {la16 re do fa mib} lab4 r8 sol,16 fad' |
     la4 r8 re, | fa dod mi do | la4 r2 |
     R2.*3 R2 R4. R2*3 R4. R2. R2 R4. R2. R1*5/8 R2 R4. R2.*15 R2 R4. R2
-    si4 do re8 | fa2.~ fa2. r4 | R1*5/4*3
+    si4 do re8 | fa2.~ fa2. r4 | R1*5/4*4
+    mib2. r2 | r4 sol,8 sol lab4 lab8 lab sol sol |
+    si4 lab r2 r4 | R1*5/4
+    r4 mi'!2 r4 r8 mi, | lab4 r2 r4 sol8 sol |
+    si4 lab r8 si4 r8 sib sib | re2. r2 |
+    r4 re re re mi | si2. r4 lab8 lab |
+    sol4 r8 lab sol4 \t { sol fa lab } |
+    mi2. r2 | sol'2. r2 |
+    r8 re re re re re fa4 re8 r |
+    re re si4 r8 dod re sol, fa lab |
+    mi'2 r2 fa4 | fa fa sol re r |
+    r4 re8 si lad si sol4 sol8 sold |
+    mi4 r1 | R1*5/4*2
   }
 }
 

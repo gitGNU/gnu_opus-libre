@@ -237,7 +237,12 @@ ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
     sib4. re,8 mib re | fad4 fa8 fa \t {si mib, sol} | mi'!2. |
     r4 r8 fa r4 | r8 re r4 | fa8 re mi | si4 r | 
     la4 sib la8 | sib2.~ sib2. r4 |
-    R1*5/4*3
+    R1*5/4*6
+    r4 do,8 do si'!4 r mib8 mib |
+    lab,4 r r8 mi lab lab sol sol |
+    si4 lab r2 r4 | R1*5/4*6
+    r2 r8 lab sol sol fa lab | mi'2. r2 |
+    R1*5/4*8
   }
 }
 

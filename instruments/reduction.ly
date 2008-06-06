@@ -2388,7 +2388,15 @@ ActeDeuxSceneUnBisMainDroite = {
     \gauche \stemUp la,  \droite \stemNeutral <fad' fa'! la>
     \gauche \stemUp la,la\droite \stemNeutral <fad' fa'! la>
     \gauche \stemUp la,  \droite \stemNeutral r8 
-    
+    <la' mid' fad> mi fad dod mib |
+    <la, si! sib'>4 r1 |
+    r4
+    \repeat unfold 44 {sol'8 mi} |
+    sol mi sol mi sol lab sol mi sol mi  |
+    sol lab sol mi sol mi sol lab sol mi |
+    sol lab sol mi sol lab sol mi sol lab|
+    \repeat unfold 40 {sol   mi} |
+    sol mi sol mi sol4 r2 |
   }
 }
 
@@ -2544,7 +2552,19 @@ ActeDeuxSceneUnBisMainGauche = {
     <lab, mib' sib'>4 \stemDown la'8 la \stemNeutral
     <lab, mib' sib'>4 \stemDown la'8 la la la \stemNeutral |
     <lab, mib' sib'> la' \stemDown la la \stemNeutral
-    la <lab, mib'> la' la la la |
+    la <lab, mib'> la' la la4 |
+    <reb,, lab' do> r1 | R1*5/4 \clef treble
+    <do''si'>2. <si do'>2 <do si'> <si do'>2.
+    <lab mib''>1*5/4\laissezVibrer R1*5/4
+    <do  si'>2. <si do'>2 <do si'> <si do'>2.
+    <sol  mi''>1*5/4\laissezVibrer R1*5/4*4
+    <mib' sold>2. <re la'>2 <mib sold> <re la'>2.~
+    <re    la'>1*5/4\laissezVibrer 
+    <mib  sold>2. <re la'>2 <mib sold> <re la'>2.~
+    <re    la'>1*5/4\laissezVibrer
+    sold8 la sold mib re mib sold la sold mib |
+    re mib sold la sold mib re mib sold la |
+    re,mib sold re mib sold r2 |
   }
 }
 

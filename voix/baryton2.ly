@@ -285,6 +285,7 @@ ActeDeuxSceneUnBisBarytonDeux = { \BarytonDeux
     R2 R4. R2 sold,4 sol sib8 | mib,2.~ mib2. r4 |
     r4 sol sol4. sol8 sol sol | la,4. r8 sol'4 sol8 sol sol sol |
     \t {fa mib fad} re'2 re4 re |
+    R1*5/4*8
   }
 }
 

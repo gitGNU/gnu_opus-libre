@@ -714,7 +714,7 @@ ActeDeuxSceneUnContraltoTexte = \lyricmode {
     Puis brû -- lons ça.
 }
 
-%------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 ActeDeuxSceneUnBisBarytonDeuxTexte = \lyricmode {
   É -- tran -- ger, bo -- nne nou -- velle, très bo -- nne nou -- velle_;
@@ -758,7 +758,9 @@ ActeDeuxSceneUnBisBarytonUnTexte = \lyricmode {
   j'a -- llais en leur coeur et re -- ssor -- tais i -- rra -- dié
   de bo -- nheur... Oh. Je... Je me sou -- viens.
   Je me sou -- viens... __ _
-  
+  A -- \dash llez -- y_! Ta -- \dash pez -- le_!
+  L'o -- cca -- sion est u -- ni -- que...
+  A -- lors, ce se -- ra moi_!
 }
 
 ActeDeuxSceneUnBisTenorTexte = \lyricmode {
@@ -784,6 +786,13 @@ ActeDeuxSceneUnBisTenorTexte = \lyricmode {
   à l'i -- ma -- _ ge roy -- a -- le de mon fort es -- ti -- mé mo -- narque...
   Tai -- \dash sez -- vous_! Pe -- tit de rien du tout.
   Il se sou -- vient... __ _
+  Oooh_!... Ça a l'air ru -- de -- ment fa -- ci -- le...
+  Nnnn... Non, non_; im -- po -- ssi -- ble, non...
+  Non, non non_; rien que d'y pen -- ser,
+  j'ai en -- vie de me mettre en pri -- son.
+  Aaah_! Quelle si -- tua -- tion a -- ffreu -- se,
+  très a -- ffreuse_; ex -- trê -- me -- ment a -- ffreuse_!
+  Je sau -- ve le Roi, et il ne le voit mê -- me pas_!
 }
 
 %%%%%%%%%%%%%%%%%%%%  Deuxième Tableau  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
