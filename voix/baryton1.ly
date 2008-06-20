@@ -259,6 +259,36 @@ ActeDeuxSceneDeuxBarytonUn = { \BarytonUn
     r1 r8 la la la | re2. r4 \t{re mi do} |
     la2 r4 | r2 r8 r16 lab sib fa do re   | la4 r2
     \repeat unfold 10 {R1 R2. }
+    R2*3 R2. R1*3 R1*5/8*14 R1*2
+    
+    %% Infirmerie %%
+    
+    r2 r4 r8 mi'16 mi | mi8 dod r4 r \t {mi8 mi mi} |
+    sold8. sol16 si4 r8 sol sol sold |
+    mi fa \t {dod sol'! mi} sib'4. r8 |
+    R1*3 R2. R2
+    r4 r8 r16 re, re re re re mib4 | r8 re4 re8 fa mib16 mib \t {lab8 mib fa}|
+    re2 r4 | R2.
+    r4 r8 re r4 | r8 re \t {re mib4} r8 re |
+    fa4 r8 fa4 mib8 | lab4 r r8 lab | lab lab si4 r8 lab |
+    re,4 r R2 R2.*2 R2*5
+    r16 re re16. re32 sold4 | r16 sib sib sib re8 re16. re32 re4 r8 sib |
+    re16 sib8 sib16 si sol \t { sold mi fa } dod4 r | R2*6
+    r32 sib' sib16 \t { re, re re } \t { mib re re } fa8 |
+    r16 mi mi sol~sol8 fa16. fa32 | sib4 r | R2
+    r8 re16. sib32 re16. sib32 si si sib sib | re8 r r4 | R2
+    r8 red,16 red mi8 dodd16 dodd red8 r r4
+    
+    %%% Choeur %%%
+    
+    r2 sold16 sold la8 |
+    r2 sold16 sold la8 |
+    r2 sold16 sold la8 |
+    r2 si,16  si   do8 |
+    r4 si'16 si do8 r4 |
+    r  si16  si do8 r4 |
+    do8 do si4 r |
+    R2.*9
   }
 }
 

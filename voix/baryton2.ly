@@ -307,6 +307,14 @@ ActeDeuxSceneDeuxBarytonDeux = { \BarytonDeux
     re8 mib r re fa | r re fa mib fa | lab2 r8 | R1*5/8
     sold8 la r sold si | r4 si8 si si| r4 r8 si sib R1*5/8
     r4 r8 sib re |
+    R1 \hideNote sol,1*1/8\glissando mi'1*7/8
+    R1*7 R2. R2 R1*2 R2.*7 R2*2 R2.*2 R2*23
+    \parlato do,4 r R2
+    
+    %%% Choeur %%%
+    
+    R2. la2 r4 la2 r4 do2 r4 red4. r8 mi red |
+    sold sol r4 r8 sol | si2 r4 | R2.*9
   }
 }
 

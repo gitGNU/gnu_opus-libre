@@ -144,7 +144,19 @@ ActeDeuxSceneDeuxSopranoUn= { \SopranoUn
     r2 sold,4 sold la2 r4 | r2 r4 sold8 sold la4 r sold8 sold |
     la4 r8 la sold sold la4 r sold sold | la2 r  | re,8 mi sold4 la la la la2 | R2. R1 R2. 
     r2 r4 sold8 sold la4 r sold8 sold la2. r4 R2.|
+    R2*3 R2. R1*3 R1*5/8*14 R1*9 R2. R2 R1*2 R2.*7 R2*2 R2.*2 R2*25
     
+    %%% Choeur %%%
+    
+    sold'16 sold la8 r2 |
+    mi16    mi   fa8 r2 |
+    re16    re  mib8 r2 |
+    do16    do  dod8 r2 |
+    si16 si do8 r si16 si do8 r |
+    red16 red mi8 r red16 red16 mi8 r |
+    mi16 mi red8 r2 | R2.*2
+    r2 sol,8 sol sold4 r2 | R2.*3
+    r2 sold8 sold  la4 r sold16 sold la8 |
   }
 }
 

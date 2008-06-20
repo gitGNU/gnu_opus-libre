@@ -220,6 +220,13 @@ parlato =
 	$notes
 \revert NoteHead #'style #})
 
+hideNote = {
+\once \override NoteHead  #'transparent = ##t
+\once \override NoteHead  #'no-ledgers = ##t
+\once \override Stem  #'transparent = ##t
+\once \override Beam  #'transparent = ##t
+\once \override Accidental  #'transparent = ##t
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Expressive indications -----------------------------------------%

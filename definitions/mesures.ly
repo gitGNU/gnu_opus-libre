@@ -865,6 +865,21 @@ ActeDeuxSceneDeuxMesures = {
   \time 3/4 R2.
   \time 4/4 R1*3
   \time 5/8 R1*5/8*14
+  \time 4/4
+      \mouv #"Andante ad lib." #"4" #80
+            R1*9
+  \time 3/4 R2.
+  \time 2/4 R2
+  \time 4/4 R1*2
+  \time 3/4 R2.*7
+  \time 2/4
+      \mouv #"Andantino" #"4" #66
+            R2*2
+  \time 3/4 R2.*2
+  \time 2/4 R2*25 \bar "||"
+  \time 3/4
+      \mark \markup { \mvt "Stesso Tempo" }
+            R2.*16 \bar "|."
 }
 
 ActeDeuxSceneTroisMesures = {

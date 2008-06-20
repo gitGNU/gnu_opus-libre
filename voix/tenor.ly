@@ -194,7 +194,31 @@ ActeDeuxSceneDeuxTenor = { \Tenor
     sold'8 sold mi2 mi8 re do si do16 si do re mi8 si
     r4 re8 re sib4~ sib2 r2 | R2. R1 R2.
     la'2 R2 la2~ la4 r2 |
-    la1~ la4 r r2 | R1 R1*5/8*14
+    la1~ la4 r r2 | R1 R1*5/8*14 R1*6
+    r4 r8 r16   mi,32 mi sold8 r16 sol32 sol si8 r16 sib32 sib |
+    re4 r8 r16  mi,32 mi la8   r16 sol32 sol do8 r16 sib32 sib |
+    mib4 r8 r16 mi,32 mi si'8  r16  la32  la mi'8 r |
+    r4 r8 re \t {re fad, sib} re,4 r | R1*2 R2.*7
+    mi'16 mi sold,8 r16 sol' sol si, r8 sib16 sib re4 |
+    r8 sold, si mi fa sol | la2 r16 mi mi mi | mi8 mib r re la' sold
+    fad16 sold fad mi | red2 r4 r16 red mi sol la4 r16 mi red sol |
+    la4. r8 | R2*3
+    r8 r16 do, si si si si sib8 r16 sib la16. la32 dod8 r16 dod do do sol'8 si, |
+    r16 si sib16. sib32 fa'8 la, | r4 r8 mi'16 mi | sold,4 r16 mi8 mi16 |
+    sold8 sol16 sol \t { si sib sib } re8~| re r r4 | R2*4
+    r16 sold,32 sold la16 sol32 sol sold8 r | r16 sold la dod red8 r R2 r8 red mi sol |
+    
+    %% Choeur %%
+    
+    la4 r8 re,16 re mib8 r |
+    r4  r8 mi16  mi fa8  r |
+    r4  r8 fa16  fa fad8 r |
+    r4 r8 fad16 fad sol8 r |
+    r8 sol16 sol sold8 r sol16 sol sold8 |
+    r8 sol16 sol sold8 r sol16 sol sold8 |
+    r4 mi16 mi red8 r4 | R2.*2
+    r2 sib8 sib la4 r2 | R2.*3
+    r2 la8 la sold4 r4 la16 la sold8 |    
   }
 }
 

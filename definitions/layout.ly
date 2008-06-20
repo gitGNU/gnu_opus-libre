@@ -75,6 +75,8 @@ includeLayout = \layout {
     \override TextSpanner #'dash-period = #0.9
     \override LyricText #'self-alignment-X = #-0.5
     markFormatter = #format-mark-box-letters
+    subdivideBeams = ##t
+    beatLength = #(ly:make-moment 1 8)
   }
 
 %% Vocal score layout  --------------------------------------------%
