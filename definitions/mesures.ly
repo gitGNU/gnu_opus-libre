@@ -933,7 +933,6 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 2/4 R2    \bar "||"
   
-  \time 2/4 
       \mouv #"Doppio Tempo" #"4" #120 
             R2*7
   \time 3/4 R2.*7
@@ -950,6 +949,7 @@ ActeDeuxSceneTroisMesures = {
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4 R2
+  \time 3/4 R2.
   
   %%% Climax %%%
   

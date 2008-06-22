@@ -124,13 +124,9 @@ ActeDeuxSceneTroisContralto= { \Contralto
     r2 la,8 do re2 r4 | r2 mib8 fa lab2 r4 |
     r4 r8 lab la do | re2~re4 r | R2*7 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
     R4. R2 R4. R2 R4.*2
-    R2.*7 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2 R4. R2 R4.
-  \time 2/4 R2*2
-  \time 3/4 R2.
-  \time 2/4 R2*2
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-    
+    R2.*7 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
+    R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 
+    R2*7 R2.*7 R2 R2. R2 R2. R2 R2. R2 R2. R2
+    R2. R2 R2. R2 R2. R2 R4. R2*3 R4. R2*4 R4.*2 R2.
   }
 }

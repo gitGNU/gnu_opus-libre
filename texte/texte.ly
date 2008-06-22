@@ -942,6 +942,10 @@ ActeDeuxSceneDeuxBarytonDeuxTexte = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%  Troisième Tableau %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeDeuxSceneTroisSopranoUnTexte = \lyricmode {
+  Fi -- xons ça, fi -- xons ça...
+  Vi -- ssons ça, vi -- ssons ça...
+  Sci -- ons ça, sci -- ons ça...
+  
 }
 
 ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {

@@ -191,7 +191,17 @@ ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
     lab16. sol32 r16 do | r do do do | do re la8 |
     r16 lab sol sol | si si \t {sib sib sib } | re4 | R4
     R4.*14 R4*15 r8 r16 sold, | la sold mi re | mi8 sold |
-    la16 mi la re | mi4 | R4*3| r16 sold, sol fa | fa8 mib| R4*3
+    la16 mi la re | mi4 | R4*3| r16 sold, sol fa | fa8 mib| R4*3 R2.*7 
     
+    R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
+    r8 re' re re r r4 |
+    r8 re  re re r r4 |
+    r8 re  re re r re16 re fa2 r4\fermata | R2.*6
+    R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
+    R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 R2*7 R2.*3
+    la,8 sold mi16 re mi8~ mi sold16 la sold8 mi16 la re4. la8 |
+    re4 \t {la8 mi sold} re'4 | r \t{la8 re la} \t{sold mi la} |
+    mi'4 r8 mi sol4. re8 sol4 | sold2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2.
+    R2 R4. r4 r8 sold |
   }
 }

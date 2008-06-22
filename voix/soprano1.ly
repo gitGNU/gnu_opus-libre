@@ -169,7 +169,7 @@ ActeDeuxSceneTroisSopranoUn= { \SopranoUn
     r8 sold16  sold la8 re,16 sol dod8 r4 | R4. r2
     r8\fermata sold16 sold la4 r sib,8 sib| mib4 r2 | R2.*4
     R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
-    R2 R4. R2 R4. R2*2 R2. R2*2 R2. R2 R2. R2 R2*7
+    R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 R2*7
     r8 sib' sib sib mib mib | sib sib mib4 la,8 la |
     re4 sold, fad8 la | fa!4 r2 
   }

@@ -3013,35 +3013,36 @@ ActeDeuxSceneTroisMainDroite = {
     r8 <fad, sold'> <sol la'> <sold fad'> <re' sol dod>
     \gauche \stemUp <sol, lab>16 s \droite \stemNeutral <fad' sol> <do' reb>|
     s4. <sib la'>2\laissezVibrer r4
-    r8 sold16 sold la2~ | la4 sol fa mi2.~ mi2 |
+    r8 sold16 sold la2~ | la4 sol fa mi2.~ mi2 
     \pl {r8 sold16 sold la4 r8 mi16 mi fa4 r8 re! do do sib sib}
     {s4 r8 fad'16 fad sol4 r8 red mi4 fa8 mi fa sol} |
     <sold, la'>2~ <sold la'>~ <sold la'>4 r sold'8 sold |
     
     \pl {
       \t {lab,8 sib lab} \t {sib lab sib}
-      \t {lab,  sib lab} \t {sib lab sib}
-      \t {lab,  sib lab} \t {sib lab sib}
+      \t {lab   sib lab} \t {sib lab sib}
+      \t {lab   sib lab} \t {sib lab sib}
     } {
-      la'!2. sol8 fa mi2
+      la'!2~ la4 sol8 fa mi2
     }
     sold16 lab, sold' sib,
     \pl {
-      \t {lab,8 sib lab} \t {sib lab sib}
-      \t {lab,  sib lab} \t {sib lab sib}
-      \t {lab,  sib lab} \t {sib lab sib}
+      \t {lab8  sib lab} \t {sib lab sib}
+      \t {lab   sib lab} \t {sib lab sib}
+      \t {lab   sib lab} \t {sib lab sib}
     } {
-      la'!2. sol8 fa mi4 fa8 mi
+      la'!2~ la4 sol8 fa mi4 fa8 mi
     }
     <fa re'> <sol re'>
     \pl {\t {re8 mi? re} \t {mi re mi}} <la mib'>2\laissezVibrer
-    \t {re8 mi  re} \t {mi re mi} | \t {re sib lab}
+    \t {re,8 mi  re} \t {mi re mi} | \t {re sib lab}
     \pl {\t {sib lab sib} \t {lab sib mib}} {r8 mi fa sol} |
     \pl {re16 mi re sib lab sib re mi} la2\laissezVibrer
     re,16 sib lab sib re mi re sib |
     lab sib re mi sib re mi lab re, mi sold sold |
-    la la, <mi' sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la |
-    <solb sib> sib, <fa' la> <fa la> <solb sib> sib, <fa la> <fa la> |
+    la la, <mi' sold> <mi sold> <fa la> la, <mi' sold> <mi sold> |
+    <fa la> la, <mi' sold> <mi sold> <fa la> la |
+    <solb sib> sib, <fa' la> <fa la> <solb sib> sib, <fa' la> <fa la> |
     <solb sib> sib, <fa' la> <fa la> <solb sib> sib |
     <sol si> si, <fad' lad> <fad lad> <sol si> si, <fad' lad> <fad lad> |
     <sol si> si, <red fad> <red fad> <mi sol> sol, <fad' lad> <fad lad> |
@@ -3154,7 +3155,41 @@ ActeDeuxSceneTroisMainGauche = {
     <do,, reb'>8 solb' \t{fa' do, do} do4
     \pl {s4 sol2\laissezVibrer} {do4~ do do } r4
     \pl {do8 do \t {do do do} do2 do4 r8 do \t{do do do} }
-    {<sol' si>2 <fad dod'>4 <sol si> <fad dod'> <sol si> <fad dod'>8 <sol si>} |
+    {<sol' si>2 <fad dod'>4 <sol si> <fad dod'>8 <sol si> 
+    \t{<fad dod'> <sol si> <fad dod'>} <sol si> <fad dod'> }|
+    <sol, sol'>8 <sol sol'>~<sol sol'>16 <dod dod'>8 sol'16 | <dod, dod'>4.
+    <sol  sol'>8 <sol sol'>~<sol sol'>16 <dod dod'>8 sol'16 | <mi mi'>4.
+    <do,do'>8 <do do'>~ \t { <do do'> do' do} |
+    <do do'>4~<do do'>16 sol'8 <do, do'>16~<do do'> sol' <do, do'>8~
+    <do do'>8 do' \t { <do, do'> do' do} |
+    dod,16 <sold' la> <mi' fa>8 dod, <lad' si red mi> |
+    dod, <sol sol'>~<sol sol'>16 dod8 si16 |
+    <sol sol'>4. dod8 \t {dod dod dod } |
+    \pl { <re, re'>2.\laissezVibrer r4 } { r16 r32 sold''<si re mi>16 <re mi fa>~
+    <re mi fa>8 <si re mi sol>4.\laissezVibrer s4 } |
+    \pl re,,2.\laissezVibrer { r16 r32 sib' <do mib solb>16 <mib solb lab>~
+    <mib solb lab>2\laissezVibrer } |
+    r4 <la, dod>16 <la dod> <lab do> <lab do>
+    
+    %%% Doppio Tempo %%%
+    
+    <re,, re'>8 \repeat unfold 23 {re'16 re'} |
+    re,8 sold,16 sold' sold,8 si
+    sold16 sold' sold, sold' \pl {sold,2\laissezVibrer
+    sold2. sold sold sold } { s4 \t {r8 sold' sold} 
+    sold4 sold~\t {sold8 sold sold} sold4 sold~\t {sold8 sold sold}
+    sold4~sold8 sold \t {sold sold sold} sold4~sold8 sold \t {sold sold sold} } |
+    r8 re4 <sold, sold'> re'8 | \pl {sold,2. sold2} {sold'4~sold8 sold
+    \t {sold sold sold} sold4~\t{ sold8 sold sold} } |
+    <sold, sold'>4. <fad fad'>4 <la la'>8 |
+    <fa fa'>2~<fa fa'> <lab lab'>4 <fa fa'>2~<fa fa'>4 <lab lab'>2 |
+    <fa fa'>2~<fa fa'>4 <fa fa'>~ \t { <fa fa'>8 fa' fa } |
+    <fa,fa'>4. fa'8~fa4 fa8 fa,4 fa'8~\t {fa fa fa} fa4 |
+    fa,8 fa'~ \t { fa fa fa } fa4 |
+    r8 <fa, fa'>4. <mib mib'>2 <fad fad'>4 |
+    
+    %%% Climax %%%
+    
     
   }
 }
