@@ -120,5 +120,3 @@ vais de ce pas voir cet étranger.
 \chef {
 Hi ! Hi hi ! Hi hi hi !
 Quand le Roi s' éloigne, il est tout petit ! }
-}
-
