@@ -312,6 +312,42 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     r16 si si dod lab8 sib | fa16 fa fa sol |
     R2.-\fermataMarkup do,8 re r2 | R2.*5
     R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
-    R4. 
+    r8 sib' do mi r r4 |
+    r8 sib  do mi r r4 |
+    r8 lab, do re r do16 lab sol2 r4\fermata | R2.*2
+    r4 r8 do, fad4 \t { r sold8 } sold16 sold mi mi do'4 | R2.*2 R2*2 r2 r8 r16 mi, |
+    
+    %%% Solo Baryton1 %%%
+    
+    mi8 mi mi4 | fa8 mi \t {mib mib fad } | re'4 r r8 r16 si |
+    re8. sib16 si si sol sold | mi8 fa16 dod \t {re8 sib dod}|
+    la'4 r2 | r8 r16 do, mi8 dod | r8 r16 do mi dod fa mi sold8 fa r si sold si |
+    sol4 fa8 lab mi mi \t { fa reb mib } do4 r2 |
+    do16 re fa8 r si,16 mi sol4 r8 | r16 re mib sol la re, sol la |
+    dod4 r16 re | re, sol la re, re'4 | r8 re, sol mi si'4 r8 re, la' sold dod4 r8 mi, |
+    la si mi, mi' mi4 r8 la, ~la4 sol'1~ sol4 r2 | R2*5
+    r4 r8 re,16 re mib4 r16 mib re re fa4 r8 fa lab si r2 | R2.*6 R2 R2.
+    
+    re2 r8 sib ~ sib4 r | r si r r8 sol8 ~ sol4 | sold r8 mi16 mi | fa4 r dod |
+    r8 mi re16 mi sold la | sold8 mi r2 | \parlato dod4 r8 mi |
+    mi8. mi16 sold4 sol8 sol | si4 r r8 sib8 ~ sib4 r |
+    
+    %%% Climax %%%
+    
+    re4 re8. re16 re4 re8 re4 r | R2
+    re4 re8. re16 re4 re8 re4 r | R2
+    re4 re8. re16 re4. re8 fa4 si,8 la4 do8 lab4 sol fa |
+    re1 re2 r4 | R1 R2. R1 R2. R1 R2. R1 R2. la'2 r | R2.
+    R1 R2. R1 la2 r4 | R1 R2. mi8 mi sold2 r4 | sol8 sol si4 r |
+    r8 sold mi la re, sold mi sold | la4 r2 | r8 si la do sold fa mi mib |
+    re4 r2 | R1 R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. la'2 r | R2. R1 R2. R1 R2. R1 R2. 
+    mi8 mi sold2 r4 | sol8 sol si4 r | r8 dod, dod dod \t { fa fa mi } lab lab |
+    sol sol si4 lab8 r | r4 r8 sol lab lab sol sol fa16 mi sol lab sol4 lab8 sol |
+    si4 si8 si si si sib sib | re4 si8 r r4 | R1 R2. R1 R2. R1*6 R2*3 |
+    
+    %%% Entrée du Baryton 1 %%%
+    
+    
   }
 }

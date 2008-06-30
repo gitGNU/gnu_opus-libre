@@ -9,7 +9,7 @@
 %%% piano accompaniment.  Compile it using "lilypond vocal_score.ly"
 %%% and wait a few minutes...
 
-\version "2.11.47"
+\version "2.11.49"
 %% This opéra has been coded on over two years, from version 2.9 to
 %% 2.12 -- some inconsistencies may remain through the code.
 
@@ -435,6 +435,8 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeDeuxSceneTroisTitre
     }
+    \layout {}
+    \midi {}
   } %{
 %}
 }

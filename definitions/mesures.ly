@@ -960,5 +960,69 @@ ActeDeuxSceneTroisMesures = {
   \time 2/4 R2*4
   \time 3/8 R4.*2
   \time 3/4 R2.
-  
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1*6
+  \time 2/4 R2*3  \bar "||"
+  \time 3/4
+      \mouv #"Tempo giusto" #"4" #120
+            R2.*11
+  \time 3/8 R4.
+  \time 3/4 R2.
 }

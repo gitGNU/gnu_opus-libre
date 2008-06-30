@@ -3066,6 +3066,89 @@ ActeDeuxSceneTroisMainDroite = {
     r4 <re sold>8 <re sold> <dod la'>4 <re sol>8 <re sol> <red sold >4 r |
     r4 <re sold>8 <re sold> <mib la >4 <re sol>8 <re sol> <dod sold'> \clef treble
     mib' <solb, mib'> <lab mib'> <mib' sib'>4 |
+    r8 mib <mi,! mib'> <sol mib'> <do lab'>4 |
+    r8 re <fa, re'> <sold re'> <si sold'>4 | \clef bass
+    r8 si <dod, si'> <re si'> <fad re'>4 |
+    r8 si <dod, si'> <fad si> <sold mi'>4 | \clef treble
+    r8 re' <fad, re'> <sold re'> <si sold'>4 |
+    r8 mi <sold, mi'> <si mi> <re la'>4 |
+    r8 la' <si, re la'> <si re la'> | <mi sold la re>4 <re sol lab do>
+    <mi sold la re>8 <si re mi la> ~ | <si re mi la> <si re mi> <la re mi> <la re mi> |
+    <si re mi> <si re mi> <la re mi> <la re mi> <si re mi sold> <si re mi sold> |
+    <la re mi la> <la re mi> <si re mi> <si re mi> <la re mi> <la re mi>
+    <si re mi> <si re mi> <si re mi sol> <si re mi sol> <la re mi sold> <la re mi>
+    <si re mi> <si re mi> <la re mi> <la re mi> <si re mi> <si re mi> 
+    <si re mi sold> <si re mi sold> <la re mi la> <la si re mi> <si re mi fa>
+    <si re mi fa> <la re mi sol> <la re mi sol> <mi' fa sol sib> <mi fa sol sib>
+    <re fa sol do> <re fa sol do> <do mib fad sold> <do mib fad sold>
+    <reb mib fad la> <reb mib fad la> <mib sold la si> <mib sold la si>
+    <sold la si re> <sold la si re> <fad la si mi> <fad la si mi> |
+    <fa sol sib do> <fa sol sib do> <mi sol sib reb> <mi sol sib reb> |
+    <lab sib reb mib> <lab sib reb mib> <do reb mib fad> <do reb mib fad>
+    <sib reb mib sold> <sib reb mib sold> | <sold re' sold>4 r |
+    
+    %%% Climax %%%
+    
+    R4. re''16 dod si sold <re mi> dod si sold fad fa mib do \clef bass sib la sol mi |
+    re4 r R4. \clef treble sold'''16 fad re si <sold la> fad re si <sold la> fad mib do
+    \clef bass sib sol fa mi re4 re ~ re8 re re4 \clef treble #(set-octavation 1)
+    <re''' si' re>16 sib' fa do re la #(set-octavation 0) mi fad dod sold lad fa |
+    do reb mib mi fad sol la si do re mib fa | <sold re'> fad mi mib re la sold fad
+    mi mib re \gauche la \droite r4 \clef bass r2 r8 <la sib do>16 <la sib do> |
+    <la sib do>4 r8 <la sib dod> r8 r16 <la sib dod> <la sib dod>4 |
+    r8 <re, sib' re> r4 <re sib' re>8 <re sib' re> |
+    <red si' red> <red si' red> r <red si' red> <red si' red> r <la' dod> <la dod> |
+    <re, sib' re>4 r8 <re sib' re> r <re sib' re> | r <re sib' re> r <re sib' re>
+    <re sib' re> r <re sib' re> <re sib' re> | <mi do' mi> <mi do' mi> r <mi do' mi>
+    r <mi do' mi> | r <mi do' mi> r <mi do' mi> <mi do' mi> r <mi do' mi> <mi do' mi> |
+    <mid dod' mid> <mid dod' mid> r <mid dod' mid> r <mid dod' mid> |
+    r <mid dod' mid> r <mid dod' mid> r <mid dod' mid> r <mid dod' mid>\clef treble
+    r <sol mi' sol> r <sol mi' sol> <sol mi' sol>4 | <sol mi' sol>8 <sol mi' sol>
+    <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol> r <sol mi' sol> |
+    r <la re mi la> r <la re mi la> <la re mi la>4 | <la re mi la>8 <la re mi la>
+    <la re mi la>4 <la re mi la>8 <la re mi la> r <la re mi la> |
+    r <sol mi' sol> r <sol mi' sol> r <sol mi' sol> | r <sol mi' sol>
+    r <sol mi' sol> <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol> |
+    <sold re' sold>4 <sold re' sold>8 <sold re' sold> r4 |
+    <la mi' sold>8 <la mi' sold> <sold mi' la> <sold la> <sold la> <sold la>
+    <sold la> <sold la> | r <la sib> sol' <la, sib> sol' <la, sib> |
+    <sold mi' sold> <sold mi' sold> r <sold mi' sold> r4
+    <sold mi' sold>8 <sold mi' sold> | <la fa' la> <la fa' la> r <la fa' la>
+    <sol mi' sol> <sol mi' sol> | <sold mi' sold> <sold mi' sold> r <sold mi' sold>
+    r4 <lad fad' lad>8 <lad fad' lad> | <si sol' si> <si sol' si> r <si sol' si>
+    <dod lad' dod> <dod lad' dod> | <re sib' re>4 la' sold8 mi re4 |
+    mi8 re la' sold r mi | <lab re mib>4 <re mib sib'> <sib lab'>8 <re fa>
+    <lab mib'>4 | <mi' si' re> <la, re sold>8 mi' <sold, re'>4 | <sold' la re mi>4
+    r8 <sol,, mi' sol> <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol> |
+    <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol> r <sol mi' sol> |
+    r <sold mi' sold> r <sold mi' sold> <sold mi' sold>4 <sold mi' sold>8
+    <sold mi' sold> | <sold mi' sold>4 <sold mi' sold>8 <sold mi' sold> r
+    <sold mi' sold> | <re' sib' re> <sib re> r4 r2 |
+    r8 si'' sib sol fad mib | re'4 r8 <sib,, re> r <sib re> r <sib re> |
+    <do mi> fa'' mi dod do la | sold' <do,,, mi> r <do mi> r <do mi> r <do mi> |
+    <mid, dod' mid> <mid dod' mid> r do'' si' fad | fa'4 
+    r <mid,,, dod' mid> r <mid dod' mid> r <mid dod' mid> |
+    r <sol mi' sol> r <sol mi' sol> <sol mi' sol>4 | <sol mi' sol>8 <sol mi' sol>
+    <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol> r <sol mi' sol> |
+    r <sol mi' sol> r <sol mi' sol> <sol mi' sol>4 |
+    <sol mi' sol>8 <sol mi' sol> <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol>
+    r <sol mi' sol> | r <sol mi' sol> r <sol mi' sol> <lab mi' lab>4 |
+    <sol mi' sol>8 <sol mi' sol> <lab mi' lab>4 <lab mi' lab>8 <si sol' si>
+    r <si sol' si> | r <sol mi' sol> r <sol mi'> <lab mi' sol>4 |
+    <la mi' sol>8 <la mi' sold> <sold mi' la> <sold la> <sold la> <sold la>
+    <sold la> <sold la> | r <la sib> fad' <la, sib> fad' <la, sib> |
+    <sol mi' sol> <sol mi' sol> r4 r2 R2. <sol mi' sol>8 <sol mi' sol>
+    <sol mi' sol> r r2 | r4 r8 <sol mi' sol> r4 | R1
+    <sol mi' sol>8 <sol mi' sol> <sold mi' sold>4 <mi' sol>8 <mi sol> |
+    <mi sold> sold, <mi' sol> <mi sol> <mi sold> sold, <sol' si> <sol si> |
+    <lab do> do, <mi sold> <mi sold> <fa la> la, | <sold' sid> <sold sid>
+    <la dod> dod, <sold' sid> <sold' sid> <la dod> dod, |
+    <mi sold> <fa la> la, <do' mi> <dod fa> fa, |
+    <mi' sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la, |
+    <mi' sold> <mi sold> <fa la> la, <mid'sold> <mid sold> <fad la> la, |
+    <mid'sold> <mid sold> <fad la> la, <mid'sold> <mid sold> <fad la> la, |
+    <mib'sold> <mib sold> <fad la> la, <mib'sold> <mib sold> <fad la> la, |
+    <mib'sold> <mib sold> <fad la> la,
   }
 }
 
@@ -3190,6 +3273,42 @@ ActeDeuxSceneTroisMainGauche = {
     
     %%% Climax %%%
     
-    
+    #(set-octavation -1) re16   re' r8 #(set-octavation 0) r16 re re'8 |
+    re,16 re' re, re' re, re' | <re, sib'>8 fa' <sol sib re>4
+    re'16 dod si sold fad fa mib8 |
+    #(set-octavation -1) re,,16 re' r8 #(set-octavation 0) r16 re re'8 |
+    re,16 re' re, re' re, re' | re, mib' <fa lab do>4. 
+    re'16 si la sold fad red dod8 |
+    #(set-octavation -1) re,,16 re' r8 r4 | re,16 re' re, re'
+    #(set-octavation 0) \t { re8 re' re} |
+    <sold, sold'>8 r16 sold, sold'8 sold16 sold' sold, sold' sold, sold' |
+    sold,8 sold' r <re, re'>4 <sold, sold'>8 |
+    <re re'>4 r r sold''16 fad mi mib |
+    <re, re'>4 la'8 fad sold red dod sib' do sol fa re mi' si la4 r2 |
+    la,4 r r2 | re'8 mi si la fad sold | red4 r la'8 fad sold red | dod4 r2 |
+    dod'8 sib do sol r fa re mi | si4 r2 | si'4 r r2 |
+    sib,4 fa' r8 sib, | r4 r8 fa' r4 sib, | fad' si r8 fad r4 r8 si r4 fad |
+    sib, fa' sib, | fa' mib r8 do r4 | r8 re la' fad sold red |
+    dod <sold' la> <mi' fa>4 r2 | sol,,4 r8 <re'' mib> r4 |
+    <sold, mi'>8 r <sold mi'> r <sold mi'> <sold mi'> r4 |
+    <fad dod'>8 r <fad dod'> r <sib fa> r | <sold mi'> r <sold mi'> r 
+    <sol re'> <sol re'> r4 | <fa re'>8 r <fa re'> r <mi si'> r |
+    <re sib'> re' r <la' sib> r <dod, fad si> r <re sold> |
+    r <sold dod> re <sib mib> fa re | do <sol'' sib do> r <sol do fa> r4 r8 sol, |
+    r <re' la'> r4 r8 mi' | sib, mi' fa,4 mi8 do sib4 |
+    do8 sib fa'4 sib,8 mi | sold,4 mi' red8 lad sold4 r8 sold r4 mi |
+    <re sib' re> r8 <sib'' re> r <sib re> r <sib re> | <re, sib' re> <re sib' re>
+    r <sib' re> r <sib re> | <re, sib' re> <sib' re> sib, mib fa sold, fad si |
+    dod,4 sold''8 <do mi> dod, <do' mi> | dod,, sib' do sol r fa re mi |
+    si4 sold'8 <dod' mid> r <dod mid> | si, <dod' mid> sold4 si,, sold' |
+    sib,8 fa' r sib, r4 | fa' r sib, r8 fa' | r sib, fa' sib, r fa' |
+    r4 sib, r fa' | r8 sib, r fa' sib, fa' | r sib, r4 fa' r | sib, r8 fa' r sib, |
+    dod <sold' la> <mi' fa>4 r2 | sol,,4 r8 <re'' mib> r4 | sib,8 fa' r4 r2 |
+    R2. sib,8 fa' sib, r r2 | r4 r8 fa' r4 | R1 sib,8 fa' sib, r r4 |
+    r8 dod re fa fad la sib,4 | r8 dod re fa fad la | r re, mib fad sol sib si,4 ~ |
+    si2 r4 | la'8 fad' do <mib lab> sib dod mib, <do' sol> |
+    fa, re' sold, <si mi> fad la' si, <red sold> |
+    dod, sib' mi, <sol do> re fa' sol, <si mi> |
+    sib reb sol <si mi>
   }
 }

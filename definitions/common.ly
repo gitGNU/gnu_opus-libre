@@ -1,5 +1,5 @@
 %------------------------------------------------------------------%
-% Opéra Libre -- common.ly                                         %
+% OpÃ©ra Libre -- common.ly                                         %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
@@ -55,6 +55,23 @@ PianoDynamics = {
 
 
 
+#(define page-layout-parser #f)
+
+includePageLayoutFile = 
+#(define-music-function (parser location) ()
+   (_i "If page breaks and tweak dump is not asked, and the file
+<basename>-page-layout.ly exists, include it.")
+   (if (not (ly:get-option 'dump-tweaks))
+       (let ((tweak-filename (format #f "~a-page-layout.ly"
+                                    (ly:parser-output-name parser))))
+        (if (access? tweak-filename R_OK)
+            (begin
+              (ly:message "Including tweak file ~a" tweak-filename)
+               (set! page-layout-parser (ly:parser-clone parser))
+              (ly:parser-parse-string page-layout-parser
+                                       (format #f "\\include \"~a\""
+                                               tweak-filename))))))
+   (make-music 'SequentialMusic 'void #t))
 
 
 

@@ -945,6 +945,9 @@ ActeDeuxSceneTroisSopranoUnTexte = \lyricmode {
   Fi -- xons ça, fi -- xons ça...
   Vi -- ssons ça, vi -- ssons ça...
   Sci -- ons ça, sci -- ons ça...
+  Po -- sons ça... \leftSyl …_po -- sons ça...
+  La mé -- ca -- nique et l'être hu -- main \dash n'ont -- ils
+  point maints points co -- mmuns_?
   
 }
 
@@ -958,6 +961,12 @@ ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
   des por -- teurs doi -- vent vous e -- mme -- ner...
   Ré -- pa -- rer la ma -- chi -- ne de __ _ l'É -- tran -- ger.
   Ne vous dé -- plai -- se.
+  Fi -- xons ça_! Vi -- ssons ça_!
+  \dash Scions -- \dash scions -- scions_!
+  \dash Scions -- \dash scions -- scions_!
+  A -- vec \dash ce -- lle -- ci, __ _ \dash peut -- _ on
+  s'en -- vo -- ler, pla -- ner vi -- re -- vol -- ter,
+  fen -- dre l'air et les nu -- ages de glace et de neige_?
 }
 
 ActeDeuxSceneTroisContraltoTexte = \lyricmode {
@@ -974,6 +983,9 @@ ActeDeuxSceneTroisTenorTexte = \lyricmode {
   Bou -- \dash clez -- la, bou -- \dash clez -- la_;
   ça ne fait qu'un quart d'heure, un quart d'heure que vous ê -- tes là.
   Bou -- clez la_! __ _
+  Fi -- xons ça_! Vi -- ssons ça_!
+  \dash Scions -- \dash scions -- scions_!
+  \dash Scions -- \dash scions -- scions_!
 }
 
 ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
@@ -988,6 +1000,18 @@ ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
   Et vous, où a -- \dash llez -- vous_?
   La ré -- pa -- rer... J'ai -- me -- rais fort vous a -- ccom -- pa -- gner.
   \leftSyl …_À pied.
+  Fi -- xons ça_! Vi -- ssons ça_!
+  \dash Scions -- \dash scions -- scions_!
+  \dash Scions -- \dash scions -- scions_!
+  Do -- cteur, vous a -- vez fait mer -- veille...
+  Voi -- là à quoi je ne m'a -- tten -- dais pas...
+  Un geste, un mot me su -- ffi -- rait pour re -- tour -- ner chez moi_;
+  que fai -- re_? Que  faire en cette a -- ffai -- re_?
+  Ce -- tte ma -- chine a le don de tout com -- pli -- quer.
+  M'en -- vo -- ler, m'en -- vo -- ler, et re -- trou -- ver la li -- ber -- té_?
+  \dash Puis -- je fai -- re ce choix_? J'en ai le droit_: j'ai \ital tous les droits_;
+  je __ _ suis __ _ le Roi, le __ _ Roi_! __ _
+  Bon tra -- vail, très bon tra -- vail_; ex -- trê -- m...
 }
 
 ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
