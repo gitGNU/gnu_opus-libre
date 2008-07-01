@@ -3127,7 +3127,7 @@ ActeDeuxSceneTroisMainDroite = {
     r8 si'' sib sol fad mib | re'4 r8 <sib,, re> r <sib re> r <sib re> |
     <do mi> fa'' mi dod do la | sold' <do,,, mi> r <do mi> r <do mi> r <do mi> |
     <mid, dod' mid> <mid dod' mid> r do'' si' fad | fa'4 
-    r <mid,,, dod' mid> r <mid dod' mid> r <mid dod' mid> |
+    r8<mid,,, dod' mid> r <mid dod' mid> r <mid dod' mid> |
     r <sol mi' sol> r <sol mi' sol> <sol mi' sol>4 | <sol mi' sol>8 <sol mi' sol>
     <sol mi' sol>4 <sol mi' sol>8 <sol mi' sol> r <sol mi' sol> |
     r <sol mi' sol> r <sol mi' sol> <sol mi' sol>4 |
@@ -3142,13 +3142,37 @@ ActeDeuxSceneTroisMainDroite = {
     <sol mi' sol>8 <sol mi' sol> <sold mi' sold>4 <mi' sol>8 <mi sol> |
     <mi sold> sold, <mi' sol> <mi sol> <mi sold> sold, <sol' si> <sol si> |
     <lab do> do, <mi sold> <mi sold> <fa la> la, | <sold' sid> <sold sid>
-    <la dod> dod, <sold' sid> <sold' sid> <la dod> dod, |
+    <la dod> dod, <sold' sid> <sold sid> <la dod> dod, |
     <mi sold> <fa la> la, <do' mi> <dod fa> fa, |
     <mi' sold> <mi sold> <fa la> la, <mi' sold> <mi sold> <fa la> la, |
     <mi' sold> <mi sold> <fa la> la, <mid'sold> <mid sold> <fad la> la, |
     <mid'sold> <mid sold> <fad la> la, <mid'sold> <mid sold> <fad la> la, |
     <mib'sold> <mib sold> <fad la> la, <mib'sold> <mib sold> <fad la> la, |
-    <mib'sold> <mib sold> <fad la> la,
+    <mib'sold> <mib sold> <fad la> la, <re sol> <re sol> <mi sold> sold, |
+    <sold re'> <sold re'> <si mi> fad <sold re'> <sold re'> <si mi> re, |
+    <re sold> <re sold> <fad si> dod <re sold> <re sold> <fad la> do |
+    <si fa'> <si fa'> <re sold> sold, |
+    
+    %%% Entrée du Baryton 2 %%%
+    
+    re' \t {si16 do dod} re8 \t {sold,16 si dod} re8 fad,32 sold si dod |
+    \tt {re16 fad, la si do } \tt { re fad, sold la si } \ttt { re fad, sol la do re } |
+    mib8 \t {do16 dod re} mib8 \t {la,16 do re } \ttt {mib sol, la do re mib } |
+    fa8 \t {re16 mib mi } fa16 do32 dod re16 do32 re mib16 re32 mib fa8 |
+    \stemUp <re' re'>8 \t {si'16 do dod } <re, re'>8 \t { sold16 si dod} <re, re'>8 mi32 sold si dod |
+    \tt {re16 fad, sold la si } \tt { re fa, sol lab sib } \ttt {re mib, fa lab do re } | \stemNeutral
+    #(set-octavation 1) <lab re lab'>8 \t {fa'16 fad sol } lab8 \t {si,16 do dod} re8 
+    #(set-octavation 0) \t {re,16 mib fa} |
+    lab8 \t {sold,16 si dod} re8 \t {re,16 mi sol} lab8 \t { sold,16 la do} |
+    \tt {re la sib do dod } \tt { re fad, la sib dod} \ttt { re fa, fad la sib re } |
+    \tt {mib fad, lad si re } \tt {mib \stemUp \gauche mi, \stemNeutral \droite sol si do } 
+    \ttt { mib \stemUp \gauche re, fad \stemNeutral \droite sol si red } |
+    mi <sol, si> <sol si> fa' <lab, do> dod mi <la, do> <la do> fa' <fa, la> dod' |
+    mi <lab, do> <lab do> dod <mi mi'> <fa fa'> |
+    <lab re lab'>8 \t { fa'16 fad sol } lab8 \t {si,16 do dod } re8 \t  {fa,16 fad sol } |
+    sold <re fa> sold <re fa> la' <dod, mi> <dod mi> <dod mi> sol' <do, mib> sol' <do, mib> |
+    sold' <si, re> <si re> <si re> <lad dod> <lad dod> <si re> <si re> <sold si> <sold si> <la do> <la do> |
+    
   }
 }
 
@@ -3309,6 +3333,33 @@ ActeDeuxSceneTroisMainGauche = {
     si2 r4 | la'8 fad' do <mib lab> sib dod mib, <do' sol> |
     fa, re' sold, <si mi> fad la' si, <red sold> |
     dod, sib' mi, <sol do> re fa' sol, <si mi> |
-    sib reb sol <si mi>
+    sib reb sol, <si mi> la fad' mi, <sol do> |
+    re fa' si, <red sold> dod lad' sold, <si mi> |
+    fad la' mib <sol do> fa, re' do <mib lab> |
+    do <la red> <si dod> fad <sold mi'> <si dod>
+    <la red> <sib re> <mi, sold> <sol fa'> <fa' sol> <re sib'> |
+    
+    %%% Entrée du Baryton 2 %%%
+    
+    <re, re'>4 <re re'> <re re'> |
+    <re re'>8 sold <re re'> sold <re re'> sold |
+    <si re> re, <sib' re> re, <si' re> re, |
+    <re' sold> re, <re' sold> re, <re' sold> re, |
+    \stemDown \droite <re''sold> \stemNeutral \gauche re,
+    \stemDown \droite <re' sold> \stemNeutral \gauche re,
+    \stemDown \droite <re' sold> \stemNeutral \gauche re, |
+    \stemDown \droite <re'  sib'> \stemNeutral \gauche re,
+    \stemDown \droite <mib' lab do> \stemNeutral \gauche re,
+    \stemDown \droite <fad' si re> \stemNeutral \gauche re,
+    <re, re'>16 fa mi mib re lab' sol fa \tt { re sib' lab sol fa } |
+    \tt { re sib' sol fa mi } \tt { re sib' lab fa mib } \ttt { re sib' la sol mi re } |
+    dod8 re' dod, re' dod,4 | si8 sol' \stemDown si, sol' si, sol' \stemNeutral |
+    sold, si <sold sold'> fa' si, sold' <si, si'> <fa fa'>4 |
+    <re' sib' re>8 <sib' re> <re, sib' re> <sib' re> <re, sib' re> <sib' re> |
+    <re, si' re> <si' re> <re, si' re> <si' re> <re, si' re> <si' re> |
+    <re, do'> <do' re> <re, do'> <do' re> <re, do'> <do' re> |
+    <re, dod'> dod' <re, dod'> dod' <re, dod'> dod' |
+    <re, mib mib'> mib' <re, mib mib'> mib'  <re, mib mib'> mib'16 re, |
+    fad'8 fad <re fad> fad <re fad> fad |
   }
 }

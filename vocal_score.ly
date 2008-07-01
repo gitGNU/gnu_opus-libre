@@ -10,8 +10,8 @@
 %%% and wait a few minutes...
 
 \version "2.11.49"
-%% This opéra has been coded on over two years, from version 2.9 to
-%% 2.12 -- some inconsistencies may remain through the code.
+%% This opéra has been coded on over several years, from version 2.9 
+%% to 2.12 -- some inconsistencies may remain through the code.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -340,7 +340,7 @@ ActeDeuxSceneTrois = {
     \new PianoStaff { \Accompagnement 
       <<
         \new StaffUp = "droite"		\ActeDeuxSceneTroisMainDroite
-        \new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
+        %\new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
         \new StaffDown = "gauche"		\ActeDeuxSceneTroisMainGauche
       >>
     }
@@ -357,7 +357,7 @@ ActeDeuxSceneTrois = {
 	  composer =  \OperaPartition
     tagline = \OperaNotice
   }
-%{
+%
   \score {
 	  \Prologue
     \header {
@@ -423,20 +423,18 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {
       piece = \ActeDeuxSceneDeuxTitre
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneTrois
     \header {
       piece = \ActeDeuxSceneTroisTitre
     }
-    \layout {}
-    \midi {}
-  } %{
-%}
+  } %
+%
 }
