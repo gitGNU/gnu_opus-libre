@@ -348,6 +348,10 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     
     %%% Entrée du Baryton 1 %%%
     
-    
+    R2.*2 r4 dod,8 mi re sol la4 r2 |
+    re4. re4 re8 | re4. re8 re8. re16 |
+    re4 r2 | R2. r2 r8 re, | re re lab' fa sib8. lab16 si4 r2 | R4. R2.
+    r8 lab sib8. sol16 si4 | r2 r8 si | dod,4 r8 re la' sold | do4 mi, r R2.
+    r8 re sib'4 fad | re'4 re8 re re4 | r8 re r4 re8. re16 | re4 r2 | R2.*16
   }
 }

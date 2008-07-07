@@ -13,9 +13,9 @@ includePaper = \paper {
   page-limit-inter-system-space-factor = 1.4
   
 %% Horizontal margins ---------------------------------------------%
-  left-margin = #20
-  right-margin = #20
-  line-width = #(- paper-width (* 40 mm))
+  left-margin = #13
+  right-margin = #7
+  line-width = #(- paper-width (+ left-margin right-margin))
 
 %% Vertical margins -----------------------------------------------%
   page-top-space = #(* 5 mm)
@@ -26,7 +26,7 @@ includePaper = \paper {
   after-title-space = 5 \mm
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-  bottom-margin = #20
+  bottom-margin = #2
 
 %%-----------------------------------------------------------------%
 }

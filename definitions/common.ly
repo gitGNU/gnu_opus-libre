@@ -1,5 +1,5 @@
 %------------------------------------------------------------------%
-% OpÃ©ra Libre -- common.ly                                         %
+% Opéra Libre -- common.ly                                         %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
@@ -8,7 +8,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Paper size -----------------------------------------------------%
-#(set-default-paper-size "a4" 'landscape)
+% #(set-default-paper-size "a4" 'landscape)
 
 %% Page breaking --------------------------------------------------%
 #(define page-breaking ly:optimal-breaking)

@@ -115,16 +115,26 @@ includeLayout = \layout {
     pedalSustainStrings = #'("Ped." "*Ped." "*")
     pedalUnaCordaStrings = #'("una corda" "" "tre corde")
   }
+  \context {
+    \Staff
+    \type "Engraver_group"
+    \name "StaffPiano"
+    \alias Staff
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 4)
+    \override StaffSymbol #'staff-space = #(magstep -1)
+    fontSize = #-1
+  }
   \context { \PianoStaff 
     \accepts "StaffUp"
     \accepts "Dynamics"
     \accepts "StaffDown"
+    \accepts "StaffPiano"
     connectArpeggios = ##t % to avoid collisions with pianoDynamics
   }
   \context {
     \Score
     \override RehearsalMark #'font-size = #4
-    \override TimeSignature #'X-extent = #'(0 . 2)
+    %\override TimeSignature #'X-extent = #'(0 . 2)
   }
 
 %%-----------------------------------------------------------------%

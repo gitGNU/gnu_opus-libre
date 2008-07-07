@@ -342,5 +342,13 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 
     R2*7 R2.*7 R2 R2. R2 R2. R2 R2. R2 R2. R2
     R2. R2 R2. R2 R2. R2 R4. R2*3 R4. R2*4 R4.*2 R2.
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1*6 R2*3
+    r4 re8. dod16 re8 fad, | re'8. dod16 mi4. sib8 |
+    R2. r8 fa'~fa2*1/2 \glissando \hideNote la,1*0/1 |
+    R2.*7 sold8 la do | re4 r8 re, mi8. dod16 fa4 r8 fa re4 |
+    fa r8 fa sol8. mi16 | lab4 r r8 mi | sold sol si4 r8 sol sib fad mib sib' dod la |
+    fad4 r2 | R2*12 R2. R2*6 R2.*4 
   }
 }

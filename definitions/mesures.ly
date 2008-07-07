@@ -1024,5 +1024,10 @@ ActeDeuxSceneTroisMesures = {
       \mouv #"Tempo giusto" #"4" #120
             R2.*11
   \time 3/8 R4.
+  \time 3/4 R2.*26
+  \time 2/4 R2*12
   \time 3/4 R2.
+  \time 2/4 R2*6
+  \time 3/4 R2.*4
+  \time 2/2 R1*50
 }
