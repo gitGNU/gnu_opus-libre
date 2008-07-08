@@ -346,9 +346,16 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
     R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1*6 R2*3
     r4 re8. dod16 re8 fad, | re'8. dod16 mi4. sib8 |
-    R2. r8 fa'~fa2*1/2 \glissando \hideNote la,1*0/1 |
+    R2. r8 fa'~fa2*1/2 \glissando \hideNote la,2*1/2 |
     R2.*7 sold8 la do | re4 r8 re, mi8. dod16 fa4 r8 fa re4 |
     fa r8 fa sol8. mi16 | lab4 r r8 mi | sold sol si4 r8 sol sib fad mib sib' dod la |
-    fad4 r2 | R2*12 R2. R2*6 R2.*4 
+    fad4 r2 | R2.*2 r4 r8 re mi8. dod16 | fa4 r8 lab sib8. sol16 |
+    R2.*2 r8 re do4 r8 r16 mib |
+    si4 r2 | r4 r8 mid fad la | si2 r4 | fad8 mid la si4 sold8 |
+    la do re2 ~| re8 r r2 | r4 r8 sol,4. | fa lab | mi'2. ~| mi2 r4 |
+    r lab, fa | r mib fad | re4 r | R2 r8 re re sib re4 r |
+    R2*8 R2. R2*6 R2.*4
+    r4 re8 re mib4 mib8 mib | re4 dod8 dod re4 mib8 mib | re4 r r2 | R1*3
+    r4 re8 re re4  re8  re  | re4 r r2 | r8 re mi sol sold2 |
   }
 }

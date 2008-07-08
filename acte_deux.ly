@@ -435,6 +435,8 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeDeuxSceneTroisTitre
     }
+    \layout { }
+    \midi { }
   } %
 %
 }

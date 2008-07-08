@@ -1029,5 +1029,12 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 2/4 R2*6
   \time 3/4 R2.*4
-  \time 2/2 R1*50
+  \time 2/2 R1*24
+  \time 3/4 R2.
+  \time 2/2 R1*7
+  \time 3/4 R2.*7 \bar "||"
+  
+  %%% Épilogue %%%
+  
+  
 }

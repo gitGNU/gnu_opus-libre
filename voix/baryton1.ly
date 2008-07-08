@@ -344,14 +344,21 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     R1 R2. R1 R2. R1 R2. la'2 r | R2. R1 R2. R1 R2. R1 R2. 
     mi8 mi sold2 r4 | sol8 sol si4 r | r8 dod, dod dod \t { fa fa mi } lab lab |
     sol sol si4 lab8 r | r4 r8 sol lab lab sol sol fa16 mi sol lab sol4 lab8 sol |
-    si4 si8 si si si sib sib | re4 si8 r r4 | R1 R2. R1 R2. R1*6 R2*3 |
+    si4 si8 si si si sib sib | re4 si8 r r4 | R1 R2. R1 R2. R1*3 do2 r R1 re2 r R2*3 |
     
-    %%% Entrée du Baryton 1 %%%
+    %%% Entrée du Baryton 2 %%%
     
     R2.*2 r4 dod,8 mi re sol la4 r2 |
     re4. re4 re8 | re4. re8 re8. re16 |
     re4 r2 | R2. r2 r8 re, | re re lab' fa sib8. lab16 si4 r2 | R4. R2.
     r8 lab sib8. sol16 si4 | r2 r8 si | dod,4 r8 re la' sold | do4 mi, r R2.
     r8 re sib'4 fad | re'4 re8 re re4 | r8 re r4 re8. re16 | re4 r2 | R2.*16
+    R2*2 r8 fa, mib fad | re'4 r | R2*7
+    r8 do, do do \t { sol' sol sol } sol sol \t { sol fa sol } | lab4 r |
+    lab8 sol ~  \t { sol mi lab } | sol4 r |
+    \t { sol8 lab sol } \t { fa mi lab } | sol4 \t { r8 sol lab } |
+    fa mi ~ \t { mi mi mi } | si'4 r2 | R2.*3
+    r4 do8 do fa,4 fa8 fa | fad4 do'8 do fa,4 fa8 fa fad4 r r2 | R1*3
+    r4 do'8 do dod4 si8 si| do4 re,8 re re4  re8 re sold4 r r2 | R1*3
   }
 }

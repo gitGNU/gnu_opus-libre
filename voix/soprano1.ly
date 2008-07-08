@@ -171,6 +171,26 @@ ActeDeuxSceneTroisSopranoUn= { \SopranoUn
     R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
     R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 R2*7
     r8 sib' sib sib mib mib | sib sib mib4 la,8 la |
-    re4 sold, fad8 la | fa!4 r2 
+    re4 sold, fad8 la | fa!4 r2 | R2.*3
+    R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. | R2 R4.
+    r4 r8 sold' | la la sol sol | sold4 r | R4.
+    r4 r8 la    | mi re  mi la  | sold4 r | R2
+    r8 si,4 | do sib8 | sib2 mib4 | lab1  lab2 r4 |
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
+    r8 sib, mib sib lab sib re mib | re4 r2 | r8 sib fa do' sol re do fa |
+    sib4 r2 | r8 fa' do re si fad mi la | red,4 r2 r2 r4 r8 sold |
+    la do re4. la8 | sold do re2 r8 re | do4. re | la'2 r4 do, | lab2 re4 ~ |
+    re do'2. | r8 sol \t { lab4 re, mi } | la,4 r r2 | R2. R1 R2. R1 R2. R1
+    r8 sib sib sib mib4 | r8 sib la la re4 r | sold, \t {r8 sold sold} sold16 sold fad la |
+    fa8 fa16 fa \t { fa8 mib fad } \t { re re re } \t { fad fa fa } | la4 r2 |
+    r4 r8 la sold do re4 ~| re r8 la sold do re4 | re,8 mib fad la do la re mib |
+    fad4 r8 do re sold la4 | r8 la, sold la do re mi? sold | la4 r8 sold, si re la'4 |
+    r8 re, mi sold | la4 r | sold, la8 do | re4 r2 | R2.*10 R4. R2.*26 R2*2
+    r8 re mi sol | sold4 r |
+    R2*8 R2. R2*6 R2.*4
+    r4 sib,8 sib la4 sol8 sol | sold4 r r2 | r8 sib la do re4 r | r8 la sold do re4 r |
+    r8 sold, la la do4 re | r la \t { sold sold lad } | red2. r4 | R1*5
+    r4 
   }
 }

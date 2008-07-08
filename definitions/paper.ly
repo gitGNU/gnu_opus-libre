@@ -26,7 +26,7 @@ includePaper = \paper {
   after-title-space = 5 \mm
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-  bottom-margin = #2
+  bottom-margin = #10
 
 %%-----------------------------------------------------------------%
 }

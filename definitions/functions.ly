@@ -183,9 +183,9 @@ oct = #(define-music-function (parser location mus) (ly:music?)
 
 %% Music layout ---------------------------------------------------%
 
-droite = { \change Staff = "droite" }
+droite = { \change StaffPiano = "droite" }
 
-gauche = { \change Staff = "gauche" }
+gauche = { \change StaffPiano = "gauche" }
 
 #(define modern-auto-beam-settings
   (append default-auto-beam-settings

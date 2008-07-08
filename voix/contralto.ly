@@ -128,5 +128,17 @@ ActeDeuxSceneTroisContralto= { \Contralto
     R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 
     R2*7 R2.*7 R2 R2. R2 R2. R2 R2. R2 R2. R2
     R2. R2 R2. R2 R2. R2 R4. R2*3 R4. R2*4 R4.*2 R2.
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1*6 R2*3
+    
+    R2.*11 R4. R2.*26 la8 do re4 | r8 la sold do | re4 r |
+    r r8 fad, | do re fad re | \t { do re sol } fad4 | r8 fad fa mi |
+    re si la do | lab4 r8 solb | fa' mib do' sib | fa'4 r |
+    R2 R2. R2*6 R2.
+    r2 la,8 do | re2 r4 | r r8 sold, fad la | fa'2. r4 | R1*5
+    r4 fad,8 fad fa4 fa8 fa | fa4 fad8 fad fa4 mi8 mi | fa4 r r2 | R1*3
+    
   }
 }
