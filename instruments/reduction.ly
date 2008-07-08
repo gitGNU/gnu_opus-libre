@@ -3201,8 +3201,10 @@ ActeDeuxSceneTroisMainDroite = {
     r <fad re'> r <fad re'> r <fad re'> r <fad re'> r <fad re'> r <fad re'> r <fad re'> r <fad re'> |
     r <mib lab mib'> r <mib lab mib'> r <mib lab mib'> r <mib lab mib'> r4 <fa lab fa'>8 <fa lab fa'> |
     <fad si fad'>4 r | R2. r4 fad'8 fad <lab, sol'>4 r | r sol'8 sol <la, sold'>4 r R2 <la do>8 do <dod mi> fa |
-    <la, sold'> <la sold'> <sold la'> <sold la> <sold la> <sold la> | <sold la> <sold la> <sib fad'> <sib fad'> <la sol'> sold|
-    <la  sold'> <la sold'> <sold la'> <sold la> <sold la> <sold la> | <sold la> <sold la> <sib fad'> <sib fad'> <la sol'> sold|
+    <la, sold'> <la sold'> <sold la'> <sold la> <sold la> <sold la> |
+    <sold la> <sold la> <sib fadd'> <sib fadd'> <la sold'> sold |
+    <la  sold'> <la sold'> <sold la'> <sold la> <sold la> <sold la> |
+    <sold la> <sold la> <si fad'> <si fad'> <sib sol'> la |
     
     <mi' sold> <mi sold> <fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
     <mi' sold> <mi sold> <fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
@@ -3210,7 +3212,28 @@ ActeDeuxSceneTroisMainDroite = {
     <sold' do> <sold do> <la dod > dod,<sold' do> <sold do> <la dod > dod, |
     <fa  sold> <fa sold> <fad la > la, <fa' sold> <fa sold> <fad la > la,  |
     <la' do  > <la do  > <sib reb> reb,<la' do  > <la do  > <sib reb> reb, |
-    
+    <do' mi  > <do mi  > <reb fa > fa, <do' mi  > <do mi  > <reb fa > fa,  |
+    <la  dod > <la dod > <sib re > re, <la' dod > <la dod > <sib re > re,  |
+    <dod' mi > <dod mi > <re fa  > re, <dod' mi > <dod mi > <re fa  > re,  |
+    <lad' dod> <lad dod> <si re  > re, <lad' dod> <lad dod> <si re  > re,  |
+    <do' mib > <do mib > <dod mi > mi, <do' mib > <do  mib> <dod mi > mi,  |
+    <red' fad> <red fad> <mi sol > sol,<red' fad> <red fad> <mi sol > sol, |
+    <mi' sold> <mi sold> <fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
+    <sold' do> <sold do> <la dod > dod,<sold' do> <sold do> <la dod > dod, |
+    <fa' sold> <fa sold> <fad la > la, <fa' sold> <fa sold> <fad la > la,  |
+    <la' do  > <la do  > <sib dod> dod,<la' dod > <la dod > <sib dod> dod, |
+    <do' mi  > <do mi  > <dod fa > fa, <dod' mi > <dod mi > <dod fa > fa,  |
+    #(set-octavation 1)
+    <dod' mid> <dod mid> <re fad > fad,<dod' mid> <dod mid> <re fad > fad, |
+    <mid'sold> <mid sold><fad la > la, <mid'sold> <mid sold><fad la > la,  |
+    <dod' mid> <dod mid> <re fad > fad,<dod' mid> <dod mid> <re fad > fad, |
+    <mid'sold> <mid sold><fad la > la, <mid'sold> <mid sold><fad la > la,  |
+    <mi' sold> <mi sold> <fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
+    <mib'sold> <mib sold><fad la > la, <mib'sold> <mib sold> <fad la> la,  |
+    <re  sold> <re sold> <mib la > la, <re  sold> <re  sold> <mib la> la,  |
+    <re  sold>8
+    #(set-octavation 0)
+    r r2 |
   }
 }
 
