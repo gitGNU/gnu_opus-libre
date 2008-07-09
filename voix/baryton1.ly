@@ -354,7 +354,7 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     r8 lab sib8. sol16 si4 | r2 r8 si | dod,4 r8 re la' sold | do4 mi, r R2.
     r8 re sib'4 fad | re'4 re8 re re4 | r8 re r4 re8. re16 | re4 r2 | R2.*16
     R2*2 r8 fa, mib fad | re'4 r | R2*7
-    r8 do, do do \t { sol' sol sol } sol sol \t { sol fa sol } | lab4 r |
+    r8 si, do do \t { sol' sol sol } sol sol \t { sol fa sol } | lab4 r |
     lab8 sol ~  \t { sol mi lab } | sol4 r |
     \t { sol8 lab sol } \t { fa mi lab } | sol4 \t { r8 sol lab } |
     fa mi ~ \t { mi mi mi } | si'4 r2 | R2.*3

@@ -32,7 +32,7 @@ PrologueTenorTexte = \lyricmode {
   Non  Ma -- jes -- t…
   C'est que per -- so -- nne ne le co -- nnaît, Ma -- jes -- té…
   Non_! Non non non non non non non non non non non non non non non non non, pen -- \dash sez -- vous_!
-  Il est ho --rrible à voir, ho -- rrible __ _ à voir_; il a PLEIN de sang sur le vi -- sage…
+  Il est ho -- rrible à voir, ho -- rrible __ _ à voir_; il a PLEIN de sang sur le vi -- sage…
   Aah_! __ _ _ Aah_! __ _ _
   Aaa…__ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   Vous __ _ de -- vez pren -- dre la seu -- le dé -- ci -- si -- on qui s'im -- po -- se.
@@ -62,8 +62,8 @@ PrologueBarytonDeuxTexte = \lyricmode {
   Pa -- \dash rle -- moi un peu __ _ de cet é -- tran -- ger.
   Je ne sais pas… 
   \dash Est -- il vert_? 
-  \dash A -- \leftSyl t_-_il huit bras_?
-  \dash Mange -- \leftSyl t_-_il du feu_? 
+  \dash A -- \leftSyl t_—_il huit bras_?
+  \dash Mange -- \leftSyl t_—_il du feu_? 
   \dash Fait -- il…
   vingt pieds de haut_?
   Vingt pieds de la -- _ rge_?
@@ -119,7 +119,7 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
   Je ne sais pas…
   Je ne sais PAS_!…
   
-  Je pen -- se… __ _ Je pen --se… que vo -- tre femme…
+  Je pen -- se… __ _ Je pen -- se… que vo -- tre femme…
   \leftSyl 
   …_fait des é -- co -- no -- mies __ _ en ra -- pié -- çant vos a -- ffaires…
   
@@ -175,7 +175,7 @@ ActeUnSceneUnSopranoUnTexte = \lyricmode {
   A -- mné -- si -- que, a -- mné -- si -- que_!
   A -- mné -- si -- que_! 
   A -- mné -- si -- que_; TRÈS a -- mné -- si -- que_!
-  A -- mné -- si -- que_! A -- mné -- si -- que_!  Très_!…
+  A -- mné -- si -- que_! A -- mné -- si -- que_!  Très_—…
   Ex -- trê -- me -- ment… Ex -- trê -- me -- ment… Ex -- trê -- me -- ment…
   
   C'est très ai -- sé_; u -- sez __ _ du sé -- rum de vé -- ri -- té_!
@@ -289,6 +289,7 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
 	Dé -- mi -- ssio -- nnez_!
 	J'ai ouï di -- _ re __ _ qu'un é -- tran -- ger
 	é -- tait tan -- tôt a -- rri -- vé…
+  %FIXME: \leftSyl doesn't work here
 	\leftSyl …_é -- _ tran -- _ _ _ ger… \leftSyl …_a -- _ rri -- _ _ _ vé…
 	Mmm… __ _ _ _ _ _ _ \leftSyl …_In -- vi -- \dash tons -- le vers vingt heures.
 	À dî -- ner. À dî -- ner_!
@@ -322,7 +323,7 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
 	Tou -- jours ces pro -- blè -- mes de res -- pon -- sa -- bi -- li -- té;
 	ma chè -- re, très __ _ chère é -- pou -- se…
 	Oui, oui_?
-	Euh… Non, non_; ce… …ce se -- rait u -- ne trop lou -- _ rde 
+	Euh… Non, non_; ce… \leftSyl …_ce se -- rait u -- ne trop lou -- _ rde 
 	res -- pon -- sa -- bi -- li -- té… que de dé -- mi -- ssio -- nner…
 	Un é -- tran -- ger, très é -- tran -- ger_; ex -- trê -- me -- ment
 	é -- tran -- ger. __ _
@@ -1087,13 +1088,13 @@ ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
   Oui_— ouu… __ _ ouille… Ou… __ _ Hou_— hou -- la -- la… euh…
   \leftSyl …_Et co -- mment le sau -- \dash rais -- je_? Hmm.
   A -- me -- \dash nez -- moi l'É -- tran -- ger.
-  Et… Qu'on ou -- vre grand les portes_!
+  Et… __ _ Qu'on ou -- vre grand les portes_!
   Que la ma -- chi -- ne sorte_!
   Et que le vent l'em -- porte, et que le vent __ _ l'em -- po -- rte_!
   Moi_? Mais…
   Je com -- prends… Je com -- prends.
   Si vous n'a -- vez pas de ba -- gages,
-  il y_ au -- ra une pe -- ti -- te place.
+  il \leftSyl y_au -- ra une pe -- ti -- te place.
   Vous_?
   Je com -- prends… Je com -- prends_:
   La po -- li -- ti -- que lo -- cale est i -- nhu -- mai -- ne_;
