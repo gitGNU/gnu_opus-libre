@@ -27,6 +27,10 @@ includePaper = \paper {
   ragged-bottom = ##f
   ragged-last-bottom = ##f
   bottom-margin = #10
+  
+%% Look and feel --------------------------------------------------%
+  %FIXME: this doesn't work well.
+  systemSeparatorMarkup = \slashSeparator
 
 %%-----------------------------------------------------------------%
 }

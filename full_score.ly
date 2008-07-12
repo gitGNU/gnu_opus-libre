@@ -7,17 +7,27 @@
 
 %%% This is the main file for the full (orchestral) score.  This version
 %%% is (obviously) not ready yet; please compile vocal_score.ly instead...
+\version "2.11.49"
+%% This opéra has been coded on over several years, from version 2.9 
+%% to 2.12 -- some inconsistencies may remain through the code.
 
-\version "2.11"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include "italiano.ly"
+
+\include "./definitions/common.ly"
+\include "./definitions/functions.ly"
+\include "./definitions/paper.ly"
+\include "./definitions/layout.ly"
+\include "./definitions/markup.ly"
 
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
-\include "./texte/texte.ly"
-
-\include "./definitions/functions.ly"
-\include "./definitions/layout.ly"
 \include "./definitions/structure.ly"
+\include "./texte/didascalies.ly"
 \include "./definitions/mesures.ly"
+
+\include "./texte/texte.ly"
 
 \include "./voix/soprano1.ly"
 \include "./voix/soprano2.ly"
@@ -43,118 +53,89 @@
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
 
-
-\layout {
-  \context {
-    \type "Engraver_group"
-    \consists "Time_signature_engraver"
-    \consists "Axis_group_engraver"
-    \consists "Mark_engraver"
-    \consists "Metronome_mark_engraver"
-    \name "TimeSig"
-  }
-  \context{ \Staff
-    \remove "Time_signature_engraver" 
-    \remove "Axis_group_engraver"
-    \consists "Hara_kiri_engraver"
-    \accepts "Lyrics"
-    \override Beam #'auto-knee-gap = #'()
-    \override VerticalAxisGroup #'remove-empty = ##t
-  }
-  \context { \RhythmicStaff
-    \remove "Time_signature_engraver" 
-    \remove "Axis_group_engraver"
-    \override VerticalAxisGroup #'remove-empty = ##t
-    \consists "Hara_kiri_engraver"
-  }
-  \context { \DrumStaff
-    \remove "Time_signature_engraver" 
-    \remove "Axis_group_engraver"
-    \override VerticalAxisGroup #'remove-empty = ##t
-    \consists "Hara_kiri_engraver"
-  }
-  \context { \Score 
-    \accepts TimeSig
-    \remove "Mark_engraver"
-    \remove "Metronome_mark_engraver"
-  }
-}
+%%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
 
 \paper {
-  line-width = #180
-  %systemSeparatorMarkup = \slashSeparator
-  ragged-bottom = ##t
-  left-margin = #20
+  \includePaper
 }
 
-Prologue={ \AdditionalLayout
-<<
-\new TimeSig  { \topTimeSig \PrologueMesures }
-\new StaffGroup <<
-	\new GrandStaff { <<
-		\new Staff \PrologueFluteUn
-		\new Staff \PrologueFluteDeux 
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \PrologueClarinetteUn
-		\new Staff \PrologueClarinetteDeux
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \PrologueSaxophoneUn
-		\new Staff \PrologueSaxophoneDeux
-		>> }
-
-	>>
-
-
-\new StaffGroup { \ProloguePercus }
-
-%\new TimeSig {\middleTimeSig \PrologueMesures}
-
-\new ChoirStaff
-	<<
-		\new Staff \new Voice = "tenor" \PrologueTenor
-    \new Lyrics \lyricsto "tenor" { \PrologueTenorTexte }
-		\new Staff \new Voice = "baryton" \PrologueBarytonDeux
-    \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
-	>>
-
-\new TimeSig { \middleTimeSig \PrologueMesures}
-
-\new StaffGroup 
-	<<
-		\new GrandStaff 
-		{ <<
-			\new Staff \PrologueViolonUn
-			\new Staff \PrologueViolonDeux
-			\new Staff \PrologueViolonTrois
-		>> }
-		\new GrandStaff
-		{ <<
-			\new Staff \PrologueAltoUn
-			\new Staff \PrologueAltoDeux
-		>> }
-		\new GrandStaff 
-		{ <<
-			\new Staff \PrologueVioloncelleUn
-			\new Staff \PrologueVioloncelleDeux
-		>> }
-		\new Staff \PrologueContrebasse
-	>>
-%\new TimeSig { \middleTimeSig \PrologueMesures}
-         \new PianoStaff \ProloguePiano
-     >>
+\layout {
+  \includeLayout
 }
 
-ActeUnSceneUn={ \AdditionalLayout
-<<
-\new TimeSig  { \topTimeSig \ActeUnSceneUnMesures }
-\new StaffGroup <<
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneUnFluteUn
-		\new Staff \ActeUnSceneUnFluteDeux 
+%%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
+
+Prologue = {
+  <<
+    \new TopLine  { \topTopLine \PrologueMesures }
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \PrologueFluteUn
+            \new Staff \PrologueFluteDeux 
+		      >>
+        \new GrandStaff
+          <<
+            \new Staff \PrologueClarinetteUn
+            \new Staff \PrologueClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \PrologueSaxophoneUn
+            \new Staff \PrologueSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ProloguePercus
+
+    \new TopLine {\middleTopLine \PrologueMesures}
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "tenor" \PrologueTenor
+        \new Lyrics \lyricsto "tenor" { \PrologueTenorTexte }
+        \new Staff \new Voice = "baryton" \PrologueBarytonDeux
+        \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
+      >>
+
+    \new TopLine { \middleTopLine \PrologueMesures}
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \PrologueViolonUn
+            \new Staff \PrologueViolonDeux
+            \new Staff \PrologueViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \PrologueAltoUn
+            \new Staff \PrologueAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \PrologueVioloncelleUn
+            \new Staff \PrologueVioloncelleDeux
+          >>
+        \new Staff \PrologueContrebasse
+      >>
+    \new PianoStaff \ProloguePiano
+  >>
+}
+
+%{
+
+ActeUnSceneUn = {
+  <<
+    \new TopLine  { \topTopLine \ActeUnSceneUnMesures }
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnFluteUn
+            \new Staff \ActeUnSceneUnFluteDeux 
 		>> }
 
 	\new GrandStaff { <<
@@ -172,7 +153,7 @@ ActeUnSceneUn={ \AdditionalLayout
 
 %\new StaffGroup { \ActeUnSceneUnPercus }
 
-%\new TimeSig {\middleTimeSig \ActeUnSceneUnMesures}
+%\new TopLine {\middleTopLine \ActeUnSceneUnMesures}
 
 \new ChoirStaff
 	<<
@@ -181,7 +162,7 @@ ActeUnSceneUn={ \AdditionalLayout
 %		\new Staff \ActeUnSceneUnBarytonDeux
 	>>
 
-\new TimeSig { \middleTimeSig \ActeUnSceneUnMesures}
+\new TopLine { \middleTopLine \ActeUnSceneUnMesures}
 
 \new StaffGroup 
 	<<
@@ -203,14 +184,77 @@ ActeUnSceneUn={ \AdditionalLayout
 		>> }
 %		\new Staff \ActeUnSceneUnContrebasse
 	>>
-%\new TimeSig { \middleTimeSig \ActeUnSceneUnMesures}
+%\new TopLine { \middleTopLine \ActeUnSceneUnMesures}
  %        \new PianoStaff \ActeUnSceneUnPiano
      >>
+}
+%}
+
+ActeUnSceneUnBis = {
+  <<
+    \new TopLine  { \ActeUnSceneUnBisMesures }
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnBisFluteUn
+            \new Staff \ActeUnSceneUnBisFluteDeux 
+		      >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnBisClarinetteUn
+            \new Staff \ActeUnSceneUnBisClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnBisSaxophoneUn
+            \new Staff \ActeUnSceneUnBisSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeUnSceneUnBisPercus
+
+    \new TopLine { \ActeUnSceneUnBisMesures}
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "soprano" \ActeUnSceneUnBisSopranoUn
+        \new Lyrics \lyricsto "soprano" { \ActeUnSceneUnBisSopranoUnTexte }
+        \new Staff \new Voice = "barytonUn" \ActeUnSceneUnBisBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneUnBisBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \ActeUnSceneUnBisBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBisBarytonDeuxTexte }
+      >>
+
+    \new TopLine { \ActeUnSceneUnBisMesures}
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneUnBisViolonUn
+            \new Staff \ActeUnSceneUnBisViolonDeux
+            \new Staff \ActeUnSceneUnBisViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnBisAltoUn
+            \new Staff \ActeUnSceneUnBisAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneUnBisVioloncelleUn
+            \new Staff \ActeUnSceneUnBisVioloncelleDeux
+          >>
+        \new Staff \ActeUnSceneUnBisContrebasse
+      >>
+    \new PianoStaff \ActeUnSceneUnBisPiano
+  >>
 }
 
 ActeUnSceneDeux={ \AdditionalLayout
 <<
-\new TimeSig  { \topTimeSig \ActeUnSceneDeuxMesures }
+\new TopLine  { \topTopLine \ActeUnSceneDeuxMesures }
 \new StaffGroup <<
 	\new GrandStaff { <<
 		\new Staff \ActeUnSceneDeuxFluteUn
@@ -232,7 +276,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 
 \new StaffGroup { \ActeUnSceneDeuxPercus }
 
-\new TimeSig { \middleTimeSig \ActeUnSceneDeuxMesures}
+\new TopLine { \middleTopLine \ActeUnSceneDeuxMesures}
 
 \new ChoirStaff
 	<<
@@ -242,7 +286,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 		\new Lyrics \lyricsto "baryton" { \ActeUnSceneDeuxBarytonDeuxTexte }
 	>>
 
-\new TimeSig {\middleTimeSig	\ActeUnSceneDeuxMesures }
+\new TopLine {\middleTopLine	\ActeUnSceneDeuxMesures }
 
 \new StaffGroup 
 	<<
@@ -264,7 +308,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 		>> }
 		\new Staff \ActeUnSceneDeuxContrebasse
 	>>
-%\new TimeSig { \middleTimeSig \ActeUnSceneDeuxMesures}
+%\new TopLine { \middleTopLine \ActeUnSceneDeuxMesures}
          \new PianoStaff \ActeUnSceneDeuxPiano
      >>
 }
@@ -272,7 +316,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 
 %{ActeUnSceneTrois={ \AdditionalLayout
 <<
-\new TimeSig  { \topTimeSig \ActeUnSceneTroisMesures }
+\new TopLine  { \topTopLine \ActeUnSceneTroisMesures }
 \new StaffGroup <<
 	\new GrandStaff { <<
 		\new Staff \ActeUnSceneTroisFluteUn
@@ -294,7 +338,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 
 \new StaffGroup { \ActeUnSceneTroisPercus }
 
-%\new TimeSig { \middleTimeSig \ActeUnSceneTroisMesures}
+%\new TopLine { \middleTopLine \ActeUnSceneTroisMesures}
 
 \new ChoirStaff
 	<<
@@ -304,7 +348,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 		\new Lyrics \lyricsto "baryton" { \ActeUnSceneTroisBarytonUnTexte }
 	>>
 
-\new TimeSig {\middleTimeSig	\ActeUnSceneTroisMesures }
+\new TopLine {\middleTopLine	\ActeUnSceneTroisMesures }
 
 \new StaffGroup 
 	<<
@@ -326,7 +370,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 		>> }
 		\new Staff \ActeUnSceneTroisContrebasse
 	>>
-%\new TimeSig { \middleTimeSig \ActeUnSceneTroisMesures}
+%\new TopLine { \middleTopLine \ActeUnSceneTroisMesures}
          \new PianoStaff \ActeUnSceneTroisPiano
      >>
 }%}
@@ -334,7 +378,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 
 ActeDeuxSceneUn={ \AdditionalLayout
 <<
-\new TimeSig  { \topTimeSig \ActeDeuxSceneUnMesures }
+\new TopLine  { \topTopLine \ActeDeuxSceneUnMesures }
 \new StaffGroup <<
 	\new GrandStaff { <<
 		\new Staff \ActeDeuxSceneUnFluteUn
@@ -355,7 +399,7 @@ ActeDeuxSceneUn={ \AdditionalLayout
 
 \new StaffGroup { \ActeDeuxSceneUnPercus }
 
-%\new TimeSig {\middleTimeSig \mesuresUn
+%\new TopLine {\middleTopLine \mesuresUn
 
 \new ChoirStaff
 	<<
@@ -364,7 +408,7 @@ ActeDeuxSceneUn={ \AdditionalLayout
 		\new Staff \ActeDeuxSceneUnContralto
 	>>
 
-\new TimeSig {\middleTimeSig \ActeDeuxSceneUnMesures}
+\new TopLine {\middleTopLine \ActeDeuxSceneUnMesures}
 
 \new StaffGroup 
 	<<
@@ -386,7 +430,7 @@ ActeDeuxSceneUn={ \AdditionalLayout
 		>> }
 		\new Staff \ActeDeuxSceneUnContrebasse
 	>>
-%\new TimeSig {\middleTimeSig \mesuresUn}
+%\new TopLine {\middleTopLine \mesuresUn}
          \new PianoStaff \ActeDeuxSceneUnPiano
      >>
 }

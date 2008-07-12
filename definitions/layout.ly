@@ -18,6 +18,18 @@ includeLayout = \layout {
     \override Beam #'auto-knee-gap = #'()
     \override VerticalAxisGroup #'remove-empty = ##t
   }
+  \context { \RhythmicStaff
+    \remove "Time_signature_engraver" 
+    \remove "Axis_group_engraver"
+    \override VerticalAxisGroup #'remove-empty = ##t
+    \consists "Hara_kiri_engraver"
+  }
+  \context { \DrumStaff
+    \remove "Time_signature_engraver" 
+    \remove "Axis_group_engraver"
+    \override VerticalAxisGroup #'remove-empty = ##t
+    \consists "Hara_kiri_engraver"
+  }
   \context {
     \Score
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
