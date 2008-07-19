@@ -316,6 +316,10 @@ normal = {
 
 
 %% Scenography formatting ---------------------------------------%
+long = {
+\once \override TextScript #'extra-spacing-width = #'(0 . 0)
+\once \override TextScript #'infinite-spacing-height = ##t
+}
 
 #(define-markup-command (did layout props text) (markup?)
   (interpret-markup layout props

@@ -33,13 +33,13 @@ exagérément lyrique..."
 PrologueC = "Entre le Roi, déboulant sur scène par le centre du rideau,
 derrière le Chef de la Garde, qui sursaute."
 
-PrologueD = "Le roi, peu intéressé, regarde dans le vague..."
+PrologueD = "Le Roi, peu intéressé, regarde dans le vague..."
 
 PrologueE = "se fige..."
 
 PrologueF = "... avant de réagir vivement."
 
-PrologueG = "Le chef se lamente avec affectation."
+PrologueG = "Le Chef se lamente avec affectation."
 
 PrologueH = "Même jeu du Chef, derrière le Roi..."
 
@@ -50,7 +50,7 @@ puis se ravise. Même jeu. Puis enfin, avec un regard en coin vers le Roi :"
 
 PrologueK = "Le Roi, après être resté pensif un moment, semble se ressaisir."
 
-PrologueL = "Le roi réfléchit, puis se penche un peu sur le côté."
+PrologueL = "Le Roi réfléchit, puis se penche un peu sur le côté."
 
 PrologueM = "Le Roi pousse une exclamation de dégoût."
 
@@ -299,7 +299,7 @@ ActeUnSceneQuatreE = "L'Étranger continue, pour lui-même..."
 
 %%%%%%%%%%%%%%%%%%%%%%  Deuxième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
-ActeDeuxSceneDeuxAAA = "Dans le noir apparaît à nouveau le machine
+ActeDeuxSceneDeuxAAA = "Dans le noir apparaît à nouveau la machine
 de l'Étranger. La Reine est toujours à pied
 d'oeuvre, en silence, comme si elle n'avait
 cessé de s'y affairer pendant la scène

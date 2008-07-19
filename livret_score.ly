@@ -10,6 +10,11 @@
 
 \include "./definitions/common.ly"
 \include "./definitions/functions.ly"
+%%% Special hack for non-standard tempo indications
+#(define-markup-command (mvt layout props arg) (markup?)
+    (interpret-markup layout props
+    (markup #:hspace 0)))
+
 \include "./definitions/paper.ly"
 \include "./definitions/layout.ly"
 \include "./definitions/markup.ly"
@@ -39,20 +44,22 @@
 
 \layout {
   \includeLayout
+  \context {
+    \Score
+    \override BarNumber #'transparent = ##t
+  }
+  \context {
+    \TopLine
+    \remove "Metronome_mark_engraver"
+    
+  }
 }
-
-%%%%%%%%% Special hack for non-standard tempo indications %%%%%%%%%%
-
-#(define-markup-command (mvt layout props arg) (markup?)
-    (interpret-markup layout props
-    (markup #:hspace 0)))
 
 %%%%%%%%%%%%%%%%% Scene-by-scene lyrics inclusion %%%%%%%%%%%%%%%%%%
 
 Prologue = {
   <<
-    \override Score.BarNumber #'transparent = ##t
-    \new TopLine \with { \remove "Metronome_mark_engraver" } \PrologueMesures
+    \new TopLine \PrologueMesures
     \new InvisibleChoirStaff
       <<
         \new InvisibleStaff \new InvisibleVoice = "tenor" \PrologueTenor

@@ -1112,8 +1112,8 @@ ActeUnSceneDeuxMainDroite = {
 	re4 do,16 mib fa solb lab si re dod | mi4 mib,16 fa solb si lab re dod mi! |
 	sol4 si,16 re dod mi re sol mi la |
 	<sib, re sib'>2. <la re la'>4~| <la re la'>4.
-	<< { <si re mi sol>8~ <si re mi sol>2 <si mi> re} \\ {
-	\t { s8 sold,4 sold sold}
+	<< { <si re mi sol>8~ <si re mi sol>2 <si mi> re} \\ { s8
+	\t { sold,4 sold sold}
 	\t {<red sold>4 <red sold> <red sold>}
 	\t {<dod fad la>4 <dod fad la> <dod fad la>}}>> |
 	<sib' dod>16 re, <sib re> re, <sib' dod> re, <sib' re> re

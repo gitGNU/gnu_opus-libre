@@ -72,6 +72,7 @@ includeLayout = \layout {
     \override RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
     \override RehearsalMark #'font-size = #10
     \override RehearsalMark #'self-alignment-X = #left
+    \override RehearsalMark #'direction = #DOWN
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #DOWN
   }

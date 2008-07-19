@@ -18,14 +18,14 @@ PrologueMesures = {
       \tempo "Largo" 4 = 48
             R2*2
   \time 3/4 r2.
-           ^\markup \did \PrologueA
+           _\markup \did \PrologueA
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 r2.
-           ^\markup \did \PrologueB
+           _\markup \did \PrologueB
   \time 2/4 R2*2
   
   %%% Entrée du Baryton 1 %%%
@@ -33,18 +33,18 @@ PrologueMesures = {
   \time 3/4
       \tempo "Vivo subito" 4 = 120 
             r2.
-           ^\markup \did \PrologueC
+           _\markup \did \PrologueC
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 r2
-           ^\markup \did \PrologueD
+           _\markup \did \PrologueD
   \time 3/4 R2.
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4 r2
-           ^\markup \did \PrologueE
+           _\markup \did \PrologueE
       \startTxt #"rit."
             R2
   \time 3/4 R2.
@@ -52,25 +52,25 @@ PrologueMesures = {
   \time 2/4
       \mark \markup{ \mvt "Tempo giusto" }
             r2
-           ^\markup \did \PrologueF
+           _\markup \did \PrologueF
             r4
             r4
-           ^\markup \did \PrologueG
+           _\markup \did \PrologueG
             R2*6
   \time 3/4 R2.*6
             r2
             r4
-           ^\markup \did \PrologueH
+           _\markup \did \PrologueH
             R2.
             r2.
-           ^\markup \did \PrologueI
+           _\markup \did \PrologueI
             R2.
   \time 4/4 R1
   \time 2/4 R2*2 R2\fermata \bar "||"
   \time 4/4
       \tempo "Più lento" 4 = 60
             r1
-           ^\markup \did \PrologueJ
+           _\markup \did \PrologueJ
             R1
   \time 3/4 R2.
   \time 4/4 R1
@@ -81,7 +81,7 @@ PrologueMesures = {
             R2*4
   \time 3/4 R2.*11
   \time 3/8 r4.
-           ^\markup \did \PrologueK
+           _\markup \did \PrologueK
                   \bar"||"
       \tempo "Andantino" 4. = 56
             R4.*25
@@ -89,20 +89,20 @@ PrologueMesures = {
             R4.*9
             r8
             r4
-           ^\markup \did \PrologueL
+           _\markup \did \PrologueL
             R4.*3 \bar "||"
       \stopTxt
       \tempo "A tempo, un poco più vivo" 4. = 63
             R4.*28
             r4.
-           ^\markup \did \PrologueM
+           _\markup \did \PrologueM
             R4.*3
             r4.
-           ^\markup \did \PrologueN
+           _\markup \did \PrologueN
             R4.
   \time 5/8 R2*5/4
   \time 6/8 r2.
-           ^\markup \did \PrologueO
+           _\markup \did \PrologueO
             R2.*2 \bar "||"
   \time 4/4
       \tempo "Adagio ad lib." 4 = 66
@@ -136,12 +136,12 @@ PrologueMesures = {
             R2*14
             r4 
             r4
-           ^\markup \did \PrologueR
+           _\markup \did \PrologueR
                   \bar "||"
       \mark \markup { \mvt Recitativo }
             R2*7
             r4
-           ^\markup \Noir
+           _\markup \Noir
             r4
                   \bar "|."
 }
@@ -303,6 +303,7 @@ ActeUnSceneUnMesures = {
 
 ActeUnSceneUnBisMesures = {
   \time 3/4
+      \mark \markup \init-did \ActeUnSceneUnBisAAA
       \mark \markup { \mvt Agitato}
             R2.*7
   \time 4/4
