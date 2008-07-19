@@ -149,5 +149,67 @@ includeLayout = \layout {
     %\override TimeSignature #'X-extent = #'(0 . 2)
   }
 
+%% Livret layout  -------------------------------------------------%
+  \context {
+    \ChoirStaff
+    \type "Engraver_group"
+    \name "InvisibleChoirStaff"
+    \alias ChoirStaff
+    \remove "System_start_delimiter_engraver"
+  }
+  \context {
+    \Staff
+    \type "Engraver_group"
+    \name "InvisibleStaff"
+    \alias Staff
+    \remove "Staff_symbol_engraver"
+    \remove "Accidental_engraver"
+    \remove "Rest_collision_engraver"
+    \remove "Ledger_line_engraver"
+    \remove "Time_signature_engraver"
+    \remove "Key_engraver"
+    \remove "Clef_engraver"
+    \remove "Ottava_spanner_engraver"
+    \remove "Bar_engraver"
+  }
+  \context {
+    \Voice
+    \type "Engraver_group"
+    \name "InvisibleVoice"
+    \alias Voice
+    \remove "Grace_engraver"
+    \remove "Tuplet_engraver"
+    \remove "Tie_engraver"
+    \remove "Slur_engraver"
+    \remove "Phrasing_slur_engraver"
+    \remove "Script_engraver"
+    \remove "Dynamic_engraver"
+    \remove "New_dynamic_engraver"
+    \remove "Grace_beam_engraver"
+    \remove "Beam_engraver"
+    \remove "Stem_engraver"
+    \remove "Rest_engraver"
+    \remove "Dots_engraver"
+    \remove "Note_heads_engraver"
+    \remove "Breathing_sign_engraver"
+    \remove "Glissando_engraver"
+    \remove "Trill_spanner_engraver"
+    \remove "Text_spanner_engraver"
+    \remove "Multi_measure_rest_engraver"
+    \remove "Arpeggio_engraver"
+    \remove "Pitched_trill_engraver"
+  }
+  \context {
+    \InvisibleStaff
+    \accepts "InvisibleVoice"
+  }
+  \context {
+    \InvisibleChoirStaff
+    \accepts "InvisibleStaff"
+  }
+  \context {
+    \Score
+    \accepts "InvisibleChoirStaff"
+  }
 %%-----------------------------------------------------------------%
 }

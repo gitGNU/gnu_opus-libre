@@ -24,6 +24,8 @@ FullScore = "Partitura"
 
 Reduction = "Version avec piano"
 
+Livret = "Paroles et didascalies"
+
 %%%%%%
 
 PrologueTitre = \markup  {

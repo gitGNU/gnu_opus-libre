@@ -282,50 +282,10 @@ stopTxt =
      (make-text-span music 1))
               
 %% Tempo indications ----------------------------------------------%
-              
 #(define-markup-command (mvt layout props arg) (markup?)
     (interpret-markup layout props
     (markup #:huge #:bold arg)))
 
-#(define ((make-format-movement-markup-function text) duration count context)
- (markup #:mvt text #:hspace 1
-         "("
-         #:general-align Y DOWN #:smaller
-            #:note-by-number (ly:duration-log duration)
-                             (ly:duration-dot-count duration)
-                             1
-         "="
-         (number->string count)
-         ")"))
-
-
-#(define (string->duration duration-string)
- "Parse the `duration-string', e.g. ''4..'' or ''breve.'', and return a duration object."
- (let* ((length (string-length duration-string))
-        (dot-index (or (string-index duration-string #\.) length))
-        (len (substring duration-string 0 dot-index))
-        (dots (- length dot-index)))
-  (ly:make-duration (cond ((string=? len "breve") -1)
-                          ((string=? len "longa") -2)
-                          ((string=? len "maxima") -3)
-                          (else (log2 (string->number len))))
-                    dots 1 1)))
-
-mouv =
-#(define-music-function (parser location text duration count music)
-                       (string? string? integer? ly:music?)
- #{
-   \set Score.metronomeMarkFormatter = #(make-format-movement-markup-function $text)
-   \set Score.tempoWholesPerMinute = #$(ly:moment-mul (ly:make-moment count 1)
-                                         (ly:duration-length
-                                           (string->duration duration)))
-   \set Score.tempoUnitDuration = #$(string->duration duration)
-   \set Score.tempoUnitCount = #$count
-   $music
-   \set Score.metronomeMarkFormatter = #format-metronome-markup
- #})
-
-                     
 %%%%%%%%%%%%%%%%%%%%%%%%%% Text Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Lyrics formatting ----------------------------------------------%
