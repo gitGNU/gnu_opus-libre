@@ -8,9 +8,9 @@
 \include "italiano.ly"
 
 SopranoDeux = {
-  \set Staff.instrumentName = \markup { \hcenter-in #27.5 \SopranoDeuxName }
-  \set Staff.shortInstrumentName = \SopranoDeuxShortName
-  \set Staff.midiInstrument = "voice oohs" 
+  \set Staff . instrumentName = \markup { \hcenter-in #27.5 \SopranoDeuxName }
+  \set Staff . shortInstrumentName = \SopranoDeuxShortName
+  \set Staff . midiInstrument = "voice oohs" 
 }
 
 ActeUnSceneDeuxSopranoDeux = { \SopranoDeux

@@ -18,6 +18,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 PrologueTenorTexte = \lyricmode {
+  \set instrumentName = \TenorName
+  \set shortInstrumentName = \TenorShortName
+  
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- té_!
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- té_!
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- téEH_!!!
@@ -45,6 +48,9 @@ PrologueTenorTexte = \lyricmode {
 }
 
 PrologueBarytonDeuxTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
   Quoi, quoi, __ _ quoi_; 
   qu'y \dash a -- \leftSyl t_-_il,
   qu'y \dash a -- \leftSyl t_-_il,
@@ -97,6 +103,9 @@ PrologueBarytonDeuxTexte = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%  Premier Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeUnSceneUnBarytonUnTexte = \lyricmode {
+  \set instrumentName = \BarytonUnName
+  \set shortInstrumentName = \BarytonUnShortName
+  
   Aah… __ _ _ _ \freestyleOn
   _ _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -134,6 +143,9 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
 }
   
 ActeUnSceneUnSopranoUnTexte = \lyricmode {
+  \set instrumentName = \SopranoUnName
+  \set shortInstrumentName = \SopranoUnShortName
+  
   En -- dor -- mi, en -- dor -- mi_; de -- puis mi -- di.
   Non non non, noon_; __ _ il a -- vait dé -- jà pris un gnon… __ _
   Ce sont des pan -- se -- ments_; il sai -- gnait te -- lle -- ment…
@@ -186,6 +198,9 @@ ActeUnSceneUnSopranoUnTexte = \lyricmode {
 }
 
 ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
   Co -- mment \dash est -- il_?
   Aah_! __ _ Vous l'a -- vez a -- sso -- mé_!
   Aah_! __ _ Vous l'a -- vez ba -- illo -- né_!
@@ -226,6 +241,9 @@ ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
 %------------------------------------------------------------------%
 
 ActeUnSceneUnBisBarytonUnTexte = \lyricmode {
+  \set instrumentName = \BarytonUnName
+  \set shortInstrumentName = \BarytonUnShortName
+  
   Ma -- jes -- té, \leftSyl —_si je puis me per -- me -- ttre_— 
   \dash suis -- je donc le seul __ _ _ é -- tran -- ger 
   que vous a -- yez ja -- mais ren -- con -- tré_?
@@ -245,6 +263,9 @@ ActeUnSceneUnBisBarytonUnTexte = \lyricmode {
 }
 
 ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
   Un é -- tran -- ger_! En nos murs_!
   Un é -- tran -- ger_! Sous ce toït_!
   Un é -- tran -- ger_! __ _ _
@@ -266,6 +287,9 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%  Deuxième  Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
+  \set instrumentName = \SopranoDeuxName
+  \set shortInstrumentName = \SopranoDeuxShortName
+  
 	Mmm… __ _ _ _ _ _ _ _ _ _ _ _ _ _
 	Mmm… __ _ _ _ _ _ _ _ _ _ _ _ Mm… A -- _ mour… __ _
 	Ma main n'a pas a -- ssez de doigts
@@ -320,6 +344,9 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
 }
 
 ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
 	Tou -- jours ces pro -- blè -- mes de res -- pon -- sa -- bi -- li -- té;
 	ma chè -- re, très __ _ chère é -- pou -- se…
 	Oui, oui_?
@@ -355,6 +382,9 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%% Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeUnSceneTroisTenorTexte = \lyricmode {
+  \set instrumentName = \TenorName
+  \set shortInstrumentName = \TenorShortName
+  
   É -- tran -- ger…
   É -- tran -- ger, é -- tran -- ger_!
   Le Roi vou -- drait sa -- voir si vous pré -- fé -- rez
@@ -387,6 +417,9 @@ ActeUnSceneTroisTenorTexte = \lyricmode {
 }
 
 ActeUnSceneTroisBarytonUnTexte = \lyricmode {
+  \set instrumentName = \BarytonUnName
+  \set shortInstrumentName = \BarytonUnShortName
+  
   Il hé -- si -- te peut -- être à me brû -- ler vif_;
   ou à me con -- ge -- ler, puis bri -- ser mon corps en pu -- blic…
   
@@ -411,6 +444,9 @@ ActeUnSceneTroisBarytonUnTexte = \lyricmode {
 %------------------------------------------------------------------%
 
 ActeUnSceneTroisBisBarytonDeuxTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
   Mmm… __ _ _ _ _ _ _ _
   \leftSyl …_mon Dieu… Dieu_!… Dieu…
   Dieu, Dieu. Vous tom -- bez bien, très bien_;
@@ -428,6 +464,9 @@ ActeUnSceneTroisBisBarytonDeuxTexte = \lyricmode {
 }
 
 ActeUnSceneTroisBisContraltoTexte = \lyricmode {
+  \set instrumentName = \ContraltoName
+  \set shortInstrumentName = \ContraltoShortName
+  
   Un sou -- ci, mon a -- mi_?
   Un in -- stant, s'il vous plaît…
   Vous ê -- \dash tes -- vous ré -- a -- bo -- nné
@@ -453,6 +492,9 @@ ActeUnSceneTroisBisContraltoTexte = \lyricmode {
 %------------------------------------------------------------------%
 
 ActeUnSceneTroisTerSopranoUnTexte = \lyricmode {
+  \set instrumentName = \SopranoUnName
+  \set shortInstrumentName = \SopranoUnShortName
+  
 	\leftSyl 
   …_Et ce soir, et ce soir, que de -- vient vo -- tre mé -- moire_?
   Le sou -- ve -- nir to -- tal se pro -- vo -- que sou -- vent
@@ -474,6 +516,9 @@ ActeUnSceneTroisTerSopranoUnTexte = \lyricmode {
 }
 
 ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
+  \set instrumentName = \BarytonUnName
+  \set shortInstrumentName = \BarytonUnShortName
+  
 	Pas mieux __ _ que cet a -- près_- mi -- di.
   Vous au -- ssi, vous vou -- lez me ta -- per, me tu -- er_?
   
@@ -497,6 +542,9 @@ ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%  Quatrième  Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeUnSceneQuatreSopranoDeuxTexte = \lyricmode {
+  \set instrumentName = \SopranoDeuxName
+  \set shortInstrumentName = \SopranoDeuxShortName
+  
   É -- tran -- ger, vo -- tre tra -- chée __ _ \dash est -- e -- lle nou -- ée_?
   Vo -- tre bou -- _ che ti -- re -- bou -- cho -- nnée_?
   Vo -- tre go -- rge, en -- gor -- gée, vo -- tre glotte… __ _
@@ -533,6 +581,9 @@ ActeUnSceneQuatreSopranoDeuxTexte = \lyricmode {
 }
 
 ActeUnSceneQuatreBarytonUnTexte = \lyricmode {
+  \set instrumentName = \BarytonUnName
+  \set shortInstrumentName = \BarytonUnShortName
+  
   Un ho -- mme qui va mou -- rir et qui par -- le trop
   est soit soûl, soit fou…
   Je ne sais pas, je ne sais pas… Peut -- ê -- tre par -- ce que
@@ -563,6 +614,9 @@ ActeUnSceneQuatreBarytonUnTexte = \lyricmode {
 }
 
 ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
   Mais_! __ _ Pas du tout_! Du tout_! Non, non_; je n'ai pris
   au -- cu -- ne dé -- ci -- sion.
   Mais pour l'in -- stant, rien n'est dé -- ci -- dé.
@@ -596,6 +650,9 @@ ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
 }
 
 ActeUnSceneQuatreTenorTexte = \lyricmode {
+  \set instrumentName = \BarytonDeuxName
+  \set shortInstrumentName = \BarytonDeuxShortName
+  
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- té_;
   or -- do -- nnez, or -- do -- nnez, or -- do -- nnez_;
   j'o -- bé -- i -- rai, j'o -- bé -- i -- rai, j'o -- bé -- i -- rai_!
@@ -620,6 +677,9 @@ ActeUnSceneQuatreTenorTexte = \lyricmode {
 }
 
 ActeUnSceneQuatreContraltoTexte = \lyricmode {
+  \set instrumentName = \ContraltoName
+  \set shortInstrumentName = \ContraltoShortName
+  
   Oui_? Fâ -- cheux, très __ _ fâ -- cheux_; ex -- trê -- me -- ment fâ -- cheux.
   Hmm… A -- dre -- ssez vo -- tre re -- quête au pla -- fond et é -- cou -- tez
   ré -- pon -- dre vo -- tre cœur…

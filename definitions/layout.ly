@@ -68,15 +68,18 @@ includeLayout = \layout {
     \remove "Metronome_mark_engraver"
     \accepts "TopLine"
     \override RehearsalMark #'side-axis = #Y
-    \override RehearsalMark #'direction = #UP
-    \override RehearsalMark #'extra-offset = #'(0.0 . 0.0 )
-    \override RehearsalMark #'font-size = #10
-    \override RehearsalMark #'self-alignment-X = #left
     \override RehearsalMark #'direction = #DOWN
+    \override RehearsalMark #'outside-staff-priority = #900
+    \override RehearsalMark #'self-alignment-X = #left
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #DOWN
+    \override TextScript    #'outside-staff-priority = #900
   }
 
+  \context {
+    \Lyrics
+    \remove "Instrument_name_engraver"
+  }
 %% Look and feel --------------------------------------------------%
   \context {
     \Score
@@ -149,8 +152,16 @@ includeLayout = \layout {
     \override RehearsalMark #'font-size = #4
     %\override TimeSignature #'X-extent = #'(0 . 2)
   }
+%%-----------------------------------------------------------------%
+}
 
-%% Livret layout  -------------------------------------------------%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Libretto Layout %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+includeLivretLayout = \layout {
+  indent = 2.0\cm
+  
+%% Special contexts  ----------------------------------------------%
   \context {
     \ChoirStaff
     \type "Engraver_group"
@@ -172,6 +183,8 @@ includeLayout = \layout {
     \remove "Clef_engraver"
     \remove "Ottava_spanner_engraver"
     \remove "Bar_engraver"
+    \remove "Instrument_name_engraver"
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1 )
   }
   \context {
     \Voice
@@ -211,6 +224,63 @@ includeLayout = \layout {
   \context {
     \Score
     \accepts "InvisibleChoirStaff"
+  }
+  
+%% Text inclusion -------------------------------------------------%
+  \context {
+    \type "Engraver_group"
+    \name "TopLine"
+    \consists "Output_property_engraver"
+    \consists "Axis_group_engraver"
+    \consists "Script_engraver"
+    \consists "Dynamic_engraver"
+    \consists "Mark_engraver"
+    \consists "Text_engraver"
+    \consists "Text_spanner_engraver"
+    \consists "Metronome_mark_engraver"
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
+    \override RehearsalMark #'side-axis = #Y
+    \override RehearsalMark #'direction = #DOWN
+    \override RehearsalMark #'outside-staff-priority = #900
+    \override RehearsalMark #'self-alignment-X = #left
+    \override MetronomeMark #'side-axis = #Y
+    \override MetronomeMark #'direction = #DOWN
+    \override TextScript    #'outside-staff-priority = #900
+  }
+  \context {
+    \Score
+    \remove "Mark_engraver"
+    \remove "Metronome_mark_engraver"
+    \accepts "TopLine"
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    \override RehearsalMark #'side-axis = #Y
+    \override RehearsalMark #'direction = #DOWN
+    \override RehearsalMark #'outside-staff-priority = #900
+    \override RehearsalMark #'self-alignment-X = #left
+    \override MetronomeMark #'side-axis = #Y
+    \override MetronomeMark #'direction = #DOWN
+    \override TextScript    #'outside-staff-priority = #900
+  }
+  
+  \context {
+    \Lyrics
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1 )
+    \override InstrumentName #'font-family = #'sans
+    \override InstrumentName #'font-series = #'bold
+    \override InstrumentName #'font-family = #-12.6
+    \override InstrumentName #'extra-X-extent = #'(0 . 2 )
+    \override InstrumentName #'extra-X-extent = #'(-1 . 1 )
+  }
+
+%% Additional tweaks  ---------------------------------------------%
+  \context {
+    \Score
+    \override BarNumber #'transparent = ##t
+  }
+  \context {
+    \TopLine
+    \remove "Metronome_mark_engraver"
   }
 %%-----------------------------------------------------------------%
 }

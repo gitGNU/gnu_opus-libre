@@ -8,9 +8,9 @@
 \include "italiano.ly"
 
 BarytonUn= {
-  \set Staff.instrumentName = \markup { \hcenter-in #27.5 \BarytonUnName }
-  \set Staff.shortInstrumentName = \BarytonUnShortName
-  \set Staff.midiInstrument = "voice oohs"
+  \set Staff . instrumentName = \markup { \hcenter-in #27.5 \BarytonUnName }
+  \set Staff . shortInstrumentName = \BarytonUnShortName
+  \set Staff . midiInstrument = "voice oohs"
   \clef bass
 }
 

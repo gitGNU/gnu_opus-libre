@@ -1355,6 +1355,7 @@ ActeUnSceneTroisMainGauche = {
     r <fad si red> r |
     r8 <mi la dod> r <fa la re> <lab reb fa>4 |
     << sib2. \\ {
+      %FIXME: unwanted natural here.
     si,!8. si16~ si8 si si si }>>
     \repeat tremolo 12 {sib32 mib}
     si!8.  si16~ si8 si si si |

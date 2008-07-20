@@ -12,7 +12,7 @@
 %                                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Noir = \markup { \smallCaps "Noir."}
+Noir = \markup { \larger \rounded-box \smallCaps "Noir."}
 
 MmJeu = "Même jeu."
 
@@ -92,6 +92,12 @@ ActeUnSceneUnE = "Il tourne la tête vers la droite : même jeu."
 
 ActeUnSceneUnF = "Puis vers la gauche : même jeu, et ainsi de suite..."
 
+ActeUnSceneUnFF = "Il s'active de plus en plus, produisant de ce fait
+des cris variés et improbables."
+
+ActeUnSceneUnFFF = "En se débattant, il en vient à s'assener un coup
+dans l'entrejambe, et pousse un long cri plaintif et aigu."
+
 ActeUnSceneUnG = "Épuisé, il finit par s’affaler sur le lit."
 
 ActeUnSceneUnH = "Entrent le Roi et le Docteur, conversant avec agitation."
@@ -154,31 +160,31 @@ ActeUnSceneUnBisE = "L’Étranger, qui pendant ce temps est parvenu
 
 %%%%%%%%%%%%%%%%%%%%%%  Deuxième Tableau  %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ActeDeuxInterludeUnA = "La lumière monte dans le silence. La scène
+InterludeUnA = "La lumière monte dans le silence. La scène
 reste déserte un bref instant, puis Dieu entre
 au moment où la musique commence. D’allure
 quelconque, il est habillé en jardinier."
 
-ActeDeuxInterludeUnB = "Il parcourt la scène, inspectant le décor de
+InterludeUnB = "Il parcourt la scène, inspectant le décor de
 papier , puis s’arrête devant les plantes à
 l’avant-scène."
 
-ActeDeuxInterludeUnC = "Il commence à en tailler
+InterludeUnC = "Il commence à en tailler
 certaines à l’aide de son sécateur ,
 méticuleusement."
 
-ActeDeuxInterludeUnD = "Puis soudain, après un
+InterludeUnD = "Puis soudain, après un
 instant de réflexion, il déchiquette une plante,
 d'un geste délibérément maladroit."
 
-ActeDeuxInterludeUnE = "Il répète ensuite ce même jeu, sur l’une ou l’autre
+InterludeUnE = "Il répète ensuite ce même jeu, sur l’une ou l’autre
 plante, toujours très calmement."
 
-ActeDeuxInterludeUnF = "À la fin de l’interlude orchestral, visiblement
+InterludeUnF = "À la fin de l’interlude orchestral, visiblement
 satisfait, il contemple le plateau jonché de
 débris informes..."
 
-ActeDeuxInterludeUnG = "puis s’éloigne tranquillement,
+InterludeUnG = "puis s’éloigne tranquillement,
 tandis que la Reine entre par l’autre côté,
 perdue dans ses pensées, un coffret de bijoux
 entre les mains."
@@ -186,17 +192,17 @@ entre les mains."
 %------------------------------------------------------------------%
 
 ActeUnSceneDeuxA = "Elle n’achève pas sa phrase, apercevant le
-Roi qui entre par l’autre côté."
+Roi qui entre par l’autre côté sans la voir."
 
 ActeUnSceneDeuxB = "Le Roi reste figé un temps ; puis,
 manifestement embarrassé..."
 
-ActeUnSceneDeuxC = "Elle   réfléchit."
+ActeUnSceneDeuxC = "La Reine réfléchit."
 
-ActeUnSceneDeuxD = "Il sort de sa poche un collier de pierres
-précieuses, en récompense, et va pour le lui donner..."
+ActeUnSceneDeuxD = "Ravi, le Roi sort de sa poche un collier de pierres
+précieuses, et va pour le lui donner en récompense..."
 
-ActeUnSceneDeuxE = "mais s'interrompt, soudain très inquiet."
+ActeUnSceneDeuxE = "mais il interrompt son geste, soudain très inquiet."
 
 ActeUnSceneDeuxF = "Il s’interrompt, se rendant compte de l’idiotie
 de sa répétition (il a toujours le collier à la
@@ -224,10 +230,12 @@ ActeUnSceneTroisF = "Le Chef de la Garde se démène, agite les bras..."
 
 ActeUnSceneTroisG = "et retrouve tout d'un coup sa désinvolture."
 
-ActeUnSceneTroisH = "Devant la mine déconfite du Chef, l'Étranger
+ActeUnSceneTroisH = "Le Chef, soudain pensif."
+
+ActeUnSceneTroisI = "Devant la mine déconfite du Chef, l'Étranger
 s'approche de lui à son tour, comme pour le consoler."
 
-ActeUnSceneTroisI = "La lumière s'éteint sur le Chef, laissant un
+ActeUnSceneTroisJ = "La lumière s'éteint sur le Chef, laissant un
 instant l'Étranger seul en scène, figé."
 
 %------------------------------------------------------------------%
@@ -289,37 +297,84 @@ ActeUnSceneQuatreD = "L'Étranger reste silencieux."
 
 ActeUnSceneQuatreE = "L'Étranger continue, pour lui-même..."
 
+ActeUnSceneQuatreF = "Le Roi soupire sombrement."
+
+ActeUnSceneQuatreG = "Regard rêveur et émerveillé de la Reine."
+
+ActeUnSceneQuatreH = "Elle porte les mains à son collier, avec
+un effroi soudain."
+
+ActeUnSceneQuatreI = "L'Étranger fait mine de retrouver la mémoire..."
+
+ActeUnSceneQuatreJ = "Il se verse à boire, et poursuit
+sur un ton anodin."
+
+ActeUnSceneQuatreK = "Il repose son verre dans un silence glacial."
+
+ActeUnSceneQuatreL = "Entre Dieu."
+
+ActeUnSceneQuatreM = "Dieu va pour sortir, mais le Roi le rattrape."
+
+ActeUnSceneQuatreN = "Entre le Chef. On sent le Roi tenté d'expédier
+Dieu au cachot, mais un regard de ce dernier lui fait perdre
+contenance."
+
+ActeUnSceneQuatreO = "Le Chef entraîne l'Étranger dans la coulisse.
+Dieu, au bout d'un instant, désoeuvré, finit par sortir
+de l'autre côté."
+
+ActeUnSceneQuatreP = "Seuls restent en scène le Roi et la Reine,
+qui s'attablent pour finir leur dîner."
+
+ActeUnSceneQuatreQ = "Elle désigne d'un geste désinvolte le menton
+du Roi... au demeurant dissimulé sous une imposante barbe."
+
+ActeUnSceneQuatreR = "Dans la salle (ou l'orchestre), on retrouve le
+Chef de la Garde, qui emmène l'Étranger au cachot."
+
+ActeUnSceneQuatreS = "Soudain l'Étranger s'immobilise."
+
+ActeUnSceneQuatreT = "Le Chef recule aussitôt, et se protège
+avec ses bras."
+
+ActeUnSceneQuatreU = "L'Étranger tourne les talons et se met en chemin."
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                             ACTE II                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 %%%%%%%%%%%%%%%%%%%%%%  Premier Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ActeDeuxSceneUnA = ""
+
+
+%------------------------------------------------------------------%
+
+ActeDeuxSceneUnBisA = ""
 
 %%%%%%%%%%%%%%%%%%%%%%  Deuxième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
-ActeDeuxSceneDeuxAAA = "Dans le noir apparaît à nouveau la machine
+ActeDeuxSceneDeuxA = "Dans le noir apparaît à nouveau la machine
 de l'Étranger. La Reine est toujours à pied
 d'oeuvre, en silence, comme si elle n'avait
 cessé de s'y affairer pendant la scène
 précédente."
 
-ActeDeuxSceneDeuxA = "Soudain, sous l'effet d'une de ses
+ActeDeuxSceneDeuxB = "Soudain, sous l'effet d'une de ses
 manipulations, la machine esquisse un
 mouvement, ponctué par l'orchestre."
 
-ActeDeuxSceneDeuxB = "La lumière diminue sur la Reine, sans
+ActeDeuxSceneDeuxC = "La lumière diminue sur la Reine, sans
 toutefois s'éteindre complètement. Sur scène,
 on retrouve l'Étranger, au cachot ; on le voit
 soit par une fenêtre ou un soupirail, soit par
 un mur absent."
 
-ActeDeuxSceneDeuxC = "Tout au long de la scène, chacun des
+ActeDeuxSceneDeuxD = "Tout au long de la scène, chacun des
 personnages se trouvera ainsi dans un espace
 scénique différent, que la lumière délimitera à
 chaque fois qu'il prendra la parole."
 
-ActeDeuxSceneDeuxD = "Le Roi est sur un lit d'hôpital, maintenu par le
+ActeDeuxSceneDeuxE = "Le Roi est sur un lit d'hôpital, maintenu par le
 Docteur."
 

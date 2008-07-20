@@ -66,6 +66,9 @@ ActeDeuxSceneTroisTitre = \markup {
   	\fill-line { \center-align {	\fontsize #6 \SceneTroisTitreTexte " "}}
 }
 
+Interlude = \markup {
+\fill-line { \center-align {\fontsize #6 \InterludeTitreTexte }}}
+
 Separateur = \markup {
 	\fill-line { \center-align {\fontsize #6 " " "***" " "}}
 }
