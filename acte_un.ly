@@ -348,7 +348,7 @@ ActeDeuxSceneTrois = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-showLastLength = s1*40
+%showLastLength = s1*40
 \book {
   \header {
 	  title = \OperaTitre
@@ -357,19 +357,19 @@ showLastLength = s1*40
 	  composer =  \OperaPartition
     tagline = \OperaNotice
   }
-%
+  %{
   \score {
 	  \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %
+  } %{
   \score {
       \ActeUnSceneUnBis
       \header {
@@ -435,6 +435,6 @@ showLastLength = s1*40
     \header {
       piece = \ActeDeuxSceneTroisTitre
     }
-  } %
+  } %}
 %}
 }

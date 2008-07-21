@@ -77,7 +77,7 @@ ActeUnSceneUnAAA = "La lumière, montant avec la musique,
 délimite bientôt une cellule étroite..."
 
 ActeUnSceneUnA = "... dans
-laquelle se trouve l’Étranger , allongé sur un
+laquelle se trouve l’Étranger, allongé sur un
 austère lit d’hôpital. Ses jambes sont
 entravées par une lanière, et sa tête disparaît
 sous des bandelettes."
@@ -92,6 +92,8 @@ ActeUnSceneUnE = "Il tourne la tête vers la droite : même jeu."
 
 ActeUnSceneUnF = "Puis vers la gauche : même jeu, et ainsi de suite..."
 
+%FIXME: variable names need some reordering.
+
 ActeUnSceneUnFF = "Il s'active de plus en plus, produisant de ce fait
 des cris variés et improbables."
 
@@ -101,6 +103,8 @@ dans l'entrejambe, et pousse un long cri plaintif et aigu."
 ActeUnSceneUnG = "Épuisé, il finit par s’affaler sur le lit."
 
 ActeUnSceneUnH = "Entrent le Roi et le Docteur, conversant avec agitation."
+
+ActeUnSceneUnHH = "Interloqué, l'Étranger bafouille."
 
 ActeUnSceneUnI = "Le Roi tente d’intervenir..."
 

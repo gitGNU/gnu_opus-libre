@@ -17,60 +17,58 @@ BarytonUn= {
 ActeUnSceneUnBarytonUn = { \BarytonUn
   \relative {
     \repeat unfold 6 { R2*2 R2. }
-    r4 do2. sib8 do~do2 |
-    r8 do~do16 r r8 do4~do8 r | sib4 do2 |
-    r4 do do16 r sib8~sib8. do32 sib |do4 do16 sib sib do~do4~|
-    do8 r r4 r8 \t {la16 do sib} mib4~| 
-    mib8 reb32 sib16. r16 r32 do sol8~sol4~|sol2 fa8 sol~sol4~|
-    sol8 r fa4. sol8~|sol4 r \t {do8 re! do} \t {re do re}|
-    do2.\startTrillSpan  |
-    do8\stopTrillSpan r r4 \ttt {lab16 sib reb mib sol, fa}|
-    do8 r r4 \ttt {fa16 sol sib do fa, re!}|
-    do8 r r \t {do16 do do} \t {mib mib mib} \t {reb reb reb}|
-    fad16[ r fad fad] sol fad fad la fad fad do fad |
-    do' do re do do mib do do fa! do fad, do' |
-    fa!8 fa16 do fad, do' fa8 fa16 do fad, do' |
-    r4 fad,2\glissando | sol'1~sol2~sol8~ sol|
-    R1 si,4 la sol | fad sol8 fad sol la |  sib2~ sib8 r r4 |
-    la sol fa! | mi fa8 mi fa sol | 
+    r4 do2. \mp ( \< sib8 \> do~ \ten do2 \! ) |
+    r8 do \p \< ~do16 -> \sfz r r8 do4 \p \< ~ do8 -> \sfz r | sib4-> \f ( \> do2 \p ) \> |
+    r4 \! do \< do16 \sfz ->-. r sib8 -- ( ~sib8. do32 sib |do4 \> ) do16 ( sib ) sib ( do )~do4~|
+    do8 \! r r4 r8 \t { \ind #"dolente" la16 \mf \< ( do sib} mib4 \! ~| 
+    mib8 ) reb32 -> ( \> sib16. ) \! r16 r32 do -> ( \> sol8 ) \!~sol4~| \ten sol2 fa8 -- ( sol~sol4~|
+    sol8 ) r \ind #"dolce" fa4. -- ( sol8~|sol4 ) r \t {do8 \pp ( re! do} \t {re do re}|
+    do2. \< \startTrillSpan  |
+    do8-> ) \sfz \stopTrillSpan r r4 \ttt {lab16 ( \< sib reb mib \f \> sol, fa}|
+    do8 -- ) \! r r4 \ttt {fa16 ( \< sol sib do \! \> fa, re!}|
+    do8 -- ) \! r r \t {\ind #"secco" do16 \mp -> do do} \t {mib -> mib mib} \t {reb -> reb reb}|
+    fad16[ \fp ->-- r fad-. \p fad-. ] sol( fad-.) fad-. la( fad-.) \< fad-. do-- fad-. |
+    do'-- do-. re( do-.) do-. mib( do-.) do-. \! fa!-> do-. fad,-. do'-. |
+    fa!8->-- fa16-> do-. fad,-. do'-. fa8->-- fa16-> \< do-. fad,-. do'-. \! |
+    r4 fad,2 ( \ff \> \glissando | sol'1 \p \< ~sol2~sol8~ sol-> \sfz )|
+    R1 \ind #"semplice" si,4( \p la sol | fad) sol8( \> fad sol la | sib2~ sib8 \! ) r r4 |
+    la( \> sol) \! fa!( \> | mi) \! fa8( \> mi) fa( sol) | 
     
     % Entrée du Baryton 2 et de la Soprano 1
     
-    lab2 re,4 r | R1*5 |
-    r4 fa do2. r4 | R1*2 | 
-    r4 fad do2. r4 | R1*3 |
-    r4 fad dod2. r4| R1*2 R1.*3 |
-    r4 sol'?2 re4 | r4 sol fa8 sol~sol4 r2 | sol1 r2 | R1.*2 |
+    lab2 \pp \glissando ( re,4 ) r | R1*5 |
+    r4 fa( \pp \glissando do2.) r4 | R1*2 | 
+    r4 fad( \glissando do2.) r4 | R1*3 |
+    r4 \ind #"poco più" fad( \glissando dod2.) r4| R1*2 R1.*3 |
+    r4 sol'?2 \mp ( re4) | r4 sol \mf ( fa8-- sol~sol4 ) r2 | \ten sol1-- \f r2 | R1.*2 |
     
     %%% Duo Soprano1/Baryton1 %%%
     
     R1 R2. |
-    r4 r8 mi r8 sol4 r8 | R1 |
-    r4 do, r8 do16 do \t { dod8 dod dod } | mi8 r r4 r2 | 
-    la8 sol16 r fa8 mi16 r fad mi fad sold sib4 | R2.
-    r4 sib16 sib8 sib16 sib sib r mi,32 mi sol8 mi16 r | R2. |
-    r4 \t { mi8 sol fa} sib4 r | R2. |
-    r2 \t { lad4 dod si } |
+    r4 r8 mi-- \mf r8 sol4-- r8 | R1 |
+    r4 do,-- r8 do16 do \t { dod8 ( dod dod } | mi8 ) r r4 r2 | 
+    la8( sol16-.) r fa8( mi16-.) r fad( mi fad sold sib4--) | R2.
+    r4 sib16-. sib8-. sib16-. sib-. sib-. r mi,32( mi sol8-- mi16) r | R2. |
+    r4 \t { mi8( \mf \> sol fa} sib4) \! r | R2. |
+    r2 \t { lad4( \< dod si } |
     
-    mi2 r4 | R1*5 | R2.*3 |
+    mi2) \f r4 | R1*5 | R2.*3 |
     R1*6 |
-    R1*2 R2. r2 r8 do, | \t {sib'4 do,8~} do r r2 |
-    do8 sib'4 do,8 r16 do do do | mi 4. r8 r16 mi8 mi16 mi mib mib sol~ |
-    sol r16 sol8 sol sol \t {fad fad fad } sib4. r8 r2 |
+    R1*2 R2. r2 r8 do,( \mp | \t {sib'4-- do,8~} do ) r r2 |
+    do8 ( sib'4 -- do,8 ) r16 do ( \< do do | mi4. \! ) r8 r16 mi8 -- \( mi16 \< mi mib mib sol \! ~ |
+    sol r16 sol8-- \mf sol-- sol-- \t {fad( \> fad fad } sib4. \! ) \) r8 r2 |
     R2. R1 R2. R1 R2. R1 R2. R1 R2. R2 |
-    R2. R1 | r8 mib,16. mib32 sol8 r r mib16. mib32 sol8 r | R2 | r4 r8 si16. si32|
-    re2 si8 r si8. si16 | re2 si8 r r4 |
-    si8 r si r sib r sib r | re2 si!8 r r4 |
-    r2 r4 re8. re16 | dod2 re8 r re8. re16 | dod2 re8 r r4 |
-    do!8 r do r si r si r | dod2 si8 r r4 |
-    r2 r4 do!8. do16 | reb2 do8 r do8. do16 | reb2 do8 r r4 |
-    r2 r4 re!8. re16 | reb2 do8 r do8. do16 | reb2 do8 r do8. do16 |
-    reb2 do8 r r4 | r2 r4 do8. do16 | reb2 do8 r r4 | R1*5 |
-    
+    R2. R1 | r8 mib,16.-- \mp mib32-. sol8 -.-- r r mib16.-- mib32-. sol8 -.-- r | R2 |
+    r4 r8 si16.-. \f si32-. |
+    re2-- ( si8) r si8.-. si16-. | re2-- ( si8) r r4 |
+    si8-. r si-. r sib-. r sib-. r | re2-- ( si!8 ) r r4 |
+    r2 r4 re8. re16 | dod2-- ( re8 ) r re8. re16 | dod2-- ( re8 ) r r4 |
+    do!8-. r do-. r si-. r si-. r | dod2-- ( si8 ) r r4 |
+    r2 r4 do!8.\mf do16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r r4 |
+    r2 r4 re!8. re16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r do8. do16 |
+    reb2->--( do8) r r4 | sol8-> \sfz r sol-. r16 sol-. sib8-. r do8. do16 | reb2( do8) r r4 | R1*5 |
     R1*11 R1. R1*2 |
     R1 R2. R2*5 R1*4 |
-    
-    
   }
 }
 

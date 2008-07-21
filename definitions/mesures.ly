@@ -230,7 +230,9 @@ ActeUnSceneUnMesures = {
       \tempo "Allegro non troppo" 4 = 92
             R1
   \time 3/4 R2.
-  \time 4/4 R1*5
+  \time 4/4
+      \mark \markup \did \ActeUnSceneUnHH
+            R1*5
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.

@@ -135,11 +135,11 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
     
   A -- mné -- sique_?! A -- mné -- sique_?!
   
-  A -- mné -- si -- que, a -- mné -- si -- que, je suis a -- mné -- si -- que_!
-  A -- mné -- si -- que, a -- mné -- si -- que, je suis a -- mné -- si -- que_!
-  A -- mné -- si -- que, a -- mné -- si -- que_!
+  A -- mné -- si -- que,  a -- mné -- si -- que, je suis a -- mné -- si -- que_!
+  A -- mné -- si -- que,  a -- mné -- si -- que, je suis a -- mné -- si -- que_!
+  A -- mné -- si -- que,  a -- mné -- si -- que_!
+  A -- mné -- si -- que_! A -- mné -- si -- que_!
   Ex -- trê -- me -- ment a -- mné -- si -- que_! 
-  
 }
   
 ActeUnSceneUnSopranoUnTexte = \lyricmode {
