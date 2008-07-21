@@ -168,13 +168,13 @@ includeLivretLayout = \layout {
     \name "InvisibleChoirStaff"
     \alias ChoirStaff
     \remove "System_start_delimiter_engraver"
+    \override SystemStartBar #'stencil = ##f
   }
   \context {
     \Staff
     \type "Engraver_group"
     \name "InvisibleStaff"
     \alias Staff
-    \remove "Staff_symbol_engraver"
     \remove "Accidental_engraver"
     \remove "Rest_collision_engraver"
     \remove "Ledger_line_engraver"
@@ -184,7 +184,11 @@ includeLivretLayout = \layout {
     \remove "Ottava_spanner_engraver"
     \remove "Bar_engraver"
     \remove "Instrument_name_engraver"
+    \override StaffSymbol #'line-count = #1
+    \override StaffSymbol #'color = #(rgb-color 0.9 0.9 0.9) 
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1 )
+    %\consists "Hara_kiri_engraver"
+    %\override VerticalAxisGroup #'remove-empty = ##t
   }
   \context {
     \Voice
@@ -224,6 +228,7 @@ includeLivretLayout = \layout {
   \context {
     \Score
     \accepts "InvisibleChoirStaff"
+    \override SystemStartBar #'stencil = ##f
   }
   
 %% Text inclusion -------------------------------------------------%
@@ -268,7 +273,6 @@ includeLivretLayout = \layout {
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1 )
     \override InstrumentName #'font-family = #'sans
     \override InstrumentName #'font-series = #'bold
-    \override InstrumentName #'font-family = #-12.6
     \override InstrumentName #'extra-X-extent = #'(0 . 2 )
     \override InstrumentName #'extra-X-extent = #'(-1 . 1 )
   }

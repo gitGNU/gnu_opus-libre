@@ -57,6 +57,7 @@ Prologue = {
         \new Lyrics \lyricsto "tenor" { \PrologueTenorTexte }
         \new InvisibleStaff \new InvisibleVoice = "baryton" \PrologueBarytonDeux
         \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \PrologueBarytonDeux
       >>
   >>
 }
@@ -72,6 +73,7 @@ ActeUnSceneUn = {
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneUnBarytonUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeUnSceneUnBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneUnBarytonDeux
       >>
   >>
 }
@@ -85,6 +87,7 @@ ActeUnSceneUnBis = {
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneUnBisBarytonUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeUnSceneUnBisBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBisBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneUnBisBarytonDeux
       >>
   >>
 }
@@ -102,6 +105,7 @@ ActeUnSceneDeux = {
         \new Lyrics \lyricsto "soprano" { \ActeUnSceneDeuxSopranoDeuxTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeUnSceneDeuxBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneDeuxBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneDeuxBarytonDeux
       >>
   >>
 }
@@ -118,6 +122,7 @@ ActeUnSceneTrois = {
         \new Lyrics \lyricsto "tenor" { \ActeUnSceneTroisTenorTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonUn" \ActeUnSceneTroisBarytonUn
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneTroisBarytonUnTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneTroisBarytonUn
       >>
   >>
 }
@@ -131,6 +136,7 @@ ActeUnSceneTroisBis = {
         \new Lyrics \lyricsto "contralto" { \ActeUnSceneTroisBisContraltoTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonUn" \ActeUnSceneTroisBisBarytonDeux
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneTroisBisBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneTroisBisBarytonDeux
       >>
   >>
 }
@@ -144,6 +150,7 @@ ActeUnSceneTroisTer = {
         \new Lyrics \lyricsto "soprano" { \ActeUnSceneTroisTerSopranoUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonUn" \ActeUnSceneTroisTerBarytonUn
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneTroisTerBarytonUnTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneTroisTerBarytonUn
       >>
   >>
 }
@@ -163,6 +170,7 @@ ActeUnSceneQuatre = {
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneQuatreBarytonUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeUnSceneQuatreBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneQuatreBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeUnSceneQuatreBarytonDeux
       >>
   >>
 }
@@ -178,6 +186,7 @@ ActeDeuxSceneUn = {
         \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneUnSopranoDeuxTexte }
         \new InvisibleStaff \new InvisibleVoice = "contralto" \ActeDeuxSceneUnContralto
         \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneUnContraltoTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeDeuxSceneUnContralto
       >>
   >>
 }
@@ -193,6 +202,7 @@ ActeDeuxSceneUnBis = {
         \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneUnBisBarytonUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeDeuxSceneUnBisBarytonUn
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneUnBisBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeDeuxSceneUnBisBarytonUn
       >>
   >>
 }
@@ -214,6 +224,7 @@ ActeDeuxSceneDeux = {
         \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneDeuxBarytonUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeDeuxSceneDeuxBarytonUn
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneDeuxBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeDeuxSceneDeuxBarytonUn
       >>
   >>
 }
@@ -235,6 +246,7 @@ ActeDeuxSceneTrois = {
         \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneTroisBarytonUnTexte }
         \new InvisibleStaff \new InvisibleVoice = "barytonDeux" \ActeDeuxSceneTroisBarytonUn
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
+        \new InvisibleStaff \new InvisibleVoice \ActeDeuxSceneTroisBarytonUn
       >>
   >>
 }
@@ -249,7 +261,6 @@ ActeDeuxSceneTrois = {
 	  composer = \OperaPartition
     tagline = \OperaNotice
   }
-  %{
   \score {
 	  \Prologue
     \header {
@@ -279,7 +290,7 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  }
+  } %{
   \score {
     \ActeUnSceneTrois
     \header {
@@ -297,14 +308,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-  }
+  }  
   \score {
     \ActeUnSceneQuatre
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
   }
-  %}
   \score {
     \ActeDeuxSceneUn
     \header {
@@ -329,4 +339,5 @@ ActeDeuxSceneTrois = {
       piece = \ActeDeuxSceneTroisTitre
     }
   }
+  %}
 }
