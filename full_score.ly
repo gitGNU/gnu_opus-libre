@@ -7,7 +7,7 @@
 
 %%% This is the main file for the full (orchestral) score.  This version
 %%% is (obviously) not ready yet; please compile vocal_score.ly instead...
-\version "2.11.49"
+\version "2.11.52"
 %% This opéra has been coded on over several years, from version 2.9 
 %% to 2.12 -- some inconsistencies may remain through the code.
 

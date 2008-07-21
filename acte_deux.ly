@@ -9,7 +9,7 @@
 %%% piano accompaniment.  Compile it using "lilypond vocal_score.ly"
 %%% and wait a few minutes...
 
-\version "2.11.49"
+\version "2.11.52"
 %% This opéra has been coded on over several years, from version 2.9 
 %% to 2.12 -- some inconsistencies may remain through the code.
 
