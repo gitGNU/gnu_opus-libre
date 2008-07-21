@@ -381,10 +381,11 @@ ActeDeuxSceneUnJ = "La Reine reste songeuse."
 
 %------------------------------------------------------------------%
 
-ActeDeuxSceneUnBisA = "Quand la lumière revient, le Roi est en scène."
+ActeDeuxSceneUnBisA = "Quand la lumière revient, le Roi est en scène ;
+il arbore un air réjoui et guilleret."
 
-ActeDeuxSceneUnBisB = "Entre le Chef de la Garde, conduisant l'Étranger.
-Le Roi l'aborde d'un air joué."
+ActeDeuxSceneUnBisB = "Entre le Chef de la Garde, poussant l'Étranger à
+coups de pied dans l'arrière-train."
 
 ActeDeuxSceneUnBisC = "Un temps. L'Étranger reste sans voix, puis
 reprend, perplexe..."
@@ -392,11 +393,12 @@ reprend, perplexe..."
 ActeDeuxSceneUnBisD = "Il lui assène un coup de poing en plein visage ;
 le Roi s'effondre, évanoui, sous les yeux stupéfaits du Chef."
 
-ActeDeuxSceneUnBisE = "Le Chef reste sans voix, visiblement choqué."
+ActeDeuxSceneUnBisE = "Ce dernier reste sans voix, visiblement choqué."
 
 ActeDeuxSceneUnBisF = "Tentant de se reprendre, il crie."
 
-ActeDeuxSceneUnBisG = "Il se tait soudain, et regarde le Roi au sol."
+ActeDeuxSceneUnBisG = "Il s'arrête pour reprendre son souffle,
+et regarde le Roi au sol, soudainement pensif, presque fasciné."
 
 ActeDeuxSceneUnBisH = "Plus doucement, et pour lui-même."
 
@@ -416,14 +418,17 @@ et entreprend de se relever. Le Chef recule précipitamment."
 
 ActeDeuxSceneUnBisM = "Le Chef se prosterne."
 
-ActeDeuxSceneUnBisN = "L'Étranger s'interrompt, supris."
+ActeDeuxSceneUnBisN = "Le Chef interrompt l'Étranger,
+d'un quasi-aboiement."
 
-ActeDeuxSceneUnBisO = "L'Étranger lui redonne un coup de poing au
+ActeDeuxSceneUnBisO = "L'Étranger s'interrompt, supris."
+
+ActeDeuxSceneUnBisP = "L'Étranger lui redonne un coup de poing au
 visage ; le Roi s'effondre de nouveau."
 
-ActeDeuxSceneUnBisP = "Le Chef gémit piteusement."
+ActeDeuxSceneUnBisQ = "Le Chef gémit piteusement."
 
-ActeDeuxSceneUnBisQ = "Il va pour taper à nouveau le Roi, mais le
+ActeDeuxSceneUnBisR = "Il va pour taper à nouveau le Roi, mais le
 Chef le ceinture de ses bras pour l'en empêcher, et l'éloigne
 tant bien que mal."
 

@@ -74,6 +74,7 @@ includeLayout = \layout {
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #DOWN
     \override TextScript    #'outside-staff-priority = #900
+    \override TextSpanner   #'outside-staff-priority = #1000
   }
 
   \context {
@@ -251,6 +252,7 @@ includeLivretLayout = \layout {
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #DOWN
     \override TextScript    #'outside-staff-priority = #900
+    \override TextSpanner   #'outside-staff-priority = #1000
   }
   \context {
     \Score
@@ -266,6 +268,8 @@ includeLivretLayout = \layout {
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #DOWN
     \override TextScript    #'outside-staff-priority = #900
+    \override TextSpanner   #'outside-staff-priority = #1000
+    \override TextSpanner   #'direction = #DOWN
   }
   
   \context {

@@ -794,7 +794,8 @@ EntracteMesures = {
 
 ActeDeuxSceneUnMesures = { 
   \time 3/4
-      \mark \markup { \mvt Animato }
+      \mark \markup \init-did \ActeDeuxSceneUnA
+      \tempo "Animato" 4 = 92
             R2.*4
   \time 2/4 R2
   \time 3/4 R2.*2
@@ -812,8 +813,10 @@ ActeDeuxSceneUnMesures = {
   \time 3/4 R2.*2
   \time 2/4 R2
   \time 3/4 
-      \mark \markup { \mvt {\normalsize "Poco stringendo..."}}
-            R2.*3
+      \tempo "Poco stringendo..."
+            R2.*2
+      \mark \markup \did \ActeDeuxSceneUnB
+            R2.
   \time 2/4 R2
   \time 3/4 R2.*2
   \time 4/4 R1
@@ -823,7 +826,7 @@ ActeDeuxSceneUnMesures = {
   \time 2/4 R2 
   \time 3/4 R2.
   \time 4/4 R1 
-      \mark \markup { \mvt Andantino }
+      \tempo "Andantino" 4 = 108
             R1*2
   \time 3/4 R2.*4
   \time 2/4 R2
@@ -855,6 +858,26 @@ ActeDeuxSceneUnMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 R1
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneUnC
+            R2.
+  \time 4/4
+      \mark \markup \did \ActeDeuxSceneUnD
+            R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneUnE
+            R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4
+      \mark \markup \did \ActeDeuxSceneUnF
+            R1
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -862,35 +885,34 @@ ActeDeuxSceneUnMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneUnG
+            R2.*7
+      \mark \markup \did \ActeDeuxSceneUnH
+            R2.*2
   \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 4/4
+      \mark \markup \did \ActeDeuxSceneUnI
+            R1
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 3/4 R2.*9
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
-  \time 3/4 R2.
-  \time 4/4 R1
+  \time 4/4 r2
+            r2
+           _\markup \did \ActeDeuxSceneUnJ
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
   \time 2/4 R2
-  \time 4/4 R1
+  \time 4/4 r2
+            r4
+            r4
+           _\markup \Noir
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -901,14 +923,25 @@ ActeDeuxSceneUnMesures = {
 
 ActeDeuxSceneUnBisMesures = {
   \time 4/4
+      \mark \markup \init-did \ActeDeuxSceneUnBisA
       \tempo "Andante ad libitum" 4 = 76
             R1
   \time 3/4 R2.
   \time 2/4 R2
   \time 5/4
       \tempo "Presto Agitato" 4 = 192
-            R1*5/4*45
-            R1*5/4*29
+            R1*5/4*7
+      \mark \markup \did \ActeDeuxSceneUnBisB
+            R1*5/4*17
+      \mark \markup \did \ActeDeuxSceneUnBisC
+            R1*5/4*19
+      \mark \markup \did \ActeDeuxSceneUnBisD
+            R1*5/4*2
+      \mark \markup \did \ActeDeuxSceneUnBisE
+            R1*5/4*13
+      \mark \markup \did \ActeDeuxSceneUnBisF
+            R1*5/4*16
+      \mark \markup \did \ActeDeuxSceneUnBisG
       \startTxt #"molto rit."
             r1*5/4
             R1*5/4
@@ -923,17 +956,36 @@ ActeDeuxSceneUnBisMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 2/4 R2
-  \time 3/4 R2.*9
-  \time 7/4 R1*7/4*3
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneUnBisH
+            R2.*9
+  \time 7/4 R1*7/4
+            r1
+            r2
+           _\markup \did \ActeDeuxSceneUnBisI
+            r4
+            R1*7/4
   \time 3/4 R2.*7
-  \time 7/4 R1*7/4*9 
+  \time 7/4 R1*7/4
+            r2
+            r4
+            r1
+           _\markup \did \ActeDeuxSceneUnBisJ
+            R1*7/4*2
+      \mark \markup \did \ActeDeuxSceneUnBisK
+            R1*7/4*5
                   \bar "||"
   \time 3/2
+      \mark \markup \did \ActeDeuxSceneUnBisL
       \tempo "Presto subito" 2 = 52
             R1.*5
   \time 3/4
+      \mark \markup \did \ActeDeuxSceneUnBisM
       \tempo "Tempo giusto" 4 = 104
-            R2.*7
+            R2.*6
+            r2
+            r4
+           _\markup \did \ActeDeuxSceneUnBisN
   \time 2/4 R2*2
   \time 3/4 R2.*4
   \time 2/4 R2
@@ -947,7 +999,9 @@ ActeDeuxSceneUnBisMesures = {
   \time 5/8 R1*5/8
   \time 2/4 R2
   \time 3/8 R4.
-  \time 3/4 R2.*15
+  \time 3/4 R2.*14
+      \mark \markup \did \ActeDeuxSceneUnBisO
+            R2.
   \time 2/4 R2
   \time 3/8 R4.
   \time 2/4 R2
@@ -956,7 +1010,13 @@ ActeDeuxSceneUnBisMesures = {
   \time 4/4
       \tempo "Tempo primo" 4 = 192
             R1
-  \time 5/4 R1*5/4*25
+  \time 5/4 R1*5/4*3
+      \mark \markup \did \ActeDeuxSceneUnBisP
+            R1*5/4*5
+      \mark \markup \did \ActeDeuxSceneUnBisQ
+            R1*5/4*8
+      \mark \markup \did \ActeDeuxSceneUnBisR
+            R1*5/4*9
                   \bar "|."
 }
 
