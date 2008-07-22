@@ -19,61 +19,61 @@ ActeUnSceneUnSopranoUn= { \SopranoUn
     \repeat unfold 6 { R1 R2. }
     R2.*7 R1 R2.
     R1 R2.*2 R1 R2.*2 | R1*4
-    r4 sib'8 sib sib4 sib8 sib |
-    sib4 r8 reb solb, lab re,!4 | R1. |
-    r4 re8 re fa r fad4~| fad8 sib fa! fa fad fad fa fa|
-    la2~la4 r r2| r4 la fad8 fad fa fa| la2 sold4 sold|
-    \t {la sold sold} do r | r1 r4 sib8 sib|
-    mib4 sib8 sib mi,4 r8 do'| sol la mi sib' mib4 r | R1.*3 R1 R1.|
-    dod4 dod dod2 dod4 dod | dod2 r4 r8 sib re lab sol si | mi,2 r1 |
+    r4 sib'8 -. ( \mf sib-. sib4-.-- sib8-. sib-. |
+    sib4-- r8 reb-. solb,-. lab-. re,!4) | R1. |
+    r4 re8-. \( re-. fa-. r fad4--~| fad8 sib ( fa!-.) fa-. fad-. fad-. fa-. fa-.|
+    la2--~la4 \) r r2| r4 la-. fad8( fad fa fa| la2-.) sold4( sold|
+    \t {la-- sold sold} do ) r | r1 r4 sib8-. sib-.|
+    mib4-.-- sib8-. sib-. mi,4-- r8 do'-.(| sol-. la-. mi-. sib'-. mib4) r | R1.*3 R1 R1.|
+    dod4--( \f dod-- dod2-- dod4-- dod-- | dod2--) r4 r8 sib-.( \mp re-. lab-. sol-. si-. | mi,2) r1 |
     
     %%% Duo Soprano1/Baryton1 %%%
     
-    r8  \parlato { mi mi4 } r r8 sib'16 sib | sib8 sib16 sib sib8 r16 sib sib sib sib sib |
-    sib8 r r4 r2 | r8 sib16 sib do8 sib16 sib do8 r16 sib sib sib sib sib |
-    do8  r r4 r2 | r8 sib16 sib mib8 sib16 sib mib8 r16 do do do do do |
-    mib4 r r r8 sib16 sib | mib8 sib16 sib mib8 r16 reb reb reb reb reb |
-    mib4 r r r8 sib16 sib | mi!8 sib16 sib mi8 r16 re! re re re re |
-    sol2 r4 r8 sib,16 sib | mi8 do16 do fad8 r16 fad fad fad mi mi | la2 r |
+    r8  \parlato { mi mi4 } r r8 sib'16-.( \p sib-. | sib8-.-- sib16-. sib-. sib8-.--) r16 sib-.( sib-. sib-. sib-. sib-. |
+    sib8--) r r4 r2 | r8 sib16-.( \mp sib-. do8-.-- sib16-. sib-. do8-.--) r16 sib-.( sib-. sib-. sib-. sib-. |
+    do8--)  r r4 r2 | r8 sib16-.( sib-. mib8-.-- sib16-. sib-. mib8-.--) r16 do-.( do-. do-. do-. do-. |
+    mib4--) r r r8 sib16-.( sib-. | mib8-.-- sib16-. sib-. mib8-.--) r16 reb-.( reb-. reb-. reb-. reb-. |
+    mib4--) r r r8 sib16-.( \mf sib-. | mi!8-.-- sib16-. sib-. mi8-.--) r16 re!( \p re re re re |
+    sol2--) r4 r8 sib,16( \mf sib | mi8-- do16 do fad8-- r16 fad \pp fad fad mi mi | la2--) r |
     
-    r8 sol~ sol16 sib8. sol16 mi8. | r8 re re re re re \t {mi dod mi} |
-    sib4 r r2 | R1 |
+    r8 \ind #"triomphal" sol \( \f ~ sol16 sib8.---> sol16( mi8.) \) | r8 re-.( \mp \> re-. re-. re-. re-.) \t {mi( \! dod) mi(} |
+    sib4) r r2 | R1 |
     
-    fa'8 fa4 fa8 do do sol do | fa r \t {la, la la} re la re sol |
-    fa4. r8 r4 | R2.*2 | R1*6 |
+    fa'8-.( fa4-- fa8-. do-. do-. sol-. do-. | fa--) r \t {la, \( ( la la} re-.) la-. re-. sol-. |
+    fa4.-- \) r8 r4 | R2.*2 | R1*6 |
     
-    R1 r2 r4 r8 \t {sib,16 la sib} | do do sib sib do8 r16 sib do sib mib do |
-    fa4 r2 | R1 R2. R1 R2. R1 |
-    \t {sib,4 sol,8~} sol do fa mib |
-    \tt {sib' fa sib do mib} sib fa'4 mib,8 |
-    sib' lab, fa' mib \t {sib' fa do'} | \t {sib mib do} sol'2 r8 r16 sib, |
-    sib sib fa' do sib8. sib16 sib sib fa' do | 
-    sib8. sib16 mib sib mib fa sib,8 sib do16 sib do mib |
-    fa4 \t { r8 sib, reb} sib lab'16 reb, |
-    do8. reb16 reb sib lab' reb, do4~ \t {do8 reb4} |
-    la'!8. fa16 sib, reb la'4 reb,8 | mib reb mib lab |
+    R1 r2 r4 r8 \t {sib,16( \mp \< la sib} | do-. do-. sib-. sib-. do8-.--)\! r16 sib-. ( \< do-. sib-. mib-. do-. |
+    fa4--\! ) r2 | R1 R2. R1 R2. R1 |
+    \t {sib,4 \mp \(  \< \ten sol,8~} sol do fa mib |
+    \tt {sib' fa \> sib do mib} sib--( fa'4--) \! \) mib,8 \( |
+    sib' \mf \< lab, fa' mib \t {sib' fa do'} | \t {sib( \> mib do} \ten sol'2) \) \! r8 r16 sib,-.( \mp |
+    sib-. sib-. fa'-. do-. sib8.-- sib16-. sib-. sib-. fa'-. do-. | 
+    sib8.--) sib16-.( mib-. sib-. mib-. fa-. sib,8--) sib( do16 \< sib do mib |
+    fa4--) \! \t { r8 sib,( reb} sib--) lab'16-. reb,-. |
+    do8.-- reb16-. reb( sib-.) lab'-. reb,-. do4--~ \< \t {do8( reb4} |
+    la'!8.\! fa16-. sib,-. reb-. la'4--) reb,8(\< | mib reb mib lab |
     
-    sib2 r8 sib,16 sib | do4 r fa,16 fa fa8 r sol?16. sol32 |
-    si4 sol16 r sol16. sol32 | si4 sol16 r red'16. red32  |
-    fad8 re16. re32 fa8 dod16 dod | sold do! mi8 si16 r sol16. sol32 | 
-    sib2 sol8 r sol8. sol16 sib2 sol8 r r4 |
-    sol8 r sol[ r16 sol] solb8 r solb r | sib2 sol!8 r r4 | r2 r4 sold8. sold16|
-    si!2 sold8 r sold8. sold16 | si2 sold8 r r4 |
-    sold8 r sold[ r16 sold] sol8 r sol r |
-    si!2 sol!8 r r4 | r2 r4 sol8. sol16 | si2 sol8 r sol8. sol16 |
-    si2 sol8 r r4 | r2 r4 sol8. sol16 | si2 sol8 r sol8. sol16 |
-    si2 sol8. dod16 sol8. sol16 | si2 sol8 r r4 |
-    r2 r4 sol8. sol16 | si2 sol8 r dod8. dod16 | mi2 dod8[ r16 sol'] r4 |
-    R1 dod,8 r dod[ r16 dod] do8 r r4 | reb8 r reb[ r16 reb] do8 r r4 | 
-    r4 do8 r do[ r16 do] si8 r | R1*4 |
+    sib2 \f ) r8 sib,16 \p ( sib | do4) r fa,16( fa fa8) r \ind #"sotto voce" sol?16.-- sol32-. |
+    si4--( sol16) r sol16.-. sol32-. | si4--( sol16) r red'16. ( \f red32  |
+    fad8 \> re16. re32 fa8--) dod16\( \mp dod | sold do! mi8--( si16) \) r sol16. \f sol32 | 
+    sib2--( sol8) r sol8. sol16 sib2--( sol8) r r4 |
+    sol8-. r sol-.[ r16 sol-.] solb8-. r solb-. r | sib2--( sol!8) r r4 | r2 r4 sold8. sold16|
+    si!2--( sold8) r sold8. sold16 | si2--( sold8) r r4 |
+    sold8-. r sold-.[ r16 sold-.] sol8-. r sol-. r |
+    si!2( sol!8) r r4 | r2 r4 sol8. \mf sol16 | si2--->( sol8) r sol8. sol16 |
+    si2--->( sol8) r r4 | r2 r4 sol8. sol16 | si2->--( sol8) r sol8. sol16 |
+    si2--->( sol8.-.) dod16-.-> sol8. sol16 | si2--->( sol8) r r4 |
+    r2 r4 sol8. sol16 | si2( sol8) r dod8.-.\p dod16-. | mi2( dod8 ) [ r16 sol'-.->] r4 |
+    R1 dod,8-.--( r dod-.--[ r16 dod] do8-.--) r r4 | reb8-.--( r reb-.--[ r16 reb] do8-.--) r r4 | 
+    r4 do8--( \> r do--[ r16 do] si8--) \! r | R1*4 |
     
-    r8 do do do do r do do~ |do do do do do do do do | R1 |
-    r4 r8 fa do fa do do | fa4 do8 si mi si sib sib | mib4 la,8 r r2 | R1 |
+    r8 do-. ( \cmb #"mf" #"leggiero" do-. do-. do-. r do-. do->--~ |do do-. do-. do-. do-. do-. do-. do-. ) | R1 |
+    r4 r8 fa( do-.) fa( do-.) do-. | fa4--( do8-.) si-. mi-.( si-. sib-. sib-. | mib4-- la,8) r r2 | R1 |
     R1. R1*2 |
     
-    r8 sib16 sib mib8 fa16 do do8 r16 sib mib sib sol do |
-    fa,4 r2 | r8 do'16 do fa8 mib16 mib | lab8 r16 solb reb mib sib do |
-    sol!4 r | R1*2 R1*4 |
+    r8 sib16-.( \cmb #"mf" #"sempre" sib-. mib8---. fa16-. do-. do8---.) r16 sib-.( mib-. sib-. sol-. do-. |
+    fa,4--) r2 | r8 do'16( do fa8-- mib16 mib | lab8--) r16 solb( reb mib sib do |
+    sol!4--) r | R1*2 R1*4 |
   }
 }
 

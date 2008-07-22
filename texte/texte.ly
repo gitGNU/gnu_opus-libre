@@ -137,8 +137,8 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
   
   A -- mné -- si -- que,  a -- mné -- si -- que, je suis a -- mné -- si -- que_!
   A -- mné -- si -- que,  a -- mné -- si -- que, je suis a -- mné -- si -- que_!
-  A -- mné -- si -- que,  a -- mné -- si -- que_!
-  A -- mné -- si -- que_! A -- mné -- si -- que_!
+  A -- mné -- si -- que,  a -- mné -- si -- que_! A -- mné -- si -- que_! 
+  A -- mné -- si -- que_; a -- mné -- si -- que_!
   Ex -- trê -- me -- ment a -- mné -- si -- que_! 
 }
   
@@ -221,8 +221,9 @@ ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
   A -- mné -- si -- que, TRÈS a -- mné -- si -- que_; EX -- trê -- me -- ment
   a -- mné -- si -- que_! 
   A -- mné -- si -- que_; a -- mné -- si -- que_!
-  A -- mné -- si -- que_! A -- mné -- si -- que_!  zA -- mné -- si -- que…
-  tA -- mné -- sique_! __ _
+  A -- mné -- si -- que_! A -- mné -- si -- que_!
+  \leftSyl zA -- mné -- si -- que…
+  \leftSyl tA -- mné -- sique_! __ _
   
   C'est en -- nuy -- eux, très en -- nuy -- eux 
   \leftSyl 
@@ -278,10 +279,10 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
   et d'un GUA -- NO mis __ _ en -- sem -- _ ble.
   Oui… le gua -- no \leftSyl …_est e -- xa -- gé -- ré.
   Mmm… __ _ mmmh… __ _ _ mmm… __ _
-  J'é -- tu -- die un va -- ste plan de po -- ssi -- bi -- li -- tés…
+  \leftSyl J'é -- tu -- die un va -- ste plan de po -- ssi -- bi -- li -- tés…
   qui vont de la li -- ber -- té a -- bso -- lue… 
   à la mort dé -- _ fi -- _ ni -- tive.
-  Mer -- ci de ne plus m'ai -- der.
+  Mer -- ci de ne plus \leftSyl m'ai -- der.
 }
 
 %%%%%%%%%%%%%%%%%%%%%  Deuxième  Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%

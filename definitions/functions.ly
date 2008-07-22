@@ -243,6 +243,13 @@ cmb =
               #:hspace .6
               #:text #:medium #:upright texte )))
 
+bmc =
+#(define-music-function (parser location texte nuance ) 
+(string? string? )
+(make-dynamic-script 
+              (markup #:text #:medium #:upright texte 
+              #:hspace .6
+              #:dynamic nuance )))
 
 ten = 
 #(define-music-function (parser location music) (ly:music?)

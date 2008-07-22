@@ -59,12 +59,12 @@ ActeUnSceneUnBarytonUn = { \BarytonUn
     sol r16 sol8-- \mf sol-- sol-- \t {fad( \> fad fad } sib4. \! ) \) r8 r2 |
     R2. R1 R2. R1 R2. R1 R2. R1 R2. R2 |
     R2. R1 | r8 mib,16.-- \mp mib32-. sol8 -.-- r r mib16.-- mib32-. sol8 -.-- r | R2 |
-    r4 r8 si16.-. \f si32-. |
+    r4 r8 si16.-. \mf si32-. |
     re2-- ( si8) r si8.-. si16-. | re2-- ( si8) r r4 |
     si8-. r si-. r sib-. r sib-. r | re2-- ( si!8 ) r r4 |
     r2 r4 re8. re16 | dod2-- ( re8 ) r re8. re16 | dod2-- ( re8 ) r r4 |
     do!8-. r do-. r si-. r si-. r | dod2-- ( si8 ) r r4 |
-    r2 r4 do!8.\mf do16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r r4 |
+    r2 r4 do!8.\mp do16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r r4 |
     r2 r4 re!8. re16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r do8. do16 |
     reb2->--( do8) r r4 | sol8-> \sfz r sol-. r16 sol-. sib8-. r do8. do16 | reb2( do8) r r4 | R1*5 |
     R1*11 R1. R1*2 |
@@ -75,29 +75,30 @@ ActeUnSceneUnBarytonUn = { \BarytonUn
 ActeUnSceneUnBisBarytonUn = { \BarytonUn
   \relative {
     R2.*7 | R1 | R2. | R1 R2.*10 R1*2 R2
-    R2*2 do,8 do do4
-    \t {r8 do do } \t {do do do} mib do |
-    r4 do8 do | sol'4. sol | sol8 fa~ \t {fa fa fa } |
-    lab4 r r8 fa | mi mi mi sold \t { mi mi mi} | si'4 r r2 |
-    R1 R2. R2 R1 r4 r8 mi, mi mi | mi mi sol4 r8 la | la4 r8 la~|
-    \t {la4 do sib} | la r2 | R2*3 R2. R1 |
-    r8 lab r16 \parlato {lab do, si' re8} r |
+    R2*2 do,8--( \mp do-- do4--)
+    \t {r8 do( do } \t {do do do} mib-- do) |
+    r4 do8( \< do | sol'4. sol | sol8-- \> fa~ \t {fa fa fa } |
+    lab4 \! ) r r8 fa( | mi mi mi sold-- \t { mi\< mi mi} | si'4) \! r r2 |
+    R1 R2. R2 R1 r4 r8 mi,( \p mi mi | mi mi sol4--) r8 la( | la4 r8 la~|
+    \t {la4 do sib} | la--) r2 | R2*3 R2. R1 |
+    r8 lab-- r16 \parlato {lab do, si' re8} r |
     R2*3 R2.*3 |
     
     %%% Duo %%%
     
-    R1 r2 r8 do,~ \t {do do do} | do2 r |
-    \t { r8 do do} do4 r8 do4 do8 |
-    mi do sold'4 r2 |
-    r4 \t {lad8 lad lad} dod4. si8~ | si si4 si8 si lad4.~|lad2 r4 r8 lad |
-    lad lad sol2~ \t {sol8 lad sol} lad2 r |
-    R1*7 r2 r4 mi8 mi ~ | mi2 r2 |
-    r8 mi mi mi sol4. r16 sol | \t {fa4 sol fa} mi2 |
-    r8 mi mi si'~ si4 r8 si | \t {si si si} re fa,?~ \t {fa si si} re4 |
-    si8 si re fa, \t {si si si} re4~ | re8 r r mi, mi mi r mi |
-    sol16 mi mi mi mi4 r8 si'4.~ | si8 sib lab si sol4 r | R1
-    r8 r16 mi32 mi mi16 mi fa fa sol8 mi r4 | R1 
-    r8 r16 mi32 mi mi16 mi fa fa sol4. sol8 | R1*2
+    R1 r2 r8 do,( ~ \cmb #"mp" #"sostenuto" \t {do do do} | do2) r |
+    \t { r8 do( do} do4 r8 do4-- do8 |
+    mi do sold'4) r2 |
+    r4 \t {lad8( \< lad lad} dod4. \mf si8~ | si si4 si8 si-- lad4.~|lad2) r4 r8 lad( |
+    lad lad sol2~ \t {sol8\> lad sol} lad2\!) r |
+    R1*7 r2 r4 mi8( \mp mi-- ~ | mi2) r2 |
+    r8 mi( \< mi mi sol4.\! r16 sol | \t {fa4\> sol fa} mi2 \!) |
+    r8 \ind #"dolcissimo" mi \( \pp mi si'~ si4 r8 si |
+    \t {si si si} \ind #"senza cresc." re--( fa,?)~ \t {fa si si} re4-- |
+    si8 si re--( fa,) \> \t {si si si} re4--~ | re8 \! \) r r mi,--( \mp mi-- mi--) r mi( |
+    sol16-- mi mi mi mi4) r8 si'4.-- (~ | si8 sib-- lab-- si-- sol4) r | R1
+    r8 r16 mi32 \( mi mi16-- mi fa fa sol8--( mi) \) r4 | R1 
+    r8 r16 mi32 ( mi mi16-- mi fa fa sol4.-- sol8) | R1*2
     R2*4 |
   }
 }

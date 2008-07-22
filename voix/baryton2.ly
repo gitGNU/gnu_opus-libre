@@ -78,72 +78,75 @@ ActeUnSceneUnBarytonDeux = { \BarytonDeux
     %Entrée.
     
     R1*3
-    re4 sol,2 la4 | mib2. r4 | R1 |
-    re'2~re4 r8 re, mib mib fad fad | sib4 r r2 | R1 |
-    sib2~sib4 r8 re, mib mib sol sol | fad4 r r2 | R1*2|
-    fad2 re8 mi! \t {sol[ sib la]} do4 r | R1*2|
-    r4 do, si do si mi | do2 r4 re do re |
-    \t {fa8 re fa} sol2. r8 mi mi mi |
-    sold2 r8 sold sol sol | si2 r4 si sib sib | re1 r2 | R1.*2 |
+    re4-. \f sol,2->-- la4-. | mib2.-- r4 | R1 |
+    \ten re'2->-- ~re4 r8 re,-.( mib-. mib-. fad-. fad-. | sib4) r r2 | R1 |
+    \ten sib2->--~sib4 r8 re,-.( mib-. mib-. sol-. sol-. | fad4) r r2 | R1*2|
+    \ind #"meno" fad2-- re8--( mi! \t {sol\>[ sib la]} do4) \! r | R1*2|
+    r4 do,\( ( \mf si) do si mi | do2 \) r4 re-- do--( re--) \< |
+    \t {fa8--( re fa} sol2. \! --) r8 mi-.( mi-. mi-. \< |
+    sold2) \! r8 sold-.( sol-. sol-. \< | si2) \! r4 si--\< sib--( sib--) | \ten re1-- \f r2 | R1.*2 |
     
     %%% Duo Soprano1/Baryton1 %%%
     
     R1 R2. R1*5 R2. R1 R2. R1 R2. R1 |
-    R2. | R1*2 | sol,4 r r8 sib4 r8 |
+    R2. | R1*2 | sol,4-- \mf r r8 sib4-- r8 |
     R1*2 | R2.*3 R1*6 |
     R1*2 R2.*2 \repeat unfold 7 {R1 R2.} R2 | R2. R1
     
-    r8 sol16. sol32 si8 r | r sol16. sol32 si8 r | R2 |
-    r4 r8 red,16. red32 | fad2 red8 r red8. red16 | fad2 red8 r r4 |
-    red8 r red r re r re r | fad2 red8 r re8. dod16~ |
-    dod8 mi r16 mi \t {mi re mi} sol8 r mi8. mi16 |
-    sol2 mi8 r mi8. mi16 | sol2 mi8 r r4 | mi8 r mi r red r red r |
-    sol8. sol16 re'!8 sol,~sol16 sol la8 mib r |
-    dod' fad, fad sold re r fa8. fa16 |
-    lab2 fa8. si16 fa8. fa16 | lab2 fa8 r r4 |
-    fa8 r fa[ r16 fa] mi8 r mi8. mi16 |
-    lab2 fa8 r fa8. fa16 | lab2 fa8 r fa8. fa16 lab2 fa8 r r4 |
-    r2 r4 fa8. fa16 | lab2 fa8 r sib8. sib16 reb2 sib8 r sib8. sib16 | reb2 sib8 r r4 |
-    R1*2 | r2 r4 \t { r8 do do } |
+    r8 sol16.-- \mp sol32-. si8-.-- r | r sol16.-- sol32-. si8-.-- r | R2 |
+    r4 r8 red,16.-. \mf red32-. | fad2--( red8) r red8.-. red16-. | fad2--( red8) r r4 |
+    red8-. r red-. r re-. r re-. r | fad2--( red8) r re8.->-- \cmb #"ff" #"subito" dod16->--~ |
+    dod8 mi->-- r16 mi-. \t {mi--( re mi} sol8--) r mi8. \mf mi16 |
+    sol2--( mi8) r mi8. mi16 | sol2--( mi8) r r4 | mi8-. r mi-. r red-. r red-. r |
+    sol8. sol16 re'!8-> \cmb #"ff" #"subito" sol,~sol16 sol( la8-.) mib->-- r |
+    dod'->( fad,-. fad-. sold-. re->--) r fa8.\mp fa16 |
+    lab2->--( fa8.) si16-- \sfz fa8. fa16 | lab2->--( fa8) r r4 |
+    fa8-> r fa-.[ r16 fa-.] mi8-. r mi8. mi16 |
+    lab2->--( fa8) r fa8. fa16 | lab2->--( fa8) r fa8. fa16 lab2->--( fa8) r r4 |
+    r2 r4 fa8. fa16 | lab2( fa8) r sib8.-.\p sib16-. reb2( sib8) r sib8.-. sib16-. | reb2( sib8) r r4 |
+    R1*2 | r2 r4 \t { r8 do \cmb #"ff" #"subito" do } |
     
-    do4~do8 r r4 \t {re,8 re re} | mi4 r16 re re re sol8 mi' dod sib |
-    \t {sol4 sol8} lab[ re,] r4 \t {re'8 re re} | re4 r8 do, fa8. fa16 mib8 lab~|
-    lab4 fa8 r r2 | r2 r4 r8 r16 re | sol8. re16 r fa fa fa sib8 sib lab lab |
-    reb r r4 r2 | r8 do4 r8 r2 | r2 \t { re,4 dod mi} | r8 re sol4 r8 fa sib4~|
-    sib8 r r4 r2 r4 si | \t {re dod sib} mib, r |
-    r2 r4 sib'8. sib16 | re8 la r4 r2 |
-    \t {do16 do8 sol16 sol sol} \t { si4 si8 } sib16 sib sib re | R2*2 |
-    \t {r8 re si} sib8 fad sold16 la si! re r4 | R2|
+    do4~do8 r r4 \t {re,8( re re} | mi4--) r16 re re re sol8 mi'-.->( dod-. sib-. |
+    \t {sol4-- sol8} lab->-.[ re,->] ) r4 \t {re'8 \ff ( re re} | re4-- ) r8 do,-. fa8.-- fa16-. mib8-. lab->-- (~|
+    lab4 fa8-.) r r2 | r2 r4 r8 r16 re | sol8.->--( re16) r fa( fa fa sib8-- sib-- lab-- lab-- |
+    reb->--) r r4 r2 | r8 do4-- r8 r2 | r2 \t { re,4--\ff ( dod-- mi-- )} | r8 re( sol4) r8 fa( \> sib4~|
+    sib8) \! r r4 r2 r4 si ( \cmb #"p" #"semplice assai" | \t {re-- dod sib} mib,) r |
+    r2 r4 sib'8.( \cmb #"ff" #"subito" sib16 | re8->-- la) r4 r2 |
+    \t {do16-> do8-> sol16( \< sol sol} \t { si4 si8 } sib16 sib sib re \! ) | R2*2 |
+    \t {r8 re->( si} sib8-.) fad---. sold16( la si! re->--) r4 | R2|
     
-    re,8 fad~fad4 r fad | fa!8 la~ la4 r r8 la | sold sold do2 r4 | sold8 re r4 r2 |
+    re,8--( \cmb #"p" #"dolce" fad~fad4) r fad-. | fa!8--( la~ la4) r r8 la( |
+    sold\< sold \ten do2\!) r4 | sold8-.( \p re-.) r4 r2 |
   }
 }
 
 ActeUnSceneUnBisBarytonDeux = { \BarytonDeux
   \relative {
    R2.*7
-   r8 re  re re re4 \t {r8 fa, lab} | mib2 r4 |
-   r8 re' re re re4 \t {r8 si sold} | dod2 r4 |
-   r \t { re re re} fa4. re~ | re8 r r4 r8
-   \parlato {re, re4 } r4 mi8 sold |
-   R2.*2 r2 sol8 si | R2.*2 | r2 r4 sib | re2. r4 |
+   r8 re--( \cmb #"f" #"molto" re-- re-- re4--) \t {r8 fa,-.( lab-.} | mib2--) r4 |
+   r8 re'--( re-- re-- re4--) \t {r8 si-.( sold-.} | dod2--) r4 |
+   r \t { re( re re} fa4. \ten re~ | re8) r r4 r8
+   \parlato {re, re4 } r4 mi8 \mf \<  sold \! |
+   R2.*2 r2 sol8 \mp \< si \! | R2.*2 | r2 r4 sib-- \pp | \ind #"falsetto" re2. r4 |
    R2*4 R2. R2 R2. R2 R2.*2 R1 
-   r8 r16 sib sib8. mi,16 mi4 r |
-   r16 reb reb reb \t { reb8. reb16 reb8 } \t { fa fa mi } |
-   \t {lab4 lab8 } \t {sol sol sol} | si4. reb,8 r2 |
+   r8 r16 \ind #"vivo" sib-. \f sib8.-> mi,16-. mi4-> r |
+   r16 reb reb reb \t { reb8.-> reb16-. reb8-. } \t { fa--( fa mi) } |
+   \t {lab4->-- lab8 } \t {sol--( sol \< sol)} | si4.->-- ( \! reb,8) r2 |
    R2.*2 R2*2 R2.
-   r16 sib' sib8 mi, r | r16 reb do do do do reb do | mi8 r r16 mi8. |
-   mib16 sol8. r8 sol solb4 | sib16 do,8 do16~ do do8 mi16~ mi4 do8 r | R2. R2
-   r4 sib' | r8 sol r16 sib mib,8 | r4 r8 red red8. mi16 | mi8 si r2 | R2.
+   r16 sib'-. \f sib8-> mi,-- r | r16 reb-.( do-. \< do-. do-. do-. reb-. do-. | mi8->) \! r r16 mi8.-- |
+   mib16->( sol8.) r8 sol( solb4) | sib16->( do,8) do16~ do do8 mi16-- (~ mi4 do8) r | R2. R2
+   r4 sib'-- \mp | r8 sol-. r16 sib-. mib,8-. | r4 r8 red-. \f red8.-. mi16-. | mi8--( si) r2 | R2.
    
    %%% Duo %%%
    
-   R1*5 re1~ | re4 r r2 | r4 r8 re sol2~ sol4 r r2 |
-   r2 mib | re r4 re8 re | re2 r4 r8 re | \t {fa4 re8} \t {re4 re8} 
-   re16 re re re re4 | r8 re re4 r8 re16 re la'8 re, |
-   \t {re la' re,} la'2 r4 |
-   \t {r8 fad la } fa8. fa16~ fa8 mib~ mib16 fad8. | re2 r |
-   R1*16 r4 r8 si | \t {si r16 lad lad8} lad r | r4 \t {r4 dod8 } sold r r4 |
+   R1*5 re1 \p ~ | re4 r r2 | r4 r8 re( sol2~ sol4) r r2 |
+   r2 mib( \> | re) \! r4 \ind #"sotto voce" re8-- \mp ( re-- | re2--) r4 r8 re( |
+   \t {fa4-- re8} \t {re4 re8} 
+   re16-- \> re re re re4 \! ) | r8 re re4-- r8 re16\< ( re la'8 re, |
+   \t {re la' \> re,} la'2 )\! r4 |
+   \t {r8 fad( la } fa8. \> fa16--~ fa8 mib--~ mib16 fad8.-- | re2 )\! r |
+   R1*16 r4 r8 \ind #"secco" si-. \f | \t {si-.-> r16 lad-. lad8-.} lad->-. r |
+   r4 \t {r4 dod8-. } sold->-. r r4 |
   }
 }
 
@@ -151,7 +154,7 @@ ActeUnSceneDeuxBarytonDeux = { \BarytonDeux
 	\relative { 
 	%%% Air de la Soprano 2 %%%
 	\repeat unfold 21 {R2.*2 R1*2}
-	%%% RÃ©citatif %%%
+	%%% Récitatif %%%
 	
 	R2.*2 R1 R2.*2 r4 r8 re, mib4 | mib8 mib re4 re8 re \t {re8 re re} |
 	\t { dod dod fa} r4 r8 re | fa4 re8 lab'~ \t {lab fa lab} |
