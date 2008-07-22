@@ -251,8 +251,8 @@ ActeDeuxSceneTroisTenor = { \Tenor
     r8 re mi8. dod16 fa,4 | r r8 lab do8. si16 | re4 r r8 sib |
     re4 r2 | R2.*19 R2*2 r8 re dod si | sold'4 r |
     R2*8 R2. R2*6 R2.*4
-    r4 mi8 mi do4 do8 do | si4 si8 si do4 do8 do | si4 r r2 | R1*3
-    r4 mi,8 mi fa4 fa8 fa| mi4 mi8 mi fa4 fa8 fa | mi4 r r2 | R1*3
+    r4 si,8 si do4 si8 si |red4 mi8 mi fa4 red8 red| mi4 r r2 | R1*3
+    r4 lad,8 lad si4 lad8 lad | dod4 la8 la sib4 la8 la  | dod4 r r2 | R1*3
     
   }
 }

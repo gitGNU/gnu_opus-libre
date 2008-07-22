@@ -3214,10 +3214,10 @@ ActeDeuxSceneTroisMainDroite = {
     <sold' do> <sold do> <la dod > dod,<sold' do> <sold do> <la dod > dod, |
     <fa  sold> <fa sold> <fad la > la, <fa' sold> <fa sold> <fad la > la,  |
     <la' do  > <la do  > <sib reb> reb,<la' do  > <la do  > <sib reb> reb, |
-    <do' mi  > <do mi  > <reb fa > fa, <do' mi  > <do mi  > <reb fa > fa,  |
-    <la  dod > <la dod > <sib re > re, <la' dod > <la dod > <sib re > re,  |
-    <dod' mi > <dod mi > <re fa  > re, <dod' mi > <dod mi > <re fa  > re,  |
-    <lad' dod> <lad dod> <si re  > re, <lad' dod> <lad dod> <si re  > re,  |
+    <si' red > <si red > <do  mi > mi, <si' red > <si red > <do  mi > mi,  |
+    <re' fad > <re fad > <mib sol> sol,<re' fad > <re fad > <mib sol> sol, |
+    <si  red > <si red > <do mi  > mi, <si' red > <si red > <do mi  > mi,  |
+    <lad  dod> <lad dod> <si re  > re, <lad' dod> <lad dod> <si re  > re,  |
     <do' mib > <do mib > <dod mi > mi, <do' mib > <do  mib> <dod mi > mi,  |
     <red' fad> <red fad> <mi sol > sol,<red' fad> <red fad> <mi sol > sol, |
     <mi' sold> <mi sold> <fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
@@ -3449,7 +3449,8 @@ ActeDeuxSceneTroisMainGauche = {
     dod,,8 <sold' la> <mi' fa>4 r | sol,,4 <red' lad'> <si' mi> |
     dod,8  <sold' la> <mi' fa>4 r | <sol,, fad'>4 <fa' dod' mi> <sold, la'> |
     
-    <si si'>1 ~ <si si'> | <sol sol'> ~ <sol sol'> | <sold sold'> ~ <sold sold'> |
+    <dod dod'>1 ~ <dod dod'> | <sol sol'> ~ <sol sol'>2 <dod dod'>~ |
+    <dod dod'> <sol sol'>~ <sol sol'> ~ <sold sold'> |
     <mi mi'>1 ~ <mi mi'> | r2 <mi' mi'> ~ | <mi mi'>1 | <do do'> <dod dod'> |
     \pl { <la la'>1 ~ <la la'> ~ <la la'>2}
     {s2 sol''' fa  mi s2 } r4 <la,, la'> ~ <la la'>2 <fa fa'> ~ <fa fa'>4 <fad fad'>2. |

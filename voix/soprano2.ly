@@ -220,7 +220,7 @@ ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
     R2.*10 R4. R2.*26 R2*2
     r8 re re la' | re,4 r |
     R2*8 R2. R2*6 R2.*4
-    r4 sold,8 sold la4 sol8 sol | sold4 sold8 sold la4 sol8 sol | sold4 r r2 | R1*3
+    r4 mi,8 mi fa4 red8 red | mi4 sold8 sold la4 sol8 sol | sold4 r r2 | R1*3
     r4 sold8  sold la4 sol8 sol | sold4 sold8 sold la4 sol8 sol | si4 r r2 | R1*3
   }
 }

@@ -423,13 +423,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {
       piece = \ActeDeuxSceneDeuxTitre
     }
-  } %{
+  } %}
   \score {
     \ActeDeuxSceneTrois
     \header {
@@ -437,6 +437,6 @@ ActeDeuxSceneTrois = {
     }
     \layout { }
     \midi { }
-  } % %}
+  } %
 %
 }
