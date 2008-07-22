@@ -1024,16 +1024,37 @@ ActeDeuxSceneUnBisMesures = {
 
 ActeDeuxSceneDeuxMesures = {
   \time 3/2
+      \mark \markup \init-did \ActeDeuxSceneDeuxA
       \tempo "Largo tranquillo" 2 = 46
-            R1.*6
+            R1.
+      \mark \markup \did \ActeDeuxSceneDeuxB
+            R1.*3
+      \mark \markup \did \ActeDeuxSceneDeuxC
+            R1.
+      \mark \markup \did \ActeDeuxSceneDeuxD
+            R1.
   \time 2/2 R1*2
-  \time 3/4 R2.*5
-  \time 3/2 R1.*3
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneDeuxE
+            R2.*3
+      \mark \markup \did \ActeDeuxSceneDeuxF
+            R2.*2
+  \time 3/2
+      \mark \markup \did \ActeDeuxSceneDeuxG
+            R1.*2
+      \mark \markup \did \ActeDeuxSceneDeuxH
+            R1.
   \time 2/2 R1*2
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/8 R4.
-  \time 4/4 R1*6
+  \time 4/4
+      \mark \markup \did \ActeDeuxSceneDeuxI
+            R1*3
+      \mark \markup \did \ActeDeuxSceneDeuxJ
+            R1*2
+      \mark \markup \did \ActeDeuxSceneDeuxK
+            R1
   \time 3/4 R2.
   \time 3/2 R1.
   \time 2/2 R1*2  \bar "||"
@@ -1048,15 +1069,21 @@ ActeDeuxSceneDeuxMesures = {
   
   %%% Duo Sopranos 1 et 2 %%%
   
-  \time 4/4 R1*5
-  \time 2/4 R2*6
+  \time 4/4
+      \mark \markup \did \ActeDeuxSceneDeuxL
+            R1*5
+  \time 2/4
+      \mark \markup \did \ActeDeuxSceneDeuxM
+            R2*6
   \time 4/4 R1
   \time 3/4 R2.
   \time 3/2 R1.
   \time 2/2 R1
   \time 3/2 R1.*2
   \time 3/4 R2.
-  \time 2/2 R1    \bar "||"
+  \time 2/2
+      \mark \markup \did \ActeDeuxSceneDeuxN
+            R1    \bar "||"
   
   %%% Ensemble 1 %%%
   
@@ -1074,7 +1101,9 @@ ActeDeuxSceneDeuxMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 R1
-  \time 3/4 R2.
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneDeuxO
+            R2.
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 R1
@@ -1084,26 +1113,59 @@ ActeDeuxSceneDeuxMesures = {
   
   %%% Course-poursuite %%%
   
-  \time 2/4 
+  \time 2/4
+      \mark \markup \did \ActeDeuxSceneDeuxP
       \tempo "Presto (doppio tempo)" 4 = 176
-            R2*3
+            R2*2
+      \mark \markup \did \ActeDeuxSceneDeuxQ
+            R2
   \time 3/4 R2.
-  \time 4/4 R1*3
-  \time 5/8 R1*5/8*14
+  \time 4/4
+      \mark \markup \did \ActeDeuxSceneDeuxR
+            R1*3
+  \time 5/8 R1*5/8*5
+      \mark \markup \did \ActeDeuxSceneDeuxS
+            R1*5/8*6
+      \mark \markup \did \ActeDeuxSceneDeuxT
+            R1*5/8
+      \mark \markup \did \ActeDeuxSceneDeuxU
+            R1*5/8*2
   \time 4/4
       \tempo "Andante ad lib." 4 = 80
-            R1*9
-  \time 3/4 R2.
+            R1
+      \mark \markup \did \ActeDeuxSceneDeuxV
+            R1
+      \mark \markup \did \ActeDeuxSceneDeuxW
+            R1
+      \mark \markup \did \ActeDeuxSceneDeuxX
+            R1
+      \mark \markup \did \ActeDeuxSceneDeuxY
+            R1*2
+      \mark \markup \did \ActeDeuxSceneDeuxZ
+            R1*2
+      \mark \markup \did \ActeDeuxSceneDeuxZA
+            R1
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneDeuxZAA
+            R2.
   \time 2/4 R2
   \time 4/4 R1*2
-  \time 3/4 R2.*7
+  \time 3/4 R2.*2
+      \mark \markup \did \ActeDeuxSceneDeuxZB
+            R2.*5
   \time 2/4
+      \mark \markup \did \ActeDeuxSceneDeuxZBB
       \tempo "Andantino" 4 = 66
             R2*2
   \time 3/4 R2.*2
-  \time 2/4 R2*25 \bar "||"
+  \time 2/4 R2*19
+      \mark \markup \did \ActeDeuxSceneDeuxZC
+            R2*4
+      \mark \markup \did \ActeDeuxSceneDeuxZD
+            R2*2  \bar "||"
   \time 3/4
-      \mark \markup { \mvt "Stesso Tempo" }
+      \mark \markup \did \ActeDeuxSceneDeuxZDD
+      \tempo "Stesso Tempo"
             R2.*16 \bar "|."
 }
 

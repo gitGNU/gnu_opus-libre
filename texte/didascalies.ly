@@ -485,7 +485,7 @@ ActeDeuxSceneDeuxL = "Le Docteur a rejoint la Reine."
 ActeDeuxSceneDeuxM = "La Reine exécute, au fur et à mesure et de
 plus en plus vite, les indications du Docteur."
 
-ActeDeuxSceneDeuxN = "L'Étranger, un tibia à la main :"
+ActeDeuxSceneDeuxN = "L'Étranger se saisit d'un tibia, très théâtralement."
 
 ActeDeuxSceneDeuxO = "Entre le Chef de la Garde ; il se dirige vers
 les oubliettes, dans l'ombre."
@@ -508,7 +508,7 @@ lumière."
 
 ActeDeuxSceneDeuxU = "Le Roi le reconnaît, et peine à finir sa phrase."
 
-ActeDeuxSceneDeuxV = "Ils se jaugent en silence, immobiles. Puis l'Étranger
+ActeDeuxSceneDeuxV = "Un temps. Ils se jaugent en silence, immobiles. Puis l'Étranger
 lève lentement son bras, armé du tibia..."
 
 ActeDeuxSceneDeuxW = "Le Roi, sentant venir le coup, lance un
@@ -525,13 +525,24 @@ regarde à gauche puis à droite..."
 ActeDeuxSceneDeuxZA = "... enfin il ramasse la couronne et la met sur sa
 tête, juste avant que ne surgisse le Chef."
 
+%FIXME: needs reordering here.
+
+ActeDeuxSceneDeuxZAA = "Ce dernier, qui s'apprêtait à faire une entrée
+fracassante, opte au dernier moment pour une posture ostensiblement
+désinvolte, faussement modeste."
+
 ActeDeuxSceneDeuxZB = "Le Chef de la Garde, suspicieux, regarde le Roi
 au sol, puis l'Étranger, qui escamote précipitamment le tibia dans son dos."
+
+ActeDeuxSceneDeuxZBB = "Le Chef se jette à genoux."
 
 ActeDeuxSceneDeuxZC = "Le Chef ne bouge pas."
 
 ActeDeuxSceneDeuxZD = "Pendant que le Chef s'éloigne, l'Étranger se met
 en quête d'une cachette pour son os."
+
+ActeDeuxSceneDeuxZDD = "Dans le noir , on entend peu à peu tous les
+personnages, chacun plongés dans leur tâche..."
 
 %%%%%%%%%%%%%%%%%%%%%%  Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -632,21 +643,20 @@ qu'impérieux..."
 ActeDeuxSceneTroisZE = "Le Chef donne un petit coup de poing sur la
 tête du Roi..."
 
-ActeDeuxSceneTroisZF = "... qui se résoud à obtempérer."
+ActeDeuxSceneTroisZF = "... qui se résoud à obtempérer. Le Chef de la Garde
+regarde son poing avec admiration."
 
-ActeDeuxSceneTroisZG = "Le chef de la Garde pousse le Roi dans
-l'avion ; puis il regarde son poing avec admiration."
+ActeDeuxSceneTroisZG = "Le chef de la Garde pousse le Roi vers l'avion ;
+mais Dieu, encombré de ses sécateurs, s'interpose théâtralement."
 
-ActeDeuxSceneTroisZH = "Entre Dieu, encombré de ses sécateurs."
+ActeDeuxSceneTroisZH = "Sous les regards interloqués de l'assistance, le
+Docteur bouscule Dieu (sans un regard), et entreprend de grimper dans la machine."
 
-ActeDeuxSceneTroisZI = "Tous s'interposent, excédés."
+ActeDeuxSceneTroisZI = "Le Roi s'avance et embarque laborieusement."
 
-ActeDeuxSceneTroisZJ = "Sous les regards interloqués de l'assistance, le
-Docteur entreprend de grimper dans la machine."
-
-ActeDeuxSceneTroisZK = "La Reine grimpe à son tour dans la machine.
+ActeDeuxSceneTroisZJ = "La Reine grimpe à son tour dans la machine.
 Elle semble chercher en vain des rimes en
-«tion», puis finit par simplement lancer :"
+«tion», pour simplement finir par lancer :"
 
 ActeDeuxSceneTroisZL = "Tous les regards se tournent vers l'Étranger ; mais
 c'est Dieu qu'il désigne."
