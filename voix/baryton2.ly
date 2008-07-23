@@ -227,33 +227,33 @@ ActeUnSceneQuatreBarytonDeux = { \BarytonDeux
   \relative {
     \partial 4 r4 | R2*5/4 R2*3 R2*5/4 R2*2 R2. R2*3 |
     R1 R2. R1*2 R1. R1*2 R1. R1*2 |
-    R2.*27 re2~ re8 r \t { r do, dod' } |
-    mi4 r16 fa, mi'8 r16 sold,8. | dod4 r8 fa,16 fa fa8 fa lab16 mib mib fa |
-    re4 r2 | R2 R2. R2 R2. R2 r16 fad fad fad sold4 si16 fad fad sold |
-    re4 r r2 | \t { re4 re re } dod dod8. dod16 | mi2 dod8 r16 mi mi8. mi16 |
-    sol2 mi8 r r4 | sol4 sol8. sib16 fad4 fad8. fad16 | la4 r | R2. R1*10
+    R2.*27 \ten re2 \f ~ re8 r \t { r dod,( \< dod' } |
+    mi4->-- \sfz ) r16 fa,( mi'8->-- ) r16 sold,8.-- | dod4-- r8 fa,16 fa fa8-. fa-. lab16-.( mib-. mib-. fa-. |
+    re4--) r2 | R2 R2. R2 R2. R2 r16 fad-.( \mf fad-. fad-. sold4--) si16-.( \> fad-. fad-. sold-. |
+    re4--) \p r r2 | \t { re4--( \mp re-- re-- } dod--) dod8.-. dod16-. | mi2--( dod8) r16 mi-. mi8.-. mi16-. |
+    sol2--( mi8) r r4 | sol4( sol8.\> sib16 fad4) fad8. fad16 | la4 \! r | R2. R1*10
     R2. R1 R2. R1*7 R2*3 R2.*4
-    r8 r16 la, sold'4 r | r8 r16 do, si'4 r | r8 re4. r2 |
-    re8. dod16~ dod8 mi~ mi2~ | mi8 r r4 r2 |
-    r8 sib sib16 sib sib do \t { sol8 sol sol } \t { mi la sol } |
-    sib4 r16 re, re8 dod16 mi8 re16 | sol4 r16 sol8 fa16 sib4 r8 mi, |
-    sol4 fa8 sib4 lab8 | reb4 r r2 | R2. r2 r4 re,! | dod' r2 |
-    dod4. re,8 r4 dod'8 fa,16 dod' | mi2 sib4 r | R2.*2
-    r2 re8 re | re4. re8 re re \t {mi si dod } | sold lad lad lad sol sol do sib |
+    r8 r16 la,( \p sold'4--) r | r8 r16 do,( \mp si'4-- ) r | r8 re4.->-- \f r2 |
+    re8.-> dod16->~ dod8 \ten mi->~ mi2~ | mi8 r r4 r2 |
+    r8 sib-. sib16-.( sib-. sib-. do-. \t { sol8--) sol sol } \t { mi( la sol } |
+    sib4->--) r16 re,\mf re8 dod16( mi8) re16( | sol4) r16 sol8( fa16 sib4) r8 mi,-.( |
+    sol4-- fa8-. sib4-- lab8-. | reb4--) r r2 | R2. r2 r4 re,!-> \f | dod'->-- r2 |
+    dod4.->( \ff re,8) r4 dod'8->( fa,16 dod') | mi2->--( sib4) r | R2.*2
+    r2 re8-- \( \f re-- | re4.-- re8 re re \t {mi( si dod } | sold--) lad-- lad-- lad-- sol-- sol-- do-- sib-- |
     
-    dod4 r2 R4. 
-    re,8. dod16~ dod8 mi r re | mi16 re re mi la sold | si4 r | R4.
-    re,8. dod16~ dod8 mi r re sol fa | dod'4 r R4.
-    re,8. dod16~ dod8 mi r re sol fa | mib'4 r R4. R2*3 R4. R2.
-    re,8. dod16~ dod8 mi~ mi re sol fa | sib4 r r2 |
+    dod4-- \) r2 R4. 
+    re,8.--( \f dod16--~ dod8 mi--) r re-. | mi16( \< re re mi la sold | si4--) \! r | R4.
+    re,8.--( dod16--~ dod8 mi--) r re-.( \< sol-. fa-. | dod'4->--) \! r R4.
+    re,8.--( dod16--~ dod8 mi--) r re-.( \< sol-. fa-. | mib'4->--) \! r R4. R2*3 R4. R2.
+    re,8.--( dod16--~ dod8 mi--~ mi) re-.(  sol-. fa-. | sib4->--) r r2 |
     \repeat unfold 6 { 
-    re,8. dod16~ dod8 mi~ mi re sol4 }
-    re4 r re r | re r r2 | re4 r r2 | R1 R2 R2.*2 R2 R1 |
+    re,8.--( dod16--~ dod8 mi--~ mi) re-. sol4-- }
+    re4->-- r re->-- r | re->-- r r2 | re4--\mp r r2 | R1 R2 R2.*2 R2 R1 |
     
-    R2. r2 r8 re | fad2 r8 re | re re si si re re | fa4 re8 r r4 | R2.*2
-    fad4 r8 re \t { re re re} | fad fad fa la \t {la lab lab} | do la! r2 |
-    r2 r8 r16 mid | sold8 sold16 fad si8 si16 si si si la la | re8 fad, r2|
-    R2. re16 dod mi8~ mi re \t {sol fa sol} | sib8. lab16 reb4. r8 | R2.*5
+    R2. r2 r8 re ( \p | fad2) r8 re \( | re re si si re re | fa4--( re8) \) r r4 | R2.*2
+    fad4->-. \mf r8 re-. \t { re( re re} | fad fad) fa( la) \t {la( lab lab} | do la!) r2 |
+    r2 r8 r16 mid-. \f | sold8--( sold16 fad-.) si8--( si16 si-.) si-.( si-. la-. la-.) | re8--( fad,) r2|
+    R2. re16-- \mf dod-- mi8->--~ mi re-. \t {sol-.( fa-. sol-.} | sib8.--) \< lab16-- reb4.-- \! r8 | R2.*5
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
   }
 }
@@ -359,7 +359,7 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     r lab, fa | r mib fad | re4 r | R2 r8 re re sib re4 r |
     R2*8 R2. R2*6 R2.*4
     r4 do8 do do4 do8 do | do4 mi8 mi sold4 sol8 sol | si4 r r2 | R1*3
-    r4 dod,8 dod fa4  mi8  mi  | sold4 r r2 | r8 re mi sol sold2 | r4 \t { re do re } fad |
+    r4 dod,8 dod fa4  mi8  mi  | sold4 r r2 | r8 re mi sol sold2 | r4 mi8 re4 sol8 sold4 |
     r8 re fad sold si4 r | r sold ~ \t { sold la do } | re2. r4 | R1*4
   }
 }

@@ -319,9 +319,12 @@ ActeUnSceneQuatreL = "Entre Dieu."
 
 ActeUnSceneQuatreM = "Dieu va pour sortir, mais le Roi le rattrape."
 
-ActeUnSceneQuatreN = "Entre le Chef. On sent le Roi tenté d'expédier
-Dieu au cachot, mais un regard de ce dernier lui fait perdre
-contenance."
+ActeUnSceneQuatreMM = "On entend le Chef accourir (soit de la coulisse,
+soit de la salle)."
+
+ActeUnSceneQuatreN = "Entre le Chef. On sent le Roi tenté d'embastiller
+Dieu, mais un regard de ce dernier lui fait perdre
+contenance ; il désigne alors l'Étranger."
 
 ActeUnSceneQuatreO = "Le Chef entraîne l'Étranger dans la coulisse.
 Dieu, au bout d'un instant, désoeuvré, finit par sortir
@@ -330,7 +333,7 @@ de l'autre côté."
 ActeUnSceneQuatreP = "Seuls restent en scène le Roi et la Reine,
 qui s'attablent pour finir leur dîner."
 
-ActeUnSceneQuatreQ = "Elle désigne d'un geste désinvolte le menton
+ActeUnSceneQuatreQ = "D'un geste désinvolte, elle désigne le menton
 du Roi... au demeurant dissimulé sous une imposante barbe."
 
 ActeUnSceneQuatreR = "Dans la salle (ou l'orchestre), on retrouve le
@@ -639,6 +642,9 @@ ActeDeuxSceneTroisZC = "L'Étranger arme son bras ; le Roi recule vivement."
 
 ActeDeuxSceneTroisZD = "Le Roi se tourne vers le Chef, plus implorant
 qu'impérieux..."
+%FIXME
+ActeDeuxSceneTroisZEE = "L'Étranger désigne la machine d'un geste théâtral,
+et hésite un instant pour la dénommer."
 
 ActeDeuxSceneTroisZE = "Le Chef donne un petit coup de poing sur la
 tête du Roi..."

@@ -107,30 +107,31 @@ ActeUnSceneQuatreTenor = { \Tenor
     R1 R2. R1 R2. R2 R2. R2 R2. R2 R2. R1*5 R2 R2. R1
     R1*9 R2. R1 R2. R1*7 R2*3 R2.*2 R2.*4
     R1*4 R2. R1 R2. R1 R2. R1 R2. R1 
-    r2 r4 r8 sol16 sol | si8 sib16 sib re8 dod16 dod fa r sol, sol |
-    do8 sib16 sib mib8 reb16 reb solb r \t {sol,! sol sol} |
-    re'!8 \t { do16 do do} sol'8 \t {fa16 fa fa} do'8 r |
+    r2 r4 r8 sol16( \mp sol | si8) sib16( \< sib re8) dod16( dod fa) \! r sol,( sol |
+    do8) sib16( \< sib mib8) reb16( reb solb) \! r \t {sol,!( sol sol} |
+    re'!8) \t { do16( \< do do} sol'8) \t {fa16( fa fa} \parlato do'8 ) \! r |
     R1*2
-    sold4 sold8. sold16 sold4 | sold8 sold sold | lad,4 r2 | R4.
-    sold'8. sold16 sold8 sold | sold4 sold8 | do,4 r | R2 |
-    sold'8. sold16 sold8 sold | sold4 sold8 | re4  r | R2 |
-    sold4 r R4. R2*3 R4. R2. R1*2 
-    sib,8. sol16~sol8 do~ do sib mib do | fa4 r r2 |
-    sib,8. la16~  la8 do~ do4 la8 sol | 
-    sib8.  la16~  la8 do~ do4 la8 sol | 
-    sib4 r r la8 sol | sib4 r r la8 sol | sib4 r la r sol r r2 |
+    sold4--( \f sold8.-- sold16 sold4--) | sold8--( sold-. sold-.) | lad,4->-- r2 | R4.
+    sold'8.--( sold16 sold8-. sold-.) | sold4--( sold8-.) | do,4->-- r | R2 |
+    sold'8.--( sold16 sold8-. sold-.) | sold4--( sold8-.) | re4->--  r | R2 |
+    sold4-- r R4. R2*3 R4. R2. R1*2 
+    sib,8.--( sol16--~sol8 do--~ do) sib-.( mib-. do-. | fa4->--) r r2 |
+    sib,8.--( la16--~  la8 do--~ do4) la8-. sol-. | 
+    sib8.--(  la16--~  la8 do--~ do4) la8-. sol-. | 
+    sib4->-- r r la8-. sol-. | sib4->-- r r la8-. sol-. | sib4->-- r la->-- r sol->-- r r2 |
     R1*2 R2 R2.*2 R2 R1
     
-    R2.*21 R1. R1 R1. R1 R1. R1 r2 r4 do8 do fad, fad \t {fa[ do' mi,]} |
-    re'4 r r2 | R1. | r4 lab' r mib16 fa do re | la!4 r r1 |
-    r16 si mi8 re16[ mi8 dod16] fad,si mi8 r fa! fa fa \t{do[ mib sib]} | la4 r r1 |
-    r16 si mi8 re16[ mi8 si16 ] fa8 sol do16 sib reb4. r8 fad, |
-    la do sib mib reb4 r8 lab \t {fa re! fa} \t {mi'[ si mi]} | la2 r |
-    R1. R1 R1. | fad,8. mid16~ mid8[ sold] r la16 la sol[ sol do8] |
-    r8 do16 do sib sib mib reb solb4 \t{mib8 sol, do} \t {fa,[ sib sol]}
-    mi!16 fad si dod | red2 r1 | r4 fad r8 sold, fad si r4 \t{ mi8 re sol} |
-    la,4 r8 mi r4 fad r8 mib' sib do | la fad sold red fa sol do sib reb mi re sol, |
-    la2 r | R1. R1 |
+    R2.*21 R1. R1 R1. R1 R1. R1 r2 r4 \parlato { do8 do fad,-- fad \t {fa[ ( do' mi,]} |
+    re'4 ) } r r2 | R1. | r4 lab'-- \f r mib16-.( \mf fa-. do-. re-. | la!4-> ) r r1 |
+    r16 si ( \f mi8) re16[( mi8) dod16-.] fad,( si mi8) r fa!-.( fa-. fa-.) \t{do[ ( mib sib]} | la4--) r r1 |
+    r16 si ( mi8) re16[( mi8) si16-. ] fa8-. sol-. do16( \< sib reb4.--) \! r8 fad,-.( \mp |
+    la-. \< do-. sib-. mib-. reb4--) \! r8 lab-. \t {fa( \mf \< re! fa} \t {mi'[ si mi]} | la2->-- \sfz ) r |
+    R1. R1 R1. | fad,8.-- ( \mf mid16--~ mid8[ sold--] ) r la16-. \mp la-. sol-.[ sol-. do8--] |
+    r8 do16-. \p do-. sib-. sib-. mib-. reb-. solb4-- \f \t{mib8-.( \p sol,-. do-.} \t {fa,-.[ sib-. sol-.] )}
+    mi!16( \< fad si dod) | red2 \mf r1 | r4 fad->-- \sfz r8 sold,-.( fad-. si-.) r4 \t{ mi8 (\mf re sol} |
+    la,4--) r8 mi-. r4 fad-- r8 mib'-.( sib-. do-. |
+    la-. fad-. sold-. red-. fa-. sol-. do-. sib-. reb-. mi-. re-. sol,-. |
+    la2--) r | R1. R1 |
   }
 }
 

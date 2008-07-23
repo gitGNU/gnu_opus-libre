@@ -718,7 +718,9 @@ ActeUnSceneQuatreMesures = {
       \mark \markup \did \ActeUnSceneQuatreM
             R2.
   \time 4/4 R1*2
-  \time 3/4 R2.*3
+  \time 3/4
+      \mark \markup \did \ActeUnSceneQuatreMM
+            R2.*3
   \time 4/4
       \mark \markup \did \ActeUnSceneQuatreN
             R1*2
@@ -756,6 +758,7 @@ ActeUnSceneQuatreMesures = {
                   \bar "||"
   \time 3/2
       \mark \markup \did \ActeUnSceneQuatreR
+      \tempo "Andantino" 4 = 108
             R1.
   \time 2/2 R1
   \time 3/2 R1.

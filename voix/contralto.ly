@@ -44,17 +44,17 @@ ActeUnSceneQuatreContralto = { \Contralto
     R2.*27
     R1 R2. R1 R2. R2 R2. R2 R2. R2 R2. R1*5 R2 R2. R1
     R1*9 R2. R1 R2. R1*7 R2*3 R2.*2 R2.*4
-    R1*2 r2 r4 r8 fad | R1 R2. r16 do fa8 r r16 fa~ fa mib lab8 r fad |
-    si4 mib,8 lab4 re,8 | 
-    sol4 r8 \parlato do,4 r8 fad fad |
-    fad4 \t {fad8 fad fad} \t {la fad fad} | 
-    fad fad fad fad red red mid16 mid red mid |
-    fad4 r2 | R1*2 R2.*3 R1*2 R2. R4. R2. R4. R2 R4. R2*3 R4.
+    R1*2 r2 r4 r8 fad-- \mf | R1 R2. r16 do( \mf fa8) r r16 fa ( ~ fa mib lab8 ) r fad-.( |
+    si4-- mib,8-. lab4-- re,8-. | 
+    sol4--) r8 \parlato do,4 r8 fad--( fad-- |
+    fad4--) \t {fad8( fad fad} \t {la fad fad} | 
+    fad) fad-- fad-- fad-- red-- red-. mid16-.( mid-. red-. mid-. |
+    fad4--) r2 | R1*2 R2.*3 R1*2 R2. R4. R2. R4. R2 R4. R2*3 R4.
     R2*3 R4. R2*3 R4. R2. R1*3
-    sib,8. la16~ la8 do~ do sib mib reb |
-    fad4 r r8 do fa! mib |
-    fad4 r r8 do fa! mib |
-    fad4 r r fa | fad r r fa | fad r sol r | la r r2 R1*2 R2 R2.*2 R2 R1 |
+    sib,8.--( \f la16--~ la8 do--~ do) sib-.( mib-. reb-. |
+    fad4->--) r r8 do-.( fa!-. mib-. |
+    fad4->-- r r8 do-.( fa!-. mib-. |
+    fad4->-- r r fa-- | fad->-- r r fa-- | fad->-- r sol->-- r | la->-- r r2 R1*2 R2 R2.*2 R2 R1 |
     R2.*21
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
   }

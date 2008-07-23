@@ -369,13 +369,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %}
+  } %
   \score {
       \ActeUnSceneUnBis
       \header {
         piece = \Separateur
       }
-  } %{
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
@@ -399,7 +399,7 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneQuatre
     \header {

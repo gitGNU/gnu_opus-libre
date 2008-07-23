@@ -166,41 +166,41 @@ ActeUnSceneQuatreBarytonUn = { \BarytonUn
   \relative {
     \partial 4 r4 | R2*5/4 R2*3 R2*5/4 R2*2 R2. R2*3 |
   R1 R2. R1*2 R1. R1*2 R1. R1*2 |
-  R2.*4 r4 r8 sib4. si!4 si8 sib lab si |
-  sol4 sol8 sol fa lab | mi4 r8 mi4. |
-  mi8 re'4 fa,8 dod'4 | R2.*4
-  r16 fad, fad fad si8. la16 la la re8 |
-  r re sib si sol sold | mi4 r8 dod4 fa8 |
-  \t { mi la sol } do4 r | r8 mib sib do la do |
-  mib do16 si! fa'4 r | dod r2 | R2.
-  r8 dod re la dod4 | sib8 re16 sib mib4 r |
-  r r8 la,4. | R2. la4 mi2 | r4 la2 mi'2~ mi8 r r4 |
+  R2.*4 r4 r8 sib4. ( \mp si!4-- si8 sib lab si |
+  sol4-- sol8 sol fa lab | mi4--) r8 mi4.-- |
+  mi8 (\mf re'4-- fa,8\> dod'4-- )\! | R2.*4
+  r16 fad,-.( \f fad-. fad-. si8.--) la16-.( la-. la-. re8--) |
+  r re-.( \p sib-. si-. sol-. sold-. | mi4--) r8 dod4( fa8) |
+  \t { mi( la sol } do4--) r | r8 mib( sib-.) do-.( \< la-. do-. |
+  mib--) do16( \f si! fa'4--) r | dod-- \mp r2 | R2.
+  r8 dod ( re la dod4-- | sib8) re16( sib mib4) r |
+  r r8 la,4.-- \p | R2. la4( mi2) | r4 la2( \< \ten mi'2 \f )~ mi8 r r4 |
   R2. R1 R2. R2 R2. R2 R2. R2 R2. 
   
-  R1*5 R2 R2. R1*8 si2 r4 fa | mi'1~ mi2 r4 |
-  r4 si2.~ si2 r4 | R1*2
-  si2. si4 sib sib \t { sib lab si } | fa r la! sol |
-  fa mi fa8 mi fa sol la4 mi r2 R2*3
-  R2.*2 r8 r16 si' si fad re fa sib8 reb |
-  r4 r8 reb, \t {reb do do } | mi dod r4 r8 dod16 dod |
-  fad4 r8 mi~ mi16 mi mi8 | la2 r2 | R1*3 R2. R1 R2. R1 R2. R1 R2. R1*2  R2.*3 R1*2
+  R1*5 R2 R2. R1*8 si2-- \mf r4 fa( \< | \ten mi'1) \f ~ mi2 r4 |
+  r4 \ind #"meno"  \ten si2.--~ si2 r4 | R1*2
+  si2.-- \mp si4( sib sib \t { sib-- lab-- si-- } | fa--) r \ind #"giocando" la!-.( \p sol-. |
+  fa-. mi-. fa8-. mi-. fa-. sol-. la4-. mi-.) r2 R2*3
+  R2.*2 r8 r16 si'-> \cmb #"f" #"sub." si( fad re fa sib8--) reb->-- |
+  r4 r8 reb,-. \mp \t {reb( do do) } | mi( dod) r4 r8 dod16 \mf dod |
+  fad4-- r8  mi \f ~ mi16 mi mi8 | \ten la2-- r2 | R1*3 R2. R1 R2. R1 R2. R1 R2. R1*2  R2.*3 R1*2
   
   R2. R4. R2. R4. R2 R4. R2*3 R4. R2*2
-  lab8 re4 re8 | mi si4~ | si8 r r4 |R2 r4 r8 sold | sold dod si | re2 fa,4 |
-  R1 re8. dod16~ dod8 mi~ mi re sol fa | sib4 r r sol8 fa | sib4 r r sol8 fa |
-  sib4 re,8. dod16~ dod8 mi~ mi4 | r4 sib'8. la16~ la8 do~ do4 |
-  r mib do r | r mib do r | r do r sold | r2 mi4 r | R1*2 R2 R2.*2 R2 R1
+  lab8( \f re4 \> re8 | mi si4 \! ~ | si8) r r4 |R2 r4 r8 sold-. \mp | sold-.( dod-. si-.) | re2--(\> fa,4)\! |
+  R1 re8.( \p dod16~ dod8 mi~ mi) re-. sol-. fa-. | sib4-- r r sol8-.( \f fa-. | sib4->--) r r sol8-.( fa-. |
+  sib4->--) re,8.--( dod16--~ dod8 mi--~ mi4) | r4 sib'8.--( la16--~ la8 do--~ do4) |
+  r mib-- do-- r | r mib-- do-- r | r do-- \> r sold-- | r2 mi4-- \p r | R1*2 R2 R2.*2 R2 R1
   
-  R2.*21 R1. R1 R1. R1 R1. r4 la r8 sib lab si | sol4 r r1 |
-  r8 la la la fa fa la lab | do2 r8 la sib la do dod si la |
-  re2. r4  | r4 la8 la fa4 r dod8 mi re sol  | la4  re,  r1  |
-  r8 sold fad fad la4 do8 sol fa re mi si' | la4  r    r1  |
-  R1. r4 mib' r8 sib lab si | \t{sol fa lab} mi4  r
-  mi8 mi mib mib reb mi | do2 r4 do8 do | do do \t{do do do}
-  \t{do do do} sol'4 la16 la sol la sib4| R1 R1.
-  r4 la \t{r8 sol sol} \t {do sib do} reb4 lab8 solb |
-  la do sib mib fa,4 r r2 | R1.*2
-  r2 r8 la \t{la la la} |do mib, mib fa la2 r4 r8 mib | la,4 r r2 |
+  R2.*21 R1. R1 R1. R1 R1. r4 la-- \mf r8 sib-.( lab-. si-. | sol4--) r r1 |
+  r8 \ind #"semplice" la( \mp la la fa fa la\> lab | do2 \! ) r8 la( \p sib la do dod \> si la |
+  re2.\pp ) r4  | r4 la8-.( \mp la-. fa4--) r dod8-.( mi-. re-. sol-.)  | la4--(  re,)  r1  |
+  r8 sold-.( fad-. fad-. la4--) do8-.( sol-. fa-. re-. mi-. si'-. | la4--)  r    r1  |
+  R1. r4 mib'-- \mp r8 sib( lab si) | \t{sol( fa lab} mi4--)  r
+  mi8-.( mi-. mib-. mib-. reb-. mi-. | do2--) r4 do8( \p do | do do \t{do-- do do}
+  \t{do do do} sol'4--) la16( la sol la sib4--)| R1 R1.
+  r4 la-- \mp \t{r8 sol( sol} \t {do sib do} reb4--) lab8-.\( solb-. |
+  la( do-.) sib-. mib-. fa,4-- \) r r2 | R1.*2
+  r2 r8 la-. \p \t{la( la la) } |do-.( mib,-. mib-. fa-. la2--) r4 r8 mib-.\pp | la,4-- r r2 |
   }
 }
 

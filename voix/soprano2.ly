@@ -65,48 +65,48 @@ ActeUnSceneDeuxSopranoDeux = { \SopranoDeux
 ActeUnSceneQuatreSopranoDeux = { \SopranoDeux
   \relative {
     \partial 4 r4 | R2*5/4 R2*3 R2*5/4 R2*2 R2. R2*3 |
-    r4 r16 la' la la re4 do | re8 la~ la la \t { sold sold sold } |
-    do4 r r2 | \t { la4 re la~ } \t { la16 la8. la8 } \t {sold sold sold} |
-    do4 r r2 \t {r4 la la } | re4. la8 \t { r4 do re } | do r \t {la la re~}|
-    re2 r \t { r4 do re } | sol1~ sol4 r r \t { r8 sol, do } |
-    fad4 r do16 la re la | do4 la8 sol la re | do4 r re8 sol | 
-    fad4. re8 do16 re fad sol | fad4 r2 R2.*3
-    r2 r16 la, la la | re4 do8 do4 re8 | la4 r2 |
-    r16 la sold sold sold sold do8 si16 red8 si16 |
-    red8 la16 si mi8 red r16 si la si | red4 r2 |
-    R2.*4 r4 r8 r16 sib la'4 |
-    r8 r16 si,! la'4 mi8 la,16 la | dod8 re dod la \t {sol la re } |
-    la'4 r r8 sib, | re16 mib re sib lab8 sib  \t {re sib mib } | la!4
-    r si,!8 red | \t { mi red si } la si red16 si mi la | red,4 r8
-    si16 si mi la, re! mi | sold4 r16 mi mi mi sold re mi sold | la2~ la8 r r4 |
-    R2. R1 r8 re, \t { r la la } \t { mi' la, si } | re,4 r8 la' |
-    dod mi, mi mi la16 re, re la' | sib8 re sib sib | \t { mib sib sib } sib4 
-    red8 si! | mi si si4 | \t { re!8 la' mi } si4 r |
-    R1*2 r4 sold8. sold16 dod2 | sold8 r si8. si16 mi4 si8 r |
-    r2 r4 re8. re16 sol4 dod,8. dod16 |
-    fad4 do!8 do sold do | mi2 si8 r r4 |
+    r4 r16 la'-.( \p la-. la-. ) re4 ( do ) | re8-- ( la~ la la \t { sold sold sold } |
+    do4 ) r r2 | \t { la4 ( re la~ } \t { la16 la8. ) la8 ( } \t {sold sold sold} |
+    do4 ) r r2 \t {r4 la ( \mp la } | re4. la8 ) \t { r4 do ( re } | do ) r \t {la ( \< la re~}|
+    re2 ) \! r \t { r4 do ( \> re } | sol1 ) \p ~ sol4 r r \t { r8 sol, \f ( do ) } |
+    fad4---> r do16-. ( la-. re-. la-. | do4-- ) la8-.( sol-. la-. re-. | do4--) r re8( sol) | 
+    fad4.--( re8 ) do16-.( \< re-. fad-. sol-. | fad4--) \! r2 R2.*3
+    r2 r16 la,-.( la-. la-. | re4--) do8-. do4--( re8-.) | la4-- r2 |
+    r16 la ( sold sold sold sold do8--) si16 ( red8-- ) si16-. |
+    red8--( la16 si ) mi8->--( red) r16 si-.( \< la-. si-. | red4-- ) \! r2 |
+    R2.*4 r4 r8 r16 sib( la'4->--) \sfz | %FIXME: script weirdness
+    r8 r16 si,!( la'4->-- \sfz mi8-.) la,16-. la-. | dod8( re) dod( la) \t {sol( \< la re } |
+    la'4 ) \sfz r r8 sib,-. \mf | re16 ( mib re sib lab8) sib-.  \t {re ( \< sib mib } | la!4 ) \sfz
+    r si,!8( red) | \t { mi( red si } la) si-. red16( si mi la | red,4--) r8
+    si16( si mi la, re! mi | sold4) r16 mi( mi \< mi sold re mi sold | \ten la2->--) \f ~ la8 r r4 |
+    R2. R1 r8 re,-- \mf \t { r la( la } \t { mi' la, si } | re,4--) r8 la'-. |
+    dod( mi,-.) mi-. mi-. la16-.( re,-. re-. la'-. | sib8-. ) re( sib-.) sib-. | \t { mib( sib sib } sib4--) 
+    red8( si!) | mi( si si4--) | \t { re!8( la' mi } si4) r |
+    R1*2 r4 sold8.-. \pp sold16-. dod2--( | sold8) r si8.-. si16-. mi4--( si8) r |
+    r2 r4 re8.\mf re16 sol4-- dod,8. dod16 |
+    fad4--( do!8) do-.( sold-. do-.) | mi2--( si8) r r4 |
     
-    r4 lab \t { lab lab lab } | sol2. r4 |
-    r  lab \t { lab sol sol } | si2 fad4 r|
-    r  sib dob sib | \t { re dob fa, } sib dob8 sib |
-    re sib sib solb sib4 mib | \t { r re re } \t { re sib re } |
-    la'1~ la2 r4 | R1 R2. R1*7 R2
-    r4 r8 la, | la la \t { la sol sib } sol fad r4 r8 la |
-    re,4 r8 re do mib | si4 r2 | R2. 
-    r4 r8 r16 fad' red'4 |
-    r4 r8 r16 la   fad'4 |
-    r4 sol r2 R1*3 R2.
-    r16 fa, sib8 r8 r16 sib~ sib lab reb8 r re | re4 re8 re4 re8 | re4 r r2 |
+    r4 lab( \mp \t { lab-- lab-- lab-- } | sol2.--) r4 |
+    r  lab( \t { lab-- sol-- sol--) } | si2--( fad4) r|
+    r  sib( dob sib | \t { re \< dob fa, } sib) \! dob8( sib |
+    re \< sib sib solb sib4) \! mib-- | \t { r re( re } \t { re-- \< sib-- re-- } |
+    \ten la'1) \f ~ la2 r4 | R1 R2. R1*7 R2
+    r4 r8 la,-. \(\p | la-. la-. \t { la( sol sib) } sol( fad) \) r4 r8 la-. |
+    re,4-- r8 re-.( do-. mib-. | si4--) r2 | R2. 
+    r4 r8 r16 fad'( \p red'4--) |
+    r4 r8 r16 la( \mp  fad'4--) |
+    r4 sol-- \f r2 R1*3 R2.
+    r16 fa,(\mf sib8) r8 r16 sib (~ sib lab reb8) r re-. \f ( | re4-- re8-. re4-- re8-. | re4-- ) r r2 |
     R2. R1 R2. R1*2 R2.*3 R1*2
     
     R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
-    R1*4 re4 r r2 | re4 r r2 | re4 r r re | re r r re |
-    re r re r re r r2 | re4 r r2 | R1 R2 R2.*2 R2 R1
-    R2.*4 r4 si8 si si dod | sold4 sold8 sold sold sold | \t {sib4 fa sol!} re |
-    R2.*2 r4 \t {r8 re' re} \t {re re mi} | \t {si si si} \t { si si dod } sib4|
-    R2.   r4 sib r | \t {r8 fad fad} \t {fad fa fa} la fad |
-    R2.*2 r8 sib la4 r | lab8 lab \t{sol sol sol} si!4 |
-    r8 sold si sol fad fad | la4 r r8 lab | re,4 r2 |
+    R1*4 re4->-- \f r r2 | re4->-- r r2 | re4->-- r r re-- | re->-- r r re-- |
+    re->-- r re->-- r re->-- r r2 | re4-- \mp r r2 | R1 R2 R2.*2 R2 R1
+    R2.*4 r4 si8( \p \< si si dod | sold4-- \! sold8 sold sold sold | \t {sib4-- \> fa-- sol!--} re-- ) \! |
+    R2.*2 r4 \t {r8 re' ( \p \< re} \t {re re mi} | \t {si \! si si} \t { si \> si dod } sib4) \!|
+    R2.   r4 sib-- r | \t {r8 fad( fad} \t {fad fa fa} la fad) |
+    R2.*2 r8 sib ( \mp \> la4) \! r | lab8( lab \t{sol sol sol} si!4) |
+    r8 sold( si-. sol-. fad-. fad-. | la4--) r r8 lab-. | re,4-- r2 |
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
   }
 }

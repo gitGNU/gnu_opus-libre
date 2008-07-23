@@ -575,8 +575,9 @@ ActeUnSceneQuatreSopranoDeuxTexte = \lyricmode {
   Fâ -- cheux, très __ _ fâ -- cheux_; ex -- trê -- me -- ment fâ -- cheux.
   Non_! Non_! Non_! Non, non_! Non, non_! Non_! Non_! Non.
   J'a -- ppré -- cie fort bien son vi -- sa -- ge fin et ra -- cé.
-  Je trou -- ve mer -- vei -- lleux ses che -- veux on -- du -- leux.
-  Ah_? \leftSyl …_La ma -- gie du my -- stè -- re…
+  Je trou -- ve mer -- vei -- lleux ses che -- veux on -- du -- leux. Ah_?
+  %FIXME: lefSyl doesn't work here.
+  \leftSyl …_La ma -- gie du my -- stè -- re…
   Mon bon, nul en com -- pa -- rai -- son n'au -- ra votre é -- lé -- gant
   \leftSyl …_men -- ton.
 }
@@ -1167,7 +1168,7 @@ ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
   \leftSyl …_Que di -- \dash riez -- vous d'être e -- xi -- lé_?
   C'est moi, le Roi_! C'est moi_!
   C'est moi, le Roi_: moi_!
-  Le Roi c'est MOI_! Me -- \dash ttez -- le dans la ma -- chine_!
+  Le Roi c'est MOI_! Me -- \dash ttez -- le dans... la ma -- chine_!
   A -- RRÊ -- TEZ ÇA_!
   Et si je vous e -- mme -- nais plu -- tôt faire un tour,
   gli -- sser __ _ sur l'a -- zur, dé -- cou -- vrir un ho -- ri -- zon
