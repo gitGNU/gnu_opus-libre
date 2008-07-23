@@ -151,42 +151,55 @@ ActeUnSceneUnBisBarytonDeux = { \BarytonDeux
 }
 
 ActeUnSceneDeuxBarytonDeux = { \BarytonDeux
-	\relative { 
+	\relative {
+    
 	%%% Air de la Soprano 2 %%%
+  
 	\repeat unfold 21 {R2.*2 R1*2}
+  
 	%%% Récitatif %%%
 	
-	R2.*2 R1 R2.*2 r4 r8 re, mib4 | mib8 mib re4 re8 re \t {re8 re re} |
-	\t { dod dod fa} r4 r8 re | fa4 re8 lab'~ \t {lab fa lab} |
-	mib4 re8 r r4 | R2. | r8 sold4 si r8 | R2. R2 R2. |
-	r2 \parlato sib, | r8 mi4. r8 sol!4. | r4 re r | 
-	r8 re sol16 re8 sol16 dod,8 fad16 dod~ | dod dod re8 re16 re re dod mi8 r |
-	r4 re8 re \t {dod dod mi} | sib4 r2 | R1 |
+	R2.*2 R1 R2.*2 r4 r8 re,(\mp mib4) | mib8 mib re4--( re8) re \t {re8--( re re} |
+	\t { dod dod fa) } r4 r8 re( | fa4-- re8 \< lab'-- ) \! ~ \t {lab fa8.( lab16)}|
+	mib4( \> re8) \! r r4 | R2. | r8 sold4-- \mf si-- r8 | R2. R2 R2. |
+	r2 \parlato sib, \pp | r8 mi4.-- \mp r8 sol!4.-- \> | r4 re-- \! r | 
+	r8 re-.\mf sol16( re8) sol16( dod,8) fad16( dod~ | 
+  dod dod) re8-. re16( re re dod mi8--) r |
+	r4 re8( re) \t {dod( \> dod mi)} | sib4--\! r2 | R1 |
+  
 	%%% Duo %%%
 	
-	R2. R1 R2. R1 | r16 re re re mi8. re16 re re sold8 |
-	r si sold si sold8. sold16 sold8 si~| si4 r2 |
-	R1 R2. R2*2 | r2 r8 mi,16 mi | sold4 r8. sol32 sol si4 r8 sib16 sib |
-	re16 r16 r8 r4 r2 | R2. | 
-	r2 r8 red,16 red | \tt {mi16 red red red red} fad4 r r8 sold |
-	r si4. r8 sold r16 si8. | mi2.~ mi~ mi4 r2 | R1 |
+	R2. R1 R2. R1 | r16 re( \mp re re mi8.--) re16( \< re re sold8--) \! |
+	r si-. \mf sold( si) sold8.-- sold16 sold8-. si--~| si4 r2 |
+	R1 R2. R2*2 | r2 r8 mi,16( \mf mi | 
+  sold4--) r8. sol32( \< sol si4->--) \sfz r8 sib16-- \f sib-- |
+	re16-- r16 r8 r4 r2 | R2. | 
+	r2 r8 red,16-. \p red-. | \tt {mi16( red red \< red red} fad4--\!) r r8 
+  sold-- \mf | r si4.-- r8 sold--( \< r16 si8.-- | 
+  \ten mi2.->-- ) \f ~ mi~ mi4 r2 | R1 |
 	
-	r8 \parlato do r8 red, red16 dod red fad~|
-	fad8 fad16 fad fad8 fad \tt {sold16 fad mid fad la~} la8 fad |
-	r4 mi16 mi mi mi mi la8 fad16 | si4 r2 | R1 R2. R1 R2. R1 R2.*14
-	re2. r4 | r re~ re8 dod4. | mi,2. r4 |
+	r8 \parlato do \sfz r8 red,-. red16--( dod red fad--~|
+	fad8) fad16-. fad-. fad8-.( fad-.) \tt {sold16--( fad mid fad la--~} la8 fad) |
+	r4 mi16-.( mi-. mi-. mi-. mi-.) la8->--( fad16) | si4->-- r2 |
+  R1 R2. R1 R2. R1 R2.*14
+	\ten re2. \f r4 | r re--(~ re8 dod4.-- | mi,2.--) r4 |
 	
-	r2 r8 r16 si lad'8 r16 re, | dod'4 r dod8 re, dod'16 re,16. re32 re16 |
-	sold4 r8 r16 sold sold8 sold16 sold \t {sold8 red fad} | 
-	la!4 r la8 la16. la32 fad16 si8 la32 si | do!4 r r16 do, mi mib sol fad sib la |
-	dod2 r8 re, | dod'2 r4 r8 re, | dod'2 r4 r8 r16 sold |
-	sold sold fad fad sold8 r16 sold si sold sold si | dod4 r8 re, | dod'2 |
-	r4 r8 re, | dod'2 r4 | r4 r16 si re8 r4 | r8 fa, mi'4 | r8 fa, mi'4 |
-	r8 r16 re si si la la | re8 r r r16 re | re si re si mi4 |
-	r16 fad, mi'8~ mi16 fad, mi'8~| mi r r r16 mi re re si re | \parlato sol8 r r4\fermata
-	r8 \parlato {re,16 fa si,8} r8 r2 re8 fa | reb4 r8 reb sib fa' |
-	do4 r8 do do do | fa4. si,!8 r4 | r8 si \t {si si si} |
-	fa'2. | sib,2. r4 | R1*3 |
+	r2 r8 r16 si( lad'8->) r16 re,( | 
+  dod'4->) r dod8-> re,-. dod'16-> re,16.-- re32-. re16-. |
+	sold4-> r8 r16 sold-. \mf sold8-- sold16-. sold-. \t {sold8-.( red-. fad-.} | 
+	la!4--) r \ind #"poco più" la8-> la16.-. la32-. fad16-. si8-> la32( si | 
+  do!4->) r r16 do,--( \< mi-- mib-- sol-- fad-- sib-- la-- |
+	dod2->--) \f r8 re,( | dod'2--) r4 r8 re,( | dod'2--) r4 r8 r16 sold-.( |
+	sold-. sold-. fad-. fad-. sold8-- r16 sold-. si-. sold-. sold-. si-. |
+  dod4->--) r8 re,( | dod'2--) |	r4 r8 re,( | dod'2--) r4 | r4 r16 si( re8) r4 | 
+  r8 fa,( mi'4--) | r8 fa,( mi'4--) |
+	r8 r16 re-.( si-. si-. la-. la-. | re8-.) r r r16 re-.( | 
+  re-. si-. re-. si-. mi4--) |
+	r16 fad,( mi'8--)~ mi16 fad,( mi'8--)~| mi r r r16 mi( re re si re | 
+  \parlato sol8) r r4\fermata
+	r8 \parlato {re,16 fa si,8} r8 r2 re8 \mp ( fa | reb4 ) r8 reb ( sib fa' |
+	do4 ) r8 do ( do do | fa4.-- si,!8) r4 | r8 si( \t {si si si} |
+	fa'2.--\> | sib,2.\! ) r4 | R1*3 |
 	} 
 }
 

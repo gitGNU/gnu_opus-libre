@@ -290,7 +290,7 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
 ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
   \set instrumentName = \SopranoDeuxName
   \set shortInstrumentName = \SopranoDeuxShortName
-  
+  %FIXME: \leftSyl doesn't work in this part (wtf?)
 	Mmm… __ _ _ _ _ _ _ _ _ _ _ _ _ _
 	Mmm… __ _ _ _ _ _ _ _ _ _ _ _ Mm… A -- _ mour… __ _
 	Ma main n'a pas a -- ssez de doigts
@@ -314,7 +314,6 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
 	Dé -- mi -- ssio -- nnez_!
 	J'ai ouï di -- _ re __ _ qu'un é -- tran -- ger
 	é -- tait tan -- tôt a -- rri -- vé…
-  %FIXME: \leftSyl doesn't work here
 	\leftSyl …_é -- _ tran -- _ _ _ ger… \leftSyl …_a -- _ rri -- _ _ _ vé…
 	Mmm… __ _ _ _ _ _ _ \leftSyl …_In -- vi -- \dash tons -- le vers vingt heures.
 	À dî -- ner. À dî -- ner_!
@@ -327,7 +326,7 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
 	du -- _ rant __ _ ce dî -- ner __ _ a -- no -- din_?
 	Un a -- _ pé -- ri -- tif a -- gre -- ssif_?
 	Un plat en for -- me d'a -- tten -- tat_?
-	Au fro -- ma -- _ ge_un __ _ car -- nage_; __ _
+	Au fro -- ma -- _ \leftSyl ge_un __ _ car -- nage_; __ _
 	et, au __ _ mo -- ment des li -- queurs…
 	\leftSyl …_un ou -- trage à la pu -- deur_! __ _
 	
@@ -545,7 +544,7 @@ ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
 ActeUnSceneQuatreSopranoDeuxTexte = \lyricmode {
   \set instrumentName = \SopranoDeuxName
   \set shortInstrumentName = \SopranoDeuxShortName
-  
+  %FIXME: lefSyl doesn't work here.
   É -- tran -- ger, vo -- tre tra -- chée __ _ \dash est -- e -- lle nou -- ée_?
   Vo -- tre bou -- _ che ti -- re -- bou -- cho -- nnée_?
   Vo -- tre go -- rge, en -- gor -- gée, vo -- tre glotte… __ _
@@ -576,7 +575,6 @@ ActeUnSceneQuatreSopranoDeuxTexte = \lyricmode {
   Non_! Non_! Non_! Non, non_! Non, non_! Non_! Non_! Non.
   J'a -- ppré -- cie fort bien son vi -- sa -- ge fin et ra -- cé.
   Je trou -- ve mer -- vei -- lleux ses che -- veux on -- du -- leux. Ah_?
-  %FIXME: lefSyl doesn't work here.
   \leftSyl …_La ma -- gie du my -- stè -- re…
   Mon bon, nul en com -- pa -- rai -- son n'au -- ra votre é -- lé -- gant
   \leftSyl …_men -- ton.

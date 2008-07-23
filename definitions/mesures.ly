@@ -454,6 +454,7 @@ ActeUnSceneDeuxMesures = {
   \time 3/4 R2.*2
   \time 2/2 R1*2  \bar "||"
   \time 3/4
+      \mark \markup \did \ActeUnSceneDeuxAA
       \tempo "Recitativo" 4 = 84
             R2.*2
   \time 4/4 R1
@@ -476,13 +477,15 @@ ActeUnSceneDeuxMesures = {
   \time 3/4 r2
             r4
            _\markup \did \ActeUnSceneDeuxC
-  \time 4/4 R1 
+  \time 4/4 R1
   \time 3/4 R2.
-  \time 4/4 R1 
+  \time 4/4 R1
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 R2. 
-  \time 4/4 R1*2
+  \time 4/4
+      \mark \markup \did \ActeUnSceneDeuxCC
+            R1*2
   \time 3/4 R2.*2
   \time 4/4 R1*2 
   \time 3/4 R2.*2

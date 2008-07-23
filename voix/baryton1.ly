@@ -106,32 +106,31 @@ ActeUnSceneUnBisBarytonUn = { \BarytonUn
 ActeUnSceneTroisBarytonUn = { \BarytonUn
   \relative {
     R2.*11
-    r4 r8 fa,16 fa fa8 mi16 mi | lab4 lab8 lab sol sol |
-    si4 r8 si sol16 si8. | \t {si8 sold si} r4 sib |
-    re8 si4 sib8 re fa,16 si | mi2 r4 |
+    r4 r8 fa,16( \pp fa fa8-- mi16 mi | lab4-- lab8 \< lab sol sol |
+    si4--) \mp r8 si-- \p sol16( si8.) | \t {si8( sold si)} r4 sib-- \mf \< |
+    re8--( si4) sib8-. re-- fa,16( si | mi2->--) \f r4 |
     R2.*7 R1.
-    r4 re re dod r2 | r4 reb reb do r2 |
-    r4 re re dod r2 | r4 reb reb do r2 |
-    r4 dob dob sib r2 |
-    r4 sib8 sib sib4 la r |
-    r8 lab \t { lab sol sib } fad4 r2 |
-    r8 solb \t {solb fa lab} mi4 r2 |
-    re4 dod r8 dod \t {dod4 si re } |
-    sib4 r2 la8 la sol sib |
-    \t { fad' fad fad } \t { fad mi sol } red'4 r16 do do do |
-    mib8 sol,~ \t {sol fa lab} mi'4 r |
-    mi8 reb16 lab fa8 r mi'16 mi reb lab fa8 lab16 \parlato si |
-    r2 r4 \t { fa8 reb mi } |
-    \t { do' do do } do16 do do do \t {do sib sib } \parlato reb8 |
-    R2.
-    sol,16 la mi fad dod4 r |
-    R2*2
-    R2.*3
-    \t { red8 red red } red4 red8 red | \t {red red red } fad4 la |
-    sol8 sol do4 r | R2. r2 r8 re | \t {re do mib} si4 r |
+    r4 re \pp re--( \> dod) \! r2 | r4 reb reb--( \> do) \! r2 |
+    r4 re re--( \> dod) \! r2 | r4 reb reb--( \> do) \! r2 |
+    r4 dob dob--( \> sib) \! r2 |
+    r4 sib8 sib sib4--( \> la) \! r |
+    r8 lab \mp \t { lab--( sol sib } fad4) r2 |
+    r8 solb \t {solb--( fa lab} mi4) r2 |
+    re4--( \p dod) r8 dod \t {dod4--( \> si-- re-- } |
+    sib4--)\! r2 la8( la sol \< sib |
+    \t { fad' \mp \< fad fad } \t { fad mi sol } red'4) \mf r16 do( do do |
+    mib8--) sol,--(~ \< \t {sol fa lab} mi'4--) \f r |
+    mi8-- reb16-. lab-. fa8-- r mi'16-- mi-. reb-. lab-. fa8-- lab16(\parlato si)|
+    r2 r4 \t { fa8( \mf \< reb mi } |
+    \t { do'--\! do-- do--)}do16-.( do-. do-. do-.)\t{do( sib sib}\parlato reb8)|
+    R2. sol,16-.( la-. mi-. fad-. dod4--) r | R2*2 R2.*3
+    
+    \t { red8(\p red red}red4) red8( red) |\t{red( red red } fad4--) \< la-- \!|
+    sol8--( sol-- do4--) r | R2. r2 r8 re \mf | \t {re--( do mib} si4) r |
     R2.*5
-    r1 r4 r8 do, | do4 do8 do sol'4 sol8 sol sib sib \t { r lab si} |
-    sol2 r mi8 mi mi mi | mib4 mib lab8 lab sol sol si2~ | si4 r r1 |
+    r1 r4 r8 do,\mp (| do4-- do8 do sol'4--\< sol8 sol sib--\! sib \t{r lab\> si}|
+    sol2) \! r mi8( \mf \> mi mi mi | 
+    mib4 mib) \! lab8( \mp \> lab sol sol \ten si2 ) \pp ~ | si4 r r1 |
     R1. R1*5/4 R1 R2. R2 |
   }
 }

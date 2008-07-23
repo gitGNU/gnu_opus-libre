@@ -30,7 +30,7 @@ includePaper = \paper {
   
 %% Look and feel --------------------------------------------------%
   %FIXME: this doesn't work well.
-  %systemSeparatorMarkup = \slashSeparator
+  systemSeparatorMarkup = \slashSeparator
 
 %%-----------------------------------------------------------------%
 }

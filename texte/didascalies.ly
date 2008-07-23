@@ -195,13 +195,18 @@ entre les mains."
 
 %------------------------------------------------------------------%
 
-ActeUnSceneDeuxA = "Elle n’achève pas sa phrase, apercevant le
-Roi qui entre par l’autre côté sans la voir."
+ActeUnSceneDeuxA = "Elle laisse sa phrase en suspens, absorbée dans sa rêverie."
 
-ActeUnSceneDeuxB = "Le Roi reste figé un temps ; puis,
-manifestement embarrassé..."
+ActeUnSceneDeuxAA = "Entre le Roi, sans la voir, de l'autre côté de la scène.
+Elle le regarde s'avancer en silence, offrant un instant l'image d'une épouse
+effacée, sinon craintive ; mais c'est sans le moindre effarouchement qu'elle
+l'aborde."
+
+ActeUnSceneDeuxB = "Le Roi reste figé un temps ; puis, manifestement embarrassé..."
 
 ActeUnSceneDeuxC = "La Reine réfléchit."
+
+ActeUnSceneDeuxCC = "Le Roi répond d'abord machinalement, puis il sursaute."
 
 ActeUnSceneDeuxD = "Ravi, le Roi sort de sa poche un collier de pierres
 précieuses, et va pour le lui donner en récompense..."
