@@ -17,53 +17,67 @@ BarytonDeux = {
 PrologueBarytonDeux = { \BarytonDeux
  \relative { 
   \partial 4 r4 | R2.*3 R1 | \repeat unfold 4 { R2*2 R2.} R2*2 |
-  \accdet { re,8.\f dod16~ dod8 mi } r mi16 ( re | 
+  re,8.->--(\f dod16->--~ dod8 mi->--) r mi16 ( re | 
   sol4 -- ) r8 la16 ( sol | sib4 -- ) r8 do!16 \< ( sib |
   mib4 \ff -- ) r2 | R2 R2. | R2 R2. R2 R2. R2*2 R2. |
-  r4 r16 \ind #"sec" re, \mf re re | \acc mib8 ( re ) r  \st re 
-  | \det fa8. ( re16 ) r4 |
-  r8 \det sib' \acc dod8. \st { sold16 | si8} \ten mi4.->- ~ | mi2~ | mi4.( re,8) | R2
+  r4 r16 \ind #"secco" re, \mf re re | mib8-> ( re ) r  re-. 
+  | fa8.-- ( re16 ) r4 |
+  r8 sib'-- \< dod8.-> sold16-. | si8-. \ten mi4. \ff -> ~ | 
+  mi2~ | mi4.( re,8) | R2
   r8 \cmb #"f" #"molto" re'-- re-- re-- re8.-- fa,16 |
-  \acc lab4 r16 \st {do, fa solb} \det mib4 |
-  r8 \det {re' re re re8.} mi,16 | sib'4-> r8 sib,\mf -. \t {sib-- ( lab sib)} |
-  reb4-- \st {sib8 sib} \t { reb-- ( sib reb) } | mi4-- r r8 r16 solb( \<|
+  lab4-> r16 do,-. fa-. solb-. mib4-- |
+  r8 re'-- re-- re-- re8.-- mi,16 | 
+  sib'4-> r8 sib,\mf -. \t {sib-- ( lab sib)} |
+  reb4-- sib8-. sib-. \t { reb-- ( sib reb) } | mi4-- r r8 r16 solb( \<|
   lab4\! -- ) fa8 -- r r r16 sold ( \< | la!4.-- ) \! fad8-. r4 |
-  sib4\ff -- sib8 sib4 sib8 | sib4. sib8 \t { si( si si } |
-  \ten re2.) r4 | R2*3 
+  sib4\ff ->( sib8-. sib4-- sib8-. | sib4.--) sib8 \t { si(\< si si } |
+  \ten re2.)\! r4 | R2*3 
   
   %%% Solo Ténor
   
   R1*2 R2. R1 R2. R1
-  r4 r16 mib,\mp mib mib | mib8 r mib-- mib16 mib | mib8--( mib) r re |
-  re( re fa fa | re) r r re \t {reb( reb reb)} | lab'4( fa8) r r r16 reb |
-  mi4( sib8) r r \det {sib | \t {la ( la do)} } lab2~ lab8 r r2 | R2.*6
+  r4 r16 mib,(\mp mib mib | mib8) r mib--( mib16 mib) | mib8--( mib) r re( \< |
+  re re fa \> fa | re)\! r r re \t {reb( \< reb reb)} | 
+  lab'4--(\> fa8)\! r r r16 reb |
+  mi4--(\>  sib8)\! r r sib-- \pp | 
+  \t {la-- ( la-- do--)} \ten lab2~ lab8 r r2 | R2.*6
   R4.*6^\fermataMarkup
   
   %%% Andantino
   
   r4 re16( \mp re | reb8 ) -. r16 reb( fa8--)~| fa fa16( fa mi mi lab8)-- r4 |
-  R4.*2 \det {dod,8( dod dod | re4)} r8 r16 sol( si8-.) r |
+  R4.*2 dod,8( \p dod dod | re4) r8 r16 sol( \mp si8-.) r |
   red,8-- r4 R4. r4 si'8( |
-  sol4-- ) lad8( |red,-- ) r4 r4. r8 lad' r | red,4 fad8 | la! r4 R4.
-  sib16 sib8. r8 | re,!8 re sol | sib4 r8 | R4.*2 re,8 re re la' re, re |
-  R4.*3 r8 sol r mib r re r \acciaccatura si! sib' r | R4.
-  sib16 sib8 re,16 re re | mib8 re16 re re re | fa8 mi16 mi mi mi | sol4 fa8 fa8. fa |
-  \t {sib16 sol sol} sol4~ | sol8. sol | sol8 sol sol | lab4 r8 | R4.*2 
-  r8 reb,16 solb do8 | R4.*16
-  \parlato {sib,32 la lab8.} r8 R4. r4 
-  \parlato {mib'32 reb do16} R4.*3 R2*5/4
-  \t {fad16 sol la} do4~ do8. sib16 sol fa | re8. mi16 si8~ si8. re16 sold,8~| sold4 r8 r4\fermata r8 |
-  r2 r4 \t {la8 la la} | re4 r16 re re re fa8 fa16 fa mib8. fa16 | mib8 re r4 r2 |
+  sol4-- ) lad8( |red,-- ) r4 r4. r8 lad'-. r | red,4--( fad8-.) | la!-- r4 R4.
+  sib16--( sib8.) r8 | re,!8( re sol | sib4--) r8 | 
+  R4.*2 re,8(\< re re) la'(\> re,) \! re |
+  R4.*3 r8 sol--( r mib-- r re-- r \acciaccatura si! sib'--)\sfz r | R4.
+  sib16\ff sib8 re,16(\p \< re re) | mib8--( re16 re re re) | 
+  fa8--( mi16 mi mi mi) | sol4--( fa8 fa8.-- fa--) |
+  \t {sib16->(\! sol sol)} sol4~ | sol8. sol | 
+  sol8--( \< sol-- sol-- | lab4--)\! r8 | R4.*2 
+  r8 reb,16( solb do8->) | R4.*16
+  \parlato {sib,32( la lab8.)} r8 R4. r4 
+  \parlato {mib'32( reb do16)} R4.*3 R2*5/4
+  \t {fad16->(\< sol la} do4)\f~ do8. sib16 sol( fa) | 
+  re8.-- mi16->( si8)~ si8. re16->( sold,8)~| sold4 r8 r4\fermata r8 |
+  r2 r4 \t {la8(\mp\( la la} | 
+  re4--) r16 re-. re-. re-. fa8-- fa16 fa mib8.-- fa16 | mib8( re)\) r4 r2 |
   R1 R1.*2
-  r2 re16 re sol4 r16 fa | lab4 fa8 r r2 | R1 R1.*2
-  r8 sold4 si r8 \t { r fa fa } | lab4 fa8 r r2 | 
+  r2 re16\( re sol4-- r16 fa | lab4--( fa8)\) r r2 | R1 R1.*2
+  r8 sold4--(\mf si--) r8 \t { r fa( fa) } | lab4--( fa8) r r2 | 
   R2.*7 R2*2 R2. R2 R2.*2 R1*2
-  r2 lab,8 lab | sol'2 r4 | r si, si | mi2 r4 | r2 re8 re | 
-  la'4 r | r8 la sol sol | do2. r4 | R2.
-  \parlato la4 r16 re, re re | mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 | fa8 re r4
-  do8 do mib8. re16 | do8 fa4 lab8~ | lab fa fa sol | re4
-  r8 re16 re mib4 r16 re re re fa4 r8 lab fa lab mib8. fa16 mib8 re
-  r8 re16 re mib4 r16 re re re fa4 r8 lab fa lab mib8. fa16 mib8 re
+  r2 \ind #"dolce" lab,8(\p lab | sol'2) r4 | 
+  r si,( si | mi2) r4 | r2 re8( re | 
+  la'4-- r | r8 la sol\> sol | do2.\pp) r4 | R2.
+  \parlato la4 r16 re,(\f re re | mib4-- r16 re re re | 
+  fa4--) r8 lab--( lab-- lab-- sib8.-> si16-. | fa8-. re-.) r4
+  do8-.( do-. mib8.-> re16-. | do8-. fa4-> lab8->--~ | 
+  lab fa-. fa-. sol-. | re4--)
+  r8 re16( re mib4-- r16 re re re fa4--) r8 lab-.( |
+  fa-. lab-. mib8.-> fa16-. mib8-. re-.)
+  r8 re16( re mib4--) r16 re( re re fa4--) r8 lab-.|
+  fa( lab) mib8.--( fa16) mib8-.( re-.)
   r4 R2*14 |
   }
 }

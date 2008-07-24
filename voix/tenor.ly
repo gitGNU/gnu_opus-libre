@@ -17,21 +17,25 @@ Tenor = {
 PrologueTenor = { \Tenor
 	\relative { 	
     \partial 4 r4 | R2.*3 | R1 |
-    R2*2	R2. R2*2 | r2 r8. mi,32\mp ( mi | sold4--) r8. sol32( sol | si4--) r8. sib32( \< sib |
-    re4.) \! r8 r8. mi,32\mf ( mi | la4-- ) r8. sol32 ( sol | do4-- ) r8. sib32( \< sib |
-    mib4.)\! r8 r8. mi,!32\f ( mi | si'!4--) r8. la32 ( la | mi'4-- ) r8. re32 \< re |
-    \parlato la'4 \! r2 | R2*2 r8 \stdet {mi? mi mi} fa4 ->- ~| fa8 r r4 | 
-    r8 \stdet {mi mi mi mi mi} | fa4-- \stdet {mi8 mi} \t {sol( mi mi} mi4.) mi8-. |
-    r4 \ind #"(meno)" reb8( do) reb( do) mi( reb) do4 |
-    r la\mp \t {do la la} << la2. \new Voice = "dummy" {s2\> s4\!}>> |
+    R2*2	R2. R2*2 | r2 r8. mi,32\mp ( mi | sold4--) r8. sol32( sol | 
+    si4--) r8. sib32( \< sib | re4.--) \! r8 r8. mi,32\mf ( mi | 
+    la4-- ) r8. sol32 ( sol | do4-- ) r8. sib32( \< sib |
+    mib4.--)\! r8 r8. mi,!32\f ( mi | si'!4--) r8. la32 ( la | 
+    mi'4-- ) r8. re32 \< re |
+    \parlato la'4 \! r2 | R2*2 r8 mi?-.( \mf mi-. mi-. fa4->) ~| fa8 r r4 | 
+    r8 mi-.( mi-. mi-. mi-. mi-.) | 
+    fa4--( mi8-. mi-.) \t {sol( mi mi} mi4. mi8-.) |
+    r4 \ind #"meno" reb8( do) reb( do) mi( reb) do4 |
+    r la--\mp \t {do--( \> la la} la2.)\! |
     R2 r4 sib16-- ( \p  la ) r8 | r do16-- ( la ) r4 | R2
-    r4 \t {r8 dod ( \p \> si} | sold4. ) r8 \! | R2*2 R2.*6
+    r4 \t {r8 dod ( \mp \> si} | sold4. ) r8 \! | R2*2 R2.*6
     r2 sib16 \mp ( lab ) r8 | r4 do16 ( la ) r8 r4 | R2.*2
     R1 R2*3
     
-    r2\fermata r4 \t { \ind #"minaudant" re ( \pp re8 } | sol sol sol lab fa4 ) 
-    \t {r8 fa ( sol} |
-    re4  )r \t {r si8 ( } sib4 ) r8 dod ( -- ~ \t {dod4 la la } | lab ) 
+    r2\fermata r4 \t { \ind #"minaudant" re ( \pp re8 } | 
+    sol-- sol sol lab fa4-- ) 
+    \t {r8 fa \> ( sol} |
+    re4 \! )r \t {r si8 ( } sib4 ) r8 dod ( -- ~ \t {dod4 la la } | lab ) 
     \t {r8 lab ( lab} sol4 ) |
     r8 si4 -- ( sol8 \t {sol4 sol8~ } sol4 ) ~ | sol2 \>  | R2*3\! R2.*11 R4.*9
     r4 lab16 \p lab  | sib8 ( sol16) r sib sib | reb8 -- r4 | R4.*4
@@ -40,25 +44,38 @@ PrologueTenor = { \Tenor
     la8 \p r16 la \> la8| la4 \! r8 | R4.*2
     reb8\pp -- r mib16 ( reb reb4 ) r8|R4.*2
     re!8 -- r fa16 ( re| re4 ) r8 | R4.*4
-    \det {la8( la la }| \parlato la ) r4 | R4.*7
-    r8 dod16 dod r dod | dod dod r dod dod r |
-    dod dod r red32 dod mi8 | R4. r8 fa4 |
-    r8 fa,16 fa re re | sol sol fa fa sib sib lab lab reb reb sib sib |
-    mib8 r16 dod32 dod mi8 |
-    r r16 re re re | sol4 re8 re r re | lab'4.~ lab8. re, | re4 r8 |
-    r r16 si si8 | re8. si | \times 6/4 {si16 si si si } |
-    si4 r8 R4.*2 \parlato {si32 lad sold8.} r8 R4. r8 \parlato {lad32 si dod8.} |
+    la8( la la| \parlato la ) r4 | R4.*7
+    
+    r8 dod16-.\mf dod-. r dod-. | dod-. dod-. r dod-. dod-. r |
+    dod-. dod-. r red32( dod mi8--) | R4. r8 fa4-- \sfz |
+    r8 fa,16-.( \p \< fa re-. re | 
+    sol-. sol fa-. fa sib-. sib lab-. lab reb-. reb sib-. sib |
+    mib8-.) \f r16 dod32( dod mi8->) |
+    r r16 re(\ff re re | sol4->-- re8 re r re | 
+    \ten lab'4.->--~ lab8. re, \> | re4 \! ) r8 |
+    r r16 si \f si8 | re8.->-- si-- | \times 6/4 {si16--( si-- si-- si-- } |
+    si4--) r8 R4.*2 \parlato {si32( lad sold8.)} r8 
+    R4. r8 \parlato {lad32( si dod8.)} |
     R4.*2 R2*5/4
-    \t {la!16 do! re} fa4~ fa8. mib16 do sib |reb sol,~ sol4 sib16 fa~ fa4~ | fa r8 r4\fermata r8 |
-    R1*3 r2 r8 mi~ mi16 mi mi8 | mi4 mi8 mi mi mi mi mi mi16 mi8. mi8 mi | mi4 mi8 r r1 |
-    R1*2 r2 mi8 mi16 mi \t {mi8 mi mi} | mi4 r8 mi \t {mi mi mi } mi r16 mi mi8 mi~ \t {mi mi mi} | sol4 mi8 r r1 |
-    R1*2 r8 r16 mi~ mi8 mi~ mi16 mi8. | si'4. dod8~ \t {dod lad fad} \t {fa lad la} dod r r4 |
-    R2. r4 re2~ | re8 la fad fad mi mi | do'!4 r la8 la | do4 sold8 sold si sol! red si' | sol4 r2 |
-    r8 re' r4 | dod r8 dod si4 | r8 si lad4 r8 lad | mi'4 r4 r2 | R1 |
-    R2.*5 R2*2 r4 la,8 re4 la8~la16 si si8 | fad4 r8 la4 r8 | mib4 r |
+    \t {la!16->( \< do! re} fa4) \f~ fa8. mib16 do( sib) |
+    reb->( sol,)\>~ sol4 sib16->( fa) \!~ \ten fa4~ | fa r8 r4\fermata r8 |
+    
+    R1*3 r2 r8 mi--(\mf~ mi16 mi-> mi8 | 
+    mi4-- mi8 mi mi mi mi mi mi16-- mi8. mi8 mi | mi4-- mi8) r r1 |
+    R1*2 r2 mi8--( mi16 mi \t {mi8-- mi mi} | 
+    mi4 r8 mi \t {mi mi mi } mi r16 mi mi8 mi--~ \t {mi mi mi} | 
+    sol4-- mi8) r r1 |
+    R1*2 r8 r16 mi--(\<~ mi8 mi--~ mi16 mi8.-- | 
+    si'4.--)\mf dod8(~ \t {dod lad fad} \t {fa\> lad la} dod) \! r r4 |
+    R2. r4 re2--(\pp~ | re8 la fad-. fad-. mi-. mi-. | 
+    do'!4-.) r la8( la | do4--) sold8( sold si-- sol! red si' | sol4--) r2 |
+    r8 re'-.(\pp r4 | dod-. r8 dod-. si4-. | 
+    r8 si-. lad4-.\> r8 lad-. | mi'4-.) \! r4 r2 | R1 |
+    R2.*5 R2*2 r4 la,8-.\f re4->-- la8->~la16 si-. si8-. | 
+    fad4-- r8 la4->-- r8 | mib4->-- r |
     R2*22
-    mi'8 r r r16 si | re8 r r la16 si sold8 r r4 | R2 
-    mi8 mi sold sol | si r si si | sib r sib r | mi r r4 |
+    mi'8-.\p r r r16 si-. | re8-. r r la16-. si-. sold8-. r r4 | R2 
+    mi8-.( mi-. sold-. sol-. | si-- r si-. si-. | sib-- r sib-- r | mi-.) r r4 |
 	}
 }
 

@@ -79,23 +79,28 @@ ActeUnSceneUnSopranoUn= { \SopranoUn
 
 ActeUnSceneTroisTerSopranoUn= { \SopranoUn
 	\relative {
-    R2*3 R2. R2*2 R2.| r2 r8 sib'16 sib 
-    sib8 sib16 sib sib8 sib16 sib sib sib sib sib |sib4 r2 | R2.
-    sib8 mib16 sib la8 re16 lab r8. lab16 | lab lab lab reb sol,8 do16 fad,16~ fad si fad8|
-    mib8 r r4 r2 | r8 do'16 do mi8 dod16 dod mi8. do16 la do sold do | fa4 r r2 | R1*3
+    R2*3 R2. R2*2 R2.| r2 r8 sib'16-.( \mp sib-. 
+    sib8-- sib16-. sib-. sib8-- sib16-. sib-. sib-. sib-. sib-. sib-. |
+    sib4--) r2 | R2.
+    sib8--( mib16-. sib-. la8-- re16-. lab-.) r8. lab16-.( | 
+    lab-. lab-. lab-. reb-. sol,8-- do16-. fad,16--~ fad si-. fad8-.|
+    mib8->-.) r r4 r2 | r8 do'16-.( \mf do-. mi8-- dod16-. dod-. mi8.--)
+    do16-.( la-. \< do-. sold-. do-. | fa4--) \! r r2 | R1*3
     
-    R2.*33 do?8 dod16 dod do8 do16 mi~ mi8 dod |
-    r do dod dod do do | fa2. | dod4 r2 | R2.*3 |
-    R1 R2. r8 sib sib sib sib sib sib sib la4. la8 |
-    r sib sib4 sib8 sib sib4 sib8 sib sib4 la8 la dod4. dod8 |
+    R2.*33 do?8--( \mp dod16-. dod-. do8-- do16-. mi--~ mi8 dod-.) |
+    r do( \< dod dod do do | fa2.--\mf | dod4) r2 | R2.*3 |
+    R1 R2. r8 sib( \mp sib sib sib sib sib sib la4.-- la8) |
+    r sib( sib4 sib8 sib sib4 sib8 sib sib4 la8 \> la dod4.-- dod8 \! ) |
     R2.*2 
-    r2 r8 r16 la | dod4 r2 | R2. 
-    r2 r8 r16 do! | mi4 r2 | R2.
-    r2 r8 mib | sol2 r4 |
-    fad8 r r4 r8 r16 re |
-    sold, si mi sol sib2~ | sib2.~ | sib4 sib r | R2.*4 |
-    \acciaccatura la16 re,8 fa \acciaccatura fad16 dod4 dod8 \acciaccatura re16 la8 |
-    sold4 \t { r8 sold la } mib mib16 sold | re4 r2 | R2.*10
+    r2 r8 r16 la( \< | dod4--) \! r2 | R2. 
+    r2 r8 r16 do!( \< | mi4--) \! r2 | R2.
+    r2 r8 mib( \mf | sol2--) r4 |
+    fad8-- r r4 r8 r16 re( |
+    sold, \< si mi sol  \ten sib2 \f ~ | sib2.~ | sib4 sib) r | R2.*4 |
+    \acciaccatura la16 \f re,8-> fa-. \acciaccatura fad16 dod4-> dod8-. 
+    \acciaccatura re16 la8-. |
+    sold4->-- \t { r8 sold-.( \> la-. } mib-- mib16-. sold-. | 
+    re4-- ) \! r2 | R2.*10
 	}
 }
 
