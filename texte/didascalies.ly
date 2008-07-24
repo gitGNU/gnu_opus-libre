@@ -355,6 +355,20 @@ ActeUnSceneQuatreU = "L'Étranger tourne les talons et se met en chemin."
 %                             ACTE II                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+EntracteA = "La musique commence dans le noir. Chaque
+personnage est à un endroit différent de la
+scène, seul et perdu dans ses pensées (divers
+accessoires, bonnets de nuit ou autres,
+suggèrent qu'ils n'arrivent pas à dormir). Les
+lumières s'allument tour à tour pour faire
+apparaître les différents personnages, à
+mesure qu'ils prennent la parole (les autres
+personnages restant alors dans le noir)."
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             ACTE II                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%  Premier Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeDeuxSceneUnA = "Dans le noir et le silence, le Docteur
@@ -665,14 +679,19 @@ Docteur bouscule Dieu (sans un regard), et entreprend de grimper dans la machine
 
 ActeDeuxSceneTroisZI = "Le Roi s'avance et embarque laborieusement."
 
-ActeDeuxSceneTroisZJ = "La Reine grimpe à son tour dans la machine.
+ActeDeuxSceneTroisZJ = "Tout le monde se tourne vers la Reine,
+qui grimpe à son tour dans la machine. Un temps.
 Elle semble chercher en vain des rimes en
-«tion», pour simplement finir par lancer :"
+«tion»..."
 
-ActeDeuxSceneTroisZL = "Tous les regards se tournent vers l'Étranger ; mais
-c'est Dieu qu'il désigne."
+ActeDeuxSceneTroisZJJ = "Le choeur répète son motif,
+pour l'encourager ; mais elle finit par lancer simplement :"
 
-ActeDeuxSceneTroisZM = "Le Chef de la Garde s'exécute."
+ActeDeuxSceneTroisZL = "Tous les regards se tournent maintenant
+vers l'Étranger ; mais c'est Dieu qu'il désigne."
+
+ActeDeuxSceneTroisZM = "Le Chef de la Garde s'exécute, enhardi
+par le coup de poing qu'il a donné au Roi."
 
 ActeDeuxSceneTroisZN = "En prenant place, Dieu bouscule le Roi, qui choit
 sur une grosse manette. La machine a un soubresaut, et la musique s'interrompt."

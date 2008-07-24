@@ -357,13 +357,13 @@ ActeDeuxSceneTrois = {
 	  composer =  \OperaPartition
     tagline = \OperaNotice
   }
-  %
+  %{
   \score {
 	  \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneUn
     \header {
@@ -405,13 +405,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %}
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneUn
     \header {

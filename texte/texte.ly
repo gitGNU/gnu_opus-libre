@@ -65,7 +65,7 @@ PrologueBarytonDeuxTexte = \lyricmode {
   A -- llons a -- llons, Chef de la Ga -- rde,
   j'ai trop be -- soin de toi en ces mo -- ments gra -- ves, très gra -- ves_;
   ex -- trê -- me -- ment graves… __ _
-  Pa -- \dash rle -- moi un peu __ _ de cet é -- tran -- ger.
+  Pa -- \dash rle -- moi un peu __ _ de cet É -- tran -- ger.
   Je ne sais pas… 
   \dash Est -- il vert_? 
   \dash A -- \leftSyl t_—_il huit bras_?
@@ -74,7 +74,7 @@ PrologueBarytonDeuxTexte = \lyricmode {
   vingt pieds de haut_?
   Vingt pieds de la -- _ rge_?
   Vingt pieds de \leftSyl biais_?!
-  A -- LORS, à quoi \dash voit -- on que cet é -- tran -- ger
+  A -- LORS, à quoi \dash voit -- on que cet É -- tran -- ger
   qui s'est é -- cra -- sé dans sa ma -- chi -- ne vo -- lante __ _ 
   est un é -- tran -- ger_?
   \dash Est -- ce tout_?
@@ -87,7 +87,7 @@ PrologueBarytonDeuxTexte = \lyricmode {
   Ê -- tre Roi… Ê -- tre Roi… Ê -- tre Roi \leftSyl …_c'est ê -- tre seul.
   RAAH_! C'est é -- ner -- vant, très é -- ner -- vant_;
   ex -- trê -- me -- ment é -- ner -- vant.
-  Je m'en vais de ce pas voir __ _ cet é -- tran -- ger.
+  Je m'en vais de ce pas voir __ _ cet É -- tran -- ger.
   É -- ner -- vant, très é -- ner -- vant_; 
   ex -- trê -- me -- ment é -- ner -- vant.
   É -- ner -- vant, très é -- ner -- vant_; 
@@ -153,7 +153,7 @@ ActeUnSceneUnSopranoUnTexte = \lyricmode {
   Mais il est é -- vei -- llé_; je vais l'in -- te --rro -- ger.
   
   \ital Hm -- \ital hmm. 
-  É -- tran -- ger, é -- tran -- ger, est-ce que vous m'en -- ten -- dez_?
+  É -- tran -- ger, É -- tran -- ger, est-ce que vous m'en -- ten -- dez_?
   Co -- mmen -- çons, co -- mmen -- çons, quel est donc vo -- tre nom_?
   C'est pas tout, c'est pas tout, a -- lors d'où ve -- \dash nez -- vous_?
   En -- nuy -- eux, en -- nuy -- eux_; a -- \dash vez -- vous mal aux yeux_?
@@ -312,7 +312,7 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
 	se lit \dash par -- de -- ssus vos sour -- cils_?
 	J'ai la so -- lu -- tion __ _ tou -- te tra -- cée_!
 	Dé -- mi -- ssio -- nnez_!
-	J'ai ouï di -- _ re __ _ qu'un é -- tran -- ger
+	J'ai ouï di -- _ re __ _ qu'un É -- tran -- ger
 	é -- tait tan -- tôt a -- rri -- vé…
 	\leftSyl …_é -- _ tran -- _ _ _ ger… \leftSyl …_a -- _ rri -- _ _ _ vé…
 	Mmm… __ _ _ _ _ _ _ \leftSyl …_In -- vi -- \dash tons -- le vers vingt heures.
@@ -352,7 +352,7 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
 	Oui, oui_?
 	Euh… Non, non_; ce… \leftSyl …_ce se -- rait u -- ne trop lou -- _ rde 
 	res -- pon -- sa -- bi -- li -- té… que de dé -- mi -- ssio -- nner…
-	Un é -- tran -- ger, très é -- tran -- ger_; ex -- trê -- me -- ment
+	Un É -- tran -- ger, très é -- tran -- ger_; ex -- trê -- me -- ment
 	é -- tran -- ger. __ _
 	À dî -- ner_? À dî -- ner_?!? À dî -- ner_?…
 	D'un dî -- ner do -- \dash nnons -- nous l'i -- dée…
@@ -386,7 +386,7 @@ ActeUnSceneTroisTenorTexte = \lyricmode {
   \set shortInstrumentName = \TenorShortName
   
   É -- tran -- ger…
-  É -- tran -- ger, é -- tran -- ger_!
+  É -- tran -- ger, É -- tran -- ger_!
   Le Roi vou -- drait sa -- voir si vous pré -- fé -- rez
   le chaud ou le froid… \leftSyl …_et au -- ssi
   si vous ai -- mez quand ça pi -- que.
@@ -456,7 +456,7 @@ ActeUnSceneTroisBisBarytonDeuxTexte = \lyricmode {
   fai -- re l'a -- ffaire_?
   J'ai là… u -- ne __ _ ques -- tion gra -- ve, très gra -- ve_;
   ex -- trê -- me -- ment gra… __ _
-  Un é -- tran -- ger s'est é -- cra -- sé sur le châ -- teau_;
+  Un É -- tran -- ger s'est é -- cra -- sé sur le châ -- teau_;
   que dois -- je fai -- re de lui_? __ _
   Main -- te -- nant, __ _ il me sem -- ble
   me sou -- ve -- nir pour -- quoi je ne m'é -- tais pas
@@ -625,11 +625,11 @@ ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
   ex -- trê -- me -- ment a -- mné -- sique…
   Mon dieu_! Mon dieu_! Dieu_!
   Dieu, Dieu, __ _ Dieu_! __ _ _
-  Cet é -- tran -- ger sou -- tient qu'il pou -- rrait ê -- tre dieu_;
+  Cet É -- tran -- ger sou -- tient qu'il pou -- rrait ê -- tre dieu_;
   ce -- la se -- rait fâ -- cheux, très fâ -- cheux_;
   ex -- trê -- me -- ment fâ -- cheux.
   \ital Ah, \ital non_! Gaaaaa -- rde_! Chef de la Gaaaaa -- rde_!
-  Ren -- vo -- yez cet é -- tran -- ger en pri -- son, il me 
+  Ren -- vo -- yez cet É -- tran -- ger en pri -- son, il me 
   fait per -- dre la rai -- son.
   Non, non, __ _ non… Je dois ré -- flé -- chir à tout ça.
   Non, non, __ _ non_; non non non non…
@@ -666,7 +666,7 @@ ActeUnSceneQuatreTenorTexte = \lyricmode {
   \leftSyl …_d'u -- ne pri -- se de ka -- ra -- té_?
   Là, vous n'en au -- rez pas.
   A -- lerte_! A -- lerte_! à l'é -- va -- sion_!
-  L'é -- tran -- ger veut s'é -- va -- der.
+  L'É -- tran -- ger veut s'é -- va -- der.
   Mon œil, par -- di_! Peut -- ê -- tre vou -- \dash liez -- vous
   a -- ssa -- ssi -- ner le Roi, ou me -- ttre le feu i -- \dash ci -- bas_!
   Non non __ _ non, non non non non non_; non non non non non non non_;
@@ -698,6 +698,15 @@ EntracteSopranoUnTexte = \lyricmode {
 }
 
 EntracteSopranoDeuxTexte = \lyricmode {
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- _ eux...
+  Mes co -- ffrets, mes boî -- tiers, sont tous
+  pleins à cra -- quer... Je ne sais où ran -- ger
+  ce tout pe -- tit co -- llier_:
+  en -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
 }
 
 EntracteContraltoTexte = \lyricmode {
@@ -707,9 +716,32 @@ EntracteTenorTexte = \lyricmode {
 }
 
 EntracteBarytonUnTexte = \lyricmode {
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  Ce Roi sans foi ni loi ne cher -- che -- ra qu'u -- ne cho -- se
+  ma foi, c'est le moy -- en de __ _ m'é -- xé -- cu -- ter.
+  La li -- ber -- té, ça je le sais, 
+  ja -- mais je ne l'ob -- tien -- drai_;
+  en -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
 }
 
 EntracteBarytonDeuxTexte = \lyricmode {
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
+  Que fai -- re_? C'est un my -- stè -- re.
+  Que faire, my -- stère, que fai -- _ rRREUAAH_!
+  Cet É -- tran -- ger a le don de tout com -- pli -- quer.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1029,11 +1061,19 @@ ActeDeuxSceneTroisSopranoUnTexte = \lyricmode {
   E -- mme -- \dash nez -- moi…
   En -- vo -- \dash lez -- moi_!
   A -- RRÊ -- TEZ ÇA_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   É -- du -- ca -- tion_! In -- stru -- cti -- on_!
   Ci -- vi -- li -- sa -- tion_! Hu -- ma -- ni -- sa -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  tion tion tion tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash A -- tten...
+  \dash —_tion_!
 }
 
 ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
@@ -1075,10 +1115,18 @@ ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
   E -- mme -- \dash nez -- moi, en -- vo -- \dash lez -- moi…
   En -- vo -- \dash lez -- moi_!
   A -- RRÊ -- TEZ ÇA_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  tion tion tion tion_! tion tion tion tion tion tion_!
+  tion tion tion tion tion tion_;
+  tion tion tion, tion tion tion tion tion_! tion tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash A -- tten...
+  \dash —_tion_!
 }
 
 ActeDeuxSceneTroisContraltoTexte = \lyricmode {
@@ -1094,8 +1142,18 @@ ActeDeuxSceneTroisContraltoTexte = \lyricmode {
   elle doit fi -- nir en con -- fe -- ttis,
   brû -- lée pen -- due no -- yée_!
   Des -- truc -- tion_! Dé -- mo -- li -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  Ma -- lé -- di -- ction_!
+  \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash A -- tten...
+  \dash —_tion_!
 }
 
 ActeDeuxSceneTroisTenorTexte = \lyricmode {
@@ -1115,10 +1173,19 @@ ActeDeuxSceneTroisTenorTexte = \lyricmode {
   C'est lui, le Roi_!
   C'est lui, le Roi_! C'est lui_!
   A -- RRÊ -- TEZ ÇA_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  tion tion, tion tion tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash A -- tten...
 }
 
 ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
@@ -1171,10 +1238,19 @@ ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
   Et si je vous e -- mme -- nais plu -- tôt faire un tour,
   gli -- sser __ _ sur l'a -- zur, dé -- cou -- vrir un ho -- ri -- zon
   d'oi -- \dash seau -- lyre et __ _ de co -- ton_?
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  Me -- \dash ttez -- le donc dans l'a -- vion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash A -- tten...
 }
 
 ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
@@ -1203,10 +1279,17 @@ ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
   En -- vo -- \dash lez -- moi… __ _
   I -- ci_; j'a -- sphy -- xie_!
   A -- RRÊ -- TEZ ÇA_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
-  \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   Ex -- ploi -- ta -- tion_! Hé -- si -- ta -- tion_!
   Do -- mi -- na -- tion_! In -- _ dé -- ci -- sion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_!
+  tion tion tion tion tion_! tion tion tion tion_; tion tion_!
+  tion tion tion... tion tion tion_; tion tion_!
+  \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
+  \dash tion -- \dash tion -- tion_! \dash A -- tten...
+  \dash —_tion_!
 }
 

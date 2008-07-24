@@ -211,6 +211,19 @@ ActeUnSceneQuatreBarytonUn = { \BarytonUn
 }
 
 EntracteBarytonUn = {
+  \relative { \BarytonUn
+    R2*9 R1*11
+    r4 r8 re,16 re mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 |
+    fa4. dod'8 r2 |
+    dod4 dod dod8 dod4 dod8 |
+    dod4 r16 dod si sold \t { fad8 fad fad} \t { si sold si } |
+    dod4 r \t { dod re dod } | re4. si8~ si dod fad, si |
+    sold4 r16 lab lab lab sol4 r16 lab lab lab |
+    fa4 r8 re fa re sol8. fa16 |
+    sol8 lab r re,16 re mib4 r16 re re re |
+    fa4 r8 lab lab lab sib8. si16 | fa8 dod' r4 r2 | R1*2
+    r4 r8 re,16
+  }
 }
 
 ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
@@ -365,5 +378,11 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     fa mi ~ \t { mi mi mi } | si'4 r2 | R2.*3
     r4 mi,8 mi sold4 sol8 sol | si4 sold8 sold do4 si8 si red4 r r2 | R1*3
     r4 fad,8 fad sol4 fad8 fad| lad4 fad8 fad re4  fa8 fa la4 r r2 | R1*3
+    r4 fa8 fa mib4 fad8 fad | re4 fa8 fa mib4 fad8 fad | 
+    re4 r r mi8 mi | re4 r r2 R1
+    r4 la'8 la sold4 la8 la | sib4 la8 la sold4 lad8 lad |
+    si4 r8 sib sib sib si4 | r si8. si16 re2 |
+    r4 la8 la sold4 sold8 sold | la4 la8 la sold4 sib8 sib |
+    la4 si8 si do4 sib8 sib | R2.
   }
 }

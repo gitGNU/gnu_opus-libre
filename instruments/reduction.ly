@@ -3220,7 +3220,8 @@ ActeDeuxSceneTroisMainDroite = {
     <re' fad > <re fad > <mib sol> sol,<re' fad > <re fad > <mib sol> sol, |
     <dod mid > <dod mid> <re fad > fad,<si  red > <si red > <do mi  > mi,  |
     <sib' re > <sib re > <si red > red,<lab' do > <lab do > <la dod > dod, |
-    <mi' sold> <mi sold> <fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
+    \pl la'4 {
+    <mi' sold>8<mi sold>}<fa la  > la, <mi' sold> <mi sold> <fa la  > la,  |
     <sold' do> <sold do> <la dod > dod,<sold' do> <sold do> <la dod > dod, |
     <fa  sold> <fa sold> <fad la > la, <fa' sold> <fa sold> <fad la > la,  |
     <la' do  > <la do  > <sib dod> dod,<la' dod > <la dod > <sib dod> dod, |
@@ -3453,8 +3454,12 @@ ActeDeuxSceneTroisMainGauche = {
     <dod dod'> <sol sol'>~ <sol sol'> ~ <sold sold'> |
     <mi mi'>1 ~ <mi mi'> | r2 <mi' mi'> ~ |
     <mi mi'>4 <sib sib'>~<sib sib'>8 <mi mi'>4 sib'8 |
-    <mi, mi'>4 r8 <sold sold'> ~<sold sold'> <fad fad'> <fa fa'>~ |
-    <fa fa'>2 <solb solb'>8 <fa fa'> <solb solb'> <lab lab'> |
-    <sib sib'>
+    <mi, mi'>4 r8 <sold sold'> ~<sold sold'> <fad fad'> <fa fa'>4~ |
+    <fa fa'>2 solb8 fa solb lab |
+    \pl <sib, sib'>1\laissezVibrer {s4 \clef treble sol'''4 fa mi }
+    fa8 mi fa sol la \clef bass <do,,, do'>4. |
+    <la la'>2~ <la la'>8 mib'4 <la, la'>8~|<la la'> mib' <la, la'>2. |
+    <sib sib'>4 <la la'> <sib sib'> <do do'> |
+    <re re'>1~<re re'>~<re re'>~<re re'>
   }
 }

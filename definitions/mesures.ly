@@ -795,9 +795,12 @@ ActeUnSceneQuatreMesures = {
 
 EntracteMesures = {
   \time 2/4
-      \mark \markup{ \mvt Adagio }
+      \mark \markup \init-did \EntracteA
+      \tempo "Adagio" 4 = 52
             R2*9  \bar "||"
-  \time 4/4 R1*24
+  \time 4/4
+      \tempo "Vivo subito" 4 = 120
+            R1*24
 }
 
 ActeDeuxSceneUnMesures = { 

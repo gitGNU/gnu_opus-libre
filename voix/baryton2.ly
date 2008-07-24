@@ -285,7 +285,20 @@ ActeUnSceneQuatreBarytonDeux = { \BarytonDeux
   }
 }
 
-EntracteBarytonDeux = {
+EntracteBarytonDeux = { \BarytonDeux
+  \relative {
+    R2*9 R1*4
+    r4 r8 re,16 re mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 |
+    fa8 re r4 r r8 sold | dod mib, r16 fa fa fa lab8 re, r4 |
+    r8 r16 fa sib8[ r16 sold16] dod8[ r16 si] mi4 ~|
+    mi4. mi8 r mi dod mi | si4 la8 do sold fa \t{lab mib fa} |
+    re4 r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
+    mib8 re r4 r2 | R1*6
+    r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
+    mib8 re r4 r2 | R1*2
+    r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
+    mib8 re r4 r2 |
+  }
 }
 
 ActeDeuxSceneUnBisBarytonDeux = { \BarytonDeux
@@ -387,6 +400,11 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     R2*8 R2. R2*6 R2.*4
     r4 do8 do do4 do8 do | do4 mi8 mi sold4 sol8 sol | si4 r r2 | R1*3
     r4 dod,8 dod fa4  mi8  mi  | sold4 r r2 | r8 re mi sol sold2 | r4 mi8 re4 sol8 sold4 |
-    r8 re fad sold si4 r | r sold ~ \t { sold la do } | re2. r4 | R1*4
+    r8 re fad sold si4 r | r sold ~ \t { sold la do } | re2. r4 | R1
+    r2 r4 mi,8 mi |re4 r r2 | R1
+    re4 la' sold8 mi re4 | mi8 re la' sold r mi sold4 |
+    re8 mi sold r r2 | dod,8 re fad4 r8 dod sold4 |
+    r4 re'8 re mi4 mi8 mi | re4 re8 re re4 re8 re |
+    re4 re8 re re4 re8 re | r la' r2 |
   }
 }

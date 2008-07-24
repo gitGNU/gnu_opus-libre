@@ -196,6 +196,11 @@ ActeDeuxSceneTroisSopranoUn= { \SopranoUn
     R2*8 R2. R2*6 R2.*4
     r4 sib,8 sib la4 sol8 sol | sold4 r r2 | r8 sib la do re4 r | r8 la sold do re4 r |
     r8 sold, la la do4 re | r la \t { sold sold lad } | red2. r4 | R1*5
-    r4 
+    r4 sold,8 sold la4 sol8 sol | sold4 sold8 sold la4 sol8 sol | 
+    sold4 r r sol8 sol | sold4 r r2 R1
+    r4 sold8  sold la4 sol8 sol | sold4 sold8 sold la4 sol8 sol |
+    sold4 r r2 | re4 la' sold mi|
+    r4 mi'8 mi re4 re8 re | mi4 fa8 fa mib4 mib8 mib |
+    fad4 fad8 fad mi4 sol8 sol | r sold r2 |
   }
 }

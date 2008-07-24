@@ -139,6 +139,11 @@ ActeDeuxSceneTroisContralto= { \Contralto
     R2 R2. R2*6 R2.
     r2 la,8 do | re2 r4 | r r8 sold, fad la | fa'2. r4 | R1*5
     r4 mi,8 mi fa4 red8 red | mi4 mi8 mi fa4 red8 red | mi4 r r2 | R1*3
-    
+    r4 mi8 mi fa4 red8 red | mi4 mi8 mi fa4 red8 red |
+    mi4 r r re8 re | mi4 r r2 R1
+    r4 mi8 mi re4 re8 re | mi4 mi8 mi re4 re8 re | mi4 r r2 |
+    r2 r8 sold la do | re2 r4 sol,8 sol |
+    sol4 sold8 sold la4 sol8 sol |
+    sold4 la8 la sib4 la8 la | r sold r2 |
   }
 }
