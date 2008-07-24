@@ -645,7 +645,8 @@ de justesse."
 ActeDeuxSceneTroisX = "Le Chef de la Garde s'incline ;
 au moment où il va pour sortir, l'Étranger le retient."
 
-ActeDeuxSceneTroisY = "La Reine entraîne l'Étranger sur le côté pour lui
+ActeDeuxSceneTroisY = "Le Chef sort.
+La Reine entraîne l'Étranger sur le côté pour lui
 parler à part."
 
 ActeDeuxSceneTroisZ = "Pendant que la Reine réfléchit, perturbée, le
@@ -662,7 +663,7 @@ ActeDeuxSceneTroisZC = "L'Étranger arme son bras ; le Roi recule vivement."
 ActeDeuxSceneTroisZD = "Le Roi se tourne vers le Chef, plus implorant
 qu'impérieux..."
 %FIXME
-ActeDeuxSceneTroisZEE = "L'Étranger désigne la machine d'un geste théâtral,
+ActeDeuxSceneTroisZDD = "L'Étranger désigne la machine d'un geste théâtral,
 et hésite un instant pour la dénommer."
 
 ActeDeuxSceneTroisZE = "Le Chef donne un petit coup de poing sur la
@@ -680,12 +681,12 @@ Docteur bouscule Dieu (sans un regard), et entreprend de grimper dans la machine
 ActeDeuxSceneTroisZI = "Le Roi s'avance et embarque laborieusement."
 
 ActeDeuxSceneTroisZJ = "Tout le monde se tourne vers la Reine,
-qui grimpe à son tour dans la machine. Un temps.
-Elle semble chercher en vain des rimes en
-«tion»..."
+qui semble chercher en vain des rimes en
+«tion»... Le choeur répète son motif,
+pour l'encourager."
 
-ActeDeuxSceneTroisZJJ = "Le choeur répète son motif,
-pour l'encourager ; mais elle finit par lancer simplement :"
+ActeDeuxSceneTroisZK = "Elle finit par grimper à son tour dans
+la machine, chantant sans paroles mais avec beaucoup de conviction."
 
 ActeDeuxSceneTroisZL = "Tous les regards se tournent maintenant
 vers l'Étranger ; mais c'est Dieu qu'il désigne."

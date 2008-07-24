@@ -1180,33 +1180,70 @@ ActeDeuxSceneDeuxMesures = {
 
 ActeDeuxSceneTroisMesures = {
   \time 3/8
-      \mark \markup { \mvt "Larghetto" }
-            R4.*51\bar "||"
-  \time 2/8 R4*27
+      \mark \markup \ActeDeuxSceneTroisA
+      \tempo "Larghetto" 8 = 120
+            R4.*15
+      \mark \markup \ActeDeuxSceneTroisB
+            R4.*15
+      \mark \markup \ActeDeuxSceneTroisC
+            R4.*16
+      \mark \markup \ActeDeuxSceneTroisD
+            R4.*5 \bar "||"
+  \time 2/8
+      \mark \markup \ActeDeuxSceneTroisE
+            R4*2
+      \mark \markup \ActeDeuxSceneTroisF
+            R4*13
+      \mark \markup \ActeDeuxSceneTroisG
+            R4*12
   \time 3/8 R4.
-  \time 2/8 R4*7
+  \time 2/8 R4
+      \mark \markup \ActeDeuxSceneTroisH
+            R4*3
+      \mark \markup \ActeDeuxSceneTroisI
+            R4
+      \mark \markup \ActeDeuxSceneTroisJ
+            R4*2
   \time 3/8 R4.*14
-  \time 2/8 R4*28
-  \time 3/4 R2.*7 \bar "||"
+  \time 2/8 R4*13
+      \mark \markup \ActeDeuxSceneTroisK
+            R4*15
+  \time 3/4
+      \mark \markup \ActeDeuxSceneTroisL
+            R2.*4
+      \mark \markup \ActeDeuxSceneTroisM
+            R2.*3 \bar "||"
   
   %%% Séquence instrumentale %%%
   
-  \time 2/4 R2*9
+  \time 2/4 R2*2
+      \mark \markup \ActeDeuxSceneTroisN
+            R2*7
   \time 3/4 R2.
   \time 2/4 R2*6
   \time 5/8 R1*5/8
   \time 2/4 R2*16
   \time 5/8 R1*5/8
-  \time 2/4 R2
+  \time 2/4
+      \mark \markup \ActeDeuxSceneTroisO
+            R2
   \time 3/8 R4.
   \time 2/4 R2
   \time 3/8 R4.
-  \time 2/4 R2
+  \time 2/4
+      \mark \markup \ActeDeuxSceneTroisP
+            R2
   \time 3/8 R4.*2 \bar "||"
   
   %%% Solo du Baryton 1 %%%
   
-  \time 3/4 R2.*7
+  \time 3/4
+      \mark \markup \ActeDeuxSceneTroisQ
+            R2.*7
+  \time 2/4 R2*2
+  \time 3/4
+      \mark \markup \ActeDeuxSceneTroisR
+            R2.
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
@@ -1215,9 +1252,9 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 R2.
-  \time 2/4 R2*2
-  \time 3/4 R2.
-  \time 2/4 R2
+  \time 2/4
+      \mark \markup \ActeDeuxSceneTroisS
+            R2
   \time 3/8 R4.
   \time 2/4 R2
   \time 3/8 R4.
@@ -1226,13 +1263,23 @@ ActeDeuxSceneTroisMesures = {
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 4/4 R1
-  \time 3/4 R2.
+  \time 3/4
+      \mark \markup \ActeDeuxSceneTroisT
+            R2.
   \time 2/4 R2    \bar "||"
   
       \tempo "Doppio Tempo" 4 = 120 
-            R2*7
-  \time 3/4 R2.*7
+            R2*4
+      \mark \markup \ActeDeuxSceneTroisU
+            R2*3
+  \time 3/4
+      \mark \markup \ActeDeuxSceneTroisV
+            R2.*7
   \time 2/4 R2
+  \time 3/4 R2.
+  \time 2/4
+      \mark \markup \ActeDeuxSceneTroisW
+            R2
   \time 3/4 R2.
   \time 2/4 R2
   \time 3/4 R2.
@@ -1243,9 +1290,9 @@ ActeDeuxSceneTroisMesures = {
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4 R2
-  \time 3/4 R2.
-  \time 2/4 R2
-  \time 3/4 R2.
+  \time 3/4
+      \mark \markup \ActeDeuxSceneTroisX
+            R2.
   
   %%% Climax %%%
   
@@ -1258,7 +1305,9 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
-  \time 4/4 R1
+  \time 4/4
+      \mark \markup \ActeDeuxSceneTroisY
+            R1
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -1288,7 +1337,9 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
-  \time 4/4 R1
+  \time 4/4
+      \mark \markup \ActeDeuxSceneTroisZ
+            R1
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -1314,21 +1365,51 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
-  \time 4/4 R1*6
+  \time 4/4
+      \mark \markup \ActeDeuxSceneTroisZA
+            R1*6
   \time 2/4 R2*3  \bar "||"
   \time 3/4
+      \mark \markup \ActeDeuxSceneTroisZB
       \tempo "Tempo giusto" 4 = 120
-            R2.*11
-  \time 3/8 R4.
-  \time 3/4 R2.*26
-  \time 2/4 R2*12
+            R2.*3
+      \mark \markup \ActeDeuxSceneTroisZC
+            R2.*8
+  \time 3/8 
+      \mark \markup \ActeDeuxSceneTroisZD
+            R4.
+  \time 3/4 R2.*8
+      \mark \markup \ActeDeuxSceneTroisZDD
+            R2.*3
+      \mark \markup \ActeDeuxSceneTroisZE
+            R2.*2
+      \mark \markup \ActeDeuxSceneTroisZF
+            R2.*13
+  \time 2/4
+      \mark \markup \ActeDeuxSceneTroisZG
+            R2*12
   \time 3/4 R2.
   \time 2/4 R2*6
   \time 3/4 R2.*4
-  \time 2/2 R1*24
+  \time 2/2 R1*2
+      \mark \markup \ActeDeuxSceneTroisZH
+            R1*6
+      \mark \markup \ActeDeuxSceneTroisZI
+            R1*6
+      \mark \markup \ActeDeuxSceneTroisZJ
+            R1
+      \mark \markup \ActeDeuxSceneTroisZK
+            R1*4
+      \mark \markup \ActeDeuxSceneTroisZL
+            R1
+            r2
+            r2
+           _\markup \ActeDeuxSceneTroisZM
+            R1*2
+      \mark \markup \ActeDeuxSceneTroisZN
   \time 3/4 R2.
-  \time 2/2 R1*7
-  \time 3/4 R2.*7 \bar "||"
+      \mark \markup \ActeDeuxSceneTroisZO
+            R2.*7 \bar "||"
   
   %%% Épilogue %%%
   
