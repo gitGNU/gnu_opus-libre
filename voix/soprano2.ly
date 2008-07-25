@@ -263,5 +263,7 @@ ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
     r4 mi,8 sold r2 |
     r4 re'8 re mi4 mi8 mi | re4 mib8 mib fa4 fa8 fa |
     mi4 fad8 fad sold4 mi8 mi | r la, r2 |
+    sold'2.~ sold4. fad4 la8 | fa4. mib4 fad8 | re4 sib si |
+    sol sold mi | re r | R2*2
   }
 }

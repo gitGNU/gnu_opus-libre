@@ -384,5 +384,6 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     si4 r8 sib sib sib si4 | r si8. si16 re2 |
     r4 la8 la sold4 sold8 sold | la4 la8 la sold4 sib8 sib |
     la4 si8 si do4 sib8 sib | R2.
+    do2.~do~do~do~do~do2~do~do4 r |
   }
 }

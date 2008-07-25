@@ -406,5 +406,6 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     re8 mi sold r r2 | dod,8 re fad4 r8 dod sold4 |
     r4 re'8 re mi4 mi8 mi | re4 re8 re re4 re8 re |
     re4 re8 re re4 re8 re | r la' r2 |
+    re,2.~re4 fad fa la sol si | sib4. lab4 si8 | re2.~re4 r | R2*2
   }
 }

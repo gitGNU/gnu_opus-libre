@@ -1180,44 +1180,44 @@ ActeDeuxSceneDeuxMesures = {
 
 ActeDeuxSceneTroisMesures = {
   \time 3/8
-      \mark \markup \ActeDeuxSceneTroisA
+      \mark \markup \init-did \ActeDeuxSceneTroisA
       \tempo "Larghetto" 8 = 120
             R4.*15
-      \mark \markup \ActeDeuxSceneTroisB
+      \mark \markup \did \ActeDeuxSceneTroisB
             R4.*15
-      \mark \markup \ActeDeuxSceneTroisC
+      \mark \markup \did \ActeDeuxSceneTroisC
             R4.*16
-      \mark \markup \ActeDeuxSceneTroisD
+      \mark \markup \did \ActeDeuxSceneTroisD
             R4.*5 \bar "||"
   \time 2/8
-      \mark \markup \ActeDeuxSceneTroisE
+      \mark \markup \did \ActeDeuxSceneTroisE
             R4*2
-      \mark \markup \ActeDeuxSceneTroisF
+      \mark \markup \did \ActeDeuxSceneTroisF
             R4*13
-      \mark \markup \ActeDeuxSceneTroisG
+      \mark \markup \did \ActeDeuxSceneTroisG
             R4*12
   \time 3/8 R4.
   \time 2/8 R4
-      \mark \markup \ActeDeuxSceneTroisH
+      \mark \markup \did \ActeDeuxSceneTroisH
             R4*3
-      \mark \markup \ActeDeuxSceneTroisI
+      \mark \markup \did \ActeDeuxSceneTroisI
             R4
-      \mark \markup \ActeDeuxSceneTroisJ
+      \mark \markup \did \ActeDeuxSceneTroisJ
             R4*2
   \time 3/8 R4.*14
   \time 2/8 R4*13
-      \mark \markup \ActeDeuxSceneTroisK
+      \mark \markup \did \ActeDeuxSceneTroisK
             R4*15
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisL
+      \mark \markup \did \ActeDeuxSceneTroisL
             R2.*4
-      \mark \markup \ActeDeuxSceneTroisM
+      \mark \markup \did \ActeDeuxSceneTroisM
             R2.*3 \bar "||"
   
   %%% Séquence instrumentale %%%
   
   \time 2/4 R2*2
-      \mark \markup \ActeDeuxSceneTroisN
+      \mark \markup \did \ActeDeuxSceneTroisN
             R2*7
   \time 3/4 R2.
   \time 2/4 R2*6
@@ -1225,24 +1225,24 @@ ActeDeuxSceneTroisMesures = {
   \time 2/4 R2*16
   \time 5/8 R1*5/8
   \time 2/4
-      \mark \markup \ActeDeuxSceneTroisO
+      \mark \markup \did \ActeDeuxSceneTroisO
             R2
   \time 3/8 R4.
   \time 2/4 R2
   \time 3/8 R4.
   \time 2/4
-      \mark \markup \ActeDeuxSceneTroisP
+      \mark \markup \did \ActeDeuxSceneTroisP
             R2
   \time 3/8 R4.*2 \bar "||"
   
   %%% Solo du Baryton 1 %%%
   
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisQ
+      \mark \markup \did \ActeDeuxSceneTroisQ
             R2.*7
   \time 2/4 R2*2
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisR
+      \mark \markup \did \ActeDeuxSceneTroisR
             R2.
   \time 2/4 R2*2
   \time 3/4 R2.
@@ -1253,7 +1253,7 @@ ActeDeuxSceneTroisMesures = {
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4
-      \mark \markup \ActeDeuxSceneTroisS
+      \mark \markup \did \ActeDeuxSceneTroisS
             R2
   \time 3/8 R4.
   \time 2/4 R2
@@ -1264,21 +1264,21 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisT
+      \mark \markup \did \ActeDeuxSceneTroisT
             R2.
   \time 2/4 R2    \bar "||"
   
       \tempo "Doppio Tempo" 4 = 120 
             R2*4
-      \mark \markup \ActeDeuxSceneTroisU
+      \mark \markup \did \ActeDeuxSceneTroisU
             R2*3
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisV
+      \mark \markup \did \ActeDeuxSceneTroisV
             R2.*7
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4
-      \mark \markup \ActeDeuxSceneTroisW
+      \mark \markup \did \ActeDeuxSceneTroisW
             R2
   \time 3/4 R2.
   \time 2/4 R2
@@ -1291,7 +1291,7 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 2/4 R2
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisX
+      \mark \markup \did \ActeDeuxSceneTroisX
             R2.
   
   %%% Climax %%%
@@ -1306,7 +1306,7 @@ ActeDeuxSceneTroisMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4
-      \mark \markup \ActeDeuxSceneTroisY
+      \mark \markup \did \ActeDeuxSceneTroisY
             R1
   \time 3/4 R2.
   \time 4/4 R1
@@ -1338,7 +1338,7 @@ ActeDeuxSceneTroisMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4
-      \mark \markup \ActeDeuxSceneTroisZ
+      \mark \markup \did \ActeDeuxSceneTroisZ
             R1
   \time 3/4 R2.
   \time 4/4 R1
@@ -1366,52 +1366,57 @@ ActeDeuxSceneTroisMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4
-      \mark \markup \ActeDeuxSceneTroisZA
+      \mark \markup \did \ActeDeuxSceneTroisZA
             R1*6
   \time 2/4 R2*3  \bar "||"
   \time 3/4
-      \mark \markup \ActeDeuxSceneTroisZB
+      \mark \markup \did \ActeDeuxSceneTroisZB
       \tempo "Tempo giusto" 4 = 120
             R2.*3
-      \mark \markup \ActeDeuxSceneTroisZC
+      \mark \markup \did \ActeDeuxSceneTroisZC
             R2.*8
   \time 3/8 
-      \mark \markup \ActeDeuxSceneTroisZD
+      \mark \markup \did \ActeDeuxSceneTroisZD
             R4.
   \time 3/4 R2.*8
-      \mark \markup \ActeDeuxSceneTroisZDD
+      \mark \markup \did \ActeDeuxSceneTroisZDD
             R2.*3
-      \mark \markup \ActeDeuxSceneTroisZE
+      \mark \markup \did \ActeDeuxSceneTroisZE
             R2.*2
-      \mark \markup \ActeDeuxSceneTroisZF
+      \mark \markup \did \ActeDeuxSceneTroisZF
             R2.*13
   \time 2/4
-      \mark \markup \ActeDeuxSceneTroisZG
+      \mark \markup \did \ActeDeuxSceneTroisZG
             R2*12
   \time 3/4 R2.
   \time 2/4 R2*6
   \time 3/4 R2.*4
   \time 2/2 R1*2
-      \mark \markup \ActeDeuxSceneTroisZH
+      \mark \markup \did \ActeDeuxSceneTroisZH
             R1*6
-      \mark \markup \ActeDeuxSceneTroisZI
+      \mark \markup \did \ActeDeuxSceneTroisZI
             R1*6
-      \mark \markup \ActeDeuxSceneTroisZJ
+      \mark \markup \did \ActeDeuxSceneTroisZJ
             R1
-      \mark \markup \ActeDeuxSceneTroisZK
+      \mark \markup \did \ActeDeuxSceneTroisZK
             R1*4
-      \mark \markup \ActeDeuxSceneTroisZL
+      \mark \markup \did \ActeDeuxSceneTroisZL
             R1
             r2
             r2
-           _\markup \ActeDeuxSceneTroisZM
+           _\markup \did \ActeDeuxSceneTroisZM
             R1*2
-      \mark \markup \ActeDeuxSceneTroisZN
+      \mark \markup \did \ActeDeuxSceneTroisZN
+            R1
   \time 3/4 R2.
-      \mark \markup \ActeDeuxSceneTroisZO
-            R2.*7 \bar "||"
+      \mark \markup \did \ActeDeuxSceneTroisZO
+            R2.*5
+  \time 2/4 R2*3  \bar "||"
   
   %%% Épilogue %%%
   
-  
+  \time 3/4
+      \mark \markup \did \ActeDeuxSceneTroisZP
+      \tempo "Andante al fine" 8 = 92
+            R2.
 }
