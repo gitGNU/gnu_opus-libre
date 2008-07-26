@@ -229,37 +229,53 @@ EntracteBarytonUn = {
 ActeDeuxSceneUnBisBarytonUn = { \BarytonUn
   \relative {
     R1 R2. R2 R1*5/4*17
-    r4 r8 sol sol lab sib sol lab sib | reb2. r2 |
-    R1*5/4*6 | r2 r8 re,4. r4 | r mib mib2 r4 |
-    r2 mib4 reb mi | do2 r r4 | R1*5/4*2 | r2 lab'4 lab sol8 sol |
-    sib4 r sib8 sib sol4 sol8 sol | si!4 fad8 fad fad4 r2|
-    r si4 re si8 si | fad4 r2 re'4 si8 re | fa1*5/4~ fa2 re4 si re |
-    sold,1 r4 | r2 mi'2 mi4 | mi2 mi4 mi r |
-    r1 re4 | fa8 do sol la mi4 r2 | R1*5/4*34
+    r4 r8 sol(\f sol lab sib sol lab sib | reb2.--) r2 |
+    R1*5/4*6 | r2 r8 re,4.--\mp r4 | r mib( mib2) r4 |
+    r2 mib4--( reb-- mi-- | do2--) r r4 | 
+    R1*5/4*2 | r2 lab'4-.(\mf lab-- sol8-. sol-. |
+    sib4--) r sib8( sib sol4) sol8( sol | 
+    si!4-- fad8 fad fad4) r2|
+    r si4-. re--( si8 si | fad4) r2 re'4--\f si8-. re-. | 
+    \ten fa1*5/4->--~ fa2 re4-- si-- re-- |
+    \ten sold,1\f r4 | r2 mi'2--(\f mi4 | mi2 mi4 mi) r |
+    r1 re4-.(\mp | fa8-. do-. sol-. la-. mi4--) r2 |
+    R1*5/4*34
     R1*7/4*7 R2. R1 R2. R2 R2.*9
-    r1 r2 si8 si | red1 r2 r4 |
-    r re8 re fad2 r4 r8 fad fa fa | la2 r4 | R2.*6
-    r1 r16 re re re sib4 r16 re re re |
-    sib si sol sold mi2 r1 |
+    
+    r1 r2 si8(\p si | red1) r2 r4 |
+    r re8( re fad2) r4 r8 fad( \> fa fa | la2)\pp r4 | R2.*6
+    r1 r16 re-.(\mp re-. re-. sib4--) r16 re-.(\> re-. re-. |
+    sib-. si-. sol-. sold-. mi2--)\! r1 |
     R1*7/4*7 R1.*5
     
-    r2 re8 mib | mi fa lab4 do,8 fad | fa mib re4 do8 fad |
-    fa mib re4 do8 fad | fa mib re4 do8 fad | fa lab mi'4 do,8 fad |
-    fa mib re4 do8 r |
-    R2*2 R2.*2 r4 do8 fad mi sol | red'4 dod,8 sol' mi sold | red'4 r | R4. |
-    r4 r8 sib | solb la fa sib | dod4 r | R4. r8 solb sib solb la fa |
-    re4 r | R4. r8 solb sib fa la fad re4 r r8 | re'8 re4 re8 re4 re8|
-    re4. r8 re re | \t{re4 re mi} si | lab8 sib fa sol re sol | do4
-    r8 mib4. | r4 r8 do mi,! lab | mib'!4 r8 mi,!4 sib'8 | mib!4 sol,8 do mib,!4 |
-    r sol4. si!8 | mib4 lab, do | mi,!2 r4 | r si8 mib re fad |
-    sib4. re,8 mib re | fad4 fa8 fa \t {si mib, sol} | mi'!2. |
-    r4 r8 fa r4 | r8 re r4 | fa8 re mi | si4 r | 
-    la4 sib la8 | sib2.~ sib2. r4 |
+    r2 re8-.(\p mib-. | mi-. fa-. lab4--) do,8-.\( fad-. | 
+    fa( mib) re4--\) do8-.\( fad-. |
+    fa( mib) re4--\) do8-.\( fad-. | 
+    fa( mib) re4--\) do8-.\( fad-. | fa(\< lab) mi'4--\)\! do,8-.\( fad-. |
+    fa( mib) re4--\) do8-. r |
+    R2*2 R2.*2 
+    r4 do8-.\(\mf fad-. mi( sol) | 
+    red'4->--\) dod,8-.\( sol'-. mi( sold) | 
+    red'4->--\) r | 
+    R4. r4 r8 sib-.(\mf \< | solb-. la-. fa-. sib-. | dod4--)\f r | 
+    R4. r8 solb-.(\mf sib-. solb-. la-. fa-. re4--) r | 
+    R4. r8 solb-.( sib-. fa-. la-. fad-. re4--)
+    r r8 | re'8->\ff re4-> re8-> re4-> re8->|
+    re4.-> r8 re(\f re | \t{re4 re mi} si-- | 
+    lab8-.\< sib-. fa-. sol-. re-. sol-. | do4->--)\!
+    r8 mib4.--\mf | r4 r8 do( mi,! lab | 
+    mib'!4) r8 mi,!4--( sib'8 | mib!4 sol,8 do mib,!4) |
+    r sol4.( si!8 | mib4 lab, do | mi,!2) r4 | 
+    r si8-.(\mp \< mib-. re-. fad-. |
+    sib4.--\mf re,8-. mib-. re-. | 
+    fad4-- fa8-.\< fa-. \t {si-- mib, sol} | mi'!2.->--)\f |
+    r4 r8 fa--\pp r4 | r8 re-- r4 | fa8--( re-- mi-- | si4--) r | 
+    la4(\mf \< sib la8 | \ten sib2.) \f ~ sib2. r4 |
     R1*5/4*6
-    r4 do,8 do si'!4 r mib8 mib |
-    lab,4 r r8 mi lab lab sol sol |
-    si4 lab r2 r4 | R1*5/4*6
-    r2 r8 lab sol sol fa lab | mi'2. r2 |
+    r4 do,8-.(\mp do-. si'!4--) r mib8-.( mib-. |
+    lab,4--) r r8 mi( lab lab sol sol |
+    si4-- lab) r2 r4 | R1*5/4*6
+    r2 r8 lab(\mp \< sol sol fa lab | mi'2.)\mf r2 |
     R1*5/4*8
   }
 }

@@ -125,7 +125,7 @@ ActeUnSceneUnN = "Le Docteur se tourne vers le Roi."
 
 ActeUnSceneUnO = "Puis vers l’Étranger..."
 
-ActeUnSceneUnP = "mais ce dernier semble perdu dans ses pensées ;"
+ActeUnSceneUnP = "mais ce dernier semble perdu dans ses pensées ;"
 
 ActeUnSceneUnQ = "et c’est le Roi qui finit par reprendre."
 
@@ -199,10 +199,10 @@ ActeUnSceneDeuxA = "Elle laisse sa phrase en suspens, absorbée dans sa rêverie
 
 ActeUnSceneDeuxAA = "Entre le Roi, sans la voir, de l'autre côté de la scène.
 Elle le regarde s'avancer en silence, offrant un instant l'image d'une épouse
-effacée, sinon craintive ; mais c'est sans le moindre effarouchement qu'elle
+effacée, sinon craintive ; mais c'est sans le moindre effarouchement qu'elle
 l'aborde."
 
-ActeUnSceneDeuxB = "Le Roi reste figé un temps ; puis, manifestement embarrassé..."
+ActeUnSceneDeuxB = "Le Roi reste figé un temps ; puis, manifestement embarrassé..."
 
 ActeUnSceneDeuxC = "La Reine réfléchit."
 
@@ -282,7 +282,7 @@ tache du test de Rorschach."
 
 ActeUnSceneTroisTerE = "Il lui montre une autre tache."
 
-ActeUnSceneTroisTerF = "Le Docteur hésite un instant ; puis, montrant
+ActeUnSceneTroisTerF = "Le Docteur hésite un instant ; puis, montrant
 le ciel :"
 
 ActeUnSceneTroisTerG = "Il sort, laissant l'Étranger seul en scène."
@@ -291,15 +291,15 @@ ActeUnSceneTroisTerG = "Il sort, laissant l'Étranger seul en scène."
 
 ActeUnSceneQuatreA = "La lumière monte dans le silence, dévoilant le
 Roi, la Reine et l'Étranger attablés et en plein
-dîner ; immobiles et muets, ils ne se regardent
+dîner ; immobiles et muets, ils ne se regardent
 pas."
 
 ActeUnSceneQuatreB = "La musique s'interrompt en suspens, dans un
 silence pesant. Le pianiste arpège un accord de dominante,
-en une manière d'encouragement ; mais tour à tour, les personnages
+en une manière d'encouragement ; mais tour à tour, les personnages
 vont pour chanter, et se ravisent."
 
-ActeUnSceneQuatreC = "Même jeu, plusieurs fois ; enfin la
+ActeUnSceneQuatreC = "Même jeu, plusieurs fois ; enfin la
 Reine prend la parole."
 
 ActeUnSceneQuatreD = "L'Étranger reste silencieux."
@@ -329,7 +329,7 @@ soit de la salle)."
 
 ActeUnSceneQuatreN = "Entre le Chef. On sent le Roi tenté d'embastiller
 Dieu, mais un regard de ce dernier lui fait perdre
-contenance ; il désigne alors l'Étranger."
+contenance ; il désigne alors l'Étranger."
 
 ActeUnSceneQuatreO = "Le Chef entraîne l'Étranger dans la coulisse.
 Dieu, au bout d'un instant, désoeuvré, finit par sortir
@@ -407,7 +407,7 @@ ActeDeuxSceneUnJ = "La Reine reste songeuse."
 
 %------------------------------------------------------------------%
 
-ActeDeuxSceneUnBisA = "Quand la lumière revient, le Roi est en scène ;
+ActeDeuxSceneUnBisA = "Quand la lumière revient, le Roi est en scène ;
 il arbore un air réjoui et guilleret."
 
 ActeDeuxSceneUnBisB = "Entre le Chef de la Garde, poussant l'Étranger à
@@ -415,8 +415,10 @@ coups de pied dans l'arrière-train."
 
 ActeDeuxSceneUnBisC = "Un temps. L'Étranger reste sans voix, puis
 reprend, perplexe..."
+%FIXME
+ActeDeuxSceneUnBisCC = "Il fait signe au Roi de s'approcher."
 
-ActeDeuxSceneUnBisD = "Il lui assène un coup de poing en plein visage ;
+ActeDeuxSceneUnBisD = "Il lui assène un coup de poing en plein visage ;
 le Roi s'effondre, évanoui, sous les yeux stupéfaits du Chef."
 
 ActeDeuxSceneUnBisE = "Ce dernier reste sans voix, visiblement choqué."
@@ -428,13 +430,13 @@ et regarde le Roi au sol, soudainement pensif, presque fasciné."
 
 ActeDeuxSceneUnBisH = "Plus doucement, et pour lui-même."
 
-ActeDeuxSceneUnBisI = "L'Étranger donne un coup de pied au Roi ; le
+ActeDeuxSceneUnBisI = "L'Étranger donne un coup de pied au Roi ; le
 Chef se décompose."
 
 ActeDeuxSceneUnBisJ = "Du pied, l'Étranger donne à nouveau un tout
 petit coup au Roi."
 
-ActeDeuxSceneUnBisK = "Le Chef s'approche doucement, visiblement tenté ;
+ActeDeuxSceneUnBisK = "Le Chef s'approche doucement, visiblement tenté ;
 soudain des accords de l'orchestre l'interrompent.
 Il hésite un peu, puis même jeu. Enfin, au prix d'un effort manifeste,
 il arme son pied..."
@@ -450,7 +452,7 @@ d'un quasi-aboiement."
 ActeDeuxSceneUnBisO = "L'Étranger s'interrompt, supris."
 
 ActeDeuxSceneUnBisP = "L'Étranger lui redonne un coup de poing au
-visage ; le Roi s'effondre de nouveau."
+visage ; le Roi s'effondre de nouveau."
 
 ActeDeuxSceneUnBisQ = "Le Chef gémit piteusement."
 
@@ -472,7 +474,7 @@ mouvement, ponctué par l'orchestre."
 
 ActeDeuxSceneDeuxC = "La lumière diminue sur la Reine, sans
 toutefois s'éteindre complètement. Sur scène,
-on retrouve l'Étranger, au cachot ; on le voit
+on retrouve l'Étranger, au cachot ; on le voit
 soit par une fenêtre ou un soupirail, soit par
 un mur absent."
 
@@ -509,18 +511,18 @@ plus en plus vite, les indications du Docteur."
 
 ActeDeuxSceneDeuxN = "L'Étranger se saisit d'un tibia, très théâtralement."
 
-ActeDeuxSceneDeuxO = "Entre le Chef de la Garde ; il se dirige vers
+ActeDeuxSceneDeuxO = "Entre le Chef de la Garde ; il se dirige vers
 les oubliettes, dans l'ombre."
 
 ActeDeuxSceneDeuxP = "La lumière éclaire soudain les oubliettes.
-L'Étranger n'y est plus ; des os sont plantés
+L'Étranger n'y est plus ; des os sont plantés
 dans le mur et suggèrent une évasion."
 
 ActeDeuxSceneDeuxQ = "Les lumières se rallument sur l'Étranger,
 qui fuit à l'autre bout de la scène, son os à la main."
 
 ActeDeuxSceneDeuxR = "Les lumières se rallument sur l'Étranger, un peu
-plus loin ; et ainsi de suite."
+plus loin ; et ainsi de suite."
 
 ActeDeuxSceneDeuxS = "La lumière s'allume sur le Roi, dans son
 lit. Sa couronne est posée sur sa tête désormais entièrement bandée."
@@ -637,12 +639,12 @@ ActeDeuxSceneTroisU = "Il reprend sa conversation avec le Docteur,
 machinalement."
 
 ActeDeuxSceneTroisV = "Il s'interrompt, surpris de son propre tic de
-langage ; le Docteur poursuit sans lui prêter la moindre attention."
+langage ; le Docteur poursuit sans lui prêter la moindre attention."
 
 ActeDeuxSceneTroisW = "L'Étranger s'apprête à dire «oui», mais se retient
 de justesse."
 
-ActeDeuxSceneTroisX = "Le Chef de la Garde s'incline ;
+ActeDeuxSceneTroisX = "Le Chef de la Garde s'incline ;
 au moment où il va pour sortir, l'Étranger le retient."
 
 ActeDeuxSceneTroisY = "Le Chef sort.
@@ -658,7 +660,7 @@ bras, chacun dans une direction différente."
 ActeDeuxSceneTroisZB = "Entre le Roi, déboulant en trombe les bras tendus,
 et retenu tant bien que mal par le Chef de la Garde."
 
-ActeDeuxSceneTroisZC = "L'Étranger arme son bras ; le Roi recule vivement."
+ActeDeuxSceneTroisZC = "L'Étranger arme son bras ; le Roi recule vivement."
 
 ActeDeuxSceneTroisZD = "Le Roi se tourne vers le Chef, plus implorant
 qu'impérieux..."
@@ -672,7 +674,7 @@ tête du Roi..."
 ActeDeuxSceneTroisZF = "... qui se résoud à obtempérer. Le Chef de la Garde
 regarde son poing avec admiration."
 
-ActeDeuxSceneTroisZG = "Le chef de la Garde pousse le Roi vers l'avion ;
+ActeDeuxSceneTroisZG = "Le chef de la Garde pousse le Roi vers l'avion ;
 mais Dieu, encombré de ses sécateurs, s'interpose théâtralement."
 
 ActeDeuxSceneTroisZH = "Sous les regards interloqués de l'assistance, le
@@ -689,7 +691,7 @@ ActeDeuxSceneTroisZK = "Elle finit par grimper à son tour dans
 la machine, chantant sans paroles mais avec beaucoup de conviction."
 
 ActeDeuxSceneTroisZL = "Tous les regards se tournent maintenant
-vers l'Étranger ; mais c'est Dieu qu'il désigne."
+vers l'Étranger ; mais c'est Dieu qu'il désigne."
 
 ActeDeuxSceneTroisZM = "Le Chef de la Garde s'exécute, enhardi
 par le coup de poing qu'il a donné au Roi."

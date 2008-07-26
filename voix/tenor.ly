@@ -161,49 +161,72 @@ EntracteTenor = {
 ActeDeuxSceneUnBisTenor = { \Tenor
   \relative {
     R1 R2. R2 R1*5/4*15
-    r4 fad,8 fad fad fad lad4 lad8 lad |
-    la! la dod4 dod dod8 dod do do | mi4 r1 |
-    R1*5/4*15 r2 mi,8 mi sol4 mi8 sol | si2 r sol4 |
-    si sol8 si re2 r4 | r2 r4 re si8 re | mi2 si4 la sold|
-    fad1 r4 | R1*5/4*8 r1 re'8 re | sib2. r2 | r1 si8 si |
-    sol2. r2| r1 sold8 sold | mi la la la sol sol do4 r8 do |
-    sib sib mib4 r r8 lab, lab sib | mi,!4 r1 | R1*5/4*3
-    mi'4 mi2 mi | mi4 mi4. mi8 mi2 | r2 mi4 mi mi~| mi dod2 mi4 mi |
-    sol1*5/4 | mi4 r1 | r2 r8 mi~ mi2 | sold1*5/4~| sold4 r mi4. dod8~dod4|
-    la'1*5/4~| la4 r r8 mi~mi2 | do2~do8 mi~mi2 | si'1*5/4~| si2~si8 lad~lad2~|
-    lad4 r1 | R1*5/4*4 R1*7/4
-    mi,1 r4 mi2 | si'1 r2 r4 | si4 \t{do si si} re si do si  |
-    \t{red si si} mi2 si4 \t{sold sol sol} | si1 r2 sold8 sol|
-    si2. r4 si2 sib8 sib | re2.~ re4 r4 r2 | R2. R2 |
+    r4 fad,8-.(\mf fad-. fad-. fad-. lad4--) lad8-.( lad-. |
+    la!-. la-. dod4--) dod-- dod8-.( dod-. do-. do-. | mi4--) r1 |
+    R1*5/4*15 r2 mi,8\mp mi sol4--( mi8 sol | si2) r sol4-. |
+    si--( sol8 si re2) r4 | r2 r4 re\mf \< si8-. re-. | mi2->--\! si4-- la-- sold--|
+    \ten fad1 \f r4 | R1*5/4*8 
     
-    r8 do, \t{do4 do8} do do | mi4 r8 red mi mi | red red r sol~sol4 |
-    r4 \t{r sol8} sold sol | r4 do4. sol8| si2.~| si4 r2 r4 sold8 sol si4 |
-    r si sib8 sib | re1 r2 r4 | R1*7/4*2
-    r4 sol r | la,2 r4 | r fad' r | sib,2 r4 | R2.*2 r4 sib'2 |
-    fad,8. mid16~mid8 sold r sol do sib mib4 r2 | R1*7/4 
-    r1 r2 r8 dod16 dod | mi2 r8 r16 sib sib sib dod8~dod4 r2 |
+    r1 re'8( \pp re | sib2.) r2 | r1 si8( si |
+    sol2.) r2| r1 sold8( sold | mi\< la la la sol sol do4\! r8 do |
+    sib\< sib mib4--)\mp r r8 lab,-.( \p \> lab-. sib-. | 
+    mi,!4--)\! r1 | R1*5/4*3
+    mi'4(\f mi2->-- mi->-- | mi4 mi4.->-- mi8 mi2->--) | 
+    r2 mi4( \< mi mi--~| mi dod2 mi4 mi |
+    sol1*5/4->--\! | mi4) r1 | 
+    r2 r8 mi(~ mi2\< | \ind #"poco più" sold1*5/4->--)\!~| 
+    sold4 r mi4.(\< dod8~dod4|
+    \ind #"più" la'1*5/4)\!~| la4 r r8 mi--(\mf \< ~ mi2 | 
+    do2~do8 mi~mi2 | si'1*5/4\ff ~| si2~ si8 \> lad)~lad2~|
+    lad4\! r1 | R1*5/4*4 R1*7/4
+    
+    \cmb #"p" #"dolce" mi,1-- r4 mi2( \> | si'1)\! r2 r4 | 
+    si4(\pp \< \t{do si si} re si do si  |
+    \t{red si si} mi2\p \> si4 \t{sold sol sol} | 
+    si1) \! r2 sold8(\p sol|
+    si2.) r4 si2(\> sib8 sib | \ten re2.) \pp ~ re4 r4 r2 | 
+    R2. R2 |
+    
+    r8 \ind #"mormorando" do,(\pp \t{do4 do8} do do | 
+    mi4--) r8 red( mi mi | red red) r sol--\mp ~sol4 |
+    r4 \t{r sol8(\pp} sold sol) | r4 do4.--(\mf \> sol8| 
+    \ten si2.--)\p~| si4 r2 r4 sold8( sol si4) |
+    r si--(\> sib8 sib | re1)\pp r2 r4 | R1*7/4*2
+    r4 sol--(\mp r | la,2--) r4 | r fad'--( r | 
+    sib,2--) r4 | R2.*2 r4 sib'2->--\sfz |
+    fad,8.--(\f mid16--~mid8 sold--) r sol-.( do-. sib-. mib4--) r2 |
+    R1*7/4 
+    r1 r2 r8 dod16(\mf dod | mi2) r8 r16 sib(\pp sib sib dod8~dod4) r2 |
     R1*7/4*5
-    sol'2~ sol4 r \tt {r2 dod,8} | \tt {fa4 r8 do!4} \tt{mi4 r8 dod dod}
-    \tt{sib r si sol sold} | \tt{red'4 r8 red4} \tt{re re re8~} \tt{re re re do mib}|
-    si2 r1 |  R1.
-    r4 fa lab | sol' si, mi | dod \t { r8 dod dod} do la |
-    fad'4 sib, mib | lab, r8 fa4 lab8 | sol'16 mi si mi dod8. do16 sib8 reb |
-    \tt {la16 re do fa mib} lab4 r8 sol,16 fad' |
-    la4 r8 re, | fa dod mi do | la4 r2 |
-    R2.*3 R2 R4. R2*3 R4. R2. R2 R4. R2. R1*5/8 R2 R4. R2.*15 R2 R4. R2
-    si4 do re8 | fa2.~ fa2. r4 | R1*5/4*4
-    mib2. r2 | r4 sol,8 sol lab4 lab8 lab sol sol |
-    si4 lab r2 r4 | R1*5/4
-    r4 mi'!2 r4 r8 mi, | lab4 r2 r4 sol8 sol |
-    si4 lab r8 si4 r8 sib sib | re2. r2 |
-    r4 re re re mi | si2. r4 lab8 lab |
-    sol4 r8 lab sol4 \t { sol fa lab } |
-    mi2. r2 | sol'2. r2 |
-    r8 re re re re re fa4 re8 r |
-    re re si4 r8 dod re sol, fa lab |
-    mi'2 r2 fa4 | fa fa sol re r |
-    r4 re8 si lad si sol4 sol8 sold |
-    mi4 r1 | R1*5/4*2
+    
+    sol'2->--\ff ~ sol4 r \tt {r2 dod,8-.(} | 
+    \tt {fa4->--) r8 do!4-.(} \tt{mi4->--) r8 dod-.( dod-.}
+    \tt{sib--) r si(\< sol sold} | 
+    \tt{red'4--)\! r8 red4--(\mf} 
+    \tt{re-- re-- re8--~} 
+    \tt{re re-. re-. do-. mib-.}|
+    si2--) r1 |  R1.
+    r4 fa(\p lab | sol'\> si, mi | dod)\! \t { r8 dod( dod)} do( la) |
+    fad'4(\> sib, mib | lab,)\! r8 fa4( lab8 | 
+    sol'16 mi si mi dod8. do16) sib8( reb) |
+    \tt {la16(\< re do fa mib} lab4--)\sfz r8 sol,16(\f \< fad' |
+    la4->--)\sfz r8 re,-.( | fa-. dod-. mi-. do-. | la4--) r2 |
+    R2.*3 R2 R4. R2*3 R4. R2. R2 R4. R2. 
+    R1*5/8 R2 R4. R2.*15 R2 R4. R2
+    
+    si4(\mf \< do re8 | \ten fa2.)\f ~ fa2. r4 | R1*5/4*4
+    mib2.--\pp r2 | r4 sol,8(\p sol lab4) lab8( lab sol sol |
+    si4-- lab) r2 r4 | R1*5/4
+    r4 mi'!2--\pp r4 r8 mi,-.( | lab4-.) r2 r4 sol8(\< sol |
+    si4--\! lab) r8 si4-- r8 sib--\< sib-- | re2.->-- \p r2 |
+    r4 re( re re mi | si2.--) r4 lab8( lab |
+    sol4) r8 lab( sol4) \t { sol--( fa-- lab-- } |
+    mi2.--) r2 | sol'2.\sfz r2 |
+    r8 re(\p re re re re fa4 re8) r |
+    re( re si4) r8 dod( re \> sol, fa lab |
+    mi'2)\! r2 fa4(\pp | fa fa sol re) r |
+    r4 re8(\> si lad si sol4) sol8( sold |
+    mi4)\! r1 | R1*5/4*2
   }
 }
 

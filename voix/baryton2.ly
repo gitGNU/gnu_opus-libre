@@ -304,30 +304,37 @@ EntracteBarytonDeux = { \BarytonDeux
 ActeDeuxSceneUnBisBarytonDeux = { \BarytonDeux
   \relative {
     R1 R2. R2 R1*5/4*11
-    r1 lad8 lad dod4 r8 sib la! la re4 r8 la |
-    fad4 fa8 la re4 dod sib8 re | fa!2 dod4 fad, la |
-    re,2 r r4 | R1*5/4*2
-    r2 re'4 lab sib | mi, r la dod8 re dod la |
-    sol4 reb' sib do! fad,8 sold | re4 r1 | R1*5/4*6
-    r2 re4. re8 re4 | fa4. re8 do4 fa8 re do re |
-    si4. re8 sol4 re8 sol fa sol | lab2 r2 r4 | R1*5/4
-    r2 dod,8 dod mi4 dod8 mi | sol2 r2 fad4 | mi fad8 mi si'2 r4 |
-    r2 r4 si sol8 fad | si2 la4 fad la | dod,1 r4
+    r1 lad8(\f lad dod4--) r8 sib( la! la re4--) r8 la-. |
+    fad4--( fa8 la re4) dod--(\< sib8 re | 
+    fa!2->--)\! dod4--\> fad,-- la-- |
+    re,2-- \! r r4 | R1*5/4*2
+    r2 re'4-.(\mf lab-. sib-. | 
+    mi,-.) r la-. dod8( re dod la |
+    sol4-.) reb'-.(\> sib-. do!-. fad,8 sold | 
+    re4)\mp r1 | R1*5/4*6
+    r2 re4.--(\mf re8) re4-. | 
+    fa4.->--( re8) do4-- fa8-.( re-. do-. re-.  |
+    si4.--) re8-. sol4-- re8-.( sol-. fa-. sol-.| 
+    lab2--) r2 r4 | R1*5/4
+    r2 dod,8\mp dod mi4--( dod8 mi | 
+    sol2) r2 fad4-. | mi--( fad8 mi si'2) r4 |
+    r2 r4 si\mf \< sol8-. fad-. | 
+    si2->--\! la4-- fad-- la-- | \ten dod,1 \f r4
     R1*5/4*38 R1*7/4*7 R2. R1 R2. R2 R2.*9 R1*7/4*3 R2.*7 R1*7/4*9
     
-    r2 mi'~ mi4 r | R1.*2
-    \tt{r4 re,4.} \tt{r8 dod mi4.} \tt{r8 re sol4.} |
-    \tt{mi8 mi mi mi mi} sold16 sold sol sol si4 \tt{si8 si sib lab si} |
-    re,2 r4 | R2.*6 R2*2
-    r4 r8 re'4. | sold,4. si | fa4 r2 | R2.
-    sib8. sib16 sib8 sib | si4 si8 | re2 R2
-    re8 re4 re8 re4 re8 | re2 r4 |
-    re8 re4 re8 re4 re8 | re2 r4
-    re8 re  re  re  re  | fa2~ fa8 r4 |
-    R2.*3 \t{ r8 re, dod'} mi4 r | R2.*11 |
-    R2 R4. R2 sold,4 sol sib8 | mib,2.~ mib2. r4 |
-    r4 sol sol4. sol8 sol sol | la,4. r8 sol'4 sol8 sol sol sol |
-    \t {fa mib fad} re'2 re4 re |
+    r2 mi'->--\ff ~ mi4 r | R1.*2
+    \tt{r4 re,4.->-- \f} \tt{r8 dod-.( mi4.->--)} \tt{r8 re-.( sol4.->--)} |
+    \tt{mi8(\< mi mi mi mi} sold16 sold sol sol si4) \tt{si8--( si-- sib-- lab-- si--} |
+    re,2->--)\sfz r4 | R2.*6 R2*2
+    r4 r8 re'4.--( | sold,4.-- si-- | fa4--) r2 | R2.
+    sib8.->\ff \< sib16-> sib8-> sib-> | si4-> si8-> | re2->\sfz R2
+    re8-> re4-> re8-> re4-> re8-> | re2-> r4 |
+    re8-> re4-> re8-> re4-> re8-> | re2-> r4
+    re8->\ff\< re->  re->  re->  re->  | fa2->--\sfz~ fa8 r4 |
+    R2.*3 \t{ r8 re,(\< dod'} mi4)\sfz r | R2.*11 |
+    R2 R4. R2 sold,4(\mf \< sol sib8 | \ten mib,2.)\f ~ mib2. r4 |
+    r4 sol(\f sol4. sol8\< sol sol | la,4.->)\! r8 sol'4( sol8 sol sol sol |
+    \t {fa\< mib fad} re'2)\! re4-- re-- |
     R1*5/4*8
   }
 }

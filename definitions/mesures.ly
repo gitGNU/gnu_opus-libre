@@ -945,7 +945,9 @@ ActeDeuxSceneUnBisMesures = {
       \mark \markup \did \ActeDeuxSceneUnBisB
             R1*5/4*17
       \mark \markup \did \ActeDeuxSceneUnBisC
-            R1*5/4*19
+            R1*5/4*17
+      \mark \markup \did \ActeDeuxSceneUnBisCC
+            R1*5/4*2
       \mark \markup \did \ActeDeuxSceneUnBisD
             R1*5/4*2
       \mark \markup \did \ActeDeuxSceneUnBisE
@@ -1027,7 +1029,12 @@ ActeDeuxSceneUnBisMesures = {
       \mark \markup \did \ActeDeuxSceneUnBisQ
             R1*5/4*8
       \mark \markup \did \ActeDeuxSceneUnBisR
-            R1*5/4*9
+            R1*5/4*6
+            r2
+            r4
+            r2
+           _\markup \Noir
+            R1*5/4*2
                   \bar "|."
 }
 
