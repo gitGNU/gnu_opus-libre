@@ -290,7 +290,7 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %{
+  }
   \score {
     \ActeUnSceneTrois
     \header {
@@ -339,5 +339,4 @@ ActeDeuxSceneTrois = {
       piece = \ActeDeuxSceneTroisTitre
     }
   }
-  %}
 }

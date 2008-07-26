@@ -1408,7 +1408,7 @@ ActeDeuxSceneTroisMesures = {
             R1*2
       \mark \markup \did \ActeDeuxSceneTroisZN
             R1
-  \time 3/4 R2.
+  \time 3/4 R2.   \bar "||"
       \mark \markup \did \ActeDeuxSceneTroisZO
             R2.*5
   \time 2/4 R2*3  \bar "||"
@@ -1418,5 +1418,11 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4
       \mark \markup \did \ActeDeuxSceneTroisZP
       \tempo "Andante al fine" 8 = 92
-            R2.
+            R2.*10
+      \mark \markup \did \ActeDeuxSceneTroisZQ
+            R2.*10
+      \mark \markup \did \ActeDeuxSceneTroisZR
+            R2.*5
+      \mark \markup \did \ActeDeuxSceneTroisZS
+            R2.*16\bar "|."
 }

@@ -109,20 +109,38 @@ EntracteSopranoUn = {
 
 ActeDeuxSceneUnSopranoUn= { \SopranoUn
 	\relative {
-		R2.*4 R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2
-    R2 R2.*3 R2 R2. R2 R2.*2 R2 |R2.*3 R2 R2.*2 R1 R2. R1
-    r4 \t {r sib' sib}| reb2~|reb4~ \t {reb4 sib sib} | sib2 r2|
-    R1*2 | r4 re,2 | la'2 mi8 r | R2. | \t { r4 sold fad} si4~|si2 | 
-    r8 la \t{do4 la si}| mi,4 r2 | R2.*3 R1
-    si'8 la4 si8 re4 | \t {si la do} | sold4 r2 | \repeat unfold 11 {R1 R2.} |
-    r2 \t {fad4 fad la} | si2.~ si4 r r2 | R2.
-    r4 fad8 r \t { fad4 fad la } si2.~ si4 r r2 |
-    r4 do8 fad4 do8 | fad4. do8 fad sol fad re | do re fad2 | R1
-    r8 re la'4 re,8 la' | re, mi sold4 mi8 re sold4 | R2. R1 r2 r8 la, |
-    lab do re2. | r2 r8 la! | lab do re2. | r2 r8 la! lab sib mib2~ mib4 r2 |
-    r2 r8 la,! lab do re2 | r2 r8 la! lab do re4 r8 lab?8 | la! do re4. lab8 |
-    sol re' sol2~ | sol2.~ sol4 r4 r2 | R2. R1 R2. r2 r4 r8 lab,|
-    la! do re2 r2 r4 r8 lab | la! do re2 
+		R2.*4 R2 R2.*2 R2 R2.*3 R2 | 
+    R2. R2 R2.*2
+    R2 R2.*3 R2 R2. R2 R2.*2 R2| 
+    R2.*3 R2 R2.*2 R1 R2. R1
+    r4 \t {r sib'(\p sib}| reb2~|
+    reb4~ \t {reb4 sib\> sib} | sib2)\! r2|
+    R1*2 | r4 re,2(\pp | la'2 mi8 r | R2. | 
+    \t { r4 sold fad} si4--~|si2 | 
+    r8 la--\< \t{do4--\mf la-- si--}| 
+    mi,4--) r2 | R2.*3 R1
+    si'8(\mf la4) si8( re4) | \t {si-.( la-. do-.} | 
+    sold4--) r2 | \repeat unfold 11 {R1 R2.} |
+    r2 \t {fad4--( \mf fad-- la--} | 
+    \ten si2.)~ si4 r r2 | R2.
+    r4 fad8--( r \t { fad4-- fad-- la-- } 
+    \ten si2.)~ si4 r r2 |
+    r4 do8( \f fad4) do8( | 
+    fad4.) do8( fad sol fad re | do re fad2) | R1
+    r8 re( \bmc #"più" #"f" la'4) re,8( la') | 
+    re,( mi sold4) mi8( re sold4) | 
+    R2. R1 r2 r8 la,(\f |
+    lab do re2.) | r2 r8 la!( | 
+    lab do re2.) | r2 r8 la!( |
+    lab sib \ten mib2)~ mib4 r2 |
+    r2 r8 la,!( \f
+    lab do re2) | r2 r8 la!( 
+    lab do re4) r8 lab?8( | 
+    la! do re4.) lab8( |
+    sol\< re' \ten sol2)\!~ | sol2.~ sol4 r4 r2 |
+    R2. R1 R2. r2 r4 r8 lab,(\mf|
+    la! do re2) r2 r4 r8 lab(\mp |
+    la! do re2) 
     R1 R2. R1 R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1 |
 	}
 }
@@ -202,7 +220,7 @@ ActeDeuxSceneTroisSopranoUn= { \SopranoUn
     sold4 r r2 | re4 la' sold mi|
     r4 mi'8 mi re4 re8 re | mi4 fa8 fa mib4 mib8 mib |
     fad4 fad8 fad mi4 sol8 sol | r sold r2 |
-    sib,2.~sib8 mib4 sib8 la re | la4 lab8 reb sol4 | mib4 dod8 fad re4~|
-    re2.~re4 r R2*2
+    sib,2.~sib8 mib4 sib8 la re | la4 lab8 reb sol,4 | mib4 dod8 fad re4~|
+    re2.~re4 r R2*2 R2.*41
   }
 }

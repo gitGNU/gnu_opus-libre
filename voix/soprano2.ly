@@ -151,28 +151,47 @@ EntracteSopranoDeux = { \SopranoDeux
 
 ActeDeuxSceneUnSopranoDeux = { \SopranoDeux
 	\relative {
-		R2.*4 R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2 R2 R2.*3 R2 |
-    r4 sold'8 sold sold4 | sol!8 si4 si8 sib sib | re4 r r8 re re re | 
-    \t {fa re re} re4. re8 |
-    r4 si8 sib sib la dod la | lab2 r4 | R2 | R2. | R1 |
+		R2.*4 R2 R2.*2 R2 R2.*3 R2 | 
+    R2. R2 R2.*2 R2 R2.*3 R2 | 
+    R2. R2 R2.*2 R2 R2.*3 R2 |
+    r4 sold'8( \mf sold sold4--) | sol!8( si4 si8 sib-- sib | 
+    re4--) r r8 re( \< re re | 
+    \t {fa--\! re re} re4. re8) |
+    r4 si8( \> sib) sib( la) dod( la) | lab2-- \! r4 | R2 | R2. | R1 |
     
-    r4 la!8 sold la do re do | la4 la8 la sold sold sold re' | do4 do8 r r4 |
-    r sold8 la sold mi | re4 mi sold8 la | sold4 sold8 sold la re, | mi4 sold8 la |
-    sold4 sold8 r r4 | la8 re sold,4. fa8 | re'4 la re | sold, la8 re la sold |
-    re sold la4. sold8 | la re la sold \t {mi4 la re8 mi} | re2 r4 | R2
-    \t {mi4 re sold} r | re8 la' sold4. mi8 sold la | sold4 r re |
-    mi16 si8.~ si8 dod~ dod re~ re8. sol!16 | re4 mi8 si dod4 |
-    sold2~ \t {sold4 si la} | re2 r4 r2 r4 do! | fad do sol'  |
-    fad sib,8 do fad2~ | fad4 r do | re8 fad sol fa \t {do4 re la~} la2 r4 |
-    r2 la4 la la2 r4 | r la \t {la la la} la2 r4 |
-    la4 la \t {la r do} la2 la4 | re la re mi | sold2.~ sold2. r4 |
-    \repeat unfold 10 {R2. R1} R2. r2 re4 | r \t {do fa2~} | fa2 r4 |
-    R2. \t {r4 red, fad} fa'!~ | fa4. sol, | R2.
-    r4 r8 do do mib | fa2 do4 | si8 mib fa2 r8 do |
-    do mib fa4. do8 | si dod fad2 r4 |
-    lab mib8 fa! do!4 | r4 r8 la! la sol4 sib8 | fad2 r4 |
-    R1 R2. r2 dod'4 r | si4. re | sib2 r | r4 r8 la4. |
-    \t {la2 sol sib} | fad2.~ | fad4 r | R1 R2. R1 R2. R1 R2. R1 |
+    r4 la!8( \mp sold la do re do | 
+    la4 la8 la sold sold sold re' | 
+    do4 do8) r r4 |
+    r sold8( \( la) sold( mi | re4-- mi) sold8 la | 
+    sold4-- sold8 \) sold( \( la re,) | mi4 sold8 la |
+    sold4-- sold8 \) r r4 | 
+    la8( \mf \> re sold,4.)\! fa8-. | 
+    re'4( la) re( | sold,) la8( re la sold |
+    re sold la4.) sold8-. | la( re la sold \t {mi4 \< la re8 mi} | 
+    re2)\mf r4 | R2
+    \t {mi4--( \f re-- sold--)} r | 
+    re8(\mf la' sold4. mi8 sold la | sold4) r re--\( |
+    mi16( si8.)~ si8 dod--~ dod re--~ re8. sol!16( |
+    re4) mi8 si dod4 |
+    sold2--~ \t {sold4 \> si la} | 
+    re2 \) \p r4 r2 r4 do!--( \pp | fad \< do sol'  |
+    fad)\! sib,8( \> do fad2)~ | fad4\! r do-- |
+    re8( \< fad sol fa) \t {do4(\> re la~} la2)\! r4 |
+    r2 la4--\mp la-- la2-- r4 | r la-- \t {la( la la} la2) r4 |
+    la4--(\< la-- \t {la--\! r do} la2) la4(\mf | 
+    re \> la re mi | \ten sold2.)\p~ sold2. r4 |
+    \repeat unfold 10 {R2. R1} R2.
+    r2 re4--\mp | r \t {do-- fa2--~} | fa2 r4 |
+    R2. \t {r4 red,(\p fad} fa'!~ | fa4. sol,) | R2.
+    r4 r8 do(\mf do mib | fa2) do4-- | 
+    si8( mib fa2) r8 do( \mp |
+    do mib fa4.) do8(\> | si dod fad2)\pp r4 |
+    lab--\mf mib8( fa! do!4) | 
+    r4 r8 la! la( sol4) sib8( | fad2) r4 |
+    R1 R2. r2 dod'4--( \p r | si4.-- re--| 
+    sib2--) r | r4 r8 la4.--( \pp |
+    \t {la2-- sol-- sib--} | \ten fad2.--)~ | 
+    fad4 r | R1 R2. R1 R2. R1 R2. R1 |
 	}
 }
 
@@ -264,6 +283,6 @@ ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
     r4 re'8 re mi4 mi8 mi | re4 mib8 mib fa4 fa8 fa |
     mi4 fad8 fad sold4 mi8 mi | r la, r2 |
     sold'2.~ sold4. fad4 la8 | fa4. mib4 fad8 | re4 sib si |
-    sol sold mi | re r | R2*2
+    sol sold mi | re r | R2*2 R2.*41
   }
 }

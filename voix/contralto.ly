@@ -53,8 +53,8 @@ ActeUnSceneQuatreContralto = { \Contralto
     R2*3 R4. R2*3 R4. R2. R1*3
     sib,8.--( \f la16--~ la8 do--~ do) sib-.( mib-. reb-. |
     fad4->--) r r8 do-.( fa!-. mib-. |
-    fad4->-- r r8 do-.( fa!-. mib-. |
-    fad4->-- r r fa-- | fad->-- r r fa-- | fad->-- r sol->-- r | la->-- r r2 R1*2 R2 R2.*2 R2 R1 |
+    fad4->--) r r8 do-.( fa!-. mib-. |
+    fad4->--) r r fa-- | fad->-- r r fa-- | fad->-- r sol->-- r | la->-- r r2 R1*2 R2 R2.*2 R2 R1 |
     R2.*21
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
   }
@@ -68,18 +68,22 @@ ActeDeuxSceneUnContralto= { \Contralto
 		R2.*4 R2 R2.*2 R2 R2.*3 R2 |
     R2. R2 R2.*2 R2 R2.*3 R2 R2. R2 R2.*2 R2 R2.*3 R2 R2.*2 
     R1 R2. R1 R2. R2 R2. R1*3 R2.*4 R2 R2.*5 R1 R2. R2 R2.
-    \repeat unfold 12 {R1 R2.} r2 fa8 mi fa la | si2.~ si4 r r2 |
-    R2. r4 r8 la si la si do re2.~ re4 r r2 |r4 red,8 sold4 fad8 |
-    si4. la8 dod re! sol,! la | dod2 r4 | r r8 la la la la la |
-    la do! sol4 la8 mi~ | mi fad dod mi sol la do!4 |
-    la8 do re2~ | re4 r r2 |
-    la8 do re2~ | re4 r r2 |
-    la8 do re2  | fa,8 lab sib2~ sib4 r2 |
-    la8 do re2~ | re4 r2 |
-    la8 do re2~ | re4 r2 | sol,8 la do2 |
-    la8 do re2~ | re2.~ | re4 r r2 | R2. R1 R2. R1 |
-    r2 r8 la | lab do re2. |
-    r2 r8 la | lab do re2. |
+    \repeat unfold 12 {R1 R2.} 
+    r2 fa8( \mf mi fa la | \ten si2.)~ si4 r r2 |
+    R2. r4 r8 la( si la si do \ten re2.)~ re4 r r2 |
+    r4 red,8(\< sold4) fad8( |
+    si4.) la8-- dod--( \f re!-- sol,!-- la-- | 
+    dod2) r4 | r r8 la--( la-- la-- la-- la-- |
+    la-- do!-- sol4--) la8-. mi--( \mf \<~ | 
+    mi fad dod mi sol la do!4)\! |
+    la8(\f do re2)~ | re4 r r2 |
+    la8(   do re2)~ | re4 r r2 |
+    la8(   do re2)  | fa,8( lab \ten sib2)~ sib4 r2 |
+    la8(   do re2)~ | re4 r2 |
+    la8(   do re2)~ | re4 r2 | sol,8( la do2) |
+    la8(   do \ten re2)~ | re2.~ | re4 r r2 | R2. R1 R2. R1 |
+    r2 r8 la( \mf | lab do re2.) |
+    r2 r8 la( \mp | lab do re2.) |
     R2. R1 R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1 |
 	}
 }
@@ -145,6 +149,6 @@ ActeDeuxSceneTroisContralto= { \Contralto
     r2 r8 sold la do | re2 r4 sol,8 sol |
     sol4 sold8 sold la4 sol8 sol |
     sold4 la8 la sib4 la8 la | r sold r2 |
-    fad2.~ fad2 mi4 dod'2 sol,4 | fad'2. re2.~ re4 r R2*2
+    fad2.~ fad2 mi4 dod'2 sol,4 | fad'2. re2.~ re4 r R2*2 R2.*41
   }
 }

@@ -281,8 +281,23 @@ ActeDeuxSceneTroisTenor = { \Tenor
     r4 mi8 mi re4 re8 re | mi4 si8 si do4 sib8 sib |
     si4 re8 re fad4 fa8 fa | R2.
     mi2.~mi~mi~mi~mi~mi2~mi~mi4 r |
+    
     r4 r8 re16 re re mi si8 | 
     r8 sold16 sold sol sol sib8 \t{sold si sol16 sold} |
-    mi4
+    mi4 r2 |  R2.*4
+    mi8 mi sold4 r8 sol | \t {si sib sib} re2 |
+    R2.*3 r4 r8 \t {do16 mi do} sold'8 \t {mi16 mi sold} |
+    do,8[ r16 mi,] sib'[ r32 fad do'16 r32 sold] re'8[ \t {r16 do fad,]} |
+    mi'4 r16 re \t { re re mi} si dod sold32 fad si la |
+    re2 r4 | R2.
+    sol,16 sold32 sold sol16 sol do si red8 r4 |
+    r8 mi32 mi mi mi sol8[ r16 do,] reb reb do8 |
+    la16 la sib sib la8 sol16 sol \t {lab8 fa sol} |
+    mi4 r2 | R2.*2
+    r8 sold16 sold sold8 sol16 sol si4 | r8 la16 sol do4
+    r8 sib16 sib mib2 r8 re |
+    \t {re re mi} \t { si sol sol } \t { sib sol sold} |
+    mi4 r2  r4  r8 sib' \t {r lab si} | sol mi r2 | 
+    la8 sol fa mi r4 | fa16 mi fa8 la4 mi | R2.*8
   }
 }

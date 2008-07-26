@@ -385,5 +385,15 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     r4 la8 la sold4 sold8 sold | la4 la8 la sold4 sib8 sib |
     la4 si8 si do4 sib8 sib | R2.
     do2.~do~do~do~do~do2~do~do4 r |
+    
+    R2.*2 r8 mi,16 mi mi8 do \t {r do do} |
+    dod dod do do do16 si do re |
+    mi2 r4 R2.*10
+    r4 do2 | r16 do do do \t {sol' sol mi} si'8 sol16 si do,8 |
+    r4 r8 \t {r16 mi mi} \t {la sol sol} do do | sib sib mi,8 r2 |
+    R2.*2 r4 r8 mi mi mi | \t {do do do} mi4 \t { mi8 mib mib } |
+    sol4 r2 R2.*3
+    r4 r8 mi mi16 mi fa fa | sol8 mi r2 | R2.
+    la8 sol mi fa r4 | mi8 fa16 sol la4 mi | R2.*8
   }
 }

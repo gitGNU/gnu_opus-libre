@@ -776,7 +776,7 @@ ActeDeuxSceneUnSopranoDeuxTexte = \lyricmode {
   cou -- _ _ rbes cha -- vi -- ran -- tes…
   Cro -- \dash yez -- vous qu'il vo -- lait, pla -- nait, flo -- ttait en 
   su -- spen -- si -- on sans
-  se sou -- ci -- er de la di -- re -- ction_?
+  se sou -- ci -- er de la di -- rec -- tion_?
   Non, non, non. Je veux croire en cette hi -- stoire.
   Le vol __ _ _ des __ _ oi -- _ seaux __ _ vi -- re -- vol -- tant __ _ est si beau.
   Il bri -- sait l'a -- zur, j'en suis sûre, __ _ et di -- stan -- çi -- ait
@@ -1074,6 +1074,7 @@ ActeDeuxSceneTroisSopranoUnTexte = \lyricmode {
   \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
   \dash —_tion_!
+  Aaa... __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
@@ -1127,6 +1128,7 @@ ActeDeuxSceneTroisSopranoDeuxTexte = \lyricmode {
   \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
   \dash —_tion_!
+  Aaa... __ _ _ _ _ _ _ _ _ _ _ _ _ _
 }
 
 ActeDeuxSceneTroisContraltoTexte = \lyricmode {
@@ -1154,6 +1156,7 @@ ActeDeuxSceneTroisContraltoTexte = \lyricmode {
   \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
   \dash —_tion_!
+  Aaa... __ _ _ _ _ _ _ _
 }
 
 ActeDeuxSceneTroisTenorTexte = \lyricmode {
@@ -1186,6 +1189,18 @@ ActeDeuxSceneTroisTenorTexte = \lyricmode {
   \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
+  Aaa... __ _ _ _ _ _ _ _
+  On ne les voit plus_; mais on les en -- tend hur -- ler beau -- coup trop.
+  Plus per -- sonne à mettre en pri -- son...
+  En É -- tran -- ger, vous é -- tiez fort_; mais là, en Roi, bra -- vo_!
+  Cha -- peau bas_! Tous é -- li -- mi -- nés en u -- ne seu -- le fois...
+  Vo -- tre so -- mmeil vous a tra -- hi.
+  Ce n'est pas ce -- la_; mais ce ma -- tin, vous a -- vez re -- fait vo -- tre
+  lit à mer -- veille.
+  Vous a -- llez gou -- ver -- ner_! Or -- do -- nner_! Di -- ri -- ger_!
+  Ce châ -- teau se -- ra vo -- tre nou -- veau vai -- sseau.
+  Très i -- mmo -- bi -- le.
+  Ex -- trê -- me -- ment i -- _ mmo -- bi -- le.
 }
 
 ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
@@ -1251,6 +1266,13 @@ ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
   \leftSyl \dash —_tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
+  Aaa... __ _ _ _ _ _ _ _
+  Ils se ba -- ttent pour a -- voir la pla -- ce près __ _ du hu -- blot.
+  Ah... Vous m'a -- vier donc re -- co -- nnu, vous au -- ssi_?
+  \dash Qu'ai -- je donc bien pu dire dans mon so -- mmeil_?
+  Que \dash vais -- je bien pou -- voir faire, coin -- cé i -- ci_?
+  Un voy -- age i -- mmo -- bi -- le.
+  Ex -- trê -- me -- ment i -- mmo -- _ bi -- le.
 }
 
 ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
@@ -1291,5 +1313,6 @@ ActeDeuxSceneTroisBarytonDeuxTexte = \lyricmode {
   \dash tion -- \dash tion -- tion_! \dash tion -- \dash tion -- tion_!
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
   \dash —_tion_!
+  Aaa... __ _ _ _ _ _ _ _ _ _ _ _
 }
 
