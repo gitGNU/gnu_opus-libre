@@ -148,38 +148,45 @@ ActeDeuxSceneUnSopranoUn= { \SopranoUn
 ActeDeuxSceneDeuxSopranoUn= { \SopranoUn
   \relative {
     R1.*6 R1*2 R2.*2  |
-    r16 sib' sib sib mib8 si!16 si mib8. do16 | do do do do
-    mib4 r16 do8 mib16 | si8 sib16 reb
-    la4 r16 la sol sib | fad2 r1 |R1.*2 R1*2 R2. R1 R4.
-    re'16 re sol8 dod,16 dod fad4 r8 r4|
-    r la,16 re sold,8 mi re16 mi sold4 |
-    r8 si4 mi16 si fad dod' sold8 r4  |
+    r16 sib'-.(\mf sib-. sib-. mib8-- si!16-. si-. mib8.-- do16-. | 
+    do-. do-. do-. do-. mib4--) r16 do8--( mib16 | si8) sib16(\> reb
+    la4) r16 la-.( sol-. sib-. | fad2--)\mp r1 |
+    R1.*2 R1*2 R2. R1 R4.
+    re'16(\mf re sol8-- dod,16 dod fad4--) r8 r4|
+    r la,16( re sold,8 mi-- re16 mi sold4--) |
+    r8 si4--( mi16-. si-. fad-. dod'-. sold8--) r4  |
     R1*3 R2. R1. R1*2 R2.*3 R2 R2.*3 R2 R4.
-    r8 la16 la re8 la16 la re8 sold, re'16 si sol sib |
-    mi,4 r sold16 sold sold8~ sold16 sold sol sol     |
-    si8 sold16 r si si sib sib32 sib sib16 sib re4 r8 |
-    R1 mi16 mi la8 re,16 re sold8 mi32 re16. si8 r sold16. sold32 |
-    si4 sold16 r lad16.[ lad32] dod4 lad16 r32 dod dod16.[ dod32] |
-    mi4 dod32 r lad lad lad16.[ lad32] fad'4 dod16 r32 mi mi16.[ mi32] |
-    fad4 r8 dod | sold lad si dod | si'2. r4 |
+    
+    r8 la16(\mf la re8-- la16 la re8-- sold,-- re'16-. si-. sol-. sib-. |
+    mi,4--) r sold16( sold sold8--~ sold16 sold sol sol |
+    si8-- sold16) r si( si sib sib32 \< sib sib16 sib re4--)\! r8 |
+    R1 mi16(\f mi la8-- re,16 re sold8-- mi32 re16. si8--)
+    r sold16.-.\mp sold32-. |
+    si4--( sold16) r lad16.-.[ lad32-.] dod4--( lad16) r32 dod 
+    dod16.-.[ dod32-.] |
+    mi4--(\< dod32) r lad lad lad16.-.[ lad32-.] fad'4--( dod16) r32 mi 
+    mi16.-.[ mi32-.] |
+    fad4--\! r8 dod(\f | sold lad si\> dod | \ten si'2.)\mp r4 |
     R2. R1. R1 R1.*2 R2. R1
     R2. R1 R2. R1 R2.
-    r2 sold,4 sold la2 r4 | r2 r4 sold8 sold la4 r sold8 sold |
-    la4 r8 la sold sold la4 r sold sold | la2 r  | re,8 mi sold4 la la la la2 | R2. R1 R2. 
-    r2 r4 sold8 sold la4 r sold8 sold la2. r4 R2.|
+    r2 sold,4-.(\p sold-. la2--) r4 | 
+    r2 r4 sold8-.( sold-. la4--) r sold8-.( sold-. |
+    la4--) r8 la-.( sold-. sold-. la4--) r sold--( sold-- | la2--) r  | 
+    re,8(\mf \< mi sold4-- la--) la--(\p la-- la2--) | R2. R1 R2. 
+    r2 r4 sold8-.(\pp sold-. la4-.) r sold8-. sold-. \ten la2. r4 R2.|
     R2*3 R2. R1*3 R1*5/8*14 R1*9 R2. R2 R1*2 R2.*7 R2*2 R2.*2 R2*25
     
     %%% Choeur %%%
     
-    sold'16 sold la8 r2 |
-    mi16    mi   fa8 r2 |
-    re16    re  mib8 r2 |
-    do16    do  dod8 r2 |
-    si16 si do8 r si16 si do8 r |
-    red16 red mi8 r red16 red16 mi8 r |
-    mi16 mi red8 r2 | R2.*2
-    r2 sol,8 sol sold4 r2 | R2.*3
-    r2 sold8 sold  la4 r sold16 sold la8 |
+    sold'16-.(\pp sold-. la8-.) r2 |
+    mi16-.(    mi-.   fa8-.) r2 |
+    re16-.(    re-.  mib8-.) r2 |
+    do16-.(    do-.  dod8-.) r2 |
+    si16-.(\mp si-. do8-.) r si16-.( si-. do8-.) r |
+    red16-.( red-. mi8-.) r red16-.( red16-. mi8-.) r |
+    mi16-.(\p mi-. red8-.) r2 | R2.*2
+    r2 sol,8-.( \pp sol-. sold4--) r2 | R2.*3
+    r2 sold8-.( \pp sold-.  la4--) r sold16-.\mf sold-. la8-. |
   }
 }
 

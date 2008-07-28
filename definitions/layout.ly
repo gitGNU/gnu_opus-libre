@@ -56,7 +56,6 @@ includeLayout = \layout {
     \consists "Axis_group_engraver"
     \consists "Script_engraver"
     \consists "Dynamic_engraver"
-    \consists "Mark_engraver"
     \consists "Text_engraver"
     \consists "Text_spanner_engraver"
     \consists "Metronome_mark_engraver"
@@ -64,11 +63,10 @@ includeLayout = \layout {
   }
   \context {
     \Score
-    \remove "Mark_engraver"
     \remove "Metronome_mark_engraver"
     \accepts "TopLine"
     \override RehearsalMark #'side-axis = #Y
-    \override RehearsalMark #'direction = #DOWN
+    \override RehearsalMark #'direction = #UP
     \override RehearsalMark #'outside-staff-priority = #900
     \override RehearsalMark #'self-alignment-X = #left
     \override MetronomeMark #'side-axis = #Y
@@ -165,17 +163,11 @@ includeLivretLayout = \layout {
 %% Special contexts  ----------------------------------------------%
   \context {
     \ChoirStaff
-    \type "Engraver_group"
-    \name "InvisibleChoirStaff"
-    \alias ChoirStaff
     \remove "System_start_delimiter_engraver"
     \override SystemStartBar #'stencil = ##f
   }
   \context {
     \Staff
-    \type "Engraver_group"
-    \name "InvisibleStaff"
-    \alias Staff
     \remove "Accidental_engraver"
     \remove "Rest_collision_engraver"
     \remove "Ledger_line_engraver"
@@ -193,9 +185,6 @@ includeLivretLayout = \layout {
   }
   \context {
     \Voice
-    \type "Engraver_group"
-    \name "InvisibleVoice"
-    \alias Voice
     \remove "Grace_engraver"
     \remove "Tuplet_engraver"
     \remove "Tie_engraver"
@@ -213,22 +202,14 @@ includeLivretLayout = \layout {
     \remove "Breathing_sign_engraver"
     \remove "Glissando_engraver"
     \remove "Trill_spanner_engraver"
+    \remove "Text_engraver"
     \remove "Text_spanner_engraver"
     \remove "Multi_measure_rest_engraver"
     \remove "Arpeggio_engraver"
     \remove "Pitched_trill_engraver"
   }
   \context {
-    \InvisibleStaff
-    \accepts "InvisibleVoice"
-  }
-  \context {
-    \InvisibleChoirStaff
-    \accepts "InvisibleStaff"
-  }
-  \context {
     \Score
-    \accepts "InvisibleChoirStaff"
     \override SystemStartBar #'stencil = ##f
   }
   
@@ -238,25 +219,9 @@ includeLivretLayout = \layout {
     \name "TopLine"
     \consists "Output_property_engraver"
     \consists "Axis_group_engraver"
-    \consists "Script_engraver"
-    \consists "Dynamic_engraver"
-    \consists "Mark_engraver"
-    \consists "Text_engraver"
-    \consists "Text_spanner_engraver"
-    \consists "Metronome_mark_engraver"
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
-    \override RehearsalMark #'side-axis = #Y
-    \override RehearsalMark #'direction = #DOWN
-    \override RehearsalMark #'outside-staff-priority = #900
-    \override RehearsalMark #'self-alignment-X = #left
-    \override MetronomeMark #'side-axis = #Y
-    \override MetronomeMark #'direction = #DOWN
-    \override TextScript    #'outside-staff-priority = #900
-    \override TextSpanner   #'outside-staff-priority = #1000
   }
   \context {
     \Score
-    \remove "Mark_engraver"
     \remove "Metronome_mark_engraver"
     \accepts "TopLine"
     \override PaperColumn #'keep-inside-line = ##t
@@ -285,10 +250,6 @@ includeLivretLayout = \layout {
   \context {
     \Score
     \override BarNumber #'transparent = ##t
-  }
-  \context {
-    \TopLine
-    \remove "Metronome_mark_engraver"
   }
 %%-----------------------------------------------------------------%
 }

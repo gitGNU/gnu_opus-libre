@@ -11,6 +11,7 @@ includePaper = \paper {
 %% Page variables -------------------------------------------------%
   page-limit-inter-system-space = ##t
   page-limit-inter-system-space-factor = 1.4
+  #(define page-breaking ly:minimal-breaking)
   
 %% Horizontal margins ---------------------------------------------%
   left-margin = #13

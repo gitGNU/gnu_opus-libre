@@ -17,61 +17,63 @@ PrologueMesures = {
   \time 2/4
       \tempo "Largo" 4 = 48
             R2*2
-  \time 3/4 r2.
-           _\markup \did \PrologueA
+  \time 3/4
+      \mark \markup \did \PrologueA
+            R2.
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
   \time 3/4 R2.
   \time 2/4 R2*2
-  \time 3/4 r2.
-           _\markup \did \PrologueB
+  \time 3/4
+      \mark \markup \did \PrologueB
+            R2.
   \time 2/4 R2*2
   
   %%% Entrée du Baryton 1 %%%
   
   \time 3/4
+      \mark \markup \did \PrologueC
       \tempo "Vivo subito" 4 = 120 
-            r2.
-           _\markup \did \PrologueC
+            R2.
   \time 2/4 R2*2
   \time 3/4 R2.
-  \time 2/4 r2
-           _\markup \did \PrologueD
+  \time 2/4
+      \mark \markup \did \PrologueD
+            R2
   \time 3/4 R2.
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4 R2
   \time 3/4 R2.
-  \time 2/4 r2
-           _\markup \did \PrologueE
+  \time 2/4
+      \mark \markup \did \PrologueE
+            r2 %FIXME: replace with MmRest?
       \startTxt #"rit."
             R2
   \time 3/4 R2.
       \stopTxt    \bar "||"
   \time 2/4
+      \mark \markup \did \PrologueF
       \tempo "Tempo giusto"
             r2
-           _\markup \did \PrologueF
             r4
+      \mark \markup \did \PrologueG
             r4
-           _\markup \did \PrologueG
             R2*6
   \time 3/4 R2.*6
             r2
+      \mark \markup \did \PrologueH
             r4
-           _\markup \did \PrologueH
             R2.
-            r2.
-           _\markup \did \PrologueI
-            R2.
+      \mark \markup \did \PrologueI
+            R2.*2
   \time 4/4 R1
   \time 2/4 R2*2 R2\fermata \bar "||"
   \time 4/4
+      \mark \markup \did \PrologueJ
       \tempo "Più lento" 4 = 60
-            r1
-           _\markup \did \PrologueJ
-            R1
+            R1*2
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -80,30 +82,29 @@ PrologueMesures = {
       \tempo "Adagio" 4 = 52 
             R2*4
   \time 3/4 R2.*11
-  \time 3/8 r4.
-           _\markup \did \PrologueK
-                  \bar"||"
+  \time 3/8
+      \mark \markup \did \PrologueK
+            R4.   \bar"||"
       \tempo "Andantino" 4. = 56
             R4.*25
+            %FIXME: doesn't work.
       \startTxt #"Poco a poco allargando..."
             R4.*9
             r8
+      \mark \markup \did \PrologueL
             r4
-           _\markup \did \PrologueL
             R4.*3 \bar "||"
       \stopTxt
       \tempo "A tempo, un poco più vivo" 4. = 63
             R4.*28
-            r4.
-           _\markup \did \PrologueM
-            R4.*3
-            r4.
-           _\markup \did \PrologueN
-            R4.
+      \mark \markup \did \PrologueM
+            R4.*4
+      \mark \markup \did \PrologueN
+            R4.*2
   \time 5/8 R2*5/4
-  \time 6/8 r2.
-           _\markup \did \PrologueO
-            R2.*2 \bar "||"
+  \time 6/8
+      \mark \markup \did \PrologueO
+            R2.*3 \bar "||"
   \time 4/4
       \tempo "Adagio ad lib." 4 = 66
             R1*4
@@ -135,15 +136,14 @@ PrologueMesures = {
       \mark \markup \did \PrologueQ
             R2*14
             r4 
+      \mark \markup \did \PrologueR
             r4
-           _\markup \did \PrologueR
                   \bar "||"
       \tempo "Recitativo"
             R2*7
             r4
-            r4
-           _\markup \Noir
-                  \bar "|."
+      \mark \markup \Noir
+            r4    \bar "|."
 }
 
 ActeUnSceneUnMesures = {
@@ -172,11 +172,9 @@ ActeUnSceneUnMesures = {
   %%% Air du Baryton 1 %%%
   
   \time 4/4
-      \tempo "Poco a poco animando..."
-            r4
       \mark \markup \did \ActeUnSceneUnD
-            r
-            r2
+      \tempo "Poco a poco animando..."
+            R1
   \time 3/4 R2.
   \time 4/4
       \mark \markup \did \ActeUnSceneUnE
@@ -300,9 +298,8 @@ ActeUnSceneUnMesures = {
             R2*2
       \mark \markup \did \ActeUnSceneUnS
             r4
-            r4
-           _\markup \Noir
-                  \bar "||"
+      \mark \markup \Noir
+            r4    \bar "||"
   \time 4/4 
       \mark \markup \did \ActeUnSceneUnT
       \tempo "Ad libitum" 4 = 80
@@ -377,9 +374,8 @@ ActeUnSceneUnBisMesures = {
       \tempo  "Risoluto" 4 = 92
             R2*3
             r4
-            r4
-           _\markup \Noir
-                  \bar "|."
+      \mark \markup \Noir
+            r4    \bar "|."
 }
 
 InterludeUnMesures = {
@@ -475,8 +471,8 @@ ActeUnSceneDeuxMesures = {
   \time 3/4 R2.
   \time 4/4 R1 
   \time 3/4 r2
+      \mark \markup \did \ActeUnSceneDeuxC
             r4
-           _\markup \did \ActeUnSceneDeuxC
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 R1
@@ -529,9 +525,8 @@ ActeUnSceneDeuxMesures = {
             R2.
   \time 4/4 R1*3
             r2
-            r2
-           _\markup \Noir
-                  \bar "|."
+      \mark \markup \Noir
+            r2    \bar "|."
 }
 
 ActeUnSceneTroisMesures = {
@@ -540,8 +535,8 @@ ActeUnSceneTroisMesures = {
       \tempo "Risoluto" 4 = 116
             R2.*7
             r2
+      \mark \markup \did \ActeUnSceneTroisB
             r4
-           _\markup \did \ActeUnSceneTroisB 
             R2.*10
       \mark \markup \did \ActeUnSceneTroisC
             R2.*4
@@ -574,9 +569,8 @@ ActeUnSceneTroisMesures = {
   \time 2/4
       \mark \markup \did \ActeUnSceneTroisJ
             r4
-            r4
-           _\markup \Noir
-                  \bar "|."
+      \mark \markup \Noir
+            r4    \bar "|."
 }
 
 ActeUnSceneTroisBisMesures = {
@@ -599,9 +593,8 @@ ActeUnSceneTroisBisMesures = {
       \mark \markup \did \ActeUnSceneTroisBisG
             R1*7
             r2
-            r2
-            _\markup \Noir
-                  \bar "|."
+       \mark \markup \Noir
+            r2    \bar "|."
 }
 
 ActeUnSceneTroisTerMesures = {
@@ -632,9 +625,8 @@ ActeUnSceneTroisTerMesures = {
       \mark \markup \did \ActeUnSceneTroisTerG
             R2.*10
             r2
-            r4
-           _\markup \Noir
-                  \bar "|."
+      \mark \markup \Noir
+            r4    \bar "|."
 }
 
 ActeUnSceneQuatreMesures = {
@@ -756,9 +748,8 @@ ActeUnSceneQuatreMesures = {
             R2.*20
       \mark \markup \did \ActeUnSceneQuatreQ
             r2
-            r4
-           _\markup \Noir
-                  \bar "||"
+      \mark \markup \Noir
+            r4    \bar "||"
   \time 3/2
       \mark \markup \did \ActeUnSceneQuatreR
       \tempo "Andantino" 4 = 108
@@ -788,9 +779,8 @@ ActeUnSceneQuatreMesures = {
   \time 2/2 R1
   \time 3/2 R1.
   \time 2/2 r2
-            r2
-           _\markup \Noir
-                  \bar "|."
+      \mark \markup \Noir
+            r2    \bar "|."
 }
 
 EntracteMesures = {
@@ -914,16 +904,16 @@ ActeDeuxSceneUnMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 r2
+      \mark \markup \did \ActeDeuxSceneUnJ
             r2
-           _\markup \did \ActeDeuxSceneUnJ
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
   \time 2/4 R2
   \time 4/4 r2
             r4
+      \mark \markup \Noir
             r4
-           _\markup \Noir
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
@@ -956,12 +946,11 @@ ActeDeuxSceneUnBisMesures = {
             R1*5/4*16
       \mark \markup \did \ActeDeuxSceneUnBisG
       \startTxt #"molto rit."
-            r1*5/4
+            r1*5/4 %FIXME
             R1*5/4
             r1
       \stopTxt
-            r4
-                  \bar "||"
+            r4    \bar "||"
   \time 7/4 
       \tempo "Moderato assai" 4 = 104
             R1*7/4*7
@@ -974,16 +963,16 @@ ActeDeuxSceneUnBisMesures = {
             R2.*9
   \time 7/4 R1*7/4
             r1
+      \mark \markup \did \ActeDeuxSceneUnBisI
             r2
-           _\markup \did \ActeDeuxSceneUnBisI
             r4
             R1*7/4
   \time 3/4 R2.*7
   \time 7/4 R1*7/4
             r2
             r4
+      \mark \markup \did \ActeDeuxSceneUnBisJ
             r1
-           _\markup \did \ActeDeuxSceneUnBisJ
             R1*7/4*2
       \mark \markup \did \ActeDeuxSceneUnBisK
             R1*7/4*5
@@ -997,8 +986,8 @@ ActeDeuxSceneUnBisMesures = {
       \tempo "Tempo giusto" 4 = 104
             R2.*6
             r2
+      \mark \markup \did \ActeDeuxSceneUnBisN
             r4
-           _\markup \did \ActeDeuxSceneUnBisN
   \time 2/4 R2*2
   \time 3/4 R2.*4
   \time 2/4 R2
@@ -1032,8 +1021,8 @@ ActeDeuxSceneUnBisMesures = {
             R1*5/4*6
             r2
             r4
+      \mark \markup \Noir
             r2
-           _\markup \Noir
             R1*5/4*2
                   \bar "|."
 }
@@ -1147,16 +1136,15 @@ ActeDeuxSceneDeuxMesures = {
       \mark \markup \did \ActeDeuxSceneDeuxU
             R1*5/8*2
   \time 4/4
-      \tempo "Andante ad lib." 4 = 80
-            R1
       \mark \markup \did \ActeDeuxSceneDeuxV
+      \tempo "Andante ad lib." 4 = 80
             R1
       \mark \markup \did \ActeDeuxSceneDeuxW
             R1
       \mark \markup \did \ActeDeuxSceneDeuxX
             R1
       \mark \markup \did \ActeDeuxSceneDeuxY
-            R1*2
+            R1*3
       \mark \markup \did \ActeDeuxSceneDeuxZ
             R1*2
       \mark \markup \did \ActeDeuxSceneDeuxZA
@@ -1381,7 +1369,11 @@ ActeDeuxSceneTroisMesures = {
       \tempo "Tempo giusto" 4 = 120
             R2.*3
       \mark \markup \did \ActeDeuxSceneTroisZC
-            R2.*8
+            R2.*3
+            r2
+      \mark \markup \did \ActeDeuxSceneTroisZCC
+            r4
+            R2.*4
   \time 3/8 
       \mark \markup \did \ActeDeuxSceneTroisZD
             R4.
@@ -1398,7 +1390,9 @@ ActeDeuxSceneTroisMesures = {
   \time 3/4 R2.
   \time 2/4 R2*6
   \time 3/4 R2.*4
-  \time 2/2 R1*2
+  \time 2/2
+      \tempo "Allegro" 4 = 132
+            R1*2
       \mark \markup \did \ActeDeuxSceneTroisZH
             R1*6
       \mark \markup \did \ActeDeuxSceneTroisZI
@@ -1410,8 +1404,8 @@ ActeDeuxSceneTroisMesures = {
       \mark \markup \did \ActeDeuxSceneTroisZL
             R1
             r2
+      \mark \markup \did \ActeDeuxSceneTroisZM
             r2
-           _\markup \did \ActeDeuxSceneTroisZM
             R1*2
       \mark \markup \did \ActeDeuxSceneTroisZN
             R1
@@ -1431,5 +1425,7 @@ ActeDeuxSceneTroisMesures = {
       \mark \markup \did \ActeDeuxSceneTroisZR
             R2.*5
       \mark \markup \did \ActeDeuxSceneTroisZS
-            R2.*16\bar "|."
+            R2.*9
+      \mark \markup \Noir
+            R2.*7 \bar "|."
 }

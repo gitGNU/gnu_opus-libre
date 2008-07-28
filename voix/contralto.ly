@@ -91,27 +91,35 @@ ActeDeuxSceneUnContralto= { \Contralto
 ActeDeuxSceneDeuxContralto= { \Contralto
   \relative {
     R1.*6 R1*2 R2.*5 |
-    r2 r4 lab8 do re2~| re4 r r1 | R1. R1*2 R2. |
-    R1 R4. | R1*5 | r4 mib'16 mib fa8 r4 fad,8 la|
-    si2 r4 | R1. R1*2 R2.*3 R2 R2.*3 R2 si,16 re mi8 sib16 re |
-    mi4 r r2 | R1*4 R2*6 r8 sold16 sold la8 sol16 sol sold4 r |
-    r8 sold16 sold la8 r fad fad | sol2 r1 | R1 R1.*2 R2. R1
-    R2. R1 r2 si,8 re mi2 r4 sib8 do | fa2 r4 | R1 si,8 re mi2|
-    sib8 do fa2. | R2. R1 r2 si,8 re | mi2 r4 sib8 re mi2 r4  |
-    re8 mi sol2. | R2. R1 R2. r2 r4 la,8 la sib4 r lad8 lad si!2. r4 R2. |
+    r2 r4 \ind #"sotto voce" lab8(\mf do re2)~| 
+    re4 r r1 | R1. R1*2 R2. |
+    R1 R4. | R1*5 | r4 mib'16(\f mib fa8) r4 fad,8(\mp la|
+    si2) r4 | R1. R1*2 R2.*3 R2 R2.*3 
+    R2 si,16-.(\f re-. mi8-> sib16-. re-. |
+    mi4->) r r2 | R1*4 R2*6 
+    r8 sold16-.\ff sold-. la8->-- sol16-. sol-. sold4->-- r |
+    r8 \ind #"meno" sold16-. sold-. la8-- r fad--(\> fad-- | 
+    sol2--)\p r1 | R1 R1.*2 R2. R1
+    R2. R1 r2 si,8(\mf re mi2) r4 sib8( do | fa2) r4 | 
+    R1 si,8( re mi2)|
+    sib8( do fa2.) | R2. R1 r2 si,8( re | mi2) r4 sib8( re mi2) r4  |
+    re8(\< mi sol2.)\! | R2. R1 R2. 
+    r2 r4 la,8-.(\pp la-. sib4-.) r lad8-. lad-. \ten si!2. r4 R2. |
     R2*3 R2. R1*3 R1*5/8*14 R1*9 R2. R2 R1*2 R2.*7 R2*2 R2.*2 R2*25
     
     %%% Choeur %%%
     
-    r4 sold'16 sold la8 r4 |
-    r  sold16  sold la8 r4 |
-    r  sold16  sold la8 r4 |
-    r  red,16  red  mi8 r4 |
-    r8 red16   red  mi8 r  red16 red mi8 |
-    r  red16   red  mi8 r  red16 red mi8 |
-    r4 sol16  sol sold8 r4 | R2.*2
-    r2 red8    red  mi4 r2 | R2.*3
-    r2 red8    red  mi4 r4 red16 red mi8 |
+    r4 sold'16-.(\pp sold-. la8-.) r4 |
+    r  sold16-.(  sold-. la8-.) r4 |
+    r  sold16-.(  sold-. la8-.) r4 |
+    r  red,16-.(  red-.  mi8-.) r4 |
+    r8 red16-.(\mp red-. mi8-.) 
+    r  red16-.(   red-.  mi8-.) |
+    r  red16-.(   red-.  mi8-.) 
+    r  red16-.(   red-.  mi8-.) |
+    r4 sol16-.(\< sol-. sold8-.)\! r4 | R2.*2
+    r2 red8-.(\pp red-.  mi4--) r2 | R2.*3
+    r2 red8-.(    red-.  mi4--) r4 red16-.\mf red-. mi8-. |
   }
 }
 

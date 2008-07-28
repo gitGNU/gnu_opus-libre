@@ -7,10 +7,10 @@
 
 %%% This is the main file for the so-called vocal version, i.e. with
 %%% piano accompaniment.  Compile it using "lilypond vocal_score.ly"
-%%% and wait a few minutes...
+%%% and wait one or two hours...
 
 \version "2.11.52"
-%% This opéra has been coded on over several years, from version 2.9 
+%% This opéra has been coded on almost four years, from version 2.9 
 %% to 2.12 -- some inconsistencies may remain through the code.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -357,7 +357,7 @@ ActeDeuxSceneTrois = {
 	  composer =  \OperaPartition
     tagline = \OperaNotice
   }
-%{
+%
   \score {
 	  \Prologue
     \header {

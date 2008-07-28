@@ -662,6 +662,9 @@ et retenu tant bien que mal par le Chef de la Garde."
 
 ActeDeuxSceneTroisZC = "L'Étranger arme son bras ; le Roi recule vivement."
 
+ActeDeuxSceneTroisZCC = "L'Étranger s'interrompt en plein effet dramatique,
+réfléchit un instant, regarde la machine, puis reprend sur un ton plus léger."
+
 ActeDeuxSceneTroisZD = "Le Roi se tourne vers le Chef, plus implorant
 qu'impérieux..."
 %FIXME
