@@ -278,32 +278,38 @@ ActeDeuxSceneDeuxTenor = { \Tenor
 
 ActeDeuxSceneTroisTenor = { \Tenor
   \relative {
-    R4.*51 r8 sold16 sold la8 sol16 sol sold8 r |
-    R4*14  r8 sold16 sold la8 fad16 fad sol8 r | R4*7 R4. R4*7 
-    R4.*14 r8 sold16 sold la8 fad16 fad sol8 r16 sold |
-    la la fad fad sib8 la16 la dod dod \t {do do do} mi8 r16 fad,32 fa'! |
-    la4~ la8 r | R4*19 R2.*7 R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
-    r8 fad sol | la r r4 |
-    r8 fad sol | la r r4 |
-    r8 fa! sol | la r sol16 fa | fad2 r4\fermata |
+    R4.*51 r8 sold16-.\mf sold-. la8-- sol16-. sol-. sold8-- r |
+    R4*14  r8 sold16-.    sold-. la8-- fad16-. fad-. sol8--  r |
+    R4*7 R4. R4*7 
+    R4.*14 r8 sold16-.    sold-. la8-- fad16-. fad-. sol8-- r16 sold-. |
+    la-.( la-. fad-. fad-. sib8-- la16-. la-. 
+    dod-. dod-. \t {do do do} mi8--) r16 fad,32(\< fa'! |
+    \ten la4)\!~ la8 r | R4*19 R2.*7 R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
+    r8 fad-.\mp sol-. | la-. r r4 |
+    r8 fad-.    sol-. | la-. r r4 |
+    r8 fa!->\mf sol-> | la-> r sol16\< fa | 
+    \ten fad2\! r4\fermata |
     R2.*6 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
     R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 
     R2*7 R2.*7 R2 R2. R2 R2. R2 R2. R2 R2. R2
-    R2. R2 R2. r8 lab,16 lab sib8 sol | sib16 sib dod8 ~ dod4 r |
+    R2. R2 R2. r8 lab,16\p lab sib8( sol) | 
+    sib16 sib dod8-- ~ dod4 r |
     
     %%% Climax %%%
     
     R2 R4.
-    r4 r8 sold'| re mi la la | sold4 r R4.
-    r4 r8 sold | la la sol sol | sold4 r R2
-    r8 sold4 | sol fa8 | re2 fad4 | do dod2 fa4 | do2 r4 |
+    r4 r8 sold'-.(\f | re-. mi-. la-. la-.  | sold4--) r R4.
+    r4 r8 sold-.(    | la-. la-. sol-. sol-.| sold4--) r R2
+    r8 sold4-- | sol--( fa8) | re2--\< fad4-- | 
+    do(\! dod2 fa4 | do2) r4 |
     R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
     R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
     R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. 
     R1 R2. R1 R2. R1 R2. R1 R2. R1*6 R2*3
-    R2.*11 R4. R2. r2 r8 si | dod8. sib16 re4 r |
-    r8 re mi8. dod16 fa,4 | r r8 lab do8. si16 | re4 r r8 sib |
-    re4 r2 | R2.*19 R2*2 r8 re dod si | sold'4 r |
+    R2.*11 R4. R2. r2 r8 si-.\mf | dod8.-- sib16-. re4-- r |
+    r8 re-. mi8.-- dod16-. fa,4-- | 
+    r r8 lab-. do8.-- si16-. | re4-- r r8 sib-. |
+    re4-- r2 | R2.*19 R2*2 r8 re-.(\f dod-. si-. | sold'4--) r |
     R2*8 R2. R2*6 R2.*4
     r4 si,8 si do4 si8 si |red4 mi8 mi fa4 red8 red| mi4 r r2 | R1*3
     r4 lad,8 lad si4 lad8 lad | dod4 la8 la sib4 la8 la  | dod4 r r2 | R1*3

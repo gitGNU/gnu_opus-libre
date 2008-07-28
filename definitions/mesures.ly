@@ -1425,7 +1425,7 @@ ActeDeuxSceneTroisMesures = {
       \mark \markup \did \ActeDeuxSceneTroisZR
             R2.*5
       \mark \markup \did \ActeDeuxSceneTroisZS
-            R2.*9
+            R2.*8
       \mark \markup \Noir
             R2.*7 \bar "|."
 }

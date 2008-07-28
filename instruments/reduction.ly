@@ -3237,6 +3237,48 @@ ActeDeuxSceneTroisMainDroite = {
     <re  sold>8
     #(set-octavation 0)
     r r2 |
+    s2 \t { <sol,,, do mib>8 <re'' fa dod'> <sib, fad' la>} |
+    #(set-octavation 1)
+    <lad'' dod sold'>16 <la, mi sol> <lad' dod sold'> <la, mi sol>
+    <do' fad la> <sold, si fa'> re' <sold, si fa'>
+    <re'' mi fa sol> <sib, do red> <re' mi fa sol> <dod, red fad> |
+    <sid' red sold> <la, re fa> <sid' red sold> <la, re fa>
+    <dod' fad la> <sold, si mi> sol' <sold, si mi>
+    #(set-octavation 0)
+    <sold' lad si dod> <mi, fad la> <sold' lad si dod> <sol, la do> |
+    <fad' la re> <red, sold si> <fad' la re> <red, sold si>
+    <sol' do mib> <re, fa sib> dod' <re, fa sib>
+    <re' mi fa sol> <sib, do red> <re' mi fa sol> <dod, red fad> |
+    <do' mib lab> <la, re fa> <do' mib lab> <la, re fa>
+    <dod' fad la> <sold, si mi> <la' re mib> <sold, si mi>
+    <re' sold> re <re sold> re |
+    <re  sold> re re re re re re re | re re re8 r4 | R2 
+    R2.*4
+    \repeat unfold 12 mi16
+    \repeat unfold 30 { sol mi }
+    \repeat unfold 24 mi
+    \repeat unfold 18 { sold mi}
+    \repeat unfold 30 { sol mi }
+    \repeat unfold 144 mi
+    \repeat tremolo 12 mi
+    \repeat tremolo 12 mi
+    \repeat tremolo 4 mi
+    \pl {
+    \repeat tremolo 4 mi} mi'4
+    <mi, mi'>8 <mi mi'> |
+    \pl {
+    \repeat tremolo 12 mi16} mi'2.\laissezVibrer
+    \pl {
+    \repeat tremolo 4 mi,16} mi'4
+    <mi, mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \pl {  
+    \repeat tremolo 8 mi16 \t {la8 sol <do re>} } mi2.\laissezVibrer
+    \tt { sib16 <red fad> si' la re} #(set-octavation 1)
+    \ttt{ do16 <red, red'> sold' fad si la}
+    <mi la red mi>4 #(set-octavation 0)
+    <mi, mi'>8 <mi mi'>
+    \t { <mi mi'> <mi mi'> <mi mi'>}
+    \tt{ <mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }
 
@@ -3460,6 +3502,35 @@ ActeDeuxSceneTroisMainGauche = {
     fa8 mi fa sol la \clef bass <do,,, do'>4. |
     <la la'>2~ <la la'>8 mib'4 <la, la'>8~|<la la'> mib' <la, la'>2. |
     <sib sib'>4 <la la'> <sib sib'> <do do'> |
-    <re re'>1~<re re'>~<re re'>~<re re'>
+    <re re'>1~<re re'> r4 <re re'>2.~<re re'>1\laissezVibrer \clef treble
+    <red'' mi>4 <dod fad> <si sold'> <sib la'> |
+    <sold' si>8 <la sib> <sold si> <fad dod'>
+    <mi la red sold>4\arpeggio <sol si fad'> |
+    <fa sold dod mi>8 <fad red'> <do' reb mi> <re fad>
+    <sib fa' sold> mi <la do fa sold> sol |
+    <sold, re' mib la>8 r r2 |
+    #(set-octavation -1) \clef bass
+    \t {<re,,, do' re>8 #(set-octavation 0) \droite <do''' mib lab> \gauche
+    <si, mi sol> } \t { \droite <dod' fad la> \gauche <fa, sib> \droite 
+    <sold' si mi> \gauche } s4 |
+    R2.*4 R2*3
+    R2.*6 \clef treble
+    <do, si'>2.~<do si'>4 r8 <si do'>~<si do'>4~<si do'> <do si'>2~ |
+    <do si'>8 do si'4.\laissezVibrer la'8 fad'2.\laissezVibrer |
+    R2.*3
+    <dod,, si'>2. <do si'>\laissezVibrer R2.
+    <do si'>2.\laissezVibrer R2.*3 \clef bass
+    <fa,, mi'>4. <mi fa'>8~<mi fa'>4\laissezVibrer R2. |
+    <fa mi'>2 <mi fa'>4~ <mi fa'>2. \laissezVibrer R2.*7
+    r2 mi'4 sold4. sol8 si4~|
+    si8 sib re2 |
+    \pl mi,,2.\laissezVibrer { r8 mi' la sol do sib} |
+    mib2.
+    \pl mi,,2.\laissezVibrer { \t {r8 mi' si' } 
+    \t { la mi' re} s4 }  |
+    \repeat tremolo 8 mi,16 <mi, mi'>4 |
+    <mi mi'>8 <mi mi'>
+    \t { <mi mi'> <mi mi'> <mi mi'>}
+    \tt{ <mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

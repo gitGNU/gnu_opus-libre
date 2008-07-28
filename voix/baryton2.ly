@@ -375,8 +375,9 @@ ActeDeuxSceneDeuxBarytonDeux = { \BarytonDeux
 ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
   \relative {
     R4.*3 r4 dod,8--\mp | mi4.--( dod4) r8 | r4 mi8 mi--( r16 mi8. |
-    r8 si' la | mi4.)~ mi8 r mi | mi8.--( mi | r8 dod' si |
-    mi,4.) r8 mi( \( \< la) si( mi,) mi' | mi4.\) \mf ~ mi4 r8 | R4.*12
+    r8 si' la | mi4.)~ mi8 r mi | mi8.--( mi | r8 dod' si | \break
+    % FIXME: the phrasing slur looks awful when placed at a page break.
+    mi,4.) r8 mi\( ( \< la) si( mi,) mi' | mi4.\) \mf ~ mi4 r8 | R4.*12
     dod32->( re, dod' dod mi8--) dod32->( re, dod' dod | 
     mi8--) r16 sib-.( mib-. sib-. |
     sol-. re-. si!8-.) r16 sib'-.( | 
@@ -412,12 +413,16 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     R2.*7 sold8(\< la do | 
     re4)\f r8 re,-.\mf mi8.-- dod16-. fa4-- r8 fa-. re4-- |
     fa-- r8 fa-. sol8.-- mi16-. | lab4-- r r8 mi-.( | 
-    sold-. sol-. si4--) r8 sol sib fad mib sib' dod la |
-    fad4 r2 | R2.*2 r4 r8 re mi8. dod16 | fa4 r8 lab sib8. sol16 |
-    R2.*2 r8 re do4 r8 r16 mib |
-    si4 r2 | r4 r8 mid fad la | si2 r4 | fad8 mid la si4 sold8 |
-    la do re2 ~| re8 r r2 | r4 r8 sol,4. | fa lab | mi'2. ~| mi2 r4 |
-    r lab, fa | r mib fad | re4 r | R2 r8 re re sib re4 r |
+    sold-. sol-. si4--) r8 sol-.( sib-.\< fad-. mib-. sib'-. dod-. la-. |
+    fad4--)\! r2 | R2.*2 r4 r8 re-.\< mi8.-- dod16-. | 
+    fa4--\! r8 lab-.\< sib8.-- sol16-.\! |
+    R2.*2 r8 re(\mf do4) r8 r16 mib( |
+    si4) r2 | r4 r8 mid(\f fad la | si2) r4 | 
+    fad8( mid la si4) sold8( |
+    la do \ten re2) ~| re8 r r2 | 
+    r4 r8 sol,4.(\< | fa lab | \ten mi'2.)\! ~| mi2 r4 |
+    r lab,--\mf fa-- | r mib--\< fad-- | re4--\! r | 
+    R2 r8 re-.(\f re-. sib-. re4--) r |
     R2*8 R2. R2*6 R2.*4
     r4 do8 do do4 do8 do | do4 mi8 mi sold4 sol8 sol | si4 r r2 | R1*3
     r4 dod,8 dod fa4  mi8  mi  | sold4 r r2 | r8 re mi sol sold2 | r4 mi8 re4 sol8 sold4 |

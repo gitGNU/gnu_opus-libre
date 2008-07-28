@@ -246,41 +246,66 @@ ActeDeuxSceneDeuxSopranoDeux= { \SopranoDeux
 
 ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
   \relative {
-    R4.*51 R4*2 mi32 mi sold16 r mi | re32 re la'16 r sold |
-    mi8 re32 mi la16~| la mi sold re'~| re la mi sold | si,4 R4*11
-    sib'32 sib re16 r sib | la32 la mi'16 r8 |
-    re16 la re,32 mi sold16~| sold la sol' re | mi,4 R4*3 R4. 
-    lab16. sol32 r16 do | r do do do | do re la8 |
-    r16 lab sol sol | si si \t {sib sib sib } | re4 | R4
-    R4.*14 R4*15 r8 r16 sold, | la sold mi re | mi8 sold |
-    la16 mi la re | mi4 | R4*3| r16 sold, sol fa | fa8 mib| R4*3 R2.*7 
+    R4.*51 R4*2 
+    mi32(\mp mi sold16) r mi-. | re32( re la'16) r sold-. |
+    mi8-- re32( mi la16)~| la mi-.( sold-. re'--~| 
+    re la-. mi-. sold-.  | si,4--) R4*11
+    sib'32(\mf sib re16) r sib-.| la32( la mi'16) r8 |
+    re16-. la-. re,32( mi sold16)~| 
+    sold la-.( sol'-. re-. | mi,4--) R4*3 R4. 
+    lab16.--( sol32-- r16 do--) | 
+    r do-.(\p do-. do-. | do-. re-. la8-.) |
+    r16 lab-. sol( sol) | si--( si) \t {sib( sib sib } |
+    re4--) | R4
+    R4.*14 R4*15 r8 r16 sold,-. | la-.( sold-. mi-. re-.) |
+    mi8--( sold) |
+    la16( mi) la-. re-. | mi4-- |
+    R4*3| r16 sold,( sol fa) | fa8( mib)| 
+    R4*3 R2.*7 
     
     R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
-    r8 re' re re r r4 |
-    r8 re  re re r r4 |
-    r8 re  re re r re16 re fa2 r4\fermata | R2.*6
+    r8 re'-.\mp re-. re-. r r4 |
+    r8 re-.     re-. re-. r r4 |
+    r8 re->\mf  re-> re-> r re16\< re 
+    \ten fa2\! r4\fermata | R2.*6
     R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
     R2 R4. R2 R4. R2*2 R2. R2*2 R2. R1 R2. R2 R2*7 R2.*3
-    la,8 sold mi16 re mi8~ mi sold16 la sold8 mi16 la re4. la8 |
-    re4 \t {la8 mi sold} re'4 | r \t{la8 re la} \t{sold mi la} |
-    mi'4 r8 mi sol4. re8 sol4 | sold2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R4.
-    r4 r8 re | re re re re | re4 r | R4. 
-    r4 r8 re | re re re re | re4 r | R2
-    r8 re4 | re mib8 | fa2 re4 | sib si2 sol4 | sib2 r4 | R1 R2.
-    r8 si mi la, red si mi si | la4 r2 | r8 sold la sold mi re la' re |
-    mi4 r2 | r8 fa mi mib re si la do | sold4 r2 | r2 r4 r8 sold |
-    la do re4. la8 | sold do re2 r8 re | mi sol sold4. mi8 | re sol sold2 r4 |
-    r2 sold4 | fa2 mib4 fad | re2 r4 | R1 R2. R1
-    r4 r8 re, do mib | si'4 r r2 |
-    mi,8 re la' sold r mi | sold4 r r8 sold la sold | mi re si re mi la |
-    sold4 r r r8 sold | la sold mi re la' re | mi4 r r si | mi4. la,8 re4 |
-    sold2 r4 mi | sold4. re8 sold4 | la2 r | R2. R1 R2. R1 R2. R1 |
-    R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 r2 r8 sold, |
-    la do re2 r8 sold, | la do re2 r8 sold, | la do re4 fad,8 sold la do |
-    re do re mib fad4 r8 mib | re sold la4 r8 sold, fad sold |
-    si re si re mi4 r8 si | re mi sold fad, | sold la do4 | re re8 re re4 r2 |
+    la,8(\mf sold) mi16( re mi8)~ mi sold16( la) 
+    sold8-. mi16( la re4.--) la8( |
+    re4) \t {la8( mi sold} re'4)  | 
+    r \t{la8( re la}\t{sold mi la}|
+    mi'4--)r8 mi( sol4.-- re8 sol4| 
+    sold2) R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R4.
+    r4 r8 re-.(\f | re-. re-. re-. re-. | re4--) r | R4. 
+    r4 r8 re-.(   | re-. re-. re-. re-. | re4--) r | R2
+    r8 re4-- | re--( mib8) | fa2--\< re4-- | 
+    sib(\! si2 sol4 | sib2) r4 | R1 R2.
+    
+    r8 si-.(\p mi-. la,-. red-. si-. mi-. si-. |
+    la4--) r2 | r8 sold( la-- sold mi re la'-. re-. |
+    mi4--) r2 | r8 \ind #"legato" fa(\mf \> mi mib re si la do |
+    sold4--)\p r2 | r2 r4 r8 sold(\mp |
+    la do re4.) la8( | sold do re2) r8 re( | 
+    mi sol sold4.) mi8( | re sol sold2) r4 |
+    r2 sold4-- | fa2-- mib4--( fad-- | re2--) r4 | R1 R2. R1
+    r4 r8 re,(\mp \< do mib | si'4)\! r r2 |
+    mi,8( re la' sold) r mi( | sold4) r r8 sold(\mf
+    la-- sold | mi re si re mi la |
+    sold4) r r r8 sold( | la sold mi re la' re | 
+    mi4) r r si( | mi4.--\< la,8 re4 |
+    sold2--)\! r4 mi--(\> | sold4. re8 sold4-- | 
+    la2)\! r | R2. R1 R2. R1 R2. R1 |
+    R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 
+    R2. R1 R2. R1 R2. R1 R2. R1 r2 r8 sold,(\mf |
+    la do re2) r8 sold,( | la do re2) r8 sold,( | 
+    la do re4) fad,8(\p \< sold la do |
+    re)\! do( \< re mib fad4)\mf r8 mib( | 
+    re sold la4) r8 sold,(\< fad sold |
+    si)\! re(\< si re mi4)\! r8 si( | 
+    re mi sold) fad,( | sold la do4--) | 
+    re--(\f re8 re re4->--) r2 |
     R2.*10 R4. R2.*26 R2*2
-    r8 re re la' | re,4 r |
+    r8 re-.(\f re-. la'-. | re,4--) r |
     R2*8 R2. R2*6 R2.*4
     r4 mi,8 mi fa4 red8 red | mi4 sold8 sold la4 sol8 sol | sold4 r r2 | R1*3
     r4 sold8  sold la4 sol8 sol | sold4 sold8 sold la4 sol8 sol | si4 r r2 | R1*3

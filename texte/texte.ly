@@ -1268,7 +1268,7 @@ ActeDeuxSceneTroisBarytonUnTexte = \lyricmode {
   \dash tion -- \dash tion -- tion_! \dash A -- tten...
   Aaa... __ _ _ _ _ _ _ _
   Ils se ba -- ttent pour a -- voir la pla -- ce près __ _ du hu -- blot.
-  Ah... Vous m'a -- vier donc re -- co -- nnu, vous au -- ssi_?
+  Ah... Vous m'a -- viez donc re -- co -- nnu, vous au -- ssi_?
   \dash Qu'ai -- je donc bien pu dire dans mon so -- mmeil_?
   Que \dash vais -- je bien pou -- voir faire, coin -- cé i -- ci_?
   Un voy -- age i -- mmo -- bi -- le.
