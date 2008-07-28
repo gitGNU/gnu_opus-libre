@@ -1418,7 +1418,7 @@ ActeDeuxSceneTroisMesures = {
   
   \time 3/4
       \mark \markup \did \ActeDeuxSceneTroisZP
-      \tempo "Andante al fine" 8 = 92
+      \tempo "Andante al fine" 8 = 104
             R2.*10
       \mark \markup \did \ActeDeuxSceneTroisZQ
             R2.*10

@@ -423,28 +423,39 @@ ActeDeuxSceneTroisBarytonUn = { \BarytonUn
     re'4->\f re8->( re-> re4-> | r8 re-> r4 re8.-> re16 | 
     re4->) r2 | R2.*16
     R2*2 r8 fa,-.(\f mib-. fad-. | re'4--) r | R2*7
-    r8 si, do do \t { sol' sol sol } sol sol \t { sol fa sol } | lab4 r |
-    lab8 sol ~  \t { sol mi lab } | sol4 r |
-    \t { sol8 lab sol } \t { fa mi lab } | sol4 \t { r8 sol lab } |
-    fa mi ~ \t { mi mi mi } | si'4 r2 | R2.*3
-    r4 mi,8 mi sold4 sol8 sol | si4 sold8 sold do4 si8 si red4 r r2 | R1*3
-    r4 fad,8 fad sol4 fad8 fad| lad4 fad8 fad re4  fa8 fa la4 r r2 | R1*3
-    r4 fa8 fa mib4 fad8 fad | re4 fa8 fa mib4 fad8 fad | 
-    re4 r r mi8 mi | re4 r r2 R1
-    r4 la'8 la sold4 la8 la | sib4 la8 la sold4 lad8 lad |
-    si4 r8 sib sib sib si4 | r si8. si16 re2 |
-    r4 la8 la sold4 sold8 sold | la4 la8 la sold4 sib8 sib |
-    la4 si8 si do4 sib8 sib | R2.
-    do2.~do~do~do~do~do2~do~do4 r |
     
-    R2.*2 r8 mi,16 mi mi8 do \t {r do do} |
-    dod dod do do do16 si do re |
-    mi2 r4 R2.*10
-    r4 do2 | r16 do do do \t {sol' sol mi} si'8 sol16 si do,8 |
-    r4 r8 \t {r16 mi mi} \t {la sol sol} do do | sib sib mi,8 r2 |
-    R2.*2 r4 r8 mi mi mi | \t {do do do} mi4 \t { mi8 mib mib } |
-    sol4 r2 R2.*3
-    r4 r8 mi mi16 mi fa fa | sol8 mi r2 | R2.
-    la8 sol mi fa r4 | mi8 fa16 sol la4 mi | R2.*8
+    r8 si,-.\mp do( do) \t { sol'( sol sol } sol sol 
+    \t { sol-- fa sol } | lab4) r |
+    lab8(\> sol ~  \t { sol mi lab } | sol4)\! r |
+    \t { sol8(\> lab sol } \t { fa mi lab } | 
+    sol4)\! \t { r8 sol(\> lab } |
+    fa mi ~ \t { mi mi mi } | si'4)\pp r2 | R2.*3
+    r4 mi,8-.(\mp mi-. sold4-- sol8-. sol-. | 
+    si4--) sold8-.( sold-. do4-- si8-- si-. red4--) r r2 | R1*3
+    r4 fad,8-.( fad-. sol4-- fad8-. fad-.| 
+    lad4--) fad8-.( fad-. re4--  fa8-. fa-. la4--) r r2 | R1*3
+    r4 fa8-.( fa-. mib4-- fad8-. fad-. | 
+    re4--) fa8-.( fa-. mib4-- fad8-. fad-. | 
+    re4--) r r mi8-.( mi-. | re4--) r r2 R1
+    r4 la'8-.( la-. sold4-- la8-. la-. | 
+    sib4--) la8-.( la-. sold4-- lad8-. lad-. |
+    si4--) r8 sib--(\f sib-- sib-- si4--) | 
+    r si8.--(\< si16 re2->--)\! |
+    r4 la8-.\mf la-. sold4-- sold8-. sold-. | 
+    la4--\< la8-. la-. sold4-- sib8-. sib-. |
+    la4-- si8-. si-. do4--\! sib8-. sib-. | R2.
+    \ten do2.\ff~do~do~do~do\>~do2~do~do4\! r |
+    
+    R2.*2 r8 mi,16(\p mi mi8-- do) \t {r do( do} |
+    dod-- dod-- do-- do) do16\( ( si) do-. re-. |
+    mi2-- \) r4 R2.*10
+    r4 do2--\p | r16 do( do do \t {sol' sol mi} si'8 sol16 si do,8--) |
+    r4 r8 \t {r16 mi( mi} \t {la sol sol} do do | 
+    sib-. sib-. mi,8--) r2 |
+    R2.*2 r4 r8 mi( mi-- mi | \t {do do do} mi4) \t { mi8( mib mib } |
+    sol4) r2 R2.*3
+    r4 r8 mi(\p mi16 mi fa fa | sol8-- mi) r2 | R2.
+    la8--( sol-- mi-- fa--) r4 | 
+    mi8-.\( \> fa16( sol) la4-- mi\) \pp | R2.*8
   }
 }

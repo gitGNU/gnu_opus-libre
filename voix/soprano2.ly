@@ -307,15 +307,22 @@ ActeDeuxSceneTroisSopranoDeux= { \SopranoDeux
     R2.*10 R4. R2.*26 R2*2
     r8 re-.(\f re-. la'-. | re,4--) r |
     R2*8 R2. R2*6 R2.*4
-    r4 mi,8 mi fa4 red8 red | mi4 sold8 sold la4 sol8 sol | sold4 r r2 | R1*3
-    r4 sold8  sold la4 sol8 sol | sold4 sold8 sold la4 sol8 sol | si4 r r2 | R1*3
-    r4 re,8 re la'4 sol8 sol | re'4 r r2 | R1 
-    r8 sold, la do re4 r | r8 la sold sold do re fad4 |
-    r8 la sold mi re mi la,4 | sold8 la do4 re8 la mi' la | sold4 r r2 |
-    r4 mi,8 sold r2 |
-    r4 re'8 re mi4 mi8 mi | re4 mib8 mib fa4 fa8 fa |
-    mi4 fad8 fad sold4 mi8 mi | r la, r2 |
-    sold'2.~ sold4. fad4 la8 | fa4. mib4 fad8 | re4 sib si |
-    sol sold mi | re r | R2*2 R2.*41
+    r4 mi,8-.(\mp mi-. fa4-- red8-. red-. | 
+    mi4--) sold8-.( sold-. la4-- sol8-. sol-. | 
+    sold4--) r r2 | R1*3
+    r4 sold8-.(  sold-. la4-- sol8-. sol-. | 
+    sold4--) sold8-.( sold-. la4-- sol8-. sol-. | 
+    si4--) r r2 | R1*3
+    r4 re,8-.( re-. la'4-- sol8-. sol-. | re'4--) r r2 | R1 
+    r8 sold,->(\f la-> do-> re4->) r | 
+    r8 la->(\< sold-> sold-> do-> re-> fad4->--)\! |
+    r8 la(\mp sold mi re mi la,4) | 
+    sold8( la do4) re8( la mi'-. la-. | sold4--) r r2 |
+    r4 mi,8-.(\p sold-.) r2 |
+    r4 re'8-.\mf re-. mi4-- mi8-. mi-. | 
+    re4--\< mib8-. mib-. fa4-- fa8-. fa-. |
+    mi4-- fad8-. fad-. sold4--\! mi8-. mi-. | r la,-. r2 |
+    sold'2.(\ff~ sold4.\> fad4 la8 | fa4. mib4 fad8 | re4 sib si |
+    sol\! sold mi | re) r | R2*2 R2.*40
   }
 }

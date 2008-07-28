@@ -424,14 +424,25 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     r lab,--\mf fa-- | r mib--\< fad-- | re4--\! r | 
     R2 r8 re-.(\f re-. sib-. re4--) r |
     R2*8 R2. R2*6 R2.*4
-    r4 do8 do do4 do8 do | do4 mi8 mi sold4 sol8 sol | si4 r r2 | R1*3
-    r4 dod,8 dod fa4  mi8  mi  | sold4 r r2 | r8 re mi sol sold2 | r4 mi8 re4 sol8 sold4 |
-    r8 re fad sold si4 r | r sold ~ \t { sold la do } | re2. r4 | R1
-    r2 r4 mi,8 mi |re4 r r2 | R1
-    re4 la' sold8 mi re4 | mi8 re la' sold r mi sold4 |
-    re8 mi sold r r2 | dod,8 re fad4 r8 dod sold4 |
-    r4 re'8 re mi4 mi8 mi | re4 re8 re re4 re8 re |
-    re4 re8 re re4 re8 re | r la' r2 |
-    re,2.~re4 fad fa la sol si | sib4. lab4 si8 | re2.~re4 r | R2*2 R2.*41
+    r4 do8-.(\mp do-. do4-- do8-. do-. | 
+    do4--) mi8-.( mi-. sold4-- sol8-. sol-. |
+    si4--) r r2 | R1*3
+    r4 dod,8-.( dod-. fa4--  mi8-.  mi-.  | 
+    sold4--) r r2 | 
+    r8 re(\f mi-- sol sold2) | 
+    r4 mi8( re4) sol8( sold4)|
+    r8 re->(\< fad-> sold-> si4->)\! r |
+    r sold--( ~ \t { sold la do } | 
+    \ten re2.) r4 | R1
+    r2 r4 mi,8-.(\mp mi-. |re4--) r r2 | R1
+    re4-.(\p la'-.) sold8( mi re4-.) |
+    mi8-.( re-. la'-. sold-.) r mi( sold4-.) |
+    re8( mi sold-.) r r2 | 
+    dod,8-.( re-. fad4-.) r8 dod-. sold4-. |
+    r4 re'8-.\mf re-. mi4-- mi8-. mi-. |
+    re4--\< re8-. re-. re4-- re8-. re-. |
+    re4-- re8-. re-. re4--\! re8-. re-. | r la'-. r2 |
+    re,2.(\ff~re4\> fad fa la sol si | sib4. lab4 si8 | 
+    re2.)\!~re4 r | R2*2 R2.*40
   }
 }
