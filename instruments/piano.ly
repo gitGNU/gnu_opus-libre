@@ -20,8 +20,8 @@ ProloguePiano = { \Piano
       mi2\laissezVibrer r4 \clef bass mi,4\laissezVibrer|
       r4 mi2\laissezVibrer | r8 \tt {mi,32 fa mi' mi fa} red'4\laissezVibrer|
       r4 r8 \t {mi,,16 mi' mi} | mi'2.\laissezVibrer | 
-      R2*2 |<< \makeClusters {sol,16-"dans les cordes" la si do re2 } \\ {\hideNotes s4 re2 \laissezVibrer \unHideNotes} >>
-      R2*2 |<< \makeClusters {sol,16-"simile" la si do mi2 } \\ {\hideNotes s4 mi2 \laissezVibrer \unHideNotes} >>
+      R2*2 |<< \makeClusters { \ind #"dans les cordes" sol,16 la si do re2 } \\ {\hideNotes s4 re2 \laissezVibrer \unHideNotes} >>
+      R2*2 |<< \makeClusters { \simile sol,16 la si do mi2 } \\ {\hideNotes s4 mi2 \laissezVibrer \unHideNotes} >>
       R2*2 |<la, re sol>2 r4 | R2*2 |
       << {\voiceTwo <si re mi>2\laissezVibrer} \\ {\voiceFour r8 \voiceOne <sid, dod>8 <sid dod> <sid dod>}>>
       \repeat unfold 16 <sid dod>8 |

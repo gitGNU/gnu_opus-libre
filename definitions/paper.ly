@@ -20,8 +20,8 @@ includePaper = \paper {
 
 %% Vertical margins -----------------------------------------------%
   page-top-space = #(* 5 mm)
-  between-system-space = 10 \mm
-  between-system-padding = 4 \mm
+  %between-system-space = 10 \mm
+  %between-system-padding = 4 \mm
   before-title-space = 10 \mm
   between-title-space = 2 \mm
   after-title-space = 5 \mm

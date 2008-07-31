@@ -5,7 +5,6 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-\version "2.10"
 \include "italiano.ly"
 
 AltoUn ={
@@ -39,56 +38,85 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
   \relative { 
 		%%% Air de la Soprano2 %%%
 		
-		R2.*2 r4 sold'8 la sold mi re mi sold la sold mi re mi sold4~ | sold2 r4 | R2. |
-		sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la | sold mi re mi sold la | sold mi re mi sold4 | 
-		sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la | sold mi re mi sold la | sold mi re mi sold4~ |
-		sold1~ sold2 r2 | R2.*2 | re,4 si' sold8 fad re4 | fad8 re si' sold r fad sold4 | fad4 re8 si' sold4 | si8 sold fad re r4 |
-		re'4 la' sold8 mi re4 | mi8 re mi4 la8 re sold, mi | re mi sold4 r | R2.|
-		sold8 la sold mi re mi sold la | sold mi re mi sold4 sold8 la | sold mi re mi sold la | sold mi re mi sold4 |
-		la,8 si la fa mi fa la si | la fa mi fa la4 la8 si | la fa mi fa la si | la fa mi fa la4 |
-		mi si' la8 fa mi4 | la8 fa re' si r si sol'4 | si, mi8 re fa4~| fa2 r4 | \clef treble
-		<lab lab'>1~ <lab lab'>2. r4 | <lab lab'> r <lab lab'> | r <lab lab'> r |
-		<lab lab'>1~| <lab lab'>4 r \clef alto lab, sol | re'2.~| re2 r4 |
-		R1*2 R2.*2 |sold8 la sold mi re mi sold la | sold mi re mi sold4 sold8 la|
+		R2.*2 r4 sold'8 la sold mi re mi 
+    sold la sold mi re mi sold4~ | sold2 r4 | R2. |
+		sold8 la sold mi re mi sold la 
+    sold mi re mi sold4 sold8 la | 
+    sold mi re mi sold la | sold mi re mi sold4 | 
+		sold8 la sold mi re mi sold la 
+    sold mi re mi sold4 sold8 la | 
+    sold mi re mi sold la | sold mi re mi sold4~ |
+		sold1~ sold2 r2 | R2.*2 | 
+    re,4 si' sold8 fad re4 | 
+    fad8 re si' sold r fad sold4 | 
+    fad4 re8 si' sold4 | si8 sold fad re r4 |
+		re'4 la' sold8 mi re4 | 
+    mi8 re mi4 la8 re sold, mi | re mi sold4 r | R2.|
+		sold8 la sold mi re mi sold la | 
+    sold mi re mi sold4 sold8 la | 
+    sold mi re mi sold la | 
+    sold mi re mi sold4 |
+		la,8 si la fa mi fa la si | 
+    la fa mi fa la4 la8 si | 
+    la fa mi fa la si | 
+    la fa mi fa la4 |
+		mi si' la8 fa mi4 | 
+    la8 fa re' si r si sol'4 | 
+    si, mi8 re fa4~| fa2 r4 | \clef treble
+		<lab lab'>1~ <lab lab'>2. r4 | 
+    <lab lab'> r <lab lab'> | r <lab lab'> r |
+		<lab lab'>1~| <lab lab'>4 r \clef alto lab, sol | 
+    re'2.~| re2 r4 | R1*2 R2.*2 |
+    sold8 la sold mi re mi sold la | 
+    sold mi re mi sold4 sold8 la|
 		sold mi re mi sold la | sold mi re mi sold4 |
-		sold8 la sold mi re4 sold8 la | sold mi re mi sold4 sold8 la |
+		sold8 la sold mi re4 sold8 la |
+    sold mi re mi sold4 sold8 la |
 		sold mi re4 sold8 la | sold mi re mi sold4 |
-		sold8 la sold mi re4 sold8 la | sold mi re mi sold4 sold8 la |
+		sold8 la sold mi re4 sold8 la | 
+    sold mi re mi sold4 sold8 la |
 		sold mi re4 sold8 la | sold mi re mi sold4~|
-		sold1~ sold~ sold2.~ sold~ | sold1~ sold~ sold2.~ sold2 r4|
-		re8 mi sold la sold mi re mi | sold la sold mi re mi sold la |
-		sold mi re mi sold la | sold mi re2~| re2. r4 | R1 | R2.*2 | R1*2 |
+		sold1~ sold~ sold2.~ sold~ | 
+    sold1~ sold~ sold2.~ sold2 r4|
+		re8 mi sold la sold mi re mi | 
+    sold la sold mi re mi sold la |
+		sold mi re mi sold la | 
+    sold mi re2~| re2. r4 | R1 | R2.*2 | R1*2 |
 		R2.*2 | R1 R1-\fermataMarkup |
 		
 		%%% Récitatif %%%
 		
 		r4 r8 reb4.| sib2.~ |sib1~ |sib2 r4 |
 		r4 r8 si!4.| sold2.~|sold1~|sold2 r4|
-		R2.| r4 r8 si4 do8~ |do2.~ |do8 do~ \t {do do do} \repeat tremolo 8 do32 |
+		R2.| r4 r8 si4 do8~ |do2.~ |do8 do~ \t {do do do} 
+    \repeat tremolo 8 do32 |
 		do8 r r2 | R2| r4 r8 si4. |
 		fad1~|fad~|fad2.~|fad~|fad~|fad2 r4| R2. R1 |
 		
 		%%% Duo %%%
 		
-		<re sib'>4-\markup "pizz."
-		\repeat unfold 15 <re sib'> r8 <re sib'>-\markup "arco" |
-		<mi do'> r <mi do'>4-\markup "pizz."
-		\repeat unfold 4 <mi do'> r8 <mi do'>-\markup "arco" |
-		<sol mib'> r <sol mib>4-\markup "pizz." <sol mib'> r8 <sol mib'>-\markup "arco" |
-		<fa reb'>8 r <fa reb>4-\markup "pizz." <fa reb'> | <fa reb'> r | R2
-		si8-\markup "arco" 
+		\pizz <re sib'>4
+		\repeat unfold 15 <re sib'> r8 \arco <re sib'> |
+		<mi do'> r \pizz <mi do'>4
+		\repeat unfold 4 <mi do'> r8 \arco <mi do'> |
+		<sol mib'> r \pizz <sol mib>4 <sol mib'> r8 \arco <sol mib'> |
+		<fa reb'>8 r \pizz <fa reb>4 <fa reb'> | <fa reb'> r | R2
+		\arco si8 
 		\repeat unfold 27 si |
 		\repeat unfold 14 <dod mi> |
 		\repeat unfold 8 <sold' lad>|
 	}
 }
 
-ActeDeuxSceneUnAltoUn= { \AltoUn
-	\relative do''	{
-    \clef treble \ttt {
-      <la re\harmonic la''>16[ <la re\harmonic la''> <la re\harmonic la''> <la re\harmonic la''> <la re\harmonic la''> <la re\harmonic la''>] 
-		} \ttt { la''16-\markup { \italic "simile" } la la la la la }
-    \repeat unfold 68 { \ttt { la[ la la la la la] } } la4 r \ttt { si,8[ si16 si si si] } |
+ActeDeuxSceneUnAltoUn = { \AltoUn
+	\relative {\clef treble 
+    \ttt {
+      <la' re\harmonic la''>16[ <la re\harmonic la''>
+      <la re\harmonic la''> <la re\harmonic la''> 
+      <la re\harmonic la''> <la re\harmonic la''>] 
+		} \ttt { \simile la''16 la la la la la }
+    \repeat unfold 68 { \ttt { la[ la la la la la] } } la4 r 
+    \ttt { si,8[ si16 si si si] } |
     \repeat unfold 8 { \ttt { mi,[ mi mi mi mi mi] } } |   
   }
 }

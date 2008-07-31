@@ -25,15 +25,18 @@ PrologueClarinetteDeux = { \ClarinetteDeux
 	\relative { 
     %%% Introduction %%%
     
-		\partial 4 r4 R2.*3 R1 | mi,2~ mi4 r | mi2 r4 |
-    mi2~ mi mi2.~ mi4 r R2 | \tt {sold16 mi sol! sold sol!} si2~|
-    si4 r | R2 \tt {sol16 mi fa la sib} do2 ~ | do4 r | r r8 \t {la16 sol re'}|
+		\partial 4 r4 R2.*3 R1 | 
+    mi,2~ mi4 r | mi2 r4 |
+    mi2~ mi mi2.~ mi4 r R2 | 
+    \tt {sold16 mi sol! sold sol!} si2~|
+    si4 r | R2 \tt {sol16 mi fa la sib} do2 ~ | 
+    do4 r | r r8 \t {la16 sol re'}|
     mi2 r4 | R2*2 | mi'?2 r4 | R2 r2 mi,8 mi~|
     mi2 | mi2
 	}
 }
 
-ActeUnSceneDeuxClarinetteDeux= { \ClarinetteDeux
+ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 	\relative {
 		%%% Air de la Soprano2 %%%
 		
@@ -48,7 +51,8 @@ ActeUnSceneDeuxClarinetteDeux= { \ClarinetteDeux
 		la si re fa re4 | r dod, r |
 		mi1~ | mi2. r4 | R2.*2 |
 		lab'1~| lab2. r4 | R2.*2 | lab1~| lab2. r4 |
-		R2.*2 | r4 sold,8 re' sold, re dod re | sold re' sold, re dod re sold4 |
+		R2.*2 | r4 sold,8 re' sold, re dod re | 
+    sold re' sold, re dod re sold4 |
 		dod,8 re fad2~ | fad2. \repeat unfold 8 {R1*2 R2.*2} |
 		R1 r2 la'2\fermata |
 		
@@ -56,7 +60,8 @@ ActeUnSceneDeuxClarinetteDeux= { \ClarinetteDeux
 		
 		R2.*2 R1 R2.*3 R1 R2.*3 
 		\repeat tremolo 12 {si,32 do} |
-		\repeat tremolo 12 {sol'32 lab}| sol8 r r2 R2 R2. R1*2 R2.*5 R1 |
+		\repeat tremolo 12 {sol'32 lab}| 
+    sol8 r r2 R2 R2. R1*2 R2.*5 R1 |
 		
 		%%% Duo %%%
 		
@@ -77,9 +82,11 @@ ActeUnSceneDeuxClarinetteDeux= { \ClarinetteDeux
 }
 
 
-ActeDeuxSceneUnClarinetteDeux= { \ClarinetteDeux
-	\relative 	{
-		R2.*4 R2 R2.*2 R2 | mi2.~ | mi2.~ | mi2.~ | mi4 r | mib'4 sib2~ | sib4 r | do8 sol~ sol2~| sol2.~ | sol4 r |  mi,2.~ | mi2.~ | mi2.~ | mi4 r |
+ActeDeuxSceneUnClarinetteDeux = { \ClarinetteDeux
+	\relative {
+		R2.*4 R2 R2.*2 R2 | mi2.~ | mi2.~ | mi2.~ | mi4 r |
+    mib'4 sib2~ | sib4 r | do8 sol~ sol2~| sol2.~ | sol4 r | 
+    mi,2.~ | mi2.~ | mi2.~ | mi4 r |
 		R2. R2 R2.*2 R2 | R2. | re''2.~| re2.~| re4 r |
 	}
 }

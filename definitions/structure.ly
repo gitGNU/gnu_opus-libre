@@ -46,7 +46,7 @@ ActeUnSceneTroisTitre = \markup {
 }
 
 ActeUnSceneQuatreTitre = \markup {
-	\fill-line { \center-align {\fontsize #6 \FinalTitreTexte " "}}
+	\fill-line { \center-align {\fontsize #6 \FinaleTitreTexte " "}}
 }
 
 EntracteTitre = \markup {
@@ -63,12 +63,12 @@ ActeDeuxSceneDeuxTitre = \markup {
 }
 
 ActeDeuxSceneTroisTitre = \markup {
-  	\fill-line { \center-align {	\fontsize #6 \SceneTroisTitreTexte " "}}
+  	\fill-line { \center-align {	\fontsize #6 \FinaleTitreTexte " "}}
 }
 
 Interlude = \markup {
 \fill-line { \center-align {\fontsize #6 \InterludeTitreTexte }}}
 
 Separateur = \markup {
-	\fill-line { \center-align {\fontsize #6 " " "***" " "}}
+	\fill-line { \center-align {\fontsize #10 " " "***" " "}}
 }

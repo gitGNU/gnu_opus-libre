@@ -46,7 +46,7 @@ PrologueH = "Même jeu du Chef, derrière le Roi..."
 PrologueI = "... qui se retourne brusquement pour le prendre à partie."
 
 PrologueJ = "Un temps. Le Chef de la Garde hésite, va pour chanter,
-puis se ravise. Même jeu. Puis enfin, avec un regard en coin vers le Roi :"
+puis se ravise. Même jeu. Puis enfin, avec un regard en coin vers le Roi :"
 
 PrologueK = "Le Roi, après être resté pensif un moment, semble se ressaisir."
 
@@ -62,7 +62,7 @@ PrologueP = "Le Roi, déconcerté et pensif, marmonne en cherchant ses mots"
 
 PrologueQ = "Le Roi sort en continuant de chanter."
 
-PrologueR = "Resté seul, le Chef regarde autour de lui, puis, au public :"
+PrologueR = "Resté seul, le Chef regarde autour de lui, puis, au public :"
 
 
 
@@ -88,9 +88,9 @@ ActeUnSceneUnC = "se redresse..."
 
 ActeUnSceneUnD = "mais son mouvement lui arrache un cri de douleur."
 
-ActeUnSceneUnE = "Il tourne la tête vers la droite : même jeu."
+ActeUnSceneUnE = "Il tourne la tête vers la droite : même jeu."
 
-ActeUnSceneUnF = "Puis vers la gauche : même jeu, et ainsi de suite..."
+ActeUnSceneUnF = "Puis vers la gauche : même jeu, et ainsi de suite..."
 
 %FIXME: variable names need some reordering.
 
@@ -215,7 +215,7 @@ ActeUnSceneDeuxE = "mais il interrompt son geste, soudain très inquiet."
 
 ActeUnSceneDeuxF = "Il s’interrompt, se rendant compte de l’idiotie
 de sa répétition (il a toujours le collier à la
-main). Après un temps, très séchement :"
+main). Après un temps, très séchement :"
 
 ActeUnSceneDeuxG = "La Reine l'interrompt, prenant enfin et de
 mauvaise grâce le collier des mains du Roi."
@@ -226,7 +226,7 @@ ActeUnSceneTroisA = "La lumière revient sur la cellule de l'Étranger ,
 qui se tient immobile, seul. Entre le Chef de la
 Garde, d'abord impérieux..."
 
-ActeUnSceneTroisB = "puis soudain anodin, presque guilleret :"
+ActeUnSceneTroisB = "puis soudain anodin, presque guilleret :"
 
 ActeUnSceneTroisC = "Même jeu du Chef, très insouciant."
 
@@ -283,7 +283,7 @@ tache du test de Rorschach."
 ActeUnSceneTroisTerE = "Il lui montre une autre tache."
 
 ActeUnSceneTroisTerF = "Le Docteur hésite un instant ; puis, montrant
-le ciel :"
+le ciel :"
 
 ActeUnSceneTroisTerG = "Il sort, laissant l'Étranger seul en scène."
 
@@ -401,7 +401,7 @@ ActeDeuxSceneUnG = "La Reine tente faiblement d'intervenir."
 
 ActeDeuxSceneUnH = "La Reine intervient enfin avec autorité."
 
-ActeDeuxSceneUnI = "Plus doucement, en regardant le ciel :"
+ActeDeuxSceneUnI = "Plus doucement, en regardant le ciel :"
 
 ActeDeuxSceneUnJ = "La Reine reste songeuse."
 
@@ -571,7 +571,7 @@ personnages, chacun plongés dans leur tâche..."
 %%%%%%%%%%%%%%%%%%%%%%  Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeDeuxSceneTroisA = "La scène s'éclaire en totalité, révélant une situation
-nouvelle : le Roi est dans les oubliettes, quelque peu hagard. Le Chef de la Garde se
+nouvelle : le Roi est dans les oubliettes, quelque peu hagard. Le Chef de la Garde se
 tient à la porte, de pied ferme."
 
 ActeDeuxSceneTroisB = "Entre l'Étranger, discrètement de l'autre côté."

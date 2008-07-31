@@ -5,8 +5,6 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-
-\version "2.10"
 \include "italiano.ly"
 
 FluteDeux = {
@@ -31,7 +29,7 @@ PrologueFluteDeux = { \FluteDeux
 	}
 }
 
-ActeUnSceneUnFluteDeux= { \FluteDeux
+ActeUnSceneUnFluteDeux = { \FluteDeux
 	\relative {
 		R2*2 R2. R2*2 R2. |
 		do2~ do do'4. r8 r4 | do,2~ do sol'4. r8 r4 |
@@ -43,12 +41,12 @@ ActeUnSceneUnFluteDeux= { \FluteDeux
 }
 		
 
-ActeUnSceneDeuxFluteDeux= { \FluteDeux
-	\relative do''	{
+ActeUnSceneDeuxFluteDeux = { \FluteDeux
+	\relative	{
 		%%% Air de la Soprano2 %%%
 		
 		R2.*2	R1*2	R2.*2	R1*2	R2.*2	R1*2	R2.*2	R1*2	R2.*2
-		sold8 la sold mi re2~ | re4 re8 mi sold4 sold8 la |
+		sold'8 la sold mi re2~ | re4 re8 mi sold4 sold8 la |
 		sold mi re4 sold8 la | sold4 r4 r |
 		R1*2	R2.*2
 		sold8 la sold mi re4 sold8 la | sold mi re mi sold4 sold8 la |
@@ -77,10 +75,14 @@ ActeUnSceneDeuxFluteDeux= { \FluteDeux
 	}
 }
 
-ActeDeuxSceneUnFluteDeux= { \FluteDeux
-\relative {
-		R2.*4 R2 R2.*2 R2 | r2 \t {si''8 re fa}| fad2 red8 r16 fad! | re!2.~ | re4 r |
-        R2. R2 | la'2.~ | la2.~ | la4 r | r \t {sib,8 reb mib~} mib4~ | mib16. fad32 do8~ do2 | \tt {si!16 do si sold sol } mib'16 mi,!8.~ mi4~| mi r | R2. R2 R2.*2 R2 |
-        la2.~| la2.~| la2.~| la4 r |
+ActeDeuxSceneUnFluteDeux = { \FluteDeux
+  \relative {
+		R2.*4 R2 R2.*2 R2 | r2 \t {si''8 re fa}| fad2 red8 r16 fad! | 
+    re!2.~ | re4 r |
+    R2. R2 | la'2.~ | la2.~ | la4 r | r \t {sib,8 reb mib~} mib4~ |
+    mib16. fad32 do8~ do2 | 
+    \tt {si!16 do si sold sol } mib'16 mi,!8.~ mi4~| 
+    mi r | R2. R2 R2.*2 R2 |
+    la2.~| la2.~| la2.~| la4 r |
 	}
 }

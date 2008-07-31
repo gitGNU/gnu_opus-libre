@@ -17,12 +17,13 @@ OperaNoticeTexte= "Gravure réalisée au moyen du logiciel libre GNU LilyPond (w
 PrologueTitreTexte= "Prologue"
 InterludeTitreTexte= "Interlude"
 EntracteTitreTexte= "Entr'acte"
+FinaleTitreTexte= "Finale"
 
 %%%%
 
 ActeUnTitreTexte= "Acte I"
-ActeDeuxTitreTexte= "ActeII"
+ActeDeuxTitreTexte= "Acte II"
 SceneUnTitreTexte= "Premier Tableau"
 SceneDeuxTitreTexte= "Deuxième Tableau"
 SceneTroisTitreTexte= "Troisième Tableau"
-FinalTitreTexte = "Final"
+

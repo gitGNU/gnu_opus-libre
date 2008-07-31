@@ -51,6 +51,7 @@ PianoDeuxMains=
 
 %% Articulation shortcuts -----------------------------------------%
 
+% Are these really needed?
 #(define (make-script x)
    (make-music 'ArticulationEvent
                'articulation-type x))
@@ -144,6 +145,7 @@ CaV=
 
 %% Music shortcuts ------------------------------------------------%
 
+% This might not be needed
 #(define (octave-up noteevent)
  (let* ((pitch (ly:music-property noteevent 'pitch))
         (octave (ly:pitch-octave pitch))
@@ -271,6 +273,18 @@ ind =
                   (list (make-music 'TextScriptEvent 'direction 1
                   'text (markup #:indic text))))))
    music)
+   
+pizz =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"pizz." $music #})
+
+arco =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"arco" $music #})
+
+simile =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"simile" $music #})
 
 #(define (make-text-span music t)
  (set! (ly:music-property music 'elements)
@@ -340,7 +354,7 @@ long = {
     (markup 
   ;  #:override (cons 'line-width (* 1 (chain-assoc-get 'line-width props)))
     #:fill-line (
-    #:override '(line-width . 50)
+    #:override '(line-width . 60)
     #:override '(box-padding . 1.5)
     #:override '(corner-radius . 2)
     #:rounded-box #:sans #:italic #:small #:justify-string  text))))

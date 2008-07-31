@@ -977,7 +977,7 @@ ActeUnSceneUnBisMainGauche = {
     
     <do, do'>2 do'~ do~ <do lab'>2.~ do8 do \t {do do do} do4 do2~|
     <do la'!> do8 do \t {do do do} << {
-    \voiceTwo \stemUp do4~ \stemNeutral do do2 } \\ {
+    \voiceTwo do4~ do do2 } \\ {
     \voiceOne s4 si'2 si4 }>> <do, mib'>4 r r <fad sol'> |
     <dod do'!>2 r4 <fad sol'> | <dod do'!>2 r4 |
     << { %FIXME: grace problem

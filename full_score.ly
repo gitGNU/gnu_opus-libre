@@ -67,7 +67,7 @@
 
 Prologue = {
   <<
-    \new TopLine  { \topTopLine \PrologueMesures }
+    \new TopLine \PrologueMesures
     \new StaffGroup
       <<
         \new GrandStaff
@@ -89,7 +89,7 @@ Prologue = {
 
     \new StaffGroup \ProloguePercus
 
-    \new TopLine {\middleTopLine \PrologueMesures}
+    \new TopLine \PrologueMesures
 
     \new ChoirStaff
       <<
@@ -99,7 +99,7 @@ Prologue = {
         \new Lyrics \lyricsto "baryton" { \PrologueBarytonDeuxTexte }
       >>
 
-    \new TopLine { \middleTopLine \PrologueMesures}
+    \new TopLine \PrologueMesures
 
     \new StaffGroup 
       <<
@@ -125,70 +125,67 @@ Prologue = {
   >>
 }
 
-%{
-
 ActeUnSceneUn = {
   <<
-    \new TopLine  { \topTopLine \ActeUnSceneUnMesures }
+    \new TopLine \ActeUnSceneUnMesures
     \new StaffGroup
       <<
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnFluteUn
             \new Staff \ActeUnSceneUnFluteDeux 
-		>> }
+		      >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnClarinetteUn
+            \new Staff \ActeUnSceneUnClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnSaxophoneUn
+            \new Staff \ActeUnSceneUnSaxophoneDeux
+          >>
+      >>
 
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneUnClarinetteUn
-	%	\new Staff \ActeUnSceneUnClarinetteDeux
-		>> }
+    \new StaffGroup \ActeUnSceneUnPercus
 
-	\new GrandStaff { <<
-	%	\new Staff \ActeUnSceneUnSaxophoneUn
-	%	\new Staff \ActeUnSceneUnSaxophoneDeux
-		>> }
+    \new TopLine \ActeUnSceneUnMesures
 
-	>>
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "soprano" \ActeUnSceneUnSopranoUn
+        \new Lyrics \lyricsto "soprano" { \ActeUnSceneUnSopranoUnTexte }
+        \new Staff \new Voice = "barytonUn" \ActeUnSceneUnBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneUnBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \ActeUnSceneUnBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBarytonDeuxTexte }
+      >>
 
+    \new TopLine \ActeUnSceneUnMesures
 
-%\new StaffGroup { \ActeUnSceneUnPercus }
-
-%\new TopLine {\middleTopLine \ActeUnSceneUnMesures}
-
-\new ChoirStaff
-	<<
-%		\new Staff \ActeUnSceneUnSopranoUn
-%		\new Staff \ActeUnSceneUnBarytonUn
-%		\new Staff \ActeUnSceneUnBarytonDeux
-	>>
-
-\new TopLine { \middleTopLine \ActeUnSceneUnMesures}
-
-\new StaffGroup 
-	<<
-		\new GrandStaff 
-		{ <<
-%			\new Staff \ActeUnSceneUnViolonUn
-%			\new Staff \ActeUnSceneUnViolonDeux
-%			\new Staff \ActeUnSceneUnViolonTrois
-		>> }
-		\new GrandStaff
-		{ <<
-%			\new Staff \ActeUnSceneUnAltoUn
-%			\new Staff \ActeUnSceneUnAltoDeux
-		>> }
-		\new GrandStaff 
-		{ <<
-%			\new Staff \ActeUnSceneUnVioloncelleUn
-%			\new Staff \ActeUnSceneUnVioloncelleDeux
-		>> }
-%		\new Staff \ActeUnSceneUnContrebasse
-	>>
-%\new TopLine { \middleTopLine \ActeUnSceneUnMesures}
- %        \new PianoStaff \ActeUnSceneUnPiano
-     >>
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneUnViolonUn
+            \new Staff \ActeUnSceneUnViolonDeux
+            \new Staff \ActeUnSceneUnViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneUnAltoUn
+            \new Staff \ActeUnSceneUnAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneUnVioloncelleUn
+            \new Staff \ActeUnSceneUnVioloncelleDeux
+          >>
+        \new Staff \ActeUnSceneUnContrebasse
+      >>
+    \new PianoStaff \ActeUnSceneUnPiano
+  >>
 }
-%}
 
 ActeUnSceneUnBis = {
   <<
@@ -314,7 +311,8 @@ ActeUnSceneDeux={ \AdditionalLayout
 }
 
 
-%{ActeUnSceneTrois={ \AdditionalLayout
+%{
+ActeUnSceneTrois= { \AdditionalLayout
 <<
 \new TopLine  { \topTopLine \ActeUnSceneTroisMesures }
 \new StaffGroup <<
@@ -373,7 +371,7 @@ ActeUnSceneDeux={ \AdditionalLayout
 %\new TopLine { \middleTopLine \ActeUnSceneTroisMesures}
          \new PianoStaff \ActeUnSceneTroisPiano
      >>
-}%}
+} %}
 
 
 ActeDeuxSceneUn={ \AdditionalLayout
@@ -434,6 +432,7 @@ ActeDeuxSceneUn={ \AdditionalLayout
          \new PianoStaff \ActeDeuxSceneUnPiano
      >>
 }
+%%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
   \header {
@@ -441,37 +440,86 @@ ActeDeuxSceneUn={ \AdditionalLayout
 	  subtitle = \FullScore
 	  poet = \OperaLivret
 	  composer =  \OperaPartition
-    	  tagline = \OperaNotice }
-%{\score {
-	   \Prologue
+    tagline = \OperaNotice
+  }
+%{
+  \score {
+	  \Prologue
     \header {
-	    piece = \PrologueTitre
-	    }
-}%}
-%{\score {
-	   \ActeUnSceneUn
+      piece = \PrologueTitre
+    }
+  } %}
+  \score {
+    \ActeUnSceneUn
     \header {
-	    piece = \ActeUnSceneUnTitre
-	    }
-}%}
-%{\score {
-	   \ActeUnSceneDeux
+      piece = \ActeUnSceneUnTitre
+    }
+  } %{
+  \score {
+      \ActeUnSceneUnBis
+      \header {
+        piece = \Separateur
+      }
+  } %
+  \score {
+    \ActeUnSceneDeux
     \header {
-	    piece = \ActeUnSceneDeuxTitre
-	    }
-}%}
-%{\score {
-	   \ActeUnSceneTrois
+      piece = \ActeUnSceneDeuxTitre
+    }
+  } %
+  \score {
+    \ActeUnSceneTrois
     \header {
-	    piece = \ActeUnSceneTroisTitre
-	    }
-}%}
-\score {
-	   \ActeDeuxSceneUn
+      piece = \ActeUnSceneTroisTitre
+    }
+  } %
+  \score {
+    \ActeUnSceneTroisBis
     \header {
-	    piece = \ActeDeuxSceneUnTitre
-	    }
-	  }
+      piece = \Separateur
+    }
+  } %
+  \score {
+    \ActeUnSceneTroisTer
+    \header {
+      piece = \Separateur
+    }
+  } %
+  \score {
+    \ActeUnSceneQuatre
+    \header {
+      piece = \ActeUnSceneQuatreTitre
+    }
+  } %
+  \score {
+    \Entracte
+    \header {
+      piece = \EntracteTitre
+    }
+  } %
+  \score {
+    \ActeDeuxSceneUn
+    \header {
+      piece = \ActeDeuxSceneUnTitre
+    }
+  } %
+  \score {
+    \ActeDeuxSceneUnBis
+    \header {
+      piece = \Separateur
+    }
+  } %
+  \score {
+    \ActeDeuxSceneDeux
+    \header {
+      piece = \ActeDeuxSceneDeuxTitre
+    }
+  } %
+  \score {
+    \ActeDeuxSceneTrois
+    \header {
+      piece = \ActeDeuxSceneTroisTitre
+    }
+  } %
+%}
 }
-
-

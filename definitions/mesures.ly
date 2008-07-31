@@ -1029,10 +1029,11 @@ ActeDeuxSceneUnBisMesures = {
 
 ActeDeuxSceneDeuxMesures = {
   \time 3/2
-      \mark \markup \init-did \ActeDeuxSceneDeuxA
+      \mark \markup \init-did \ActeDeuxSceneDeuxB
       \tempo "Largo tranquillo" 2 = 46
-            R1.
-      \mark \markup \did \ActeDeuxSceneDeuxB
+            r2
+      \mark \markup \did \ActeDeuxSceneDeuxA
+            r1
             R1.*3
       \mark \markup \did \ActeDeuxSceneDeuxC
             R1.
@@ -1212,7 +1213,7 @@ ActeDeuxSceneTroisMesures = {
   %%% Séquence instrumentale %%%
   
   \time 2/4 R2*2
-      \mark \markup \did \ActeDeuxSceneTroisN
+      \mark \markup \init-did \ActeDeuxSceneTroisN
             R2*7
   \time 3/4 R2.
   \time 2/4 R2*6
