@@ -189,7 +189,7 @@ ActeUnSceneUn = {
 
 ActeUnSceneUnBis = {
   <<
-    \new TopLine  { \ActeUnSceneUnBisMesures }
+    \new TopLine \ActeUnSceneUnBisMesures
     \new StaffGroup
       <<
         \new GrandStaff
@@ -211,7 +211,7 @@ ActeUnSceneUnBis = {
 
     \new StaffGroup \ActeUnSceneUnBisPercus
 
-    \new TopLine { \ActeUnSceneUnBisMesures}
+    \new TopLine \ActeUnSceneUnBisMesures
 
     \new ChoirStaff
       <<
@@ -223,7 +223,7 @@ ActeUnSceneUnBis = {
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBisBarytonDeuxTexte }
       >>
 
-    \new TopLine { \ActeUnSceneUnBisMesures}
+    \new TopLine \ActeUnSceneUnBisMesures
 
     \new StaffGroup 
       <<
@@ -249,189 +249,6 @@ ActeUnSceneUnBis = {
   >>
 }
 
-ActeUnSceneDeux={ \AdditionalLayout
-<<
-\new TopLine  { \topTopLine \ActeUnSceneDeuxMesures }
-\new StaffGroup <<
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneDeuxFluteUn
-		\new Staff \ActeUnSceneDeuxFluteDeux 
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneDeuxClarinetteUn
-		\new Staff \ActeUnSceneDeuxClarinetteDeux
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneDeuxSaxophoneUn
-		\new Staff \ActeUnSceneDeuxSaxophoneDeux
-		>> }
-
-	>>
-
-
-\new StaffGroup { \ActeUnSceneDeuxPercus }
-
-\new TopLine { \middleTopLine \ActeUnSceneDeuxMesures}
-
-\new ChoirStaff
-	<<
-		\new Staff \new Voice = "soprano" \ActeUnSceneDeuxSopranoDeux
-		\new Lyrics \lyricsto "soprano" { \ActeUnSceneDeuxSopranoDeuxTexte }
-		\new Staff \new Voice = "baryton" \ActeUnSceneDeuxBarytonDeux
-		\new Lyrics \lyricsto "baryton" { \ActeUnSceneDeuxBarytonDeuxTexte }
-	>>
-
-\new TopLine {\middleTopLine	\ActeUnSceneDeuxMesures }
-
-\new StaffGroup 
-	<<
-		\new GrandStaff 
-		{ <<
-			\new Staff \ActeUnSceneDeuxViolonUn
-			\new Staff \ActeUnSceneDeuxViolonDeux
-			\new Staff \ActeUnSceneDeuxViolonTrois
-		>> }
-		\new GrandStaff
-		{ <<
-			\new Staff \ActeUnSceneDeuxAltoUn
-			\new Staff \ActeUnSceneDeuxAltoDeux
-		>> }
-		\new GrandStaff 
-		{ <<
-			\new Staff \ActeUnSceneDeuxVioloncelleUn
-			\new Staff \ActeUnSceneDeuxVioloncelleDeux
-		>> }
-		\new Staff \ActeUnSceneDeuxContrebasse
-	>>
-%\new TopLine { \middleTopLine \ActeUnSceneDeuxMesures}
-         \new PianoStaff \ActeUnSceneDeuxPiano
-     >>
-}
-
-
-%{
-ActeUnSceneTrois= { \AdditionalLayout
-<<
-\new TopLine  { \topTopLine \ActeUnSceneTroisMesures }
-\new StaffGroup <<
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneTroisFluteUn
-		\new Staff \ActeUnSceneTroisFluteDeux 
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneTroisClarinetteUn
-		\new Staff \ActeUnSceneTroisClarinetteDeux
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \ActeUnSceneTroisSaxophoneUn
-		\new Staff \ActeUnSceneTroisSaxophoneDeux
-		>> }
-
-	>>
-
-
-\new StaffGroup { \ActeUnSceneTroisPercus }
-
-%\new TopLine { \middleTopLine \ActeUnSceneTroisMesures}
-
-\new ChoirStaff
-	<<
-		\new Staff \new Voice = "soprano" \ActeUnSceneTroisSopranoUn
-		\new Lyrics \lyricsto "soprano" { \ActeUnSceneTroisSopranoUnTexte }
-		\new Staff \new Voice = "baryton" \ActeUnSceneTroisBarytonUn
-		\new Lyrics \lyricsto "baryton" { \ActeUnSceneTroisBarytonUnTexte }
-	>>
-
-\new TopLine {\middleTopLine	\ActeUnSceneTroisMesures }
-
-\new StaffGroup 
-	<<
-		\new GrandStaff 
-		{ <<
-			\new Staff \ActeUnSceneTroisViolonUn
-			\new Staff \ActeUnSceneTroisViolonDeux
-			\new Staff \ActeUnSceneTroisViolonTrois
-		>> }
-		\new GrandStaff
-		{ <<
-			\new Staff \ActeUnSceneTroisAltoUn
-			\new Staff \ActeUnSceneTroisAltoDeux
-		>> }
-		\new GrandStaff 
-		{ <<
-			\new Staff \ActeUnSceneTroisVioloncelleUn
-			\new Staff \ActeUnSceneTroisVioloncelleDeux
-		>> }
-		\new Staff \ActeUnSceneTroisContrebasse
-	>>
-%\new TopLine { \middleTopLine \ActeUnSceneTroisMesures}
-         \new PianoStaff \ActeUnSceneTroisPiano
-     >>
-} %}
-
-
-ActeDeuxSceneUn={ \AdditionalLayout
-<<
-\new TopLine  { \topTopLine \ActeDeuxSceneUnMesures }
-\new StaffGroup <<
-	\new GrandStaff { <<
-		\new Staff \ActeDeuxSceneUnFluteUn
-		\new Staff \ActeDeuxSceneUnFluteDeux >> }
-
-	\new GrandStaff { <<
-		\new Staff \ActeDeuxSceneUnClarinetteUn
-		\new Staff \ActeDeuxSceneUnClarinetteDeux
-		>> }
-
-	\new GrandStaff { <<
-		\new Staff \ActeDeuxSceneUnSaxophoneUn
-		\new Staff \ActeDeuxSceneUnSaxophoneDeux
-		>> }
-
-	>>
-
-
-\new StaffGroup { \ActeDeuxSceneUnPercus }
-
-%\new TopLine {\middleTopLine \mesuresUn
-
-\new ChoirStaff
-	<<
-		\new Staff \ActeDeuxSceneUnSopranoUn
-		\new Staff \ActeDeuxSceneUnSopranoDeux
-		\new Staff \ActeDeuxSceneUnContralto
-	>>
-
-\new TopLine {\middleTopLine \ActeDeuxSceneUnMesures}
-
-\new StaffGroup 
-	<<
-		\new GrandStaff 
-		{ <<
-			\new Staff \ActeDeuxSceneUnViolonUn
-			\new Staff \ActeDeuxSceneUnViolonDeux
-			\new Staff \ActeDeuxSceneUnViolonTrois
-		>> }
-		\new GrandStaff
-		{ <<
-			\new Staff \ActeDeuxSceneUnAltoUn
-			\new Staff \ActeDeuxSceneUnAltoDeux
-		>> }
-		\new GrandStaff 
-		{ <<
-			\new Staff \ActeDeuxSceneUnVioloncelleUn
-			\new Staff \ActeDeuxSceneUnVioloncelleDeux
-		>> }
-		\new Staff \ActeDeuxSceneUnContrebasse
-	>>
-%\new TopLine {\middleTopLine \mesuresUn}
-         \new PianoStaff \ActeDeuxSceneUnPiano
-     >>
-}
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {

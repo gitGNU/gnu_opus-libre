@@ -44,6 +44,26 @@ ProloguePiano = { \Piano
   }}
 }
 
+ActeUnSceneUnPiano = { \Piano
+  \PianoDeuxMains
+  \relative { \clef treble
+    
+  }
+  \relative { \clef bass
+    
+  }
+}
+
+ActeUnSceneUnBisPiano = { \Piano
+  \PianoDeuxMains
+  \relative { \clef treble
+    
+  }
+  \relative { \clef bass
+    
+  }
+}
+
 ActeUnSceneDeuxPiano = { \Piano 
 	\PianoDeuxMains { \clef treble
 		\relative{
