@@ -7,10 +7,10 @@
 
 %%% This is the main file for the so-called vocal version, i.e. with
 %%% piano accompaniment.  Compile it using "lilypond vocal_score.ly"
-%%% and wait one or two hours...
+%%% and wait a few minutes...
 
 \version "2.11.52"
-%% This opéra has been coded on almost four years, from version 2.9 
+%% This opéra has been coded on over several years, from version 2.9 
 %% to 2.12 -- some inconsistencies may remain through the code.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -405,19 +405,19 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %{
+  } %
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %}
+  } 
   \score {
     \ActeDeuxSceneUn
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %
+  }% 
   \score {
     \ActeDeuxSceneUnBis
     \header {
@@ -429,7 +429,7 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeDeuxSceneDeuxTitre
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneTrois
     \header {

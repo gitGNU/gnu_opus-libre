@@ -1,0 +1,67 @@
+                 Libre Opera License v.0.1
+
+0. Introduction
+
+  This license basically wraps together a Creative Commons license applying to
+the score as a narrative work, and a General Public License that applies to the
+source code behind it.
+
+  The GNU General Public License, version 3 or later, is reproduced in the
+COPYING document.
+
+  The Creative Commons Attribution-NonCommercial-ShareAlike license is
+reproduced in the PERFORMING document.
+
+  The "work" means the copyrightable work licensed under this License; the
+General Public License may refer to it as "the program". The different authors
+and licensors are listed in the THANKS document, with contact informations. 
+Each licensee (individuals or organizations) is addressed as "you". 
+
+  The "source code" of the work is defined by the General Public License; it
+means the full machine- and human-readable (where possible) code needed to
+generate the score and/or any other document or file needed to perform, modify
+or reproduce the work.  In some parts, the General Public License may refer to
+it as the "Corresponding Source".
+
+  The "narrative work" means any performance of the work or based on the work,
+either computer- or human-generated, any media resulting from such a
+performance, and any use of narrative elements (characters, events, lyrics,
+dramatic structure).  The Creative Commons license refers to it as the "Work".
+
+1. Source Code
+
+  If you want to modify and/or redistribute this work, you must comply with the
+GNU General Public License, with the following exception:
+  any interpretation of the source code as a narrative work is not regarded as
+an object-code form of the work, and therefore will be covered by the Creative
+Commons by-NC-SA license instead of the GPL license.
+  The source code of the work, however, may be compiled, printed and reproduced
+as a printed score under the terms and conditions of the GPL license.
+
+2. Narrative work
+
+  If you want to perform and/or record and/or distribute any recording based on
+the narrative work, you must comply with the  Creative Commons
+Attribution-NonCommercial-ShareAlike license, with the following exception:
+  in addition to the credits specified in section 4(d) of the license, if you
+publicly perform, or distribute, any media resulting from the narrative work,
+you must provide in a reasonable manner, either (i) the full machine-readable
+source code that has been used to generate the score, or (ii) a written document
+offering full access to the source code at no charge, to the general public.
+
+3. Special authorizations
+
+  As implied by the Berne Convention for the Protection of Literary and Artistic
+Works, special authorizations can be given by the authors to use this work
+outside the terms of its license.  Such authorizations have to be requested
+directly from any of the authors, for specific purposes and motivations; such
+authorizations (if granted) will not change any of the terms of this license,
+and will remain limited in their extent and implications.
+
+4. Future versions
+
+  The terms specified by this license are valid for as long as the copyright of
+the work remains applicable in the country where it is read or performed, and
+therefore no future version of this license will add any obligations to these. 
+However, later versions may imply additional permissions by specifying less
+restrictive terms and conditions.
