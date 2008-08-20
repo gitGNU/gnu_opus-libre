@@ -71,7 +71,7 @@ ActeUnSceneDeuxSopranoDeux = { \SopranoDeux
     r2 r8 sold-. \f \( | la16( sold) mi-. re-. mi4-- sold8-. la-. |
     sold4-- \) r r8 mi-. \( | sold( mi) re( mi) sold-. la-. |
     sold4-- \) r2 | re8 \( mi sold( mi) \t {re( \< si) mi} |
-    \ten la2. \) \! ~| la4 r2 | R2. r4 r8 re,,4.-- \mp |
+    \ten la2.( \! | si,4) \) r2 | R2. r4 r8 re,4.-- \mp |
     \t {sold8 \( ( \< fad ) sold-.} si4-- re8-- si-- |
     mi2-- \! \) r4 | re8--( si-- mi4-> \t {re8 \< si fa'} | 
     \ten sib1) \! ~| sib4 r r2 | R1 | R1*5 

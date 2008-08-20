@@ -85,7 +85,7 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
 		\t {mi,16 fa sol} sib8 r4 |r8 r16 fa16 do16. si'!32 mi8 r2 | r2 r8
 		\t {mi,16 fa sol} sib8 r8 |r2 r8
 		\t {mi16 red dod} lad8 r8 r2 |
-    R1 red,,4 mi red mi sol2.~|sol2 r4 | r8.
+    R1 red,,4 mi red mi sol la sol la sol r4 | r8.
 		\t {fa'32 mi re } si8  r8 r8
 		\t {la16 sold fad} red8 r8 r4 r2 |
 	}

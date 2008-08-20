@@ -136,7 +136,7 @@ marcst =
 
 CaV=
 #(let ((m (make-music 'ArticulationEvent
-                          'articulation-type "flageolet")))
+        'articulation-type "flageolet")))
        (set! (ly:music-property m 'tweaks)
              (acons 'font-size -3
                     (ly:music-property m 'tweaks)))
@@ -205,10 +205,10 @@ gauche = { \change StaffPiano = "gauche" }
     )))
     
 #(define modern-style
-  '(Staff 
-    (same-octave . 0)
-    (any-octave  . 0)
-    (same-octave . 1)))
+  `(Staff ,(make-accidental-rule 'same-octave 0)
+          ,(make-accidental-rule 'any-octave 0)
+          ,(make-accidental-rule 'same-octave 1)
+          ,neo-modern-accidental-rule))
 
 %% Music formatting -----------------------------------------------%
 

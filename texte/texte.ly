@@ -61,7 +61,7 @@ PrologueBarytonDeuxTexte = \lyricmode {
   Un é -- tran -- ger, \dash dis -- tu_?
   Ja -- mais je n'ai vu d'é -- tran -- ger par chez nous_;
   que fai -- re_? Que fai -- re_?
-  Quel con --seil sub -- til me pro -- po -- \dash ses -- tu_?
+  Quel con -- seil sub -- til me pro -- po -- \dash ses -- tu_?
   A -- llons a -- llons, Chef de la Ga -- rde,
   j'ai trop be -- soin de toi en ces mo -- ments gra -- ves, très gra -- ves_;
   ex -- trê -- me -- ment graves… __ _
@@ -150,7 +150,7 @@ ActeUnSceneUnSopranoUnTexte = \lyricmode {
   Non non non, noon_; __ _ il a -- vait dé -- jà pris un gnon… __ _
   Ce sont des pan -- se -- ments_; il sai -- gnait te -- lle -- ment…
   Li -- go -- té, li -- go -- té_? C'est qu'il se dé -- ba -- ttait…
-  Mais il est é -- vei -- llé_; je vais l'in -- te --rro -- ger.
+  Mais il est é -- vei -- llé_; je vais l'in -- te -- rro -- ger.
   
   \ital Hm -- \ital hmm. 
   É -- tran -- ger, É -- tran -- ger, est-ce que vous m'en -- ten -- dez_?
@@ -268,7 +268,7 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
   \set shortInstrumentName = \BarytonDeuxShortName
   
   Un é -- tran -- ger_! En nos murs_!
-  Un é -- tran -- ger_! Sous ce toït_!
+  Un é -- tran -- ger_! Sous ce toît_!
   Un é -- tran -- ger_! __ _ _
   \ital \dash "(Hm" -- \ital "hmm.)" Il faut… Il faut… Il faut…
   Co -- mment, le seul_?! 
@@ -291,92 +291,92 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
   \set instrumentName = \SopranoDeuxName
   \set shortInstrumentName = \SopranoDeuxShortName
   %FIXME: \leftSyl doesn't work in this part (wtf?)
-	Mmm… __ _ _ _ _ _ _ _ _ _ _ _ _ _
-	Mmm… __ _ _ _ _ _ _ _ _ _ _ _ Mm… A -- _ mour… __ _
-	Ma main n'a pas a -- ssez de doigts
-	pour por -- ter à la fois 
-	tou -- tes les ba -- gues que j'aime… __ _
-	Aaa… __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-	Aa… __ _ _ Aa… __ _ _ _ _ _ A -- _ mour… __ _
-	Mon cou ne peut con -- te -- nir tout… __ _
-	il me fau -- drait trois têtes en tout,
-	pour tous les co -- lli -- ers, __ _ les di -- a -- dèmes… __ _
-	Aaa… __ _ _ _ _ _ _ Mmm… __ _ _ _ _ _ _
-	Aaa… __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-	A -- _ _ _ _ mour…
-	S'en -- ta -- _ _ _ _ ssent en mes a -- ppar -- te -- ments
-	les ru -- bis, sa -- phirs, di -- a -- mants_;
-	d'a -- sso -- mants mon -- ceaux de gemmes… __ _
-	
-	Mon cher, sa -- \dash vez -- vous que la so -- mme de vos sou -- cis
-	se lit \dash par -- de -- ssus vos sour -- cils_?
-	J'ai la so -- lu -- tion __ _ tou -- te tra -- cée_!
-	Dé -- mi -- ssio -- nnez_!
-	J'ai ouï di -- _ re __ _ qu'un É -- tran -- ger
-	é -- tait tan -- tôt a -- rri -- vé…
-	\leftSyl …_é -- _ tran -- _ _ _ ger… \leftSyl …_a -- _ rri -- _ _ _ vé…
-	Mmm… __ _ _ _ _ _ _ \leftSyl …_In -- vi -- \dash tons -- le vers vingt heures.
-	À dî -- ner. À dî -- ner_!
-	D'un dî -- ner, do -- \dash nnons -- nous l'i -- dée
-	du sort que vous lui des -- ti -- ne -- rez…
-	
-	\ital Ooooh_!!!! Vou -- \dash lez -- vous dire…
-	Au -- \dash rait -- il de be -- lli -- queu -- ses en -- vies_?
-	Nous des -- ti -- ne -- \dash rait -- il de noirs de -- sseins,
-	du -- _ rant __ _ ce dî -- ner __ _ a -- no -- din_?
-	Un a -- _ pé -- ri -- tif a -- gre -- ssif_?
-	Un plat en for -- me d'a -- tten -- tat_?
-	Au fro -- ma -- _ \leftSyl ge_un __ _ car -- nage_; __ _
-	et, au __ _ mo -- ment des li -- queurs…
-	\leftSyl …_un ou -- trage à la pu -- deur_! __ _
-	
-	Dieux_! Mon Dieu… Mon Dieu…
-	Quel vin_? Dieux… __ _ Mon Dieu… Mon Dieu_!
-	Quelle cui -- sson pour la viande_:
-	à point, sai -- gnante, ou bleue_?
-	Mon Dieu_! Mon Dieu_!
-	Oui, quel de -- ssert \dash vaut -- il mieux_: 
-	sor -- bet ou crème aux œufs_?
-	Mon Dieu, mon Dieu_;
-	quels bi -- joux pour mon cou_?
-	Ex -- trê -- me -- ment… ca -- ta -- stro -- phi… --
-	\leftSyl …_que.
+  Mmm… __ _ _ _ _ _ _ _ _ _ _ _ _ _
+  Mmm… __ _ _ _ _ _ _ _ _ _ _ _ Mm… A -- _ mour… __ _
+  Ma main n'a pas a -- ssez de doigts
+  pour por -- ter à la fois 
+  tou -- tes les ba -- gues que j'aime… __ _
+  Aaa… __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  Aa… __ _ _ Aa… __ _ _ _ _ _ A -- _ mour… __ _
+  Mon cou ne peut con -- te -- nir tout… __ _
+  il me fau -- drait trois têtes en tout,
+  pour tous les co -- lli -- ers, __ _ les di -- a -- dèmes… __ _
+  Aaa… __ _ _ _ _ _ _ Mmm… __ _ _ _ _ _ _
+  Aaa… __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  A -- _ _ _ _ mour…
+  S'en -- ta -- _ _ _ _ ssent en mes a -- ppar -- te -- ments
+  les ru -- bis, sa -- phirs, di -- a -- mants_;
+  d'a -- sso -- mants mon -- ceaux de gemmes… __ _
+
+  Mon cher, sa -- \dash vez -- vous que la so -- mme de vos sou -- cis
+  se lit \dash par -- de -- ssus vos sour -- cils_?
+  J'ai la so -- lu -- tion __ _ tou -- te tra -- cée_!
+  Dé -- mi -- ssio -- nnez_!
+  J'ai ouï di -- _ re __ _ qu'un É -- tran -- ger
+  é -- tait tan -- tôt a -- rri -- vé…
+  \leftSyl …_é -- _ tran -- _ _ _ ger… \leftSyl …_a -- _ rri -- _ _ _ vé…
+  Mmm… __ _ _ _ _ _ _ \leftSyl …_In -- vi -- \dash tons -- le vers vingt heures.
+  À dî -- ner. À dî -- ner_!
+  D'un dî -- ner, do -- \dash nnons -- nous l'i -- dée
+  du sort que vous lui des -- ti -- ne -- rez…
+
+  \ital Ooooh_!!!! Vou -- \dash lez -- vous dire…
+  Au -- \dash rait -- il de be -- lli -- queu -- ses en -- vies_?
+  Nous des -- ti -- ne -- \dash rait -- il de noirs de -- sseins,
+  du -- _ rant __ _ ce dî -- ner __ _ a -- no -- din_?
+  Un a -- _ pé -- ri -- tif a -- gre -- ssif_?
+  Un plat en for -- me d'a -- tten -- tat_?
+  Au fro -- ma -- _ \leftSyl ge_un __ _ car -- na -- ge_;
+  et, au __ _ mo -- ment des li -- queurs…
+  \leftSyl …_un ou -- trage à la pu -- deur_! __ _
+
+  Dieux_! Mon Dieu… Mon Dieu…
+  Quel vin_? Dieux… __ _ Mon Dieu… Mon Dieu_!
+  Quelle cui -- sson pour la viande_:
+  à point, sai -- gnante, ou bleue_?
+  Mon Dieu_! Mon Dieu_!
+  Oui, quel de -- ssert \dash vaut -- il mieux_: 
+  sor -- bet ou crème aux œufs_?
+  Mon Dieu, mon Dieu_;
+  quels bi -- joux pour mon cou_?
+  Ex -- trê -- me -- ment… ca -- ta -- stro -- phi… --
+  \leftSyl …_que.
 }
 
 ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
-	Tou -- jours ces pro -- blè -- mes de res -- pon -- sa -- bi -- li -- té;
-	ma chè -- re, très __ _ chère é -- pou -- se…
-	Oui, oui_?
-	Euh… Non, non_; ce… \leftSyl …_ce se -- rait u -- ne trop lou -- _ rde 
-	res -- pon -- sa -- bi -- li -- té… que de dé -- mi -- ssio -- nner…
-	Un É -- tran -- ger, très é -- tran -- ger_; ex -- trê -- me -- ment
-	é -- tran -- ger. __ _
-	À dî -- ner_? À dî -- ner_?!? À dî -- ner_?…
-	D'un dî -- ner do -- \dash nnons -- nous l'i -- dée…
-	Oui, oui_; oui, oui oui_! __ _ _
-	
-	Mais_! C'est très dan -- ge -- reux __ _ de le faire 
-	ve -- nir à no -- tre ta -- _ ble_;
-	nous ne co -- nnai -- ssons rien de lui…
-	Non_! Non,__ _ non, non…
-	Voy -- ons, voy -- ons_! Il \leftSyl y_a bien d'au -- tres ques -- tions…
-	\dash Est -- il a -- ller -- gique au foie gras_?
-	Quel ty -- pe de vin ai -- \dash me -- \leftSyl t_-_il_?
-	Nous ri -- squons d'ê -- tre dé -- sas -- treux_!…
-	Mon Dieu… Mon Dieu… Quel vin \dash doit -- on ser -- vir_:
-	cham -- pagne ou bien mou -- sseux_?
-	Mon Dieu… Mon Dieu… La viande_?
-	Mon Dieu_! Mon Dieu_!
-	Quel de -- ssert \dash vaut -- il mieux_? 
-	Sor -- bet ou crème aux œufs_?
-	Mon Dieu, __ _ mon Dieu_! __ _ 
-	Quels bi -- joux pour mon c_-?!
-	En -- fin bref. Ce dî -- ner peut de -- ve -- nir
-	ca -- ta -- stro -- phi -- que_; très
-	ca -- ta -- stro -- phi -- que…
+
+  Tou -- jours ces pro -- blè -- mes de res -- pon -- sa -- bi -- li -- té;
+  ma chè -- re, très __ _ chère é -- pou -- se…
+  Oui, oui_?
+  Euh… Non, non_; ce… \leftSyl …_ce se -- rait u -- ne trop lou -- _ rde 
+  res -- pon -- sa -- bi -- li -- té… que de dé -- mi -- ssio -- nner…
+  Un É -- tran -- ger, très é -- tran -- ger_; ex -- trê -- me -- ment
+  é -- tran -- ger. __ _
+  À dî -- ner_? À dî -- ner_?!? À dî -- ner_?…
+  D'un dî -- ner do -- \dash nnons -- nous l'i -- dée…
+  Oui, oui_; oui, oui oui_! __ _ _
+
+  Mais_! C'est très dan -- ge -- reux __ _ de le faire 
+  ve -- nir à no -- tre ta -- _ ble_;
+  nous ne co -- nnai -- ssons rien de lui…
+  Non_! Non,__ _ non, non…
+  Voy -- ons, voy -- ons_! Il \leftSyl y_a bien d'au -- tres ques -- tions…
+  \dash Est -- il a -- ller -- gique au foie gras_?
+  Quel ty -- pe de vin ai -- \dash me -- \leftSyl t_-_il_?
+  Nous ri -- squons d'ê -- tre dé -- sas -- treux_!…
+  Mon Dieu… Mon Dieu… Quel vin \dash doit -- on ser -- vir_:
+  cham -- pagne ou bien mou -- sseux_?
+  Mon Dieu… Mon Dieu… La viande_?
+  Mon Dieu_! Mon Dieu_!
+  Quel de -- ssert \dash vaut -- il mieux_? 
+  Sor -- bet ou crème aux œufs_?
+  Mon Dieu, __ _ mon Dieu_! __ _ 
+  Quels bi -- joux pour mon c_-?!
+  En -- fin bref. Ce dî -- ner peut de -- ve -- nir
+  ca -- ta -- stro -- phi -- que_; très
+  ca -- ta -- stro -- phi -- que…
 }
 
 %%%%%%%%%%%%%%%%%%%%%% Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%

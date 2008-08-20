@@ -249,6 +249,66 @@ ActeUnSceneUnBis = {
   >>
 }
 
+ActeUnSceneDeux = {
+  <<
+    \new TopLine \ActeUnSceneDeuxMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneDeuxFluteUn
+            \new Staff \ActeUnSceneDeuxFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneDeuxClarinetteUn
+            \new Staff \ActeUnSceneDeuxClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneDeuxSaxophoneUn
+            \new Staff \ActeUnSceneDeuxSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeUnSceneDeuxPercus
+
+    \new TopLine \ActeUnSceneDeuxMesures
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "soprano" \ActeUnSceneDeuxSopranoDeux
+        \new Lyrics \lyricsto "soprano" { \ActeUnSceneDeuxSopranoDeuxTexte }
+        \new Staff \new Voice = "baryton" \ActeUnSceneDeuxBarytonDeux
+        \new Lyrics \lyricsto "baryton" { \ActeUnSceneDeuxBarytonDeuxTexte }
+      >>
+
+    \new TopLine \ActeUnSceneDeuxMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneDeuxViolonUn
+            \new Staff \ActeUnSceneDeuxViolonDeux
+            \new Staff \ActeUnSceneDeuxViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneDeuxAltoUn
+            \new Staff \ActeUnSceneDeuxAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneDeuxVioloncelleUn
+            \new Staff \ActeUnSceneDeuxVioloncelleDeux
+          >>
+        \new Staff \ActeUnSceneDeuxContrebasse
+      >>
+    \new PianoStaff \ActeUnSceneDeuxPiano
+  >>
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
