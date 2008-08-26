@@ -78,6 +78,48 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     mi8 mi fad fad mi mi |
     fad fad mi mi fad fad mi mi fad1 |
     sib2.~|sib~| sib4 r2 | R1
+    
+    %%% Piu vivo %%%
+    <sol, sol'>4 sol16 sol sol sol lab lab lab lab |
+    sib sib sib sib reb reb reb reb mib mib mib mib mi mi mi mi |
+    fad fad fad fad la la la la si si si si |
+    do4 re, dod, |
+    sol'2 sol4 sol | dod4. dod8 dod dod |
+    sol2 r8 sol sol sol | dod4. dod8 \t {dod dod dod} |
+    sol4 sol2 r4 |
+    dod,4 r2 \clef tenor |
+    \tt {r16 lab''' sol fa re } \tt {do la si la fad} \clef bass
+    \tt {mi red dod do sib} | sol4 r2 |
+    sol4 \tt {sol16 mi fad fa fad} \tt {sol lab la lab sib} |
+    si4 r2 |
+    sib4 sib sib |
+    re r2 | re4 re re | re r2 | re4 re re | re r2 | re4 re re |
+    dod r2 | dod4 dod dod | fa1~ fa2 r4 si,~ | si8 do4. dod2 |
+    
+    %%% Tempo giusto %%%
+    <re, sib'>4 <re sib'> <re sib'> <re sib'> |
+    <re sib'> <re sib'> <re sib'> <re sib'> |
+    <dod la'> <dod la'> <dod la'> <dod la'> |
+    <red si'> <red si'> <red si'> <red si'> |
+    \pizz sol r r2 \clef tenor |
+    \tt { r16 fa'' mi re do} \tt {si la sold fad mi} \clef bass
+    \tt {mib reb do sib lab} | sol1~ sol2. r4 |
+    r \tt {do16 reb mib solb lab} \clef tenor \tt {la si re mi sol} |
+    lab4. r8 \clef bass |
+    sold,,2~ | sold~ | sold r4 |
+    r r8 sold fad la |
+    <fa fa'>2 | <fa fa'>4. fa8 |
+    <fa re' la'>2 | <fa re'>4. fa8 |
+    r la sol sib |
+    \t {fad re' la'} \t {la re, fad,} |
+    \t {fad re' la'} \t {la re, fad,} 
+    \t {fad re' la' \glissando } \clef tenor |
+    sold' r r2 |
+    
+    %%% Largo assai %%%
+    R1 R2.*3 R2
+    sib,2.~ sib2. r4 | 
+    r2 \pizz la'4 sold | sol r sib, r | re, r r2 |
 	}
 }
 

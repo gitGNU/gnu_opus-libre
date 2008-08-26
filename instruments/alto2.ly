@@ -89,8 +89,64 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
 		\arco lab8
 		\repeat unfold 27 lab |
 		\repeat unfold 14 sib |
-		\repeat unfold 8 <dod' mi>|
-	}
+		\repeat unfold 8 <dod mi>|
+    mib,2.~ mib~ mib4 r2 R1 |
+    
+    %%% Piu vivo %%%
+    <sol sol'>2.~ <sol sol'>1 |
+    sol8 sol' sol, fad' sol, mi' |
+    dod sol do sol sib sol |
+    <sol sol'>2. r4 |
+    dod,4 dod16 dod dod dod dod dod dod dod |
+    sol'2. r4 |
+    dod16 dod dod dod dod dod dod dod dod4 |
+    sol4 sol2 r4 |
+    dod,8. dod16~ dod4 r |
+    r \pizz do'8 la fa dod |
+    sol'4 si8 red, fad do |
+    sol'4 sol8 lab la sib |
+    si4 re8 la fad dod |
+    sib'4 sib8 si do dod |
+    re4 \arco \tt {re16 do la sol fad} \tt {si sib lab fa mib} |
+    re4 \pizz re'8 fa, si sold |
+    re4 \arco \tt {re'16 si la sold fad}\tt {do' sib sol fa mi} |
+    re4 \pizz re'8 fad, sib sib|
+    re,4\arco \tt {re'16 dod si sold fad} \tt {do' sib la sol mi } |
+    re4 \pizz re'8 la fad sold |
+    dod,4 \arco \tt {dod'16 si sold fad fa} \tt {sib la sol mi re} |
+    dod4 r2 |
+    
+    %%% Poco allargando %%%
+    \repeat tremolo 16 <sib' re>16 
+    \repeat tremolo 8  <sib  re>
+    \repeat tremolo 8  <si   re>
+    R1
+    
+    %%% Tempo giusto %%%
+    r8 \pizz <re, sib'> r <re sib'> r <re sib'> r <re sib'> |
+    r <re sib'> r <re sib'> r <re sib'> r <re sib'> |
+    r <dod la'> r <dod la'> r <dod la'> r <dod la'> |
+    r <red si'> r <red si'> r <red si'> r <red si'> |
+    r <sol si> <sol si>4 r2 |
+    r16 \arco reb'' do sib lab sol fa re reb do sib lab |
+    <re, sol>1~<re sol>2. r4 |
+    do16 mib solb lab si re mi sol \clef treble sib do mib solb |
+    lab4. r8 |
+    <sold, fad'>2~ <sold fad'>~ <sold fad'> r4 \clef alto |
+    re,16 fad sold si do, mib fad sold si re mi sol |
+    la8 \t {si,16 la si} \ttt {re si la si la si} |
+    \ttt {re si la si la si} \ttt {re si la si la si} |
+    \ttt {sol la sol mi' sol, la} \ttt {sol la sol mi' sol, la} |
+    \ttt {sol la sol mi' sol, la} \ttt {sol la sol mi' sol, la} |
+    \ttt {sol si re si re mi} sol8 la |
+    \ttt {la,16 re la' la re, la} \ttt {la re la' la re, la} |
+    \ttt {la re la' la re, la} \ttt {la re la' la re, la}
+    <la re la'>4\glissando la''8 r r2 |
+    
+    %%% Largo assai %%%
+    r4 sib,,2. | la4. r8 la4 | lab4. r8 lab4 sol4. r8 r4 | r sol |
+    solb2.~ solb2. r4 | r2 \pizz fa4 mi mib r re r re, r r2 |
+  }
 }
 
 

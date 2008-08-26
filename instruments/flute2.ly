@@ -72,6 +72,39 @@ ActeUnSceneDeuxFluteDeux = { \FluteDeux
 		r2 r8 mi32 sol fa sib mi8 r |
 		r2 r8 \t {mi16 red dod} lad8 r r2 |R1
 		lad1 re!2.~ re~re4 r8 r16 \t {do32 si la} fad8 r | R1
+    
+    %%% Piu vivo %%%
+    R2. R1 R2.
+    \ttt {do,16 re mi sol lab sib}
+    \ttt {reb mib mi fad la si }
+    \ttt {do reb mib mi fa fad }
+    sol4 r r2 |
+    r16 re re re sol4 fa | sol8 re~ re4 r2 |
+    r16 re re re sol4 fa | sol8 re~ re4 r2 |
+    r16 mi mi mi sold4 fad  mi8 la~ la4 r  | R2.
+    r16 mi mi mi la4 sold|  mi8 la~ la4 r  |
+    r8  la   re,4   la  | re8 dod~dod4 r  |
+    R2.*6 r4 r8 mi, r4 |
+    
+    %%% Poco allargando %%%
+    sib'2. la4~| la4. sol8~ sol2 | si, re |
+    %%% Tempo giusto subito %%%
+    dod4 r r2 | R1*3
+    r2 r8 si la do | dod2 r4 |
+    dod4.  si8 sold'2 |
+    dod,4. si8 sold'2~| sold8 r r2 |
+    \tt { r16 re, fad sold si}
+    \tt { re mi sol la re }
+    sold,4 r8 si, | sold'2
+    sold,4. si8 sold'4~ | sold8 r r2 |
+    r8 re mi re |
+    r  re la're,|
+    r  re mi si |
+    r  re la're,|
+    r  re mi re |
+    r sol re'sol,
+    r sol la sol r sol | sol' r r2
+    R1 R2.*3 R2 solb,,2.~ solb2. r4 R1*3
 	}
 }
 

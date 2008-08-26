@@ -70,6 +70,45 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     si!8 si lad lad si si | 
     lad lad si si lad lad si si |si1 
     lab2.~ lab~ lab4 r2 R1 |
+    
+    %%% Piu vivo %%%
+    <sol sol'>4 sol16 sol sol sol lab lab lab lab |
+    sib sib sib sib reb reb reb reb mib mib mib mib mi mi mi mi |
+    fad fad fad fad la la la la si si si si |
+    do4 re, dod, |
+    sol'2 sol4 sol | dod,4. dod8 dod dod |
+    sol'2 r8 sol sol sol | dod,4. dod8 \t {dod dod dod} |
+    sol'4 sol2 r4 |
+    dod,4 r8 sib' lab si |
+    sol4 sol sol |
+    sol \tt {si'16 sold fad red dod} \tt {fad red dod do sib} |
+    sol4 r sol |
+    si \tt {re'16 dod si sold fad} \tt {sold fad fa mib do} |
+    sib4 r sib |
+    re r2 | re4 re re | re r2 | re4 re re | re r2 | re4 re re |
+    dod r2 | dod4 dod dod | fa,1~ fa2 r4 si~ | si8 do4. dod2 |
+    
+    %%% Tempo giusto %%%
+    <re, sib'>4 <re sib'> <re sib'> <re sib'> |
+    <re sib'> <re sib'> <re sib'> <re sib'> |
+    <dod la'> <dod la'> <dod la'> <dod la'> |
+    <red si'> <red si'> <red si'> <red si'> |
+    \pizz sol r8 \arco sib4 lab si8 |
+    <sol sol'>2 r4 | \repeat unfold 32 sol16
+    sol8 r r2 |
+    r4 \t {re'8 si dod} |
+    \repeat unfold 28 sold16
+    sold8 r r sold fad la |
+    fa2 fa4. fa8 
+    <fa fa'>2 | <fa fa'> |
+    r8 la sol sib |
+    fad4. fad8 | fad4. fad8 <fad re'>4\glissando \clef tenor |
+    <fad'' la>8 r r2 |
+    
+    %%% Largo assai %%%
+    R1 R2.*3 R2
+    solb2.~ solb2. r4 | 
+    r2 \pizz fa'4 mi | mib r sib r | re, r r2 |
 	}
 }
 

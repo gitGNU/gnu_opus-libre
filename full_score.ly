@@ -7,7 +7,7 @@
 
 %%% This is the main file for the full (orchestral) score.  This version
 %%% is (obviously) not ready yet; please compile vocal_score.ly instead...
-\version "2.11.52"
+\version "2.11.56"
 %% This opéra has been coded on over several years, from version 2.9 
 %% to 2.12 -- some inconsistencies may remain through the code.
 
@@ -124,7 +124,7 @@ Prologue = {
     \new PianoStaff \ProloguePiano
   >>
 }
-
+%{
 ActeUnSceneUn = {
   <<
     \new TopLine \ActeUnSceneUnMesures
@@ -248,7 +248,7 @@ ActeUnSceneUnBis = {
     \new PianoStaff \ActeUnSceneUnBisPiano
   >>
 }
-
+%}
 ActeUnSceneDeux = {
   <<
     \new TopLine \ActeUnSceneDeuxMesures
@@ -310,7 +310,7 @@ ActeUnSceneDeux = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-
+showLastLength = s1*49
 \book {
   \header {
 	  title = \OperaTitre
@@ -325,25 +325,25 @@ ActeUnSceneDeux = {
     \header {
       piece = \PrologueTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %{
+  } %
   \score {
       \ActeUnSceneUnBis
       \header {
         piece = \Separateur
       }
-  } %
+  } %}
   \score {
     \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneTrois
     \header {

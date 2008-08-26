@@ -80,7 +80,10 @@ ActeUnSceneDeuxPiano = { \Piano
 		R2. \clef treble | r4 r8 #(set-octavation 1) fa''''! sol,!4 | #(set-octavation 0)
 		r4 r8 #(set-octavation 1) fa' do sol sold re | do' sol re sold la,4 #(set-octavation 0) r | R2.*2 |
 		r4 #(set-octavation 1) fa'' #(set-octavation 0) r2 R1 | R2.*2 | r8 #(set-octavation 1) fa do sol fad' si, mi,4 | #(set-octavation 0) R1 | R2. |
-		r8 #(set-octavation 1) fa'! do sol lad'4 | red,4 #(set-octavation 0) r r2 | r2 #(set-octavation 2)
+		r8 #(set-octavation 1) fa'! do sol lad'4 | red,4 #(set-octavation 0) r r2 |
+    
+    %FIXME: line breaks make the "15ma" text move to the left.
+    r2 #(set-octavation 2)
 		sol!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
 		sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
 		si4 do fa, | si8 sol fa sol si4 | si8 do si sol fa sol si do |

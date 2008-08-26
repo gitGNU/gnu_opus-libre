@@ -99,12 +99,59 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
 		re! sol, do, re' sol, do, | 
     re' sol, do, re' sol, re' |
 		R2. R1 |
+    
+    %%% Piu vivo %%%
+    sol,,16 sol sol, sol sol' sol sol, sol sol' sol sol, sol |
+    sol' sol sol, sol sol' sol sol, sol sol' sol sol, sol sol' sol sol, sol |
+    fad' fad sol, sol fad' fad sol, sol mi' mi sol, sol |
+    mi' mi sol, sol dod dod sol sol dod dod sol sol |
+    <sol sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
+    dod2 r4 |
+    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
+    dod2 r4 |
+    sol4 sol \t {mi' re fa} |
+    dod2 \tt {sib16 la lab sib si} |
+    sol4 r2 |
+    \pizz <sol re' la'>4 <sol re' la'> <sol re' la'> <sol re' la'> r2 |
+    si4 si si | sib r2 |
+    \arco re4 r8 re r16 re re8 |
+    re4 \tt {sib16 dod red mi fad } \tt { mi fad la si do } |
+    re4 \tt {sib,16 do reb mib fad} \tt {mib fad sold la si}|
+    re4 \tt {sib,16 si dod mi fad } \tt { mi fad sol la do} |
+    re4 \tt {sib,16 do mib fa solb} \tt {fa solb lab si dod}|
+    re4 \tt {do,16 mib fa fad sold} \tt {fad sold si re dod}|
+    mi4 \tt {mib,16 fa fad sold si} \tt {sold si re dod mi} |
+    sol4 \ttt {si,16 si re re dod dod} \ttt {sol' sol mi mi la la} |
+    
+    %%% Poco allargando %%%
+    sib2. la4~|la4. sol8~sol2 | mi re4 r |
+    %%% Tempo giusto %%%
+    dod16 re, re re dod re re re dod' re, re re dod re re re |
+    re' re, re re re re re' re, re' re, re re re re re' re, |
+    mi' mi, mi mi mi mi mi' mi, mi' mi, mi mi mi mi mi' mi, |
+    sol' sib, sib sib sib sib sol' sib, sol' sib, sib sib sib sib re sib |
+    si' mib, mib mib do mib mib mib si' mib, mib mib fa fa sold sold |
+    dod2 r4
+    <mi, la\harmonic mi''>1~ <mi la\harmonic mi''>~ <mi la\harmonic mi''>4 r2
+    R2
+    <mi la\harmonic mi''>2~ <mi la\harmonic mi''>~ <mi la\harmonic mi''>2.~
+    <mi la\harmonic mi''>8 r \tt {dod,16 mi fad la si} \tt {la si re mi sol}|
+    <la, la'>4 <la la'> <la si'> <la si'> |
+    <la la'> <la la'> <la si'> <la si'> |
+    <la la'>16 re, sol la re mi sol la |
+    <mi re'>4 <mi re'> <re mi'> <re mi'>
+    <mi re'> \pizz <sol mi'>8 r r2 |
+    
+    %%% Largo assai %%%
+    R1 R2.*3 R2
+    \arco sib,,2.~ sib2. r4 | 
+    r2 \pizz la'4 sold | sol r dod, r | re r r2 |
 	}
 }
 
 ActeDeuxSceneUnViolonUn = { \ViolonUn
   \relative	{
-		<la' re\harmonic la''~>2. 
+		<la' re\harmonic la''>2. ~
     \simile la''2.~ la2.~ la2.~ la2~ 
     la2.~ la2.~ la2~ la2.~ la2.~ la2.~ la4 r |
     R2. R2 | R2.*2 | R2 | 

@@ -59,11 +59,15 @@ ActeUnSceneDeuxPercus = {\Marimba
 	r sold la re, mi4\laissezVibrer| R1 | r2 r4 fad | si2\laissezVibrer r4 | R2. |
 	re,4 si' sold8 fad re4 | fad8 re si' sold r fad sold4 |
 	fad re8 si' sold4 | si8 sold fad re r4 | R1*2 R2.*2 | \clef treble
-	re''4 <la' re> sold8 mi re4 | mi8 re' la sold r mi <sold re'>4 |
-	mi8 re' re, la' sold4 | la8 sold mi re r4 |
-	fa8 sol! <si sol'>4 do fa,8 do' | r <fa, sol'> sol si do4 <si sol'>8 fa |
-	sol4 <si sol'> do8 sol | r si <do sol'> fa, sol4 | <do sol'>4 si8 sol fa4 <do' sol'> | si8 sol fa4 <do' sol'> si8 sol |
-	fa4 r2 R2. | R1*2 R2.*2 R1*2 | R2.*2 R1*2 |
+	\pl re4\laissezVibrer re'' <la' re> sold8 mi re4 | mi8 re'16 re,, la''8 sold 
+  \pl re,,4 {r8 mi''} <sold re'>4 |
+	mi8 re'16 re,, re'8 la' \pl {r re,,,} sold''4 | la8 sold mi <re, re'> r4 |
+	\pl sol,\laissezVibrer {fa''8 sol!} <si sol'>4 do8 sol,, fa'' do' | 
+  r <fa, sol'> sol si do16 sol,, sol sol <si'' sol'>8 fa |
+	sol sol,, <si'' sol'>4 do8 sol | r si <do sol'> fa, sol sol,, |
+  <do'' sol'>4 si8 sol fa8 sol,,16 re' <do'' sol'>4 | 
+  si8 sol fa8 sol,,16 re' <do'' sol'>8 do, <si si'> <sol sol'> |
+	<fa fa'>4 r2 R2. | R1*2 R2.*2 R1*2 | R2.*2 R1*2 |
 	\clef bass dod,,4 fad2\laissezVibrer | R2. | \repeat tremolo 32 sold,32\laissezVibrer |
 		%%% Vibraphone %%%
 	R1 R2.*2-\markup "Allez au Vibraphone" \Vibraphone |

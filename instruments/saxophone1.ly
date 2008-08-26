@@ -44,7 +44,33 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 		
 		R2. R1 R2. R1 r2 r8 re | mi4 r r2 | R2. r4 r16 re re re sol2 |
 		r4 r16 lab lab lab reb4~| reb r | R2 R2. R1*2 R2. 
-		mi,,2. | fad r4 lad2 si | sold2.~ sold~ sold4 r2 R1 | 
+		mi,,2. | fad r4 lad2 si | sold2.~ sold~ sold4 r2 | r2 r8 sib'4. |
+    
+    %%% Piu vivo %%%
+    sol,4 r2 | R1 R2.*2 R1
+    r4 re''do re8 la~ la4 r2|
+    r4 re  do do8 si~ si4 r2|
+    r4 re  do si8 mi~ mi4 r | R2.
+    r4 mi  re si8 mi~ mi4 r |
+    r mi re mi8 sold~sold4 r|
+    R2.*2
+    r16 sib, r8 r2 |
+    R2.*2
+    r4 r16 dod r8 r4 | R2.
+    
+    %%% Poco allargando %%%
+    \t {fa,4 fa fa}
+    \t {fad fad fad}
+    \t {sol sol sol}
+    sold2 red dod |
+    %%% Tempo giusto %%%
+    re4 r r2 | R1*4 R2.
+    sol,1~ sol4 \t { sol8 sol sol} sol2~ | sol8 r r2 |
+    R2 dod2~ | dod dod2.~ dod8 r r2 |
+    r4 r8 si | mi si r si re si r si mi si r la |
+    sol' mi si sol' la4 r8 mi la mi r mi si' la |
+    sol' r r2 |
+    R1 R2.*3 R2 R2. R1*4
 	}
 }
 

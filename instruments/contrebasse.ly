@@ -54,6 +54,30 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 		reb4 dob sib | dob sib lab sib | 
     dob sib lab fa | dob' r8 sib r4 |
 		mi,2.~| mi r4| mi'1 | reb2.~|reb~|reb4 r2 | R1 |
+    
+    %%% Piu vivo %%%
+    sol,2.~ | sol1~ sol2 r4 | R2.
+    sol2 sol4 sol dod4. dod8 dod dod |
+    sol2 r8 sol sol sol | dod4. dod8 \t {dod dod dod} |
+    sol4 sol2 r4 |
+    dod4 r8 sib lab si |
+    sol4 sol sol sol r2 | sol4 sol sol si r2 |
+    sib4 sib sib | re r2 | re4 re re re r2 | re4 re re re r2 re4 re re |
+    dod r2 dod4 dod dod fa,1~ fa2 r4 si~ | si8 do4. dod2 |
+    
+    %%% Tempo giusto %%%
+    \pizz re4 re re re re re re re |
+    dod dod dod dod si si si si | si r r2 |
+    \arco <sol sol'>2 r4 |
+    \repeat unfold 16 sol8 |
+    sol r r2 | r4 \t { re'8 si do} |
+    \repeat unfold 14 sold |
+    sold r r sold fad la |
+    fa2~fa4. fa8 |
+    fa2~ fa |
+    r8 la sol sib |
+    fad2~ fad2. \pizz la'8\CaV r r2
+    R1 R2.*3 R2 R2. R1*4
 	}
 }
 

@@ -44,7 +44,7 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 		R1 | re,8 fa sold si sold si sold fad |
 		re r r2 | re8 fad sold4 r |
 		R1*2 |
-		dod,8 fad sold si sold fad | dod4 r2 |
+		dod,8 fad sold si sold fad | dod4 r8 sold' fad re |
 		dod1~ | dod2 r4 sold''8 la |
 		sold mi re si sold4 | R2. |
 		dod,1~ | dod2 r4 mi8 fa |
@@ -77,7 +77,49 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 		\repeat unfold 13 lab r
 		\repeat unfold 3  lab
 		\repeat unfold 3  {dod dod mi mi} sold r
-		\repeat unfold 2  {lad lad sold sold} do2.~ do~ do4 r2 R1 | 
+		\repeat unfold 2  {lad lad sold sold} do2.~ do~ do4 r2 
+    r2 r8 sib4. |
+    
+    %%% Piu vivo %%%
+    sol,4 r2 | R1 R2.*2 R1
+    r16 re''re re sol4 fa | sol8 fad,~ fad4 r2 |
+    r16 re're re sol4 fa | fa8  fad,~ fad4 r2 |
+    r16 mi'mi mi sold4 fad la8  sold~ sold4 r | R2.
+    r16 mi mi mi la4 sold| la8  sold~ sold4 r |
+    r16 la la la la4 sol | la8  sold~ sold4 r |
+    R2.*2 r16 re32 mi re8 r2 |
+    R2.*2 r4 r16 mi32 re r8 r4 |
+    r r8 re r4 |
+    
+    %%% Poco allargando %%%
+    \t {sib,sib sib}
+    \t {sib sib sib}
+    \t {sib sib sib}
+    \t {si8 r si4 si}
+    \t {dod dod dod}
+    \t {fad fad fad}
+    
+    %%% Tempo giusto subito %%%
+    re r r2 |
+    r4 re,8 re r2 |
+    r4 reb8 reb r2|
+    r4 mib8 mib r2|
+    r8 sol sol4 r2|
+    R2. re'2. fa'4 re,2. fa'4~| fa8 r r2 |
+    R2 re,,2~ re4 fad'| re,2. fad'8 r r2 |
+    r8 la re la
+    r sol re'sol,
+    r la re la
+    r sol re' la
+    r la re la
+    r mi'la mi
+    r re sol mi r re | fa r r2 |
+    
+    %%% Largo assai %%%
+    
+    %%TODO: doigté alternatif pour le sib?
+    r4 sib,2. | la4. r8 la4 | lab4. r8 lab4 sol4. r8 r4 | r sol |
+    solb2.~ solb2. r4 | r2 fa4 mi mib r la, r re, r r2 |
 	}
 }
 

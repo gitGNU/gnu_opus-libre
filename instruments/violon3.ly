@@ -93,6 +93,56 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
 		do do re'! sol, do, re' | 
     sol, do, re' sol, do, do |
 		R2. R1 |
+    
+    %%% Piu vivo %%%
+    <sol, sol'>2.~ <sol sol'>1
+    \repeat tremolo 4 sol16
+    \repeat tremolo 4 lab16
+    \repeat tremolo 4 sib16
+    \repeat tremolo 4 reb16
+    \repeat tremolo 4 mi16
+    \repeat tremolo 4 fad16
+    <sol,sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
+    dod2 r4 |
+    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
+    dod2 r4 |
+    sol4 sol \t {mi' re fa} |
+    dod2 \tt {sib16 la lab sib si} |
+    sol4 r2 |
+    \pizz sol4 sol sol sol r2 |
+    si4 si si | sib r2 |
+    \arco re4 r8 re r16 re re8 |
+    re4 \pizz sib8 mib mi la |
+    \arco <re, re'>4 \pizz sib8 mib fad si |
+    \arco <re, re'>4 \pizz sib8 mib sold dod |
+    \arco <re, re'>4 \pizz sib8 fad' mi sold |
+    \arco <re  re'>4 \pizz do8 fa fad si |
+    \arco <mi, mi' mi>4 \pizz red8 sold si mi |
+    \arco <sol,, sol' sol'>4 \tt {mi'16 fa sol sib do} \tt {dod re mi sol la} |
+    
+    %%% Poco allargando %%%
+    <re, sib'>2. re4~ | re4. <sol, mi'>8 ~ <sol mi'>2 si la4 r |
+    %%% Tempo giusto %%%
+    re,16 re dod dod sib sib dod dod re re dod dod sib sib dod dod |
+    re re sib sib re re sib sib re re sib sib re re sib sib |
+    fa' fa mi mi do do mi mi fa fa mi mi do do mi mi |
+    fad fad re re sib sib re re fad fad re re fad fad re re |
+    sol sol mi mi si si mi mi sol sol si si la la do do |
+    dod2 r4 |
+    <sol, fa' sib\harmonic fa''>1~ <sol fa' sib\harmonic fa''>~ <sol fa' sib\harmonic fa''>4 r2
+    R2
+    <fa' sib\harmonic fa''>2~ <fa sib\harmonic fa''>~ <fa sib\harmonic fa''>2.~
+    <fa sib\harmonic fa''>8 r dod16 mi fad la si re mi sol |
+    <re, re' mi>4 <re re' mi> <sol la mi'> <sol la mi'> |
+    <re re' mi> <re re' mi> <sol la mi'> <sol la mi'> |
+    <la la'>8 mi16 sol si re mi sol |
+    <re, sol' la>4 <re sol' la> <sol la mi'> <sol la mi'> <sol' la>
+    \pizz <fa sol>8 r r2 |
+    
+    %%% Largo assai %%%
+    R1 R2.*3 R2
+    \arco sib,,2.~ sib2. r4 | 
+    r2 \pizz fa'4 mi | mib r la, r | re r r2 |
 	}
 }
 

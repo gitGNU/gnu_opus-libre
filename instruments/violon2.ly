@@ -96,6 +96,53 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
 		sol re' sol, do, re' sol, | 
     do, re' sol, do, re' sol, |
 		R2. R1 |
+    
+    %%% Piu vivo %%%
+    sol,,16 sol sol' sol sol, sol sol' sol sol, sol sol' sol |
+    sol, sol sol' sol sol, sol sol' sol sol, sol sol' sol sol, sol sol' sol |
+    sol, sol fad' fad sol, sol fad' fad sol, sol mi' mi |
+    sol, sol mi' mi sol, sol dod dod sol sol dod dod |
+    <sol sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
+    dod2 r4 |
+    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
+    dod2 r4 |
+    sol4 sol \t {mi' re fa} |
+    dod2 \tt {sib16 la lab sib si} |
+    sol4 r2 |
+    \pizz <sol re'>4 <sol re'> <sol re'> <sol re'> r2 |
+    si4 si si | sib r2 |
+    \arco re4 r8 re r16 re re8 |
+    re4 \tt {sib16 dod red mi fad } \tt { mi fad la si do } |
+    re4 \tt {sib,16 do reb mib fad} \tt {mib fad sold la si}|
+    re4 \tt {sib,16 si dod mi fad } \tt { mi fad sol la do} |
+    re4 \tt {sib,16 do mib fa solb} \tt {fa solb lab si dod}|
+    re4 \tt {do,16 mib fa fad sold} \tt {fad sold si re dod}|
+    mi4 \tt {mib,16 fa fad sold si} \tt {sold si re dod mi} |
+    sol4 \ttt {si,16 si re re dod dod} \ttt {sol' sol mi mi la la} |
+    
+    %%% Poco allargando %%%
+    sib2. la4~|la4. sol8~sol2 | mi re4 r |
+    %%% Tempo giusto %%%
+    sib16 re, re re sib re re re sib' re, re re sib re re re |
+    sib' re, re re sib re sib' re, sib' re, re re sib re sib' re, |
+    do' mi, mi mi mi mi do' mi, do' mi, mi mi mi mi do' mi, |
+    re' fad, fad fad re fad fad fad re' fad, fad fad re sib' sol' sib, |
+    sold' do, do do mi, do' do do mib sol sol sol reb reb mi mi |
+    <dod dod'>2 r4
+    <mi si'\harmonic si'>1~ <mi si'\harmonic si'>~ <mi si'\harmonic si'>4 r2
+    R2
+    <mi si'\harmonic si'>2~ <mi si'\harmonic si'>~ <mi si'\harmonic si'>2.~
+    <mi si'\harmonic si'>8 r \tt {dod,16 mi fad la si} \tt {la si re mi sol}|
+    <sol, la mi'>4 <sol la mi'> <re' mi> <re mi> |
+    <sol, la mi'> <sol la mi'> <re' mi> <re mi> |
+    re16 re, sol la re mi sol la |
+    <re,, la' re'>4 <re la' re'> <re sol' la> <re sol' la> <re la' re'> 
+    \pizz <fa' mi'>8 r r2 |
+    
+    %%% Largo assai %%%
+    R1 R2.*3 R2
+    \arco sib,,2.~ sib2. r4 | 
+    r2 \pizz la'4 sold | sol r dod, r | re r r2 |
 	}
 }
 

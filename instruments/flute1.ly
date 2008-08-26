@@ -88,6 +88,37 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
     R1 red,,4 mi red mi sol la sol la sol r4 | r8.
 		\t {fa'32 mi re } si8  r8 r8
 		\t {la16 sold fad} red8 r8 r4 r2 |
+    
+    %%% Piu vivo %%%
+    R2. R1 R2.
+    r4 r8 r16 mib la re sold dod | sol'4 r r2 |
+    r4 sol,, la | do8 re~ re4 r2 |
+    r4 sol,  do | re8 fa,~fa4 r2 |
+    r4 re'   mi | la8 re~ re4 r  | R2.
+    r8 mi mi,4 sold la8 re~re4 r |
+    r16 la la la re4 do re8 sol~ sol4 r |
+    R2.*6-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
+    r4 r8 fa,, r4 |
+    
+    %%% Poco allargando %%%
+    re'1~ re2 sol mi re |
+    %%% Tempo giusto subito %%%
+    sib4 r r2 | R1*3
+    r2 r8 si la do | dod2 r4 |
+    sol,2 r8 fa' mi'4~| 
+    mi8 r r4 r8 fa, mi'4~| mi8 r r2 |
+    \tt { r16 sold,, si re mi }
+    \tt { sol sib do mib solb }
+    lab2 r8 fa, mi'4~ | mi8 r r4 fa, |
+    mi'8 r r2 |
+    r8 mi, la mi |
+    r  mi si' mi,|
+    r  mi  la mi |
+    r  mi si' mi,|
+    r  mi  la mi |
+    r  la la' la,|
+    r  la mi' la, r la | la' r r2 |
+    R1 R2.*3 R2 sib,,2.~ sib2. r4 R1*3
 	}
 }
 
