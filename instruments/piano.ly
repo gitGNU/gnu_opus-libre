@@ -72,18 +72,18 @@ ActeUnSceneDeuxPiano = { \Piano
 		\repeat unfold 6 {R2.*2 R1*2} R2. | \clef bass
 		dod,8 re fad sold fad re | dod1~ dod~ | dod2 r4 | re fad8 sold fad4 | 
 		mi8 fa la si la fa mi fa | la si la4 fa8 la si re | si4 la8 si re fa |
-		\clef treble re4 fa8 sol si do | #(set-octavation 1) si''8 do si sol fa sol si4 | 
+		\clef treble re4 fa8 sol si do | \ottava #1 si''8 do si sol fa sol si4 | 
 		si8 do si sol fa sol si do | si do si sol fa sol | fa re si re la4 |
-		#(set-octavation 0)
+		\ottava #0
 		<lab, lab'>1 ~ <lab lab'>2. r4 | R2.*2 R1*2 |
 		R2. lab8 re, do lab s4 \clef bass | r4 <re, sold>2.\arpeggio \laissezVibrer R1 |
-		R2. \clef treble | r4 r8 #(set-octavation 1) fa''''! sol,!4 | #(set-octavation 0)
-		r4 r8 #(set-octavation 1) fa' do sol sold re | do' sol re sold la,4 #(set-octavation 0) r | R2.*2 |
-		r4 #(set-octavation 1) fa'' #(set-octavation 0) r2 R1 | R2.*2 | r8 #(set-octavation 1) fa do sol fad' si, mi,4 | #(set-octavation 0) R1 | R2. |
-		r8 #(set-octavation 1) fa'! do sol lad'4 | red,4 #(set-octavation 0) r r2 |
+		R2. \clef treble | r4 r8 \ottava #1 fa''''! sol,!4 | \ottava #0
+		r4 r8 \ottava #1 fa' do sol sold re | do' sol re sold la,4 \ottava #0 r | R2.*2 |
+		r4 \ottava #1 fa'' \ottava #0 r2 R1 | R2.*2 | r8 \ottava #1 fa do sol fad' si, mi,4 | \ottava #0 R1 | R2. |
+		r8 \ottava #1 fa'! do sol lad'4 | red,4 \ottava #0 r r2 |
     
     %FIXME: line breaks make the "15ma" text move to the left.
-    r2 #(set-octavation 2)
+    r2 \ottava #2
 		sol!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
 		sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
 		si4 do fa, | si8 sol fa sol si4 | si8 do si sol fa sol si do |
@@ -91,8 +91,8 @@ ActeUnSceneDeuxPiano = { \Piano
 		si8 do si sol fa4 si8 do | si sol fa sol si4 si8 do |
 		si sol fa4 si8 do | si sol fa sol si4 |
 		si8 do si sol fa4 si8 do | si sol fa sol si4 r |
-		si8 do si sol fa4\laissezVibrer #(set-octavation 0) | R2. R1 | r2
-		#(set-octavation 1) <si,, dod lad'>2\fermata #(set-octavation 0) | 
+		si8 do si sol fa4\laissezVibrer \ottava #0 | R2. R1 | r2
+		\ottava #1 <si,, dod lad'>2\fermata \ottava #0 | 
 		
 		%%% Récitatif %%%
 		}
@@ -112,10 +112,10 @@ ActeUnSceneDeuxPiano = { \Piano
 		R2. << {s2 sol''8 re s1 s1 dod8 re fad2~ fad r4 s1 s2.} \\ 
 		{R2. <sold,, sold'>1~ <sold sold'>~ <sold sold'>2.~ <sold sold'>~ 
 		<sold sold'>1~ <sold sold'>2.}>> r4 R2.*2 R1*2 R2.*2 R1*2 R2.*2 \clef treble
-		<re''' la'>1\laissezVibrer r2 #(set-octavation 1)
+		<re''' la'>1\laissezVibrer r2 \ottava #1
 		sol''!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
 		sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
-		si4 do fa, | si8 sol fa4 si8 fa | sol1~|sol2. #(set-octavation 0) r4 | R2.*2 |
+		si4 do fa, | si8 sol fa4 si8 fa | sol1~|sol2. \ottava #0 r4 | R2.*2 |
 		R1*2 |R2.*2 | R1*2 | R2.*2 | R1 r2 <la,,! do!>2\fermata |
 		
 		%%% Récitatif %%%

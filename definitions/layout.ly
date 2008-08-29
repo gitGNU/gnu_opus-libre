@@ -120,8 +120,8 @@ includeLayout = \layout {
     \consists "Dynamic_engraver"
     \consists "Skip_event_swallow_translator"
     \consists "Piano_pedal_engraver"
-    %\consists "Bar_engraver"
-    %\override BarLine #'transparent = ##t
+    \consists "Bar_engraver"
+    \override BarLine #'transparent = ##t
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     \override TextScript #'font-size = #2
     \override TextScript #'font-shape = #'italic

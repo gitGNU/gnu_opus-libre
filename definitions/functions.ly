@@ -203,7 +203,7 @@ gauche = { \change StaffPiano = "gauche" }
     ((be  * * 5 8) . ,(ly:make-moment 1 8))
     ((end * * 5 8) . ,(ly:make-moment 5 8))
     )))
-    
+
 #(define modern-style
   `(Staff ,(make-accidental-rule 'same-octave 0)
           ,(make-accidental-rule 'any-octave 0)
@@ -237,21 +237,42 @@ hideNote = {
     (interpret-markup layout props
     (markup #:whiteout #:small #:italic arg)))
 
-cmb = 
-#(define-music-function (parser location nuance texte ) 
-(string? string? )
-(make-dynamic-script 
-              (markup #:dynamic nuance 
-              #:hspace .6
-              #:text #:medium #:upright texte )))
+%FIXME: because of the use of a music-function,
+% Composite dynamics have to be entered *before*
+% the affected beat (unlike standard dynamics).
+cmb =
+#(define-music-function (parser location dyn str) (string? string?)
+  (make-music 'SequentialMusic 'elements 
+    (list
+      (make-music 'OverrideProperty
+                  'symbol 'DynamicText
+                  'grob-property-path (list 'self-alignment-X)
+                  'grob-value -0.6 'once #t)
+      (make-music 'AbsoluteDynamicEvent 
+                  'text
+                  (markup #:dynamic dyn
+                          #:hspace .5
+                          #:text #:medium #:upright str)))))
 
 bmc =
-#(define-music-function (parser location texte nuance ) 
-(string? string? )
+#(define-music-function (parser location str dyn) (string? string?)
+  (make-music 'SequentialMusic 'elements 
+    (list
+      (make-music 'OverrideProperty
+                  'symbol 'DynamicText
+                  'grob-property-path (list 'self-alignment-X)
+                  'grob-value -0.6 'once #t)
+      (make-music 'AbsoluteDynamicEvent 
+                  'text
+                  (markup #:text #:medium #:upright str
+                          #:hspace .5
+                          #:dynamic dyn)))))
+
+nind =
+#(define-music-function (parser location texte) 
+(string? )
 (make-dynamic-script 
-              (markup #:text #:medium #:upright texte 
-              #:hspace .6
-              #:dynamic nuance )))
+              (markup  #:text #:indic texte)))
 
 ten = 
 #(define-music-function (parser location music) (ly:music?)
