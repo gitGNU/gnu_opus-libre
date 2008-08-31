@@ -33,6 +33,46 @@ PrologueAltoDeux = { \AltoDeux
     }
 }
 
+ActeUnSceneUnBisAltoDeux = { \AltoDeux
+  \relative {
+    R2.*5
+    \ttt {re,16 dod mi fa mi sol} lab8 r
+    \ttt {re16 dod mi fa mi sol} |lab8 r
+    sold16 fa sold lad sold lad si dod |
+    
+    %%% Piu vivo %%%
+    re4  re, re,2 | mib r4 |
+    re''4 r8 re,,~re2 | dod'2 r4 |
+    si'4. si | fa <dod mi> |
+    <sold fa'> <fa fa'> | <fa fa'>2.
+    R2. r4 <re'sol\harmonic re''>2~ <re sol\harmonic re''>4. r8\fermata r4 |
+    R2. r4 <re sol\harmonic re''>2~ <re sol\harmonic re''>~
+    <re sol\harmonic re''>8 r\fermata r4 | R1 R2
+    
+    %%% Largo %%%
+    R2*3 R2.
+    r4 mib, mi2. |
+    fa2~fa4 r2 |
+    mi2. mib4 r r2 |
+    R1 R2. R2 R1 R2.*2 R2*2 R2. R2*3 R2. R1 R2.
+    r4 sib <mib, sib'>2~<mib sib'>
+    <fad la>2. r2 <fad la>4 |
+    <mi sold>2.
+    
+    %%% Adagio %%%
+    R1*14
+    r2 mi'~mi1
+    <mi la>~<mi la>~<mi la>~<mi la>~<mi la>~
+    <mi la>~<mi la>~<mi la>~<mi la>~<mi la>~
+    <mi la>4 r <mi la> <mi la> |
+    <mi la> <mi la> r2 |
+    r4 <mi la> <mi la> <mi la> |
+    <mi la> r r2 | R1*3
+    R2 \pizz <dod lad'>4 <la re> <lab re> r |
+    r \arco <mi si'>
+  }
+}
+
 ActeUnSceneDeuxAltoDeux = { \AltoDeux
 	\relative { 
 		%%% Air de la Soprano2 %%%

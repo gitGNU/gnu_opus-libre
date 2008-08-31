@@ -23,6 +23,31 @@ PrologueSaxophoneUn = { \SaxAltoUn
   }
 }
 
+ActeUnSceneUnBisSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R2.*7
+    re'4 r r2 | r4 fad,,2 |
+    re'4 r r2 | r4 sib2 |
+    re8 r fa'2 | si, dod,4~| dod do2 | R2.*2
+    fa2.~fa4. r8\fermata r4 | R2.
+    fa2.~fa2~fa8 r\fermata r4 | R1 R2
+    
+    %%% Largo %%%
+    R2*3 R2. R2 R2. R2 R2.*2
+    r2 r4 sib | sol2 r4 sib | sol2 r4
+    r la, si2 r |
+    R2.*2 R2*2 
+    r2 r8 sib' | sol4 r8 sib | sol2 |
+    r8 sol r4 | r8 sol sib r r4 |
+    r2 r8 sol sib reb |
+    R2. R2*3 R2.*3
+    
+    %%% Adagio %%%
+    R1*33
+    R2*4
+  }
+}
+
 ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 	\relative { 
 		%%% Air de la Soprano2 %%%

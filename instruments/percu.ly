@@ -49,6 +49,56 @@ ProloguePercus = {<<
 	} >>
 }
 
+ActeUnSceneUnBisPercus = {
+  \new Staff { \Timbales
+    \relative {
+      %FIXME: stupid, stupid, stupid... use short notation!
+      \repeat tremolo 24 dod,32
+      \repeat tremolo 24 dod32
+      \repeat tremolo 24 dod32
+      \repeat tremolo 24 dod32
+      \repeat tremolo 24 dod32
+      \repeat tremolo 16 dod32 dod8 r |
+      r re4 re8 \t { re re sold,} |
+      
+      %%% Piu vivo %%%
+      re'4 r r2 | \repeat tremolo 24 sold,32 |
+      re'4 r r2 | \repeat tremolo 24 sold,32 |
+      <sol re'>4 r8 \t {sol16 sol sol} sol4  |
+      r sol32 sol8.. r4 | \t {sol16 sol sol~} sol8 r4 reb' |
+      sol, r2 |
+      sol8  reb'~reb4~ \repeat tremolo 8 reb32 reb4\laissezVibrer r2 R2.-\fermataMarkup
+      sol,8 reb'~reb4~ \repeat tremolo 8 reb32 reb4\laissezVibrer r2 R1-\fermataMarkup 
+      R1 \stopStaff s2
+      
+      %%% Largo %%%
+    }
+  }
+  \new DrumStaff { \Percus
+    \new DrumVoice \drummode {
+      R2*3 R2. R2 R2. R2 R2.*2
+      r2 r4 \ind #"Tambour" sn |
+      sn32 sn8.. r4 r8.. sn32 sn8.. sn32 |
+      sn4 r2 R2 R1
+      R2.*2 R2*2
+      r2  r8 \t {sn16 sn sn} |
+      sn4 r8 \t {sn16 sn sn} |
+      sn32 sn8.. r4 |
+      r8 sn r4 |
+      r8 sn16. sn32 sn4 r |
+      r2 r8 sn32 sn sn sn sn sn sn sn sn8 |
+      R2. \stopStaff s2*3 s2.*3
+    }
+  }
+  \new Staff { \Vibraphone
+    \relative {
+      r4 <mi si'> <mi si'> <mi si'> |
+      \repeat unfold 124 <mi si'>
+      <mi si'>\fermata \laissezVibrer r r2 | R2*4
+    }
+  }
+}
+
 ActeUnSceneDeuxPercus = {\Marimba 
 	\relative {\clef bass
 	%%% Air de la Soprano2 %%%

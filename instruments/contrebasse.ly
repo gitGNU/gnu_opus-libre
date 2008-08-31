@@ -29,6 +29,42 @@ PrologueContrebasse = { \Contrebasse
   }
 }
 
+ActeUnSceneUnBisContrebasse = { \Contrebasse
+  \relative {
+    dod,,2.
+    <dod sold'>~<dod sold'>2 r4 |
+    sib16 lab si sol sib lab si sol sib lab si sol |
+    dod re mi sol dod,8 r dod16 re mi sol |
+    dod,re mi sib sol la sib mi dod re mi sol, |
+    lab8 lab16 lab fa8 fa'16 fa mib8 mib16 mib |
+    
+    %%% Piu vivo %%%
+    re4 r r8 do sol la | fad2 \t {sol8 la do} |
+    re4 r r8 mib lab, fa| sib4. lab |
+    sol2.~sol~ sol4 r reb' | sol2. |
+    R2. r4 reb'2~ reb4. r8\fermata r4 |
+    R2. r4 reb2~reb~reb8 r\fermata r4 | r2 r4 fad,, sol la |
+    
+    %%% Largo %%%
+    do2 do~ do~ do2.~
+    do2~ do2.~ do2~ do2.~
+    do4 do2 do4 r r2 |
+    R1 R2. R2 R1 R2.*2 R2*2 R2. R2*3 R2. R1 R2.
+    R2*3 R2.*3
+    
+    %%% Adagio %%%
+    R1*9
+    r2 r4 r8 <sol' si\harmonic si''>~ |
+    <sol si\harmonic si''>1~<sol si\harmonic si''>2. r4 |
+    R1 sib8 lab si sol~sol2~ |
+    sol4 sib sol2~
+    sol4 sol, fa sold |
+    mi1~mi~mi~mi2 r | R1*13
+    R2 \pizz re''4 sold, fa r
+    r \arco dod
+  }
+}
+
 ActeUnSceneDeuxContrebasse = { \Contrebasse
 	\relative {
 		%%% Air de la Soprano2 %%%

@@ -57,10 +57,32 @@ ActeUnSceneUnPiano = { \Piano
 ActeUnSceneUnBisPiano = { \Piano
   \PianoDeuxMains
   \relative { \clef treble
+    R2.*6
+    \stemUp \gauche
+    \ttt { lab,16 sib reb mi sol do } \droite
+    \ttt { mib fa lab si dod mi} \ottava #1
+    \t { sol la do} re32 mib sold la \stemNeutral
+    <re, re'>4 \ottava #0 r8 re,,~re4 r |
     
   }
   \relative { \clef bass
-    
+    \ottava #-1
+    <dod,,, sold' dod>2.\laissezVibrer
+    \ottava #0
+    \loco <dod' dod'>2. dod4 dod8 dod \t {dod dod dod} |
+    \ottava #-1
+    <dod, dod'>2.
+    \pl {fa4 dod}
+    {\ttt {r16 lad' si dod mi sold} fa4 }
+    \ottava #0
+    \pl {fa4 dod}
+    {\ttt {r16 lad' si dod mi sold} fa4 }
+    r2 |
+    \stemDown
+    \ttt { lab,,16 sib reb mi sol do }
+    \ttt { mib fa lab si dod mi} \droite
+    \ttt { sol la do re mib sold} \gauche \stemNeutral
+    <re,,, re'>4 r8 re~re4 r |
   }
 }
 

@@ -185,9 +185,9 @@ oct = #(define-music-function (parser location mus) (ly:music?)
 
 %% Music layout ---------------------------------------------------%
 
-droite = { \change StaffPiano = "droite" }
+droite = { \change Staff = "droite" }
 
-gauche = { \change StaffPiano = "gauche" }
+gauche = { \change Staff = "gauche" }
 
 #(define modern-auto-beam-settings
   (append default-auto-beam-settings
@@ -306,6 +306,10 @@ arco =
 simile =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"simile" $music #})
+
+loco =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"loco" $music #})
 
 #(define (make-text-span music t)
  (set! (ly:music-property music 'elements)

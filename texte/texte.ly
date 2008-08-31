@@ -268,7 +268,7 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
   \set shortInstrumentName = \BarytonDeuxShortName
   
   Un é -- tran -- ger_! En nos murs_!
-  Un é -- tran -- ger_! Sous ce toît_!
+  Un é -- tran -- ger_! Sous ce toit_!
   Un é -- tran -- ger_! __ _ _
   \ital \dash "(Hm" -- \ital "hmm.)" Il faut… Il faut… Il faut…
   Co -- mment, le seul_?! 

@@ -29,6 +29,54 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
   }
 }
 
+ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    \repeat tremolo 24 dod,,32
+    dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
+    dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
+    dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
+    dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 r |
+    dod16 re mi sib' sol la sib mi dod re mi sol, |
+    \t {lab16 lab lab} lab8 \t {fa16 fa fa} fa8 \t {mib16 mib mib} mib8 |
+    
+    %%% Piu vivo %%%
+    re4 r r8 do' sol la | fad2 \t {sol8 la do} |
+    re4 r r8 mib, lab fa| sib4. lab |
+    sol2.~sol2 r4 |
+    <mib' fa>4. <re sib'> | re2. |
+    R2. r4 <la'mi'\harmonic mi'>2~ <la mi'\harmonic mi'>4. r8\fermata r4 |
+    R2. r4 <la mi'\harmonic mi'>2~<la mi'\harmonic mi'>~
+    <la mi'\harmonic mi'>8 r\fermata r4 | r2 r4 fad, sol la |
+    
+    %%% Largo %%%
+    do,2 do'~ do
+    lab2.~ <do, lab'>2~<do sol'>2.~
+    <do la'>2~ <do la'>4 r2 |
+    <do si'>2 <do si'>4 |
+    <do mib'>4 r r2 |
+    R1 R2. R2 r2 r8 lab'4. |
+    sib2.~ sib2 r4 |
+    re2 mib~ mib r4 |
+    R2*3 R2. R1 R2.
+    r4 sib8 lab | sol2~sol fad2. |
+    r2 si4 mi,2. |
+    
+    %%% Adagio %%%
+    R1*9
+    r2 r4 r8 <do mi\harmonic mi''>~ |
+    <do mi\harmonic mi''>1~ <do mi\harmonic mi''>~ |
+    <do mi\harmonic mi''>~<do mi\harmonic mi''>~
+    <do mi\harmonic mi''>2. r8 sol'~\CaV |
+    sol4 sol fa sold |
+    mi1~mi~mi~mi2 r | R1*8
+    r4 <do''mi> <do mi> <do mi> |
+    <do mi> r r2 |
+    R1*3
+    R2 \pizz <re, sold>4 <sold, red'> <fa reb'> r
+    r \arco <dod sold'>
+  }
+}
+
 ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
 	\relative {
     %%% Air de la Soprano2 %%%

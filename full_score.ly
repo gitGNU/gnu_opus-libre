@@ -186,7 +186,7 @@ ActeUnSceneUn = {
     \new PianoStaff \ActeUnSceneUnPiano
   >>
 }
-
+%}
 ActeUnSceneUnBis = {
   <<
     \new TopLine \ActeUnSceneUnBisMesures
@@ -215,8 +215,6 @@ ActeUnSceneUnBis = {
 
     \new ChoirStaff
       <<
-        \new Staff \new Voice = "soprano" \ActeUnSceneUnBisSopranoUn
-        \new Lyrics \lyricsto "soprano" { \ActeUnSceneUnBisSopranoUnTexte }
         \new Staff \new Voice = "barytonUn" \ActeUnSceneUnBisBarytonUn
         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneUnBisBarytonUnTexte }
         \new Staff \new Voice = "barytonDeux" \ActeUnSceneUnBisBarytonDeux
@@ -248,7 +246,7 @@ ActeUnSceneUnBis = {
     \new PianoStaff \ActeUnSceneUnBisPiano
   >>
 }
-%}
+
 ActeUnSceneDeux = {
   <<
     \new TopLine \ActeUnSceneDeuxMesures
@@ -310,7 +308,7 @@ ActeUnSceneDeux = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-showLastLength = s1*49
+%showLastLength = s1*49
 \book {
   \header {
 	  title = \OperaTitre
@@ -331,19 +329,19 @@ showLastLength = s1*49
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %
+  } %}
   \score {
       \ActeUnSceneUnBis
       \header {
         piece = \Separateur
       }
-  } %}
+  } %{
   \score {
     \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTrois
     \header {

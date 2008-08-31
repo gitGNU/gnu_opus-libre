@@ -14,6 +14,7 @@ includeLayout = \layout {
     \Staff
     \remove "Axis_group_engraver"
     \consists "Hara_kiri_engraver"
+    \remove "Time_signature_engraver" 
     \accepts "Lyrics"
     \override Beam #'auto-knee-gap = #'()
     \override VerticalAxisGroup #'remove-empty = ##t
@@ -29,6 +30,8 @@ includeLayout = \layout {
     \remove "Axis_group_engraver"
     \override VerticalAxisGroup #'remove-empty = ##t
     \consists "Hara_kiri_engraver"
+    \override StaffSymbol #'line-count = #1
+    drumStyleTable = #percussion-style
   }
   \context {
     \Score
@@ -40,11 +43,11 @@ includeLayout = \layout {
     \Score
     \override TimeSignature #'style = #'()
     \override SystemStartBracket #'collapse-height = #1
-    \override SystemStartBrace #'collapse-height = #1
+    %\override SystemStartBrace #'collapse-height = #1
     \override PaperColumn #'keep-inside-line = ##t
     \override NonMusicalPaperColumn #'keep-inside-line = ##t
     autoBeamSettings = #modern-auto-beam-settings
-    autoAccidentals = #modern-style
+    %autoAccidentals = #modern-style
     ignoreMelismata = ##t
   }
 
@@ -55,10 +58,11 @@ includeLayout = \layout {
     \consists "Output_property_engraver"
     \consists "Axis_group_engraver"
     \consists "Script_engraver"
-    \consists "Dynamic_engraver"
+    \consists "New_dynamic_engraver"
     \consists "Text_engraver"
     \consists "Text_spanner_engraver"
     \consists "Metronome_mark_engraver"
+    \consists "Time_signature_engraver" 
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
   }
   \context {
@@ -117,7 +121,7 @@ includeLayout = \layout {
     \alias Voice
     \consists "Output_property_engraver"
     \consists "Axis_group_engraver"
-    \consists "Dynamic_engraver"
+    \consists "New_dynamic_engraver"
     \consists "Skip_event_swallow_translator"
     \consists "Piano_pedal_engraver"
     \consists "Bar_engraver"

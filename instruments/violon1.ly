@@ -28,6 +28,41 @@ PrologueViolonUn = { \ViolonUn
   }
 }
 
+ActeUnSceneUnBisViolonUn = { \ViolonUn
+  \relative {
+    R2.*6
+    \ttt {lad'16 sold lad dod lad dod}
+    \ttt {mi dod mi fad mi fad }
+    \ttt {sol fad la sol do la } |
+    
+    %%% Piu vivo %%%
+    re4 re, re,2 | R2.
+    re''4 r8 re,,~re2 | R2.
+    <fa' re'>4 <fa re'>8 <fa re'>4 <fa re'>8 |
+    <mib re'>4 <mib re'>8 <dod re'>4 <dod re'>8 |
+    <fad re'>4 <fad re'>8 <si re>4 <si re>8 | <si re>2. |
+    R2. r4 fa,2~fa4. r8\fermata r4 |
+    R2. r4 fa2~ fa2~fa8 r\fermata r4 |
+    R1 R2
+    
+    %%% Largo %%%
+    R2*3 R2. R2 R2.
+    mi2~mi4 r2 |
+    mib2 mib4 <si sol'>4 r r2 |
+    R1 R2. R2
+    r2 r8 sib'4. |
+    sol2.~\CaV sol2\CaV r4 |
+    do2 re~\CaV re4\CaV r2 |
+    R2*3 R2. R1 R2.
+    r4 <sib, re> <sib mib>2~<sib mib>
+    <la red>2. r2 <la red>4 |
+    <sold mi'>2.
+    
+    %%% Adagio %%%
+    R1*33 R2*4
+  }
+}
+
 ActeUnSceneDeuxViolonUn = { \ViolonUn
 	\relative {
 		%%% Air de la Soprano2 %%%

@@ -40,6 +40,55 @@ ActeUnSceneUnFluteDeux = { \FluteDeux
 	}
 }
 		
+ActeUnSceneUnBisFluteDeux = { \FluteDeux
+  \relative {
+    R2.*6
+    \ttt {re16 dod re dod re dod}
+    \ttt { re mib fa lab sib si }
+    \ttt { dod mi fad sol la do } |
+    
+    %%% Piu vivo %%%
+    re4 r r2 | r4 \tt {re,,16 dod re dod mi } \tt { sol si mi sol sib } |
+    re4 r r2 | r4 \tt {re,,16 do re do mi } \tt { lab sib mib sol la } |
+    re8. re16 re8 re~ re16 re re8 |
+    re8. re16 re8 re r4 |
+    re8. re16 re8 re~ re16 re re8 | re4 r8 re4 re8 |
+    R2. mi,2.~ mi4. r8\fermata r4 |
+    R2. mi2.~ mi2~ mi8 r\fermata r4 |
+    R1 R2 |
+    
+    %%% Largo %%%
+    R2*3 R2. R2 R2. R2 R2.*2
+    r2 r4 lab, | sol2 r4 lab | sol2 r4 R2 R1
+    R2.*2 R2*2 
+    r2 r8 lab | sol4 r8 lab | sol2 |
+    r8 fad r4 | r8 fad la r r4 |
+    r2 r8 fad la sib |
+    R2. R2*3 R2.*3
+    
+    %%% Adagio %%%
+    R1*5
+    mi,1~mi2 r | R1*3
+    r2 r4 la | mi32 re8..~re4 r8 mi32 re16.~re4~|
+    re  mi32 re8..~re4 mi32 re8..~|
+    re4 mi32 re8..~re4 mi32 re8..~|
+    re4 mi32 re8..~re4 mi32 re8..~|
+    re4 re32 mi8.. mi4 re32 mi8.. |
+    re4 re do do re re do do |
+    re8 mi do4 do8 mi re4 |
+    re8 mi do4 re  re8 mi |
+    do4 do8 mi re4 re8 mi |
+    do4 do8 mi re4 re8 mi |
+    do4 do8 mi re4 re8 mi |
+    do4 do8 mi re4 re8 mi |
+    do4 do8 mi re4 re8 mi |
+    do4 do8 mi re4 re re re r2 |
+    r sol4 sol | sol r r2 |
+    r4 sol sol sol |
+    R1*2 R1-\fermataMarkup |
+    R2*4
+  }
+}
 
 ActeUnSceneDeuxFluteDeux = { \FluteDeux
 	\relative	{
