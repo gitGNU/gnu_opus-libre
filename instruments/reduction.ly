@@ -1697,9 +1697,9 @@ ActeUnSceneTroisTerMainGauche = {
 	{s2 s2 mib4~ \hideNotes mib} >> r2 |
 	<re' fad>8 <dod fa> <fa, re'> <fad dod'> <fad la> <fa sib> |
 	<re sib'> <dod la'> <dod fa> <re fad> <fa, re'> <fad dod'> |
-	<< {\change Staff = droite \stemDown <mib'' sol>8 \change Staff = gauche \stemUp <re fad> <fad, mib'> <sol re'>}
+	<< {\droite \stemDown <mib'' sol>8 \gauche \stemUp <re fad> <fad, mib'> <sol re'>}
 	\\{mib,4\laissezVibrer s4 }>>	<mib' si'>8 <re lad'> <lad sol'> <si fad'> |
-	<< {\change Staff = droite \stemDown <mi'! sold>8 \change Staff = gauche \stemUp <red sol> <si mi> <do mib>}
+	<< {\droite \stemDown <mi'! sold>8 \gauche \stemUp <red sol> <si mi> <do mib>}
 	\\{mi,,!4\laissezVibrer s4 }>> \clef treble <fa'' la>8 <mi sold> <do fa> <dod mi> \clef bass |
 	
 	<re,, re'>8 sol do fad, lad si sol sold la fad sib sol lab reb sol, si |
@@ -1755,7 +1755,7 @@ ActeUnSceneTroisTerMainGauche = {
   <re fad si>2 r4} >> |
   << { \voiceTwo <dod,, dod'>2. ~ <dod dod'> ~ <dod dod'>4 <fa fa'>2 } \\
   { \voiceOne r4 <sol'' sib re>4 <sol, sib re> <sol' sib re> <sol, sib re>
-  <fad si red> <si, red fad> r4 s4} >> |
+  <fad' si red> <si, red fad> r4 s4} >> |
   << { \voiceTwo <la la'>2. ~ <la la'>~ <la la'> ~ <la la'> <la la'>2 \laissezVibrer } \\ {
   \voiceOne s2. s2. s2 <sib'' re fad>8 <sol si mib>~ <sol si mib> <fad sib re>4 <mib sol si>
   <sib re fad>8~<sib re fad>2 } >>

@@ -47,7 +47,7 @@ includeLayout = \layout {
     \override PaperColumn #'keep-inside-line = ##t
     \override NonMusicalPaperColumn #'keep-inside-line = ##t
     autoBeamSettings = #modern-auto-beam-settings
-    %autoAccidentals = #modern-style
+    autoAccidentals = #modern-style
     ignoreMelismata = ##t
   }
 

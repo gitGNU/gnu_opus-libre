@@ -570,14 +570,14 @@ sceneDescription =
   maintainerEmail = "v.villenave@gmail.com"
   maintainerWeb = "http://valentin.villenave.info"
   copyright = \markup \copyright
-  longcopyright = \markup \center-align {
+  longcopyright = \markup \center-column {
     \line { \copyright \hspace #-1 . }
     \line { GNU General Public License v.3 or later.}
   }
   
   tagline = \markup { 
     \override #'(box-padding . 1.0) \override #'(baseline-skip . 2.7)
-    \box \center-align {
+    \box \center-column {
       \small \line { 
         \copyright
         \with-url #"http://valentin.villenave.info" \teeny "<v.villenave@gmail.com>"
