@@ -193,7 +193,56 @@ ActeUnSceneTroisTerAltoDeux = { \AltoDeux
   \relative {
     R2*3 R2. R2*2 R2.
     \pizz <re re'>4 r2
-    R2. r2 \arco mib,4~ sib4 r2 |
+    R2. r2 \arco mib,4~ mib4 r2 \clef treble |
+    sib''16 sib sib sib la la la la fad fad fad fad |
+    fa fa fa fa re re re re dod dod dod dod |
+    si' si si si lad lad lad lad sol sol sol sol fad fad fad fad |
+    do' do do do do do do do dod dod dod dod dod dod dod dod |
+    re8 r r4 r \pizz sol8 lab |
+    r16 sol r8 sib r sold la r16 sold r8 |
+    la sold la r16 sold r8 si r la |
+    sib r16 la r8 do si lad si r16 lad |
+    r8 dod do re dod mib |
+    <re, re'>4 r2 R2.
+    \arco re2. ~\CaV
+    re~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re4\CaV r2
+    re2.~\CaV re~\CaV re8\CaV r \ordin re4.~ re8\glissando
+    re'2.~ re8 r re,4.~ re8\glissando
+    <re re'>4 r2 \clef alto |
+    r4 re,,2~ re r4 |
+    
+    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    \t {fad si fad} \t {si fad si} fad4 r |
+    r  \t {sol8 sib sol} \t {sib sol sib}  \t {sib sol sib} \t {sol sib sol}
+    \t {fad si fad} \t {si fad si} fad4 r |
+    r <sol sib>2~ <sol sib> <fad si>4~ <fad si>2 r4 |
+    r <sol sib>2~ <sol sib> <fad si>4~ <fad si>2 r4 |
+    r  \t {re'8 si si} \t {sol sol mib} \t {sol si si} \t {re re fad~} fad4~ fad2 r4 |
+    r  \t {re8 si si} \t {sol sol mib} \t {re' si si} \t {sol re' si}
+    \t {sol' mib mib} \t {re si' sol} re'4 \clef treble
+    r16 \pizz mi8. |
+    fa4 mi8 fa r16 mi8. | fa4 fad8 sol r16 fad8. |
+    sol8 fad sol r16 fad r8 lab | sol4 r r2 \clef alto |
+    
+    r4 \arco \t {fa,,8 sib fa} \t {sib fa sib} \t {fa sib fa}
+    \t {sib fa sib} \t {fa sib fa} \t {sib fa sib} fa4 r |
+    r  \t {fa8 sib fa} \t {sib fa sib} \t {fa sib fa}
+    \t {sib fa sib} \t {fa sib fa} \t {sib fa sib} fa4 r |
+    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    \t {si fad si} \t {fad si fad} r2 |
+    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    \t {si fad si} \t {fad si fad} r2 |
+    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    \t {fad si fad} \t {si fad si} fad4 r |
+    r4 \repeat tremolo 8 {sib32 re}
+    \repeat tremolo 8 {sib re}
+    \repeat tremolo 4 {si red} | si4 r2 |
+    r8 fad' sol re mib sib si fad' sol re mib sib |
+    si fad'4 re sib8~ sib fad4 sol sib8~ sib2 r4 |
+    R2.*4
+    fa2.~ fa sol~ sol~ sol2 r4 |
+    fa2.~ fa~fa~fa2 r4 |
+    mi2.\fermata
   }
 }
 

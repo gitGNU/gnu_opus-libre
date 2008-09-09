@@ -187,6 +187,45 @@ ActeUnSceneTroisTerViolonDeux = { \ViolonDeux
     R2*3 R2. R2*2 R2.
     \pizz <re re'>4 r2
     r2 \arco fad4~ fad2.~ fad4 r2 |
+    \pizz <sib, sib'>4 r2 R2.
+    <si si'>4 r r2 <do do'>4 r <dod dod'> r |
+    <re re'> r r2 R1*3 R2. |
+    
+    %%% Poco meno %%%
+    \arco
+    <re sol\harmonic re''>2.:32 ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>4
+    \ordin re''2:32~ re2.: ~ re:~ re: ~ re4: ~ si: sib:
+    re2.:32~ re8 r r2 | R2.*13
+    
+    r4 <si,,? re>2 <si re> <si re>4~<si re>2 r4 |
+    r  <si re>2 <si! sib'> <mib re'>4~<mib re'>2 r4 |
+    R2.*3 R1 R2.
+    r4 fa2~ fa4 mi2 | R2.
+    r4 \t {mi8 la mi} \t {la mi la} \t {mi la mi} \t {la mi la}  mi4 |
+    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib}
+    \t {si fad si} \t {fad si fad} r2 |
+    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib}
+    \t {si fad si} \t {fad si fad} r2 |
+    r4 \t {sib8 re sib} \t {re sib re} \t {sib re sib} \t {re sib re}  \t {si red si}
+    \t {red si red} si4 r |
+    r  \t {sib8 sol sol} \t {re re sib} \t {re' sib sib} \t {sol sol re}
+    \t {red' si si} \t {fad fad red} \t {fad' red si} \t {sib' sol re} |
+    r sol fad mib re si sib' sol fad mib re si
+    sib' sol fad mib re si sib sol4 re si8~ si2 r4 |
+    R2.*4
+    
+    la'4 sol fa mi fa8 mi fa sol la4 mi2~ mi2.~ mi2 r4 |
+    R2.*5
   }
 }
 

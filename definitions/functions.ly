@@ -311,6 +311,10 @@ loco =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"loco" $music #})
 
+ordin =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"(ordin.)" $music #})
+
 #(define (make-text-span music t)
  (set! (ly:music-property music 'elements)
                        (append (ly:music-property music 'elements)
