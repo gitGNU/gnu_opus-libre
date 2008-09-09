@@ -55,7 +55,7 @@ ActeUnSceneUnBisAltoDeux = { \AltoDeux
     fa2~fa4 r2 |
     mi2. mib4 r r2 |
     R1 R2. R2 R1 R2.*2 R2*2 R2. R2*3 R2. R1 R2.
-    r4 sib <mib, sib'>2~<mib sib'>
+    r4 sib' <mib, sib'>2~<mib sib'>
     <fad la>2. r2 <fad la>4 |
     <mi sold>2.
     

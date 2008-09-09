@@ -53,7 +53,7 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
     la2.~ la2 r4 |
     <sol mi'>2 sib~ sib4 r2 |
     R2*3 R2. R1 R2.
-    r4 <sib, re> <sib mib>2~<sib mib>
+    r4 <sib re> <sib mib>2~<sib mib>
     <la red>2. r2 <la red>4 |
     <sold mi'>2.
     

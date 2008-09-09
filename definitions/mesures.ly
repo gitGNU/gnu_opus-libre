@@ -337,8 +337,8 @@ ActeUnSceneUnBisMesures = {
       \mark \markup \did \ActeUnSceneUnBisD
             R1*2
   \time 2/4
+            R2    \bar "||" %%FIXME: too close
       \mark \markup \did \ActeUnSceneUnBisE
-            R2    \bar "||"
       \tempo "Largo" 4 = 66
             R2*3
   \time 3/4 R2.
