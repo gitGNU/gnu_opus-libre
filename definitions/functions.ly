@@ -42,11 +42,11 @@ parallel=
 
 PianoDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ << 
+#{ <<
 \new Staff = "droite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-   $droite
+{ \clef treble $droite }
 \new Staff = "gauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-   $gauche 
+{ \clef bass $gauche }
 >> #})
 
 %% Articulation shortcuts -----------------------------------------%

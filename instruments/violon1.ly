@@ -184,6 +184,14 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
 	}
 }
 
+ActeUnSceneTroisTerViolonUn = { \ViolonUn
+  \relative {
+    R2*3 R2. R2*2 R2.
+    \pizz <re re'>4 r2
+    r4 \arco sol2~ sol2.~ sol4 r2
+  }
+}
+
 ActeDeuxSceneUnViolonUn = { \ViolonUn
   \relative	{
 		<la' re\harmonic la''>2. ~

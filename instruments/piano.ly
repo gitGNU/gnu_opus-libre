@@ -14,49 +14,48 @@ Piano = {
 }
 
 ProloguePiano = { \Piano
-	\PianoDeuxMains { \clef treble
-    \relative { 
-      \partial 4 r4 R2.*3 R1
-      mi2\laissezVibrer r4 \clef bass mi,4\laissezVibrer|
-      r4 mi2\laissezVibrer | r8 \tt {mi,32 fa mi' mi fa} red'4\laissezVibrer|
-      r4 r8 \t {mi,,16 mi' mi} | mi'2.\laissezVibrer | 
-      R2*2 |<< \makeClusters { \ind #"dans les cordes" sol,16 la si do re2 } \\ {\hideNotes s4 re2 \laissezVibrer \unHideNotes} >>
-      R2*2 |<< \makeClusters { \simile sol,16 la si do mi2 } \\ {\hideNotes s4 mi2 \laissezVibrer \unHideNotes} >>
-      R2*2 |<la, re sol>2 r4 | R2*2 |
-      << {\voiceTwo <si re mi>2\laissezVibrer} \\ {\voiceFour r8 \voiceOne <sid, dod>8 <sid dod> <sid dod>}>>
-      \repeat unfold 16 <sid dod>8 |
-      \repeat unfold 8 <dod re>8 <re mib> <re mib>
-      \repeat unfold 10 <red mi>8
-      r8 <mi fa> <mi fa>4 | <mi fa>8 <mi fa>4 <mi fa>8 <mi fa>4 |
-  }}
-  {\clef bass 
-    \relative {
-      \partial 4 r4 R2.*3 R1
-      <mi,, mi'>2\laissezVibrer r4 <mi, mi'>4\laissezVibrer r4 <mi mi'>2\laissezVibrer |
-      r4 <mi mi'>\laissezVibrer | r4 <mi mi'>\laissezVibrer mi'4 mi,2\laissezVibrer |R2*2 |
-      r4 <mi mi'>2\laissezVibrer | R2*2
-      r4 <mi mi'>2\laissezVibrer | R2 r4 <re' re'> |
-      <dod dod'>2 r4 | R2*2
-      <dod, dod'>2 r8 <sol' sol'> | r dod r <sol sol'> | dod4 <dod, dod'> <sol' sol'>8 dod~|
-      R2 <sol sol'>4 dod <sib sib'>8 dod~| dod <sol sol'> dod4 |
-      <dod, dod'>4 <sol' sol'>8 <dod dod'>4 <sib sib'>8 | r <dod dod'>4 <sol sol'>8 |
-      <sib sib'>2~<sib sib'>4 r2 |
-  }}
+	\PianoDeuxMains
+  \relative { 
+    \partial 4 r4 R2.*3 R1
+    mi2\laissezVibrer r4 \clef bass mi,4\laissezVibrer|
+    r4 mi2\laissezVibrer | r8 \tt {mi,32 fa mi' mi fa} red'4\laissezVibrer|
+    r4 r8 \t {mi,,16 mi' mi} | mi'2.\laissezVibrer | 
+    R2*2 |<< \makeClusters { \ind #"dans les cordes" sol,16 la si do re2 } \\ {\hideNotes s4 re2 \laissezVibrer \unHideNotes} >>
+    R2*2 |<< \makeClusters { \simile sol,16 la si do mi2 } \\ {\hideNotes s4 mi2 \laissezVibrer \unHideNotes} >>
+    R2*2 |<la, re sol>2 r4 | R2*2 |
+    << {\voiceTwo <si re mi>2\laissezVibrer} \\ {\voiceFour r8 \voiceOne <sid, dod>8 <sid dod> <sid dod>}>>
+    \repeat unfold 16 <sid dod>8 |
+    \repeat unfold 8 <dod re>8 <re mib> <re mib>
+    \repeat unfold 10 <red mi>8
+    r8 <mi fa> <mi fa>4 | <mi fa>8 <mi fa>4 <mi fa>8 <mi fa>4 |
+  }
+  \relative {
+    \partial 4 r4 R2.*3 R1
+    <mi,, mi'>2\laissezVibrer r4 <mi, mi'>4\laissezVibrer r4 <mi mi'>2\laissezVibrer |
+    r4 <mi mi'>\laissezVibrer | r4 <mi mi'>\laissezVibrer mi'4 mi,2\laissezVibrer |R2*2 |
+    r4 <mi mi'>2\laissezVibrer | R2*2
+    r4 <mi mi'>2\laissezVibrer | R2 r4 <re' re'> |
+    <dod dod'>2 r4 | R2*2
+    <dod, dod'>2 r8 <sol' sol'> | r dod r <sol sol'> | dod4 <dod, dod'> <sol' sol'>8 dod~|
+    R2 <sol sol'>4 dod <sib sib'>8 dod~| dod <sol sol'> dod4 |
+    <dod, dod'>4 <sol' sol'>8 <dod dod'>4 <sib sib'>8 | r <dod dod'>4 <sol sol'>8 |
+    <sib sib'>2~<sib sib'>4 r2 |
+  }
 }
 
 ActeUnSceneUnPiano = { \Piano
   \PianoDeuxMains
-  \relative { \clef treble
+  \relative {
     
   }
-  \relative { \clef bass
+  \relative {
     
   }
 }
 
 ActeUnSceneUnBisPiano = { \Piano
   \PianoDeuxMains
-  \relative { \clef treble
+  \relative {
     R2.*6
     \stemUp \gauche
     \ttt { lab,16 sib reb mi sol do } \droite
@@ -118,7 +117,7 @@ ActeUnSceneUnBisPiano = { \Piano
     R2 <dod, si'>8 r <re si'>8 r <re si'> r r4 \clef bass
     r4 <mi, si'> 
   }
-  \relative { \clef bass
+  \relative {
     \ottava #-1
     <dod,,, sold' dod>2.\laissezVibrer
     \ottava #0
@@ -174,8 +173,8 @@ ActeUnSceneUnBisPiano = { \Piano
 }
 
 ActeUnSceneDeuxPiano = { \Piano 
-	\PianoDeuxMains { \clef treble
-		\relative{
+  \PianoDeuxMains
+  \relative {
 		%%% Air de la Soprano2 %%%
 		
 		\repeat unfold 6 {R2.*2 R1*2} R2. | \clef bass
@@ -267,10 +266,8 @@ ActeUnSceneDeuxPiano = { \Piano
     <re mi'> <re mi'> <mi re'> R2.
     
     R1 R2.*3 R2 R2. R1*4
-		}
 	}
-	{ \clef bass
-		\relative {
+	\relative {
 		%%% Air de la Soprano2 %%%
 		
 		R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2. r2 mi,4~ | mi1~ mi2 r4 fad8 sold | si2.~|si2 r4|
@@ -358,8 +355,20 @@ ActeUnSceneDeuxPiano = { \Piano
     \gauche \clef treble \ttt {fa, si mi \droite \ottava #1
     sib' mib la } \ottava #0 \gauche R2.
     R1 R2.*3 R2 R2. R1*4
-		}
 	}
+}
+
+ActeUnSceneTroisTerPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R2*3 R2. R2*2 R2.
+    <re re'>8 r r2 R2.*2 |
+    <si fad' sol re'>2\arpeggio r4 |
+  }
+  \relative {
+    R2*3 R2. R2*2 R2.*4
+    <mib, sib'>2\arpeggio r4 |
+  }
 }
 
 ActeDeuxSceneUnPiano = { \Piano <<

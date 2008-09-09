@@ -189,6 +189,13 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
   }
 }
 
+ActeUnSceneTroisTerAltoDeux = { \AltoDeux
+  \relative {
+    R2*3 R2. R2*2 R2.
+    \pizz <re re'>4 r2
+    R2. r2 \arco mib,4~ sib4 r2 |
+  }
+}
 
 ActeDeuxSceneUnAltoDeux = { \AltoDeux
 	\relative { \clef treble 

@@ -179,6 +179,14 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
 	}
 }
 
+ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
+  \relative {
+    R2*3 R2. R2*2 R2.
+    \pizz <re re'>4 r2
+    R2. \arco si2.~ si4 r2 |
+  }
+}
+
 ActeDeuxSceneUnViolonTrois = { \ViolonTrois
 \relative {
 		la''2.~\CaV la2.~\CaV la2.~\CaV la4\CaV r2 

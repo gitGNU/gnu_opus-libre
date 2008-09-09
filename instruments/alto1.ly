@@ -202,6 +202,14 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
 	}
 }
 
+ActeUnSceneTroisTerAltoUn = { \AltoUn
+  \relative {
+    R2*3 R2. R2*2 R2.
+    \pizz <re re'>4 r2
+    R2. r4 \arco sib2~ sib4 r2 |
+  }
+}
+
 ActeDeuxSceneUnAltoUn = { \AltoUn
 	\relative {\clef treble 
     \ttt {

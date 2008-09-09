@@ -50,6 +50,36 @@ ProloguePercus = {<<
 }
 
 ActeUnSceneUnBisPercus = { <<
+  \new Staff { \Vibraphone
+    \relative {
+      R2.*7 R1 R2. R1 R2.*10 R1*2 R2
+      R2*3 R2. R2 R2. R2 R2.*2
+      R1*2 R2. R2 R1 R2.*2 R2*2
+      R2. R2*3 R2. R1 R2. R2*3
+      R2.*3 %% TODO: add pedal indications
+      r4 <mi si'> <mi si'> <mi si'> |
+      \repeat unfold 124 <mi si'>
+      <mi si'>\fermata \laissezVibrer r r2 | R2*4
+    }
+  }
+  \new DrumStaff { \Percus
+    \new DrumVoice \drummode {
+      R2.*7 R1 R2. R1 R2.*10 R1*2 R2
+      R2*3 R2. R2 R2. R2 R2.*2
+      r2 r4 \ind #"Tambour" sn |
+      sn32 sn8.. r4 r8.. sn32 sn8.. sn32 |
+      sn4 r2 R2 R1
+      R2.*2 R2*2
+      r2  r8 \t {sn16 sn sn} |
+      sn4 r8 \t {sn16 sn sn} |
+      sn32 sn8.. r4 |
+      r8 sn r4 |
+      r8 sn16. sn32 sn4 r |
+      r2 r8 sn32 sn sn sn sn sn sn sn sn8 |
+      R2. R2*3 R2.*3
+      R1*33 R2*4
+    }
+  }
   \new Staff { \Timbales
     \relative {
       %FIXME: stupid, stupid, stupid... use short notation!
@@ -80,36 +110,7 @@ ActeUnSceneUnBisPercus = { <<
       R1*33 R2*4
     }
   }
-  \new DrumStaff { \Percus
-    \new DrumVoice \drummode {
-      R2.*7 R1 R2. R1 R2.*10 R1*2 R2
-      R2*3 R2. R2 R2. R2 R2.*2
-      r2 r4 \ind #"Tambour" sn |
-      sn32 sn8.. r4 r8.. sn32 sn8.. sn32 |
-      sn4 r2 R2 R1
-      R2.*2 R2*2
-      r2  r8 \t {sn16 sn sn} |
-      sn4 r8 \t {sn16 sn sn} |
-      sn32 sn8.. r4 |
-      r8 sn r4 |
-      r8 sn16. sn32 sn4 r |
-      r2 r8 sn32 sn sn sn sn sn sn sn sn8 |
-      R2. R2*3 R2.*3
-      R1*33 R2*4
-    }
-  }
-  \new Staff { \Vibraphone
-    \relative {
-      R2.*7 R1 R2. R1 R2.*10 R1*2 R2
-      R2*3 R2. R2 R2. R2 R2.*2
-      R1*2 R2. R2 R1 R2.*2 R2*2
-      R2. R2*3 R2. R1 R2. R2*3
-      R2.*3
-      r4 <mi si'> <mi si'> <mi si'> |
-      \repeat unfold 124 <mi si'>
-      <mi si'>\fermata \laissezVibrer r r2 | R2*4
-    }
-  } >>
+ >>
 }
 
 ActeUnSceneDeuxPercus = {\Marimba 
@@ -143,8 +144,22 @@ ActeUnSceneDeuxPercus = {\Marimba
 	R2.*2 | R1 r2 <la' la'>2\fermata \laissezVibrer |
 	
 	%%% Récitatif %%%
-	
+	%TODO
 	}
+}
+
+ActeUnSceneTroisTerPercus = {<<
+  \new PianoStaff { \Marimba
+    \new Staff {
+    }
+    \new Staff {
+    }
+  }
+  \new PianoStaff { \Vibraphone
+    \new Staff {
+    }
+  }
+  >>
 }
 
 ActeDeuxSceneUnPercus = {\Percus

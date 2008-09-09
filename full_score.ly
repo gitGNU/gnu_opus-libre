@@ -307,6 +307,68 @@ ActeUnSceneDeux = {
   >>
 }
 
+
+ActeUnSceneTroisTer = {
+  <<
+    \new TopLine \ActeUnSceneTroisTerMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisTerFluteUn
+            \new Staff \ActeUnSceneTroisTerFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisTerClarinetteUn
+            \new Staff \ActeUnSceneTroisTerClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisTerSaxophoneUn
+            \new Staff \ActeUnSceneTroisTerSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeUnSceneTroisTerPercus
+
+    \new TopLine \ActeUnSceneTroisTerMesures
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "soprano" \ActeUnSceneTroisTerSopranoUn
+        \new Lyrics \lyricsto "soprano" { \ActeUnSceneTroisTerSopranoUnTexte }
+        \new Staff \new Voice = "baryton" \ActeUnSceneTroisTerBarytonUn
+        \new Lyrics \lyricsto "baryton" { \ActeUnSceneTroisTerBarytonUnTexte }
+      >>
+
+    \new TopLine \ActeUnSceneTroisTerMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneTroisTerViolonUn
+            \new Staff \ActeUnSceneTroisTerViolonDeux
+            \new Staff \ActeUnSceneTroisTerViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisTerAltoUn
+            \new Staff \ActeUnSceneTroisTerAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneTroisTerVioloncelleUn
+            \new Staff \ActeUnSceneTroisTerVioloncelleDeux
+          >>
+        \new Staff \ActeUnSceneTroisTerContrebasse
+      >>
+    \new PianoStaff \ActeUnSceneTroisTerPiano
+  >>
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 %showLastLength = s1*49
 \book {
@@ -329,13 +391,13 @@ ActeUnSceneDeux = {
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
@@ -353,13 +415,13 @@ ActeUnSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneTroisTer
     \header {
       piece = \Separateur
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneQuatre
     \header {

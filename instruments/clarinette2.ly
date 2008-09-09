@@ -176,6 +176,46 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 	}
 }
 
+ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    r4 r16 sol' sol sol do2
+    r4 r16 sol sol sol do8 sol16 sol do2 |
+    r4 r8 sol16 sol do8 sol16 sol do8. sol16 |
+    sol sol sol sol r8 do4 sold16 la
+    re,8 r r2 | R2.*3
+    re8 dod fa, fad la sib re, dod fa fad re dod |
+    mib' re fad, sol si lad sol fad |
+    mi' red si do fa mi do dod |
+    re r r4 r2 |
+    R1*3 R2.*2
+    
+    %%% Poco meno %%%
+    la4 sol fa mi2.~ mi2 r4 |
+    R2. mib2.~ mib2 r4 R2.
+    re2.~ re2 r4 |
+    r8 si''' sib sol fad mib re'2 r4 |
+    r8 si sib fad re si sib'2 r4 |
+    r8 sol fad re si sib | re4 r2 |
+    \t {r8 do la~} \t {la sold fa} \t {do la mi~} mi2 r4 |
+    
+    r4 sol2 sol fad4~ fad fad r |
+    r  sol2 sol fad4~ fad fad r |
+    r  sib2 sib si4~  si  si  r |
+    r  sib2 sib si4~  si  si  r |
+    r sib'2 sib sib4~ sib2 r4 |
+    r sib2 re fad4~ fad r2 |
+    R2.*3
+    r4 r16 lab mib la, mi sib la'8 r4 |
+    r fa,2 fa fa4~ fa2 r4 |
+    r fa2 r4 sib4. mi8~ mi4 la2 |
+    r4 mib2 mib re4~ re r2 |
+    r4 mib2 mib re4~ re r2 |
+    r4 sol2 sol fad4~ fad fad r |
+    r  sol, sol' sib2 si4~si mib sol |
+    r8 mib re si sib sol fad' mib re si re mib |
+    re' fad, sol,4 r8 re mib,2 r4 | R2.*15
+  }
+}
 
 ActeDeuxSceneUnClarinetteDeux = { \ClarinetteDeux
 	\relative {
