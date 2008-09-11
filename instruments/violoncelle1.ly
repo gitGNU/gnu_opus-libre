@@ -175,7 +175,57 @@ ActeUnSceneTroisTerVioloncelleUn = { \VioloncelleUn
     R2*3 R2. R2*2 R2. \clef treble
     \repeat unfold 36 re'16
     re re fad re dod dod fa do do red mi si |
-    sib8 r r2
+    sib8 r r2 | R2. \clef bass |
+    mib,,,2. r4 mi2 fa |
+    re'8 r r4 r2 | R1*3 R2.
+    
+    %%% Poco meno %%%
+    <re sol\harmonic re''>2.:32~ 
+    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>8 r \clef treble
+    \t {r4 sold'8} lad16 si re dod |
+    sol'8 fad sib, si mib re fad, sol si sib re, mib \clef bass |
+    sol,2 r4 |
+    r <sol sib>2~ <sol sib> <fad si>4~<fad si>2 r4 |
+    r <sol sib>2~ <sol sib> <fad si>4~<fad si>2 r4 |
+    r \t {re'8 sib re} \t {sib re sib} \t {re sib re} \t {sib re sib}
+    \t {red si red} | \t {si red si} red4 r |
+    r \t {re8 sib re} \t {sib re sib} \t {re sib re} \t {sib re sib}
+    \t {red si red} | \t {si red si} red4 r |
+    r \t {sol,8 si sol} \t {si sol si} \t {sol si sol} \t {si sol si~}
+    si4~ si2 r4 |
+    r \t {sol8 si sol} \t {si sol si} \t {sol si sol} \clef tenor
+    \t {si mib si} \t {mib sol mib} | \t {si sol' mib} sib'4 r \clef bass |
+    r8 \pizz si,, mi la mib sol | r4 r8 do, fa sib \clef tenor |
+    r mi r4 la | R1 \clef bass
+    
+    r4 \arco sib,2~sib sib4~sib2 r4 |
+    r sib2~sib sib4~sib2 r4 |
+    r <sol mib'>2~<sol mib'> <fad re'>4~<fad re'> r2 |
+    r4 <sol mib'>2~<sol mib'> <fad re'>4~<fad re'> r2 |
+    r4 <sib sol'>2~<sib sol'> <si-\thumb si>4~ <si si>2 r4 |
+    r4
+    \repeat tremolo 8 {sol32 re}
+    \repeat tremolo 8 {sol re}
+    \repeat tremolo 4 {fad red} fad4 r2 |
+    r8 re' mib sib si fad sol re' mib sib si fad |
+    sol re'4 sib fad8~ fad re4 mib fad8~ fad2 r4 |
+    R2.*3 \clef tenor |
+    re'2.~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re2\CaV r4 |
+    <re la'>2.~\CaV <re la'>~\CaV <re la'>~\CaV <re la'>2\CaV r4 |
+    mi2.\fermata
   }
 }
 

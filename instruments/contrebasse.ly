@@ -119,8 +119,43 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 
 ActeUnSceneTroisTerContrebasse = { \Contrebasse
   \relative {
-    R2*3 R2. R2*2 R2.*7
+    R23 R2. R2*2 R2.*7
     \pizz mib,,4 r r2
+    mi4 r fa r |
+    re'8 sol, do fad, lad si sol sold |
+    la fad sib sol lab reb sol, si |
+    do lab la sib sol si lab la |
+    re lab do reb la sib mib la, |
+    dod re sib si do dod |
+    
+    %%% Poco meno %%%
+    re4 r2 R2.*2
+    \arco re'2.~\CaV re~\CaV re~\CaV re~\CaV re4\CaV r2 |
+    re2.~\CaV re~\CaV re4\CaV r2 |
+    <re, sol\harmonic re''>2.~\CaV
+    <re sol\harmonic re''>~\CaV
+    <re sol\harmonic re''>~\CaV
+    <re sol\harmonic re''>~\CaV
+    <re sol\harmonic re''>2\CaV r4
+    <re sol\harmonic re''>2.:32~\CaV
+    <re sol\harmonic re''>8\CaV r r2
+    \pizz fa4 r2 R2.*2
+    fa,4 r2 R2.*2
+    dod'4 r2 R2.*2
+    dod4 r2 R2.
+    r8 \arco mi fa sold fa mi |
+    la,2.~\CaV la~\CaV la2\CaV r4 |
+    <la la'>2.~ <la la'>~<la la'>4 r8 \pizz la' r4 |
+    sold r8 si r16 fad8. | fa4 do r |
+    mib r sib | la r8 la' sol, sol' sib, sib' |
+    \arco fad,2.~fad~fad2 r4 |
+    fad2.~fad~ fad2 r4 |
+    fa2.~fa~fa4 dod'2 |
+    fa2.~fa~fa4 la2 |
+    dod,2.~dod~dod4 la'2 |
+    dod,2.~dod~dod4 fa2 |
+    la,2.~la~la~la2 r4 |
+    la'2.\CaV la,4\stopped r2 | R2.*13
   }
 }
 
