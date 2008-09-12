@@ -49,6 +49,7 @@ includeLayout = \layout {
     autoBeamSettings = #modern-auto-beam-settings
     autoAccidentals = #modern-style
     ignoreMelismata = ##t
+    tieWaitForNote = ##t %% careful!
   }
 
 %% Text inclusion -------------------------------------------------%

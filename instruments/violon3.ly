@@ -216,7 +216,7 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
     \t {re re sib} \t {si' fad fad} \t {red red si}
     \t {red' si fad} \t {sol' re sib} |
     r mib re si sib sol fad' mib re si sib sol |
-    fad mib re si sib sol fad mib4 sib sol8~ sol2 r4 |
+    fad' mib re si sib sol fad mib4 sib sol8~ sol2 r4 |
     R2.*4
     
     la'4 sol fa mi fa8 mi fa sol la4 mi2~ mi2.~ mi2 r4 |

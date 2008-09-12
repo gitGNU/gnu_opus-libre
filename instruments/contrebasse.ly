@@ -119,7 +119,7 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 
 ActeUnSceneTroisTerContrebasse = { \Contrebasse
   \relative {
-    R23 R2. R2*2 R2.*7
+    R2*3 R2. R2*2 R2.*7
     \pizz mib,,4 r r2
     mi4 r fa r |
     re'8 sol, do fad, lad si sol sold |

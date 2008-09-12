@@ -148,15 +148,67 @@ ActeUnSceneDeuxPercus = {\Marimba
 	}
 }
 
-ActeUnSceneTroisTerPercus = {<<
-  \new PianoStaff { \Marimba
-    \new Staff {
-    }
-    \new Staff {
+ActeUnSceneTroisTerPercus = { <<
+  \new Staff { \Vibraphone
+    \relative {
+      R2*3 R2. R2*2 R2.*2 r2
+      \pl {s4\sustainOn sol'~ fad~ mib~ <mib fad sol>}
+      {si'4~ si2.~ si4} r2\sustainOff
+      sib4\sustainOn \laissezVibrer la\laissezVibrer fad\laissezVibrer
+      fa re dod \pl {mib2\sustainOn s mi\sustainOn fa\sustainOn}
+      {si!4 sib sol fad do' si reb do}
+      <re, re'>8\sustainOff r r4 r2 | R1*3 R2.*9
+      r8 si'\sustainOn sib sol fad mib re'2.\laissezVibrer s2.*2
+      r4 si\sustainOn sib sol fad mib re'2.\laissezVibrer s2.\sustainOff
+      R2.*23 R1 R2.*18
+      \t {r4 \ind #"con Ped." dob'8} \t {sib mib, re} \t {mib sib' dob} \t {sib sol fad}
+      \t {sol sib dob} sib16 dob sib dob |
+      sib4.\sustainOn fa dob solb do,!2 r4\sustainOff R2.*14
     }
   }
-  \new PianoStaff { \Vibraphone
-    \new Staff {
+    \new Staff { \Marimba
+    \relative {
+      R2*3 R2. R2*2 R2.*7 R1*3
+      r2 r8 r16 mi'32 fa mi'4 |
+      \t {r16 la mi} mib, sib' r4 r8
+      <mib,,, re'> r4 |
+      r32 re''' fad,8 <fad,, sol'>16 r
+      <mib re'> <fad sol'>8 \ottava #1
+      si'''32 fad sib fa sol re fad dod
+      \ottava #0
+      \t {mi,8 sold, \clef bass do,,}
+      r8 <dod re'> r <red mi'> \clef treble
+      \tt {r16 <sold sol'!> la sold' re} |
+      \pl re,4 re'' r2 |
+      
+      %%% Poco meno %%%
+      
+      R2.*17 \clef bass
+      fa,,,2.:32~fa4 r2 | R2.
+      fa2.:~ fa4 r2 | R2.
+      dod'2.:~ dod4 r2 | R2.
+      dod2.:~ dod4 r2 | R2.
+      la2.:~ la4 r2 \clef treble
+      r16 <dod'' dod'> \t {r fa' dod} fa,32 dod do'8. <mi, mi'>8 r \clef bass |
+      la,,,2.:32~ la4 r2 | R2. \clef treble
+      r32 do'' dod'8. r8 fa32 mi, dod' dod, do'8 <la,, sold'> |
+      r8 \t {dod'16 mi dod'} \clef bass r8 <la,, sold'>
+      <do, si'>16 <la' sold'> \clef treble fa'''8 |
+      r <la,,, sold'> \ottava #1 r16 red'' \t {re, fad' fa,}
+      lad32 la, dod' do, lab''16 <sib, sib'> |
+      <sol sol'>4 \ottava #0 r8 <do,, si'>16 <la' sold'>
+      r <sib, la'> <lab' sol'>8 \clef bass
+      <si,, lad'>16 <solb' fa'>8. |
+      fad,2.:32~ fad4 r2 | r8 si mi fa sold la |
+      fad,2.:32~fad4 r2 | r8 sib si red mi sol|
+      fa,!2.:32~fa4  r2 \clef treble |
+      r4 r8 <lab''' fa'> r16 <reb, do'> r8 \clef bass |
+      fa,,,2.:32~ fa4 r2 \clef treble |
+      r4 r16 fa'''' mi,8 \t {do'16 dod la} sold'8 \clef bass |
+      dod,,,,2.\laissezVibrer R2. \clef treble |
+      r16 fa''' mi,8 r16 la,8 si16 \t {sold' re si'} fa8 |
+      <re' mi>16 <re mi> r8 r2 | R2.*17
+      <mi, red'>8 r r2 R2.*3
     }
   }
   >>
