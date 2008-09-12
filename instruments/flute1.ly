@@ -177,6 +177,23 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
 ActeUnSceneTroisFluteUn = { \FluteUn
   \relative {
     R2.*6 re''2.~ re8 r r2 |
+    R2.*8 r2 \t {la8 la la} re4 do re8 la~ la4 r2 |
+    R2.*5
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4*5
+    reb2 sib4 r | do2 la4 r |
+    reb2 sib4 r | fad2 re4 r |
+    \t {sib'16 sib sib} mib8~ mib4 mib4~ mib sib re | sold4. r8 r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*9 sol,,2. lab8 r r2 |
+    R2.*3
+    
+    %%% Tempo II %%%
+    R1.*4 sol2. r | R1.
+    r2. sol''8 r r4 |
+    si,,1~ si4 r2 | r4 sib |
   }
 }
 

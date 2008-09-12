@@ -160,6 +160,23 @@ ActeUnSceneDeuxFluteDeux = { \FluteDeux
 ActeUnSceneTroisFluteDeux = { \FluteDeux
   \relative {
     R2.*6 la''2.~ la8 r r2 |
+    R2.*8 r2 \t {mib8 mib mib} la4 solb lab8 mib~ mib4 r2 |
+    R2.*5
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4*5
+    solb2 fa4 r | solb2 fa4 r |
+    solb2 fa4 r | dod2 re4 r |
+    sib8 sib'8~ sib4 sib4~ sib mib, la | re4. r8 r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*9 fa,,2. fa8 r r2 |
+    R2.*3
+    
+    %%% Tempo II %%%
+    R1.*4 mi2. r | R1.
+    r2. lab'8 r r4 |
+    mi,1~ mi4 r2 | r4 fa |
   }
 }
 

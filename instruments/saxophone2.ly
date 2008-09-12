@@ -110,6 +110,24 @@ ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
 ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R2.*4 sol8 mi4 sol8 mi4 r r8 mi4 dod8 si2.~ si8 r r2 |
+    R2.*8 r2 \t {mi'8 mi mi} mi4 sol la8 mi~ mi4 r2 |
+    R2.*5
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4 reb,2 do4 r2 |
+    reb do4 r2 |
+    reb do4 r2 |
+    re reb4 r2 |
+    sol2 fad4 r |
+    sol2 fad4 r |
+    sol2 fad4 r |
+    red2 mi4 r |
+    reb4. reb,4 reb'8~ reb4 sib' do, reb,4. r8 r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*7 mi2.~ mi mi lab8 r r2 | R2.*3
+    R1. r2 r4 sol2. lab mib' mi1.~ mi2. r4 r2 | do1.~ do2.~ do8 r r4 |
+    do1~ do4 r2 | r4 si |
   }
 }
 

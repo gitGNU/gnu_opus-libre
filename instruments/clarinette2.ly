@@ -163,8 +163,31 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 }
 
 ActeUnSceneTroisClarinetteDeux = { \ClarinetteDeux
-  \relative {
-    R2.*4 do'8 la4 do8 la4 r r8 la4 solb8 mib2.~ mib8 r r2 |
+	\relative {
+    R2.*4 | solb'8 mib4 solb8 mib4 r4 r8 mib4 do8 |
+    sib2.~sib8 r r2 |
+    R2.*8 r2 \t {mib'8 mib mib} la4 solb lab8 mib~ mib4 r2 |
+    R2.*5
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4
+    lab,,2 fa4 r2 |
+    sol2 mi4 r2 |
+    lab2 fa4 r2 |
+    lab2 la4 r2 |
+    re2 si4 r |
+    reb2 sib4 r |
+    re2 si4 r |
+    lab2 solb'4 r |
+    sol2 sol4~ sol8 reb,~ reb4 mi' | mib'4. r8 r4 |
+    R2*2
+    
+    %%% Tempo I %%%
+    R2.*8
+    mib,,2. solb reb8 r r2 |
+    R2.*3
+    R1.*4 si'2. r4 r2 | r2 r4 mib2.~ mib~ mib8 r r4 |
+    lab,1~ lab4 r2 r4 sib |
   }
 }
 

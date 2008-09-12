@@ -102,8 +102,27 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 ActeUnSceneTroisSaxophoneUn = { \SaxAltoUn
   \relative {
     R2.*4 reb8 sib4 reb8 sib4 r r8 sib4 sol8 mi2.~ mi8 r r2 |
+    R2.*8 r2 \t {sib''8 sib sib} mib4 reb mib8 sib~ sib4 r2 |
+    R2.*5
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4 do,2 si4 r2 |
+    do si4 r2 |
+    do si4 r2 |
+    reb2 do4 r2 |
+    solb'2 fa4 r |
+    solb2 fa4 r |
+    solb2 fa4 r |
+    re2 mib4 r |
+    do2 do4~ do sol'4. sib,8 si4. r8 r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*9 si2. mi,8 r r2 | R2.*3
+    R1.*5 si'1.~ si2.~si8 r r4 |
+    sol1~ sol4 r2 | r4 fad |
   }
 }
+
 ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*6 R2.*19
