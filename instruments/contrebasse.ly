@@ -117,6 +117,12 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 	}
 }
 
+ActeUnSceneTroisContrebasse = { \Contrebasse
+  \relative {
+    R2.*4 do,,2.\upbow ~ do~ do do4 r2 |
+  }
+}
+
 ActeUnSceneTroisTerContrebasse = { \Contrebasse
   \relative {
     R2*3 R2. R2*2 R2.*7

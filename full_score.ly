@@ -307,6 +307,65 @@ ActeUnSceneDeux = {
   >>
 }
 
+ActeUnSceneTrois = {
+  <<
+    \new TopLine \ActeUnSceneTroisMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisFluteUn
+            \new Staff \ActeUnSceneTroisFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisClarinetteUn
+            \new Staff \ActeUnSceneTroisClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisSaxophoneUn
+            \new Staff \ActeUnSceneTroisSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeUnSceneTroisPercus
+
+    \new TopLine \ActeUnSceneTroisMesures
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "tenor" \ActeUnSceneTroisTenor
+        \new Lyrics \lyricsto "tenor" { \ActeUnSceneTroisTenorTexte }
+        \new Staff \new Voice = "baryton" \ActeUnSceneTroisBarytonUn
+        \new Lyrics \lyricsto "baryton" { \ActeUnSceneTroisBarytonUnTexte }
+      >>
+
+    \new TopLine \ActeUnSceneTroisMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneTroisViolonUn
+            \new Staff \ActeUnSceneTroisViolonDeux
+            \new Staff \ActeUnSceneTroisViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneTroisAltoUn
+            \new Staff \ActeUnSceneTroisAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneTroisVioloncelleUn
+            \new Staff \ActeUnSceneTroisVioloncelleDeux
+          >>
+        \new Staff \ActeUnSceneTroisContrebasse
+      >>
+    \new PianoStaff \ActeUnSceneTroisPiano
+  >>
+}
 
 ActeUnSceneTroisTer = {
   <<
@@ -403,25 +462,25 @@ ActeUnSceneTroisTer = {
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneTrois
     \header {
       piece = \ActeUnSceneTroisTitre
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneTroisBis
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneTroisTer
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneQuatre
     \header {

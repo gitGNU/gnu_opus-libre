@@ -170,6 +170,13 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
 	}
 }
 
+ActeUnSceneTroisVioloncelleUn = { \VioloncelleUn
+  \relative {
+    \pizz do,,4 r2 |
+    fa2.:32~fa: <fa mi'>2.:32~<fa mi'>:~<fa mi'>:~<fa mi'>: <fa mi'>4 r2 |
+  }
+}
+
 ActeUnSceneTroisTerVioloncelleUn = { \VioloncelleUn
   \relative {
     R2*3 R2. R2*2 R2. \clef treble

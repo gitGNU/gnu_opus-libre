@@ -99,6 +99,11 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 	}
 }
 
+ActeUnSceneTroisSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R2.*4 reb8 sib4 reb8 sib4 r r8 sib4 sol8 mi2.~ mi8 r r2 |
+  }
+}
 ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*6 R2.*19

@@ -160,6 +160,12 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
 	}
 }
 
+ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    do,,2.:32~do: <do si'>2.:32~<do si'>:~<do si'>:~<do si'>:~<do si'>: <do si'>4 r2 |
+  }
+}
+
 ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
   \relative {
     R2*3 R2. R2*2 R2. \clef treble

@@ -189,6 +189,12 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
   }
 }
 
+ActeUnSceneTroisAltoDeux = { \AltoDeux
+  \relative {
+    R2.*4 <mi, red'>2.:32~ <mi red'>:~<mi red'>: <mi red'>4 r2 |
+  }
+}
+
 ActeUnSceneTroisTerAltoDeux = { \AltoDeux
   \relative {
     R2*3 R2. R2*2 R2.

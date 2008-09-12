@@ -173,6 +173,14 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
 	}
 }
 
+
+ActeUnSceneTroisFluteUn = { \FluteUn
+  \relative {
+    R2.*6 re''2.~ re8 r r2 |
+  }
+}
+
+
 ActeUnSceneTroisTerFluteUn = { \Piccolo
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*2

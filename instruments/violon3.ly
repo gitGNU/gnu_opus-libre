@@ -179,6 +179,12 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
 	}
 }
 
+ActeUnSceneTroisViolonTrois = { \ViolonTrois
+  \relative {
+    R2.*5 <sib la'>2.:32~ <sib la'>: <sib la'>4 r2 |
+  }
+}
+
 ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
   \relative {
     R2*3 R2. R2*2 R2.

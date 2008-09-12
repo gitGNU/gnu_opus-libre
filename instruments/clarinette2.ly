@@ -14,13 +14,6 @@ ClarinetteDeux = {
   \clef treble
 }
 
-ClarinetteBasse = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Clarinette Basse  "}
-  \set Staff.shortInstrumentName = "Cl. B  "
-  \set Staff.midiInstrument = "clarinet"
-  \clef bass
-}
-
 PrologueClarinetteDeux = { \ClarinetteDeux
 	\relative { 
     %%% Introduction %%%
@@ -36,54 +29,47 @@ PrologueClarinetteDeux = { \ClarinetteDeux
 	}
 }
 
-ActeUnSceneUnBisClarinetteDeux = { \ClarinetteBasse
+ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
   \relative {
-    R2.*3
-    \ttt {fa,,16 mi fa mi re mi} \ttt {fa mi fa mi re mi} \ttt {fa mi fa mi re mi} |
-    fa8 r \ttt {fa'16 mi re si re mi} fa8 r |
-    \ttt {re16 dod re mi fa sol} lab8 r \ttt {re,16 dod re mi sol la} |
-    sib8 r \ttt {re16 do la sol fad mi} \ttt {dod si lad sold fa mib} |
+    R2.*4
+    \ttt {fa,16 mi re dod re mi} fa8 r
+    \ttt {fa16  mi re dod re mi}|fa8 r
+    \ttt {lab16 sol lab sib si dod} re8 r |
+    \ttt {sol16 lab sol lab sol sib}
+    \ttt {si dod si dod si mi}
+    \ttt {fad sol fad sol la do} |
     
     %%% Piu vivo %%%
-    re4 r r2 | fad2. |
-    re4 r r2 | sib'4. lab4. |
-    sol2.~sol8 r sol4. r8 |
-    sol4 r reb sol2 r4 |
-    \t {sol16 lab sib } reb8~reb2~ reb2.~reb4. r8\fermata r4 |
-    \t {sol,16 lab sib} reb8~reb2~ reb2.~reb2~reb8 r\fermata r4 |
+    re4 r r2 |
+    \tt {r16 mi,,, fad sold la } \tt {si do re fa la} \tt {do re mib fa lab}|
+    re4 r r2 |
+    \tt {r16 mi,,, sold sib dod} \tt {mib sol sib do mi} \tt {fad sol la si do}|
+    re4 re8 la4 re8 | lab4. re fad, re' |
+    mi,4 mi8 mi4 mi8 |
+    R2. fa,,2.~fa4. r8\fermata r4 |
+    R2. fa2.~ fa2~ fa8 r\fermata r4 |
     R1 R2
     
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-    r2 r4 solb, | reb2 r4 solb | reb2 r4
-    lab'2~lab r |
+    r2 r4 lab' | sol2 r4 lab | sol2 r4 R2
+    sib2 r |
     R2.*2 R2*2 
-    r2 r8 solb | reb4 r8 solb | reb2 |
-    \t {sol!16 lab sib} reb8 r4 | r8
-    \t {la16 sib do} mib8 r r4 |
-    r2 r8 \t {lad,16 si dod} mi8 si' |
+    r2 r8 fa, | sol'4 r8 fa, | sol'2 |
+    r8 re r4 | r8 mi do r r4 |
+    r2 r8 reb \t {sol16 lab sib} reb8 |
     R2. R2*3 R2.*3
     
     %%% Adagio %%%
-    R1*2
-    do,2~do4. sold8~|
-    sold2 r4 do~|
-    do2~do8 sold4.~|
-    sold4 r sol2~ |
-    sol4. dod8~dod2|
-    r4 sol2. | sol8 dod~dod2 r4 |
-    sol1~sol2 r4 sib~ |
-    sib2~sib8 sol4.~|
-    sol4 r sib2~sib4. sol8~sol2 |
-    r4 sib sol2~sol4 r r2 |
-    mi1~mi2. r4 |
-    R1*5 \clef treble
-    r2 r4 r8 la'' |
-    r la sol si r si sol la |
-    r la sol si r si sol la |
-    r la sol si sol2~sol4. r8 
-    fa4 fa8 la | sol4 r r2 |
-    r4 fa fa sol |
+    R1*21
+    r4 mi mi8 re fad4 |
+    fad8 re mi4 mi8 re fad4 |
+    fad8 re mi4 mi8 re fad4 |
+    fad8 re mi4 mi8 re fad4 |
+    mi  mi8 fad re4 re8 fad |
+    mi4 mi8 fad r2 |
+    r fad4 fad8 re | mi4 r r2 |
+    r4 fad fad mi |
     R1*2 R1-\fermataMarkup |
     R2*4
   }
@@ -174,6 +160,12 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
     r4 sib,2. | la4. r8 la4 | lab4. r8 lab4 sol4. r8 r4 | r sol |
     solb2.~ solb2. r4 | r2 fa4 mi mib r la, r re, r r2 |
 	}
+}
+
+ActeUnSceneTroisClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R2.*4 do'8 la4 do8 la4 r r8 la4 solb8 mib2.~ mib8 r r2 |
+  }
 }
 
 ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux

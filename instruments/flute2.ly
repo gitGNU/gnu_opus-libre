@@ -157,6 +157,12 @@ ActeUnSceneDeuxFluteDeux = { \FluteDeux
 	}
 }
 
+ActeUnSceneTroisFluteDeux = { \FluteDeux
+  \relative {
+    R2.*6 la''2.~ la8 r r2 |
+  }
+}
+
 ActeUnSceneTroisTerFluteDeux = { \FluteDeux
   \relative {
     R2*3 R2. R2*2 R2.*4

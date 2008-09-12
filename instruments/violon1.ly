@@ -184,6 +184,12 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
 	}
 }
 
+ActeUnSceneTroisViolonUn = { \ViolonUn
+  \relative {
+    R2.*6 <mib re'>2.:32 <mib re'>4 r2 |
+  }
+}
+
 ActeUnSceneTroisTerViolonUn = { \ViolonUn
   \relative {
     R2*3 R2. R2*2 R2.

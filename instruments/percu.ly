@@ -148,13 +148,22 @@ ActeUnSceneDeuxPercus = {\Marimba
 	}
 }
 
+ActeUnSceneTroisPercus = { <<
+  \new DrumStaff { \Percus
+    \new DrumVoice \drummode {
+      \ind #"Tambour" sn2.:32~sn:~sn:~sn:~sn:~sn:~sn:~sn4 r2 |
+    }
+  }
+  >>
+}
+
 ActeUnSceneTroisTerPercus = { <<
   \new Staff { \Vibraphone
     \relative {
       R2*3 R2. R2*2 R2.*2 r2
       \pl {s4\sustainOn sol'~ fad~ mib~ <mib fad sol>}
       {si'4~ si2.~ si4} r2\sustainOff
-      sib4\sustainOn \laissezVibrer la\laissezVibrer fad\laissezVibrer
+      sib4\laissezVibrer \sustainOn la\laissezVibrer fad\laissezVibrer
       fa re dod \pl {mib2\sustainOn s mi\sustainOn fa\sustainOn}
       {si!4 sib sol fad do' si reb do}
       <re, re'>8\sustainOff r r4 r2 | R1*3 R2.*9

@@ -358,6 +358,20 @@ ActeUnSceneDeuxPiano = { \Piano
 	}
 }
 
+ActeUnSceneTroisPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R2.*20 \clef bass sol2. |
+  }
+  \relative {
+    do,,8. do16~ do8 do do do | do2. |
+    do8. do16~ do8 do do do | do2.\laissezVibrer
+    R2.*7
+    si8. si16~ si8 si si si | sib2. |
+  }
+}
+    
+
 ActeUnSceneTroisTerPiano = { \Piano
   \PianoDeuxMains
   \relative {

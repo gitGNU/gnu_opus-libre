@@ -107,6 +107,12 @@ ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
 	}
 }
 
+ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
+  \relative {
+    R2.*4 sol8 mi4 sol8 mi4 r r8 mi4 dod8 si2.~ si8 r r2 |
+  }
+}
+
 ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*6 R2.*19
