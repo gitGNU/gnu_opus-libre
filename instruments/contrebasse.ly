@@ -119,7 +119,28 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 
 ActeUnSceneTroisContrebasse = { \Contrebasse
   \relative {
-    R2.*4 do,,2.\upbow ~ do~ do do4 r2 |
+    R2.*4 do,,2.\upbow ~ do~ do do4 r2 | R2.*3
+    si2. sib2.:32 si2. sib2.:32 si2. dod2.:32~dod:~dod4 r
+    \pizz sold si r2
+    \arco sib2.~sib~sib~sib2 r4 |
+    
+    %%% Lamento %%%
+    r2 r4 \pizz re si dod \arco sib2 re4 r r2 | reb fa4 r r2 |
+    sib,re4 r r2 reb fa4 r r2 | sib,re4 r r2 | reb fa4 r2 |
+    sib,reb4 r2 | re fa4 r2 sib,reb4 r2 sib si4 r2 |
+    mi,2 sol4 r | sold2 si4 r |
+    mi,2 sol4 r | si2 fa'4 r |
+    reb2 reb4 reb4. reb8 reb reb reb4 reb8 reb r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*3
+    << {mi2.~mi~mi~mi~mi~mi~mi4}\\
+    {s2.*2 mi,4\stopped s2 mi4\stopped s2 mi4\stopped r mi\stopped
+    mi\stopped r mi\stopped mi\stopped}>> r8 mi' \t {mi mi mi} sold4 r2 |
+    R2.*3
+    
+    %%% Tempo II %%%
+    R1. do,~ do~ do~do~do2 r1 | r2 r4 do r | R1 R2. R2
   }
 }
 

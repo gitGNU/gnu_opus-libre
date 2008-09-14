@@ -361,13 +361,54 @@ ActeUnSceneDeuxPiano = { \Piano
 ActeUnSceneTroisPiano = { \Piano
   \PianoDeuxMains
   \relative {
-    R2.*20 \clef bass sol2. |
+    R2.*20 \clef bass sol2.~ sol4 r sol8 sol sol2.~sol4 r8 sol \t {sol sol sol} |
+    
+    %%% Lamento %%%
+    sol1.\laissezVibrer r1 r4 sol4~ sol1 la2~ la1~la8 la \t {la la la~} la1 r2 |
+    sib,8 sib \t {sib sib sib~} sib4 r r2 |
+    dob8  dob \t {dob dob dob~} dob4 r2 |
+    r8    sib \t {sib sib sib~} sib4 r2 |
+    r8    dob \t {dob dob dob~} dob4 r2 |
+    r8    sib \t {sib sib sib~} sib4 r2 |
+    r8    dob \t {dob dob dob~} dob4 r2 |
+    r8    mi, \t {mi  mi  mi~ } mi4  r  |
+    r8    mi  \t {mi  mi  mi~ } mi4  r  |
+    r8    mi  \t {mi  mi  mi~ } mi4  r  |
+    r8    mi  \t {mi  mi  mi~ } mi4  r  |
+    <do'do'>4. <do do'> <do do'>4 <do do'> <do do'> <do do'>4. r8 r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*14
+    
+    %%% Tempo II %%%
+    R1. r8 do, \t {do do do} do4 do2.\laissezVibrer | R1.*4 R1*5/4
+    <si'' red sold>1\arpeggio \laissezVibrer R2. r4 <mid, lad mid'>
   }
   \relative {
     do,,8. do16~ do8 do do do | do2. |
     do8. do16~ do8 do do do | do2.\laissezVibrer
     R2.*7
     si8. si16~ si8 si si si | sib2. |
+    si8. si16~ si8 si si si | sib2. |
+    si8. si16~ si8 si si si | \ottava #-1 <re, dod'>2.\laissezVibrer \ottava #0
+    R2.*7
+    
+    %%% Lamento %%%
+    R1.*5 sib'2 re4 r r2 reb fa4 r2 sib, reb4 r2 re fa4 r2 sib, reb4 r2 mib si4 r2|
+    \ottava #-1
+    mi,2 r mi r mi r mi r <reb reb'>4. <reb reb'> <reb reb'>4 <reb reb'><reb reb'>|
+    <reb reb'>4. \ottava #0 r8 r4 | R2*2
+    
+    %%% Tempo I %%%
+    R2.*3
+    r4 mi' r r mi r r mi r \ottava #-1 |
+    <mi,mi'> <mi mi'> r <mi mi'> <mi mi'> r <mi mi'> <mi mi'> <mi mi'> 
+    \ottava #0 R2.*5
+    
+    %%% Tempo II %%%
+    R1. \ottava #-1 do1.\laissezVibrer \ottava #0 R1.*4 R1*5/4
+    <do' sol' mi'>1\arpeggio \laissezVibrer R2.
+    r4 <si fad' si>
   }
 }
     

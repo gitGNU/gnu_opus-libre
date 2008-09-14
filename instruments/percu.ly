@@ -151,7 +151,50 @@ ActeUnSceneDeuxPercus = {\Marimba
 ActeUnSceneTroisPercus = { <<
   \new DrumStaff { \Percus
     \new DrumVoice \drummode {
-      \ind #"Tambour" sn2.:32~sn:~sn:~sn:~sn:~sn:~sn:~sn4 r2 |
+      \ind #"Tambour" sn2.:32~sn8 \t {sn16 sn sn} sn2:32~ sn2.:
+      sn8 \t {sn16 sn sn} sn8 \t{sn16 sn sn} sn4:32 sn8 sn4 sn8 sn4 |
+      sn8 \t {sn16 sn sn} sn8 sn4 sn8 sn2.:32 R2.*4 |
+      sn4:32 sn4 r |
+      r8 \t {sn16 sn sn} sn4 r |
+      r8 \t {sn16 sn sn} sn4 sn4:32 |
+      sn8. sn16 r sn sn8 r \t {sn16 sn sn} |
+      sn4 sn32 sn8.. r8 \t {sn16 sn sn} |
+      sn2.:32~ sn: |
+      R2.*6 R1.*6 R1*5/4*5 R1*4 R2.*3 R2*2
+      
+      R2.*3 sn4:32 r8 sn \t {sn sn sn} |
+      sn4:32 r8 sn \t {sn sn sn} |
+      sn4 r8 sn \t {sn sn sn} |
+      sn4 r8 sn \t {sn sn sn} |
+      sn32 sn8.. r8 sn \t {sn sn sn} |
+      \t {sn16 sn sn} sn8 r sn \t {sn sn sn} |
+      sn2.:32 R2.*4
+      R1.*6 R1*5/4 R1 R2. R2
+    }
+  }
+  \new Staff { \Timbales
+    \relative { R2.*24
+      r2 r4 si, si si |
+      sib2:32 sib4 r r2 |
+      si!2:32 sib4 r r2 |
+      sib2:32 sib4 r r2 |
+      si!2:32 sib4 r r2 |
+      sib2:32 sib4 r r2 |
+      si!2:32 sib4   r2 |
+      sib4:32 \t {sib8 sib sib} sib4 sib r |
+      si4:32 \t {si8 si si} si4 si r |
+      sib4:32 \t {sib8 sib sib} sib4 sib r |
+      si4:32 \t {si8 si si} si4 si r |
+      mi,8 mi\t {mi mi mi} mi4:32 mi8 r |
+      mi8 mi \t {mi mi mi} mi4:32 mi8 r |
+      mi8 mi \t {mi mi mi} mi4:32 mi8 r |
+      mi8 mi \t {mi mi mi} mi4:32 mi8 r |
+      <mi dod'> <mi dod'> \t {<mi dod'> dod' mi,} \pl mi4:32 {dod'8. dod32 dod} |
+      <mi,dod'>8<mi dod'> \t {<mi dod'> dod' mi,} \pl mi4:32 {dod'8. dod32 dod} |
+      <mi,dod'>8. dod'16 <mi, dod'>4 r R2*2
+      R2.*14
+      r2 r4 do' do do do1.:32~do:~do:~do8 do \t {do do do} do1:32~do1\laissezVibrer r2|
+      R1*5/4 R1 R2. R2
     }
   }
   >>

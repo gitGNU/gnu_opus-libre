@@ -205,6 +205,36 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
 ActeUnSceneTroisAltoUn = { \AltoUn
   \relative {
     R2.*4 <mi, red'>2.:32~ <mi red'>:~<mi red'>: <mi red'>4 r2 |
+    \ind #"pizz. sul tasto" si'4 r sib sol r lab fa sol sib |
+    \arco <do, la'>2.:32 R2.
+    mib2.:32 re2. la'2.:32 |
+    <si lad'>8 <si lad'>4 <si lad'>8 <si lad'>4~
+    <si lad'>8 <si lad'>4 <si lad'>8 <si lad'>4~
+    <si lad'> r \pizz sol fa r2 |
+    r \arco re4 dod2. r2 re4 dod2 r4 |
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4*5
+    <re'dod'>2 <si lad'>4 r |
+    <reb do'>2 <sib la'>4 r |
+    <re dod'>2 <si lad'>4 r |
+    <lab sol'>2 <fad' re'>4 r |
+    <sib, sol' mib'>4 <sol' mib'>8 <sol mib'> \t {<sol mib'><sol mib'><sol mib'>}
+    <sib, sol' mib'>4 <sol' mib'>8 <sol mib'> \t {<sol mib'><sol mib'><sol mib'>}|
+    <mi red'>16 <mi red'> <mi red'> <mi red'> \t {<mi red'><mi red'><mi red'>} <mi red'>8 r4 |
+    R2*2
+    
+    %%% Tempo I %%%
+    \pizz la,4 fad r fad mib r r mib r | R2.*2
+    \arco do'2.:32 <lab do>: <la re>: sib:
+    \repeat tremolo 12 {re32 do} la4 r2 | R2.
+    \pizz fa4 r re r2 mib4 |
+    
+    %%% Tempo II %%%
+    R1.*2
+    r2 r4 \arco mib2. mi1.~ mi2. r4 r2 |
+    mib'1.:32 <mib re'>2.: <mib re'>4 r |
+    R1 R2. R2
   }
 }
 

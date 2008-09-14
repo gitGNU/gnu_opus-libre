@@ -182,6 +182,27 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
 ActeUnSceneTroisViolonTrois = { \ViolonTrois
   \relative {
     R2.*5 <sib la'>2.:32~ <sib la'>: <sib la'>4 r2 |
+    r4 \pizz si r | r sol r r8 sib r dob sib4 |
+    \arco la2. R2.*2 sold2. <la sold'>2. |
+    <si lad'>2.:32~ <si lad'>:~ <si lad'>4 r \pizz sol sib r2 |
+    R2.*4
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4*5 R1*4
+    \arco <sib sol' mib'>4 <sol' mib'>8 <sol mib'> \t {<sol mib'><sol mib'><sol mib'>}
+    <sib, sol' mib'>4 <sol' mib'>8 <sol mib'> \t {<sol mib'> <sol mib'> <sol mib'>}|
+    <sib la'>16 <sib la'> <sib la'> <sib la'> \t {<sib la'><sib la'><sib la'>} <sib la'>8 r4 |
+    R2*2
+    
+    %%% Tempo I %%%
+    \pizz la,4 si r do la r |
+    R2.*6 \arco fa'2.:32
+    \repeat tremolo 12 {re32 fa} lab4 r2 |
+    R2. \pizz sib,4 r sold r2 la4 |
+    
+    %%% Tempo II %%%
+    R1.*3 r2 sol1~ sol2. r4 r2 |
+    r2 r4 la'2.:32 <la sold'>2.: <la sold'>4 r | R1 R2. R2
   }
 }
 

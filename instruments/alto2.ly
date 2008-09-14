@@ -192,6 +192,34 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
 ActeUnSceneTroisAltoDeux = { \AltoDeux
   \relative {
     R2.*4 <mi, red'>2.:32~ <mi red'>:~<mi red'>: <mi red'>4 r2 |
+    r4 \pizz fad r r red r r8 dod r re fa4 |
+    \arco <do la'>2. R2.
+    mib2. re2.:32 mib2. |
+    <fa mi'>2.:32~ <fa mi'>:~ <fa mi'>4 r \pizz re dod r2 |
+    r \arco re4 dod2. r2 re4 dod2 r4 |
+    
+    %%% Lamento %%%
+    R1.*6 R1*5/4*5
+    <sol'fad'>2 <solb fa'>4 r |
+    <sol fad'>2 <solb fa'>4 r |
+    <sol fad'>2 <solb fa'>4 r |
+    <mib  re'>2 <mi  red'>4 r |
+    <do sib' sol'>4 <sib' sol'>8 <sib sol'> \t {<sib sol'><sib sol'><sib sol'>}
+    <do, sib'sol'>4 <sib' sol'>8 <sib sol'> \t {<sib sol'><sib sol'><sib sol'>}
+    <do, si'!>4 <do si'>8 <do si'> r4 |
+    R2*2
+    
+    %%% Tempo I %%%
+    \pizz mib4 do r fad mib r r mib r | R2.
+    \arco fad2.:32 sol2.:32 <mib do'>: <mib re'>: solb:
+    \repeat tremolo 12 {do32 si} do4 r2 | R2.
+    \pizz fa,4 r re r2 mib4 |
+    
+    %%% Tempo II %%%
+    R1.*2
+    r2 r4 \arco mib2.~ mib1.~ mib2. r4 r2 |
+    sib'1.:32 <sib la'>2.: <sib la'>4 r |
+    R1 R2. R2
   }
 }
 

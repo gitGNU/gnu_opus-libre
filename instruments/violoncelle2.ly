@@ -163,6 +163,31 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
 ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
   \relative {
     do,,2.:32~do: <do si'>2.:32~<do si'>:~<do si'>:~<do si'>:~<do si'>: <do si'>4 r2 |
+    r4 \pizz la' r r fad r r8 mi r fa lab4 |
+    \arco sib2. mib,2.:32 <sib'la'>2. mib,2.:32
+    mi2. fad2.:32~fad:~fad4 r \pizz reb mi r2 |
+    r2 \arco sib'4 la2. r2 sib4 la2 r4 |
+    
+    %%% Lamento %%%
+    r2 r4 \pizz re si dod | sib2 r1 | R1.*3
+    \arco sib2 re4 r r2 | reb fa4 r2 |
+    la,2 solb4 r2 | lab fa4 r2 | la! solb4 r2 | la sib4 r2 |
+    <mi, red'>2 <sol fad'>4 r |
+    <lab sol'>2 <sol fad'>4 r |
+    <mi  red'>2 <sol fad'>4 r |
+    <mi  red'>2 <fa   mi'>4 r |
+    <reb do'>2 <reb do'>4 <reb do'>4. <reb do'>8 <reb do'> <reb do'> |
+    <reb do'>4 <reb do'>8 <reb do'> r4 | R2*2
+    
+    %%% Tempo I %%%
+    \pizz mi4 sol r mi sib' r r mi, r |
+    \arco la2.:32 la2. sold la lad si~ si4 r8 mi, \t {mi mi mi} |
+    dod'4 r2 R2. \pizz si4 r mib, r2 solb4 |
+    
+    %%% Tempo II %%%
+    r2 r4 mib reb mi | \arco do1.~ <do sol'>~<do sol'>~
+    <do sol'>2 r4 si'2.:32~si1.:32~<do si'>2.:32 <do si'>4 r |
+    R1 R2. R2
   }
 }
 
