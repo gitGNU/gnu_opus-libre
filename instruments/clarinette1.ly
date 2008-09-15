@@ -274,6 +274,16 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
 	}
 }
 
+ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
+  \relative {
+    \partial 4 r4 fa' mi re8 dod4 r16 do sib la |
+    sol la sol fa mi fa mi re dod si la si dod8 r |
+    fa'4 mi re8 do4 r16 fad, fad fad |
+    sib4 sol la r2 |
+    R2*3
+  }
+}
+
 ActeDeuxSceneUnClarinetteUn = { \ClarinetteUn
 	\relative {
     R2.*3 | re''8 sib~ sib2~ | sib4 r | 

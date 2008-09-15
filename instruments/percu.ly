@@ -218,7 +218,7 @@ ActeUnSceneTroisTerPercus = { <<
       sib4.\sustainOn fa dob solb do,!2 r4\sustainOff R2.*14
     }
   }
-    \new Staff { \Marimba
+  \new Staff { \Marimba
     \relative {
       R2*3 R2. R2*2 R2.*7 R1*3
       r2 r8 r16 mi'32 fa mi'4 |
@@ -265,6 +265,27 @@ ActeUnSceneTroisTerPercus = { <<
   }
   >>
 }
+
+ActeUnSceneQuatrePercus = {
+  <<
+   \new Staff { \Vibraphone
+     \relative {
+       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3
+     }
+   }
+   \new Staff { \Marimba
+     \relative {
+       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3
+     }
+   }
+   \new DrumStaff { \Percus
+     \drummode {
+       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+     }
+   }
+  >>
+}
+     
 
 ActeDeuxSceneUnPercus = {\Percus
 		R2.*4 R2 R2.*2 R2 R2.*3 R2 |

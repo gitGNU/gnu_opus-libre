@@ -480,6 +480,18 @@ ActeUnSceneTroisTerPiano = { \Piano
   }
 }
 
+ActeUnSceneQuatrePiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+    s2
+  }
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+    s2^\markup { \score { \new ChordNames \chordmode { la:7 } \layout {indent = 0 }}}
+  }
+}
+
 ActeDeuxSceneUnPiano = { \Piano <<
 \new Staff = "droite" { 
     \relative { R2.*4 R2 R2.*2 R2 \clef bass r8 <sol lab sib dob re>\arpeggio ~ <sol lab sib dob re>2\laissezVibrer R2.*2 R2 |

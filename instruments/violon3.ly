@@ -251,6 +251,13 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
   }
 }
 
+ActeUnSceneQuatreViolonTrois = { \ViolonTrois
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
+    R2. re4 si si8 dod r4 R2-\fermataMarkup
+  }
+}
+
 ActeDeuxSceneUnViolonTrois = { \ViolonTrois
 \relative {
 		la''2.~\CaV la2.~\CaV la2.~\CaV la4\CaV r2 

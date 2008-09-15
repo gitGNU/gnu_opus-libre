@@ -246,6 +246,13 @@ ActeUnSceneTroisTerFluteUn = { \Piccolo
   }
 }
 
+ActeUnSceneQuatreFluteUn = { \FluteUn
+  \relative {
+    \partial 4 r16 la'' la la re4 do re8 la4 r R2 r4 r16
+    la la la | re4 do re8 la4 r r8 sib r dod re4 r2 | R2*3
+  }
+}
+
 ActeDeuxSceneUnFluteUn = { \FluteUn
   \relative {
 		R2.*4 R2 R2.*2 R2 | r2 \tt {si''16 red re fad fa}| 

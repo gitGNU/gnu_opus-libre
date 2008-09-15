@@ -249,6 +249,13 @@ ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
   }
 }
 
+ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
+    R2. sol4 fa mi8 la, r4 R2-\fermataMarkup
+  }
+}
+
 ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
   \relative { \clef treble
     \pizz la4 r r | la r8 la r4 | la la la | 

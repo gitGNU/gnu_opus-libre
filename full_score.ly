@@ -63,6 +63,9 @@
   \includeLayout
 }
 
+%%FIXME: how can I throw this into either paper or layout.ly?
+#(set-global-staff-size 12)
+
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
 Prologue = {
@@ -427,6 +430,71 @@ ActeUnSceneTroisTer = {
   >>
 }
 
+ActeUnSceneQuatre = {
+  <<
+    \new TopLine \ActeUnSceneQuatreMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneQuatreFluteUn
+            \new Staff \ActeUnSceneQuatreFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneQuatreClarinetteUn
+            \new Staff \ActeUnSceneQuatreClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneQuatreSaxophoneUn
+            \new Staff \ActeUnSceneQuatreSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeUnSceneQuatrePercus
+
+    \new TopLine \ActeUnSceneQuatreMesures
+
+    \new ChoirStaff
+       <<
+         \new Staff \new Voice = "soprano" \ActeUnSceneQuatreSopranoDeux
+         \new Lyrics \lyricsto "soprano" { \ActeUnSceneQuatreSopranoDeuxTexte }
+         \new Staff \new Voice = "alto" \ActeUnSceneQuatreContralto
+         \new Lyrics \lyricsto "alto" { \ActeUnSceneQuatreContraltoTexte }
+         \new Staff \new Voice = "tenor" \ActeUnSceneQuatreTenor
+         \new Lyrics \lyricsto "tenor" { \ActeUnSceneQuatreTenorTexte }
+         \new Staff \new Voice = "barytonUn" \ActeUnSceneQuatreBarytonUn
+         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneQuatreBarytonUnTexte }
+         \new Staff \new Voice = "barytonDeux" \ActeUnSceneQuatreBarytonDeux
+         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneQuatreBarytonDeuxTexte }
+       >>
+
+    \new TopLine \ActeUnSceneQuatreMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneQuatreViolonUn
+            \new Staff \ActeUnSceneQuatreViolonDeux
+            \new Staff \ActeUnSceneQuatreViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeUnSceneQuatreAltoUn
+            \new Staff \ActeUnSceneQuatreAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeUnSceneQuatreVioloncelleUn
+            \new Staff \ActeUnSceneQuatreVioloncelleDeux
+          >>
+        \new Staff \ActeUnSceneQuatreContrebasse
+      >>
+    \new PianoStaff \ActeUnSceneQuatrePiano
+  >>
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 %showLastLength = s1*49
@@ -462,13 +530,13 @@ ActeUnSceneTroisTer = {
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneTrois
     \header {
       piece = \ActeUnSceneTroisTitre
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTroisBis
     \header {
@@ -480,13 +548,13 @@ ActeUnSceneTroisTer = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneQuatre
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %{
   \score {
     \Entracte
     \header {

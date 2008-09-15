@@ -261,6 +261,13 @@ ActeUnSceneTroisTerViolonUn = { \ViolonUn
   }
 }
 
+ActeUnSceneQuatreViolonUn = { \ViolonUn
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
+    r2 r16 re re re sol4 re re8 la' r4 R2-\fermataMarkup
+  }
+}
+
 ActeDeuxSceneUnViolonUn = { \ViolonUn
   \relative	{
 		<la' re\harmonic la''>2. ~

@@ -258,6 +258,13 @@ ActeUnSceneTroisTerViolonDeux = { \ViolonDeux
   }
 }
 
+ActeUnSceneQuatreViolonDeux = { \ViolonDeux
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
+    r2 r16 re re re sol4 re re8 mi r4 R2-\fermataMarkup
+  }
+}
+
 ActeDeuxSceneUnViolonDeux = { \ViolonDeux
   \relative	{
 		\pizz <la' la'>4 r2 R2.*3 R2 r2 \arco <re, sol\harmonic re''>4 ~ 

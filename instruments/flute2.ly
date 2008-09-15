@@ -222,6 +222,14 @@ ActeUnSceneTroisTerFluteDeux = { \FluteDeux
   }
 }
 
+ActeUnSceneQuatreFluteDeux = { \FluteDeux
+  \relative {
+    \partial 4 r4 la'' la fa8 mi4 r16 fad sol la |
+    sib do sib la sol la sol fa mi re dod mi la,8 r |
+    la'4 la fa8 fa4 r r8 re r mi fa4 r2 | R2*3
+  }
+}
+
 ActeDeuxSceneUnFluteDeux = { \FluteDeux
   \relative {
 		R2.*4 R2 R2.*2 R2 | r2 \t {si''8 re fa}| fad2 red8 r16 fad! | 

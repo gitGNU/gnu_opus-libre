@@ -186,6 +186,12 @@ ActeUnSceneTroisTerContrebasse = { \Contrebasse
   }
 }
 
+ActeUnSceneQuatreContrebasse = { \Contrebasse
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3
+  }
+}
+
 ActeDeuxSceneUnContrebasse = { \Contrebasse
   \relative	{
 		R2.*4 R2 R2.*2 R2 | 

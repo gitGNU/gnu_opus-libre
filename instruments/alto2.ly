@@ -280,6 +280,13 @@ ActeUnSceneTroisTerAltoDeux = { \AltoDeux
   }
 }
 
+ActeUnSceneQuatreAltoDeux = { \AltoDeux
+  \relative {
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
+    r2 r16 do sib la sib4 sold la8 la r4 R2-\fermataMarkup
+  }
+}
+
 ActeDeuxSceneUnAltoDeux = { \AltoDeux
 	\relative { \clef treble 
     \ttt {

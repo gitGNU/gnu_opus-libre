@@ -2,3 +2,20 @@ Opéra Libre is written by Valentin Villenave (http://valentin.villenave.net/).
 Most of the text was written by Lewis Trondheim (http://lewistrondheim.com/).
 
 None of this would have been possible without LilyPond, the GNU music typesetter,
+created by Han-Wen Nienhuys and Jan Nieuwenhuizen and developed by a large number
+of contributors.
+
+This scores uses functions and concepts specifically designed by:
+  - Rune Zedeler
+  - Joe Neeman
+  - Reinhold Kainhofer
+  - Neil Puttock
+  - Mats Bengtsson
+  - Jay Anderson
+  - Nicolas Sceaux
+... and many ideas given by my countless friends in the LilyPond community!
+
+The code was entirely written using the Free jEdit editor, created by Slava Pestov,
+and Bertalan Fodor's wonderful LilyPondTool plugin (much more than a plugin
+actually).  Development was made using the GIT version tracker, created by Linus
+Torvalds and maintained by Junio Hamano, under the GNU/Linux operating system.

@@ -10,6 +10,7 @@
 includeLayout = \layout {
 %% Spacing Variables ----------------------------------------------%
   indent = 2.0\cm
+  #(layout-set-staff-size 16)
   \context {
     \Staff
     \remove "Axis_group_engraver"
