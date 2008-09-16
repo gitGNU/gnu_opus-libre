@@ -411,7 +411,6 @@ ActeUnSceneTroisPiano = { \Piano
     r4 <si fad' si>
   }
 }
-    
 
 ActeUnSceneTroisTerPiano = { \Piano
   \PianoDeuxMains
