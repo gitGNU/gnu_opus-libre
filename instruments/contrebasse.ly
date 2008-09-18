@@ -144,6 +144,38 @@ ActeUnSceneTroisContrebasse = { \Contrebasse
   }
 }
 
+ActeUnSceneTroisBisContrebasse = { \Contrebasse
+  \relative {
+    R1*3 r4 sol2\CaV r4 R1*2 r4 sol2\CaV r4 |
+    R1 r2 re,4 la8 si fad4 r r2 | R1*8
+    fad1~fad~fad2. r4 | R1*2
+    \pizz <re' la'\harmonic>4 r <re sol\harmonic> r
+    \arco <re fad\harmonic>1~<re fad\harmonic>2. r4 \clef "G_8" |
+    \simile fad''4\CaV r fad\CaV r
+    fad\CaV r fad\CaV r
+    fad\CaV r fad\CaV r
+    fad\CaV r fad\CaV r
+    fad\CaV r fad\CaV r
+    fad\CaV r fad\CaV r
+    fad\CaV r fad\CaV r
+    fad\CaV r fad\CaV r |
+    \ordin fad\glissando red8 r red4\glissando do8 r |
+    sib\glissando sol16 r sol8\glissando mi16 r mi8\glissando dod16 r \clef "F_8" |
+    re,1~re~re
+    <fa dod'>4\upbow \ind #"pizz. du pouce" re r2
+    <fa dod'>4\upbow \simile re r2
+    <fa dod'>4\upbow re <fa dod'>\upbow re
+    <fa dod'>\upbow re <fa dod'>\upbow re
+    <fa dod'>\upbow re <fa dod'>\upbow re
+    <fa dod'>\upbow re <fa dod'>\downbow <la, fa'> |
+    fad1~fad~fad~fad~fad~fad~fad2. r4 |
+    R1*7
+    <re' fad\harmonic>1~<re fad\harmonic>~<re fad\harmonic>4
+    r4 \ordin fad2~fad1~fad4 r r2 |
+    sol1 fad~fad~fad~fad~fad~fad\fermata
+  }
+}
+
 ActeUnSceneTroisTerContrebasse = { \Contrebasse
   \relative {
     R2*3 R2. R2*2 R2.*7

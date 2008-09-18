@@ -227,6 +227,59 @@ ActeUnSceneTroisClarinetteUn = { \ClarinetteUn
   }
 }
 
+ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
+  \relative {
+    fad4 red8 r fad4 red8 r |
+    fad4 red8 r fad4 red8 r |
+    fad4 red8 r fad4 red8 r | R1 r2
+    fad4 red8 r 
+    fad4 red8 r fad4 red8 r | R1 r2
+    fad4 red8 r fad4 red8 r 
+    r2 | R1*11 r2 r4
+    lad16 dod8 lad16 |
+    \tt {fa    lab sib reb mi} sol8 r
+    \tt {fa,16 lab sib reb mi} sol8 r
+    \tt {fa,16 lab sib reb mi} sol8 r
+    \tt {fa,16 lab sib reb mi} sol8 r
+    \tt {fa,16 lab sib reb mi} sol8 r
+    \tt {fa,16 lab sib reb mi} sol8 r |
+    fad,4 r r2 R1
+    fad'4 red8 r fad4 red8 r |
+    fad4  red8 r fad4 red8 r |
+    fad4 red8 r16 sol,
+    fad'4 red8 r |
+    fad~ \t {fad16 si,, sol'} red'8 r
+    fad4 red8 r16 mi, |
+    fad'4 red16 r \t {sol, sib do}
+    fad8. fa32 mi red8 r |
+    fad4 red8 r
+    fad16 sol,~ \t {sol si, lab} red'8 r |
+    fad16 mi, lab,32 sol' sib do red8 r
+    fad4 red8 r
+    fad4 red8 r fad4 red8 r |
+    fad8 la16 r red,8 fad16 r do8 mib16 r sol,8 sib16 r |
+    dod,8 r r2 |
+    r4 fad2 fad4 mi2 fad~fad2. r4 | R1*2
+    \tt {fad16  sol la do re} r4
+    \tt {fad,16 sol la do re} r4 |
+    \tt {fad,16 sol la do re} fa8 r
+    \tt {fad,16 sol la do re} fa8 r |
+    \tt {fad,16 sol la do re} fa8 r
+    \tt {fad,16 sol la do re} fa8 r |
+    \tt {fad,16 sol la do re} fa8 r
+    \tt {fad,16 sol la do re} fa8 r |
+    fad,2. r4 | R1*6
+    r4 fad do8 r r4 |
+    r  fad do8 r r4 |
+    fad do8 r fad4 do8 r |
+    R1*7
+    do'2 la~la4 r r2 |
+    R1*5-\markup "Prenez la Clarinette" \ClarinetteUn
+    r2 sol' do1\fermata
+  }
+}
+    
+
 ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
 	\relative {
 		r4 r16 lab' lab lab | reb2 | 

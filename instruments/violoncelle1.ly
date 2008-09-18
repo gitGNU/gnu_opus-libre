@@ -200,6 +200,23 @@ ActeUnSceneTroisVioloncelleUn = { \VioloncelleUn
   }
 }
 
+ActeUnSceneTroisBisVioloncelleUn = { \VioloncelleUn
+  \relative {
+    R1*3 \clef tenor
+    r4 la'2\CaV r4 | R1*2 r4 fad2 r4 | R1 \clef bass |
+    r2 lad,,4 sold fad r r2 | R1*6
+    fad1~fad~fad~fad~fad2. r4 | R1*9
+    mi'1 mi2 mi <sold, mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <fa dod'>|
+    do2. R1*7
+    <sold' dod>4\glissando <si mi>8 r <sold dod>4\glissando <si mi>8 r
+    <sold dod>4\glissando <si mi>8 r <sold dod>4 lad |
+    fad1~fad~fad~fad~fad~fad~fad2. r4 | R1*3 \clef tenor
+    r4 la''2\CaV r4 \clef bass |
+    mi,2 mib re1 reb2 do si1~si~si4 r r2 |
+    R1*2 fad'1 mi~mi~mi~mi~mi~mi\fermata
+  }
+}
+
 ActeUnSceneTroisTerVioloncelleUn = { \VioloncelleUn
   \relative {
     R2*3 R2. R2*2 R2. \clef treble

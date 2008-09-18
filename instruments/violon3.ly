@@ -206,6 +206,22 @@ ActeUnSceneTroisViolonTrois = { \ViolonTrois
   }
 }
 
+ActeUnSceneTroisBisViolonTrois = { \ViolonTrois
+  \relative {
+    R1*8 r2 red4 mid fad4 r r2 |
+    R1*20
+    sol,1 sol2 sol sol sol sol sol |
+    la'4 si8 r fad4 la8 r | do,8 mib16 r sib8 do16 r sol8 sib16 r |
+    R1*16
+    r2 r4 r8 \pizz si |
+    r si r4 r r8 si |
+    R1*3
+    r2 \arco <sold mi'> <sol mib'> re' | fad4 r r2 |
+    R1*4
+    dod1 la~la~la~la~la~la\fermata
+  }
+}
+
 ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
   \relative {
     R2*3 R2. R2*2 R2.

@@ -412,6 +412,56 @@ ActeUnSceneTroisPiano = { \Piano
   }
 }
 
+ActeUnSceneTroisBisPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R1*3 <do fad>8 <red la'>~<red la'>2 r4 |
+    R1*2 <mi, la red>8 <sol do fad>~<sol do fad>2 r4 |
+    R1 r2 <do mib>4 <si fa'> | <fad fad'>1~<fad fad'>~<fad fad'>2. r4 |
+    R1*8 r2 r4 dod' | <mi sol> r r2 |
+    r2 \t {r16 <lad, dod mi>8 <lad dod mi> <lad dod mi>16}
+    \t {r16 <lad dod mi>8 <lad dod mi> <lad dod mi>16} |
+    \t {r16 <sold lad dod mi>8 <sold lad dod mi> <sold lad dod mi>16}
+    \t {r16 <sold lad dod mi>8 <sold lad dod mi> <sold lad dod mi>16}
+    \t {r16 <dod mi sol la>8 <dod mi sol la> <dod mi sol la>16}
+    \t {r16 <mi sol la do>8 <mi sol la do> <mi sol la do>16 } |
+    <fad,fad'>1~<fad fad'> R1
+    <sol red' fad>\arpeggio %%% Tomb Raider II !!!
+    <sol fad'>2 <sol fad'> <sib do fad> <sib do fad> <sib do fad> <sib do fad> |
+    <sib do fad> <sib do fad> <sib do fad> <sib do fad> <sib do fad> <sib do fad>|
+    <sib fad' la>2.\arpeggio r4 R2. R1*2
+    \tt {fad16 sol la do re}\tt {fad, sol la do re}\tt {fad, sol la do re}\tt {fad, sol la do re}
+    \tt {fad, sol la do re} \tt {fad, sol la do re} \tt {fad, sol la do re} \tt {fad, sol la do re}
+    \tt {fad, sol la do re} \tt {fad, sol la do re} \tt {fad, sol la do re} \tt {fad, sol la do re}
+    \tt {fad, sol la do re} fad, sol la do re fad, sol la do re fad, sol |
+    la do re fad, sol la do re \t {fad,8 sol la} \t {do re fad,} |
+    \t {sol la do} \t {re fad, sol} \t {la do re} fad, sol |
+    la do re fad, sol la do re | <fad, fad'>1~<fad fad'>~<fad fad'>~<fad fad'>2. r4 |
+    R1*6 <sib mi la>8 <reb mi sol do>~<reb mi sol do>2 r4 |
+    do2~ do8 do \t {do do do} do4 do2.\laissezVibrer | R1*9
+    <sol' dod fad>2*2/1\laissezVibrer <sol dod fad>2*2/1\laissezVibrer
+    <sol dod fad>2*2/1\laissezVibrer R1
+  }
+  \relative {
+    R1*3 <dod, la'>8 <sib mi sol>~<sib mi sol>2 r4 |
+    R1*2 \pl re,2. {sib'8 <sold dod>~<sold dod>2} r4 |
+    R1 r2 <lad mi>4 sold <fad, fad'>1~<fad fad'>~<fad fad'>2. r4 |
+    R1*8 r2 r4 sib'' <fa lab> r r2 |
+    R1 \t {<si,, si'>8 <fa' fa'> <re re'>} \t {<si si'> <fa' fa'> <re re'>}
+    \t {<si si'> <la la'> <fa' fa'>} \t {<re re'> <si si'> <la la'>} |
+    <fad fad'>1~ fad'8 fad \t {fad fad fad} fad2
+    R1
+    <si>1\arpeggio si2 si <si sol'> <si sol'> <si sol'> <si sol'> |
+    <si sol'> <si sol'> <si sol'> <si sol'> <sold mi'> <sold mi'> |
+    <do, sold' mi'>2.\arpeggio r4 | R2. R1*2
+    R1*7
+    <fad, fad'>1~ fad'4~ fad8 fad \t {fad fad fad} fad4~ fad1~ fad2. r4 |
+    R1*6 <la re fa>8 <fad si sold'>~<fad si sold'>2 r4 | R1*11
+    <fad' do'>2*2/1\laissezVibrer <fad do'>2*2/1\laissezVibrer
+    <fad do'>2*2/1\laissezVibrer R1
+  }
+}
+
 ActeUnSceneTroisTerPiano = { \Piano
   \PianoDeuxMains
   \relative {

@@ -19,6 +19,12 @@ Marimba = {
   \set Staff.midiInstrument = "marimba"
 }
 
+GrandMarimba = {
+  \set GrandStaff.instrumentName = \markup { \hcenter-in #27.5 "Marimba  "}
+  \set GrandStaff.shortInstrumentName = "Mar.  "
+  \set GrandStaff.midiInstrument = "marimba"
+}
+
 Vibraphone = {
   \set Staff.instrumentName = \markup { \hcenter-in #27.5 "Vibraphone  "}
   \set Staff.shortInstrumentName = "Vib.  "
@@ -198,6 +204,78 @@ ActeUnSceneTroisPercus = { <<
     }
   }
   >>
+}
+
+ActeUnSceneTroisBisPercus = {
+  \new GrandStaff \GrandMarimba \PianoDeuxMains
+   \relative {
+     r8<red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> | R1 r2
+     r8<red fad> r <red fad>
+     r <red fad> r <red fad> r <red fad> r <red fad> | R1 r2
+     r8<red fad> r <red fad>
+     r <red fad> r <red fad> r2 R1*12
+     r8<mi sol> r <mi sol> r <mi sol> r <mi sol> |
+     r <mi sol> r <mi sol> r <mi sol> r <mi sol> |
+     r <mi sol> r <mi sol> r <mi sol> r <mi sol> | R1*2
+     r8<red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     r <red fad> r <red fad> r <red fad> r <red fad> |
+     \ttt {r16 fad \gauche sol, \droite red' \gauche mi, si}
+     \tt {sold sol' mi sib' do} red4 \droite r8 <red fad> |
+     \t {r16 \gauche <mi, sol> \droite <red' fad>} <re' fa>8
+     r <re fa>
+     r32 \gauche <sold,,, si> <sol' sib> <do mib> \droite <si' re>8 r <si re> |
+     r16 \t {sib,32 mib do} la'8 r16 \gauche \t {sol,32 do sib} \droite fad'8 s4 |
+     R1*3
+     r8 <do re> r <do re> r2 r8 <do re> r <do re> r2 |
+     r8 <do re> r <do re> r <do re> r <do re> |
+     r <fa lab> r <fa lab> r <fa lab> r <fa lab> |
+     <la,do><fa'lab> r <fa lab> r <fa lab> r <fa lab> |
+     \gauche \t {<dod,mi>16 \droite <la' do> \gauche <dod,mi>} \droite <fa' lab>8
+     r <fa lab> r <fa lab> r <fa lab> |
+     R1*7
+     r4 r8 <do fa> r <do fa> r4 |
+     r4 r8 <do fa> r <do fa> r4 |
+     r8 <do fa> r <do fa> r <do fa> r <do fa> | R1*16
+   }
+   \relative {
+     R1
+     r8 la r la r la r la |
+     r  la r la r la r la |
+     R1
+     r2 r8 <sol la> r <sol la> |
+     r <sol la> r <sol la> r <sol la> r <sol la> |
+     R1
+     r2 r8 <mi sol> r <mi sol> |
+     r <mi sol> r <mi sol> r2  |
+     R1*12
+     r8 <fa lab> r <fa lab> r <fa lab> r <fa lab> |
+     fa,<fa'lab> r <fa lab> r <fa lab>16 si, r8 <fa'lab> |
+     r <fa lab> r <fa lab>32 fa,16 si32 r8 <fa'lab> r <fa lab> |
+     R1*3
+     r8 sol r sol r sol r sol |
+     r <mi sol> r <mi sol> r <mi sol> r <mi sol> |
+     r <mi sol> r <mi sol> si<mi sol> r <mi sol> |
+     r <mi sol> si<mi sol> r <mi sol> r <mi sol> |
+     r16 <mi sol> r8 r r16 <mi sol> r8 <mi sol> r <mi sol> |
+     sold,<mi'sol>r<mi sol>r <mi sol> r <mi sol> |
+     s1*2 s2 \t {r16 si sold} sol'8 |
+     R1*5
+     r8 la r la r la r la |
+     r <la do> r <la do> r <la do> r <la do> |
+     <dod, mi> <la' do> r <la do> r16 <la do> r8 r <la do> |
+     s8 r16 <la do> r <dod, mi> r8 r r16 <la'do> r8 <la do> |
+     R1*7
+     r4 r8 <la si> r <la si> r4 |
+     r4 r8 <la si> r <la si> r4 |
+     r8<la si> r <la si> r <la si> r <la si> | R1*16
+   }
 }
 
 ActeUnSceneTroisTerPercus = { <<

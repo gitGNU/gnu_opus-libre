@@ -123,6 +123,25 @@ ActeUnSceneTroisSaxophoneUn = { \SaxAltoUn
   }
 }
 
+ActeUnSceneTroisBisSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R1 sol~sol R1 |
+    r2 reb~reb1 R1|
+    r2 reb~reb r | R1*7
+    r2 sib'~sib2. sib4 lab2 sib~sib r4 sib lab2. sib8 r |
+    R1
+    re,16 lab' fa sib reb8 r
+    re,16 lab' fa sib reb8 r
+    re,16 lab' fa8 re16 lab' fa8 re16 lab' fa8 re16 lab' fa8 |
+    solb4 r r2 | R1*10 R2. R1*3
+    reb4 r r2 reb4 r r2 reb4 r reb r reb r reb r |
+    reb8. solb16 r4 reb8~\t {reb16 solb do} r8 r16 mi, |
+    reb8 do' reb' r reb,,4 r16 la'8. | solb'2. r4 | R1
+    r2 r4 sib, lab2 sib | r2 r4 la sol2 la~ la2. r4 |
+    R1*9
+  }
+}
+
 ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*6 R2.*19

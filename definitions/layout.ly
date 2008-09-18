@@ -10,7 +10,6 @@
 includeLayout = \layout {
 %% Spacing Variables ----------------------------------------------%
   indent = 2.0\cm
-  #(layout-set-staff-size 16)
   \context {
     \Staff
     \remove "Axis_group_engraver"
@@ -50,7 +49,7 @@ includeLayout = \layout {
     autoBeamSettings = #modern-auto-beam-settings
     autoAccidentals = #modern-style
     ignoreMelismata = ##t
-    tieWaitForNote = ##t %% careful!
+    tieWaitForNote = ##f %% uglier, but safer
   }
 
 %% Text inclusion -------------------------------------------------%

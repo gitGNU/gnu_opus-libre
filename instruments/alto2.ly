@@ -223,6 +223,37 @@ ActeUnSceneTroisAltoDeux = { \AltoDeux
   }
 }
 
+ActeUnSceneTroisBisAltoDeux = { \AltoDeux
+  \relative {
+    R1*3 r4 mi,2 r4 R1*2 r4 reb2\CaV r4 R1 |
+    r2 <mi do'>4 <si' fa'> <fad fad'> r r2 |
+    R1*14
+    fad1~ fad2. r4 |
+    r \pizz mib' r mib |
+    r mib r mib |
+    r mib r mib |
+    r mib r mib |
+    r mib r mib |
+    r mib r mib |
+    r <sol, mib'> r <sol mib'> |
+    r <mi! sol mib'> r <mi sol mib'> |
+    r16 mib' re' mib, r do si' do,
+    r do si' do, r sib la' sib,|
+    \t {fad'8 sib, mib} \t {sol, do mi,} sol dod, |
+    r4 \arco fad2 fad4 | mi2 fad~ fad1
+    R1*3
+    <la re>1 <la re>2 <la re> <la re> <mi la> |
+    \pizz <fad fad'>4 r r2 | R1*6
+    r4 \arco mib\upbow r2 |
+    r4 mib\upbow r2 |
+    mib4\upbow r mib\upbow r |
+    r4 reb'2 r4 |
+    lab2 sol solb fa mi mib |
+    fad1~fad~fad4 r mi!2~mi fad~fad4 r r2 |
+    R1*7
+  }
+}
+
 ActeUnSceneTroisTerAltoDeux = { \AltoDeux
   \relative {
     R2*3 R2. R2*2 R2.

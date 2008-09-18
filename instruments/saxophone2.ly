@@ -131,6 +131,28 @@ ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
   }
 }
 
+ActeUnSceneTroisBisSaxophoneDeux = { \SaxophoneBaryton
+  \relative {
+    R1*2 mi,1 R1 r2 lab,~ lab1 R1 r2 fa~ fa r |
+    solb1~solb~solb2. r4 | R1*2 |
+    solb1~solb~solb2. r4 | R1*5
+    r4 re'16 lab' fa sib reb8 r re,16 lab' fa sib |
+    reb8 fa,16 sib reb8 fa,16 sib reb8 fa,16 sib reb fa, re la |
+    solb4 r r2 | R1
+    si1~si~si2. r4 | R1*6 R2.
+    re,1~re~re2. r4 |
+    fa4 re8 r r2 fa4 re8 r r2 |
+    fa4 re8 r fa4 re8 r
+    fa4 re8 r fa4 re8 r
+    fa4 re8 r fa4 re8 r
+    fa4 re8 r fa4 re8 r |
+    solb1~solb2~solb8 r solb4~solb1~solb2. r4 solb1~solb~solb2. r4 |
+    R1*7
+    solb1~solb~solb4 r r2 | R1*9
+  }
+}
+    
+
 ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*6 R2.*19

@@ -191,6 +191,35 @@ ActeUnSceneTroisClarinetteDeux = { \ClarinetteDeux
   }
 }
 
+ActeUnSceneTroisBisClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R1*4 r2 do~do1 | R1 r2 la~la r | R1*11 r2 r4
+    dod16 mi8 dod16 |
+    sol'8 r\tt {fa,16 lab sib reb mi}
+    sol8 r \tt {fa,16 lab sib reb mi}
+    sol8 r \tt {fa,16 lab sib reb mi}
+    sol8 r \tt {fa,16 lab sib reb mi}
+    sol8 r \tt {fa,16 lab sib reb mi}
+    sol8 r \tt {fa,16 lab sib reb mi} |
+    fad4 r r2 | R1*10 R2.
+    r4 la,2 la4 do2 la~la2. r4 |
+    r2 \tt {fad16 sol la do re} r4 |
+    r2 r4 \tt {fad,16 sol la do re}|
+    r4 \tt {fad,16 sol la do re}
+    r4 \tt {fad,16 sol la do re}
+    mib8 r \tt {fad,16 sol la do re}
+    mib8 r \tt {fad,16 sol la do re}
+    mib8 r \tt {fad,16 sol la do re}
+    mib8 r \tt {fad,16 sol la do re}
+    mib8 r \tt {fad,16 sol la do re}
+    mib8 r \tt {fad,16 sol la do re}
+    fad2. r4 | R1*6
+    r4 mib, r2 | r4 mib r2 | mib4 r mib r | R1*7
+    fad'2 re~ re4 r r2 | R1*5
+    r2 lab' reb1\fermata
+  }
+}
+
 ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux
   \relative {
     r4 r16 sol' sol sol do2

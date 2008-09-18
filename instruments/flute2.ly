@@ -180,6 +180,29 @@ ActeUnSceneTroisFluteDeux = { \FluteDeux
   }
 }
 
+ActeUnSceneTroisBisFluteDeux = { \FluteDeux
+  \relative {
+    do1~do~do R1
+    r2 do do do R1
+    r2 do do r | R1*7
+    r2 dod~ dod~ dod8 r dod4 |
+    mi2 dod~dod~ dod8 r dod4 |
+    mi2. dod8 r | R1
+    \t {sol'8 mi r} \t {sol mi r} \t {sol mi r} \t {sol mi r} |
+    \t {la sol r} \tt {la16 reb, mi sol la} do8 r \tt {reb,16 mi sol la do} |
+    fad,4 r r2 R1*10 R2. R1*7
+    \tt {fa16  lab sib si do} dod8 r
+    \tt {fa,16 lab sib si do} dod8 r
+    \tt {fa,16 lab sib si do} dod8 r
+    \tt {fa,16 do mib fad la} re8 r |
+    fad,1~fad2. r4 |
+    r2 r4 dod mi2 dod | r r4 do! mib2 do~do2. r4 |
+    R1*7
+    fad2 r4 red dod2 red~red4 r r2 |
+    R1*9
+  }
+}
+
 ActeUnSceneTroisTerFluteDeux = { \FluteDeux
   \relative {
     R2*3 R2. R2*2 R2.*4

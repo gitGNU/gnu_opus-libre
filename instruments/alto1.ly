@@ -238,6 +238,36 @@ ActeUnSceneTroisAltoUn = { \AltoUn
   }
 }
 
+ActeUnSceneTroisBisAltoUn = { \AltoUn
+  \relative {
+    R1*3 r4 red2 r4 R1*2 r4 do2\CaV r4 R1 |
+    r2 <do mib>4 <si fa'> <fad fad'> r r2 |
+    R1*14
+    fad1~ fad2. r4 |
+    r \pizz mib' r mib |
+    r mib r mib |
+    r mib r mib |
+    r mib r mib |
+    r mib r mib |
+    r mib r mib |
+    r <sol, mib'> r <sol mib'> |
+    r <mi! sol mib'> r <mi sol mib'> |
+    r16 solb' fa' solb, r mib re' mib,
+    r mib re' mib, r do si' do, |
+    \t {la'8 mib fad} \t {do mib sol,} sib mi, |
+    r4 \arco la2 la4 | do2 la~ la1
+    R1*3
+    <do mib>1 <do mib>2 <do mib> <do mib> <sol do> |
+    \pizz <fad fad'>4 r r2 | R1*6
+    r4 \arco fad\upbow \ind #"pizz. du pouce" do r |
+    r fad\upbow \simile do r |
+    fad\upbow do fad\upbow do|
+    r4 <do fa\harmonic do''>2 r4 |
+    do'1~\CaV do2\CaV reb do si fad1~fad~fad4 r la2~la fad~fad4 r r2 |
+    R1*7
+  }
+}
+
 ActeUnSceneTroisTerAltoUn = { \AltoUn
   \relative {
     R2*3 R2. R2*2 R2.
