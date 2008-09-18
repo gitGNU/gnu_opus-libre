@@ -514,21 +514,21 @@ ActeUnSceneQuatre = {
 
     \new StaffGroup \ActeUnSceneQuatrePercus
 
-    \new TopLine \ActeUnSceneQuatreMesures
-
-    \new ChoirStaff
-       <<
-         \new Staff \new Voice = "soprano" \ActeUnSceneQuatreSopranoDeux
-         \new Lyrics \lyricsto "soprano" { \ActeUnSceneQuatreSopranoDeuxTexte }
-         \new Staff \new Voice = "alto" \ActeUnSceneQuatreContralto
-         \new Lyrics \lyricsto "alto" { \ActeUnSceneQuatreContraltoTexte }
-         \new Staff \new Voice = "tenor" \ActeUnSceneQuatreTenor
-         \new Lyrics \lyricsto "tenor" { \ActeUnSceneQuatreTenorTexte }
-         \new Staff \new Voice = "barytonUn" \ActeUnSceneQuatreBarytonUn
-         \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneQuatreBarytonUnTexte }
-         \new Staff \new Voice = "barytonDeux" \ActeUnSceneQuatreBarytonDeux
-         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneQuatreBarytonDeuxTexte }
-       >>
+    % \new TopLine \ActeUnSceneQuatreMesures
+% 
+    % \new ChoirStaff
+       % <<
+         % \new Staff \new Voice = "soprano" \ActeUnSceneQuatreSopranoDeux
+         % \new Lyrics \lyricsto "soprano" { \ActeUnSceneQuatreSopranoDeuxTexte }
+         % \new Staff \new Voice = "alto" \ActeUnSceneQuatreContralto
+         % \new Lyrics \lyricsto "alto" { \ActeUnSceneQuatreContraltoTexte }
+         % \new Staff \new Voice = "tenor" \ActeUnSceneQuatreTenor
+         % \new Lyrics \lyricsto "tenor" { \ActeUnSceneQuatreTenorTexte }
+         % \new Staff \new Voice = "barytonUn" \ActeUnSceneQuatreBarytonUn
+         % \new Lyrics \lyricsto "barytonUn" { \ActeUnSceneQuatreBarytonUnTexte }
+         % \new Staff \new Voice = "barytonDeux" \ActeUnSceneQuatreBarytonDeux
+         % \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneQuatreBarytonDeuxTexte }
+       % >>
 
     \new TopLine \ActeUnSceneQuatreMesures
 
@@ -596,25 +596,25 @@ ActeUnSceneQuatre = {
     \header {
       piece = \ActeUnSceneTroisTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneTroisBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTroisTer
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneQuatre
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %{
   \score {
     \Entracte
     \header {

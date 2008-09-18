@@ -333,7 +333,56 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     sol la sol fa mi fa mi re dod si la si dod8 r |
     fa'4 mi re8 do4 r16 fad, fad fad |
     sib4 sol la r2 |
-    R2*3
+    R2*3-\fermataMarkup
+    
+    %%% Allegretto comodo %%%
+    R1 R2. R1*2 \t {sol4 la sol} \t {la sol la} \t {sol la sol} |
+    la2. r4 | \t {fad4 sol fad} \t {sol fad sol} |
+    la r \t {fad2 sol4~} \t {sol fad2} | \t {sol2 fad4} \t {sol fad sol} |
+    \t {sib, dob sib} \t {dob sib dob} |
+    
+    %%% Agitato %%%
+    re8 r r2 | R2.*4
+    r8 la' la la re4~| re do do8 do | fa2.~ fa8 r r2 |
+    re,4 r4 r16 la' la la | re4 do re8 la~ | la4 r r16 si si si |
+    mi4 re mi8 si~ | si4 r2 |
+    mib,,2. mi2 r4 | fad2 sol4 lab lab lab |
+    mi16 sol la do re mi sol la do re mi sol |
+    la8 r r4 la32 la16.~la16 la |
+    la8 r r4 la8 r la8.. la32 la8 r r4 |
+    sib8 r r4 sib32 sib16. r8 sib8.. sib32 sib8 r r4 |
+    si!8 r r si r4 | mi,2 re4 mi2 re4 |
+    mi8 r mi,16 re mi re mi re mi re mi re mi re |
+    \t {mi8 re mi} \t {re mi re} mi8 r |
+    mi16 re mi re mi re mi re mi re mi re mi re mi re |
+    \t {mi8 re mi} \t {re mi re} mi8 r |
+    mi16 re mi re mi8 r | mi16 re mi re mi re mi re mi8 r |
+    fa16 mib fa mib fa8 r | fa16 mib fa mib fa mib fa mib fa8 r |
+    \t {fad8 mi fad} \t {mi fad mi} | \t {fad mi fad} \t {mi fad mi} fad8 r |
+    
+    %%% Placando assai %%%
+    r2 si~ si2. r4 |
+    r2 si~ si2. r4 |
+    si,2 sib la lab2.~ lab r4 |
+    
+    %%% Andante a piacere %%%
+    r2 dod re mib4 r |
+    r2 dod re mib4 r |
+    r2 fa fad sol4 r |
+    r2 fa fad sol4 r |
+    r2 dod re4. mib fad2 re lab4. mib' |
+    R1 r2 re,~ re4 re fa2 re2. r4 |
+    R1*3 R2*3 R2.*6
+    r8 sol~ \t {sol sol sol} \t {sib sib sib} \t {do do do} |
+    r  reb~ \t {reb reb reb} \t {mib mib mib} \t {solb solb solb} |
+    \t {lab lab lab} \t {la la la} \t {la la la} r4 |
+    R1 R2. R1 R2. R1 R2. R1 R2.
+    la8. la16 la8 la~ la la la4 |
+    r16 la la8~ la la~ la la la la |
+    \t {dod, fa la~} \t {la la4} la8 la |
+    r la \t {la4 la la} |
+    sol4. r8 sol4 | si r si8. si16 si8 si~ |
+    si4 si r8 si4 re,8 |
   }
 }
 
