@@ -331,8 +331,8 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     r sib'4 mi, sib'8 | mi, mi mi mi \t {mi mi mi} |
     r sib'4 mi, sib'8 | mi4 mi sib |
     re,16 mi sold la re4 mi,16 la re mi sold4 la,16 re mi sold la4 |
-    re8 re,,8 re2:8 |
-    re4 re re | re2.:8|
+    re8 re,,8   re2.:8|
+    re4 re re | re2.:8 r4 |
     re4 re re | re2:8 |
     re4 re re | re2:8 |
     re4 re re | re2:8 |
@@ -364,7 +364,7 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     la8 r r4 r2 |
     \repeat tremolo 12 {la32 si}
     \repeat tremolo 16 {la si}
-    la8 r16 red'16:32~ red8:32 mi8:32~ mi16:32 sol8.:32 |
+    la8 r16 re16:32~ re8:32 mi8:32~ mi16:32 sol8.:32 |
     <mi sib'>2 <mi sib'>4 <mi sib'> <mi sib'>4. <mi sib'>8~ <mi sib'>4 r |
     mi2 r4 mi2 r4 <si sold'>2 <si sold'>4 |
     sold'8 si, si sold' sold si, sold' si, |

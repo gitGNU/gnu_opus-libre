@@ -280,6 +280,57 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
     R2. sol4 fa mi8 la, r4 R2-\fermataMarkup
+    R1 R2. R1*2 R1. R1*2 R1. R1*2
+
+    %%% Agitato %%%
+    r4 \t {la8 re sol} \t {do sol re} | la r r2 |
+    <sol re'>2.:32 <sol re'>8 r r2 | r4 sib'8 fa4 fad8 |
+    sol2~sol4\glissando sib2. la2.:32 la8 r r4 fad16 mib sib sol |
+    re4 r2 | re'16 si' si si mi8 mi, la la, | re4 r2 |
+    re16 dod' dod dod fad8 fad, si la, | re4 r8 re fad, si |
+    mib,4 r8 reb4 sol8 | do4 r8 fa la, re |
+    fad,4 r8 la4 mib'8 | lab4 r8 la reb, solb |
+    sib,4 r8 sib4 sib8 | mi4 la16 re la re dod re dod re |
+    sol, la dod re la re la re dod re dod re |
+    sol, la dod re la re la re dod8 sib, | mi4 r8 mi, \t {mi mi mi} |
+    r8 sib'4 mi sib'8 | mi,4 mi sib8 mi~ | mi2 re4~ | re fa2 |
+    dod2~dod8 r r4 | r8 sol4 dod sol8 | dod2. r4 |
+    r8 sol4 dod sol8 | dod2 | r8 sol4 dod sol'8 | dod,2 |
+    r8 sol4 dod, sol'8 | dod4 sol | dod2 sol4 |
+    
+    %%% Placando assai %%%
+    dod2. dod4 sol2. r4 | dod2. dod4 sol2. r4 |
+    dod,2 re mib mi2.~mi2. r4 |
+
+    %%% Andante a piacere %%%
+    fa1~ fa2 reb fa1~ fa2 reb |
+    fa1~ fa2 reb fa1~ fa2 reb |
+    sol2. r4 r8 dod,4 sol' dod,8 |
+    sol'2. r4 r8 dod,4 sol' sol8 |
+    dod,8 r r4 r2 | R1*6 R2*3 R2.*2
+
+    %%% Poco a poco piu mosso %%%
+    \pizz sol'4 r sib dod r2 la4 r2 do4 r2 |
+
+    %%% A tempo %%%
+    \arco
+    <do,do'>4 r8 fad4 do' fad,8 |
+    <do do'>4 r8 fad4 do' fad,8 |
+    <do do'>4 <do do'> r8 fad r4 \clef tenor |
+    la''1~\CaV la4 r2 \clef bass |
+    la,,1~ la4 r2 | R1 la2.~ la1~|
+    la8 r16 \clef tenor <re'fad>~ <re fad>8 <mi sold>~
+    <mi sold>16 <sol si>8. \clef treble |
+    <dod, dod'>2 <dod dod'>4 <dod dod'> |
+    <dod dod'>4. <dod dod'>8~ <dod dod'>4 r \clef bass |
+    <sol,sol'>2 r4 sol' sol sol fa2 fa4 |
+    fa~ \t {fa8 fa4~} \t {fa4 fa8~} fa4 |
+    r fa~fa8 mib \t {mib mib fad} |
+    
+    re2. r8 re r | sold,2 si4~si8 dod4 |
+    re2  r8 re r | la4. sib8~ sib8. do16~do4 |
+    mib2 r8 mib r| si2~ si8 do~ do16 re8. |
+    fa2~ fa4 r8  | fa,2~ fa |
   }
 }
 

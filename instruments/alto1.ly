@@ -348,8 +348,8 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
     r sib'4 mi sib8 | mi, mi mi mi \t {mi mi mi} |
     r sib'4 mi sib8 | mi4 mi sib |
     mi,16 la re mi sold4 la,16 re mi sold | la4 re,16 mi sold la re4 |
-    la8 la,8:16 la2:16 |
-    la4 la la | la2.:16|
+    la8 la,8:16 la2.:16|
+    la4 la la | la2.:16 r4|
     la4 la la | la2:16 |
     la4 la la | la2:16 |
     la4 la la | la2:16 |
