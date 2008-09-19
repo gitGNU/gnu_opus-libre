@@ -166,7 +166,26 @@ ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
 
 ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
   \relative {
-    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup
+    R1 R2. R1*2 R1. R1*2 R1. R1*2
+    
+    r16 la' la la re4 do re8 la4. r4 | r16 mi' mi mi la4 sol | la8 mi4. r4 |
+    R2.*5 re,,4 r2 R2. re4 r2 R2. re4 r2 R2.*3 la'4 la la |
+    sib8 mi, r mi \t {mi mi mi} | mi2.~mi4 r2 |
+    r4 r8 mi r4 mi2 r4 | r4 r8 mi r4 mi mi r8 mi~ mi2 r4 |
+    R2. reb8 r r4 r2 R2. reb2. r4 R2. reb4. r8 R2. reb4. r8 R2. si'2~si4 r2 |
+    R1*5 R2 R2. R1
+    
+    r2 la~ la2. r4 | r2 la~ la2. r4 |
+    r2 si~ si2. r4 | r2 si~ si2. r4 |
+    r2 la' lab4. do, | r2 si fad'4. sol | R1*7 R2*3 R2.*6
+    
+    r8 do~ \t {do do do} \t {reb reb reb} \t {mib mib mib} |
+    r  solb~ \t {solb solb solb} \t {lab lab lab} \t {la la la}
+    \t {la la la} \t {la la la} \t {la la la} r4 |
+    R1 R2. R1 R2. R1 R2. R1 R2.
+    dod,2 dod4 dod dod4. dod8~dod4 r |
+    mi,2 r4 mi2 r4 re2 r4 lab'2. r4 r fa,4. mib |
   }
 }
 

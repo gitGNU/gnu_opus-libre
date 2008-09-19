@@ -176,7 +176,32 @@ ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
 
 ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
   \relative {
-    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup
+    R1 R2. R1*2 R1. R1*2 R1. R1*2
+    
+    R2. r16 la la la re4 do re8 la4. r4 | r16 la la la
+    \acciaccatura dod16 re4 \acciaccatura si16 do4
+    \acciaccatura mib16 re8 la4. r4 | R2.*4
+    re,,4 r2 R2. re4 r2 R2. re4 r2 R2.*3
+    lab'4 lab lab sib2~ \tt {sib16 la sol fa lab} |
+    mi2.~ mi4 r2 | r8 sib' r4 r8 sib |
+    mi,2 r4 r8 sib' r4 r8 sib |
+    mi,2 sib'8 mi,~ mi2 r4 R2.
+    reb8 r r4 r2 | R2. R1 R2. R2 R2. R2 R2. |
+    reb'2~ reb4 r2 | R1*5 R2 R2. R1
+    r2 sib~ sib2. r4 | r2 sib~ sib2. r4 |
+    r2 lab~ lab2. r4 | r2 lab~ lab2. r4 |
+    r2 sib'4 solb fa4. reb |
+    r2 fa4 solb fa4. fa4 r8 |
+    dod,2 re4 mi sol1~sol~sol2. r4 | R1*3 R2*3 R2.*6
+    
+    do4.  si'8~ si16 re8. mi8 r |
+    do,4. re'8~ re16 mi8. fa8 r |
+    do,4 do r8 fad, r4 R1
+    la8 lab reb, do' fa, mi' la, r r4 r2 |
+    r4 la8 r sol r reb r si' r fa' r mib, r la r r2 |
+    R1 R2.
+    sol2. r4 sol2 r8 dod4. | sol2 r4 sol2 r4 fa2 r4 fa2. r4 r fa4. mib |
   }
 }
 

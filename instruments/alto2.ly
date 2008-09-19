@@ -315,6 +315,61 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
     r2 r16 do sib la sib4 sold la8 la r4 R2-\fermataMarkup
+    R1 R2. R1*2 R1. R1*2 R1. R1*2
+    
+    %%% Agitato %%%
+    re,2.:32 sol: sol8 r do, sol' re'sol, |
+    do, r r2 r2 r16 si' si si si2~si4\glissando mib2. re4 r2 |
+    re,16 mi sol la sib la sib do mib do mib fa |
+    re4. re,8 \t {re re re} re4 re re |
+    re4. re8 \t {re re re} re4 re re |
+    re8 re re re re re |
+    re2.:32 mi?: re: |
+    re8 re re re re re |
+    re r re16 mi re mi sol la sol la |
+    re8 r r mi, \t {mi mi mi} mi mi mi mi mi mi |
+    r sib'4 mi, sib'8 | mi, mi mi mi \t {mi mi mi} |
+    r sib'4 mi, sib'8 | mi4 mi sib |
+    re,16 mi sold la re4 mi,16 la re mi sold4 la,16 re mi sold la4 |
+    re8 re,,8 re2:8 |
+    re4 re re | re2.:8|
+    re4 re re | re2:8 |
+    re4 re re | re2:8 |
+    re4 re re | re2:8 |
+    re2 re4 |
+    
+    %%% Placando assai %%%
+    sol2. dod,4 sol'2. r4 |
+    sol2. dod,4 sol'2. r4 |
+    dod,2 re mib mi2.~mi r4 |
+    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mi mi mi} |
+    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mi mi mi} |
+    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
+    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
+    \t {r do do} \t {do do do} \t {re re re} mib8 mib |
+    \t {r4 <fa si> <fa si>} \t {<fa si><fa si><fa si>}
+    \t {<fa si><fa si><fa si>} <fa dod'>8 <fa dod'> |
+    R1*4 r2 lad~lad4 lad sold2 lad2. r4 | R2*3 R2.*2
+    
+    \pizz do,4 r mib mi r2 fa4 r2 fad4 r2 |
+    
+    %%% A tempo %%%
+    \arco
+    <mib la>2 <mib la>4 <mib la> <sold si> <sold si>2 <sold si>4
+    <si re><si re><si re> r |
+    \repeat tremolo 16 {la32 sib}
+    \repeat tremolo 12 {la sib}
+    \repeat tremolo 16 {la sib}
+    \repeat tremolo 12 {la sib}
+    la8 r r4 r2 |
+    \repeat tremolo 12 {la32 si}
+    \repeat tremolo 16 {la si}
+    la8 r16 red'16:32~ red8:32 mi8:32~ mi16:32 sol8.:32 |
+    <mi sib'>2 <mi sib'>4 <mi sib'> <mi sib'>4. <mi sib'>8~ <mi sib'>4 r |
+    mi2 r4 mi2 r4 <si sold'>2 <si sold'>4 |
+    sold'8 si, si sold' sold si, sold' si, |
+    sold' si, si sold' sol si, sol' si,|
+    <re, si'>2.~ <re si'>8 r4 |
   }
 }
 

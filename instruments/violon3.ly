@@ -271,6 +271,56 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
     R2. re4 si si8 dod r4 R2-\fermataMarkup
+    R1 R2. R1*2 R1. R1*2 R1. R1*2
+    
+    %%% Agitato %%%
+    do2.:32 re: <re la'>: <re la'>8 r la' mi' si' mi, | la, r r2 |
+    R2.*2 re,2.:32 re8 r sib16 do mib fa fad sold si dod |
+    re8 sol do re, sol16 la, la la | re4 r2 |
+    re8 sold dod red, sold16 la, la la | re4 r2 |
+    re,4 r16 la la la re8 r |
+    <re mib>4 r8 <re mib> \t {<re mib><re mib><re mib>} |
+    <re mi>4 <re mi> <re mi> |
+    <re fad> r8 <re fad> \t {<re fad><re fad><re fad>} |
+    <re la'>4 <re la'><re la'> | <re la'> r8 <re la'> r <la' mi'> |
+    dod re dod la sol la | dod re dod la sol la |
+    dod re dod la sol sib | re mib re sib lab sib |
+    re mib re si! la! si | red mi la red, mi la |
+    sold16 la sold mi re mi sold la sold mi re mi |
+    sold la sold mi re mi sold la sold mi re mi |
+    la8 r r4 r2 | <la,, re>4 <la re> <la re> <la re>2. r4 |
+    <la re>4 <la re> <la re> <la re>2 <la re>4 <la re> <la re> |
+    <sib mib>2 <sib mib>4 <sib mib> <sib mib> |
+    <si mi>2 <si mi> <si mi>4 |
+    \t {r4 si si} si2~ si2. r4 |
+    \t {r4 si si} si2~ si2. r4 |
+    \t {si si si} \t {sib sib sib} \t {la la la} |
+    \t {sold sold sold} sold~ sold2. r4 |
+    
+    %%% Andante a piacere %%%
+    \t {r4 dod dod} \t {dod dod dod} \t {re re re} \t {mib mib mib} |
+    \t {r4 dod dod} \t {dod dod dod} \t {re re re} \t {mib mib mib} |
+    \t {r4 fa fa} \t {fa fa fa} \t {fad fad fad} \t {sol sol sol} |
+    \t {r4 fa fa} \t {fa fa fa} \t {fad fad fad} \t {sol sol sol} |
+    \t {r <red la'><red la'>} \t {<red la'><red la'><red la'>} |
+    \t {<mi sold><mi sold><mi sold>} <mi la>8<mi la> |
+    \t {r4 <lab re> <lab re>} \t {<lab re><lab re><lab re>} |
+    \t {<sib mi><sib mi><sib mi>} <sol mib'>8<sol mib'> |
+    R1*7 R2*3 R2.*2
+    \pizz si,4 r lab do r2 sib4 r2 re4 r2 |
+    
+    %%% A tempo %%%
+    \arco
+    <si re>2 <si re>4 <si re> |
+    <re mi> <re mi>2 <re mi>4 |
+    <re sol> <re sol> <re sol> r |
+    R1 R2. R1 R2.
+    la1:32 <si red>2. <dod re>2 sib4 do | dod2 r4 |
+    <dod' la'>2 <dod la'>4 <dod la'> <dod la'>4. <dod la'>8~<dod la'>4 r8 la16 dod |
+    fa2 \t {fa,8 la dod} fa2 \t {sol,8 si red} |
+    sol8. sol16 sol8 sol4 sol8 | sol8. sol16 sol8 sol4 sol8~sol4 |
+    <si, sold'>~\t{<si sold'>8<si sold'>4~}\t{<si sold'><si sold'>8~}<si sold'>r|
+    
   }
 }
 

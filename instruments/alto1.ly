@@ -332,6 +332,60 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
     r2 r16 do sib la sib4 sold la8 la r4 R2-\fermataMarkup
+    R1 R2. R1*2 R1. R1*2 R1. R1*2
+    
+    %%% Agitato %%%
+    sol2.:32 la: la8 r \t {do, sol' re'} \t {la' re, sol,} |
+    do, r r2 r2 r16 si' si si mi2~mi4\glissando sol2. la4 r2 |
+    re,,16 mi sol la sib la sib do mib do mib fa |
+    re4. re8 \t {re re re} re4 re re |
+    re4. re8 \t {re re re} re4 re re |
+    re8 re re re re re |
+    mib,2.:32 re: fad: |
+    la8 la la la la la |
+    la r re,16 mi sol la do re mi sol |
+    la8 r r mi, \t {mi mi mi} mi mi mi mi mi mi |
+    r sib'4 mi sib8 | mi, mi mi mi \t {mi mi mi} |
+    r sib'4 mi sib8 | mi4 mi sib |
+    mi,16 la re mi sold4 la,16 re mi sold | la4 re,16 mi sold la re4 |
+    la8 la,8:16 la2:16 |
+    la4 la la | la2.:16|
+    la4 la la | la2:16 |
+    la4 la la | la2:16 |
+    la4 la la | la2:16 |
+    la2 la4 |
+    
+    %%% Placando assai %%%
+    sol2. dod,4 sol'2. r4 |
+    sol2. dod,4 sol'2. r4 |
+    dod,2 re mib mi2.~mi r4 |
+    \t {r la la} \t {la la la} \t {la la la} \t {sib sib sib} |
+    \t {r la la} \t {la la la} \t {la la la} \t {sib sib sib} |
+    \t {r si si} \t {si si si} \t {si si si} \t {si si si} |
+    \t {r si si} \t {si si si} \t {si si si} \t {si si si} |
+    \t {r <fad lad><fad lad>} \t {<fad lad><fad lad><fad lad>}
+    \t {<fa si><fa si><fa si>} <solb do>8 <solb do> |
+    \t {r4 <si red><si red>} \t {<si red><si red><si red>}
+    \t {<si fad'><si fad'><si fad'>} <dod sol'>8 <dod sol'> |
+    R1*4 r2 dod~dod4 dod mi2 dod2. r4 | R2*3 R2.*2
+    
+    \pizz fad,4 r mib la r2 fa4 r2 si4 r2 |
+    
+    %%% A tempo %%%
+    \arco
+    <la si>2<la si>4<la si><si re><si re>2<si re>4<fa'sol><fa sol><fa sol> r |
+    \repeat tremolo 16 {sib,32 la}
+    \repeat tremolo 12 {sib la}
+    \repeat tremolo 16 {sib la}
+    \repeat tremolo 12 {sib la}
+    sib8 r r4 r2 |
+    \repeat tremolo 12 {si32 la}
+    \repeat tremolo 16 {si la}
+    si8 r16 fad'16:32~ fad8:32 sold8:32~ sold16:32 si8.:32 |
+    <sol dod>2 <sol dod>4 <sol dod> <sol dod>4. <sol dod>8~ <sol dod>4 r |
+    sib2 r4 sib2 r4 <re, si'>2 <re si'>4 si'8 re, re si' si re, si' re, |
+    si' re, re si' si mib, si' mib, |
+    <re, dod'>2.~ <re dod'>8 r4 |
   }
 }
 

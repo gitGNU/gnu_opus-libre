@@ -265,7 +265,7 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
   \relative {
     \partial 4 r4 re16 mi fa sol la8 la, re la'4 r |
     R2 r4 r8 la, re16 mi fa sol la8 la, sib fa'4 r16
-    re re re sol4 mi re r2 | R2*3
+    re re re sol4 mi re r2 | R2*3-\fermataMarkup
     
     %%% Allegretto comodo %%%
     R1 R2. R1*2 R1. \t {fad4 sol fad} \t {sol fad sol} | la2. r4 |
@@ -274,8 +274,8 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
     
     %%% Agitato %%%
     sol8 r r2 | R2.*5
-    r sol sol sol do4~| do2.~ do8 r r2 |
-    re,4 r4 r16 la la la | re4 do re8 la~ | la4 r r16 si si si |
+    r8 sol sol sol do4~| do2.~ do8 r r2 |
+    re4 r4 r16 la la la | re4 do re8 la~ | la4 r r16 si si si |
     mi4 re mi8 si~ | si4 r2 |
     re,2.~ re2 r4 | re2. re4 re re |
     re16 mi sol la do re mi sol la do re mi |
@@ -303,8 +303,8 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
     r2 mib~ mib2. r4 |
     r2 mib' mi4 fa8 mi4.
     re'4 lab mib2 |
-    si4. dod
-    R1 r2 si,~ si4 si re2 si2. r4 |
+    si4. reb
+    R1 r2 si~ si4 si la2 si2. r4 |
     R1*3 R2*3 R2.*6
     r8 mi~ \t {mi mi mi} \t {fa fa fa} \t {sol sol sol} |
     r  sib~ \t {sib sib sib} \t {do do do} \t {reb reb reb} |
