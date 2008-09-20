@@ -356,7 +356,7 @@ ActeDeuxSceneTrois = {
 	  poet = \OperaLivret
 	  composer =  \OperaPartition
     tagline = \OperaNotice
-  } %
+  } %{
   \score {
 	  \Prologue
     \header {
@@ -404,13 +404,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %}
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } 
+  } %{
   \score {
     \ActeDeuxSceneUn
     \header {
@@ -434,5 +434,5 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeDeuxSceneTroisTitre
     }
-  } %
+  } %}
 }

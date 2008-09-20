@@ -239,6 +239,11 @@ hideNote = {
 \once \override Beam  #'transparent = ##t
 \once \override Accidental  #'transparent = ##t
 }
+
+noTuplet = {
+\once \override TupletBracket #'transparent = ##t
+\once \override TupletNumber #'transparent = ##t
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Expressive indications -----------------------------------------%

@@ -258,8 +258,21 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     R1
     \pizz la16 fad' sold8 dod,16 sib do8 fa16 re mi,8 |
     la4 r4 r2 | r4 la4 sol'8 re dod4 si8 fad fa4 mib'8 sib |
-    la4 r2 | r16 re,8. r2 |
-    
+    la4 r2 | r16 re,8. r4 r2 |
+    R2. sol2~sol8 sol \t {sol sol sol} | sol2 r8 dod4. |
+    sol2 r4 sol sol sol fa2 fa4 fa~ \t {fa8 fa4~} \t {fa fa8~} fa4 |
+    r fa~fa8 mib' \t {mib mib fad} |
+
+    re2.~ re8 r4 | sold,2 si4~si8 dod4 |
+    re2~ re8 r4 | la4. sib8~sib8. do16~do4 |
+    mib2~ mib8 r4 | si2~si8 do~do16 re8. |
+    fa,2~fa4 r8 | fa2~fa | R2 R4. R2.
+    re'4\CaV r r re | re re re re re re re re |
+    re re re re re re re re |
+    re' <re, re'> re' <re, re'> re' <re, re'> re' <re, re'> |
+    re'8 re <re, re'> re re' re <re, re'> re |
+    re'16\CaV re re re re re re re re re re re re re re re |
+    re4\CaV re,\stopped re'\CaV re,\stopped \pizz <re re'> r r2 |
   }
 }
 

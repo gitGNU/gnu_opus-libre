@@ -310,7 +310,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     R1
     \pizz la8 sold16 red dod8 do'16 sol fa8 mi'16 si |
     la4 r4 r2 | r4 la8 mi sol4 | dod,8 sold' si4 fa8 dod mib'4 |
-    la,4 r2 | r16 re,8. r2 |
+    la,4 r2 | r16 re,8. r4 r2 |
     r8 r16 \arco dod''~ dod8 red~ red16 fad sib, mib, |
     sol,2~ sol8 sol \t {sol sol sol} | sol2 r8 dod4. |
     <re,sol>2 r4 | sol4 sol sol | fa2 fa4 |
@@ -321,6 +321,12 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     re2  r8 re r | la4. sib8~ sib8. do16~do4 |
     mib2 r8 mib r| si2~ si8 do~ do16 re8. |
     fa2~ fa4 r8  | fa,2~ fa |
+    R2 R4. re16 fa sib dod fad sib, dod fad la dod, fad la |
+    re4 re, re re <re mi> <re mi> <re mi> <re mi> |
+    <re mi> <re mi> <re mi> <re mi> |
+    <re sol>\CaV <re sol>\CaV <re sol>\CaV <re sol>\CaV |
+    <re do'> re re re | re,8 re re' re re, re re' re |
+    re, re re' re re, re re' re |
   }
 }
 
