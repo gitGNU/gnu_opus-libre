@@ -78,7 +78,7 @@ ActeUnSceneUnSopranoUn= { \SopranoUn
 }
 
 ActeUnSceneTroisTerSopranoUn= { \SopranoUn
-	\relative {
+  \relative {
     R2*3 R2. R2*2 R2.| r2 r8 sib'16-.( \mp sib-. 
     sib8-- sib16-. sib-. sib8-- sib16-. sib-. sib-. sib-. sib-. sib-. |
     sib4--) r2 | R2.
@@ -101,15 +101,15 @@ ActeUnSceneTroisTerSopranoUn= { \SopranoUn
     \acciaccatura re16 la8-. |
     sold4->-- \t { r8 sold-.( \> la-. } mib-- mib16-. sold-. | 
     re4-- ) \! r2 | R2.*10
-	}
+  }
 }
 
 EntracteSopranoUn = {
 }
 
 ActeDeuxSceneUnSopranoUn= { \SopranoUn
-	\relative {
-		R2.*4 R2 R2.*2 R2 R2.*3 R2 | 
+  \relative {
+    R2.*4 R2 R2.*2 R2 R2.*3 R2 | 
     R2. R2 R2.*2
     R2 R2.*3 R2 R2. R2 R2.*2 R2| 
     R2.*3 R2 R2.*2 R1 R2. R1
@@ -142,7 +142,7 @@ ActeDeuxSceneUnSopranoUn= { \SopranoUn
     la! do re2) r2 r4 r8 lab(\mp |
     la! do re2) 
     R1 R2. R1 R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1 |
-	}
+  }
 }
 
 ActeDeuxSceneDeuxSopranoUn= { \SopranoUn

@@ -15,9 +15,9 @@ Tenor = {
 }
 
 PrologueTenor = { \Tenor
-	\relative { 	
+  \relative {   
     \partial 4 r4 | R2.*3 | R1 |
-    R2*2	R2. R2*2 | r2 r8. mi,32\mp ( mi | sold4--) r8. sol32( sol | 
+    R2*2  R2. R2*2 | r2 r8. mi,32\mp ( mi | sold4--) r8. sol32( sol | 
     si4--) r8. sib32( \< sib | re4.--) \! r8 r8. mi,32\mf ( mi | 
     la4-- ) r8. sol32 ( sol | do4-- ) r8. sib32( \< sib |
     mib4.--)\! r8 r8. mi,!32\f ( mi | si'!4--) r8. la32 ( la | 
@@ -76,7 +76,7 @@ PrologueTenor = { \Tenor
     R2*22
     mi'8-.\p r r r16 si-. | re8-. r r la16-. si-. sold8-. r r4 | R2 
     mi8-.( mi-. sold-. sol-. | si-- r si-. si-. | sib-- r sib-- r | mi-.) r r4 |
-	}
+  }
 }
 
 ActeUnSceneTroisTenor = { \Tenor

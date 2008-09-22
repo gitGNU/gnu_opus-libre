@@ -255,26 +255,26 @@ ActeDeuxSceneTrois = {
 
 \book {
   \header {
-	  title = \OperaTitre
-	  subtitle = \Livret
-	  poet = \OperaLivret
-	  composer = \OperaPartition
+    title = \OperaTitre
+    subtitle = \Livret
+    poet = \OperaLivret
+    composer = \OperaPartition
     tagline = \OperaNotice
   }
   \score {
-	  \Prologue
+    \Prologue
     \header {
       piece = \PrologueTitre
     }
   }
   \score {
-	  \ActeUnSceneUn
+    \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
   }
   \score {
-	  \ActeUnSceneUnBis
+    \ActeUnSceneUnBis
     \header {
       piece = \Separateur
     }
@@ -286,7 +286,7 @@ ActeDeuxSceneTrois = {
     }
   }
   \score {
-	  \ActeUnSceneDeux
+    \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }

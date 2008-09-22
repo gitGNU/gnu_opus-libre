@@ -64,9 +64,9 @@ Prologue = {
       >>
      \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\PrologueMainDroite
+        \new StaffPiano = "droite"    \PrologueMainDroite
         \new Dynamics << \PianoDynamics \PrologueNuances >>
-        \new StaffPiano = "gauche"		\PrologueMainGauche
+        \new StaffPiano = "gauche"    \PrologueMainGauche
       >>
      }
   >>
@@ -86,10 +86,10 @@ ActeUnSceneUn = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\ActeUnSceneUnMainDroite
+        \new StaffPiano = "droite"    \ActeUnSceneUnMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneUnNuances >>
-        \new StaffPiano = "gauche"		\ActeUnSceneUnMainGauche
-		  >>
+        \new StaffPiano = "gauche"    \ActeUnSceneUnMainGauche
+      >>
     }
   >>
 }
@@ -105,9 +105,9 @@ ActeUnSceneUnBis = {
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBisBarytonDeuxTexte }
       >>
     \new PianoStaff { \Accompagnement <<
-        \new StaffPiano = "droite"		\ActeUnSceneUnBisMainDroite
+        \new StaffPiano = "droite"    \ActeUnSceneUnBisMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneUnBisNuances >>
-        \new StaffPiano = "gauche"		\ActeUnSceneUnBisMainGauche
+        \new StaffPiano = "gauche"    \ActeUnSceneUnBisMainGauche
       >>
     }
   >>
@@ -125,10 +125,10 @@ ActeUnSceneDeux = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-      	\new StaffPiano = "droite"		\ActeUnSceneDeuxMainDroite
-      	\new Dynamics << \PianoDynamics \ActeUnSceneDeuxMesures >>
-        \new StaffPiano = "gauche"		\ActeUnSceneDeuxMainGauche
-		  >>
+        \new StaffPiano = "droite"    \ActeUnSceneDeuxMainDroite
+        \new Dynamics << \PianoDynamics \ActeUnSceneDeuxMesures >>
+        \new StaffPiano = "gauche"    \ActeUnSceneDeuxMainGauche
+      >>
     }
   >>
 }
@@ -145,9 +145,9 @@ ActeUnSceneTrois = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\ActeUnSceneTroisMainDroite
+        \new StaffPiano = "droite"    \ActeUnSceneTroisMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneTroisMesures >>
-        \new StaffPiano = "gauche"		\ActeUnSceneTroisMainGauche
+        \new StaffPiano = "gauche"    \ActeUnSceneTroisMainGauche
       >>
     }
   >>
@@ -165,10 +165,10 @@ ActeUnSceneTroisBis = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\ActeUnSceneTroisBisMainDroite
+        \new StaffPiano = "droite"    \ActeUnSceneTroisBisMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneTroisBisMesures >>
-        \new StaffPiano = "gauche"		\ActeUnSceneTroisBisMainGauche
-		  >>
+        \new StaffPiano = "gauche"    \ActeUnSceneTroisBisMainGauche
+      >>
     }
   >>
 }
@@ -185,9 +185,9 @@ ActeUnSceneTroisTer = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\ActeUnSceneTroisTerMainDroite
+        \new StaffPiano = "droite"    \ActeUnSceneTroisTerMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneTroisTerMesures >>
-        \new StaffPiano = "gauche"		\ActeUnSceneTroisTerMainGauche
+        \new StaffPiano = "gauche"    \ActeUnSceneTroisTerMainGauche
       >>
     }
   >>
@@ -211,9 +211,9 @@ ActeUnSceneQuatre = {
        >>
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"		\ActeUnSceneQuatreMainDroite
+        \new StaffPiano = "droite"    \ActeUnSceneQuatreMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneQuatreMesures >>
-        \new StaffPiano = "gauche"		\ActeUnSceneQuatreMainGauche
+        \new StaffPiano = "gauche"    \ActeUnSceneQuatreMainGauche
       >>
     }
   >>
@@ -239,9 +239,9 @@ Entracte = {
       >> 
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\EntracteMainDroite
+        \new StaffPiano = "droite"    \EntracteMainDroite
         \new Dynamics << \PianoDynamics \EntracteNuances >>
-        \new StaffPiano = "gauche"		\EntracteMainGauche
+        \new StaffPiano = "gauche"    \EntracteMainGauche
       >>
     }
   >>
@@ -261,9 +261,9 @@ ActeDeuxSceneUn = {
       >>
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"		\ActeDeuxSceneUnMainDroite
+        \new StaffPiano = "droite"    \ActeDeuxSceneUnMainDroite
         \new Dynamics << \PianoDynamics \ActeDeuxSceneUnMesures >>
-        \new StaffPiano = "gauche"		\ActeDeuxSceneUnMainGauche
+        \new StaffPiano = "gauche"    \ActeDeuxSceneUnMainGauche
       >>
     }
   >>
@@ -283,9 +283,9 @@ ActeDeuxSceneUnBis = {
       >>
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"		\ActeDeuxSceneUnBisMainDroite
+        \new StaffPiano = "droite"    \ActeDeuxSceneUnBisMainDroite
         \new Dynamics << \PianoDynamics \ActeDeuxSceneUnBisMesures >>
-        \new StaffPiano = "gauche"		\ActeDeuxSceneUnBisMainGauche
+        \new StaffPiano = "gauche"    \ActeDeuxSceneUnBisMainGauche
       >>
     }
   >>
@@ -311,9 +311,9 @@ ActeDeuxSceneDeux = {
       >> 
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"		\ActeDeuxSceneDeuxMainDroite
+        \new StaffPiano = "droite"    \ActeDeuxSceneDeuxMainDroite
         \new Dynamics << \PianoDynamics \ActeDeuxSceneDeuxMesures >>
-        \new StaffPiano = "gauche"		\ActeDeuxSceneDeuxMainGauche
+        \new StaffPiano = "gauche"    \ActeDeuxSceneDeuxMainGauche
       >>
     }
   >>
@@ -339,9 +339,9 @@ ActeDeuxSceneTrois = {
       >> 
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"		\ActeDeuxSceneTroisMainDroite
+        \new StaffPiano = "droite"    \ActeDeuxSceneTroisMainDroite
         %\new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
-        \new StaffPiano = "gauche"		\ActeDeuxSceneTroisMainGauche
+        \new StaffPiano = "gauche"    \ActeDeuxSceneTroisMainGauche
       >>
     }
   >>
@@ -351,14 +351,14 @@ ActeDeuxSceneTrois = {
 
 \book {
   \header {
-	  title = \OperaTitre
-	  subtitle = \Reduction
-	  poet = \OperaLivret
-	  composer =  \OperaPartition
+    title = \OperaTitre
+    subtitle = \Reduction
+    poet = \OperaLivret
+    composer =  \OperaPartition
     tagline = \OperaNotice
   } %{
   \score {
-	  \Prologue
+    \Prologue
     \header {
       piece = \PrologueTitre
     }

@@ -15,7 +15,7 @@ Contrebasse = {
 }
 
 PrologueContrebasse = { \Contrebasse
-	\relative {
+  \relative {
     %%% Introduction %%%
     
     \partial 4 r4 R2.*3 R1 | mi,,,2 r8 mi' \t {mi mi mi}
@@ -66,30 +66,30 @@ ActeUnSceneUnBisContrebasse = { \Contrebasse
 }
 
 ActeUnSceneDeuxContrebasse = { \Contrebasse
-	\relative {
-		%%% Air de la Soprano2 %%%
-		
-		\repeat unfold 9 {R2.*2 R1*2}
-		R2. | r4 dod,, r | 
-		sol1~  sol~ | sol2.~  sol4 r2 | sol1~ sol2.  r4 |R2.*2 |
-		sold1~ sold~| sold2.~ sold~   |sold1~ sold2. r4 |
-		\repeat unfold 7 {R2.*2 R1*2} R2.*2 R1 R1-\fermataMarkup |
-		
-		%%% Récitatif %%%
-		
-		R2.*2 R1 R2.*3 R1 R2.*6 R2 R2. R1*2 R2.*5 R1 |
-		
-		%%% Duo %%%
-		
-		\pizz re'4
-		\repeat unfold 16 re
-		\repeat unfold 7  reb
-		\repeat unfold 4  si
-		\repeat unfold 4  sib r |
-		\arco sol lab8 sib |
-		reb4 dob sib | dob sib lab sib | 
+  \relative {
+    %%% Air de la Soprano2 %%%
+    
+    \repeat unfold 9 {R2.*2 R1*2}
+    R2. | r4 dod,, r | 
+    sol1~  sol~ | sol2.~  sol4 r2 | sol1~ sol2.  r4 |R2.*2 |
+    sold1~ sold~| sold2.~ sold~   |sold1~ sold2. r4 |
+    \repeat unfold 7 {R2.*2 R1*2} R2.*2 R1 R1-\fermataMarkup |
+    
+    %%% Récitatif %%%
+    
+    R2.*2 R1 R2.*3 R1 R2.*6 R2 R2. R1*2 R2.*5 R1 |
+    
+    %%% Duo %%%
+    
+    \pizz re'4
+    \repeat unfold 16 re
+    \repeat unfold 7  reb
+    \repeat unfold 4  si
+    \repeat unfold 4  sib r |
+    \arco sol lab8 sib |
+    reb4 dob sib | dob sib lab sib | 
     dob sib lab fa | dob' r8 sib r4 |
-		mi,2.~| mi r4| mi'1 | reb2.~|reb~|reb4 r2 | R1 |
+    mi,2.~| mi r4| mi'1 | reb2.~|reb~|reb4 r2 | R1 |
     
     %%% Piu vivo %%%
     sol,2.~ | sol1~ sol2 r4 | R2.
@@ -114,7 +114,7 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
     r8 la sol sib |
     fad2~ fad2. \pizz la'8\CaV r r2
     R1 R2.*3 R2 R2. R1*4
-	}
+  }
 }
 
 ActeUnSceneTroisContrebasse = { \Contrebasse
@@ -259,7 +259,7 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     \pizz la16 fad' sold8 dod,16 sib do8 fa16 re mi,8 |
     la4 r4 r2 | r4 la4 sol'8 re dod4 si8 fad fa4 mib'8 sib |
     la4 r2 | r16 re,8. r4 r2 |
-    R2. sol2~sol8 sol \t {sol sol sol} | sol2 r8 dod4. |
+    R2. \arco sol2~sol8 sol \t {sol sol sol} | sol2 r8 dod4. |
     sol2 r4 sol sol sol fa2 fa4 fa~ \t {fa8 fa4~} \t {fa fa8~} fa4 |
     r fa~fa8 mib' \t {mib mib fad} |
 
@@ -273,12 +273,41 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     re'8 re <re, re'> re re' re <re, re'> re |
     re'16\CaV re re re re re re re re re re re re re re re |
     re4\CaV re,\stopped re'\CaV re,\stopped \pizz <re re'> r r2 |
+    R1 R2 R2.*2 R2 R1
+
+    %%% Piu lento %%%
+    r2 \clef "G_8" \arco si''?4~si2 r4 | R2.
+    r2 si4~si2 r4 |
+    r2 si4~si2 r4 |
+    r2 si4~si2 r4 |
+    r2 do4~do2 r4 | R2.
+    r2 re4~re2 r4 |
+    r2 mib4~mib2 r4 |
+    r2 mib4~mib2 r4 | R2. \clef "F_8"
+    r4 \pizz si,? r r re, r |
+    
+    %%% Stesso tempo %%%
+    la4 r r2 r8 mi4. | la4 r r2 |
+    la4 r r do r mi, | la4 r r2 |
+    la4 re dod fad fa sib, | la4 r r2 | R1. R1 R1. R1
+    la8 do sib4 fa'8 sold, fad4 dod'8 mi re4 |
+    la8 sol re'4 dod8 si fad'4 fa8 mib sib4 |
+    la8 fad sold4 dod8 sib do4 fa8 re mi4 |
+    la,8 si mi,4 fa'8 sol do,4 reb8 mib lab,4 |
+    la8 do sib4 dod8 si fad4 fa'8 re mi,4 |
+    la r r2 | R1. \arco do1~ do1. do4 r \pizz sib reb |
+    la8 fad sold4 dod8 sib do4 fa,8 re' mi,4 |
+    la8 si mi,4 fa8 sol do4 reb8 mib lab,4 |
+    la8 do sib4 fa8 lab solb4 dod8 mi, re'4 |
+    la8 sol' re4 dod8 si fad4 fa'8 mib sib4 |
+    la8 fad' sold4 fa8 sol do,4 dod8 mi, re' sol |
+    la,4 r r2 R1. R1
   }
 }
 
 ActeDeuxSceneUnContrebasse = { \Contrebasse
-  \relative	{
-		R2.*4 R2 R2.*2 R2 | 
+  \relative {
+    R2.*4 R2 R2.*2 R2 | 
     r4 sol2~\CaV sol2.~\CaV sol2.~\CaV sol4\CaV r | 
     R2. R2 | R2.*2 R2 |
     r4 sold2~ sold2.~ sold2.~ sold4 r | 

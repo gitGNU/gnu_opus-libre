@@ -22,7 +22,7 @@ ClarinetteBasse = {
 }
 
 PrologueClarinetteUn = { \ClarinetteUn
-	\relative {
+  \relative {
     %%% Introduction %%%
     
     \partial 4 r4 R2.*3 R1 | mi,2~ mi4 r | mi'2 r4 |
@@ -36,24 +36,24 @@ PrologueClarinetteUn = { \ClarinetteUn
 }
 
 ActeUnSceneUnClarinetteUn = { \ClarinetteUn
-	\relative {
-		R2*2 R2. R2*2 R2. |
-		r8 do \t {do do do~} do2~ do r4 | 
+  \relative {
+    R2*2 R2. R2*2 R2. |
+    r8 do \t {do do do~} do2~ do r4 | 
     r8 do \t {do do do~} do2~ do r4 |
-		\t { fa,4 solb sib} do2~ do8 r r2 | 
+    \t { fa,4 solb sib} do2~ do8 r r2 | 
     \t {solb4 sib do} mib2~ mib8 r r2 |
-		\t {la,8 mib' si'} \t {solb' si, mib,} \t {la,4 mib'8} si'8 r |
-		\t {la,8 mib' si'} \t {solb' si, mib,} la,8 r |
-		\t {la8 mi'! sol!} mib'8 r  \t {mi,! sol do} \t {solb' do, mi,} |
-		\t {la,8 mi'! sol!} mib'8 r |  \t {mi,! sol do} |
-		\t {fa, lab mi'} \t {la! mi lab,} \t {do,4 lab'8} reb8 r |
-		\t {fa, lab mi'} \t {la! mi lab,} fa8 r |
-		\t {do4 lab'8} reb8 r \t {fa, lab mi'} \t {la! mi lab,}|
-		\t {do,4 lab'8} reb8 r \t {do, lab' mi'} |
-		\t {do' fa, lab,} \t {re,!4 fa'8} \t {do' fa, lab,} \t {re,4 fa'8}|
-		\t {do' fa, lab,} \t {re,4 lab'8} \t {fa'4 sib8}|
-		mi4
-	}
+    \t {la,8 mib' si'} \t {solb' si, mib,} \t {la,4 mib'8} si'8 r |
+    \t {la,8 mib' si'} \t {solb' si, mib,} la,8 r |
+    \t {la8 mi'! sol!} mib'8 r  \t {mi,! sol do} \t {solb' do, mi,} |
+    \t {la,8 mi'! sol!} mib'8 r |  \t {mi,! sol do} |
+    \t {fa, lab mi'} \t {la! mi lab,} \t {do,4 lab'8} reb8 r |
+    \t {fa, lab mi'} \t {la! mi lab,} fa8 r |
+    \t {do4 lab'8} reb8 r \t {fa, lab mi'} \t {la! mi lab,}|
+    \t {do,4 lab'8} reb8 r \t {do, lab' mi'} |
+    \t {do' fa, lab,} \t {re,!4 fa'8} \t {do' fa, lab,} \t {re,4 fa'8}|
+    \t {do' fa, lab,} \t {re,4 lab'8} \t {fa'4 sib8}|
+    mi4
+  }
 }
 
 ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
@@ -110,52 +110,52 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
 }
 
 ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
-	\relative {
-		%%% Air de la Soprano2 %%%
-		R2.*2	R1*2	R2.*2	R1*2	R2.*2	R1*2	R2.*2	R1*2	R2.*2
-		re,8 fad sold si sold si sold fad | re4 r r2 |
-		re8 fad sold si r4 | r2 sold'8 la |
-		sold mi re si sold si sold fad | re4 r r2 |
-		R2.*2 |
-		sold'8 la sold mi re4 sold8 la | sold mi re mi sold4 r |
-		r2 re8 mi | re si sold4 r |
-		r fa!8 la si la fa mi | fa la si la fa4 r |
-		r2 la8 si | re fa sol si sol4 | R1*2 R2.*2 |
-		lab'1~ lab2. r4 | R2.*2 | lab1~|lab2. r4 |
-		R2.*2 R1*2 | sold,,8 re' sold, re r re | sold4 r2 |
-		\repeat unfold 5 {R1*2 R2.*2} |
-		r4 sold'8 la sold mi re mi |
+  \relative {
+    %%% Air de la Soprano2 %%%
+    R2.*2 R1*2  R2.*2 R1*2  R2.*2 R1*2  R2.*2 R1*2  R2.*2
+    re,8 fad sold si sold si sold fad | re4 r r2 |
+    re8 fad sold si r4 | r2 sold'8 la |
+    sold mi re si sold si sold fad | re4 r r2 |
+    R2.*2 |
+    sold'8 la sold mi re4 sold8 la | sold mi re mi sold4 r |
+    r2 re8 mi | re si sold4 r |
+    r fa!8 la si la fa mi | fa la si la fa4 r |
+    r2 la8 si | re fa sol si sol4 | R1*2 R2.*2 |
+    lab'1~ lab2. r4 | R2.*2 | lab1~|lab2. r4 |
+    R2.*2 R1*2 | sold,,8 re' sold, re r re | sold4 r2 |
+    \repeat unfold 5 {R1*2 R2.*2} |
+    r4 sold'8 la sold mi re mi |
     sold2 r4 sold8 la | sold mi re mi sold4~| sold2 r4 |
-		r4 re'8 mib re sib lab sib | re2. r4 | r lab2 |
+    r4 re'8 mib re sib lab sib | re2. r4 | r lab2 |
     r4 lab8 sib re mib | re2. r4 |
-		r2 r4 si!8 dod | mid fad mid2~| mid2 r4 | 
+    r2 r4 si!8 dod | mid fad mid2~| mid2 r4 | 
     si8 dod mid fad mid2~| mid4 r do!2\fermata |
-		
-		%%% Récitatif %%%
-		
-		R2.*2 R1 R2.*3 R1 R2.*4 
+    
+    %%% Récitatif %%%
+    
+    R2.*2 R1 R2.*3 R1 R2.*4 
     \repeat tremolo 12 {mib32 mi!} | mib8 r r2 R2 R2. R1*2 R2.*4
-		\repeat unfold 7 {r8 re,,} | 
-		
-		%%% Duo %%%
-		
-		\repeat unfold 18 sib'8 r
-		\repeat unfold 13 sib r sib
-		\repeat unfold 14 do
-		\repeat unfold 4  mib r
-		\repeat unfold 3  mib
-		\repeat unfold 8  solb r4 | r8
-		\repeat unfold 3  sol,!
-		\repeat unfold 10 si r
-		\repeat unfold 13 si r
-		\repeat unfold 3  si
-		\repeat unfold 2  mi
-		\repeat unfold 2  {sold sold lad lad} sold sold lad r
-		\repeat unfold 2  {red red mi mi} sol!2.~ sol~sol4 r2 | 
-		r4 \t {mi8 red dod} r la,4. |
-		
+    \repeat unfold 7 {r8 re,,} | 
+    
+    %%% Duo %%%
+    
+    \repeat unfold 18 sib'8 r
+    \repeat unfold 13 sib r sib
+    \repeat unfold 14 do
+    \repeat unfold 4  mib r
+    \repeat unfold 3  mib
+    \repeat unfold 8  solb r4 | r8
+    \repeat unfold 3  sol,!
+    \repeat unfold 10 si r
+    \repeat unfold 13 si r
+    \repeat unfold 3  si
+    \repeat unfold 2  mi
+    \repeat unfold 2  {sold sold lad lad} sold sold lad r
+    \repeat unfold 2  {red red mi mi} sol!2.~ sol~sol4 r2 | 
+    r4 \t {mi8 red dod} r la,4. |
+    
     %%% Piu vivo %%%
-		
+    
     sol'4 r2 | R1 R2.*2 R1
     r16 re're re sol4 fa | lab8 re,~ re4 r2 |
     r16 re re re sol4 fa | lab8 re,~ re4 r2 |
@@ -196,7 +196,7 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     
     %%TODO: trouver doigté alternatif pour cette note
     sib2.~ | sib2. r4 | r2 la4 lab sol r dod, r re r r2 |
-	}
+  }
 }
 
 ActeUnSceneTroisClarinetteUn = { \ClarinetteUn
@@ -281,14 +281,14 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
     
 
 ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
-	\relative {
-		r4 r16 lab' lab lab | reb2 | 
+  \relative {
+    r4 r16 lab' lab lab | reb2 | 
     r4 r16 lab lab lab |
     reb8 lab16 lab reb2 |
-		r4 r8 lab16 lab | 
+    r4 r8 lab16 lab | 
     reb8 lab16 lab reb8. lab16 |
     lab lab lab lab r8 reb4 la!16 la|
-		re!8 r r2 |
+    re!8 r r2 |
     R2.*3-\markup "Prenez la Cl. Basse" \ClarinetteBasse
     fad,8 fa re dod fad, fa sib la dod, re fa, fad |
     mib2 mib'8 re lad si mi,2 la''8 sold fa mi, |
@@ -324,7 +324,7 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
     r8 sib si fad sol re mib sib' si fad sol re |
     mib sib' si4 \clef bass r8 sib, si4 sib, r |
     R2.*15
-	}
+  }
 }
 
 ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
@@ -383,16 +383,43 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     r la \t {la4 la la} |
     sol4. r8 sol4 | si r si8. si16 si8 si~ |
     si4 si r8 si4 re,8 |
+    reb2.~reb8 r4 | sol,,2~sol8 r |
+    re16 la' si mi la re | lab'2~lab8 r4 |
+    sol,,2~sol8 r \ttt {re16 sol do fa sib mib} |
+    lab2~lab8 r4 | sol8 r r \t {r16 mi re} | mi8 r r4 |
+    r4 si,~si4.~si2 mib' | R2 R4. R2.
+
+    re'4 r r2 | re,,1 mib fa solb2. r4 |
+    r2 solb4. lab8~lab4 si2 mi4~ mi la reb, lab |
+    re4 r r2 | R1*3-\markup "Prenez la Cl. basse"
+    \ClarinetteBasse R2 R2.*2 R2 R1
+
+    %%% Piu lento %%%
+    re,,,2.~re2 r4 | R2.
+    re2.~re2 r4 | re2 r4
+    \t {r8 \ottava #1 sib''' solb}
+    \t {fa \ottava #0 dob sib} \t {re, reb mib,} |
+    re2.~re2 r4 |
+    re2.~re2 r4 | R2. re2 r4 |
+    \t { \ottava #1 re'''8 sib la} \t {fad mi re}
+    \t { \ottava #0 si sib fad} |
+    re,2.~re2 r4 | R2.*2
+    re2 r4 | R2.*2
+
+    R1. R1 R1. R1 R1.
+    r2 si'4 r | R1. re8 mi4 re8 fa2~fa1.~solb2. r4 |
+    R1.*5 r2 fa,4 r | R1. R1 R1. do'4 r r2 |
+    R1.*5 r2 si4 r | r2 r4 do reb r | r2 la4 r | 
   }
 }
 
 ActeDeuxSceneUnClarinetteUn = { \ClarinetteUn
-	\relative {
+  \relative {
     R2.*3 | re''8 sib~ sib2~ | sib4 r | 
     si!8 sol~ sol2~ | sol2 r4 | r sold | 
     mi2.~ | mi2.~ | mi2.~ | mi4 r |
     R2. R2 R2.*2 r4 r8 la, | 
     mi2.~ | mi2.~ | mi2.~ | mi4 r |
     R2. R2 R2.*2 R2 | R2. mi'2.~| mi2.~| mi4 r |
-	}
+  }
 }

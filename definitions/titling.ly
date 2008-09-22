@@ -440,10 +440,10 @@ sceneDescription =
     \fill-line {
       %% put copyright only on pagenr. 1 
       \on-the-fly #(lambda (layout props arg)
-		     (if (and (= 1 (chain-assoc-get 'page:page-number props -1))
+         (if (and (= 1 (chain-assoc-get 'page:page-number props -1))
                               (not (chain-assoc-get 'page:last?  props #f)))
-		         (interpret-markup layout props arg)
-		         empty-stencil))
+             (interpret-markup layout props arg)
+             empty-stencil))
       \fromproperty #'header:longcopyright
     }
     \fill-line {
@@ -459,7 +459,7 @@ sceneDescription =
     \fill-line {
       %% put notice on second page
       \on-the-fly #(lambda (layout props arg)
-		     (if (= 2 (chain-assoc-get 'page:page-number props -1))
+         (if (= 2 (chain-assoc-get 'page:page-number props -1))
                          (interpret-markup layout props arg)
                          empty-stencil))
       \fill-line { \fromproperty #'header:notes }

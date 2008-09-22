@@ -77,7 +77,7 @@ Prologue = {
           <<
             \new Staff \PrologueFluteUn
             \new Staff \PrologueFluteDeux 
-		      >>
+          >>
         \new GrandStaff
           <<
             \new Staff \PrologueClarinetteUn
@@ -137,7 +137,7 @@ ActeUnSceneUn = {
           <<
             \new Staff \ActeUnSceneUnFluteUn
             \new Staff \ActeUnSceneUnFluteDeux 
-		      >>
+          >>
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnClarinetteUn
@@ -199,7 +199,7 @@ ActeUnSceneUnBis = {
           <<
             \new Staff \ActeUnSceneUnBisFluteUn
             \new Staff \ActeUnSceneUnBisFluteDeux 
-		      >>
+          >>
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnBisClarinetteUn
@@ -557,18 +557,18 @@ ActeUnSceneQuatre = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-%showLastLength = s1*49
+%showLastLength = s4*325
 \book {
   \header {
-	  title = \OperaTitre
-	  subtitle = \FullScore
-	  poet = \OperaLivret
-	  composer =  \OperaPartition
+    title = \OperaTitre
+    subtitle = \FullScore
+    poet = \OperaLivret
+    composer =  \OperaPartition
     tagline = \OperaNotice
   }
 %{
   \score {
-	  \Prologue
+    \Prologue
     \header {
       piece = \PrologueTitre
     }

@@ -303,15 +303,15 @@
 #(define (add-page-break parser)
   (collect-music-for-book parser 
    (make-music 'Music
-	       'page-marker #t
-	       'line-break-permission 'force
-	       'page-break-permission 'force)))
+         'page-marker #t
+         'line-break-permission 'force
+         'page-break-permission 'force)))
 
 #(define (add-no-page-break parser)
   (collect-music-for-book parser 
    (make-music 'Music
-	       'page-marker #t
-	       'page-break-permission 'forbid)))
+         'page-marker #t
+         'page-break-permission 'forbid)))
 
 #(define (add-toplevel-markup parser text)
   (collect-scores-for-book parser (list text)))

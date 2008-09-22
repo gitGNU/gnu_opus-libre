@@ -135,8 +135,8 @@ ActeUnSceneTroisBarytonUn = { \BarytonUn
   }
 }
 ActeUnSceneTroisTerBarytonUn = { \BarytonUn
-	\relative {
-		
+  \relative {
+    
     R2*3 R2. R2*2 R2.*3
     r8 re16( \mf si~ si8.) sib16-.( \> sol-. sol-. fad-. sib-. | 
     mib,4-.) \! r2 | R2.*2
@@ -165,7 +165,7 @@ ActeUnSceneTroisTerBarytonUn = { \BarytonUn
     do,2--\p r4 | r2 sol4-- | r r8 do-. \t { sol-.( sol-. la-. } |
     mi4--) r2 | R2. r2 fad4-- | \t { dod4-- dod--( mib--)} sib8--( sib) | R2.*2 |
     
-	}
+  }
 }
 
 ActeUnSceneQuatreBarytonUn = { \BarytonUn

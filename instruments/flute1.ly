@@ -22,12 +22,12 @@ Piccolo = {
 }
 
 PrologueFluteUn = { \FluteUn
-	\relative {
+  \relative {
     %%% Introduction %%%
     
-		\partial 4 r8 
+    \partial 4 r8 
     \tt {mi'32 fa si mi fa} sib2.~ sib~ sib~ sib2~ sib4~ sib8 r
-		mi,,,2~mi4 r | mi4~ \repeat tremolo 8 mi32 ~ mi8 r |
+    mi,,,2~mi4 r | mi4~ \repeat tremolo 8 mi32 ~ mi8 r |
     fa2~ fa mi2.~ mi4 r |
     r mi~| mi2.~ | mi4 r |
     r mi~| mi2.~ | mi4 r |
@@ -37,17 +37,17 @@ PrologueFluteUn = { \FluteUn
     R2 r4 r8 \t {lab16 mib fa} do8 r | re, r r4 |
     mi,!2
     
-	}
+  }
 }
 
 ActeUnSceneUnFluteUn = { \FluteUn
-	\relative {
-		do2~ do~ do r4 | do2~ do~ do r4 |
-		do2~ do4~ r fad'4. r8 r4 | do,2~ do4 r fad'4. r8 r4  |
-		do,2~ do8 r do4 fad'4. r8 r4 | do,2~ do8 r do4 fad'4. r8 r4 |
-		si1 | fad2 r4 | mib1 | do2 r4 |
-		do'1 | la2 r4 la2. mi4~ | mi8 r sold4 la | do1 |
-	}
+  \relative {
+    do2~ do~ do r4 | do2~ do~ do r4 |
+    do2~ do4~ r fad'4. r8 r4 | do,2~ do4 r fad'4. r8 r4  |
+    do,2~ do8 r do4 fad'4. r8 r4 | do,2~ do8 r do4 fad'4. r8 r4 |
+    si1 | fad2 r4 | mib1 | do2 r4 |
+    do'1 | la2 r4 la2. mi4~ | mi8 r sold4 la | do1 |
+  }
 }
 
 ActeUnSceneUnBisFluteUn = { \FluteUn
@@ -102,43 +102,43 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
 
 
 ActeUnSceneDeuxFluteUn = { \FluteUn
-	\relative {
-		%%% Air de la Soprano2 %%%
-		
-		R2.*2-\markup "prenez le Piccolo" \Piccolo  R1*2 R2.*2  R1*2  R2.*2	
-		R1*2	R2.*2	R1*2	R2.*2	R1*2	R2.*2  R1*2	R2.*2
-		re''4 la' sold8 mi re4 | mi8 re la' sold r mi sold4 |
-		mi re8 la' sold4 | la8 sold mi re r la' |
-		sol!4 do si8 sol fa4 | sol8 fa do' si r sol si4 |
-		sol fa8 do' si4 | do8 si sol fa r do' |
-		fa, sol si4 do fa,8 do' | r fa, sol si do4 si8 fa |
-		sol4 si do8 sol~ | sol2 r4 | \repeat unfold 6 {R1*2 R2.*2}
-		R1 |  r2 sol4 do | si8 sol fa4 sol8 fa | do' si r sol si4 |
-		sol4 fa8 do' si4 do8 si | sol fa r do' fa, sol si4 |
-		do fa,8 do' r fa, | sol si do4 r | si8 do si sol fa4 si8 do | 
+  \relative {
+    %%% Air de la Soprano2 %%%
+    
+    R2.*2-\markup "prenez le Piccolo" \Piccolo  R1*2 R2.*2  R1*2  R2.*2 
+    R1*2  R2.*2 R1*2  R2.*2 R1*2  R2.*2  R1*2 R2.*2
+    re''4 la' sold8 mi re4 | mi8 re la' sold r mi sold4 |
+    mi re8 la' sold4 | la8 sold mi re r la' |
+    sol!4 do si8 sol fa4 | sol8 fa do' si r sol si4 |
+    sol fa8 do' si4 | do8 si sol fa r do' |
+    fa, sol si4 do fa,8 do' | r fa, sol si do4 si8 fa |
+    sol4 si do8 sol~ | sol2 r4 | \repeat unfold 6 {R1*2 R2.*2}
+    R1 |  r2 sol4 do | si8 sol fa4 sol8 fa | do' si r sol si4 |
+    sol4 fa8 do' si4 do8 si | sol fa r do' fa, sol si4 |
+    do fa,8 do' r fa, | sol si do4 r | si8 do si sol fa4 si8 do | 
     si sol fa sol si4 si8 do |
-		si sol fa4 si8 do | si sol fa sol si4 | 
+    si sol fa4 si8 do | si sol fa sol si4 | 
     si8 do si sol fa sol si do | si sol fa sol r si do si | 
-		sol fa sol si do si |sol fa r si do si | 
+    sol fa sol si do si |sol fa r si do si | 
     sol fa sol si do si sol4 | si8 do si sol fa sol si do | 
-		si4 fa8 sol si do | si4 fa8 sol si do | 
+    si4 fa8 sol si do | si4 fa8 sol si do | 
     si4 fa8 solb sib do sib4 | fa solb sib2\fermata
-		
-		%%%% Récitatif %%%
-		
-		R2.*2 R1 R2.*3 R1 R2.*4 r2 r8 r16 fa32 si | 
+    
+    %%%% Récitatif %%%
+    
+    R2.*2 R1 R2.*3 R1 R2.*4 r2 r8 r16 fa32 si | 
     mi?8 r r2 R2 R2. R1*2 R2.*5 R1 | 
-		
-		%%% Duo %%%
-		
-		\repeat unfold 4 {R2. R1} R2. r8 
-		\t {mi,16 fa sol} sib8 r8 |R2 r4 
-		\t {mi,16 fa sol} sib8 r4 |r8 r16 fa16 do16. si'!32 mi8 r2 | r2 r8
-		\t {mi,16 fa sol} sib8 r8 |r2 r8
-		\t {mi16 red dod} lad8 r8 r2 |
+    
+    %%% Duo %%%
+    
+    \repeat unfold 4 {R2. R1} R2. r8 
+    \t {mi,16 fa sol} sib8 r8 |R2 r4 
+    \t {mi,16 fa sol} sib8 r4 |r8 r16 fa16 do16. si'!32 mi8 r2 | r2 r8
+    \t {mi,16 fa sol} sib8 r8 |r2 r8
+    \t {mi16 red dod} lad8 r8 r2 |
     R1 red,,4 mi red mi sol la sol la sol r4 | r8.
-		\t {fa'32 mi re } si8  r8 r8
-		\t {la16 sold fad} red8 r8 r4 r2 |
+    \t {fa'32 mi re } si8  r8 r8
+    \t {la16 sold fad} red8 r8 r4 r2 |
     
     %%% Piu vivo %%%
     R2. R1 R2.
@@ -170,7 +170,7 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
     r  la la' la,|
     r  la mi' la, r la | la' r r2 |
     R1 R2.*3 R2 sib,,2.~ sib2. r4 R1*3
-	}
+  }
 }
 
 
@@ -321,16 +321,38 @@ ActeUnSceneQuatreFluteUn = { \FluteUn
     r dod \t {dod4 dod8} \t {fa,16 la dod4} |
     red4. r8 red4 | red4 r8 \t {red,16 sol si}
     red8. red16 red8 red~ red4 red r8 fa4 r8 |
+
+    sold2\startTrillSpan sold8\stopTrillSpan sold, sold, r4 |
+    lad2~lad8 r | R4.
+    sold''2\startTrillSpan sold8\stopTrillSpan sold, sold, |
+    sol2~sol8 r r4 |
+    sold''2\startTrillSpan sold8\stopTrillSpan sold, sold, |
+    la''8 r r4 R2*2
+    mi,,4.~mi4 r16 do'8.~do4 lab' |
+    R2 R4. r2 r8 \t {sold16 si dod} |
+
+    re4 r r2 | r4 r8 \t {dod,16 sib do} \t {sol4 sib do} |
+    dod4 r r2 | R1 r2 \t {mib,4 re mib} | fad2. r4 |
+    r8 re'4 mi8 fa4. sol8~sol4 sib do dod |
+    re4 r r2 R1*3 R2 R2.*2 R2 R1
+
+    %%% Piu lento %%%
+    R2.*21
+    R1. R1 R1. R1 R1. r2 la,4 r | R1. R1
+    la4 sol fa mi fa8 mi fa sol la2 mib4 r |
+    R1.*5 r2 mib4 r | R1. R1 r2 r4 la sol fa |
+    mi r r2 | R1.*5 r2 la4 r | r2 r4 fad la r |
+    r2 la4 r |
   }
 }
 
 ActeDeuxSceneUnFluteUn = { \FluteUn
   \relative {
-		R2.*4 R2 R2.*2 R2 | r2 \tt {si''16 red re fad fa}| 
+    R2.*4 R2 R2.*2 R2 | r2 \tt {si''16 red re fad fa}| 
     la4~ la8[ fa]~ fa8 r | r8. red16 si4. la'8~ | la2~ |
     la2.~ | la2~ | la4 r \t {r8 sol,, mib'} | fad2.~ | fad4 r |
     r \tt {sib16 mib dod fad mi} la4~ | la4. sib,8 la'4~ | 
     la2.~| la4 r | R2. R2 | R2.*2 R2 |
     mi2.~| mi2.~| mi2.~| mi4 r |
-	}
+  }
 }

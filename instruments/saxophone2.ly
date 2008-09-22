@@ -22,7 +22,7 @@ SaxophoneBaryton = {
 }
 
 PrologueSaxophoneDeux = { \SaxophoneBaryton
-	\relative {
+  \relative {
     %%% Introduction %%%
     
     \partial 4 r4 R2.*3 R1
@@ -55,32 +55,32 @@ ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
 }
 
 ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
-	\relative { 
-		%%% Air de la Soprano2 %%%
-		
-		\repeat unfold 9 { R2.*2 R1*2} R2.*2 |
-		re'8 mib re sib lab sib re4 | re8 mib re sib lab sib re mib |
-		lab, sib re mib lab, sib | re mib r2 |
-		lab,8 sib lab fa lab sib re mib | re sib lab fa re fa re do |
-		lab4 r sol8 lab | do re do lab do4 | re,1~| re2. r4 | 
+  \relative { 
+    %%% Air de la Soprano2 %%%
+    
+    \repeat unfold 9 { R2.*2 R1*2} R2.*2 |
+    re'8 mib re sib lab sib re4 | re8 mib re sib lab sib re mib |
+    lab, sib re mib lab, sib | re mib r2 |
+    lab,8 sib lab fa lab sib re mib | re sib lab fa re fa re do |
+    lab4 r sol8 lab | do re do lab do4 | re,1~| re2. r4 | 
     \repeat unfold 8 {R2.*2 R1*2}
-		R2.*2 R1 R1-\fermataMarkup |
-		
-		%%% Récitatif %%%
-		
-		R2.*2-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton 
+    R2.*2 R1 R1-\fermataMarkup |
+    
+    %%% Récitatif %%%
+    
+    R2.*2-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton 
     R1 R2.*3 R1 R2.*4 
     \repeat tremolo 12 {si'32 do} | 
     si8 r r2 R2 R2. R1*2 R2.*5 R1 | 
-		
-		%%% Duo %%%
-		
-		\repeat unfold 17 re,4
-		\repeat unfold 7 reb
-		\repeat unfold 4 si
-		\repeat unfold 4 sib r
-		sol4 lab8 sib | reb4 reb lab | reb lab fa lab | reb lab fa reb |
-		reb' r8 lab r4 | mi2.~| mi r4 | mi'1 | dod2.~ dod~ dod4 r2 r2 r8 si'4. |
+    
+    %%% Duo %%%
+    
+    \repeat unfold 17 re,4
+    \repeat unfold 7 reb
+    \repeat unfold 4 si
+    \repeat unfold 4 sib r
+    sol4 lab8 sib | reb4 reb lab | reb lab fa lab | reb lab fa reb |
+    reb' r8 lab r4 | mi2.~| mi r4 | mi'1 | dod2.~ dod~ dod4 r2 r2 r8 si'4. |
     
     %%% Piu vivo %%%
     sol,4 r2 | R1-\markup "Prenez le Sax. Alto" \SaxAltoDeux R2.*2 R1
@@ -104,7 +104,7 @@ ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
     si re mi si fad4 r8 re' mi la, r re mi si'|
     sold r r2 |
     R1 R2.*3 R2 R2. R1*4
-	}
+  }
 }
 
 ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
@@ -202,13 +202,45 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     r4 la8 r sol r reb r si' r fa' r mib, r la r r2 |
     R1 R2.
     sol2. r4 sol2 r8 dod4. | sol2 r4 sol2 r4 fa2 r4 fa2. r4 r fa4. mib |
+    
+    re2 r4 | r8 re' r | sold,2 si4~si8 dod4 |
+    re2 | r8 re r | la4. sib8~ sib8. do16~do4 |
+    mib2 r8 mib r | si2~si8 do~do16 re8. |
+    fa,2~fa4 r8 r fa''4.~fa2 |
+    R2 R4. r2 \ttt {re16 la solb reb sib fa} |
+
+    re4 r r2 | re1~ re2 r4 re |
+    re1~ re2. r4 | r2 sol' mi reb sib solb |
+    re4 r r2 | R1*2
+    re'4 re re re R2 re4 re re R2. re4 re R1 |
+
+    %%% Piu lento %%%
+    R2.*21
+    la8 do sib mib fa lab, solb si reb mi re, sol |
+    la4 r r2 |
+    la8 solb lab mib reb sib' do sol fa re mi' si |
+    la4 r r2 |
+    la8 sol re' mi reb si solb lab fa mib sib' do |
+    la4 r la r R1. do8 sib4 do8 la2~ la1.~la2. r4 |
+    la8 do sib mib fa lab, solb si reb mi re,4 |
+    la'8 sol re' mi reb si solb lab fa4 r |
+    la8 solb lab mib reb sib' do4 r8 re, r4 |
+    la'8 si mi re fa,4 do' reb, lab' |
+    la8 do sib mib reb si solb lab fa re mi' si |
+    la4 r mib r | R1. R1 R1. sib'4 r r2 |
+    la8 solb lab mib reb sib' do sol fa re mi'4   |
+    la,8 si mi re, fa sol do sib reb4 r |
+    la8 do sib mib fa lab, solb4 r8 mi r4 |
+    la8 sol re' mi reb4 solb, fa sib |
+    la8 solb lab mib fa sol do sib reb mi re, sol |
+    la4 r la r | r2 r4 la la r | r2 re,4 r |
   }
 }
 
 ActeDeuxSceneUnSaxophoneDeux = { \SaxophoneBaryton
-	\relative {
-		R2.*4 R2 R2.*2 R2 mi,2.~ mi2.~ mi2.~ mi4 r | R2. R2 R2.*2 R2 |
+  \relative {
+    R2.*4 R2 R2.*2 R2 mi,2.~ mi2.~ mi2.~ mi4 r | R2. R2 R2.*2 R2 |
     R2.*3 R2 | la4 re,2~ | re4 r | mi4. la,8~ la4~ | la2 r4 |
     si2 | mi,2.~ | mi2.~ | mi2.~ | mi4 r |
-	}
+  }
 }

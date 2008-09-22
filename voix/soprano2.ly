@@ -14,7 +14,7 @@ SopranoDeux = {
 }
 
 ActeUnSceneDeuxSopranoDeux = { \SopranoDeux
-	\relative {
+  \relative {
     %%% Air Solo %%%
     
     \ind #"bouche fermée" sold'8( \mp la sold mi re mi sold la
@@ -85,7 +85,7 @@ ActeUnSceneDeuxSopranoDeux = { \SopranoDeux
     si'8--) r16 sol( sol sol fa? fa sol8) r | R2.-\fermataMarkup |
     R1 R2.*3 R2 r4 r8 fa,( \mp \< fa fa | lab2.--) \! r4 |
     r solb-.( fa-. lab-. | mib-.\> r r re-.) \! | R1 |
-	}
+  }
 }
 
 ActeUnSceneQuatreSopranoDeux = { \SopranoDeux
@@ -150,8 +150,8 @@ EntracteSopranoDeux = { \SopranoDeux
 }
 
 ActeDeuxSceneUnSopranoDeux = { \SopranoDeux
-	\relative {
-		R2.*4 R2 R2.*2 R2 R2.*3 R2 | 
+  \relative {
+    R2.*4 R2 R2.*2 R2 R2.*3 R2 | 
     R2. R2 R2.*2 R2 R2.*3 R2 | 
     R2. R2 R2.*2 R2 R2.*3 R2 |
     r4 sold'8( \mf sold sold4--) | sol!8( si4 si8 sib-- sib | 
@@ -192,7 +192,7 @@ ActeDeuxSceneUnSopranoDeux = { \SopranoDeux
     sib2--) r | r4 r8 la4.--( \pp |
     \t {la2-- sol-- sib--} | \ten fad2.--)~ | 
     fad4 r | R1 R2. R1 R2. R1 R2. R1 |
-	}
+  }
 }
 
 ActeDeuxSceneDeuxSopranoDeux= { \SopranoDeux

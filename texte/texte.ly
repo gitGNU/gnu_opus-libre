@@ -495,7 +495,7 @@ ActeUnSceneTroisTerSopranoUnTexte = \lyricmode {
   \set instrumentName = \SopranoUnName
   \set shortInstrumentName = \SopranoUnShortName
   
-	\leftSyl 
+  \leftSyl 
   …_Et ce soir, et ce soir, que de -- vient vo -- tre mé -- moire_?
   Le sou -- ve -- nir to -- tal se pro -- vo -- que sou -- vent
   par un __ _ vio -- lent choc.
@@ -519,7 +519,7 @@ ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
   
-	Pas mieux __ _ que cet a -- près_- mi -- di.
+  Pas mieux __ _ que cet a -- près_- mi -- di.
   Vous au -- ssi, vous vou -- lez me ta -- per, me tu -- er_?
   
   Oh_!…

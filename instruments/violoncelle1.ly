@@ -80,7 +80,7 @@ ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
 }
 
 ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
-	\relative {
+  \relative {
     %%% Air de la Soprano2 %%%
     
     R2.*2 R1*2 R2.*2 re,4 la' sold8 mi re4 mi8 re la' sold r mi sold4 |
@@ -167,7 +167,7 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     R1 R2.*3 R2
     sib,2.~ sib2. r4 | 
     r2 \pizz la'4 sold | sol r sib, r | re, r r2 |
-	}
+  }
 }
 
 ActeUnSceneTroisVioloncelleUn = { \VioloncelleUn
@@ -331,6 +331,46 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
     re2  r8 re r | la4. sib8~ sib8. do16~do4 |
     mib2 r8 mib r| si2~ si8 do~ do16 re8. |
     fa2~ fa4 r8  | fa,2~ fa |
+    R2 R4. re16 fa sib dod fad sib, dod fad la dod, fad la |
+    re4 re, re re | <re mi>\CaV <re mi>\CaV <re mi>\CaV <re mi>\CaV |
+    <re sol>\CaV <re sol>\CaV <re sol>\CaV <re sol>\CaV |
+    <re do'> <re do'> <re do'> <re do'> <re fa'> re re re |
+    re8 re re, re re' re re, re |
+    re' re re, re re' re re, re'|
+    re'16 re re, re re, re re' re re, re re' re re' re re, re |
+    re8 re' re, re, re' re, re'4 | re8 re re4 r2 |
+    R1*2 R2 R2.*2 R2 R1 |
+
+    %%% Piu lento %%%
+    r2 \clef treble sib''4~sib2 r4 | R2.
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 | R2.
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 | R2. \clef bass
+    r4 \pizz sib,, r r re, r |
+    
+    %%% Stesso tempo %%%
+    la'4 r r fad' r r | la, r r2 |
+    la4 r8 red r2 fa4 r | la, r r2 |
+    la4 r8 mi' r4 fad, r8 mib' r4 | la, r r2 |
+    R1. R1
+    \arco fa'1. fad2. r4 |
+    \pizz la4 r r2 r4 re,8 sol |
+    la4 r r2 fa8 mib sib' do |
+    la4 r r4 do8 sol fa re mi' si |
+    la4 r fa8 sol do sib reb mib, lab solb |
+    la4 sib8 mib dod si fad sold fa re mi' si |
+    la4 r r2 | R1. R1
+    \arco sold,2 la1 sib4 r \pizz sib reb |
+    la4 r r2 r4 mi''8 si |
+    la4 r r2 dod8 red, sold fad |
+    la4 r r4 fad8 si dod mi re, sol |
+    la4 r dod8 si fad sold fa mib sib' do |
+    la4 sold8 red fa sol do sib dod mi re, sol |
+    la4 r r2 R1. R1
   }
 }
 
@@ -350,5 +390,5 @@ ActeDeuxSceneUnVioloncelleUn = { \VioloncelleUn
     \ttt { la,8[ la16 la la la]} 
     \ttt {la[ la la la la la]} \clef bass 
     \repeat unfold 3 { \ttt { mi[ mi mi mi mi mi] } } |
-	}
+  }
 }

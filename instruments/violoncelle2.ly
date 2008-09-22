@@ -15,7 +15,7 @@ VioloncelleDeux = {
 }
 
 PrologueVioloncelleDeux = { \VioloncelleDeux
-	\relative {
+  \relative {
     %%% Introduction %%%
     
     \partial 4 r4 R2.*2 \clef treble sib''2.\upbow ~ sib1\glissando 
@@ -78,7 +78,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
 }
 
 ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
-	\relative {
+  \relative {
     %%% Air de la Soprano2 %%%
     
     R2.*2 | R1*2| R2.*2 | R1*2 | R2.*2| 
@@ -157,7 +157,7 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     R1 R2.*3 R2
     solb2.~ solb2. r4 | 
     r2 \pizz fa'4 mi | mib r sib r | re, r r2 |
-	}
+  }
 }
 
 ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
@@ -326,7 +326,39 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     <re mi> <re mi> <re mi> <re mi> |
     <re sol>\CaV <re sol>\CaV <re sol>\CaV <re sol>\CaV |
     <re do'> re re re | re,8 re re' re re, re re' re |
-    re, re re' re re, re re' re |
+    re, re re' re re, re re' re, |
+    re'16 re re, re re' re re' re re, re re, re re' re re, re |
+    re8 re' re, re' re' re, re,4 | re re8 re re4 r | R1*2 R2 R2.*2 R2 R1
+
+    %%% Piu lento %%%
+    r2 sib''4~sib2 r4 R2.
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4  R2.
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4 |
+    r2 sib4~sib2 r4  R2.
+    r4 \pizz sib, r r re, r |
+    
+    %%% Stesso tempo %%%
+    la'4 r r fad' r r | la, r r2 |
+    la4 r8 red r2 fa4 r | la, r r2 |
+    la4 r8 mi' r4 fad, r8 mib' r4 | la, r r2 |
+    R1. R1
+    \arco la1.~ la2. r4 |
+    \pizz la4 sib8 mib, fa4 fad8 si dod4 re,8 sol |
+    la4 re,8 mi dod'4 fad,8 sold fa'4 sib,8 do |
+    la4 sold8 red dod4 do'8 sol fa4 mi'8 si |
+    la4 mi'8 re fa,4 do8 sib' reb4 lab8 solb|
+    la4 sib8 mib, reb4 fad8 sold fa4 mi8 si'|
+    la4 r r2 | R1. \arco do,1~ do1. do4 r \pizz sib' reb |
+    la4 sold8 red dod4 do8 sol' fa4 mi'8 si |
+    la4 mi'8 re fa4 do8 sib reb,4 lab'8 solb |
+    la4 sib8 mib fa4 fad8 si, dod,4 re8 sol |
+    la4 re,8 mi dod'4 fad,8 sold fa4 sib8 do |
+    la4 sold8 red' fa4 do,8 sib' reb4 re,8 sol |
+    la4 r r2 | R1. R1
   }
 }
 
@@ -346,5 +378,5 @@ ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
     R2. R2 R2.*2 R2 | R2. | R2. | 
     \ttt { mi'8[ mi16 mi mi mi] } 
     \repeat unfold 4 { \ttt { re[ re re re re re] } } |
-	}
+  }
 }

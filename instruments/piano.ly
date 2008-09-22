@@ -14,7 +14,7 @@ Piano = {
 }
 
 ProloguePiano = { \Piano
-	\PianoDeuxMains
+  \PianoDeuxMains
   \relative { 
     \partial 4 r4 R2.*3 R1
     mi2\laissezVibrer r4 \clef bass mi,4\laissezVibrer|
@@ -175,34 +175,34 @@ ActeUnSceneUnBisPiano = { \Piano
 ActeUnSceneDeuxPiano = { \Piano 
   \PianoDeuxMains
   \relative {
-		%%% Air de la Soprano2 %%%
-		
-		\repeat unfold 6 {R2.*2 R1*2} R2. | \clef bass
-		dod,8 re fad sold fad re | dod1~ dod~ | dod2 r4 | re fad8 sold fad4 | 
-		mi8 fa la si la fa mi fa | la si la4 fa8 la si re | si4 la8 si re fa |
-		\clef treble re4 fa8 sol si do | \ottava #1 si''8 do si sol fa sol si4 | 
-		si8 do si sol fa sol si do | si do si sol fa sol | fa re si re la4 |
-		\ottava #0
-		<lab, lab'>1 ~ <lab lab'>2. r4 | R2.*2 R1*2 |
-		R2. lab8 re, do lab s4 \clef bass | r4 <re, sold>2.\arpeggio \laissezVibrer R1 |
-		R2. \clef treble | r4 r8 \ottava #1 fa''''! sol,!4 | \ottava #0
-		r4 r8 \ottava #1 fa' do sol sold re | do' sol re sold la,4 \ottava #0 r | R2.*2 |
-		r4 \ottava #1 fa'' \ottava #0 r2 R1 | R2.*2 | r8 \ottava #1 fa do sol fad' si, mi,4 | \ottava #0 R1 | R2. |
-		r8 \ottava #1 fa'! do sol lad'4 | red,4 \ottava #0 r r2 |
+    %%% Air de la Soprano2 %%%
+    
+    \repeat unfold 6 {R2.*2 R1*2} R2. | \clef bass
+    dod,8 re fad sold fad re | dod1~ dod~ | dod2 r4 | re fad8 sold fad4 | 
+    mi8 fa la si la fa mi fa | la si la4 fa8 la si re | si4 la8 si re fa |
+    \clef treble re4 fa8 sol si do | \ottava #1 si''8 do si sol fa sol si4 | 
+    si8 do si sol fa sol si do | si do si sol fa sol | fa re si re la4 |
+    \ottava #0
+    <lab, lab'>1 ~ <lab lab'>2. r4 | R2.*2 R1*2 |
+    R2. lab8 re, do lab s4 \clef bass | r4 <re, sold>2.\arpeggio \laissezVibrer R1 |
+    R2. \clef treble | r4 r8 \ottava #1 fa''''! sol,!4 | \ottava #0
+    r4 r8 \ottava #1 fa' do sol sold re | do' sol re sold la,4 \ottava #0 r | R2.*2 |
+    r4 \ottava #1 fa'' \ottava #0 r2 R1 | R2.*2 | r8 \ottava #1 fa do sol fad' si, mi,4 | \ottava #0 R1 | R2. |
+    r8 \ottava #1 fa'! do sol lad'4 | red,4 \ottava #0 r r2 |
     
     %FIXME: line breaks make the "15ma" text move to the left.
     r2 \ottava #2
-		sol!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
-		sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
-		si4 do fa, | si8 sol fa sol si4 | si8 do si sol fa sol si do |
-		si sol fa sol si4 si8 do | si sol fa sol si do | si sol fa sol si4 |
-		si8 do si sol fa4 si8 do | si sol fa sol si4 si8 do |
-		si sol fa4 si8 do | si sol fa sol si4 |
-		si8 do si sol fa4 si8 do | si sol fa sol si4 r |
-		si8 do si sol fa4\laissezVibrer \ottava #0 | R2. R1 | r2
-		\ottava #1 <si,, dod lad'>2\fermata \ottava #0 | 
-		
-		%%% Récitatif %%%
+    sol!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
+    sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
+    si4 do fa, | si8 sol fa sol si4 | si8 do si sol fa sol si do |
+    si sol fa sol si4 si8 do | si sol fa sol si do | si sol fa sol si4 |
+    si8 do si sol fa4 si8 do | si sol fa sol si4 si8 do |
+    si sol fa4 si8 do | si sol fa sol si4 |
+    si8 do si sol fa4 si8 do | si sol fa sol si4 r |
+    si8 do si sol fa4\laissezVibrer \ottava #0 | R2. R1 | r2
+    \ottava #1 <si,, dod lad'>2\fermata \ottava #0 | 
+    
+    %%% Récitatif %%%
     R2.*2 R1 R2.*3 R1 R2.*5
     <sol, lab mib'>8 r r2 \clef bass
     r8 \t {sold,,16 la si} re8 r |
@@ -266,28 +266,28 @@ ActeUnSceneDeuxPiano = { \Piano
     <re mi'> <re mi'> <mi re'> R2.
     
     R1 R2.*3 R2 R2. R1*4
-	}
-	\relative {
-		%%% Air de la Soprano2 %%%
-		
-		R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2. r2 mi,4~ | mi1~ mi2 r4 fad8 sold | si2.~|si2 r4|
-		R1*2 | re,4 si' sold8 fad | re4 sold8 fad re dod | sold1 | re'8 fad sold4 re8 dod sold4~ |
-		sold2.| R2. | dod,1~ dod~ | dod2 r4 | re fad8 sold fad re | 
-		<dod dod'>1~ <dod dod'>~ | <dod dod'>2 r4 | R2.| 
-		<< {\voiceTwo <mi mi'>1~\laissezVibrer s1 <dod dod'>2.~ <dod dod'>2 }\\
-		{ \voiceOne r2 \clef treble fa''8 sol si do si sol fa sol si4 r4 \clef bass
-		r4 la,8 si re4 si8 re fa sol } >> r4
-		<sol,,,! sol'!>1~ <sol sol'>2. r4 | R2.*2 | <sol sol'>1~ <sol sol'>2. r4 |
-		R2. << {s2 sol''8 re s1 s1 dod8 re fad2~ fad r4 s1 s2.} \\ 
-		{R2. <sold,, sold'>1~ <sold sold'>~ <sold sold'>2.~ <sold sold'>~ 
-		<sold sold'>1~ <sold sold'>2.}>> r4 R2.*2 R1*2 R2.*2 R1*2 R2.*2 \clef treble
-		<re''' la'>1\laissezVibrer r2 \ottava #1
-		sol''!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
-		sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
-		si4 do fa, | si8 sol fa4 si8 fa | sol1~|sol2. \ottava #0 r4 | R2.*2 |
-		R1*2 |R2.*2 | R1*2 | R2.*2 | R1 r2 <la,,! do!>2\fermata \clef bass |
-		
-		%%% Récitatif %%%
+  }
+  \relative {
+    %%% Air de la Soprano2 %%%
+    
+    R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2. r2 mi,4~ | mi1~ mi2 r4 fad8 sold | si2.~|si2 r4|
+    R1*2 | re,4 si' sold8 fad | re4 sold8 fad re dod | sold1 | re'8 fad sold4 re8 dod sold4~ |
+    sold2.| R2. | dod,1~ dod~ | dod2 r4 | re fad8 sold fad re | 
+    <dod dod'>1~ <dod dod'>~ | <dod dod'>2 r4 | R2.| 
+    << {\voiceTwo <mi mi'>1~\laissezVibrer s1 <dod dod'>2.~ <dod dod'>2 }\\
+    { \voiceOne r2 \clef treble fa''8 sol si do si sol fa sol si4 r4 \clef bass
+    r4 la,8 si re4 si8 re fa sol } >> r4
+    <sol,,,! sol'!>1~ <sol sol'>2. r4 | R2.*2 | <sol sol'>1~ <sol sol'>2. r4 |
+    R2. << {s2 sol''8 re s1 s1 dod8 re fad2~ fad r4 s1 s2.} \\ 
+    {R2. <sold,, sold'>1~ <sold sold'>~ <sold sold'>2.~ <sold sold'>~ 
+    <sold sold'>1~ <sold sold'>2.}>> r4 R2.*2 R1*2 R2.*2 R1*2 R2.*2 \clef treble
+    <re''' la'>1\laissezVibrer r2 \ottava #1
+    sol''!4 do | si8 sol fa4 si8 do | si sol fa sol si4 |
+    sol4 fa8 do' si4 do8 si | sol fa sol si r do fa, sol |
+    si4 do fa, | si8 sol fa4 si8 fa | sol1~|sol2. \ottava #0 r4 | R2.*2 |
+    R1*2 |R2.*2 | R1*2 | R2.*2 | R1 r2 <la,,! do!>2\fermata \clef bass |
+    
+    %%% Récitatif %%%
     r4 r8 mi,4. dod2.\laissezVibrer R1 R2.
     r4 r8 reb4. sib2.\laissezVibrer R1 R2.*2
     r4 r8 mib4 lab,8~ lab2.\laissezVibrer R2.
@@ -355,7 +355,7 @@ ActeUnSceneDeuxPiano = { \Piano
     \gauche \clef treble \ttt {fa, si mi \droite \ottava #1
     sib' mib la } \ottava #0 \gauche R2.
     R1 R2.*3 R2 R2. R1*4
-	}
+  }
 }
 
 ActeUnSceneTroisPiano = { \Piano
@@ -619,8 +619,29 @@ ActeUnSceneQuatrePiano = { \Piano
     r <sol la do mib lab> <sol la do mib lab>4 <do mib fad si> r8 <mib fad si> |
     r <mib solb lab reb> r4 <mib fa lab reb> \clef bass
     <red, mi lab reb> \clef treble |
-    <re'! re'!>4 s4 s2 | R1*2
+    <re'! re'!>4 s4 s2 | R1*2 \clef bass |
 
+    <re,sib' re>8 <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re>  <re sib' re> <re sib' re> <re sib' re>|
+    R2
+    <re sib' re>8 <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re>  <re sib' re> |
+    R2.
+    <re sib' re>8 <re sib' re> <re sib' re> <re sib' re> |
+    R1 \clef treble
+
+    %%% Piu lento %%%
+    R2.*3 r4 fa' sib <fa' solb sib>2.\arpeggio \laissezVibrer |
+    R2. r4 fa \gauche re, \droite
+    <dob' fa solb sib>2.\arpeggio \laissezVibrer |
+    R2. r4 <re fa> <sib do!> |
+    s4. <re fa solb sib>4.\arpeggio \laissezVibrer |
+    R2.*2 re'8 sib la fad mi re\laissezVibrer |
+    <fad la sib re>2.\arpeggio \laissezVibrer |
+    <solb sib>4 <reb fa> <lab do> | s2.
+    <reb fa solb sib>2.\arpeggio \laissezVibrer | R2.*3
+    R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
+    R1 R1. R1 R1. R1 R1.*5 R1 R1. r2 <dod mi la>4 r |
   }
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
@@ -714,7 +735,35 @@ ActeUnSceneQuatrePiano = { \Piano
     <re,re'> re'8 <sol la do> r <re re'> r <re,re'> |
     r <re re'> <re' re'> re re, <re' re'> re, re' | re,4 r r2 | R1
 
+    <re sib'>4 <re sib'> <re sib'> <re sib'> R2
+    <re sib'>4 <re sib'> <re sib'> R2.
+    <re sib'>4 <re sib'> R1
 
+    %%% Piu lento %%%
+    R2.*4 <fa' solb sib dob>2.\arpeggio \laissezVibrer |
+    R2. r2 s4 <re, mib dod'>2.\arpeggio \laissezVibrer |
+    R2.*2 <re' sol>4. <fad sol sib do>\arpeggio \laissezVibrer |
+    R2.*5 <mib sol>4 re2~ <re sol lab do>2.\arpeggio \laissezVibrer |
+    R2.*3
+    
+    la8 r sib mib r sold, fad si r mi re, sol | la4 r r2 |
+    la8 fad sold red r sib' do sol r re mi' r | la,4 r r2 |
+    la8 r re mi r si fad sold r mib sib' r | la4 r r2 | 
+    R1. R1 R1. R1
+    la8 r sib mib r sold, fad si r mi re, sol |
+    la r re mi r si fad sold r mib sib' r |
+    la fad sold red r sib' do sol r re mi' r |
+    la, si mi r fa, sol r sib r mib, lab r |
+    la do sib mib r si fad sold r re mi' r |
+    la,4 r r2 | R1.
+    \pl {do,1~do1.} {r4 do' \t {do do do} do do~do1} |
+    R1
+    la8 r sold red r sib' do sol r re mi' si |
+    la r mi' re, r sol do sib r mib, lab r |
+    la do sib mib r sold, fad si r mi re, r |
+    la' sol re' r dod si r sold r mib sib' r |
+    la fad sold red r sol do sib r mi re, r |
+    la4 r r2 | R1. r2 <re, la' fa'>4 r |
   }
 }
 

@@ -64,8 +64,8 @@ EntracteContralto = {
 }
 
 ActeDeuxSceneUnContralto= { \Contralto
-	\relative {
-		R2.*4 R2 R2.*2 R2 R2.*3 R2 |
+  \relative {
+    R2.*4 R2 R2.*2 R2 R2.*3 R2 |
     R2. R2 R2.*2 R2 R2.*3 R2 R2. R2 R2.*2 R2 R2.*3 R2 R2.*2 
     R1 R2. R1 R2. R2 R2. R1*3 R2.*4 R2 R2.*5 R1 R2. R2 R2.
     \repeat unfold 12 {R1 R2.} 
@@ -85,7 +85,7 @@ ActeDeuxSceneUnContralto= { \Contralto
     r2 r8 la( \mf | lab do re2.) |
     r2 r8 la( \mp | lab do re2.) |
     R2. R1 R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1 |
-	}
+  }
 }
 
 ActeDeuxSceneDeuxContralto= { \Contralto

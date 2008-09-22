@@ -82,66 +82,66 @@ harmo =
 
 st =
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (add-script m "staccato"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 acc =
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (add-script m "accent"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 det = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (add-script m "tenuto"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
     
 marc = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (add-script m "marcato"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 stdet = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (add-script m "portato"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 accdet = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (double-script m "tenuto" "accent"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 marcdet = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (double-script m "tenuto" "marcato"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 accst = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (double-script m "accent" "staccato"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
     
 marcst = 
 #(define-music-function (parser location music) 
-					(ly:music?)
+          (ly:music?)
           (define (make-script-music m)
    (double-script m "marcato" "staccato"))
-		(music-map make-script-music music))
+    (music-map make-script-music music))
 
 
 CaV=
@@ -229,7 +229,7 @@ graceNotes =
 parlato =
 #(define-music-function (parser location notes) (ly:music?)
 #{ \override NoteHead #'style = #'cross 
-	$notes
+  $notes
 \revert NoteHead #'style #})
 
 hideNote = {
