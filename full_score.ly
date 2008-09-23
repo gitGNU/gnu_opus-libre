@@ -65,6 +65,8 @@
 
 %%FIXME: how can I throw this into either paper or layout.ly?
 #(set-global-staff-size 12)
+#(ly:set-option 'point-and-click #f)
+#(ly:set-option 'delete-intermediate-files #t)
 
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
@@ -490,6 +492,57 @@ ActeUnSceneTroisTer = {
   >>
 }
 
+
+InterludeTrois = {
+  <<
+    \new TopLine \InterludeTroisMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \InterludeTroisFluteUn
+            \new Staff \InterludeTroisFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeTroisClarinetteUn
+            \new Staff \InterludeTroisClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeTroisSaxophoneUn
+            \new Staff \InterludeTroisSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \InterludeTroisPercus
+
+    \new TopLine \InterludeTroisMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \InterludeTroisViolonUn
+            \new Staff \InterludeTroisViolonDeux
+            \new Staff \InterludeTroisViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeTroisAltoUn
+            \new Staff \InterludeTroisAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \InterludeTroisVioloncelleUn
+            \new Staff \InterludeTroisVioloncelleDeux
+          >>
+        \new Staff \InterludeTroisContrebasse
+      >>
+    \new PianoStaff \InterludeTroisPiano
+  >>
+}
+
 ActeUnSceneQuatre = {
   <<
     \new TopLine \ActeUnSceneQuatreMesures
@@ -610,11 +663,17 @@ ActeUnSceneQuatre = {
     }
   } %}
   \score {
+    \InterludeTrois
+    \header {
+      piece = \Separateur
+    }
+  } %{
+  \score {
     \ActeUnSceneQuatre
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %{
+  } %
   \score {
     \Entracte
     \header {

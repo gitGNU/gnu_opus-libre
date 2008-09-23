@@ -80,14 +80,14 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
     la sold re sold la2 |
     r8 la re la sold re | 
     sold la r mi sold4-. |
-    re\stopped <la'' re> r2 | 
-    r8 <la re>8 r4 re,,\stopped <la'' re> |
-    r8 <la re> r4 <la re> r8 re,,\stopped r <la'' re> r4 |
-    sol,,\stopped <do'' sol'> r2 | 
-    r8 <do sol'> r4 sol,,\stopped <do'' sol'> |
+    re-+ <la'' re> r2 | 
+    r8 <la re>8 r4 re,,-+ <la'' re> |
+    r8 <la re> r4 <la re> r8 re,,-+ r <la'' re> r4 |
+    sol,,-+ <do'' sol'> r2 | 
+    r8 <do sol'> r4 sol,,-+ <do'' sol'> |
     r8 <do sol'> r4 <do sol'> | 
-    r8 sol,,\stopped r <do'' sol'> r4 |
-    sol,,\stopped <do'' sol'> r2 | 
+    r8 sol,,-+ r <do'' sol'> r4 |
+    sol,,-+ <do'' sol'> r2 | 
     la,,4 re8 si r la si4 |
     re4 sol8 fa do'4 | fa,8 sol si do r4 |
     << lab'2 \\ {re,8 mib re sib} >> lab8 sib re mib | 
@@ -275,6 +275,27 @@ ActeUnSceneTroisTerViolonUn = { \ViolonUn
     
     la4 sol fa mi fa8 mi fa sol la4 mi2~ mi2.~ mi2 r4 |
     la4 mi2~ mi2.~ mi2.~ mi2 r4 R2.
+  }
+}
+
+InterludeTroisViolonUn = { \ViolonUn
+  \relative {
+    R1 R2. R1 R2. R1 R2. R1 R2.
+    <dod la'>16 <dod la'>8 <dod la'> <dod la'> <dod la'>
+    <dod la'> <dod la'> <do sold'> <re sib'>16 |
+    <dod la'> <dod la'>8 <dod la'> <dod la'>
+    <do sold'> <lad fad'> <dod la'>16 |
+    <la'fa'> <la fa'>8 <la fa'> <la fa'>
+    <do lab'> <sib solb'> <dod la'>16 |
+    <la fa'> <la fa'>8 <la fa'> <la fa'> <la fa'>16 |
+    <si sol'> <si sol'>8 <si sol'> <si sol'>
+    <si sol'> <la fa'> <re sib'>16 |
+    <si sol'> <si sol'>8 <si sol'> <si sol'> <si sol'>16 |
+    <mi do'> <mi do'>8 <mi do'>16 <mi do'> <mi do'>8 <mi do'>16 |
+    <sol mib'> <sol mib'>8 <sol mib'>16 <sol mib'> <sol mib'>8 <sol mib'>16 |
+    R2*2
+    \tt {sol,16 si sib re dod} fa32 mi lab sol si sib re dod |
+    fa8 r r4 |
   }
 }
 

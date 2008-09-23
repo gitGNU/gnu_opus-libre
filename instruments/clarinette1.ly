@@ -327,6 +327,19 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
   }
 }
 
+InterludeTroisClarinetteUn = { \ClarinetteBasse
+  \relative {
+    sol,4 mi8 r r4 r | sol mi8 r r4 |
+    sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
+    sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
+    sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
+    sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
+    sol8 mi sol mi sol lab | sol mi sol lab16 r |
+    sol8 mi sol mi sol lab | sol mi sol lab16 r |
+    sol8 mi sol lab | si lab si do | R2*4
+  }
+}
+
 ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
   \relative {
     \partial 4 r4 fa' mi re8 dod4 r16 do sib la |

@@ -259,9 +259,9 @@ ActeUnSceneTroisBisAltoUn = { \AltoUn
     R1*3
     <do mib>1 <do mib>2 <do mib> <do mib> <sol do> |
     \pizz <fad fad'>4 r r2 | R1*6
-    r4 \arco fad\upbow \ind #"pizz. du pouce" do r |
-    r fad\upbow \simile do r |
-    fad\upbow do fad\upbow do|
+    r4 \arco fad\upbow \ind #"pizz. du pouce" do\thumbpizz r |
+    r fad\upbow \simile do\thumbpizz r |
+    fad\upbow do\thumbpizz fad\upbow do\thumbpizz |
     r4 <do fa\harmonic do''>2 r4 |
     do'1~\CaV do2\CaV reb do si fad1~fad~fad4 r la2~la fad~fad4 r r2 |
     R1*7
@@ -327,6 +327,31 @@ ActeUnSceneTroisTerAltoUn = { \AltoUn
     dod2.\fermata
   }
 }
+
+InterludeTroisAltoUn = { \AltoUn
+  \relative {
+    r8 \pizz mib, r mib r mib re' mib, |
+    r mib r mib re' mib, |
+    r mib r4 r2 | R2. R1 R2. \arco
+    <sol mib'>1~ <sol mib'>2 r4 |
+    r8 mi r mi r mi r mi | r mi r mi r mi |
+    <dod'la'>8 <dod la'>4 <dod la'> <dod la'>8 |
+    <dod la'> <dod la'>4 <dod la'>8 |
+    <si sol'>16 <si sol'> <sold mi'> <sold mi'>
+    <si sol'> <si sol'> <sold mi'> <sold mi'>
+    <si sol'> <si sol'> <do lab'> <do lab'> |
+    <si sol'> <si sol'> <sold mi'> <sold mi'>
+    <si sol'> <si sol'> <do lab'> <do lab'> \clef treble
+    <re sib'> <re sib'> <si sol'> <si sol'>
+    <re sib'> <re sib'> <red si'> <red si'> |
+    <fad re'> <fad re'> <red si'> <red si'>
+    <fad re'> <fad re'> <sol mib'>8 \clef alto
+    sol,16:32 mi: sol: lab: si: lab: si: do: |
+    mib: do: mib: mi: sol: mi: sol: lab: | si4 r \clef treble
+    fad'8 r r4 |
+  }
+}
+    
 
 ActeUnSceneQuatreAltoUn = { \AltoUn
   \relative {

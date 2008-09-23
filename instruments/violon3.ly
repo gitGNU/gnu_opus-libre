@@ -267,6 +267,27 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
   }
 }
 
+InterludeTroisViolonTrois = { \ViolonTrois
+  \relative {
+    R1 R2. R1 R2. R1 R2. R1 R2.
+    <lad fad'>16 <lad fad'>8 <lad fad'> <lad fad'> <lad fad'>
+    <lad fad'> <lad fad'> <la fa'> <si sol'>16 |
+    <lad fad'><lad fad'>8<lad fad'><lad fad'>
+    <la fa'> <sol red'> <lad fad'>16 |
+    <fad'do'> <fad do'>8 <fad do'> <fad do'>
+    <la fa'> <sol mib'> <lad fad'>16 |
+    <fad do'> <fad do'>8 <fad do'> <fad do'> <fad do'>16 |
+    <sold mi'> <sold mi'>8 <sold mi'> <sold mi'>
+    <sold mi'> <fad re'> <la fa'>16 |
+    <sold mi'> <sold mi'>8 <sold mi'> <sold mi'> <sold mi'>16 |
+    <si sol'> <si sol'>8 <si sol'>16 <si sol'> <si sol'>8 <si sol'>16 |
+    <si sol'> <si sol'>8 <si sol'>16 <si sol'> <si sol'>8 <si sol'>16 |
+    R2*2
+    \tt {sol,16 si sib re dod} fa32 mi lab sol si sib re dod |
+    la'8 r r4 |
+  }
+}
+
 ActeUnSceneQuatreViolonTrois = { \ViolonTrois
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2

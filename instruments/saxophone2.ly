@@ -174,6 +174,17 @@ ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
   }
 }
 
+InterludeTroisSaxophoneDeux = { \SaxophoneBaryton
+  \relative {
+    R1 R2. R1 R2. R1 R2.
+    si,8 lab si lab si lab si do | si lab si lab si do16 r |
+    si8 lab si lab si lab si do | si lab si lab si do16 r |
+    reb8 sib reb sib reb mib | reb sib reb mi16 r |
+    reb8 sib reb sib reb mib | reb sib reb mi16 r |
+    fa8 re fa solb si lab si do | R2*4
+  }
+}
+
 ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup

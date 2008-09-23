@@ -629,6 +629,36 @@ ActeUnSceneTroisTerMesures = {
             r4    \bar "|."
 }
 
+InterludeTroisMesures = {
+  \time 4/4
+      \tempo "Andantino" 4 = 52
+            R1
+  \time 3/4
+            R2.
+  \time 4/4
+            R1
+  \time 3/4
+            R2.
+  \time 4/4
+            R1
+  \time 3/4
+            R2.
+  \time 4/4
+            R1
+  \time 3/4
+            R2.
+  \time 4/4
+            R1
+  \time 3/4
+            R2.*2
+  \time 2/4
+            R2
+  \time 3/4
+            R2.
+  \time 2/4
+            R2*7
+}
+
 ActeUnSceneQuatreMesures = {
   \time 2/4
       \mark \markup \init-did \ActeUnSceneQuatreA

@@ -344,6 +344,28 @@ ActeUnSceneTroisTerPercus = { <<
   >>
 }
 
+InterludeTroisPercus = { \Timbales
+  \relative {
+    r8 <sol,mi'> r <sol mi'> r2 |
+    r8 <sol mi'> r <sol mi'> r4 |
+    <sol mi'>8 sol <sol mi'> sol <sol mi'> sol sol16 sol32 sol sol8 |
+    <sol mi'>8 sol <sol mi'> sol sol16 sol sol8 |
+    <sol mi'>8 sol <sol mi'> sol <sol mi'> sol sol16 sol32 sol sol8 |
+    <sol mi'>8 sol <sol mi'> sol sol16 sol sol8 |
+    <sol mi'> sol <sol mi'> sol <sol mi'> sol <sol mi'> <sol mi'> |
+    <sol mi'> sol <sol mi'> sol <sol mi'> <sol mi'> |
+    sol16 sol mi' mi sol, sol mi' mi sol, sol mi' mi sol,32 sol sol sol sol8 |
+    sol16 sol mi' mi sol, sol mi' mi sol,32 sol sol sol sol16 sol |
+    sol8 mi'16 mi r8 mi16 mi r8 mi32 mi mi mi |
+    mi8 mi16 mi r8 mi32 mi mi mi |
+    mi,8 <mi mi'> r <mi mi'> r <mi mi'>16 mi |
+    <mi mi'>16 mi32 mi <mi mi'>8 r <mi mi'> |
+    mi16 mi <mi mi'>8 mi16 mi <mi mi'>8 |
+    mi16 mi <mi mi'> mi <mi mi'> mi <mi mi'> mi |
+    mi2:32~ mi:~ mi2: mi'4 r |
+  }
+}    
+
 ActeUnSceneQuatrePercus = {
   <<
    \new Staff { \Vibraphone

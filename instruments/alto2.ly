@@ -311,6 +311,30 @@ ActeUnSceneTroisTerAltoDeux = { \AltoDeux
   }
 }
 
+InterludeTroisAltoDeux = { \AltoDeux
+  \relative {
+    r8 \pizz re, r re r re dod' re, |
+    r re r re dod' re, |
+    r re r4 r2 | R2. R1 R2. \arco
+    <mi do'>1~ <mi do'>2 r4 |
+    r8 mi r mi r mi r mi | r mi r mi r mi |
+    <lad fad'>8 <lad fad'>4 <lad fad'> <lad fad'>8 |
+    <lad fad'>8 <lad fad'>4 <lad fad'>8 |
+    <si sol'>16 <si sol'> <sold mi'> <sold mi'>
+    <si sol'> <si sol'> <sold mi'> <sold mi'>
+    <si sol'> <si sol'> <do lab'> <do lab'> |
+    <si sol'> <si sol'> <sold mi'> <sold mi'>
+    <si sol'> <si sol'> <do lab'> <do lab'> \clef treble
+    <re sib'> <re sib'> <si sol'> <si sol'>
+    <re sib'> <re sib'> <red si'> <red si'> |
+    <fad re'> <fad re'> <red si'> <red si'>
+    <fad re'> <fad re'> <sol mib'>8 \clef alto
+    sol,16:32 mi: sol: lab: si: lab: si: do: |
+    mib: do: mib: mi: sol: mi: sol: lab: | si4 r \clef treble
+    dod8 r r4 |
+  }
+}
+
 ActeUnSceneQuatreAltoDeux = { \AltoDeux
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2

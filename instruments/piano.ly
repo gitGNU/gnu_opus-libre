@@ -529,6 +529,52 @@ ActeUnSceneTroisTerPiano = { \Piano
   }
 }
 
+InterludeTroisPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    r2 r4 <do reb>8 r |
+    r2 <do reb>8 r | R1 R2. \clef bass
+    <do,mib si'>8 <do mib si'>4 <do mib si'>
+    <do mib si'> <do mib si'>8 |
+    <do mib si'> <do mib si'>4 <do mib si'> <do mib si'>8 |
+    <mi! sol do mib> <mi sol do mib>4 <mi sol do mib>
+    <mi sol do mib> <mi sol do mib>8 |
+    <mi sol do mib> <mi sol do mib>4 <mi sol do mib> <fa lab reb mi>8 |
+    <mi sol do mib> <mi sol do mib>4 <mi sol do mib>
+    <mi sol do mib> <mi sol do mib>8 |
+    <mi sol do mib> <mi sol do mib>4 <mi sol do mib> <mi sol do mib>8 |
+    <fa si> <re sold> <fa si> <re sold> <fa si> <reb do'> |
+    <fa si> <re sold> <fa si> <re sold> \clef treble |
+    <lab' si dod re sol>4 <lab si dod re sol> <lab si dod re sol> |
+    <lab si dod re sol> <lab si dod re sol> |
+    <si re fad sol sib> <si re fad sol sib> |
+    <si re fad sol sib> <si re fad sol sib> \clef bass |
+    sol16 \gauche sol,, sol' \droite mi' \gauche mi,, mi'
+    \droite mi' \gauche sold, |
+    \droite sold' \gauche mi, mi' \droite do' \gauche sold,
+    \droite sold' \gauche mi \droite mi' \clef treble | s4
+    r16 re' sib' dod | <fad, lad dod fa!>8 r r4 |
+  }
+  \relative {
+    r2 r4 re,8 r |
+    r2 re8 r | R1 R2.
+    <mi, sol>4 <mi sol> <mi sol> <mi sol> |
+    <mi sol> <mi sol> <mi sol> |
+    <mi si'> <mi si'> <mi si'> <mi si'> |
+    <mi si'> <mi si'> <mi si'> |
+    <mi si'> <mi si'> <mi si'> <mi si'> |
+    <mi si'> <mi si'> <mi si'> |
+    r8 <mi sol> r <mi sol> r <mi sol> |
+    r <mi sol> r <mi sol> |
+    r <mi sol mi'> r <mi sol mi'> r <mi sol mi'> |
+    r <mi sol mi'> r <mi sol mi'> |
+    r <mi sol mi'> r <mi sol mi'> r <mi sol mi'> r <mi sol mi'> |
+    s2 s2 si'16 \droite si' \gauche sol \droite sol' \gauche \clef treble
+    re sib' dod8 \clef bass |
+    <la,, la'>8 r r4 |
+  }
+}
+
 ActeUnSceneQuatrePiano = { \Piano
   \PianoDeuxMains
   \relative {

@@ -164,6 +164,16 @@ ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
   }
 }
 
+InterludeTroisSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R1 R2. R1 R2. R1 R2. R1 R2.
+    fa,8 re fa re fa re fa solb | fa re fa re fa solb16 r |
+    si8 lab si lab si do | si lab si do16 r |
+    si8 lab si lab si do | si lab si do16 r |
+    re8 si re mib fa re fa solb | R2*4
+  }
+}
+
 ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup

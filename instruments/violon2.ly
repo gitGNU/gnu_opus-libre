@@ -81,14 +81,14 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
     R1 | re4-. la'-. sold8( mi re4-.) |
     mi8( re la' sold)-. r la | 
     sold mi re mi sold4-. |
-    re\stopped <sold' re'> r2 | 
-    r8 <sold re'>8 r4 re,\stopped <sold' re'> |
-    r8 <sold re'> r4 <sold re'> r8 re,\stopped r <sold' re'> r4 |
-    sol,,!\stopped <si'' sol'> r2 | 
-    r8 <si sol'> r4 sol,,\stopped <si'' sol'> |
+    re-+ <sold' re'> r2 | 
+    r8 <sold re'>8 r4 re,-+ <sold' re'> |
+    r8 <sold re'> r4 <sold re'> r8 re,-+ r <sold' re'> r4 |
+    sol,,!-+ <si'' sol'> r2 | 
+    r8 <si sol'> r4 sol,,-+ <si'' sol'> |
     r8 <si sol'> r4 <si sol'> | 
-    r8 sol,,\stopped r <si'' sol'> r4 |
-    sol,,\stopped <si'' sol'> r2 | la,,4 re8 si r la si4 |
+    r8 sol,,-+ r <si'' sol'> r4 |
+    sol,,-+ <si'' sol'> r2 | la,,4 re8 si r la si4 |
     re4 sol8 fa do'4 | fa,8 sol si do r4 |
     sol, do re8 fa re do | 
     sol do re fa re do sol do | re2.~| re4 r2 | 
@@ -272,6 +272,27 @@ ActeUnSceneTroisTerViolonDeux = { \ViolonDeux
     
     la'4 sol fa mi fa8 mi fa sol la4 mi2~ mi2.~ mi2 r4 |
     R2.*5
+  }
+}
+
+InterludeTroisViolonDeux = { \ViolonDeux
+  \relative {
+    R1 R2. R1 R2. R1 R2. R1 R2.
+    <dod la'>16 <dod la'>8 <dod la'> <dod la'> <dod la'>
+    <dod la'> <dod la'> <do sold'> <re sib'>16 |
+    <dod la'> <dod la'>8 <dod la'> <dod la'>
+    <do sold'> <lad fad'> <dod la'>16 |
+    <la'fa'> <la fa'>8 <la fa'> <la fa'>
+    <do lab'> <sib solb'> <dod la'>16 |
+    <la fa'> <la fa'>8 <la fa'> <la fa'> <la fa'>16 |
+    <si sol'> <si sol'>8 <si sol'> <si sol'>
+    <si sol'> <la fa'> <re sib'>16 |
+    <si sol'> <si sol'>8 <si sol'> <si sol'> <si sol'>16 |
+    <mi do'> <mi do'>8 <mi do'>16 <mi do'> <mi do'>8 <mi do'>16 |
+    <sol mib'> <sol mib'>8 <sol mib'>16 <sol mib'> <sol mib'>8 <sol mib'>16 |
+    R2*2
+    \tt {sol,16 si sib re dod} fa32 mi lab sol si sib re dod |
+    do8 r r4 |
   }
 }
 

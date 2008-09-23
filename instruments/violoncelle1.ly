@@ -276,6 +276,24 @@ ActeUnSceneTroisTerVioloncelleUn = { \VioloncelleUn
   }
 }
 
+InterludeTroisVioloncelleUn = { \VioloncelleUn
+  \relative {
+    r8 \pizz mib, r mib r mib r mib | r mib r mib r mib |
+    r4 \arco mib2.~ mib2 r4 R1 R2. R1 R2.
+    <si fa'>4 <si fa'> <si fa'> <si fa'>8 <do solb'> |
+    <si fa'>4 <si fa'> <si fa'>8 <do solb'> |
+    <si fa'>4 <si fa'> <si fa'>8 <do solb'> |
+    <si fa'>4 <si fa'> |
+    r8 <sol red'> r <sol red'> r <sol re'> |
+    r <sol red'> r <sol re'> |
+    r <sol mi'> r <si sold'> |
+    r <si sold'> r <red si'> |
+    sol,16:32 mi: sol: lab: si: lab: si: do: |
+    mib: do: mib: mi: sol: mi: sol: lab: \clef tenor
+    si4 fa' sib8 r r4 |
+  }
+}
+
 ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2

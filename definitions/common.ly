@@ -11,7 +11,7 @@
 % #(set-default-paper-size "a4" 'landscape)
 
 %% Page breaking --------------------------------------------------%
-#(define page-breaking ly:optimal-breaking)
+#(define page-breaking ly:minimal-breaking)
 
 %% Staff size -----------------------------------------------------%
 #(set-global-staff-size 14)
@@ -52,7 +52,7 @@ PianoDynamics = {
 
 #(use-modules (srfi srfi-39)(ice-9 regex))
 #(ly:set-option 'point-and-click #f)
-
+#(ly:set-option 'delete-intermediate-files #t)
 
 
 #(define page-layout-parser #f)

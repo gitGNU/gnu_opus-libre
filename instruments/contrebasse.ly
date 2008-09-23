@@ -135,8 +135,8 @@ ActeUnSceneTroisContrebasse = { \Contrebasse
     %%% Tempo I %%%
     R2.*3
     << {mi2.~mi~mi~mi~mi~mi~mi4}\\
-    {s2.*2 mi,4\stopped s2 mi4\stopped s2 mi4\stopped r mi\stopped
-    mi\stopped r mi\stopped mi\stopped}>> r8 mi' \t {mi mi mi} sold4 r2 |
+    {s2.*2 mi,4-+ s2 mi4-+ s2 mi4-+ r mi-+
+    mi-+ r mi-+ mi-+}>> r8 mi' \t {mi mi mi} sold4 r2 |
     R2.*3
     
     %%% Tempo II %%%
@@ -162,12 +162,12 @@ ActeUnSceneTroisBisContrebasse = { \Contrebasse
     \ordin fad\glissando red8 r red4\glissando do8 r |
     sib\glissando sol16 r sol8\glissando mi16 r mi8\glissando dod16 r \clef "F_8" |
     re,1~re~re
-    <fa dod'>4\upbow \ind #"pizz. du pouce" re r2
-    <fa dod'>4\upbow \simile re r2
-    <fa dod'>4\upbow re <fa dod'>\upbow re
-    <fa dod'>\upbow re <fa dod'>\upbow re
-    <fa dod'>\upbow re <fa dod'>\upbow re
-    <fa dod'>\upbow re <fa dod'>\downbow <la, fa'> |
+    <fa dod'>4\upbow  \ind #"pizz. du pouce" re\thumbpizz r2
+    <fa dod'>4\upbow \simile re\thumbpizz r2
+    <fa dod'>4\upbow re\thumbpizz <fa dod'>\upbow re\thumbpizz
+    <fa dod'>\upbow re\thumbpizz <fa dod'>\upbow re\thumbpizz
+    <fa dod'>\upbow re\thumbpizz <fa dod'>\upbow re\thumbpizz
+    <fa dod'>\upbow re\thumbpizz <fa dod'>\downbow <la, fa'> |
     fad1~fad~fad~fad~fad~fad~fad2. r4 |
     R1*7
     <re' fad\harmonic>1~<re fad\harmonic>~<re fad\harmonic>4
@@ -214,7 +214,32 @@ ActeUnSceneTroisTerContrebasse = { \Contrebasse
     dod,2.~dod~dod4 la'2 |
     dod,2.~dod~dod4 fa2 |
     la,2.~la~la~la2 r4 |
-    la'2.\CaV la,4\stopped r2 | R2.*13
+    la'2.\CaV la,4-+ r2 | R2.*13
+  }
+}
+
+InterludeTroisContrebasse = { \Contrebasse
+  \relative {
+    sol,,4\upbow mi\thumbpizz r2 | sol4\upbow mi\thumbpizz r |
+    sol8\upbow mi\thumbpizz sol\upbow mi\thumbpizz
+    sol\upbow mi\thumbpizz \pizz sol lab |
+    \arco sol\upbow mi\thumbpizz sol\upbow mi\thumbpizz
+    \pizz sol lab |
+    \simile sol mi sol mi sol mi sol lab |
+    sol mi sol mi sol lab |
+    sol mi sol mi sol mi sol lab |
+    sol mi sol mi sol r |
+    r \arco mi r mi r mi sol lab |
+    r mi r mi sol mi |
+    r mi r mi sol lab |
+    r mi sol mi |
+    r <mi mi'> r <mi mi'> r <mi mi'> |
+    r <mi mi'> r <mi mi'> |
+    r <mi mi'> r <mi mi'> |
+    r <mi sol'> r <mi sol'> |
+    sol16 mi sol lab si lab si do |
+    mib do mib mi sol mi sol lab |
+    sol8 re sol re la8 r r4 |
   }
 }
 
@@ -272,7 +297,7 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     re' <re, re'> re' <re, re'> re' <re, re'> re' <re, re'> |
     re'8 re <re, re'> re re' re <re, re'> re |
     re'16\CaV re re re re re re re re re re re re re re re |
-    re4\CaV re,\stopped re'\CaV re,\stopped \pizz <re re'> r r2 |
+    re4\CaV re,-+ re'\CaV re,-+ \pizz <re re'> r r2 |
     R1 R2 R2.*2 R2 R1
 
     %%% Piu lento %%%

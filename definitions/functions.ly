@@ -152,6 +152,11 @@ CaV=
                     (ly:music-property m 'tweaks)))
                                        m)
 
+thumbpizz =
+#(make-music 'TextScriptEvent
+             'direction 1
+             'text (markup #:hspace .4 #:rotate 45
+                #:musicglyph "scripts.stopped"))
 
 %% Music shortcuts ------------------------------------------------%
 
