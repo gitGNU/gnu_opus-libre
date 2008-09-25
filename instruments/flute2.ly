@@ -312,7 +312,7 @@ ActeUnSceneQuatreFluteDeux = { \FluteDeux
     si4. \t {mi,16 la re} | sold8 r4 |
     fa,,2~ fa8 r r \t {sol'16 sib do} |
     dod4. \t {re16 fa sol} sold8 r \t {re16 mi sold} |
-    la'8 r r4 R2*2
+    la8 r r4 R2*2
     re,,,4.~re4 r16 sib'8.~sib4 solb' |
     R2 R4. R2.
 

@@ -677,7 +677,7 @@ ActeUnSceneQuatrePiano = { \Piano
     R1 \clef treble
 
     %%% Piu lento %%%
-    R2.*3 r4 fa' sib <fa' solb sib>2.\arpeggio \laissezVibrer |
+    R2.*3 r4 fa' sib, <fa' solb sib>2.\arpeggio \laissezVibrer |
     R2. r4 fa \gauche re, \droite
     <dob' fa solb sib>2.\arpeggio \laissezVibrer |
     R2. r4 <re fa> <sib do!> |
@@ -809,7 +809,7 @@ ActeUnSceneQuatrePiano = { \Piano
     la do sib mib r sold, fad si r mi re, r |
     la' sol re' r dod si r sold r mib sib' r |
     la fad sold red r sol do sib r mi re, r |
-    la4 r r2 | R1. r2 <re, la' fa'>4 r |
+    la'4 r r2 | R1. r2 <re, la' fa'>4 r |
   }
 }
 
