@@ -655,25 +655,25 @@ ActeUnSceneQuatre = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneTroisTer
     \header {
       piece = \Separateur
     }
-  } %
+  } %{
   \score {
     \InterludeTrois
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneQuatre
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %{
+  } %
   \score {
     \Entracte
     \header {

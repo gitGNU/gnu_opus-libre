@@ -176,7 +176,8 @@ InterludeTroisSaxophoneUn = { \SaxAltoUn
 
 ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
   \relative {
-    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup
+    \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+    R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
     
     r16 la' la la re4 do re8 la4. r4 | r16 mi' mi mi la4 sol | la8 mi4. r4 |

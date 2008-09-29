@@ -346,7 +346,7 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     sol la sol fa mi fa mi re dod si la si dod8 r |
     fa'4 mi re8 do4 r16 fad, fad fad |
     sib4 sol la r2 |
-    R2*3-\fermataMarkup
+    R2*2 R2-\fermataMarkup
     
     %%% Allegretto comodo %%%
     R1 R2. R1*2 \t {sol4 la sol} \t {la sol la} \t {sol la sol} |

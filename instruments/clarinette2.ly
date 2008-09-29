@@ -275,7 +275,8 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
   \relative {
     \partial 4 r4 re16 mi fa sol la8 la, re la'4 r |
     R2 r4 r8 la, re16 mi fa sol la8 la, sib fa'4 r16
-    re re re sol4 mi re r2 | R2*3-\fermataMarkup
+    re re re sol4 mi re r2 | R2*2
+    R2-\fermataMarkup
     
     %%% Allegretto comodo %%%
     R1 R2. R1*2 R1. \t {fad4 sol fad} \t {sol fad sol} | la2. r4 |

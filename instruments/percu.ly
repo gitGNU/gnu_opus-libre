@@ -370,7 +370,8 @@ ActeUnSceneQuatrePercus = {
   <<
    \new Staff { \Vibraphone
      \relative {
-       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup
+       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+       R2-\fermataMarkup
        R1 R2. \t {la'2 la4~} \t {la la2} |
        \t {la la4~} \t {la la2} |
        \t {sol sol4~} \t {sol sol2} \t {sol sol4} |
@@ -410,7 +411,8 @@ ActeUnSceneQuatrePercus = {
    }
    \new DrumStaff { \Percus
      \drummode {
-       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup
+       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+       R2-\fermataMarkup
        R1 R2. R1*2 R1. R1*2 R1. R1*2
        R2.*27
        R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
@@ -445,7 +447,8 @@ ActeUnSceneQuatrePercus = {
    }
    \new Staff { \Timbales
      \relative {
-       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*3-\fermataMarkup
+       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+       R2-\fermataMarkup
        R1 R2. R1*2 R1. R1*2 R1. R1*2
 
        %%% Agitato %%%

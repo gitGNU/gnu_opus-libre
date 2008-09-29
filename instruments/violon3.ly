@@ -228,7 +228,7 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
     \pizz <re re'>4 r2
     R2. \arco si2.~ si4 r2 |
     \pizz <sib sib'>4 r2 R2.
-    <mib sol'>4 r r2 <mi sold'>4 r <fa la'> r |
+    <mib sol>4 r r2 <mi sold>4 r <fa la> r |
     <re re'> r r2 R1*3 R2. |
     
     %%% Poco meno %%%

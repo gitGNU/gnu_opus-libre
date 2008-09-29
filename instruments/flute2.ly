@@ -260,7 +260,8 @@ ActeUnSceneQuatreFluteDeux = { \FluteDeux
   \relative {
     \partial 4 r4 la'' la fa8 mi4 r16 fad sol la |
     sib do sib la sol la sol fa mi re dod mi la,8 r |
-    la'4 la fa8 fa4 r r8 re r mi fa4 r2 | R2*3-\fermataMarkup
+    la'4 la fa8 fa4 r r8 re r mi fa4 r2 | R2*2
+    R2-\fermataMarkup
     
     %%% Allegretto comodo %%%
     R1 R2. R1*2 R1. R1*2 do2 do do do do do2. r4 |
