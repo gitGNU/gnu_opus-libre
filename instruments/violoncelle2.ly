@@ -380,6 +380,13 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
   }
 }
 
+EntracteVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    sold,2~sold~sold sold~sold sold sold~sold4 sold~|
+    sold4 sold8 \t {sold16 fa sol} |
+  }
+}
+
 ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
   \relative { \clef treble
     \pizz la4 r r | la r8 la r4 | la la la | 

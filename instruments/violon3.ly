@@ -373,6 +373,12 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
   }
 }
 
+EntracteViolonTrois = { \ViolonTrois
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnViolonTrois = { \ViolonTrois
 \relative {
     la''2.~\CaV la2.~\CaV la2.~\CaV la4\CaV r2 

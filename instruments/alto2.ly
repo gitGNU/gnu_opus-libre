@@ -425,6 +425,12 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
   }
 }
 
+EntracteAltoDeux = { \AltoDeux
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnAltoDeux = { \AltoDeux
   \relative { \clef treble 
     \ttt {

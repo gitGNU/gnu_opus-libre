@@ -392,6 +392,13 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
   }
 }
 
+EntracteVioloncelleUn = { \VioloncelleUn
+  \relative {
+    sold,2~sold~sold sold~sold sold sold~sold4 sold~|
+    sold4 sold8 \t {sold16 fa sol} |
+  }
+}
+
 ActeDeuxSceneUnVioloncelleUn = { \VioloncelleUn
   \relative { \clef treble
     \pizz la'4 r r | la r8 la r4 | la la la | 

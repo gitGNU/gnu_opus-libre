@@ -392,6 +392,12 @@ ActeUnSceneQuatreViolonUn = { \ViolonUn
   }
 }
 
+EntracteViolonUn = { \ViolonUn
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnViolonUn = { \ViolonUn
   \relative {
     <la' re\harmonic la''>2. ~

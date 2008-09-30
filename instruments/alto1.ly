@@ -441,6 +441,12 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
   }
 }
 
+EntracteAltoUn = { \AltoUn
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnAltoUn = { \AltoUn
   \relative {\clef treble 
     \ttt {

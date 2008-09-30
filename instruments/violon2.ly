@@ -387,6 +387,12 @@ ActeUnSceneQuatreViolonDeux = { \ViolonDeux
   }
 }
 
+EntracteViolonDeux = { \ViolonDeux
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnViolonDeux = { \ViolonDeux
   \relative {
     \pizz <la' la'>4 r2 R2.*3 R2 r2 \arco <re, sol\harmonic re''>4 ~ 

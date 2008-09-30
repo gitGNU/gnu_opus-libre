@@ -331,6 +331,13 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
   }
 }
 
+EntracteContrebasse = { \Contrebasse
+  \relative {
+    sold,,2~ sold sold~ sold |
+    sold~ sold sold sold sold4 r8 \t {sold16 dod si} |
+  }
+}
+
 ActeDeuxSceneUnContrebasse = { \Contrebasse
   \relative {
     R2.*4 R2 R2.*2 R2 | 

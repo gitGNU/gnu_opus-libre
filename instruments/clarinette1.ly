@@ -426,6 +426,16 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
   }
 }
 
+EntracteClarinetteUn = { \ClarinetteUn
+  \relative {
+    R2 \t {r4 mi'8} sold4~ sold2 |
+    \t {r4 sol8} si4~ si2 |
+    r8 mi, sold sol si4 \t {r4 mi,8} |
+    \t {sold sol si~} si r |
+    \t {r mi, sold} \t {sol si sib} |
+  }
+}
+
 ActeDeuxSceneUnClarinetteUn = { \ClarinetteUn
   \relative {
     R2.*3 | re''8 sib~ sib2~ | sib4 r | 

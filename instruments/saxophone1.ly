@@ -228,6 +228,15 @@ ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
   }
 }
 
+EntracteSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R2*2 r4 mi sold2 |
+    \t {r4 mi8} \t {sold4 sol8} |
+    si2 \t {r4 sol8} si4~ si8 r r4 |
+    sol4 \t {si sib8} |
+  }
+}
+
 ActeDeuxSceneUnSaxophoneUn = { \SaxAltoUn
   \relative {
     R2.*4 R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2 R2 R2.*3 R2 |

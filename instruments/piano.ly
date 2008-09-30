@@ -813,6 +813,29 @@ ActeUnSceneQuatrePiano = { \Piano
   }
 }
 
+EntractePiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R2*9
+  }
+  \relative {
+    sold,,2*1/4\laissezVibrer
+    sold'8 \t {sold sold sold}
+    sold2\laissezVibrer |
+    sold,2*1/4\laissezVibrer
+    sold'8 \t {sold sold sold}
+    sold2\laissezVibrer |
+    sold,,2*1/4\laissezVibrer
+    sold' \t {sold sold sold}
+    sold2\laissezVibrer |
+    r8 <sold,sold'>
+    \t {<sold sold'><sold sold'><sold sold'>} |
+    <sold sold'>2 sold2*1/4\laissezVibrer
+    <sold'sold'>8
+    \t {<sold sold'><sold sold'><sold sold'>} |
+  }
+}
+
 ActeDeuxSceneUnPiano = { \Piano <<
 \new Staff = "droite" { 
     \relative { R2.*4 R2 R2.*2 R2 \clef bass r8 <sol lab sib dob re>\arpeggio ~ <sol lab sib dob re>2\laissezVibrer R2.*2 R2 |

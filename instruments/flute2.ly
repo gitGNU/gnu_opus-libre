@@ -333,6 +333,12 @@ ActeUnSceneQuatreFluteDeux = { \FluteDeux
   }
 }
 
+EntracteFluteDeux = { \FluteDeux
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnFluteDeux = { \FluteDeux
   \relative {
     R2.*4 R2 R2.*2 R2 | r2 \t {si''8 re fa}| fad2 red8 r16 fad! | 

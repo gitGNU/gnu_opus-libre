@@ -351,6 +351,12 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
   }
 }
 
+EntracteClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R2*9
+  }
+}
+
 ActeDeuxSceneUnClarinetteDeux = { \ClarinetteDeux
   \relative {
     R2.*4 R2 R2.*2 R2 | mi2.~ | mi2.~ | mi2.~ | mi4 r |

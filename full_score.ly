@@ -609,6 +609,74 @@ ActeUnSceneQuatre = {
   >>
 }
 
+
+Entracte = {
+  <<
+    \new TopLine \EntracteMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \EntracteFluteUn
+            \new Staff \EntracteFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \EntracteClarinetteUn
+            \new Staff \EntracteClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \EntracteSaxophoneUn
+            \new Staff \EntracteSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \EntractePercus
+
+    \new TopLine \EntracteMesures
+ 
+    \new ChoirStaff
+       <<
+         \new Staff \new Voice = "soprano" \EntracteSopranoDeux
+         \new Lyrics \lyricsto "soprano" { \EntracteSopranoDeuxTexte }
+         \new Staff \new Voice = "alto" \EntracteContralto
+         \new Lyrics \lyricsto "alto" { \EntracteContraltoTexte }
+         \new Staff \new Voice = "tenor" \EntracteTenor
+         \new Lyrics \lyricsto "tenor" { \EntracteTenorTexte }
+         \new Staff \new Voice = "barytonUn" \EntracteBarytonUn
+         \new Lyrics \lyricsto "barytonUn" { \EntracteBarytonUnTexte }
+         \new Staff \new Voice = "barytonDeux" \EntracteBarytonDeux
+         \new Lyrics \lyricsto "barytonDeux" { \EntracteBarytonDeuxTexte }
+       >>
+
+    \new TopLine \EntracteMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \EntracteViolonUn
+            \new Staff \EntracteViolonDeux
+            \new Staff \EntracteViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \EntracteAltoUn
+            \new Staff \EntracteAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \EntracteVioloncelleUn
+            \new Staff \EntracteVioloncelleDeux
+          >>
+        \new Staff \EntracteContrebasse
+      >>
+    \new PianoStaff \EntractePiano
+  >>
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 %showLastLength = s4*325
 \book {
@@ -655,13 +723,13 @@ ActeUnSceneQuatre = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneTroisTer
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \InterludeTrois
     \header {
@@ -673,13 +741,13 @@ ActeUnSceneQuatre = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %}
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneUn
     \header {
