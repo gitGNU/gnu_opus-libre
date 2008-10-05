@@ -79,11 +79,12 @@ includeLayout = \layout {
     \override TextScript    #'outside-staff-priority = #900
     \override TextSpanner   #'outside-staff-priority = #1000
   }
-
   \context {
     \Lyrics
     \remove "Instrument_name_engraver"
+    \override LyricSpace #'minimum-distance = #0.9
   }
+  
 %% Look and feel --------------------------------------------------%
   \context {
     \Score

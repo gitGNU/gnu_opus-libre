@@ -386,13 +386,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneTroisTitre
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneTroisBis
     \header {
       piece = \Separateur
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneTroisTer
     \header {
@@ -404,13 +404,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %}
+  } %
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneUn
     \header {

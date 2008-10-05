@@ -676,6 +676,67 @@ Entracte = {
   >>
 }
 
+ActeDeuxSceneUn = {
+  <<
+    \new TopLine \ActeDeuxSceneUnMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneUnFluteUn
+            \new Staff \ActeDeuxSceneUnFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneUnClarinetteUn
+            \new Staff \ActeDeuxSceneUnClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneUnSaxophoneUn
+            \new Staff \ActeDeuxSceneUnSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeDeuxSceneUnPercus
+
+    \new TopLine \ActeDeuxSceneUnMesures
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneUnSopranoUn
+        \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneUnSopranoUnTexte }
+        \new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneUnSopranoDeux
+        \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneUnSopranoDeuxTexte }
+        \new Staff \new Voice = "contralto" \ActeDeuxSceneUnContralto
+        \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneUnContraltoTexte }
+      >>
+
+    \new TopLine \ActeDeuxSceneUnMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeDeuxSceneUnViolonUn
+            \new Staff \ActeDeuxSceneUnViolonDeux
+            \new Staff \ActeDeuxSceneUnViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneUnAltoUn
+            \new Staff \ActeDeuxSceneUnAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeDeuxSceneUnVioloncelleUn
+            \new Staff \ActeDeuxSceneUnVioloncelleDeux
+          >>
+        \new Staff \ActeDeuxSceneUnContrebasse
+      >>
+    \new PianoStaff \ActeDeuxSceneUnPiano
+  >>
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 %showLastLength = s4*325
@@ -741,19 +802,19 @@ Entracte = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %}
+  } %
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %{
+  } %}
   \score {
     \ActeDeuxSceneUn
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneUnBis
     \header {

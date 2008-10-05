@@ -388,11 +388,11 @@ EntracteVioloncelleDeux = { \VioloncelleDeux
 }
 
 ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
-  \relative { \clef treble
+  \relative { \clef tenor
     \pizz la4 r r | la r8 la r4 | la la la | 
     la r2 | R2 | R2.*2 | R2 |
-    \clef bass  r4 << \arco s2 \\ 
-    \repeat tremolo 4 { sold,16 lad16 } >> | 
+    r4 << \arco s2 \\ 
+    \repeat tremolo 4 { sold16 lad16 } >> | 
     \repeat tremolo 6 { sold16 lad16 } | 
     \repeat tremolo 6 { sold16 lad16 } | si4 r |
     R2. R2 R2.*2 R2 | 

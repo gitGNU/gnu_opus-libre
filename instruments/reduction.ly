@@ -2186,6 +2186,7 @@ ActeDeuxSceneUnMainDroite = {
     <<\t {\oneVoice r2 s2 la2}\\ \t {s2 mi1}>> | <la,! do mib lab>2.~ <la do mib lab>2
     <sold re' sib'>2.~|<sold re' sib'>2 r2 | 
     
+    %%% Andantino %%%
     << {<re' mi la>2\laissezVibrer s2} \\ {s4 <re mi> r <re mi>} >>
     r4 <re mi> r <re mi> | r <re mi> r | r <re mi> r | <re mi> r <re mi>| r <re mi> r | <re mi> r |
     r <re mi> r | r <re mi> r | <re mi> r <re mi> | r <re mi> r | <re mi> r <re mi> |
@@ -2263,6 +2264,7 @@ ActeDeuxSceneUnMainGauche = {
       <<{<fa! sib>2. fa4}\\{do!1}>> <fa, mi'!>2.~|<fa mi'>2|
       <mi red'>2.~| <mi red'>4 r8 mi4 fa sol8|
       
+      %%% Andantino %%%
       <<{r4 fa' r2 s2.}\\ {sib,1~ sib2.}>> r4 |
       r8 sib4 si dod8 |
       <<{mi4 si'! r4 s2. mi,4 si' lad s4}\\{mi2.~ mi2.~ mi2.~ mi4}>> r4 |

@@ -403,7 +403,7 @@ ActeDeuxSceneUnVioloncelleUn = { \VioloncelleUn
   \relative { \clef treble
     \pizz la'4 r r | la r8 la r4 | la la la | 
     la r2 | R2 | R2.*2 | R2 |
-    \clef bass r4 << \arco s2 \\ \repeat "tremolo" 4 { si,16 re16 } >>
+    \clef tenor r4 << \arco s2 \\ \repeat "tremolo" 4 { si,16 re16 } >>
     \repeat tremolo 6 { si16 re16 } | 
     \repeat tremolo 6 { si16 re16 } | sold,4 r |
     R2. R2 R2.*2 R2 | 

@@ -836,12 +836,20 @@ EntractePiano = { \Piano
   }
 }
 
-ActeDeuxSceneUnPiano = { \Piano <<
-\new Staff = "droite" { 
-    \relative { R2.*4 R2 R2.*2 R2 \clef bass r8 <sol lab sib dob re>\arpeggio ~ <sol lab sib dob re>2\laissezVibrer R2.*2 R2 |
-R2. R2 R2.*2 R2 | r8 <sol lab si do mib>\arpeggio ~ <sol lab si do mib>2\laissezVibrer | R2.*2 R2 | R2. R2 | R2.*2 | R2 | } }
-
-\new Staff = "gauche" { 
-    \clef bass \relative { R2.*4 R2 R2.*2 R2 mi,,2.\laissezVibrer R2.*2 R2 |
-R2. R2 R2.*2 R2 | mi2.\laissezVibrer | R2.*2 R2 | R2. R2 | R2.*2 | R2 |} }  >>
+ActeDeuxSceneUnPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R2.*4 R2 R2.*2 R2 \clef bass r8
+    <sol lab sib dob re>\arpeggio ~
+    <sol lab sib dob re>2\laissezVibrer R2.*2 R2 |
+    R2. R2 R2.*2 R2 |
+    r8 <sol lab si do mib>\arpeggio ~
+    <sol lab si do mib>2\laissezVibrer |
+    R2.*2 R2 | R2. R2 | R2.*2 | R2 |
+  }
+  \relative {
+    R2.*4 R2 R2.*2 R2 mi,,2.\laissezVibrer R2.*2 R2 |
+    R2. R2 R2.*2 R2 | mi2.\laissezVibrer | R2.*2 R2 |
+    R2. R2 | R2.*2 | R2 |
+  }
 }

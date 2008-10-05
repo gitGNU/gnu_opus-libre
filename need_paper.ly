@@ -21,7 +21,7 @@
   \context { \Staff
     \remove "Time_signature_engraver"
     \override  Clef #'color = #(rgb-color 0.6 0.6 0.6)
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 4)
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4.5 . 4.5)
     \override StaffSymbol #'thickness = #2.2
   }
   \context { \Score
@@ -30,7 +30,7 @@
 }
 
 \score {
-  << #(set-global-staff-size 16)
+  << #(set-global-staff-size 15)
     \new StaffGroup
       <<
         \new GrandStaff

@@ -21,8 +21,8 @@ ActeUnSceneTroisBisContralto = { \Contralto
     si si mi8 re mi do do \t {re do re} |
     si2 r4 r8 si | lad4. r8 sib4 sol8 r |
     sib4 sol8 r sib sol do16 sib mib8~  | 
-    mib mib16 mib do do mib8 fad red16 r fad8 red16 r |
-    fad8 red16 r  fad8 red16 r  \parlato fad8 r r4 |
+    mib mib16\<( mib do do mib8) fad--(\mf red16) r fad8--(\< red16) r |
+    fad8--( red16) r  fad8--( red16)\! r  \parlato fad8 r r4 |
     r8 \t {fad16 fad fad} la8 \t { red,16 red red} fad8 r
     \tt {do16 do do do do} | mi4 \t {r8 reb mi} \t {do sib reb} |
     la2 r | R1*4 r2 r4 r8 sol' |

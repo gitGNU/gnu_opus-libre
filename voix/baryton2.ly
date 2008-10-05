@@ -219,9 +219,9 @@ ActeUnSceneDeuxBarytonDeux = { \BarytonDeux
 
 ActeUnSceneTroisBisBarytonDeux = { \BarytonDeux
   \relative {
-    R1*9 r2 r4 sol, | fad'2 r4 mi |
-    dod'2   r4 sol, | fad'2.   mi4|
-    dod'2.  r4      | r2       mi,|
+    R1*9 r2 r4 sol,(\pp | fad'2) r4 mi( |
+    dod'2)   r4 sol,( | fad'2.   mi4|
+    dod'2.)  r4      | r2       mi,|
     dod'2.  r4      | R1
     dod2    r2      | R1 lad2  r  |
     R1 r8 sol re4
