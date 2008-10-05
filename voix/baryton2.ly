@@ -221,32 +221,33 @@ ActeUnSceneTroisBisBarytonDeux = { \BarytonDeux
   \relative {
     R1*9 r2 r4 sol,(\pp | fad'2) r4 mi( |
     dod'2)   r4 sol,( | fad'2.   mi4|
-    dod'2.)  r4      | r2       mi,|
-    dod'2.  r4      | R1
-    dod2    r2      | R1 lad2  r  |
-    R1 r8 sol re4
-    \tt { r8 fa!16 fa fa} sold8. fa16 | re4 
-    \tt {r16 re fa re lad'} dod2|
-    \tt {lad8 lad16 sold lad} fa4
-    \tt {r8 fa16 re fa} si,4 |
+    dod'2.)  r4      | r2       mi,\p\<|
+    dod'2.\!  r4      | R1
+    dod2--\pp    r2      | R1 lad2--  r  |
+    R1 r8 sol-- re4--
+    \tt { r8 fa!16( fa fa} sold8.-- fa16-. | re4--) 
+    \tt {r16 re( fa\< re lad'} dod2)\mf|
+    \tt {lad8-- lad16( sold lad} fa4--)
+    \tt {r8 fa16-.( re-. fa-.} si,4--) |
     R1*9
-    r8 mi4 sol16 sol
-    \tt {do8 sol16 sol sol}
-    \tt {sib sib do do do } |
-    sol4. r8 r2 |
+    r8 mi4--\mf sol16\(\< sol
+    \tt {do8--(\f sol16) sol sol}
+    \tt {sib--(\> sib) do-- do do } |
+    sol4.--\)\! r8 r2 | %% FIXME: ugly slur bug!!
     R2. R1*3
-    r2 r8 re re4 |
-    r2 re8 re~ \t {re re re} |
-    mib8 re16 re fa8 re r fa sib16. fa32 lab16 si~|
+    r2 r8 re(\mp re4) |
+    r2 re8--( re~ \t {re re re)} |
+    mib8--( re16 re) fa8--( re) r fa( sib16.--\< fa32 lab16 si~--)\!|
     si8 r r4 r2 |
-    r16 dod dod dod mi4 r16 dod dod dod mi8 si |
-    lad16 dod sold8 r4 fa8 fa16. fa32 sib16. fa32 lab16 re~|
+    r16 dod(\f dod dod mi4) r16 dod( dod dod mi8--) si-- |
+    lad16--\> dod-- sold8--\! r4 
+    fa8-- fa16.-- fa32\< sib16.-- fa32 lab16-. re~->--\!|
     re2. r4 | R1*17 
-    r2 sol,,8 sol fad'4~| fad8 r mi mi dod'4 dod8 r |
-    \t {la lad dod} fad,4. fad8 fad4 |
-    fad \t {sol8 mib mib} mib2 |
-    r4 mib reb mi |
-    \t {do do do} si'2 | R1*2 |
+    r2 sol,,8(\p sol fad'4~| fad8 r mi\> mi dod'4--\pp dod8) r |
+    \t {la( lad dod} fad,4. fad8 fad4--) |
+    fad-- \t {sol8--( mib mib} mib2--) |
+    r4 mib-- reb-- mi-- |
+    \t {do--(\> do-- do--} si'2--)\! | R1*2 |
   }
 }
 
