@@ -73,5 +73,5 @@ Interlude = \markup {
 \fill-line { \center-column {\fontsize #6 \InterludeTitreTexte }}}
 
 Separateur = \markup {
-  \fill-line { \center-column {\fontsize #10 " " "***" " "}}
+  \fill-line { \center-column { " " \Skyline " "}}
 }

@@ -20,6 +20,7 @@
 \include "./definitions/paper.ly"
 \include "./definitions/layout.ly"
 \include "./definitions/markup.ly"
+\include "./definitions/graphics.ly"
 
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
