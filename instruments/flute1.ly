@@ -371,5 +371,29 @@ ActeDeuxSceneUnFluteUn = { \FluteUn
     r \tt {sib16 mib dod fad mi} la4~ | la4. sib,8 la'4~ | 
     la2.~| la4 r | R2. R2 | R2.*2 R2 |
     mi2.~| mi2.~| mi2.~| mi4 r |
+    
+    %%% Entrée de la Soprano Deux %%%
+    R2.*2 R1 R2. \t { r2 mi,, la} lab2.~ lab4 r sib2.~sib2 r |
+    
+    %%% Andantino %%%
+    r2 mi,~ mi2. r4 R2. | r2 mi4~ mi2.~ mi4 r mi~ mi r |
+    mi r2 r mi4~ mi2.~ mi4 r2 R2. | R1 R2. R2
+    re2 r4 r mi la2~ la4 r2 R1 R2. R1
+    re2.~ re2. r4 | R2. R1 mi,2 r4 R1 R2.
+    re4 la' sold8 mi~ mi4~ mi2.~ mi2. r4 |
+    r8 re la'2~ la2. r4 | r mi2 la2. r4 |
+    mi'4. la4. sold4 mi re r |
+    
+    %%% Entrée de la Contralto %%%
+    sold,8 la sold mi re mi | sold la sold mi re mi sold4~ sold2.~ sold4 r r2 |
+    R2. R1 R2. R1 r2 re4~ re re2 r4 | r2 re4~ |
+    re2. r4 | r4 mi2~ mi4 r mi r | r re2~ re4 r r2 |
+    re''8 r r2 | r r8 re r8 r16 re, | re'8 r r2 | R1 r4 r8 re, r4 |
+    re,4 fa8 sib4 mib8~ | mib2 r4 |
+    R2.*5 r4 re2~ re r4 | r mib8 fa la2~ la4 r2 |
+    R1 lab,4 solb fa mib fa8 mib fa solb lab4 | mib2.~ mib4 r r2 |
+    R2. R1 re'8 mib re sib lab sib re4 r r2 |
+    la4 sol fa mi fa8 mi fa sol la4 | mi2.~ mi4 r | fad2. r4 |
+    R2. R1 R2. R1 R2. R1
   }
 }

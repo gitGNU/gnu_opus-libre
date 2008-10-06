@@ -7,6 +7,7 @@
 
 
 %% TODO: improve indentation, and use a markup function.
+%% Nope -- better: redefine BookTitleMarkup or whatever.
 
 OperaTitre = \markup  {
 \center-column {\fontsize #8.5 \OperaTitreTexte

@@ -135,7 +135,7 @@ ActeDeuxSceneUnSopranoUn= { \SopranoUn
     lab sib \ten mib2)~ mib4 r2 |
     r2 r8 la,!( \f
     lab do re2) | r2 r8 la!( 
-    lab do re4) r8 lab?8( | 
+    lab do re4) r8 lab8( | 
     la! do re4.) lab8( |
     sol\< re' \ten sol2)\!~ | sol2.~ sol4 r4 r2 |
     R2. R1 R2. r2 r4 r8 lab,(\mf|

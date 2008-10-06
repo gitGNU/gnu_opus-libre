@@ -242,5 +242,27 @@ ActeDeuxSceneUnSaxophoneUn = { \SaxAltoUn
     R2.*4 R2 R2.*2 R2 R2.*3 R2 | R2. R2 R2.*2 R2 R2.*3 R2 |
     la'4 re,2~ | re4 r | mi4. la,8~ la4~ | la2 r4 | si2 |
     mi,2.~ | mi2.~ | mi2.~ | mi4 r |
+    
+    %%% Entrée de la Soprano Deux %%%
+    R2.*2 R1 R2. R1 mib'2.~ mib4 r re2.~ re2 r |
+    
+    %%% Andantino %%%
+    R1*2 R2.*4 R2
+    R2.*5 R1 R2. R2
+    R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    r8 mi' sold mi re mi sold mi si re si lab solb re |
+    
+    %%% Entrée de la Contralto %%%
+    reb2.~ reb2. r4 | R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1
+    solb,8 r r2 | R1 R2. R1 R2. r2 r8 mib'' re sib lab4 r |
+    R2.*7 R1 R2.
+    R1 R2. R1 r4 la,?2 r4 lab2 re,4 | r la'2 r4 sol2 r4 |
+    R2. re''8 mib re sib lab fa mib fad |
+    re2.~ re1~ re4 r2 R2 lab2. r4 |
+    R2. R1 si4 lab r si lab si do si lab r si lab r2 |
   }
 }

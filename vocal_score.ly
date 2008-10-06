@@ -6,12 +6,9 @@
 %------------------------------------------------------------------%
 
 %%% This is the main file for the so-called vocal version, i.e. with
-%%% piano accompaniment.  Compile it using "lilypond vocal_score.ly"
-%%% and wait a few minutes...
+%%% piano accompaniment.
 
-\version "2.11.58"
-%% This opéra has been coded on over several years, from version 2.9 
-%% to 2.12 -- some inconsistencies may remain through the code.
+\version "2.12"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

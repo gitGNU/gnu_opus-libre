@@ -456,7 +456,39 @@ ActeDeuxSceneUnAltoUn = { \AltoUn
     } \ttt { \simile la''16 la la la la la }
     \repeat unfold 68 { \ttt { la[ la la la la la] } } la4 r 
     \ttt { si,8[ si16 si si si] } |
-    \repeat unfold 8 { \ttt { mi,[ mi mi mi mi mi] } } |   
+    \repeat unfold 8 { \ttt { mi,[ mi mi mi mi mi] } } |  
+        
+    %%% Entrée de la Soprano Deux %%%
+    R2.*2 r4 \ttt {<dod la'>8 <dod la'>16 <dod la'> <dod la'> <dod la'>} <dod la'>8 r r4 |
+    r4 r8 \t {<mib, re'>8 <mib re'>16}
+    \ttt {<mib re'>8 <mib re'>16 <mib re'> <mib re'> <mib re'>} \clef alto |
+    R1 R2. R2 R2. R1
+    
+    %%% Andantino %%%
+    R1*2 R2.*4 R2
+    r4 \pizz si mi, r si' lad8 fad mi4 fad8 mi si' lad |
+    r fad lad4 r | r8 si lad4 si8 lad fad4 r8 si r fad lad4 |
+    \arco si2 r4 | R2
+    \pizz fad4 r2 | R1 R2. R1 R2. R1
+    r4 do' mi, R1 r4 \arco lab r lab r lab r | R2.
+    r4 la? r la r la r |
+    <la re>1~ <la re>2. <la re>2 <mi la>
+    <la re>2.~<la re>2 <mi la> <la re>2.~ <la re>2. r4 |
+    <la re>2.~ <la re>1~ <la re>2 r4 | R1
+    
+    %%% Entrée de la Contralto %%%
+    \pizz fad4 r2 | R1
+    fa4 r2 R1 fad4 r fad r fa r mib |
+    r \arco <re'sol> r <re sol> r <re sol> r | re r re |
+    r mi r mi r mi r | <si mi> <si mi> r <si mi> r mi r r mi r mi |
+    r8 \pizz la,4 do re,8 | r4 lab' do re, | r8 la'4 do re,8 | r4 lab' do re, |
+    r8 la'4 do re,8 | r lab'4 do re,8 | r sol r2 |
+    r8 la4  do re,8 | r lab'4 do re,8 | r la'4 do re,8 | r lab'4 do8 reb,4 |
+    r4 la' r8 do | r4 \arco re r re r re | mib,2 r4 si' | r re r |
+    r dod r dod r do r | R1
+    r8 \pizz la4 do re,8 | r lab'4 lab8 do4 re, | r8 la'4 do re,8 |
+    r4 \arco sol2.~ sol2. r4 lab sol fa |
+    re2.:32~ re1:32~ re2.~ re4 r | R1 R2. R1 R2. R1 R2. R1
   }
 }
 

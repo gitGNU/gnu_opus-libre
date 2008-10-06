@@ -390,6 +390,35 @@ ActeDeuxSceneUnViolonTrois = { \ViolonTrois
     \ttt { re16[ re re re re re] } | 
     \repeat unfold 3 { \ttt { si16[ si si si si si] } } | 
     \repeat unfold 5 { \ttt { si16[ si si si si si] } }
+   
+    %%% Entrée de la Soprano Deux %%%
+    R2.*2 r4 \ttt {re16[ re re re re re] } \t {re re re} r8 r4 |
+    r4 r8 \t {mi,16 mi mi} \ttt {mi mi mi mi mi mi} | R1 R2. R2 R2. R1
+    
+    %%% Andantino %%%
+    R1*2 R2.*4 R2
+    R2.*5 R1 R2. R2
+    r4 re, r re r re r | re r re |
+    r re r re | r re r | re r re r |
+    r <do re> r | r <do re> r <do re> | r sib r | sib r sib r |
+    r sold r | r la r la | r la r |
+    r la r la r la r | la r la r | la r la |
+    r la r la | r la r | la2. r4 |
+    si2.~ si2. r4 |
+    
+    %%% Entrée de la Contralto %%%
+    r2 <la re>4 | r <la re> r <la re> | r <la re> r | <la re> r <la re> r |
+    r <la re> r | <la re> r <la re> r | r <la re> r | <la re> r <la re> r |
+    r8 \pizz la r la r la | r do r do r fad r fad | r re r do r la |
+    r la r la r la r la r2 r8 la |
+    r la r la r re r re | r la r la r la | r la r la r4 \arco si |
+    r2 \pizz do4 | r4 r8 do r2 | r2 do4 | r4 r8 do r4 r8 do |
+    r4 do do sol do fa sib re r |
+    r4 r8 do, r4 | r4 r8 si r4 |
+    r4 r8 do  r4 | r4 r8 si r4 |
+    r8 \arco si4 do8 re4 fa2.~ fa2 r4 | R1 R2.
+    R1 R2. R1 r4 mib r r do r do | r mib r r do r do | R2. R1
+    re2.~\CaV re1~\CaV re4\CaV r2 R2 | R1 R2. R1 R2. R1 R2. R1
   }
 }
 

@@ -926,7 +926,6 @@ ActeDeuxSceneUnMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4 R2.
-  \time 3/4
       \mark \markup \did \ActeDeuxSceneUnG
             R2.*7
       \mark \markup \did \ActeDeuxSceneUnH
@@ -942,7 +941,10 @@ ActeDeuxSceneUnMesures = {
   \time 4/4 R1
   \time 3/4 R2.
   \time 4/4 R1
-  \time 3/4 R2.
+  \time 3/4
+      \once \set Score.tempoHideNote = ##t
+      \tempo "Molto rallentando..."
+            R2.
   \time 4/4 r2
       \mark \markup \did \ActeDeuxSceneUnJ
             r2

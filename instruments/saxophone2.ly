@@ -260,5 +260,29 @@ ActeDeuxSceneUnSaxophoneDeux = { \SaxophoneBaryton
     R2.*4 R2 R2.*2 R2 mi,2.~ mi2.~ mi2.~ mi4 r | R2. R2 R2.*2 R2 |
     R2.*3 R2 | la4 re,2~ | re4 r | mi4. la,8~ la4~ | la2 r4 |
     si2 | mi,2.~ | mi2.~ | mi2.~ | mi4 r |
+    
+    %%% Entrée de la Soprano Deux %%%
+    R2.*2 R1 R2. fa'1 mi2.~ mi4 r mib2.~ mib4 r8 mi,4 fa sol8 |
+    
+    %%% Andantino %%%
+    sib1~ sib2. r4 R2.*4 R2
+    R2.*5 R1 R2. R2
+    solb4 reb' do8 lab | solb2. r4 |
+    lab8 solb reb' do r solb | do r r4 r2 |
+    solb8 lab do4 reb solb,8 reb' r4 r2 |
+    R2. R1 solb,2.~ solb2. r4 | R2. solb1~ solb2 r4 |
+    R1 R2. R1 R2. R1 R2. R1
+    solb2.~ solb2. r4 |
+    
+    %%% Entrée de la Contralto %%%
+    lab'2.~ lab2. r4 | R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 do,2. reb2 mib |
+    solb8 r r2 | R1 R2. R1 R2. fa2.~ fa4 r fa, |
+    sib2. si2 r4 sib2. si2 dod4 | mi2 r4 R2.*2 R1 R2.
+    R1 re2 mib4~ mib fa2. | lab2. la2. r4 | lab2. sol2. r4 | R2. R1
+    re2.~ re1~ re4 r2 R2 sib2. r4 |
+    lab' fa r lab fa r2 lab4 fa r lab fa lab la |
+    lab fa r lab fa r2 |
   }
 }
