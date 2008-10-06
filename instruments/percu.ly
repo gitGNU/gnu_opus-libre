@@ -523,6 +523,12 @@ ActeUnSceneQuatrePercus = {
 EntractePercus = {
 }
 
-ActeDeuxSceneUnPercus = {\Percus
-    R2.*4 R2 R2.*2 R2 R2.*3 R2 |
+ActeDeuxSceneUnPercus = {
+  \new GrandStaff \GrandMarimba \PianoDeuxMains
+    \relative {
+      R2.*4 R2 R2.*2 R2 R2.*3 R2 |
+    }
+    \relative {
+      R2.*4 R2 R2.*2 R2 R2.*3 R2 |
+    }
 }

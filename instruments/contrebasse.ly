@@ -344,7 +344,36 @@ ActeDeuxSceneUnContrebasse = { \Contrebasse
     r4 sol2~\CaV sol2.~\CaV sol2.~\CaV sol4\CaV r | 
     R2. R2 | R2.*2 R2 |
     r4 sold2~ sold2.~ sold2.~ sold4 r | 
-    R2. R2 | R2.*2 R2 | R2.*2 | R2. | 
+    R2. R2 | R2.*2 R2 | R2.*2 | R2. \clef "G_8" | 
     \ttt { mi8[ mi16 mi mi mi] } \ttt { mi[ mi mi mi mi mi] }|
+    
+    %%% Entrée de la Soprano Deux %%%
+    R2.*2 r4 \ttt {dod'8 dod16 dod dod dod} dod8 r r4 |
+    r2 \ttt {fa,8 fa16 fa fa fa} \clef "F_8" |
+    R1 \pizz fa,,4 fa' r R2 mi,4 mi' r R1 |
+    
+    %%% Andantino %%%
+    sib4 r r2 R1 R2. mi4 r2 R2.*2 R2 \clef "G_8"
+    \arco <re''mi>2.~\CaV <re mi>~\CaV <re mi>~\CaV <re mi>2\CaV r4 |
+    <re mi>\CaV r <re mi>\CaV | r <re mi>\CaV r <re mi>\CaV |
+    r <re mi>\CaV r | R2 \clef "F_8" |
+    fad,,4 dod' sid8 sold fad1~ fad2 r4 |
+    r8 fad fad, do''! fad,4 fad, | fad'2.~ fad2 fad,4\thumbpizz r |
+    R2. R1 fad'2.~ fad2. r4 | R2. fad1~ fad2 r4 |
+    fad,1 fa2.~ fa2. r4 | fad2.~ fad1 fa2.~ fa2. r4 |
+    fad2.~ fad2. r4 |
+    
+    %%% Entrée de la Contralto %%%
+    R2. R1 R2. R1
+    R2. R1 R2. R1 do'2.~ do2. r4 | r do2~ |
+    r4 do2. | dod2.~ dod2. r4 | do2 r4 | R1
+    fad2. fa2. r4 | fad2. fa2. r4 |
+    fad2. sol2.~ sol4 r \pizz fa |
+    sib, r2 si4 r2 sib4 r2 si4 r2 | mi4 r2 |
+    \arco mib2.~ mib2 r4 | R1 R2.
+    R1 R2. R1 \pizz lab4 r2 la4 r r2 | lab4 r2 |
+    sol4 r r2 | R2. r4 \arco lab sol fa |
+    re2.~ re1~ re4 r2 R2 |
+    R1 R2. R1 R2. R1 R2. R1
   }
 }

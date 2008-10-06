@@ -845,11 +845,79 @@ ActeDeuxSceneUnPiano = { \Piano
     R2. R2 R2.*2 R2 |
     r8 <sol lab si do mib>\arpeggio ~
     <sol lab si do mib>2\laissezVibrer |
-    R2.*2 R2 | R2. R2 | R2.*2 | R2 |
+    R2.*2 R2 | R2. R2 | R2.*2 | R2 | R2.*3 R2 \clef treble
+    
+    %%% Entrée de la Soprano Deux %%%
+    r2 r8 <la' si> | r4 <re, mi la>8 r r4 |
+    r <la' re mi>8 r r2 |
+    r4 r8 <re mi la> r4 | R1
+    <la, mib' lab>2.\arpeggio ~ <la mib' lab>2 |
+    <sold re' sib'>2*3/2\laissezVibrer R1
+    
+    %%% Andantino %%%
+    <re'mi la>2*2\laissezVibrer R1 R2.
+    <re la'>2*3/2\laissezVibrer R2.*2 R2
+    R2.*5 R1 R2. R2
+    <si re la'>2*3/2\laissezVibrer R1 R2. R1
+    <si re la'>2*3/2\laissezVibrer R1
+    r4 <do re sol> r R1 |
+    r4 <re fa> r | <re fa> r <re fa> r |
+    r <la re mi> r | r <la re> r <la re> | r <la re> r |
+    <re la'>2*2\laissezVibrer R2. R1 R2. R1 R2. R1
+    r8 sold, dod <fad si> <mi' la re>4\laissezVibrer | R1
+    
+    %%% Entrée de la Contralto %%%
+    <re, sold>2*3/2\laissezVibrer R1
+    <la re mi sold>2*3/2\laissezVibrer R1 |
+    R2. R1 R2. R1 <la re>2*3/2\laissezVibrer R1 R2. |
+    R1 <la re mi>4 r8 <la re mi>4.\laissezVibrer | R1 R2. R1 |
+    r4 <do re> r | r8 <do re>4. r8 <do re>4. |
+    r4 <do re> r | r8 <do re>4. r8 <do re>4. |
+    r4 <do re sol> r | r <do re> r | <fa sib mib> r2 |
+    r4 <do fa> <do fa> | r <si mi> <si mi> |
+    r  <do fa> <do fa> | r <si mi> r R2.
+    <do fa sib>2*3/2\laissezVibrer R2. R1 R2.
+    <dod fad>2*2\laissezVibrer R2. R1
+    r4 <mib solb> <mib solb> | r <do fa> r8 <do fa>4. |
+    r4 <mib solb> <mib solb> | r2 <do fa sib>2\laissezVibrer R2. R1
+    <re la'>2*3/2\laissezVibrer R1 R2. R2
+    <la re fad>2*2\arpeggio \laissezVibrer R2. R1 R2. R1 R2. R1
   }
   \relative {
     R2.*4 R2 R2.*2 R2 mi,,2.\laissezVibrer R2.*2 R2 |
     R2. R2 R2.*2 R2 | mi2.\laissezVibrer | R2.*2 R2 |
-    R2. R2 | R2.*2 | R2 |
+    R2. R2 | R2.*2 | R2 | R2.*3 R2 \clef treble
+    
+    %%% Entrée de la Soprano Deux %%%
+    r2 r8 <dod''mi> | r4 <fad,si>8 r r4 |
+    r <dod'fad sold>8 r r2 | r4 r8 <mib lab sib> r4 |
+    R1 \clef bass <fa,, mi'>2.\arpeggio ~ <fa mi'>2 |
+    <mi red'>2*3/2\laissezVibrer R1
+    
+    %%% Andantino %%%
+    sib'2*2\laissezVibrer R1 R2.
+    <mi si'!>2*3/2\laissezVibrer R2.*2 R2
+    R2.*5 R1 R2. R2
+    <fad,dod'mi>2*3/2\laissezVibrer R1 R2.
+    do'4 sol' fad r | <fad,dod'mi>2*3/2\laissezVibrer R1
+    r4 <sib fa'> r R1
+    r4 <mib lab sib> r | <mib lab sib> r <mib lab sib> r |
+    r sib r | r <si mi> r <si mi> | r <si mi> r |
+    R1 R2. R1 R2. R1 R2. R1
+    fad2*3/2\laissezVibrer R1
+    <sold'dod>2*3/2\laissezVibrer R1
+    fad,2*3/2\laissezVibrer R1
+    R2. R1 R2. R1 do2*3/2\laissezVibrer R1 R2.
+    R1 dod2*3/2\laissezVibrer R1 R2. R1
+    fad4 r fad' | fa, r fa' r | fad, r fad' | fa, r fa' r |
+    fad, r fad' | sol,2.~ sol4 r2 |
+    sib4 r2 | si4 r2 | sib4 r2 | si4 r2 |
+    R2. mib2*3/2\laissezVibrer R2. R1 R2.
+    <re si'>2*2\laissezVibrer R2. R1
+    lab4 r lab' | la, r la' r | lab, r lab' |
+    sol,2*2\laissezVibrer R2. R1
+    re2*3/2\laissezVibrer R1 R2. R2
+    <sib' fa' sold>2*2 \arpeggio \laissezVibrer
+    R2. R1 R2. R1 R2. R1
   }
 }
