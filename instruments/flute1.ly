@@ -397,3 +397,29 @@ ActeDeuxSceneUnFluteUn = { \FluteUn
     R2. R1 R2. R1 R2. R1
   }
 }
+
+ActeDeuxSceneUnBisFluteUn = { \FluteUn
+  \relative {
+    R1 R2. R2
+    
+    %%% Presto agitato %%%
+    sol'8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
+    sol8  mi sol mi sol mi sol mi sol lab| sol2. r2 |
+    sol8  mi sol mi sol mi sol mi sol lab| sol2. r2 |
+    sol8 mi? sol mi sol mi sol mi sol lab| sol2. r2 |
+    sol8  mi sol mi sol mi sol mi sol lab| sol mib reb mib sol4 r2 |
+    sol8  mi sol mi sol mi sol mi sol lab| sol mib reb mib sol lab sol4 r |
+    sol8  mi sol mi sol mi sol mi sol mi |
+    sol   mi sol mi sol mi sol mi sol mi |
+    sol   mi sol mi sol mi sol mi sol mi | sol4 r1 | R1*5/4
+    r2 dod8 re dod la sol la | dod4 r1 | R1*5/4
+    re,8 dod re dod re dod re dod re dod | re4 r1 |
+    
+    R1*5/4*6
+    mi1*5/4~ mi2. r2 | R1*5/4*3
+    fa1*5/4~ fa2. r2 | R1*5/4*9
+    
+    %%% Boum %%%
+    R1*5/4-\fermataMarkup
+  }
+}

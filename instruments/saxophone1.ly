@@ -266,3 +266,22 @@ ActeDeuxSceneUnSaxophoneUn = { \SaxAltoUn
     R2. R1 si4 lab r si lab si do si lab r si lab r2 |
   }
 }
+
+ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R1 R2. R2
+    
+    %%% Presto agitato %%%
+    R1*5/4*18
+    r8 la'16 sol la4 r r2 |
+    R1*5/4*2
+    fad4 r2 fad4 r | fad r fad r2 | fad4 r r8 fad r2 |
+    sol,4 r1 | R1*5/4*7
+    r1 r8 dod16 si | dod4 r1 | r8 mi16 re mi4 r r2 |
+    R1*5/4 r4 r8 fa16 mi fa4 r2 | R1*5/4
+    do4 r2 do4 r | do r do r2 | do4 r r8 do r2 | sib4 r1 |
+    R1*5/4 fa4 r1 | R1*5/4-\fermataMarkup
+    
+    %%% Boum %%%
+  }
+}

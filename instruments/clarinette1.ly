@@ -466,3 +466,20 @@ ActeDeuxSceneUnClarinetteUn = { \ClarinetteBasse
   }
 }
 
+ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
+  \relative {
+    sol'4 mi8 r r2 | sold4 mi8 r r4 | sol4 mi~
+    
+    %%% Presto agitato %%%
+    mi1*5/4~ mi2. r2 | R1*5/4*3
+    mi,1*5/4~ mi~ mi2. r2 | R1*5/4*11
+    sib'2 la sol4 mi2. r2 |
+    do4 r2 do4 r | do r do r2 |
+    do4 r r8 do' lab fa re do | lab4 r1 | R1*5/4*4
+    do1*5/4~ do2. r2 | do2. r2 | R1*5/4*6
+    sol4 r2 sol4 r | sol r sol r2 | sol4 r r8 fa''do sol la mi |
+    si4 r1 R1*5/4 mi,4 r1 | R1*5/4-\fermataMarkup
+    
+    %%% Boum %%%
+  }
+}
