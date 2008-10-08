@@ -492,3 +492,13 @@ ActeDeuxSceneUnAltoUn = { \AltoUn
   }
 }
 
+ActeDeuxSceneUnBisAltoUn = { \AltoUn
+  \relative {
+    \pizz mi,4 r r2 | R2. R2
+    
+    %%% Presto Agitato %%%
+    R1*5/4*2
+    \arco \ind #"sul tasto" <mi'sold>1*5/4~ <mi sold>~ <mi sold>2. r2 |
+    <la, red>1*5/4~ <la red>~ <la red>2. r2 |
+  }
+}

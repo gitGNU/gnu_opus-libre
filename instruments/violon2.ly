@@ -435,3 +435,45 @@ ActeDeuxSceneUnViolonDeux = { \ViolonDeux
   }
 }
 
+ActeDeuxSceneUnBisViolonDeux = { \ViolonDeux
+  \relative {
+    \pizz mi4 r r2 R2. R2
+    
+    %%% Presto agitato %%%
+    R1*5/4*2
+    \repeat tremolo 16 {\ind #"sul tasto"sol32 mi}
+    \repeat tremolo 4 {sol mi}
+    \repeat tremolo 16 {sol mi}
+    \repeat tremolo 4 {sol mi}
+    \repeat tremolo 16 {sol mi}
+    \repeat tremolo 4 {sol mi} sol2. r2 |
+    \repeat tremolo 16 {mi32 sol}
+    \repeat tremolo 4 {mi sol}
+    \repeat tremolo 16 {mi sol}
+    \repeat tremolo 4 {mi sol} mi2. r2 |
+    \repeat tremolo 16 {sol32 mi}
+    \repeat tremolo 4 {sol mi}
+    \repeat tremolo 16 {sol mi}
+    \repeat tremolo 4 {sol mi} sol2. r2 |
+    \repeat tremolo 16 {mi32 sol}
+    \repeat tremolo 4 {mi sol}
+    \repeat tremolo 16 {mi sol}
+    \repeat tremolo 4 {mi sol} mi2. r2 |
+    sol8 la sol mi re mi sol la sol4 |
+    sol8 la sol mi re mi sol la sol4 |
+    sol8 la sol mi re mi sol la sol4 |
+    sol8 la sol mi re mi sol la sol mi |
+    re mi sol la re, mi sol la re, mi |
+    sol la re, mi sol la re, mi sol la |
+    \ordin mib4 re8 re re re mib4 re8 re |
+    mib4 re8 re mib4 re8 re re re |
+    mib re re re re mib re re re re | re4 r1 |
+    R1*5/4*11
+    mi8 dod mi fa mi dod mi dod mi dod |
+    mi dod mi fa mi dod mi dod mi dod |
+    fa4 mi8 mi mi mi fa4 mi8 mi |
+    fa4 mi8 mi fa4 mi8 mi mi mi |
+    fa mi mi mi mi fa mi mi mi mi | mi4 r1 | R1*5/4
+    dod4 r1 | R1*5/4-\fermataMarkup
+  }
+}
