@@ -480,13 +480,3 @@ ActeDeuxSceneUnAltoDeux = { \AltoDeux
   } 
 }
 
-ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
-  \relative {
-    \pizz mi,4 r r2 | R2. R2
-    
-    %%% Presto Agitato %%%
-    R1*5/4*2
-    \arco \ind #"sul tasto" <red'sol?>1*5/4~ <red sol>~ <red sol>2. r2 |
-    <mi,la>1*5/4~ <mi la>~ <mi la>2. r2 |
-  }
-}

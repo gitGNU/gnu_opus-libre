@@ -374,30 +374,3 @@ ActeDeuxSceneUnFluteDeux = { \FluteDeux
     R2. R1 R2. R1 R2. R1
   }
 }
-
-ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
-  \relative {
-    R1 R2. R2
-    
-    %%% Presto agitato %%%
-    sol'2. r2 |
-    sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8 mi sol mi sol mi sol mi sol lab| sol2. r2 |
-    sol8 mi sol mi sol mi sol mi sol lab| sol mib reb mib sol4 r2 |
-    sol8 mi sol mi sol mi sol mi sol lab| sol2. r2 |
-    sol8 mi?sol mi sol mi sol mi sol mi | sol4 r sol8 lab sol mib reb mib |
-    sol8 mi sol mi sol mi sol mi sol lab| sol2. r2 |
-    mi8 sol mi sol mi sol mi sol mi sol |
-    mi8 sol mi sol mi sol mi sol mi sol |
-    mi4 r1 | R1*5/4
-    r2 r4 dod'4 sol8 la | dod re dod4 r r2 | R1*5/4
-    dod,8 re dod re dod re dod re dod4 | re4 r1 |
-    
-    R1*5/4*6
-    red1*5/4~ red2. r2 | R1*5/4*3
-    mi1*5/4~ mi2. r2 | R1*5/4*9
-    
-    %%% Boum %%%
-    R1*5/4-\fermataMarkup
-  }
-}

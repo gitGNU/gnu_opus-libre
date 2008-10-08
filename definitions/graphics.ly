@@ -13,10 +13,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%% Scores Separator %%%%%%%%%%%%%%%%%%%%%%%%%%
 Skyline =
-\markup \with-dimensions #'(6 . 32) #'(-5 . 4)
+\markup \with-dimensions #'(0 . 28) #'(-3.2 . 0)
 \postscript #"
-1 -1 scale
-0 -4 translate
+0.8 -0.8 scale
+2 -4 translate
 0.25 setlinewidth
 12 0.5 moveto
 12 5.5 lineto

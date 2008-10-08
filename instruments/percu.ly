@@ -19,7 +19,11 @@ Marimba = {
   \set Staff.midiInstrument = "marimba"
 }
 
-GrandMarimba = \Marimba
+GrandMarimba = {
+  \set GrandStaff.instrumentName = \markup { \hcenter-in #27.5 "Marimba  "}
+  \set GrandStaff.shortInstrumentName = "Mar.  "
+  \set GrandStaff.midiInstrument = "marimba"
+}
 
 Vibraphone = {
   \set Staff.instrumentName = \markup { \hcenter-in #27.5 "Vibraphone  "}
@@ -527,8 +531,4 @@ ActeDeuxSceneUnPercus = {
     \relative {
       R2.*4 R2 R2.*2 R2 R2.*3 R2 |
     }
-}
-
-ActeDeuxSceneUnBisPercus = { \Percus
-  
 }

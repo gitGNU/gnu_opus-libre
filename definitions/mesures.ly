@@ -55,6 +55,7 @@ PrologueMesures = {
       \stopTxt    \bar "||"
   \time 2/4
       \mark \markup \did \PrologueF
+      \once \set Score.tempoHideNote = ##t
       \tempo "Tempo giusto"
             r2
             r4
@@ -124,6 +125,7 @@ PrologueMesures = {
   \time 3/4 R2.*5
   \time 2/4 R2*2
   \time 4/4
+      \once \set Score.tempoHideNote = ##t
       \tempo "Scherzando"
             R1
   \time 3/4 R2.   \bar "||"
@@ -173,6 +175,7 @@ ActeUnSceneUnMesures = {
   
   \time 4/4
       \mark \markup \did \ActeUnSceneUnD
+      \once \set Score.tempoHideNote = ##t
       \tempo "Poco a poco animando..."
             R1
   \time 3/4 R2.
@@ -198,6 +201,7 @@ ActeUnSceneUnMesures = {
   \time 4/4 R1
   \time 3/4 R2.   \bar "||"
   \time 4/4
+      \once \set Score.tempoHideNote = ##t
       \tempo "Ad libitum (stesso tempo)"
             R1
   \time 3/4 R2.*2
@@ -238,6 +242,7 @@ ActeUnSceneUnMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4
+      \once \set Score.tempoHideNote = ##t
       \tempo "poco allargando..."
             R2.
   \time 4/4 R1
@@ -328,6 +333,7 @@ ActeUnSceneUnBisMesures = {
             R2.
       \stopTxt
       \mark \markup \did \ActeUnSceneUnBisC
+      \once \set Score.tempoHideNote = ##t
       \tempo "A Tempo"
             R2.
       \startTxt #"molto rit."
@@ -600,6 +606,7 @@ ActeUnSceneTroisBisMesures = {
 ActeUnSceneTroisTerMesures = {
   \time 2/4
       \mark \markup \init-did \ActeUnSceneTroisTerA
+      \once \set Score.tempoHideNote = ##t
       \tempo "Ad lib."
             R2*3
   \time 3/4 R2. 
@@ -704,6 +711,7 @@ ActeUnSceneQuatreMesures = {
   \time 3/4 R2.
   \time 4/4
       \mark \markup \did \ActeUnSceneQuatreF
+      \once \set Score.tempoHideNote = ##t
       \tempo "Placando assai"
             R1*5
   \time 2/4 R2
@@ -726,6 +734,7 @@ ActeUnSceneQuatreMesures = {
       \mark \markup \did \ActeUnSceneQuatreK
             R2*3
   \time 3/4 R2.*2
+      \once \set Score.tempoHideNote = ##t
       \tempo "Poco a poco più mosso..."
             R2.*4
   \time 4/4
@@ -844,6 +853,7 @@ ActeDeuxSceneUnMesures = {
   \time 3/4 R2.*2
   \time 2/4 R2
   \time 3/4 
+      \once \set Score.tempoHideNote = ##t
       \tempo "Poco stringendo..."
             R2.*2
       \mark \markup \did \ActeDeuxSceneUnB
@@ -932,6 +942,7 @@ ActeDeuxSceneUnMesures = {
   \time 3/4 R2.
   \time 4/4 R1
   \time 3/4
+      \once \set Score.tempoHideNote = ##t
       \tempo "Molto rallentando..."
             R2.
   \time 4/4 r2
@@ -959,7 +970,7 @@ ActeDeuxSceneUnBisMesures = {
       \tempo "Andante ad libitum" 4 = 76
             R1
   \time 3/4 R2.
-  \time 2/4 R2    \bar "||"
+  \time 2/4 R2
   \time 5/4
       \tempo "Presto Agitato" 4 = 192
             R1*5/4*7
@@ -1201,6 +1212,7 @@ ActeDeuxSceneDeuxMesures = {
             R2*2  \bar "||"
   \time 3/4
       \mark \markup \did \ActeDeuxSceneDeuxZDD
+      \once \set Score.tempoHideNote = ##t
       \tempo "Stesso Tempo"
             R2.*16 \bar "|."
 }

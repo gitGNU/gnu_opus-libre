@@ -437,8 +437,3 @@ ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
     R1 R2. R1 R2. R1 R2. R1
   }
 }
-
-ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
-  \relative {
-  }
-}

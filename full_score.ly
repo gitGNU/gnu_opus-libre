@@ -737,76 +737,14 @@ ActeDeuxSceneUn = {
   >>
 }
 
-ActeDeuxSceneUnBis = {
-  <<
-    \new TopLine \ActeDeuxSceneUnBisMesures
-    \new StaffGroup
-      <<
-        \new GrandStaff
-          <<
-            \new Staff \ActeDeuxSceneUnBisFluteUn
-            \new Staff \ActeDeuxSceneUnBisFluteDeux 
-          >>
-        \new GrandStaff
-          <<
-            \new Staff \ActeDeuxSceneUnBisClarinetteUn
-            \new Staff \ActeDeuxSceneUnBisClarinetteDeux
-          >>
-        \new GrandStaff
-          <<
-            \new Staff \ActeDeuxSceneUnBisSaxophoneUn
-            \new Staff \ActeDeuxSceneUnBisSaxophoneDeux
-          >>
-      >>
-
-    \new StaffGroup \ActeDeuxSceneUnBisPercus
-
-    \new TopLine \ActeDeuxSceneUnBisMesures
-
-    \new ChoirStaff
-      <<
-        \new Staff \new Voice = "barytonUn" \ActeDeuxSceneUnBisBarytonUn
-        \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneUnBisBarytonUnTexte }
-        \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneUnBisBarytonDeux
-        \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneUnBisBarytonDeuxTexte }
-        \new Staff \new Voice = "tenor" \ActeDeuxSceneUnBisTenor
-        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneUnBisTenorTexte }
-      >>
-
-    \new TopLine \ActeDeuxSceneUnBisMesures
-
-    \new StaffGroup 
-      <<
-        \new GrandStaff 
-          <<
-            \new Staff \ActeDeuxSceneUnBisViolonUn
-            \new Staff \ActeDeuxSceneUnBisViolonDeux
-            \new Staff \ActeDeuxSceneUnBisViolonTrois
-          >>
-        \new GrandStaff
-          <<
-            \new Staff \ActeDeuxSceneUnBisAltoUn
-            \new Staff \ActeDeuxSceneUnBisAltoDeux
-          >>
-        \new GrandStaff 
-          <<
-            \new Staff \ActeDeuxSceneUnBisVioloncelleUn
-            \new Staff \ActeDeuxSceneUnBisVioloncelleDeux
-          >>
-        \new Staff \ActeDeuxSceneUnBisContrebasse
-      >>
-    \new PianoStaff \ActeDeuxSceneUnBisPiano
-  >>
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-showFirstLength = s4*260
+%showLastLength = s4*325
 \book {
   \header {
     title = \OperaTitre
     subtitle = \FullScore
     poet = \OperaLivret
-    composer = \OperaPartition
+    composer =  \OperaPartition
     tagline = \OperaNotice
   }
 %{
@@ -869,19 +807,19 @@ showFirstLength = s4*260
     \header {
       piece = \EntracteTitre
     }
-  } %
+  } %}
   \score {
     \ActeDeuxSceneUn
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %}
+  } %{
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {
@@ -895,10 +833,4 @@ showFirstLength = s4*260
     }
   } %
 %}
-}
-
-ActeDeuxSceneUnBisViolonDeux = { \ViolonDeux
-  \relative {
-    
-  }
 }

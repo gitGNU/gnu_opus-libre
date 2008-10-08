@@ -921,11 +921,3 @@ ActeDeuxSceneUnPiano = { \Piano
     R2. R1 R2. R1 R2. R1
   }
 }
-
-ActeDeuxSceneUnBisPiano = { \Piano
-  \PianoDeuxMains
-  \relative {
-  }
-  \relative {
-  }
-}

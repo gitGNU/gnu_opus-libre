@@ -391,22 +391,3 @@ ActeDeuxSceneUnClarinetteDeux = { \ClarinetteDeux
     R2. R1 R2. R1 mi4 reb r mi reb r2 |
   }
 }
-
-ActeDeuxSceneUnBisClarinetteDeux = { \ClarinetteDeux
-  \relative {
-    R1 R2. R2
-    
-    %%% Presto agitato %%%
-    R1*5/4*5
-    sol''1*5/4~ sol~ sol2. r2 |
-    R1*5/4*11
-    la,,2 sol mi4 | dod2. r2 |
-    re4 r2 re4 r | re r re r2 | re4 r r8 re' fa sol lab si |
-    do4 r1 | R1*5/4*4
-    r2 r8 re,,~ re2 | fa2~ fa8 sol~ sol2 | lab2. r2 | R1*5/4*6
-    fad4 r2 fad4 r | fad r fad r2 | fad4 r r8 fad' sol la do re |
-    mib4 r1 | R1*5/4 fad,,4 r1 | R1*5/4-\fermataMarkup
-    
-    %%% Boum %%%
-  }
-}
