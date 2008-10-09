@@ -449,5 +449,34 @@ ActeDeuxSceneUnVioloncelleUn = { \VioloncelleUn
 
 ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
   \relative {
+    R1 R2. R2
+    
+    %%% Presto agitato %%%
+    <do,,mi\harmonic sol do\harmonic mi' sol>1*5/4~
+    <do mi\harmonic sol do\harmonic mi' sol>~
+    <do mi\harmonic sol do\harmonic mi' sol>~
+    <do mi\harmonic sol do\harmonic mi' sol>~
+    <do mi\harmonic sol do\harmonic mi' sol>2. r2 |
+    R1*5/4 \clef treble |
+    <lab'''sol'>1*5/4~ <lab sol'>2. r2 \clef bass |
+    R1*5/4*7
+    sib,,1*5/4~ sib~ sib2. r2 |
+    dod2 re mi4 sol1*5/4~ sol2. r2 |
+    <do re>4 r2 <do re>4 r | <do re> r <do re> r2 |
+    <do re>4 r r8 <do re> r2 | si,4 r1 |
+    R1*5/4*5
+    r2 r8 red, fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    fad sol fad red fad red fad red fad red |
+    <sol dod>4 r2 <sol dod>4 r | <sol dod> r <sol dod> r2 |
+    <sol dod>4 r r8 <sol dod> r2 | <solb fa'>4 r1 |
+    R1*5/4 <fa re'>4 r1 | R1*5/4-\fermataMarkup |
+    
+    %%% Boum %%%
   }
 }

@@ -500,5 +500,28 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
     R1*5/4*2
     \arco \ind #"sul tasto" <mi'sold>1*5/4~ <mi sold>~ <mi sold>2. r2 |
     <la, red>1*5/4~ <la red>~ <la red>2. r2 |
+    R1*5/4*7
+    \repeat tremolo 8 { \simile mi'16*5/4 re}
+    \repeat tremolo 8 { mi re}
+    \repeat tremolo 8 { mi re}
+    mi4 r re8 mi re sib la sib |
+    re4 r2 re8 sib la sib |
+    re4 r2 \ordin re8 re re re |
+    <la fad'>4 r2 <la fad'>4 r |
+    <la fad'> r <la fad'> r2 |
+    <la fad'>4 r r8 <la fad'> r2 |
+    <re do'>4 r1 | R1*5/4*8
+    fa,?8 re? fa re fa re fa solb fa re |
+    fa re fa re fa re fa solb fa re |
+    fa re fa re fa re fa solb fa re |
+    fa re fa re fa re fa solb fa re |
+    fa re fa re fa re fa solb fa re |
+    <fad do'>4 r2 <fad do'>4 r |
+    <fad do'> r <fad do'> r2 |
+    <fad do'>4 r r8 <fad do'> r2 |
+    <sib la'>4 r1 | R1*5/4
+    <fad dod'>4 r1 | R1*5/4-\fermataMarkup
+    
+    %%% Boum %%%
   }
 }

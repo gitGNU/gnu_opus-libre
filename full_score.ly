@@ -896,9 +896,3 @@ showFirstLength = s4*260
   } %
 %}
 }
-
-ActeDeuxSceneUnBisViolonDeux = { \ViolonDeux
-  \relative {
-    
-  }
-}

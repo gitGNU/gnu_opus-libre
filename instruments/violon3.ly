@@ -428,26 +428,16 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     
     %%% Presto agitato %%%
     R1*5/4*2
-    \repeat tremolo 16 {\ind #"sul tasto"mi32 sol}
-    \repeat tremolo 4 {mi sol}
-    \repeat tremolo 16 {mi sol}
-    \repeat tremolo 4 {mi sol}
-    \repeat tremolo 16 {mi sol}
-    \repeat tremolo 4 {mi sol}
-    \repeat tremolo 16 {mi sol}
-    \repeat tremolo 4 {mi sol} mi2. r2 |
-    \repeat tremolo 16 {sol32 mi}
-    \repeat tremolo 4 {sol mi}
-    \repeat tremolo 16 {sol mi}
-    \repeat tremolo 4 {sol mi} sol2. r2 |
-    \repeat tremolo 16 {mi32 sol}
-    \repeat tremolo 4 {mi sol}
-    \repeat tremolo 16 {mi sol}
-    \repeat tremolo 4 {mi sol} mi2. r2 |
-    \repeat tremolo 16 {sol32 mi}
-    \repeat tremolo 4 {sol mi}
-    \repeat tremolo 16 {sol mi}
-    \repeat tremolo 4 {sol mi} |
+    \repeat tremolo 8 {\arco \ind #"sul tasto"mi16*5/4 sol}
+    \repeat tremolo 8 {mi sol}
+    \repeat tremolo 8 {mi sol}
+    \repeat tremolo 8 {mi sol} mi2. r2 |
+    \repeat tremolo 8 {sol16*5/4 mi}
+    \repeat tremolo 8 {sol mi} sol2. r2 |
+    \repeat tremolo 8 {mi16*5/4 sol}
+    \repeat tremolo 8 {mi sol} mi2. r2 |
+    \repeat tremolo 8 {sol16*5/4 mi}
+    \repeat tremolo 8 {sol mi}
     sol4 r re sol8 la sol la |
     sol4 r re sol8 la sol la |
     sol4 r re sol8 la sol la |
