@@ -19,7 +19,11 @@ Marimba = {
   \set Staff.midiInstrument = "marimba"
 }
 
-GrandMarimba = \Marimba
+GrandMarimba = {
+  \set PianoStaff.instrumentName = \markup { \hcenter-in #27.5 "Marimba  "}
+  \set PianoStaff.shortInstrumentName = "Mar.  "
+  \set PianoStaff.midiInstrument = "marimba"
+}
 
 Vibraphone = {
   \set Staff.instrumentName = \markup { \hcenter-in #27.5 "Vibraphone  "}
@@ -519,14 +523,135 @@ ActeUnSceneQuatrePercus = {
 EntractePercus = {
 }
 
-ActeDeuxSceneUnPercus = {
-  \new GrandStaff \GrandMarimba \PianoDeuxMains
-    \relative {
+ActeDeuxSceneUnPercus = { <<
+  \new Staff \relative {\Vibraphone 
+    R2.*4 R2 R2.*2 R2
+    mi,8\sustainOn do' sol' mib' lab si\laissezVibrer R2.*2
+    \sustainOff R2 R2. R2 R2.*2 R2
+    mi,,,8\sustainOn si' do sol' lab mib'\laissezVibrer R2.*2
+    \sustainOff R2 R2. R2 R2.*2 R2
+    <re la'>4\sustainOn mi, <re la'> |
+    \t {mi,8 <re' la'> mi} \t {<re' la'> mi, <re la'>}
+    \t {mi, <re' la'> mi} <re'la'>2*3/2\laissezVibrer R2 \sustainOff
+    R2.*2 R1 R2. R1 R2. R2 R2. R1
+    
+    %%% Andantino %%%
+    
+    %%FIXME: complete. As soon as I have *nothing* else to do.
+  }
+  \new PianoStaff \PianoDeuxMains
+    \relative {\GrandMarimba 
       R2.*4 R2 R2.*2 R2 R2.*3 R2 |
+      R2. R2 R2.*2 R2 R2.*3 R2 |
+      R2. R2 R2.*2 R2 R2.*3 R2 |
+      R2.*2 R1 R2. R1 R2. R2 R2. R1
+      
+      %%% Andantino %%%
+      r4<re mi> r <re mi> |
+      r <re mi> r <re mi> |
+      r <re mi> r |
+      r <re mi> r |
+      <re mi> r <re mi> |
+      r <re mi> r | <re mi> r |
+      r <re mi> r |
+      r <re mi> r |
+      <re mi> r <re mi> |
+      r <re mi> r |
+      <re mi> r <re mi> |
+      r <re mi> r <re mi> |
+      r <re mi> r |
+      r <re mi> |
+      r <mi sold> r |
+      <mi sold> r <mi sold> r |
+      <mi sold> r <mi sold> |
+      r <mi sold> r <mi sold> |
+      r <mi sold> r |
+      <mi sold> r <mi sold> r |
+      s2. R1 R2. R1 R2. R1 R2.
+      R1 R2. R1 R2. R1 R2. R1
+      R2. R1
+      <re mi>4 r <re mi> |
+      r <re mi> r <re mi> |
+      r <re mi> r |
+      <re mi> r <re mi> r |
+      r <re mi> r |
+      <re mi> r <re mi> r |
+      r <re mi> r |
+      <re mi> r <re mi> r |
+      s2. s1 s2.
+      s1 s2. s1
+      s4 <re mi> r |
+      r <re mi> r <re mi> |
+      s2. s1 s2. s1 s2.*7 R2.
+      s4 <do re> r <do re> r <do re> |
+      R1 s4 <do re> r |
+      R1 R2. R1
+      r4 <mib solb> <mib solb> |
+      r <do fa> <do fa> r |
+      r <mib solb> <mib solb> |
+      r <do fa> r <do fa> |
+      r <do fa> r | R1
+      R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1
     }
     \relative {
       R2.*4 R2 R2.*2 R2 R2.*3 R2 |
+      R2. R2 R2.*2 R2 R2.*3 R2 |
+      R2. R2 R2.*2 R2 R2.*3 R2 |
+      R2.*2 R1 R2. R1 R2. R2 R2. R1
+      
+      %%% Andantino %%%
+      sib,2*2\laissezVibrer R1
+      r4 sib r | mi,2*3/2\laissezVibrer R2.*2 R2
+      r4 sib' r | mi,2*3/2\laissezVibrer R2.*3 R1 R2. r4 do' |
+      fad, <la're> r | <la re> r <la re> r |
+      <la re> r <la re> | r <la re> r <la re> |
+      fad, <la're> r | <la re> r <la re> r |
+      sib,8 sib' fa fa, mi' do | sib2:32~ sib4 r |
+      fad2.:32~ fad4 r r2 | sib4 r2 |
+      fad2:32~ fad4 r | R2.
+      R1 R2. R1 R2. R1 R2. R1
+      fad2.:32~ fad4 r r2 |
+      <sold'la>4 r <sold la> |
+      mi <sold la> si, <sold'la> |
+      fad, <sold'la> r |
+      <sold la> sol <sold la> do, |
+      fa,! <sold'la> r |
+      <sold la> mi <sold la> si, |
+      fad <sold'la> r |
+      <sold la> r <sold la> r |
+      do,8 la' \droite <re sol> \gauche 
+      do, la' \droite <re sol> | <fad do'> <re sol> \gauche
+      do, la' \droite <re sol> \gauche
+      do, la' \droite <do re> \gauche |
+      do, fad si \droite mi \gauche
+      do, fad | do sol' \droite re' <mi la> \gauche
+      si \droite <mi la> \gauche fad, \droite <si mi> \gauche |
+      dod, la' \droite <la're> \gauche
+      dod,,la' \droite <si'mi> |
+      fad <la re> \gauche dod,,si' \droite <mi la> \gauche
+      dod, si' \droite <mi la> \gauche |
+      do, la' s4 r4 | la4 r la r |
+      fad8 la \droite <do re> \gauche la \droite <do re> \gauche la |
+      fa lab \droite <do re> \gauche lab \droite <do re>4 \gauche r |
+      fad,8 la\droite <do re> \gauche la \droite <do re> \gauche la |
+      fa lab \droite <do re> \gauche lab \droite <do re>4 \gauche r |
+      <fad,,fad'>8 la' \droite <do re> \gauche la \droite <do re>4 \gauche |
+      sol,8 re' \droite <do'fa> \gauche sol, re' \droite <fa' sib> \gauche |
+      re, do' \droite <sib'mib> \gauche re, \droite <mib' lab>4 \gauche |
+      sib,,8 la' \droite <do fa> \gauche la \droite <do fa> \gauche la |
+      si, lab' \droite <si mi> \gauche lab \droite <si mi>4 \gauche |
+      sib,8 la' \droite <do fa> \gauche la \droite <do fa> \gauche la |
+      si, lab' \droite <si mi> \gauche lab \droite <si mi>4 \gauche |
+      R2.
+      mib,8 la s4 r8 la s4 r8 mib s4 | r2 r4 <la si> |
+      mib s r |
+      re <si'dod> r <si dod> |
+      re,<sib'do> r | R1
+      lab2*3/2\laissezVibrer la\laissezVibrer r4 |
+      lab2*3/2\laissezVibrer <sol, sol'>2\laissezVibrer r | R2. R1
+      R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1
     }
+  >>
 }
 
 ActeDeuxSceneUnBisPercus = { \Percus

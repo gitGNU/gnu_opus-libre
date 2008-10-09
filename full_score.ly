@@ -800,7 +800,7 @@ ActeDeuxSceneUnBis = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-showFirstLength = s4*260
+%showFirstLength = s4*2
 \book {
   \header {
     title = \OperaTitre
@@ -869,19 +869,19 @@ showFirstLength = s4*260
     \header {
       piece = \EntracteTitre
     }
-  } %
+  } %}
   \score {
     \ActeDeuxSceneUn
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %}
+  } %{
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {

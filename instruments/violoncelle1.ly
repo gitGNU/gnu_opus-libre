@@ -453,10 +453,8 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
     
     %%% Presto agitato %%%
     <do,,mi\harmonic sol do\harmonic mi' sol>1*5/4~
-    <do mi\harmonic sol do\harmonic mi' sol>~
-    <do mi\harmonic sol do\harmonic mi' sol>~
-    <do mi\harmonic sol do\harmonic mi' sol>~
-    <do mi\harmonic sol do\harmonic mi' sol>2. r2 |
+    \simile <mi''sol>~\CaV <mi sol>~\CaV
+    <mi sol>~\CaV <mi sol>2.\CaV r2 |
     R1*5/4 \clef treble |
     <lab'''sol'>1*5/4~ <lab sol'>2. r2 \clef bass |
     R1*5/4*7

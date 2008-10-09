@@ -384,11 +384,8 @@ ActeDeuxSceneUnBisContrebasse = { \Contrebasse
     
     %%% Presto agitato %%%
     <sol, do\harmonic sol''>1*5/4~
-    <sol do\harmonic sol''>~
-    <sol do\harmonic sol''>~
-    <sol do\harmonic sol''>~
-    <sol do\harmonic sol''>2. r2 |
-    R1*5/4 <sol sib\harmonic re''>1*5/4~
+    \simile sol''~\CaV sol~\CaV sol~\CaV sol2.\CaV r2 |
+    R1*5/4 <sol,,sib\harmonic re''>1*5/4~
     <sol sib\harmonic re''>2. r2 \clef "F_8" |
     R1*5/4*7
     sib,1*5/4~ sib~ sib2. r2 |
