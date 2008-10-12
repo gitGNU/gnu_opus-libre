@@ -240,6 +240,16 @@ parlato =
   $notes
 \revert NoteHead #'style #})
 
+slap =
+#(define-music-function (parser location music) (ly:music?)
+#{\override NoteHead #'stencil = #ly:text-interface::print
+  \override NoteHead #'text = \markup \musicglyph #"scripts.sforzato"
+  \override NoteHead #'extra-offset = #'(0.1 . 0.0 )
+  $music
+  \revert NoteHead #'stencil
+  \revert NoteHead #'text
+  \revert NoteHead #'extra-offset #})
+
 hideNote = {
 \once \override NoteHead  #'transparent = ##t
 \once \override NoteHead  #'no-ledgers = ##t
