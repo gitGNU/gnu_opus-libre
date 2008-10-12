@@ -86,7 +86,7 @@ ActeUnSceneUnBisBarytonUn = { \BarytonUn
     
     %%% Duo %%%
     
-    R1 r2 r8 do,( ~ \cmb #"mp" #"sostenuto" \t {do do do} | do2) r |
+    R1 r2 r8 do,( ~ \t {do\mpsostenuto do do} | do2) r |
     \t { r8 do( do} do4 r8 do4-- do8 |
     mi do sold'4) r2 |
     r4 \t {lad8( \< lad lad} dod4. \mf si8~ | si si4 si8 si-- lad4.~|lad2) r4 r8 lad( |
@@ -187,7 +187,7 @@ ActeUnSceneQuatreBarytonUn = { \BarytonUn
   r4 \ind #"meno"  \ten si2.--~ si2 r4 | R1*2
   si2.-- \mp si4( sib sib \t { sib-- lab-- si-- } | fa--) r \ind #"giocando" la!-.( \p sol-. |
   fa-. mi-. fa8-. mi-. fa-. sol-. la4-. mi-.) r2 R2*3
-  R2.*2 r8 r16 si'-> \cmb #"f" #"sub." si( fad re fa sib8--) reb->-- |
+  R2.*2 r8 r16 si'-> si(\fsubito fad re fa sib8--) reb->-- |
   r4 r8 reb,-. \mp \t {reb( do do) } | mi( dod) r4 r8 dod16 \mf dod |
   fad4-- r8  mi \f ~ mi16 mi mi8 | \ten la2-- r2 | R1*3 R2. R1 R2. R1 R2. R1 R2. R1*2  R2.*3 R1*2
   

@@ -25,7 +25,7 @@ ActeUnSceneDeuxSopranoDeux = { \SopranoDeux
     sold4-- \! ) r8 lab-.( lab-. lab-.) | sib4.--( fa8 sol!4-.)
     \ten re'1-- ~ re4 r r2 | R2.*2 | 
     la8 ( \mp re la sold re sold la re la sold re \< sold la re sol!
-    \bmc #"poco" #"f" sold sol! \> re la sold re \! sold |
+    sold \pocof sol! \> re la sold re \! sold |
     \ten la2. )~ la4 r r r8 la16 ( \> re | sold,2) \! r4 r8 la16 ( re) |
     sold,4.--( \< la4.~ | la4 re,4.. mi16 si2. \mf \> sold'4 \p )~|sold2. r4|
     R2.*2 R1*2 | r8 si( \mf mi4.) si8( | mi \< mi re re sol!4 \! )~|

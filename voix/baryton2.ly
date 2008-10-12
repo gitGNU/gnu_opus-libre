@@ -24,7 +24,7 @@ PrologueBarytonDeux = { \BarytonDeux
   | fa8.-- ( re16 ) r4 |
   r8 sib'-- \< dod8.-> sold16-. | si8-. \ten mi4. \ff -> ~ | 
   mi2~ | mi4.( re,8) | R2
-  r8 \cmb #"f" #"molto" re'-- re-- re-- re8.-- fa,16 |
+  r8 re'-- \fmolto re-- re-- re8.-- fa,16 |
   lab4-> r16 do,-. fa-. solb-. mib4-- |
   r8 re'-- re-- re-- re8.-- mi,16 | 
   sib'4-> r8 sib,\mf -. \t {sib-- ( lab sib)} |
@@ -109,27 +109,27 @@ ActeUnSceneUnBarytonDeux = { \BarytonDeux
     
     r8 sol16.-- \mp sol32-. si8-.-- r | r sol16.-- sol32-. si8-.-- r | R2 |
     r4 r8 red,16.-. \mf red32-. | fad2--( red8) r red8.-. red16-. | fad2--( red8) r r4 |
-    red8-. r red-. r re-. r re-. r | fad2--( red8) r re8.->-- \cmb #"ff" #"subito" dod16->--~ |
+    red8-. r red-. r re-. r re-. r | fad2--( red8) r re8.->-- dod16->--~ \ffsubito |
     dod8 mi->-- r16 mi-. \t {mi--( re mi} sol8--) r mi8. \mf mi16 |
     sol2--( mi8) r mi8. mi16 | sol2--( mi8) r r4 | mi8-. r mi-. r red-. r red-. r |
-    sol8. sol16 re'!8-> \cmb #"ff" #"subito" sol,~sol16 sol( la8-.) mib->-- r |
+    sol8. sol16 re'!8-> sol,~ \ffsubito sol16 sol( la8-.) mib->-- r |
     dod'->( fad,-. fad-. sold-. re->--) r fa8.\mp fa16 |
     lab2->--( fa8.) si16-- \sfz fa8. fa16 | lab2->--( fa8) r r4 |
     fa8-> r fa-.[ r16 fa-.] mi8-. r mi8. mi16 |
     lab2->--( fa8) r fa8. fa16 | lab2->--( fa8) r fa8. fa16 lab2->--( fa8) r r4 |
     r2 r4 fa8. fa16 | lab2( fa8) r sib8.-.\p sib16-. reb2( sib8) r sib8.-. sib16-. | reb2( sib8) r r4 |
-    R1*2 | r2 r4 \t { r8 do \cmb #"ff" #"subito" do } |
+    R1*2 | r2 r4 \t { r8 do \ffsubito do } |
     
     do4~do8 r r4 \t {re,8( re re} | mi4--) r16 re re re sol8 mi'-.->( dod-. sib-. |
     \t {sol4-- sol8} lab->-.[ re,->] ) r4 \t {re'8 \ff ( re re} | re4-- ) r8 do,-. fa8.-- fa16-. mib8-. lab->-- (~|
     lab4 fa8-.) r r2 | r2 r4 r8 r16 re | sol8.->--( re16) r fa( fa fa sib8-- sib-- lab-- lab-- |
     reb->--) r r4 r2 | r8 do4-- r8 r2 | r2 \t { re,4--\ff ( dod-- mi-- )} | r8 re( sol4) r8 fa( \> sib4~|
     sib8) \! r r4 r2 r4 si ( \cmb #"p" #"semplice assai" | \t {re-- dod sib} mib,) r |
-    r2 r4 sib'8.( \cmb #"ff" #"subito" sib16 | re8->-- la) r4 r2 |
+    r2 r4 sib'8.( sib16 \ffsubito | re8->-- la) r4 r2 |
     \t {do16-> do8-> sol16( \< sol sol} \t { si4 si8 } sib16 sib sib re \! ) | R2*2 |
     \t {r8 re->( si} sib8-.) fad---. sold16( la si! re->--) r4 | R2|
     
-    re,8--( \cmb #"p" #"dolce" fad~fad4) r fad-. | fa!8--( la~ la4) r r8 la( |
+    re,8--( fad~ \pdolce fad4) r fad-. | fa!8--( la~ la4) r r8 la( |
     sold\< sold \ten do2\!) r4 | sold8-.( \p re-.) r4 r2 |
   }
 }
@@ -137,7 +137,7 @@ ActeUnSceneUnBarytonDeux = { \BarytonDeux
 ActeUnSceneUnBisBarytonDeux = { \BarytonDeux
   \relative {
    R2.*7
-   r8 re--( \cmb #"f" #"molto" re-- re-- re4--) \t {r8 fa,-.( lab-.} | mib2--) r4 |
+   r8 re--( \fmolto re-- re-- re4--) \t {r8 fa,-.( lab-.} | mib2--) r4 |
    r8 re'--( re-- re-- re4--) \t {r8 si-.( sold-.} | dod2--) r4 |
    r \t { re( re re} fa4. \ten re~ | re8) r r4 r8
    \parlato {re, re4 } r4 mi8 \mf \<  sold \! |

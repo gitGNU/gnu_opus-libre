@@ -456,7 +456,7 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
     \simile <mi''sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>2.\CaV r2 |
     R1*5/4 \clef treble |
-    <lab'''sol'>1*5/4~ <lab sol'>2. r2 \clef bass |
+    <lab'sol'>1*5/4~ <lab sol'>2. r2 \clef bass |
     R1*5/4*7
     sib,,1*5/4~ sib~ sib2. r2 |
     dod2 re mi4 sol1*5/4~ sol2. r2 |

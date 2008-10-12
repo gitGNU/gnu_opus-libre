@@ -54,9 +54,9 @@ ActeUnSceneUnBisContrebasse = { \Contrebasse
     
     %%% Adagio %%%
     R1*9
-    r2 r4 r8 <sol' si\harmonic si''>~ |
-    <sol si\harmonic si''>1~<sol si\harmonic si''>2. r4 |
-    R1 sib8 lab si sol~sol2~ |
+    r2 r4 r8 <\parenthesize sol' si''>~\CaV |
+    si''1~\CaV si2.\CaV r4 |
+    R1 sib,,8 lab si sol~sol2~ |
     sol4 sib sol2~
     sol4 sol, fa sold |
     mi1~mi~mi~mi2 r | R1*13
@@ -148,7 +148,7 @@ ActeUnSceneTroisBisContrebasse = { \Contrebasse
   \relative {
     R1*3 r4 sol2\CaV r4 R1*2 r4 sol2\CaV r4 |
     R1 r2 re,4 la8 si fad4 r r2 | R1*8
-    fad1~fad~fad2. r4 | R1*2
+    fad1~fad~fad2. r4 | R1*2 %%FIXME: harmonics
     \pizz <re' la'\harmonic>4 r <re sol\harmonic> r
     \arco <re fad\harmonic>1~<re fad\harmonic>2. r4 \clef "G_8" |
     \simile fad''4\CaV r fad\CaV r

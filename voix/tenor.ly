@@ -180,7 +180,7 @@ ActeDeuxSceneUnBisTenor = { \Tenor
     do2~do8 mi~mi2 | si'1*5/4\ff ~| si2~ si8 \> lad)~lad2~|
     lad4\! r1 | R1*5/4*4 R1*7/4
     
-    \cmb #"p" #"dolce" mi,1-- r4 mi2( \> | si'1)\! r2 r4 | 
+    mi,1-- \pdolce r4 mi2( \> | si'1)\! r2 r4 | 
     si4(\pp \< \t{do si si} re si do si  |
     \t{red si si} mi2\p \> si4 \t{sold sol sol} | 
     si1) \! r2 sold8(\p sol|

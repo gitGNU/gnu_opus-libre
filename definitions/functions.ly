@@ -260,9 +260,9 @@ noTuplet = {
     (interpret-markup layout props
     (markup #:whiteout #:small #:italic arg)))
 
-%FIXME: because of the use of a music-function,
-% Composite dynamics have to be entered *before*
-% the affected beat (unlike standard dynamics).
+% because of the use of a music-function,
+% non-predefined composite dynamics have to be entered *before*
+% the affected beat (unlike standard or predefined dynamics).
 cmb =
 #(define-music-function (parser location dyn str) (string? string?)
   (make-music 'SequentialMusic 'elements 
@@ -290,6 +290,53 @@ bmc =
                   (markup #:text #:medium #:upright str
                           #:hspace .5
                           #:dynamic dyn)))))
+
+%%% This function was provided by Graham Percival.
+#(define (make-dynamic-extra dynamic string)
+     (make-music
+       'AbsoluteDynamicEvent
+       'tweaks
+         ;; calculate centering for text
+         (list (cons (quote X-offset)
+           (+ -0.5 (* -0.5 (string-length dynamic)))))
+       'text
+         (markup
+           ;; uncomment next line for debugging
+           ;;#:box
+           #:line(
+               dynamic
+               #:hspace -0.3
+               #:normal-text #:italic string))
+      ))
+      
+#(define (make-extra-dynamic string dynamic)
+     (make-music
+       'AbsoluteDynamicEvent
+       'tweaks
+         ;; calculate centering for text
+         (list (cons (quote X-offset)
+           (+ -0.5 (* -0.5 (string-length dynamic)))))
+       'text
+         (markup
+           ;; uncomment next line for debugging
+           ;;#:box
+           #:line(
+               #:normal-text #:italic string
+               #:hspace -0.3
+               #:dynamic dynamic))
+      ))
+
+ffsubito = #(make-dynamic-extra "ff" "subito")
+fsubito = #(make-dynamic-extra "f" "subito")
+fmolto = #(make-dynamic-extra "f" "molto")
+ppsempre = #(make-dynamic-extra "pp" "sempre")
+mfsempre = #(make-dynamic-extra "mf" "sempre")
+mpsostenuto = #(make-dynamic-extra "mp" "sostenuto")
+pdolce = #(make-dynamic-extra "p"  "dolce")
+mfleggiero = #(make-dynamic-extra "mf" "leggiero")
+
+piuf = #(make-extra-dynamic "più" "f")
+pocof = #(make-extra-dynamic "poco" "f")
 
 nind =
 #(define-music-function (parser location texte) 

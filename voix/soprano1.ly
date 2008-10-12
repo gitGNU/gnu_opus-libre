@@ -67,11 +67,11 @@ ActeUnSceneUnSopranoUn= { \SopranoUn
     R1 dod,8-.--( r dod-.--[ r16 dod] do8-.--) r r4 | reb8-.--( r reb-.--[ r16 reb] do8-.--) r r4 | 
     r4 do8--( \> r do--[ r16 do] si8--) \! r | R1*4 |
     
-    r8 do-. ( \cmb #"mf" #"leggiero" do-. do-. do-. r do-. do->--~ |do do-. do-. do-. do-. do-. do-. do-. ) | R1 |
+    r8 do-. ( \mfleggiero do-. do-. do-. r do-. do->--~ |do do-. do-. do-. do-. do-. do-. do-. ) | R1 |
     r4 r8 fa( do-.) fa( do-.) do-. | fa4--( do8-.) si-. mi-.( si-. sib-. sib-. | mib4-- la,8) r r2 | R1 |
     R1. R1*2 |
     
-    r8 sib16-.( \cmb #"mf" #"sempre" sib-. mib8---. fa16-. do-. do8---.) r16 sib-.( mib-. sib-. sol-. do-. |
+    r8 sib16-.( \mfsempre sib-. mib8---. fa16-. do-. do8---.) r16 sib-.( mib-. sib-. sol-. do-. |
     fa,4--) r2 | r8 do'16( do fa8-- mib16 mib | lab8--) r16 solb( reb mib sib do |
     sol!4--) r | R1*2 R1*4 |
   }
@@ -127,7 +127,7 @@ ActeDeuxSceneUnSopranoUn= { \SopranoUn
     \ten si2.)~ si4 r r2 |
     r4 do8( \f fad4) do8( | 
     fad4.) do8( fad sol fad re | do re fad2) | R1
-    r8 re( \bmc #"più" #"f" la'4) re,8( la') | 
+    r8 re( \piuf la'4) re,8( la') | 
     re,( mi sold4) mi8( re sold4) | 
     R2. R1 r2 r8 la,(\f |
     lab do re2.) | r2 r8 la!( | 

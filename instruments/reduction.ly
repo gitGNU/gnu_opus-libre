@@ -269,7 +269,7 @@ PrologueMainGauche = {
     <dod dod'>4-- <sol sol'>8-. <dod dod'>-. r8 <sib sib'>-. |
     r8 <dod dod'>4-- <sol sol'>8-. |
     <sib sib'>2->--~ <sib sib'> 
-    \t {\cmb #"ff" #"subito" lab'8( fa mib} |
+    \t {lab'8(\ffsubito fa mib} |
     
     %%% Tempo giusto %%%
 
@@ -397,7 +397,7 @@ PrologueNuances = {
   R2.\f R2.\mf \<
   R2.\f R2.\mp R2.
   R2. R2. R2.\< R2. 
-  \cmb #"f" #"molto" R2.
+  R2. \fmolto
   R1 R2\> R2\p R2
   
   %%% Piu lento %%%
@@ -406,7 +406,7 @@ PrologueNuances = {
   %%% Adagio %%%
   R2*4 R2. R2. R2.\> R2.\pp
   R2. R2. R2. r2 
-  \cmb #"pp" #"sempre" r4
+  r4 \ppsempre
   R2. R2. R2.\> R4.\!
   
   %%% Andantino %%%
