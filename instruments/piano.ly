@@ -929,3 +929,13 @@ ActeDeuxSceneUnBisPiano = { \Piano
   \relative {
   }
 }
+
+ActeDeuxSceneDeuxPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R1.*6 R1*2 R2.
+  }
+  \relative {
+    R1.*6 R1*2 R2.
+  }
+}

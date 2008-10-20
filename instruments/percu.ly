@@ -657,3 +657,19 @@ ActeDeuxSceneUnPercus = { <<
 ActeDeuxSceneUnBisPercus = { \Percus
   
 }
+
+ActeDeuxSceneDeuxPercus = { <<
+  \new Staff { \Marimba
+    \relative {
+    }
+  }
+  \new Staff { \Vibraphone
+    \relative {
+    }
+  }
+  \new Staff { \Timbales
+    \relative {
+    }
+  }
+ >>
+}

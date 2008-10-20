@@ -525,3 +525,10 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
     %%% Boum %%%
   }
 }
+
+ActeDeuxSceneDeuxAltoUn = { \AltoUn
+  \relative {
+    \pizz sold'4 sold la r r2 | sold4 sold la r r2 | R1.
+    sold4 sold la r sold sold | la4 r r1 | R1. R1*2 R2.
+  }
+}

@@ -468,3 +468,9 @@ ActeDeuxSceneUnBisViolonDeux = { \ViolonDeux
     dod4 r1 | R1*5/4-\fermataMarkup
   }
 }
+
+ActeDeuxSceneDeuxViolonDeux = { \ViolonDeux
+  \relative {
+    R1.*6 R1*2 R2.
+  }
+}

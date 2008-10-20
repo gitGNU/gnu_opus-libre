@@ -423,3 +423,9 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     R1*5/4-\fermataMarkup
   }
 }
+
+ActeDeuxSceneDeuxFluteUn = { \FluteUn
+  \relative {
+    R1.*4 la'4 sol fa mi fa8 mi fa sol | la4 mi r1 | R1*2 la4 sol fa |
+  }
+}

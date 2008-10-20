@@ -483,3 +483,9 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
     %%% Boum %%%
   }
 }
+
+ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteBasse
+  \relative {
+    lab'2 fa4 r r2 | lab2 fa4 r r2 | lab4 r fa r r2 | R1.*2 fa4 dod r2 R1 R1.
+  }
+}

@@ -410,3 +410,9 @@ ActeDeuxSceneUnBisClarinetteDeux = { \ClarinetteDeux
     %%% Boum %%%
   }
 }
+
+ActeDeuxSceneDeuxClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R1.*6 la'4 mi r2 | R1 R2.
+  }
+}

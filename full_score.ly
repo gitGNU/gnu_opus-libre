@@ -799,8 +799,76 @@ ActeDeuxSceneUnBis = {
   >>
 }
 
+ActeDeuxSceneDeux = {
+  <<
+    \new TopLine \ActeDeuxSceneDeuxMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneDeuxFluteUn
+            \new Staff \ActeDeuxSceneDeuxFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneDeuxClarinetteUn
+            \new Staff \ActeDeuxSceneDeuxClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneDeuxSaxophoneUn
+            \new Staff \ActeDeuxSceneDeuxSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeDeuxSceneDeuxPercus
+
+    \new TopLine \ActeDeuxSceneDeuxMesures
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneDeuxSopranoUn
+        \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneDeuxSopranoUnTexte }
+        \new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneDeuxSopranoDeux
+        \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneDeuxSopranoDeuxTexte }
+        \new Staff \new Voice = "contralto" \ActeDeuxSceneDeuxContralto
+        \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneDeuxContraltoTexte }
+        \new Staff \new Voice = "tenor" \ActeDeuxSceneDeuxTenor
+        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneDeuxTenorTexte }
+        \new Staff \new Voice = "barytonUn" \ActeDeuxSceneDeuxBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneDeuxBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneDeuxBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneDeuxBarytonDeuxTexte }
+      >>
+
+    \new TopLine \ActeDeuxSceneDeuxMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \ActeDeuxSceneDeuxViolonUn
+            \new Staff \ActeDeuxSceneDeuxViolonDeux
+            \new Staff \ActeDeuxSceneDeuxViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneDeuxAltoUn
+            \new Staff \ActeDeuxSceneDeuxAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \ActeDeuxSceneDeuxVioloncelleUn
+            \new Staff \ActeDeuxSceneDeuxVioloncelleDeux
+          >>
+        \new Staff \ActeDeuxSceneDeuxContrebasse
+      >>
+    \new PianoStaff \ActeDeuxSceneDeuxPiano
+  >>
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-%showFirstLength = s4*2
+showFirstLength = s1*12
 \book {
   \header {
     title = \OperaTitre
@@ -827,13 +895,13 @@ ActeDeuxSceneUnBis = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTrois
     \header {
@@ -881,13 +949,13 @@ ActeDeuxSceneUnBis = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \ActeDeuxSceneDeux
     \header {
       piece = \ActeDeuxSceneDeuxTitre
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneTrois
     \header {

@@ -468,3 +468,9 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     %%% Boum %%%
   }
 }
+
+ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    R1.*4 \clef treble la'1.~\CaV la4\CaV r r1 | R1*2 \clef bass
+  }
+}

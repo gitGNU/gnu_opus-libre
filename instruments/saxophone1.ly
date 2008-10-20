@@ -285,3 +285,9 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
     %%% Boum %%%
   }
 }
+
+ActeDeuxSceneDeuxSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R1.*6 R1*2 R2.
+  }
+}
