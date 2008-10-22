@@ -15,25 +15,25 @@ Contralto= {
 
 ActeUnSceneTroisBisContralto = { \Contralto
   \relative {
-    R1*15 r4 fad,8 fad fad4 fad8 fad fad4 r r2 |
-    R1*7  r4 do'8 do do4 do8 do fad2 r | R1
-    r2 r16 do do do si8. si16 |
-    si si mi8 re mi do do \t {re do re} |
-    si2 r4 r8 si | lad4. r8 sib4 sol8 r |
-    sib4 sol8 r sib sol do16 sib mib8~  | 
+    R1*15 r4 fad,8\mp( fad fad4 fad8 fad fad4--) r r2 |
+    R1*7  r4 do'8\mf-- do-- do4-- do8-- do-- fad2-- r | R1
+    r2 r16 do( do do si8.) si16( |
+    si si mi8--) re--( mi) do--( do) \t {re--( do-- re--)} |
+    si2-- r4 r8 \meno si( | lad4.) r8 sib4--( sol8) r |
+    sib4--( sol8) r sib--( sol) do16( sib mib8~--)  | 
     mib mib16\<( mib do do mib8) fad--(\mf red16) r fad8--(\< red16) r |
     fad8--( red16) r  fad8--( red16)\! r  \parlato fad8 r r4 |
-    r8 \t {fad16 fad fad} la8 \t { red,16 red red} fad8 r
-    \tt {do16 do do do do} | mi4 \t {r8 reb mi} \t {do sib reb} |
-    la2 r | R1*4 r2 r4 r8 sol' |
-    sib mib,16 mib~ mib mib32 mib fa16. mib32 lab8
-    r32 lab lab lab lab8 mib16 lab | si4 r r2 |
-    r2 r4 r8 r16 sol, | fad'8. mi16 dod'8 r16 sol, fad'4. mi8 | dod'2. r4 |
-    dod,8 dod dod mi dod4. r8 |
-    r2 r4 r8 dod | do do do mib do4 r |
-    fa4. do8~ do mib \t {sol, sol la} |
-    fad4 r r2 | R1*3 r2 r4 do'8 do | do4 \t {do8 do do} do4 do8 do |
-    do4 do r do8 do | do4. do8 do do do do | fad2. r4 | R1*11
+    r8 \t {fad16( fad fad} la8) \t { red,16( red red} fad8) r
+    \tt {do16\mp( do do do do} | mi4--) \t {r8 reb--( mi--} \t {do-- sib-- reb--} |
+    la2--) r | R1*4 r2 r4 r8 sol'->\mf |
+    sib-- mib,16--( mib~-- mib mib32 mib fa16.--\< mib32 lab8--\!)
+    r32 lab( lab lab lab8--\< mib16-- lab-- | si4->--\f) r r2 |
+    r2 r4 r8 r16 sol,\mf( | fad'8.) mi16( dod'8) r16 sol,( fad'4. mi8\> | dod'2.)\p r4 |
+    dod,8( dod dod mi dod4.) r8 |
+    r2 r4 r8 dod( | do do do mib do4) r |
+    fa4.--( do8~ do mib\> \t {sol, sol la} |
+    fad4--)\! r r2 | R1*3 r2 r4 do'8--\mp do-- | do4-- \t {do8-- do-- do--} do4-- do8-- do-- |
+    do4-- do-- r do8-- do-- | do4.-- do8(\> do do do do | fad2.--)\pp r4 | R1*11
   }
 }
 

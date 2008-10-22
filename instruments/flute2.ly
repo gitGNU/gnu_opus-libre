@@ -405,5 +405,33 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
 ActeDeuxSceneDeuxFluteDeux = { \FluteDeux
   \relative {
     R1.*4 la'4 sol fa mi fa8 mi fa sol | la4 mi r1 | R1*2 la4 sol fa |
+    mi fa8 mi fa sol la4 mi r | R2.*2 | la4 sol fa mi fa8 mi fa sol la1 r2 |
+    R1. la4 mi r2 | R1 la4 sol fa mi fa8 mi fa sol la4 mi r8 |
+    r4 r8 la~ la2~ la4 r8 la~ la2~ la4 r8 mib'~ mib2~ |
+    mib4 r8 mib~ mib4 r | fa8 sib sib dob r4 sib8 sib | fa'4. r8 mib16 mib fa8 r4 |
+    R2. la,,4 sol fa mi fa8 mi fa sol la4 mi2 r4 | mi2. r4 | R2.*2 r2 r8 la~la mi r4 |
+    R2.*2 r2 r8 la'~ la mi r4 | R4. mi,1~ mi2. r4 |
+    r8 mi' r4 r8 mi'16 mi, r4 | r4 r8 r16 re mi8 r r4 |
+    r2 r4 sold16 sold la8 | sib4 r r sold16 sold la8 |
+    sib4 r r sold16 sold la8 | sib4 r r sold16 sold lad8 | si1~ si2 r4 |
+    la,4 sol fa mi fa8 mi fa sol la4 mi r2 |
+    la4 sol fa mi fa8 mi fa sol | la1.~ la2 r4 | la4 mi r2 |
+    la2.~ la1~ la2.~ la1~ la2.~ la2. r4 | la2.~
+    la1~ la2 r4 R1 la2.~ la1~ la2.~ la1~ |
+    la2 r4 | R1 R2. R1 R2. R1 r2 r8 r16 \t {mi''32 fa sol} |
+    la8 r r4 | r r8 \t {mi16 fa sol} | la8 r r4 |
+    r2 r8 \t {mi16 fa sol} | la8 r r4 r2 | R1*2
+    la8 r2 | la,4 r8 sold sold | la sold, sold la r |
+    mib'4 r8 re re | mib4 la,8 r4 | lab4 r4 r8 | R2*5/4
+    lab''8 r2 | R2*5/4 lab,,4 r4 r8 | R2*5/4*4
+    R1*3 r4 \slap { \ind #"slap" reb' sib} r r \slap {sib sol} r | R1*4
+    lab'4 r2 R2 R1*2 la,!4 sol fa mi fa8 mi fa sol lab2.~ lab2 r4 | R2.*3
+    R2*2 R2.*2 R2*2
+    mib''4 reb dob sib dob r | r r8 \slap { sold, la} r r4 |
+    r8 \slap {sold la} r r \slap {sold la fad |
+    sol} r r4 | R2*4 r4 la8 r | R2
+    r4 r8 \slap {sold la} r r4 | R2*7
+    la'4 sol fa mi fa8 mi fa sol | la4 mi r | R2.*2 la4 mi r la, mi r |
+    R2.*9
   }
 }

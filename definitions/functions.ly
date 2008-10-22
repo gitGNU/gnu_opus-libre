@@ -395,6 +395,10 @@ ordin =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"(ordin.)" $music #})
 
+meno =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"meno" $music #})
+
 #(define (make-text-span music t)
  (set! (ly:music-property music 'elements)
                        (append (ly:music-property music 'elements)
