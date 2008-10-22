@@ -338,6 +338,7 @@ bmc =
 
 ffsubito = #(make-dynamic-extra "ff" "subito")
 fsubito = #(make-dynamic-extra "f" "subito")
+mfsubito = #(make-dynamic-extra "mf" "subito")
 fmolto = #(make-dynamic-extra "f" "molto")
 ppsempre = #(make-dynamic-extra "pp" "sempre")
 mfsempre = #(make-dynamic-extra "mf" "sempre")
