@@ -460,5 +460,84 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
 ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
   \relative {
     R1.*6 R1*2 R2.
+    r16 sol sol8 sol16 sol8 sol16 sol8 sol16 sol |
+    r16 red'red red red8 red16 red r red red red |
+    dod8 dod16 dod r16 red red red red8 red16 red |
+    r16 dod dod dod re re mib mib la,8 la16 la |
+    do1.~ do1 r2 |
+    R1. R1*2 R2.
+    
+    r16 sol sol8 sol16 sol8 sol16 sol8 sol16 sol r sol sol sol |
+    r sold sold r sold sold |
+    r la la la la la la la la la la la si si si si |
+    r si si si si si si si si si la la la la la la |
+    r si si si si si si si si si si si si si si si |
+    si si si si si si si si si si dod dod dod dod dod dod |
+    dod dod red'red sold,sold mid'mid sold,sold lad'lad red,red mid mid |
+    mib mib fa'fa sib,sib mib,mib mib'mib sib sib fa fa mib mib |
+    
+    R2. R1. R1*2
+    r4 la,,2 r4 sib2 r4 la2 r4 si |
+    <sold re'>2 do4 <la mi'>2 lab4 |
+    sol4~ sol16 mi' sib' re do8 r |
+    la4 mi | R4. |
+    
+    r16 la, si si la la si si la la si si la la si si |
+    la la si si la la si si la la si si la la si si |
+    do do do do do do do do do do do do do do do do |
+    <do la'> <do la'> <do la'> <do la'> <do la'> <do la'> <do la'> <do la'>
+    <do la'> do do do do do do do |
+    <do fa> <do fa> <do fa> <do fa> <do fa> <do fa> <do fa> <do fa>
+    <do fa> <do fa> <do fa> <do fa> fa fa fa fa |
+    sold sold lad lad sold sold lad lad |
+    sold sold lad lad sold sold lad lad |
+    sold sold lad lad sold sold lad lad |
+    sold sold lad lad sold sold lad lad |
+    sold sold lad lad sold sold lad lad |
+    sold sold lad lad sold sold lad lad |
+    si si do do si si do do 
+    si si do do si si do do |
+    si8 do si do si4 |
+    
+    R1. R1 R1.
+    la4 sol fa mi fa8 mi fa sol | la4 mi r | R1
+    \pizz la,4 r2 r8 sol'4. r2 | fa4 r2 r8 mi4. r2 |
+    fa4 mi fa sol la r2 | R2.
+    fa4 mi fa sol la4 r2 | mi4 r r2 | R2. R1 R2. R1
+    <la, la'\stopped>4 r2 R1 R2. R1
+    r2 \arco <fa' la>4 | <mi la> <fa la> <sol la> <la la> |
+    r4 <fa la>16 mi fa sol <la la>4 |
+    
+    fa16 mi fa sol la8 la dod16 do reb mib fa8 fa |
+    <la, la'>4 r | R2. <la, la'>4 r r2 |
+    r2 do16 la sib do mib dod re mi | sol8 r sib r re r fa r |
+    <sold, la la'>4 fa8 do' reb | sold sold la r4 |
+    <sold, la la'>4 mib8 sold la | sold' sold la r4 |
+    <sold, la>4 sold,8 sold sold | <la sold'>4 <la sold'> r8 |
+    <sold re' la'>4 r r8 | <sold' la la'>4 r re'8 |
+    re mib r4 r8 | <la,,sold'>4 <la sold'> r8 | <sold re'la'>4 r r8 |
+    sold'8 sold la r4 | r8 sold4 sold | la r r8 |
+    
+    R1*2 dod,4 r r2 |
+    r4 \pizz re si r r si sold r |
+    r2 \arco sold2 |
+    mi'1:32~ mi: dod: |
+    si'4 r2 | r8 \pizz dod, r4 | R1*2 R2.*4
+    r4 sold' r r sold r R2. |
+    
+    la4 r R2 | R2.
+    \arco la'4 sol fa mi2 mi8 red mi fad |
+    sold2~ sold4 r r sib,16 la sib do |
+    re8 r r16 \pizz sib, re\stopped sib |
+    r sib re\stopped sib r sib re\stopped sib |
+    r sib re\stopped sib r sib re\stopped sib |
+    r sib re\stopped sib r8 r16 \arco sib |
+    do do mi do r si red si r sib re sib r la dod la |
+    r lab do lab r8 si16 sol | r8 sib16 sib r8 la16 la |
+    R2 r8 mi'16 mi fa8 r | R2
+    re16\stopped \pizz sib re\stopped sib re\stopped sib re\stopped sib |
+    re\stopped sib re\stopped sib sold8 \arco mi'16 mi |
+    re8 re16 re mib8 r | R2*2
+    \pizz sib4 r dod r mib r | R2 R2.*16
   }
 }

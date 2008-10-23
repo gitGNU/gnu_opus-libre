@@ -486,6 +486,58 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
 
 ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteBasse
   \relative {
-    lab'2 fa4 r r2 | lab2 fa4 r r2 | lab4 r fa r r2 | R1.*2 fa4 dod r2 R1 R1.
+    \clef treble lab'2 fa4 r r2 | lab2 fa4 r r2 R1. | lab4 r fa r r2 |
+    R1.*2 fa4 reb r2 R1 R2. \clef bass
+    sol,4 sol8 sol r4 | mib'8 mib r4 r8 mib |
+    r16 la, la la r8 mib' r4 | r r16 \clef treble fa8 lab16 mi4 |
+    re1 r2 | R1. 
+    fa4 reb r1 \clef bass | reb4 fa, r2 | R1 R2.
+    sol4 sol8 sol r red' mi4 | do r8 |
+    si,2 r4 \clef treble sold''8 sold la4 r r sold8 sold |
+    la4 r r si8 si mib4 r r2 \clef bass | solb,,1~ solb2. r4 |
+    
+    R2. R1. la2. r4 | do,2. r4 |
+    fa,2.~ fa~ fa2 r4 | R2
+    fa2 red4 mi2 r4 | mi'2 r4 | R2
+    la,4. mi4 r r re''8 re | re4 r r re8 re |
+    re4 r r re8 re | re4 r r re8 re | re4 r r2 |
+    mi,,2~ mi~ mi~ mi4 r | mi2~ mi4 r | reb1~ reb2 r4 |
+    reb1. sol2. r4 | reb1~ reb4 r | sol1.~ sol2 r4 |
+    reb''4 solb, r2 |
+    
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 \clef treble sib4 do re |
+    mib2 fab8 mib fab solb | lab2.~ lab4 r r2 |
+    R2. R1 R2. R1 R2. R1 
+    r2 r8 r16 \t {sol32 fa mi} | la8 r r4 |
+    r4 r8 \t {sol16 fa mi} | la8 r r4 |
+    r2 r8 \t {sol16 fa mi} | la8 r r4 r2 | R1*2
+    
+    la8 la sold r4 | sold4 r8 la la |
+    sold4 \clef bass la,,8 la sold |
+    sold'' la,, la sold r |
+    mib mib re r4 | mib'4 r r8 | R2*5/4 \clef treble
+    la'8 la sold r4 | r \clef bass la,,8 la sold |
+    mib'4 r r8 | R2*5/4*4
+    
+    R1*2 si4 r r2 | R1*6
+    re4 r2 | re,4 r | r2 r4 \clef treble solb''16 mi8 solb16 |
+    fa1 R2.*2 \clef bass la,2.~ la2 r4 | R2.*3
+    
+    la,8 r mib r lab r re, r |
+    reb r sol r do r | fa, r si r mi, r |
+    mib r la r re, r lab' r |
+    reb, reb' sol, sol' do, do' solb solb, |
+    fa fa' mi mi, | re16 r re' re re re re re |
+    re re re re re re re re |
+    re re re re re re r  re |
+    re re re re re re re re |
+    reb8 r r4 | R2*4 r4 lab8 r | R2
+    re!16 re re re re re re re |
+    re re re re lab' lab lab lab | sib8 r r4 |
+    R2*6
+    
+    la!2.~ la2 r4 |
+    la,2.~ la~ la2 r4 | R2.*11
   }
 }

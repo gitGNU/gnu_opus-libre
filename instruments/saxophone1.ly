@@ -289,5 +289,35 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
 ActeDeuxSceneDeuxSaxophoneUn = { \SaxAltoUn
   \relative {
     R1.*6 R1*2 R2.
+    lab4 lab8 lab r4 | sib8 sib r4 r8 sib |
+    r16 do do do r8 sib r4 | R2.
+    la1 r2 | R1.*2 R1*2 R2.
+    lab4 lab8 lab r8 dob reb4 | la?4 r8 |
+    re1~ re2. r4 | reb1~ reb2. r4 | reb1~ reb2. r4 |
+    R2. R1. R1*2 do2.~ do~ do2 r4 | R2
+    si2 do4~ do2 r4 | re2 r4 | R2
+    la4. mi4 r r sold'8 sold | la4 r r sold8 sold |
+    la4 r r sold8 sold | la4 r r lad8 lad si4 r r2 |
+    si,2~ si~ si~ si4 r | si2~ si4 r |
+    r4 r8 sold' sold la r4 | sold8 sold la4 sold8 sold |
+    la4 r r1 | R1 R1. re,1. reb2 r4 | si4 sib r2 |
+    
+    R2. R1 R2. R1 R2. R1 R2.
+    fa'4 mi fa sol la2.~ la1~ la4 r2 | R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    la,2 R2 si2~ si4 r2 | re1~ re4 r r2 | R1
+    sold8 sold la r4 | la4 r8 sold sold | la4 r8 sold sold |
+    la mib, r mib r | la la sold r4 | sold'4 r r8 | R2*5/4
+    sold8 sold la r4 | R2*5/4 sold4 r r8 | R2*5/4*4
+    
+    R1*2 do,4 r r2 | R1*3
+    mi1~ mi~ mi2 r2 |
+    mib4 r2 R2 r2 r4 re16 si8 re16 | mib1 R2.*2 solb,2.~ solb2 r4 |
+    R2.*3
+    la2~ la4 r R2. do2 r4 R2 | r8 mib fab solb |
+    lab4 sol solb fa mi mib | re8 re, r4 |
+    re8 re r4 | re8 re r4 re8 re r r16 re' |
+    mi8 r r4 | R2*4 r4 do8 r | R2
+    re8 re, r4 re8 re r4 | sib'8 r r4 | R2*6 R2.*16
   }
 }

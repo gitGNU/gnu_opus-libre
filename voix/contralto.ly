@@ -19,7 +19,7 @@ ActeUnSceneTroisBisContralto = { \Contralto
     R1*7  r4 do'8\mf-- do-- do4-- do8-- do-- fad2-- r | R1
     r2 r16 do( do do si8.) si16( |
     si si mi8--) re--( mi) do--( do) \t {re--( do-- re--)} |
-    si2-- r4 r8 \meno si( | lad4.) r8 sib4--( sol8) r |
+    si2-- r4 r8 \meno si16( si | lad4.) r8 sib4--( sol8) r |
     sib4--( sol8) r sib--( sol) do16( sib mib8~--)  | 
     mib mib16\<( mib do do mib8) fad--(\mf red16) r fad8--(\< red16) r |
     fad8--( red16) r  fad8--( red16)\! r  \parlato fad8 r r4 |

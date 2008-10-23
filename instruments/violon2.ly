@@ -472,5 +472,80 @@ ActeDeuxSceneUnBisViolonDeux = { \ViolonDeux
 ActeDeuxSceneDeuxViolonDeux = { \ViolonDeux
   \relative {
     R1.*6 R1*2 R2.
+    r16 lab lab8 lab16 lab8 lab16 lab8 lab16 lab |
+    r16 <sib mi> <sib mi> <sib mi> <sib mi>8 <sib mi>16 <sib mi> r <sib mi> <sib mi> <sib mi> |
+    <la re>8 <la re>16 <la re> r16 <sib mi> <sib mi> <sib mi> <sib mi>8 <sib mi>16 <sib mi> |
+    r16 <la re> <la re> <la re> la la sib si do8 do16 do |
+    mi1.~ mi1 r2 |
+    R1. R1*2 R2.
+    
+    r16 lab, lab8 lab16 lab8 lab16 lab8 lab16 lab r lab lab lab |
+    r do do r do do |
+    r re re re re re re re re re re re re re re re |
+    r re re re re re re re re re re re re re re re |
+    r dod dod dod dod dod dod dod dod dod dod dod dod dod dod dod |
+    dod dod dod dod dod dod mid mid mid mid sold sold sold sold sold sold |
+    sold sold dod,dod red'red sold,sold red'red sold,sold lad'lad red,red |
+    sib'sib mib,mib mib'mib sib sib fa fa fa'fa sib,sib sib sib |
+    
+    R2. R1. R1*2
+    r4 \t {la,,8 do la} \t {do la do} |
+    r4 \t {sib8 do sib} \t {do sib do} |
+    r4 \t {la8 do la} \t {do la do} |
+    r4 \t {sold8 si sold} | \t {sold si sold} \t {si sold si} \t {la do la} |
+    \t {la do la} \t {do la do} \t {lab dod lab} |
+    \t {sib re sib} do4 r | la'' mi | R4. |
+    
+    r16 re, re re re re re re re re re re re re re re |
+    re re mi mi re re mi mi re re mi mi re re mi mi |
+    mi mi fa fa mi mi fa fa mi mi fa fa mi mi fa fa |
+    mi mi fa fa mi mi fa fa mi mi fa fa mi mi fa fa |
+    mi mi mi mi <mi la> <mi la> <mi la> <mi la>
+    <mi la> <mi la> <mi la> <mi la> <mi la> <mi la> <mi la> <mi la> |
+    lad lad sold sold lad lad sold sold lad lad sold sold lad lad sold sold |
+    lad lad sold sold lad lad sold sold lad lad sold sold lad lad sold sold |
+    lad lad sold sold lad lad sold sold red'red mi mi red red mi mi |
+    <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> <si sold'>
+    <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> <si sold'> |
+    si si si si si si si si si si si si |
+    
+    R1. R1 R1.
+    la4 sol fa mi fa8 mi fa sol | la4 mi r | R1
+    \pizz la,4 r2 r8 sol'4. r2 | fa4 r2 r8 mi4. r2 |
+    fa4 mi fa sol la r2 | R2.
+    fa4 mi fa sol la4 r2 | mi4 r r2 | R2. R1 R2. R1
+    <la, la'\stopped>4 r2 R1 r4 \arco <sol' la>2~ <sol la> <fa la>4 <mi la> |
+    <fa la>4. <sol la> | <la la>2 r4 <fa la>8 mi
+    <fa la> sol <la la>4 <fa la>16 mi fa sol |
+    
+    la4 la16 sold la si dod8 dod fa16 mi fa sol |
+    la4 r R2. <la, la'>4 r r2 |
+    r2 do,8 sib mib re | sol16 mi fa sol sib sold la si re8 do fa mi |
+    la4 r r8 | sold sold la r4 | la4 sold,8 la re | sold sold la r4 |
+    <re,, mib'>4 la8 la la | <la sold'>4 <la sold'> r8 |
+    <sold re' la'>4 r r8 | <sold' la la'>4 r re'8 |
+    re mib r4 r8 | <la,,sold'>4 <la sold'> r8 | <sold re'la'>4 r r8 |
+    sold'8 sold la r4 | r8 sold4 sold | la r r8 |
+    
+    R1*2 dod,4 r r2 |
+    r4 \pizz fad fa r r mi re r |
+    r2 \arco dod2 |
+    mi1:32~ mi: ~ mi2:32 sol: |
+    fa'4 r2 | r8 \pizz mib, r4 | R1*2 R2.*4
+    r4 dod' r r red r R2. |
+    
+    la4 r R2 | R2.*2 R2*2
+    \arco red'4 dod si lad si8 lad sib16 la sib do |
+    sib8 r r16 re,,\stopped \pizz sib re |
+    r re\stopped sib re r re\stopped sib re |
+    r re\stopped sib re r re\stopped sib re |
+    r re\stopped sib re r8 r16 \arco re |
+    mi mi do mi r red si red r re sib re r dod la dod |
+    r do lab do r8 sol16 si | r8 sib16 sib r8 la16 la |
+    R2 r8 sold'16 sold la8 r | R2
+    re,16\stopped \pizz re sib re re\stopped re sib re |
+    re\stopped re sib re mi8 \arco sold16 sold |
+    la8 fad16 fad sol8 r | R2*2
+    \pizz re4 r dod r mib r | R2 R2.*16
   }
 }

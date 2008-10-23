@@ -306,8 +306,37 @@ ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
   }
 }
 
-ActeDeuxSceneDeuxSaxophoneDeux = { \SaxophoneBaryton
+ActeDeuxSceneDeuxSaxophoneDeux = { \SaxAltoDeux
   \relative {
     R1.*6 R1*2 R2.
+    re,4 re8 re r4 | re8 re r4 r8 re |
+    r16 sol sol sol r8 re r4 | R2.
+    re1 r2 | R1.*2 R1*2 R2.
+    re4 re8 re r8 re do'4 | lab4 r8 |
+    la2. si4~ si2. r4 | si1~ si2. r4 | si1~ si2. r4 |
+    R2. R1. R1*2 la2. sib la2 r4 | R2
+    sold2 la4~ la2 r4 | sib2 r4 | R2
+    la4. mi4 r r la8 la | sold4 r r la8 la |
+    sold4 r r la8 la | sold4 r r sold8 sold la4 r r2 |
+    mi2~ mi~ mi~ mi4 r | mi2~ mi4 r |
+    r4 r8 reb' reb reb r4 | reb8 reb reb4 reb8 reb |
+    reb4 r r1 | R1 R1. sol,1.~ sol2 r4 | sol4 re r2 |
+    
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. mi'1~ mi4 r2 | R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    la,2 R2 la2~ la4 r2 | la1~ la4 r r2 | R1
+    la8 la sold r4 | sold4 r8 la la | sold4 r8 la la |
+    sold re r re r | re re mib r4 | la4 r r8 | R2*5/4
+    sold8 sold la r4 | R2*5/4 la4 r r8 | R2*5/4*4
+    
+    R1*2 sib4 r r2 | R1*3
+    mi,1~ mi~ mi2 r2 |
+    reb'4 r2 R2 R1 | sol,1~ sol2.~ sol2. solb4 r2 R2.*4 |
+    R2*2 R2.*2 R2*2
+    mi'4 mib re reb do si sib8 r re, re |
+    r4 re8 re r4 re8 re | r4 re8 r16 sib' |
+    do8 r r4 | R2*4 r4 reb,8 r | R2
+    re!8 r re re r4 mi8 mi | re8 r r4 | R2*6 R2.*16
   }
 }

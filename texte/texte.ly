@@ -471,7 +471,7 @@ ActeUnSceneTroisBisContraltoTexte = \lyricmode {
   Un in -- stant, s'il vous plaît…
   Vous ê -- \dash tes -- vous ré -- a -- bo -- nné
   à ma re -- li -- gion cette a -- nnée_?
-  Voy -- ons… Non… __ _ Non… __ _
+  Voy -- ons ça… Non… __ _ Non… __ _
   Non, __ _ non __ _ non… __ _
   Vous ne l'ê -- tes pas_;
   non, __ _ non, __ _ non, __ _ non, __ _ n…
