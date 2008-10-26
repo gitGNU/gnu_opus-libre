@@ -530,5 +530,93 @@ ActeDeuxSceneDeuxAltoUn = { \AltoUn
   \relative {
     \pizz sold'4 sold la r r2 | sold4 sold la r r2 | R1.
     sold4 sold la r sold sold | la4 r r1 | R1. R1*2 R2.
+    \arco re,,8 r r16 re8 fa16 r fad8. | re8 re16 re re re re re re8 r |
+    <la're sold> <la re sold> <sib re la'>4 \t {re,8 mib fa} |
+    <la re sold> <la re sold> <sib re la'>4 \t {re,8 fad la} |
+    fad1.~ fad1 r2 |
+    R1. R1*2 R2.
+    <sol dod>16 <sol dod> <sol dod>8 <sol dod> re
+    r <sol dod> r re16 red | r mi dod re do mib |
+    r8 sold' sold la r4 fad,16 fad fad fad |
+    r8 sold' sold la r4 dod,,16 dod re8 \clef treble |
+    r8 sold' sold red' r4 \clef alto mid,,16 mid fad8 \clef treble |
+    r8 si' si red r4 si,16 si <dod lad' red>8 |
+    <red' lad'> \clef alto <fad,,dod'>16 <fad dod'>
+    <fad dod'>8 \clef treble <red''lad'> \clef alto
+    <fad,,dod'> <dod'sold'>16 <dod sold'> <dod sold'>8 <fad,dod'> |
+    sold'16 sold sold sold sold sold sold sold
+    sold sold sold sold sold sold sold sold |
+    
+    R2. R1. R1*2
+    r16 do,,fa la do4 r | r16 do, sol' sib do4 r |
+    r16 do, fa la do4 r | r16 do, fa sold si4 |
+    r16 re, sold si re4 r16 do, la' do |
+    r16 do, mi la do4 r | r16 sol sib re do4 r |
+    \pizz do, do' R4.
+    r8 \arco <la sold'> <la sold'> <re la'> r4 sold,16 sold la8 |
+    r <la sold'> <la sold'> <re la'> r4 re,16 re mi8 \clef treble |
+    r <mib' lab> <mib lab> <do sib'> r4 sol16 sol la8 |
+    r <mi'red'> <mi red'> <fa mi'> r4 si,16 si do8 |
+    r <mi mi'> <mi mi'> <fa fa'> r4 \pizz <si, fa'> \clef alto |
+    \arco dod16 dod dod8 dod16 dod dod8 |
+    dod16 dod dod8 dod16 dod dod8 |
+    si16 si dod8 si16 si dod8 | dod4 r |
+    mi,16 mi mi mi mi mi mi mi |
+    mi mi mi mi mi mi mi mi | <si' mi>1~ <si mi>2 r4 |
+    
+    R1. R1 R1.
+    \t {re8 sib re} \t {sib re sib} \t {re sib re} \t {sib re sib}
+    \t {re sib re} \t {sib re sib} | dod2 r4 R1 |
+    \pizz <la'la>4 r2 | R1 R2. R1 R2. R1
+    \arco mib4 reb dob | sib4 r r2 | R2. R1
+    sib4 do! re! mib4 r mi fad | sold r2 | R1
+    \pl {la,4\stopped s2 s1 s2. s1 s2. s1 s2. }
+    {la'2.:32~ \oneVoice la1:~la2.:~la1:~la2.:~la1:~la2.:} |
+    <la,la'>4 r R2 \clef treble fad'16 mi fa sol la8 sold |
+    do16 lad si dod red8 re fad16 mi fa sol | la4 r r2 \clef alto |
+    fa,,16 re mib fa lab fad sol la do4 r | la1:16
+    
+    <la sold'>4 fa'8 la sold | la la sold r4 |
+    <la, sold'> re8 mib sold | la la sold r4 |
+    <la,sold'> mib8 mib re | <mib re'>4 <mib re'> r8 |
+    <re la' mib'>4 r r8 |
+    <la'sold'la>4 r mib'8 | mib re r4 r8 |
+    <mib,re'>4 <mib re'> r8 | <re la' mib'>4 r r8 |
+    la'8 la sold r4 | r8 mi'4 mi | sib r r8 |
+    
+    R1*2 <do, la'>4 r r2 |
+    r4 \pizz sold' fad r | r fa mib r | R1
+    \repeat tremolo 16 { \arco fa32 mi}
+    \repeat tremolo 8 { fa mi}
+    \repeat tremolo 8 { fad re}
+    \repeat tremolo 16 { fad re}
+    <dod' red>4 r2 | r8 \pizz fa, r4 |
+    R1*2 R2.*4 r4 fa' r r fa r R2. |
+    
+    r16 \arco mi do mi r red si red |
+    r re sib re r dod la dod |
+    r do lab do r si sol si r sib solb sib |
+    r do la do r si sold si r sib sol sib |
+    r la fad la r lab fa lab |
+    r sol mi sol r fad red fad |
+    dod8 r sol' r do, r fad r | fa r mi r |
+    \pizz <re sib'>4 <re sib'>8 \arco sold'16 sold |
+    <sib, re la'>8 r \pizz <re,sib'>4 |
+    <re sib'>8 \arco sold'16 sold <sib, re la'>8 r |
+    \pizz <re, sib'>8 \arco sold'16 sold la8 fad16 fad |
+    sol8 mi,16 mi r8 red16 red |
+    r8 re16 re r8 dod16 dod |
+    r do lab' do r si sol si |
+    r sib solb sib r la fa la | R2
+    r8 dod16 dod do8 r | R2
+    \pizz <re, sib'>4 <re sib'>8 \arco sold'16 sold |
+    la8 r16 re,, mi8 r16 mi | re8 si'!16 si lad8 r |
+    R2*2 \pizz re,4 r fa r mib r R2 |
+    
+    \arco \ind #"flautando sul tasto"
+    la2.:32~ la:~ la:~ la:~ la:~ la:~ la2 r4 |
+    R2.*2 sol'16 sol lab8 sol16 sol lab8 r4 |
+    R2.*4 sold16 sold la8 sold16 sold la8 r4 |
+    r sold16 sold la dod, r4 |
   }
 }

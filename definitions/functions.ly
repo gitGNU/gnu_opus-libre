@@ -59,6 +59,16 @@ harmo =
     \override Stem #'stencil = ##f $result
     \revert Stem #'stencil \revert NoteHead #'stencil } >> #})
 
+showAnyway =
+#(define-music-function (parser location music) (ly:music?)
+#{
+  \unset Score.keepAliveInterfaces
+  $(music)
+  \set Score.keepAliveInterfaces = #'(rhythmic-grob-interface
+  lyric-interface percent-repeat-item-interface
+  percent-repeat-interface stanza-number-interface)
+#})
+
 %% Articulation shortcuts -----------------------------------------%
 
 % Are these really needed?
@@ -157,6 +167,10 @@ thumbpizz =
              'direction 1
              'text (markup #:hspace .4 #:rotate 45
                 #:musicglyph "scripts.stopped"))
+
+plak =
+#(make-music 'ArpeggioEvent
+             'tweaks 'stencil ly:arpeggio::brew-chord-bracket)
 
 %% Music shortcuts ------------------------------------------------%
 

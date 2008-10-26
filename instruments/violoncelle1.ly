@@ -482,5 +482,87 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
 ActeDeuxSceneDeuxVioloncelleUn = { \VioloncelleUn
   \relative {
     R1.*4 \clef treble la'1.~\CaV la4\CaV r r1 | R1*2 \clef bass
+    re,2.~\CaV re8 r r16 re,,8 fa16 r16 fad8. |
+    \t {re8 mib fa} lab re, \tt {re16 mib fa lab sib} |
+    si8 re, \ttt {mib16 fa lab sib si dod} mi8 fa, |
+    \ttt {lab16 sib si dod mi fad} sol8 sib,
+    \ttt {si16 dod mi fad sol la} | la,1.~ la1 r2 |
+    
+    R1. R1*2 si'2.~ si8 r r16 si,8 re16 r16 red8. r4 |
+    r16 mi, dod re do mib |
+    si'4 r8 fad'16 fad fad fad fad fad fad4 |
+    r8 fad16 fad fad fad fad fad
+    fad fad <sol, fad'> <sol fad'> <re' la'> <re la'> <sol, re'> <sol re'> |
+    r8 mid'16 mid fad8 si, si16 si si si si si si si |
+    r8 mid16  mid fad8 si, si16 si si si fad' fad fad fad |
+    fad fad fad fad fad8 si, fad' si, fad'16 fad fad fad |
+    fad fad fad fad fad8 si, fad' si, la do |
+    
+    sold2.~ sold1 r2 | R1*2
+    \pizz do4 do' r | do, do' do, | fa, do'' r | fa,, si' |
+    fa, re'' r | \arco mi,2.~ mi2 r4 |
+    r16 sol, mi' sib' do4 |
+    
+    r16 la, fad sol fa lab |
+    \stemDown mi8 \clef treble sold'' \stemNeutral sold la r4 %% FIXME: Issue #400
+    \clef bass <re,,la'>16 <re la'> <sol, re'> <sol re'> |
+    \stemDown mi8 \clef treble sold'' \stemNeutral sold la 
+    \clef bass <si,, mi>16 <si mi> <si mi> <si mi> <si mi> <si mi> <si mi> <si mi> |
+    \stemDown mi,8 \clef treble lab'' \stemNeutral lab sib
+    \clef bass <la,,re>16 <la re> <la re> <la re> <sol' do>8 <la, re> \clef treble |
+    r8 red'' red mi r4 \clef bass sol,,16 sol sol8 \clef treble |
+    r8 mi'' mi fa \clef bass r8 r16 la,,, fad sol fa lab |
+    mi8 \pizz si' <fad'dod'>4\arpeggio |
+    mi,8 si' <fad'dod'>4\arpeggio | mi,8 si' fad' dod, | mi4 dod8 do |
+    mi4 r8 mi | mi4 r |
+    \arco <dod la'>1~ <dod la'>2 r4 |
+    
+    R1. R1 R1. <re' la'>1. fa2 r4 | R1 \clef treble
+    la'2.:32~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV
+    la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV
+    la4 r2 R1 R2. \clef tenor r2 r4 \pizz <la, sold'>8 <la sold'> |
+    <sib la'>4 r <lad sold'>8 <lad sold'> | <si la'>4 r r2 | R2. \clef bass
+    
+    <la,la'>16 <la la'> <la' la> <la la> <la la> <la la> <la, la'> <la la'> |
+    la2:16
+    <la la'>16 <la la'> <la' la> <la la> <la la> <la la> <la, la'> <la la'> |
+    la2:16 la4 |
+    mib16 do reb mib fad8 fa sib16 sol lab sib reb8 do |
+    fa mib lab sol do4 la4:16 |
+    la,1:16 |
+    
+    <la sold'>4 do'8 reb do | sold sold la r4 |
+    sold,8 sold la r4 | sold'8 sold la r4 |
+    <la, sold'>4 r r8 | la4 la r8 | sold4 r r8 |
+    <la sold' la>4 r re8 | re mib r4 r8 |
+    <sold, re'>4 <sold re'> r8 | <la re>4 r r8 |
+    dod dod do r4 | r8 sol'4 sol | si, r r8 |
+    
+    R1*2 lad4 r r2 | r4 \pizz mi sol r | r do la r |
+    R1 \arco mi2 \repeat tremolo 8 {mi32 red} |
+    \repeat tremolo 16 {fa mib} |
+    \repeat tremolo 16 {fa mib} |
+    <re' dod'>4 r2 | r8 \pizz si r4 |
+    R1*2 R2.*4
+    r4 fad' r | r mi r | R2. \clef treble |
+    
+    \arco la'2 sol4 fa mi fa8 mi fa sol |
+    la4 mi r R2 \clef tenor r8 <sold, mi'> r <red' fad> |
+    r16 sold mi sold r sol mib sol |
+    r fad re fad r fa reb fa |
+    r mi do mi r red si red |
+    re8 \clef bass \pizz <re, sib'>\arpeggio r <re sib'>\arpeggio |
+    r \simile <re sib'> r <re sib'> |
+    r <re sib'> r <re sib'> |
+    r <re sib'> r <re sib'> |
+    \arco sold, \pizz sold' \arco sol, r |
+    do r fad, r | si r fa r | sib r mi, r |
+    R2 r8 la'16 la sold8 r | R2
+    r8 \pizz <re sib'> r <re sib'> |
+    r <re sib'> r sold | <sib, re>4 r |
+    R2*2 sib4 r fa r mib r | R2 \clef treble
+    
+    la''2. sol fa mi fa4. mi fa sol la4 mi r |
+    R2.*9
   }
 }

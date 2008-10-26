@@ -414,5 +414,67 @@ ActeDeuxSceneUnBisContrebasse = { \Contrebasse
 ActeDeuxSceneDeuxContrebasse = { \Contrebasse
   \relative {
     R1.*6 R1*2 R2.
+    re,,8 r r16 re fa8 r16 fad8. |
+    re8 re16 re re re re re re8 mib |
+    re fa mib lab fa si lab lab, sib mi si fa' |
+    re1.~ re1 r2 |
+    R1. R1*2 R2.
+    si8 r r16 si8 re16 r red8. r16 si re red |
+    R4. si4 r r8 \pizz sold4. |
+    <si si'>4\plak r8 sold r sol r4 |
+    <si si'>4\plak r8 si r si r4 |
+    <si si'>4\plak r8 si r si r4 |
+    <si si'>4\plak r8 si r si r4 |
+    <si si'>4\plak r8 si r \arco si la do |
+    sold2.~ sold1 r2 | R1*2
+    
+    \pizz fa4 r2 fa4 r2 fa4 r2 fa4 r |
+    fa' r red <mi, mi'>\plak r2 mi'4 r2 |
+    do4 r |
+    r16 \arco la fad sol fa lab |
+    <mi mi'>4 r r8 \pl sol sol'\stopped r4 |
+    <mi, mi'>4 r8 sol r sold r4 |
+    <mi mi'>4 r8 mi' r mi r4 |
+    <mi,mi'>4 r8 mi' r mi r4 |
+    <mi,mi'>4 r8 mi' r r16 la, fad sol fa lab |
+    mi8 mi' r dod | <mi, mi'>4 dod'8 do |
+    <mi, mi'>8 mi' mi, mi' |
+    r16 sib la do dod sol fa lab |
+    mi8 mi' r4 | \t {mi re fa} |
+    dod1~ dod2 r4 |
+    
+    dod1 r4 dod | sol2. r4 |
+    dod1 r4 dod | sol1.~ sol2 r4 | R1 \clef "G_8"
+    la'''2.~\CaV la1~\CaV la2.~\CaV la1~\CaV la2.~\CaV la1~\CaV la2.~\CaV |
+    la1~\CaV la2.~\CaV la1~\CaV la2.~\CaV la1~\CaV la2.~\CaV la1~\CaV |
+    la4\CaV r2 \clef "F_8" | R1 R2. R1 R2. R1 R2.
+    <la,,,la'>2~ la~ <la la'>~ la2.~ <la la'>2~ la~ la1~ la2. r4 |
+    
+    <la sold'>4 r r8 | <la la'>8 <la la'> <la sold'> r4 |
+    la8 la sold r4   | <la la'>8 <la la'> <la sold'> r4 |
+    <la sold'>4 r r8 | sold4 sold r8 | la4 r r8 |
+    <la sold'>4 r mib'8 | mib re r4 r8 | <re sold>4 <re sold> r8 |
+    <mib la>4 r r8 | mi8 mi fa r4 | r8 fad4 fad sol r r8 |
+    
+    R1*2 si,4 r r2 | r4 \pizz mi fa r r dod mi r | R1
+    \arco <mi, mi'>2~ mi8 mi mi4 |
+    <mi mi'>2~ mi8 mi mi4 |
+    <mi mi'>2~ mi8 mi mi4 |
+    \pl mi4_\thumbpizz mi'^\stopped r2 | \pizz re4 r |
+    R1*2 R2.*4 r4 sib' r r fad r | R2.
+    \pizz <la, la'>4\plak mib' sold re |
+    dod' sol do | fa, si mi, |
+    mib la, re sold, |
+    dod sol do fad, | fa' mi <re sib'>\arpeggio <re sib'>\arpeggio |
+    \simile <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    dod sol do fad, | si fa sib mi, |
+    R2 r8 \arco la16 la sold8 r | R2
+    \pizz <re'sib'>4 <re sib'> |
+    <re sib'> sold re r | R2*6 \clef "G_8"
+    
+    la''2.~\CaV la2.~\CaV la2.~\CaV la2.~\CaV la2.~\CaV la2.~\CaV la2\CaV r4 |
+    R2.*9
   }
 }

@@ -101,6 +101,10 @@ includeLayout = \layout {
     subdivideBeams = ##t
     beatLength = #(ly:make-moment 1 8)
   }
+  \context {
+    \Voice
+    \override Arpeggio  #'arpeggio-direction = #UP
+  }
 
 %% Vocal score layout  --------------------------------------------%
   \context {
