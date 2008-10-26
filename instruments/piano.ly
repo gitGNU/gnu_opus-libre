@@ -933,9 +933,38 @@ ActeDeuxSceneUnBisPiano = { \Piano
 ActeDeuxSceneDeuxPiano = { \Piano
   \PianoDeuxMains
   \relative {
-    R1.*6 R1*2 R2.
+    R1.*6 R1*2 R2. \clef bass |
+    \gauche <re,, re'>16 \droite <re' sol lab dod> <re sol lab dod> \gauche <fa, fa'>
+    \droite <re' sol lab dod> \gauche <re, re'> \droite <re' sol lab dod> \gauche <fa, fa'>
+    \droite <re' sol lab dod> \gauche <fad, fad'> \droite <re' sol lab dod> <re sol lab dod> |
+    <fa la sib mi>8. <fa la sib mi>16 r8 <fa la sib mi>16 <fa la sib mi> r <fa la sib mi> <fa la sib mi>8 |
+    r16 <re sol lab dod>8 <fa la sib mi>16 r <re sol lab dod> <fa la sib mi>8 r16 <fa la sib mi> r8 |
+    R2. R1.*3 | R1*2 R2. |
+    \gauche <si,, si'>16 \droite <re' sol lab dod> <re sol lab dod> \gauche <re, re'>
+    \droite <re' sol lab dod> \gauche <si, si'> \droite <re' sol lab dod> \gauche <re, re'>
+    \droite <re' sol lab dod> \gauche <red, red'> \droite <re' sol lab dod> <re sol lab dod>
+    <re sol lab dod> \gauche <si, si'> \droite re' \gauche <red, red'> \droite |
+    r mi' dod re do mib |
+    si8 si16 si \gauche si, \droite si' si \gauche si, \droite si' si
+    \gauche sold, \droite si' si \gauche sold \droite si si |
+    \gauche si, \droite si' si si si si \gauche sold, \droite si'
+    si \gauche sol, \droite si' si si \gauche sol, \droite si' si |
+    \gauche si, \droite si' si si \gauche lad \droite si \gauche si, \droite si'
+    si \gauche si, \droite si' si si \gauche lad \droite si si |
+    \gauche si, \droite si' si \gauche si, \droite si' si \gauche si, \droite si'
+    r8 \gauche si,16 \droite si' si si \gauche lad \droite si |
+    \gauche si, \droite si' si \gauche <fad'dod'> \droite si, si \gauche si, \droite si'
+    \gauche <fad'dod'> \droite si, \gauche si, \droite si' si \gauche <dod'sold'> \droite si, si |
+    \gauche si, \droite si' si \gauche si, \droite si' si \gauche si, \droite si' r2 |
   }
   \relative {
     R1.*6 R1*2 R2.
+    s2. <re,, re'>8 mib re fa re lab' |
+    fa sib lab si dod mi fa mi sol sib dod4 | R1.*3
+    R1*2 R2.
+    s1 r16 mi,, dod re do mib |
+    si4 s2. | s1*4 s2 r2 |
+    R2. R1. R1 R2.*3 R2 R2.*3 R2
+    r16 la'16 fad sol fa lab |
   }
 }
