@@ -29,6 +29,15 @@ PrologueClarinetteDeux = { \ClarinetteDeux
   }
 }
 
+OuvertureClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R2. \tttt {mi16 do' reb la sib solb' sol,}
+    \t {mib'8 sol si} \tt {do16 la lab mi mib}
+    \tt {lab, la do fa, reb'} \tt {do reb lab' la, fa'}
+    \tt {mi fa do' reb, mi} | sib4
+  }
+}
+
 ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
   \relative {
     R2.*4

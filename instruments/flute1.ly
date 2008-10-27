@@ -40,6 +40,15 @@ PrologueFluteUn = { \FluteUn
   }
 }
 
+OuvertureFluteUn = { \FluteUn
+  \relative {
+    \tttt {mi''16 fa re dod' sol sold si} \t {sib,8 re fad} la16 fad mib do |
+    mi4 r2 | \tttt {mi16 mi, fa sold la do dod}
+    \tttt {mi mi, fa sold la do dod} \tttt {mi la, do dod fa sold la} |
+    sib4 
+  }
+}
+
 ActeUnSceneUnFluteUn = { \FluteUn
   \relative {
     do2~ do~ do r4 | do2~ do~ do r4 |

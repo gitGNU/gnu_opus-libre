@@ -29,6 +29,14 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
   }
 }
 
+OuvertureSaxophoneDeux = { \SaxAltoDeux
+  \relative {
+    R2. r2 \tt { sib16 si solb' sol re'} |
+    mi,4 la,16 la sold8 r16 re \t {la' la lab} |
+    sib4 
+  }
+}	
+
 ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
   \relative {
     R2.*7

@@ -146,6 +146,13 @@ PrologueMesures = {
             r4    \bar "|."
 }
 
+OuvertureMesures = {
+  \time 3/4
+      \tempo "Libre"
+            R2.*3 \bar "||"
+            
+}
+
 ActeUnSceneUnMesures = {
   \time 2/4
       \mark \markup \init-did \ActeUnSceneUnAAA

@@ -35,6 +35,16 @@ PrologueClarinetteUn = { \ClarinetteUn
   }
 }
 
+OuvertureClarinetteUn = { \ClarinetteUn
+  \relative {
+    r2 \tttt {mi'16 re fa sol reb si' lab} |
+    \t {sib,8 lab' do} re16 si lab fa solb4 |
+    \tt {si,16 reb lab' la, fa'} \tt {mi fa do' reb, la'}
+    \tt {lab la mi' lab, la} | sib4
+  }
+}
+
+
 ActeUnSceneUnClarinetteUn = { \ClarinetteUn
   \relative {
     R2*2 R2. R2*2 R2. |

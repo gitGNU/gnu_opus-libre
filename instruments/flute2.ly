@@ -29,6 +29,15 @@ PrologueFluteDeux = { \FluteDeux
   }
 }
 
+OuvertureFluteDeux = { \FluteDeux
+  \relative {
+   r4 \tttt { mi''16 sold sol si sib, re dod'} \t {la8 fa dod} |
+    sib,16 sol mi dod mi,4 r | \tttt {mi'16 fa sold la do dod mi }
+    \tttt { mi, fa sold la do dod mi} \tttt {do dod mi mi, fa sold la} |
+    sib4 
+  }
+}
+
 ActeUnSceneUnFluteDeux = { \FluteDeux
   \relative {
     R2*2 R2. R2*2 R2. |

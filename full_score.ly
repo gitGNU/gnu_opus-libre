@@ -128,6 +128,31 @@ Prologue = {
     \new PianoStaff \ProloguePiano
   >>
 }
+
+Ouverture = {
+  <<
+    \new TopLine \OuvertureMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \OuvertureFluteUn
+            \new Staff \OuvertureFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \OuvertureClarinetteUn
+            \new Staff \OuvertureClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \OuvertureSaxophoneUn
+            \new Staff \OuvertureSaxophoneDeux
+          >>
+      >>
+  >>
+}
+
 %{
 ActeUnSceneUn = {
   <<
@@ -883,7 +908,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %}
+  \score {
+    \Ouverture
+    \header {
+      piece = \OuvertureTitre
+    }
+  } %{
   \score {
     \ActeUnSceneUn
     \header {
@@ -949,13 +980,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {
       piece = \ActeDeuxSceneDeuxTitre
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneTrois
     \header {

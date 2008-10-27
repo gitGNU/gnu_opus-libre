@@ -23,6 +23,14 @@ PrologueSaxophoneUn = { \SaxAltoUn
   }
 }
 
+OuvertureSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R2. r4 \tt {mi16 sol solb si sib} \t {re4 mib8} |
+    mi4 sold,16 sold la8 r16 mib, \t {sold' sold la} |
+    sib4
+  }
+}
+
 ActeUnSceneUnBisSaxophoneUn = { \SaxAltoUn
   \relative {
     R2.*7

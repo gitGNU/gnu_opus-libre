@@ -36,6 +36,10 @@ PrologueTitre = \markup  {
 \fill-line { \center-column {\fontsize #10 \PrologueTitreTexte " "}}
 }
 
+OuvertureTitre = \markup  {
+\fill-line { \center-column {\fontsize #10 "Ouverture" " "}}
+}
+
 ActeUnSceneUnTitre = \markup {
   \fill-line { \center-column {\fontsize #10 \ActeUnTitreTexte " "
   \fontsize #6 \SceneUnTitreTexte " "}}
