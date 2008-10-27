@@ -868,7 +868,7 @@ ActeDeuxSceneDeux = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-showFirstLength = s1*62
+%showFirstLength = s1*62
 \book {
   \header {
     title = \OperaTitre

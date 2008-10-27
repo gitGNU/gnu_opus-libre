@@ -661,14 +661,106 @@ ActeDeuxSceneUnBisPercus = { \Percus
 ActeDeuxSceneDeuxPercus = { <<
   \new Staff { \Marimba
     \relative {
+      sold'4 <mi sold> <fa la> r r2 |
+      sold4 <mi sold> <fa la> r r2 |
+      R1.
+      <mi sold>4 <mi sold> <fa la> r sold r |
+      la r r1 | R1.-\markup "Allez au Vibraphone" \Vibraphone
+      R1*2 R2.*5 R1.*3 R1*2
+      R2. R1 R4. R1*6 R2. R1. R1
+      r2 r4 \pl {la fa'\laissezVibrer} {do\glissando do'\laissezVibrer} 
+      \ind #"senza Ped." r2 |
+      do4 r \pl {la, fa'\laissezVibrer} {do\glissando do'\laissezVibrer} r2 |
+      re,4 do' | r si r | mi,,,\laissezVibrer mi'\laissezVibrer mi'\laissezVibrer |
+      r2 r8 \hideNote sol8\glissando do4*1/2 \hideNote mi,8\glissando la4 | R4.
+      R1*5 R2*6 R1 R2. R1. R1 R1.*2 R2. R1 
+      
+      la,2.\laissezVibrer \sustainOn r8 sol4.\laissezVibrer r2 |
+      fa2.\laissezVibrer r8 mi4.\laissezVibrer r2 | fa4 mi fa |
+      sol la2.\laissezVibrer R2.
+      R1 <la, la'>2.\laissezVibrer R1 <sib la'>2.\laissezVibrer
+      <mib la>1\laissezVibrer <sold la>2.\laissezVibrer R1
+      <la, la'>2.\laissezVibrer R1 R2. R1 R2. R1 R2.
+      R2*3 R2. R1*3
+      R1*5/8*14 R1*9 R2. R2 R1*2
+      la'4 sol fa mi2 r4 |
+      <solb, la! fa' lab>2.\laissezVibrer R2.*4
+      
+      R2*2 R2.*2 R2*25
+      <la' la'>2.\laissezVibrer \sustainOn R2.*6
+      \pl {<fa do'>4 do' fa, <fa do'>2*3/2}
+      {la'8 sol fa mi fa16 mi fa sol la8 mi8*5\laissezVibrer }|
+      R2.
+      \pl {<la, do>4 do la <la do>2. <sol re'> <la do>2}
+      {la'8 sol fa mi fa16 mi fa sol la8 sol fa mi fa16 mi fa sol
+      sib8 sol fa mi fa16 mi fa sol la8 mi8*3 } r4 | R2.*2
     }
   }
-  \new Staff { \Vibraphone
-    \relative {
-    }
-  }
+ \new DrumStaff { \Percus
+   \drummode {
+     R1.*6 R1*2 R2.*5 r1 \ind #"Crécelle" hh2:32~ hh4 r r1 R1. R1*2
+     R2. R1 R4.
+     R1*5 r4 \ind #"Crécelle" hh2.:32 R2. R1. R1*2
+     R2.*3 R2 R2.*3 R2 R4. R1*5 R2*6 R1
+     r4 \ind #"Crécelle" hh2:32 R1. R1 R1.*2 R2.
+     r2 hh4:32 hh4 |
+     
+     R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
+     R2. R1 R2. R1 R2. R1 R2.
+     
+     R2*2 R2 R2. R1*3
+     r4 \ind #"Tambour" sn8 sn sn sn4 r8 sn sn |
+     sn4 sn8 sn sn sn4 r8 sn sn | sn4 sn8 sn16 sn sn sn |
+     sn4 sn r16 sn32 sn | sn4 r r8 |
+     sn4 r8 sn sn | sn4 sn8 sn sn | sn4 sn r16 sn32 sn | sn4 r r8 |
+     sn sn sn4 r8 | r sn sn sn sn | sn4 r r8 |
+     R1 r2 r4 r8 \t {sn16 sn sn} | sn4 r r2 |
+     R1*6 R2. R2 R1*2 R2.*7
+     
+     R2*2 R2.*2 R2*25 R2.*16
+   }
+ }
   \new Staff { \Timbales
     \relative {
+      R1.*6 R1*2 r2 r8 r16 re,32 re |
+      re4 re8 re r \t {re16 re re} |
+      re8 re re16 re r8 re32 re re8. |
+      re16 re re re re8 \t {re16 re re} re8 re |
+      sold,8. re'16 r sold, re'8 r16 re8 sold,16 |
+      re'2:32~ re4 r r2 | R1.*2 R1*2
+      r2 r8 \t {si16 si si} |
+      si4 si8 si32 si16. r16 si si si r8 \t {si16 si si} |
+      sold4 r8 | si4 r r8 sold r4 | si4 r r2 |
+      si4 r8 si r si r4 | si32 si8.. r8 si r si r r16 si32 si |
+      si4 r8 si r si r4 | si r8 si r si r4 |
+      sold2.:32~ sold4 r r1 |
+      R1*2 R2.*3 R2 R2.*3 R2 R4. 
+      
+      mi4 r r mi'8 mi16. mi,32 |
+      mi4 r r mi'16. mi32 mi8 |
+      mi,4 r8 mi r mi mi' mi16. mi,32 |
+      mi4  r8 mi r mi mi'16. mi32 mi8 |
+      mi,4 r8 mi r mi mi'16 mi mi8 |
+      mi,8 mi'16. mi32 mi4 |
+      mi,8 mi'16. mi32 mi16 mi mi8 |
+      mi,8 mi'16. mi32 mi4 |
+      mi,8 mi'16. mi32 mi16 mi mi32 mi mi mi |
+      mi,8 mi'16. mi32 mi4 |
+      r4 re | dod1:32~ dod4 r2 |
+      dod4 r r2 r4 dod | sol1:32 | dod4 r r2 r4 dod |
+      sol1.:32~ sol4 r2 | R1 
+      
+      R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
+      R2. R1 R2. R1 R2. R1 r2 r8 r16 \t {la32 la la} |
+      la4 r r r8 \t {la16 la la} la4 r r2 r8 \t {la16 la la} |
+      la1:32~ la:~ la2 r8 la \t {la la la} |
+      la4 r r8 | R1*5/8*13 R1*6
+      mi2:32~ mi8 mi \t {mi mi mi} |
+      mi2:32~ mi8 mi \t {mi mi mi} |
+      mi2:32~ mi8 mi \t {mi mi mi} |
+      mi4 r2 | R2 R1*2 R2.*7
+      
+      R2*2 R2.*2 R2*25 R2.*16
     }
   }
  >>

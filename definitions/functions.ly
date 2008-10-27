@@ -276,6 +276,11 @@ noTuplet = {
 \once \override TupletBracket #'transparent = ##t
 \once \override TupletNumber #'transparent = ##t
 }
+
+sk = \set Score.skipTypesetting = ##t
+
+unsk = \set Score.skipTypesetting = ##f
+
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Expressive indications -----------------------------------------%

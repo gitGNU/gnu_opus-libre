@@ -948,7 +948,7 @@ ActeDeuxSceneDeuxPiano = { \Piano
     si8 si16 si \gauche si, \droite si' si \gauche si, \droite si' si
     \gauche sold, \droite si' si \gauche sold \droite si si |
     \gauche si, \droite si' si si si si \gauche sold, \droite si'
-    si \gauche sol, \droite si' si si \gauche sol, \droite si' si |
+    si \gauche sol, \droite si' si si \gauche sol \droite si si |
     \gauche si, \droite si' si si \gauche lad \droite si \gauche si, \droite si'
     si \gauche si, \droite si' si si \gauche lad \droite si si |
     \gauche si, \droite si' si \gauche si, \droite si' si \gauche si, \droite si'
@@ -956,6 +956,66 @@ ActeDeuxSceneDeuxPiano = { \Piano
     \gauche si, \droite si' si \gauche <fad'dod'> \droite si, si \gauche si, \droite si'
     \gauche <fad'dod'> \droite si, \gauche si, \droite si' si \gauche <dod'sold'> \droite si, si |
     \gauche si, \droite si' si \gauche si, \droite si' si \gauche si, \droite si' r2 |
+    R2. R1. R1*2 R2.*3 R2 R2.*3 R2
+    r16 la'16 fad sol fa lab |
+    mi mi mi \gauche sol, \droite mi' \gauche mi, \droite mi' mi
+    \gauche mi, \droite mi' \gauche sol, \droite mi' \gauche mi, sol \droite mi' mi |
+    \gauche mi, \droite mi' mi \gauche sol, \droite mi' \gauche mi, sol \droite mi'
+    \gauche mi, \droite mi' \gauche sold, \droite mi' mi \gauche mi' \droite mi, mi |
+    \gauche mi, \droite mi' mi \gauche sol, \droite mi' \gauche mi, \droite mi' mi
+    \gauche mi, \droite mi' mi \gauche sol, \droite mi' \gauche sold, \droite mi' mi |
+    \gauche mi, \droite mi' mi \gauche la, \droite mi' \gauche mi, \droite mi' \gauche la,
+    \droite mi' mi \gauche re \droite mi \gauche la, mi \droite mi' mi |
+    \gauche mi, \droite mi' \gauche la, re \droite mi mi <re sol do>8 r8 r16 la' fad sol fa lab |
+    mi8 \clef treble <si' dod sold'> %% FIXME Issue #400
+    <si dod sold'> r | r <dod red lad'> <dod red lad'> r |
+    r <fad si dod> <fad si dod> r | r <si dod mi> <si dod mi> r |
+    r <lad si fad'> <lad si fad'> r |
+    r32 sold mi sold fadd lad fadd lad sold si sold si lad dod mi sold |
+    si2*2\laissezVibrer R2.
+    R1. R1 R1.
+    <la,, sib re la'>1*3/2\laissezVibrer \arpeggio R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    <la' la'>4 la8 \gauche la, \droite dod' \gauche dod, \droite fa' \gauche fa, |
+    \droite <la la'>4 la8 \gauche la, \droite do'! \gauche do,! \droite mib' \gauche mib,
+    \droite fad' \gauche fad, \droite | <la la'>4 s s2 s1*2 |
+    <sold' la'>8 r2 | r4 r8 <la,, re mib sold> r |
+    <la re mib sold> r r4 <mib' re' mib>8 |
+    <re' mib> r4 <mib, sold la re>8 r | R2*5/4
+    <la, re sold>4 r r8 | R2*5/4
+    r4 r8 <la re mib sold> r | r4 <re mib>8 r4 |
+    <la re sold>4 r r8 | R2*5/4*4
+    R1*2 \clef bass <do,! la' dod>4 r r2 \clef treble |
+    r4 <re' dod'> <si lad'> r | r <si lad'> <lab sol'> r | R1
+    mi'1\laissezVibrer s1*2 <si' sold'>4 r2 |
+    r8*1/2 s8. r4 | R1*2 R2.*4
+    r8 r16 <sold dod> <fa mi'>8 r r4 |
+    r8 r16 <sold red'> <fa! fad'>8 r r4 | R2.
+    R2*2 R2.*2 R2*5 \clef bass
+    <re, sib' re>16 <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <mi do' mi>8 r r4 R2*4 \clef treble r8 <dod' mi sold> <do fa la> r |
+    R2 \clef bass |
+    <re, sib' re>16 <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re>
+    <mi sold mi'> <mi sold mi'> <mi sold mi'> <mi sold mi'> |
+    <re sib' re>8 \clef treble <re' fad> <mib sol> r | R2*6
+    R2.*7 \ottava #1 |
+    <dod'' fad dod'>4 <red sold red'> r8 <si lad'> |
+    <dod fad dod'>4 <sold red' sold> \ottava #0 r | R2.
+    \ottava #1
+    <dod sold' dod>4 <sol' dod sol'> <dod, sol'? dod> |
+    <red sold red'> <lad' red lad'> r <dod, sol' dod> <sold' dod sold'> r |
+    <dod, sold' dod> <la' fa' la> \ottava #0 r R2.*2 |
   }
   \relative {
     R1.*6 R1*2 R2.
@@ -964,7 +1024,49 @@ ActeDeuxSceneDeuxPiano = { \Piano
     R1*2 R2.
     s1 r16 mi,, dod re do mib |
     si4 s2. | s1*4 s2 r2 |
-    R2. R1. R1 R2.*3 R2 R2.*3 R2
+    R2. R1. R1*2 R2.*3 R2 R2.*3 R2
     r16 la'16 fad sol fa lab |
+    mi8 s8 s4 s2 s1*3 s2 r8 r16 la fad sol fa lab mi8 r r dod |
+    mi r dod do | mi r r dod mi r dod do mi4 r8 mi mi r r4 |
+    <dod dod'>2*2\laissezVibrer R2.
+    R1. R1 R1.
+    <sol' re'>1*3/2\laissezVibrer \arpeggio R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    <la la'>4 s s2 |
+    <la la'>4 s s2. |
+    <la la'>8 mib sol \droite fad' sib \gauche sib, re \droite dod' |
+    fa \gauche fa, la \droite sold' do \gauche do, mi \droite mib' |
+    sol sol, si sib' re re, fad fa' \gauche |
+    <la,,,,, sold'>8 r2 | r4 r8 <la' sold'> r |
+    <la sold'>8 r r4 <la, sold'>8 | <sold'' la> r2 | R2*5/4
+    <sold,, mib' la>4 r r8 | R2*5/4
+    r4 r8 <la' sold'> r | r4 <re mib>8 r4 |
+    <re, sold mib'>4 r r8 | R2*5/4*4
+    R1*2 <si lad'>4 r r2 |
+    r4 <mi red'> <sol fad'> r | r <reb do'> <mi red'> r | R1
+    r8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} <mi mi'>4 <mi mi'>~ |
+    <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} <mi mi'>4 <mi mi'>~ |
+    <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} <mi mi'>2 |
+    <re' dod'>4 r2 |
+    r16 r32 \stemUp <sold, si fa'>[ \droite \stemDown <dod' mib re'>8] \stemNeutral \gauche r4 |
+    R1*2 R2.*4 r8 r16 <dod, fad> <sib la'>8 r r4 |
+    r8 r16 <la mi'> <fad sol'>8 r r4 | R2.
+    R2*2 R2.*2 R2*5 <re sib'>8 <re sib'> <re sib'> <re sib'> |
+    <re sib'> <re sib'> <re sib'> <re sib'> |
+    <re sib'> <re sib'> <re sib'> <re sib'> |
+    <re sib'> <re sib'> <re sib'> <re sib'> |
+    <dod sold'> r r4 | R2*4
+    r8 la' sold r | R2
+    <re sib'>8 <re sib'> <re sib'> <re sib'> |
+    <re sib'> <re sib'> sold sold | <re sib' re> <sol' si> <fad lad> r |
+    R2*6
+    R2.*7 \clef treble
+    \pl {<fa'! do'!>2. <fa! do'>2} {fad'4 sold r fad s } r4 |
+    R2.
+    \pl {<la, do mi>2. <la do mi> <sib re sol> <la do mi>2 }
+    {sold'4 <sold dod> sold sold <sold red'> r4 |
+    s4 dod r4 sold <dod fa>} r4 | R2.*2
   }
 }
