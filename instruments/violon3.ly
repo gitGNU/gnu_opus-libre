@@ -18,7 +18,7 @@ PrologueViolonTrois = { \ViolonTrois
     %%% Introduction %%%
     
     \partial 4 r4 R2.  la'''2.~ la2.~ 
-    \repeat tremolo 8 la16~ \repeat tremolo 8 la32~ la8 r 
+    la2:16~ la4:32~ la8 r 
     mi,,2~| mi4 r | mi2.~| mi4 r | mi2 mi2.~| mi4 r R2 |
     <sol,? re'>2.~| <sol re>4 r | R2 sib2.~|
     si!4 mi'8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |

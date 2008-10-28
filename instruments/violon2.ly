@@ -18,7 +18,7 @@ PrologueViolonDeux = { \ViolonDeux
     %%% Introduction %%%
     
     \partial 4 r4 R2. sib'''2.~ sib2.~ 
-    \repeat tremolo 8 sib16~ \repeat tremolo 8 sib32~ sib8 r 
+    sib2:16~ sib4:32~ sib8 r 
     mi,,,2~| mi4 r | mi2.~| mi4 r | fa2 mi2.~| mi4 r R2 |
     <sold, re'>2.~| <la re>4 r | R2 <sol red'>2.~| 
     <sol mi'>4 mi'8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |

@@ -39,23 +39,30 @@ Timbales = {
   \clef bass
 }
 
-ProloguePercus = {<< 
+ProloguePercus = << 
+  \new Staff { \Marimba
+    \relative {
+      mi''4 r r8 mi r4 | r8 mi r4 r16 mi8. | 
+      mi8 mi \t { mi mi mi } \tt {mi16 mi mi mi mi} | mi4 r2. |
+      R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
+    }
+  }
   \new DrumStaff { \Percus 
-    \new  DrumVoice { \drummode {
-    \partial 4 wbh4-\markup "WoodBlock" r r8 wbh r4 | r8 wbh r4 r16 wbh8. | 
-    wbh8 wbh \t { wbh wbh wbh } \tt {wbh16 wbh wbh wbh wbh} | wbh4 r2. |
-    cb2-\markup "Gong" \laissezVibrer | R2 |
-      }
+    \new  DrumVoice \drummode {
+      \partial 4 r4 R2.*3 R1
+      \ind #"Gong" cb2-\markup "Gong" \laissezVibrer | R2 |
     }
   }
   \new Staff { \Timbales
     \relative{
-    \partial 4 r4 R2.*3 | R1 | r8 mi,, \t {mi mi mi} | mi4 r |    
+      \partial 4 r4 R2.*3 | R1 | r8 mi,, \t {mi mi mi} |
+      mi4 \tt {mi16 mi mi mi mi} |    
     }
-  } >>
-}
+  }
+>>
 
-ActeUnSceneUnBisPercus = { <<
+
+ActeUnSceneUnBisPercus = <<
   \new Staff { \Vibraphone
     \relative {
       R2.*7 R1 R2. R1 R2.*10 R1*2 R2
@@ -116,8 +123,8 @@ ActeUnSceneUnBisPercus = { <<
       R1*33 R2*4
     }
   }
- >>
-}
+>>
+
 
 ActeUnSceneDeuxPercus = {\Marimba 
   \relative {\clef bass
@@ -154,7 +161,7 @@ ActeUnSceneDeuxPercus = {\Marimba
   }
 }
 
-ActeUnSceneTroisPercus = { <<
+ActeUnSceneTroisPercus = <<
   \new DrumStaff { \Percus
     \new DrumVoice \drummode {
       \ind #"Tambour" sn2.:32~sn8 \t {sn16 sn sn} sn2:32~ sn2.:
@@ -203,8 +210,8 @@ ActeUnSceneTroisPercus = { <<
       R1*5/4 R1 R2. R2
     }
   }
-  >>
-}
+>>
+
 
 ActeUnSceneTroisBisPercus = {
   \new GrandStaff \GrandMarimba \PianoDeuxMains
@@ -278,7 +285,7 @@ ActeUnSceneTroisBisPercus = {
    }
 }
 
-ActeUnSceneTroisTerPercus = { <<
+ActeUnSceneTroisTerPercus = <<
   \new Staff { \Vibraphone
     \relative {
       R2*3 R2. R2*2 R2.*2 r2
@@ -341,8 +348,8 @@ ActeUnSceneTroisTerPercus = { <<
       <mi, red'>8 r r2 R2.*3
     }
   }
-  >>
-}
+>>
+
 
 InterludeTroisPercus = { \Timbales
   \relative {
@@ -366,164 +373,161 @@ InterludeTroisPercus = { \Timbales
   }
 }    
 
-ActeUnSceneQuatrePercus = {
-  <<
-   \new Staff { \Vibraphone
-     \relative {
-       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
-       R2-\fermataMarkup
-       R1 R2. \t {la'2 la4~} \t {la la2} |
-       \t {la la4~} \t {la la2} |
-       \t {sol sol4~} \t {sol sol2} \t {sol sol4} |
-       \t {fad2 fad4~} \t {fad fad2} |
-       \t {fad fad4~} \t {fad fad2} |
-       \t {<si,red fad> <si red fad>4~} \t {<si red fad> <si red fad>2}
-       \t {<si red fad> <si red fad>4~} \t {<si red fad> <si red fad>2}
-       <si red fad>2 \t {<sol sib mib> <sol sib mib>4~} <sol sib mib>2
-       re4 r2 | R2.*26
-       R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
-       R1*5 R2 R2. R1*10 R2. R1 R2. R1*7 R2*3 R2.*6
-       R1*4 R2. R1 R2.
-       R1 R2. R1 R2. R1*2
-       R2.*3 R1*2
+ActeUnSceneQuatrePercus = <<
+  \new Staff { \Vibraphone
+    \relative {
+      \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+      R2-\fermataMarkup
+      R1 R2. \t {la'2 la4~} \t {la la2} |
+      \t {la la4~} \t {la la2} |
+      \t {sol sol4~} \t {sol sol2} \t {sol sol4} |
+      \t {fad2 fad4~} \t {fad fad2} |
+      \t {fad fad4~} \t {fad fad2} |
+      \t {<si,red fad> <si red fad>4~} \t {<si red fad> <si red fad>2}
+      \t {<si red fad> <si red fad>4~} \t {<si red fad> <si red fad>2}
+      <si red fad>2 \t {<sol sib mib> <sol sib mib>4~} <sol sib mib>2
+      re4 r2 | R2.*26
+      R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
+      R1*5 R2 R2. R1*10 R2. R1 R2. R1*7 R2*3 R2.*6
+      R1*4 R2. R1 R2.
+      R1 R2. R1 R2. R1*2
+      R2.*3 R1*2
+      
+      R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
+      R1*12 R2 R2.*2 R2 R1
+      
+      %%% Piu lento %%%
+      re4 \laissezVibrer <sib' dob sib'>2 <sib dob sib'>
+      <sib dob sib'>4\laissezVibrer R2.
+      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
+      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
+      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
+      re,4\laissezVibrer <sib' do! sib'>2 <sib do sib'> 
+      <sib dob sib'>4\laissezVibrer R2.
+      re,4\laissezVibrer <sib' do sib'>2 <sib re sib'> <sib re sib'>4 |
+      re,4\laissezVibrer <sib' re sib'>2
+      re,4\laissezVibrer <sib' mib sib'>2 <sib mib sib'> <sib mib sib'>4 |
+      r <sib mib sib'>2 |
+      re,4\laissezVibrer <sib' mi! sib'>2\laissezVibrer | R2.*2
+      R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
+      
+    }
+  }
+  \new DrumStaff { \Percus
+    \drummode {
+      \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+      R2-\fermataMarkup
+      R1 R2. R1*2 R1. R1*2 R1. R1*2
+      R2.*27
+      R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
+      R1*5 R2 R2. R1*10 R2. R1 R2. R1*7 R2*3 R2.*6 R1*3
+      \ind #"Crécelle" hh4:32 hh4 r8 hh r4 |
+      hh4:32 hh4 r | r8 hh8:32 r4 r8 hh8:32 r8 hh8 |
+      hh4:32 hh8 hh4:32 hh8 | hh8:32 hh8 r16 hh8. r2 |
+      r8 hh8:32 r2 | r16 hh8. r4 r16 hh8. \t {hh8 hh hh} |
+      hh8:32 hh8 r2 | R1*2
+      R2.*3 R1*2
+      R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
+      R1*12 hh4:32 r4 | R2. r4 hh4:32 r4 | R2 r2 hh4:32 hh8 r |
+      
+      %%% Piu lento %%%
+      R2.*21
+      R1. r2 hh4:32 r4 | R1. r4 hh2:32 hh4 | R1.
+      r4 r8 r16 \ind #"Tambour" sn sn4 r |
+      R1. R1 R1. R1 sn4 r r2 r4 r8 sn16 sn |
+      sn4 r r2 r4 r8 \t {sn16 sn sn} |
+      sn4 r r2 r8 sn16 sn sn8 sn |
+      sn4 r r2 r8 sn sn sn | sn sn sn4 r1 |
+      sn4 r8 \t {sn16 sn sn} sn4 r | R1. R1 R1.
+      sn32 sn8.. r4 r r8 r16 sn |
+      sn4 r r2 r4 sn16 sn sn sn |
+      sn4 r r2 r4 sn8 sn |
+      sn4 r r2 r8 sn16 sn sn4 |
+      sn4 r r2 r8 sn sn sn | sn sn sn4 r sn sn sn |
+      sn4 r8 r16 sn sn4 r |
+      r2 r4 sn sn r |
+      r2 \ind #"Crécelle" hh4:32 hh4 |
+    }
+  }
+  \new Staff { \Timbales
+    \relative {
+      \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
+      R2-\fermataMarkup
+      R1 R2. R1*2 R1. R1*2 R1. R1*2
+      
+      %%% Agitato %%%
+      R2.*8
+      re,4 r re4:32 re4 r2 |
+      re8 re re re re4:32 re4 r2 |
+      re8 re re re re4:32 re4 r2 |
+      mib4 r2 R2.*4
+      mi32 mi8.. r2 mi4 r2 |
+      r8 sib32 sib16. r8 mi r sib |
+      mi8 \t {mi16 mi mi} mi4 r |
+      r8 sib4 mi sib8 | mi4 mi32 mi8.. sib8 mi |
+      R2. re2.:32\glissando |
+      dod4 r r r8 r16 sol32 sol | sol4 r2 |
+      dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod4 r |
+      r8 sol4 dod sol8 | dod8 \t {dod16 dod dod} dod4 |
+      r8 sol4 dod sol8 | \tt {dod16 dod dod dod dod} dod4 |
+      r8 dod r2 | r8 dod4 sol8 | dod \t {dod16 dod dod} dod4 r |
+      
+      %%% Placando assai %%%
+      dod2 r4 dod | sol2:32~ sol4 r |
+      dod2 r4 dod | sol2:32~ sol4 r |
+      R1 R2 R2. R1
+      
+      %%% Andante a piacere %%%
+      fa1:32~ fa2 dod' |
+      fa,1:32~fa2 dod' |
+      fa,1:32~fa2 dod' | fa, r r dod' |
+      sol2~sol2:32~sol8 dod4 sol dod8 |
+      sol2~sol2:32~sol8 \t {dod16 dod dod} dod8 sol~sol16. sol32 sol8 |
+      dod8 r r4 r2 |
+      sol1:32~sol:~sol2.:32~sol4 |
+      r8 sol \t {sol sol sol} sol2:32~sol1:32~sol2 r |
+      R2*3 R2.*6
+      
+      %%% A tempo %%%
+      r16 do32 do do8 r8 fad,4 do' fad,8 |
+      r16 do'32 do do8 r4 \tt {r16 do do fad, do'} \t {fad,8 do' fad,} |
+      do'8 \t {do16 do do} do4 r2 |
+      R1 R2. R1 R2. R1 R2. R1
+      
+      r2 fad,4:32\glissando sol4 r r2 |
+      sol32 sol8.. r4 r8 \t {dod16 dod dod} dod4 |
+      \t {sol16 sol sol} sol8\laissezVibrer r2 |
+      sol4 sol2:32\glissando fa4 r2 |
+      fa4 r8 r16 fa fa4 r |
+      fa r r dod'4:32\glissando re4 r2 |
+      r16 r32 re re4 |
+      sold,8 \t {sold16 sold sold} sold4 r8 sold |
+      r4 sold32 sold16. | re'32 re re8. r4 |
+      r16 r32 re re4 |
+      la8 la32 la16. r4 | R2
+      mib'4 mib r4 r8 |
+      si4 r R2 |
+      r8 r16 fa32 fa fa4 | R4. 
+      fa4 fa8 fa \t {fa fa fa} \tt {fa16 fa fa fa fa} |
+      R2 R4.
+      re'2.:32 re4 r8 r16 re32 re re4 r |
+      re16 re re8 r4 re r r re re re |
+      re8 re16 re re4 re re8 \t {re16 re re} |
+      re4 r r re8 re16 re re4 r r re8 re16 re |
+      re4 r r re re r r re re r r2 | R1*3
+      R2  R2.*2 R2 R1
+      R2.*21
+      R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
+      R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
+    }
+  }
+>>
 
-       R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
-       R1*12 R2 R2.*2 R2 R1
-       
-       %%% Piu lento %%%
-       re4 \laissezVibrer <sib' dob sib'>2 <sib dob sib'>
-       <sib dob sib'>4\laissezVibrer R2.
-       re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-       re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-       re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-       re,4\laissezVibrer <sib' do! sib'>2 <sib do sib'> 
-       <sib dob sib'>4\laissezVibrer R2.
-       re,4\laissezVibrer <sib' do sib'>2 <sib re sib'> <sib re sib'>4 |
-       re,4\laissezVibrer <sib' re sib'>2
-       re,4\laissezVibrer <sib' mib sib'>2 <sib mib sib'> <sib mib sib'>4 |
-       r <sib mib sib'>2 |
-       re,4\laissezVibrer <sib' mi! sib'>2\laissezVibrer | R2.*2
-       R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
-
-
-
-     }
-   }
-   \new DrumStaff { \Percus
-     \drummode {
-       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
-       R2-\fermataMarkup
-       R1 R2. R1*2 R1. R1*2 R1. R1*2
-       R2.*27
-       R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
-       R1*5 R2 R2. R1*10 R2. R1 R2. R1*7 R2*3 R2.*6 R1*3
-       \ind #"Crécelle" hh4:32 hh4 r8 hh r4 |
-       hh4:32 hh4 r | r8 hh8:32 r4 r8 hh8:32 r8 hh8 |
-       hh4:32 hh8 hh4:32 hh8 | hh8:32 hh8 r16 hh8. r2 |
-       r8 hh8:32 r2 | r16 hh8. r4 r16 hh8. \t {hh8 hh hh} |
-       hh8:32 hh8 r2 | R1*2
-       R2.*3 R1*2
-       R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
-       R1*12 hh4:32 r4 | R2. r4 hh4:32 r4 | R2 r2 hh4:32 hh8 r |
-
-       %%% Piu lento %%%
-       R2.*21
-       R1. r2 hh4:32 r4 | R1. r4 hh2:32 hh4 | R1.
-       r4 r8 r16 \ind #"Tambour" sn sn4 r |
-       R1. R1 R1. R1 sn4 r r2 r4 r8 sn16 sn |
-       sn4 r r2 r4 r8 \t {sn16 sn sn} |
-       sn4 r r2 r8 sn16 sn sn8 sn |
-       sn4 r r2 r8 sn sn sn | sn sn sn4 r1 |
-       sn4 r8 \t {sn16 sn sn} sn4 r | R1. R1 R1.
-       sn32 sn8.. r4 r r8 r16 sn |
-       sn4 r r2 r4 sn16 sn sn sn |
-       sn4 r r2 r4 sn8 sn |
-       sn4 r r2 r8 sn16 sn sn4 |
-       sn4 r r2 r8 sn sn sn | sn sn sn4 r sn sn sn |
-       sn4 r8 r16 sn sn4 r |
-       r2 r4 sn sn r |
-       r2 \ind #"Crécelle" hh4:32 hh4 |
-     }
-   }
-   \new Staff { \Timbales
-     \relative {
-       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
-       R2-\fermataMarkup
-       R1 R2. R1*2 R1. R1*2 R1. R1*2
-
-       %%% Agitato %%%
-       R2.*8
-       re,4 r re4:32 re4 r2 |
-       re8 re re re re4:32 re4 r2 |
-       re8 re re re re4:32 re4 r2 |
-       mib4 r2 R2.*4
-       mi32 mi8.. r2 mi4 r2 |
-       r8 sib32 sib16. r8 mi r sib |
-       mi8 \t {mi16 mi mi} mi4 r |
-       r8 sib4 mi sib8 | mi4 mi32 mi8.. sib8 mi |
-       R2. re2.:32\glissando |
-       dod4 r r r8 r16 sol32 sol | sol4 r2 |
-       dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod4 r |
-       r8 sol4 dod sol8 | dod8 \t {dod16 dod dod} dod4 |
-       r8 sol4 dod sol8 | \tt {dod16 dod dod dod dod} dod4 |
-       r8 dod r2 | r8 dod4 sol8 | dod \t {dod16 dod dod} dod4 r |
-
-       %%% Placando assai %%%
-       dod2 r4 dod | sol2:32~ sol4 r |
-       dod2 r4 dod | sol2:32~ sol4 r |
-       R1 R2 R2. R1
-
-       %%% Andante a piacere %%%
-       fa1:32~ fa2 dod' |
-       fa,1:32~fa2 dod' |
-       fa,1:32~fa2 dod' | fa, r r dod' |
-       sol2~sol2:32~sol8 dod4 sol dod8 |
-       sol2~sol2:32~sol8 \t {dod16 dod dod} dod8 sol~sol16. sol32 sol8 |
-       dod8 r r4 r2 |
-       sol1:32~sol:~sol2.:32~sol4 |
-       r8 sol \t {sol sol sol} sol2:32~sol1:32~sol2 r |
-       R2*3 R2.*6
-
-       %%% A tempo %%%
-       r16 do32 do do8 r8 fad,4 do' fad,8 |
-       r16 do'32 do do8 r4 \tt {r16 do do fad, do'} \t {fad,8 do' fad,} |
-       do'8 \t {do16 do do} do4 r2 |
-       R1 R2. R1 R2. R1 R2. R1
-
-       r2 fad,4:32\glissando sol4 r r2 |
-       sol32 sol8.. r4 r8 \t {dod16 dod dod} dod4 |
-       \t {sol16 sol sol} sol8\laissezVibrer r2 |
-       sol4 sol2:32\glissando fa4 r2 |
-       fa4 r8 r16 fa fa4 r |
-       fa r r dod'4:32\glissando re4 r2 |
-       r16 r32 re re4 |
-       sold,8 \t {sold16 sold sold} sold4 r8 sold |
-       r4 sold32 sold16. | re'32 re re8. r4 |
-       r16 r32 re re4 |
-       la8 la32 la16. r4 | R2
-       mib'4 mib r4 r8 |
-       si4 r R2 |
-       r8 r16 fa32 fa fa4 | R4. 
-       fa4 fa8 fa \t {fa fa fa} \tt {fa16 fa fa fa fa} |
-       R2 R4.
-       re'2.:32 re4 r8 r16 re32 re re4 r |
-       re16 re re8 r4 re r r re re re |
-       re8 re16 re re4 re re8 \t {re16 re re} |
-       re4 r r re8 re16 re re4 r r re8 re16 re |
-       re4 r r re re r r re re r r2 | R1*3
-       R2  R2.*2 R2 R1
-       R2.*21
-       R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
-       R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
-     }
-   }
-  >>
-}
 
 EntractePercus = {
 }
 
-ActeDeuxSceneUnPercus = { <<
+ActeDeuxSceneUnPercus = <<
   \new Staff \relative {\Vibraphone 
     R2.*4 R2 R2.*2 R2
     mi,8\sustainOn do' sol' mib' lab si\laissezVibrer R2.*2
@@ -651,14 +655,14 @@ ActeDeuxSceneUnPercus = { <<
       lab2*3/2\laissezVibrer <sol, sol'>2\laissezVibrer r | R2. R1
       R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1
     }
-  >>
-}
+>>
+
 
 ActeDeuxSceneUnBisPercus = { \Percus
   
 }
 
-ActeDeuxSceneDeuxPercus = { <<
+ActeDeuxSceneDeuxPercus = <<
   \new Staff { \Marimba
     \relative {
       sold'4 <mi sold> <fa la> r r2 |
@@ -696,30 +700,30 @@ ActeDeuxSceneDeuxPercus = { <<
       sib8 sol fa mi fa16 mi fa sol la8 mi8*3 } r4 | R2.*2
     }
   }
- \new DrumStaff { \Percus
-   \drummode {
-     R1.*6 R1*2 R2.*5 r1 \ind #"Crécelle" hh2:32~ hh4 r r1 R1. R1*2
-     R2. R1 R4.
-     R1*5 r4 \ind #"Crécelle" hh2.:32 R2. R1. R1*2
-     R2.*3 R2 R2.*3 R2 R4. R1*5 R2*6 R1
-     r4 \ind #"Crécelle" hh2:32 R1. R1 R1.*2 R2.
-     r2 hh4:32 hh4 |
-     
-     R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
-     R2. R1 R2. R1 R2. R1 R2.
-     
-     R2*2 R2 R2. R1*3
-     r4 \ind #"Tambour" sn8 sn sn sn4 r8 sn sn |
-     sn4 sn8 sn sn sn4 r8 sn sn | sn4 sn8 sn16 sn sn sn |
-     sn4 sn r16 sn32 sn | sn4 r r8 |
-     sn4 r8 sn sn | sn4 sn8 sn sn | sn4 sn r16 sn32 sn | sn4 r r8 |
-     sn sn sn4 r8 | r sn sn sn sn | sn4 r r8 |
-     R1 r2 r4 r8 \t {sn16 sn sn} | sn4 r r2 |
-     R1*6 R2. R2 R1*2 R2.*7
-     
-     R2*2 R2.*2 R2*25 R2.*16
-   }
- }
+  \new DrumStaff { \Percus
+    \drummode {
+      R1.*6 R1*2 R2.*5 r1 \ind #"Crécelle" hh2:32~ hh4 r r1 R1. R1*2
+      R2. R1 R4.
+      R1*5 r4 \ind #"Crécelle" hh2.:32 R2. R1. R1*2
+      R2.*3 R2 R2.*3 R2 R4. R1*5 R2*6 R1
+      r4 \ind #"Crécelle" hh2:32 R1. R1 R1.*2 R2.
+      r2 hh4:32 hh4 |
+      
+      R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
+      R2. R1 R2. R1 R2. R1 R2.
+      
+      R2*2 R2 R2. R1*3
+      r4 \ind #"Tambour" sn8 sn sn sn4 r8 sn sn |
+      sn4 sn8 sn sn sn4 r8 sn sn | sn4 sn8 sn16 sn sn sn |
+      sn4 sn r16 sn32 sn | sn4 r r8 |
+      sn4 r8 sn sn | sn4 sn8 sn sn | sn4 sn r16 sn32 sn | sn4 r r8 |
+      sn sn sn4 r8 | r sn sn sn sn | sn4 r r8 |
+      R1 r2 r4 r8 \t {sn16 sn sn} | sn4 r r2 |
+      R1*6 R2. R2 R1*2 R2.*7
+      
+      R2*2 R2.*2 R2*25 R2.*16
+    }
+  }
   \new Staff { \Timbales
     \relative {
       R1.*6 R1*2 r2 r8 r16 re,32 re |
@@ -763,5 +767,5 @@ ActeDeuxSceneDeuxPercus = { <<
       R2*2 R2.*2 R2*25 R2.*16
     }
   }
- >>
-}
+>>
+

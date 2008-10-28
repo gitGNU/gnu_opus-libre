@@ -18,7 +18,7 @@ PrologueViolonUn = { \ViolonUn
     %%% Introduction %%%
     
     \partial 4 r4 R2. si'''?2.~ si2.~ 
-    \repeat tremolo 8 si16~ \repeat tremolo 8 si32~ si8 r 
+    si2:16~ si4:32~ si8 r 
     mi,,,2~| mi4 r | mi2.~| mi4 r | fa2 mi2.~| mi4 r R2 |
     <sib mi>2.~| <la mi>4 r | R2 <do mi>2.~| 
     <do mi>4 mi8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |
