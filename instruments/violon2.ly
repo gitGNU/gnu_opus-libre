@@ -115,7 +115,7 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
     r4 r8 re4. |  si2.~| si1~| si2 r4 |
     R2.| r4 r8 <re sib'>4 <si! sol'>8~|<si sol'>2.~|
     <si sol'>8 <si sol'>~ \t {<si sol'> <si sol'> <si sol'>} 
-    \repeat tremolo 8 si32 |
+    si4:32 |
     si8 r r2 | R2 |R2.| R1*2 | R2.*5 | R1 |
     
     %%% Duo %%%

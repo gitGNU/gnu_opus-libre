@@ -19,7 +19,7 @@ PrologueFluteDeux = { \FluteDeux
     
     \partial 4 r4 \pitchedTrill la'''2.~\startTrillSpan si
     la2.~ la~ la2~\stopTrillSpan la4~ la8 r | 
-    mi,,2~mi4 r | mi4~ \repeat tremolo 8 mi32 ~ mi8 r |
+    mi,,2~mi4 r | mi4~ mi4:32 ~ mi8 r |
     mi2~ mi mi2.~ mi4 r |
     R2 | re2.~ | re4 r |
     R2 | red2.~| mi4 r |

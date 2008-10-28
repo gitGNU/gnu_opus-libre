@@ -129,12 +129,7 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     
     %%% Piu vivo %%%
     <sol, sol'>2.~ <sol sol'>1
-    \repeat tremolo 4 sol16
-    \repeat tremolo 4 lab16
-    \repeat tremolo 4 sib16
-    \repeat tremolo 4 reb16
-    \repeat tremolo 4 mi16
-    \repeat tremolo 4 fad16
+    sol4:16 lab: sib: reb: mi: fad:
     <sol,sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
     dod2 r4 |
     <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |

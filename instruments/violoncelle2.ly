@@ -31,7 +31,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
 
 ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
   \relative {
-    \repeat tremolo 24 dod,,32
+    dod,,8:32
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
@@ -101,7 +101,7 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     %%% Récitatif %%%
     
     R2.*2 R1| R2.*3 | R1 R2.*2 r4 r8 mib,4 lab,8~| lab2.~|
-    lab8 lab~ \t {lab lab lab} \repeat tremolo 8 lab32 |
+    lab8 lab~ \t {lab lab lab} lab4:32 |
     lab8 r r2 | R2 R2. R1*2 | R2.*4 re,2.~ re2. r4 |
     
     %%% Duo %%%

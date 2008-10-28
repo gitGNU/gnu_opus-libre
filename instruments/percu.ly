@@ -50,7 +50,7 @@ ProloguePercus = <<
   \new DrumStaff { \Percus 
     \new  DrumVoice \drummode {
       \partial 4 r4 R2.*3 R1
-      \ind #"Gong" cb2-\markup "Gong" \laissezVibrer | R2 |
+      \ind #"Gong" cb2 \laissezVibrer | R2 |
     }
   }
   \new Staff { \Timbales

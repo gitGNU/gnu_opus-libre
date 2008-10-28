@@ -116,7 +116,7 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
     r4 r8 sib4. | sol2.~|sol1~|sol2 r4 |
     r4 r8 sib4. | sol2.~|sol1~|sol2 r4 |
     R2. | r4 r8 sib4 sol8~| sol2.~| sol8 sol~ \t {sol sol sol} 
-    \repeat tremolo 8 sol32 |
+    sol4:32 |
     sol8 r r2 | R2 | r4 r8 sol4. | 
     mi?1~ mi~ | mi2.~ mi~ mi~ mi2 r4 | R2. R1 |
     

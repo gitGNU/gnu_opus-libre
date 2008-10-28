@@ -19,13 +19,11 @@ PrologueAltoDeux = { \AltoDeux
     %%% Introduction %%%
     
     \partial 4 r4 R2.*3 R1 
-    mi,2~| mi4 r | r16 \repeat tremolo 6 { \ind #"sul ponti." red32}
+    mi,2~| mi4 r | r16 \ind #"sul ponti." red8.:32
     red8 r r4 |
     red'2~ \startTrillSpan red4 \stopTrillSpan r |
     \ind #"pos.nat" mi,2.~ mi2~ mi |
-    \repeat tremolo 24 mi32
-    \repeat tremolo 16 mi32 
-    \repeat tremolo 16 mi32
+    mi2.:32 mi2:32 mi2:32
     dod2. | <do! sol'>4 <do sol'>~| <do sol'>8 sol' \t {sol sol fa}| 
     \repeat unfold 28 mi16 | mi4. r8 sid sid |
     r sid sid r | r sid sid r sid r |
@@ -114,8 +112,7 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
     
     R2.*2 R1 R2.*3 R1 R2.*2 |
     r4 r8 sol4 mi8~| mi2.~| mi8 mi~ \t {mi mi mi} 
-    \repeat tremolo 8 mi32 |
-    mi8 r r2 | R2| r4 r8 la4. |
+    mi4:32 | mi8 r r2 | R2| r4 r8 la4. |
     mib1~ mib~ | mib2.~ mib~ mib~ mib2 r4 | R2. R1 |
     
     %%% Duo %%%
@@ -157,9 +154,7 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
     dod4 r2 |
     
     %%% Poco allargando %%%
-    \repeat tremolo 16 <sib' re>16 
-    \repeat tremolo 8  <sib  re>
-    \repeat tremolo 8  <si   re>
+    <sib' re>1:16 <sib re>2:16 <si re>:
     R1
     
     %%% Tempo giusto %%%

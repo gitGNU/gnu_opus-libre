@@ -27,7 +27,7 @@ PrologueFluteUn = { \FluteUn
     
     \partial 4 r8 
     \tt {mi'32 fa si mi fa} sib2.~ sib~ sib~ sib2~ sib4~ sib8 r
-    mi,,,2~mi4 r | mi4~ \repeat tremolo 8 mi32 ~ mi8 r |
+    mi,,,2~mi4 r | mi4~ mi4:32 ~ mi8 r |
     fa2~ fa mi2.~ mi4 r |
     r mi~| mi2.~ | mi4 r |
     r mi~| mi2.~ | mi4 r |

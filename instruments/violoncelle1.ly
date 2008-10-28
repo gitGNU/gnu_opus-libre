@@ -20,7 +20,7 @@ PrologueVioloncelleUn = { \VioloncelleUn
     
     \partial 4 r4 R2.*2 \clef treble si''?2.\upbow ~ si1\glissando 
     mi,,2\downbow \clef bass |r8 mi,, \t {mi mi mi} mi2. | 
-    r4 \repeat tremolo 8 red''32 ~ red8 r
+    r4 red''4:32 ~ red8 r
     \t {mi,,8 mi mi} mi'2.~mi2~mi~mi2.~mi2~mi~ <mi la>2.~<mi la>4 
     <mi la>~<mi la>8 la \t {la si re}|
     la'2 r4 dod,,,16 dod dod re re re mi mi | 
@@ -107,7 +107,7 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     r4 r8 mi,4.| dod2.~|dod1~|dod2 r4| 
     r r8 reb4. | sib2.~|sib1~|sib2 r4|
     R2.| r4 r8 mib4 lab,8~| lab2.~|
-    lab8 lab~ \t {lab lab lab} \repeat tremolo 8 lab32 |
+    lab8 lab~ \t {lab lab lab} lab4:32 |
     lab8 r r2| R2| r4 r8 reb4.| 
     sol,1~ sol~ sol2.~ sol~ sol~ sol2 r4 | sib2.~| sib r4|
     
@@ -403,7 +403,7 @@ ActeDeuxSceneUnVioloncelleUn = { \VioloncelleUn
   \relative { \clef treble
     \pizz la'4 r r | la r8 la r4 | la la la | 
     la r2 | R2 | R2.*2 | R2 |
-    \clef tenor r4 << \arco s2 \\ \repeat "tremolo" 4 { si,16 re16 } >>
+    \clef tenor r4 << \arco s2 \\ \repeat tremolo 4 { si,16 re16 } >>
     \repeat tremolo 6 { si16 re16 } | 
     \repeat tremolo 6 { si16 re16 } | sold,4 r |
     R2. R2 R2.*2 R2 | 

@@ -691,6 +691,7 @@ ActeUnSceneUnMainGauche = {
     << {do4 do~ do2. }\\ { do,2 <fad, fad'>2~ <fad fad'>8 <fad fad'>}>>|
     
     %FIXME: grace synchronization problems
+    %FIXME: Issue #523
     << { % \voiceTwo 
       \grace fa!16  <fa' do'>1 }%\repeat tremolo 16 {fa'!32 do'} } 
     \\ { %\voiceOne 
@@ -698,7 +699,7 @@ ActeUnSceneUnMainGauche = {
         r4  \t {do'8   do do} do2 } >> <fa, do'>4 <fa do'>2 |
     << { \voiceTwo \grace {fa,32[ fa']} fa,1 } 
     \\ { \voiceOne r4 \t {do''8 do do} do2 } >> <fa, do'>2 <fa do'>4 |
-    << { \voiceTwo \grace reb,8 \repeat tremolo 32 <reb' lab'>32  }
+    << { \voiceTwo \grace reb,8 <reb' lab'>1:32  }
     \\ { \voiceOne r4 \t {do'8  do do} do2 } >> <reb, lab'>4 <reb lab'>2|
     <reb lab'>1 | <reb lab'>2 <reb lab'>4 |
     \t {<do sol'>8 mi' sib' } \t { reb sib mi,}
@@ -2740,29 +2741,22 @@ ActeDeuxSceneDeuxMainDroite = {
     la4 sol fa mi fa8 mi fa sol
     \pl <sib, re>1.\arpeggio {la'4 sol fa mi fa8 mi fa sol}
     \pl <si, dod>2 {la'4 mi} r | <dod fa la> <do mi> r2 |
-    \repeat tremolo 24 la'32 \pl {r8 sol~ sol2. fa2. r8 mi~ mi2. fa4 mi fa sol la2.} {
-    \repeat tremolo 32 la32
-    \repeat tremolo 24 la32
-    \repeat tremolo 32 la32
-    \repeat tremolo 24 la32
-    \repeat tremolo 32 la32 }
-    \repeat tremolo 24 la32 \pl {fa4 mi fa sol}
-    \repeat tremolo 32 la32
+    la'2:32 \pl {r8 sol~ sol2. fa2. r8 mi~ mi2. fa4 mi fa sol la2.} {
+    la1:32 la2.:32 la1:32 la1.:32 la1:32 }
+    la2.:32 \pl {fa4 mi fa sol} la1:32
     \repeat tremolo 12 {sib, la'} \pl { \stemDown
     \repeat tremolo 8  {sib, mi}
     \repeat tremolo 8  {sib  mi}} la1
     \repeat tremolo 4  {sib,32 la'}
     \repeat tremolo 4  {do, la'}
     \repeat tremolo 4  {re, la'} \pl {mib2 mi8 red mi fad}
-    \repeat tremolo 32 la32
+    la1:32
     \repeat tremolo 12 {sold la}
     \repeat tremolo 16 {sold la}
-    \repeat tremolo 24 la32
-    \repeat tremolo 32 la32 \pl { r4 sol2\laissezVibrer}
-    \repeat tremolo 24 la32 \pl {r2 fa4 mi}
-    \repeat tremolo 32 la32 \pl {fa4 sol}
-    \repeat tremolo 24 la32 
-    \repeat tremolo 24 la32
+    la2.:32 la1:32 \pl { r4 sol2\laissezVibrer}
+    la2.:32 \pl {r2 fa4 mi}
+    la1:32 \pl {fa4 sol}
+    la2.:32 la2.:32
     \pl {fa8 mi fa sol fa16 mi fa sol fa mi fa sol}
     {la4 la la la}
     
@@ -2951,12 +2945,7 @@ ActeDeuxSceneDeuxMainGauche = {
     <re sib' re> <sol' si>16 <sol si> <fad lad>8 r R2*2
     <re,sib'>8 r r4 | <dod fa>8 r r4 | mib8 r r4 | R2
     
-    \repeat tremolo 24 la'32
-    \repeat tremolo 24 la32
-    \repeat tremolo 24 la32
-    \repeat tremolo 24 la32
-    \repeat tremolo 24 la32
-    \repeat tremolo 24 la32
+    la'2.:32 la: la: la: la: la:
     la2 r4 \clef treble
     \pl {<fa' do'>2. <fa do'>2}
     {la'8 sol fa mi fa16 mi fa sol la8 mi} r4 |
@@ -3360,19 +3349,13 @@ ActeDeuxSceneTroisMainDroite = {
     \repeat unfold 18 { sold mi}
     \repeat unfold 30 { sol mi }
     \repeat unfold 144 mi
-    \repeat tremolo 12 mi
-    \repeat tremolo 12 mi
-    \repeat tremolo 4 mi
-    \pl {
-    \repeat tremolo 4 mi} mi'4
+    mi2.:16 mi: mi4:16
+    \pl { mi4:16 } mi'4
     <mi, mi'>8 <mi mi'> |
-    \pl {
-    \repeat tremolo 12 mi16} mi'2.\laissezVibrer
-    \pl {
-    \repeat tremolo 4 mi,16} mi'4
+    \pl { mi2.:16} mi'2.\laissezVibrer
+    \pl { mi,4:16} mi'4
     <mi, mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
-    \pl {  
-    \repeat tremolo 8 mi16 \t {la8 sol <do re>} } mi2.\laissezVibrer
+    \pl { mi2:16 \t {la8 sol <do re>} } mi2.\laissezVibrer
     \tt { sib16 <red fad> si' la re} \ottava #1
     \ttt{ do16 <red, red'> sold' fad si la}
     <mi la red mi>4 \ottava #0
@@ -3628,7 +3611,7 @@ ActeDeuxSceneTroisMainGauche = {
     mib2.
     \pl mi,,2.\laissezVibrer { \t {r8 mi' si' } 
     \t { la mi' re} s4 }  |
-    \repeat tremolo 8 mi,16 <mi, mi'>4 |
+    mi,2:16 <mi, mi'>4 |
     <mi mi'>8 <mi mi'>
     \t { <mi mi'> <mi mi'> <mi mi'>}
     \tt{ <mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}

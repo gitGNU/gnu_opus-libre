@@ -21,12 +21,9 @@ PrologueAltoUn = { \AltoUn
     \partial 4 r4 R2.*3 R1
     mi,2~| mi4 r | r16 mi8.~ mi8 r r4 |
     red'2~|red4 r| 
-    \repeat tremolo 24 mi,32 
-    \repeat tremolo 16 mi32 
-    \repeat tremolo 16 mi32
+    mi,2.:32 mi2:32 mi2:32
     red2. | re!2~|re |
-    \repeat tremolo 24 mi32
-    mi4 <si' re>~| <si re>8 si \t {si si si}
+    mi2.:32 mi4 <si' re>~| <si re>8 si \t {si si si}
     \repeat unfold 28 la16
     si4. r8 dod, dod |
     r8 dod dod r | r dod dod r dod r |
@@ -129,8 +126,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
     r4 r8 reb4.| sib2.~ |sib1~ |sib2 r4 |
     r4 r8 si!4.| sold2.~|sold1~|sold2 r4|
     R2.| r4 r8 si4 do8~ |do2.~ |do8 do~ \t {do do do} 
-    \repeat tremolo 8 do32 |
-    do8 r r2 | R2| r4 r8 si4. |
+    do4:32 | do8 r r2 | R2| r4 r8 si4. |
     fad1~|fad~|fad2.~|fad~|fad~|fad2 r4| R2. R1 |
     
     %%% Duo %%%
@@ -172,7 +168,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
     dod4 r2 |
     
     %%% Poco allargando %%%
-    \repeat tremolo 12 <re' sib'>16 la'4~ | la4. <si re>8~ <si re>2|
+    <re' sib'>2.:16 la'4~ | la4. <si re>8~ <si re>2|
     R1
     
     %%% Tempo giusto %%%
