@@ -26,6 +26,8 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     %%% Introduction %%%
     
     \partial 4 r4 R2.*3 R1
+    mi,,2~ mi4 r | mi4~ \tt {mi32 fa mi mi' fa} mi'8~ mi4~ |
+    mi2~ mi4 r | mi,,2 r4 |
   }
 }
 

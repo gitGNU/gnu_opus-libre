@@ -56,7 +56,8 @@ ProloguePercus = <<
   \new Staff { \Timbales
     \relative{
       \partial 4 r4 R2.*3 | R1 | r8 mi,, \t {mi mi mi} |
-      mi4 \tt {mi16 mi mi mi mi} |    
+      mi4 \tt {mi16 mi mi mi mi} | mi2.:32\< mi2:32\sfz \> mi4\! r |
+      R2.
     }
   }
 >>
@@ -95,23 +96,16 @@ ActeUnSceneUnBisPercus = <<
   }
   \new Staff { \Timbales
     \relative {
-      %FIXME: stupid, stupid, stupid... use short notation!
-      \repeat tremolo 24 dod,32
-      \repeat tremolo 24 dod32
-      \repeat tremolo 24 dod32
-      \repeat tremolo 24 dod32
-      \repeat tremolo 24 dod32
-      \repeat tremolo 16 dod32 dod8 r |
+      dod,2.:32 dod: dod: dod: dod: dod2:32~ dod8 r |
       r re4 re8 \t { re re sold,} |
       
       %%% Piu vivo %%%
-      re'4 r r2 | \repeat tremolo 24 sold,32 |
-      re'4 r r2 | \repeat tremolo 24 sold,32 |
+      re'4 r r2 | sold,2:32 | re'4 r r2 | sold,2:32 |
       <sol re'>4 r8 \t {sol16 sol sol} sol4  |
       r sol32 sol8.. r4 | \t {sol16 sol sol~} sol8 r4 reb' |
       sol, r2 |
-      sol8  reb'~reb4~ \repeat tremolo 8 reb32 reb4\laissezVibrer r2 R2.-\fermataMarkup
-      sol,8 reb'~reb4~ \repeat tremolo 8 reb32 reb4\laissezVibrer r2 R1-\fermataMarkup 
+      sol8  reb'~reb4~ reb4:32 reb4\laissezVibrer r2 R2.-\fermataMarkup
+      sol,8 reb'~reb4~ reb4:32 reb4\laissezVibrer r2 R1-\fermataMarkup 
       R1 R2
       
       %%% Largo %%%
@@ -145,7 +139,7 @@ ActeUnSceneDeuxPercus = {\Marimba
   <do'' sol'>4 si8 sol fa8 sol,,16 re' <do'' sol'>4 | 
   si8 sol fa8 sol,,16 re' <do'' sol'>8 do, <si si'> <sol sol'> |
   <fa fa'>4 r2 R2. | R1*2 R2.*2 R1*2 | R2.*2 R1*2 |
-  \clef bass dod,,4 fad2\laissezVibrer | R2. | \repeat tremolo 32 sold,32\laissezVibrer |
+  \clef bass dod,,4 fad2\laissezVibrer | R2. | sold,1:32\laissezVibrer |
     %%% Vibraphone %%%
   R1 R2.*2-\markup "Allez au Vibraphone" \Vibraphone |
   <re'' la'>1\laissezVibrer  r2 r4 <re la'>\laissezVibrer | R2.*2 |

@@ -901,7 +901,7 @@ ActeDeuxSceneDeux = {
     poet = \OperaLivret
     composer = \OperaPartition
     tagline = \OperaNotice
-  } %}
+  } %
   \score {
     \Prologue
     \header {
