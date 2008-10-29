@@ -12,7 +12,8 @@ PrologueMesures = {
   
   \time 3/4
       \mark \markup \init-did \PrologueAAA
-  \partial 4 s4 R2.*3
+  \partial 4 s4
+            R2.*3
   \time 4/4 R1    \bar "||"
   \time 2/4
       \tempo "Largo" 4 = 48
@@ -48,11 +49,9 @@ PrologueMesures = {
   \time 3/4 R2.
   \time 2/4
       \mark \markup \did \PrologueE
-            r2 %FIXME: replace with MmRest?
-      \startTxt #"rit."
-            R2
-  \time 3/4 R2.
-      \stopTxt    \bar "||"
+             R2*2\rit
+  \time 3/4 R2.\stopText
+                  \bar "||"
   \time 2/4
       \mark \markup \did \PrologueF
       \tempo "Tempo giusto"
@@ -87,8 +86,7 @@ PrologueMesures = {
             R4.   \bar"||"
       \tempo "Andantino" 4. = 56
             R4.*25
-            %FIXME: doesn't work.
-      \startTxt #"Poco a poco allargando..."
+      \startText #"Poco a poco allargando..."
             R4.*9
             r8
       \mark \markup \did \PrologueL
@@ -330,14 +328,13 @@ ActeUnSceneUnBisMesures = {
             R2.*5
       \mark \markup \did \ActeUnSceneUnBisB
             R2.
-      \startTxt #"molto rit."
-            R2. 
-            R2.
+      \startText #"molto rit."
+            R2.*2
       \stopTxt
       \mark \markup \did \ActeUnSceneUnBisC
       \tempo "A Tempo"
             R2.
-      \startTxt #"molto rit."
+      \startText #"molto rit."
             R2.
   \time 4/4
       \stopTxt
@@ -983,7 +980,7 @@ ActeDeuxSceneUnBisMesures = {
       \mark \markup \did \ActeDeuxSceneUnBisF
             R1*5/4*16
       \mark \markup \did \ActeDeuxSceneUnBisG
-      \startTxt #"molto rit."
+      \startText #"molto rit."
             r1*5/4 %FIXME
             R1*5/4
             r1

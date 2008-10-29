@@ -42,7 +42,7 @@ Timbales = {
 ProloguePercus = << 
   \new Staff { \Marimba
     \relative {
-      mi''4 r r8 mi r4 | r8 mi r4 r16 mi8. | 
+      \ind #"bag. dures" mi''4 r r8 mi r4 | r8 mi r4 r16 mi8. | 
       mi8 mi \t { mi mi mi } \tt {mi16 mi mi mi mi} | mi4 r2. |
       R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2.
     }
@@ -50,7 +50,7 @@ ProloguePercus = <<
   \new DrumStaff { \Percus 
     \new  DrumVoice \drummode {
       \partial 4 r4 R2.*3 R1
-      \ind #"Gong" cb2 \laissezVibrer | R2 |
+      \ind #"Tam-tam" cb2 \laissezVibrer | R2 |
     }
   }
   \new Staff { \Timbales
@@ -80,7 +80,7 @@ ActeUnSceneUnBisPercus = <<
     \new DrumVoice \drummode {
       R2.*7 R1 R2. R1 R2.*10 R1*2 R2
       R2*3 R2. R2 R2. R2 R2.*2
-      r2 r4 \ind #"Tambour" sn |
+      r2 r4 \ind #"Tambour" \ind #"(bag. fagot)"  sn |
       sn32 sn8.. r4 r8.. sn32 sn8.. sn32 |
       sn4 r2 R2 R1
       R2.*2 R2*2
@@ -158,7 +158,7 @@ ActeUnSceneDeuxPercus = {\Marimba
 ActeUnSceneTroisPercus = <<
   \new DrumStaff { \Percus
     \new DrumVoice \drummode {
-      \ind #"Tambour" sn2.:32~sn8 \t {sn16 sn sn} sn2:32~ sn2.:
+      \ind #"Tambour" \ind #"(bag. fagot)" sn2.:32~sn8 \t {sn16 sn sn} sn2:32~ sn2.:
       sn8 \t {sn16 sn sn} sn8 \t{sn16 sn sn} sn4:32 sn8 sn4 sn8 sn4 |
       sn8 \t {sn16 sn sn} sn8 sn4 sn8 sn2.:32 R2.*4 |
       sn4:32 sn4 r |
@@ -427,7 +427,7 @@ ActeUnSceneQuatrePercus = <<
       %%% Piu lento %%%
       R2.*21
       R1. r2 hh4:32 r4 | R1. r4 hh2:32 hh4 | R1.
-      r4 r8 r16 \ind #"Tambour" sn sn4 r |
+      r4 r8 r16 \ind #"Tambour" \ind #"(bag. fagot)" sn sn4 r |
       R1. R1 R1. R1 sn4 r r2 r4 r8 sn16 sn |
       sn4 r r2 r4 r8 \t {sn16 sn sn} |
       sn4 r r2 r8 sn16 sn sn8 sn |
@@ -707,7 +707,7 @@ ActeDeuxSceneDeuxPercus = <<
       R2. R1 R2. R1 R2. R1 R2.
       
       R2*2 R2 R2. R1*3
-      r4 \ind #"Tambour" sn8 sn sn sn4 r8 sn sn |
+      r4 \ind #"Tambour" \ind #"(bag. fagot)"  sn8 sn sn sn4 r8 sn sn |
       sn4 sn8 sn sn sn4 r8 sn sn | sn4 sn8 sn16 sn sn sn |
       sn4 sn r16 sn32 sn | sn4 r r8 |
       sn4 r8 sn sn | sn4 sn8 sn sn | sn4 sn r16 sn32 sn | sn4 r r8 |

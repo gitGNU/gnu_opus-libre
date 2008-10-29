@@ -425,6 +425,8 @@ meno =
                        (list (make-music 'TextSpanEvent
                          'span-direction t))))
                          music)
+
+%% The two following functions are deprecated. Better code follows below.
 startTxt =
 #(define-music-function (parser location texte music ) (string? ly:music?)
 #{ \override TextSpanner #'bound-details #'left #'text = 
@@ -432,9 +434,35 @@ startTxt =
                 $(make-text-span music -1)#})
 
 stopTxt =
-#(define-music-function (parser location music ) (ly:music?)
+#(define-music-function (parser location) ()
      (make-text-span music 1))
-              
+
+#(define (make-text-span txt)
+"Make a TextSpanner that begins with the given STR."
+  (let* ((m (make-music 'TextSpanEvent
+             'span-direction -1))
+         (details (cdr (assoc 'bound-details
+                        (cdr (assoc 'TextSpanner
+                              all-grob-descriptions)))))
+         (left-details (cdr (assoc 'left
+                             details))))
+   (ly:music-set-property! m 'tweaks
+    (acons 'bound-details
+     (acons 'left
+      (acons 'text txt
+       left-details)
+      details)
+     (ly:music-property m 'tweaks)))
+   m))
+
+startText=
+#(define-music-function (location parser txt) (string?)
+(make-text-span txt))
+
+stopText= #(make-music 'TextSpanEvent 'span-direction 1)
+
+rit = #(make-text-span "rit.")
+
 %% Tempo indications ----------------------------------------------%
 #(define-markup-command (mvt layout props arg) (markup?)
     (interpret-markup layout props
