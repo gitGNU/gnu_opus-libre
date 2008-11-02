@@ -20,8 +20,8 @@ PrologueViolonTrois = { \ViolonTrois
     \partial 4 r4 R2.  la'''2.~ la2.~ 
     la2:16~ la4:32~ la8 r 
     mi,,2~| mi4 r | mi2.~| mi4 r | mi2 mi2.~| mi4 r R2 |
-    <sol,? re'>2.~| <sol re>4 r | R2 sib2.~|
-    si!4 mi'8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |
+    <sol,? re'>2.~| <sol re'>4 r | R2 sib2.~|
+    si!4 mi8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |
     
     %%% Entrée du baryton 2 %%%
     re2 r4 | re16 re re re re re re re
@@ -60,7 +60,7 @@ PrologueViolonTrois = { \ViolonTrois
     r4 lab,8 sol r4 | R4.*12
     \arco fa'16 la sib dod fa8 |
     <mi sol>4.~ <mi sol>~ <mi sol>~ <mi sol>8 r lab,16 sib |
-    reb mi8 <fad si>8.~ | <fad si>4.~ <fad si>~ <fad si>8 r r16 red, |
+    reb mi8 <fad si>8.~ | <fad si>4.~ <fad si>~ <fad si>8 r r16 red |
     mi8 <fad la>4~ <fad la>4.~ <fad la> r16 sold, si mi sol la |
     
     %%% A tempo %%%
@@ -87,8 +87,8 @@ PrologueViolonTrois = { \ViolonTrois
     
     %%% Adagio %%%
     %% FIXME: Issue #318
-    R1*4 R1. \repeat tremolo 16 {\stemDown \ind #"flaut." mi32 fa \stemNeutral} mi4 r |
-    R1*3 R1. \repeat tremolo 16 {\ind #"flaut." mi32 red} mi4 r |
+    R1*4 R1. \stemDown \repeat tremolo 16 {\ind #"flaut." mi32 fa} \stemNeutral mi4 r |
+    R1*3 R1. \repeat tremolo 16 {\simile mi32 red} mi4 r |
     R1*2 mi4. si'8 la re |
     
     %%% Valse %%%

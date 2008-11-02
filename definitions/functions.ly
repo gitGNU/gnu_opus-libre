@@ -6,6 +6,9 @@
 %------------------------------------------------------------------%
 
 
+% Various additional functions.
+% TODO: split and rearrange.
+
 %%%%%%%%%%%%%%%%%%%%%%%%% Music Shortcuts %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Rhythm shortcuts -----------------------------------------------%
@@ -283,11 +286,32 @@ unsk = \set Score.skipTypesetting = ##f
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+#(define-markup-command (vspace layout props amount) (number?)
+  (let ((amount (* amount 3.0)))
+    (if (> amount 0)
+        (ly:make-stencil "" (cons -1 1) (cons 0 amount))
+        (ly:make-stencil "" (cons -1 1) (cons amount amount)))))
+
+#(define-public (rounded-whiteout-stencil stencil blot)
+  (let*
+      ((x-ext (ly:stencil-extent stencil X))
+       (y-ext (ly:stencil-extent stencil Y)))
+    (ly:stencil-add
+     (stencil-with-color (ly:round-filled-box x-ext y-ext blot)
+			 white)
+     stencil)))
+
+#(define-markup-command (rounded-whiteout layout props radius arg)
+                        (number? markup?)
+  (rounded-whiteout-stencil (interpret-markup layout props arg) radius))
+
+
 %% Expressive indications -----------------------------------------%
 
 #(define-markup-command (indic layout props arg) (markup?)
     (interpret-markup layout props
-    (markup #:whiteout #:small #:italic arg)))
+    (markup #:rounded-whiteout 1 #:small #:italic arg)))
 
 % because of the use of a music-function,
 % non-predefined composite dynamics have to be entered *before*
@@ -520,8 +544,3 @@ long = {
     #:override '(corner-radius . 2)
     #:rounded-box #:sans #:italic #:small #:justify-string  text))))
 
-#(define-markup-command (vspace layout props amount) (number?)
-  (let ((amount (* amount 3.0)))
-    (if (> amount 0)
-        (ly:make-stencil "" (cons -1 1) (cons 0 amount))
-        (ly:make-stencil "" (cons -1 1) (cons amount amount)))))

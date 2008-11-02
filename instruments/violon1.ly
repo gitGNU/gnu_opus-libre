@@ -93,7 +93,7 @@ PrologueViolonUn = { \ViolonUn
     R1*2 R2.
     
     %%% Valse %%%
-    <si la'>2.~ <si la>4 r2 | R2.
+    <si la'>2.~ <si la'>4 r2 | R2.
     \pizz sol,4 si' red | dod, dod' r |
     sol, sol' si r lab r sol sol, r2 |
     \ttt {\arco re''16 mib re mib re mib}

@@ -7,7 +7,7 @@
 
 \include "italiano.ly"
 
-AltoUn ={
+AltoUn = {
   \set Staff.instrumentName = \markup { \hcenter-in #25 "Alto 1  "}
   \set Staff.shortInstrumentName = "Alt. 1  "
   \set Staff.midiInstrument = "viola"
@@ -15,20 +15,123 @@ AltoUn ={
 }
 
 PrologueAltoUn = { \AltoUn
-  \relative { 
-    %%% Introduction %%%
+  \relative {
     
+    %%% Introduction %%%
     \partial 4 r4 R2.*3 R1
     mi,2~| mi4 r | r16 mi8.~ mi8 r r4 |
     red'2~|red4 r| 
-    mi,2.:32 mi2:32 mi2:32
+    mi,2.:32~ mi2:32~ mi2:32
     red2. | re!2~|re |
-    mi2.:32 mi4 <si' re>~| <si re>8 si \t {si si si}
-    \repeat unfold 28 la16
+    mi2.:32 mi4 <si' re>~| <si re>8 si \t {si si si} |
+    
+    %%% Entrée du baryton 2 %%%
+    la16 la la la la la la la la la la la |
+    la la la la la la la la |
+    la la la la la la la la |
     si4. r8 dod, dod |
     r8 dod dod r | r dod dod r dod r |
     r dod dod dod | re re r re re r | r re r4 |
-    }
+    mi8 mi r mi mi r | mi mi r mi |
+    fa2~ fa2 r4 |
+    
+    %%% Tempo giusto %%%
+    <re' re>8 r re, mib |
+    re mib re mib re 'mib re' mib, |
+    mib, mib mib mib fa fa fa fa |
+    lab lab lab lab | \clef treble
+    dod16 la dod mi re mi re fad |
+    sol mib sol la fa la lab do |
+    re4 r2 | r16 sol,, sib do mib do mib fad si mib, fad si |
+    re4 r2 | \clef alto
+    r16 sib,sib sib sib4:32 r4 |
+    r16 dod dod dod dod4:32 r4 |
+    r16 mi mi mi mi4:32 r4 | \clef treble
+    r16 dod dod dod dod dod dod dod mi mi mi mi |
+    sol mi sol la do la do mib fa mib fa lab |
+    re4 r \clef alto re,,,4~ | re re2 |
+    dod1~ dod4 r R2 R2-\fermataMarkup
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*6 sol''2.~ sol |
+    R2.*3 \clef treble r4\fermata \pizz lab'8 |
+    
+    %%% Andantino %%%
+    lab, r lab' lab, r4 |
+    lab8 r lab r si,? si' |
+    lab r lab' lab, r lab' |
+    lab, r lab' lab, r lab' |
+    lab, r lab r sol sol, |
+    lab' lab, r sol' sol, r \clef alto
+    sol r4 | R4.
+    r4 sol'8 r do, r |
+    r4 sol'8 r do, r |
+    r4 sol'8 r re r |
+    r4 sol8 r re r |
+    r mi r r mi r r fad r |
+    \arco solb, mib reb | do4.~ do~ do4 r8 |
+    solb' mib reb | do4.~ do~ do4 r8 |
+    solb' mib reb | do4.~ do4 r8 |
+    fad4 mib8~ mib dod4 |
+    
+    %%% A tempo %%%
+    \t {re16 re' re} re'8 r |
+    sold,,4:32 \t {sold16 sol fa} |
+    \t {re re' re} re'8 r |
+    sold,,4:32~ sold16 r |
+    re8:32 fa: sol: <reb'lab'>4.~<reb lab'>~
+    <reb lab'>8 r16 <reb lab'> \t {<reb lab'> <reb lab'> <reb lab'>} |
+    re,8 \clef treble r16 re' re re |
+    dod'8 r16 re, re re | dod'8 r16 re, re re |
+    dod'8 r16 re, re re | mi'8 r16 si si si |
+    lad'8 r16 si, si si | lad'8 r16 si, si si |
+    lad'8 r16 si, si si | lad'8 r16 si, si si |
+    lad' lad, dod mi sol lad | sol8 r16 mi, mi mi |
+    fa'8 r16 mi, mi mi | mi'8 r16 dod, dod dod |
+    mi'8 r16 dod, dod dod | mi'8 r16 fa, fa fa \clef alto |
+    r8 r16 sib, sib sib | r8 r16 fad fad fad |
+    si8 sib lab | fa4.~ fa~ fa8 r4 | R4.*3
+    \t {re16 re re} \t {mi mi mi} \t {fa fa fa} |
+    \t {sol sol sol} \t {sib sib sib} \t {do do do} |
+    \t {reb reb reb} \t {mib mib mib}
+    \t {solb solb solb} \t {lab lab lab} \t {la la la} |
+    la8 \clef treble r16 la' la la la8 r16 la la la |
+    la8 r16 re, re re r8 r16 dod dod dod \clef alto |
+    sol8 r16 \pizz dod, r2 |
+    
+    %%% Adagio %%%
+    R1*4 R1. \arco \ind #"flaut." fa,1:32 mi4 r |
+    R1*3 R1. \simile mi1:32 mi4 r |
+    R1*2 r8 do~ \t {do mi si'} \t {la mi' re} |
+    
+    %%% Valse %%%
+    sol,2.~ sol2 \clef treble \t {fa'8 la sold} |
+    \t {do si red} r2 | re2. la4 fad mi do' r2 |
+    do4 sold si mib, | sol4 sol,8 fad mib' re |
+    si' sib \t {sol' fad sib} |
+    r mi, dod r r dod si r r si sib r |
+    mi,4 \ttt {do'16 si do si do si}do4 r |
+    R1 R2. \clef alto |
+    \pizz do,,4 r2 | fad4 r2 | do4 r2 | fad4 r2 |
+    mi4 r sol r |
+    \arco <do, la'>4 <do la'>8. <do la'>16 <do la'>8
+    <do la'>~ <do la'>16 <do la'> <do la'>8 |
+    <do la'>8. <do la'>16 <do la'>8 <la' fad'>~
+    <la fad'>16 <la fad'> <la fad'>8 |
+    
+    %%% Vivo al fine %%%
+    <re, la' re>8 r re re |
+    re mib16 mib re8 re |
+    re fa16 fa re8 re |
+    re re re re | mib fa lab sib |
+    do re, re re | re re re re |
+    re re re re | fad re re re |
+    re re16 re mib8 r |
+    r8 re16 re fa8 r | r lab mib r |
+    re r r4 R2*17
+    r4 \pizz mi |
+  }
 }
 
 ActeUnSceneUnBisAltoUn = { \AltoUn

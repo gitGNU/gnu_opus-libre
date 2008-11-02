@@ -75,14 +75,14 @@ PrologueViolonDeux = { \ViolonDeux
     si'16 si si r r8 | re,16 re re r r8 |
     fad,16 fad fad r r8 | mi16 mi dod dod si si |
     lad4.~ lad~ lad8 r4 | R4.*5 R8*5 |
-    do''16 do do la r8 do'16 do do fad, r8 |
+    do''16 do do la r8 do16 do do fad, r8 |
     sol16 sol sol r r8 sol16 sol sol r r8 |
     re16 si si red, dod' mid, r8 r4 |
     
     %%% Adagio %%%
     R1*4 R1. r2 mi\glissando mi'4 r |
     R1*3 R1. r2 mi,\glissando red'4 r |
-    R1*2 r2 la4\glissando la2.~ la4 r2 | R2.
+    R1*2 r2 la4\glissando la'2.~ la4 r2 | R2.
     
     %%% Valse %%%
     \pizz sol,,4 sol' si | dod, la' r |
