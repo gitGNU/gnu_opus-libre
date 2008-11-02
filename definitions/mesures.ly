@@ -49,7 +49,7 @@ PrologueMesures = {
   \time 3/4 R2.
   \time 2/4
       \mark \markup \did \PrologueE
-             R2*2\rit
+             R2*2\rit  %%FIXME: WtF???
   \time 3/4 R2.\stopText
                   \bar "||"
   \time 2/4
@@ -86,13 +86,12 @@ PrologueMesures = {
             R4.   \bar"||"
       \tempo "Andantino" 4. = 56
             R4.*25
-      \startText #"Poco a poco allargando..."
+      \tempo "Poco a poco allargando..."
             R4.*9
             r8
       \mark \markup \did \PrologueL
             r4
             R4.*3 \bar "||"
-      \stopTxt
       \tempo "A tempo, un poco più vivo" 4. = 63
             R4.*28
       \mark \markup \did \PrologueM

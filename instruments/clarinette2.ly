@@ -15,17 +15,78 @@ ClarinetteDeux = {
 }
 
 PrologueClarinetteDeux = { \ClarinetteDeux
-  \relative { 
-    %%% Introduction %%%
+  \relative {
     
+    %%% Introduction %%%
     \partial 4 r4 R2.*3 R1 | 
     mi,2~ mi4 r | mi2 r4 |
     mi2~ mi mi2.~ mi4 r R2 | 
-    \tt {sold16 mi sol! sold sol!} si2~|
-    si4 r | R2 \tt {sol16 mi fa la sib} do2 ~ | 
+    \tt {lab16 mi sol lab sol} si2~|
+    si4 r | R2 \tt {sol16 mi fad la sib} do2 ~ | 
     do4 r | r r8 \t {la16 sol re'}|
-    mi2 r4 | R2*2 | mi'?2 r4 | R2 r2 mi,8 mi~|
-    mi2 | mi2
+    mi2 r4 | r4 re r sol | mi'2 r4 | R2 r2 mi,8 mi~|
+    mi2 | re2.~ re2 | reb4 r \t {la4 lab8~} |
+    \t {lab8 solb4} mib8 r | fa2~ fa4 r2 |
+    
+    %%% Tempo giusto %%%
+    re8 r r4 | R2*2
+    re4 mib fa lab fa lab8 r |
+    \t {dod4 mi fad} \t {sol la do} |
+    re4 r2 |
+    r8 mi,, sol sib do mib | re4 r2 |
+    r8 mi, dod mi dod mi |
+    r mi dod mi sol la |
+    r la sol la do mib |
+    r sib reb mi sol lab | la4 do mib |
+    re4 r8 si'4.~ si4 r8 re,4. | dod2. r4
+    R2*2 R2-\fermataMarkup
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*11 R4.*5
+    sol,8 r4 | R4.*4
+    fab''8 mib reb mib reb sib sol r4 |
+    sol,8 r4 | R4.
+    r8 mib lab mi' lab, mib |
+    r mib lab mi' lab, mib |
+    r solb si re si solb |
+    r solb si re si solb |
+    r fa lab do lab fa |
+    r fa sib reb solb la |
+    sib4.~ sib8 r sib, reb mib solb mib solb lab |
+    la4.~ la8 r re, fa sol lab sib reb mib |
+    mi4.~ mi8 r lab, sib si dod mi la mib |
+    
+    %%% A tempo %%%
+    re8 r4 | r8 \t {sib,16 mib lab} \t {do fa sol} |
+    re'8 r4 | r8 \t {mib,,16 lab reb} \t {fa sol do} |
+    r8 fa,, sol | lab4.~ lab~ lab4 r8 |
+    sol16 sol sol lab, r8 | sol'16 sol sol lab, r8 |
+    sol'16 sol sol lab, r8 | sol'16 sol sol lab, r8 |
+    mi''16 mi mi fa, r8 | mi'16 mi mi fa, r8 |
+    mi'16 mi mi fa, r8 | mi'16 mi mi fa, r8 |
+    mi'16 mi mi fa, r8 | mi'16 mi mi fa, r8 |
+    fa'16 fa fa mi, r8 | fa'16 fa fa mi, r8 |
+    re'16 re re reb, r8 | re'16 re re reb, r8 |
+    lab''16 lab lab sol, r8 | reb'16 reb reb sib, r8 |
+    fa'16 fa fa solb, r8 | reb'16 reb reb r r8 |
+    R4.*8
+    re,8 mi fa sol lab | mi''2 mib4 | lab,2 mib4 | reb4 r2 |
+    
+    %%% Adagio %%%
+    R1*4 R1.*2 R1*3 R1.*2 R1*2 sol,2 r4 |
+    
+    %%% Valse %%%
+    si'2 r4 | r sol'2 | r4 reb2 | r4 sol, sol |
+    r fa fa | r re re | r re r do | R2. R2 R2.*2
+    R1 r2 lab'4 lab | r solb solb | r fa fa |
+    r reb reb | r do do | r sib sib | r fa r mi |
+    r4 la8 fad'4 la,8 fad'4 | re'4. fad,8 re'4 |
+    
+    %%% Vivo al fine %%%
+    re,,4 r | R2*3
+    r4 r8 fad | sol r r4 |
+    r8 la la do re r r4 | R2*23
   }
 }
 

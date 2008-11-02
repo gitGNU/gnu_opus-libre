@@ -893,7 +893,7 @@ ActeDeuxSceneDeux = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-%showFirstLength = s1*62
+%showFirstLength = s1*70
 \book {
   \header {
     title = \OperaTitre
@@ -913,7 +913,6 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \OuvertureTitre
     }
-    %\layout {} \midi{}
   } %
   \score {
     \ActeUnSceneUn

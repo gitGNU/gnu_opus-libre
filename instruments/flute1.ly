@@ -23,20 +23,66 @@ Piccolo = {
 
 PrologueFluteUn = { \FluteUn
   \relative {
-    %%% Introduction %%%
     
+    %%% Introduction %%%
     \partial 4 r8 
     \tt {mi'32 fa si mi fa} sib2.~ sib~ sib~ sib2~ sib4~ sib8 r
     mi,,,2~mi4 r | mi4~ mi4:32 ~ mi8 r |
     fa2~ fa mi2.~ mi4 r |
     r mi~| mi2.~ | mi4 r |
     r mi~| mi2.~ | mi4 r |
-    r r8 \t { mi16 la re} | mi2 r4 | R2 |
-    r4 \tt {mi16 la sol do sib} mib2 r4 |
-    r4 \tt {sold,16 si mi re fa} sol!2 r4|
+    r r8 \t { mi16 la re} | mi2 r4 | r la, |
+    r4 \tt {mi'16 la sol do sib} mib2 r4 |
+    r4 \tt {sold,16 si mi re fa} sol2 r4|
     R2 r4 r8 \t {lab16 mib fa} do8 r | re, r r4 |
-    mi,!2
+    mi,!2.~ mi4 r | fa2~ fa4 r2 |
     
+    %%% Tempo giusto %%%
+    \slap { \ind #"slap" re4} r R2*6 r4 do'16 fad la sol |
+    re'4 r2 | r2 do,16 fad mib si' | re4 r2 R2.
+    dod,,2. mi lab2 r4 | r8 mib' fa lab si dod |
+    re4 re8 re4 re8 | re4 re8 re~re16 re 8. | re2. r4 R2*2 R2-\fermataMarkup
+    
+    %%% Solo Ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*7 r2 lab4 sol, r lab' sol, lab' r |
+    sib si, si' | R4.
+    R4.*2 r8 lab' r sib r si | R4.*5
+    \acciaccatura mib,16 fab8 mib reb r lab, sol R4.*15
+    do'4.~ do4.~ do4.~ do8 r4 |
+    r8 r16 do8.~ do4.~ do4.~ do8 r4 |
+    r8 re4~ re4.~ re4 r8 | lab' fa mib |
+    
+    %%% A tempo %%%
+    re'32 re, re re re,8 r | sold,4:32 r8 |
+    re'''32 re, re re re,8 r | sold,4:32 r8 |
+    r8 \t {do16 fa sib} \t {fa sib mib} |
+    sol sol sol re r8 | sol16 sol sol re r8 |
+    sol16 sol sol re r fa32 sol | lab8 r4 |
+    R4.*2 dod,,16 dod r dod dod dod | mi8 r4 |
+    si'8 r4 | si16 si si r r8 | si16 si si r r8 |
+    si16 si si r r8 | si16 si r si si si |
+    re re re r r8 | re16 re re r r8 |
+    re16 re re r r8 | mi16 mi mi r r8 |
+    re16 re re r r8 | re16 re re r r8 |
+    lab16 lab lab r r8 | sol,16 sol sol r r8 |
+    R4.*8 r4 r8 \t {fa16 lab reb} \t {mi la do} |
+    fa2. | dod4 sib sol | mi4 r2 |
+    
+    %%% Adagio %%%
+    R1*4 R1.*2 R1*3 R1.*2 R1*2 do,2 r4 |
+    
+    %%% Valse %%%
+    r lab''' lab | r solb solb | r do, do |
+    r solb solb | r solb fab | r mib mib |
+    mib4 reb8 r | mib4 do8 r | sol2.~ sol4 r | R2.*2 R1
+    r2 la'4 la | r fa fa | r mi mi | r re re | r reb reb |
+    r la la | r solb r fa |
+    r2 re'8 la'~ la16 re, la'8 | mib'4 la,8 lab'4. |
+    
+    %%% Vivo %%%
+    la4 r | R2*8
+    re,,,2~ re~ re~ re4 r | R2*18
   }
 }
 

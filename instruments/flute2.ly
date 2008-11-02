@@ -15,17 +15,65 @@ FluteDeux = {
 
 PrologueFluteDeux = { \FluteDeux
   \relative {
-    %%% Introduction %%%
     
+    %%% Introduction %%%
     \partial 4 r4 \pitchedTrill la'''2.~\startTrillSpan si
     la2.~ la~ la2~\stopTrillSpan la4~ la8 r | 
     mi,,2~mi4 r | mi4~ mi4:32 ~ mi8 r |
     mi2~ mi mi2.~ mi4 r |
     R2 | re2.~ | re4 r |
     R2 | red2.~| mi4 r |
-    r r8 \t { re!16 mi la} | re2 r4 | R2*2 | sib'2 r4 |
+    r r8 \t { re!16 mi la} | re2 r4 | r4 sol, r do | sib'2 r4 |
     r4 \tt {fad16 sold la red, sold} si!2 r4|
     R2 r2 \tt {re16 la si solb lab} | mib8 r r4 |
+    red,2.~ red4 r mi2~ mi4 r2 |
+    
+    %%% Tempo giusto %%%
+    \slap { \ind #"slap" re4} r R2*6 r4 mi16 sol do fad |
+    re4 r2 | r2 sol,16 do fad mib | re4 r2 R2.
+    dod,2. do sol'2 r4 | r8 do mib fa lab si |
+    re4 r8 lab4.~ | lab4 r8 solb4. | fa2. r4 R2*2 R2-\fermataMarkup
+    
+    %%% Solo Ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*7 r2 sol4 sol, r sol' sol, sol' r |
+    la si, sib' | R4.
+    R4.*2 r8 sol, r lab r sib | R4.*5
+    mib8 reb sib sol sol r | R4.*15
+    fa'4.~ fa4.~ fa4.~ fa8 r4 |
+    r8 r16 fad8.~ fad4.~ fad4.~ fad8 r4 |
+    r8 sol4~ sol4.~ sol4 r8 | do la sol |
+    
+    %%% A tempo %%%
+    re'8 re,32 re re re re,8 | re4:32 r8 |
+    re''8 re,32 re re re re,8 | re4:32 r8 |
+    \t {lab'16 reb solb} \t {fa sib do} \t {sib mib fa} |
+    re re re sib r8 | re16 re re sib r8 |
+    re16 re re sib r8 | re8 r4 |
+    R4.*2 sol,,16 sol r sol sol sol | si8 r4 |
+    lad'8 r4 | lad16 lad lad r r8 | lad16 lad lad r r8 |
+    lad16 lad lad r r8 | lad16 lad r lad lad lad |
+    sol sol sol r r8 | sol16 sol sol r r8 |
+    sol16 sol sol r r8 | sol16 sol sol r r8 |
+    si16 si si r r8 | dod16 dod dod r r8 |
+    mib,16 mib mib r r8 | fad,16 fad fad r r8 |
+    R4.*8 r4 r8 \t {do16 fa lab} \t {reb mi la} |
+    do2. | sol2 re4 | si r2 |
+    
+    %%% Adagio %%%
+    R1*4 R1.*2 R1*3 R1.*2 R1*2 do,2 r4 |
+    
+    %%% Valse %%%
+    r fa'' fa | r mib mib | r la, la |
+    r mib mib | r reb reb | r sol, sol |
+    lab4 lab8 r | sol4 lab8 r | sol2.~ sol4 r | R2.*2 R1
+    r2 mi'4 mi | r la, la | r dod dod | r la la | r lab lab |
+    r solb solb | r reb r do |
+    r2 fad8 re'~ re16 fad, re'8 | la'8. re,16 la'8 mib'4. |
+    
+    %%% Vivo %%%
+    re4 r | R2*8
+    re,,2~ re~ re~ re4 r | R2*18
   }
 }
 

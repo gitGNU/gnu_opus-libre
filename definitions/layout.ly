@@ -62,6 +62,7 @@ includeLayout = \layout {
     \consists "Axis_group_engraver"
     \consists "Script_engraver"
     \consists "New_dynamic_engraver"
+    \consists "Dynamic_engraver"
     \consists "Text_engraver"
     \consists "Text_spanner_engraver"
     \consists "Metronome_mark_engraver"

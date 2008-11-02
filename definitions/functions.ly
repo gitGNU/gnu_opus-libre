@@ -419,7 +419,7 @@ meno =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"meno" $music #})
 
-#(define (make-text-span music t)
+#(define (make-txt-span music t)
  (set! (ly:music-property music 'elements)
                        (append (ly:music-property music 'elements)
                        (list (make-music 'TextSpanEvent
@@ -431,21 +431,21 @@ startTxt =
 #(define-music-function (parser location texte music ) (string? ly:music?)
 #{ \override TextSpanner #'bound-details #'left #'text = 
   \markup { \bold $texte }
-                $(make-text-span music -1)#})
+                $(make-txt-span music -1)#})
 
 stopTxt =
-#(define-music-function (parser location) ()
-     (make-text-span music 1))
+#(define-music-function (parser location music) (ly:music?)
+     (make-txt-span music 1))
 
 #(define (make-text-span txt)
 "Make a TextSpanner that begins with the given STR."
   (let* ((m (make-music 'TextSpanEvent
              'span-direction -1))
-         (details (cdr (assoc 'bound-details
-                        (cdr (assoc 'TextSpanner
-                              all-grob-descriptions)))))
-         (left-details (cdr (assoc 'left
-                             details))))
+         (details (assoc-get 'bound-details
+                   (assoc-get 'TextSpanner
+                    all-grob-descriptions)))
+         (left-details (assoc-get 'left
+                        details)))
    (ly:music-set-property! m 'tweaks
     (acons 'bound-details
      (acons 'left
