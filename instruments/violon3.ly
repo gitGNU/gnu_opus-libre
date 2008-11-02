@@ -22,10 +22,102 @@ PrologueViolonTrois = { \ViolonTrois
     mi,,2~| mi4 r | mi2.~| mi4 r | mi2 mi2.~| mi4 r R2 |
     <sol,? re'>2.~| <sol re>4 r | R2 sib2.~|
     si!4 mi'8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |
-    re2 r4 
-    \repeat unfold 16 re16 | fad4. r8 sid, r | 
+    
+    %%% Entrée du baryton 2 %%%
+    re2 r4 | re16 re re re re re re re
+    re re re re re re re re | fad4. r8 sid, r | 
     r sid r4 | r8 sid r4 sid8 r |
-    r4 sid | dod8 r r dod r4| r8 dod r4 | red
+    r4 sid\upbow \glissando | dod8 r r dod r4| r8 dod r4 |
+    red8 r r4 red8 r | r red4.\upbow mi2~ mi r4 |
+    
+    %%% Tempo giusto %%%
+    re16 re re re re re re re |
+    re re re re re re re re |
+    re re re re re re re re |
+    re re re re re re re re |
+    re re re re re re re re |
+    mib mib mib mib mib mib mib mib |
+    fa8 r r4 | R2
+    <re re'>4\downbow re\downbow re\downbow |
+    lab2 r4 | <re re'>4.\downbow re\upbow |
+    sib2.:32\downbow dod: mi: |
+    reb4. mi | sol8 la4 do8 mib4 |
+    <re, re'>4 r8 <re re'>4 re'8 |
+    <re, re'>4 re'8 <re, re'>4 re'8 |
+    <re, re'>2. r4 | R2*2 R2-\fermataMarkup
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*11
+    r4\fermata \pizz sol'8 |
+    
+    %%% Andantino %%%
+    <sol,,sol'> r sol'' <sol,, sol'> r sol'' |
+    sol,, sol'' sol, lab' r sib |
+    <sol,, sol'> r sol'' <sol,, sol'> r sol'' |
+    <sol,, sol'> r sol'' <sol,, sol'> r sol'' |
+    sol,, sol'' sol, r4 lab8 r4 sol8 |
+    r4 lab,8 sol r4 | R4.*12
+    \arco fa'16 la sib dod fa8 |
+    <mi sol>4.~ <mi sol>~ <mi sol>~ <mi sol>8 r lab,16 sib |
+    reb mi8 <fad si>8.~ | <fad si>4.~ <fad si>~ <fad si>8 r r16 red, |
+    mi8 <fad la>4~ <fad la>4.~ <fad la> r16 sold, si mi sol la |
+    
+    %%% A tempo %%%
+    re 8 \t {re,16 lad fad} re8 | sold,4~ sold16 r |
+    re'''8 \t {re,16 la sol} re8 | sold,4~ sold16 r |
+    si16 mi lab reb fa sib |
+    fa8 r16 fa fa fa fa8 r16 fa fa fa |
+    fa8 r16 fa fa fa |
+    sold8 r4 | \pizz re,8 r dod re r4 |
+    re8 r dod fa r4 | si8 r4 |
+    si8 r4 | \arco si8 r4 |
+    mi8 r \ind #"jeté" mi32 mi16. | r8 mi r |
+    sol8 r16 sold, sold sold sol'8 r16 sold, sold sold |
+    sol'8 r16 fa, fa fa sol'8 r16 fa, fa fa |
+    dod''8 r16 sol, sol sol | r8 r16 mib mib mib |
+    r8 r16 sol, sol sol | R4.
+    sol!4.~ sol~ sol8 r4 | R4.*4
+    \t {sol16 sol sol} \t {sib sib sib} \t {do do do} |
+    \t {reb reb reb} \t {mib mib mib} \t {solb solb solb}
+    \t {lab lab lab} \t {la la la} |
+    la'8 r16 do do do do8 r16 do do do |
+    dod8 r16 sol sol sol r8 r16 mi mi mi |
+    si fad mi' sold, sold sid, r8 r4 |
+    
+    %%% Adagio %%%
+    %% FIXME: Issue #318
+    R1*4 R1. \repeat tremolo 16 {\stemDown \ind #"flaut." mi32 fa \stemNeutral} mi4 r |
+    R1*3 R1. \repeat tremolo 16 {\ind #"flaut." mi32 red} mi4 r |
+    R1*2 mi4. si'8 la re |
+    
+    %%% Valse %%%
+    si2.~ si4 r2 R2. |
+    \pizz sol,4 red' sol | dod, fa r |
+    sol, si red r lad r si sol
+    \arco \ttt {lad16 si lad si lad si}
+    \ttt {lad si lad si lad si} |
+    \ttt {lad si lad si lad si}
+    \ttt {lad si lad si lad si} |
+    r8 sol'' fad r r fad mi r r re dod r |
+    mi4 \ttt {sol16 lab sol lab sol lab} sol4 r | R1 R2.
+    r4 \pizz sold,, do sib fad' r |
+    r sold, do sib re r | r la r sold |
+    \arco <la fad'>8. <la fad'>16 <la fad'>8
+    <la fad'>~ <la fad'>16 <la fad'> <la fad'>8 
+    <fad' re'>8. <fad re'>16 |
+    <fad re'>8 <fad re'>~ <fad re'>8. <fad re'>16 <fad re'>4 |
+    
+    %%% Vivo al fine %%%
+    <re re'>4 r |
+    r8 re16 re re8 r |
+    r re16 re re8 r | R2
+    re16 mib re mib re mib re mib |
+    re fa re fa re fa re fa |
+    re re re re re re re re |
+    re re la la la la si si |
+    la8 r r4 | R2*21
+    r4 \pizz mi' |
   }
 }
 

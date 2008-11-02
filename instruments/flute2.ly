@@ -73,7 +73,7 @@ PrologueFluteDeux = { \FluteDeux
     
     %%% Vivo %%%
     re4 r | R2*8
-    re,,2~ re~ re~ re4 r | R2*18
+    re,,2~ re~ re~ re4 r | R2*17 r4 mi8 r |
   }
 }
 

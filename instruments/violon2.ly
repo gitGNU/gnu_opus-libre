@@ -22,9 +22,93 @@ PrologueViolonDeux = { \ViolonDeux
     mi,,,2~| mi4 r | mi2.~| mi4 r | fa2 mi2.~| mi4 r R2 |
     <sold, re'>2.~| <la re>4 r | R2 <sol red'>2.~| 
     <sol mi'>4 mi'8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |
+    
+    %%% Entrée du baryton 2 %%%
     mi2 r4 R2 fa16 fa fa fa sib sib sib sib | 
     sib4. r8 dod, r | r dod r4 | r8 dod r4 dod8 r |
-    r4 dod | re8 r r re r4| r8 re r4 | mi
+    r4 dod\upbow \glissando | re8 r r re r4| r8 re r4 |
+    mi8 r r4 mi8 r | r mi4.\upbow fa2~ fa r4 |
+    
+    %%% Tempo giusto %%%
+    <re re'>8 r re16 mib re mib |
+    re mib re mib re mib re mib |
+    re mib re mib re'mib,re mib |
+    re mib re mib re mib re mib |
+    re mib re mib re mib re mib |
+    re fa re fa re fa re fa | dod'8 r r4 | R2
+    <re re'>4\downbow re\downbow re,\downbow |
+    lab2 r4 | <re' re'>4.\downbow re\upbow |
+    sib,2.\downbow dod mi |
+    lab4. sol | la8 do4 mib8 fa4 |
+    <re re'>8. re16 re8 <re re'>4 re8 |
+    <re re'>4 re8 <re re'>8~ <re re'>16 re re8 |
+    <re re'>2. r4 | R2*2 R2-\fermataMarkup
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*11
+    r4\fermata \pizz lab'8 |
+    
+    %%% Andantino %%%
+    lab, r lab' lab, r sol' r lab r |
+    sib sib, si' | lab, r lab' lab, r lab' |
+    lab, r lab' lab, r lab' |
+    r lab r r sib r r sol r |
+    r lab, r sol, r4 | R4.*12
+    \arco la'16 sib dod re solb8 |
+    <fa sib>4.~ <fa sib>~ <fa sib>~ <fa sib>8 lab,16 sib reb mi |
+    fad la~ la4~ la4.~ la~ la8 r16 red, mi fad |
+    la si <sol do>4~ <sol do>4.~ <sol do> r16 sib, reb solb la do |
+    
+    %%% A tempo %%%
+    \t {re16 lad fad} re8 re, | la4~ la16 r |
+    \t {re''16 la sol} re8 re, | si4~ si16 r |
+    si16 mi lab reb fa sol |
+    sib8 r16 sib sib sib sib8 r16 sib sib sib |
+    sib8 r16 sib sib sib |
+    dod8 r4 | \pizz sold,8 r re sold r4 |
+    sold8 r re lad' r4 | mi'8 r4 |
+    mi8 r4 | \arco mi8 r4 |
+    lad8 r \ind #"jeté" lad32 lad16. | r8 lad r |
+    lad16 lad lad mi, r8 | lad'16 lad lad mi, r8 |
+    si''16 si si sol, r8 | si'16 si si fa, r8 |
+    si'16 si si r r8 | re,16 re re r r8 |
+    fad,16 fad fad r r8 | mi16 mi dod dod si si |
+    lad4.~ lad~ lad8 r4 | R4.*5 R8*5 |
+    do''16 do do la r8 do'16 do do fad, r8 |
+    sol16 sol sol r r8 sol16 sol sol r r8 |
+    re16 si si red, dod' mid, r8 r4 |
+    
+    %%% Adagio %%%
+    R1*4 R1. r2 mi\glissando mi'4 r |
+    R1*3 R1. r2 mi,\glissando red'4 r |
+    R1*2 r2 la4\glissando la2.~ la4 r2 | R2.
+    
+    %%% Valse %%%
+    \pizz sol,,4 sol' si | dod, la' r |
+    sol, red' sol r re r red sol, r4
+    \ttt {\arco fad'16 sol fad sol fad sol} |
+    \ttt {fad sol fad sol fad sol}
+    \ttt {fad sol fad sol fad sol} |
+    r8 do' la r r la sol r r sol mi r |
+    mi'4 \ttt {lab,16 sol lab sol lab sol} lab4 r | R1 R2.
+    r4 \pizz sold,, mi' re lad' r |
+    r sold, mi' re fad r | r dod r do |
+    \arco <la fad'>8. <la fad'>16 <la fad'>8
+    <fad' re'>~ <fad re'>16 <fad re'> <fad re'>8 
+    <re' la'>8. <re la'>16 |
+    <re la'>8 <re la'>~ <re la'>8. <re la'>16 <re la'>4 |
+    
+    %%% Vivo al fine %%%
+    <re, la' re'>4 r |
+    r8 re16 re mib8 r |
+    r re16 re mib8 r | R2
+    mib16 re mib re mib re mib re |
+    fa re fa re fa re fa re |
+    lab' lab lab lab lab lab lab lab |
+    sol sol do, do do do re re |
+    do8 r r4 | R2*21
+    r4 \pizz mi'
   }
 }
 

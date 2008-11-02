@@ -86,7 +86,8 @@ PrologueClarinetteDeux = { \ClarinetteDeux
     %%% Vivo al fine %%%
     re,,4 r | R2*3
     r4 r8 fad | sol r r4 |
-    r8 la la do re r r4 | R2*23
+    r8 la la do re r r4 | R2*22
+    r4 mi,8 r |
   }
 }
 

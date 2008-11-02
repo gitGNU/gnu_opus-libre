@@ -14,12 +14,69 @@ SaxAltoUn = {
 }
 
 PrologueSaxophoneUn = { \SaxAltoUn
-  \relative { 
-    %%% Introduction %%%
+  \relative {
     
+    %%% Introduction %%%
     \partial 4 r4 R2.*3 R1
     mi2~mi4 r mi16 fa8.~fa4  \t {mi8 fa4~} fa2~ fa4 r | mi2 r4 |
-    R2*2 
+    R2*2 r4 \t {mi,4 fa8~} fa4 | fad2~ fad4 r |
+    r r8 mib'4. | r8 mi,4. \t {la4 do mib8 r} |
+    
+    %%% Entrée du baryton 2 %%%
+    la,2 r4 | R2*2 | reb,2 r4 | R2
+    solb4 lab sib8 do~ |
+    do2 si2.~ si2 la2.~ la4 r |
+    sib2~ sib4 r \t {lab8 fa mib} |
+    re2~ re~ re4 r | re'2~ re~ re4. r8 |
+    \t {reb,4 mi fad} \t {sol la do} |
+    re4 r2 lab2. re4 r2 sib2. reb mi |
+    r2 sib8 r r4 mi8 r r4 | mi,2 sib'4~ sib lab2 |
+    re?2. r4 | R2*2 R2-\fermataMarkup
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. R1
+    R2*4 R2.*11 R4.*15
+    mib,8 r4 solb8 r4 |
+    mib8 r4 solb8 r4 |
+    mib8 r4 sol!8 r4 |
+    mib8 r4 sol?8 r4 |
+    mi8 r4 fa8 r4 |
+    re8 r4 reb8 r4 |
+    do'4.~ do~ do~ do8 r4 |
+    do4.~ do~ do~ do8 r4 |
+    re4.~ re~ re4 r8 |
+    r r16 re \t {re re re} |
+    
+    %%% A tempo %%%
+    re8 r4 | re,4. re'8 r4 | lab4.~ lab4. |
+    reb,4.~ reb~ reb4 r8 | re8 r4 | R4.*2
+    r8 mib re fa4.~ fa~fa4 r8 | R4.*4
+    r8 dod'' si | mi4 re8 R4. | r8 mi re sol4 r8 |
+    R4.*2 fa,,4.~ fa8 r sol32 sold la lad |
+    si4 r8 | r4 si32 do dod re | mib4 r8 |
+    R4. re,8 mi fa |
+    sol sib do | reb mib solb lab la |
+    re,,4 mib re | fa r2 | R2. |
+    
+    %%% Adagio %%%
+    R1*3 mi1~ mi1.~ mi4 r r1 |
+    R1*2 mi1~ mi1.~ mi4 r r1 |
+    R1*2 re'2 r4 |
+    
+    %%% Valse %%%
+    sol,2 r4 | R2.*2
+    r4 re'2 r4 do2 | r4 si2 r4 la r sol |
+    R2. R2 R2.*2 R1
+    r2 fa'4 do | r reb sib |
+    r do la r sib fa | r la mi |
+    r fa r | r re r reb |
+    r do'2. si2 r8 \t {do16 dod re} |
+    
+    %%% Vivo al fine %%%
+    mib4 r | R2*3
+    r4 r8 la, do r r4 |
+    r8 fa fa lab sib r r4 |
+    R2*22 r4 mi,8 r |
   }
 }
 

@@ -102,7 +102,8 @@ PrologueClarinetteUn = { \ClarinetteUn
     
     %%% Vivo al fine %%%
     re,4 r R2*3 r4 r8 sol,, la r r4 |
-    r8 do do fa sol r r4 | R2*23
+    r8 do do fa sol r r4 | R2*22
+    r4 mi'8 r |
   }
 }
 
