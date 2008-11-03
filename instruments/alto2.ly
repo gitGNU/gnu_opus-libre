@@ -670,7 +670,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     \pizz <la'la>4 r2 | R1 R2. R1 R2. R1
     \arco mib4 reb dob | sib4 r r2 | R2. R1
     sib4 do! re! mib4 r mi fad | sold r2 | R1
-    \pl {la,4\stopped s2 s1 s2. s1 s2. s1 s2. }
+    \pl {la,4\leftpizz s2 s1 s2. s1 s2. s1 s2. }
     {la'2.:32~ \oneVoice la1:~la2.:~la1:~la2.:~la1:~la2.:} |
     <la,la'>4 r R2 \clef treble fad'8 fa la16 sol lab sib |
     do8 si red16 dod re mi fad8 fa | la4 r r2 \clef alto |

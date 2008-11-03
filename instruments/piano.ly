@@ -27,7 +27,27 @@ ProloguePiano = { \Piano
     \repeat unfold 16 <sid dod>8 |
     \repeat unfold 8 <dod re>8 <re mib> <re mib>
     \repeat unfold 10 <red mi>8
-    r8 <mi fa> <mi fa>4 | <mi fa>8 <mi fa>4 <mi fa>8 <mi fa>4 |
+    r8 <mi fa> <mi fa>4 | <mi fa>8 <mi fa>4 <mi fa>8 <mi fa>4 \clef treble |
+    
+    %%% Tempo giusto %%%
+    re'8 r re re s2*2 R2*3 s2*2
+    \pl <re re'>4 re''4 r2 | R2.*2 \clef bass |
+    <sib,,,sib'>2. <dod dod'> <mi mi'> \clef treble |
+    <lab lab>2 <mi' do'>8 <sol la> |
+    <la fa'> <do mib> <do lab'> <mib fa> <mib si'> <fa lab> |
+    <re re'>4 r8 <mi sold re'>4.~ <mi sold re'>4 r8 <re fad si re>4. |
+    \ttt {re'16 la fa re do si} \ttt {fad' dod la fad mib reb}
+    \ttt {do sol' re sib \gauche sol fa} \tttt {mi re si la sold fad red \droite} |
+    s4 \t{<dod''' re>8 dod, <dod'' re>} | <dod,,re dod'>2\laissezVibrer
+    R2-\fermataMarkup
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. r2 sol~|
+    sol~ sol~ sol R2 R2.*6
+    <sol lab sol'>2.\arpeggio \laissezVibrer R2.*4 R4.
+    
+    %%% Andantino %%%
+    
   }
   \relative {
     \partial 4 r4 R2.*3 R1
@@ -40,6 +60,26 @@ ProloguePiano = { \Piano
     R2 <sol sol'>4 dod <sib sib'>8 dod~| dod <sol sol'> dod4 |
     <dod, dod'>4 <sol' sol'>8 <dod dod'>4 <sib sib'>8 | r <dod dod'>4 <sol sol'>8 |
     <sib sib'>2~<sib sib'>4 r2 |
+    
+    %%% Tempo giusto %%%
+    <re re'>8 r r4 |
+    re'8 \droite re' \gauche re, \droite re' \gauche |
+    re,16 mib' \droite re mib re' mib, re \gauche mib, |
+    re,8 re' re, re' | re, re' re, re' | re, re' re, re' |
+    <dod,dod'>16 <dod'dod'> <fa, fa'> <fa' fa'>
+    <si, si'> \droite <si' si'> \gauche <mi, mi'> \droite <mi' mi'> \gauche |
+    <fad, fad'> \droite <fad' fad'> \gauche <sol, sol'> \droite <sol' sol'>
+    <la, la'> <la' la'> <do, do'> <do' do'> \gauche |
+    R2. <lab,,lab'>2. <re, re'>4 r2 |
+    \ottava #-1
+    <fad, fad'>2. <mib mib'> <do do'> |
+    \ottava #0
+    <sib' sib'>2 <sol sol'>4~ <sol sol'> <mi mi'>2 |
+    <re re'>2\laissezVibrer <re'' fa sib re>4~
+    <re fa sib re> <re mib fa lab do re>2 |
+    <dod,,dod'>1*1/2\laissezVibrer s2
+    \t {\stemDown dod'2*1/4\laissezVibrer \stemUp <dod''re>8 dod,}
+    \stemNeutral s4 R2 R2-\fermataMarkup
   }
 }
 

@@ -15,9 +15,9 @@ VioloncelleUn = {
 }
 
 PrologueVioloncelleUn = { \VioloncelleUn
-  \relative { 
-    %%% Introduction %%%
+  \relative {
     
+    %%% Introduction %%%
     \partial 4 r4 R2.*2 \clef treble si''?2.\upbow ~ si1\glissando 
     mi,,2\downbow \clef bass |r8 mi,, \t {mi mi mi} mi2. | 
     r4 red''4:32 ~ red8 r
@@ -28,7 +28,99 @@ PrologueVioloncelleUn = { \VioloncelleUn
     dod2 r8 sol r dod r sol | dod4 dod sol8 dod~|
     dod4 r | sol dod sib8 dod~| dod sol dod4 | 
     dod sol8 dod r sib | 
-    r dod4 sol8 | sib2 
+    r dod4 sol8 | sib2~ sib r4 |
+    
+    %%% Tempo giusto %%%
+    re8 re, re re' | re re, re re' |
+    re re, re re' | re, re mib re | fa re lab' fa |
+    sib lab si dod | dod, r r4 | R2
+    re4 re'8 re re re | lab2 r4 |
+    re,4 r8 re' re re | fad,2. mib do |
+    sib'2 sol4~ sol mi2 | re2.~ re4 r8 sol' mi re |
+    dod1~ dod4 r R2 R2-\fermataMarkup |
+    
+    %%% Solo ténor %%%
+    R1*2 R2. R1 R2. r2 sol'2~\CaV
+    sol~\CaV sol~\CaV sol~\CaV sol~\CaV
+    sol2.~\CaV sol~\CaV sol2~\CaV r4 R2.*2
+    r2 \repeat tremolo 4 {sol,32 lab} sol'2. R2.
+    sol'4 sol,,\leftpizz r |
+    sol'' sol,,\leftpizz r | R2. R4.
+    
+    %%% Andantino %%%
+    \pizz sol8 r4 | sol8 r4 | R4.*2
+    sol8 r4 | sol8 r4 |
+    sol8 r4 | sol8 r4 |
+    sol'8 r4 \clef treble | mi''8 r4 \clef bass |
+    r8 sol,, sol, | R4.*14
+    \arco solb8 mib reb do4.~ do~ do4 r8 |
+    solb'8 mib reb | do4.~ do~ do4 r8 |
+    solb'8 mib reb | do4.~ do4 r8 |
+    fad4 mib8~ mib dod4 |
+    
+    %%% A tempo %%%
+    re8 r4 | sold8 si dod |
+    re8 r4 | sold,8 si dod re fa sol |
+    lab4 r8 | lab,4 fa8~ fa mib4 |
+    re4.~ re~ re4 r8 |
+    mib4 re8 fa4.~ fa~ fa4 r8 |
+    fa'4. re do si4.~ si4 r8 |
+    sib4.~ sib~ sib~ sib4 r8 | R4.*2
+    fa16:32 solb: lab: si: dod: re: |
+    mi: re: dod: si: lab: solb: |
+    lab: sib: si: dod: mi: fad: |
+    sol: fad: mi: dod: si: lad: |
+    si: dod: mi : fad: sol: la: |
+    do: la: sol: fad: mi: dod:  |
+    \t {la16 la la} \t {si si si} \t {re re re}
+    \t {mi mi mi} \t {re re re} \t {mi mi mi} |
+    \t {fa fa fa} \t {sol sol sol}
+    \t {sib sib sib} \t {do do do} \t {reb reb reb} |
+    re8 r r4 re, | fa8. lab fa8 mib re | do2 r4 |
+    
+    %%% Adagio %%%
+    R1*2 r2 r8 mi, \t {mi mi mi} |
+    \repeat tremolo 16 {\ind #"sul G" mi'32 fa}
+    \repeat tremolo 16 {mi32*3/2 fa} |
+    mi4 r r1 | R1 r2 r4 \pizz la, |
+    %% FIXME: Issue #704 (ugly, ugly, ugly!)
+    \stemUp \repeat tremolo 16 {\arco \ind #"sul G" mi'32 fad}
+    \repeat tremolo 16 {mi32*3/2 fad} \stemNeutral |
+    mi4 r r1 | R1 r2 r4 \pizz <sold, sold'>\plak |
+    \repeat tremolo 12 {\arco \ind #"sul D" mi'32 sol}
+    
+    %%% Valse %%%
+    sol,2.~ sol4 r dod~ | dod2 r4 |
+    sol2 r4 | dod2 r4 | sol2 r4 |
+    sib4 r mi, r | \ttt {re'16 mib re mib re mib}
+    \ttt {re mib re mib re mib} \ttt {re mib re mib re mib}
+    re4 r \clef treble |
+    \pizz dod''4 r si r sib sib |
+    mi \ttt { \arco mi,16 red mi red mi red} mi4 r \clef bass |
+    r4 do,2 r4 | fad,2 r4 | do'2 r4 | fad,2 r4 |
+    do'2 r4 | fad,2 r4 | mi r sol r |
+    <do, si'>2 <do si'>4 <do si'>8 <do si'>~ |
+    <do si'> <do si'> <do si' mi la>4 <do si' mi la> |
+    
+    %%% Vivo al fine %%%
+    <re' re'>8 re <do re> <do re> |
+    <re mib> <re mib> <la re> <la re> |
+    <re mib> <re mib> <do re> <do re> |
+    <re mib> <re mib> <la re> <la re> |
+    <re mib> <re mib> <re mib> <re mib> |
+    <re mi> <re mi> <re sol> <re sol> |
+    <re la'> <re la'> <re la'> <re la'> |
+    <re sib'> re re re |
+    <re mib> <re mib> <do re> <do re> |
+    <re mib> <re mib> <la re> <la re> |
+    <re mib> <re mib> <do re> <do re> |
+    <re mib> <re mib> <la re> <la re> |
+    re re re re re re re re |
+    re re re re re re re re |
+    re re re re re re re re |
+    mib mib re re mib mib re re |
+    re re re re re r re r |
+    re4 r | R2*7 r4 \pizz mi,
   }
 }
 

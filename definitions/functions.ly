@@ -171,9 +171,15 @@ thumbpizz =
              'text (markup #:hspace .4 #:rotate 45
                 #:musicglyph "scripts.stopped"))
 
+leftpizz =
+#(make-articulation "stopped")
+
 plak =
-#(make-music 'ArpeggioEvent
-             'tweaks 'stencil ly:arpeggio::brew-chord-bracket)
+#(let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'stencil ly:arpeggio::brew-chord-bracket
+     (ly:music-property m 'tweaks)))
+   m)
 
 %% Music shortcuts ------------------------------------------------%
 

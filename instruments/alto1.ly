@@ -669,7 +669,7 @@ ActeDeuxSceneDeuxAltoUn = { \AltoUn
     \pizz <la'la>4 r2 | R1 R2. R1 R2. R1
     \arco mib4 reb dob | sib4 r r2 | R2. R1
     sib4 do! re! mib4 r mi fad | sold r2 | R1
-    \pl {la,4\stopped s2 s1 s2. s1 s2. s1 s2. }
+    \pl {la,4\leftpizz s2 s1 s2. s1 s2. s1 s2. }
     {la'2.:32~ \oneVoice la1:~la2.:~la1:~la2.:~la1:~la2.:} |
     <la,la'>4 r R2 \clef treble fad'16 mi fa sol la8 sold |
     do16 lad si dod red8 re fad16 mi fa sol | la4 r r2 \clef alto |

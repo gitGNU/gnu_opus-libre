@@ -591,7 +591,7 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     \pizz la,4 r2 r8 sol'4. r2 | fa4 r2 r8 mi4. r2 |
     fa4 mi fa sol la r2 | R2.
     fa4 mi fa sol la4 r2 | mi4 r r2 | R2. R1 R2. R1
-    <la, la'\stopped>4 r2 R1 R2. R1
+    <la, la'\leftpizz>4 r2 R1 R2. R1
     r2 \arco <fa' la>4 | <mi la> <fa la> <sol la> <la la> |
     r4 <fa la>16 mi fa sol <la la>4 |
     
@@ -615,15 +615,15 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     la4 r R2 | R2.
     \arco la'4 sol fa mi2 mi8 red mi fad |
     sold2~ sold4 r r sib,16 la sib do |
-    re8 r r16 \pizz sib, re\stopped sib |
-    r sib re\stopped sib r sib re\stopped sib |
-    r sib re\stopped sib r sib re\stopped sib |
-    r sib re\stopped sib r8 r16 \arco sib |
+    re8 r r16 \pizz sib, re\leftpizz sib |
+    r sib re\leftpizz sib r sib re\leftpizz sib |
+    r sib re\leftpizz sib r sib re\leftpizz sib |
+    r sib re\leftpizz sib r8 r16 \arco sib |
     do do mi do r si red si r sib re sib r la dod la |
     r lab do lab r8 si16 sol | r8 sib16 sib r8 la16 la |
     R2 r8 mi'16 mi fa8 r | R2
-    re16\stopped \pizz sib re\stopped sib re\stopped sib re\stopped sib |
-    re\stopped sib re\stopped sib sold8 \arco mi'16 mi |
+    re16\leftpizz \pizz sib re\leftpizz sib re\leftpizz sib re\leftpizz sib |
+    re\leftpizz sib re\leftpizz sib sold8 \arco mi'16 mi |
     re8 re16 re mib8 r | R2*2
     \pizz sib4 r dod r mib r | R2 R2.*16
   }
