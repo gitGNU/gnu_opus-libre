@@ -276,6 +276,56 @@ ActeUnSceneUnBis = {
   >>
 }
 
+InterludeUn = {
+  <<
+    \new TopLine \InterludeUnMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \InterludeUnFluteUn
+            \new Staff \InterludeUnFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeUnClarinetteUn
+            \new Staff \InterludeUnClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeUnSaxophoneUn
+            \new Staff \InterludeUnSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \InterludeUnPercus
+
+    \new TopLine \InterludeUnMesures
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+            \new Staff \InterludeUnViolonUn
+            \new Staff \InterludeUnViolonDeux
+            \new Staff \InterludeUnViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeUnAltoUn
+            \new Staff \InterludeUnAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+            \new Staff \InterludeUnVioloncelleUn
+            \new Staff \InterludeUnVioloncelleDeux
+          >>
+        \new Staff \InterludeUnContrebasse
+      >>
+    \new PianoStaff \InterludeUnPiano
+  >>
+}
+
 ActeUnSceneDeux = {
   <<
     \new TopLine \ActeUnSceneDeuxMesures
@@ -515,7 +565,6 @@ ActeUnSceneTroisTer = {
     \new PianoStaff \ActeUnSceneTroisTerPiano
   >>
 }
-
 
 InterludeTrois = {
   <<

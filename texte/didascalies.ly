@@ -116,7 +116,7 @@ objets — par exemple un canard en plastique,
 un très long parapluie, un bilboquet cassé."
 
 ActeUnSceneUnL = "Tour à tour, il les présente cérémonieusement
-à l’Étranger , qui reste parfaitement impassible."
+à l’Étranger, qui reste parfaitement impassible."
 
 ActeUnSceneUnM = "Il lui présente enfin une vieille chaussette
 toute rapiécée, devant laquelle l’Étranger semble réfléchir..."
@@ -129,7 +129,7 @@ ActeUnSceneUnP = "mais ce dernier semble perdu dans ses pensées ;"
 
 ActeUnSceneUnQ = "et c’est le Roi qui finit par reprendre."
 
-ActeUnSceneUnR = "Le Docteur va pour sortir , poursuivi par le
+ActeUnSceneUnR = "Le Docteur va pour sortir, poursuivi par le
 Roi qui, au comble de l’exaspération, finit par l’empoigner."
 
 ActeUnSceneUnS = "Silence brusque. Le Roi se fige dans son
@@ -170,11 +170,11 @@ au moment où la musique commence. D’allure
 quelconque, il est habillé en jardinier."
 
 InterludeUnB = "Il parcourt la scène, inspectant le décor de
-papier , puis s’arrête devant les plantes à
+papier, puis s’arrête devant les plantes à
 l’avant-scène."
 
 InterludeUnC = "Il commence à en tailler
-certaines à l’aide de son sécateur ,
+certaines à l’aide de son sécateur,
 méticuleusement."
 
 InterludeUnD = "Puis soudain, après un
@@ -222,7 +222,7 @@ mauvaise grâce le collier des mains du Roi."
 
 %%%%%%%%%%%%%%%%%%%%%%  Troisième Tableau %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ActeUnSceneTroisA = "La lumière revient sur la cellule de l'Étranger ,
+ActeUnSceneTroisA = "La lumière revient sur la cellule de l'Étranger,
 qui se tient immobile, seul. Entre le Chef de la
 Garde, d'abord impérieux..."
 
@@ -565,7 +565,7 @@ ActeDeuxSceneDeuxZC = "Le Chef ne bouge pas."
 ActeDeuxSceneDeuxZD = "Pendant que le Chef s'éloigne, l'Étranger se met
 en quête d'une cachette pour son os."
 
-ActeDeuxSceneDeuxZDD = "Dans le noir , on entend peu à peu tous les
+ActeDeuxSceneDeuxZDD = "Dans le noir, on entend peu à peu tous les
 personnages, chacun plongés dans leur tâche..."
 
 %%%%%%%%%%%%%%%%%%%%%%  Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%

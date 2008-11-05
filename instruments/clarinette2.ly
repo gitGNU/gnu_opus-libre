@@ -146,6 +146,24 @@ ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
   }
 }
 
+InterludeUnClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R1. R1*3 R1. R1 R1. r4 r16 sold8. \t {sol4 si sib} re2~|
+    re1~ re4 r r2 |
+    la1 la2~la1 si2 do mi~ mi r4 |
+    r4 \tt {r16 sold la si mi re} |
+    fa8 r r4 \ttt {r16 sold, la si mi re} |
+    sol1~ sol2 r8 mi4 si8 |
+    sol'1 r2 | sold,4 r8 re16 mi re si la8 r4 |
+    sold'4. r8 sold4. r8 |
+    sold4 mi8 r sold4 mi8 r la4 mi8 r |
+    re'4 r8 \t {do16 mi la} sol4. re16 sol | mib2. |
+    dod2.~ dod4 r2 | R2.*9
+    fad16 sol fad mi dod mi fad sol fad mi dod mi |
+    fad4 r2 | R2.*3
+  }
+}
+
 ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
   \relative {
     %%% Air de la Soprano2 %%%

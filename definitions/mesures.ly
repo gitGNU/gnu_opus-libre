@@ -384,24 +384,27 @@ ActeUnSceneUnBisMesures = {
 InterludeUnMesures = {
   \time 3/2
       \mark \markup \init-did \InterludeUnA
-      \tempo "Andante con moto" 4 = 63
-            R1.*4
-      \mark \markup \did \InterludeUnB
-  \time 4/2 R1*2/1
-      \mark \markup \did \InterludeUnC
+      \tempo "Andante tranquillo" 4 = 63
+            R1.
+  \time 2/2 R1*3
   \time 3/2 R1.
-      \mark \markup \did \InterludeUnD
-  \time 2/2 R1*5
-      \mark \markup \did \InterludeUnE
+  \time 2/2 R1
+  \time 3/2 R1.*2
+  \time 2/2 R1*2
+  \time 3/2 R1.*2
+  \time 2/2 R1
+  \time 3/4 R2.
+  \time 2/4 R2
+  \time 3/4 R2.
+      \tempo "Andante con moto" 4 = 66
+  \time 2/2 R1*2
   \time 3/2 R1.
   \time 2/2 R1*2
   \time 3/2 R1.
-      \mark \markup \did \InterludeUnF
   \time 2/2 R1
   \time 3/4 R2.   \bar "||"
-      \mark \markup \did \InterludeUnG
-      \tempo "Piu vivo" 4 = 92
-            R2.*16\bar"|."
+      \tempo "Un poco più vivo" 4 = 92
+            R2.*16\bar "|."
 }
 
 ActeUnSceneDeuxMesures = {

@@ -116,7 +116,6 @@ OuvertureClarinetteUn = { \ClarinetteUn
   }
 }
 
-
 ActeUnSceneUnClarinetteUn = { \ClarinetteUn
   \relative {
     R2*2 R2. R2*2 R2. |
@@ -190,6 +189,33 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     R2*4
   }
 }
+
+InterludeUnClarinetteUn = { \ClarinetteBasse
+  \relative {
+    fad4 red8 r fad4 red8 r fad4 red8 r |
+    R1*2
+    sol4 mib8 r sol4 mib8 r | R1.
+    sol4 mi!8 r r2 |
+    sold4 mi8 r sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi~ mi r r2 |
+    sold4 mi8 r sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r | sold2 r4 | 
+    R2-\markup "Prenez la Clarinette" R2. \ClarinetteUn
+    sib'1~ sib2 r8 fa4 re8 |
+    sib'1 r2 | la,4 r8 mi16 fa mi re si8 r4 |
+    la'4. r8 la4. r8 | la4 mi8 r la4 mi8 r sib'4 mi,8 r |
+    mib'4 r8 \tt {do32 fad mi la sol} do4.~ \t {do16 la do} |
+    la2. |
+    sol2.~ sol4 r2 | fad16 sol fad re do re fad sol fad re do re |
+    fad4 r2 | R2.*3 |
+    fad16 sol fad re do re fad sol fad re do re |
+    fad4 r2 | R2.*7
+  }
+}
+    
+    
 
 ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
   \relative {

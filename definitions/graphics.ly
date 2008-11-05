@@ -71,6 +71,7 @@ Skyline =
 0.8975 6.53125 -1.1272656 7.392383 -1.59375 8.53125 curveto
 stroke"
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Interludes %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Arrosoir = \markup \with-dimensions #'(-5 . 5) #'(-10 . 8)
 \postscript #"
 -10 10 translate
