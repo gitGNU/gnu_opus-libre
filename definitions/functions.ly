@@ -39,16 +39,33 @@ pl =
 parallel=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{ << 
-\context Staff = "droite"   $droite
-\context Staff = "gauche"   $gauche 
+\context Staff = "md"   $droite
+\context Staff = "mg"   $gauche 
 >> #})
+
+md = { \change Staff = "md" }
+
+mg = { \change Staff = "mg" }
 
 PianoDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{ <<
-\new Staff = "droite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+\new Staff = "md" \with { \override VerticalAxisGroup #'remove-empty = ##f }
 { \clef treble $droite }
-\new Staff = "gauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+\new Staff = "mg" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+{ \clef bass $gauche }
+>> #})
+
+droite = { \change Staff = "percuDroite" }
+
+gauche = { \change Staff = "percuGauche" }
+
+PercuDeuxMains=
+#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
+#{ <<
+\new Staff = "percuDroite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+{ \clef treble $droite }
+\new Staff = "percuGauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
 { \clef bass $gauche }
 >> #})
 
@@ -222,10 +239,6 @@ oct = #(define-music-function (parser location mus) (ly:music?)
 %%%%%%%%%%%%%%%%%%%%%%%% Layout Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Music layout ---------------------------------------------------%
-
-droite = { \change Staff = "droite" }
-
-gauche = { \change Staff = "gauche" }
 
 #(define modern-auto-beam-settings
   (append default-auto-beam-settings

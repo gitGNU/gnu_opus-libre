@@ -42,12 +42,15 @@ as a printed score under the terms and conditions of the GPL license.
 
   If you want to perform and/or record and/or distribute any recording based on
 the narrative work, you must comply with the  Creative Commons
-Attribution-NonCommercial-ShareAlike license, with the following exception:
+Attribution-NonCommercial-ShareAlike license, with the following exceptions:
   in addition to the credits specified in section 4(d) of the license, if you
 publicly perform, or distribute, any media resulting from the narrative work,
 you must provide in a reasonable manner, either (i) the full machine-readable
 source code that has been used to generate the score, or (ii) a written document
 offering full access to the source code at no charge, to the general public.
+  The title of the narrative work may differ from the title of the source code;
+if so, both titles have to be mentioned whenever the narrative work (or a
+derived work) it either distributed or publicly performed.
 
 3. Special authorizations
 
@@ -58,7 +61,7 @@ directly from any of the authors, for specific purposes and motivations; such
 authorizations (if granted) will not change any of the terms of this license,
 and will remain limited in their extent and implications.
 
-4. Future versions
+4. Future versions of this license
 
   The terms specified by this license are valid for as long as the copyright of
 the work remains applicable in the country where it is read or performed, and

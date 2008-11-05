@@ -5,13 +5,12 @@ printed, read, played and sung.
 
 
 To compile the source code and obtain the score as 
-a PDF, PostScript file, as a PNG image or a MIDI 
-sound file, you will have to use the LilyPond music 
-typesetting engine. It is a GNU Free software that 
-is both powerful and simple to learn, and that you 
-can download on http://www.lilypond.org. It runs on 
-most modern Operating Systems, and has been ported 
-for various architectures.
+a printable or playble file, you will have to use the
+LilyPond music typesetting engine. It is a GNU Free
+software that is both powerful and simple to learn,
+and that you can download on http://www.lilypond.org.
+It runs on most modern Operating Systems, and has been
+ported for various architectures.
 
 
 Having installed LilyPond, just compile the main 
