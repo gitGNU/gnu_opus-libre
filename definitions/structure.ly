@@ -58,7 +58,10 @@ ActeUnSceneQuatreTitre = \markup {
 }
 
 EntracteTitre = \markup {
-  \fill-line { \center-column {\fontsize #10 \EntracteTitreTexte " "}}
+  \fill-line {
+    \center-column {\fontsize #10 \EntracteTitreTexte " "}
+    \Couronne " "
+  }
 }
 
 ActeDeuxSceneUnTitre = \markup {
@@ -75,7 +78,13 @@ ActeDeuxSceneTroisTitre = \markup {
 }
 
 Interlude = \markup {
-\fill-line { \center-column {\fontsize #6 \InterludeTitreTexte }}}
+  \fill-line {
+    \center-column {
+      \fontsize #6 \InterludeTitreTexte
+      \Arrosoir " "
+    }
+  }
+}
 
 Separateur = \markup {
   \fill-line { \center-column { " " \Skyline " "}}

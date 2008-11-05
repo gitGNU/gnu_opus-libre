@@ -88,9 +88,9 @@ PrologueMainDroite = {
     \ttt { re'16 la fa re do si } 
     \ttt { fad' dod la fad red dod}
     \ttt { do sol' re sib sol fa}
-    \gauche
+    \mg
     \tttt{ mi re si la sold fad red }
-    \droite s2 | \oneVoice
+    \md s2 | \oneVoice
     <dod''' re>2\laissezVibrer | R2|
     
     %%% Solo Ténor %%%
@@ -104,8 +104,8 @@ PrologueMainDroite = {
     <sol, lab> r <sol' lab> <sol, lab> r <sol' lab> <sol, lab> r <sol' lab> | <sol,, lab sol'> <sol'' lab> <sol, lab>|
     <fab' mib' fab> <mib sib' reb mib> <reb lab' sib reb> | <sol, lab mib'> <sol lab reb> <sol sib> |
     <reb sol> sib lab | sol r <lab sol'> r <si! sol' lab> r | \stemUp
-    r8 \gauche <red, si'> <lab' sol'> \droite <mi' do'> \gauche <lab, sol'> <red, si'> \droite
-    r  \gauche <red  si'> <lab' sol'> \droite <mi' do'> \gauche <lab, sol'> <red, si'> \droite
+    r8 \mg <red, si'> <lab' sol'> \md <mi' do'> \mg <lab, sol'> <red, si'> \md
+    r  \mg <red  si'> <lab' sol'> \md <mi' do'> \mg <lab, sol'> <red, si'> \md
     r \stemNeutral <fad re'!> <si sol'> <re sib'> <si sol'> <fad re'> |
     r <fad re'> <si sol'> <re sib'> <si sol'> <fad re'>
     la <fa dod'>[ <sold mi'>] <do sold'> <la mi'> <fa dod'>
@@ -113,19 +113,19 @@ PrologueMainDroite = {
     << { 
       < mi' fa sol sib do>4.\laissezVibrer s4.*3
     } \new Voice {
-      r8 \gauche \stemUp <mi,, sol> <fa sib> \stemNeutral <sol reb'> <sib do> <sib mib>
-      \droite <dod fad> <red sold> <fad la> <red sold > <fad la> <sold si> 
+      r8 \mg \stemUp <mi,, sol> <fa sib> \stemNeutral <sol reb'> <sib do> <sib mib>
+      \md <dod fad> <red sold> <fad la> <red sold > <fad la> <sold si> 
     } >>
     << { 
       <la re>8. <fad' la si do>\laissezVibrer s4.*3
     } \new Voice {
-      r8 \gauche \stemUp <mi,, la> <fad do'> \stemNeutral \droite 
+      r8 \mg \stemUp <mi,, la> <fad do'> \stemNeutral \md 
       <la re> <do fa> <re sol> <fa lab> <sol sib> <lab reb> <sib mib> <reb fab > <mib solb>
     } >>
     << { 
       < mi! la!>16 si' <fad sol la do re>4\laissezVibrer s4.*2
     } \new Voice {
-      r8 \gauche \stemUp <sol,, do> <la re> \stemNeutral \droite
+      r8 \mg \stemUp <sol,, do> <la re> \stemNeutral \md
       <do mib> <re fa> <mib lab> <fa sib> <lab dob> <sib reb solb>
     } >>
     <mi la do sold'> <fa fa'> <mib mib'> |
@@ -157,7 +157,7 @@ PrologueMainDroite = {
     <dod' re mi> <dod re mi> <dod re mi> <la, sib do mib> <la sib do mib> <la sib do mib>}
     \new Voice { r8 \stemUp mi'' re sol4 r8} >>
     \stemNeutral <fa, solb lab dob>16 <fa solb lab dob> <fa solb lab dob>
-    \gauche <dod, mi fad sol> <dod mi fad sol> <dod mi fad sol> \droite \clef bass |
+    \mg <dod, mi fad sol> <dod mi fad sol> <dod mi fad sol> \md \clef bass |
     r <mi sol> r <dod fad> r <si mi> |
     fa solb lab si dod re mi re dod si lab solb
     lab sib si dod mi fad sol fad mi dod si lad
@@ -175,7 +175,7 @@ PrologueMainDroite = {
     <la' re fa sib>1\laissezVibrer | R1*2 \clef bass | la,2   sol4 do2 sib4 |
     <sol la sib do  mib>1*1/2 \arpeggio \laissezVibrer \clef treble s1 |
     <dod' mi do'!>2 <la do sold'>\laissezVibrer R1 |
-    r8 \gauche do,,~ \t {do  \droite  mi' <si si'> } \t {la' <mi mi'> re'} |
+    r8 \mg do,,~ \t {do  \md  mi' <si si'> } \t {la' <mi mi'> re'} |
     
     << { \voiceThree <si la'>2.\laissezVibrer } 
     \new Voice { \voiceOne s4 \ottava #1 <fa'' lab reb> <fa lab reb>}
@@ -191,16 +191,16 @@ PrologueMainDroite = {
     r4 \pl <fa,! sib reb>8 <fad' la re!> \pl <red, sold si!> <mi' sol! do>
     r4 \pl <red, sold si>8 <mi' sol do>  \pl <re,! fa sib> <dod' mi la> r |
     \stemUp \t {r8 mi' mib} \t {lab, sol do,} \t {si mi, mib}
-    \gauche \t {lab, sol do,} \stemNeutral \droite | r2
+    \mg \t {lab, sol do,} \stemNeutral \md | r2
     \pl <fa' sold>4 <dod' mi la> \pl <fa, sold> <dod' mi la> |
     r4 <la re! fa> <la dod fa> | r <fa sold dod mi> <fa sold dod mi> |
     r4 \pl dod2 {<fad la re>4 <mid la re>} |
     r4 <fa sold dod> <fa sold dod> | r <dod la'> <dod la'> |
     r <sib reb solb> r <la do fa> |
     
-    r8 r16 \gauche <do,, si'> \set followVoice = ##t
-    \droite <la'' fad'>8 <fad' re'>4 \gauche
-    <do, si'>8~ \set followVoice = ##f <do si'>8. \droite <fad' re'>16 |
+    r8 r16 \mg <do,, si'> \set followVoice = ##t
+    \md <la'' fad'>8 <fad' re'>4 \mg
+    <do, si'>8~ \set followVoice = ##f <do si'>8. \md <fad' re'>16 |
     <re' la'>8 <la' mib'>~ <la mib'>16 <re, la'> <la' mib'>8 <la! mib' lab>4 |
     <la! re la'!>8 r \clef bass <do,,, re> <do re> |
     <re mib> <re mib> <la re> <la re> |
@@ -285,8 +285,8 @@ PrologueMainGauche = {
     <do' do'>2 r4 | <sib sib'>2 <sol sol'>4~ | <sol sol'> <mi mi'>2 |
     <re re'>2 <re'' fa sib re>4~ | <re fa sib re> <re mib fa lab do>8 sol, mi re |
     <dod, dod'>1\laissezVibrer |
-    \t {<dod' dod'>8 <re' dod' re> <dod dod'>} \droite
-    \t {<re' dod' re> <dod re> <re' dod' re> \laissezVibrer } \gauche
+    \t {<dod' dod'>8 <re' dod' re> <dod dod'>} \md
+    \t {<re' dod' re> <dod re> <re' dod' re> \laissezVibrer } \mg
     R2 R2 |
     
     %%% Solo Ténor %%%
@@ -337,7 +337,7 @@ PrologueMainGauche = {
     \repeat tremolo 4 {mi'32 fa}
     \repeat tremolo 4 {mi, fa}
     \repeat tremolo 4 {mi' fa}
-    mi, fa mi' fa mi fa \droite mi' fa mi'4. r8 \gauche
+    mi, fa mi' fa mi fa \md mi' fa mi'4. r8 \mg
     << { \voiceTwo %\grace la,,,,8~
     la,,,,1~ \oneVoice  la2~ la8 la \t {la la la}}
     \new Voice { \voiceOne <fad'' dod'>1 \arpeggio \laissezVibrer s1} >>
@@ -346,7 +346,7 @@ PrologueMainGauche = {
     \repeat tremolo 4 {mi'32 red}
     \repeat tremolo 4 {mi, fad}
     \repeat tremolo 4 {mi' red}
-    red, mi red' mi red mi \droite red' mi red'4. r8 \gauche
+    red, mi red' mi red mi \md red' mi red'4. r8 \mg
     << { \voiceTwo %\grace la,,,8~  
     la,,,1~ \oneVoice la2~ la8 sold' \t {sold sold sold}}
     \new Voice { \voiceOne <sold' fa'>2 \arpeggio <fa dod' mi>\laissezVibrer s1} >>
@@ -357,7 +357,7 @@ PrologueMainGauche = {
     \pl <sol,, sol'>2. {r4 <fad'' si re> <fad si re>} |
     <sib,, sib'> <fad'' la re> <mi,, mi'> <sol'' do> |
     <sol,, sol'> sib' mib fad si! | R2.*2
-    \droite \stemDown mi'8 sol, \gauche mi si lab mib do4 \stemNeutral |
+    \md \stemDown mi'8 sol, \mg mi si lab mib do4 \stemNeutral |
     do,1 \pl <fad, fad'>2 { r4 <lad'' dod>} sold, |
     \pl <do, do'>2. {r4 la'' la} \pl <fad,, fad'>2. {r4 si' si} |
     \pl <do, do'>2. {r4 <mi' la> <mi la>} |
@@ -542,8 +542,8 @@ ActeUnSceneUnMainDroite = {
     \ttt {sol,16 lab sib dod red mi} \ttt {fad mi red dod sib lab}
     \ttt {sib dod red mi fad la} \ttt {si la fad mi red dod} |
     \ttt {red mi fad la si do} \ttt {re do si la fad mi} 
-    \ttt { \gauche \stemUp red \droite \stemNeutral mi fad la si do} 
-    \ttt { \gauche \stemUp fad,\droite \stemNeutral la si do re fa}  \clef treble |
+    \ttt { \mg \stemUp red \md \stemNeutral mi fad la si do} 
+    \ttt { \mg \stemUp fad,\md \stemNeutral la si do re fa}  \clef treble |
     r8 <sib do> <sib' do>16 <sib, do> r8 <sib, do> <sib' do> <sib' do>16 <sib, do>8 <sib' do>16|
     <sib, do>8 <sib, do>16 <sib' do> r <sib do>8 <sib' do>16 <sib, do>8 <sib' do>16 <sib, do> r <sib do>8 <sib' do>16|
     r8 <sib, do> <sib' do>16 <sib, do>8 <sib' do>16 <sib, do>8 <sib, do>16 <sib' do>|
@@ -639,19 +639,19 @@ ActeUnSceneUnMainDroite = {
     
     \clef bass
     << <do, re>2 \\ {
-    \gauche \stemUp re,16 \droite \stemNeutral
+    \mg \stemUp re,16 \md \stemNeutral
     mib fa lab sib lab fa mib } >>
-    \gauche \stemUp re \droite \stemNeutral
+    \mg \stemUp re \md \stemNeutral
     fa lab sib reb sib lab fa
-    \gauche \stemUp re \droite \stemNeutral
+    \mg \stemUp re \md \stemNeutral
     mi sol la sib la sol mi 
-    \gauche \stemUp re \droite \stemNeutral
+    \mg \stemUp re \md \stemNeutral
     la' sib do mib do sib la
-    \gauche \stemUp re,\droite \stemNeutral
+    \mg \stemUp re,\md \stemNeutral
     fa sol lab sib lab sol fa
-    \gauche \stemUp re \droite \stemNeutral
+    \mg \stemUp re \md \stemNeutral
     sib' reb mib fab mib reb sib
-    \gauche \stemUp re,\droite \stemNeutral
+    \mg \stemUp re,\md \stemNeutral
     mi fa sol sib do reb mib \clef treble solb lab la si re mi fa sol |
     
     <sib, sib'>8 sib <mib fa la> do <mib fa la> la, la <mib' la sib> |
@@ -769,8 +769,8 @@ ActeUnSceneUnMainGauche = {
     \repeat unfold 10 {<mib mib'> fab} |
     \ottava #0
     \t {<mi mi'>4 si'' sol'}
-    \t {si, sol' mi'} \droite
-    \stemDown  \tupletDown \t {sol, mi' si'} \tupletNeutral \stemNeutral | \gauche
+    \t {si, sol' mi'} \md
+    \stemDown  \tupletDown \t {sol, mi' si'} \tupletNeutral \stemNeutral | \mg
     R1. r2 r4 mi,, sol fa |
     
     %%% Duo Soprano1/Baryton1 %%%
@@ -860,7 +860,7 @@ ActeUnSceneUnMainGauche = {
     <do fa>8 r r4 |
     <do fa> <do fa> <sib mib> <sib mib> |
     <si! mib lab>2 <sol do fa>8 r r4 |
-    << R1 \\ {s2 s4 \droite <lad' fad'> \gauche } >>
+    << R1 \\ {s2 s4 \md <lad' fad'> \mg } >>
     <sold mi'> <fa reb'> <mib si'> <re fa sib> |
     <do mib lab> <la re fa> <sol do mib> r |
     <fad la re> <mi sol do> <dod fad la> r |
@@ -913,10 +913,10 @@ ActeUnSceneUnBisMainDroite = {
     \t {<sol, sol'>8 <la la'> <do do'> }
     
     <re re'>4 <re, re'> <re, re'>2 |
-    \gauche \stemUp r16 si fad' sold \stemNeutral \droite
+    \mg \stemUp r16 si fad' sold \stemNeutral \md
     si do re fa la do re mib |
     <re re'>4. <re, re'>8~ <re re'>2 |
-    \gauche \stemUp r16 si, mi sold \stemNeutral \droite
+    \mg \stemUp r16 si, mi sold \stemNeutral \md
     sib mib sol do red mi fad si |
     <do, fa la re>8. <fa la re>16 <fa la re>8 <si, fa' la re>~ <si fa' la re>16 <fa' la re> <fa la re>8 |
     <mib lab re>8. <mib lab re>16 <mib lab re>8 <dod sol' re'>~ <dod sol' re'>16 <dod sol' re'> <dod sol' re'>8 |
@@ -1533,8 +1533,8 @@ ActeUnSceneTroisBisMainDroite = {
      << { fad'4\> red8\! r } \\ <sib do>2 >>
     <fad' la fa'!>4\f( <red si' re!>8) r <red fad re'!>4( <do la' si>8) r |
     <sib do la'>8\> <sol red' fad>16 r <sol sib fad'>8 <mi do' red>16\! r
-    \gauche <mi sol red'>8 <reb sib' do>16 r
-    \droite R1*2
+    \mg <mi sol red'>8 <reb sib' do>16 r
+    \md R1*2
     \tt {fad16\pp( sol la do re)}
     \repeat unfold 3 { \tt {fad,16( sol la do re)} }
     \tt { \simile fad,16 sol la do re} 
@@ -1661,7 +1661,7 @@ ActeUnSceneTroisTerMainDroite = {
   fa sol mi dod fad dod sol' red re fad mid mi |
   sol red fad dod sol' red re fad mid mi lab sib |
   sol re lab mib la,! lab' mib la,! mi sib la' mi 
-  \gauche sib fa si,! fa' \droite |
+  \mg sib fa si,! fa' \md |
   
   R2. r4 <si! fa'! sib>2~| <si fa' sib>4 <sib mi la>2 |
   R2. r4 <sib mi la>4. <mi! la mib'>8~| <mi la mib'>4 <la! mib' lab>2 |
@@ -1716,9 +1716,9 @@ ActeUnSceneTroisTerMainGauche = {
   {s2 s2 mib4~ \hideNotes mib} >> r2 |
   <re' fad>8 <dod fa> <fa, re'> <fad dod'> <fad la> <fa sib> |
   <re sib'> <dod la'> <dod fa> <re fad> <fa, re'> <fad dod'> |
-  << {\droite \stemDown <mib'' sol>8 \gauche \stemUp <re fad> <fad, mib'> <sol re'>}
+  << {\md \stemDown <mib'' sol>8 \mg \stemUp <re fad> <fad, mib'> <sol re'>}
   \\{mib,4\laissezVibrer s4 }>> <mib' si'>8 <re lad'> <lad sol'> <si fad'> |
-  << {\droite \stemDown <mi'! sold>8 \gauche \stemUp <red sol> <si mi> <do mib>}
+  << {\md \stemDown <mi'! sold>8 \mg \stemUp <red sol> <si mi> <do mib>}
   \\{mi,,!4\laissezVibrer s4 }>> \clef treble <fa'' la>8 <mi sold> <do fa> <dod mi> \clef bass |
   
   <re,, re'>8 sol do fad, lad si sol sold la fad sib sol lab reb sol, si |
@@ -1804,7 +1804,7 @@ ActeUnSceneQuatreMainDroite = {
     \stemUp la, \stemNeutral r r4 r16 si,, si si |
     << { \voiceTwo mi2. <mib sol>2. } \\ { \voiceOne
     r8 la la la re4~ re do do8 do } >> <sol fa'>2. |
-    \gauche \stemUp re,16 mi sol la  sib do \droite \stemNeutral mib fa fad sold si dod |
+    \mg \stemUp re,16 mi sol la  sib do \md \stemNeutral mib fa fad sold si dod |
     <re, re'> sol'[ sol sol] do re, re re sol la, la la |
     <re, re'>4 <do do'> <re re'>8 la'~ | la16 sold'[ sold sold] 
     dod red, red red sold si, si si | <mi, mi'>4 <re re'> <mi mi'>8 si'~ |
@@ -1883,9 +1883,9 @@ ActeUnSceneQuatreMainDroite = {
     \repeat tremolo 2 {do,la} \repeat tremolo 2 {reb la} \repeat tremolo 2 {mib'la,}}
     \pl {%\set followVoice = ##t
     \repeat tremolo 12 {do <la si>}
-    \repeat tremolo 8 {dod32 <la si>}\gauche
+    \repeat tremolo 8 {dod32 <la si>}\mg
     \repeat tremolo 4 {sib32 la}
-    \repeat tremolo 4 {do! la} \droite
+    \repeat tremolo 4 {do! la} \md
     \repeat tremolo 12 {re32 la}} 
     {<red mi fad>2. <re!    fad>2 <si! red>4 <dod mid> <dod fad>2.} |
     %\set followVoice = ##f
@@ -1930,8 +1930,8 @@ ActeUnSceneQuatreMainDroite = {
     \repeat unfold 6 {<sol la> <do red sold>}
     \repeat unfold 6 {do <mib fad si>}
     \repeat unfold 6 {mib <fa sold dod>}
-    \repeat unfold 2 {re're,re\gauche \stemUp re,\stemNeutral \droite re're re're,}
-    re' re, re \gauche \stemUp re, \stemNeutral \droite r4 r2 | R1 \clef bass |
+    \repeat unfold 2 {re're,re\mg \stemUp re,\stemNeutral \md re're re're,}
+    re' re, re \mg \stemUp re, \stemNeutral \md r4 r2 | R1 \clef bass |
     \repeat unfold 8 <re sib' re>8 R2
     \repeat unfold 6 <re sib' re>8 R2.
     \repeat unfold 4 <re sib' re>8 R1 \clef treble |
@@ -1939,16 +1939,16 @@ ActeUnSceneQuatreMainDroite = {
     r4 <sib' dob sib'>2 | <sib dob sib'> <sib dob sib'>4\laissezVibrer | R2.
     \pl {s4 <sib dob sib'>2 <sib dob sib'> <sib dob sib'>4 r4 <sib dob sib'>2}
     {sib'8 solb fa dob sib solb fa solb sib dob fa solb sib2.\laissezVibrer}
-    \t {r8 sib solb} \t {fa dob sib} \gauche \t {re, dod mib,} \droite |
+    \t {r8 sib solb} \t {fa dob sib} \mg \t {re, dod mib,} \md |
     r4 <sib'' dob sib'>2 <sib dob sib'> <sib dob sib'>4\laissezVibrer |
     \pl {s4 <sib do! sib'>2 <sib do sib'><sib do sib'>4 s2.}
-    {sib'8 solb fa re do sib \gauche sol fad re fad sol sib \droite
+    {sib'8 solb fa re do sib \mg sol fad re fad sol sib \md
     do re fa! solb sib4\laissezVibrer } r4 <sib, do sib'>2 |
     \pl {<sib re sib'>2 <sib re sib'>4} {\t{re'8 sib la} \t{fad mi re}
-    \gauche \t {si sib fad} \droite } r4 <sib re sib'>2
+    \mg \t {si sib fad} \md } r4 <sib re sib'>2
     \pl {s4 <sib mib sib'>2 <sib mib sib'>2 <sib mib sib'>4\laissezVibrer
-    do'4\rest <sib, mib sib'>2} {sib'8 solb fa reb do \gauche lab sol mib re
-    mib sol lab  do \droite reb fa solb sib4\laissezVibrer}
+    do'4\rest <sib, mib sib'>2} {sib'8 solb fa reb do \mg lab sol mib re
+    mib sol lab  do \md reb fa solb sib4\laissezVibrer}
     r <sib, mi! sib'>2\laissezVibrer |
     R2.*2 |
     
@@ -1992,7 +1992,7 @@ ActeUnSceneQuatreMainGauche = {
     <la, re sol>8 r \t { la re sol } \t { do sol re } |
     la16 la'[ la la] re4 do | re8 la \t { do, sol' re'} \t { la' re, sol, } |
     do,16 la'[ la la] re4 do | 
-    << {\droite \voiceTwo re8 la4. s4 } \\
+    << {\md \voiceTwo re8 la4. s4 } \\
     {s4 \voiceOne sib8 fa4. } \\
     {s2 \voiceTwo solb8 reb } >>
     <la re sol>2. << {
@@ -2033,10 +2033,10 @@ ActeUnSceneQuatreMainGauche = {
     \pl {<do, do'>4. fad4 do'4 fad,8} {
     r8 <red' sold si>~ <red sold si>4 <la' re!> <sold si mi>} |
     \pl {<do,, do'>4. fad4 do' fad,8} {
-    r8 \droite \stemDown <la' re fa!>~ <la re fa>4 <si! mi! sol!> <re! fa! sib>}|
-    \droite \stemDown <do mi sol>8 \stemNeutral \gauche do, 
-    \droite \stemDown <do' fa> \stemNeutral \gauche do, 
-    \droite \stemDown <do' sol'> \stemNeutral \gauche fad,, r4 |
+    r8 \md \stemDown <la' re fa!>~ <la re fa>4 <si! mi! sol!> <re! fa! sib>}|
+    \md \stemDown <do mi sol>8 \stemNeutral \mg do, 
+    \md \stemDown <do' fa> \stemNeutral \mg do, 
+    \md \stemDown <do' sol'> \stemNeutral \mg fad,, r4 |
     R1 la16 fad sold red dod sib' do sol fa re mi' si |
     la8 r r4 r2 | r4 la8 mi sol re dod sold' si fad fa do mib' sib |
     la8 r r2 | s1 \clef treble | 
@@ -2048,12 +2048,12 @@ ActeUnSceneQuatreMainGauche = {
     }
     {
       r8 r16 <dod'' fad>~ <dod fad>8 <red mi sold>~ <red mi sold>16 <fad sol si>8.
-      \droite \stemDown <mi sib' dod>8\noBeam \laissezVibrer \stemNeutral 
-      \gauche \clef treble %\set followVoice = ##f 
+      \md \stemDown <mi sib' dod>8\noBeam \laissezVibrer \stemNeutral 
+      \mg \clef treble %\set followVoice = ##f 
       <dod mi sol sib>~ \t {<dod mi sol sib> <dod mi sol sib> <dod mi sol sib>~}
       <dod mi sol sib>16 <dod mi sol sib> <dod mi sol sib> <dod mi sol sib>~
       \t {<dod mi sol sib>8 <dod mi sol sib> <dod mi sol sib>}
-      \clef bass s8 \droite \stemDown
+      \clef bass s8 \md \stemDown
       <dod mi sol sib>~ \t {<dod mi sol sib> <dod mi sol sib> <dod mi sol sib>~}
       <dod mi sol sib>16 <dod mi sol sib> <dod mi sol sib> <dod mi sol sib>~
       \t {<dod mi sol sib>8 <dod mi sol sib> <dod mi sol sib>}
@@ -2224,13 +2224,13 @@ ActeDeuxSceneUnMainDroite = {
     r <la, re mi sold la> r | <la re mi sold la> r <la re mi sold la> r | r <la re mi sold la> r |
     <la re mi sold la> r <la re mi sold la> r | r <la re mi sold la> r |
     <la re mi> r <la re mi> r |
-    r8 <la do re> <do re fad sol> \gauche <mi, fad> \droite r <re' fad sol> |
+    r8 <la do re> <do re fad sol> \mg <mi, fad> \md r <re' fad sol> |
     <fad sol do> <la, do re> r <la do re> <do re fad sol> 
-    \gauche <mi, fad> r <mi fad> \droite |
-    <la do re> \gauche <si, mi> r <si mi> <fad' la> fad, \droite |
+    \mg <mi, fad> r <mi fad> \md |
+    <la do re> \mg <si, mi> r <si mi> <fad' la> fad, \md |
     r4 <la' re mi> r <la re mi> | r <la re mi> r |
-    r8 <si mi> <re mi la> \gauche <fad, si> 
-    r <fad sold> \droite <si re mi> \gauche <dod, re> \droite |
+    r8 <si mi> <re mi la> \mg <fad, si> 
+    r <fad sold> \md <si re mi> \mg <dod, re> \md |
     r4 <la' re mi> r | r <la re mi> r <si re mi sol la> |
     
     r4 <do re> r | r8 <do re>4. r8 <do re>4. |
@@ -2296,7 +2296,7 @@ ActeDeuxSceneUnMainGauche = {
       << { si mi,~ mi2 } \\ { s4 fad, dod' } >> sid8 sold | fad2. r4 |
       sold8 fad dod' sid4 fad8 | do'!8 fad, sol'!4 <fad, fad'>8 re' do4 |
       fad,8 sold sid4 dod | fad,8 dod' r4 r2 | sib4 <fa' do' re sol> mi8 do |
-      sib4 \droite \stemDown <do' re fad sol> r <do re fad sol> \gauche \stemNeutral|
+      sib4 \md \stemDown <do' re fad sol> r <do re fad sol> \mg \stemNeutral|
       << { \voiceTwo fad,,2.~ fad2. } \\ {\voiceOne r4 mib' r mib r mib }>> r |
       sib2. << { \voiceTwo fad1~ fad2 } \\ { \voiceOne
       r4 <si mi> r <si mi> r <si mi> } >> r |
@@ -2486,11 +2486,11 @@ ActeDeuxSceneUnBisMainDroite = {
     R2. R2 R4. R2 R1*5/8 R2.
     fad,16 sol fad mib re mib sol la sol mib re mi sol la re mi |
     <fad, dod' fa! la>4\arpeggio 
-    \gauche \stemUp la,la\droite \stemNeutral <fad' fa'! la>
-    \gauche \stemUp la,  \droite \stemNeutral <fad' fa'! la>
-    \gauche \stemUp la,  \droite \stemNeutral <fad' fa'! la>
-    \gauche \stemUp la,la\droite \stemNeutral <fad' fa'! la>
-    \gauche \stemUp la,  \droite \stemNeutral r8 
+    \mg \stemUp la,la\md \stemNeutral <fad' fa'! la>
+    \mg \stemUp la,  \md \stemNeutral <fad' fa'! la>
+    \mg \stemUp la,  \md \stemNeutral <fad' fa'! la>
+    \mg \stemUp la,la\md \stemNeutral <fad' fa'! la>
+    \mg \stemUp la,  \md \stemNeutral r8 
     <la' mid' fad> mi fad dod mib |
     <la, si! sib'>4 r1 |
     r4
@@ -2516,12 +2516,12 @@ ActeDeuxSceneUnBisMainGauche = {
     <fa dod' re la'>\arpeggio r | <re la' sib> r1 | R1*5/4*2
     <sib  re'>1*5/4\laissezVibrer R1*5/4*2 | <dod dod'>2 <re re'> <mi mi'>4 |
     <sol sol'>1*5/4\laissezVibrer R1*5/4 | 
-    <re do'!>4 \droite \stemDown re''re\stemNeutral \gauche 
-    <re,, do'> \droite \stemDown re''  \stemNeutral \gauche
-    <re,, do'> \droite \stemDown re''  \stemNeutral \gauche
-    <re,, do'> \droite \stemDown re''re\stemNeutral \gauche 
-    <re,, do'> \droite \stemDown re''  \stemNeutral \gauche r8
-    <re,, do'>r\droite \stemDown re''  \stemNeutral \gauche r4
+    <re do'!>4 \md \stemDown re''re\stemNeutral \mg 
+    <re,, do'> \md \stemDown re''  \stemNeutral \mg
+    <re,, do'> \md \stemDown re''  \stemNeutral \mg
+    <re,, do'> \md \stemDown re''re\stemNeutral \mg 
+    <re,, do'> \md \stemDown re''  \stemNeutral \mg r8
+    <re,, do'>r\md \stemDown re''  \stemNeutral \mg r4
     <sold,, si fa' sol!> r1 R1*5/4*3
     \ottava #-1
     sol,8 mi sol mi sol mi sol mi sol mi |
@@ -2536,11 +2536,11 @@ ActeDeuxSceneUnBisMainGauche = {
     <sol fad'> mi <sol red'> mi <sol fad'> mi <sol red'> mi sol lab |
     <sol fad'> mi <sol red'> mi <sol fad'> mi <sol red'> mi sol lab |
     \ottava #0
-    <re sol dod>4 \droite \stemDown mi''mi\stemNeutral \gauche
-    <re,,sol dod> \droite \stemDown mi''  \stemNeutral \gauche
-    <re,,sol dod> \droite \stemDown mi''  \stemNeutral \gauche
-    <re,,sol dod> \droite \stemDown mi''mi\stemNeutral \gauche
-    <re,,sol dod> \droite \stemDown mi''  \stemNeutral \gauche r8
+    <re sol dod>4 \md \stemDown mi''mi\stemNeutral \mg
+    <re,,sol dod> \md \stemDown mi''  \stemNeutral \mg
+    <re,,sol dod> \md \stemDown mi''  \stemNeutral \mg
+    <re,,sol dod> \md \stemDown mi''mi\stemNeutral \mg
+    <re,,sol dod> \md \stemDown mi''  \stemNeutral \mg r8
     <sol,,dod fad> do'! sol la mi |
     <do, fad si fa'!>4\arpeggio r1 R1*5/4 |
     <mi, red' fa!>4 r1 R1*5/4
@@ -2609,17 +2609,17 @@ ActeDeuxSceneUnBisMainGauche = {
     \tt {<fa sib> re <fa mib'> re <solb mib'>}
     \tt {<fa sib> re <fa mib'> re <solb mib'>}|
     
-    re8  fa mib' \droite \stemDown fad \gauche \stemNeutral r4 |
-    re,8 fa mib' \droite \stemDown fad \gauche \stemNeutral r4 |
-    re,8 fa mib' \droite \stemDown fad \gauche \stemNeutral <re, fa>4 |
-    re8  fa mib' \droite \stemDown fad \gauche \stemNeutral r4 |
-    re,8 fa mib' \droite \stemDown fad \gauche \stemNeutral r4 |
-    re,8 fa mib' \droite \stemDown fad \gauche \stemNeutral
+    re8  fa mib' \md \stemDown fad \mg \stemNeutral r4 |
+    re,8 fa mib' \md \stemDown fad \mg \stemNeutral r4 |
+    re,8 fa mib' \md \stemDown fad \mg \stemNeutral <re, fa>4 |
+    re8  fa mib' \md \stemDown fad \mg \stemNeutral r4 |
+    re,8 fa mib' \md \stemDown fad \mg \stemNeutral r4 |
+    re,8 fa mib' \md \stemDown fad \mg \stemNeutral
     re,8 fa mib'4 <fa, sib>8 mib' fad4 |
-    mi,8 si'fad' \droite \stemDown sol \gauche \stemNeutral fad  si,mi,4|
-    fad8 mi'sold \droite \stemDown la  \gauche \stemNeutral r4 |
+    mi,8 si'fad' \md \stemDown sol \mg \stemNeutral fad  si,mi,4|
+    fad8 mi'sold \md \stemDown la  \mg \stemNeutral r4 |
     fad,8 si mi la dod4
-    sold,8 re'fad\droite \stemDown si  \gauche \stemNeutral
+    sold,8 re'fad\md \stemDown si  \mg \stemNeutral
     sold, red' si'4 fad,8 dod' <la sold'>4 |
     \pl fa2\laissezVibrer {sib8 mib lab reb } R4.
     \pl mi,,2\laissezVibrer {r4 <mi' la red>\laissezVibrer } R2 
@@ -2685,7 +2685,7 @@ ActeDeuxSceneDeuxMainDroite = {
     sold' <la, re> sold' <la, re> la' <sib, red mi> <sib red mi> <sib red mi>
     <sib red mi>8 <sib red mi>16 <sib red mi>|
     sold' <la, re> sold' <la, re>\t { la'8 <sib, mib> <si mib>}
-    \tt { \gauche si,16 fad' la \droite do mi!} 
+    \tt { \mg si,16 fad' la \md do mi!} 
     << \voiceTwo <do mi>1.\arpeggio \\ \voiceOne {la'4 sol fa mi fa8 mi fa sol}>>
     la4 sol fa mi fa8 mi fa sol | <fa la>4 <dod mi> r1 |
     <dod fa la>4 <fa, la mi'> r2 | R1 | la'4 sol fa |
@@ -2765,7 +2765,7 @@ ActeDeuxSceneDeuxMainDroite = {
     <fa la>16 mi fa sol la sold la si dod do reb mib fa mi fa sol |
     \pl {fad, mi fa sol la sol lab sib} la'2
     do,16 lad si dod red dod re mi fad mi fa sol |
-    <la, la'>2. r4 | r2 \gauche do,16 \droite la sib do mib dod re mi |
+    <la, la'>2. r4 | r2 \mg do,16 \md la sib do mib dod re mi |
     sol mi fa sol sib sold la si re si do re fa red mi fad |
     <la, la'>4 <do, reb fa>8 <mi la do> <fa lab reb> |
     <la sold'> <la sold'> <sold la'>4 <la, sold'>8 |
@@ -2920,8 +2920,8 @@ ActeDeuxSceneDeuxMainGauche = {
     mi mi \t {mi mi mi} } {r2 red' red } red8 red \t {red red red} |
     \ottava #0
     <re' dod' mib>4 r2 |
-    \stemUp re,16.[ <sold si fa'>32 \droite \stemDown <dod' mib re'>8]
-    \stemNeutral \gauche r4 \clef treble |
+    \stemUp re,16.[ <sold si fa'>32 \md \stemDown <dod' mib re'>8]
+    \stemNeutral \mg r4 \clef treble |
     r2 r4 re16 si8 re16 | <sol, mib'>1~ sol2.~sol <fad la do>2.\arpeggio ~
     <fad la do>2 \laissezVibrer r4 \clef bass |
     r8 r16 <dod fad> <sib  la'>8 r r4 |
@@ -3098,11 +3098,11 @@ ActeDeuxSceneTroisMainDroite = {
     fa<mi'sol><mi sol><fa lab>lab,<mi'sol><fa lab>lab,<mi'sold><mi sold>|
     
     <sol, la mi' la>8 sold, <sold, la'> <sib fad'> | sib'
-    \gauche \stemUp <mid,,fad>16 s \droite \stemNeutral <dod' re> <fad sol> |
+    \mg \stemUp <mid,,fad>16 s \md \stemNeutral <dod' re> <fad sol> |
     r8 <la, sold'> <sold la'> <si fa'> si'
-    \gauche \stemUp <sol, lab>16 s \droite \stemNeutral <red' mi> <fad sol> |
+    \mg \stemUp <sol, lab>16 s \md \stemNeutral <red' mi> <fad sol> |
     r8 <fad, sold'> <sol la'> <sold fad'> <re' sol dod>
-    \gauche \stemUp <sol, lab>16 s \droite \stemNeutral <fad' sol> <do' reb>|
+    \mg \stemUp <sol, lab>16 s \md \stemNeutral <fad' sol> <do' reb>|
     s4. <sib la'>2\laissezVibrer r4
     r8 sold16 sold la2~ | la4 sol fa mi2.~ mi2 
     \pl {r8 sold16 sold la4 r8 mi16 mi fa4 r8 re! do do sib sib}
@@ -3256,8 +3256,8 @@ ActeDeuxSceneTroisMainDroite = {
     \ottava #0 \t {re,16 mib fa} |
     lab8 \t {sold,16 si dod} re8 \t {re,16 mi sol} lab8 \t { sold,16 la do} |
     \tt {re la sib do dod } \tt { re fad, la sib dod} \ttt { re fa, fad la sib re } |
-    \tt {mib fad, lad si re } \tt {mib \stemUp \gauche mi, \stemNeutral \droite sol si do } 
-    \ttt { mib \stemUp \gauche re, fad \stemNeutral \droite sol si red } |
+    \tt {mib fad, lad si re } \tt {mib \stemUp \mg mi, \stemNeutral \md sol si do } 
+    \ttt { mib \stemUp \mg re, fad \stemNeutral \md sol si red } |
     mi <sol, si> <sol si> fa' <lab, do> dod mi <la, do> <la do> fa' <fa, la> dod' |
     mi <lab, do> <lab do> dod <mi mi'> <fa fa'> |
     <lab re lab'>8 \t { fa'16 fad sol } lab8 \t {si,16 do dod } re8 \t  {fa,16 fad sol } |
@@ -3441,7 +3441,7 @@ ActeDeuxSceneTroisMainGauche = {
     \stemDown <sol  fa'> <re' mib> s <lad' si> s8 \stemNeutral |
     mi,16 <la si> re <la si> mi <la si> re <la si> |
     \stemDown <mi red'> la s <dod' re> s8 \stemNeutral |
-    re,,16 <re' mi> <dod red> \droite <re' mi> <dod red> <mib' fa> \gauche |
+    re,,16 <re' mi> <dod red> \md <re' mi> <dod red> <mib' fa> \mg |
     <dod,,, do'!>2\laissezVibrer r4 | R2.*6 R2
     sol'?2~ sol4 r2 |
     do,8 <do sol'> \pl {\t{do do do}} si'4\laissezVibrer do,4
@@ -3534,12 +3534,12 @@ ActeDeuxSceneTroisMainGauche = {
     <re re'>8 sold <re re'> sold <re re'> sold |
     <si re> re, <sib' re> re, <si' re> re, |
     <re' sold> re, <re' sold> re, <re' sold> re, |
-    \stemDown \droite <re''sold> \stemNeutral \gauche re,
-    \stemDown \droite <re' sold> \stemNeutral \gauche re,
-    \stemDown \droite <re' sold> \stemNeutral \gauche re, |
-    \stemDown \droite <re'  sib'> \stemNeutral \gauche re,
-    \stemDown \droite <mib' lab do> \stemNeutral \gauche re,
-    \stemDown \droite <fad' si re> \stemNeutral \gauche re,
+    \stemDown \md <re''sold> \stemNeutral \mg re,
+    \stemDown \md <re' sold> \stemNeutral \mg re,
+    \stemDown \md <re' sold> \stemNeutral \mg re, |
+    \stemDown \md <re'  sib'> \stemNeutral \mg re,
+    \stemDown \md <mib' lab do> \stemNeutral \mg re,
+    \stemDown \md <fad' si re> \stemNeutral \mg re,
     <re, re'>16 fa mi mib re lab' sol fa \tt { re sib' lab sol fa } |
     \tt { re sib' sol fa mi } \tt { re sib' lab fa mib } \ttt { re sib' la sol mi re } |
     dod8 re' dod, re' dod,4 | si8 sol' \stemDown si, sol' si, sol' \stemNeutral |
@@ -3593,9 +3593,9 @@ ActeDeuxSceneTroisMainGauche = {
     <sib fa' sold> mi <la do fa sold> sol |
     <sold, re' mib la>8 r r2 |
     \ottava #-1 \clef bass
-    \t {<re,,, do' re>8 \ottava #0 \droite <do''' mib lab> \gauche
-    <si, mi sol> } \t { \droite <dod' fad la> \gauche <fa, sib> \droite 
-    <sold' si mi> \gauche } s4 |
+    \t {<re,,, do' re>8 \ottava #0 \md <do''' mib lab> \mg
+    <si, mi sol> } \t { \md <dod' fad la> \mg <fa, sib> \md 
+    <sold' si mi> \mg } s4 |
     R2.*4 R2*3
     R2.*6 \clef treble
     <do, si'>2.~<do si'>4 r8 <si do'>~<si do'>4~<si do'> <do si'>2~ |

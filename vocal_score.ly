@@ -62,9 +62,9 @@ Prologue = {
       >>
      \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \PrologueMainDroite
+        \new StaffPiano = "md"    \PrologueMainDroite
         \new Dynamics << \PianoDynamics \PrologueNuances >>
-        \new StaffPiano = "gauche"    \PrologueMainGauche
+        \new StaffPiano = "mg"    \PrologueMainGauche
       >>
      }
   >>
@@ -84,9 +84,9 @@ ActeUnSceneUn = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \ActeUnSceneUnMainDroite
+        \new StaffPiano = "md" \ActeUnSceneUnMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneUnNuances >>
-        \new StaffPiano = "gauche"    \ActeUnSceneUnMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneUnMainGauche
       >>
     }
   >>
@@ -103,9 +103,9 @@ ActeUnSceneUnBis = {
         \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneUnBisBarytonDeuxTexte }
       >>
     \new PianoStaff { \Accompagnement <<
-        \new StaffPiano = "droite"    \ActeUnSceneUnBisMainDroite
+        \new StaffPiano = "md" \ActeUnSceneUnBisMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneUnBisNuances >>
-        \new StaffPiano = "gauche"    \ActeUnSceneUnBisMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneUnBisMainGauche
       >>
     }
   >>
@@ -123,9 +123,9 @@ ActeUnSceneDeux = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \ActeUnSceneDeuxMainDroite
+        \new StaffPiano = "md" \ActeUnSceneDeuxMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneDeuxMesures >>
-        \new StaffPiano = "gauche"    \ActeUnSceneDeuxMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneDeuxMainGauche
       >>
     }
   >>
@@ -143,9 +143,9 @@ ActeUnSceneTrois = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \ActeUnSceneTroisMainDroite
+        \new StaffPiano = "md" \ActeUnSceneTroisMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneTroisMesures >>
-        \new StaffPiano = "gauche"    \ActeUnSceneTroisMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneTroisMainGauche
       >>
     }
   >>
@@ -163,9 +163,9 @@ ActeUnSceneTroisBis = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \ActeUnSceneTroisBisMainDroite
+        \new StaffPiano = "md" \ActeUnSceneTroisBisMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneTroisBisMesures >>
-        \new StaffPiano = "gauche"    \ActeUnSceneTroisBisMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneTroisBisMainGauche
       >>
     }
   >>
@@ -183,9 +183,9 @@ ActeUnSceneTroisTer = {
       >>
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \ActeUnSceneTroisTerMainDroite
+        \new StaffPiano = "md" \ActeUnSceneTroisTerMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneTroisTerMesures >>
-        \new StaffPiano = "gauche"    \ActeUnSceneTroisTerMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneTroisTerMainGauche
       >>
     }
   >>
@@ -209,9 +209,9 @@ ActeUnSceneQuatre = {
        >>
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"    \ActeUnSceneQuatreMainDroite
+        \new StaffPiano = "md" \ActeUnSceneQuatreMainDroite
         \new Dynamics << \PianoDynamics \ActeUnSceneQuatreMesures >>
-        \new StaffPiano = "gauche"    \ActeUnSceneQuatreMainGauche
+        \new StaffPiano = "mg" \ActeUnSceneQuatreMainGauche
       >>
     }
   >>
@@ -237,9 +237,9 @@ Entracte = {
       >> 
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \EntracteMainDroite
+        \new StaffPiano = "md"    \EntracteMainDroite
         \new Dynamics << \PianoDynamics \EntracteNuances >>
-        \new StaffPiano = "gauche"    \EntracteMainGauche
+        \new StaffPiano = "mg"    \EntracteMainGauche
       >>
     }
   >>
@@ -259,9 +259,9 @@ ActeDeuxSceneUn = {
       >>
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"    \ActeDeuxSceneUnMainDroite
+        \new StaffPiano = "md" \ActeDeuxSceneUnMainDroite
         \new Dynamics << \PianoDynamics \ActeDeuxSceneUnMesures >>
-        \new StaffPiano = "gauche"    \ActeDeuxSceneUnMainGauche
+        \new StaffPiano = "mg" \ActeDeuxSceneUnMainGauche
       >>
     }
   >>
@@ -281,9 +281,9 @@ ActeDeuxSceneUnBis = {
       >>
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"    \ActeDeuxSceneUnBisMainDroite
+        \new StaffPiano = "md" \ActeDeuxSceneUnBisMainDroite
         \new Dynamics << \PianoDynamics \ActeDeuxSceneUnBisMesures >>
-        \new StaffPiano = "gauche"    \ActeDeuxSceneUnBisMainGauche
+        \new StaffPiano = "mg" \ActeDeuxSceneUnBisMainGauche
       >>
     }
   >>
@@ -309,9 +309,9 @@ ActeDeuxSceneDeux = {
       >> 
     \new PianoStaff { \Accompagnement
       <<
-        \new StaffPiano = "droite"    \ActeDeuxSceneDeuxMainDroite
+        \new StaffPiano = "md" \ActeDeuxSceneDeuxMainDroite
         \new Dynamics << \PianoDynamics \ActeDeuxSceneDeuxMesures >>
-        \new StaffPiano = "gauche"    \ActeDeuxSceneDeuxMainGauche
+        \new StaffPiano = "mg" \ActeDeuxSceneDeuxMainGauche
       >>
     }
   >>
@@ -337,9 +337,9 @@ ActeDeuxSceneTrois = {
       >> 
     \new PianoStaff { \Accompagnement 
       <<
-        \new StaffPiano = "droite"    \ActeDeuxSceneTroisMainDroite
+        \new StaffPiano = "md" \ActeDeuxSceneTroisMainDroite
         %\new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
-        \new StaffPiano = "gauche"    \ActeDeuxSceneTroisMainGauche
+        \new StaffPiano = "mg" \ActeDeuxSceneTroisMainGauche
       >>
     }
   >>
@@ -388,7 +388,7 @@ ActeDeuxSceneTrois = {
   \score {
     \ActeUnSceneTroisBis
     \header {
-      piece = \Separateur
+      piece = \Interlude
     }
   } %{
   \score {
