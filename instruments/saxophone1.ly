@@ -113,6 +113,26 @@ ActeUnSceneUnBisSaxophoneUn = { \SaxAltoUn
   }
 }
 
+InterludeUnSaxophoneUn = { \SaxAltoUn
+  \relative {
+    r1 re32 mib re4..~ | re8. do16 si sol lab fa re'2~ |
+    re8 r r4 r2 | r2 \t {mib8 mi sol~} sol4 | sol8 r r4 r1 |
+    R1 r2 mi16 fa4.. r4 \tt {re16 mi fa la sold } |
+    si1 r2 | r16 mi, sold8 sol16 si8 sib16 re2~ re4 r r2 |
+    r4 r8 mi,32 fa mi16~ mi2 r8 mi4. | mi8 fa4.~ fa2. r4 |
+    r16 fa solb re \t {dod8 si sold'~} sold2~ sold2 r4 |
+    \tt {re16 mi fa la sold} si8 r | R2.
+    sold4. r8 sold4. r8 |
+    sold4. r8 sold4. r8 |
+    sold4. r8 sold4. r8 sold4. r8 |
+    sold4. r8 sol8 sib4. |
+    r8 sol32 sib do16~ do2 r4 |
+    \tt {sol16 sib do mib reb} mib2. r2 |
+    \tt {sol,16 sib do8 mib16} reb4 \ttt {solb16 mib reb sib8 do16} sol8 r |
+    mi2. fa2 r4 | R2.*15
+  }
+}
+
 ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
   \relative { 
     %%% Air de la Soprano2 %%%

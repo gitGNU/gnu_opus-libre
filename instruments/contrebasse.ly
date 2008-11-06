@@ -138,6 +138,25 @@ ActeUnSceneUnBisContrebasse = { \Contrebasse
   }
 }
 
+InterludeUnContrebasse = { \Contrebasse
+  \relative {
+    R1. R1*3 R1. R1 R1.*2 R1*2
+    la,4\CaV r r1 \clef "G_8"
+    la'1 si2 do1~ do4 r2 | R2 \clef "F_8"
+    r2 \ttt {r16 fad,, red dod sib do} |
+    sol1~ sol2 sol8 do sib dod |
+    sol1 r8 dod4. | sol8 sol' sol, sol' sol, sol' sol, sol' |
+    sol, sol' sol, sol' sol, dod dod dod |
+    sol16 sol sol' sol sol, sol sol' sol
+    sol, sol sol' sol sol, sol sol' sol
+    sol, sol sol sol sol sol sol sol |
+    sol sol sol sol sol sol sol sol dod dod dod dod \t {r8 mib reb} |
+    fad,2. sol2 r4 | R2.*4
+    si2.~ si~ si~ si~ si8 sib4 lab si8 |
+    sol'2.~ sol~ sol~ sol~ R2.*2
+  }
+}
+
 ActeUnSceneDeuxContrebasse = { \Contrebasse
   \relative {
     %%% Air de la Soprano2 %%%

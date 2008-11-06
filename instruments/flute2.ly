@@ -158,7 +158,7 @@ InterludeUnFluteDeux = { \FluteDeux
     \ttt {fa re mi fa sib sol} |
     do1~ do2 r8 sib4 sol8 |
     do1 r4 sol | sib1~ sib2 r |
-    sol1 r4 \ttt {mi16 fa sol do sib} |
+    sol1 r4 \tt {mi16 fa sol do sib} |
     sol4 r8 sol fad'2 | re2. |
     dod2.~ dod4 r2 R2.
     fad,,16 sol fad re do re fad re do re fad sol |

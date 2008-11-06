@@ -122,6 +122,25 @@ ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
   }
 }
 
+InterludeUnSaxophoneDeux = { \SaxAltoDeux
+  \relative {
+    R1. R1*3 R1. R1 R1.
+    mi32 fa8..~ fa4 r mi8 fa~ fa4 \tt {re16 mi fa la sold} |
+    si4. r8 \t {fa16 re mi} si8~ si4~ si r r2 |
+    R1. r2 \t {r8 la' sold} si4~ si4. r8 |
+    r2 r4 \t {mi,4 fa8~} | fa16 mi32 fa mi8~ mi4 r |
+    R2 R2.
+    sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r |
+    sold4 mi8 r sold4 mi8 r |
+    \tt {mi16 fa sol do sib} do2. r2 |
+    \tt {mi,16 fa sol8 do16} sib4 \ttt {mib16 reb sib fa8 sol16} mi8 r |
+    fad,2. sol2 r4 | R2.*15
+  }
+}
+
 ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
   \relative { 
     %%% Air de la Soprano2 %%%

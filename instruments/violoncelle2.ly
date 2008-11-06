@@ -163,6 +163,39 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
   }
 }
 
+InterludeUnVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    R1. R1*3 R1. R1 R1.*2 R1*2
+    la1 la2~ la1 si2 do1~ do4 r2 |
+    R2 \ttt {r16 fa mi re la si}
+    \ttt {sold la sold fad dod red}
+    \ttt {do fad red dod sib do} |
+    sol8\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow |
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <do, sol'> sol' dod, |
+    sol'\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <sol sol'>\downbow
+    sol\leftpizz <dod, sol'>\downbow
+    sol'\leftpizz <dod, sol'>\downbow |
+    \arco sol' <sol sol'> sol <sol sol'>
+    sol <sol sol'> sol <sol sol'> |
+    sol <sol sol'> sol <sol sol'> sol <dod, sol'> dod <dod sol'> |
+    sol' <sol fad'> sol <sol fad'>
+    sol <sol fad'> sol <sol fad'>
+    sol <sol fad'> sol <sol fad'> |
+    sol <sol fad'> sol <sol fad'> sol <dod, sol'> sol' <dod, sol'> |
+    fad2. sol2 r4 | R2.*4
+    si2.~ si~ si~ si~ si8 sib4 lab si8 |
+    sol'2.~ sol~ sol~ sol R2.*2
+  }
+}
+
 ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
   \relative {
     %%% Air de la Soprano2 %%%

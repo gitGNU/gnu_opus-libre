@@ -284,6 +284,26 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
   à la mort dé -- _ fi -- _ ni -- tive.
   Mer -- ci de ne plus \leftSyl m'ai -- der.
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%% Interlude Un %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+InterludeUnContraltoTexte = \lyricmode {
+  Voy -- ons ça…
+  Voy -- ons ça…
+  Voy -- ons ça, voy -- ons ça_! \ital Hm.
+  A -- rro -- sons ça,
+  a -- rro -- sons ça.
+  A -- rro -- sons ça…
+  Goû -- tons ça_!
+  Goû -- tons ça…
+  Goû -- tons ça,
+  goû -- tons goû -- tons ça… __ _
+  Goû -- tons ça,
+  goû -- tons ça,
+  goû -- \dash ton -- Cra -- chons ça_! \ital Ptt_! \ital Ptt_!
+  Cou -- _ pons ça_! __ _
+  Cou -- pons ça…
+  
+}
 
 %%%%%%%%%%%%%%%%%%%%%  Deuxième  Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 

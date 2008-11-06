@@ -367,6 +367,16 @@ ActeUnSceneUnBisPiano = { \Piano
   }
 }
 
+InterludeUnPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    
+  }
+  \relative {
+    
+  }
+}
+
 ActeUnSceneDeuxPiano = { \Piano 
   \PianoDeuxMains
   \relative {

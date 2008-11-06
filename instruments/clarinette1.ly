@@ -214,8 +214,6 @@ InterludeUnClarinetteUn = { \ClarinetteBasse
     fad4 r2 | R2.*7
   }
 }
-    
-    
 
 ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
   \relative {

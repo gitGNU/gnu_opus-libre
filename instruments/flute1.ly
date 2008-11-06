@@ -164,13 +164,13 @@ InterludeUnFluteUn = { \FluteUn
     sold r8 sold16 sold la2~ la4 r r2 |
     sold4. r8 sold4. r8 sold4. r8 |
     sold4. r8 sold4. r8 sold4. r8 |
-    sold4. r8 sold4. r8 | sold2. r4 | R2
+    sold4. r8 sold4. r8 | sold2 r4 | R2
     \ttt {r16 sold la si mi re}
     \ttt {fa re mi fa sib sol}
     \ttt {do sol sib do mib reb} |
     fad1~ fad2 r8 mib4 do8 |
     fad1 r4 sol, | fad'1~ fad2 r |
-    fad1 r4 \ttt {sol,16 sib do mib reb} |
+    fad1 r4 \tt {sol,16 sib do mib reb} |
     fad2 r8 fad~ \t {fad sol, fad'} sib2. |
     fad2.~ fad4 r2 | R2. |
     fad,,16 sol fad re do re fad re do re fad sol |

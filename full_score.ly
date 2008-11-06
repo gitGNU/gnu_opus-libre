@@ -301,6 +301,12 @@ InterludeUn = {
     \new StaffGroup \InterludeUnPercus
 
     \new TopLine \InterludeUnMesures
+    
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "contralto" \InterludeUnContralto
+        \new Lyrics \lyricsto "contralto" { \InterludeUnContraltoTexte }
+      >>
 
     \new StaffGroup 
       <<
@@ -950,13 +956,13 @@ ActeDeuxSceneDeux = {
     poet = \OperaLivret
     composer = \OperaPartition
     tagline = \OperaNotice
-  } %
+  } %{
   \score {
     \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %{
+  } %
   \score {
     \Ouverture
     \header {
@@ -974,7 +980,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
+  \score {
+    \InterludeUn
+    \header {
+      piece = \Separateur
+    }
+  } %{
   \score {
     \ActeUnSceneDeux
     \header {

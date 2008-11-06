@@ -13,6 +13,24 @@ Contralto= {
   \set Staff . midiInstrument = "voice oohs"
 }
 
+InterludeUnContralto = { \Contralto
+  \relative {
+    R1. R1 fad8 fad do2 r4 |
+    R1 r2 mib8 mib la,2 r4 |
+    r2 r4 r8 mi'16 do |
+    sold'8 mi16 sold do,4 r r \parlato si r16 sib si re |
+    mi4 r16 si sib re mi4 r r \t {re8 mi sol} |
+    sold4 r r2 |
+    r4 re'16 re sold,8 r2 |
+    \t {r4 mi fa} la2 r4 \t {r8 mi fa} |
+    la2 fa16 mi fa la si4~ si2 |
+    r4 r8 sib16 la fa8 la16 fa mi8 fa16 dod |
+    \t {r8 sib' fa} mi'4 \parlato { mi,8 mi} | R2 R2.
+    
+    r8 sold la do re2~ | re8 r sold, do re2 |
+  }
+}
+
 ActeUnSceneTroisBisContralto = { \Contralto
   \relative {
     R1*15 r4 fad,8\mp( fad fad4 fad8 fad fad4--) r r2 |

@@ -154,6 +154,22 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
   }
 }
 
+InterludeUnViolonTrois = { \ViolonTrois
+  \relative {
+    R1. R1*3 R1. R1 R1.*2 R1
+    r2 re8 mi \t {fa la sold} |
+    si1.~ si1~ si4 la~ la sold2.~ sold4 r2 |
+    R2 r4 \ttt {r16 re mi fa la sold}
+    \ttt {si sold la si mi sol} |
+    fa1~ fa2 r8 fa4 sol8 |
+    fad'1~ fad4 r | sib,1~ sib4 r8 dod, sib'2 |
+    sol1 fad2 | sol \ttt {fad16 sol la sib mib reb} fad8 r |
+    <mib, la>2. |<mib lab>2.~ <mib lab>4 r2 | R2.*3
+    sib,2.~ sib~ sib~ sib~ sib2 r4 |
+    sib2.~ sib~ sib~ sib \pizz fad'4 r sol r sold r |
+  }
+}
+
 ActeUnSceneDeuxViolonTrois = { \ViolonTrois
   \relative {
     %%% Air de la Soprano2 %%%

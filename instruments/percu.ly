@@ -376,6 +376,15 @@ ActeUnSceneUnBisPercus = <<
   }
 >>
 
+InterludeUnPercus = {\new PianoStaff {
+  \GrandMarimba
+  \PercuDeuxMains
+  \relative {
+  }
+  \relative {
+  }
+}
+}
 
 ActeUnSceneDeuxPercus = {\Marimba 
   \relative {\clef bass
