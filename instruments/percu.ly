@@ -380,8 +380,75 @@ InterludeUnPercus = {\new PianoStaff {
   \GrandMarimba
   \PercuDeuxMains
   \relative {
+    r8 <red fad> r <red fad>
+    r <red fad> r <red fad>
+    r <red fad> r4 | R1*2
+    r8 <mib sol> r <mib sol>
+    r <mib sol> r <mib sol> |
+    R1. r8 <mi! sol> r <mi sol> r2 |
+    \gauche sold,8 \droite <mi' sold> r <mi sold>
+    r <mi sold> r <mi sold>
+    r <mi sold> r <mi sold> |
+    \gauche mi,8 \droite <mi' sold> r <mi sold>
+    r <mi sold> r <mi sold>
+    r <mi sold> r <mi sold> |
+    r <mi sold> r <mi sold>
+    r4 <mi la> | R1
+    s1.*2 r8 <sold, mi'> s2 r8 mi' |
+    r <mi sold> r <mi sold> r4 | R2 R2. |
+    r16 \gauche sol, \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite |
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite
+    r \gauche sib \droite <la' la'> sib %% FIXME: ugly beam slope!
+    \stemDown la \stemNeutral <sib, sib'> <la' la'> \gauche sib, \droite |
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite
+    r \gauche re \droite <dod' dod'> \gauche re \droite <dod dod'> \gauche
+    <re, re'> \droite <dod' dod'> \gauche re, \droite |
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite |
+    r \gauche sol \droite <fad' fad'> sol fad
+    \gauche <sol, sol'> \droite <fad' fad'> \gauche sol, \droite
+    r <re' re'> <dod' dod'> <re, re'> dod' <re, re'> <dod' dod'> <re, re'> |
+    fad' <sol,, sol'> <fad'' fad'> <sol,, sol'>
+    fad'' <sol,, sol'> <fad'' fad'> <sol,, sol'>
+    fad'' <sol,, sol'> <fad'' fad'> <sol,, sol'>
+    fad'' <sol,, sol'> <fad'' fad'> <sol,, sol'>
+    fad'' <sol,, sol'> <fad'' fad'> <sol,, sol'>
+    fad'' <sol,, sol'> <fad'' fad'> <sol,, sol'> |
+    <fad' fad'>32 \gauche <sol,, sol'> \droite <fad'' fad'> \gauche <sol,, sol'> \droite
+    <fad' fad'> \gauche <sol, sol'> \droite <fad' fad'> \gauche <sol, sol'> \droite
+    <fad'' fad'> \gauche <sol,, sol'> \droite <fad'' fad'> \gauche <sol,, sol'> \droite
+    <fad' fad'> \gauche <sol, sol'> \droite <fad' fad'> \gauche <sol, sol'> \droite
+    <dod'' dod'> \gauche <sol,, sol'> \droite <dod'' dod'> \gauche <sol,, sol'> \droite
+    <dod' dod'> \gauche <sol sol'> \droite <dod dod'> \gauche <sol sol'> \droite
+    <dod' dod'> \gauche <sol,, sol'> \droite <dod'' dod'> \gauche <sol,, sol'> \droite
+    <dod' dod'> \gauche <sol sol'> \droite <dod dod'> \gauche <sol sol'> |
+    fad,16 <la re> \droite sib' \gauche <la re> \droite
+    <sib' sib'>32 <la re> <sib sib'> <la re> <sib sib'> <la re> <sib sib'> <la re>
+    <sib sib'>8 r | <re, sib'>4\arpeggio \laissezVibrer s2 R2.*13
+    r8 <red fad> r <red fad> r4 | r8 <re sold> r2 |
   }
-  \relative {
+  \relative { \clef bass
+    R1. R1*3 R1. R1 s2 r1 s2 r1 r2 mi,4 fa' | R1 |
+    la,,16 mi' \droite <la mi'>8 r <la mi'>
+    \gauche mi8 \droite <la mi'>16 \gauche mi
+    la, mi' \droite <la mi'>8 r <la mi'>
+    \gauche mi \droite <la mi'> \gauche |
+    la,16 mi' \droite <la mi'>8  \gauche mi \droite <la mi'>
+    r8 <la mi'>16 \gauche mi la,8 \droite <la' mi'>
+    \gauche r16 mi \droite <la mi'>8 r <la mi'> \gauche |
+    la, mi' r16 mi \droite <sold mi'>8 \gauche
+    r8 <mi sold> r4 | R2. R2 R2.
+    s1*2 s1. s1 s2 r2 R1. s1 s4 r2 |
+    <dod si'?>4\arpeggio \laissezVibrer s2 | R2.*15
   }
 }
 }

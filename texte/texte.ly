@@ -302,7 +302,27 @@ InterludeUnContraltoTexte = \lyricmode {
   goû -- \dash ton -- Cra -- chons ça_! \ital Ptt_! \ital Ptt_!
   Cou -- _ pons ça_! __ _
   Cou -- pons ça…
-  
+  Cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons ça…
+  Cou -- pons ça…
+  Cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons cou -- pons tout ça…
+  Cou -- pons, cou -- pons_; cou -- _ pons ça…
+  Cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons ça… __ _ _
+  Ca -- chons ça_!
+  Ca -- chons ça_!
+  Ca -- chons ça…
+  Ca -- chons ça…
+  Voy -- ons ça,
+  voy -- ons ça.
+  Voy -- ons ça…
 }
 
 %%%%%%%%%%%%%%%%%%%%%  Deuxième  Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%

@@ -28,6 +28,16 @@ InterludeUnContralto = { \Contralto
     \t {r8 sib' fa} mi'4 \parlato { mi,8 mi} | R2 R2.
     
     r8 sold la do re2~ | re8 r sold, do re2 |
+    r8 fa,16 fa fad8 red16 red mi8 sol16 sol 
+    sold8 mi16 mi fa8 la16 la \t {sib8 fa fa} |
+    mi'2. \t {r8 mi, fa} | mi'2. r4 |
+    \ttt {r16 mi, fa si fa fad} \ttt {dod' fad, sib la dod do}
+    mi2 r16 do sold16. la32 fad8 \t {do16 mi mib} |
+    fad4 r \ttt {r16 mi fa mi' fa, si} \t {mi8 sold, dod} |
+    r8 mi~ mi2~ | mi4 r2 |
+    fad,16 sib re,8 r4 r8 mib16 fad | do4 r2 | R2. do8 mib la,2 |
+    r4 \t {r mi' la} sol2 r4 | R2.*5
+    r8 do,16 do fad8 do16 do la4 | \t {r8 sol sib} fad'4 r R2.*2
   }
 }
 
