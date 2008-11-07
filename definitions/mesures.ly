@@ -535,6 +535,19 @@ ActeUnSceneDeuxMesures = {
             r2    \bar "|."
 }
 
+InterludeDeuxMesures = {
+  \time 4/4
+      \tempo "Andante con moto" 4 = 66
+            R1
+  \time 3/4 R2.
+  \time 2/4 R2
+  \time 3/4 R2.
+  \time 2/4 R2
+  \time 3/4 R2.
+  \time 2/4 R2    \bar "||"
+  %TODO
+}
+
 ActeUnSceneTroisMesures = {
   \time 3/4
       \mark \markup \init-did \ActeUnSceneTroisA

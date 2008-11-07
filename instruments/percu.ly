@@ -376,7 +376,7 @@ ActeUnSceneUnBisPercus = <<
   }
 >>
 
-InterludeUnPercus = {\new PianoStaff {
+InterludeUnPercus = \new PianoStaff {
   \GrandMarimba
   \PercuDeuxMains
   \relative {
@@ -451,7 +451,6 @@ InterludeUnPercus = {\new PianoStaff {
     <dod si'?>4\arpeggio \laissezVibrer s2 | R2.*15
   }
 }
-}
 
 ActeUnSceneDeuxPercus = {\Marimba 
   \relative {\clef bass
@@ -485,6 +484,20 @@ ActeUnSceneDeuxPercus = {\Marimba
   
   %%% Récitatif %%%
   %TODO
+  }
+}
+
+InterludeDeuxPercus = \new PianoStaff {
+  \GrandMarimba
+  \PercuDeuxMains
+  \relative {
+    r8 <red fad> r <red fad> r <red fad> r <red fad> |
+    r <red fad> r <red fad> r <red fad> r <red fad> r <red fad> |
+    R2. R2 r4 r8 <mi sold> r <mi sold> | R2
+  }
+  \relative {
+    \clef bass r2 r4 <lab, re sol> |
+    r2 <fa mi'>4 | R2 R2. R2 R2. R2
   }
 }
 
@@ -870,7 +883,7 @@ ActeDeuxSceneUnPercus = <<
     
     %%FIXME: complete. As soon as I have *nothing* else to do.
   }
-  \new PianoStaff \PercuDeuxMains
+  \new PianoStaff {\PercuDeuxMains
     \relative {\GrandMarimba 
       R2.*4 R2 R2.*2 R2 R2.*3 R2 |
       R2. R2 R2.*2 R2 R2.*3 R2 |
@@ -982,6 +995,7 @@ ActeDeuxSceneUnPercus = <<
       lab2*3/2\laissezVibrer <sol, sol'>2\laissezVibrer r | R2. R1
       R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1
     }
+  }
 >>
 
 

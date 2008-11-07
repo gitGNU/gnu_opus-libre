@@ -66,7 +66,8 @@ ActeUnSceneUnBarytonUn = { \BarytonUn
     do!8-. r do-. r si-. r si-. r | dod2-- ( si8 ) r r4 |
     r2 r4 do!8.\mp do16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r r4 |
     r2 r4 re!8. re16 | reb2->--( do8 ) r do8. do16 | reb2 ->--( do8 ) r do8. do16 |
-    reb2->--( do8) r r4 | sol8-> \sfz r sol-. r16 sol-. sib8-. r do8. do16 | reb2( do8) r r4 | R1*5 |
+    reb2->--( do8) r r4 | sol8-> \sfz r sol-.[ r16 sol-.] sib8-. r do8. do16 |
+    reb2( do8) r r4 | R1*5 |
     R1*11 R1. R1*2 |
     R1 R2. R2*5 R1*4 |
   }

@@ -184,6 +184,14 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
   }
 }
 
+InterludeDeuxSaxophoneUn = { \SaxAltoUn
+  \relative {
+    R1 R2. R2
+    r4 r16 re32 mib re4.~ |
+    re4~ \ttt {re16 do si sold la fad} re'2 r4 |
+  }
+}
+
 ActeUnSceneTroisSaxophoneUn = { \SaxAltoUn
   \relative {
     R2.*4 reb8 sib4 reb8 sib4 r r8 sib4 sol8 mi2.~ mi8 r r2 |

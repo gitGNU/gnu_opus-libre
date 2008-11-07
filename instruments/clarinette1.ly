@@ -305,6 +305,15 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
   }
 }
 
+InterludeDeuxClarinetteUn = { \ClarinetteBasse
+  \relative {
+    fad4 red8 r r2 |
+    fad4 red8 r r4 |
+    fad4 red8 r | R2. R2 |
+    r4 sold4 mi8 r |
+  }
+}
+
 ActeUnSceneTroisClarinetteUn = { \ClarinetteUn
   \relative {
     R2.*4 do'8 la4 do8 la4 r r8 la4 solb8 mib2.~ mib8 r r2 |

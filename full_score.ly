@@ -392,6 +392,62 @@ ActeUnSceneDeux = {
   >>
 }
 
+InterludeDeux = {
+  <<
+    \new TopLine \InterludeDeuxMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+   %         \new Staff \InterludeDeuxFluteUn
+   %         \new Staff \InterludeDeuxFluteDeux 
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeDeuxClarinetteUn
+   %         \new Staff \InterludeDeuxClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \InterludeDeuxSaxophoneUn
+   %         \new Staff \InterludeDeuxSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \InterludeDeuxPercus
+
+    \new TopLine \InterludeDeuxMesures
+    
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "contralto" \InterludeDeuxContralto
+        \new Lyrics \lyricsto "contralto" { \InterludeDeuxContraltoTexte }
+      >>
+
+    \new StaffGroup 
+      <<
+        \new GrandStaff 
+          <<
+   %         \new Staff \InterludeDeuxViolonUn
+   %         \new Staff \InterludeDeuxViolonDeux
+   %         \new Staff \InterludeDeuxViolonTrois
+          >>
+        \new GrandStaff
+          <<
+   %         \new Staff \InterludeDeuxAltoUn
+   %         \new Staff \InterludeDeuxAltoDeux
+          >>
+        \new GrandStaff 
+          <<
+   %         \new Staff \InterludeDeuxVioloncelleUn
+   %         \new Staff \InterludeDeuxVioloncelleDeux
+          >>
+   %     \new Staff \InterludeDeuxContrebasse
+      >>
+   % \new PianoStaff \InterludeDeuxPiano
+  >>
+}
+
 ActeUnSceneTrois = {
   <<
     \new TopLine \ActeUnSceneTroisMesures
@@ -980,19 +1036,25 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \InterludeUn
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %
+  } %}
+  \score {
+    \InterludeDeux
+    \header {
+      piece = \Interlude
+    }
+  } %{
   \score {
     \ActeUnSceneTrois
     \header {

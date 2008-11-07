@@ -419,6 +419,17 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
   ca -- ta -- stro -- phi -- que…
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%% Interlude Deux %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+InterludeDeuxContraltoTexte = \lyricmode {
+  Voy -- ons ça…
+  Voy -- ons ça,
+  voy -- ons ça_!
+  Voy -- \dash on --
+  Cou -- pons ça,
+  cou -- pons ça_!
+}
+
 %%%%%%%%%%%%%%%%%%%%%% Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%
 
 ActeUnSceneTroisTenorTexte = \lyricmode {

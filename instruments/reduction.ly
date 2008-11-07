@@ -449,12 +449,12 @@ ActeUnSceneUnMainDroite = {
     do,8 do \t{do do do}| do4 do4~|do2.|
     r8 do \t{do do do} | do4 do4~ | do2.|
     <sol do>8 re' fad la | do <fad, mi'> \clef treble <la fad'> si'|
-    <do fad> si <do, mi> la \change Staff="gauche" <do, re> <sol fad'>|
-    \stemUp <sol re'> fad' la do \stemNeutral \change Staff="droite" mi fad si do | 
-    <sol fad'> re la \change Staff="gauche" mi si fad |
-    \stemUp fa'! solb sib do \stemNeutral \change Staff="droite" mib solb lab do |
-    <reb solb> do <solb lab> mib \change Staff="gauche" <solb, sib> fa |
-    \stemUp solb sib \stemNeutral \change Staff="droite" do mib solb lab do reb |
+    <do fad> si <do, mi> la \change Staff="mg" <do, re> <sol fad'>|
+    \stemUp <sol re'> fad' la do \stemNeutral \change Staff="md" mi fad si do | 
+    <sol fad'> re la \change Staff="mg" mi si fad |
+    \stemUp fa'! solb sib do \stemNeutral \change Staff="md" mib solb lab do |
+    <reb solb> do <solb lab> mib \change Staff="mg" <solb, sib> fa |
+    \stemUp solb sib \stemNeutral \change Staff="md" do mib solb lab do reb |
     solb reb lab mib <solb, do> sib |
     
     \t{la! mib' si'} \t{solb' si, mib,}

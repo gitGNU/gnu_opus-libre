@@ -41,6 +41,16 @@ InterludeUnContralto = { \Contralto
   }
 }
 
+InterludeDeuxContralto = { \Contralto
+  \relative {
+    R1 R2. R2
+    fad16 fad do4. r8 mib16 mib |
+    la8 fad16 fad do4 | r2 r8 mi16 mi |
+    r8 sold16 mi do'8 mi,16 sold |
+    do,4 
+  }
+}
+
 ActeUnSceneTroisBisContralto = { \Contralto
   \relative {
     R1*15 r4 fad,8\mp( fad fad4 fad8 fad fad4--) r r2 |

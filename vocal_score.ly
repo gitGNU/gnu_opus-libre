@@ -42,6 +42,8 @@
 
 \paper {
   \includePaper
+  %% FIXME : bug to report.
+  systemSeparatorMarkup = ""
 }
 
 \layout {
@@ -360,13 +362,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneUnBis
     \header {
@@ -384,13 +386,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneTroisTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneTroisBis
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTroisTer
     \header {
