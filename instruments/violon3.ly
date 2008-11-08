@@ -121,6 +121,11 @@ PrologueViolonTrois = { \ViolonTrois
   }
 }
 
+ActeUnSceneUnViolonTrois = { \ViolonTrois
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisViolonTrois = { \ViolonTrois
   \relative {
     R2.*5

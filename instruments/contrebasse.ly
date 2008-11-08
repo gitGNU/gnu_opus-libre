@@ -102,6 +102,11 @@ PrologueContrebasse = { \Contrebasse
   }
 }
 
+ActeUnSceneUnContrebasse = { \Contrebasse
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisContrebasse = { \Contrebasse
   \relative {
     dod,,2.

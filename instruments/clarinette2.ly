@@ -100,6 +100,30 @@ OuvertureClarinetteDeux = { \ClarinetteDeux
   }
 }
 
+ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
+  \relative {
+    R2*2 R2. R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    \t {r4 fa, solb} | sib2~ sib8 r r2 |
+    \t {mib,4 solb sib} | do2~ do8 r r2 |
+    \t {la'4 mib8} si' r \t {la, mib' si'} \t {solb' si, mib,} |
+    \t {la,4 mib'8} si' r \t {la, mib' si'} |
+    \t {mi, sol do} \t {solb' do, mi,} \t {la, mi' sol} mib' r |
+    \t {mi, sol do} \t {solb' do, mi,} la, r |
+    \t {do4 lab'8} reb r \t {fa, lab mi'} \t {la mi lab,} |
+    \t {do,4 lab'8} reb r \t {do, lab' mi'} |
+    \t {fa, lab mi'} \t {la mi lab,} \t {do,4 lab'8} reb r |
+    \t {fa, lab mi'} \t {la mi lab,} fa4~ |
+    fa2~ fa8 r lab4 | fa'2 lab,4 | reb2~ reb8 r solb,4 solb'2 re!4 |
+    do4 r2 | \tt {r16 lab, sib reb mib} mi2~ |
+    mi8 sold32 la si re mi8 r r4 | R2.*2
+    r8 sib,16 mib la mi, sib' mib la4 |
+    \ttt {fad,16 sol fad sol fad sol}
+    la32 sib la sib \t {re16 mib re} \tttt {mib re mib re mib re mib} |
+    do'1~ do2 r4 |
+  }
+}
+
 ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
   \relative {
     R2.*4

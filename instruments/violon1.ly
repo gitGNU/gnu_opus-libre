@@ -120,6 +120,11 @@ PrologueViolonUn = { \ViolonUn
   }
 }
 
+ActeUnSceneUnViolonUn = { \ViolonUn
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisViolonUn = { \ViolonUn
   \relative {
     R2.*6

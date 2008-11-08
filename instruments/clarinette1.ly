@@ -126,14 +126,20 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     \t {la,8 mib' si'} \t {solb' si, mib,} \t {la,4 mib'8} si'8 r |
     \t {la,8 mib' si'} \t {solb' si, mib,} la,8 r |
     \t {la8 mi'! sol!} mib'8 r  \t {mi,! sol do} \t {solb' do, mi,} |
-    \t {la,8 mi'! sol!} mib'8 r |  \t {mi,! sol do} |
+    \t {la,8 mi'! sol!} mib'8 r \t {mi,! sol do} |
     \t {fa, lab mi'} \t {la! mi lab,} \t {do,4 lab'8} reb8 r |
-    \t {fa, lab mi'} \t {la! mi lab,} fa8 r |
-    \t {do4 lab'8} reb8 r \t {fa, lab mi'} \t {la! mi lab,}|
-    \t {do,4 lab'8} reb8 r \t {do, lab' mi'} |
-    \t {do' fa, lab,} \t {re,!4 fa'8} \t {do' fa, lab,} \t {re,4 fa'8}|
-    \t {do' fa, lab,} \t {re,4 lab'8} \t {fa'4 sib8}|
-    mi4
+    \t {fa, lab mi'} \t {la mi lab,} fa r |
+    \t {do4 lab'8} reb r \t {fa, lab mi'} \t {la mi lab,} |
+    \t {do,4 lab'8} reb r \t {do, lab' mi'} |
+    do'2~ do8 r fa,4 | do'2 fa,4 | sib2~ sib8 r reb,4 | sib'2 solb4
+    do r2 | \ttt {r16 red,, mi fad la si} do2~ |
+    do8 \t {mi16 fa sol} sib8 r r4 | R2.*2
+    r16 la, mib la re la mib la re4 |
+    \tttt {re,16 mib re mib re mib re}
+    \t {mib re mib} sib'32 dob sib dob
+    \ttt {sib16 dob sib dob sib dob} |
+    sol'1~ sol2 r4 |
+    
   }
 }
 

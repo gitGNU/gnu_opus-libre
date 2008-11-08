@@ -124,6 +124,11 @@ PrologueVioloncelleUn = { \VioloncelleUn
   }
 }
 
+ActeUnSceneUnVioloncelleUn = { \VioloncelleUn
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
   \relative {
     R2.

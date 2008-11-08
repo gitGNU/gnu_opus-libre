@@ -149,6 +149,11 @@ PrologueAltoDeux = { \AltoDeux
   }
 }
 
+ActeUnSceneUnAltoDeux = { \AltoDeux
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisAltoDeux = { \AltoDeux
   \relative {
     R2.*5

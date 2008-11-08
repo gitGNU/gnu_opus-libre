@@ -134,6 +134,11 @@ PrologueAltoUn = { \AltoUn
   }
 }
 
+ActeUnSceneUnAltoUn = { \AltoUn
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisAltoUn = { \AltoUn
   \relative {
     R2.*5

@@ -89,14 +89,21 @@ OuvertureFluteDeux = { \FluteDeux
 ActeUnSceneUnFluteDeux = { \FluteDeux
   \relative {
     R2*2 R2. R2*2 R2. |
-    do2~ do do'4. r8 r4 | do,2~ do sol'4. r8 r4 |
-    r8 do, \t { do do do} do4. r8 | dod'4. r8 r4 |
-    r8 do, \t { do do do} do4. r8 | red'4. r8 r4 |
-    red1 si2 r4 | sol1 mi!2 r4 |
-    mi'1 | dod2 r4 | dod2. sold4~| sold8 r sold'4 mi | fa1 |
+    do2~ do do'4. r8 r4 | do,2~ do sol'?4. r8 r4 |
+    r8 do, \t { do do do} do4. r8 | reb'4. r8 r4 |
+    r8 do, \t { do do do} do4. r8 | mib'4. r8 r4 |
+    mib1 si2 r4 | sol1 mi!2 r4 |
+    mi'1 | reb2 r4 | reb2. lab4~| lab8 r lab'4 mi |
+    \t {fa4 lab,8} \t {re, lab' fa'}
+    \t {do'4 lab,8} \t {re, lab' fa'}
+    \t {do'4 lab,8} \t {re, lab' fa'} \t {do' fa, lab,} |
+    solb8 r \t {solb reb' sib'}
+    \t {mi4 reb,8} \t {solb, reb' sib'}
+    \t {mi4 solb,8} \t {reb4 solb8} sib4 |
+    do r2 | R2.*6 do,1~ do2 r4 |
   }
 }
-    
+
 ActeUnSceneUnBisFluteDeux = { \FluteDeux
   \relative {
     R2.*6

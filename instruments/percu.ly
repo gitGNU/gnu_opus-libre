@@ -319,6 +319,8 @@ ProloguePercus = <<
   }
 >>
 
+ActeUnSceneUnPercus = {
+}
 
 ActeUnSceneUnBisPercus = <<
   \new Staff { \Vibraphone

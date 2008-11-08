@@ -97,6 +97,25 @@ OuvertureSaxophoneDeux = { \SaxAltoDeux
   }
 }	
 
+ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
+  \relative {
+    R2*2 R2. R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    fa,2~ fa8 r16 r32 fa' sol4 |
+    fa,2.~ fa4 r sol'16 sib reb8~ reb16 sib sol fa |
+    fa mi4.. r4 |
+    reb,1~ reb8 do'16 re fa4. r8 |
+    reb,4 r8 sib''16 sol~ \t {sol do sib} do8~ do r |
+    \t {reb4 sib8~} \t {sib fa4} sol~ |
+    sol2~ sol8 r r sol,~ | sol sib4. r4 | sol8 sib~ sib2 r4 |
+    sol8 sib~ sib4 \t {fa8 sib re} |
+    do4 r2 | R2.*2
+    fad,2.~ fad~ fad~ fad4 r \t {fad8 la sol} |
+    do1~ do2 r4 |
+  }
+}
+
 ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
   \relative {
     R2.*7

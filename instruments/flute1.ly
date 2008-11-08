@@ -98,11 +98,22 @@ OuvertureFluteUn = { \FluteUn
 
 ActeUnSceneUnFluteUn = { \FluteUn
   \relative {
-    do2~ do~ do r4 | do2~ do~ do r4 |
-    do2~ do4~ r fad'4. r8 r4 | do,2~ do4 r fad'4. r8 r4  |
-    do,2~ do8 r do4 fad'4. r8 r4 | do,2~ do8 r do4 fad'4. r8 r4 |
-    si1 | fad2 r4 | mib1 | do2 r4 |
-    do'1 | la2 r4 la2. mi4~ | mi8 r sold4 la | do1 |
+    do2~ do ~ do r4 |
+    do2~ do ~ do r4 |
+    do2~ do4 r solb''4. r8 r4 |
+    do,,2~ do4 r solb''4. r8 r4 |
+    do,,2~ do8 r do4 solb''4. r8 r4 |
+    do,,2~ do8 r do4 solb''4. r8 r4 |
+    
+    si1 solb2 r4 | mib1 do2 r4 |
+    do'1 la2 r4 | la2. mi4~ mi8 r lab4 la |
+    \t {do8 fa, lab,} \t {re,4 fa'8}
+    \t {do' fa, lab,} \t {re,4 fa'8}
+    \t {do' fa, lab,} \t {re,4 lab'8} \t {fa'4 sib8} |
+    \t {mi sib reb,} \t {solb,4 sib'8}
+    \t {mi sib reb,} \t {solb,4 sib'8}
+    lab'4 mi reb |
+    do4 r2 | R2.*6 do1~ do2 r4 |
   }
 }
 

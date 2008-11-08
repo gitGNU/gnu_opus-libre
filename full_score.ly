@@ -105,9 +105,9 @@ Prologue = {
 
     \new TopLine \PrologueMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \PrologueViolonUn
             \new Staff \PrologueViolonDeux
@@ -118,7 +118,7 @@ Prologue = {
             \new Staff \PrologueAltoUn
             \new Staff \PrologueAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \PrologueVioloncelleUn
             \new Staff \PrologueVioloncelleDeux
@@ -153,7 +153,6 @@ Ouverture = {
   >>
 }
 
-%{
 ActeUnSceneUn = {
   <<
     \new TopLine \ActeUnSceneUnMesures
@@ -192,9 +191,9 @@ ActeUnSceneUn = {
 
     \new TopLine \ActeUnSceneUnMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnViolonUn
             \new Staff \ActeUnSceneUnViolonDeux
@@ -205,7 +204,7 @@ ActeUnSceneUn = {
             \new Staff \ActeUnSceneUnAltoUn
             \new Staff \ActeUnSceneUnAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnVioloncelleUn
             \new Staff \ActeUnSceneUnVioloncelleDeux
@@ -215,7 +214,7 @@ ActeUnSceneUn = {
     \new PianoStaff \ActeUnSceneUnPiano
   >>
 }
-%}
+
 ActeUnSceneUnBis = {
   <<
     \new TopLine \ActeUnSceneUnBisMesures
@@ -252,9 +251,9 @@ ActeUnSceneUnBis = {
 
     \new TopLine \ActeUnSceneUnBisMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnBisViolonUn
             \new Staff \ActeUnSceneUnBisViolonDeux
@@ -265,7 +264,7 @@ ActeUnSceneUnBis = {
             \new Staff \ActeUnSceneUnBisAltoUn
             \new Staff \ActeUnSceneUnBisAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnBisVioloncelleUn
             \new Staff \ActeUnSceneUnBisVioloncelleDeux
@@ -308,9 +307,9 @@ InterludeUn = {
         \new Lyrics \lyricsto "contralto" { \InterludeUnContraltoTexte }
       >>
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \InterludeUnViolonUn
             \new Staff \InterludeUnViolonDeux
@@ -321,7 +320,7 @@ InterludeUn = {
             \new Staff \InterludeUnAltoUn
             \new Staff \InterludeUnAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \InterludeUnVioloncelleUn
             \new Staff \InterludeUnVioloncelleDeux
@@ -368,9 +367,9 @@ ActeUnSceneDeux = {
 
     \new TopLine \ActeUnSceneDeuxMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneDeuxViolonUn
             \new Staff \ActeUnSceneDeuxViolonDeux
@@ -381,7 +380,7 @@ ActeUnSceneDeux = {
             \new Staff \ActeUnSceneDeuxAltoUn
             \new Staff \ActeUnSceneDeuxAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneDeuxVioloncelleUn
             \new Staff \ActeUnSceneDeuxVioloncelleDeux
@@ -424,9 +423,9 @@ InterludeDeux = {
         \new Lyrics \lyricsto "contralto" { \InterludeDeuxContraltoTexte }
       >>
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
    %         \new Staff \InterludeDeuxViolonUn
    %         \new Staff \InterludeDeuxViolonDeux
@@ -437,7 +436,7 @@ InterludeDeux = {
    %         \new Staff \InterludeDeuxAltoUn
    %         \new Staff \InterludeDeuxAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
    %         \new Staff \InterludeDeuxVioloncelleUn
    %         \new Staff \InterludeDeuxVioloncelleDeux
@@ -484,9 +483,9 @@ ActeUnSceneTrois = {
 
     \new TopLine \ActeUnSceneTroisMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisViolonUn
             \new Staff \ActeUnSceneTroisViolonDeux
@@ -497,7 +496,7 @@ ActeUnSceneTrois = {
             \new Staff \ActeUnSceneTroisAltoUn
             \new Staff \ActeUnSceneTroisAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisVioloncelleUn
             \new Staff \ActeUnSceneTroisVioloncelleDeux
@@ -544,9 +543,9 @@ ActeUnSceneTroisBis = {
 
     \new TopLine \ActeUnSceneTroisBisMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisBisViolonUn
             \new Staff \ActeUnSceneTroisBisViolonDeux
@@ -557,7 +556,7 @@ ActeUnSceneTroisBis = {
             \new Staff \ActeUnSceneTroisBisAltoUn
             \new Staff \ActeUnSceneTroisBisAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisBisVioloncelleUn
             \new Staff \ActeUnSceneTroisBisVioloncelleDeux
@@ -604,9 +603,9 @@ ActeUnSceneTroisTer = {
 
     \new TopLine \ActeUnSceneTroisTerMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisTerViolonUn
             \new Staff \ActeUnSceneTroisTerViolonDeux
@@ -617,7 +616,7 @@ ActeUnSceneTroisTer = {
             \new Staff \ActeUnSceneTroisTerAltoUn
             \new Staff \ActeUnSceneTroisTerAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisTerVioloncelleUn
             \new Staff \ActeUnSceneTroisTerVioloncelleDeux
@@ -654,9 +653,9 @@ InterludeTrois = {
 
     \new TopLine \InterludeTroisMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \InterludeTroisViolonUn
             \new Staff \InterludeTroisViolonDeux
@@ -667,7 +666,7 @@ InterludeTrois = {
             \new Staff \InterludeTroisAltoUn
             \new Staff \InterludeTroisAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \InterludeTroisVioloncelleUn
             \new Staff \InterludeTroisVioloncelleDeux
@@ -720,9 +719,9 @@ ActeUnSceneQuatre = {
 
     \new TopLine \ActeUnSceneQuatreMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneQuatreViolonUn
             \new Staff \ActeUnSceneQuatreViolonDeux
@@ -733,7 +732,7 @@ ActeUnSceneQuatre = {
             \new Staff \ActeUnSceneQuatreAltoUn
             \new Staff \ActeUnSceneQuatreAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeUnSceneQuatreVioloncelleUn
             \new Staff \ActeUnSceneQuatreVioloncelleDeux
@@ -787,9 +786,9 @@ Entracte = {
 
     \new TopLine \EntracteMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \EntracteViolonUn
             \new Staff \EntracteViolonDeux
@@ -800,7 +799,7 @@ Entracte = {
             \new Staff \EntracteAltoUn
             \new Staff \EntracteAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \EntracteVioloncelleUn
             \new Staff \EntracteVioloncelleDeux
@@ -849,9 +848,9 @@ ActeDeuxSceneUn = {
 
     \new TopLine \ActeDeuxSceneUnMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneUnViolonUn
             \new Staff \ActeDeuxSceneUnViolonDeux
@@ -862,7 +861,7 @@ ActeDeuxSceneUn = {
             \new Staff \ActeDeuxSceneUnAltoUn
             \new Staff \ActeDeuxSceneUnAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneUnVioloncelleUn
             \new Staff \ActeDeuxSceneUnVioloncelleDeux
@@ -911,9 +910,9 @@ ActeDeuxSceneUnBis = {
 
     \new TopLine \ActeDeuxSceneUnBisMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneUnBisViolonUn
             \new Staff \ActeDeuxSceneUnBisViolonDeux
@@ -924,7 +923,7 @@ ActeDeuxSceneUnBis = {
             \new Staff \ActeDeuxSceneUnBisAltoUn
             \new Staff \ActeDeuxSceneUnBisAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneUnBisVioloncelleUn
             \new Staff \ActeDeuxSceneUnBisVioloncelleDeux
@@ -979,9 +978,9 @@ ActeDeuxSceneDeux = {
 
     \new TopLine \ActeDeuxSceneDeuxMesures
 
-    \new StaffGroup 
+    \new StaffGroup
       <<
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneDeuxViolonUn
             \new Staff \ActeDeuxSceneDeuxViolonDeux
@@ -992,7 +991,7 @@ ActeDeuxSceneDeux = {
             \new Staff \ActeDeuxSceneDeuxAltoUn
             \new Staff \ActeDeuxSceneDeuxAltoDeux
           >>
-        \new GrandStaff 
+        \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneDeuxVioloncelleUn
             \new Staff \ActeDeuxSceneDeuxVioloncelleDeux
@@ -1004,7 +1003,7 @@ ActeDeuxSceneDeux = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-%showFirstLength = s1*70
+showFirstLength = s1*40
 \book {
   \header {
     title = \OperaTitre
@@ -1024,13 +1023,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \OuvertureTitre
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneUnBis
     \header {
@@ -1048,13 +1047,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %}
+  } %
   \score {
     \InterludeDeux
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTrois
     \header {

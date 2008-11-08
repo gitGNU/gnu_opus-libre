@@ -115,6 +115,11 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
   }
 }
 
+ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+  }
+}
+
 ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
   \relative {
     dod,,8:32
