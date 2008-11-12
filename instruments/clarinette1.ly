@@ -140,6 +140,37 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     \ttt {sib16 dob sib dob sib dob} |
     sol'1~ sol2 r4 |
     
+    %%% Ad libitum %%%
+    R1 R2.*2 sib,,2. r4 | R2.*2
+    
+    %%% Agitato %%%
+    lab1~ lab2 r | R1*2
+    fa'4 sol2 fa4 sib2 re,4 r |
+    re2. r4 r2 | R1*2 si16 re8 si16 fad'2. r2 |
+    R1*2 r2 r4 r8 fad | si8. solb'16 sib2. r2 |
+    R1*2 mib,,,1 r2 | R1.*2 r4 mi'!2 r4 | r mi2 r4 r2 |
+    sol'1. fa1 r2 | R1.
+    
+    %%% Allegro non troppo %%%
+    R1 R2. R1*3
+    mib4 r r2 | r8 mib r mib r2 |
+    R2. r8 mib r mib r2 |
+    R2. r8 mi r mi r2 |
+    R2. r8 mi r mi r2 |
+    sib2 r4 | sol2. r4 | R1*2
+    la2. r4 | R1 la2 r4 | R2.*2 R1*8
+    
+    %%% Moderato %%%
+    R2.*2 R1 R2. R1 R2. R1
+    do,2.~ do2 r | do2.~ do2 r |
+    do2.~ do2 r4 r8 do' | do16 do fa sib, do2 |
+    do,4. fa8 solb16 do reb do fa sib do,8 |
+    la'16 fa reb fa,~ fa8 la'16 fa reb fa,8 mi'16 |
+    fad sold la sold la8 mib | do r r2 | R1
+    R2*3 r4 r8 mib |
+    
+    %%% Allegro marcato %%%
+    sol r reb r sol, r mib' r sol r reb r sol, r r4 |
   }
 }
 

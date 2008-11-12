@@ -104,6 +104,30 @@ PrologueContrebasse = { \Contrebasse
 
 ActeUnSceneUnContrebasse = { \Contrebasse
   \relative {
+    do,,2 do fad, r4 |
+    do'2 do fad4 fad,2 |
+    do'2 do fad4. fad,8~ fad4 |
+    do'2 do fad2 fad,4 |
+    do'2 do fad8 fad,~ fad2 |
+    do'2 do fad2~ fad8 fad, |
+    fa1 fa4 fa2 |
+    fa1 fa2 fa'4 |
+    reb1 reb4 reb2 |
+    reb1 reb2 reb4 |
+    \t {do4 sol'8} mi'4 \t {do,4 sol'8} mi'4 |
+    do,4 \t {sol'4 do,8} sol'4 |
+    do,16 sol' mi' sol,
+    do, sol' mi' sol,
+    do, sol' mi' sol,
+    do, sol' mi' sol, |
+    do, sol' do, sol'
+    do, sol' do, sol'
+    do, sol' do, sol' |
+    do,4 do do do do do do do do |
+    \t {fad,8 sol la} \t {<fad do'> re' mib} fa4 |
+    \t {<fad, la>8 do' re} \t {mib fa lab} sib4 |
+    fad,4 fad fad fad8 fad \t {fad fad fad} fad'4 |
+    do1~ do2 r4 |
   }
 }
 

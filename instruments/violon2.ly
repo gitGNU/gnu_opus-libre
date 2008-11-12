@@ -114,6 +114,56 @@ PrologueViolonDeux = { \ViolonDeux
 
 ActeUnSceneUnViolonDeux = { \ViolonDeux
   \relative {
+    R2*2 R2. R2*2 R2.
+    R2*2 \ind #"flaut." do'4. r8 r4 |
+    R2*2 <re, sol>4. r8 r4 |
+    R2*2 <dod' fad>4. r8 r4 |
+    R2*2 <dod fad>4. r8 r4 |
+    \ttt {la,16 mib' si' si mib, la,}
+    \ttt {la mib' si' si mib, la,}
+    \ttt {la mib' si' si mib, la,}
+    \ttt {la mib' si' si mib, la,} |
+    \ttt {la mib' si' si mib, la,}
+    \ttt {la mib' si' si mib, la,} la8 r |
+    \ttt {la16 sol' red' red sol, la,}
+    \ttt {la sol' red' red sol, la,}
+    \ttt {la sol' red' red sol, la,}
+    \ttt {la sol' red' red sol, la,} |
+    \ttt {la sol' red' red sol, la,}
+    \ttt {la sol' red' red sol, la,} la8 r |
+    \ttt {mi''16 lab, do, do lab' mi'}
+    \ttt {mi lab, do, do lab' mi'}
+    \ttt {mi lab, do, do lab' mi'}
+    \ttt {mi lab, do, do lab' mi'} |
+    \ttt {mi lab, do, do lab' mi'}
+    \ttt {mi lab, do, do lab' mi'} mi8 r |
+    lab,16 do, lab' mi'~ mi la \t {mi lab, do,}
+    lab' do, lab' mi'~ mi la \t {mi lab, do,} |
+    lab' do, lab' mi' reb fa, reb' mi reb8 r |
+    \ttt {fa16 lab, re, sib re lab'}
+    \ttt {fa' lab, re, sib re lab'}
+    \ttt {fa' lab, re, sib re lab'}
+    \ttt {fa' lab, re, sib re lab'} |
+    \ttt {fa' lab, re, sib re lab'}
+    \ttt {fa' lab, re, sib re lab'}
+    \ttt {fa' lab, re, sib re la'} |
+    \ttt {sib' reb, solb, re solb reb'}
+    \ttt {sib' reb, solb, re solb reb'}
+    \ttt {sib' reb, solb, re solb reb'}
+    \ttt {sib' reb, solb, re solb reb'} |
+    \ttt {sib' reb, solb, re solb reb'}
+    \ttt {sib' reb, solb, re solb reb'}
+    \ttt {sib' reb, solb, re solb reb'}
+    <do do'>8 reb mib fad sold la
+    \t {reb,16 reb reb} \t {mib mib mib} \t {fad fad fad}
+    \t {sold sold sold} \t {la la la} \t {si si si} |
+    <do, re'>4 <do re'> <do re'>
+    <fad fad'>8 sol la do re red |
+    \t {sol,16 sol sol} \t {la la la} \t {do do do}
+    \t {re re re} \t {red red red} \t {mid mid mid} |
+    <fad, sold'>4 <fad sold'> <fad sold'> |
+    <sol! sold'>8 la \t {do16 do do} \t {re re re} <fad, red'>4 |
+    <do do'>1~ <do do'>2 r4 |
   }
 }
 

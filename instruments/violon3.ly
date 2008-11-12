@@ -123,6 +123,53 @@ PrologueViolonTrois = { \ViolonTrois
 
 ActeUnSceneUnViolonTrois = { \ViolonTrois
   \relative {
+    R2*2 R2. R2*2 R2.
+    R2*2 \ind #"flaut." sol'4. r8 r4 |
+    R2*2 <la, re>4. r8 r4 |
+    R2*2 <sold' dod>4. r8 r4 |
+    R2*2 <do reb>4. r8 r4 |
+    mib,16 la, mib' si'~ si fad' \t {si, mib, la,}
+    mib' la, mib' si'~ si fad' \t {si, mib, la,} |
+    mib' la, mib' si'~ si fad' \t {si, mib, la,} mib' la, mib' si' |
+    mi, la, mi' do'~ do red \t {do mi, la,}
+    mi' la, mi' do'~ do red \t {do mi, la,} |
+    mi' la, mi' do'~ do red \t {do mi, la,} mi' la, mi' do' |
+    \ttt {do, lab' mi' mi lab, do,}
+    \ttt {do lab' mi' mi lab, do,}
+    \ttt {do lab' mi' mi lab, do,}
+    \ttt {do lab' mi' mi lab, do,} |
+    \ttt {do lab' mi' mi lab, do,}
+    \ttt {do lab' mi' mi lab, do,} do8 r |
+    \ttt {fa16 reb' la' la reb, fa,}
+    \ttt {fa reb' la' la reb, fa,}
+    \ttt {fa reb' la' la reb, fa,}
+    \ttt {fa reb' la' la reb, fa,} |
+    \ttt {fa reb' la' la reb, fa,}
+    \ttt {fa reb' la' la reb, fa,} fa8 r |
+    \ttt {sib,16 re lab' fa' lab, re,}
+    \ttt {sib re lab' fa' lab, re,}
+    \ttt {sib re lab' fa' lab, re,}
+    \ttt {sib re lab' fa' lab, re,} |
+    \ttt {sib re lab' fa' lab, re,}
+    \ttt {sib re lab' fa' lab, re,}
+    \ttt {sib re lab' fa' lab, re,} |
+    \ttt {re solb reb' sib' reb, solb,}
+    \ttt {re solb reb' sib' reb, solb,}
+    \ttt {re solb reb' sib' reb, solb,}
+    \ttt {re solb reb' sib' reb, solb,} |
+    \ttt {re solb reb' sib' reb, solb,}
+    \ttt {re solb reb' sib' reb, solb,}
+    \ttt {re solb reb' sib' reb, solb,} |
+    <do do'>4 <do do'> <do do'> |
+    reb8 mib fad sold la si
+    \t {mib,16 mib mib} \t {fad fad fad} \t {sold sold sold}
+    \t {la la la} \t {si si si} \t {re re re} |
+    <fad, fad'>4 <fad fad'> <fad fad'> |
+    sol8 la do re red mid |
+    \t {la,16 la la} \t {do do do} \t {re re re}
+    \t {red red red} \t {mid mid mid} \t {sold sold sold} |
+    <fad, mid'>4 <fad do'>8 re' \t {red16 red red} \t {mid mid mid} |
+    <do, do'>1~ <do do'>2 r4 |
   }
 }
 

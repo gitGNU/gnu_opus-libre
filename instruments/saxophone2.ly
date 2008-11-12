@@ -111,8 +111,41 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     sol2~ sol8 r r sol,~ | sol sib4. r4 | sol8 sib~ sib2 r4 |
     sol8 sib~ sib4 \t {fa8 sib re} |
     do4 r2 | R2.*2
-    fad,2.~ fad~ fad~ fad4 r \t {fad8 la sol} |
+    solb2.~ solb~ solb~ solb4 r \t {solb8 la sol} |
     do1~ do2 r4 |
+    
+    %%% Ad libitum %%%
+    R1 R2.*2 R1 R2.*2
+    
+    %%% Agitato %%%
+    re,1~ re2 r R1 |
+    re4 r r2 | R1 r2 re4 r |
+    r re r1 | R1*2 r4 re r1 | R1*3
+    r4 re r1 | R1*2 R1.
+    r8 mib mib8. si'16 lab2 r |
+    r4 \t {si8 lab si} mi4 \t {lab8 mib lab} si2 |
+    r4 si,2 r4 | r sib'2 r4 r2 |
+    mi,,!1 r2 | R1.*2 |
+    
+    %%% Allegro non troppo %%%
+    R1 R2. R1*5
+    R2. R1 R2. R1 R2. R1
+    sol2 r4 r2 \t {reb'4 sib lab} |
+    sol2. r4 | R1 sol2. r4 | R1 sol2 r4 |
+    R2.*2 R1*8
+    
+    %%% Moderato %%%
+    R2.*2 R1 R2. R1
+    R2. R1
+    mib2.~ mib2 r | fa2.~ fa2 r | mib4 fa2 |
+    mib8. fa16~ fa2. | solb8. lab16~ lab2 |
+    solb4 lab2. | mib8. fa16~ fa8 solb~ solb16 lab8.~ |
+    lab8 solb fa mib | sib'8 r r2 | R1
+    R2*4
+    
+    %%% Allegro marcato %%%
+    r4 mib,8. mib16 solb4. r8 |
+    r4 mib8. mib16 solb4 re8 r |
   }
 }
 

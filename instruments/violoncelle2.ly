@@ -117,6 +117,37 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
 
 ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
   \relative {
+    do,,2 do'\CaV fad,2 r4 |
+    do2 do'\CaV fad,4 fad2 |
+    <do sol'>2~ <do sol'> fad4. fad8~ fad4 |
+    <do sol'>2~ <do sol'> fad2 fad4 |
+    <do do'>2 do' fad,8 fad~ fad2 |
+    <do do'>2 <do do'> fad2~ fad8 fad |
+    fa2 do'16 fa, do' la'~ la mib' \t {la, do, fa,} |
+    fa4 do'16 fa, do' la' mib' la, do, fa, |
+    do' fa, do' la'~ la mi'! \t {la, do, fa,} fa2 |
+    do'16 fa, do' la' sol' mi \t {la, do, fa,} \t {fa8 fa fa} |
+    lab2 mi'16 lab, mi' la do8 \t {la16 mi lab,} |
+    lab4 mi'16 lab, mi' la do la mi lab, |
+    reb, lab' mi' la \ttt {do la mi lab, mi' la}
+    do la mi lab, reb, lab' \t {mi' la do} |
+    \t {lab,8 mi' lab,} reb,4 reb |
+    do16 sol' mi' sib' \t {re8 sib mi,}
+    \t {sol, mi' sib'} re16 sib mi, sol, |
+    do, sol' mi' sib' \t {re8 sib mi,} \t {sol, do, sol'} |
+    \ttt {do,16 sol' mi' sib' mi, sol,}
+    \ttt {do, sol' mi' sib' mi, sol,}
+    \ttt {do, sol' mi' sib' mi, sol,}
+    \ttt {do, sol' mi' sib' mi, sol,} |
+    \ttt {do, sol' mi' sib' mi, sol,}
+    \ttt {do, sol' mi' sib' mi, sol,}
+    \ttt {do, sol' mi' sib' mi, sol,} |
+    do,4 do do | \t {mib8 fad sold} \t {la si re} \t {mi fa sol} |
+    <do,, sol' re' sib'>4 do do | fad fad \t {fad8 sold fad} |
+    <fad si>4 fad fad8 fad |
+    \t {do re mib} \t {fa lab sib} \t {si dod mi}
+    <lad, fad'>4 \t {<fad si>8 dod' mi} \t {fad, la sol} |
+    <do, do'>1~ <do do'>2 r4 |
   }
 }
 

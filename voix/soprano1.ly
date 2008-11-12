@@ -39,14 +39,19 @@ ActeUnSceneUnSopranoUn= { \SopranoUn
     r8 \ind #"triomphal" sol \( \f ~ sol16 sib8.---> sol16( mi8.) \) | r8 re-.( \mp \> re-. re-. re-. re-.) \t {mi( \! dod) mi(} |
     sib4) r r2 | R1 |
     
-    fa'8-.( fa4-- fa8-. do-. do-. sol-. do-. | fa--) r \t {la, \( ( la la} re-.) la-. re-. sol-. |
+    fa'8-.( fa4-- fa8-. do-. do-. sol-. do-. |
+    fa--) r \t {la, \( ( la la} re-.) la-. re-. sol-. |
     fa4.-- \) r8 r4 | R2.*2 | R1*6 |
     
-    R1 r2 r4 r8 \t {sib,16( \mp \< la sib} | do-. do-. sib-. sib-. do8-.--)\! r16 sib-. ( \< do-. sib-. mib-. do-. |
+    R1 r2 r4 r8 \t {sib,16( \mp \< la sib} |
+    do-. do-. sib-. sib-. do8-.--)\! r16 sib-. ( \< do-. sib-. mib-. do-. |
     fa4--\! ) r2 | R1 R2. R1 R2. R1 |
     \t {sib,4 \mp \(  \< \ten sol,8~} sol do fa mib |
-    \tt {sib' fa \> sib do mib} sib--( fa'4--) \! \) mib,8 \( |
-    sib' \mf \< lab, fa' mib \t {sib' fa do'} | \t {sib( \> mib do} \ten sol'2) \) \! r8 r16 sib,-.( \mp |
+    %% FIXME: ugly slur
+    \tt {sib' fa \> sib do mib} sib--( fa'4--) \! \) \phrasingSlurUp mib,8 \( |
+    sib' \mf \< lab, fa' mib \t {sib' fa do'} |
+    \t {sib( \> mib do} \ten sol'2) \) \! r8 r16 sib,-.( \mp |
+    \phrasingSlurNeutral
     sib-. sib-. fa'-. do-. sib8.-- sib16-. sib-. sib-. fa'-. do-. | 
     sib8.--) sib16-.( mib-. sib-. mib-. fa-. sib,8--) sib( do16 \< sib do mib |
     fa4--) \! \t { r8 sib,( reb} sib--) lab'16-. reb,-. |

@@ -122,6 +122,53 @@ PrologueViolonUn = { \ViolonUn
 
 ActeUnSceneUnViolonUn = { \ViolonUn
   \relative {
+    R2*2 R2. R2*2 R2.
+    R2*2 \ind #"flaut." fad'4:32~ fad8 r r4 |
+    R2*2 \simile fad4:32~ fad8 r r4 |
+    R2*2 fad4:32~ fad8 r r4 |
+    R2*2 fad4:32~ fad8 r r4 |
+    \ttt {si,16 mib, la, la mib' si'}
+    \ttt {si mib, la, la mib' si'}
+    \ttt {si mib, la, la mib' si'}
+    \ttt {si mib, la, la mib' si'} |
+    \ttt {si mib, la, la mib' si'}
+    \ttt {si mib, la, la mib' si'} si8 r |
+    \ttt {red16 sol, la, la sol' red'}
+    \ttt {red sol, la, la sol' red'}
+    \ttt {red sol, la, la sol' red'}
+    \ttt {red sol, la, la sol' red'} |
+    \ttt {red sol, la, la sol' red'}
+    \ttt {red sol, la, la sol' red'} red8 r |
+    fa,16 do fa reb' la'8 \t {reb,16 fa, do}
+    fa do fa reb' la'8 \t {reb,16 fa, do}
+    fa do fa reb' la' reb, fa, reb' la'8 r |
+    \ttt {la16 reb, fa, fa reb' la'}
+    \ttt {la reb, fa, fa reb' la'}
+    \ttt {la reb, fa, fa reb' la'}
+    \ttt {la reb, fa, fa reb' la'} |
+    \ttt {la reb, fa, fa reb' la'}
+    \ttt {la reb, fa, fa reb' la'} la8 r |
+    \ttt {do16 fa, lab, re, lab' fa'}
+    \ttt {do' fa, lab, re, lab' fa'}
+    \ttt {do' fa, lab, re, lab' fa'}
+    \ttt {do' fa, lab, re, lab' fa'} |
+    \ttt {do' fa, lab, re, lab' fa'}
+    \ttt {do' fa, lab, re, lab' fa'}
+    \ttt {do' fa, lab, re, lab' mi'} |
+    mi' solb, sib, solb' mi' solb, sib, solb'
+    mi' solb, sib, solb' mi' solb, sib, solb' |
+    mi' solb, mi' solb, mi' lab, mi' lab, mi' sib mi sib |
+    \t {do, do do} \t {reb reb reb} \t {mib mib mib}
+    \t {fad fad fad} \t {sold sold sold} \t {la la la} |
+    <do, si'>4 <do si'> <do si'> |
+    <do mib>8 fad <do sold'> la' <do, si'> re' |
+    \t {fad,16 fad fad} \t {sol sol sol} \t {la la la}
+    \t {do do do} \t {re re re} \t {mib mib mib} |
+    <fad, mid'>4 <fad mid'> <fad mid'> |
+    <fad la>8 do' <fad, re'> red' <fad, mid'> sold' |
+    \t {sol,16 sol sol} \t {la la la} <do sold'>4 <red sold>8 <mid sold> |
+    \ottava #1
+    do'1~ do2 \ottava #0 r4 |
   }
 }
 

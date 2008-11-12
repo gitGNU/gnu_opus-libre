@@ -151,6 +151,41 @@ PrologueAltoDeux = { \AltoDeux
 
 ActeUnSceneUnAltoDeux = { \AltoDeux
   \relative {
+    R2*2 R2. R2*2 R2.
+    r4 do, re8 fad la do mi do do la re,4 |
+    do8 fad la do mi fad si do fad do si fad la, mi |
+    do4 fa8 solb sib do mib solb lab do solb mib solb,4 |
+    solb8 sib do mib solb lab do reb solb reb lab mib do sib |
+    do,8 fa16 la mib'4 la,8 \t {mib'16 si' fad'} fad4 |
+    do,,16 fa la mib' la,8 \t {mib'16 si' fad'} fad8 r |
+    la,, \t {sol'16 do fad} fad4 la,,8 mi'16 sol do4 |
+    mi,8 \t {sol16 do fad} fad4 la,,16 mi' \t {sol do fad} |
+    la,,8 do16 fa lab4 do,8 \t {fa16 lab mi'} mi4 |
+    la,,16 mi do' fa lab do, \t {fa lab mi'} mi4 |
+    \t {fa,16 lab mi'} mi8 \t {fa,16 lab mi'} mi8
+    \t {fa,16 lab mi'} mi8 \t {fa,16 lab mi'} mi8 |
+    \ttt {mi16 lab, fa do fa lab}
+    \ttt {mi' lab, fa do fa lab}
+    \ttt {mi' lab, fa do fa lab} |
+    \ttt {mi, sib' re lab' re, sib}
+    \ttt {mi, sib' re lab' re, sib}
+    \ttt {mi, sib' re lab' re, sib}
+    \ttt {mi, sib' re lab' re, sib} |
+    \ttt {mi, sib' re lab' re, sib}
+    \ttt {mi, sib' re lab' re, sib}
+    \ttt {mi, sib' re lab' re, sib} |
+    mi, sib' re sib mi, sib' re sib
+    mi, sib' re sib mi, sib' re sib |
+    mi, sib' re sib mi, sib' re sib
+    mi, sib' re sib |
+    <do, do'>4 <do do'> <do do'> |
+    <do si'> <do si'> <do si'> |
+    <do sib'> <do sib'> \t {fa8 sol sib} |
+    fad16 fad fad fad fad fad fad fad fad fad fad fad |
+    fad fad fad fad fad fad fad fad fad fad fad fad |
+    fad fad fad fad fad fad fad fad fad fad fad fad |
+    fad fad fad fad sol sol sol sol la la la la |
+    <do, do'>1~ <do do'>2 r4 |
   }
 }
 
