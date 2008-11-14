@@ -164,6 +164,90 @@ ActeUnSceneUnViolonDeux = { \ViolonDeux
     <fad, sold'>4 <fad sold'> <fad sold'> |
     <sol! sold'>8 la \t {do16 do do} \t {re re re} <fad, red'>4 |
     <do do'>1~ <do do'>2 r4 |
+    
+    %%% Ad libitum %%%
+    R1 R2.*2 R1 R2.*2
+    
+    %%% Agitato %%%
+    re,1~ re~ re2 r | R1 dod4 mi2 dod4 re2 re4 r |
+    r4 mib8 mib re4 r r2 | R1*2
+    r4 mib8 mib re4 r r2 | R1*3
+    r4 re r1 | R1*2 R1.*3
+    r4 r8 red16 red mi4 r |
+    r4 red16 red mi8 red16 red mi8 r4 r2 |
+    re'1. R1.*2
+    
+    %%% Allegro non troppo %%%
+    \pizz sib4 r r2 | R2. R1
+    \arco do8 sib do sib do sib do sib | R1
+    fa'16 fa la la fa fa la la fa fa la la fa fa la la |
+    fa fa la la fa fa la la fa fa la la fa fa la la |
+    sol sol la la sol sol la la sol sol la la |
+    sol sol la la sol sol la la sol sol la la sol sol la la |
+    sol sol la la sol sol la la sol sol la la |
+    sol sol la la sol sol la la sol sol la la sol sol la la |
+    do, do do do do do do do do do do do |
+    do do do do do do do do do do do do do do do do |
+    r4 mi,8 dod'4. | r8 re, dod2. |
+    sol2:32~ sol2~ sol2. r4 |
+    re'16 re la' la re, re la' la re, re la' la re, re la' la | R1
+    re,16 re la' la re, re la' la re, re la' la | R2.*2
+    R1*6
+    
+    %%% Moderato %%%
+    sib8[ r16 do] sib8 r sib[ r16 do] sib8[ r16 do] | 
+    sib8[ r16 do] sib8 r sib[ r16 do] sib8 r |
+    sib8[ r16 sib] do[ sib r do] sib8[ r16 sib,] |
+    do8[ r16 sib] do8[ r16 sib] do8[ r16 sib] |
+    do8[ r16 sib] do8[ r16 do'] sib8[ r16 do] sib8[ r16 sib,] |
+    do8[ r16 sib] do8[ r16 sib] do8[ r16 sib] |
+    do8[ r16 do'] sib8[ r16 sib,] do8[ r16 sib] do8[ r16 sib] |
+    do8[ r16 sib] do8[ r16 sib] do8[ r16 do'] |
+    sib8[ r16 do] sib8[ r16 sib,] do8[ r16 sib] do8[ r16 sib] |
+    do8[ r16 sib] do8 sib16 do r8 sib16 do |
+    r8 sib16 do r sib do8 r16 sib do8 r16 sib do8 |
+    sib16 do r8 do16 sib do8 r16 sib do8 |
+    sib16 do r8 sib16 do r8 sib16[ do r sib] do8[ r16 sib] |
+    do8[ r16 sib] do8 sib16 do r8 r16 sib |
+    do8[ r16 do] r8 sib16 do r8 sib16 do r8 do |
+    r16 sib do8 r8 sib16 do r sib do8 |
+    r16 sib do8 r16 sib do8 sib16 do r8 sib16 do r8 |
+    sib16[ do r sib] do8[ r16 sib] do8[ r16 sib] |
+    do8 sib16 do r8 sib16 sib | do8 r r2 |
+    \repeat tremolo 16 {do32 sib} |
+    do8 r16 sib32 sib do8 r16 sib32 sib |
+    do8 r16 sib32 sib do16 r \t {sib16 sib do} | R2*2
+    
+    %%% Allegro marcato %%%
+    <dod sold' sol'! red'>4 dod <dod sold'> dod |
+    <dod sold' sol'! red'>4 dod <dod sold'> r |
+    sol'! sol mi mi <re sib'>2 sol8 r r4 | R1
+    <lab re sol dod>4 dod, <sib lab'> dod |
+    <lab're sol dod> dod, <sib lab'> r |
+    do' do lab lab <si fad'>2 do8 r r4 | R1
+    r4 fad, mib8 r r4 | r fad mib8 r r4 |
+    mib mib re re reb2 do8 r r4 |
+    r fad mib8 r r4 r fad mib8 r r4 |
+    mib mib reb reb dod2 re8 r r4 | R1
+    r2 r4 \pizz sib' lab fa mib r lab fa mib r |
+    r sol fad mi |
+    
+    %%% Agitato %%%
+    \arco <do re>2. r4 | R1*2
+    re2 fad16 sold la si re8 fa |
+    sib8 <re,, la'> <la' fa'> <re, la'> <la' fa'> <re, la'> <re la'> <do' la'> |
+    <re, la'> <re la'> <la' fa'> <re, la'> <la' fa'> <re, la'> <re la'> <do' la'> |
+    <re, la'> <la' fa'> <re, la'> <la' fa'> <re, la'> <re la'> <do' la'> <re, la'> |
+    <re la'> <sib' fa'> re, re <lab' mib'> re, <sol re'> re |
+    <sol re'> re re <do' lab'> re, re <sol re> re |
+    <lab' mib'> re, re do' dod sol sib mib |
+    sib dod sol' mib sol dod sol sold |
+    dod r r4 r1 | R1*2
+    fa,16 fa mib mib fa fa mib mib fa fa mib mib fa fa mib mib |
+    mi mi do do mi mi do do mi mi do do |
+    fa fa sol sol fa fa sol sol |
+    \t {re8 fad sol} \t {re fad sol} |
+    \t {mi sol la} \t {mi sol la} | \t {mi sold la} la r | R2 R1*4
   }
 }
 

@@ -171,6 +171,25 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     
     %%% Allegro marcato %%%
     sol r reb r sol, r mib' r sol r reb r sol, r r4 |
+    R1*2 r2 \ttt {r16 sib, mib fad si re} \tt {sol mib mi fa fad} |
+    sol8 r lab, r do, r mib' r | sol r lab, r do, r r4 |
+    R1*2 r2 r4 mib8. mib16 | solb2 mib8 r mib8. mib16 |
+    solb2 mib8 r r4 | R1 r2 r4 mib8. mib16 solb2 mib8 r mib8. mib16 |
+    solb2 mib8 r r4 | R1 r2 r4 re'8 r do r la r sol r fa' r |
+    mib r re r do r fa r | mib r re r do r r4 |
+    mib8 r re r do r r4 | r do,8 r si r la r |
+    
+    %%% Agitato %%%
+    re2. r4 | r re r re | r2 r4 \t {sold'8 si dod} |
+    re4 do,2 r4 | re4 r r8 sol, r4 | sol8 r r4 r2 | R1
+    r4 sib8 r r sib r4 | r8 sol r4 r2 | r8 mi r4 r2 | R1
+    mib'8 r r4 r1 | R1*2
+    mib8 la, do sol mib' la, do sol |
+    do sol sib sol do sol |
+    re' \t {la16 re sol} do8 \t {la,16 re sol} |
+    do8 \t {la,16 re sol} do8 \t {re,16 sol la} |
+    dod8 \t {re,16 sol la} re8 \t {mi,16 sol la} |
+    re8 \t {mi,16 sold la} re8 r | R2 R1*4
   }
 }
 

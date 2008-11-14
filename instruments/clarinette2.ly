@@ -147,13 +147,32 @@ ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
     R2.*2 R1 R2. R1 R2. R1
     sib2.~ sib2 r | sib2.~ sib2 r |
     sib2.~ sib2 r4 r8 sib' | sib16 sib fa' do sib2 |
-    sib,4. mib8 fa16 sib do sib mib do si,8 |
+    sib,4. mib8 fa16 sib do sib mib do sib8 |
     fa'16 reb fa la,~ la8 fa'16 reb mib8 reb |
     dob sib dob16 sib dob reb | sib8 r r2 | R1
     R2*3 r4 r8 si! |
     
     %%% Allegro marcato %%%
     re r la r re, r si' r re r la r re, r r4 |
+    R1*3 re'8 r mib, r solb, r si' r | re r mib, r solb, r r4 |
+    R1*2 r2 r4 fa8. fa16 lab2 fa8 r fa8. fa16 |
+    lab2 fa8 r r4 | R1 r2 r4 fa8. fa16 lab2 fa8 r fa8. fa16 |
+    lab2 fa8 r r4 | R1 r2 r4 fad'8 r | mi r dod r si r re' r |
+    do r la r sol r fa r | mib r re r do r r4 |
+    la8 r sol r fa r r4 | r la8 r sold r fad r |
+    
+    %%% Agitato %%%
+    re'2. r4 | r re r re |
+    R1 re'4 re,2 r4 la'4 r r8 re, r4 |
+    re8 r r4 r2 | R1 r4 fa8 r r fa r4 |
+    r8 re r4  r2 | r8 do r4 r2 | R1
+    fa8 r r4 r1 | R1*2
+    do'8 mib la, mib' do mib la, mib' |
+    sib do sol do sib do |
+    la16 si re8 la16 si re8 |
+    la16 do re8 la16 do re8 |
+    \t {fad,16 si mi} la8 \t {fad,16 si mi} la8 |
+    \t {fad,16 si mi} la8 mi r | R2 R1*4
   }
 }
 

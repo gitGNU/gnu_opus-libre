@@ -142,6 +142,21 @@ ActeUnSceneUnSaxophoneUn = { \SaxAltoUn
     %%% Allegro marcato %%%
     r4 sol'8. sol16 sib4. r8 |
     r4 sol8. sol16 sib4 solb8 r |
+    R1*2 dod,,4 re8 mi sol!4 r |
+    r sold'8. sold16 si4. r8 |
+    r4 sold8. sold16 si4 sol8 r |
+    R1*2 r2 r4 sib,4 reb2 sib8 r sib4 |
+    reb2 sib8 r r4 | R1 r2 r4 sib reb2 sib8 r sib4 |
+    reb2 sib8 r r4 | R1*2 r2 r4 fad'8 r |
+    mi r dod r si r sib' r | lab r fa r mi r r4 |
+    re8 r do r la r r4 | R1
+    
+    %%% Agitato %%%
+    do2. r4 | r do r do | R1
+    r4 dod2. re8 r r4 r2 | R1*6
+    sib'8 r r4 r1 | R1*3 R2.
+    la8 si! la si fad la fad la |
+    si sol si fad sold re si' r | R2 R1*4
   }
 }
 

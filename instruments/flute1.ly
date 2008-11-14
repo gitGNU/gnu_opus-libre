@@ -166,7 +166,28 @@ ActeUnSceneUnFluteUn = { \FluteUn
     
     %%% Allegro marcato %%%
     fad8 r re r fad, r re' \t {red16 mi mid} |
-    fad8 r re r fad, r r4 R2*2
+    fad8 r re r fad, r r4 R1*2 |
+    r2 r4 r8 \t {sol16 sib mib} |
+    fad8 r sol, r sib, r re' \t {red16 mi mid} |
+    fad8 r sol, r sib, r r4 | R1*2
+    r2 r4 sol8. sol16 si2 sol8 r sol8. sol16 |
+    si2 sol8 r r4 | R1 r2 r4 sol8. sol16 si2 sol8 r sol8. sol16 |
+    si2 sol8 r r4 | R1 r2 r4 reb''8 r dob r sib r lab r reb r |
+    dob r sib r lab r reb r dob r sib r lab r r4 |
+    dob8 r sib r lab r r4 | r si,8 r sib r lab r |
+    
+    %%% Agitato %%%
+    re,2. r4 | r re r re |
+    r \t {sold'8 si do} dod16 re dod re \tt {dod re dod re dod} |
+    re4 re,2 r8 \t {fa16 sol la} | sib4 r r8 fa r4 | fa8 r r4 r2 |
+    R1 r4 lab8 r r lab r4 | r8 fa r4 r2 | r8 re r4 r2 |
+    R1 reb'8 r r4 r1 | R1*2
+    la16 fa fa8 la16 fa fa8 la16 fa fa8 la16 fa fa8 |
+    sib16 fa fa8 sib16 fa fa8 sib16 fa fa8 |
+    si16 sol sol8 si16 sol sol8 |
+    do16 sol sol8 do16 sol sol8 |
+    dod16 la la8 re16 la la8 |
+    re16 la la re sold8 r | R2 R1*4
   }
 }
 
@@ -275,7 +296,7 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
     
     %%% Duo %%%
     
-    \repeat unfold 4 {R2. R1} R2. r8 
+    R2. R1 R2. R1 R2. R1 R2. R1 R2. r8 
     \t {mi,16 fa sol} sib8 r8 |R2 r4 
     \t {mi,16 fa sol} sib8 r4 |r8 r16 fa16 do16. si'!32 mi8 r2 | r2 r8
     \t {mi,16 fa sol} sib8 r8 |r2 r8
