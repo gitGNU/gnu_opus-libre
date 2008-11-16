@@ -148,6 +148,82 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     \t {do re mib} \t {fa lab sib} \t {si dod mi}
     <lad, fad'>4 \t {<fad si>8 dod' mi} \t {fad, la sol} |
     <do, do'>1~ <do do'>2 r4 |
+    
+    %%% Ad libitum %%%
+    R1 R2. do2.~ do4 r r2 | do2.~ do4 r2 |
+    
+    %%% Agitato %%%
+    re8 re mib mib re re mib mib |
+    re4:8 mib: re: mib: re: mib: re: mib: |
+    re: mib: re: mib: re: mib: re: mib: |
+    re: mib: re: mib: |
+    re: mib: re: mib: re: mib: |
+    re: mib: re: mib: re: mib: re: mib: |
+    re: mib: re: mib: re: mib: |
+    re: mib: re: mib: re: mib: re: mib: re: mib: re: mib: |
+    re: mib: re: mib: re: mib: |
+    re: mib: re: mib: re: mib: re: mib: |
+    mib8 fab mib fab mib fab mib fab mib fab mib fab |
+    mib fab mib fab mib fab mib fab mib fab mib fab |
+    mib fab mib fab mib fab mib fab mib fab mib fab |
+    mib fab mib fab mib fab mib fab |
+    mib fab mib fab mib fab mib fab mib fab mib fab |
+    mi1. R1.*2
+    
+    %%% Allegro non troppo %%%
+    \pizz sib''4 r r2 | R2. sib4 mi, r \t { \arco mi8 si dod} |
+    sib8 r r4 r2 | \pizz sib'4 mi, r \t { \arco mi8 dod si} |
+    sib8 r r4 r2 R1 R2.
+    \pizz sib'4 r r2 | R2. sib4 r r2 | sib4 sib sib sib r r2 |
+    \arco sol,2. sib4 r r2 |
+    r2 \ttt {sol16 lab sib dod red mi} \ttt {fad mi red dod sib lab} |
+    \ttt {sib dod red mi fad la} \ttt {si la fad mi red dod} sib8 r r4 |
+    R1 \clef tenor |
+    re'8\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2.
+    re8\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2. \clef treble
+    \pizz la'4 la la la R1 la4 la la la R1 |
+    \arco fa16 fa r8 fa16 fa r8 fa16 fa r8 fa16 fa r8 | R1 \clef bass
+    
+    %%% Moderato %%%
+    la,,4. sib8~ sib2 | la4. sib8~ sib2 |
+    la8. sib16~ sib4. la8 | do2.~ do2 r |
+    la8. sib16~ sib4~ sib16 la8. | do1~ |
+    do2 la4 | do2 r4 \t {la8 do sib} |
+    mib2.~ mib2 r | fa2.~ fa2 r | mib4 fa2 |
+    mib8. fa16~ fa2~ \t {fa8 mib fa} |
+    solb8. lab16~ lab2 | solb4 lab4~ lab16 solb8. lab mib16~ |
+    mib8. fa16~ fa8 solb~ solb16 lab8.~ | lab8 fa, solb lab |
+    si8 r r2 | R1 R2*4
+    
+    %%% Allegro marcato %%%
+    <sib do>4 <sib do>16 <sib do> <sib do> <sib do> <sib do>4 r |
+    <sib do>4 <sib do>16 <sib do> <sib do> <sib do> <sib do>4 r |
+    re, re re re mi2 re8 r r4 | R1
+    <fa sib mi la>4 <sib dod>16 <sib dod> <sib dod> <sib dod> <sib dod>4 r |
+    <fa sib mi la>4 <sib dod>16 <sib dod> <sib dod> <sib dod> <sib dod>4 r |
+    re re sib sib <sol re' la'>2 fad8 r r4 | R1*3
+    do'4 do si si sib2 la8 r r4 | R1*2
+    do4 do sib sib si2 sol8 r r4 | R1
+    r2 r4 \pizz re' do la sol r fad mi dod r r sib' la sol |
+    
+    %%% Agitato %%%
+    \arco re'8 fa sib fa re16 fa lab sib reb sib lab fa |
+    re8 sol sib sol re16 la' sib do mib do sib la |
+    re,8 sol sib sol re16 si'dod red mi red dod si |
+    re, re re re re re re re re re re re re re re re |
+    <la re>8 re <re la'> re <la re> re <re la'> re |
+    <re re> re <sol la> re <re re> re <sol la> re |
+    <re re> re <sol re'> re <re re> re <sol re'> re |
+    <re sol> re <do' fa> re, <re sol> re <do' fa> re, |
+    <re sol> re <do' fa> re, <re sol> re <do' fa> re, |
+    <sol, re'> re' \clef treble <fa' do'> \clef bass re,
+    <sol, re'> re' \clef treble <fa' do'> \clef bass re, |
+    re \clef treble <fa' do'> \clef bass re, \clef treble <solb' reb'> \clef bass
+    re, \clef treble <lab'' mib'> \clef bass re,, \clef treble <la'' mi'> \clef bass |
+    <mi, la>8 r r4 r1 | R1*2
+    
+    R1 R2. R2 \clef treble la'16\CaV la\CaV la\CaV la\CaV la\CaV la\CaV la\CaV la\CaV |
+    fad fad fad fad fad fad fad fad | fad fad fad fad fad8 r \clef bass | R2 R1*4
   }
 }
 

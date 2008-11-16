@@ -171,6 +171,93 @@ ActeUnSceneUnAltoUn = { \AltoUn
     <sold mid'> <sold mid'> <sold mid'> |
     <fad fad'> fad16 fad fa fa fa mib mib mib \clef alto |
     <do, do'>1~ <do do'>2 r4 |
+    
+    %%% Ad libitum %%%
+    r2 <re' fad'>~ <re fad'>2.~ <re fad'>~ <re fad'>4 r r2 | mi2.~ mi4 r2 |
+    
+    %%% Agitato %%%
+    re,16 re re re re re re re re re re re re re re re |
+    re2:16 re: re: re: re: re: re: re: re: re: |
+    mib4:16 re: re2:16 re: | re: re: re: re: |
+    mib4:16 re: re2:16 re: | re: re: re: re: re: re: |
+    mib4:16 re: re2:16 mib4:16 re: |
+    mib: re: re2:16 mib4:16 re: mib: re: |
+    mib2. r4 r8 mib16 mib fab4 |
+    r8 fab r4 r16 mib fab8 r4 r8 fab r4 |
+    r4 r8 mib16 mib fab4 r r2 |
+    r4 r8 mib16 mib fab4 r |
+    r4 mib16 mib fab8 mib16 mib fab8 r4 r2 |
+    mi'!1. R1.*2 \clef treble |
+    
+    %%% Allegro non troppo %%%
+    sib'16 sib sib sib sib sib sib sib sib sib sib sib sib sib sib sib |
+    sib sib sib sib sib sib sib sib sib sib sib sib | sib8 r r4 r2 |
+    sib16 sib sib sib sib sib sib sib sib sib sib sib sib sib sib sib |
+    sib8 r r4 r2 |
+    mib8 sib mib sib mib sib mib sib | mib do mib do mib do mib do |
+    mib reb mib reb mib reb | mib reb mib reb mib reb mib reb |
+    mi re mi re mi re | mi re mi re mi re mi re |
+    fad mi fad mi fad mi | fad mi fad mi fad mi fad mi \clef alto |
+    r4 sib,8 mi4. | r8 sol,8~ sol2. |
+    sol4 r r2 | r2 r4 \ttt {fad16 la si do re fa} |
+    la4 sol,8 re' sol, re' sol, re' | R1
+    sol,8 re' sol, re' sol, re' | R2.*2 R1*2 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 | R1
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 | R1
+    
+    %%% Moderato %%%
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 sib16 do r8 |
+    sib16 do r8 sib16 do r8 |
+    sib16[ do r do] sib16[ do r do] sib16[ do r do] |
+    sib16[ do r do] sib16[ do r do] sib16[ do r do] sib16[ do r do] |
+    sib16 do r8 sib16 do r8 | sib16 do r8 sib16 do r8 | R2*2
+    
+    %%% Allegro marcato %%%
+    <do, la' sold' re'>4 la' <do, la'> la' |
+    <do, la' sold' re'>4 la' <do, la'> r |
+    fad fad mib mib <mib la>2 lab8 r r4 | R1
+    <la! mib' lab re>4 la re, la' |
+    <la! mib' lab re>4 la re, r |
+    dod' dod la la <la mi'>2 re8 r r4 | R1
+    r4 sold, fa8 r r4 | r sold fa8 r r4 | R1
+    sold2 sol8 r r4 |
+    r sold fa8 r r4 | r sold fa8 r r4 | R1
+    sold2 sib8 r r4 | R1
+    r2 r4 \pizz re do la sol r |
+    do la sol r r do si la |
+    
+    %%% Agitato %%%
+    \arco re,8 re re re re2:8 | re: re: re: re: |
+    re16 mi fa sol sib8 reb solb4 r |
+    sib8 sol re sol do sol re sol |
+    do sol fa do fa sib fa do |
+    fa sib fa do fa do sol do |
+    fa do sol do fa do mib lab |
+    re lab re, lab' re, lab re lab' |
+    mib sib mib lab sol reb sol, reb' |
+    <sol, fa'> do mib lab reb mib, lab reb |
+    re8 r r4 r1 | R1*2
+    do8 la do la do la do la |
+    sib sol sib sol sib sol la fa la fa |
+    fad mi fad mi dod16 dod dod dod dod dod dod dod |
+    dod dod dod dod dod8 r | R2 R1*4
   }
 }
 

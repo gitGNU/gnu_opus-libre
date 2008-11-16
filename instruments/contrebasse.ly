@@ -128,6 +128,47 @@ ActeUnSceneUnContrebasse = { \Contrebasse
     \t {<fad, la>8 do' re} \t {mib fa lab} sib4 |
     fad,4 fad fad fad8 fad \t {fad fad fad} fad'4 |
     do1~ do2 r4 |
+    
+    %%% Ad libitum %%%
+    R1 R2.*2 R1 R2.*2 |
+    
+    %%% Agitato %%%
+    re2:8 re: re: re: re: re: re: re: re: re: re: re: |
+    re: re: re: re: re: re: re: |
+    re: re: re: re: re: re: re: re: re: |
+    re: re: re: | re4:8 mib: re: mib: | re8 re mib re re mib re re |
+    mib4\downbow mib\downbow \simile mib mib mib mib |
+    mib mib mib mib mib mib mib mib mib mib mib mib |
+    mib mib mib mib mib2:8 mib: mib: |
+    <mi, mi'>1. R1.*2
+    
+    %%% Allegro non troppo %%%
+    R1R2.R1*5 R2. R1 R2. R1 R2. R1
+    sol2. sib4. reb8~ \t {reb4 sib lab} |
+    sol2. r4 | R1*3 R2.*3 R1*6
+    
+    %%% Moderato %%%
+    la4. sib8~ sib2 | la4. sib8~ sib2 |
+    la8. sib16~ sib4. la8 | do2.~ do2 r |
+    la8. sib16~ sib4~ sib16 la8. | do1~ |
+    do2 la4 | do2 r4 \t {la8 do sib} |
+    mib2.~ mib2 r | fa2.~ fa2 r | mib4 fa2 |
+    mib8. fa16~ fa2~ \t {fa8 mib fa} |
+    solb8. lab16~ lab2 | solb4 lab4~ lab16 solb8. lab mib16~ |
+    mib8. fa16~ fa8 solb~ solb16 lab8.~ | lab8 fa, solb lab |
+    si8 r r2 | R1 R2*4 |
+    
+    %%% Allegro marcato %%%
+    si?4 si' si, si' si, si' si, r | R1*3
+    si4 si' si, si' si, si' si, r | R1*16
+    
+    %%% Agitato %%%
+    re2:8 re: re: re: re: re: re: re: |
+    re4 re' re, re' re, re' re, re' |
+    re, re' re, re' re, re' re, re' |
+    re, re' re, re' re, re' re, re' |
+    re, re' re, re' <re, re'>8 r r4 r1 | R1*3 R2. R2*3
+    re'16\CaV re\CaV re\CaV re\CaV re8 r | R2 R1*4
   }
 }
 

@@ -240,11 +240,42 @@ ProloguePiano = { \Piano
 
 ActeUnSceneUnPiano = { \Piano
   \PianoDeuxMains
-  \relative {
+  \relative { \clef bass
+    do,8 do \t {do do do} do4 do\laissezVibrer s2. |
+    r8 do \t {do do do} do4 do\laissezVibrer s2. |
+    r8 do \t {do do do} do4 do\laissezVibrer s2. |
+    r8 do \t {do do do} do4 do\laissezVibrer s2. |
+    r8 do \t {do do do} do4 do\laissezVibrer s2. |
+    r8 do \t {do do do} do4 do\laissezVibrer s2. \clef treble |
+    <la'' mib' si'>1\arpeggio \laissezVibrer |
+    <la, mib' si'>2.\arpeggio \laissezVibrer |
+    <do' solb' mi'>1\arpeggio \laissezVibrer |
+    <mi, sol red' fad>2.\arpeggio \laissezVibrer \clef bass |
+    r8 <do,do'> \t {<do do'> <do do'> <do do'>} <do do'>4 <do do'>\laissezVibrer s2. |
+    r8 <do do'> \t {<do do'> <do do'> <do do'>} <do do'>4 <do do'>\laissezVibrer \clef treble |
+    r4 <do' fa lab>2\arpeggio |
+    s4 \pl <sib re lab'>\arpeggio <fa'' do'>\arpeggio
+    s \pl <sib,, re lab'>\arpeggio <fa'' do'>\arpeggio
+    \pl {s <sib,, re lab'> s} {<do' do'> <do do'>8 <do do'> \t {<do do'> <do do'> <do do'>}} |
+    <do do'>4 <re, fad dod'>\arpeggio s \pl <re fad dod'>\arpeggio <sold' mi'>\arpeggio s2. |
+    R2.*7
+    <do, do'>4 <do do'>8 <do do'> \t {<do do'> <do do'> <do do'>} <do do'>4~ |
+    <do do'>2. |
     
+    %%% Ad libitum %%%
+    <lab do>16[ <fa mib'> r <lab do>] <mi fad'>2.~ <mi fad'>2*3/2\laissezVibrer
+    R2. \clef bass | r2 <solb, sib>16[ <mib reb'> r <solb sib>] <mi mi'>4~ |
+    <mi mi'>2*3/2\laissezVibrer | r2 <lab, do>16[ <fa mib'> r <lab do>] |
   }
   \relative {
-    
+    <do,,, do'>2\laissezVibrer s2 fad2.\laissezVibrer |
+    <do do'>2\laissezVibrer s2 fad2.\laissezVibrer |
+    <do do'>2\laissezVibrer s2 fad2.\laissezVibrer |
+    <do do'>2\laissezVibrer s2 fad2.\laissezVibrer |
+    <do do'>2\laissezVibrer s2 fad2.\laissezVibrer |
+    <do do'>2\laissezVibrer s2 fad2.\laissezVibrer |
+    \pl {<fa, fa'>2 fa2\laissezVibrer} {s8 do'' \t {do do do} do4 do\laissezVibrer} fa,2. |
+    \pl {fa,2 fa2\laissezVibrer} {s8 do'' \t {do do do} do4 do\laissezVibrer} fa,2. |
   }
 }
 
