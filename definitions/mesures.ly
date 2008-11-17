@@ -545,7 +545,21 @@ InterludeDeuxMesures = {
   \time 2/4 R2
   \time 3/4 R2.
   \time 2/4 R2    \bar "||"
-  %TODO
+      \tempo "Animato (doppio tempo)" 4 = 132
+            R2*14 \bar "||"
+  \time 2/2
+      \tempo "Tempo I" 2 = 66
+            R1*4
+  \time 3/4 R2.
+  \time 2/2 R1
+  \time 3/4 R2.*2
+  \time 2/2
+      \tempo "poco ral."
+            R1
+  \time 3/4 R2.
+  \time 2/4 r4
+      \mark \markup \Noir
+            r4    \bar "|."            
 }
 
 ActeUnSceneTroisMesures = {

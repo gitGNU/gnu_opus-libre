@@ -366,7 +366,21 @@ InterludeDeuxClarinetteUn = { \ClarinetteBasse
     fad4 red8 r r2 |
     fad4 red8 r r4 |
     fad4 red8 r | R2. R2 |
-    r4 sold4 mi8 r |
+    r4 sol4 mib8 r | R2
+    sol2 mib4 r |
+    sol2 mib4 r |
+    sol2 mi!4 r |
+    sol2 mi4 r |
+    sol2 mib4 r |
+    sol2 mib4 r |
+    sol2 mi!4 r |
+    la,,8 mi' si' dod re2 |
+    la,8 mi' si' dod re2 |
+    la,8 mi' si' dod re2~ | re4 r r2 | R2.
+    fa,,8 do' la' si mi2 |
+    fa,,8 do' la'4 r |
+    R2. sold'2 mi4 r |
+    R2. sold4 r |
   }
 }
 

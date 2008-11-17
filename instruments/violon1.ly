@@ -432,6 +432,28 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
   }
 }
 
+InterludeDeuxViolonUn = { \ViolonUn
+  \relative {
+    R1 R2. R2 R2. R2 R2. R2
+    \pizz sol4 \t {re'8 mib sib'} |
+    si,4 \t {re8 fad si} |
+    sol,4 \t {re'8 mib sib'} |
+    re,4 \t {mi8 la dod} |
+    re4 \t {sol,,8 re' la'} |
+    mi'4 \t {sol,,8 re' la'} |
+    mi'4 \t {la,8 re sol} |
+    do4 \t {lab,8 reb fa} |
+    sib4 \t {mib,,8 sol si} |
+    si4 \t {reb,8 fa la} |
+    lab4 \t {si,8 mib sol} |
+    solb4 \t {la,8 reb fa} |
+    mi4 \t {mi'8 lab do} |
+    mi4 r |
+    \arco mi,,1~ mi~ mi~ mi2 r | R2.
+    re1~ re2 r4 | R2. mi2. r4 R2. mi4 r |
+  }
+}
+
 ActeUnSceneTroisViolonUn = { \ViolonUn
   \relative {
     R2.*6 <mib re'>2.:32 <mib re'>4 r2 |

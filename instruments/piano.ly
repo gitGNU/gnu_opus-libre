@@ -266,6 +266,29 @@ ActeUnSceneUnPiano = { \Piano
     <lab do>16[ <fa mib'> r <lab do>] <mi fad'>2.~ <mi fad'>2*3/2\laissezVibrer
     R2. \clef bass | r2 <solb, sib>16[ <mib reb'> r <solb sib>] <mi mi'>4~ |
     <mi mi'>2*3/2\laissezVibrer | r2 <lab, do>16[ <fa mib'> r <lab do>] |
+    
+    %%% Agitato %%%
+    <fad fad'>2 r | R1 r4 <do' fa si> r <do fa si> | R1*3
+    <do re>2 <do re>4 <do re> \t {<do re> <do re> <do re>} <do re>1\laissezVibrer R1 |
+    re2 re4 re \t {re re re} <do re>1\laissezVibrer R1*2 |
+    re2 re4 re \t {re re re} <sib re>1\laissezVibrer s2
+    \t {do4 lab' mib} |
+    <do si'>2 r4 <do si'>2. | r4 <do si'> <do si'>2. r4 |
+    r <do si'> <fa mi'> <lab sol'> \clef treble <mi' red'>2 |
+    r4 <sol do lab'>2. | r4 <mib' la re>2. |
+    s1. <sib fa reb'>1 r2 R1. |
+    
+    %%% Allegro non troppo %%%
+    R1 R2. R1*5 R2. R1 R2. R1 R2. R1
+    \ottava #1
+    r16 <reb' fa> <do si'>16. <sol' sib>32 <mi re'>2\laissezVibrer s1
+    \ottava #0
+    R1*4 R2.*3 R1*6
+    
+    %%% Moderato %%%
+    R1*2 R2.*2 R1 R2. R1 R2. R1 s2. s1 s2. s1
+    sib,,16 do sib' sib, do fa \gauche fa, \droite sib
+    do \gauche mib, \droite sib' do |
   }
   \relative {
     <do,,, do'>2\laissezVibrer s2 fad2.\laissezVibrer |
@@ -276,6 +299,16 @@ ActeUnSceneUnPiano = { \Piano
     <do do'>2\laissezVibrer s2 fad2.\laissezVibrer |
     \pl {<fa, fa'>2 fa2\laissezVibrer} {s8 do'' \t {do do do} do4 do\laissezVibrer} fa,2. |
     \pl {fa,2 fa2\laissezVibrer} {s8 do'' \t {do do do} do4 do\laissezVibrer} fa,2. |
+    \pl {<reb reb'>2 reb2\laissezVibrer} {s8 do'' \t {do do do} do4 do\laissezVibrer} <reb, lab'>2. |
+    \pl {reb,2 reb2\laissezVibrer} {s8 do'' \t {do do do} do4 do\laissezVibrer} <reb, lab'>2. |
+    \pl <do sol'>4\arpeggio <mi' sib' re>\arpeggio s 
+    \pl <do,sol'>\arpeggio <mi' sib' re>\arpeggio s |
+    <do, sol' mi'> s <sol' mi' sib'> |
+    \pl <do,sol'>\arpeggio <mi' sib' re>\arpeggio s 
+    \pl <do,sol'>\arpeggio <mi' sib' re>\arpeggio s |
+    \pl <do,sol'>\arpeggio <mi' sib' re>\arpeggio
+    <do do'>8 <do do'> \t {<do do'> <do do'> <do do'>} |
+    
   }
 }
 
@@ -624,6 +657,27 @@ ActeUnSceneDeuxPiano = { \Piano
     \mg \clef treble \ttt {fa, si mi \md \ottava #1
     sib' mib la } \ottava #0 \mg R2.
     R1 R2.*3 R2 R2. R1*4
+  }
+}
+
+InterludeDeuxPiano = { \Piano
+  \PianoDeuxMains
+  \relative {
+    R1 R2. R2 R2. R2 R2. R2
+    R2*13 r4 \acciaccatura red'16 <mi, mi'>4
+    <si re>1~ <si re>~ <si re>~ <si re>4 r r2 | R2.
+    <la re>1~ <la re>2 r4 | R2.
+    <fa si re mi>2 r | R2. <fa sold mi'>4 r |
+  }
+  \relative {
+    R1 R2. R2 R2. R2 R2. R2
+    R2*14
+    \pl {<la, mi'>1~ <la mi'>~ <la mi'>~ <la mi'>4 }
+    {s2 mi''4\laissezVibrer mi,\laissezVibrer
+    s2 mi'4\laissezVibrer mi,\laissezVibrer
+    s2 mi'4\laissezVibrer mi,\laissezVibrer s } r r2 | R2.
+    \pl {<fa, do'>1~ <fa do'>2} {s2 mi''4\laissezVibrer mi,\laissezVibrer s2} r4 |
+    R2. <dod, la'>2 r | R2. <dod la'>4 r |
   }
 }
 

@@ -338,6 +338,20 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
   }
 }
 
+InterludeDeuxFluteUn = { \Piccolo
+  \relative {
+    R1 R2. R2 R2. R2 R2. R2
+    r4 sol'' R2 r4 si R2 |
+    \t {la'8 mi dod} \t {do mi lab}
+    \t {sol re si} \t {sib re solb}
+    \t {fa lab, mi'} \t {mib sol, re'} |
+    \t {reb fa la} reb8 r | R2
+    r4 \t {la8 reb, fa} la,8 r r4 |
+    r re'!8 solb, sib r r4 | R2
+    mi,,1~ mi~ mi~ mi4 r r2 R2. |
+    do1~ do2 r4 | R2. R1 R2. R2
+  }
+}
 
 ActeUnSceneTroisFluteUn = { \FluteUn
   \relative {

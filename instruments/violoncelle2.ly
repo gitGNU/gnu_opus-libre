@@ -391,6 +391,25 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
   }
 }
 
+InterludeDeuxVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    R1 R2. R2 R2. R2 R2. R2
+    \pizz \t {si,8 fad' sol} mib'4 |
+    \t {re,8 sol sib} mib4 |
+    \t {si,8 fad' sol} mib'4 |
+    \t {sib,8 mib sol} do4 |
+    \t {sol,8 re' la'} mi'4 |
+    \t {sol,,8 re' la'} mi'4 |
+    \t {sol,,8 re' la'} mi'4 |
+    \t {mi,8 la do} fa4 |
+    do,8 lab' si, sol' sib, solb' la, fa' |
+    do lab' si, sol' sib, solb' la, fa' |
+    do4 mi' R2 |
+    \arco la,,1~ la~ la~ la2 r | R2.
+    fa1~ fa2 r4 | R2. dod2. r4 R2. dod4 r |
+  }
+}
+
 ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
   \relative {
     do,,2.:32~do: <do si'>2.:32~<do si'>:~<do si'>:~<do si'>:~<do si'>: <do si'>4 r2 |

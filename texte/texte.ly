@@ -428,6 +428,19 @@ InterludeDeuxContraltoTexte = \lyricmode {
   Voy -- \dash on --
   Cou -- pons ça,
   cou -- pons ça_!
+  Cou -- pons __ _ ça_!…
+  Cou -- pons __ _ ça…
+  Cou -- pons ça_!
+  Cou -- pons ça_!
+  Cou -- pons ça,
+  cou -- pons ça,
+  cou -- pons cou -- pons cou -- pons cou -- pons cou -- pons ça_!
+  Ca -- chons ça…
+  Ca -- chons ça…
+  Brû -- chons ça, __ _ brû -- lons ça_! __ _
+  Aah_! Aaah_!! __ _
+  É -- tei -- gnons ça_!
+  \dash É -- \dash tei -- \dash gnons -- \dash ça.
 }
 
 %%%%%%%%%%%%%%%%%%%%%% Troisième Tableau   %%%%%%%%%%%%%%%%%%%%%%%%%

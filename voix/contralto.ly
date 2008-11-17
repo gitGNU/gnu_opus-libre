@@ -45,9 +45,18 @@ InterludeDeuxContralto = { \Contralto
   \relative {
     R1 R2. R2
     fad16 fad do4. r8 mib16 mib |
-    la8 fad16 fad do4 | r2 r8 mi16 mi |
-    r8 sold16 mi do'8 mi,16 sold |
-    do,4 
+    la8 fad16 fad do4 | r2 r8 mib16 mib |
+    r8 sol16 mib si'8 mib,16 sol |
+    si,4 r | r8 mi mib do' | si4 r |
+    r8 mib, re sib' | la4 r r la8 la, | la'4 r |
+    r lab8 lab, | sol'4 mi8 mi mib4 lab8 lab |
+    sol4 mib8 mib mi mi sol sol lab lab si do mib4 r |
+    r2 \t {r4 si, re} mi!2. r4 |
+    r sib2 re4 mi2. r4 |
+    r4 mi8 sol la4~ |
+    la la8 do re2~ re4 r8 re, r dod'~ |
+    dod4 r8 re, mi sol |
+    lab2 r do,4 sib reb | la! r |
   }
 }
 

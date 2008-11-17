@@ -398,18 +398,18 @@ InterludeDeux = {
       <<
         \new GrandStaff
           <<
-   %         \new Staff \InterludeDeuxFluteUn
-   %         \new Staff \InterludeDeuxFluteDeux 
+            \new Staff \InterludeDeuxFluteUn
+            \new Staff \InterludeDeuxFluteDeux 
           >>
         \new GrandStaff
           <<
             \new Staff \InterludeDeuxClarinetteUn
-   %         \new Staff \InterludeDeuxClarinetteDeux
+            \new Staff \InterludeDeuxClarinetteDeux
           >>
         \new GrandStaff
           <<
             \new Staff \InterludeDeuxSaxophoneUn
-   %         \new Staff \InterludeDeuxSaxophoneDeux
+            \new Staff \InterludeDeuxSaxophoneDeux
           >>
       >>
 
@@ -427,23 +427,23 @@ InterludeDeux = {
       <<
         \new GrandStaff
           <<
-   %         \new Staff \InterludeDeuxViolonUn
-   %         \new Staff \InterludeDeuxViolonDeux
-   %         \new Staff \InterludeDeuxViolonTrois
+            \new Staff \InterludeDeuxViolonUn
+            \new Staff \InterludeDeuxViolonDeux
+            \new Staff \InterludeDeuxViolonTrois
           >>
         \new GrandStaff
           <<
-   %         \new Staff \InterludeDeuxAltoUn
-   %         \new Staff \InterludeDeuxAltoDeux
+            \new Staff \InterludeDeuxAltoUn
+            \new Staff \InterludeDeuxAltoDeux
           >>
         \new GrandStaff
           <<
-   %         \new Staff \InterludeDeuxVioloncelleUn
-   %         \new Staff \InterludeDeuxVioloncelleDeux
+            \new Staff \InterludeDeuxVioloncelleUn
+            \new Staff \InterludeDeuxVioloncelleDeux
           >>
-   %     \new Staff \InterludeDeuxContrebasse
+        \new Staff \InterludeDeuxContrebasse
       >>
-   % \new PianoStaff \InterludeDeuxPiano
+    \new PianoStaff \InterludeDeuxPiano
   >>
 }
 

@@ -441,6 +441,27 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
   }
 }
 
+InterludeDeuxAltoUn = { \AltoUn
+  \relative {
+    R1 R2. R2 R2. R2 R2. R2
+    \pizz mib4 si fad' sol, |
+    mib' si fa? sib |
+    la la'8 re, |
+    la4 la'8 re, |
+    la4 la'8 re, |
+    la4 la' |
+    r8 mi, r sib' | r do, r fad |
+    r mi r sib' | r do, r fad |
+    r mi do' lab' mi'4 r |
+    r8 \arco mi,, si' dod re2 |
+    r8 mi, si' dod re2 |
+    r8 mi, si' dod re2~ |
+    re r | R2.
+    r8 do, la' si mi2 |
+    r8 do, la'4 r | R2. fa2. r4 R2. fa4 r |
+  }
+}
+
 ActeUnSceneTroisAltoUn = { \AltoUn
   \relative {
     R2.*4 <mi, red'>2.:32~ <mi red'>:~<mi red'>: <mi red'>4 r2 |
