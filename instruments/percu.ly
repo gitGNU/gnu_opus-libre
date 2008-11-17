@@ -319,8 +319,180 @@ ProloguePercus = <<
   }
 >>
 
-ActeUnSceneUnPercus = {
-}
+ActeUnSceneUnPercus = <<
+  \new Staff { \Marimba
+    \relative {
+            R2*2 R2. R2*2 R2.
+      R2*2 R2. R2*2 R2.
+      R2*2 R2. R2*2 R2.
+      R1 R2. R1 R2.
+      R1 R2. R1 R2.
+      R1 R2. R1 R2.*8 R1 R2.
+      
+      %%% Ad libitum %%%
+      R1 R2.*2 R1 R2.*2
+      
+      %%% Agitato %%%
+      R1*6 R1. R1*2 R1. R1*3 R1.
+      R1*2 R1.*3 R1 R1.*4
+      
+      %%% Allegro non troppo %%%
+      R1 R2. R1*5
+      R2. R1 R2. R1 R2. R1
+      R2. R1*3 \clef bass |
+      \pl {sol,16[ re'] s8} {sol8 <re' la'>16 sol,} \clef treble
+      <sib'' do> re,, la' <sib' do> sol,, re' <sib' do> la
+      <sib' do> re,, la' <sib' do> | R1
+      sol,,16 re' <sib' do> la <sib' do> re,, la' <sib' do>
+      sol,, re' la' <sib' do> | R2.
+      <sib, do>4 <sib' do> <sib,, do> | R1
+      <sib do>8 <sib' do>16 do, <do' reb> reb, <reb' mib> mib, r2\fermata | R1
+      <sib do>8 <reb' mib>16 mib, <mib' fa> fa, <fa' solb> solb, r2\fermata | R1
+      <sib,do>16 <fa'' solb> solb, <solb' lab> lab, <lab' si> si, <re! si' re!>
+      <mi! re' mi!>16 <mi re' mi> r8 r4\fermata |
+      
+      %%% Moderato %%%
+      R1*2-\markup "Allez au Vibraphone" R2.*2 \Vibraphone
+      r4 r8 do, <sib' do>2\laissezVibrer | R2.
+      r8 <sib, do>2..\laissezVibrer | R2. \clef bass
+      \t {r8 do, sib'} \clef treble do sib'4 <do sib'>4. |
+      mib,,2*1/4\laissezVibrer <do'' sib'>8~ <do sib'>16 <sol fa'>8 re16 la'4 |
+      mib,2. r4 |
+      fa2*1/4\laissezVibrer <do'' sib'>8 sib16 mib8 lab,16 reb, fa, do' sol' |
+      <sib do>4\laissezVibrer fa,2.\laissezVibrer |
+      do'16 sib' <do sib'>8~ <do sib'>16 <sib' do>4.. |
+      <mib,,, fa>8 <sib'' do>2.. |
+      r16 do'32 sib, do'16 do,, sib' <sib' do>4.. |
+      r8 sib,,16 do sib sib do sib do sib do sib' do, sib' do sib |
+      sib do sib, do sib' do, do' sib sib do sib' do |
+      sib, do sib' do, sib' do sib, do, |
+      <mi, fad>8 r r2 R1 R2*4
+      
+      %%% Allegro marcato %%%
+      \Marimba R1*34 
+      R1. R1*2 \ottava #1
+      \ind #"(bag. dures)"
+      mib'''16 fa, sib fa mib' fa, sib fa
+      mib' fa, sib fa mib' fa, sib fa |
+      fa' sol, do sol fa' sol, do sol fa' sol, do sol |
+      sol' la, re la sol' la, re la |
+      lab' sib, mib sib lab' sib, mib sib |
+      sib' do, fa do sib' do, fa do |
+      si' dod, fad dod si'8 r 
+      \ottava #0
+      R2 R1*4
+    }
+  }
+  \new DrumStaff { \Percus
+    \drummode {
+      R2*2 R2. R2*2 R2.
+      R2*2 R2. R2*2 R2.
+      R2*2 R2. R2*2 R2.
+      R1 R2. R1 R2.
+      R1 R2. R1 R2.
+      R1 R2. R1 R2.*8 R1 R2.
+      
+      %%% Ad libitum %%%
+      R1 R2.*2 R1 R2.*2
+      
+      %%% Agitato %%%
+      R1*6 R1. R1*2 R1. R1*3 R1.
+      R1*2 R1.*3 R1 R1.*4
+      
+      %%% Allegro non troppo %%%
+      R1 R2. R1*5
+      R2. R1 R2. R1 R2. R1
+      R2. R1*5 R2.*3 R1*6
+      
+      %%% Moderato %%%
+      R1*2 R2.*2 R1 R2. R1
+      R2. R1 R2. R1 R2. R1 R2.
+      R1 R2. R1 R2. R2 R2.
+      r2 r4 r8 \ind #"Tambour (bag. fagot)" sn32 sn sn sn |
+      sn4 r8 \t {sn16 sn sn} sn4 r | R2*2
+      \set  drumStyleTable = #drums-style
+      
+      %%% Allegro marcato %%%
+      sn4 \ind #"Cymb. susp. (sur la cloche)" hh sn \t {sn8 sn sn} |
+      sn4 hh sn r | R1 r8 r16 sn32 sn sn8. sn16 sn4 r |
+      sn2:32 sn4 \t {sn8 sn sn} | sn4 hh sn \t {sn8 sn sn} |
+      sn4 hh sn r | R1 r8 r16 sn32 sn sn8. sn16 sn4 r | R1
+      r8 sn \t {sn sn sn} sn4 r |
+      r8 sn \t {sn sn sn} sn4 hh | R1
+      r8 sn \t {sn sn sn} sn4 r |
+      r8 sn \t {sn sn sn} sn4 r |
+      \t {r8 r16 sn sn8} \t {sn sn sn} sn4 hh | R1*4
+      r2 r4 hh | r2 r4 hh | R1
+      
+      %%% Agitato %%%
+      R1*11 R1. R1*2 R1 R2. R2*5 R1*4
+    }
+  }
+  \new Staff { \Timbales
+    \relative {
+      do,2:32 do4 r R2. do2:32 do4 r R2. |
+      do2:32 do4 r fad, r2 |
+      do'2:32 do4 r fad, r2 |
+      do'2:32 do4 r fad, r2 |
+      do'4 r do r fad,2:32 fad4 |
+      <fa do'>8 \t {fa16 fa fa} fa4 r2 |
+      <fa do'>4. <fa do'>8 \t {<fa do'> <fa do'> <fa do'>} |
+      <fa do'>8 \t {fa16 fa fa} fa4 r2 |
+      <fa do'>4. do'8 \t {do do do} |
+      reb8 \t {reb16 reb reb} reb4 r2 |
+      <lab reb>4. <lab reb>8 \t {<lab reb> <lab reb> <lab reb>} |
+      <lab reb> \t {reb16 reb reb} reb4 r2 |
+      <lab reb>4. reb8 \t {reb reb reb} |
+      do4 r do sol do r sol |
+      do \t {do8 do do} do4 sol do r do |
+      do8 do16 do32 do do8 do do do |
+      do8 do16 do32 do do8 do do do |
+      do8 do16 do32 do do8 do do do |
+      fad,16 fad fad fad fad fad fad fad fad fad fad fad |
+      fad fad fad fad fad fad fad fad fad fad fad fad |
+      fad8 fad16 fad r fad fad8 fad16 fad8 fad16 |
+      r4 r8 fad \t {fad fad fad} |
+      do'8 do16 do32 do \t {do8 do do} do do do8. do32 do |
+      do8 do \t {do do do} \tt {do16 do do do do} |
+      
+      %%% Ad libitum %%%
+      R1 R2.*2 R1 R2.*2
+      
+      %%% Agitato %%%
+      re16 re4.. r2 | r4 re \t {re re re} |
+      re r r2 | re4 re \t {re re re} re r r2 |
+      r2 r4 r8 re16 re |
+      re4 r re re \t {re re re} re4 r r2 | R1
+      re4 r re re \t {re re re} re4 r r2 | R1*2
+      re4 r re re \t {re re re} re4 r r2 | re1:16\glissando |
+      mib4 r mib mib \t {mib mib mib} |
+      mib4 r mib mib \t {mib mib mib} |
+      mib4 r mib mib \t {mib mib mib} |
+      mib8. mib32 mib mib8 mib r2 |
+      r4 \t {mib8 mib mib} mib mib r4 mib2:16\glissando |
+      mi4 r r1 | R1.*2
+      
+      %%% Allegro non troppo %%%
+      R1 R2. R1*5 R2. R1 R2. R1 R2.
+      r2 r4 r8 sol,32 sol sol sol |
+      sol8 sol r2 | r2 r4 r8 \t {sol16 sol sol} |
+      sol4 r r2 R1*3 | R2.*3 R1*6
+      
+      %%% Moderato %%%
+      R1*2 R2.*2 R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
+      R1 R2. R1 R2. R2 R2. R1
+      R2*4
+      
+      %%% Allegro marcato %%%
+      R1*22 r2 r4 r8 r16 re'32 re |
+      
+      %%% Agitato %%%
+      re4 re r re r re r re r re r re |
+      re re re8 re re16 re re re | re4 r r2 | R1*6
+      R1. R1*3 R2. R2*5 R1*4
+    }
+  }
+>>
 
 ActeUnSceneUnBisPercus = <<
   \new Staff { \Vibraphone

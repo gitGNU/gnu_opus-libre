@@ -391,19 +391,25 @@ ActeUnSceneUnPiano = { \Piano
     <si' lad'>4 \pl { \t {si'8 si si}} do'4 <si,, do'> \pl si' lad' |
     <si,,lad'>4 \pl { \t {si'8 si si}} do'4 <si,, do'>
     \pl <si, si'> <sib'' do mi fa> |
-    r si,, r si r8 si \t {si si si} si r r4 | R1
+    \ottava #-1
+    r si,, r si r8 si \t {si si si} si r r4
+    \ottava #0 | R1
     <si' lad'>4 \t {<do' re>8 <do re> <do re>} <do re>4 si, |
     <si  lad'> \t {<do' re>8 <do re> <do re>} <do re>4
     \pl <si,, si'> <sib'' do mi fa> |
+    \ottava #-1
     r si,, r si r8 si \t {si si si} si r r4 |
+    \ottava #0
     r2 r4 <do'' fa> <mi sold dod>2 <do fa>8 r <do fa>4 |
     <mi sold dod>2 <do fa>8 r r4 |
-    r si,, r si r si si <do'' fa> |
+    \ottava #-1
+    r si,, r si r si si 
+    \ottava #0 <do'' fa> |
     <mi sold dod>2 <do fa>8 r <do fa>4 <mi sold dod>2 <do fa>8 r r4 |
     R1*7
     
     %%% Agitato %%%
-    <re, re'>2. r4 | R1*3
+    <re,, re'>2. r4 | R1*3
     sol'''8 re la do sol re re' la |
     sol' re la do sol re do' sol |
     sol' do, fa, mi'? la, re, fa' sib, |
