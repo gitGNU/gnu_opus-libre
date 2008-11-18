@@ -637,7 +637,7 @@ ActeDeuxSceneDeuxContrebasse = { \Contrebasse
     \pizz <la, la'>4\plak mib' sold re |
     dod' sol do | fa, si mi, |
     mib la, re sold, |
-    dod sol do fad, | fa' mi <re sib'>\arpeggio <re sib'>\arpeggio |
+    dod sol do fad, | fa' mi <re sib'>\arpeggUp <re sib'>\arpeggUp |
     \simile <re sib'> <re sib'> |
     <re sib'> <re sib'> |
     <re sib'> <re sib'> |

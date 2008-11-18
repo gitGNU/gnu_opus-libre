@@ -755,8 +755,8 @@ ActeDeuxSceneDeuxVioloncelleUn = { \VioloncelleUn
     \clef bass <la,,re>16 <la re> <la re> <la re> <sol' do>8 <la, re> \clef treble |
     r8 red'' red mi r4 \clef bass sol,,16 sol sol8 \clef treble |
     r8 mi'' mi fa \clef bass r8 r16 la,,, fad sol fa lab |
-    mi8 \pizz si' <fad'dod'>4\arpeggio |
-    mi,8 si' <fad'dod'>4\arpeggio | mi,8 si' fad' dod, | mi4 dod8 do |
+    mi8 \pizz si' <fad'dod'>4\arpeggUp |
+    mi,8 si' <fad'dod'>4\arpeggUp | mi,8 si' fad' dod, | mi4 dod8 do |
     mi4 r8 mi | mi4 r |
     \arco <dod la'>1~ <dod la'>2 r4 |
     
@@ -794,7 +794,7 @@ ActeDeuxSceneDeuxVioloncelleUn = { \VioloncelleUn
     r16 sold mi sold r sol mib sol |
     r fad re fad r fa reb fa |
     r mi do mi r red si red |
-    re8 \clef bass \pizz <re, sib'>\arpeggio r <re sib'>\arpeggio |
+    re8 \clef bass \pizz <re, sib'>\arpeggUp r <re sib'>\arpeggUp |
     r \simile <re sib'> r <re sib'> |
     r <re sib'> r <re sib'> |
     r <re sib'> r <re sib'> |

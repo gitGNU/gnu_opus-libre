@@ -106,8 +106,8 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
   
-  Aah… __ _ _ _ \freestyleOn
-  _ _ _ _ _ _
+  Aah… __ _ _ _ \freeStyleOn
+  \markup \null __ _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _ _ _
   _ _ _ _ _ _ _ _
@@ -118,7 +118,7 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
   _ _ _ _ _
   _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _ _ _ _
-  _ \freestyleOff
+  _ \freeStyleOff
   Mmm… __ _ Mmm… __ _ Mmmh… __ _ Aa… __ _  Aaa… __ _ _ _ AAAH_!
   
   Euh… Oui…

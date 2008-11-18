@@ -387,24 +387,39 @@ InterludeUnMesures = {
       \tempo "Andante tranquillo" 4 = 63
             R1.
   \time 2/2 R1*3
+  \time 3/2
+      \mark \markup \did \InterludeUnB
+            R1.
+  \time 2/2 R1
   \time 3/2 R1.
+      \mark \markup \did \InterludeUnC
+            R1.
   \time 2/2 R1
-  \time 3/2 R1.*2
-  \time 2/2 R1*2
+      \mark \markup \did \InterludeUnD
+            R1
   \time 3/2 R1.*2
   \time 2/2 R1
+  \time 3/4
+      \mark \markup \did \InterludeUnE
+            R2.
+  \time 2/4
+      \mark \markup \did \InterludeUnF
+            R2
   \time 3/4 R2.
-  \time 2/4 R2
-  \time 3/4 R2.
+  \time 2/2
+      \mark \markup \did \InterludeUnG
       \tempo "Andante con moto" 4 = 66
-  \time 2/2 R1*2
+            R1*2
   \time 3/2 R1.
   \time 2/2 R1*2
   \time 3/2 R1.
   \time 2/2 R1
   \time 3/4 R2.   \bar "||"
+      \mark \markup \did \InterludeUnH
       \tempo "Un poco più vivo" 4 = 92
-            R2.*16\bar "|."
+            R2.*10
+      \mark \markup \did \InterludeUnI
+            R2.*6 \bar "|."
 }
 
 ActeUnSceneDeuxMesures = {
@@ -537,26 +552,40 @@ ActeUnSceneDeuxMesures = {
 
 InterludeDeuxMesures = {
   \time 4/4
+      \mark \markup \init-did \InterludeDeuxA
       \tempo "Andante con moto" 4 = 66
             R1
   \time 3/4 R2.
   \time 2/4 R2
-  \time 3/4 R2.
+  \time 3/4
+      \mark \markup \did \InterludeDeuxB
+            R2.
   \time 2/4 R2
   \time 3/4 R2.
-  \time 2/4 R2    \bar "||"
+  \time 2/4
+      \mark \markup \did \InterludeDeuxC
+            R2    \bar "||"
       \tempo "Animato (doppio tempo)" 4 = 132
-            R2*14 \bar "||"
+            R2*7
+      \mark \markup \did\InterludeDeuxD
+            R2*7  \bar "||"
   \time 2/2
+      \mark \markup \did \InterludeDeuxE
       \tempo "Tempo I" 2 = 66
             R1*4
-  \time 3/4 R2.
+  \time 3/4
+      \mark \markup \did \InterludeDeuxF
+            R2.
   \time 2/2 R1
-  \time 3/4 R2.*2
+  \time 3/4
+      \mark \markup \did \InterludeDeuxG
+            R2.*2
   \time 2/2
       \tempo "poco ral."
             R1
-  \time 3/4 R2.
+  \time 3/4
+      \mark \markup \did \InterludeDeuxH
+            R2.
   \time 2/4 r4
       \mark \markup \Noir
             r4    \bar "|."            

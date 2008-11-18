@@ -748,14 +748,14 @@ ActeUnSceneDeuxPiano = { \Piano
     <sold,sold'>4~ <sold sold'>8 sold' \t {sold sold sold} |
     <sold,sold'>8 r r <sold sold'> <fad fad'> <la la'> |
     \pl <fa fa'>2\laissezVibrer
-    {s4 \stemDown \ttt {mi''16 la re \md sol si mi} }
-    \mg \ttt {si,, mi la re \md sol mi'}
-    \mg \ttt {sol,,,re'la' \md mi' si' sol'}
+    {s4 \stemUp \ttt {mi''16 la re \stemDown \md sol si mi} }
+    \mg \stemUp \ttt {si,, mi la re \stemDown \md sol mi'}
+    \mg \stemUp \ttt {sol,,,re'la' \stemDown \md mi' si' sol'}
     \mg \stemNeutral \pl <fa,,,, fa'>2\laissezVibrer
-    {s4 \clef treble \stemDown 
-    \ttt {re'''16 mi fa sol \md si mi \mg \clef bass } }
-    \ttt {sol,, do re \md la' si mi}
-    \mg \ttt {do,, sol' re' \md la' mi' si' \mg}
+    {s4 \clef treble \stemUp
+    \ttt {re'''16 mi fa sol \stemDown \md si mi \mg \clef bass } }
+    \stemUp \ttt {sol,, do re \stemDown \md la' si mi}
+    \stemUp \mg \ttt {do,, sol' re' \stemDown \md la' mi' si' \mg}
     fa,,,32 la si mi \md sol la do re \mg  \clef treble \stemNeutral
     mi fa sol la \md si re mi la \mg \clef bass |
     \pl <fad,,,, fad'>2\laissezVibrer 

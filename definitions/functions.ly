@@ -191,6 +191,13 @@ thumbpizz =
 leftpizz =
 #(make-articulation "stopped")
 
+arpeggUp =
+#(let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'arpeggio-direction 1
+     (ly:music-property m 'tweaks)))
+   m)
+
 plak =
 #(let* ((m (make-music 'ArpeggioEvent)))
    (ly:music-set-property! m 'tweaks
@@ -515,10 +522,10 @@ rit = #(make-text-span "rit.")
 
 %% Lyrics formatting ----------------------------------------------%
 
-freestyleOn = {
+freeStyleOn = {
 \override Lyrics . LyricExtender #'stencil = ##f }
 
-freestyleOff = {
+freeStyleOff = {
 \revert Lyrics . LyricExtender #'stencil }
 
 leftSyl = {

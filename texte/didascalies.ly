@@ -169,29 +169,21 @@ reste déserte un bref instant, puis Dieu entre
 au moment où la musique commence. D’allure
 quelconque, il est habillé en jardinier."
 
-InterludeUnB = "Il parcourt la scène, inspectant le décor de
-papier, puis s’arrête devant les plantes à
-l’avant-scène."
+InterludeUnB = "Il parcourt la scène, inspectant le décor de papier, puis s’arrête devant les trois plantes à l’avant-scène."
 
-InterludeUnC = "Il commence à en tailler
-certaines à l’aide de son sécateur,
-méticuleusement."
+InterludeUnC = "Il les inspecte une par une, les arrose..."
 
-InterludeUnD = "Puis soudain, après un
-instant de réflexion, il déchiquette une plante,
-d'un geste délibérément maladroit."
+InterludeUnD = "Comme il écarte le feuillage, une feuille lui reste entre les doigts. Il réfléchit un instant, puis la mange."
 
-InterludeUnE = "Il répète ensuite ce même jeu, sur l’une ou l’autre
-plante, toujours très calmement."
+InterludeUnE = "Arrivé à la troisième plante, il s'interrompt dans sa dégustation."
 
-InterludeUnF = "À la fin de l’interlude orchestral, visiblement
-satisfait, il contemple le plateau jonché de
-débris informes..."
+InterludeUnF = "Il regarde la plante, circonspect..."
 
-InterludeUnG = "puis s’éloigne tranquillement,
-tandis que la Reine entre par l’autre côté,
-perdue dans ses pensées, un coffret de bijoux
-entre les mains."
+InterludeUnG = "puis se met en devoir de la taillader, jusqu'à ce qu'il n'en reste plus rien qu'un tas épars."
+
+InterludeUnH = "Du pied, il pousse les morceaux pour les dissimuler derrière les autres plantes."
+
+InterludeUnI = "Il regarde autour de lui, puis avise un point hors de la scène et se met en chemin, tandis que la Reine entre par l’autre côté, perdue dans ses pensées, un coffret de bijoux entre les mains."
 
 %------------------------------------------------------------------%
 
@@ -221,6 +213,24 @@ ActeUnSceneDeuxG = "La Reine l'interrompt, prenant enfin et de
 mauvaise grâce le collier des mains du Roi."
 
 %%%%%%%%%%%%%%%%%%%%%%  Troisième Tableau %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+InterludeDeuxA = "Entre Dieu. Comme précédemment, il se dirige vers les plantes à l'avant-scène."
+
+InterludeDeuxB = "Il regarde chacune des deux plantes, qui sont toutes deux bien plus grandes que lui. Il compare leurs tailles avec sa main, par rapport au haut de sa tête."
+
+InterludeDeuxC = "Il décide subitement de les couper."
+
+InterludeDeuxD = "Il les déchiquette de plus en plus vite... jusqu'à ce qu'elles ne forment plus qu'un tas sur le sol."
+
+InterludeDeuxE = "Il regarde autour de lui mais ne trouve plus d'endroit pour cacher les débris."
+
+InterludeDeuxF = "Il crée une grande flamme (ou de la fumée)..."
+
+InterludeDeuxG = "... qui l'impressionne lui-même."
+
+InterludeDeuxH = "Le feu éteint, il s'avance et regarde le théâtre."
+
+%------------------------------------------------------------------%
 
 ActeUnSceneTroisA = "La lumière revient sur la cellule de l'Étranger,
 qui se tient immobile, seul. Entre le Chef de la

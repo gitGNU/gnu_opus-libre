@@ -11,6 +11,7 @@ Percus = {
   \set DrumStaff.instrumentName = \markup { \hcenter-in #27.5 "Percussions  "}
   \set DrumStaff.shortInstrumentName = "Perc.  "
   \override DrumStaff.VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 4)
+  \set drumStyleTable = #percussion-style
 }
 
 Marimba = {
@@ -68,7 +69,7 @@ ProloguePercus = <<
       
       %%% Adagio %%%
       R2*4 R2.*6
-      <lab, sol'>2.\laissezVibrer R2.
+      <lab sol'>2.\laissezVibrer R2.
       \ind #"senza Ped." <lab sol'>4 r2 <lab sol'>4 r2
       <dob sib'>4 r <do si'> |
       R4.
@@ -80,7 +81,7 @@ ProloguePercus = <<
       
       %%% A tempo %%%
       re8 r4 | r4 r32 solb, lab sib |
-      re8 r4 | R4.*2 \stemDown <lab' re>8 \gauche \stemUp re,,
+      re8 r4 | R4.*2 \stemDown <lab re>8 \gauche \stemUp re,,
       \droite \stemDown <fa' sib> <re' sol> \gauche \stemUp
       lab,, \droite \stemDown <fa'' sib> <re' sol> \gauche \stemUp
       re,,, \droite \stemDown <fa'' sib> \stemNeutral |
@@ -88,6 +89,7 @@ ProloguePercus = <<
       <dod' re> lab <dod re> re, <dod' re> lab, |
       <dod' re> lab <dod re> re, <dod' re> lab, |
       <dod' re> lab <dod re> re, <dod' re> lab, |
+      \ottava #1
       <mi'' fa> si <mi fa> fa, <mi' fa> si, |
       <mi' fa> si <mi fa> fa, <mi' fa> si, |
       <mi' fa> si <mi fa> fa, <mi' fa> si, |
@@ -100,6 +102,7 @@ ProloguePercus = <<
       <sol' si> dod, <sol' si> si, <sol' si> sol, |
       <sold' si> dod, <sold' si> si, <sold' si> sold, |
       <mi' sol> sold, <mi' sol> sol, <dod mi> mi, |
+      \ottava #0
       <sold si> dod, <sold' si> si, <sold' si> sold, |
       sol' fad, sol' fad, r8 |
       R4.*8 R2*5/4 R2.*3
@@ -410,18 +413,18 @@ ActeUnSceneUnPercus = <<
       R1 R2. R1 R2. R2 R2.
       r2 r4 r8 \ind #"Tambour (bag. fagot)" sn32 sn sn sn |
       sn4 r8 \t {sn16 sn sn} sn4 r | R2*2
-      \set  drumStyleTable = #drums-style
+      \set drumStyleTable = #drums-style
       
       %%% Allegro marcato %%%
-      sn4 \ind #"Cymb. susp. (sur la cloche)" hh sn \t {sn8 sn sn} |
-      sn4 hh sn r | R1 r8 r16 sn32 sn sn8. sn16 sn4 r |
-      sn2:32 sn4 \t {sn8 sn sn} | sn4 hh sn \t {sn8 sn sn} |
-      sn4 hh sn r | R1 r8 r16 sn32 sn sn8. sn16 sn4 r | R1
-      r8 sn \t {sn sn sn} sn4 r |
-      r8 sn \t {sn sn sn} sn4 hh | R1
-      r8 sn \t {sn sn sn} sn4 r |
-      r8 sn \t {sn sn sn} sn4 r |
-      \t {r8 r16 sn sn8} \t {sn sn sn} sn4 hh | R1*4
+      \ind #"Tambour" bd4 \ind #"Cymb. susp. (sur la cloche)" hh bd \t {bd8 bd bd} |
+      bd4 hh bd r | R1 r8 r16 bd32 bd bd8. bd16 bd4 r |
+      bd2:32 bd4 \t {bd8 bd bd} | bd4 hh bd \t {bd8 bd bd} |
+      bd4 hh bd r | R1 r8 r16 bd32 bd bd8. bd16 bd4 r | R1
+      r8 bd \t {bd bd bd} bd4 r |
+      r8 bd \t {bd bd bd} bd4 hh | R1
+      r8 bd \t {bd bd bd} bd4 r |
+      r8 bd \t {bd bd bd} bd4 r |
+      \t {r8 r16 bd bd8} \t {bd bd bd} bd4 hh | R1*4
       r2 r4 hh | r2 r4 hh | R1
       
       %%% Agitato %%%
@@ -531,7 +534,7 @@ ActeUnSceneUnBisPercus = <<
       r re4 re8 \t { re re sold,} |
       
       %%% Piu vivo %%%
-      re'4 r r2 | sold,2:32 | re'4 r r2 | sold,2:32 |
+      re'4 r r2 | sold,2.:32 | re'4 r r2 | sold,2.:32 |
       <sol re'>4 r8 \t {sol16 sol sol} sol4  |
       r sol32 sol8.. r4 | \t {sol16 sol sol~} sol8 r4 reb' |
       sol, r2 |
@@ -697,8 +700,8 @@ ActeUnSceneDeuxPercus = <<
     r8 cb8:32 cb4 |
     r8 cb8:32 cb4 |
     r8 cb8:32 cb4 |
-    r8 cb8:32 r4 | r8 cb r4 | R2
-    r8 cb r cb | r cb r cb \t {cb cb \ind #"étouffer" cb:32} R2.
+    r8 cb8:32 r4 | r8 cb r4 | R2 %%FIXME: barcheck error
+    r8 cb r cb r cb r cb \t {cb cb \ind #"étouffer" cb:32} R2.
     
     %%% Largo assai %%%
     R1 R2.*3 R2 R2. R1*4
@@ -819,7 +822,7 @@ ActeUnSceneTroisPercus = <<
 
 
 ActeUnSceneTroisBisPercus = {
-  \new GrandStaff \GrandMarimba \PianoDeuxMains
+  \new GrandStaff \GrandMarimba \PercuDeuxMains
    \relative {
      r8<red fad> r <red fad> r <red fad> r <red fad> |
      r <red fad> r <red fad> r <red fad> r <red fad> |

@@ -31,7 +31,6 @@ includeLayout = \layout {
     \override VerticalAxisGroup #'remove-empty = ##t
     \consists "Hara_kiri_engraver"
     \override StaffSymbol #'line-count = #1
-    drumStyleTable = #percussion-style
   }
   \context {
     \Score
@@ -101,10 +100,6 @@ includeLayout = \layout {
     markFormatter = #format-mark-box-letters
     subdivideBeams = ##t
     beatLength = #(ly:make-moment 1 8)
-  }
-  \context {
-    \Voice
-    \override Arpeggio  #'arpeggio-direction = #UP
   }
 
 %% Vocal score layout  --------------------------------------------%

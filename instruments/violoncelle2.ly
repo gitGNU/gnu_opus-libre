@@ -229,7 +229,7 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
 
 ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
   \relative {
-    dod,,8:32
+    dod,,2.:32
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} |
@@ -789,7 +789,7 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     r16 mi'' sold mi r mib sol mib |
     r re fad re r reb fa reb |
     r do mi do r si red si |
-    sib8 \clef bass \pizz <re, sib'>\arpeggio r <re sib'>\arpeggio |
+    sib8 \clef bass \pizz <re, sib'>\arpeggUp r <re sib'>\arpeggUp |
     r \simile <re sib'> r <re sib'> |
     r <re sib'> r <re sib'> |
     r <re sib'> r <re sib'> |
