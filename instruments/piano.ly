@@ -980,10 +980,10 @@ InterludeTroisPiano = { \Piano
     <lab si dod re sol> <lab si dod re sol> |
     <si re fad sol sib> <si re fad sol sib> |
     <si re fad sol sib> <si re fad sol sib> \clef bass |
-    sol16 \mg sol,, sol' \md mi' \mg mi,, mi'
-    \md mi' \mg sold, |
-    \md sold' \mg mi, mi' \md do' \mg sold,
-    \md sold' \mg mi \md mi' \clef treble | s4
+    \stemDown sol16 \stemUp \mg sol,, sol' \stemDown \md mi' \stemUp \mg mi,, mi'
+    \stemDown \md mi' \stemUp \mg sold, |
+    \stemDown \md sold' \stemUp \mg mi, mi' \stemDown \md do' \stemUp \mg sold,
+    \stemDown \md sold' \stemUp \mg mi \stemDown \md mi' \clef treble | \stemNeutral s4
     r16 re' sib' dod | <fad, lad dod fa!>8 r r4 |
   }
   \relative {
@@ -1139,10 +1139,10 @@ ActeUnSceneQuatrePiano = { \Piano
     \ttt { mib''16 lab sib re \md mib la} re4 \mg \clef bass r |
     mi,,,, mi <sib sib'>8 mi |
     \tt {mi'16 si' \md la re mi} sold4 \mg
-    \ttt {re16 \md mi sold la re \mg <la, mi'>} |
-    r4 \clef treble \tt {la16 re mi la \md mi'}
-    \tttt {<la re> \mg la, re mi sold \md la re \mg \clef bass} |
-    dod,,,,2\laissezVibrer s |
+    \ttt {re16 \md \stemDown mi sold la re \mg \stemUp <la, mi'>} |
+    r4 \clef treble \tt {la16 re mi la \md \stemDown mi'}
+    \tttt {<la re> \mg \stemUp la, re mi sold \md \stemDown la re \mg \clef bass} |
+    \stemNeutral dod,,,,2\laissezVibrer s |
     R2. R1 R2. R2 R2. R2 R2. R2 R2.
     R1*5 R2 R2. R1
 

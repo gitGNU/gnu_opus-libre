@@ -718,7 +718,7 @@ InterludeTroisMesures = {
   \time 3/4
             R2.
   \time 2/4
-            R2*7
+            R2*7  \bar "|."
 }
 
 ActeUnSceneQuatreMesures = {

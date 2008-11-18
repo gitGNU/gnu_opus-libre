@@ -127,7 +127,7 @@ ProloguePercus = <<
       r2 <dod' la'>4 mi |
       r <la fa'> dod | r mi lab, |
       r <fad re'> la | r reb8 fa, lab4 |
-      r sib <re, fa> | r solb <do fa> r | R1 R2.
+      r sib <re, fa> | r solb <do, fa> r | R1 R2.
       
       %%% Vivo al fine %%%
       R2*23
@@ -648,7 +648,7 @@ ActeUnSceneDeuxPercus = <<
     <do'' sol'>4 si8 sol fa8 sol,,16 re' <do'' sol'>4 | 
     si8 sol fa8 sol,,16 re' <do'' sol'>8 do, <si si'> <sol sol'> |
     <fa fa'>4 r2 R2. | R1*2 R2.*2 R1*2 | R2.*2 R1*2 |
-    \clef bass dod,,4 fad2\laissezVibrer | R2. | sold,1:32\laissezVibrer |
+    \clef bass dod,4 fad2\laissezVibrer | R2. | sold,1:32\laissezVibrer |
     
     %%% Vibraphone %%%
     R1 R2.*2-\markup "Allez au Vibraphone" \Vibraphone |
@@ -699,9 +699,10 @@ ActeUnSceneDeuxPercus = <<
     r4 cb4:32 cb8 r | R2.
     r8 cb8:32 cb4 |
     r8 cb8:32 cb4 |
-    r8 cb8:32 cb4 |
-    r8 cb8:32 r4 | r8 cb r4 | R2 %%FIXME: barcheck error
-    r8 cb r cb r cb r cb \t {cb cb \ind #"étouffer" cb:32} R2.
+    r8 cb8:32 r4 | r8 cb r4 | R2
+    r8 cb r cb |
+    r cb r cb \t {cb cb \ind #"étouffer" cb:32} |
+    R2.
     
     %%% Largo assai %%%
     R1 R2.*3 R2 R2. R1*4
