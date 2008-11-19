@@ -446,18 +446,18 @@ Chef se décompose."
 ActeDeuxSceneUnBisJ = "Du pied, l'Étranger donne à nouveau un tout
 petit coup au Roi."
 
-ActeDeuxSceneUnBisK = "Le Chef s'approche doucement, visiblement tenté ;
-soudain des accords de l'orchestre l'interrompent.
-Il hésite un peu, puis même jeu. Enfin, au prix d'un effort manifeste,
+ActeDeuxSceneUnBisK = "Le Chef s'approche et regarde ses pieds, visiblement tenté ;
+mais des accords de l'orchestre l'interrompent.
+Il hésite un peu, puis même jeu, toujours en regardant ses pieds. Enfin, au prix d'un effort manifeste,
 il arme son pied..."
 
-ActeDeuxSceneUnBisL = "Mais à cet instant précis, le Roi revient à lui,
-et entreprend de se relever. Le Chef recule précipitamment."
+ActeDeuxSceneUnBisL = "Mais il se retrouve nez-à-nez avec le Roi, qui est revenu à lui et s'est relevé pendant son jeu de scène.
+Le Chef recule précipitamment."
 
 ActeDeuxSceneUnBisM = "Le Chef se prosterne."
 
 ActeDeuxSceneUnBisN = "Le Chef interrompt l'Étranger,
-d'un quasi-aboiement."
+presque en aboyant."
 
 ActeDeuxSceneUnBisO = "L'Étranger s'interrompt, supris."
 

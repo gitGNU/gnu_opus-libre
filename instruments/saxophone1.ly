@@ -188,7 +188,7 @@ ActeUnSceneUnBisSaxophoneUn = { \SaxAltoUn
 InterludeUnSaxophoneUn = { \SaxAltoUn
   \relative {
     r1 re32 mib re4..~ | re8. do16 si sol lab fa re'2~ |
-    re8 r r4 r2 | r2 \t {mib8 mi sol~} sol4 | sol8 r r4 r1 |
+    re8 r r4 r2 | r2 \t {mib8 mi sol~} sol4~ | sol8 r r4 r1 |
     R1 r2 mi16 fa4.. r4 \tt {re16 mi fa la sold } |
     si1 r2 | r16 mi, sold8 sol16 si8 sib16 re2~ re4 r r2 |
     r4 r8 mi,32 fa mi16~ mi2 r8 mi4. | mi8 fa4.~ fa2. r4 |

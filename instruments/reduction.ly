@@ -1103,6 +1103,36 @@ ActeUnSceneUnBisMainGauche = {
 ActeUnSceneUnBisNuances = {
 }
 
+InterludeUnMainDroite = {
+  \relative {
+    fad4 red8 r fad4 red8 r fad4 red8 r R1*2
+    sol4 mib8 r sol4 mib8 r |
+    R1. sol4 mi!8 r r2 |
+    sol4 mi8 r \pl {mi16 fa4..}
+    {sold4 mi8 s}
+    sold4 \pl {re8 \t {fa16 la sold}}
+    {mi8 s } |
+    \pl {sold4 mi8 r} si'2
+  }
+}
+
+InterludeUnMainGauche = {
+  \relative { \clef bass
+    r8 la r la r la r la
+    r la32 reb64[ mib re16]~ re4~ |
+    re8. do16 si sol lab fa re'2~ |
+    re8 r r4 r2 |
+    r8 sol, r sol r
+    \pl {s8 r8 sol s8}
+    {sol16 mi'? sol4~ sol8} r r4 r1 |
+    r8 sol, r sol r2 |
+    r8 <mi sold> r <mi sold>
+    r <mi sold> r <mi sold>
+    r <mi sold> r <mi sold> |
+    
+  }
+}
+
 ActeUnSceneDeuxMainDroite = {
   \relative{
     

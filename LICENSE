@@ -1,3 +1,7 @@
+  By using this work in any way, you must comply with the following license,
+version 0.1 or later (see section 6 about future versions).
+
+
                  Libre Opera License v.0.1
 
 0. Introduction
@@ -11,6 +15,8 @@ COPYING document.
 
   The Creative Commons Attribution-NonCommercial-ShareAlike license is
 reproduced in the PERFORMING document.
+
+1. Definitions
 
   The "work" means the copyrightable work licensed under this License; the
 General Public License may refer to it as "the program". The different authors
@@ -28,7 +34,7 @@ either computer- or human-generated, any media resulting from such a
 performance, and any use of narrative elements (characters, events, lyrics,
 dramatic structure).  The Creative Commons license refers to it as the "Work".
 
-1. Source Code
+2. Source Code
 
   If you want to modify and/or redistribute this work, you must comply with the
 GNU General Public License, with the following exception:
@@ -38,10 +44,10 @@ Commons by-NC-SA license instead of the GPL license.
   The source code of the work, however, may be compiled, printed and reproduced
 as a printed score under the terms and conditions of the GPL license.
 
-2. Narrative work
+3. Narrative work
 
   If you want to perform and/or record and/or distribute any recording based on
-the narrative work, you must comply with the  Creative Commons
+the narrative work, you must comply with the Creative Commons
 Attribution-NonCommercial-ShareAlike license, with the following exceptions:
   in addition to the credits specified in section 4(d) of the license, if you
 publicly perform, or distribute, any media resulting from the narrative work,
@@ -52,7 +58,30 @@ offering full access to the source code at no charge, to the general public.
 if so, both titles have to be mentioned whenever the narrative work (or a
 derived work) it either distributed or publicly performed.
 
-3. Special authorizations
+4. Derivative works
+
+  Modifying this work is possible in three distinct ways:
+  
+  a. You may use the source code (or parts of the source code) in a completely
+different work, which must not include any narrative element of the original
+work; in this case the only license you must comply with is the GPL license, as
+specified in section 2.
+
+  b. You may use the source code to produce a modified version of the narrative
+work (for instance by keeping some characters or events, or by translating text
+elements); in this case you must comply with the full license, as well as the
+GPL license and the Creative Commons license it depends on.  A copy of all three
+licences must be distributed with the work.
+
+  c. You may use a performance (or a media resulting from a performance) of the
+narrative work to produce a new work, without modifying its original source
+code.  In this case you must comply with the Creative Commons
+Attribution-NonCommercial-ShareAlike license, as specified in section 3; if the
+derivative work includes any other computer-readable elements, you must also
+provide the corresponding source for these elements, as well as the unmodified
+source code of the original work.
+
+5. Special authorizations
 
   As implied by the Berne Convention for the Protection of Literary and Artistic
 Works, special authorizations can be given by the authors to use this work
@@ -61,10 +90,11 @@ directly from any of the authors, for specific purposes and motivations; such
 authorizations (if granted) will not change any of the terms of this license,
 and will remain limited in their extent and implications.
 
-4. Future versions of this license
+6. Future versions of this license
 
   The terms specified by this license are valid for as long as the copyright of
 the work remains applicable in the country where it is read or performed, and
-therefore no future version of this license will add any obligations to these. 
-However, later versions may imply additional permissions by specifying less
-restrictive terms and conditions.
+therefore no future version of this license will add any obligations to these.
+  If you ever were to find more restrictive terms in a future version, you may
+use an older version at your convenience.  However, later versions may imply
+additional permissions by specifying less restrictive terms and conditions.

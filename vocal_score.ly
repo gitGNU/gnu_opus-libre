@@ -113,6 +113,22 @@ ActeUnSceneUnBis = {
   >>
 }
 
+InterludeUn = {
+  <<
+    \new TopLine \InterludeUnMesures
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "contralto" \InterludeUnContralto
+        \new Lyrics \lyricsto "contralto" { \InterludeUnContraltoTexte }
+      >>
+    \new PianoStaff { \Accompagnement <<
+        \new StaffPiano = "md" \InterludeUnMainDroite
+        \new StaffPiano = "mg" \InterludeUnMainGauche
+      >>
+    }
+  >>
+}
+
 ActeUnSceneDeux = {
   <<
     \new TopLine \ActeUnSceneDeuxMesures
@@ -348,7 +364,7 @@ ActeDeuxSceneTrois = {
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-showFirstLength = s1*40
+%showFirstLength = s1*40
 \book {
   \header {
     title = \OperaTitre
@@ -362,19 +378,25 @@ showFirstLength = s1*40
     \header {
       piece = \PrologueTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
+  \score {
+    \InterludeUn
+    \header {
+      piece = \Interlude
+    }
+  } %{
   \score {
     \ActeUnSceneDeux
     \header {
