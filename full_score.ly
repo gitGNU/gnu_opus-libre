@@ -1011,19 +1011,19 @@ ActeDeuxSceneDeux = {
     poet = \OperaLivret
     composer = \OperaPartition
     tagline = \OperaNotice
-  } %
+  } %{
   \score {
     \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %{
+  } %
   \score {
     \Ouverture
     \header {
       piece = \OuvertureTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneUn
     \header {
@@ -1083,7 +1083,7 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %{
+  } %
   \score {
     \Entracte
     \header {
@@ -1095,13 +1095,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %
+  } %}
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneDeux
     \header {

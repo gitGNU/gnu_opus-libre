@@ -666,6 +666,79 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
     si4 r1 R1*5/4 mi,4 r1 | R1*5/4-\fermataMarkup
     
     %%% Boum %%%
+    R1*5/4*2
+    r1 re''4 | sib1*5/4~ sib2. r4 si |
+    sol1*5/4~ sol2. r4 sold |
+    mi la sol do2~ | do2. lab4 sib | mi,2. r2 | R1*5/4*3
+    
+    %%% Air ténor %%%
+    \t {mi,8 sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
+    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
+    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
+    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
+    \t {sib, mib sib} fa' r \t {lab si lab} re r \t {mi lab mi} |
+    sib' r \t {mi, sol lab} \t {sol mi re} si r r4 |
+    \t {mi,,8 sol mi'}\t {sol mi' sol} mi r sol4 mi8 r |
+    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
+    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
+    \t {sol,, sib mib} \t {fa sib re} sol4 mi8 r \t {sol mi si} |
+    \t {lab si mi} \t {lab si lab} sol4 mi8 r \t {mi si fa} |
+    \t {mi, mib' lab} \t {re si re} si r \t {re si re} si r |
+    \t {mi,, lab reb} \t {mi lab reb} \t {sol mi sol} mi r \t {mi,, lab reb} |
+    \t {mi lab reb} \t {mi sol mi} sol r sol4 mi8 r |
+    sol4 mi8 r r4 r2 | R1*5/4*4
+    
+    %%% Moderato assai %%%
+    do1*7/4~ do4 r2 r1 | do1 si2. do si1~ | si4 r2 r1 |
+    do2 si2. do2 si2. sib1 | la2.~ la4 r r2 | R2. R2
+    r8 si, do sol' lab4 |
+    r8 lab si mi sol4 |
+    r8 si,, do sol' lab mib' |
+    r do, mib lab si4 |
+    r8 si, do sol' lab4 |
+    r8 la, do sol' sib4 |
+    r8 mib, mi sol si do |
+    r mib, lab si mi4 |
+    r8 mi, sol la sib4 |
+    mib,1 r2 r4 | mib1 fa2. mib fa1 |
+    sib,4 r2 | solb4 r2 | sib4 r2 |
+    reb4 r2 sib4 r2 | do4 r2 re4 r2 |
+    re1 r2 r4 | R1*7/4*3
+    \repeat volta 2 { R1*7/4*3}
+    R1*7/4*2
+    
+    %%% Presto subito %%%
+    mi'1 re,,2~ re1~ re4 r |
+    \tt {fa8 re r4 r8} r1 | re2. r4 r2 | R1.
+    
+    %%% Tempo giusto %%%
+    r8 fa mib' solb mi' sol |
+    r fa,, mib' solb mi' sol |
+    r fa,, mib' solb mi' sol |
+    r fa,, mib' solb mi' sol |
+    r fa,, mib' solb mi' sol |
+    r fa,, mib' solb mi'4 |
+    r8 fa,, sib mib solb si |
+    r si, fad' sol re' la' r4 |
+    r8 solb,, mi' la reb4 |
+    r8 solb,, reb' la' reb4 |
+    r8 re, solb si mib,4 | lab, solb la |
+    fa4. r8 R4. mi2~ mi4 r |
+    mib2~ mib4 r8 | solb2 r4 |
+    mib2~ mib4 r8 do'2 r4 | R1*5/8
+    la4. r8 | sol''8 sol4 | la4 r2 | R2.*3
+    sol,,2.~ sol2 r4 |
+    sol2.~ sol2 r4 |
+    sol2.~ sol2 r4 | sol2 r4 sol2 r4 |
+    r si mi8 reb' | sib'2. R2. R2 R4. R2 |
+    R1*5/8 R2.
+    
+    %%% Tempo I %%%
+    R1 lab,,4 r2 lab4 r lab4 r lab r2 |
+    lab4 r r8 lab r2 | reb,4 r1\fermata |
+    R1*5/4
+    do''2. si2 do si2. R1*5/4*2
+    do2. si2 do si2. R1*5/4*14
   }
 }
 
