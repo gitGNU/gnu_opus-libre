@@ -455,6 +455,48 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
     R1*5/4 fa4 r1 | R1*5/4-\fermataMarkup
     
     %%% Boum %%%
+    R1*5/4*13
+    lab2. sib2 re sib2. | r4 lab2. sib4~ | sib2 re mi4 |
+    sol1*5/4~ sol2. r2 |
+    r1 sib,4 | fa'2~ fa8 lab~ lab2 | mib'2 r lab,,4 |
+    sib2~ sib8 mib~ mib2 la!2. r4 do,~ | do2. sol'2~ |
+    sol2 lab r4 | lab2. r2 | r4 lab2. r4 | r2 lab2.~ |
+    lab4 r1 | R1*5/4*2
+    
+    %%% Moderato assai %%%
+    R1*7/4*7 R2. R1 R2. R2 |
+    mi,4 r2 R2. mi4 r2 R2.*3
+    si'2.~ si4. sib~ sib2.~ |
+    la1 r2 r4 | la1 si2. la si1 | R2.*7
+    solb4 fa8 lab r sol do sib mib4 r2 | R1*7/4*3
+    \repeat volta 2 { R1*7/4*3} R1*7/4*2
+    
+    %%% Presto subito %%%
+    mib2 solb,1~ solb~ solb4 r |
+    \tt {mib8 solb r4 r8} r2 mib4 \t {lab8 la sib} |
+    si2. r4 r2 | R1.
+    
+    %%% Tempo giusto %%%
+    re,4 r2 r4 mi' sol re' mi, la dod, r2 | R2.*3
+    si2~ si4 r |
+    R2.*2 do2 r4 | mib sol lab sib4. r8 R4. |
+    r8 lab~ \t {lab lab lab} \t {la la la} \t {sib sib sib} |
+    sol2~ sol4 r8 | mi'!8. la,16 la8 la4. |
+    sol2~ sol4 r8 | la'8. sib,16 sib8 sib4. |
+    sol'4 mi8 reb solb, |
+    reb'4. reb8~ reb solb4 | la4 r2 R2.*3
+    r4 si,,2 do4 mib mi |
+    r4 si2 do4 mib mi |
+    r4 do2 si4 mi mib |
+    r fad sol r sib si |
+    r sol, si reb2. | R2. R2 R4. R2 R1*5/8 R2.
+    
+    %%% Tempo I %%%
+    R1 sib'4 r2 sib4 r sib r sib r2 |
+    r4 \t {do,8 sib reb} la'2 r4 | si,4 r1\fermata |
+    \ind #"Sourdine" R1*5/4*3
+    mib'1*5/4 ~ mib4 r1 | R1*5/4*2
+    mi!1*5/4~ mi4 r1 | R1*5/4*12
   }
 }
 

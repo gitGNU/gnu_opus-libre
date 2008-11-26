@@ -595,7 +595,7 @@ ActeDeuxSceneUnBisClarinetteDeux = { \ClarinetteDeux
     
     %%% Air ténor %%%
     sol4 mi8 r \t {mi, sol mi'} \t {sol mi' sol} \t {mi sol, mi} |
-    sol4 mi8 r \t {sol, mi' sol} \t {mi sol mi} \t {sol, mi sol,} |
+    sol4 mi8 r \t {sol, mi' sol} \t {mi' sol mi} \t {sol, mi sol,} |
     sol'4 mi8 r \t {mi sol mi'} \t {sol mi sol} \t {mi sol, mi} |
     sol4 mi8 r \t {sol mi' sol} \t {mi sol, mi} \t {sol, mi mib} |
     reb r \t {mib lab mib} sib' r \t {si mi si} sol' r |
@@ -653,6 +653,7 @@ ActeDeuxSceneUnBisClarinetteDeux = { \ClarinetteDeux
     sib2. R2. R2 R4. R2 R1*5/8 R2.
     
     %%% Tempo I %%%
+    R1
     fa4 r2 fa4 r fa r fa r2 | fa4 r \t {lab,8 solb la} fa'4 r |
     la,, r1\fermata | R1*5/4
     si'2. do2 si do2. R1*5/4*2
