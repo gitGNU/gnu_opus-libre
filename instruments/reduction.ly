@@ -1123,8 +1123,8 @@ InterludeUnMainGauche = {
     re8. do16 si sol lab fa re'2~ |
     re8 r r4 r2 |
     r8 sol, r sol r
-    \pl {s8 r8 sol s8}
-    {sol16 mi'? sol4~ sol8} r r4 r1 |
+    \pl {s8 s8 sol s8} %% FIXME: Issue #76
+    {\stemDown sol16 mi'? \stemNeutral sol4~ sol8} r r4 r1 |
     r8 sol, r sol r2 |
     r8 <mi sold> r <mi sold>
     r <mi sold> r <mi sold>
@@ -1560,7 +1560,7 @@ ActeUnSceneTroisBisMainDroite = {
     << { fad'4( red8) r } \\ <sib do>2-- >>
     << { \simile fad'4 red8 r } \\ <sib do>2 >>
     \repeat unfold 6 << { fad'4 red8 r } \\ <sib do>2 >>
-     << { fad'4\> red8\! r } \\ <sib do>2 >>
+     << { fad'4\< red8\! r } \\ <sib do>2 >>
     <fad' la fa'!>4\f( <red si' re!>8) r <red fad re'!>4( <do la' si>8) r |
     <sib do la'>8\> <sol red' fad>16 r <sol sib fad'>8 <mi do' red>16\! r
     \mg <mi sol red'>8 <reb sib' do>16 r
@@ -1596,38 +1596,39 @@ ActeUnSceneTroisBisMainDroite = {
 
 ActeUnSceneTroisBisMainGauche = {
   \relative { \clef bass
-    << do1-- \\ {r8 la r la r la r la} >>
-    << <sol dod>1 \\ {r8 la r la r la r la} >>
+    << do1-- \\ {r8 la-. r la-. r la-. r la-.} >>
+    << \simile <sol dod>1 \\ {r8 la r la r la r la} >>
     << <mi sol dod>1 \\ {r8 la r la r la r la} >>
-    <dod, la'> <sib mi sol>4.\laissezVibrer r2 | r
+    <dod, la'>( <sib mi sol>4.)\laissezVibrer r2 | r
     << { r8 <sol' la> r <sol la> r <sol la> r <sol la> r <sol la> r <sol la>} \\ {
     <sold, dod>2~ <sold dod>1 } >>
     << {sib8 <sold dod>4.\laissezVibrer } \\ re2\laissezVibrer >> r | r
     << { r8 <mi' sol> r <mi sol> r <mi sol> r <mi sol> } \\ {
-    <fa,! dod'>2~ <fa dod'>} >> <re sib' mi>4 <la sold'>8 si |
-    <fad fad'>1~ <fad fad'> R1*3
-    fad'1~ fad | fad1~ fad~ fad~ fad~ fad2. r4 |
+    <fa,! dod'>2~ <fa dod'>} >> <re sib' mi>4-- <la sold'>8( si) |
+    \ten <fad fad'>1~ <fad fad'> R1*3
+    fad'1~\p fad | fad1~ fad~ fad~ fad~ fad2. r4 |
     fa'!8 r
-    \repeat unfold 3 { \tt {fa16 sold r8 r16 } }
-    \repeat unfold 4 { re lab' fa sib }
-    \t { <si,, si'>8 <fa' fa'> <re re'>} 
-    \t { <si si'> <fa' fa'> <re re'>}
-    \t { <si si'> <la la'> <fa' fa'>}
-    \t { <re re'> <si si'> <la la'> }
-    << { fad'1~ fad } \\ {
-    fad,1~ fad8 fad \t {fad fad fad} fad2 } >> |
-    si'1
-    << { r8 sol' r sol r sol r sol } \\ si,1 >>
-    \repeat unfold 4 << { r8 sol' r sol} \\ si,2 >>
-    \repeat unfold 4 << { r8 sol' r sol} \\ <si, mi>2 >>
+    \repeat unfold 3 { \tt {fa16( sold) r8 r16 } }
+    \repeat unfold 4 { re-.( lab'-. fa-. sib-.) }
+    \t { <si,, si'>8--( <fa' fa'>-- <re re'>--)} 
+    \t { <si si'>--( <fa' fa'>-- <re re'>--)}
+    \t { <si si'>--( <la la'>-- <fa' fa'>--)}
+    \t { <re re'>--( <si si'>-- <la la'>--) }
+    << { \ten fad'1~ fad } \\ {
+    fad,1-- ~ fad8 fad\pp \t {fad fad fad} fad2 } >> |
+    si'1--
+    << { r8 sol'-. r sol-. r sol-. r sol-. } \\ si,1-- >>
+    \repeat unfold 4 << { r8 sol'-. r sol-.} \\ si,2-- >>
+    \repeat unfold 4 << { r8 sol' r sol} \\ \simile <si, mi>2 >>
     \repeat unfold 4 << { r8 sol' r sol} \\ <lab, si mi>2 >>
     << { r8 <reb sol sib do> r <reb sol sib do>} \\ <do, lab'>2 >>
     << { r8 <reb' sol sib do> r <reb sol sib do>} \\ <do, fa >2 >>
     do2. |
-    << { \voiceTwo re1~ re~ re\laissezVibrer } \\ { \voiceOne
-    r4 <fad' la>2 <fad la>4 <mi do'>2 <fad la>\laissezVibrer s1 } >>
-    \repeat unfold 2 {<fa, dod'>4 re8 r r2 }
-    \repeat unfold 4 {<fa  dod'>4 re8 r }
+    << { \voiceTwo re1 \p ~ re~ re\laissezVibrer } \\ { \voiceOne
+    r4 <fad' la>2( <fad la>4 <mi do'>2 <fad la>)\laissezVibrer s1 } >>
+    \repeat unfold 2 {<fa, dod'>4--( re8-.) r r2 }
+    <fa  dod'>4--( re8-.) r \simile <fa  dod'>4 re8 r |
+    <fa  dod'>4 re8 r <fa  dod'>4 re8 r |
     \repeat unfold 3 <<{ r8 <fad' la do re> r <fad la do re> } \\ {<fa, lab reb>4 <re si' mi>8 r } >>
     <<{ r8 <fad' la do re> r <mi sol la do> } \\ {<fa, lab reb>4 <la, re sib'>8 r } >>
     <fad fad'>1~ <fad fad'>2. <fad fad'>4~|

@@ -882,7 +882,23 @@ EntracteMesures = {
             R2*9  \bar "||"
   \time 4/4
       \tempo "Vivo subito" 4 = 120
-            R1*24
+            R1*38
+  \time 3/4 R2.
+  \time 4/4 R1    \bar "||"
+            R1*2
+  \time 3/4 R2.*2
+  \time 2/4 R2
+  \time 4/4 R1
+  \time 3/4 R2.*2
+  \time 4/4 R1*2
+  \time 3/4 R2.*2
+  \time 4/4 R1*2
+  \time 3/4 R2.*2
+  \time 4/4 R1*2
+  \time 3/4 R2.*2
+  \time 4/4 R1*2
+  \time 3/4 R2.*2 \bar "||"
+  \time 4/4 R1*14 \bar "||"
 }
 
 ActeDeuxSceneUnMesures = { 

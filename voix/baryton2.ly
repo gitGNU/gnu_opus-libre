@@ -288,17 +288,28 @@ ActeUnSceneQuatreBarytonDeux = { \BarytonDeux
 
 EntracteBarytonDeux = { \BarytonDeux
   \relative {
-    R2*9 R1*4
+    R2*9
     r4 r8 re,16 re mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 |
-    fa8 re r4 r r8 sold | dod mib, r16 fa fa fa lab8 re, r4 |
-    r8 r16 fa sib8[ r16 sold16] dod8[ r16 si] mi4 ~|
-    mi4. mi8 r mi dod mi | si4 la8 do sold fa \t{lab mib fa} |
+    fa8 re r4 r r8 lab' | reb mib, r16 fa fa fa lab8 re, r4 |
+    r8 r16 fa sib8[ r16 lab16] reb8[ r16 si] mi4 ~|
+    mi4. mi8 r mi reb mi | si4 la8 do lab fa \t{lab mib fa} |
     re4 r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
     mib8 re r4 r2 | R1*6
     r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
     mib8 re r4 r2 | R1*2
     r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
-    mib8 re r4 r2 |
+    mib8 re r4 r2 | R1*4
+    r4 r8  re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
+    mib8 re r4 r2 | R1*6
+    r4  r8 re16 re re4 r16 re re re | re4 r8 re re8. re16 |
+    sib2~ sib8 fa' mib4 |
+    
+    %%% Fugato %%%
+    re4 r r2 | R1 R2.*2 r4 dod8. dod16 |
+    sib'2 mi,8 r dod8. dod16 | sib'2 mi,8 r16 dod |
+    dod8. dod16 do4 do | sib'2 mi,8 r dod8. dod16 |
+    sib'2 dod,8 r dod8. dod16 | sib'2 dod,8 r16 dod |
+    dod8. dod16 do4 do | sib'2 mi,8 r
   }
 }
 

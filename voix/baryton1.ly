@@ -213,7 +213,7 @@ ActeUnSceneQuatreBarytonUn = { \BarytonUn
 
 EntracteBarytonUn = {
   \relative { \BarytonUn
-    R2*9 R1*11
+    R2*9 R1*7
     r4 r8 re,16 re mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 |
     fa4. dod'8 r2 |
     dod4 dod dod8 dod4 dod8 |
@@ -223,7 +223,21 @@ EntracteBarytonUn = {
     fa4 r8 re fa re sol8. fa16 |
     sol8 lab r re,16 re mib4 r16 re re re |
     fa4 r8 lab lab lab sib8. si16 | fa8 dod' r4 r2 | R1*2
-    r4 r8 re,16
+    r4 r8 re,16 re re'4 r16 dod dod re | si4 r8 re la si fad8. si16 |
+    la8 re r4 r2 | R1*4
+    r4 r8 la16 la sol4 r16 la la la | sib4 r8 reb la reb do8. sib16 |
+    la8 sib r4 r2 | R1*6
+    r4 r8 re,16 re re4 r16 re re re | re4 r8 re re8. re16 |
+    sol2~ sol8 la lab4 |
+    
+    %%% Fugato %%%
+    re,4 r r mi8. mi16 sol2 mi8 r mi8. mi16 |
+    sol2 mi8 r16 mi mi8. mi16 red4 red |
+    sol2 | mi8 r mi8. mi16 sol2 | mi8 r mi8. mi16 sol4~ |
+    sol mi8 r16 mi mi8. mi16 | red4 red sol2 |
+    mi8 r sol8. sol16 mi2 | sol8 r sol8. sol16 mi4~ |
+    mi sol8 r16 sol sol8. sol16 | lab4 lab mi2 |
+    sol8 r sol8. sol16 mi2 | sol8 r 
   }
 }
 

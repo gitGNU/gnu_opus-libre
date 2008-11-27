@@ -307,6 +307,8 @@ InterludeUn = {
         \new Lyrics \lyricsto "contralto" { \InterludeUnContraltoTexte }
       >>
 
+    \new TopLine \InterludeUnMesures
+
     \new StaffGroup
       <<
         \new GrandStaff
@@ -422,6 +424,8 @@ InterludeDeux = {
         \new Staff \new Voice = "contralto" \InterludeDeuxContralto
         \new Lyrics \lyricsto "contralto" { \InterludeDeuxContraltoTexte }
       >>
+
+    \new TopLine \InterludeDeuxMesures
 
     \new StaffGroup
       <<
