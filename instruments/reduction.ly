@@ -1109,10 +1109,42 @@ InterludeUnMainDroite = {
     sol4 mib8 r sol4 mib8 r |
     R1. sol4 mi!8 r r2 |
     sol4 mi8 r \pl {mi16 fa4..}
-    {sold4 mi8 s}
+    {sold4 mi8 r}
     sold4 \pl {re8 \t {fa16 la sold}}
     {mi8 s } |
-    \pl {sold4 mi8 r} si'2
+    \pl {sold4 mi32 fa8.. sold4 mi8 r} {si'1} sold4 \tt {mi16 re fa sold la} |
+    \t {<sold si>8 mi sold} \t {<mi sol> si' sib} <sold la re>2~ |
+    <sold la re>4 r re8 mi \t {fa la sold} |
+    \pl {r8 la, r la r la r la r la}
+    { <mi' si'>1.*1/6 mi32 fa mi8.~ mi2.. re16 mi} |
+    << {si'4. la16 sold si2. la4~ la sold2.~ sold2 } \\
+    {r8 la, r la r la r la r la r la r la r la r la r la r mi'32 fa mi16~ mi4} \\
+    {mi16 fa4..~ fa1} >> r4 |
+    \pl { s4 \ttt { r16 re mi fa la sold} si4 s2 }
+    {\tt {re,16 mi fa la sold} \ttt {si sold la si mi re}
+    \ttt {fa sold, la si mi re} \ttt {fa re mi fa sib sol} \ttt {do sol sib do mib reb} }|
+    <fa,! sol sib do fad>1\laissezVibrer r4 mi,32 fa8.. r8 <mi'! fa sib mib>4 <si! re sol do>8 |
+    <fa'! sol sib do fad>2. r8 <re, la' mi'> <re' sol sib dod>4. <sol, sol'>8 |
+    <fa'! sol sib do fad>2 <mi, sol>16 <fa sib>4.. |
+    \t {<mi sol>16 <fa sib> <sol do>~} <sol do>4 dod8 sib'4. sol8 |
+    <fad sol fad'>1*1/4 \tt {<mi, sol>16 <fa sib> <sol do> mib' <sib reb>}
+    <do mib>2. \tt {<mi sol>16 <fa sib> <sol do> mib' <sib reb>} |
+    <sol fad'>2*1/4 \t {<mi, sol>16 <fa sib> <sol do>} <reb' mib>8 \tt {do32 fad mi la sol}
+    \ttt {do16 sol la sib mib reb} \ttt {fad la, sib do mi fad} |
+    <la, re sib'>2. |
+    <sol dod fad>2*1/2 r8 fad'16 sol fad re do re |
+    fad4 \pl { s2 fad,16 sol fad re do re fad sol fad re do re
+    fad, sol fad re do re fad re do re fad sol }
+    {fad''16 sol fad re do re fad sol fad4 s2 fad,4 s2}
+    fad,2. \pl { <sib, mi sol>2.~ <sib mi sol>~ <sib mi sol>~ <sib mi sol>~ <sib mi sol>2 r4
+    <sib mi la>2.~ <sib mi la>~ <sib mi la>~ <sib mi la>2}
+    { s2. fad'''16 sol fad re do re fad sol fad re do re
+      <fad, fad'> sol fad re do re fad sol fad re do re 
+      <fad, fad'> sol fad re do re fad sol fad re do re fad2.
+      fad''16 sol fad mi dod mi fad sol fad mi dod mi
+    <fad, fad'> sol fad mi dod mi fad sol fad mi dod mi
+    <fad, fad'> sol fad mi dod mi fad sol fad mi dod mi fad4 s}
+    r4 fad red8 r r4 | sold re8 r r4 |
   }
 }
 
@@ -1129,7 +1161,39 @@ InterludeUnMainGauche = {
     r8 <mi sold> r <mi sold>
     r <mi sold> r <mi sold>
     r <mi sold> r <mi sold> |
-    
+    r <mi sold> r <mi sold>
+    \pl {s <mi sold> r <mi sold> r <mi sold> r <mi sold> }
+    {\t {sol16 si sib} re2.. } |
+    r8 <mi, sold> r <mi sold> \t {fa' re mi} si4~ |
+    si4 r r2 |
+    \pl { la,1. la1 si2 do1~ do2}
+    {sold'4 mi8 r sold4 mi8 r sold4 mi8 r
+    sold4 mi8 r sold4 mi8 r sold4 mi8 r
+    sold4 mi8 r sold4 mi8 r sold2} r4 |
+    R2
+    \ttt { r16 fa' mi re la si} \ttt {sold la sold fad dod red} \ttt {do fad red dod sib do} |
+    <sol sol'>8 sol' <sol, sol'> sol'
+    <sol, sol'> sol' <sol, sol'> sol' |
+    <sol, sol'> sol' <sol, sol'> sol'
+    <sol, sol'> <do, do'> <sib sib'> <dod dod'> |
+    <sol' sol'> sol' <sol, sol'> sol'
+    <sol, sol'> sol' <sol, sol'> sol'
+    <sol, sol'> <dod, dod'> dod' <dod, dod'> |
+    <sol' sol'> sol' <sol, sol'> sol'
+    <sol, sol'> sol' <sol, sol'> sol' |
+    <sol, sol'> sol' <sol, sol'> sol'
+    <sol, sol'> <dod, dod'> dod' <dod, dod'> |
+    <sol sol'> sol' <sol, sol'> sol'
+    <sol, sol'> sol' <sol, sol'> sol'
+    <sol, sol'> sol' <sol, sol'> sol'
+    <sol, sol'> <sol' fad'> <sol, sol'> <sol' fad'>
+    <dod, dod'> <dod' sol'> <dod, dod'> <dod' sol'>
+    <fad,, fad'> <fad fad'> <fad fad'> <fad fad'> <fad fad'> <fad fad'> |
+    <sol fa' sol>2.\laissezVibrer R2.*4
+    <si' fad'>2.~ <si fad'>~ <si fad'>~ <si fad'>
+    r8 sib4 lab si8 |
+    <sol mib'>2.~ <sol mib'>~ <sol mib'>~ <sol mib'>
+    r8 <red' fad> r <red sol> r4 | r8 <re sold> r2 |
   }
 }
 

@@ -404,6 +404,12 @@ ActeDeuxSceneTrois = {
     }
   } %
   \score {
+    \InterludeDeux
+    \header {
+      piece = \Interlude
+    }
+  } %
+  \score {
     \ActeUnSceneTrois
     \header {
       piece = \ActeUnSceneTroisTitre
