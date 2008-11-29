@@ -378,25 +378,25 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %}
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \InterludeUn
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
