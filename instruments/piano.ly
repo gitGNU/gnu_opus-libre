@@ -543,30 +543,30 @@ InterludeUnPiano = { \Piano
   \PianoDeuxMains
   \relative {
     R1. R1*3 R1. R1 R1.*2 R1*2 R1.*2 R1 R2. R2 R2.
-    <fa' sol sib do fad>1\laissezVibrer
-    r4 r8 mi,32 fa16.~ fa4 r |
-    r8 <mi mi'>32 fa16.~ fa2 <sol, mi' sol>16 <sib fa' sib>8.~ <sib fa' sib>2 |
-    r2 <sol mi' sol>8 <sib fa' sib>4.~ |
-    <sib fa' sib>8 <mi sol>32 <fa sib> <do sol' do>16~ <do sol' do>4
-    \clef bass r8 <mi, si' mi>16 <fa re' fa>~ <fa re' fa>8 r |
-    <re sol re'>2 <sol mi' sol> <sib fa' sib>4 r | R1 \clef treble
-    <fa sol mi'>4 <sold' red' la'> \ottava #1 <la' red sib'> |
-    fad'16 sol fad re do re fad sol fad re do re |
-    fad4 fad16 sol fad re do re fad sol |
-    fad4 \ottava #0 r2 R2.*3
-    fad16 sol fad re do re fad sol fad re do re |
-    fad4 r2 | R2.*2
-    fad16 sol fad mi dod mi fad sol fad mi dod mi |
-    fad4 r2 R2.*4
+    <fa' sol sib do fad>1\laissezVibrer \mf
+    r4 r8 \ind #"en dehors" mi,32->(\ff fa16.)~ fa4 r |
+    r8 <mi mi'>32->( fa16.)~ fa2 <sol, mi' sol>16(\f <sib fa' sib>8.)~ <sib fa' sib>2 |
+    r2 <sol mi' sol>8\mf ( <sib fa' sib>4.)~ |
+    <sib fa' sib>8 <mi sol>32( <fa sib>) <do sol' do>16->~ <do sol' do>4
+    \clef bass r8 <mi, si' mi>16\>( <fa re' fa>)~ <fa re' fa>8 r |
+    <re sol re'>2\p <sol mi' sol>( <sib fa' sib>4) r | R1 \clef treble
+    <fa sol mi'>4---> <sold' red' la'>---> \ottava #1 <la' red sib'>---> |
+    \ind #"très clair" fad'16\pp ( sol fad re do re fad sol fad re do re |
+    fad4) fad16( sol fad re do re fad sol |
+    fad4) \ottava #0 r2 R2.*3
+    fad16( sol fad re do re fad sol fad re do re |
+    fad4) r2 | R2.*2
+    fad16( sol fad mi dod mi fad sol fad mi dod mi |
+    fad4) r2 R2.*4
   }
   \relative {
     R1. R1*3 R1. R1 R1.*2 R1*2 R1.*2 R1 R2. R2 R2.
-    <sol,, sol'>1\laissezVibrer r4 r8 mi''32 fa16.~ fa8 do, sib dod |
-    <sol sol' re'>1\arpeggio r8 <dod dod'>4. |
-    sol'8 <sol, sol'> sol' <sol, sol'>
-    sol' <sol, sol'> sol' <sol, sol'> |
-    sol' <sol, sol'> sol' <sol, sol'>
-    sol' <dod, dod'> dod' <dod, dod'> |
+    <sol,, sol'>1\laissezVibrer r4 r8 mi''32->( fa16.)~ fa8 do,-- sib-- dod-- |
+    <sol sol' re'>1\arpeggio r8 <dod dod'>4.-- |
+    sol'8 <sol, sol'>-- sol' <sol, sol'>--
+    sol' <sol, sol'>-- sol' <sol, sol'>-- |
+    sol' <sol, sol'>-- sol' <sol, sol'>--
+    sol' <dod, dod'>-- dod'-- <dod, dod'>-- |
     <sol sol'>16 sol' <sol, sol'> sol'
     <sol, sol'> sol' <sol, sol'> sol'
     <sol, sol'> sol' <sol, sol'> sol'
@@ -577,8 +577,8 @@ InterludeUnPiano = { \Piano
     <sol, sol'> sol' <sol, sol'> sol'
     <dod, dod'> dod' <dod, dod'> dod'
     <dod, dod'> dod' <dod, dod'> dod' |
-    <fad,, fad'>8 <fad fad'> <fad fad'> <fad fad'> <fad fad'> <fad fad'> |
-    <sol sol'>2 r4 | R2.*15
+    <fad,, fad'>8-- <fad fad'>-- <fad fad'>--\> <fad fad'>-- <fad fad'>-- <fad fad'>-- |
+    <sol sol'>2--\! r4 | R2.*15
   }
 }
 

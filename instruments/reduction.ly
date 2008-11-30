@@ -1445,6 +1445,73 @@ ActeUnSceneDeuxMainGauche = {
 ActeUnSceneDeuxNuances = {
 }
 
+InterludeDeuxMainDroite = {
+  \relative {
+    fad4 red8 r \clef bass r4 <sol,, lab>8 r \clef treble |
+    fad''4 red8 r \clef bass <mi,, fa>8 r \clef treble |
+    fad''4 red8 r |
+    r4 r16 re32 mib re4.~ |
+    re4~ \ttt {re16 do si sold la fad} |
+    \pl re'2 {sol4 mib8 r} r4 | R2
+    
+    r4 \t {re8 mib sib'} |
+    r4 \t {mib,8 fad si} |
+    r4 \t {re,8 mib sib'} |
+    r4 \t {mi,8 dod' la'} |
+    \t {la' mi dod} \t {do mi lab} |
+    \t {sol re si} \t {sib re solb} |
+    \t {fa lab, mi'} \t {mib sol, re'} |
+    \ottava #1
+    \t {reb fa la} reb r | \ottava #0
+    \t {do,, sol mi} \t {mib sol si}
+    \t {sib fa re} \t {reb fa la} |
+    \t {lab mib do} \t {si mib sol}
+    \t {solb reb sib} \t {la reb fa} |
+    \t {mi lab do} \t {mi lab do} |
+    \ottava #1
+    mi4 \acciaccatura red'16 mi4 \ottava #0 |
+    
+    sold,,,2 mi4 r |
+    \pl {sold2 mi4 r sold2 mi4 r s1 s2 }
+    {r8 mi'16 fa mi2. re4 mi ~ mi8 mi16 fa mi4~
+    mi re~ re8 do \t {si sold la} fad re'4.} r4 |
+    \pl {sold,2 mi4 r sold2 }
+    { r8 mi'16 fa mi2.~ mi2} r4 | R2.
+    <fa,, si re sold>2 mi'4 r R2. <fa, do'? sold'>4 r |
+  }
+}
+
+InterludeDeuxMainGauche = {
+  \relative { \clef bass
+    r8 <red, fad> r <red fad> r <red fad> r <red fad>
+    r <red fad> r <red fad> r <red fad> r <red fad> r <red fad> |
+    R2. R2
+    r4 r8 <mib sol> r <mib sol> | R2
+    
+    \t {si8 fad' sol} r4 |
+    \t {re8 sol sib} r4 |
+    \t {si,8 fad' sol} r4 |
+    \t {sib,8 mib sol} do4 |
+    \t {sol,8 re' la'} mi'4 |
+    \t {sol,,8 re' la'} mi'4 |
+    \t {sol,,8 re' la'} mi'4 |
+    \t {mi,8 la do} <lab fa'>4 |
+    do,8 lab' si, sol' sib, solb' la, fa' |
+    do lab' si, sol' sib, solb' la, fa' |
+    do4 mi' | R2
+    
+    la,,8 mi' si' dod re4 mi, |
+    la,8 mi' si' dod re4 mi, |
+    la,8 mi' si'? dod re4 mi, |
+    R1 R2.
+    fa,?8 do' la' si mi4 mi, |
+    fa,8 do' la'4 r |
+    R2.
+    dod,,8 la' mi'4 r2 | R2.
+    <dod, la'>4 r |
+  }
+}
+
 ActeUnSceneTroisMainDroite = {
   \relative {
     \clef bass

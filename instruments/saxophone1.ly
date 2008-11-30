@@ -494,7 +494,7 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
     %%% Tempo I %%%
     R1 sib'4 r2 sib4 r sib r sib r2 |
     r4 \t {do,8 sib reb} la'2 r4 | si,4 r1\fermata |
-    \ind #"Sourdine" R1*5/4*3
+    R1*5/4*3-\markup "Mettez la sourdine"
     mib'1*5/4 ~ mib4 r1 | R1*5/4*2
     mi!1*5/4~ mi4 r1 | R1*5/4*12
   }

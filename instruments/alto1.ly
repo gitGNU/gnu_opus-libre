@@ -783,6 +783,25 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
     <fad dod'>4 r1 | R1*5/4-\fermataMarkup
     
     %%% Boum %%%
+    R1*5/4*11 \repeat tremolo 16 {red'32*5/4 mi}
+    \repeat tremolo 16 {red32 mi} red4 |
+    <si! sol' sib>2. <re mi sib'>2 <si! sol' sib> <re mi sib'>2. |
+    r4 <si! sol' sib>2. <re mi sib'>4~ <re mi sib'>2 <si sol' sib>2. |
+    <mib, lab mi'!>1*5/4 <lab re>2 <mib lab mi'!>2. |
+    <re sol>2. re2 | <reb, sib'>1*5/4~ <reb sib'>2. <reb sib'>2 |
+    <mib si' lab'>1*5/4~ <mib si' lab'> |
+    r4 <si' lab'>2 <si lab'> |
+    <sib sol'>1*5/4~ <sib sol'>2. r2 | R1*5/4*5
+    
+    %%% Moderato assai %%%
+    R1*7/4*7 R2. R1 R2. R2
+    r4 do'2 \pizz red,,4 \arco si''2~ si4 do2 si4. do~ |
+    do2 r4 | \pizz fad,, \arco do''2~ do4 si2~ si r4 | do,,\leftpizz r2 |
+    fa1*7/4~ fa4 r2 r1 | R1*7/4
+    r8 \pizz fa fad dod' re4 |
+    r dod, re la' sib4 | r8 fa fad dod' re4 |
+    r8 fad, la re fa4 | r8 fa, fad dod' re4 |
+    r8 mib, lab si mi4 |
   }
 }
 
