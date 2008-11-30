@@ -149,6 +149,22 @@ ActeUnSceneDeux = {
   >>
 }
 
+InterludeDeux = {
+  <<
+    \new TopLine \InterludeDeuxMesures
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "contralto" \InterludeDeuxContralto
+        \new Lyrics \lyricsto "contralto" { \InterludeDeuxContraltoTexte }
+      >>
+    \new PianoStaff { \Accompagnement <<
+        \new StaffPiano = "md" \InterludeDeuxMainDroite
+        \new StaffPiano = "mg" \InterludeDeuxMainGauche
+      >>
+    }
+  >>
+}
+
 ActeUnSceneTrois = {
   <<
     \new TopLine \ActeUnSceneTroisMesures
@@ -390,13 +406,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \InterludeUn
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
@@ -444,13 +460,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  }% 
+  } %}
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneDeux
     \header {

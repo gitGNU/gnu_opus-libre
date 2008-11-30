@@ -783,6 +783,8 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
     <fad dod'>4 r1 | R1*5/4-\fermataMarkup
     
     %%% Boum %%%
+    R1*5/4*11 \repeat tremolo 16 {red'32*5/4 mi}
+    \repeat tremolo 16 {red32 mi} red4 |
   }
 }
 

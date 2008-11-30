@@ -15,48 +15,49 @@ Contralto= {
 
 InterludeUnContralto = { \Contralto
   \relative {
-    R1. R1 fad8 fad do2 r4 |
-    R1 r2 mib8 mib la,2 r4 |
-    r2 r4 r8 mi'16 do |
-    sold'8 mi16 sold do,4 r r \parlato si r16 sib si re |
-    mi4 r16 si sib re mi4 r r \t {re8 mi sol} |
-    sold4 r r2 |
-    r4 re'16 re sold,8 r2 |
-    \t {r4 mi fa} la2 r4 \t {r8 mi fa} |
-    la2 fa16 mi fa la si4~ si2 |
-    r4 r8 sib16 la fa8 la16 fa mi8 fa16 dod |
-    \t {r8 sib' fa} mi'4 \parlato { mi,8 mi} | R2 R2.
+    R1. R1 fad8--(\mp fad-- do2--) r4 |
+    R1 r2 mib8--(\p mib-- la,2--) r4 |
+    r2 r4 r8 mi'16(\< do |
+    sold'8--)\mf mi16-.( sold-. do,4--) r r \parlato si r16 sib( si re |
+    mi4--) r16 si( sib re mi4--) r r \t {re8--(\< mi-- sol--} |
+    sold4--)\! r r2 |
+    r4 re'16-.\mf re-. sold,8-. r2 |
+    \t {r4 mi(\< fa} la2)\! r4 \t {r8 mi( fa} |
+    la2) fa16(\< mi fa la \ten si4~\! si2) |
+    r4 r8 sib16-.(\> la-. fa8-.) la16-.( fa-. mi8-.)\! fa16-. dod-. |
+    \t {r8 sib'--(\ffsubito fa--} mi'4->) \parlato { mi,8 mi} | R2 R2.
     
-    r8 sold la do re2~ | re8 r sold, do re2 |
-    r8 fa,16 fa fad8 red16 red mi8 sol16 sol 
-    sold8 mi16 mi fa8 la16 la \t {sib8 fa fa} |
-    mi'2. \t {r8 mi, fa} | mi'2. r4 |
-    \ttt {r16 mi, fa si fa fad} \ttt {dod' fad, sib la dod do}
-    mi2 r16 do sold16. la32 fad8 \t {do16 mi mib} |
-    fad4 r \ttt {r16 mi fa mi' fa, si} \t {mi8 sold, dod} |
-    r8 mi~ mi2~ | mi4 r2 |
-    fad,16 sib re,8 r4 r8 mib16 fad | do4 r2 | R2. do8 mib la,2 |
-    r4 \t {r mi' la} sol2 r4 | R2.*5
-    r8 do,16 do fad8 do16 do la4 | \t {r8 sol sib} fad'4 r R2.*2
+    r8 sold(\fmolto la) do \ten re2--~ | re8 r sold,(\> do re2)\! |
+    r8 fa,16-.\mp fa-. fad8-- red16-. red-. mi8-- sol16-.\< sol-. 
+    sold8-- mi16-. mi-. fa8-- la16-. la-. \t {sib8--\f mi,(\> fa} |
+    \ten mi'2.--) \mp \t {r8 mi,(\mf \> fa} | \ten mi'2.--)\p r4 |
+    \ttt {r16 mi,\( ( \< fa si) fa( fad} \ttt {dod')\mf \> fad,( sib) la( dod) do-.}
+    mi2--\p \) r16 \ind #"scherzando" do-.\mf sold16.->-- la32-. fad8-- \t {do16(\> mi mib} |
+    fad4)\! r \ttt {r16 mi(\mf \< fa mi' fa, si} \t {mi8-- sold,-- dod--) \!} |
+    r8 \ten mi->--~ \f mi2~ | mi4 r2 |
+    fad,16-.\mp sib-. re,8-- r4 r8 mib16-. fad-. | do4-- r2 | R2. do8--\> mib-- la,2--\! |
+    r4 \t {r mi'(\pdolce \< la} sol2\> ) r4\! | R2.*5
+    r8 do,16-.\p do-. fad8-- do16-. do-. la4-- | \t {r8 sol( sib} fad'4--) r R2.*2
   }
 }
 
 InterludeDeuxContralto = { \Contralto
   \relative {
     R1 R2. R2
-    fad16 fad do4. r8 mib16 mib |
-    la8 fad16 fad do4 | r2 r8 mib16 mib |
-    r8 sol16 mib si'8 mib,16 sol |
-    si,4 r | r8 mi mib do' | si4 r |
-    r8 mib, re sib' | la4 r r la8 la, | la'4 r |
-    r lab8 lab, | sol'4 mi8 mi mib4 lab8 lab |
-    sol4 mib8 mib mi mi sol sol lab lab si do mib4 r |
-    r2 \t {r4 si, re} mi!2. r4 |
-    r sib2 re4 mi2. r4 |
-    r4 mi8 sol la4~ |
-    la la8 do re2~ re4 r8 re, r dod'~ |
-    dod4 r8 re, mi sol |
-    lab2 r do,4 sib reb | la! r |
+    fad16--(\mp fad-- do4.--) r8 mib16-.(\f mib-. |
+    la8-- fad16-. fad-. do4--) | r2 r8 mib16\p mib |
+    r8 sol16-.\fsubito mib-. si'8-> mib,16-. sol-. |
+    si,4-- r | r8 mi(\mf mib\> do' | si4) \!r |
+    r8 \ind #"meno" mib,( re \> sib' | la4)\! r 
+    r \ind #"scherzando" la8-.\p la,-. | la'4-- r |
+    r lab8-. lab,-. | sol'4-. \ind #"borbottando" mi8\pp mi mib4-. lab8 lab |
+    sol4-. mib8-.( mib-. mi-. mi-. sol-. sol-. lab-.\< lab-. si-. do-. mib4-.)\pocof r |
+    r2 \t {r4 si,(\mf re} mi!2.) r4 |
+    r sib2--( re4 mi2.) r4 |
+    r4 mi8(\< sol la4 \fmolto ~ |
+    la la8 do \ten re2~ re4) r8 re,-> r dod'->\sfz~ |
+    dod4 r8 re,-. mi-. sol-. |
+    lab2-> r do,4--\mp sib-- reb-- | la!->-- r |
   }
 }
 

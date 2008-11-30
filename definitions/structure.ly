@@ -81,7 +81,7 @@ Interlude = \markup {
   \fill-line {
     \center-column {
       \fontsize #6 \InterludeTitreTexte
-      \Arrosoir " "
+   %   \Arrosoir " "
     }
   }
 }
