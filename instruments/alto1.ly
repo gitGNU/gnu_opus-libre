@@ -788,7 +788,7 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
     <si! sol' sib>2. <re mi sib'>2 <si! sol' sib> <re mi sib'>2. |
     r4 <si! sol' sib>2. <re mi sib'>4~ <re mi sib'>2 <si sol' sib>2. |
     <mib, lab mi'!>1*5/4 <lab re>2 <mib lab mi'!>2. |
-    <re sol>2. re2 | <reb, sib'>1*5/4~ <reb sib'>2. <reb sib'>2 |
+    <re' sol>2. re2 | <reb, sib'>1*5/4~ <reb sib'>2. <reb sib'>2 |
     <mib si' lab'>1*5/4~ <mib si' lab'> |
     r4 <si' lab'>2 <si lab'> |
     <sib sol'>1*5/4~ <sib sol'>2. r2 | R1*5/4*5
@@ -799,9 +799,59 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
     do2 r4 | \pizz fad,, \arco do''2~ do4 si2~ si r4 | do,,\leftpizz r2 |
     fa1*7/4~ fa4 r2 r1 | R1*7/4
     r8 \pizz fa fad dod' re4 |
-    r dod, re la' sib4 | r8 fa fad dod' re4 |
+    r8 dod, re la' sib4 | r8 fa fad dod' re4 |
     r8 fad, la re fa4 | r8 fa, fad dod' re4 |
-    r8 mib, lab si mi4 |
+    r8 mib, lab si mi4 | r8 fa, solb sib reb4 |
+    \arco \acciaccatura solb,4 fa1*7/4~ fa1 r2 r4 |
+    R1*7/4*2 \repeat volta 2 {fa1 sold2. fa sold1 R1*7/4}
+    sold1 r2 r4 | R1*7/4 |
+    
+    %%% Presto subito %%%
+    \tt {red8 fad red red red} \tt {red fad red red red} \tt {red fad red red red} |
+    \tt {red fad red red red} \tt {red fad red red red} \tt {red fad red red fad} |
+    \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
+    \tt {red fad red red fad} \tt {fad red red fad red} \tt {fad red red fad red} |
+    \tt {fad red red fad red} \tt {fad red red fad red} \tt {fad red red fad red} |
+    re mib mi fa lab si re4 r2 |
+    re,8 mib fa lab si do re4 r2 |
+    re,8 mib fa lab si do mi4 r2 |
+    re,8 mib fa lab sib si | dod4 \pizz re8 sol, re'4 r |
+    mi8 sold, mi'4 <sold, mi'>\arpeggUp |
+    mi'8 la, mi'4 <la, mi' la>\arpeggUp |
+    fa'8 do fa4 si,8 red, si'4 sold8 red sold4 |
+    r8 red sold dod fad si mi |
+    r4 r8 \arco red, mi mi fa fa |
+    <fad,do' sol' mib'>4 <fad do' sol'>8. <fad do'>16
+    <fad do' sol'>8. <fad do'>16 <fad do'>8 |
+    <dod la' mi'>2 r4 |
+    <fad do' sol' mib'> <fad do' sol'>8. <fad do'>16
+    <fad do' sol'>8. <fad do'>16 <fad do'>8 |
+    <do la' mib' sib'>2 r4 |
+    <fad dod'>8 <fad dod'>8. <fad dod'>16 <fad dod'>8 <fad dod'> |
+    <sol sol'>4 <sol fad'>8. <sol fad'>16 <sol fad'>8. <sol mi' si'> |
+    <la mi' la>4 r2 | re4 mi si sold r <re do'> | <fa mib'> <fad mi'> <sol fa'> |
+    r8 lab lab lab lab lab | sol sol do do si si |
+    r sol sol sol sol sol lab lab si si do do |
+    r sol sol sol sol sol lab lab si si do do |
+    r re re re mib mib r fad fad fad sol sol |
+    sib4 sol8 fad mib re | <sib sol'>2. R2. R2 R4. R2 R1*5/8 R2.
+    
+    %%% Tempo I %%%
+    fad'16 sol fad mib re mib fad mib re si sib si re mib re si |
+    <mib, sib'>4 r2 <mib sib'>4 r | <mib sib'> r <mib sib'> r2 |
+    <mib sib'>4 r r8 <mib sib'> r2 | <do si'>4 r1\fermata |
+    R1*5/4*3
+    mib''1*5/4~ mib2. r2 | R1*5/4*2
+    mi1*5/4~ mi2. r2 | R1*5/4*3
+    sol,8 mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol mi sol mi sol mi |
+    sol mi sol mi sol r r2 |
   }
 }
 

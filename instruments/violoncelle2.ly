@@ -743,7 +743,7 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     r8 red, mi sol si4 | r8 red, sold si mi4 |
     r8 mi, sol la sib4 \clef treble |
     \arco sol'8 la sol la sol la sol la sol la sol la sol la |
-    sol4 r1 r2 | R1*7/4 \clef bass |
+    sol4 r2 r1 | R1*7/4 \clef bass |
     \pizz sib,,4 r2 fad4 r2 sib4 r2 |
     dod4 r2 sib4 r2 do4 r2 re4 r2 |
     \arco sol,1*7/4~ sol4 r2 r1 |
@@ -791,7 +791,7 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     sib la la la la sib la la la la | la4 r1\fermata |
     R1*5/4*2
     <fa,\harmonic si\harmonic do' si'>2. r2 | R1*5/4*2
-    <do'' si'>1*5/4~\CaV <do si'>2.\CaV r2 |
+    <fa\harmonic si\harmonic do' si'>1*5/4~\CaV <do'' si'>2.\CaV r2 |
     R1*5/4
     <mi,,\harmonic do'\harmonic mi' sol>1*5/4~
     <mi'' sol>~\CaV <mi sol>~\CaV <mi sol>2. r2 |
