@@ -291,7 +291,7 @@ ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
 InterludeUnVioloncelleUn = { \VioloncelleUn
   \relative {
     R1. R1*3 R1. R1 R1.*2 R1*2
-    la4 r r1 \clef treble r8 do( si'2.~\mf si4 la~\> la sold2.~\p) sold4 r2 |
+    la4\leftpizz r r1 \clef treble r8 do( si'2.~\mf si4 la~\> la sold2.~\p) sold4 r2 |
     R2 \clef bass r4 \ttt {r16 fa( mi re la si}
     \ttt {sold\< la sold fad dod red)} |
     <sol, re'>1~--->\f <sol re'>2 <sol re'>8 do-- sib--\< sol--\! \clef treble |
