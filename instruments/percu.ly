@@ -745,16 +745,16 @@ InterludeDeuxPercus = \new PianoStaff {
   \GrandMarimba
   \PercuDeuxMains
   \relative {
-    r8 <red fad> r <red fad> r <red fad> r <red fad> |
+    r8 <red fad>\p r <red fad> r <red fad> r <red fad> |
     r <red fad> r <red fad> r <red fad> r <red fad> r <red fad> |
     R2. R2 r4 r8 <mib sol> r <mib sol> | R2
-    lad'8 si, <mib, sol>4 \gauche <mib, sol> \droite <mib' sol> |
-    fad'8 si, <mib, sol>4 \gauche <mib, sol> \droite <mib' sol> |
-    <sol' mi'!> <mi,! sol> <reb' sib'> <mi, sol> <mi' sol> <mi, sol> |
-    <sib' reb> <mi, sol> R2*6
-    \gauche <la,, mi'>4 \droite <mi'' sold> r <mi sold> |
-    \gauche <la,, mi'> \droite <mi'' sold> r <mi sold> |
-    \gauche <la,, mi'> \droite <mi'' sold> r <mi sold> |
+    lad'8-.--\p si, <mib, sol>4 \gauche <mib, sol>-- \droite <mib' sol> |
+    fad'8-.-- si, <mib, sol>4 \gauche <mib, sol>-- \droite <mib' sol> |
+    <sol' mi'!>-.-- <mi,! sol>-.-- <reb' sib'>-.-- <mi, sol>-.-- <mi' sol>-.-- <mi, sol>-.-- |
+    <sib' reb>-.-- <mi, sol>-.-- R2*6
+    \gauche <la,, mi'>4--\p \droite <mi'' sold> r <mi sold> |
+    \gauche <la,, mi'>-- \droite <mi'' sold> r <mi sold> |
+    \gauche <la,, mi'>-- \droite <mi'' sold> r <mi sold> |
     r <mi sold> r2 | R2.
     \gauche <fa,, do'>4 \droite <mi'' sold>
     \gauche la, \droite <mi' sold>
@@ -763,8 +763,8 @@ InterludeDeuxPercus = \new PianoStaff {
     r4 <mi sold> |
   }
   \relative {
-    \clef bass r2 r4 <lab, re sol> |
-    r2 <fa mi'>4 | R2 R2. R2 R2. R2
+    \clef bass r2 r4 <lab, re sol>-- |
+    r2 <fa mi'>4-- | R2 R2. R2 R2. R2
     R2 s2 R2 s2 R2*10 s1*4 R2.
     s1 s2. R2. s1 R2. r4 <fa' la> |
   }

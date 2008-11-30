@@ -772,7 +772,7 @@ InterludeDeuxPiano = { \Piano
   \PianoDeuxMains
   \relative {
     R1 R2. R2 R2. R2 R2. R2
-    R2*13 r4 \acciaccatura red'16 <mi, mi'>4
+    R2*13 r4 \acciaccatura red'16 <mi, mi'>4\p
     <si re>1~ <si re>~ <si re>~ <si re>4 r r2 | R2.
     <la re>1~ <la re>2 r4 | R2.
     <fa si re mi>2 r | R2. <fa sold mi'>4 r |
@@ -781,11 +781,12 @@ InterludeDeuxPiano = { \Piano
     R1 R2. R2 R2. R2 R2. R2
     R2*14
     \pl {<la, mi'>1~ <la mi'>~ <la mi'>~ <la mi'>4 }
-    {s2 mi''4\laissezVibrer mi,\laissezVibrer
-    s2 mi'4\laissezVibrer mi,\laissezVibrer
-    s2 mi'4\laissezVibrer mi,\laissezVibrer s } r r2 | R2.
-    \pl {<fa, do'>1~ <fa do'>2} {s2 mi''4\laissezVibrer mi,\laissezVibrer s2} r4 |
-    R2. <dod, la'>2 r | R2. <dod la'>4 r |
+    {s2 mi''4-.--\laissezVibrer mi,-.--\laissezVibrer
+    s2 mi'4-.--\laissezVibrer mi,-.--\laissezVibrer
+    s2 mi'4-.--\laissezVibrer mi,-.--\laissezVibrer s } r r2 | R2.
+    \pl {<fa, do'>1~ <fa do'>2}
+    {s2 mi''4-.--\laissezVibrer mi,-.--\laissezVibrer s2} r4 |
+    R2. <dod, la'>2-- r | R2. <dod la'>4-- r |
   }
 }
 

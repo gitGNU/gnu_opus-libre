@@ -426,20 +426,20 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
 InterludeDeuxViolonDeux = { \ViolonDeux
   \relative {
     R1 R2. R2 R2. R2 R2. R2
-    \pizz sol4 \t {re'8 mib sib'} |
-    si,4 \t {re8 fad si} |
-    sol,4 \t {re'8 mib sib'} |
-    re,4 \t {mi8 la dod} |
-    re4 \t {sol,,8 re' la'} |
-    mi'4 \t {sol,,8 re' la'} |
-    mi'4 \t {la,8 re sol} | do4 lab, |
+    \pizz sol4--\mf \t {re'8 mib sib'} |
+    si,4-- \t {re8 fad si} |
+    sol,4-- \t {re'8 mib sib'} |
+    re,4-- \t {mi8\< la dod} |
+    re4--\psubito \t {sol,,8 re' la'} |
+    mi'4 \t {sol,,8\< re' la'} |
+    mi'4 \t {la,8 re sol} | do4->--\fp lab, |
     \t {do8 sol mi} mib4 |
     \t {sib'8 fa re} reb4 |
     \t {lab'8 mib do} si4 |
     \t {solb'8 reb sib} la4 |
-    \t {mi'8 lab do} mi4 | mi' r |
-    \arco re,,1~ re~ re~ re2 r | R2.
-    si1~ si2 r4 | R2. re2. r4 R2. do4 r |
+    \t {mi'8\< lab do} mi4 | mi'->\! r |
+    \arco \ten re,,1~\p re~ re~ re2 r | R2.
+    \ten si1~ si2 r4 | R2. re2.--\pp r4 R2. do4-- r |
   }
 }
 

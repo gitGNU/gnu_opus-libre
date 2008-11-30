@@ -282,10 +282,10 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 InterludeDeuxContrebasse = { \Contrebasse
   \relative {
     R1 R2. R2 R2. R2 R2. R2
-    \pizz si,,4 r re r si r fad' r sol r sol r sol r |
+    \pizz si,,4--\mf r re-- r si-- r fad'-- r sol--\p r sol r sol r |
     dod, r mi sib do fad mi sib do fad mi r R2 |
-    \arco la,1~ la~ la~ la2 r | R2.
-    fa1~ fa2 r4 | R2. \pizz dod'4 r r2 | R2. dod4 r |
+    \arco \ten la,1~\p la~ la~ la2 r | R2.
+    \ten fa1~ fa2 r4 | R2. \pizz dod'4\p r r2 | R2. dod4 r |
   }
 }
 

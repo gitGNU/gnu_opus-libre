@@ -259,15 +259,15 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 InterludeDeuxSaxophoneUn = { \SaxAltoUn
   \relative {
     R1 R2. R2
-    r4 r16 re32 mib re4.~ |
-    re4~ \ttt {re16 do si sold la fad} re'2 r4 | R2
+    r4 r16 re32\mp( mib re4.~ |
+    re4~ \ttt {re16\> do si sold la fad\!} re'2) r4 | R2
     R2*14
-    mi,2. r4 | r8 mi'16 fa mi2. |
-    re4 mi~ mi8 mi16 fa mi4~ |
+    mi,2.--\pp r4 | r8 mi'16\mp( fa mi2.) |
+    re4( mi~) mi8 mi16( fa mi4~ |
     mi re~ re8 do \t {si sold la} |
-    fad re'4. r4 |
-    r8 mi16 fa mi2.~ mi2 r4 | R2.
-    fa,2 r R2. mi4 r |
+    fad\> re'4.\!) r4 |
+    r8 mi16( fa mi2.~ mi2) r4 | R2.
+    fa,2--\pp r R2. mi4-- r |
   }
 }
 

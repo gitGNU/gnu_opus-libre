@@ -265,8 +265,8 @@ InterludeDeuxSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R1 R2. R2 R2. R2 R2. R2
     R2*14
-    la,2. r4 | la2. r4 la2. r4 R1 R2.
-    fa2. r4 fa2 r4 | R2. reb2 r R2. reb4 r |
+    la,2.--\pp r4 | la2.-- r4 la2.-- r4 R1 R2.
+    fa2.-- r4 fa2 r4 | R2. reb2--\pp r R2. reb4-- r |
   }
 }
 

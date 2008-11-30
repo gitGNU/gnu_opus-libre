@@ -330,17 +330,17 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 InterludeDeuxClarinetteDeux = { \ClarinetteDeux
   \relative {
     R1 R2. R2 R2. R2 R2. R2
-    r4 si' R2 r4 do R2 |
-    sold'8 r sol r fad r fa r |
-    \t {mi r reb} \t {do r si} |
-    do4 do'8 r | R2
-    r4 solb8 r sib, r r4 |
-    r mib8 r fa r r4 | R2
-    sold,2 mi4 r |
-    sold2 mi4 r |
-    sold2 mi4 r | R1 R2.
-    sold2 mi4 r | sold2 r4 | R2.
-    la,2 r | R2. fa4 r |
+    r4 si'--\p R2 r4 do-- R2 |
+    sold'8-. r sol-. r fad-. r fa-. r |
+    \t {mi-. r reb-.} \t {do-. r si-.} |
+    do4( do'8-.) r | R2
+    r4 solb8-.\p r sib,-. r r4 |
+    r mib8-. r fa-. r r4 | R2
+    sold,2\pp( mi4) r |
+    sold2( mi4) r |
+    sold2( mi4) r | R1 R2.
+    sold2( mi4) r | sold2-- r4 | R2.
+    la,2--\p r | R2. fa4-- r |
   }
 }
 

@@ -315,13 +315,13 @@ ActeUnSceneDeuxFluteDeux = { \FluteDeux
 InterludeDeuxFluteDeux = { \FluteDeux
   \relative {
     R1 R2. R2 R2. R2 R2. R2
-    r4 mib' R2 r4 mib R2 |
-    dod'8 r si r si r la r |
-    \t {la r fa} \t {mi r solb} |
-    lab4 fa'8 r | R2 r4 sib,8 r solb r r4 |
-    r si!8 r mib r r4 | R2
-    re,1~ re~ re~ re4 r r2 | R2.
-    mi,1~ mi2 r4 | R2. R1 R2. R2
+    r4 mib'--\mp R2 r4 mib-- R2 |
+    dod'8-. r si-. r si-. r la-. r |
+    \t {la-. r fa-.} \t {mi-. r solb-.} |
+    lab4( fa'8-.) r | R2 r4 sib,8-.\p r solb-. r r4 |
+    r si!8-. r mib-. r r4 | R2
+    \ten re,1~\p re~ re~ re4 r r2 | R2.
+    \ten mi,1~ mi2 r4 | R2. R1 R2. R2
   }
 }
 
