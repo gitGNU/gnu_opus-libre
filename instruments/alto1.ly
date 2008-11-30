@@ -303,13 +303,13 @@ ActeUnSceneUnBisAltoUn = { \AltoUn
 
 InterludeUnAltoUn = { \AltoUn
   \relative {
-    R1. R1*3 R1. R1 R1.*2 R1*2 | mi1~ mi4 re8 mi |
+    R1. R1*3 R1. R1 R1.*2 R1*2 | mi1~\mf mi4 re8( mi) |
     fa1. mi1~ mi4 r2 | R2 R2.
-    <la, re>1~ <la re>2 r |
-    <la re>1 r4 sol' \clef treble | mi'16 fa mi re si re la8 r4 r8 mi |
-    red'2. mi4 fad1 sol,2 | fad'2 r | <lab, mib'>2.
-    <lab reb>2.~ <lab reb>4 r2 | R2.*3 \clef alto
-    <solb, sib>2.~ <solb sib>~ <solb sib>~ <solb sib>~ <solb sib>2 r4 |
+    <la, re>1~--->\f <la re>2 r |
+    <la re>1---> r4 sol'-- \clef treble | mi'16\f( fa mi re\> si re la8\!) r4 r8 mi |
+    red'2. mi4( fad1--->) sol,2 | fad'2 r | <lab, mib'>2.--->\ff\>
+    <lab reb>2.~\p <lab reb>4 r2 | R2.*3 \clef alto
+    <solb, sib>2.~\pp <solb sib>~ <solb sib>~ <solb sib>~ <solb sib>2 r4 |
     mib2.~ mib~ mib~ mib R2.*2
   }
 }

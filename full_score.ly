@@ -1039,13 +1039,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \InterludeUn
     \header {
       piece = \Interlude
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneDeux
     \header {
@@ -1099,13 +1099,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {

@@ -446,18 +446,18 @@ ActeUnSceneUnMainDroite = {
     %%% Air du baryton Un %%%
     
     \clef bass
-    do,8 do \t{do do do}| do4 do4~|do2.|
-    r8 do \t{do do do} | do4 do4~ | do2.|
-    <sol do>8 re' fad la | do <fad, mi'> \clef treble <la fad'> si'|
-    <do fad> si <do, mi> la \change Staff="mg" <do, re> <sol fad'>|
-    \stemUp <sol re'> fad' la do \stemNeutral \change Staff="md" mi fad si do | 
-    <sol fad'> re la \change Staff="mg" mi si fad |
-    \stemUp fa'! solb sib do \stemNeutral \change Staff="md" mib solb lab do |
-    <reb solb> do <solb lab> mib \change Staff="mg" <solb, sib> fa |
-    \stemUp solb sib \stemNeutral \change Staff="md" do mib solb lab do reb |
-    solb reb lab mib <solb, do> sib |
+    \cmb #"p" #"sombre" do,8\<( do \t{do do\> do}| do4 do4\!)--~|do2.|
+    r8 do\<( \t{do do\> do} | do4 do4\!)--~ | do2.|
+    <sol do>8\pp ( re' fad la | do <fad, mi'> \clef treble <la fad'> si'|
+    <do fad> si <do, mi> la \mg <do, re> <sol fad'>)|
+    \stemUp <sol re'>( fad' la do \stemNeutral \md mi fad si do | 
+    <sol fad'> re la \mg mi si fad) |
+    \stemUp fa'!( solb sib do \stemNeutral \md mib solb lab do |
+    <reb solb> do <solb lab> mib \mg <solb, sib> fa) |
+    \stemUp solb( sib \stemNeutral \md do mib solb lab do reb |
+    solb reb lab mib <solb, do> sib) |
     
-    \t{la! mib' si'} \t{solb' si, mib,}
+    \t{la!\p mib' si'} \t{solb' si, mib,}
     \t{la, mib' si'} \t{solb' si, mib,}|
     \t{la, mib' si'} \t{solb' si, mib,} \t{la, mib' si'}|
     \t {la, mi'! <sol mib'>} \t {<do fad> <sol mib'> mi}
