@@ -318,11 +318,11 @@ ActeUnSceneUnBisAltoDeux = { \AltoDeux
 InterludeUnAltoDeux = { \AltoDeux
   \relative {
     R1. R1*3 R1. R1 R1.*2 R1*2
-    la1 la2~ la1 si2 do1~ do4 r2 R2 R2. |
-    <sib do>1~ <sib do>2 r2 | <sib do>1 r4 sol' \clef treble |
-    re'16 mi re si la si sold8 r4 r8 mi | red'2. mi4 fad1 sol,2 |
-    fad'2 r \clef alto | <sol,, mi'>2. <fa' sol>2.~ <fa sol>4 r2 |
-    R2.*3 solb,2.~ solb~ solb~ solb~ solb2 r4 |
+    la1\mf la2~ la1( si2 do1~) do4 r2 R2 R2. |
+    <sib do>1~--->\f <sib do>2 r2 | <sib do>1---> r4 sol'-- \clef treble |
+    re'16\f( mi re si\> la si sold8\!) r4 r8 mi | red'2. mi4( fad1--->) sol,2 |
+    fad'2 r \clef alto | <sol,, mi'>2.--->\ff\> <fa' sol>2.~\p <fa sol>4 r2 |
+    R2.*3 solb,2.~\pp solb~ solb~ solb~ solb2 r4 |
     mib2.~ mib~ mib~ mib R2.*2
   }
 }

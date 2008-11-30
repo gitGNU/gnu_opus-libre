@@ -293,20 +293,20 @@ ActeUnSceneUnBisViolonUn = { \ViolonUn
 
 InterludeUnViolonUn = { \ViolonUn
   \relative {
-    R1. R1*3 R1. R1 R1.*2 R1 r2 re8 mi \t {fa la sold} |
-    si1.~ si1~ si4 la~ | la sold2.~ sold4 r2 |
-    r4 \ttt {r16 re mi fa la sold} |
+    R1. R1*3 R1. R1 R1.*2 R1 r2 re8\mf( mi \t {fa la sold} |
+    si1.~) si1~ si4\> la~ | la sold2.~\p sold4 r2 |
+    r4 \ttt {r16 re\p( mi fa la sold} |
     \ttt {si sold la si mi re}
-    \ttt {fa re mi fa sib sol}
+    \ttt {fa re mi fa\< sib sol}
     \ttt {do sol sib do mib reb} |
-    fad1~ fad2 r8 mib4 do8 |
-    sib2. r8 mi, dod'4. r8 |
-    fad1~ fad2 r8 sol,4. |
-    fad'1 sol,4~ sol16 lab \t {sib mib reb} |
-    fad2~ fad8 r la,16 sib \t {mi fad mi} |
+    fad1~--->\f) fad2 r8 mib4( do8) |
+    sib2.---> r8 mi,( dod'4.) r8 |
+    fad1~---> fad2 r8 sol,4.( |
+    fad'1--->) sol,4~( sol16 lab \t {sib mib reb} |
+    fad2~) fad8 r la,16( sib \t {mi fad mi} |
     \ottava #1
-    sib'2. \ottava #0 fad2.~ fad4 r2 | R2.*3
-    sol,,2.~ sol~ sol~ sol~ sol2 r4 |
+    sib'2.--->)\ff\> \ottava #0 fad2.~\p fad4 r2 | R2.*3
+    sol,,2.~\pp sol~ sol~ sol~ sol2 r4 |
     la2.~ la~ la~ la \pizz fad4 r sol r sold r |
   }
 }

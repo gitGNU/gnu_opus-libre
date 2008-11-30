@@ -291,15 +291,16 @@ ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
 InterludeUnVioloncelleUn = { \VioloncelleUn
   \relative {
     R1. R1*3 R1. R1 R1.*2 R1*2
-    la4 r r1 \clef treble r8 do si'2.~ si4 la~ la sold2.~ sold4 r2 |
-    R2 \clef bass r4 \ttt {r16 fa mi re la si}
-    \ttt {sold la sold fad dod red} |
-    <sol, re'>1~ <sol re'>2 <sol re'>8 do sib sol \clef treble |
-    <re'' la'>1 r4 r8 lab' sol'1~ sol2 r \clef bass |
-    <sol,,, re'>4 <sol re'> <sol re'> <sol re'> <sol re'> <sol re'> |
-    <sol re'> r r2 | <fa' sol>2. sol2 r4 | R2.*4
-    si,2.~ si~ si~ si~ si8 sib4 lab si8 |
-    sol'2.~ sol~ sol~ sol R2.*2
+    la4 r r1 \clef treble r8 do( si'2.~\mf si4 la~\> la sold2.~\p) sold4 r2 |
+    R2 \clef bass r4 \ttt {r16 fa( mi re la si}
+    \ttt {sold\< la sold fad dod red)} |
+    <sol, re'>1~--->\f <sol re'>2 <sol re'>8 do-- sib--\< sol--\! \clef treble |
+    <re'' la'>1---> r4 r8 lab'\<( sol'1~)\fmolto
+    sol2 r \clef bass |
+    <sol,,, re'>4\downbow <sol re'>\downbow <sol re'>\downbow <sol re'>\downbow <sol re'>\downbow <sol re'>\downbow |
+    <sol re'>\downbow r r2 | <fa' sol>2.--->\ff\> sol2\p r4 | R2.*4
+    si,2.~\pp si~ si~ si~ si8 sib4( lab) si8( |
+    sol'2.~) sol~ sol~ sol R2.*2
   }
 }
 

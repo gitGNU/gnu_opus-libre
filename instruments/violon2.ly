@@ -290,17 +290,17 @@ ActeUnSceneUnBisViolonDeux = { \ViolonDeux
 InterludeUnViolonDeux = { \ViolonDeux
   \relative {
     R1. R1*3 R1. R1 R1.*2 R1
-    r2 re8 mi \t {fa la sold} | si1.~
-    si1~ si4 la~ la sold2.~ sold4 r2 |
-    R2 \ttt {r16 re mi fa la sold}
+    r2 re8\mf( mi \t {fa la sold} | si1.~)
+    si1~ si4\> la~ la sold2.~\p sold4 r2 |
+    R2 \ttt {r16 re\p( mi fa la sold}
     \ttt {si sold la si mi re }
-    \ttt {fa re mi fa sib do} |
-    sol1~ sol2 r8 reb'4 sib8 |
-    sol2. r8 mi dod'4. r8 |
-    do1~ do2 r8 sol4. | fad'1 sol,2 |
-    r16 lab \t {sib mib reb} fad4~ fad4. mib,8 |
-    re'2. | <sol, dod>2.~ <sol dod>4 r2 |
-    R2.*3 mi,2.~ mi~ mi~ mi~ mi2 r4 |
+    \ttt {fa\< re mi fa sib do} |
+    sol1~--->\f) sol2 r8 reb'4( sib8) |
+    sol2.---> r8 mi( dod'4.) r8 |
+    do1~---> do2 r8 sol4.( | fad'1--->) sol,2 |
+    r16 lab( \t {sib mib reb} fad4~) fad4. mib,8( |
+    re'2.--->\ff)\> | <sol, dod>2.~\p <sol dod>4 r2 |
+    R2.*3 mi,2.~\pp mi~ mi~ mi~ mi2 r4 |
     mi2.~ mi~ mi~ mi \pizz fad4 r sol r sold r |
   }
 }
