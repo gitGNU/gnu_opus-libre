@@ -452,7 +452,7 @@ InterludeDeuxAltoUn = { \AltoUn
     la4 la' |
     r8 mi, r sib' | r do, r fad |
     r mi r sib' | r do, r fad |
-    r mi\< do' lab' mi'4--\! r |
+    r mi\< do' lab' mi'4->\! r |
     r8 \arco mi,,\mp( si' dod re2) |
     r8 mi,( si' dod re2) |
     r8 mi,( si' dod \ten re2~) |

@@ -440,9 +440,9 @@ InterludeDeuxViolonUn = { \ViolonUn
     sol,4-- \t {re'8 mib sib'} |
     re,4-- \t {mi8\< la dod} |
     re4--\psubito \t {sol,,8 re' la'} |
-    mi'4 \t {sol,,8\> re' la'} |
+    mi'4 \t {sol,,8\< re' la'} |
     mi'4 \t {la,8 re sol} |
-    do4->--\fp \t {lab,8 reb fa} |
+    do4--->\fp \t {lab,8 reb fa} |
     sib4 \t {mib,,8 sol si} |
     si4 \t {reb,8 fa la} |
     lab4 \t {si,8 mib sol} |

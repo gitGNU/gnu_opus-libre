@@ -756,17 +756,17 @@ InterludeDeuxPercus = \new PianoStaff {
     \gauche <la,, mi'>-- \droite <mi'' sold> r <mi sold> |
     \gauche <la,, mi'>-- \droite <mi'' sold> r <mi sold> |
     r <mi sold> r2 | R2.
-    \gauche <fa,, do'>4 \droite <mi'' sold>
+    \gauche <fa,, do'>4-- \droite <mi'' sold>
     \gauche la, \droite <mi' sold>
-    \gauche <fa,, do'> \droite <mi'' sold> r R2.
-    \gauche dod,8 la' \droite <mi' sold>4 r2 | R2.
-    r4 <mi sold> |
+    \gauche <fa,, do'>-- \droite <mi'' sold> r R2.
+    \gauche dod,8( la' \droite <mi' sold>4) r2 | R2.
+    r4 <mi sold>-- |
   }
   \relative {
     \clef bass r2 r4 <lab, re sol>-- |
     r2 <fa mi'>4-- | R2 R2. R2 R2. R2
     R2 s2 R2 s2 R2*10 s1*4 R2.
-    s1 s2. R2. s1 R2. r4 <fa' la> |
+    s1 s2. R2. s1 R2. r4 <fa' la>-- |
   }
 }
 

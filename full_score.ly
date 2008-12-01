@@ -1039,25 +1039,25 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \InterludeUn
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %
+  } %}
   \score {
     \InterludeDeux
     \header {
       piece = \Interlude
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneTrois
     \header {

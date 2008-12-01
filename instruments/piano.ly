@@ -775,7 +775,7 @@ InterludeDeuxPiano = { \Piano
     R2*13 r4 \acciaccatura red'16 <mi, mi'>4\p
     <si re>1~ <si re>~ <si re>~ <si re>4 r r2 | R2.
     <la re>1~ <la re>2 r4 | R2.
-    <fa si re mi>2 r | R2. <fa sold mi'>4 r |
+    <fa si re mi>2-- r | R2. <fa sold mi'>4-- r |
   }
   \relative {
     R1 R2. R2 R2. R2 R2. R2

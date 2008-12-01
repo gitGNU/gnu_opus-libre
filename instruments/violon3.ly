@@ -430,7 +430,7 @@ InterludeDeuxViolonTrois = { \ViolonTrois
     re,4-- \t {mi8\< la dod} |
     re4--\psubito \t {sol,,8 re' la'} |
     mi'4 \t {sol,,8\< re' la'} |
-    mi'4 \t {la,8 re sol} | do4->--\fp lab, |
+    mi'4 \t {la,8 re sol} | do4--->\fp lab, |
     <do sib'> <mib, si'> |
     <re sib'> <reb la'> |
     <do lab'> <si sol'> |
