@@ -418,8 +418,8 @@ mfsempre = #(make-dynamic-extra "mf" "sempre")
 mpsostenuto = #(make-dynamic-extra "mp" "sostenuto")
 psubito = #(make-dynamic-extra "p" "subito")
 pdolce = #(make-dynamic-extra "p"  "dolce")
+psubito = #(make-dynamic-extra "p"  "subito")
 mfleggiero = #(make-dynamic-extra "mf" "leggiero")
-
 piuf = #(make-extra-dynamic "più" "f")
 pocof = #(make-extra-dynamic "poco" "f")
 

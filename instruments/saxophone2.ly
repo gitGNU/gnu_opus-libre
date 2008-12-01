@@ -26,66 +26,66 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1
-    mi,,2~ mi4 r | mi4~ \tt {mi32 fa mi mi' fa} mi'8~ mi4~ |
-    mi2~ mi4 r | mi,,2 r4 |
-    R2*2 mi2.~ | mi2~ mi4 r |
-    mi2. | mi'2 \t {sol4 sib do8 r} |
+    \ten mi,,2~\fp mi4 r | mi4~\p \tt {mi32( fa mi mi' fa)} mi'8~ mi4~ |
+    mi2~ mi4 r | mi,,2--\p r4 |
+    R2*2 \ten mi2.~ | mi2~ mi4 r |
+    mi2.( | mi'2) \t {sol4\<( sib do8) r} |
     
     %%% Entrée du baryton 2 %%%
-    re,8. dod16~ dod8 mi r4 | R2*2 | reb,2 r4 | R2
-    la'4 si fa'8 sol~ |
-    sol2~ sol2.~ sol8 r r4 | R2. R2 |
-    sib,2~ sib4 r \t {lab8 fa mib} |
+    re,8.->\f dod16~-> dod8 mi-> r4 | R2*2 | reb,2--\p r4 | R2
+    la'4--\mp\< si-- fa'8-> sol~-> |
+    \ten sol2~ sol2.~\p sol8 r r4 | R2. R2 |
+    sib,2~--\pp sib4 r \t {lab8\fsubito( fa mib} |
     
     %%% Tempo giusto %%%
-    re8 r r4 | R2*2 re4 mib fa lab sib si8 r |
-    \t {reb4 mi fad} \t {sol la do} |
-    re4 r2 lab,2. re4 r2 solb2. mib do |
-    r2 lab'8 r r4 do8 r r4 | re,,2 re'4~ re mib2 |
-    reb2. r4 | R2*2 R2-\fermataMarkup
+    re8->\f) r r4 | R2*2 re4\p( mib fa lab sib si8) r |
+    \t {reb4\p( mi fad} \t {sol\< la do} |
+    re4\f) r2 lab,2.--\mp( re4--) r2 solb2.\p mib do |
+    r2 lab'8-> r r4 do8-> r r4 | re,,2\f re'4~-- re mib2-- |
+    reb2.---> r4 | R2*2 R2-\fermataMarkup
     
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
     R2*4 R2.*11 R4.*15
-    mi,?8 r4 sol?8 r4 |
-    mi8 r4 sol8 r4 |
-    mib8 r4 solb8 r4 |
-    mib8 r4 solb8 r4 |
-    mi8 r4 mi8 r4 |
-    re8 r4 re?8 r4 |
-    do'4.~ do~ do~ do8 r4 |
+    mi,?8-.\pp r4 sol?8-. r4 |
+    mi8-. r4 sol8-. r4 |
+    mib8-. r4 solb8-. r4 |
+    mib8-. r4 solb8-. r4 |
+    mi8-. r4 mi8-. r4 |
+    re8-. r4 re?8-. r4 |
+    \ten do'4.~\pp do~ do~ do8 r4 |
     do4.~ do~ do~ do8 r4 |
     do4.~ do~ do4 r8 |
-    r r16 re' \t {re re lab} |
+    r r16 re'\mp\< \t {re re lab} |
     
     %%% A tempo %%%
-    re,8 r4 | lab4. re8 r4 | re4.~ re4. |
-    lab4.~ lab~ lab4 r8 | re,8 r4 | R4.*2
-    r8 mib re fa4.~ fa~fa4 r8 | R4.*4
-    r8 mi'' re | fa4. R4. | r8 dod si mi4 r8 |
-    R4.*2 fa,,4.~ fa8 r4 fa'4 r8 R4.
-    \t {mi16 fa fad} sol8 r |
-    R4. solb,8 lab la |
-    si re mi fa sol sib do reb |
-    re4 r re,, | fa r2 | R2. |
+    re,8\sfz r4 | lab4.--\p( re8) r4 | re4.~\p( re4.) |
+    \ten lab4.~\mf lab~ lab4 r8 | re,8-> r4 | R4.*2
+    r8 mib\mp( re) \ten fa4.~ fa~ fa4 r8 | R4.*4
+    r8 mi''\<( re | fa4.\f) R4. | r8 dod\<( si mi4\!) r8 |
+    R4.*2 fa,,4.~\p fa8 r4 fa'4--\mf r8 R4.
+    \t {mi16\>( fa fad} sol8) r |
+    R4. solb,8\pp( lab la |
+    si re mi fa\< sol sib do reb |
+    re4--\f) r re,,-- | fa-- r2 | R2. |
     
     %%% Adagio %%%
-    R1*3 sib1~ sib1.~ sib4 r r1 |
-    R1*2 sib1~ sib1.~ sib4 r r1 |
-    R1*2 sib2 r4 |
+    R1*3-\markup "Mettez la sourdine" \ten sib1~\pp sib1.~ sib4 r r1 |
+    R1*2 \ten sib1~ sib1.~ sib4 r r1 |
+    R1*2 sib2\pp r4 |
     
     %%% Valse %%%
     sol2 r4 | R2.*2
-    r4 si'2 r4 la2 | r4 solb2 r4 solb r mi |
-    sol,2.~ sol4 r | R2.*2 R1*2
-    r2 lab4 sol'2 r4 |
-    r si,2 mi2 r4 | r2 re4 la'2 | sol |
-    do,1~ do2 lab4 |
+    r4 si'2-- r4 la2-- | r4 solb2-- r4 solb-- r mi-- |
+    sol,2.~\pp sol4 r | R2.*2-\markup "Enlevez la sourdine" R1*2
+    r2 lab4\mp( sol'2) r4 |
+    r si,2( mi2) r4 | r2 re4( la'2\> | sol\!) |
+    \ten do,1~\f do2 lab4-- |
     
     %%% Vivo al fine %%%
-    re,4 r | R2*3
-    re'2~ re~ re8 re re re re r r4 |
-    R2*22 r4 mi,8 r |
+    re,4---> r | R2*3
+    \ten re'2~\p re~ re8 re->\mf\< re-> re-> re->\! r r4 |
+    R2*22 r4 mi,8->\pp r |
   }
 }
 
@@ -265,8 +265,8 @@ InterludeDeuxSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R1 R2. R2 R2. R2 R2. R2
     R2*14
-    la,2. r4 | la2. r4 la2. r4 R1 R2.
-    fa2. r4 fa2 r4 | R2. reb2 r R2. reb4 r |
+    la,2.--\pp r4 | la2.-- r4 la2.-- r4 R1 R2.
+    fa2.-- r4 fa2 r4 | R2. reb2--\pp r R2. reb4-- r |
   }
 }
 
