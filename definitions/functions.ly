@@ -412,6 +412,7 @@ fmolto = #(make-dynamic-extra "f" "molto")
 ppsempre = #(make-dynamic-extra "pp" "sempre")
 mfsempre = #(make-dynamic-extra "mf" "sempre")
 mpsostenuto = #(make-dynamic-extra "mp" "sostenuto")
+psubito = #(make-dynamic-extra "p" "subito")
 pdolce = #(make-dynamic-extra "p"  "dolce")
 psubito = #(make-dynamic-extra "p"  "subito")
 mfleggiero = #(make-dynamic-extra "mf" "leggiero")
@@ -452,6 +453,10 @@ pizz =
 arco =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"arco" $music #})
+
+flaut =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"flautando" $music #})
 
 simile =
 #(define-music-function (parser location music) (ly:music?)

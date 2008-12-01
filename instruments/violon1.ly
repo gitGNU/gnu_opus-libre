@@ -740,6 +740,39 @@ ActeDeuxSceneUnBisViolonUn = { \ViolonUn
     fa4 mi8 mi fa4 mi8 mi mi mi |
     fa mi mi mi mi fa mi mi mi mi | mi4 r1 | R1*5/4
     dod4 r1 | R1*5/4-\fermataMarkup
+    
+    %%% Boum %%%
+    r2 r4 \flaut sol'2\CaV\upbow r2 sol\CaV\upbow r4 | R1*5/4
+    r2 r4 \simile sol2\CaV r sol\CaV r4 |
+    r2 r4 sol2\CaV r sol\CaV r4 | R1*5/4
+    r2 r4 sol2\CaV r sol\CaV r4 |
+    <mi sol>2. r2 |
+    \repeat tremolo 16 {lab32*5/4 sol}
+    \repeat tremolo 16 {lab32 sol} lab16 sol do si |
+    <mi,! mib' mib>2. <mi reb' mib>2 <mi! mib'mib> <mi reb'mib>2. |
+    r4 <mi! mib' mib>2. <mi reb' mib>4~ <mi reb' mib>2 <mi mib' mib>2. |
+    <sib' mib lab>2. <sib mib lab>2 <mi,! sib' mib> <sib' mib lab>2. |
+    r4 <sib mib lab>2. r4 |
+    <lab reb sib'>2. <sib mib lab>2 <lab reb sib'> <sib mib lab>2 <reb sib'>4 |
+    <sol, mib' dob'>2. <reb' sib'>2 <mib dob'> <reb sib'>2. |
+    r4 <sol, mib' dob'>2 <reb' sib'>4 <mib dob'> |
+    <lab, fa' re'>1*5/4~ <fa re'>2. r2 | R1*5/4*5
+    
+    %%% Moderato assai %%%
+    r2 r4 sol,1~\CaV sol1*7/4~\CaV sol~\CaV
+    sol~\CaV sol~\CaV sol~\CaV sol2. r1 |
+    R2. R1 R2. R2
+    \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
+    \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
+    \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
+    \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
+    sol2.\glissando
+    re'1*7/4~ re4 r2 r1 | R1*7/4
+    \t {sol,8 mi sol} \t {mi sol mi} sol4 R2. |
+    \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
+    \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
+    \t {sol8 mi sol} \t {mi sol mi} sol4 |
+    sol16 la sol mi re4 
   }
 }
 
