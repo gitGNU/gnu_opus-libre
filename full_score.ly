@@ -1015,13 +1015,13 @@ ActeDeuxSceneDeux = {
     poet = \OperaLivret
     composer = \OperaPartition
     tagline = \OperaNotice
-  } %{
+  } %
   \score {
     \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %{
   \score {
     \Ouverture
     \header {
@@ -1051,13 +1051,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %}
+  } %
   \score {
     \InterludeDeux
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneTrois
     \header {
