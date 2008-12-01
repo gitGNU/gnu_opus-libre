@@ -167,17 +167,19 @@ ActeDeuxSceneUnBisTenor = { \Tenor
     si--( sol8 si re2) r4 | r2 r4 re\mf \< si8-. re-. | mi2->--\! si4-- la-- sold--|
     \ten fad1 \f r4 | R1*5/4*8 
     
+    %%% Boum %%%
     r1 re'8( \pp re | sib2.) r2 | r1 si8( si |
     sol2.) r2| r1 sold8( sold | mi\< la la la sol sol do4\! r8 do |
     sib\< sib mib4--)\mp r r8 lab,-.( \p \> lab-. sib-. | 
     mi,!4--)\! r1 | R1*5/4*3
-    mi'4(\f mi2->-- mi->-- | mi4 mi4.->-- mi8 mi2->--) | 
+    
+    mi'?4(\f mi2->-- mi->-- | mi4 mi4.->-- mi8 mi2->--) | 
     r2 mi4( \< mi mi--~| mi dod2 mi4 mi |
     sol1*5/4->--\! | mi4) r1 | 
     r2 r8 mi(~ mi2\< | \ind #"poco più" sold1*5/4->--)\!~| 
     sold4 r mi4.(\< dod8~dod4|
-    \ind #"più" la'1*5/4)\!~| la4 r r8 mi--(\mf \< ~ mi2 | 
-    do2~do8 mi~mi2 | si'1*5/4\ff ~| si2~ si8 \> lad)~lad2~|
+    \ind #"più" la'?1*5/4)\!~| la4 r r8 mi--(\mf \< ~ mi2 | 
+    do2~do8 mi~mi2 | si'?1*5/4\ff ~| si2~ si8 \> lad)~lad2~|
     lad4\! r1 | R1*5/4*4 R1*7/4
     
     mi,1-- \pdolce r4 mi2( \> | si'1)\! r2 r4 | 
@@ -189,20 +191,20 @@ ActeDeuxSceneUnBisTenor = { \Tenor
     
     r8 \ind #"mormorando" do,(\pp \t{do4 do8} do do | 
     mi4--) r8 red( mi mi | red red) r sol--\mp ~sol4 |
-    r4 \t{r sol8(\pp} sold sol) | r4 do4.--(\mf \> sol8| 
-    \ten si2.--)\p~| si4 r2 r4 sold8( sol si4) |
+    r4 \t{r sol8(\pp} lab sol) | r4 do4.--(\mf \> sol8| 
+    \ten si2.--)\p~| si4 r2 r4 lab8( sol si4) |
     r si--(\> sib8 sib | re1)\pp r2 r4 | R1*7/4*2
-    r4 sol--(\mp r | la,2--) r4 | r fad'--( r | 
+    r4 sol--(\mp r | la,2--) r4 | r solb'--( r | 
     sib,2--) r4 | R2.*2 r4 sib'2->--\sfz |
-    fad,8.--(\f mid16--~mid8 sold--) r sol-.( do-. sib-. mib4--) r2 |
+    solb,8.--(\f fa16--~fa8 lab--) r sol-.( do-. sib-. mib4--) r2 |
     R1*7/4 
     r1 r2 r8 dod16(\mf dod | mi2) r8 r16 sib(\pp sib sib dod8~dod4) r2 |
     R1*7/4*5
     
     sol'2->--\ff ~ sol4 r \tt {r2 dod,8-.(} | 
     \tt {fa4->--) r8 do!4-.(} \tt{mi4->--) r8 dod-.( dod-.}
-    \tt{sib--) r si(\< sol sold} | 
-    \tt{red'4--)\! r8 red4--(\mf} 
+    \tt{sib--) r si(\< sol lab} | 
+    \tt{mib'4--)\! r8 mib4--(\mf} 
     \tt{re-- re-- re8--~} 
     \tt{re re-. re-. do-. mib-.}|
     si2--) r1 |  R1.

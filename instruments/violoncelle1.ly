@@ -795,7 +795,7 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
     sib la la la la sib la la la la | la4 r1\fermata |
     R1*5/4*2
     <fa,\harmonic si\harmonic do' si'>2. r2 | R1*5/4*2
-    <fa\harmonic si\harmonic do' si'>2.1*5/4~\CaV <do'' si'>2.\CaV r2 |
+    <fa\harmonic si\harmonic do' si'>1*5/4~\CaV <do'' si'>2.\CaV r2 |
     R1*5/4
     <mi,,\harmonic do'\harmonic mi' sol>1*5/4~
     <mi'' sol>~\CaV <mi sol>~\CaV <mi sol>2. r2 |

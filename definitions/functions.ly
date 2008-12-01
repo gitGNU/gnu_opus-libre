@@ -36,6 +36,10 @@ pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
 
+plperc =
+#(define-music-function (parser location one two) (ly:music? ly:music?)
+#{ <<  { \stemDown $one \stemNeutral } \new DrumVoice { \stemUp $two } >> #})
+
 parallel=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{ << 
@@ -473,6 +477,10 @@ ordin =
 meno =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"meno" $music #})
+
+jet =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"jeté" $music #})
 
 #(define (make-txt-span music t)
  (set! (ly:music-property music 'elements)

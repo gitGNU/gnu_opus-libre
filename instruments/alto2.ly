@@ -807,7 +807,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     mi1 r2 r4 | R1*7/4 |
     
     %%% Presto subito %%%
-    \tt {red8 red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
+    \tt {red8\upbow red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
     \tt {red red red red fad} \tt {red red red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |

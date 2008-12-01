@@ -70,7 +70,7 @@ PrologueViolonUn = { \ViolonUn
     <re lab'>8 r4 | \pizz dod,8 r re, dod' r4 |
     dod8 r re, mi' r4 | lad8 r4 |
     lad8 r4 | \arco lad8 r4 |
-    si8 r \ind #"jeté" si32 si16. |
+    si8 r \jet si32 si16. |
     r8 si r |
     <fa re'>16 <fa re'> <fa re'> sold, r8 |
     <fa're'>16 <fa re'> <fa re'> sold, r8 |
@@ -749,14 +749,14 @@ ActeDeuxSceneUnBisViolonUn = { \ViolonUn
     <mi sol>2. r2 |
     \repeat tremolo 16 {lab32*5/4 sol}
     \repeat tremolo 16 {lab32 sol} lab16 sol do si |
-    <mi,! mib' mib>2. <mi reb' mib>2 <mi! mib'mib> <mi reb'mib>2. |
-    r4 <mi! mib' mib>2. <mi reb' mib>4~ <mi reb' mib>2 <mi mib' mib>2. |
-    <sib' mib lab>2. <sib mib lab>2 <mi,! sib' mib> <sib' mib lab>2. |
+    <fab mib' mib>2. <fab reb' mib>2 <fab mib'mib> <fab reb'mib>2. |
+    r4 <fab mib' mib>2. <fab reb' mib>4~ <fab reb' mib>2 <fab mib' mib>2. |
+    <sib mib lab>2. <sib mib lab>2 <fab sib mib> <sib mib lab>2. |
     r4 <sib mib lab>2. r4 |
     <lab reb sib'>2. <sib mib lab>2 <lab reb sib'> <sib mib lab>2 <reb sib'>4 |
     <sol, mib' dob'>2. <reb' sib'>2 <mib dob'> <reb sib'>2. |
     r4 <sol, mib' dob'>2 <reb' sib'>4 <mib dob'> |
-    <lab, fa' re'>1*5/4~ <fa re'>2. r2 | R1*5/4*5
+    <lab, fa' re'>1*5/4~ <fa' re'>2. r2 | R1*5/4*5
     
     %%% Moderato assai %%%
     r2 r4 sol,1~\CaV sol1*7/4~\CaV sol~\CaV
@@ -772,7 +772,56 @@ ActeDeuxSceneUnBisViolonUn = { \ViolonUn
     \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
     \t {sol8 mi sol} \t {mi sol mi} sol4 R2. |
     \t {sol8 mi sol} \t {mi sol mi} sol4 |
-    sol16 la sol mi re4 
+    sol16 la sol mi re4 sol16 la sol mi re8 sol16 la sol mi re8 r sol16 la sol mi re8 |
+    sol16 la sol mi re4 sol16 la sol mi re8 sol16 la sol mi re8 r sol16 la sol mi re8 |
+    sol16 la sol mi re4 sol16 la sol mi re8 sol16 la sol mi re8 r4 \t {la'8 sol mi} |
+    sol1 r2 r4 |
+    \repeat volta 2 { la1 sol2. la sol1 R1*7/4 }
+    sol1 r2 r4 | R1*7/4
+    
+    %%% Presto subito %%%
+    \tt {sol8\upbow mi mi mi mi} \tt {sol mi mi mi mi} \tt {sol mi mi mi mi} |
+    \tt {sol mi mi mi mi} \tt {sol mi mi mi mi} \tt {sol mi mi sol mi} |
+    \tt {sol mi mi sol mi} \tt {sol mi mi sol mi} \tt {sol mi mi sol mi} |
+    \tt {sol mi mi sol mi} \tt {sol mi lab sol mi} \tt {sol mi lab sol mi} |
+    \tt {sol mi lab sol mi} \tt {sol mi lab sol mi} \tt {sol mi lab sol mi} |
+    sol4 r mi\glissando sol r fa\glissando sol r mi\glissando sol r mi\glissando |
+    sol r mi\glissando sol r fa\glissando sol r fa\glissando |
+    la r la8 re, sib' re, |
+    si'4 r sold\glissando si r la\glissando do r la\glissando dod r si\glissando |
+    red r \jet mi32 mi8.. r8 | sol32 sol8.. r8 sol sold sold la la |
+    <sol, mib' sib'>8. <mib' sib'>16 <mib sib'>8 <sol, mib' sib'>~ |
+    <sol mib' sib'>16 <mib' sib'>16 <mib sib'>8 <mib sib'> |
+    <mib sib'>2 r4 |
+    <sol, mib' sib'>8. <mib' sib'>16 <mib sib'>8 <sol, mib' sib'>~ |
+    <sol mib' sib'>16 <mib' sib'>16 <mib sib'>8 <mib sib'> |
+    <la, mi' dod'>2 r4 |
+    <sol mi'? sib'>8. <mi' sib'>16 <mi sib'>8 <sol, mi' sib'>4 |
+    <mi' mi'>8. <mi mi'>16 <mi mi'>8 <lad mi'>~ |
+    <lad mi'>16 <lad mi'> <lad mi'>8 <lad mi'> |
+    <mi mi'>4 r8 \pizz red' r4 | sol, r2 |
+    r8 \arco la'\glissando sib, r \pizz fad4 |
+    R2. r8 \arco la'\glissando sib, r \pizz fa!4 |
+    R2. r8 \arco la'\glissando fad, r \pizz sib,4 |
+    R2. r8 \arco la''\glissando sib, r \pizz re,4 | R2.
+    \repeat tremolo 8 {fad,32 re}
+    \repeat tremolo 4 {sol mib} |
+    \repeat tremolo 8 {lad fad}
+    \repeat tremolo 4 {si sol} | si8:16 re: mib: fad: sol: lad: |
+    <lad fad'>2. R2. R2 R4. R2 R1*5/8 R2.
+    
+    %%% Tempo I %%%
+    r4 r8 sol,16 la sol mi re mi sol la re mi |
+    <dod la'>4 r2 <dod la'>4 r <dod la'> r <dod la'> r2 |
+    <dod la'>4 r r8 <dod la'> r2 | <si, lad'>4 r1\fermata |
+    R1*5/4
+    \flaut sol'1*5/4~\CaV sol~\CaV sol~\CaV sol~\CaV sol~\CaV sol~\CaV |
+    sol~\CaV sol2.\CaV r2 | R1*5/4*3
+    \ordin sold2. la2 sold la2.~ la2. r2 |
+    sold2. la2 sold la2.~ la2. r2 |
+    sold8 la sold mib re mib sold la sold mib |
+    re mib sold la re, mib sold la re, mib |
+    sold la re, mib sold r r2 |
   }
 }
 
