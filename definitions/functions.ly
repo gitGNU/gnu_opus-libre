@@ -202,6 +202,13 @@ arpeggUp =
      (ly:music-property m 'tweaks)))
    m)
 
+arpeggDown =
+#(let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'arpeggio-direction -1
+     (ly:music-property m 'tweaks)))
+   m)
+
 plak =
 #(let* ((m (make-music 'ArpeggioEvent)))
    (ly:music-set-property! m 'tweaks
@@ -308,6 +315,14 @@ hideNote = {
 noTuplet = {
 \once \override TupletBracket #'transparent = ##t
 \once \override TupletNumber #'transparent = ##t
+}
+
+oneStemDown = {
+\once \override Stem #'direction = #DOWN
+}
+
+oneStemUp = {
+\once \override Stem #'direction = #UP
 }
 
 sk = \set Score.skipTypesetting = ##t

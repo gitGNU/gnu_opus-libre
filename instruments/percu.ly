@@ -1292,7 +1292,7 @@ ActeDeuxSceneUnBisPercus = <<
       %%% Presto subito %%%
       \tt {fa,8 mib' solb do, mib} \tt {fa, mib' solb do, mib}
       \tt {lab, mib' solb do, mib} | \tt {fa, mib' solb do, mib}
-      \tt {lab, mib' solb do, solb'} \tt {do sib' reb solb, sib} |
+      \tt {lab, mib' solb do, solb'} \tt {do, sib' reb solb, sib} |
       \tt {do, sib' reb solb, sib} \tt {mib, sib' reb solb, sib}
       \tt {do, sib' reb solb, reb'} | \tt {fad, mi' sol dod, mi}
       \tt {red, mi' sol dod, mi} \tt {fad, mi' sol sib, sol'} \clef treble |

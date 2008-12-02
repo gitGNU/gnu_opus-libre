@@ -319,12 +319,9 @@ ActeUnSceneUnBisMesures = {
       \mark \markup \did \ActeUnSceneUnBisA
       \tempo "Piu vivo" 4 = 112
             R1
-  \time 3/4
-            R2.
-  \time 4/4
-            R1
-  \time 3/4
-            R2.*5
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.*5
       \mark \markup \did \ActeUnSceneUnBisB
             R2.
       \startText #"molto rit."
@@ -339,8 +336,7 @@ ActeUnSceneUnBisMesures = {
       \stopTxt
       \mark \markup \did \ActeUnSceneUnBisD
             R1*2
-  \time 2/4
-            R2    \bar "||" %%FIXME: too close
+  \time 2/4 R2    \bar "||" %%FIXME: too close
       \mark \markup \did \ActeUnSceneUnBisE
       \tempo "Largo" 4 = 66
             R2*3

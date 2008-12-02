@@ -904,12 +904,12 @@ ActeDeuxSceneUnBis = {
 
     \new ChoirStaff
       <<
+        \new Staff \new Voice = "tenor" \ActeDeuxSceneUnBisTenor
+        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneUnBisTenorTexte }
         \new Staff \new Voice = "barytonUn" \ActeDeuxSceneUnBisBarytonUn
         \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneUnBisBarytonUnTexte }
         \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneUnBisBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneUnBisBarytonDeuxTexte }
-        \new Staff \new Voice = "tenor" \ActeDeuxSceneUnBisTenor
-        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneUnBisTenorTexte }
       >>
 
     \new TopLine \ActeDeuxSceneUnBisMesures
@@ -1015,13 +1015,13 @@ ActeDeuxSceneDeux = {
     poet = \OperaLivret
     composer = \OperaPartition
     tagline = \OperaNotice
-  } %
+  } %{
   \score {
     \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %{
+  } %
   \score {
     \Ouverture
     \header {
@@ -1087,25 +1087,25 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %}
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneUn
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {

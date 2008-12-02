@@ -82,7 +82,7 @@ PrologueFluteUn = { \FluteUn
     
     %%% Vivo %%%
     la4\sfz) r | R2*8
-    re,,,2~ re~ re~ re4 r | R2*17
+    re,,,2\mp~ re~ re~ re4 r | R2*17
     r4 mi''8->\pp r |
   }
 }

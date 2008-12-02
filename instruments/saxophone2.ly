@@ -33,8 +33,8 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     
     %%% Entrée du baryton 2 %%%
     re,8.->\f dod16~-> dod8 mi-> r4 | R2*2 | reb,2--\p r4 | R2
-    la'4--\mp\< si-- fa'8-> sol~-> |
-    \ten sol2~ sol2.~\p sol8 r r4 | R2. R2 |
+    la'4--\mp\< si-- fa'8->\! sol~-> |
+    \ten sol2~\p sol2.~ sol8 r r4 | R2. R2 |
     sib,2~--\pp sib4 r \t {lab8\fsubito( fa mib} |
     
     %%% Tempo giusto %%%

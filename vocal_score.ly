@@ -272,7 +272,6 @@ Entracte = {
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md"    \EntracteMainDroite
-        \new Dynamics << \PianoDynamics \EntracteNuances >>
         \new StaffPiano = "mg"    \EntracteMainGauche
       >>
     }
@@ -394,13 +393,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \PrologueTitre
     }
-  } %}
+  } %
   \score {
     \ActeUnSceneUn
     \header {
       piece = \ActeUnSceneUnTitre
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneUnBis
     \header {
@@ -448,25 +447,25 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %
+  } %}
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %
+  } %{
   \score {
     \ActeDeuxSceneUn
     \header {
       piece = \ActeDeuxSceneUnTitre
     }
-  } %}
+  } %
   \score {
     \ActeDeuxSceneUnBis
     \header {
       piece = \Separateur
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneDeux
     \header {

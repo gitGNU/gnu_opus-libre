@@ -84,7 +84,7 @@ PrologueClarinetteDeux = { \ClarinetteDeux
     r4 la8-.\f fad'4-> la,8-. fad'4-> | re'4.-> fad,8-. re'4-> |
     
     %%% Vivo al fine %%%
-    re,,4---> r | R2*3
+    re,,4--->\sfz r | R2*3
     r4 r8 fad-.->\mp | sol-.-> r r4 |
     r8 la->\<\mf la-> do-> re->\! r r4 | R2*22
     r4 mi,8->\pp r |

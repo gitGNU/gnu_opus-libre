@@ -97,6 +97,7 @@ includeLayout = \layout {
     \override TextSpanner #'dash-fraction = #0.3
     \override TextSpanner #'dash-period = #0.9
     \override LyricText #'self-alignment-X = #-0.5
+    \override DynamicText #'self-alignment-X = #-.4
     markFormatter = #format-mark-box-letters
     subdivideBeams = ##t
     beatLength = #(ly:make-moment 1 8)

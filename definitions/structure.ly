@@ -59,9 +59,8 @@ ActeUnSceneQuatreTitre = \markup {
 
 EntracteTitre = \markup {
   \fill-line {
-    \center-column {\fontsize #10 \EntracteTitreTexte " "}
-    \Couronne " "
-  }
+    \center-column {\fontsize #10 \EntracteTitreTexte " "
+    \Couronne " "}}
 }
 
 ActeDeuxSceneUnTitre = \markup {
