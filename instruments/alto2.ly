@@ -19,47 +19,47 @@ PrologueAltoDeux = { \AltoDeux
     
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1
-    mi,2~| mi4 r | r16 \ind #"sul ponti." red8.:32
+    \ten mi,2~\f| mi4 r | r16 \ind #"sul ponti." red8.:32\mf
     red8 r r4 |
     red'2~ \startTrillSpan red4 \stopTrillSpan r |
-    \ind #"pos.nat" mi,2.~ mi2~ mi |
-    mi2.:32~ mi2:32 mi2:32
-    dod2. | <do! sol'>4 <do sol'>~| <do sol'>8 sol' \t {sol sol fa}|
+    \ind #"pos.nat" mi,2.~\mp mi2~ mi |
+    mi2.:32~\p mi2:32 mi2:32
+    dod2. | <do! sol'>4 <do sol'>~| <do sol'>8\< sol' \t {sol--( sol-- fa--)}|
     
     %%% Entrée du baryton 2 %%%
-    mi16 mi mi mi mi mi mi mi mi mi mi mi |
+    mi16\fp mi mi mi mi mi mi mi mi mi mi mi |
     mi mi mi mi mi mi mi mi |
-    mi mi mi mi mi mi mi mi |
-    mi4. r8 sid sid |
-    r sid sid r | r sid sid r sid r |
-    r sid sid sid | dod dod r dod dod r | r dod r4 |
-    red8 red r red red r | red red r red |
-    mi2~ mi2 r4 |
+    mi\< mi mi mi mi mi mi mi |
+    mi4.\f r8 sid-> sid-. |
+    r sid-> sid-. r | r sid-> sid-. r sid-> r |
+    r sid-. sid-. sid-. | dod-> dod-. r dod-> dod-. r | r dod-.-> r4 |
+    red8->\mf red-. r red-> red-. r | red-> red-. r red-. |
+    mi2~--\p mi2 r4 |
     
     %%% Tempo giusto %%%
-    <re' re>8 r re,16 re re re |
+    <re' re>8\sfz r re,16\p re re re |
     re re re re re re re re |
     re re re re re re re re |
     re re re re re re re re |
     re re re re re re re re |
     mib mib mib mib fa8 r \clef treble |
-    la16 dod la re mi re fad re |
-    mib sol mib fa la fa do' lab |
-    re4 r2 \clef alto |
-    r16 mi,, sol sib do sol sib do mib do mib fad |
-    re4 r2 |
-    r16 fad, fad fad fad4:32 r4 |
+    la16\<( dod la re mi) re( fad re) |
+    mib( sol mib fa) la( fa do' lab) |
+    re4\f r2 \clef alto |
+    r16 mi,,\<( sol sib) do( sol sib do) mib( do mib fad) |
+    re4\f r2 |
+    r16 fad,\mp fad fad fad4:32 r4 |
     r16 mib mib mib mib4:32 r4 |
     r16 do do do do4:32 r4 | \clef treble
     r16 lab' lab lab lab lab lab lab si si si si |
-    mi dod mi sol la sol la do mib do mib fa |
-    re4 r \clef alto re,,4~ | re re2 |
-    dod1~ dod4 r R2 R2-\fermataMarkup
+    mi( dod mi sol) la( sol la do) mib( do mib fa) |
+    re4\f r \clef alto re,,4~---> | re re2---> |
+    \ten dod1~---> dod4 r R2 R2-\fermataMarkup
     
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
-    R2*4 R2.*6 lab'2.~ lab |
-    R2.*3 \clef treble r4\fermata \pizz sol''8 |
+    R2*4 R2.*6 lab'2.~\pp lab |
+    R2.*3 \clef treble r4\fermata \pizz sol''8\p |
     
     %%% Andantino %%%
     sol, r sol' sol, r4 |
@@ -69,63 +69,63 @@ PrologueAltoDeux = { \AltoDeux
     sol, r sol r sol sol, |
     lab' lab, r sol' sol, r \clef alto
     sol r4 | R4.
-    r4 si8 r red, r |
+    r4 si8\p r red, r |
     r4 si'8 r red, r |
     r4 si'8 r fad r |
     r4 si8 r fad r |
     r sold r r do r r sib r |
-    \arco solb mib reb | do4.~ do~ do4 r8 |
-    solb' mib reb | do4.~ do~ do4 r8 |
-    solb' mib reb | do4.~ do4 r8 |
-    fad4 mib8~ mib dod4 |
+    \arco solb\>( mib reb) | \ten do4.~\pp do~ do4 r8 |
+    solb'( mib reb) | do4.~ do~ do4 r8 |
+    solb'( mib reb) | do4.~ do4 r8 |
+    fad4\< mib8~ mib dod4 |
     
     %%% A tempo %%%
-    \t {re16 re' re} re'8 r |
-    sold,,4:32 \t {sold16 sol fa} |
-    \t {re re' re} re'8 r |
+    \t {re16\sfp re' re} re'8 r |
+    sold,,4:32\mp \t {sold16-> sol-> fa->} |
+    \t {re\sfp re' re} re'8 r |
     sold,,4:32~ sold16 r |
-    re8:32 fa: sol: <lab reb>4.~<lab reb>~
-    <lab reb>8 r16 <lab reb> \t {<lab reb> <lab reb> <lab reb>} |
-    re,8 r16 lab' lab lab |
-    sol'8 r16 lab, lab lab | sol'8 r16 lab, lab lab |
-    sol'8 r16 lab, lab lab | si'8 \clef treble r16 fa fa fa |
-    mi'8 r16 fa, fa fa | mi'8 r16 fa, fa fa |
-    mi'8 r16 fa, fa fa | mi'8 r16 fa, fa fa |
-    mi' la,? do? mib fad la | fa8 r16 si,, si si |
-    mi'8 r16 si, si si | mi'8 r16 sold,, sold sold |
-    mi''8 r16 sold,, sold sold | mi''8 r16 re, re re \clef alto |
-    r8 r16 la la la | r8 r16 dod, dod dod |
-    si'8 sib lab | fa4.~ fa~ fa8 r4 | R4.*3
-    \t {re16 re re} \t {mi mi mi} \t {fa fa fa} |
+    re8:32\< fa: sol: <lab reb>4.~\f <lab reb>~
+    <lab reb>8 r16 <lab reb> \t {<lab reb>-> <lab reb> <lab reb>} |
+    re,8\sfz r16 lab'-.\mf lab-. lab-. |
+    sol'8-.-> r16 lab,-. lab-. lab-. | sol'8-.-> r16 lab,-. lab-. lab-. |
+    sol'8-.-> r16 lab,-. lab-. lab-. | si'8-.-> \clef treble r16 fa-. fa-. fa-. |
+    mi'8-.-> r16 fa,-. fa-. fa-. | mi'8-.-> r16 fa,-. fa-. fa-. |
+    mi'8-.-> r16 fa,-. fa-. fa-. | mi'8-.-> r16 fa,-. fa-. fa-. |
+    mi'-> la,? do?\< mib fad la | fa8->\f r16 si,,\< si si |
+    mi'8\! r16 si,\< si si | mi'8\! r16 sold,,\< sold sold |
+    mi''8\! r16 sold,,\< sold sold | mi''8\! r16 re,-. re-. re-. \clef alto |
+    r8 r16 la-.\mf la-. la-. | r8 r16 dod,-.\mp dod-. dod-. |
+    si'8\f\> sib lab | \ten fa4.~\p fa~ fa8 r4 | R4.*3
+    \t {re16\pp re re} \t {mi mi mi} \t {fa fa fa} |
     \t {mi mi mi} \t {fa fa fa} \t {sol sol sol}|
-    \t {sib sib sib} \t {do do do} \t {reb reb reb}
+    \t {sib\< sib sib} \t {do do do} \t {reb reb reb}
     \t {mib mib mib} \t {mi mi mi} |
-    mi8 \clef treble r16 mi' mi mi mi8 r16 mi mi mi |
-    re8 r16 si si si r8 r16 sold sold sold \clef alto |
+    mi8\ff \clef treble r16 mi' mi mi mi8-> r16 mi mi mi |
+    re8-> r16 si-.\mf si-. si-. r8 r16 sold-.\> sold-. sold-.\! \clef alto |
     re8 r16 \pizz sold, r2 |
     
     %%% Adagio %%%
-    R1*4 R1. \arco \ind #"flaut." mi1:32 mi4 r |
-    R1*3 R1. \simile red1:32 mi4 r |
-    R1*2 r8 do~ \t {do mi si'} \t {la mi' re} |
+    R1*4 R1. \arco \ind #"flaut." mi1:32\pp\> mi4\! r |
+    R1*3 R1. \simile red1:32\pp( mi4) r |
+    R1*2 r8 do~\mp( \t {do mi si')} \t {la\>( mi' re)} |
     
     %%% Valse %%%
-    sol,2.~ sol4~ \t {sol8 si sib} dod mi |
-    sold si r2 \clef treble | re2. la4 fad mi do' r2 |
-    do4 sold si mib, | sol4 \clef alto mib,8 re sol fad \clef treble |
-    mib' re \t {si' sib fad'} |
-    r si, sib r r sib lab r r lab fa r |
-    mi4 \ttt {si'16 do si do si do} si4 r |
+    sol,2.~\pp sol4~ \t {sol8 si\<( sib)} dod( mi) |
+    sold( si\!) r2 \clef treble | re2.\pp( la4 fad) mi( do') r2 |
+    do4\<( sold\!) si\<( mib,\!) | sol4 \clef alto mib,8\p( re) sol( fad) \clef treble |
+    mib'( re) \t {si'\<( sib fad'\!)} |
+    r si,\pp( sib) r r sib( lab) r r lab( fa) r |
+    mi4 \ttt {si'16\<( do si do si do} si4\!) r |
     R1 R2. \clef alto |
-    \pizz do,,4 r2 | fad4 r2 | do4 r2 | fad4 r2 |
+    \pizz do,,4\mp r2 | fad4 r2 | do4 r2 | fad4 r2 |
     mi4 r sol r |
-    \arco <do, la'>4 <do la'>8. <do la'>16 <do la'>8
-    <do la'>~ <do la'>16 <do la'> <do la'>8 |
-    <do la'>8. <do la'>16 <do la'>8 <do la'>~
-    <do la'>16 <do la'> <do la'>8 |
+    \arco <do, la'>4->\mf <do la'>8.-> <do la'>16 <do la'>8-.
+    <do la'>~-> <do la'>16 <do la'> <do la'>8-. |
+    <do la'>8.-> <do la'>16 <do la'>8 <do la'>~->\<
+    <do la'>16 <do la'> <do la'>8-. |
     
     %%% Vivo al fine %%%
-    re16 re re re re re re re |
+    re16\fp re re re re re re re |
     re re re re re re re re |
     re re re re re re re re |
     re re re re re re re re |
@@ -137,15 +137,15 @@ PrologueAltoDeux = { \AltoDeux
     re re re re re re re re |
     re re re re re re re re |
     re re re re re re re re |
-    re re re re re re re re |
-    re re re re re re re re |
+    re\> re re re re re re re |
+    re\mp re re re re re re re |
     re re re re re re re re |
     re re re re re re re re |
     re re re re r4 |
     re16 re re re r4 |
-    re8 re r4 |
-    re8 re r4 |
-    R2*10 r4 \pizz mi |
+    re8-. re-. r4 |
+    re8-. re-. r4 |
+    R2*10 r4 \pizz mi\mp |
   }
 }
 
