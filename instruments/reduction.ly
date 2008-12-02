@@ -2287,7 +2287,56 @@ EntracteMainDroite = {
       s2 r4 mi,, sold2 \t{r4 mi8} \t{sold4 sol8} si2
       \t{r4 sol8} si4 mi, sold sol! \t{si sib8}
     } >>
-    <re re'>4 r4 r2 |
+    
+    %%% Vivo subito %%%
+    <re re'>4 r4 r2 | R1
+    r4 <la, sold'>8 sold' <sold, la'>4 r |
+    r2 r8 <sol la> re'8. do16 | <mib fa>2. r4 |
+    R1*2 \clef bass |
+    \oneStemUp \repeat tremolo 8 {re,16 re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \repeat tremolo 2 {re, re'}
+    \repeat tremolo 2 {mib, re'}
+    \repeat tremolo 2 {fa, re'}
+    \repeat tremolo 2 {lab re} \clef treble |
+    r4 <re' sold dod>\arpeggDown <re sold dod>\arpeggDown r |
+    r <re sold dod>\arpeggDown r <re sold dod>\arpeggDown |
+    r <re sold dod>\arpeggDown r <re sold dod>\arpeggDown |
+    r <re sold dod>\arpeggDown <re sold dod>\arpeggDown r |
+    r <la re sold>\arpeggDown r <mib la re>\arpeggDown |
+    r <sib mib lab>8 lab' <sib, mib la>4 r \clef bass |
+    \oneStemUp \repeat tremolo 8 {re,16 re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} \clef treble |
+    r4 r8 sold16 la sold mi re mi sold4~ | sold2. r4 |
+    dod,16 fad sold si mi4 r <fad, sold>16 si re mi |
+    la4 \clef bass re,,,16 re' re, re'
+    \repeat tremolo 4 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} \clef treble |
+    r8 sold' <re dod'>8. sold16 <re dod'>4 r |
+    r8 sold' mi mib sol fad fa sold |
+    r4 <lab,,, reb fa>8. <lab reb fa>16 <si mi la>2 |
+    <sold si mi>4. <la do fa> <si sol'>4 |
+    <do mib lab> <dod mi la> <re fa sib> <red fad si> |
+    <mi sol do>8 mi'16 fad re'4 \clef bass
+    \repeat tremolo 4 {re,,,16 re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} \clef treble |
+    r4 <re' dod'>8 <re dod'> <dod re'>4 r |
+    <la, sib dod>2.\laissezVibrer r4 |
+    r8 mib''' sol,4 r8 si mib, <sib, re> |
+    <sib re> fad'' sib, re fad, mi'' sold, <do,, mi> |
+    <reb fa> do'' mi, <reb, fa> <re fad> sol' si, mib |
+    sol, <mib sol> <mib sol> <mib sol> <la, sold'> <la sold'> <sold la'>4 |
+    r8 <la sold'> <la sold'> <sold la'> r4 <la sold'>8 <sold la'> |
+    <re' re'>4 <re' re'> r <re re'> r <re re'> r |
+    r sold,,16 dod re fad sold si re mi sold mi sold la |
+    
+    %%% Fugato %%%
+    <re, re'>4 \clef bass <red,, sol re'!>2.~ <sol re'>2. r4 \clef treble |
+    r re'2~ <re fad dod'>2.\laissezVibrer si'2 |
+    <dod mid sold>1\laissezVibrer <re, fad dod'>2.\laissezVibrer \clef bass |
+    <red, re'!>2 sol4 \clef treble <sol re' fad>2. r4 |
+    <re' fad dod'>2 <si fa' sib>4 r R2. |
+    <reb solb do>2 <sib fa' la>4 R1 |
   }
 }
 
@@ -2302,11 +2351,62 @@ EntracteMainGauche = {
     << {sold'8 sold \t{sold sold sold}} \\ sold,2 >>
     <sold sold'>2~
     << {sold'8 sold \t{sold sold sold16 sol32 fa}} \\ sold,2 >>
-    <re' re'>4
+    
+    %%% Vivo subito %%%
+    
+    %%FIXME: Issue #318 all over again.    
+    <re' re'>4 re'16 re' re, re'
+    \repeat tremolo 4 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    r4 re,, r re r re r2 | R1
+    \oneStemUp \repeat tremolo 8 {re'16 re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    r4 <re,, mib> r <re mib> r re r2 |
+    \oneStemUp \repeat tremolo 8 {re'16 re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    re,4 re, r re r re r2 |
+    \oneStemUp \repeat tremolo 8 {re'16 re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    re,4 re, r re r re r2 |
+    \oneStemUp \repeat tremolo 8 {re16 re'} |
+    re, re' re re re re re re si re re re re re re re |
+    dod re re re re re re re sold, re' re re re re re re |
+    fad, re' re re re re re re mib, re' re re re re re re |
+    fa,! re' re re re re re re do! re re re re re re re |
+    sib re re re re re re re sol, re' re re re re re re |
+    la re re re re re re re mi, re' re re re re re re |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    \repeat tremolo 6 {re, re'} |
+    \oneStemUp \repeat tremolo 8 {re, re'} |
+    
+    %%% Fugato %%%
+    \pl mi,1\laissezVibrer {red'8 red mi mi mi mi mi mi}
+    red <mi, red'> \t {<mi mi'> mi mi} <mi mi'> mi' mi mi |
+    red <mi, red'> \t {<mi mi'> mi mi} <mi mi'> mi' |
+    \pl mi,2. {red'8 red mi mi mi mi} |
+    mi mi \t {<mi, mi'> mi mi} |
+    \pl {mi2. r4 r mi2}
+    {red'8 red red red red red red red red red red red red red}
+    \pl {mi,2 r4 mi2. r4}
+    {mi'8 mi mi mi mi mi red red red red red red red red}
+    \pl {mi, mi mi mi mi mi mi mi} {red'2 <sol, do>4 r}
+    mi8 mi mi mi mi mi |
+    \pl {mi mi mi mi} <lab re!>2 <si fad'>8 mi, |
+    mi mi mi mi mi mi mi mi |
   }
-}
-
-EntracteNuances = {
 }
 
 ActeDeuxSceneUnMainDroite = {

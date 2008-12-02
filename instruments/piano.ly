@@ -1257,13 +1257,13 @@ EntractePiano = { \Piano
     sold,2*1/4\laissezVibrer
     sold'8 \t {sold sold sold}
     sold2\laissezVibrer |
-    sold,,2*1/4\laissezVibrer
-    sold' \t {sold sold sold}
+    sold,2*1/4\laissezVibrer
+    sold'8 \t {sold sold sold}
     sold2\laissezVibrer |
     r8 <sold,sold'>
     \t {<sold sold'><sold sold'><sold sold'>} |
     <sold sold'>2 sold2*1/4\laissezVibrer
-    <sold'sold'>8
+    <sold' sold'>8
     \t {<sold sold'><sold sold'><sold sold'>} |
   }
 }
@@ -1357,8 +1357,222 @@ ActeDeuxSceneUnPiano = { \Piano
 ActeDeuxSceneUnBisPiano = { \Piano
   \PianoDeuxMains
   \relative {
+    R1 R2. R2 R1*5/4*6 \clef bass |
+    r1 mi,,4 <red sold> r r2 mi4 |
+    <red sold> r sol <mi si'> r |
+    r2 mi4 <red sold> sol | <mi si'> r sib' r <sib re> |
+    <la fad'> r <re fa> <dod la'> r | <mid fad dod'> r1 |
+    R1*5/4*8 \clef treble <sol la mib' fad>4 r2 <sol la mib' fad>4 r |
+    <sol la mib' fad> r <sol la mib' fad> r2 |
+    <sol la mib' fad>4 r r8 <sol la mib' fad> r2 | <re' do'>4 r1 |
+    R1*5/4*6 <lab re fa sol lab>1*5/4\laissezVibrer \arpeggio
+    R1*5/4*11 \clef bass <re, fad dod'>4 r1 | R1*5/4-\fermataMarkup
+    
+    %%% Boum %%%
+    R1*5/4*13 | \clef treble
+    <sol' sib mib>8 \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <fab' lab reb> \mg <fa, sib re> \md
+    <fab' lab reb> \mg <fa, sib re> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <fab' lab reb> \mg <fa, sib re> \md
+    <fab' lab reb> \mg <fa, sib re> \md
+    <fab' lab reb> \mg <fa, sib re> \md |
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <fab' lab reb> \mg <fa, sib re> \md |
+    <fab' lab reb> \mg <fa, sib re> \md
+    <fab' lab reb> \mg <fa, sib re> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md
+    <sol' sib mib> \mg <mib, lab dob> \md |
+    <sib'' mib lab> \mg <mi,,,, mi'>2*1/4\laissezVibrer \md
+    <sib'''' mib lab>8 \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md |
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md |
+    <sib'' mib> \mg <mib,, lab> \md
+    <sib'' mib> \mg <mib,, lab> \md
+    <sib'' mib> \mg <mib,, lab> \md
+    <sib'' mib> \mg <mib,, lab> \md
+    <sib'' mib> \mg <mib,, lab> \md |
+    <reb'' fa sib> \mg \stemDown <mi,,,, mi'>2*1/4\laissezVibrer \stemNeutral \md
+    <reb'''' fa sib>8 \mg <lab,, reb fa> \md
+    <reb'' fa sib> \mg <lab,, reb fa> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md |
+    <reb'' fa sib> \mg <lab,, reb fa> \md
+    <reb'' fa sib> \mg <lab,, reb fa> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <sib'' mib lab> \mg <sib,, mib lab> \md
+    <reb'' fa sib> \mg <lab,, reb fa> \md
+    <mib''' lab dob> \mg \stemDown <mi,,,,! mi'!>2*1/4\laissezVibrer \stemNeutral \md
+    <mib'''' lab dob>8 \mg <sol,,, sib mib> \md
+    <mib''' lab dob> \mg <sol,,, sib mib> \md
+    <reb''' fa sib> \mg <lab,, reb fa> \md
+    <reb'' fa sib> \mg <lab,, reb fa> \md |
+    <mib''' lab dob> \mg <sol,,, sib mib> \md
+    <mib''' lab dob> \mg <sol,,, sib mib> \md
+    <reb''' fa sib> \mg <lab,, reb fa> \md
+    <reb'' fa sib> \mg <lab,, reb fa> \md
+    <reb'' fa sib> \mg <lab,, reb fa> \md |
+    <mib''' lab dob> \mg <sol,,, sib mib> \md
+    <mib''' lab dob> \mg <sol,,, sib mib> \md
+    <mib''' lab dob> \mg <sol,,, sib mib> \md
+    <reb''' fa sib> \mg <lab,, reb fa> \md
+    <mib''' lab dob> \mg <sol,,, sib mib> \md |
+    <fa''' sib re> \mg \stemDown <mi,,,, mi'>4*1/2\laissezVibrer \stemNeutral \md
+    <fa'''' sib re>8 \mg <sold,,, dod> \md
+    <fa''' sib re> \mg \stemDown <mi,,,, mi'>2*1/4\laissezVibrer \stemNeutral \md
+    <fa'''' sib re>8 \mg <sold,,, dod> \md
+    <fa''' sib re> \mg <dod,, sold'> \md |
+    <fa'' sib> \mg mi,,, \md
+    <fa''' sib> \mg <dod,, sold'> \md
+    fa'' \mg <sold,, dod> \md <dod sold'>2\laissezVibrer |
+    r1 <red sold>4\laissezVibrer | R1*5/4
+    <dod sold'>1*5/4\laissezVibrer | r4 <dod sold'>1\laissezVibrer |
+    r2 <dod lad'>2.\laissezVibrer |
+    
+    %%% Moderato assai %%%
+    R1*7/4*7 \clef bass
+    r4 \acciaccatura do,8 reb4 \acciaccatura sold8 la4 | R1
+    r4 \acciaccatura fad8 sol4 \acciaccatura re'8 mib4 | R2
+    r4 \acciaccatura si,8 do4 \acciaccatura sol'8 lab4 |
+    r <si do sol'>2\arpeggio |
+    r4 \acciaccatura si,8 do4 \acciaccatura sol'8 lab4 |
+    r <red, sold si>2\arpeggio |
+    r4 \acciaccatura si8 do4 \acciaccatura sol'8 lab4 |
+    r \acciaccatura fad8 sol4 \acciaccatura la8 sib4 |
+    r \acciaccatura red,8 mi4 \acciaccatura si'8 do4 |
+    r <sol lab mi'>2\arpeggio | R2. \clef treble |
+    <re' la' re>1\arpeggio \laissezVibrer r2 r4 | R1*7/4*2 \clef bass |
+    r4 \acciaccatura fa,8 solb4 \acciaccatura dod8 re4 |
+    r <dod, re la'>\arpeggio r |
+    r \acciaccatura fa8 solb4 \acciaccatura dod8 re4 |
+    r <la re fa>\arpeggio r |
+    r \acciaccatura fa8 solb4 \acciaccatura dod8 re4 |
+    r \acciaccatura lad8 si4 \acciaccatura red8 mi4 |
+    r \acciaccatura la,8 sib4 \acciaccatura fa'8 fad4 |
+    R1*7/4*4 \clef treble |
+    \repeat volta 2 { <dod mi la>1 <sib re sol?>2.
+    <dod mi la> <sib re sol>1 R1*7/4 }
+    <sib re sol>1*7/4\arpeggio \laissezVibrer R1*7/4
+    
+    %%% Presto subito %%%
+    \tt {<mi sol>8 \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <red fad> <re, fa> <red' fad> \md } |
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <red fad> <re, fa> <red' fad> \md } |
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <red fad> <re, fa> <red' fad> \md } |
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <red fad> <re, fa> <red' fad> \md } |
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <re, fa> <red' fad> <red fad> \md }
+    \tt {<mi' sol> \mg <red, fad> <red fad> <re, fa> <red' fad> \md } |
+    
+    %%% Tempo giusto %%%
+    <mi' sol>4 r <mi sol>8 fad, | <mi' sol>4 r <fa lab> |
+    <mi sol> r <mi sol>8 fad, | <mi' sol>4 r <mi sol>8 fad, |
+    <mi' sol>4 r <mi sol>8 fad, | <mi' sol>4 r <fa lab> |
+    <mi sol> r8 fad, <fa' lab>4 | <re la'>4 r sol,8 re' la' sib |
+    <mi, si'>4 r8 dod <fad si> dod | <sold' si>4 r <la do>8 re, |
+    <fa do'>4 r <la do> <lad dod>8 red, r4 <si' re> <do mib> r R4. |
+    r8 <lab re sol>~ \t {<lab re sol> <lab re sol> <lab re sol>} |
+    \t {<la red sold> <la red sold> <la red sold>}
+    \t {<sib mi la> <sib mi la> <sib mi la>} |
+    <sol do sib'>4 <re' re'>8 <fad fad'> <re re'> <fa fa'> <dod dod'> |
+    <fad, fad'> r r2 |
+    r4 <re' re'>8 <fad fad'> <dod dod'> <fa fa'> <re re'> |
+    <fad, fad'> r r2 | r8 <re' re'> <red red'> <mi mi'> <fa fa'> |
+    <fad fad'> \t {la16 do sib} mib8 \t {fa,16 lab solb} |
+    si8 dod,16 mi re sol |
+    <la, la'>4 r2 | R2.*3 \clef bass
+    r8 mib, sol do mi, lab | mib' lab, si mi, sol sib |
+    mib mi, sol do mib, si' | sol' mib, sol do sol' si, |
+    mib mi, lab sol do si \clef treble | mi mib sol lab si do |
+    r4 \t {si,8 mib sol} \t {re fad sib} |
+    \t {sib, re fad} \t {si, mib sol} \t {fad, sib re} |
+    \t {mib sol si} \t {do mi sold} \t {la dod fa} |
+    <la, la'>2.\laissezVibrer R2. R2 R4. R2 R1*5/8 R2.
+    
+    %%% Tempo I %%%
+    R1
+    <solb, fa'>4 r2 <solb fa'>4 r <solb fa'> r <solb fa'> r2 |
+    <solb fa'>4 r r8 <solb fa'> r2 \clef bass | <lab,, do>4 r1\fermata
+    R1*5/4*21
   }
-  \relative {
+  \relative { \clef bass
+    R1 R2. R2 R1*5/4*6
+    r1 \ottava #-1 si,,4 <sol? do> r r2 si4 |
+    <sol do> r do <sold red'> r |
+    r2 si4 <sol do> do <sold red'> \ottava #0
+    r \loco la' r <fa la> <dod sib'> r <sib' dod> <fa re'> r |
+    <re la' sib> r1 | R1*5/4*8
+    <re do'>4 r2 <re do'>4 r <re do'> r <re do'> r2 |
+    <re do'>4 r r8 <re do'> r2 | <sold si fa' sol!>4 r1 |
+    R1*5/4*3
+    do1*5/4 re fa2~ fa8 sol~ sol2 |
+    <do, fa>1*5/4\laissezVibrer \arpeggio R1*5/4*11
+    \ottava #-1 <mi,, fa'>4 \ottava #0 r1 | R1*5/4-\fermataMarkup
+    
+    %%% Boum %%%
+    R1*5/4*13
+    s1*5/4*14
+    R1*5/4*5
+    
+    %%% Moderato assai %%%
+    R1*7/4*7
+    fa'4 r2 R1 si4 r2 R2 |
+    mi,4 r2 red'4 r2 | mi,4 r2 sol4 r2 |
+    mi4 r2 | fad4 r2 sol4 r2 | la4 r2 r4 do2 |
+    <fa, mib'>1\arpeggio r2 r4 R1*7/4*2 |
+    sib4 r2 fad4 r2 | sib4 r2 dod4 r2 |
+    sib4 r2 do4 r2 re4 r2 |
+    R1*7/4*4 |
+    \repeat volta 2 {<la re fa>1 <si? mi sold>2.
+    <la re fa> <si mi sold>1 R1*7/4}
+    <si mi sold>1*7/4\arpeggio R1*7/4
+    
+    %%% Presto subito %%%
+    s1.*5
+    re,4 mib' fa, | re mib' fa, | re mib' fa, |
+    re mib' fa, | re mib' fa, | re mib' fa, |
+    mib' sib si' | mi,, si' R2 |
+    <fad dod'>4 sold' r | <fad, dod'> <si la'> r |
+    <sold fad'> re' red | <sold, fad'> fad la | fa4 r R4. |
+    <mi' la red>4~ \t {<mi la red>8 <mi la red> <mi la red>}
+    \t {<fa sib mi> <fa sib mi> <fa sib mi>}
+    \t {<fad si mid> <fad si mid> <fad si mid>} |
+    <mib,, mib'>2\laissezVibrer R4. R2. |
+    <mib mib'>2\laissezVibrer R4. R2. |
+    <mib mib'>2*5/4\laissezVibrer |
+    <la la'>2\laissezVibrer R4. <la' la'>4 r2 | R2.*3
+    <sol, sol'>2.\laissezVibrer s
+    <sol sol'>\laissezVibrer s |
+    <sol sol'>\laissezVibrer s |
+    <sol sol'>\laissezVibrer s s |
+    <sold sold'>2.\laissezVibrer R2. R2 R4. R2 R1*5/8 R2.
+    
+    %%% Tempo I %%%
+    R1
+    <lab' sol'>4 r2 <lab sol'>4 r <lab sol'> r <lab sol'> r2 |
+    <lab sol'>4 r r8 <lab sol'> r2 | \ottava #-1
+    <re,, sol dod>4 r1\fermata |
+    R1*5/4*21
   }
 }
 

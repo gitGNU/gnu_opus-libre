@@ -36,6 +36,10 @@ pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
 
+plperc =
+#(define-music-function (parser location one two) (ly:music? ly:music?)
+#{ <<  { \stemDown $one \stemNeutral } \new DrumVoice { \stemUp $two } >> #})
+
 parallel=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{ << 
@@ -198,6 +202,13 @@ arpeggUp =
      (ly:music-property m 'tweaks)))
    m)
 
+arpeggDown =
+#(let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'arpeggio-direction -1
+     (ly:music-property m 'tweaks)))
+   m)
+
 plak =
 #(let* ((m (make-music 'ArpeggioEvent)))
    (ly:music-set-property! m 'tweaks
@@ -304,6 +315,14 @@ hideNote = {
 noTuplet = {
 \once \override TupletBracket #'transparent = ##t
 \once \override TupletNumber #'transparent = ##t
+}
+
+oneStemDown = {
+\once \override Stem #'direction = #DOWN
+}
+
+oneStemUp = {
+\once \override Stem #'direction = #UP
 }
 
 sk = \set Score.skipTypesetting = ##t
@@ -474,6 +493,10 @@ ordin =
 meno =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"meno" $music #})
+
+jet =
+#(define-music-function (parser location music) (ly:music?)
+#{ \ind #"jeté" $music #})
 
 #(define (make-txt-span music t)
  (set! (ly:music-property music 'elements)

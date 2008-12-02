@@ -26,7 +26,7 @@ PrologueClarinetteUn = { \ClarinetteUn
     
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1 | \ten mi,2~--\fp mi4 r | mi'2 r4 |
-    fa,2~\p\<( fa\> mi2.~) \ten mi4\! r R2 | \tt {sol16\mf( lab dob sib dob} \ten re2~)|
+    fa,2~\p\<( fa\> mi2.~\!) \ten mi4 r R2 | \tt {sol16\mf( lab dob sib dob} \ten re2~)|
     re4 r | R2 \tt {fad,16( sol la do sib} mib4.\>) red8 |
     mi4\p r | r r8 \t {si16\<( re mi}|
     la2--->\f) r4 | r mi r sib'\p( | solb'2) r4 | R2 r2 mi,8-> mi~->|
@@ -101,7 +101,7 @@ PrologueClarinetteUn = { \ClarinetteUn
     la'4.-> re,8-. la'4-> |
     
     %%% Vivo al fine %%%
-    re,4---> r R2*3 r4 r8 sol,,-.->\mp la-> r r4 |
+    re,4--->\sfz r R2*3 r4 r8 sol,,-.->\mp la-> r r4 |
     r8 do->\mf\< do-> fa-> sol->\! r r4 | R2*22
     r4 mi'8->\pp r |
   }

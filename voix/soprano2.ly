@@ -139,7 +139,7 @@ ActeUnSceneQuatreSopranoDeux = { \SopranoDeux
 
 EntracteSopranoDeux = { \SopranoDeux
   \relative {
-    R2*9 R1*20
+    R2*9 R1*16
     r4 r8 re'16 re re4 r16 re re re | re4 r8 re re re re8. re16 |
     dod8 re dod r \t { r re mib} re la |
     sold la dod red \t { sol4 re sol} |

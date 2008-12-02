@@ -807,7 +807,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     mi1 r2 r4 | R1*7/4 |
     
     %%% Presto subito %%%
-    \tt {red8 red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
+    \tt {red8\upbow red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
     \tt {red red red red fad} \tt {red red red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
@@ -823,8 +823,8 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     <dod, do'! sol'>4 <dod do' sol'>8. <dod do'>16
     <dod do'!>8. <dod do'>16 <dod do'>8 |
     <dod la' mi'>2 r4 |
-    <dod do'! sol'> <dod do' sol'>8. <dod do'>16
-    <dod do'!>8. <dod do'>16 <dod do'>8 |
+    <dod do' sol'> <dod do' sol'>8. <dod do'>16
+    <dod do'>8. <dod do'>16 <dod do'>8 |
     <do sol' mib' sib'>2 r4 |
     <dod lad'>8 <dod lad'>8. <dod lad'>16 <dod lad'>8 <dod lad'> |
     <mib do'>4 <mib do'>8. <mib do'>16 <mi do'>8. <sol mi' si'> |
