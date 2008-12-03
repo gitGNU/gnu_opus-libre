@@ -18,87 +18,90 @@ PrologueContrebasse = { \Contrebasse
   \relative {
     %%% Introduction %%%
     
-    \partial 4 r4 R2.*3 R1 | mi,,,2 r8 mi' \t {mi mi mi}
-    mi,2.~|mi2 r8 mi' \t {mi mi mi} | mi,2.~| mi4 \pizz mi | 
-    r8 mi \t {mi mi mi}| \arco mi2. ~ | mi4 \pizz mi |
-    r8 mi \t {mi mi mi}| \arco mi2. ~ | mi4 mi'~| mi8 mi \t {re re re} |
-    dod4 r2 | \t {\pizz dod4 re mi} sol4 r | 
-    \arco dod,2 r8 sol r dod r sol | dod4 dod sol8 dod~|
-    dod4 r | sol dod sib8 dod~| dod sol dod4 | dod sol8 dod r sib | 
-    r dod4 sol8 | sib2~ sib2 r4 |
+    \partial 4 r4 R2.*3 R1 | mi,,,2\f r8 mi'-- \t {mi--( mi-- mi--)}
+    mi,2.~|mi2 r8 mi'-- \t {mi--( mi-- mi--)} | mi,2.~\mp| mi4 \pizz mi | 
+    r8 mi--\mf\> \t {mi-- mi-- mi--}| \arco mi2.\mp ~ | mi4 \pizz mi |
+    r8 mi \t {mi mi mi}| \arco mi2. ~ | mi4 mi'~| mi8 mi\< \t {re--( re-- re--)} |
+    dod4--->\f r2 | \t {\pizz dod4--\mf re-- mi--} sol4-- r | 
+    \arco dod,2--->\f r8 sol-. r dod-. r sol-. | dod4---> dod---> sol8-. dod~--->|
+    dod4 r | sol-- dod-- sib8-. dod~--| dod sol-. dod4-- | dod-- sol8-. dod-. r sib-. | 
+    r dod4\>( sol8) | sib2~--\p sib2 r4 |
     
     %%% Tempo giusto %%%
-    re8 re' re, re' |
-    re, re' re, re' |
-    re, re' re, re' |
-    re, re mib re | fa re lab' fa |
+    re8\sfz re'-. re,-. re'-. |
+    re,-. re'-. re,-. re'-. |
+    re,-. re'-. re,-. re'-. |
+    re,-- re mib re | fa re lab' fa |
     sib lab si dod | dod, r r4 | R2
-    re4 re re | lab2 r4 |
-    re4. re | fad,2. mib' do |
-    sib2 sol4~ sol mi'2 | re2.~ re4 r8 sol mi re |
-    dod1~ dod4 r R2 R2-\fermataMarkup |
+    re4--\f re-- re-- | lab2-- r4 |
+    re4.-- re-- | fad,2.\mp mib' do |
+    sib2\< sol4~ sol mi'2 | \ten re2.~\f re4 r8 sol--\ff mi-- re-- |
+    \ten dod1~---> dod4 r R2 R2-\fermataMarkup |
     
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
-    sol2~ sol~ sol~ sol~ sol2.~ sol~sol~ sol~
-    sol2 r4 | \repeat tremolo 12 {sol32 lab} sol'2. R2.*4
+    sol2~\pp sol~ sol~ sol~ sol2.~ sol~sol~ sol~
+    sol2 r4 | \repeat tremolo 12 {sol32\p\<( lab\!} sol'2.) R2.*4
     R4.
     
     %%% Andantino %%%
-    \pizz <sol lab>8\plak r4 | <sol lab>8 r4 | R4.*2
+    \pizz <sol lab>8\p\plak r4 | <sol lab>8 r4 | R4.*2
     <sol lab>8 r4 | <sol lab>8 r4 |
     <sol lab>8 r4 | <sol lab>8 r4 |
     R4.*6
-    mi,4 r8 <sol sol'>4\plak r8 |
+    mi,4\p r8 <sol sol'>4\plak r8 |
     mi4 r8 <sol sol'>4\plak r8 |
     red'4 r8 | <fad, fad'>4\plak r8 |
     red'4 r8 | <fad, fad'>4\plak r8 |
     mi4 r8 | <mi mi'>4\plak r8 |
-    re'4 r8 \arco solb8 mib reb do4.~ do~ do4 r8 |
-    solb'8 mib reb | do4.~ do~ do4 r8 |
-    solb'8 mib reb | do4.~ do4 r8 |
-    fad4 mib8~ mib dod4 |
+    re'4 r8 \arco solb8\>( mib reb) \ten do4.~\pp do~ do4 r8 |
+    solb'8( mib reb) | do4.~ do~ do4 r8 |
+    solb'8( mib reb) | do4.~ do4 r8 |
+    fad4\< mib8~ mib dod4 |
     
     %%% A tempo %%%
-    re8 r4 | \pizz sold,8 si dod |
-    re8 r4 | sold,8 si dod re fa sol |
-    lab4 r8 | \arco lab4 fa8~ fa mib4 |
-    re4.~ re~ re4 r8 |
-    mib4 re8 fa,4.~ fa~ fa4 r8 |
-    fa'4. re do si4.~ si4 r8 |
-    sib4.~ sib~ sib~ sib4 r8 | R4.
-    si8 sib lab |
-    fa4.~ fa~ fa8 r4 | R4.*3
-    fa8 fa fa fa4.:8 fa4 r8 r16 fad' fad fad |
-    re4 mib re | fa8. lab fa8 mib re | do2 mib4 |
+    re8\sfz r4 | \pizz sold,8--\mf( si-- dod--) |
+    re8\sfz r4 | sold,8\mf( si dod) re( fa sol) |
+    lab4-- r8 | \arco lab4--->\f fa8~---> fa mib4---> |
+    \ten re4.~---> re~ re4 r8 |
+    mib4( re8) \ten fa,4.~ fa~ fa4 r8 |
+    fa'4.\mf re\< do si4.~\fmolto si4 r8 |
+    \ten sib4.~ sib~ sib~ sib4 r8 | R4.
+    si8--\f\>( sib-- lab--) |
+    fa4.~\mp fa~ fa8 r4 | R4.*3
+    fa8\pp fa fa fa4.:8 fa4---> r8 r16 fad'\mf fad fad |
+    re4--\f mib-- re-- | fa8.--( lab--) fa8--\>( mib-- re--) | do2\mf mib4--\> |
     
     %%% Adagio %%%
-    la,1~\CaV la~\CaV la\CaV |
-    sib1~ sib1.~ sib4 r r1 |
+    la,1~\p\CaV la~\CaV la\CaV |
+    sib1~\p sib1.~ sib4 r r1 |
     la1~\CaV la\CaV
-    sib~ sib1.~ sib4 r r1 |
-    la1~\CaV la\CaV sib2. |
+    sib~\p sib1.~\pp sib4 r r1 |
+    la1~\CaV la\CaV sib2.\p |
     
     %%% Valse %%%
-    sol2.~ sol4 r dod~ | dod2 r4 |
-    sol2 r4 | dod2 r4 | sol2 r4 |
+    sol2.~\pp sol4 r dod~-- | dod2 r4 |
+    sol2-- r4 | dod2-- r4 | sol2-- r4 |
     \pizz sib4 r <mi, mi'>\plak r | sol4 r2
     R2 R2.*2 R1
-    r4 \arco do2 r4 | fad,2 r4 | do'2 r4 | fad,2 r4 |
-    do'2 r4 | \pizz fad,4 r2 | <mi mi'>4\plak r | <sol sol'>\plak r |
-    \arco do1 do4 do4. sold8 |
+    r4 \arco do2--\pp r4 | fad,2-- r4 | do'2-- r4 | fad,2-- r4 |
+    do'2-- r4 | \pizz fad,4 r2 | <mi mi'>4\plak r | <sol sol'>\plak r |
+    \arco do1\mf do4 do4. sold8 |
     
     %%% Vivo al fine %%%
-    <re' re>8 lab' sib fa <re re> sib' dod sold |
-    <re re> lab' sib fa <re re> sib' dod sold |
-    <re re> dod mi fad <re re> fa lab <re, re> |
-    sol sib <re, re> lab' si <re, re'> la' mib |
-    re4 <re mib'> <re dod'> <re mib'> |
-    <re dod'> <re mib'> <re dod'> <re mib'> |
-    <re re'> re re re |
-    re re re re re re' re, re' re, r |
+    <re' re>8\sfz lab'-. sib-. fa-. 
+    <re re>-> sib'-. dod-. sold-. |
+    <re re>-> lab' sib fa 
+    <re re>-> sib' dod sold |
+    <re re>-> dod mi fad 
+    <re re>-> fa lab <re, re>-> |
+    sol sib <re, re>-> lab' si <re, re'>-> la' mib |
+    re4-> <re mib'>---> <re dod'>---> <re mib'>---> |
+    <re dod'>---> <re mib'>---> <re dod'>---> <re mib'>---> |
+    <re re'>\> re re\p re |
+    re re re re re-- re'-- re,-- re'-- re,-- r |
     \pizz re r re r R2*9
-    r4 mi,
+    r4 mi,\mp
   }
 }
 
