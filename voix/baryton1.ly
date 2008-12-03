@@ -237,7 +237,25 @@ EntracteBarytonUn = {
     sol mi8 r16 mi mi8. mi16 | red4 red sol2 |
     mi8 r sol8. sol16 mi2 | sol8 r sol8. sol16 mi4~ |
     mi sol8 r16 sol sol8. sol16 | lab4 lab mi2 |
-    sol8 r sol8. sol16 mi2 | sol8 r 
+    sol8 r sol8. sol16 mi2 | sol8 r sol8. sol16 mi4~ |
+    mi sol8 r16 sol sol8. sol16 | si4 si sol2 |
+    mi8 r sol8. sol16 mi2 sol8 r sol8. sol16 mi4~ |
+    mi sol red8 r16 sol sol8. sol16 |
+    red4 red sol2 la8 r mi8. mi16 sol2 |
+    sib8 r sol8. sol16 mi4~ | mi sol8 r16 sol lab8. lab16 |
+    sold4 sold la2 |
+    re,4 r8 re16 re re4 r16 re re re |
+    re4 r8 re re re re8. re16 |
+    
+    %%% Stretto %%%
+    re8 re r4 r2 | R1 r2 r4 r8 mi |
+    sold4 \t {sol8 mi sol} si4 sol8 dod, |
+    si' si sol sib re4 mi, | R1*2
+    r2 r8 la16 la sold8 sib16 sib |
+    la4 r8 la16 la sold4 r16 sib sib sib |
+    la4 r8 sold sold sold la4 r la r la |
+    
+    %%% Noir %%%
   }
 }
 

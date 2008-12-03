@@ -549,7 +549,7 @@ ActeUnSceneDeuxMesures = {
 InterludeDeuxMesures = {
   \time 4/4
       \mark \markup \init-did \InterludeDeuxA
-      \tempo "Andante con moto" 4 = 66
+      \tempo "Andante tranquillo" 4 = 66
             R1
   \time 3/4 R2.
   \time 2/4 R2
@@ -634,7 +634,7 @@ ActeUnSceneTroisMesures = {
 ActeUnSceneTroisBisMesures = {
   \time 4/4
       \mark \markup \init-did \ActeUnSceneTroisBisA
-      \tempo "Andantino" 4 = 66
+      \tempo "Andante tranquillo" 4 = 66
             R1*9
       \mark \markup \did \ActeUnSceneTroisBisB
             R1*8
@@ -689,7 +689,7 @@ ActeUnSceneTroisTerMesures = {
 
 InterludeTroisMesures = {
   \time 4/4
-      \tempo "Andantino" 4 = 52
+      \tempo "Andante tranquillo" 4 = 52
             R1
   \time 3/4
             R2.

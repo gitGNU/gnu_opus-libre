@@ -68,7 +68,8 @@ PrologueAltoDeux = { \AltoDeux
     sol, r sol' sol, r sol' |
     sol, r sol r sol sol, |
     lab' lab, r sol' sol, r \clef alto
-    sol r4 | R4.
+    %%FIXME: grace synchronization bug
+    \acciaccatura s16 sol r4 | R4.
     r4 si8\p r red, r |
     r4 si'8 r red, r |
     r4 si'8 r fad r |

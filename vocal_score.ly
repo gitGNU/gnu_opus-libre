@@ -42,7 +42,7 @@
 
 \paper {
   \includePaper
-  %% FIXME : bug to report.
+  %% FIXME : a bug to be reported.
   systemSeparatorMarkup = ""
 }
 
@@ -405,25 +405,25 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \Separateur
     }
-  } %
+  } %}
   \score {
     \InterludeUn
     \header {
       piece = \Interlude
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneDeux
     \header {
       piece = \ActeUnSceneDeuxTitre
     }
-  } %
+  } %}
   \score {
     \InterludeDeux
     \header {
       piece = \Interlude
     }
-  } %
+  } %{
   \score {
     \ActeUnSceneTrois
     \header {
@@ -447,13 +447,13 @@ ActeDeuxSceneTrois = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %}
+  } %
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneUn
     \header {

@@ -292,7 +292,7 @@ EntracteBarytonDeux = { \BarytonDeux
     r4 r8 re,16 re mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 |
     fa8 re r4 r r8 lab' | reb mib, r16 fa fa fa lab8 re, r4 |
     r8 r16 fa sib8[ r16 lab16] reb8[ r16 si] mi4 ~|
-    mi4. mi8 r mi reb mi | si4 la8 do lab fa \t{lab mib fa} |
+    mi4. mi8 r mi dod mi | si4 la8 do lab fa \t{lab mib fa} |
     re4 r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
     mib8 re r4 r2 | R1*6
     r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
@@ -308,8 +308,11 @@ EntracteBarytonDeux = { \BarytonDeux
     re4 r r2 | R1 R2.*2 r4 dod8. dod16 |
     sib'2 mi,8 r dod8. dod16 | sib'2 mi,8 r16 dod |
     dod8. dod16 do4 do | sib'2 mi,8 r dod8. dod16 |
+    sib'2 sol8 r dod,8. dod16 sol8 r16 dod, |
+    dod8. dod16 do4 do | sib'2 dod,8 r dod8. dod16 |
     sib'2 dod,8 r dod8. dod16 | sib'2 dod,8 r16 dod |
-    dod8. dod16 do4 do | sib'2 mi,8 r
+    do8. do16 si4 si | fa'2 dod8 r do8. do16 |
+    si'2 do,8 r do8. do16 | si'2 do,8 r |
   }
 }
 

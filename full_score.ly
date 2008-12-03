@@ -1087,13 +1087,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \ActeUnSceneQuatreTitre
     }
-  } %}
+  } %
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %{
+  } %
   \score {
     \ActeDeuxSceneUn
     \header {
