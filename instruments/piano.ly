@@ -17,8 +17,8 @@ ProloguePiano = { \Piano
   \PianoDeuxMains
   \relative {
     \partial 4 r4 R2.*3 R1
-    mi2\laissezVibrer r4 \clef bass mi,4\laissezVibrer|
-    r4 mi2\laissezVibrer | r8 \tt {mi,32 fa mi' mi fa} red'4\laissezVibrer|
+    mi2\rfz \laissezVibrer r4 \clef bass mi,4--\laissezVibrer|
+    r4 mi2->\laissezVibrer | r8 \tt {mi,32( fa mi' mi fa} red'4)\laissezVibrer|
     r4 r8 \t {mi,,16 mi' mi} | mi'2.\laissezVibrer |
     R2*2 | %%FIXME: \laissezVibrer isn't printed.
     << \makeClusters { \ind #"dans les cordes" sol,16 la si do re2 } \\
@@ -26,24 +26,25 @@ ProloguePiano = { \Piano
     R2*2 |
     << \makeClusters { \simile sol,16 la si do mi2 } \\
     {\hideNotes s4 mi2 \laissezVibrer \unHideNotes} >>
-    R2*2 |<la, re sol>2 r4 | R2*2 |
-    << {\voiceTwo <si re mi>2\laissezVibrer} \\ 
-    {\voiceFour r8 \voiceOne <sid, dod>8 <sid dod> <sid dod>}>>
-    <sid dod>8 <sid dod> <sid dod> <sid dod>
+    R2*2 |<la, re sol>2\f r4 | R2*2 |
+    << {\voiceTwo <si re mi>2\f\laissezVibrer} \\ 
+    {\voiceFour r8 \voiceOne \st {<sid, dod>8 <sid dod> <sid dod>}}>>
+    \st {<sid dod> <sid dod> <sid dod> <sid dod>
     <sid dod> <sid dod> <sid dod> <sid dod>
     <sid dod> <sid dod> <sid dod> <sid dod>
     <sid dod> <sid dod> <sid dod> <sid dod>
-    <dod re>8 <dod re> <dod re> <dod re>
     <dod re> <dod re> <dod re> <dod re>
-    <re mib> <re mib> <red mi>8 <red mi>
+    <dod re> <dod re> <dod re>\> <dod re>
+    <re mib> <re mib> <red mi>\mf <red mi>
     <red mi> <red mi> <red mi> <red mi>
-    <red mi> <red mi> <red mi> <red mi>
-    r8 <mi fa> <mi fa>4 | <mi fa>8 <mi fa>4 <mi fa>8 <mi fa>4 \clef treble |
+    <red mi>\> <red mi> <red mi> <red mi>}
+    r8\mp <mi fa>-. <mi fa>4-- |
+    <mi fa>8-. <mi fa>4-- <mi fa>8-. <mi fa>4-- \clef treble |
     
     %%% Tempo giusto %%%
-    re'8 r re re s2*2 R2*3 s2*2
-    \pl <re re'>4 re''4 r2 | R2.*2 \clef bass |
-    <sib,,,sib'>2. <dod dod'> <mi mi'> \clef treble |
+    re'8\p r re-.\p re-. s2*2 R2*3 s2*2
+    \pl <re re'>4 re''4-. r2 | R2.*2 \clef bass |
+    <sib,,,sib'>2.-. <dod dod'>-. <mi mi'> \clef treble |
     <lab lab'>2 <mi' do'>8 <sol la> |
     <la fa'> <do mib> <do lab'> <mib fa> <mib si'> <fa lab> |
     <re re'>4 r8 <mi sold re'>4.~ <mi sold re'>4 r8 <re fad si re>4. |
@@ -148,7 +149,7 @@ ProloguePiano = { \Piano
   }
   \relative {
     \partial 4 r4 R2.*3 R1
-    <mi,, mi'>2\laissezVibrer r4 <mi, mi'>4\laissezVibrer r4 <mi mi'>2\laissezVibrer |
+    <mi,, mi'>2\rfz\laissezVibrer r4 <mi, mi'>4\laissezVibrer r4 <mi mi'>2\laissezVibrer |
     r4 <mi mi'>\laissezVibrer | r4 <mi mi'>\laissezVibrer mi'4 mi,2\laissezVibrer |R2*2 |
     r4 <mi mi'>2\laissezVibrer | R2*2
     r4 <mi mi'>2\laissezVibrer | R2 r4 <re' re'> |

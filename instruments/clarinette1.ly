@@ -119,34 +119,34 @@ OuvertureClarinetteUn = { \ClarinetteUn
 ActeUnSceneUnClarinetteUn = { \ClarinetteUn
   \relative {
     R2*2 R2. R2*2 R2. |
-    r8 do \t {do do do~} do2~ do r4 | 
-    r8 do \t {do do do~} do2~ do r4 |
-    \t { fa,4 solb sib} do2~ do8 r r2 | 
-    \t {solb4 sib do} mib2~ mib8 r r2 |
-    \t {la,8 mib' si'} \t {solb' si, mib,} \t {la,4 mib'8} si'8 r |
-    \t {la,8 mib' si'} \t {solb' si, mib,} la,8 r |
-    \t {la8 mi'! sol!} mib'8 r  \t {mi,! sol do} \t {solb' do, mi,} |
+    r8 do\p \t {do-- do do~} do2~ do r4 | 
+    r8 do \t {do-- do do~} do2~ do r4 |
+    \t { fa,4\p( solb sib} do2~) do8 r r2 | 
+    \t {solb4( sib do} mib2~) mib8 r r2 |
+    \t {la,8\p( mib' si')} \t {solb'( si, mib,)} \t {la,4( mib'8} si'8) r |
+    \t {la,8( mib' si')} \t {solb'( si, mib,)} la,8 r |
+    \t {\simile la8 mi'! sol!} mib'8 r  \t {mi,! sol do} \t {solb' do, mi,} |
     \t {la,8 mi'! sol!} mib'8 r \t {mi,! sol do} |
-    \t {fa, lab mi'} \t {la! mi lab,} \t {do,4 lab'8} reb8 r |
+    \t {fa,\mp lab mi'} \t {la! mi lab,} \t {do,4 lab'8} reb8 r |
     \t {fa, lab mi'} \t {la mi lab,} fa r |
     \t {do4 lab'8} reb r \t {fa, lab mi'} \t {la mi lab,} |
     \t {do,4 lab'8} reb r \t {do, lab' mi'} |
-    do'2~ do8 r fa,4 | do'2 fa,4 | sib2~ sib8 r reb,4 | sib'2 solb4
-    do r2 | \ttt {r16 red,, mi fad la si} do2~ |
-    do8 \t {mi16 fa sol} sib8 r r4 | R2.*2
-    r16 la, mib la re la mib la re4 |
-    \tttt {re,16 mib re mib re mib re}
+    \ten do'2~\p do8 r fa,4\<( | do'2\mp) fa,4\<( | sib2~\mp) sib8 r reb,4\<( | sib'2\mf) solb4(
+    do\p) r2 | \ttt {r16 red,,\p( mi fad la si} do2~) |
+    do8 \t {mi16( fa sol} sib8-.) r r4 | R2.*2
+    r16 la,-.\mf mib-. la-. re-. la-. mib-. la-. re4-- |
+    \tttt {re,16\pp( mib re mib re mib re}
     \t {mib re mib} sib'32 dob sib dob
-    \ttt {sib16 dob sib dob sib dob} |
-    sol'1~ sol2 r4 |
+    \ttt {sib16\< dob sib dob sib dob)} |
+    \ten sol'1~\f sol2 r4 |
     
     %%% Ad libitum %%%
-    R1 R2.*2 sib,,2. r4 | R2.*2
+    R1 R2.*2 sib,,2.--\pp r4 | R2.*2
     
     %%% Agitato %%%
-    lab1~ lab2 r | R1*2
-    fa'4 sol2 fa4 sib2 re,4 r |
-    re2. r4 r2 | R1*2 si16 re8 si16 fad'2. r2 |
+    \ten lab1~\f lab2 r | R1*2
+    fa'4-.\mf sol2-- fa4-. sib2->( re,4) r |
+    re2.--\mp r4 r2 | R1*2 si16 re8 si16 fad'2. r2 |
     R1*2 r2 r4 r8 fad | si8. solb'16 sib2. r2 |
     R1*2 mib,,,1 r2 | R1.*2 r4 mi'!2 r4 | r mi2 r4 r2 |
     sol'1. fa1 r2 | R1.

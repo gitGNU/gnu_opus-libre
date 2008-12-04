@@ -89,27 +89,27 @@ OuvertureFluteDeux = { \FluteDeux
 ActeUnSceneUnFluteDeux = { \FluteDeux
   \relative {
     R2*2 R2. R2*2 R2. |
-    do2~ do do'4. r8 r4 | do,2~ do sol'?4. r8 r4 |
-    r8 do, \t { do do do} do4. r8 | reb'4. r8 r4 |
-    r8 do, \t { do do do} do4. r8 | mib'4. r8 r4 |
-    mib1 si2 r4 | sol1 mi!2 r4 |
-    mi'1 | reb2 r4 | reb2. lab4~| lab8 r lab'4 mi |
-    \t {fa4 lab,8} \t {re, lab' fa'}
-    \t {do'4 lab,8} \t {re, lab' fa'}
-    \t {do'4 lab,8} \t {re, lab' fa'} \t {do' fa, lab,} |
-    solb8 r \t {solb reb' sib'}
-    \t {mi4 reb,8} \t {solb, reb' sib'}
-    \t {mi4 solb,8} \t {reb4 solb8} sib4 |
-    do r2 | R2.*6 do,1~ do2 r4 |
+    \ten do2~\p do do'4.--\pp r8 r4 | do,2~--\p do sol'?4.--\pp r8 r4 |
+    r8 do,\mp \t { do-- do do} do4. r8 | reb'4.-- r8 r4 |
+    r8 do, \t { do-- do do} do4. r8 | mib'4.-- r8 r4 |
+    mib1\pp( si2) r4 | sol1( mi!2) r4 |
+    mi'1\p( | reb2) r4 | reb2.( lab4~)| lab8 r lab'4\<( mi) |
+    \t {\ind #"sostenuto" fa4\mp( lab,8)} \t {re,( lab' fa'}
+    \t {do'4) lab,8} \t {re,( lab' fa'}
+    \t {do'4) lab,8} \t {re,( lab' fa')} \t {do'( fa, lab,} |
+    solb8\mp) r \t {solb( reb' sib'}
+    \t {mi4) reb,8} \t {solb,( reb' sib'}
+    \t {mi4\mf) solb,8} \t {reb4( solb8} sib4 |
+    do\p) r2 | R2.*6 \ten do,1~\ff do2 r4 |
     
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
     
     %%% Agitato %%%
-    re,1~ re2 r | R1*2
-    r2 lab''4 r | r do, r2 |
-    R1. r2 r4 \t {r8 re fad} |
-    sib4 r r2 | R1. R1
+    \ten re,1~\f re2 r | R1*2
+    r2 lab''4-.\mp r | r do, r2 |
+    R1. r2 r4 \t {r8 re( fad} |
+    sib4-.) r r2 | R1. R1
     r8 fad16 la do4 r2 | R1
     R1. R1*2 R1.*3 R1 R1.
     re1 re2 dod1 r2 | R1.

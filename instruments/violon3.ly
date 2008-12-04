@@ -124,17 +124,17 @@ PrologueViolonTrois = { \ViolonTrois
 ActeUnSceneUnViolonTrois = { \ViolonTrois
   \relative {
     R2*2 R2. R2*2 R2.
-    R2*2 \ind #"flaut." sol'4. r8 r4 |
+    R2*2 \ind #"flaut." sol'4.\pp r8 r4 |
     R2*2 <la, re>4. r8 r4 |
     R2*2 <sold' dod>4. r8 r4 |
-    R2*2 <do reb>4. r8 r4 |
-    mib,16 la, mib' si'~ si fad' \t {si, mib, la,}
-    mib' la, mib' si'~ si fad' \t {si, mib, la,} |
-    mib' la, mib' si'~ si fad' \t {si, mib, la,} mib' la, mib' si' |
+    R2*2 <do reb>4.--\mp r8 r4 |
+    mib,16\pp( la, mib' si'~ si fad'--) \t {si,( mib, la,)}
+    mib'( la, mib' si'~ si fad'--) \t {si,( mib, la,)} |
+    \simile mib' la, mib' si'~ si fad' \t {si, mib, la,} mib' la, mib' si' |
     mi, la, mi' do'~ do red \t {do mi, la,}
     mi' la, mi' do'~ do red \t {do mi, la,} |
     mi' la, mi' do'~ do red \t {do mi, la,} mi' la, mi' do' |
-    \ttt {do, lab' mi' mi lab, do,}
+    \ttt {do,\ppsempre lab' mi' mi lab, do,}
     \ttt {do lab' mi' mi lab, do,}
     \ttt {do lab' mi' mi lab, do,}
     \ttt {do lab' mi' mi lab, do,} |
@@ -146,37 +146,37 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     \ttt {fa reb' la' la reb, fa,} |
     \ttt {fa reb' la' la reb, fa,}
     \ttt {fa reb' la' la reb, fa,} fa8 r |
-    \ttt {sib,16 re lab' fa' lab, re,}
+    \ttt {sib,16\mp( re lab' fa' lab, re,}
     \ttt {sib re lab' fa' lab, re,}
     \ttt {sib re lab' fa' lab, re,}
-    \ttt {sib re lab' fa' lab, re,} |
+    \ttt {sib re lab' fa' lab, re,)} |
+    \ttt {sib( re lab' fa' lab, re,}
     \ttt {sib re lab' fa' lab, re,}
-    \ttt {sib re lab' fa' lab, re,}
-    \ttt {sib re lab' fa' lab, re,} |
-    \ttt {re solb reb' sib' reb, solb,}
+    \ttt {sib re lab' fa' lab, re,)} |
+    \ttt {\simile re solb reb' sib' reb, solb,}
     \ttt {re solb reb' sib' reb, solb,}
     \ttt {re solb reb' sib' reb, solb,}
     \ttt {re solb reb' sib' reb, solb,} |
-    \ttt {re solb reb' sib' reb, solb,}
-    \ttt {re solb reb' sib' reb, solb,}
-    \ttt {re solb reb' sib' reb, solb,} |
-    <do do'>4 <do do'> <do do'> |
+    \ttt {re\<( solb reb' sib' reb, solb,)}
+    \ttt {re( solb reb' sib' reb, solb,)}
+    \ttt {re( solb reb' sib' reb, solb,)} |
+    <do do'>4\f\downbow <do do'>\downbow <do do'>\downbow |
     reb8 mib fad sold la si
-    \t {mib,16 mib mib} \t {fad fad fad} \t {sold sold sold}
-    \t {la la la} \t {si si si} \t {re re re} |
-    <fad, fad'>4 <fad fad'> <fad fad'> |
+    \t {mib,16\fp\< mib mib} \t {fad fad fad} \t {sold sold sold}
+    \t {la la la} \t {si si si} \t {re re re\!} |
+    <fad, fad'>4\downbow <fad fad'>\downbow <fad fad'>\downbow |
     sol8 la do re red mid |
-    \t {la,16 la la} \t {do do do} \t {re re re}
-    \t {red red red} \t {mid mid mid} \t {sold sold sold} |
-    <fad, mid'>4 <fad do'>8 re' \t {red16 red red} \t {mid mid mid} |
-    <do, do'>1~ <do do'>2 r4 |
+    \t {la,16\< la la} \t {do do do} \t {re re re}
+    \t {red red red} \t {mid mid mid} \t {sold sold sold\!} |
+    <fad, mid'>4\downbow <fad do'>8-- re'-- \t {red16\< red red} \t {mid mid mid} |
+    \ten <do, do'>1~\fmolto <do do'>2 r4 |
     
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
     
     %%% Agitato %%%
-    re,1~ re~ re2 r | R1 sold,4 si2 sold4 si2 re4 r |
-    r4 dod8 dod re4 r r2 | R1*2
+    \ten re,1~\ff re~ re2 r | R1 sold,4\f\upbow si2 sold4 si2 re4-> r |
+    r4 dod8-.\mf dod-. re4-. r r2 | R1*2
     r4 la8 la sib4 r r2 | R1*3
     r4 dod r1 | R1*2 R1.*3
     r4 r8 mi16 mi red4 r |

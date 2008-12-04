@@ -104,32 +104,32 @@ ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
   \relative {
     R2*2 R2. R2*2 R2.
     R2*2 R2. R2*2 R2.
-    \t {r4 fa, solb} | sib2~ sib8 r r2 |
-    \t {mib,4 solb sib} | do2~ do8 r r2 |
-    \t {la'4 mib8} si' r \t {la, mib' si'} \t {solb' si, mib,} |
-    \t {la,4 mib'8} si' r \t {la, mib' si'} |
-    \t {mi, sol do} \t {solb' do, mi,} \t {la, mi' sol} mib' r |
+    \t {r4 fa,\p( solb} | sib2~) sib8 r r2 |
+    \t {mib,4( solb sib} | do2~) do8 r r2 |
+    \t {la'4\p( mib8} si') r \t {la,( mib' si')} \t {solb'( si, mib,)} |
+    \t {la,4( mib'8} si') r \t {la,( mib' si')} |
+    \t {\simile mi, sol do} \t {solb' do, mi,} \t {la, mi' sol} mib' r |
     \t {mi, sol do} \t {solb' do, mi,} la, r |
-    \t {do4 lab'8} reb r \t {fa, lab mi'} \t {la mi lab,} |
+    \t {do4\mp lab'8} reb r \t {fa, lab mi'} \t {la mi lab,} |
     \t {do,4 lab'8} reb r \t {do, lab' mi'} |
     \t {fa, lab mi'} \t {la mi lab,} \t {do,4 lab'8} reb r |
-    \t {fa, lab mi'} \t {la mi lab,} fa4~ |
-    fa2~ fa8 r lab4 | fa'2 lab,4 | reb2~ reb8 r solb,4 solb'2 re!4 |
-    do4 r2 | \tt {r16 lab, sib reb mib} mi2~ |
-    mi8 sold32 la si re mi8 r r4 | R2.*2
-    r8 sib,16 mib la mi, sib' mib la4 |
-    \ttt {fad,16 sol fad sol fad sol}
-    la32 sib la sib \t {re16 mib re} \tttt {mib re mib re mib re mib} |
-    do'1~ do2 r4 |
+    \t {fa, lab mi'} \t {la mi lab,} fa4~\< |
+    \ten fa2~\f fa8 r lab4\p\<( | fa'2\mp) lab,4\<( | reb2~\mp) reb8 r solb,4\<( solb'2\mf) re!4( |
+    do4\p) r2 | \tt {r16 lab,\p( sib reb mib} mi2~) |
+    mi8 sold32\<( la si re mi8-.\!) r r4 | R2.*2
+    r8 sib,16-.\mf mib-. la-. mi,-. sib'-. mib-. la4-- |
+    \ttt {fad,16\pp( sol fad sol fad sol}
+    la32 sib la sib \t {re16 mib re} \tttt {mib\> re mib re mib re mib} |
+    \ten do'1~\f) do2 r4 |
     
     %%% Ad libitum %%%
-    R1 si,2 la4~ | la sol2 | solb2. r4 |
-    la2 sol4~ | sol fa2 |
+    R1 si,2\p( la4~\> | la sol2 | solb2.--\pp) r4 |
+    la2\>( sol4~ | sol fa2\!) |
     
     %%% Agitato %%%
-    mi1~ mi2 r | R1*2
-    mi'4 re2 mi4 si2 do4 r |
-    re,2. r4 r2 | R1*2 fa16 reb8 solb16 fa?2. r2 |
+    \ten mi1~\f mi2 r | R1*2
+    mi'4-.\mf re2-- mi4-. si2->( do4) r |
+    re,2.--\mp r4 r2 | R1*2 fa16 reb8 solb16 fa?2. r2 |
     R1*2 r2 r4 r8 re' | do8. fa'16 si,?2. r2 |
     R1*2 mib,,1 r2 | R1.*2 r4 mi'!2 r4 | r mi2 r4 r2 |
     si'1. sib1 r2 | R1.

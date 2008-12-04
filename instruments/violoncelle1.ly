@@ -126,44 +126,44 @@ PrologueVioloncelleUn = { \VioloncelleUn
 
 ActeUnSceneUnVioloncelleUn = { \VioloncelleUn
   \relative {
-    do,,2 do'\CaV fad, r4 |
-    do2 do'\CaV fad,4 fad2 |
-    do2 do'\CaV fad,4. fad8 do' sol |
-    do,2 do'\CaV fad,2 si8 fad |
-    <do do'>2 do' fad,8 fad~ fad2 |
-    <do do'>2 <do do'> fad2~ fad8 fad' |
-    do16 fa, do' la'~ la mib' \t {la, do, fa,} fa2 |
-    do'16 fa, do' la'~ la mib' \t {la, do, fa,} \t {fa8 fa fa} |
+    do,,2--\pp( do'--)\CaV fad,-- r4 |
+    do2--( do'--)\CaV fad,4--( fad2--) |
+    do2--( do'--)\CaV fad,4.-- fad8-- do'--( sol--) |
+    do,2--( do'--)\CaV fad,2 si8--( fad--) |
+    <do do'>2-- do' fad,8 fad~ fad2 |
+    <do do'>2-- <do do'>-- fad2~--\mp\< fad8 fad' |
+    do16(\ppsubito fa, do' la'~ la mib'--) \t {la,( do, fa,)} fa2 |
+    \simile do'16 fa, do' la'~ la mib' \t {la, do, fa,} \t {fa8 fa fa} |
     fa2 do'16 fa, do' la'~ la mi'! \t {la, do, fa,} |
-    fa4 do'16 fa, do' la' sol' la, do, fa, |
-    mi' lab, mi' la do la mi lab, lab2 |
-    mi'16 lab, mi' la do8 \t {la16 mi lab,} \t {lab8 lab lab} |
-    <reb, lab'>2 \ttt {do''16 la mi lab, mi' la} do la mi lab, |
-    reb,4 lab'16 mi' la mi lab,4 |
-    \t {sol8 mi' sib'} re16 sib mi, sol,
-    do, sol' mi' sib' \t {re8 sib mi,} |
+    fa4 do'16( fa, do' la' sol') la,( do, fa,) |
+    mi'(\ppsempre lab, mi' la do) la( mi lab,) lab2 |
+    mi'16 lab, mi' la do8 \t {la16 mi lab,} \t {lab8-- lab-- lab--} |
+    <reb, lab'>2-- \ttt {do''16( la mi) lab,( mi' la} do) la( mi lab,) |
+    reb,4-- lab'16( mi' la mi) lab,4-- |
+    \t {sol8\p( mi' sib')} re16( sib mi, sol,)
+    do,( sol' mi' sib') \t {re8( sib mi,)} |
     \t {sol, mi' sib'} re16 sib mi, sol, \t {do,8 sol' mi'} |
-    \ttt {sib'16 mi, sol, do, sol' mi'}
+    \ttt {sib'16( mi, sol, do, sol' mi'}
     \ttt {sib' mi, sol, do, sol' mi'}
     \ttt {sib' mi, sol, do, sol' mi'}
-    \ttt {sib' mi, sol, do, sol' mi'} |
-    \ttt {sib' mi, sol, do, sol' mi'}
-    \ttt {sib' mi, sol, do, sol' mi'}
-    \ttt {sib' mi, sol, do, sol' mi'} |
-    \t {do,8 reb mib} \t {fad sold la} \t {si re mi} |
-    <do, sol' re'>4 do do |
-    \t {fad8 sold la} \t {si re mi} \t {fa sol sib} |
-    fad'4 fad,,8 fad fad fad |
-    fad fad fad fad \t {fad si dod}
-    <fad, lad mi'>4 fad8 fad fad fad |
-    \t {fad si dod} mi fad, \t {fad' la sol} |
-    <do,, do'>1~ <do do'>2 r4 |
+    \ttt {sib' mi, sol, do, sol' mi')} |
+    \ttt {sib'( mi, sol, do, sol' mi')}
+    \ttt {sib'( mi, sol, do, sol' mi')}
+    \ttt {sib'( mi, sol, do, sol' mi')} |
+    \t {do,8--\f reb--( mib--)} \t {fad-- sold--( la--)} \t {si-- re--( mi--)} |
+    <do, sol' re'>4\downbow do\downbow do\downbow |
+    \t {fad8-- sold--( la--)} \t {si--( re-- mi--)} \t {fa--( sol-- sib--)} |
+    fad'4-- fad,,8 fad fad fad |
+    fad fad fad fad \t {fad( si dod)}
+    <fad, lad mi'>4\downbow fad8 fad fad fad |
+    \t {fad-- si-- dod--} mi-- fad,-- \t {fad'-- la-- sol--} |
+    \ten <do,, do'>1~\fmolto <do do'>2 r4 |
     
     %%% Ad libitum %%%
-    R1 R2. do'2.~ do4 r r2 | mi2.~ mi4 r2 |
+    R1 R2. \ten do'2.~\pp do4 r r2 | mi2.~ mi4 r2 |
     
     %%% Agitato %%%
-    re,8 re re re mib mib re re |
+    re,8\fp re re re mib mib re re |
     mib4:8 re: mib: re: mib: re: mib: re: |
     mib: re: mib: re: mib: re: mib: re: |
     mib: re: mib: re: |

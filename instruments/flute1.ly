@@ -98,31 +98,31 @@ OuvertureFluteUn = { \FluteUn
 
 ActeUnSceneUnFluteUn = { \FluteUn
   \relative {
-    do2~ do ~ do r4 |
-    do2~ do ~ do r4 |
-    do2~ do4 r solb''4. r8 r4 |
-    do,,2~ do4 r solb''4. r8 r4 |
-    do,,2~ do8 r do4 solb''4. r8 r4 |
-    do,,2~ do8 r do4 solb''4. r8 r4 |
+    \ten do2~--\p do ~ do r4 |
+    do2~-- do ~ do r4 |
+    do2~ do4 r solb''4.--\pp r8 r4 |
+    do,,2~--\p do4 r solb''4.--\pp r8 r4 |
+    do,,2~\p do8 r do4 solb''4.-- r8 r4 |
+    do,,2~ do8 r do4 solb''4.-- r8 r4 |
     
-    si1 solb2 r4 | mib1 do2 r4 |
-    do'1 la2 r4 | la2. mi4~ mi8 r lab4 la |
-    \t {do8 fa, lab,} \t {re,4 fa'8}
-    \t {do' fa, lab,} \t {re,4 fa'8}
-    \t {do' fa, lab,} \t {re,4 lab'8} \t {fa'4 sib8} |
-    \t {mi sib reb,} \t {solb,4 sib'8}
-    \t {mi sib reb,} \t {solb,4 sib'8}
-    lab'4 mi reb |
-    do4 r2 | R2.*6 do1~ do2 r4 |
+    si1\pp( solb2) r4 | mib1( do2) r4 |
+    do'1\p( la2) r4 | la2.( mi4~) mi8 r lab4\<( la) |
+    \t {\ind #"sostenuto" do8\mp( fa, lab,} \t {re,4) fa'8}
+    \t {do'( fa, lab,} \t {re,4) fa'8}
+    \t {do'( fa, lab,} \t {re,4) lab'8} \t {fa'4( sib8)} |
+    \t {mi\mp( sib reb,} \t {solb,4) sib'8}
+    \t {mi( sib reb,} \t {solb,4) sib'8}
+    lab'4\mf(\> mi reb |
+    do4\p) r2 | R2.*6 \ten do1~ do2 r4 |
     
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
     
     %%% Agitato %%%
-    re,,1~ re2 r | R1*2
-    r4 r8 \t {re'16 mib fa} sib4 r |
-    r re, r2 | R1. r2 r4 \t {r8 fad sib} |
-    re4 r r2 | R1. R1
+    \ten re,,1~\f re2 r | R1*2
+    r4 r8 \t {re'16\mp( mib fa} sib4-.) r |
+    r re, r2 | R1. r2 r4 \t {r8 fad( sib} |
+    re4-.) r r2 | R1. R1
     r8 \t {la16 do re} mib4 r2 | R1
     R1. R1*2 R1.*3 R1 R1.
     dod'1 re,2 dod1 r2 | R1.

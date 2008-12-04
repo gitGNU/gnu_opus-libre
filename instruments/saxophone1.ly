@@ -95,9 +95,9 @@ ActeUnSceneUnSaxophoneUn = { \SaxAltoUn
     R2*2 R2. R2*2 R2.
     R2*2 R2. R2*2 R2.
     R2*2 R2. R2*2 R2.
-    do2~ do8 r16 r32 reb' do4 |
-    do,2.~ do4 r reb'16 do mib8~ mib16 reb do sib |
-    do sol4.. r4 |
+    do2~\pp do8 r16 r32 reb'\mf( do4) |
+    do,2.~\pp do4 r reb'16\mf\>( do mib8~\!) mib16 reb( do sib) |
+    do\>( sol4..\p) r4 |
     lab,1~ lab8 fa'16 sol sib4. r8 |
     lab,4 r8 reb'16 do~ \t {do mib reb} mib8~ mib r |
     \t {solb4 mib8~} \t {mib reb4} do~ |

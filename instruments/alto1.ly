@@ -137,46 +137,46 @@ PrologueAltoUn = { \AltoUn
 ActeUnSceneUnAltoUn = { \AltoUn
   \relative {
     R2*2 R2. R2*2 R2.
-    do,8 re fad la do mi fad si do si mi, do la fad |
-    re4 do8 re fad la do mi sol re la mi do4 |
-    fa8 solb sib do mib solb lab do reb do lab mib sib fa |
-    fa solb sib do mib solb lab solb lab solb mib do solb4 |
-    la8 \t {mib'16 si' fad'} fad4 do,,8 fa16 la mib'4 |
-    la,8 \t {mib'16 si' fad'} fad4 la,,16 la \t {mib' si' fad'} |
-    do,,8 la'16 mi' sol4 mi8 \t {sol16 do fad} fad4 |
+    do,8\<( re fad la) do( mi fad si\!) do\p\>( si mi, do) la( fad) |
+    re4\<( do8 re) fad( la do mi) sol\>( re la mi\!) do4 |
+    fa8\<( solb sib do) mib( solb lab do) reb\>( do lab mib) sib( fa) |
+    fa\<( solb sib do) mib( solb lab solb) lab( solb) mib( do) solb4 |
+    la8--\ppsubito \t {mib'16( si' fad')} fad4 do,,8( fa16 la mib'4) |
+    la,8-- \t {mib'16( si' fad')} fad4 la,,16-- la \t {mib'( si') fad'} |
+    \simile do,,8 la'16 mi' sol4 mi8 \t {sol16 do fad} fad4 |
     la,,8 mi'16 sol mi8 \t {sol16 do fad} fad4 |
-    do,8 \t {fa16 lab mi'} mi4 la,,8 do16 fa lab4 |
+    do,8\ppsempre \t {fa16 lab mi'} mi4 la,,8 do16 fa lab4 |
     do,8 \t {fa16 lab mi'} mi4 do,16 do \t {fa lab mi'} |
     mi8 \t {mi16 lab, fa} fa8 \t {mi'16 lab, fa}
     fa8 \t {mi'16 lab, fa} fa8 \t {mi'16 lab, fa} |
     \ttt {do fa lab mi' lab, fa}
     \ttt {do fa lab mi' lab, fa}
     \ttt {do fa lab mi' lab, fa} |
-    \ttt {lab re, sib mi, sib' re}
+    \ttt {lab\p( re, sib mi, sib' re}
     \ttt {lab' re, sib mi, sib' re}
     \ttt {lab' re, sib mi, sib' re}
-    \ttt {lab' re, sib mi, sib' re} |
+    \ttt {lab' re, sib mi, sib' re)} |
+    \ttt {lab'( re, sib mi, sib' re}
     \ttt {lab' re, sib mi, sib' re}
-    \ttt {lab' re, sib mi, sib' re}
-    \ttt {lab' re, sib mi, sib' re} |
+    \ttt {lab' re, sib mi, sib' re)} |
     re sib mi, sib' re sib mi, sib'
     re sib mi, sib' re sib mi, sib' |
-    re sib mi, sib' re sib mi, sib'
-    re sib mi, sib' |
+    re( sib mi, sib') re( sib mi, sib')
+    re( sib mi, sib') |
+    do\fp do do do do do do do do do do do |
     do do do do do do do do do do do do |
-    do do do do do do do do do do do do |
-    do do do do do do do do re fa sol sib \clef treble |
-    <fad fad'>4 <fad fad'> <fad fad'> |
-    <fad mid'> <fad mid'> <fad mid'> |
+    do do do do do do do do re\< fa sol sib\! \clef treble |
+    <fad fad'>4\downbow <fad fad'>\downbow <fad fad'>\downbow |
+    \simile <fad mid'> <fad mid'> <fad mid'> |
     <sold mid'> <sold mid'> <sold mid'> |
-    <fad fad'> fad16 fad fa fa fa mib mib mib \clef alto |
-    <do, do'>1~ <do do'>2 r4 |
+    <fad fad'>\downbow fad16\< fad fa fa fa mib mib mib \clef alto |
+    \ten <do, do'>1~\fmolto <do do'>2 r4 |
     
     %%% Ad libitum %%%
-    r2 <re' fad'>~ <re fad'>2.~ <re fad'>~ <re fad'>4 r r2 | mi2.~ mi4 r2 |
+    r2 <re' fad'>~\pp \ten <re fad'>2.~ <re fad'>~ <re fad'>4 r r2 | mi2.~ mi4 r2 |
     
     %%% Agitato %%%
-    re,16 re re re re re re re re re re re re re re re |
+    re,16\fp re re re re re re re re re re re re re re re |
     re2:16 re: re: re: re: re: re: re: re: re: |
     mib4:16 re: re2:16 re: | re: re: re: re: |
     mib4:16 re: re2:16 re: | re: re: re: re: re: re: |
