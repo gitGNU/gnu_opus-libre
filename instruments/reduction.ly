@@ -2335,8 +2335,36 @@ EntracteMainDroite = {
     r re'2~ <re fad dod'>2.\laissezVibrer si'2 |
     <dod mid sold>1\laissezVibrer <re, fad dod'>2.\laissezVibrer \clef bass |
     <red, re'!>2 sol4 \clef treble <sol re' fad>2. r4 |
-    <re' fad dod'>2 <si fa' sib>4 r R2. |
+    <re' fad dod'>2 <si! fa' sib>4 r R2. |
     <reb solb do>2 <sib fa' la>4 R1 |
+    <re fad dod'>2 <si! fa' sib>4 r R2. |
+    <lab re sol>2. <mib' solb re'>4 r r2 | R1 \clef bass |
+    <do, sol'>2.~ <do sol'>2 r4 \clef treble |
+    <la' sol'>2 <sol la'>4 <la sol'> | <sol la'>2. r4 |
+    r <mi' si>2 <mi si' fad'>2 r4 |
+    <fad' dod' sold>2. <la sold'>8 <la sold'> |
+    <sold la'>4 \clef bass re,,16 re' re, re'
+    \repeat tremolo 4 {re, re'}
+    \oneStemUp \repeat tremolo 8 {re, re'} \clef treble |
+    
+    %%% Stretto %%%
+    <sib re>8 <sib re> <sib re> <sib re>
+    <sib re> <sib re> <sib re> <sib re> |
+    <do mi> <do mi> <do mi> <do mi>
+    <dod mid> <dod mid> <dod mid> <dod mid> |
+    <mi sol> <mi sol> <mi sol> <mi sol>
+    <mi sol> <mi sol> <mi sol> <mi sol> |
+    <mi sold> <mi sold> <mi sold> <mi sold>
+    <mi sold> <fad lad> <fad lad> <fad lad> |
+    <mi sold> <mi sold> <mi sold> <fad lad>
+    <fad lad> <fad lad> <fad lad> <fad lad> |
+    <si, sol' si> <si sol' si> <si sol' si> <si sol' si>
+    <si sol' si> <si sol' si> <si sol' si> <si sol' si> |
+    <dod lad' dod> <dod lad' dod> <dod lad' dod> <dod lad' dod>
+    <dod lad' dod> <dod lad' dod> <dod lad' dod> <dod lad' dod> |
+    <re sib' re>4 fa''16 sol lab sol lab4 r |
+    r <re,,, re'> r <re re'> r <re re'> r2 | R1
+    
   }
 }
 
@@ -2402,10 +2430,34 @@ EntracteMainGauche = {
     {red'8 red red red red red red red red red red red red red}
     \pl {mi,2 r4 mi2. r4}
     {mi'8 mi mi mi mi mi red red red red red red red red}
-    \pl {mi, mi mi mi mi mi mi mi} {red'2 <sol, do>4 r}
-    mi8 mi mi mi mi mi |
+    \pl {mi, mi mi mi} red'2 <sol, do>8 mi mi mi
+    mi mi mi mi mi mi |
     \pl {mi mi mi mi} <lab re!>2 <si fad'>8 mi, |
     mi mi mi mi mi mi mi mi |
+    \pl {mi mi mi mi} red'2 <sol, do>8 mi mi mi
+    mi mi mi mi mi mi |
+    \pl {mi mi mi mi mi mi} si'2. |
+    \pl {fa8 fa} mi'4 fa,8 fa
+    \pl {fa,2 mi4. fa4.*1/4} {mi'8 mi mi mi
+    fa fa fa mi} mi mi mi mi |
+    mi mi mi mi mi mi mi mi mi mi mi mi |
+    \pl {r4 fad,2. sol2 fad sol2. r4 sol2}
+    {mi'8 mi mi mi mi mi mi mi
+    mi mi mi mi mi mi mi mi mi
+    mi mi mi mi mi mi mi mi mi mi mi}
+    \pl sold,1 {sold'8 sold sold sold sold sold sold sold}
+    <re re'>4 re r re r re r2 |
+    
+    %%% Stretto %%%
+    <re sib'>4 <re sib'> <re sib'> <re sib'> |
+    <reb lab'> <reb lab'> <si sold'> <si sold'> |
+    <sib fa'> <sib fa'> <sib fa'> <sib fa'> |
+    <sold mi'> <sold' mi'> <sol re'> <sol re'> |
+    <sold mi'> <sold mi'> <sol re'> <sol re'> |
+    <fa re'> <fa re'> <fa re'> <fa re'> |
+    <mi si'> <mi si'> <mi si'> <mi si'> |
+    <re sib'> si16 la sold la sold4 r |
+    r <re' re'> r <re re'> r <re re'> r2 R1 |
   }
 }
 

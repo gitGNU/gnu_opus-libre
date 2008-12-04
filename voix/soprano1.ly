@@ -109,7 +109,43 @@ ActeUnSceneTroisTerSopranoUn= { \SopranoUn
   }
 }
 
-EntracteSopranoUn = {
+EntracteSopranoUn = { \SopranoUn
+  \relative {
+    R2*9 R1*21
+    r4 r8 sib'16 sib mib4 r16 sib sib sib |
+    mi,4 r8 sold dod si mi8. re16 |
+    sol8 lab r4 r8 lab sib, sib |
+    mib4 la,8 la \t {dod4 lab sol'} |
+    sol,8. sol16 si4. sol8 fa lab |
+    mi4 r r8 fa la lab |
+    \t {do4 do, si'} \t {red mi, re'} |
+    fad4 r8 sol,16 sol la4 r16 sol sol sol |
+    fad4 r8 red sol red mi8. fa16 |
+    sol8 fad r4 r2 | R1*6 r4 r8 re'16 re re4 r16 re re re |
+    re4 r8 re re8. re16 la2~ la8 sol sold4 |
+    
+    %%% Fugato %%%
+    re'4 r r2 | R1 R2.*2 R2 R1 R2.*2
+    r4 sib8. sib16 dod2 sib8 r sib8. sib16 dod2 |
+    sib8 r16 sib sib8. sib16 la4 la dod2 |
+    sib8 r16 sib sib8. sib16 dod2 sib8 r16 sib sib8. sib16 dod2 |
+    sib8 r sib4 sib la la re~ | re sib8 r si8. si16 re4~ |
+    re si8 r si8. si16 re4~ | re si8 r sib4 sib8. sib16 re4 re |
+    sol2 re8 r si8. si16 re2 si8 r si8. si16 re2 si8 r |
+    r4 re mib8. mib16 | sold4 sold la2 |
+    re,4 r8 re16 re re4 r16 re re re |
+    re4 r8 re re re re8. re16 |
+    
+    %%% Stretto %%%
+    re8 re r4 r2 |
+    R1 r2 r8 lad16 si sol4 | R1*4
+    mib'8 sib4. r2 |
+    r4 r8 mib,16 mib re4 r16 re re re |
+    mib4 r8 mib mib mib re4 |
+    r mib r \parlato mib |
+    
+    %%% Noir %%%
+  }
 }
 
 ActeDeuxSceneUnSopranoUn= { \SopranoUn

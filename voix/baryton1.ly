@@ -240,7 +240,7 @@ EntracteBarytonUn = {
     sol8 r sol8. sol16 mi2 | sol8 r sol8. sol16 mi4~ |
     mi sol8 r16 sol sol8. sol16 | si4 si sol2 |
     mi8 r sol8. sol16 mi2 sol8 r sol8. sol16 mi4~ |
-    mi sol red8 r16 sol sol8. sol16 |
+    mi red8 r16 sol sol8. sol16 |
     red4 red sol2 la8 r mi8. mi16 sol2 |
     sib8 r sol8. sol16 mi4~ | mi sol8 r16 sol lab8. lab16 |
     sold4 sold la2 |
@@ -253,7 +253,7 @@ EntracteBarytonUn = {
     si' si sol sib re4 mi, | R1*2
     r2 r8 la16 la sold8 sib16 sib |
     la4 r8 la16 la sold4 r16 sib sib sib |
-    la4 r8 sold sold sold la4 r la r la |
+    la4 r8 sold sold sold la4 r la r \parlato la |
     
     %%% Noir %%%
   }
