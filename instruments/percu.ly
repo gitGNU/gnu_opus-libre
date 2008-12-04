@@ -433,39 +433,39 @@ ActeUnSceneUnPercus = <<
   }
   \new Staff { \Timbales
     \relative {
-      do,2:32 do4 r R2. do2:32 do4 r R2. |
-      do2:32 do4 r fad, r2 |
-      do'2:32 do4 r fad, r2 |
-      do'2:32 do4 r fad, r2 |
-      do'4 r do r fad,2:32 fad4 |
-      <fa do'>8 \t {fa16 fa fa} fa4 r2 |
-      <fa do'>4. <fa do'>8 \t {<fa do'> <fa do'> <fa do'>} |
-      <fa do'>8 \t {fa16 fa fa} fa4 r2 |
-      <fa do'>4. do'8 \t {do do do} |
-      reb8 \t {reb16 reb reb} reb4 r2 |
-      <lab reb>4. <lab reb>8 \t {<lab reb> <lab reb> <lab reb>} |
-      <lab reb> \t {reb16 reb reb} reb4 r2 |
-      <lab reb>4. reb8 \t {reb reb reb} |
-      do4 r do sol do r sol |
-      do \t {do8 do do} do4 sol do r do |
-      do8 do16 do32 do do8 do do do |
+      do,2:32\ppp( do4) r R2. do2:32( do4) r R2. |
+      do2:32( do4) r fad,-- r2 |
+      do'2:32( do4 r fad,) r2 |
+      do'2:32\p( do4) r fad, r2 |
+      do'4 r do r fad,2:32\<( fad4\>) |
+      <fa do'>8--\ppsempre \t {fa16\>( fa fa} fa4) r2 |
+      <fa do'>4.--\pp <fa do'>8 \t {<fa do'>( <fa do'> <fa do'>)} |
+      <fa do'>8-- \t {fa16\>( fa fa} fa4\!) r2 |
+      <fa do'>4.-- do'8 \t {do\<( do do)} |
+      reb8--\p \t {reb16\>( reb reb} reb4) r2 |
+      <lab reb>4.--\pp <lab reb>8 \t {<lab reb>\<( <lab reb> <lab reb>)} |
+      <lab reb>\> \t {reb16( reb reb} reb4\!) r2 |
+      <lab reb>4.--\p reb8 \t {reb\<( reb reb} |
+      do4--\p) r do--( sol-- do--) r sol |
+      do-- \t {do8\<( do do} do4--\!) sol-- do-- r do--\< |
+      do8\mf do16 do32 do do8 do do do |
       do8 do16 do32 do do8 do do do |
       do8 do16 do32 do do8 do do do |
       fad,16 fad fad fad fad fad fad fad fad fad fad fad |
       fad fad fad fad fad fad fad fad fad fad fad fad |
       fad8 fad16 fad r fad fad8 fad16 fad8 fad16 |
-      r4 r8 fad \t {fad fad fad} |
-      do'8 do16 do32 do \t {do8 do do} do do do8. do32 do |
-      do8 do \t {do do do} \tt {do16 do do do do} |
+      r4 r8 fad-- \t {fad--\< fad-- fad--} |
+      do'8\f do16 do32 do \t {do8-> do-> do->} do-> do-- do8.-> do32 do |
+      do8-> do-- \t {do-- do do} \tt {do16\< do do do do} |
       
       %%% Ad libitum %%%
       R1 R2.*2 R1 R2.*2
       
       %%% Agitato %%%
-      re16 re4.. r2 | r4 re \t {re re re} |
-      re r r2 | re4 re \t {re re re} re r r2 |
-      r2 r4 r8 re16 re |
-      re4 r re re \t {re re re} re4 r r2 | R1
+      re16->\fp re4.. r2 | r4 re \t {re\<( re re} |
+      re->\!) r r2 | re4-- re \t {re\<( re re} re->\!) r r2 |
+      r2 r4 r8 re16\< re |
+      re4->\! r re\mp re \t {re\<( re re} re4->\!) r r2 | R1
       re4 r re re \t {re re re} re4 r r2 | R1*2
       re4 r re re \t {re re re} re4 r r2 | re1:16\glissando |
       mib4 r mib mib \t {mib mib mib} |
