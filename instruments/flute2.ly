@@ -17,8 +17,8 @@ PrologueFluteDeux = { \FluteDeux
   \relative {
     
     %%% Introduction %%%
-    \partial 4 r4 \pitchedTrill la'''2.~\mp\<\startTrillSpan si
-    la2.~ la~ la2~\>\stopTrillSpan la4~ la8\! r | 
+    \partial 4 r4 \pitchedTrill la'''2.~\mp\startTrillSpan si
+    la2.~\< la~ la2~\>\stopTrillSpan la4~ la8\! r | 
     \ten mi,,2~--\mf mi4 r | mi4~ mi4:32 ~ mi8 r |
     mi2~ mi \ten mi2.~ mi4 r |
     R2 | \ten re2.~\mp | re4 r |
@@ -31,7 +31,7 @@ PrologueFluteDeux = { \FluteDeux
     %%% Tempo giusto %%%
     \slap { \ind #"slap" re4\f} r R2*6 r4 mi16( sol do fad |
     re4\f) r2 | r2 sol,16( do fad mib | re4) r2 R2.
-    dod,2.\mf( do sol'2) r4 | r8 do mib\mp( fa\< lab si |
+    dod,2.\mf( do sol'2) r4 | r8 do\mp( mib\< fa lab si |
     re4--\f) r8 lab4.~-- | lab4 r8 solb4.-- | fa2.---> r4 R2*2 R2-\fermataMarkup
     
     %%% Solo Ténor %%%

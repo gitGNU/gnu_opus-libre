@@ -47,7 +47,9 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     \pizz sol8\p r4 | sol8 r4 | R4.*2
     sol8 r4 | sol8 r4 |
     sol8 r4 | sol8 r4 |
-    sol'8 r4 \clef treble | red''8 r4 \clef bass |
+    sol'8 r4 \clef treble |
+    %%FIXME: grace synchronization bug
+    \acciaccatura s16 red''8 r4 \clef bass |
     r8 sol,, sol, | R4.*14
     \arco solb8\>( mib reb) \ten do4.~\pp do~ do4 r8 |
     solb'8( mib reb) | do4.~ do~ do4 r8 |

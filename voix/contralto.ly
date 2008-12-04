@@ -57,14 +57,14 @@ InterludeDeuxContralto = { \Contralto
     r4 mi8(\< sol la4 \fmolto ~ |
     la la8 do \ten re2~ re4) r8 re,-> r dod'->\sfz~ |
     dod4 r8 re,-. mi-. sol-. |
-    lab2-> r do,4--\mp sib-- reb-- | la!->-- r |
+    lab2-> r do,4--\mp sib-- dod-- | la!->-- r |
   }
 }
 
 ActeUnSceneTroisBisContralto = { \Contralto
   \relative {
-    R1*15 r4 fad,8\mp( fad fad4 fad8 fad fad4--) r r2 |
-    R1*7  r4 do'8\mf-- do-- do4-- do8-- do-- fad2-- r | R1
+    R1*15 r4 <\parenthesize fad, lad>8\mp( lad lad4 lad8 lad lad4--) r r2 |
+    R1*7  r4 do8\mf-- do-- do4-- do8-- do-- fad2-- r | R1
     r2 r16 do( do do si8.) si16( |
     si si mi8--) re--( mi) do--( do) \t {re--( do-- re--)} |
     si2-- r4 r8 \meno si16( si | lad4.) r8 sib4--( sol8) r |
@@ -72,15 +72,16 @@ ActeUnSceneTroisBisContralto = { \Contralto
     mib mib16\<( mib do do mib8) fad--(\mf red16) r fad8--(\< red16) r |
     fad8--( red16) r  fad8--( red16)\! r  \parlato fad8 r r4 |
     r8 \t {fad16( fad fad} la8) \t { red,16( red red} fad8) r
-    \tt {do16\mp( do do do do} | mi4--) \t {r8 reb--( mi--} \t {do-- sib-- reb--} |
+    \tt {do16\mp( do do do do} | mi4--) \t {r8 dod--( mi--} \t {do-- sib-- dod--} |
     la2--) r | R1*4 r2 r4 r8 sol'->\mf |
     sib-- mib,16--( mib~-- mib mib32 mib fa16.--\< mib32 lab8--\!)
     r32 lab( lab lab lab8--\< mib16-- lab-- | si4->--\f) r r2 |
     r2 r4 r8 r16 sol,\mf( | fad'8.) mi16( dod'8) r16 sol,( fad'4. mi8\> | dod'2.)\p r4 |
     dod,8( dod dod mi dod4.) r8 |
     r2 r4 r8 dod( | do do do mib do4) r |
-    fa4.--( do8~ do mib\> \t {sol, sol la} |
-    fad4--)\! r r2 | R1*3 r2 r4 do'8--\mp do-- | do4-- \t {do8-- do-- do--} do4-- do8-- do-- |
+    fa4.--( do8~ do mib\>
+    \t {<\parenthesize sol, sib> <\parenthesize sol sib> <\parenthesize la do>} |
+    <\parenthesize fad la>4--)\! r r2 | R1*3 r2 r4 do'8--\mp do-- | do4-- \t {do8-- do-- do--} do4-- do8-- do-- |
     do4-- do-- r do8-- do-- | do4.-- do8(\> do do do do | fad2.--)\pp r4 | R1*11
   }
 }
@@ -213,7 +214,7 @@ ActeDeuxSceneTroisContralto= { \Contralto
     r2 r8 sold(\< la do | re2)\ff r4 sol,8-.\mf sol-. |
     sol4--\< sold8-. sold-. la4-- sol8-. sol-. |
     sold4-- la8-. la-. sib4--\! la8-. la-. | r sold-. r2 |
-    fad2.(\ff~ fad2\> mi4 dod'2 sol,4 | 
+    fad2.(\ff~ fad2\> mi4 dod'2 <\parenthesize sol, dod>4 | 
     fad'2. re2.)\!~ re4 r R2*2 R2.*40
   }
 }

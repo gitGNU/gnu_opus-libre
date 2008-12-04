@@ -19,8 +19,8 @@ PrologueClarinetteDeux = { \ClarinetteDeux
     
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1 | 
-    \ten mi,2~--\fp mi4 r | mi2\p\< r4 |
-    mi2~ mi\> \ten mi2.~\! mi4 r R2 | 
+    \ten mi,2~--\fp mi4 r | mi2 r4 |
+    mi2\p\<~ mi\> \ten mi2.~\! mi4 r R2 | 
     \tt {lab16\mf( mi sol lab sol} \ten si2~)|
     si4 r | R2 \tt {sol16( mi fad la sib} do2\>) ~ | 
     do4\p r | r r8 \t {la16\<( sol re'}|

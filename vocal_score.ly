@@ -42,7 +42,7 @@
 
 \paper {
   \includePaper
-  %% FIXME : bug to report.
+  %% FIXME : a bug to be reported.
   systemSeparatorMarkup = ""
 }
 

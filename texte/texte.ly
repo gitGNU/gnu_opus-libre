@@ -759,6 +759,30 @@ ActeUnSceneQuatreContraltoTexte = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 EntracteSopranoUnTexte = \lyricmode {
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux...
+  Une a -- mné -- sie ne gué -- rit que si
+  le pa -- tient sait pa -- tien -- ter.
+  Un __ _ tel cas __ _ peut pren -- dre des mois_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
+  
+  Psy -- chia tri -- que, psy -- chia -- tri -- que,
+  un beau cas psy -- chia -- tri -- que_;
+  neu -- ro -- lo -- gi -- que, phar -- ma -- ceu -- ti -- que,
+  psy -- cho -- so -- ma -- ti -- _ que_;
+  scien -- ti -- fi -- _ que, scien -- ti -- fi -- _ que,
+  je suis un scien -- ti -- fi -- que_;
+  po -- li -- ti -- que, po -- li -- ti -- que,
+  pas un homme po -- li -- ti -- que.
+  
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  Dans un an. Chau -- ssette...
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy_-.
 }
 
 EntracteSopranoDeuxTexte = \lyricmode {
@@ -768,15 +792,56 @@ EntracteSopranoDeuxTexte = \lyricmode {
   pleins à cra -- quer... Je ne sais où ran -- ger
   ce tout pe -- tit co -- llier_:
   en -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
+  
+  Es -- thé -- ti -- que, es -- thé -- ti -- que,
+  j'ai -- me cette es -- thé -- ti -- que_;
+  ma -- gni -- fi -- que, ma -- gni -- fi -- que,
+  ces pierres sont ma -- gni -- fi -- ques,
+  au -- the -- ti -- ques, au -- then -- ti -- ques,
+  des dia -- mants au -- then -- ti -- ques.
+  
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  \leftSyl …_dans mon coffre à bi -- joux_?
+  Je les ai -- me sur ma tête.
+  Je les ai -- me sur mes doigts.
+  Quelle ho -- rreur, quelle ho -- rreur_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy_-.
 }
 
 EntracteContraltoTexte = \lyricmode {
 }
 
 EntracteTenorTexte = \lyricmode {
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  Une bonne ex -- é -- cu -- tion_!
+  Pen -- dai -- son_! É -- lec -- tro -- cu -- tion_!
+  Je -- té du haut du châ -- teau_?
+  Cou -- pé en pe -- tits mor -- ceaux_?
+  Le choix est bien trop vaste
+  pour __ _ tu -- er __ _ cet é -- tran -- ger_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
+  
+  Hé -- mo -- rra -- gi -- que, hé -- mo -- rra -- gi -- _ que,
+  une mort hé -- mo -- rra -- gi -- que_;
+  é -- lec -- tri -- que, é -- lec -- tri -- que,
+  ou la chaise é -- lec -- tri -- _ que.
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  Le fai -- re tom -- ber…
+  \leftSyl …_a -- vec des coups de hache_!
+  \leftSyl …_des coups de mar -- teau_!
+  \leftSyl …_des coups de…
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy_-.
 }
 
 EntracteBarytonUnTexte = \lyricmode {
@@ -787,11 +852,34 @@ EntracteBarytonUnTexte = \lyricmode {
   La li -- ber -- té, ça je le sais, 
   ja -- mais je ne l'ob -- tien -- drai_;
   en -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
+  
+  A -- mné -- si -- que, a -- mné -- si -- que,
+  pour -- quoi suis_-_je a -- mné -- si -- que_;
+  sym -- pa -- thi -- que, sym -- pa -- thi -- _ que,
+  per -- sonne n'est sym -- pa -- thi --que_;
+  dra -- ma -- ti -- que, dra -- ma -- ti -- _ que,
+  en cette heure dra -- ma -- ti -- que_;
+  fa -- ti -- di -- que, fa -- ti -- di -- _ que,
+  ce mo -- ment fa -- ti -- di -- que_;
+  lu -- na -- ti -- que, lu -- na -- ti -- _ que,
+  car ce Roi lu -- na -- ti --que_;
+  ty -- ra -- nni -- que, ty -- ra -- nni -- _ que,
+  m'a l'air bien ty -- ra -- nni -- que.
+  
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  Il faut que je m'é -- cha -- ppe,
+  que j'ou -- vre ce -- tte po -- rte_!
+  Quelle ho -- rreur, quelle ho -- rreur_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy_-.
 }
 
 EntracteBarytonDeuxTexte = \lyricmode {
@@ -801,11 +889,34 @@ EntracteBarytonDeuxTexte = \lyricmode {
   Que faire, my -- stère, que fai -- _ rRREUAAH_!
   Cet É -- tran -- ger a le don de tout com -- pli -- quer.
   En -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
-  ex -- trê -- me -- ment en -- nuy -- eux.
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
+  
+  Pa -- ci -- fi -- que, pa -- ci -- fi -- que,
+  il a l'air pa -- ci -- fi -- que_;
+  co -- lé -- ri --que, co -- lé -- ri -- que,
+  je suis trop co -- lé -- ri -- que_;
+  dra -- ma -- ti -- que, dra -- ma -- ti -- que,
+  ce choix est dra -- ma -- ti -- que_;
+  hi -- sto -- ri -- que, hi -- sto -- ri -- que,
+  d'une po -- rtée hi -- sto -- ri -- que_;
+  é -- ner -- gi -- que, é -- ner -- gi -- que,
+  je dois être é -- ner -- gi -- que.
+  
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy -- eux_!
+  \leftSyl …_s'en dé -- ba -- rra -- ser
+  i -- mmé -- di -- a -- te -- ment_!
+  Quelle ho -- rreur_…
+  En -- nuy -- eux, très en -- nuy -- eux_;
+  ex -- trê -- me -- ment en -- nuy_-.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

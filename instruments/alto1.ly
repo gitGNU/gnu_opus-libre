@@ -23,7 +23,7 @@ PrologueAltoUn = { \AltoUn
     red'2~|red4 r| 
     mi,2.:32~\p mi2:32~ mi2:32
     red2.\mp | re!2~|re |
-    mi2.:32 mi4 <si' re>~| <si re>8\< si \t {si--( si-- si--\!)} |
+    mi2.:32 mi4 <si' re>~| <si re>8\< si \t {si--( si-- si--)} |
     
     %%% Entrée du baryton 2 %%%
     la16\fp la la la la la la la la la la la |
@@ -64,7 +64,8 @@ PrologueAltoUn = { \AltoUn
     lab, r lab' lab, r lab' |
     lab, r lab r sol sol, |
     lab' lab, r sol' sol, r \clef alto
-    sol r4 | R4.
+    %%FIXME: grace synchronization bug
+    \acciaccatura s16 sol r4 | R4.
     r4 sol'8\p r do, r |
     r4 sol'8 r do, r |
     r4 sol'8 r re r |
