@@ -158,37 +158,37 @@ ActeUnSceneQuatreTenor = { \Tenor
 EntracteTenor = { \Tenor
   \relative {
     R2*9 R1*28
-    r4 r8 re16 re re4 r16 re re re |
-    re4 r8 re re re re8. re16 |
-    re8 re r4 r8 re fa,16 fad sib la |
-    dod4 \t {r8 la dod} fa4 re16 mi fa dod |
-    sold'4 r8 sol si,4 r8 si |
-    sib sib re4 sold, r8 sold' |
-    do,4 r8 do si si mib4 |
-    sol, r mi'8 mi mi16 mi8 mi16 |
-    mi4 r16 fa do la dod8 fa, \t {sold dod si} |
-    re4 r8 re16 re re4 r16 re re re | re4 r8 re re8. re16 |
-    re2~ re8 re re4 |
+    r4 r8 re16\mp re re4-- r16 re re re |
+    re4-- r8 re-. re-. re-. re8.-> re16 |
+    re8-. re-. r4 r8 re->-.\f fa,16( fad sib la |
+    dod4->) \t {r8 la( dod} fa4->) re16( mi fa dod |
+    sold'4->) r8 sol-.\mp si,4-- r8 si-. |
+    sib( sib re4-.\>) sold,-.\! r8 sold'-.\mf |
+    do,4-- r8 do-. si( si mib4-.\>) |
+    sol,-.\! r mi'8->\fmolto mi mi16-> mi8 mi16 |
+    mi4-> r16 fa->( do) la dod8->( fa,) \t {sold--\<( dod-- si--)} |
+    re4->\sfz r8 re16\f re re4-- r16 re re re | re4-- r8 re\< re8.-> re16 |
+    re2~--->\! re8 re-. re4-- |
     
     %%% Fugato %%%
-    re r r2 | R1 R2.*2 R2
+    re---> r r2 | R1 R2.*2 R2
     R1 R2.*2 R1*2 R2.*2 R1*2 |
-    r2 r8 r16 red | red8. red16 fad2 |
-    red8 r r r16 mi mi8. mi16 sol4~ |
-    sol mi8 r r2 | mi4 mi8. mi16 red4 red sol2 |
-    fa!8 r r4 re8. re16 fad4~ | fad re8 r r4 re8. re16 |
-    mi2 dod8 r | r4 re dod8. dod16 | re4 re re2 |
-    re4 r8 re16 re re4 r16 re re re |
-    re4 r8 re re re re8. re16 |
+    r2 r8 r16 red\p | red8.-. red16 fad2--( |
+    red8) r r r16 mi mi8. mi16 sol4~ |
+    sol mi8 r r2 | mi4-. mi8.-. mi16 red4-. red-. sol2--( |
+    fa!8) r r4 re8.\mf re16 fad4~--( | fad re8) r r4 re8. re16 |
+    mi2--( dod8) r | r4 re-- dod8.-- dod16 | re4---.\< re---. re2--->\!( |
+    re4) r8 re16\f re re4-- r16 re re re |
+    re4-- r8 re-. re-. re-. re8.-- re16 |
     
     %%% Stretto %%%
-    re8 re r4 r8 mi \t {sold mi sold} |
-    do,4 r r2 | R1*2
-    r2 r8 r16 sib re si mib re |
-    fad4 r r8 fa \t {la, do fa} |
-    sold4 r r8 fad mi sol | R1
-    r4 r8 sold16 sold la4 r16 sol sol sol |
-    sold4 r8 sold sold sold sold4 r sold r \parlato sold |
+    re8-> re-> r4 r8 mi-. \t {sold( mi sold} |
+    do,4--) r r2 | R1*2
+    r2 r8 r16 sib-.\<( re-. si-. mib-. re-. |
+    fad4--\f) r r8 fa-. \t {la,\<( do fa} |
+    sold4\f) r r8 fad--\f\< mi--( sol--) | R1
+    r4 r8 sold16-.\p sold-. la4-- r16 sol-. sol-. sol-. |
+    sold4-- r8 sold-. sold-. sold-. sold4-.\> r sold-. r \parlato sold-.\! |
     
     %%% Noir %%%
   }

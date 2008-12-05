@@ -289,42 +289,43 @@ ActeUnSceneQuatreBarytonDeux = { \BarytonDeux
 EntracteBarytonDeux = { \BarytonDeux
   \relative {
     R2*9
-    r4 r8 re,16 re mib4 r16 re re re | fa4 r8 lab lab lab sib8. si16 |
-    fa8 re r4 r r8 lab' | reb mib, r16 fa fa fa lab8 re, r4 |
-    r8 r16 fa sib8[ r16 lab16] reb8[ r16 si] mi4 ~|
-    mi4. mi8 r mi dod mi | si4 la8 do lab fa \t{lab mib fa} |
-    re4 r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
-    mib8 re r4 r2 | R1*6
-    r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
-    mib8 re r4 r2 | R1*2
-    r4  r8 re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
-    mib8 re r4 r2 | R1*4
-    r4 r8  re16 re mib4 r16 re re re | fa4 r8 lab fa lab mib8. fa16 |
-    mib8 re r4 r2 | R1*6
-    r4  r8 re16 re re4 r16 re re re | re4 r8 re re8. re16 |
-    sib2~ sib8 fa' mib4 |
+    r4 r8 re,16\f re mib4-- r16 re re re | fa4-- r8 lab-. lab-. lab-. sib8.-> si16 |
+    fa8-. re-. r4 r r8 lab'-. | reb->( mib,) r16 fa fa fa lab8--( re,) r4 |
+    r8 r16 fa-.\mf sib8--[ r16 lab16] reb8--[ r16 si] mi4~--->\<(|
+    mi4.) mi8\sfz r mi-. dod-. mi-. | si4-- la8-. do-. lab-- fa \t{lab-.\>( mib-. fa-.} |
+    re4--\!) r8 re16\mf re mib4-- r16 re re re | fa4-- r8 lab-. fa-. lab-. mib8.-> fa16 |
+    mib8-. re-. r4 r2 | R1*6
+    r4  r8 re16\mf re mib4-- r16 re re re | fa4-- r8 lab-. fa-. lab-. mib8.-> fa16 |
+    mib8-. re-. r4 r2 | R1*2
+    r4  r8 re16\f re mib4-- r16 re re re | fa4-- r8 lab-. fa-. lab-> mib8. fa16 |
+    mib8-. re-. r4 r2 | R1*4
+    r4 r8  re16\mf re mib4-- r16 re re re | fa4-- r8 lab-. fa-. lab-. mib8.-> fa16 |
+    mib8-. re-. r4 r2 | R1*6
+    r4  r8 re16\f re re4-- r16 re re re | re4-- r8 re\< re8.-> re16 |
+    sib2~--->\! sib8 fa'-. mib4-- |
     
     %%% Fugato %%%
-    re4 r r2 | R1 R2.*2 r4 dod8. dod16 |
-    sib'2 mi,8 r dod8. dod16 | sib'2 mi,8 r16 dod |
-    dod8. dod16 do4 do | sib'2 mi,8 r dod8. dod16 |
-    sib'2 sol8 r dod,8. dod16 sib'2 sol8 r16 dod, |
-    dod8. dod16 do4 do | sib'2 dod,8 r dod8. dod16 |
-    sib'2 dod,8 r dod8. dod16 | sib'2 dod,8 r16 dod |
-    do8. do16 si4 si | fa'2 dod8 r do8. do16 |
-    si'!2 do,8 r do8. do16 | si'2 do,8 r |
-    do4 si8. si16 si4 | do sib'2 mi,8 r |
-    do8. do16 si'!2 do,8 r | do8. do16 si'2 |
-    do,8 r si4 sib8. sib16 | la4 la sold2 |
-    re'4 r8 re16 re re4 r16 re re re |
-    re4 r8 re re re re8. re16 |
+    re4---> r r2 | R1 R2.*2 r4 dod8.-. dod16 |
+    sib'2--( mi,8) r dod8.-. dod16 | sib'2--( mi,8) r16 dod |
+    dod8.-. dod16 do4 do | sib'2--( mi,8) r dod8. dod16 |
+    sib'2--( sol8) r dod,8. dod16 
+    sib'2--( sol8) r16 dod, |
+    dod8.-. dod16 do4-. do-. | sib'2--( dod,8) r dod8. dod16 |
+    sib'2--( dod,8) r dod8. dod16 | sib'2 dod,8 r16 dod |
+    do8.-. do16 si4-. si-. | fa'2--( dod8) r do8.\mp do16 |
+    si'!2--( do,8) r do8. do16 | si'2--( do,8) r |
+    do4-. si8.-. si16 si4-. | do-. sib'2--( mi,8) r |
+    do8.\mf do16 si'!2--( do,8) r | do8. do16 si'2--( |
+    do,8) r si4-- sib8.-- sib16 | la4---.\< la---. sold2--->\!( |
+    re'4) r8 re16\f re re4 r16 re re re |
+    re4-- r8 re-. re-. re-. re8.-- re16 |
     
     %%% Stretto %%%
-    re8 re r4 r2 | r2 r8 re \t {re dod dod} |
-    fa fa la16 fa fa fad re4 r | R1*4
-    r4 \t {r8 re re} mib4 r |
-    r4 r8 sold16 sold la4 r16 la la la |
-    sold4 r8 la la la sold4 r sold r \parlato sold |
+    re8-> re-> r4 r2 | r2 r8 re-.\mp \t {re( dod dod} |
+    fa) fa-. la16-.( fa-. fa-. fad-. re4--) r | R1*4
+    r4 \t {r8 re\mf( re} mib4--) r |
+    r4 r8 sold16-.\p sold-. la4-- r16 la-. la-. la-. |
+    sold4-- r8 la-. la-. la-.\> sold4-. r sold-. r \parlato sold\! |
     
     %%% Noir %%%
   }

@@ -102,25 +102,25 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     R2*2 R2. R2*2 R2.
     R2*2 R2. R2*2 R2.
     R2*2 R2. R2*2 R2.
-    fa,2~ fa8 r16 r32 fa' sol4 |
-    fa,2.~ fa4 r sol'16 sib reb8~ reb16 sib sol fa |
-    fa mi4.. r4 |
-    reb,1~ reb8 do'16 re fa4. r8 |
-    reb,4 r8 sib''16 sol~ \t {sol do sib} do8~ do r |
-    \t {reb4 sib8~} \t {sib fa4} sol~ |
-    sol2~ sol8 r r sol,~ | sol sib4. r4 | sol8 sib~ sib2 r4 |
-    sol8 sib~ sib4 \t {fa8 sib re} |
-    do4 r2 | R2.*2
-    solb2.~ solb~ solb~ solb4 r \t {solb8 la sol} |
-    do1~ do2 r4 |
+    fa,2~\pp fa8 r16 r32 fa'\mf( sol4) |
+    fa,2.~\pp fa4 r sol'16\mf\>( sib reb8~) reb16 sib( sol fa) |
+    fa\>( mi4..\p) r4 |
+    reb,1~\p reb8 do'16\mp( re fa4.) r8 |
+    reb,4--\p r8 sib''16\mf( sol~) \t {sol do( sib} do8~) do r |
+    \t {reb4--( sib8~--} \t {sib fa4--)} sol~\< |
+    \ten sol2~\mf sol8 r r sol,~\mp( | sol sib4.) r4 | sol8( sib~) sib2 r4 |
+    sol8 sib~ sib4 \t {fa8(\< sib re} |
+    do4--\f) r2 | R2.*2
+    \ten solb2.~\pp solb~ solb~ solb4 r \t {solb8\<( la sol} |
+    \ten do1~\f) do2 r4 |
     
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
     
     %%% Agitato %%%
-    re,1~ re2 r R1 |
-    re4 r r2 | R1 r2 re4 r |
-    r re r1 | R1*2 r4 re r1 | R1*3
+    \ten re,1~\mf re2 r R1 |
+    re4 r r2 | R1 r2 re4\sfz r |
+    r re\sfz r1 | R1*2 r4 re r1 | R1*3
     r4 re r1 | R1*2 R1.
     r8 mib mib8. si'16 lab2 r |
     r4 \t {si8 lab si} mi4 \t {lab8 mib lab} si2 |

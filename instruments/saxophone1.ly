@@ -98,22 +98,22 @@ ActeUnSceneUnSaxophoneUn = { \SaxAltoUn
     do2~\pp do8 r16 r32 reb'\mf( do4) |
     do,2.~\pp do4 r reb'16\mf\>( do mib8~\!) mib16 reb( do sib) |
     do\>( sol4..\p) r4 |
-    lab,1~ lab8 fa'16 sol sib4. r8 |
-    lab,4 r8 reb'16 do~ \t {do mib reb} mib8~ mib r |
-    \t {solb4 mib8~} \t {mib reb4} do~ |
-    do2~ do8 r r do,~ | do re4. r4 | do8 re~ re2 r4 |
-    do8 re~ re4 \t {do8 re fa} |
-    sol4 r2 | R2.*2
-    solb2.~ solb~ solb~ solb4 r \t {solb8 la sol} |
-    do1~ do2 r4 |
+    lab,1~\p lab8 fa'16\mp( sol sib4.) r8 |
+    lab,4--\p r8 reb'16\mf( do~) \t {do mib( reb} mib8~) mib r |
+    \t {solb4--\> mib8~--} \t {mib reb4--} do~\< |
+    \ten do2~\mf do8 r r do,~\mp( | do re4.) r4 | do8( re~) re2 r4 |
+    do8 re~ re4 \t {do8(\< re fa} |
+    sol4--\f) r2 | R2.*2
+    \ten solb2.~\pp solb~ solb~ solb4\pp r \t {solb8\<( la sol} |
+    \ten do1~\f) do2 r4 |
     
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
     
     %%% Agitato %%%
-    re,1~ re2 r | r2 r4 r8 \t {sold,16 si dod} |
-    re4 r r2 | R1 r2 re4 r |
-    r re, r1 | R1*2 r4 re r1 | R1*3
+    \ten re,1~\mf re2 r | r2 r4 r8 \t {sold,16\<( si dod} |
+    re4\sfz) r r2 | R1 r2 re4\sfz r |
+    r re,\sfz r1 | R1*2 r4 re r1 | R1*3
     r4 re r1 | R1*2 R1.
     r8 lab' si8. mi16 sol2 r |
     r4 \t {sol8 mi sol} do4 \t {mi8 si mi} sol2 |
