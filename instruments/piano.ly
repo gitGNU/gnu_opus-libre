@@ -43,23 +43,24 @@ ProloguePiano = { \Piano
     
     %%% Tempo giusto %%%
     re'8\p r re-.\p re-. s2*2 R2*3 s2*2
-    \pl <re re'>4 re''4-. r2 | R2.*2 \clef bass |
-    <sib,,,sib'>2.-. <dod dod'>-. <mi mi'> \clef treble |
-    <lab lab'>2 <mi' do'>8 <sol la> |
-    <la fa'> <do mib> <do lab'> <mib fa> <mib si'> <fa lab> |
-    <re re'>4 r8 <mi sold re'>4.~ <mi sold re'>4 r8 <re fad si re>4. |
-    \ttt {re'16 la fa re do si} \ttt {fad' dod la fad mib reb}
-    \ttt {do sol' re sib \mg sol fa} \tttt {mi re si la sold fad red \md} |
-    s4 \t{<dod''' re>8 dod, <dod'' re>} | <dod,,re dod'>2\laissezVibrer
+    \pl <re re'>4 re''4-- r2 | R2.*2 \clef bass |
+    <sib,,,sib'>2.-- <dod dod'>-- <mi mi'>-- \clef treble |
+    <lab lab'>2-- <mi' do'>8( <sol la>) |
+    <la fa'>(\< <do mib>) <do lab'>( <mib fa>) <mib si'>( <fa lab>) |
+    <re re'>4\f r8 <mi sold re'>4.->~ <mi sold re'>4 r8 <re fad si re>4.-> |
+    \ttt {re'16(\ff la fa re do si)} \ttt {fad'( dod la fad mib reb}
+    \ttt {do) sol'( re sib \mg sol fa} \tttt {mi re si la sold fad red) \md} |
+    s4 \t{<dod''' re>8\> dod, <dod'' re>} | <dod,,re dod'>2\pp\laissezVibrer
     R2-\fermataMarkup
     
     %%% Solo ténor %%%
-    R1*2 R2. R1 R2. r2 sol~|
+    R1*2 R2. R1 R2. r2 sol\p~|
     sol~ sol~ sol R2 R2.*6
     <sol lab sol'>2.\arpeggio \laissezVibrer R2.*4 R4.
     
     %%% Andantino %%%
-    <lab sol'>8 \mg sol, \md r |
+    \st {
+    <lab sol'>8\pp \mg sol, \md r |
     <lab'sol'> \mg sol, \md r |
     <lab'sol'> <lab'sol'lab> r | <sib dob sib'> r <si do si'> |
     <lab,sol'> \mg sol, \md r |
@@ -70,12 +71,10 @@ ProloguePiano = { \Piano
     r4 <lab, sol'>8 r <si? sol' lab> r |
     R4. <mi do'>8 r4 | R4. <mi do'>8 r4 |
     R4. <re sib'>8 r4 R4. <re sib'>8 r4 |
-    R4. <do sold'>8 r4 R4. <dod la'>8 r4 |
-    R4.*2 <dod fad>8 <red sold> <fad la> <red sol> <fad la> <sold si> |
-    <la re>4.\laissezVibrer <la, re>8 <do fa> <re sol> |
-    <fa lab> <sol sib> <lab reb> <sib mib> <dod mi> <red fad> |
-    <mi la>4.\laissezVibrer <do, mib>8 <re fa> <mib lab>
-    <fa sib> <sold si> <lad dod> <si mi> <dod fad> <mi sol> |
+    R4. <do sold'>8 r4 R4. <dod la'>8} r4 |
+    R4.*2 s4.*2 |
+    <la' re>4.\laissezVibrer s4.*3 |
+    <mi la>4.\laissezVibrer s4.*3 |
     
     %%% A tempo %%%
     \ottava #1
@@ -192,16 +191,26 @@ ProloguePiano = { \Piano
     red8 r4 fad8 r4 |
     red8 r4 fad8 r4 |
     mi8 r4 mi8 r4 | re8 r4 re8 r4 |
-    \pl {do4.\laissezVibrer R4.}
-    {r8 <mi'sol>8 <fa sib> <sol reb'> <sib do> <sib mib>}
-    R4.*2
-    \pl do,,4.\laissezVibrer {r8 <mi' la> <fad do'>} R4.*3
-    \pl do,4.\laissezVibrer {r8 <sol'' do> <la re>} R4.*3
+    \pl {do4.\laissezVibrer R4. \oneVoice R4.*2}
+    {r8 <mi'sol>8( <fa sib>
+    <sol reb'> <sib do> <sib mib> \md
+    <dod fad> <red sold> <fad la>
+    <red sol> <fad la> <sold si>) \mg}
+    \pl {do,,,4.\laissezVibrer \oneVoice R4.*3}
+    {r8 <mi' la>( <fad do'> \md
+    <la re> <do fa> <re sol>
+    <fa lab> <sol sib> <lab reb>
+    <sib mib> <dod mi> <red fad>) \mg}
+    \pl {do,,,4.\laissezVibrer \oneVoice R4.*3}
+    {r8 <sol'' do>( <la re> \md
+    <do mib> <re fa> <mib lab>
+    <fa sib> <sold si> <lad dod>
+    <si mi> <dod fad> <mi sol>) \mg}
     
     %%% A tempo %%%
     
     %% FIXME: Issue #705
-    \stemUp re,,8 \md \stemDown re'' \mg \stemDown re, \stemNeutral
+    \stemUp re,,,8 \md \stemDown re'' \mg \stemDown re, \stemNeutral
     <sold, sold'> <si si'> <dod dod'> |
     \stemUp re, \md \stemDown re'' \mg \stemDown re, \stemNeutral
     <sold, sold'> <si si'> <dod dod'> |

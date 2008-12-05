@@ -6,35 +6,8 @@
 %------------------------------------------------------------------%
 
 
-%% TODO: improve indentation, and use a markup function.
-%% Nope -- better: redefine BookTitleMarkup or whatever.
-
-OperaTitre = \markup  {
-\center-column {\fontsize #8.5 \OperaTitreTexte
-\fontsize #5 \OperaSousTitreTexte }
-}
-
-OperaLivret = \markup  {
-\fontsize #5 \OperaLivretTexte 
-}
-
-OperaPartition = \markup  {
-\fontsize #5 \OperaPartitionTexte
-}
-
-OperaNotice = \OperaNoticeTexte
-
-FullScore = "Partitura"
-
-Reduction = "Version avec piano"
-
-Livret = "Paroles et didascalies"
-
+%% TODO: junk this.
 %%%%%%
-
-PrologueTitre = \markup  {
-\fill-line { \center-column {\fontsize #10 \PrologueTitreTexte " "}}
-}
 
 OuvertureTitre = \markup  {
 \fill-line { \center-column {\fontsize #10 "Ouverture" " "}}
@@ -60,7 +33,9 @@ ActeUnSceneQuatreTitre = \markup {
 EntracteTitre = \markup {
   \fill-line {
     \center-column {\fontsize #10 \EntracteTitreTexte " "
-    \Couronne " "}}
+  %  \Couronne " "
+    }
+  }
 }
 
 ActeDeuxSceneUnTitre = \markup {

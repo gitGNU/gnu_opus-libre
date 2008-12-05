@@ -55,7 +55,10 @@
 %%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
 
 \paper {
-  \includePaper
+  \includePaper 
+  bookTitleMarkup = \NiceBookTitleMarkup 
+  oddFooterMarkup = \NiceOddFooterMarkup
+  scoreTitleMarkup = \NiceScoreTitleMarkup
 }
 
 \layout {
@@ -1011,17 +1014,20 @@ ActeDeuxSceneDeux = {
 \book {
   \header {
     title = \OperaTitre
-    subtitle = \FullScore
-    poet = \OperaLivret
+    subtitle = \OperaSousTitre
+    libretto = \OperaLivret
     composer = \OperaPartition
     tagline = \OperaNotice
-  } %{
+    illustration = \Couronne
+    scoretype = \FullScore
+    copyright = \Copyright
+  } %
   \score {
     \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %{
   \score {
     \Ouverture
     \header {

@@ -802,7 +802,7 @@ EntracteSopranoDeuxTexte = \lyricmode {
   j'ai -- me cette es -- thé -- ti -- que_;
   ma -- gni -- fi -- que, ma -- gni -- fi -- que,
   ces pierres sont ma -- gni -- fi -- ques,
-  au -- the -- ti -- ques, au -- then -- ti -- ques,
+  au -- then -- ti -- ques, au -- then -- ti -- ques,
   des dia -- mants au -- then -- ti -- ques.
   
   En -- nuy -- eux, très en -- nuy -- eux_;
@@ -832,8 +832,8 @@ EntracteTenorTexte = \lyricmode {
   
   Hé -- mo -- rra -- gi -- que, hé -- mo -- rra -- gi -- _ que,
   une mort hé -- mo -- rra -- gi -- que_;
-  é -- lec -- tri -- que, é -- lec -- tri -- que,
-  ou la chaise é -- lec -- tri -- _ que.
+  é -- lec -- tri -- _ que, é -- lec -- tri -- que,
+  ou la chaise é -- lec -- tri -- que.
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
   Le fai -- re tom -- ber…
@@ -863,13 +863,13 @@ EntracteBarytonUnTexte = \lyricmode {
   A -- mné -- si -- que, a -- mné -- si -- que,
   pour -- quoi suis_-_je a -- mné -- si -- que_;
   sym -- pa -- thi -- que, sym -- pa -- thi -- _ que,
-  per -- sonne n'est sym -- pa -- thi --que_;
+  per -- sonne n'est sym -- pa -- thi -- que_;
   dra -- ma -- ti -- que, dra -- ma -- ti -- _ que,
   en cette heure dra -- ma -- ti -- que_;
   fa -- ti -- di -- que, fa -- ti -- di -- _ que,
   ce mo -- ment fa -- ti -- di -- que_;
   lu -- na -- ti -- que, lu -- na -- ti -- _ que,
-  car ce Roi lu -- na -- ti --que_;
+  car ce Roi lu -- na -- ti -- que_;
   ty -- ra -- nni -- que, ty -- ra -- nni -- _ que,
   m'a l'air bien ty -- ra -- nni -- que.
   

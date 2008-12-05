@@ -507,10 +507,10 @@ stroke
 grestore
 grestore"
 
-Couronne = \markup \with-dimensions #'(0 . 15) #'(-12 . 8)
+Couronne = \markup \with-dimensions #'(0 . 30) #'(-24 . 16)
 \postscript #"
 0 8 translate
-2 -2 scale
+4 -4 scale
 0 0 0 setrgbcolor
 [] 0 setdash
 1 setlinewidth
