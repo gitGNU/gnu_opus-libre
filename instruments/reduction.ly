@@ -1947,6 +1947,69 @@ ActeUnSceneTroisTerMainGauche = {
   }
 }
 
+InterludeTroisMainDroite = {
+  \relative {
+    \clef bass
+    r8 <re, mib> r <re mib> r <re mib> <do' reb> <re, mib> |
+    r <re mib> r <re mib> <do' reb> <re, mib> |
+    r4 <re mib>2.\laissezVibrer R2.
+    <do mib si'>8 <do mib si'>4 <do mib si'> <do mib si'> <do mib si'>8~|
+    <do mib si'> <do mib si'>4 <do mib si'> <do mib si'>8 |
+    <mi! sol do mib> <mi sol do mib>4 <mi sol do mib> <mi sol do mib> <mi sol do mib>8 |
+    <mi sol do mib> <mi sol do mib>4 <mi sol do mib> <mi sol do mib>8 \clef treble |
+    <lad dod fad la!>16 <lad dod fad la>8 <lad dod fad la> <lad dod fad la>
+    <lad dod fad la> <lad dod fad la> <lad dod fad la> <la do fa lab> <si re sol sib>16 |
+    <lad dod fad la> <lad dod fad la>8 <lad dod fad la> <lad dod fad la> <la do fa lab>
+    <sol! sib reb solb> <lad dod fad la>16 |
+    <fad' la do fa!> <fad la do fa>8 <fad la do fa> <fad la do fa>
+    <la do fa lab> <sol sib mib solb> <lad dod fad la>16 |
+    <fad la do fa> <fad la do fa>8 <fad la do fa> <fad la do fa> <fad la do fa>16 |
+    <si mi sol do> <si mi sol do>8 <si mi sol do> <si mi sol do> <si mi sol do>
+    <la re fa sib> <re? fa sib reb>16 |
+    <si mi sol do> <si mi sol do>8 <si mi sol do> <si mi sol do> <si mi sol do>16 |
+    <mi? sol do mib> <mi sol do mib>8 <mi sol do mib>16
+    <mi sol do mib> <mi sol do mib>8 <mi sol do mib>16 |
+    <sol do mib lab>16 <sol do mib lab>8 <sol do mib lab>16
+    <do mib lab si> <do mib lab si>8 <do mib lab si>16 \clef bass
+    s2*2 \clef treble s2 <fad, la do fa!>16 r r8 r4 |
+  }
+}
+
+InterludeTroisMainGauche = {
+  \relative { \clef bass
+    sol,4 mi8 r r2 sol4 mi8 r r4 |
+    sol8 mi sol mi sol mi sol lab sol mi sol mi sol lab |
+    sol mi sol mi sol mi sol lab sol mi sol mi sol lab |
+    <sol si> <mi sold> <sol si> <mi sold> <sol si> <mi sold> <sol si> <lab do> |
+    <sol si> <mi sold> <sol si> <mi sold> <sol si> <lab do> |
+    <sol si dod fa> <mi sold re'> <sol si dod fa> <mi sold re'>
+    <sol si dod fa> <mi sold re'> <sol si dod fa> <lab do re solb> |
+    <sol si dod fa> <mi sold re'> <sol si dod fa> <mi sold re'>
+    <sol si dod fa> <lab do re solb> |
+    <dod fa sol si> <sib re lab'> <dod fa sol si> <sib re lab'>
+    <dod fa sol si> <re solb lab do> |
+    <dod fa sol si> <sib re lab'> <dod fa sol si> <re solb lab do> |
+    <sold si do red sol> <mi, sol mi'> <sold' si do red sol> <mi, sol mi'>
+    <sold' si do red sol> <la sold'> |
+    <sold si do red sol> <mi, sol mi'> <sold' si do red sol> <la sold'> \clef treble |
+    <si! re mi sib'> <sold sol'!> <si! re mi sib'> <do si'> |
+    <mib solb lab re> <do si'> <mib solb lab re> <mi! mib'> \clef bass |
+    \stemUp <sol,,, sol'>32 \md \stemDown <sol' sol'> \mg \stemUp <mi, mi'> \md \stemDown <mi' mi'>
+    \mg \stemUp <sol, sol'> \md \stemDown <sol' sol'> \mg \stemUp <sold, sold'> \md \stemDown <sold' sold'>
+    \mg \stemUp <si, si'> \md \stemDown <si' si'> \mg \stemUp <sold, sold'> \md \stemDown <sold' sold'>
+    \mg \stemUp <si, si'> \md \stemDown <si' si'> \mg \stemUp <do, do'> \md \stemDown <do' do'> |
+    \mg \stemUp <mib, mib'> \md \stemDown <mib' mib'> \mg \stemUp <do, do'> \md \stemDown <do' do'>
+    \mg \stemUp <mib, mib'> \md \stemDown <mib' mib'> \mg \stemUp <mi, mi'> \md \stemDown <mi' mi'>
+    \mg \stemUp <sol, sol'> \md \stemDown <sol' sol'> \mg \stemUp <mi, mi'> \md \stemDown <mi' mi'>
+    \mg \stemUp <sol, sol'> \md \stemDown <sol' sol'> \mg \stemUp <sold, sold'> \md \stemDown <sold' sold'> |
+    \mg \stemUp <si, si'> \md \stemDown <sol' sol'> <si si'> \mg \stemUp <sib, sib'>
+    \md \stemDown <sib' sib'> <re re'> \mg \stemUp <dod, dod'> \md \stemDown <dod' dod'>
+    <fa fa'> \mg \stemUp \clef treble <mi, mi'> \md \stemDown <sold' sold'> \mg \stemUp <sol, sol'>
+    \md \stemDown <si' si'> \mg \stemUp <sib, sib'> \md \stemDown <re' re'> \mg \stemUp <dod, dod'> |
+    \mg \stemNeutral <sol' sib>16 \clef bass <la,, la'> r8 r4 |
+  }
+}
+
 ActeUnSceneQuatreMainDroite = {
   \relative {
     \partial 4 r16 la'' la la <fa la re>4 <mi la do> <fa la re>8 |

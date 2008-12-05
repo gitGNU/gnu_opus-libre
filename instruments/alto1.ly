@@ -65,7 +65,7 @@ PrologueAltoUn = { \AltoUn
     lab, r lab r sol sol, |
     lab' lab, r sol' sol, r \clef alto
     %%FIXME: grace synchronization bug
-    \acciaccatura s16 sol r4 | R4.
+    \acciaccatura s16 sol8 r4 | R4.
     r4 sol'8\p r do, r |
     r4 sol'8 r do, r |
     r4 sol'8 r re r |

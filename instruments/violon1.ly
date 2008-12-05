@@ -129,7 +129,7 @@ ActeUnSceneUnViolonUn = { \ViolonUn
     R2*2 fad4:32~ fad8 r r4 |
     \ttt {si,16\pp( mib, la,) la( mib' si')}
     \ttt {si( mib, la,) la( mib' si')}
-    \ttt {\similesi mib, la, la mib' si'}
+    \ttt {\simile si mib, la, la mib' si'}
     \ttt {si mib, la, la mib' si'} |
     \ttt {si mib, la, la mib' si'}
     \ttt {si mib, la, la mib' si'} si8 r |
