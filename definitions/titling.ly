@@ -8,87 +8,6 @@
 %%% The following functions were provided by
 %%% Nicolas Sceaux <nicolas.sceaux@free.fr>
 %%%
-%%% Options
-%%% =======
-%%%   use-rehearsal-numbers
-%%%     If #t, add rehearsal numbers to piece titles.
-%%%
-%%% Scheme functions
-%%% ================
-%%%   (add-toplevel-markup parser text)
-%%%     add a markup at current point.
-%%%
-%%%   (add-toc-item parser markup-symbol text)
-%%%     add an item in the table of content, using markup style
-%%%     `markup-symbol' and `text', referencing the page occuring
-%%%     at current point.
-%%%
-%%%   (rehearsal-number)
-%%%     return a new x.y rehearsal number.
-%%%
-%%%   (increase-rehearsal-major-number)
-%%%     increase the major part of rehearsal numbers (ie the x in x.y)
-%%%     and reset the minor part.
-%%%
-%%% Markup commands
-%%% ===============
-%%%
-%%%   \act <title>
-%%%     Markup command to be used for act titles
-%%%
-%%%   \scene <title>
-%%%     Markup command to be used for scene titles
-%%%
-%%%   \title <title>
-%%%     Markup command to be used for piece titles
-%%%
-%%%   \scene-desription <markup>
-%%%     Markup command to be used for entering a scene description.
-%%%
-%%% Table of contexts \paper variables
-%%% ==================================
-%%%
-%%%   tocTitle
-%%%     a string used as the table of contents title
-%%%
-%%%   tocPieceMarkup
-%%%     markup used for pieces
-%%%
-%%%   tocSceneMarkup
-%%%     markup used for scene titles
-%%%
-%%%   tocActMarkup
-%%%     markup used for act titles
-%%%
-%%% Music functions
-%%% ===============
-%%% Piece titling:
-%%%
-%%%   \pieceToc <title-markup>
-%%%     add a piece title in the table of contents.
-%%%
-%%%   \pieceTocTitle <title-string>
-%%%     add the piece title in the table of contents and at current 
-%%%     point of the book (upper cased).
-%%%
-%%%   \pieceTitle <title-string>
-%%%     add the upper cased piece title at the current point of the book.
-%%%
-%%%   \pieceTocAndTitle <toc-markup> <title-markup>
-%%%     add a piece title in the table of content, and a different
-%%%     title at the current point of the book.
-%%%
-%%% Sectionning:
-%%%
-%%%   \opusTitle <title-string>
-%%%
-%%%   \ouverture <title-string>
-%%%   \act <title-string>
-%%%   \scene <title-string>
-%%%   \sceneDescription <description-markup>
-%%%
-%%%   \actEnd
-%%%     Print an act end text.
 
 
 
@@ -478,92 +397,154 @@ sceneDescription =
 }
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Title page
 %%%
 \paper {
   bookTitleMarkup = \markup \when-property #'header:title \column {
-    \vspace #9
-    \fill-line { \fontsize #11 \italic \fromproperty #'header:composer }
+    \vspace #6
+    \fill-line { \fontsize #8 \italic \fromproperty #'header:composer }
     \vspace #1
-    \fill-line { \fontsize #11 \italic \fromproperty #'header:poet }
-    \vspace #9
-    \fill-line { \fontsize #13 \fromproperty #'header:title }
-    \vspace #9
+    \fill-line { \fontsize #8 \italic \fromproperty #'header:poet }
+    \vspace #6
+    \fill-line { \fontsize #10 \fromproperty #'header:title }
+    \vspace #6
     \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
-    \vspace #9
-    \fill-line { \fontsize #6 \fromproperty #'header:date }
+    \vspace #6
+    \fill-line { \fontsize #5 \fromproperty #'header:date }
     \vspace #1 
-    \on-the-fly #(lambda (layout props arg)
-                   (if (*part*)
-                       (interpret-markup layout props
-                         (markup #:fill-line (#:column (#:vspace 6
-                                                        #:fill-line (#:fontsize 6 (*part-name*))))))
-                       empty-stencil))
     \fill-line {
       \when-property #'header:arrangement \column {
-        \vspace #6
+        \vspace #5
         \fill-line { \fontsize #3 \fromproperty #'header:arrangement }
       }
     }
   }
+  scoreTitleMarkup = \markup \null
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table of contents
+%%%
+#(define-markup-command (paper-prop layout props name default)
+  (symbol? markup?)
+  "Get the value of a \\paper property, or defaults to some value"
+  (let ((val (ly:output-def-lookup layout name)))
+    (interpret-markup layout props (if (markup? val)
+                                      val
+                                      default))))
+\paper {
+  tocTitleMarkup = \markup \column {
+    \vspace #2
+    \fontsize #6 \fill-line { \paper-prop #'tocTitle "TABLE OF CONTENTS" }
+    \vspace #2
+  }
+  tocPieceMarkup = \markup \fill-line {
+    \line-width-ratio #0.7 \fill-line {
+      \line { \fromproperty #'toc:text }
+      \fromproperty #'toc:page
+    }
+  }
+  tocSectionMarkup = \markup \italic \column {
+    \fill-line { \fromproperty #'toc:text }
+  }
+  tocChapterMarkup = \markup \large \italic \column {
+    \vspace #1
+    \fontsize #2 \fill-line { \fromproperty #'toc:text }
+    \vspace #1
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Markup commands for page headers
+%%%
+#(define-public add-odd-page-header-text #f)
+#(define-public add-even-page-header-text #f)
+#(define header-markup-aux #f)
+#(let ((odd-label-header-table (list))
+       (odd-page-header-table (list))
+       (even-label-header-table (list))
+       (even-page-header-table (list)))
+  (set! header-markup-aux
+   (lambda (layout props odd)
+     (define (page-text page-number table)
+       (if (null? table)
+           ""
+           (let* ((elment (car table))
+                  (p (car elment))
+                  (text (cadr elment))
+                  (display-1st (caddr elment)))
+             (cond ((and (= page-number p) (not display-1st)) #f)
+                   ((>= page-number p) text)
+                   (else (page-text page-number (cdr table)))))))
+     (ly:make-stencil
+       `(delay-stencil-evaluation
+          ,(delay (ly:stencil-expr
+                    (begin
+                     (if (or (and odd (null? odd-page-header-table))
+                             (and (not odd) (null? even-page-header-table)))
+                         (let ((page-header-table (list)))
+                          (for-each (lambda (label-header)
+                                      (let* ((label (car label-header))
+                                             (text-disp (cdr label-header))
+                                             (table (ly:output-def-lookup layout 'label-page-table))
+                                             (label-page (and (list? table) (assoc label table)))
+                                             (page-number (and label-page (cdr label-page)))
+                                             (prev-value (and page-number (assoc page-number page-header-table))))
+                                        (if (not prev-value)
+                                            (set! page-header-table (cons (cons page-number text-disp)
+                                                                          page-header-table))
+                                            (set! page-header-table
+                                                  (assoc-set! page-header-table
+                                                              page-number
+                                                              (list (car text-disp) (caddr prev-value)))))))
+                                    (reverse (if odd odd-label-header-table even-label-header-table)))
+                          (if odd
+                              (set! odd-page-header-table page-header-table)
+                              (set! even-page-header-table page-header-table))))
+                     (interpret-markup layout props
+                       (let* ((page-number (chain-assoc-get 'page:page-number props -1))
+                              (text (page-text page-number (if odd odd-page-header-table even-page-header-table)))
+                              (text-markup (markup #:italic (or text "")))
+                              (page-number-markup (number->string page-number)))
+                         (cond ((or (= 1 page-number) (not text)) (markup #:null))
+                               (odd (markup #:fill-line (#:null text-markup page-number-markup)))
+                               (else (markup #:fill-line (page-number-markup text-markup #:null))))))))))
+       (cons 0 0)
+       (ly:stencil-extent (interpret-markup layout props "XXX") Y))))
+  (set! add-odd-page-header-text
+   (lambda (parser text display-1st)
+     (let ((label (gensym "header")))
+       (set! odd-label-header-table
+             (cons (list label text display-1st)
+                   odd-label-header-table))
+       (collect-music-for-book parser
+         (make-music 'Music
+          'page-marker #t
+          'page-label label)))))
+  (set! add-even-page-header-text
+   (lambda (parser text display-1st)
+     (let ((label (gensym "header")))
+       (set! even-label-header-table
+             (cons (list label text display-1st)
+                   even-label-header-table))
+       (collect-music-for-book parser
+         (make-music 'Music
+          'page-marker #t
+          'page-label label))))))
+
+#(define-markup-command (odd-header layout props) ()
+   (header-markup-aux layout props #t))
+
+#(define-markup-command (even-header layout props) ()
+   (header-markup-aux layout props #f))
+
+\paper {
+  evenHeaderMarkup = \markup \even-header
+  oddHeaderMarkup = \markup \odd-header
 }
 
 
-\layout {
-
-
-  \context {
-    \Score
-    \override BarNumber #'padding = #2 
-    \override InstrumentName #'space-alist = #'((left-edge extra-space . 2.0))
-    \override VerticalAlignment #'max-stretch = #ly:align-interface::calc-max-stretch
-    \accepts "StaffGroupNoBar"
-    skipBars = ##t
-  }
-  \context {
-    \StaffGroup
-    \name StaffGroupNoBar
-    \description "Like StaffGroup, but without spanbar"
-    \remove "Span_bar_engraver"
-    \accepts "StaffGroupNoBracket"
-    \accepts "InnerStaffGroup"
-    \accepts "InnerChoirStaff"
-  }
-  \context {
-    \StaffGroup
-    \name StaffGroupNoBracket
-    \description "Like StaffGroup, but without brackets"
-    \remove "System_start_delimiter_engraver"
-  }
-  \context {
-    \ChoirStaff
-    \consists "Instrument_name_engraver"
-  }
-  \context {
-    \Staff
-    \name Staff
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 4)
-    %% Figured bass
-    figuredBassAlterationDirection = #RIGHT
-    \override BassFigureAlignment #'stacking-dir = #UP
-    \override BassFigureAlignmentPositioning #'direction = #DOWN
-  }
-  RemoveEmptyStaffContext = \context {
-    \Staff
-    \remove "Axis_group_engraver"
-    \consists "Hara_kiri_engraver"
-    \override Beam #'auto-knee-gap = #'()
-    \override VerticalAxisGroup #'remove-empty = ##t
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 4)
-  }
-  \context {
-    \Staff
-    \name SmallStaff
-    \description "Staff with small notes"
-    fontSize = #-2
-    \override StaffSymbol #'staff-space = #(magstep -2)
-  }
-}
 
 \header {
   maintainer = "Valentin Villenave"

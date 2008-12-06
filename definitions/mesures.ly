@@ -895,6 +895,40 @@ EntracteMesures = {
   \time 4/4 R1*2
   \time 3/4 R2.*2 \bar "||"
   \time 4/4 R1*14 \bar "||"
+  \time 3/4
+      \tempo "Andante tranquillo" 4 = 66
+            R2.*5
+  \time 2/4 R2
+  \time 3/4 R2.
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 2/4 R2
+  \time 2/2
+      \tempo "poco a poco accellerando..."
+            R1*5
+  \time 3/4 R1.*4
+  \time 2/2 R1
+  \time 3/4 R2.
+      \tempo "A Tempo" 4 = 66
+            R2.*9
+      \tempo "Un poco più mosso" 4 = 80
+            R2.*5
+  \time 4/4
+      \tempo "Andantino" 4 = 92
+            R1
+  \time 2/4 R2
+  \time 4/4 R1
+  \time 2/4 R2
+  \time 4/4 R1
+  \time 2/4 R2
+  \time 4/4 R1
+  \time 3/4 R2.
+  \time 3/2
+      \tempo "Largo non troppo" 2 = 52
+            R1.*18
+  \time 2/2 R1*2
+  \time 3/4 R2.
+  \time 2/4 R2    \bar "|."
 }
 
 ActeDeuxSceneUnMesures = { 

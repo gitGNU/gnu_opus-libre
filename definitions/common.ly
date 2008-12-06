@@ -5,16 +5,7 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Paper size -----------------------------------------------------%
-% #(set-default-paper-size "a4" 'landscape)
-
-%% Page breaking --------------------------------------------------%
-#(define page-breaking ly:minimal-breaking)
-
-%% Staff size -----------------------------------------------------%
-#(set-global-staff-size 14)
 
 %% Time Signatures layouts ----------------------------------------%
 
@@ -40,12 +31,6 @@ middleTimeSig = {
   \override TimeSig.TimeSignature #'font-size = #3
   \override TimeSig.VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 5)
 }
-
-PianoDynamics = {
-  \override Dynamics.TimeSignature #'font-size = #1
-  \override Dynamics.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
-}
-
 
 
 %%%%%%%%%%%%%%%%%%%% Functions initialization %%%%%%%%%%%%%%%%%%%%%%

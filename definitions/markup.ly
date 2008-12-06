@@ -7,43 +7,6 @@
 
 %%% The following functions were provided by
 %%% Nicolas Sceaux <nicolas.sceaux@free.fr>
-%%%
-%%% Markup commands
-%%% ===============
-%%%   \vspace <amount>
-%%%     like \hspace, but for vertical space
-%%%
-%%%   \smallCaps <string>
-%%%     like built-in \smallCaps, but dealing with accented letters
-%%%
-%%%   \when-property <symbol> <markup>
-%%%     if symbol is find in properties, interpret the markup
-%%%     otherwise, return an empty stencil
-%%%
-%%%   \line-width-ratio <ratio> <markup>
-%%%     interpret markup with a line-width set to current line-width * ratio
-%%%
-%%%   \copyright
-%%%     build a copyight line, using the maintainer and copyrightYear
-%%%     header variables.
-%%%
-%%%   \wordwrap-center <markup-list>
-%%%     like wordwrap, but center align the lines
-%%%
-%%% Markup lines commands
-%%% =====================
-%%%   \wordwrap-center-lines <markup-list>
-%%%     make a markup list composed centered lines of text.
-
-
-
-
-#(define-markup-command (vspace layout props amount) (number?)
-  "This produces a invisible object taking vertical space."
-  (let ((amount (* amount 3.0)))
-    (if (> amount 0)
-        (ly:make-stencil "" (cons -1 1) (cons 0 amount))
-        (ly:make-stencil "" (cons -1 1) (cons amount amount)))))
 
 #(define-markup-command (copyright layout props) ()
   (let* ((maintainer (chain-assoc-get 'header:maintainer props))

@@ -6,7 +6,7 @@
 %------------------------------------------------------------------%
 
 
-OperaTitre= "Affaire Étrangère"
+OperaTitre= "Affaire étrangère"
 OperaSousTitre= "Opéra en deux actes"
 OperaLivret= "Lewis Trondheim"
 OperaPartition= "Valentin Villenave"
@@ -15,7 +15,7 @@ Copyright = "Lewis Trondheim et Valentin Villenave, 2008."
 
 BigNotice = \markup { 
   \override #'(box-padding . 1.0)
-  \translate #'(-4 . -160)  \fill-line {
+  \translate #'(-4 . -190)  \fill-line {
     \box \center-column {
       \justify {
         © Lewis Trondheim et Valentin Villenave, 2008,
@@ -27,9 +27,12 @@ BigNotice = \markup {
         Cette partition est publiée suivant les termes de la 
         \with-url #"http://valentin.villenave.net/opera"
         \line { Licence Opéra Libre,}
-        version 0.2 ou ultérieure. Vous pouvez la copier,
+        version 0.2 ou ultérieure, (dont le texte intégral est
+        consultable dans le code source ou à
+        l'adresse \with-url #"http://valentin.villenave.net/opera"
+        \line { valentin.villenave.net/opera }). Vous pouvez la copier,
         la modifier et la jouer
-        librement ; dans sa version actuelle,
+        librement. Dans sa version actuelle,
         cette licence n'autorise aucun
         usage commercial de l'histoire ou des personnages. Veuillez contacter
         l'un des auteurs si vous souhaitez en faire un tel usage.
