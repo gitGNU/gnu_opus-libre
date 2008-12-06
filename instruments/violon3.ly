@@ -176,54 +176,54 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     
     %%% Agitato %%%
     \ten re,1~\ff re~ re2 r | R1 sold,4\f\upbow si2 sold4 si2 re4-> r |
-    r4 dod8-.\mf dod-. re4-. r r2 | R1*2
-    r4 la8 la sib4 r r2 | R1*3
-    r4 dod r1 | R1*2 R1.*3
-    r4 r8 mi16 mi red4 r |
-    r4 mi16 mi red8 mi16 mi red8 r4 r2 |
-    mi1. R1.*2
+    r4 \ind #"secco" dod8-.\mf dod-. re4-. r r2 | R1*2
+    r4 la8-. la-. sib4-. r r2 | R1*3
+    r4 dod---> r1 | R1*2 R1.*3
+    r4 r8 \st {mi16 mi red4 r |
+    r4 mi16 mi red8 mi16 mi red8} r4 r2 |
+    \ten mi1.\f R1.*2
     
     %%% Allegro non troppo %%%
-    \pizz sib'4 r r2 | R2. R1
-    \arco sib8 do sib do sib do sib do | R1
-    sib8 sib sib sib sib sib sib sib |
+    \pizz sib'4\mf r r2 | R2. R1
+    \arco sib8-.\pp do-. sib-. do-. sib-. do-. sib-. do-. | R1
+    sib8-. sib-. sib-. sib-. \simile sib sib sib sib |
     sib sib sib sib sib sib sib sib |
     sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib |
-    sib sib sib sib sib sib |
+    sib\mp sib sib sib sib sib |
     sib sib sib sib sib sib sib sib |
-    sib sib sib sib sib sib |
-    sib sib sib sib sib sib sib sib |
-    r4 mi,8 dod'4. | r8 re, dod2. |
-    sol2:32~ sol2~ sol2. r4 |
-    <sol re'>8 <sol re' la'> <sol re'> <sol re' la'>
+    sib\mf\< sib sib sib sib sib |
+    sib sib sib sib sib sib sib sib\! |
+    r4 mi,8\f\<( dod'4.\!) | r8 re,\mf( dod2.) |
+    sol2:32~\mp\< sol2~\mf\> sol2.\p r4 |
+    <sol re'>8\mf <sol re' la'> <sol re'> <sol re' la'>
     <sol re'> <sol re' la'> <sol re'> <sol re' la'> R1
-    <sol re'>8 <sol re' la'> <sol re'> <sol re' la'>
+    <sol re'>8\mf <sol re' la'> <sol re'> <sol re' la'>
     <sol re'> <sol re' la'> R2.*2
     R1*6
     
     %%% Moderato %%%
-    do8[ r16 do] do8 r do[ r16 do] do8[ r16 do] | 
-    do8[ r16 do] do8 r do[ r16 do] do8 r |
-    do8[ r16 do] sib[ do r do] sib8[ r16 do] |
-    sib8[ r16 do] sib8[ r16 do] sib8[ r16 do] |
+    do8--\p[ r16 do-.] do8-- r do--[ r16 do-.] do8--[ r16 do-.] | 
+    do8--[ r16 \simile do] do8 r do[ r16 do] do8 r |
+    do8[ r16 do] sib-.[ do-. r do] sib8--[ r16 do-.] |
+    sib8--[ r16 \simile do] sib8[ r16 do] sib8[ r16 do] |
     sib8[ r16 do] sib8[ r16 do] do8[ r16 do] do8[ r16 do] |
     sib8[ r16 do] sib8[ r16 do] sib8[ r16 do] |
     sib8[ r16 do] do8[ r16 do] sib8[ r16 do] sib8[ r16 do] |
     sib8[ r16 do] sib8[ r16 do] sib8[ r16 do] |
     do8[ r16 do] do8[ r16 do] sib8[ r16 do] sib8[ r16 do] |
-    sib8[ r16 do] sib8 do16 sib r8 do16 sib |
-    r8 do16 sib r do sib8 r16 do sib8 r16 do sib8 |
+    sib8[ r16 do\pp] sib8 do16-. sib-. r8 do16-. sib-. |
+    r8 \simile do16 sib r do sib8 r16 do sib8 r16 do sib8 |
     do16 sib r8 sib16 do sib8 r16 do sib8 |
     do16 sib r8 do16 sib r8 do16[ sib r do] sib8[ r16 do] |
     sib8[ r16 do] sib8 do16 sib r8 r16 do |
     sib8[ r16 sib] r8 do16 sib r8 do16 sib r8 sib |
-    r16 do sib8 r8 do16 sib r do sib8 |
+    r16 do\ppsempre sib8 r8 do16 sib r do sib8 |
     r16 do sib8 r16 do sib8 do16 sib r8 do16 sib r8 |
     do16[ sib r do] sib8[ r16 do] sib8[ r16 do] |
-    sib8 do16 sib r8 do16 do | sib8 r r2 |
-    \repeat tremolo 16 {sib32 do} |
-    sib8 r16 do32 do sib8 r16 do32 do |
+    sib8 do16 sib r8 do16 do | sib8\sfz r r2 |
+    \repeat tremolo 16 {sib32\pp\< do} |
+    sib8->\f r16 do32-. do-. sib8-> r16 \simile do32 do |
     sib8 r16 do32 do sib16 r \t {do16 do sib} | R2*2
     
     %%% Allegro marcato %%%

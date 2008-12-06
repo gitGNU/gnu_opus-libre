@@ -170,52 +170,52 @@ ActeUnSceneUnViolonDeux = { \ViolonDeux
     
     %%% Agitato %%%
     \ten re,1~\ff re~ re2 r | R1 dod4\f\upbow mi2 dod4 re2 re4-> r |
-    r4 mib8-.\mf mib-. re4-. r r2 | R1*2
-    r4 mib8 mib re4 r r2 | R1*3
-    r4 re r1 | R1*2 R1.*3
-    r4 r8 red16 red mi4 r |
-    r4 red16 red mi8 red16 red mi8 r4 r2 |
-    re'1. R1.*2
+    r4 \ind #"secco" mib8-.\mf mib-. re4-. r r2 | R1*2
+    r4 mib8-. mib-. re4-. r r2 | R1*3
+    r4 re---> r1 | R1*2 R1.*3
+    r4 r8 red16 \st {red mi4 r |
+    r4 red16 red mi8 red16 red mi8} r4 r2 |
+    \ten re'1.\f R1.*2
     
     %%% Allegro non troppo %%%
-    \pizz sib4 r r2 | R2. R1
-    \arco do8 sib do sib do sib do sib | R1
-    fa'16 fa la la fa fa la la fa fa la la fa fa la la |
+    \pizz sib4\mf r r2 | R2. R1
+    \arco do8-.\pp sib-. do-. sib-. do-. sib-. do-. sib-. | R1
+    \ind #"staccato leggiero" fa'16\ppsempre fa la la fa fa la la fa fa la la fa fa la la |
     fa fa la la fa fa la la fa fa la la fa fa la la |
-    sol sol la la sol sol la la sol sol la la |
+    sol\p sol la la sol sol la la sol sol la la |
     sol sol la la sol sol la la sol sol la la sol sol la la |
-    sol sol la la sol sol la la sol sol la la |
+    sol\mp sol la la sol sol la la sol sol la la |
     sol sol la la sol sol la la sol sol la la sol sol la la |
-    do, do do do do do do do do do do do |
-    do do do do do do do do do do do do do do do do |
-    r4 mi,8 dod'4. | r8 re, dod2. |
-    sol2:32~ sol2~ sol2. r4 |
-    re'16 re la' la re, re la' la re, re la' la re, re la' la | R1
-    re,16 re la' la re, re la' la re, re la' la | R2.*2
+    do,\mf\< do do do do do do do do do do do |
+    do do do do do do do do do do do do do do do do\! |
+    r4 mi,8\f\<( dod'4.\!) | r8 re,\mf( dod2.) |
+    sol2:32~\mp\< sol2~\mf\> sol2.\p r4 |
+    re'16\mf re la' la re, re la' la re, re la' la re, re la' la | R1
+    re,16\mf re la' la re, re la' la re, re la' la | R2.*2
     R1*6
     
     %%% Moderato %%%
-    sib8[ r16 do] sib8 r sib[ r16 do] sib8[ r16 do] | 
-    sib8[ r16 do] sib8 r sib[ r16 do] sib8 r |
-    sib8[ r16 sib] do[ sib r do] sib8[ r16 sib,] |
-    do8[ r16 sib] do8[ r16 sib] do8[ r16 sib] |
+    sib8--\p[ r16 do-.] sib8-- r sib--[ r16 do-.] sib8--[ r16 do-.] | 
+    sib8--[ r16 \simile do] sib8 r sib[ r16 do] sib8 r |
+    sib8[ r16 sib] do-.[ sib-. r do] sib8--[ r16 sib,-.] |
+    do8--[ r16 \simile sib] do8[ r16 sib] do8[ r16 sib] |
     do8[ r16 sib] do8[ r16 do'] sib8[ r16 do] sib8[ r16 sib,] |
     do8[ r16 sib] do8[ r16 sib] do8[ r16 sib] |
     do8[ r16 do'] sib8[ r16 sib,] do8[ r16 sib] do8[ r16 sib] |
     do8[ r16 sib] do8[ r16 sib] do8[ r16 do'] |
     sib8[ r16 do] sib8[ r16 sib,] do8[ r16 sib] do8[ r16 sib] |
-    do8[ r16 sib] do8 sib16 do r8 sib16 do |
-    r8 sib16 do r sib do8 r16 sib do8 r16 sib do8 |
+    do8[ r16 sib\pp] do8 sib16-. do-. r8 sib16-. do-. |
+    r8 \simile sib16 do r sib do8 r16 sib do8 r16 sib do8 |
     sib16 do r8 do16 sib do8 r16 sib do8 |
     sib16 do r8 sib16 do r8 sib16[ do r sib] do8[ r16 sib] |
     do8[ r16 sib] do8 sib16 do r8 r16 sib |
     do8[ r16 do] r8 sib16 do r8 sib16 do r8 do |
-    r16 sib do8 r8 sib16 do r sib do8 |
+    r16 sib\ppsempre do8 r8 sib16 do r sib do8 |
     r16 sib do8 r16 sib do8 sib16 do r8 sib16 do r8 |
     sib16[ do r sib] do8[ r16 sib] do8[ r16 sib] |
-    do8 sib16 do r8 sib16 sib | do8 r r2 |
-    \repeat tremolo 16 {do32 sib} |
-    do8 r16 sib32 sib do8 r16 sib32 sib |
+    do8 sib16 do r8 sib16 sib | do8\sfz r r2 |
+    \repeat tremolo 16 {do32\pp\<( sib)} |
+    do8->\f r16 sib32-. sib-. do8-> r16 \simile sib32 sib |
     do8 r16 sib32 sib do16 r \t {sib16 sib do} | R2*2
     
     %%% Allegro marcato %%%
