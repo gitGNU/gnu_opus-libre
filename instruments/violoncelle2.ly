@@ -155,8 +155,8 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     R1 R2. \ten do2.~\pp do4 r r2 | do2.~ do4 r2 |
     
     %%% Agitato %%%
-    re8\fp re mib mib re re mib mib |
-    re4:8 mib: re: mib: re: mib: re: mib: |
+    \st {re8\fp re mib mib re re mib mib} |
+    \simile re4:8 mib: re: mib: re: mib: re: mib: |
     re: mib: re: mib: re: mib: re: mib: |
     re: mib: re: mib: |
     re: mib: re: mib: re: mib: |
@@ -165,37 +165,37 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     re: mib: re: mib: re: mib: re: mib: re: mib: re: mib: |
     re: mib: re: mib: re: mib: |
     re: mib: re: mib: re: mib: re: mib: |
-    mib8 fab mib fab mib fab mib fab mib fab mib fab |
+    mib8\mp\upbow( fab) \ind #"serioso" mib\upbow( fab) mib\upbow( fab) mib\upbow( fab) \simile mib fab mib fab |
     mib fab mib fab mib fab mib fab mib fab mib fab |
     mib fab mib fab mib fab mib fab mib fab mib fab |
     mib fab mib fab mib fab mib fab |
-    mib fab mib fab mib fab mib fab mib fab mib fab |
-    mi1. R1.*2
+    mib\< fab mib fab mib fab mib fab mib fab mib fab |
+    \ten mi1.\f R1.*2
     
     %%% Allegro non troppo %%%
-    \pizz sib''4 r r2 | R2. sib4 mi, r \t { \arco mi8 si dod} |
-    sib8 r r4 r2 | \pizz sib'4 mi, r \t { \arco mi8 dod si} |
-    sib8 r r4 r2 R1 R2.
-    \pizz sib'4 r r2 | R2. sib4 r r2 | sib4 sib sib sib r r2 |
-    \arco sol,2. sib4 r r2 |
-    r2 \ttt {sol16 lab sib dod red mi} \ttt {fad mi red dod sib lab} |
-    \ttt {sib dod red mi fad la} \ttt {si la fad mi red dod} sib8 r r4 |
+    \pizz sib''4\mf r r2 | R2. sib4 mi, r \t { \arco mi8--\mp\<\upbow( si-- dod--\!)} |
+    sib8-.-> r r4 r2 | \pizz sib'4\mf mi, r \t { \arco mi8--\upbow( dod-- si--)} |
+    sib8-.-> r r4 r2 R1 R2.
+    \pizz sib'4 r r2 | R2. sib4 r r2 | sib4\< sib sib sib\! r r2 |
+    \arco sol,2.\ff( sib4) r r2 |
+    r2 \ttt {sol16\< lab sib dod red mi} \ttt {fad\> mi red dod sib lab} |
+    \ttt {sib\< dod red mi fad la} \ttt {si\> la fad mi red dod} sib8\! r r4 |
     R1 \clef tenor |
-    re'8\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2.
-    re8\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2. \clef treble
-    \pizz la'4 la la la R1 la4 la la la R1 |
-    \arco fa16 fa r8 fa16 fa r8 fa16 fa r8 fa16 fa r8 | R1 \clef bass
+    re'8\pp\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2.
+    re8\pp\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2. \clef treble
+    \pizz la'4\p la la la R1 la4 la la la R1 |
+    \arco \st {fa16 fa r8 fa16 fa r8 fa16 fa r8 fa16 fa} r8 | R1 \clef bass
     
     %%% Moderato %%%
-    la,,4. sib8~ sib2 | la4. sib8~ sib2 |
+    la,,4.\mp sib8~ sib2 | la4. sib8~ sib2 |
     la8. sib16~ sib4. la8 | do2.~ do2 r |
     la8. sib16~ sib4~ sib16 la8. | do1~ |
-    do2 la4 | do2 r4 \t {la8 do sib} |
-    mib2.~ mib2 r | fa2.~ fa2 r | mib4 fa2 |
-    mib8. fa16~ fa2~ \t {fa8 mib fa} |
-    solb8. lab16~ lab2 | solb4 lab4~ lab16 solb8. lab mib16~ |
-    mib8. fa16~ fa8 solb~ solb16 lab8.~ | lab8 fa, solb lab |
-    si8 r r2 | R1 R2*4
+    do2 la4 | do2 r4 \t {la8--\<\upbow( do-- sib--)} |
+    \ten mib2.~\mf mib2 r | \ten fa2.~\p fa2 r | mib4\mp( fa2) |
+    mib8.( fa16~) fa2~ \t {fa8 mib--\<( fa--)} |
+    solb8.\mf( lab16~) lab2 | solb4-- lab4~-- lab16 solb8.-- lab-- mib16~---> |
+    mib8.\< fa16~---> fa8 solb~---> solb16 lab8.~--->\! | lab8 fa,->\f solb-> lab-> |
+    si8\sfz r r2 | R1 R2*4
     
     %%% Allegro marcato %%%
     <sib do>4 <sib do>16 <sib do> <sib do> <sib do> <sib do>4 r |

@@ -196,32 +196,32 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     re2:16 re: re: re: re: re: re: re: re: re: |
     re: re: re: re: re: re: re: |
     re: re: re: re: re: re: re: re: re: re: re: re: |
-    re: re: re: re: |
-    mib2. r4 r8 fab16 fab mib4 |
+    re: re: re:\< re:\! |
+    mib2.---> r4 r8 \st {fab16\mf fab mib4 |
     r8 mib r4 r16 fab mib8 r4 r8 mib r4 |
     r4 r8 fab16 fab mib4 r r2 |
     r4 r8 fab16 fab mib4 r |
-    r4 fab16 fab mib8 fab16 fab mib8 r4 r2 |
-    sol1. R1.*2 \clef treble |
+    r4 fab16 fab mib8 fab16 fab mib8} r4 r2 |
+    \ten sol1.\f R1.*2 \clef treble |
     
     %%% Allegro non troppo %%%
-    sib'16 sib sib sib sib sib sib sib sib sib sib sib sib sib sib sib |
+    \ind #"staccato leggiero" sib'16\pp sib sib sib sib sib sib sib sib sib sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib sib sib sib sib | sib8 r r4 r2 |
     sib16 sib sib sib sib sib sib sib sib sib sib sib sib sib sib sib |
     sib8 r r4 r2 |
-    sib8 mib sib mib sib mib sib mib | do mib do mib do mib do mib |
-    reb mib reb mib reb mib | reb mib reb mib reb mib reb mib |
-    re mi re mi re mi | re mi re mi re mi re mi |
-    mi fad mi fad mi fad | mi fad mi fad mi fad mi fad \clef alto |
-    r4 sib,,8 mi4. | r8 mi,8~ mi2. |
-    sol4 r r2 | r2 \ttt {red16 mi fad la si do} r4 |
-    <sol re' la'>4 re'8 sol, re' sol, re' sol, | R1
-    re'8 sol, re' sol, re' sol, | R2.*2 R1*2 |
-    do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 | R1
+    sib8-. mib-. sib-. mib-. \simile sib mib sib mib | do mib do mib do mib do mib |
+    reb\p mib reb mib reb mib | reb mib reb mib reb mib reb mib |
+    re\mp mi re mi re mi | re mi re mi re mi re mi |
+    mi\mf\< fad mi fad mi fad | mi fad mi fad mi fad mi fad\! \clef alto |
+    r4 sib,,8\f( mi4.) | r8 mi,8~\mf mi2. |
+    sol4 r r2 | r2 \ttt {red16( mi) fad( la si do)} r4 |
+    <sol re' la'>4\mf re'8 sol, re' sol, re' sol, | R1
+    re'8\mf sol, re' sol, re' sol, | R2.*2 R1*2 |
+    \st {do16\pp sib r8 do16 sib r8 do16 sib r8 do16 sib r8 | R1
     do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 | R1
     
     %%% Moderato %%%
-    do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 |
+    do16\ppsempre sib r8 do16 sib r8 do16 sib} r8 \simile do16 sib r8 |
     do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 |
     do16 sib r8 do16 sib r8 do16 sib r8 |
     do16 sib r8 do16 sib r8 do16 sib r8 |
@@ -240,9 +240,9 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 |
     do16 sib r8 do16 sib r8 do16 sib r8 |
     do16 sib r8 do16 sib r8 |
-    do16[ sib r sib] do16[ sib r sib] do16[ sib r sib] |
-    do16[ sib r sib] do16[ sib r sib] do16[ sib r sib] do16[ sib r sib] |
-    do16 sib r8 do16 sib r8 | do16 sib r8 do16 sib r8 | R2*2
+    do16-.\p[ sib-. r sib-.] do16-.[ sib-. r sib-.] \simile do16[ sib r sib] |
+    do16[ sib r sib] do16[ sib r sib] do16\<[ sib r sib] do16[ sib r sib] |
+    do16\mf sib r8 do16 sib r8 | do16 sib r8 do16 sib r8 | R2*2
     
     %%% Allegro marcato %%%
     <do, la' sold' re'>4 la' <do, la'> la' |
