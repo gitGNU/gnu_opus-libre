@@ -129,50 +129,50 @@ ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
     %%% Agitato %%%
     \ten mi1~\f mi2 r | R1*2
     mi'4-.\mf re2-- mi4-. si2->( do4) r |
-    re,2.--\mp r4 r2 | R1*2 fa16 reb8 solb16 fa?2. r2 |
-    R1*2 r2 r4 r8 re' | do8. fa'16 si,?2. r2 |
-    R1*2 mib,,1 r2 | R1.*2 r4 mi'!2 r4 | r mi2 r4 r2 |
-    si'1. sib1 r2 | R1.
+    re,2.--\mp r4 r2 | R1*2 fa16\mf( reb8) solb16-.\< fa?2.->\! r2 |
+    R1*2 r2 r4 r8 re'-. | do8.( fa'16\<) si,?2.->\! r2 |
+    R1*2 \ten mib,,1\mp r2 | R1.*2 r4 mi'!2--\mf r4 | r mi2-- r4 r2 |
+    si'1.\f\>( sib1\pp) r2 | R1.
     
     %%% Allegro non troppo %%%
     R1 R2. R1*3
-    sib4 r r2 | r8 sib r sib r2 |
-    R2. r8 sib r sib r2 |
-    R2. r8 sib r sib r2 |
-    R2. r8 sib r sib r2 |
-    mi,2 r4 | sib2. r4 | R1*2
-    re2. r4 | R1 re2 r4 | R2.*2 R1*8
+    sib4-.\mp r r2 | r8 sib-. r sib-. r2 |
+    R2. r8 sib-. r sib-. r2 |
+    R2. r8 sib-. r sib-. r2 |
+    R2. r8 sib-.\mf r sib-. r2 |
+    mi,2--\f r4 | sib2.\mf r4 | R1*2
+    re2.--\mp r4 | R1 re2-- r4 | R2.*2 R1*8
     
     %%% Moderato %%%
     R2.*2 R1 R2. R1 R2. R1
-    sib2.~ sib2 r | sib2.~ sib2 r |
-    sib2.~ sib2 r4 r8 sib' | sib16 sib fa' do sib2 |
-    sib,4. mib8 fa16 sib do sib mib do sib8 |
-    fa'16 reb fa la,~ la8 fa'16 reb mib8 reb |
-    dob sib dob16 sib dob reb | sib8 r r2 | R1
-    R2*3 r4 r8 si! |
+    \ten sib2.~\pp sib2 r | \ten sib2.~ sib2 r |
+    \ten sib2.~ sib2 r4 r8 sib'--\p | sib16 sib fa' do sib2 |
+    sib,4.-- mib8-- fa16( sib) do( sib) mib( do) sib8-- |
+    fa'16\mp( reb) fa-. la,~-- la8 fa'16( reb) mib8-.( reb) |
+    dob( sib) dob16\<( sib) dob( reb) | sib8->\! r r2 | R1
+    R2*3 r4 r8 \st {si!\p |
     
     %%% Allegro marcato %%%
-    re r la r re, r si' r re r la r re, r r4 |
-    R1*3 re'8 r mib, r solb, r si' r | re r mib, r solb, r r4 |
-    R1*2 r2 r4 fa8. fa16 lab2 fa8 r fa8. fa16 |
-    lab2 fa8 r r4 | R1 r2 r4 fa8. fa16 lab2 fa8 r fa8. fa16 |
-    lab2 fa8 r r4 | R1 r2 r4 fad'8 r | mi r dod r si r re' r |
-    do r la r sol r fa r | mib r re r do r r4 |
-    la8 r sol r fa r r4 | r la8 r sold r fad r |
+    re-- r la-- r re,-- r si'-- r re-- r la-- r re,-- r r4 |
+    R1*3 re'8-- r mib,-- r solb,-- r si'-- r | re-- r mib,-- r solb,--} r r4 |
+    R1*2 r2 r4 fa8.-.\p fa16 lab2--( fa8) r fa8.-. fa16 |
+    lab2--( fa8) r r4 | R1 r2 r4 fa8.-. fa16 lab2--( fa8) r fa8.-. fa16 |
+    lab2--( fa8) r r4 | R1 r2 r4 \st {fad'8\pp r | mi( r dod r si) r re' r |
+    do\p( r la r sol) r fa r | mib\mp( r re r do) r r4 |
+    la8\p( r sol r fa) r r4 | r la8\pp r sold r fad} r |
     
     %%% Agitato %%%
-    re'2. r4 | r re r re |
-    R1 re'4 re,2 r4 la'4 r r8 re, r4 |
+    re'2.\mf r4 | r re-- r re-- |
+    R1 re'4---.\f re,2---> r4 la'4-.->\p r r8 \st {re, r4 |
     re8 r r4 r2 | R1 r4 fa8 r r fa r4 |
-    r8 re r4  r2 | r8 do r4 r2 | R1
-    fa8 r r4 r1 | R1*2
-    do'8 mib la, mib' do mib la, mib' |
-    sib do sol do sib do |
-    la16 si re8 la16 si re8 |
-    la16 do re8 la16 do re8 |
-    \t {fad,16 si mi} la8 \t {fad,16 si mi} la8 |
-    \t {fad,16 si mi} la8 mi r | R2 R1*4
+    r8 re r4  r2 | r8 do} r4 r2 | R1
+    fa8-.->\sfz r r4 r1 | R1*2
+    \st {do'8\pp mib la, mib' do mib la, mib' |
+    sib do sol do sib do} |
+    la16\p( si) re8-. la16( si) re8-. |
+    la16( do) re8-. la16( do) re8-. |
+    \t {fad,16( si mi)} la8-. \t {fad,16( si mi)} la8-. |
+    \t {fad,16( si mi)} la8-. mi-.-> r | R2 R1*4
   }
 }
 

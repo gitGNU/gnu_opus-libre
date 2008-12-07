@@ -231,34 +231,34 @@ ActeUnSceneUnAltoUn = { \AltoUn
     sib16\mf do r8 sib16 do r8 | sib16 do r8 sib16 do r8 | R2*2
     
     %%% Allegro marcato %%%
-    <do, la' sold' re'>4 la' <do, la'> la' |
-    <do, la' sold' re'>4 la' <do, la'> r |
-    fad fad mib mib <mib la>2 lab8 r r4 | R1
-    <la! mib' lab re>4 la re, la' |
-    <la! mib' lab re>4 la re, r |
-    dod' dod la la <la mi'>2 re8 r r4 | R1
-    r4 sold, fa8 r r4 | r sold fa8 r r4 | R1
-    sold2 sol8 r r4 |
-    r sold fa8 r r4 | r sold fa8 r r4 | R1
-    sold2 sib8 r r4 | R1
-    r2 r4 \pizz re do la sol r |
-    do la sol r r do si la |
+    \acc {<do, la' sold' re'>4\sfz la'\mp <do, la'> la' |
+    <do, la' sold' re'>4\sfz la' <do, la'>} r |
+    \st {fad\p fad mib mib} <mib la>2--->( lab8) r r4 | R1
+    \acc {<la! mib' lab re>4\sfz la\mp re, la' |
+    <la! mib' lab re>4\sfz la re,} r |
+    \st {dod'\p dod la la} <la mi'>2--->( re8) r r4 | R1
+    r4 sold,\mp\> fa8\!) r r4 | r sold\>( fa8\!) r r4 | R1
+    sold2\>( sol8\!) r r4 |
+    r sold\mp\>( fa8\!) r r4 | r sold\>( fa8\!) r r4 | R1
+    sold2\>( sib8\!) r r4 | R1
+    r2 r4 \pizz re\p do( la sol) r |
+    do( la sol) r r do\> si la\! |
     
     %%% Agitato %%%
-    \arco re,8 re re re re2:8 | re: re: re: re: |
-    re16 mi fa sol sib8 reb solb4 r |
-    sib8 sol re sol do sol re sol |
+    \arco re,8-.\mf re-. re-. re-. \simile re2:8 | re: re: re: re: |
+    re16\f( mi fa sol) sib8-.( reb-.) solb4-> r |
+    \st {sib8\sfz sol\pp re sol do sol re sol |
     do sol fa do fa sib fa do |
     fa sib fa do fa do sol do |
     fa do sol do fa do mib lab |
     re lab re, lab' re, lab re lab' |
     mib sib mib lab sol reb sol, reb' |
-    <sol, fa'> do mib lab reb mib, lab reb |
-    re8 r r4 r1 | R1*2
-    do8 la do la do la do la |
+    <sol, fa'> do mib lab reb mib,-> lab-> reb->} |
+    re8->\sfz r r4 r1 | R1*2
+    \ind #"staccato leggiero" do8\pp la do la do la do la |
     sib sol sib sol sib sol la fa la fa |
-    fad mi fad mi dod16 dod dod dod dod dod dod dod |
-    dod dod dod dod dod8 r | R2 R1*4
+    fad\p mi fad mi dod16 dod dod dod dod dod dod dod |
+    dod\< dod dod dod dod8-.->\! r | R2 R1*4
   }
 }
 

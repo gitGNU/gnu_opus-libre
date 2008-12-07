@@ -227,36 +227,36 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     sib8 r16 do32 do sib16 r \t {do16 do sib} | R2*2
     
     %%% Allegro marcato %%%
-    <dod sold' sol'! red'>4 dod <dod sold'> dod |
-    <dod sold' sol'! red'>4 dod <dod sold'> r |
-    do! do sol sol <la re>2 mi'8 r r4 | R1
-    <mib lab re sol>4 do? <si? fa'> do |
-    <mib lab re sol> do <si fa'> r |
-    sol' sol fad fad <mi si'>2 sol8 r r4 | R1
-    r4 dod, sib8 r r4 | r dod sib8 r r4 |
-    sib sib la la lab2 sol8 r r4 |
-    r dod sib8 r r4 r dod sib8 r r4 |
-    sib sib lab lab sold2 sib8 r r4 | R1
-    r2 r4 \pizz fa' mib re do r mib re do r |
-    r do si la |
+    \acc {<dod sold' sol'! red'>4\sfz dod\mp <dod sold'> dod |
+    <dod sold' sol'! red'>4\sfz dod <dod sold'>} r |
+    \st {do!\p do sol sol} <la re>2--->( mi'8) r r4 | R1
+    \acc {<mib lab re sol>4\sfz do?\mp <si? fa'> do |
+    <mib lab re sol>\sfz do <si fa'>} r |
+    \st {sol'\p sol fad fad} <mi si'>2--->( sol8) r r4 | R1
+    r4 dod,\mp\>( sib8\!) r r4 | r dod\>( sib8\!) r r4 |
+    \st {sib\p sib la la} lab2\>( sol8\!) r r4 |
+    r dod\mp\>( sib8\!) r r4 r dod\>( sib8\!) r r4 |
+    \st {sib\p sib lab lab} sold2\>( sib8\!) r r4 | R1
+    r2 r4 \pizz fa'\p mib( re do) r mib( re do) r |
+    r do\> si la\! |
     
     %%% Agitato %%%
-    \arco <do re>2. r4 | R1*2
-    re2 fad8 la re16 mi fa sol |
-    sib8 re,, mib' do mib <la,, sol'> <la sol'> fa'' |
-    do do mib sol, mib' do re, fa' |
-    sol, mib' sol, mib' do re, fa' sol, |
-    do mib sol, do fa sol, fa' do |
-    fa sol, do fa lab, do fa sol, |
-    fa' sol, do fa sol, fa sol sib |
-    sol sib mib reb mib sol mib lab |
-    sol r r4 r1 | R1*2
-    mib16 mib fa fa mib mib fa fa mib mib fa fa mib mib fa fa |
+    \arco <do re>2.\f r4 | R1*2
+    re2-- fad8-.\<( la) re16( mi fa sol) |
+    \st {sib8\sfz re,,\pp mib'-> do mib-> <la,, sol'> <la sol'> fa''-> |
+    do do mib-> sol, mib'-> do re, fa'-> |
+    sol, mib'-> sol, mib'-> do re, fa'-> sol, |
+    do mib-> sol, do fa-> sol, fa'-> do |
+    fa-> sol, do fa-> lab, do fa-> sol, |
+    fa'-> sol, do fa-> sol, fa sol sib-> |
+    sol sib mib-> reb mib sol-> mib-> lab->} |
+    sol->\sfz r r4 r1 | R1*2
+    \ind #"staccato leggiero" mib16\pp mib fa fa mib mib fa fa mib mib fa fa mib mib fa fa |
     do do mi mi do do mi mi do do mi mi |
     sol sol re re sol sol re re |
-    do do do do do do do do |
+    do\p do do do do do do do |
     sol sol sol sol re re re re |
-    re re re re re8 r | R2 R1*4
+    re\< re re re re8-.->\! r | R2 R1*4
   }
 }
 

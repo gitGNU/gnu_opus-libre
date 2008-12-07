@@ -119,48 +119,48 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     
     %%% Agitato %%%
     \ten re,1~\mf re2 r R1 |
-    re4 r r2 | R1 r2 re4\sfz r |
-    r re\sfz r1 | R1*2 r4 re r1 | R1*3
-    r4 re r1 | R1*2 R1.
-    r8 mib mib8. si'16 lab2 r |
-    r4 \t {si8 lab si} mi4 \t {lab8 mib lab} si2 |
-    r4 si,2 r4 | r sib'2 r4 r2 |
-    mi,,!1 r2 | R1.*2 |
+    re4\sfz r r2 | R1 r2 re4\sfz r |
+    r re\sfz r1 | R1*2 r4 re\sfz r1 | R1*3
+    r4 re\sfz r1 | R1*2 R1.
+    r8 mib-.\mp mib8.( si'16) lab2 r |
+    r4 \t {si8\mf\<( lab) si} mi4\! \t {lab8\<( mib lab} si2\!) |
+    r4 si,2--\mp r4 | r sib'2-- r4 r2 |
+    mi,,!1--\f r2 | R1.*2 |
     
     %%% Allegro non troppo %%%
     R1 R2. R1*5
     R2. R1 R2. R1 R2. R1
-    sol2 r4 r2 \t {reb'4 sib lab} |
-    sol2. r4 | R1 sol2. r4 | R1 sol2 r4 |
+    sol2--\f r4 r2 \t {reb'4--\> sib-- lab--} |
+    sol2.--\! r4 | R1 sol2.--\p r4 | R1 sol2-- r4 |
     R2.*2 R1*8
     
     %%% Moderato %%%
     R2.*2 R1 R2. R1
     R2. R1
-    mib2.~ mib2 r | fa2.~ fa2 r | mib4 fa2 |
-    mib8. fa16~ fa2. | solb8. lab16~ lab2 |
-    solb4 lab2. | mib8. fa16~ fa8 solb~ solb16 lab8.~ |
-    lab8 solb fa mib | sib'8 r r2 | R1
+    \ten mib2.~\pp mib2 r | \ten fa2.~ fa2 r | mib4-- fa2-- |
+    mib8.( fa16~) fa2. | solb8.\p( lab16~) lab2 |
+    solb4 lab2. | mib8.--\mp fa16~-- fa8 solb~-- solb16 lab8.~ |
+    lab8 solb-- fa-- mib-- | sib'8-> r r2 | R1
     R2*4
     
     %%% Allegro marcato %%%
-    r4 mib,8. mib16 solb4. r8 |
-    r4 mib8. mib16 solb4 re8 r |
-    R1*2 dod4 re8 mi sol!4 r |
-    r4 mi8. mi16 sol4. r8 |
-    r4 mi8. mi16 sol4 mib8 r | R1*2
-    r2 r4 fa mi2 fa8 r fa4 |
-    mi2 fa8 r r4 | R1
-    r2 r4 fa | mi2 fa8 r fa4 | mi2 fa8 r r4 | R1*2
-    r2 r4 sib8 r | lab r fa r mib r re' r | do r la r sol r r4 |
-    fad8 r mi r dod r r4 | R1
+    r4 mib,8.--\mp\< mib16 solb4.\! r8 |
+    r4 mib8.--\< mib16 solb4\!( re8) r |
+    R1*2 dod4->\mf( re8-- mi-- sol!4--) r |
+    r4 mi8.\mp\< mi16 sol4.\! r8 |
+    r4 mi8.\< mi16 sol4\!( mib8) r | R1*2
+    r2 r4 fa---.\pp mi2--( fa8) r fa4---. |
+    mi2--( fa8) r r4 | R1
+    r2 r4 fa---. | mi2--( fa8) r fa4---. | mi2--( fa8) r r4 | R1*2
+    r2 r4 sib8-.\pp r | \st {lab r fa r mib} r re' r | \st {do r la r sol r r4 |
+    fad8 r mi r dod} r r4 | R1
     
     %%% Agitato %%%
-    re2. r4 | r re r re R1 |
-    r4 re2. re8 r r4 r2 | R1*6
-    do'8 r r4 r1 | R1*3 R2.
-    si'8 fa si fa la mi la mi |
-    dod fad dod sold dod fad dod r | R2 r1*4
+    re2.\mf r4 | r re-- r re-- R1 |
+    r4 re2.--( re8-.) r r4 r2 | R1*6
+    do'8-.->\sfz r r4 r1 | R1*3 R2.
+    \st {si'8\p fa si fa la mi la mi |
+    dod fad dod sold dod fad dod->} r | R2 r1*4
   }
 }
 

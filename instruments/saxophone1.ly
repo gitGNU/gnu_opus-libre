@@ -113,52 +113,52 @@ ActeUnSceneUnSaxophoneUn = { \SaxAltoUn
     %%% Agitato %%%
     \ten re,1~\mf re2 r | r2 r4 r8 \t {sold,16\<( si dod} |
     re4\sfz) r r2 | R1 r2 re4\sfz r |
-    r re,\sfz r1 | R1*2 r4 re r1 | R1*3
-    r4 re r1 | R1*2 R1.
-    r8 lab' si8. mi16 sol2 r |
-    r4 \t {sol8 mi sol} do4 \t {mi8 si mi} sol2 |
-    r4 do,2 r4 | r mib2 r4 r2 |
-    mi,!1 r2 | R1. r2 r4 mi, sol fa |
+    r re,\sfz r1 | R1*2 r4 re\sfz r1 | R1*3
+    r4 re\sfz r1 | R1*2 R1.
+    r8 lab'-.\mp si8.( mi16) sol2 r |
+    r4 \t {sol8\mf\<( mi) sol} do4--\! \t {mi8\<( si) mi} sol2--\! |
+    r4 do,2--\mp r4 | r mib2-- r4 r2 |
+    mi,!1--\f r2 | R1. r2 r4 mi,\mp\<( sol fa |
     
     %%% Allegro non troppo %%%
-    sib8 r r4 r2 | R2.
-    \t {sib8 sol fa} mi2 r4 |
-    R1 \t {sib'8 sol la} mi2 r4 |
+    sib8-.\!) r r4 r2 | R2.
+    \t {\ind #"prezioso" sib8( sol fa} mi2) r4 |
+    R1 \t {\simile sib'8( sol la} mi2) r4 |
     R1*2 R2. R1 R2. R1 R2. R1
-    sol2 r4 r2 \t {reb'4 sib lab} |
-    sol2. r4 | R1 sol2. r4 | R1 sol2 r4 |
+    sol2--\f r4 r2 \t {reb'4--\> sib-- lab--} |
+    sol2.--\! r4 | R1 sol2.--\p r4 | R1 sol2-- r4 |
     R2.*2 R1*8
     
     %%% Moderato %%%
     R2.*2 R1 R2. R1
     R2. R1
-    r4 fa' mib sib'2 r8 fa do'4~ |
-    do mib,2~ mib8 r \t {do sib' fa} re'2 |
-    r8 fa,~ fa4 mib8 fa~ | fa4~ fa8 mib4 fa8~ fa4 |
-    mib16 fa reb do~ do sib do8~ do r |
-    mib16 fa sib do~ do4~ do8 fa,4. |
-    lab8 solb fa mib fa16 mib fa solb |
-    lab8 solb fa mib | si? r r2 | R1
+    r4 fa'\mp( mib sib'2) r8 fa( do'4~ |
+    do mib,2~) mib8 r \t {do( sib' fa} re'2) |
+    r8 fa,~\p fa4 mib8( fa~) | fa4~ fa8 mib4( fa8~) fa4 |
+    mib16\>( fa) reb do~\!( do sib) do8~ do r |
+    mib16\<( fa) sib do~-- do4~\mp\> do8( fa,4.\!) |
+    lab8( solb) fa( mib) fa16( mib) fa( solb) |
+    lab8( solb) fa( mib) | si?-> r r2 | R1
     R2*4
     
     %%% Allegro marcato %%%
-    r4 sol'8. sol16 sib4. r8 |
-    r4 sol8. sol16 sib4 solb8 r |
-    R1*2 dod,,4 re8 mi sol!4 r |
-    r sold'8. sold16 si4. r8 |
-    r4 sold8. sold16 si4 sol8 r |
-    R1*2 r2 r4 sib,4 reb2 sib8 r sib4 |
-    reb2 sib8 r r4 | R1 r2 r4 sib reb2 sib8 r sib4 |
-    reb2 sib8 r r4 | R1*2 r2 r4 fad'8 r |
-    mi r dod r si r sib' r | lab r fa r mi r r4 |
-    re8 r do r la r r4 | R1
+    r4 sol'8.--\mp\< sol16 sib4.\! r8 |
+    r4 sol8.--\< sol16 sib4\!( solb8) r |
+    R1*2 dod,,4->\mf( re8-- mi-- sol!4--) r |
+    r sold'8.\mp< sold16 si4.\! r8 |
+    r4 sold8.\< sold16 si4\!( sol8) r |
+    R1*2 r2 r4 sib,4---.\pp reb2--( sib8) r sib4---. |
+    reb2--( sib8) r r4 | R1 r2 r4 sib---. reb2--( sib8) r sib4---. |
+    reb2--( sib8) r r4 | R1*2 r2 r4 fad'8-.\pp r |
+    \st {mi r dod r si r sib' r | lab r fa r mi r r4 |
+    re8 r do r la} r r4 | R1
     
     %%% Agitato %%%
-    do2. r4 | r do r do | R1
-    r4 dod2. re8 r r4 r2 | R1*6
-    sib'8 r r4 r1 | R1*3 R2.
-    la8 si! la si fad la fad la |
-    si sol si fad sold re si' r | R2 R1*4
+    do2.\mf r4 | r do-- r do-- | R1
+    r4 dod2.--( re8-.) r r4 r2 | R1*6
+    sib'8-.->\sfz r r4 r1 | R1*3 R2.
+    \st {la8\p si! la si fad la fad la |
+    si sol si fad sold re si'->} r | R2 R1*4
   }
 }
 
