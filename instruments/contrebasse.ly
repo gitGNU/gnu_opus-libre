@@ -162,16 +162,16 @@ ActeUnSceneUnContrebasse = { \Contrebasse
     si8\sfz r r2 | R1 R2*4 |
     
     %%% Allegro marcato %%%
-    si?4 si' si, si' si, si' si, r | R1*3
-    si4 si' si, si' si, si' si, r | R1*16
+    \acc {si?4\f si' si, si' si, si' si,} r | R1*3
+    \acc {si4\f si' si, si' si, si' si,} r | R1*16
     
     %%% Agitato %%%
-    re2:8 re: re: re: re: re: re: re: |
-    re4 re' re, re' re, re' re, re' |
+    re2:8\f re: re: re: re: re: re: re: |
+    \det {re4\fp re' re, re' re, re' re, re' |
     re, re' re, re' re, re' re, re' |
     re, re' re, re' re, re' re, re' |
-    re, re' re, re' <re, re'>8 r r4 r1 | R1*3 R2. R2*3
-    re'16\CaV re\CaV re\CaV re\CaV re8 r | R2 R1*4
+    re, re' re, re'} <re, re'>8->\sfz r r4 r1 | R1*3 R2. R2*3
+    re'16\<\CaV re\CaV re\CaV re\CaV re8->->\! r | R2 R1*4
   }
 }
 

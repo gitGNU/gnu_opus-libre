@@ -245,34 +245,34 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     do16\mf sib r8 do16 sib r8 | do16 sib r8 do16 sib r8 | R2*2
     
     %%% Allegro marcato %%%
-    <do, la' sold' re'>4 la' <do, la'> la' |
-    <do, la' sold' re'>4 la' <do, la'> r |
-    dod dod mib mib <mib la>2 do8 r r4 | R1
-    <mi! la! mib' lab>4 la do, la' |
-    <mi! la! mib' lab>4 la do, r |
-    fad fad fa fa re2 <mi la>8 r r4 | R1
-    r4 mi do8 r r4 | r mi do8 r r4 | R1
-    mib2 re8 r r4 |
-    r mi do8 r r4 | r mi do8 r r4 | R1
-    red2 fa8 r r4 | R1
-    r2 r4 \pizz sib lab fa mib r |
-    re do re r r la' sold fad |
+    \acc {<do, la' sold' re'>4\sfz la'\mp <do, la'> la' |
+    <do, la' sold' re'>4\sfz la' <do, la'>} r |
+    \st {dod\p dod mib mib} <mib la>2--->( do8) r r4 | R1
+    \acc {<mi! la! mib' lab>4\sfz la\mp do, la' |
+    <mi! la! mib' lab>4\sfz la do,} r |
+    \st {fad\p fad fa fa} re2--->( <mi la>8) r r4 | R1
+    r4 mi\mp\>( do8\!) r r4 | r mi\>( do8\!) r r4 | R1
+    mib2\>( re8\!) r r4 |
+    r mi\mp\>( do8\!) r r4 | r mi\>( do8\!) r r4 | R1
+    red2\>( fa8\!) r r4 | R1
+    r2 r4 \pizz sib\p lab( fa mib) r |
+    re( do re) r r la'\> sold fad\! |
     
     %%% Agitato %%%
-    \arco re8 re re re re2:8 | re: re: re: re: |
-    re8 fa sib16 do reb mib solb4 r |
-    sib8 re, sol do sol re sol do |
+    \arco re8-.\mf re-. re-. re-. \simile re2:8 | re: re: re: re: |
+    re8-.\f( fa-.) sib16( do reb mib) solb4-> r |
+    \st {sib8\sfz re,\pp sol do sol re sol do |
     sol re do fa sib fa do fa |
     sib fa do fa do sol do fa |
     do sol do fa do sol sib mib |
     lab re, lab re lab' re, lab re |
     sib mib lab mib reb sol, reb' sol |
-    <do,, sib'> fa sib mib lab fa, sib mib |
-    lab8 r r4 r1 | R1*2
-    la8 do la do la do la do |
+    <do,, sib'> fa sib mib lab fa,-> sib-> mib->} |
+    lab8->\sfz r r4 r1 | R1*2
+    \ind #"staccato leggiero" la8\pp do la do la do la do |
     sol sib sol sib sol sib fa la fa la |
-    mi fad mi fad sold,16 sold sold sold sold sold sold sold |
-    sold sold sold sold sold8 r | R2 R1*4
+    mi\p fad mi fad sold,16 sold sold sold sold sold sold sold |
+    sold\< sold sold sold sold8-.->\! r | R2 R1*4
   }
 }
 

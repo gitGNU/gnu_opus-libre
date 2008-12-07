@@ -162,32 +162,32 @@ ActeUnSceneUnFluteUn = { \FluteUn
     do8 sib'16-. fa-. do4-- r16 \st {fa\psempre sib do~-- do sib fa' sib, |
     do8-- sib,16 do sib' do8-- sib,16 do sib' do8-- |
     sib16 do do, sib' do sib, sib' do} | R2. R1
-    R2*3 r4 r8 \ttt {sol32 la si dod red mid} |
+    R2*3 r4 r8 \ttt {sol32\pp\<( la si dod red mid} |
     
     %%% Allegro marcato %%%
-    fad8 r re r fad, r re' \t {red16 mi mid} |
-    fad8 r re r fad, r r4 R1*2 |
-    r2 r4 r8 \t {sol16 sib mib} |
-    fad8 r sol, r sib, r re' \t {red16 mi mid} |
-    fad8 r sol, r sib, r r4 | R1*2
-    r2 r4 sol8. sol16 si2 sol8 r sol8. sol16 |
-    si2 sol8 r r4 | R1 r2 r4 sol8. sol16 si2 sol8 r sol8. sol16 |
-    si2 sol8 r r4 | R1 r2 r4 reb''8 r dob r sib r lab r reb r |
-    dob r sib r lab r reb r dob r sib r lab r r4 |
-    dob8 r sib r lab r r4 | r si,8 r sib r lab r |
+    \st {fad8--\mf) r re--\p r fad,-- r re'-- \t {red16\<( mi mid} |
+    fad8--\mf) r re--\p r fad,--} r r4 R1*2 |
+    r2 r4 r8 \t {sol16\<( sib mib} |
+    fad8-.\mf) r sol,---.\p r sib,---. r re'---. \t {red16\<( mi mid} |
+    fad8---.\!) r sol,---. r sib,---. r r4 | R1*2
+    r2 r4 sol8.-.\p sol16 si2--( sol8) r sol8.-. sol16 |
+    si2--( sol8) r r4 | R1 r2 r4 sol8.-. sol16 si2--( sol8) r sol8.-. sol16 |
+    si2--( sol8) r r4 | R1 r2 r4 \st {reb''8\pp r dob( r sib r lab) r reb r |
+    dob\p( r sib r lab) r reb r dob\mp( r sib r lab) r r4 |
+    dob8\p( r sib r lab) r r4 | r si,8\pp r sib r lab} r |
     
     %%% Agitato %%%
-    re,2. r4 | r re r re |
-    r \t {sold'8 si do} dod16 re dod re \tt {dod re dod re dod} |
-    re4 re,2 r8 \t {fa16 sol la} | sib4 r r8 fa r4 | fa8 r r4 r2 |
-    R1 r4 lab8 r r lab r4 | r8 fa r4 r2 | r8 re r4 r2 |
-    R1 reb'8 r r4 r1 | R1*2
-    la16 fa fa8 la16 fa fa8 la16 fa fa8 la16 fa fa8 |
+    re,2.\mf r4 | r re-- r re-- |
+    r \t {sold'8\p( si do)} dod16\<( re dod re \tt {dod re dod re dod} |
+    re4---.\f) re,2---> r8 \t {fa16( sol la} | sib4-.->\sfp) r r8 \st {fa r4 | fa8 r r4 r2 |
+    R1 r4 lab8 r r lab r4 | r8 fa r4 r2 | r8 re} r4 r2 |
+    R1 reb'8-.->\sfz r r4 r1 | R1*2
+    \st {la16\pp fa fa8 la16 fa fa8 la16 fa fa8 la16 fa fa8 |
     sib16 fa fa8 sib16 fa fa8 sib16 fa fa8 |
-    si16 sol sol8 si16 sol sol8 |
+    si16\p sol sol8 si16 sol sol8 |
     do16 sol sol8 do16 sol sol8 |
     dod16 la la8 re16 la la8 |
-    re16 la la re sold8 r | R2 R1*4
+    re16\< la la re sold8->\!} r | R2 R1*4
   }
 }
 

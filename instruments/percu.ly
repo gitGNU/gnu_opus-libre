@@ -375,13 +375,13 @@ ActeUnSceneUnPercus = <<
       \Marimba R1*34 
       R1. R1*2 \ottava #1
       \ind #"(bag. dures)"
-      mib'''16 fa, sib fa mib' fa, sib fa
+      mib'''16\pp fa, sib fa mib' fa, sib fa
       mib' fa, sib fa mib' fa, sib fa |
       fa' sol, do sol fa' sol, do sol fa' sol, do sol |
       sol' la, re la sol' la, re la |
       lab' sib, mib sib lab' sib, mib sib |
       sib' do, fa do sib' do, fa do |
-      si' dod, fad dod si'8 r 
+      si'\< dod, fad dod si'8->\! r 
       \ottava #0
       R2 R1*4
     }
@@ -416,16 +416,16 @@ ActeUnSceneUnPercus = <<
       \set drumStyleTable = #drums-style
       
       %%% Allegro marcato %%%
-      \ind #"Tambour" bd4 \ind #"Cymb. susp. (sur la cloche)" hh bd \t {bd8 bd bd} |
-      bd4 hh bd r | R1 r8 r16 bd32 bd bd8. bd16 bd4 r |
-      bd2:32 bd4 \t {bd8 bd bd} | bd4 hh bd \t {bd8 bd bd} |
-      bd4 hh bd r | R1 r8 r16 bd32 bd bd8. bd16 bd4 r | R1
-      r8 bd \t {bd bd bd} bd4 r |
-      r8 bd \t {bd bd bd} bd4 hh | R1
-      r8 bd \t {bd bd bd} bd4 r |
-      r8 bd \t {bd bd bd} bd4 r |
-      \t {r8 r16 bd bd8} \t {bd bd bd} bd4 hh | R1*4
-      r2 r4 hh | r2 r4 hh | R1
+      \ind #"Tambour" bd4--\mf \ind #"Cymb. susp. (sur la cloche)" hh-> bd \t {bd8\<( bd bd} |
+      bd4--\!) hh-> bd r | R1 r8 r16 bd32\mp bd bd8.-- bd16 bd4-- r |
+      bd2:32\pp\< bd4->\! \t {bd8\< bd bd} | bd4\mf hh-> bd \t {bd8( bd bd} |
+      bd4) hh-> bd r | R1 r8 r16 bd32 bd bd8. bd16 bd4 r | R1
+      r8 bd\p \t {bd--\> bd bd} bd4\! r |
+      r8 bd \t {bd--\> bd bd} bd4 hh\pp | R1
+      r8 bd \t {bd--\> bd bd} bd4\! r |
+      r8 bd \t {bd--\> bd bd} bd4\! r |
+      \t {r8 r16 bd\< bd8} \t {bd--\> bd bd} bd4 hh\pp | R1*4
+      r2 r4 hh\pp | r2 r4 hh | R1
       
       %%% Agitato %%%
       R1*11 R1. R1*2 R1 R2. R2*5 R1*4
@@ -487,11 +487,11 @@ ActeUnSceneUnPercus = <<
       R2*4
       
       %%% Allegro marcato %%%
-      R1*22 r2 r4 r8 r16 re'32 re |
+      R1*22 r2 r4 r8 r16 re'32\< re |
       
       %%% Agitato %%%
-      re4 re r re r re r re r re r re |
-      re re re8 re re16 re re re | re4 r r2 | R1*6
+      re4->\sfp re-- r re-- r re-- r re-- r re-- r re-- |
+      re\fp\< re re8 re re16 re re re | re4\sfz r r2 | R1*6
       R1. R1*3 R2. R2*5 R1*4
     }
   }

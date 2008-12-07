@@ -212,22 +212,22 @@ ActeUnSceneUnVioloncelleUn = { \VioloncelleUn
     si8\sfz r r2 | R1 R2*4
     
     %%% Allegro marcato %%%
-    <sib do>4 <sib do>16 <sib do> <sib do> <sib do> <sib do>4 r |
-    <sib do>4 <sib do>16 <sib do> <sib do> <sib do> <sib do>4 r |
-    fa fa la la sold2 la8 r r4 | R1
-    <fa sib mi la>4 <sib dod>16 <sib dod> <sib dod> <sib dod> <sib dod>4 r |
-    <fa sib mi la>4 <sib dod>16 <sib dod> <sib dod> <sib dod> <sib dod>4 r |
-    re re sib sib <sol re' la'>2 si8 r r4 | R1*3
-    fa'4 fa mi mi mib2 re8 r r4 | R1*2
-    fa4 fa mi mi red2 do8 r r4 | R1
-    r2 r4 \pizz fa mib re do r la sol fad r r reb' do sib |
+    <sib do>4->\ff <sib do>16-. <sib do>-. <sib do>-. <sib do>-. <sib do>4-> r |
+    <sib do>4-> <sib do>16-. <sib do>-. <sib do>-. <sib do>-. <sib do>4-> r |
+    \st {fa\p fa la la} sold2--->( la8) r r4 | R1
+    <fa sib mi la>4->\ff \st {<sib dod>16 <sib dod> <sib dod> <sib dod>} <sib dod>4-> r |
+    <fa sib mi la>4-> \st {<sib dod>16 <sib dod> <sib dod> <sib dod>} <sib dod>4-> r |
+    \st {re\p re sib sib} <sol re' la'>2--->( si8) r r4 | R1*3
+    \st {fa'4\p fa mi mi} mib2\>( re8\!) r r4 | R1*2
+    \st {fa4\p fa mi mi} red2\>( do8\!) r r4 | R1
+    r2 r4 \pizz fa\p mib( re do) r la( sol fad) r r reb'\> do sib\! |
     
     %%% Agitato %%%
-    \arco re16 mib fa lab sib lab fa mib re8 lab' <re,! reb'> lab' |
-    re,16 mi sol la sib la sol mi re8 <re sib'> <re mib'> <re sib'> |
-    re16 fa sol lab sib lab sol fa re8 <re dod'> <re mi'> <re dod'> |
-    re16 re re re re re re re re re re re re re re re |
-    <la re>8 re <re la'> re <la re> re <re la'> re |
+    \arco re16\f\<( mib fa lab) sib\>( lab fa mib) re8-.\! lab'-. <re,! reb'>-. lab'-. |
+    re,16\<( mi sol la) sib\>( la sol mi) re8-.\! <re sib'>-. <re mib'>-. <re sib'>-. |
+    re16( fa sol lab) sib( lab sol fa) re8-. <re dod'>-. <re mi'>-. <re dod'>-. |
+    re16\mf re re re re re re re re re re re re re re re |
+    \st {<la re>8\fp re <re la'> re <la re> re <re la'> re |
     <re re> re <sol la> re <re re> re <sol la> re |
     <re re> re <sol re'> re <re re> re <sol re'> re |
     <re sol> re <do' fa> re, <re sol> re <do' fa> re, |
@@ -235,11 +235,11 @@ ActeUnSceneUnVioloncelleUn = { \VioloncelleUn
     <sol, re'> re' \clef treble <fa' do'> \clef bass re,
     <sol, re'> re' \clef treble <fa' do'> \clef bass re, |
     re \clef treble <fa' do'> \clef bass re, \clef treble <solb' reb'> \clef bass
-    re, \clef treble <lab'' mib'> \clef bass re,, \clef treble <la'' mi'> \clef bass |
-    <re,, mib'>8 r r4 r1 | R1*2
+    re, \clef treble <lab'' mib'> \clef bass re,, \clef treble <la'' mi'>} \clef bass |
+    <re,, mib'>8->\sfz r r4 r1 | R1*2
     
-    R1 R2. R2 \clef treble re''16\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV |
-    si si si si si si si si | si si si si si8 r | R2 R1*4
+    R1 R2. R2 \clef treble re''16\p\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV |
+    si si si si si si si si | si\< si si si si8-.->\! r | R2 R1*4
   }
 }
 

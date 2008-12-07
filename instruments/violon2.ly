@@ -219,35 +219,35 @@ ActeUnSceneUnViolonDeux = { \ViolonDeux
     do8 r16 sib32 sib do16 r \t {sib16 sib do} | R2*2
     
     %%% Allegro marcato %%%
-    <dod sold' sol'! red'>4 dod <dod sold'> dod |
-    <dod sold' sol'! red'>4 dod <dod sold'> r |
-    sol'! sol mi mi <re sib'>2 sol8 r r4 | R1
-    <lab re sol dod>4 dod, <sib lab'> dod |
-    <lab're sol dod> dod, <sib lab'> r |
-    do' do lab lab <si fad'>2 do8 r r4 | R1
-    r4 fad, mib8 r r4 | r fad mib8 r r4 |
-    mib mib re re reb2 do8 r r4 |
-    r fad mib8 r r4 r fad mib8 r r4 |
-    mib mib reb reb dod2 re8 r r4 | R1
-    r2 r4 \pizz sib' lab fa mib r lab fa mib r |
-    r sol fad mi |
+    \acc {<dod sold' sol'! red'>4\sfz dod\mp <dod sold'> dod |
+    <dod sold' sol'! red'>4\sfz dod <dod sold'>} r |
+    \st {sol'!\p sol mi mi} <re sib'>2--->( sol8) r r4 | R1
+    \acc {<lab re sol dod>4\sfz dod,\mp <sib lab'> dod |
+    <lab're sol dod>\sfz dod, <sib lab'>} r |
+    \st {do'\p do lab lab} <si fad'>2--->( do8) r r4 | R1
+    r4 fad,\mp\>( mib8\!) r r4 | r fad\>( mib8\!) r r4 |
+    \st {mib\p mib re re} reb2\>( do8\!) r r4 |
+    r fad\mp\>( mib8\!) r r4 r fad\>( mib8\!) r r4 |
+    \st {mib\p mib reb reb} dod2\>( re8\!) r r4 | R1
+    r2 r4 \pizz sib'\p lab( fa mib) r lab( fa mib) r |
+    r sol\> fad mi\! |
     
     %%% Agitato %%%
-    \arco <do re>2. r4 | R1*2
-    re2 fad16 sold la si re8 fa |
-    sib8 <re,, la'> <la' fa'> <re, la'> <la' fa'> <re, la'> <re la'> <do' la'> |
-    <re, la'> <re la'> <la' fa'> <re, la'> <la' fa'> <re, la'> <re la'> <do' la'> |
-    <re, la'> <la' fa'> <re, la'> <la' fa'> <re, la'> <re la'> <do' la'> <re, la'> |
-    <re la'> <sib' fa'> re, re <lab' mib'> re, <sol re'> re |
-    <sol re'> re re <do' lab'> re, re <sol re> re |
-    <lab' mib'> re, re do' dod sol sib mib |
-    sib dod sol' mib sol dod sol sold |
-    dod r r4 r1 | R1*2
-    fa,16 fa mib mib fa fa mib mib fa fa mib mib fa fa mib mib |
+    \arco <do re>2.\f r4 | R1*2
+    re2-- fad16\<( sold la si) re8-.( fa-.) |
+    \st {sib8\sfz <re,, la'>\pp <la' fa'>-> <re, la'> <la' fa'>-> <re, la'> <re la'> <do' la'>-> |
+    <re, la'> <re la'> <la' fa'>-> <re, la'> <la' fa'>-> <re, la'>-> <re la'> <do' la'>-> |
+    <re, la'> <la' fa'>-> <re, la'> <la' fa'>-> <re, la'> <re la'> <do' la'>-> <re, la'> |
+    <re la'> <sib' fa'>-> re, re <lab' mib'>-> re, <sol re'>-> re |
+    <sol re'>-> re re <do' lab'>-> re, re <sol re>-> re |
+    <lab' mib'>-> re, re do'-> dod sol sib mib-> |
+    sib dod sol'-> mib sol dod-> sol-> sold->} |
+    dod->\sfz r r4 r1 | R1*2
+    \ind #"staccato leggiero" fa,16\pp fa mib mib fa fa mib mib fa fa mib mib fa fa mib mib |
     mi mi do do mi mi do do mi mi do do |
     fa fa sol sol fa fa sol sol |
-    \t {re8 fad sol} \t {re fad sol} |
-    \t {mi sol la} \t {mi sol la} | \t {mi sold la} la r | R2 R1*4
+    \t {\st {re8\p fad( sol)} \t {re fad( sol)} |
+    \t {mi sol( la)} \t {mi sol( la)} | \t {mi sold( la)} la->} r | R2 R1*4
   }
 }
 

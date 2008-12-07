@@ -144,23 +144,23 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     R2*4
     
     %%% Allegro marcato %%%
-    r4 mib,8. mib16 solb4. r8 |
-    r4 mib8. mib16 solb4 re8 r |
-    R1*2 dod4 re8 mi sol!4 r |
-    r4 mi8. mi16 sol4. r8 |
-    r4 mi8. mi16 sol4 mib8 r | R1*2
-    r2 r4 fa mi2 fa8 r fa4 |
-    mi2 fa8 r r4 | R1
-    r2 r4 fa | mi2 fa8 r fa4 | mi2 fa8 r r4 | R1*2
-    r2 r4 sib8 r | lab r fa r mib r re' r | do r la r sol r r4 |
-    fad8 r mi r dod r r4 | R1
+    r4 mib,8.--\mp\< mib16 solb4.\! r8 |
+    r4 mib8.--\< mib16 solb4\!( re8) r |
+    R1*2 dod4->\mf( re8-- mi-- sol!4--) r |
+    r4 mi8.\mp\< mi16 sol4.\! r8 |
+    r4 mi8.\< mi16 sol4\!( mib8) r | R1*2
+    r2 r4 fa---.\pp mi2--( fa8) r fa4---. |
+    mi2--( fa8) r r4 | R1
+    r2 r4 fa---. | mi2--( fa8) r fa4---. | mi2--( fa8) r r4 | R1*2
+    r2 r4 sib8-.\pp r | \st {lab r fa r mib} r re' r | \st {do r la r sol r r4 |
+    fad8 r mi r dod} r r4 | R1
     
     %%% Agitato %%%
-    re2. r4 | r re r re R1 |
-    r4 re2. re8 r r4 r2 | R1*6
-    do'8 r r4 r1 | R1*3 R2.
-    si'8 fa si fa la mi la mi |
-    dod fad dod sold dod fad dod r | R2 r1*4
+    re2.\mf r4 | r re-- r re-- R1 |
+    r4 re2.--( re8-.) r r4 r2 | R1*6
+    do'8-.->\sfz r r4 r1 | R1*3 R2.
+    \st {si'8\p fa si fa la mi la mi |
+    dod fad dod sold dod fad dod->} r | R2 r1*4
   }
 }
 
