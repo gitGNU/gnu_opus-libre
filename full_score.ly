@@ -1017,13 +1017,13 @@ ActeDeuxSceneDeux = {
   \pageBreak
   \markup \BigNotice
   \pageBreak
-  %{
+  %
   \score {
     \Prologue
     \header {
       piece = \PrologueTitre
     }
-  } %
+  } %{
   \score {
     \Ouverture
     \header {
@@ -1077,13 +1077,13 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \Separateur
     }
-  } %}
+  } %
   \score {
     \InterludeTrois
     \header {
       piece = \Interlude
     }
-  } %{
+  } %
   \score {
     \ActeUnSceneQuatre
     \header {

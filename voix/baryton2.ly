@@ -305,7 +305,7 @@ EntracteBarytonDeux = { \BarytonDeux
     sib2~--->\! sib8 fa'-. mib4-- |
     
     %%% Fugato %%%
-    re4---> r r2 | R1 R2.*2 r4 dod8.-. dod16 |
+    re4---> r r2 | R1 R2.*2 r4 dod8.-.\p dod16 |
     sib'2--( mi,8) r dod8.-. dod16 | sib'2--( mi,8) r16 dod |
     dod8.-. dod16 do4 do | sib'2--( mi,8) r dod8. dod16 |
     sib'2--( sol8) r dod,8. dod16 
@@ -342,7 +342,7 @@ EntracteBarytonDeux = { \BarytonDeux
     mib4 do8 r r4 | mib do8 r r4 | mib do sib la r2 | R2.
     
     %%% Andantino %%%
-    la'1~ la4 mi8 r |
+    la'1 la4 mi8 r |
     la1 la2 do,1 do2 fa2. r4 R2.
     
     %%% Largo non troppo %%%
