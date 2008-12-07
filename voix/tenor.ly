@@ -182,15 +182,20 @@ EntracteTenor = { \Tenor
     re4-- r8 re-. re-. re-. re8.-- re16 |
     
     %%% Stretto %%%
-    re8-> re-> r4 r8 mi-. \t {sold( mi sold} |
+    re8-> re-> r4 r8 mi-.\mp \t {sold( mi sold} |
     do,4--) r r2 | R1*2
     r2 r8 r16 sib-.\<( re-. si-. mib-. re-. |
     fad4--\f) r r8 fa-. \t {la,\<( do fa} |
-    sold4\f) r r8 fad--\f\< mi--( sol--) | R1
+    sold4\f) r r8 fad--\f\< mi--( sol--)\! | R1
     r4 r8 sold16-.\p sold-. la4-- r16 sol-. sol-. sol-. |
     sold4-- r8 sold-. sold-. sold-. sold4-.\> r sold-. r \parlato sold-.\! |
     
     %%% Noir %%%
+    R2.-\fermataMarkup
+    R2.*4 mib,4 do8 r R2. mib4 do8 r r2 |
+    mi4 do8 r r4 | R2
+    sol'4( mi8) r sol4( mi8) r | sol4( mi8) r sol4( mi8) r |
+    sol4( mi8) r 
   }
 }
 

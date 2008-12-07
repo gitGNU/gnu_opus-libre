@@ -13,12 +13,11 @@
 
 \include "italiano.ly"
 
-\include "./definitions/common.ly"
 \include "./definitions/functions.ly"
+\include "./definitions/text-functions.ly"
+\include "./definitions/graphics.ly"
 \include "./definitions/paper.ly"
 \include "./definitions/layout.ly"
-\include "./definitions/markup.ly"
-\include "./definitions/graphics.ly"
 
 \include "./texte/decoupage.ly"
 \include "./texte/personnages.ly"
@@ -53,13 +52,6 @@
 \include "./instruments/piano.ly"
 
 %%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
-
-\paper {
-  \includePaper 
-  bookTitleMarkup = \NiceBookTitleMarkup 
-  oddFooterMarkup = \NiceOddFooterMarkup
-  scoreTitleMarkup = \NiceScoreTitleMarkup
-}
 
 \layout {
   \includeLayout
@@ -1021,7 +1013,11 @@ ActeDeuxSceneDeux = {
     illustration = \Couronne
     scoretype = \FullScore
     copyright = \Copyright
-  } %
+  }
+  \pageBreak
+  \markup \BigNotice
+  \pageBreak
+  %
   \score {
     \Prologue
     \header {

@@ -74,22 +74,22 @@ ProloguePiano = { \Piano
     R4. <do sold'>8 r4 R4. <dod la'>8} r4 |
     R4.*2 s4.*2 |
     <la' re>4.\laissezVibrer s4.*3 |
-    <mi la>4.\laissezVibrer s4.*3 |
+    <mi' la>4.\laissezVibrer s4.*3 |
     
     %%% A tempo %%%
     \ottava #1
-    re''32 re, re re, \ottava #0 s8 r R4.
-    \ottava #1 re''32 re, re re, \ottava #0 s8 r8 R4.*2
-    <reb, lab'>4.\laissezVibrer R4.*2
-    \pl {<sol lab dod>16[ <sol lab dod> sol \mg
-    <lab, dod re> <lab dod re> <lab dod re>] \md }
+    re''32\f \> re, re re,\! \ottava #0 s8 r R4.
+    \ottava #1 re''32\> re, re re,\! \ottava #0 s8 r8 R4.*2
+    <reb, lab'>4.--\mf\laissezVibrer R4.*2
+    \pl {\st {<sol lab dod>16\fp[ <sol lab dod> sol \mg
+    <lab, dod re> <lab dod re> <lab dod re>]} \md }
     {<lab'' re lab'>8\noBeam <sol, lab dod>16 s8.}
-    \stemDown <sol lab dod>16 <sol lab dod> <sol lab dod> \mg
+    \st {\stemDown <sol lab dod>16 <sol lab dod> <sol lab dod> \mg
     \stemUp <lab,dod re> <lab dod re> <lab dod re> \md |
     \stemDown <sol'lab dod> <sol lab dod> <sol lab dod> \mg
     \stemUp <lab,dod re> <lab dod re> <lab dod re> \md |
-    \stemDown <sol'lab dod> <sol lab dod> \mg \stemUp <lab, dod re> <lab dod re>
-    \md \stemDown <sol' lab dod> \mg \stemUp <lab, dod re> \md |
+    \stemDown <sol'lab dod>\< <sol lab dod> \mg \stemUp <lab, dod re> <lab dod re>
+    \md \stemDown <sol' lab dod> \mg \stemUp <lab, dod re>\! \md |
     \stemDown <lad' si mi> <lad si mi> <lad si mi> \mg
     \stemUp <lad, si fa'> <lad si fa'> <lad si fa'> \md |
     \stemDown <lad' si mi> <lad si mi> <lad si mi> \mg
@@ -102,96 +102,98 @@ ProloguePiano = { \Piano
     \stemUp <lad, si fa'> <lad si fa'> <lad si fa'> \md |
     \stemDown <lad' si mi> <lad si mi> \mg \stemUp <lad, si fa'> <lad si fa'>
     \md \stemDown <lad' si mi> \mg \stemUp <lad, si fa'> \md \stemDown |
-    <fa'' sib re>8 <si,! fa' sib>16 \mg \stemUp <sold, mi'> \md \stemDown
+    <fa'' sib re>8-- <si,! fa' sib>16( \mg \stemUp <sold, mi'> \md \stemDown
     <si' fa'> \mg \stemUp <si,, sold'> 
     \md \stemDown <mi' si'> \mg \stemUp dod, \md \stemDown
     <si''! fa' sib> \mg \stemUp <si, mi sold> 
-    \md \stemDown <fa'' sib re>8 |
-    <si re mi fa>8 <re, sol si>16 <reb, lab'> <re' sol> \mg \stemUp
+    \md \stemDown <fa'' sib re>8) |
+    <si re mi fa>8-- <re, sol si>16( <reb, lab'> <re' sol> \mg \stemUp
     <fa,, reb'> \md \stemDown <lab' re> 
     \mg \stemUp sib,, \md \stemDown <lab'' re sol>
-    \mg \stemUp <lab, reb fa> \md \stemDown <re' sol si>8 |
-    <mi sold si dod re>16 <sib, fa'> <si' mi sold> \mg \stemUp <re,, sib'>
-    \md \stemDown <fa' si mi>8 | <dod' re mi sol>16 
+    \mg \stemUp <lab, reb fa> \md \stemDown <re' sol si>8) |
+    <mi sold si dod re>16--(\> <sib, fa'> <si' mi sold> \mg \stemUp <re,, sib'>
+    \md \stemDown <fa' si mi>8) | <dod' re mi sol>16--( 
     \mg \stemUp <fa,, si> \md \stemDown
     <sold' re'> \mg \stemUp <sib,, fa'> 
-    \md \stemDown <si' sold'>8 |
-    <fa' solb lab dob>16 \mg \stemUp <mib, lab> 
-    \md \stemDown <re' mib fa lab> \mg \stemUp
-    <si, mi> \md \stemDown <si' do re fa>8 | R4.*9 R8*5 R2.*3
+    \md \stemDown <si' sold'>8) |
+    <fa' solb lab dob>16-- \mg \stemUp <mib, lab> 
+    \md \stemDown <re' mib fa lab>-- \mg \stemUp
+    <si, mi> \md \stemDown <si' do re fa>8--\! } | R4.*9 R8*5 R2.*3
     
     %%% Adagio %%%
-    <sib' fa' dod'>1\laissezVibrer R1*3 R1.
+    \cmb #"p" #"très clair" <sib' fa' dod'>1\laissezVibrer R1*3 R1.
     \makeClusters { \ind #"dans les cordes" sol,16 la si do re2.} r2 |
     <la' re fa sib>1\laissezVibrer R1*2 R1.
     \makeClusters { \simile sol,16 la si do mi2. } r2 |
-    <dod' mi do'!>2 <la do sold'>\laissezVibrer R1 R2. |
+    <dod' mi do'!>2-- <la do sold'>--\laissezVibrer R1 R2. |
     
     %%% Valse %%%
     \ottava #1
-    r4 <fa'' lab reb>2 | r4 <sib, mib solb>2 \ottava #0
+    r4 \det {<fa'' lab reb>2\ppp | r4 <sib, mib solb>2 \ottava #0
     r4 <mi, la do>2 | r4 <sib mib solb>2 | r4 <sold dod mi>2 |
-    r4 <sol sib mib>2 | r4 <fa lab reb> r <mib lab dob> |
-    \mg \stemUp r8 re,8 mib sib' si \md fad' 
-    \stemNeutral sol8 re' mib sib' | R2.*2
-    \stemUp \t {r8 mi mib} \t {lab, sol do,} \t {si mi, mib} \mg
-    \t {lab, sol do,} \md \stemNeutral |
-    r2 \pl <do' fa lab>2 <dod' mi la> |
+    r4 <sol sib mib>2 | r4 <fa lab reb> r <mib lab dob> } |
+    \mg \stemUp r8 re,8\p( mib sib' si \md fad' 
+    \stemNeutral sol8\< re' mib sib')\! | R2.*2
+    \stemUp \t {r8 mi(\pp mib} \t {lab, sol do,} \t {si mi, mib} \mg
+    \t {lab, sol do,)} \md \stemNeutral |
+    \det {r2 \pl <do' fa lab>2\ppp <dod' mi la> |
     r4 \pl <sib, reb solb>2 <la' re fa>2 |
     r4 <sold dod mi>2 r4 <fad la re>2 | r4 <fa lab reb>2 |
-    r4 <dod fad la>2 r4 <sib reb solb> r <la do fa> |
-    R1 \stemUp re16 mib fa lab sib si dod mi fad sol la do |
-    \stemDown <re, re'>8 \stemUp \mg re,, \md \stemNeutral r4 |
+    r4 <dod fad la>2 r4 <sib reb solb> r <la do fa>} |
+    R1 \stemUp \ind #"non legato" re16\mp \< mib fa lab sib si dod mi fad sol la do |
+    \stemDown <re, re'>8->\fp \stemUp \mg re,,-. \md \stemNeutral r4 |
     R2*6 r4 s R2*15
-    <fad' si mi>8 r r4 <mi la re>8 r r4 <reb lab'>8 r r4 |
-    R2*3 sib8 r r4 <fa mi'>8 r mi''' r |
+    \st {<fad' si mi>8\p r r4 <mi la re>8 r r4 <reb lab'>8 r r4 |
+    R2*3 sib8-> r r4 <fa mi'>8-> r mi''' r } |
   }
   \relative {
     \partial 4 r4 R2.*3 R1
-    <mi,, mi'>2\rfz\laissezVibrer r4 <mi, mi'>4\laissezVibrer r4 <mi mi'>2\laissezVibrer |
+    \det {<mi,, mi'>2\rfz\laissezVibrer r4 <mi, mi'>4\laissezVibrer r4 <mi mi'>2\laissezVibrer |
     r4 <mi mi'>\laissezVibrer | r4 <mi mi'>\laissezVibrer mi'4 mi,2\laissezVibrer |R2*2 |
     r4 <mi mi'>2\laissezVibrer | R2*2
     r4 <mi mi'>2\laissezVibrer | R2 r4 <re' re'> |
-    <dod dod'>2 r4 | R2*2
-    <dod, dod'>2 r8 <sol' sol'> | r dod r <sol sol'> | dod4 <dod, dod'> <sol' sol'>8 dod~|
-    R2 <sol sol'>4 dod <sib sib'>8 dod~| dod <sol sol'> dod4 |
-    <dod, dod'>4 <sol' sol'>8 <dod dod'>4 <sib sib'>8 | r <dod dod'>4 <sol sol'>8 |
-    <sib sib'>2~<sib sib'>4 r2 |
+    <dod dod'>2-> r4 } | R2*2
+    <dod, dod'>2->-- r8 <sol' sol'>-. | r dod-. r <sol sol'>-. |
+    dod4-- <dod, dod'>-- <sol' sol'>8-. dod--|
+    R2 <sol sol'>4-- dod-- <sib sib'>8-. dod--~| dod <sol sol'>-. dod4-- |
+    <dod, dod'>4-- <sol' sol'>8-. <dod dod'>4-- <sib sib'>8-. |
+    r <dod dod'>4-- <sol sol'>8-. |
+    <sib sib'>2--~<sib sib'>4 r2 |
     
     %%% Tempo giusto %%%
-    <re re'>8 r r4 |
-    re'8 \md re' \mg re, \md re' \mg |
-    re,16 mib' \md re mib re' mib, re \mg mib, |
-    re,8 re' re, re' | re, re' re, re' | re, re' re, re' |
-    <dod,dod'>16 <dod'dod'> <fa, fa'> <fa' fa'>
+    <re re'>8->-. r r4 |
+    re'8-. \md re'-. \mg re,-. \md re'-. \mg |
+    re,16(\< mib' \md re mib) re'->(\> mib, re \mg mib,) |
+    \st {re,8\p re' re, re' | re, re' re, re' | re, re' re, re'} |
+    <dod,dod'>16\pp\< <dod'dod'> <fa, fa'> <fa' fa'>
     <si, si'> \md <si' si'> \mg <mi, mi'> \md <mi' mi'> \mg |
     <fad, fad'> \md <fad' fad'> \mg <sol, sol'> \md <sol' sol'>
-    <la, la'> <la' la'> <do, do'> <do' do'> \mg |
-    R2. <lab,,lab'>2. <re, re'>4 r2 |
+    <la, la'> <la' la'> <do, do'> <do' do'>\! \mg |
+    R2. <lab,,lab'>2.--\mf( <re, re'>4) r2 |
     \ottava #-1
-    <fad, fad'>2. <mib mib'> <do do'> |
+    <fad, fad'>2.-- <mib mib'>-- <do do'>-- |
     \ottava #0
-    <sib' sib'>2 <sol sol'>4~ <sol sol'> <mi mi'>2 |
-    <re re'>2\laissezVibrer <re'' fa sib re>4~
-    <re fa sib re> <re mib fa lab do re>2 |
-    <dod,,dod'>1*1/2\laissezVibrer s2
+    <sib' sib'>2-- <sol sol'>4--~ <sol sol'> <mi mi'>2-- |
+    <re re'>2->--\laissezVibrer <re'' fa sib re>4->~
+    <re fa sib re> <re mib fa lab do re>2-> |
+    <dod,,dod'>1*1/2->--\laissezVibrer s2
     \t {\stemDown dod'2*1/4\laissezVibrer \stemUp <dod''re>8 dod,}
     \stemNeutral s4 R2 R2-\fermataMarkup
     
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
-    sol,2~ sol~ sol <sol fa'>2~ <sol mib'>2.
-    <sol do> <sol sib>2 <sol la>4~ <sol la> <sol lab>2~
+    sol,2~ sol~ sol <sol fa'>2(~ <sol mib'>2.)
+    <sol do>( <sol sib>2 <sol la>4~ <sol la> <sol lab>2)~
     <sol lab>2. <sol lab> <sol lab'>\arpeggio R2.*4 R4.
-    s4.*2 R4.*2 s4.*4 R4.*3 r8 sol' lab |
-    \acciaccatura la16 sib8 r \acciaccatura fad16 sol8 |
-    r fa r |
-    mi8 r4 sol8 r4 |
+    s4.*2 R4.*2 s4.*4 R4.*3 r8 sol'(\mp lab-.) |
+    \acciaccatura la16 sib8-.\> r \acciaccatura fad16 sol8-. |
+    r fa-.\! r |
+    \st { mi8 r4 sol8 r4 |
     mi8 r4 sol8 r4 |
     red8 r4 fad8 r4 |
     red8 r4 fad8 r4 |
-    mi8 r4 mi8 r4 | re8 r4 re8 r4 |
-    \pl {do4.\laissezVibrer R4. \oneVoice R4.*2}
+    mi8 r4 mi8 r4 | re8 r4 re8 r4 } |
+    \pl {do4.\pp\laissezVibrer R4. \oneVoice R4.*2}
     {r8 <mi'sol>8( <fa sib>
     <sol reb'> <sib do> <sib mib> \md
     <dod fad> <red sold> <fad la>
@@ -210,18 +212,18 @@ ProloguePiano = { \Piano
     %%% A tempo %%%
     
     %% FIXME: Issue #705
-    \stemUp re,,,8 \md \stemDown re'' \mg \stemDown re, \stemNeutral
-    <sold, sold'> <si si'> <dod dod'> |
-    \stemUp re, \md \stemDown re'' \mg \stemDown re, \stemNeutral
-    <sold, sold'> <si si'> <dod dod'> |
-    re fa sol <lab, reb lab'>4.\laissezVibrer R4.*2
+    \stemUp re,,,8->-. \md \stemDown re''-. \mg \stemDown re,-. \stemNeutral
+    <sold, sold'>(\< <si si'> <dod dod'>)\> |
+    \stemUp re,->-. \md \stemDown re''-. \mg \stemDown re,-. \stemNeutral
+    <sold, sold'>(\< <si si'> <dod dod'> |
+    re fa sol <lab, reb lab'>4.)\!\laissezVibrer R4.*2
     s4.*10
-    \stemDown <si, si'>4.*1/3\laissezVibrer s4 s4.
-    <sib sib'>4.*1/3\laissezVibrer s4 s4.*4 \stemNeutral
-    si'8 sib lab | fa r4 | R4.*7 R8*5 R2.*3
+    \stemDown <si, si'>4.*1/3\f\laissezVibrer s4 s4.
+    <sib sib'>4.*1/3\f\laissezVibrer s4 s4.*4 \stemNeutral
+    si'8--\mf sib-- lab-- | fa-- r4 | R4.*7 R8*5 R2.*3
     
     %%% Adagio %%%
-    <fad' re'>1\laissezVibrer R1*3 R1.*2
+    \det {<fad' re'>1\laissezVibrer R1*3 R1.*2
     <fad dod'>1\laissezVibrer R1*2 R1.*2
     <sold fa'>2 <fa dod' mi>2\laissezVibrer R1 R2. \clef treble
     
@@ -229,22 +231,22 @@ ProloguePiano = { \Piano
     r4 <mi'' la do>2 r4 <si re sol>2 |
     r4 <fa lab reb>2 | r4 <si, re sol>2 |
     r4 <la do fa>2 \clef bass r4 <fad si re>2 |
-    r4 <fad la re> r <mi sol do> |
-    \stemDown \t {sol,,8 re' sol} \t {sib sol sib}
-    \t {mib sib mib} \stemNeutral \t {fad mib fad} si4 | R2.*2
-    \md \stemDown re'8 sol, mi \mg si lab mib do sol |
-    \stemNeutral do,2*2\laissezVibrer s2. r4 <la'' do fa>2 |
+    r4 <fad la re> r <mi sol do> } |
+    \stemDown \t {sol,,8( re' sol} \t {sib sol sib}
+    \t {mib sib mib} \stemNeutral \t {fad mib fad} si4) | R2.*2
+    \md \stemDown re'8( sol, mi \mg si lab mib do-- sol--) |
+    \det { \stemNeutral do,2*2\laissezVibrer s2. r4 <la'' do fa>2 |
     r4 <fa sib reb>2 r4 <mi la do>2 |
-    r4 <re fa sib>2 r4 <la re fa> r <sold dod mi> |
+    r4 <re fa sib>2 r4 <la re fa> r <sold dod mi> } |
     R1 \stemDown re'16 mib sol la 
     sib \md do mib fa solb lab si dod \mg s4
-    \stemNeutral re,,,8 re' | re, re' re, re' |
+    \st { \stemNeutral re,,,8 re' | re, re' re, re' |
     re, re' re, re' | re, re' re, re' |
     re, re' re, re' | re, re' re, re' |
-    re, re' re, re' | re, re' \md re' \mg re, |
-    re, r r4 | R2*14
+    re, re' re, re' | re, re' \md re'\> \mg re, |
+    re,\! r r4 | R2*14
     <re' sol do>8 r r4 <mi la re>8 r r4 <sol mib'>8 r r4 |
-    R2*3 <sib, dob>8 r r4 | <mi, re'>8 r mi, r |
+    R2*3 <sib, dob>8-> r r4 | <mi, re'>8-> r mi, r } |
   }
 }
 

@@ -256,6 +256,34 @@ EntracteBarytonUn = {
     la4-- r8 sold-. sold-. sold-. la4-.\> r la-. r \parlato la-.\! |
     
     %%% Noir %%%
+    R2.-\fermataMarkup
+    R2.*4 R2 R2. R1 R2. R2 R1*3
+    mib4 do8 r r2 | R1
+    mib4 do8 r mib4 do8 r mib4 mi |
+    mib do8 r mib4 do8 r mib4 mi |
+    mib do8 r mib4 do8 r mib4 mi |
+    mib do8 r mib4 do8 r mib4 mi |
+    mib do8 r mib4 do8 r | R2.
+    
+    %%% A tempo %%%
+    R2.*3 do'2. si la~ la4 sol2~ sol r4 R2.
+    
+    %%% Poco più %%%
+    mib4 do8 r r4 | mib do8 r r4 | mib do8 r mib4 mi r2 | R2.
+    
+    %%% Andantino %%%
+    do'1 do4 la8 r | si1 si2 si do~ do do2. r4 R2.
+    la2 la la4 mi'8 r | la,2 la la4 mi'8 r |
+    la,2 la la4 do8 r | la2 sol4 mi8 r sol4 lab |
+    sol4 mi8 r sol4 mi8 r sol4 lab |
+    sol4 mi8 r sol2 lab |
+    sol2 do si la la la |
+    la la, la' si, sol'4 mi8 r sol4 lab |
+    sol2 sol4 mi8 r sol4 mi8 r |
+    sol2 la sib | sib4 sol8 r sib4 sol8 r la2 |
+    sol2 sol si, do do do |
+    fa4 mi fa sold la si |
+    la2 fa fa | mi1~ mi4 r mi2. r4 R1 R2. R2
   }
 }
 

@@ -144,8 +144,8 @@ EntracteSopranoDeux = { \SopranoDeux
     re4-- r8 re-. re-. re-. re8.-> re16 |
     dod8\>( re dod\!) r \t { r re\mp( mib} re) la |
     sold( la) dod red \t { sol4\<( re sol} |
-    sold4) \t {r8 mi\mf( la} \t {sold-.) mi-. re-.} mi-- si |
-    dod16-.\>( lab-. sib-. fa-. sol!8-.) re'16\mf re re4-- r16 re re re |
+    sold4)\! \t {r8 mi\mf( la} \t {sold-.) mi-. re-.} mi-- si |
+    dod16-.\>( lab-. sib-. fa-. sol!8-.)\! re'16\mf re re4-- r16 re re re |
     re4-- r8 re-. re-. re-. re8.-> re16 | re8-. re-. r4 r2 |
     R1*4 | r4 r8 re16\mp re dod4-- r16 re re re |
     si4-- r8 sold-. si-. sold-. dod8.-> si16 |

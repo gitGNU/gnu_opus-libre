@@ -109,7 +109,43 @@ ActeUnSceneQuatreContralto = { \Contralto
   }
 }
 
-EntracteContralto = {
+EntracteContralto = { \Contralto
+  \relative {
+    R2*9 R1*38 R2. R1
+    R1*2 R2.*2 R2 R1 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2
+    R1*14
+    R2.-\fermataMarkup
+    
+    fad4 red8 r r4 R2. fad4 red8 r r4 R2. | R2 fad4 red8 r r4 |
+    r fad red8 r r4 | r2 fad8 red r2 |
+    r2 r4 r8 fad | R1 fad4 red8 r r2 |
+    R1*2 r2 fad4 red8 r r2 |
+    r2 r4 fad red8 r r4 |
+    si8 si4 si si si8 r si si si |
+    si8 si4 si si si8 r si si si |
+    si8 si4 si8 si si4 si8 | R2.
+    
+    %%% A tempo %%%
+    la2.~ la~ la~ la2 r4 | R2.*4 R2.-\fermataMarkup |
+    
+    %%% Poco più %%%
+    la2.~ la~ la~ la2 r4 | R2.-\fermataMarkup |
+    
+    %%% Andantino %%%
+    la'1 la4 mi8 r |
+    la1 sold4 mi8 r sold2 la~ la la2. r4 R2. |
+    
+    %%% Largo non troppo %%%
+    R1.*3 r1 mi4 sol |
+    la1~ la4 r | red,4 sol la2. r4 |
+    r2 r4 la2 do4 re1~re4 r |
+    la1~ la4 r |
+    la2 sol fa mi fa4 mi fa sol la2 mi r |
+    dod4 re re mi mi re | R1.
+    sol4 si do2. r4 | la1~ la4 r |
+    do,4 si do red mi fa | mi1~ mi4 r |
+    la2. r4 R1 R2. R2
+  }
 }
 
 ActeDeuxSceneUnContralto= { \Contralto

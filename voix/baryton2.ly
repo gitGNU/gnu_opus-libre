@@ -305,7 +305,7 @@ EntracteBarytonDeux = { \BarytonDeux
     sib2~--->\! sib8 fa'-. mib4-- |
     
     %%% Fugato %%%
-    re4---> r r2 | R1 R2.*2 r4 dod8.-. dod16 |
+    re4---> r r2 | R1 R2.*2 r4 dod8.-.\p dod16 |
     sib'2--( mi,8) r dod8.-. dod16 | sib'2--( mi,8) r16 dod |
     dod8.-. dod16 do4 do | sib'2--( mi,8) r dod8. dod16 |
     sib'2--( sol8) r dod,8. dod16 
@@ -328,6 +328,39 @@ EntracteBarytonDeux = { \BarytonDeux
     sold4-- r8 la-. la-. la-.\> sold4-. r sold-. r \parlato sold\! |
     
     %%% Noir %%%
+    R2.-\fermataMarkup
+    R2.*4 R2 R2. R1 R2. R2 R1*5 R1.
+    do,4 mib8 r do4 mib8 r do4 lab |
+    do mib8 r do4 mib8 r do4 lab |
+    do mib8 r do4 mib8 r do4 lab |
+    do mib8 r do4 mib8 r | R2.
+    
+    %%% A tempo %%%
+    R2.*3 la2. sol fa~ fa4 mib2~ mib r4 R2.
+    
+    %%% Poco più %%%
+    mib4 do8 r r4 | mib do8 r r4 | mib do sib la r2 | R2.
+    
+    %%% Andantino %%%
+    la'1 la4 mi8 r |
+    la1 la2 do,1 do2 fa2. r4 R2.
+    
+    %%% Largo non troppo %%%
+    la,2 la la4 do8 r |
+    si2 si si4 re8 r |
+    do2 do do4 mi8 r |
+    re2 re re4 si8 r |
+    la2 la la4 do8 r |
+    si2 si4 re8 r si2 |
+    do2 do do4 mi8 r |
+    re2 re4 fa8 r re2 |
+    mi2 fa4 mi fa sol sol2 si, si |
+    do4 mi8 r do2 do | dod dod dod |
+    re re re si mi4 sol8 r lab2 |
+    sol4 mi8 r sol4 mi8 r sol2 re4 dod re mi fa sol |
+    fa2 do la mi'1~ mi4 r mi2. r4 |
+    \t {fad2 mi sol} red'2.~ red4 r |
+    
   }
 }
 
