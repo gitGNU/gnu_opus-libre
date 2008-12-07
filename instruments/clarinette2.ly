@@ -129,27 +129,27 @@ ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
     %%% Agitato %%%
     \ten mi1~\f mi2 r | R1*2
     mi'4-.\mf re2-- mi4-. si2->( do4) r |
-    re,2.--\mp r4 r2 | R1*2 fa16 reb8 solb16 fa?2. r2 |
-    R1*2 r2 r4 r8 re' | do8. fa'16 si,?2. r2 |
-    R1*2 mib,,1 r2 | R1.*2 r4 mi'!2 r4 | r mi2 r4 r2 |
-    si'1. sib1 r2 | R1.
+    re,2.--\mp r4 r2 | R1*2 fa16\mf( reb8) solb16-.\< fa?2.->\! r2 |
+    R1*2 r2 r4 r8 re'-. | do8.( fa'16\<) si,?2.->\! r2 |
+    R1*2 \ten mib,,1\mp r2 | R1.*2 r4 mi'!2--\mf r4 | r mi2-- r4 r2 |
+    si'1.\f\>( sib1\pp) r2 | R1.
     
     %%% Allegro non troppo %%%
     R1 R2. R1*3
-    sib4 r r2 | r8 sib r sib r2 |
-    R2. r8 sib r sib r2 |
-    R2. r8 sib r sib r2 |
-    R2. r8 sib r sib r2 |
-    mi,2 r4 | sib2. r4 | R1*2
-    re2. r4 | R1 re2 r4 | R2.*2 R1*8
+    sib4-.\mp r r2 | r8 sib-. r sib-. r2 |
+    R2. r8 sib-. r sib-. r2 |
+    R2. r8 sib-. r sib-. r2 |
+    R2. r8 sib-.\mf r sib-. r2 |
+    mi,2--\f r4 | sib2.\mf r4 | R1*2
+    re2.--\mp r4 | R1 re2-- r4 | R2.*2 R1*8
     
     %%% Moderato %%%
     R2.*2 R1 R2. R1 R2. R1
-    sib2.~ sib2 r | sib2.~ sib2 r |
-    sib2.~ sib2 r4 r8 sib' | sib16 sib fa' do sib2 |
-    sib,4. mib8 fa16 sib do sib mib do sib8 |
-    fa'16 reb fa la,~ la8 fa'16 reb mib8 reb |
-    dob sib dob16 sib dob reb | sib8 r r2 | R1
+    \ten sib2.~\pp sib2 r | \ten sib2.~ sib2 r |
+    \ten sib2.~ sib2 r4 r8 sib'--\p | sib16 sib fa' do sib2 |
+    sib,4.-- mib8-- fa16( sib) do( sib) mib( do) sib8-- |
+    fa'16\mp( reb) fa-. la,~-- la8 fa'16( reb) mib8-.( reb) |
+    dob( sib) dob16\<( sib) dob( reb) | sib8->\! r r2 | R1
     R2*3 r4 r8 si! |
     
     %%% Allegro marcato %%%

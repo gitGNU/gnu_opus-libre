@@ -343,33 +343,33 @@ ActeUnSceneUnPercus = <<
       R1 R2. R1*5
       R2. R1 R2. R1 R2. R1
       R2. R1*3 \clef bass |
-      \pl {sol,16[ re'] s8} {sol8 <re' la'>16 sol,} \clef treble
-      <sib'' do> re,, la' <sib' do> sol,, re' <sib' do> la
-      <sib' do> re,, la' <sib' do> | R1
-      sol,,16 re' <sib' do> la <sib' do> re,, la' <sib' do>
-      sol,, re' la' <sib' do> | R2.
-      <sib, do>4 <sib' do> <sib,, do> | R1
-      <sib do>8 <sib' do>16 do, <do' reb> reb, <reb' mib> mib, r2\fermata | R1
-      <sib do>8 <reb' mib>16 mib, <mib' fa> fa, <fa' solb> solb, r2\fermata | R1
-      <sib,do>16 <fa'' solb> solb, <solb' lab> lab, <lab' si> si, <re! si' re!>
-      <mi! re' mi!>16 <mi re' mi> r8 r4\fermata |
+      \pl {sol,16\mf\<[ re'] s8 s4\!} {sol8 <re' la'>16 sol, \clef treble
+      \oneVoice <sib'' do>-> re,, la' <sib' do>->} sol,,\< re' <sib' do>-- la
+      <sib' do>->\! re,, la' <sib' do>-> | R1
+      sol,,16\< re' <sib' do>-- la <sib' do>->\! re,, la' <sib' do>->
+      sol,,\< re' la' <sib' do>->\! | R2.
+      <sib, do>4--\> <sib' do>-- <sib,, do>--\! | R1
+      <sib do>8\p\< <sib' do>16 do, <do' reb> reb, <reb' mib> mib,\! r2\fermata | R1
+      <sib do>8\p\< <reb' mib>16 mib, <mib' fa> fa, <fa' solb> solb,\! r2\fermata | R1
+      <sib,do>16\mf <fa'' solb> solb, <solb' lab> lab, <lab' si> si, <re! si' re!>
+      <mi! re' mi!>16 <mi re' mi>\f r8 r4\fermata |
       
       %%% Moderato %%%
       R1*2-\markup "Allez au Vibraphone" R2.*2 \Vibraphone
-      r4 r8 do, <sib' do>2\laissezVibrer | R2.
+      r4 r8 do,\p <sib' do>2\laissezVibrer | R2.
       r8 <sib, do>2..\laissezVibrer | R2. \clef bass
-      \t {r8 do, sib'} \clef treble do sib'4 <do sib'>4. |
-      mib,,2*1/4\laissezVibrer <do'' sib'>8~ <do sib'>16 <sol fa'>8 re16 la'4 |
-      mib,2. r4 |
-      fa2*1/4\laissezVibrer <do'' sib'>8 sib16 mib8 lab,16 reb, fa, do' sol' |
-      <sib do>4\laissezVibrer fa,2.\laissezVibrer |
-      do'16 sib' <do sib'>8~ <do sib'>16 <sib' do>4.. |
-      <mib,,, fa>8 <sib'' do>2.. |
-      r16 do'32 sib, do'16 do,, sib' <sib' do>4.. |
-      r8 sib,,16 do sib sib do sib do sib do sib' do, sib' do sib |
-      sib do sib, do sib' do, do' sib sib do sib' do |
-      sib, do sib' do, sib' do sib, do, |
-      <mi, fad>8 r r2 R1 R2*4
+      \t {r8 do,( sib'} \clef treble do-. sib'4--) <do sib'>4.-- |
+      mib,,2*1/4\mp\laissezVibrer <do'' sib'>8~-- <do sib'>16 <sol fa'>8-- re16( la'4) |
+      mib,2.-- r4 |
+      fa2*1/4--\laissezVibrer <do'' sib'>8( sib16 mib8 lab,16 reb,\> fa, do' sol' |
+      <sib do>4\!)\laissezVibrer fa,2.--\laissezVibrer |
+      do'16 sib' <do sib'>8~-- <do sib'>16 <sib' do>4..-> |
+      <mib,,, fa>8-. <sib'' do>2..-- |
+      r16 do'32 sib, do'16 do,,-. sib'-. <sib' do>4..-> |
+      r8 \ind #"con Ped." sib,,16\pp do( sib) sib do( sib) do sib( do sib') do,( sib' do) sib |
+      sib( do) sib,( do sib') do, do' sib sib( do) sib'( do) |
+      sib,( do sib') do,( sib' do) sib,( do,) |
+      <mi, fad>8-> r r2 R1 R2*4
       
       %%% Allegro marcato %%%
       \Marimba R1*34 
@@ -411,8 +411,8 @@ ActeUnSceneUnPercus = <<
       R1*2 R2.*2 R1 R2. R1
       R2. R1 R2. R1 R2. R1 R2.
       R1 R2. R1 R2. R2 R2.
-      r2 r4 r8 \ind #"Tambour (bag. fagot)" sn32 sn sn sn |
-      sn4 r8 \t {sn16 sn sn} sn4 r | R2*2
+      r2 r4 r8 \ind #"Tambour (bag. fagot)" sn32\< sn sn sn |
+      sn4\mp r8 \t {sn16\< sn sn} sn4\! r | R2*2
       \set drumStyleTable = #drums-style
       
       %%% Allegro marcato %%%
@@ -466,20 +466,20 @@ ActeUnSceneUnPercus = <<
       re->\!) r r2 | re4-- re \t {re\<( re re} re->\!) r r2 |
       r2 r4 r8 re16\< re |
       re4->\! r re\mp re \t {re\<( re re} re4->\!) r r2 | R1
-      re4 r re re \t {re re re} re4 r r2 | R1*2
-      re4 r re re \t {re re re} re4 r r2 | re1:16\glissando |
-      mib4 r mib mib \t {mib mib mib} |
-      mib4 r mib mib \t {mib mib mib} |
-      mib4 r mib mib \t {mib mib mib} |
-      mib8. mib32 mib mib8 mib r2 |
-      r4 \t {mib8 mib mib} mib mib r4 mib2:16\glissando |
-      mi4 r r1 | R1.*2
+      re4 r re re \t {re\<( re re} re4\!) r r2 | R1*2
+      re4 r re re \t {re\<( re re} re4\!) r r2 | re1:16\fpp\<\glissando |
+      mib4->\mf r mib\pp mib \t {mib-- mib mib} |
+      mib4-- r mib mib \t {mib-- mib mib} |
+      mib4-- r mib mib \t {mib-- mib mib} |
+      mib8.--\< mib32 mib mib8\> mib\! r2 |
+      r4 \t {mib8 mib mib} mib mib r4 mib2:16\<\glissando |
+      mi4\mf r r1 | R1.*2
       
       %%% Allegro non troppo %%%
       R1 R2. R1*5 R2. R1 R2. R1 R2.
-      r2 r4 r8 sol,32 sol sol sol |
-      sol8 sol r2 | r2 r4 r8 \t {sol16 sol sol} |
-      sol4 r r2 R1*3 | R2.*3 R1*6
+      r2 r4 r8 sol,32\< sol sol sol |
+      sol8->\f sol r2 | r2 r4 r8 \t {sol16\< sol sol} |
+      sol4--->\! r r2 R1*3 | R2.*3 R1*6
       
       %%% Moderato %%%
       R1*2 R2.*2 R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.

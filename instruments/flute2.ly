@@ -107,48 +107,48 @@ ActeUnSceneUnFluteDeux = { \FluteDeux
     
     %%% Agitato %%%
     \ten re,1~\f re2 r | R1*2
-    r2 lab''4-.\mp r | r do, r2 |
+    r2 lab''4-.\mp r | r do,-.-> r2 |
     R1. r2 r4 \t {r8 re( fad} |
     sib4-.) r r2 | R1. R1
-    r8 fad16 la do4 r2 | R1
+    r8 fad16( la do4-.) r2 | R1
     R1. R1*2 R1.*3 R1 R1.
-    re1 re2 dod1 r2 | R1.
+    re1\f\>( re2 dod1\p) r2 | R1.
     
     %%% Allegro non troppo %%%
-    R1 R2. R1*3 fa,4 r r2 |
-    r8 la16 fa r8 la16 fa r2 |
-    R2. r8 la16 sol r8 la16 sol r2 |
-    R2. r8 la16 sol r8 la16 sol r2 |
-    R2. r8 la16 fad r8 la16 fad r2 |
-    fa2 r4 | re4 dod2 r4 | R1*2
-    r8 sib sib'16 sib, r8 r sib sib'16 sib,8 sib'16 |
-    sib,8[ r16 sib] r sib8 sib'16 sib,8 sib'16 sib, r sib8 sib'16 |
+    R1 R2. R1*3 fa,4-.\mf r r2 |
+    r8 la16-.\mp fa-. r8 la16-. fa-. r2 |
+    R2. r8 la16-. sol-. r8 la16-. sol-. r2 |
+    R2. r8 la16-. sol-. r8 la16-. sol-. r2 |
+    R2. r8 la16-.\mf fad-. r8 la16-. fad-. r2 |
+    fa2--\f r4 | re4\mf( dod2) r4 | R1*2
+    r8 \st {sib\p sib'16 sib, r8 r sib sib'16 sib,8 sib'16 |
+    sib,8[ r16 sib->] r sib8-- sib'16 sib,8 sib'16-> sib, r sib8-- sib'16 |
     r8 sib, sib'16 sib,8 sib'16 sib,8[ r16 sib] |
-    r sib8 sib'16 sib,8 sib'16 sib, r8 sib |
-    sib sib'16 sib, r8 sib sib'16 sib,8 sib'16 |
-    sib,8[ r16 sib'] sib,8[ r16 sib'] sib,8[ r16 sib'] sib,8[ r16 sib'] |
-    sib,8 sib'16 sib, do' do, reb' reb, r4\fermata r8 r16 sib' |
-    sib,8[ r16 sib'] sib,8[ r16 sib'] sib,8[ r16 sib'] sib,8[ r16 sib'] |
-    sib,8 do'16 do, mib' mib, fa' fa, r4\fermata r8 r16 sib |
-    sib,8[ r16 sib'] sib,8[ r16 sib'] sib,8[ r16 sib'] sib,8[ r16 do'] |
-    do, fa' fa, solb' solb, lab' la, re mi8 r\fermata r r16 sib |
+    r sib8-- sib'16 sib,8 sib'16-> sib, r8 sib |
+    sib-- sib'16 sib, r8 sib sib'16 sib,8 sib'16 |
+    sib,8--\pp[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] |
+    sib,8 sib'16 sib, do'\< do, reb' reb,\! r4\fermata r8 r16 sib'\pp |
+    sib,8--[ r16 sib'] sib,8[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] |
+    sib,8 do'16 do, mib'\< mib, fa' fa,\! r4\fermata r8 r16 sib\pp |
+    sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 do'] |
+    do, fa' fa, solb' solb,\< lab' la, re mi8\mf r\fermata r r16 sib\p |
     
     %%% Moderato %%%
-    sib,8[ r16 sib] r sib8 sib'16 sib,8 r sib[ r16 sib'] |
-    sib,8 do16 sib r8 sib8 r16 sib8 sib'16 sib,8 r |
+    sib,8--[ r16 sib] r sib8-- sib'16 sib,8 r sib--[ r16 sib'] |
+    sib,8-- do16 sib r8 sib8 r16 sib8-- sib'16 sib,8 r |
     r sib r16 do sib8 r4 |
     r8 sib'16 sib, r sib' sib,8 r16 sib r8 |
-    r4 r16 sib8 sib'16 sib,8[ r16 sib] r sib8 sib'16 |
+    r4 r16 sib8-- sib'16 sib,8[ r16 sib] r sib8-- sib'16 |
     sib,8 r r2 |
-    r8 sib'16 sib, r do sib8 r2 |
-    \slap \ind #"slap" do,8 r r2 |
-    r8 sib''16 sib, r sib8 sib'16 sib,8 sib' r sib,~ |
-    sib2.~ sib2 r4 sib~ sib2.~ sib2 r8 mib,4. |
-    sib'4. fa'16 do sib4~ | sib8 mib4.~ mib8 sib'16 fa mib4~ |
-    mib8 r mib16 mib do' sib sib,4~ |
-    sib8 lab'16 mib sib4 r16 mib do sib'~ sib mib, mib'8 |
-    sib8 do,16 sib do' sib8 do,16 sib do' sib8 |
-    do16 sib sib, do' sib do, do' sib | R2. R1
+    r8 sib'16 sib, r do sib8} r2 |
+    \slap \ind #"slap" do,8\sfz r r2 |
+    r8 sib''16-.\p sib,-. r sib8---. sib'16-. sib,8( sib'-.) r sib,~\pp |
+    \ten sib2.~ sib2 r4 sib~ \ten sib2.~ sib2 r8 mib,4.--\p( |
+    sib'4.) fa'16-. do-. sib4~-- | sib8 mib4.~-- mib8 sib'16-. fa-. mib4~-- |
+    mib8 r mib16-. mib-. do'-. sib-. sib,4~-- |
+    sib8 lab'16-. mib-. sib4-- r16 mib\psempre do sib'~-- sib mib, mib'8 |
+    sib8-- do,16 sib do' sib8-- do,16 sib do' sib8-- |
+  do16 sib sib, do' sib do, do' sib | R2. R1
     R2*3 r4 r8 sol |
     
     %%% Allegro marcato %%%
