@@ -192,10 +192,43 @@ EntracteTenor = { \Tenor
     
     %%% Noir %%%
     R2.-\fermataMarkup
-    R2.*4 mib,4 do8 r R2. mib4 do8 r r2 |
-    mi4 do8 r r4 | R2
-    sol'4( mi8) r sol4( mi8) r | sol4( mi8) r sol4( mi8) r |
-    sol4( mi8) r 
+    R2.*4 mib,4\pp( do8) r R2. mib4( do8) r r2 |
+    mi4(\p do8) r r4 | R2
+    \ind #"giocoso" sol'4( mi8) r sol4( mi8) r |
+    sol4( mi8) r sol4( mi8) r |
+    sol4( mi8)\> r sol4( mi8) r |
+    sol4(\pp mi8) r sol4( mi8) r |
+    sol4( mi8) r sol4( mi8) r |
+    sol4( mi8) r sol4( mi8) r sol( mi) sol( lab) |
+    sol4( mi8) r sol4( mi8) r sol( mi) sol( lab) |
+    sol4( mi8) r sol4( mi8) r sol( mi) sol( lab) |
+    sol4( mi8) r sol4( mi8) r sol( mi) sol( lab) |
+    sol4(\> mi8) r sol4( mi8)\! r | R2.-\fermataMarkup
+    
+    %%% A tempo %%%
+    R2. la2.~ la2 r4 R2. |
+    r4 mi'2~ mi2 re4~ re2.~ re2 r4 | R2.-\fermataMarkup
+    
+    %%% Poco più %%%
+    sol,4( mi?8) r r4 |
+    sol( mi8) r r4 |
+    sol( mi8) r sol4-- lab-- r2 R2.-\fermataMarkup |
+    
+    %%% Andantino %%%
+    mi'1 mi4 do8 r |
+    mi1 re4 si8 r mi1 mi4 do8 r |
+    mi2 re4 r R2.
+    
+    %%% Largo non troppo %%%
+    mi2 mi mi4 la,8 r |
+    mi'2 mi mi4 la,8 r |
+    mi'2 mi mi4 la,8 r |
+    fa'2 fa re | do do mi do si si |
+    do do4 la8 r do2 | do4 la8 r do2 si |
+    la4 mi8 r la2 la | re re re do do do |
+    mi fa4 mi fa sol | la1~ la4 r |
+    re,2 re re si4 do do re re do | R1.
+    la4 sold la si do re mi1~ mi4 r re2. r4 R1 R2. R2
   }
 }
 
@@ -326,7 +359,7 @@ ActeDeuxSceneTroisTenor = { \Tenor
     R4*7 R4. R4*7 
     R4.*14 r8 sold16-.    sold-. la8-- fad16-. fad-. sol8-- r16 sold-. |
     la-.( la-. fad-. fad-. sib8-- la16-. la-. 
-    dod-. dod-. \t {do do do} mi8--) r16 fad,32(\< fa'! |
+    dod-. dod-. \t {do do do} mi8--) r16 \ind #"abbaiando" fad,32(\ff\< fa'! |
     \ten la4)\!~ la8 r | R4*19 R2.*7 R2*9 R2. R2*6 R1*5/8 R2*16 R1*5/8 R2
     r8 fad-.\mp sol-. | la-. r r4 |
     r8 fad-.    sol-. | la-. r r4 |

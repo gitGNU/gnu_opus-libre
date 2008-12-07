@@ -173,6 +173,35 @@ EntracteSopranoDeux = { \SopranoDeux
     re4-- r8 re-. re-. re-. mib4-.\> r re-. r \parlato re-.\! |
     
     %%% Noir %%%
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2 R1*5 R1.*2
+    fad4(\pp re?8) r fad4( re8) r fad( do?) fad( sol) |
+    fad4( re8) r fad4( re8) r fad( do?) fad( sol) |
+    fad4(\> re8) r fad4( re8)\! r | R2.-\fermataMarkup
+    
+    %%% A tempo %%%
+    R2. la'2.~ la2 r4 | la2.~ la~ la2 r4 | la2.~ la2 r4 |
+    R2.-\fermataMarkup
+    
+    %%% Poco più %%%
+    fa?4( re8) r r4 |
+    fa4( re8) r r4 |
+    fa4( re8) r fa4-- fad-- r2 | R2.-\fermataMarkup
+    
+    %%% Andantino %%%
+    do'1 do4 la8 r |
+    re1 re2 re do4 la8 r do4 la8 r si2. r4 |
+    R2.
+    
+    %%% Largo non troppo %%%
+    do2 do do4 la8 r | si2 si si4 sold8 r |
+    la2 la la4 mi8 r | la2 la r |
+    mi2 mi la4 do8 r | la2 re re do sol sol fa la si |
+    do re mi | mi mi mi mi mi do sib la sol |
+    sol4 mi8 r sol4 mi8 r fa2 re' re re re mi mi |
+    mi, re2. r4 |
+    mi2 mib2. r4 |
+    do'1~ do4 r |
+    si2. r4 | R1 R2. R2
   }
 }
 

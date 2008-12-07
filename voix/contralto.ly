@@ -116,14 +116,16 @@ EntracteContralto = { \Contralto
     R1*14
     R2.-\fermataMarkup
     
-    fad4 red8 r r4 R2. fad4 red8 r r4 R2. | R2 fad4 red8 r r4 |
-    r fad red8 r r4 | r2 fad8 red r2 |
-    r2 r4 r8 fad | R1 fad4 red8 r r2 |
-    R1*2 r2 fad4 red8 r r2 |
-    r2 r4 fad red8 r r4 |
-    si8 si4 si si si8 r si si si |
-    si8 si4 si si si8 r si si si |
-    si8 si4 si8 si si4 si8 | R2.
+    fad4(\mp red8) r r4 R2.
+    fad4( red8) r r4 R2. |
+    R2 fad4(\p red8) r r4 |
+    r fad(\mf red8) r r4 | r2 fad8->\f red-> r2 |
+    r2 r4 r8 fad-> | R1 fad4\mp( red8) r r2 |
+    R1*2 r2 fad4( red8) r r2 |
+    r2 r4 fad( red8) r r4 |
+    si8-.\pp si4-- si-- si-- si8-. r si-- si-- si-- |
+    si8-. si4-- si-- si-- si8-. r si-- si-- si-- |
+    si8-.\> si4-- si8-. si-. si4-- si8-.\! | R2.-\fermataMarkup
     
     %%% A tempo %%%
     la2.~ la~ la~ la2 r4 | R2.*4 R2.-\fermataMarkup |

@@ -20,14 +20,14 @@
 PrologueTenorTexte = \lyricmode {
   \set instrumentName = \TenorName
   \set shortInstrumentName = \TenorShortName
-  
+
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- té_!
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- té_!
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- téEH_!!!
-  Un é -- tran -- ger __ _ dans u -- ne cu -- ri -- eu -- se 
+  Un é -- tran -- ger __ _ dans u -- ne cu -- ri -- eu -- se
   ma -- chi -- ne vo -- lan -- te s'est __ _ é -- _ cra -- _ sé
   sur no -- tre châ -- teau…
-  Aah_! __ _ Aah_! __ _ Aaah… __ _ _ Aah_! __ _ Aah_! __ _ 
+  Aah_! __ _ Aah_! __ _ Aaah… __ _ _ Aah_! __ _ Aah_! __ _
   Me pu -- nir in -- ce -- ssa -- ment, Ma -- jes -- té_;
   j'ai dit_: \leftSyl « no -- _ tre châ -- teau » au lieu de_: \leftSyl « vo -- tre châ -- teau » __ _ _
   \dash C'est -- \dash à -- di -- re, Ma -- jes -- té_?
@@ -50,8 +50,8 @@ PrologueTenorTexte = \lyricmode {
 PrologueBarytonDeuxTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
-  Quoi, quoi, __ _ quoi_; 
+
+  Quoi, quoi, __ _ quoi_;
   qu'y \dash a -- \leftSyl t_-_il,
   qu'y \dash a -- \leftSyl t_-_il,
   qu'y \dash a -- \leftSyl t_-_il_?
@@ -66,16 +66,16 @@ PrologueBarytonDeuxTexte = \lyricmode {
   j'ai trop be -- soin de toi en ces mo -- ments gra -- ves, très gra -- ves_;
   ex -- trê -- me -- ment graves… __ _
   Pa -- \dash rle -- moi un peu __ _ de cet É -- tran -- ger.
-  Je ne sais pas… 
-  \dash Est -- il vert_? 
+  Je ne sais pas…
+  \dash Est -- il vert_?
   \dash A -- \leftSyl t_—_il huit bras_?
-  \dash Mange -- \leftSyl t_—_il du feu_? 
+  \dash Mange -- \leftSyl t_—_il du feu_?
   \dash Fait -- il…
   vingt pieds de haut_?
   Vingt pieds de la -- _ rge_?
   Vingt pieds de \leftSyl biais_?!
   A -- LORS, à quoi \dash voit -- on que cet É -- tran -- ger
-  qui s'est é -- cra -- sé dans sa ma -- chi -- ne vo -- lante __ _ 
+  qui s'est é -- cra -- sé dans sa ma -- chi -- ne vo -- lante __ _
   est un é -- tran -- ger_?
   \dash Est -- ce tout_?
   Raah_! __ _ _ Raah_! __ _ _
@@ -88,9 +88,9 @@ PrologueBarytonDeuxTexte = \lyricmode {
   RAAH_! C'est é -- ner -- vant, très é -- ner -- vant_;
   ex -- trê -- me -- ment é -- ner -- vant.
   Je m'en vais de ce pas voir __ _ cet É -- tran -- ger.
-  É -- ner -- vant, très é -- ner -- vant_; 
+  É -- ner -- vant, très é -- ner -- vant_;
   ex -- trê -- me -- ment é -- ner -- vant.
-  É -- ner -- vant, très é -- ner -- vant_; 
+  É -- ner -- vant, très é -- ner -- vant_;
   ex -- trê -- me -- ment é -- ner -- vant.
 }
 
@@ -105,7 +105,7 @@ PrologueBarytonDeuxTexte = \lyricmode {
 ActeUnSceneUnBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
-  
+
   Aah… __ _ _ _ \freeStyleOn
   \markup \null __ _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -120,98 +120,98 @@ ActeUnSceneUnBarytonUnTexte = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _
   _ \freeStyleOff
   Mmm… __ _ Mmm… __ _ Mmmh… __ _ Aa… __ _  Aaa… __ _ _ _ AAAH_!
-  
+
   Euh… Oui…
   Je… je ne me sou -- viens plus…
   Euh…__ _ Euh…__ _ ça__ _ non__ _ plus…
   Plu -- tôt au de -- ssus… à la tête, quoi…
   Je ne sais pas…
   Je ne sais PAS_!…
-  
+
   Je pen -- se… __ _ Je pen -- se… que vo -- tre femme…
-  \leftSyl 
+  \leftSyl
   …_fait des é -- co -- no -- mies __ _ en ra -- pié -- çant vos a -- ffaires…
-  
-    
+
+
   A -- mné -- sique_?! A -- mné -- sique_?!
-  
+
   A -- mné -- si -- que,  a -- mné -- si -- que, je suis a -- mné -- si -- que_!
   A -- mné -- si -- que,  a -- mné -- si -- que, je suis a -- mné -- si -- que_!
-  A -- mné -- si -- que,  a -- mné -- si -- que_! A -- mné -- si -- que_! 
+  A -- mné -- si -- que,  a -- mné -- si -- que_! A -- mné -- si -- que_!
   A -- mné -- si -- que_; a -- mné -- si -- que_!
-  Ex -- trê -- me -- ment a -- mné -- si -- que_! 
+  Ex -- trê -- me -- ment a -- mné -- si -- que_!
 }
-  
+
 ActeUnSceneUnSopranoUnTexte = \lyricmode {
   \set instrumentName = \SopranoUnName
   \set shortInstrumentName = \SopranoUnShortName
-  
+
   En -- dor -- mi, en -- dor -- mi_; de -- puis mi -- di.
   Non non non, noon_; __ _ il a -- vait dé -- jà pris un gnon… __ _
   Ce sont des pan -- se -- ments_; il sai -- gnait te -- lle -- ment…
   Li -- go -- té, li -- go -- té_? C'est qu'il se dé -- ba -- ttait…
   Mais il est é -- vei -- llé_; je vais l'in -- te -- rro -- ger.
-  
-  \ital Hm -- \ital hmm. 
+
+  \ital Hm -- \ital hmm.
   É -- tran -- ger, É -- tran -- ger, est-ce que vous m'en -- ten -- dez_?
   Co -- mmen -- çons, co -- mmen -- çons, quel est donc vo -- tre nom_?
   C'est pas tout, c'est pas tout, a -- lors d'où ve -- \dash nez -- vous_?
   En -- nuy -- eux, en -- nuy -- eux_; a -- \dash vez -- vous mal aux yeux_?
   C'est no -- té, c'est no -- té_; quel est vo -- tre mé -- tier_?
   Di -- \dash tes -- moi, di -- \dash tes -- moi_; pour -- quoi ê -- tes -- vous là_?
-  
+
   Un __ _ grand bra -- vo
-  \leftSyl 
+  \leftSyl
   …_pour ces é -- co -- no -- mies de sty -- lo.
   Voy -- ons si ces quel -- ques  o -- bjets
   fe -- ront sur -- gir vo -- tre pa -- ssé…
-  
+
   Ce -- tte chau -- se -- tte, di -- \dash tes -- moi,
   vous fait pen -- ser à quoi_?
   Quoi, pas __ _ la moin -- dre trace ou sou -- ve -- nir fu -- gace
   de tou -- te vo -- tre vie, tout vous est donc ra -- vi_?
-  Vos pre -- miers bi -- be -- rons, 
+  Vos pre -- miers bi -- be -- rons,
   vos mé -- tiers, vos pa -- trons,
   l'o -- deur de vo -- tre mère, vo -- tre comp -- te ban -- caire_?
   Vos a -- mours, vos  fian -- çailles,
   Vos ho -- raires de tra -- vail, __ _
   les pommes de terre sau -- tées,
   les san -- dwiches au pâ -- té_?
-  
+
   Mais a -- lors… Mais a -- lors…
   A -- mné -- si -- que_; a -- mné -- si -- que…
   A -- mné -- sique, a -- mné -- sique, il est a -- mné -- si -- que_!
-  
+
   A -- mné -- si -- que, a -- mné -- si -- que, vous ê -- tes a -- mné -- si -- que_!
   A -- mné -- si -- que, a -- mné -- si -- que, vous ê -- tes a -- mné -- si -- que_!
   A -- mné -- si -- que, a -- mné -- si -- que_!
-  A -- mné -- si -- que_! 
+  A -- mné -- si -- que_!
   A -- mné -- si -- que_; TRÈS a -- mné -- si -- que_!
   A -- mné -- si -- que_! A -- mné -- si -- que_!  Très_—…
   Ex -- trê -- me -- ment… Ex -- trê -- me -- ment… Ex -- trê -- me -- ment…
-  
+
   C'est très ai -- sé_; u -- sez __ _ du sé -- rum de vé -- ri -- té_!
   Si -- re Si -- re je n'o -- se… vous su -- ggé -- rer l'hyp -- no -- se…
   La tor -- ture_? Quelle tor -- ture_? Ce choix est bien trop dur.
   C'est le temps, oui le temps, le mei -- lleur trai -- te -- ment_!
-  
+
 }
 
 ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
+
   Co -- mment \dash est -- il_?
   Aah_! __ _ Vous l'a -- vez a -- sso -- mé_!
   Aah_! __ _ Vous l'a -- vez ba -- illo -- né_!
   Ah_; vous l'a -- vez li -- go -- té_!…
   Ses __ _ in -- ten -- ti -- ons nous sont en -- core in -- co -- nnues_;
   c'est em -- bê -- tant, très em -- bê -- tant_; ex -- trê -- me -- ment…
-  
+
   Mais… Mais…
-  
+
   A -- mné -- sique_?! A -- mné -- sique_?!
-  
+
   A -- mné -- si -- que, a -- mné -- si -- que, il est a -- mné -- si -- que_!
   Non, non, __ _ non_; ce -- la ne se peut_!
   A -- mné -- si -- que, a -- mné -- si -- que, il est a -- mné -- si -- que
@@ -219,14 +219,14 @@ ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
   —_Co -- mment __ _ o -- \dash se -- \leftSyl t_-_il_?
   Co -- mment o -- \dash sez -- vous_?
   A -- mné -- si -- que, TRÈS a -- mné -- si -- que_; EX -- trê -- me -- ment
-  a -- mné -- si -- que_! 
+  a -- mné -- si -- que_!
   A -- mné -- si -- que_; a -- mné -- si -- que_!
   A -- mné -- si -- que_! A -- mné -- si -- que_!
   \leftSyl zA -- mné -- si -- que…
   \leftSyl tA -- mné -- sique_! __ _
-  
-  C'est en -- nuy -- eux, très en -- nuy -- eux 
-  \leftSyl 
+
+  C'est en -- nuy -- eux, très en -- nuy -- eux
+  \leftSyl
   —_ex -- trê -- me -- ment en -- nuy -- eux.
   Un a -- mné -- sique_! Qu'y \dash puis -- je, que fai -- _ re_?
   Que dia -- ble_! N'a -- \dash vez -- vous rien de plus sé -- rieux_? Oui_?
@@ -235,7 +235,7 @@ ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
   \leftSyl …_de tor -- tu -- re_!
   A -- LORS, co -- mment sa -- voir ce qu'il ne sait plus_?
   MAIS de temps, nous n'en a -- vons PAS_!
-  Fâ -- cheux… __ _ Très fâ -- cheux… __ _ Ex -- trê -- me -- ment… 
+  Fâ -- cheux… __ _ Très fâ -- cheux… __ _ Ex -- trê -- me -- ment…
   \leftSyl …_Fâ -- cheux.
 }
 
@@ -244,9 +244,9 @@ ActeUnSceneUnBarytonDeuxTexte = \lyricmode {
 ActeUnSceneUnBisBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
-  
-  Ma -- jes -- té, \leftSyl —_si je puis me per -- me -- ttre_— 
-  \dash suis -- je donc le seul __ _ _ é -- tran -- ger 
+
+  Ma -- jes -- té, \leftSyl —_si je puis me per -- me -- ttre_—
+  \dash suis -- je donc le seul __ _ _ é -- tran -- ger
   que vous a -- yez ja -- mais ren -- con -- tré_?
   S'il en é -- tait ain -- si, co -- mment se -- _ \dash rais -- je né_?
   Mais… C'est a -- be -- rrant_!
@@ -266,12 +266,12 @@ ActeUnSceneUnBisBarytonUnTexte = \lyricmode {
 ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
+
   Un é -- tran -- ger_! En nos murs_!
   Un é -- tran -- ger_! Sous ce toit_!
   Un é -- tran -- ger_! __ _ _
   \ital \dash "(Hm" -- \ital "hmm.)" Il faut… Il faut… Il faut…
-  Co -- mment, le seul_?! 
+  Co -- mment, le seul_?!
   J'es -- pè -- re bien que vous ê -- tes
   le seul é -- tran -- ger au mon -- de_!
   Qu'en \dash sais -- je_; sans doute ê -- \dash tes -- vous
@@ -280,7 +280,7 @@ ActeUnSceneUnBisBarytonDeuxTexte = \lyricmode {
   Oui… le gua -- no \leftSyl …_est e -- xa -- gé -- ré.
   Mmm… __ _ mmmh… __ _ _ mmm… __ _
   \leftSyl J'é -- tu -- die un va -- ste plan de po -- ssi -- bi -- li -- tés…
-  qui vont de la li -- ber -- té a -- bso -- lue… 
+  qui vont de la li -- ber -- té a -- bso -- lue…
   à la mort dé -- _ fi -- _ ni -- tive.
   Mer -- ci de ne plus \leftSyl m'ai -- der.
 }
@@ -334,7 +334,7 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
   Mmm… __ _ _ _ _ _ _ _ _ _ _ _ _ _
   Mmm… __ _ _ _ _ _ _ _ _ _ _ _ Mm… A -- _ mour… __ _
   Ma main n'a pas a -- ssez de doigts
-  pour por -- ter à la fois 
+  pour por -- ter à la fois
   tou -- tes les ba -- gues que j'aime… __ _
   Aaa… __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   Aa… __ _ _ Aa… __ _ _ _ _ _ A -- _ mour… __ _
@@ -375,7 +375,7 @@ ActeUnSceneDeuxSopranoDeuxTexte = \lyricmode {
   Quelle cui -- sson pour la viande_:
   à point, sai -- gnante, ou bleue_?
   Mon Dieu_! Mon Dieu_!
-  Oui, quel de -- ssert \dash vaut -- il mieux_: 
+  Oui, quel de -- ssert \dash vaut -- il mieux_:
   sor -- bet ou crème aux œufs_?
   Mon Dieu, mon Dieu_;
   quels bi -- joux pour mon cou_?
@@ -390,7 +390,7 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
   Tou -- jours ces pro -- blè -- mes de res -- pon -- sa -- bi -- li -- té;
   ma chè -- re, très __ _ chère é -- pou -- se…
   Oui, oui_?
-  Euh… Non, non_; ce… \leftSyl …_ce se -- rait u -- ne trop lou -- _ rde 
+  Euh… Non, non_; ce… \leftSyl …_ce se -- rait u -- ne trop lou -- _ rde
   res -- pon -- sa -- bi -- li -- té… que de dé -- mi -- ssio -- nner…
   Un É -- tran -- ger, très é -- tran -- ger_; ex -- trê -- me -- ment
   é -- tran -- ger. __ _
@@ -398,7 +398,7 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
   D'un dî -- ner do -- \dash nnons -- nous l'i -- dée…
   Oui, oui_; oui, oui oui_! __ _ _
 
-  Mais_! C'est très dan -- ge -- reux __ _ de le faire 
+  Mais_! C'est très dan -- ge -- reux __ _ de le faire
   ve -- nir à no -- tre ta -- _ ble_;
   nous ne co -- nnai -- ssons rien de lui…
   Non_! Non,__ _ non, non…
@@ -410,9 +410,9 @@ ActeUnSceneDeuxBarytonDeuxTexte = \lyricmode {
   cham -- pagne ou bien mou -- sseux_?
   Mon Dieu… Mon Dieu… La viande_?
   Mon Dieu_! Mon Dieu_!
-  Quel de -- ssert \dash vaut -- il mieux_? 
+  Quel de -- ssert \dash vaut -- il mieux_?
   Sor -- bet ou crème aux œufs_?
-  Mon Dieu, __ _ mon Dieu_! __ _ 
+  Mon Dieu, __ _ mon Dieu_! __ _
   Quels bi -- joux pour mon c_-?!
   En -- fin bref. Ce dî -- ner peut de -- ve -- nir
   ca -- ta -- stro -- phi -- que_; très
@@ -448,7 +448,7 @@ InterludeDeuxContraltoTexte = \lyricmode {
 ActeUnSceneTroisTenorTexte = \lyricmode {
   \set instrumentName = \TenorName
   \set shortInstrumentName = \TenorShortName
-  
+
   É -- tran -- ger…
   É -- tran -- ger, É -- tran -- ger_!
   Le Roi vou -- drait sa -- voir si vous pré -- fé -- rez
@@ -476,17 +476,17 @@ ActeUnSceneTroisTenorTexte = \lyricmode {
   Ah_! ça oui_;
   que -- lle te -- rri -- ble cho -- se_;
   c'est a -- tro -- ce, a -- tro -- _ ce_!
-  \leftSyl …_gâ -- cher de la nou -- rri -- ture 
+  \leftSyl …_gâ -- cher de la nou -- rri -- ture
   pour quel -- qu'un qui va mou -- rir…
 }
 
 ActeUnSceneTroisBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
-  
+
   Il hé -- si -- te peut -- être à me brû -- ler vif_;
   ou à me con -- ge -- ler, puis bri -- ser mon corps en pu -- blic…
-  
+
   Le pal_! __ _ Le pal_! __ _
   Le pal_! __ _ Le pal_! __ _
   Non, non_! __ _ Pas le pal_! __ _
@@ -495,7 +495,7 @@ ActeUnSceneTroisBarytonUnTexte = \lyricmode {
   Sans dou -- te le Roi \dash veut -- il m'être a -- gré -- able,
   en me lai -- ssant choi -- _ sir ma mort…
   Tout, sauf le pal. Ma mort, par le pal. Quelle ho-
-  Vers que -- lle mort tour -- men -- tée le Roi \dash va  -- 
+  Vers que -- lle mort tour -- men -- tée le Roi \dash va  --
   \leftSyl t_-_il m'en -- traî -- ner_?
   Mes heures sont comp -- tées.
   Vou -- \dash lez -- vous dire qu'il veut
@@ -510,7 +510,7 @@ ActeUnSceneTroisBarytonUnTexte = \lyricmode {
 ActeUnSceneTroisBisBarytonDeuxTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
+
   Mmm… __ _ _ _ _ _ _ _
   \leftSyl …_mon Dieu… Dieu_!… Dieu…
   Dieu, Dieu. Vous tom -- bez bien, très bien_;
@@ -530,7 +530,7 @@ ActeUnSceneTroisBisBarytonDeuxTexte = \lyricmode {
 ActeUnSceneTroisBisContraltoTexte = \lyricmode {
   \set instrumentName = \ContraltoName
   \set shortInstrumentName = \ContraltoShortName
-  
+
   Un sou -- ci, mon a -- mi_?
   Un in -- stant, s'il vous plaît…
   Vous ê -- \dash tes -- vous ré -- a -- bo -- nné
@@ -558,34 +558,34 @@ ActeUnSceneTroisBisContraltoTexte = \lyricmode {
 ActeUnSceneTroisTerSopranoUnTexte = \lyricmode {
   \set instrumentName = \SopranoUnName
   \set shortInstrumentName = \SopranoUnShortName
-  
-  \leftSyl 
+
+  \leftSyl
   …_Et ce soir, et ce soir, que de -- vient vo -- tre mé -- moire_?
   Le sou -- ve -- nir to -- tal se pro -- vo -- que sou -- vent
   par un __ _ vio -- lent choc.
   Sui -- \dash vez -- moi, sui -- \dash vez -- moi_;
   ce -- ci vous ai -- de -- ra…
-  
-  \leftSyl 
+
+  \leftSyl
   …_Ce sou -- ve -- nir est vô -- _ tre_;
   mais n'y -- \dash a -- \leftSyl t_-_il rien d'au -- tre_?
-  
+
   Si je vous mon -- tre ce -- tte ta -- che,
   est-ce qu'un sou -- ve -- nir plus ré -- cent se dé -- ta -- che_?
   Et là_? Et là_? Et là_? Et…
-  \leftSyl 
+  \leftSyl
   …_Et a -- vec ce nu -- a -- _ _ ge_?
   Vos e -- fforts  sont mau -- vais_; main -- te -- nant je m'en vais.
-  
+
 }
 
 ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
-  
+
   Pas mieux __ _ que cet a -- près_- mi -- di.
   Vous au -- ssi, vous vou -- lez me ta -- per, me tu -- er_?
-  
+
   Oh_!…
   Oh… __ _ \leftSyl
   …_Mais… ce sont des mor -- ceaux de…
@@ -593,13 +593,13 @@ ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
   J'a -- vais huit ans.
   J'ai sau -- té __ _ sur la ta -- ble du sa -- lon…
   E -- lle s'est __ _ e -- ffon -- drée…
-  \leftSyl 
+  \leftSyl
   …_et ma mère m'a do -- nné ma pre -- miè -- re fe -- ssée.
   Rien… __ _ Non… Non. Non_; non, non. __ _
   Non, non, non_; __ _ non, non_! __ _ _
   Pas da -- van -- ta -- _ ge_!
-  
-  Aah… 
+
+  Aah…
   Là, vous me ra -- ppe -- lez mon an -- cie -- nne femme.
 }
 
@@ -647,7 +647,7 @@ ActeUnSceneQuatreSopranoDeuxTexte = \lyricmode {
 ActeUnSceneQuatreBarytonUnTexte = \lyricmode {
   \set instrumentName = \BarytonUnName
   \set shortInstrumentName = \BarytonUnShortName
-  
+
   Un ho -- mme qui va mou -- rir et qui par -- le trop
   est soit soûl, soit fou…
   Je ne sais pas, je ne sais pas… Peut -- ê -- tre par -- ce que
@@ -656,7 +656,7 @@ ActeUnSceneQuatreBarytonUnTexte = \lyricmode {
   Ou… \leftSyl …_mon cou, cou -- pé… __ _
   Oui_! C'est ça_! __ _ Ou… __ _
   Ou peut -- ê -- tre que je suis Dieu…
-  et que je vous ai tous -- \ital seuh cré -- és -- \ital euh. 
+  et que je vous ai tous -- \ital seuh cré -- és -- \ital euh.
   \leftSyl …_sur -- tout si je suis Dieu ET
   un tu -- eur sa -- di -- que, é -- gor -- geur et __ _ vi -- o -- leur…
   Peut -- ê -- tre \dash peut -- il… __ _
@@ -666,7 +666,7 @@ ActeUnSceneQuatreBarytonUnTexte = \lyricmode {
   Non  non __ _ non_? __ _ Non  non __ _ non_? __ _
   Non, non_? Non, non_? Non_? Non_? Non_?
   Oh_! Je me sou -- viens_!…
-  Le soir a -- vant de me cou -- cher, 
+  Le soir a -- vant de me cou -- cher,
   je bois tou -- jours un verre de lait.
   La cui -- sine… Où est la cui -- si -- ne_?
   Mais pas du tout_; je veux juste un verre de lait.
@@ -680,11 +680,11 @@ ActeUnSceneQuatreBarytonUnTexte = \lyricmode {
 ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
+
   Mais_! __ _ Pas du tout_! Du tout_! Non, non_; je n'ai pris
   au -- cu -- ne dé -- ci -- sion.
   Mais pour l'in -- stant, rien n'est dé -- ci -- dé.
-  L'É -- tran -- ger est 
+  L'É -- tran -- ger est
   a -- mné -- si -- que, très a -- mné -- si -- que_;
   ex -- trê -- me -- ment a -- mné -- sique…
   Mon dieu_! Mon dieu_! Dieu_!
@@ -693,7 +693,7 @@ ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
   ce -- la se -- rait fâ -- cheux, très fâ -- cheux_;
   ex -- trê -- me -- ment fâ -- cheux.
   \ital Ah, \ital non_! Gaaaaa -- rde_! Chef de la Gaaaaa -- rde_!
-  Ren -- vo -- yez cet É -- tran -- ger en pri -- son, il me 
+  Ren -- vo -- yez cet É -- tran -- ger en pri -- son, il me
   fait per -- dre la rai -- son.
   Non, non, __ _ non… Je dois ré -- flé -- chir à tout ça.
   Non, non, __ _ non_; non non non non…
@@ -706,7 +706,7 @@ ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
   non  non __ _ non, __ _ non non_;
   non  non __ _ non, __ _ non non_;
   non_! Non_! Non_! Non.
-  
+
   Ma chère… Que pen -- \dash sez -- vous de cette a -- ffai -- re_?
   Mais_! Il a des ban -- da -- ges par -- tout sur le vi -- sa -- ge_!!?
   Ban -- da -- ges_! Ban -- da -- ges_!! Par -- tout sur le vi -- sa -- ge_!!!
@@ -716,7 +716,7 @@ ActeUnSceneQuatreBarytonDeuxTexte = \lyricmode {
 ActeUnSceneQuatreTenorTexte = \lyricmode {
   \set instrumentName = \BarytonDeuxName
   \set shortInstrumentName = \BarytonDeuxShortName
-  
+
   Ma -- jes -- té, Ma -- jes -- té, Ma -- jes -- té_;
   or -- do -- nnez, or -- do -- nnez, or -- do -- nnez_;
   j'o -- bé -- i -- rai, j'o -- bé -- i -- rai, j'o -- bé -- i -- rai_!
@@ -743,7 +743,7 @@ ActeUnSceneQuatreTenorTexte = \lyricmode {
 ActeUnSceneQuatreContraltoTexte = \lyricmode {
   \set instrumentName = \ContraltoName
   \set shortInstrumentName = \ContraltoShortName
-  
+
   Oui_? Fâ -- cheux, très __ _ fâ -- cheux_; ex -- trê -- me -- ment fâ -- cheux.
   Hmm… A -- dre -- ssez vo -- tre re -- quête au pla -- fond et é -- cou -- tez
   ré -- pon -- dre vo -- tre cœur…
@@ -768,7 +768,7 @@ EntracteSopranoUnTexte = \lyricmode {
   ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
-  
+
   Psy -- chia tri -- que, psy -- chia -- tri -- que,
   un beau cas psy -- chia -- tri -- que_;
   neu -- ro -- lo -- gi -- que, phar -- ma -- ceu -- ti -- que,
@@ -777,12 +777,14 @@ EntracteSopranoUnTexte = \lyricmode {
   je suis un scien -- ti -- fi -- que_;
   po -- li -- ti -- que, po -- li -- ti -- que,
   pas un homme po -- li -- ti -- que.
-  
+
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
   Dans un an. Chau -- ssette...
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy_-.
+
+
 }
 
 EntracteSopranoDeuxTexte = \lyricmode {
@@ -797,14 +799,14 @@ EntracteSopranoDeuxTexte = \lyricmode {
   ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
-  
+
   Es -- thé -- ti -- que, es -- thé -- ti -- que,
   j'ai -- me cette es -- thé -- ti -- que_;
   ma -- gni -- fi -- que, ma -- gni -- fi -- que,
   ces pierres sont ma -- gni -- fi -- ques,
   au -- then -- ti -- ques, au -- then -- ti -- ques,
   des dia -- mants au -- then -- ti -- ques.
-  
+
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
   \leftSyl …_dans mon coffre à bi -- joux_?
@@ -816,6 +818,34 @@ EntracteSopranoDeuxTexte = \lyricmode {
 }
 
 EntracteContraltoTexte = \lyricmode {
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om_!
+  Pom, pom_! Pom_!
+  \dash Po -- om...
+  \dash Po -- om.
+  \dash Po -- om.
+  Pom pom, pom, pom, \dash pom -- pom pom pom
+  Pom pom, pom, pom, \dash pom -- pom pom pom
+  Pom pom, \dash pom -- Pom pom, \dash pom_-
+  Pommmm... __ _ _ _
+  Pommmm... __ _ _ _
+
+  Pom, \dash po -- om
+  pom, \dash po -- om
+  Po -- o -- om pom...
+
+  Pom pom pom, __ _
+  pom pom pom...
+  pom pom pom, __ _
+  pom. __ _
+  Pom, pom, pom, pom, \dash po -- om pom pom
+  pom, pom. \dash Po -- om \dash po -- om \dash po -- om.
+  \dash Pom pom pom...
+  Pom... __ _
+  Pom pom pom pom pom pom POM... __ _
+  POM...
 }
 
 EntracteTenorTexte = \lyricmode {
@@ -829,7 +859,7 @@ EntracteTenorTexte = \lyricmode {
   pour __ _ tu -- er __ _ cet é -- tran -- ger_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
-  
+
   Hé -- mo -- rra -- gi -- que, hé -- mo -- rra -- gi -- _ que,
   une mort hé -- mo -- rra -- gi -- que_;
   é -- lec -- tri -- _ que, é -- lec -- tri -- que,
@@ -848,8 +878,8 @@ EntracteBarytonUnTexte = \lyricmode {
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
   Ce Roi sans foi ni loi ne cher -- che -- ra qu'u -- ne cho -- se
-  ma foi, c'est le moy -- en de __ _ m'é -- xé -- cu -- ter.
-  La li -- ber -- té, ça je le sais, 
+  ma foi, c'est le moy -- en de __ _ m'e -- xé -- cu -- ter.
+  La li -- ber -- té, ça je le sais,
   ja -- mais je ne l'ob -- tien -- drai_;
   en -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
@@ -859,7 +889,7 @@ EntracteBarytonUnTexte = \lyricmode {
   ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
-  
+
   A -- mné -- si -- que, a -- mné -- si -- que,
   pour -- quoi suis_-_je a -- mné -- si -- que_;
   sym -- pa -- thi -- que, sym -- pa -- thi -- _ que,
@@ -872,7 +902,7 @@ EntracteBarytonUnTexte = \lyricmode {
   car ce Roi lu -- na -- ti -- que_;
   ty -- ra -- nni -- que, ty -- ra -- nni -- _ que,
   m'a l'air bien ty -- ra -- nni -- que.
-  
+
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
   Il faut que je m'é -- cha -- ppe,
@@ -898,7 +928,7 @@ EntracteBarytonDeuxTexte = \lyricmode {
   ex -- trê -- me -- ment en -- nuy -- eux_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment __ _ en -- nuy -- eux_!
-  
+
   Pa -- ci -- fi -- que, pa -- ci -- fi -- que,
   il a l'air pa -- ci -- fi -- que_;
   co -- lé -- ri --que, co -- lé -- ri -- que,
@@ -909,7 +939,7 @@ EntracteBarytonDeuxTexte = \lyricmode {
   d'une po -- rtée hi -- sto -- ri -- que_;
   é -- ner -- gi -- que, é -- ner -- gi -- que,
   je dois être é -- ner -- gi -- que.
-  
+
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy -- eux_!
   \leftSyl …_s'en dé -- ba -- rra -- ser
@@ -943,13 +973,13 @@ ActeDeuxSceneUnSopranoUnTexte = \lyricmode {
   É -- tu -- dions ça…
 }
 
-ActeDeuxSceneUnSopranoDeuxTexte = \lyricmode { 
+ActeDeuxSceneUnSopranoDeuxTexte = \lyricmode {
   \dash Sont -- ce là les re -- stes é -- ta -- lés…
-  de la ma -- chi -- ne vo -- lan -- te de __ _ l'é -- _ tran -- _ ger_? 
+  de la ma -- chi -- ne vo -- lan -- te de __ _ l'é -- _ tran -- _ ger_?
   Que -- lle char -- man -- te ma -- chi -- ne pour se ca -- sser l'é -- chi -- ne.
   Cou -- _ leurs __ _ _ _ cha -- to -- yan -- tes,
   cou -- _ _ rbes cha -- vi -- ran -- tes…
-  Cro -- \dash yez -- vous qu'il vo -- lait, pla -- nait, flo -- ttait en 
+  Cro -- \dash yez -- vous qu'il vo -- lait, pla -- nait, flo -- ttait en
   su -- spen -- si -- on sans
   se sou -- ci -- er de la di -- rec -- tion_?
   Non, non, non. Je veux croire en cette hi -- stoire.
@@ -1011,7 +1041,7 @@ ActeDeuxSceneUnBisBarytonUnTexte = \lyricmode {
   A -- lors, en ce cas, j'ai pour vous u -- ne bo -- nne nou -- velle,
   très bo -- nne nou -- velle_; ex -- trê -- me -- ment __ _ bo -- nne nou -- velle_!…
   Vous a -- vez ga -- gné… un coup de poing gra -- tuit.
-  
+
   E -- ssay -- ez… E -- ssay -- ez, et vous ve -- rrez.
   Un pe -- tit coup. Un pe -- tit coup de rien du tout.
   Ce -- tte dé -- ci -- sion, je m'en fi -- _ che_; je m'en fi -- _ che_;
@@ -1082,7 +1112,7 @@ ActeDeuxSceneDeuxSopranoUnTexte = \lyricmode {
   Donc sou -- dons ça_! Sou -- dons ça…
   Sou -- dons ça là, sou -- dons ça…
   Sou -- dons ça_! Sou -- dons ça…
-  
+
   Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_!
   Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_!
   Sou -- dons ça…
@@ -1108,7 +1138,7 @@ ActeDeuxSceneDeuxSopranoDeuxTexte = \lyricmode {
   Sou -- dons ça sous ça_! Sou -- dons ça_; sou -- dons ça,
   sou -- dons ça, sou -- dons ça…
   Sou -- dons ça_! Sou -- dons ça…
-  
+
   Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_!
   Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_! Sou -- dons ça_!
   Sou -- dons ça…
@@ -1128,7 +1158,7 @@ ActeDeuxSceneDeuxContraltoTexte = \lyricmode {
   Brû -- lons ça.
   Brû -- lons ça_; brû -- lons ça…
   Brû -- lons ça_! Brû -- lons ça…
-  
+
   Brû -- lons ça_! Brû -- lons ça_! Brû -- lons ça_! Brû -- lons ça_!
   Brû -- lons ça_! Brû -- lons ça_! Brû -- lons ça_! Brû -- lons ça_!
   Brû -- lons ça…

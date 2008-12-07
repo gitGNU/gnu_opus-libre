@@ -906,7 +906,7 @@ EntracteMesures = {
   \time 2/2
       \tempo "poco a poco accellerando..."
             R1*5
-  \time 3/4 R1.*4
+  \time 3/2 R1.*4
   \time 2/2 R1
   \time 3/4 R2.
       \tempo "A Tempo" 4 = 66

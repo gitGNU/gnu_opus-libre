@@ -258,18 +258,18 @@ EntracteBarytonUn = {
     %%% Noir %%%
     R2.-\fermataMarkup
     R2.*4 R2 R2. R1 R2. R2 R1*3
-    mib4 do8 r r2 | R1
-    mib4 do8 r mib4 do8 r mib4 mi |
-    mib do8 r mib4 do8 r mib4 mi |
-    mib do8 r mib4 do8 r mib4 mi |
-    mib do8 r mib4 do8 r mib4 mi |
-    mib do8 r mib4 do8 r | R2.
+    mib4(\mp do8) r r2 | R1
+    mib4(\> do8) r mib4( do8) r mib4-- mi-- |
+    mib\pp( do8) r mib4( do8) r mib4-- mi-- |
+    mib( do8) r mib4( do8) r mib4-- mi-- |
+    mib( do8) r mib4( do8) r mib4-- mi-- |
+    mib(\> do8) r mib4( do8)\! r | R2.-\fermataMarkup
     
     %%% A tempo %%%
-    R2.*3 do'2. si la~ la4 sol2~ sol r4 R2.
+    R2.*3 do'2. si la~ la4 sol2~ sol r4 R2.-\fermataMarkup
     
     %%% Poco più %%%
-    mib4 do8 r r4 | mib do8 r r4 | mib do8 r mib4 mi r2 | R2.
+    mib4 do8 r r4 | mib do8 r r4 | mib do8 r mib4 mi r2 | R2.-\fermataMarkup
     
     %%% Andantino %%%
     do'1 do4 la8 r | si1 si2 si do~ do do2. r4 R2.
@@ -283,7 +283,7 @@ EntracteBarytonUn = {
     sol2 la sib | sib4 sol8 r sib4 sol8 r la2 |
     sol2 sol si, do do do |
     fa4 mi fa sold la si |
-    la2 fa fa | mi1~ mi4 r mi2. r4 R1 R2. R2
+    la2 fa fa4 la8 r | mi1~ mi4 r mi2. r4 R1 R2. R2
   }
 }
 

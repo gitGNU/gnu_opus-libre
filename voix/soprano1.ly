@@ -145,6 +145,33 @@ EntracteSopranoUn = { \SopranoUn
     r mib-. r \parlato mib-.\! |
     
     %%% Noir %%%
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2 R1*5 R1.*3
+    lad4(\pp fad8) r lad4( fad8) r dod'( lad) dod4 |
+    lad(\> fad8) r lad4( fad8)\! r | R2.-\fermataMarkup
+    
+    %%% A tempo %%%
+    R2. la?2.~ la~ la2 r4 |
+    la2.~ la~ la~ la2 r4 |
+    R2.-\fermataMarkup
+    
+    %%% Poco più %%%
+    la4( fad8) r r4 |
+    la4( fad8) r r4 |
+    la4( fad8) r la4-- sib-- r2 | R2.-\fermataMarkup
+    
+    %%% Andantino %%%
+    mi1 mi4 do8 r |
+    mi1 mi2 mi1 mi2 re2. r4 R2.
+    
+    %%% Largo non troppo %%%
+    mi2 mi mi4 do8 r |
+    mi2 mi mi4 do8 r |
+    mi2 mi mi4 la,8 r |
+    mi'2 mi r |
+    mi mi mi fa fa mi mi mi mi mi fa4 mi fa sol |
+    la2. r4 do,2 si do re re do mi |
+    mi mi fa mi mi re4 do si la sol2 fa fa mi sol |
+    fa1~ fa4 r | do'1 la4 r | mi'1~ mi4 r | mi2. r4 R1 R2. R2
   }
 }
 

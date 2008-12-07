@@ -76,6 +76,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%% Non-standard synamics ------------------------------------------%
+
+fpp = #(make-dynamic-script "fpp")
+sffz = #(make-dynamic-script "sffz")
+
+
 %% Composite Dynamics ---------------------------------------------%
 
 % because of the use of a music-function,
