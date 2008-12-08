@@ -263,17 +263,17 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
 ActeUnSceneUnBisViolonTrois = { \ViolonTrois
   \relative {
     R2.*5
-    r4 \ttt {lab16 sol sib si lad dod } re8 r |
-    sol16 lab sol sib si dod si mi fad sol la do |
+    r4 \ttt {lab16\p( sol sib si lad dod) } re8-- r |
+    \st {sol16 lab sol sib si dod si mi fad\< sol} la-- do-- |
     
     %%% Piu vivo %%%
-    re4 re, re,2 | R2.
-    re''4 r8 re,,~re2 | R2.
-    <do' la'>4 <do la'>8 <do la'>4 <do la'>8 |
-    <si sold'>4 <si sold'>8 <lab sol'>4 <lab sol'>8 |
-    si4 si8 <mi dod'>4 <mi dod'>8 | <mi dod'>2.
-    R2. r4 sib,2~sib4. r8\fermata r4 |
-    R2. r4 sib2~sib~sib8 r\fermata r4 | R1 R2
+    re4\sfz\downbow re,\downbow re,2\downbow | R2.
+    re''4\f\downbow r8 re,,~\downbow re2 | R2.
+    <do' la'>4->\ff <do la'>8-- <do la'>4-> <do la'>8-- |
+    <si sold'>4-> <si sold'>8-- <lab sol'>4-> <lab sol'>8-- |
+    si4-> si8-- <mi dod'>4-> <mi dod'>8-- | <mi dod'>2.--->
+    R2. r4 sib,2~--\p sib4. r8\fermata r4 |
+    R2. r4 sib2~-- sib~ sib8 r\fermata r4 | R1 R2
     
     %%% Largo %%%
     R2*3 R2. R2 R2.

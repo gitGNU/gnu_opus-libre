@@ -259,18 +259,18 @@ ActeUnSceneUnViolonUn = { \ViolonUn
 ActeUnSceneUnBisViolonUn = { \ViolonUn
   \relative {
     R2.*6
-    \ttt {lad'16 sold lad dod lad dod}
-    \ttt {mi dod mi fad mi fad }
-    \ttt {sol fad la sol do la } |
+    \ttt {lad'16\p( sold lad dod lad dod)}
+    \ttt {mi( dod mi fad mi fad) }
+    \ttt {sol\<( fad la) sol-- do-- la-- } |
     
     %%% Piu vivo %%%
-    re4 re, re,2 | R2.
-    re''4 r8 re,,~re2 | R2.
-    <fa' re'>4 <fa re'>8 <fa re'>4 <fa re'>8 |
-    <mib re'>4 <mib re'>8 <dod re'>4 <dod re'>8 |
-    <fad re'>4 <fad re'>8 <si re>4 <si re>8 | <si re>2. |
-    R2. r4 fa,2~fa4. r8\fermata r4 |
-    R2. r4 fa2~ fa2~fa8 r\fermata r4 |
+    re4\sfz\downbow re,\downbow re,2\downbow | R2.
+    re''4\f\downbow r8 re,,~\downbow re2 | R2.
+    <fa' re'>4->\ff <fa re'>8-- <fa re'>4-> <fa re'>8-- |
+    <mib re'>4-> <mib re'>8-- <dod re'>4-> <dod re'>8-- |
+    <fad re'>4-> <fad re'>8-- <si re>4-> <si re>8-- | <si re>2.---> |
+    R2. r4 fa,2~-- fa4. r8\fermata r4 |
+    R2. r4 fa2~-- fa2~fa8 r\fermata r4 |
     R1 R2
     
     %%% Largo %%%

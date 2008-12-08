@@ -237,7 +237,7 @@ ActeUnSceneUnAltoUn = { \AltoUn
     \acc {<la! mib' lab re>4\sfz la\mp re, la' |
     <la! mib' lab re>4\sfz la re,} r |
     \st {dod'\p dod la la} <la mi'>2--->( re8) r r4 | R1
-    r4 sold,\mp\> fa8\!) r r4 | r sold\>( fa8\!) r r4 | R1
+    r4 sold,\mp\>( fa8\!) r r4 | r sold\>( fa8\!) r r4 | R1
     sold2\>( sol8\!) r r4 |
     r sold\mp\>( fa8\!) r r4 | r sold\>( fa8\!) r r4 | R1
     sold2\>( sib8\!) r r4 | R1
@@ -265,16 +265,16 @@ ActeUnSceneUnAltoUn = { \AltoUn
 ActeUnSceneUnBisAltoUn = { \AltoUn
   \relative {
     R2.*5
-    \ttt {re,16 dod mi fa mi sol} lab8 r
-    \ttt {re16 dod mi fa mi sol} |lab8 r
-    lad16 si lad dod si dod si mi |
+    \ttt {re,16\p( dod mi fa mi sol)} lab8-- r
+    \ttt {re16( dod mi fa mi sol)} |lab8-- r
+    \st {lad16 si lad dod si\< dod} si-- mi-- |
     
     %%% Piu vivo %%%
-    re4  re, re,2 | mib r4 |
-    re''4 r8 re,,~re2 | dod'2 r4 |
-    re'4. re | <fad, sold> <si, sold'> |
-    <sold fa'> <lad si'> | <lad si'>2.
-    R2. r4 <re sol\harmonic re''>2~ <re sol\harmonic re''>4. r8\fermata r4 |
+    re4\sfz\downbow  re,\downbow re,2\downbow | mib\downbow r4 |
+    re''4\f\downbow r8 re,,~\downbow re2 | dod'2\downbow r4 |
+    re'4.--->\ff re---> | <fad, sold>---> <si, sold'>---> |
+    <sold fa'>--->\< <lad si'>---> | <lad si'>2.--->\!
+    R2. r4 <re sol\harmonic re''>2~\p <re sol\harmonic re''>4. r8\fermata r4 |
     R2. r4 <re sol\harmonic re''>2~ <re sol\harmonic re''>~
     <re sol\harmonic re''>8 r\fermata r4 | R1 R2
     

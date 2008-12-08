@@ -246,20 +246,20 @@ ActeUnSceneUnVioloncelleUn = { \VioloncelleUn
 ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
   \relative {
     R2.
-    \t {dod,,16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 |
+    \t {dod,,16\pp dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 |
     \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 |
     \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 |
-    \t {dod16 dod dod} dod8 <dod sib'>16 lab' si sol \t {dod,16 dod dod} dod8 |
-    dod16 re mi sib' sol la sib mi dod re mi sol |
-    lab8 \t {lab,16 lab lab} fa8 \t {fa16 fa fa} mib8 \t {mib16 mib mib} |
+    \t {dod16 dod dod} dod8 <dod sib'>16-. lab'-. si-. sol-. \t {dod,16 dod dod} dod8 |
+    \st {dod16\p re mi sib' sol la sib mi dod re mi sol} |
+    lab8-> \t {lab,16 lab lab} fa8-> \t {fa16 fa fa} mib8-> \t {mib16 mib mib} |
     
     %%% Piu vivo %%%
-    re4 r r8 do' sol la | fad2 \t {sol8 la do} |
-    re4 r r8 mib, lab fa| sib4. lab |
-    sol2.~sol4 r8 sib'~sib4 |
-    <re, do'>4. <re sib'> | sib'2. |
-    R2. r4 <la mi'\harmonic mi'>2~ <la mi'\harmonic mi'>4. r8\fermata r4 |
-    R2. r4 <la mi'\harmonic mi'>2~<la mi'\harmonic mi'>~
+    re4\sfz r r8 do'-- sol--( la--) | fad2-- \t {sol8--( la-- do--)} |
+    re4---> r r8 mib,-- lab--( fa--)| sib4.-- lab-- |
+    \ten sol2.~--->\ff sol4 r8 sib'~ sib4 |
+    <re, do'>4.---> <re sib'>---> | sib'2.---> |
+    R2. r4 <la mi'\harmonic mi'>2~\p <la mi'\harmonic mi'>4. r8\fermata r4 |
+    R2. r4 <la mi'\harmonic mi'>2~ <la mi'\harmonic mi'>~
     <la mi'\harmonic mi'>8 r\fermata r4 | r2 r4 fad, sol la |
     
     %%% Largo %%%
