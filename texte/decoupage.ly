@@ -5,15 +5,36 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%% Depends on: graphics.ly
+
+%%%%%%%%%%%%%%%%%%%%%%% Main text variables %%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% These variables are gathered here for two reasons:
+%%%   - makes localization easier (hehe, world domination plan inside ;)
+%%%   - helps defining the dual license of the whole thing
+%%%      (obviously, if you're using any character- or text-related
+%%%       variable from any file inside this directory, then you're making a
+%%%       "narrative" fork and therefore must comply with the
+%%%       relevant license).
+
+
+%% Common variables -----------------------------------------------%
 
 OperaTitre= "Affaire étrangère"
 OperaSousTitre= "Opéra en deux actes"
+FullScore = "Partitura"
+VocalScore = "Version avec piano"
+Livret = "Paroles et didascalies"
+TableTitre= "Table des matières"
+
+%% Legal stuff ----------------------------------------------------%
+
 OperaLivret= "Lewis Trondheim"
 OperaPartition= "Valentin Villenave"
 OperaNotice= "Gravure réalisée au moyen du logiciel libre GNU LilyPond (www.lilypond.org)."
 Copyright = "Lewis Trondheim et Valentin Villenave, 2008."
 
-BigNotice = \markup { 
+BigNotice = \markup {
   \override #'(box-padding . 1.0)
   \translate #'(-4 . -190)  \fill-line {
     \box \center-column {
@@ -24,7 +45,7 @@ BigNotice = \markup {
       }
       \vspace #.5
       \justify {
-        Cette partition est publiée suivant les termes de la 
+        Cette partition est publiée suivant les termes de la
         \with-url #"http://valentin.villenave.net/opera"
         \line { Licence Opéra Libre,}
         version 0.2 ou ultérieure, (dont le texte intégral est
@@ -40,7 +61,7 @@ BigNotice = \markup {
       \vspace #.5
       \line {
         Gravure réalisée au moyen du logiciel libre
-        \with-url #"http://www.LilyPond.org" 
+        \with-url #"http://www.LilyPond.org"
         \bold {GNU LilyPond}.
         \concat { #(ly:export (string-append "version " (lilypond-version))) } .
       }
@@ -48,24 +69,68 @@ BigNotice = \markup {
   }
 }
 
+%% Characters -----------------------------------------------------%
 
-FullScore = "Partitura"
-VocalScore = "Version avec piano"
-Livret = "Paroles et didascalies"
+SopranoUnName=  "Le Docteur"
+SopranoUnShortName= "Doct."
+
+SopranoDeuxName=  "La Reine"
+SopranoDeuxShortName=  "Reine."
+
+ContraltoName= "Dieu"
+ContraltoShortName= "Dieu."
+
+TenorName= "Le Chef"
+TenorShortName= "Chef."
+
+BarytonUnName= "L'Étranger"
+BarytonUnShortName= "Étr."
+
+BarytonDeuxName= "Le Roi"
+BarytonDeuxShortName= "Roi."
 
 
-%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%% Narrative structure %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Main sections --------------------------------------------------%
+
+ActeUnTitre= "Acte I"
+ActeDeuxTitre= "Acte II"
+SceneUnTitre= "Premier Tableau"
+SceneDeuxTitre= "Deuxième Tableau"
+SceneTroisTitre= "Troisième Tableau"
+SceneQuatreTitre= "Quatrième Tableau" %unused
+
+
+%% Special sections -----------------------------------------------%
 
 PrologueTitre= "Prologue"
-InterludeTitreTexte= "Interlude"
-EntracteTitreTexte= "Entr'acte"
-FinaleTitreTexte= "Finale"
+OuvertureTitre= "Ouverture"
+InterludeTitre= "Interlude"
+EntracteTitre= "Entr'acte"
+FinaleTitre= "Finale"
 
-%%%%
+Separateur = \Skyline
+InterTitre= \markup { \with-dimensions #'(0 . 10) #' (0 . 0) \draw-line #'(10 . 0) }
+FunnyFooter = \markup \fill-line { \Bilboquet }
 
-ActeUnTitreTexte= "Acte I"
-ActeDeuxTitreTexte= "Acte II"
-SceneUnTitreTexte= "Premier Tableau"
-SceneDeuxTitreTexte= "Deuxième Tableau"
-SceneTroisTitreTexte= "Troisième Tableau"
 
+%%  Quotes --------------------------------------------------------%
+
+PrologueQuote= "Majesté, Majesté, Majesté !"
+ActeUnSceneUnQuote= "Comment est-il ? / Endormi, endormi, depuis midi."
+ActeUnSceneUnBisQuote= "Un étranger ! En nos murs !"
+ActeUnSceneDeuxQuote= "Mes mains n'ont pas assez de doigts pour porter à la fois"
+ActeUnSceneTroisQuote= "Étranger... Le Roi voudrait savoir"
+ActeUnSceneTroisBisQuote= "Un souci, mon ami ?"
+ActeUnSceneTroisTerQuote= "Et ce soir, et ce soir, que devient votre mémoire ?"
+ActeUnSceneQuatreQuote= "Étranger, votre trachée est-elle nouée ?"
+EntracteQuote= "Ennuyeux, très ennuyeux, extrêmement ennuyeux."
+ActeDeuxSceneUnQuote= "Sont-ce là les restes étalés"
+ActeDeuxSceneUnBisQuote= "Étranger, bonne nouvelle, très bonne nouvelle"
+ActeDeuxSceneDeuxQuote= "Voler, voler... / Ces briques... je me souviens de ma maison"
+ActeDeuxSceneTroisQuote= "Où suis-je ? Qu'est-ce donc que cet endroit ?"
+
+%%-----------------------------------------------------------------%

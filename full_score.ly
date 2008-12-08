@@ -13,15 +13,15 @@
 
 \include "italiano.ly"
 
+
 \include "./definitions/functions.ly"
 \include "./definitions/text-functions.ly"
 \include "./definitions/graphics.ly"
+\include "./texte/decoupage.ly"
+
 \include "./definitions/paper.ly"
 \include "./definitions/layout.ly"
 
-\include "./texte/decoupage.ly"
-\include "./texte/personnages.ly"
-\include "./definitions/structure.ly"
 \include "./texte/didascalies.ly"
 \include "./definitions/mesures.ly"
 
@@ -51,16 +51,13 @@
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
 
-%%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
 
 \layout {
   \includeLayout
 }
 
-%%FIXME: how can I throw this into either paper or layout.ly?
 #(set-global-staff-size 12)
-#(ly:set-option 'point-and-click #f)
-#(ly:set-option 'delete-intermediate-files #t)
 
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
@@ -72,7 +69,7 @@ Prologue = {
         \new GrandStaff
           <<
             \new Staff \PrologueFluteUn
-            \new Staff \PrologueFluteDeux 
+            \new Staff \PrologueFluteDeux
           >>
         \new GrandStaff
           <<
@@ -132,7 +129,7 @@ Ouverture = {
         \new GrandStaff
           <<
             \new Staff \OuvertureFluteUn
-            \new Staff \OuvertureFluteDeux 
+            \new Staff \OuvertureFluteDeux
           >>
         \new GrandStaff
           <<
@@ -156,7 +153,7 @@ ActeUnSceneUn = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnFluteUn
-            \new Staff \ActeUnSceneUnFluteDeux 
+            \new Staff \ActeUnSceneUnFluteDeux
           >>
         \new GrandStaff
           <<
@@ -218,7 +215,7 @@ ActeUnSceneUnBis = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneUnBisFluteUn
-            \new Staff \ActeUnSceneUnBisFluteDeux 
+            \new Staff \ActeUnSceneUnBisFluteDeux
           >>
         \new GrandStaff
           <<
@@ -278,7 +275,7 @@ InterludeUn = {
         \new GrandStaff
           <<
             \new Staff \InterludeUnFluteUn
-            \new Staff \InterludeUnFluteDeux 
+            \new Staff \InterludeUnFluteDeux
           >>
         \new GrandStaff
           <<
@@ -295,7 +292,7 @@ InterludeUn = {
     \new StaffGroup \InterludeUnPercus
 
     \new TopLine \InterludeUnMesures
-    
+
     \new ChoirStaff
       <<
         \new Staff \new Voice = "contralto" \InterludeUnContralto
@@ -336,7 +333,7 @@ ActeUnSceneDeux = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneDeuxFluteUn
-            \new Staff \ActeUnSceneDeuxFluteDeux 
+            \new Staff \ActeUnSceneDeuxFluteDeux
           >>
         \new GrandStaff
           <<
@@ -396,7 +393,7 @@ InterludeDeux = {
         \new GrandStaff
           <<
             \new Staff \InterludeDeuxFluteUn
-            \new Staff \InterludeDeuxFluteDeux 
+            \new Staff \InterludeDeuxFluteDeux
           >>
         \new GrandStaff
           <<
@@ -413,7 +410,7 @@ InterludeDeux = {
     \new StaffGroup \InterludeDeuxPercus
 
     \new TopLine \InterludeDeuxMesures
-    
+
     \new ChoirStaff
       <<
         \new Staff \new Voice = "contralto" \InterludeDeuxContralto
@@ -454,7 +451,7 @@ ActeUnSceneTrois = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisFluteUn
-            \new Staff \ActeUnSceneTroisFluteDeux 
+            \new Staff \ActeUnSceneTroisFluteDeux
           >>
         \new GrandStaff
           <<
@@ -514,7 +511,7 @@ ActeUnSceneTroisBis = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisBisFluteUn
-            \new Staff \ActeUnSceneTroisBisFluteDeux 
+            \new Staff \ActeUnSceneTroisBisFluteDeux
           >>
         \new GrandStaff
           <<
@@ -574,7 +571,7 @@ ActeUnSceneTroisTer = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneTroisTerFluteUn
-            \new Staff \ActeUnSceneTroisTerFluteDeux 
+            \new Staff \ActeUnSceneTroisTerFluteDeux
           >>
         \new GrandStaff
           <<
@@ -634,7 +631,7 @@ InterludeTrois = {
         \new GrandStaff
           <<
             \new Staff \InterludeTroisFluteUn
-            \new Staff \InterludeTroisFluteDeux 
+            \new Staff \InterludeTroisFluteDeux
           >>
         \new GrandStaff
           <<
@@ -684,7 +681,7 @@ ActeUnSceneQuatre = {
         \new GrandStaff
           <<
             \new Staff \ActeUnSceneQuatreFluteUn
-            \new Staff \ActeUnSceneQuatreFluteDeux 
+            \new Staff \ActeUnSceneQuatreFluteDeux
           >>
         \new GrandStaff
           <<
@@ -701,7 +698,7 @@ ActeUnSceneQuatre = {
     \new StaffGroup \ActeUnSceneQuatrePercus
 
     \new TopLine \ActeUnSceneQuatreMesures
- 
+
     \new ChoirStaff
        <<
          \new Staff \new Voice = "soprano" \ActeUnSceneQuatreSopranoDeux
@@ -751,7 +748,7 @@ Entracte = {
         \new GrandStaff
           <<
             \new Staff \EntracteFluteUn
-            \new Staff \EntracteFluteDeux 
+            \new Staff \EntracteFluteDeux
           >>
         \new GrandStaff
           <<
@@ -768,7 +765,7 @@ Entracte = {
     \new StaffGroup \EntractePercus
 
     \new TopLine \EntracteMesures
- 
+
     \new ChoirStaff
        <<
          \new Staff \new Voice = "soprano" \EntracteSopranoDeux
@@ -817,7 +814,7 @@ ActeDeuxSceneUn = {
         \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneUnFluteUn
-            \new Staff \ActeDeuxSceneUnFluteDeux 
+            \new Staff \ActeDeuxSceneUnFluteDeux
           >>
         \new GrandStaff
           <<
@@ -879,7 +876,7 @@ ActeDeuxSceneUnBis = {
         \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneUnBisFluteUn
-            \new Staff \ActeDeuxSceneUnBisFluteDeux 
+            \new Staff \ActeDeuxSceneUnBisFluteDeux
           >>
         \new GrandStaff
           <<
@@ -941,7 +938,7 @@ ActeDeuxSceneDeux = {
         \new GrandStaff
           <<
             \new Staff \ActeDeuxSceneDeuxFluteUn
-            \new Staff \ActeDeuxSceneDeuxFluteDeux 
+            \new Staff \ActeDeuxSceneDeuxFluteDeux
           >>
         \new GrandStaff
           <<
@@ -1011,9 +1008,15 @@ ActeDeuxSceneDeux = {
     composer = \OperaPartition
     tagline = \OperaNotice
     illustration = \Couronne
-    scoretype = \FullScore
+    scoretype = \VocalScore
     copyright = \Copyright
   }
+  \pageBreak
+  %{
+  \markup \null
+  \pageBreak
+  \markuplines \table-of-contents
+  \markup \FunnyFooter
   \pageBreak
   \markup \BigNotice
   \pageBreak
@@ -1023,7 +1026,7 @@ ActeDeuxSceneDeux = {
     \header {
       piece = \PrologueTitre
     }
-  } %{
+  } %
   \score {
     \Ouverture
     \header {

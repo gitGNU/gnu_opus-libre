@@ -9,7 +9,8 @@
 %%% Nicolas Sceaux <nicolas.sceaux@free.fr>
 %%%
 
-
+%%% FIXME: I do not actually use any of this code, but it's so
+%%% beautiful that I just can't junk any of it. Can't.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Fancy Headers %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -134,7 +135,7 @@
         (lambda ()
           (set! major-number (1+ major-number))
           (set! minor-number 0)))
-  (set! rehearsal-number 
+  (set! rehearsal-number
         (lambda ()
           (set! minor-number (1+ minor-number))
           (format #f "~a-~a" major-number minor-number))))
@@ -205,7 +206,7 @@ pieceTocTitle =
       (if (eqv? #t (ly:get-option 'use-rehearsal-numbers))
           (markup #:rehearsal-number-toc rehearsal title)
           title))
-    (add-toplevel-markup parser 
+    (add-toplevel-markup parser
       (if (eqv? #t (ly:get-option 'use-rehearsal-numbers))
           (markup #:rehearsal-number rehearsal
                   #:hspace 1
@@ -217,7 +218,7 @@ pieceTocTitle =
 pieceTitle =
 #(define-music-function (parser location title) (string?)
   (let ((rehearsal (rehearsal-number)))
-    (add-toplevel-markup parser 
+    (add-toplevel-markup parser
       (if (eqv? #t (ly:get-option 'use-rehearsal-numbers))
           (markup #:rehearsal-number rehearsal
                   #:hspace 1
@@ -229,7 +230,7 @@ pieceTitle =
 pieceSTitle =
 #(define-music-function (parser location title) (markup?)
   (let ((rehearsal (rehearsal-number)))
-    (add-toplevel-markup parser 
+    (add-toplevel-markup parser
       (if (eqv? #t (ly:get-option 'use-rehearsal-numbers))
           (markup #:rehearsal-number rehearsal
                   #:hspace 1
@@ -245,7 +246,7 @@ pieceTocAndTitle =
       (if (eqv? #t (ly:get-option 'use-rehearsal-numbers))
           (markup #:rehearsal-number-toc rehearsal toc-title)
           toc-title))
-    (add-toplevel-markup parser 
+    (add-toplevel-markup parser
       (if (eqv? #t (ly:get-option 'use-rehearsal-numbers))
           (markup #:rehearsal-number rehearsal
                   #:hspace 1
@@ -338,11 +339,11 @@ sceneDescription =
   (add-no-page-break parser)
   (make-music 'Music 'void #t))
 
-  
+
 
 
 \paper {
-  
+
   line-width = #(- paper-width (* 40 mm))
   %horizontal-shift = 5
   bottom-margin = #20
@@ -357,7 +358,7 @@ sceneDescription =
 
   oddFooterMarkup = \markup \column {
     \fill-line {
-      %% put copyright only on pagenr. 1 
+      %% put copyright only on pagenr. 1
       \on-the-fly #(lambda (layout props arg)
          (if (and (= 1 (chain-assoc-get 'page:page-number props -1))
                               (not (chain-assoc-get 'page:last?  props #f)))
@@ -412,7 +413,7 @@ sceneDescription =
     \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
     \vspace #6
     \fill-line { \fontsize #5 \fromproperty #'header:date }
-    \vspace #1 
+    \vspace #1
     \fill-line {
       \when-property #'header:arrangement \column {
         \vspace #5
@@ -555,15 +556,15 @@ sceneDescription =
     \line { \copyright \hspace #-1 . }
     \line { GNU General Public License v.3 or later.}
   }
-  
-  tagline = \markup { 
+
+  tagline = \markup {
     \override #'(box-padding . 1.0) \override #'(baseline-skip . 2.7)
     \box \center-column {
-      \small \line { 
+      \small \line {
         \copyright
         \with-url #"http://valentin.villenave.info" \teeny "<v.villenave@gmail.com>"
         \hspace #-1 .
-        Gravure réalisée avec \with-url #"http://www.LilyPond.org" 
+        Gravure réalisée avec \with-url #"http://www.LilyPond.org"
         \line { \teeny www. \hspace #-1.0 LilyPond \hspace #-1.0 \teeny .org }
         #(ly:export (string-append "version " (lilypond-version))) \hspace #-1 .
       }
@@ -577,10 +578,10 @@ sceneDescription =
         \italic Free to download, with the \italic freedom
         to distribute, modify and perform.
       }
-      \teeny \line { 
-        Licensed under the Creative Commons Attributio 3.0 License, 
-        for details see: \hspace #-0.5 
-        \with-url #"http://creativecommons.org/licenses/by/3.0" 
+      \teeny \line {
+        Licensed under the Creative Commons Attributio 3.0 License,
+        for details see: \hspace #-0.5
+        \with-url #"http://creativecommons.org/licenses/by/3.0"
         http://creativecommons.org/licenses/by/3.0 }
     }
   }

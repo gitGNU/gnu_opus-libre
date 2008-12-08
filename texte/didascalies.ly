@@ -14,8 +14,6 @@
 
 Noir = \markup { \larger \rounded-box \smallCaps "Noir."}
 
-MmJeu = "Même jeu."
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                             Prologue                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -58,7 +56,7 @@ PrologueN = "Un temps. Le Roi et le Chef semblent chercher leurs mots..."
 
 PrologueO = "mais ne parviennent qu'à crier derechef, ensemble."
 
-PrologueP = "Le Roi, déconcerté et pensif, marmonne en cherchant ses mots" 
+PrologueP = "Le Roi, déconcerté et pensif, marmonne en cherchant ses mots"
 
 PrologueQ = "Le Roi sort en continuant de chanter."
 
@@ -362,7 +360,7 @@ avec ses bras."
 ActeUnSceneQuatreU = "L'Étranger tourne les talons et se met en chemin."
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                             ACTE II                              %
+%                             Entracte                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 EntracteA = "La musique commence dans le noir. Chaque
@@ -374,6 +372,51 @@ lumières s'allument tour à tour pour faire
 apparaître les différents personnages, à
 mesure qu'ils prennent la parole (les autres
 personnages restant alors dans le noir)."
+
+EntracteB = "La Reine a toujours son collier a la main."
+
+EntracteC = "Les personnages poursuivent chacun leur pensée..."
+
+EntracteD = "Le Docteur ressort sa chausette de sa poche."
+
+EntracteE = "Les personnages se figent.
+Entre Dieu, chantonnant et cherchant des
+plantes à entretenir. N'en trouvant pas, il se dirige
+vers les personnages."
+
+EntracteF = "Il commence à s'affairer autour du Chef.
+Celui-ci s'anime et reprend le motif de Dieu, mais trop bas
+(il peut prendre une posture scrofuleuse pour montrer
+que quelque chose ne va pas)."
+
+EntracteG = "Dieu lui redonne sa note, de façon
+très pédagogue : mais le Chef, malgré ses efforts,
+chante toujours trop grave."
+
+EntracteH = "Dieu s'impatiente..."
+
+EntracteI = "... Et le Chef de se lancer
+soudain sur une nouvelle
+note, trop aigüe cette fois.
+Il la répète sans faiblir,
+nobostant les signes que lui adresse Dieu
+pour baisser sa note."
+
+EntracteJ = "Dépité, Dieu se tourne maintenant
+vers l'Étranger..."
+
+EntracteK = "... qui part, à son tour, sur une note
+trop grave. Avec une mine découragée, Dieu
+abandonne la partie, laissant les autres chanteurs
+entrer les uns après les autres."
+
+EntracteL = "Sur un geste de Dieu, tous s'arrêtent.
+Ils sont maintenant disposés en rang comme une chorale très appliquée,
+que Dieu se met en devoir de diriger de façon un peu pataude."
+
+EntracteM = "Ils restent figés en suspens ;
+puis les lumières s'éteignent, laissant le Roi
+seul, face au public."
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                             ACTE II                              %

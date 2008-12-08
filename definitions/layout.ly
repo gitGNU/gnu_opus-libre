@@ -5,6 +5,8 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%% Depends on: functions.ly
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 includeLayout = \layout {
@@ -14,19 +16,19 @@ includeLayout = \layout {
     \Staff
     \remove "Axis_group_engraver"
     \consists "Hara_kiri_engraver"
-    \remove "Time_signature_engraver" 
+    \remove "Time_signature_engraver"
     \accepts "Lyrics"
     \override Beam #'auto-knee-gap = #'()
     \override VerticalAxisGroup #'remove-empty = ##t
   }
   \context { \RhythmicStaff
-    \remove "Time_signature_engraver" 
+    \remove "Time_signature_engraver"
     \remove "Axis_group_engraver"
     \override VerticalAxisGroup #'remove-empty = ##t
     \consists "Hara_kiri_engraver"
   }
   \context { \DrumStaff
-    \remove "Time_signature_engraver" 
+    \remove "Time_signature_engraver"
     \remove "Axis_group_engraver"
     \override VerticalAxisGroup #'remove-empty = ##t
     \consists "Hara_kiri_engraver"
@@ -65,7 +67,7 @@ includeLayout = \layout {
     \consists "Text_engraver"
     \consists "Text_spanner_engraver"
     \consists "Metronome_mark_engraver"
-    \consists "Time_signature_engraver" 
+    \consists "Time_signature_engraver"
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
   }
   \context {
@@ -86,7 +88,7 @@ includeLayout = \layout {
     \remove "Instrument_name_engraver"
     \override LyricSpace #'minimum-distance = #0.9
   }
-  
+
 %% Look and feel --------------------------------------------------%
   \context {
     \Score
@@ -121,25 +123,6 @@ includeLayout = \layout {
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-5 . 3)
   }
   \context {
-    \type "Engraver_group"
-    \name "Dynamics"
-    \alias Voice
-    \consists "Output_property_engraver"
-    \consists "Axis_group_engraver"
-    \consists "New_dynamic_engraver"
-    \consists "Skip_event_swallow_translator"
-    \consists "Piano_pedal_engraver"
-    \consists "Bar_engraver"
-    \override BarLine #'transparent = ##t
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-    \override TextScript #'font-size = #2
-    \override TextScript #'font-shape = #'italic
-    \override DynamicText #'extra-offset = #'(0 . 2.5)
-    \override Hairpin #'extra-offset = #'(0 . 2.5)
-    pedalSustainStrings = #'("Ped." "*Ped." "*")
-    pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-  }
-  \context {
     \Staff
     \type "Engraver_group"
     \name "StaffPiano"
@@ -148,7 +131,7 @@ includeLayout = \layout {
     \override StaffSymbol #'staff-space = #(magstep -1)
     fontSize = #-1
   }
-  \context { \PianoStaff 
+  \context { \PianoStaff
     \accepts "StaffUp"
     \accepts "Dynamics"
     \accepts "StaffDown"
@@ -168,7 +151,7 @@ includeLayout = \layout {
 
 includeLivretLayout = \layout {
   indent = 2.0\cm
-  
+
 %% Special contexts  ----------------------------------------------%
   \context {
     \ChoirStaff
@@ -187,7 +170,7 @@ includeLivretLayout = \layout {
     \remove "Bar_engraver"
     \remove "Instrument_name_engraver"
     \override StaffSymbol #'line-count = #1
-    \override StaffSymbol #'color = #(rgb-color 0.9 0.9 0.9) 
+    \override StaffSymbol #'color = #(rgb-color 0.9 0.9 0.9)
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1 )
     %\consists "Hara_kiri_engraver"
     %\override VerticalAxisGroup #'remove-empty = ##t
@@ -221,7 +204,7 @@ includeLivretLayout = \layout {
     \Score
     \override SystemStartBar #'stencil = ##f
   }
-  
+
 %% Text inclusion -------------------------------------------------%
   \context {
     \type "Engraver_group"
@@ -245,7 +228,7 @@ includeLivretLayout = \layout {
     \override TextSpanner   #'outside-staff-priority = #1000
     \override TextSpanner   #'direction = #DOWN
   }
-  
+
   \context {
     \Lyrics
     \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1 )

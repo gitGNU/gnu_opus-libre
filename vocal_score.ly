@@ -17,12 +17,11 @@
 \include "./definitions/functions.ly"
 \include "./definitions/text-functions.ly"
 \include "./definitions/graphics.ly"
+\include "./texte/decoupage.ly"
+
 \include "./definitions/paper.ly"
 \include "./definitions/layout.ly"
 
-\include "./texte/decoupage.ly"
-\include "./texte/personnages.ly"
-\include "./definitions/structure.ly"
 \include "./texte/didascalies.ly"
 \include "./definitions/mesures.ly"
 
@@ -35,25 +34,13 @@
 \include "./voix/baryton1.ly"
 \include "./voix/baryton2.ly"
 
-\include "./instruments/reduction.ly" 
+\include "./instruments/reduction.ly"
 
-%%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
 
 \layout {
   \includeLayout
 }
-#(ly:set-option 'point-and-click #f)
-
-
-%%%% FIXME: Remove this
-
-PianoDynamics = {
-  \override Dynamics.TimeSignature #'font-size = #1
-  \override Dynamics.VerticalAxisGroup #'minimum-Y-extent = #'(-1.5 . 1.5 )
-}
-
-
-
 
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
@@ -70,7 +57,6 @@ Prologue = {
      \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md"    \PrologueMainDroite
-        \new Dynamics << \PianoDynamics \PrologueNuances >>
         \new StaffPiano = "mg"    \PrologueMainGauche
       >>
      }
@@ -92,7 +78,6 @@ ActeUnSceneUn = {
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeUnSceneUnMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneUnNuances >>
         \new StaffPiano = "mg" \ActeUnSceneUnMainGauche
       >>
     }
@@ -111,7 +96,6 @@ ActeUnSceneUnBis = {
       >>
     \new PianoStaff { \Accompagnement <<
         \new StaffPiano = "md" \ActeUnSceneUnBisMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneUnBisNuances >>
         \new StaffPiano = "mg" \ActeUnSceneUnBisMainGauche
       >>
     }
@@ -147,7 +131,6 @@ ActeUnSceneDeux = {
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeUnSceneDeuxMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneDeuxMesures >>
         \new StaffPiano = "mg" \ActeUnSceneDeuxMainGauche
       >>
     }
@@ -183,7 +166,6 @@ ActeUnSceneTrois = {
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeUnSceneTroisMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneTroisMesures >>
         \new StaffPiano = "mg" \ActeUnSceneTroisMainGauche
       >>
     }
@@ -203,7 +185,6 @@ ActeUnSceneTroisBis = {
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeUnSceneTroisBisMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneTroisBisMesures >>
         \new StaffPiano = "mg" \ActeUnSceneTroisBisMainGauche
       >>
     }
@@ -223,7 +204,6 @@ ActeUnSceneTroisTer = {
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeUnSceneTroisTerMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneTroisTerMesures >>
         \new StaffPiano = "mg" \ActeUnSceneTroisTerMainGauche
       >>
     }
@@ -257,10 +237,9 @@ ActeUnSceneQuatre = {
          \new Staff \new Voice = "barytonDeux" \ActeUnSceneQuatreBarytonDeux
          \new Lyrics \lyricsto "barytonDeux" { \ActeUnSceneQuatreBarytonDeuxTexte }
        >>
-    \new PianoStaff { \Accompagnement 
+    \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeUnSceneQuatreMainDroite
-        \new Dynamics << \PianoDynamics \ActeUnSceneQuatreMesures >>
         \new StaffPiano = "mg" \ActeUnSceneQuatreMainGauche
       >>
     }
@@ -284,7 +263,7 @@ Entracte = {
         \new Lyrics \lyricsto "barytonUn" { \EntracteBarytonUnTexte }
         \new Staff \new Voice = "barytonDeux" \EntracteBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \EntracteBarytonDeuxTexte }
-      >> 
+      >>
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md"    \EntracteMainDroite
@@ -306,10 +285,9 @@ ActeDeuxSceneUn = {
         \new Staff \new Voice = "contralto" \ActeDeuxSceneUnContralto
         \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneUnContraltoTexte }
       >>
-    \new PianoStaff { \Accompagnement 
+    \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeDeuxSceneUnMainDroite
-        \new Dynamics << \PianoDynamics \ActeDeuxSceneUnMesures >>
         \new StaffPiano = "mg" \ActeDeuxSceneUnMainGauche
       >>
     }
@@ -328,10 +306,9 @@ ActeDeuxSceneUnBis = {
         \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneUnBisBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneUnBisBarytonDeuxTexte }
       >>
-    \new PianoStaff { \Accompagnement 
+    \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeDeuxSceneUnBisMainDroite
-        \new Dynamics << \PianoDynamics \ActeDeuxSceneUnBisMesures >>
         \new StaffPiano = "mg" \ActeDeuxSceneUnBisMainGauche
       >>
     }
@@ -355,11 +332,10 @@ ActeDeuxSceneDeux = {
         \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneDeuxBarytonUnTexte }
         \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneDeuxBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneDeuxBarytonDeuxTexte }
-      >> 
+      >>
     \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeDeuxSceneDeuxMainDroite
-        \new Dynamics << \PianoDynamics \ActeDeuxSceneDeuxMesures >>
         \new StaffPiano = "mg" \ActeDeuxSceneDeuxMainGauche
       >>
     }
@@ -383,11 +359,10 @@ ActeDeuxSceneTrois = {
         \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneTroisBarytonUnTexte }
         \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneTroisBarytonDeux
         \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
-      >> 
-    \new PianoStaff { \Accompagnement 
+      >>
+    \new PianoStaff { \Accompagnement
       <<
         \new StaffPiano = "md" \ActeDeuxSceneTroisMainDroite
-        %\new Dynamics << \PianoDynamics \ActeDeuxSceneTroisMesures >>
         \new StaffPiano = "mg" \ActeDeuxSceneTroisMainGauche
       >>
     }
@@ -408,9 +383,15 @@ ActeDeuxSceneTrois = {
     copyright = \Copyright
   }
   \pageBreak
+  %
+  \markup \null
+  \pageBreak
+  \markuplines \table-of-contents
+  \markup \fill-line { \Bilboquet }
+  \pageBreak
   \markup \BigNotice
   \pageBreak
-  %{
+  %
   \score {
     \Prologue
     \header {
@@ -420,7 +401,8 @@ ActeDeuxSceneTrois = {
   \score {
     \ActeUnSceneUn
     \header {
-      piece = \ActeUnSceneUnTitre
+      acte = \ActeUnTitre
+      piece = \SceneUnTitre
     }
   } %
   \score {
@@ -432,31 +414,33 @@ ActeDeuxSceneTrois = {
   \score {
     \InterludeUn
     \header {
-      piece = \Interlude
+      piece = \InterludeTitre
+      dessin = \Arrosoir
     }
   } %
   \score {
     \ActeUnSceneDeux
     \header {
-      piece = \ActeUnSceneDeuxTitre
+      piece = \SceneDeuxTitre
     }
   } %
   \score {
     \InterludeDeux
     \header {
-      piece = \Interlude
+      piece = \InterludeTitre
+      dessin = \Arrosoir
     }
   } %
   \score {
     \ActeUnSceneTrois
     \header {
-      piece = \ActeUnSceneTroisTitre
+      piece = \SceneTroisTitre
     }
   } %
   \score {
     \ActeUnSceneTroisBis
     \header {
-      piece = \Interlude
+      piece = \Separateur
     }
   } %
   \score {
@@ -468,25 +452,28 @@ ActeDeuxSceneTrois = {
   \score {
     \InterludeTrois
     \header {
-      piece = \Interlude
+      piece = \InterludeTitre
+      illustration = \Arrosoir
     }
   } %
   \score {
     \ActeUnSceneQuatre
     \header {
-      piece = \ActeUnSceneQuatreTitre
+      piece = \FinaleTitre
     }
-  } %}
+  } %
   \score {
     \Entracte
     \header {
       piece = \EntracteTitre
     }
-  } %{
+  } %
+  \pageBreak
   \score {
     \ActeDeuxSceneUn
     \header {
-      piece = \ActeDeuxSceneUnTitre
+      acte = \ActeDeuxTitre
+      piece = \SceneUnTitre
     }
   } %
   \score {
@@ -498,13 +485,13 @@ ActeDeuxSceneTrois = {
   \score {
     \ActeDeuxSceneDeux
     \header {
-      piece = \ActeDeuxSceneDeuxTitre
+      piece = \SceneDeuxTitre
     }
   } %
   \score {
     \ActeDeuxSceneTrois
     \header {
-      piece = \ActeDeuxSceneTroisTitre
+      piece = \FinaleTitre
     }
-  } %}
+  } %
 }

@@ -10,7 +10,6 @@
 %%% drawings were (remotely) inspired by Jochen Gerner, the artist
 %%% who drew the original comic book.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%% Scores Separator %%%%%%%%%%%%%%%%%%%%%%%%%%
 Skyline =
 \markup \with-dimensions #'(6 . 32) #'(-5 . 4)
