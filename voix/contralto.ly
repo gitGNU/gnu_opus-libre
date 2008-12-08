@@ -128,25 +128,25 @@ EntracteContralto = { \Contralto
     si8-.\> si4-- si8-. si-. si4-- si8-.\! | R2.-\fermataMarkup
     
     %%% A tempo %%%
-    la2.~ la~ la~ la2 r4 | R2.*4 R2.-\fermataMarkup |
+    \ten la2.~\mf la~ la~ la2 r4 | R2.*4 R2.-\fermataMarkup |
     
     %%% Poco più %%%
-    la2.~ la~ la~ la2 r4 | R2.-\fermataMarkup |
+    \ten la2.~\mf la~ la~ la2 r4 | R2.-\fermataMarkup |
     
     %%% Andantino %%%
-    la'1 la4 mi8 r |
-    la1 sold4 mi8 r sold2 la~ la la2. r4 R2. |
+    la'1--\p la4( mi8) r |
+    la1-- sold4( mi8) r sold2( la~) la la2.-- r4 R2. |
     
     %%% Largo non troppo %%%
-    R1.*3 r1 mi4 sol |
-    la1~ la4 r | red,4 sol la2. r4 |
-    r2 r4 la2 do4 re1~re4 r |
+    R1.*3 r1 mi4\fmolto( sol |
+    \ten la1~) la4 r | red,4( sol la2.) r4 |
+    r2 r4 la2--->\<( do4 \ten re1~) re4 r |
     la1~ la4 r |
-    la2 sol fa mi fa4 mi fa sol la2 mi r |
-    dod4 re re mi mi re | R1.
-    sol4 si do2. r4 | la1~ la4 r |
-    do,4 si do red mi fa | mi1~ mi4 r |
-    la2. r4 R1 R2. R2
+    la2( sol fa) mi( fa4\< mi fa sol la2--->\! mi) r |
+    dod4\<( re re mi mi\> re) | R1.
+    sol4\f( si do2.) r4 | la1~\mp la4 r |
+    do,4\mf\<( si do red mi fa | mi1~--\fmolto) mi4 r |
+    la2.-- r4 R1 R2. R2
   }
 }
 
