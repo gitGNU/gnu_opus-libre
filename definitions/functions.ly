@@ -13,26 +13,26 @@
 
 %% Rhythm shortcuts -----------------------------------------------%
 
-t = 
+t =
 #(define-music-function (parser location music) (ly:music?)
 #{ \times 2/3 $music #})
 
-tt = 
+tt =
 #(define-music-function (parser location music) (ly:music?)
 #{ \times 4/5 $music #})
 
-ttt = 
+ttt =
 #(define-music-function (parser location music) (ly:music?)
 #{ \times 4/6 $music #})
 
-tttt = 
+tttt =
 #(define-music-function (parser location music) (ly:music?)
 #{ \times 4/7 $music #})
 
 
 %% Polyphony shortcuts --------------------------------------------%
 
-pl = 
+pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
 
@@ -42,9 +42,9 @@ plperc =
 
 parallel=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ << 
+#{ <<
 \context Staff = "md"   $droite
-\context Staff = "mg"   $gauche 
+\context Staff = "mg"   $gauche
 >> #})
 
 md = { \change Staff = "md" }
@@ -77,7 +77,7 @@ showAnyway =
 #(define-music-function (parser location music) (ly:music?)
 #{
   \unset Score.keepAliveInterfaces
-  $(music)
+  $music
   \set Score.keepAliveInterfaces = #'(rhythmic-grob-interface
   lyric-interface percent-repeat-item-interface
   percent-repeat-interface stanza-number-interface)
@@ -99,7 +99,7 @@ harmo =
 #(define (make-script x)
    (make-music 'ArticulationEvent
                'articulation-type x))
-               
+
 #(define (add-script m x)
  (let ( (eventname (ly:music-property m 'name)))
   (if (equal? eventname 'EventChord)
@@ -107,7 +107,7 @@ harmo =
       (if (not (equal? (ly:music-property (car elements)
                 'name) 'RestEvent))
         (set! (ly:music-property m 'elements)
-          (append elements (list 
+          (append elements (list
           (make-script x)))))))
           m))
 
@@ -115,63 +115,63 @@ harmo =
        (add-script (add-script m t) tt))
 
 st =
-#(define-music-function (parser location music) 
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "staccato"))
     (music-map make-script-music music))
 
 acc =
-#(define-music-function (parser location music) 
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "accent"))
     (music-map make-script-music music))
 
-det = 
-#(define-music-function (parser location music) 
+det =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "tenuto"))
     (music-map make-script-music music))
-    
-marc = 
-#(define-music-function (parser location music) 
+
+marc =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "marcato"))
     (music-map make-script-music music))
 
-stdet = 
-#(define-music-function (parser location music) 
+stdet =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "portato"))
     (music-map make-script-music music))
 
-accdet = 
-#(define-music-function (parser location music) 
+accdet =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (double-script m "tenuto" "accent"))
     (music-map make-script-music music))
 
-marcdet = 
-#(define-music-function (parser location music) 
+marcdet =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (double-script m "tenuto" "marcato"))
     (music-map make-script-music music))
 
-accst = 
-#(define-music-function (parser location music) 
+accst =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (double-script m "accent" "staccato"))
     (music-map make-script-music music))
-    
-marcst = 
-#(define-music-function (parser location music) 
+
+marcst =
+#(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (double-script m "marcato" "staccato"))
@@ -257,7 +257,7 @@ unsk = \set Score.skipTypesetting = ##f
 
 oct = #(define-music-function (parser location mus) (ly:music?)
  (octavize mus))
- 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%% Layout Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -280,12 +280,12 @@ oct = #(define-music-function (parser location mus) (ly:music?)
 
 #(define modern-accidentals-style
      `(Staff ,(make-accidental-rule 'same-octave 0)
-					   ,(make-accidental-rule 'any-octave 0)
-					   ,(make-accidental-rule 'same-octave 1)
-				           ,neo-modern-accidental-rule))
+             ,(make-accidental-rule 'any-octave 0)
+             ,(make-accidental-rule 'same-octave 1)
+                   ,neo-modern-accidental-rule))
 #(define modern-cautionaries-style
      `(Staff ,(make-accidental-rule 'same-octave 1)
-					   ,(make-accidental-rule 'any-octave 1)))
+             ,(make-accidental-rule 'any-octave 1)))
 
 %% Music formatting -----------------------------------------------%
 
@@ -295,7 +295,7 @@ graceNotes =
 
 parlato =
 #(define-music-function (parser location notes) (ly:music?)
-#{ \override NoteHead #'style = #'cross 
+#{ \override NoteHead #'style = #'cross
   $notes
 \revert NoteHead #'style #})
 

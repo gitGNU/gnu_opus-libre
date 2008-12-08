@@ -336,30 +336,31 @@ EntracteBarytonDeux = { \BarytonDeux
     do(\> mib8) r do4( mib8)\! r | R2.-\fermataMarkup
 
     %%% A tempo %%%
-    R2.*3 la2. sol fa~ fa4 mib2~ mib r4 R2.-\fermataMarkup
+    R2.*3 la2.(\p sol fa~ fa4\> mib2)~ mib\! r4 R2.-\fermataMarkup
 
     %%% Poco più %%%
-    mib4 do8 r r4 | mib do8 r r4 | mib do sib la r2 | R2.-\fermataMarkup
+    mib4(\pp do8) r r4 | mib( do8) r r4 |
+    mib( do) sib--\> la--\! r2 | R2.-\fermataMarkup
 
     %%% Andantino %%%
-    la'1 la4 mi8 r |
-    la1 la2 do,1 do2 fa2. r4 R2.
+    la'1--\p la4( mi8) r |
+    la1-- la2-- do,1-- do2-- fa2.-- r4 R2.
 
     %%% Largo non troppo %%%
-    la,2 la la4 do8 r |
-    si2 si si4 re8 r |
-    do2 do do4 mi8 r |
-    re2 re re4 si8 r |
-    la2 la la4 do8 r |
-    si2 si4 re8 r si2 |
-    do2 do do4 mi8 r |
-    re2 re4 fa8 r re2 |
-    mi2 fa4 mi fa sol sol2 si, si |
-    do4 mi8 r do2 do | dod dod dod |
-    re re re si mi4 sol8 r lab2 |
-    sol4 mi8 r sol4 mi8 r sol2 re4 dod re mi fa sol |
-    fa2 do la mi'1~ mi4 r mi2. r4 |
-    \t {fad2 mi sol} red'2.~ red4 r |
+    la,2--\mf la-- la4( do8) r |
+    si2-- si-- si4( re8) r |
+    do2-- do-- do4( mi8) r |
+    re2-- re-- re4( si8) r |
+    la2-- la-- la4( do8) r |
+    si2-- si4( re8) r si2-- |
+    do2-- do-- do4( mi8) r |
+    re2-- re4( fa8) r re2-- |
+    mi2-- fa4( mi fa sol) sol2-- si,-- si-- |
+    do4( mi8) r do2-- do-- | dod-- dod-- dod-- |
+    re-- re-- re-- si-- mi4( sol8) r lab2-- |
+    sol4( mi8) r sol4( mi8) r sol2-- re4(\mf\< dod re mi fa sol |
+    fa2)\fp do-- la-- mi'1--\fmolto~ mi4 r mi2.-- r4 |
+    \t {fad2--(\f\< mi-- sol--} red'2.->--)\sffz~ red4 r |
 
   }
 }

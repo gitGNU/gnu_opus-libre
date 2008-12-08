@@ -23,7 +23,7 @@
        (y-ext (ly:stencil-extent stencil Y)))
     (ly:stencil-add
      (stencil-with-color (ly:round-filled-box x-ext y-ext blot)
-			 white)
+       white)
      stencil)))
 
 #(define-markup-command (rounded-whiteout layout props radius arg)
@@ -55,7 +55,7 @@
                #:hspace -0.3
                #:normal-text #:italic string))
       ))
-      
+
 #(define (make-extra-dynamic string dynamic)
      (make-music
        'AbsoluteDynamicEvent
@@ -72,7 +72,7 @@
                #:hspace -0.3
                #:dynamic dynamic))
       ))
-  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -89,13 +89,13 @@ sffz = #(make-dynamic-script "sffz")
 % the affected beat (unlike standard or predefined dynamics).
 cmb =
 #(define-music-function (parser location dyn str) (string? string?)
-  (make-music 'SequentialMusic 'elements 
+  (make-music 'SequentialMusic 'elements
     (list
       (make-music 'OverrideProperty
                   'symbol 'DynamicText
                   'grob-property-path (list 'self-alignment-X)
                   'grob-value -0.6 'once #t)
-      (make-music 'AbsoluteDynamicEvent 
+      (make-music 'AbsoluteDynamicEvent
                   'text
                   (markup #:dynamic dyn
                           #:hspace .5
@@ -103,20 +103,20 @@ cmb =
 
 bmc =
 #(define-music-function (parser location str dyn) (string? string?)
-  (make-music 'SequentialMusic 'elements 
+  (make-music 'SequentialMusic 'elements
     (list
       (make-music 'OverrideProperty
                   'symbol 'DynamicText
                   'grob-property-path (list 'self-alignment-X)
                   'grob-value -0.6 'once #t)
-      (make-music 'AbsoluteDynamicEvent 
+      (make-music 'AbsoluteDynamicEvent
                   'text
                   (markup #:text #:medium #:upright str
                           #:hspace .5
                           #:dynamic dyn)))))
-                          
+
 %% Predefined commands
-                          
+
 ffsubito = #(make-dynamic-extra "ff" "subito")
 fsubito = #(make-dynamic-extra "f" "subito")
 mfsubito = #(make-dynamic-extra "mf" "subito")
@@ -135,8 +135,8 @@ pocof = #(make-extra-dynamic "poco" "f")
 
 
 %% Text indications -----------------------------------------------%
-   
-ind = 
+
+ind =
 #(define-music-function (parser location text music) (string? ly:music?)
    (if
      (equal? (ly:music-property music 'name) 'EventChord)
@@ -147,25 +147,25 @@ ind =
    music)
 
 nind =
-#(define-music-function (parser location texte) 
+#(define-music-function (parser location texte)
 (string? )
-(make-dynamic-script 
+(make-dynamic-script
               (markup  #:text #:indic texte)))
 
 %% Predefined commands
 
-ten = 
+ten =
 #(define-music-function (parser location music) (ly:music?)
    (if
      (equal? (ly:music-property music 'name) 'EventChord)
      (set! (ly:music-property music 'elements)
            (append (ly:music-property music 'elements)
                   (list (make-music 'TextScriptEvent 'text
-                    (markup #:translate (cons 4 0) 
+                    (markup #:translate (cons 4 0)
                     #:indic "(ten.)"))))))
                  music)
 
-   
+
 pizz =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"pizz." $music #})
@@ -211,7 +211,7 @@ jet =
 %% The two following functions are deprecated. Better code follows below.
 startTxt =
 #(define-music-function (parser location texte music ) (string? ly:music?)
-#{ \override TextSpanner #'bound-details #'left #'text = 
+#{ \override TextSpanner #'bound-details #'left #'text =
   \markup { \bold $texte }
                 $(make-txt-span music -1)#})
 
@@ -294,7 +294,7 @@ long = {
 
 #(define-markup-command (init-did layout props text) (markup?)
   (interpret-markup layout props
-    (markup 
+    (markup
   ;  #:override (cons 'line-width (* 1 (chain-assoc-get 'line-width props)))
     #:fill-line (
     #:override '(line-width . 60)
@@ -302,3 +302,12 @@ long = {
     #:override '(corner-radius . 2)
     #:rounded-box #:sans #:italic #:small #:justify-string  text))))
 
+
+%% Table of contents --------------------------------------------%
+tocAct =
+#(define-music-function (parser location text) (markup?)
+   (add-toc-item! 'tocActMarkup text))
+
+tocQuote =
+#(define-music-function (parser location text) (markup?)
+   (add-toc-item! 'tocQuoteMarkup text))

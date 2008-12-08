@@ -5,6 +5,7 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+#(ly:set-option 'point-and-click #f)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -25,7 +26,7 @@
   page-limit-inter-system-space = ##t
   page-limit-inter-system-space-factor = 1.4
   #(define page-breaking ly:minimal-breaking)
-  
+
 %% Horizontal margins ---------------------------------------------%
   left-margin = #13
   right-margin = #7
@@ -41,7 +42,7 @@
   ragged-bottom = ##f
   ragged-last-bottom = ##f
   bottom-margin = #10
-  
+
 %% Look and feel --------------------------------------------------%
   %FIXME: this doesn't work well.
   %systemSeparatorMarkup = \slashSeparator
@@ -83,6 +84,38 @@
       }
     }
   }
+
+  tocTitleMarkup = \markup \column {
+    \vspace #8
+    \fill-line {
+          \fontsize #3 \OperaLivret
+          \fontsize #3 \OperaPartition
+        }
+    \fill-line {
+          \fontsize #10 \bold \OperaTitre
+        }
+    \fill-line {
+          \fontsize #2 \OperaSousTitre
+    }
+    \vspace #4
+    \fill-line {
+      \fontsize #2 \underline \TableTitre
+    }
+    \vspace #1
+  }
+
+  tocActMarkup = \markup \large \column {
+    \hspace #1
+    \fill-line { \null \bold \fromproperty #'toc:text \null }
+    \hspace #1
+  }
+  tocItemMarkup = \markup \large \fill-line {
+    \fromproperty #'toc:text \fromproperty #'toc:page
+  }
+  tocQuoteMarkup = \markup {
+    \hspace #4 \italic \fromproperty #'toc:text
+  }
+
   oddFooterMarkup = \markup {
   \column {
     \fill-line {
@@ -95,7 +128,7 @@
       \on-the-fly #first-page
       \fontsize #1 \sans \fromproperty #'header:copyright
     }
-    
+
     \fill-line {
       %% Tagline header field only on last page.
       \on-the-fly #last-page \fromproperty #'header:tagline
@@ -106,11 +139,16 @@
     \column {
       \on-the-fly #print-all-headers { \bookTitleMarkup \hspace #1 }
       \fill-line {
-        \fontsize #6 \fromproperty #'header:piece
+        \center-column {
+          \fontsize #10 \fromproperty #'header:acte
+          \vspace #1
+          \fontsize #6 \fromproperty #'header:piece
+          \vspace #1
+          \fromproperty #'header:dessin
+        }
       }
     }
   }
 
 %%-----------------------------------------------------------------%
 }
-

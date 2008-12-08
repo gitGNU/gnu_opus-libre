@@ -587,7 +587,7 @@ ActeUnSceneTroisTerBarytonUnTexte = \lyricmode {
   Vous au -- ssi, vous vou -- lez me ta -- per, me tu -- er_?
 
   Oh_!…
-  Oh… __ _ \leftSyl
+  Oh… __ _
   …_Mais… ce sont des mor -- ceaux de…
   Oh… Oui… Je… je me sou -- viens… C'est te -- rri -- _ ble…
   J'a -- vais huit ans.
@@ -784,7 +784,22 @@ EntracteSopranoUnTexte = \lyricmode {
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy_-.
 
+  \dash Po -- om, \dash po -- om, \dash po -- om pom
+  \dash po -- om, \dash po -- om_-
+  Mmm... __ _ _ Mmm... __ _ _ _
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om, pom pom.
+  Pom, \dash po -- om pom, pom pom, pom pom...
 
+  Pom, pom, \dash po -- om Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om Pom, pom.
+  Pom pom pom, pom pom pom, pom pom pom,
+  pom \dash po -- om pom pom pom...
+  Pom pom pom pom, \dash po -- om pom pom pom pom,
+  pom pom \dash po -- om \dash po -- om
+  \dash po -- om \dash po -- om, pom.
+  Pom... __ _ Pom... __ _ POM... __ _ POM...
 }
 
 EntracteSopranoDeuxTexte = \lyricmode {
@@ -815,6 +830,28 @@ EntracteSopranoDeuxTexte = \lyricmode {
   Quelle ho -- rreur, quelle ho -- rreur_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy_-.
+
+  \dash Po -- om, \dash po -- om \dash po -- om pom pom
+  \dash po -- om, \dash po -- om \dash po -- om pom pom
+  \dash po -- om, \dash po -- om_-
+
+  Mmmm... __ _ Mmm... __ _ _ Mmm... __ _
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om, pom pom.
+  Pom, \dash po -- om pom, pom pom,
+  \dash po -- om \dash po -- om pom...
+  Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om
+  Pom, pom.
+  Pom, pom, \dash po -- om
+  Pom pom pom, pom pom pom,
+  pom, pom pom pom pom pom,
+  pom pom pom, pom pom pom,
+  pom pom pom, \dash po -- om \dash po -- om pom,
+  pom pom pom, pom pom pom.
+  \dash Po -- om... \dash Po -- om... POM... __ _ POM...
 }
 
 EntracteContraltoTexte = \lyricmode {
@@ -872,6 +909,37 @@ EntracteTenorTexte = \lyricmode {
   \leftSyl …_des coups de…
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy_-.
+
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om_?
+  \dash Po -- om, \dash po -- om,
+  \dash po -- om, \dash po -- om,
+  \dash po -- om, \dash po -- om,
+  \dash po -- om, \dash po -- om,
+  \dash po -- om, \dash po -- om,
+  \dash po -- om, \dash po -- om, \dash po -- om pom pom,
+  \dash po -- om, \dash po -- om, \dash po -- om pom pom,
+  \dash po -- om, \dash po -- om, \dash po -- om pom pom,
+  \dash po -- om, \dash po -- om, \dash po -- om pom pom,
+  \dash po -- om, \dash po -- om_-
+
+  Mmm... __ _ Mmm... __ _ _ _ _
+  \dash Po -- om. \dash Po -- om.
+  \dash Po -- om, pom pom.
+  Pom, \dash po -- om pom, \dash po -- om
+  pom, \dash po -- om \dash po -- om...
+
+  Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om
+  Pom pom pom pom pom pom
+  \dash po -- om pom pom, \dash po -- om pom,
+  \dash po -- om \dash po -- om, \dash po -- om pom pom,
+  pom pom pom, pom pom pom,
+  pom \dash po -- om pom pom pom... __ _
+  Pom pom pom, \dash po -- om \dash po -- om \dash po -- om.
+  \dash Pom pom pom pom pom pom POM... __ _ POM...
 }
 
 EntracteBarytonUnTexte = \lyricmode {
@@ -910,6 +978,32 @@ EntracteBarytonUnTexte = \lyricmode {
   Quelle ho -- rreur, quelle ho -- rreur_!
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy_-.
+
+  \dash Po -- om.
+  \dash Po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om_-
+  Mmm... __ _ _ _ _ _
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om, pom pom.
+
+  Pom, \dash po -- om pom, pom
+  \dash po -- om, __ _ pom...
+  Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om
+  Pom, \dash po -- om pom pom
+  \dash po -- om \dash po -- om pom pom
+  \dash po -- om pom pom pom, pom pom
+  pom, pom, pom pom, pom, pom pom, \dash po -- om pom pom
+  pom, \dash po -- om \dash po -- om
+  pom pom pom \dash po -- om \dash po -- om pom,
+  pom pom pom, pom pom pom.
+  Pom pom pom pom pom pom pom, pom, \dash po -- om
+  POM... __ _ POM...
 }
 
 EntracteBarytonDeuxTexte = \lyricmode {
@@ -947,6 +1041,26 @@ EntracteBarytonDeuxTexte = \lyricmode {
   Quelle ho -- rreur_…
   En -- nuy -- eux, très en -- nuy -- eux_;
   ex -- trê -- me -- ment en -- nuy_-.
+
+  \dash Po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om, pom pom,
+  \dash po -- om, \dash po -- om_-
+  Mmm... __ _ _ _ _ _
+  \dash Po -- om.
+  \dash Po -- om.
+  \dash Po -- om, pom pom.
+  Pom, \dash po -- om pom, pom pom, pom pom...
+
+  Pom, pom, \dash po -- om Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om Pom, pom, \dash po -- om
+  Pom, pom, \dash po -- om Pom, \dash po -- om pom,
+  pom, pom, \dash po -- om pom, \dash po -- om pom,
+  pom, \dash po -- om pom pom pom, pom, pom,
+  \dash po -- om pom pom, pom pom pom, pom pom pom,
+  pom \dash po -- om pom, \dash po -- om \dash po -- om pom.
+  Pom pom pom pom pom pom pom, pom, pom, POM... __ _ POM...
+  JE VAIS LE TUER_!!! __ _
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
