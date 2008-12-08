@@ -1,3 +1,22 @@
+%------------------------------------------------------------------%
+% Opéra Libre -- livret.ly                                         %
+%                                                                  %
+% (c) Lewis Trondheim & Valentin Villenave, 2008                   %
+%                                                                  %
+%------------------------------------------------------------------%
+
+
+%%% TODO: Make a decent libretto?
+
+
+doct = \markup \column { \hspace #0 \fill-line { \smallCaps \SopranoUnName } \hspace #0 }
+reine = \markup \column { \hspace #0 \fill-line { \smallCaps \SopranoDeuxName } \hspace #0 }
+dieu = \markup \column { \hspace #0 \fill-line { \smallCaps \ContraltoName } \hspace #0 }
+chef = \markup \column { \hspace #0 \fill-line { \smallCaps \TenorName } \hspace #0 }
+etr = \markup \column { \hspace #0 \fill-line { \smallCaps \BarytonUnName } \hspace #0 }
+roi = \markup \column { \hspace #0 \fill-line { \smallCaps \BarytonDeuxName } \hspace #0 }
+
+
 PremierTableauLivret=  {
 \italic \PrologueA
 \chef {

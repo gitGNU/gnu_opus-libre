@@ -17,14 +17,11 @@
 \include "./definitions/functions.ly"
 \include "./definitions/text-functions.ly"
 \include "./definitions/graphics.ly"
-
 \include "./texte/decoupage.ly"
 
 \include "./definitions/paper.ly"
 \include "./definitions/layout.ly"
 
-
-\include "./texte/personnages.ly"
 \include "./texte/didascalies.ly"
 \include "./definitions/mesures.ly"
 
@@ -39,7 +36,7 @@
 
 \include "./instruments/reduction.ly"
 
-%%%%%%%%%%%%%%%%%% Paper and layout declarations %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
 
 \layout {
   \includeLayout

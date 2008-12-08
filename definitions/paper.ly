@@ -5,7 +5,10 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%% Depends on: decoupage.ly, graphics.ly
+
 #(ly:set-option 'point-and-click #f)
+#(ly:set-option 'delete-intermediate-files #t)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 

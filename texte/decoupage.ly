@@ -5,9 +5,30 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+%% Depends on: graphics.ly
+
+%%%%%%%%%%%%%%%%%%%%%%% Main text variables %%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% These variables are gathered here for two reasons:
+%%%   - makes localization easier (hehe, world domination plan inside ;)
+%%%   - helps defining the dual license of the whole thing
+%%%      (obviously, if you're using any character- or text-related
+%%%       variable from any file inside this directory, then you're making a
+%%%       "narrative" fork and therefore must comply with the
+%%%       relevant license).
+
+
+%% Common variables -----------------------------------------------%
 
 OperaTitre= "Affaire étrangère"
 OperaSousTitre= "Opéra en deux actes"
+FullScore = "Partitura"
+VocalScore = "Version avec piano"
+Livret = "Paroles et didascalies"
+TableTitre= "Table des matières"
+
+%% Legal stuff ----------------------------------------------------%
+
 OperaLivret= "Lewis Trondheim"
 OperaPartition= "Valentin Villenave"
 OperaNotice= "Gravure réalisée au moyen du logiciel libre GNU LilyPond (www.lilypond.org)."
@@ -48,35 +69,55 @@ BigNotice = \markup {
   }
 }
 
+%% Characters -----------------------------------------------------%
 
-FullScore = "Partitura"
-VocalScore = "Version avec piano"
-Livret = "Paroles et didascalies"
+SopranoUnName=  "Le Docteur"
+SopranoUnShortName= "Doct."
+
+SopranoDeuxName=  "La Reine"
+SopranoDeuxShortName=  "Reine."
+
+ContraltoName= "Dieu"
+ContraltoShortName= "Dieu."
+
+TenorName= "Le Chef"
+TenorShortName= "Chef."
+
+BarytonUnName= "L'Étranger"
+BarytonUnShortName= "Étr."
+
+BarytonDeuxName= "Le Roi"
+BarytonDeuxShortName= "Roi."
 
 
-%%%%
 
-PrologueTitre= "Prologue"
-OuvertureTitre= "Ouverture"
-InterludeTitre= "Interlude"
-EntracteTitre= "Entr'acte"
-FinaleTitre= "Finale"
-InterTitre= \markup { \with-dimensions #'(0 . 10) #' (0 . 0) \draw-line #'(10 . 0) }
-TableTitre= "Table des matières"
+%%%%%%%%%%%%%%%%%%%%%%% Narrative structure %%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Separateur = \Skyline
-
-%%%%
+%% Main sections --------------------------------------------------%
 
 ActeUnTitre= "Acte I"
 ActeDeuxTitre= "Acte II"
 SceneUnTitre= "Premier Tableau"
 SceneDeuxTitre= "Deuxième Tableau"
 SceneTroisTitre= "Troisième Tableau"
-SceneQuatreTitre= "Quatrième Tableau"
+SceneQuatreTitre= "Quatrième Tableau" %unused
 
-%%% Quotes
+
+%% Special sections -----------------------------------------------%
+
+PrologueTitre= "Prologue"
+OuvertureTitre= "Ouverture"
+InterludeTitre= "Interlude"
+EntracteTitre= "Entr'acte"
+FinaleTitre= "Finale"
+
+Separateur = \Skyline
+InterTitre= \markup { \with-dimensions #'(0 . 10) #' (0 . 0) \draw-line #'(10 . 0) }
+FunnyFooter = \markup \fill-line { \Bilboquet }
+
+
+%%  Quotes --------------------------------------------------------%
 
 PrologueQuote= "Majesté, Majesté, Majesté !"
 ActeUnSceneUnQuote= "Comment est-il ? / Endormi, endormi, depuis midi."
@@ -91,3 +132,5 @@ ActeDeuxSceneUnQuote= "Sont-ce là les restes étalés"
 ActeDeuxSceneUnBisQuote= "Étranger, bonne nouvelle, très bonne nouvelle"
 ActeDeuxSceneDeuxQuote= "Voler, voler... / Ces briques... je me souviens de ma maison"
 ActeDeuxSceneTroisQuote= "Où suis-je ? Qu'est-ce donc que cet endroit ?"
+
+%%-----------------------------------------------------------------%

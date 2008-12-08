@@ -135,6 +135,7 @@ ActeUnSceneTroisBarytonUn = { \BarytonUn
     R1. R1*5/4 R1 R2. R2 |
   }
 }
+
 ActeUnSceneTroisTerBarytonUn = { \BarytonUn
   \relative {
 

@@ -7,6 +7,8 @@
 
 % FIXME : find this file a relevant place.
 
+%% Depends on: didascalies.ly, text-functions.ly
+
 PrologueMesures = {
   \tocItem \markup \PrologueTitre
   \tocQuote \markup \PrologueQuote
