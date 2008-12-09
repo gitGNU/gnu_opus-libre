@@ -16,7 +16,13 @@
   \header {
     piece = \PrologueTitre
   }
-} %
+} %{
+\score {
+  \Ouverture
+  \header {
+    piece = \OuvertureTitre
+  }
+} %}
 \score {
   \ActeUnSceneUn
   \header {
@@ -80,14 +86,14 @@
   \header {
     piece = \FinaleTitre
   }
-} %
+} %{
 \score {
   \Entracte
   \header {
     piece = \EntracteTitre
   }
-} %
-\pageBreak
+} %}
+%\pageBreak
 \score {
   \ActeDeuxSceneUn
   \header {
@@ -106,10 +112,10 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %
+} %{
 \score {
   \ActeDeuxSceneTrois
   \header {
     piece = \FinaleTitre
   }
-} %
+} %}

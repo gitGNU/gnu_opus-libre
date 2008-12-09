@@ -1,5 +1,5 @@
 %------------------------------------------------------------------%
-% Opéra Libre -- main.ly                                           %
+% Opéra Libre -- parts.ly                                          %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
@@ -34,20 +34,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
 
 \layout {
-  \includeLayout
+  \includePartsLayout
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%% Edition selection %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% Part selection %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Uncomment one of the two following lines.
+\include "./master/common.ly"
+%\include "./master/titling.ly"
+\include "./master/instruments.ly"
 
-%\include "./master/full_score.ly"
-\include "./master/vocal_score.ly"
-
-%%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-%showFirstLength = s1*40
-\book {
-  \include "./master/common.ly"
-  \include "./master/titling.ly"
-  \include "./master/master.ly"
-}

@@ -56,5 +56,21 @@
   %FIXME: this doesn't work well.
   %systemSeparatorMarkup = \slashSeparator
 
+  %FIXME: duplicate code with titling.ly
+  scoreTitleMarkup = \markup {
+    \column {
+      \fill-line {
+        \center-column {
+          \fontsize #10 \fromproperty #'header:acte
+          \vspace #1
+          \fontsize #6 \fromproperty #'header:piece
+          \vspace #1
+          \fromproperty #'header:dessin
+        }
+      }
+    }
+  }
+
+
 %%-----------------------------------------------------------------%
 }

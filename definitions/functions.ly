@@ -51,7 +51,7 @@ mg = { \change Staff = "mg" }
 
 PianoDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ <<
+#{ \new PianoStaff << %%%FIXME: get rid of this option.
 \new Staff = "md" \with { \override VerticalAxisGroup #'remove-empty = ##f }
 { \clef treble $droite }
 \new Staff = "mg" \with { \override VerticalAxisGroup #'remove-empty = ##f }
@@ -64,7 +64,7 @@ gauche = { \change Staff = "percuGauche" }
 
 PercuDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ <<
+#{ << %%%FIXME: I /definitely/ should get rid of this option.
 \new Staff = "percuDroite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
 { \clef treble $droite }
 \new Staff = "percuGauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
@@ -327,5 +327,35 @@ oneStemDown = {
 oneStemUp = {
 \once \override Stem #'direction = #UP
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Editorial %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Individual parts -----------------------------------------------%
+
+makePart =
+#(define-music-function (parser location part ref)
+                        (ly:music? ly:music?)
+#{\context Staff << $part \new GhostVoice $ref >> #})
+
+makeSection =
+#(define-music-function (parser location part-one part-two ref)
+                        (ly:music? ly:music? ly:music?)
+#{\new StaffGroup <<
+    \new Staff << $part-one \new GhostVoice $ref >>
+    \new Staff $part-two
+>> #})
+
+makeExtraSection = % for violins
+#(define-music-function (parser location part-one part-two part-three ref)
+                        (ly:music? ly:music? ly:music? ly:music?)
+#{\new StaffGroup <<
+    \new Staff << $part-one \new GhostVoice $ref >>
+    \new Staff $part-two
+    \new Staff $part-three
+>> #})
+
+makePianoPart =
+#(define-music-function (parser location part-one ref)
+                        (ly:music? ly:music?)
+#{<< $part-one \new GhostVoice $ref >> #})
 
 %%-----------------------------------------------------------------%
