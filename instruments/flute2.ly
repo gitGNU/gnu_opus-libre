@@ -179,18 +179,18 @@ ActeUnSceneUnFluteDeux = { \FluteDeux
 ActeUnSceneUnBisFluteDeux = { \FluteDeux
   \relative {
     R2.*6
-    \ttt {re16 dod re dod re dod}
-    \ttt { re mib fa lab sib si }
-    \ttt { dod mi fad sol la do } |
+    \ttt {re16( dod) re( dod) re( dod)}
+    \ttt { re( mib fa) lab( sib si) }
+    \ttt { dod( mi fad sol la do) } |
     
     %%% Piu vivo %%%
-    re4 r r2 | r4 \tt {re,,16 dod re dod mi } \tt { sol si mi sol sib } |
-    re4 r r2 | r4 \tt {re,,16 do re do mi } \tt { lab sib mib sol la } |
-    re8. re16 re8 re~ re16 re re8 |
-    re8. re16 re8 re r4 |
-    re8. re16 re8 re~ re16 re re8 | re4 r8 re4 re8 |
-    R2. mi,2.~ mi4. r8\fermata r4 |
-    R2. mi2.~ mi2~ mi8 r\fermata r4 |
+    re4->\f r r2 | r4 \tt {re,,16\mf\<( dod) re( dod mi) } \tt { sol( si mi) sol( sib) } |
+    re4\f r r2 | r4 \tt {re,,16\mf\<( do) re( do mi) } \tt { lab( sib mib) sol( la) } |
+    re8.->\f re16 re8-. re~-> re16 re re8-. |
+    re8.-> re16 re8-. re-> r4 |
+    re8.-> re16 re8-. re~-> re16 re re8-. | re4-> r8 re4-> re8 |
+    R2. \ten mi,2.~\pp mi4. r8\fermata r4 |
+    R2. \ten mi2.~\pp mi2~ mi8 r\fermata r4 |
     R1 R2 |
     
     %%% Largo %%%

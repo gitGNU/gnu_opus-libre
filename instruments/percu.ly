@@ -530,16 +530,16 @@ ActeUnSceneUnBisPercus = <<
   }
   \new Staff { \Timbales
     \relative {
-      dod,2.:32 dod: dod: dod: dod: dod2:32~ dod8 r |
-      r re4 re8 \t { re re sold,} |
+      dod,2.:32\ppp dod: dod: dod:\< dod: dod2:32~\p dod8 r |
+      r re4--\mp re8-. \t { re--\<( re-- sold,--} |
       
       %%% Piu vivo %%%
-      re'4 r r2 | sold,2.:32 | re'4 r r2 | sold,2.:32 |
-      <sol re'>4 r8 \t {sol16 sol sol} sol4  |
-      r sol32 sol8.. r4 | \t {sol16 sol sol~} sol8 r4 reb' |
-      sol, r2 |
-      sol8  reb'~reb4~ reb4:32 reb4\laissezVibrer r2 R2.-\fermataMarkup
-      sol,8 reb'~reb4~ reb4:32 reb4\laissezVibrer r2 R1-\fermataMarkup 
+      re'4\f) r r2 | sold,2.:32\pp\< | re'4\f r r2 | sold,2.:32\pp\< |
+      <sol re'>4\f r8 \t {sol16 sol sol} sol4->  |
+      r sol32-> sol8.. r4 | \t {sol16-> sol sol~} sol8-- r4 reb'-- |
+      sol,-- r2 |
+      sol8\mf  reb'~ reb4~\> reb4:32 reb4\!\laissezVibrer r2 R2.-\fermataMarkup
+      sol,8\mp\> reb'~reb4~ reb4:32 reb4\!\laissezVibrer r2 R1-\fermataMarkup 
       R1 R2
       
       %%% Largo %%%

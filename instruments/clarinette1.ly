@@ -196,18 +196,18 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
 ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
   \relative {
     R2.*3
-    \ttt {fa,,16 mi re dod re mi} \ttt {fa mi fa dod re mi} \ttt {fa mi re dod re mi} |
-    fa8 r \ttt {fa'16 mi re si re mi} fa8 r |
-    \ttt {re16 dod re mi fa sol} lab8 r \ttt {re,16 dod re mi sol la} |
-    sib8 r \ttt {re16 do la sol fad mi} \ttt {dod si lad sold fa mib} |
+    \ttt {fa,,16\pp( mi re) dod( re mi)} \ttt {fa( mi fa) dod( re mi)} \ttt {fa( mi re) dod( re mi)} |
+    fa8-- r \ttt {fa'16( mi re) si( re mi)} fa8-- r |
+    \ttt {re16( dod re) mi( fa sol)} lab8-- r \ttt {re,16( dod re) mi( sol la)} |
+    sib8-- r \ttt {re16( do la) sol( fad mi)} \ttt {dod( si lad sold fa mib)} |
     
     %%% Piu vivo %%%
-    re4 r r2 | fad2. |
-    re4 r r2 | sib'4. lab4. |
-    sol2.~sol8 r sol4. r8 |
-    sol4 r reb sol2 r4 |
-    \t {sol16 lab sib } reb8~reb2~ reb2.~reb4. r8\fermata r4 |
-    \t {sol,16 lab sib} reb8~reb2~ reb2.~reb2~reb8 r\fermata r4 |
+    re4->\f r r2 | fad2.\mf\<( |
+    re4->\f) r r2 | sib'4.--\mf\< lab4.-- |
+    sol2.~\ff sol8 r sol4.---> r8 |
+    sol4---> r reb---> sol2---> r4 |
+    \t {sol16\f\>( lab sib } reb8~ reb2~) \ten reb2.~\pp reb4. r8\fermata r4 |
+    \t {sol,16\mf\> lab sib} reb8~ reb2~ \ten reb2.~\pp reb2~ reb8 r\fermata r4 |
     R1 R2
     
     %%% Largo %%%

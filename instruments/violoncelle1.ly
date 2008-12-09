@@ -260,10 +260,10 @@ ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
     <re, do'>4.---> <re sib'>---> | sib'2.---> |
     R2. r4 <la mi'\harmonic mi'>2~\p <la mi'\harmonic mi'>4. r8\fermata r4 |
     R2. r4 <la mi'\harmonic mi'>2~ <la mi'\harmonic mi'>~
-    <la mi'\harmonic mi'>8 r\fermata r4 | r2 r4 fad, sol la |
+    <la mi'\harmonic mi'>8 r\fermata r4 | r2 r4 fad,--( sol-- la--) |
     
     %%% Largo %%%
-    do2~\CaV do~\CaV do~\CaV do2.~\CaV
+    \ten do2~\CaV do~\CaV do~\CaV do2.~\CaV
     do2~\CaV do2.~\CaV do2~\CaV do2.~\CaV
     do2.~\CaV do4 r r2 |
     R1 R2. R2 r2 r8 mi4. |
