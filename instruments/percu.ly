@@ -7,7 +7,7 @@
 
 \include "italiano.ly"
 
-Percus = { 
+Percus = {
   \set DrumStaff.instrumentName = \markup { \hcenter-in #27.5 "Percussions  "}
   \set DrumStaff.shortInstrumentName = "Perc.  "
   \override DrumStaff.VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 4)
@@ -42,43 +42,43 @@ GrandVibraphone = {
 
 Timbales = {
   \set Staff.instrumentName = \markup { \hcenter-in #27.5 "Timbales  "}
-  \set Staff.shortInstrumentName = "Timp..  "
+  \set Staff.shortInstrumentName = "Timp.  "
   \set Staff.midiInstrument = "timpani"
   \clef bass
 }
 
-ProloguePercus = << 
+ProloguePercus = <<
   \new PianoStaff { \GrandMarimba
     \PercuDeuxMains
     \relative {
-      \ind #"bag. dures" <mi'' fa>4-.->\mp r r8 mi-.-> r4 | r8 mi r4 r16 mi8. | 
+      \ind #"bag. dures" <mi'' fa>4-.->\mp r r8 mi-.-> r4 | r8 mi r4 r16 mi8. |
       mi8 mi \t { mi mi mi } \tt {mi16\< mi mi mi mi} | mi4-.->\mf r4 r2 |
       R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2
       r4 \ind #"bag.dure" re\mf re | re \stemDown re8 \gauche \stemUp sol,,,, |
-      \droite \stemDown re''''4 re8 \gauche \stemUp dod,,, 
+      \droite \stemDown re''''4 re8 \gauche \stemUp dod,,,
       \droite \stemDown re''' \gauche \stemUp dod,,, \droite \stemNeutral |
       re'''4 re re re re re re re\> sold, re\!
       R2*2-\markup "Prenez la bag. de timbale" R2.
-      
+
       %%% Tempo Giusto %%%
       R2*8 R2.*10 R1 R2-\markup "Allez au Vibraphone" \GrandVibraphone
       <re, dod'>2\p\laissezVibrer R2-\fermataMarkup
-      
+
       %%% Più lento %%%
       R1*2 R2. R1 R2. R1
-      
+
       %%% Adagio %%%
       R2*4 R2.*6
       <lab sol'>2.\pp\laissezVibrer R2.
       \ind #"senza Ped." <lab sol'>4 r2 <lab sol'>4 r2
       <dob sib'>4 r <do si'> |
       R4.
-      
+
       %%% Andantino %%%
       R4.*25 R4.*12 \GrandMarimba
       r4-\markup "Allez au Marimba"
       r32 solb''\< lab sib |
-      
+
       %%% A tempo %%%
       re8->\f r4 | r4 r32 solb,\< lab sib |
       re8->\f r4 | R4.*2 \stemDown <lab re>8->\mf \gauche \stemUp re,,
@@ -106,15 +106,15 @@ ProloguePercus = <<
       <sold si>\p dod, <sold' si> si, <sold' si>\> sold, |
       sol' fad, sol' fad,\! r8 |
       R4.*8 R2*5/4 R2.*3
-      
+
       %%% Adagio %%%
       <fa'? dod'>2*2\pp\laissezVibrer
       R1*3 R1.
-      r1 mi4--\pp\> r | <re sib'>2*2--\!\laissezVibrer 
+      r1 mi4--\pp\> r | <re sib'>2*2--\!\laissezVibrer
       R1*2 R1.
       r1 red4--\pp r | <mi do'>2--\pp\> <do sold'>--\!\laissezVibrer
       R1 R2.
-      
+
       %%% Valse %%%
       r4 <la' dod>8\pp( <lab, fa'> <do' lab'>4) |
       r4 <si red>8( <si, sol'> <sib' solb'>4) |
@@ -128,37 +128,37 @@ ProloguePercus = <<
       r <la fa'>( dod) | r mi( lab,) |
       r <fad re'>( la) | r reb8\>( fa, lab4) |
       r sib( <re, fa>) | r solb\ppp( <do, fa>) r | R1 R2.
-      
+
       %%% Vivo al fine %%%
       R2*23
-      
+
       %%% Recitativo %%%
       R2*7 r4 mi''->\pp
     }
     \relative {
       \partial 4 r4 R2.*3 R1 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2
-      
+
       %%% Entrée du Baryton 1 %%%
-      R2. R2*2 R2. s2_\markup { \indic "(bag. de timbale)" } s2. R2 
+      R2. R2*2 R2. s2_\markup { \indic "(bag. de timbale)" } s2. R2
       r8 sol, dod4 sib8 dod |
       r8 sol dod4 dod' r2 | re4 sold, sib,2:32 R2.
-      
+
       %%% Tempo Giusto %%%
       R2*8 R2.*10 R1 R2^\markup "Allez au Vibraphone"
       \GrandVibraphone \clef treble
       dod'2\laissezVibrer R2-\fermataMarkup
-      
+
       %%% Più lento %%%
       R1*2 R2. R1 R2. R1
-      
+
       %%% Adagio %%%
       R2*4 R2.*6
       sol2.\laissezVibrer R2.*4
       R4.
-      
+
       %%% Andantino %%%
       R4.*25 R4.*13 \clef bass
-      
+
       %%% A tempo %%%
       R4. sold,32 sold sold sold sold4 |
       R4. sold32--\mp sold sold sold sold sold sold16
@@ -167,7 +167,7 @@ ProloguePercus = <<
       s4.*3 R4.*26 R2*5/4
       R2.*3-\markup "Allez au Vibraphone" \GrandVibraphone
       \clef treble
-      
+
       %%% Adagio %%%
       <la fad'>2*2\laissezVibrer |
       R1*3 R1.*2
@@ -175,7 +175,7 @@ ProloguePercus = <<
       R1*2 R1.*2
       <la fa'>2-- <sol? mi'>--\laissezVibrer
       R1 R2.
-      
+
       %%% Valse %%%
       la4-- r2 | R2.*3
       r4 la8( <fa' lab>) s4 |
@@ -190,40 +190,40 @@ ProloguePercus = <<
       r4 sib,8( reb fa4) |
       r4 la,( do) | r4 sold8( dod la4) |
       r4 reb8( la) | R2 R1 R2.
-      
+
       %%% Vivo al fine %%%
       R2*23 \clef bass
-      
+
       %%% Recitativo %%%
       R2*7-\markup "Allez au Marimba" \GrandMarimba
       r4 mi,->
     }
   }
-  \new DrumStaff { \Percus 
+  \new DrumStaff { \Percus
     \new  DrumVoice \drummode {
       \partial 4 r4 R2.*3 R1
       \ind #"Tam-tam" cb2\mf \laissezVibrer | R2 |
-      R2. R2*2 cb2.\mf \laissezVibrer R2*2 
-      r4 cb2\mf \laissezVibrer R2*2 
+      R2. R2*2 cb2.\mf \laissezVibrer R2*2
       r4 cb2\mf \laissezVibrer R2*2
-      
+      r4 cb2\mf \laissezVibrer R2*2
+
       %%% Entrée du Baryton 1 %%%
       R2. R2*2 R2. R2 R2. R2 R2. R2 R2. R2*2 R2.
-      
+
       %%% Tempo Giusto %%%
       R2*8 R2.*10
       \set  drumStyleTable = #drums-style
       r4 \ind #"Cymb. suspendue" hh4:32~\mp \< hh2:32~ hh4\!\laissezVibrer r
       R2*2
-      
+
       %%% Più lento %%%
       R1*2 R2. R1 R2. R1
-      
+
       %%% Adagio %%%
       R2*4 R2.*4
       r4 r8 \ind #"Cymb." hh\pp \t {hh hh hh~} hh2\laissezVibrer s4
       R2.*5 R4.
-      
+
       %%% Andantino %%%
       \ind #"Tambour" bd8\pp \ind #"Cymb. (sur la cloche)" hh r |
       bd hh r bd hh4:32~ hh4:32 hh8 |
@@ -235,7 +235,7 @@ ProloguePercus = <<
       \ind #"bag. douces, sur le bord"
       hh4.:32~\ppp \< hh:~ hh:~\pp \> hh4\! r8 |
       hh4.:32~\ppp \< hh:~ hh4\! hh8 r hh r hh4. | R4.*3
-      
+
       %%% A tempo %%%
       R4.*27
       \ind #"Cymb." hh4\mp r8 |
@@ -245,16 +245,16 @@ ProloguePercus = <<
       hh4.:32~\pp \< hh4.:32~ hh8\mf \t {bd16\f bd bd} |
       bd8-- r16 bd bd bd bd8 r4 |
       R2.*2
-      
+
       %%% Adagio %%%
       R1*4 R1.*2 R1*3 R1.*2 R1*2 R2.
-      
+
       %%% Valse %%%
       R2.*6 R2*2 R2. R2 R2.*2 R1*2 R2.*5 R2*2 R1 R2.
-      
+
       %%% Vivo al fine %%%
       R2*23
-      
+
       %%% Recitativo %%%
       R2*8
     }
@@ -266,12 +266,12 @@ ProloguePercus = <<
       R2.
       r4 mi-- r mi-- r2 \t {mi8\< mi mi\!} | mi4--\mp mi-- r mi |
       r4 r8 mi \t {mi\< mi mi} | mi4\mp mi-- r mi8.-- \t {dod'32\< dod dod}
-      
+
       %%% Entrée du Baryton 1 %%%
       dod4--\f r2 | r8 dod-- r4 | r8 dod-- r16 r32 dod dod8-- |
       dod4---> r2 R2 R2. R2 R2. R2 R2. R2*2
       r2 r8 \t {re16\< re re} |
-      
+
       %%% Tempo Giusto %%%
       re8.\f re16\p re4-- r8 r16 r32 re re4-- |
       r8 re-. re8.-- re16 re4-- r |
@@ -283,30 +283,30 @@ ProloguePercus = <<
       sib4---> r8 r16 sib sib4-- |
       sib4---> r8 sib \t {sib\< sib sib} |
       re4\f r re r re re re4 r r2 | R2*3
-      
+
       %%% Più lento %%%
       R1*2 R2. R1 R2. R1
-      
+
       %%% Adagio %%%
       R2*4 R2.*11 R4.
-      
+
       %%% Andantino %%%
-      R4.*25 R4.*13 
-      
+      R4.*25 R4.*13
+
       %%% A tempo %%%
       R4.*34 R2*5/4 R2.*3
-      
+
       %%% Adagio %%%
       R1*2 r2 r8 mi,\pp \t {mi-- mi mi} |
       mi4-- mi-- r2 r4 mi-- r2 mi4-- r | mi-- r r1 |
       R1 r2 r8 mi \t {mi-- mi mi} mi4-- mi-- r mi-- |
       mi-- mi-- r2 mi4-- r | mi-- r r1 |
       R1 r2 r4 mi mi r2 |
-      
+
       %%% Valse %%%
       R2.*6 R2*2 R2. R2 R2.*2 R1*2 R2.*5 R2*2 R1
       r2 r8 r16 \t {re'32 re re} |
-      
+
       %%% Vivo al fine %%%
       re8.\fp re16 re4-- | r8 r16 r32 re re4-- |
       r8 re16 re re8-- re-- | r4 re-- |
@@ -315,7 +315,7 @@ ProloguePercus = <<
       r8 r16 r32 re re4-- | r8 re16 re re4-- |
       r re r re r re r re r re re r re r re r |
       R2*4
-      
+
       %%% Recitativo %%%
       R2*8
     }
@@ -331,14 +331,14 @@ ActeUnSceneUnPercus = <<
       R1 R2. R1 R2.
       R1 R2. R1 R2.
       R1 R2. R1 R2.*8 R1 R2.
-      
+
       %%% Ad libitum %%%
       R1 R2.*2 R1 R2.*2
-      
+
       %%% Agitato %%%
       R1*6 R1. R1*2 R1. R1*3 R1.
       R1*2 R1.*3 R1 R1.*4
-      
+
       %%% Allegro non troppo %%%
       R1 R2. R1*5
       R2. R1 R2. R1 R2. R1
@@ -353,9 +353,9 @@ ActeUnSceneUnPercus = <<
       <sib do>8\p\< <reb' mib>16 mib, <mib' fa> fa, <fa' solb> solb,\! r2\fermata | R1
       <sib,do>16\mf <fa'' solb> solb, <solb' lab> lab, <lab' si> si, <re! si' re!>
       <mi! re' mi!>16 <mi re' mi>\f r8 r4\fermata |
-      
+
       %%% Moderato %%%
-      R1*2-\markup "Allez au Vibraphone" R2.*2 \Vibraphone
+      R1*2-\markup "Allez au Vibraphone" \Vibraphone R2.*2
       r4 r8 do,\p <sib' do>2\laissezVibrer | R2.
       r8 <sib, do>2..\laissezVibrer | R2. \clef bass
       \t {r8 do,( sib'} \clef treble do-. sib'4--) <do sib'>4.-- |
@@ -370,9 +370,9 @@ ActeUnSceneUnPercus = <<
       sib( do) sib,( do sib') do, do' sib sib( do) sib'( do) |
       sib,( do sib') do,( sib' do) sib,( do,) |
       <mi, fad>8-> r r2 R1 R2*4
-      
+
       %%% Allegro marcato %%%
-      \Marimba R1*34 
+      \Marimba R1*34
       R1. R1*2 \ottava #1
       \ind #"(bag. dures)"
       mib'''16\pp fa, sib fa mib' fa, sib fa
@@ -381,7 +381,7 @@ ActeUnSceneUnPercus = <<
       sol' la, re la sol' la, re la |
       lab' sib, mib sib lab' sib, mib sib |
       sib' do, fa do sib' do, fa do |
-      si'\< dod, fad dod si'8->\! r 
+      si'\< dod, fad dod si'8->\! r
       \ottava #0
       R2 R1*4
     }
@@ -394,19 +394,19 @@ ActeUnSceneUnPercus = <<
       R1 R2. R1 R2.
       R1 R2. R1 R2.
       R1 R2. R1 R2.*8 R1 R2.
-      
+
       %%% Ad libitum %%%
       R1 R2.*2 R1 R2.*2
-      
+
       %%% Agitato %%%
       R1*6 R1. R1*2 R1. R1*3 R1.
       R1*2 R1.*3 R1 R1.*4
-      
+
       %%% Allegro non troppo %%%
       R1 R2. R1*5
       R2. R1 R2. R1 R2. R1
       R2. R1*5 R2.*3 R1*6
-      
+
       %%% Moderato %%%
       R1*2 R2.*2 R1 R2. R1
       R2. R1 R2. R1 R2. R1 R2.
@@ -414,7 +414,7 @@ ActeUnSceneUnPercus = <<
       r2 r4 r8 \ind #"Tambour (bag. fagot)" sn32\< sn sn sn |
       sn4\mp r8 \t {sn16\< sn sn} sn4\! r | R2*2
       \set drumStyleTable = #drums-style
-      
+
       %%% Allegro marcato %%%
       \ind #"Tambour" bd4--\mf \ind #"Cymb. susp. (sur la cloche)" hh-> bd \t {bd8\<( bd bd} |
       bd4--\!) hh-> bd r | R1 r8 r16 bd32\mp bd bd8.-- bd16 bd4-- r |
@@ -426,7 +426,7 @@ ActeUnSceneUnPercus = <<
       r8 bd \t {bd--\> bd bd} bd4\! r |
       \t {r8 r16 bd\< bd8} \t {bd--\> bd bd} bd4 hh\pp | R1*4
       r2 r4 hh\pp | r2 r4 hh | R1
-      
+
       %%% Agitato %%%
       R1*11 R1. R1*2 R1 R2. R2*5 R1*4
     }
@@ -457,10 +457,10 @@ ActeUnSceneUnPercus = <<
       r4 r8 fad-- \t {fad--\< fad-- fad--} |
       do'8\f do16 do32 do \t {do8-> do-> do->} do-> do-- do8.-> do32 do |
       do8-> do-- \t {do-- do do} \tt {do16\< do do do do} |
-      
+
       %%% Ad libitum %%%
       R1 R2.*2 R1 R2.*2
-      
+
       %%% Agitato %%%
       re16->\fp re4.. r2 | r4 re \t {re\<( re re} |
       re->\!) r r2 | re4-- re \t {re\<( re re} re->\!) r r2 |
@@ -474,21 +474,21 @@ ActeUnSceneUnPercus = <<
       mib8.--\< mib32 mib mib8\> mib\! r2 |
       r4 \t {mib8 mib mib} mib mib r4 mib2:16\<\glissando |
       mi4\mf r r1 | R1.*2
-      
+
       %%% Allegro non troppo %%%
       R1 R2. R1*5 R2. R1 R2. R1 R2.
       r2 r4 r8 sol,32\< sol sol sol |
       sol8->\f sol r2 | r2 r4 r8 \t {sol16\< sol sol} |
       sol4--->\! r r2 R1*3 | R2.*3 R1*6
-      
+
       %%% Moderato %%%
       R1*2 R2.*2 R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
       R1 R2. R1 R2. R2 R2. R1
       R2*4
-      
+
       %%% Allegro marcato %%%
       R1*22 r2 r4 r8 r16 re'32\< re |
-      
+
       %%% Agitato %%%
       re4->\sfp re-- r re-- r re-- r re-- r re-- r re-- |
       re\fp\< re re8 re re16 re re re | re4\sfz r r2 | R1*6
@@ -532,7 +532,7 @@ ActeUnSceneUnBisPercus = <<
     \relative {
       dod,2.:32\ppp dod: dod: dod:\< dod: dod2:32~\p dod8 r |
       r re4--\mp re8-. \t { re--\<( re-- sold,--} |
-      
+
       %%% Piu vivo %%%
       re'4\f) r r2 | sold,2.:32\pp\< | re'4\f r r2 | sold,2.:32\pp\< |
       <sol re'>4\f r8 \t {sol16 sol sol} sol4->  |
@@ -541,7 +541,7 @@ ActeUnSceneUnBisPercus = <<
       sol8\mf  reb'~ reb4~\> reb4:32 reb4\!\laissezVibrer r2 R2.-\fermataMarkup
       sol,8\mp\> reb'~reb4~ reb4:32 reb4\!\laissezVibrer r2 R1-\fermataMarkup 
       R1 R2
-      
+
       %%% Largo %%%
       R2*3 R2. R2 R2. R2 R2.*2
       R1*2 R2. R2 R1
@@ -632,24 +632,24 @@ InterludeUnPercus = \new PianoStaff {
 ActeUnSceneDeuxPercus = <<
   \new Staff \relative {\Marimba \clef bass
     %%% Air de la Soprano2 %%%
-    
+
     R2.*2 R1*2 R2.*2 re,4 la' sold8 mi re4 mi8 re la' sold r mi sold4 |
     mi4 re8 la' sold4 la8 sold mi re r la'|
-    re,8 mi sold4 la re,8 la' | r re, mi sold la4 sold8 re | mi4 sold la8 mi | 
+    re,8 mi sold4 la re,8 la' | r re, mi sold la4 sold8 re | mi4 sold la8 mi |
     r sold la re, mi4\laissezVibrer| R1 | r2 r4 fad | si2\laissezVibrer r4 | R2. |
     re,4 si' sold8 fad re4 | fad8 re si' sold r fad sold4 |
     fad re8 si' sold4 | si8 sold fad re r4 | R1*2 R2.*2 | \clef treble
-    \pl re4\laissezVibrer re'' <la' re> sold8 mi re4 | mi8 re'16 re,, la''8 sold 
+    \pl re4\laissezVibrer re'' <la' re> sold8 mi re4 | mi8 re'16 re,, la''8 sold
     \pl re,,4 {r8 mi''} <sold re'>4 |
     mi8 re'16 re,, re'8 la' \pl {r re,,,} sold''4 | la8 sold mi <re, re'> r4 |
-    \pl sol,\laissezVibrer {fa''8 sol!} <si sol'>4 do8 sol,, fa'' do' | 
+    \pl sol,\laissezVibrer {fa''8 sol!} <si sol'>4 do8 sol,, fa'' do' |
     r <fa, sol'> sol si do16 sol,, sol sol <si'' sol'>8 fa |
     sol sol,, <si'' sol'>4 do8 sol | r si <do sol'> fa, sol sol,, |
-    <do'' sol'>4 si8 sol fa8 sol,,16 re' <do'' sol'>4 | 
+    <do'' sol'>4 si8 sol fa8 sol,,16 re' <do'' sol'>4 |
     si8 sol fa8 sol,,16 re' <do'' sol'>8 do, <si si'> <sol sol'> |
     <fa fa'>4 r2 R2. | R1*2 R2.*2 R1*2 | R2.*2 R1*2 |
     \clef bass dod,4 fad2\laissezVibrer | R2. | sold,1:32\laissezVibrer |
-    
+
     %%% Vibraphone %%%
     R1 R2.*2-\markup "Allez au Vibraphone" \Vibraphone |
     <re'' la'>1\laissezVibrer  r2 r4 <re la'>\laissezVibrer | R2.*2 |
@@ -659,7 +659,7 @@ ActeUnSceneDeuxPercus = <<
     R2. r4 mi2 | <re sold dod>1\laissezVibrer | R1 | R2.*2 |
     <re mi sold>1\laissezVibrer | R1 | R2.*2 R1*2 |
     R2.*2 | R1 r2 <la' la'>2\fermata \laissezVibrer |
-    
+
     %%% Recitativo %%%
     R2.*2 R1 R2.*3 R1 R2.*6 R2 R2. R1*2 R2.*5 R1
     %%% Tempo giusto %%%
@@ -678,17 +678,17 @@ ActeUnSceneDeuxPercus = <<
     R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2
     R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2
     R2.*2 R1*2
-    
+
     %%% Recitativo %%%
     R2.*2 R1 R2.*3 R1 R2.*4 |
     \ind #"Tambour" sn4 sn2:32
     \ind #"sur le bord" ss4 s2 |
     R2 R2. R1*2 R2.*5 R1
-    
+
     %%% Tempo giusto %%%
     R2. R1 R2. R1 R2. R1 R2. R1 R2. R2*2
     R2. R1*2 R2.*2 R1*2 R2.*3 R1
-    
+
     %%% Più vivo %%%
     R2. R1 R2.*2 R1 R2. R1 R2. R1 R2.*14 R1*3
     %%% Tempo giusto %%%
@@ -703,7 +703,7 @@ ActeUnSceneDeuxPercus = <<
     r8 cb r cb |
     r cb r cb \t {cb cb \ind #"étouffer" cb:32} |
     R2.
-    
+
     %%% Largo assai %%%
     R1 R2.*3 R2 R2. R1*4
   }
@@ -714,15 +714,15 @@ ActeUnSceneDeuxPercus = <<
     R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2
     R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2
     R2.*2 R1*2
-    
+
     %%% Recitativo %%%
     R2.*2 R1 R2.*3 R1 R2.*6 |
     R2 R2. R1*2 R2.*5 R1
-    
+
     %%% Tempo giusto %%%
     R2. R1 R2. R1 R2. R1 R2. R1 R2. R2*2
     R2. R1*2 R2.*2 R1*2 R2.*3 R1 |
-    
+
     %%% Più vivo %%%
     sol,4 r2 R1 | sol4 r8 sol r4 | sol4 sol2:32 |
     sol4 r8 sol sol32 sol8.. r4 | dod4 r8 dod \t {dod dod dod} |
@@ -733,7 +733,7 @@ ActeUnSceneDeuxPercus = <<
     re8 re16 re re8 re re re | re4 r2 |
     re4 re re dod r2 | dod4 dod dod |
     fa,1:32~ fa4 r r2 R1 |
-    
+
     %%% Tempo giusto %%%
     R1*5 R2. R1*2 R2. R2*3 R2.*2 R2*6 R2.*2
     %%% Largo assai %%%
@@ -783,7 +783,7 @@ ActeUnSceneTroisPercus = <<
       sn4 sn32 sn8.. r8 \t {sn16 sn sn} |
       sn2.:32~ sn: |
       R2.*6 R1.*6 R1*5/4*5 R1*4 R2.*3 R2*2
-      
+
       R2.*3 sn4:32 r8 sn \t {sn sn sn} |
       sn4:32 r8 sn \t {sn sn sn} |
       sn4 r8 sn \t {sn sn sn} |
@@ -926,9 +926,9 @@ ActeUnSceneTroisTerPercus = <<
       r8 <dod re'> r <red mi'> \clef treble
       \tt {r16 <sold sol'!> la sold' re} |
       \pl re,4 re'' r2 |
-      
+
       %%% Poco meno %%%
-      
+
       R2.*17 \clef bass
       fa,,,2.:32~fa4 r2 | R2.
       fa2.:~ fa4 r2 | R2.
@@ -980,7 +980,7 @@ InterludeTroisPercus = { \Timbales
     mi16 mi <mi mi'> mi <mi mi'> mi <mi mi'> mi |
     mi2:32~ mi:~ mi2: mi'4 r |
   }
-}    
+}
 
 ActeUnSceneQuatrePercus = <<
   \new Staff { \Vibraphone
@@ -1001,17 +1001,17 @@ ActeUnSceneQuatrePercus = <<
       R1*4 R2. R1 R2.
       R1 R2. R1 R2. R1*2
       R2.*3 R1*2
-      
+
       R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
       R1*12 R2 R2.*2 R2 R1
-      
+
       %%% Piu lento %%%
       re4 \laissezVibrer <sib' dob sib'>2 <sib dob sib'>
       <sib dob sib'>4\laissezVibrer R2.
       re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
       re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
       re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-      re,4\laissezVibrer <sib' do! sib'>2 <sib do sib'> 
+      re,4\laissezVibrer <sib' do! sib'>2 <sib do sib'>
       <sib dob sib'>4\laissezVibrer R2.
       re,4\laissezVibrer <sib' do sib'>2 <sib re sib'> <sib re sib'>4 |
       re,4\laissezVibrer <sib' re sib'>2
@@ -1019,7 +1019,7 @@ ActeUnSceneQuatrePercus = <<
       r <sib mib sib'>2 |
       re,4\laissezVibrer <sib' mi! sib'>2\laissezVibrer | R2.*2
       R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
-      
+
     }
   }
   \new DrumStaff { \Percus
@@ -1038,7 +1038,7 @@ ActeUnSceneQuatrePercus = <<
       R2.*3 R1*2
       R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
       R1*12 hh4:32 r4 | R2. r4 hh4:32 r4 | R2 r2 hh4:32 hh8 r |
-      
+
       %%% Piu lento %%%
       R2.*21
       R1. r2 hh4:32 r4 | R1. r4 hh2:32 hh4 | R1.
@@ -1063,7 +1063,7 @@ ActeUnSceneQuatrePercus = <<
       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
       R2-\fermataMarkup
       R1 R2. R1*2 R1. R1*2 R1. R1*2
-      
+
       %%% Agitato %%%
       R2.*8
       re,4 r re4:32 re4 r2 |
@@ -1080,12 +1080,12 @@ ActeUnSceneQuatrePercus = <<
       r8 sol4 dod sol8 | dod8 \t {dod16 dod dod} dod4 |
       r8 sol4 dod sol8 | \tt {dod16 dod dod dod dod} dod4 |
       r8 dod r2 | r8 dod4 sol8 | dod \t {dod16 dod dod} dod4 r |
-      
+
       %%% Placando assai %%%
       dod2 r4 dod | sol2:32~ sol4 r |
       dod2 r4 dod | sol2:32~ sol4 r |
       R1 R2 R2. R1
-      
+
       %%% Andante a piacere %%%
       fa1:32~ fa2 dod' |
       fa,1:32~fa2 dod' |
@@ -1096,13 +1096,13 @@ ActeUnSceneQuatrePercus = <<
       sol1:32~sol:~sol2.:32~sol4 |
       r8 sol \t {sol sol sol} sol2:32~sol1:32~sol2 r |
       R2*3 R2.*6
-      
+
       %%% A tempo %%%
       r16 do32 do do8 r8 fad,4 do' fad,8 |
       r16 do'32 do do8 r4 \tt {r16 do do fad, do'} \t {fad,8 do' fad,} |
       do'8 \t {do16 do do} do4 r2 |
       R1 R2. R1 R2. R1 R2. R1
-      
+
       r2 fad,4:32\glissando sol4 r r2 |
       sol32 sol8.. r4 r8 \t {dod16 dod dod} dod4 |
       \t {sol16 sol sol} sol8\laissezVibrer r2 |
@@ -1116,7 +1116,7 @@ ActeUnSceneQuatrePercus = <<
       la8 la32 la16. r4 | R2
       mib'4 mib r4 r8 |
       si4 r R2 |
-      r8 r16 fa32 fa fa4 | R4. 
+      r8 r16 fa32 fa fa4 | R4.
       fa4 fa8 fa \t {fa fa fa} \tt {fa16 fa fa fa fa} |
       R2 R4.
       re'2.:32 re4 r8 r16 re32 re re4 r |
@@ -1137,7 +1137,7 @@ EntractePercus = {
 }
 
 ActeDeuxSceneUnPercus = <<
-  \new Staff \relative {\Vibraphone 
+  \new Staff \relative {\Vibraphone
     R2.*4 R2 R2.*2 R2
     mi,8\sustainOn do' sol' mib' lab si\laissezVibrer R2.*2
     \sustainOff R2 R2. R2 R2.*2 R2
@@ -1147,18 +1147,18 @@ ActeDeuxSceneUnPercus = <<
     \t {mi,8 <re' la'> mi} \t {<re' la'> mi, <re la'>}
     \t {mi, <re' la'> mi} <re'la'>2*3/2\laissezVibrer R2 \sustainOff
     R2.*2 R1 R2. R1 R2. R2 R2. R1
-    
+
     %%% Andantino %%%
-    
+
     %%FIXME: complete. As soon as I have *nothing* else to do.
   }
   \new PianoStaff {\PercuDeuxMains
-    \relative {\GrandMarimba 
+    \relative {\GrandMarimba
       R2.*4 R2 R2.*2 R2 R2.*3 R2 |
       R2. R2 R2.*2 R2 R2.*3 R2 |
       R2. R2 R2.*2 R2 R2.*3 R2 |
       R2.*2 R1 R2. R1 R2. R2 R2. R1
-      
+
       %%% Andantino %%%
       r4<re mi> r <re mi> |
       r <re mi> r <re mi> |
@@ -1211,7 +1211,7 @@ ActeDeuxSceneUnPercus = <<
       R2. R2 R2.*2 R2 R2.*3 R2 |
       R2. R2 R2.*2 R2 R2.*3 R2 |
       R2.*2 R1 R2. R1 R2. R2 R2. R1
-      
+
       %%% Andantino %%%
       sib,2*2\laissezVibrer R1
       r4 sib r | mi,2*3/2\laissezVibrer R2.*2 R2
@@ -1232,7 +1232,7 @@ ActeDeuxSceneUnPercus = <<
       <sold la> mi <sold la> si, |
       fad <sold'la> r |
       <sold la> r <sold la> r |
-      do,8 la' \droite <re sol> \gauche 
+      do,8 la' \droite <re sol> \gauche
       do, la' \droite <re sol> | <fad do'> <re sol> \gauche
       do, la' \droite <re sol> \gauche
       do, la' \droite <do re> \gauche |
@@ -1276,7 +1276,7 @@ ActeDeuxSceneUnBisPercus = <<
       R2-\markup "Allez au Vibraphone" \Vibraphone
       <mi sol>1*5/4\laissezVibrer R1*5/4*43 R1*5/4-\fermataMarkup
       R1*5/4*32
-      
+
       %%% Moderato assai %%%
       \ind #"bag. douces"
       <do si'>1*7/4\laissezVibrer s1*7/4
@@ -1288,7 +1288,7 @@ ActeDeuxSceneUnBisPercus = <<
       <sib dod'>2. | <la re'>1*7/4\laissezVibrer R1*7/4*2
       R2.*7 R1*7/4*4 \repeat volta 2 R1*7/4*3
       R1*7/4*2-\markup "Allez au Marimba" \Marimba \clef bass |
-      
+
       %%% Presto subito %%%
       \tt {fa,8 mib' solb do, mib} \tt {fa, mib' solb do, mib}
       \tt {lab, mib' solb do, mib} | \tt {fa, mib' solb do, mib}
@@ -1298,11 +1298,11 @@ ActeDeuxSceneUnBisPercus = <<
       \tt {red, mi' sol dod, mi} \tt {fad, mi' sol sib, sol'} \clef treble |
       \tt {mi re' fa sol, lab'} \tt {mi, fa' lab mi, fa'} \clef bass
       \tt {fad,, mi' sol red, mi'} |
-      
+
       %%% Tempo giusto %%%
       \pl \parenthesize re,,4 fa r2 R2.*6 R2*2 R2.*4 R2 R4.
       R2*3 R4. R2. R2 R4. R2. R1*5/8 R2 R4. R2.*15 R2 R4. R2 R1*5/8 R2.
-      
+
       %%% Tempo I %%%
       R1 R1*5/4*3 R1*5/4-\fermataMarkup
       R1*5/4-\markup "Allez au Vibraphone" \Vibraphone
@@ -1351,7 +1351,7 @@ ActeDeuxSceneUnBisPercus = <<
       hh4 r8 sn16 sn hh4 r r8 sn16 sn |
       hh sn sn sn sn sn sn sn sn sn hh sn sn sn sn sn sn sn sn sn |
       hh4 r1 | R1*5/4
-      
+
       %%% Boum %%%
       \ind #"Tam-Tam" cb2\laissezVibrer r2 r4 | R1*5/4-\fermataMarkup |
       R1*5/4*13 \ind #"Tam-Tam" cb4\laissezVibrer r1 R1*5/4 |
@@ -1364,15 +1364,15 @@ ActeDeuxSceneUnBisPercus = <<
       cb4\laissezVibrer r1 | r4 cb cb cb cb |
       cb8 cb cb cb cb cb cb cb \t {cb cb cb} |
       cb4\laissezVibrer r1 | R1*5/4*5
-      
+
       %%% Moderato assai %%%
       R1*7/4*7 R2. R1 R2. R2
       R2.*9 R1*7/4*3 R2.*7 R1*7/4*4
       \repeat volta 2 R1*7/4*3 R1*7/4*2
-      
+
       %%% Presto subito %%%
       R1.*5
-      
+
       %%% Tempo giusto %%%
       R2.*7 R2*2 R2.*4 R2 R4. R2*2
       r4 \ind #"Cymb." hh4:32~ hh4.:32~ hh4 r2 |
@@ -1383,7 +1383,7 @@ ActeDeuxSceneUnBisPercus = <<
       r4 hh4:32~ hh4 | r hh4:32~ hh4 R2.
       r8 hh32 hh hh hh hh2 R2.-\markup \indic "étouffer"
       R2 R4. R2 R1*5/8 R2.
-      
+
       %%% Tempo I %%%
       r2 r4 \ind #"Tambour" sn16 sn sn sn |
       hh4 r r8 sn16 sn hh4 r8 sn16 sn |
@@ -1395,18 +1395,18 @@ ActeDeuxSceneUnBisPercus = <<
   \new Staff { \Timbales
     \relative {
       R1 R2. R2 R1*5/4*44 R1*5/4-\fermataMarkup
-      
+
       %%% Boum %%%
       R1*5/4*32
-      
+
       %%% Moderato assai %%%
       R1*7/4*7 R2. R1 R2. R2
       R2.*9 R1*7/4*3 R2.*7 R1*7/4*4
       \repeat volta 2 R1*7/4*3 R1*7/4*2
-      
+
       %%% Presto subito %%%
       R1.*5
-      
+
       %%% Tempo giusto %%%
       R2.*7 R2*2 R2.*4 R2 R4. R2 r4 r8 \t {mib,16 mib mib} |
       mib4 r R4. r2 r8 \t {mib16 mib mib} |
@@ -1420,7 +1420,7 @@ ActeDeuxSceneUnBisPercus = <<
       sol4 r r8 \t {sol16 sol sol} |
       sol4 r2 r4 sol2:32\glissando sold2.\laissezVibrer
       R2. R2 R4. R2 R1*5/8 R2.
-      
+
       %%% Tempo I %%%
       R1 R1*5/4*3 R1*5/4-\fermataMarkup |
       R1*5/4*21
@@ -1438,13 +1438,13 @@ ActeDeuxSceneDeuxPercus = <<
       la r r1 | R1.-\markup "Allez au Vibraphone" \Vibraphone
       R1*2 R2.*5 R1.*3 R1*2
       R2. R1 R4. R1*6 R2. R1. R1
-      r2 r4 \pl {la fa'\laissezVibrer} {do\glissando do'\laissezVibrer} 
+      r2 r4 \pl {la fa'\laissezVibrer} {do\glissando do'\laissezVibrer}
       \ind #"senza Ped." r2 |
       do4 r \pl {la, fa'\laissezVibrer} {do\glissando do'\laissezVibrer} r2 |
       re,4 do' | r si r | mi,,,\laissezVibrer mi'\laissezVibrer mi'\laissezVibrer |
       r2 r8 \hideNote sol8\glissando do4*1/2 \hideNote mi,8\glissando la4 | R4.
-      R1*5 R2*6 R1 R2. R1. R1 R1.*2 R2. R1 
-      
+      R1*5 R2*6 R1 R2. R1. R1 R1.*2 R2. R1
+
       la,2.\laissezVibrer \sustainOn r8 sol4.\laissezVibrer r2 |
       fa2.\laissezVibrer r8 mi4.\laissezVibrer r2 | fa4 mi fa |
       sol la2.\laissezVibrer R2.
@@ -1455,7 +1455,7 @@ ActeDeuxSceneDeuxPercus = <<
       R1*5/8*14 R1*9 R2. R2 R1*2
       la'4 sol fa mi2 r4 |
       <solb, la! fa' lab>2.\laissezVibrer R2.*4
-      
+
       R2*2 R2.*2 R2*25
       <la' la'>2.\laissezVibrer \sustainOn R2.*6
       \pl {<fa do'>4 do' fa, <fa do'>2*3/2}
@@ -1474,10 +1474,10 @@ ActeDeuxSceneDeuxPercus = <<
       R2.*3 R2 R2.*3 R2 R4. R1*5 R2*6 R1
       r4 \ind #"Crécelle" hh2:32 R1. R1 R1.*2 R2.
       r2 hh4:32 hh4 |
-      
+
       R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
       R2. R1 R2. R1 R2. R1 R2.
-      
+
       R2*2 R2 R2. R1*3
       r4 \ind #"Tambour" \ind #"(bag. fagot)"  sn8 sn sn sn4 r8 sn sn |
       sn4 sn8 sn sn sn4 r8 sn sn | sn4 sn8 sn16 sn sn sn |
@@ -1486,7 +1486,7 @@ ActeDeuxSceneDeuxPercus = <<
       sn sn sn4 r8 | r sn sn sn sn | sn4 r r8 |
       R1 r2 r4 r8 \t {sn16 sn sn} | sn4 r r2 |
       R1*6 R2. R2 R1*2 R2.*7
-      
+
       R2*2 R2.*2 R2*25 R2.*16
     }
   }
@@ -1504,8 +1504,8 @@ ActeDeuxSceneDeuxPercus = <<
       si4 r8 si r si r4 | si32 si8.. r8 si r si r r16 si32 si |
       si4 r8 si r si r4 | si r8 si r si r4 |
       sold2.:32~ sold4 r r1 |
-      R1*2 R2.*3 R2 R2.*3 R2 R4. 
-      
+      R1*2 R2.*3 R2 R2.*3 R2 R4.
+
       mi4 r r mi'8 mi16. mi,32 |
       mi4 r r mi'16. mi32 mi8 |
       mi,4 r8 mi r mi mi' mi16. mi,32 |
@@ -1518,8 +1518,8 @@ ActeDeuxSceneDeuxPercus = <<
       mi,8 mi'16. mi32 mi4 |
       r4 re | dod1:32~ dod4 r2 |
       dod4 r r2 r4 dod | sol1:32 | dod4 r r2 r4 dod |
-      sol1.:32~ sol4 r2 | R1 
-      
+      sol1.:32~ sol4 r2 | R1
+
       R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
       R2. R1 R2. R1 R2. R1 r2 r8 r16 \t {la32 la la} |
       la4 r r r8 \t {la16 la la} la4 r r2 r8 \t {la16 la la} |
@@ -1529,7 +1529,7 @@ ActeDeuxSceneDeuxPercus = <<
       mi2:32~ mi8 mi \t {mi mi mi} |
       mi2:32~ mi8 mi \t {mi mi mi} |
       mi4 r2 | R2 R1*2 R2.*7
-      
+
       R2*2 R2.*2 R2*25 R2.*16
     }
   }

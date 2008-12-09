@@ -1,11 +1,27 @@
 %------------------------------------------------------------------%
-% Opéra Libre -- layout.ly                                         %
+% Opéra Libre -- settings.ly                                       %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
 %------------------------------------------------------------------%
 
 %% Depends on: functions.ly
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Output options %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+#(ly:set-option 'point-and-click #f)
+#(ly:set-option 'delete-intermediate-files #t)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Paper size -----------------------------------------------------%
+% #(set-default-paper-size "a4" 'landscape)
+
+%% Page breaking --------------------------------------------------%
+#(define page-breaking ly:minimal-breaking)
+
+%% Staff size -----------------------------------------------------%
+#(set-global-staff-size 14)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -106,6 +122,8 @@ includeLayout = \layout {
   }
 
 %% Vocal score layout  --------------------------------------------%
+
+  %FIXME: put in a separate variable
   \context {
     \Staff
     \type "Engraver_group"
@@ -133,7 +151,6 @@ includeLayout = \layout {
   }
   \context { \PianoStaff
     \accepts "StaffUp"
-    \accepts "Dynamics"
     \accepts "StaffDown"
     \accepts "StaffPiano"
     connectArpeggios = ##t % to avoid collisions with pianoDynamics
@@ -142,6 +159,102 @@ includeLayout = \layout {
     \Score
     \override RehearsalMark #'font-size = #4
     %\override TimeSignature #'X-extent = #'(0 . 2)
+  }
+
+
+%% Individual parts layout ----------------------------------------%
+
+  %FIXME: put in a separate variable
+  \context {
+    \Voice
+    \type "Engraver_group"
+    \name "GhostVoice"
+    \remove Multi_measure_rest_engraver
+    \remove Rest_engraver
+  }
+  \context {
+    \Score
+    \remove Mark_engraver
+    \accepts GhostVoice
+  }
+%%-----------------------------------------------------------------%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Parts Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+includePartsLayout = \layout {
+%% Spacing Variables ----------------------------------------------%
+  indent = 2.0\cm
+  \context { \Staff
+    \consists "Hara_kiri_engraver"
+    \override Beam #'auto-knee-gap = #'()
+    \override VerticalAxisGroup #'remove-empty = ##t
+  }
+  \context { \RhythmicStaff
+    \override VerticalAxisGroup #'remove-empty = ##t
+    \consists "Hara_kiri_engraver"
+  }
+  \context { \DrumStaff
+    \override VerticalAxisGroup #'remove-empty = ##t
+    \consists "Hara_kiri_engraver"
+    \override StaffSymbol #'line-count = #1
+  }
+  \context { \Score
+    skipBars = ##t
+  }
+
+%% Notation Rules -------------------------------------------------%
+  \context {
+    \Score
+    \override TimeSignature #'style = #'()
+    \override SystemStartBracket #'collapse-height = #1
+    %\override SystemStartBrace #'collapse-height = #1
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoBeamSettings = #modern-auto-beam-settings
+    autoAccidentals = #modern-accidentals-style
+    autoCautionaries = #modern-cautionaries-style
+    extraNatural = ##f
+    ignoreMelismata = ##t
+    tieWaitForNote = ##f %% uglier, but safer
+  }
+  \context {
+    \Score
+    \override TextScript    #'outside-staff-priority = #900
+    \override TextSpanner   #'outside-staff-priority = #1000
+  }
+
+%% Look and feel --------------------------------------------------%
+  \context {
+    \Score
+    \override Accidental #'minimum-X-extent = #'(-0.2 . 0 )
+    \override BarLine #'hair-thickness = #1.2
+    \override OttavaBracket #'dash-fraction = #0.3
+    \override OttavaBracket #'dash-period = #0.9
+    \override TextSpanner #'dash-fraction = #0.3
+    \override TextSpanner #'dash-period = #0.9
+    \override LyricText #'self-alignment-X = #-0.5
+    \override DynamicText #'self-alignment-X = #-.4
+    markFormatter = #format-mark-box-letters
+    subdivideBeams = ##t
+    beatLength = #(ly:make-moment 1 8)
+  }
+  \context { \PianoStaff
+    connectArpeggios = ##t % to avoid collisions with pianoDynamics
+  }
+
+%% Individual parts layout ----------------------------------------%
+  \context {
+    \Voice
+    \type "Engraver_group"
+    \name "GhostVoice"
+    \remove Multi_measure_rest_engraver
+    \remove Rest_engraver
+  }
+  \context {
+    \Score
+    \remove Mark_engraver
+    \accepts GhostVoice
   }
 %%-----------------------------------------------------------------%
 }

@@ -5,34 +5,8 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-%%% This is the main file for the full (orchestral) score.
 
-\version "2.12"
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% Inclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\include "italiano.ly"
-
-
-\include "./definitions/functions.ly"
-\include "./definitions/text-functions.ly"
-\include "./definitions/graphics.ly"
-\include "./texte/decoupage.ly"
-
-\include "./definitions/paper.ly"
-\include "./definitions/layout.ly"
-
-\include "./texte/didascalies.ly"
-\include "./definitions/mesures.ly"
-
-\include "./texte/texte.ly"
-
-\include "./voix/soprano1.ly"
-\include "./voix/soprano2.ly"
-\include "./voix/contralto.ly"
-\include "./voix/tenor.ly"
-\include "./voix/baryton1.ly"
-\include "./voix/baryton2.ly"
+%%%%%%%%%%%%%%%%%%%%%% Additional Inclusions %%%%%%%%%%%%%%%%%%%%%%%
 
 \include "./instruments/flute1.ly"
 \include "./instruments/flute2.ly"
@@ -50,12 +24,6 @@
 \include "./instruments/violoncelle2.ly"
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
-
-%%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
-
-\layout {
-  \includeLayout
-}
 
 #(set-global-staff-size 12)
 
@@ -998,130 +966,4 @@ ActeDeuxSceneDeux = {
   >>
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
-%showFirstLength = s1*40
-\book {
-  \header {
-    title = \OperaTitre
-    subtitle = \OperaSousTitre
-    libretto = \OperaLivret
-    composer = \OperaPartition
-    tagline = \OperaNotice
-    illustration = \Couronne
-    scoretype = \VocalScore
-    copyright = \Copyright
-  }
-  \pageBreak
-  %{
-  \markup \null
-  \pageBreak
-  \markuplines \table-of-contents
-  \markup \FunnyFooter
-  \pageBreak
-  \markup \BigNotice
-  \pageBreak
-  %
-  \score {
-    \Prologue
-    \header {
-      piece = \PrologueTitre
-    }
-  } %
-  \score {
-    \Ouverture
-    \header {
-      piece = \OuvertureTitre
-    }
-  } %
-  \score {
-    \ActeUnSceneUn
-    \header {
-      piece = \ActeUnSceneUnTitre
-    }
-  } %
-  \score {
-    \ActeUnSceneUnBis
-    \header {
-      piece = \Separateur
-    }
-  } %
-  \score {
-    \InterludeUn
-    \header {
-      piece = \Interlude
-    }
-  } %
-  \score {
-    \ActeUnSceneDeux
-    \header {
-      piece = \ActeUnSceneDeuxTitre
-    }
-  } %
-  \score {
-    \InterludeDeux
-    \header {
-      piece = \Interlude
-    }
-  } %
-  \score {
-    \ActeUnSceneTrois
-    \header {
-      piece = \ActeUnSceneTroisTitre
-    }
-  } %
-  \score {
-    \ActeUnSceneTroisBis
-    \header {
-      piece = \Separateur
-    }
-  } %
-  \score {
-    \ActeUnSceneTroisTer
-    \header {
-      piece = \Separateur
-    }
-  } %
-  \score {
-    \InterludeTrois
-    \header {
-      piece = \Interlude
-    }
-  } %
-  \score {
-    \ActeUnSceneQuatre
-    \header {
-      piece = \ActeUnSceneQuatreTitre
-    }
-  } %
-  \score {
-    \Entracte
-    \header {
-      piece = \EntracteTitre
-    }
-  } %
-  \score {
-    \ActeDeuxSceneUn
-    \header {
-      piece = \ActeDeuxSceneUnTitre
-    }
-  } %
-  \score {
-    \ActeDeuxSceneUnBis
-    \header {
-      piece = \Separateur
-    }
-  } %
-  \score {
-    \ActeDeuxSceneDeux
-    \header {
-      piece = \ActeDeuxSceneDeuxTitre
-    }
-  } %
-  \score {
-    \ActeDeuxSceneTrois
-    \header {
-      piece = \ActeDeuxSceneTroisTitre
-    }
-  } %
-%}
-}
+%%-----------------------------------------------------------------%
