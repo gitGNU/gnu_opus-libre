@@ -23,7 +23,7 @@ ClarinetteBasse = {
 
 PrologueClarinetteUn = { \ClarinetteUn
   \relative {
-    
+
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1 | \ten mi,2~--\fp mi4 r | mi'2 r4 |
     fa,2~\p\<( fa\> mi2.~\!) \ten mi4 r R2 | \tt {sol16\mf( lab dob sib dob} \ten re2~)|
@@ -32,7 +32,7 @@ PrologueClarinetteUn = { \ClarinetteUn
     la2--->\f) r4 | r mi r sib'\p( | solb'2) r4 | R2 r2 mi,8-> mi~->|
     mi2\> | \ten mi2.~\p mi2~ mi4 r \t {sib4--\mp la8~--} | \t {la8 sol4--} mi4~-- |
     mi2~ mi4 r2 |
-    
+
     %%% Tempo giusto %%%
     re8->\f r r4 | R2*2
     mib4\mp( fa lab sib dob sib8) r |
@@ -42,13 +42,13 @@ PrologueClarinetteUn = { \ClarinetteUn
     r la( do mib fa solb) | r mi( sol la do mib |
     fa4\< lab si | re4\f) r8 dod4.~-- dod4 r8 si4.-- |
     la2.---> r4 | R2*2 R2-\fermataMarkup
-    
+
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
     R2*4 R2. lab,,2.\p( sol2 fa4 |
     \ten re2.~) re2. R2.*3
     lab''4---.\pp sol,---. r | lab'---. lab'---. sol,---. r si---. si'---. | R4.
-    
+
     %%% Andantino %%%
     R4.*2 r8 lab---.\pp r sib---. r si---. R4.*5
     mib8-.\p reb-. sib-. | fab-. r4 | R4.*3
@@ -61,7 +61,7 @@ PrologueClarinetteUn = { \ClarinetteUn
     mi4.~\p) mi8 r mib,( solb lab la sold la si |
     re4.~\p) re8 r sol,( lab sib reb mib mi fad |
     la4.~\p) la8 r si,( | dod mi fad la\< do dod |
-    
+
     %%% A tempo %%%
     re8\sfz) r4 |
     \t {fad,,,16\mp\<( si mi} \t {lab sib mib} \t {fa sol do} |
@@ -82,13 +82,13 @@ PrologueClarinetteUn = { \ClarinetteUn
     R4.*6 r4 re,8\p( |
     mi fa sol sib\< do reb mib mi) |
     la'2\f( fad4) re\>( si lab solb\pp) r2 |
-    
+
     %%% Adagio %%%
     R1*3 r2 r4 mi,\p( lab2\< sol4 si2\mp\> sib4 |
     re2.\pp) r4 r2 | R1*2 r2 r4 mi,\p( |
     la2\< sol4 do2\mp\> sib4 | mib2.\pp) r4 r2 |
     R1*2 \t {mi,8\mp\<( si' mi} si' la\mf\> mi' re |
-    
+
     %%% Valse %%%
     la'2\p) r4 r sib2--\pp | r4 mi,2-- |
     r4 sib--( sib--) r lab--( lab--) | r sib--( la--) |
@@ -99,7 +99,7 @@ PrologueClarinetteUn = { \ClarinetteUn
     r reb--( reb--) r sib-- r la-- |
     r4 fad'8-.\f re'4-> fad,8-. re'4-> |
     la'4.-> re,8-. la'4-> |
-    
+
     %%% Vivo al fine %%%
     re,4--->\sfz r R2*3 r4 r8 sol,,-.->\mp la-> r r4 |
     r8 do->\mf\< do-> fa-> sol->\! r r4 | R2*22
@@ -119,9 +119,9 @@ OuvertureClarinetteUn = { \ClarinetteUn
 ActeUnSceneUnClarinetteUn = { \ClarinetteUn
   \relative {
     R2*2 R2. R2*2 R2. |
-    r8 do\p \t {do-- do do~} do2~ do r4 | 
+    r8 do\p \t {do-- do do~} do2~ do r4 |
     r8 do \t {do-- do do~} do2~ do r4 |
-    \t { fa,4\p( solb sib} do2~) do8 r r2 | 
+    \t { fa,4\p( solb sib} do2~) do8 r r2 |
     \t {solb4( sib do} mib2~) mib8 r r2 |
     \t {la,8\p( mib' si')} \t {solb'( si, mib,)} \t {la,4( mib'8} si'8) r |
     \t {la,8( mib' si')} \t {solb'( si, mib,)} la,8 r |
@@ -139,10 +139,10 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     \t {mib re mib} sib'32 dob sib dob
     \ttt {sib16\< dob sib dob sib dob)} |
     \ten sol'1~\f sol2 r4 |
-    
+
     %%% Ad libitum %%%
     R1 R2.*2 sib,,2.--\pp r4 | R2.*2
-    
+
     %%% Agitato %%%
     \ten lab1~\f lab2 r | R1*2
     fa'4-.\mf sol2-- fa4-. sib2->( re,4) r |
@@ -150,7 +150,7 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     R1*2 r2 r4 r8 fad-. | si8.( solb'16\<) sib2.->\! r2 |
     R1*2 \ten mib,,,1\mp r2 | R1.*2 r4 mi'!2--\mf r4 | r mi2-- r4 r2 |
     sol'1.\f\>( fa1\pp) r2 | R1.
-    
+
     %%% Allegro non troppo %%%
     R1 R2. R1*3
     mib4-.\mp r r2 | r8 mib-. r mib-. r2 |
@@ -159,7 +159,7 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     R2. r8 mi-.\mf r mi-. r2 |
     sib2--\f r4 | sol2.\mf r4 | R1*2
     la2.--\mp r4 | R1 la2-- r4 | R2.*2 R1*8
-    
+
     %%% Moderato %%%
     R2.*2 R1 R2. R1 R2. R1
     \ten do,2.~\pp do2 r | \ten do2.~ do2 r |
@@ -168,7 +168,7 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     la'16\mp( fa) reb-. fa,~-- fa8 la'16( fa) reb-. fa,8-- mi'16-. |
     fad\<( sold) la( sold) la8\!( mib) | do-> r r2 | R1
     R2*3 r4 r8 \st {mib |
-    
+
     %%% Allegro marcato %%%
     sol-- r reb-- r sol,-- r mib'-- r sol-- r reb-- r sol,--} r r4 |
     R1*2 r2 \ttt {r16 sib,\pp\<( mib fad si re} \tt {sol) mib( mi fa fad} |
@@ -178,7 +178,7 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     solb2--( mib8) r r4 | R1 r2 r4 \st {re'8\pp( r do r la r sol) r fa' r |
     mib\p( r re r do) r fa r | mib\mp( r re r do) r r4 |
     mib8\p( r re r do) r r4 | r do,8\pp( r si r la)} r |
-    
+
     %%% Agitato %%%
     re2.\mf r4 | r re-- r re-- | r2 r4 \t {sold'8\mf\<( si dod)} |
     re4---.\f do,2---> r4 | re4-.->\p r r8 \st {sol, r4 | sol8 r r4 r2 | R1
@@ -200,7 +200,7 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     fa8 r \ttt {fa'16 mi re si re mi} fa8 r |
     \ttt {re16 dod re mi fa sol} lab8 r \ttt {re,16 dod re mi sol la} |
     sib8 r \ttt {re16 do la sol fad mi} \ttt {dod si lad sold fa mib} |
-    
+
     %%% Piu vivo %%%
     re4 r r2 | fad2. |
     re4 r r2 | sib'4. lab4. |
@@ -209,18 +209,18 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     \t {sol16 lab sib } reb8~reb2~ reb2.~reb4. r8\fermata r4 |
     \t {sol,16 lab sib} reb8~reb2~ reb2.~reb2~reb8 r\fermata r4 |
     R1 R2
-    
+
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
     r2 r4 solb, | reb2 r4 solb | reb2 r4
     lab'2~lab r |
-    R2.*2 R2*2 
+    R2.*2 R2*2
     r2 r8 solb | reb4 r8 solb | reb2 |
     \t {sol!16 lab sib} reb8 r4 | r8
     \t {la16 sib do} mib8 r r4 |
     r2 r8 \t {lad,16 si dod} mi8 si' |
     R2. R2*3 R2.*3
-    
+
     %%% Adagio %%%
     R1*2
     do,2~do4. sold8~|
@@ -228,7 +228,7 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     do2~do8 sold4.~|
     sold4 r sol2~ |
     sol4. dod8~dod2|
-    r4 sol2. | sol8 dod~dod2 r4 |
+    r4 sol2.~ | sol8 dod~dod2 r4 |
     sol1~sol2 r4 sib~ |
     sib2~sib8 sol4.~|
     sol4 r sib2~sib4. sol8~sol2 |
@@ -238,7 +238,7 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     r2 r4 r8 la'' |
     r la sol si r si sol la |
     r la sol si r si sol la |
-    r la sol si sol2~sol4. r8 
+    r la sol si sol2~sol4. r8
     fa4 fa8 la | sol4 r r2 |
     r4 fa fa sol |
     R1*2 R1-\fermataMarkup |
@@ -257,7 +257,7 @@ InterludeUnClarinetteUn = { \ClarinetteBasse
     sold4( mi8) r sold4( mi~) mi r r2 |
     sold4\mp( mi8) r sold4( mi8) r sold4( mi8) r |
     sold4( mi8) r sold4( mi8) r sold4( mi8) r |
-    sold4( mi8) r sold4( mi8) r | sold2-- r4 | 
+    sold4( mi8) r sold4( mi8) r | sold2-- r4 |
     R2-\markup "Prenez la Clarinette" R2. \ClarinetteUn
     sib'1~\mf sib2 r8 fa4-- re8( |
     sib'1) r2 | la,4-- r8 mi16\mf( fa mi\> re si8\!) r4 |
@@ -290,17 +290,17 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     sold2 r4 sold8 la | sold mi re mi sold4~| sold2 r4 |
     r4 re'8 mib re sib lab sib | re2. r4 | r lab2 |
     r4 lab8 sib re mib | re2. r4 |
-    r2 r4 si!8 dod | mid fad mid2~| mid2 r4 | 
+    r2 r4 si!8 dod | mid fad mid2~| mid2 r4 |
     si8 dod mid fad mid2~| mid4 r do!2\fermata |
-    
+
     %%% Récitatif %%%
-    
-    R2.*2 R1 R2.*3 R1 R2.*4 
+
+    R2.*2 R1 R2.*3 R1 R2.*4
     \repeat tremolo 12 {mib32 mi!} | mib8 r r2 R2 R2. R1*2 R2.*4
-    \repeat unfold 7 {r8 re,,} | 
-    
+    \repeat unfold 7 {r8 re,,} |
+
     %%% Duo %%%
-    
+
     \repeat unfold 18 sib'8 r
     \repeat unfold 13 sib r sib
     \repeat unfold 14 do
@@ -313,11 +313,11 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     \repeat unfold 3  si
     \repeat unfold 2  mi
     \repeat unfold 2  {sold sold lad lad} sold sold lad r
-    \repeat unfold 2  {red red mi mi} sol!2.~ sol~sol4 r2 | 
+    \repeat unfold 2  {red red mi mi} sol!2.~ sol~sol4 r2 |
     r4 \t {mi8 red dod} r la,4. |
-    
+
     %%% Piu vivo %%%
-    
+
     sol'4 r2 | R1 R2.*2 R1
     r16 re're re sol4 fa | lab8 re,~ re4 r2 |
     r16 re re re sol4 fa | lab8 re,~ re4 r2 |
@@ -327,7 +327,7 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     R2.*2 r16 mi,32 re mi8 r2 |
     R2.*2 r4 r16 re32 mi r8 r4|
     r r8 sol r4 |
-    
+
     %%% Poco allargando %%%
     \t {re,re re}
     \t {re re re}
@@ -352,10 +352,10 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     r  mi la mi
     r  la re la
     r  mi mi'la, r mi | mi' r r2 |
-    
+
     %%% Largo assai %%%
     r4 re,2. dod4. r8 dod4 do4. r8 do4 si4. r8 r4 | r si |
-    
+
     %%TODO: trouver doigté alternatif pour cette note
     sib2.~ | sib2. r4 | r2 la4 lab sol r dod, r re r r2 |
   }
@@ -389,7 +389,7 @@ ActeUnSceneTroisClarinetteUn = { \ClarinetteUn
     R2.*4 do'8 la4 do8 la4 r r8 la4 solb8 mib2.~ mib8 r r2 |
     R2.*8 r2 \t {la'8 la la} re4 do re8 la~ la4 r2 |
     R2.*5
-    
+
     %%% Lamento %%%
     R1.*6 R1*5/4
     sol,2 mi4 r2 |
@@ -402,7 +402,7 @@ ActeUnSceneTroisClarinetteUn = { \ClarinetteUn
     sol2 re'!4 r|
     mib2 mib4~ mib8 do,~ do sib'4. la' r8 r4 |
     R2*2
-    
+
     %%% Tempo I %%%
     R2.*8 sib,,2. re do8 r r2 |
     R2.*3
@@ -417,9 +417,9 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
     fad4 red8 r fad4 red8 r |
     fad4 red8 r fad4 red8 r |
     fad4 red8 r fad4 red8 r | R1 r2
-    fad4 red8 r 
+    fad4 red8 r
     fad4 red8 r fad4 red8 r | R1 r2
-    fad4 red8 r fad4 red8 r 
+    fad4 red8 r fad4 red8 r
     r2 | R1*11 r2 r4
     lad16 dod8 lad16 |
     \tt {fa    lab sib reb mi} sol8 r
@@ -463,14 +463,14 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
     r2 sol' do1\fermata
   }
 }
-    
+
 
 ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
   \relative {
-    r4 r16 lab' lab lab | reb2 | 
+    r4 r16 lab' lab lab | reb2 |
     r4 r16 lab lab lab |
     reb8 lab16 lab reb2 |
-    r4 r8 lab16 lab | 
+    r4 r8 lab16 lab |
     reb8 lab16 lab reb8. lab16 |
     lab lab lab lab r8 reb4 la!16 la|
     re!8 r r2 |
@@ -478,9 +478,9 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
     fad,8 fa re dod fad, fa sib la dod, re fa, fad |
     mib2 mib'8 re lad si mi,2 la''8 sold fa mi, |
     re8 r r4 r2 | R1*3 R2.
-    
+
     %%% Poco meno %%%
-    
+
     re2.~ re2 r4 |
     re,2.~re2 r4 |
     R2.
@@ -532,13 +532,13 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     fa'4 mi re8 do4 r16 fad, fad fad |
     sib4 sol la r2 |
     R2*2 R2-\fermataMarkup
-    
+
     %%% Allegretto comodo %%%
     R1 R2. R1*2 \t {sol4 la sol} \t {la sol la} \t {sol la sol} |
     la2. r4 | \t {fad4 sol fad} \t {sol fad sol} |
     la r \t {fad2 sol4~} \t {sol fad2} | \t {sol2 fad4} \t {sol fad sol} |
     \t {sib, dob sib} \t {dob sib dob} |
-    
+
     %%% Agitato %%%
     re8 r r2 | R2.*4
     r8 la' la la re4~| re do do8 do | fa2.~ fa8 r r2 |
@@ -557,12 +557,12 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     mi16 re mi re mi8 r | mi16 re mi re mi re mi re mi8 r |
     fa16 mib fa mib fa8 r | fa16 mib fa mib fa mib fa mib fa8 r |
     \t {fad8 mi fad} \t {mi fad mi} | \t {fad mi fad} \t {mi fad mi} fad8 r |
-    
+
     %%% Placando assai %%%
     r2 si~ si2. r4 |
     r2 si~ si2. r4 |
     si,2 sib la lab2.~ lab r4 |
-    
+
     %%% Andante a piacere %%%
     r2 dod re mib4 r |
     r2 dod re mib4 r |
@@ -607,7 +607,7 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     R1. R1 R1. R1 R1.
     r2 si'4 r | R1. re8 mi4 re8 fa2~fa1.~solb2. r4 |
     R1.*5 r2 fa,4 r | R1. R1 R1. do'4 r r2 |
-    R1.*5 r2 si4 r | r2 r4 do reb r | r2 la4 r | 
+    R1.*5 r2 si4 r | r2 r4 do reb r | r2 la4 r |
   }
 }
 
@@ -625,13 +625,13 @@ EntracteClarinetteUn = { \ClarinetteUn
 ActeDeuxSceneUnClarinetteUn = { \ClarinetteBasse
   \relative {
     R2.*4 R2 R2.*2 R2 | mi2.~ | mi2.~ | mi2.~ | mi4 r \clef treble
-    mib'4 sib2~ | sib4 r | do8 sol~ sol2~| sol2.~ | sol4 r \clef bass | 
+    mib'4 sib2~ | sib4 r | do8 sol~ sol2~| sol2.~ | sol4 r \clef bass |
     mi,2.~ | mi2.~ | mi2.~ | mi4 r |
     R2. R2 R2.*2 R2 | R2. \clef treble | re''2.~| re2.~| re4 r \clef bass |
-    
+
     %%% Entrée de la Soprano Deux %%%
     R2.*2 R1 R2. do,,1 fa,2.~ fa4 r | mi2.~ mi2 r |
-    
+
     %%% Andantino %%%
     R1*2 r8 lad4 si dod8 mi2.~ mi~ mi~ mi4 r |
     r lad8 fad mi4~ | mi2.~ mi~ mi2 r4 R2. R1 R2. r8 lad si mi,~ |
@@ -639,7 +639,7 @@ ActeDeuxSceneUnClarinetteUn = { \ClarinetteBasse
     sib4 fa' mi8 do sib2. r4 | R2. R1 sib2 r4 R1 R2. |
     R1 R2. R1 R2. R1 R2. R1
     r4 \clef treble fad''8 sold si sold fad re dod re fad sold si fad |
-    
+
     %%% Entrée de la Contralto %%%
     sold2.~ sold2. r4 \clef bass | R2. R1 R2. R1 R2. R1
     do,,2.~ do2. r4 | R2. r4 do2 r4 reb2.~ reb2. r4 | r4 do r R1 |
@@ -654,7 +654,7 @@ ActeDeuxSceneUnClarinetteUn = { \ClarinetteBasse
 ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
   \relative {
     sol'4 mi8 r r2 | sold4 mi8 r r4 | sol4 mi~
-    
+
     %%% Presto agitato %%%
     mi1*5/4~ mi2. r2 | R1*5/4*3
     mi,1*5/4~ mi~ mi2. r2 | R1*5/4*11
@@ -664,13 +664,13 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
     do1*5/4~ do2. r2 | do2. r2 | R1*5/4*6
     sol4 r2 sol4 r | sol r sol r2 | sol4 r r8 fa''do sol la mi |
     si4 r1 R1*5/4 mi,4 r1 | R1*5/4-\fermataMarkup
-    
+
     %%% Boum %%%
     R1*5/4*2
     r1 re''4 | sib1*5/4~ sib2. r4 si |
     sol1*5/4~ sol2. r4 sold |
     mi la sol do2~ | do2. lab4 sib | mi,2. r2 | R1*5/4*3
-    
+
     %%% Air ténor %%%
     \t {mi,8 sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
     \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
@@ -687,7 +687,7 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
     \t {mi,, lab reb} \t {mi lab reb} \t {sol mi sol} mi r \t {mi,, lab reb} |
     \t {mi lab reb} \t {mi sol mi} sol r sol4 mi8 r |
     sol4 mi8 r r4 r2 | R1*5/4*4
-    
+
     %%% Moderato assai %%%
     do1*7/4~ do4 r2 r1 | do1 si2. do si1~ | si4 r2 r1 |
     do2 si2. do2 si2. sib1 | la2.~ la4 r r2 | R2. R2
@@ -706,11 +706,11 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
     re1 r2 r4 | R1*7/4*3
     \repeat volta 2 { R1*7/4*3}
     R1*7/4*2
-    
+
     %%% Presto subito %%%
     mi'1 re,,2~ re1~ re4 r |
     \tt {fa8 re r4 r8} r1 | re2. r4 r2 | R1.
-    
+
     %%% Tempo giusto %%%
     r8 fa mib' solb mi' sol |
     r fa,, mib' solb mi' sol |
@@ -732,7 +732,7 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteBasse
     sol2.~ sol2 r4 | sol2 r4 sol2 r4 |
     r si mi8 reb' | sib'2. R2. R2 R4. R2 |
     R1*5/8 R2.
-    
+
     %%% Tempo I %%%
     R1 lab,,4 r2 lab4 r lab4 r lab r2 |
     lab4 r r8 lab r2 | reb,4 r1\fermata |
@@ -748,12 +748,12 @@ ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteBasse
     R1.*2 fa4 reb r2 R1 R2. \clef bass
     sol,4 sol8 sol r4 | mib'8 mib r4 r8 mib |
     r16 la, la la r8 mib' r4 | r r16 \clef treble fa8 lab16 mi4 |
-    re1 r2 | R1. 
+    re1 r2 | R1.
     fa4 reb r1 \clef bass | reb4 fa, r2 | R1 R2.
     sol4 sol8 sol r red' mi4 | do r8 |
     si,2 r4 \clef treble sold''8 sold la4 r r sold8 sold |
     la4 r r si8 si mib4 r r2 \clef bass | solb,,1~ solb2. r4 |
-    
+
     R2. R1. la2. r4 | do,2. r4 |
     fa,2.~ fa~ fa2 r4 | R2
     fa2 red4 mi2 r4 | mi'2 r4 | R2
@@ -762,26 +762,26 @@ ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteBasse
     mi,,2~ mi~ mi~ mi4 r | mi2~ mi4 r | reb1~ reb2 r4 |
     reb1. sol2. r4 | reb1~ reb4 r | sol1.~ sol2 r4 |
     reb''4 solb, r2 |
-    
+
     R2. R1 R2. R1 R2. R1 R2.
     R1 R2. R1 \clef treble sib4 do re |
     mib2 fab8 mib fab solb | lab2.~ lab4 r r2 |
-    R2. R1 R2. R1 R2. R1 
+    R2. R1 R2. R1 R2. R1
     r2 r8 r16 \t {sol32 fa mi} | la8 r r4 |
     r4 r8 \t {sol16 fa mi} | la8 r r4 |
     r2 r8 \t {sol16 fa mi} | la8 r r4 r2 | R1*2
-    
+
     la8 la sold r4 | sold4 r8 la la |
     sold4 \clef bass la,,8 la sold |
     sold'' la,, la sold r |
     mib mib re r4 | mib'4 r r8 | R2*5/4 \clef treble
     la'8 la sold r4 | r \clef bass la,,8 la sold |
     mib'4 r r8 | R2*5/4*4
-    
+
     R1*2 si4 r r2 | R1*6
     re4 r2 | re,4 r | r2 r4 \clef treble solb''16 mi8 solb16 |
     fa1 R2.*2 \clef bass la,2.~ la2 r4 | R2.*3
-    
+
     la,8 r mib r lab r re, r |
     reb r sol r do r | fa, r si r mi, r |
     mib r la r re, r lab' r |
@@ -794,7 +794,7 @@ ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteBasse
     re!16 re re re re re re re |
     re re re re lab' lab lab lab | sib8 r r4 |
     R2*6
-    
+
     la!2.~ la2 r4 |
     la,2.~ la~ la2 r4 | R2.*11
   }

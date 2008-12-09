@@ -5,7 +5,7 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-%% Depends on: graphics.ly
+%% Depends on: graphics.ly, text-functions.ly
 
 %%%%%%%%%%%%%%%%%%%%%%% Main text variables %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -35,60 +35,36 @@ OperaNotice= "Gravure réalisée au moyen du logiciel libre GNU LilyPond (www.li
 Copyright = "Lewis Trondheim et Valentin Villenave, 2008."
 
 BigNotice = \markup {
-  \override #'(box-padding . 1.0)
-  \translate #'(-4 . -190)  \fill-line {
-    \box \center-column {
-      \justify {
-        © Lewis Trondheim et Valentin Villenave, 2008,
-        d'après une oeuvre de Lewis Trondheim et Jochen Gerner,
-        L'Association, 2001.
-      }
-      \vspace #.5
-      \justify {
-        Cette partition est publiée suivant les termes de la
-        \with-url #"http://valentin.villenave.net/opera"
-        \line { Licence Opéra Libre,}
-        version 0.2 ou ultérieure, (dont le texte intégral est
-        consultable dans le code source ou à
-        l'adresse \with-url #"http://valentin.villenave.net/opera"
-        \line { valentin.villenave.net/opera }). Vous pouvez la copier,
-        la modifier et la jouer
-        librement. Dans sa version actuelle,
-        cette licence n'autorise aucun
-        usage commercial de l'histoire ou des personnages. Veuillez contacter
-        l'un des auteurs si vous souhaitez en faire un tel usage.
-      }
-      \vspace #.5
-      \line {
-        Gravure réalisée au moyen du logiciel libre
-        \with-url #"http://www.LilyPond.org"
-        \bold {GNU LilyPond}.
-        \concat { #(ly:export (string-append "version " (lilypond-version))) } .
-      }
+  \center-column {
+    \justify {
+      © Lewis Trondheim et Valentin Villenave, 2008,
+      d'après une oeuvre de Lewis Trondheim et Jochen Gerner,
+      L'Association, 2001.
+    }
+    \vspace #.5
+    \justify {
+      Cette partition est publiée suivant les termes de la
+      \with-url #"http://valentin.villenave.net/opera"
+      \line { Licence Opéra Libre,}
+      version 0.2 ou ultérieure, (dont le texte intégral est
+      consultable dans le code source ou à
+      l'adresse \with-url #"http://valentin.villenave.net/opera"
+      \line { valentin.villenave.net/opera }). Vous pouvez la copier,
+      la modifier et la jouer
+      librement. Dans sa version actuelle,
+      cette licence n'autorise aucun
+      usage commercial de l'histoire ou des personnages. Veuillez contacter
+      l'un des auteurs si vous souhaitez en faire un tel usage.
+    }
+    \vspace #.5
+    \line {
+      Gravure réalisée au moyen du logiciel libre
+      \with-url #"http://www.LilyPond.org"
+      \bold {GNU LilyPond}.
+      \concat { #(ly:export (string-append "version " (lilypond-version))) } .
     }
   }
 }
-
-%% Characters -----------------------------------------------------%
-
-SopranoUnName=  "Le Docteur"
-SopranoUnShortName= "Doct."
-
-SopranoDeuxName=  "La Reine"
-SopranoDeuxShortName=  "Reine."
-
-ContraltoName= "Dieu"
-ContraltoShortName= "Dieu."
-
-TenorName= "Le Chef"
-TenorShortName= "Chef."
-
-BarytonUnName= "L'Étranger"
-BarytonUnShortName= "Étr."
-
-BarytonDeuxName= "Le Roi"
-BarytonDeuxShortName= "Roi."
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%% Narrative structure %%%%%%%%%%%%%%%%%%%%%%%%

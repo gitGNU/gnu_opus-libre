@@ -16,17 +16,17 @@ VioloncelleDeux = {
 
 PrologueVioloncelleDeux = { \VioloncelleDeux
   \relative {
-    
+
     %%% Introduction %%%
-    \partial 4 r4 R2.*2 \clef treble sib''2.\p\<\upbow ~ sib1\glissando 
+    \partial 4 r4 R2.*2 \clef treble sib''2.\p\<\upbow ~ sib1\glissando
     mi,,2\f\downbow \clef bass |r8 mi,,-- \t {mi--( mi-- mi--)} mi2.~ | mi2 r8 mi--
-    \t {mi8--( mi-- mi--)} mi2.~\mp mi2~mi~mi2.~mi2~mi~ mi2.~mi4 mi~mi8 mi\< 
+    \t {mi8--( mi-- mi--)} mi2.~\mp mi2~mi~mi2.~mi2~mi~ mi2.~mi4 mi~mi8 mi\<
     \t {re--( re-- re--)}|
-    dod4--->\f r2 | \t { \pizz dod4--\mf re-- mi--\<} \t {sol-- sib-- do--} |  
+    dod4--->\f r2 | \t { \pizz dod4--\mf re-- mi--\<} \t {sol-- sib-- do--} |
     \arco dod2--->\f r8 sol-. r dod-. r sol | dod4---> dod---> sol8-. dod~--->|
-    dod4 r | sol-- dod-- sib8-. dod~--| dod sol-. dod4-- | dod-- sol8-. dod-. r sib-. | 
+    dod4 r | sol-- dod-- sib8-. dod~--| dod sol-. dod4-- | dod-- sol8-. dod-. r sib-. |
     r dod4\>( sol8) | sib2~--\p sib2 r4 |
-    
+
     %%% Tempo giusto %%%
     re,8\sfz re'--\p re-- re,-- re-- re'-- re-- re,-- |
     re-- re'-- re'-- re,-- re, re mib re | fa re lab' fa |
@@ -35,14 +35,14 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     re,4-- r8 re'-. re-. re-. | fad,2.\mp mib do |
     sib'2\< sol4~ sol mi2 | \ten re2.~\f re4 r8 sol'--\ff mi-- re-- |
     \ten dod1~---> dod4 r R2 R2-\fermataMarkup |
-    
+
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
     R2*2 lab4\p( si fa2) mib2( fad4) do2.~ do2 r4 |
     R2.*2 r2 lab'4\p( sol'2.) R2.
     lab4-.\p sol,\leftpizz r |
     lab'-. sol,\leftpizz r | R2. R4.
-    
+
     %%% Andantino %%%
     \pizz sol8\p r4 | sol8 r4 | R4.*2
     sol8 r4 | sol8 r4 |
@@ -55,7 +55,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     solb'8( mib reb) | do4.~ do~ do4 r8 |
     solb'8( mib reb) | do4.~ do4 r8 |
     fad4\< mib8~ mib dod4 |
-    
+
     %%% A tempo %%%
     re8\sfz r4 | sold8--\mf( si-- dod--) |
     re8\sfz r4 | sold,8\mf( si dod) re( fa sol) |
@@ -73,7 +73,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     \t {fad16\pp fad fad} \t {sold sold sold} \t {la la la} |
     si8 r4 | fa16\< fa fa fa fa fad fad fad fad fad |
     re4--\f mib-- re-- | fa8.--( lab--) fa8--\>( mib-- re--) | do2\mf r4 |
-    
+
     %%% Adagio %%%
     R1*2 r2 r8 mi-- \t {mi--( mi-- mi--)} |
     mi1~\p mi1. \repeat tremolo 16 {mi32\pp\>( fa} mi4\!) r |
@@ -81,7 +81,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     \arco mi1~\p mi1.~ \repeat tremolo 16 {mi32\pp\>( fad} mi4\!) r |
     R1 r2 r8 sold \t {sold-- sold sold} |
     sib2.\p
-    
+
     %%% Valse %%%
     sol2.~\pp sol4 r dod~-- | dod2 r4 |
     sol2-- r4 | dod2-- r4 | sol2-- r4 |
@@ -92,7 +92,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     do2-- r4 | fad2-- r4 | mi-- r sol-- r |
     <do, si'>2\mf <do si'>4-> <do si'>8-. <do si'>~-> |
     <do si'> <do si'>-. <do si' mi la>4->\< <do si' mi la>-> |
-    
+
     %%% Vivo al fine %%%
     <re re'>8\sfz re'-. <do re>-. <do re>-. |
     <re mib>-. <re mib>-. <la re>-. <la re>-. |
@@ -150,10 +150,10 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     \t {do-- re( mib)} \t {fa-- lab( sib)} \t {si-- dod( mi)}
     <lad, fad'>4\downbow \t {<fad si>8-- dod'-- mi--} \t {fad,-- la-- sol--} |
     \ten <do, do'>1~\fmolto <do do'>2 r4 |
-    
+
     %%% Ad libitum %%%
     R1 R2. \ten do2.~\pp do4 r r2 | do2.~ do4 r2 |
-    
+
     %%% Agitato %%%
     \st {re8\fp re mib mib re re mib mib} |
     \simile re4:8 mib: re: mib: re: mib: re: mib: |
@@ -171,7 +171,7 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     mib fab mib fab mib fab mib fab |
     mib\< fab mib fab mib fab mib fab mib fab mib fab |
     \ten mi1.\f R1.*2
-    
+
     %%% Allegro non troppo %%%
     \pizz sib''4\mf r r2 | R2. sib4 mi, r \t { \arco mi8--\mp\<\upbow( si-- dod--\!)} |
     sib8-.-> r r4 r2 | \pizz sib'4\mf mi, r \t { \arco mi8--\upbow( dod-- si--)} |
@@ -184,8 +184,8 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     re'8\pp\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2.
     re8\pp\CaV re\CaV re\CaV re\CaV re\CaV re\CaV | R2. \clef treble
     \pizz la'4\p la la la R1 la4 la la la R1 |
-    \arco \st {fa16 fa r8 fa16 fa r8 fa16 fa r8 fa16 fa} r8 | R1 \clef bass
-    
+    \st {\arco fa16 fa r8 fa16 fa r8 fa16 fa r8 fa16 fa} r8 | R1 \clef bass
+
     %%% Moderato %%%
     la,,4.\mp sib8~ sib2 | la4. sib8~ sib2 |
     la8. sib16~ sib4. la8 | do2.~ do2 r |
@@ -196,7 +196,7 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     solb8.\mf( lab16~) lab2 | solb4-- lab4~-- lab16 solb8.-- lab-- mib16~---> |
     mib8.\< fa16~---> fa8 solb~---> solb16 lab8.~--->\! | lab8 fa,->\f solb-> lab-> |
     si8\sfz r r2 | R1 R2*4
-    
+
     %%% Allegro marcato %%%
     <sib do>4->\ff <sib do>16-. <sib do>-. <sib do>-. <sib do>-. <sib do>4-> r |
     <sib do>4-> <sib do>16-. <sib do>-. <sib do>-. <sib do>-. <sib do>4-> r |
@@ -207,7 +207,7 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     \st {do'4\p do si si} sib2\>( la8\!) r r4 | R1*2
     \st {do4\p do sib sib} si2\>( sol8\!) r r4 | R1
     r2 r4 \pizz re'\p do( la sol) r fad( mi dod) r r sib'\> la sol\! |
-    
+
     %%% Agitato %%%
     \arco re'8-.\f fa-. sib-. fa-. re16\<( fa lab sib) reb\>( sib lab fa) |
     re8-.\! sol-. sib-. sol-. re16\<( la' sib do) mib\>( do sib la) |
@@ -223,7 +223,7 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     re \clef treble <fa' do'> \clef bass re, \clef treble <solb' reb'> \clef bass
     re, \clef treble <lab'' mib'> \clef bass re,, \clef treble <la'' mi'>} \clef bass |
     <mi, la>8->\sfz r r4 r1 | R1*2
-    
+
     R1 R2. R2 \clef treble la'16\p\CaV la\CaV la\CaV la\CaV la\CaV la\CaV la\CaV la\CaV |
     fad fad fad fad fad fad fad fad | fad\< fad fad fad fad8-.-> r \clef bass | R2 R1*4
   }
@@ -238,7 +238,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 r |
     dod16 re mi sib' sol la sib mi dod re mi sol, |
     \t {lab16 lab lab} lab8 \t {fa16 fa fa} fa8 \t {mib16 mib mib} mib8 |
-    
+
     %%% Piu vivo %%%
     re4 r r8 do' sol la | fad2 \t {sol8 la do} |
     re4 r r8 mib, lab fa| sib4. lab |
@@ -247,7 +247,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     R2. r4 <la'mi'\harmonic mi'>2~ <la mi'\harmonic mi'>4. r8\fermata r4 |
     R2. r4 <la mi'\harmonic mi'>2~<la mi'\harmonic mi'>~
     <la mi'\harmonic mi'>8 r\fermata r4 | r2 r4 fad, sol la |
-    
+
     %%% Largo %%%
     do,2 do'~ do
     lab2.~ <do, lab'>2~<do sol'>2.~
@@ -260,7 +260,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     R2*3 R2. R1 R2.
     r4 sib8 lab | sol2~sol fad2. |
     r2 si4 mi,2. |
-    
+
     %%% Adagio %%%
     R1*9
     r2 r4 r8 <do mi\harmonic mi''>~ |
@@ -313,45 +313,45 @@ InterludeUnVioloncelleDeux = { \VioloncelleDeux
 ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
   \relative {
     %%% Air de la Soprano2 %%%
-    
-    R2.*2 | R1*2| R2.*2 | R1*2 | R2.*2| 
-    re,8 mi sold4 la re,8 la' | 
-    r re, mi sold la4 sold8 re | 
+
+    R2.*2 | R1*2| R2.*2 | R1*2 | R2.*2|
+    re,8 mi sold4 la re,8 la' |
+    r re, mi sold la4 sold8 re |
     mi4 sold la8 mi | r sold la re, mi4~|
     mi1~ mi2 r2 | R2.*2 | R1*2 | R2.*2 | R1*2 | R2.*2|
-    dod,1~ dod~| dod2 r4 | R2.| 
-    dod1~ dod~| dod2 r4| r dod r | 
+    dod,1~ dod~| dod2 r4 | R2.|
+    dod1~ dod~| dod2 r4| r dod r |
     mi1~ mi2. r4 | dod2.~ dod2 r4 |
-    sol'1~  sol~ | sol2 r4 | 
-    sol re' do8 lab | sol2. r4| 
+    sol'1~  sol~ | sol2 r4 |
+    sol re' do8 lab | sol2. r4|
     sol re' do8 lab sol4 | lab8 sol do re r4| R2. |
     sold1~ sold~| sold2.~ sold~   |
     sold1~ sold2. r4 | R2.*2 R1*2 R2.*2 R1*2 R2.*2 |
     \clef treble re'1~\CaV re~ re2.~ re~ re1~ re~ re2.~ re2 r4|
     R1*2 R2.*2 R1*2 R2.*2| R1*2 R2.*2 R1|
     R1-\fermataMarkup \clef bass |
-    
+
     %%% Récitatif %%%
-    
+
     R2.*2 R1| R2.*3 | R1 R2.*2 r4 r8 mib,4 lab,8~| lab2.~|
     lab8 lab~ \t {lab lab lab} lab4:32 |
     lab8 r r2 | R2 R2. R1*2 | R2.*4 re,2.~ re2. r4 |
-    
+
     %%% Duo %%%
-    
+
     \pizz <re sib'>4
     \repeat unfold 15 <re sib'> r8 \arco <re sib'> |
     <reb lab'> r \pizz <reb lab'>4
-    \repeat unfold 5 <reb lab'> 
+    \repeat unfold 5 <reb lab'>
     \repeat unfold 3 <sib' sol'> r8 \arco <sib sol'> |
-    <la fa'>8 r \pizz <la fa>4 <la fa'> | <la fa'> r | 
+    <la fa'>8 r \pizz <la fa>4 <la fa'> | <la fa'> r |
     \arco sol lab8 sib |
-    reb4 dob sib | dob sib lab sib | 
+    reb4 dob sib | dob sib lab sib |
     dob sib lab fa | dob' r8 sib r4 |
-    si!8 si lad lad si si | 
-    lad lad si si lad lad si si |si1 
+    si!8 si lad lad si si |
+    lad lad si si lad lad si si |si1
     lab2.~ lab~ lab4 r2 R1 |
-    
+
     %%% Piu vivo %%%
     <sol sol'>4 sol16 sol sol sol lab lab lab lab |
     sib sib sib sib reb reb reb reb mib mib mib mib mi mi mi mi |
@@ -368,7 +368,7 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     sib4 r sib |
     re r2 | re4 re re | re r2 | re4 re re | re r2 | re4 re re |
     dod r2 | dod4 dod dod | fa,1~ fa2 r4 si~ | si8 do4. dod2 |
-    
+
     %%% Tempo giusto %%%
     <re, sib'>4 <re sib'> <re sib'> <re sib'> |
     <re sib'> <re sib'> <re sib'> <re sib'> |
@@ -380,15 +380,15 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     r4 \t {re'8 si dod} |
     \repeat unfold 28 sold16
     sold8 r r sold fad la |
-    fa2 fa4. fa8 
+    fa2 fa4. fa8
     <fa fa'>2 | <fa fa'> |
     r8 la sol sib |
     fad4. fad8 | fad4. fad8 <fad re'>4\glissando \clef tenor |
     <fad'' la>8 r r2 |
-    
+
     %%% Largo assai %%%
     R1 R2.*3 R2
-    solb2.~ solb2. r4 | 
+    solb2.~ solb2. r4 |
     r2 \pizz fa'4 mi | mib r sib r | re, r r2 |
   }
 }
@@ -419,7 +419,7 @@ ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
     \arco sib2. mib,2.:32 <sib'la'>2. mib,2.:32
     mi2. fad2.:32~fad:~fad4 r \pizz reb mi r2 |
     r2 \arco sib'4 la2. r2 sib4 la2 r4 |
-    
+
     %%% Lamento %%%
     r2 r4 \pizz re si dod | sib2 r1 | R1.*3
     \arco sib2 re4 r r2 | reb fa4 r2 |
@@ -430,12 +430,12 @@ ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
     <mi  red'>2 <fa   mi'>4 r |
     <reb do'>2 <reb do'>4 <reb do'>4. <reb do'>8 <reb do'> <reb do'> |
     <reb do'>4 <reb do'>8 <reb do'> r4 | R2*2
-    
+
     %%% Tempo I %%%
     \pizz mi4 sol r mi sib' r r mi, r |
     \arco la2.:32 la2. sold la lad si~ si4 r8 mi, \t {mi mi mi} |
     dod'4 r2 R2. \pizz si4 r mib, r2 solb4 |
-    
+
     %%% Tempo II %%%
     r2 r4 mib reb mi | \arco do1.~ <do sol'>~<do sol'>~
     <do sol'>2 r4 si'2.:32~si1.:32~<do si'>2.:32 <do si'>4 r |
@@ -449,7 +449,7 @@ ActeUnSceneTroisBisVioloncelleDeux = { \VioloncelleDeux
     r2 lad'4 sold fad r r2 | R1*6
     fad1~fad~fad~fad~fad2. r4 | R1*8
     si1~si si2 si si si si si do, do do2. R1*7
-    fa4 re8 r fa4 re8 r 
+    fa4 re8 r fa4 re8 r
     fa4 re8 r fa4 re |
     fad1~fad~fad~fad~fad~fad~fad2. r4 | R1*3
     r4 <sol do\harmonic sol''>2 r4 |
@@ -466,10 +466,10 @@ ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
     sib8 r r2 | R2. \clef bass |
     mib,,,2. r4 mi2 fa |
     re'8 r r4 r2 | R1*3 R2.
-    
+
     %%% Poco meno %%%
-    <re sol\harmonic re''>2.:32~ 
-    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>2.:32~
+    <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
@@ -485,7 +485,7 @@ ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
     r8 si'' sib sol fad mib\glissando |
     mib' re fad, sol si sib re, mib sol fad sib, si \clef bass |
     mib,2 r4 |
-    
+
     r mib2~mib re4~ re2 r4 |
     r mib2~mib re4~ re2 r4 |
     r \t {sib'8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
@@ -498,7 +498,7 @@ ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
     \clef tenor \t {si mib si} | \t {sol mib' si} sol'4 r \clef bass |
     r8 \pizz si,, mi la mib sol | r4 r8 do, fa sib \clef tenor |
     r mi r4 la | R1 \clef bass
-    
+
     r4 \arco <si,,? fa'>2~<si fa'> <si fa'>4~<si fa'>2 r4 |
     r <si fa'>2~<si fa'> <si fa'>4~<si fa'>2 r4 |
     r mib2~mib re4~re r2 |
@@ -556,7 +556,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     dod2~dod8 r r4 | R2. dod2. r4 |
     R2. dod2 R2. dod2 R2.
     dod'4 sol | dod2 sol4 |
-    
+
     %%% Placando assai %%%
     dod2. dod4 sol2. r4 | dod2. dod4 sol2. r4 |
     dod,2 re mib mi2.~mi2. r4 |
@@ -586,7 +586,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     <re,sol>2 r4 | sol4 sol sol | fa2 fa4 |
     fa~ \t {fa8 fa4~} \t {fa4 fa8~} fa4 |
     r fa~fa8 mib \t {mib mib fad} |
-    
+
     re2. r8 re' r | sold,2 si4~si8 dod4 |
     re2  r8 re r | la4. sib8~ sib8. do16~do4 |
     mib2 r8 mib r| si2~ si8 do~ do16 re8. |
@@ -610,7 +610,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     r2 sib4~sib2 r4 |
     r2 sib4~sib2 r4  R2.
     r4 \pizz sib, r r re, r |
-    
+
     %%% Stesso tempo %%%
     la'4 r r fad' r r | la, r r2 |
     la4 r8 red r2 fa4 r | la, r r2 |
@@ -641,26 +641,26 @@ EntracteVioloncelleDeux = { \VioloncelleDeux
 
 ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
   \relative { \clef tenor
-    \pizz la4 r r | la r8 la r4 | la la la | 
+    \pizz la4 r r | la r8 la r4 | la la la |
     la r2 | R2 | R2.*2 | R2 |
     r4 << \arco s2 \\ 
-    \repeat tremolo 4 { sold16 lad16 } >> | 
-    \repeat tremolo 6 { sold16 lad16 } | 
+    \repeat tremolo 4 { sold16 lad16 } >> |
+    \repeat tremolo 6 { sold16 lad16 } |
     \repeat tremolo 6 { sold16 lad16 } | si4 r |
-    R2. R2 R2.*2 R2 | 
-    r4 \repeat tremolo 4 { do16 red16 } | 
-    \repeat tremolo 6 { do16 red16 } | 
-    \repeat tremolo 2 { do16 red16 } 
+    R2. R2 R2.*2 R2 |
+    r4 \repeat tremolo 4 { do16 red16 } |
+    \repeat tremolo 6 { do16 red16 } |
+    \repeat tremolo 2 { do16 red16 }
     \repeat tremolo 4 { si16 do } | sold4 r |
-    R2. R2 R2.*2 R2 | R2. | R2. | 
-    \ttt { mi'8[ mi16 mi mi mi] } 
+    R2. R2 R2.*2 R2 | R2. | R2. |
+    \ttt { mi'8[ mi16 mi mi mi] }
     \repeat unfold 4 { \ttt { re[ re re re re re] } } |
-    
+
     %%% Entrée de la Soprano Deux %%%
     R2.*2 r4 \ttt {fad16 fad fad fad fad fad} \t {fad fad fad} r8 r4 |
     r4 r8 \clef treble \t {lab16 lab lab} \ttt {lab lab lab lab lab lab} \clef bass |
     R1 R2. R2 R2. R1
-    
+
     %%% Andantino %%%
     \pizz sib,,4 fa' r2 R1 R2. mi4 si' r R2. mi,4 si' lad R2
     R2. si,4 fad' r mid8 dod si4 r |
@@ -670,7 +670,7 @@ ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
     sib4 fa' r | \arco sib,2. r4 R2. R1 sib2 r4 R1 R2.
     fad1 fad2.~ fa2. r4 | fad2.~ fad1 fa2.~ fa2. r4 |
     fad2.~ fad2. r4 |
-    
+
     %%% Entrée de la Contralto %%%
     R2. R1 fad2.~ fad4 r r2 |
     fa2.~ fa4 r r2 | fad2. fa2 mib |
@@ -693,7 +693,7 @@ ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
 ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
   \relative {
     R1 R2. R2
-    
+
     %%% Presto agitato %%%
     <mi,,\harmonic do'\harmonic mi' sol>1*5/4~
     \simile <mi''sol>~\CaV <mi sol>~\CaV
@@ -716,7 +716,7 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     <re sol>4 r2 <re sol>4 r | <re sol> r <re sol> r2 |
     <re sol>4 r r8 <re sol> r2 | <solb fa'>4 r1 |
     R1*5/4 <fa re'>4 r1 | R1*5/4-\fermataMarkup |
-    
+
     %%% Boum %%%
     <mi\harmonic do'\harmonic mi' sol>1*5/4~
     <mi'' sol>~\CaV <mi sol>~\CaV
@@ -731,7 +731,7 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     r4 <sib' mib>1 <lab fa'>1*5/4~ <lab fa'>2. <lab fa'>2 |
     <sol mib'>1*5/4~ <sol mib'> | r4 <sol mib'>2 <lab fa'>4 <sol mib'> |
     <mi! reb'>1*5/4~ <mi reb'>2. r2 | R1*5/4*5
-    
+
     %%% Moderato assai %%%
     R1*7/4*4 <fa\harmonic si\harmonic do' si'>1 r2 r4 |
     R1*7/4 r4 <mi\harmonic do'\harmonic mi' sol>1. \clef treble |
@@ -752,14 +752,14 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     R1*7/4 <mi\harmonic do'\harmonic mi' sol>1*7/4~
     \repeat volta 2 {<mi'' sol>~\CaV <mi sol>~\CaV <mi sol>~\CaV }
     <mi sol>1\CaV r2 r4 | R1*7/4
-    
+
     %%% Presto subito %%%
     \tt {re,,8\upbow re fa re re} \tt {re re fa re re} \tt {re re fa re re} |
     \tt {re re fa re re} \tt {re re fa re re} \tt {fa re fa re re} |
     \tt {fa re fa re re} \tt {fa re fa re re} \tt {fa re fa re re} |
     \tt {fa re fa re re} \tt {fa re fa re dod} \tt {fa re fa re dod} |
     \tt {fa re fa re dod} \tt {fa re fa re dod} \tt {fa re fa re dod} |
-    
+
     %%% Tempo giusto %%%
     r4 \pizz <fa mib'>\arpeggUp <fad' mi'>\arpeggUp |
     r <fa, mib'>\arpeggUp <fad' mi'>\arpeggUp |
@@ -785,7 +785,7 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     r dod8 mi re4 | sold8 fad sol4 do8 la | si4 mi,8 dod red4 |
     \arco sol2.~ sol2 r4 | sol2.~ sol2 r4 | sol2.~ sol2 r4 |
     sol2 r4 sol2 r4 r si2 sold2. R2. R2 R4. R2 R1*5/8 R2.
-    
+
     %%% Tempo I %%%
     \pizz mib8 sib' r4 fad'8 si r4 |
     \arco sib4 la8 la la la sib4 la8 la |
@@ -809,7 +809,7 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     \ttt {re16 mib fa lab sib si } dod8 mib, \ttt {fa16 lab sib si dod mi}|
     fad8 lab, \ttt {sib16 si dod mi fad sol } la8 si, |
     re,1.~ re1 r2 |
-    
+
     R1. R1*2 si'2.~ si8 r r16 si8 re16 r16 red8. r4 |
     r16 mi, dod re do mib |
     si'4 r8 r16 dod dod re sold, sold sold4 |
@@ -818,12 +818,12 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     r8 si16 si si si si si <fad' dod'>8 si, si16 si si si |
     si si si si si8 fad' si, fad' si,16 si si si |
     si si si si si8 fad' si,4 la8 do |
-    
+
     sold2.~ sold1 r2 | R1*2
     \pizz fa4 r2 | fa4 r2 | fa4 r2 | fa4 r |
     fa r red \arco mi2.~ mi2 r4 |
     \pizz do4 r |
-    
+
     r16 \arco la' fad sol fa lab |
     mi4 r8 <la re>16 <la re> <la re> <la re> sol8 <sol re'>16 <sol re'> <re'la'> <re la'> |
     mi,8 <si' re>16 <si re> <re la'> <re la'> sol, sol
@@ -834,13 +834,13 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     <mi si'>4 r8 dod <mi si'>4 dod8 do |
     <mi si'>4 r8 mi | r16 sib' la do dod sol fa lab |
     mi4 r \t {mi re fa} | dod1~ dod2 r4 |
-    
+
     R1. R1 R1. <sol' re'>1.~ <sol re'>2 r4 | R1 \clef treble
     la''2.:32~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV
     la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV la2.:~\CaV la1:~\CaV
     la4 r2 R1 R2. \clef tenor r2 r4 \pizz <fa, mi'>8 <fa mi'> |
     <mib re'>4 r <fad mi'>8 <fad mi'> | <mi! re'>4 r r2 | R2. \clef bass
-    
+
     <la,la'>16 <la la'> <la' la> <la la> <la la> <la la> <la, la'> <la la'> |
     la2:16
     <la la'>16 <la la'> <la' la> <la la> <la la> <la la> <la, la'> <la la'> |
@@ -848,14 +848,14 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     mib16 do reb mib fad8 fa sib16 sol lab sib reb8 do |
     fa mib lab sol do4 la4:16 |
     la,1:16 |
-    
+
     <la sold'>4 la'8 sold la | sold sold la r4 |
     sold,8 sold la r4 | sold'8 sold la r4 |
     <la, sold'>4 r r8 | la4 la r8 | sold4 r r8 |
     <la sold' la>4 r re8 | re mib r4 r8 |
     <sold, re'>4 <sold re'> r8 | <la re>4 r r8 |
     dod dod do r4 | r8 fa4 fa | sol, r r8 |
-    
+
     R1*2 lad4 r r2 | r4 \pizz mi sol r | r fad mi r |
     R1 \arco red2 \repeat tremolo 8 {red32 mi} |
     \repeat tremolo 16 {mib fa} |
@@ -863,7 +863,7 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     <re' dod'>4 r2 | r8 \pizz sold, r4 |
     R1*2 R2.*4
     r4 dod' r | r la r | R2. |
-    
+
     \arco la8 r mib r sold r re r |
     dod r sol' r <do, do'> r |
     fa' r si, r mi r |
@@ -881,7 +881,7 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     r8 \pizz <re' sib'> r <re sib'> |
     r <re sib'> r sold | <sib, re>4 r |
     R2*2 re,4 r dod r mib r | R2 \clef treble
-    
+
     la''2. sol fa mi fa4. mi fa sol la4 mi r |
     R2.*9
   }

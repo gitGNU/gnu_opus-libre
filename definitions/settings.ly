@@ -1,11 +1,27 @@
 %------------------------------------------------------------------%
-% Opéra Libre -- layout.ly                                         %
+% Opéra Libre -- settings.ly                                       %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
 %------------------------------------------------------------------%
 
 %% Depends on: functions.ly
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Output options %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+#(ly:set-option 'point-and-click #f)
+#(ly:set-option 'delete-intermediate-files #t)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Common Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Paper size -----------------------------------------------------%
+% #(set-default-paper-size "a4" 'landscape)
+
+%% Page breaking --------------------------------------------------%
+#(define page-breaking ly:minimal-breaking)
+
+%% Staff size -----------------------------------------------------%
+#(set-global-staff-size 14)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Score Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
