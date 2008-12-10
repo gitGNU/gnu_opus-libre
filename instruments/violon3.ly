@@ -277,16 +277,16 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
     
     %%% Largo %%%
     R2*3 R2. R2 R2.
-    lab2~lab4 r2 |
-    <sol mib'>2 sol4 lab4 r r2 |
+    lab2~\p\> lab4\! r2 |
+    <sol mib'>2\< sol4 lab4--\mp r r2 |
     R1 R2. R2
-    r2 r8 si4. |
-    la2.~ la2 r4 |
-    <sol mi'>2 sib~ sib4 r2 |
+    r2 r8 si4.\pp\upbow |
+    \ten la2.~ la2 r4 |
+    <sol mi'>2--\mp\> sib~\pp sib4 r2 |
     R2*3 R2. R1 R2.
-    r4 <sib re> <sib mib>2~<sib mib>
-    <la red>2. r2 <la red>4 |
-    <sold mi'>2.
+    r4 <sib re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
+    <la red>2.\mp r2 <la red>4-.\downbow |
+    <sold mi'>2.\downbow
     
     %%% Adagio %%%
     R1*33 R2*4

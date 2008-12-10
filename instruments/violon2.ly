@@ -271,16 +271,16 @@ ActeUnSceneUnBisViolonDeux = { \ViolonDeux
 
     %%% Largo %%%
     R2*3 R2. R2 R2.
-    reb2~reb4 r2 |
-    <sol, mib'>2 mib'4 si4 r r2 |
+    reb2~\p\> reb4\! r2 |
+    <sol, mib'>2\< mib'4 si4--\mp r r2 |
     R1 R2. R2
-    r2 r8 fa'4. |
-    re2.~ re2 r4 |
-    sib'2 fa~ fa4 r2 |
+    r2 r8 fa'4.\pp\upbow |
+    \ten re2.~ re2 r4 |
+    sib'2--\mp\> fa~\pp fa4 r2 |
     R2*3 R2. R1 R2.
-    r4 <sib, re> <sib mib>2~<sib mib>
-    <la red>2. r2 <la red>4 |
-    <sold mi'>2.
+    r4 <sib, re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
+    <la red>2.\mp r2 <la red>4-.\downbow |
+    <sold mi'>2.\downbow
 
     %%% Adagio %%%
     R1*33 R2*4

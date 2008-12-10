@@ -212,20 +212,20 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
 
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-    r2 r4 solb, | reb2 r4 solb | reb2 r4
-    lab'2~lab r |
+    r2 r4 solb,-.\mp | reb2-- r4 solb-. | reb2-- r4
+    \ten lab'2~\mf lab r |
     R2.*2 R2*2
-    r2 r8 solb | reb4 r8 solb | reb2 |
-    \t {sol!16 lab sib} reb8 r4 | r8
-    \t {la16 sib do} mib8 r r4 |
-    r2 r8 \t {lad,16 si dod} mi8 si' |
+    r2 r8 solb-.\mp | reb4-- r8 solb-. | reb2-- |
+    \t {sol!16\< lab sib} reb8->\f r4 | r8
+    \t {la16\< sib do} mib8->\! r r4 |
+    r2 r8 \t {lad,16\< si dod} mi8->\! si'-> |
     R2. R2*3 R2.*3
 
     %%% Adagio %%%
     R1*2
-    do,2~do4. sold8~|
-    sold2 r4 do~|
-    do2~do8 sold4.~|
+    do,2~\p( do4. sold8~)|
+    sold2 r4 do~(|
+    do2~ do8 sold4.~)|
     sold4 r sol2~ |
     sol4. dod8~dod2|
     r4 sol2.~ | sol8 dod~dod2 r4 |
@@ -240,7 +240,7 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     r la sol si r si sol la |
     r la sol si sol2~sol4. r8
     fa4 fa8 la | sol4 r r2 |
-    r4 fa fa sol |
+    r4 fa--\pp fa-- sol-- |
     R1*2 R1-\fermataMarkup |
     R2*4
   }

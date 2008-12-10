@@ -275,16 +275,16 @@ ActeUnSceneUnBisViolonUn = { \ViolonUn
     
     %%% Largo %%%
     R2*3 R2. R2 R2.
-    mi2~mi4 r2 |
-    mib2 mib4 <si sol'>4 r r2 |
+    mi2~\p\> mi4\! r2 |
+    mib2\< mib4 <si sol'>4--\mp r r2 |
     R1 R2. R2
-    r2 r8 sib'4. |
-    sol2.~\CaV sol2\CaV r4 |
-    do2 re~\CaV re4\CaV r2 |
+    r2 r8 sib'4.\pp\upbow |
+    \ten sol2.~\CaV sol2\CaV r4 |
+    do2--\mp\> re~\pp\CaV re4\CaV r2 |
     R2*3 R2. R1 R2.
-    r4 <sib, re> <sib mib>2~<sib mib>
-    <la red>2. r2 <la red>4 |
-    <sold mi'>2.
+    r4 <sib, re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
+    <la red>2.\mp r2 <la red>4-.\downbow |
+    <sold mi'>2.\downbow
     
     %%% Adagio %%%
     R1*33 R2*4

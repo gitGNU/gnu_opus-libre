@@ -294,25 +294,25 @@ ActeUnSceneUnBisAltoDeux = { \AltoDeux
     
     %%% Largo %%%
     R2*3 R2.
-    r4 mib, mi2. |
-    fa2~fa4 r2 |
-    mi2. mib4 r r2 |
+    r4 mib,\p mi2. |
+    fa2~\p\> fa4\! r2 |
+    mi2.\< mib4--\mp r r2 |
     R1 R2. R2 R1 R2.*2 R2*2 R2. R2*3 R2. R1 R2.
-    r4 sib' <mib, sib'>2~<mib sib'>
-    <fad la>2. r2 <fad la>4 |
-    <mi sold>2.
+    r4 sib'\mf\downbow \ten <mib, sib'>2~ <mib sib'>
+    <fad la>2.\mp r2 <fad la>4-.\downbow |
+    <mi sold>2.\downbow
     
     %%% Adagio %%%
     R1*14
-    r2 mi'~mi1
+    r2 mi'~\pp mi1
+    <mi la>~\pp <mi la>~<mi la>~<mi la>~<mi la>~
     <mi la>~<mi la>~<mi la>~<mi la>~<mi la>~
-    <mi la>~<mi la>~<mi la>~<mi la>~<mi la>~
-    <mi la>4 r <mi la> <mi la> |
-    <mi la> <mi la> r2 |
-    r4 <mi la> <mi la> <mi la> |
-    <mi la> r r2 | R1*3
-    R2 \pizz <dod lad'>4 <la re> <lab re> r |
-    r \arco <mi si'>
+    <mi la>4 r <mi la>--( <mi la>-- |
+    <mi la>-- <mi la>--) r2 |
+    r4 <mi la>--( <mi la>-- <mi la>-- |
+    <mi la>--) r r2 | R1*3
+    R2 \pizz <dod lad'>4\mp <la re> <lab re> r |
+    r \arco <mi si'>\f\downbow
   }
 }
 

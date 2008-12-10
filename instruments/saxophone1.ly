@@ -182,12 +182,12 @@ ActeUnSceneUnBisSaxophoneUn = { \SaxAltoUn
 >>>>>>> 29cf7e38aa05ee1846eea55bbe2dc34789a8717f:instruments/saxophone1.ly
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-    r2 r4 sib | sol2 r4 sib | sol2 r4
-    r la, si2 r |
+    r2 r4 sib-.\p | sol2-- r4 sib-- | sol2-- r4
+    r la,\mp\<( si2\!) r |
     R2.*2 R2*2
-    r2 r8 sib' | sol4 r8 sib | sol2 |
-    r8 sol r4 | r8 sol sib r r4 |
-    r2 r8 sol sib reb |
+    r2 r8 sib'-.\p | sol4-- r8 sib-. | sol2-- |
+    r8 sol->\mf r4 | r8 sol-> sib-> r r4 |
+    r2 r8 sol->( sib-> reb->) |
     R2. R2*3 R2.*3
 
     %%% Adagio %%%

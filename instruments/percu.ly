@@ -505,8 +505,10 @@ ActeUnSceneUnBisPercus = <<
       R1*2 R2. R2 R1 R2.*2 R2*2
       R2. R2*3 R2. R1 R2. R2*3
       R2.*3 %% TODO: add pedal indications
-      r4 <mi si'> <mi si'> <mi si'> |
-      \repeat unfold 124 <mi si'>
+      r4 \ind #"con Ped." <mi si'>--\pp( <mi si'>-- <mi si'>-- |
+      <mi si'>-- <mi si'>-- <mi si'>-- <mi si'>--) |
+      \simile <mi si'> <mi si'> <mi si'> <mi si'> |
+      \repeat unfold 116 <mi si'>
       <mi si'>\fermata \laissezVibrer r r2 | R2*4
     }
   }
@@ -514,16 +516,16 @@ ActeUnSceneUnBisPercus = <<
     \new DrumVoice \drummode {
       R2.*7 R1 R2. R1 R2.*10 R1*2 R2
       R2*3 R2. R2 R2. R2 R2.*2
-      r2 r4 \ind #"Tambour" \ind #"(bag. fagot)"  sn |
-      sn32 sn8.. r4 r8.. sn32 sn8.. sn32 |
-      sn4 r2 R2 R1
+      r2 r4 \ind #"Tambour" \ind #"(bag. fagot)"  sn\mp |
+      sn32---> sn8.. r4 r8.. sn32 sn8..-- sn32 |
+      sn4---> r2 R2 R1
       R2.*2 R2*2
-      r2  r8 \t {sn16 sn sn} |
-      sn4 r8 \t {sn16 sn sn} |
-      sn32 sn8.. r4 |
-      r8 sn r4 |
-      r8 sn16. sn32 sn4 r |
-      r2 r8 sn32 sn sn sn sn sn sn sn sn8 |
+      r2  r8 \t {sn16\< sn sn} |
+      sn4--->\mf r8 \t {sn16\< sn sn} |
+      sn32->\! sn8.. r4 |
+      r8 sn->\f r4 |
+      r8 sn16.-> sn32 sn4-> r |
+      r2 r8 sn32-> sn sn sn sn-> sn sn sn sn8-> |
       R2. R2*3 R2.*3
       R1*33 R2*4
     }

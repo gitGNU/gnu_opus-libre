@@ -194,20 +194,20 @@ ActeUnSceneUnBisContrebasse = { \Contrebasse
     %%% Largo %%%
     do2\downbow \ten do~\downbow do~ do2.~
     do2~ do2.~ do2~ do2.~
-    do4 do2 do4 r r2 |
+    do4 do2\<\upbow do4\mp r r2 |
     R1 R2. R2 R1 R2.*2 R2*2 R2. R2*3 R2. R1 R2.
     R2*3 R2.*3
 
     %%% Adagio %%%
     R1*9 \clef "G_8"
-    r2 r4 r8 <\parenthesize sol' si''>~\CaV |
+    r2 r4 r8 <\parenthesize sol' si''>~\pp\CaV |
     si''1~\CaV si2.\CaV r4 \clef "F_8" |
-    R1 sib,,8 lab si sol~sol2~ |
-    sol4 sib sol2~
-    sol4 sol, fa sold |
-    mi1~mi~mi~mi2 r | R1*13
-    R2 \pizz re''4 sold, fa r
-    r \arco dod
+    R1 sib,,8\p( lab) si sol~ sol2~ |
+    sol4 sib-- sol2~--
+    sol4 sol,--( fa-- sold--) |
+    mi1~\pp mi~ mi~ mi2 r | R1*13
+    R2 \pizz re''4\mp sold, fa r
+    r \arco dod\f\downbow
   }
 }
 

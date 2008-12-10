@@ -175,12 +175,12 @@ ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-    r2 r4 si | sib2 r4 si | sib2 r4
-    r sol solb fa r2 |
+    r2 r4 si-.\p | sib2-- r4 si-. | sib2-- r4
+    r sol\mp\<( solb fa\!) r2 |
     R2.*2 R2*2 
-    r2 r8 la | lab4 r8 la | lab2 |
-    r8 sib r4 | r8 la mi' r r4 |
-    r2 r8 lab, fa' mi |
+    r2 r8 la-.\p | lab4-- r8 la-. | lab2-- |
+    r8 sib->\mf r4 | r8 la-> mi'-> r r4 |
+    r2 r8 lab,->( fa'-> mi->) |
     R2. R2*3 R2.*3
     
     %%% Adagio %%%
