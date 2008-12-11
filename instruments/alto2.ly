@@ -8,15 +8,13 @@
 \include "italiano.ly"
 
 AltoDeux = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Alto 2  "}
-  \set Staff.shortInstrumentName = "Alt. 2  "
-  \set Staff.midiInstrument = "viola"
+  #(make-instrument-name 'viola-two "viola" 25)
   \clef alto
 }
 
 PrologueAltoDeux = { \AltoDeux
   \relative {
-    
+
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1
     \ten mi,2~\f| mi4 r | r16 \ind #"sul ponti." red8.:32\mf
@@ -25,7 +23,7 @@ PrologueAltoDeux = { \AltoDeux
     \ind #"pos.nat" mi,2.~\mp mi2~ mi |
     mi2.:32~\p mi2:32 mi2:32
     dod2. | <do! sol'>4 <do sol'>~| <do sol'>8\< sol' \t {sol--( sol-- fa--)}|
-    
+
     %%% Entrée du baryton 2 %%%
     mi16\fp mi mi mi mi mi mi mi mi mi mi mi |
     mi mi mi mi mi mi mi mi |
@@ -35,7 +33,7 @@ PrologueAltoDeux = { \AltoDeux
     r sid-. sid-. sid-. | dod-> dod-. r dod-> dod-. r | r dod-.-> r4 |
     red8->\mf red-. r red-> red-. r | red-> red-. r red-. |
     mi2~--\p mi2 r4 |
-    
+
     %%% Tempo giusto %%%
     <re' re>8\sfz r re,16\p re re re |
     re re re re re re re re |
@@ -55,12 +53,12 @@ PrologueAltoDeux = { \AltoDeux
     mi( dod mi sol) la( sol la do) mib( do mib fa) |
     re4\f r \clef alto re,,4~---> | re re2---> |
     \ten dod1~---> dod4 r R2 R2-\fermataMarkup
-    
+
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
     R2*4 R2.*6 lab'2.~\pp lab |
     R2.*3 \clef treble r4\fermata \pizz sol''8\p |
-    
+
     %%% Andantino %%%
     sol, r sol' sol, r4 |
     sol8 r sol r sib, sib' |
@@ -79,7 +77,7 @@ PrologueAltoDeux = { \AltoDeux
     solb'( mib reb) | do4.~ do~ do4 r8 |
     solb'( mib reb) | do4.~ do4 r8 |
     fad4\< mib8~ mib dod4 |
-    
+
     %%% A tempo %%%
     \t {re16\sfp re' re} re'8 r |
     sold,,4:32\mp \t {sold16-> sol-> fa->} |
@@ -104,12 +102,12 @@ PrologueAltoDeux = { \AltoDeux
     mi8\ff \clef treble r16 mi' mi mi mi8-> r16 mi mi mi |
     re8-> r16 si-.\mf si-. si-. r8 r16 sold-.\> sold-. sold-.\! \clef alto |
     re8 r16 \pizz sold, r2 |
-    
+
     %%% Adagio %%%
     R1*4 R1. \arco \ind #"flaut." mi1:32\pp\> mi4\! r |
     R1*3 R1. \simile red1:32\pp( mi4) r |
     R1*2 r8 do~\mp( \t {do mi si')} \t {la\>( mi' re)} |
-    
+
     %%% Valse %%%
     sol,2.~\pp sol4~ \t {sol8 si\<( sib)} dod( mi) |
     sold( si\!) r2 \clef treble | re2.\pp( la4 fad) mi( do') r2 |
@@ -124,7 +122,7 @@ PrologueAltoDeux = { \AltoDeux
     <do la'>~-> <do la'>16 <do la'> <do la'>8-. |
     <do la'>8.-> <do la'>16 <do la'>8 <do la'>~->\<
     <do la'>16 <do la'> <do la'>8-. |
-    
+
     %%% Vivo al fine %%%
     re16\fp re re re re re re re |
     re re re re re re re re |
@@ -187,10 +185,10 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     fad fad fad fad fad fad fad fad fad fad fad fad |
     fad fad fad fad sol sol sol sol la la la la |
     \ten <do, do'>1~\fmolto <do do'>2 r4 |
-    
+
     %%% Ad libitum %%%
     r2 <do mi'>~\pp \ten <do mi'>2.~ <do mi'>~ <do mi'>4 r r2 | do2.~ do4 r2 |
-    
+
     %%% Agitato %%%
     re16\fp re re re re re re re re re re re re re re re |
     re2:16 re: re: re: re: re: re: re: re: re: |
@@ -203,7 +201,7 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     r4 r8 fab16 fab mib4 r |
     r4 fab16 fab mib8 fab16 fab mib8} r4 r2 |
     \ten sol1.\f R1.*2 \clef treble |
-    
+
     %%% Allegro non troppo %%%
     \ind #"staccato leggiero" sib'16\pp sib sib sib sib sib sib sib sib sib sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib sib sib sib sib | sib8 r r4 r2 |
@@ -219,7 +217,7 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     re'8\mf sol, re' sol, re' sol, | R2.*2 R1*2 |
     \st {do16\pp sib r8 do16 sib r8 do16 sib r8 do16 sib r8 | R1
     do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 | R1
-    
+
     %%% Moderato %%%
     do16\ppsempre sib r8 do16 sib r8 do16 sib} r8 \simile do16 sib r8 |
     do16 sib r8 do16 sib r8 do16 sib r8 do16 sib r8 |
@@ -243,7 +241,7 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     do16-.\p[ sib-. r sib-.] do16-.[ sib-. r sib-.] \simile do16[ sib r sib] |
     do16[ sib r sib] do16[ sib r sib] do16\<[ sib r sib] do16[ sib r sib] |
     do16\mf sib r8 do16 sib r8 | do16 sib r8 do16 sib r8 | R2*2
-    
+
     %%% Allegro marcato %%%
     \acc {<do, la' sold' re'>4\sfz la'\mp <do, la'> la' |
     <do, la' sold' re'>4\sfz la' <do, la'>} r |
@@ -257,7 +255,7 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     red2\>( fa8\!) r r4 | R1
     r2 r4 \pizz sib\p lab( fa mib) r |
     re( do re) r r la'\> sold fad\! |
-    
+
     %%% Agitato %%%
     \arco re8-.\mf re-. re-. re-. \simile re2:8 | re: re: re: re: |
     re8-.\f( fa-.) sib16( do reb mib) solb4-> r |
@@ -282,7 +280,7 @@ ActeUnSceneUnBisAltoDeux = { \AltoDeux
     \ttt {re,16\p( dod mi fa mi sol)} lab8-- r
     \ttt {re16( dod mi fa mi sol)} |lab8-- r
     \st {sold16 fa sold lad sold\< lad} si-- dod-- |
-    
+
     %%% Piu vivo %%%
     re4\sfz\downbow  re,\downbow re,2\downbow | mib\downbow r4 |
     re''4\f\downbow r8 re,,~\downbow re2 | dod'2\downbow r4 |
@@ -291,7 +289,7 @@ ActeUnSceneUnBisAltoDeux = { \AltoDeux
     R2. r4 <re'sol\harmonic re''>2~\p <re sol\harmonic re''>4. r8\fermata r4 |
     R2. r4 <re sol\harmonic re''>2~ <re sol\harmonic re''>~
     <re sol\harmonic re''>8 r\fermata r4 | R1 R2
-    
+
     %%% Largo %%%
     R2*3 R2.
     r4 mib, mi2. |
@@ -301,7 +299,7 @@ ActeUnSceneUnBisAltoDeux = { \AltoDeux
     r4 sib' <mib, sib'>2~<mib sib'>
     <fad la>2. r2 <fad la>4 |
     <mi sold>2.
-    
+
     %%% Adagio %%%
     R1*14
     r2 mi'~mi1
@@ -329,31 +327,31 @@ InterludeUnAltoDeux = { \AltoDeux
 }
 
 ActeUnSceneDeuxAltoDeux = { \AltoDeux
-  \relative { 
+  \relative {
     %%% Air de la Soprano2 %%%
-    
-    R2.*2 r4 sold'8 la sold mi re mi sold la sold mi re mi sold4~ | 
+
+    R2.*2 r4 sold'8 la sold mi re mi sold la sold mi re mi sold4~ |
     sold2 r4 | R2. |
-    sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la | 
-    sold mi re mi sold la | sold mi re mi sold4 | 
-    sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la | 
-    sold mi re mi sold la | sold mi re mi sold4~ |
-    sold1~ sold2 r2 | R2.*2 | R1*2 R2.*2 | 
-    re4 la' sold8 mi re4 | mi8 re mi4 la8 re sold, mi | 
-    re mi sold4 r | R2.|
-    sold8 la sold mi re mi sold la | 
-    sold mi re mi sold4 sold8 la | 
+    sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la |
     sold mi re mi sold la | sold mi re mi sold4 |
-    la,8 si la fa mi fa la si | 
-    la fa mi fa la4 la8 si | 
-    la fa mi fa la si | 
+    sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la |
+    sold mi re mi sold la | sold mi re mi sold4~ |
+    sold1~ sold2 r2 | R2.*2 | R1*2 R2.*2 |
+    re4 la' sold8 mi re4 | mi8 re mi4 la8 re sold, mi |
+    re mi sold4 r | R2.|
+    sold8 la sold mi re mi sold la |
+    sold mi re mi sold4 sold8 la |
+    sold mi re mi sold la | sold mi re mi sold4 |
+    la,8 si la fa mi fa la si |
+    la fa mi fa la4 la8 si |
+    la fa mi fa la si |
     la fa mi fa la4 |
-    mi si' la8 fa mi4 | 
-    la8 fa re' si r si sol'4 | 
+    mi si' la8 fa mi4 |
+    la8 fa re' si r si sol'4 |
     si, mi8 re fa4~| fa2 r4 | \clef treble
-    <lab lab'>1~ <lab lab'>2. r4 | 
+    <lab lab'>1~ <lab lab'>2. r4 |
     <lab lab'> r <lab lab'> | r <lab lab'> r |
-    <lab lab'>1~| <lab lab'>4 r \clef alto lab, sol | 
+    <lab lab'>1~| <lab lab'>4 r \clef alto lab, sol |
     do2.~| do2 r4 | R1*2 R2.*2 |
     sold8 la sold mi re mi sold la | sold mi re mi sold4 sold8 la|
     sold mi re mi sold la | sold mi re mi sold4 |
@@ -364,16 +362,16 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
     mi1~ mi~ mi2.~ mi~ | mi1~ mi~ mi2.~ mi2 r4|
     \repeat unfold 3 {R1*2 R2.*2}|
     R1 R1-\fermataMarkup |
-    
+
     %%% Récitatif %%%
-    
+
     R2.*2 R1 R2.*3 R1 R2.*2 |
-    r4 r8 sol4 mi8~| mi2.~| mi8 mi~ \t {mi mi mi} 
+    r4 r8 sol4 mi8~| mi2.~| mi8 mi~ \t {mi mi mi}
     mi4:32 | mi8 r r2 | R2| r4 r8 la4. |
     mib1~ mib~ | mib2.~ mib~ mib~ mib2 r4 | R2. R1 |
-    
+
     %%% Duo %%%
-    
+
     \pizz <re sib'>4
     \repeat unfold 15 <re sib'> r8 \arco <re sib'> |
     <mi do'> r \pizz <mi do'>4
@@ -385,7 +383,7 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
     \repeat unfold 14 sib |
     \repeat unfold 8 <dod mi>|
     mib,2.~ mib~ mib4 r2 R1 |
-    
+
     %%% Piu vivo %%%
     <sol sol'>2.~ <sol sol'>1 |
     sol8 sol' sol, fad' sol, mi' |
@@ -409,11 +407,11 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
     re4 \pizz re'8 la fad sold |
     dod,4 \arco \tt {dod'16 si sold fad fa} \tt {sib la sol mi re} |
     dod4 r2 |
-    
+
     %%% Poco allargando %%%
     <sib' re>1:16 <sib re>2:16 <si re>:
     R1
-    
+
     %%% Tempo giusto %%%
     r8 \pizz <re, sib'> r <re sib'> r <re sib'> r <re sib'> |
     r <re sib'> r <re sib'> r <re sib'> r <re sib'> |
@@ -434,7 +432,7 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
     \ttt {la,16 re la' la re, la} \ttt {la re la' la re, la} |
     \ttt {la re la' la re, la} \ttt {la re la' la re, la}
     <la re la'>4\glissando la''8 r r2 |
-    
+
     %%% Largo assai %%%
     r4 sib,,2. | la4. r8 la4 | lab4. r8 lab4 sol4. r8 r4 | r sol |
     solb2.~ solb2. r4 | r2 \pizz fa4 mi mib r re r re, r r2 |
@@ -470,7 +468,7 @@ ActeUnSceneTroisAltoDeux = { \AltoDeux
     mib2. re2.:32 mib2. |
     <fa mi'>2.:32~ <fa mi'>:~ <fa mi'>4 r \pizz re dod r2 |
     r \arco re4 dod2. r2 re4 dod2 r4 |
-    
+
     %%% Lamento %%%
     R1.*6 R1*5/4*5
     <sol'fad'>2 <solb fa'>4 r |
@@ -481,13 +479,13 @@ ActeUnSceneTroisAltoDeux = { \AltoDeux
     <do, sib'sol'>4 <sib' sol'>8 <sib sol'> \t {<sib sol'><sib sol'><sib sol'>}
     <do, si'!>4 <do si'>8 <do si'> r4 |
     R2*2
-    
+
     %%% Tempo I %%%
     \pizz mib4 do r fad mib r r mib r | R2.
     \arco fad2.:32 sol2.:32 <mib do'>: <mib re'>: solb:
     \repeat tremolo 12 {do32 si} do4 r2 | R2.
     \pizz fa,4 r re r2 mib4 |
-    
+
     %%% Tempo II %%%
     R1.*2
     r2 r4 \arco mib2.~ mib1.~ mib2. r4 r2 |
@@ -548,8 +546,8 @@ ActeUnSceneTroisTerAltoDeux = { \AltoDeux
     re'2.~ re8 r re,4.~ re8\glissando
     <re re'>4 r2 \clef alto |
     r4 re,,2~ re r4 |
-    
-    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+
+    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib}
     \t {fad si fad} \t {si fad si} fad4 r |
     r  \t {sol8 sib sol} \t {sib sol sib}  \t {sib sol sib} \t {sol sib sol}
     \t {fad si fad} \t {si fad si} fad4 r |
@@ -561,16 +559,16 @@ ActeUnSceneTroisTerAltoDeux = { \AltoDeux
     r16 \pizz mi8. |
     fa4 mi8 fa r16 mi8. | fa4 fad8 sol r16 fad8. |
     sol8 fad sol r16 fad r8 lab | sol4 r r2 \clef alto |
-    
+
     r4 \arco \t {fa,,8 sib fa} \t {sib fa sib} \t {fa sib fa}
     \t {sib fa sib} \t {fa sib fa} \t {sib fa sib} fa4 r |
     r  \t {fa8 sib fa} \t {sib fa sib} \t {fa sib fa}
     \t {sib fa sib} \t {fa sib fa} \t {sib fa sib} fa4 r |
-    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    r  \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib}
     \t {si fad si} \t {fad si fad} r2 |
-    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib}
     \t {si fad si} \t {fad si fad} r2 |
-    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib} 
+    r4 \t {sol8 sib sol} \t {sib sol sib} \t {sol sib sol} \t {sib sol sib}
     \t {fad si fad} \t {si fad si} fad4 r |
     r4 \repeat tremolo 8 {sib32 re}
     \repeat tremolo 8 {sib re}
@@ -613,7 +611,7 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
     r2 r16 do sib la sib4 sold la8 la r4 R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
-    
+
     %%% Agitato %%%
     re,2.:32 sol: sol8 r do, sol' re'sol, |
     do, r r2 r2 r16 si' si si si2~si4\glissando mib2. re4 r2 |
@@ -634,7 +632,7 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     re4 re re | re2:8 |
     re4 re re | re2:8 |
     re2 re4 |
-    
+
     %%% Placando assai %%%
     sol2. dod,4 sol'2. r4 |
     sol2. dod,4 sol'2. r4 |
@@ -647,9 +645,9 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     \t {r4 <fa si> <fa si>} \t {<fa si><fa si><fa si>}
     \t {<fa si><fa si><fa si>} <fa dod'>8 <fa dod'> |
     R1*4 r2 lad~lad4 lad sold2 lad2. r4 | R2*3 R2.*2
-    
+
     \pizz do,4 r mib mi r2 fa4 r2 fad4 r2 |
-    
+
     %%% A tempo %%%
     \arco
     <mib la>2 <mib la>4 <mib la> <sold si> <sold si>2 <sold si>4
@@ -679,7 +677,7 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     fad sold sold fad fad sold sold fad |
     R2 R4.
     r4 fad16 la re fa sib re, fa la |
-    
+
     re8 re, re, re re re re re |
     re re re re re re re re |
     re re re re re re re re |
@@ -705,25 +703,25 @@ EntracteAltoDeux = { \AltoDeux
 }
 
 ActeDeuxSceneUnAltoDeux = { \AltoDeux
-  \relative { \clef treble 
+  \relative { \clef treble
     \ttt {
-      <la' re\harmonic la''>16[ <la re\harmonic la''> 
-      <la re\harmonic la''> <la re\harmonic la''> 
-      <la re\harmonic la''> <la re\harmonic la''>] 
+      <la' re\harmonic la''>16[ <la re\harmonic la''>
+      <la re\harmonic la''> <la re\harmonic la''>
+      <la re\harmonic la''> <la re\harmonic la''>]
     }
     \ttt { \simile la''16 la la la la la }
-    \repeat unfold 68 { \ttt { la[ la la la la la] } } 
+    \repeat unfold 68 { \ttt { la[ la la la la la] } }
     la4 r \ttt { la,8[ la16 la la la] } |
-    \ttt { la[ la la la la la] } 
+    \ttt { la[ la la la la la] }
     \repeat unfold 7 { \ttt { re,[ re re re re re] } } |
-            
+
     %%% Entrée de la Soprano Deux %%%
     R2.*2 r4 \ttt {<sol,mi'>8 <sold mi'>16 <sold mi'> <sold mi'> <sold mi'>}
     <sold mi'>8 r r4 \clef alto |
     r4 r8 \t {<sib,lab'>8 <sib lab'>16}
     \ttt {<sib lab'>8 <sib lab'>16 <sib lab'> <sib lab'> <sib lab'>} |
     R1 R2. R2 R2. R1
-    
+
     %%% Andantino %%%
     R1*2 R2.*4 R2
     r4 \pizz si mi, r si' lad8 fad mi4 fad8 mi si' lad |
@@ -735,7 +733,7 @@ ActeDeuxSceneUnAltoDeux = { \AltoDeux
     <mi la>1~ <mi la>2. <mi la>2 <la re>
     <mi la>2.~<mi la>2 <la re> <mi la>2.~ <mi la>2. r4 |
     <mi la>2.~ <mi la>1~ <mi la>2 r4 | R1
-    
+
     %%% Entrée de la Contralto %%%
     \pizz fad4 r2 | R1
     fa4 r2 R1 fad4 r fad r fa r mib |
@@ -750,13 +748,13 @@ ActeDeuxSceneUnAltoDeux = { \AltoDeux
     r8 \pizz la4 do re,8 | r lab'4 lab8 do4 re, | r8 la'4 do re,8 |
     r4 \arco sol2.~ sol2. r4 lab sol fa |
     re2.~ re1~ re4 r2 R2 | R1 R2. R1 R2. R1 R2. R1
-  } 
+  }
 }
 
 ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
   \relative {
     \pizz mi,4 r r2 | R2. R2
-    
+
     %%% Presto Agitato %%%
     R1*5/4*2
     \arco \ind #"sul tasto" <red'sol?>1*5/4~ <red sol>~ <red sol>2. r2 |
@@ -782,7 +780,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     <dod sol'>4 r r8 <dod sol'> r2 |
     <sib'la'>4 r1 | R1*5/4
     <fad dod'>4 r1 | R1*5/4-\fermataMarkup
-    
+
     %%% Boum %%%
     R1*5/4*12
     \repeat tremolo 16 {lad32 si} \tt {lad16 si lad la sol} |
@@ -793,7 +791,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     <mib lab mi'!>1*5/4~ <mib lab mi'> |
     r4 <lab mi'>2 <lab mi'> |
     <fa re'>1*5/4~ <fa re'>2. r2 | R1*5/4*5
-    
+
     %%% Moderato assai %%%
     R1*7/4*7 R2. R1 R2. R2
     r4 si2 \pizz red,4 \arco do'2~ do4 si2 do4. si~ |
@@ -806,7 +804,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     \arco \acciaccatura solb,4 fa1*7/4~ fa1 r2 r4 |
     R1*7/4*2 \repeat volta 2 {re1 mi2. re mi1 R1*7/4}
     mi1 r2 r4 | R1*7/4 |
-    
+
     %%% Presto subito %%%
     \tt {red8\upbow red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
     \tt {red red red red fad} \tt {red red red red fad} \tt {red fad red red fad} |
@@ -835,7 +833,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     r mib mib mib mib mib mi mi sol sol lab lab |
     r sib sib sib si si r re re re mib mib |
     fad4 mib8 re si sib | <mi, dod'>2. R2. R2 R4. R2 R1*5/8 R2.
-    
+
     %%% Tempo I %%%
     fad'16 sol fad mib re mib fad mib re si la sol la sol la sol |
     <mib sib'>4 r2 <mib sib'>4 r | <mib sib'> r <mib sib'> r2 |
@@ -874,7 +872,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     <fad,,dod'>16 <fad dod'> <fad dod'>8 dod' fad, |
     dod'16 dod dod dod dod dod dod dod
     dod dod dod dod dod dod dod dod |
-    
+
     R2. R1. R1*2
     r16 do,fa la do4 r | r16 do, sol' sib do4 r |
     r16 do, fa la do4 r | r16 do, fa sold si4 |
@@ -891,7 +889,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     fad8 mi16 mi fad8 mi16 mi | fad4 r |
     mi,16 mi mi mi mi mi mi mi |
     mi mi mi mi mi mi mi mi | <red si'>1~ <red si'>2 r4 |
-    
+
     R1. R1 R1.
     \t {sib'8 re sib} \t {re sib re} \t {sib re sib}
     \t {re sib re} \t {sib re sib} \t {re sib re} | si2 r4 R1 |
@@ -903,7 +901,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     <la,la'>4 r R2 \clef treble fad'8 fa la16 sol lab sib |
     do8 si red16 dod re mi fad8 fa | la4 r r2 \clef alto |
     fa,,16 re mib fa lab fad sol la do4 r | la1:16
-    
+
     <la sold'>4 reb8 mi fa | la la sold r4 |
     <la, sold'> la8 re mib | la la sold r4 |
     <la, sold'> mib8 mib re | <mib re'>4 <mib re'> r8 |
@@ -911,7 +909,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     <la'sold'la>4 r mib'8 | mib re r4 r8 |
     <mib,re'>4 <mib re'> r8 | <re la' mib'>4 r r8 |
     la'8 la sold r4 | r8 mi'4 mi | sold, r r8 |
-    
+
     R1*2 <do, la'>4 r r2 |
     r4 \pizz red dod r | r fa mib r | R1
     \repeat tremolo 16 { \arco mi32 fa}
@@ -920,7 +918,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     \repeat tremolo 16 { re fad}
     <dod' red>4 r2 | r8 \pizz fa, r4 |
     R1*2 R2.*4 r4 la r r sol r R2. |
-    
+
     r16 \arco do mi do r si red si |
     r sib re sib r la dod la |
     r lab do lab r sol si sol r solb sib solb |
@@ -940,7 +938,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     \pizz <re sib'>4 <re sib'>8 \arco sold'16 sold |
     la8 r16 re,, mi8 r16 mi | re8 si'!16 si lad8 r |
     R2*2 \pizz re,4 r dod r mib r R2 |
-    
+
     \arco \ind #"flautando sul tasto"
     la2.:32~ la:~ la:~ la:~ la:~ la:~ la2 r4 |
     R2.*2 r16 <sib mi> r <sib mi> r <sib mi> r <sib mi> r4 |

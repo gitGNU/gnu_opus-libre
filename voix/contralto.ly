@@ -8,9 +8,7 @@
 \include "italiano.ly"
 
 Contralto= {
-  \set Staff . instrumentName = \markup { \hcenter-in #27.5 \ContraltoName }
-  \set Staff . shortInstrumentName = \ContraltoShortName
-  \set Staff . midiInstrument = "voice oohs"
+  #(make-char-name 'contralto 27.5)
 }
 
 InterludeUnContralto = { \Contralto

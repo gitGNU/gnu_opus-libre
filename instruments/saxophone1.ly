@@ -8,9 +8,7 @@
 \include "italiano.ly"
 
 SaxAltoUn = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Saxophone Alto  "}
-  \set Staff.shortInstrumentName = "Sax. A  "
-  \set Staff.midiInstrument = "alto sax"
+  #(make-instrument-name 'saxophone-one "alto sax" 25)
 }
 
 PrologueSaxophoneUn = { \SaxAltoUn

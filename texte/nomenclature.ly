@@ -9,11 +9,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Instrument Names %%%%%%%%%%%%%%%%%%%%%%%%%
 
-%TODO: use alists
-
 %% Instruments ----------------------------------------------------%
 
-%TODO
+#(set! instruments `(
+                        (cello-one         ("Violoncelle 1" . "Vlc. 1"))
+                        (cello-two         ("Violoncelle 2" . "Vlc. 2"))
+                        (clarinet-one      ("Clarinette 1" . "Cl. 1"))
+                        (clarinet-a        ("Clarinette en La" . "Cl. 2"))
+                        (clarinet-bass     ("Clarinette Basse" . "Cl. B"))
+                        (double-bass       ("Contrebasse" . "Cb."))
+                        (flute-one         ("Flute 1" . "Fl. 1"))
+                        (flute-two         ("Flute 2" . "Fl. 2"))
+                        (piccolo           ("Piccolo" . "Pic."))
+                        (saxophone-one     ("Saxophone Alto 1" . "Sax. A 1"))
+                        (saxophone-two     ("Saxophone Alto 2" . "Sax. A 2"))
+                        (saxophone-baritone("Saxophone Baryton" . "Sax. B"))
+                        (viola-one         ("Alto 1" . "Alt. 1"))
+                        (viola-two         ("Alto 2" . "Alt. 2"))
+                        (violin-one        ("Violon 1" . "Vl. 1"))
+                        (violin-two        ("Violon 2" . "Vl. 2"))
+                        (violin-three      ("Violon 3" . "Vl. 3"))
+                        ))
 
 %% Voices ---------------------------------------------------------%
 
@@ -26,23 +42,15 @@ BarytonType = "Baryton"
 
 %% Names ----------------------------------------------------------%
 
-SopranoUnName=  "Le Docteur"
-SopranoUnShortName= "Doct."
 
-SopranoDeuxName=  "La Reine"
-SopranoDeuxShortName=  "Reine."
-
-ContraltoName= "Dieu"
-ContraltoShortName= "Dieu."
-
-TenorName= "Le Chef"
-TenorShortName= "Chef."
-
-BarytonUnName= "L'Étranger"
-BarytonUnShortName= "Étr."
-
-BarytonDeuxName= "Le Roi"
-BarytonDeuxShortName= "Roi."
+#(set! characters `(
+                      (soprano-one  ("Le Docteur" . "Doct."))
+                      (soprano-two  ("La Reine" . "Reine."))
+                      (contralto    ("Dieu" . "Dieu."))
+                      (tenor        ("Le Chef" . "Chef."))
+                      (baritone-one ("L'Étranger" . "Étr."))
+                      (baritone-two ("Le Roi" . "Roi."))
+                      ))
 
 %% List -----------------------------------------------------------%
 
@@ -78,6 +86,6 @@ CharacterList = \markup {
       }
     }
   }
-}
+} %}
 
 %%-----------------------------------------------------------------%

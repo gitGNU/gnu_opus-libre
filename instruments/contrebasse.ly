@@ -8,9 +8,7 @@
 \include "italiano.ly"
 
 Contrebasse = {
-  \set Staff.instrumentName = \markup { \hcenter-in #27.5 "Contrebasse  "}
-  \set Staff.shortInstrumentName = "Ctrb.  "
-  \set Staff.midiInstrument = "contrabass"
+  #(make-instrument-name 'double-bass "contrabass" 27.5)
   \clef "F_8"
 }
 

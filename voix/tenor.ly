@@ -8,10 +8,8 @@
 \include "italiano.ly"
 
 Tenor = {
-\set Staff . instrumentName = \markup { \hcenter-in #27.5 \TenorName }
-\set Staff . shortInstrumentName = \TenorShortName
-\set Staff . midiInstrument = "voice oohs"
-\clef "G_8"
+  #(make-char-name 'tenor 27.5)
+  \clef "G_8"
 }
 
 PrologueTenor = { \Tenor

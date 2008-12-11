@@ -8,9 +8,7 @@
 \include "italiano.ly"
 
 BarytonDeux = {
-  \set Staff . instrumentName = \markup { \hcenter-in #27.5 \BarytonDeuxName }
-  \set Staff . shortInstrumentName = \BarytonDeuxShortName
-  \set Staff . midiInstrument = "voice oohs"
+  #(make-char-name 'baritone-two 27.5)
   \clef bass
 }
 
