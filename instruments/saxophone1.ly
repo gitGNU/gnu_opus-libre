@@ -163,11 +163,11 @@ ActeUnSceneUnSaxophoneUn = { \SaxAltoUn
 ActeUnSceneUnBisSaxophoneUn = { \SaxAltoUn
   \relative {
     R2.*7
-    re'4 r r2 | r4 fad,,2 |
-    re'4 r r2 | r4 sib2 |
-    re8 r fa'2 | si, dod,4~| dod do2 | R2.*2
-    fa2.~fa4. r8\fermata r4 | R2.
-    fa2.~fa2~fa8 r\fermata r4 | R1 R2
+    re'4->\f r r2 | r4 fad,,2\p\<( |
+    re'4\!) r r2 | r4 sib2\p\<( |
+    re8->\f) r fa'2---> | si,---> dod,4~--->| dod do2---> | R2.*2
+    \ten fa2.~\pp fa4. r8\fermata r4 | R2.
+    \ten fa2.~\pp fa2~ fa8 r\fermata r4 | R1 R2
 
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2

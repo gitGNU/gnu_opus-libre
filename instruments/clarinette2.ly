@@ -177,22 +177,22 @@ ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
 ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
   \relative {
     R2.*4
-    \ttt {fa,16 mi re dod re mi} fa8 r
-    \ttt {fa16  mi re dod re mi}|fa8 r
-    \ttt {lab16 sol lab sib si dod} re8 r |
-    \ttt {sol16 lab sol lab sol sib}
-    \ttt {si dod si dod si mi}
-    \ttt {fad sol fad sol la do} |
+    \ttt {fa,16\pp( mi re) dod( re mi)} fa8-- r
+    \ttt {fa16( mi re) dod( re mi)}|fa8-- r
+    \ttt {lab16( sol lab) sib( si dod)} re8-- r |
+    \ttt {sol16( lab sol) lab( sol sib)}
+    \ttt {si( dod si) dod( si mi)}
+    \ttt {fad( sol fad sol la do)} |
 
     %%% Piu vivo %%%
-    re4 r r2 |
-    \tt {r16 mi,,, fad sold la } \tt {si do re fa la} \tt {do re mib fa lab}|
-    re4 r r2 |
-    \tt {r16 mi,,, sold sib dod} \tt {mib sol sib do mi} \tt {fad sol la si do}|
-    re4 re8 la4 re8 | lab4. re fad, re' |
-    mi,4 mi8 mi4 mi8 |
-    R2. fa,,2.~fa4. r8\fermata r4 |
-    R2. fa2.~ fa2~ fa8 r\fermata r4 |
+    re4->\f r r2 |
+    \tt {r16 mi,,,\p\< fad( sold la) } \tt {si( do re) fa( la)} \tt {do( re mib) fa( lab)}|
+    re4->\f r r2 |
+    \tt {r16 mi,,,\p\< sold( sib dod)} \tt {mib( sol sib) do( mi)} \tt {fad( sol la) si( do)}|
+    re4->\f re8 la4->( re8) | lab4.->( re) fad,->( re') |
+    mi,4-> mi8 mi4-> mi8 |
+    R2. \ten fa,,2.~\pp fa4. r8\fermata r4 |
+    R2. \ten fa2.~\pp fa2~ fa8 r\fermata r4 |
     R1 R2
 
     %%% Largo %%%
