@@ -8,9 +8,7 @@
 \include "italiano.ly"
 
 VioloncelleDeux = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Violoncelle 2  "}
-  \set Staff.shortInstrumentName = "Vlc. 2  "
-  \set Staff.midiInstrument = "cello"
+  #(make-instrument-name 'cello-two "cello" 25)
   \clef bass
 }
 

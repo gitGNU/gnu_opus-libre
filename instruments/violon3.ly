@@ -8,28 +8,26 @@
 \include "italiano.ly"
 
 ViolonTrois = {
-  \set Staff.instrumentName = \markup { \hcenter-in #23.5 "Violon 3  "}
-  \set Staff.shortInstrumentName = "Vl. 3  "
-  \set Staff.midiInstrument = "violin"
+  #(make-instrument-name 'violin-three "violin" 23.5)
 }
 
 PrologueViolonTrois = { \ViolonTrois
   \relative {
     %%% Introduction %%%
-    
-    \partial 4 r4 R2.  la'''2.~\pp\<\upbow la2.~ 
-    la2:16~\f\> la4:32~ la8\! r 
+
+    \partial 4 r4 R2.  la'''2.~\pp\<\upbow la2.~
+    la2:16~\f\> la4:32~ la8\! r
     \ten mi,,2~\f| mi4 r | mi2.~| mi4 r | mi2\f\> mi2.~\mp| mi4 r R2 |
     <sol,? re'>2.~| <sol re'>4 r | R2 sib2.~|
     si!4 mi8--\<( mi--) \t {mi--( mi-- mi--)} \tt {mi16--( mi-- mi-- mi-- mi--)} |
-    
+
     %%% Entrée du baryton 2 %%%
     re2--->\f r4 | re16\mf re re re re re re re
-    re\< re re re re re re re | fad4.--->\f r8 sid,-.-> r | 
+    re\< re re re re re re re | fad4.--->\f r8 sid,-.-> r |
     r sid-.-> r4 | r8 sid-.-> r4 sid8-.-> r |
     r4 sid\upbow \glissando | dod8-> r r dod-.-> r4| r8 dod-.-> r4 |
     red8-.->\mf r r4 red8-.-> r | r red4.\upbow\> mi2~--\p mi r4 |
-    
+
     %%% Tempo giusto %%%
     re16->\p re re re re re re re |
     re re re re re re re re |
@@ -45,12 +43,12 @@ PrologueViolonTrois = { \ViolonTrois
     <re, re'>4\f r8 <re re'>4-> re'8-. |
     <re, re'>4-> re'8-. <re, re'>4-> re'8-. |
     <re, re'>2.---> r4 | R2*2 R2-\fermataMarkup
-    
+
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
     R2*4 R2.*11
     r4\fermata \pizz sol'8\p |
-    
+
     %%% Andantino %%%
     <sol,,sol'> r sol'' <sol,, sol'> r sol'' |
     sol,, sol''-> sol, lab'-> r sib-> |
@@ -62,7 +60,7 @@ PrologueViolonTrois = { \ViolonTrois
     \ten <mi sol>4.~\pp <mi sol>~ <mi sol>~ <mi sol>8 r lab,16( sib) |
     reb( mi8) <fad si>8.~ | <fad si>4.~ <fad si>~ <fad si>8 r r16 red |
     mi8 <fad la>4~ <fad la>4.~ <fad la> r16 sold,\<( si mi) sol( la\!) |
-    
+
     %%% A tempo %%%
     re 8\sfz\> \t {re,16( lad fad} re8-.\!) | sold,4~--\mf sold16 r |
     re'''8-.\sfz \t {re,16( la sol} re8-.) | sold,4~--\mf sold16 r |
@@ -84,13 +82,13 @@ PrologueViolonTrois = { \ViolonTrois
     la'8\ff r16 do do do do8-> r16 do do do |
     dod8-> r16 sol-.\mf sol-. sol-. r8 r16 mi-.\< mi-. mi-. |
     si-.\p fad-. mi'-. sold,-. sold-. sid,-. r8 r4 |
-    
+
     %%% Adagio %%%
     %% FIXME: Issue #318
     R1*4 R1. \stemDown \repeat tremolo 16 {\ind #"flaut." mi32\pp( fa)} \stemNeutral mi4 r |
     R1*3 R1. \repeat tremolo 16 {\simile mi32\pp( red} mi4) r |
     R1*2 mi4.\mp si'8-- la--( re--) |
-    
+
     %%% Valse %%%
     si2.~\pp si4 r2 R2. |
     \pizz sol,4\mp red' sol | dod, fa r |
@@ -104,10 +102,10 @@ PrologueViolonTrois = { \ViolonTrois
     r4 \pizz sold,,\mp do sib fad' r |
     r sold, do sib re r | r la r sold |
     \arco <la fad'>8.->\mf <la fad'>16 <la fad'>8-.
-    <la fad'>~-> <la fad'>16 <la fad'> <la fad'>8-. 
+    <la fad'>~-> <la fad'>16 <la fad'> <la fad'>8-.
     <fad' re'>8.-> <fad re'>16 |
     <fad re'>8-. <fad re'>~->\< <fad re'>8. <fad re'>16 <fad re'>4-> |
-    
+
     %%% Vivo al fine %%%
     <re re'>4->\sfz r |
     r8 re16-.\mf re-. re8-> r |
@@ -170,10 +168,10 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     \t {red red red} \t {mid mid mid} \t {sold sold sold\!} |
     <fad, mid'>4\downbow <fad do'>8-- re'-- \t {red16\< red red} \t {mid mid mid} |
     \ten <do, do'>1~\fmolto <do do'>2 r4 |
-    
+
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
-    
+
     %%% Agitato %%%
     \ten re,1~\ff re~ re2 r | R1 sold,4\f\upbow si2 sold4 si2 re4-> r |
     r4 \ind #"secco" dod8-.\mf dod-. re4-. r r2 | R1*2
@@ -182,7 +180,7 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     r4 r8 \st {mi16 mi red4 r |
     r4 mi16 mi red8 mi16 mi red8} r4 r2 |
     \ten mi1.\f R1.*2
-    
+
     %%% Allegro non troppo %%%
     \pizz sib'4\mf r r2 | R2. R1
     \arco sib8-.\pp do-. sib-. do-. sib-. do-. sib-. do-. | R1
@@ -201,9 +199,9 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     <sol re'>8\mf <sol re' la'> <sol re'> <sol re' la'>
     <sol re'> <sol re' la'> R2.*2
     R1*6
-    
+
     %%% Moderato %%%
-    do8--\p[ r16 do-.] do8-- r do--[ r16 do-.] do8--[ r16 do-.] | 
+    do8--\p[ r16 do-.] do8-- r do--[ r16 do-.] do8--[ r16 do-.] |
     do8--[ r16 \simile do] do8 r do[ r16 do] do8 r |
     do8[ r16 do] sib-.[ do-. r do] sib8--[ r16 do-.] |
     sib8--[ r16 \simile do] sib8[ r16 do] sib8[ r16 do] |
@@ -225,7 +223,7 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     \repeat tremolo 16 {sib32\pp\< do} |
     sib8->\f r16 do32-. do-. sib8-> r16 \simile do32 do |
     sib8 r16 do32 do sib16 r \t {do16 do sib} | R2*2
-    
+
     %%% Allegro marcato %%%
     \acc {<dod sold' sol'! red'>4\sfz dod\mp <dod sold'> dod |
     <dod sold' sol'! red'>4\sfz dod <dod sold'>} r |
@@ -239,7 +237,7 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     \st {sib\p sib lab lab} sold2\>( sib8\!) r r4 | R1
     r2 r4 \pizz fa'\p mib( re do) r mib( re do) r |
     r do\> si la\! |
-    
+
     %%% Agitato %%%
     \arco <do re>2.\f r4 | R1*2
     re2-- fad8-.\<( la) re16( mi fa sol) |
@@ -265,7 +263,7 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
     R2.*5
     r4 \ttt {lab16\p( sol sib si lad dod) } re8-- r |
     \st {sol16 lab sol sib si dod si mi fad\< sol} la-- do-- |
-    
+
     %%% Piu vivo %%%
     re4\sfz\downbow re,\downbow re,2\downbow | R2.
     re''4\f\downbow r8 re,,~\downbow re2 | R2.
@@ -274,7 +272,7 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
     si4-> si8-- <mi dod'>4-> <mi dod'>8-- | <mi dod'>2.--->
     R2. r4 sib,2~--\p sib4. r8\fermata r4 |
     R2. r4 sib2~-- sib~ sib8 r\fermata r4 | R1 R2
-    
+
     %%% Largo %%%
     R2*3 R2. R2 R2.
     lab2~\p\> lab4\! r2 |
@@ -312,55 +310,55 @@ InterludeUnViolonTrois = { \ViolonTrois
 ActeUnSceneDeuxViolonTrois = { \ViolonTrois
   \relative {
     %%% Air de la Soprano2 %%%
-    
+
     R2.*2 R1*2  R2. |
     sold'8 la sold mi re mi | sold la sold mi re mi sold4 |
     sold8 la sold mi re mi sold la sold mi re mi sold4 |
     R2.| la,4-. re-. mi8( re la4-.) | re8( la mi' re)-. r re mi4-. |
     re-. la8( mi' re4)-. | la'8( sold mi re)-. r la' |
     R1*2 |  R2.*2 |
-    sold8( la sold mi re mi sold la | 
+    sold8( la sold mi re mi sold la |
     sold mi re mi sold4)-. sold8( la |
     sold mi re mi sold la | sold mi re mi sold4)-. |
     R1 | re4-. la'-. sold8( mi re4-.) |
     mi8( re la' sold)-. r la | sold mi re mi sold4-. |
-    r4 <re sol\harmonic> r2 | 
+    r4 <re sol\harmonic> r2 |
     r8 <re sol\harmonic> r2 <re sol\harmonic>4 |
-    r8 <re sol\harmonic> r4 <re sol\harmonic> | 
+    r8 <re sol\harmonic> r4 <re sol\harmonic> |
     r4 r8 <re sol\harmonic> r4 |
     r <sol' do\harmonic> r2 r8 <sol do\harmonic> r2 <sol do\harmonic>4 |
     r8 <sol do\harmonic> r4 <sol do\harmonic> |
-    r4 r8 <sol do\harmonic> r4 | 
+    r4 r8 <sol do\harmonic> r4 |
     r4 <sol,, do\harmonic> r2 | la4 re8 si r la si4 |
     re4 sol8 fa do'4 | fa,8 sol si do r4 |
-    sol, do re8 fa re do | 
-    sol do re fa re do sol do | re2.~| re4 r2 | 
-    lab'8 sib re mib fa, lab sib re | 
+    sol, do re8 fa re do |
+    sol do re fa re do sol do | re2.~| re4 r2 |
+    lab'8 sib re mib fa, lab sib re |
     re, fa re do sol2~| sol2.~| sol2 r4 |
     R1*2 R2.*2 R1*2 R2.*2 |
-    <re' la'!>1~\CaV <re la'>~\CaV | 
-    <re la'>2.~\CaV <re la'>~\CaV| 
-    <re la'>1~\CaV <re la'>~\CaV | 
+    <re' la'!>1~\CaV <re la'>~\CaV |
+    <re la'>2.~\CaV <re la'>~\CaV|
+    <re la'>1~\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>2\CaV  r4|
     sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la | 
-    sold mi re mi sold la | 
-    sold mi re mi sold4 |
-    sold8 la sold mi re mi  sold la | 
     sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la | 
+    sold mi re mi sold la |
+    sold mi re mi sold4 |
+    sold8 la sold mi re mi  sold la |
+    sold mi re mi sold4 sold8 la |
+    sold mi re mi sold la |
     sold mi re mi sold4 |
     R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1 R1-\fermataMarkup  |
-    
+
     %%% Récitatif %%%
-    
+
     R2.*2 R1 R2.*3 R1 R2.*2 |
-    r4 r8 fad4 mib8~| mib2.~| 
+    r4 r8 fad4 mib8~| mib2.~|
     mib8 mib~ \t {mib mib mib} \repeat tremolo 8 mib32 |
     mib8 r8 r2 | R2 | R2.| R1*2| R2.*5| R1|
-    
+
     %%% Duo %%%
-    
+
     r8 \pizz <sib re>
     \repeat unfold 15 {r8 <sib re>} <sib re>4 |
     \repeat unfold 7 {r8 <do mi>} |
@@ -370,10 +368,10 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     \repeat unfold 27 re
     \repeat unfold 14 sold
     \repeat unfold 8  red'
-    do do re'! sol, do, re' | 
+    do do re'! sol, do, re' |
     sol, do, re' sol, do, do |
     R2. R1 |
-    
+
     %%% Piu vivo %%%
     <sol, sol'>2.~ <sol sol'>1
     sol4:16 lab: sib: reb: mi: fad:
@@ -394,7 +392,7 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     \arco <re  re'>4 \pizz do8 fa fad si |
     \arco <mi, mi' mi>4 \pizz red8 sold si mi |
     \arco <sol,, sol' sol'>4 \tt {mi'16 fa sol sib do} \tt {dod re mi sol la} |
-    
+
     %%% Poco allargando %%%
     <re, sib'>2. re4~ | re4. <sol, mi'>8 ~ <sol mi'>2 si la4 r |
     %%% Tempo giusto %%%
@@ -413,10 +411,10 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     <la la'>8 mi16 sol si re mi sol |
     <re, sol' la>4 <re sol' la> <sol la mi'> <sol la mi'> <sol' la>
     \pizz <fa sol>8 r r2 |
-    
+
     %%% Largo assai %%%
     R1 R2.*3 R2
-    \arco sib,,2.~ sib2. r4 | 
+    \arco sib,,2.~ sib2. r4 |
     r2 \pizz fa'4 mi | mib r la, r | re r r2 |
   }
 }
@@ -448,20 +446,20 @@ ActeUnSceneTroisViolonTrois = { \ViolonTrois
     \arco la2. R2.*2 sold2. <la sold'>2. |
     <si lad'>2.:32~ <si lad'>:~ <si lad'>4 r \pizz sol sib r2 |
     R2.*4
-    
+
     %%% Lamento %%%
     R1.*6 R1*5/4*5 R1*4
     \arco <sib sol' mib'>4 <sol' mib'>8 <sol mib'> \t {<sol mib'><sol mib'><sol mib'>}
     <sib, sol' mib'>4 <sol' mib'>8 <sol mib'> \t {<sol mib'> <sol mib'> <sol mib'>}|
     <sib la'>16 <sib la'> <sib la'> <sib la'> \t {<sib la'><sib la'><sib la'>} <sib la'>8 r4 |
     R2*2
-    
+
     %%% Tempo I %%%
     \pizz la,4 si r do la r |
     R2.*6 \arco fa'2.:32
     \repeat tremolo 12 {re32 fa} lab4 r2 |
     R2. \pizz sib,4 r sold r2 la4 |
-    
+
     %%% Tempo II %%%
     R1.*3 r2 sol1~ sol2. r4 r2 |
     r2 r4 la'2.:32 <la sold'>2.: <la sold'>4 r | R1 R2. R2
@@ -492,23 +490,23 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
     \pizz <sib sib'>4 r2 R2.
     <mib sol>4 r r2 <mi sold>4 r <fa la> r |
     <re re'> r r2 R1*3 R2. |
-    
+
     %%% Poco meno %%%
     \arco
-    <re sol\harmonic re''>2.:32 ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
-    <re sol\harmonic re''>: ~ 
+    <re sol\harmonic re''>2.:32 ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
+    <re sol\harmonic re''>: ~
     <re sol\harmonic re''>4
     \ordin re''2:32~ re2.: ~ re:~ re: ~ re4: ~ si: sib:
     re,2.:32~\CaV re8\CaV r r2 | R2.*13
-    
+
     r4 <sol,, fad'>2 <sol fad'> <sol fad'>4~<sol fad'>2 r4 |
     r  <sol fad'>2 <sol fad'> <si! sib'>4~<si sib'>2 r4 |
     R2.*3 R1 R2.
@@ -523,7 +521,7 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
     r mib re si sib sol fad' mib re si sib sol |
     fad' mib re si sib sol fad mib4 sib sol8~ sol2 r4 |
     R2.*4
-    
+
     la'4 sol fa mi fa8 mi fa sol la4 mi2~ mi2.~ mi2 r4 |
     R2.*5
   }
@@ -555,7 +553,7 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
     R2. re4 si si8 dod r4 R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
-    
+
     %%% Agitato %%%
     do2.:32 re: <re la'>: <re la'>8 r la' mi' si' mi, | la, r r2 |
     R2.*2 re,2.:32 re8 r sib16 do mib fa fad sold si dod |
@@ -579,7 +577,7 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
     \t {r4 si si} si2~ si2. r4 |
     \t {si si si} \t {sib sib sib} \t {la la la} |
     \t {sold sold sold} sold~ sold2. r4 |
-    
+
     %%% Andante a piacere %%%
     \t {r4 dod dod} \t {dod dod dod} \t {re re re} \t {mib mib mib} |
     \t {r4 dod dod} \t {dod dod dod} \t {re re re} \t {mib mib mib} |
@@ -591,7 +589,7 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
     \t {<sib mi><sib mi><sib mi>} <sol mib'>8<sol mib'> |
     R1*7 R2*3 R2.*2
     \pizz si,4 r lab do r2 sib4 r2 re4 r2 |
-    
+
     %%% A tempo %%%
     \arco
     <si re>2 <si re>4 <si re> |
@@ -613,7 +611,7 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
     re mi mi re re mi mi re re mi mi re re mi mi re |
     R2 R4. r2 sib'16 dod fad la |
 
-    re4 r r dod16 do sib do, | 
+    re4 r r dod16 do sib do, |
     re,4\CaV re16 re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
@@ -643,20 +641,20 @@ EntracteViolonTrois = { \ViolonTrois
 
 ActeDeuxSceneUnViolonTrois = { \ViolonTrois
 \relative {
-    la''2.~\CaV la2.~\CaV la2.~\CaV la4\CaV r2 
+    la''2.~\CaV la2.~\CaV la2.~\CaV la4\CaV r2
     R2 R2.*2 R2 si2.~ si2.~ si2.~ si4 r |
-    R2. R2 | r4 r8 fad~ fad4~| fad2.~| fad2 | 
-    sib2.~| sib2.~| sib2.~| sib4 r | 
+    R2. R2 | r4 r8 fad~ fad4~| fad2.~| fad2 |
+    sib2.~| sib2.~| sib2.~| sib4 r |
     <re,, sol\harmonic re''~>2. \simile re''2~ re2.~ re2.~ re4 r |
-    \ttt { re8[ re16 re re re] } \ttt { re16[ re re re re re] } 
-    \ttt { re16[ re re re re re] } | 
-    \repeat unfold 3 { \ttt { si16[ si si si si si] } } | 
+    \ttt { re8[ re16 re re re] } \ttt { re16[ re re re re re] }
+    \ttt { re16[ re re re re re] } |
+    \repeat unfold 3 { \ttt { si16[ si si si si si] } } |
     \repeat unfold 5 { \ttt { si16[ si si si si si] } }
-   
+
     %%% Entrée de la Soprano Deux %%%
     R2.*2 r4 \ttt {re16[ re re re re re] } \t {re re re} r8 r4 |
     r4 r8 \t {mi,16 mi mi} \ttt {mi mi mi mi mi mi} | R1 R2. R2 R2. R1
-    
+
     %%% Andantino %%%
     R1*2 R2.*4 R2
     R2.*5 R1 R2. R2
@@ -667,7 +665,7 @@ ActeDeuxSceneUnViolonTrois = { \ViolonTrois
     r la r la r la r | la r la r | la r la |
     r la r la | r la r | la2. r4 |
     si2.~ si2. r4 |
-    
+
     %%% Entrée de la Contralto %%%
     r2 <la re>4 | r <la re> r <la re> | r <la re> r | <la re> r <la re> r |
     r <la re> r | <la re> r <la re> r | r <la re> r | <la re> r <la re> r |
@@ -687,7 +685,7 @@ ActeDeuxSceneUnViolonTrois = { \ViolonTrois
 ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
   \relative {
     \pizz mi4 r r2 R2. R2
-    
+
     %%% Presto agitato %%%
     R1*5/4*2
     \repeat tremolo 8 {\arco \ind #"sul tasto"mi16*5/4 sol}
@@ -716,7 +714,7 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     fa4 mi8 mi fa4 mi8 mi mi mi |
     fa mi mi mi mi fa mi mi mi mi | mi4 r1 | R1*5/4
     dod4 r1 | R1*5/4-\fermataMarkup
-    
+
     %%% Boum %%%
     r2 r4 \flaut mi2\upbow r2 mi\upbow r4 | R1*5/4
     r2 r4 \simile mi2 r mi r4 |
@@ -733,7 +731,7 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     <sib lab'>2. <lab fa'>2 <sib lab'> <lab fa'>2. |
     r4 <sib lab'>2 fa'4 lab |
     <fab, reb' sib'>1*5/4~ <reb' sib'>2. r2 | R1*5/4*5
-    
+
     %%% Moderato assai %%%
     r2 r4 mi,1~mi1*7/4~ mi~ mi~ mi~ mi~ mi2. r1 |
     R2. R1 R2. R2
@@ -752,14 +750,14 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     re, mi sol la re, mi sol la sol re16 mi re8 re mi re | mi1 r2 r4 |
     \repeat volta 2 { dod1 sib2. dod sib1 R1*7/4 }
     sib1 r2 r4 | R1*7/4
-    
+
     %%% Presto subito %%%
     \tt {mi8\upbow mi mi sol mi} \tt {mi mi mi sol mi} \tt {mi mi mi sol mi} |
     \tt {mi mi mi sol mi} \tt {mi mi mi sol mi} \tt {sol mi mi sol mi} |
     \tt {sol mi mi sol mi} \tt {sol mi mi sol mi} \tt {sol mi mi sol mi} |
     \tt {sol mi mi sol mi} \tt {mi sol red mi sol} \tt {mi sol red mi sol} |
     \tt {mi sol red mi sol} \tt {mi sol red mi sol} \tt {mi sol red mi sol} |
-    
+
     %%% Tempo giusto %%%
     mi4 r2 | \jet <mi sol>32 <mi sol>8.. r4 <fa lab>8 r |
     \simile <mi sol>32 <mi sol>8.. r2 |
@@ -789,7 +787,7 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     r fad fad fad sol sol r lad lad lad si si |
     re fad,:16 sol: lad: si: re: |
     <re lad'>2. R2. R2 R4. R2 R1*5/8 R2.
-    
+
     %%% Tempo I %%%
     r4 r8 sol,16 la sol mi re mi sol la sol la |
     <solb fa'>4 r2 <solb fa'>4 r <solb fa'> r <solb fa'> r2 |
@@ -811,7 +809,7 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     r16 dod dod dod re re mib mib la,8 la16 la |
     do1.~ do1 r2 |
     R1. R1*2 R2.
-    
+
     r16 sol sol8 sol16 sol8 sol16 sol8 sol16 sol r sol sol sol |
     r sold sold r sold sold |
     r la la la la la la la la la la la si si si si |
@@ -820,13 +818,13 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     si si si si si si si si si si dod dod dod dod dod dod |
     dod dod red'red sold,sold mid'mid sold,sold lad'lad red,red mid mid |
     mib mib fa'fa sib,sib mib,mib mib'mib sib sib fa fa mib mib |
-    
+
     R2. R1. R1*2
     r4 la,,2 r4 sib2 r4 la2 r4 si |
     <sold re'>2 do4 <la mi'>2 lab4 |
     sol4~ sol16 mi' sib' re do8 r |
     la4 mi | R4. |
-    
+
     r16 la, si si la la si si la la si si la la si si |
     la la si si la la si si la la si si la la si si |
     do do do do do do do do do do do do do do do do |
@@ -840,10 +838,10 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     sold sold lad lad sold sold lad lad |
     sold sold lad lad sold sold lad lad |
     sold sold lad lad sold sold lad lad |
-    si si do do si si do do 
+    si si do do si si do do
     si si do do si si do do |
     si8 do si do si4 |
-    
+
     R1. R1 R1.
     la4 sol fa mi fa8 mi fa sol | la4 mi r | R1
     \pizz la,4 r2 r8 sol'4. r2 | fa4 r2 r8 mi4. r2 |
@@ -852,7 +850,7 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     <la, la'\leftpizz>4 r2 R1 R2. R1
     r2 \arco <fa' la>4 | <mi la> <fa la> <sol la> <la la> |
     r4 <fa la>16 mi fa sol <la la>4 |
-    
+
     fa16 mi fa sol la8 la dod16 do reb mib fa8 fa |
     <la, la'>4 r | R2. <la, la'>4 r r2 |
     r2 do16 la sib do mib dod re mi | sol8 r sib r re r fa r |
@@ -862,14 +860,14 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     <sold re' la'>4 r r8 | <sold' la la'>4 r re'8 |
     re mib r4 r8 | <la,,sold'>4 <la sold'> r8 | <sold re'la'>4 r r8 |
     sold'8 sold la r4 | r8 sold4 sold | la r r8 |
-    
+
     R1*2 dod,4 r r2 |
     r4 \pizz re si r r si sold r |
     r2 \arco sold2 |
     mi'1:32~ mi: dod: |
     si'4 r2 | r8 \pizz dod, r4 | R1*2 R2.*4
     r4 sold' r r sold r R2. |
-    
+
     la4 r R2 | R2.
     \arco la'4 sol fa mi2 mi8 red mi fad |
     sold2~ sold4 r r sib,16 la sib do |

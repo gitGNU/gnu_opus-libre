@@ -7,25 +7,21 @@
 
 \include "italiano.ly"
 
-FluteUn = { 
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Flûte 1  "}
-  \set Staff.shortInstrumentName = "Fl. 1  "
-  \set Staff.midiInstrument = "flute"
+FluteUn = {
+  #(make-instrument-name 'flute-one "flute" 25)
   \clef treble
 }
 
 Piccolo = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Piccolo  "}
-  \set Staff.shortInstrumentName = "Picc.  "
-  \set Staff.midiInstrument = "flute"
+  #(make-instrument-name 'piccolo "flute" 25)
   \clef "G^8"
 }
 
 PrologueFluteUn = { \FluteUn
   \relative {
-    
+
     %%% Introduction %%%
-    \partial 4 r8 
+    \partial 4 r8
     \tt {mi'32\< fa si mi fa} sib2.~\mp sib~\< sib~ sib2~\> sib4~ sib8\! r
     \ten mi,,,2~--\mf mi4 r | mi4~ mi4:32 ~ mi8 r |
     fa2~ fa \ten mi2.~ mi4 r |
@@ -36,13 +32,13 @@ PrologueFluteUn = { \FluteUn
     r4 \tt {sold,16\p( si\< mi re fa} sol2\mp) r4|
     R2 r4 r8 \t {lab16( mib fa} do8) r | re,-.-> r r4 |
     mi,!2.~--\mp mi4 r | fa2~-- fa4 r2 |
-    
+
     %%% Tempo giusto %%%
     \slap { \ind #"slap" re4\f} r R2*6 r4 do'16( fad la sol |
     re'4\f) r2 | r2 do,16( fad mib si' | re4) r2 R2.
     dod,,2.\mf( mi lab2) r4 | r8 mib'\mp( fa\< lab si dod |
     re4--\f) re8 re4-> re8 | re4-> re8 re~-> re16 re8.-- | re2.---> r4 R2*2 R2-\fermataMarkup
-    
+
     %%% Solo Ténor %%%
     R1*2 R2. R1 R2. R1
     R2*4 R2.*7 r2 lab4---.\pp sol,---. r lab'---. sol,---. lab'---. r |
@@ -52,7 +48,7 @@ PrologueFluteUn = { \FluteUn
     \ten do'4.~\p do4.~ do4.~ do8 r4 |
     r8 r16 do8.~ do4.~ do4.~ do8 r4 |
     r8 re4~ re4.~ re4 r8 | lab'\mf( fa mib) |
-    
+
     %%% A tempo %%%
     re'32-.->\mp re,-. re-. re-. re,8-. r | sold,4:32\mf r8 |
     re'''32-.-> re,-. re-. re-. re,8-. r | sold,4:32\mf r8 |
@@ -68,10 +64,10 @@ PrologueFluteUn = { \FluteUn
     lab16-> lab lab r r8 | sol,16-> sol sol\! r r8 |
     R4.*8 r4 r8 \t {fa16\<( lab reb} \t {mi la do} |
     fa2.\f) | dod4\>( sib sol | mi4\pp) r2 |
-    
+
     %%% Adagio %%%
     R1*4 R1.*2 R1*3 R1.*2 R1*2 do,2\p r4 |
-    
+
     %%% Valse %%%
     r lab'''--\pp( lab--) | r solb--( solb--) | r do,--( do--) |
     r solb--( solb--) | r solb--( fab--) | r mib--( mib--) |
@@ -79,7 +75,7 @@ PrologueFluteUn = { \FluteUn
     r2 la'4--\p( la--) | r fa--( fa--) | r mi--( mi--) | r re--( re--) | r reb--( reb--) |
     r la--( la--) | r solb-- r fa-- |
     r2 re'8-.\f la'~-> la16 re,( la'8-.) | mib'4-> la,8-. lab'4.->( |
-    
+
     %%% Vivo %%%
     la4\sfz) r | R2*8
     re,,,2\mp~ re~ re~ re4 r | R2*17
@@ -92,7 +88,7 @@ OuvertureFluteUn = { \FluteUn
     \tttt {mi''16 fa re dod' sol sold si} \t {sib,8 re fad} la16 fad mib do |
     mi4 r2 | \tttt {mi16 mi, fa sold la do dod}
     \tttt {mi mi, fa sold la do dod} \tttt {mi la, do dod fa sold la} |
-    sib4 
+    sib4
   }
 }
 
@@ -104,7 +100,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     do,,2~--\p do4 r solb''4.--\pp r8 r4 |
     do,,2~\p do8 r do4 solb''4.-- r8 r4 |
     do,,2~ do8 r do4 solb''4.-- r8 r4 |
-    
+
     si1\pp( solb2) r4 | mib1( do2) r4 |
     do'1\p( la2) r4 | la2.( mi4~) mi8 r lab4\<( la) |
     \t {\ind #"sostenuto" do8\mp( fa, lab,} \t {re,4) fa'8}
@@ -114,10 +110,10 @@ ActeUnSceneUnFluteUn = { \FluteUn
     \t {mi( sib reb,} \t {solb,4) sib'8}
     lab'4\mf(\> mi reb |
     do4\p) r2 | R2.*6 \ten do1~ do2 r4 |
-    
+
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
-    
+
     %%% Agitato %%%
     \ten re,,1~\f re2 r | R1*2
     r4 r8 \t {re'16\mp( mib fa} sib4-.) r |
@@ -126,7 +122,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     r8 \t {la16( do re} mib4-.) r2 | R1
     R1. R1*2 R1.*3 R1 R1.
     dod'1\mf\>( re,2 dod1\p) r2 | R1.
-    
+
     %%% Allegro non troppo %%%
     R1 R2. R1*2 r2 r4 r8 r16 fa,32\<( sol |
     la4-.\mf) r r2 | r8 fa16-.\mp la-. r8 fa16-. la-. r2 |
@@ -145,7 +141,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     do, do, mib'' mib, fa'\< fa, solb' solb,\! r4\fermata r8 r16 do\pp |
     do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 mib'] |
     mib, solb' solb, lab' lab,\< la' si, si' re8\mf r\fermata r r16 do,\p |
-    
+
     %%% Moderato %%%
     do,8-- do,16 do' r do8-- do'16 do, do, r8 do'--[ r16 do'] |
     do,8-- sib16 do r do, do'8 r16 do8-- do'16 do,8 r |
@@ -163,7 +159,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     do8-- sib,16 do sib' do8-- sib,16 do sib' do8-- |
     sib16 do do, sib' do sib, sib' do} | R2. R1
     R2*3 r4 r8 \ttt {sol32\pp\<( la si dod red mid} |
-    
+
     %%% Allegro marcato %%%
     \st {fad8--\mf) r re--\p r fad,-- r re'-- \t {red16\<( mi mid} |
     fad8--\mf) r re--\p r fad,--} r r4 R1*2 |
@@ -175,7 +171,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     si2--( sol8) r r4 | R1 r2 r4 \st {reb''8\pp r dob( r sib r lab) r reb r |
     dob\p( r sib r lab) r reb r dob\mp( r sib r lab) r r4 |
     dob8\p( r sib r lab) r r4 | r si,8\pp r sib r lab} r |
-    
+
     %%% Agitato %%%
     re,2.\mf r4 | r re-- r re-- |
     r \t {sold'8\p( si do)} dod16\<( re dod re \tt {dod re dod re dod} |
@@ -197,7 +193,7 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
     \ttt {re16( dod) re( dod) re( dod)}
     \ttt { re( mib fa) lab( sib si) }
     \ttt { dod( mi fad sol la do) } |
-    
+
     %%% Piu vivo %%%
     re4->\f r r2 | r4 \ttt {re,,16\mf\<( fa sol) lab( sib dod) } \ttt { red( mi fad) la( si do) } |
     re4->\f r r2 | r4 \ttt {re,,16\mf\<( mi sol) la( sib do) } \ttt { mib( fa solb) lab( si dod)} |
@@ -207,16 +203,16 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
     R2. \ten re2.~\pp re4. r8\fermata r4 |
     R2. \ten re2.~\pp re2~ re8 r\fermata r4 |
     R1 R2 |
-    
+
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
     r2 r4 sib,-.\mf | sol2-- r4 sib-. | sol2-- r4 R2 R1
-    R2.*2 R2*2 
+    R2.*2 R2*2
     r2 r8 sib-.\mf | sol4-- r8 sib-. | sol2-- |
     r8 sol\sfz r4 | r8 sol-> sib-> r r4 |
     r2 r8 sol->( sib-> reb->) |
     R2. R2*3 R2.*3
-    
+
     %%% Adagio %%%
     R1*5
     \ten si1~\pp si2 r | R1*3
@@ -269,8 +265,8 @@ InterludeUnFluteUn = { \FluteUn
 ActeUnSceneDeuxFluteUn = { \FluteUn
   \relative {
     %%% Air de la Soprano2 %%%
-    
-    R2.*2-\markup "prenez le Piccolo" \Piccolo  R1*2 R2.*2  R1*2  R2.*2 
+
+    R2.*2-\markup "prenez le Piccolo" \Piccolo  R1*2 R2.*2  R1*2  R2.*2
     R1*2  R2.*2 R1*2  R2.*2 R1*2  R2.*2  R1*2 R2.*2
     re''4 la' sold8 mi re4 | mi8 re la' sold r mi sold4 |
     mi re8 la' sold4 | la8 sold mi re r la' |
@@ -280,31 +276,31 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
     sol4 si do8 sol~ | sol2 r4 | \repeat unfold 6 {R1*2 R2.*2}
     R1 |  r2 sol4 do | si8 sol fa4 sol8 fa | do' si r sol si4 |
     sol4 fa8 do' si4 do8 si | sol fa r do' fa, sol si4 |
-    do fa,8 do' r fa, | sol si do4 r | si8 do si sol fa4 si8 do | 
+    do fa,8 do' r fa, | sol si do4 r | si8 do si sol fa4 si8 do |
     si sol fa sol si4 si8 do |
-    si sol fa4 si8 do | si sol fa sol si4 | 
-    si8 do si sol fa sol si do | si sol fa sol r si do si | 
-    sol fa sol si do si |sol fa r si do si | 
-    sol fa sol si do si sol4 | si8 do si sol fa sol si do | 
-    si4 fa8 sol si do | si4 fa8 sol si do | 
+    si sol fa4 si8 do | si sol fa sol si4 |
+    si8 do si sol fa sol si do | si sol fa sol r si do si |
+    sol fa sol si do si |sol fa r si do si |
+    sol fa sol si do si sol4 | si8 do si sol fa sol si do |
+    si4 fa8 sol si do | si4 fa8 sol si do |
     si4 fa8 solb sib do sib4 | fa solb sib2\fermata
-    
+
     %%%% Récitatif %%%
-    
-    R2.*2 R1 R2.*3 R1 R2.*4 r2 r8 r16 fa32 si | 
-    mi?8 r r2 R2 R2. R1*2 R2.*5 R1 | 
-    
+
+    R2.*2 R1 R2.*3 R1 R2.*4 r2 r8 r16 fa32 si |
+    mi?8 r r2 R2 R2. R1*2 R2.*5 R1 |
+
     %%% Duo %%%
-    
-    R2. R1 R2. R1 R2. R1 R2. R1 R2. r8 
-    \t {mi,16 fa sol} sib8 r8 |R2 r4 
+
+    R2. R1 R2. R1 R2. R1 R2. R1 R2. r8
+    \t {mi,16 fa sol} sib8 r8 |R2 r4
     \t {mi,16 fa sol} sib8 r4 |r8 r16 fa16 do16. si'!32 mi8 r2 | r2 r8
     \t {mi,16 fa sol} sib8 r8 |r2 r8
     \t {mi16 red dod} lad8 r8 r2 |
     R1 red,,4 mi red mi sol la sol la sol r4 | r8.
     \t {fa'32 mi re } si8  r8 r8
     \t {la16 sold fad} red8 r8 r4 r2 |
-    
+
     %%% Piu vivo %%%
     R2. R1 R2.
     r4 r8 r16 mib la re sold dod | sol'4 r r2 |
@@ -315,13 +311,13 @@ ActeUnSceneDeuxFluteUn = { \FluteUn
     r16 la la la re4 do re8 sol~ sol4 r |
     R2.*6-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
     r4 r8 fa,, r4 |
-    
+
     %%% Poco allargando %%%
     re'1~ re2 sol mi re |
     %%% Tempo giusto subito %%%
     sib4 r r2 | R1*3
     r2 r8 si la do | dod2 r4 |
-    sol,2 r8 fa' mi'4~| 
+    sol,2 r8 fa' mi'4~|
     mi8 r r4 r8 fa, mi'4~| mi8 r r2 |
     \tt { r16 sold,, si re mi }
     \tt { sol sib do mib solb }
@@ -358,17 +354,17 @@ ActeUnSceneTroisFluteUn = { \FluteUn
     R2.*6 re''2.~ re8 r r2 |
     R2.*8 r2 \t {la8 la la} re4 do re8 la~ la4 r2 |
     R2.*5
-    
+
     %%% Lamento %%%
     R1.*6 R1*5/4*5
     reb2 sib4 r | do2 la4 r |
     reb2 sib4 r | fad2 re4 r |
     \t {sib'16 sib sib} mib8~ mib4 mib4~ mib sib re | sold4. r8 r4 | R2*2
-    
+
     %%% Tempo I %%%
     R2.*9 sol,,2. lab8 r r2 |
     R2.*3
-    
+
     %%% Tempo II %%%
     R1.*4 sol2. r | R1.
     r2. sol''8 r r4 |
@@ -408,7 +404,7 @@ ActeUnSceneTroisTerFluteUn = { \Piccolo
     la r lab mib la fa mi lab sol fad si do sib fa la mi |
     sib' solb fa la lab sol do reb si r sib fa si sol fad sib |
     la sold dod re do lab re mib dod la red mi |
-    
+
     %%% Poco meno %%%
     re8 r r2 R2.*5-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
     r8 si, sib sol fad mib re'2. | R2.
@@ -420,7 +416,7 @@ ActeUnSceneTroisTerFluteUn = { \Piccolo
     la32 sold fa8.~ \t {fa8 mi dod~ } \t {dod sold fa~ } |
     \t {fa mi dod~ } dod4 r |
     do,!2 r4 |
-    
+
     r sol'2~ sol fad4~ fad2 r4 |
     r sol2 ~ sol fad4~ fad2 r4 |
     r re'2 ~ re  red4~ red2 r4 |
@@ -463,10 +459,10 @@ ActeUnSceneQuatreFluteUn = { \FluteUn
     \partial 4 r16 la'' la la re4 do re8 la4 r R2 r4 r16
     la la la | re4 do re8 la4 r r8 sib r dod re4 r2 | R2*2
     R2-\fermataMarkup
-    
+
     %%% Allegretto comodo %%%
     R1 R2. R1*2 R1. R1*2 re,2 re re re re re2. r4 |
-    
+
     %%% Agitato %%%
     la8 r r2 R2.*5 r4 r8 do do do |
     fa2.~ fa8 r r4 sib,16 mib fad si |
@@ -484,12 +480,12 @@ ActeUnSceneQuatreFluteUn = { \FluteUn
     r8 r16 mi,,32 la mi'8 r | R2.
     \t {r8 mib16} la8 r4 | R2.
     r4 la8 mi! mi4 r2 |
-    
+
     %%% Placando assai %%%
     r2 la~ la2. r4 |
     r fa8. fa16 la2~la2. r4 |
     la,2 lab sol fad2.~ fad r4 |
-    
+
     %%% Andante a piacere %%%
     r2 \t {dod4 dod dod} \t {re re re} mib r |
     r2 \t {dod4 dod dod} \t {re re re} mib r |
@@ -497,7 +493,7 @@ ActeUnSceneQuatreFluteUn = { \FluteUn
     r2 \t {fa4 fa fa} \t {fad fad fad} sol r |
     r2 mi'' si4. la fa'2 si, re4. la |
     R1*7 R2*3 R2.*6
-    
+
     %%% A tempo %%%
     r4 do, reb mib |
     r fad sold la la'2. r4 |
@@ -544,16 +540,16 @@ EntracteFluteUn = { \FluteUn
 
 ActeDeuxSceneUnFluteUn = { \FluteUn
   \relative {
-    R2.*4 R2 R2.*2 R2 | r2 \tt {si''16 red re fad fa}| 
+    R2.*4 R2 R2.*2 R2 | r2 \tt {si''16 red re fad fa}|
     la4~ la8[ fa]~ fa8 r | r8. red16 si4. la'8~ | la2~ |
     la2.~ | la2~ | la4 r \t {r8 sol,, mib'} | fad2.~ | fad4 r |
-    r \tt {sib16 mib dod fad mi} la4~ | la4. sib,8 la'4~ | 
+    r \tt {sib16 mib dod fad mi} la4~ | la4. sib,8 la'4~ |
     la2.~| la4 r | R2. R2 | R2.*2 R2 |
     mi2.~| mi2.~| mi2.~| mi4 r |
-    
+
     %%% Entrée de la Soprano Deux %%%
     R2.*2 R1 R2. \t { r2 mi,, la} lab2.~ lab4 r sib2.~sib2 r |
-    
+
     %%% Andantino %%%
     r2 mi,~ mi2. r4 R2. | r2 mi4~ mi2.~ mi4 r mi~ mi r |
     mi r2 r mi4~ mi2.~ mi4 r2 R2. | R1 R2. R2
@@ -562,7 +558,7 @@ ActeDeuxSceneUnFluteUn = { \FluteUn
     re4 la' sold8 mi~ mi4~ mi2.~ mi2. r4 |
     r8 re la'2~ la2. r4 | r mi2 la2. r4 |
     mi'4. la4. sold4 mi re r |
-    
+
     %%% Entrée de la Contralto %%%
     sold,8 la sold mi re mi | sold la sold mi re mi sold4~ sold2.~ sold4 r r2 |
     R2. R1 R2. R1 r2 re4~ re re2 r4 | r2 re4~ |
@@ -580,7 +576,7 @@ ActeDeuxSceneUnFluteUn = { \FluteUn
 ActeDeuxSceneUnBisFluteUn = { \FluteUn
   \relative {
     R1 R2. R2
-    
+
     %%% Presto agitato %%%
     sol'8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
     sol8  mi sol mi sol mi sol mi sol lab| sol2. r2 |
@@ -593,11 +589,11 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     sol   mi sol mi sol mi sol mi sol mi | sol4 r1 | R1*5/4
     r2 dod8 re dod la sol la | dod4 r1 | R1*5/4
     re,8 dod re dod re dod re dod re dod | re4 r1 |
-    
+
     R1*5/4*6
     mi1*5/4~ mi2. r2 | R1*5/4*3
     fa1*5/4~ fa2. r2 | R1*5/4*9
-    
+
     %%% Boum %%%
     R1*5/4-\fermataMarkup
     sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
@@ -607,7 +603,7 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
     sol8 mi sol mi sol lab sol mi sol lab | sol2. r2 |
     sol8 mi sol lab sol mi sol lab sib reb |
-    
+
     %%% Air Ténor %%%
     mi'4~ mi16 fa mi fa mi fa mi fa mi4~ \t {mi8 red mi} | red2 r4 red, mi |
     mi'4~ mi16 red mi red mi red mi red mi4 r |
@@ -622,7 +618,7 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     sol mi sol mi sol mi sol mi sol r | sol mi sol mi sol lab sol r r4 |
     sol8 mi sol mi sol mi sol mi sol lab | sol mi sol mi sol mi sol r r4 |
     sol8 mi sol mi sol mi sol mi sol lab |
-    
+
     %%% Moderato assai %%%
     sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4 r2 r1 |
     sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4 r2 r1 |
@@ -643,12 +639,12 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
     sol4 r2 r8 mi sol mi sol mi sol mi | }
     sol4 r2 r8 mi sol mi sol mi sol mi | sol4 r2 r1 |
-    
+
     %%% Presto subito %%%
     sol1.~ sol2 r \t {fad'8 mi sol} red'4 | R1.
     \tt {sol,,8 mi sol mi r } \tt {sol mi sol mi r} \tt {sol mi sol mi r} |
     \tt {sol8 mi sol mi r } \tt {sol mi sol mi r} r2 |
-    
+
     %%% Tempo giusto %%%
     sol2 r4 | R2.*6-\markup "Prenez le piccolo" \Piccolo R2*2
     R2.*4 R2 R4. |
@@ -665,7 +661,7 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     \t {reb16 fa mi} lab8 r2 | re,2.
     R2.-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
     R2 R4. R2 R1*5/8 R2.
-    
+
     %%% Tempo I %%%
     r2 r4 fa,,16 sib reb solb | la4 r2 la4 r | la r la r2 |
     la4 r2 r8 si sold'4 | R1*5/4-\fermataMarkup

@@ -5,6 +5,8 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
+#(use-modules (ice-9 regex))
+#(use-modules (ice-9 optargs))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -12,9 +14,6 @@
 
 %%% This code was provided by Nicolas Sceaux.
 
-%%% Guile does not deal with accented letters
-#(use-modules (ice-9 regex))
-%%;; actually defined below, in a closure
 #(define-public string-upper-case #f)
 #(define accented-char-upper-case? #f)
 #(define accented-char-lower-case? #f)
@@ -406,3 +405,47 @@ tocAct =
 tocQuote =
 #(define-music-function (parser location text) (markup?)
    (add-toc-item! 'tocQuoteMarkup text))
+
+%% Characters and instrument names ------------------------------%
+
+#(define characters `((dummy . "")))
+#(define instruments `((dummy . "")))
+
+#(define (char-name n) (car (car (assoc-get n characters))))
+#(define (char-shortname n) (cdr (car (assoc-get n characters))))
+#(define (instr-name n) (car (car (assoc-get n instruments))))
+#(define (instr-shortname n) (cdr (car (assoc-get n instruments))))
+
+#(define (make-char-name n . pad)
+(let* ((txt (char-name n))
+       (srt (char-shortname n))
+       (m (if (pair? pad)
+          (markup #:hcenter-in (car pad) txt)
+          (markup txt)))
+       (n (if (pair? pad)
+          (markup #:hcenter-in (car pad) srt)
+          (markup srt))))
+    (ly:export (make-sequential-music (list
+                (context-spec-music (make-property-set 'instrumentName m)
+                  'Staff)
+                (context-spec-music (make-property-set 'shortInstrumentName n)
+                  'Staff)
+                (context-spec-music (make-property-set 'midiInstrument "voice oohs")
+                  'Staff))))))
+
+#(define (make-instrument-name n midi . pad)
+  (let* ((txt (instr-name n))
+         (srt (instr-shortname n))
+         (m (if (pair? pad)
+            (markup #:hcenter-in (car pad) txt)
+            (markup txt)))
+         (n (if (pair? pad)
+            (markup #:hcenter-in (car pad) srt)
+            (markup srt))))
+    (ly:export (make-sequential-music (list
+                (context-spec-music (make-property-set 'instrumentName m)
+                  'Staff)
+                (context-spec-music (make-property-set 'shortInstrumentName n)
+                  'Staff)
+                (context-spec-music (make-property-set 'midiInstrument midi)
+                  'Staff))))))

@@ -8,16 +8,12 @@
 \include "italiano.ly"
 
 ClarinetteUn = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Clarinette 1  "}
-  \set Staff.shortInstrumentName = "Cl. 1  "
-  \set Staff.midiInstrument = "clarinet"
+  #(make-instrument-name 'clarinet-one "clarinet" 25)
   \clef treble
 }
 
 ClarinetteBasse = {
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Clarinette Basse  "}
-  \set Staff.shortInstrumentName = "Cl. B.  "
-  \set Staff.midiInstrument = "clarinet"
+  #(make-instrument-name 'clarinet-bass "clarinet" 25)
   \clef bass
 }
 

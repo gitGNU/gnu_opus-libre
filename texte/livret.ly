@@ -9,7 +9,7 @@
 %%% TODO: Make a decent libretto?
 
 
-doct = \markup \column { \hspace #0 \fill-line { \smallCaps \SopranoUnName } \hspace #0 }
+doct = \markup \column { \hspace #0 \fill-line { \smallCaps \#(make-name soprano-one) } \hspace #0 }
 reine = \markup \column { \hspace #0 \fill-line { \smallCaps \SopranoDeuxName } \hspace #0 }
 dieu = \markup \column { \hspace #0 \fill-line { \smallCaps \ContraltoName } \hspace #0 }
 chef = \markup \column { \hspace #0 \fill-line { \smallCaps \TenorName } \hspace #0 }

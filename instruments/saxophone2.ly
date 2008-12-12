@@ -7,43 +7,39 @@
 
 \include "italiano.ly"
 
-SaxAltoDeux = { 
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Saxophone Alto  "}
-  \set Staff.shortInstrumentName = "Sax. A  "
-  \set Staff.midiInstrument = "alto sax"
+SaxAltoDeux = {
+  #(make-instrument-name 'saxophone-two "alto sax" 25)
   \clef treble
 }
 
-SaxophoneBaryton = { 
-  \set Staff.instrumentName = \markup { \hcenter-in #25 "Saxophone Baryton  "}
-  \set Staff.shortInstrumentName = "Sax. B  "
-  \set Staff.midiInstrument = "baritone sax"
+SaxophoneBaryton = {
+  #(make-instrument-name 'saxophone-baritone "baritone sax")
   \clef bass
 }
 
 PrologueSaxophoneDeux = { \SaxophoneBaryton
   \relative {
-    
+
     %%% Introduction %%%
     \partial 4 r4 R2.*3 R1
     \ten mi,,2~\fp mi4 r | mi4~\p \tt {mi32( fa mi mi' fa)} mi'8~ mi4~ |
     mi2~ mi4 r | mi,,2--\p r4 |
     R2*2 \ten mi2.~ | mi2~ mi4 r |
     mi2.( | mi'2) \t {sol4\<( sib do8) r} |
-    
+
     %%% Entrée du baryton 2 %%%
     re,8.->\f dod16~-> dod8 mi-> r4 | R2*2 | reb,2--\p r4 | R2
     la'4--\mp\< si-- fa'8->\! sol~-> |
     \ten sol2~\p sol2.~ sol8 r r4 | R2. R2 |
     sib,2~--\pp sib4 r \t {lab8\fsubito( fa mib} |
-    
+
     %%% Tempo giusto %%%
     re8->\f) r r4 | R2*2 re4\p( mib fa lab sib si8) r |
     \t {reb4\p( mi fad} \t {sol\< la do} |
     re4\f) r2 lab,2.--\mp( re4--) r2 solb2.\p mib do |
     r2 lab'8-> r r4 do8-> r r4 | re,,2\f re'4~-- re mib2-- |
     reb2.---> r4 | R2*2 R2-\fermataMarkup
-    
+
     %%% Solo ténor %%%
     R1*2 R2. R1 R2. R1
     R2*4 R2.*11 R4.*15
@@ -57,7 +53,7 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     do4.~ do~ do~ do8 r4 |
     do4.~ do~ do4 r8 |
     r r16 re'\mp\< \t {re re lab} |
-    
+
     %%% A tempo %%%
     re,8\sfz r4 | lab4.--\p( re8) r4 | re4.~\p( re4.) |
     \ten lab4.~\mf lab~ lab4 r8 | re,8-> r4 | R4.*2
@@ -68,12 +64,12 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     R4. solb,8\pp( lab la |
     si re mi fa\< sol sib do reb |
     re4--\f) r re,,-- | fa-- r2 | R2. |
-    
+
     %%% Adagio %%%
     R1*3-\markup "Mettez la sourdine" \ten sib1~\pp sib1.~ sib4 r r1 |
     R1*2 \ten sib1~ sib1.~ sib4 r r1 |
     R1*2 sib2\pp r4 |
-    
+
     %%% Valse %%%
     sol2 r4 | R2.*2
     r4 si'2-- r4 la2-- | r4 solb2-- r4 solb-- r mi-- |
@@ -81,7 +77,7 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     r2 lab4\mp( sol'2) r4 |
     r si,2( mi2) r4 | r2 re4( la'2\> | sol\!) |
     \ten do,1~\f do2 lab4-- |
-    
+
     %%% Vivo al fine %%%
     re,4---> r | R2*3
     \ten re'2~\p re~ re8 re->\mf\< re-> re-> re->\! r r4 |
@@ -93,9 +89,9 @@ OuvertureSaxophoneDeux = { \SaxAltoDeux
   \relative {
     R2. r2 \tt { sib16 si solb' sol re'} |
     mi,4 la,16 la sold8 r16 re \t {la' la lab} |
-    sib4 
+    sib4
   }
-}	
+}
 
 ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
   \relative {
@@ -113,10 +109,10 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     do4--\f) r2 | R2.*2
     \ten solb2.~\pp solb~ solb~ solb4 r \t {solb8\<( la sol} |
     \ten do1~\f) do2 r4 |
-    
+
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
-    
+
     %%% Agitato %%%
     \ten re,1~\mf re2 r R1 |
     re4\sfz r r2 | R1 r2 re4\sfz r |
@@ -126,14 +122,14 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     r4 \t {si8\mf\<( lab) si} mi4\! \t {lab8\<( mib lab} si2\!) |
     r4 si,2--\mp r4 | r sib'2-- r4 r2 |
     mi,,!1--\f r2 | R1.*2 |
-    
+
     %%% Allegro non troppo %%%
     R1 R2. R1*5
     R2. R1 R2. R1 R2. R1
     sol2--\f r4 r2 \t {reb'4--\> sib-- lab--} |
     sol2.--\! r4 | R1 sol2.--\p r4 | R1 sol2-- r4 |
     R2.*2 R1*8
-    
+
     %%% Moderato %%%
     R2.*2 R1 R2. R1
     R2. R1
@@ -142,7 +138,7 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     solb4 lab2. | mib8.--\mp fa16~-- fa8 solb~-- solb16 lab8.~ |
     lab8 solb-- fa-- mib-- | sib'8-> r r2 | R1
     R2*4
-    
+
     %%% Allegro marcato %%%
     r4 mib,8.--\mp\< mib16 solb4.\! r8 |
     r4 mib8.--\< mib16 solb4\!( re8) r |
@@ -154,7 +150,7 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     r2 r4 fa---. | mi2--( fa8) r fa4---. | mi2--( fa8) r r4 | R1*2
     r2 r4 sib8-.\pp r | \st {lab r fa r mib} r re' r | \st {do r la r sol r r4 |
     fad8 r mi r dod} r r4 | R1
-    
+
     %%% Agitato %%%
     re2.\mf r4 | r re-- r re-- R1 |
     r4 re2.--( re8-.) r r4 r2 | R1*6
@@ -172,7 +168,7 @@ ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     sol8->\f) r do'2---> | fa,---> sib,4~---> |sib lab2---> | R2.*2
     sib2.~---> \ten sib4.\pp r8\fermata r4 | R2.
     \ten sib2.~\pp sib2~ sib8 r\fermata r4 | R1 R2
-    
+
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
     r2 r4 si-.\p | sib2-- r4 si-. | sib2-- r4
@@ -182,7 +178,7 @@ ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     r8 sib->\mf r4 | r8 la-> mi'-> r r4 |
     r2 r8 lab,->( fa'-> mi->) |
     R2. R2*3 R2.*3
-    
+
     %%% Adagio %%%
     R1*33
     R2*4
@@ -209,33 +205,33 @@ InterludeUnSaxophoneDeux = { \SaxAltoDeux
 }
 
 ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
-  \relative { 
+  \relative {
     %%% Air de la Soprano2 %%%
-    
+
     \repeat unfold 9 { R2.*2 R1*2} R2.*2 |
     re'8 mib re sib lab sib re4 | re8 mib re sib lab sib re mib |
     lab, sib re mib lab, sib | re mib r2 |
     lab,8 sib lab fa lab sib re mib | re sib lab fa re fa re do |
-    lab4 r sol8 lab | do re do lab do4 | re,1~| re2. r4 | 
+    lab4 r sol8 lab | do re do lab do4 | re,1~| re2. r4 |
     \repeat unfold 8 {R2.*2 R1*2}
     R2.*2 R1 R1-\fermataMarkup |
-    
+
     %%% Récitatif %%%
-    
-    R2.*2-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton 
-    R1 R2.*3 R1 R2.*4 
-    \repeat tremolo 12 {si'32 do} | 
-    si8 r r2 R2 R2. R1*2 R2.*5 R1 | 
-    
+
+    R2.*2-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton
+    R1 R2.*3 R1 R2.*4
+    \repeat tremolo 12 {si'32 do} |
+    si8 r r2 R2 R2. R1*2 R2.*5 R1 |
+
     %%% Duo %%%
-    
+
     \repeat unfold 17 re,4
     \repeat unfold 7 reb
     \repeat unfold 4 si
     \repeat unfold 4 sib r
     sol4 lab8 sib | reb4 reb lab | reb lab fa lab | reb lab fa reb |
     reb' r8 lab r4 | mi2.~| mi r4 | mi'1 | dod2.~ dod~ dod4 r2 r2 r8 si'4. |
-    
+
     %%% Piu vivo %%%
     sol,4 r2 | R1-\markup "Prenez le Sax. Alto" \SaxAltoDeux R2.*2 R1
     r4 la''fad | la8 mib~mib4 r2|
@@ -275,7 +271,7 @@ ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     R2.*4 sol8 mi4 sol8 mi4 r r8 mi4 dod8 si2.~ si8 r r2 |
     R2.*8 r2 \t {mi'8 mi mi} mi4 sol la8 mi~ mi4 r2 |
     R2.*5
-    
+
     %%% Lamento %%%
     R1.*6 R1*5/4 reb,2 do4 r2 |
     reb do4 r2 |
@@ -286,7 +282,7 @@ ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     sol2 fad4 r |
     red2 mi4 r |
     reb4. reb,4 reb'8~ reb4 sib' do, reb,4. r8 r4 | R2*2
-    
+
     %%% Tempo I %%%
     R2.*7 mi2.~ mi mi lab8 r r2 | R2.*3
     R1. r2 r4 sol2. lab mib' mi1.~ mi2. r4 r2 | do1.~ do2.~ do8 r r4 |
@@ -314,7 +310,7 @@ ActeUnSceneTroisBisSaxophoneDeux = { \SaxophoneBaryton
     solb1~solb~solb4 r r2 | R1*9
   }
 }
-    
+
 
 ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
   \relative {
@@ -353,7 +349,7 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
     R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
-    
+
     R2. r16 la la la re4 do re8 la4. r4 | r16 la la la
     \acciaccatura dod16 re4 \acciaccatura si16 do4
     \acciaccatura mib16 re8 la4. r4 | R2.*4
@@ -369,7 +365,7 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     r2 sib'4 solb fa4. reb |
     r2 fa4 solb fa4. fa4 r8 |
     dod,2 re4 mi sol1~sol~sol2. r4 | R1*3 R2*3 R2.*6
-    
+
     do4.  si'8~ si16 re8. mi8 r |
     do,4. re'8~ re16 mi8. fa8 r |
     do,4 do r8 fad, r4 R1
@@ -377,7 +373,7 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     r4 la8 r sol r reb r si' r fa' r mib, r la r r2 |
     R1 R2.
     sol2. r4 sol2 r8 dod4. | sol2 r4 sol2 r4 fa2 r4 fa2. r4 r fa4. mib |
-    
+
     re2 r4 | r8 re' r | sold,2 si4~si8 dod4 |
     re2 | r8 re r | la4. sib8~ sib8. do16~do4 |
     mib2 r8 mib r | si2~si8 do~do16 re8. |
@@ -423,10 +419,10 @@ ActeDeuxSceneUnSaxophoneDeux = { \SaxophoneBaryton
     R2.*4 R2 R2.*2 R2 mi,2.~ mi2.~ mi2.~ mi4 r | R2. R2 R2.*2 R2 |
     R2.*3 R2 | la4 re,2~ | re4 r | mi4. la,8~ la4~ | la2 r4 |
     si2 | mi,2.~ | mi2.~ | mi2.~ | mi4 r |
-    
+
     %%% Entrée de la Soprano Deux %%%
     R2.*2 R1 R2. fa'1 mi2.~ mi4 r mib2.~ mib4 r8 mi,4 fa sol8 |
-    
+
     %%% Andantino %%%
     sib1~ sib2. r4 R2.*4 R2
     R2.*5 R1 R2. R2
@@ -436,7 +432,7 @@ ActeDeuxSceneUnSaxophoneDeux = { \SaxophoneBaryton
     R2. R1 solb,2.~ solb2. r4 | R2. solb1~ solb2 r4 |
     R1 R2. R1 R2. R1 R2. R1
     solb2.~ solb2. r4 |
-    
+
     %%% Entrée de la Contralto %%%
     lab'2.~ lab2. r4 | R2. R1
     R2. R1 R2. R1 R2. R1 R2.
@@ -453,7 +449,7 @@ ActeDeuxSceneUnSaxophoneDeux = { \SaxophoneBaryton
 ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
   \relative {
     R1 R2. R2
-    
+
     %%% Presto agitato %%%
     R1*5/4*18
     r8 sol'16 la sol4 r r2 |
@@ -464,7 +460,7 @@ ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     R1*5/4 r4 r8 mi16 fa mi4 r2 | R1*5/4
     reb,4 r2 reb4 r | reb r reb r2 | reb4 r r8 reb r2 | fa4 r1 |
     R1*5/4 mi4 r1 | R1*5/4-\fermataMarkup
-    
+
     %%% Boum %%%
     R1*5/4*13 mib2. fa2 si fa2. |
     r4 mib2. fa4~ fa2 lab2 si4 |
@@ -488,7 +484,7 @@ ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     mi''1 fa,,2~fa1~fa4 r |
     \tt {re8 fa r4 r8} r4 fa2 \t {mi8 fa sol} |
     sib2. r4 r2 | R1.
-    
+
     %%% Tempo giusto %%%
     re,4 r2 re4 r fa |
     re r2 re4 r2 | re4 r2 |
@@ -537,7 +533,7 @@ ActeDeuxSceneDeuxSaxophoneDeux = { \SaxAltoDeux
     mi2~ mi~ mi~ mi4 r | mi2~ mi4 r |
     r4 r8 reb' reb reb r4 | reb8 reb reb4 reb8 reb |
     reb4 r r1 | R1 R1. sol,1.~ sol2 r4 | sol4 re r2 |
-    
+
     R2. R1 R2. R1 R2. R1 R2.
     R1 R2. mi'1~ mi4 r2 | R1 R2. R1
     R2. R1 R2. R1 R2. R1 R2.
@@ -545,7 +541,7 @@ ActeDeuxSceneDeuxSaxophoneDeux = { \SaxAltoDeux
     la8 la sold r4 | sold4 r8 la la | sold4 r8 la la |
     sold re r re r | re re mib r4 | la4 r r8 | R2*5/4
     sold8 sold la r4 | R2*5/4 la4 r r8 | R2*5/4*4
-    
+
     R1*2 sib4 r r2 | R1*3
     mi,1~ mi~ mi2 r2 |
     reb'4 r2 R2 R1 | sol,1~ sol2.~ sol2. solb4 r2 R2.*4 |
