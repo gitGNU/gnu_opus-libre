@@ -249,29 +249,29 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     %%% Largo %%%
     do,2\downbow \ten do'~\downbow do
     lab2.~ <do, lab'>2~<do sol'>2.~
-    <do la'>2~ <do la'>4 r2 |
-    <do si'>2 <do si'>4 |
-    <do mib'>4 r r2 |
-    R1 R2. R2 r2 r8 lab'4. |
-    sib2.~ sib2 r4 |
-    re2 mib~ mib r4 |
+    <do la'>2~\> <do la'>4\! r2 |
+    <do si'>2\< <do si'>4 |
+    <do mib'>4--\mp r r2 |
+    R1 R2. R2 r2 r8 lab'4.\pp\upbow |
+    \ten sib2.~ sib2 r4 |
+    re2--\mp\> mib~\pp mib r4 |
     R2*3 R2. R1 R2.
-    r4 sib8 lab | sol2~sol fad2. |
-    r2 si4 mi,2. |
+    r4 sib8--\mf( lab--) | \ten sol2~ sol fad2.\mp |
+    r2 si4-.\downbow mi,2.\downbow |
 
     %%% Adagio %%%
     R1*9
-    r2 r4 r8 <do mi\harmonic mi''>~ |
+    r2 r4 r8 <do mi\harmonic mi''>~\pp |
     <do mi\harmonic mi''>1~ <do mi\harmonic mi''>~ |
     <do mi\harmonic mi''>~<do mi\harmonic mi''>~
-    <do mi\harmonic mi''>2. r8 sol'~\CaV |
-    sol4 sol fa sold |
-    mi1~mi~mi~mi2 r | R1*8
-    r4 <do''mi> <do mi> <do mi> |
-    <do mi> r r2 |
+    <do mi\harmonic mi''>2. r8 sol'~\mp\CaV |
+    sol4 sol--( fa-- sold--) |
+    mi1~\pp mi~ mi~ mi2 r | R1*8
+    r4 <do''mi>--( <do mi>-- <do mi>-- |
+    <do mi>--) r r2 |
     R1*3
-    R2 \pizz <re, sold>4 <sold, red'> <fa reb'> r
-    r \arco <dod sold'>
+    R2 \pizz <re, sold>4\mp <sold, red'> <fa reb'> r
+    r \arco <dod sold'>\f\downbow
   }
 }
 

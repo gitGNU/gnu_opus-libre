@@ -197,24 +197,24 @@ ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
 
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-    r2 r4 lab' | sol2 r4 lab | sol2 r4 R2
-    sib2 r |
-    R2.*2 R2*2
-    r2 r8 fa, | sol'4 r8 fa, | sol'2 |
-    r8 re r4 | r8 mi do r r4 |
-    r2 r8 reb \t {sol16 lab sib} reb8 |
+    r2 r4 lab'-.\mp | sol2-- r4 lab-. | sol2-- r4 R2
+    sib2--\mf r |
+    R2.*2 R2*2 
+    r2 r8 fa,-.\mp | sol'4-- r8 fa,-. | sol'2-- |
+    r8 re->\f r4 | r8 mi-> do-> r r4 |
+    r2 r8 reb-> \t {sol16\< lab sib} reb8->\! |
     R2. R2*3 R2.*3
 
     %%% Adagio %%%
     R1*21
-    r4 mi mi8 re fad4 |
-    fad8 re mi4 mi8 re fad4 |
+    r4 mi--\pp mi8( re fad4) |
+    fad8( re mi4) mi8 re fad4 |
     fad8 re mi4 mi8 re fad4 |
     fad8 re mi4 mi8 re fad4 |
     mi  mi8 fad re4 re8 fad |
     mi4 mi8 fad r2 |
-    r fad4 fad8 re | mi4 r r2 |
-    r4 fad fad mi |
+    r fad4--\p fad8( re | mi4) r r2 |
+    r4 fad--\pp fad-- mi-- |
     R1*2 R1-\fermataMarkup |
     R2*4
   }

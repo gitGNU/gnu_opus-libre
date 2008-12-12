@@ -278,25 +278,25 @@ ActeUnSceneUnBisAltoUn = { \AltoUn
 
     %%% Largo %%%
     R2*3 R2.
-    mib,2 mi mi4 |
-    fa2~fa4 r2 |
-    r2 mi4 sold4 r r2 |
+    \ind #"espr." mib,2\p( mi) mi4 |
+    fa2~\p\> fa4\! r2 |
+    r2 mi4\< sold4--\mp r r2 |
     R1 R2. R2 R1 R2.*2 R2*2 R2. R2*3 R2. R1 R2.
-    r4 sib <mib, sib'>2~<mib sib'>
-    <fad la>2. r2 <fad la>4 |
-    <mi sold>2.
-
+    r4 sib\mf\downbow \ten <mib, sib'>2~ <mib sib'>
+    <fad la>2.\mp r2 <fad la>4-.\downbow |
+    <mi sold>2.\downbow
+    
     %%% Adagio %%%
     R1*14
-    r2 si''~si1
-    <re,si'>~<re si'>~<re si'>~<re si'>~<re si'>~
+    r2 si''~\pp si1
+    <re,si'>~\pp <re si'>~<re si'>~<re si'>~<re si'>~
     <re si'>~<re si'>~<re si'>~<re si'>~<re si'>~
-    <re si'>4 r <re si'> <re si'> |
-    <re si'> <re si'> r2 |
-    r4 <re si'> <re si'> <re si'> |
-    <re si'> r r2 | R1*3
-    R2 \pizz <fa si>4 <fad si> <sol si> r |
-    r \arco <mi, si'>
+    <re si'>4 r <re si'>--( <re si'>-- |
+    <re si'>-- <re si'>--) r2 |
+    r4 <re si'>--( <re si'>-- <re si'>-- |
+    <re si'>--) r r2 | R1*3
+    R2 \pizz <fa si>4\mp <fad si> <sol si> r |
+    r \arco <mi, si'>\f\downbow
   }
 }
 

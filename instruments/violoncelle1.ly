@@ -264,27 +264,27 @@ ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
     \ten do2~\CaV do~\CaV do~\CaV do2.~\CaV
     do2~\CaV do2.~\CaV do2~\CaV do2.~\CaV
     do2.~\CaV do4 r r2 |
-    R1 R2. R2 r2 r8 mi4. |
-    sib2.~ sib2 r4 |
-    la'2 mib~ mib r4 |
+    R1 R2. R2 r2 r8 mi4.\pp\upbow |
+    \ten sib2.~ sib2 r4 |
+    la'2--\mp\> mib~\pp mib r4 |
     R2*3 R2. R1 R2.
-    r4 sib8 lab | sol2~sol fad2. |
-    r2 si4 mi,2. |
-
+    r4 sib8--\mf( lab--) | \ten sol2~ sol fad2.\mp |
+    r2 si4-.\downbow mi,2.\downbow |
+    
     %%% Adagio %%%
     R1*9
-    r2 r4 r8 <do mi\harmonic mi''>~ |
+    r2 r4 r8 <do mi\harmonic mi''>~\pp |
     <do mi\harmonic mi''>2. r4 |
     r2 r8 <sol' si\harmonic si''>4.~ |
     <sol si\harmonic si''>1~<sol si\harmonic si''>~
-    <sol si\harmonic si''>2. r8 sol~\CaV |
-    sol4 sol fa sold |
+    <sol si\harmonic si''>2. r8 sol~\mp\CaV |
+    sol4 sol--( fa-- sold--) |
     mi1~mi~mi~mi2 r | R1*8 \clef treble
-    r4 <sol''si> <sol si> <sol si> |
-    <sol si> r r2 \clef bass |
+    r4 <sol''si>--( <sol si>-- <sol si>-- |
+    <sol si>--) r r2 \clef bass |
     R1*3
-    R2 \pizz <sold, dod>4 <red la'> <reb lab'> r
-    r \arco <sold, mi'>
+    R2 \pizz <sold, dod>4\mp <red la'> <reb lab'> r
+    r \arco <sold, mi'>\f\downbow
   }
 }
 

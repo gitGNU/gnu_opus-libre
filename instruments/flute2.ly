@@ -193,32 +193,32 @@ ActeUnSceneUnBisFluteDeux = { \FluteDeux
 
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-    r2 r4 lab, | sol2 r4 lab | sol2 r4 R2 R1
-    R2.*2 R2*2
-    r2 r8 lab | sol4 r8 lab | sol2 |
-    r8 fad r4 | r8 fad la r r4 |
-    r2 r8 fad la sib |
+    r2 r4 lab,-.\mf | sol2-- r4 lab-. | sol2-- r4 R2 R1
+    R2.*2 R2*2 
+    r2 r8 lab-.\mf | sol4-- r8 lab-. | sol2-- |
+    r8 fad\sfz r4 | r8 fad-> la-> r r4 |
+    r2 r8 fad->( la-> sib->) |
     R2. R2*3 R2.*3
 
     %%% Adagio %%%
     R1*5
-    mi,1~mi2 r | R1*3
-    r2 r4 la | mi32 re8..~re4 r8 mi32 re16.~re4~|
-    re  mi32 re8..~re4 mi32 re8..~|
+    \ten mi,1~\pp mi2 r | R1*3
+    r2 r4 la\pp | mi32\>( re8..~\!) re4 r8 mi32\>( re16.~\!) re4~|
+    re  \simile mi32 re8..~ re4 mi32 re8..~|
     re4 mi32 re8..~re4 mi32 re8..~|
     re4 mi32 re8..~re4 mi32 re8..~|
-    re4 re32 mi8.. mi4 re32 mi8.. |
-    re4 re do do re re do do |
-    re8 mi do4 do8 mi re4 |
-    re8 mi do4 re  re8 mi |
-    do4 do8 mi re4 re8 mi |
+    re4 re32 mi8.. mi4-- re32 mi8.. |
+    re4-- re-- do-- do-- re-- re-- do-- do-- |
+    re8\p( mi do4) do8( mi re4) |
+    re8( mi do4) re-- re8( mi |
+    do4) \simile do8 mi re4 re8 mi |
     do4 do8 mi re4 re8 mi |
     do4 do8 mi re4 re8 mi |
     do4 do8 mi re4 re8 mi |
     do4 do8 mi re4 re8 mi |
     do4 do8 mi re4 re re re r2 |
-    r sol4 sol | sol r r2 |
-    r4 sol sol sol |
+    r sol4--\p sol-- | sol-- r r2 |
+    r4 sol--\pp sol-- sol-- |
     R1*2 R1-\fermataMarkup |
     R2*4
   }
