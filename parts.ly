@@ -20,16 +20,8 @@
 \include "./texte/nomenclature.ly"
 \include "./texte/decoupage.ly"
 \include "./texte/didascalies.ly"
-\include "./texte/texte.ly"
 
 \include "./master/mesures.ly"
-
-\include "./voix/soprano1.ly"
-\include "./voix/soprano2.ly"
-\include "./voix/contralto.ly"
-\include "./voix/tenor.ly"
-\include "./voix/baryton1.ly"
-\include "./voix/baryton2.ly"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
 

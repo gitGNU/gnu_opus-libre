@@ -22,20 +22,20 @@
   \header {
     piece = \OuvertureTitre
   }
-} %}
+} %
 \score {
   \ActeUnSceneUn
   \header {
     acte = \ActeUnTitre
     piece = \SceneUnTitre
   }
-} %{
+} %}
 \score {
   \ActeUnSceneUnBis
   \header {
     piece = \Separateur
   }
-} %
+} %{
 \score {
   \InterludeUn
   \header {
