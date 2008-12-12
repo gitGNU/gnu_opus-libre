@@ -233,9 +233,9 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
     %%% Air de la Soprano2 %%%
 
     \repeat unfold 9 {R2.*2 R1*2}
-    R2. | r4 dod,, r |
-    sol1~  sol~ | sol2.~  sol4 r2 | sol1~ sol2.  r4 |R2.*2 |
-    sold1~ sold~| sold2.~ sold~   |sold1~ sold2. r4 |
+    R2. | r4 dod,,--\mf r |
+    \ten sol1~\f  sol~ | sol2.~  sol4 r2 | sol1~---> sol2.  r4 |R2.*2 |
+    sold1~\pp sold~| sold2.~ sold~   |sold1~ sold2. r4 |
     \repeat unfold 7 {R2.*2 R1*2} R2.*2 R1 R1-\fermataMarkup |
 
     %%% Récitatif %%%

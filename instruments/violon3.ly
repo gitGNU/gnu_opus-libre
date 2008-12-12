@@ -312,42 +312,42 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     %%% Air de la Soprano2 %%%
 
     R2.*2 R1*2  R2. |
-    sold'8 la sold mi re mi | sold la sold mi re mi sold4 |
-    sold8 la sold mi re mi sold la sold mi re mi sold4 |
-    R2.| la,4-. re-. mi8( re la4-.) | re8( la mi' re)-. r re mi4-. |
-    re-. la8( mi' re4)-. | la'8( sold mi re)-. r la' |
+    sold'8\p( la sold mi) re( mi) | sold( la sold mi) re( mi) sold4-- |
+    sold8( la sold mi) re( mi-.) sold( la sold mi) re( mi) sold4-- |
+    R2.| la,4-.\mp re-. mi8( re la4-.) | re8( la mi' re)-. r re mi4-. |
+    re-. la8( mi' re4)-. | la'8( sold mi re)-. r la'-. |
     R1*2 |  R2.*2 |
-    sold8( la sold mi re mi sold la |
-    sold mi re mi sold4)-. sold8( la |
-    sold mi re mi sold la | sold mi re mi sold4)-. |
-    R1 | re4-. la'-. sold8( mi re4-.) |
-    mi8( re la' sold)-. r la | sold mi re mi sold4-. |
-    r4 <re sol\harmonic> r2 |
-    r8 <re sol\harmonic> r2 <re sol\harmonic>4 |
-    r8 <re sol\harmonic> r4 <re sol\harmonic> |
-    r4 r8 <re sol\harmonic> r4 |
-    r <sol' do\harmonic> r2 r8 <sol do\harmonic> r2 <sol do\harmonic>4 |
-    r8 <sol do\harmonic> r4 <sol do\harmonic> |
-    r4 r8 <sol do\harmonic> r4 |
-    r4 <sol,, do\harmonic> r2 | la4 re8 si r la si4 |
-    re4 sol8 fa do'4 | fa,8 sol si do r4 |
-    sol, do re8 fa re do |
-    sol do re fa re do sol do | re2.~| re4 r2 |
-    lab'8 sib re mib fa, lab sib re |
-    re, fa re do sol2~| sol2.~| sol2 r4 |
+    sold8\pp\(( la sold mi) re( mi) sold( la |
+    sold mi) re( mi) sold4-.\) sold8\(( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4-.\) |
+    R1 | re4-.\pp la'-. sold8( mi re4-.) |
+    mi8( re la' sold)-. r la( | sold mi) re( mi) sold4-. |
+    r4 <re sol\harmonic>-.-> r2 |
+    r8 <re sol\harmonic>-.-> r2 <re sol\harmonic>4-.-> |
+    r8 <re sol\harmonic>-.-> r4 <re sol\harmonic>-.-> |
+    r4 r8 <re sol\harmonic>-.-> r4 |
+    r <sol' do\harmonic>-.-> r2 r8 <sol do\harmonic>-.-> r2 <sol do\harmonic>4-.-> |
+    r8 <sol do\harmonic>-.-> r4 <sol do\harmonic>-.-> |
+    r4 r8 <sol do\harmonic>-.-> r4 |
+    r4 <sol,, do\harmonic>-.-> r2 | la4-.\mf re8->( si) r la-. si4-> |
+    re4-. sol8( fa) do'4-> | fa,8( sol) si-> do-> r4 |
+    sol,-> do-> re8( fa) re( do) |
+    sol( do) re( fa) re( do) sol( do) | re2.~| re4 r2 |
+    \ind #"détaché" lab'8 sib re mib fa, lab sib re |
+    re, fa re do sol2~\>| sol2.~\!| sol2 r4 |
     R1*2 R2.*2 R1*2 R2.*2 |
-    <re' la'!>1~\CaV <re la'>~\CaV |
+    <re' la'!>1~\ppp\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>~\CaV|
     <re la'>1~\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>2\CaV  r4|
-    sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la |
+    \flaut sold8\ppp( la sold mi re mi  sold la |
+    sold mi re mi sold4) sold8( la |
     sold mi re mi sold la |
-    sold mi re mi sold4 |
-    sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la |
+    sold mi re mi sold4) |
+    sold8( la sold mi re mi sold la |
+    sold mi re mi sold4) sold8( la |
     sold mi re mi sold la |
-    sold mi re mi sold4 |
+    sold mi re mi sold4) |
     R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1 R1-\fermataMarkup  |
 
     %%% Récitatif %%%

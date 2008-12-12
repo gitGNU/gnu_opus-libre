@@ -308,22 +308,22 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
   \relative {
     %%% Air de la Soprano2 %%%
 
-    R2.*2 R1*2 R2.*2 re,4 la' sold8 mi re4 mi8 re la' sold r mi sold4 |
-    mi4 re8 la' sold4 la8 sold mi re r la'|
-    re,8 mi sold4 la re,8 la' | r re, mi sold la4 sold8 re |
-    mi4 sold la8 mi | r sold la re, mi4~|
+    R2.*2 R1*2 R2.*2 re,4-.\pleggiero la'-. sold8( mi) re4-. mi8( re) la'( sold) r mi sold4-. |
+    mi4-. re8( la') sold4 la8( sold) mi( re) r la'|
+    re,8( mi) sold4-. la-. re,8 la' | r re, mi( sold) la4-. sold8( re) |
+    mi4-. sold-. la8( mi) | r sold-. la( re,) mi4~--|
     mi1~ mi2 r2 | R2.*2 R1*2 R2.*2 |
-    sold,1~ sold4 re'8 fad re dod sold4~| sold2.~|sold4 r2|
-    dod1~ dod~| dod2 r4 | r2 fad8 re |
-    dod1~ dod~| dod2 r4| r dod r |
-    mi1~ mi2. r4 | dod2.~ dod2 r4 |
-    sol!1~  sol~ | sol2 r4 |
-    sol re' do8 lab | sol2. r4|
-    sol re' do8 lab sol4 | lab8 sol do re r4| R2. |
-    sold1~ sold~| sold2.~ sold~   |
+    sold,1~\p sold4 re'8( fad) re( dod sold4~)| \ten sold2.~|sold4 r2|
+    \ten dod1~ dod~| dod2 r4 | r2 fad8\mp( re) |
+    dod1~ dod~| dod2 r4| r dod-- r |
+    mi1~\mp mi2. r4 | dod2.~\mf dod2 r4 |
+    \ten sol!1~\f sol~ | sol2 r4 |
+    sol-> re'-> do8->( lab) | sol2.---> r4|
+    sol-> re'-> do8( lab) sol4-> | lab8( sol) do( re) r4| R2. |
+    sold1~\pp sold~| sold2.~ sold~   |
     sold1~ sold2. r4 |
     R2.*2 R1*2 R2.*2 R1*2 R2.*2 | \clef treble
-    la'1~\CaV la~ la2.~ la~ la1~ la~ la2.~ la2 r4|
+    la'1~\pp\CaV la~ la2.~ la~ la1~ la~ la2.~ la2 r4|
     R1*2 R2.*2 R1*2 R2.*2| R1*2 R2.*2 R1|
     R1-\fermataMarkup \clef bass |
 

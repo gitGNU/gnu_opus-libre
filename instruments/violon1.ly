@@ -314,47 +314,47 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
     %%% Air de la Soprano2 %%%
 
     R2.*2 R1*2  R2.*2 R1*2  R2.*2
-    re4-. la'-. sold8( mi re4-.) |
+    re4-.\mp la'-. sold8( mi re4-.) |
     mi8( re la' sold)-. r mi sold4-. |
     mi-. re8( la' sold4)-. | la8( sold mi re)-. r4 |
-    sold8( la sold mi re4)-. sold8( la) |
+    sold8\p( la sold mi re4)-. sold8( la) |
     sold( mi re mi sold4)-. sold8( la) |
     sold( mi re4)-. sold8( la) |
     sold( mi re mi sold4)-. |
     R1*2 | R2.*2 |
-    la8 re la sold re sold la re |
-    la sold re sold la2 |
-    r8 la re la sold re |
-    sold la r mi sold4-. |
-    re-+ <la'' re> r2 |
-    r8 <la re>8 r4 re,,-+ <la'' re> |
-    r8 <la re> r4 <la re> r8 re,,-+ r <la'' re> r4 |
-    sol,,-+ <do'' sol'> r2 |
-    r8 <do sol'> r4 sol,,-+ <do'' sol'> |
-    r8 <do sol'> r4 <do sol'> |
-    r8 sol,,-+ r <do'' sol'> r4 |
-    sol,,-+ <do'' sol'> r2 |
-    la,,4 re8 si r la si4 |
-    re4 sol8 fa do'4 | fa,8 sol si do r4 |
-    << lab'2 \\ {re,8 mib re sib} >> lab8 sib re mib |
-    re sib lab sib re4 r |
-    <re lab'>8 mib re sib <re lab'> mib |
-    re sib <re lab'> mib re sib |
-    <re lab'>1 ~ <re lab'>4 r sol,, lab |
-    do8 re fa2~| fa r4 |
+    la8\p( re la sold) re( sold) la( re |
+    la sold) re( sold) la2 |
+    r8 la( re la sold) re( |
+    sold la) r mi sold4-. |
+    re-+ <la'' re>-.-> r2 |
+    r8 <la re>8-.-> r4 re,,-+ <la'' re>-.-> |
+    r8 <la re>-.-> r4 <la re>-.-> r8 re,,-+ r <la'' re>-.-> r4 |
+    sol,,-+ <do'' sol'>-.-> r2 |
+    r8 <do sol'>-.-> r4 sol,,-+ <do'' sol'>-.-> |
+    r8 <do sol'>-.-> r4 <do sol'>-.-> |
+    r8 sol,,-+ r <do'' sol'>-.-> r4 |
+    sol,,-+ <do'' sol'>-.-> r2 |
+    la,,4-.\mf re8->( si) r la-. si4-> |
+    re4-. sol8( fa) do'4-> | fa,8( sol) si-> do-> r4 |
+    << lab'2 \\ {re,8\ff( mib re sib)} >> lab8( sib) re( mib |
+    re sib) lab( sib) re4-> r |
+    <re lab'>8->( mib re sib) <re lab'>->( mib |
+    re sib) <re lab'>->( mib re sib) |
+    <re lab'>1---> ~ <re lab'>4 r sol,,-- lab-- |
+    do8\>( re) fa2~--\mp| fa r4 |
     R1*2 R2.*2 R1*2 R2.*2 |
-    <re la'!>1~\CaV<re la'>~\CaV |
+    <re la'!>1~\ppp\CaV<re la'>~\CaV |
     <re la'>2.~\CaV <re la'>~\CaV|
     <re la'>1~\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>2\CaV  r4|
-    sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la |
+    \flaut sold8\ppp( la sold mi re mi sold la |
+    sold mi re mi sold4) sold8( la |
     sold mi re mi sold la |
-    sold mi re mi sold4 |
-    sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la |
+    sold mi re mi sold4) |
+    sold8( la sold mi re mi sold la |
+    sold mi re mi sold4) sold8( la |
     sold mi re mi sold la |
-    sold mi re mi sold4 |
+    sold mi re mi sold4) |
     R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1 R1-\fermataMarkup  |
 
     %%% Récitatif %%%

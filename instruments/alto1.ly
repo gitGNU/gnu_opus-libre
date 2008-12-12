@@ -317,50 +317,50 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
   \relative {
     %%% Air de la Soprano2 %%%
 
-    R2.*2 r4 sold'8 la sold mi re mi
-    sold la sold mi re mi sold4~ | sold2 r4 | R2. |
-    sold8 la sold mi re mi sold la
-    sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la | sold mi re mi sold4 |
-    sold8 la sold mi re mi sold la
-    sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la | sold mi re mi sold4~ |
+    R2.*2 r4 sold'8\p\(( la sold mi) re( mi)
+    sold( la sold mi) re( mi) sold4~--\) | sold2 r4 | R2. |
+    sold8\mp( la sold mi) re( mi) sold( la
+    sold mi) re( mi) sold4-- sold8( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4-- |
+    sold8( la sold mi) re( mi) sold( la
+    sold mi) re( mi) sold4-- sold8( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4~-- |
     sold1~ sold2 r2 | R2.*2 |
-    re,4 si' sold8 fad re4 |
-    fad8 re si' sold r fad sold4 |
-    fad4 re8 si' sold4 | si8 sold fad re r4 |
-    re'4 la' sold8 mi re4 |
-    mi8 re mi4 la8 re sold, mi | re mi sold4 r | R2.|
-    sold8 la sold mi re mi sold la |
-    sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la |
-    sold mi re mi sold4 |
-    la,8 si la fa mi fa la si |
-    la fa mi fa la4 la8 si |
+    re,4-.\p si'-. sold8( fad) re4-. |
+    fad8( re) si'( sold) r fad sold4-. |
+    fad4-. re8( si') sold4-. | si8( sold) fad( re) r4 |
+    re'4-.\pp la'-. sold8( mi re4-.) |
+    mi8-.( re mi4-.) la8( re sold, mi) | re( mi) sold4-. r | R2.|
+    sold8\p( la sold mi) re( mi) sold( la |
+    sold mi) re( mi) sold4-. sold8( la |
+    sold mi) re( mi) sold( la |
+    sold mi) re( mi) sold4-. |
+    la,8\pp( si la fa mi fa la si |
+    la fa mi fa la4) la8( si |
     la fa mi fa la si |
-    la fa mi fa la4 |
-    mi si' la8 fa mi4 |
-    la8 fa re' si r si sol'4 |
-    si, mi8 re fa4~| fa2 r4 | \clef treble
-    <lab lab'>1~ <lab lab'>2. r4 |
-    <lab lab'> r <lab lab'> | r <lab lab'> r |
-    <lab lab'>1~| <lab lab'>4 r \clef alto lab, sol |
+    la fa mi fa la4) |
+    mi-.\mf si'-. la8( fa) mi4-. |
+    la8( fa) re'->( si) r si-. sol'4-> |
+    si,-. mi8( re) fa4~--->| fa2 r4 | \clef treble
+    \ten <lab lab'>1~\f <lab lab'>2. r4 |
+    <lab lab'>---> r <lab lab'>---> | r <lab lab'>---> r |
+    \ten <lab lab'>1~| <lab lab'>4 r \clef alto lab,( sol) |
     re'2.~| re2 r4 | R1*2 R2.*2 |
-    sold8 la sold mi re mi sold la |
-    sold mi re mi sold4 sold8 la|
-    sold mi re mi sold la | sold mi re mi sold4 |
-    sold8 la sold mi re4 sold8 la |
-    sold mi re mi sold4 sold8 la |
-    sold mi re4 sold8 la | sold mi re mi sold4 |
-    sold8 la sold mi re4 sold8 la |
-    sold mi re mi sold4 sold8 la |
-    sold mi re4 sold8 la | sold mi re mi sold4~|
+    \flaut sold8\pp( la sold mi re mi sold la |
+    sold mi re mi sold4) sold8( la|
+    sold mi re mi sold la | sold mi re mi sold4) |
+    sold8( la sold mi re4) sold8( la |
+    sold mi re mi sold4) sold8( la |
+    sold mi re4) sold8( la | sold mi re mi sold4) |
+    sold8( la sold mi re4) sold8( la |
+    sold mi re mi sold4) sold8( la |
+    sold mi re4) sold8( la | sold mi re mi) sold4~|
     sold1~ sold~ sold2.~ sold~ |
     sold1~ sold~ sold2.~ sold2 r4|
-    re8 mi sold la sold mi re mi |
-    sold la sold mi re mi sold la |
-    sold mi re mi sold la |
-    sold mi re2~| re2. r4 | R1 | R2.*2 | R1*2 |
+    \flaut re8\ppp( mi sold la sold mi re mi) |
+    sold( la sold mi re mi) sold( la |
+    sold mi re mi) sold( la |
+    sold mi re2~)| \ten re2. r4 | R1 | R2.*2 | R1*2 |
     R2.*2 | R1 R1-\fermataMarkup |
 
     %%% Récitatif %%%

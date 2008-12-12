@@ -313,19 +313,19 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     %%% Air de la Soprano2 %%%
 
     R2.*2 | R1*2| R2.*2 | R1*2 | R2.*2|
-    re,8 mi sold4 la re,8 la' |
-    r re, mi sold la4 sold8 re |
-    mi4 sold la8 mi | r sold la re, mi4~|
+    re,8(\pleggiero mi) sold4-. la-. re,8 la' |
+    r re, mi( sold) la4-. sold8( re) |
+    mi4-. sold-. la8( mi) | r sold la( re,) mi4~--|
     mi1~ mi2 r2 | R2.*2 | R1*2 | R2.*2 | R1*2 | R2.*2|
-    dod,1~ dod~| dod2 r4 | R2.|
-    dod1~ dod~| dod2 r4| r dod r |
-    mi1~ mi2. r4 | dod2.~ dod2 r4 |
-    sol'1~  sol~ | sol2 r4 |
-    sol re' do8 lab | sol2. r4|
-    sol re' do8 lab sol4 | lab8 sol do re r4| R2. |
-    sold1~ sold~| sold2.~ sold~   |
+    \ten dod,1~\p dod~| dod2 r4 | R2.|
+    dod1~\mp dod~| dod2 r4| r dod-- r |
+    mi1~\mp mi2. r4 | dod2.~\mf dod2 r4 |
+    \ten sol'1~\f  sol~ | sol2 r4 |
+    sol-> re'-> do8->( lab) | sol2.---> r4|
+    sol-> re'-> do8( lab) sol4-> | lab8( sol) do( re) r4| R2. |
+    sold1~\pp sold~| sold2.~ sold~   |
     sold1~ sold2. r4 | R2.*2 R1*2 R2.*2 R1*2 R2.*2 |
-    \clef treble re'1~\CaV re~ re2.~ re~ re1~ re~ re2.~ re2 r4|
+    \clef treble re'1~\pp\CaV re~ re2.~ re~ re1~ re~ re2.~ re2 r4|
     R1*2 R2.*2 R1*2 R2.*2| R1*2 R2.*2 R1|
     R1-\fermataMarkup \clef bass |
 

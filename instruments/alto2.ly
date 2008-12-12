@@ -330,35 +330,35 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
   \relative {
     %%% Air de la Soprano2 %%%
 
-    R2.*2 r4 sold'8 la sold mi re mi sold la sold mi re mi sold4~ |
+    R2.*2 r4 sold'8\p\(( la sold mi) re( mi) sold( la sold mi) re\>( mi) sold4~--\!\) |
     sold2 r4 | R2. |
-    sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la | sold mi re mi sold4 |
-    sold8 la sold mi re mi sold la sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la | sold mi re mi sold4~ |
+    sold8\mp( la sold mi) re( mi) sold( la sold mi) re( mi) sold4-- sold8( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4-- |
+    sold8( la sold mi) re( mi) sold( la sold mi) re( mi) sold4-- sold8( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4~-- |
     sold1~ sold2 r2 | R2.*2 | R1*2 R2.*2 |
-    re4 la' sold8 mi re4 | mi8 re mi4 la8 re sold, mi |
-    re mi sold4 r | R2.|
-    sold8 la sold mi re mi sold la |
-    sold mi re mi sold4 sold8 la |
-    sold mi re mi sold la | sold mi re mi sold4 |
-    la,8 si la fa mi fa la si |
-    la fa mi fa la4 la8 si |
+    re4-.\pp la'-. sold8-.( mi re4-.) | mi8-.( re mi4) la8( re sold, mi) |
+    re( mi) sold4-. r | R2.|
+    sold8\p( la sold mi) re( mi) sold( la |
+    sold mi) re( mi) sold4-. sold8( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4-. |
+    la,8\pp( si la fa mi fa la si |
+    la fa mi fa la4) la8( si |
     la fa mi fa la si |
-    la fa mi fa la4 |
-    mi si' la8 fa mi4 |
-    la8 fa re' si r si sol'4 |
-    si, mi8 re fa4~| fa2 r4 | \clef treble
-    <lab lab'>1~ <lab lab'>2. r4 |
-    <lab lab'> r <lab lab'> | r <lab lab'> r |
-    <lab lab'>1~| <lab lab'>4 r \clef alto lab, sol |
+    la fa mi fa la4) |
+    mi-.\mf si'-. la8( fa) mi4-. |
+    la8( fa) re'->( si) r si-. sol'4-> |
+    si,-. mi8( re) fa4~--->| fa2 r4 | \clef treble
+    \ten <lab lab'>1~\f <lab lab'>2. r4 |
+    <lab lab'>---> r <lab lab'>---> | r <lab lab'>---> r |
+    \ten <lab lab'>1~--->| <lab lab'>4 r \clef alto lab,( sol) |
     do2.~| do2 r4 | R1*2 R2.*2 |
-    sold8 la sold mi re mi sold la | sold mi re mi sold4 sold8 la|
-    sold mi re mi sold la | sold mi re mi sold4 |
-    sold8 la sold mi re4 sold8 la | sold mi re mi sold4 sold8 la |
-    sold mi re4 sold8 la | sold mi re mi sold4 |
-    sold8 la sold mi re4 sold8 la | sold mi re mi sold4 sold8 la |
-    sold mi re4 sold8 la | sold mi re mi~ mi4~|
+    \flaut sold8\pp( la sold mi re mi sold la | sold mi re mi sold4) sold8( la|
+    sold mi re mi sold la | sold mi re mi sold4) |
+    sold8( la sold mi re4) sold8( la | sold mi re mi sold4) sold8( la |
+    sold mi re4) sold8( la | sold mi re mi sold4) |
+    sold8( la sold mi re4) sold8( la | sold mi re mi sold4) sold8( la |
+    sold mi re4) sold8( la | sold mi re mi~) mi4~|
     mi1~ mi~ mi2.~ mi~ | mi1~ mi~ mi2.~ mi2 r4|
     \repeat unfold 3 {R1*2 R2.*2}|
     R1 R1-\fermataMarkup |
