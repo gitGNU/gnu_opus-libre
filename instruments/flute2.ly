@@ -126,7 +126,7 @@ ActeUnSceneUnFluteDeux = { \FluteDeux
     sib-- sib'16 sib, r8 sib sib'16 sib,8 sib'16 |
     sib,8--\pp[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] |
     sib,8 sib'16 sib, do'\< do, reb' reb,\! r4\fermata r8 r16 sib'\pp |
-    sib,8--[ r16 sib'] sib,8[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] |
+    sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] |
     sib,8 do'16 do, mib'\< mib, fa' fa,\! r4\fermata r8 r16 sib\pp |
     sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 sib'] sib,8--[ r16 do'] |
     do, fa' fa, solb' solb,\< lab' la, re mi8\mf r\fermata r r16 sib\p |

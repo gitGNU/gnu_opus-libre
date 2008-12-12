@@ -2337,8 +2337,8 @@ EntracteMainDroite = {
     <lab re sol>2. <mib' solb re'>4 r r2 | R1 \clef bass |
     <do, sol'>2.~ <do sol'>2 r4 \clef treble |
     <la' sol'>2 <sol la'>4 <la sol'> | <sol la'>2. r4 |
-    r <mi' si>2 <mi si' fad'>2 r4 |
-    <fad' dod' sold>2. <la sold'>8 <la sold'> |
+    r <mi' si'>2 <mi si' fad'>2 r4 |
+    <fad' dod' sold'>2. <la sold'>8 <la sold'> |
     <sold la'>4 \clef bass re,,16 re' re, re'
     \repeat tremolo 4 {re, re'}
     \oneStemUp \repeat tremolo 8 {re, re'} \clef treble |

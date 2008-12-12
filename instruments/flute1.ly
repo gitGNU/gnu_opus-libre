@@ -109,7 +109,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     \t {mi\mp( sib reb,} \t {solb,4) sib'8}
     \t {mi( sib reb,} \t {solb,4) sib'8}
     lab'4\mf(\> mi reb |
-    do4\p) r2 | R2.*6 \ten do1~ do2 r4 |
+    do4\p) r2 | R2.*6 \ten do1\f~ do2 r4 |
 
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
@@ -137,7 +137,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     do-- do'16 do, r do, do'8 do'16 do,8 do'16 |
     do,8--\pp[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] |
     do, do, do'' do, reb'\< reb, mib' mib,\! r4\fermata r8 r16 do'\pp |
-    do,8--[ r16 do'] do,8[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] |
+    do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] |
     do, do, mib'' mib, fa'\< fa, solb' solb,\! r4\fermata r8 r16 do\pp |
     do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 mib'] |
     mib, solb' solb, lab' lab,\< la' si, si' re8\mf r\fermata r r16 do,\p |

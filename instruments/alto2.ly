@@ -173,8 +173,8 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     \ttt {mi,( sib' re lab' re, sib}
     \ttt {mi, sib' re lab' re, sib}
     \ttt {mi, sib' re lab' re, sib)} |
-    mi, sib' re sib mi, sib' re sib
-    mi, sib' re sib mi, sib' re sib |
+    mi,( sib' re sib) mi,( sib' re sib)
+    mi,( sib' re sib) mi,( sib' re sib) |
     mi,( sib' re sib) mi,( sib' re sib)
     mi,( sib' re sib) |
     <do, do'>4\f\downbow <do do'>\downbow <do do'>\downbow |

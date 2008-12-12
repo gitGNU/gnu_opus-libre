@@ -53,7 +53,7 @@ BarytonType = "Baryton"
                       ))
 
 %% List -----------------------------------------------------------%
-
+%{
 CharacterList = \markup {
   \fill-line {
     \center-column {
@@ -66,12 +66,12 @@ CharacterList = \markup {
           \override #'(baseline-skip . 6)
           \fill-line {
             \left-column {
-              \SopranoUnName
-              \SopranoDeuxName
-              \ContraltoName
-              \TenorName
-              \BarytonUnName
-              \BarytonDeuxName
+              #(markup (char-name 'soprano-one))
+              #(markup (char-name 'soprano-two))
+              #(markup (char-name 'contralto))
+              #(markup (char-name 'tenor))
+              #(markup (char-name 'barytone-one))
+              #(markup (char-name 'barytone-two))
             }
             \right-column {
               \SopranoType
@@ -86,6 +86,6 @@ CharacterList = \markup {
       }
     }
   }
-} %}
+} % %}
 
 %%-----------------------------------------------------------------%
