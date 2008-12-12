@@ -109,7 +109,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     \t {mi\mp( sib reb,} \t {solb,4) sib'8}
     \t {mi( sib reb,} \t {solb,4) sib'8}
     lab'4\mf(\> mi reb |
-    do4\p) r2 | R2.*6 \ten do1~ do2 r4 |
+    do4\p) r2 | R2.*6 \ten do1\f~ do2 r4 |
 
     %%% Ad libitum %%%
     R1 R2.*2 R1 R2.*2
@@ -137,7 +137,7 @@ ActeUnSceneUnFluteUn = { \FluteUn
     do-- do'16 do, r do, do'8 do'16 do,8 do'16 |
     do,8--\pp[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] |
     do, do, do'' do, reb'\< reb, mib' mib,\! r4\fermata r8 r16 do'\pp |
-    do,8--[ r16 do'] do,8[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] |
+    do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] |
     do, do, mib'' mib, fa'\< fa, solb' solb,\! r4\fermata r8 r16 do\pp |
     do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 do'] do,8--[ r16 mib'] |
     mib, solb' solb, lab' lab,\< la' si, si' re8\mf r\fermata r r16 do,\p |
@@ -206,19 +206,11 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
 
     %%% Largo %%%
     R2*3 R2. R2 R2. R2 R2.*2
-<<<<<<< HEAD:instruments/flute1.ly
-    r2 r4 sib, | sol2 r4 sib | sol2 r4 R2 R1
-    R2.*2 R2*2
-    r2 r8 sib | sol4 r8 sib | sol2 |
-    r8 sol r4 | r8 sol sib r r4 |
-    r2 r8 sol sib reb |
-=======
     r2 r4 sib,-.\mf | sol2-- r4 sib-. | sol2-- r4 R2 R1
     R2.*2 R2*2
     r2 r8 sib-.\mf | sol4-- r8 sib-. | sol2-- |
     r8 sol\sfz r4 | r8 sol-> sib-> r r4 |
     r2 r8 sol->( sib-> reb->) |
->>>>>>> 34ccc8d6b5873427c5b48a1caf704308e336a01f:instruments/flute1.ly
     R2. R2*3 R2.*3
 
     %%% Adagio %%%

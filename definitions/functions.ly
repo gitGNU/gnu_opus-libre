@@ -83,17 +83,6 @@ showAnyway =
 
 %% Articulation shortcuts -----------------------------------------%
 
-harmo =
-#(define-music-function (parser location chord result) (ly:music? ly:music?)
- #{ << \oneVoice $chord \\ { \voiceTwo %FIXME: ties could look better.
-   \override NoteHead #'stencil = #ly:text-interface::print
-   \override NoteHead #'text = \markup { \null \musicglyph #"noteheads.s2"}
-   \once \override NoteHead #'text = \markup {\null \override #'(direction . 1)
-      \dir-column {\musicglyph #"noteheads.s2" \teeny \musicglyph #"eight"}}
-    \override Stem #'stencil = ##f $result
-    \revert Stem #'stencil \revert NoteHead #'stencil } >> #})
-
-% Are these really needed?
 #(define (make-script x)
    (make-music 'ArticulationEvent
                'articulation-type x))
@@ -183,6 +172,15 @@ CaV=
              (acons 'font-size -3
                     (ly:music-property m 'tweaks)))
                                        m)
+harmo =
+#(define-music-function (parser location chord result) (ly:music? ly:music?)
+ #{ << \oneVoice $chord \\ { \voiceTwo %FIXME: ties could look better.
+   \override NoteHead #'stencil = #ly:text-interface::print
+   \override NoteHead #'text = \markup { \null \musicglyph #"noteheads.s2"}
+   \once \override NoteHead #'text = \markup {\null \override #'(direction . 1)
+      \dir-column {\musicglyph #"noteheads.s2" \teeny \musicglyph #"eight"}}
+    \override Stem #'stencil = ##f $result
+    \revert Stem #'stencil \revert NoteHead #'stencil } >> #})
 
 thumbpizz =
 #(make-music 'TextScriptEvent

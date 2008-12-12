@@ -153,14 +153,14 @@ ActeUnSceneUnViolonDeux = { \ViolonDeux
     \ttt {sib'( reb, solb, re solb reb')}
     \ttt {sib'( reb, solb, re solb reb')}
     <do do'>8--\f reb-- mib-- fad-- sold-- la--
-    \t {reb,16\fp reb reb} \t {mib\< mib mib} \t {fad fad fad}
+    \t {reb,16\fp\< reb reb} \t {mib mib mib} \t {fad fad fad}
     \t {sold sold sold} \t {la la la} \t {si si si} |
     <do, re'>4\f\downbow <do re'>\downbow <do re'>\downbow
-    <fad fad'>8 sol la do re red |
-    \t {sol,16 sol sol} \t {la\< la la} \t {do do do}
+    <fad fad'>8-- sol-- la-- do-- re-- red-- |
+    \t {sol,16\< sol sol} \t {la la la} \t {do do do}
     \t {re re re} \t {red red red} \t {mid mid mid} |
-    <fad, sold'>4\downbow <fad sold'>\downbow <fad sold'>\downbow |
-    <sol! sold'>8---> la-- \t {do16\< do do} \t {re re re\!} <fad, red'>4\downbow |
+    <fad, sold'>4\!\downbow <fad sold'>\downbow <fad sold'>\downbow |
+    <sol! sold'>8---> la-- \t {do16\< do do} \t {re re re} <fad, red'>4\downbow |
     \ten <do do'>1~\fmolto <do do'>2 r4 |
 
     %%% Ad libitum %%%

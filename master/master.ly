@@ -22,14 +22,14 @@
   \header {
     piece = \OuvertureTitre
   }
-} %
+} %}
 \score {
   \ActeUnSceneUn
   \header {
     acte = \ActeUnTitre
     piece = \SceneUnTitre
   }
-} %
+} %{
 \score {
   \ActeUnSceneUnBis
   \header {
@@ -73,14 +73,14 @@
   \header {
     piece = \Separateur
   }
-} %}
+} %
 \score {
   \InterludeTrois
   \header {
     piece = \InterludeTitre
     illustration = \Arrosoir
   }
-} %{
+} %
 \score {
   \ActeUnSceneQuatre
   \header {

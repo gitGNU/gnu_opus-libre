@@ -159,11 +159,11 @@ ActeUnSceneUnViolonTrois = { \ViolonTrois
     \ttt {re( solb reb' sib' reb, solb,)}
     \ttt {re( solb reb' sib' reb, solb,)} |
     <do do'>4\f\downbow <do do'>\downbow <do do'>\downbow |
-    reb8 mib fad sold la si
+    reb8-- mib-- fad-- sold-- la-- si--
     \t {mib,16\fp\< mib mib} \t {fad fad fad} \t {sold sold sold}
     \t {la la la} \t {si si si} \t {re re re\!} |
     <fad, fad'>4\downbow <fad fad'>\downbow <fad fad'>\downbow |
-    sol8 la do re red mid |
+    sol8-- la-- do-- re-- red-- mid-- |
     \t {la,16\< la la} \t {do do do} \t {re re re}
     \t {red red red} \t {mid mid mid} \t {sold sold sold\!} |
     <fad, mid'>4\downbow <fad do'>8-- re'-- \t {red16\< red red} \t {mid mid mid} |

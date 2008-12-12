@@ -162,7 +162,7 @@ ActeUnSceneUnViolonUn = { \ViolonUn
     <do mib>8---> fad-- <do sold'>---> la' <do, si'>---> re'-- |
     \t {fad,16\< fad fad} \t {sol sol sol} \t {la la la}
     \t {do do do} \t {re re re} \t {mib mib mib} |
-    <fad, mid'>4\downbow <fad mid'>\downbow <fad mid'>\downbow |
+    <fad, mid'>4\!\downbow <fad mid'>\downbow <fad mid'>\downbow |
     <fad la>8---> do'-- <fad, re'>---> red'-- <fad, mid'>---> sold'-- |
     \t {sol,16\< sol sol} \t {la la la} <do sold'>4\downbow <red sold>8-- <mid sold>-- |
     \ottava #1

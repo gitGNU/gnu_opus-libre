@@ -139,7 +139,7 @@ ProloguePercus = <<
       \partial 4 r4 R2.*3 R1 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2
 
       %%% Entrée du Baryton 1 %%%
-      R2. R2*2 R2. s2_\markup { \indic "(bag. de timbale)" } s2. R2
+      R2. R2*2 R2. s2_\markup { \indic "bag. de timbales (lourdes)" } s2. R2
       r8 sol, dod4 sib8 dod |
       r8 sol dod4 dod' r2 | re4 sold, sib,2:32 R2.
 
@@ -539,7 +539,7 @@ ActeUnSceneUnBisPercus = <<
       r sol32-> sol8.. r4 | \t {sol16-> sol sol~} sol8-- r4 reb'-- |
       sol,-- r2 |
       sol8\mf  reb'~ reb4~\> reb4:32 reb4\!\laissezVibrer r2 R2.-\fermataMarkup
-      sol,8\mp\> reb'~reb4~ reb4:32 reb4\!\laissezVibrer r2 R1-\fermataMarkup 
+      sol,8\mp\> reb'~reb4~ reb4:32 reb4\!\laissezVibrer r2 R1-\fermataMarkup
       R1 R2
 
       %%% Largo %%%

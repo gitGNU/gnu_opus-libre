@@ -129,7 +129,7 @@ ActeUnSceneUnClarinetteUn = { \ClarinetteUn
     \t {do,4 lab'8} reb r \t {do, lab' mi'} |
     \ten do'2~\p do8 r fa,4\<( | do'2\mp) fa,4\<( | sib2~\mp) sib8 r reb,4\<( | sib'2\mf) solb4(
     do\p) r2 | \ttt {r16 red,,\p( mi fad la si} do2~) |
-    do8 \t {mi16( fa sol} sib8-.) r r4 | R2.*2
+    do8 \t {mi16(\< fa sol} sib8-.)\! r r4 | R2.*2
     r16 la,-.\mf mib-. la-. re-. la-. mib-. la-. re4-- |
     \tttt {re,16\pp( mib re mib re mib re}
     \t {mib re mib} sib'32 dob sib dob

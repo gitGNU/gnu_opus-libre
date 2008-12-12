@@ -117,7 +117,7 @@ ActeUnSceneUnClarinetteDeux = { \ClarinetteDeux
     mi8 sold32\<( la si re mi8-.\!) r r4 | R2.*2
     r8 sib,16-.\mf mib-. la-. mi,-. sib'-. mib-. la4-- |
     \ttt {fad,16\pp( sol fad sol fad sol}
-    la32 sib la sib \t {re16 mib re} \tttt {mib\> re mib re mib re mib} |
+    la32 sib la sib \t {re16 mib re} \tttt {mib\< re mib re mib re mib} |
     \ten do'1~\f) do2 r4 |
 
     %%% Ad libitum %%%
