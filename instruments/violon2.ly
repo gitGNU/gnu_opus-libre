@@ -351,52 +351,55 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
     %%% Récitatif %%%
 
     r4 r8 mib,4. | do2.~| do1~| do2 r4 |
-    r4 r8 re4. |  si2.~| si1~| si2 r4 |
-    R2.| r4 r8 <re sib'>4 <si! sol'>8~|<si sol'>2.~|
+    r4 r8 re4.--\downbow |  si2.~--\downbow| si1~| si2 r4 |
+    R2.| r4 r8 <re sib'>4--\mp\downbow <si! sol'>8~--\downbow|<si sol'>2.~|
     <si sol'>8 <si sol'>~ \t {<si sol'> <si sol'> <si sol'>}
-    si4:32 |
-    si8 r r2 | R2 |R2.| R1*2 | R2.*5 | R1 |
+    si4:32\< |
+    si8\sfz r r2 | R2 |R2.| R1*2 | R2.*5 | R1 |
 
     %%% Duo %%%
 
-    r8 \pizz <sib re>
-    \repeat unfold 15 {r8 <sib re>} <sib re>4 |
+    r8 \pizz <sib re>\mp\arpeggUp
+    r8 \simile <sib re> r8 <sib re>
+    \repeat unfold 13 {r8 <sib re>} <sib re>4 |
     \repeat unfold 7 {r8 <do mi>} |
     \repeat unfold 3 {r8 <red fad>} <red fad>4 |
     \repeat unfold 4 {r8 <dod fad>} r4 | R2
-    \arco fa!8
-    \repeat unfold 27 fa
-    \repeat unfold 14 lad
-    \repeat unfold 8  mi'
-    sol re' sol, do, re' sol, |
+    \arco fa!8--\mf
+    fa-- fa-- fa-- \simile fa fa
+    \repeat unfold 22 fa
+    lad-.\psubito lad-. lad-. lad-. \simile lad lad
+    \repeat unfold 8 lad
+    mi'\mf\< \repeat unfold 7 mi
+    sol\! re' sol, do, re' sol, |
     do, re' sol, do, re' sol, |
     R2. R1 |
 
     %%% Piu vivo %%%
-    sol,,16 sol sol' sol sol, sol sol' sol sol, sol sol' sol |
+    sol,,16\fp sol sol' sol sol, sol sol' sol sol, sol sol' sol |
     sol, sol sol' sol sol, sol sol' sol sol, sol sol' sol sol, sol sol' sol |
-    sol, sol fad' fad sol, sol fad' fad sol, sol mi' mi |
-    sol, sol mi' mi sol, sol dod dod sol sol dod dod |
-    <sol sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
-    dod2 r4 |
-    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
-    dod2 r4 |
-    sol4 sol \t {mi' re fa} |
-    dod2 \tt {sib16 la lab sib si} |
-    sol4 r2 |
-    \pizz <sol re'>4 <sol re'> <sol re'> <sol re'> r2 |
-    si4 si si | sib r2 |
-    \arco re4 r8 re r16 re re8 |
-    re4 \tt {sib16 dod red mi fad } \tt { mi fad la si do } |
-    re4 \tt {sib,16 do reb mib fad} \tt {mib fad sold la si}|
-    re4 \tt {sib,16 si dod mi fad } \tt { mi fad sol la do} |
-    re4 \tt {sib,16 do mib fa solb} \tt {fa solb lab si dod}|
-    re4 \tt {do,16 mib fa fad sold} \tt {fad sold si re dod}|
-    mi4 \tt {mib,16 fa fad sold si} \tt {sold si re dod mi} |
-    sol4 \ttt {si,16 si re re dod dod} \ttt {sol' sol mi mi la la} |
+    sol,-- sol fad' fad sol, sol fad' fad sol, sol mi' mi |
+    sol,\< sol mi' mi sol, sol dod dod sol sol dod dod |
+    <sol sol'>4\ff \st {<sol sol'>8\p <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>} |
+    dod2-> r4 |
+    \st {<sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4} |
+    dod2-> r4 |
+    sol4->\downbow sol->\downbow \t {mi'--( re-- fa--)} |
+    dod2-> \tt {sib16( la lab sib si)} |
+    sol4-> r2 |
+    \pizz <sol re'>4\f <sol re'> <sol re'> <sol re'> r2 |
+    si4 si si | sib-> r2 |
+    \arco re4-.-> r8 re-. r16 re re8-. |
+    re4-> \tt {sib16( dod red mi fad } \tt { mi fad la si do } |
+    re4->) \tt {sib,16( do reb mib fad} \tt {mib fad sold la si}|
+    re4->) \tt {sib,16( si dod mi fad } \tt { mi fad sol la do} |
+    re4->) \tt {sib,16( do mib fa solb} \tt {fa solb lab si dod}|
+    re4->) \tt {do,16( mib fa fad sold} \tt {fad sold si re dod}|
+    mi4->) \tt {mib,16( fa fad sold si} \tt {sold si re dod mi} |
+    sol4->) \ttt {si,16\< si re re dod dod} \ttt {sol' sol mi mi la la} |
 
     %%% Poco allargando %%%
-    sib2. la4~|la4. sol8~sol2 | mi re4 r |
+    sib2.\ff la4~|la4. sol8~sol2\> | mi\!( re4) r |
     %%% Tempo giusto %%%
     sib16 re, re re sib re re re sib' re, re re sib re re re |
     sib' re, re re sib re sib' re, sib' re, re re sib re sib' re, |
@@ -727,7 +730,7 @@ ActeDeuxSceneUnBisViolonDeux = { \ViolonDeux
     dod4 r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
-    r2 r4 \flaut sol'2\CaV\upbow r2 sol\CaV\upbow r4 | R1*5/4
+    r2 r4 \flaut sol'2\upbow\CaV r2 sol\upbow\CaV r4 | R1*5/4
     r2 r4 \simile sol2\CaV r sol\CaV r4 |
     r2 r4 sol2\CaV r sol\CaV r4 | R1*5/4
     r2 r4 sol2\CaV r sol\CaV r4 |

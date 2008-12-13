@@ -236,7 +236,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod8 r |
     \st {dod16\p re mi sib' sol la sib mi dod re mi sol,} |
     \t {lab16-> lab lab} lab8 \t {fa16-> fa fa} fa8 \t {mib16-> mib mib} mib8 |
-    
+
     %%% Piu vivo %%%
     re4\sfz r r8 do'-- sol--( la--) | fad2--\f \t {sol8--( la-- do--)} |
     re4---> r r8 mib,-- lab--( fa--)| sib4.-- lab-- |
@@ -245,7 +245,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     R2. r4 <la'mi'\harmonic mi'>2~\p <la mi'\harmonic mi'>4. r8\fermata r4 |
     R2. r4 <la mi'\harmonic mi'>2~<la mi'\harmonic mi'>~
     <la mi'\harmonic mi'>8 r\fermata r4 | r2 r4 fad,--\p( sol-- la--) |
-    
+
     %%% Largo %%%
     do,2\downbow \ten do'~\downbow do
     lab2.~ <do, lab'>2~<do sol'>2.~
@@ -331,41 +331,42 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
 
     %%% Récitatif %%%
 
-    R2.*2 R1| R2.*3 | R1 R2.*2 r4 r8 mib,4 lab,8~| lab2.~|
-    lab8 lab~ \t {lab lab lab} lab4:32 |
-    lab8 r r2 | R2 R2. R1*2 | R2.*4 re,2.~ re2. r4 |
+    R2.*2 R1| R2.*3 | R1 R2.*2 r4 r8 mib,4--\downbow\mp lab,8~--\downbow| lab2.~|
+    lab8 lab~ \t {lab lab lab} lab4:32\< |
+    lab8\sfz r r2 | R2 R2. R1*2 | R2.*4 re,2.~\pp re2. r4 |
 
     %%% Duo %%%
 
-    \pizz <re sib'>4
-    \repeat unfold 15 <re sib'> r8 \arco <re sib'> |
-    <reb lab'> r \pizz <reb lab'>4
+    \pizz <re sib'>4\mp\arpeggUp
+    \simile <re sib'> <re sib'>
+    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\mf\>( |
+    <reb lab'>-.\!) r \pizz <reb lab'>4\mp
     \repeat unfold 5 <reb lab'>
-    \repeat unfold 3 <sib' sol'> r8 \arco <sib sol'> |
-    <la fa'>8 r \pizz <la fa>4 <la fa'> | <la fa'> r |
-    \arco sol lab8 sib |
-    reb4 dob sib | dob sib lab sib |
+    \repeat unfold 3 <sib' sol'> r8 \arco <sib sol'>\>( |
+    <la fa'>8-.\!) r \pizz <la fa'>4 <la fa'> | <la fa'> r |
+    \arco sol\f lab8--( sib--) |
+    reb4-- dob-- \simile sib | dob sib lab sib |
     dob sib lab fa | dob' r8 sib r4 |
-    si!8 si lad lad si si |
-    lad lad si si lad lad si si |si1
-    lab2.~ lab~ lab4 r2 R1 |
+    \st {si!8\psubito si lad lad} \simile si si |
+    lad lad si si lad lad si si |si1\mp\<\upbow
+    \ten lab2.~\! lab~ lab4 r2 R1 |
 
     %%% Piu vivo %%%
-    <sol sol'>4 sol16 sol sol sol lab lab lab lab |
+    <sol sol'>4--->\fp sol16 sol sol sol lab lab lab lab |
     sib sib sib sib reb reb reb reb mib mib mib mib mi mi mi mi |
-    fad fad fad fad la la la la si si si si |
-    do4 re, dod, |
-    sol'2 sol4 sol | dod,4. dod8 dod dod |
-    sol'2 r8 sol sol sol | dod,4. dod8 \t {dod dod dod} |
-    sol'4 sol2 r4 |
-    dod,4 r8 sib' lab si |
-    sol4 sol sol |
-    sol \tt {si'16 sold fad red dod} \tt {fad red dod do sib} |
-    sol4 r sol |
-    si \tt {re'16 dod si sold fad} \tt {sold fad fa mib do} |
-    sib4 r sib |
-    re r2 | re4 re re | re r2 | re4 re re | re r2 | re4 re re |
-    dod r2 | dod4 dod dod | fa,1~ fa2 r4 si~ | si8 do4. dod2 |
+    fad\< fad fad fad la la la la si si si si |
+    do4--->\f re,---> dod,--\upbow |
+    sol'2\ff sol4\downbow sol | dod,4.-> dod8 dod dod |
+    sol'2-- r8 sol sol sol | dod,4.-> dod8\downbow \t {dod dod dod} |
+    sol'4---> sol2-> r4 |
+    dod,4-> r8 sib'-> lab-> si-> |
+    sol4---> sol---> sol---> |
+    sol-> \tt {si'16( sold fad red dod} \tt {fad red dod do sib} |
+    sol4->) r sol |
+    si \tt {re'16( dod si sold fad} \tt {sold fad fa mib do} |
+    sib4) r sib |
+    re r2 | re4---> re---> re---> | re---> r2 | \simile re4 re re | re r2 | re4 re re |
+    dod r2 | dod4 dod dod | \ten fa,1~\ff fa2 r4 si~\f\> | si8 do4. dod2\! |
 
     %%% Tempo giusto %%%
     <re, sib'>4 <re sib'> <re sib'> <re sib'> |

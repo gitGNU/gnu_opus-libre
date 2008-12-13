@@ -283,7 +283,7 @@ ActeUnSceneUnBisViolonUn = { \ViolonUn
     r4 <sib, re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
     <la red>2.\mp r2 <la red>4-.\downbow |
     <sold mi'>2.\downbow
-    
+
     %%% Adagio %%%
     R1*33 R2*4
   }
@@ -360,52 +360,55 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
     %%% Récitatif %%%
 
     r4 r8 sib4. | sol2.~|sol1~|sol2 r4 |
-    r4 r8 sib4. | sol2.~|sol1~|sol2 r4 |
-    R2. | r4 r8 sib4 sol8~| sol2.~| sol8 sol~ \t {sol sol sol}
-    sol4:32 |
-    sol8 r r2 | R2 | r4 r8 sol4. |
-    mi?1~ mi~ | mi2.~ mi~ mi~ mi2 r4 | R2. R1 |
+    r4 r8 sib4.--\downbow | sol2.~--\downbow|sol1~|sol2 r4 |
+    R2. | r4 r8 sib4--\mp\downbow sol8~--\downbow| sol2.~| sol8 sol~ \t {sol sol sol}
+    sol4:32\< |
+    sol8\sfz r r2 | R2 | r4 r8 sol4.\p\>\upbow |
+    mi?1~\! mi~ | mi2.~ mi~ mi~ mi2 r4 | R2. R1 |
 
     %%% Duo %%%
 
-    r8 \pizz <sib re>
-    \repeat unfold 15 {r8 <sib re>} <sib re>4 |
+    r8 \pizz <sib re>\mp\arpeggUp
+    r8 \simile <sib re> r8 <sib re>
+    \repeat unfold 13 {r8 <sib re>} <sib re>4 |
     \repeat unfold 7 {r8 <do mi>} |
     \repeat unfold 3 {r8 <red fad>} <red fad>4 |
     \repeat unfold 4 {r8 <dod fad>} r4 | R2
-    \arco sol'8
-    \repeat unfold 27 sol
-    \repeat unfold 14 red'
-    \repeat unfold 8  lad'
-    re! sol, do, re' sol, do, |
+    \arco sol'8--\mf
+    sol-- sol-- sol-- \simile sol sol
+    \repeat unfold 22 sol
+    red'-.\psubito red-. red-. red-. \simile red red
+    \repeat unfold 8 red
+    lad'\mf\< \repeat unfold 7 lad
+    re!\! sol, do, re' sol, do, |
     re' sol, do, re' sol, re' |
     R2. R1 |
 
     %%% Piu vivo %%%
-    sol,,16 sol sol, sol sol' sol sol, sol sol' sol sol, sol |
+    sol,,16\fp sol sol, sol sol' sol sol, sol sol' sol sol, sol |
     sol' sol sol, sol sol' sol sol, sol sol' sol sol, sol sol' sol sol, sol |
-    fad' fad sol, sol fad' fad sol, sol mi' mi sol, sol |
-    mi' mi sol, sol dod dod sol sol dod dod sol sol |
-    <sol sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
-    dod2 r4 |
-    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
-    dod2 r4 |
-    sol4 sol \t {mi' re fa} |
-    dod2 \tt {sib16 la lab sib si} |
-    sol4 r2 |
-    \pizz <sol re' la'>4 <sol re' la'> <sol re' la'> <sol re' la'> r2 |
-    si4 si si | sib r2 |
-    \arco re4 r8 re r16 re re8 |
-    re4 \tt {sib16 dod red mi fad } \tt { mi fad la si do } |
-    re4 \tt {sib,16 do reb mib fad} \tt {mib fad sold la si}|
-    re4 \tt {sib,16 si dod mi fad } \tt { mi fad sol la do} |
-    re4 \tt {sib,16 do mib fa solb} \tt {fa solb lab si dod}|
-    re4 \tt {do,16 mib fa fad sold} \tt {fad sold si re dod}|
-    mi4 \tt {mib,16 fa fad sold si} \tt {sold si re dod mi} |
-    sol4 \ttt {si,16 si re re dod dod} \ttt {sol' sol mi mi la la} |
+    fad'-- fad sol, sol fad'-- fad sol, sol mi'-- mi sol, sol |
+    mi'\< mi sol, sol dod dod sol sol dod dod sol sol |
+    <sol sol'>4\ff \st {<sol sol'>8\downbow <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>} |
+    dod2-> r4 |
+    \st {<sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4} |
+    dod2-> r4 |
+    sol4->\downbow sol->\downbow \t {mi'--( re-- fa--)} |
+    dod2-> \tt {sib16( la lab sib si)} |
+    sol4-> r2 |
+    \pizz <sol re' la'>4\f <sol re' la'> <sol re' la'> <sol re' la'> r2 |
+    si4 si si | sib-> r2 |
+    \arco re4-> r8 re-. r16 re re8-. |
+    re4-> \tt {sib16( dod red mi fad } \tt { mi fad la si do } |
+    re4->) \tt {sib,16( do reb mib fad} \tt {mib fad sold la si}|
+    re4->) \tt {sib,16( si dod mi fad } \tt { mi fad sol la do} |
+    re4->) \tt {sib,16( do mib fa solb} \tt {fa solb lab si dod}|
+    re4->) \tt {do,16( mib fa fad sold} \tt {fad sold si re dod}|
+    mi4->) \tt {mib,16( fa fad sold si} \tt {sold si re dod mi} |
+    sol4->) \ttt {si,16\< si re re dod dod} \ttt {sol' sol mi mi la la} |
 
     %%% Poco allargando %%%
-    sib2. la4~|la4. sol8~sol2 | mi re4 r |
+    sib2.\ff la4~|la4. sol8~sol2\> | mi\!( re4) r |
     %%% Tempo giusto %%%
     dod16 re, re re dod re re re dod' re, re re dod re re re |
     re' re, re re re re re' re, re' re, re re re re re' re, |

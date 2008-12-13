@@ -285,7 +285,7 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
     r4 <sib re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
     <la red>2.\mp r2 <la red>4-.\downbow |
     <sold mi'>2.\downbow
-    
+
     %%% Adagio %%%
     R1*33 R2*4
   }
@@ -353,48 +353,51 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     %%% Récitatif %%%
 
     R2.*2 R1 R2.*3 R1 R2.*2 |
-    r4 r8 fad4 mib8~| mib2.~|
-    mib8 mib~ \t {mib mib mib} \repeat tremolo 8 mib32 |
-    mib8 r8 r2 | R2 | R2.| R1*2| R2.*5| R1|
+    r4 r8 fad4--\downbow\mp mib8~\downbow| mib2.~|
+    mib8 mib~ \t {mib mib mib} \repeat tremolo 8 mib32\< |
+    mib8\sfz r8 r2 | R2 | R2.| R1*2| R2.*5| R1|
 
     %%% Duo %%%
 
-    r8 \pizz <sib re>
-    \repeat unfold 15 {r8 <sib re>} <sib re>4 |
+    r8 \pizz <sib re>\mp\arpeggUp
+    r8 \simile <sib re> r8 <sib re>
+    \repeat unfold 13 {r8 <sib re>} <sib re>4 |
     \repeat unfold 7 {r8 <do mi>} |
     \repeat unfold 3 {r8 <red fad>} <red fad>4 |
     \repeat unfold 4 {r8 <dod fad>} r4 | R2
-    \arco re8
-    \repeat unfold 27 re
-    \repeat unfold 14 sold
-    \repeat unfold 8  red'
-    do do re'! sol, do, re' |
+    \arco re8--\mf
+    re-- re-- re-- \simile re re
+    \repeat unfold 22 re
+    sold-.\psubito sold-. sold-. sold-. \simile sold sold
+    \repeat unfold 8 sold
+    red'\mf\< \repeat unfold 7 red
+    do\! do re'! sol, do, re' |
     sol, do, re' sol, do, do |
     R2. R1 |
 
     %%% Piu vivo %%%
-    <sol, sol'>2.~ <sol sol'>1
-    sol4:16 lab: sib: reb: mi: fad:
-    <sol,sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
-    dod2 r4 |
-    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
-    dod2 r4 |
-    sol4 sol \t {mi' re fa} |
-    dod2 \tt {sib16 la lab sib si} |
-    sol4 r2 |
-    \pizz sol4 sol sol sol r2 |
-    si4 si si | sib r2 |
-    \arco re4 r8 re r16 re re8 |
-    re4 \pizz sib8 mib mi la |
-    \arco <re, re'>4 \pizz sib8 mib fad si |
-    \arco <re, re'>4 \pizz sib8 mib sold dod |
-    \arco <re, re'>4 \pizz sib8 fad' mi sold |
+    \ten <sol, sol'>2.~\f <sol sol'>1
+    sol4:16 lab: sib: reb:\> mi: fad:
+    <sol,sol'>4\ff <sol sol'>8-.\downbow \st {<sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>} |
+    dod2-> r4 |
+    \st {<sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4} |
+    dod2-> r4 |
+    sol4->\downbow sol->\downbow \t {mi'--( re-- fa--)} |
+    dod2 \tt {sib16( la lab sib si)} |
+    sol4-> r2 |
+    \pizz sol4\f sol sol sol r2 |
+    si4 si si | sib-> r2 |
+    \arco re4-.-> r8 re-. r16 re re8-. |
+    re4-> \pizz sib8 mib mi la |
+    \arco <re, re'>4-> \pizz sib8 mib fad si |
+    \arco <re, re'>4-> \pizz sib8 mib sold dod |
+    \arco <re, re'>4-> \pizz sib8 fad' mi sold |
     \arco <re  re'>4 \pizz do8 fa fad si |
-    \arco <mi, mi' mi>4 \pizz red8 sold si mi |
-    \arco <sol,, sol' sol'>4 \tt {mi'16 fa sol sib do} \tt {dod re mi sol la} |
+    \arco <mi, mi' mi>4-> \pizz red8 sold si mi |
+    \arco <sol,, sol' sol'>4-> \tt {mi'16\< fa sol sib do} \tt {dod re mi sol la} |
 
     %%% Poco allargando %%%
-    <re, sib'>2. re4~ | re4. <sol, mi'>8 ~ <sol mi'>2 si la4 r |
+    <re, sib'>2.\ff re4~ | re4. <sol, mi'>8 ~ <sol mi'>2\> si\!( la4) r |
     %%% Tempo giusto %%%
     re,16 re dod dod sib sib dod dod re re dod dod sib sib dod dod |
     re re sib sib re re sib sib re re sib sib re re sib sib |

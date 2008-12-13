@@ -244,25 +244,25 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
 
     %%% Duo %%%
 
-    \pizz re'4
+    \pizz re'4\p
     \repeat unfold 16 re
     \repeat unfold 7  reb
     \repeat unfold 4  si
     \repeat unfold 4  sib r |
-    \arco sol lab8 sib |
-    reb4 dob sib | dob sib lab sib |
+    \arco sol\f lab8--( sib--) |
+    reb4-- dob-- \simile sib | dob sib lab sib |
     dob sib lab fa | dob' r8 sib r4 |
-    mi,2.~| mi r4| mi'1 | reb2.~|reb~|reb4 r2 | R1 |
+    mi,2.~\mp| mi r4| mi'1\mp\<\upbow | \ten reb2.~\!|reb~|reb4 r2 | R1 |
 
     %%% Piu vivo %%%
-    sol,2.~ | sol1~ sol2 r4 | R2.
-    sol2 sol4 sol dod4. dod8 dod dod |
-    sol2 r8 sol sol sol | dod4. dod8 \t {dod dod dod} |
-    sol4 sol2 r4 |
-    dod4 r8 sib lab si |
-    sol4 sol sol sol r2 | sol4 sol sol si r2 |
+    \ten sol,2.~ | sol1~ sol2 r4 | R2.
+    sol2\ff sol4\downbow sol dod4.-> dod8 dod dod |
+    sol2-- r8 sol sol sol | dod4.-> dod8\downbow \t {dod dod dod} |
+    sol4---> sol2-> r4 |
+    dod4-> r8 sib-> lab-> si-> |
+    sol4--->\ff sol---> sol---> sol---> r2 | \simile sol4 sol sol si r2 |
     sib4 sib sib | re r2 | re4 re re re r2 | re4 re re re r2 re4 re re |
-    dod r2 dod4 dod dod fa,1~ fa2 r4 si~ | si8 do4. dod2 |
+    dod r2 dod4 dod dod \ten fa,1~\ff fa2 r4 si~\f\> | si8 do4. dod2\! |
 
     %%% Tempo giusto %%%
     \pizz re4 re re re re re re re |
