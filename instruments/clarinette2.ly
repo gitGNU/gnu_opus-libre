@@ -267,7 +267,7 @@ ActeUnSceneDeuxClarinetteDeux = { \ClarinetteDeux
 
     %%% Duo %%%
 
-    re,8---.\pp re,8---. re,8---. re,8---. \simile re,8 re,8
+    re,8---.\pp re8---. re8---. re8---. \simile re8 re8
     \repeat unfold 12 re r
     \repeat unfold 13 re r re(
     \ind #"senza cresc." reb) \repeat unfold 7 reb

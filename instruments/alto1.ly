@@ -385,7 +385,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
     \repeat unfold 22 si |
     \st {<dod mi>\psubito <dod mi> <dod mi> <dod mi>} \simile <dod mi> <dod mi>
     \repeat unfold 8 <dod mi> |
-    <sold' lad>\mp\< \repeat unfold 7 <sold' lad>|
+    <sold' lad>\mp\< \repeat unfold 7 <sold lad>|
     \ten fa2.~\! fa~ fa4 r2 R1 |
 
     %%% Piu vivo %%%

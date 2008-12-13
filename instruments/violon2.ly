@@ -320,7 +320,7 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
     R1 | re4-.\pp la'-. sold8( mi re4-.) |
     mi8( re la' sold)-. r la( |
     sold mi) re( mi) sold4-. |
-    re-+ <sold' re'-.-> r2 |
+    re-+ <sold' re'>-.-> r2 |
     r8 <sold re'>8-.-> r4 re,-+ <sold' re'>-.-> |
     r8 <sold re'>-.-> r4 <sold re'>-.-> r8 re,-+ r <sold' re'>-.-> r4 |
     sol,,!-+ <si'' sol'>-.-> r2 |

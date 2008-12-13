@@ -293,7 +293,7 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
 
     R2.*2 R1 R2.*3 R1 R2.*4
     \repeat tremolo 12 {mib32\p\< mi!} | mib8\sfz r r2 R2 R2. R1*2 R2.*4
-    r8 re,,---.\pp \repeat unfold 6 {r8 re,,---.} |
+    r8 re,,---.\pp \repeat unfold 6 {r8 re---.} |
 
     %%% Duo %%%
 
@@ -311,7 +311,7 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     \st {mi\mp mi
     \repeat unfold 2 {sold sold lad lad} sold sold lad r
     red\mf\< red mi mi red red mi mi} sol!2.~\! sol~ sol4 r2 |
-    r4 \t {mi8( red dod)} r la,4--. |
+    r4 \t {mi8( red dod)} r la,4.-- |
 
     %%% Piu vivo %%%
 

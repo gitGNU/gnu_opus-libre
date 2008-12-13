@@ -350,7 +350,7 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     dob sib lab fa | dob' r8 sib r4 |
     \st {mi8\psubito mi fad fad} \simile mi mi |
     fad fad mi mi fad fad mi mi fad1\mp\< |
-    \ten sib2.~|sib~| sib4 r2 | R1
+    \ten sib2.\!~|sib~| sib4 r2 | R1
 
     %%% Piu vivo %%%
     <sol, sol'>4--->\fp sol16 sol sol sol lab lab lab lab |

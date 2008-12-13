@@ -42,13 +42,13 @@
     piece = \InterludeTitre
     dessin = \Arrosoir
   }
-} %
+} %}
 \score {
   \ActeUnSceneDeux
   \header {
     piece = \SceneDeuxTitre
   }
-} %
+} %{
 \score {
   \InterludeDeux
   \header {
@@ -86,13 +86,13 @@
   \header {
     piece = \FinaleTitre
   }
-} %}
+} %
 \score {
   \Entracte
   \header {
     piece = \EntracteTitre
   } %\midi {}
-} %{
+} %
 %\pageBreak
 \score {
   \ActeDeuxSceneUn
