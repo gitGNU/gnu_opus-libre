@@ -312,89 +312,92 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     %%% Air de la Soprano2 %%%
 
     R2.*2 R1*2  R2. |
-    sold'8 la sold mi re mi | sold la sold mi re mi sold4 |
-    sold8 la sold mi re mi sold la sold mi re mi sold4 |
-    R2.| la,4-. re-. mi8( re la4-.) | re8( la mi' re)-. r re mi4-. |
-    re-. la8( mi' re4)-. | la'8( sold mi re)-. r la' |
+    sold'8\p( la sold mi) re( mi) | sold( la sold mi) re( mi) sold4-- |
+    sold8( la sold mi) re( mi-.) sold( la sold mi) re( mi) sold4-- |
+    R2.| la,4-.\mp re-. mi8( re la4-.) | re8( la mi' re)-. r re mi4-. |
+    re-. la8( mi' re4)-. | la'8( sold mi re)-. r la'-. |
     R1*2 |  R2.*2 |
-    sold8( la sold mi re mi sold la |
-    sold mi re mi sold4)-. sold8( la |
-    sold mi re mi sold la | sold mi re mi sold4)-. |
-    R1 | re4-. la'-. sold8( mi re4-.) |
-    mi8( re la' sold)-. r la | sold mi re mi sold4-. |
-    r4 <re sol\harmonic> r2 |
-    r8 <re sol\harmonic> r2 <re sol\harmonic>4 |
-    r8 <re sol\harmonic> r4 <re sol\harmonic> |
-    r4 r8 <re sol\harmonic> r4 |
-    r <sol' do\harmonic> r2 r8 <sol do\harmonic> r2 <sol do\harmonic>4 |
-    r8 <sol do\harmonic> r4 <sol do\harmonic> |
-    r4 r8 <sol do\harmonic> r4 |
-    r4 <sol,, do\harmonic> r2 | la4 re8 si r la si4 |
-    re4 sol8 fa do'4 | fa,8 sol si do r4 |
-    sol, do re8 fa re do |
-    sol do re fa re do sol do | re2.~| re4 r2 |
-    lab'8 sib re mib fa, lab sib re |
-    re, fa re do sol2~| sol2.~| sol2 r4 |
+    sold8\pp\(( la sold mi) re( mi) sold( la |
+    sold mi) re( mi) sold4-.\) sold8\(( la |
+    sold mi) re( mi) sold( la | sold mi) re( mi) sold4-.\) |
+    R1 | re4-.\pp la'-. sold8( mi re4-.) |
+    mi8( re la' sold)-. r la( | sold mi) re( mi) sold4-. |
+    r4 <re sol\harmonic>-.-> r2 |
+    r8 <re sol\harmonic>-.-> r2 <re sol\harmonic>4-.-> |
+    r8 <re sol\harmonic>-.-> r4 <re sol\harmonic>-.-> |
+    r4 r8 <re sol\harmonic>-.-> r4 |
+    r <sol' do\harmonic>-.-> r2 r8 <sol do\harmonic>-.-> r2 <sol do\harmonic>4-.-> |
+    r8 <sol do\harmonic>-.-> r4 <sol do\harmonic>-.-> |
+    r4 r8 <sol do\harmonic>-.-> r4 |
+    r4 <sol,, do\harmonic>-.-> r2 | la4-.\mf re8->( si) r la-. si4-> |
+    re4-. sol8( fa) do'4-> | fa,8( sol) si-> do-> r4 |
+    sol,-> do-> re8( fa) re( do) |
+    sol( do) re( fa) re( do) sol( do) | re2.~| re4 r2 |
+    \ind #"détaché" lab'8 sib re mib fa, lab sib re |
+    re, fa re do sol2~\>| sol2.~\!| sol2 r4 |
     R1*2 R2.*2 R1*2 R2.*2 |
-    <re' la'!>1~\CaV <re la'>~\CaV |
+    <re' la'!>1~\ppp\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>~\CaV|
     <re la'>1~\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>2\CaV  r4|
-    sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la |
+    \flaut sold8\ppp( la sold mi re mi  sold la |
+    sold mi re mi sold4) sold8( la |
     sold mi re mi sold la |
-    sold mi re mi sold4 |
-    sold8 la sold mi re mi  sold la |
-    sold mi re mi sold4 sold8 la |
+    sold mi re mi sold4) |
+    sold8( la sold mi re mi sold la |
+    sold mi re mi sold4) sold8( la |
     sold mi re mi sold la |
-    sold mi re mi sold4 |
+    sold mi re mi sold4) |
     R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1 R1-\fermataMarkup  |
 
     %%% Récitatif %%%
 
     R2.*2 R1 R2.*3 R1 R2.*2 |
-    r4 r8 fad4 mib8~| mib2.~|
-    mib8 mib~ \t {mib mib mib} \repeat tremolo 8 mib32 |
-    mib8 r8 r2 | R2 | R2.| R1*2| R2.*5| R1|
+    r4 r8 fad4--\downbow\mp mib8~\downbow| mib2.~|
+    mib8 mib~ \t {mib mib mib} \repeat tremolo 8 mib32\< |
+    mib8\sfz r8 r2 | R2 | R2.| R1*2| R2.*5| R1|
 
     %%% Duo %%%
 
-    r8 \pizz <sib re>
-    \repeat unfold 15 {r8 <sib re>} <sib re>4 |
+    r8 \pizz <sib re>\mp\arpeggUp
+    r8 \simile <sib re> r8 <sib re>
+    \repeat unfold 13 {r8 <sib re>} <sib re>4 |
     \repeat unfold 7 {r8 <do mi>} |
     \repeat unfold 3 {r8 <red fad>} <red fad>4 |
     \repeat unfold 4 {r8 <dod fad>} r4 | R2
-    \arco re8
-    \repeat unfold 27 re
-    \repeat unfold 14 sold
-    \repeat unfold 8  red'
-    do do re'! sol, do, re' |
+    \arco re8--\mf
+    re-- re-- re-- \simile re re
+    \repeat unfold 22 re
+    sold-.\psubito sold-. sold-. sold-. \simile sold sold
+    \repeat unfold 8 sold
+    red'\mf\< \repeat unfold 7 red
+    do\! do re'! sol, do, re' |
     sol, do, re' sol, do, do |
     R2. R1 |
 
     %%% Piu vivo %%%
-    <sol, sol'>2.~ <sol sol'>1
-    sol4:16 lab: sib: reb: mi: fad:
-    <sol,sol'>4 <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> |
-    dod2 r4 |
-    <sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4 |
-    dod2 r4 |
-    sol4 sol \t {mi' re fa} |
-    dod2 \tt {sib16 la lab sib si} |
-    sol4 r2 |
-    \pizz sol4 sol sol sol r2 |
-    si4 si si | sib r2 |
-    \arco re4 r8 re r16 re re8 |
-    re4 \pizz sib8 mib mi la |
-    \arco <re, re'>4 \pizz sib8 mib fad si |
-    \arco <re, re'>4 \pizz sib8 mib sold dod |
-    \arco <re, re'>4 \pizz sib8 fad' mi sold |
+    \ten <sol, sol'>2.~\f <sol sol'>1
+    sol4:16 lab: sib: reb:\> mi: fad:
+    <sol,sol'>4\ff <sol sol'>8-.\downbow \st {<sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>} |
+    dod2-> r4 |
+    \st {<sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4} |
+    dod2-> r4 |
+    sol4->\downbow sol->\downbow \t {mi'--( re-- fa--)} |
+    dod2 \tt {sib16( la lab sib si)} |
+    sol4-> r2 |
+    \pizz sol4\f sol sol sol r2 |
+    si4 si si | sib-> r2 |
+    \arco re4-.-> r8 re-. r16 re re8-. |
+    re4-> \pizz sib8 mib mi la |
+    \arco <re, re'>4-> \pizz sib8 mib fad si |
+    \arco <re, re'>4-> \pizz sib8 mib sold dod |
+    \arco <re, re'>4-> \pizz sib8 fad' mi sold |
     \arco <re  re'>4 \pizz do8 fa fad si |
-    \arco <mi, mi' mi>4 \pizz red8 sold si mi |
-    \arco <sol,, sol' sol'>4 \tt {mi'16 fa sol sib do} \tt {dod re mi sol la} |
+    \arco <mi, mi' mi>4-> \pizz red8 sold si mi |
+    \arco <sol,, sol' sol'>4-> \tt {mi'16\< fa sol sib do} \tt {dod re mi sol la} |
 
     %%% Poco allargando %%%
-    <re, sib'>2. re4~ | re4. <sol, mi'>8 ~ <sol mi'>2 si la4 r |
+    <re, sib'>2.\ff re4~ | re4. <sol, mi'>8 ~ <sol mi'>2\> si\!( la4) r |
     %%% Tempo giusto %%%
     re,16 re dod dod sib sib dod dod re re dod dod sib sib dod dod |
     re re sib sib re re sib sib re re sib sib re re sib sib |
