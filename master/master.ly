@@ -29,13 +29,13 @@
     acte = \ActeUnTitre
     piece = \SceneUnTitre
   }
-} %}
+} %
 \score {
   \ActeUnSceneUnBis
   \header {
     piece = \Separateur
   }
-} %{
+} %
 \score {
   \InterludeUn
   \header {
@@ -86,13 +86,13 @@
   \header {
     piece = \FinaleTitre
   }
-} %
+} %}
 \score {
   \Entracte
   \header {
     piece = \EntracteTitre
-  }
-} %
+  } %\midi {}
+} %{
 %\pageBreak
 \score {
   \ActeDeuxSceneUn

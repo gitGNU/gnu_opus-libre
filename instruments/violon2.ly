@@ -649,6 +649,74 @@ ActeUnSceneQuatreViolonDeux = { \ViolonDeux
 EntracteViolonDeux = { \ViolonDeux
   \relative {
     R2*9
+    R1*2 r4 sold'8 sold la4 r R1*7
+    r4 \jet sold'32 sold8.. sold32 sold8.. r4 |
+    sold32 sold8.. sold32 sold8.. r4 sold32 sold8.. |
+    r4 sold32 sold8.. r4 sold32 sold8.. |
+    r4 sold32 sold8.. sold32 sold8.. r4 | R1*2
+    re,16 re re re re4 r8 mib16 mib mib mib re8 |
+    mib16 mib mib mib re4 r2 |
+    re2:16 re: re: re: re: re: re: re: re: re: |
+    re4 r r2 | \pizz la'4 r r8 fa'? r la, |
+    R1 \arco si,4. do8~ do4 re |
+    mib \t {mi8 red mi} fa solb fa fad |
+    sol4 r r <re dod'> r <lab' re> r <re, dod'> <re re'> r r2 |
+    sib16 sib sib sib sib4 r8 sib16 sib sib sib sib8 |
+    sib \pizz mib'' sol,4 r8 si mib,4 |
+    r8 fad sib, re fad, mi'' sold,4 |
+    r8 do mi,4 r8 sol si, mib |
+    sol,4 r \arco sold8 sold la4 |
+    r8 sold sold la r4 sold8 la | re4 r r2 |
+    re,16 re re re re8 re16 re re re re8 |
+    re16 re re re re8 re16 re re re re8 re16 re re re |
+
+    %%% Fugato %%%
+    re1~ re2. r4 | r re2\glissando dod'2.~ dod2~ |
+    dod1~ dod2.~ dod~ dod1~ dod~ dod2.~ dod4 r2 |
+    r <do, fa\harmonic do''>~ <do fa\harmonic do''>1~
+    <do fa\harmonic do''>2.~ <do fa\harmonic do''>~ |
+    <do fa\harmonic do''>1~ <do fa\harmonic do''>~
+    <do fa\harmonic do''>2.~ <do fa\harmonic do''>~ |
+    <do fa\harmonic do''> r4 | R1 si''2.~ si4 mi,2\glissando |
+    dod'2~ dod8 r <re, re'> <re re'>
+
+    %%% Stretto %%%
+    <re re'>4 re, r re |
+    re16 re re re re4 r8 re16 re re re re8 |
+    re16 re re re <dod re>2.~ <dod re> r4 |
+    r4 r8 \pizz si'' re,4 r |
+    sold, r r8 lad r4 sold r8 lad r2 |
+    \arco si8 si si si si si si si dod dod dod dod dod dod dod dod |
+    <re, re'>4 r r2 | R1*3
+
+    %%% Noir %%%
+    R2.-\fermataMarkup \pizz fad4 r2 R2. fad4 r2 R2. R2
+    fad4 r2 r4 fad r2 r4 fad red8 fad R2 |
+    fad4 r r2 | R1*4 R1.*4 R1 R2.-\fermataMarkup
+    R2.*8 R2.-\fermataMarkup
+    R2.*4 R2.-\fermataMarkup
+    R1 R2 R1 R2 R1 R2 R1 R2.
+
+    %%% Largo non troppo %%%
+    \arco <do' la'>2 <do la'> <do la'> |
+    <re la'> <re la'> <re la'> |
+    <do si'> <do si'> <do si'> |
+    <fa do'> <fa do'> <fa do'> |
+    <mi re'> <mi re'> <mi re'> |
+    <re re'> <re re'> <re re'> |
+    <sol re'> <do, do'> <sol' mi'> |
+    <fa mi'> <fa re'> <fa re'> |
+    <la mi'> <la mi'> <la mi'> |
+    <fa fa'> <mi mi'> <re re'> |
+    <re re'> <do do'> <do do'> |
+    <mi mi'> <mi mi'> <mi dod'> |
+    <dod dod'> <re re'> <re re'> |
+    <si si'> <do si'> <re si'> |
+    <re si'> <do do'> <do do'> |
+    <do do'> <si si'> <la la'> |
+    <do do'> <si si'> <la la'> |
+    <la la'>4 mi' r1 | <la, la'>4 mi' r2 |
+    R1 R2. R2
   }
 }
 

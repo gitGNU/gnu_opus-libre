@@ -687,11 +687,11 @@ EntracteViolonUn = { \ViolonUn
     %%% Fugato %%%
     re1~ re~ re2.~ re2 r4 |
     r si'\glissando | sold'1~ sold2.~ sold~ sold1~ sold~ sold2.~ sold4 r2 |
-    r \harmo { <si, mi\harmonic>~ <si, mi\harmonic>1~
-      <si, mi\harmonic>2.~ <si, mi\harmonic>~
-      <si, mi\harmonic>1~ <si, mi\harmonic>~
-      <si, mi\harmonic>2.~ <si, mi\harmonic>~
-    <si, mi\harmonic>1~} si'4 r |
+    r \harmo { <si, mi\harmonic>~ <si mi\harmonic>1~
+      <si mi\harmonic>2.~ <si mi\harmonic>~
+      <si mi\harmonic>1~ <si mi\harmonic>~
+      <si mi\harmonic>2.~ <si mi\harmonic>~
+    <si mi\harmonic>} si'4 r | %%FIXME: compilation warning.
     r sol2.\glissando fad'2.~ fad ~ |
     fad2~ fad8 r <mib, mib'> <mib mib'> |
 
@@ -702,7 +702,7 @@ EntracteViolonUn = { \ViolonUn
     r8 \pizz fa'' sol,4 re r |
     sold, r r8 lad r4 sold r8 lad r2 |
     \arco si8 si si si si si si si dod dod dod dod dod dod dod dod |
-    <re, re>4 r r2 | r4 \pizz re r re r re r2 | re4 r re r |
+    <re, re'>4 r r2 | r4 \pizz re r re r re r2 | re4 r re r |
 
     %%% Noir %%%
     R2.-\fermataMarkup fad4 r2 R2. fad4 r2 R2. R2
@@ -713,7 +713,7 @@ EntracteViolonUn = { \ViolonUn
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    <do' la'>2 <do la'> <do la'> |
+    \arco <do' la'>2 <do la'> <do la'> |
     <re la'> <re la'> <re la'> |
     <do si'> <do si'> <do si'> |
     <fa do'> <fa do'> <fa do'> |
@@ -723,6 +723,7 @@ EntracteViolonUn = { \ViolonUn
     <la fa'> <la fa'> <la fa'> |
     <la sol'> <la sol'> <la sol'> |
     <la la'> <sol sol'> <fa fa'> |
+    <fa fa'> <mi mi'> <mi mi'> |
     <mi mi'> <mi mi'> <mi mi'> |
     <mi mi'> <fa fa'> <fa fa'> |
     <re re'> <re re'> <re re'> |

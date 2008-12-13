@@ -354,7 +354,7 @@ ActeUnSceneTroisTerContrebasse = { \Contrebasse
     R2*3 R2. R2*2 R2.*7
     \pizz mib,,4 r r2
     mi4 r fa r |
-    re'8 sol, do fad, lad si sol sold |
+    re8 sol, do fad, lad si sol sold |
     la fad sib sol lab reb sol, si |
     do lab la sib sol si lab la |
     re lab do reb la sib mib la, |

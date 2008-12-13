@@ -285,7 +285,7 @@ ActeUnSceneUnBisViolonTrois = { \ViolonTrois
     r4 <sib re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
     <la red>2.\mp r2 <la red>4-.\downbow |
     <sold mi'>2.\downbow
-    
+
     %%% Adagio %%%
     R1*33 R2*4
   }
@@ -636,6 +636,72 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
 EntracteViolonTrois = { \ViolonTrois
   \relative {
     R2*9
+    R1*2 r4 la8 la sold4 r R1*7
+    r4 \jet re''32 re8.. re32 re8.. r4 |
+    re32 re8.. re32 re8.. r4 re32 re8.. |
+    r4 re32 re8.. r4 re32 re8.. |
+    r4 re32 re8.. re32 re8.. r4 | R1*2
+    re,16 re re re re4 r8 re16 re re re re8 |
+    re16 re re re re4 r2 |
+    re2:16 re: re: re: re: re: re: re: re: re: |
+    re4 r r2 | \pizz sold4 r r8 fad r sold |
+    R1 \arco sold,4. la8~ la4 si |
+    do \t {reb8 do dod} re mib re red |
+    mi4 r r <re la'> r <re mib> r <re mi> <re re> r r2 |
+    la16 la la la la4 r8 la16 la la la la8 |
+    sib \pizz mib'' sol,4 r8 si mib,4 |
+    r8 fad sib, re fad, mi'' sold,4 |
+    r8 do mi,4 r8 sol si, mib |
+    sol,4 r \arco la,8 la sold4 |
+    r8 la la sold r4 la8 sold | re'4 r r2 |
+    re16 re re re re8 re16 re re re re8 |
+    re16 re re re re8 re16 re re re re8 re16 re re re |
+
+    %%% Fugato %%%
+    re1~ re~ re2.~ re~ re2~ re1~ <re fa'>2.~ <re fa'>~
+    <re fa'>1~ <re fa>~ <re fa'>2.~ <re fa'>4 r2 |
+    r dod'~ dod1~ dod2.~ dod~ dod1~ dod2. r4 |
+    <la mi'>2.~ <la mi'>~ <la mi'>2 <re, la'>~ |
+    <re la'>8 <la' mi'>4. <re, la'> <la' mi'>8~ |
+    <la mi'>2.~ <la mi'> | fad'2~ fad8 r <dod dod'> <dod dod'> |
+
+    %%% Stretto %%%
+    <re re'>4 re, r re |
+    re16 re re re re4 r8 re16 re re re re8 |
+    re16 re re re <dod re>2.~ <dod re> r4 |
+    r4 \pizz sol'' re r |
+    mi, r r8 fad r4 mi r8 fad r2 |
+    \arco sol8 sol sol sol sol sol sol sol lad lad lad lad lad lad lad lad |
+    <re, sib'>4 r r2 | R1*3
+
+    %%% Noir %%%
+    R2.-\fermataMarkup \pizz fad4 r2 R2. fad4 r2 R2. R2
+    fad4 r2 r4 red r2 r4 red fad8 red R2 |
+    red4 r r2 | R1*4 R1.*4 R1 R2.-\fermataMarkup
+    R2.*8 R2.-\fermataMarkup
+    R2.*4 R2.-\fermataMarkup
+    R1 R2 R1 R2 R1 R2 R1 R2.
+
+    %%% Largo non troppo %%%
+    \arco <la' la'>2 <la la'> <la la'> |
+    <la la'> <la la'> <la la'> |
+    <si si'> <si si'> <si si'> |
+    <do do'> <do do'> <do do'> |
+    <mi do'> <mi do'> <mi do'> |
+    <re do'> <re si'> <re la'> |
+    <do sol'> <do do'> <do si'> |
+    <do la'> <fa re'> <re si'> |
+    <mi do'> <mi do'> <mi do'> |
+    <si fa'> <si sol'> <si lab'> |
+    <do sol'> <do sol'> <mi do'> |
+    <la, sib'> <la la'> <la sol'> |
+    <la sol'> <la fa'> <la fa'> |
+    <si fa'> <si sol'> <si lab'> |
+    <do lab'> <do sol'> <do sol'> |
+    <re, la' fa'> <la' fa'> <la fa'> |
+    <la la'> <sol sol'> <fa fa'> |
+    <la la'>4 mi r1 | <la la'>4 mi r2 |
+    R1 R2. R2
   }
 }
 

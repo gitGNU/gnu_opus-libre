@@ -513,7 +513,7 @@ ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxVioloncelleDeux \ActeDeuxSceneDe
 
 \bookpart {
   \include "./master/master.ly"
-}
+}%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Contrebasse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -537,7 +537,7 @@ ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxContrebasse \ActeDeuxSceneDeuxMe
 
 \bookpart {
   \include "./master/master.ly"
-}
+}%{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -563,7 +563,7 @@ ActeDeuxSceneDeux = \makePianoPart \ActeDeuxSceneDeuxPiano \ActeDeuxSceneDeuxMes
 \bookpart {
   \include "./master/master.ly"
 }
-%}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Percus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePianoPart \ProloguePercus \PrologueMesures
@@ -586,6 +586,6 @@ ActeDeuxSceneDeux = \makePianoPart \ActeDeuxSceneDeuxPercus \ActeDeuxSceneDeuxMe
 
 \bookpart {
   \include "./master/master.ly"
-}
+}%}
 
 %%-----------------------------------------------------------------%
