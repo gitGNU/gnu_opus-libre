@@ -399,25 +399,26 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     %%% Poco allargando %%%
     <re, sib'>2.\ff re4~ | re4. <sol, mi'>8 ~ <sol mi'>2\> si\!( la4) r |
     %%% Tempo giusto %%%
-    re,16 re dod dod sib sib dod dod re re dod dod sib sib dod dod |
-    re re sib sib re re sib sib re re sib sib re re sib sib |
-    fa' fa mi mi do do mi mi fa fa mi mi do do mi mi |
-    fad fad re re sib sib re re fad fad re re fad fad re re |
-    sol sol mi mi si si mi mi sol sol si si la la do do |
-    dod2 r4 |
-    <sol, fa' sib\harmonic fa''>1~ <sol fa' sib\harmonic fa''>~ <sol fa' sib\harmonic fa''>4 r2
+    \st {re,16->\fp re dod dod sib sib dod dod re-> re dod dod sib sib dod dod |
+    re-> re sib sib re-> re sib sib re-> re sib sib re-> re sib sib |
+    fa'-> fa mi mi do do mi mi fa-> fa mi mi do do mi mi |
+    fad-> fad re re sib sib re re fad-> fad re re fad-> fad re re |
+    sol-> sol mi mi si-> si mi mi sol-> sol si->\< si la-> la do-> do} |
+    dod2\f r4 |
+    \ten <sol, fa' sib\harmonic fa''>1~\f <sol fa' sib\harmonic fa''>~ <sol fa' sib\harmonic fa''>4 r2
     R2
     <fa' sib\harmonic fa''>2~ <fa sib\harmonic fa''>~ <fa sib\harmonic fa''>2.~
-    <fa sib\harmonic fa''>8 r dod16 mi fad la si re mi sol |
-    <re, re' mi>4 <re re' mi> <sol la mi'> <sol la mi'> |
-    <re re' mi> <re re' mi> <sol la mi'> <sol la mi'> |
-    <la la'>8 mi16 sol si re mi sol |
-    <re, sol' la>4 <re sol' la> <sol la mi'> <sol la mi'> <sol' la>
+    <fa sib\harmonic fa''>8 r \ind #"détaché" dod16\mf\< mi fad la si re mi sol |
+    <re, re' mi>4--->\f <re re' mi>---> <sol la mi'>---> <sol la mi'>---> |
+    <re re' mi>---> <re re' mi>---> <sol la mi'>---> <sol la mi'>---> |
+    <la la'>8-> \ind #"détaché" mi16\< sol si re mi sol |
+    <re, sol' la>4--->\ff <re sol' la>---> <sol la mi'>---> <sol la mi'>---> <sol' la>--->
     \pizz <fa sol>8 r r2 |
 
     %%% Largo assai %%%
     R1 R2.*3 R2
-    \arco sib,,2.~ sib2. r4 |
+    %%%FIX ME!%%%
+    \arco \ten sib,,2.~\pp sib2. r4 |
     r2 \pizz fa'4 mi | mib r la, r | re r r2 |
   }
 }

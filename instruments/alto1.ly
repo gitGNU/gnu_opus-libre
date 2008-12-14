@@ -417,29 +417,29 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
     R1
 
     %%% Tempo giusto %%%
-    r8 \pizz <sib, re> r <sib re> r <sib re> r <sib re> |
+    r8 \pizz <sib, re>\mf r <sib re> r <sib re> r <sib re> |
     r <sib re> r <sib re> r <sib re> r <sib re> |
     r <la dod> r <la dod> r <la dod> r <la dod> |
     r <red, si'> r <red si'> r <red si'> r <red si'> |
     r <sol si> <sol si>4 r2 |
-    r16 \arco reb'' do sib lab sol fa re reb do sib lab |
-    <sol re' lad'>1~<sol re' lad'>2. r4 |
-    do,16 mib solb lab si re mi sol \clef treble sib do mib solb |
-    lab4. r8 \clef alto |
+    r16 \arco reb''\fp\<( do sib lab sol fa re reb do sib lab) |
+    \ten <sol re' lad'>1~\f <sol re' lad'>2. r4 |
+    \ind #"détaché" do,16\mp\< mib solb lab si re mi sol \clef treble sib do mib solb |
+    lab4.\! r8 \clef alto |
     <do,, fa\harmonic>2~ <do fa\harmonic>~ <do fa\harmonic> r4 |
-    re,16 fad sold si do, mib fad sold si re mi sol |
-    la8 \t {re,16 mi re} \ttt {mi re mi la mi re }
-    \ttt {mi re mi la mi re} \ttt {mi re mi la mi re} |
-    \ttt {si re mi re mi re} \ttt {si re mi re mi re} |
-    \ttt {si re mi re mi re} \ttt {si re mi re mi re} |
-    \ttt {la re mi re mi la} la8 re |
-    \ttt {re,16 mi la la mi re} \ttt {re mi la la mi re} |
-    \ttt {sol, mi' la la mi sol,} \ttt {sol mi' la la mi sol,}
-    \ttt {sol  mi' la la mi re} | la8 r r2 |
+    \simile re,16\mf\< fad sold si do, mib fad sold si re mi sol |
+    la8\! \t {re,16\mf( mi re)} \ttt {mi( re mi) la->( mi re) }
+    \ttt {mi( re mi) la->( mi re)} \ttt {mi( re mi) la->( mi re)} |
+    \ttt {si->( re mi) re( mi re)} \ttt {si->( re mi) re( mi re)} |
+    \ttt {si->( re mi) re( mi re)} \ttt {si->( re mi) re( mi re)} |
+    \ttt {la->( re mi) re->( mi la)} la8-> re-> |
+    \ttt {re,16\f( mi la) la( mi re)} \ttt {re( mi la) la( mi re)} |
+    \ttt {sol,( mi' la) la( mi sol,)} \ttt {sol( mi' la) la( mi sol,)}
+    \ttt {sol( mi' la) la( mi re)} | la8-.-> r r2 |
 
     %%% Largo assai %%%
-    r4 re2. | dod4. r8 dod4 do4. r8 do4 si4. r8 r4 | r si |
-    sib2.~ | sib2. r4 | r2 \pizz la4 lab sol r re r re r r2 |
+    r4 re2.\p( | dod4.) r8 dod4( do4.) r8 do4( si4.) r8 r4 | r si-- |
+    \ten sib2.~\pp | sib2. r4 | r2 \pizz la4 lab sol r re r re r r2 |
   }
 }
 

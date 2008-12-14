@@ -369,25 +369,25 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     dod r2 | dod4 dod dod | \ten fa,1~\ff fa2 r4 si~\f\> | si8 do4. dod2\! |
 
     %%% Tempo giusto %%%
-    <re, sib'>4 <re sib'> <re sib'> <re sib'> |
+    <re, sib'>4---.\fp <re sib'>---. <re sib'>---. \simile <re sib'> |
     <re sib'> <re sib'> <re sib'> <re sib'> |
     <dod la'> <dod la'> <dod la'> <dod la'> |
     <red si'> <red si'> <red si'> <red si'> |
-    \pizz sol r8 \arco sib4 lab si8 |
-    <sol sol'>2 r4 | \repeat unfold 32 sol16
-    sol8 r r2 |
-    r4 \t {re'8 si dod} |
+    \pizz sol r8 \arco sib4--\upbow\f lab-- si8-. |
+    <sol sol'>2---> r4 | sol16\mf \repeat unfold 31 sol
+    sol8-- r r2 |
+    r4 \t {re'8--\upbow si-- dod--} |
     \repeat unfold 28 sold16
-    sold8 r r sold fad la |
-    fa2 fa4. fa8
-    <fa fa'>2 | <fa fa'> |
-    r8 la sol sib |
-    fad4. fad8 | fad4. fad8 <fad re'>4\glissando \clef tenor |
-    <fad'' la>8 r r2 |
+    sold8 r r sold--\upbow fad-- la-- |
+    fa2\f fa4.\downbow fa8
+    <fa fa'>2 | <fa fa'>\downbow |
+    r8 la\upbow( sol sib) |
+    fad4.-- fad8 | fad4.-- fad8 <fad re'>4--\glissando \clef tenor |
+    <fad'' la>8-.-> r r2 |
 
     %%% Largo assai %%%
     R1 R2.*3 R2
-    solb,2.~ solb2. r4 |
+    \ten solb,2.~\pp solb2. r4 |
     r2 \pizz fa'4 mi | mib r sib r | re, r r2 |
   }
 }

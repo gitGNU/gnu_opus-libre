@@ -410,25 +410,26 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
     %%% Poco allargando %%%
     sib2.\ff la4~|la4. sol8~sol2\> | mi\!( re4) r |
     %%% Tempo giusto %%%
-    dod16 re, re re dod re re re dod' re, re re dod re re re |
-    re' re, re re re re re' re, re' re, re re re re re' re, |
-    mi' mi, mi mi mi mi mi' mi, mi' mi, mi mi mi mi mi' mi, |
-    sol' sib, sib sib sib sib sol' sib, sol' sib, sib sib sib sib re sib |
-    si' mib, mib mib do mib mib mib si' mib, mib mib fa fa sold sold |
-    dod2 r4
-    <mi, la\harmonic mi''>1~ <mi la\harmonic mi''>~ <mi la\harmonic mi''>4 r2
+    \st {dod16->\fp re, re re dod-> re re re dod'-> re, re re dod-> re re re |
+    re'-> re, re re re re re'-> re, re'-> re, re re re re re'-> re, |
+    mi'-> mi, mi mi mi mi mi'-> mi, mi'-> mi, mi mi mi mi mi'-> mi, |
+    sol'-> sib, sib sib sib sib sol'-> sib, sol'-> sib, sib sib sib sib re-> sib |
+    si'-> mib, mib mib do-> mib mib mib si'-> mib, mib->\< mib fa-> fa sold-> sold} |
+    dod2\f r4
+    \ten <mi, la\harmonic mi''>1~\mf <mi la\harmonic mi''>~ <mi la\harmonic mi''>4 r2
     R2
     <mi la\harmonic mi''>2~ <mi la\harmonic mi''>~ <mi la\harmonic mi''>2.~
-    <mi la\harmonic mi''>8 r \tt {dod,16 mi fad la si} \tt {la si re mi sol}|
-    <la, la'>4 <la la'> <la si'> <la si'> |
-    <la la'> <la la'> <la si'> <la si'> |
-    <la la'>16 re, sol la re mi sol la |
-    <mi re'>4 <mi re'> <re mi'> <re mi'>
-    <mi re'> \pizz <sol mi'>8 r r2 |
+    <mi la\harmonic mi''>8 r \tt {dod,16\mf\<( mi fad la si)} \tt {la( si re mi sol)}|
+    <la, la'>4--->\f <la la'>---> <la si'>---> <la si'>---> |
+    <la la'>---> <la la'>---> <la si'>---> <la si'>---> |
+    <la la'>16->\< \ind #"détaché" re, sol la re mi sol la |
+    <mi re'>4--->\f <mi re'>---> <re mi'>---> <re mi'>--->
+    <mi re'>---> \pizz <sol mi'>8 r r2 |
 
     %%% Largo assai %%%
     R1 R2.*3 R2
-    \arco sib,,2.~ sib2. r4 |
+    %%%%FIXME%%%%
+    \arco \ten sib,,2.~\pp sib2. r4 |
     r2 \pizz la'4 sold | sol r dod, r | re r r2 |
   }
 }
