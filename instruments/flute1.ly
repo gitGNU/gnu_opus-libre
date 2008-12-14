@@ -535,6 +535,59 @@ ActeUnSceneQuatreFluteUn = { \FluteUn
 EntracteFluteUn = { \FluteUn
   \relative {
     R2*9
+    R1*10 r4 \t {reb''16 do sib} sol8 r2 | R1
+    r4 dod r2 | R1 r4 re, r re | r dod re r | R1*2
+    r2 sold,16 la sold mi re mi sold la | sold2. r4 |
+    re16 fad sold si mi2.~ mi4 r r2 | R1*2
+    r8 lab' mi mib sol fad fa lab | R1
+    r4 \t {lab8 mib la} \t {fa mi lab} \t {sol fad la} |
+    r2 r4 r8 \t {do,,16 re mi} | fad4 re' r2 | R1
+    r8 \t {sol,16 sib do} dod8 dod re4 r | R1*4
+    r4 r8 mi,,32 la do fa sold8 la la lab |
+    do reb mib do mi fa sold sold |
+    la4 r r8 \t {sold,16 la dod} re4 |
+    r8 \t {sold,16 la dod} re4 r |
+    r8 \t {sold,,16 re sold} si fad sold si
+    re8 \t {sold16 re sold} la mi sold la |
+
+    %%% Fugato %%%
+    re4 r dod,2~ dod2. r4 | R2.*2 R2
+    R1 r4 dod2~ dod2.~ dod4 r r2 |
+    reb sib8 r r4 | R2. do2 la8 r |
+    R1 reb2 sib8 r r4 R2. sol2. re'4 r r2 | R1
+    r4 do si'~ si2. sol2. r4 | R1
+    r4 re2~ re si'4 sold'2~ sold8 r \tt {la,16 si re mi sol} |
+
+    %%% Stretto %%%
+    la4 r r2 R1
+    r8 \t {mi16 dod red} lad4 r2 |
+    mi8 sold mi'4 r2 |
+    sol,,4 r8 do r si' r4 |
+    sold r sold8 lad r lad |
+    sold4 sold8 lad r4 r8 \t {fad16 lad re} |
+    fad4 r r r8 \t {la,16 do fa} |
+    sold4 r r r8 \t {sol,16 la do} |
+    re4 fa16 sol lab sol lab4 r R1*3
+
+    %%% Noir %%%
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
+    R1*5 R1.*4 r2 sib,, R2.-\fermataMarkup
+    R2.*8 R2.-\fermataMarkup
+
+    %%% poco più %%%
+    R2.*4 R2.-\fermataMarkup
+
+    %%% Andantino %%%
+    mi1~ mi4 r mi1~ mi4 r mi1~ mi4 r si2. r4 R2.
+
+    %%% Largo non troppo %%%
+    do'1. si1~ si4 r la1. sol2 fa mi4 r |
+    la1.~ la1~ la4 r | la1 mi'2~ mi1~ mi4 r |
+    la1.~ la2 sol fa~ fa mi2. r4 |
+    la,4 sol fa mi fa8 mi fa sol |
+    la1~ la4 r | si1. si2 do2. r4 |
+    do2 si la~ la4 sol fa mi fa r |
+    do1~ do4 r re2. r4 R1 R2. R2
   }
 }
 
