@@ -675,7 +675,7 @@ EntracteViolonTrois = { \ViolonTrois
     re16 re re re <dod re>2.~ <dod re> r4 |
     r4 \pizz sol'' re r |
     mi, r r8 fad r4 mi r8 fad r2 |
-    \arco sol8 sol sol sol sol sol sol sol lad lad lad lad lad lad lad lad |
+    \arco sol2:8 sol: lad: lad: |
     <re, sib'>4 r r2 | R1*3
 
     %%% Noir %%%

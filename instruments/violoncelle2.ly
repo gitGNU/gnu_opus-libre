@@ -635,6 +635,69 @@ EntracteVioloncelleDeux = { \VioloncelleDeux
   \relative {
     sold,2~sold~sold sold~sold sold sold~sold4 sold~|
     sold4 sold8 \t {sold16 fa sol} |
+    re4 re''4:16 re2:16 |
+    re: re: re: re: re: re: re: re: re: re: |
+    re: re: re: re: re: re: re: re: re4 r r2 | R1*10
+    re,16 re re re re4 r8 re16 re re re re8 |
+    re16 re re re re4 r re,16 re re re | re4 r r2 |
+    \pizz mib4 mi8 la si4 do,8 fa fad4 r r2 |
+    r4 sol8 sib lab reb r4 | R1
+    \arco re16 re re re re4 r8 re16 re re re re8 |
+    re16 re re re re4 r2 |
+    re,4:8 re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,4 re re re re re re |
+    re re re re |
+
+    %%% Fugato %%%
+    mi2:8 mi: mi:mi: mi: mi4: mi2: mi4: mi2: |
+    mi: mi: mi: mi4: mi2: mi4: mi2: mi: mi: mi: mi2: mi4: mi2: mi4: |
+    mi2: mi: mi: mi: mi: mi4: mi2: mi4: mi2: mi: mi: mi: |
+    mi: mi4: mi2: mi4: fa?2: fa: fad: fad:
+    <sol re'>4:8 <re' la'>: <sol, re'>: <re' la'>: <sol, re'>: <re' la'> |
+    mib,2:8 mib:
+
+    %%% Stretto %%%
+    re'2:16 re: re: re: re4 r \harmo {<sol, mi'\harmonic >2~ <sol mi'\harmonic >2.} si'2
+    r4 \pizz mi, sol r mi |
+    \arco sold, sold sol sol sold sold sol sol
+    <fa re'> <fa re'> <fa re'> <fa re'> |
+    <mi si'> <mi si'> <mi si'> <mi si'> |
+    <re sib'> r r2 R1*3 |
+
+    %%% Noir %%%
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
+    R1*5 R1.*4 R1 R2.-\fermataMarkup \clef treble
+
+    r2 \arco la'''4~\CaV la2.~\CaV la~\CaV la~\CaV la~\CaV
+    la~\CaV la~\CaV la2\CaV r4 | R2.-\fermataMarkup \clef bass
+
+    %%% Poco più %%%
+    R2.*4 R2.-\fermataMarkup
+
+    %%% Andantino %%%
+    R1 R2 R1 R2 R1 R2 R1 R2.
+
+    %%% Largo non troppo %%%
+    la,,2 la la si si si do do do re re re |
+    la <la la' la> la si <si la' la> si |
+    do <do sol' la> do re <re re la'> r \clef treble |
+    la''4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la la' sol sol, fa fa' mi mi, fa mi fa sol |
+    la la' sol sol, fa fa' mi mi, fa mi fa sol |
+    la la' sol sol, fa fa' mi mi, fa mi fa sol |
+    la la' sol4 fa,8 fa' mi4 fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 mi r1 \clef bass |
+    <mi,,, si' re la'>4 mi' r2 R1 R2. R2
   }
 }
 

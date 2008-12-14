@@ -702,6 +702,80 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
 EntracteAltoDeux = { \AltoDeux
   \relative {
     R2*9
+    <re, re'>4 r r2 R1*6
+    re16 re re re re4 r8 re16 re re re re8 |
+    re16 re re re re4 r2 |
+    re16 re re re re re re re re re lab' lab re, re si'? si |
+    re,4:16 re': re,: re': |
+    re,: re': re, re': |
+    re,: re': re, re': |
+    re,: re': re, re': |
+    re,: re': re, re': |
+    re,: re': re, re': |
+    re,2:16 re'2:16 re,: re: |
+    re4 r r2 | R1*2
+    re1~ re2. r4 | R1*2
+    re1~ re2. r4 | sol lab la sib si r r <re, sol> r <re sold> r mib |
+    re4:16 re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,4 re re re re re re |
+    re2:8 re: |
+
+    %%% Fugato %%%
+    red1~ red~ red2.~ red~ red2~ |
+    red1~ red2.~ red~ <red sol>1~ <red sol>~ <red sol>2.~ red~
+    red1~ red~ red2.~ red~ red1~ red2. r4 |
+    do2:8 do4: do2: do4: <do sol'>2:8 <do sol'>: <do sol'>: <do sol'>:
+    <do sol' re'>4 <sol' re' la'> <do, sol' re'> <sol' re' la'>
+    <do, sol' re'> <sol' re' la'> |
+    <sol re'>4:8 <re' la'>: <sol, re'>: <re' la'>: |
+
+    %%% Stretto %%%
+    re2:16 re: | re: re: |
+    re4 <dod re>2 r4 \clef treble |
+    r4 r8 \pizz fad' sold,4 r \clef alto |
+    mi sol r mi |
+    \arco mi2:8 mi8 fad fad4:8 |
+    mi: mi8 fad fad2:8 |
+    si,2:8 si: | lad: lad: |
+    <sib re>4 r r2 | R1*3
+
+    %%% Noir %%%
+    R2.-\fermataMarkup \pizz red4 r2 | R2. red4 r2 R2. R2 |
+    red4 r2 r4 red, r2 | r4 red r | R2 mi4 r r2 |
+    R1*4 R1.*4 R1 R2.-\fermataMarkup
+
+    R2. r4 \arco la2~ la2.~ la~ la~ la~ la~ la2 r4 | R2.-\fermataMarkup
+
+    %%% Poco più %%%
+    la2.~ la~ la~ la2 r4 | R2.-\fermataMarkup |
+
+    %%% Andantino %%%
+    R1 R2 R1 R2 R1 R2 R1 R2. \clef treble
+
+    %%% Largo non troppo %%%
+    la'4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi r2 |
+    la'4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi r2 \clef alto |
+    <la,, la'>1. <sol re' re'>1 <sol re'>2 |
+    <sol sol' do>1 <do, sol' sol'>2 |
+    <dod sol' mi'> <la' mi'> dod, |
+    <re la' fa'> re' re, |
+    <re sol re'> <si' fa'> <re, sol> |
+    <do sol' mi'> do' do, |
+    <re re'> <re re'> <re re'> |
+    <red red'> <red red'> <red red'> |
+    <mi mi'> r1 | <mi mi'>2 r | R1 R2. R2
   }
 }
 

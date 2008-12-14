@@ -690,7 +690,7 @@ EntracteViolonDeux = { \ViolonDeux
     re16 re re re <dod re>2.~ <dod re> r4 |
     r4 r8 \pizz si'' re,4 r |
     sold, r r8 lad r4 sold r8 lad r2 |
-    \arco si8 si si si si si si si dod dod dod dod dod dod dod dod |
+    \arco si2:8 si: dod2:8 dod: |
     <re, re'>4 r r2 | R1*3
 
     %%% Noir %%%
