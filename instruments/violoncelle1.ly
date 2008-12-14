@@ -370,28 +370,28 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     dod r2 | dod4 dod dod | \ten fa1~\ff fa2 r4 si,~\f\> | si8 do4. dod2\! |
 
     %%% Tempo giusto %%%
-    <re, sib'>4 <re sib'> <re sib'> <re sib'> |
+    <re, sib'>4---.\fp <re sib'>---. <re sib'>---. \simile <re sib'> |
     <re sib'> <re sib'> <re sib'> <re sib'> |
     <dod la'> <dod la'> <dod la'> <dod la'> |
     <red si'> <red si'> <red si'> <red si'> |
     \pizz sol r r2 \clef tenor |
-    \tt { r16 fa'' mi re do} \tt {si la sold fad mi} \clef bass
-    \tt {mib reb do sib lab} | sol1~ sol2. r4 |
-    r \tt {do16 reb mib solb lab} \clef tenor \tt {la si re mi sol} |
-    lab4. r8 \clef bass |
+    \tt { r16 fa''\fp\<( mi re do} \tt {si la sold fad mi} \clef bass
+    \tt {mib reb do sib lab)} | \ten sol1~\f sol2. r4 |
+    r \tt {\ind #"détaché" do16\mp\< reb mib solb lab} \clef tenor \tt {la si re mi sol} |
+    lab4.\! r8 \clef bass |
     sold,,2~ | sold~ | sold r4 |
-    r r8 sold fad la |
-    <fa fa'>2 | <fa fa'>4. fa8 |
-    <fa re' la'>2 | <fa re'>4. fa8 |
-    r la sol sib |
-    \t {fad re' la'} \t {la re, fad,} |
-    \t {fad re' la'} \t {la re, fad,}
-    \t {fad re' la' \glissando } \clef tenor |
-    sold' r r2 |
+    r r8 sold--\updown fad-- la-- |
+    <fa fa'>2\f | <fa fa'>4.\downbow fa8 |
+    <fa re' la'>2 | <fa re'>4.\downbow fa8 |
+    r la\upbow( sol sib) |
+    \t {fad--( re'-- la'--)} \t {la--( re,-- fad,--)} |
+    \t {fad--( re'-- la'--)} \t {la--( re,-- fad,--)}
+    \t {fad--( re'-- la'--) \glissando } \clef tenor |
+    sold'-.-> r r2 |
 
     %%% Largo assai %%%
     R1 R2.*3 R2
-    sib,2.~ sib2. r4 |
+    \ten sib,2.~\pp sib2. r4 |
     r2 \pizz la'4 sold | sol r sib, r | re, r r2 |
   }
 }

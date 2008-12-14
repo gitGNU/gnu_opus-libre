@@ -265,17 +265,17 @@ ActeUnSceneDeuxContrebasse = { \Contrebasse
     dod r2 dod4 dod dod \ten fa,1~\ff fa2 r4 si~\f\> | si8 do4. dod2\! |
 
     %%% Tempo giusto %%%
-    \pizz re4 re re re re re re re |
+    \pizz re4\mf re re re re re re re |
     dod dod dod dod si si si si | si r r2 |
-    \arco <sol sol'>2 r4 |
-    \repeat unfold 16 sol8 |
-    sol r r2 | r4 \t { re'8 si do} |
+    \arco <sol sol'>2--->\f r4 |
+    sol8-.\mp sol-. sol-. sol-. \simile sol sol \repeat unfold 10 sol |
+    sol-- r r2 | r4 \t { re'8--\upbow si-- do--} |
     \repeat unfold 14 sold |
-    sold r r sold fad la |
-    fa2~fa4. fa8 |
+    sold r r sold--\upbow fad-- la-- |
+    fa2~\f fa4. fa8 |
     fa2~ fa |
-    r8 la sol sib |
-    fad2~ fad2. \pizz la'8\CaV r r2
+    r8 la\upbow( sol sib) |
+    \ten fad2~ fad2. \pizz la'8\CaV r r2
     R1 R2.*3 R2 R2. R1*4
   }
 }
