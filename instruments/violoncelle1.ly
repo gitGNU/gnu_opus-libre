@@ -417,31 +417,31 @@ InterludeDeuxVioloncelleUn = { \VioloncelleUn
 
 ActeUnSceneTroisVioloncelleUn = { \VioloncelleUn
   \relative {
-    \pizz do,,4 r2 |
-    fa2.:32~fa: <fa mi'>2.:32~<fa mi'>:~<fa mi'>:~<fa mi'>: <fa mi'>4 r2 |
-    r4 \pizz re' r r si r r8 la r la dod4 |
-    \arco sib2.:32 R2. <sib la'>2.:32 <la sold'>2.
-    sib2.:32 do2.:32~do:~do4 r \pizz fa, lab r2 |
-    \ind #"arco (solo)" sol'2.~\CaV sol~\CaV sol~\CaV sol2\CaV sol4\CaV |
+    \pizz do,,4\mf r2 |
+    fa2.:32~\p fa: <fa mi'>2.:32~\mp <fa mi'>:~<fa mi'>:~<fa mi'>:\< <fa mi'>4->\! r2 |
+    r4 \pizz re'\mf r r si r r8 la-> r la dod4 |
+    \arco sib2.:32\fp R2. <sib la'>2.:32\pp <la sold'>2.\p
+    sib2.:32\< do2.:32~\mf do:~\< do4\! r \pizz fa,\mf lab r2 |
+    \ind #"arco (solo)" sol'2.~\CaV\mfintenso sol~\CaV sol~\CaV sol2\CaV sol4\CaV |
 
     %%% Lamento %%%
-    \ind #"ordin, sul G" sol1.~sol~sol1 la2~la1.~la1 la4 sib~sib1.~|
-    sib4 dob2 r | reb,2 do4 r2 | reb do4 r2 | reb do4 r2 | re reb4 r2 |
+    \ind #"ordin, sul G" sol1.~sol~sol1 la2~ la1.~\< la1 la4 sib~ sib1.~\!|
+    \ind #"espr." sib4\< dob2\! r | reb,2\p( do4) r2 | reb( do4) r2 | \simile reb do4 r2 | re reb4 r2 |
+    <lab sol'>2\mp\> <do fad>4\upbow\! r |
+    \simile <re dod'>2 <si lad'>4 r |
     <lab sol'>2 <do fad>4 r |
-    <re dod'>2 <si lad'>4 r |
-    <lab sol'>2 <do fad>4 r |
-    <la sold'>2 <mi'sol>4 r |
-    <reb, do'>2 <reb do'>4 <reb do'>4. <reb do'>8 <reb do'> <reb do'> |
-    <reb do'>4 <reb do'>8 <reb do'> r4 | R2*2
+    <la sold'>2\< <mi'sol>4\mf r |
+    \ten <reb, do'>2\f <reb do'>4-- <reb do'>4.---> <reb do'>8-> <reb do'>-> <reb do'>-> |
+    <reb do'>4---> <reb do'>8->\ff <reb do'>-> r4 | R2*2
 
     %%% Tempo I %%%
-    \pizz sib'4 do r re sib r r mi, r |
-    \arco red'2.:32 dod: dod2. red2.~ red red fad mi4 r2 |
-    R2. \pizz si4 r la r2 sib4 |
+    \pizz sib'4\mp do r re sib r r mi, r |
+    \arco red'2.:32\sfp dod: dod2. red2.~ red red fad\upbow\< mi4-.->\sfz r2 |
+    R2. \pizz si4\mf r la r2 sib4 |
 
     %%% Tempo II %%%
-    r2 r4 mib, reb mi | do2 r4 \arco sol'2. lab1.~lab~lab2 r4 mi'2.:32~mi:
-    <fa, mi'>2.:32~<fa mi'>: <fa mi'>4 r | R1 R2. R2
+    r2 r4 mib,\p reb mi | do2 r4 \arco sol'2.\p lab1.~lab~ lab2 r4 mi'2.:32~\pppp mi:
+    <fa, mi'>2.:32~\pp <fa mi'>:\mp <fa mi'>4->\sffz r | R1 R2. R2
   }
 }
 
