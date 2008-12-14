@@ -694,7 +694,7 @@ EntracteViolonUn = { \ViolonUn
       <si mi\harmonic>2.~ <si mi\harmonic>~
       <si mi\harmonic>1~ <si mi\harmonic>~
       <si mi\harmonic>2.~ <si mi\harmonic>~
-    <si mi\harmonic>} si'4 r | %%FIXME: compilation warning.
+    <si mi\harmonic>} si'4 r |
     r sol2.\glissando fad'2.~ fad ~ |
     fad2~ fad8 r <mib, mib'> <mib mib'> |
 
@@ -704,7 +704,7 @@ EntracteViolonUn = { \ViolonUn
     re16 re re re <dod re>2.~ <dod re> r4 |
     r8 \pizz fa'' sol,4 re r |
     sold, r r8 lad r4 sold r8 lad r2 |
-    \arco si8 si si si si si si si dod dod dod dod dod dod dod dod |
+    \arco si2:8 si: dod2:8 dod: |
     <re, re'>4 r r2 | r4 \pizz re r re r re r2 | re4 r re r |
 
     %%% Noir %%%

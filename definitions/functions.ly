@@ -81,7 +81,95 @@ showAnyway =
   percent-repeat-interface stanza-number-interface)
 #})
 
-%% Articulation shortcuts -----------------------------------------%
+%% Music formatting -----------------------------------------------%
+
+graceNotes =
+#(define-music-function (parser location notes) (ly:music?)
+#{ \tiny $notes \normalsize #})
+
+parlato =
+#(define-music-function (parser location notes) (ly:music?)
+#{ \override NoteHead #'style = #'cross
+  $notes
+\revert NoteHead #'style #})
+
+slap =
+#(define-music-function (parser location music) (ly:music?)
+#{\override NoteHead #'stencil = #ly:text-interface::print
+  \override NoteHead #'text = \markup \musicglyph #"scripts.sforzato"
+  \override NoteHead #'extra-offset = #'(0.1 . 0.0 )
+  $music
+  \revert NoteHead #'stencil
+  \revert NoteHead #'text
+  \revert NoteHead #'extra-offset #})
+
+hideNote = {
+\once \override NoteHead  #'transparent = ##t
+\once \override NoteHead  #'no-ledgers = ##t
+\once \override Stem  #'transparent = ##t
+\once \override Beam  #'transparent = ##t
+\once \override Accidental  #'transparent = ##t
+}
+
+noTuplet = {
+\once \override TupletBracket #'transparent = ##t
+\once \override TupletNumber #'transparent = ##t
+}
+
+oneStemDown = {
+\once \override Stem #'direction = #DOWN
+}
+
+oneStemUp = {
+\once \override Stem #'direction = #UP
+}
+
+%% Music shortcuts ------------------------------------------------%
+
+sk = \set Score.skipTypesetting = ##t
+
+unsk = \set Score.skipTypesetting = ##f
+
+% This might not be needed
+#(define (octave-up noteevent)
+ (let* ((pitch (ly:music-property noteevent 'pitch))
+        (octave (ly:pitch-octave pitch))
+        (note (ly:pitch-notename pitch))
+        (alteration (ly:pitch-alteration pitch))
+        (duration (ly:music-property noteevent 'duration))
+        (newnoteevent
+          (make-music 'NoteEvent
+            'duration duration
+            'pitch (ly:make-pitch (1- octave) note alteration))))
+   newnoteevent))
+
+#(define (octavize-chord elements)
+ (cond ((null? elements) elements)
+       ((eq? (ly:music-property (car elements) 'name) 'NoteEvent)
+         (cons (car elements)
+               (cons (octave-up (car elements))
+                     (octavize-chord (cdr elements)))))
+       (else (cons (car elements) (octavize-chord (cdr elements))))))
+
+#(define (octavize music)
+ (let* ((es (ly:music-property music 'elements))
+        (e (ly:music-property music 'element))
+        (name (ly:music-property music 'name)))
+   (cond ((eq? name 'EventChord)
+          (ly:music-set-property! music 'elements (octavize-chord es)))
+         ((pair? es)
+          (for-each (lambda(x) (octavize x)) es))
+         ((ly:music? e)
+          (octavize e))))
+ music)
+
+oct = #(define-music-function (parser location mus) (ly:music?)
+ (octavize mus))
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Music Decoration %%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Articulation marks ---------------------------------------------%
 
 #(define (make-script x)
    (make-music 'ArticulationEvent
@@ -174,13 +262,13 @@ CaV=
                                        m)
 harmo =
 #(define-music-function (parser location chord result) (ly:music? ly:music?)
- #{ << \oneVoice $chord \\ { \voiceTwo %FIXME: ties could look better.
+ #{ << \oneStemDown $chord \\ { \stemUp %FIXME: ties could look better.
    \override NoteHead #'stencil = #ly:text-interface::print
    \override NoteHead #'text = \markup { \null \musicglyph #"noteheads.s2"}
    \once \override NoteHead #'text = \markup {\null \override #'(direction . 1)
       \dir-column {\musicglyph #"noteheads.s2" \teeny \musicglyph #"eight"}}
     \override Stem #'stencil = ##f $result
-    \revert Stem #'stencil \revert NoteHead #'stencil } >> #})
+    \revert Stem #'stencil \revert NoteHead #'stencil \stemNeutral } >> #})
 
 thumbpizz =
 #(make-music 'TextScriptEvent
@@ -212,49 +300,6 @@ plak =
      (ly:music-property m 'tweaks)))
    m)
 
-%% Music shortcuts ------------------------------------------------%
-
-sk = \set Score.skipTypesetting = ##t
-
-unsk = \set Score.skipTypesetting = ##f
-
-% This might not be needed
-#(define (octave-up noteevent)
- (let* ((pitch (ly:music-property noteevent 'pitch))
-        (octave (ly:pitch-octave pitch))
-        (note (ly:pitch-notename pitch))
-        (alteration (ly:pitch-alteration pitch))
-        (duration (ly:music-property noteevent 'duration))
-        (newnoteevent
-          (make-music 'NoteEvent
-            'duration duration
-            'pitch (ly:make-pitch (1- octave) note alteration))))
-   newnoteevent))
-
-#(define (octavize-chord elements)
- (cond ((null? elements) elements)
-       ((eq? (ly:music-property (car elements) 'name) 'NoteEvent)
-         (cons (car elements)
-               (cons (octave-up (car elements))
-                     (octavize-chord (cdr elements)))))
-       (else (cons (car elements) (octavize-chord (cdr elements))))))
-
-#(define (octavize music)
- (let* ((es (ly:music-property music 'elements))
-        (e (ly:music-property music 'element))
-        (name (ly:music-property music 'name)))
-   (cond ((eq? name 'EventChord)
-          (ly:music-set-property! music 'elements (octavize-chord es)))
-         ((pair? es)
-          (for-each (lambda(x) (octavize x)) es))
-         ((ly:music? e)
-          (octavize e))))
- music)
-
-oct = #(define-music-function (parser location mus) (ly:music?)
- (octavize mus))
-
-
 %%%%%%%%%%%%%%%%%%%%%%%% Layout Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Music layout ---------------------------------------------------%
@@ -283,48 +328,6 @@ oct = #(define-music-function (parser location mus) (ly:music?)
      `(Staff ,(make-accidental-rule 'same-octave 1)
              ,(make-accidental-rule 'any-octave 1)))
 
-%% Music formatting -----------------------------------------------%
-
-graceNotes =
-#(define-music-function (parser location notes) (ly:music?)
-#{ \tiny $notes \normalsize #})
-
-parlato =
-#(define-music-function (parser location notes) (ly:music?)
-#{ \override NoteHead #'style = #'cross
-  $notes
-\revert NoteHead #'style #})
-
-slap =
-#(define-music-function (parser location music) (ly:music?)
-#{\override NoteHead #'stencil = #ly:text-interface::print
-  \override NoteHead #'text = \markup \musicglyph #"scripts.sforzato"
-  \override NoteHead #'extra-offset = #'(0.1 . 0.0 )
-  $music
-  \revert NoteHead #'stencil
-  \revert NoteHead #'text
-  \revert NoteHead #'extra-offset #})
-
-hideNote = {
-\once \override NoteHead  #'transparent = ##t
-\once \override NoteHead  #'no-ledgers = ##t
-\once \override Stem  #'transparent = ##t
-\once \override Beam  #'transparent = ##t
-\once \override Accidental  #'transparent = ##t
-}
-
-noTuplet = {
-\once \override TupletBracket #'transparent = ##t
-\once \override TupletNumber #'transparent = ##t
-}
-
-oneStemDown = {
-\once \override Stem #'direction = #DOWN
-}
-
-oneStemUp = {
-\once \override Stem #'direction = #UP
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Editorial %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Individual parts -----------------------------------------------%
