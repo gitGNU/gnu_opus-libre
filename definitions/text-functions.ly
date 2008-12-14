@@ -422,9 +422,7 @@ tocQuote =
        (m (if (pair? pad)
           (markup #:hcenter-in (car pad) txt)
           (markup txt)))
-       (n (if (pair? pad)
-          (markup #:hcenter-in (car pad) srt)
-          (markup srt))))
+       (n (markup srt))) fixme: shortname has no padding
     (ly:export (make-sequential-music (list
                 (context-spec-music (make-property-set 'instrumentName m)
                   'Staff)
@@ -439,9 +437,7 @@ tocQuote =
          (m (if (pair? pad)
             (markup #:hcenter-in (car pad) txt)
             (markup txt)))
-         (n (if (pair? pad)
-            (markup #:hcenter-in (car pad) srt)
-            (markup srt))))
+         (n (markup srt))) ;; fixme: shortname has no padding
     (ly:export (make-sequential-music (list
                 (context-spec-music (make-property-set 'instrumentName m)
                   'Staff)

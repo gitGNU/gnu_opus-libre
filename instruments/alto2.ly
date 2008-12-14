@@ -374,7 +374,7 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
 
     \pizz <re sib'>4\mp\arpeggUp
     \simile <re sib'> <re sib'>
-    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\mf\>( |
+    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\>( |
     <mi do'>-.\!) r \pizz <mi do'>4\mp
     \repeat unfold 4 <mi do'> r8 \arco <mi do'>\>( |
     <sol mib'>-.\!) r \pizz <sol mib'>4 <sol mib'> r8 \arco <sol mib'>\>( |
@@ -438,7 +438,7 @@ ActeUnSceneDeuxAltoDeux = { \AltoDeux
 
     %%% Largo assai %%%
     r4 sib,,2. | la4. r8 la4 | lab4. r8 lab4 sol4. r8 r4 | r sol |
-    solb2.~ solb2. r4 | r2 \pizz fa4 mi mib r re r re, r r2 |
+    solb2.~ solb2. r4 | r2 \pizz fa4 mi mib r re r re r r2 |
   }
 }
 

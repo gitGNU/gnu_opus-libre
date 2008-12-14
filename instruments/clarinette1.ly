@@ -311,7 +311,7 @@ ActeUnSceneDeuxClarinetteUn = { \ClarinetteUn
     \st {mi\mp mi
     \repeat unfold 2 {sold sold lad lad} sold sold lad r
     red\mf\< red mi mi red red mi mi} sol!2.~\! sol~ sol4 r2 |
-    r4 \t {mi8( red dod)} r la,4.-- |
+    r4 \t {mi8( red dod)} r la,4.--\fsubito |
 
     %%% Piu vivo %%%
 
