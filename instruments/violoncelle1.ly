@@ -334,13 +334,13 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     R2.| r4 r8 mib4--\downbow\mp lab,8~--\downbow| lab2.~|
     lab8 lab~ \t {lab lab lab} lab4:32\< |
     lab8\sfz r r2| R2| r4 r8 reb4.\p\>\upbow|
-    sol,1~ sol~ sol2.~ sol~ sol~ sol2 r4 | sib2.~\pp| sib r4|
+    sol,1\!~ sol~ sol2.~ sol~ sol~ sol2 r4 | sib2.~\pp| sib r4|
 
     %%% Duo %%%
 
     \pizz <re, sib'>4\mp\arpeggUp
     \simile <re sib'> <re sib'>
-    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\mf\>( |
+    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\>( |
     <reb lab'>-.\!) r \pizz <reb lab'>4\mp
     \repeat unfold 5 <reb lab'>
     \repeat unfold 3 <sib' sol'> r8 \arco <sib sol'>\>( |

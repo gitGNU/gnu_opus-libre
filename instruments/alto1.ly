@@ -318,7 +318,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
     %%% Air de la Soprano2 %%%
 
     R2.*2 r4 sold'8\p\(( la sold mi) re( mi)
-    sold( la sold mi) re( mi) sold4~--\) | sold2 r4 | R2. |
+    sold( la sold mi) re(\> mi) sold4~\!--\) | sold2 r4 | R2. |
     sold8\mp( la sold mi) re( mi) sold( la
     sold mi) re( mi) sold4-- sold8( la |
     sold mi) re( mi) sold( la | sold mi) re( mi) sold4-- |
@@ -375,7 +375,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
 
     \pizz <re sib'>4\mp\arpeggUp
     \simile <re sib'> <re sib'>
-    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\mf\>( |
+    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\>( |
     <mi do'>-.\!) r \pizz <mi do'>4\mp
     \repeat unfold 4 <mi do'> r8 \arco <mi do'>\>( |
     <sol mib'>-.\!) r \pizz <sol mib'>4 <sol mib'> r8 \arco <sol mib'>\>( |

@@ -339,7 +339,7 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
 
     \pizz <re sib'>4\mp\arpeggUp
     \simile <re sib'> <re sib'>
-    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\mf\>( |
+    \repeat unfold 13 <re sib'> r8 \arco <re sib'>\>( |
     <reb lab'>-.\!) r \pizz <reb lab'>4\mp
     \repeat unfold 5 <reb lab'>
     \repeat unfold 3 <sib' sol'> r8 \arco <sib sol'>\>( |

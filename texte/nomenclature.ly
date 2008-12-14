@@ -11,6 +11,8 @@
 
 %% Instruments ----------------------------------------------------%
 
+%TODO: add percussions and piano.
+
 #(set! instruments `(
                         (cello-one         ("Violoncelle 1" . "Vlc. 1"))
                         (cello-two         ("Violoncelle 2" . "Vlc. 2"))

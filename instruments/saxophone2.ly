@@ -13,7 +13,7 @@ SaxAltoDeux = {
 }
 
 SaxophoneBaryton = {
-  #(make-instrument-name 'saxophone-baritone "baritone sax")
+  #(make-instrument-name 'saxophone-baritone "baritone sax" 25)
   \clef bass
 }
 
