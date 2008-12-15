@@ -923,7 +923,8 @@ ActeUnSceneTroisPiano = { \Piano
     %%% Tempo I %%%
     R2.*3
     r4 mi'--\pp r r mi-- r r mi-- r \ottava #-1 |
-    <mi,mi'>--\mp <mi mi'>-- r <mi mi'>-- <mi mi'>-- r <mi mi'>\< <mi mi'> <mi mi'>
+    <mi,mi'>--\mp <mi mi'>-- r <mi mi'>-- <mi mi'>-- r
+    <mi mi'>\< <mi mi'> <mi mi'>\!
     \ottava #0 R2.*5
 
     %%% Tempo II %%%
