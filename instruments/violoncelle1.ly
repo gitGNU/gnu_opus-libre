@@ -380,7 +380,7 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     r \tt {\ind #"détaché" do16\mp\< reb mib solb lab} \clef tenor \tt {la si re mi sol} |
     lab4.\! r8 \clef bass |
     sold,,2~ | sold~ | sold r4 |
-    r r8 sold--\updown fad-- la-- |
+    r r8 sold--\upbow fad-- la-- |
     <fa fa'>2\f | <fa fa'>4.\downbow fa8 |
     <fa re' la'>2 | <fa re'>4.\downbow fa8 |
     r la\upbow( sol sib) |

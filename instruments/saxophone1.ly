@@ -234,7 +234,7 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
     r4 re-- do-- do8-> si~-> si4 r2|
     r4 re-- do-- si8-> mi~-> mi4 r | R2.
     r4 mi-- re-- si8-> mi~-> mi4 r |
-    r mi-- re-- mi8->\< sold~->/! sold4 r|
+    r mi-- re-- mi8->\< sold~->\! sold4 r|
     R2.*2
     r16 sib,-.->\mp r8 r2 |
     R2.*2

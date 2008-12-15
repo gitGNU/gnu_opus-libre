@@ -502,6 +502,52 @@ ActeUnSceneQuatreFluteDeux = { \FluteDeux
 EntracteFluteDeux = { \FluteDeux
   \relative {
     R2*9
+    R1*10 r2 \t {sol''16 fad mi} dod8 r4 |
+    R1 r4 re r2 R1 r4 la r la r sold la r |
+    R1*2 re,1~ re2. r4 |
+    dod16 re fad sold si2.~ si4 r r2 |
+    R1*6 fad'4 dod' r2 | R1 r4 re,8 re dod4 r |
+    R1*4 r2 do!8 reb reb do mi fa fa mi sold la la la |
+    re4 r r re, r re r |
+    r8 dod,16 re fad8 \t {sold16 fad sold} si re mi sold \t {la16 mi re} mi8 |
+
+    %%% Fugato %%%
+    re4 r re,2~ re2. r4 | R2.*2 R2
+    R1 r4 re2~ re2.~ re4 r r2 |
+    solb fa8 r r4 | R2. solb2 fa8 r |
+    R1 solb2 fa8 r r4 R2. sol!2. fad4 r r2 | R1
+    r4 do'2~ do2. la2. r4 | R1
+    r4 re dod'~ dod2.~ |
+    dod4. r8 \tt {mi,,16 la do fa sold} dod8 dod |
+
+    %%% Stretto %%%
+    re4 r r2 R1
+    r4 r8 \t {re,16 mib fa} lab4 r4 |
+    re,8 fad re'4 r2 |
+    mi,,8 \t {fa16 la sold} do8 si' r do, r4 |
+    mi4 r mi8 fad r fad mi4 mi8 fad r2 |
+    fad8 re mib sib fad4 r | sold'8 mi fa do sold4 r |
+    sib'4 r r2 | R1*3
+
+    %%% Noir %%%
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
+    R1*5 R1.*4 r2 solb, R2.-\fermataMarkup
+    R2.*8 R2.-\fermataMarkup
+
+    %%% poco più %%%
+    R2.*4 R2.-\fermataMarkup
+
+    %%% Andantino %%%
+    do1~ do4 r re1~ re4 r la1~ la4 r la2. r4 R2.
+
+    %%% Largo non troppo %%%
+    la'1. mi1~ mi4 r mi1. re1 sold,4 r |
+    do1. re1~ re4 r | mi1.~ mi2 la2. r4 |
+    la4 sol8 r fa4 mi8 r mi'2 | fa mi re~ re do2. r4 |
+    dod,4 mi re2. dod4 dod1 re4 r |
+    la'4 sol fa mi fa2 | fa mi2. r4 |
+    la4 sol fa mi fa r do2 si la |
+    la1~ la4 r si2. r4 | R1 R2. R2
   }
 }
 
