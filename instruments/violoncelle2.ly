@@ -444,16 +444,16 @@ ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
 
 ActeUnSceneTroisBisVioloncelleDeux = { \VioloncelleDeux
   \relative {
-    R1*3 r4 sib,2\CaV r4 | R1*2 r4 re,2 r4 R1 |
-    r2 lad'4 sold fad r r2 | R1*6
-    fad1~fad~fad~fad~fad2. r4 | R1*8
-    si1~si si2 si si si si si do, do do2. R1*7
-    fa4 re8 r fa4 re8 r
-    fa4 re8 r fa4 re |
-    fad1~fad~fad~fad~fad~fad~fad2. r4 | R1*3
-    r4 <sol do\harmonic sol''>2 r4 |
-    si2 sib la1 lab2 sol fad1~fad~fad4 r r2 |
-    R1*2 do'1 lad~lad~lad~lad~lad~lad\fermata
+    R1*3 r4 sib,2--\pp\CaV r4 | R1*2 r4 re,2-- r4 R1 |
+    r2 lad'4--\p sold-- fad-- r r2 | R1*6
+    fad1~\pp fad~ fad~ fad~ fad2. r4 | R1*8
+    si1~\pp si si2-- si-- si-- si-- si-- si-- do,-- do-- do2. R1*7
+    fa4\mp( re8) r fa4( re8) r
+    fa4( re8) r fa4-- re-- |
+    fad1~\p fad~ fad~ fad~ fad~ fad~ fad2. r4 | R1*3
+    r4 <sol do\harmonic sol''>2\pp r4 |
+    si2\p( sib la1 lab2 sol) fad1~\pp fad~ fad4 r r2 |
+    R1*2 do'1\p\> \ten lad~\pp lad~ lad~ lad~ lad~ lad\fermata
   }
 }
 

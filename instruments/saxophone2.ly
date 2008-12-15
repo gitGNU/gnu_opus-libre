@@ -31,7 +31,7 @@ PrologueSaxophoneDeux = { \SaxophoneBaryton
     re,8.->\f dod16~-> dod8 mi-> r4 | R2*2 | reb,2--\p r4 | R2
     la'4--\mp\< si-- fa'8->\! sol~-> |
     \ten sol2~\p sol2.~ sol8 r r4 | R2. R2 |
-    sib,2~--\pp sib4 r \t {lab8\fsubito( fa mib} |
+    sib,2~--\pp sib4 r \t {lab8(\fsubito fa mib} |
 
     %%% Tempo giusto %%%
     re8->\f) r r4 | R2*2 re4\p( mib fa lab sib si8) r |
@@ -292,22 +292,22 @@ ActeUnSceneTroisSaxophoneDeux = { \SaxophoneBaryton
 
 ActeUnSceneTroisBisSaxophoneDeux = { \SaxophoneBaryton
   \relative {
-    R1*2 mi,1 R1 r2 lab,~ lab1 R1 r2 fa~ fa r |
-    solb1~solb~solb2. r4 | R1*2 |
-    solb1~solb~solb2. r4 | R1*5
-    r4 re'16 lab' fa sib reb8 r re,16 lab' fa sib |
-    reb8 fa,16 sib reb8 fa,16 sib reb8 fa,16 sib reb fa, re la |
-    solb4 r r2 | R1
-    si1~si~si2. r4 | R1*6 R2.
-    re,1~re~re2. r4 |
-    fa4 re8 r r2 fa4 re8 r r2 |
-    fa4 re8 r fa4 re8 r
-    fa4 re8 r fa4 re8 r
+    R1*2-\markup "Mettez la sourdine" mi,1\pp R1 r2 \ten lab,~ lab1 R1 r2 fa~ fa r |
+    \ten solb1~\pp solb~ solb2. r4 | R1*2 |
+    solb1~ solb~ solb2. r4 | R1*5
+    r4 \st {re'16\p lab' fa sib reb8 r re,16 lab' fa sib |
+  reb8 fa,16 sib reb8 fa,16 sib} reb8 fa,16\< sib reb fa, re la |
+    solb4--\sf r r2 | R1
+    \ten si1~ si~ si2. r4 | R1*6 R2.
+    re,1~ re~ re2. r4 |
+    fa4\p( re8) r r2 fa4( re8) r r2 |
+    fa4( re8) r fa4( re8) r
+    fa4( re8) r \simile fa4 re8 r
     fa4 re8 r fa4 re8 r
     fa4 re8 r fa4 re8 r |
-    solb1~solb2~solb8 r solb4~solb1~solb2. r4 solb1~solb~solb2. r4 |
+    \ten solb1~\p solb2~ solb8 r \simile solb4~ solb1~ solb2. r4 solb1~ solb~ solb2. r4 |
     R1*7
-    solb1~solb~solb4 r r2 | R1*9
+    \ten solb1~\pp solb~ solb4 r r2 | R1*9
   }
 }
 

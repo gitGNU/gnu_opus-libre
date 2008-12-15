@@ -26,7 +26,7 @@ PrologueSaxophoneUn = { \SaxAltoUn
     la,2--->\mf r4 | R2*2 | reb,2-- r4 | R2
     solb4--\mp\< lab-- sib8->\! do~-> |
     do2\> \ten si2.~\p si2 la2.~\pp la4 r |
-    sib2~-- sib4 r \t { lab8\fsubito ( fa mib } |
+    sib2~-- sib4 r \t { lab8\fsubito( fa mib } |
     \ten re2~\fp) re~ re4 r | \ten re'2~\p re~ re4. r8 |
     \t {reb,4\p( mi fad} \t {sol\< la do} |
     re4\f) r2 lab2.--\mp( re4--) r2 sib2.\p reb mi |
@@ -234,7 +234,7 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
     r4 re-- do-- do8-> si~-> si4 r2|
     r4 re-- do-- si8-> mi~-> mi4 r | R2.
     r4 mi-- re-- si8-> mi~-> mi4 r |
-    r mi-- re-- mi8->\< sold~->\! sold4 r|
+    r mi-- re-- mi8->\< sold~->/! sold4 r|
     R2.*2
     r16 sib,-.->\mp r8 r2 |
     R2.*2
@@ -297,19 +297,19 @@ ActeUnSceneTroisSaxophoneUn = { \SaxAltoUn
 
 ActeUnSceneTroisBisSaxophoneUn = { \SaxAltoUn
   \relative {
-    R1 sol~sol R1 |
-    r2 reb~reb1 R1|
-    r2 reb~reb r | R1*7
-    r2 sib'~sib2. sib4 lab2 sib~sib r4 sib lab2. sib8 r |
+    R1-\markup "Mettez la sourdine" \ten sol~\pp sol R1 |
+    r2 \ten reb~ reb1 R1|
+    r2 reb~ reb r | R1*7
+    r2 sib'~\pp sib2. sib4( lab2 sib~) sib r4 sib( lab2. sib8) r |
     R1
+    \st {re,16 lab' fa sib reb8 r
     re,16 lab' fa sib reb8 r
-    re,16 lab' fa sib reb8 r
-    re,16 lab' fa8 re16 lab' fa8 re16 lab' fa8 re16 lab' fa8 |
-    solb4 r r2 | R1*10 R2. R1*3
-    reb4 r r2 reb4 r r2 reb4 r reb r reb r reb r |
-    reb8. solb16 r4 reb8~\t {reb16 solb do} r8 r16 mi, |
-    reb8 do' reb' r reb,,4 r16 la'8. | solb'2. r4 | R1
-    r2 r4 sib, lab2 sib | r2 r4 la sol2 la~ la2. r4 |
+    re,16 lab' fa8 re16 lab' fa8 re16 lab' fa8 re16 lab' fa8} |
+    solb4--\sf r r2 | R1*10 R2. R1*3
+    reb4--\p r r2 reb4-- r r2 reb4-- r reb-- r reb-- r \simile reb-- r |
+    reb8.( solb16) r4 reb8~(\t {reb16 solb do)} r8 r16 mi, |
+    reb8--( do'-- reb'--) r reb,,4-- r16 la'8.-- | solb'2.\mp r4 | R1
+    r2 r4 sib,\pp( lab2\> sib\!) | r2 r4 la(\< sol2/> la~\!) la2. r4 |
     R1*9
   }
 }
@@ -406,54 +406,6 @@ EntracteSaxophoneUn = { \SaxAltoUn
     \t {r4 mi8} \t {sold4 sol8} |
     si2 \t {r4 sol8} si4~ si8 r r4 |
     sol4 \t {si sib8} |
-
-    %%% Vivo subito %%%
-    re4 r r2 R1*2
-    r2 r8 r16 la, re8. do16 |
-    fa1~ fa4. r8 r2 | R1*8
-    r4 mi, r mi r fa mi r |
-    r mib r mib r re r2 | R1*7
-    r4 reb'8. reb16 mi4 r r sold8 sold la4 r |
-    r2 mi~ mi4 r r2 | R1*3
-    r2 r4 si sib re solb, r |
-    r do si mib sol, r r2 | R1
-    re'8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re |
-
-    %%% Fugato %%%
-    re4 r r2 | R1 R2.*2 R2
-    R1 r4 mi,2~ mi2.~ mi4 r r2 |
-    sol2 fad8 r r4 | R2. sol2 fad8 r |
-    R1 sol2 fad8 r r4 | R2. lab2. sol4 r r2 | R1
-    R2.*2 la1~ la2. r4 | R2.*2
-    la4 mib' sold sold |
-
-    %%% Stretto %%%
-    la re,, r re r re r mib' | re sib sib sib
-    lab lab lab lab fa fa fa fa |
-    mi2 sol lab re4 r |
-    r16 re re8 r4 r2 | r16 si si8 r4 r dod'8 dod |
-    re4 r r2 R1*3
-
-    %%% Noir %%%
-    R2.-\fermataMarkup R2.*4 R2 R2. R1 r4 r8 fad, r4 R2
-    R1*5 R1.*2 r2 si,2. r4 | R1. r2 si |
-    R2.-\fermataMarkup R2.*8 R2.-\fermataMarkup
-
-    %%% poco più %%%
-    R2.*4 R2.-\fermataMarkup
-
-    %%% Andantino %%%
-    mi1~ mi2~ mi1~ mi4 r mi1~ mi2~ mi2. r4 R2.
-
-    %%% Largo non troppo %%%
-    la,1.~ la1~ la4 r |
-    la1.~ la1~ la4 r |
-    la'1.~ la1~ la4 r sol1. fa1~ fa4 r |
-    mi2 la mi' la sol fa~ fa mi2. r4 |
-    sib2 la sol~ sol1 fa4 r |
-    si,2 sol'1~ | sol~ sol4 r |
-    re,1~ re4 r | red1~ red4 r mi1~ mi4 r |
-    mi2. r4 | R1 R2. red8 r r4 |
   }
 }
 

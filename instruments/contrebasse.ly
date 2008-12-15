@@ -319,12 +319,12 @@ ActeUnSceneTroisContrebasse = { \Contrebasse
 
 ActeUnSceneTroisBisContrebasse = { \Contrebasse
   \relative {
-    R1*3 r4 sol2\CaV r4 R1*2 r4 sol2\CaV r4 |
-    R1 r2 re,4 la8 si fad4 r r2 | R1*8
-    fad1~fad~fad2. r4 | R1*2 %%FIXME: harmonics
+    R1*3 r4 sol2--\pp\CaV r4 R1*2 r4 sol2--\CaV r4 |
+    R1 r2 re,4--\p la8( si) fad4-- r r2 | R1*8
+    fad1~\pp fad~ fad2. r4 | R1*2 %%FIXME: harmonics
     \pizz <re' la'\harmonic>4 r <re sol\harmonic> r
-    \arco <re fad\harmonic>1~<re fad\harmonic>2. r4 \clef "G_8" |
-    \simile fad''4\CaV r fad\CaV r
+    \arco <re fad\harmonic>1~\p <re fad\harmonic>2. r4 \clef "G_8" |
+    \simile fad''4\p\CaV r fad\CaV r
     fad\CaV r fad\CaV r
     fad\CaV r fad\CaV r
     fad\CaV r fad\CaV r
@@ -332,20 +332,20 @@ ActeUnSceneTroisBisContrebasse = { \Contrebasse
     fad\CaV r fad\CaV r
     fad\CaV r fad\CaV r
     fad\CaV r fad\CaV r |
-    \ordin fad\glissando red8 r red4\glissando do8 r |
-    sib\glissando sol16 r sol8\glissando mi16 r mi8\glissando dod16 r \clef "F_8" |
-    re,1~re~re
-    <fa dod'>4\upbow  \ind #"pizz. du pouce" re\thumbpizz r2
+    \ordin fad(\glissando red8) r red4(\glissando do8) r |
+    sib\>(\glissando sol16) r sol8(\glissando mi16) r mi8(\glissando dod16\!) r \clef "F_8" |
+    re,1~ re~ re
+    <fa dod'>4\mp\upbow  \ind #"pizz. du pouce" re\thumbpizz r2
     <fa dod'>4\upbow \simile re\thumbpizz r2
     <fa dod'>4\upbow re\thumbpizz <fa dod'>\upbow re\thumbpizz
     <fa dod'>\upbow re\thumbpizz <fa dod'>\upbow re\thumbpizz
     <fa dod'>\upbow re\thumbpizz <fa dod'>\upbow re\thumbpizz
     <fa dod'>\upbow re\thumbpizz <fa dod'>\downbow <la, fa'> |
-    fad1~fad~fad~fad~fad~fad~fad2. r4 |
+    fad1~\p fad~ fad~ fad~ fad~ fad~ fad2. r4 |
     R1*7
-    <re' fad\harmonic>1~<re fad\harmonic>~<re fad\harmonic>4
-    r4 \ordin fad2~fad1~fad4 r r2 |
-    sol1 fad~fad~fad~fad~fad~fad\fermata
+    <re' fad\harmonic>1~\pp <re fad\harmonic>~ <re fad\harmonic>4
+    r4 \ordin fad2~ fad1~ fad4 r r2 |
+    sol1\p\> \ten fad~\pp fad~ fad~ fad~ fad~ fad\fermata
   }
 }
 

@@ -488,18 +488,18 @@ ActeUnSceneTroisViolonUn = { \ViolonUn
 
 ActeUnSceneTroisBisViolonUn = { \ViolonUn
   \relative {
-    R1*8 r2 la'8 sol sib4 fad4 r r2 |
+    R1*8 r2 la'8\mp( sol) sib4-- fad4-- r r2 |
     R1*20
-    do1 do2 do do do do do |
-    fa'4\glissando re8 r re4\glissando si8 r |
-    la\glissando fad16 r fad8\glissando mib16 r mib8 do16 r |
+    do1-- do2-- do-- do-- do-- do-- do-- |
+    fa'4\mf(\glissando re8) r re4(\glissando si8) r |
+    la\>(\glissando fad16) r fad8(\glissando mib16) r mib8( do16\!) r |
     R1*16
-    r2 r4 r8 \pizz <la fa'> |
+    r2 r4 r8 \pizz <la fa'>\p |
     r <la fa'> r4 r r8 <la fa'> |
     R1*3
-    r2 \arco do' si~si4 lad | fad r r2 |
+    r2 \arco do'\mp( si~si4 lad | fad) r r2 |
     R1*4
-    <lad, mi'>1 dod~dod~dod~dod~dod~dod\fermata
+    <lad, mi'>1\p\> \ten dod~\pp dod~ dod~ dod~ dod~ dod\fermata
   }
 }
 

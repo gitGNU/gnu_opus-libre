@@ -502,30 +502,30 @@ ActeUnSceneTroisAltoUn = { \AltoUn
 
 ActeUnSceneTroisBisAltoUn = { \AltoUn
   \relative {
-    R1*3 r4 red2 r4 R1*2 r4 do2\CaV r4 R1 |
-    r2 <do mib>4 <si fa'> <fad fad'> r r2 |
+    R1*3 r4 red2--\pp r4 R1*2 r4 do2--\CaV r4 R1 |
+    r2 <do mib>4--\p <si fa'>-- <fad fad'>-- r r2 |
     R1*14
-    fad1~ fad2. r4 |
-    r \pizz mib' r mib |
+    fad1~\pp fad2. r4 |
+    r \pizz mib'\p r mib |
     r mib r mib |
     r mib r mib |
     r mib r mib |
     r mib r mib |
     r mib r mib |
-    r <sol, mib'> r <sol mib'> |
-    r <mi! sol mib'> r <mi sol mib'> |
-    r16 solb' fa' solb, r mib re' mib,
-    r mib re' mib, r do si' do, |
-    \t {la'8 mib fad} \t {do mib sol,} sib mi, |
-    r4 \arco la2 la4 | do2 la~ la1
+    r <sol, mib'>\arpeggUp r <sol mib'>\arpeggUp |
+    r \simile <mi! sol mib'> r <mi sol mib'> |
+    r16 solb' fa'-> solb, r mib re'-> mib,
+    r mib re'-> mib, r do si'-> do, |
+    \t {la'8->\> mib fad} \t {do mib sol,} sib mi,\! |
+    r4 \arco la2\p la4\<( | do2\>) la~\! la1
     R1*3
-    <do mib>1 <do mib>2 <do mib> <do mib> <sol do> |
-    \pizz <fad fad'>4 r r2 | R1*6
-    r4 \arco fad\upbow \ind #"pizz. du pouce" do\thumbpizz r |
+    <do mib>1\p <do mib>2-- <do mib>-- <do mib>-- <sol do>-- |
+    \pizz <fad fad'>4-> r r2 | R1*6
+    r4 \arco fad\mp\upbow \ind #"pizz. du pouce" do\thumbpizz r |
     r fad\upbow \simile do\thumbpizz r |
     fad\upbow do\thumbpizz fad\upbow do\thumbpizz |
-    r4 <do fa\harmonic do''>2 r4 |
-    do'1~\CaV do2\CaV reb do si fad1~fad~fad4 r la2~la fad~fad4 r r2 |
+    r4 <do fa\harmonic do''>2\pp r4 |
+    \ten do'1~\CaV do2\CaV reb( do si) fad1~\pp fad~ fad4 r la2~\> la fad~\! fad4 r r2 |
     R1*7
   }
 }

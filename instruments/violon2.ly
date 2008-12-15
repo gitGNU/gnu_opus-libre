@@ -476,18 +476,18 @@ ActeUnSceneTroisViolonDeux = { \ViolonDeux
 
 ActeUnSceneTroisBisViolonDeux = { \ViolonDeux
   \relative {
-    R1*8 r2 la'8 sol sib4 fad4 r r2 |
+    R1*8 r2 la'8\mp( sol) sib4-- fad4-- r r2 |
     R1*20
-    sib,1 sib2 sib sib sib sib sib |
-    fa''4\glissando re8 r re4\glissando si8 r |
-    la\glissando fad16 r fad8\glissando mib16 r mib8 do16 r |
+    sib,1\pp sib2-- sib-- sib-- sib-- sib-- sib-- |
+    fa''4\mf(\glissando re8) r re4(\glissando si8) r |
+    la\>(\glissando fad16) r fad8(\glissando mib16) r mib8( do16\!) r |
     R1*16
-    r2 r4 r8 \pizz do |
+    r2 r4 r8 \pizz do\p |
     r do r4 r r8 do |
     R1*3
-    r2 \arco sol' fad mid | fad4 r r2 |
+    r2 \arco sol'\mp( fad mid | fad4) r r2 |
     R1*4
-    red1 dod~dod~dod~dod~dod~dod\fermata
+    red1\p\> \ten dod~\pp dod~ dod~ dod~ dod~ dod\fermata
   }
 }
 
