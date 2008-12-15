@@ -383,29 +383,29 @@ InterludeDeuxClarinetteUn = { \ClarinetteBasse
 
 ActeUnSceneTroisClarinetteUn = { \ClarinetteUn
   \relative {
-    R2.*4 do'8 la4 do8 la4 r r8 la4 solb8 mib2.~ mib8 r r2 |
-    R2.*8 r2 \t {la'8 la la} re4 do re8 la~ la4 r2 |
+    R2.*4 do'8-.\mf la4-- do8-. la4-- r r8 la4---> solb8-. mib2.~--\< mib8\! r r2 |
+    R2.*8 r2 \t {la'8-.\f la-. la-.} re4-- do-- re8-> la~-> la4 r2 |
     R2.*5
 
     %%% Lamento %%%
     R1.*6 R1*5/4
-    sol,2 mi4 r2 |
-    solb2 mib4 r2 |
-    sol2  mi4 r2 |
+    sol,2\p\>( mi4\!) r2 |
+    solb2\>( mib4\!) r2 |
+    \simile sol2  mi4 r2 |
     sol2 lab4 r2 |
-    reb2 sib4 r |
-    do2 la4 r |
-    reb2 sib4 r |
-    sol2 re'!4 r|
-    mib2 mib4~ mib8 do,~ do sib'4. la' r8 r4 |
+    reb2\mp( sib4) r |
+    do2( la4)r |
+    reb2( sib4) r |
+    sol2\<( re'!4\!) r|
+    mib2\mf mib4~-- mib8 do,~-> do sib'4.\<( la'\f) r8 r4 |
     R2*2
 
     %%% Tempo I %%%
-    R2.*8 sib,,2. re do8 r r2 |
+    R2.*8 sib,,2.\p re\< do8\sfz r r2 |
     R2.*3
-    R1.*3 r2 sol4 lab2 mib'4~| mib2. r4 r2 |
-    r2 r4 re'2.~re~re8 r r4 |
-    mib,1 mib4 r2 | r4 fa
+    R1.*3 r2 sol4\mp( lab2 mib'4~)| mib2. r4 r2 |
+    r2 r4 \ten re'2.~\mf re~re8 r r4 |
+    \ten mib,1\p mib4 r2 | r4 fa--
   }
 }
 
