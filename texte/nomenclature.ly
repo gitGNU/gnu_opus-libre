@@ -55,7 +55,7 @@ BarytonType = "Baryton"
                       ))
 
 %% List -----------------------------------------------------------%
-%{
+
 CharacterList = \markup {
   \fill-line {
     \center-column {
@@ -64,16 +64,17 @@ CharacterList = \markup {
       \rounded-box
       \fill-line {
         \center-column {
-          \fill-line { Personnages }
-          \override #'(baseline-skip . 6)
+          \fill-line { \fontsize #2 \underline \smallCaps Personnages }
+          \vspace #3
           \fill-line {
+            \override #'(baseline-skip . 6)
             \left-column {
-              #(markup (char-name 'soprano-one))
-              #(markup (char-name 'soprano-two))
-              #(markup (char-name 'contralto))
-              #(markup (char-name 'tenor))
-              #(markup (char-name 'barytone-one))
-              #(markup (char-name 'barytone-two))
+              "Le Docteur"
+              "La Reine"
+              "Dieu"
+              "Le Chef de la Garde"
+              "L'Étranger"
+              "Le Roi"
             }
             \right-column {
               \SopranoType

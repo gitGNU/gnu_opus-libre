@@ -48,7 +48,7 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %{
+} %
 \score {
   \InterludeDeux
   \header {

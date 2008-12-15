@@ -78,22 +78,10 @@
     }
 
     tocTitleMarkup = \markup \column {
-      \vspace #8
-      \fill-line {
-        \fontsize #3 \OperaLivret
-        \fontsize #3 \OperaPartition
-      }
-      \fill-line {
-        \fontsize #10 \bold \OperaTitre
-      }
-      \fill-line {
-        \fontsize #2 \OperaSousTitre
-      }
-      \vspace #4
       \fill-line {
         \fontsize #2 \underline \smallCaps \TableTitre
       }
-      \vspace #1
+      \vspace #2
     }
 
     tocActMarkup = \markup \large \column {
@@ -132,11 +120,6 @@
 
 %% The actual pages -----------------------------------------------%
   \pageBreak
-  \markup \null
-  \pageBreak
-  \markuplines \table-of-contents
-  \markup \fill-line { \Bilboquet }
-  \pageBreak
   \markup {
     \override #'(box-padding . 1.0)
     \translate #'(0 . -190)
@@ -144,6 +127,29 @@
       \box \BigNotice
     }
   }
+  \pageBreak
+  \markup {
+    \vspace #10
+    \override #'(baseline-skip . 5)
+    \fill-line {
+      \center-column {
+        \fill-line {
+          \fontsize #3 \OperaLivret
+          \fontsize #3 \OperaPartition
+        }
+        \fontsize #10 \bold \OperaTitre
+        \fontsize #2 \OperaSousTitre
+        \vspace #10
+        \fill-line { \line {\hspace #2 \Skyline }}
+        \vspace #10
+        \CharacterList
+      }
+    }
+  }
+  \pageBreak
+  \markup \vspace #10
+  \markuplines \table-of-contents
+  \markup \fill-line { \Bilboquet }
   \pageBreak
 }
 

@@ -537,6 +537,74 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
 EntracteClarinetteDeux = { \ClarinetteDeux
   \relative {
     R2*9
+
+    %%% Vivo subito %%%
+    R1*7
+    re,1~ re~ re4 r r2 |
+    R1*4 r4 sib' r sib | r sib sib r |
+    r re r re r re, r2 | R1*2
+    r2 dod'16 re fad sold fad4~ | fad r r2 |
+    R1*3 r4 lab,8. lab16 si4 r r la8 la sold4 r |
+    r la2.~ la4 re, r2 | R1*2 |
+    fa8 solb solb fa la sib sib la reb do do si r sib sib sib |
+    r si si si r do do do r reb reb reb r re re re r mib mib mib r2 |
+    R1 re'4 re16 re re re re4 re16 re re re re4
+    re16 re re re re4 | re16 re re re re4 re16 re re re re4 |
+
+    %%% Fugato %%%
+    re, r r2 | R1 R2.*2 R2
+    R1 r4 sol,2~ sol2.~ sol4 r r2 |
+    re'2 si8 r r4 | R2.
+    reb2 sib8 r | R1
+    re2 si8 r r4 | R2.
+    re2. mib4 r r2 | R1 R2.*2
+    r4 r8 sol~ sol4. la8~ la sol4. la2~ la r4 | R2.
+    r4 re,,16 mib fa lab sib si dod mi fad sol la do |
+
+    %%% Stretto %%%
+    re4 re, r re r re r re |
+    re, re'8 re re re re re |
+    mi mi mi mi fa fa fa fa |
+    sol sol sol sol sol sol sol sol |
+    lab4 r solb solb lab r solb solb |
+    sol r sol sol sib sib sib sib |
+    sib r r2 | R1*3
+
+    %%% Noir %%%
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 r4 r8 re,? r4 R2
+    R1*5 R1.*2 r2 fad2 re4 r R1. r2 re |
+    R2.-\fermataMarkup R2.*3
+    la'4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol la4 mi r | R2.-\fermataMarkup
+
+    %%% Poco più %%%
+    R2.*4 R2.-\fermataMarkup
+
+    %%% Andantino %%%
+    la'4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 sol fa mi fa8 mi fa sol |
+    la4 mi r2 R2.
+
+    %%% Largo non troppo %%%
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 mi~ mi2. r4 | mi2. r4 R1 R2. mi,,8 r r4 |
   }
 }
 

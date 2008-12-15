@@ -736,8 +736,10 @@ Entracte = {
 
     \new ChoirStaff
        <<
-         \new Staff \new Voice = "soprano" \EntracteSopranoDeux
-         \new Lyrics \lyricsto "soprano" { \EntracteSopranoDeuxTexte }
+         \new Staff \new Voice = "sopranoUn" \EntracteSopranoUn
+         \new Lyrics \lyricsto "sopranoUn" { \EntracteSopranoUnTexte }
+         \new Staff \new Voice = "sopranoDeux" \EntracteSopranoDeux
+         \new Lyrics \lyricsto "sopranoDeux" { \EntracteSopranoDeuxTexte }
          \new Staff \new Voice = "alto" \EntracteContralto
          \new Lyrics \lyricsto "alto" { \EntracteContraltoTexte }
          \new Staff \new Voice = "tenor" \EntracteTenor

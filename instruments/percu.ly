@@ -1135,8 +1135,137 @@ ActeUnSceneQuatrePercus = <<
 >>
 
 
-EntractePercus = {
-}
+EntractePercus = <<
+  \new Staff { \Marimba
+    \relative {
+      R2*9
+      R1*38 R2. R1
+      R1*2 R2.*2 R2 R1 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2
+      R1*14
+      R2.-\fermataMarkup
+      r8 <red fad> r <red fad> r <red fad>
+      r <red fad> r <red fad> r <red fad>
+      r <red fad> r <red fad> r <red fad>
+      r <red fad> r <red fad> r4 | R2
+      r8 <red fad> r <red fad> r <red fad> |
+      r4 r8 <red fad> r <red fad> r <red fad> |
+      r4 r8 <red fad> r <red fad> R2
+      r8 \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad>  r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
+      R2.-\fermataMarkup R2.*14
+      R1 R2 R1 R2 R1 R2 R1 R2.
+      R1.*18 R2. R2
+    }
+  }
+  \new DrumStaff { \Percus
+    \drummode {
+      R2*9
+      R1*14
+      r4 \ind #"Tambour (bag. de timbale, sur le manche)"
+      sn r sn | r sn8 sn16 sn sn4 r |
+      R1*9
+      sn32 sn sn8. r4 r8 sn \t {sn sn sn} sn4 r r2 |
+      R1*11 R2. R1
+      R1*2 R2.*2 R2 R1 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2
+      R1*14
+      \ind #"Crécelle" hh4:32\fermata~ hh4 r\fermata |
+      R2.*4 R2 R2. R1 R2. hh8:32 r8 r4 | R1*5 R1.*4 R1
+      hh4:32~ hh4 r\fermata R2.*8 hh4:32 r2\fermata |
+      R2.*4 R2.-\fermataMarkup R1 R2 R1 R2 R1 R2 R1 R2.
+      R1.*18 R1*2 R2. R2
+    }
+  }
+  \new Staff { \Timbales
+    \relative{
+      R2*9 |
+      re,4 re r re r re r2 | R1*5
+      re4 re r re r re r2 | R1*7
+      re4 re r re r re r2 | R1*3
+      re4 re r re r re r2 | R1*5
+      re8. re32 re re4 r re32 re8.. |
+      r4 re r re8 re re4 r r2 | R1*6
+      re8. re32 re re4 r re r8 re16 re re4 r |
+      r8 re16 re re8 re \t {re re re} re re32 re re re |
+
+      %%% Fugato %%%
+      red4 mi, r mi r8 mi \t {mi mi mi} mi4 r |
+      r8 mi \t {mi mi mi} mi4 | R2. r4 \tt {mi16 mi mi mi mi} |
+      mi4 r r8 mi \t {mi mi mi} mi4 r2 |
+      r8 mi \t {mi mi mi} mi4 mi r r2 |
+      mi8 mi \t {mi mi mi} mi4 r |
+      mi mi r mi8 mi \t {mi mi mi} mi4 |
+      r mi mi r mi8 mi \t {mi mi mi} mi4 r |
+      mi mi mi mi mi8 mi \t {mi mi mi} mi2:8 mi: mi: mi: |
+      mi: mi4: mi2: mi4:
+      \t {fa8 fa fa} \t {fa fa fa} \t {fa fa fa} \t {fa fa fa} |
+      \t {fad fad fad} \t {fad fad fad} \t {fad fad fad} \t {fad fad fad} |
+      \t {sol sol sol} \t {sol sol sol} \t {sol sol sol} |
+      \t {sol sol sol} \t {sol sol sol} \t {sol sol sol} |
+      sold16 sold sold sold sold4 sold16 sold sold sold sold8 \t {re'16 re re} |
+
+      %%% Stretto %%%
+      re4 re32 re8.. r8 r16 re32 re re4 |
+      r8 re \t {re re re} re4 r8 re |
+      re4 r r2 R1*10
+      %%% Noir %%%
+      R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
+      R1*5 R1.*4 R1 R2.-\fermataMarkup R2.*8 R2.-\fermataMarkup
+
+      %%% Poco più %%%
+      R2.*4 R2.-\fermataMarkup
+
+      %%% Andantino %%%
+      la4 la4:32~ la4 r mi r |
+      la4 la4:32~ la4 r mi r |
+      la4 la4:32~ la4 r mi r |
+      la4 la4:32~ la4 r R2. |
+
+      %%% Largo non troppo %%%
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la la r |
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4 \t {la8 la la} la2 r |
+      la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
+      la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
+      la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
+      la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la8 la la la |
+      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4 r8 \t {la16 la la} la4 la la2 |
+      la4 la8 la la4 la la2 |
+      la8 la \t {la la la} la la \t {la la la} la4 la |
+      la8 la \t {la la la} la4 la16 la la la la8 la \ttt {la16 la la la la la} |
+      mi4 \ttt {mi16 mi mi mi mi mi} mi4 mi mi2 |
+      mi4 \ttt {mi16 mi mi mi mi mi} mi2 |
+      r mi4 mi r8 mi~ mi2:32\< mi4\sffz r |
+    }
+  }
+>>
 
 ActeDeuxSceneUnPercus = <<
   \new Staff \relative {\Vibraphone
