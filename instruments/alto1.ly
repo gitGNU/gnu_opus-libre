@@ -365,7 +365,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
 
     %%% Récitatif %%%
 
-    r4 r8 reb4.| sib2.~ |sib1~ |sib2 r4 |
+    r4 r8 reb4.--\mp\downbow| sib2.--\downbow~ |sib1~ |sib2 r4 |
     r4 r8 si!4.--\downbow| sold2.~--\downbow|sold1~|sold2 r4|
     R2.| r4 r8 si4--\mp\downbow do8~--\downbow |do2.~ |do8 do~ \t {do do do}
     do4:32\< | do8\sfz r r2 | R2| r4 r8 si4.\p\>\upbow |
@@ -428,7 +428,7 @@ ActeUnSceneDeuxAltoUn = { \AltoUn
     lab4.\! r8 \clef alto |
     <do,, fa\harmonic>2~ <do fa\harmonic>~ <do fa\harmonic> r4 |
     \simile re,16\mf\< fad sold si do, mib fad sold si re mi sol |
-    la8\! \t {re,16\mf( mi re)} \ttt {mi( re mi) la->( mi re) }
+    la8->\! \t {re,16\mf( mi re)} \ttt {mi( re mi) la->( mi re) }
     \ttt {mi( re mi) la->( mi re)} \ttt {mi( re mi) la->( mi re)} |
     \ttt {si->( re mi) re( mi re)} \ttt {si->( re mi) re( mi re)} |
     \ttt {si->( re mi) re( mi re)} \ttt {si->( re mi) re( mi re)} |

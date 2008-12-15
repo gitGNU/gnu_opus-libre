@@ -213,7 +213,7 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
     re'8\mf( mib re sib) lab( sib) re( mib | re sib) lab( sib re mib) lab,( sib |
     re mib) lab,( sib re mib) | lab,( sib re mib) r4 |
     re8\mf( mib re sib) lab( fa lab sib) | re\>( mib re sib) lab( sib lab fa\!) |
-    re( fa re do re4) | R2. | lab1~--| \ten lab2.\ppp r4 |
+    re( fa re do re4) | R2. | \ten lab1~\ppp--| lab2. r4 |
     \repeat unfold 8 {R2.*2 R1*2}
     R2.*2 R1 R1-\fermataMarkup |
 
@@ -224,9 +224,9 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 
     %%% Duo %%%
 
-    R2. R1 R2. R1 r2 r8 re\mf\>( | mi4-.\!) r r2 | R2. r4 r16 \ind #"en dehors" re\mf re re sol2-- |
-    r4 r16 lab-. lab-. lab-. reb4~--| reb\p( r | R2 R2. R1*2 R2.
-    mi,,2.) | fad\mp\<( r4 lad2 si\!) | sold2.~ sold~ sold4 r2 | r2 r8 sib'4.--\fsubito |
+    R2. R1 R2. R1 r2 r8 re\>( | mi4-.\!) r r2 | R2. r4 r16 \ind #"en dehors" re\mf re re sol2-- |
+    r4 r16 lab-. lab-. lab-. reb4~--| reb r | R2 R2. R1*2 R2.
+    mi,,2.\p( | fad) r4 \mp\<(lad2 si | sold2.\!)~ sold~ sold4 r2 | r2 r8 sib'4.--\fsubito |
 
     %%% Piu vivo %%%
     sol,4\sfz r2 | R1 R2.*2 R1

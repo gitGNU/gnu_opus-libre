@@ -367,8 +367,8 @@ ActeUnSceneTroisFluteUn = { \FluteUn
 
     %%% Tempo II %%%
     R1.*4 sol2. r | R1.
-    r2. sol''8--\mp r r4 |
-    si,,1~-.->\f \ten si4\mp r2 | r4 sib-- |
+    r2. sol''8-- r r4 |
+    si,,1~-.->\mp si4\f r2 | r4 \ten sib--\mp |
   }
 }
 

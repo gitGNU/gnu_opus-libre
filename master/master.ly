@@ -29,13 +29,13 @@
     acte = \ActeUnTitre
     piece = \SceneUnTitre
   }
-} %}
+} %
 \score {
   \ActeUnSceneUnBis
   \header {
     piece = \Separateur
   }
-} %{
+} %
 \score {
   \InterludeUn
   \header {
@@ -55,13 +55,13 @@
     piece = \InterludeTitre
     dessin = \Arrosoir
   }
-} %
+} %}
 \score {
   \ActeUnSceneTrois
   \header {
     piece = \SceneTroisTitre
   }
-} %
+} %{
 \score {
   \ActeUnSceneTroisBis
   \header {
