@@ -329,7 +329,7 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
 
     %%% Récitatif %%%
 
-    r4 r8 mi,4.| dod2.~|dod1~|dod2 r4|
+    r4 r8 mi,4.--\mp\downbow| dod2.--\downbow~|dod1~|dod2 r4|
     r r8 reb4.--\downbow | sib2.~--\downbow|sib1~|sib2 r4|
     R2.| r4 r8 mib4--\downbow\mp lab,8~--\downbow| lab2.~|
     lab8 lab~ \t {lab lab lab} lab4:32\< |
@@ -392,7 +392,7 @@ ActeUnSceneDeuxVioloncelleUn = { \VioloncelleUn
     %%% Largo assai %%%
     R1 R2.*3 R2
     \ten sib,2.~\pp sib2. r4 |
-    r2 \pizz la'4 sold | sol r sib, r | re, r r2 |
+    r2 \pizz la'4 sold | sol r \clef bass sib, r | re, r r2 |
   }
 }
 

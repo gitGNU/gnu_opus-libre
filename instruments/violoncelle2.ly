@@ -388,7 +388,7 @@ ActeUnSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     %%% Largo assai %%%
     R1 R2.*3 R2
     \ten solb,2.~\pp solb2. r4 |
-    r2 \pizz fa'4 mi | mib r sib r | re, r r2 |
+    r2 \pizz fa'4 mi | mib r \clef bass sib r | re, r r2 |
   }
 }
 

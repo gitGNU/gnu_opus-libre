@@ -350,7 +350,7 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
 
     %%% Récitatif %%%
 
-    r4 r8 mib,4. | do2.~| do1~| do2 r4 |
+    r4 r8 mib,4.--\mp\downbow | do2.--\downbow~| do1~| do2 r4 |
     r4 r8 re4.--\downbow |  si2.~--\downbow| si1~| si2 r4 |
     R2.| r4 r8 <re sib'>4--\mp\downbow <si! sol'>8~--\downbow|<si sol'>2.~|
     <si sol'>8 <si sol'>~ \t {<si sol'> <si sol'> <si sol'>}

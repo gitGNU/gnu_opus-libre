@@ -115,6 +115,7 @@
        white)
      stencil)))
 
+%TODO: make radius arg optional.
 #(define-markup-command (rounded-whiteout layout props radius arg)
                         (number? markup?)
   (rounded-whiteout-stencil (interpret-markup layout props arg) radius))
@@ -141,10 +142,8 @@
          (list (cons (quote X-offset)
            (+ -0.5 (* -0.5 (string-length dynamic)))))
        'text
-         (markup
-           ;; uncomment next line for debugging
-           ;;#:box
-           #:line(
+         (markup #:rounded-whiteout 1
+           #:line (
                dynamic
                #:hspace -0.3
                #:normal-text #:italic string))
@@ -158,10 +157,8 @@
          (list (cons (quote X-offset)
            (+ -0.5 (* -0.5 (string-length dynamic)))))
        'text
-         (markup
-           ;; uncomment next line for debugging
-           ;;#:box
-           #:line(
+         (markup #:rounded-whiteout 1
+           #:line (
                #:normal-text #:italic string
                #:hspace -0.3
                #:dynamic dynamic))
@@ -191,9 +188,10 @@ cmb =
                   'grob-value -0.6 'once #t)
       (make-music 'AbsoluteDynamicEvent
                   'text
-                  (markup #:dynamic dyn
+                  (markup #:rounded-whiteout 1
+                          #:line (#:dynamic dyn
                           #:hspace .5
-                          #:text #:medium #:upright str)))))
+                          #:text #:medium #:italic str))))))
 
 bmc =
 #(define-music-function (parser location str dyn) (string? string?)
@@ -205,14 +203,16 @@ bmc =
                   'grob-value -0.6 'once #t)
       (make-music 'AbsoluteDynamicEvent
                   'text
-                  (markup #:text #:medium #:upright str
+                  (markup #:rounded-whiteout 1
+                          #:line (#:text #:medium #:italic str
                           #:hspace .5
-                          #:dynamic dyn)))))
+                          #:dynamic dyn))))))
 
 %% Predefined commands
 
 ffsubito = #(make-dynamic-extra "ff" "subito")
 fsubito = #(make-dynamic-extra "f" "subito")
+fsempre = #(make-dynamic-extra "f" "sempre")
 mfsubito = #(make-dynamic-extra "mf" "subito")
 fmolto = #(make-dynamic-extra "f" "molto")
 psempre = #(make-dynamic-extra "p" "sempre")

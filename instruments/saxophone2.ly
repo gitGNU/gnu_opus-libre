@@ -225,7 +225,7 @@ ActeUnSceneDeuxSaxophoneDeux = { \SaxAltoDeux
 
     %%% Duo %%%
 
-    re,4---.\p re,4---. \simile re,4 \repeat unfold 14 re
+    re,4---.\p re---. \simile re \repeat unfold 14 re
     \ind #"senza cresc." reb \repeat unfold 6 reb
     \repeat unfold 4 si
     \repeat unfold 4 sib r

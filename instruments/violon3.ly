@@ -331,7 +331,7 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
     r4 r8 <sol do\harmonic>-.-> r4 |
     r4 <sol,, do\harmonic>-.-> r2 | la4-.\mf re8->( si) r la-. si4-> |
     re4-. sol8( fa) do'4-> | fa,8( sol) si-> do-> r4 |
-    sol,-> do-> re8( fa) re( do) |
+    sol,->\ff do-> re8( fa) re( do) |
     sol( do) re( fa) re( do) sol( do) | re2.~| re4 r2 |
     \ind #"détaché" lab'8 sib re mib fa, lab sib re |
     re, fa re do sol2~\>| sol2.~\!| sol2 r4 |
@@ -377,7 +377,7 @@ ActeUnSceneDeuxViolonTrois = { \ViolonTrois
 
     %%% Piu vivo %%%
     \ten <sol, sol'>2.~\f <sol sol'>1
-    sol4:16 lab: sib: reb:\> mi: fad:
+    sol4:16 lab: sib: reb:\< mi: fad:
     <sol,sol'>4\ff <sol sol'>8-.\downbow \st {<sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>} |
     dod2-> r4 |
     \st {<sol sol'>8 <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'> <sol sol'>4} |
