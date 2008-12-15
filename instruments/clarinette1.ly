@@ -232,8 +232,8 @@ ActeUnSceneUnBisClarinetteUn = { \ClarinetteBasse
     mi1~mi2. r4 |
     R1*5 \clef treble
     r2 r4 r8 la'' |
-    r la sol si r si sol la |
-    r la sol si r si sol la |
+    r la( sol si) r si( sol la) |
+    r \simile la sol si r si sol la |
     r la sol si sol2~sol4. r8
     fa4 fa8 la | sol4 r r2 |
     r4 fa--\pp fa-- sol-- |

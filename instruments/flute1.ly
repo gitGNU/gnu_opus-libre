@@ -197,7 +197,7 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
     %%% Piu vivo %%%
     re4->\f r r2 | r4 \ttt {re,,16\mf\<( fa sol) lab( sib dod) } \ttt { red( mi fad) la( si do) } |
     re4->\f r r2 | r4 \ttt {re,,16\mf\<( mi sol) la( sib do) } \ttt { mib( fa solb) lab( si dod)} |
-    re8.---> re16 re8-. re'~-> re16 re, re8-. |
+    re8.--->\f re16 re8-. re'~-> re16 re, re8-. |
     re'4-> r8 re,~-> re16 re re8-. |
     re'8.-> re,16 re8-. re-> r4 | re-> re8 re4-> re8 |
     R2. \ten re2.~\pp re4. r8\fermata r4 |
@@ -216,7 +216,7 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
     %%% Adagio %%%
     R1*5
     \ten si1~\pp si2 r | R1*3
-    r2 r4 si~\pp | si si32\>( la8..~) la4 si32\>( la8..~)|
+    r2 r4 si~\pp | si si32\>( la8..\!~) la4 si32\>( la8..\!~)|
     la4 \simile si32 la8..~la4 r8 si32 la16.~
     la2 si32 la8..~la4 r8 si32 la16.~
     la2 si32 la8..~la4
@@ -230,8 +230,8 @@ ActeUnSceneUnBisFluteUn = { \FluteUn
     si4 la  la8 sol si4 |
     si8 sol la4 la  la8 sol |
     si4 si8 sol la4 la | la la r2 |
-    r si4--\pp si-- | si-- r r2 |
-    r4 si si si |
+    r si4--\p si-- | si-- r r2 |
+    r4 si\pp si si |
     R1*2 R1-\fermataMarkup |
     R2*4
   }

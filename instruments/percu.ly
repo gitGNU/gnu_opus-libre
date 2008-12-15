@@ -1176,7 +1176,7 @@ EntractePercus = <<
       r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
       R2.-\fermataMarkup R2.*14
       R1 R2 R1 R2 R1 R2 R1 R2.
-      R1.*18 R2. R2
+      R1.*18 R1*2 R2. R2
     }
   }
   \new DrumStaff { \Percus

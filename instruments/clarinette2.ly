@@ -208,7 +208,7 @@ ActeUnSceneUnBisClarinetteDeux = { \ClarinetteDeux
     %%% Adagio %%%
     R1*21
     r4 mi--\pp mi8( re fad4) |
-    fad8( re mi4) mi8 re fad4 |
+    fad8( re mi4) \simile mi8 re fad4 |
     fad8 re mi4 mi8 re fad4 |
     fad8 re mi4 mi8 re fad4 |
     mi  mi8 fad re4 re8 fad |

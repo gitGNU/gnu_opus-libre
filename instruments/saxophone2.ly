@@ -166,7 +166,7 @@ ActeUnSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     re4->\f r r2 | r4 mib,2\p\<(
     re4\!) r r2 | r4 lab'2\p\<(
     sol8->\f) r do'2---> | fa,---> sib,4~---> |sib lab2---> | R2.*2
-    sib2.~---> \ten sib4.\pp r8\fermata r4 | R2.
+    \ten sib2.~---> sib4.\pp r8\fermata r4 | R2.
     \ten sib2.~\pp sib2~ sib8 r\fermata r4 | R1 R2
 
     %%% Largo %%%
