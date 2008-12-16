@@ -988,11 +988,12 @@ ActeUnSceneTroisTerPiano = { \Piano
   \PianoDeuxMains
   \relative {
     R2*3 R2. R2*2 R2.
-    <re re'>8 r r2 R2.*2 |
-    <si fad' sol re'>2\arpeggio r4 |
-    <sib sib'>8 r r2 | R2. R1*2
+    <re re'>8-.->\p r r2 R2.*2 |
+    <si fad' sol re'>2\p\arpeggio r4 |
+    <sib sib'>8-.-> r r2 | R2. R1*2
     r4 r8 r16 \ottava #1
-    \pl {sol''' <fad, fad'>8 <lab lab'>16 <mi mi'><sol, sol'> re''}
+    \st {
+    \pl {sol'''\p <fad, fad'>8 <lab lab'>16 <mi mi'><sol, sol'> re''}
     {<sol sol'>16 fad <fa fa'> lab mi sol, <re' re'>} r8 |
     r4 r16 <si si'> <la la'> <mi mi'> r <red red'> r <fa fa'> r4 |
     r8 r16 \pl {mib la, fa' mi'8} {mib16 la fa <mi mi'>8} r
@@ -1000,15 +1001,15 @@ ActeUnSceneTroisTerPiano = { \Piano
     r16 <solb solb'> <fa fa'>8 r <do' do'>16 <reb reb'> <si si'>8 r16 <fa fa'>
     r \stemDown <sol, sol'>\noBeam \stemUp <fad'' fad'>8\noBeam \stemNeutral |
     r8 <dod dod'>16 <re re'> <do do'>8 <re re'>16 <mib mib'> r
-    <la, la'> <red red'> <mi mi'> | re'2.\laissezVibrer
+    <la, la'>\< <red red'> <mi mi'>} | re'2.\mp\laissezVibrer
     \ottava #0
     R2.*8
-    <re,,, mib re'>2.\arpeggio \laissezVibrer | R2.*4
+    <re,,, mib re'>2.\p\arpeggio \laissezVibrer | R2.*4
     <re mib re'>2.\arpeggio \laissezVibrer R2.*17
     \ottava #1
-    \pl {fa''16 dod do8} {<fa fa'>16 dod' do8} r16
+    \st {\pl {fa''16\p dod do8} {<fa fa'>16 dod' do8} r16
     \pl {do, fa dod} {do' <fa, fa'> dod'} \ottava #0 r4 |
-    R2.*2 r2 r8 r16 \ottava #1 <do, do'>
+    R2.*2 r2 r8 r16 \ottava #1 <do, do'>\p
     \pl {fa,, dod' mi do' mi <dod, dod'>}
     {fa' dod mi8 <mi mi'>16 dod} r8 r4 |
     r16 <sol' sol'> r <dod, dod'> r16
@@ -1016,16 +1017,16 @@ ActeUnSceneTroisTerPiano = { \Piano
     \pl {sol,16 s s <dod, dod'> sol' s s fad'}
     {sol <red red'> \oneVoice r \voiceOne s sol <red red'> \oneVoice r \voiceOne fad' }
     <fa, fa'> <mi mi'> r8 |
-    \pl sol, sol'' \ottava #0 r r4 r2 |
+    \pl sol,-> sol''-> } \ottava #0 r r4 r2 |
     R2.*8
-    r2 \ottava #1 <mi, fa'>8 r16 <la sold'> \ottava #0 |
+    r2 \ottava #1 <mi, fa'>8-.\pp r16 <la sold'>-. \ottava #0 |
     R2.*2
-    r4 r8 \ottava #1 mi'16 <dod, dod'> do'8 <sold sold'>16 <si si'> \ottava #0 |
+    r4 r8 \ottava #1 \st {mi'16\p <dod, dod'> do'8 <sold sold'>16 <si si'> \ottava #0 |
     R2.*2
-    r8 r16 \ottava #1 dod do,8 <si sold' si> r16 <re si' re> r8 <re mi re' mi>16 <re mi re' mi>
+    r8 r16 \ottava #1 dod do,8 <si sold' si> r16 <re si' re> r8 <re mi re' mi>16 <re mi re' mi>}
     \ottava #0 r8 r4
-    \mg <sol,,, sib re> \md <sol' sib re> \mg <sib, re sol> \md <fad' si red> |
-    \mg <si, red fad> \md <sol' si red fad> <sib re sol> |
+    \mg <sol,,, sib re>-- \md <sol' sib re>-- \mg <sib, re sol>-- \md <fad' si red>-- |
+    \mg <si, red fad>-- \md <sol' si red fad>--\<( <sib re sol>--\!) |
     R2.*19
   }
   \relative {
@@ -1033,21 +1034,21 @@ ActeUnSceneTroisTerPiano = { \Piano
     <mib, sib'>2\arpeggio r4 | R2.*2 R1*6 R2.
     re,2.\laissezVibrer R2.*2 re2.\laissezVibrer R2. re\laissezVibrer R2.*2
     re2.\laissezVibrer R2.*2 re2.\laissezVibrer R2.*5
-    r8 sold la do dod mi | fa,2.\laissezVibrer R2.
-    r8 sold la do dod mi | fa,2.\laissezVibrer R2.
-    r8 sold la do la sold| dod,2.\laissezVibrer R2.
-    r8 mi fa sold la do  | dod,2.\laissezVibrer R2.
-    r8 mi fa sold fa mi  | <la, la'>2.\laissezVibrer R2.*2
+    r8 sold\p( la do dod mi | fa,2.)\laissezVibrer R2.
+    r8 sold( la do dod mi | fa,2.)\laissezVibrer R2.
+    r8 sold( la do la sold| dod,2.)\laissezVibrer R2.
+    r8 mi( fa sold la do | dod,2.)\laissezVibrer R2.
+    r8 mi( fa sold fa mi | <la, la'>2.)\laissezVibrer R2.*2
     <la la'>2.\laissezVibrer R2.*5 R1
-    fad'2.\laissezVibrer R2.*2 fad2.\laissezVibrer R2.*2
-    <fa, fa'>2.\laissezVibrer R2. r4 <dod' dod'>2 |
-    <fa, fa'>2.\laissezVibrer R2. r4 <la la'>2 |
+    fad'2.\mp\laissezVibrer R2.*2 fad2.\laissezVibrer R2.*2
+    \ind #"poco più" <fa, fa'>2.--\laissezVibrer R2. r4 <dod' dod'>2-- |
+    <fa, fa'>2.--\mf\laissezVibrer R2. r4 <la la'>2-- |
     \ottava #-1
-    <dod, dod'>2.\laissezVibrer R2. r4 <la' la'>2 |
-    <dod, dod'>2.*1/3\laissezVibrer \ottava #0 s2 s2. s4
-    \pl {fa''!8 fa,4.} {<sib' re>4 <si red fad>} |
+    <dod, dod'>2.--\mf\laissezVibrer R2. r4 <la' la'>2-- |
+    <dod, dod'>2.*1/3--\laissezVibrer \ottava #0 s2 s2. s4
+    \pl {fa''!8 fa,4.--->} {<sib' re>4-- <si red fad>--} |
     \ottava #-1
-    <la,,, la'>2.\laissezVibrer \ottava #0 R2.*18
+    <la,,, la'>2.--->\f\laissezVibrer \ottava #0 R2.*18
   }
 }
 

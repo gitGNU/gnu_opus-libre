@@ -533,60 +533,60 @@ ActeUnSceneTroisBisAltoUn = { \AltoUn
 ActeUnSceneTroisTerAltoUn = { \AltoUn
   \relative {
     R2*3 R2. R2*2 R2.
-    \pizz <re re'>4 r2
-    R2. r4 \arco sib2~ sib4 r2 \clef treble |
-    sib'16 sib sib sib sib sib sib sib sib sib sib sib |
+    \pizz <re re'>4\f r2
+    R2. r4 \arco sib2~\p sib4 r2 \clef treble |
+    \ind #"staccato leggiero" sib'16\p sib sib sib sib sib sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib sib sib sib sib |
     si si si si si si si si si si si si si si si si |
-    do do do do do do do do dod dod dod dod dod dod dod dod |
-    re8 r r4 r \pizz sol8 lab |
-    r16 sol r8 sib r sold la r16 sold r8 |
-    la sold la r16 sold r8 si r la |
-    sib r16 la r8 do si lad si r16 lad |
-    r8 dod do re dod mib |
-    <re, re'>4 r2 R2.
-    \arco <re, sol\harmonic re''>2. ~
+    do do do do do do do do dod\< dod dod dod dod dod dod dod |
+    re8->\! r r4 r \pizz sol8->\mp lab-> |
+    r16 sol r8 sib-> r sold-> la-> r16 sold r8 |
+    la sold-> la-> r16 sold r8 si-> r la |
+    sib-> r16 la r8 do si lad-> si-> r16 lad |
+    r8 dod-> do\< re dod mib |
+    <re, re'>4->\! r2 R2.
+    \arco <re, sol\harmonic re''>2. ~\p
     <re sol\harmonic re''> ~
     <re sol\harmonic re''> ~
     <re sol\harmonic re''> ~
     <re sol\harmonic re''>4 r2 R2.
-    r4 re'4.~ re8\glissando
-    re'2.~ re~ re8 r re,4.~ re8\glissando re'2.~ re8 r re,4.~re8\glissando |
-    re'4 si sib <re, re'> r2 \clef alto |
-    r4 re,,2~ re r4 |
+    r4 re'4.~\pp\< re8\>\glissando
+    re'2.~\! re~ re8 r re,4.~\pp\< re8\>\glissando re'2.~\! re8 r re,4.~\p\<\upbow re8\glissando |
+    re'4\mp( si sib\>) <re, re'>\! r2 \clef alto |
+    r4 \ten re,,2~\p re r4 |
 
-    r  \t {sib'8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {si fad si} \t {fad si fad} si4 r |
-    r  \t {sib8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {si fad si} \t {fad si fad} si4 r |
-    r sol'2~\CaV \ordin sol fad4~ fad2 r4 |
-    r \simile sol2~\CaV sol fad4~ fad2 r4 |
-    r  \t {fad8 re re} \t {si si sol} \t {si re re} \t {fad fad sib~} sib4~ sib2 r4 |
-    r  \t {fad8 re re} \t {si si sol} \t {fad' mib mib}
-    \t {si fad' mib} \t {sib' sol sol} | \t {mib si' sol} mib'4 \clef treble
-    r16 \pizz mi8. |
-    fa4 mi8 fa r16 mi8. | fa4 fad8 sol r16 fad8. |
-    sol8 fad sol r16 fad r8 lab | sol4 r r2 \clef alto |
+    r  \t {sib'8\pp( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {si( fad si} \t {fad si fad} si4) r |
+    r  \t {sib8( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {si( fad si} \t {fad si fad} si4) r |
+    r sol'2~\mp\CaV \ordin sol\> fad4~\! fad2 r4 |
+    r \simile sol2~\CaV sol fad4~-- fad2 r4 |
+    r  \t {fad8\mf\>\(( re) re(} \t {si) si( sol)\!\)} \t {si\<\(( re) re(} \t {fad)\) fad( sib~)} sib4~\! sib2 r4 |
+    r  \t {fad8\mf\>\(( re) re(} \t {si) si( sol)\!\)} \t {fad'\>\(( mib) mib(}
+    \t {si\!) fad'( mib)\)} \t {sib'\>\(( sol) sol(} | \t {mib)\)\< si'( sol)} mib'4--\! \clef treble
+    r16 \pizz mi8.\mp |
+    fa4-> mi8-> fa-> r16 mi8. | fa4-> fad8-> sol-> r16 fad8. |
+    sol8 fad-> sol-> r16 fad r8 lab-> | sol4-> r r2 \clef alto |
 
-    r4 \arco \t {sib,,8 fa sib} \t {fa sib fa} \t {sib fa sib} \t {fa sib fa}
-    \t {sib fa sib} | \t {fa sib fa} sib4 r |
-    r  \t {sib8 fa sib} \t {fa sib fa} \t {sib fa sib} \t {fa sib fa}
-    \t {sib fa sib} | \t {fa sib fa} sib4 r |
-    r  \t {sib8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {fad si fad} \t {si fad si} r2 |
-    r4 \t {sib8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {fad si fad} \t {si fad si} r2 |
-    r4 \t {sib8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {si fad si} \t {fad si fad} si4 r |
-    r4 \repeat tremolo 8 {re32 sib}
+    r4 \arco \t {sib,,8( fa sib} \t {fa sib fa)} \t {sib( fa sib} \t {fa sib fa)}
+    \t {sib( fa sib} | \t {fa sib fa} sib4) r |
+    r  \t {sib8( fa sib} \t {fa sib fa)} \t {sib( fa sib} \t {fa sib fa)}
+    \t {sib( fa sib} | \t {fa sib fa} sib4) r |
+    r  \t {sib8\p( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {fad( si fad} \t {si\> fad si\!)} r2 |
+    r4 \t {sib8( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {fad( si fad} \t {si\> fad si\!)} r2 |
+    r4 \t {sib8\mp( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {si( fad si} \t {fad si fad} si4) r |
+    r4 \repeat tremolo 8 {re32\mf sib}
     \repeat tremolo 8 {re sib}
     \repeat tremolo 4 {red si} | red4 r2 |
-    r8 sib' si fad sol re mib sib' si fad sol re |
-    mib sib'4 fad re8~ re sib4 si re8~ re2 r4 |
+    r8 sib'\f( si) fad( sol) re( mib) sib'( si) fad( sol) re( |
+    mib) sib'4--\>( fad--) re8~--( re sib4-- si--) re8~--\mp re2 r4 |
     R2.*4
-    do2.~\CaV do~\CaV do~\CaV do~\CaV do2\CaV r4 |
-    sold2.~ sold~sold~sold2 r4 |
-    dod2.\fermata
+    do2.~\pp\CaV do~\CaV do~\CaV do~\CaV do2\CaV r4 |
+    sold2.~\pp sold~sold~sold2 r4 |
+    dod2.\p\fermata
   }
 }
 
