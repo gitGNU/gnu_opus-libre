@@ -525,7 +525,7 @@ ActeUnSceneTroisBisAltoUn = { \AltoUn
     r fad\upbow \simile do\thumbpizz r |
     fad\upbow do\thumbpizz fad\upbow do\thumbpizz |
     r4 <do fa\harmonic do''>2\pp r4 |
-    \ten do'1~\CaV do2\CaV reb( do si) fad1~\pp fad~ fad4 r la2~\> la fad~\! fad4 r r2 |
+    \ten do'1\p~\CaV do2\CaV reb( do si) fad1~\pp fad~ fad4 r la2~\> la fad~\! fad4 r r2 |
     R1*7
   }
 }

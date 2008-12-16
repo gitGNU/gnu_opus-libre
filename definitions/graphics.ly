@@ -506,6 +506,10 @@ stroke
 grestore
 grestore"
 
+%%%%%%%%%%%%%%%%%%%%% Cover and title pages %%%%%%%%%%%%%%%%%%%%%%%%
+
+copyleft = \markup { \sans \rotate #180 © }
+
 Couronne = \markup \with-dimensions #'(0 . 30) #'(-24 . 16)
 \postscript #"
 0 8 translate

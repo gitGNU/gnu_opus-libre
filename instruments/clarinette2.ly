@@ -385,7 +385,7 @@ ActeUnSceneTroisBisClarinetteDeux = { \ClarinetteDeux
     sol8 r \tt {fa,16 lab sib reb mi}
     sol8 r \tt {fa,16\< lab sib reb mi} |
     fad4--\sf r r2 | R1*10 R2.
-    r4 la,2\p la4\<( do2\> la~) la2. r4 |
+    r4 la,2\p la4\<( do2\> la~)\! la2. r4 |
     r2 \tt {fad16--\pp( sol la do re)} r4 |
     r2 r4 \tt {fad,16--( sol la do re)}|
     r4 \tt {fad,16--( sol la do re)}
