@@ -400,48 +400,50 @@ ActeUnSceneTroisBisFluteUn = { \FluteUn
 ActeUnSceneTroisTerFluteUn = { \Piccolo
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*2
-    re'16 re' sol re lab' mi red sol fad fa lab mi sol re lab' mi |
-    red sol fad fa lad si la mi lab mib la fa mi lab sol solb |
-    la r lab mib la fa mi lab sol fad si do sib fa la mi |
-    sib' solb fa la lab sol do reb si r sib fa si sol fad sib |
-    la sold dod re do lab re mib dod la red mi |
+    \st {re'16\p( re' sol-> re) lab'->( mi red) sol->( fad fa lab-> mi) sol->( re) lab'->( mi |
+    red) sol->( fad fa) lad->( si la-> mi) lab->( mib) la->( fa mi lab) sol->( solb |
+    la->) r lab->( mib) la->( fa mi) lab->( sol fad) si->( do sib-> fa) la->( mi) |
+    sib'->( solb fa) la->( lab sol) do->( reb si->) r sib->( fa) si->( sol fad) sib->( |
+    la sold) dod->( re do-> lab) re->( mib dod-> la) red->( mi |
 
     %%% Poco meno %%%
-    re8 r r2 R2.*5-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
-    r8 si, sib sol fad mib re'2. | R2.
-    \t {r8 fa mi} \t {dod4 do la} | fa'2 r4
-    \t {r8 fa mi} \t {dod do la~} \t {la do dod} |
-    \t {sold' fa mi~} \t {mi dod do} \t {la fa' sold~} |
-    \t {sold dod, do} \t {la fa' sold~} \t {sold16 r dod,8 do} |
-    \t {la fa' sold} \t {do, fa sold} \t {mi fa sold} |
-    la32 sold fa8.~ \t {fa8 mi dod~ } \t {dod sold fa~ } |
-    \t {fa mi dod~ } dod4 r |
-    do,!2 r4 |
+    re8->)} r r2 R2.*5-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
+    r8 si,\p\<( sib sol fad mib\> re'2.\!) | R2.
+    \t {r8 fa\pp\<( mi} \t {dod4 do la\>} | fa'2\!) r4
+    \t {r8 fa\pp( mi} \t {dod do la~} \t {la) do( dod)} |
+    \t {sold'( fa mi~} \t {mi) dod( do)} \t {la( fa' sold~} |
+    \t {sold) dod,( do)} \t {la( fa' sold~} \t {sold16) r dod,8( do)} |
+    \t {la\<( fa' sold)} \t {do,( fa sold)} \t {mi( fa sold)} |
+    la32\mp\>( sold fa8.~ \t {fa8) mi( dod~ } \t {dod) sold( fa~ } |
+    \t {fa\!) mi( dod~ } dod4) r |
+    do,!2-- r4 |
 
-    r sol'2~ sol fad4~ fad2 r4 |
-    r sol2 ~ sol fad4~ fad2 r4 |
-    r re'2 ~ re  red4~ red2 r4 |
-    r re2  ~ re  red4~ red2 r4 |
+    r \ten sol'2~--\p\< sol\mp\> fad4~--\! fad2 r4 |
+    r sol2~--\< sol\> fad4~--\! fad2 r4 |
+    r re'2~--\mp re\> red4~--\! red2 r4 |
+    r re2~-- re\> red4~--\! red2 r4 |
     R2.-\markup "prenez le Piccolo" \Piccolo
-    r2 r8 mi'16 dod | fa dod do mi dod do fa dod mi8 r |
+    r2 r8 \st {mi'16\p( dod) | fa( dod do) mi( dod do) fa( dod mi8) r |
     R2.*2
-    r4 mi16 dod fa dod do mi dod do fa dod mi do mi dod fa dod do mi dod do |
-    fa sol mi dod fad dod sol' red re fad mid mi sol red fad dod sol' red re fad mid mi lab sib |
-    sol4 r r2 |
+    r4 mi16->\mp( dod) fa->( dod do) mi->( dod do) fa->(
+    dod) mi->( do) mi->( dod) fa->( dod do) mi->( dod do) |
+    fa->( sol mi dod) fad->( dod) sol'->( red re) fad->(
+    mid mi) sol->( red) fad->( dod) sol'->( red re) fad->( mid mi) lab->\<( sib |
+    sol4->\!)} r r2 |
     R2.-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
-    r4 sib,,2~sib4 la2 R2.
-    r4 la4. mib'8~ | mib4 lab2 |
-    r4 sib,2 sib si4~ si r8 fa''16 mi dod do la sold' |
-    r4 sib,,2 sib si4~ si r2 |
-    r4 re2 re red4 | r16 fa' mi dod do la sold' si sold, sold' si, si' |
-    re re r8 r4 re,, | sol2 fad4~ fad si re |
-    r8 si sib sol fad mib re' si sib sol fad mib |
-    \t {r fa' mi} \t {dod do la} \t {sold' fa mi}|
-    \t {dod la fa'} \t {sold fa mi} \t {dod la fa'} |
-    \t {sold do, dod} \t {sold' dod, fa} sold16 mi fa sold |
-    \grace la8 \pitchedTrill sold2.\startTrillSpan la sold4\stopTrillSpan r2 |
+    r4 sib,,2~--\mp( sib4 la2) R2.
+    r4 la4.--\< mib'8~-- | mib4 lab2--\mp |
+    r4 sib,2--\mp sib--\> si4~--\! si r8 \st {fa''16\pp( mi dod do la sold')} |
+    r4 sib,,2-- sib--\> si4~--\! si r2 |
+    r4 re2--\mf re--\< red4--\! | r16 \st {fa'\mp\<( mi dod do la) sold'( si) sold,( sold'\!) si,-> si'->} |
+    re--\mf re-- r8 r4 re,,-- | sol2-- fad4~-- fad si\<( re\!) |
+    r8 si\f( sib sol fad mib re') si( sib sol fad mib) |
+    \t {r fa'(\psubito mi} \t {dod do la} \t {sold') fa( mi}|
+    \t {dod la) fa'(} \t {sold) fa( mi} \t {dod) la( fa'} |
+    \t {sold) do,\<( dod} \t {sold') dod,( fa} sold16\!) mi( fa sold |
+    \grace la8 \pitchedTrill sold2.\p\>\startTrillSpan la sold4\!)\stopTrillSpan r2 |
     R2.*8-\markup "prenez le Piccolo" \Piccolo
-    \acciaccatura {la16[ mi]} red'16 r r8 r2 R2.*3
+    \acciaccatura {la16[ mi]} red'16-.\p r r8 r2 R2.*3
   }
 }
 

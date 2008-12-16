@@ -314,22 +314,22 @@ ActeUnSceneTroisBisSaxophoneDeux = { \SaxophoneBaryton
 
 ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
   \relative {
-    R2*3 R2. R2*2 R2.*7 R1*6 R2.*19
-    r4 mib,2 mib re4~ re re r |
-    r  mib2  mib re4~ re re r |
-    r sol2 sol fad4~fad fad r |
-    r sol2 sol fad4~fad fad r |
-    r mib2 mib mib4~mib2 r4 |
-    r mib2 sol si4~ si r2 |
+    R2*3-\markup "Mettez la sourdine" R2. R2*2 R2.*7 R1*6 R2.*19
+    r4 mib,2--\pp mib-- re4~-- re\> re\! r |
+    r  mib2 mib-- re4~-- re\> re--\! r |
+    r sol2--\p sol-- fad4~-- fad\> fad--\! r |
+    r sol2-- sol-- fad4~-- fad\> fad--\! r |
+    r mib2--\p mib-- mib4~-- mib2 r4 |
+    r mib2--\mp\< sol-- si4~--\mf si r2 |
     R2.*3 R1
-    r4 si,2 si si4~ si2 r4 |
-    r  si2  si si4~ si2 r4 |
-    r sol'2 sol fad4~fad r2|
-    r4 sol2 sol fad4~ fad r2 |
-    r4 mib2 mib re4~ re re r |
-    r  re'2 sol fad4~fad sol fad |
-    r8 fad sol re mib sib si fad' sol re mib sib |
-    si4 r8 fad' sol,4 | r8 re~ re4 r | R2.*15
+    r4 si,2--\pp si-- si4~-- si2 r4 |
+    r  si2-- si si4~-- si2 r4 |
+    r sol'2--\p sol--\> fad4~--\! fad r2|
+    r4 sol2-- sol--\> fad4~\! fad r2 |
+    r4 mib2--\mp mib--\< re4~--\! re\> re--\! r |
+    r  re'2-- sol-- fad4~-- fad sol\>( fad\!) |
+    r8 fad\mf( sol re mib sib si) fad'( sol re mib sib |
+    si4) r8 fad'\>( sol,4\!) | r8 re~--\p re4 r | R2.*15
   }
 }
 

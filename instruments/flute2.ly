@@ -372,41 +372,41 @@ ActeUnSceneTroisBisFluteDeux = { \FluteDeux
 ActeUnSceneTroisTerFluteDeux = { \FluteDeux
   \relative {
     R2*3 R2. R2*2 R2.*4
-    re'8 fad16 re dod8 fa16 do r red mi si |
-    sib8 r r2 R2. sol8 fad mib re~ re4 r |
-    lab'8 sol mi red la' sold fa mi |
-    re r r4 r2 | R1*3 R2.
+    \st {re'8\mp( fad16-> re dod8 fa16-> do r red mi si |
+    sib8--)} r r2 R2. sol8\mp\(( fad) mib( re~) re4\) r |
+    lab'8\(( sol) mi( red)\) la'\(( sold) fa( mi)\) |
+    re-- r r4 r2 | R1*3 R2.
 
     %%% Poco meno %%%
-    re''2.~ re~ re2 r4 |
-    r8 si, sib sol fad mib re'2. r8 si sib sol fad mib re'2. R2.*2
-    \t {r8 dod' do} \t {la4 sold fa} | dod'2 r4 |
-    \t {r8 dod do } \t {la sold fa~} \t {fa sold la} |
-    \t {mi'dod do~} \t {do la sold} \t {fa dod' mi~} |
-    \t {mi la, sold} \t {fa dod' mi~} \t {mi16 r la,8 sold} |
-    \t {fa dod' mi} \t {sold, dod mi} \t {do dod mi} |
-    fa32 mi dod8.~ \t {dod8 do la} \t {la mi dod~} |
-    \t {dod do la} \t {r sold fa~ } \t {fa mi dod} | do2 r4 |
+    \ten re''2.~\pp re~ re2 r4 |
+    r8 si,\mp\<( sib sol fad mib\> re'2.\!) r8 si\<( sib sol fad mib\> re'2.\!) R2.*2
+    \t {r8 dod'\pp\<( do} \t {la4 sold fa\>} | dod'2\!) r4 |
+    \t {r8 dod\pp( do } \t {la sold fa~} \t {fa) sold( la)} |
+    \t {mi'( dod do~} \t {do) la( sold)} \t {fa( dod' mi~} |
+    \t {mi) la,( sold)} \t {fa( dod' mi~} \t {mi16) r la,8( sold)} |
+    \t {fa\<( dod' mi)} \t {sold,( dod mi)} \t {do( dod mi)} |
+    fa32\mp\>( mi dod8.~ \t {dod8) do( la~} \t {la) mi( dod~} |
+    \t {dod\!) do( la)} \t {r sold( fa~ } \t {fa) mi( dod)} | do2-- r4 |
 
-    r mib2~ mib re4~ re2 r4 |
-    r mib2~ mib re4~ re2 r4 |
-    r sib'2~sib si4~ si2 r4 |
-    r sib2~ sib si4~ si2 r4 |
-    r fad'2 fad fad4~ fad2 r4 |
-    r fad2  sib re4~ re r2 | R2.*3
-    sol16 re lab mib la, lab' r8 r2 |
-    R2. r4 fa,2~ fa4 mi2 |
-    R2. r4 mi4. la8~ la4 mib'2 |
-    r4 sol,2 sol fad4~ fad r2 |
-    r4 sol2  sol fad4~ fad r16 fa'' mi dod do la sold' si |
-    r4 sib,,2 sib si4 r mi'16 dod do la sold' si re, re |
-    mi mi r8 r4 sib, re2 red4~ red fad sib |
+    r \ten mib2~--\p\< mib\mp\> re4~--\! re2 r4 |
+    r mib2~--\< mib\> re4~--\! re2 r4 |
+    r sib'2~--\mp sib\> si4~--\! si2 r4 |
+    r sib2~-- sib\> si4~--\! si2 r4 |
+    r fad'2--\mp fad-- fad4~-- fad2 r4 |
+    r fad2--\mp\< sib-- re4~--\mf re r2 | R2.*3
+    \st {sol16\mf\> re lab mib la, lab'\!} r8 r2 |
+    R2. r4 fa,2~--\mp( fa4 mi2) |
+    R2. r4 mi4.--\< la8~-- la4 mib'2--\mp |
+    r4 sol,2--\mp sol--\> fad4~--\! fad r2 |
+    r4 sol2-- sol--\> fad4~--\! fad r16 \st {fa''\pp( mi dod do la sold' si)} |
+    r4 sib,,2--\mf sib--\< si4--\! r \st {mi'16\mp\<( dod do la) sold'( si) re, re\! |
+    mi-> mi->} r8 r4 sib,--\mf re2-- red4~-- red fad\<( sib\!) |
 
-    r8 sol fad mib re si sib' sol fad mib re si |
-    \t {r dod' do} \t {la sold fa} \t {mi' dod do} |
-    \t {la fa dod'} \t {mi dod do} \t {la fa dod'} |
-    \t {mi sold, la} \t {mi' la, do} mi16 do dod mi|
-    \grace fa8 \pitchedTrill mi2.\startTrillSpan fa mi4\stopTrillSpan r2 |
+    r8 sol\f( fad mib re si sib') sol( fad mib re si) |
+    \t {r dod'(\psubito do} \t {la sold fa} \t {mi') dod( do} |
+    \t {la fa) dod'(} \t {mi) dod( do} \t {la fa) dod'(} |
+    \t {mi) sold,\<( la} \t {mi') la,( do} mi16\!) do( dod mi|
+    \grace fa8 \pitchedTrill mi2.\p\>\startTrillSpan fa mi4\!)\stopTrillSpan r2 |
     R2.*12
   }
 }
