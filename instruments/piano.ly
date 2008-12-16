@@ -630,7 +630,7 @@ ActeUnSceneDeuxPiano = { \Piano
     mi8(\pp fa la si la fa) mi( fa |
     la si la4) fa8( la si re | si4) \clef treble la8( si re fa |
     re4) fa8( sol si do) |
-    \ottava #1 si''8\pp( do si sol fa sol si4 |
+    \ottava #1 si''8\pp( do si sol fa sol si4) |
     si8( do si sol) fa( sol si do) |
     si( do si sol) fa( sol | fa re) si( re la4) |
     \ottava #0
@@ -941,8 +941,8 @@ ActeUnSceneTroisBisPiano = { \Piano
     R1*2 <mi, la red>8 <sol do fad>~<sol do fad>2 r4 |
     R1 r2 <do mib>4-- <si fa'>-- | \ten <fad fad'>1~ <fad fad'>~ <fad fad'>2. r4 |
     R1*8 r2 r4 dod'--\mp | <mi sol>-- r r2 |
-    r2 \t {r16 <lad, dod mi>8\p <lad dod mi> <lad dod mi>16}
-    \t {r16 <lad dod mi>8 <lad dod mi> <lad dod mi>16} |
+    r2 \t {r16 <lad, dod mi>8--\p <lad dod mi>-- <lad dod mi>16-.}
+    \t {r16 <lad dod mi>8-- <lad dod mi>-- <lad dod mi>16-.} |
     \t {r16 <sold lad dod mi>8-- <sold lad dod mi>-- <sold lad dod mi>16-.}
     \t {r16 <sold lad dod mi>8-- <sold lad dod mi>-- <sold lad dod mi>16-.}
     \t {r16 <dod mi sol la>8-- <dod mi sol la>-- <dod mi sol la>16-.}

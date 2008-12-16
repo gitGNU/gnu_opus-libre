@@ -26,7 +26,7 @@ PrologueSaxophoneUn = { \SaxAltoUn
     la,2--->\mf r4 | R2*2 | reb,2-- r4 | R2
     solb4--\mp\< lab-- sib8->\! do~-> |
     do2\> \ten si2.~\p si2 la2.~\pp la4 r |
-    sib2~-- sib4 r \t { lab8\fsubito( fa mib } |
+    sib2~-- sib4 r \t { lab8(\fsubito fa mib } |
     \ten re2~\fp) re~ re4 r | \ten re'2~\p re~ re4. r8 |
     \t {reb,4\p( mi fad} \t {sol\< la do} |
     re4\f) r2 lab2.--\mp( re4--) r2 sib2.\p reb mi |
@@ -234,7 +234,7 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
     r4 re-- do-- do8-> si~-> si4 r2|
     r4 re-- do-- si8-> mi~-> mi4 r | R2.
     r4 mi-- re-- si8-> mi~-> mi4 r |
-    r mi-- re-- mi8->\< sold~->/! sold4 r|
+    r mi-- re-- mi8->\< sold~->\! sold4 r|
     R2.*2
     r16 sib,-.->\mp r8 r2 |
     R2.*2
@@ -309,7 +309,7 @@ ActeUnSceneTroisBisSaxophoneUn = { \SaxAltoUn
     reb4--\p r r2 reb4-- r r2 reb4-- r reb-- r reb-- r \simile reb-- r |
     reb8.( solb16) r4 reb8~(\t {reb16 solb do)} r8 r16 mi, |
     reb8--( do'-- reb'--) r reb,,4-- r16 la'8.-- | solb'2.\mp r4 | R1
-    r2 r4 sib,\pp( lab2\> sib\!) | r2 r4 la(\< sol2/> la~\!) la2. r4 |
+    r2 r4 sib,\pp( lab2\> sib\!) | r2 r4 la(\< sol2\> la~\!) la2. r4 |
     R1*9
   }
 }

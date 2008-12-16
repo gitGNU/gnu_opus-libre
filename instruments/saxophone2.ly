@@ -296,9 +296,9 @@ ActeUnSceneTroisBisSaxophoneDeux = { \SaxophoneBaryton
     \ten solb1~\pp solb~ solb2. r4 | R1*2 |
     solb1~ solb~ solb2. r4 | R1*5
     r4 \st {re'16\p lab' fa sib reb8 r re,16 lab' fa sib |
-  reb8 fa,16 sib reb8 fa,16 sib} reb8 fa,16\< sib reb fa, re la |
+    reb8 fa,16 sib reb8 fa,16 sib} reb8 fa,16\< sib reb fa, re la |
     solb4--\sf r r2 | R1
-    \ten si1~ si~ si2. r4 | R1*6 R2.
+    \ten si1\p~ si~ si2. r4 | R1*6 R2.
     re,1~ re~ re2. r4 |
     fa4\p( re8) r r2 fa4( re8) r r2 |
     fa4( re8) r fa4( re8) r

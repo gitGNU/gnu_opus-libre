@@ -356,7 +356,7 @@ ActeUnSceneTroisBisFluteDeux = { \FluteDeux
     mi2.\> dod8\!) r | R1
     \t {sol'8\mp( mi) r} \t {sol( mi) r} \t {sol( mi) r} \t {sol( mi) r} |
     \t {la( sol) r} \tt {la16--\<( reb, mi sol la)} do8\! r \tt {reb,16\<( mi sol la do)} |
-    fad,4--\sfz r r2 R1*10 R2. R1*7
+    fad,4--\sf r r2 R1*10 R2. R1*7
     \tt {fa16--\p( lab sib si do)} dod8 r
     \tt {fa,16--( lab sib si do)} dod8 r
     \tt {fa,16--( lab sib si do)} dod8 r

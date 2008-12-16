@@ -428,7 +428,6 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
 
     %%% Largo assai %%%
     R1 R2.*3 R2
-    %%%%FIXME%%%%
     \arco \ten sib,,2.~\pp sib2. r4 |
     r2 \pizz la'4 sold | sol r dod, r | re r r2 |
   }
@@ -490,7 +489,7 @@ ActeUnSceneTroisBisViolonUn = { \ViolonUn
   \relative {
     R1*8 r2 la'8\mp( sol) sib4-- fad4-- r r2 |
     R1*20
-    do1-- do2-- do-- do-- do-- do-- do-- |
+    do1--\pp do2-- do-- do-- do-- do-- do-- |
     fa'4\mf(\glissando re8) r re4(\glissando si8) r |
     la\>(\glissando fad16) r fad8(\glissando mib16) r mib8( do16\!) r |
     R1*16

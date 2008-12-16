@@ -514,7 +514,7 @@ ActeUnSceneTroisBisAltoDeux = { \AltoDeux
     r16 mib' re'-> mib, r do si'-> do,
     r do si'-> do, r sib la'-> sib,|
     \t {fad'8->\> sib, mib} \t {sol, do mi,} sol dod,\! |
-    r4 \arco fad2\p fad4\p | mi2\<( fad~\>) fad1\!
+    r4 \arco fad2\p fad4\< | mi2(\> fad~)\! fad1
     R1*3
     <la re>1\p <la re>2-- <la re>-- <la re>-- <mi la>-- |
     \pizz <fad fad'>4-> r r2 | R1*6

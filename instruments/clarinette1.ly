@@ -425,7 +425,7 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
     \tt {\simile fa,16 lab sib reb mi} sol8 r
     \tt {fa,16 lab sib reb mi} sol8 r
     \tt {fa,16 lab sib reb mi} sol8 r |
-    fad,4--->\sf r r2 R1
+    fad,4--\sf r r2 R1
     fad'4\mp( red8) r fad4( red8) r |
     fad4( red8) r fad4( red8) r |
     fad4( red8) r16 sol,
@@ -438,10 +438,10 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
     fad16---. sol,~-> \t {sol si,( lab} red'8) r |
     fad16( mi, lab,32 sol' sib do red8) r
     fad4( red8) r
-    fad4 red8 r fad4 red8 r |
-    fad8 la16 r red,8 fad16 r do8 mib16 r sol,8 sib16 r |
+    fad4( red8) r fad4( red8) r |
+    fad8(\> la16) r red,8( fad16) r do8( mib16) r sol,8(\! sib16) r |
     dod,8 r r2 |
-    r4 fad2\p fad4\<( mi2\> fad~) fad2. r4 | R1*2
+    r4 fad2\p fad4\<( mi2\> fad~)\! fad2. r4 | R1*2
     \tt {fad16--\pp( sol la do re)} r4
     \tt {fad,16--( sol la do re)} r4 |
     \tt {fad,16--( sol la do re)} fa8 r
@@ -455,7 +455,7 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
     r  fad( do8) r r4 |
     fad( do8) r fad4( do8) r |
     R1*7
-    do'2 la~\p\>( la4\!) r r2 |
+    do'2\p\> la~(\! la4) r r2 |
     R1*5-\markup "Prenez la Clarinette" \ClarinetteUn
     r2 sol'\mp( do1)\fermata
   }

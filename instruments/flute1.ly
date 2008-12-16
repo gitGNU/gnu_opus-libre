@@ -382,7 +382,7 @@ ActeUnSceneTroisBisFluteUn = { \FluteUn
     r2 \t {sol'8\p( mi) r} \t {sol( mi) r}
     \t {la\mp( sol) r} \t {la( sol) r} \t {la( sol) r} \t {la( sol) r} |
     \tt {do16--( reb, mi sol la)} do8 r
-    \tt {mib16--\<( reb, mi sol do\!)} \tt {mib--( sol, la do mib)} |
+    \tt {mib16--\<( reb, mi sol do)} \tt {mib--(\! sol, la do mib)} |
     fad4--\sf r r2 | R1*10 R2. R1*6
     r2 r4 \tt {lab,16--\p( sib si do dod)} |
     mi8 r \tt {re,16--( mib fa lab sib)}
@@ -390,7 +390,8 @@ ActeUnSceneTroisBisFluteUn = { \FluteUn
     mi8 r \tt {re,16--( mib fa lab sib)}
     mi8 r \tt {mib,16\<( fad la si re)} |
     fad2.\mp r4 |
-    R1 r2 r4 dod,\p( | mi2\> dod\!) | r2 r4 do!\<( mib2\> do~) do2. r4 |
+    R1 r2 r4 dod,\p( | mi2\> dod\!) |
+    r2 r4 do!\<( mib2\> do~)\! do2. r4 |
     R1*7
     fad2--\p r4 fad\<( la2\> fad~\!) fad4 r r2 R1*9
   }
