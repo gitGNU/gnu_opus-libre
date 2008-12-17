@@ -460,14 +460,14 @@ ActeUnSceneTroisBisVioloncelleDeux = { \VioloncelleDeux
 ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
   \relative {
     R2*3 R2. R2*2 R2. \clef treble
-    \repeat unfold 36 re'16
+    \ind #"staccato leggiero" re'16\fp \repeat unfold 35 re
     re re fad re dod dod fa do do red mi si |
     sib8 r r2 | R2. \clef bass |
-    mib,,,2. r4 mi2 fa |
-    re'8 r r4 r2 | R1*3 R2.
+    mib,,,2.\pp r4 mi2 fa |
+    re'8-> r r4 r2 | R1*3 R2.
 
     %%% Poco meno %%%
-    <re sol\harmonic re''>2.:32~
+    <re sol\harmonic re''>2.:32~\pp
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
@@ -481,37 +481,37 @@ ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>4 r2 \clef treble
-    r8 si'' sib sol fad mib\glissando |
-    mib' re fad, sol si sib re, mib sol fad sib, si \clef bass |
-    mib,2 r4 |
+    r8 si''\mp\<( sib) sol( fad) mib\glissando |
+    mib'\mf( re) fad,( sol) si( sib) re,\>( mib) sol( fad) sib,( si) \clef bass |
+    mib,2\mp r4 |
 
-    r mib2~mib re4~ re2 r4 |
-    r mib2~mib re4~ re2 r4 |
-    r \t {sib'8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {si fad si} | \t {fad si fad} si4 r |
-    r \t {sib8 sol sib} \t {sol sib sol} \t {sib sol sib} \t {sol sib sol}
-    \t {si fad si} | \t {fad si fad} si4 r |
-    r \t {mib,8 sol mib} \t {sol mib sol} \t {mib sol mib} \t {sol mib sol}
-    mib4~ mib2 r4 |
-    r \t {mib8 sol mib} \t {sol mib sol} \t {mib sol mib} \t {sol si sol}
-    \clef tenor \t {si mib si} | \t {sol mib' si} sol'4 r \clef bass |
-    r8 \pizz si,, mi la mib sol | r4 r8 do, fa sib \clef tenor |
-    r mi r4 la | R1 \clef bass
+    r mib2~\p mib\> re4~\! re2 r4 |
+    r mib2~ mib\> re4~\! re2 r4 |
+    r \t {sib'8\p( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {si( fad si} | \t {fad si fad} si4) r |
+    r \t {sib8( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
+    \t {si( fad si} | \t {fad si fad} si4) r |
+    r \t {mib,8\mp( sol mib} \t {sol mib sol)} \t {mib\<( sol mib)} \t {sol( mib sol}
+    mib4~\!) mib2 r4 |
+    r \t {mib8\mp( sol mib} \t {sol mib sol)} \t {mib\(( sol mib)} \t {sol( si sol)\)}
+    \clef tenor \t {si( mib si} | \t {sol\<) mib'( si)} sol'4--\! r \clef bass |
+    r8 \pizz si,,\mp\< mi la mib sol\! | r4 r8 do,\< fa sib\! \clef tenor |
+    r mi-> r4 la-> | R1 \clef bass
 
-    r4 \arco <si,,? fa'>2~<si fa'> <si fa'>4~<si fa'>2 r4 |
-    r <si fa'>2~<si fa'> <si fa'>4~<si fa'>2 r4 |
-    r mib2~mib re4~re r2 |
-    r4 mib2~mib re4~re r2 |
-    r4 <mib sol>2~<mib sol> <re fad>4~<re fad>2 r4 |
+    r4 \arco \ten <si,,? fa'>2~\mp <si fa'> <si fa'>4~-- <si fa'>2 r4 |
+    r <si fa'>2~-- <si fa'> <si fa'>4~-- <si fa'>2 r4 |
+    r \ten mib2~--\mp mib\> re4~--\! re r2 |
+    r4 mib2~-- mib\> re4~\! re r2 |
+    r4 <mib sol>2~--\mf <mib sol> <re fad>4~---> <re fad>2 r4 |
     r4
-    \repeat tremolo 8 {re32 sol}
+    \repeat tremolo 8 {re32\mf sol}
     \repeat tremolo 8 {re sol}
-    \repeat tremolo 4 {red fad} red4 fa2 |
-    la,2.:32~la:~la:~la2 r4 |
-    \pizz <la la'> r2 R2.*4 |
-    \arco sib2.~sib~sib~sib~sib2 r4 |
-    sib2.~sib~sib~sib2 r4 |
-    la2.\fermata
+    \repeat tremolo 4 {red fad} red4 fa2--\f |
+    la,2.:32~ la:~ la:~ la2 r4 |
+    \pizz <la la'>\mp r2 R2.*4 |
+    \arco sib2.~\pp sib~ sib~ sib~ sib2 r4 |
+    sib2.~\pp sib~ sib~ sib2 r4 |
+    la2.\p\fermata
   }
 }
 

@@ -464,47 +464,47 @@ ActeUnSceneTroisBisClarinetteUn = { \ClarinetteBasse
 
 ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
   \relative {
-    r4 r16 lab' lab lab | reb2 |
-    r4 r16 lab lab lab |
-    reb8 lab16 lab reb2 |
-    r4 r8 lab16 lab |
-    reb8 lab16 lab reb8. lab16 |
-    lab lab lab lab r8 reb4 la!16 la|
-    re!8 r r2 |
+    r4 r16 lab'-.\mf( lab-. lab-. | reb2--) |
+    r4 r16 lab-.( lab-. lab-. |
+    reb8-- lab16-. lab-. reb2--) |
+    r4 r8 lab16-.( lab-. |
+    reb8-- lab16-. lab-. reb8.--) lab16-. |
+    lab-.( lab-. lab-. lab-.) r8 reb4-- la!16-.( la-.|
+    re!8->) r r2 |
     R2.*3-\markup "Prenez la Cl. Basse" \ClarinetteBasse
-    fad,8 fa re dod fad, fa sib la dod, re fa, fad |
-    mib2 mib'8 re lad si mi,2 la''8 sold fa mi, |
-    re8 r r4 r2 | R1*3 R2.
+    fad,8\p( fa) re( dod) fad,( fa) sib\(( la) dod,( re) fa,( fad)\) |
+    mib2-- mib'8\(( re) lad( si)\) mi,2-- la''8\(( sold) fa( mi,)\) |
+    re8-- r r4 r2 | R1*3 R2.
 
     %%% Poco meno %%%
 
-    re2.~ re2 r4 |
-    re,2.~re2 r4 |
+    \ten re2.~--\pp re2 r4 |
+    re,2.~-- re2 r4 |
     R2.
-    re2.~ re2 r4 |
+    re2.~-- re2 r4 |
     R2.
-    re2 r4 | \clef treble
-    r8 si''' sib sol fad mib re'2 r4 |
-    r8 si sib sol fad mib re'2 r4 |
-    r8 si sib sol fad mib re'2 r4 |
-    re,4 r2 \clef bass
-    r4 \t {r8 mi dod} \t {sold fa do} |
-    r8 sold la do dod mi | fa,2.~ fa4 r2 |
-    r8 sold la do dod mi | fa,2.~ fa4 r2 |
-    r8 sold la do la sold| dod,2.~dod4 r2|
-    r8 mi fa la sold4 | dod2.~ dod4 r2 |
-    r8 mi,fa sold mi4 | la2.~la~la2 r4 |
-    la2.~la~la4 r2 | R2.*3
-    r2 r8 la''16 mi sib la si, fa' |
-    fad,2.~fad~ fad2 r4 |
-    fad2.~ fad~ fad2 r4 |
-    fa2.~ fa4 r2 r4 dod'2 |
-    fa,2.~fa4 r2 r4 la2 |
-    dod,2.~dod4 r2 r4 la'2 |
-    dod,2.~ dod4 r2 | \clef treble
-    mib''4 sib' si |
-    r8 sib si fad sol re mib sib' si fad sol re |
-    mib sib' si4 \clef bass r8 sib, si4 sib, r |
+    re2-- r4 | \clef treble
+    r8 si'''\mp\<( sib sol fad mib\> re'2\!) r4 |
+    r8 si\<( sib sol fad mib\> re'2\!) r4 |
+    r8 si\p\<( sib sol fad mib\> re'2\!) r4 |
+    re,4-- r2 \clef bass
+    r4 \t {r8 mi\p( dod} \t {sold) fa( do)} |
+    r8 sold\mp( la do dod mi) | \ten fa,2.~-- fa4 r2 |
+    r8 sold( la do dod mi) | fa,2.~-- fa4 r2 |
+    r8 sold( la do) la( sold)| dod,2.~-- dod4 r2|
+    r8 mi\<( fa la sold4\!) | dod2.~--\p dod4 r2 |
+    r8 mi,( fa sold mi4) | la2.~\mp la~ la2 r4 |
+    \ten la2.~\mf la~ la4 r2 | R2.*3
+    r2 r8 \st {la''16\p\>( mi sib fa si, fa'\!)} |
+    fad,2.~-- fad~ fad2 r4 |
+    fad2.~-- fad~ fad2 r4 |
+    fa2.~-- fa4 r2 r4 dod'2-- |
+    fa,2.~-- fa4 r2 r4 la2--\mp\< |
+    dod,2.~-- dod4 r2 r4 la'2--\< |
+    dod,2.~--\! dod4 r2 | \clef treble
+    mib''4\<( sib' si\!) |
+    r8 sib\f( si fad sol re mib) sib'( si fad sol re |
+    mib) sib'\>( si4\!) \clef bass r8 sib,( si4\mp) sib,-- r |
     R2.*15
   }
 }

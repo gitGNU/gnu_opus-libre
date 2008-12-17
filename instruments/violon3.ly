@@ -489,15 +489,15 @@ ActeUnSceneTroisBisViolonTrois = { \ViolonTrois
 ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
   \relative {
     R2*3 R2. R2*2 R2.
-    \pizz <re re'>4 r2
-    R2. \arco si2.~ si4 r2 |
+    \pizz <re re'>4\f r2
+    R2. \arco si2.~\p si4 r2 |
     \pizz <sib sib'>4 r2 R2.
     <mib sol>4 r r2 <mi sold>4 r <fa la> r |
-    <re re'> r r2 R1*3 R2. |
+    <re re'>-> r r2 R1*3 R2. |
 
     %%% Poco meno %%%
     \arco
-    <re sol\harmonic re''>2.:32 ~
+    <re sol\harmonic re''>2.:32 ~\pp
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
@@ -508,25 +508,25 @@ ActeUnSceneTroisTerViolonTrois = { \ViolonTrois
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>: ~
     <re sol\harmonic re''>4
-    \ordin re''2:32~ re2.: ~ re:~ re: ~ re4: ~ si: sib:
+    \ordin re''2:32~\p re2.: ~ re:~ re: ~ re4: ~ si: sib:
     re,2.:32~\CaV re8\CaV r r2 | R2.*13
 
-    r4 <sol,, fad'>2 <sol fad'> <sol fad'>4~<sol fad'>2 r4 |
-    r  <sol fad'>2 <sol fad'> <si! sib'>4~<si sib'>2 r4 |
+    r4 <sol,, fad'>2--\mp <sol fad'>--\< <sol fad'>4~--\! <sol fad'>2 r4 |
+    r  <sol fad'>2--\mp\< <sol fad'>-- <si! sib'>4~--\! <si sib'>2 r4 |
     R2.*3 R1 R2.
-    r4 si?2~ si4 sib2 | R2.
-    r4 \t {sib8 mi sib} \t {mi sib mi} \t {sib mi sib} \t {mi sib mi} sib4 |
-    r  <sib sol'>2~<sib sol'> <re fad>4~<re fad> r2 |
-    r4 <sib sol'>2~<sib sol'> <re fad>4~<re fad> r2 |
-    r4 <sib sol'>2~<sib sol'> <fad'fad>4~ <fad fad>2 r4 |
-    r  \t {sol8 re re} \t {sib sib sol} \t {sib' sol sol}
-    \t {re re sib} \t {si' fad fad} \t {red red si}
-    \t {red' si fad} \t {sol' re sib} |
-    r mib re si sib sol fad' mib re si sib sol |
-    fad' mib re si sib sol fad mib4 sib sol8~ sol2 r4 |
+    r4 si?2~--\mp\>( si4 sib2\!) | R2.
+    r4 \t {sib8\p( mi sib} \t {mi sib mi)} \t {sib( mi sib} \t {mi sib mi} sib4) |
+    r  \ten <sib sol'>2~--\mp <sib sol'>\> <re fad>4~--\! <re fad> r2 |
+    r4 <sib sol'>2~-- <sib sol'>\> <re fad>4~\! <re fad> r2 |
+    r4 <sib sol'>2~--\mp <sib sol'> <fad'fad>4~---> <fad fad>2 r4 |
+    r  \t {sol8\mf\>\(( re) re(} \t {sib) sib( sol)\!\)} \t {sib'\>\(( sol) sol(}
+    \t {re) re( sib)\!\)} \t {si'\>\(( fad) fad(} \t {red) red( si)\!\)}
+    \t {red'\<( si fad)} \t {sol'( re sib)\!} |
+    r mib\f( re) si( sib) sol fad'-- mib( re) si( sib) sol |
+    fad'-- mib( re) si( sib) sol( fad) mib4--\>( sib--) sol8~--\mp sol2 r4 |
     R2.*4
 
-    la'4 sol fa mi fa8 mi fa sol la4 mi2~ mi2.~ mi2 r4 |
+    la'4\p( sol fa mi) fa8( mi fa sol) la4( mi2~) mi2.~ mi2 r4 |
     R2.*5
   }
 }

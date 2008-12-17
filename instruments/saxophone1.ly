@@ -316,22 +316,22 @@ ActeUnSceneTroisBisSaxophoneUn = { \SaxAltoUn
 
 ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
   \relative {
-    R2*3 R2. R2*2 R2.*7 R1*6 R2.*19
-    r4 sib2 | sib si4~ si si r |
-    r  sib2 | sib si4~ si si r |
-    r  re2 | re mib4~mib mib r |
-    r  re2 | re mib4~mib mib r |
-    r  si2   si si4~ si2 r4 |
-    r  si2 mib sol4~ sol r2 |
+    R2*3-\markup "Mettez la sourdine" R2. R2*2 R2.*7 R1*6 R2.*19
+    r4 sib2--\pp | sib-- si4~-- si\> si\! r |
+    r  sib2-- | sib-- si4~-- si\> si--\! r |
+    r  re2--\p | re-- mib4~-- mib\> mib--\! r |
+    r  re2-- | re-- mib4~-- mib\> mib--\! r |
+    r  si2-- si-- si4~-- si2 r4 |
+    r  si2--\mp\< mib-- sol4~--\mf sol r2 |
     R2.*3 R1
-    r4 sib,2 sib sib4~ sib2 r4 |
-    r  sib2  sib sib4~ sib2 r4 |
-    r  sib2  sib si4~ si r2 |
-    r4 sib2  sib si4~ si r2 |
-    r4 sib2  sib si4~ si si r  |
-    r  sib2 re mib4~ mib re mib|
-    r8 re mib sib si fad sol re' mib sib si fad |
-    sol4 r8 re' mib4 r8 fad,8~ fad4 r |
+    r4 sib,2--\pp sib-- sib4~-- sib2 r4 |
+    r  sib2-- sib sib4~-- sib2 r4 |
+    r  sib2--\p sib--\> si4~--\! si r2 |
+    r4 sib2-- sib--\> si4~\! si r2 |
+    r4 sib2--\mp sib--\< si4~-- si\> si--\! r  |
+    r  sib2-- re-- mib4~-- mib re\<( mib\!)|
+    r8 re\mf( mib sib si fad sol) re'( mib sib si fad |
+    sol4) r8 re'\>( mib4\!) r8 fad,8~--\p fad4 r |
     R2.*15
   }
 }
