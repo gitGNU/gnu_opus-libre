@@ -117,6 +117,11 @@ parlato =
   $notes
 \revert NoteHead #'style #})
 
+longHairpins =
+#(define-music-function (parser location music) (ly:music?)
+#{ \override Hairpin #'to-barline = ##f
+$music \revert Hairpin #'to-barline #})
+
 slap =
 #(define-music-function (parser location music) (ly:music?)
 #{\override NoteHead #'stencil = #ly:text-interface::print

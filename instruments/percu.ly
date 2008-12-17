@@ -926,8 +926,8 @@ ActeUnSceneTroisTerPercus = <<
       \ottava #0
       \t {mi,8-. sold,-. \clef bass do,,-.\!)}
       r8 <dod re'>--\mp r <red mi'>-- \clef treble
-      \tt {r16 <sold sol'!>\< la sold' re} |
-      \pl re,4->\! re''-> r2 |
+      \tt {r16 <sold sol'!>\< la sold' re\!} |
+      \pl re,4-> re''-> r2 |
 
       %%% Poco meno %%%
 
@@ -946,7 +946,7 @@ ActeUnSceneTroisTerPercus = <<
       lad32-> la, dod'-> do, lab''16-> <sib, sib'>-> |
       <sol sol'>4->\f \ottava #0 r8 <do,, si'>16\>( <la' sold'>)
       r <sib, la'>( <lab' sol'>8) \clef bass
-      <si,, lad'>16( <solb' fa'>8). |
+      <si,, lad'>16( <solb' fa'>8.) |
       fad,2.:32~\pp fad4 r2 | r8 si( mi fa sold la |
       fad,2.:32~) fad4 r2 | r8 sib( si red mi sol)|
       fa,!2.:32~ fa4  r2 \clef treble |

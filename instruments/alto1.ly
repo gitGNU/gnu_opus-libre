@@ -546,15 +546,17 @@ ActeUnSceneTroisTerAltoUn = { \AltoUn
     sib-> r16 la r8 do si lad-> si-> r16 lad |
     r8 dod-> do\< re dod mib |
     <re, re'>4->\! r2 R2.
-    \arco <re, sol\harmonic re''>2. ~\p
-    <re sol\harmonic re''> ~
-    <re sol\harmonic re''> ~
-    <re sol\harmonic re''> ~
-    <re sol\harmonic re''>4 r2 R2.
-    r4 re'4.~\pp\< re8\>\glissando
-    re'2.~\! re~ re8 r re,4.~\pp\< re8\>\glissando re'2.~\! re8 r re,4.~\p\<\upbow re8\glissando |
-    re'4\mp( si sib\>) <re, re'>\! r2 \clef alto |
-    r4 \ten re,,2~\p re r4 |
+    \longHairpins {
+      \arco <re, sol\harmonic re''>2. ~\p
+      <re sol\harmonic re''> ~
+      <re sol\harmonic re''> ~
+      <re sol\harmonic re''> ~
+      <re sol\harmonic re''>4 r2 R2.
+      r4 re'4.~\pp\< re8\>\glissando
+      re'2.~\! re~ re8 r re,4.~\pp\< re8\>\glissando re'2.~\! re8 r re,4.~\p\<\upbow re8\glissando |
+      re'4\mp( si sib\>) <re, re'>\! r2 \clef alto |
+      r4 \ten re,,2~\p re r4 |
+    }
 
     r  \t {sib'8\pp( sol sib} \t {sol sib sol)} \t {sib( sol sib} \t {sol sib sol)}
     \t {si( fad si} \t {fad si fad} si4) r |

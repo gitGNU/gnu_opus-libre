@@ -401,22 +401,24 @@ ActeUnSceneTroisTerFluteUn = { \Piccolo
   \relative {
     R2*3 R2. R2*2 R2.*7 R1*2
     \st {re'16\p( re' sol-> re) lab'->( mi red) sol->( fad fa lab-> mi) sol->( re) lab'->( mi |
-    red) sol->( fad fa) lad->( si la-> mi) lab->( mib) la->( fa mi lab) sol->( solb |
+    red) sol->( fad fa) lad->( si la-> mi) lab->( mib) la->( fa mi) lab->( sol solb |
     la->) r lab->( mib) la->( fa mi) lab->( sol fad) si->( do sib-> fa) la->( mi) |
     sib'->( solb fa) la->( lab sol) do->( reb si->) r sib->( fa) si->( sol fad) sib->( |
     la sold) dod->( re do-> lab) re->( mib dod-> la) red->( mi |
 
     %%% Poco meno %%%
     re8->)} r r2 R2.*5-\markup { Prenez la \concat { G \super de } Flûte } \FluteUn
-    r8 si,\p\<( sib sol fad mib\> re'2.\!) | R2.
-    \t {r8 fa\pp\<( mi} \t {dod4 do la\>} | fa'2\!) r4
-    \t {r8 fa\pp( mi} \t {dod do la~} \t {la) do( dod)} |
-    \t {sold'( fa mi~} \t {mi) dod( do)} \t {la( fa' sold~} |
-    \t {sold) dod,( do)} \t {la( fa' sold~} \t {sold16) r dod,8( do)} |
-    \t {la\<( fa' sold)} \t {do,( fa sold)} \t {mi( fa sold)} |
-    la32\mp\>( sold fa8.~ \t {fa8) mi( dod~ } \t {dod) sold( fa~ } |
-    \t {fa\!) mi( dod~ } dod4) r |
-    do,!2-- r4 |
+    \longHairpins {
+      r8 si,\p\<( sib sol fad mib\> re'2.\!) | R2.
+      \t {r8 fa\pp\<( mi} \t {dod4 do la\>} | fa'2\!) r4
+      \t {r8 fa\pp( mi} \t {dod do la~} \t {la) do( dod)} |
+      \t {sold'( fa mi~} \t {mi) dod( do)} \t {la( fa' sold~} |
+      \t {sold) dod,( do)} \t {la( fa' sold~} \t {sold16) r dod,8( do)} |
+      \t {la\<( fa' sold)} \t {do,( fa sold)} \t {mi( fa sold)} |
+      la32\mp\>( sold fa8.~ \t {fa8) mi( dod~ } \t {dod) sold( fa~ } |
+      \t {fa\!) mi( dod~ } dod4) r |
+      do,!2-- r4 |
+    }
 
     r \ten sol'2~--\p\< sol\mp\> fad4~--\! fad2 r4 |
     r sol2~--\< sol\> fad4~--\! fad2 r4 |

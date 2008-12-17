@@ -327,7 +327,7 @@ ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
     r sol'2--\p sol--\> fad4~--\! fad r2|
     r4 sol2-- sol--\> fad4~\! fad r2 |
     r4 mib2--\mp mib--\< re4~--\! re\> re--\! r |
-    r  re'2-- sol-- fad4~-- fad sol\>( fad\!) |
+    r  re'2-- sol-- fad4~-- fad sol\<( fad\!) |
     r8 fad\mf( sol re mib sib si) fad'( sol re mib sib |
     si4) r8 fad'\>( sol,4\!) | r8 re~--\p re4 r | R2.*15
   }

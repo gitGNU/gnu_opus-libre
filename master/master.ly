@@ -61,19 +61,19 @@
   \header {
     piece = \SceneTroisTitre
   }
-} %}
+} %
 \score {
   \ActeUnSceneTroisBis
   \header {
     piece = \Separateur
   }
-} %{
+} %}
 \score {
   \ActeUnSceneTroisTer
   \header {
     piece = \Separateur
   }
-} %
+} %{
 \score {
   \InterludeTrois
   \header {

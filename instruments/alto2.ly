@@ -543,12 +543,14 @@ ActeUnSceneTroisTerAltoDeux = { \AltoDeux
     sib-> r16 la r8 do si lad-> si-> r16 lad |
     r8 dod-> do\< re dod mib |
     <re, re'>4->\! r2 R2.
-    \arco re2. ~\p\CaV
-    re~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re4\CaV r2
-    re2.~\p\CaV re~\CaV re8\CaV r \ordin re4.~\pp\< re8/>\glissando
-    re'2.~\! re8 r re,4.~\p\< re8\>\glissando
-    <re re'>4\! r2 \clef alto |
-    r4 \ten re,,2~\p re r4 |
+    \longHairpins {
+      \arco re2. ~\p\CaV
+      re~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re~\CaV re4\CaV r2
+      re2.~\p\CaV re~\CaV re8\CaV r \ordin re4.~\pp\< re8\>\glissando
+      re'2.~\! re8 r re,4.~\p\< re8\>\glissando
+      <re re'>4\! r2 \clef alto |
+      r4 \ten re,,2~\p re r4 |
+    }
 
     r  \t {sol8\pp( sib sol} \t {sib sol sib)} \t {sol( sib sol} \t {sib sol sib)}
     \t {fad( si fad} \t {si fad si} fad4) r |

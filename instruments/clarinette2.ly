@@ -420,11 +420,12 @@ ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux
     la4\mp\>( sol fa \ten mi2.~\!) mi2 r4 |
     R2. mib2.~\p mib2 r4 R2.
     re2.~--\pp re2 r4 |
-    r8 si'''\p\<( sib sol fad mib\> re'2\!) r4 |
-    r8 si\p\<( sib fad re si\> sib'2\!) r4 |
-    r8 sol\mp\<( fad re si sib\> | re4\!) r2 |
-    \t {r8 do\p( la~} \t {la) sold( fa} \t {do\>) la( mi~)} mi2\! r4 |
-
+    \longHairpins {
+      r8 si'''\p\<( sib sol fad mib\> re'2\!) r4 |
+      r8 si\p\<( sib fad re si\> sib'2\!) r4 |
+      r8 sol\mp\<( fad re si sib\> | re4\!) r2 |
+      \t {r8 do\p( la~} \t {la) sold( fa} \t {do\>) la( mi~)} mi2\! r4 |
+    }
     r4 sol2--\p sol-- fad4~-- fad fad-- r |
     r  sol2-- sol-- fad4~-- fad\> fad--\! r |
     r  sib2--\mp sib-- si4~--  si\>  si--\!  r |

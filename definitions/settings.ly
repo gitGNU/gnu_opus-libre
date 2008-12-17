@@ -58,6 +58,7 @@ includeLayout = \layout {
 %% Notation Rules -------------------------------------------------%
   \context {
     \Score
+    \override TrillPitchAccidental #'avoid-slur = #'inside
     \override TimeSignature #'style = #'()
     \override SystemStartBracket #'collapse-height = #1
     %\override SystemStartBrace #'collapse-height = #1
@@ -219,6 +220,7 @@ includePartsLayout = \layout {
 %% Notation Rules -------------------------------------------------%
   \context {
     \Score
+    \override TrillPitchAccidental #'avoid-slur = #'inside
     \override TimeSignature #'style = #'()
     \override SystemStartBracket #'collapse-height = #1
     %\override SystemStartBrace #'collapse-height = #1

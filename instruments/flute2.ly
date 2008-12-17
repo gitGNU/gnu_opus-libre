@@ -379,14 +379,16 @@ ActeUnSceneTroisTerFluteDeux = { \FluteDeux
 
     %%% Poco meno %%%
     \ten re''2.~\pp re~ re2 r4 |
-    r8 si,\mp\<( sib sol fad mib\> re'2.\!) r8 si\<( sib sol fad mib\> re'2.\!) R2.*2
-    \t {r8 dod'\pp\<( do} \t {la4 sold fa\>} | dod'2\!) r4 |
-    \t {r8 dod\pp( do } \t {la sold fa~} \t {fa) sold( la)} |
-    \t {mi'( dod do~} \t {do) la( sold)} \t {fa( dod' mi~} |
-    \t {mi) la,( sold)} \t {fa( dod' mi~} \t {mi16) r la,8( sold)} |
-    \t {fa\<( dod' mi)} \t {sold,( dod mi)} \t {do( dod mi)} |
-    fa32\mp\>( mi dod8.~ \t {dod8) do( la~} \t {la) mi( dod~} |
-    \t {dod\!) do( la)} \t {r sold( fa~ } \t {fa) mi( dod)} | do2-- r4 |
+    \longHairpins {
+      r8 si,\mp\<( sib sol fad mib\> re'2.\!) r8 si\<( sib sol fad mib\> re'2.\!) R2.*2
+      \t {r8 dod'\pp\<( do} \t {la4 sold fa\>} | dod'2\!) r4 |
+      \t {r8 dod\pp( do } \t {la sold fa~} \t {fa) sold( la)} |
+      \t {mi'( dod do~} \t {do) la( sold)} \t {fa( dod' mi~} |
+      \t {mi) la,( sold)} \t {fa( dod' mi~} \t {mi16) r la,8( sold)} |
+      \t {fa\<( dod' mi)} \t {sold,( dod mi)} \t {do( dod mi)} |
+      fa32\mp\>( mi dod8.~ \t {dod8) do( la~} \t {la) mi( dod~} |
+      \t {dod\!) do( la)} \t {r sold( fa~ } \t {fa) mi( dod)} | do2-- r4 |
+    }
 
     r \ten mib2~--\p\< mib\mp\> re4~--\! re2 r4 |
     r mib2~--\< mib\> re4~--\! re2 r4 |

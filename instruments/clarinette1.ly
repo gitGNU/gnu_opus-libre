@@ -477,16 +477,17 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
     re8-- r r4 r2 | R1*3 R2.
 
     %%% Poco meno %%%
-
-    \ten re2.~--\pp re2 r4 |
-    re,2.~-- re2 r4 |
-    R2.
-    re2.~-- re2 r4 |
-    R2.
-    re2-- r4 | \clef treble
-    r8 si'''\mp\<( sib sol fad mib\> re'2\!) r4 |
-    r8 si\<( sib sol fad mib\> re'2\!) r4 |
-    r8 si\p\<( sib sol fad mib\> re'2\!) r4 |
+    \longHairpins {
+      \ten re2.~--\pp re2 r4 |
+      re,2.~-- re2 r4 |
+      R2.
+      re2.~-- re2 r4 |
+      R2.
+      re2-- r4 | \clef treble
+      r8 si'''\mp\<( sib sol fad mib\> re'2\!) r4 |
+      r8 si\<( sib sol fad mib\> re'2\!) r4 |
+      r8 si\p\<( sib sol fad mib\> re'2\!) r4 |
+    }
     re,4-- r2 \clef bass
     r4 \t {r8 mi\p( dod} \t {sold) fa( do)} |
     r8 sold\mp( la do dod mi) | \ten fa,2.~-- fa4 r2 |
@@ -500,7 +501,7 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
     fad2.~-- fad~ fad2 r4 |
     fa2.~-- fa4 r2 r4 dod'2-- |
     fa,2.~-- fa4 r2 r4 la2--\mp\< |
-    dod,2.~-- dod4 r2 r4 la'2--\< |
+    dod,2.~--\! dod4 r2 r4 la'2--\< |
     dod,2.~--\! dod4 r2 | \clef treble
     mib''4\<( sib' si\!) |
     r8 sib\f( si fad sol re mib) sib'( si fad sol re |
