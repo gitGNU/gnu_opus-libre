@@ -45,31 +45,20 @@ parallel=
 \context Staff = "mg"   $gauche
 >> #})
 
-md = { \change Staff = "md" }
+%%% Piano stuff (Issue #442 workaround)
 
-mg = { \change Staff = "mg" }
+#(define (event-filter event)
+    (let ((n (ly:music-property event 'name)))
+    (not
+      (or     ;; add here event name you do NOT want
+       (eq? n 'ContextSpeccedMusic)
+       (eq? n 'ContextChange)
+       (eq? n 'SimultaneousMusic))
+  )))
 
-PianoDeuxMains=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ \new PianoStaff << %%%FIXME: get rid of this option.
-\new Staff = "md" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-{ \clef treble $droite }
-\new Staff = "mg" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-{ \clef bass $gauche }
->> #})
-
-droite = { \change Staff = "percuDroite" }
-
-gauche = { \change Staff = "percuGauche" }
-
-PercuDeuxMains=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ << %%%FIXME: I /definitely/ should get rid of this option.
-\new Staff = "percuDroite" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-{ \clef treble $droite }
-\new Staff = "percuGauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-{ \clef bass $gauche }
->> #})
+makeGhost =
+#(define-music-function (parser location music) (ly:music?)
+  (context-spec-music (music-filter event-filter music) 'PseudoVoice))
 
 showAnyway =
 #(define-music-function (parser location music) (ly:music?)
@@ -80,6 +69,41 @@ showAnyway =
   lyric-interface percent-repeat-item-interface
   percent-repeat-interface stanza-number-interface)
 #})
+
+md = { \change Staff = "md" }
+
+mg = { \change Staff = "mg" }
+
+PianoDeuxMains=
+#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
+#{
+  \new PianoStaff <<
+    \new Staff = "md" \with { \remove Accidental_engraver }
+    <<
+     \new Voice \with { \consists Accidental_engraver } { \clef treble $droite }
+     %\new Voice { \makeGhost $gauche }
+    >>
+    \new Staff = "mg" \with { \remove Accidental_engraver }
+    <<
+     \new Voice \with { \consists Accidental_engraver } { \clef bass $gauche }
+     %\new Voice { \makeGhost $droite }
+    >>
+  >>
+#})
+
+droite = { \change Staff = "percuDroite" }
+
+gauche = { \change Staff = "percuGauche" }
+
+PercuDeuxMains=
+#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
+#{ << %%%FIXME: I /definitely/ should get rid of this option.
+\new Staff = "percuDroite"
+{ \clef treble $droite }
+\new Staff = "percuGauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
+{ \clef bass $gauche }
+>> #})
+
 
 %% Music formatting -----------------------------------------------%
 
