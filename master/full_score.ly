@@ -10,8 +10,8 @@
 
 \include "./instruments/flute1.ly"
 \include "./instruments/flute2.ly"
-\include "./instruments/clarinette.ly"
-\include "./instruments/clarinetteB.ly"
+\include "./instruments/clarinette1.ly"
+\include "./instruments/clarinette2.ly"
 \include "./instruments/saxophone1.ly"
 \include "./instruments/saxophone2.ly"
 \include "./instruments/percu.ly"

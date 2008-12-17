@@ -32,6 +32,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% Part selection %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include "./master/common.ly"
-%\include "./master/titling.ly"
+\include "./master/titling.ly"
 \include "./master/instruments.ly"
 
