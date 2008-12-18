@@ -47,18 +47,22 @@ parallel=
 
 %%% Piano stuff (Issue #442 workaround)
 
+#(define (remove music)
+"Sends the whole thing to Devnull whenever possible"
+ (context-spec-music music 'Devnull))
+
 #(define (event-filter event)
-    (let ((n (ly:music-property event 'name)))
-    (not
-      (or     ;; add here event name you do NOT want
-       (eq? n 'ContextSpeccedMusic)
-       (eq? n 'ContextChange)
-       (eq? n 'SimultaneousMusic))
-  )))
+ (let ((n (ly:music-property event 'name)))
+  (if (or
+    (eq? n 'ContextSpeccedMusic) ; to avoid clefs and ottavas
+    (eq? n 'ContextChange)) ; cross-staff voices are supported
+    (music-map remove event))
+  (if (eq? n 'SimultaneousMusic) ; we don't want a new Voice to be created
+    (ly:music-set-property! event 'name 'NoteEvent))))
 
 makeGhost =
 #(define-music-function (parser location music) (ly:music?)
-  (context-spec-music (music-filter event-filter music) 'PseudoVoice))
+ (context-spec-music (music-filter event-filter music) 'PseudoVoice))
 
 showAnyway =
 #(define-music-function (parser location music) (ly:music?)
@@ -81,12 +85,12 @@ PianoDeuxMains=
     \new Staff = "md" \with { \remove Accidental_engraver }
     <<
      \new Voice \with { \consists Accidental_engraver } { \clef treble $droite }
-     %\new Voice { \makeGhost $gauche }
+     \new Voice { \makeGhost $gauche }
     >>
     \new Staff = "mg" \with { \remove Accidental_engraver }
     <<
      \new Voice \with { \consists Accidental_engraver } { \clef bass $gauche }
-     %\new Voice { \makeGhost $droite }
+     \new Voice { \makeGhost $droite }
     >>
   >>
 #})
@@ -97,12 +101,20 @@ gauche = { \change Staff = "percuGauche" }
 
 PercuDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ << %%%FIXME: I /definitely/ should get rid of this option.
-\new Staff = "percuDroite"
-{ \clef treble $droite }
-\new Staff = "percuGauche" \with { \override VerticalAxisGroup #'remove-empty = ##f }
-{ \clef bass $gauche }
->> #})
+#{
+  \new PianoStaff <<
+    \new Staff = "percuDroite" \with { \remove Accidental_engraver }
+    <<
+     \new Voice \with { \consists Accidental_engraver } { \clef treble $droite }
+     \new Voice { \makeGhost $gauche }
+    >>
+    \new Staff = "percuGauche" \with { \remove Accidental_engraver }
+    <<
+     \new Voice \with { \consists Accidental_engraver } { \clef bass $gauche }
+     \new Voice { \makeGhost $droite }
+    >>
+  >>
+#})
 
 
 %% Music formatting -----------------------------------------------%
