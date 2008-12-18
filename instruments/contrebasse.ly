@@ -423,42 +423,42 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     R1 R2. R1*2 R1. R1*2 R1. R1*2
 
     %%% Agitato %%%
-    \pizz la,4 r2 | la,4 r2 | do4 r2 | do4 r2 |
-    R2. la'2~la4\glissando do2. | mi4 r
-    sold,,~\upbow | sold dod si | re r2 |
-    re4 r r16 la' la la | re,4 r2 | re4 r r16 la la la |
-    re4 r8 re' fad, si |
-    mib,4 r8 reb4 sol8 | do,4 r8 fa la, re |
-    fad,4 r8 la4 mib'8 | lab4 r8 la reb, solb |
-    sib,4 r8 sib4 sib8 | mi4 r8 mi, \t {mi mi mi} |
-    mi4 mi mi | mi4 r2 |
-    mi'4 r8 mi, \t {mi mi mi} | mi4 r2 |
-    mi'4 mi sib8 mi~ | mi2 re4~ | re fa2 |
-    dod2~dod8 r r4 | R2. R1 R2. R2 R2. R2 R2. R2 R2.
+    \pizz la,4\mp r2 | la,4 r2 | do4 r2 | do4 r2 |
+    R2. \arco la'2~\mf\< la4\glissando do2.\! | mi4 r
+    sold,,~\f\upbow | sold dod-- si-- | re-- r2 |
+    re4-- r r16 la'\upbow\< la la | re,4--\! r2 | re4-- r r16 la\< la la |
+    re4-- r8 re'-.\mp\upbow fad,-. si-. |
+    mib,4-- r8 reb4--\downbow sol8-. | do,4-- r8 fa-.\upbow la,-. re-. |
+    fad,4-- r8 la4--\downbow mib'8-. | lab4 r8 la-. reb,-. solb-. |
+    sib,4-- r8 sib4--\downbow\< sib8-- | mi4->\! r8 mi,-. \t {mi\< mi mi} |
+    mi4--\f\downbow mi\downbow mi | mi4---> r2 |
+    mi'4-> r8 mi,-. \t {mi\< mi mi} | mi4->\! r2 |
+    mi'4--\downbow mi--\downbow sib8-. mi~-> | mi2 re4~---> | re fa2---> |
+    dod2~\sfp dod8 r r4 | R2. R1 R2. R2 R2. R2 R2. R2 R2.
 
     %%% Placando assai %%%
-    dod2. dod4 sol2. r4 | dod2. dod4 sol2. r4 |
-    dod2 re mib mi2.~mi2. r4 |
+    dod2.--\p(\upbow dod4--) sol2.-- r4 | dod2.--(\upbow dod4--) sol2.-- r4 |
+    dod2\<(\upbow re mib) \ten mi2.~\p mi2. r4 |
 
     %%% Andante a piacere %%%
-    \pizz fa,4 r r2 r reb'4 r |
+    \pizz fa,4\mp r r2 r reb'4 r |
     fa, r r2 r reb'4 r |
-    \arco fa,1~ fa2 reb fa1~ fa2 reb |
-    sol2. r4 r8 dod4 sol dod8 |
-    sol2. r4 r8 dod4 sol sol8 |
-    dod8 r r4 r2 |
+    \arco \ten fa,1~\mp fa2 reb fa1~ fa2 reb |
+    sol2.\mf r4 r8 dod4--\upbow sol-- dod8-. |
+    sol2.---> r4 r8 dod4--\upbow sol-- sol8-. |
+    dod8\pp r r4 r2 |
     sol1~sol~sol~sol~sol~sol2. r4 |
     R2*3 R2.*6
 
     %%% A tempo %%%
-    do4 r8 fad,4 do' fad,8 |
-    do'4 r8 fad,4 do' fad,8 |
-    do'4 do r8 fad, r4 |
+    do4--->\f r8 fad,4-> do'-> fad,8-. |
+    do'4---> r8 fad,4-> do'-> fad,8-. |
+    do'4-> do-> r8 fad,-.-> r4 |
     R1
-    \pizz la16 fad' sold8 dod,16 sib do8 fa16 re mi,8 |
-    la4 r4 r2 | r4 la4 sol'8 re dod4 si8 fad fa4 mib'8 sib |
-    la4 r2 | r16 re,8. r4 r2 |
-    R2. \arco sol2~sol8 sol \t {sol sol sol} | sol2 r8 dod4. |
+    \pizz la16\mp fad' sold8 dod,16 sib do8 fa16 re mi,8 |
+    la4-> r4 r2 | r4 la4\mf sol'8 re dod4 si8 fad fa4 mib'8 sib |
+    la4-> r2 | r16 re,8.-> r4 r2 |
+    R2. \arco sol2~--->( sol8 sol--) \t {sol-> sol-> sol->} | sol2 r8 dod4. |
     sol2 r4 sol sol sol fa2 fa4 fa~ \t {fa8 fa4~} \t {fa fa8~} fa4 |
     r fa~fa8 mib' \t {mib mib fad} |
 

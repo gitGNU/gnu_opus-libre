@@ -155,7 +155,7 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     do8\<( fad la do) mi( fad si do) fad\>( do si fad) la,( mi) |
     do4\<( fa8 solb) sib( do mib solb) lab\>( do solb mib solb,4) |
     solb8\<( sib do mib) solb( lab do reb) solb( reb) lab( mib) do( sib) |
-    do,8--\ppsubito( fa16 la mib'4) la,8-- \t {mib'16( si' fad')} fad4 |
+    do,8--(\ppsubito fa16 la mib'4) la,8-- \t {mib'16( si' fad')} fad4 |
     do,,16( fa la mib') la,8-- \t {mib'16( si' fad')} fad8 r |
     \simile la,, \t {sol'16 do fad} fad4 la,,8 mi'16 sol do4 |
     mi,8 \t {sol16 do fad} fad4 la,,16 mi' \t {sol do fad} |
@@ -614,58 +614,58 @@ InterludeTroisAltoDeux = { \AltoDeux
 ActeUnSceneQuatreAltoDeux = { \AltoDeux
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
-    r2 r16 do sib la sib4 sold la8 la r4 R2-\fermataMarkup
+    r2 r16 do\< sib la sib4--\mf sold-- la8-. la-. r4 R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
 
     %%% Agitato %%%
-    re,2.:32 sol: sol8 r do, sol' re'sol, |
-    do, r r2 r2 r16 si' si si si2~si4\glissando mib2. re4 r2 |
-    re,16 mi sol la sib la sib do mib do mib fa |
-    re4. re,8 \t {re re re} re4 re re |
-    re4. re8 \t {re re re} re4 re re |
-    re8 re re re re re |
-    re2.:32 mi?: re: |
-    re8 re re re re re |
-    re r re16 mi re mi sol la sol la |
-    re8 r r mi, \t {mi mi mi} mi mi mi mi mi mi |
-    r sib'4 mi, sib'8 | mi, mi mi mi \t {mi mi mi} |
-    r sib'4 mi, sib'8 | mi4 mi sib |
-    re,16 mi sold la re4 mi,16 la re mi sold4 la,16 re mi sold la4 |
-    re8 re,,8   re2.:8|
-    re4 re re | re2.:8 r4 |
+    re,2.:32\fpp sol: sol8 r do,--\mf sol'-- re'-- sol,-- |
+    do,-.-> r r2 r2 r16 si'\< si si si2~--\mf\< si4\glissando mib2.\! re4-- r2 |
+    re,16\upbow\p( mi sol la) sib( la sib do) mib\<( do mib fa) |
+    re4.--->\f re,8-. \t {re re re} re4-- re-- re-- |
+    re4.---> re8-. \t {re re re} re4-- re-- re-- |
+    re8\< re re re re re |
+    re2.:32\psubito mi?: re: |
+    re8\< re re re re re |
+    re->\! r re16( mi re mi) sol( la sol la) |
+    re8->\f r r mi,-. \t {mi-> mi mi} mi-> mi-- mi-> mi-- mi-> mi-- |
+    r sib'4--\upbow mi,-- sib'8-. | mi,-> mi-- mi-> mi-- \t {mi->\< mi mi} |
+    r\! sib'4--\upbow mi,-- sib'8-. | mi4--\downbow mi--\downbow sib-- |
+    re,16->\<( mi sold la) re4->\! mi,16->\<( la re mi) sold4->\! la,16->\<( re mi sold) la4->\! |
+    re8-.-> re,,8\mp  \ind #"leggiero" re2.:8|
+    \dwnb {re4 re re | re2.:8 r4 |
     re4 re re | re2:8 |
     re4 re re | re2:8 |
-    re4 re re | re2:8 |
-    re2 re4 |
+    re4 re re | re2:8} |
+    re2\upbow\> re4--\! |
 
     %%% Placando assai %%%
-    sol2. dod,4 sol'2. r4 |
-    sol2. dod,4 sol'2. r4 |
-    dod,2 re mib mi2.~mi r4 |
-    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mi mi mi} |
-    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mi mi mi} |
+    sol2.--\p(\upbow dod,4--) sol'2.-- r4 |
+    sol2.--(\upbow dod,4--) sol'2.-- r4 |
+    dod,2\upbow\<( re mib) \ten mi2.~--\p mi r4 |
+    \t {r mib--\mp( mib--} \t {mib-- mib-- mib--)} \t {mib--( mib-- mib--)} \t {mi--( mi-- mi--)} |
+    \t {r mib--\upbow( mib--} \t {mib-- mib-- mib--)} \t {mib--( mib-- mib--)} \t {mi--( mi-- mi--)} |
+    \t {r \simile mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
     \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
-    \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
-    \t {r do do} \t {do do do} \t {re re re} mib8 mib |
-    \t {r4 <fa si> <fa si>} \t {<fa si><fa si><fa si>}
-    \t {<fa si><fa si><fa si>} <fa dod'>8 <fa dod'> |
-    R1*4 r2 lad~lad4 lad sold2 lad2. r4 | R2*3 R2.*2
+    \t {r do--\mf do--} \t {do-- do-- do--} \t {re--\< re-- re--} mib8-- mib-- |
+    \t {r4 <fa si>--\f <fa si>--} \t {<fa si>-- <fa si>-- <fa si>--}
+    \t {<fa si>\< <fa si> <fa si>} <fa dod'>8 <fa dod'>\! |
+    R1*4 r2 lad~\p lad4 lad\< sold2\>( lad2.\!) r4 | R2*3 R2.*2
 
-    \pizz do,4 r mib mi r2 fa4 r2 fad4 r2 |
+    \pizz do,4\mp r mib\< mi\! r2 fa4 r2 fad4 r2 |
 
     %%% A tempo %%%
     \arco
-    <mib la>2 <mib la>4 <mib la> <sold si> <sold si>2 <sold si>4
-    <si re><si re><si re> r |
-    \repeat tremolo 16 {la32 sib}
+    <mib la>2--->\f <mib la>4-- <mib la>-- <sold si>-- <sold si>2---> <sold si>4--
+    <si re>-> <si re>-> <si re>-> r |
+    \repeat tremolo 16 {la32\fp sib}
     \repeat tremolo 12 {la sib}
     \repeat tremolo 16 {la sib}
     \repeat tremolo 12 {la sib}
     la8 r r4 r2 |
-    \repeat tremolo 12 {la32 si}
+    \repeat tremolo 12 {la32\pp si}
     \repeat tremolo 16 {la si}
-    la8 r16 re16:32~ re8:32 mi8:32~ mi16:32 sol8.:32 |
-    <mi sib'>2 <mi sib'>4 <mi sib'> <mi sib'>4. <mi sib'>8~ <mi sib'>4 r |
+    la8 r16 re16:32~\mp\< re8:32 mi8:32~ mi16:32 sol8.:32 |
+    <mi sib'>2--->\f( <mi sib'>4--) <mi sib'>-- <mi sib'>4. <mi sib'>8~ <mi sib'>4 r |
     mi2 r4 mi2 r4 <si sold'>2 <si sold'>4 |
     sold'8 si, si sold' sold si, sold' si, |
     sold' si, si sold' sol si, sol' si,|

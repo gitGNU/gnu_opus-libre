@@ -536,52 +536,52 @@ InterludeTroisVioloncelleDeux = { \VioloncelleDeux
 ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2
-    R2. sol4 fa mi8 la, r4 R2-\fermataMarkup
+    R2. sol4--\mf fa-- mi8-. la,-. r4 R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
 
     %%% Agitato %%%
-    r4 la8 re sol re | la r r2 |
-    <do,sol'>2.:32 <do sol'>8 r r2 | r4 sib''8 fa4 fad8 |
-    re2~re4\glissando fa2. mi2.:32 la8 r r4 mib16 do sol mi |
-    re4 r2 | re'8 si' mi16 mi, mi mi la8 la, | re4 r2 |
-    re8 dod' fad16 fad, fad fad si8 la, | re4 r8 re fad, si |
-    mib,4 r8 reb4 sol8 | do4 r8 fa la, re |
-    fad,4 r8 la4 mib'8 | lab4 r8 la reb, solb |
-    sib,4 r8 sib4 sib8 | mi4 r8 mi, \t {mi mi mi} |
-    mi4 mi mi | r8 sib'4 mi sib'8 |
-    lab16 sib lab sib re mib re mib sib re sib re |
+    r4 la8--\mf( re--) sol--( re--) | la-. r r2 |
+    <do,sol'>2.:32\fpp <do sol'>8-.-> r r2 | r4 sib''8\mf fa4 fad8 |
+    re2~\< re4\glissando fa2.\! mi2.:32\pp\< la8-.-> r r4 mib16\<( do) sol( mi) |
+    re4--\f r2 | re'8--\f si'-- mi16-- mi,\< mi mi la8--\! la,-- | re4---> r2 |
+    re8-- dod'-- fad16-- fad,\< fad fad si8--\! la,-- | re4 r8 r-.\mp\upbow fad,-. si-. |
+    mib,4-- r8 reb4--\downbow sol8-. | do4-- r8 fa\upbow la,-. re-. |
+    fad,4-- r8 la4--\downbow mib'8-. | lab4-- r8 la-. reb,-. solb-. |
+    sib,4-- r8 sib4--\downbow\< sib8-- | mi4->\! r8 mi,-. \t {mi\< mi mi} |
+    mi4--\f\downbow mi--\downbow mi--\downbow | r8 sib'4--\<\upbow mi-- sib'8-. |
+    lab16\!( sib lab sib) re( mib re mib) sib( re) sib( re) |
     lab sib lab sib re mib re mib sib8 sib, |
-    mi4 mi sib8 mi~ | mi4 mi, re~ | re fa2 |
-    dod2~dod8 r r4 | R2. dod2. r4 |
-    R2. dod2 R2. dod2 R2.
-    dod'4 sol | dod2 sol4 |
+    mi4--\downbow mi--\downbow sib8-. mi~-> | mi4 mi,-- re~---> | re fa2---> |
+    dod2~\sfp dod8 r r4 | R2. dod2.\downbow r4 |
+    R2. dod2\downbow R2. dod2\downbow R2.
+    dod'4--( sol--) | dod2\upbow\> sol4--\! |
 
     %%% Placando assai %%%
-    dod2. dod4 sol2. r4 | dod2. dod4 sol2. r4 |
-    dod,2 re mib mi2.~mi2. r4 |
+    dod2.--\p(\upbow dod4--) sol2.-- r4 | dod2.--(\upbow dod4--) sol2.-- r4 |
+    dod,2(\upbow re mib) \ten mi2.~--\p mi2. r4 |
 
     %%% Andante a piacere %%%
-    \pizz fa4 r r2 r reb4 r |
+    \pizz fa4\mp r r2 r reb4 r |
     fa r r2 r reb4 r |
-    \arco fa1~ fa2 reb fa1~ fa2 reb |
-    sol2. r4 r8 dod,4 sol' dod,8 |
-    sol'2. r4 r8 dod,4 sol' sol8 |
-    dod,8 r r4 r2 | R1*6 R2*3 R2.*2
+    \arco \ten fa1~\mp fa2 reb fa1~ fa2 reb |
+    sol2.\mf r4 r8 dod,4--\upbow sol'-- dod,8-. |
+    sol'2.---> r4 r8 dod,4--\upbow sol'-- sol8-. |
+    dod,8\sfz r r4 r2 | R1*6 R2*3 R2.*2
 
     %%% Poco a poco piu mosso %%%
-    \pizz sol'4 r sol fad r2 la4 r2 sol4 r2 |
+    \pizz sol'4\mp r sol\< fad\! r2 la4 r2 sol4 r2 |
 
     %%% A tempo %%%
     \arco
-    <do,do'>4 r8 fad4 do' fad,8 |
-    <do do'>4 r8 fad4 do' fad,8 |
-    <do do'>4 <do do'> r8 fad r4 |
+    <do,do'>4--->\f r8 fad4-> do'-> fad,8-. |
+    <do do'>4---> r8 fad4-> do'-> fad,8-. |
+    <do do'>4-> <do do'>-> r8 fad-.-> r4 |
     R1
-    \pizz la8 sold16 red dod8 do'16 sol fa8 mi'16 si |
-    la4 r4 r2 | r4 la8 mi sol4 | dod,8 sold' si4 fa8 dod mib'4 |
-    la,4 r2 | r16 re,8. r4 r2 |
-    r8 r16 \arco dod''~ dod8 red~ red16 fad sib, mib, |
-    sol,2~ sol8 sol \t {sol sol sol} | sol2 r8 dod4. |
+    \pizz la8\mp sold16 red dod8 do'16 sol fa8 mi'16 si |
+    la4-> r4 r2 | r4 la8\mf mi sol4 | dod,8 sold' si4 fa8 dod mib'4 |
+    la,4-> r2 | r16 re,8.-> r4 r2 |
+    r8 r16 \arco dod''~\f\<( dod8 red~ red16) fad-.-> sib,-.-> mib,-.-> |
+    sol,2~--->\!( sol8 sol--) \t {sol-> sol-> sol->} | sol2 r8 dod4. |
     <re,sol>2 r4 | sol4 sol sol | fa2 fa4 |
     fa~ \t {fa8 fa4~} \t {fa4 fa8~} fa4 |
     r fa~fa8 mib \t {mib mib fad} |
