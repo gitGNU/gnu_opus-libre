@@ -178,14 +178,14 @@ includeLayout = \layout {
     \remove Mark_engraver
     \accepts GhostVoice
   }
-    \context {
+  \context {
     \name PseudoVoice
     \alias Voice
-    \type "Engraver_group"
-    \consists "Note_heads_engraver"
+    \type Engraver_group
+    \consists Note_heads_engraver
     \consists Pitch_squash_engraver
     squashedPosition = #0
-    \override NoteHead #'stencil = ##f
+    \override NoteHead #'stencil = #empty-stencil
   }
   \context {
     \Staff
@@ -271,14 +271,14 @@ includePartsLayout = \layout {
     \remove Mark_engraver
     \accepts GhostVoice
   }
-    \context {
+  \context {
     \name PseudoVoice
     \alias Voice
-    \type "Engraver_group"
-    \consists "Note_heads_engraver"
+    \type Engraver_group
+    \consists Note_heads_engraver
     \consists Pitch_squash_engraver
     squashedPosition = #0
-    \override NoteHead #'stencil = ##f
+    \override NoteHead #'stencil = #empty-stencil
   }
   \context {
     \Staff
