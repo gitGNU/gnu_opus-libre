@@ -552,21 +552,21 @@ ActeUnSceneTroisTerViolonUn = { \ViolonUn
 InterludeTroisViolonUn = { \ViolonUn
   \relative {
     R1 R2. R1 R2. R1 R2. R1 R2.
-    <dod la'>16 <dod la'>8 <dod la'> <dod la'> <dod la'>
-    <dod la'> <dod la'> <do sold'> <re sib'>16 |
-    <dod la'> <dod la'>8 <dod la'> <dod la'>
-    <do sold'> <lad fad'> <dod la'>16 |
-    <la'fa'> <la fa'>8 <la fa'> <la fa'>
+    <dod la'>16-.\pp <dod la'>8--( <dod la'>-- <dod la'>--) <dod la'>--(
+    <dod la'>-- <dod la'>--) <do sold'>--( <re sib'>16-.) |
+    <dod la'>-. <dod la'>8--( <dod la'>-- <dod la'>--)
+    <do sold'>-- <lad fad'>--( <dod la'>16--) |
+    \simile <la'fa'>\p <la fa'>8 <la fa'> <la fa'>
     <do lab'> <sib solb'> <dod la'>16 |
     <la fa'> <la fa'>8 <la fa'> <la fa'> <la fa'>16 |
-    <si sol'> <si sol'>8 <si sol'> <si sol'>
+    <si sol'>\mf <si sol'>8 <si sol'> <si sol'>
     <si sol'> <la fa'> <re sib'>16 |
     <si sol'> <si sol'>8 <si sol'> <si sol'> <si sol'>16 |
-    <mi do'> <mi do'>8 <mi do'>16 <mi do'> <mi do'>8 <mi do'>16 |
-    <sol mib'> <sol mib'>8 <sol mib'>16 <sol mib'> <sol mib'>8 <sol mib'>16 |
+    <mi do'>\f <mi do'>8 <mi do'>16 <mi do'> <mi do'>8 <mi do'>16 |
+    <sol mib'>\ff <sol mib'>8 <sol mib'>16 <sol mib'> <sol mib'>8 <sol mib'>16 |
     R2*2
-    \tt {sol,16 si sib re dod} fa32 mi lab sol si sib re dod |
-    fa8 r r4 |
+    \tt {sol,16\f\< si sib re dod} fa32( mi) lab( sol) si( sib) re( dod) |
+    fa8\sffz r r4 |
   }
 }
 
