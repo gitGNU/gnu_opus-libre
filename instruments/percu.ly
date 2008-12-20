@@ -989,7 +989,7 @@ ActeUnSceneQuatrePercus = <<
     \relative {
       \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
       R2-\fermataMarkup
-      R1 R2. \t {la'2 la4~} \t {la la2} |
+      R1 R2. \t {\ind #"con Ped." la'2\p la4~} \t {la la2} |
       \t {la la4~} \t {la la2} |
       \t {sol sol4~} \t {sol sol2} \t {sol sol4} |
       \t {fad2 fad4~} \t {fad fad2} |
@@ -997,7 +997,7 @@ ActeUnSceneQuatrePercus = <<
       \t {<si,red fad> <si red fad>4~} \t {<si red fad> <si red fad>2}
       \t {<si red fad> <si red fad>4~} \t {<si red fad> <si red fad>2}
       <si red fad>2 \t {<sol sib mib> <sol sib mib>4~} <sol sib mib>2
-      re4 r2 | R2.*26
+      re4-. r2 | R2.*26
       R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
       R1*5 R2 R2. R1*10 R2. R1 R2. R1*7 R2*3 R2.*6
       R1*4 R2. R1 R2.
@@ -1032,11 +1032,11 @@ ActeUnSceneQuatrePercus = <<
       R2.*27
       R1 R2. R1 R2. R2 R2. R2 R2. R2 R2.
       R1*5 R2 R2. R1*10 R2. R1 R2. R1*7 R2*3 R2.*6 R1*3
-      \ind #"Crécelle" hh4:32 hh4 r8 hh r4 |
-      hh4:32 hh4 r | r8 hh8:32 r4 r8 hh8:32 r8 hh8 |
-      hh4:32 hh8 hh4:32 hh8 | hh8:32 hh8 r16 hh8. r2 |
-      r8 hh8:32 r2 | r16 hh8. r4 r16 hh8. \t {hh8 hh hh} |
-      hh8:32 hh8 r2 | R1*2
+      \ind #"Crécelle" hh4:32\mp\> hh4\! r8 hh-.-> r4 |
+      hh4:32\> hh4\! r | r8 hh8:32-- r4 r8 hh8:32-- r8 hh8-. |
+      hh4:32--\> hh8-.\! hh4:32--\> hh8-.\! | hh8:32--\> hh8\! r16 hh8.-. r2 |
+      r8 hh8:32-- r2 | r16 hh8.-. r4 r16 hh8.-. \t {hh8-- hh-- hh--} |
+      hh8:32\> hh8\! r2 | R1*2
       R2.*3 R1*2
       R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
       R1*12 hh4:32 r4 | R2. r4 hh4:32 r4 | R2 r2 hh4:32 hh8 r |
@@ -1068,44 +1068,44 @@ ActeUnSceneQuatrePercus = <<
 
       %%% Agitato %%%
       R2.*8
-      re,4 r re4:32 re4 r2 |
-      re8 re re re re4:32 re4 r2 |
-      re8 re re re re4:32 re4 r2 |
-      mib4 r2 R2.*4
-      mi32 mi8.. r2 mi4 r2 |
-      r8 sib32 sib16. r8 mi r sib |
-      mi8 \t {mi16 mi mi} mi4 r |
-      r8 sib4 mi sib8 | mi4 mi32 mi8.. sib8 mi |
-      R2. re2.:32\glissando |
-      dod4 r r r8 r16 sol32 sol | sol4 r2 |
-      dod8 \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod4 r |
-      r8 sol4 dod sol8 | dod8 \t {dod16 dod dod} dod4 |
-      r8 sol4 dod sol8 | \tt {dod16 dod dod dod dod} dod4 |
-      r8 dod r2 | r8 dod4 sol8 | dod \t {dod16 dod dod} dod4 r |
+      re,4\p r re4:32\< re4->\! r2 |
+      re8-. re-. re-. re-. re4:32--\< re4->\! r2 |
+      re8-. re-. re-. re-. re4:32--\< re4->\! r2 |
+      mib4-.->\p r2 R2.*4
+      mi32->\f mi8.. r2 mi4-> r2 |
+      r8 sib32-> sib16. r8 mi-- r sib-. |
+      mi8-> \t {mi16\< mi mi} mi4\! r |
+      r8 sib4-- mi-- sib8-. | mi4-> mi32-> mi8.. sib8-. mi-> |
+      R2. re2.:32\mf\<\glissando |
+      dod4\sfz r r r8 r16 sol32\f sol | sol4-> r2 |
+      dod8->\> \t {dod16 dod dod} dod8 \t {dod16 dod-- dod-.} dod4--\! r |
+      r8 sol4--\mf dod-- sol8-. | dod8-> \t {dod16 dod dod} dod4-. |
+      r8 sol4-- dod-- sol8-. | \tt {dod16\> dod dod dod dod} dod4-. |
+      r8 dod-. r2 | r8 dod4--\> sol8-. | dod--\mp \t {dod16 dod dod} dod4-. r |
 
       %%% Placando assai %%%
-      dod2 r4 dod | sol2:32~ sol4 r |
-      dod2 r4 dod | sol2:32~ sol4 r |
+      dod2--\p r4 dod | sol2:32~\> sol4\! r |
+      dod2-- r4 dod | sol2:32~\> sol4\! r |
       R1 R2 R2. R1
 
       %%% Andante a piacere %%%
-      fa1:32~ fa2 dod' |
-      fa,1:32~fa2 dod' |
-      fa,1:32~fa2 dod' | fa, r r dod' |
-      sol2~sol2:32~sol8 dod4 sol dod8 |
-      sol2~sol2:32~sol8 \t {dod16 dod dod} dod8 sol~sol16. sol32 sol8 |
-      dod8 r r4 r2 |
-      sol1:32~sol:~sol2.:32~sol4 |
+      fa1:32~--\pp fa2 dod'-- |
+      fa,1:32~-- fa2 dod'-- |
+      fa,1:32~-- fa2 dod'-- | fa, r r dod'-- |
+      sol2~\mp sol2:32~\< sol8\! dod4-- sol-- dod8-. |
+      sol2~-> sol2:32~\< sol8\! \t {dod16 dod dod} dod8-. sol~-> sol16. sol32 sol8-. |
+      dod8-> r r4 r2 |
+      sol1:32~\ppp sol:~sol2.:32~sol4 |
       r8 sol \t {sol sol sol} sol2:32~sol1:32~sol2 r |
       R2*3 R2.*6
 
       %%% A tempo %%%
-      r16 do32 do do8 r8 fad,4 do' fad,8 |
-      r16 do'32 do do8 r4 \tt {r16 do do fad, do'} \t {fad,8 do' fad,} |
-      do'8 \t {do16 do do} do4 r2 |
+      r16 do32\f do do8 r8 fad,4\< do' fad,8-. |
+      r16 do'32 do do8->\! r4 \tt {r16 do\< do fad, do'} \t {fad,8-- do'-- fad,--} |
+      do'8--->\! \t {do16 do do} do4-> r2 |
       R1 R2. R1 R2. R1 R2. R1
 
-      r2 fad,4:32\glissando sol4 r r2 |
+      r2 fad,4:32\mp\<\glissando sol4--\! r r2 |
       sol32 sol8.. r4 r8 \t {dod16 dod dod} dod4 |
       \t {sol16 sol sol} sol8\laissezVibrer r2 |
       sol4 sol2:32\glissando fa4 r2 |
