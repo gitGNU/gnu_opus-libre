@@ -372,27 +372,27 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     la8-.\mp lab-. reb,-. do'-. fa,-. mi'-. la,-.-> r r4 r2 |
     r4 la8-.\p r sol-. r reb-. r si'-. r fa'-. r mib,-. r la-.-> r r2 |
     R1 R2.
-    sol2.--\f r4 sol2 r8 dod4. | sol2 r4 sol2 r4 fa2 r4 fa2. r4 r fa4. mib |
+    sol2.--\f r4 sol2-- r8 dod4.-- | sol2-- r4 sol2-- r4 fa2-- r4 fa2.-- r4 r fa4.--\ff mib-- |
 
-    re2 r4 | r8 re' r | sold,2 si4~si8 dod4 |
-    re2 | r8 re r | la4. sib8~ sib8. do16~do4 |
-    mib2 r8 mib r | si2~si8 do~do16 re8. |
-    fa,2~fa4 r8 r fa''4.~fa2 |
-    R2 R4. r2 \ttt {re16 la solb reb sib fa} |
+    re2-- r4 | r8 re'-.->\f r | sold,2-- si4~-- si8 dod4-- |
+    re2-- | r8 re-. r | la4.-- sib8~-- sib8. do16~-- do4 |
+    mib2-- r8 mib-. r | si2~-- si8 do~-- do16 re8.-- |
+    fa,2~\p fa4 r8 r fa''4.~--\mp\< fa2 |
+    R2\! R4. r2 \ttt {re16\<( la solb) reb( sib fa)} |
 
-    re4 r r2 | re1~ re2 r4 re |
-    re1~ re2. r4 | r2 sol' mi reb sib solb |
-    re4 r r2 | R1*2
-    re'4 re re re R2 re4 re re R2. re4 re R1 |
+    re4->\f r r2 | \ten re1~\pp re2 r4 re-- |
+    \ten re1~ re2. r4 | r2 sol'\p( mi reb sib solb |
+    re4->) r r2 | R1*2
+    \st {re'4\p re re re R2 re4 re re R2. re4\pp re} R1 |
 
     %%% Piu lento %%%
     R2.*21
-    la8 do sib mib fa lab, solb si reb mi re, sol |
+    \st {la8\mp do sib mib fa lab, solb si reb mi re, sol |
     la4 r r2 |
     la8 solb lab mib reb sib' do sol fa re mi' si |
     la4 r r2 |
     la8 sol re' mi reb si solb lab fa mib sib' do |
-    la4 r la r R1. do8 sib4 do8 la2~ la1.~la2. r4 |
+    la4} r la->\mp r R1. do8 sib4 do8 la2~ la1.~la2. r4 |
     la8 do sib mib fa lab, solb si reb mi re,4 |
     la'8 sol re' mi reb si solb lab fa4 r |
     la8 solb lab mib reb sib' do4 r8 re, r4 |

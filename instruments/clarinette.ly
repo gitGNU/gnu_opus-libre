@@ -504,30 +504,30 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     r  sib~--\< \t {sib sib sib} \t {do-- do do} \t {reb-- reb reb} |
     \t {mib-- mib mib} \t {solb-- solb solb} \t {lab-- lab lab\!} r4 |
     R1 R2. R1 R2. R1 R2. R1 R2.
-    sib,2--\ff sib4-- sib-- sib4. sib8~sib4 r |
-    sib2 r4 sib2 r4 si4. r8 si4 re r re8. re16 re8 re~|
-    re4 re r8 re4 sol,8 |
+    sib,2--\ff sib4-- sib-- sib4.-- sib8~-- sib4 r |
+    sib2-- r4 sib2-- r4 si4.-- r8 si4-- re---> r re8.-> re16 re8-. re~--->|
+    re4 re-- r8 re4-- sol,8-. |
 
-    si2.~si8 r4 | re,,8. reb16~reb8 mi~mi r |
-    r8 \ttt {reb16 solb lab si re mi} |
-    reb'2~ reb8 r4 | re,,8. reb16~reb8 mi~ |
-    mi r fa16 sol do fa | sib2~sib8 r4 |
-    fa'8 r r \t {r16 re mi} re8 r r4 |
-    r la,~la4.~la2 reb' |
-    R2 R4. R2. re4 r r2 |
-    re,1~re2 do~do sib la2. r4 |
-    r2 la4. mib'8~| mib4 solb2 re'4~| re mi si do, |
-    re, r r2 | R1*2 re'8 re re re re re re re |
-    R2 re8 re re re re re R2. re8 re re re R1
+    \ten si2.~\ff si8 r4 | re,,8.->\f reb16~-> reb8 mi~-> mi r |
+    r8 \ttt {reb16\<( solb lab) si( re mi)} |
+    \ten reb'2~\f reb8 r4 | re,,8.->\f reb16~-> reb8 mi~-> |
+    mi r fa16\<( sol) do-. fa-. | sib2~\f sib8 r4 |
+    fa'8-.\sfz r r \t {r16 re\mp( mi} re8-.) r r4 |
+    r \ten la,~\p la4.~ la2 reb'--\mf\< |
+    R2\! R4. R2. re4->\f r r2 |
+    \ten re,1~\pp( re2 do~ do sib la2.) r4 |
+    r2 la4.\p\<( mib'8~| mib4 solb2\! re'4~)| re--\mf( mi--\< si-- do,-- |
+    re,->\!) r r2 | R1*2 \st {re'8\p re re re re re re re |
+    R2 re8 re re re re re R2. re8\pp re re re} R1
 
     %%% Piu lento %%%
-    R2.*3 sib'8 solb fa dob sib solb fa solb sib dob fa solb |
-    sib2 r4 | R2.*3
-    sib8 solb fa re do sib sol fad re fad sol sib do re fa solb sib4~|
-    sib2 r4 R2.*2 sib8 solb fa reb do lab |
-    sol mib re mib sol lab do reb fa solb sib4~ | sib2 r4 | R2.*2
+    R2.*3 sib'8(\pdolce solb fa dob sib solb fa\> solb sib dob fa solb |
+    sib2\!) r4 | R2.*3
+    sib8\p( solb fa re do sib sol fad re fad sol sib do\> re fa solb sib4~\!)|
+    sib2 r4 R2.*2 sib8\p( solb fa reb do lab |
+    sol mib re mib sol lab do\> reb fa solb sib4~\!) | sib2 r4 | R2.*2
 
-    R1. R1 R1. R1 R1. r2 sib,4 r | R1.
+    R1. R1 R1. R1 R1. r2 sib,4->\mf r | R1.
     solb'8 lab4 solb8 la2~la1.~la2. r4 |
     R1.*5 r2 mi,4 r | R1. R1 R1. mi'4 r r2 |
     R1.*5 r2 sib4 r | r2 r4 si do r r2 reb4 r |

@@ -585,17 +585,17 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
     la8 r16 \clef tenor <re'fad>~\f\<( <re fad>8 <mi sold>~
     <mi sold>16) <sol si>8.-- \clef treble |
     <dod, dod'>2--->\!( <dod dod'>4--) <dod dod'>-- |
-    <dod dod'>4. <dod dod'>8~ <dod dod'>4 r \clef bass |
-    <sol,sol'>2 r4 sol' sol sol fa2 fa4 |
-    fa~ \t {fa8 fa4~} \t {fa4 fa8~} fa4 |
-    r fa~fa8 mib \t {mib mib fad} |
+    <dod dod'>4.---> <dod dod'>8~-- <dod dod'>4 r \clef bass |
+    <sol,sol'>2---> r4 sol'\downbow sol\downbow sol\downbow fa2--->\downbow\ff fa4-- |
+    fa~---> \t {fa8 fa4~--->} \t {fa4 fa8~--->} fa4 |
+    r fa~--->( fa8 mib-.) \t {mib-> mib-> fad->} |
 
-    re2. r8 re r | sold,2 si4~si8 dod4 |
-    re2  r8 re r | la4. sib8~ sib8. do16~do4 |
-    mib2 r8 mib r| si2~ si8 do~ do16 re8. |
-    fa2~ fa4 r8  | fa,2~ fa |
-    R2 R4. re16 fa sib dod fad sib, dod fad la dod, fad la |
-    re4 re, re re | <re mi>\CaV <re mi>\CaV <re mi>\CaV <re mi>\CaV |
+    re2.--->\ff r8 re-. r | sold,2--\f si4~--\<( si8 dod4--) |
+    re2--\!  r8 re-. r | la4.-- sib8~--\<( sib8. do16~-- do4) |
+    mib2--\! r8 mib-. r| si2~\mf si8 do~--\<( do16 re8.--) |
+    fa2~--\! fa4 r8  | fa,2~--\mf fa |
+    R2 R4. \ind #"détaché" re16\p fa sib dod fad\< sib, dod fad la dod, fad la |
+    re4->\fp re,-- re-- re-- | \simile <re mi>\CaV <re mi>\CaV <re mi>\CaV <re mi>\CaV |
     <re sol>\CaV <re sol>\CaV <re sol>\CaV <re sol>\CaV |
     <re do'> <re do'> <re do'> <re do'> <re fa'> re re re |
     re8 re re, re re' re re, re |
@@ -605,20 +605,20 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
     R1*2 R2 R2.*2 R2 R1 |
 
     %%% Piu lento %%%
-    r2 \clef treble sib''4~sib2 r4 | R2.
-    r2 sib4~sib2 r4 |
+    r2 \clef treble \ten sib''4~\pp sib2 r4 | R2.
+    r2 \simile sib4~sib2 r4 |
     r2 sib4~sib2 r4 |
     r2 sib4~sib2 r4 |
     r2 sib4~sib2 r4 | R2.
     r2 sib4~sib2 r4 |
     r2 sib4~sib2 r4 |
     r2 sib4~sib2 r4 | R2. \clef bass
-    r4 \pizz sib,, r r re, r |
+    r4 \pizz sib,,\mp\> r r re,\! r |
 
     %%% Stesso tempo %%%
-    la'4 r r fad' r r | la, r r2 |
-    la4 r8 red r2 fa4 r | la, r r2 |
-    la4 r8 mi' r4 fad, r8 mib' r4 | la, r r2 |
+    la'4\f r r fad' r r | la,-> r r2 |
+    la4 r8 red r2 fa4 r | la,-> r r2 |
+    la4 r8 mi' r4 fad, r8 mib' r4 | la,-> r r2 |
     R1. R1
     \arco fa'1. fad2. r4 |
     \pizz la4 r r2 r4 re,8 sol |

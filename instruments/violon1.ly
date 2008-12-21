@@ -625,38 +625,38 @@ ActeUnSceneQuatreViolonUn = { \ViolonUn
     <fa sib>-> <fa sib>-> <fa sib>-> r |
     \ten sol1~\f\CaV sol4\CaV r2 |
     \ten sib,1~\mf sib4 r2 |
-    r2 r4 \t {do8\mf\<(\upbow reb mib)} fad2.~\! fad2 red4 mid fad2 r4 |
-    <la' dod>2 <la dod>4 <la dod> <la dod>4. <la dod>8~<la dod>4 r8 fa16 la |
-    dod2 \t {dod,8 fa la} dod2 \t {red,8 sol si} |
-    red8. red16 red8 red4 red8 | red8. red16 red8 red4 red8~red4 |
-    <sol, red'>~ \t {<sol red'>8 <sol red'>4~} \t {<sol red'> <si fa'>8~}<si fa'>r|
+    r2 r4 \t {do8\mf\<(\upbow reb mib)} fad2.~\! fad2 red4--\downbow mid-- fad2-- r4 |
+    <la' dod>2--->\f( <la dod>4--) <la dod>-- <la dod>4.---> <la dod>8~-- <la dod>4 r8 fa16\<( la) |
+    dod2--->\! \t {dod,8\<( fa la)} dod2--->\! \t {red,8\<( sol si)} |
+    red8.--->\ff red16 red8-. red4-> red8-. | red8.---> red16 red8-. red4-> red8~-> red4 |
+    <sol, red'>~---> \t {<sol red'>8 <sol red'>4~--->} \t {<sol red'> <si fa'>8~--->}<si fa'>r|
 
-    dod,,16 si si dod dod si si dod dod si si dod |
-    dod si si dod dod si | sib2.~sib8 r4 |
-    dod16 si si dod dod si si dod | dod si si dod dod si |
-    do2~do4. r8 |
-    mi16 re re mi mi re re mi | mi re re mi mi re |
-    mi2~mi4 r |
-    mi16 re re mi mi re re mi | mi re re mi mi re |
-    sol fa fa sol sol fa fa sol | sol fa fa sol sib sol sol sib |
-    R2 R4. r2 sib16 dod fad la |
+    dod,,16\upbow\f( si) si( dod) dod( si) si( dod) dod( si) si( dod) |
+    dod( si) si( dod) dod( si) | \ten sib2.~-- sib8 r4 |
+    dod16\upbow\f( si) si( dod) dod( si) si( dod) | dod( si) si( dod) dod( si) |
+    do2~-- do4. r8 |
+    mi16\upbow\f( re) re( mi) mi( re) re( mi) | mi( re) re( mi) mi( re) |
+    mi2~--\mf mi4 r |
+    mi16\mp( re) re( mi) mi( re) re( mi) | mi( re) re( mi) mi( re) |
+    sol\<( fa) fa( sol) sol( fa) fa( sol) | sol( fa) fa( sol) sib( sol) sol( sib) |
+    R2\! R4. r2 \ind #"détaché" sib16\< dod fad la |
 
-    re4 r r dod16 do sib do, |
-    re,4\CaV re16 re re re re re re re re re re re |
+    re4->\f r r \simile dod16 do sib do, |
+    re,4->\CaV re16\pleggiero re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
-    fad fad fad fad fad fad fad fad fad fad fad fad sold sold sold sold |
-    sold sold sold sold sold sold sold sold si si si si si si si si |
-    si si si si dod dod dod dod dod dod dod dod dod dod dod dod |
-    re re, re re re re re' re, re'4 re, | R1*3 R2 R2.*2 R2 R1
+    \cresc fad-> fad fad fad fad fad fad fad fad fad fad fad sold-> sold sold sold |
+    sold sold sold sold sold sold sold sold si-> si si si si si si si |
+    si si si si dod-> dod dod dod dod dod dod dod dod dod dod dod |
+    re->\f re, re re re re re'-> re, re'4->\> re,\! | R1*3 R2 R2.*2 R2 R1
 
     %%% Piu lento %%%
     R2.*11
-    r4 sib'2~sib r4 |
+    r4 \flaut sib'2~ sib r4 |
     r4 sib2~ sib r4 |
     r4 sib2~ sib r4 | R2.
-    r4 sib2~ sib r4 | R2.
+    r4 \ordin sib2~ sib r4 | R2.
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
     R1 R1. R1 R1.
     R1 R1.*5 R1 R1. R1

@@ -458,15 +458,15 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     \pizz la16\mp fad' sold8 dod,16 sib do8 fa16 re mi,8 |
     la4-> r4 r2 | r4 la4\mf sol'8 re dod4 si8 fad fa4 mib'8 sib |
     la4-> r2 | r16 re,8.-> r4 r2 |
-    R2. \arco sol2~--->( sol8 sol--) \t {sol-> sol-> sol->} | sol2 r8 dod4. |
-    sol2 r4 sol sol sol fa2 fa4 fa~ \t {fa8 fa4~} \t {fa fa8~} fa4 |
-    r fa~fa8 mib' \t {mib mib fad} |
+    R2. \arco sol2~--->( sol8 sol--) \t {sol-> sol-> sol->} | sol2---> r8 dod4.---> |
+    sol2---> r4 sol\downbow\< sol\downbow sol\downbow fa2--->\ff\downbow fa4-- fa~---> \t {fa8 fa4~--->} \t {fa fa8~--->} fa4 |
+    r fa~--->( fa8 mib'-.) \t {mib-> mib-> fad->} |
 
-    re2.~ re8 r4 | sold,2 si4~si8 dod4 |
-    re2~ re8 r4 | la4. sib8~sib8. do16~do4 |
-    mib2~ mib8 r4 | si2~si8 do~do16 re8. |
-    fa,2~fa4 r8 | fa2~fa | R2 R4. R2.
-    re'4\CaV r r re | re re re re re re re re |
+    \ten re2.~--->\ff re8 r4 | sold,2--\f si4~--\<( si8 dod4--) |
+    re2~--\! re8 r4 | la4.-- sib8~--\<( sib8. do16~-- do4) |
+    mib2~--\! mib8 r4 | si2~\mf si8 do~--\<( do16 re8.--) |
+    fa,2~--\! fa4 r8 | fa2~--\mf fa | R2 R4. R2.
+    re'4\f\CaV r r re--\p | re-- re-- re-- re-- \simile re re re re |
     re re re re re re re re |
     re' <re, re'> re' <re, re'> re' <re, re'> re' <re, re'> |
     re'8 re <re, re'> re re' re <re, re'> re |
@@ -475,20 +475,20 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     R1 R2 R2.*2 R2 R1
 
     %%% Piu lento %%%
-    r2 \clef "G_8" \arco si''?4~si2 r4 | R2.
-    r2 si4~si2 r4 |
-    r2 si4~si2 r4 |
-    r2 si4~si2 r4 |
-    r2 do4~do2 r4 | R2.
-    r2 re4~re2 r4 |
-    r2 mib4~mib2 r4 |
-    r2 mib4~mib2 r4 | R2. \clef "F_8"
-    r4 \pizz si,? r r re, r |
+    r2 \clef "G_8" \arco \ten si''?4~\pp si2 r4 | R2.
+    r2 \simile si4~ si2 r4 |
+    r2 si4~ si2 r4 |
+    r2 si4~ si2 r4 |
+    r2 do4~ do2 r4 | R2.
+    r2 re4~ re2 r4 |
+    r2 mib4~ mib2 r4 |
+    r2 mib4~ mib2 r4 | R2. \clef "F_8"
+    r4 \pizz si,?\mp\> r r re,\! r |
 
     %%% Stesso tempo %%%
-    la4 r r2 r8 mi4. | la4 r r2 |
-    la4 r r do r mi, | la4 r r2 |
-    la4 re dod fad fa sib, | la4 r r2 | R1. R1 R1. R1
+    la4\f r r2 r8 mi4. | la4 r r2 |
+    la4 r r do r mi, | la4-> r r2 |
+    la4 re dod fad fa sib, | la4-> r r2 | R1. R1 R1. R1
     la8 do sib4 fa'8 sold, fad4 dod'8 mi re4 |
     la8 sol re'4 dod8 si fad'4 fa8 mib sib4 |
     la8 fad sold4 dod8 sib do4 fa8 re mi4 |

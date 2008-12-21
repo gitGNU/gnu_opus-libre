@@ -1008,13 +1008,13 @@ ActeUnSceneQuatrePercus = <<
       R1*12 R2 R2.*2 R2 R1
 
       %%% Piu lento %%%
-      re4 \laissezVibrer <sib' dob sib'>2 <sib dob sib'>
-      <sib dob sib'>4\laissezVibrer R2.
-      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'> <sib dob sib'>4 |
-      re,4\laissezVibrer <sib' do! sib'>2 <sib do sib'>
-      <sib dob sib'>4\laissezVibrer R2.
+      re4\p \laissezVibrer <sib' dob sib'>2-- <sib dob sib'>--\>
+      <sib dob sib'>4--\!\laissezVibrer R2.
+      re,4\laissezVibrer \simile <sib' dob sib'>2 <sib dob sib'>\> <sib dob sib'>4\! |
+      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'>\> <sib dob sib'>4\! |
+      re,4\laissezVibrer <sib' dob sib'>2 <sib dob sib'>\> <sib dob sib'>4\! |
+      re,4\laissezVibrer <sib' do! sib'>2 <sib do sib'>\>
+      <sib dob sib'>4\!\laissezVibrer R2.
       re,4\laissezVibrer <sib' do sib'>2 <sib re sib'> <sib re sib'>4 |
       re,4\laissezVibrer <sib' re sib'>2
       re,4\laissezVibrer <sib' mib sib'>2 <sib mib sib'> <sib mib sib'>4 |
@@ -1039,12 +1039,12 @@ ActeUnSceneQuatrePercus = <<
       hh8:32\> hh8\! r2 | R1*2
       R2.*3 R1*2
       R2. R4. R2. R4. R2 R4. R2*3 R4. R2*3 R4. R2*3 R4. R2.
-      R1*12 hh4:32 r4 | R2. r4 hh4:32 r4 | R2 r2 hh4:32 hh8 r |
+      R1*12 \ind #"Crécelle" hh4:32\mp r4 | R2. r4 hh4:32 r4 | R2 r2 hh4:32\> hh8\! r |
 
       %%% Piu lento %%%
       R2.*21
-      R1. r2 hh4:32 r4 | R1. r4 hh2:32 hh4 | R1.
-      r4 r8 r16 \ind #"Tambour" \ind #"(bag. fagot)" sn sn4 r |
+      R1. r2 \ind #"Crécelle" hh4:32\mf r4 | R1. r4 hh2:32\> hh4\! | R1.
+      r4 r8 r16 \ind #"Tambour" \ind #"(bag. fagot)" sn sn4-> r |
       R1. R1 R1. R1 sn4 r r2 r4 r8 sn16 sn |
       sn4 r r2 r4 r8 \t {sn16 sn sn} |
       sn4 r r2 r8 sn16 sn sn8 sn |
@@ -1106,26 +1106,26 @@ ActeUnSceneQuatrePercus = <<
       R1 R2. R1 R2. R1 R2. R1
 
       r2 fad,4:32\mp\<\glissando sol4--\! r r2 |
-      sol32 sol8.. r4 r8 \t {dod16 dod dod} dod4 |
-      \t {sol16 sol sol} sol8\laissezVibrer r2 |
-      sol4 sol2:32\glissando fa4 r2 |
-      fa4 r8 r16 fa fa4 r |
-      fa r r dod'4:32\glissando re4 r2 |
-      r16 r32 re re4 |
-      sold,8 \t {sold16 sold sold} sold4 r8 sold |
-      r4 sold32 sold16. | re'32 re re8. r4 |
-      r16 r32 re re4 |
-      la8 la32 la16. r4 | R2
-      mib'4 mib r4 r8 |
-      si4 r R2 |
-      r8 r16 fa32 fa fa4 | R4.
-      fa4 fa8 fa \t {fa fa fa} \tt {fa16 fa fa fa fa} |
-      R2 R4.
-      re'2.:32 re4 r8 r16 re32 re re4 r |
-      re16 re re8 r4 re r r re re re |
-      re8 re16 re re4 re re8 \t {re16 re re} |
-      re4 r r re8 re16 re re4 r r re8 re16 re |
-      re4 r r re re r r re re r r2 | R1*3
+      sol32-> sol8.. r4 r8 \t {dod16\< dod dod\>} dod4\! |
+      \t {sol16->\> sol sol} sol8\!\laissezVibrer r2 |
+      sol4\mf sol2:32\<\glissando fa4\f r2 |
+      fa4---> r8 r16 fa fa4-> r |
+      fa--\mf r r dod'4:32\<\glissando re4\f r2 |
+      r16 r32 re re4-> |
+      sold,8->\> \t {sold16 sold sold} sold4\! r8 sold-. |
+      r4 sold32-> sold16. | re'32-> re re8. r4 |
+      r16 r32 re re4-> |
+      la8->\> la32 la16.\! r4 | R2
+      mib'4-- mib r4 r8 |
+      si4-- r R2 |
+      r8 r16 fa32\mf fa fa4-> | R4.
+      fa4--\p fa8\< fa \t {fa fa fa} \tt {fa16 fa fa fa fa} |
+      R2\! R4.
+      re'2.:32\pp\< re4\f r8 r16 re32 re re4-> r |
+      re16-> re re8 r4 re-- r r re\> re re |
+      re8\mp re16 re re4-> re re8 \t {re16 re re} |
+      re4-> r r re8\< re16 re re4->\! r r re8\< re16 re |
+      re4->\! r r re re-> r r re re-> r r2 | R1*3
       R2  R2.*2 R2 R1
       R2.*21
       R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
