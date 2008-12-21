@@ -10,6 +10,8 @@
 
 \include "./instruments/reduction.ly"
 
+\layout { \includeVocalLayout }
+
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
 Prologue = {

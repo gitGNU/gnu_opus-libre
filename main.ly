@@ -30,12 +30,6 @@
 \include "./voix/baryton1.ly"
 \include "./voix/baryton2.ly"
 
-%%%%%%%%%%%%%%%%%%%%%%%% Layout declarations %%%%%%%%%%%%%%%%%%%%%%%
-
-\layout {
-  \includeLayout
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%% Edition selection %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Uncomment one of the two following lines.

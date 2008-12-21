@@ -27,6 +27,8 @@
 
 #(set-global-staff-size 12)
 
+\layout { \includeScoreLayout }
+
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 
 Prologue = {

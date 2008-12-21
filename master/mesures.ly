@@ -582,7 +582,7 @@ InterludeDeuxMesures = {
             R2    \bar "||"
       \tempo "Animato (doppio tempo)" 4 = 132
             R2*7
-      \mark \markup \did\InterludeDeuxD
+      \mark \markup \did \InterludeDeuxD
             R2*7  \bar "||"
   \time 2/2
       \mark \markup \did \InterludeDeuxE

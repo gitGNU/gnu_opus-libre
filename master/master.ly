@@ -48,14 +48,14 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %
+} %}
 \score {
   \InterludeDeux
   \header {
     piece = \InterludeTitre
     dessin = \Arrosoir
   }
-} %
+} %{
 \score {
   \ActeUnSceneTrois
   \header {
@@ -106,13 +106,13 @@
   \header {
     piece = \Separateur
   }
-} %}
+} %
 \score {
   \ActeDeuxSceneDeux
   \header {
     piece = \SceneDeuxTitre
   }
-} %{
+} %
 \score {
   \ActeDeuxSceneTrois
   \header {
