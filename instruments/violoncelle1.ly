@@ -620,20 +620,21 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
     la4 r8 red r2 fa4 r | la, r r2 |
     la4 r8 mi' r4 fad, r8 mib' r4 | la, r r2 |
     R1. R1
-    \arco fa'1. fad2. r4 |
-    \pizz la4 r r2 r4 re,8 sol |
-    la4 r r2 fa8 mib sib' do |
-    la4 r r4 do8 sol fa re mi' si |
-    la4 r fa8 sol do sib reb mib, lab solb |
-    la4 sib8 mib dod si fad sold fa re mi' si |
-    la4 r r2 | R1. R1
-    \arco sold,2 la1 sib4 r \pizz sib reb |
-    la4 r r2 r4 mi''8 si |
-    la4 r r2 dod8 red, sold fad |
-    la4 r r4 fad8 si dod mi re, sol |
-    la4 r dod8 si fad sold fa mib sib' do |
-    la4 sold8 red fa sol do sib dod mi re, sol |
-    la4 r r2 R1. R1
+    \arco \ten fa'1.\mp( fad2.) r4 |
+    \pizz la4->\mp r r2 r4 re,8 sol |
+    la4-> r r2 fa8 mib sib' do |
+    la4-> r r4 do8 sol fa re mi' si |
+    la4-> r fa8 sol do sib reb mib, lab solb |
+    la4-> sib8 mib dod si fad sold fa\< re mi' si |
+    la4->\! r r2 | R1. R1
+    \arco sold,2\p( \ten la1
+    sib4-.->\ffsubito r \pizz sib\mp reb |
+    la4-> r r2 r4 mi''8 si |
+    la4-> r r2 dod8 red, sold fad |
+    la4-> r r4 fad8 si dod mi re, sol |
+    la4-> r dod8 si fad sold fa mib sib' do |
+    la4-> sold8 red fa sol do sib dod\< mi re, sol |
+    la4->\! r r2 R1. R1
   }
 }
 

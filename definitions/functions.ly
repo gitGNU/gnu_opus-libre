@@ -293,6 +293,12 @@ marcst =
    (double-script m "marcato" "staccato"))
     (music-map make-script-music music))
 
+dwnb =
+#(define-music-function (parser location music)
+          (ly:music?)
+          (define (make-script-music m)
+   (add-script m "downbow"))
+    (music-map make-script-music music))
 
 CaV=
 #(let ((m (make-music 'ArticulationEvent

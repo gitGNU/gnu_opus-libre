@@ -603,9 +603,9 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
     re2 r4 | R2.*2
 
     R1. R1 R1. R1 R1.
-    r2 si'4 r | R1. re8 mi4 re8 fa2~fa1.~solb2. r4 |
-    R1.*5 r2 fa,4 r | R1. R1 R1. do'4 r r2 |
-    R1.*5 r2 si4 r | r2 r4 do reb r | r2 la4 r |
+    r2 si'4-.->\mf r | R1. re8(\mp mi4) re8 \ten fa2--~fa1.( solb2.) r4 |
+    R1.*5 r2 fa,4-.\sfz r | R1. R1 R1. do'4-.\sfz r r2 |
+    R1.*5 r2 si4-.\sfz r | r2 r4 do-.-> reb-.-> r | r2 la4---> r |
   }
 }
 

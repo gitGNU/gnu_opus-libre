@@ -383,20 +383,20 @@ ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
     %%% Piu lento %%%
     R2.*21
     R1. R1 R1. R1 R1. r2 lab4 r R1.
-    mi'8 re4 mi8 reb2~ reb1.~do2. r4 |
-    la4 r r2 r4 re,8 sol |
-    la4 r r2 fa8 mib sib' do |
-    la4 r r4 do8 sol fa re mi' si |
-    la4 r fa8 sol do sib reb mib, lab solb |
-    la4 sib8 mib reb si solb lab fa re mi' si |
-    la4 r re, r | R1. R1 R1.
-    fad4 r r2 |
-    la4 r r2 r4 mi'8 si |
-    la4 r r2 reb8 mib, lab solb |
-    la4 r r4 fad8 si dod mi re, sol |
-    la4 r dod8 si solb lab fa mib sib' do |
-    la4 lab8 mib fa sol do sib reb mi re, sol |
-    la4 r lab r | r2 r4 sol solb r | r2 fa4 r |
+    mi'8(\p re4) mi8 \ten reb2--~ reb1.( do2.) r4 |
+    \st {la4->\p r r2 r4 re,8 sol |
+    la4-> r r2 fa8 mib sib' do |
+    la4-> r r4 do8 sol fa re mi' si |
+    la4-> r fa8 sol do sib reb mib, lab solb |
+    la4->\mp sib8 mib reb si solb lab fa\< re mi' si |
+    la4->\mf r re,\sfz r | R1. R1 R1.
+    fad4\sfz r r2 |
+    la4->\p r r2 r4 mi'8 si |
+    la4-> r r2 reb8 mib, lab solb |
+    la4-> r r4 fad8 si dod mi re, sol |
+    la4-> r dod8 si solb lab fa mib sib' do |
+    la4->\mp lab8 mib fa sol do sib reb\< mi re, sol |
+    la4->\! r lab\sfz r | r2 r4 sol-> solb->} r | r2 fa4---> r |
   }
 }
 

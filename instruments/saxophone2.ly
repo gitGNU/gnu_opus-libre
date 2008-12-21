@@ -392,19 +392,20 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     la8 solb lab mib reb sib' do sol fa re mi' si |
     la4 r r2 |
     la8 sol re' mi reb si solb lab fa mib sib' do |
-    la4 r la r R1. do8 sib4 do8 la2~ la1.~la2. r4 |
-    la8 do sib mib fa lab, solb si reb mi re,4 |
+    la4 r la r R1.
+    do8\p( sib4) do8 \ten la2--~ la1.~la2. r4 |
+    \st {la8\p do sib mib fa lab, solb si reb mi re,4 |
     la'8 sol re' mi reb si solb lab fa4 r |
     la8 solb lab mib reb sib' do4 r8 re, r4 |
     la'8 si mi re fa,4 do' reb, lab' |
-    la8 do sib mib reb si solb lab fa re mi' si |
-    la4 r mib r | R1. R1 R1. sib'4 r r2 |
-    la8 solb lab mib reb sib' do sol fa re mi'4   |
+    la8\mp do sib mib reb si solb lab fa\< re mi' si |
+    la4->\mf r mib\sfz r | R1. R1 R1. sib'4\sfz r r2 |
+    la8\p solb lab mib reb sib' do sol fa re mi'4   |
     la,8 si mi re, fa sol do sib reb4 r |
     la8 do sib mib fa lab, solb4 r8 mi r4 |
     la8 sol re' mi reb4 solb, fa sib |
     la8 solb lab mib fa sol do sib reb mi re, sol |
-    la4 r la r | r2 r4 la la r | r2 re,4 r |
+    la4-> r la\sfz r | r2 r4 la-> la-> } r | r2 re,4---> r |
   }
 }
 

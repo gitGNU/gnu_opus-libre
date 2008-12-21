@@ -527,10 +527,10 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     sib2 r4 R2.*2 sib8 solb fa reb do lab |
     sol mib re mib sol lab do reb fa solb sib4~ | sib2 r4 | R2.*2
 
-    R1. R1 R1. R1 R1. r2 sib,4 r | R1.
-    solb'8 lab4 solb8 la2~la1.~la2. r4 |
-    R1.*5 r2 mi,4 r | R1. R1 R1. mi'4 r r2 |
-    R1.*5 r2 sib4 r | r2 r4 si do r r2 reb4 r |
+    R1. R1 R1. R1 R1. r2 sib,4-.->\mf r | R1.
+    solb'8\mp( lab4) solb8 \ten la2--~la1.~la2. r4 |
+    R1.*5 r2 mi,4-.\sfz r | R1. R1 R1. mi'4-.\sfz r r2 |
+    R1.*5 r2 sib4-.\sfz r | r2 r4 si-.-> do-.-> r r2 reb4---> r |
   }
 }
 

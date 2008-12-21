@@ -489,18 +489,19 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     la4 r r2 r8 mi4. | la4 r r2 |
     la4 r r do r mi, | la4 r r2 |
     la4 re dod fad fa sib, | la4 r r2 | R1. R1 R1. R1
-    la8 do sib4 fa'8 sold, fad4 dod'8 mi re4 |
+    la8\mp do sib4 fa'8 sold, fad4 dod'8 mi re4 |
     la8 sol re'4 dod8 si fad'4 fa8 mib sib4 |
     la8 fad sold4 dod8 sib do4 fa8 re mi4 |
     la,8 si mi,4 fa'8 sol do,4 reb8 mib lab,4 |
     la8 do sib4 dod8 si fad4 fa'8 re mi,4 |
-    la r r2 | R1. \arco do1~ do1. do4 r \pizz sib reb |
+    la-> r r2 | R1. \arco \ten do1\pp~ do1.
+    do4-.->\ffsubito r \pizz sib\mp reb |
     la8 fad sold4 dod8 sib do4 fa,8 re' mi,4 |
     la8 si mi,4 fa8 sol do4 reb8 mib lab,4 |
     la8 do sib4 fa8 lab solb4 dod8 mi, re'4 |
     la8 sol' re4 dod8 si fad4 fa'8 mib sib4 |
     la8 fad' sold4 fa8 sol do,4 dod8 mi, re' sol |
-    la,4 r r2 R1. R1
+    la,4-> r r2 R1. R1
   }
 }
 

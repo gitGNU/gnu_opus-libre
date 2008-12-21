@@ -1021,7 +1021,6 @@ ActeUnSceneQuatrePercus = <<
       r <sib mib sib'>2 |
       re,4\laissezVibrer <sib' mi! sib'>2\laissezVibrer | R2.*2
       R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5 R1 R1. R1 R1. R1 R1.*5 R1 R1. R1
-
     }
   }
   \new DrumStaff { \Percus
@@ -1045,19 +1044,19 @@ ActeUnSceneQuatrePercus = <<
       R2.*21
       R1. r2 hh4:32 r4 | R1. r4 hh2:32 hh4 | R1.
       r4 r8 r16 \ind #"Tambour" \ind #"(bag. fagot)" sn sn4 r |
-      R1. R1 R1. R1 sn4 r r2 r4 r8 sn16 sn |
-      sn4 r r2 r4 r8 \t {sn16 sn sn} |
-      sn4 r r2 r8 sn16 sn sn8 sn |
-      sn4 r r2 r8 sn sn sn | sn sn sn4 r1 |
-      sn4 r8 \t {sn16 sn sn} sn4 r | R1. R1 R1.
-      sn32 sn8.. r4 r r8 r16 sn |
-      sn4 r r2 r4 sn16 sn sn sn |
-      sn4 r r2 r4 sn8 sn |
-      sn4 r r2 r8 sn16 sn sn4 |
-      sn4 r r2 r8 sn sn sn | sn sn sn4 r sn sn sn |
-      sn4 r8 r16 sn sn4 r |
-      r2 r4 sn sn r |
-      r2 \ind #"Crécelle" hh4:32 hh4 |
+      R1. R1 R1. R1 sn4-> r r2 r4 r8 sn16\< sn |
+      sn4->\! r r2 r4 r8 \t {sn16\< sn sn} |
+      sn4->\! r r2 r8 sn16\< sn sn8 sn |
+      sn4->\! r r2 r8 sn sn sn | sn--\> sn sn4\! r1 |
+      sn4-> r8 \t {sn16\< sn sn} sn4\f r | R1. R1 R1.
+      sn32-> sn8.. r4 r r8 r16 sn |
+      sn4-> r r2 r4 sn16\< sn sn sn |
+      sn4->\! r r2 r4 sn8\< sn |
+      sn4->\! r r2 r8 sn16 sn sn4-> |
+      sn4-> r r2 r8 sn\< sn sn | sn\> sn sn4\! r sn\> sn sn |
+      sn4\! r8 r16 sn sn4-> r |
+      r2 r4 sn-> sn-> r |
+      r2 \ind #"Crécelle" hh4:32\mf hh4-- |
     }
   }
   \new Staff { \Timbales

@@ -1210,7 +1210,7 @@ ActeUnSceneQuatrePiano = { \Piano
     <solb sib>4 <reb fa> <lab do> | s2.
     <reb fa solb sib>2.\arpeggio \laissezVibrer | R2.*3
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
-    R1 R1. R1 R1. R1 R1.*5 R1 R1. r2 <dod mi la>4 r |
+    R1 R1. R1 R1. R1 R1.*5 R1 R1. r2 <dod mi la>4--\mf r |
   }
   \relative {
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
@@ -1320,20 +1320,20 @@ ActeUnSceneQuatrePiano = { \Piano
     la8 fad sold red r sib' do sol r re mi' r | la,4 r r2 |
     la8 r re mi r si fad sold r mib sib' r | la4 r r2 |
     R1. R1 R1. R1
-    la8 r sib mib r sold, fad si r mi re, sol |
+    \st {la8 r sib mib r sold, fad si r mi re, sol |
     la r re mi r si fad sold r mib sib' r |
     la fad sold red r sib' do sol r re mi' r |
     la, si mi r fa, sol r sib r mib, lab r |
     la do sib mib r si fad sold r re mi' r |
-    la,4 r r2 | R1.
-    \pl {do,1~do1.} {r4 do' \t {do do do} do do~do1} |
+    la,4--} r r2 | R1.
+    \pl {do,1\pp~do1.} {r4 do' \t {do do do} do-- do--~do1} |
     R1
-    la8 r sold red r sib' do sol r re mi' si |
+    \st {la8 r sold red r sib' do sol r re mi' si |
     la r mi' re, r sol do sib r mib, lab r |
     la do sib mib r sold, fad si r mi re, r |
     la' sol re' r dod si r sold r mib sib' r |
     la fad sold red r sol do sib r mi re, r |
-    la'4 r r2 | R1. r2 <re, la' fa'>4 r |
+    la'4->} r r2 | R1. r2 <re, la' fa'>4-- r |
   }
 }
 

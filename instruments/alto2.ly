@@ -696,8 +696,8 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     \pizz re4 r2 R2.*2 re4 r2 R2. re4 r2 R2. re4 r2 R2. re4 r2 R2.*2 |
     re4 r2 R2. re4 r2 re4 r2 R2.*2 re4 r2 r4 sib' r r re, r |
     R1. R1 R1. R1 R1. R1 R1. R1
-    \arco dod'1. do2. r4 | R1.*5 R1 R1.
-    do,1~ do1. do4 r r2 R1.*5 R1 R1. R1
+    \arco \ten dod'1.\mp( do2.) r4 | R1.*5 R1 R1.
+    \ten do,1\pp~ do1. do4-.->\ffsubito r r2 R1.*5 R1 R1. R1
   }
 }
 

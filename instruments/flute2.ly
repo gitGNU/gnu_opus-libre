@@ -514,10 +514,10 @@ ActeUnSceneQuatreFluteDeux = { \FluteDeux
     %%% Piu lento %%%
     R2.*21
     R1. R1 R1. R1 R1. r2 sol,4 r | R1. R1
-    la,4 sol fa mi fa8 mi fa sol la2 mib4 r |
-    R1.*5 r2 reb4 r | R1. R1 r2 r4 la' sol fa |
-    mi r r2 | R1.*5 r2 sol4 r | r2 r4 la fa? r |
-    r2 mi4 r |
+    la4\mf( sol fa mi fa8\< mi fa sol la2\! mib4) r |
+    R1.*5 r2 reb4-.\sfz r | R1. R1 r2 r4 la'\mp( sol fa |
+    mi-.\sfz) r r2 | R1.*5 r2 sol4-.\sfz r | r2 r4 la-.-> fa?-.-> r |
+    r2 mi4---> r |
 
   }
 }
