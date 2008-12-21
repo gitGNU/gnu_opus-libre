@@ -52,6 +52,9 @@
   ragged-last-bottom = ##f
   bottom-margin = #10
 
+%% Default titling ------------------------------------------------%
+  bookTitleMarkup = \markup \null
+
 %% Look and feel --------------------------------------------------%
   %FIXME: this doesn't work well.
   %systemSeparatorMarkup = \slashSeparator

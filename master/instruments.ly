@@ -26,7 +26,7 @@
 \include "./instruments/violoncelle2.ly"
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
-%
+%{
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Flutes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,7 +50,7 @@ ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxFluteUn \ActeDeuxSceneDeuxFlu
 
 \bookpart {
   \include "./master/master.ly"
-} %{
+} %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Clarinettes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -74,7 +74,7 @@ ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxClarinetteUn \ActeDeuxSceneDe
 
 \bookpart {
   \include "./master/master.ly"
-}
+} %{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

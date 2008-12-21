@@ -30,8 +30,13 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Part selection %%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \include "./master/common.ly"
+
+\header {
+  scoretype = "Flute"
+}
+
+
 %\include "./master/titling.ly"
 \include "./master/instruments.ly"
 
