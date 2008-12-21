@@ -432,61 +432,61 @@ ActeUnSceneTroisTerFluteUn = { \FluteUn
 InterludeTroisFluteUn = { \FluteUn
   \relative {
     R1 R2. R1 R2. R1 R2. R1 R2.
-    fad2. r4 fad2 r4 | fa'4. lab8 solb la |
-    fa4 r8 la,32 do fa lab |
-    do2 sib8 reb do4. r8 |
-    mib2 lab4 si | R2*4
+    fad2.--\p r4 fad2-- r4 | fa'4.\p( lab8) solb( la) |
+    fa4-- r8 la,32\<( do) fa lab |
+    do2--\mf sib8( reb) do4.-- r8 |
+    mib2-- lab4\<( si\!) | R2*4
   }
 }
 
 ActeUnSceneQuatreFluteUn = { \FluteUn
   \relative {
-    \partial 4 r16 la'' la la re4 do re8 la4 r R2 r4 r16
-    la la la | re4 do re8 la4 r r8 sib r dod re4 r2 | R2*2
+    \partial 4 r16 la''-.\mf la-. la-. re4-- do--( re8-.) la4-- r R2 r4 r16
+    la-. la-. la-. | re4-- do--( re8-.) la4-- r r8 sib-.( r dod-. re4--) r2 | R2*2
     R2-\fermataMarkup
 
     %%% Allegretto comodo %%%
-    R1 R2. R1*2 R1. R1*2 re,2 re re re re re2. r4 |
+    R1 R2. R1*2 R1. R1*2 re,2--\p( re-- re--) re--( re--) re2.-- r4 |
 
     %%% Agitato %%%
-    la8 r r2 R2.*5 r4 r8 do do do |
-    fa2.~ fa8 r r4 sib,16 mib fad si |
-    re4 re, re re' r8 re \t {re re re} |
-    sold4 sold, sold sold' r8 dod, \t {si sold mi'} |
-    sol4 r2 | R2.*4
-    r2 \tt {la,,16 re mi sol la}
-    dod8 r r4 dod32 dod16.~dod16 dod |
-    dod8 r r4 dod8 r dod8.. dod32 dod8 r r4 |
-    re8 r r4 re32 re16. r8 re8.. re32 re8 r r4 |
-    red8 r r red r4 |
-    sold16 la sold mi re la mi re sold,8 r |
-    sold''16 la sold mi re4 \t {mi,8 la re} |
-    la' r r4 r2 | R2. R1 R2.
-    r8 r16 mi,,32 la mi'8 r | R2.
-    \t {r8 mib16} la8 r4 | R2.
-    r4 la8 mi! mi4 r2 |
+    la8-.-> r r2 R2.*5 r4 r8 do--\mf( do-- do--) |
+    \ten fa2.~-- fa8 r r4 sib,16\<( mib fad si |
+    re4--->\f) re,-- re-- re'---> r8 re-. \t {re-.( re-. re-.)} |
+    sold4---> sold,-- sold-- sold'---> r8 dod,-. \t {si-.( sold-. mi'-.)} |
+    sol4---> r2 | R2.*4
+    r2 \tt {la,,16( re mi sol la}
+    dod8->\f) r r4 dod32-> dod16.~ dod16 dod-. |
+    dod8-.-> r r4 dod8-.-> r dod8..-> dod32 dod8-.-> r r4 |
+    re8-.-> r r4 re32-> re16. r8 re8..-> re32 re8-.-> r r4 |
+    red8-.-> r r red-.-> r4 |
+    sold16->( la sold mi) re( la) mi( re) sold,8-> r |
+    sold''16->( la sold mi) re4-> \t {mi,8( la re)} |
+    la'-> r r4 r2 | R2. R1 R2.
+    r8 r16 mi,,32\mp( la mi'8-.) r | R2.
+    \t {r8 mib16(} la8-.) r4 | R2.
+    r4 la8-.\p( mi!-.) mi4-- r2 |
 
     %%% Placando assai %%%
-    r2 la~ la2. r4 |
-    r fa8. fa16 la2~la2. r4 |
-    la,2 lab sol fad2.~ fad r4 |
+    r2 la~\pp la2. r4 |
+    r fa8.--( fa16 la2~) la2. r4 |
+    la,2\>( lab sol \ten fad2.~\!) fad r4 |
 
     %%% Andante a piacere %%%
-    r2 \t {dod4 dod dod} \t {re re re} mib r |
-    r2 \t {dod4 dod dod} \t {re re re} mib r |
-    r2 \t {fa4 fa fa} \t {fad fad fad} sol r |
-    r2 \t {fa4 fa fa} \t {fad fad fad} sol r |
-    r2 mi'' si4. la fa'2 si, re4. la |
+    r2 \t {dod4\mp\<( dod dod} \t {re\> re re} mib\!) r |
+    r2 \t {dod4\<( dod dod} \t {re\> re re} mib\!) r |
+    r2 \t {fa4\<( fa fa} \t {fad\> fad fad} sol\!) r |
+    r2 \t {fa4\<( fa fa} \t {fad\> fad fad} sol\!) r |
+    r2 mi''\mf( si4. la) fa'2\>( si, re4. la\!) |
     R1*7 R2*3 R2.*6
 
     %%% A tempo %%%
-    r4 do, reb mib |
-    r fad sold la la'2. r4 |
-    la,,1~ la8 r r2 |
-    r2 r4 r8 \t {sold16 si dod} |
-    re2.~re8 r r4 r2 |
-    fad,2. fad2 fad4 fad fad2 r8 \t {dod'16 fa la} |
-    dod8. dod16 dod8 dod~dod \t {dod16 fa, la} dod4 |
+    r4 do,\f\<( reb mib\!) |
+    r fad\<( sold la la'2.--\!) r4 |
+    \ten la,,1~\mf la8 r r2 |
+    r2 r4 r8 \t {sold16\<( si dod} |
+    re2.~\mp) re8 r r4 r2 |
+    fad,2.--\mp( fad2-- fad4-- fad-- fad2--) r8 \t {dod'16( fa la)} |
+    dod8.--->\f dod16 dod8-. dod~-> dod \t {dod16( fa, la)} dod4-- |
     r16 dod dod8 \t {dod,16 fa la} dod8~dod dod dod dod|
     \t {fa,8 la dod~} \t {dod dod4} dod8 dod |
     r dod \t {dod4 dod8} \t {fa,16 la dod4} |

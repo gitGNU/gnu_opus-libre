@@ -447,64 +447,64 @@ ActeUnSceneTroisTerClarinetteUn = { \ClarinetteUn
 InterludeTroisClarinetteUn = { \ClarinetteUn
   \relative {
     R1 R2. R1 R2. R1 R2. R1 R2.
-    la'2. r4 la2 r4 |
-    la4. do8 sib reb la4 r |
-    mi'2 re8 fa mi4. r8 |
-    sib8 sol sib si re si re mib | R2*4
+    la'2.--\p r4 la2-- r4 |
+    la4.\p( do8) sib( reb) la4-- r |
+    mi'2--\mf re8( fa) mi4.-- r8 |
+    sib8\f( sol) sib( si) re\<( si) re( mib\!) | R2*4
   }
 }
 
 ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
   \relative {
-    \partial 4 r4 re16 mi fa sol la8 la, re la'4 r |
-    R2 r4 r8 la, re16 mi fa sol la8 la, sib fa'4 r16
-    re re re sol4 mi re r2 | R2*2
+    \partial 4 r4 re16\mp( mi fa sol la8-.) la,-.( re-.) la'4-- r |
+    R2 r4 r8 la,-. re16( mi fa sol la8-.) la,-.( sib-.) fa'4-- r16
+    re-.\mp re-. re-. sol4--( mi-- re--) r2 | R2*2
     R2-\fermataMarkup
 
     %%% Allegretto comodo %%%
-    R1 R2. R1*2 R1. \t {fad4 sol fad} \t {sol fad sol} | la2. r4 |
-    \t {fad4 sol fad} \t {sol fad sol} \t {fad sol fad~}|
-    \t {fad sol fad} sol r | \t {mib,2 mib4~} mib2 |
+    R1 R2. R1*2 R1. \t {fad4\pp( sol fad} \t {sol fad sol} | la2.) r4 |
+    \t {fad4( sol fad} \t {sol fad sol} \t {fad sol fad~)}|
+    \t {fad sol( fad} sol) r | \t {mib,2--( mib4~--)} mib2 |
 
     %%% Agitato %%%
-    sol8 r r2 | R2.*5
-    r8 sol sol sol do4~| do2.~ do8 r r2 |
-    re4 r4 r16 la la la | re4 do re8 la~ | la4 r r16 si si si |
-    mi4 re mi8 si~ | si4 r2 |
-    re,2.~ re2 r4 | re2. re4 re re |
-    re16 mi sol la do re mi sol la do re mi |
-    sol8 r r4 sol32 sol16.~sol16 sol |
-    sol8 r r4 sol8 r sol8.. sol32 sol8 r r4 |
-    lab8 r r4 lab32 lab16. r8 lab8.. lab32 lab8 r r4 |
-    la!8 r r la r4 | re,2 mi4 re2 mi4 |
-    re8 r re,16 mi re mi re mi re mi re mi re mi |
-    \t {re8 mi re} \t {mi re mi} re8 r |
-    re16 mi re mi re mi re mi re mi re mi re mi re mi |
-    \t {re8 mi re} \t {mi re mi} re8 r |
-    re16 mi re mi re8 r | re16 mi re mi re mi re mi re8 r |
-    mib16 fa mib fa mib8 r | mib16 fa mib fa mib fa mib fa mib8 r |
-    \t {mi8 fad mi} \t {fad mi fad} | \t {mi fad mi} \t {fad mi fad} mi8 r |
+    sol8-.-> r r2 | R2.*5
+    r8 sol--\mf( sol-- sol--) do4~--| \ten do2.~ do8 r r2 |
+    re4--->\mf r4 r16 la-.\f la-. la-. | re4-- do-- re8-> la~-> | la4 r r16 si-. si-. si-. |
+    mi4-- re-- mi8-> si~-> | si4 r2 |
+    \ten re,2.~\p re2 r4 | re2.-- re4--\mp re-- re-- |
+    re16\<( mi sol la) do( re mi sol) la( do re mi) |
+    sol8--->\f r r4 sol32-> sol16.~sol16 sol-. |
+    sol8-.-> r r4 sol8-.-> r sol8..-> sol32 sol8-.-> r r4 |
+    lab8-.-> r r4 lab32-> lab16. r8 lab8..-> lab32 lab8-.-> r r4 |
+    la!8-.-> r r la-.-> r4 | re,2--\f mi4-- re2-- mi4-- |
+    re8-> r re,16\p( mi re mi re mi re mi re mi re mi) |
+    \t {re8( mi re} \t {mi\> re mi} re8\!) r |
+    re16( mi re mi re mi re mi) re( mi re mi re mi re mi) |
+    \t {re8( mi re} \t {mi\> re mi} re8\!) r |
+    re16( mi re mi re8) r | re16( mi re mi re mi re mi re8) r |
+    mib16( fa mib fa mib8) r | mib16( fa mib fa mib fa mib fa mib8) r |
+    \t {mi8( fad mi} \t {fad mi fad)} | \t {mi\>( fad mi} \t {fad mi fad} mi8\!) r |
 
     %%% Placando assai %%%
+    r2 sol~\pp sol2. r4 |
     r2 sol~ sol2. r4 |
-    r2 sol~ sol2. r4 |
-    sol,2 solb fa mi2.~ mi r4 |
+    sol,2\>( solb fa \ten mi2.~\!) mi r4 |
 
     %%% Andante a piacere %%%
-    r2 mib~ mib mi4 r |
-    r2 mib~ mib mi4 r |
+    r2 mib~\p( mib\> mi4\!) r |
+    r2 mib~( mib\> mi4\!) r |
+    r2 \ten mib~ mib2. r4 |
     r2 mib~ mib2. r4 |
-    r2 mib~ mib2. r4 |
-    r2 mib' mi4 fa8 mi4.
-    re'4 lab mib2 |
-    si4. reb
-    R1 r2 si~ si4 si la2 si2. r4 |
+    r2 mib'\mf( mi4 fa8 mi4.)
+    re'4\>( lab mib2 |
+    si4. reb\!)
+    R1 r2 si~\p( si4 si\< la2\> si2.\!) r4 |
     R1*3 R2*3 R2.*6
-    r8 mi~ \t {mi mi mi} \t {fa fa fa} \t {sol sol sol} |
-    r  sib~ \t {sib sib sib} \t {do do do} \t {reb reb reb} |
-    \t {mib mib mib} \t {solb solb solb} \t {lab lab lab} r4 |
+    r8 mi~--\f\< \t {mi mi mi} \t {fa-- fa fa} \t {sol-- sol sol\!} |
+    r  sib~--\< \t {sib sib sib} \t {do-- do do} \t {reb-- reb reb} |
+    \t {mib-- mib mib} \t {solb-- solb solb} \t {lab-- lab lab\!} r4 |
     R1 R2. R1 R2. R1 R2. R1 R2.
-    sib,2 sib4 sib sib4. sib8~sib4 r |
+    sib,2--\ff sib4-- sib-- sib4. sib8~sib4 r |
     sib2 r4 sib2 r4 si4. r8 si4 re r re8. re16 re8 re~|
     re4 re r8 re4 sol,8 |
 

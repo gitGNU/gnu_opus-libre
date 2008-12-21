@@ -336,11 +336,11 @@ ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
 InterludeTroisSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R1 R2. R1 R2. R1 R2.
-    si,8 lab si lab si lab si do | si lab si lab si do16 r |
-    si8 lab si lab si lab si do | si lab si lab si do16 r |
+    si,8\p( lab) si( lab) si( lab) si---. do---. | si( lab) si( lab) si---. do16---. r |
+    \simile si8 lab si lab si lab si do | si lab si lab si do16 r |
     reb8 sib reb sib reb mib | reb sib reb mi16 r |
-    reb8 sib reb sib reb mib | reb sib reb mi16 r |
-    fa8 re fa solb si lab si do | R2*4
+    reb8\mf sib reb sib reb mib | reb sib reb mi16 r |
+    fa8\f( re) fa( solb) si\<( lab) si( do\!) | R2*4
   }
 }
 
@@ -350,29 +350,29 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
 
-    R2. r16 la la la re4 do re8 la4. r4 | r16 la la la
-    \acciaccatura dod16 re4 \acciaccatura si16 do4
-    \acciaccatura mib16 re8 la4. r4 | R2.*4
-    re,,4 r2 R2. re4 r2 R2. re4 r2 R2.*3
-    lab'4 lab lab sib2~ \tt {sib16 la sol fa lab} |
-    mi2.~ mi4 r2 | r8 sib' r4 r8 sib |
-    mi,2 r4 r8 sib' r4 r8 sib |
-    mi,2 sib'8 mi,~ mi2 r4 R2.
-    reb8 r r4 r2 | R2. R1 R2. R2 R2. R2 R2. |
-    reb'2~ reb4 r2 | R1*5 R2 R2. R1
-    r2 sib~ sib2. r4 | r2 sib~ sib2. r4 |
+    R2. r16 la-.\mp la--( la--) re4-.( do--) re8-.( la4.--) r4 | r16 la-.\mf la-. la-.
+    \acciaccatura dod16 re4-- \acciaccatura si16 do4--
+    \acciaccatura mib16 re8-.( la4.--) r4 | R2.*4
+    re,,4--->\mf r2 R2. re4---> r2 R2. re4---> r2 R2.*3
+    lab'4--\p lab-- lab-- \ten sib2~-- \tt {sib16 la( sol fa lab)} |
+    \ten mi2.~--\f mi4 r2 | r8 sib'-> r4 r8 sib-> |
+    mi,2---> r4 r8 sib'-> r4 r8 sib-> |
+    mi,2---> sib'8-. mi,~-> mi2 r4 R2.
+    reb8-> r r4 r2 | R2. R1 R2. R2 R2. R2 R2. |
+    \ten reb'2~--\p reb4 r2 | R1*5 R2 R2. R1
+    r2 \ten sib~\pp sib2. r4 | r2 sib~ sib2. r4 |
     r2 lab~ lab2. r4 | r2 lab~ lab2. r4 |
-    r2 sib'4 solb fa4. reb |
-    r2 fa4 solb fa4. fa4 r8 |
-    dod,2 re4 mi sol1~sol~sol2. r4 | R1*3 R2*3 R2.*6
+    r2 sib'4\mp( solb fa4. reb) |
+    r2 fa4\>( solb fa4. fa4\!) r8 |
+    dod,2->\mp( re4\> mi \ten sol1~) sol~ sol2. r4 | R1*3 R2*3 R2.*6
 
-    do4.  si'8~ si16 re8. mi8 r |
-    do,4. re'8~ re16 mi8. fa8 r |
-    do,4 do r8 fad, r4 R1
-    la8 lab reb, do' fa, mi' la, r r4 r2 |
-    r4 la8 r sol r reb r si' r fa' r mib, r la r r2 |
+    do4.--->\f si'8~\<( si16 re8. mi8\!) r |
+    do,4.---> re'8~( re16 mi8. fa8) r |
+    do,4---> do---> r8 fad,-.-> r4 R1
+    la8-.\mp lab-. reb,-. do'-. fa,-. mi'-. la,-.-> r r4 r2 |
+    r4 la8-.\p r sol-. r reb-. r si'-. r fa'-. r mib,-. r la-.-> r r2 |
     R1 R2.
-    sol2. r4 sol2 r8 dod4. | sol2 r4 sol2 r4 fa2 r4 fa2. r4 r fa4. mib |
+    sol2.--\f r4 sol2 r8 dod4. | sol2 r4 sol2 r4 fa2 r4 fa2. r4 r fa4. mib |
 
     re2 r4 | r8 re' r | sold,2 si4~si8 dod4 |
     re2 | r8 re r | la4. sib8~ sib8. do16~do4 |
