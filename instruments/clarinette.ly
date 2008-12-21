@@ -527,7 +527,6 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     sib2 r4 R2.*2 sib8\p( solb fa reb do lab |
     sol mib re mib sol lab do\> reb fa solb sib4~\!) | sib2 r4 | R2.*2
 
-<<<<<<< HEAD:instruments/clarinette.ly
     R1. R1 R1. R1 R1. r2 sib,4->\mf r | R1.
     solb'8\mp( lab4) solb8 \ten la2--~la1.~la2. r4 |
     R1.*5 r2 mi,4-.\sfz r | R1. R1 R1. mi'4-.\sfz r r2 |
