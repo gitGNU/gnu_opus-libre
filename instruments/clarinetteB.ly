@@ -512,14 +512,14 @@ ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux
 
 InterludeTroisClarinetteDeux = { \ClarinetteBasse
   \relative {
-    sol,4 mi8 r r4 r | sol mi8 r r4 |
-    sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
-    sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
+    sol,4\mf( mi8) r r4 r | sol( mi8) r r4 |
+    sol8( mi) sol( mi) sol( mi) sol---. lab---. | sol( mi) sol( mi) sol---. lab16---. r |
+    \simile sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
     sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
     sol8 mi sol mi sol mi sol lab | sol mi sol mi sol lab16 r |
     sol8 mi sol mi sol lab | sol mi sol lab16 r |
-    sol8 mi sol mi sol lab | sol mi sol lab16 r |
-    sol8 mi sol lab | si lab si do | R2*4
+    sol8\f mi sol mi sol lab | sol mi sol lab16 r |
+    sol8\f( mi) sol( lab) | si\<( lab) si( do\!) | R2*4
   }
 }
 

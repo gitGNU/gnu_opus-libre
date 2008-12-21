@@ -437,11 +437,11 @@ ActeUnSceneTroisTerFluteDeux = { \Piccolo
 InterludeTroisFluteDeux = { \FluteDeux
   \relative {
     R1 R2. R1 R2. R1 R2. R1 R2.
-    dod2. r4 dod2 r4 |
-    do'4. fa8 mib solb |
-    do,4 r8 fad,32 la do fa |
-    sol2 fa8 sib sol4. r8 |
-    do2 mib4 lab | R2*4
+    dod2.--\p r4 dod2-- r4 |
+    do'4.\p( fa8) mib( solb) |
+    do,4-- r8 fad,32\<( la) do fa |
+    sol2--\mf fa8( sib) sol4.-- r8 |
+    do2-- mib4\<( lab\!) | R2*4
   }
 }
 

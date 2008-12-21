@@ -393,7 +393,7 @@ ActeUnSceneTroisTerContrebasse = { \Contrebasse
 
 InterludeTroisContrebasse = { \Contrebasse
   \relative {
-    sol,,4\upbow mi\thumbpizz r2 | sol4\upbow mi\thumbpizz r |
+    sol,,4\p(\upbow mi)\thumbpizz r2 | sol4(\upbow mi)\thumbpizz r |
     sol8\upbow mi\thumbpizz sol\upbow mi\thumbpizz
     sol\upbow mi\thumbpizz \pizz sol lab |
     \arco sol\upbow mi\thumbpizz sol\upbow mi\thumbpizz
@@ -402,17 +402,17 @@ InterludeTroisContrebasse = { \Contrebasse
     sol mi sol mi sol lab |
     sol mi sol mi sol mi sol lab |
     sol mi sol mi sol r |
-    r \arco mi r mi r mi sol lab |
+    r \arco mi-.\mf( r mi-.) r mi-.( sol-. lab-.) |
     r mi r mi sol mi |
     r mi r mi sol lab |
     r mi sol mi |
-    r <mi mi'> r <mi mi'> r <mi mi'> |
+    r <mi mi'>\f r <mi mi'> r <mi mi'> |
     r <mi mi'> r <mi mi'> |
     r <mi mi'> r <mi mi'> |
-    r <mi sol'> r <mi sol'> |
+    r <mi sol'>\ff r <mi sol'> |
     sol16 mi sol lab si lab si do |
-    mib do mib mi sol mi sol lab |
-    sol8 re sol re la8 r r4 |
+    mib\< do mib mi sol mi sol lab |
+    sol8->\! re-> sol-> re-> la8\sfz r r4 |
   }
 }
 

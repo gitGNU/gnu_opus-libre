@@ -336,11 +336,11 @@ ActeUnSceneTroisTerSaxophoneDeux = { \SaxophoneBaryton
 InterludeTroisSaxophoneDeux = { \SaxophoneBaryton
   \relative {
     R1 R2. R1 R2. R1 R2.
-    si,8 lab si lab si lab si do | si lab si lab si do16 r |
-    si8 lab si lab si lab si do | si lab si lab si do16 r |
+    si,8\p( lab) si( lab) si( lab) si---. do---. | si( lab) si( lab) si---. do16---. r |
+    \simile si8 lab si lab si lab si do | si lab si lab si do16 r |
     reb8 sib reb sib reb mib | reb sib reb mi16 r |
-    reb8 sib reb sib reb mib | reb sib reb mi16 r |
-    fa8 re fa solb si lab si do | R2*4
+    reb8\mf sib reb sib reb mib | reb sib reb mi16 r |
+    fa8\f( re) fa( solb) si\<( lab) si( do\!) | R2*4
   }
 }
 

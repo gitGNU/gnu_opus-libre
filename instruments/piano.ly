@@ -1055,46 +1055,46 @@ ActeUnSceneTroisTerPiano = { \Piano
 InterludeTroisPiano = { \Piano
   \PianoDeuxMains
   \relative {
-    r2 r4 <do reb>8 r |
-    r2 <do reb>8 r | R1 R2. \clef bass
-    <do,mib si'>8 <do mib si'>4 <do mib si'>
-    <do mib si'> <do mib si'>8 |
-    <do mib si'> <do mib si'>4 <do mib si'> <do mib si'>8 |
-    <mi! sol do mib> <mi sol do mib>4 <mi sol do mib>
+    r2 r4 <do reb>8-.\pp r |
+    r2 <do reb>8-. r | R1 R2. \clef bass
+    <do,mib si'>8-.\pp <do mib si'>4-- <do mib si'>--
+    <do mib si'>-- <do mib si'>8-. |
+    <do mib si'>-. <do mib si'>4-- <do mib si'>-- <do mib si'>8-. |
+    \simile <mi! sol do mib> <mi sol do mib>4 <mi sol do mib>
     <mi sol do mib> <mi sol do mib>8 |
     <mi sol do mib> <mi sol do mib>4 <mi sol do mib> <fa lab reb mi>8 |
-    <mi sol do mib> <mi sol do mib>4 <mi sol do mib>
+    <mi sol do mib>\ppsempre <mi sol do mib>4 <mi sol do mib>
     <mi sol do mib> <mi sol do mib>8 |
     <mi sol do mib> <mi sol do mib>4 <mi sol do mib> <mi sol do mib>8 |
-    <fa si> <re sold> <fa si> <re sold> <fa si> <reb do'> |
+    <fa si>( <re sold>) <fa si>( <re sold>) <fa si>( <reb do'>) |
     <fa si> <re sold> <fa si> <re sold> \clef treble |
-    <lab' si dod re sol>4 <lab si dod re sol> <lab si dod re sol> |
+    <lab' si dod re sol>4\mp <lab si dod re sol> <lab si dod re sol> |
     <lab si dod re sol> <lab si dod re sol> |
     <si re fad sol sib> <si re fad sol sib> |
     <si re fad sol sib> <si re fad sol sib> \clef bass |
-    \stemDown sol16 \stemUp \mg sol,, sol' \stemDown \md mi' \stemUp \mg mi,, mi'
+    \stemDown \ind #"staccato" sol16\f \stemUp \mg sol,, sol' \stemDown \md mi' \stemUp \mg mi,, mi'
     \stemDown \md mi' \stemUp \mg sold, |
     \stemDown \md sold' \stemUp \mg mi, mi' \stemDown \md do' \stemUp \mg sold,
     \stemDown \md sold' \stemUp \mg mi \stemDown \md mi' \clef treble | \stemNeutral s4
-    r16 re' sib' dod | <fad, lad dod fa!>8 r r4 |
+    r16 re'\< sib' dod | <fad, lad dod fa!>8->\! r r4 |
   }
   \relative {
-    r2 r4 re,8 r |
-    r2 re8 r | R1 R2.
-    <mi, sol>4 <mi sol> <mi sol> <mi sol> |
-    <mi sol> <mi sol> <mi sol> |
+    r2 r4 re,8-. r |
+    r2 re8-. r | R1 R2.
+    <mi, sol>4-- <mi sol>-- <mi sol>-- <mi sol>-- |
+    <mi sol>-- <mi sol>-- <mi sol>-- |
     <mi si'> <mi si'> <mi si'> <mi si'> |
     <mi si'> <mi si'> <mi si'> |
     <mi si'> <mi si'> <mi si'> <mi si'> |
     <mi si'> <mi si'> <mi si'> |
-    r8 <mi sol> r <mi sol> r <mi sol> |
+    r8 <mi sol>-. r <mi sol>-. r <mi sol>-. |
     r <mi sol> r <mi sol> |
     r <mi sol mi'> r <mi sol mi'> r <mi sol mi'> |
     r <mi sol mi'> r <mi sol mi'> |
     r <mi sol mi'> r <mi sol mi'> r <mi sol mi'> r <mi sol mi'> |
     s2 s2 si'16 \md si' \mg sol \md sol' \mg \clef treble
     re sib' dod8 \clef bass |
-    <la,, la'>8 r r4 |
+    <la,, la'>8-> r r4 |
   }
 }
 

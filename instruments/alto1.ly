@@ -595,25 +595,25 @@ ActeUnSceneTroisTerAltoUn = { \AltoUn
 
 InterludeTroisAltoUn = { \AltoUn
   \relative {
-    r8 \pizz mib, r mib r mib re' mib, |
-    r mib r mib re' mib, |
+    r8 \pizz mib,\pp r mib r mib re'-> mib, |
+    r mib r mib re'-> mib, |
     r mib r4 r2 | R2. R1 R2. \arco
-    <sol mib'>1~ <sol mib'>2 r4 |
-    r8 mi r mi r mi r mi | r mi r mi r mi |
-    <dod'la'>8 <dod la'>4 <dod la'> <dod la'>8 |
-    <dod la'> <dod la'>4 <dod la'>8 |
-    <si sol'>16 <si sol'> <sold mi'> <sold mi'>
+    \ten <sol mib'>1~\pp <sol mib'>2 r4 |
+    r8 mi---.\mp r mi---. r mi---. r mi---. | r mi---. r mi---. r mi---. |
+    <dod'la'>8-. <dod la'>4-- <dod la'>-- <dod la'>8-. |
+    <dod la'>-. <dod la'>4--( <dod la'>8-.) |
+    <si sol'>16\f <si sol'> <sold mi'> <sold mi'>
     <si sol'> <si sol'> <sold mi'> <sold mi'>
     <si sol'> <si sol'> <do lab'> <do lab'> |
     <si sol'> <si sol'> <sold mi'> <sold mi'>
     <si sol'> <si sol'> <do lab'> <do lab'> \clef treble
     <re sib'> <re sib'> <si sol'> <si sol'>
     <re sib'> <re sib'> <red si'> <red si'> |
-    <fad re'> <fad re'> <red si'> <red si'>
+    <fad re'>\< <fad re'> <red si'> <red si'>
     <fad re'> <fad re'> <sol mib'>8 \clef alto
-    sol,16:32 mi: sol: lab: si: lab: si: do: |
-    mib: do: mib: mi: sol: mi: sol: lab: | si4 r \clef treble
-    fad'8 r r4 |
+    sol,16:32\mf mi: sol: lab: si: lab: si: do: |
+    mib:\< do: mib: mi: sol: mi: sol: lab: | si4--->\! r \clef treble
+    fad'8\sffz r r4 |
   }
 }
 

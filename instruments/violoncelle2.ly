@@ -517,19 +517,19 @@ ActeUnSceneTroisTerVioloncelleDeux = { \VioloncelleDeux
 
 InterludeTroisVioloncelleDeux = { \VioloncelleDeux
   \relative {
-    r8 \pizz re, r re r re r re | r re r re r re |
-    r4 \arco re2.~ re2 r4 R1 R2. R1 R2.
-    <sol,dod>4 <sol dod> <sol dod> <sol dod>8 <lab re> |
-    <sol dod>4 <sol dod> <sol dod>8 <lab re> |
-    <sol dod>4 <sol dod> <sol dod>8 <lab re> |
+    r8 \pizz re,\pp r re r re r re | r re r re r re |
+    r4 \arco \ten re2.~\pp re2 r4 R1 R2. R1 R2.
+    <sol,dod>4\downbow\p <sol dod>\downbow <sol dod>\downbow <sol dod>8-.( <lab re>-.) |
+    <sol dod>4\downbow <sol dod>\downbow <sol dod>8-.( <lab re>-.) |
+    \simile <sol dod>4 <sol dod> <sol dod>8 <lab re> |
     <sol dod>4 <sol dod> |
-    r8 <mi re'> r <mi re'> r <mi dod'> |
+    r8 <mi re'>\f r <mi re'> r <mi dod'> |
     r <mi re'> r <mi dod'> |
     r <mi red'> r <sold mi'> |
-    r <sol mi'> r <si sol'> |
-    sol16:32 mi: sol: lab: si: lab: si: do: |
-    mib: do: mib: mi: sol: mi: sol: lab: \clef tenor
-    si4 mi sol8 r r4 |
+    r <sol mi'>\ff r <si sol'> |
+    sol16:32\mf mi: sol: lab: si: lab: si: do: |
+    mib:\< do: mib: mi: sol: mi: sol: lab: \clef tenor
+    si4--->\! mi---> sol8\sffz r r4 |
   }
 }
 
