@@ -672,34 +672,34 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
     \repeat tremolo 12 {si32\pp la}
     \repeat tremolo 16 {si la}
     si8 r16 fad'16:32~\mp\< fad8:32 sold8:32~ sold16:32 si8.:32 |
-    <sol dod>2--->\f( <sol dod>4--) <sol dod>-- <sol dod>4. <sol dod>8~ <sol dod>4 r |
-    sib2 r4 sib2 r4 <re, si'>2 <re si'>4 si'8 re, re si' si re, si' re, |
-    si' re, re si' si mib, si' mib, |
-    <re, dod'>2.~ <re dod'>8 r4 |
-    lad'16 sold sold lad lad sold sold lad lad sold sold lad |
-    lad sold sold lad lad sold |
-    dod2~ dod8 r4 |
-    sol16 fa fa sol sol fa fa sol | sol fa fa sol sol fa fa sol |
-    sib2~ sib8 r4 |
-    lad16 sold sold lad lad sold sold lad |
-    lad sold sold lad lad sold sold lad |
-    si sold sold si si sold sold si | si sold sold si si sold |
-    sold si si sold sold si si sold |
-    sold si si sold sold si si sold |
-    R2 R4. r4 fad16 la re fa sib re, fa la |
+    <sol dod>2--->\f( <sol dod>4--) <sol dod>-- <sol dod>4.---> <sol dod>8~-- <sol dod>4 r |
+    sib2---> r4 sib2---> r4 <re, si'>2--->\ff <re si'>4-- \st {si'8-> re, re si' si-> re, si'-> re, |
+    si'-> re, re si' si-> mib, si'-> mib,} |
+    \ten <re, dod'>2.~\ff <re dod'>8 r4 |
+    lad'16\upbow\mf( sold) sold( lad) lad( sold) sold( lad) lad( sold) sold( lad) |
+    lad( sold) sold( lad) lad( sold) |
+    \ten dod2~\ff dod8 r4 |
+    sol16\mf( fa) fa( sol) sol( fa) fa( sol) | sol( fa) fa( sol) sol( fa) fa( sol) |
+    sib2~--\f sib8 r4 |
+    lad16\mp( sold) sold( lad) lad( sold) sold( lad) |
+    lad( sold) sold( lad) lad( sold) sold( lad) |
+    si( sold) sold( si) si( sold) sold( si) | si( sold) sold( si) si( sold) |
+    sold\<( si) si( sold) sold( si) si( sold) |
+    sold( si) si( sold) sold( si) si( sold) |
+    R2\! R4. r4 \ind #"détaché" fad16\< la re fa sib re, fa la |
 
-    re8 re, re, re re re re re |
-    re re re re re re re re |
+    re8->\fp \st {re, re, re re re re re} |
+    \simile re re re re re re re re |
     re re re re re re re re |
     re' re re, re re' re re, re |
     re' re re, re re' re re, re |
-    la'16 la la la la la la la la la la la la la la la |
-    la la la la la la la la do do do do do do do do |
-    do do do do mib mib mib mib mib mib mib mib mib mib mib mib |
-    re re re re re, re re re re' re re re re, re re re | re4 r r2 |
+    \cresc la'16 la la la la la la la la la la la la la la la |
+    la la la la la la la la do-> do do do do do do do |
+    do do do do mib-> mib mib mib mib mib mib mib mib mib mib mib |
+    re->\f re re re re, re re re re'\> re re re re, re re re | re4\! r r2 |
     R1*2 R2 R2.*2 R2 R1 |
-    \pizz re4 r2 R2.*2 re4 r2 R2. re4 r2 R2. re4 r2 R2. re4 r2 R2.*2 |
-    re4 r2 R2. re4 r2 re4 r2 R2.*2 re4 r2 r4 sib' r r re, r |
+    \pizz re4\mp r2 R2.*2 re4 r2 R2. re4 r2 R2. re4 r2 R2. re4 r2 R2.*2 |
+    re4 r2 R2. re4 r2 re4 r2 R2.*2 re4 r2 r4 sib'\mp\> r r re,\! r |
     R1. R1 R1. R1 R1. R1 R1. R1
     \arco \ten la''1.\mp ~ la2. r4 | R1.*5 R1 R1.
     \ten do,,1\pp ~ do1. do4-.->\ffsubito r r2 R1.*5 R1 R1. R1

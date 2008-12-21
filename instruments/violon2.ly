@@ -614,36 +614,36 @@ ActeUnSceneQuatreViolonDeux = { \ViolonDeux
     <fa sib>-> <fa sib>-> <fa sib>-> r |
     R1 R2. \ten la,1~\mf la4 r2 |
     la1:32\fpp <do mi>2.--\mf <dod re>2-- si4-- dod-- | re2-- r4 |
-    <fa' dod'>2--->\f( <fa dod'>4--) <fa dod'>-- <fa dod'>4. <fa dod'>8~<fa dod'>4 r8 dod16 fa |
-    la2 \t {la,8 dod fa} la2 \t {si,8 red sol} |
-    si8. si16 si8 si4 si8 | si8. si16 si8 si4 si8~si4 |
-    <red, si'>~ \t {<red si'>8 <red si'>4~} \t {<red si'> <re si'>8~}<re si'>r|
-    dod,16 si si dod dod si si dod dod si si dod |
-    dod si si dod dod si | lab2.~lab8 r4 |
-    dod16 si si dod dod si si dod | dod si si dod dod si |
-    do2~do4. r8 |
-    mi16 re re mi mi re re mi | mi re re mi mi re |
-    dod2~dod4 r |
-    re16 mi mi re re mi mi re | re mi mi re re mi |
-    mi re re mi mi re re mi mi re re mi sol fa fa sol |
-    R2 R4. r2 sib16 dod fad la |
+    <fa' dod'>2--->\f( <fa dod'>4--) <fa dod'>-- <fa dod'>4.---> <fa dod'>8~-- <fa dod'>4 r8 dod16\<( fa) |
+    la2\! \t {la,8\<( dod fa)} la2--->\! \t {si,8\<( red sol)} |
+    si8.--->\ff si16 si8-. si4-> si8-. | si8.---> si16 si8 si4-> si8~-> si4 |
+    <red, si'>~---> \t {<red si'>8 <red si'>4~--->} \t {<red si'> <re si'>8~--->}<re si'>r|
+    dod,16\upbow\f( si) si( dod) dod( si) si( dod) dod( si) si( dod) |
+    dod( si) si( dod) dod( si) | \ten lab2.~-- lab8 r4 |
+    dod16\upbow\f( si) si( dod) dod( si) si( dod) | dod( si) si( dod) dod( si) |
+    do2~-- do4. r8 |
+    mi16\upbow\f( re) re( mi) mi( re) re( mi) | mi( re) re( mi) mi( re) |
+    dod2~--\mf dod4 r |
+    re16\mp( mi) mi( re) re( mi) mi( re) | re( mi) mi( re) re( mi) |
+    mi\<( re) re( mi) mi( re) re( mi) mi( re) re( mi) sol( fa) fa( sol) |
+    R2\! R4. r2 \ind #"détaché" sib16\p\< dod fad la |
 
-    re4 r r dod16 do sib do, |
-    re,4\CaV re16 re re re re re re re re re re re |
+    re4->\f r r \simile dod16 do sib do, |
+    re,4->\CaV re16\pleggiero re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
-    mib mib mib mib mib mib mib mib mib mib mib mib mib mib mib mib |
-    mib mib mib mib mib mib mib mib fad fad fad fad fad fad fad fad |
-    fad fad fad fad sold sold sold sold sold sold sold sold sold sold sold sold |
-    re'8 re, re re' re re, re4 | R1*3 R2 R2.*2 R2 R1
+    \cresc mib-> mib mib mib mib mib mib mib mib mib mib mib mib mib mib mib |
+    mib mib mib mib mib mib mib mib fad-> fad fad fad fad fad fad fad |
+    fad fad fad fad sold-> sold sold sold sold sold sold sold sold sold sold sold |
+    re'8->\f re, re re' re\> re, re4\! | R1*3 R2 R2.*2 R2 R1
 
     %%% Piu lento %%%
     R2.*11
-    r4 do2~do r4 |
+    r4 \flaut do2~ do r4 |
     r4 re2~ re r4 |
     r4 mib2~ mib r4 | R2.
-    r4 mi!2~ mi r4 | R2.
+    r4 \ordin mi!2~ mi r4 | R2.
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
     R1 R1. R1 R1.
     R1 R1.*5 R1 R1. R1

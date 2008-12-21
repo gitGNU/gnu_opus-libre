@@ -487,29 +487,29 @@ ActeUnSceneQuatreFluteUn = { \FluteUn
     re2.~\mp) re8 r r4 r2 |
     fad,2.--\mp( fad2-- fad4-- fad-- fad2--) r8 \t {dod'16( fa la)} |
     dod8.--->\f dod16 dod8-. dod~-> dod \t {dod16( fa, la)} dod4-- |
-    r16 dod dod8 \t {dod,16 fa la} dod8~dod dod dod dod|
-    \t {fa,8 la dod~} \t {dod dod4} dod8 dod |
-    r dod \t {dod4 dod8} \t {fa,16 la dod4} |
-    red4. r8 red4 | red4 r8 \t {red,16 sol si}
-    red8. red16 red8 red~ red4 red r8 fa4 r8 |
+    r16 dod dod8-. \t {dod,16( fa la)} dod8~---> dod dod-> dod-> dod->|
+    \t {fa,8--->( la dod~)} \t {dod dod4--} dod8-> dod-> |
+    r dod-> \t {dod4--->\< dod8->} \t {fa,16( la dod4--->)} |
+    red4.--->\! r8 red4-- | red4---> r8 \t {red,16\<( sol si)}
+    red8.--->\! red16 red8-. red~---> red4 red-- r8 fa4-- r8 |
 
-    sold2\startTrillSpan sold8\stopTrillSpan sold, sold, r4 |
-    lad2~lad8 r | R4.
-    sold''2\startTrillSpan sold8\stopTrillSpan sold, sold, |
-    sol2~sol8 r r4 |
-    sold''2\startTrillSpan sold8\stopTrillSpan sold, sold, |
-    la''8 r r4 R2*2
-    mi,,4.~mi4 r16 do'8.~do4 lab' |
-    R2 R4. r2 r8 \t {sold16 si dod} |
+    sold2->\fp\<\startTrillSpan sold8-.->\!\stopTrillSpan sold,-. sold,-. r4 |
+    \ten lad2~\mf lad8 r | R4.
+    sold''2\fp\<\startTrillSpan sold8-.->\!\stopTrillSpan sold,-. sold,-. |
+    \ten sol2~\mf sol8 r r4 |
+    sold''2\fp\<\startTrillSpan sold8-.\!\stopTrillSpan sold,-. sold,-. |
+    la''8-.\sfz r r4 R2*2
+    mi,,4.~\mp mi4 r16 do'8.~--\mf\< do4 lab'-- |
+    R2\! R4. r2 r8 \t {sold16\<( si dod)} |
 
-    re4 r r2 | r4 r8 \t {dod,16 sib do} \t {sol4 sib do} |
-    dod4 r r2 | R1 r2 \t {mib,4 re mib} | fad2. r4 |
-    r8 re'4 mi8 fa4. sol8~sol4 sib do dod |
-    re4 r r2 R1*3 R2 R2.*2 R2 R1
+    re4->\f r r2 | r4 r8 \t {dod,16\sfz\> sib do} \t {sol4\< sib do} |
+    dod4->\! r r2 | R1 r2 \t {mib,4\mp( re mib} | fad2.--) r4 |
+    r8 re'4\mp( mi8 fa4. sol8~sol4) sib--\mf\<( do-- dod-- |
+    re4--->\!) r r2 R1*3 R2 R2.*2 R2 R1
 
     %%% Piu lento %%%
     R2.*21
-    R1. R1 R1. R1 R1. r2 la,4 r | R1. R1
+    R1. R1 R1. R1 R1. r2 la,4->\mf r | R1. R1
     la4\mf( sol fa mi fa8\< mi fa sol la2\! mib4) r |
     R1.*5 r2 mib4-.\sfz r | R1. R1 r2 r4 la\mp( sol fa |
     mi-.\sfz) r r2 | R1.*5 r2 la4-.\sfz r |

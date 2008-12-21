@@ -574,36 +574,36 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
     \t {lab-- lab lab} \t {la-- la la} \t {la la la\!} r4 |
     R1 R2. R1 R2. R1 R2. R1 R2.
     la8.--->\f la16 la8-. la~-> la la-. la4-- |
-    r16 la la8~ la la~ la la la la |
-    \t {dod, fa la~} \t {la la4} la8 la |
-    r la \t {la4 la la} |
-    sol4. r8 sol4 | si r si8. si16 si8 si~ |
-    si4 si r8 si4 re,8 |
-    reb2.~reb8 r4 | sol,,2~sol8 r |
-    re16 la' si mi la re | lab'2~lab8 r4 |
-    sol,,2~sol8 r \ttt {re16 sol do fa sib mib} |
-    lab2~lab8 r4 | sol8 r r \t {r16 mi re} | mi8 r r4 |
-    r4 si,~si4.~si2 mib' | R2 R4. R2.
+    r16 la la8~-- la la~ la la-> la-> la-> |
+    \t {dod,--->( fa la~)} \t {la la4--} la8-> la-> |
+    r la-> \t {la4--->\< la---> la--->} |
+    sol4.---> r8 sol4-- | si---> r si8.-> si16 si8-. si~---> |
+    si4 si-- r8 si4-- re,8-. |
+    \ten reb2.~--\ff reb8 r4 | \ten sol,,2~\mf sol8 r |
+    re16\<( la' si mi) la( re) | \ten lab'2~\f lab8 r4 |
+    \ten sol,,2~\mf sol8 r \ttt {re16\<( sol do) fa( sib mib)} |
+    lab2~\f lab8 r4 | sol8-.\sfz r r \t {r16 mi\mp( re} | mi8-.) r r4 |
+    r4 \ten si,~\p si4.~ si2 mib'--\mf\< | R2\! R4. R2.
 
-    re'4 r r2 | re,,1 mib fa solb2. r4 |
-    r2 solb4. lab8~lab4 si2 mi4~ mi la reb, lab |
-    re4 r r2 | R1*3-\markup "Prenez la Cl. basse"
+    re'4->\f r r2 | \ten re,,1\pp( mib fa solb2.) r4 |
+    r2 solb4.\p\<( lab8~lab4 si2 mi4~\! mi) la--\mf\<( reb,-- lab-- |
+    re4--->\!) r r2 | R1*3-\markup "Prenez la Cl. basse"
     \ClarinetteBasse R2 R2.*2 R2 R1
 
     %%% Piu lento %%%
-    re,,,2.~re2 r4 | R2.
-    re2.~re2 r4 | re2 r4
-    \t {r8 \ottava #1 sib''' solb}
-    \t {fa \ottava #0 dob sib} \t {re, reb mib,} |
-    re2.~re2 r4 |
-    re2.~re2 r4 | R2. re2 r4 |
-    \t { \ottava #1 re'''8 sib la} \t {fad mi re}
-    \t { \ottava #0 si sib fad} |
-    re,2.~re2 r4 | R2.*2
+    \ten re,,,2.~\p re2 r4 | R2.
+    \simile re2.~ re2 r4 | re2 r4
+    \t {r8 \ottava #1 sib'''\p( solb}
+    \t {fa \ottava #0 dob sib} \t {re,\> reb mib,} |
+    \ten re2.~\!) re2 r4 |
+    re2.~ re2 r4 | R2. re2 r4 |
+    \t { \ottava #1 re'''8\mp( sib la} \t {fad mi re}
+    \t { \ottava #0 si\> sib fad} |
+    re,2.~\!) re2 r4 | R2.*2
     re2 r4 | R2.*2
 
     R1. R1 R1. R1 R1.
-    r2 si'4-.->\mf r | R1. re8(\mp mi4) re8 \ten fa2--~fa1.( solb2.) r4 |
+    r2 si'4->\mf r | R1. re8(\mp mi4) re8 \ten fa2--~fa1.( solb2.) r4 |
     R1.*5 r2 fa,4-.\sfz r | R1. R1 R1. do'4-.\sfz r r2 |
     R1.*5 r2 si4-.\sfz r | r2 r4 do-.-> reb-.-> r | r2 la4---> r |
   }

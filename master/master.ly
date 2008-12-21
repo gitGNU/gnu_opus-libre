@@ -73,20 +73,20 @@
   \header {
     piece = \Separateur
   }
-} %}
+} %
 \score {
   \InterludeTrois
   \header {
     piece = \InterludeTitre
     illustration = \Arrosoir
   }
-} %{
+} %}
 \score {
   \ActeUnSceneQuatre
   \header {
     piece = \FinaleTitre
   }
-} %
+} %{
 \score {
   \Entracte
   \header {

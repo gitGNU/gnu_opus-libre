@@ -602,36 +602,36 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
     <re sol>-> <re sol>-> <re sol>-> r |
     R1 R2. R1 R2.
     la1:32\fpp <si red>2.--\mf <dod re>2-- sib4-- do-- | dod2-- r4 |
-    <dod' la'>2--->\f( <dod la'>4--) <dod la'>-- <dod la'>4. <dod la'>8~<dod la'>4 r8 la16 dod |
-    fa2 \t {fa,8 la dod} fa2 \t {sol,8 si red} |
-    sol8. sol16 sol8 sol4 sol8 | sol8. sol16 sol8 sol4 sol8~sol4 |
-    <si, sold'>~\t{<si sold'>8<si sold'>4~}\t{<si sold'><si sold'>8~}<si sold'>r|
-    si,16 dod dod si si dod dod si si dod dod si |
-    si dod dod si si dod | sol2.~sol8 r4 |
-    si16 dod dod si si dod dod si | si dod dod si si dod |
-    sol2~sol4. r8 |
-    re'16 mi mi re re mi mi re | re mi mi re re mi |
-    re2~re4 r |
-    mi16 re re mi mi re re mi | mi re re mi mi re |
-    re mi mi re re mi mi re re mi mi re re mi mi re |
-    R2 R4. r2 sib'16 dod fad la |
+    <dod' la'>2--->\f( <dod la'>4--) <dod la'>-- <dod la'>4.---> <dod la'>8~-- <dod la'>4 r8 la16\<( dod) |
+    fa2\! \t {fa,8\<( la dod)} fa2--->\! \t {sol,8\<( si red)} |
+    sol8.--->\ff sol16 sol8-. sol4-> sol8-. | sol8.---> sol16 sol8-. sol4-> sol8~-> sol4 |
+    <si, sold'>~--->\t{<si sold'>8<si sold'>4~--->}\t{<si sold'> <si sold'>8~--->}<si sold'>r|
+    si,16\upbow\f( dod) dod( si) si( dod) dod( si) si( dod) dod( si) |
+    si( dod) dod( si) si( dod) | \ten sol2.~-- sol8 r4 |
+    si16\upbow\f( dod) dod( si) si( dod) dod( si) | si( dod) dod( si) si( dod) |
+    sol2~-- sol4. r8 |
+    re'16\upbow\f( mi) mi( re) re( mi) mi( re) | re( mi) mi( re) re( mi) |
+    re2~--\mf re4 r |
+    mi16\mp( re) re( mi) mi( re) re( mi) | mi( re) re( mi) mi( re) |
+    re\<( mi) mi( re) re( mi) mi( re) re( mi) mi( re) re( mi) mi( re) |
+    R2\! R4. r2 \ind #"détaché" sib'16\p\< dod fad la |
 
-    re4 r r dod16 do sib do, |
-    re,4\CaV re16 re re re re re re re re re re re |
+    re4->\f r r \simile dod16 do sib do, |
+    re,4->\CaV re16\pleggiero re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
     re re re re re re re re re re re re re re re re |
-    do do do do do do do do do do do do do do do do |
-    do do do do do do do do mib mib mib mib mib mib mib mib |
-    mib mib mib mib fa? fa fa fa fa fa fa fa fa fa fa fa |
-    re8 re re4 re' re,8 re | R1*3 R2 R2.*2 R2 R1
+    \cresc do-> do do do do do do do do do do do do do do do |
+    do do do do do do do do mib-> mib mib mib mib mib mib mib |
+    mib mib mib mib fa?-> fa fa fa fa fa fa fa fa fa fa fa |
+    re8->\f re re4 re'\> re,8 re\! | R1*3 R2 R2.*2 R2 R1
 
     %%% Piu lento %%%
     R2.*11
-    r4 sib2~ sib r4 |
+    r4 \flaut sib2~ sib r4 |
     r4 sib2~ sib r4 |
     r4 sib2~ sib r4 | R2.
-    r4 sib2~ sib r4 | R2.
+    r4 \ordin sib2~ sib r4 | R2.
     R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
     R1 R1. R1 R1.
     R1 R1.*5 R1 R1. R1
