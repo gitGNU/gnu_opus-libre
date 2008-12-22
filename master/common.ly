@@ -32,9 +32,10 @@
   left-margin = #13
   right-margin = #7
   line-width = #(- paper-width (+ left-margin right-margin))
+  bottom-margin = #25
   %{ line-width = #(- paper-width (* 40 mm))
   %horizontal-shift = 5
-  bottom-margin = #20
+  bottom-margin = #30
   ragged-bottom = ##t
   ragged-last-bottom = ##t
   left-margin = #20
@@ -57,7 +58,7 @@
 
 %% Look and feel --------------------------------------------------%
   %FIXME: this doesn't work well.
-  %systemSeparatorMarkup = \slashSeparator
+  systemSeparatorMarkup = \markup \vspace #5
 
   %FIXME: duplicate code with titling.ly
   scoreTitleMarkup = \markup {

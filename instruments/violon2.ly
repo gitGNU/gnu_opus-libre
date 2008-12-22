@@ -569,7 +569,7 @@ ActeUnSceneQuatreViolonDeux = { \ViolonDeux
     re2.:32\fpp re8-.-> r mi'--(\mp la--) re--( la--) |
     mi8-. r r2 <mi, la>8-.-> r \t {la\mf mi'( si')} \t {fad' si,( mi,)} |
     la,8 r r2 R2.*2
-    sol2.:32\pp\< sol8-.->\! r sib,16( do mib fa) fad\<( sold si dod) |
+    sol2.:32\pp\< sol8-.->\mp r sib,16( do mib fa) fad\<( sold si dod) |
     re8--\f sol-- do16-- re,\< re re sol8--\! la,-- | re4---> r2 |
     re8-- sold-- dod16-- red,\< red red sold8--\! la,-- | re4---> r2 |
     r16 la\<\upbow la la re8\! r r4 |
@@ -586,7 +586,7 @@ ActeUnSceneQuatreViolonDeux = { \ViolonDeux
     la!8-- mi!-- la--( si--) red16->( mi red si) |
     la->\ff( re mi sold) mi->( re la re) mi->( sold) mi( re) |
     la->( re mi sold) mi->( re la re) mi->\<( sold) mi( re) |
-    mi8->\! r r4 r2 | \dwnb {<re,, mi>4 <re mi> <re mi> <re mi>2. r4 |
+    mi8->\! r r4 r2 | \dwnb {<re,, mi>4\mp <re mi> <re mi> <re mi>2. r4 |
     <re mi>4 <re mi> <re mi> <re mi>2 <re mi>4 <re mi> <re mi> |
     <mib fa>2 <mib fa>4 <mib fa> <mib fa> |
     <mi fad>2} <mi fad>\>\upbow <mi fad>4--\! |
@@ -602,7 +602,7 @@ ActeUnSceneQuatreViolonDeux = { \ViolonDeux
     \repeat tremolo 16 {sold32 si} sold2. r4 |
     \t {r <la'dod>--\mf <la dod>--} \t {<la dod>-- <la dod>-- <la dod>--} |
     \t {<sold re'>--\< <sold re'>-- <sold re'>--} <la mib'>8-- <la mib'>-- |
-    \t {r4 <re fad>--\f <re fad>--} \t {<re fad>-- <re fad>-- <re fad>--} |
+    \t {r4\! <re fad>--\f <re fad>--} \t {<re fad>-- <re fad>-- <re fad>--} |
     \t {<mi sold>\< <mi sold> <mi sold>} <red la'>8 <red la'>\! |
     R1*7 R2*3 R2.*2
     \pizz si,4\mp r re\< fa\! r2 dod4 r2 sol'4 r2 |

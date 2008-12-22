@@ -16,8 +16,8 @@
 #(set! instruments `(
                         (cello-one         ("Violoncelle 1" . "Vlc. 1"))
                         (cello-two         ("Violoncelle 2" . "Vlc. 2"))
-                        (clarinet-one      ("Clarinette 1" . "Cl. 1"))
-                        (clarinet-a        ("Clarinette en La" . "Cl. 2"))
+                        (clarinet-bes      ("Clarinette en Sib" . "Cl.sib"))
+                        (clarinet-a        ("Clarinette en La" . "Cl.la"))
                         (clarinet-bass     ("Clarinette Basse" . "Cl. B"))
                         (double-bass       ("Contrebasse" . "Cb."))
                         (flute-one         ("Flute 1" . "Fl. 1"))

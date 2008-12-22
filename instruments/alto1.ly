@@ -635,7 +635,7 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
     la8\< la la la la la |
     la->\! r re,16( mi sol la) do( re mi sol) |
     la8->\f r r mi,-. \t {mi-> mi mi} mi-> mi-- mi-> mi-- mi-> mi-- |
-    r sib'4--\upbow mi-- sib8-. | mi,-> mi-- mi-> mi-- \t {mi\>\< mi mi} |
+    r sib'4--\upbow mi-- sib8-. | mi,-> mi-- mi-> mi-- \t {mi->\< mi mi} |
     r\! sib'4--\upbow mi-- sib8-. | mi4--\downbow mi--\downbow sib-- |
     mi,16->\<( la re mi) sold4->\! la,16->\<( re mi sold) | la4->\! re,16->\<( mi sold la) re4->\! |
     la8-.-> la,8:16\mp \ind #"leggiero" la2.:16|
@@ -646,7 +646,7 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
     la2\upbow\> la4--\! |
 
     %%% Placando assai %%%
-    sol2.--\p( dod,4--) sol'2.-- r4 |
+    sol2.--\upbow\p( dod,4--) sol'2.-- r4 |
     sol2.--\upbow( dod,4--) sol'2.-- r4 |
     dod,2\upbow\<( re mib) \ten mi2.~--\p mi r4 |
     \t {r la--\mp( la--} \t {la-- la-- la--)} \t {la--( la-- la--} \t {sib-- sib-- sib--)} |
@@ -655,9 +655,10 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
     \t {r si si} \t {si si si} \t {si si si} \t {si si si} |
     \t {r <fad lad>--\mf <fad lad>--} \t {<fad lad>-- <fad lad>-- <fad lad>--}
     \t {<fa si>--\< <fa si>-- <fa si>--} <solb do>8-- <solb do>-- |
-    \t {r4 <si red>--\f <si red>--} \t {<si red>-- <si red>-- <si red>--}
+    \t {r4\! <si red>--\f <si red>--} \t {<si red>-- <si red>-- <si red>--}
     \t {<si fad'>\< <si fad'><si fad'>} <dod sol'>8 <dod sol'>\! |
-    R1*4 r2 dod~\p dod4 dod\< mi2\>( dod2.\!) r4 | R2*3 R2.*2
+    R1*4 r2 \longHairpins {dod~\p dod4 dod\< mi2\>( dod2.\!) } r4 |
+    R2*3 R2.*2
 
     \pizz fad,4\mp r mib\< la\! r2 fa4 r2 si4 r2 |
 

@@ -364,15 +364,16 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
     r2 lab~ lab2. r4 | r2 lab~ lab2. r4 |
     r2 sib'4\mp( solb fa4. reb) |
     r2 fa4\>( solb fa4. fa4\!) r8 |
-    dod,2->\mp( re4\> mi \ten sol1~) sol~ sol2. r4 | R1*3 R2*3 R2.*6
+    dod,2->\mp( re4\> mi \ten sol1\!~) sol~ sol2. r4 | R1*3 R2*3 R2.*6
 
     do4.--->\f si'8~\<( si16 re8. mi8\!) r |
-    do,4.---> re'8~( re16 mi8. fa8) r |
+    do,4.---> re'8~\<( re16 mi8. fa8\!) r |
     do,4---> do---> r8 fad,-.-> r4 R1
     la8-.\mp lab-. reb,-. do'-. fa,-. mi'-. la,-.-> r r4 r2 |
     r4 la8-.\p r sol-. r reb-. r si'-. r fa'-. r mib,-. r la-.-> r r2 |
     R1 R2.
-    sol2.--\f r4 sol2-- r8 dod4.-- | sol2-- r4 sol2-- r4 fa2-- r4 fa2.-- r4 r fa4.--\ff mib-- |
+    sol2.--\f r4 sol2-- r8 dod4.-- |
+    sol2-- r4 sol2-- r4 fa2-- r4 fa2.-- r4 r fa4.--\ff mib-- |
 
     re2-- r4 | r8 re'-.->\f r | sold,2-- si4~-- si8 dod4-- |
     re2-- | r8 re-. r | la4.-- sib8~-- sib8. do16~-- do4 |

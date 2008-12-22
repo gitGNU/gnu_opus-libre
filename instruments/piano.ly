@@ -8,14 +8,14 @@
 \include "italiano.ly"
 
 Piano = {
-  \set PianoStaff.instrumentName = \markup { \hcenter-in #27.5 "Piano  "}
-  \set PianoStaff.shortInstrumentName = "Piano.  "
+  \set PianoStaff.instrumentName = \markup { \hcenter-in #27.5 "Piano"}
+  \set PianoStaff.shortInstrumentName = "Pno."
   \set PianoStaff.midiInstrument = "acoustic grand"
 }
 
-ProloguePiano = { \Piano
+ProloguePiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     \partial 4 r4 R2.*3 R1
     mi2\rfz \laissezVibrer r4 \clef bass mi,4--\laissezVibrer|
     r4 mi2->\laissezVibrer | r8 \tt {mi,32( fa mi' mi fa} red'4)\laissezVibrer|
@@ -250,9 +250,9 @@ ProloguePiano = { \Piano
   }
 }
 
-ActeUnSceneUnPiano = { \Piano
+ActeUnSceneUnPiano = {
   \PianoDeuxMains
-  \relative { \clef bass
+  \relative { \Piano \clef bass
     \cmb #"p" #"sombre" do,8( do \t {do\> do do} do4--\! do--)\laissezVibrer s2. |
     r8 do\<( \t {do\> do do} do4--\! do--)\laissezVibrer s2. |
     r8 do\<( \t {do\> do do} do4--\! do--)\laissezVibrer s2. |
@@ -454,9 +454,9 @@ ActeUnSceneUnPiano = { \Piano
   }
 }
 
-ActeUnSceneUnBisPiano = { \Piano
+ActeUnSceneUnBisPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R2.*6
     \stemUp \mg
     \ttt { \slurUp lab,16( sib reb mi sol do } \md
@@ -576,9 +576,9 @@ ActeUnSceneUnBisPiano = { \Piano
   }
 }
 
-InterludeUnPiano = { \Piano
+InterludeUnPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R1. R1*3 R1. R1 R1.*2 R1*2 R1.*2 R1 R2. R2 R2.
     <fa' sol sib do fad>1\laissezVibrer \mf
     r4 r8 \ind #"en dehors" mi,32->(\ff fa16.)~ fa4 r |
@@ -619,9 +619,9 @@ InterludeUnPiano = { \Piano
   }
 }
 
-ActeUnSceneDeuxPiano = { \Piano
+ActeUnSceneDeuxPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     %%% Air de la Soprano2 %%%
 
     \repeat unfold 6 {R2.*2 R1*2} R2. | \clef bass
@@ -857,9 +857,9 @@ ActeUnSceneDeuxPiano = { \Piano
   }
 }
 
-InterludeDeuxPiano = { \Piano
+InterludeDeuxPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R1 R2. R2 R2. R2 R2. R2
     R2*13 r4 \acciaccatura red'16 <mi, mi'>4\p
     <si re>1~ <si re>~ <si re>~ <si re>4 r r2 | R2.
@@ -868,6 +868,7 @@ InterludeDeuxPiano = { \Piano
   }
   \relative {
     R1 R2. R2 R2. R2 R2. R2
+    %R2*6 la2 R2*7   %%%%%% TEST whether both staves appear or not.
     R2*14
     \pl {<la, mi'>1~ <la mi'>~ <la mi'>~ <la mi'>4 }
     {s2 mi''4-.--\laissezVibrer mi,-.--\laissezVibrer
@@ -879,9 +880,9 @@ InterludeDeuxPiano = { \Piano
   }
 }
 
-ActeUnSceneTroisPiano = { \Piano
+ActeUnSceneTroisPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R2.*20 \clef bass sol2.~\mp sol4 r sol8\> sol sol2.~\! sol4 r8 sol \t {sol\> sol sol} |
 
     %%% Lamento %%%
@@ -934,9 +935,9 @@ ActeUnSceneTroisPiano = { \Piano
   }
 }
 
-ActeUnSceneTroisBisPiano = { \Piano
+ActeUnSceneTroisBisPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R1*3 \cmb #"p" #"très clair" <do fad>8 <red la'>~ <red la'>2 r4 |
     R1*2 <mi, la red>8 <sol do fad>~<sol do fad>2 r4 |
     R1 r2 <do mib>4-- <si fa'>-- | \ten <fad fad'>1~ <fad fad'>~ <fad fad'>2. r4 |
@@ -984,9 +985,9 @@ ActeUnSceneTroisBisPiano = { \Piano
   }
 }
 
-ActeUnSceneTroisTerPiano = { \Piano
+ActeUnSceneTroisTerPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R2*3 R2. R2*2 R2.
     <re re'>8-.->\p r r2 R2.*2 |
     <si fad' sol re'>2\p\arpeggio r4 |
@@ -1052,9 +1053,9 @@ ActeUnSceneTroisTerPiano = { \Piano
   }
 }
 
-InterludeTroisPiano = { \Piano
+InterludeTroisPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     r2 r4 <do reb>8-.\pp r |
     r2 <do reb>8-. r | R1 R2. \clef bass
     <do,mib si'>8-.\pp <do mib si'>4-- <do mib si'>--
@@ -1098,9 +1099,9 @@ InterludeTroisPiano = { \Piano
   }
 }
 
-ActeUnSceneQuatrePiano = { \Piano
+ActeUnSceneQuatrePiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     \partial 4 r4 R1*5/8 R2*3 R1*5/8 R2*2 R2. R2*2
     s2 R1 R2. <la'do re>2--\pp( <la do re>--) <la do re>--( <la do re>--)
     <sol la do re>--( <sol la do re>-- <sol la do re>--) |
@@ -1240,7 +1241,7 @@ ActeUnSceneQuatrePiano = { \Piano
     R1*5 R2 R2. R1
 
     %%% Andante a piacere %%%
-    fa2\p( <sib mib>~<sib mib> reb,8) r r4 |
+    fa2( <sib mib>~<sib mib> reb,8) r r4 |
     fa2 <sib mib>~<sib mib> reb,8 r r4 |
     <fa, fa'>2 <lab'mib'>~<lab mib'> reb,8 r r4 |
     <fa, fa'>2 <lab'mib'>~<lab mib'> reb,8 r r4 |
@@ -1337,9 +1338,9 @@ ActeUnSceneQuatrePiano = { \Piano
   }
 }
 
-EntractePiano = { \Piano
+EntractePiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R2*9
     R1*12
     r4 <lab'' sol'>8 <lab sol'> <sol lab'>4 r R1
@@ -1487,9 +1488,9 @@ EntractePiano = { \Piano
   }
 }
 
-ActeDeuxSceneUnPiano = { \Piano
+ActeDeuxSceneUnPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R2.*4 R2 R2.*2 R2 \clef bass r8
     <sol lab sib dob re>\arpeggio ~
     <sol lab sib dob re>2\laissezVibrer R2.*2 R2 |
@@ -1573,9 +1574,9 @@ ActeDeuxSceneUnPiano = { \Piano
   }
 }
 
-ActeDeuxSceneUnBisPiano = { \Piano
+ActeDeuxSceneUnBisPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R1 R2. R2 R1*5/4*6 \clef bass |
     r1 mi,,4 <red sold> r r2 mi4 |
     <red sold> r sol <mi si'> r |
@@ -1795,9 +1796,9 @@ ActeDeuxSceneUnBisPiano = { \Piano
   }
 }
 
-ActeDeuxSceneDeuxPiano = { \Piano
+ActeDeuxSceneDeuxPiano = {
   \PianoDeuxMains
-  \relative {
+  \relative { \Piano
     R1.*6 R1*2 R2. \clef bass |
     \mg <re,, re'>16 \md <re' sol lab dod> <re sol lab dod> \mg <fa, fa'>
     \md <re' sol lab dod> \mg <re, re'> \md <re' sol lab dod> \mg <fa, fa'>

@@ -352,8 +352,9 @@ ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
     R2-\fermataMarkup
     R1 R2. R1*2 R1. R1*2 R1. R1*2
 
-    r16 la'-.\mp la-. la-. re4--( do--) re8-.( la4.--) r4 | r16 mi'-.\mf mi-. mi-. la4--( sol--) | la8-.( mi4.--) r4 |
-    R2.*5 re,,4---> r2 R2. re4---> r2 R2. re4---> r2 R2.*3 la'4--\p la-- la-- |
+    r16 la'-.\mp la-. la-. re4--( do--) re8-.( la4.--) r4 |
+    r16 mi'-.\mf mi-. mi-. la4--( sol--) | la8-.( mi4.--) r4 |
+    R2.*5 re,,4--->\mf r2 R2. re4---> r2 R2. re4---> r2 R2.*3 la'4--\p la-- la-- |
     sib8-- mi,-> r mi-. \t {mi\< mi mi} | \ten mi2.~--\f mi4 r2 |
     r4 r8 mi-> r4 mi2---> r4 | r4 r8 mi-> r4 mi---> mi---> r8 mi~-> mi2 r4 |
     R2. reb8-> r r4 r2 R2. reb2.--\p r4 R2. reb4.-- r8 R2. reb4.-- r8 R2. \ten si'2~-- si4 r2 |

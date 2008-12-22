@@ -426,8 +426,9 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     \pizz la,4\mp r2 | la,4 r2 | do4 r2 | do4 r2 |
     R2. \arco la'2~\mf\< la4\glissando do2.\! | mi4 r
     sold,,~\f\upbow | sold dod-- si-- | re-- r2 |
-    re4-- r r16 la'\upbow\< la la | re,4--\! r2 | re4-- r r16 la\< la la |
-    re4-- r8 re'-.\mp\upbow fad,-. si-. |
+    re4-- r r16 la'\upbow\< la la | re,4--\! r2 |
+    re4-- r r16 la\< la la |
+    re4--\! r8 re'-.\mp\upbow fad,-. si-. |
     mib,4-- r8 reb4--\downbow sol8-. | do,4-- r8 fa-.\upbow la,-. re-. |
     fad,4-- r8 la4--\downbow mib'8-. | lab4 r8 la-. reb,-. solb-. |
     sib,4-- r8 sib4--\downbow\< sib8-- | mi4->\! r8 mi,-. \t {mi\< mi mi} |
@@ -446,8 +447,8 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
     \arco \ten fa,1~\mp fa2 reb fa1~ fa2 reb |
     sol2.\mf r4 r8 dod4--\upbow sol-- dod8-. |
     sol2.---> r4 r8 dod4--\upbow sol-- sol8-. |
-    dod8\pp r r4 r2 |
-    sol1~sol~sol~sol~sol~sol2. r4 |
+    dod8-.\sfz r r4 r2 |
+    sol1\pp~sol~sol~sol~sol~sol2. r4 |
     R2*3 R2.*6
 
     %%% A tempo %%%

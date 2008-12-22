@@ -563,7 +563,7 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
 
     %%% Placando assai %%%
     dod2.--\p(\upbow dod4--) sol2.-- r4 | dod2.--\upbow( dod4--) sol2.-- r4 |
-    dod,2\upbow( re mib) \ten mi2.~--\p mi2. r4 |
+    dod,2\upbow(\< re mib) \ten mi2.~--\p mi2. r4 |
 
     %%% Andante a piacere %%%
     \ten fa1~\p fa2 reb fa1~ fa2 reb |
@@ -586,7 +586,8 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
     <mi sold>16) <sol si>8.-- \clef treble |
     <dod, dod'>2--->\!( <dod dod'>4--) <dod dod'>-- |
     <dod dod'>4.---> <dod dod'>8~-- <dod dod'>4 r \clef bass |
-    <sol,sol'>2---> r4 sol'\downbow sol\downbow sol\downbow fa2--->\downbow\ff fa4-- |
+    <sol,sol'>2---> r4 sol'\<\downbow sol\downbow sol\downbow
+    fa2--->\downbow\ff fa4-- |
     fa~---> \t {fa8 fa4~--->} \t {fa4 fa8~--->} fa4 |
     r fa~--->( fa8 mib-.) \t {mib-> mib-> fad->} |
 
@@ -627,7 +628,7 @@ ActeUnSceneQuatreVioloncelleUn = { \VioloncelleUn
     la4-> r fa8 sol do sib reb mib, lab solb |
     la4-> sib8 mib dod si fad sold fa\< re mi' si |
     la4->\! r r2 | R1. R1
-    \arco sold,2\p( \ten la1
+    \arco sold,2\p( \ten la1)
     sib4-.->\ffsubito r \pizz sib\mp reb |
     la4-> r r2 r4 mi''8 si |
     la4-> r r2 dod8 red, sold fad |

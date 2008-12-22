@@ -7,7 +7,7 @@
 
 \include "italiano.ly"
 ClarinetteUn = {
-  #(make-instrument-name 'clarinet-one "clarinet" 25)
+  #(make-instrument-name 'clarinet-a "clarinet" 25)
   \clef treble
 }
 
@@ -498,7 +498,7 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     r2 mib'\mf( mi4 fa8 mi4.)
     re'4\>( lab mib2 |
     si4. reb\!)
-    R1 r2 si~\p( si4 si\< la2\> si2.\!) r4 |
+    R1 r2 \longHairpins { si~\p( si4 si\< la2\> si2.\!) } r4 |
     R1*3 R2*3 R2.*6
     r8 mi~--\f\< \t {mi mi mi} \t {fa-- fa fa} \t {sol-- sol sol\!} |
     r  sib~--\< \t {sib sib sib} \t {do-- do do} \t {reb-- reb reb} |
@@ -516,7 +516,7 @@ ActeUnSceneQuatreClarinetteUn = { \ClarinetteUn
     r \ten la,~\p la4.~ la2 reb'--\mf\< |
     R2\! R4. R2. re4->\f r r2 |
     \ten re,1~\pp( re2 do~ do sib la2.) r4 |
-    r2 la4.\p\<( mib'8~| mib4 solb2\! re'4~)| re--\mf( mi--\< si-- do,-- |
+    r2 la4.\p\<( mib'8~| mib4 solb2 re'4\!~| re) mi--\<(\mf si-- do,-- |
     re,->\!) r r2 | R1*2 \st {re'8\p re re re re re re re |
     R2 re8 re re re re re R2. re8\pp re re re} R1
 

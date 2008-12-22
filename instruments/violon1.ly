@@ -610,9 +610,9 @@ ActeUnSceneQuatreViolonUn = { \ViolonUn
     \repeat tremolo 16 {la32( dod} la2.) r4 |
     \repeat tremolo 16 {sold32( si} sold2.) r4 |
     \repeat tremolo 16 {sold32 si} sold2. r4 |
-    \t {r <la'dod>--\mp <la dod>--} \t {<la dod>-- <la dod>-- <la dod>--} |
+    \t {r <la'dod>--\mf <la dod>--} \t {<la dod>-- <la dod>-- <la dod>--} |
     \t {<sold re'>--\< <sold re'>-- <sold re'>--} <la mib'>8-- <la mib'>-- |
-    \t {r4 <re fad>--\f <re fad>--} \t {<re fad>-- <re fad>-- <re fad>--} |
+    \t {r4\! <re fad>--\f <re fad>--} \t {<re fad>-- <re fad>-- <re fad>--} |
     \t {<mi sold>--\< <mi sold>-- <mi sold>--} <red la'>8-- <red la'>--\! |
     R1*7 R2*3 R2.*3
     r2 r8 r16 \t {do,32\<(\upbow reb mib} |

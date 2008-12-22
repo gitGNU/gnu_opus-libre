@@ -560,13 +560,13 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
 
     %%% Agitato %%%
     do2.:32\fpp re: <re la'>: <re la'>8-.-> r la'--\mf( mi'--) si'--( mi,--) | la, r r2 |
-    R2.*2 re,2.:32\<\pp re8-.->\! r sib16( do mib fa) fad\<( sold si dod) |
+    R2.*2 re,2.:32\<\pp re8-.->\mp r sib16( do mib fa) fad\<( sold si dod) |
     re8--\f sol-- do-- re,-- sol16-- la,\< la la | re4--->\! r2 |
     re8-- sold-- dod-- red,-- sold16-- la,\< la la | re4--->\! r2 |
     re,4-> r16 la\mp\< la la re8\! r |
     <re mib>4-- r8 <re mib>-. \t {<re mib> <re mib> <re mib>} |
-    <re mi>4-- <re mi>-- <re mi>-- |
-    <re fad>-- r8 <re fad>-. \t {<re fad> <re fad> <re fad>} |
+    \dwnb {<re mi>4-- <re mi>-- <re mi>-- |
+    <re fad>--} r8 <re fad>-. \t {<re fad> <re fad> <re fad>} |
     <re la'>4 <re la'> <re la'> | <re la'> r8 <re la'>-- r <la' mi'>-> |
     dod--\f( re--) dod--( la--) sol-- la-- | dod--( re--) dod--( la--) sol-- la-- |
     dod--( re--) dod--( la--) sol-- sib-- | re--( mib--) re--( sib--) lab-- sib-- |
@@ -584,13 +584,13 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
     \t {sold--\p( sold-- sold--} sold~-- \ten sold2.) r4 |
 
     %%% Andante a piacere %%%
-    \t {r4 dod--\mp( dod--} \t {dod-- dod-- dod--)} \t {re--( re-- re--)} \t {mib--( mib-- mib--)} |
+    \t {r4 dod--\mp\upbow( dod--} \t {dod-- dod-- dod--)} \t {re--( re-- re--)} \t {mib--( mib-- mib--)} |
     \t {r4 dod--\upbow( dod--} \t {dod-- dod-- dod--)} \t {re--( re-- re--)} \t {mib--( mib-- mib--)} |
     \t {r4 \simile fa fa} \t {fa fa fa} \t {fad fad fad} \t {sol sol sol} |
     \t {r4 fa fa} \t {fa fa fa} \t {fad fad fad} \t {sol sol sol} |
     \t {r <red la'>--\mf <red la'>--} \t {<red la'>-- <red la'>-- <red la'>--} |
     \t {<mi sold>--\< <mi sold>-- <mi sold>--} <mi la>8-- <mi la>-- |
-    \t {r4 <lab re>--\f <lab re>--} \t {<lab re>-- <lab re>-- <lab re>--} |
+    \t {r4\! <lab re>--\f <lab re>--} \t {<lab re>-- <lab re>-- <lab re>--} |
     \t {<sib mi>\< <sib mi> <sib mi>} <sol mib'>8 <sol mib'>\! |
     R1*7 R2*3 R2.*2
     \pizz si,4\mp r lab\< do\! r2 sib4 r2 re4 r2 |

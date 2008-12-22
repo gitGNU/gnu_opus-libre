@@ -1077,10 +1077,10 @@ ActeUnSceneQuatrePercus = <<
       r8 sib4-- mi-- sib8-. | mi4-> mi32-> mi8.. sib8-. mi-> |
       R2. re2.:32\mf\<\glissando |
       dod4\sfz r r r8 r16 sol32\f sol | sol4-> r2 |
-      dod8->\> \t {dod16 dod dod} dod8 \t {dod16 dod-- dod-.} dod4--\! r |
+      dod8->\> \t {dod16 dod dod} dod8 \t {dod16 dod dod} dod4--\! r |
       r8 sol4--\mf dod-- sol8-. | dod8-> \t {dod16 dod dod} dod4-. |
       r8 sol4-- dod-- sol8-. | \tt {dod16\> dod dod dod dod} dod4-. |
-      r8 dod-. r2 | r8 dod4--\> sol8-. | dod--\mp \t {dod16 dod dod} dod4-. r |
+      r8 dod-.\! r2 | r8 dod4--\> sol8-. | dod--\mp \t {dod16 dod dod} dod4-. r |
 
       %%% Placando assai %%%
       dod2--\p r4 dod | sol2:32~\> sol4\! r |

@@ -8,6 +8,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%% Additional Inclusions %%%%%%%%%%%%%%%%%%%%%%%
 
+\layout { \includeScoreLayout }
+
 \include "./instruments/flute1.ly"
 \include "./instruments/flute2.ly"
 \include "./instruments/clarinette.ly"
@@ -26,8 +28,6 @@
 \include "./instruments/piano.ly"
 
 #(set-global-staff-size 12)
-
-\layout { \includeScoreLayout }
 
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 

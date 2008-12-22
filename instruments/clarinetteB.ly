@@ -13,7 +13,7 @@ ClarinetteBasse = {
 }
 
 ClarinetteDeux = {
-  #(make-instrument-name 'clarinet-a "clarinet" 25)
+  #(make-instrument-name 'clarinet-bes "clarinet" 25)
   \clef treble
 }
 
@@ -567,7 +567,7 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
     r2 fa\<( fad\> sol4\!) r |
     r2 fa\<( fad\> sol4\!) r |
     r2 dod\mf( re4. mib) fad2\>( re lab4. mib'\!) |
-    R1 r2 re,~\p( re4 re\< fa2\> re2.\!) r4 |
+    R1 r2 \longHairpins {re,~\p( re4 re\< fa2\> re2.\!) } r4 |
     R1*3 R2*3 R2.*6
     r8 sol~--\f\< \t {sol sol sol} \t {sib-- sib sib} \t {do-- do do\!} |
     r  reb~--\< \t {reb reb reb} \t {mib-- mib mib} \t {solb-- solb solb} |
@@ -577,7 +577,7 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
     r16 la la8~-- la la~ la la-> la-> la-> |
     \t {dod,--->( fa la~)} \t {la la4--} la8-> la-> |
     r la-> \t {la4--->\< la---> la--->} |
-    sol4.---> r8 sol4-- | si---> r si8.-> si16 si8-. si~---> |
+    sol4.--->\! r8 sol4-- | si---> r si8.-> si16 si8-. si~---> |
     si4 si-- r8 si4-- re,8-. |
     \ten reb2.~--\ff reb8 r4 | \ten sol,,2~\mf sol8 r |
     re16\<( la' si mi) la( re) | \ten lab'2~\f lab8 r4 |

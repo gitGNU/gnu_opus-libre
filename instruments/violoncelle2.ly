@@ -542,7 +542,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     %%% Agitato %%%
     r4 la8--\mf( re--) sol--( re--) | la-. r r2 |
     <do,sol'>2.:32\fpp <do sol'>8-.-> r r2 | r4 sib''8\mf fa4 fad8 |
-    re2~\< re4\glissando fa2.\! mi2.:32\pp\< la8-.-> r r4 mib16\<( do) sol( mi) |
+    re2~\< re4\glissando fa2.\! mi2.:32\pp\< la8-.->\mp r r4 mib16\<( do) sol( mi) |
     re4--\f r2 | re'8--\f si'-- mi16-- mi,\< mi mi la8--\! la,-- | re4---> r2 |
     re8-- dod'-- fad16-- fad,\< fad fad si8--\! la,-- | re4 r8 r-.\mp\upbow fad,-. si-. |
     mib,4-- r8 reb4--\downbow sol8-. | do4-- r8 fa\upbow la,-. re-. |
@@ -550,7 +550,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     sib,4-- r8 sib4--\downbow\< sib8-- | mi4->\! r8 mi,-. \t {mi\< mi mi} |
     mi4--\f\downbow mi--\downbow mi--\downbow | r8 sib'4--\<\upbow mi-- sib'8-. |
     lab16\!( sib lab sib) re( mib re mib) sib( re) sib( re) |
-    lab sib lab sib re mib re mib sib8 sib, |
+    lab( sib lab sib) re( mib re mib) sib8-- sib,-- |
     mi4--\downbow mi--\downbow sib8-. mi~-> | mi4 mi,-- re~---> | re fa2---> |
     dod2~\sfp dod8 r r4 | R2. dod2.\downbow r4 |
     R2. dod2\downbow R2. dod2\downbow R2.
@@ -558,7 +558,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
 
     %%% Placando assai %%%
     dod2.--\p(\upbow dod4--) sol2.-- r4 | dod2.--(\upbow dod4--) sol2.-- r4 |
-    dod,2(\upbow re mib) \ten mi2.~--\p mi2. r4 |
+    dod,2(\<\upbow re mib) \ten mi2.~--\p mi2. r4 |
 
     %%% Andante a piacere %%%
     \pizz fa4\mp r r2 r reb4 r |
@@ -566,7 +566,7 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
     \arco \ten fa1~\mp fa2 reb fa1~ fa2 reb |
     sol2.\mf r4 r8 dod,4--\upbow sol'-- dod,8-. |
     sol'2.---> r4 r8 dod,4--\upbow sol'-- sol8-. |
-    dod,8\sfz r r4 r2 | R1*6 R2*3 R2.*2
+    dod,8-.\sfz r r4 r2 | R1*6 R2*3 R2.*2
 
     %%% Poco a poco piu mosso %%%
     \pizz sol'4\mp r sol\< fad\! r2 la4 r2 sol4 r2 |

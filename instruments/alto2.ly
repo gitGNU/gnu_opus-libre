@@ -642,14 +642,15 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     sol2.--\p(\upbow dod,4--) sol'2.-- r4 |
     sol2.--(\upbow dod,4--) sol'2.-- r4 |
     dod,2\upbow\<( re mib) \ten mi2.~--\p mi r4 |
-    \t {r mib--\mp( mib--} \t {mib-- mib-- mib--)} \t {mib--( mib-- mib--)} \t {mi--( mi-- mi--)} |
+    \t {r mib--\upbow\mp( mib--} \t {mib-- mib-- mib--)} \t {mib--( mib-- mib--)} \t {mi--( mi-- mi--)} |
     \t {r mib--\upbow( mib--} \t {mib-- mib-- mib--)} \t {mib--( mib-- mib--)} \t {mi--( mi-- mi--)} |
     \t {r \simile mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
     \t {r mib mib} \t {mib mib mib} \t {mib mib mib} \t {mib mib mib} |
     \t {r do--\mf do--} \t {do-- do-- do--} \t {re--\< re-- re--} mib8-- mib-- |
-    \t {r4 <fa si>--\f <fa si>--} \t {<fa si>-- <fa si>-- <fa si>--}
+    \t {r4\! <fa si>--\f <fa si>--} \t {<fa si>-- <fa si>-- <fa si>--}
     \t {<fa si>\< <fa si> <fa si>} <fa dod'>8 <fa dod'>\! |
-    R1*4 r2 lad~\p lad4 lad\< sold2\>( lad2.\!) r4 | R2*3 R2.*2
+    R1*4 r2 \longHairpins {lad~\p lad4 lad\< sold2\>( lad2.\!)} r4 |
+    R2*3 R2.*2
 
     \pizz do,4\mp r mib\< mi\! r2 fa4 r2 fad4 r2 |
 
