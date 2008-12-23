@@ -16,7 +16,7 @@
   composer = \OperaPartition
   tagline = \OperaNotice
   illustration = \Couronne
-  scoretype = \VocalScore
+  scoretype = \FullScore
   copyright = \Copyright
 }
 
@@ -29,10 +29,9 @@
   #(define page-breaking ly:minimal-breaking)
 
 %% Horizontal margins ---------------------------------------------%
-  left-margin = #13
-  right-margin = #7
+  left-margin = #(+ 13 (* 3 mm))
+  right-margin = #(+ 7 (* 3 mm))
   line-width = #(- paper-width (+ left-margin right-margin))
-  bottom-margin = #25
   %{ line-width = #(- paper-width (* 40 mm))
   %horizontal-shift = 5
   bottom-margin = #30
@@ -43,22 +42,22 @@
   between-system-padding = #5 %}
 
 %% Vertical margins -----------------------------------------------%
-  page-top-space = #(* 5 mm)
-  %between-system-space = 10 \mm
-  %between-system-padding = 4 \mm
-  before-title-space = 10 \mm
-  between-title-space = 2 \mm
-  after-title-space = 5 \mm
+  page-top-space = #(* 7 mm)
+  between-system-space = 10 \mm
+  between-system-padding = #5
+  %before-title-space = 10 \mm
+  %between-title-space = 2 \mm
+  %after-title-space = 5 \mm
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-  bottom-margin = #10
+  bottom-margin = #30
 
 %% Default titling ------------------------------------------------%
   bookTitleMarkup = \markup \null
 
 %% Look and feel --------------------------------------------------%
   %FIXME: this doesn't work well.
-  systemSeparatorMarkup = \markup \vspace #5
+  systemSeparatorMarkup = \markup { \null \vspace #10 \null }
 
   %FIXME: duplicate code with titling.ly
   scoreTitleMarkup = \markup {
@@ -66,9 +65,9 @@
       \fill-line {
         \center-column {
           \fontsize #10 \fromproperty #'header:acte
-          \vspace #1
+          \vspace #0.5
           \fontsize #6 \fromproperty #'header:piece
-          \vspace #1
+          \vspace #0.5
           \fromproperty #'header:dessin
         }
       }

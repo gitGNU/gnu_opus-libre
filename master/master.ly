@@ -10,19 +10,19 @@
 %%% Depends on: either vocal_score.ly or full_score.ly,
 %%% plus everything else.
 
-%{
+%
 \score {
   \Prologue
   \header {
     piece = \PrologueTitre
   }
-} %
+} %{
 \score {
   \Ouverture
   \header {
     piece = \OuvertureTitre
   }
-} %
+} %}
 \score {
   \ActeUnSceneUn
   \header {
@@ -48,14 +48,14 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %}
+} %
 \score {
   \InterludeDeux
   \header {
     piece = \InterludeTitre
     dessin = \Arrosoir
   }
-} %{
+} %
 \score {
   \ActeUnSceneTrois
   \header {
@@ -86,13 +86,13 @@
   \header {
     piece = \FinaleTitre
   }
-} %
+} %{
 \score {
   \Entracte
   \header {
     piece = \EntracteTitre
   }
-} %
+} %{
 %\pageBreak
 \score {
   \ActeDeuxSceneUn

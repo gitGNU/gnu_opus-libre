@@ -334,7 +334,7 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
     \ind #"détaché" re'8 mib re sib lab sib lab fa |
     re fa re do sol2\> | lab2.~\!| lab2 r4 |
     R1*2 R2.*2 R1*2 R2.*2 |
-    <re' la'!>1~\ppp\CaV <re la'>~\CaV |
+    <re la'!>1~\ppp\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>~\CaV |
     <re la'>1~\CaV <re la'>~\CaV |
     <re la'>2.~\CaV <re la'>2\CaV  r4|
@@ -350,7 +350,7 @@ ActeUnSceneDeuxViolonDeux = { \ViolonDeux
 
     %%% Récitatif %%%
 
-    r4 r8 mib,4.--\mp\downbow | do2.--\downbow~| do1~| do2 r4 |
+    r4 r8 mib4.--\mp\downbow | do2.--\downbow~| do1~| do2 r4 |
     r4 r8 re4.--\downbow |  si2.~--\downbow| si1~| si2 r4 |
     R2.| r4 r8 <re sib'>4--\mp\downbow <si! sol'>8~--\downbow|<si sol'>2.~|
     <si sol'>8 <si sol'>~ \t {<si sol'> <si sol'> <si sol'>}

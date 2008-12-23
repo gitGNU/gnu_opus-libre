@@ -59,18 +59,18 @@ PrologueSaxophoneUn = { \SaxAltoUn
     re,,4--\f) mib-- re-- | fa-- r2 | R2. |
 
     %%% Adagio %%%
-    R1*3-\markup "Mettez la sourdine" \ten mi1~\pp mi1.~ mi4 r r1 |
-    R1*2 \ten mi1~ mi1.~ mi4 r r1 |
+    R1*3 \ten \ind #"détimbré" mi1~\pp mi1.~ mi4 r r1 |
+    R1*2 \simile \ten mi1~ mi1.~ mi4 r r1 |
     R1*2 re'2\pp r4 |
 
     %%% Valse %%%
     sol,2 r4 | R2.*2
-    r4 re'2-- r4 do2-- | r4 si2-- r4 la-- r sol-- |
-    R2. R2 R2.*2-\markup "Enlevez la sourdine" R1
+    r4 \ind #"détimbré" re'2-- r4 do2-- | r4 si2-- r4 la-- r sol-- |
+    R2. R2 R2.*2 R1
     r2 fa'4\pp( do) | r reb( sib) |
     r do( la) r sib( fa) | r la( mi) |
     r fa-- r | r re-- r reb-- |
-    r do'2.--->\f si2 r8 \t {do16\<( dod re} |
+    r \ordin do'2.--->\f si2 r8 \t {do16\<( dod re} |
 
     %%% Vivo al fine %%%
     mib4\sfz) r | R2*3
@@ -148,8 +148,8 @@ ActeUnSceneUnSaxophoneUn = { \SaxAltoUn
     R1*2 r2 r4 sib,4---.\pp reb2--( sib8) r sib4---. |
     reb2--( sib8) r r4 | R1 r2 r4 sib---. reb2--( sib8) r sib4---. |
     reb2--( sib8) r r4 | R1*2 r2 r4 fad'8-.\pp r |
-    \st {mi r dod r si r sib' r | lab r fa r mi r r4 |
-    re8 r do r la} r r4 | R1
+    \st {mi( r dod r si) r sib' r | lab( r fa r mi) r r4 |
+    re8( r do r la)} r r4 | R1
 
     %%% Agitato %%%
     do2.\mf r4 | r do-- r do-- | R1
@@ -226,7 +226,7 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
 
     R2. R1 R2. R1 r2 r8 re\>( | mi4-.\!) r r2 | R2. r4 r16 \ind #"en dehors" re\mf re re sol2-- |
     r4 r16 lab-. lab-. lab-. reb4~--| reb r | R2 R2. R1*2 R2.
-    mi,,2.\p( | fad) r4 \mp\<(lad2 si | sold2.\!)~ sold~ sold4 r2 | r2 r8 sib'4.--\fsubito |
+    mi,,2.\p( | fad) r4 lad2\mp\<( si | sold2.\!)~ sold~ sold4 r2 | r2 r8 sib'4.--\fsubito |
 
     %%% Piu vivo %%%
     sol,4\sfz r2 | R1 R2.*2 R1
@@ -241,7 +241,7 @@ ActeUnSceneDeuxSaxophoneUn = { \SaxAltoUn
     r4 r16 dod-.-> r8 r4 | R2.
 
     %%% Poco allargando %%%
-    \t {fa,4--\ff( fa-- fa--)}
+    \t {fa,4--\f( fa-- fa--)}
     \t {fad--( fad-- fad--)}
     \t {sol--( sol-- sol--)}
     sold2( red\> dod\!) |
@@ -297,7 +297,7 @@ ActeUnSceneTroisSaxophoneUn = { \SaxAltoUn
 
 ActeUnSceneTroisBisSaxophoneUn = { \SaxAltoUn
   \relative {
-    R1-\markup "Mettez la sourdine" \ten sol~\pp sol R1 |
+    R1 \ten \ind #"détimbré" sol~\pp sol R1 |
     r2 \ten reb~ reb1 R1|
     r2 reb~ reb r | R1*7
     r2 sib'~\pp sib2. sib4( lab2 sib~) sib r4 sib( lab2. sib8) r |
@@ -309,14 +309,15 @@ ActeUnSceneTroisBisSaxophoneUn = { \SaxAltoUn
     reb4--\p r r2 reb4-- r r2 reb4-- r reb-- r reb-- r \simile reb-- r |
     reb8.( solb16) r4 reb8~(\t {reb16 solb do)} r8 r16 mi, |
     reb8--( do'-- reb'--) r reb,,4-- r16 la'8.-- | solb'2.\mp r4 | R1
-    r2 r4 sib,\pp( lab2\> sib\!) | r2 r4 la(\< sol2\> la~\!) la2. r4 |
+    r2 r4 sib,\pp( lab2\> sib\!) |
+    \longHairpins {r2 r4 la(\< sol2\> la~\!) la2. r4 } |
     R1*9
   }
 }
 
 ActeUnSceneTroisTerSaxophoneUn = { \SaxAltoUn
   \relative {
-    R2*3-\markup "Mettez la sourdine" R2. R2*2 R2.*7 R1*6 R2.*19
+    R2*3 R2. R2*2 R2.*7 R1*6 R2.*19
     r4 sib2--\pp | sib-- si4~-- si\> si\! r |
     r  sib2-- | sib-- si4~-- si\> si--\! r |
     r  re2--\p | re-- mib4~-- mib\> mib--\! r |
@@ -495,9 +496,9 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
     %%% Tempo I %%%
     R1 sib'4 r2 sib4 r sib r sib r2 |
     r4 \t {do,8 sib reb} la'2 r4 | si,4 r1\fermata |
-    R1*5/4*3-\markup "Mettez la sourdine"
-    mib'1*5/4 ~ mib4 r1 | R1*5/4*2
-    mi!1*5/4~ mi4 r1 | R1*5/4*12
+    R1*5/4*3
+    \ind #"détimbré" mib'1*5/4 ~ mib4 r1 | R1*5/4*2
+    \simile mi!1*5/4~ mi4 r1 | R1*5/4*12
   }
 }
 

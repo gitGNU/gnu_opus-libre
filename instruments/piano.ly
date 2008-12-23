@@ -132,10 +132,10 @@ ProloguePiano = {
     r4 \det {<fa'' lab reb>2\ppp | r4 <sib, mib solb>2 \ottava #0
     r4 <mi, la do>2 | r4 <sib mib solb>2 | r4 <sold dod mi>2 |
     r4 <sol sib mib>2 | r4 <fa lab reb> r <mib lab dob> } |
-    \mg \stemUp r8 re,8\p( mib sib' si \md fad'
+    \mg \stemUp r8 \slurUp re,8\p( mib sib' si \md fad'
     \stemNeutral sol8\< re' mib sib')\! | R2.*2
     \stemUp \t {r8 mi(\pp mib} \t {lab, sol do,} \t {si mi, mib} \mg
-    \t {lab, sol do,)} \md \stemNeutral |
+    \t {lab, sol do,)} \md \slurNeutral \stemNeutral |
     \det {r2 \pl <do' fa lab>2\ppp <dod' mi la> |
     r4 \pl <sib, reb solb>2 <la' re fa>2 |
     r4 <sold dod mi>2 r4 <fad la re>2 | r4 <fa lab reb>2 |
@@ -213,8 +213,8 @@ ProloguePiano = {
 
     %% FIXME: Issue #705
     \stemUp re,,,8->-. \md \stemDown re''-. \mg \stemDown re,-. \stemNeutral
-    <sold, sold'>(\< <si si'> <dod dod'>)\> |
-    \stemUp re,->-. \md \stemDown re''-. \mg \stemDown re,-. \stemNeutral
+    <sold, sold'>(\< <si si'> <dod dod'>) |
+    \stemUp re,->-.\! \md \stemDown re''-. \mg \stemDown re,-. \stemNeutral
     <sold, sold'>(\< <si si'> <dod dod'> |
     re fa sol <lab, reb lab'>4.)\!\laissezVibrer R4.*2
     s4.*10
@@ -232,9 +232,9 @@ ProloguePiano = {
     r4 <fa lab reb>2 | r4 <si, re sol>2 |
     r4 <la do fa>2 \clef bass r4 <fad si re>2 |
     r4 <fad la re> r <mi sol do> } |
-    \stemDown \t {sol,,8( re' sol} \t {sib sol sib}
+    \stemDown \slurDown \t {sol,,8( re' sol} \t {sib sol sib}
     \t {mib sib mib} \stemNeutral \t {fad mib fad} si4) | R2.*2
-    \md \stemDown re'8( sol, mi \mg si lab mib do-- sol--) |
+    \md \stemDown re'8( sol, mi \mg si lab mib do-- sol--) \slurNeutral |
     \det { \stemNeutral do,2*2\laissezVibrer s2. r4 <la'' do fa>2 |
     r4 <fa sib reb>2 r4 <mi la do>2 |
     r4 <re fa sib>2 r4 <la re fa> r <sold dod mi> } |

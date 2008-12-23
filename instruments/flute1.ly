@@ -375,11 +375,11 @@ ActeUnSceneTroisBisFluteUn = { \FluteUn
     mi8 r \tt {re,16--( mib fa lab sib)} |
     mi8 r \tt {re,16--( mib fa lab sib)}
     mi8 r \tt {mib,16\<( fad la si re)} |
-    fad2.\mp r4 |
+    fad2.\mp r4 | \longHairpins {
     R1 r2 r4 dod,\p( | mi2\> dod\!) |
     r2 r4 do!\<( mib2\> do~)\! do2. r4 |
     R1*7
-    fad2--\p r4 fad\<( la2\> fad~\!) fad4 r r2 R1*9
+    fad2--\p r4 fad\<( la2\> fad~\!) fad4} r r2 R1*9
   }
 }
 

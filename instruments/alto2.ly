@@ -50,7 +50,7 @@ PrologueAltoDeux = { \AltoDeux
     r16 mib mib mib mib4:32 r4 |
     r16 do do do do4:32 r4 | \clef treble
     r16 lab' lab lab lab lab lab lab si si si si |
-    mi( dod mi sol) la( sol la do) mib( do mib fa) |
+    mi(\< dod mi sol) la( sol la do) mib( do mib fa) |
     re4\f r \clef alto re,,4~---> | re re2---> |
     \ten dod1~---> dod4 r R2 R2-\fermataMarkup
 

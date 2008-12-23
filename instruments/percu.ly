@@ -48,9 +48,9 @@ Timbales = {
 }
 
 ProloguePercus = <<
-  \new PianoStaff { \GrandMarimba
+  \new PianoStaff {
     \PercuDeuxMains
-    \relative {
+    \relative { \GrandMarimba
       \ind #"bag. dures" <mi'' fa>4-.->\mp r r8 mi-.-> r4 | r8 mi r4 r16 mi8. |
       mi8 mi \t { mi mi mi } \tt {mi16\< mi mi mi mi} | mi4-.->\mf r4 r2 |
       R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2
@@ -62,14 +62,14 @@ ProloguePercus = <<
 
       %%% Tempo Giusto %%%
       R2*8 R2.*10 R1 R2-\markup "Allez au Vibraphone" \GrandVibraphone
-      <re, dod'>2\p\laissezVibrer R2-\fermataMarkup
+      <dod, re dod'>2\p\laissezVibrer R2-\fermataMarkup
 
       %%% Più lento %%%
       R1*2 R2. R1 R2. R1
 
       %%% Adagio %%%
       R2*4 R2.*6
-      <lab sol'>2.\pp\laissezVibrer R2.
+      <sol lab sol'>2.\pp\laissezVibrer R2.
       \ind #"senza Ped." <lab sol'>4 r2 <lab sol'>4 r2
       <dob sib'>4 r <do si'> |
       R4.
@@ -144,23 +144,22 @@ ProloguePercus = <<
       r8 sol dod4 dod' r2 | re4 sold, sib,2:32 R2.
 
       %%% Tempo Giusto %%%
-      R2*8 R2.*10 R1 R2^\markup "Allez au Vibraphone"
+      R2*8 R2.*10 R1 R2*2
       \GrandVibraphone \clef treble
-      dod'2\laissezVibrer R2-\fermataMarkup
+      R2-\fermataMarkup
 
       %%% Più lento %%%
       R1*2 R2. R1 R2. R1
 
       %%% Adagio %%%
-      R2*4 R2.*6
-      sol2.\laissezVibrer R2.*4
+      R2*4 R2.*11
       R4.
 
       %%% Andantino %%%
       R4.*25 R4.*13 \clef bass
 
       %%% A tempo %%%
-      R4. sold,32 sold sold sold sold4 |
+      R4. sold32 sold sold sold sold4 |
       R4. sold32--\mp sold sold sold sold sold sold16
       re'32-- re re re | re\< re re16
       sold32-- sold sold sold sold sold sold16\! |
@@ -438,11 +437,11 @@ ActeUnSceneUnPercus = <<
       do'2:32( do4 r fad,) r2 |
       do'2:32\p( do4) r fad, r2 |
       do'4 r do r fad,2:32\<( fad4\>) |
-      <fa do'>8--\ppsempre \t {fa16\>( fa fa} fa4) r2 |
+      <fa do'>8--\ppsempre \t {fa16\>( fa fa} fa4)\! r2 |
       <fa do'>4.--\pp <fa do'>8 \t {<fa do'>( <fa do'> <fa do'>)} |
       <fa do'>8-- \t {fa16\>( fa fa} fa4\!) r2 |
       <fa do'>4.-- do'8 \t {do\<( do do)} |
-      reb8--\p \t {reb16\>( reb reb} reb4) r2 |
+      reb8--\p \t {reb16\>( reb reb} reb4)\! r2 |
       <lab reb>4.--\pp <lab reb>8 \t {<lab reb>\<( <lab reb> <lab reb>)} |
       <lab reb>\> \t {reb16( reb reb} reb4\!) r2 |
       <lab reb>4.--\p reb8 \t {reb\<( reb reb} |
@@ -456,7 +455,7 @@ ActeUnSceneUnPercus = <<
       fad8 fad16 fad r fad fad8 fad16 fad8 fad16 |
       r4 r8 fad-- \t {fad--\< fad-- fad--} |
       do'8\f do16 do32 do \t {do8-> do-> do->} do-> do-- do8.-> do32 do |
-      do8-> do-- \t {do-- do do} \tt {do16\< do do do do} |
+      do8-> do-- \t {do-- do do} \tt {do16\< do do do do\!} |
 
       %%% Ad libitum %%%
       R1 R2.*2 R1 R2.*2
@@ -556,9 +555,8 @@ ActeUnSceneUnBisPercus = <<
 >>
 
 InterludeUnPercus = \new PianoStaff {
-  \GrandMarimba
   \PercuDeuxMains
-  \relative {
+  \relative { \GrandMarimba
     r8 <red fad>\p r <red fad>
     r <red fad> r <red fad>
     r <red fad> r4 | R1*2
@@ -744,9 +742,8 @@ ActeUnSceneDeuxPercus = <<
 >>
 
 InterludeDeuxPercus = \new PianoStaff {
-  \GrandMarimba
   \PercuDeuxMains
-  \relative {
+  \relative { \GrandMarimba
     r8 <red fad>\p r <red fad> r <red fad> r <red fad> |
     r <red fad> r <red fad> r <red fad> r <red fad> r <red fad> |
     R2. R2 r4 r8 <mib sol> r <mib sol> | R2
@@ -1282,8 +1279,9 @@ ActeDeuxSceneUnPercus = <<
 
     %%FIXME: complete. As soon as I have *nothing* else to do.
   }
-  \new PianoStaff {\PercuDeuxMains
-    \relative {\GrandMarimba
+  \new PianoStaff {
+    \PercuDeuxMains
+    \relative { \GrandMarimba
       R2.*4 R2 R2.*2 R2 R2.*3 R2 |
       R2. R2 R2.*2 R2 R2.*3 R2 |
       R2. R2 R2.*2 R2 R2.*3 R2 |

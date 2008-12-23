@@ -76,7 +76,7 @@ ActeUnSceneUnSopranoUn= { \SopranoUn
 
     r8 sib16-.( \mfsempre sib-. mib8---. fa16-. do-. do8---.) r16 sib-.( mib-. sib-. sol-. do-. |
     fa,4--) r2 | r8 do'16( do fa8-- mib16 mib | lab8--) r16 solb( reb mib sib do |
-    sol!4--) r | R1*2 R1*4 |
+    sol!4--) r | R2*2 R1*4 |
   }
 }
 

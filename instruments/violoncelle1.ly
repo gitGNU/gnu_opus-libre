@@ -96,7 +96,7 @@ PrologueVioloncelleUn = { \VioloncelleUn
     \ttt {re mib re mib re mib} \ttt {re mib re mib re mib)}
     re4 r \clef treble |
     \pizz dod''4\mf r si r sib sib |
-    mi \ttt { \arco mi,16\>( red mi red mi red} mi4) r \clef bass |
+    mi \ttt { \arco mi,16\>( red mi red mi red} mi4)\! r \clef bass |
     r4 do,2--\pp r4 | fad,2-- r4 | do'2-- r4 | fad,2-- r4 |
     do'2-- r4 | fad,2-- r4 | mi-- r sol-- r |
     <do, si'>2--\mf <do si'>4-> <do si'>8-. <do si'>~-> |

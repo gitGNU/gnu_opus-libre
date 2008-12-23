@@ -417,7 +417,7 @@ ActeUnSceneTroisVioloncelleDeux = { \VioloncelleDeux
     r4 \pizz la'\mf r r fad r r8 mi-> r fa lab4 |
     \arco sib2.\fp mib,2.:32\pp <sib'la'>2. mib,2.:32
     mi2.\mp fad2.:32~\mf fad:~\< fad4\! r \pizz reb\mf mi r2 |
-    r2 \arco sib'4\mp( la2.) r2 sib4\>( la2) r4 |
+    r2 \arco sib'4\mp( la2.) r2 sib4\>( la2)\! r4 |
 
     %%% Lamento %%%
     r2 r4 \pizz re\p si dod | sib2 r1 | R1.*3

@@ -198,7 +198,7 @@ includeScoreLayout = \layout {
     \consists Text_spanner_engraver
     \consists Metronome_mark_engraver
     \consists Time_signature_engraver
-    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0 . 0 )
+    \override VerticalAxisGroup #'minimum-Y-extent = #'(-0.4 . 1.2 )
     \override MetronomeMark #'side-axis = #Y
     \override MetronomeMark #'direction = #UP
   }

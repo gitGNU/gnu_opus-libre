@@ -27,7 +27,7 @@
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
 
-#(set-global-staff-size 12)
+#(set-global-staff-size 10)
 
 %%%%%%%%%%%%%%%%%% Scene-by-scene music inclusion %%%%%%%%%%%%%%%%%%
 

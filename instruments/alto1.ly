@@ -136,8 +136,8 @@ PrologueAltoUn = { \AltoUn
 ActeUnSceneUnAltoUn = { \AltoUn
   \relative {
     R2*2 R2. R2*2 R2.
-    do,8\<( re fad la) do( mi fad si\!) do\p\>( si mi, do) la( fad) |
-    re4\<( do8 re) fad( la do mi) sol\>( re la mi\!) do4 |
+    do,8\<( re fad la) do( mi fad si) do\p\>( si mi, do) la( fad) |
+    re4\<( do8 re) fad( la do mi) sol\>( re la mi) do4 |
     fa8\<( solb sib do) mib( solb lab do) reb\>( do lab mib) sib( fa) |
     fa\<( solb sib do) mib( solb lab solb) lab( solb) mib( do) solb4 |
     la8--\ppsubito \t {mib'16( si' fad')} fad4 do,,8( fa16 la mib'4) |
@@ -158,8 +158,8 @@ ActeUnSceneUnAltoUn = { \AltoUn
     \ttt {lab'( re, sib mi, sib' re}
     \ttt {lab' re, sib mi, sib' re}
     \ttt {lab' re, sib mi, sib' re)} |
-    re sib mi, sib' re sib mi, sib'
-    re sib mi, sib' re sib mi, sib' |
+    re( sib mi, sib') re( sib mi, sib')
+    re( sib mi, sib') re( sib mi, sib') |
     re( sib mi, sib') re( sib mi, sib')
     re( sib mi, sib') |
     do\fp do do do do do do do do do do do |
@@ -610,7 +610,7 @@ InterludeTroisAltoUn = { \AltoUn
     <re sib'> <re sib'> <si sol'> <si sol'>
     <re sib'> <re sib'> <red si'> <red si'> |
     <fad re'>\< <fad re'> <red si'> <red si'>
-    <fad re'> <fad re'> <sol mib'>8 \clef alto
+    <fad re'> <fad re'> <sol mib'>8\! \clef alto
     sol,16:32\mf mi: sol: lab: si: lab: si: do: |
     mib:\< do: mib: mi: sol: mi: sol: lab: | si4--->\! r \clef treble
     fad'8\sffz r r4 |

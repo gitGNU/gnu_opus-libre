@@ -374,9 +374,11 @@ ActeUnSceneTroisBisFluteDeux = { \FluteDeux
     \tt {fa,16--( lab sib si do)} dod8 r
     \tt {fa,16--( do mib fad la)} re8 r |
     \ten fad,1~\p fad2. r4 |
-    r2 r4 dod\p( mi2\> dod\!) | r r4 do!\<( mib2\> do~\!) do2. r4 |
+    \longHairpins {
+    r2 r4 dod\p( mi2\> dod\!) | 
+    r r4 do!\<( mib2\> do~\!) do2. r4 |
     R1*7
-    fad2--\p r4 red\<( dod2\> red~\!) red4 r r2 |
+    fad2--\p r4 red\<( dod2\> red~\!) red4 } r r2 |
     R1*9
   }
 }
