@@ -147,6 +147,7 @@ includePartsLayout = \layout {
     \name GhostVoice
     \remove Multi_measure_rest_engraver
     \remove Rest_engraver
+    \consists Metronome_mark_engraver
   }
   \context {
     \Staff
@@ -154,6 +155,7 @@ includePartsLayout = \layout {
   }
   \context {
     \Score
+    %\consists Mark_engraver
     \accepts GhostVoice
     skipBars = ##t
   }

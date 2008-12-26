@@ -318,13 +318,27 @@ harmo =
     \revert Stem #'stencil \revert NoteHead #'stencil \stemNeutral } >> #})
 
 thumbpizz =
-#(make-music 'TextScriptEvent
-             'direction 1
-             'text (markup #:hspace .4 #:rotate 45
-                #:musicglyph "scripts.stopped"))
+#(let* ((m (make-music 'ArticulationEvent
+                       'articulation-type "stopped"
+                       'direction 1)))
+   (ly:music-set-property! m 'tweaks
+     (acons 'font-size 3
+       (acons 'text (markup
+                   #:hspace 0
+                   #:rotate 45
+                   #:musicglyph "scripts.stopped")
+         (acons 'stencil ly:text-interface::print
+           (ly:music-property m 'tweaks)))))
+   m)
 
 leftpizz =
-#(make-articulation "stopped")
+#(let* ((m (make-music 'ArticulationEvent
+                       'articulation-type "stopped"
+                       'direction 1)))
+   (ly:music-set-property! m 'tweaks
+     (acons 'font-size 3
+           (ly:music-property m 'tweaks)))
+   m)
 
 arpeggUp =
 #(let* ((m (make-music 'ArpeggioEvent)))

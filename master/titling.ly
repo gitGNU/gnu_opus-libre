@@ -39,6 +39,7 @@
 %% Internal \paper definitions ------------------------------------%
 
   \paper {
+    indent = #0
     left-margin = #9 % ???
     right-margin = #10
     line-width = #(- paper-width (+ left-margin right-margin))
