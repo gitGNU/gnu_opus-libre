@@ -50,7 +50,7 @@ ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxFluteUn \ActeDeuxSceneDeuxFlu
 
 \bookpart {
   \include "./master/master.ly"
-} %}
+} %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Clarinettes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -74,7 +74,7 @@ ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxClarinetteUn \ActeDeuxSceneDe
 
 \bookpart {
   \include "./master/master.ly"
-} %{
+} %
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -513,7 +513,7 @@ ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxVioloncelleDeux \ActeDeuxSceneDe
 
 \bookpart {
   \include "./master/master.ly"
-}%
+}%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Contrebasse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -537,7 +537,7 @@ ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxContrebasse \ActeDeuxSceneDeuxMe
 
 \bookpart {
   \include "./master/master.ly"
-}%
+}%{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

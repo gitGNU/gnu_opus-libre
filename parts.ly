@@ -33,10 +33,10 @@
 \include "./master/common.ly"
 
 \header {
-  scoretype = "Flute"
+  scoretype = "Contrebasse"
 }
 
 
-%\include "./master/titling.ly"
+\include "./master/titling.ly"
 \include "./master/instruments.ly"
 

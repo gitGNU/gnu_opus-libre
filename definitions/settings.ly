@@ -149,6 +149,10 @@ includePartsLayout = \layout {
     \remove Rest_engraver
   }
   \context {
+    \Staff
+    \remove Instrument_name_engraver
+  }
+  \context {
     \Score
     \accepts GhostVoice
     skipBars = ##t

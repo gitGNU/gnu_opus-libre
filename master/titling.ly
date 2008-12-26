@@ -129,7 +129,7 @@
   }
   \pageBreak
   \markup {
-    \vspace #10
+    \vspace #5
     \override #'(baseline-skip . 5)
     \fill-line {
       \center-column {
@@ -147,7 +147,7 @@
     }
   }
   \pageBreak
-  \markup \vspace #10
+  \markup \vspace #5
   \markuplines \table-of-contents
   \markup \fill-line { \Bilboquet }
   \pageBreak

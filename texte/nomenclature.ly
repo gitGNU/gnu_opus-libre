@@ -76,6 +76,7 @@ CharacterList = \markup {
               "L'Étranger"
               "Le Roi"
             }
+            \override #'(baseline-skip . 6)
             \right-column {
               \SopranoType
               \SopranoType
