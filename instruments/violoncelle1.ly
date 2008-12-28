@@ -273,8 +273,8 @@ ActeUnSceneUnBisVioloncelleUn = { \VioloncelleUn
 
     %%% Adagio %%%
     R1*9
-    r2 r4 r8 <do mi\harmonic mi''>~\pp |
-    <do mi\harmonic mi''>2. r4 |
+    r2 r4 r8 <do la'\harmonic mi''>~\pp |
+    <do la'\harmonic mi''>2. r4 |
     r2 r8 <sol' si\harmonic si''>4.~ |
     <sol si\harmonic si''>1~<sol si\harmonic si''>~
     <sol si\harmonic si''>2. r8 sol~\mp\CaV |
@@ -765,7 +765,7 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
     R1 R2. R2
 
     %%% Presto agitato %%%
-    <do,,mi\harmonic sol do\harmonic mi' sol>1*5/4~
+    <mi,,\harmonic do'\harmonic mi' sol>1*5/4~
     \simile <mi''sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>2.\CaV r2 |
     R1*5/4 \clef treble |
