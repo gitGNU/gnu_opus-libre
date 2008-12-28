@@ -261,10 +261,10 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
 
     %%% Adagio %%%
     R1*9
-    r2 r4 r8 <do mi\harmonic mi''>~\pp |
-    <do mi\harmonic mi''>1~ <do mi\harmonic mi''>~ |
-    <do mi\harmonic mi''>~<do mi\harmonic mi''>~
-    <do mi\harmonic mi''>2. r8 sol'~\mp\CaV |
+    r2 r4 r8 <mi\harmonic mi''>~\pp |
+    <mi\harmonic mi''>1~ <mi\harmonic mi''>~ |
+    <mi\harmonic mi''>~<mi\harmonic mi''>~
+    <mi\harmonic mi''>2. r8 sol~\mp\CaV |
     sol4 sol--( fa-- sold--) |
     mi1~\pp mi~ mi~ mi2 r | R1*8
     r4 <do''mi>--( <do mi>-- <do mi>-- |
@@ -744,8 +744,8 @@ ActeDeuxSceneUnVioloncelleDeux = { \VioloncelleDeux
     fad4\thumbpizz r2 | \pizz fa4 r r2 | fad4 r2 | fa4 r r2 |
     fad8 fad' r2 | sol,4 re'8 fa do'4 | re r \arco fa,, |
     sib r2 | si4 r2 | sib4 r2 | si4 r2 | mi4 r2 |
-    <do,fa\harmonic do''>2.~ <do fa\harmonic do''>2.~
-    <do fa\harmonic do''>2 r | mib'2. |
+    <fa,\harmonic do''>2.~ <fa\harmonic do''>2.~
+    <fa\harmonic do''>2 r | mib'2. |
     re1~ re4 r2 | R1 \pizz lab4 r2 | la4 r r2 | lab4 r2 |
     \arco sol1~ sol2. r4 lab sol fa |
     re2.~ re1~ re4 r2 R2 |
