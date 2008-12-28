@@ -611,55 +611,55 @@ ActeUnSceneQuatreClarinetteDeux = { \ClarinetteDeux
 
 EntracteClarinetteDeux = { \ClarinetteDeux
   \relative {
-    R2 \t {r4 mi'8} sold4~ sold2 |
-    \t {r4 sol8} si4~ si2 |
-    r8 mi, sold sol si4 \t {r4 mi,8} |
-    \t {sold sol si~} si r |
-    \t {r mi, sold} \t {sol si sib} |
+    R2 \t {r4 mi'8(\pdolce} sold4~) sold2 |
+    \t {r4 sol8(} si4~) si2 |
+    r8 mi,--\< sold-- sol-- si4->\! \t {r4 mi,8--} |
+    \t {sold\<( sol si~)} si\! r |
+    \t {r mi,\<( sold)} \t {sol( si sib)} |
 
     %%% Vivo subito %%%
-    re4 r r2 | R1*6
-    re,,1~ re~ re4 r r2 |
-    R1*4 r4 mib r mib | r mib mib r |
-    r re r re r re, r2 | R1*2
-    r2 sold16 dod re fad sold4~ | sold r r2 |
-    R1*3 r4 fa8. fa16 la4 r r sold8 sold la4 r |
-    r2 r4 si~ si re r2 | R1*2 |
-    la,8 sib sib la dod re re dod fa mi mi mib r re re re |
-    r mib mib mib r mi mi mi r fa fa fa r fad fad fad r sol sol sol r2 |
-    R1 re'16 re re re re4 re16 re re re re4
-    re16 re re re re4 re16 re re re |
-    re4 re16 re re re re4 re16 re re re |
+    re4\sf r r2 | R1*6
+    \ten re,,1~\p re~ re4 r r2 |
+    R1*4 r4 mib--\p r mib-- | r mib( mib-.->) r |
+    r re--\mp r re-- r re,-- r2 | R1*2
+    r2 sold16( dod) re-. fad-. sold4~-- | sold r r2 |
+    R1*3 r4 fa8.--\mf fa16 la4-- r r \st {sold8\mp sold la4} r |
+    r2 r4 si~\p si re-.-> r2 | R1*2 |
+    la,8\mp\<( sib) sib( la) dod( re) re( dod) fa\>( mi) mi( mib\!) r \st {re\p re re |
+    r mib mib mib r mi mi mi r fa fa fa r fad fad fad r sol sol sol} r2 |
+    R1 re'16\f re re re re4-- re16 re re re re4--
+    re16 re re re re4-- re16 re re re |
+    re4-- re16 re re re re4-- re16 re re re |
 
     %%% Fugato %%%
-    re4 r r2 | R1-\markup "Prenez la Cl. Basse" \ClarinetteBasse R2.*2 R2
-    R1 R2.*2 R1 mib,,2 do8 r r4 | R2. re2 si8 r |
-    R1 mib2 do8 r r4 | R2. mib2. mi4 r r2 | R1
-    mi,2.~ mi~ mi4 r8 la'~ la4. sol8~ | sol la4. sol2~ sol2 r4 | R2.
-    r4 \t {lab8 fa mib} \t {re do la} \t {lab sol fa} |
+    re4-- r r2 | R1-\markup "Prenez la Cl. Basse" \ClarinetteBasse R2.*2 R2
+    R1 R2.*2 R1 mib,,2\mp( do8) r r4 | R2. re2( si8) r |
+    R1 mib2( do8) r r4 | R2. mib2.( mi4) r r2 | R1
+    \ten mi,2.~\p mi~ mi4 r8 la'~\mp( la4. sol8~ | sol la4. \ten sol2~\) sol2 r4 | R2.
+    r4 \t {lab8\mf( fa) mib-.} \t {re( do) la-.} \t {lab\<( sol) fa-.} |
 
     %%% Stretto %%%
-    re4 re' r re r re r mib |
-    re sib'8 sib sib sib sib sib |
+    re4--->\f re'---> r re---> r re---> r mib---> |
+    re---> \st {sib'8\p sib sib sib sib sib |
     do do do do dod dod dod dod |
-    mi mi mi mi mi mi mi mi |
-    mi4 r sib sib mi r sib sib |
-    si r si si dod dod dod dod8 dod |
-    re4 si,16 la sold la sold4 r | R1*3
+    mi mi mi mi mi mi mi mi} |
+    mi4--\mf r sib-- sib-- mi-- r sib-- sib-- |
+    si-- r si-- si-- dod-- dod-- dod-- dod8-. dod-. |
+    re4-. si,16\mp( la) sold-. la-. sold4-- r | R1*3
 
     %%% Noir %%%
     R2.-\fermataMarkup R2.
-    fad''4 red8 r r4 | r2 fad4 red8 r r2 | R2
-    fad4 red8 r r4 | r fad4~ fad8 r r4 |
-    r4 r8 red r4 | R2 R1 sol,2 mi4 r R1*2
-    sol2 mi4 r R1.*2 r2 sol, mi4 r R1. r2 sol |
+    fad''4\mp( red8) r r4 | r2 fad4( red8) r r2 | R2
+    fad4( red8) r r4 | r fad4~( fad8) r r4 |
+    r4 r8 red->\mf r4 | R2 R1 sol,2\p( mi4) r R1*2
+    sol2( mi4) r R1.*2 r2 sol,( mi4) r R1. r2 sol-- |
     R2.-\fermataMarkup R2.*8 R2.-\fermataMarkup
 
     %%% Poco più %%%
-    la2. sib do dod2 r4 R2.-\fermataMarkup
+    la2.\p( sib do dod2) r4 R2.-\fermataMarkup
 
     %%% Andantino %%%
-    la'1~ la2~ la1~ la4 r |
+    \ten la'1~\p la2~ la1~ la4 r |
     la1~ la2~ la2. r4 R2. \clef treble |
 
     %%% Largo non troppo %%%
