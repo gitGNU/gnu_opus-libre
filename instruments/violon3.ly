@@ -641,48 +641,48 @@ ActeUnSceneQuatreViolonTrois = { \ViolonTrois
 EntracteViolonTrois = { \ViolonTrois
   \relative {
     R2*9
-    R1*2 r4 la8 la sold4 r R1*7
-    r4 \jet re''32 re8.. re32 re8.. r4 |
+    R1*2 r4 \st {la8\mf la sold4} r R1*7
+    r4 \jet re''32\mp re8.. re32 re8.. r4 |
     re32 re8.. re32 re8.. r4 re32 re8.. |
     r4 re32 re8.. r4 re32 re8.. |
     r4 re32 re8.. re32 re8.. r4 | R1*2
-    re,16 re re re re4 r8 re16 re re re re8 |
-    re16 re re re re4 r2 |
-    re2:16 re: re: re: re: re: re: re: re: re: |
-    re4 r r2 | \pizz sold4 r r8 fad r sold |
-    R1 \arco sold,4. la8~ la4 si |
-    do \t {reb8 do dod} re mib re red |
-    mi4 r r <re la'> r <re mib> r <re mi> <re re> r r2 |
-    la16 la la la la4 r8 la16 la la la la8 |
-    sib \pizz mib'' sol,4 r8 si mib,4 |
-    r8 fad sib, re fad, mi'' sold,4 |
-    r8 do mi,4 r8 sol si, mib |
-    sol,4 r \arco la,8 la sold4 |
-    r8 la la sold r4 la8 sold | re'4 r r2 |
-    re16 re re re re8 re16 re re re re8 |
-    re16 re re re re8 re16 re re re re8 re16 re re re |
+    re,16->\mf re re re re4 r8 re16\> re re re re8-. |
+    re16-> re re re re4-- r2 |
+    re2:16\pleggiero re: re: re: re: re: re: re: re: re: |
+    re4-- r r2 | \pizz sold4\mf r r8 fad r sold |
+    R1 \arco sold,4.--\mp( la8~-- la4) si-- |
+    do-- \t {reb8\<( do dod)} re( mib) re( red) |
+    mi4->\f r r <re la'>-.->\mp r <re mib>-.-> r <re mi>-.-> <re re>-.-> r r2 |
+    la16->\mf la la la la4 r8 la16-> la la la la8-. |
+    sib-> \pizz mib''\mp sol,4-- r8 si mib,4-- |
+    r8 fad sib, re fad, mi''-> sold,4-- |
+    r8 do mi,4-- r8 sol si, mib |
+    sol,4-- r \arco la,8-.\mf la-. sold4-. |
+    r8 la-. la-. sold-. r4 la8(\upbow sold-.) | re'4---> r r2 |
+    re16->\f re re re re8 re16-> re re re re8-. |
+    re16-> re re re re8-. re16-> re re re re8-. re16->\< re re re |
 
     %%% Fugato %%%
-    re1~ re~ re2.~ re~ re2~ re1~ <re fa'>2.~ <re fa'>~
+    re1~\ff re~\> re2.~\mp re~ re2~ re1~ <re fa'>2.~ <re fa'>~
     <re fa'>1~ <re fa>~ <re fa'>2.~ <re fa'>4 r2 |
-    r dod'~ dod1~ dod2.~ dod~ dod1~ dod2. r4 |
-    <la mi'>2.~ <la mi'>~ <la mi'>2 <re, la'>~ |
+    r dod'~\pp dod1~ dod2.~ dod~ dod1~ dod2. r4 |
+    <la mi'>2.~ <la mi'>~ <la mi'>2 <re, la'>~--\mp |
     <re la'>8 <la' mi'>4. <re, la'> <la' mi'>8~ |
-    <la mi'>2.~ <la mi'> | fad'2~ fad8 r <dod dod'> <dod dod'> |
+    <la mi'>2.~ <la mi'> | fad'2~\mf fad8 r <dod dod'>-.\f <dod dod'>-. |
 
     %%% Stretto %%%
-    <re re'>4 re, r re |
-    re16 re re re re4 r8 re16 re re re re8 |
-    re16 re re re <dod re>2.~ <dod re> r4 |
-    r4 \pizz sol'' re r |
-    mi, r r8 fad r4 mi r8 fad r2 |
-    \arco sol2:8 sol: lad: lad: |
-    <re, sib'>4 r r2 | R1*3
+    <re re'>4-> re,-> r re-> |
+    re16-> re re re re4 r8 re16-> re re re re8 |
+    re16-> re re re \ten <dod re>2.~\sffz <dod re> r4 |
+    r4 \pizz sol''--\mp re-- r |
+    mi,-> r r8 fad-> r4 mi-> r8 fad-> r2 |
+    \arco sol2:8->\mp sol: lad: lad:\< |
+    <re, sib'>4-.->\! r r2 | R1*3
 
     %%% Noir %%%
-    R2.-\fermataMarkup \pizz fad4 r2 R2. fad4 r2 R2. R2
-    fad4 r2 r4 red r2 r4 red fad8 red R2 |
-    red4 r r2 | R1*4 R1.*4 R1 R2.-\fermataMarkup
+    R2.-\fermataMarkup \pizz fad4\mp r2 R2. fad4 r2 R2. R2
+    fad4 r2 r4 red r2 r4 red fad8-> red-> R2 |
+    red4\mp r r2 | R1*4 R1.*4 R1 R2.-\fermataMarkup
     R2.*8 R2.-\fermataMarkup
     R2.*4 R2.-\fermataMarkup
     R1 R2 R1 R2 R1 R2 R1 R2.
