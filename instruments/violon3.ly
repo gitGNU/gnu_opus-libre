@@ -688,24 +688,24 @@ EntracteViolonTrois = { \ViolonTrois
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    \arco <la' la'>2 <la la'> <la la'> |
+    \arco <la' la'>2->\mf \accdet {<la la'> <la la'> |
     <la la'> <la la'> <la la'> |
     <si si'> <si si'> <si si'> |
     <do do'> <do do'> <do do'> |
     <mi do'> <mi do'> <mi do'> |
     <re do'> <re si'> <re la'> |
-    <do sol'> <do do'> <do si'> |
+    \cresc <do sol'> <do do'> <do si'> |
     <do la'> <fa re'> <re si'> |
     <mi do'> <mi do'> <mi do'> |
-    <si fa'> <si sol'> <si lab'> |
-    <do sol'> <do sol'> <mi do'> |
-    <la, sib'> <la la'> <la sol'> |
+    <si fa'>\f( <si sol'>) <si lab'> |
+    <do sol'>\>( <do sol'>\!) <mi do'> |
+    <la, sib'>\mp <la la'> <la sol'> |
     <la sol'> <la fa'> <la fa'> |
     <si fa'> <si sol'> <si lab'> |
     <do lab'> <do sol'> <do sol'> |
-    <re, la' fa'> <la' fa'> <la fa'> |
-    <la la'> <sol sol'> <fa fa'> |
-    <la la'>4 mi r1 | <la la'>4 mi r2 |
+    \cresc <re, la' fa'> <la' fa'> <la fa'> |
+    <la la'> <sol sol'> <fa fa'>} |
+    <la la'>4->\ff mi-> r1 | <la la'>4-> mi-> r2 |
     R1 R2. R2
   }
 }

@@ -768,20 +768,20 @@ EntracteAltoUn = { \AltoUn
     R1 R2 R1 R2 R1 R2 R1 R2. \clef treble
 
     %%% Largo non troppo %%%
-    la''4 sol fa mi fa8 mi fa sol |
+    \ind #"à la corde" la''4\mp( sol) fa( mi) fa8\<( mi) fa( sol) |
+    la4\!( sol) fa( mi) fa8\<( mi) fa( sol) |
+    \simile la4\! sol fa mi fa8 mi fa sol |
     la4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    <la, la'>1.~ <la la'> <sol mi'>
-    \pl fa1. {mi'2 re1} | <la la'>1.
-    \pl {la4 sol fa mi} {si'2 do} <fa, re'> |
+    \ten <la, la'>1.~ <la la'> <sol mi'>
+    \pl fa1. {mi'2( re1)} | <la la'>1.\mf
+    \pl {la4( sol) fa( mi)} {si'2---> do--->} \det {<fa, re'>-> |
     <sol do>1 <sol do>2 \clef alto |
-    <la, la'>2 dod, <sol' mi'> |
-    <fa re'> re <la' fa'> | <si fa'> sol <si sol'> |
-    <do sol'> <do, sol'> do' |
-    <re, re'> <re re'> <re re'> |
-    <red red'> <red red'> <red red'> |
-    <mi mi'> r1 | <mi mi'>2 r | R1 R2. R2
+    <la, la'>2->\mp dod, <sol' mi'>-> |
+    <fa re'>-> re <la' fa'>-> | <si fa'>-> sol <si sol'>-> |
+    <do sol'>-> <do, sol'>-> do'} |
+    \cresc <re, re'>---> <re re'>---> <re re'>---> |
+    <red red'>---> <red red'>---> <red red'>---> |
+    <mi mi'>--->\f r1 | <mi mi'>2---> r | R1 R2. R2
   }
 }
 

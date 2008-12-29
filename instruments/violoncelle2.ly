@@ -685,20 +685,20 @@ EntracteVioloncelleDeux = { \VioloncelleDeux
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    la,,2 la la si si si do do do re re re |
-    la <la la' la> la si <si la' la> si |
-    do <do sol' la> do re <re re la'> r \clef treble |
-    la''4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
+    \det {la,,2\mf la la si si si do do do re re re |
+    la <la la' la>-> la si <si la' la>-> si |
+    do <do sol' la>-> do re <re re la'>->} r \clef treble |
+    \ind #"à la corde" la''4\f( sol) fa( mi) fa8\<( mi) fa( sol) |
+    la4\!( sol) fa( mi) fa8\<( mi) fa( sol) |
+    la4\> sol fa mi fa8 mi fa sol |
+    la4\mf sol fa mi fa8 mi fa sol |
+    la\mp( la') sol( sol,) fa( fa') mi( mi,) fa( mi) fa( sol) |
+    \simile la la' sol sol, fa fa' mi mi, fa mi fa sol |
     la la' sol sol, fa fa' mi mi, fa mi fa sol |
-    la la' sol sol, fa fa' mi mi, fa mi fa sol |
-    la la' sol sol, fa fa' mi mi, fa mi fa sol |
-    la la' sol4 fa,8 fa' mi4 fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    la4 mi r1 \clef bass |
-    <mi,,, si' re la'>4 mi' r2 R1 R2. R2
+    la\< la' sol4 fa,8 fa' mi4 fa8 mi fa sol |
+    la4\f sol fa mi fa8\< mi fa sol |
+    la4->\! mi-> r1 \clef bass |
+    <mi,,, si' re la'>4-> mi'-> r2 R1 R2. R2
   }
 }
 

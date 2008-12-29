@@ -1398,12 +1398,12 @@ EntractePiano = {
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    <la'mi'>4 <mi do'> <la mi'> <mi do'> <la mi'> <mi do'> |
-    <la mi'> <mi si'> <la mi'> <mi si'> <la mi'> <mi si'> |
-    <la mi'> <mi la> <la mi'> <mi la> <la mi'> <mi la> |
+    <la'mi'>4\mp( <mi do'> <la mi'> <mi do'> <la mi'> <mi do'>) |
+    <la mi'>( <mi si'> <la mi'> <mi si'> <la mi'> <mi si'>) |
+    \simile <la mi'> <mi la> <la mi'> <mi la> <la mi'> <mi la> |
     <la mi'> <fa la> <la re> <fa la> <sold do> <mi sold> |
     <la mi'> <mi do'> <la mi'> <mi do'> <la mi'> <mi do'> |
-    <sol re'> <re do'> <fa re'> <re do'> <fa re'> <re sol> |
+    <sol re'>\mpsempre <re do'> <fa re'> <re do'> <fa re'> <re sol> |
     <sol mi'> <mi do'> <sol mi'> <mi do'> <sol mi'> <mi do'> |
     <fa re'> <re la'> <fa re'> <re la'> <fa re'> <re si'> |
     <la'mi'> <mi do'> <la mi'> <mi do'> <la mi'> <mi do'> |
@@ -1413,9 +1413,9 @@ EntractePiano = {
     <sol mi'> <mi sol> <fa re'> <re fa> <fa re'> <re fa> |
     <fa re'> <re fa> <fa re'> <re fa> <fa re'> <re fa> |
     <mi re'> <re mi> <mi do'> <do mi> <mi do'> <do mi> |
-    <fa do'> <do fa> <fa si> <si, fa'> <fa' la> <la, fa'> |
+    \cresc <fa do'> <do fa> <fa si> <si, fa'> <fa' la> <la, fa'> |
     <do la'> <la do> <si sol'?> <sold si> \clef bass <la do fa> <fa la do> |
-    <mi la do mi>2 r1 <mi la si mi>2 r | R1 R2. R2
+    <mi la do mi>2--\f r1 <mi la si mi>2-- r | R1 R2. R2
   }
   \relative {
     sold,,2*1/4\pp\laissezVibrer
@@ -1475,7 +1475,7 @@ EntractePiano = {
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    <la la'>2 <la' la'> <la, la'> <si si'> <si' si'> <si, si'>
+    \det {<la la'>2 <la' la'> <la, la'> <si si'> <si' si'> <si, si'>
     <do do'> <do' do'> <do, do'> <re re'> <re' re'> <re, re'> |
     <la la'> <la' la'> <la, la'> <si si'> <si' si'> <si, si'>
     <do do'> <do' do'> <do, do'> <re re'> <re' re'> <re, re'> |
@@ -1484,7 +1484,7 @@ EntractePiano = {
       dod dod dod dod dod dod re re re re re re sol, sol sol sol sol sol do do do do do do
       \ottava #-1
     re, re re re re re red red red red red red mi mi} r1
-    \pl mi,2 {mi'4 mi} r2 R1 R2. \pl mi,4 <red' mi> \ottava #0 r |
+    \pl mi,2 {mi'4 mi}} r2 R1 R2. \pl mi,4-. <red' mi>-. \ottava #0 r |
   }
 }
 
