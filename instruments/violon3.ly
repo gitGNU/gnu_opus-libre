@@ -646,7 +646,7 @@ EntracteViolonTrois = { \ViolonTrois
     re32 re8.. re32 re8.. r4 re32 re8.. |
     r4 re32 re8.. r4 re32 re8.. |
     r4 re32 re8.. re32 re8.. r4 | R1*2
-    re,16->\mf re re re re4 r8 re16\> re re re re8-. |
+    re,16->\mf re re re re4 r8 re16-> re re re re8-. |
     re16-> re re re re4-- r2 |
     re2:16\pleggiero re: re: re: re: re: re: re: re: re: |
     re4-- r r2 | \pizz sold4\mf r r8 fad r sold |

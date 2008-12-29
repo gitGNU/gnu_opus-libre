@@ -404,10 +404,10 @@ ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
 
 EntracteSaxophoneUn = { \SaxAltoUn
   \relative {
-    R2*2 r4 mi--\pp sold2-- |
+    R2*2 r4 mi--\ppdolce sold2-- |
     \t {r4 mi8(} \t {sold4) sol8(} |
     si2) \t {r4 sol8(\>} si4)\!~ si8 r r4 |
-    sol4-- \t {si(\< sib8)} | re4->\! r r2 R1*2
+    sol4-- \t {si(\< sib8)} | re4\sf r r2 R1*2
     r2 r8 r16 la,(\< re8.) do16( |
     \ten fa1\mf)~ fa4. r8 r2 | R1*8
     r4 mi,--\p r mi-- | r fa( mi-.->) r |

@@ -86,21 +86,21 @@
   \header {
     piece = \FinaleTitre
   }
-} %
+} %}
 \score {
   \Entracte
   \header {
     piece = \EntracteTitre
   }
-} %
-%\pageBreak %}
+} %{
+%\pageBreak %
 \score {
   \ActeDeuxSceneUn
   \header {
     acte = \ActeDeuxTitre
     piece = \SceneUnTitre
   }
-} %{
+} %
 \score {
   \ActeDeuxSceneUnBis
   \header {

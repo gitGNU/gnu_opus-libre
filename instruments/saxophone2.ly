@@ -420,7 +420,7 @@ EntracteSaxophoneDeux = { \SaxAltoDeux
     r2 r8 r16 sol,\<( do8.) sib16( |
     \ten mib1~\mf) mib4. r8 r2 | R1*10
     r4 re,--\p r re-- r re-- r2 | R1*7
-    r4 mib8.--\mf mib16 sol4-- r r la8-.\p la-. sold4-. r |
+    r4 mib8.--\mp mib16 sol4-- r r la8-.\p la-. sold4-. r |
     re1~\pp re4 r r2 | R1*3
     r2 re8--\p r r4 R1 mi8 r r4 r2 R1*2
     re'4\f re8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 |
