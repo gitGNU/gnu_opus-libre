@@ -1139,14 +1139,14 @@ EntractePercus = <<
       R1*2 R2.*2 R2 R1 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2
       R1*14
       R2.-\fermataMarkup
-      r8 <red fad> r <red fad> r <red fad>
+      r8 <red fad>\p r <red fad> r <red fad>
       r <red fad> r <red fad> r <red fad>
       r <red fad> r <red fad> r <red fad>
       r <red fad> r <red fad> r4 | R2
       r8 <red fad> r <red fad> r <red fad> |
       r4 r8 <red fad> r <red fad> r <red fad> |
       r4 r8 <red fad> r <red fad> R2
-      r8 \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
+      r8 \pl <mi, sol>\psempre <red' fad> r \pl <mi, sol> <red' fad>
       r \pl <mi, sol> <red' fad>  r \pl <mi, sol> <red' fad> |
       r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad>
       r \pl <mi, sol> <red' fad> r \pl <mi, sol> <red' fad> |
@@ -1180,15 +1180,15 @@ EntractePercus = <<
       R2*9
       R1*14
       r4 \ind #"Tambour (bag. de timbale, sur le manche)"
-      sn r sn | r sn8 sn16 sn sn4 r |
+      sn\mp r sn | r sn8\> sn16 sn sn4\! r |
       R1*9
-      sn32 sn sn8. r4 r8 sn \t {sn sn sn} sn4 r r2 |
+      sn32->\mp sn sn8. r4 r8 sn\< \t {sn sn sn} sn4--\! r r2 |
       R1*11 R2. R1
       R1*2 R2.*2 R2 R1 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2 R1*2 R2.*2
       R1*14
-      \ind #"Crécelle" hh4:32\fermata~ hh4 r\fermata |
+      \ind #"Crécelle" hh4:32\>\fermata~ hh4\! r\fermata |
       R2.*4 R2 R2. R1 R2. hh8:32 r8 r4 | R1*5 R1.*4 R1
-      hh4:32~ hh4 r\fermata R2.*8 hh4:32 r2\fermata |
+      hh4:32~\> hh4\! r\fermata R2.*8 hh4:32-- r2\fermata |
       R2.*4 R2.-\fermataMarkup R1 R2 R1 R2 R1 R2 R1 R2.
       R1.*18 R1*2 R2. R2
     }
@@ -1196,35 +1196,35 @@ EntractePercus = <<
   \new Staff { \Timbales
     \relative{
       R2*9 |
-      re,4 re r re r re r2 | R1*5
-      re4 re r re r re r2 | R1*7
+      re,4\mf re-> r re-> r re-> r2 | R1*5
+      re4 re-> r re-> r re-> r2 | R1*7
       re4 re r re r re r2 | R1*3
-      re4 re r re r re r2 | R1*5
-      re8. re32 re re4 r re32 re8.. |
-      r4 re r re8 re re4 r r2 | R1*6
-      re8. re32 re re4 r re r8 re16 re re4 r |
-      r8 re16 re re8 re \t {re re re} re re32 re re re |
+      re4 re-> r re-> r re-> r2 | R1*5
+      re8.\mf re32 re re4-> r re32-> re8.. |
+      r4 re-> r re8-> re re4-> r r2 | R1*6
+      re8.-> re32 re re4-> r re-> r8 re16 re re4-> r |
+      r8 re16 re re8-> re\< \t {re re re} re->\! re32\< re re re |
 
       %%% Fugato %%%
-      red4 mi, r mi r8 mi \t {mi mi mi} mi4 r |
-      r8 mi \t {mi mi mi} mi4 | R2. r4 \tt {mi16 mi mi mi mi} |
-      mi4 r r8 mi \t {mi mi mi} mi4 r2 |
-      r8 mi \t {mi mi mi} mi4 mi r r2 |
-      mi8 mi \t {mi mi mi} mi4 r |
-      mi mi r mi8 mi \t {mi mi mi} mi4 |
-      r mi mi r mi8 mi \t {mi mi mi} mi4 r |
-      mi mi mi mi mi8 mi \t {mi mi mi} mi2:8 mi: mi: mi: |
+      red4->\ff mi,-> r mi-> r8 mi\< \t {mi mi mi} mi4->\! r |
+      r8 mi\mf\< \t {mi mi mi} mi4\! | R2. r4 \tt {mi16\mp\< mi mi mi mi} |
+      mi4\! r r8 mi\< \t {mi mi mi} mi4\! r2 |
+      r8 mi\p\< \t {mi mi mi} mi4\! mi-- r r2 |
+      mi8\< mi \t {mi\> mi mi} mi4\! r |
+      mi-- mi-- r mi8\< mi \t {mi\> mi mi} mi4\! |
+      r mi-- mi-- r mi8\< mi \t {mi\> mi mi} mi4\! r |
+      mi-- mi-- mi-- mi\< mi8 mi \t {mi mi mi} mi2:8\mp mi: mi: mi: |
       mi: mi4: mi2: mi4:
       \t {fa8 fa fa} \t {fa fa fa} \t {fa fa fa} \t {fa fa fa} |
       \t {fad fad fad} \t {fad fad fad} \t {fad fad fad} \t {fad fad fad} |
-      \t {sol sol sol} \t {sol sol sol} \t {sol sol sol} |
-      \t {sol sol sol} \t {sol sol sol} \t {sol sol sol} |
-      sold16 sold sold sold sold4 sold16 sold sold sold sold8 \t {re'16 re re} |
+      \t {sol\mp sol sol} \t {sol sol sol} \t {sol sol sol} |
+      \t {sol\< sol sol} \t {sol sol sol} \t {sol sol sol} |
+      sold16\mf sold sold sold sold4 sold16-> sold sold sold sold8 \t {re'16\< re re} |
 
       %%% Stretto %%%
-      re4 re32 re8.. r8 r16 re32 re re4 |
-      r8 re \t {re re re} re4 r8 re |
-      re4 r r2 R1*10
+      re4\f re32-> re8.. r8 r16 re32 re re4-> |
+      r8 re\< \t {re re re} re4\! r8 re |
+      re4-> r r2 R1*10
       %%% Noir %%%
       R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
       R1*5 R1.*4 R1 R2.-\fermataMarkup R2.*8 R2.-\fermataMarkup
@@ -1233,10 +1233,10 @@ EntractePercus = <<
       R2.*4 R2.-\fermataMarkup
 
       %%% Andantino %%%
-      la4 la4:32~ la4 r mi r |
-      la4 la4:32~ la4 r mi r |
-      la4 la4:32~ la4 r mi r |
-      la4 la4:32~ la4 r R2. |
+      la4--\pp la4:32~\> la4\! r mi-- r |
+      la4-- la4:32~\> la4\! r mi-- r |
+      la4-- la4:32~\> la4\! r mi-- r |
+      la4-- la4:32~\> la4\! r R2. |
 
       %%% Largo non troppo %%%
       la4 \ttt {la16 la la la la la} la4 la la2 |

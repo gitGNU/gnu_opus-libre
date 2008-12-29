@@ -1343,49 +1343,49 @@ EntractePiano = {
   \relative { \Piano
     R2*9
     R1*12
-    r4 <lab'' sol'>8 <lab sol'> <sol lab'>4 r R1
+    r4 \st {<lab'' sol'>8\p <lab sol'> <sol lab'>4 r R1
     r4 <lab reb sol> r <lab reb sol> |
     r <lab sol'>8 <lab sol'> <sol lab'>4 r R1*2
-    r2 re8 la mi si R1 |
-    r2 r4 \pl {sib16 dod fad la} {sib dod fad la} |
-    <re, re'>4 r r2 | R1
-    r8 r16 \pl {re la8. re16 la4} {sold'16 dod8. sold16 dod4} r |
-    r2 r8 r16 \pl {re, la4} {sold'16 dod4} R1
-    \ottava #1 r8 r16 \pl {reb lab4} {sol'!16 do!4} r2 |
-    R1*3 r4 <re, dod'> <dod re'> \ottava #0 r R1
-    r2 r4 \loco <sib,, re fad> |
-    r <si red sol> r <do mi sold>
-    r <dod fa la > r <re fad sib> |
-    r <mib sol si> r <mi sold do> |
-    r <fa la dod> r <fad re'>8 sib |
-    <re re'>4 r r2 R2. R1 \clef bass |
+    r2 re8\p( la mi si)} R1 |
+    r2 r4 \pl {sib16( dod fad la)} {sib\<( dod fad la)} |
+    <re, re'>4--\! r r2 | R1
+    r8 r16 \pl {re\p( la8.) re16( la4-.)} {sold'16( dod8.) sold16( dod4-.)} r |
+    r2 r8 r16 \pl {re,( la4-.)} {sold'16( dod4-.)} R1
+    \ottava #1 r8 r16 \pl {reb( lab4-.)} {sol'!16( do!4-.)} r2 |
+    R1*3 r4 <re, dod'>-.\p <dod re'>-. \ottava #0 r R1
+    r2 r4 \loco <sib,, re fad>-- |
+    r <si red sol>-- r <do mi sold>--
+    r <dod fa la >-- r <re fad sib>-- |
+    r <mib sol si>-- r <mi sold do>-- |
+    r <fa la dod>-- r <fad re'>8( sib) |
+    <re re'>4-> r r2 R2. R1 \clef bass |
 
     %%% Fugato %%%
-    <red,, mi re'>1\laissezVibrer s1 R2.*2 R2
+    <red,, mi re'>1\f\laissezVibrer s1 R2.*2 R2
     R1 R2.*2 R1*2 R2.*2 R1 \clef treble
-    \ottava #2 <si'''' lad'>1 <lad si'>2. <si lad'>
+    \ottava #2 <si'''' lad'>1\pp <lad si'>2. <si lad'>
     <lad si'>1~ <lad si'>2 \ottava #0 r |
-    R2.*2 R1*2 \loco fad,,4. sol~ sol2 r4 |
-    r2 r4 <re' dod'>8 <re dod'>
+    R2.*2 R1*2 \loco fad,,4.--\p sol~-- sol2 r4 |
+    r2 r4 <re' dod'>8-.\f <re dod'>-.
 
     %%% Stretto %%%
-    <re re'>4 r r2 | R1 \clef bass |
-    <re,,sib' re>8 <re sib' re> <re sib' re> <re sib' re>
-    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
-    <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi>
+    <re re'>4-> r r2 | R1 \clef bass |
+    \st {<re,,sib' re>8\pp <re sib' re> <re sib' re> <re sib' re>
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re>} |
+    \simile <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi>
     <mid dod' mid> <mid dod' mid> <mid dod' mid> <mid dod' mid> \clef treble |
     <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol>
     <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
-    <sold mi' sold> <sold mi' sold> <sold mi' sold> <sold mi' sold>
-    <sold mi' sold> <lad fad' lad> <lad fad' lad> <lad fad' lad> |
-    <sold mi' sold> <sold mi' sold> <sold mi' sold> <lad fad' lad>
+    <sold mi' sold>-> <sold mi' sold> <sold mi' sold> <sold mi' sold>
+    <sold mi' sold> <lad fad' lad>-> <lad fad' lad> <lad fad' lad> |
+    <sold mi' sold>-> <sold mi' sold> <sold mi' sold> <lad fad' lad>
     <lad fad' lad> <lad fad' lad> <lad fad' lad> <lad fad' lad> |
     <si sol' si> <si sol' si> <si sol' si> <si sol' si>
     <si sol' si> <si sol' si> <si sol' si> <si sol' si> |
     <dod lad' dod> <dod lad' dod> <dod lad' dod> <dod lad' dod>
     <dod lad' dod> <dod lad' dod> <dod lad' dod> <dod lad' dod> |
     <re sib' re>4 r r2 |
-    r4 <re re'> r <re re'> r <re re'> r2 | R1
+    r4 <re re'>--\p r <re re'>-- r <re re'>-- r2 | R1
 
     %%% Noir %%%
     R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
@@ -1418,10 +1418,10 @@ EntractePiano = {
     <mi la do mi>2 r1 <mi la si mi>2 r | R1 R2. R2
   }
   \relative {
-    sold,,2*1/4\laissezVibrer
-    sold'8 \t {sold sold sold}
-    sold2\laissezVibrer |
-    sold,2*1/4\laissezVibrer
+    sold,,2*1/4\pp\laissezVibrer
+    sold'8-- \t {sold-- sold-- sold--}
+    sold2--\laissezVibrer |
+    \simile sold,2*1/4\laissezVibrer
     sold'8 \t {sold sold sold}
     sold2\laissezVibrer |
     sold,2*1/4\laissezVibrer
@@ -1435,26 +1435,26 @@ EntractePiano = {
 
     %%% Vivo subito %%%
     <re re'>4 r r2 | R1*11 \clef treble
-    r4 <la'' sold'>8 <la sold'> <sold la'>4 r R1
+    r4 \st {<la'' sold'>8 <la sold'> <sold la'>4 r R1
     r4 <la'? re?> r <la re> |
-    r <la, sold'>8 <la sold'> <sold la'>4 r R1*3 \clef bass
-    fad8 dod sold2. R1 |
-    r4 <re re'> r2 R1*8 \clef treble
-    r4 <re'' dod'> <dod re'> r R1 \clef bass
-    r2 sold,4 r | fad r mib' r fa r do r sib r sol r la r mi r |
-    r <re re'> r2 R2. R1
+    r <la, sold'>8 <la sold'> <sold la'>4} r R1*3 \clef bass
+    fad8-.( dod-.) sold2.-- R1 |
+    r4 <re re'>-- r2 R1*8 \clef treble
+    r4 <re'' dod'>-. <dod re'>-. r R1 \clef bass
+    r2 sold,4--\p r | fad-- r mib'-- r fa-- r do-- r sib-- r sol-- r la-- r mi-- r |
+    r <re re'>-> r2 R2. R1
 
     %%% Fugato %%%
-    <mi, mi'>1\laissezVibrer s1 R2.*2 R2
-    R1 R2. <mi' red'>2. <red mi'>2 <mi red'> <red mi'>2. r4 | R2.*2 R1 \clef treble
+    <mi, mi'>1\f\laissezVibrer s1 R2.*2 R2
+    R1 R2. <mi' red'>2.\pp <red mi'>2 <mi red'> <red mi'>2. r4 | R2.*2 R1 \clef treble
     <lad''' si'>1 <si lad'>2. <lad si'> <si lad'>1~ <si lad'>2 r |
     R2.*2 R1*2 \clef bass
-    sol,4. fad~ fad2 r4 | r2 r4 <re, mib'>8 <re mib'> |
+    sol,4.-- fad~-- fad2 r4 | r2 r4 <re, mib'>8-. <re mib'>-. |
 
     %%% Stretto %%%
-    <re re'>4 <re, re'> r <re re'> r <re re'> r2 |
-    <re' sib'>4 <re sib'> <re sib'> <re sib'> |
-    <reb lab'> <reb lab'> <si sold'> <si sold'> |
+    <re re'>4-> <re, re'>-- r <re re'>-- r <re re'>-- r2 |
+    <re' sib'>4-- <re sib'>-- <re sib'>-- <re sib'>-- |
+    \simile <reb lab'> <reb lab'> <si sold'> <si sold'> |
     <sib fa'> <sib fa'> <sib fa'> <sib fa'> |
     \ottava #-1
     <sold mi'> <sold mi'> <sol re'> <sol re'> |
@@ -1462,7 +1462,7 @@ EntractePiano = {
     <fa re'> <fa re'> <fa re'> <fa re'> |
     <mi si'> <mi si'> <mi si'> <mi si'> |
     <re sib' re> \ottava #0 r r2 |
-    r4 \loco re' r re r re r2 | R1
+    r4 \loco re'-- r re-- r re-- r2 | R1
 
     %%% Noir %%%
     R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2

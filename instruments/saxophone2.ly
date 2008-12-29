@@ -150,7 +150,7 @@ ActeUnSceneUnSaxophoneDeux = { \SaxAltoDeux
     r2 r4 fa---. | mi2--( fa8) r fa4---. | mi2--( fa8) r r4 | R1*2
     r2 r4 sib8-.\pp r | \st {lab( r fa r mib)} r re' r |
     \st {do( r la r sol) r r4 |
-    fad8( r mi r dod} r r4 | R1
+    fad8( r mi r dod)} r r4 | R1
 
     %%% Agitato %%%
     re2.\mf r4 | r re-- r re-- R1 |
@@ -413,43 +413,43 @@ ActeUnSceneQuatreSaxophoneDeux = { \SaxophoneBaryton
 
 EntracteSaxophoneDeux = { \SaxAltoDeux
   \relative {
-    R2*7 mi4 sold sol8 r r4 |
+    R2*7 mi4--\pp sold-- sol8-- r r4 |
 
     %%% Vivo subito %%%
-    re4 r r2 R1*2
-    r2 r8 r16 sol, do8. sib16 |
-    mib1~ mib4. r8 r2 | R1*10
-    r4 re, r re r re r2 | R1*7
-    r4 mib8. mib16 sol4 r r la8 la sold4 r |
-    re1~ re4 r r2 | R1*3
-    r2 re8 r r4 R1 mi8 r r4 r2 R1*2
-    re'4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 |
+    re4\sf r r2 R1*2
+    r2 r8 r16 sol,\<( do8.) sib16( |
+    \ten mib1~\mf) mib4. r8 r2 | R1*10
+    r4 re,--\p r re-- r re-- r2 | R1*7
+    r4 mib8.--\mf mib16 sol4-- r r la8-.\p la-. sold4-. r |
+    re1~\pp re4 r r2 | R1*3
+    r2 re8--\p r r4 R1 mi8 r r4 r2 R1*2
+    re'4\f re8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 |
 
     %%% Fugato %%%
     re,4 r r2 | R1-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton R2.*2 R2
     R1 R2.*2 R1
-    mi,2 sol8 r r4 | R2. lab2 si8 r |
-    R1 mi,2 sol8 r r4 | R2. si2. fa4 r r2 |
+    mi,2\p( sol8) r r4 | R2. lab2( si8) r |
+    R1 mi,2( sol8) r r4 | R2. si2.( fa4) r r2 |
     R1 R2.*2 sol'1~ sol2. r4 | R2.*2
-    sold4 re' la la |
+    sold4--\mf re'-- la-- la-- |
 
     %%% Stretto %%%
-    re, re, r re r re r re' | re, re' re re |
-    reb reb si si sib sib sib sib |
-    lab2 re mi sol4 r |
-    r16 fa fa8 r4 r2 | r16 mi mi8 r4 r mi8 mi |
-    re4 r r2 R1*3
+    re,-- re,---> r re---> r re---> r re'---> | re,---> re'--\p re-- re-- |
+    reb-- reb-- si-- si-- sib-- sib-- sib-- sib-- |
+    lab2-- re-- mi( sol4) r |
+    r16 fa\mf fa8-> r4 r2 | r16 mi mi8-> r4 r mi8-. mi-. |
+    re4-. r r2 R1*3
 
     %%% Noir %%%
-    R2.-\fermataMarkup R2.*4 R2 R2. R1 r4 r8 fa'? r4 R2
-    R1*4 mib,2 do4 r R1.*2 r2 mib do4 r | R1. r2 mib |
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 r4 r8 fa'?->\mf r4 R2
+    R1*4 mib,2( do4) r R1.*2 r2 mib( do4) r | R1. r2 mib-- |
     R2.-\fermataMarkup R2.*8 R2.-\fermataMarkup
 
     %%% poco più %%%
     R2.*4 R2.-\fermataMarkup
 
     %%% Andantino %%%
-    la,1~ la4 r si1~ si4 r do1~ do4 r re2. r4 R2.
+    \ten la,1~--\p la4 r si1~-- si4 r do1~-- do4 r re2.-- r4 R2.
 
     %%% Largo non troppo %%%
     la1. si1~ si4 r |

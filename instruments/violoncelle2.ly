@@ -634,48 +634,48 @@ ActeUnSceneQuatreVioloncelleDeux = { \VioloncelleDeux
 
 EntracteVioloncelleDeux = { \VioloncelleDeux
   \relative {
-    sold,2~sold~sold sold~sold sold sold~sold4 sold~|
-    sold4 sold8 \t {sold16 fa sol} |
-    re4 re''4:16 re2:16 |
+    \ten sold,2~\pp sold~ sold sold~ sold sold sold~ sold4 sold~|
+    sold4 sold8-- \t {sold16\< fa sol} |
+    re4\sfz re''4:16\pleggiero re2:16 |
     re: re: re: re: re: re: re: re: re: re: |
     re: re: re: re: re: re: re: re: re4 r r2 | R1*10
-    re,16 re re re re4 r8 re16 re re re re8 |
-    re16 re re re re4 r re,16 re re re | re4 r r2 |
-    \pizz mib4 mi8 la si4 do,8 fa fad4 r r2 |
+    re,16->\mf re re re re4 r8 re16-> re re re re8-. |
+    re16-> re re re re4-- r re,16-> re re re | re4-> r r2 |
+    \pizz mib4\mp mi8 la si4 do,8 fa fad4 r r2 |
     r4 sol8 sib lab reb r4 | R1
-    \arco re16 re re re re4 r8 re16 re re re re8 |
-    re16 re re re re4 r2 |
-    re,4:8 re': re,: re': |
+    \arco re16->\mf re re re re4 r8 re16-> re re re re8-. |
+    re16-> re re re re4-- r2 |
+    re,4:8\fp re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
-    re,4 re re re re re re |
+    re,4--->\mf re-- re-- re-- \simile re re re |
     re re re re |
 
     %%% Fugato %%%
-    mi2:8 mi: mi:mi: mi: mi4: mi2: mi4: mi2: |
+    mi2:8\f mi: mi:\> mi: mi:\mp mi4: mi2: mi4: mi2: |
     mi: mi: mi: mi4: mi2: mi4: mi2: mi: mi: mi: mi2: mi4: mi2: mi4: |
     mi2: mi: mi: mi: mi: mi4: mi2: mi4: mi2: mi: mi: mi: |
     mi: mi4: mi2: mi4: fa?2: fa: fad: fad:
-    <sol re'>4:8 <re' la'>: <sol, re'>: <re' la'>: <sol, re'>: <re' la'> |
+    <sol re'>4:8\mp <re' la'>: <sol, re'>: <re' la'>: <sol, re'>: <re' la'> |
     mib,2:8 mib:
 
     %%% Stretto %%%
-    re'2:16 re: re: re: re4 r \harmo {<sol, mi'\harmonic >2~ <sol mi'\harmonic >2.} si'2
-    r4 \pizz mi, sol r mi |
-    \arco sold, sold sol sol sold sold sol sol
-    <fa re'> <fa re'> <fa re'> <fa re'> |
+    re'2:16\f re: re: re: re4-- r \harmo {\ten <sol, mi'\harmonic >2~\p <sol mi'\harmonic >2.} si'2
+    r4 \pizz mi,--\mp sol-- r mi-- |
+    \arco sold,--\mp sold-- sol-- sol-- sold-- sold-- sol-- sol--
+    <fa re'>-- <fa re'>-- <fa re'>-- <fa re'>-- |
     <mi si'> <mi si'> <mi si'> <mi si'> |
-    <re sib'> r r2 R1*3 |
+    <re sib'>-.-> r r2 R1*3 |
 
     %%% Noir %%%
     R2.-\fermataMarkup R2.*4 R2 R2. R1 R2. R2
     R1*5 R1.*4 R1 R2.-\fermataMarkup \clef treble
 
-    r2 \arco la'''4~\CaV la2.~\CaV la~\CaV la~\CaV la~\CaV
+    r2 \arco la'''4~\pp\CaV la2.~\CaV la~\CaV la~\CaV la~\CaV
     la~\CaV la~\CaV la2\CaV r4 | R2.-\fermataMarkup \clef bass
 
     %%% Poco più %%%

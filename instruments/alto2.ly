@@ -705,11 +705,11 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
 EntracteAltoDeux = { \AltoDeux
   \relative {
     R2*9
-    <re, re'>4 r r2 R1*6
-    re16 re re re re4 r8 re16 re re re re8 |
-    re16 re re re re4 r2 |
-    re16 re re re re re re re re re lab' lab re, re si'? si |
-    re,4:16 re': re,: re': |
+    <re, re'>4\sfz r r2 R1*6
+    re16->\mf re re re re4 r8 re16-> re re re re8-. |
+    re16-> re re re re4-- r2 |
+    re16\mp\< re re re re re re re re re lab' lab re, re si'? si |
+    re,4:16\fp re': re,: re': |
     re,: re': re, re': |
     re,: re': re, re': |
     re,: re': re, re': |
@@ -717,46 +717,46 @@ EntracteAltoDeux = { \AltoDeux
     re,: re': re, re': |
     re,2:16 re'2:16 re,: re: |
     re4 r r2 | R1*2
-    re1~ re2. r4 | R1*2
-    re1~ re2. r4 | sol lab la sib si r r <re, sol> r <re sold> r mib |
-    re4:16 re': re,: re': |
+    \ten re1~\mp re2. r4 | R1*2
+    \ten re1~\p re2. r4 | sol--(\upbow lab--\< la-- sib--) si->\f r r <re, sol>-.->\mp r <re sold>-.-> r mib-.-> |
+    re4:16\fp re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
     re,: re': re,: re': |
-    re,4 re re re re re re |
+    re,4--->\mf re-- re-- re-- re re re |
     re2:8 re: |
 
     %%% Fugato %%%
-    red1~ red~ red2.~ red~ red2~ |
+    red1~\ff red~\> red2.~\mp red~ red2~ |
     red1~ red2.~ red~ <red sol>1~ <red sol>~ <red sol>2.~ red~
     red1~ red~ red2.~ red~ red1~ red2. r4 |
-    do2:8 do4: do2: do4: <do sol'>2:8 <do sol'>: <do sol'>: <do sol'>:
-    <do sol' re'>4 <sol' re' la'> <do, sol' re'> <sol' re' la'>
+    do2:8\p do4: do2: do4: <do sol'>2:8 <do sol'>: <do sol'>: <do sol'>:
+    <do sol' re'>4\mf <sol' re' la'> <do, sol' re'> <sol' re' la'>
     <do, sol' re'> <sol' re' la'> |
     <sol re'>4:8 <re' la'>: <sol, re'>: <re' la'>: |
 
     %%% Stretto %%%
-    re2:16 re: | re: re: |
-    re4 <dod re>2 r4 \clef treble |
-    r4 r8 \pizz fad' sold,4 r \clef alto |
-    mi sol r mi |
-    \arco mi2:8 mi8 fad fad4:8 |
-    mi: mi8 fad fad2:8 |
-    si,2:8 si: | lad: lad: |
-    <sib re>4 r r2 | R1*3
+    re2:16\f re: | re: re: |
+    re4-- <dod re>2\sffz r4 \clef treble |
+    r4 r8 \pizz fad'\mp sold,4-- r \clef alto |
+    mi-- sol-- r mi-- |
+    \arco mi2:8\fp mi8 fad-> fad4:8 |
+    mi:-> mi8 fad-> fad2:8 |
+    si,2:8->\mp si: | lad: lad:\< |
+    <sib re>4-.->\! r r2 | R1*3
 
     %%% Noir %%%
-    R2.-\fermataMarkup \pizz red4 r2 | R2. red4 r2 R2. R2 |
-    red4 r2 r4 red, r2 | r4 red r | R2 mi4 r r2 |
+    R2.-\fermataMarkup \pizz red4\mp r2 | R2. red4 r2 R2. R2 |
+    red4 r2 r4 red, r2 | r4 red r | R2 mi4\mp r r2 |
     R1*4 R1.*4 R1 R2.-\fermataMarkup
 
-    R2. r4 \arco la2~ la2.~ la~ la~ la~ la~ la2 r4 | R2.-\fermataMarkup
+    R2. r4 \arco la2~\p la2.~ la~ la~ la~ la~ la2 r4 | R2.-\fermataMarkup
 
     %%% Poco più %%%
-    la2.~ la~ la~ la2 r4 | R2.-\fermataMarkup |
+    la2.~\pp la~ la~ la2 r4 | R2.-\fermataMarkup |
 
     %%% Andantino %%%
     R1 R2 R1 R2 R1 R2 R1 R2. \clef treble

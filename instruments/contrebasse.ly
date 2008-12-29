@@ -508,25 +508,25 @@ ActeUnSceneQuatreContrebasse = { \Contrebasse
 
 EntracteContrebasse = { \Contrebasse
   \relative {
-    sold,,2~ sold sold~ sold |
-    sold~ sold sold sold sold4 r8 \t {sold16 dod si} |
-    re4 r r2 | R1*22
-    re'2:16\CaV re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV
-    re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV re16 dod si sib lab sol fa mib |
-    re4 r r2 \pizz re4 r si fa' dod red sold,8 sold' r4 |
+    sold,,2~\pp sold sold~ sold |
+    sold~ sold sold sold sold4 r8 \t {sold16\< dod si} |
+    re4\sfz r r2 | R1*22
+    re'2:16\mp\CaV re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV
+    re:\CaV re:\CaV re:\CaV re:\CaV re:\CaV re16\< dod si sib lab sol fa mib |
+    re4->\! r r2 \pizz re4\mf r si fa' dod red sold,8 sold' r4 |
     fad,4 sib mib reb fa si, do mi sib fad sol la8 sol |
-    la4 sol'8 la mi4 do | re2:8 re: re: re4: re2: re: |
+    la4 sol'8 la mi4 do | \arco re2:8\mf re: re: re4: re2: re: |
 
     %%% Fugato %%%
-    <mi, mi'>1~ <mi mi'>~ <mi mi'>2.~ <mi mi'>~ <mi mi'>4 r |
-    mi'1~ mi2.~ mi~ mi1~ mi~ mi2.~ mi4 r2 |
-    mi,1~ mi~ mi2.~ mi fa2 mi fa1~ fa2.~ fa2. |
-    r4 fad2. sol2 fad sol2. r4 sol2 |
-    sold2. \t {sold8 si dod} |
+    <mi, mi'>1~\f <mi mi'>~ <mi mi'>2.~ <mi mi'>~ <mi mi'>4 r |
+    mi'1~\mf mi2.~ mi~ mi1~ mi~ mi2.~ mi4 r2 |
+    mi,1~ mi~ mi2.~ mi fa2\p mi fa1~ fa2.~ fa2. |
+    r4 fad2.\mp sol2 fad sol2. r4 sol2\< |
+    sold2.\! \t {sold8\< si dod} |
 
     %%% Stretto %%%
-    re2:8 re: re: re:
-    re8 re'\CaV re4:8\CaV re2:8\CaV
+    re2:8\f re: re: re:
+    re8 re'\mp\CaV re4:8\CaV re2:8\CaV
     <re, do'\harmonic>2:8
     <re do'\harmonic>:
     <re do'\harmonic>:
@@ -537,7 +537,7 @@ EntracteContrebasse = { \Contrebasse
     <re si'\harmonic>:
     <re sol\harmonic>:
     <re sol\harmonic>:
-    \ordin mi: mi: re4 r r2 R1*3
+    \ordin mi: mi: re4-.-> r r2 R1*3
 
     %%% Noir %%%
     R2.-\fermataMarkup R2.*4 R2 R2. R1
@@ -545,7 +545,7 @@ EntracteContrebasse = { \Contrebasse
     R2.*8 R2.-\fermataMarkup
 
     %%% Poco più %%%
-    la2. sib do dod2 r4 R2.-\fermataMarkup
+    la2.\pp sib do dod2 r4 R2.-\fermataMarkup
 
     %%% Andantino %%%
     R1 R2 R1 R2 R1 R2 R1 R2.

@@ -710,10 +710,10 @@ ActeUnSceneQuatreAltoUn = { \AltoUn
 EntracteAltoUn = { \AltoUn
   \relative {
     R2*9
-    <re, re'>4 r r2 R1*6 re16 re re re re4 r8 re16 re re re re8 |
-    re16 re re re re4 r2 |
-    re16 re re re mib mib mib mib fa fa fa fa sib sib sib sib |
-    re4:16 re,: re': re,: |
+    <re, re'>4\sfz r r2 R1*6 re16->\mf re re re re4 r8 re16-> re re re re8-. |
+    re16-> re re re re4-- r2 |
+    re16\mp\< re re re mib mib mib mib fa fa fa fa sib sib sib sib |
+    re4:16\fp re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
@@ -721,48 +721,48 @@ EntracteAltoUn = { \AltoUn
     re': re,: re': re,: |
     re'2:16 re,2:16 re': re: |
     re4 r r2 | R1*2
-    re,1~ re2. r4 | R1*2
-    re1~ re2. r4 | do'4 reb re mib |
-    mi r r <mib, la> | r <re dod'> r <re do'> |
-    re'4:16 re,: re': re,: |
+    \ten re,1~\mp re2. r4 | R1*2
+    \ten re1~\p re2. r4 | do'4--(\upbow reb--\< re-- mib--) |
+    mi->\f r r <mib, la>-.->\mp | r <re dod'>-.-> r <re do'>-.-> |
+    re'4:16\fp re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
     re': re,: re': re,: |
-    re'4 re, re re re re re |
+    re'4--->\mf re,-- re-- re-- re re re |
     re2:8 re: |
 
     %%% Fugato %%%
-    red1~ red~ red2.~ red~ red2~ |
-    red1~ red2 r4 | sol2.\glissando fad'1~
-    fad~ fad2.\glissando re!2.~ re1~ re~ re2.~ re~
-    re1~ re~ <sol, re'>2.~ <sol re'>~ <sol re'>2 <re' la'>~ |
+    red1~\ff red~\> red2.~\p red~ red2~ |
+    red1~ red2 r4 | sol2.\mf(\glissando fad'1~\>)
+    fad~\! fad2.\>(\glissando re!2.~\p) re1~ re~ re2.~ re~
+    re1~ re~ <sol, re'>2.~ <sol re'>~ <sol re'>2 <re' la'>~--\mp |
     <re la'>8 <sol, re'>4. <re' la'> <sol, re'>8~ |
-    <sol re' la'>4 <do, sol' re'> <sol' re' la'> |
+    <sol re' la'>4\mf <do, sol' re'> <sol' re' la'> |
     <do, sol' re'> <sol' re' la'> <do, sol' re'> |
     <re' la'>4:8 <sol, re'>: <re' la'>: <sol, re'>: |
 
     %%% Stretto %%%
-    re'2:16 re: | re: re: |
-    re4 <dod re>2 r4 \clef treble |
-    r8 \pizz si'' re,4 sold, r \clef alto |
-    sol mi r sol |
-    \arco sold2:8 sold8 lad lad4:8 |
-    sold: sold8 lad lad2:8 |
-    sol!2:8 sol: | dod,: dod: |
-    <sib re>4 r r2 | r4 \pizz re, r re r re r2 | R1
+    re'2:16\f re: | re: re: |
+    re4-- <dod re>2\sffz r4 \clef treble |
+    r8 \pizz si''\mp re,4-- sold,-- r \clef alto |
+    sol-- mi-- r sol-- |
+    \arco sold2:8\fp sold8 lad-> lad4:8 |
+    sold:-> sold8 lad-> lad2:8 |
+    sol!2:8->\mp sol: | dod,: dod:\< |
+    <sib re>4-.->\! r r2 | r4 \pizz re,\mp r re r re r2 | R1
 
     %%% Noir %%%
     R2.-\fermataMarkup red'4 r2 | R2. red4 r2 R2. R2 |
-    red4 r2 r4 red r2 | r4 red, r | R2 sol4 r r2 |
+    red4 r2 r4 red r2 | r4 red, r | R2 sol4\mp r r2 |
     R1*4 R1.*4 R1 R2.-\fermataMarkup
 
-    R2. r4 \arco la2~ la2.~ la~ la~ la~ la~ la2 r4 | R2.-\fermataMarkup
+    R2. r4 \arco la2~\p la2.~ la~ la~ la~ la~ la2 r4 | R2.-\fermataMarkup
 
     %%% Poco più %%%
-    la2.~ la~ la~ la2 r4 | R2.-\fermataMarkup |
+    la2.~\pp la~ la~ la2 r4 | R2.-\fermataMarkup |
 
     %%% Andantino %%%
     R1 R2 R1 R2 R1 R2 R1 R2. \clef treble
