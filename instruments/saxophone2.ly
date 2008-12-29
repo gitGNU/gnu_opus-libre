@@ -426,7 +426,7 @@ EntracteSaxophoneDeux = { \SaxAltoDeux
     re'4\f re8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 |
 
     %%% Fugato %%%
-    re,4 r r2 | R1-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton R2.*2 R2
+    re,4-> r r2 | R1-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton R2.*2 R2
     R1 R2.*2 R1
     mi,2\p( sol8) r r4 | R2. lab2( si8) r |
     R1 mi,2( sol8) r r4 | R2. si2.( fa4) r r2 |

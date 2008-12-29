@@ -404,58 +404,62 @@ ActeUnSceneQuatreSaxophoneUn = { \SaxAltoUn
 
 EntracteSaxophoneUn = { \SaxAltoUn
   \relative {
-    R2*2 r4 mi sold2 |
-    \t {r4 mi8} \t {sold4 sol8} |
-    si2 \t {r4 sol8} si4~ si8 r r4 |
-    sol4 \t {si sib8} | re4 r r2 R1*2
-    r2 r8 r16 la, re8. do16 |
-    fa1~ fa4. r8 r2 | R1*8
-    r4 mi, r mi | r fa mi r |
-    r mib r mib r re r2 R1*7
-    r4 reb'8. reb16 mi4 r |
-    r4 sold8 sold la4 r |
-    r2 mi~ mi4 r r2 | R1*3
-    r2 r4 si | sib re solb, r |
-    r do si mib sol, r r2 | R1
-    re'8 re re4 re8 re re4 |
+    R2*2 r4 mi--\pp sold2-- |
+    \t {r4 mi8(} \t {sold4) sol8(} |
+    si2) \t {r4 sol8(\>} si4)\!~ si8 r r4 |
+    sol4-- \t {si(\< sib8)} | re4->\! r r2 R1*2
+    r2 r8 r16 la,(\< re8.) do16( |
+    \ten fa1\mf)~ fa4. r8 r2 | R1*8
+    r4 mi,--\p r mi-- | r fa( mi-.->) r |
+    r mib-- r mib-- r re-- r2 R1*7
+    r4 reb'8.--\mp reb16 mi4-- r |
+    r4 sold8-.\p sold-. la4-. r |
+    r2 mi\pp~ mi4 r r2 | R1*3
+    r2 r4 si-.(\pp | sib-. re-. solb,-.) r |
+    r do-.( si-. mib-. sol,-.) r r2 | R1
+    re'8\f re re4 re8 re re4 |
     re8 re re4 re8 re re4 re8 re re4 re8 re |
 
     %%% Fugato %%%
-    re4 r r2 | R1 R2.*2 R2
-    R1 r4 mi,2~ mi2.~ mi4 r r2 |
-    sol2 fad8 r r4 | R2. sol2 fad8 r | R1
-    sol2 fad8 r r4 | R2. lab2. sol4 r r2 R1
-    R2.*2 la!1~ la2. r4 | R2.*2
-    la4 mib' sold sold |
+    re4-> r r2 | R1 R2.*2 R2
+    R1 r4 mi,2\pp~ mi2.~ mi4 r r2 |
+    sol2\p( fad8) r r4 | R2. sol2( fad8) r | R1
+    sol2( fad8) r r4 | R2. lab2.( sol4) r r2 R1
+    R2.*2 \ten la!1\p~ la2. r4 | R2.*2
+    la4--\mf\< mib'-- sold-- sold-- |
 
     %%% Stretto %%%
-    la re,, r re r re r mib' | re sib sib sib |
-    lab lab lab lab | fa fa fa fa |
-    mi2 sol lab re4 r | r16 re re8 r4 r2 |
-    r16 si si8 r4 r dod'8 dod |
-    re4 r r2 R1*3
+    la->\! re,,---> r re---> r re---> r mib'---> |
+    re---> sib--\p sib-- sib-- |
+    lab-- lab-- lab-- lab-- | fa-- fa-- fa-- fa-- |
+    mi2-- sol-- lab( re4) r | r16 re\mf re8-> r4 r2 |
+    r16 si si8-> r4 r dod'8-. dod-. |
+    re4-. r r2 R1*3
 
     %%% Noir %%%
-    R2.-\fermataMarkup R2.*4 R2 R2. R1 r4 r8 fad, r4 R2
-    R1*5 R1.*2 r2 si,2. r4 | R1. r2 si |
+    R2.-\fermataMarkup R2.*4 R2 R2. R1 r4 r8 fad,->\mf r4 R2
+    R1*5 R1.*2 r2 si,2.--\p r4 | R1. r2 si-- |
     R2.-\fermataMarkup R2.*8 R2.-\fermataMarkup
 
     %%% poco più %%%
     R2.*4 R2.-\fermataMarkup
 
     %%% Andantino %%%
-    mi1~ mi2~ mi1~ mi4 r | mi1~ mi2~ mi2. r4 R2.
+    \ten mi1\p~ mi2~ mi1~ mi4 r |
+    mi1~ mi2~ mi2. r4 R2.
 
     %%% Largo non troppo %%%
-    la,1.~ la1~ la4 r |
+    la,1.\mp~ la1~ la4 r |
     la1.~ la1~ la4 r |
-    la'1.~ la1~ la4 r |
-    sol1. fa1~ fa4 r |
-    mi2 la mi' la sol fa~ fa mi2. r4 |
-    sib2 la sol~ sol1 fa4 r |
-    si,2 sol'1~ sol1~ sol4 r |
-    re,1~ re4 r | red1~ red4 r | mi1~ mi4 r |
-    mi2. r4 R1 R2. red8 r r4 |
+    la'1.\p~ la1~ la4 r |
+    sol1.(\> fa1~ fa4)\! r |
+    mi2(\< la mi') \ind #"espr."
+    la\!( sol fa~ fa\> mi2.\!) r4 |
+    sib2(\mf la sol~ sol1\> fa4\!) r |
+    si,2\p sol'1~ sol1~ sol4 r |
+    \cresc re,1\mp~ re4 r | red1~ red4 r |
+    \ten mi1--\f~ mi4 r |
+    mi2.-- r4 R1 R2. red8-.->\sffz r r4 |
   }
 }
 
