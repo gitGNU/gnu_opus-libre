@@ -762,23 +762,23 @@ EntracteAltoDeux = { \AltoDeux
     R1 R2 R1 R2 R1 R2 R1 R2. \clef treble
 
     %%% Largo non troppo %%%
-    la'4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
+    \ind #"à la corde" la'4\mp( sol) fa( mi) fa8\<( mi) fa( sol) |
+    la4\!( sol) fa( mi) fa8\<( mi) fa( sol) |
+    \simile la4\! sol fa mi fa8 mi fa sol |
     la4 sol fa mi r2 |
-    la'4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
-    la4 sol fa mi fa8 mi fa sol |
+    la'4\mf( sol) fa( mi) fa8\<( mi) fa( sol) |
+    la4\!( sol) fa( mi) fa8\<( mi) fa( sol) |
+    \simile la4\! sol fa mi fa8 mi fa sol |
     la4 sol fa mi r2 \clef alto |
-    <la,, la'>1. <sol re' re'>1 <sol re'>2 |
+    \ten <la,, la'>1.-- \det {<sol re' re'>1 <sol re'>2 |
     <sol sol' do>1 <do, sol' sol'>2 |
-    <dod sol' mi'> <la' mi'> dod, |
-    <re la' fa'> re' re, |
-    <re sol re'> <si' fa'> <re, sol> |
-    <do sol' mi'> do' do, |
-    <re re'> <re re'> <re re'> |
+    <dod sol' mi'>->\mp <la' mi'>-> dod, |
+    <re la' fa'>-> re' re, |
+    <re sol re'>-> <si' fa'>-> <re, sol>-> |
+    <do sol' mi'>-> do' do,} |
+    \accdet {<re re'> <re re'> <re re'> |
     <red red'> <red red'> <red red'> |
-    <mi mi'> r1 | <mi mi'>2 r | R1 R2. R2
+    <mi mi'>\f r1 | <mi mi'>2} r | R1 R2. R2
   }
 }
 

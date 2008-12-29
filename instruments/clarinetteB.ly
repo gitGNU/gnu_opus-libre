@@ -663,17 +663,17 @@ EntracteClarinetteDeux = { \ClarinetteDeux
     la1~ la2~ la2. r4 R2. \clef treble |
 
     %%% Largo non troppo %%%
-    la'4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la2 mi r \clef bass |
-    la,, la' la, si si' r |
-    do, do' do, re re' r |
-    la' la,, la'' sol si,, r |
-    do' do, do' dod,, dod' r |
-    re re, re' sol sol, r |
-    do do' do, re,1~ re4 r red1~ red4 r mi1~ mi4 r |
-    mi''2. r4 R1 R2. mi,,8 r r4 |
+    la'4\mp( sol8 r fa4 mi8 r fa\< mi fa sol) |
+    la4\!\(( sol8) r fa4( mi8) r fa\<( mi) fa sol\) |
+    la4\! sol8 r fa4 mi8 r fa mi fa sol |
+    la2( mi) r \clef bass |
+    la,,\mf( la') la,-- si( si') r |
+    do,( do') do,-- re( re') r |
+    la'-- la,,-- la''-- sol-- si,,-- r |
+    do'( do,) do'-- dod,,( dod') r |
+    re( re,) re'-- sol( sol,) r |
+    do( do') do,-- \cresc re,1~\mf re4 r red1~ red4 r \ten mi1~--\ff mi4 r |
+    mi''2.---> r4 R1 R2. mi,,8-.->\sffz r r4 |
   }
 }
 

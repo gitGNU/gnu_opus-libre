@@ -716,24 +716,24 @@ EntracteViolonUn = { \ViolonUn
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    \arco <do' la'>2 <do la'> <do la'> |
+    \arco <do' la'>2--->\mf \accdet {<do la'> <do la'> |
     <re la'> <re la'> <re la'> |
     <do si'> <do si'> <do si'> |
     <fa do'> <fa do'> <fa do'> |
     <mi re'> <mi re'> <mi re'> |
     <sol re'> <sol re'> <sol re'> |
-    <sol mi'> <sol mi'> <sol mi'> |
+    \cresc <sol mi'> <sol mi'> <sol mi'> |
     <la fa'> <la fa'> <la fa'> |
     <la sol'> <la sol'> <la sol'> |
-    <la la'> <sol sol'> <fa fa'> |
-    <fa fa'> <mi mi'> <mi mi'> |
-    <mi mi'> <mi mi'> <mi mi'> |
-    <mi mi'> <fa fa'> <fa fa'> |
+    <la la'>\f( <sol sol'>) <fa fa'> |
+    <fa fa'>\>( <mi mi'>\!) <mi mi'> |
+    <mi mi'>\mp <mi mi'> <mi mi'> |
+    <mi mi'>( <fa fa'>) <fa fa'> |
     <re re'> <re re'> <re re'> |
-    <re re'> <mi mi'> <mi mi'> |
-    <mi mi'> <re re'> <do do'> |
-    <do do'> <si si'> <la la'> |
-    <la la'>4 mi' r1 | <la, la'>4 mi' r2 |
+    <re re'>( <mi mi'>) <mi mi'> |
+    \cresc <mi mi'> <re re'> <do do'> |
+    <do do'> <si si'> <la la'>} |
+    <la la'>4->\ff mi'-> r1 | <la, la'>4-> mi'-> r2 |
     R1 R2. R2
   }
 }

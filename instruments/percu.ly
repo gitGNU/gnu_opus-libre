@@ -1239,26 +1239,26 @@ EntractePercus = <<
       la4-- la4:32~\> la4\! r R2. |
 
       %%% Largo non troppo %%%
-      la4 \ttt {la16 la la la la la} la4 la la2 |
-      la4 \ttt {la16 la la la la la} la4 la la2 |
+      la4\p\< \ttt {la16 la la la la la} la4--\! la-- la2-- |
+      \simile la4 \ttt {la16 la la la la la} la4 la la2 |
       la4 \ttt {la16 la la la la la} la4 la la2 |
       la la r |
       la4 \ttt {la16 la la la la la} la4 la la2 |
       la4 \ttt {la16 la la la la la} la4 la la2 |
       la4 \ttt {la16 la la la la la} la4 la la2 |
       la4 \t {la8 la la} la2 r |
-      la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
-      la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
+      la4\mp\< \ttt {la16 la la la la la} la4--\! \ttt {la16\< la la la la la} la4->\! la |
+      \simile la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
       la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la4 la |
       la4 \ttt {la16 la la la la la} la4 \ttt {la16 la la la la la} la8 la la la |
       la4 \ttt {la16 la la la la la} la4 la la2 |
       la4 r8 \t {la16 la la} la4 la la2 |
-      la4 la8 la la4 la la2 |
-      la8 la \t {la la la} la la \t {la la la} la4 la |
-      la8 la \t {la la la} la4 la16 la la la la8 la \ttt {la16 la la la la la} |
-      mi4 \ttt {mi16 mi mi mi mi mi} mi4 mi mi2 |
-      mi4 \ttt {mi16 mi mi mi mi mi} mi2 |
-      r mi4 mi r8 mi~ mi2:32\< mi4\sffz r |
+      la4\> la8 la la4 la la2\! |
+      la8\p\< la \t {la la la} la\! la \t {la\< la la} la4--\! la |
+      la8\< la \t {la la la} la4--\! la16\< la la la la8 la \ttt {la16 la la la la la} |
+      mi4--\f\< \ttt {mi16 mi mi mi mi mi} mi4-- mi--\! mi2-> |
+      mi4-- \ttt {mi16\< mi mi mi mi mi} mi2->\! |
+      r mi4--\ff mi-- r8 mi~ mi2:32\< mi4\sffz r |
     }
   }
 >>

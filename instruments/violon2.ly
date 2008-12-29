@@ -702,24 +702,24 @@ EntracteViolonDeux = { \ViolonDeux
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    \arco <do' la'>2 <do la'> <do la'> |
+    \arco <do' la'>2->\mf \accdet {<do la'> <do la'> |
     <re la'> <re la'> <re la'> |
     <do si'> <do si'> <do si'> |
     <fa do'> <fa do'> <fa do'> |
     <mi re'> <mi re'> <mi re'> |
     <re re'> <re re'> <re re'> |
-    <sol re'> <do, do'> <sol' mi'> |
+    \cresc <sol re'> <do, do'> <sol' mi'> |
     <fa mi'> <fa re'> <fa re'> |
     <la mi'> <la mi'> <la mi'> |
-    <fa fa'> <mi mi'> <re re'> |
-    <re re'> <do do'> <do do'> |
-    <mi mi'> <mi mi'> <mi dod'> |
-    <dod dod'> <re re'> <re re'> |
+    <fa fa'>\f( <mi mi'>) <re re'> |
+    <re re'>\>( <do do'>\!) <do do'> |
+    <mi mi'>\mp <mi mi'> <mi dod'> |
+    <dod dod'>( <re re'>) <re re'> |
     <si si'> <do si'> <re si'> |
-    <re si'> <do do'> <do do'> |
-    <do do'> <si si'> <la la'> |
-    <do do'> <si si'> <la la'> |
-    <la la'>4 mi' r1 | <la, la'>4 mi' r2 |
+    <re si'>( <do do'>) <do do'> |
+    \cresc <do do'> <si si'> <la la'> |
+    <do do'> <si si'> <la la'>} |
+    <la la'>4->\ff mi'-> r1 | <la, la'>4-> mi'-> r2 |
     R1 R2. R2
   }
 }

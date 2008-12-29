@@ -551,13 +551,13 @@ EntracteContrebasse = { \Contrebasse
     R1 R2 R1 R2 R1 R2 R1 R2.
 
     %%% Largo non troppo %%%
-    la2 la la si si si do do do re re re |
+    \det {la2\mf la la si si si do do do re re re |
     la la la si si si do do do re re re |
     <la la'> <la la'> <la la'> <si sol'> <si sol'> <si sol'> |
-    <do sol'> <do sol'> <do sol'> dod dod dod |
+    <do sol'> <do sol'> <do sol'> \cresc dod dod dod |
     <re re'> <re re'> <re re'> sol, <sol' sol> sol, |
-    do do do re re re red red red |
-    <mi, mi'> r1 <mi mi'>2 r R1 R2. R2
+    do do do re re re red red red} |
+    <mi, mi'>--->\ff r1 <mi mi'>2---> r R1 R2. R2
   }
 }
 

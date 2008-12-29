@@ -566,15 +566,15 @@ EntracteFluteUn = { \FluteUn
     \ten mi1~\mp mi4 r mi1~ mi4 r mi1~ mi4 r si2.-- r4 R2.
 
     %%% Largo non troppo %%%
-    do'1. si1~ si4 r la1. sol2 fa mi4 r |
-    la1.~ la1~ la4 r | la1 mi'2~ mi1~ mi4 r |
-    la1.~ la2 sol fa~ fa mi2. r4 |
-    la,4 sol fa mi fa8 mi fa sol |
-    la1~ la4 r | si1. \grace do8 \afterGrace
+    do'1.\mf( si1~ si4) r la1.( sol2 fa mi4) r |
+    la1.~ la1~ la4 r | la1( mi'2~ mi1~ mi4) r |
+    la1.~\p\<( la2\mf sol fa~ fa\> mi2.\!) r4 |
+    la,4\mf( sol fa mi fa8 mi fa sol |
+    la1~ la4) r | si1.( \grace do8 \afterGrace
     si2\startTrillSpan { la16[ si]\stopTrillSpan }
-    do2. r4 |
-    do2 si la~ la4 sol fa mi fa r |
-    do1~ do4 r re2. r4 R1 R2. R2
+    do2.) r4 |
+    do2( si la~ la4 sol fa mi fa) r |
+    \ten do1~--->\f do4 r re2.---> r4 R1 R2. R2
   }
 }
 
