@@ -244,18 +244,11 @@ acc =
    (add-script m "accent"))
     (music-map make-script-music music))
 
-det =
+det = % I call these "det" as in "détaché".
 #(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "tenuto"))
-    (music-map make-script-music music))
-
-marc =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "marcato"))
     (music-map make-script-music music))
 
 stdet =
@@ -272,25 +265,11 @@ accdet =
    (double-script m "tenuto" "accent"))
     (music-map make-script-music music))
 
-marcdet =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (double-script m "tenuto" "marcato"))
-    (music-map make-script-music music))
-
 accst =
 #(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (double-script m "accent" "staccato"))
-    (music-map make-script-music music))
-
-marcst =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (double-script m "marcato" "staccato"))
     (music-map make-script-music music))
 
 dwnb =
