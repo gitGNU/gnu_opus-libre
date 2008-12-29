@@ -570,7 +570,9 @@ EntracteFluteUn = { \FluteUn
     la1.~ la1~ la4 r | la1( mi'2~ mi1~ mi4) r |
     la1.~ la2 sol fa~ fa mi2. r4 |
     la,4 sol fa mi fa8 mi fa sol |
-    la1~ la4 r | si1. si2 do2. r4 |
+    la1~ la4 r | si1. \grace do8 \afterGrace
+    si2\startTrillSpan { la16[ si]\stopTrillSpan }
+    do2. r4 |
     do2 si la~ la4 sol fa mi fa r |
     do1~ do4 r re2. r4 R1 R2. R2
   }

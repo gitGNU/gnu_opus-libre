@@ -568,8 +568,10 @@ EntracteFluteDeux = { \FluteDeux
     la'1. mi1~ mi4 r mi1. re1 sold,4 r |
     do1. re1~ re4 r | mi1.~ mi2 la2. r4 |
     la4 sol8 r fa4 mi8 r mi'2 | fa mi re~ re do2. r4 |
-    dod,4 mi re2. dod4 dod1 re4 r |
-    la'4 sol fa mi fa2 | fa mi2. r4 |
+    dod,4 mi re2. dod4 |
+    \grace re8 \afterGrace dod1\startTrillSpan
+    {si16[ dod]\stopTrillSpan }re4 r |
+    la'4 sol fa mi fa2 fa mi2. r4 |
     la4 sol fa mi fa r do2 si la |
     la1~ la4 r si2. r4 | R1 R2. R2
   }

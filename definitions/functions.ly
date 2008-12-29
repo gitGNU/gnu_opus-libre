@@ -30,41 +30,52 @@ tttt =
 
 %% Polyphony shortcuts --------------------------------------------%
 
-pl =
-#(define-music-function (parser location one two) (ly:music? ly:music?)
-#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
+%%% Functions (Issue #442 workaround)
 
-plperc =
-#(define-music-function (parser location one two) (ly:music? ly:music?)
-#{ <<  { \stemDown $one \stemNeutral } \new DrumVoice { \stemUp $two } >> #})
-
-parallel=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ <<
-\context Staff = "md"   $droite
-\context Staff = "mg"   $gauche
->> #})
-
-%%% Piano stuff (Issue #442 workaround)
-
-#(define (remove music)
-"Sends the whole thing to Devnull whenever possible"
+#(define (remove music) ; throw everything into the Big Void...
  (context-spec-music music 'Devnull))
+
+#(define (unpitch music)
+  ; in addition to the PitchSquash thing, we need to make
+  ; accidentals disappear (since these are engraved at a
+  ; Staff level, and since we don't want to affect the
+  ; real Voice).
+  (let* ((es (ly:music-property music 'elements))
+         (e (ly:music-property music 'element))
+         (p (ly:music-property music 'pitch)))
+    (if (pair? es)
+        (ly:music-set-property!
+         music 'elements
+         (map (lambda (x) (unpitch x)) es)))
+    (if (ly:music? e)
+        (ly:music-set-property!
+         music 'element
+         (unpitch e)))
+    (if (ly:pitch? p)
+          (ly:music-set-property! music 'pitch 0)))
+   music)
 
 #(define (event-filter event)
  (let ((n (ly:music-property event 'name)))
   (if (or
     (eq? n 'ContextSpeccedMusic) ; to avoid clefs and ottavas
-    (eq? n 'ContextChange)) ; cross-staff voices are supported
+    (eq? n 'ContextChange) ; cross-staff voices are supported
+    (eq? n 'ArpeggioEvent)) ; arpeggios need to go too
     (music-map remove event))
   (if (eq? n 'SimultaneousMusic) ; we don't want a new Voice to be created
     (ly:music-set-property! event 'name 'NoteEvent))))
 
 makeGhost =
 #(define-music-function (parser location music) (ly:music?)
- (context-spec-music (music-filter event-filter music) 'PseudoVoice))
+ (context-spec-music (music-filter event-filter (unpitch music)) 'PseudoVoice))
 
-showAnyway =
+pl =
+#(define-music-function (parser location one two) (ly:music? ly:music?)
+#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
+
+%%% Piano implementation
+
+showAnyway = %not needed
 #(define-music-function (parser location music) (ly:music?)
 #{
   \unset Score.keepAliveInterfaces
@@ -74,30 +85,28 @@ showAnyway =
   percent-repeat-interface stanza-number-interface)
 #})
 
-md = { \change Staff = "md" }
-
-mg = { \change Staff = "mg" }
-
 PianoDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{
   \new PianoStaff <<
-    \new Staff = "md" \with { \remove Accidental_engraver }
+    \new Staff = "md"
     <<
-     \new Voice \with { \consists Accidental_engraver } { \clef treble $droite }
+     \new Voice { \clef treble $droite }
      \new Voice { \makeGhost $gauche }
     >>
-    \new Staff = "mg" \with { \remove Accidental_engraver }
+    \new Staff = "mg"
     <<
-     \new Voice \with { \consists Accidental_engraver } { \clef bass $gauche }
+     \new Voice { \clef bass $gauche }
      \new Voice { \makeGhost $droite }
     >>
   >>
 #})
 
-droite = { \change Staff = "percuDroite" }
+md = { \change Staff = "md" }
 
-gauche = { \change Staff = "percuGauche" }
+mg = { \change Staff = "mg" }
+
+%%% The same, for percussions.
 
 PercuDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
@@ -115,6 +124,14 @@ PercuDeuxMains=
     >>
   >>
 #})
+
+droite = { \change Staff = "percuDroite" }
+
+gauche = { \change Staff = "percuGauche" }
+
+plperc =
+#(define-music-function (parser location one two) (ly:music? ly:music?)
+#{ <<  { \stemDown $one \stemNeutral } \new DrumVoice { \stemUp $two } >> #})
 
 
 %% Music formatting -----------------------------------------------%
@@ -244,18 +261,11 @@ acc =
    (add-script m "accent"))
     (music-map make-script-music music))
 
-det =
+det = % I call these "det" as in "détaché".
 #(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (add-script m "tenuto"))
-    (music-map make-script-music music))
-
-marc =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "marcato"))
     (music-map make-script-music music))
 
 stdet =
@@ -272,25 +282,11 @@ accdet =
    (double-script m "tenuto" "accent"))
     (music-map make-script-music music))
 
-marcdet =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (double-script m "tenuto" "marcato"))
-    (music-map make-script-music music))
-
 accst =
 #(define-music-function (parser location music)
           (ly:music?)
           (define (make-script-music m)
    (double-script m "accent" "staccato"))
-    (music-map make-script-music music))
-
-marcst =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (double-script m "marcato" "staccato"))
     (music-map make-script-music music))
 
 dwnb =
@@ -398,7 +394,7 @@ makePart =
                         (ly:music? ly:music?)
 #{\context Staff << $part \new GhostVoice $ref >> #})
 
-makeSection =
+makeSection = % two parts
 #(define-music-function (parser location part-one part-two ref)
                         (ly:music? ly:music? ly:music?)
 #{\new StaffGroup <<
@@ -406,7 +402,7 @@ makeSection =
     \new Staff $part-two
 >> #})
 
-makeExtraSection = % for violins
+makeExtraSection = % three parts, e.g. for violins
 #(define-music-function (parser location part-one part-two part-three ref)
                         (ly:music? ly:music? ly:music? ly:music?)
 #{\new StaffGroup <<
