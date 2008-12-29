@@ -38,19 +38,13 @@ plperc =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ <<  { \stemDown $one \stemNeutral } \new DrumVoice { \stemUp $two } >> #})
 
-parallel=
-#(define-music-function (parser location droite gauche) (ly:music? ly:music?)
-#{ <<
-\context Staff = "md"   $droite
-\context Staff = "mg"   $gauche
->> #})
-
 %%% Piano stuff (Issue #442 workaround)
 
 #(define (remove music)
 "Sends the whole thing to Devnull whenever possible"
  (context-spec-music music 'Devnull))
 
+ %%FIXME: add arpeggios in the filter.
 #(define (event-filter event)
  (let ((n (ly:music-property event 'name)))
   (if (or
@@ -377,7 +371,7 @@ makePart =
                         (ly:music? ly:music?)
 #{\context Staff << $part \new GhostVoice $ref >> #})
 
-makeSection =
+makeSection = % two parts
 #(define-music-function (parser location part-one part-two ref)
                         (ly:music? ly:music? ly:music?)
 #{\new StaffGroup <<
@@ -385,7 +379,7 @@ makeSection =
     \new Staff $part-two
 >> #})
 
-makeExtraSection = % for violins
+makeExtraSection = % three parts, e.g. for violins
 #(define-music-function (parser location part-one part-two part-three ref)
                         (ly:music? ly:music? ly:music? ly:music?)
 #{\new StaffGroup <<
