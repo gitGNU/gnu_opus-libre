@@ -587,24 +587,24 @@ EntracteClarinetteUn = { \ClarinetteUn
     la4 mi) r2 R2.
 
     %%% Largo non troppo %%%
+    la4\mp\(( sol8) r fa4( mi8) r fa\<( mi) fa sol\) |
+    la4\!( sol8) r fa4( mi8) r fa\<( mi) fa sol |
+    \simile la4\! sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
+    \ind #"senza cresc." la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4\mpsempre sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
     la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 sol8 r fa4 mi8 r fa mi fa sol |
-    la4 mi~ mi2. r4 | mi2. r4 R1 R2. mi,,8 r r4 |
+    \cresc la4 sol8 r fa4 mi8 r fa mi fa sol |
+    la4 sol8 r fa4 mi8 r fa\< mi fa sol |
+    la4\ff mi~ mi2. r4 | mi2.---> r4 R1 R2. mi,,8-.->\sffz r r4 |
   }
 }
 

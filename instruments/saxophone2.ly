@@ -452,15 +452,15 @@ EntracteSaxophoneDeux = { \SaxAltoDeux
     \ten la,1~--\p la4 r si1~-- si4 r do1~-- do4 r re2.-- r4 R2.
 
     %%% Largo non troppo %%%
-    la1. si1~ si4 r |
+    la1.\mp( si1~ si4) r |
+    do1.( re1~ re4) r |
+    la1. si1~ si4-- r |
     do1. re1~ re4 r |
-    la1. si1~ si4 r |
-    do1. re1~ re4 r |
-    la2 la' la, si si' r |
-    do, do' do, dod dod, r |
-    re re' re, sol sol' r |
-    do,1 do2 re,1~ re4 r red1~ red4 r |
-    mi1~ mi4 r mi2. r4 | R1 R2. mi8 r r4 |
+    la2( la') la,-- si( si') r |
+    do,( do') do,-- dod( dod,) r |
+    re( re') re,-- sol( sol') r |
+    do,1-- do2-- \cresc re,1~\mp re4 r red1~ red4 r |
+    \ten mi1~--\f mi4 r mi2.-- r4 | R1 R2. mi8-.->\sffz r r4 |
   }
 }
 
