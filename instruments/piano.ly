@@ -1484,7 +1484,7 @@ EntractePiano = {
       dod dod dod dod dod dod re re re re re re sol, sol sol sol sol sol do do do do do do
       \ottava #-1
     re, re re re re re red red red red red red mi mi} r1
-    \pl mi,2 {mi'4 mi}} r2 R1 R2. \pl mi,4-. <red' mi>-. \ottava #0 r |
+    \pl mi,2 {mi'4 mi}} r2 R1 R2. \pl mi,4-. <red' mi>-.\sffz \ottava #0 r |
   }
 }
 

@@ -420,13 +420,13 @@ EntracteSaxophoneDeux = { \SaxAltoDeux
     r2 r8 r16 sol,\<( do8.) sib16( |
     \ten mib1~\mf) mib4. r8 r2 | R1*10
     r4 re,--\p r re-- r re-- r2 | R1*7
-    r4 mib8.--\mf mib16 sol4-- r r la8-.\p la-. sold4-. r |
+    r4 mib8.--\mp mib16 sol4-- r r la8-.\p la-. sold4-. r |
     re1~\pp re4 r r2 | R1*3
     r2 re8--\p r r4 R1 mi8 r r4 r2 R1*2
     re'4\f re8 re re4 re8 re re4 re8 re re4 re8 re re4 re8 re re4 |
 
     %%% Fugato %%%
-    re,4 r r2 | R1-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton R2.*2 R2
+    re,4-> r r2 | R1-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton R2.*2 R2
     R1 R2.*2 R1
     mi,2\p( sol8) r r4 | R2. lab2( si8) r |
     R1 mi,2( sol8) r r4 | R2. si2.( fa4) r r2 |

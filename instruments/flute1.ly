@@ -550,7 +550,7 @@ EntracteFluteUn = { \FluteUn
     sol,,4-- r8 do-. r si'-. r4 |
     sold--\mf r sold8( lad) r lad( |
     sold4) sold8( lad) r4 r8 \t {fad16\<( lad re} |
-    fad4-.->) r r r8 \t {la,16( do fa} |
+    fad4-.->\!) r r r8 \t {la,16( do fa} |
     sold4-.) r r r8 \t {sol,16( la do} |
     re4-.) fa16\mp( sol) lab-. sol-. lab4-- r R1*3
 
