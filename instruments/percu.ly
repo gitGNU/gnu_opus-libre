@@ -1266,9 +1266,9 @@ EntractePercus = <<
 ActeDeuxSceneUnPercus = <<
   \new Staff \relative {\Vibraphone
     R2.*4 R2 R2.*2 R2
-    \st {mi,8\mp(\sustainOn do' sol' mib'\> lab si\!)}\laissezVibrer R2.*2
+    \st {mi,8\mp(\sustainOn do' sol' mib'\> lab si\laissezVibrer\!)} R2.*2
     \sustainOff R2 R2. R2 R2.*2 R2
-    \st {mi,,,8(\sustainOn si' do sol'\> lab mib'\!)}\laissezVibrer R2.*2
+    \st {mi,,,8(\sustainOn si' do sol'\> lab mib'\laissezVibrer\!)} R2.*2
     \sustainOff R2 R2. R2 R2.*2 R2
     <re la'>4--\p\sustainOn mi,-- <re la'>-- |
     \t {mi,8( <re' la'> mi)} \t {<re' la'>( mi, <re la'>)}
@@ -1327,11 +1327,11 @@ ActeDeuxSceneUnPercus = <<
       s4 <do re> r <do re> r <do re> |
       R1 s4 <do re> r |
       R1 R2. R1
-      r4 <mib solb> <mib solb> |
+      r4\mp <mib solb> <mib solb> |
       r <do fa> <do fa> r |
       r <mib solb> <mib solb> |
-      r <do fa> r <do fa> |
-      r <do fa> r | R1
+      r <do fa>\> r <do fa> |
+      r <do fa>\pp r | R1
       R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1
     }
     \relative {
@@ -1347,11 +1347,11 @@ ActeDeuxSceneUnPercus = <<
       fad,\mp <la're> r | <la re> r <la re> r |
       <la re> r <la re> | r <la re> r <la re> |
       fad, <la're> r | <la re> r <la re> r |
-      sib,8 sib' fa fa, mi' do | sib2:32~\> sib4\! r |
-      fad2.:32~\p\> fad4\! r r2 | sib4 r2 |
-      fad2:32~ fad4 r | R2.
+      sib,8( sib') fa( fa,) mi'( do) | sib2:32--~\> sib4\! r |
+      fad2.:32--~\p\> fad4\! r r2 | sib4 r2 |
+      fad2:32--~ fad4 r | R2.
       R1 R2. R1 R2. R1 R2. R1
-      fad2.:32~\mp\> fad4\! r r2 |
+      fad2.:32--~\mp\> fad4\! r r2 |
       <sold'la>4-- r <sold la>-- |
       mi--\p <sold la> si,-- <sold'la> |
       fad,-- <sold'la> r |
@@ -1371,7 +1371,7 @@ ActeDeuxSceneUnPercus = <<
       dod,,( la' \droite <si'mi>) |
       fad\!( <la re>) \gauche dod,,( si' \droite <mi la>) \gauche
       dod,\>( si' \droite <mi la>) \gauche |
-      do,\! la' s4 r4 | la4 r la r |
+      do,(\! la') s4 r4 | la4 r la r |
       fad8--\mf( la \droite <do re> \gauche la \droite <do re> \gauche la) |
       fa--( lab \droite <do re> \gauche lab \droite <do re>4) \gauche r |
       fad,8--( la\droite <do re> \gauche la \droite <do re> \gauche la) |
@@ -1384,7 +1384,7 @@ ActeDeuxSceneUnPercus = <<
       sib,8( la' \droite <do fa> \gauche la \droite <do fa> \gauche la) |
       si,( lab' \droite <si mi> \gauche lab \droite <si mi>4) \gauche |
       R2.
-      mib,8\f la s4 r8 la s4 r8 mib s4 | r2 r4 <la si>\mf |
+      mib,8\f( la) s4 r8 la-. s4 r8 mib-. s4 | r2 r4 <la si>--\mf |
       mib-- s r |
       re--\p <si'dod> r <si dod> |
       re,-- <sib'do> r | R1
