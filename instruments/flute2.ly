@@ -579,36 +579,36 @@ EntracteFluteDeux = { \FluteDeux
 
 ActeDeuxSceneUnFluteDeux = { \FluteDeux
   \relative {
-    R2.*4 R2 R2.*2 R2 | r2 \t {si''8 re fa}| fad2 red8 r16 fad! |
-    re!2.~ | re4 r |
-    R2. R2 | la'2.~ | la2.~ | la4 r | r \t {sib,8 reb mib~} mib4~ |
-    mib16. fad32 do8~ do2 |
-    \tt {si!16 do si sold sol } mib'16 mi,!8.~ mi4~|
+    R2.*4 R2 R2.*2 R2 | r2 \t {si''8\p\<( re) fa}| fad2--\mp( red8) r16 fad!-. |
+    \ten re!2.~---. | re4 r |
+    R2. R2 | la'2.~\pp | la2.~ | la4 r | r \t {sib,8\p\<( reb) mib~--\!} mib4~ |
+    mib16. fad32-.\mp do8~-- do2 |
+    \tt {si!16\p( do si) sold( sol) } mib'16-.\> mi,!8.~--\! mi4~|
     mi r | R2. R2 R2.*2 R2 |
-    la2.~| la2.~| la2.~| la4 r |
+    la2.~\pp\<| la2.~| la2.~\mf\>| la4\! r |
 
     %%% Entrée de la Soprano Deux %%%
-    R2.*2 R1 R2. \t { r2 mi,1} do2.~ do4 r re2.~re2 r |
+    R2.*2 R1 R2. \t { r2 mi,1\mf\>} do2.~\mp do4 r re2.~\p re2 r |
 
     %%% Andantino %%%
-    r2 re~ re2. r4 R2. | r2 re4~ re2.~ re4 r re~ re r |
-    re r2 r re4~ re2.~ re4 r2 R2. | R1 R2. R2
-    dod2 r4 r re sold2~ sold4 r2 R1 R2. R1
-    do2.~ do2. r4 | R2. R1 re,2 r4 R1 R2.
-    r2 r4 re~ re2.~ re2. r4 |
-    mi2.~ mi2. r4 | r re2 mi2. r4 |
-    re'4. mi4. si4 re la r |
+    r2 \ten re~-- re2. r4 R2. | r2 re4~-- re2.~ re4 r re~-- re r |
+    re-- r2 r re4~-- re2.~ re4 r2 R2. | R1 R2. R2
+    dod2-- r4 r re( \ten sold2~) sold4 r2 R1 R2. R1
+    \ten do2.~\p do2. r4 | R2. R1 re,2-- r4 R1 R2.
+    r2 r4 re~\p re2.~ re2. r4 |
+    mi2.~ mi2. r4 | r re2\>( mi2.\!) r4 |
+    re'4.\mp( mi4.) si4( re la) r |
 
     %%% Entrée de la Contralto %%%
-    sold8 la sold mi re mi | sold la sold mi re2~ re2.~ re4 r r2 |
-    R2. R1 R2. R1 r2 do4~ do do2 r4 | r2 do4~ |
-    do2. r4 | r4 re2~ re4 r re r | r do2~ do4 r r2 |
-    do''8 r r2 | r r8 do r8 r16 do, | do'8 r r2 | R1 r4 r8 do, r4 |
-    do,4 re8 fa4 re8~ | re2 r4 |
-    R2.*5 r4 do2~ do r4 | R1 R2. |
-    R1 lab'4 solb fa mib fa8 mib fa solb lab4 | mib2.~ mib4 r r2 |
-    R2. r4 do2 r4 R2. R1 |
-    la'4 sol fa mi fa8 mi fa sol la4 | mi2.~ mi4 r | re2. r4 |
+    sold8\mp( la sold mi) re( mi) | sold( la sold mi) \ten re2~-- re2.~ re4 r r2 |
+    R2. R1 R2. R1 r2 do4~--\p do do2-- r4 | r2 do4~-- |
+    do2. r4 | r4 re2~-- re4 r re-- r | r do2~-- do4 r r2 |
+    do''8-.\ppleggiero r r2 | r r8 do-. r8 r16 do,-. | do'8-. r r2 | R1 r4 r8 do,-. r4 |
+    do,4--\p\< re8( fa4) re8~-- | re2\! r4 |
+    R2.*5 r4 do2~--\p do r4 | R1 R2. |
+    R1 lab'4\mp( solb fa mib fa8 mib fa solb lab4 | mib2.~) mib4 r r2 |
+    R2. r4 do2-- r4 R2. R1 |
+    la'4\mp( sol fa mi fa8 mi fa sol la4 | mi2.~) mi4 r | re2.\p r4 |
     R2. R1 R2. R1 R2. R1
   }
 }

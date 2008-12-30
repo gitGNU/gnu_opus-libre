@@ -610,36 +610,36 @@ EntracteClarinetteUn = { \ClarinetteUn
 
 ActeDeuxSceneUnClarinetteUn = { \ClarinetteUn
   \relative {
-    R2.*3 | re''8 sib~ sib2~ | sib4 r |
-    si!8 sol~ sol2~ | sol2 r4 | r sold |
-    mi2.~ | mi2.~ | mi2.~ | mi4 r |
-    R2. R2 R2.*2 r4 r8 la, |
-    mi2.~ | mi2.~ | mi2.~ | mi4 r |
-    R2. R2 R2.*2 R2 | R2. mi'2.~| mi2.~| mi4 r |
+    R2.*3 | re''8\mp( sib~) \ten sib2~ | sib4 r |
+    si!8( sol~) sol2~ | sol2 r4 | r sold--( |
+    \ten mi2.~--) | mi2.~ | mi2.~ | mi4 r |
+    R2. R2 R2.*2 r4 r8 la,--\mp( |
+    mi2.~--) | mi2.~ | mi2.~ | mi4 r |
+    R2. R2 R2.*2 R2 | R2. mi'2.~\p\<| mi2.~\mf\>| mi4\! r |
 
     %%% Entrée de la Soprano Deux %%%
-    R2.*2 R1 R2. sib,1 la2.~ la4 r | lab2.~ lab2 r |
+    R2.*2 R1 R2. sib,1\mp la2.~-- la4 r | lab2.~\p lab2 r |
 
     %%% Andantino %%%
-    R1*2 R2.*3 r2 solb'4 lab r |
-    si si, r R2.*4 R1 R2. R2
+    R1*2 R2.*3 r2 solb'4--\p lab-- r |
+    si-- si,-- r R2.*4 R1 R2. R2
     R2. R1 R2. R1 R2. R1
-    sold''8 la sold mi re mi sold2. r4 |
+    sold''8( la sold mi) re( mi sold2.) r4 |
     R2. R1 R2. R1 R2.
-    fad,,2. r4 | fa2.~ fa2. r4 | R2. fad2. r4 fa2.~ fa2. r4 |
-    sold''8 la re la sold mi re la' sold mi re mi re si |
+    fad,,2.\p r4 | fa2.~ fa2. r4 | R2. fad2. r4 fa2.~ fa2. r4 |
+    sold''8\mf( la re la sold mi re) la'\>( sold mi re mi re si |
 
     %%% Entrée de la Contralto %%%
-    la2.~ la2. r4 R2. R1
-    R2. R1 R2. R1 r2 la,4~ la4 la2 r4 R2. |
-    r4 la2 r4 r la2~ la4 r la r r la2~ la4 r r2 |
-    fad8 r r2 R1 R2. R1 R2. do'2 re4 mib8 lab sib4 r |
+    la2.~\pp) la2. r4 R2. R1
+    R2. R1 R2. R1 r2 la,4~--\p la4 la2-- r4 R2. |
+    r4 la2-- r4 r la2~-- la4 r la-- r r la2~-- la4 r r2 |
+    fad8-.\mp r r2 R1 R2. R1 R2. do'2\p( re4) mib8\<( lab sib4\!) r |
     R2.*5
-    r4 la'8 sib la fa mib fa la2~ la4 r r2 | r2 la4~ |
-    la4. lab4 si8 solb4 | lab mib r re la2 r4 |
-    r4 la2 r4 lab2. r4 la2 r4 fa2 r4 | R2. R1
-    R2. r2 r4 fad mi re dod | re8 dod re mi fad2. r4 |
-    R2. R1 R2. R1 mi4 reb r mi reb r2 |
+    r4 la'8\mp( sib la fa) mib( fa la2~) la4 r r2 | r2 la4~\p( |
+    la4. lab4) si8\>( solb4) | lab( mib\!) r re\pp( la2) r4 |
+    r4 la2--\pp r4 lab2.-- r4 la2-- r4 fa2-- r4 | R2. R1
+    R2. r2 r4 fad\p( mi re dod | re8 dod re mi fad2.) r4 |
+    R2. R1 R2. R1 mi4\p( reb) r mi( reb) r2 |
   }
 }
 

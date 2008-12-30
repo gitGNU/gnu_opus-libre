@@ -714,48 +714,50 @@ EntracteVioloncelleUn = { \VioloncelleUn
 
 ActeDeuxSceneUnVioloncelleUn = { \VioloncelleUn
   \relative { \clef treble
-    \pizz la'4 r r | la r8 la r4 | la la la |
+    \pizz la'4\mp r r | la r8 la r4 | la la la |
     la r2 | R2 | R2.*2 | R2 |
-    \clef tenor r4 << \arco s2 \\ \repeat tremolo 4 { si,16 re16 } >>
-    \repeat tremolo 6 { si16 re16 } |
-    \repeat tremolo 6 { si16 re16 } | sold,4 r |
+    \clef tenor r4 << \arco s2 \\ \repeat tremolo 4 { si,16\pp\< re16 } >>
+    \repeat tremolo 6 { si16\mf re16 } |
+    \repeat tremolo 6 { si16\> re16 } | sold,4--\! r |
     R2. R2 R2.*2 R2 |
-    \t {r8 sold si}sol'!2~ |
-    sol8 sold, sol'!2~ |
-    sol8[ mi~] mi[ red] \t {sol \clef treble do[ si]} |
-    sol'2\glissando |
-    la2.~\CaV | la2~\CaV | la2.~\CaV | la2\CaV r4 | R2 | R2.*2 |
-    \ttt { la,8[ la16 la la la]}
+    \t {r8 sold\<( si)} sol'!2~\mf |
+    sol8 sold,\< sol'!2~\f |
+    sol8\>[ mi~(] mi[ red)] \t {sol\! \clef treble do\<([ si)]} |
+    sol'2\f\>\glissando |
+    la2.~\pp\CaV | la2~\CaV | la2.~\CaV | la2\CaV r4 | R2 | R2.*2 |
+    \ttt { la,8\p[ \cresc la16 la la la]}
     \ttt {la[ la la la la la]}
-    \repeat unfold 3 { \ttt { mi[ mi mi mi mi mi] } } |
+    \ttt { mi[ mi mi mi mi mi] }
+    \ttt { mi\f[ mi mi mi mi mi] }
+    \ttt { mi[ mi mi mi mi mi] } |
 
     %%% Entrée de la Soprano Deux %%%
-    R2.*2 r4 \ttt {sold16 sold sold sold sold sold} \t {sold sold sold} r8 r4 |
-    r4 r8 \t {sib16 sib sib} \ttt {sib sib sib sib sib sib} \clef bass |
+    R2.*2 r4 \ttt {sold16\f sold sold sold sold sold} \t {sold sold sold} r8 r4 |
+    r4 r8 \t {sib16\f sib sib} \ttt {sib sib sib sib sib sib} \clef bass |
     R1 R2. R2 R2. R1
 
     %%% Andantino %%%
-    \pizz sib,,4 fa' r2 R1 R2. mi4 si' r R2. mi,4 si' lad R2
-    R2. si,4 fad' r mid8 dod si4 r |
-    r4 \arco re'2~\CaV re2.~\CaV re1~\CaV re2\CaV r4 | r8 \pizz lad si4 |
+    \pizz sib,,4\p fa' r2 R1 R2. mi4\mp si' r R2. mi,4 si' lad R2
+    R2. si,4 fad' r mid8-- dod si4 r |
+    r4 \arco re'2~\p\CaV re2.~\CaV re1~\CaV re2\CaV r4 | r8 \pizz lad\mp si4 |
     fad,4 r2 R1 R2. R1 R2. R1
-    sib4 fa' r | \arco sib,2. r4 R2. R1 sib2 r4 R1 R2.
-    fad1 fad2.~ fa2. r4 | fad2.~ fad1 fa2.~ fa2. r4 |
-    fad2.~ fad2. r4 |
+    sib4\mp fa' r | \arco sib,2.\p r4 R2. R1 sib2 r4 R1 R2.
+    fad1\pp\upbow fa2.~ fa2. r4 | fad2.~\upbow fad1 fa2.~ fa2. r4 |
+    fad2.~\downbow fad2. r4 |
 
     %%% Entrée de la Contralto %%%
-    R2. R1 fad2.~ fad4 r r2 |
-    fa2.~ fa4 r r2 | fad2. fa2 mib |
-    do4\thumbpizz \pizz si'8 mi fad4 re'8 fad, mi4 fad8 mi do4 mi8 do si4 fad |
-    do r r2 | r2 do4 | r8 re' mi la r sold la re |
-    r4 \arco do,,2 reb mib |
-    fad4\thumbpizz r2 | \pizz fa4 r r2 | fad4 r2 | fa4 r r2 |
-    fad8 fad' r2 | sol,8 re' fa4 sib8 do mib4 r \arco fa,, |
-    sib r2 | si4 r2 | sib4 r2 | si4 r2 | mi4 r2 |
-    re'2.~\CaV re2.~\CaV re2\CaV r | mib,2. |
-    re1~ re4 r2 | R1 \pizz lab4 r2 | la4 r r2 | lab4 r2 |
-    \arco sol1~ sol2. R1
-    re''2.~\CaV re1~\CaV re2.~\CaV re4\CaV r4 |
+    R2. R1 fad2.~\p fad4 r r2 |
+    fa2.~ fa4 r r2 | fad2.\upbow\< fa2\! mib( |
+    do4)\thumbpizz \pizz si'8\mp\< mi fad4 re'8\> fad, mi4 fad8 mi do4\! mi8 do si4-- fad-- |
+    do-- r r2 | r2 dod4 | r8 re'\< mi la r sold la re\! |
+    r4 \arco do,,2\mp\<\upbow reb mib( |
+    fad4\!)\thumbpizz r2 | \pizz fa4\mp r r2 | fad4 r2 | fa4 r r2 |
+    fad8 fad' r2 | sol,8\< re' fa4 sib8 do mib4\! r \arco fa,,--\mf |
+    sib-- r2 | si4-- r2 | sib4-- r2 | si4-- r2 | mi4-- r2 |
+    \ten re'2.~\mf\CaV re2.~\CaV re2\CaV r | mib,2.\>( |
+    \ten re1~\pp) re4 r2 | R1 \pizz lab4\mp r2 | la4 r r2 | lab4 r2 |
+    \arco \ten sol1~\p sol2. R1
+    re''2.~\p\CaV re1~\CaV re2.~\CaV re4\CaV r4 |
     R1 R2. R1 R2. R1 R2. R1
   }
 }
