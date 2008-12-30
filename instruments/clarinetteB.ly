@@ -680,30 +680,30 @@ EntracteClarinetteDeux = { \ClarinetteDeux
 
 ActeDeuxSceneUnClarinetteDeux = { \ClarinetteBasse
   \relative {
-    R2.*4 R2 R2.*2 R2 | mi2.~ | mi2.~ | mi2.~ | mi4 r \clef treble
-    mib'4 sib2~ | sib4 r | do8 sol~ sol2~| sol2.~ | sol4 r \clef bass |
-    mi,2.~ | mi2.~ | mi2.~ | mi4 r |
-    R2. R2 R2.*2 R2 | R2. \clef treble | re''2.~| re2.~| re4 r \clef bass |
+    R2.*4 R2 R2.*2 R2 | \ten mi2.~ | mi2.~ | mi2.~ | mi4 r \clef treble
+    mib'4\mp( sib2~) | sib4 r | do8( sol~) sol2~| sol2.~ | sol4 r \clef bass |
+    mi,2.~-- | mi2.~ | mi2.~ | mi4 r |
+    R2. R2 R2.*2 R2 | R2. \clef treble | re''2.~\p\<| re2.~\mf\>| re4\! r \clef bass |
 
     %%% Entrée de la Soprano Deux %%%
-    R2.*2 R1 R2. do,,1 fa,2.~ fa4 r | mi2.~ mi2 r |
+    R2.*2 R1 R2. do,,1\mp fa,2.~-- fa4 r | mi2.~\p mi2 r |
 
     %%% Andantino %%%
-    R1*2 r8 lad4 si dod8 mi2.~ mi~ mi~ mi4 r |
-    r lad8 fad mi4~ | mi2.~ mi~ mi2 r4 R2. R1 R2. r8 lad si mi,~ |
-    mi2 r4 R1 R2. do4 sol' fad8 re do4 | R2. R1
-    sib4 fa' mi8 do sib2. r4 | R2. R1 sib2 r4 R1 R2. |
+    R1*2 r8 lad4--\mp( si-- dod8-. mi2.~--) mi~ mi~ mi4 r |
+    r lad8( fad) mi4~-- | mi2.~ mi~ mi2 r4 R2. R1 R2. r8 lad si mi,~ |
+    mi2 r4 R1 R2. do4--\mp sol'-- fad8( re) do4-- | R2. R1
+    sib4-- fa'-- mi8( do) sib2.-- r4 | R2. R1 sib2--\p r4 R1 R2. |
     R1 R2. R1 R2. R1 R2. R1
-    r4 \clef treble fad''8 sold si sold fad re dod re fad sold si fad |
+    r4 \clef treble fad''8\mf( sold si sold fad re) dod\>( re fad sold si fad |
 
     %%% Entrée de la Contralto %%%
-    sold2.~ sold2. r4 \clef bass | R2. R1 R2. R1 R2. R1
-    do,,2.~ do2. r4 | R2. r4 do2 r4 reb2.~ reb2. r4 | r4 do r R1 |
-    fad,8 r r2 | R1 R2. R1 R2. sol2.~ sol2 r4 |
-    R2.*4 r4 mi'2 mib2.~ mib~ mib4 r r2 | R2.
-    re1~ re4 r2 | R1 lab2. la2. r4 lab2. sol2. r4 | R2. R1
-    R2. do'4 sib la sol la8 sol la sib do4 sol r | fa2. r4 |
-    R2. R1 R2. R1 R2. \clef treble sol'4 mi r2 |
+    sold2.~\p) sold2. r4 \clef bass | R2. R1 R2. R1 R2. R1
+    \ten do,,2.~\p do2. r4 | R2. r4 do2-- r4 reb2.~-- reb2. r4 | r4 do-- r R1 |
+    fad,8-.\mp r r2 | R1 R2. R1 R2. \ten sol2.~--\mp sol2 r4 |
+    R2.*4 r4 mi'2--\mf \ten mib2.~-- mib~ mib4 r r2 | R2.
+    re1~ re4 r2 | R1 lab2.--\mp( la2.) r4 lab2.--( sol2.) r4 | R2. R1
+    R2. do'4\p( sib la sol la8 sol la sib do4 sol) r | fa2.-- r4 |
+    R2. R1 R2. R1 R2. \clef treble sol'4\p( mi) r2 |
   }
 }
 

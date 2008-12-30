@@ -785,49 +785,53 @@ EntracteAltoDeux = { \AltoDeux
 ActeDeuxSceneUnAltoDeux = { \AltoDeux
   \relative { \clef treble
     \ttt {
-      <la' re\harmonic la''>16[ <la re\harmonic la''>
+      <la' re\harmonic la''>16[\ppleggiero <la re\harmonic la''>
       <la re\harmonic la''> <la re\harmonic la''>
       <la re\harmonic la''> <la re\harmonic la''>]
     }
     \ttt { \simile la''16 la la la la la }
-    \repeat unfold 68 { \ttt { la[ la la la la la] } }
-    la4 r \ttt { la,8[ la16 la la la] } |
-    \ttt { la[ la la la la la] }
-    \repeat unfold 7 { \ttt { re,[ re re re re re] } } |
+    \repeat unfold 20 { \ttt { la[ la la la la la] } }
+    \ttt { \ind #"senza cresc." la[ la la la la la] }
+    \repeat unfold 47 { \ttt { la[ la la la la la] } }
+    la4-- r \ttt { la,8\pp[ la16 la la la] } |
+    \ttt { \cresc la[ la la la la la] }
+    \repeat unfold 5 { \ttt { re,[ re re re re re] } }
+    \ttt { re\f[ re re re re re] }
+    \ttt { re[ re re re re re] }|
 
     %%% Entrée de la Soprano Deux %%%
-    R2.*2 r4 \ttt {<sol,mi'>8 <sold mi'>16 <sold mi'> <sold mi'> <sold mi'>}
+    R2.*2 r4 \ttt {<sol,mi'>8\f <sold mi'>16 <sold mi'> <sold mi'> <sold mi'>}
     <sold mi'>8 r r4 \clef alto |
-    r4 r8 \t {<sib,lab'>8 <sib lab'>16}
+    r4 r8 \t {<sib,lab'>8\f <sib lab'>16}
     \ttt {<sib lab'>8 <sib lab'>16 <sib lab'> <sib lab'> <sib lab'>} |
     R1 R2. R2 R2. R1
 
     %%% Andantino %%%
     R1*2 R2.*4 R2
-    r4 \pizz si mi, r si' lad8 fad mi4 fad8 mi si' lad |
+    r4 \pizz si\mp mi, r si' lad8-- fad mi4 fad8-- mi si' lad |
     r2 fad4 mi r si'8 lad fad4 r r8 fad4. |
-    \arco mi2 r4 | R2
+    \arco mi2--\p r4 | R2
     \pizz fad4 r2 | R1 R2. R1 R2. R1
-    r4 sol mi8 do R1 r4 \arco mib r mib r mib r | R2.
+    r4 sol\mp mi8 do R1 r4 \arco mib--\p r mib-- r mib-- r | R2.
     r4 mi? r mi r mi r |
-    <mi la>1~ <mi la>2. <mi la>2 <la re>
+    <mi la>1~\pp <mi la>2. <mi la>2( <la re>)
     <mi la>2.~<mi la>2 <la re> <mi la>2.~ <mi la>2. r4 |
-    <mi la>2.~ <mi la>1~ <mi la>2 r4 | R1
+    \ten <mi la>2.~ <mi la>1~ <mi la>2 r4 | R1
 
     %%% Entrée de la Contralto %%%
-    \pizz fad4 r2 | R1
+    \pizz fad4\mp r2 | R1
     fa4 r2 R1 fad4 r fad r fa r mib |
-    r \arco <do'fad> r <do fad> r <do fad> r | do r do |
+    r \arco <do'fad>--\p r \det {<do fad> r <do fad>} r | \simile do r do |
     r <la re> r <la re> r <la re> r |
-    <la re> <la re> r <la re> r <la re> r r <la re> r <la re> |
-    r8 \pizz la4 do re,8 | r4 lab' do re, | r8 la'4 do re,8 | r4 lab' do re, |
-    r8 la'4 do re,8 | r lab'4 do re,8 | r sol r2 |
-    r8 la4  do re,8 | r lab'4 do re,8 | r la'4 do re,8 | r lab'4 do8 reb,4 |
-    r4 la' r8 do | r4 \arco do r do r do | mib,2 r4 la | r do r |
-    r si r si r sib r | R1
-    r8 \pizz la4 do re,8 | r lab'4 lab8 do4 re, | r8 la'4 do re,8 |
-    r4 \arco sol2.~ sol2. r4 lab sol fa |
-    re2.~ re1~ re4 r2 R2 | R1 R2. R1 R2. R1 R2. R1
+    <la re> <la re> r <la re> r <la re> r r <la re> r <la re>\mp |
+    r8 \pizz la4\mp do re,8 | r4 lab' do re, | r8 la'4 do re,8 | r4 lab' do re, |
+    r8 la'4\mp do re,8 | r lab'4 do re,8 | r sol r2 |
+    r8 la4 do re,8 | r lab'4 do re,8 | r la'4 do re,8 | r lab'4 do8 reb,4 |
+    r4 la' r8 do | r4 \arco do--\mf r \det {do r do-. | mib,2 r4 la | r do r |
+    r si\pp r si r sib} r | R1
+    r8 \pizz la4\mp do re,8 | r lab'4 lab8 do4 re, | r8 la'4 do re,8 |
+    r4 \arco \ten sol2.~\p sol2. r4 lab\mp\>( sol) fa |
+    re2.~\pp re1~ re4 r2 R2 | R1 R2. R1 R2. R1 R2. R1
   }
 }
 

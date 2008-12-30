@@ -726,43 +726,46 @@ EntracteViolonDeux = { \ViolonDeux
 
 ActeDeuxSceneUnViolonDeux = { \ViolonDeux
   \relative {
-    \pizz <la' la'>4 r2 R2.*3 R2 r2 \arco <re, sol\harmonic re''>4 ~
+    \pizz <la' la'>4\mp r2 R2.*3 R2 r2 \arco <re, sol\harmonic re''>4~\p
     \simile re''2.~ re2~ re2.~ re~ re2.~ re4 r |
-    R2. do2~ | do2.~ | do4 dod2~ | dod2 |
-    fad2.~| fad2.~| fad2.~| fad4 r | <la,, re\harmonic la''~>2.
+    R2. do2~\p | do2.~ | do4 dod2~ | dod2\< |
+    fad2.~\!| fad2.~| fad2.~| fad4 r | <la,, re\harmonic la''~>2.\p
     \simile la''2~ la2.~ la2.~ la4 r |
-    \ttt { mi8[ mi16 mi mi mi] }
+    \ttt { mi8\pp[ mi16 mi mi mi] }
     \ttt { mi16[ mi mi mi mi mi] }
     \ttt { mi16[ mi mi mi mi mi] } |
-    \repeat unfold 8 { \ttt { re16[ re re re re re] } } |
+    \ttt { \cresc re16[ re re re re re] }
+    \repeat unfold 5 { \ttt { re16[ re re re re re] } }
+    \ttt { re16\f[ re re re re re] }
+    \ttt { re16[ re re re re re] }|
 
     %%% Entrée de la Soprano Deux %%%
-    R2.*2 r4 \ttt {mi16[ mi mi mi mi mi] } \t {mi mi mi} r8 r4 |
-    r4 r8 \t {la,16 la la} \ttt {la la la la la la} | R1 R2. R2 R2. R1
+    R2.*2 r4 \ttt {mi16\f[ mi mi mi mi mi] } \t {mi mi mi} r8 r4 |
+    r4 r8 \t {la,16\f la la} \ttt {la la la la la la} | R1 R2. R2 R2. R1
 
     %%% Andantino %%%
     R1*2 R2.*4 R2
     R2.*5 R1 R2. R2
-    r4 sold, r sold r sold r | sold r sold |
+    r4 \det {sold,\p r sold r sold} r | \simile sold r sold |
     r sold r sold | r sold r | sold r sold r |
     r fad r | r fad r fad | r re r | re r re r |
     r <la re> r | r sib r sib | r sib r |
     r re r re r re r | re r re r | re r re |
     r re r re | r re r | re2. r4 |
-    sold2.~ sold2. r4 |
+    sold2.~\pp sold2. r4 |
 
     %%% Entrée de la Contralto %%%
-    r2 sold4 | r sold r sold | r sold r | sold r sold r |
+    r2 \det {sold4\p | r sold r sold} | r \simile sold r | sold r sold r |
     r sold r | sold r sold r | r sold r | sold r sold r |
-    r8 \pizz do, r do r do | r re r re r sol r sol | r fad r re r do |
-    r la r la r la r4 R2. r8 si r si r mi r mi | r re r la r la | r la r4 r \arco sol' |
-    r2 \pizz re4 | r4 r8 re r2 | r2 re4 | r4 r8 re r4 r8 re |
-    r4 re re sol, re' lab' re mib r |
-    r4 r8 fa, r4 | r4 r8 mi r4 |
+    r8 \pizz do,\p r do r do | r re\< r re r sol\! r sol | r fad\> r re r do |
+    r la r la r la\! r4 R2. r8 si\< r si r mi r mi\! | r re\> r la r la | r la\! r4 r \arco sol'--\mp |
+    r2 \pizz re4\mp | r4 r8 re r2 | r2 re4 | r4 r8 re r4 r8 re |
+    r4 re re sol,\< re' lab' re mib\! r |
+    r4 r8 fa,\mp r4 | r4 r8 mi r4 |
     r4 r8 fa  r4 | r4 r8 mi r4 |
-    r8 \arco mi4 fa8 sol4 sib2.~ sib2 r4 | R1 R2.
-    R1 R2. R1 r4 solb r r fa r fa | r solb r r fa r fa | R2. R1
-    re2.~\CaV re1~\CaV re4\CaV r2 R2 | R1 R2. R1 R2. R1 R2. R1
+    r8 \arco mi4--\mf\< fa8 sol4-. \ten sib2.~\! sib2 r4 | R1 R2.
+    R1 R2. R1 r4 \det {solb\p r r fa r fa | r solb r r fa\< r fa\!} | R2. R1
+    \ind #"trem. sul tasto" re2.~\pp\CaV re1~\CaV re4\CaV r2 R2 | R1 R2. R1 R2. R1 R2. R1
   }
 }
 
