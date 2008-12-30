@@ -139,7 +139,7 @@ ProloguePercus = <<
       \partial 4 r4 R2.*3 R1 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2
 
       %%% Entrée du Baryton 1 %%%
-      R2. R2*2 R2. s2_\markup { \indic "bag. de timbales (lourdes)" } s2. R2
+      R2. R2*2 R2. s2_\markup { \indic "bag. de timbale" } s2. R2
       r8 sol, dod4 sib8 dod |
       r8 sol dod4 dod' r2 | re4 sold, sib,2:32 R2.
 
@@ -201,7 +201,7 @@ ProloguePercus = <<
   \new DrumStaff { \Percus
     \new  DrumVoice \drummode {
       \partial 4 r4 R2.*3 R1
-      \ind #"Tam-tam" cb2\mf \laissezVibrer | R2 |
+      \ind #"Tam-tam (bag. de timbales, lourdes)" cb2\mf \laissezVibrer | R2 |
       R2. R2*2 cb2.\mf \laissezVibrer R2*2
       r4 cb2\mf \laissezVibrer R2*2
       r4 cb2\mf \laissezVibrer R2*2
@@ -224,7 +224,7 @@ ProloguePercus = <<
       R2.*5 R4.
 
       %%% Andantino %%%
-      \ind #"Tambour" bd8\pp \ind #"Cymb. (sur la cloche)" hh r |
+      \ind #"Tambour" bd8\pp \ind #"Cymb. (sur le dôme)" hh r |
       bd hh r bd hh4:32~ hh4:32 hh8 |
       bd r4 | bd8 hh r bd hh r bd hh r bd bd4:32\< hh8\mp r4 | R4.*2
       r16 bd32\> bd bd8 r | bd r bd |
@@ -1663,3 +1663,26 @@ ActeDeuxSceneDeuxPercus = <<
   }
 >>
 
+ActeDeuxSceneTroisPercus = <<
+  \PercuDeuxMains
+  \relative { \GrandVibraphone
+    %%% Larghetto %%%
+    R4.*3 \ind #"con Ped." dod8 sold' la\laissezVibrer
+    R4.*3 dod,8 sold' la\laissezVibrer |
+    R4. \gauche fa,8 \droite la mi' | <sold la>4.\laissezVibrer
+    R4.*2 \gauche fad,8 \droite fad dod' | <sold' la>4.\laissezVibrer
+    R4. <la, mi'>4.\laissezVibrer
+    R4.*6 mi'4.\laissezVibrer |
+    R4.*3 <la, mi'>4.\laissezVibrer
+    R4. mi'4.\laissezVibrer |
+  }
+  \relative {
+    %%% Larghetto %%%
+    R4.*9
+    s4. R4.*3 s4. R4.*2
+    fa,4.\laissezVibrer R4.*6 |
+    la4.\laissezVibrer R4.*3 |
+    fa4.\laissezVibrer R4. |
+    la4.\laissezVibrer |
+  }
+>>

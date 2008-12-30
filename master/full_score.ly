@@ -970,4 +970,72 @@ ActeDeuxSceneDeux = {
   >>
 }
 
+ActeDeuxSceneTrois = {
+  <<
+    \new TopLine \ActeDeuxSceneTroisMesures
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneTroisFluteUn
+            \new Staff \ActeDeuxSceneTroisFluteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneTroisClarinetteUn
+            \new Staff \ActeDeuxSceneTroisClarinetteDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneTroisSaxophoneUn
+            \new Staff \ActeDeuxSceneTroisSaxophoneDeux
+          >>
+      >>
+
+    \new StaffGroup \ActeDeuxSceneTroisPercus
+
+    \new TopLine \ActeDeuxSceneTroisMesures
+
+    \new ChoirStaff
+      <<
+        \new Staff \new Voice = "sopranoUn" \ActeDeuxSceneTroisSopranoUn
+        \new Lyrics \lyricsto "sopranoUn" { \ActeDeuxSceneTroisSopranoUnTexte }
+        \new Staff \new Voice = "sopranoDeux" \ActeDeuxSceneTroisSopranoDeux
+        \new Lyrics \lyricsto "sopranoDeux" { \ActeDeuxSceneTroisSopranoDeuxTexte }
+        \new Staff \new Voice = "contralto" \ActeDeuxSceneTroisContralto
+        \new Lyrics \lyricsto "contralto" { \ActeDeuxSceneTroisContraltoTexte }
+        \new Staff \new Voice = "tenor" \ActeDeuxSceneTroisTenor
+        \new Lyrics \lyricsto "tenor" { \ActeDeuxSceneTroisTenorTexte }
+        \new Staff \new Voice = "barytonUn" \ActeDeuxSceneTroisBarytonUn
+        \new Lyrics \lyricsto "barytonUn" { \ActeDeuxSceneTroisBarytonUnTexte }
+        \new Staff \new Voice = "barytonDeux" \ActeDeuxSceneTroisBarytonDeux
+        \new Lyrics \lyricsto "barytonDeux" { \ActeDeuxSceneTroisBarytonDeuxTexte }
+      >>
+
+    \new TopLine \ActeDeuxSceneTroisMesures
+
+    \new StaffGroup
+      <<
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneTroisViolonUn
+            \new Staff \ActeDeuxSceneTroisViolonDeux
+            \new Staff \ActeDeuxSceneTroisViolonTrois
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneTroisAltoUn
+            \new Staff \ActeDeuxSceneTroisAltoDeux
+          >>
+        \new GrandStaff
+          <<
+            \new Staff \ActeDeuxSceneTroisVioloncelleUn
+            \new Staff \ActeDeuxSceneTroisVioloncelleDeux
+          >>
+        \new Staff \ActeDeuxSceneTroisContrebasse
+      >>
+    \new PianoStaff \ActeDeuxSceneTroisPiano
+  >>
+}
+
 %%-----------------------------------------------------------------%

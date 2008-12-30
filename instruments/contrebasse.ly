@@ -743,3 +743,15 @@ ActeDeuxSceneDeuxContrebasse = { \Contrebasse
     R2.*9
   }
 }
+
+ActeDeuxSceneTroisContrebasse = { \Contrebasse
+  \relative {
+    %%% Larghetto %%%
+    R4.*9
+    re,,4.~ re~ re4 r8 | R4.
+    fad4.~ fad~ fa8 r4 |
+    fa4.~ fa~ fa~ fa4 r8 | R4.*3
+    la4.~ la4 r8 | R4.*2
+    fa4.~ fa8 r4 | la4 r8 |
+  }
+}

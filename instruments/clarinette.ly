@@ -783,3 +783,13 @@ ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteUn
     la'2.~ la~ la~ la~ la2 r4 | R2.*11
   }
 }
+
+ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
+  \relative {
+    %%% Larghetto %%%
+    R4.*18 r8 mi do si la sold la si r R4.*2 |
+    mi8 do si la sold la si4 r8 | R4.
+    r4 mi8 do si la sold la si |
+    sold16 sold sold sold r8 |
+  }
+}

@@ -1026,3 +1026,29 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     r r16 fa r dod' r4 |
   }
 }
+
+ActeDeuxSceneTroisAltoDeux = { \AltoDeux
+  \relative {
+    %%% Larghetto %%%
+    R4.*6
+    sold'16 sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold'8 r4 | R4.
+    sold16 sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold'8 r4 | R4.
+    sold16 sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold'8 r4 | R4.
+    sold16 sold la do,! sold' sold |
+    la do, sold' sold la do, |
+    sold'8 r4 | R4.
+    sold16 sold la do,! sold' sold |
+    la do, sold' sold la do, |
+    sold'8 r4 | R4.
+    sold16 sold la do,! sold' sold |
+    la do, sold' sold la do, |
+    sold'8 r4 | R4.
+    sold16 sold la8 r |
+  }
+}

@@ -1936,3 +1936,20 @@ ActeDeuxSceneDeuxPiano = {
     s4 dod r4 sold <dod fa>} r4 | R2.*2
   }
 }
+
+ActeDeuxSceneTroisPiano = {
+  \PianoDeuxMains
+  \relative {
+    %%% Larghetto %%%
+    R4.*30 \clef bass |
+    s4.
+  }
+  \relative {
+    %%% Larghetto %%%
+    R4.*27
+    \pl <fa,, do'>4.\laissezVibrer  la'\laissezVibrer R4.
+    <la, mi'>4.\laissezVibrer
+    \ottava #-1
+    dod,,16 dod' \md dod'8 r \mg |
+  }
+}

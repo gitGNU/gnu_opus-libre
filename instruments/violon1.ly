@@ -977,3 +977,13 @@ ActeDeuxSceneDeuxViolonUn = { \ViolonUn
     R2.*9
   }
 }
+
+ActeDeuxSceneTroisViolonUn = { \ViolonUn
+  \relative {
+    %%% Larghetto %%%
+    R4.*16
+    mi4.~ mi~ mi~ mi4 r8 | R4.*3
+    mi4.~ mi~ mi~ mi4 r8 | R4.*3
+    la,16 la la la la la |
+  }
+}

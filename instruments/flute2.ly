@@ -762,3 +762,22 @@ ActeDeuxSceneDeuxFluteDeux = { \FluteDeux
     R2.*9
   }
 }
+
+ActeDeuxSceneTroisFluteDeux = { \FluteDeux
+  \relative {
+    %%% Larghetto %%%
+    R4.*6 sold'8 la dod,~ dod4.~ dod4 r8 |
+    sold' la dod,~ dod4 r8 |
+    sold' la dod,~ dod4 r8 |
+    sold' la dod,~ dod4 r8 |
+    sold' la dod, do!4 r8 |
+    la' sold la do,4 r8 |
+    la' sold la do,4 r8 |
+    la' sold la do,4 r8 |
+    la' sold la do, r sold' |
+    la sold la do, r sold' |
+    la sold la do, r sold' |
+    la r do, |
+    sold'16 sold sold sold r8 |
+  }
+}

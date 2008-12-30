@@ -1027,3 +1027,34 @@ ActeDeuxSceneDeuxAltoUn = { \AltoUn
     r sold16 sold la dod, r4 |
   }
 }
+
+ActeDeuxSceneTroisAltoUn = { \AltoUn
+  \relative {
+    %%% Larghetto %%%
+    sold'16 sold la dod, sol' sold |
+    la dod, sold' sold la dod, |
+    sold' sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold' sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold'8 r4 | R4.
+    sold16 sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold'8 r4 | R4.
+    sold16 sold la dod, sold' sold |
+    la dod, sold' sold la dod, |
+    sold'8 r4 | R4.
+    sold16 sold la do,! sold' sold |
+    la do, sold' sold la do, |
+    sold'8 r4 | R4.
+    sold16 sold la do, sold' sold |
+    la do, sold' sold la do, |
+    sold'8 r4 | R4.
+    sold16 sold la do, sold' sold |
+    la do, sold' sold la do, |
+    sold'8 r4 | R4.
+    sold16 sold la do, sold' sold |
+    la do, sold' sold la do, |
+    sold' sold la8 r |
+  }
+}

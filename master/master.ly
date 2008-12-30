@@ -86,13 +86,13 @@
   \header {
     piece = \FinaleTitre
   }
-} %}
+} %
 \score {
   \Entracte
   \header {
     piece = \EntracteTitre
   }
-} %{
+} %
 %\pageBreak %
 \score {
   \ActeDeuxSceneUn
@@ -112,7 +112,7 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %
+} %}
 \score {
   \ActeDeuxSceneTrois
   \header {

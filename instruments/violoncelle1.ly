@@ -959,3 +959,16 @@ ActeDeuxSceneDeuxVioloncelleUn = { \VioloncelleUn
     R2.*9
   }
 }
+
+ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
+  \relative {
+    %%% Larghetto %%%
+    R4.*9
+    mi,4.~ mi~ mi4 r8 R4. |
+    sold4.~ sold~ sold8 r4 |
+    do,4.~ do~ do~ do4 r8 | R4.*3
+    mi4.~ mi4 r8 R4.*2 |
+    la4.~ la8 r4 | la4 r8 |
+    \pizz dod,,16 la' fa' la r8 |
+  }
+}

@@ -949,3 +949,15 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     R2.*9
   }
 }
+
+ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
+  \relative {
+    %%% Larghetto %%%
+    R4.*9
+    la,4.~ la~ la4 r8 R4. |
+    dod4.~ dod~ dod8 r4 |
+    fa,4.~ fa~ fa~ fa4 r8 | R4.*3
+    la4.~ la4 r8 | R4.*2
+    do4.~ do8 r4 | mi4 r8 |
+  }
+}
