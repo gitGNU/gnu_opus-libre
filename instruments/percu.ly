@@ -1399,10 +1399,10 @@ ActeDeuxSceneUnPercus = <<
 ActeDeuxSceneUnBisPercus = <<
   \new Staff { \Marimba
     \relative {
-      r8 <mi sold> r <mi sold> r <mi sold> r4 |
+      r8 <mi sold>\p r <mi sold> r <mi sold> r4 |
       r8 <mi sol> r <mi sol> r4 |
       R2-\markup "Allez au Vibraphone" \Vibraphone
-      <mi sol>1*5/4\laissezVibrer R1*5/4*43 R1*5/4-\fermataMarkup
+      <mi sol>1*5/4\p\laissezVibrer R1*5/4*43 R1*5/4-\fermataMarkup
       R1*5/4*32
 
       %%% Moderato assai %%%
@@ -1442,7 +1442,7 @@ ActeDeuxSceneUnBisPercus = <<
     \drummode {
       \set  drumStyleTable = #drums-style
       R1 R2. R2 R1*5/4*2
-      \ind #"Tambour (au centre et sur le tour)" <sn hh>4 sn sn8 hh sn4 sn |
+      \ind #"Tambour (au centre et sur le tour)" <sn hh>4\mp sn sn8 hh sn4 sn |
       \plperc sn4 hh sn sn8 hh sn4 sn |
       \plperc sn4 hh sn sn8 hh sn4 sn |
       \plperc sn4 hh sn sn8 hh sn4 sn |
@@ -1451,47 +1451,47 @@ ActeDeuxSceneUnBisPercus = <<
       \plperc sn4 hh sn sn8 hh sn4 sn |
       \plperc sn4 hh sn sn8 hh sn4 sn |
       \plperc sn4 hh sn sn8 hh sn4 sn |
-      \plperc sn4 hh sn sn8 hh sn8 sn sn sn |
+      \plperc {\ind #"senza cresc." sn4} hh sn sn8 hh sn8 sn sn sn |
       \plperc sn4 hh r2 r4 sn |
       \plperc sn4 hh sn r sn sn |
       \plperc sn4 hh hh hh hh hh |
-      \plperc sn4 hh r2 r4 \t {sn8 sn sn} |
-      sn4 r2 r4 \t {sn8 sn sn} |
-      sn4 r r8 sn r sn sn sn |
-      \plperc sn4 hh hh hh8 sn hh4 hh |
+      \plperc sn4 hh-> r2 r4 \t {sn8 sn sn} |
+      sn4-> r2 r4 \t {sn8 sn sn} |
+      sn4-> r r8 sn r sn\< sn sn |
+      \plperc sn4\mp hh hh hh8 sn hh4 hh |
       \plperc sn4 hh hh hh8 sn hh4 hh |
       \plperc sn4 hh hh hh8 sn hh4 hh8 sn16 sn |
-      hh4 r r8 sn16 sn hh4 r8 sn16 sn |
-      hh4 r8 sn16 sn hh4 r r8 sn16 sn |
-      hh sn sn sn sn sn sn sn sn sn hh sn sn sn sn sn sn sn sn sn |
-      hh4 r1 | R1*5/4*3
-      sn8 sn sn sn sn sn sn sn sn sn |
+      hh4-> r r8 sn16 sn hh4-> r8 sn16 sn |
+      hh4-> r8 sn16 sn hh4-> r r8 sn16 sn |
+      hh-> sn sn sn sn sn sn sn sn sn hh-> sn sn\< sn sn sn sn sn sn sn |
+      hh4->\! r1 | R1*5/4*3
+      sn8->\pp sn sn sn sn sn sn sn sn sn |
+      hh-> sn sn sn sn sn sn sn sn sn |
+      hh-> sn sn sn sn hh-> sn sn sn sn |
+      \simile hh sn sn sn sn sn sn sn sn sn |
       hh sn sn sn sn sn sn sn sn sn |
       hh sn sn sn sn hh sn sn sn sn |
-      hh sn sn sn sn sn sn sn sn sn |
-      hh sn sn sn sn sn sn sn sn sn |
-      hh sn sn sn sn hh sn sn sn sn |
       hh sn sn sn sn hh sn sn sn sn |
       hh sn sn sn sn hh sn sn sn sn |
       hh sn sn sn sn sn sn sn sn sn |
-      hh sn sn sn sn sn sn sn sn sn |
-      hh4 r r8 sn16 sn hh4 r8 sn16 sn |
+      hh\< sn sn sn sn sn sn sn sn sn |
+      hh4\f r r8 sn16 sn hh4 r8 sn16 sn |
       hh4 r8 sn16 sn hh4 r r8 sn16 sn |
       hh sn sn sn sn sn sn sn sn sn hh sn sn sn sn sn sn sn sn sn |
       hh4 r1 | R1*5/4
 
       %%% Boum %%%
       \ind #"Tam-Tam" cb2\laissezVibrer r2 r4 | R1*5/4-\fermataMarkup |
-      R1*5/4*13 \ind #"Tam-Tam" cb4\laissezVibrer r1 R1*5/4 |
+      R1*5/4*13 \ind #"Tam-Tam" cb4\f\laissezVibrer r1 R1*5/4 |
       cb4\laissezVibrer r1 R1*5/4 |
-      r4 cb \t {cb8 cb cb} cb4\laissezVibrer r |
-      cb4\laissezVibrer r1 R1*5/4 |
-      r4 cb \t {cb8 cb cb} cb4\laissezVibrer r |
-      cb4\laissezVibrer r1 |
-      r4 cb8 cb cb2 cb8 cb |
-      cb4\laissezVibrer r1 | r4 cb cb cb cb |
-      cb8 cb cb cb cb cb cb cb \t {cb cb cb} |
-      cb4\laissezVibrer r1 | R1*5/4*5
+      r4 cb\< \t {cb8 cb cb} cb4\!\laissezVibrer r |
+      cb4->\laissezVibrer r1 R1*5/4 |
+      r4 cb\< \t {cb8 cb cb} cb4\!\laissezVibrer r |
+      cb4->\laissezVibrer r1 |
+      r4 cb8\< cb cb2 cb8 cb |
+      cb4->\!\laissezVibrer r1 | r4 \det {cb\mf cb cb cb} |
+      cb8\< cb cb cb cb cb cb cb \t {cb cb cb} |
+      cb4->\!\laissezVibrer r1 | R1*5/4*5
 
       %%% Moderato assai %%%
       R1*7/4*7 R2. R1 R2. R2

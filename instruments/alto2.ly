@@ -837,44 +837,44 @@ ActeDeuxSceneUnAltoDeux = { \AltoDeux
 
 ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
   \relative {
-    \pizz mi,4 r r2 | R2. R2
+    \pizz mi,4\mf r r2 | R2. R2
 
     %%% Presto Agitato %%%
     R1*5/4*2
-    \arco \ind #"sul tasto" <red'sol?>1*5/4~ <red sol>~ <red sol>2. r2 |
+    \arco \ind #"sul tasto" <red'sol?>1*5/4~\pp <red sol>~ <red sol>2. r2 |
     <mi,la>1*5/4~ <mi la>~ <mi la>2. r2 |
     R1*5/4*7
-    \repeat tremolo 8 { \simile re'16*5/4 mi}
+    \repeat tremolo 8 { \simile re'16*5/4\p mi}
     \repeat tremolo 8 { re mi}
     \repeat tremolo 8 { re mi}
-    re4 r re8 mi re sib la sib |
-    re4 r2 re8 sib la sib |
-    re4 r2 \ordin re8 re re re |
-    <sol,la>4 r2 <sol la>4 r |
-    <sol la> r <sol la> r2 |
-    <sol la>4 r r8 <sol la> r2 |
-    <fa sol>4 r1 | R1*5/4*8
-    fa?8 re? fa re fa re fa solb fa re |
+    re4 r re8\mp( mi re sib) la( sib) |
+    re4-- r2 re8( sib la sib) |
+    re4-- r2 \ordin re8-.\mf \st {re re re} |
+    \accdet {<sol,la>4\sfz r2 <sol la>4\sfz r |
+    <sol la>\sfz r <sol la>\sfz r2 |
+    <sol la>4\sfz r r8 <sol la>\sfz r2 |
+    <fa sol>4\sfz} r1 | R1*5/4*8
+    \ind #"détaché" fa?8\mp re? fa re fa re fa-> solb fa re |
+    fa re fa re fa re fa-> solb fa re |
+    \simile fa re fa re fa re fa solb fa re |
     fa re fa re fa re fa solb fa re |
-    fa re fa re fa re fa solb fa re |
-    fa re fa re fa re fa solb fa re |
-    fa re fa re fa re fa solb fa re |
-    <dod sol'>4 r2 <dod sol'>4 r |
-    <dod sol'> r <dod sol'> r2 |
-    <dod sol'>4 r r8 <dod sol'> r2 |
-    <sib'la'>4 r1 | R1*5/4
-    <fad dod'>4 r1 | R1*5/4-\fermataMarkup
+    fa\< re fa re fa re fa solb fa re |
+    \accdet {<dod sol'>4\sfz r2 <dod sol'>4\sfz r |
+    <dod sol'>\sfz r <dod sol'>\sfz r2 |
+    <dod sol'>4\sfz r r8 <dod sol'>\sfz r2 |
+    <sib'la'>4\sfz} r1 | R1*5/4
+    <fad dod'>4->\sffz r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
     R1*5/4*12
-    \repeat tremolo 16 {lad32 si} \tt {lad16 si lad la sol} |
-    <mib lab mi'!>2. <fa sib re>2 <mib lab mi'!> <fa sib re>2. |
-    r4 <mib lab mi'!>2. <fa sib re>4~ <fa sib re>2 <mib lab mi'!>2. |
-    <mib lab re>1*5/4 <mib lab>2 <mib lab re>2. |
-    <si' mi>2. si2 | <reb, sib'>1*5/4~ <reb sib'>2. <reb sib'>2 |
-    <mib lab mi'!>1*5/4~ <mib lab mi'> |
-    r4 <lab mi'>2 <lab mi'> |
-    <fa re'>1*5/4~ <fa re'>2. r2 | R1*5/4*5
+    \repeat tremolo 16 {lad32\< si} \tt {lad16( si lad la sol)} |
+    \ind #"à la corde" <mib lab mi'!>2.--->\f \accdet {<fa sib re>2 <mib lab mi'!> <fa sib re>2. |
+    r4 <mib lab mi'!>2. <fa sib re>4~\<} <fa sib re>2 \accdet {<mib lab mi'!>2. |
+    \ten <mib lab re>1*5/4\! <mib lab>2 <mib lab re>2.} |
+    <si' mi>2.\> si2\! | \ten <reb, sib'>1*5/4~--->\f <reb sib'>2. <reb sib'>2---> |
+    \ten <mib lab mi'!>1*5/4~ <mib lab mi'> |
+    r4 \accdet {<lab mi'>2\< <lab mi'>} |
+    <fa re'>1*5/4~\ff <fa re'>2. r2 | R1*5/4*5
 
     %%% Moderato assai %%%
     R1*7/4*7 R2. R1 R2. R2

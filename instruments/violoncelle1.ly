@@ -767,43 +767,43 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
     R1 R2. R2
 
     %%% Presto agitato %%%
-    <mi,,\harmonic do'\harmonic mi' sol>1*5/4~
+    <mi,,\harmonic do'\harmonic mi' sol>1*5/4~\pp
     \simile <mi''sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>2.\CaV r2 |
     R1*5/4 \clef treble |
-    <lab sol'>1*5/4~ <lab sol'>2. r2 \clef bass |
+    \ten <lab sol'>1*5/4~--\mp <lab sol'>2. r2 \clef bass |
     R1*5/4*7
-    sib,,1*5/4~ sib~ sib2. r2 |
-    dod2 re mi4 sol1*5/4~ sol2. r2 |
-    <do re>4 r2 <do re>4 r | <do re> r <do re> r2 |
-    <do re>4 r r8 <do re> r2 | si,4 r1 |
+    sib,,1*5/4~\p sib~ sib2. r2 |
+    dod2\mp re( mi4) \ten sol1*5/4~ sol2. r2 |
+    \accdet {<do re>4\sfz r2 <do re>4\sfz r | <do re>\sfz r <do re>\sfz r2 |
+    <do re>4\sfz r r8 <do re>\sfz r2 | si,4\sfz} r1 |
     R1*5/4*5
-    r2 r8 red, fad red fad red |
+    r2 r8 \ind #"détaché" red,\mp fad red fad red |
+    fad-> sol fad red fad red fad red fad red |
+    fad-> sol fad red fad red fad red fad red |
+    \simile fad sol fad red fad red fad red fad red |
     fad sol fad red fad red fad red fad red |
     fad sol fad red fad red fad red fad red |
     fad sol fad red fad red fad red fad red |
-    fad sol fad red fad red fad red fad red |
-    fad sol fad red fad red fad red fad red |
-    fad sol fad red fad red fad red fad red |
-    fad sol fad red fad red fad red fad red |
-    <sol dod>4 r2 <sol dod>4 r | <sol dod> r <sol dod> r2 |
-    <sol dod>4 r r8 <sol dod> r2 | <solb fa'>4 r1 |
-    R1*5/4 <fa re'>4 r1 | R1*5/4-\fermataMarkup |
+    fad\< sol fad red fad red fad red fad red |
+    \accdet {<sol dod>4\sfz r2 <sol dod>4\sfz r | <sol dod>\sfz r <sol dod>\sfz r2 |
+    <sol dod>4\sfz r r8 <sol dod>\sfz r2 | <solb fa'>4\sfz} r1 |
+    R1*5/4 <fa re'>4->\sffz r1 | R1*5/4-\fermataMarkup |
 
     %%% Boum %%%
-    <mi\harmonic do'\harmonic mi' sol>1*5/4~
+    <mi\harmonic do'\harmonic mi' sol>1*5/4~\pp
     <mi'' sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>~\CaV
     <mi sol>2.\CaV r2 |
-    R1*5/4*2 \repeat tremolo 16 {re32 si} re4 |
-    <lab mib'>2. <sib fab'>2 <lab mib'> <sib fab'>2. |
-    r4 <lab mib'>2. <sib fab'>4~ <sib fab'>2 <lab mib'>2. |
-    <sib, mib si'!>1*5/4 | <mi, sib'>2 <sib' mib si'!>2. |
-    r4 <mib lab>1 <lab, fa'>1*5/4~ <lab fa'>2. <lab fa'>2 |
-    <sib mib>1*5/4~ <sib mib> | r4 <sib mib>2 <lab reb>4 <sib mib> |
-    <lab reb>1*5/4~ <lab reb>2. r2 | R1*5/4*5
+    R1*5/4*2 \repeat tremolo 16 {re32\< si} re4 |
+    \ind #"à la corde" <lab mib'>2.--->\f \accdet {<sib fab'>2 <lab mib'> <sib fab'>2. |
+    r4 <lab mib'>2. <sib fab'>4~\<} <sib fab'>2 \accdet {<lab mib'>2. |
+    \ten <sib, mib si'!>1*5/4\! | <mi, sib'>2 <sib' mib si'!>2.} |
+    r4 <mib lab>1-- \ten <lab, fa'>1*5/4~--->\f <lab fa'>2. <lab fa'>2---> |
+    \ten <sib mib>1*5/4~ <sib mib> | r4 \accdet {<sib mib>2\< <lab reb>4 <sib mib> |
+    <lab reb>1*5/4~\ff} <lab reb>2. r2 | R1*5/4*5
 
     %%% Moderato assai %%%
     R1*7/4*4 <fa\harmonic si\harmonic do' si'>1 r2 r4 |

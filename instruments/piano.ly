@@ -1578,19 +1578,19 @@ ActeDeuxSceneUnBisPiano = {
   \PianoDeuxMains
   \relative { \Piano
     R1 R2. R2 R1*5/4*6 \clef bass |
-    r1 mi,,4 <red sold> r r2 mi4 |
-    <red sold> r sol <mi si'> r |
-    r2 mi4 <red sold> sol | <mi si'> r sib' r <sib re> |
-    <la fad'> r <re fa> <dod la'> r | <mid fad dod'> r1 |
-    R1*5/4*8 \clef treble <sol la mib' fad>4 r2 <sol la mib' fad>4 r |
+    r1 \acc {mi,,4( <red sold>) r r2 mi4( |
+    <red sold> r sol <mi si'>) r |
+    r2 mi4( <red sold> sol | <mi si'>) r sib' r <sib re>( |
+    <la fad'>) r <re fa>( <dod la'>) r | <mid fad dod'>\sfz} r1 |
+    R1*5/4*8 \clef treble \acc {<sol la mib' fad>4 r2 <sol la mib' fad>4 r |
     <sol la mib' fad> r <sol la mib' fad> r2 |
-    <sol la mib' fad>4 r r8 <sol la mib' fad> r2 | <re' do'>4 r1 |
-    R1*5/4*6 <lab re fa sol lab>1*5/4\laissezVibrer \arpeggio
-    R1*5/4*11 \clef bass <re, fad dod'>4 r1 | R1*5/4-\fermataMarkup
+    <sol la mib' fad>4 r r8 <sol la mib' fad> r2 | <re' do'>4\sfz} r1 |
+    R1*5/4*6 <lab re fa sol lab>1*5/4\mf\laissezVibrer \arpeggio
+    R1*5/4*11 \clef bass <re, fad dod'>4-> r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
     R1*5/4*13 | \clef treble
-    <sol' sib mib>8 \mg <mib, lab dob> \md
+    \ind #"legato con Ped." <sol' sib mib>8\mf \mg <mib, lab dob> \md
     <sol' sib mib> \mg <mib, lab dob> \md
     <sol' sib mib> \mg <mib, lab dob> \md
     <fab' lab reb> \mg <fa, sib re> \md
@@ -1610,7 +1610,7 @@ ActeDeuxSceneUnBisPiano = {
     <sol' sib mib> \mg <mib, lab dob> \md
     <sol' sib mib> \mg <mib, lab dob> \md
     <sol' sib mib> \mg <mib, lab dob> \md |
-    <sib'' mib lab> \mg <mi,,,, mi'>2*1/4\laissezVibrer \md
+    <sib'' mib lab> \mg <mi,,,, mi'>2*1/4->\laissezVibrer \md
     <sib'''' mib lab>8 \mg <sib,, mib lab> \md
     <sib'' mib lab> \mg <sib,, mib lab> \md
     <sib'' mib lab> \mg <sib,, mib lab> \md
@@ -1625,7 +1625,7 @@ ActeDeuxSceneUnBisPiano = {
     <sib'' mib> \mg <mib,, lab> \md
     <sib'' mib> \mg <mib,, lab> \md
     <sib'' mib> \mg <mib,, lab> \md |
-    <reb'' fa sib> \mg \stemDown <mi,,,, mi'>2*1/4\laissezVibrer \stemNeutral \md
+    <reb'' fa sib> \mg \stemDown <mi,,,, mi'>2*1/4->\laissezVibrer \stemNeutral \md
     <reb'''' fa sib>8 \mg <lab,, reb fa> \md
     <reb'' fa sib> \mg <lab,, reb fa> \md
     <sib'' mib lab> \mg <sib,, mib lab> \md
@@ -1635,7 +1635,7 @@ ActeDeuxSceneUnBisPiano = {
     <sib'' mib lab> \mg <sib,, mib lab> \md
     <sib'' mib lab> \mg <sib,, mib lab> \md
     <reb'' fa sib> \mg <lab,, reb fa> \md
-    <mib''' lab dob> \mg \stemDown <mi,,,,! mi'!>2*1/4\laissezVibrer \stemNeutral \md
+    <mib''' lab dob> \mg \stemDown <mi,,,,! mi'!>2*1/4->\laissezVibrer \stemNeutral \md
     <mib'''' lab dob>8 \mg <sol,,, sib mib> \md
     <mib''' lab dob> \mg <sol,,, sib mib> \md
     <reb''' fa sib> \mg <lab,, reb fa> \md
@@ -1650,17 +1650,17 @@ ActeDeuxSceneUnBisPiano = {
     <mib''' lab dob> \mg <sol,,, sib mib> \md
     <reb''' fa sib> \mg <lab,, reb fa> \md
     <mib''' lab dob> \mg <sol,,, sib mib> \md |
-    <fa''' sib re> \mg \stemDown <mi,,,, mi'>4*1/2\laissezVibrer \stemNeutral \md
+    <fa''' sib re> \mg \stemDown <mi,,,, mi'>4*1/2->\laissezVibrer \stemNeutral \md
     <fa'''' sib re>8 \mg <sold,,, dod> \md
-    <fa''' sib re> \mg \stemDown <mi,,,, mi'>2*1/4\laissezVibrer \stemNeutral \md
+    <fa''' sib re> \mg \stemDown <mi,,,, mi'>2*1/4->\laissezVibrer \stemNeutral \md
     <fa'''' sib re>8 \mg <sold,,, dod> \md
     <fa''' sib re> \mg <dod,, sold'> \md |
-    <fa'' sib> \mg mi,,, \md
+    <fa'' sib>\> \mg mi,,, \md
     <fa''' sib> \mg <dod,, sold'> \md
-    fa'' \mg <sold,, dod> \md <dod sold'>2\laissezVibrer |
-    r1 <red sold>4\laissezVibrer | R1*5/4
-    <dod sold'>1*5/4\laissezVibrer | r4 <dod sold'>1\laissezVibrer |
-    r2 <dod lad'>2.\laissezVibrer |
+    fa'' \mg <sold,, dod> \md <dod sold'>2--\p\laissezVibrer |
+    r1 <red sold>4--\laissezVibrer | R1*5/4
+    <dod sold'>1*5/4--\laissezVibrer | r4 <dod sold'>1--\laissezVibrer |
+    r2 <dod lad'>2.--\laissezVibrer |
 
     %%% Moderato assai %%%
     R1*7/4*7 \clef bass
@@ -1737,17 +1737,17 @@ ActeDeuxSceneUnBisPiano = {
   }
   \relative { \clef bass
     R1 R2. R2 R1*5/4*6
-    r1 \ottava #-1 si,,4 <sol? do> r r2 si4 |
-    <sol do> r do <sold red'> r |
-    r2 si4 <sol do> do <sold red'> \ottava #0
-    r \loco la' r <fa la> <dod sib'> r <sib' dod> <fa re'> r |
-    <re la' sib> r1 | R1*5/4*8
-    <re do'>4 r2 <re do'>4 r <re do'> r <re do'> r2 |
-    <re do'>4 r r8 <re do'> r2 | <sold si fa' sol!>4 r1 |
+    r1 \ottava #-1 si,,4->( \acc {<sol? do>) r r2 si4( |
+    <sol do> r do <sold red'>) r |
+    r2 si4( <sol do> do <sold red'>) \ottava #0
+    r \loco la' r <fa la>( <dod sib'>) r <sib' dod>( <fa re'>) r |
+    <re la' sib>\sfz} r1 | R1*5/4*8
+    \acc {<re do'>4 r2 <re do'>4 r <re do'> r <re do'> r2 |
+    <re do'>4 r r8 <re do'> r2 | <sold si fa' sol!>4\sfz} r1 |
     R1*5/4*3
-    do1*5/4 re fa2~ fa8 sol~ sol2 |
+    \det {do1*5/4 re fa2~} fa8 sol~-- sol2 |
     <do, fa>1*5/4\laissezVibrer \arpeggio R1*5/4*11
-    \ottava #-1 <mi,, fa'>4 \ottava #0 r1 | R1*5/4-\fermataMarkup
+    \ottava #-1 <mi,, fa'>4-> \ottava #0 r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
     R1*5/4*13

@@ -786,11 +786,11 @@ ActeDeuxSceneUnViolonUn = { \ViolonUn
 
 ActeDeuxSceneUnBisViolonUn = { \ViolonUn
   \relative {
-    \pizz mi4 r r2 R2. R2
+    \pizz mi4\mf r r2 R2. R2
 
     %%% Presto agitato %%%
     R1*5/4*2
-    \arco <red sold>1*5/4~ <red sold>~ <red sold>2. r2 |
+    \arco <red sold>1*5/4~\pp <red sold>~ <red sold>2. r2 |
     \repeat tremolo 8 {\ind #"sul tasto"sol16*5/4 mi}    %%FIXME: Issue #453
     \repeat tremolo 8 {sol mi} sol2. r2 |
     \repeat tremolo 8 {mi16*5/4 sol}
@@ -798,40 +798,40 @@ ActeDeuxSceneUnBisViolonUn = { \ViolonUn
     \repeat tremolo 8 {sol16*5/4 mi}
     \repeat tremolo 8 {sol mi} sol2. r2 |
     \repeat tremolo 16 {mi32 sol} mi4 |
-    sol8 la sol mi re mi sol la sol4 |
-    sol8 la sol mi re mi sol la sol4 |
-    sol8 la sol mi re mi sol la sol4 |
-    sol8 la sol mi re mi sol la sol mi |
-    sol la sol mi re mi sol la re, mi |
-    sol la re, mi sol la re, mi sol la |
-    \ordin mib4 re8 re re re mib4 re8 re |
-    mib4 re8 re mib4 re8 re re re |
-    mib re re re re mib re re re re | re4 r1 |
+    sol8\mp( la sol mi) re( mi) sol( la) sol4-- |
+    sol8( la sol mi) re( mi) sol( la) sol4-- |
+    sol8( la sol mi) re( mi) sol( la) sol4-- |
+    sol8( la sol mi) re( mi) sol( la sol mi) |
+    sol( la sol mi) re( mi sol la) re,( mi |
+    sol la) re,( mi sol la) re,( mi sol la) |
+    \ordin mib4--->\sfz \st {re8 re re re} mib4--->\sfz \st {re8 re} |
+    mib4--->\sfz \st {re8 re} mib4--->\sfz \st {re8 re re re} |
+    mib-> \st {re re re re} mib-> \st {re re re re} | re4->\sfz r1 |
     R1*5/4*10
-    r2 r8 dod mi dod mi dod |
-    mi dod mi fa mi dod mi dod mi dod |
-    mi dod mi fa mi dod mi dod mi dod |
-    fa4 mi8 mi mi mi fa4 mi8 mi |
-    fa4 mi8 mi fa4 mi8 mi mi mi |
-    fa mi mi mi mi fa mi mi mi mi | mi4 r1 | R1*5/4
-    dod4 r1 | R1*5/4-\fermataMarkup
+    r2 r8 \ind #"détaché" dod\mp mi dod mi dod |
+    \ind #"détaché" mi dod mi fa mi dod mi dod mi dod |
+    mi\< dod mi-> fa mi dod mi dod mi dod |
+    fa4--->\sfz \st {mi8 mi mi mi} fa4--->\sfz \st {mi8 mi} |
+    fa4--->\sfz \st {mi8 mi} fa4---> \st {mi8 mi mi mi} |
+    fa-> \st {mi mi mi mi} fa-> \st {mi mi mi mi} | mi4->\sfz r1 | R1*5/4
+    dod4->\sffz r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
-    r2 r4 \flaut sol'2\upbow\CaV r2 sol\upbow\CaV r4 | R1*5/4
+    r2 r4 \flaut sol'2\pp\<\upbow\CaV r2\! sol\<\upbow\CaV r4\! | R1*5/4
     r2 r4 \simile sol2\CaV r sol\CaV r4 |
     r2 r4 sol2\CaV r sol\CaV r4 | R1*5/4
     r2 r4 sol2\CaV r sol\CaV r4 |
-    <mi sol>2. r2 |
-    \repeat tremolo 16 {lab32*5/4 sol}
-    \repeat tremolo 16 {lab32 sol} lab16 sol do si |
-    <fab mib' mib>2. <fab reb' mib>2 <fab mib'mib> <fab reb'mib>2. |
-    r4 <fab mib' mib>2. <fab reb' mib>4~ <fab reb' mib>2 <fab mib' mib>2. |
-    <sib mib lab>2. <sib mib lab>2 <fab sib mib> <sib mib lab>2. |
-    r4 <sib mib lab>2. r4 |
-    <lab reb sib'>2. <sib mib lab>2 <lab reb sib'> <sib mib lab>2 <reb sib'>4 |
-    <sol, mib' dob'>2. <reb' sib'>2 <mib dob'> <reb sib'>2. |
-    r4 <sol, mib' dob'>2 <reb' sib'>4 <mib dob'> |
-    <lab, fa' re'>1*5/4~ <fa' re'>2. r2 | R1*5/4*5
+    <mi sol>2.--\ppsempre r2 |
+    \repeat tremolo 16 {lab32*5/4\< sol}
+    \repeat tremolo 16 {lab32 sol} lab16( sol do si) |
+    \ind #"à la corde" <fab mib' mib>2.--->\f <fab reb' mib>2---> <fab mib'mib>---> <fab reb'mib>2.---> |
+    r4 <fab mib' mib>2.---> <fab reb' mib>4~--->\< <fab reb' mib>2 <fab mib' mib>2.---> |
+    <sib mib lab>2.--->\! <sib mib lab>2---> <fab sib mib>---> <sib mib lab>2.---> |
+    r4 \meno <sib mib lab>2.-- r4 |
+    <lab reb sib'>2.--->\f <sib mib lab>2---> <lab reb sib'>---> <sib mib lab>2--->\< <reb sib'>4---> |
+    <sol, mib' dob'>2.--->\! <reb' sib'>2---> <mib dob'>---> <reb sib'>2.---> |
+    r4 <sol, mib' dob'>2--->\< <reb' sib'>4---> <mib dob'>---> |
+    <lab, fa' re'>1*5/4~--->\ff <fa' re'>2. r2 | R1*5/4*5
 
     %%% Moderato assai %%%
     r2 r4 sol,1~\CaV sol1*7/4~\CaV sol~\CaV
