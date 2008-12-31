@@ -654,7 +654,7 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
     lab4 r mi,8 sol sib mib lab sib |
     mib4. fa8 lab reb, fa lab, sib reb mib2. r4 mi,,8 sol |
     \t {mi sol lab} \t {sib si re} \t {mi fa sol} \t {lab sib reb} \t {mib fa lab} |
-    sib8 r lab, reb fa sib r lab, reb fa | sib4 r1 |
+    sib8 r mi,, lab reb fa r si,, mi lab | reb4 r1 |
     sol,,8 mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol r sol mib reb mib |
     sol mi sol mi sol mi sol mi sol r |
