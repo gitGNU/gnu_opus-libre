@@ -499,22 +499,22 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
 
     %%% Presto agitato %%%
     R1*5/4*18
-    r8 la'16 sol la4 r r2 |
+    r8 la'16\f( sol la4) r r2 |
     R1*5/4*2
-    fad4 r2 fad4 r | fad r fad r2 | fad4 r r8 fad r2 |
-    sol,4 r1 | R1*5/4*7
-    r1 r8 dod16 si | dod4 r1 | r8 mi16 re mi4 r r2 |
-    R1*5/4 r4 r8 fa16 mi fa4 r2 | R1*5/4
-    do4 r2 do4 r | do r do r2 | do4 r r8 do r2 | sib4 r1 |
-    R1*5/4 fa4 r1 | R1*5/4-\fermataMarkup
+    \accst {fad4 r2 fad4 r | fad r fad r2 | fad4 r r8 fad r2 |
+    sol,4\sfz} r1 | R1*5/4*7
+    r1 r8 dod16\f( si | dod4-.) r1 | r8 mi16( re mi4-.) r r2 |
+    R1*5/4 r4 r8 fa16( mi fa4-.) r2 | R1*5/4
+    \accst {do4 r2 do4 r | do r do r2 | do4 r r8 do r2 | sib4\sfz} r1 |
+    R1*5/4 fa4->\sffz r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
     R1*5/4*13
-    lab2. sib2 re sib2. | r4 lab2. sib4~ | sib2 re mi4 |
-    sol1*5/4~ sol2. r2 |
-    r1 sib,4 | fa'2~ fa8 lab~ lab2 | mib'2 r lab,,4 |
-    sib2~ sib8 mib~ mib2 la!2. r4 do,~ | do2. sol'2~ |
-    sol2 lab r4 | lab2. r2 | r4 lab2. r4 | r2 lab2.~ |
+    lab2.\f( sib2 re sib2.) | r4 lab2.( sib4~ | sib2) re\<( mi4 |
+    \ten sol1*5/4~\!) sol2. r2 |
+    r1 sib,4--( | fa'2~--\< fa8 lab~-- lab2 | mib'2\!) r lab,,4--( |
+    sib2~--\< sib8 mib~-- mib2 la!2.--\!) r4 do,~--\mf\<( | do2. sol'2~-- |
+    sol2 lab--\!) r4 | lab2.--\f r2 | r4 lab2.--\mf r4 | r2 \ten lab2.~--\mp |
     lab4 r1 | R1*5/4*2
 
     %%% Moderato assai %%%

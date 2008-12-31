@@ -709,40 +709,40 @@ ActeDeuxSceneUnClarinetteDeux = { \ClarinetteBasse
 
 ActeDeuxSceneUnBisClarinetteDeux = { \ClarinetteBasse
   \relative {
-    sol'4 mi8 r r2 | sold4 mi8 r r4 | sol4 mi~
+    sol'4\mp( mi8) r r2 | sold4( mi8) r r4 | sol4( mi~)
 
     %%% Presto agitato %%%
-    mi1*5/4~ mi2. r2 | R1*5/4*3
+    \ten mi1*5/4~ mi2. r2 | R1*5/4*3
     mi,1*5/4~ mi~ mi2. r2 | R1*5/4*11
-    sib'2 la sol4 mi2. r2 |
-    do4 r2 do4 r | do r do r2 |
-    do4 r r8 do' lab fa re do | lab4 r1 | R1*5/4*4
-    do1*5/4~ do2. r2 | do2. r2 | R1*5/4*6
-    sol4 r2 sol4 r | sol r sol r2 | sol4 r r8 fa''do sol la mi |
-    si4 r1 R1*5/4 mi,4 r1 | R1*5/4-\fermataMarkup
+    sib'2--\f\>( la-- sol4-. mi2.--\!) r2 |
+    \accst {do4 r2 do4 r | do r do r2 |
+    do4} r r8 do'\< lab fa re do | lab4-.->\sfz r1 | R1*5/4*4
+    \ten do1*5/4~--\p do2. r2 | do2.-- r2 | R1*5/4*6
+    \accst {sol4\f r2 sol4 r | sol r sol r2 | sol4} r r8 fa''\< do sol la mi |
+    si4-.->\sfz r1 R1*5/4 mi,4->\sffz r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
     R1*5/4*2
-    r1 re''4 | sib1*5/4~ sib2. r4 si |
-    sol1*5/4~ sol2. r4 sold |
-    mi la sol do2~ | do2. lab4 sib | mi,2. r2 | R1*5/4*3
+    r1 re''4\p( | sib1*5/4~) \ten sib2. r4 si( |
+    sol1*5/4~) sol2. r4 sold( |
+    mi\<) la( sol) do2~\mp | do2. lab4\>( sib | mi,2.\!) r2 | R1*5/4*3
 
     %%% Air ténor %%%
-    \t {mi,8 sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
-    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
-    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
-    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
-    \t {sib, mib sib} fa' r \t {lab si lab} re r \t {mi lab mi} |
-    sib' r \t {mi, sol lab} \t {sol mi re} si r r4 |
-    \t {mi,,8 sol mi'}\t {sol mi' sol} mi r sol4 mi8 r |
-    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
-    \t {mi,, sol mi'} \t {sol mi' sol} mi r sol4 mi8 r |
-    \t {sol,, sib mib} \t {fa sib re} sol4 mi8 r \t {sol mi si} |
-    \t {lab si mi} \t {lab si lab} sol4 mi8 r \t {mi si fa} |
-    \t {mi, mib' lab} \t {re si re} si r \t {re si re} si r |
-    \t {mi,, lab reb} \t {mi lab reb} \t {sol mi sol} mi r \t {mi,, lab reb} |
-    \t {mi lab reb} \t {mi sol mi} sol r sol4 mi8 r |
-    sol4 mi8 r r4 r2 | R1*5/4*4
+    \t {mi,8\mf( sol mi'} \t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {mi,,( sol mi'} \t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {mi,,( sol mi'} \t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {mi,,( sol mi'} \t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {sib,\<( mib sib} fa') r \t {lab( si lab} re) r \t {mi( lab mi} |
+    sib'\!) r \t {mi,( sol lab)} \t {sol( mi re} si) r r4 |
+    \t {mi,,8\mf( sol mi'}\t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {mi,,( sol mi'} \t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {mi,,( sol mi'} \t {sol mi' sol} mi) r sol4( mi8) r |
+    \t {sol,,( sib mib} \t {fa sib re)} sol4( mi8) r \t {sol( mi si)} |
+    \t {lab( si mi} \t {lab si lab)} sol4( mi8) r \t {mi( si fa)} |
+    \t {mi,( mib' lab)} \t {re( si re} si) r \t {re( si re} si) r |
+    \t {mi,,( lab reb} \t {mi lab reb)} \t {sol( mi sol} mi) r \t {mi,,( lab reb)} |
+    \t {mi( lab reb)} \t {mi( sol mi} sol) r sol4\>( mi8) r |
+    sol4( mi8\!) r r4 r2 | R1*5/4*4
 
     %%% Moderato assai %%%
     do1*7/4~ do4 r2 r1 | do1 si2. do si1~ | si4 r2 r1 |

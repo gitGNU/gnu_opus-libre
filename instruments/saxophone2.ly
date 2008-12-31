@@ -502,24 +502,24 @@ ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
 
     %%% Presto agitato %%%
     R1*5/4*18
-    r8 sol'16 la sol4 r r2 |
+    r8 sol'16\f( la sol4-.) r r2 |
     R1*5/4*2
-    mib4 r2 mib4 r | mib r mib r2 | mib4 r r8 mib r2 |
-    fa,4 r1 | R1*5/4*7
-    r1 r8 si16 dod | si4 r1 | r8 re16 mi re4 r r2 |
-    R1*5/4 r4 r8 mi16 fa mi4 r2 | R1*5/4
-    reb,4 r2 reb4 r | reb r reb r2 | reb4 r r8 reb r2 | fa4 r1 |
-    R1*5/4 mi4 r1 | R1*5/4-\fermataMarkup
+    \accst {mib4 r2 mib4 r | mib r mib r2 | mib4 r r8 mib r2 |
+    fa,4\sfz} r1 | R1*5/4*7
+    r1 r8 si16\f( dod | si4-.) r1 | r8 re16( mi re4-.) r r2 |
+    R1*5/4 r4 r8 mi16( fa mi4-.) r2 | R1*5/4
+    \accst {reb,4 r2 reb4 r | reb r reb r2 | reb4 r r8 reb r2 | fa4\sfz} r1 |
+    R1*5/4 mi4->\sffz r1 | R1*5/4-\fermataMarkup
 
     %%% Boum %%%
-    R1*5/4*13 mib2. fa2 si fa2. |
-    r4 mib2. fa4~ fa2 lab2 si4 |
-    mi1*5/4~ mi2. r2 |
-    r1 lab,4 | sib2~sib8 re~re2 |
-    reb'2 r sib,4 | mib2~mib8 sol~sol2~|
-    sol4 fa2 r4 sol,~ | sol2. si2~ |
-    do2. r2 | reb2. r2 | r4 reb2. r4 |
-    r2 reb2.~reb4 r1 | R1*5/4*2
+    R1*5/4*13 mib2.\f( fa2 si fa2.) |
+    r4 mib2.( fa4~ fa2) lab2\<( si4 |
+    \ten mi1*5/4~\!) mi2. r2 |
+    r1 lab,4--( | sib2~--\< sib8 re~-- re2 |
+    reb'2--\!) r sib,4--( | mib2~--\< mib8 sol~--) sol2~|
+    sol4\>( fa2\!) r4 sol,~\mf\<( | sol2. si2~-- |
+    do2.--\!) r2 | reb2.--\f r2 | r4 reb2.--\mf r4 |
+    r2 \ten reb2.~--\mp reb4 r1 | R1*5/4*2
 
     %%% Moderato assai %%%
     R1*7/4*7-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton
