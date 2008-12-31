@@ -602,3 +602,14 @@ ActeDeuxSceneDeuxSaxophoneDeux = { \SaxAltoDeux
     re!8 r re re r4 mi8 mi | re8 r r4 | R2*6 R2.*16
   }
 }
+
+ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
+  \relative {
+    %%% Larghetto %%%
+    R4.*16
+    fa,,4.~ fa4 r8 | R4.*5
+    la4.~ la4 r8 | R4.*2
+    fa4.~ fa4 r8 | la4 r8 |
+    reb,8 r4 |
+  }
+}

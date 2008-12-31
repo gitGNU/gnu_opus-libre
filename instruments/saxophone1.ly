@@ -589,3 +589,11 @@ ActeDeuxSceneDeuxSaxophoneUn = { \SaxAltoUn
     re8 re, r4 re8 re r4 | sib'8 r r4 | R2*6 R2.*16
   }
 }
+
+ActeDeuxSceneTroisSaxophoneUn = { \SaxAltoUn
+  \relative {
+    %%% Larghetto %%%
+    R4.*30
+    reb,8 r4 |
+  }
+}

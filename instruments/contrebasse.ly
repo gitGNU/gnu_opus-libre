@@ -577,7 +577,16 @@ ActeDeuxSceneUnContrebasse = { \Contrebasse
 
     %%% Andantino %%%
     sib4 r r2 R1 R2. mi4 r2 R2.*2 R2 \clef "G_8"
-    \arco <re''mi>2.~\p\CaV <re mi>~\CaV <re mi>~\CaV <re mi>2\CaV r4 |
+    \arco <re''mi>2._\markup {
+      \center-column \bracket {
+        \score { \new Staff \with {
+          \remove Time_signature_engraver }
+          \relative { \clef "F_8" <la,, do\harmonic re sol\harmonic>1}
+          \layout {indent = #0 }
+        }
+      }
+    }~\p\CaV
+    <re mi>2.~\CaV <re mi>~\CaV <re mi>2\CaV r4 |
     <re mi>--\CaV r <re mi>--\CaV | r <re mi>--\CaV r <re mi>--\CaV |
     r <re mi>--\CaV r | R2 \clef "F_8" |
     fad,,4--\mp dod'-- sid8 sold \ten fad1~-- fad2 r4 |
@@ -741,5 +750,17 @@ ActeDeuxSceneDeuxContrebasse = { \Contrebasse
 
     la''2.~\CaV la2.~\CaV la2.~\CaV la2.~\CaV la2.~\CaV la2.~\CaV la2\CaV r4 |
     R2.*9
+  }
+}
+
+ActeDeuxSceneTroisContrebasse = { \Contrebasse
+  \relative {
+    %%% Larghetto %%%
+    R4.*9
+    re,,4.~ re~ re4 r8 | R4.
+    fad4.~ fad~ fa8 r4 |
+    fa4.~ fa~ fa~ fa4 r8 | R4.*3
+    la4.~ la4 r8 | R4.*2
+    fa4.~ fa8 r4 | la4 r8 |
   }
 }

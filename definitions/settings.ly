@@ -151,7 +151,10 @@ includePartsLayout = \layout {
   }
   \context {
     \Staff
-    \remove Instrument_name_engraver
+    %%% It's silly to keep printing the instrument name in
+    %%% separate parts; however some instruments (clarinets, etc)
+    %%% may need it.
+    %\remove Instrument_name_engraver
   }
   \context {
     \Score

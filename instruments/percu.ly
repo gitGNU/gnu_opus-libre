@@ -139,7 +139,7 @@ ProloguePercus = <<
       \partial 4 r4 R2.*3 R1 R2*2 R2. R2*2 R2. R2*2 R2. R2*2 R2. R2*2
 
       %%% Entrée du Baryton 1 %%%
-      R2. R2*2 R2. s2_\markup { \indic "bag. de timbales (lourdes)" } s2. R2
+      R2. R2*2 R2. s2_\markup { \indic "bag. de timbale" } s2. R2
       r8 sol, dod4 sib8 dod |
       r8 sol dod4 dod' r2 | re4 sold, sib,2:32 R2.
 
@@ -201,7 +201,7 @@ ProloguePercus = <<
   \new DrumStaff { \Percus
     \new  DrumVoice \drummode {
       \partial 4 r4 R2.*3 R1
-      \ind #"Tam-tam" cb2\mf \laissezVibrer | R2 |
+      \ind #"Tam-tam (bag. de timbales, lourdes)" cb2\mf \laissezVibrer | R2 |
       R2. R2*2 cb2.\mf \laissezVibrer R2*2
       r4 cb2\mf \laissezVibrer R2*2
       r4 cb2\mf \laissezVibrer R2*2
@@ -224,7 +224,7 @@ ProloguePercus = <<
       R2.*5 R4.
 
       %%% Andantino %%%
-      \ind #"Tambour" bd8\pp \ind #"Cymb. (sur la cloche)" hh r |
+      \ind #"Tambour" bd8\pp \ind #"Cymb. (sur le dôme)" hh r |
       bd hh r bd hh4:32~ hh4:32 hh8 |
       bd r4 | bd8 hh r bd hh r bd hh r bd bd4:32\< hh8\mp r4 | R4.*2
       r16 bd32\> bd bd8 r | bd r bd |
@@ -1266,9 +1266,9 @@ EntractePercus = <<
 ActeDeuxSceneUnPercus = <<
   \new Staff \relative {\Vibraphone
     R2.*4 R2 R2.*2 R2
-    \st {mi,8\mp(\sustainOn do' sol' mib'\> lab si\!)}\laissezVibrer R2.*2
+    \st {mi,8\mp(\sustainOn do' sol' mib'\> lab si\laissezVibrer\!)} R2.*2
     \sustainOff R2 R2. R2 R2.*2 R2
-    \st {mi,,,8(\sustainOn si' do sol'\> lab mib'\!)}\laissezVibrer R2.*2
+    \st {mi,,,8(\sustainOn si' do sol'\> lab mib'\laissezVibrer\!)} R2.*2
     \sustainOff R2 R2. R2 R2.*2 R2
     <re la'>4--\p\sustainOn mi,-- <re la'>-- |
     \t {mi,8( <re' la'> mi)} \t {<re' la'>( mi, <re la'>)}
@@ -1327,11 +1327,11 @@ ActeDeuxSceneUnPercus = <<
       s4 <do re> r <do re> r <do re> |
       R1 s4 <do re> r |
       R1 R2. R1
-      r4 <mib solb> <mib solb> |
+      r4\mp <mib solb> <mib solb> |
       r <do fa> <do fa> r |
       r <mib solb> <mib solb> |
-      r <do fa> r <do fa> |
-      r <do fa> r | R1
+      r <do fa>\> r <do fa> |
+      r <do fa>\pp r | R1
       R2. R1 R2. R2 R1 R2. R1 R2. R1 R2. R1
     }
     \relative {
@@ -1347,11 +1347,11 @@ ActeDeuxSceneUnPercus = <<
       fad,\mp <la're> r | <la re> r <la re> r |
       <la re> r <la re> | r <la re> r <la re> |
       fad, <la're> r | <la re> r <la re> r |
-      sib,8 sib' fa fa, mi' do | sib2:32~\> sib4\! r |
-      fad2.:32~\p\> fad4\! r r2 | sib4 r2 |
-      fad2:32~ fad4 r | R2.
+      sib,8( sib') fa( fa,) mi'( do) | sib2:32--~\> sib4\! r |
+      fad2.:32--~\p\> fad4\! r r2 | sib4 r2 |
+      fad2:32--~ fad4 r | R2.
       R1 R2. R1 R2. R1 R2. R1
-      fad2.:32~\mp\> fad4\! r r2 |
+      fad2.:32--~\mp\> fad4\! r r2 |
       <sold'la>4-- r <sold la>-- |
       mi--\p <sold la> si,-- <sold'la> |
       fad,-- <sold'la> r |
@@ -1371,7 +1371,7 @@ ActeDeuxSceneUnPercus = <<
       dod,,( la' \droite <si'mi>) |
       fad\!( <la re>) \gauche dod,,( si' \droite <mi la>) \gauche
       dod,\>( si' \droite <mi la>) \gauche |
-      do,\! la' s4 r4 | la4 r la r |
+      do,(\! la') s4 r4 | la4 r la r |
       fad8--\mf( la \droite <do re> \gauche la \droite <do re> \gauche la) |
       fa--( lab \droite <do re> \gauche lab \droite <do re>4) \gauche r |
       fad,8--( la\droite <do re> \gauche la \droite <do re> \gauche la) |
@@ -1384,7 +1384,7 @@ ActeDeuxSceneUnPercus = <<
       sib,8( la' \droite <do fa> \gauche la \droite <do fa> \gauche la) |
       si,( lab' \droite <si mi> \gauche lab \droite <si mi>4) \gauche |
       R2.
-      mib,8\f la s4 r8 la s4 r8 mib s4 | r2 r4 <la si>\mf |
+      mib,8\f( la) s4 r8 la-. s4 r8 mib-. s4 | r2 r4 <la si>--\mf |
       mib-- s r |
       re--\p <si'dod> r <si dod> |
       re,-- <sib'do> r | R1
@@ -1663,3 +1663,26 @@ ActeDeuxSceneDeuxPercus = <<
   }
 >>
 
+ActeDeuxSceneTroisPercus = <<
+  \PercuDeuxMains
+  \relative { \GrandVibraphone
+    %%% Larghetto %%%
+    R4.*3 \ind #"con Ped." dod8 sold' la\laissezVibrer
+    R4.*3 dod,8 sold' la\laissezVibrer |
+    R4. \gauche fa,8 \droite la mi' | <sold la>4.\laissezVibrer
+    R4.*2 \gauche fad,8 \droite fad dod' | <sold' la>4.\laissezVibrer
+    R4. <la, mi'>4.\laissezVibrer
+    R4.*6 mi'4.\laissezVibrer |
+    R4.*3 <la, mi'>4.\laissezVibrer
+    R4. mi'4.\laissezVibrer |
+  }
+  \relative {
+    %%% Larghetto %%%
+    R4.*9
+    s4. R4.*3 s4. R4.*2
+    fa,4.\laissezVibrer R4.*6 |
+    la4.\laissezVibrer R4.*3 |
+    fa4.\laissezVibrer R4. |
+    la4.\laissezVibrer |
+  }
+>>

@@ -957,3 +957,13 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     \pizz sib4 r dod r mib r | R2 R2.*16
   }
 }
+
+ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
+  \relative {
+    %%% Larghetto %%%
+    R4.*16
+    la4.~ la~ la~ la4 r8 | R4.*3
+    la4.~ la~ la~ la4 r8 | R4.*3
+    la16 la sold8 r |
+  }
+}

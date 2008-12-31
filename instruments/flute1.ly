@@ -583,7 +583,7 @@ ActeDeuxSceneUnFluteUn = { \FluteUn
     R2.*4 R2 R2.*2 R2 | r2 \tt {si''16\p\<( red) re( fad) fa}|
     la4~--\mp( la8[ fa]~ fa8) r | r8. red16-. si4.--\> la'8~\pp | la2~ |
     la2.~ | la2~ | la4 r \t {r8 sol,,( mib'} | fad2.~) | fad4 r |
-    r \tt {sib16\p\<( mib) dod( fad) mi} la4~--\! | la4. sib,8\>( la'4~) |
+    r \tt {sib16\p\<( mib) dod( fad) mi} la4~--\! | la4. sib,8\>( la'4~)\! |
     la2.~| la4 r | R2. R2 | R2.*2 R2 |
     mi2.~\pp\<| mi2.~| mi2.~\mf\>| mi4\! r |
 
@@ -603,7 +603,7 @@ ActeDeuxSceneUnFluteUn = { \FluteUn
     sold,8\mp( la sold mi) re( mi) | sold( la sold mi) re( mi \ten sold4~) sold2.~ sold4 r r2 |
     R2. R1 R2. R1 r2 re4~--\p re re2-- r4 | r2 re4~-- |
     re2. r4 | r4 mi2~-- mi4 r mi-- r | r re2~-- re4 r r2 |
-    re''8-.\pleggiero r r2 | r r8 \st {re r8 r16 re, | re'8 r r2 | R1 r4 r8 re,} r4 |
+    re''8-.\ppleggiero r r2 | r r8 \st {re r8 r16 re, | re'8 r r2 | R1 r4 r8 re,} r4 |
     re,4--\p\< fa8( sib4) mib8~-- | mib2\! r4 |
     R2.*5 r4 re2~--\p re r4 | r mib8\mp( fa la2~) la4\! r2 |
     R1 lab,4\mp( solb fa mib fa8 mib fa solb lab4 | mib2.~) mib4 r r2 |
@@ -654,7 +654,7 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     sib4 r \t {sol,,8 mi sol} \t {si re lab'} \t {sib mib lab} |
     si4. lab8 si mib, lab do, mib lab | si2. r4 sol,,8 mi |
     \t {sol lab sib} \t {reb mib mi} \t {sol lab sib} \t {reb mib fa} \t {lab sib si} |
-    re8 r reb, fa sib re r reb, fa sib | re4 r r2 sol,,,8 lab |
+    re8 r lab, reb fa sib r mi,, lab reb | fa4 r r2 sol,,8 lab |
     sol mi sol mi sol mi sol mi sol r | sol mi sol mi sol lab sol r r4 |
     sol8 mi sol mi sol mi sol mi sol lab | sol mi sol mi sol mi sol r r4 |
     sol8 mi sol mi sol mi sol mi sol lab |
@@ -753,5 +753,24 @@ ActeDeuxSceneDeuxFluteUn = { \FluteUn
     r4 r8 \slap {sold la} r r4 | R2*7
     la'4 sol fa mi fa8 mi fa sol | la4 mi r | R2.*2 la4 mi r la, mi r |
     R2.*9
+  }
+}
+
+ActeDeuxSceneTroisFluteUn = { \FluteUn
+  \relative {
+    %%% Larghetto %%%
+    R4.*2 sold'8 la dod,~ dod4.~ dod4 r8 | R4.*3
+    sold'8 la dod,~ dod4 r8 |
+    sold' la dod,~ dod4 r8 |
+    sold' la dod,~ dod4 r8 |
+    sold' la dod,~ dod4 r8 |
+    sold' la sold do,!4 r8 |
+    sold' la sold do,!4 r8 |
+    sold' la sold do,!4 r8 |
+    sold' la sold do,! r la' |
+    sold la sold do,! r la' |
+    sold la sold do,! r la' |
+    sold la sold do,! r sold' |
+    la16 la la la r8 |
   }
 }
