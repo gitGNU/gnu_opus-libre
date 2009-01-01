@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- master.ly                                         %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -93,14 +93,14 @@
     piece = \EntracteTitre
   }
 } %
-%\pageBreak %}
+%\pageBreak %
 \score {
   \ActeDeuxSceneUn
   \header {
     acte = \ActeDeuxTitre
     piece = \SceneUnTitre
   }
-} %{
+} %
 \score {
   \ActeDeuxSceneUnBis
   \header {
@@ -112,7 +112,7 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %
+} %}
 \score {
   \ActeDeuxSceneTrois
   \header {
