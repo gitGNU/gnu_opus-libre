@@ -878,63 +878,63 @@ ActeDeuxSceneUnBisAltoUn = { \AltoUn
 
     %%% Moderato assai %%%
     R1*7/4*7 R2. R1 R2. R2
-    r4 do'2 \pizz red,,4 \arco si''2~ si4 do2 si4. do~ |
-    do2 r4 | \pizz fad,, \arco do''2~ do4 si2~ si r4 | do,,\leftpizz r2 |
-    fa1*7/4~ fa4 r2 r1 | R1*7/4
-    r8 \pizz fa fad dod' re4 |
-    r8 dod, re la' sib4 | r8 fa fad dod' re4 |
+    r4 do'2--\p \pizz red,,4 \arco si''2~--\upbow si4 \det {do2 si4. do~} |
+    do2 r4 | \pizz fad,, \arco do''2~-- do4 si2~-- si r4 | do,,\leftpizz r2 |
+    \ten fa1*7/4~\p fa4 r2 r1 | R1*7/4
+    r8 \pizz fa\p\< fad dod' re4\! |
+    r8 dod,\< re la' sib4\! | r8 \simile fa fad dod' re4 |
     r8 fad, la re fa4 | r8 fa, fad dod' re4 |
     r8 mib, lab si mi4 | r8 fa, solb sib reb4 |
-    \arco \acciaccatura solb,4 fa1*7/4~ fa1 r2 r4 |
-    R1*7/4*2 \repeat volta 2 {fa1 sold2. fa sold1 R1*7/4}
-    sold1 r2 r4 | R1*7/4 |
+    \arco \acciaccatura solb,4 fa1*7/4~\mf fa1 r2 r4 |
+    R1*7/4*2 \repeat volta 2 {\det {fa1\mf sold2. fa sold1 R1*7/4}
+    \meno sold1} r2 r4 | R1*7/4 |
 
     %%% Presto subito %%%
-    \tt {red8\upbow fad red red red} \tt {red fad red red red} \tt {red fad red red red} |
+    \tt {\ind #"détaché" red8\mf\upbow fad red red red} \tt {red fad red red red} \tt {red fad red red red} |
     \tt {red fad red red red} \tt {red fad red red red} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {fad red red fad red} \tt {fad red red fad red} |
     \tt {fad red red fad red} \tt {fad red red fad red} \tt {fad red red fad red} |
-    re mib mi fa lab si re4 r2 |
-    re,8 mib fa lab si do re4 r2 |
-    re,8 mib fa lab si do mi4 r2 |
-    re,8 mib fa lab sib si | dod4 \pizz re8 sol, re'4 r |
+    \st {re\fp mib mi fa lab si re4} r2 |
+    re,8-- \st {mib fa lab si do re4} r2 |
+    re,8-- \st {mib fa lab si do mi4} r2 |
+    re,8-- \st {mib fa lab sib si} | dod4-- \pizz re8\mp sol, re'4 r |
     mi8 sold, mi'4 <sold, mi'>\arpeggUp |
     mi'8 la, mi'4 <la, mi' la>\arpeggUp |
     fa'8 do fa4 si,8 red, si'4 sold8 red sold4 |
-    r8 red sold dod fad si mi |
-    r4 r8 \arco red, mi mi fa fa |
-    <fad,do' sol' mib'>4 <fad do' sol'>8. <fad do'>16
-    <fad do' sol'>8. <fad do'>16 <fad do'>8 |
-    <dod la' mi'>2 r4 |
-    <fad do' sol' mib'> <fad do' sol'>8. <fad do'>16
-    <fad do' sol'>8. <fad do'>16 <fad do'>8 |
-    <do la' mib' sib'>2 r4 |
-    <fad dod'>8 <fad dod'>8. <fad dod'>16 <fad dod'>8 <fad dod'> |
-    <sol sol'>4 <sol fad'>8. <sol fad'>16 <sol fad'>8. <sol mi' si'> |
-    <la mi' la>4 r2 | re4 mi si sold r <re do'> | <fa mib'> <fad mi'> <sol fa'> |
-    r8 lab lab lab lab lab | sol sol do do si si |
-    r sol sol sol sol sol lab lab si si do do |
-    r sol sol sol sol sol lab lab si si do do |
-    r re re re mib mib r fad fad fad sol sol |
-    sib4 sol8 fad mib re | <sib sol'>2. R2. R2 R4. R2 R1*5/8 R2.
+    r8 red\< sold dod fad si mi\! |
+    r4 r8 \arco red,--\< \det {mi mi fa fa} |
+    \accdet {<fad,do' sol' mib'>4\ff <fad do' sol'>8.} <fad do'>16-.
+    <fad do' sol'>8.---> \st {<fad do'>16 <fad do'>8} |
+    \accdet {<dod la' mi'>2 r4 |
+    <fad do' sol' mib'> <fad do' sol'>8.} <fad do'>16-.
+    <fad do' sol'>8.---> \st {<fad do'>16 <fad do'>8} |
+    <do la' mib' sib'>2---> r4 |
+    <fad dod'>8-.-> <fad dod'>8.---> \st {<fad dod'>16 <fad dod'>8 <fad dod'>} |
+    \accdet {<sol sol'>4 <sol fad'>8.} <sol fad'>16-. \accdet {<sol fad'>8.\< <sol mi' si'>} |
+    <la mi' la>4\sffz r2 | re4\mf( mi si sold) r \stdet {<re do'>\downbow | <fa mib'> <fad mi'> <sol fa'>} |
+    r8 \det {lab\mp\downbow( lab lab lab lab) | sol\<( sol do do si si\!) |
+    r sol( sol sol sol sol) lab\<( lab si si do do\!)} |
+    r sol sol sol sol sol \det {lab\<( lab si si do do\!) |
+    r re\upbow( re re) mib( mib) r fad( fad fad) sol( sol)} |
+    sib4 \det {sol8 fad mib re | <sib sol'>2.\mp} R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    fad'16 sol fad mib re mib fad mib re si sib si re mib re si |
-    <mib, sib'>4 r2 <mib sib'>4 r | <mib sib'> r <mib sib'> r2 |
-    <mib sib'>4 r r8 <mib sib'> r2 | <do si'>4 r1\fermata |
+    fad'16->\mf( sol fad mib) re( mib fad mib) re( si) sib( si) re( mib) re( si) |
+    \accdet {<mib, sib'>4\sfz r2 <mib sib'>4\sfz r | <mib sib'>\sfz r <mib sib'>\sfz r2 |
+    <mib sib'>4\sfz r r8 <mib sib'>\sfz} r2 | <do si'>4->\sffz r1\fermata |
     R1*5/4*3
-    mib''1*5/4~ mib2. r2 | R1*5/4*2
-    mi1*5/4~ mi2. r2 | R1*5/4*3
-    sol,8 mi sol mi sol mi sol mi sol mi |
+    \ten mib''1*5/4~\pp mib2. r2 | R1*5/4*2
+    \ten mi1*5/4~ mi2. r2 | R1*5/4*3
+    sol,8\p( mi sol mi sol mi sol mi sol mi) |
+    sol( mi sol mi sol mi sol mi sol mi) |
+    sol( mi sol mi sol mi sol mi sol mi) |
+    \simile sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol r r2 |
+    sol( mi sol mi sol) r r2 |
   }
 }
 

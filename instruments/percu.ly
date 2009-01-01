@@ -1407,34 +1407,34 @@ ActeDeuxSceneUnBisPercus = <<
 
       %%% Moderato assai %%%
       \ind #"bag. douces"
-      <do si'>1*7/4\laissezVibrer s1*7/4
-      <do si'>1 <si do'>2. <do si'> <si do'>1\laissezVibrer
+      <do si'>1*7/4\pp\laissezVibrer s1*7/4
+      <do si'>1 <si do'>2. <do si'>\> <si do'>1\!\laissezVibrer
       s1*7/4 <do si'>2 <si do'>2. <do si'>2 |
-      <si do'>2. <sib dod'>1 <la re'>2.\laissezVibrer s1 R2. R2 |
-      <si do'>2.\laissezVibrer r4 <do si'>2\laissezVibrer r2 <si do'>4\laissezVibrer |
+      <si do'>2. <sib dod'>1\> <la re'>2.\!\laissezVibrer s1 R2. R2 |
+      <si do'>2.\pp\laissezVibrer r4 <do si'>2\laissezVibrer r2 <si do'>4\laissezVibrer |
       s2. <do si'>2.\laissezVibrer r4 <si do'>2\laissezVibrer s2. R2. |
       <sib dod'>2. | <la re'>1*7/4\laissezVibrer R1*7/4*2
       R2.*7 R1*7/4*4 \repeat volta 2 R1*7/4*3
       R1*7/4*2-\markup "Allez au Marimba" \Marimba \clef bass |
 
       %%% Presto subito %%%
-      \tt {fa,8 mib' solb do, mib} \tt {fa, mib' solb do, mib}
-      \tt {lab, mib' solb do, mib} | \tt {fa, mib' solb do, mib}
-      \tt {lab, mib' solb do, solb'} \tt {do, sib' reb solb, sib} |
-      \tt {do, sib' reb solb, sib} \tt {mib, sib' reb solb, sib}
-      \tt {do, sib' reb solb, reb'} | \tt {fad, mi' sol dod, mi}
-      \tt {red, mi' sol dod, mi} \tt {fad, mi' sol sib, sol'} \clef treble |
-      \tt {mi re' fa sol, lab'} \tt {mi, fa' lab mi, fa'} \clef bass
-      \tt {fad,, mi' sol red, mi'} |
+      \tt {fa,8->\f( mib' solb) do,( mib)} \tt {fa,->( mib' solb) do,( mib)}
+      \tt {lab,->( mib' solb) do,( mib)} | \tt {fa,->( mib' solb) do,( mib)}
+      \tt {lab,->( mib' solb) do,( solb')} \tt {do,->( sib' reb) solb,( sib)} |
+      \tt {do,->( sib' reb) solb,( sib)} \tt {mib,->( sib' reb) solb,( sib)}
+      \tt {do,->( sib' reb) solb,( reb')} | \tt {fad,->( mi' sol) dod,( mi)}
+      \tt {red,->( mi' sol) dod,( mi)} \tt {fad,->( mi' sol) sib,( sol')} \clef treble |
+      \tt {mi->\<( re' fa) sol,( lab')} \tt {mi,->( fa' lab) mi,( fa')} \clef bass
+      \tt {fad,,->( mi' sol) red,( mi')} |
 
       %%% Tempo giusto %%%
-      \pl \parenthesize re,,4 fa r2 R2.*6 R2*2 R2.*4 R2 R4.
+      \pl \parenthesize re,,4\! fa r2 R2.*6 R2*2 R2.*4 R2 R4.
       R2*3 R4. R2. R2 R4. R2. R1*5/8 R2 R4. R2.*15 R2 R4. R2 R1*5/8 R2.
 
       %%% Tempo I %%%
       R1 R1*5/4*3 R1*5/4-\fermataMarkup
       R1*5/4-\markup "Allez au Vibraphone" \Vibraphone
-      <do'' si'>2. <si do'>2 <do si'> <si do'>2.\laissezVibrer R1*5/4*2
+      <do'' si'>2.\pp <si do'>2 <do si'> <si do'>2.\laissezVibrer R1*5/4*2
       <do si'>2. <si do'>2 <do si'> <si do'>2.\laissezVibrer R1*5/4*14
     }
   }
@@ -1503,20 +1503,20 @@ ActeDeuxSceneUnBisPercus = <<
 
       %%% Tempo giusto %%%
       R2.*7 R2*2 R2.*4 R2 R4. R2*2
-      r4 \ind #"Cymb." hh4:32~ hh4.:32~ hh4 r2 |
-      r4 hh4:32~ hh4.:32~ hh4 r2 | R1*5/8
-      r4 hh r8 hh4 | R2.*4
-      r4 \ind #"sur le bord" hh2:32~ hh4 r2 |
-      r4 hh2:32~ hh4 r2 | r4 hh2:32~ hh4 r2 |
-      r4 hh4:32~ hh4 | r hh4:32~ hh4 R2.
-      r8 hh32 hh hh hh hh2 R2.-\markup \indic "étouffer"
+      r4 \ind #"Cymb." hh4:32~\< hh4.:32~\> hh4\! r2 |
+      r4 hh4:32~\< hh4.:32~\> hh4\! r2 | R1*5/8
+      r4 hh-- r8 hh4-- | R2.*4
+      r4 \ind #"sur le bord" hh2:32~\pp\> hh4\! r2 |
+      r4 hh2:32~\> hh4\! r2 | r4 hh2:32~\> hh4\! r2 |
+      r4 hh4:32~\> hh4\! | r hh4:32~\> hh4\! R2.
+      r8 hh32\> hh hh hh hh2\! R2.-\markup \indic "étouffer"
       R2 R4. R2 R1*5/8 R2.
 
       %%% Tempo I %%%
-      r2 r4 \ind #"Tambour" sn16 sn sn sn |
-      hh4 r r8 sn16 sn hh4 r8 sn16 sn |
-      hh4 r8 sn16 sn hh4 r r8 sn16 sn |
-      hh4 r1 | \ind #"Tam-Tam" cb2\laissezVibrer r2 r4\fermata |
+      r2 r4 \ind #"Tambour" sn16\< sn sn sn |
+      hh4->\! r r8 sn16 sn hh4-> r8 sn16 sn |
+      hh4-> r8 sn16 sn hh4-> r r8 sn16 sn |
+      hh4-> r1 | \ind #"Tam-Tam" cb2->\f\laissezVibrer r2 r4\fermata |
       R1*5/4*21
     }
   }
@@ -1536,17 +1536,17 @@ ActeDeuxSceneUnBisPercus = <<
       R1.*5
 
       %%% Tempo giusto %%%
-      R2.*7 R2*2 R2.*4 R2 R4. R2 r4 r8 \t {mib,16 mib mib} |
-      mib4 r R4. r2 r8 \t {mib16 mib mib} |
-      mib4 r R4. r2 r8 \t {mib16 mib mib} |
+      R2.*7 R2*2 R2.*4 R2 R4. R2 r4 r8 \t {mib,16\< mib mib} |
+      mib4\sfz r R4. r2 r8 \t {mib16\< mib mib} |
+      mib4\sfz r R4. r2 r8 \t {mib16 mib mib} |
       mib4 mib8 mib mib |
-      la,4 r la4 \t {la16 la la} |
-      la4 r8 la32 la16. r4 |
-      la la la sold4 r16 sold32 sold sold8 r4 |
-      sold sold sold |
-      sol4 r2 | R2. sol4 r2 R2. sol4 r2 r2 r8 sol16 sol |
-      sol4 r r8 \t {sol16 sol sol} |
-      sol4 r2 r4 sol2:32\glissando sold2.\laissezVibrer
+      la,4-> r la4-> \t {la16\< la la} |
+      la4\ff r8 la32-> la16. r4 |
+      \det {la la la} sold4-> r16 sold32 sold sold8-> r4 |
+      \det {sold\> sold sold |
+      sol4\mp r2 | R2. sol4 r2 R2. sol4} r2 r2 r8 sol16\< sol |
+      sol4\! r r8 \t {sol16\< sol sol} |
+      sol4\! r2 r4 sol2:32\<\glissando sold2.\psubito\laissezVibrer
       R2. R2 R4. R2 R1*5/8 R2.
 
       %%% Tempo I %%%

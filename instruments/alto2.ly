@@ -878,54 +878,54 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
 
     %%% Moderato assai %%%
     R1*7/4*7 R2. R1 R2. R2
-    r4 si2 \pizz red,4 \arco do'2~ do4 si2 do4. si~ |
-    si2 r4 | \pizz fad \arco si2~ si4 do2~ do r4 | do,\leftpizz r2 |
-    mib1*7/4~ mib4 r2 r1 | R1*7/4
-    r8 \pizz fa fad dod' re4 |
-    r8 dod, re la' sib4 | r8 fa fad dod' re4 |
+    r4 si2--\p \pizz red,4 \arco do'2~--\upbow do4 \det {si2 do4. si~} |
+    si2 r4 | \pizz fad \arco si2~-- si4 do2~-- do r4 | do,\leftpizz r2 |
+    \ten mib1*7/4~\p mib4 r2 r1 | R1*7/4
+    r8 \pizz fa\p\< fad dod' re4\! |
+    r8 dod,\< re la' sib4\! | r8 \simile fa fad dod' re4 |
     r8 fad, la re fa4 | r8 fa, fad dod' re4 |
     r8 mib, lab si mi4 | r8 fa, solb sib reb4 |
-    \arco \acciaccatura solb,4 fa1*7/4~ fa1 r2 r4 |
-    R1*7/4*2 \repeat volta 2 {re1 mi2. re mi1 R1*7/4}
-    mi1 r2 r4 | R1*7/4 |
+    \arco \acciaccatura solb,4 fa1*7/4~\mf fa1 r2 r4 |
+    R1*7/4*2 \repeat volta 2 {\det {re1\mf mi2. re mi1 R1*7/4}
+    \meno mi1} r2 r4 | R1*7/4 |
 
     %%% Presto subito %%%
-    \tt {red8\upbow red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
+    \tt {\ind #"détaché" red8\mf\upbow red red red fad} \tt {red red red red fad} \tt {red red red red fad} |
     \tt {red red red red fad} \tt {red red red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
     \tt {red fad red red fad} \tt {red fad red red fad} \tt {red fad red red fad} |
-    re4 r2 re'8 do lab fad fa mib re4 r2 |
-    re'8 do la fad fa mib re4 r2 |
-    re'8 do la fad fa mib re4 r fa8 lab sib4 \pizz sol8 re' sol,4 r |
+    re4-- r2 \st {re'8\p do lab fad fa mib re4} r2 |
+    re'8-- \st {do la fad fa mib re4} r2 |
+    re'8-- \st {do la fad fa mib} re4-- r \st {fa8 lab} sib4-- \pizz sol8\mp re' sol,4 r |
     sold8 mi' sold,4 <sold mi'>\arpeggUp |
     la8 mi' la,4 <la mi' la>\arpeggUp |
     do8 fa do4 red,8 si' red,4 red8 sold red4 |
-    r8 red sold dod fad si mi |
-    r4 r8 \arco la,, sib sib si si |
-    <dod, do'! sol'>4 <dod do' sol'>8. <dod do'>16
-    <dod do'!>8. <dod do'>16 <dod do'>8 |
-    <dod la' mi'>2 r4 |
-    <dod do' sol'> <dod do' sol'>8. <dod do'>16
-    <dod do'>8. <dod do'>16 <dod do'>8 |
-    <do sol' mib' sib'>2 r4 |
-    <dod lad'>8 <dod lad'>8. <dod lad'>16 <dod lad'>8 <dod lad'> |
-    <mib do'>4 <mib do'>8. <mib do'>16 <mi do'>8. <sol mi' si'> |
-    <la mi' la>4 r2 | re4 mi si sold r sol sib si do |
-    r8 mib, mib mib mib mib | mi mi sol sol lab lab |
-    r mi? mi mi mi mi mib mib lab lab sol sol |
-    r mib mib mib mib mib mi mi sol sol lab lab |
-    r sib sib sib si si r re re re mib mib |
-    fad4 mib8 re si sib | <mi, dod'>2. R2. R2 R4. R2 R1*5/8 R2.
+    r8 red\< sold dod fad si mi\! |
+    r4 r8 \arco la,,--\< \det {sib sib si si} |
+    \accdet {<dod, do'! sol'>4\ff <dod do' sol'>8.} <dod do'>16-.
+    <dod do'!>8.---> \st {<dod do'>16 <dod do'>8} |
+    \accdet {<dod la' mi'>2 r4 |
+    <dod do' sol'> <dod do' sol'>8.} <dod do'>16
+    <dod do'>8.---> \st {<dod do'>16 <dod do'>8} |
+    <do sol' mib' sib'>2---> r4 |
+    <dod lad'>8-.-> <dod lad'>8.---> \st {<dod lad'>16 <dod lad'>8 <dod lad'>} |
+    \accdet {<mib do'>4 <mib do'>8.} <mib do'>16-. \accdet {<mi do'>8.\< <sol mi' si'>} |
+    <la mi' la>4\sffz r2 | re4\mf( mi si sold) r \stdet {sol\downbow sib si do} |
+    r8 \det {mib,\downbow( mib mib mib mib) | mi\<( mi sol sol lab lab\!) |
+    r mi?( mi mi mi mi) mib( mib lab lab sol sol)} |
+    r mib mib mib mib mib \det {mi\<( mi sol sol lab lab\!) |
+    r sib\upbow( sib sib) si( si) r re( re re) mib( mib)} |
+  fad4 \det {mib8 re si sib | <mi, dod'>2.\mp} R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    fad'16 sol fad mib re mib fad mib re si la sol la sol la sol |
-    <mib sib'>4 r2 <mib sib'>4 r | <mib sib'> r <mib sib'> r2 |
-    <mib sib'>4 r r8 <mib sib'> r2 | <do si'>4 r1\fermata |
+    fad'16->\mf( sol fad mib) re( mib fad mib) re( si) la( sol) la( sol) la( sol) |
+    \accdet {<mib sib'>4\sfz r2 <mib sib'>4\sfz r | <mib sib'>\sfz r <mib sib'>\sfz r2 |
+    <mib sib'>4\sfz r r8 <mib sib'>\sfz} r2 | <do si'>4->\sffz r1\fermata |
     R1*5/4*3
-    lab'1*5/4~ lab2. r2 | R1*5/4*2
-    sol1*5/4~ sol2. r2 | R1*5/4*3
-    sol'8 mi sol mi sol mi sol mi sol mi |
+    \ten lab'1*5/4~\pp lab2. r2 | R1*5/4*2
+    \ten sol1*5/4~ sol2. r2 | R1*5/4*3
+    \simile sol'8 mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
@@ -933,7 +933,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol r r2 |
+    sol( mi sol mi sol) r r2 |
   }
 }
 

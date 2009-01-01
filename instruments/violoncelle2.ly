@@ -798,35 +798,35 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     <mi! reb'>1*5/4~\ff} <mi reb'>2. r2 | R1*5/4*5
 
     %%% Moderato assai %%%
-    R1*7/4*4 <fa\harmonic si\harmonic do' si'>1 r2 r4 |
-    R1*7/4 r4 <mi\harmonic do'\harmonic mi' sol>1. \clef treble |
-    sol''8\CaV mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV |
+    R1*7/4*4 <fa\harmonic si\harmonic do' si'>1--\pp r2 r4 |
+    R1*7/4 r4 <mi\harmonic do'\harmonic mi' sol>1.-- \clef treble |
+    sol''8\p(\CaV mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV |
     sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV |
     sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV |
-    sol\CaV mi\CaV sol\CaV mi\CaV \clef bass |
-    r4 \pizz do,8 sol' sold4 | r8 sold si mi sol4 |
-    r8 si,, do sol' sold4 | r8 do, red sold si4 |
-    r8 si, do sol' sold4 | r8 la, do sol' sib4 |
-    r8 red, mi sol si4 | r8 red, sold si mi4 |
+    sol\CaV mi\CaV sol\CaV mi)\CaV \clef bass |
+    r4 \pizz do,8\p sol' sold4 | r8 sold\< si mi sol4\! |
+    r8 si,, do sol' sold4 | r8 do,\< red sold si4\! |
+    r8 si, do sol' sold4 | r8 la,\< do sol' sib4\! |
+    r8 red,\< mi sol si4\! | r8 red,\< sold si mi4\! |
     r8 mi, sol la sib4 \clef treble |
-    \arco sol'8 la sol la sol la sol la sol la sol la sol la |
-    sol4 r2 r1 | R1*7/4 \clef bass |
-    \pizz sib,,4 r2 fad4 r2 sib4 r2 |
+    \arco sol'8\mp( la sol la sol la sol la sol la sol la sol la |
+    sol4) r2 r1 | R1*7/4 \clef bass |
+    \pizz sib,,4\p r2 fad4 r2 sib4 r2 |
     dod4 r2 sib4 r2 do4 r2 re4 r2 |
-    \arco sol,1*7/4~ sol4 r2 r1 |
-    R1*7/4 <mi\harmonic do'\harmonic mi' sol>1*7/4~
+    \arco sol,1*7/4~\mf sol4 r2 r1 |
+    R1*7/4 <mi\harmonic do'\harmonic mi' sol>1*7/4~\pp
     \repeat volta 2 {<mi'' sol>~\CaV <mi sol>~\CaV <mi sol>~\CaV }
     <mi sol>1\CaV r2 r4 | R1*7/4
 
     %%% Presto subito %%%
-    \tt {re,,8\upbow re fa re re} \tt {re re fa re re} \tt {re re fa re re} |
+    \tt {\ind #"détaché" re,,8\upbow\mf re fa re re} \tt {re re fa re re} \tt {re re fa re re} |
     \tt {re re fa re re} \tt {re re fa re re} \tt {fa re fa re re} |
     \tt {fa re fa re re} \tt {fa re fa re re} \tt {fa re fa re re} |
     \tt {fa re fa re re} \tt {fa re fa re dod} \tt {fa re fa re dod} |
     \tt {fa re fa re dod} \tt {fa re fa re dod} \tt {fa re fa re dod} |
 
     %%% Tempo giusto %%%
-    r4 \pizz <fa mib'>\arpeggUp <fad' mi'>\arpeggUp |
+    r4 \pizz <fa mib'>\mp\arpeggUp <fad' mi'>\arpeggUp |
     r <fa, mib'>\arpeggUp <fad' mi'>\arpeggUp |
     r <fa, mib'>\arpeggUp <fad' mi'>\arpeggUp |
     r <fa, mib'>\arpeggUp <fad' mi'>\arpeggUp |
@@ -835,32 +835,32 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     si8 fad'8 si,4 | si8 fad' si,4 |
     dod8 la' dod,4 <dod la'>\arpeggUp |
     re8 la' re,4 <dod re la'>\arpeggUp |
-    fa8 do' fa,4 red | \arco sold, fad la |
-    fa2~ fa8 r4 | mi2~ mi4 r |
-    <mi dod'>4 <mi dod'>8. <mi dod'>16 |
-    <mi dod'>8. <mi dod'>16 <mi dod'>8 |
-    <fad dod' la'>2 r4 |
-    <mi dod'>4 <mi dod'>8. <mi dod'>16 |
-    <mi dod'>8. <mi dod'>16 <mi dod'>8 |
-    <do sib' sol'>2 r4 |
-    <mib reb'>8 <mib reb'>8. <mib reb'>16 <mib reb'>8 <mib reb'> |
-    <la mib'>4 <la mib'>8. <la mib'>16 |
-    <la mi'>8. <la sol'> |
-    <la la' la>4 \pizz sib8 mib, fa4 |
+    fa8 do' fa,4 red | \arco sold,--\upbow\mf \det {fad la |
+    fa2~} fa8 r4 | mi2~-- mi4 r |
+    \accdet {<mi dod'>4\ff <mi dod'>8.} <mi dod'>16-. |
+    <mi dod'>8.---> \st {<mi dod'>16 <mi dod'>8} |
+    \accdet {<fad dod' la'>2 r4 |
+    <mi dod'>4 <mi dod'>8.} <mi dod'>16-. |
+    <mi dod'>8.---> \st {<mi dod'>16 <mi dod'>8} |
+    <do sib' sol'>2---> r4 |
+    <mib reb'>8-.-> <mib reb'>8.---> \st {<mib reb'>16 <mib reb'>8 <mib reb'>} |
+    \accdet {<la mib'>4 <la mib'>8.} <la mib'>16-. |
+    \accdet {<la mi'>8.\< <la sol'>} |
+    <la la' la>4\sffz \pizz sib8\p mib, fa4 |
     r dod8 mi re4 | sold8 fad sol4 do8 la | si4 mi,8 dod red4 |
-    \arco sol2.~ sol2 r4 | sol2.~ sol2 r4 | sol2.~ sol2 r4 |
-    sol2 r4 sol2 r4 r si2 sold2. R2. R2 R4. R2 R1*5/8 R2.
+    \arco \ten sol2.~--\mp sol2 r4 | sol2.~-- sol2 r4 | sol2.~-- sol2 r4 |
+    sol2 r4 sol2 r4 r \det {si2\upbow sold2.\mp} R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    \pizz mib8 sib' r4 fad'8 si r4 |
-    \arco sib4 la8 la la la sib4 la8 la |
-    sib4 la8 la sib4 la8 la la la |
-    sib la la la la sib la la la la | la4 r1\fermata |
+    \pizz mib8\mf sib' r4 fad'8 si r4 |
+    \arco sib4--->\sfz \st {la8 la la la} sib4---> \st {la8 la} |
+    sib4---> \st {la8 la} sib4---> \st {la8 la la la} |
+    sib-> \st {la la la la} sib-> \st {la la la la} | la4->\sffz r1\fermata |
     R1*5/4*2
-    <fa,\harmonic si\harmonic do' si'>2. r2 | R1*5/4*2
-    <fa\harmonic si\harmonic do' si'>1*5/4~\CaV <do'' si'>2.\CaV r2 |
+    <fa,\harmonic si\harmonic do' si'>2.\pp r2 | R1*5/4*2
+    \ten <fa\harmonic si\harmonic do' si'>1*5/4~\CaV <do'' si'>2.\CaV r2 |
     R1*5/4
-    <mi,,\harmonic do'\harmonic mi' sol>1*5/4~
+    <mi,,\harmonic do'\harmonic mi' sol>1*5/4~\pp
     <mi'' sol>~\CaV <mi sol>~\CaV <mi sol>2. r2 |
     R1*5/4*9
   }
