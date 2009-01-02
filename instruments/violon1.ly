@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- violon1.ly                                        %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -822,8 +822,8 @@ ActeDeuxSceneUnBisViolonUn = { \ViolonUn
     r2 r4 sol2\CaV r sol\CaV r4 | R1*5/4
     r2 r4 sol2\CaV r sol\CaV r4 |
     <mi sol>2.--\ppsempre r2 |
-    \repeat tremolo 16 {lab32*5/4\< sol}
-    \repeat tremolo 16 {lab32 sol} lab16( sol do si) |
+    \repeat tremolo 16 {lab32*5/4 sol}
+    \repeat tremolo 16 {lab32\< sol} lab16( sol do si) |
     \ind #"à la corde" <fab mib' mib>2.--->\f <fab reb' mib>2---> <fab mib'mib>---> <fab reb'mib>2.---> |
     r4 <fab mib' mib>2.---> <fab reb' mib>4~--->\< <fab reb' mib>2 <fab mib' mib>2.---> |
     <sib mib lab>2.--->\! <sib mib lab>2---> <fab sib mib>---> <sib mib lab>2.---> |

@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- violoncelle2.ly                                   %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -783,7 +783,7 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     R1*5/4 <fa re'>4->\sffz r1 | R1*5/4-\fermataMarkup |
 
     %%% Boum %%%
-    <mi\harmonic do'\harmonic mi' sol>1*5/4~
+    <mi\harmonic do'\harmonic mi' sol>1*5/4\pp~
     <mi'' sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>~\CaV
     <mi sol>~\CaV <mi sol>~\CaV
@@ -853,8 +853,8 @@ ActeDeuxSceneUnBisVioloncelleDeux = { \VioloncelleDeux
 
     %%% Tempo I %%%
     \pizz mib8\mf sib' r4 fad'8 si r4 |
-    \arco sib4--->\sfz \st {la8 la la la} sib4---> \st {la8 la} |
-    sib4---> \st {la8 la} sib4---> \st {la8 la la la} |
+    \arco sib4--->\sfz \st {la8 la la la} sib4--->\sfz \st {la8 la} |
+    sib4--->\sfz \st {la8 la} sib4--->\sfz \st {la8 la la la} |
     sib-> \st {la la la la} sib-> \st {la la la la} | la4->\sffz r1\fermata |
     R1*5/4*2
     <fa,\harmonic si\harmonic do' si'>2.\pp r2 | R1*5/4*2

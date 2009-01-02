@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- clarinette.ly                                     %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -724,7 +724,7 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteUn
     %%% Tempo I %%%
     R1
     \acc {fa4\f r2 fa4 r fa r fa r2 | fa4} r \t {lab,8\f( solb la} fa'4-.) r |
-    la,, r1->\fermata\sffz | R1*5/4
+    la,,->\sffz r1\fermata | R1*5/4
     si'2.\p( do2) si( do2.) R1*5/4*2
     si2.( do2) si( do2.) R1*5/4*14
   }

@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- alto2.ly                                          %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -925,10 +925,10 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     R1*5/4*3
     \ten lab'1*5/4~\pp lab2. r2 | R1*5/4*2
     \ten sol1*5/4~ sol2. r2 | R1*5/4*3
-    \simile sol'8 mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
+    sol'8(\p mi sol mi sol mi sol mi sol mi) |
+    sol( mi sol mi sol mi sol mi sol mi) |
+    sol( mi sol mi sol mi sol mi sol mi) |
+    \simile sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |

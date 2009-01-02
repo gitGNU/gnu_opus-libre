@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- violon3.ly                                        %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -781,7 +781,7 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     mib4--->\sfz \st {re8 re} mib4--->\sfz \st {re8 re re re} |
     mib-> \st {re re re re} mib-> \st {re re re re} | re4->\sfz r1 |
     R1*5/4*11
-    \ind #"détaché" mi8 dod mi fa mi dod mi dod mi dod |
+    \ind #"détaché" mi8\mp dod mi fa mi dod mi dod mi dod |
     mi\< dod mi-> fa mi dod mi dod mi dod |
     fa4--->\sfz \st {mi8 mi mi mi} fa4--->\sfz \st {mi8 mi} |
     fa4--->\sfz \st {mi8 mi} fa4---> \st {mi8 mi mi mi} |
@@ -864,7 +864,7 @@ ActeDeuxSceneUnBisViolonTrois = { \ViolonTrois
     %%% Tempo I %%%
     r4 r8 sol,16->\mf( la sol mi) re->( mi) sol( la) sol( la) |
     \accdet {<solb fa'>4\sfz r2 <solb fa'>4\sfz r <solb fa'>\sfz r <solb fa'>\sfz r2 |
-    <solb fa'>4\sfz r r8 <solb fa'>\sfz} r2 | <si, lad'>4->\sfz r1\fermata |
+    <solb fa'>4\sfz r r8 <solb fa'>\sfz} r2 | <si, lad'>4->\sffz r1\fermata |
     R1*5/4
     \flaut mi1*5/4~\pp mi~ mi~ mi~ mi~ mi~ |
     mi~ mi2. r2 | R1*5/4*5

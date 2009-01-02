@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- flute2.ly                                         %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -627,8 +627,8 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
     sol8( mi sol mi sol mi sol mi sol lab | sol2.) r2 |
     mi8( sol mi sol mi sol mi sol mi sol) |
     mi8\>( sol mi sol mi sol mi sol mi sol |
-    mi4) r1 | R1*5/4
-    r2 r4 dod'4-- sol8( la | dod re dod4) r r2 | R1*5/4
+    mi4\!) r1 | R1*5/4
+    r2 r4 dod'4\mp-- sol8( la | dod re dod4) r r2 | R1*5/4
     dod,8\p\<( re dod re dod re dod re dod4 | re4->\f) r1 |
 
     R1*5/4*6
@@ -699,7 +699,7 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
     r4 \tt {sol'16\mp\<( lab sol lab sol)} \tt {lab( do lab do re)} \tt {fa( do lab do fa)} |
     sib2~--->\f sib8 sib-- sib-- | reb2-> r4 |
     sib2~---> sib8 sib-- sib-- | solb2-> r4 |
-    sib2---> la32\<( si dod re | mi4--->) mi8-. mi~-> mi mi-. \t {mi16( fad sold} |
+    sib2---> la32\<( si dod re | mi4--->)\! mi8-. mi~-> mi mi-. \t {mi16( fad sold} |
     la8->)\sffz \t {la,16\p( solb lab} mib8-.) r r4 | R2.
     r8 \t {la16( mib do} sib8-.) r r4 | R2.
     r8 \t {la'16(\ppleggiero reb, solb} sib,8-.) r r4 | R2.

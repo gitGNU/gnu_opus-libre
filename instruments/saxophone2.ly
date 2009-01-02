@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- saxophone2.ly                                     %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -552,7 +552,7 @@ ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
     R1*5/8 |
     la,,4.---> r8 | do'8-. do4-> |
     la->\sffz r2 R2.*3
-    r4 mib2--\p mi4 sol lab |
+    r4 mib2--\p mi4( sol lab) |
     r mi2-- mib4( lab sol) |
     r mib2-- mi4( sol lab) |
     r sib( si) r re( mib) |

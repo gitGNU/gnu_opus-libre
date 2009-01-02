@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- percu.ly                                          %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -1428,7 +1428,7 @@ ActeDeuxSceneUnBisPercus = <<
       \tt {fad,,->( mi' sol) red,( mi')} |
 
       %%% Tempo giusto %%%
-      \pl \parenthesize re,,4\! fa r2 R2.*6 R2*2 R2.*4 R2 R4.
+      re,,4\! r2 R2.*6 R2*2 R2.*4 R2 R4.
       R2*3 R4. R2. R2 R4. R2. R1*5/8 R2 R4. R2.*15 R2 R4. R2 R1*5/8 R2.
 
       %%% Tempo I %%%
