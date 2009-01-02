@@ -523,46 +523,46 @@ ActeDeuxSceneUnBisSaxophoneDeux = { \SaxAltoDeux
 
     %%% Moderato assai %%%
     R1*7/4*7-\markup "Prenez le Sax. Baryton" \SaxophoneBaryton
-    fa,,2.~ fa4 r r2 | si2.~si4 r |
-    mi,4 r2 | red'4 r2 | mi,4 r2 | sol4 r2 |
+    \ten fa,,2.~\pp fa4 r r2 | si2.~ si4 r |
+    mi,4---.\p r2 | red'4---. r2 | \simile mi,4 r2 | sol4 r2 |
     mi4 r2 | fad4 r2 | sol4 r2 la4 r2 | do4 r2 |
-    fa,1 r2 r4 | fa1 sol2. fa sol1 | R2.*7
-    sol1 r2 r4 | R1*7/4*3
+    fa,1--\pp r2 r4 | fa1\p( sol2.) fa( sol1) | R2.*7
+    sol1--\mp r2 r4 | R1*7/4*3
     \repeat volta 2 { R1*7/4*3 } R1*7/4*2
 
     %%% Presto subito %%%
-    mi''1 fa,,2~fa1~fa4 r |
-    \tt {re8 fa r4 r8} r4 fa2 \t {mi8 fa sol} |
-    sib2. r4 r2 | R1.
+    mi''1--\f \ten fa,,2~-- fa1~ fa4 r |
+    \tt {re8->( fa) r4 r8} r4 fa2-- \t {mi8( fa sol)} |
+    sib2.---> r4 r2 | R1.
 
     %%% Tempo giusto %%%
-    re,4 r2 re4 r fa |
+    re,4-> r2 \det {re4\mp r fa |
     re r2 re4 r2 | re4 r2 |
-    re4 r re8 fa | mib'4 fa, mib' |
-    mi,4. r8 | fad' si, mi,4 |
-    fad8 dod' sold'4 r |
-    fad,8 si mi4 r |
-    sold,4 r sold8 red' | si'2 r4 |
+    re4} r re8( fa | \det {mib'4) fa, mib' |
+    mi,4.} r8 | \st {fad'\p( si, mi,4) |
+    fad8( dod' sold'4) r |
+    fad,8( si mi4)} r |
+    sold,4-- r \st {sold8( red'} | \det {si'2) r4 |
     fa4. r8 R4. |
-    mi8 mib'~ mib4 mi fa8 r |
-    mib,,2~mib4 r8 |
-    fad8. mi'16 dod'8 dod4. |
-    mib,,2~mib4 r8 |
-    do'8. sol'16 mib'8 mib4. |
+    mi8->} mib'~-> mib4\<( mi fa8\!) r |
+    mib,,2~--->\f mib4 r8 |
+    fad8.->\< mi'16-. dod'8-. dod4.--->\! |
+    mib,,2~---> mib4 r8 |
+    do'8.->\< sol'16-. mib'8-. mib4.--->\! |
     R1*5/8 |
-    la,,4. r8 | do'8 do4 |
-    la r2 R2.*3
-    r4 mib2 mi4 sol lab |
-    r mi2 mib4 lab sol |
-    r mib2 mi4 sol lab |
-    r sib si r re mib |
-    r fa,2 mi2. R2. R2 R4. R2 R1*5/8 R2.
+    la,,4.---> r8 | do'8-. do4-> |
+    la->\sffz r2 R2.*3
+    r4 mib2--\p mi4 sol lab |
+    r mi2-- mib4( lab sol) |
+    r mib2-- mi4( sol lab) |
+    r sib( si) r re( mib) |
+    r fa,2\<( mi2.--\mp) R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    R1 sol2 la,4 sol'2 | r4 la, sol' mib solb |
-    re'2 r2 r4 | do,4 r1\fermata |
+    R1 \ind #"en dehors" sol2\f la,4( sol'2) | r4 la,( sol') mib( solb |
+    re'2--) r2 r4 | do,4->\sffz r1\fermata |
     R1*5/4*3
-    \ind #"détimbré" lab'1*5/4~ lab4 r1 |
+    \ind #"détimbré" lab'1*5/4~\pp lab4 r1 |
     R1*5/4*2
     \simile sol1*5/4~ sol4 r1 | R1*5/4*12
   }

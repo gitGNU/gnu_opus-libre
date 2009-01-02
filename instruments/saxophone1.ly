@@ -519,37 +519,37 @@ ActeDeuxSceneUnBisSaxophoneUn = { \SaxAltoUn
 
     %%% Moderato assai %%%
     R1*7/4*7 R2. R1 R2. R2 |
-    mi,4 r2 R2. mi4 r2 R2.*3
-    si'2.~ si4. sib~ sib2.~ |
-    la1 r2 r4 | la1 si2. la si1 | R2.*7
-    solb4 fa8 lab r sol do sib mib4 r2 | R1*7/4*3
+    mi,4---.\p r2 R2. mi4---. r2 R2.*3
+    si'2.~--\p si4. sib~-- sib2.~ |
+    la1--\pp r2 r4 | la1\p( si2.) la( si1) | R2.*7
+    solb4--\mf fa8-> lab-> r \st {sol do sib} mib4-> r2 | R1*7/4*3
     \repeat volta 2 { R1*7/4*3} R1*7/4*2
 
     %%% Presto subito %%%
-    mib2 solb,1~ solb~ solb4 r |
-    \tt {mib8 solb r4 r8} r2 mib4 \t {lab8 la sib} |
-    si2. r4 r2 | R1.
+    mib2--\f \ten solb,1~-- solb~ solb4 r |
+    \tt {mib8->( solb) r4 r8} r2 mib4-- \t {lab8( la sib)} |
+    si2.---> r4 r2 | R1.
 
     %%% Tempo giusto %%%
-    re,4 r2 r4 mi' sol re' mi, la dod, r2 | R2.*3
-    si2~ si4 r |
-    R2.*2 do2 r4 | mib sol lab sib4. r8 R4. |
-    r8 lab~ \t {lab lab lab} \t {la la la} \t {sib sib sib} |
-    sol2~ sol4 r8 | mi'!8. la,16 la8 la4. |
-    sol2~ sol4 r8 | la'8. sib,16 sib8 sib4. |
-    sol'4 mi8 reb solb, |
-    reb'4. reb8~ reb solb4 | la4 r2 R2.*3
-    r4 si,,2 do4 mib mi |
-    r4 si2 do4 mib mi |
-    r4 do2 si4 mi mib |
-    r fad sol r sib si |
-    r sol, si reb2. | R2. R2 R4. R2 R1*5/8 R2.
+    re,4-> r2 r4 mi'\pp( sol re'-- mi, la dod,) r2 | R2.*3
+    si2~\p si4 r |
+    R2.*2 do2 r4 | mib( sol lab sib4.) r8 R4. |
+    r8 lab~--->\f\< \t {lab lab lab} \t {la la la} \t {sib sib sib} |
+    sol2~--->\f sol4 r8 | mi'!8.->\< la,16-. la8-. la4.->\! |
+    sol2~---> sol4 r8 | la'8.->\< sib,16-. sib8-. sib4.--->\! |
+    sol'4---> \st {mi8 reb solb,} |
+    reb'4.---> reb8~->\< reb solb4-> | la4->\sffz r2 R2.*3
+    r4 si,,2--\p do4 mib mi |
+    r4 si2-- do4( mib mi) |
+    r4 do2-- si4( mi mib) |
+    r fad( sol) r sib( si) |
+    r sol,\<( si reb2.--\mp) | R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    R1 sib'4 r2 sib4 r sib r sib r2 |
-    r4 \t {do,8 sib reb} la'2 r4 | si,4 r1\fermata |
+    R1 \acc {sib'4\f r2 sib4 r sib r sib} r2 |
+    r4 \t {do,8\f( sib reb} la'2--) r4 | si,4->\sffz r1\fermata |
     R1*5/4*3
-    \ind #"détimbré" mib'1*5/4 ~ mib4 r1 | R1*5/4*2
+    \ind #"détimbré" mib'1*5/4~\pp mib4 r1 | R1*5/4*2
     \simile mi!1*5/4~ mi4 r1 | R1*5/4*12
   }
 }

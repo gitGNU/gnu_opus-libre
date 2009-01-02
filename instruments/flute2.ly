@@ -662,65 +662,65 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
     sol( mi sol mi sol mi sol mi sol) r |
 
     %%% Moderato assai %%%
-    R1*7/4 sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
-    sol4 r2 r1 | sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
-    sol4 r2 r1 | sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
-    sol4 r2 r1 | mi4 sol mi sol mi sol mi~ mi2 r4 R2 |
-    sol2 r4 sol8 mi sol mi sol mi |
-    sol2 r4 | sol8 mi sol lab sol mi |
-    sol2 r4 | sol8 mi sol mi sol lab |
-    sol4 mi8 sol mi sol mi4 r2 |
-    sol8 lab sol mib reb mib |
-    sol4 la sol la sol la sol~ |
-    sol2 r4 sol8 la sol la sol mi re mi |
-    sol2 r4 sol8 mi sol mi sol mi sol4 |
-    mi2 r4 sol8 la sol mi re4 mi2 r4 |
-    sol8 la sol mi re4 | mi2 r4 |
-    sol8 mi sol mi sol4 | mi sol8 mi re4 |
-    mi1 r2 r4 | mi4 sol mi sol mi2.~ |
-    mi4 sol mi2 sol4 mi r |
-    sol1 r2 r4 |
+    R1*7/4 sol8(\pdolce mi sol mi sol mi sol mi sol mi sol mi sol mi |
+    sol4) r2 r1 | sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi |
+    sol4) r2 r1 | sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi |
+    sol4) r2 r1 | mi4( sol mi sol\> mi sol mi~\!) mi2 r4 R2 |
+    sol2-- r4 sol8\p( mi sol mi sol mi |
+    sol2) r4 | sol8( mi sol lab sol mi |
+    sol2) r4 | sol8( mi sol mi sol lab |
+    sol4) mi8( sol mi sol mi4 r2 |
+    sol8) lab( sol mib reb mib) |
+    sol4\pp( la sol la sol la sol~) |
+    sol2 r4 sol8\p( la sol la sol mi re mi |
+    sol2) r4 sol8( mi sol mi sol mi sol4) |
+    mi2-- r4 sol8( la sol mi re4 mi2) r4 |
+    sol8( la sol mi re4 | mi2) r4 |
+    sol8( mi sol mi sol4 | mi) sol8( mi re4) |
+    mi1-- r2 r4 | mi4( sol mi sol mi2.~) |
+    mi4 sol( mi2) sol4( mi) r |
+    sol1-- r2 r4 |
     \repeat volta 2 {
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
-    sol4 r2 r1 | sol8 mi sol mi sol mi sol4 r r2 |
+    sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi |
+    sol4) r2 r1 | sol8( mi sol mi sol mi sol4) r r2 |
     }
-    sol8 mi sol mi sol mi sol4 r r2 |
-    sol8 mi sol mi sol mi sol4 r r2 |
+    sol8( mi sol mi sol mi sol4) r r2 |
+    sol8( mi sol mi sol mi sol4) r r2 |
 
     %%% Presto subito %%%
-    mi1.~ mi2 r4 \t {sib'8 lab si} sol'4 r |
+    \ten mi1.~--\f mi2 r4 \t {sib'8\mp( lab si} sol'4-.) r |
     R1.
-    \tt {mi,8 sol mi sol r} \tt {mi sol mi sol r} \tt {mi sol mi sol r} |
-    \tt {mi sol mi sol r} \tt {mi sol mi sol r} r2 |
+    \tt {mi,8->\f( sol mi sol) r} \tt {mi->( sol mi sol) r} \tt {mi->( sol mi sol) r} |
+    \tt {mi->( sol mi sol) r} \tt {mi->( sol mi sol) r} r2 |
 
     %%% Tempo giusto %%%
-    sol2 r4 | R2.*6-\markup "Prenez le piccolo" \Piccolo R2*2
+    sol2-- r4 | R2.*6-\markup "Prenez le piccolo" \Piccolo R2*2
     R2.*4 R2 R4. |
-    r4 \tt {sol'16 lab sol lab sol} \tt {lab do lab do re} \tt {fa do lab do fa} |
-    sib2~ sib8 sib sib | reb2 r4 |
-    sib2~ sib8 sib sib | solb2 r4 |
-    sib2 la32 si dod re |mi4 mi8 mi~ mi mi \t {mi16 fad sold} |
-    la8 \t {la,16 solb lab} mib8 r r4 | R2.
-    r8 \t {la16 mib do} sib8 r r4 | R2.
-    r8 \t {la'16 reb, solb} sib,8 r r4 | R2.
-    r8 \t {la'16 reb, re} solb,8 r r4 | R2.
-    r8 \t {la'16 sib, reb} re,8 r r4 | R2.
-    r2 \t {fa16 la lab} do8 | r2 \t {la16 reb do} fa8 |
-    \t {reb16 fa mi} lab8 r2 | re,2.
+    r4 \tt {sol'16\mp\<( lab sol lab sol)} \tt {lab( do lab do re)} \tt {fa( do lab do fa)} |
+    sib2~--->\f sib8 sib-- sib-- | reb2-> r4 |
+    sib2~---> sib8 sib-- sib-- | solb2-> r4 |
+    sib2---> la32\<( si dod re | mi4--->) mi8-. mi~-> mi mi-. \t {mi16( fad sold} |
+    la8->)\sffz \t {la,16\p( solb lab} mib8-.) r r4 | R2.
+    r8 \t {la16( mib do} sib8-.) r r4 | R2.
+    r8 \t {la'16(\ppleggiero reb, solb} sib,8-.) r r4 | R2.
+    r8 \t {la'16( reb, re} solb,8-.) r r4 | R2.
+    r8 \t {la'16( sib, reb} re,8-.) r r4 | R2.
+    r2 \t {fa16( la lab} do8-.) | r2 \t {la16( reb do} fa8-.) |
+    \t {reb16( fa mi} lab8-.) r2 | re,2.--\mp
     R2.-\markup { Prenez la \concat { G \super de } Flûte } \FluteDeux
     R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    R1 reb,4 r2 reb4 r reb r reb r2 |
-    reb4 r2 \t {fa8 mib solb} re'4 | R1*5/4-\fermataMarkup R1*5/4
-    sol,,8 mi sol mi sol mi sol mi sol mi |
-    sol2. r2 | sol8 mi sol mi sol mi sol mi sol mi |
-    sol2. r2 | sol8 mi sol mi sol mi sol mi sol mi |
-    sol2. r2 | sol8 mi sol mi sol mi sol mi sol mi |
-    sol2. r2 | sol8 mi sol mi sol lab sol2 |
-    r4 sol8 mi sol mi sol lab sol4 |
-    r sol8 mi sol lab sol4 r |
-    mi1*5/4~ mi2. r2 |
+    R1 \acc {reb,4\f r2 reb4 r reb r reb r2 |
+    reb4} r2 \t {fa8( mib solb} re'4-.) | R1*5/4-\fermataMarkup R1*5/4
+    sol,,8(\pdolce mi sol mi sol mi sol mi sol mi |
+    sol2.) r2 | sol8( mi sol mi sol mi sol mi sol mi |
+    sol2.) r2 | sol8( mi sol mi sol mi sol mi sol mi |
+    sol2.) r2 | sol8( mi sol mi sol mi sol mi sol mi |
+    sol2.) r2 | sol8\mp( mi sol mi sol lab sol2) |
+    r4 sol8( mi sol mi sol lab sol4) |
+    r sol8( mi sol lab sol4) r |
+    \ten mi1*5/4~\mf mi2. r2 |
     R1*5/4*7
   }
 }
