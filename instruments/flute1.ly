@@ -618,106 +618,106 @@ ActeDeuxSceneUnBisFluteUn = { \FluteUn
     R1 R2. R2
 
     %%% Presto agitato %%%
-    sol'8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8  mi sol mi sol mi sol mi sol lab| sol2. r2 |
-    sol8  mi sol mi sol mi sol mi sol lab| sol2. r2 |
-    sol8 mi? sol mi sol mi sol mi sol lab| sol2. r2 |
-    sol8  mi sol mi sol mi sol mi sol lab| sol mib reb mib sol4 r2 |
-    sol8  mi sol mi sol mi sol mi sol lab| sol mib reb mib sol lab sol4 r |
-    sol8  mi sol mi sol mi sol mi sol mi |
-    sol   mi sol mi sol mi sol mi sol mi |
-    sol   mi sol mi sol mi sol mi sol mi | sol4 r1 | R1*5/4
-    r2 dod8 re dod la sol la | dod4 r1 | R1*5/4
-    re,8 dod re dod re dod re dod re dod | re4 r1 |
+    sol'8\p( mi sol mi sol mi sol mi sol mi | sol2.) r2 |
+    sol8(  mi sol mi sol mi sol mi sol lab | sol2.) r2 |
+    sol8(  mi sol mi sol mi sol mi sol lab | sol2.) r2 |
+    sol8( mi? sol mi sol mi sol mi sol lab | sol2.) r2 |
+    sol8( mi sol mi sol mi sol mi sol lab) | sol( mib reb mib sol4) r2 |
+    sol8( mi sol mi sol mi sol mi sol lab) | sol( mib reb mib sol lab sol4) r |
+    sol8( mi sol mi sol mi sol mi sol mi) |
+    sol(  mi sol mi sol mi sol mi sol mi) |
+    sol\>(  mi sol mi sol mi sol mi sol mi | sol4\!) r1 | R1*5/4
+    r2 dod8\mp( re dod la) sol( la | dod4) r1 | R1*5/4
+    re,8\p\<( dod re dod re dod re dod re dod | re4->\f) r1 |
 
     R1*5/4*6
-    mi1*5/4~ mi2. r2 | R1*5/4*3
-    fa1*5/4~ fa2. r2 | R1*5/4*9
+    \ten mi1*5/4~\pp mi2. r2 | R1*5/4*3
+    \ten fa1*5/4~ fa2. r2 | R1*5/4*9
 
     %%% Boum %%%
     R1*5/4-\fermataMarkup
-    sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8 mi sol mi sol mi sol mi sol mi | sol2. r2 |
-    sol8 mi sol mi sol lab sol mi sol lab | sol2. r2 |
-    sol8 mi sol lab sol mi sol lab sib reb |
+    sol8\p( mi sol mi sol mi sol mi sol mi | sol2.) r2 |
+    sol8( mi sol mi sol mi sol mi sol mi | sol2.) r2 |
+    sol8( mi sol mi sol mi sol mi sol mi | sol2.) r2 |
+    sol8( mi sol mi sol mi sol mi sol mi | sol2.) r2 |
+    sol8( mi sol mi sol mi sol mi sol mi | sol2.) r2 |
+    sol8( mi sol mi sol lab sol mi sol lab | sol2.) r2 |
+    sol8( mi sol lab) sol( mi sol\< lab) sib( reb) |
 
     %%% Air Ténor %%%
-    mi'4~ mi16 fa mi fa mi fa mi fa mi4~ \t {mi8 red mi} | red2 r4 red, mi |
-    mi'4~ mi16 red mi red mi red mi red mi4 r |
-    r4 \t {mi,,8 sol lab} \t {sib si re} \t {mi sol lab} sib16 reb mib fa |
-    lab4. mib8 sib sol sol, sol' sib mib | lab2. r4 sol,,8 mi |
-    sol mi sol mi \t {lab sib re} \t {mi sol sib} \t {reb mib fa} |
-    sib4. lab8 mib sib'~ sib2~ |
-    sib4 r \t {sol,,8 mi sol} \t {si re lab'} \t {sib mib lab} |
-    si4. lab8 si mib, lab do, mib lab | si2. r4 sol,,8 mi |
-    \t {sol lab sib} \t {reb mib mi} \t {sol lab sib} \t {reb mib fa} \t {lab sib si} |
-    re8 r lab, reb fa sib r mi,, lab reb | fa4 r r2 sol,,8 lab |
-    sol mi sol mi sol mi sol mi sol r | sol mi sol mi sol lab sol r r4 |
-    sol8 mi sol mi sol mi sol mi sol lab | sol mi sol mi sol mi sol r r4 |
-    sol8 mi sol mi sol mi sol mi sol lab |
+    mi'4~\f( mi16 fa mi fa mi fa mi fa mi4~) \t {mi8 red( mi} | red2) r4 red,\<( mi) |
+    mi'4~\!( mi16 red mi red mi red mi red mi4) r |
+    r4 \t {mi,,8\<( sol lab} \t {sib si re} \t {mi sol lab} sib16 reb mib fa |
+    lab4.--\!) \st {mib8( sib sol) sol,\<( sol' sib mib} | lab2.--\!) r4 sol,,8\p( mi |
+    sol mi sol mi) \t {lab\<( sib re} \t {mi sol sib} \t {reb mib fa} |
+    sib4.\f) \st {lab8 mib} sib'~-- \ten sib2~ |
+    sib4 r \t {sol,,8\<( mi sol} \t {si re lab'} \t {sib mib lab} |
+    si4.--\!) \st {lab8( si mib, lab) do,\<( mib lab} | si2.--\!) r4 sol,,8( mi) |
+    \t {sol\<( lab sib} \t {reb mib mi} \t {sol lab sib} \t {reb mib fa} \t {lab sib si} |
+    re8\!) r \st {lab,\<( reb fa sib\!) r mi,,\<( lab reb | fa4\!)} r r2 sol,,8\p( lab |
+    sol mi sol mi sol mi sol mi sol) r | sol( mi sol mi sol lab sol) r r4 |
+    sol8( mi sol mi sol mi sol mi sol lab) | sol( mi sol mi sol mi sol) r r4 |
+    sol8( mi sol mi sol mi sol mi sol lab) |
 
     %%% Moderato assai %%%
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4 r2 r1 |
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4 r2 r1 |
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4 r2 r1 |
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4 mi sol |
-    mi sol mi sol~ sol2 r4 R2 |
-    do2.~ do4 r2 | do2.~ do4 r2 | si2.~ si4 r2 |
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol4 r2 |
-    la4 sol la sol la sol la | sol8 la sol la sol la sol2 r |
-    sol8 la sol mi re mi sol2 r4 sol8 mi |
-    sol2 r4 | sol8 la sol mi re mi | sol2 r4 |
-    sol8 la sol mi re la' | sol2 r4 |
-    sol4 mi sol8 mi sol la sol mi re mi |
-    sol1 r2 r4 | sol4 mi sol mi sol2.~ |
-    sol4 mi sol2 mi4 sol r |
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
-    \repeat volta 2 { sol4 r2 r1 |
-    sol8 mi sol mi sol mi sol mi sol mi sol mi sol mi |
-    sol4 r2 r8 mi sol mi sol mi sol mi | }
-    sol4 r2 r8 mi sol mi sol mi sol mi | sol4 r2 r1 |
+    sol8(\pdolce mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4) r2 r1 |
+    sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4) r2 r1 |
+    sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi | sol4) r2 r1 |
+    sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi) | sol4( mi sol |
+    mi\> sol mi sol~\!) sol2 r4 R2 |
+    do2.~--\pp do4 r2 | do2.~-- do4 r2 | si2.~-- si4 r2 |
+    sol8\p( mi sol mi sol mi sol mi sol mi sol mi sol4) r2 |
+    la4\pp( sol la sol la sol la) | sol8\p( la sol la sol la sol2) r |
+    sol8( la sol mi re mi sol2) r4 sol8( mi |
+    sol2) r4 | sol8( la sol mi re mi | sol2) r4 |
+    sol8( la sol mi re la' | sol2) r4 |
+    sol4( mi) sol8( mi sol la sol mi re mi |
+    sol1) r2 r4 | sol4( mi sol mi sol2.~) |
+    sol4 mi( sol2) mi4( sol) r |
+    sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi |
+    \repeat volta 2 { sol4) r2 r1 |
+    sol8( mi sol mi sol mi sol mi sol mi sol mi sol mi |
+    sol4) r2 r8 mi( sol mi sol mi sol mi | }
+    sol4) r2 r8 mi( sol mi sol mi sol mi | sol4) r2 r1 |
 
     %%% Presto subito %%%
-    sol1.~ sol2 r \t {fad'8 mi sol} red'4 | R1.
-    \tt {sol,,8 mi sol mi r } \tt {sol mi sol mi r} \tt {sol mi sol mi r} |
-    \tt {sol8 mi sol mi r } \tt {sol mi sol mi r} r2 |
+    \ten sol1.~--\f sol2 r \t {fad'8\mp( mi sol} red'4-.) | R1.
+    \tt {sol,,8->\f( mi sol mi) r } \tt {sol->( mi sol mi) r} \tt {sol->( mi sol mi) r} |
+    \tt {sol8->( mi sol mi) r } \tt {sol->( mi sol mi) r} r2 |
 
     %%% Tempo giusto %%%
-    mi2 r4 | R2.*6
-    la2~ la4 r |
-    mi2.~ mi2 r4 | do'2 r4 | mib2 r4 |
-    lab4. r8 | R4. |
-    r8 sol~ \t {sol sol sol} \t {sold sold sold} \t {la la la} |
-    \repeat tremolo 8 {do32 re} |
-    \repeat tremolo 4 {do re} do32 re mi fa |
-    sol2 r4 |
+    mi2-- r4 | R2.*6
+    la2~\mp la4 r |
+    \ten mi2.~ mi2 r4 | do'2-- r4 | mib2-- r4 |
+    lab4.-- r8 | R4. |
+    r8 sol~--->\f\< \t {sol sol sol} \t {sold sold sold} \t {la la la} |
+    \repeat tremolo 8 {do32\fmolto re} |
+    \repeat tremolo 4 {do re} do32( re mi fa |
+    sol2->) r4 |
     \repeat tremolo 8 {do,32 re}
-    \repeat tremolo 4 {do re} do32 re mi fa |
-    sol2 r4 |
-    \repeat tremolo 8 {sol32 la} sol8 |
-    fad4 fad8 fad~ fad fad fad |
-    la4 r r8 \t {reb,16 sib do} |
-    sol8 r r2 | r4 r8 \t {fa'16 si, lab} solb8 r | R2.
-    r4 r8 \t {solb16 sib, reb} fa,8 r | R2.
-    r4 r8 \t {reb''16 fa, solb} sib,8 r | R2.
-    r4 r8 \t {la'16 sib, reb} re,8 r | R2.
-    r4 \t {reb'16 fa mi} lab8 r4 |
-    r \t {fa16 la lab} do8 r4 |
-    r8 re, mib fad sol sib fad'2. | R2. R2 R4. R2 R1*5/8 R2.
+    \repeat tremolo 4 {do re} do32( re mi fa |
+    sol2->) r4 |
+    \repeat tremolo 8 {sol32\ff la} sol8-. |
+    fad4---> fad8-. fad~-> fad \st {fad fad |
+    la4->\sffz} r r8 \t {reb,16\p( sib do} |
+    sol8-.) r r2 | r4 r8 \t {fa'16( si, lab} solb8-.) r | R2.
+    r4 r8 \t {solb16(\ppleggiero sib, reb} fa,8-.) r | R2.
+    r4 r8 \t {reb''16( fa, solb} sib,8-.) r | R2.
+    r4 r8 \t {la'16( sib, reb} re,8-.) r | R2.
+    r4 \t {reb'16( fa mi} lab8-.) r4 |
+    r \t {fa16( la lab} do8-.) r4 |
+    r8 re,\<( mib fad sol sib fad'2.--\mp) | R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    r2 r4 fa,,16 sib reb solb | la4 r2 la4 r | la r la r2 |
-    la4 r2 r8 si sold'4 | R1*5/4-\fermataMarkup
-    r4 sol,,8 mi sol mi sol mi sol mi | sol2. r2 |
-    r4 sol8 mi sol mi sol mi sol mi | sol2. r2 |
-    r4 sol8 mi sol mi sol mi sol mi | sol2. r2 |
-    r4 sol8 mi sol mi sol mi sol mi | sol2. r2 |
-    r4 sol8 mi sol mi sol mi sol mi | sol2 r4 sol8 mi sol mi |
-    sol lab sol2 r4 sol8 mi | sol lab sol4 r sol8 mi sol lab |
-    sol1*5/4~ sol2. r2 |
+    r2 r4 \st {fa,,16\< sib reb solb} | \acc {la4\f r2 la4 r | la r la r2 |
+    la4} r2 r8 si( sold'4-.) | R1*5/4-\fermataMarkup
+    r4 sol,,8(\pdolce mi sol mi sol mi sol mi | sol2.) r2 |
+    r4 sol8( mi sol mi sol mi sol mi | sol2.) r2 |
+    r4 sol8( mi sol mi sol mi sol mi | sol2.) r2 |
+    r4 sol8( mi sol mi sol mi sol mi | sol2.) r2 |
+    r4 sol8( mi sol mi sol mi sol mi | sol2) r4 sol8\mp( mi sol mi |
+    sol lab sol2) r4 sol8( mi | sol lab sol4) r sol8\<( mi sol lab |
+    \ten sol1*5/4~\mf) sol2. r2 |
     R1*5/4*7
   }
 }

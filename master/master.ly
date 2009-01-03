@@ -100,13 +100,13 @@
     acte = \ActeDeuxTitre
     piece = \SceneUnTitre
   }
-} %
+} %}
 \score {
   \ActeDeuxSceneUnBis
   \header {
     piece = \Separateur
   }
-} %
+} %{
 \score {
   \ActeDeuxSceneDeux
   \header {

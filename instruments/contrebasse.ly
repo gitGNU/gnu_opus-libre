@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- contrebasse.ly                                    %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -615,72 +615,72 @@ ActeDeuxSceneUnBisContrebasse = { \Contrebasse
     R1 R2. R2 \clef "G_8"
 
     %%% Presto agitato %%%
-    <sol, do\harmonic sol''>1*5/4~
+    <sol, do\harmonic sol''>1*5/4~\pp
     \simile sol''~\CaV sol~\CaV sol~\CaV sol2.\CaV r2 |
-    R1*5/4 <sol,,sib\harmonic re''>1*5/4~
+    R1*5/4 <sol,,sib\harmonic re''>1*5/4~\p
     <sol sib\harmonic re''>2. r2 \clef "F_8" |
     R1*5/4*7
-    sib,1*5/4~ sib~ sib2. r2 |
-    dod2 re mi4 sol1*5/4~ sol2. r2 |
-    <re do'>4 r2 <re do'>4 r | <re do'> r <re do'> r2 |
-    <re do'>4 r r8 <re do'> r2 | <fa' sol>4 r1 |
+    sib,1*5/4~\p sib~ sib2. r2 |
+    dod2\mp re( mi4) \ten sol1*5/4~ sol2. r2 |
+    \accdet {<re do'>4\sfz r2 <re do'>4\sfz r | <re do'>\sfz r <re do'>\sfz r2 |
+    <re do'>4\sfz r r8 <re do'>\sfz r2 | <fa' sol>4\sfz} r1 |
     R1*5/4*3
-    sol,,8 mi sol mi sol mi sol mi sol lab |
+    \ind #"détaché (sotto voce)" sol,,8\mp mi sol mi sol mi sol mi sol-> lab |
+    sol mi sol mi sol mi sol mi sol-> lab |
+    \simile sol mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol mi sol mi sol lab |
     sol mi sol mi sol mi sol mi sol lab |
-    sol mi sol mi sol mi sol mi sol lab |
-    sol mi sol mi sol mi sol mi sol lab |
-    sol mi sol mi sol mi sol mi sol4 |
-    lab4 r2 lab4 r | lab r lab r2 |
-    lab4 r r8 lab r2 | do4 r1 |
-    R1*5/4 <mi,red'>4 r1 | R1*5/4-\fermataMarkup |
+    sol\< mi sol mi sol mi sol mi sol4 |
+    \accdet {lab4\sfz r2 lab4\sfz r | lab\sfz r lab\sfz r2 |
+    lab4\sfz r r8 lab\sfz r2 | do4\sfz} r1 |
+    R1*5/4 <mi,red'>4->\sffz r1 | R1*5/4-\fermataMarkup |
 
     %%% Boum %%%
-    R1*5/4*12 r1 \t {la'8 mi fad} |
-    <mi, red'>1*5/4~ <mi red'>2. r4 \t {la'8 mi fad} |
-    <mi, red'>1*5/4 fa4 mib'2 \t {reb8 sib do} \t {sol fa lab} |
-    <mi mi'>1*5/4 | r4 mi2. fa4~ |
-    fa2 sib8 lab si sol fa lab | <mi mi'>1*5/4~ <mi mi'>2. fa2 |
-    <mi mi'>1*5/4~ <mi mi'>1*5/4 sib'2 lab si4 |
-    <mi, mi'>1*5/4~ <mi mi'>2. r2 | R1*5/4*5
+    R1*5/4*12 r1 \t {la'8--\f\< mi-- fad--} |
+    \ten <mi, red'>1*5/4~--->\! <mi red'>2. r4 \t {la'8--\< mi-- fad--} |
+    <mi, red'>1*5/4--->\! fa4-- mib'2-> \t {reb8--\< sib-- do--} \t {sol-- fa-- lab--} |
+    \ten <mi mi'>1*5/4\!---> | r4 mi2.\upbow\< fa4~\! |
+    fa2 \det {sib8\f\< lab si sol fa lab | \ten <mi mi'>1*5/4~->\!} <mi mi'>2. fa2---> |
+    \ten <mi mi'>1*5/4~ <mi mi'>1*5/4 \acc {sib'2\upbow\ff lab\< si4 |
+    <mi, mi'>1*5/4~--\!} <mi mi'>2. r2 | R1*5/4*5
 
     %%% Moderato assai %%%
     R1*7/4*7
-    \pizz fa8 do' dod sold' la mi' | R1
-    si,8 fad' sol re' \clef "G_8" mib sib' \clef "F_8" R2 |
+    \pizz fa8\p( do' dod sold' la mi') | R1
+    si,8( fad' sol re') \clef "G_8" mib sib' \clef "F_8" R2 |
     mi,,,4 r2 red'4 r2 mi,4 r2 sol4 r2 mi4 r2 fad4 r2 sol4 r2 si4 r2 do4 r2 |
-    \arco fa,1*7/4~ fa4 r2 r1 | R1*7/4 R2.*7
-    sol'1*7/4~ sol1 r2 r4 |
-    R1*7/4*2 \repeat volta 2 {la1 si2. la si1 R1*7/4} si1 r2 r4 | R1*7/4
+    \arco \ten fa,1*7/4~-- fa4 r2 r1 | R1*7/4 R2.*7
+    sol'1*7/4~\mf sol1 r2 r4 |
+    R1*7/4*2 \repeat volta 2 {\det {la1\mf si2. la si1 R1*7/4} \meno si1} r2 r4 | R1*7/4
 
     %%% Presto subito %%%
-    \tt {mi,,8 re' fa r4} \tt {mi,8 re' fa r4} \tt {mi,8 re' fa r4} |
+    \tt {mi,,8\f re' fa r4} \tt {mi,8 re' fa r4} \tt {mi,8 re' fa r4} |
     \tt {mi,8 re' fa r4} \tt {mi,8 re' fa r4} \tt {mi, r8 re' fa} |
     \tt {mi,4 r8 re' fa} \tt {mi,4 r8 re' fa} \tt {mi,4 r8 re' fa} |
-    \tt {mi,4 r8 re' fa} \tt {mi, re' fa sol re} \tt {mi, re' fa sol re} |
+    \tt {mi,4 r8 re' fa} \tt {\ind #"détaché" mi, re' fa sol re} \tt {mi, re' fa sol re} |
     \tt {mi, re' fa sol re} \tt {mi, re' fa sol re} \tt {mi, re' fa sol re} |
     \pl {re2.~ re~ re~ re~ re~ re2}
     {re4\leftpizz r2 re4\leftpizz r2 re4\leftpizz r2 re4\leftpizz r2 re4\leftpizz r2 re4\leftpizz r}
     \pizz re r fa r mi r r mi |
     fad r2 fad4 r2 sold4 r sold r fad r \clef "G_8" sib8 mib lab4 R4. \clef "F_8" |
-    mi,4 \clef "G_8" mi' mi' r \clef "F_8" |
+    mi,4-> \clef "G_8" mi'-> mi'-> r \clef "F_8" |
 
-    \arco mib,,4 mib~ mib8 mib4 | fad2 r4 |
-    mib4 mib~ mib8 mib4 | do2 r4 | mib4 mib8 mib mib |
-    <la, la'>2 la'8 la la |
-    \pl {la,\leftpizz \pizz do sib mib} {la8 s s4} r4 |
+    \arco mib,,4--->\ff \accdet {mib~ mib8 mib4 | fad2 r4 |
+    mib4 mib~} mib8 \accdet {mib4 | do2 r4 | mib4} \det {mib8\< mib mib |
+    <la, la'>2} \acc {la'8\< la la\!} |
+    \pl {la,\sfp\leftpizz \pizz do sib mib} {la8 s s4} r4 |
     fad,8 si dod mi r4 |
     sold,4 r8 sold r4 sold4 sold sold |
-    \arco sol2.~ sol2 r4 | sol2.~ sol2 r4 sol2.~ sol2 r4 |
-    sol2 r4 sol2 r4 r si2 sold2. | R2. R2 R4. R2 R1*5/8 R2.
+    \arco \ten sol2.~--\mp sol2 r4 | sol2.~-- sol2 r4 sol2.~-- sol2 r4 |
+    sol2 r4 sol2 r4 r si2--\upbow sold2.--\mp | R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
-    R1 <la sold'>4 r2 <la sold'>4 r <la sold'> r <la sold'> r2 |
-    <la sold'>4 r r8 <la sold'> r2 | <dod sold'>4 r1\fermata |
+    R1 \accdet {<la sold'>4\sfz r2 <la sold'>4\sfz r <la sold'>\sfz r <la sold'>\sfz r2 |
+    <la sold'>4\sfz r r8 <la sold'>\sfz} r2 | <dod sold'>4\sffz r1\fermata |
     R1*5/4*21
   }
 }
