@@ -965,5 +965,66 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
     la4.~ la~ la~ la4 r8 | R4.*3
     la4.~ la~ la~ la4 r8 | R4.*3
     la16 la sold8 r |
+    r la la sold r4 |
+    sold16 sold sol8 la16 la |
+    sold8 r4 | <sol mi'>4.~<sol mi'>4 r8 |
+    la16 la sold8 r |
+    r la la sold r4 |
+    sib16 sib sib sib sib sib |
+    sib sib sib sib sib sib |
+    la la sold8 r |
+    r la la sold r4 |
+    la16 la sold8 r |
+    red'16 red red red red red |
+    red dod dod dod dod dod |
+    si' si do do, si la |
+    sold8 r4 | la16 la sold8 r |
+    re'16\leftpizz \pizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz  <sib re> r \arco sib( |
+    do8) r16 \pizz do mi do r do |
+    mi do r mi do r \arco la la |
+    sold8 r16 \pizz do mi do r do mi do r8 |
+    la16 la sold8 r \pizz <sold mi'> |
+    \arco la la sold r |
+    \pizz <sold mi'> <sold mi'> r \arco la16 la |
+    sold8 si16 si sib8 r |
+    mi16 mi mi mi sol, sol sol sol |
+    R4
+    lab16 lab sol' sol re re lab lab |
+    sol' sol lab, lab r8 |
+    lab16 sol' reb lab sol' reb lab sol' |
+    reb lab sol' lab, | R4
+    \pizz <do sol'>8 <do sol'> <do sol'> <do sol'> <do sol'> <do sol'> |
+    \arco la16 la sold8 r |
+    r la la sold16 sold sold sold sold sold |
+    r8 la la sold16 sold sold sold sold sold |
+    la la sold sold sold sold sib sib la la sold sold |
+    sib sib sib sib sib sib |
+    sib sib sib sib sib sib |
+    sib sib sib sib sib sib |
+    sib sib sib sib sib sib |
+    <la re> <la re> <la re> <la re> <la re> <la re> |
+    sib sib sib sib sib sib |
+    sol sol sol sol re' re |
+    do re' sol, do, re' sol, do, re' |
+    sol, do, re' sol, do, do do do |
+    do do la' la sib re, fa fa mi mi mib mib |
+    re8 \pizz <re sib'> r8 \arco re16 re |
+    mi8 r R4 re8\leftpizz re16 re |
+    mi8 r R4 re8\leftpizz re16 re |
+    mi do do do do do do do |
+    do do do do mi mi mib mib |
+    re mi' la, re, mi' la, re, mi' |
+    mi, re re re re re re re |
+    re re dod dod dod dod dod dod |
+    dod dod dod dod dod do sol' re |
+    do sol' re do | R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }

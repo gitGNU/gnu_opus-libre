@@ -990,5 +990,78 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
     mi4.~ mi~ mi~ mi4 r8 | R4.*3
     mi4.~ mi~ mi~ mi4 r8 | R4.*3
     la,16 la la la la la |
+    la la la la la la |
+    la la la la la la |
+    la la la la la la |
+    la la la la la la |
+    <re mi>4.~<re mi>4 r8 |
+    la16 la la la la la |
+    la la la la la la |
+    la la la la la la |
+    re re mi mi fad fad |
+    sol re re re mib mib |
+    la, la la la la la |
+    la la la la la la |
+    la la la la la la |
+    la la la la la la |
+    sid' sid dod dod, dod dod |
+    re? re sid' sid dod dod, |
+    dod dod do do do do |
+    la la la la la la |
+    la la la la la la |
+    re\leftpizz \pizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz  <sib re> r \arco re( |
+    mi8) r16 \pizz mi |
+    do mi r mi do mi r do |
+    mi r \arco mi mi mi mi mi mi |
+    mi8 r16 \pizz mi do mi r \arco mi |
+    mid mid mid mid mid dod mid mid |
+    dod mid r mid mid mid mid mid |
+    dod mid r mid mid mid mid mid |
+    dod mid r mid sol sol sol sol |
+    sol sol sol sol sol sol sol sol |
+    R4 sol16 sol re re lab lab sol' sol |
+    re re sol sol r8 |
+    sol16 reb lab sol' reb lab sol' reb |
+    lab sol' reb sol | R4
+    sol16 do, sol' do, |
+    sol' do, sol' do, |
+    sol' do, sol' sol |
+    la, la la la la la |
+    la la la la la la |
+    mi' mi mi mi mi mi |
+    la, la la la la la |
+    mi' mi mi mi mi mi |
+    mi mi mi mi mi mi |
+    r8 <sold, sold'> <la la'> |
+    <sib sib'> r4 |
+    r8 <sold sold'> <la la'> |
+    <sib sib'> r4 |
+    r8 <lad lad'> <si si'> |
+    <do do'> r4 |
+    la'16 la la la la la |
+    sib sib sib sib dod dod |
+    re sol, do, re' sol, do, re' sol, |
+    do, re' sol, do, re' sol, re' sol, |
+    re'8 do, re si'16 si do8 dod16 dod |
+    re8 \pizz <re, re'> r \arco re'16 re |
+    mi8 r R4 re,8\leftpizz re'16 re |
+    mi8 r R4 re,8\leftpizz re'16 re |
+    mi mi, mi mi mi8 mi16 mi |
+    fa8 mi16 mi mi8 red'16 red |
+    mi la, re, mi' la, re, mi' la, |
+    mi'8 r sold, sold la r |
+    fad fad sol r |
+    re16 sol re do sol' re do sol' |
+    R2.-\fermataMarkup R2.*2
+    r8 sold16 sold la8 fad16 fad sol8 r | R2.
+    r8 sold16 sold la8 fad16 fad sol8 r | R2.
+
+    %%% Interlude %%%
   }
 }

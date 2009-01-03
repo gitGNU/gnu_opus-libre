@@ -972,5 +972,6 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
     mi4.~ mi4 r8 R4.*2 |
     la4.~ la8 r4 | la4 r8 |
     \pizz dod,,16 la' fa' la r8 |
+    re,,
   }
 }

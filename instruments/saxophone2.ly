@@ -638,7 +638,7 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     mib,4~mib~mib8 r mib'4~mib~mib~mib8 r |
     re re re re reb r R4 |
     re8 re reb r R4 | mib8 re reb r |
-    reb, r reb r reb r reb' r |
+    reb, r reb r reb' r |
     do4~do~do8 r do8 do R4 si8 si R4 |
     si8 si r si |
     R2.-\fermataMarkup R2.*6
