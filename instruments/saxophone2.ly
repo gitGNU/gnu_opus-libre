@@ -1,4 +1,4 @@
-﻿%------------------------------------------------------------------%
+%------------------------------------------------------------------%
 % Opéra Libre -- saxophone2.ly                                     %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -610,6 +610,39 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     fa,,4.~ fa4 r8 | R4.*5
     la4.~ la4 r8 | R4.*2
     fa4.~ fa4 r8 | la4 r8 |
-    reb,8 r4 |
+    reb,8 r4 | r8 re r |
+    reb r4 | r8 re r |
+    fad r4 | fa4.~fa4 r8 |
+    reb r4 | r8 re r |
+    reb r4 | do'4.~do4 r8 |
+    reb, r4 sol8 r4 |
+    reb8 r4 sol8 r4 |
+    mi4.~mi4 r8 | R4.
+    reb8 r4 r8 r16 reb \t {reb reb reb} |
+    re8 re' re re | re re re re |
+    re re re re re re |
+    reb reb reb reb |
+    reb reb reb reb reb reb reb reb |
+    reb reb si si si si | si si si si |
+    si si si si si si |
+    sib sib sib sib sib sib | R4
+    sib8 r sib r | sib r4 sib8 r sib r sib r |
+    R4*4
+    lab8 r4 re,8 re' r |
+    lab lab' r | re,, re' r |
+    lab r4 | r8 lab r sol4 sib8 |
+    fad8 r4 do'8 r4 |
+    fad,8 r4 do'8 r4 |
+    fad,8 fad' r fa, fa' r |
+    mi, mi' r |
+    mib,4~mib~mib8 r mib'4~mib~mib~mib8 r |
+    re re re re reb r R4 |
+    re8 re reb r R4 | mib8 re reb r |
+    reb, r reb r reb r reb' r |
+    do4~do~do8 r do8 do R4 si8 si R4 |
+    si8 si r si |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }

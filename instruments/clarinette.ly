@@ -1,4 +1,4 @@
-﻿%------------------------------------------------------------------%
+%------------------------------------------------------------------%
 % Opéra Libre -- clarinette.ly                                     %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -791,5 +791,60 @@ ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
     mi8 do si la sold la si4 r8 | R4.
     r4 mi8 do si la sold la si |
     sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    r sold sold sold r4 |
+    sol4.~ sol4 r8 |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    sol4.~sol4 r8 |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    r8 sold16 sold sold8 |
+    sold16 sold sold sold r8 |
+    si4.~si8 red mi16 dod re8. do16 si la |
+    sold sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    re16 re re re re re re re |
+    re re re re re re re re |
+    re re r re re re re re |
+    re re re re mi mi mi mi |
+    mi mi mi mi mi mi r mi |
+    mi mi mi mi mi mi mi mi |
+    mi mi mi mi mi mi mi mi |
+    fa fa fa fa fa fa r fa |
+    fa fa fa fa fa fa fa fa |
+    fa fa fa fa fa fa fa fa |
+    fa fa fa fa sol sol r sol |
+    sol sol r sol sol r sol sol |
+    R4
+    re'8 re re re | re re r |
+    r reb r reb r reb | R4*4
+    sold,16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    R4. r16 sib lab si sol'8 |
+    fad r4 | r8 mi,4 fad8 r4 |
+    r8 mi r fad r4 |
+    la16 la la la r8 |
+    r16 la do fa sib8 |
+    la8 sol16 sol la8 sol16 sol |
+    la8 sol sib,4~sib~sib~sib8 r |
+    re16 re re re re re re re |
+    mi8 r R4 re16 re re re mi8 r R4 |
+    re16 re re re mi8 r R4 |
+    sold,16 sold sold sold |
+    r dod, fad si | re4~re~re8 r |
+    re16 re re re r4 |
+    dod16 dod dod dod r4 |
+    do16 do do do r8 do |
+    R2.-\fermataMarkup
+    R2.*6
+
+    %%% Interlude %%%
+
   }
 }

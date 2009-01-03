@@ -1,4 +1,4 @@
-﻿%------------------------------------------------------------------%
+%------------------------------------------------------------------%
 % Opéra Libre -- saxophone1.ly                                     %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -595,5 +595,45 @@ ActeDeuxSceneTroisSaxophoneUn = { \SaxAltoUn
     %%% Larghetto %%%
     R4.*30
     reb,8 r4 |
+    r8 re r reb r4 |
+    r8 re r fad r4 |
+    do'4.~do4 r8 |
+    reb, r4 r8 re r reb r4 |
+    re'4.~re4 r8 |
+    reb, r4 r8 sol r |
+    reb r4 r8 fa r |
+    fad4.~fad4 r8 | R4.
+    reb8 r4 r8 r16 reb reb8 |
+    re r R4*5
+    r8 r16 re' mi8 r |
+    R4*2
+    r8 la,16 la sold8 r |
+    R4 r8 r16 re' fa8 r R4 |
+    r8 la,16 la sold8 r |
+    R4*2
+    r8 r16 fad'16 sol8 r |
+    fa, r fa r R4 |
+    lab8 r lab r lab r4 |
+    R4*7
+    mib8 r re fa r mib |
+    lab r fad si r4 |
+    r8 si dod sold r16 mi re fa |
+    dod'8 r4 |
+    r8 re, dod' mi'4 r8 |
+    r re,, dod' mi'4 r8 |
+    mi,,8 r re sol r fa |
+    lab solb' la |
+    fa'4~fa~fa8 r |
+    fa,4~fa~fa~fa8 r |
+    sib,8 sib sib sib |
+    lab r R4 |
+    sib8 sib lab r R4 |
+    sib8 sib lab r |
+    r mi'16 mi fa8 r r lab, |
+    sol4~sol~sol8 r sol sol R4 |
+    sol8 sol R4 sol8 sol r sol |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }
