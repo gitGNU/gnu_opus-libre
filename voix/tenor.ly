@@ -283,7 +283,7 @@ ActeDeuxSceneUnBisTenor = { \Tenor
     r4 fa(\p lab | sol'\> si, mi | dod)\! \t { r8 dod( dod)} do( la) |
     fad'4(\> sib, mib | lab,)\! r8 fa4( lab8 |
     sol'16 mi si mi dod8. do16) sib8( reb) |
-    \tt {la16(\< re do fa mib} lab4--)\sfz r8 sol,16(\f \< fad' |
+    \tt {la16(\< re do fa mib} lab4--)\sfz r8 \ind #"abbaiando" sol,16(\f \< fad' |
     la4->--)\sfz r8 re,-.( | fa-. dod-. mi-. do-. | la4--) r2 |
     R2.*3 R2 R4. R2*3 R4. R2. R2 R4. R2.
     R1*5/8 R2 R4. R2.*15 R2 R4. R2

@@ -861,8 +861,8 @@ ActeDeuxSceneUnBisVioloncelleUn = { \VioloncelleUn
 
     %%% Tempo I %%%
     r4 \pizz si?8\mf fad' r4 do' |
-    \arco sib4---> \st {la8 la la la} sib4--->\sfz \st {la8 la} |
-    sib4---> \st {la8 la} sib4---> \st {la8 la la la} |
+    \arco sib4--->\sfz \st {la8 la la la} sib4--->\sfz \st {la8 la} |
+    sib4--->\sfz \st {la8 la} sib4--->\sfz \st {la8 la la la} |
     sib-> \st {la la la la} sib-> \st {la la la la} | la4->\sffz r1\fermata |
     R1*5/4*2
     <fa,\harmonic si\harmonic do' si'>2.\pp r2 | R1*5/4*2
@@ -972,5 +972,6 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
     mi4.~ mi4 r8 R4.*2 |
     la4.~ la8 r4 | la4 r8 |
     \pizz dod,,16 la' fa' la r8 |
+    re,,
   }
 }

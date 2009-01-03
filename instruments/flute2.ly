@@ -627,8 +627,8 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
     sol8( mi sol mi sol mi sol mi sol lab | sol2.) r2 |
     mi8( sol mi sol mi sol mi sol mi sol) |
     mi8\>( sol mi sol mi sol mi sol mi sol |
-    mi4) r1 | R1*5/4
-    r2 r4 dod'4-- sol8( la | dod re dod4) r r2 | R1*5/4
+    mi4\!) r1 | R1*5/4
+    r2 r4 dod'4\mp-- sol8( la | dod re dod4) r r2 | R1*5/4
     dod,8\p\<( re dod re dod re dod re dod4 | re4->\f) r1 |
 
     R1*5/4*6
@@ -699,7 +699,7 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
     r4 \tt {sol'16\mp\<( lab sol lab sol)} \tt {lab( do lab do re)} \tt {fa( do lab do fa)} |
     sib2~--->\f sib8 sib-- sib-- | reb2-> r4 |
     sib2~---> sib8 sib-- sib-- | solb2-> r4 |
-    sib2---> la32\<( si dod re | mi4--->) mi8-. mi~-> mi mi-. \t {mi16( fad sold} |
+    sib2---> la32\<( si dod re | mi4--->)\! mi8-. mi~-> mi mi-. \t {mi16( fad sold} |
     la8->)\sffz \t {la,16\p( solb lab} mib8-.) r r4 | R2.
     r8 \t {la16( mib do} sib8-.) r r4 | R2.
     r8 \t {la'16(\ppleggiero reb, solb} sib,8-.) r r4 | R2.
@@ -779,5 +779,76 @@ ActeDeuxSceneTroisFluteDeux = { \FluteDeux
     la sold la do, r sold' |
     la r do, |
     sold'16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    la8 sold sold sold r4 |
+    lad16 lad si8 sold16 sold |
+    la8 lad16 lad si8 |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    la16 la sib8 fad16 fad |
+    sol8 la16 la sib8 |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    r8 sold16 sold sold8 |
+    sold16 sold sold sold r8 |
+    sid16 sid dod8 lad16 lad |
+    si8 sid16 sid dod8 |
+    si16 si do8 r |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    R4*2 r8 \slap { \ind #"slap" sold la fad sol} r |
+    R4*2 r8 \slap { sold la fad sib r r sold16 sold sold8} r |
+    R4*2 \ordin sold16 sold sold sold |
+    r8 r16 sold sold sold sold8 |
+    sold16 sold sold sold |
+    R4 r8 \slap {sold la fad sol} r |
+    R4*5 R4. R4*7
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    r16 sold sold sold sold8 |
+    sold16 sold sold sold r8 |
+    R4. r8 r16 dod si re |
+    fa8 r4 | r8 si,16 si sib8 |
+    la r4 | r8 do16 do si8 |
+    sib r4 |
+    la16 la la la r8 |
+    r16 la sib mib dod dod |
+    do4~ do~ do~ do~ do8 r |
+    sib16 sib sib sib sib sib sib sib |
+    sib sib sib sib sib sib sib sib |
+    do8 r R4 sib16 sib sib sib do8 r R4 |
+    la16 la sib8 do r |
+    r \slap {mi, fa} r sold16 sold la8 |
+    la si16 si la8 si16 si la la r8 |
+    \slap {sold sold la r fad fad sol r R4 do,8 do} |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
+    R2*2
+    mi8 fa mi fa sold la r4 |
+    mi8 fa mi fa sold la r4 | R2
+    \t {mi4 fa8~} \t {fa mi fa} |
+    sold la sold la~ la4~ \t {la8 sold la} si do |
+    r16 si8.~ si8 r |
+    \t {do4 red mi} \t {si do red} |
+    mi4. r8 fad, sol la sib do dod r4 |
+    fad,8 sol lad si re |
+    lad'2~ lad4 si fad sol lad si |
+    lad2~ lad4 r8 si fad sol lad si |
+    lad2~ lad4 \t {r8 si lad} |
+    dod4. re8 lad si~ \t {si dod re} |
+    mi4 r16 fa8. r8 mi r r16 fa | r8 mi r16 fa r8 |
+    mi fa dod re mi fa r mi |
+    r16 fa r8 mi r sold16 sold |
+
+    %%% Quatuor %%%
+    la8 r r4 |
+    r8 fad, do la r r4 |
+    r8 fad' do la r r4 |
+    r8 fa'! do sold r16 dod, re'8 |
+    sib'2 r4\fermata
   }
 }

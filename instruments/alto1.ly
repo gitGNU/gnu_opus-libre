@@ -1061,5 +1061,56 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     sold16 sold la do, sold' sold |
     la do, sold' sold la do, |
     sold' sold la8 r |
+    r sold sold la r4 |
+    la16 la sib8 sold16 sold |
+    la8 r4 |
+    <re,, sol>4.~<re sol>4 r8 |
+    sold'16 sold la8 r |
+    r sold sold la r4 |
+    <sib, re>4.~<sib re>4 r8 |
+    sold'16 sold la8 r |
+    r sold sold la8 r4 |
+    sold16 sold la8 r |
+    <lad, sold'>4.~<lad sold'>4 r8 |
+    r4 sold'16 sold la8 r4 |
+    sold16 sold la8 r |
+    \pizz <re,, sib'>4 <re sib'> <re sib'>8
+    \arco sold'16 sold <re la'>8 sol16 sol <sib, lab'>8 r |
+    \pizz <re, sib'>4 <re sib'> <mi do'>8
+    \arco sold'16 sold la8 fad16 fad sib8 r |
+    r sold16 sold la8 r |
+    \pizz <mi, do' sold'> sold' <mi, do' la'>4 |
+    sold'16 sold la8 |
+    r \pizz <mid, dod'> \arco sold' sold la r |
+    \pizz <mid, dod'> <mid dod'> r \arco sold'16 sold la8 fad16 fad sol8 r |
+    \pizz <fa, do'>4 <fa do'> R4
+    mi4 mi mi r8 |
+    mib4 mib mib R4 |
+    <fa do'>4 <fa do'> <fa do'>8 <fa do'> |
+    \arco sold'16 sold la8 r r sold sold la r4 |
+    r8 sold sold la r4 |
+    sold16 sold la8 r |
+    r sold16 sold la8 |
+    sib r4 | r8 sold16 sold la8 |
+    sib r4 | r8 lad16 lad si8 |
+    do r4 | r8 la la sib r4 |
+    do,4~do~do~do8 r |
+    \pizz sib16 mib, r mib |
+    sib' mib, r mib |
+    sib' mib, r mib |
+    re re' r re re, re' r re |
+    dod,8 r | R4
+    re16 re' r re dod,8 r R4 |
+    re16 re' r re dod,8
+    \arco sold''16 sold la8 r |
+    \pizz <mi, do'>8 \arco sold'16 sold la8 r |
+    <do,, sol' re'>4~<sol' re'>~<sol re'>8 r |
+    r \pizz <sol la> r <sol la> r <sol la> |
+    r <sol re'> r <sol re'> r <sol re'> |
+    R2.-\fermataMarkup R2.*2
+    r8 la16 la sib8 sol16 sol sold8 r | R2.
+    r8 la16 la sib8 sol16 sol sold8 r | R2.
+
+    %%% Interlude %%%
   }
 }

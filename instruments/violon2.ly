@@ -976,5 +976,78 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     si4.~ si~ si~ si4 r8 | R4.*3
     si4.~ si~ si~ si4 r8 | R4.*3
     sold16 sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    <la re>4.~<la re>4 r8
+    sold16 sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    re' re re re re re |
+    re re re re re re |
+    sold, sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    sold' sold sold sold lad lad |
+    si dod, dod dod dod dod |
+    dod8 r16 do si la |
+    sold sold sold sold sold sold |
+    sold sold sold sold sold sold |
+    re'\leftpizz \pizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz <sib re> r <sib re> |
+    re\leftpizz  <sib re> r \arco re( |
+    mi8) r16 \pizz mi |
+    do mi r mi do mi r do |
+    mi r \arco do do do do do do |
+    do8 r16 \pizz mi do mi r \arco do |
+    dod dod dod dod dod mid dod dod |
+    mid dod r dod dod dod dod dod |
+    mid dod r dod dod dod dod dod |
+    mid dod r dod mi mi mi mi |
+    sol, sol sol sol mi' mi mi mi |
+    R4
+    re16 re lab lab sol' sol re re |
+    lab lab re re r8 |
+    reb16 lab sol' reb lab sol' reb lab |
+    sol' reb lab reb R4
+    do16 sol' do, sol' |
+    do, sol' do, sol' |
+    do, sol' do, do |
+    <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> |
+    <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> |
+    la la la la la la |
+    <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> <sold mi'> |
+    la la la la la la |
+    la la la la la la |
+    mi' mi mi mi mi mi |
+    <la, fa'> la la la la la |
+    mib' mib mib mib mib mi |
+    <la, fa'> la la la la la |
+    mib' mib mib mib mib mib |
+    sol sol sol sol sol sol |
+    mib mib mib mib mib mib |
+    <do fa> <do fa> <do fa> <do fa> sold' sold |
+    sol do, re' sol, do, re' sol, do, |
+    re' sol, do, re' sol, re' sol, re' |
+    sol, sol la do, sib' sib si fa |
+    do' do dod mib, |
+    sib'8 \pizz <re, sib'> r \arco sib'16 sib |
+    do8 r R4 re,8\leftpizz sib'16 sib |
+    do8 r R4 re,8\leftpizz sib'16 sib |
+    do mi, mi mi mi mi mi mi |
+    mi mi mi mi sold sold la la |
+    la re, mi' la, re, mi' la, re, |
+    la' mi mi mi mi mi mi mi |
+    mi mi red red red red red red |
+    red red red red red re do sol'|
+    re do sol' re | R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }

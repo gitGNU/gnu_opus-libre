@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- mesures.ly                                        %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -1416,6 +1416,7 @@ ActeDeuxSceneTroisMesures = {
 
   \time 2/4 R2*2
       \mark \markup \init-did \ActeDeuxSceneTroisN
+      \tempo "Stesso tempo" 4 = 66
             R2*7
   \time 3/4 R2.
   \time 2/4 R2*6
@@ -1437,6 +1438,7 @@ ActeDeuxSceneTroisMesures = {
 
   \time 3/4
       \mark \markup \did \ActeDeuxSceneTroisQ
+      \tempo "L'istesso tempo, tranquillo" 4 = 58
             R2.*7
   \time 2/4 R2*2
   \time 3/4
@@ -1454,7 +1456,9 @@ ActeDeuxSceneTroisMesures = {
       \mark \markup \did \ActeDeuxSceneTroisS
             R2
   \time 3/8 R4.
-  \time 2/4 R2
+  \time 2/4
+      \tempo "Poco stringendo..."
+            R2
   \time 3/8 R4.
   \time 2/4 R2*2
   \time 3/4 R2.

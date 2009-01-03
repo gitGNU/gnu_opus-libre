@@ -864,5 +864,60 @@ ActeDeuxSceneTroisClarinetteDeux = { \ClarinetteDeux
     R4.*2 r8 mi do si la sold la si r |
     R4.*2
     la16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    r la la la r4 |
+    la4.~la4 r8 |
+    la16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    mi'4.~mi4 r8 |
+    la,16 la la la r8 |
+    r16 la la la la8 |
+    r8 la16 la la8 |
+    la16 la la la r8 |
+    red8 mi dod re si4~si r8 |
+    la16 la la la r8 |
+    r16 la la la la8 |
+    sib16 sib sib sib sib sib sib sib |
+    sib sib sib sib sib sib sib sib |
+    sib sib r sib sib sib sib sib |
+    sib sib sib sib do do do do |
+    do do do do do do r do |
+    do do do do do do do do |
+    do do do do do do do do |
+    reb reb reb reb reb reb r reb |
+    reb reb reb reb reb reb reb reb |
+    reb reb reb reb reb reb reb reb |
+    reb reb reb reb mi mi r mi |
+    mi mi r mi mi r mi mi | R4
+    sol8 sol sol sol |
+    sol sol r r sol r sol r sol | R4*4
+    la,16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    r la16 la la la |
+    la la la la r8 | r4 r16 sol' |
+    fa lab mi'8 r |
+    la, r4 r8 red,8. mi16 |
+    fa8 r4 r8 red r dod r4 |
+    sib16 sib sib sib r8 |
+    r16 sib fa' sib mib8 |
+    sol16 sol la8 sol16 sol la8 |
+    sol16 sol la la sol sol la la |
+    sol sol r la, sol sol la la |
+    sol sol la la |
+    sib sib sib sib sib sib sib sib |
+    do8 r R4 sib16 sib sib sib |
+    do8 r R4 sib16 sib sib sib |
+    do8 r R4
+    la,16 la la la | r fad si mi |
+    mi'4~mi~mi8 r |
+    mi,16 mi mi mi r4 |
+    red16 red red red r4 |
+    re16 re re re r8 re |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }

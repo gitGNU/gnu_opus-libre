@@ -925,10 +925,10 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     R1*5/4*3
     \ten lab'1*5/4~\pp lab2. r2 | R1*5/4*2
     \ten sol1*5/4~ sol2. r2 | R1*5/4*3
-    \simile sol'8 mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
-    sol mi sol mi sol mi sol mi sol mi |
+    sol'8(\p mi sol mi sol mi sol mi sol mi) |
+    sol( mi sol mi sol mi sol mi sol mi) |
+    sol( mi sol mi sol mi sol mi sol mi) |
+    \simile sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
     sol mi sol mi sol mi sol mi sol mi |
@@ -1054,5 +1054,54 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     la do, sold' sold la do, |
     sold'8 r4 | R4.
     sold16 sold la8 r |
+    r sold sold la r4 |
+    la16 la sib8 sold16 sold |
+    la8 r4 |
+    <do,, la'>4.~<do la'>4 r8 |
+    sold''16 sold la8 r |
+    r sold sold la r4 |
+    <sib, re>4.~<sib re>4 r8 |
+    sold'16 sold la8 r |
+    r sold sold la8 r4 |
+    sold16 sold la8 r |
+    dod,4.~dod4 r8 |
+    r4 sold'16 sold la8 r4 |
+    sold16 sold la8 r |
+    \pizz <re,, sib'>4 <re sib'> <re sib'>8
+    \arco sold'16 sold <re la'>8 sol16 sol <sib, lab'>8 r |
+    \pizz <re, sib'>4 <re sib'> <mi do'>8
+    \arco sold'16 sold la8 fad16 fad sib8 r |
+    r sold16 sold la8 r |
+    \pizz <mi, do' sold'> sold' <mi, do' la'>4 |
+    sold'16 sold la8 |
+    r \pizz <mid, dod'> \arco sold' sold la r |
+    \pizz <mid, dod'> <mid dod'> r \arco sold'16 sold la8 fad16 fad sol8 r |
+    \pizz <fa, do'>4 <fa do'> R4
+    mi4 mi mi r8 |
+    mib4 mib mib R4 |
+    <fa do'>4 <fa do'> <fa do'>8 <fa do'> |
+    \arco sold'16 sold la8 r r sold sold la r4 |
+    r8 sold sold la r4 |
+    sold16 sold la8 r |
+    r sold16 sold la8 |
+    sib r4 | r8 sold16 sold la8 |
+    sib r4 | r8 lad16 lad si8 |
+    do r4 | r8 la la sib r4 |
+    fa,4~fa~fa~fa8 r |
+    \pizz mib16 sib' r sib |
+    mib, sib' r sib |
+    mib, sib' r sib |
+    re, sib' r sib re, sib' r sib |
+    dod,8 r | R4
+    re16 sib' r sib dod,8 r R4 |
+    re16 sib' r sib dod,8
+    \arco sold''16 sold la8 r |
+    \pizz <mi, do'>8 \arco sold'16 sold la8 r |
+    <do,, sol' re'>4~<sol' re'>~<sol re'>8 r |
+    r \pizz <sol la> r <sol la> r <sol la> |
+    r <sol re'> r <sol re'> r <sol re'> |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }

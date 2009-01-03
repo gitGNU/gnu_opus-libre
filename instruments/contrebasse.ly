@@ -643,7 +643,7 @@ ActeDeuxSceneUnBisContrebasse = { \Contrebasse
     R1*5/4*12 r1 \t {la'8--\f\< mi-- fad--} |
     \ten <mi, red'>1*5/4~--->\! <mi red'>2. r4 \t {la'8--\< mi-- fad--} |
     <mi, red'>1*5/4--->\! fa4-- mib'2-> \t {reb8--\< sib-- do--} \t {sol-- fa-- lab--} |
-    \ten <mi mi'>1*5/4---> | r4 mi2.\upbow\< fa4~\! |
+    \ten <mi mi'>1*5/4\!---> | r4 mi2.\upbow\< fa4~\! |
     fa2 \det {sib8\f\< lab si sol fa lab | \ten <mi mi'>1*5/4~->\!} <mi mi'>2. fa2---> |
     \ten <mi mi'>1*5/4~ <mi mi'>1*5/4 \acc {sib'2\upbow\ff lab\< si4 |
     <mi, mi'>1*5/4~--\!} <mi mi'>2. r2 | R1*5/4*5
@@ -671,7 +671,7 @@ ActeDeuxSceneUnBisContrebasse = { \Contrebasse
 
     \arco mib,,4--->\ff \accdet {mib~ mib8 mib4 | fad2 r4 |
     mib4 mib~} mib8 \accdet {mib4 | do2 r4 | mib4} \det {mib8\< mib mib |
-    <la, la'>2} \acc {la'8\< la la} |
+    <la, la'>2} \acc {la'8\< la la\!} |
     \pl {la,\sfp\leftpizz \pizz do sib mib} {la8 s s4} r4 |
     fad,8 si dod mi r4 |
     sold,4 r8 sold r4 sold4 sold sold |

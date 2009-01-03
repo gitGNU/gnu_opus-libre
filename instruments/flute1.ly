@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- flute1.ly                                         %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -765,12 +765,83 @@ ActeDeuxSceneTroisFluteUn = { \FluteUn
     sold' la dod,~ dod4 r8 |
     sold' la dod,~ dod4 r8 |
     sold' la sold do,!4 r8 |
-    sold' la sold do,!4 r8 |
-    sold' la sold do,!4 r8 |
-    sold' la sold do,! r la' |
-    sold la sold do,! r la' |
-    sold la sold do,! r la' |
-    sold la sold do,! r sold' |
+    sold' la sold do,4 r8 |
+    sold' la sold do,4 r8 |
+    sold' la sold do, r la' |
+    sold la sold do, r la' |
+    sold la sold do, r la' |
+    sold la sold do, r sold' |
     la16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    la8 sib la la r4 |
+    lad16 lad si8 sold16 sold |
+    la8 lad16 lad si8 |
+    la16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    la16 la sib8 fad16 fad |
+    sol8 la16 la sib8 |
+    la16 la la la r8 |
+    r16 la la la la8 |
+    r la16 la la8 |
+    la16 la la la r8 |
+    sid16 sid dod8 lad16 lad |
+    si8 sid16 sid dod8 |
+    si16 si do8 r |
+    la16 la la la r8 |
+    r16 la la la la8 |
+    R4*2 r8 \slap { \ind #"slap" sold la sol sold} r |
+    R4*2 r8 \slap { sold la fad sib r r sold16 sold la8} r |
+    R4*2 \ordin la16 la la la |
+    r8 r16 la | la la la8 |
+    la16 la la la |
+    R4 r8 \slap { sold la fad sol} r |
+    R4*5 R4. R4*7
+    la16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    r16 la la la la8 |
+    la16 la la la r8 |
+    R4. r8 r16 dod si re |
+    sib'8 r4 | r8 sold16 sold la8 |
+    sib8 r4 | r8 lad16 lad si8 |
+    do r4 | sib,16 sib sib sib r8 |
+    r16 sib mib lab dod dod |
+    re4~ re~ re~ re8 r |
+    re,4~ re~ re8 r |
+    re16 re re re re re re re |
+    mi8 r R4 re16 re re re | mi8 r R4 |
+    dod16 dod re8 mi r |
+    r \slap {mi, fa} r |
+    dod'16 dod red8 |
+    la16 la si8 la16 la si8 | si16 si r8 |
+    \slap { sold sold la r fad fad sol r R4 re8 re } |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
+    re'2~ re4 r |
+    sold,8 la sold la si do r4 |
+    sold8 la sold la si do r4 |
+    R2 \t {sold4 la8~} \t {la sold la} |
+    si do si do~ do4~ \t {do8 si do} re mib |
+    r16 red8.~ red8 r |
+    \t {mi4 fad sol} \t {red mi fad} |
+    sol4. r8 | la,8 sib do dod red mi r4 |
+    lad,8 si re red fad |
+    dod'2~ dod4 re lad si dod re dod2~ dod4 r8 re |
+    lad si dod re dod2~ dod4 \t {r8 re dod} |
+    mi4. fa8 dod re~ \t {re mi fa} |
+    sol4 r16 lab8. r8 sol r r16 lab |
+    r8 sol r16 lab r8 |
+    sol8 lab mi fa | sol lab r sol |
+    r16 lab r8 sol r sold16 sold |
+
+    %%% Quatuor %%%
+    la8 r r4 | r8 re, sol, |
+    re r r4 | r8 re' sol, |
+    re r r4 | r8 re' sol, |
+    la, r16 re, mib'8 |
+    la'2 r4\fermata
   }
 }
