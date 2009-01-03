@@ -903,82 +903,82 @@ ActeDeuxSceneUnBisViolonUn = { \ViolonUn
 ActeDeuxSceneDeuxViolonUn = { \ViolonUn
   \relative {
     R1.*6 R1*2 R2.
-    r16 dod dod8 dod16 dod8 dod16 dod8 dod16 dod |
-    r16 <sib mi> <sib mi> <sib mi> <sib mi>8 <sib mi>16 <sib mi> r <sib mi> <sib mi> <sib mi> |
-    <la re>8 <la re>16 <la re> r16 <sib mi> <sib mi> <sib mi> <sib mi>8 <sib mi>16 <sib mi> |
-    r16 <la re> <la re> <la re> mib'8 mib16 mib mi8 mi16 mi |
-    la1.~ la1 r2 |
+    r16 dod\f dod8 dod16-> dod8 dod16 dod8-> \st {dod16 dod} |
+    r16 <sib mi> <sib mi> <sib mi> <sib mi>8-> \st {<sib mi>16 <sib mi>} r <sib mi> <sib mi> <sib mi> |
+    <la re>8-> \st {<la re>16 <la re>} r16 <sib mi> <sib mi> <sib mi> <sib mi>8-> \st {<sib mi>16 <sib mi>} |
+    r16 <la re> <la re> <la re> mib'8-> \st {mib16 mib} mi8\> mi16 mi |
+    \ten la1.~--\mf la1 r2 |
     R1. R1*2 R2.
 
-    r16 dod, dod8 dod16 dod8 dod16 dod8 dod16 dod r dod dod dod |
-    r <la re> <la re> r <la re> <la re> |
-    r mi' mi mi mi mi mi mi mi mi mi mi mi mi mi mi |
+    r16 dod,\f dod8 dod16-> dod8 dod16 dod8-> \st {dod16 dod} r dod dod dod |
+    r \st {<la re> <la re> r <la re> <la re> |
+    r mi'\pleggiero mi mi mi mi mi mi mi mi mi mi mi mi mi mi |
     r mi mi mi mi mi mi mi mi mi mi mi mi mi mi mi |
     r mid mid mid mid mid mid mid mid mid mid mid mid mid mid mid |
     sold sold sold sold sold sold sold sold sold sold sold sold red'red red red |
-    red red sold,sold dod,dod red'red lad'lad red,red sold,sold lad'lad |
-    fa'fa sib,sib fa fa fa'fa sib,sib mib,mib mib'mib fa fa |
+    \cresc red red sold, sold dod, dod red'red lad' lad red, red sold, sold lad' lad |
+    fa'\f fa sib, sib fa fa fa' fa sib, sib mib, mib mib' mib fa fa} |
 
     R2. R1. R1*2
-    r4 \t {do,,8 la do} \t {la do la} |
-    r4 \t {do8 sib do} \t {sib do sib} |
-    r4 \t {do8 la do} \t {la do la} |
-    r4 \t {si8 sold si} | \t {si sold si} \t {sold si sold} \t {do la do} |
-    \t {do la do} \t {la do la} \t {dod lab dod} |
-    \t {re sib re} mi4 r | la' mi | R4. |
+    r4 \t {do,,8\p( la do} \t {la do la)} |
+    r4 \t {do8( sib do} \t {sib do sib)} |
+    r4 \t {do8( la do} \t {la do la)} |
+    r4 \t {si8\upbow( sold si)} | \t {si( sold si} \t {sold si sold)} \t {do( la do)} |
+    \t {do( la do} \t {la do la)} \t {dod( lab dod)} |
+    \t {re\<( sib re} mi4\!) r | la'\mf\>( mi\!) | R4. |
 
-    r16 mi, mi mi mi mi mi mi mi mi mi mi mi mi mi mi |
+    r16 \st {mi,\pleggiero mi mi mi mi mi mi mi mi mi mi mi mi mi mi |
     mi mi re re mi mi re re mi mi re re mi mi re re |
     fa fa mi mi fa fa mi mi fa fa mi mi fa fa mi mi |
     fa fa mi mi fa fa mi mi fa fa mi mi fa fa mi mi |
-    si'si si si <re,si'> <re si'> <re si'> <re si'> <re si'> <re si'> <re si'> <re si'> re're re re |
+    si'\< si si si <re,si'> <re si'> <re si'> <re si'> <re si'> <re si'> <re si'> <re si'> re're re re |
+    red\fp red mi mi red red mi mi red red mi mi red red mi mi |
     red red mi mi red red mi mi red red mi mi red red mi mi |
-    red red mi mi red red mi mi red red mi mi red red mi mi |
-    red red mi mi red red mi mi sold sold lad lad sold sold lad lad |
-    <red,si'> <red si'> <red si'> <red si'> <red si'> <red si'> <red si'> <red si'>
+    red red mi mi red red mi mi sold\< sold lad lad sold sold lad lad |
+    <red,si'>\mf <red si'> <red si'> <red si'> <red si'> <red si'> <red si'> <red si'>
     <red si'> <red si'> <red si'> <red si'> <red si'> <red si'> <red si'> <red si'> |
-    si'si si si si si si si si si si si |
+    si'si si si si si si si si si si si} |
 
     R1. R1 R1.
-    la,4 sol fa mi fa8 mi fa sol | la4 mi r | R1
-    \pizz la,4 r2 r8 sol'4. r2 | fa4 r2 r8 mi4. r2 |
-    fa4 mi fa sol la r2 | R2.
-    fa4 mi fa sol la4 r2 | mi4 r r2 | R2. R1 R2. R1
-    \arco \pl {la,4\leftpizz s2 s1 s2. s1 s2. s1 s2}
+    la,4\p( sol fa mi fa8 mi fa sol | la4 mi) r | R1
+    \pizz la,4\mp r2 r8 \flaut sol'4.--\upbow\pp r2 | fa4--\upbow r2 r8 mi4.--\upbow r2 |
+    fa4\upbow( mi fa sol la) r2 | R2.
+    \simile fa4( mi fa sol la4) r2 | mi4--\upbow r r2 | R2. R1 R2. R1
+    \arco \pl {la,4\p\leftpizz s2 s1 s2. s1 s2. s1 s2}
     {la'2.~ la1~ la2.~ la1~ la2.~ la1~ la2} r4 |
 
-    fa16 mi fa sol la sold la si dod do reb mib fa mi fa sol |
-    la4 r R2. <la, la'>4 r r2 | R1 sol8 fa sib la re16 si do re fa red mi fad |
-    la4 r r8 | sold sold la r4 | la4 la,8 re mib | sold sold la r4 |
-    <re,, mib'>4 re8 re mib | <la, sold'>4 <la sold'> r8 |
-    <sold re' la'>4 r r8 | <sold' la la'>4 r re'8 |
-    re mib r4 r8 | <la,,sold'>4 <la sold'> r8 | <sold re'la'>4 r r8 |
-    sold'8 sold la r4 | r8 sold4 sold | la r r8 |
+    \ind #"détaché" fa16\f mi fa sol la sold la si dod do reb mib fa\< mi fa sol |
+    la4--->\! r R2. <la, la'>4---> r r2 | R1 sol8\mf fa sib la re16\< si do re fa red mi fad |
+    la4--->\! r r8 | \acc {sold sold la r4 | la4--} la,8\upbow\< re mib | \acc {sold\! sold la r4 |
+    <re,, mib'>4--} re8\< re mib | \dwnb {<la, sold'>4\! <la sold'> r8 |
+    <sold re' la'>4} r r8 | <sold' la la'>4---> r \st {re'8 |
+    re mib} r4 r8 | \dwnb {<la,,sold'>4 <la sold'> r8 | <sold re'la'>4} r r8 |
+    \acc {sold'8 sold la} r4 | r8 \accdet {sold4 sold | la} r r8 |
 
-    R1*2 dod,4 r r2 |
-    r4 \pizz dod' lad r r sib sol r |
-    r2 \arco sol2 |
-    mi1:32~ mi: ~ mi2.:32 <mi do'>4:32 |
-    sold'4 r2 | r8 \pizz re r4 | R1
-    r4 \arco sol,,2.~ sol4 r2 | R2.*3
-    r4 \pizz mi'' r r fad r R2. |
+    R1*2 dod,4->\sffz r r2 |
+    r4 \pizz dod'\mp lad r r sib sol r |
+    r2 \arco sol2\upbow\< |
+    mi1:32~\fp mi: ~ mi2.:32\< <mi do'>4:32 |
+    sold'4\sfz r2 | r8 \pizz re\mp r4 | R1
+    r4 \arco \ten sol,,2.~ sol4 r2 | R2.*3
+    r4 \pizz mi''\mp r r fad r R2. |
 
-    la4 r R2 | R2.*2 R2*2
-    \arco red4 dod si lad si8 lad sib16 la sib do |
-    re8 r r16 re,,\leftpizz \pizz sib re |
+    la4-- r R2 | R2.*2 R2*2
+    \arco red4\mf( dod si lad) si8( lad) sib16( la sib do) |
+    re8-.-> r r16 re,,\mp\leftpizz \pizz sib re |
     r re\leftpizz sib re r re\leftpizz sib re |
     r re\leftpizz sib re r re\leftpizz sib re |
-    r re\leftpizz sib re r8 r16 \arco re |
-    mi mi do mi r red si red r re sib re r dod la dod |
+    r re\leftpizz sib re r8 r16 \arco re( |
+    mi) \st {mi\pleggiero do mi r red si red r re sib re r dod la dod |
     r do lab do r8 sol16 si | r8 sib16 sib r8 la16 la |
-    R2 r8 sold'16 sold la8 r | R2
-    re,16\leftpizz \pizz re sib re re\leftpizz re sib re |
-    re\leftpizz re sib re mi8 \arco sold16 sold |
-    la8 fad16 fad sol8 r | R2*2
-    \pizz re4 r dod r mib r | R2
+    R2 r8 sold'16\pp sold la8} r | R2
+    re,16\pleggiero\leftpizz \pizz re sib re re\leftpizz re sib re |
+    re\leftpizz re sib re mi8 \arco sold16-.\mf sold-. |
+    la8-- fad16-. fad-. sol8-- r | R2*2
+    \pizz re4\mp r dod r mib r | R2
 
-    R2.*2 la'2.~\CaV la~\CaV la2\CaV r4 |
-    la,2.~ la2 r4 |
+    R2.*2 la'2.~\pp\CaV la~\CaV la2\CaV r4 |
+    \ten la,2.~\ppp la2 r4 |
     R2.*9
   }
 }
