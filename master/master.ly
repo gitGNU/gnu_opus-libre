@@ -112,7 +112,7 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %
+} %}
 \score {
   \ActeDeuxSceneTrois
   \header {
