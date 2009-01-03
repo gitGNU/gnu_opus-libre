@@ -758,9 +758,56 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     %%% Larghetto %%%
     R4.*9
     re,,4.~ re~ re4 r8 | R4.
-    fad4.~ fad~ fa8 r4 |
+    fad4.~ fad~ fad8 r4 |
     fa4.~ fa~ fa~ fa4 r8 | R4.*3
     la4.~ la4 r8 | R4.*2
     fa4.~ fa8 r4 | la4 r8 |
+    \pizz dod,4 r8 |
+    re4 r8 | dod4 r8 |
+    re4 r8 | fad4 r8 |
+    \arco fa4.~fa4 r8 |
+    \pizz dod4 r8 | re4 r8 |
+    dod4 r8 |
+    \arco do4.~do4 r8 |
+    \pizz dod4 r8 sol4 r8 |
+    dod4 r8 | sol fa lab |
+    \pl {mi4_\leftpizz s8 s4} {\arco mi'4.~mi4 } r8 |
+    \pizz mi re fa |
+    dod4 r8 | dod dod dod |
+    <re sib'>4\arpeggUp | <re sib'>\arpeggUp |
+    <re sib'>\arpeggUp | <re sib'>\arpeggUp |
+    <re sib'>\arpeggUp | <re sib'>\arpeggUp |
+    <re sib'>\arpeggUp |
+    <dod sold'>\arpeggUp | <dod sold'>\arpeggUp |
+    <dod sold'>\arpeggUp | <dod sold'>\arpeggUp |
+    dod <dod sold'>\arpeggUp |
+    <dod sold'>\arpeggUp |
+    si r8 si | R4
+    <si sold'>\arpeggUp | <si sold'>\arpeggUp |
+    <si sold'>\arpeggUp | <si sold'>\arpeggUp |
+    <sib fa'>\arpeggUp <sib fa'>\arpeggUp <sib fa'>\arpeggUp | R4
+    <sib mi>\plak <sib mi> | <sib mi> r8 |
+    sib4 sib sib R4*4
+    sold4 r8 | re'4 r8 |
+    sold,4 r8 | re'4 r8 |
+    sold,4 r8 | sold'4 r8 |
+    sol4 sib,8 |
+    fad4 r8 | do'4 fa,8 |
+    fad4 r8 | do'4 fa8 |
+    fad4 fad8 fa4 fad8 |
+    mi4 sol8 |
+    \arco mib4~mib~mib~mib8 r | R4*3
+    <re sib'>4\arpeggUp <re sib'>\arpeggUp |
+    dod8 r | R4
+    re4 dod8 r | R4
+    re4 dod8 sold' dod, sold' |
+    dod, sold' dod, sold' |
+    do, sol' do, sol' |
+    do, sol' do, sol' |
+    do, sol' do, si |
+    r si r si r si |
+    R2.-\fermataMarkup R2.*6
+
+    %%% Interlude %%%
   }
 }

@@ -1063,5 +1063,74 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
     r8 sold16 sold la8 fad16 fad sol8 r | R2.
 
     %%% Interlude %%%
+    r8 sold16 sold la8 r |
+    sol16 sol sold8 r fa |
+    <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
+    <sold si>16 <sold si> <la do>8 <sold si>16 <sold si> <la do>8 |
+    <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
+    <sold si>16 <sold si> <la do>8 <mid sold>16 <mid sold> <fad la>8 |
+    <sold si>16 <sold si> <la do>8 <si re>16 <si re> <do mib>8 |
+    <mi,sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
+    <sold si>16 <sold si> <la do>8 <sold si>16 <sold si> <la do>8 |
+    <mid sold>16 <mid sold> <fad la>8 <sold si>16 <sold si> <la do>8
+    <si re>16 <si re> <do mib>8 |
+    r16 mi, red mi r mi red mi |
+    r sol fad sol r sol fad sol |
+    r mi red mi r red mi8 |
+    fad16 sol8 la16 sib8 red,16 mi |
+    r mi red mi r mi red mi |
+    r sol fad sol r sol fad sol |
+    r8 fad16 fad sol sol sib si re mib |
+    lad lad si si, lad' lad si si, |
+    dod' dod re re, dod' dod re re, |
+    lad' lad si si, lad' lad si si, |
+    dod' dod re re, dod' dod re re, |
+    lad' lad si si, lad' lad si si, |
+    dod' dod re re, dod' dod re re, |
+    lad' lad si si, dod' dod re re, |
+    mi' mi fa fa, mi' mi fa fa, |
+    dod' dod re re, dod' dod re re, |
+    mi' mi fa fa, mi' fa fa, dod' |
+    re re, mi' fa fa, sol' lab lab, |
+    sol' sol lab lab, sol' sol lab lab, |
+    mi' mi fa fa, lad lad si si, |
+    dod' dod re re, mi' mi fa fa, |
+    sol' lab lab, sol' sol lab lab, mi' |
+    mi fa fa, mi' fa fa, dod' re |
+    fa sol' sol lab lab, sol' lab lab sold' sold |
+
+    %%% Quatuor %%%
+    la8 \pizz sold,, la fad | sib4 r8 |
+    r sold la fa si4 r8 |
+    r sold la re\leftpizz |
+    \arco \ind #"jeté" <sol dod>32 <sol dod>16. r16 <sol dod>32 <sol dod> r8 |
+    <sol dod>32 <sol dod>16. <sol dod>32 <sol dod>16. r8 |
+    fa''2 r4\fermata
+    r8 sold,,16 sold la8 r r4 | R2.*2
+    r2 r8 sold16 sold la8 \pizz fad r \arco mi16 mi fa8 \pizz red |
+    r re do4 sib |
+    r4 \arco \ind #"(flautando)" la'~\CaV la2~\CaV la4 r2 |
+
+    %%% Air baryton 1 %%%
+    la2~la\glissando mi r4 |
+    la2~la\glissando mi r4 |
+    <mi! mib'>2~<mi mib'>~<mi mib'>4 re mib |
+    mi2~mi4 r |
+    lab, sib r8 <mi sold>16 <mi sold> |
+    <fa la>8 <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> |
+    <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
+    sib16 sib, la' la sib sib, la' la |
+    sib sib, la' la sib sib |
+    si si, lad' lad si si, lad' lad |
+    si si, fad' fad sol si, lad' lad |
+    si si, si' si do8 <si re>16 <si re> <sid red>8 red16 red |
+    mi mi re re mi mi re re mi mi re re mi mi re re |
+    mi mi re re mi mi re re mi mi re re |
+    mi mi re re mi mi re re mib mib reb reb mib mib do do |
+    do do reb reb do do reb reb mi, mi fa fa |
+    do do reb reb sold, sold la la |
+
+    %%% Doppio tempo %%%
+    re8 r r4
   }
 }

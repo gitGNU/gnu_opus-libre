@@ -1067,19 +1067,19 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     dod,4.~dod4 r8 |
     r4 sold'16 sold la8 r4 |
     sold16 sold la8 r |
-    \pizz <re,, sib'>4 <re sib'> <re sib'>8
+    \pizz <re,, sib'>4\arpeggUp <re sib'>\arpeggUp <re sib'>8\arpeggUp
     \arco sold'16 sold <re la'>8 sol16 sol <sib, lab'>8 r |
-    \pizz <re, sib'>4 <re sib'> <mi do'>8
+    \pizz <re, sib'>4\arpeggUp <re sib'>\arpeggUp <mi do'>8\arpeggUp
     \arco sold'16 sold la8 fad16 fad sib8 r |
     r sold16 sold la8 r |
-    \pizz <mi, do' sold'> sold' <mi, do' la'>4 |
+    \pizz <mi, do' sold'>\arpeggUp sold' <mi, do' la'>4\arpeggUp |
     sold'16 sold la8 |
-    r \pizz <mid, dod'> \arco sold' sold la r |
-    \pizz <mid, dod'> <mid dod'> r \arco sold'16 sold la8 fad16 fad sol8 r |
-    \pizz <fa, do'>4 <fa do'> R4
+    r \pizz <mid, dod'>\arpeggUp \arco sold' sold la r |
+    \pizz <mid, dod'>\arpeggUp <mid dod'>\arpeggUp r \arco sold'16 sold la8 fad16 fad sol8 r |
+    \pizz <fa, do'>4\arpeggUp <fa do'>\arpeggUp R4
     mi4 mi mi r8 |
     mib4 mib mib R4 |
-    <fa do'>4 <fa do'> <fa do'>8 <fa do'> |
+    <fa do'>4\arpeggUp <fa do'>\arpeggUp <fa do'>8 <fa do'> |
     \arco sold'16 sold la8 r r sold sold la r4 |
     r8 sold sold la r4 |
     sold16 sold la8 r |
@@ -1103,5 +1103,67 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
+    r8 la16 la sib8 r |
+    do16 do dod8 r red16 red |
+    fa,2~fa~fa4 r16 si do si |
+    r si do si r do si8 |
+    do16 si r do si8 do16 si |
+    r si do si si si do si |
+    si si do si si si do si |
+    r mib re8 fad16 fa8 la16 sold8 do16 si \clef treble |
+    si si do do, si' si do do, |
+    red' red mi mi, red' red mi mi, |
+    si' si do do, red' red mi mi, |
+    red' red mi mi, do' do dod dod, |
+    do' do dod dod, la' la sib sib, |
+    do' do dod dod, si' si do do, |
+    red' red mi fad, sol red' red mi fad, sol |
+    fad fad sol sol, fad' fad sol sol, |
+    lad' lad si si, lad' lad si si, |
+    fad' fad sol sol, fad' fad sol sol, |
+    lad' lad si si, lad' lad si si, |
+    fad' fad sol sol, fad' fad sol sol, |
+    lad' lad si si, lad' lad si si, |
+    fad' fad sol sol, lad' lad si si, |
+    dod' dod re re, dod' dod re re, |
+    lad' lad si si, lad' lad si si, |
+    dod' dod re re, dod' dod re re, |
+    lad' lad si si, dod' dod re re, |
+    mi' mi fa fa, mi' mi fa fa, |
+    dod' dod re re, fad fad sol sol, |
+    lad' lad si si, dod' dod re re, |
+    mi' mi fa fa, mi' mi fa fa, |
+    dod' dod re re, dod' dod re re, |
+    mi' mi fa fa, mi' mi fa fa, la' la |
+
+    %%% Quatuor %%%
+    la8 \clef alto \pizz la,, sold sib |
+    fad4 r8 | r la sold si fa4 r8 |
+    r fad sol sol\leftpizz |
+    \arco \ind #"jeté" <mib re'>32 <mib re'>16. r16 <mib re'>32 <mib re'> r8 |
+    <mib re'>32 <mib re'>16. <mib re'>32 <mib re'>16. r8 |
+    re2 r4\fermata
+    r8 \pizz la' sold4 r | R2.*5 R2*2 R2.
+
+    %%% Air baryton 1 %%%
+    <do,sib'>2~<do sib'>~do r4 |
+    <do sib'>2~<do sib'>~do r4 |
+    \t {re'8 mi re} \t {mi re mi} |
+    \t {re mi re} \t {mi re mi} |
+    re2 r4 |
+    re16 mi re sib lab sib re mi re sib lab sib re mi re sib |
+    lab sib re mi sib re mi lab re, mi lab lab |
+    la4 r16 dod,,8 sol'16  | dod,4 r8 |
+    r sol' r16 dod, r8 | mi4 r8 |
+    do! re la' sol | do4 r |
+    re,8 la' sol do r4 \clef treble |
+    sold''16 sold la8 r4 \clef alto |
+    r8 sol,, r16 dod,8. | sol'2 r4 \clef treble |
+    sold''16 sold la la sold sold la la sold sold la la sold sold la la \clef alto |
+    sol, sol sol sol re re si si si si si si |
+    fa fa mi mi mi mi fa fa |
+
+    %%% Doppio tempo %%%
+    re2:16 re: re: re: re: re: re4 r |
   }
 }
