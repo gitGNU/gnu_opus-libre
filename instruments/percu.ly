@@ -466,7 +466,7 @@ ActeUnSceneUnPercus = <<
       r2 r4 r8 re16\< re |
       re4->\! r re\mp re \t {re\<( re re} re4->\!) r r2 | R1
       re4 r re re \t {re\<( re re} re4\!) r r2 | R1*2
-      re4 r re re \t {re\<( re re} re4\!) r r2 | re1:16\fpp\<\glissando |
+      re4 r re re \t {re\<( re re} re4\!) r r2 | re1:16\fpp \glissando \<|
       mib4->\mf r mib\pp mib \t {mib-- mib mib} |
       mib4-- r mib mib \t {mib-- mib mib} |
       mib4-- r mib mib \t {mib-- mib mib} |
@@ -1569,7 +1569,7 @@ ActeDeuxSceneDeuxPercus = <<
       r2 r4 \pl {la\pp fa'\laissezVibrer} {do\glissando do'\laissezVibrer}
       \ind #"senza Ped." r2 |
       do4 r \pl {la,\> fa'\!\laissezVibrer} {do\glissando do'\laissezVibrer} r2 |
-      \det {re,4 do' | r si r | mi,,,\laissezVibrer mi'\laissezVibrer mi'}\laissezVibrer |
+      \det {re,4 do' | r si r | mi,,,\laissezVibrer mi'\laissezVibrer mi'\laissezVibrer} |
       r2 r8 \hideNote sol8\glissando do4*1/2 \hideNote mi,8\glissando la4 | R4.
       R1*5 R2*6 R1 R2. R1. R1 R1.*2 R2. R1
 

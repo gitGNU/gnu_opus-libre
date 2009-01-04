@@ -992,7 +992,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     <re la' mib'>4} r r8 |
     <la'sold'la>4---> r \st {mib'8 | mib re} r4 r8 |
     \dwnb {<mib,re'>4 <mib re'> r8 | <re la' mib'>4} r r8 |
-    \acc {la'8 la sold} r4 | r8 \accddet {mi'4 mi | sold,} r r8 |
+    \acc {la'8 la sold} r4 | r8 \accdet {mi'4 mi | sold,} r r8 |
 
     R1*2 <do, la'>4->\sffz r r2 |
     r4 \pizz red\mf dod r | r fa mib r | R1
@@ -1165,5 +1165,55 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
 
     %%% Doppio tempo %%%
     re2:16 re: re: re: re: re: re4 r |
+    sold2.~ sold~sold2 r4 |
+    re4 la' sold8 mi | re4 mi8 re la' sold~ |
+    sold2.~ sold2 r4 |
+    r8 mi' re r r re r2 |
+    r4 <la re>~ <la re> r \clef treble sold'8 sold la4 r |
+    r2 sol8 sol sold4 r r2 sold8 sold la4 r |
+    r fa2:16 mib: la2: la4: | sol: mi: sib': sold: re: |
+
+    %%% Climax %%%
+    re4 r R4. |
+    re''16 dod si sold mi8 si \clef alto |
+    fa si, sib16 la sol mi | re8 r r4 | R4. \clef treble |
+    re'''8 si sold16 fad re si |
+    la8 re, \clef alto sib16 sol fa mi |
+    re8 r r4 | R2 \clef treble
+    re''4 r8 sib16 sib sib fa fa fa |
+    do2 r4 |
+    re''4 re,16 la sold fad re4 \clef alto sold,16 fad mi mib |
+
+    %%% Soprano 2 %%%
+    re8 r r2 | R1
+    r8 re r4 re8 re | red red r red red r dod dod |
+    re4 r8 re r re r re r re re r re re |
+    do do r do r do | r do r do do r do do |
+    dod dod r dod r dod r dod r dod r dod r dod |
+    R2. R1 R2. R1 R2. R1
+    <re sold>4 <re sold>8 <re sold> r4 |
+    sold'8 sold la4 r2 | r4 sol sol | sold4 r r2 |
+    \pizz sold,8 fad la fa' r4 r2 r4 \arco lad, |
+    si r2 \clef treble |
+    re4 la' sold8 mi re4 mi8 re la' sold r mi |
+    sold4 r r2 | <re si'>4 sold8 mi re4 |
+    <sol,\harmonic la'\harmonic> r r2 \clef alto |
+    r4 r8 mi, r mi |
+    R1 R2.
+
+    %%% Soprano 1 %%%
+    sib'8 sib r sib r sib r sib sib sib r sib r sib |
+    sib sib r sib r sib r sib do do r do r do |
+    do do r do r do r do dod dod r dod r dod |
+    r dod r dod r dod r dod |
+    R2. R1 R2. R1 R2. R1 R2.
+    sold'8 sold la4 r2 | r4 fad fad sol r r2 |
+    R2. R1 R2. R1
+    r2 mi8 mi mi, mi' mi mi sold, sol' sol |
+    lab lab, mi' mi fa fa, sold' sol la la, sold' sold la la, \clef treble |
+    mi' fa la, do' dod dod, |
+
+    %%% Duo %%%
+    mi'4 r r2 |
   }
 }

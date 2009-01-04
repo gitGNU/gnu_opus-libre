@@ -1175,6 +1175,55 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
 
     %%% Doppio tempo %%%
     re2:16 re: re: re: re: re: re4 r |
+    sold2.~ sold~sold2 r4 |
+    re4 la' sold8 mi | re4 mi8 re la' sold~ |
+    sold2.~ sold2 r4 |
+    r8 re' mi r r mi r2 |
+    r4 <si mi>~ <si mi> r \clef treble sold'8 sold la4 r |
+    r2 sol8 sol sold4 r r2 sold8 sold la4 r |
+    r sol2:16 fad: sold4: si2: | sib: reb: sib4: |
 
+    %%% Climax %%%
+    sold4 r R4. |
+    re''16 dod si sold mi8 si \clef alto |
+    fa do sib16 la sol mi | re8 r r4 | R4. \clef treble |
+    re'''8 si sold16 fad re si |
+    la8 re, \clef alto sib16 sol fa mi |
+    re8 r r4 | R2 \clef treble
+    si'''4 r8 mib,16 mib mib sib sib sib |
+    re,2 r4 |
+    re''4 re,16 la sold fad re4 \clef alto sold,16 fad mi mib |
+
+    %%% Soprano 2 %%%
+    re8 r r2 | R1
+    r8 sib' r4 sib8 sib | si si r si si r la la |
+    sib4 r8 sib r sib r sib r sib sib r sib sib |
+    mi, mi r mi r mi | r mi r mi mi r mi mi |
+    mid mid r mid r mid r mid r mid r mid r mid |
+    R2. R1 R2. R1 R2. R1
+    <sold re'>4 <sold re'>8 <sold re'> r4 |
+    sold'8 sold la4 r2 | r4 sol sol | sold4 r r2 |
+    \pizz sold,8 fad la fa' r4 r2 r4 \arco fad |
+    sol r2 \clef treble |
+    re4 la' sold8 mi re4 mi8 re la' sold r mi |
+    sold4 r r2 | <mi' re'>4 sold8 mi re4 |
+    <sold mi'> r r2 \clef alto |
+    r4 r8 sol,, r sol |
+    R1 R2.
+
+    %%% Soprano 1 %%%
+    re'8 re r re r re r re re re r re r re |
+    re re r re r re r re mi mi r mi r mi |
+    mi mi r mi r mi r mi mid mid r mid r mid |
+    r mid r mid r mid r mid |
+    R2. R1 R2. R1 R2. R1 R2.
+    sold8 sold la4 r2 | r4 fad fad sol r r2 |
+    R2. R1 R2. R1
+    r2 sol8 sol sold sold, sol' sol sol sold, si' si \clef treble |
+    do do, sold' sold la la, sid' sid dod dod, sid' sid dod dod, |
+    sold' la mi mi' fa fa, |
+
+    %%% Duo %%%
+    sold'4 r r2 |
   }
 }
