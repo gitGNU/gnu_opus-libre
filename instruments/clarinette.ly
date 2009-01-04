@@ -732,55 +732,55 @@ ActeDeuxSceneUnBisClarinetteUn = { \ClarinetteUn
 
 ActeDeuxSceneDeuxClarinetteUn = { \ClarinetteUn
   \relative {
-    R1.*6 la'4 mi r2 | R1 R2.
-    reb4 reb8 reb r4 | mi?8 mi r4 r8 mi |
-    r16 re re re r8 mi r4 | R2. la1.~ la4 sol fa mi fa8 mi fa sol |
-    la4 mi r1 | fa4 la, r2 | R1 R2.
-    reb4 reb8 reb r mi fa4 | reb4 r8 |
-    mi1~ mi2. r4 | fa1~ fa4 r r mib'8 mib |
-    sib'2 r8 sib16 sib dob8 r | sib2. r4 |
+    R1.*6 la'4\p( mi) r2 | R1 R2.
+    reb4--\mf \stdet {reb8 reb r4 | mi?8 mi r4 r8 mi} |
+    r16 \st {re re re} r8 mi---. r4 | R2. la1.~--\mp la4( sol fa mi fa8 mi fa sol |
+    la4 mi) r1 | fa4( la,) r2 | R1 R2.
+    reb4--\mf \stdet {reb8 reb} r mi( fa4) | reb4-- r8 |
+    mi1~\p mi2. r4 | fa1~ fa4 r r \det {mib'8\mf mib |
+    sib'2} r8 \st {sib16 sib dob8} r | sib2.--\mp r4 |
 
-    R2. R1. do,,2. r4 | la2. r4 |
-    la'4 sol fa mi fa8 mi fa sol |
-    la4 mi r R2
-    la4 sol fa mi fa8 mi fa sol |
-    la4 mi r8 sib'~ sib mi, r4 |
-    R4. mi4 r r mi8 mi mi4 r r mi8 mi |
-    mi4 r r mi8 mi | mi4 r r fa8 fa | sol4 r r la16 la la8 |
-    lab4 r r sib16 sib la!8 |
-    lab4 r r sib16 sib la!8 |
-    lab4 r r sib16 sib lab8 | lab1~ lab2 r4 |
+    R2. R1. do,,2.--\p r4 | la2.-- r4 |
+    la'4\mp( sol fa) mi-- fa8( mi fa sol) |
+    la4( mi) r R2
+    la4( sol) fa( mi) fa8( mi fa sol) |
+    la4( mi) r8 sib'~\>( sib mi,\!) r4 |
+    R4. mi4-.->\ff r r \stdet {mi8\f mi mi4 r r mi8 mi} |
+    mi4-- r r \stdet {mi8 mi | mi4 r r fa8 fa} | sol4 r r \st {la16\mf la la8 |
+    lab4-> r r sib16 sib la!8 |
+    lab4-> r r sib16 sib la!8 |
+    lab4-> r r sib16\< sib lab8} | \ten lab1~--\f lab2 r4 |
     R1. R1 R1.
-    la!4 sol fa mi fa8 mi fa sol la2 r4 |
-    fa4 do r2 |
+    la!4\mp( sol) fa( mi) fa8( mi fa sol) la2-- r4 |
+    fa4\p( do) r2 |
 
-    R2. R1 R2. R1 R2. R1 mib4 reb dob |
-    sib1~ sib2.~ sib1~ sib4 r2 | R1 R2. R1
-    R2. R1 R2. R1 R2. R1 r2 r8 r16 \t {mi'32 fa sol} |
-    la8 r r4 | r r8 \t {mi16 fa sol} | la8 r r4 |
-    r2 r8 \t {mi16 fa sol} | la8 r r4 r2 | R1*2
+    R2. R1 R2. R1 R2. R1 mib4\pp( reb dob |
+    sib1~) sib2.~ sib1~ sib4 r2 | R1 R2. R1
+    R2. R1 R2. R1 R2. R1 r2 r8 r16 \t {mi'32\<( fa sol} |
+    la8\f) r r4 | r r8 \t {mi16( fa sol} | la8-.) r r4 |
+    r2 r8 \t {mi16( fa sol} | la8-.) r r4 r2 | R1*2
 
-    sold8 sold la r4 | la4 r8 sold sold |
-    la la,, la sold r | la'' sold,, sold la r |
-    sold' sold la r4 | re,4 r r8 | R2*5/4
-    sold'8 sold la r4 | r sold,,8 sold la |
+    \st {sold8 sold la} r4 | la4-- r8 \st {sold sold |
+    la la,,-> la sold r | la'' sold,,-> sold la r |
+    sold' sold la} r4 | re,4---> r r8 | R2*5/4
+    \st {sold'8 sold la} r4 | r sold,,8 sold la |
     re4 r r8 | R2*5/4*4 R1*2
-    reb,4 r r2 | R1*6
-    si''4 r2 | R2 r2 r4 solb16 la8 solb16 reb'1 |
-    R2.*2 do,2.~ do2 r4 | R2.*3
+    reb,4->\sffz r r2 | R1*6
+    si''4-.->\sfz r2 | R2 r2 r4 solb16\mp( la8) solb16( reb'1) |
+    R2.*2 \ten do,2.~\p do2 r4 | R2.*3
 
-    R2*2 R2. la''4 sol fa | mi2~ mi4 r |
-    la mi~ mi fa | sol4 r |
-    sib,,16 sib sib sib sib sib sib sib |
+    R2*2 R2. la''4\mp( sol fa | mi2~) mi4 r |
+    la( mi~) mi fa-- | sol4-- r |
+    sib,,16\pleggiero sib sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib |
     sib sib sib sib sib sib r sib |
     sib sib sib sib sib sib sib sib |
-    lab8 r r4 | R2*4
-    r4 mi8 r | R2
-    sib'16 sib sib sib sib sib sib sib |
+    lab8-.-> r r4 | R2*4
+    r4 mi8->\pp r | R2
+    sib'16\pleggiero sib sib sib sib sib sib sib |
     sib sib sib sib mi mi mi mi | re8 r r4 | R2*6
 
-    la'2.~ la~ la~ la~ la2 r4 | R2.*11
+    la'2.~\pp la~ la~ la~ la2 r4 | R2.*11
   }
 }
 
