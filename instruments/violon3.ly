@@ -890,12 +890,12 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     r si si si si si si si si si si si si si si si |
     si si si si si si si si si si dod dod dod dod dod dod |
     \cresc dod dod red'red sold,sold mid'mid sold,sold lad'lad red,red mid mid |
-    mib mib fa'fa sib,sib mib,mib mib'mib sib sib fa fa mib mib} |
+    mib\f mib fa'fa sib,sib mib,mib mib'mib sib sib fa fa mib mib} |
 
     R2. R1. R1*2
     r4 \det {la,,2\p r4 sib2 r4 la2 r4 si |
     <sold re'>2 do4 <la mi'>2 lab4} |
-    sol4~ sol16( mi' sib' re do8) r |
+    sol4~( sol16 mi' sib' re do8) r |
     la4\mf\>( mi\!) | R4. |
 
     r16 \st {la,\pleggiero si si la la si si la la si si la la si si |

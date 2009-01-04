@@ -965,8 +965,8 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     \pizz do,\mp do' R4.
     r8 \arco <re mi>--\f \det {<re mi> <re mi>} r4 \st {sold,16\mf sold la8} |
     r \det {<re mi>\f <re mi> <re mi>} r4 \st {re,16\mf re mi8} |
-    r \det {<la re?>\mf <la re> <sol fa'>} r4 \det {sol16\f sol} la8 \clef treble |
-    r \st {<sib la'> <sib la'> <do si'>} r4 \det {si16 si do8} |
+    r \det {<la re?>\f <la re> <sol fa'>} r4 \det {sol16\mf sol} la8 \clef treble |
+    r \det {<sib la'>\f <sib la'> <do si'>} r4 \st {si16 si do8} |
     r \det {<mi mi'> <mi mi'> <re re'>} r4 \clef alto \pizz <fa, si>  |
     \arco fad8-.\pleggiero \st {fad16 fad fad8 fad16 fad |
     fad8 fad16 fad fad8 fad16 fad |

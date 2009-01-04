@@ -968,7 +968,7 @@ ActeDeuxSceneDeuxAltoUn = { \AltoUn
     r8 \arco <la sold'>--\f \det {<la sold'> <re la'>} r4 \st {sold,16\mf sold la8} |
     r \det {<la sold'>\f <la sold'> <re la'>} r4 \st {re,16\mf re mi8} \clef treble |
     r \det {<mib' lab>\f <mib lab> <do sib'>} r4 \st {sol16\mf sol la8} |
-    r <mi'red'>-- <mi red'> <fa mi'> r4 \st {si,16 si do8} |
+    r <mi'red'>--\f <mi red'> <fa mi'> r4 \st {si,16 si do8} |
     r \det {<mi mi'> <mi mi'> <fa fa'>} r4 \pizz <si, fa'> \clef alto |
     \arco dod16-.\pleggiero \st {dod dod8 dod16 dod dod8 |
     dod16 dod dod8 dod16 dod dod8 |

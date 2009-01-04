@@ -562,7 +562,7 @@ ActeDeuxSceneDeuxSaxophoneUn = { \SaxAltoUn
     la1--\p r2 | R1.*2 R1*2 R2.
     lab4--\mp \stdet {lab8 lab} r8 dob( reb4) | la?4-- r8 |
     \ten re1~\pp re2. r4 | reb1~ reb2. r4 | \ten reb1~\p reb2. r4 |
-    R2. R1. R1*2 do2.~\pp( do~ do2) r4 | R2
+    R2. R1. R1*2 do2.~\pp do~ do2 r4 | R2
     si2--( do4~) do2 r4 | re2-- r4 | R2
     la4.--\ff( mi4-.->) r r \stdet {sold'8\mf sold | la4 r r sold8 sold |
     la4 r r sold8 sold | la4 r r lad8 lad} si4 r r2 |

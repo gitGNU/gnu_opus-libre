@@ -911,7 +911,7 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     <la la'>16 <la la'> <la' la> <la la> <la la> <la la> <la, la'> <la la'> |
     la2:16 la4-- |
     mib8\mf reb \ind # "détaché" fad16 mi fa sol sib8 lab reb16 si do re |
-    fa8\< mib lab sol do4 la4:16--\! |
+    fa8\< mib lab sol do4\! la4:16-- |
     la,1:16 |
 
     <la sold'>4---> la'8\upbow\< sold la | \acc {sold\! sold la r4 |
@@ -944,10 +944,10 @@ ActeDeuxSceneDeuxVioloncelleDeux = { \VioloncelleDeux
     \st {do, r fad r | si r fa r | sib r mi, r |
     R2 r8 la16\pp la sold8} r | R2
     r8 \pizz <re' sib'>\mp r <re sib'> |
-    r <re sib'> r sold | <sib, re>4-> r |
+    r <re sib'> r sold | <sib re>4-> r |
     R2*2 re,4 r dod r mib r | R2 \clef treble
 
-    la''2.\p( sol fa mi) fa4.( mi fa sol) la4( mi) r |
+    \arco la''2.(\pdolce sol fa mi) fa4.( mi fa sol) la4( mi) r |
     R2.*9
   }
 }
@@ -1167,7 +1167,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     \arco <re re>4 <re re> <re re> |
     sold,8 re' sold, re' sold, re' |
     sib re si re sib re |
-    sold sold' re sold re sold |
+    sold, sold' re sold re sold |
     re re' re, re' re, re' |
     <re, re'> re re re re re |
     re,4 re'16 lab sol fa re4 |
@@ -1182,7 +1182,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     <dod re> <dod re> <dod re> <dod re> <dod re> <dod re> |
     <re mib> <re mib> <re mib> <re mib> <re mib> <re mib> |
     <re fad> <re fad> <re fad> <re fad> <re fad> re |
-    <sold re'> <sold re'> <sold re'> <sold re'> <sold re'>4 |
+    <sold, re'> <sold re'> <sold re'> <sold re'> <sold re'>4 |
     <re re' re> r2 |
     r8 si' mi, fad do mib | re4 r2 |
     r8 sol sib do mib fad |

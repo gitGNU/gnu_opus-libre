@@ -1636,9 +1636,9 @@ ActeDeuxSceneDeuxPercus = <<
 
       mi4->\f r r \st {mi'8\mf mi16.} mi,32 |
       mi4-> r r mi'16.\< mi32 mi8 |
-      mi,4-> r8 mi-> r mi-> mi'\< mi16. mi,32 |
+      mi,4->\! r8 mi-> r mi-> mi'\< mi16. mi,32 |
       mi4->\! r8 mi-> r mi-> mi'16.\< mi32 mi8 |
-      mi,4 r8 mi r mi mi'16\< mi mi8->\! |
+      mi,4->\! r8 mi r mi mi'16\< mi mi8->\! |
       mi,8\psubito mi'16. mi32 mi4 |
       mi,8 mi'16. mi32 mi16 mi mi8 |
       mi,8 mi'16. mi32 mi4 |

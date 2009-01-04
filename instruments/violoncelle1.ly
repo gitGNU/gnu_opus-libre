@@ -957,7 +957,7 @@ ActeDeuxSceneDeuxVioloncelleUn = { \VioloncelleUn
     r <re sib'> r sold | <sib, re>4-> r |
     R2*2 sib4 r fa r mib r | R2 \clef treble
 
-    la''2.\p( sol fa mi) fa4.( mi fa sol) la4( mi) r |
+    \arco la''2.(\pdolce sol fa mi) fa4.( mi fa sol) la4( mi) r |
     R2.*9
   }
 }
