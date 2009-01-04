@@ -920,7 +920,7 @@ ActeDeuxSceneDeuxViolonTrois = { \ViolonTrois
     \pizz la,4\mp r2 r8 \flaut sol'4.--\upbow\pp r2 | fa4--\upbow r2 r8 mi4.--\upbow r2 |
     fa4\upbow( mi fa sol la) r2 | R2.
     \simile fa4( mi fa sol la4) r2 | mi4--\upbow r r2 | R2. R1 R2. R1
-    <la, la'\leftpizz>4\mp r2 R1 R2. R1
+    <la, la'>4\mp \leftpizz r2 R1 R2. R1
     r2 \arco <fa' la>4--\upbow\p( | <mi la>--) <fa la>--( <sol la>--) <la la>-- |
     r4 <fa la>16( mi fa sol) <la la>4-- |
 
@@ -1163,7 +1163,7 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
     mi' mi fa fa, mid' mid fad fad, |
     mid' mid fad fad, mid' mid fad fad, |
     red' red fad fad, red' red fad fad, |
-    red' red fad fad, red' red mi mi, |
+    red' red fad fad, re' re mi mi, |
     sold sold si re, sold sold si si, |
     re re fad dod re re fad do si si sold sold |
 

@@ -1189,8 +1189,9 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
     sold4 sold8 sold r sold |
 
     %%% Soprano 1 %%%
-    <re re'>4 r r2 | R2. R1 R2. R1
-    mid8 mid r2 mid8 mid r4 r2 |
+    <re re'>4 r \pizz lab' mib' | re8 sib lab4 r | R1
+    r4 do8 sib fa'4 | R1
+    \arco mid,8 mid r2 mid8 mid r4 r2 |
     sol8\CaV sol\CaV r sol\CaV sol4\CaV |
     sol8\CaV sol\CaV sol4\CaV sol8\CaV sol\CaV r sol\CaV |
     r sol\CaV r sol\CaV sol4\CaV |
@@ -1204,10 +1205,11 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
     sol8\CaV sol\CaV sol\CaV r r2 |
     r4 r8 sol\CaV r4 | R1
     \ordin sol8 sol sold4 sol8 sol |
-    sold4 r r2 | R2. R1 R2.
+    sold4 r \pizz la re |
+    sold, r fad fa mib re r la'\leftpizz r2 |
 
     %%% Duo %%%
-    sold'8 sold la la, sold' sold la la, |
+    \arco sold'8 sold la la, sold' sold la la, |
     sold' sold la la, sold' sold la la, |
     sold' sold la la, sold' sold la la, |
     sold' sold la la, sold' sold la la, |

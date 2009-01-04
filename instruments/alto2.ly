@@ -1196,7 +1196,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     \pizz sold,8 fad la fa' r4 r2 r4 \arco lad, |
     si r2 \clef treble |
     re4 la' sold8 mi re4 mi8 re la' sold r mi |
-    sold4 r r2 | <re si'>4 sold8 mi re4 |
+    sold4 r r2 | <re' si'>4 sold8 mi re4 |
     <sol,\harmonic la'\harmonic> r r2 \clef alto |
     r4 r8 mi, r mi |
     R1 R2.
@@ -1214,6 +1214,33 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     mi' fa la, do' dod dod, |
 
     %%% Duo %%%
-    mi'4 r r2 |
+    mi'4 r r2 \clef alto |
+    sold,8 la sold mi re mi sold4~ |
+    sold1~ sold2. r4 |
+    fad8 sold fad re dod re fad4~ |
+    fad2 dod~ dod4 r |
+    la la sold2 |
+
+    %%% Baryton 2 %%%
+    re8 \t {si16 do dod} re8 \t {sold,16 si dod} re8 fad,32 sold si dod |
+    re4 re re |
+    mib8 \t {do16 dod re} mib8 \t {la,16 do re} \ttt {mib sol, la do re mib} |
+    fa4 fa r \clef treble |
+    <re' re'> <re re'> <re re'> <re re'> r2 |
+    <lab lab'>4 <lab lab'> <lab lab'> <lab lab'> r2 \clef alto |
+    re,4 \tt {re16 fad, la si do} re4 |
+    \tt {mib16 fad, lad si re} mib4 \tt {re,16 fad sol si red} |
+    mi8 r16 fa r8 mi r16 fa8 dod16 |
+    mi8 r16 dod mi fa | lab4 r2 |
+    sold8 sold la4 sol8 sol | sold4 r2 |
+    <fad, mi'>8 r16 <sol fa'> r8 <lab mi'> r16 <la fa'> r8 |
+    <sib mi> fa'16 dod do mi r8 fa16 dod r8 |
+    solb16 mib re fa mi mib solb re sol mib lab fa |
+    mi sol solb fa lab mi sol fa fad sold la si |
+    <re, re'>4 <re re'> <re re'> <re re'> r2 |
+    <re re'>4 <re re'> <re re'> <re re'> r8 <do, do'> <mib mib'> <fad fad'> |
+
+    %%% Boum %%%
+    <sol la>4 r2 R2.*2
   }
 }

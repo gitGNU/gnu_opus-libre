@@ -1224,6 +1224,33 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     sold' la mi mi' fa fa, |
 
     %%% Duo %%%
-    sold'4 r r2 |
+    sold'4 r r2 \clef alto |
+    sold,8 la sold mi re mi sold la |
+    sold mib re mib la2~ la2. r4 |
+    fad8 sold fad re dod re fad sold |
+    si sold fad re~ re2~ re4 r |
+    sold, sold la2 |
+
+    %%% Baryton 2 %%%
+    re8 \t {si16 do dod} re8 \t {sold,16 si dod} re8 fad,32 sold si dod |
+    re4 re re |
+    mib8 \t {do16 dod re} mib8 \t {la,16 do re} \ttt {mib sol, la do re mib} |
+    fa4 fa r \clef treble |
+    <re' re'> <re re'> <re re'> <re re'> r2 |
+    <re re'>4 <re re'> <re re'> <re re'> r2 \clef alto |
+    \tt {re,16 la sib do dod} re4 \ttt {re16 fa, fad la sib re} |
+    mib4 \tt {mib16 mi, sol si do} mib4 |
+    mi8 r16 fa r8 mi r16 fa8 dod16 |
+    mi8 r16 dod mi fa | lab4 r2 |
+    sold8 sold la4 sol8 sol | sold4 r2 |
+    <fad, mi'>8 r16 <sol fa'> r8 <lab mi'> r16 <la fa'> r8 |
+    <sib mi> fa'16 dod do mi r8 fa16 dod r8 |
+    solb16 mib re fa mi mib solb re sol mib lab fa |
+    mi sol solb fa lab mi sol fa fad sold la si |
+    <re, re'>4 <re re'> <re re'> <re re'> r2 |
+    <re re'>4 <re re'> <re re'> <re re'> r8 <do, do'> <mib mib'> <fad fad'> |
+
+    %%% Boum %%%
+    <sol la>4 r2 R2.*2
   }
 }

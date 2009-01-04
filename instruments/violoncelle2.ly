@@ -1037,5 +1037,157 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
+    R2*2
+    fa2~ fa~ fa4 si~ si2~ si2 |
+    fa2~ fa4. si8~ si2. |
+    fad2~ fad4 r16 do8.~ do4 r8 r16 fad~ |
+    fad2 r16 do'8.~ do4~ do4. dod8~ |
+    dod2 r8 |
+    sol16 sol sol' sol, sol sol sol' sol, |
+    sol sol sol' sol, sol sol sol' sol, |
+    sol sol sol' sol, sol sol sol' sol, |
+    sol sol sol' sol, mi mi mi' mi, |
+    mi mi mi' mi, mi mi mi' mi, |
+    mi mi sol sol sol' sol, sol sol |
+    sol mi mi mi' mi, mi mi mi' |
+    sol,8 sol'16 sol, sol8 sol'16 sol, |
+    sol8 sol'16 sol, sol8 sib16 sib |
+    sib8 sib16 sib sib8 sib16 sib |
+    sib8 sib16 sib sol8 sol'16 sol, |
+    sol8 sol'16 sib, r sib sib8 |
+    sib16 sol sol8 r16 sol sib sib |
+    sol'8. sib,16~ sib dod8. |
+    mi,8 mi16 mi mi8 mi16 mi |
+    dod'8 dod16 dod mi,8 mi16 mi |
+    r mi mi sib' dod8 dod16 mi, dod' sib |
+
+    %%% Quatuor %%%
+    sol8 la'16\leftpizz \pizz re, sol,\leftpizz re' la'\leftpizz re, |
+    sol,\leftpizz re' la'\leftpizz re, la'\leftpizz re, |
+    sol,\leftpizz re' la'\leftpizz re, sol,\leftpizz re' la'\leftpizz re, |
+    sol,\leftpizz re' la'\leftpizz re, la'\leftpizz re, |
+    mi,\thumbpizz si' re\leftpizz si mi,\thumbpizz si' re\leftpizz si |
+    mi,\thumbpizz si' re\leftpizz si re8\leftpizz  |
+    re,16 re'\leftpizz dod'8 r |
+    dod,,2 r4\fermata | R2.*6 R2*2 R2.
+
+    %%% Air baryton 1 %%%
+    <do! sol'>2~ <do sol'>~ do r4 |
+    <do sol'>2~ <do sol'>~ do r4 |
+    <do reb'>2~ <do reb'>~ <do reb'> r4 |
+    \pl {si'2 fad4 si} {sol2\CaV s4 sol\CaV} |
+    fad8 <sol si> \t {fad <sol si> fad} <sol si> fad |
+    r8 sol~ sol16 dod,8 sol'16 dod,4 r8 |
+    r sol'~ sol16 dod,8 sol'16 mi4 r8 |
+    <do do'>2~ <do do'>4 r16 sol'8 do,16~ do sol' do,8~ do4. r8 |
+    \pizz dod16 sold' mi'8 dod, <lad' red> | dod,4 r |
+    \arco <sol' sol'>2 r4 |
+    re1~ re2. r4 la'16 la sold8 |
+
+    %%% Doppio tempo %%%
+    re8 re' re re, | re re' re re, |
+    re re' re re, | re re' re re, |
+    re re' re re, | re re' re re, |
+    re sold16 sold sold8 re' |
+    sold,4 r sold16 sold sold sold |
+    sold4 r sold16 sold sold sold |
+    sold4 r sold16 sold sold sold |
+    sold4 r sold16 sold sold sold |
+    sold4 r sold16 sold sold sold |
+    sold4 r sold8 sold |
+    sold4 r sold8 sold |
+    sold4 sold8 sold |
+    r8 sold4 fad la8 |
+    fa2~ fa lab4 |
+    fa2~ fa4 lab2 |
+    fa~ fa r4 |
+    fa2~ fa r4 |
+    fa2~ fa r4 |
+    r8 fa4. | mib2 fad4 |
+
+    %%% Climax %%%
+    re4 r16 re8. |
+    re8 re' re, |
+    re'4 \clef treble re''16 dod si sold \clef bass |
+    re8 sold, fad16 fa mib do |
+    re,8 r16 re~ re4 |
+    re8 <re' re>8 re, |
+    <re' re'>4 \clef treble re''8 si |
+    sold16 fad mib do \clef bass fad,8 dod |
+    re, r r <re re'>~ <re re'> <re re'> <re re'> <re re'> |
+    sold8 r16 sold8. sold8 sold sold |
+    sold4 r8 re'4 sold,8 |
+    re2:8 re: |
+
+    %%% Soprano 2 %%%
+    re8 r \pizz la'4 sold8 red dod4 do'8 sol fa4 mi'8 si |
+    la4 r2 | la4 r r2 |
+    re,4 si'8 la fad4 red r la' sold8 red |
+    dod4 r2 | r8 sib' do sol r4 re'8 mi |
+    si4 r2 si4 r r2 |
+    R2. R1
+    fad4 si r8 fad r4 r8 si r4 fad |
+    R2. R1
+    r8 \arco re la' fad sold red |
+    \pizz dod sold' mi' la r2 |
+    sol,4 r8 re' r4 |
+    \arco sold,8 r sold r sold sold r4 |
+    fad8 r fad r fa r |
+    sold r sold r <sol re'>\CaV <sol re'>\CaV r4 |
+    fa8 r fa r mi r |
+    re' re r la' r <fad si> r <re sold> |
+    r <re sold> r sib' r <re, la'> |
+    do,\thumbpizz sib'' r <sol do> r4 \pizz do,,4 |
+    sol'8 re' r re r la' | R1 r2 sib,4 |
+    \arco sold mi' red8 lad sold4 |
+    r8 \pizz sold r4 mi |
+
+    %%% Soprano 1 %%%
+    <re sib' re>\arpeggUp r r2 |
+    re'4 r2 |
+    r4 sib fa8 lab solb4 reb lab'' reb, |
+    reb, do'8 sol r fa re4 |
+    si'4 sold r si sold' r sold, | R2. R1 R2. R1 R2. R1 R2.
+    dod,8 sold' mi' la r2 |
+    sol,4 r8 re' r4 | R1 R2. R1 R2. R1 R2.
+    r8 dod, re fa fad la r4 |
+    r8 dod, re fa fad4 |
+    r8 re mib fad sol4 r | R2.
+
+    %%% Duo %%%
+    la4 r8 lab' sib, reb r do |
+    fa, re' r mi fad la, r lab' |
+    reb, sib r do, re' fa r si, |
+    sib reb r si la fad' r do |
+    re fa r lab reb, sib r si |
+    fad la r sol fa re' r mi |
+    do la si4 mi8 si la sib mi, sol fa' do |
+
+    %%% Baryton 2 %%%
+    \arco <re re>4 <re re> <re re> |
+    sold,8 re' sold, re' sold, re' |
+    sib re si re sib re |
+    sold sold' re sold re sold |
+    re re' re, re' re, re' |
+    <re, re'> re re re re re |
+    re,4 re'16 lab sol fa re4 |
+    \tt {re'16 sib sol fa mi} re4 \ttt {re'16 sib la sol mi re}
+    dod8 <re' re> r <re re> dod,4 |
+    r8 sol' r sol sol sol |
+    r sold sold fa sold4 |
+    si8 fa4 |
+    sib8 re sib re sib re |
+    si re si re si re |
+    <do re> <do re> <do re> <do re> <do re> <do re> |
+    <dod re> <dod re> <dod re> <dod re> <dod re> <dod re> |
+    <re mib> <re mib> <re mib> <re mib> <re mib> <re mib> |
+    <re fad> <re fad> <re fad> <re fad> <re fad> re |
+    <sold re'> <sold re'> <sold re'> <sold re'> <sold re'>4 |
+    <re re' re> r2 |
+    r8 si' mi, fad do mib | re4 r2 |
+    r8 sol sib do mib fad |
+
+    %%% Boum %%%
+    <fad, lad>4 r2 R2.*2 |
   }
 }
