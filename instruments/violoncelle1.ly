@@ -972,6 +972,83 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
     mi4.~ mi4 r8 R4.*2 |
     la4.~ la8 r4 | la4 r8 |
     \pizz dod,,16 la' fa' la r8 |
-    re,,
+    re,, <si' sold'> r |
+    dod,16 la' fa' la r8 |
+    re,, <lad' fad'> r |
+    r16 dod sold'8 r \clef treble |
+    \arco lad'16 lad si mi, mi mi |
+    mi mi lad lad si8 \clef bass |
+    \pizz dod,,,16 la' fa' la r8 |
+    re,, mib' r |
+    dod,16 sold' dod mi r8 \clef treble |
+    \arco la'16 la sib mi, mi mi |
+    mi mi la la sib8 \clef bass |
+    \pizz dod,,,16 la' fa' la r8 |
+    sol, <lad fad'> r |
+    dod,16 la' fa' la r8 |
+    sol,8 mib' r |
+    \arco <fad red'>4.~<fad red'>4 r8 | R4.
+    \pizz dod,16 la' fa' la r8 |
+    r <la, fa'> r |
+    r <re, sib' re sib'>\arpeggUp |
+    r <re sib' re sib'>\arpeggUp |
+    r <re sib' re sib'>\arpeggUp |
+    r <re sib' re sib'>\arpeggUp |
+    r <re sib' re sib'>\arpeggUp |
+    r <re sib' re sib'>\arpeggUp |
+    r <re sib' re sib'>\arpeggUp |
+    r <dod sold' mi' do'!>\arpeggUp |
+    r <dod sold' mi' do'>\arpeggUp |
+    r <dod sold' mi' do'>\arpeggUp |
+    r <dod sold' mi' do'>\arpeggUp |
+    dod16 la' fa' la
+    r8 <sold, mi' do'>\arpeggUp |
+    r <sold mi' do'>\arpeggUp |
+    r16 sold mi' do' r8 r16 sold, mi' dod' r8 |
+    r \arco <sold, mid' dod'> |
+    r <sold mid' dod'> |
+    r \pizz <sold mid' dod'>\arpeggUp |
+    r <sold mid' dod'>\arpeggUp |
+    r <do fa do'>\arpeggUp |
+    r <do fa do'>\arpeggUp |
+    r <do fa do'>\arpeggUp | R4
+    r8 <sib mi la>\arpeggUp |
+    r <sib mi la>\arpeggUp |
+    r <sib mi la>\arpeggUp r |
+    la <mib' la> la, <mib' la> la, <mib' la> | R4
+    sib8 <fa' do'> sib, <fa' do'> sib,4 |
+    sold16 mi' sold mi' r8 |
+    re,, mib' r |
+    sold,16 mi' sold mi' r8 |
+    re,, mib' r |
+    sold,16 mi' sold mi' r8 |
+    r \arco sold,,16 sold la8 |
+    r \pizz sol sib |
+    fad16 si mi la r8 |
+    do,, mi' r |
+    fad,16 si mi la r8 |
+    do,, mi' r |
+    fad, mi' r |
+    fa,16 si mi sib' r8 |
+    re,16 sol do fa r8 |
+    \arco sib,,4~sib~sib~sib~sib~sib~sib8 r |
+    r \pizz <sib re sib'>\arpeggUp |
+    r <sib re sib'>\arpeggUp |
+    <sold dod sold'>\arpeggUp r | R4
+    r8 <sib re sib'>\arpeggUp |
+    <sold dod sold'>\arpeggUp r | R4
+    r8 <sib re sib'>\arpeggUp |
+    sold <dod, sold' mi' do'!>\arpeggUp
+    r <dod sold' mi' do'>\arpeggUp |
+    r <dod sold' mi' do'>\arpeggUp |
+    r <dod sold' mi' do'>\arpeggUp |
+    \arco <do sol' re'>4~<sol' re'>~<sol re'>8 r |
+    r \pizz <do re> r <do re> <do re>4 |
+    <si sol'> <si sol'> <si sol'> |
+    R2.-\fermataMarkup R2.*2
+    r8 \arco sib16 sib si8 sold16 sold la8 r | R2.
+    r8 sib16 sib si8 sold16 sold la8 r | R2.
+
+    %%% Interlude %%%
   }
 }
