@@ -727,38 +727,38 @@ ActeDeuxSceneUnBisFluteDeux = { \FluteDeux
 
 ActeDeuxSceneDeuxFluteDeux = { \FluteDeux
   \relative {
-    R1.*4 la'4 sol fa mi fa8 mi fa sol | la4 mi r1 | R1*2 la4 sol fa |
-    mi fa8 mi fa sol la4 mi r | R2.*2 | la4 sol fa mi fa8 mi fa sol la1 r2 |
-    R1. la4 mi r2 | R1 la4 sol fa mi fa8 mi fa sol la4 mi r8 |
-    r4 r8 sold~ sold2~ sold4 r8 sold~ sold2~ sold4 r8 si~ si2~ |
-    si4 r8 si~ si4 r | mib16 mib fa8 sib16 sib dob8 mib,8 fa mib fa |
-    mib fa mib4 fa16 fa mib8 r4 |
-    R2. R1. R1 | la,4. mi8~ mi4 r4 | R2.*2 r2 r8 la~la mi r4 |
-    R2.*2 r2 r8 re'~ re mi r4 | R4. re,1~ re2. r4 |
-    r8 re' r4 r8 re'16 re, r4 | r4 r8 r16 mi re8 r r4 |
-    r2 r4 re16 re re8 | mib4 r r mi16 mi mi8 |
-    mib4 r r mi16 mi mi8 | mib4 r r mi16 mi mi8 | mib1~ mib2 r4 |
+    R1.*4 la'4(\pdolce sol fa mi fa8 mi fa sol | la4 mi) r1 | R1*2 la4\mp( sol fa |
+    mi) fa8( mi fa sol) la4( mi) r | R2.*2 | la4\p( sol fa mi fa8 mi fa sol la1) r2 |
+    R1. la4( mi) r2 | R1 la4( sol fa mi) fa8( mi fa sol) la4( mi) r8 |
+    r4 r8 sold~--\pp \ten sold2~ sold4 r8 sold~-- sold2~ sold4 r8 si~-- si2~ |
+    si4 r8 si~-- si4 r | \st {mib16\mp mib fa8 sib16 sib dob8} mib,8( fa) mib( fa) |
+    mib( fa) mib4-- \acc {fa16\f fa mib8} r4 |
+    R2. R1. R1 | la,4.\p( mi8~) mi4 r4 | R2.*2 r2 r8 la~\mp\>( la mi\!) r4 |
+    R2.*2 r2 r8 re'~\>( re mi\!) r4 | R4. \ten re,1~\mf re2. r4 |
+    r8 re'->\f r4 r8 re'16( re,) r4 | r4 r8 r16 mi( re8) r r4 |
+    r2 r4 \st {re16 re re8 | mib4-> r r mi16 mi mi8 |
+    mib4-> r r mi16 mi mi8 | mib4-> r r mi16\< mi mi8} | \ten mib1~--\f mib2 r4 |
 
-    la,4 sol fa mi fa8 mi fa sol la4 mi r2 |
-    la4 sol fa mi fa8 mi fa sol | la4 mi~ mi1~ mi2 r4 | la4 mi r2 |
-    \slap { \ind #"slap" la4 } r2 | r8 sol~sol2. fa2.~ fa8 mi~ mi2. |
-    fa4 mi fa sol la2.~ la2 r4 |
-    R1 la2.~ la1~ la2 r4 | R1 sold2.~ sold1 la2 r4 |
-    R1 R2. R1 R2. R1 r2 r8 r16 la'32 mi' |
-    la8 r r4 | r r8 la,16 mi' | la8 r r4 |
-    r2 r8 la,16 mi' | la8 r r4 r2 | R1*2
+    la,4\p( sol fa mi fa8 mi fa sol la4 mi) r2 |
+    la4( sol fa mi fa8\> mi fa sol | la4\! mi~) \ten mi1~ mi2 r4 | la4( mi) r2 |
+    \slap { \ind #"slap" la4\mf } r2 | r8 sol~--\pp sol2. fa2.~-- fa8 mi~-- mi2. |
+    fa4( mi fa sol) la2.~-- la2 r4 |
+    R1 la2.~ la1~ la2 r4 | R1 sold2.~-- sold1 la2 r4 |
+    R1 R2. R1 R2. R1 r2 r8 r16 la'32\<( mi' |
+    la8-.\f) r r4 | r r8 la,16( mi' | la8-.) r r4 |
+    r2 r8 la,16( mi' | la8-.) r r4 r2 | R1*2
 
-    sold,8 sold la r4 | sold,4 r8 la la | sold4 sold8 la r |
-    re4 r8 mib, mib | re4 sold8 r4 | re4 r r8 | R2*5/4
-    sold'8 sold la r4 | R2*5/4 re,,4 r4 r8 | R2*5/4*4
-    R1*3 r4 \slap { mi sol} r r \slap {dod, mi} r | R1*4
-    fa'4 r2 R2 R1*2 la,!4 sol fa mi fa8 mi fa sol fa2.~ fa2 r4 | R2.*3
+    \st {sold,8 sold la} r4 | sold,4-- r8 \st {la la} | sold4-- \st {sold8 la} r |
+    re4-- r8 \st {mib, mib} | re4-- sold8-. r4 | re4---> r r8 | R2*5/4
+    \st {sold'8 sold la} r4 | R2*5/4 re,,4 r4 r8 | R2*5/4*4
+    R1*3 r4 \slap { mi\p sol} r r \slap {dod, mi} r | R1*4
+    fa'4-.->\sfz r2 R2 R1*2 la,!4\p( sol fa mi fa8\> mi fa sol \ten fa2.~\!) fa2 r4 | R2.*3
     R2*2 R2.*2 R2*2
-    lab'4 reb dob sib dob r | r r8 \slap { sold, la} r r4 |
+    lab'4\mp( reb dob sib) dob-- r | r r8 \slap { sold,\mp la} r r4 |
     r8 \slap {sold la} r r \slap {sold la fad |
-    sol} r r4 | R2*4 r4 fa8 r | R2
-    r4 r8 \slap {sold la} r r4 | R2*7
-    R2.*2 la'4 sol fa mi fa8 mi fa sol | la4 mi r | R2. la,4 mi r |
+    sol} r r4 | R2*4 r4 fa8->\pp r | R2
+    r4 r8 \slap {sold\mp la} r r4 | R2*7
+    R2.*2 la'4\p( sol fa mi fa8 mi fa sol | la4 mi) r | R2. \meno la,4( mi) r |
     R2.*9
   }
 }
