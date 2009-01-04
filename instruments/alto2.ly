@@ -1209,7 +1209,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     R2. R1 R2. R1 R2. R1 R2.
     sold'8 sold la4 r2 | r4 fad fad sol r r2 |
     R2. R1 R2. R1
-    r2 mi8 mi mi, mi' mi mi sold, sol' sol |
+    r2 mi8 mi | mi mi, mi' mi mi sold, sol' sol |
     lab lab, mi' mi fa fa, sold' sol la la, sold' sold la la, \clef treble |
     mi' fa la, do' dod dod, |
 
