@@ -50,7 +50,7 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisFluteUn \ActeDeuxSceneTrois
 
 \bookpart {
   \include "./master/master.ly"
-} %}
+} %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Clarinettes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -74,7 +74,7 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisClarinetteUn \ActeDeuxScene
 
 \bookpart {
   \include "./master/master.ly"
-} %{
+} %
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,32 +99,7 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisSaxophoneUn \ActeDeuxSceneT
 
 \bookpart {
   \include "./master/master.ly"
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Prologue = \makeSection \PrologueSaxophoneUn \PrologueSaxophoneDeux \PrologueMesures
-%Ouverture = \makeSection \%OuvertureSaxophoneUn \%OuvertureSaxophoneDeux \%OuvertureMesures
-ActeUnSceneUn = \makeSection \ActeUnSceneUnSaxophoneUn \ActeUnSceneUnSaxophoneDeux \ActeUnSceneUnMesures
-ActeUnSceneUnBis = \makeSection \ActeUnSceneUnBisSaxophoneUn  \ActeUnSceneUnBisSaxophoneDeux \ActeUnSceneUnBisMesures
-InterludeUn = \makeSection \InterludeUnSaxophoneUn \InterludeUnSaxophoneDeux \InterludeUnMesures
-ActeUnSceneDeux = \makeSection \ActeUnSceneDeuxSaxophoneUn \ActeUnSceneDeuxSaxophoneDeux \ActeUnSceneDeuxMesures
-InterludeDeux = \makeSection \InterludeDeuxSaxophoneUn \InterludeDeuxSaxophoneDeux \InterludeDeuxMesures
-ActeUnSceneTrois = \makeSection \ActeUnSceneTroisSaxophoneUn \ActeUnSceneTroisSaxophoneDeux \ActeUnSceneTroisMesures
-ActeUnSceneTroisBis = \makeSection \ActeUnSceneTroisBisSaxophoneUn \ActeUnSceneTroisBisSaxophoneDeux \ActeUnSceneTroisBisMesures
-ActeUnSceneTroisTer = \makeSection \ActeUnSceneTroisTerSaxophoneUn \ActeUnSceneTroisTerSaxophoneDeux \ActeUnSceneTroisTerMesures
-InterludeTrois = \makeSection \InterludeTroisSaxophoneUn \InterludeTroisSaxophoneDeux \InterludeTroisMesures
-ActeUnSceneQuatre = \makeSection \ActeUnSceneQuatreSaxophoneUn \ActeUnSceneQuatreSaxophoneDeux \ActeUnSceneQuatreMesures
-Entracte = \makeSection \EntracteSaxophoneUn \EntracteSaxophoneDeux \EntracteMesures
-ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnSaxophoneUn \ActeDeuxSceneUnSaxophoneDeux \ActeDeuxSceneUnMesures
-ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisSaxophoneUn \ActeDeuxSceneUnBisSaxophoneDeux \ActeDeuxSceneUnBisMesures
-ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxSaxophoneUn \ActeDeuxSceneDeuxSaxophoneDeux \ActeDeuxSceneDeuxMesures
-ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisSaxophoneUn \ActeDeuxSceneTroisSaxophoneDeux \ActeDeuxSceneTroisMesures
-
-\bookpart {
-  \include "./master/master.ly"
-}
+} %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Violons  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -563,7 +538,7 @@ ActeDeuxSceneTrois = \makePianoPart \ActeDeuxSceneTroisPiano \ActeDeuxSceneTrois
 \bookpart {
   \include "./master/master.ly"
 }
-%
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Percus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePianoPart \ProloguePercus \PrologueMesures

@@ -635,5 +635,125 @@ ActeDeuxSceneTroisSaxophoneUn = { \SaxAltoUn
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
+    R2*3 |
+    r16 mi' mi mi mi mi mi mi |
+    r4 r16 do do do | do do do do r4 |
+    r16 si si si do do re mib |
+    r4 r16 mi mi mi | mi mi mi mi r4 |
+    r16 si si do do do si si si do do do |
+    red8 mi red mi fad sol r4 |
+    red8 mi fad sol r si, do red mi r red mi |
+    r4 red8 mi r si do r lab |
+    sol2~sol |
+    r16 sol sol sol sol sol sol sol |
+    r4 mi~ | mi8 r16 mi mi mi mi mi |
+    mi mi r8 r4 sol'8 re~ re4~ | re8 fa~ fa4 |
+    r8 fa~ fa4 | re4. r8 |
+    r4 sol,16 sol sol sol | sol sol sol8 r4 |
+    r16 sol sol sol sol sol r8 |
+    sol'8. sib,16~ sib dod8. |
+    mi,4. r8 |
+    la'8 sol fa mi fa16 mi fa sol la8 r16 mi, dod' sib |
+
+    %%% Quatuor %%%
+    sol' sol, r8 r4 |
+    r32 fad' sol la sib8 r | mi, r r4 |
+    r32 fad sol la sib8 r | mi,16 mi, r8 r4 |
+    r32 sold' la si re8 r |
+    r32 dod re mi sol8 r |
+    do,,2 r4\fermata | R2.*6 R2*2 R2.
+
+    %%% Air baryton 1 %%%
+    \ind #"détimbré" la'2~ la4 sol8 fa | mi2 r4 |
+    \simile la2~ la4 sol8 fa | mi4 fa8 mi fa sol |
+    la2 mi4 r | r4 r8 mi fa sol |
+    la2~ la4 r | R2.
+    r16 fa, fa fa sol sol sol sol | R4.
+    r16 sib sib sib la la la la | R4.
+    r16 sol sol sol sol sol sol sol |
+    r sol sol sol r8 sol~ | sol2 r4 |
+    reb8 r r reb r16 sol~ sol8 mi'4 |
+    r8 la, mi'4. r8 |
+    r16 r32 si mi16 fa~ fa8 sol~ sol4. r8 |
+    r8 solb,16 lab~ lab4. r8 | R2
+
+    %%% Doppio tempo %%%
+    re,8 r r4 | R2
+    r4 sold8 sold la4 sol8 sol | sold4 r |
+    r sold8 sold la4 sol8 sol |
+    sold4 r2 | R2.*6
+    r8 la' la la | re4 do re8 la~ |
+    la4. r8 | re,16 sib r8 r2 |
+    r4 r16 r32 re sib16. si32 |
+    sol8 r si16 sol r8 r sold |
+    r4 mi | r fa8 dod r4 |
+    R2 R2. R2 R2. R2 R2.
+
+    %%% Climax %%%
+    re'2~ re4 r8 |
+    fa'8. fa16 fa8 r | R2
+    re,2~ re4 r8 |
+    fa'8. fa16 fa8 r | R2
+    re,2~ re4 re, |
+    sold8. sold16 sold8 r sold4~ |
+    sold sol fa |
+    re1~
+
+    %%% Soprano 2 %%%
+    re4 r2 |
+    R1 re4 r2 |
+    R1 re4 r2 |
+    R1 reb4 r2 |
+    R1 sold4 r r8 \t {fad16 sol sold} |
+    la4 r r2 | R2. R1 R2. R1 R2. R1 R2.
+    reb,4 r r2 | r4 sol r |
+    mi4 r r2 | reb4 r2 |
+    mi4 r re r | re4 r2 re4 r r2 |
+    R2. R1 R2. R1 R2. R1 R2.
+
+    %%% Soprano 1 %%%
+    re4 r r2 | R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
+    re'2.~ re2. r4 | R2.
+    reb,4 r r2 | r4 sol r |
+    fa r r2 | R2. fa4 r r2 | R2.
+    R1 fa4 r2 | R1 R2. R1 R2.
+
+    %%% Duo %%%
+    R1*4
+    \t {sold4 dod re~} re2~ re4 mi la2~ |
+    la4 r sold2 re'4 re, |
+
+    %%% Baryton 2 %%%
+    re, r2 | re'4 re \tt {fad,16 sol la do re} |
+    mib4 r2 | fa4 r8 re mib fa |
+    lab4 r2 |
+    re,4 mib fad sold2 r4 | R2.*4 R4.
+    sib,2. si2 r4 | do2. dod2 r4 |
+    mib4 mi fa fad2 r4 |
+    sold,4 sold sold | re' r2 |
+    re8 si mi, fad r4 | re2 r4 |
+    re8 sol sib fad'' sol sold |
+
+    %%% Boum %%%
+    sol,,4 r2 | R2.*2
+    r4 sol2 lab4 si do |
+    r4 do2 dod4 mi fa |
+    r la,2 sib4 dod re |
+    r dod2 do4 fa mi |
+    r do2 mib4 lab sol |
+    r lab,8 sol~ \t {sol si re} |
+    mib16 si fad'8 mi lab~ \t {lab sol do} |
+
+    %%% Contralto %%%
+    re r fad,, r fad r fad r fad r r4 |
+    re'8 r fad, r fad r fad r |
+    fad r fad r fad r fad r |
+    fad r fad r mi r mi r |
+    mi r mi r r4 fa'8 fa fad r r4 |
+    R2. R2*6
+    reb,4 r2 | r4 sol r |
+    reb' reb, r | sol r2 |
+
+    %%% Grand ensemble %%%
   }
 }

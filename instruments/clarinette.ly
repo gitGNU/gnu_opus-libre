@@ -884,8 +884,8 @@ ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
     r red mi fad sol sold la si do dod re16 mi re8 r4 |
     sold,16 sold sold sold r sold sold sold |
     r8 re, la' si' fad'4 |
-    r16 r32 sold,, re'16 mi~ mi8 re~ re4 r |
-    r8 mib,16 solb~ solb2 | R2
+    r16 r32 sold,, re'16 mi~ mi8 re~ re4. r8 |
+    r8 mib,16 solb~ solb4. r8 | R2
 
     %%% Doppio tempo %%%
     re8 r r4 | R2*6

@@ -960,8 +960,8 @@ ActeDeuxSceneTroisClarinetteDeux = { \ClarinetteDeux
     mi16 re mi8 r4 |
     la,16 la la la r la la la |
     r8 re,, la' si' dod'4 |
-    r16 r32 la,, si16 re~ re8 mi~ mi4 r |
-    r8 mib,16 solb~ solb2 | R2
+    r16 r32 la,, si16 re~ re8 mi~ mi4. r8 |
+    r8 mib,16 solb~ solb4. r8 | R2
 
     %%% Doppio tempo %%%
     re'8 r r4 | R2*6

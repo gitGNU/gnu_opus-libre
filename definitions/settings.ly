@@ -157,9 +157,15 @@ includePartsLayout = \layout {
     %\remove Instrument_name_engraver
   }
   \context {
+    \Devnull
+    \name PseudoVoice
+  }
+  \context {
     \Score
     %\consists Mark_engraver
     \accepts GhostVoice
+    % not mandatory
+    \accepts PseudoVoice
     skipBars = ##t
   }
 %%-----------------------------------------------------------------%

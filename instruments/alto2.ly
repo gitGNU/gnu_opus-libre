@@ -1222,7 +1222,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     la la sold2 |
 
     %%% Baryton 2 %%%
-    re8 \t {si16 do dod} re8 \t {sold,16 si dod} re8 fad,32 sold si dod |
+    re'8 \t {si16 do dod} re8 \t {sold,16 si dod} re8 fad,32 sold si dod |
     re4 re re |
     mib8 \t {do16 dod re} mib8 \t {la,16 do re} \ttt {mib sol, la do re mib} |
     fa4 fa r \clef treble |
@@ -1235,7 +1235,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     sold8 sold la4 sol8 sol | sold4 r2 |
     <fad, mi'>8 r16 <sol fa'> r8 <lab mi'> r16 <la fa'> r8 |
     <sib mi> fa'16 dod do mi r8 fa16 dod r8 |
-    solb16 mib re fa mi mib solb re sol mib lab fa |
+    solb'16 mib re fa mi mib solb re sol mib lab fa |
     mi sol solb fa lab mi sol fa fad sold la si |
     <re, re'>4 <re re'> <re re'> <re re'> r2 |
     <re re'>4 <re re'> <re re'> <re re'> r8 <do, do'> <mib mib'> <fad fad'> |

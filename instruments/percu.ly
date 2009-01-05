@@ -1675,6 +1675,103 @@ ActeDeuxSceneTroisPercus = <<
     R4.*6 mi'4.\laissezVibrer |
     R4.*3 <la, mi'>4.\laissezVibrer
     R4. mi'4.\laissezVibrer |
+    R4.*5 \gauche fa,8 \droite <do' sol'> re |
+    <mi la>4.\laissezVibrer |
+    R4.*3 \gauche do,8 \droite <re' la'> \gauche sol, |
+    \droite <mi' fad>4.\laissezVibrer R4.*4
+    si16 \gauche mi, \droite fad' \gauche mi, \droite dod' \gauche mi, |
+    \droite sold' \gauche fad, \droite red' dod <sold' lad>8 \laissezVibrer |
+    s4. R4.*2
+    R4*27 R4. R4*7
+    R4.*14 R4*28 R2.-\fermataMarkup R2.
+    re'2.\laissezVibrer R2.
+    <mib, re'>2.\laissezVibrer R2.
+    <mib re'>2.\laissezVibrer
+
+    %%% Interlude %%%
+    R2*2 mib'8 sib4 mi,8 |
+    si4 \gauche fa \droite |
+    re'''8 la4. | r8 si fad4 |
+    si16 fad sold8 red4 |
+    r mib8 sib
+    \gauche \t { r8 mib, sib} \droite lab'
+    \gauche fa, \droite |
+    fad'' dod4 si'8 \tt {fad16
+    \gauche fa,, \droite mib' dod' si'} |
+    mi4\laissezVibrer r |
+    mi16 si re mi, do' la, si' mib,, |
+    fa'8 do fad,8. \gauche fad,16~ |
+    fad2 fa16 do si' fad fa do dod' sold |
+    sol re \droite sol' re \gauche dod sold \droite dod' sold |
+    sol re dod'' sol, sold' re \pl {lad sid dod8} {lad'16 sid dod sid} |
+    dod4 r4 | R2*15 R2*5/4
+
+    %%% Quatuor %%%
+    R2 R4. R2 R4. R2 R4.*2
+    R2.*7 R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2 R4. R2 R4.
+    R2*2 R2. R2*2 R2.
+    R1 R2. R2
+
+    %%% Doppio Tempo %%%
+    R2*7 R2.*7
+    R2 R2. R2 R2.
+    R2 R2. R2 R2.
+    R2 R2. R2 R2.
+    R2 R2.
+
+    %%% Climax %%%
+    R2 R4. R2*3 R4.
+    R2*4 R4.*2 R2. R1
+
+    R2.\GrandMarimba R1 R2. R1 R2. R1 R2. R1
+    R2. R1
+    \gauche sib,,,8 \droite mi' \gauche fa, \droite sol'
+    \gauche r sib,, | \droite mi' \gauche fa, \droite sol'
+    \gauche fa,, \droite r mi'' \gauche sib, \droite mi' |
+    \gauche fad, \droite la' \gauche si,, \droite mi' la \gauche fad,, |
+    \droite r mi'' la \gauche si,, \droite mi' la \gauche fad,4 |
+    sib,8 \droite mi' \gauche fa, \droite sol' r4 |
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2.
+    \gauche sib,,8 \droite mi' \gauche fa, \droite sol' r4 r8 mi |
+    sol4 \gauche fa,8 \droite mi' r4 | R1 r2 mi8 sold |
+
+    %%% Soprano 2 %%
+    <re sib'>4 r r2 | R2. R1 R2. R1
+    R2. R1
+    \gauche sib,8 \droite mi' \gauche fa, \droite sol' \gauche r8 sib,, |
+    \droite mi' \gauche fa, \droite sol' \gauche fa, r sib, \droite do' \gauche fa, |
+    \droite sol' \gauche sib,, \droite sol'' re' la'4 |
+    \gauche sib,,,8 \droite mi' \gauche fa, \droite <re'' la'>
+    r2 | s2. R1 | R2. R1 R2.
+    mi,8 sol r4 r2 | R2. s2 r2 |
+    r4 r8 mi r4 | R1 R2. R1 R2. R1 R2.
+
+    %%% Duo %%%
+    R1*6 R2*3
+
+    %%% Baryton 2 %%%
+    R2.*11\GrandMarimba R4.
+    R2.*14
+    re''4 re re re2*3/2\laissezVibrer |
+    \gauche r8 sib,, \droite \t {la' solb fa'} re16 dod'8. |
+    re4 re re re2*3/2\laissezVibrer |
+    \gauche r16 lab,, \droite mib' sib'
+    \t {dod,8 fad si} \tt {fa16 do' sol' mi la} |
+    re4 re re re2*3/2\laissezVibrer |
+    \gauche \t {r8 do,,, si'~} \t {si \droite la' fad'~}
+    fad16 \gauche lab,, \droite sol' fa' |
+    re'4 re re re2*3/2\laissezVibrer
+    \tt {mi,,16 sold sol si dod,} fa mi' mi, sold'
+    \t {sol,8 si sib'} |
+    \pl re,4 re' r |
+    R2*11 R2. R2*6 R2.*4
+
+    %%% Ensemble %%%
+
   }
   \relative {
     %%% Larghetto %%%
@@ -1684,5 +1781,209 @@ ActeDeuxSceneTroisPercus = <<
     la4.\laissezVibrer R4.*3 |
     fa4.\laissezVibrer R4. |
     la4.\laissezVibrer |
+    R4.*5 s4. R4.*4 s4. R4.*5 s4.*2 R4.*3
+    R4*27 R4. R4*7
+    R4.*14 R4*28
+
+    R2.*6 mi!2.\laissezVibrer
+
+    %%% Interlude %%%
+    R2*3 s2 r4 si'\laissezVibrer |
+    r4 r8 fa\laissezVibrer |
+    r8 r16 si~ si4 fa2\laissezVibrer s2 |
+    r4 fa4 s | r8 fad4.\laissezVibrer R2 r4 s |
+    s2*3 R2*5/4
+    sol4 r | R2*15 R1*5/8
+
+    %%% Quatuor %%%
+    R2 R4. R2 R4. R2 R4.*2
+
+    %%% Baryton 1 %%%
+    R2.*7 R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2 R4. R2 R4.
+    R2*2 R2. R2*2 R2.
+    R1 R2. R2
+
+    %%% Doppio Tempo %%%
+    R2*7 R2.*7
+    R2 R2. R2 R2.
+    R2 R2. R2 R2.
+    R2 R2. R2 R2.
+    R2 R2.
+
+    %%% Climax %%%
+    R2 R4. R2*3 R4.
+    R2*4 R4.*2 R2. R1
+
+    %%% Soprano 2 %%%
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1
+    s2. s1 s2. s1 s2 r4 |
+    R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
+    s2 mi8 do sib4 r8 sib s4 sib8 mi |
+    sold,4 r r2 | r8 sold mi' sold s4 |
+
+    %%% Soprano 1 %%%
+    re4 r r2 | R2. R1 R2. R1
+    R2. R1
+    s2. s1 s2. s2 r8 sib fa'4 |
+    sib,8 fa' \droite do' \gauche sib, fa'4 |
+    r8 sib, r4 fa' r | sib, r2 | R1 R2.
+    sib4 r r2 | R2.
+    sib8 \droite sol'' \gauche fa,4 r2 |
+    r4 r8 fa r4 | R1
+    sib,8 fa' sib,4 r | R1 R2. R1 R2.
+
+    %%% Duo %%%
+    R1*6 R2*3
+
+    %%% Baryton 2 %%%
+    R2.*11 R4.
+    R2.*16
+    s4 r2 R2.*2
+    s4 r2 R2.*2
+    s2. R2. r4 \tt {mi16 sold sol si sib} re4 |
+    R2.
+    R2*12 R2. R2*6 R2.*4
+
+    %%% Ensemble %%%
+  }
+  \new DrumStaff \drummode {
+    %%% Larghetto %%%
+    R4.*51
+    R4*27 R4. R4*7
+    R4.*14 R4*7 |
+    r8 \ind #"Crécelle" hh:32 hh4:32 hh8 r |
+    R4*9 hh8 r |
+    R4*8 R2.*7
+
+    %%% Interlude %%%
+    R2*9 R2. R2*6 R1*5/8
+    R2*16 R1*5/8
+    R2 R4. R2 R4. R2 R4.*2
+
+    %%% Baryton 1 %%%
+    R2.*7 R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2*2 R2. R2*2 R2.
+    R2 R4. R2 R4.
+    R2*2 R2. R2*2 R2.
+    R1 R2. R2
+
+    %%% Doppio Tempo %%%
+    R2*7 R2.*7
+    R2 R2. R2 R2.
+    R2 R2. R2 R2.
+    R2 R2. R2 R2.
+    R2 R2.
+
+    %%% Climax %%%
+    R2 R4.
+    r8 \ind #"Cymb. susp." hh4.\laissezVibrer |
+    R2*2 R4.
+    r8 hh4.\laissezVibrer | R2*3
+    R4.*2 R2. R1
+
+    %%% Soprano 2 %%%
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2.
+
+    %%% Duo %%%
+    R1*2 \ind #"Cymb. (sur le bord)" hh1:32~ hh2 r |
+    hh1:32~ hh2 r | R2*3
+
+    %%% Baryton 2 %%%
+    R2.*11 R4.
+    R2.*11 \ind #"Tam-tam" cb2 s4 | R2.*14
+    R2*2
+    r8 \ind #"Crécelle" hh hh4:32 hh4 r | R2
+    r4 hh4:32 hh4 r | R2*3
+    r4 hh8 hh hh4 r |
+    R2. R2*6 R2.*4
+
+    %%% Ensemble %%%
+    R1*27
+    R2.*6 R2*3
+
+    %%% Épilogue %%%
+    R2.*40
+  }
+  \new Staff  \relative { \Timbales
+    %%% Larghetto %%%
+    R4.*51
+    R4*27 R4. R4*7
+    R4.*14 R4*28 R2.*7
+
+    %%% Interlude %%%
+    R2*9 R2. R2*6 R1*5/8 R2*7
+    sol,16. sol32 sol16 sol r sol32 sol sol8 |
+    sol16 sol r sol32 sol sol8 sib16. sib32 |
+    sib16 sib r sib32 sib sib8 sib16. sib32 |
+    sib16 sib32 sib sib8 sol16. sol32 sol16 sol |
+    r32 sol sol16 sol sib r32 sib sib16 sib8 |
+    r16 sol32 sol32~ sol8 r16 sol sib8 |
+    r16 sib32 sib sib sib sib16 r dod8. |
+    mi,2:32 dod'16. dod32 dod8 mi,4:32~ |
+    mi8 \t {dod'16 dod dod} dod mi, r16 dod' dod dod |
+    sol4 r R4. R2 R4. R2 R4.*2
+
+    %%% Baryton 1 %%%
+    R2.*7 R2*2 R2.
+    do8 \tt {do32 do do do do} do4 | r do fad, fad r |
+    do'8 \tt {do32 do do do do} do4 | r do fad, fad r |
+    do'8 \tt {do32 do do do do} do4 | r do sol8. sol32 sol sol4 r |
+    do2:32~ do:32~ do4 r2 |
+    r8 sol r16 dod8 sol16 |
+    dod8. dod16 \t {dod dod dod} |
+    sol8 sol r16 dod8 sol16 |
+    dod8. dod16 \t {dod dod dod} | do8 do4. |
+    r8 do r16 sol8 do16 |
+    r sol do8 r4 do |
+    dod r | R2 R2.
+    r8 re re16 re \tt {re32 re re re re} re2:32~ re4 r2 | R2
+
+    %%% Doppio Tempo %%%
+    R2*2 r4 re r re re r r re r re |
+    sold, sold r sold sold r sold sold r sold r2 | R2.*3 R2 R2.
+    R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2.
+    \t {re'4 re re} re8 re \t {re16 re re} re4 r R2 |
+    \t {re4 re re} re8 re \t {re16 re re} re4 r R2 |
+    \t {re4 re re} re8 re re16 re re re |
+    sold,8 \t {sold16 sold sold} sold8 |
+    \t {sold16 sold sold} sold8 r16 sold |
+    sold4 \t {sold sold sold8 sold} |
+    re'2:32 re: |
+
+    %%% Soprano 2 %%%
+    re4 r2 R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2.
+
+    %%% Duo %%%
+    R1*6 R2*2 r4 r8 \t {re16 re re} |
+    re4 r8 re re4 re2.:32 |
+    re4 r8 re \t {re re re} re2.:32 |
+    re4 re re re8. re32 re re4 r8 re re4 r2 | R2.
+    re2.:32~ re:32~ re:32 |
+    r8 r16 re re re | re4 re r R2.*5
+    sold,4 sold sold re' r8 re \t {re re re} |
+    re4 r2 | re8 re \t {re re re} \tt {re16 re re re re} |
+    re4 r2 R2.*15
+    R2*12 R2. R2*6 R2.*4
+
+    %%% Ensemble %%%
   }
 >>

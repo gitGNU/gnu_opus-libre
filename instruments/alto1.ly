@@ -1245,7 +1245,7 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     sold8 sold la4 sol8 sol | sold4 r2 |
     <fad, mi'>8 r16 <sol fa'> r8 <lab mi'> r16 <la fa'> r8 |
     <sib mi> fa'16 dod do mi r8 fa16 dod r8 |
-    solb16 mib re fa mi mib solb re sol mib lab fa |
+    solb'16 mib re fa mi mib solb re sol mib lab fa |
     mi sol solb fa lab mi sol fa fad sold la si |
     <re, re'>4 <re re'> <re re'> <re re'> r2 |
     <re re'>4 <re re'> <re re'> <re re'> r8 <do, do'> <mib mib'> <fad fad'> |
