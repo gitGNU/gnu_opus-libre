@@ -46,11 +46,11 @@ Entracte = \makeSection \EntracteFluteUn \EntracteFluteDeux \EntracteMesures
 ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnFluteUn \ActeDeuxSceneUnFluteDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisFluteUn \ActeDeuxSceneUnBisFluteDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxFluteUn \ActeDeuxSceneDeuxFluteDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeSection \%ActeDeuxSceneTroisFluteUn \%ActeDeuxSceneTroisFluteDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisFluteUn \ActeDeuxSceneTroisFluteDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
-} %
+} %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Clarinettes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -70,11 +70,11 @@ Entracte = \makeSection \EntracteClarinetteUn \EntracteClarinetteDeux \EntracteM
 ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnClarinetteUn \ActeDeuxSceneUnClarinetteDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisClarinetteUn \ActeDeuxSceneUnBisClarinetteDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxClarinetteUn \ActeDeuxSceneDeuxClarinetteDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeSection \%ActeDeuxSceneTroisClarinetteUn \%ActeDeuxSceneTroisClarinetteDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisClarinetteUn \ActeDeuxSceneTroisClarinetteDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
-} %
+} %{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,7 +95,7 @@ Entracte = \makeSection \EntracteSaxophoneUn \EntracteSaxophoneDeux \EntracteMes
 ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnSaxophoneUn \ActeDeuxSceneUnSaxophoneDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisSaxophoneUn \ActeDeuxSceneUnBisSaxophoneDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxSaxophoneUn \ActeDeuxSceneDeuxSaxophoneDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeSection \%ActeDeuxSceneTroisSaxophoneUn \%ActeDeuxSceneTroisSaxophoneDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisSaxophoneUn \ActeDeuxSceneTroisSaxophoneDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -120,7 +120,7 @@ Entracte = \makeSection \EntracteSaxophoneUn \EntracteSaxophoneDeux \EntracteMes
 ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnSaxophoneUn \ActeDeuxSceneUnSaxophoneDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisSaxophoneUn \ActeDeuxSceneUnBisSaxophoneDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxSaxophoneUn \ActeDeuxSceneDeuxSaxophoneDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeSection \%ActeDeuxSceneTroisSaxophoneUn \%ActeDeuxSceneTroisSaxophoneDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisSaxophoneUn \ActeDeuxSceneTroisSaxophoneDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -144,7 +144,7 @@ Entracte = \makeExtraSection \EntracteViolonUn \EntracteViolonDeux \EntracteViol
 ActeDeuxSceneUn = \makeExtraSection \ActeDeuxSceneUnViolonUn \ActeDeuxSceneUnViolonDeux \ActeDeuxSceneUnViolonTrois \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeExtraSection \ActeDeuxSceneUnBisViolonUn \ActeDeuxSceneUnBisViolonDeux \ActeDeuxSceneUnBisViolonTrois \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeExtraSection \ActeDeuxSceneDeuxViolonUn \ActeDeuxSceneDeuxViolonDeux \ActeDeuxSceneDeuxViolonTrois \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeExtraSection \%ActeDeuxSceneTroisViolonUn \%ActeDeuxSceneTroisViolonDeux \%ActeDeuxSceneTroisViolonTrois \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeExtraSection \ActeDeuxSceneTroisViolonUn \ActeDeuxSceneTroisViolonDeux \ActeDeuxSceneTroisViolonTrois \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -169,7 +169,7 @@ Entracte = \makeSection \EntracteAltoUn \EntracteAltoDeux \EntracteMesures
 ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnAltoUn \ActeDeuxSceneUnAltoDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisAltoUn \ActeDeuxSceneUnBisAltoDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxAltoUn \ActeDeuxSceneDeuxAltoDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeSection \%ActeDeuxSceneTroisAltoUn \%ActeDeuxSceneTroisAltoDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisAltoUn \ActeDeuxSceneTroisAltoDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -194,7 +194,7 @@ Entracte = \makeSection \EntracteVioloncelleUn \EntracteVioloncelleDeux \Entract
 ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnVioloncelleUn \ActeDeuxSceneUnVioloncelleDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisVioloncelleUn \ActeDeuxSceneUnBisVioloncelleDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxVioloncelleUn \ActeDeuxSceneDeuxVioloncelleDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makeSection \%ActeDeuxSceneTroisVioloncelleUn \%ActeDeuxSceneTroisVioloncelleDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisVioloncelleUn \ActeDeuxSceneTroisVioloncelleDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -221,7 +221,7 @@ Entracte = \makePart \EntracteFluteUn \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnFluteUn \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisFluteUn \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxFluteUn \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisFluteUn \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisFluteUn \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -245,7 +245,7 @@ Entracte = \makePart \EntracteFluteDeux \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnFluteDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisFluteDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxFluteDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisFluteDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisFluteDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -269,7 +269,7 @@ Entracte = \makePart \EntracteClarinetteUn \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnClarinetteUn \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisClarinetteUn \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxClarinetteUn \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisClarinetteUn \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisClarinetteUn \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -293,7 +293,7 @@ Entracte = \makePart \EntracteClarinetteDeux \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnClarinetteDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisClarinetteDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxClarinetteDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisClarinetteDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisClarinetteDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -317,7 +317,7 @@ Entracte = \makePart \EntracteSaxophoneUn \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnSaxophoneUn \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisSaxophoneUn \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxSaxophoneUn \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisSaxophoneUn \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisSaxophoneUn \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -341,7 +341,7 @@ Entracte = \makePart \EntracteSaxophoneDeux \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnSaxophoneDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisSaxophoneDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxSaxophoneDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisSaxophoneDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisSaxophoneDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -365,7 +365,7 @@ Entracte = \makePart \EntracteViolonUn \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnViolonUn \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisViolonUn \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxViolonUn \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisViolonUn \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonUn \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -389,7 +389,7 @@ Entracte = \makePart \EntracteViolonDeux \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnViolonDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisViolonDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxViolonDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisViolonDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -413,7 +413,7 @@ Entracte = \makePart \EntracteViolonTrois \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnViolonTrois \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisViolonTrois \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxViolonTrois \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisViolonTrois \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonTrois \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -437,7 +437,7 @@ Entracte = \makePart \EntracteAltoUn \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnAltoUn \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisAltoUn \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxAltoUn \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisAltoUn \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisAltoUn \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -461,7 +461,7 @@ Entracte = \makePart \EntracteAltoDeux \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnAltoDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisAltoDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxAltoDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisAltoDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisAltoDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -485,7 +485,7 @@ Entracte = \makePart \EntracteVioloncelleUn \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnVioloncelleUn \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisVioloncelleUn \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxVioloncelleUn \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisVioloncelleUn \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisVioloncelleUn \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -509,11 +509,11 @@ Entracte = \makePart \EntracteVioloncelleDeux \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnVioloncelleDeux \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisVioloncelleDeux \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxVioloncelleDeux \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisVioloncelleDeux \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisVioloncelleDeux \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
-}%}
+}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Contrebasse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -533,11 +533,11 @@ Entracte = \makePart \EntracteContrebasse \EntracteMesures
 ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnContrebasse \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisContrebasse \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxContrebasse \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePart \%ActeDeuxSceneTroisContrebasse \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisContrebasse \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
-}%{
+}%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -558,7 +558,7 @@ Entracte = \makePianoPart \EntractePiano \EntracteMesures
 ActeDeuxSceneUn = \makePianoPart \ActeDeuxSceneUnPiano \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePianoPart \ActeDeuxSceneUnBisPiano \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePianoPart \ActeDeuxSceneDeuxPiano \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePianoPart \%ActeDeuxSceneTroisPiano \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePianoPart \ActeDeuxSceneTroisPiano \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
@@ -582,7 +582,7 @@ Entracte = \makePianoPart \EntractePercus \EntracteMesures
 ActeDeuxSceneUn = \makePianoPart \ActeDeuxSceneUnPercus \ActeDeuxSceneUnMesures
 ActeDeuxSceneUnBis = \makePianoPart \ActeDeuxSceneUnBisPercus \ActeDeuxSceneUnBisMesures
 ActeDeuxSceneDeux = \makePianoPart \ActeDeuxSceneDeuxPercus \ActeDeuxSceneDeuxMesures
-%ActeDeuxSceneTrois = \makePianoPart \%ActeDeuxSceneTroisPercus \%ActeDeuxSceneTroisMesures
+ActeDeuxSceneTrois = \makePianoPart \ActeDeuxSceneTroisPercus \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"

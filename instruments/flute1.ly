@@ -843,5 +843,110 @@ ActeDeuxSceneTroisFluteUn = { \FluteUn
     re r r4 | r8 re' sol, |
     la, r16 re, mib'8 |
     la'2 r4\fermata
+    R2.*6 R2*2 r2 sold,,8 sold |
+
+    %%% Air baryton 1 %%%
+    la2~ la4 r | r2 sold8 sold |
+    la2~ la4 r | R2.
+    la2~ la4 r | r4 r8 mi fa sol |
+    la2~ la4 r |
+    r16 re, re re mib mib mib mib r4 |
+    la4 sol8 fa mi4 r8 |
+    sib'2 r16 re mib sol la re, |
+    re'4. r8 | r4 \t {r16 do,, si'} \t {r la' fad'} |
+    r4 r8 \t {r16 sol,, fad'} \t {r mi dod'} r8 |
+    la16 la sold8 r4 |
+    mi16 mi mi mi r mi mi mi |
+    mi mi r mi mi mi mi mi mi8 \t {mi16 la mi'} |
+    re4. r8 \t {mib,,16 re' do'} la'8~ la4~ |
+    la2 r4 R2 |
+
+    %%% Doppio tempo %%%
+    R2*7 mib,,2 sib'4 |
+    r mib, la r re, fad r re mi |
+    r dod sold' r fad si r sold re' |
+    r8 la' la la | re4 do re8 la~ |
+    la4. r8 | R2. R2 R2. R2 R2. R2
+    r8 mi, re16 la' mib' fad la4 R2 R2. R2 |
+    sold,16 la sold la \tt {si re mi fa sol} \tt {sib do reb mib fad} |
+
+    %%% Climax %%%
+    sold8 r r4 | R4.
+    mi4. r8 r4 sol,8 r sold r r4 | R4.
+    la'4. r8 | r4 la,8 r sold r r4 |
+    r r8 re' |
+    re' la16 mi si fad |
+    dod8. dod16 dod8 |
+    r8 dod~ dod dod~ dod16 dod dod8 |
+    sold'2. r4 |
+
+    %%% Soprano 2 %%%
+    \slap re,4 r2 | R1 r2 r8 \t {si'16 dod red} |
+    mi4 la, si8 red mi4 | sib8 la re mi r4 | R1
+    r4 r8 lab sol solb |
+    fa4 r r2 | R2. R1 r4 sol, r |
+    r r8 sol~ sol4 r | r la r |
+    r r8 la~ la4 r | r sol r |
+    r lab' fa mib | re r2 |
+    la8 la la la r2 r8 la la la la4 |
+    sold8 sold sold sold r4 sold |
+    la r sol sold r r lad |
+    si r dod | re r r2 | R2.
+    %%% Issue #34 (aka "grace notes are a PITA")
+    re32 mib8.. sib'4 lab8 fa mib4 R2.
+    re'32 mi!8.. r4 r2 |
+    r4 sold,, si |
+    re2 r4 re | la'2 r4 |
+
+    %%% Soprano 1 %%%
+    re4 r r2 | r8 si sib sol fad mib |
+    re'4 r r2 | r8 fa mi dod do la |
+    sold'4 r r2 | r4 r8 do,, si' fad |
+    fa'4 r r2 | r4 la,, do |
+    re2. r4 | do4 re la' |
+    re1~ re4 r re |
+    la'2. r4 | R2.
+    la,,8 la la la r la la la | la4 r fad8 fad |
+    sol4 r r2 R2. sol4 r r2 R2. |
+    R1 sol4 r sol8 sol | sold4 r r2 | R2. R1
+    r4 sold la |
+
+    %%% Duo %%%
+    sold'2. la4 | do2. r4 |
+    sold4 la r sold la r fad8 sold la do |
+    re2. re4 mi4. si8 r16 dod sold8~ sold4~ |
+    sold4. la,8 | sold'4. r8 | la,2 |
+
+    %%% Baryton 2 %%%
+    re4 r2 R2. |
+    mib,2. fa4 r2 |
+    re''4 r2 |
+    \tt {re,16 fad sold la si} re4 re |
+    sold2 r4 | R2.
+    re,,2. mib mi4 r2 | R4.
+    sold''4 r2 | r8 re re re re4 |
+    re,,8 re re re r4 | R2.*3
+    sold4 sold sold | re' r2 |
+    r8 re' re re re re | R2.
+    r8 re re re re re |
+
+    %%% Boum %%%
+    \slap sold,,4 r2 | R2.*2
+    re4. re'8~ re re'~ |
+    re4 fad la | si2.~ si4 fad8 fa sib, la |
+    r4 re,2~ | re4 r8 re8~ re4 |
+    \tt {mi16 sold sol si sib} re2~ re2 r4 |
+    \t {sol,8 fa lab} mi'2~ |
+    mi8 fa, mi'4~ mi16 fa, mi' re |
+    si'4~ \t {si8 fad dod} \tt {sol'16 re la mi si} |
+    fad8 r \tt {do''16 reb mi fa sol} sold4 |
+
+    %%% Contralto %%%
+    re8 r r4 | R2 r4 sold4 |
+    re8 r r4 | R2*8 R2. R2*6
+    la,8 la la la r4 | r8 la la la la4 |
+    re8 re re re r4 | r8 fa fa fa fa4 |
+
+    %%% Grand ensemble %%%
   }
 }

@@ -37,6 +37,6 @@
 }
 
 
-\include "./master/titling.ly"
+%\include "./master/titling.ly"
 \include "./master/instruments.ly"
 

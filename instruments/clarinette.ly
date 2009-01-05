@@ -845,6 +845,145 @@ ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
     R2.*6
 
     %%% Interlude %%%
+    mi,2~ mi4 r |
+    fa2~ fa~ fa4 r |
+    mi'4 fa8 fad sold la si do |
+    fa,,2~ fa4 r | mid'8 fad sold la si do |
+    fad,,2~ fad4 r16 fad fad fad |
+    fad fad fad fad si8 do | red mi fad sol |
+    r16 fad, fad fad fad fad fad fad |
+    red'8 mi sol sold red' mi r4 r8 |
+    si8 la sol fad sol16 fad sol la si8 fad~ fad2~ fad4 r |
+    si'8 fad sold16 lad si lad |
+    si2 r8 lab,, mib4~ mib8 si'4. |
+    r8 fad4. | mib4. r8 |
+    fa''8 mi re dod re16 dod re mi fa8 dod |
+    r16 fa8 dod16 r fa dod8 |
+    do16[ sol r fa'] fad r do'8 |
+    sib lab sol lab16 sol |
+    lab sib do8 sol lab,16 sol |
+    fad sol lab r si' lad si do re8 |
 
+    %%% Quatuor %%%
+    r16 re,,, dod dod re re dod dod |
+    r re fa lad dod fad |
+    r re, dod dod re re dod dod |
+    r re sol lad red fad |
+    r fad, si do si fa' do si |
+    r8 sol16 dod fad do' |
+    r re,, dod re' dod mib' |
+    si2 r4\fermata R2.*6 R2*2 R2.
+
+    %%% Air baryton 1 %%%
+    R2*2 R2. R2*2 R2.
+    re,2~ re4 r | R2.
+    lab2~ lab4 r |
+    r r16 dod dod dod dod dod dod dod |
+    R2 la16 fa' la8 fa16 la |
+    fa'2 dod4 r8 | sol4. r8 |
+    r red mi fad sol sold la si do dod re16 mi re8 r4 |
+    sold,16 sold sold sold r sold sold sold |
+    r8 re, la' si' fad'4 |
+    r16 r32 sold,, re'16 mi~ mi8 re~ re4 r |
+    r8 mib,16 solb~ solb2 | R2
+
+    %%% Doppio tempo %%%
+    re8 r r4 | R2*6
+    reb4 solb8 lab mib'4 |
+    r mi,8 sol do4 |
+    r fa,8 sold si4 |
+    r dod,8 re fad4 |
+    r dod8 fad sold4 |
+    r fad8 sold si4 |
+    r sold8 si re4 |
+    r8 si si si sold'4 sol sold8 re~ |
+    re4. r8 | R2. R2 R2. R2
+    r2 r8 dod,16 re | mi4 r8 re |
+    mi16 sold la re mi4 r | R2 R2.
+    \repeat tremolo 8 {sold,32 la}
+    \tt {re16 mib re mib re} mib16 sold la sold la re mib re |
+
+    %%% Climax %%%
+    sold8 r r4 | R4. |
+    sib,8. sib16 sib8 r |
+    r4 la8 r sold r r4 | R4.
+    do8. do16 do8 r |
+    r4 sol8 r sold r r4 | R2
+    re''4 r8 r16 dod sold mib sib fa |
+    do2 r4 | do4 dod2 fa4 |
+
+    %%% Soprano 2 %%%
+    do4 r2 R1 |
+    re,8 re re re r4 | R1
+    re8 re re r r4 | R1
+    r8 mi mi mi mi mi | R1
+    r4 mid8 mid mid r |
+    r mid mid mid mid mid mid mid |
+    R2. R1 R2. R1 R2. R1 R2.
+    sold8 sold sold sold r2 |
+    r8 sold sold sold sold4 |
+    sold8 sold sold sold r2 |
+    la8 la r2 |
+    sold8 sold r4 r lad8 lad |
+    si4 r2 |
+    re,8 re re re r2 | R2. R1
+    r8 la''' la, re sold,4 |
+    sold' r r2 | R2. R1 R2.
+
+    %%% Soprano 1 %%%
+    re,,8 re re re r2 |
+    r8 re re re re4 |
+    re8 re r4 r2 |
+    r8 mi mi mi mi4 | r2 mi8 mi r4 |
+    mid4 r2 R1 R2. R1 R2. R1 |
+    sold2.~ sold2. r4 | R2.
+    sold8 sold sold sold r sold sold sold |
+    sold4 r2 sol4 r r2 | R2.
+    sol4 r r2 R2. R1
+    sol4 r2 | R1 R2. R1 R2.
+
+    %%% Duo %%%
+    re'2 la' | sold4 mi re r |
+    do1 re4. sold,8~ sold la~ \t {la sib re} |
+    fad4. r8 \t {fad dod fad} si4~ |
+    si1 sold2~ sold4 r | sold,2 |
+
+    %%% Baryton 2 %%%
+    re'4 r2 | re4 \tt {re,16 fad sold si dod} re4 |
+    re r2 |
+    re4 r16 do32 dod re8 mib16 re32 mib fa8 |
+    lab4 r2 | re,4 lab' si |
+    re2 r4 | r8 re,, re re re re |
+    re'4 \tt {re,16 fad la sib dod} re4 |
+    \tt {re,16 fad lad si re} mib4 \tt {re,16 fad sol si red} |
+    mi4 r2 R4.
+    sib8 sib sib sib sib sib |
+    re, re re re re re | R2.
+    re8 re re re re re | re2 r4 |
+    fad8 fad fad fad fad fad |
+    re'4 re re re r2 |
+    r8 re' re re re re | R2.
+    r8 re re re re re |
+
+    %%% Boum %%%
+    la,4 r2 R2.*2 |
+    r4 mi2 mib mi4 |
+    r fa2 mi4 lab la |
+    r re2 dod4 fad fa |
+    r fa2 mi4 lab la |
+    r sol2 lab4 do si |
+    r8 re,, mib sol fad sib si mib
+    \tt {sol16 re la mi si'} fad' dod lab mib |
+
+    %%% Contralto %%%
+    re8 r fad fad fad fad fad fad fad fad r4 |
+    re8 fad fad fad fad fad fad fad fad fad r fad |
+    fad fad fad fad fad fad fad fad |
+    lab lab lab lab lab lab lab lab |
+    r4 fa8 fa fad r r4 | R2. R2*6
+    sold8 sold sold sold r4 | r8 sold sold sold sold4 |
+    sold'8 sold sold sold r4 | r8 sold sold sold sold4 |
+
+    %%% Grand ensemble %%%
   }
 }
