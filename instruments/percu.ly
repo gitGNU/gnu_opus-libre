@@ -1777,7 +1777,7 @@ ActeDeuxSceneTroisPercus = <<
     %%% Larghetto %%%
     R4.*9
     s4. R4.*3 s4. R4.*2
-    fa,4.\laissezVibrer R4.*6 |
+    fa,!4.\laissezVibrer R4.*6 |
     la4.\laissezVibrer R4.*3 |
     fa4.\laissezVibrer R4. |
     la4.\laissezVibrer |

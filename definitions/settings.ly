@@ -151,10 +151,16 @@ includePartsLayout = \layout {
   }
   \context {
     \Staff
+    \override VerticalAxisGroup #'remove-empty = ##f
+
     %%% It's silly to keep printing the instrument name in
     %%% separate parts; however some instruments (clarinets, etc)
-    %%% may need it.
-    %\remove Instrument_name_engraver
+    %%% may need it (therefore we don't remove the engraver).
+    \override InstrumentName #'stencil = #f
+  }
+  \context {
+    \DrumStaff
+    \override VerticalAxisGroup #'remove-empty = ##f
   }
   \context {
     \Devnull

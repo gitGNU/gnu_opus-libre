@@ -10,11 +10,13 @@
 SaxAltoDeux = {
   #(make-instrument-name 'saxophone-two "alto sax" 25)
   \clef treble
+  \revert Staff.InstrumentName #'stencil
 }
 
 SaxophoneBaryton = {
   #(make-instrument-name 'saxophone-baritone "baritone sax" 25)
   \clef bass
+  \revert Staff.InstrumentName #'stencil
 }
 
 PrologueSaxophoneDeux = { \SaxophoneBaryton
@@ -610,10 +612,10 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     fa,,4.~ fa4 r8 | R4.*5
     la4.~ la4 r8 | R4.*2
     fa4.~ fa4 r8 | la4 r8 |
-    reb,8 r4 | r8 re r |
-    reb r4 | r8 re r |
-    fad r4 | fa4.~fa4 r8 |
-    reb r4 | r8 re r |
+    reb,8 r4 | re8 r4 |
+    reb8 r4 | re8 r4 |
+    fad8 r4 | fa4.~fa4 r8 |
+    reb r4 | re8 r4 |
     reb r4 | do'4.~do4 r8 |
     reb, r4 sol8 r4 |
     reb8 r4 sol8 r4 |

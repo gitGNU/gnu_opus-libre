@@ -10,11 +10,13 @@
 FluteDeux = {
   #(make-instrument-name 'flute-two "flute" 25)
   \clef treble
+  \revert Staff.InstrumentName #'stencil
 }
 
 Piccolo = {
   #(make-instrument-name 'piccolo "flute" 25)
   \clef "G^8"
+  \revert Staff.InstrumentName #'stencil
 }
 
 PrologueFluteDeux = { \FluteDeux

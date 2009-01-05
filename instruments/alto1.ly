@@ -1036,7 +1036,7 @@ ActeDeuxSceneDeuxAltoUn = { \AltoUn
 ActeDeuxSceneTroisAltoUn = { \AltoUn
   \relative {
     %%% Larghetto %%%
-    sold'16 sold la dod, sol' sold |
+    sold'16 sold la dod, sold' sold |
     la dod, sold' sold la dod, |
     sold' sold la dod, sold' sold |
     la dod, sold' sold la dod, |

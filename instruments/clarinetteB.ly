@@ -10,11 +10,13 @@
 ClarinetteBasse = {
   #(make-instrument-name 'clarinet-bass "clarinet" 25)
   \clef bass
+  \revert Staff.InstrumentName #'stencil
 }
 
 ClarinetteDeux = {
   #(make-instrument-name 'clarinet-bes "clarinet" 25)
   \clef treble
+  \revert Staff.InstrumentName #'stencil
 }
 
 PrologueClarinetteDeux = { \ClarinetteDeux
