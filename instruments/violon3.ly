@@ -1189,5 +1189,28 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
 
     %%% Boum %%%
     <sol,,! sold'>4 r2 R2.*2
+    r4 <re'\parenthesize sold dod\harmonic la'\harmonic sold'>2~
+    <la'' sold'>2.~ <la sold>2.~ <la sold'>2. |
+    r8 fad, fad fad fad fad fa fa la la sib sib |
+    r lab lab lab lab lab la la do do dod dod |
+    r <do, sol'> <do sol'> <do sol'> <do sol'> <do sol'> |
+    sold' sold <lab do> <lab do> <sol si> <sol si> |
+    r8 sol,8:32 sib4: si8: sib: |
+    si: red: mi: lab: sol4: |
+
+    %%% Contralto %%%
+    re4 r8 \pizz re r re r re |
+    re4\thumbpizz \arco sold'\glissando |
+    re' r8 \pizz re,, |
+    r re r re | r re r re |
+    r re r re | r re r re |
+    r <lab mib'>\arpeggUp r <lab mib'>\arpeggUp |
+    r \simile <lab mib'> r <lab mib'> |
+    r4 \arco fa'8 fa fad4 r | R2.
+    R2*4 \pizz r4 sold,8 sold la4 r |
+    \arco la8 la sold4 r r sib8 sib la4 |
+    la8 la sold4 r r si8 si sib4 |
+
+    %%% Grand ensemble %%%
   }
 }

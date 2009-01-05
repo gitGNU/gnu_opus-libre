@@ -1241,5 +1241,30 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
 
     %%% Boum %%%
     <sol,,! sold'>4 r2 R2.*2
+    R2.*2 r4 \ottava #1
+    <sol'' do\harmonic sol''>2~ sol''2.~ sol~ sol4
+    <sol,, do\harmonic sol''>2\upbow |
+    <sold dod\harmonic sold''>2.~ sold''2 r4 \ottava #0 |
+    r8 si,,, si si si si | si si red red mi mi |
+    r8 si,8:32 sib: re: mib: sol: |
+    fad: si: do: mi: mib4: |
+
+    %%% Contralto %%%
+    re4 r8 \pizz re, r re r re |
+    re4\thumbpizz \arco sold'\glissando |
+    re' r8 \pizz re,, |
+    r re r re | r re r re |
+    r re r re | r re r re |
+    r <lab mib'>\arpeggUp r <lab mib'>\arpeggUp |
+    r \simile <lab mib'> r <lab mib'> |
+    r4 \arco fa'8 fa fad4 r | R2.
+    r4 fad8 fad sol4 r r sol8 sol sold4 r |
+    R2 r4 \pizz mi8 fa |
+    \arco la, la la la la la |
+    la la la la la la |
+    la la la la la la |
+    la la la la r4 |
+
+    %%% Grand ensemble %%%
   }
 }

@@ -1252,5 +1252,28 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
 
     %%% Boum %%%
     <sol la>4 r2 R2.*2
+    r8 sol sol sol sol sol | lab lab si si do do |
+    r do do do do do | dod dod mi mi fa fa |
+    r re re re re re dod dod fad fad fa fa |
+    r fa fa fa fa fa | mi mi lab lab la la \clef treble |
+    r sol si sol si sol | si sold mib' do mi do \clef alto |
+    r8 sol, fad sib si sib | re si do re mib4 |
+
+    %%% Contralto %%%
+    re4 \pizz fad, fad fad |
+    fad r re' r8 <fad, re'>\arpeggUp |
+    r <fad re'>\arpeggUp r <fad re'>\arpeggUp |
+    r \simile <fad re'> r <fad re'> |
+    r <fad re'> r <fad re'> |
+    r <fad re'> r <fad re'> |
+    r <mib lab> r <mib lab> |
+    r <mib lab> r <mib lab> |
+    r4 \arco lab8 lab la4 r | R2.
+    r4 sol8 sol lab4 r |
+    r sold8 sold la4 r | R2*2
+    sold'8 sold la4 r |
+    r sol8 sol sold4 |
+    sold8 sold la4 r |
+    r fad8 fad sol4 |
   }
 }

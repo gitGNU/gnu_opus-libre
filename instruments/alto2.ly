@@ -1242,5 +1242,30 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
 
     %%% Boum %%%
     <sol la>4 r2 R2.*2
+    r8 mi mi mi mi mi | mib mib lab lab sol sol |
+    r lab lab lab lab lab |
+    la la do do dod dod |
+    r re re re re re |
+    dod dod fad fad fa fa |
+    r fa fa fa fa fa | mi mi lab lab la la \clef treble |
+    r si sol si sol si |
+    sold si do mib do mi \clef alto |
+    r re,, mib sol fad sol |
+    si fad mi lab sol4 |
+
+    %%% Contralto %%%
+    re'4 \pizz re, re re re r re r8 <fad re'>\arpeggUp |
+    r <fad re'>\arpeggUp r <fad re'>\arpeggUp |
+    r \simile <fad re'> r <fad re'> |
+    r <fad re'> r <fad re'> |
+    r <fad re'> r <fad re'> |
+    r <mib lab> r <mib lab> |
+    r <mib lab> r <mib lab> |
+    r4 \arco fa8 fa fad4 r | R2. R2*3
+    r4 \pizz do8 do dod4 r | R2
+    \arco sold''8 sold la4 r |
+    r sol8 sol sold4 |
+    sold8 sold la4 r |
+    r fad8 fad sol4 |
   }
 }

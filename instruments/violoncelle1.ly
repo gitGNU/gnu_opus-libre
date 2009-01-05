@@ -1212,5 +1212,28 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
 
     %%% Boum %%%
     <fad, lad>4 r2 R2.*2 |
+    r8 si si si si si | do do mib mib mi mi |
+    r fa fa fa fa fa | mi mi la la lab lab |
+    r la la la la la | sib sib dod dod re re |
+    r reb reb reb reb reb | do do fa fa mi4 |
+    fa,,2.~ fa2 r4 | sold2.~ sold2 r4 |
+
+    %%% Contralto %%%
+    re4 r R2 r4 sold''\glissando <re, re'>
+    \pizz <fad, re'>\arpeggUp |
+    <fad re'>\arpeggUp <fad re'>\arpeggUp |
+    \simile <fad re'> <fad re'> |
+    <fad re'> <fad re'> |
+    <fad re'> <fad re'> |
+    <mi do'> <mi do'> |
+    <mi do'> <mi do'> |
+    \arco <red si'>8 <red si'> r4 |
+    <do la'> r R2. |
+    r4 sold'8 sold la4 r r la8 la sib4 r | R2*2
+    \pizz dod,8 la' fa' la r4 |
+    sol, sib mi |
+    dod,8 la' fa' la r4 | r <dod, mi> r |
+
+    %%% Grand ensemble %%%
   }
 }

@@ -125,6 +125,7 @@ ActeDeuxSceneTrois = \makeExtraSection \ActeDeuxSceneTroisViolonUn \ActeDeuxScen
   \include "./master/master.ly"
 }
 
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Altos  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -149,7 +150,7 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisAltoUn \ActeDeuxSceneTroisA
 \bookpart {
   \include "./master/master.ly"
 }
-
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Violoncelles  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -175,9 +176,8 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisVioloncelleUn \ActeDeuxScen
   \include "./master/master.ly"
 }
 
+%
 
- %}
-%{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% FluteUn %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePart \PrologueFluteUn \PrologueMesures
@@ -488,7 +488,7 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisVioloncelleDeux \ActeDeuxScene
 
 \bookpart {
   \include "./master/master.ly"
-}%
+}%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Contrebasse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -512,7 +512,7 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisContrebasse \ActeDeuxSceneTroi
 
 \bookpart {
   \include "./master/master.ly"
-}%
+}%{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -538,7 +538,7 @@ ActeDeuxSceneTrois = \makePianoPart \ActeDeuxSceneTroisPiano \ActeDeuxSceneTrois
 \bookpart {
   \include "./master/master.ly"
 }
-%}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Percus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePianoPart \ProloguePercus \PrologueMesures
