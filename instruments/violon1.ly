@@ -987,29 +987,29 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
   \relative {
     %%% Larghetto %%%
     R4.*16
+    mi4.~\pp mi~ mi~ mi4 r8 | R4.*3
     mi4.~ mi~ mi~ mi4 r8 | R4.*3
-    mi4.~ mi~ mi~ mi4 r8 | R4.*3
-    la,16 la la la la la |
+    \st {la,16\mp la la la la la |
     la la la la la la |
     la la la la la la |
     la la la la la la |
+    la la la la la la} |
+    \ten <re mi>4.~-- <re mi>4 r8 |
+    \st {la16 la la la la la |
     la la la la la la |
-    <re mi>4.~<re mi>4 r8 |
-    la16 la la la la la |
+    la la la la la la} |
+    re\pp\< re mi mi fad fad |
+    sol\mp re re re mib mib |
+    \st {la,\p la la la la la |
     la la la la la la |
     la la la la la la |
-    re re mi mi fad fad |
-    sol re re re mib mib |
-    la, la la la la la |
-    la la la la la la |
-    la la la la la la |
-    la la la la la la |
-    sid' sid dod dod, dod dod |
-    re? re sid' sid dod dod, |
+    la la la la la la} |
+    sid'\mp sid dod( dod,) dod dod |
+    re? re sid' sid dod( dod,) |
     dod dod do do do do |
-    la la la la la la |
-    la la la la la la |
-    re\leftpizz \pizz <sib re> r <sib re> |
+    \st {la la la la la la |
+    la la la la la la} |
+    re\p\leftpizz \pizz <sib re> r <sib re> |
     re\leftpizz <sib re> r <sib re> |
     re\leftpizz <sib re> r <sib re> |
     re\leftpizz <sib re> r <sib re> |
@@ -1018,117 +1018,117 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
     re\leftpizz  <sib re> r \arco re( |
     mi8) r16 \pizz mi |
     do mi r mi do mi r do |
-    mi r \arco mi mi mi mi mi mi |
-    mi8 r16 \pizz mi do mi r \arco mi |
-    mid mid mid mid mid dod mid mid |
+    mi r \arco mi-. \st {mi mi mi mi mi |
+    mi8} r16 \pizz mi do mi( r \arco mi-.) |
+    \st {mid mid mid mid mid dod mid mid |
     dod mid r mid mid mid mid mid |
     dod mid r mid mid mid mid mid |
-    dod mid r mid sol sol sol sol |
+    dod mid} r mid( \st {sol) sol sol sol |
     sol sol sol sol sol sol sol sol |
     R4 sol16 sol re re lab lab sol' sol |
     re re sol sol r8 |
     sol16 reb lab sol' reb lab sol' reb |
-    lab sol' reb sol | R4
-    sol16 do, sol' do, |
+    lab sol' reb sol} | R4
+    sol16\ppleggiero do, sol' do, |
     sol' do, sol' do, |
     sol' do, sol' sol |
-    la, la la la la la |
+    \st {la,\p la la la la la |
     la la la la la la |
     mi' mi mi mi mi mi |
     la, la la la la la |
     mi' mi mi mi mi mi |
-    mi mi mi mi mi mi |
-    r8 <sold, sold'> <la la'> |
+    mi mi mi mi mi mi} |
+    r8 \acc {<sold, sold'> <la la'> |
     <sib sib'> r4 |
     r8 <sold sold'> <la la'> |
     <sib sib'> r4 |
     r8 <lad lad'> <si si'> |
-    <do do'> r4 |
+    <do do'>} r4 |
     la'16 la la la la la |
-    sib sib sib sib dod dod |
-    re sol, do, re' sol, do, re' sol, |
+    sib\< sib sib sib dod dod |
+    \st {re\fp sol, do, re' sol, do, re' sol, |
     do, re' sol, do, re' sol, re' sol, |
-    re'8 do, re si'16 si do8 dod16 dod |
-    re8 \pizz <re, re'> r \arco re'16 re |
-    mi8 r R4 re,8\leftpizz re'16 re |
-    mi8 r R4 re,8\leftpizz re'16 re |
-    mi mi, mi mi mi8 mi16 mi |
-    fa8 mi16 mi mi8 red'16 red |
-    mi la, re, mi' la, re, mi' la, |
-    mi'8 r sold, sold la r |
-    fad fad sol r |
-    re16 sol re do sol' re do sol' |
+    re'8 do, re} si'16 si do8-- dod16\< dod |
+    re8-.\! \pizz <re, re'> r \arco re'16\f re |
+    mi8-> r R4 re,8\leftpizz re'16\< re |
+    mi8->\! r R4 re,8\leftpizz re'16\< re |
+    mi->\fp mi, mi mi mi8 mi16 mi |
+    fa8 mi16 mi mi8 red'16\< red |
+    mi\mf la, re, mi' la, re, mi' la, |
+    mi'8 r sold,--\p sold-- la-- r |
+    fad-- fad-- sol-- r |
+    re16\ppleggiero sol re do sol' re do sol' |
     R2.-\fermataMarkup R2.*2
-    r8 sold16 sold la8 fad16 fad sol8 r | R2.
-    r8 sold16 sold la8 fad16 fad sol8 r | R2.
+    r8 sold16\p sold la8---. fad16 fad sol8---. r | R2.
+    r8 sold16 sold la8---. fad16 fad sol8---. r | R2.
 
     %%% Interlude %%%
-    r8 sold16 sold la8 r |
+    r8 \st {sold16 sold la8 r |
     sol16 sol sold8 r fa |
-    <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
-    <sold si>16 <sold si> <la do>8 <sold si>16 <sold si> <la do>8 |
-    <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
+    <mi sold>16\pp <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
+    <sold si>16 <sold si> <la do>8 <sold si>16 <sold si> <la do>8} |
+    \simile <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
     <sold si>16 <sold si> <la do>8 <mid sold>16 <mid sold> <fad la>8 |
     <sold si>16 <sold si> <la do>8 <si re>16 <si re> <do mib>8 |
     <mi,sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
     <sold si>16 <sold si> <la do>8 <sold si>16 <sold si> <la do>8 |
-    <mid sold>16 <mid sold> <fad la>8 <sold si>16 <sold si> <la do>8
-    <si re>16 <si re> <do mib>8 |
-    r16 mi, red mi r mi red mi |
+    <mid sold>16\< <mid sold> <fad la>8 <sold si>16 <sold si> <la do>8
+    <si re>16 <si re> <do mib>8\! |
+    r16 \st {mi,\pleggiero red mi r mi red mi |
     r sol fad sol r sol fad sol |
-    r mi red mi r red mi8 |
-    fad16 sol8 la16 sib8 red,16 mi |
+    r mi red mi r red} mi8-- |
+    fad16-. sol8-- la16-. sib8-- \st {red,16 mi} |
     r mi red mi r mi red mi |
     r sol fad sol r sol fad sol |
-    r8 fad16 fad sol sol sib si re mib |
-    lad lad si si, lad' lad si si, |
+    r8 fad16\< fad sol sol sib si re mib |
+    lad\mf lad si si, lad' lad si si, |
     dod' dod re re, dod' dod re re, |
     lad' lad si si, lad' lad si si, |
     dod' dod re re, dod' dod re re, |
     lad' lad si si, lad' lad si si, |
     dod' dod re re, dod' dod re re, |
     lad' lad si si, dod' dod re re, |
-    mi' mi fa fa, mi' mi fa fa, |
+    mi'\mp mi fa fa, mi' mi fa fa, |
     dod' dod re re, dod' dod re re, |
     mi' mi fa fa, mi' fa fa, dod' |
-    re re, mi' fa fa, sol' lab lab, |
-    sol' sol lab lab, sol' sol lab lab, |
+    re\< re, mi' fa fa, sol' lab lab, |
+    sol'\mf sol lab lab, sol' sol lab lab, |
     mi' mi fa fa, lad lad si si, |
-    dod' dod re re, mi' mi fa fa, |
-    sol' lab lab, sol' sol lab lab, mi' |
+    dod'\< dod re re, mi' mi fa fa, |
+    sol'\! lab lab, sol' sol lab lab, mi' |
     mi fa fa, mi' fa fa, dod' re |
-    fa, sol' sol lab lab, sol' lab lab, sold' sold |
+    fa,\< sol' sol lab lab, sol' lab lab, sold'->\! sold-> |
 
     %%% Quatuor %%%
-    la8 \pizz sold,, la fad | sib4 r8 |
-    r sold la fa si4 r8 |
+    la8-> \pizz sold,,\mp la fad | sib4-- r8 |
+    r sold la fa si4-- r8 |
     r sold la re,\leftpizz |
-    \arco \ind #"jeté" <sol dod>32 <sol dod>16. r16 <sol dod>32 <sol dod> r8 |
+    \arco \ind #"jeté" <sol dod>32\mf <sol dod>16. r16 <sol dod>32 <sol dod> r8 |
     <sol dod>32 <sol dod>16. <sol dod>32 <sol dod>16. r8 |
-    fa''2 r4\fermata
-    r8 sold,,16 sold la8 r r4 | R2.*2
+    fa''2--\f r4\fermata
+    r8 sold,,16-.\p sold la8 r r4 | R2.*2
     r2 r8 sold16 sold la8 \pizz fad r \arco mi16 mi fa8 \pizz red |
     r re do4 sib |
-    r4 \arco \ind #"(flautando)" la'~\CaV la2~\CaV la4 r2 |
+    r4 \arco \ind #"(flautando)" la'~\pp\CaV la2~\CaV la4 r2 |
 
     %%% Air baryton 1 %%%
-    la2~la\glissando mi r4 |
-    la2~la\glissando mi r4 |
-    <mi! mib'>2~<mi mib'>~<mi mib'>4 re mib |
-    mi2~mi4 r |
-    lab, sib r8 <mi sold>16 <mi sold> |
-    <fa la>8 <mi sold>16 <mi sold> <fa la>8 <mi sold>16 <mi sold> |
-    <fa la>8 <mi sold>16 <mi sold> <fa la>8 |
-    sib16 sib, la' la sib sib, la' la |
-    sib sib, la' la sib sib |
-    si si, lad' lad si si, lad' lad |
+    la2~\p( la\glissando mi) r4 |
+    la2~(la\glissando mi) r4 |
+    <mi! mib'>2~\pp <mi mib'>~ <mi mib'>4 re( mib) |
+    mi2~ mi4 r |
+    lab,( sib) r8 \st {<mi sold>16\pp <mi sold>} |
+    <fa la>8-- <mi sold>16-. <mi sold>-. <fa la>8-- <mi sold>16-. <mi sold>-. |
+    <fa la>8-- \st {<mi sold>16 <mi sold> <fa la>8} |
+    sib16\<( sib,) la' la sib( sib,) la' la |
+    sib( sib,) la' la sib sib |
+    \simile si\pp si, lad' lad si si, lad' lad |
     si si, fad' fad sol si, lad' lad |
-    si si, si' si do8 <si re>16 <si re> <sid red>8 red16 red |
-    mi mi re re mi mi re re mi mi re re mi mi re re |
+    si\< si, si' si do8-- <si re>16 <si re> <sid red>8-- red16 red |
+    \st {mi\mf mi re re mi mi re re mi mi re re mi mi re re |
     mi mi re re mi mi re re mi mi re re |
     mi mi re re mi mi re re mib mib reb reb mib mib do do |
-    do do reb reb do do reb reb mi, mi fa fa |
-    do do reb reb sold, sold la la |
+    \cresc do do reb reb do do reb reb mi, mi fa fa |
+    do do reb reb sold, sold la la} |
 
     %%% Doppio tempo %%%
     re8 r r4 R2*3
