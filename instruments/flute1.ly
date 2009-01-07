@@ -948,5 +948,53 @@ ActeDeuxSceneTroisFluteUn = { \FluteUn
     re8 re re re r4 | r8 fa fa fa fa4 |
 
     %%% Grand ensemble %%%
+    la1~ la2 r |
+    sib4 la do re sold, r r8 re, re re |
+    re re re re r2 |
+    la'8 la la4~ \t {la8 re reb} \t {solb dob sib} |
+    mib2~ \t {mib8 si do} lab mib |
+    sib4 r r r16 mi, mi' mi |
+    mi'4 r r2 |
+    r2 r4 la,,8 la si4 r mi,8 la mi' re' |
+    r2 la'8 r r4 |
+    sold,2 la4 re | sold,2 \t {la4 do re} |
+    sold,4 r r la,8 re sold4 r r8 re mi sold |
+    la4 r r8 fad, sold do |
+    fa solb solb fa fa solb solb fa |
+    sold la la sold sold la la sold |
+    dod re re dod dod re re dod |
+    fa solb solb fa r2 |
+    sold2~ sold8 la~ la4 |
+    sold4. la8~ la2 | r8 la4. r8 la4. R2.
+
+    %%% Chute %%%
+    la4 sold8 sold la4 |
+    sold8 sold la4 sold8 sold |
+    la4 do,8 do reb4 |
+    do8 do reb4 mi,8 mi |
+    fa4 mi8 mi fa4 |
+    sold,8 sold sold4 R2*2
+
+    %%% Andante al fine %%%
+    R2.*5
+    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2 r4 |
+    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2 r4 |
+    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2 r4 | R2.
+    sold16 mi sold mi sold mi sold mi sold mi sold mi~ |
+    mi2 r4 |
+    sold16 mi sold mi sold mi sold mi sold4 |
+    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2 r4 |
+    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2 r4 |
+    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2 r4 | R2.*14
+    mi2.~ mi2 r4 |
+    mi' r2 |
+    \tt {r16 fad si la re} \t {do4 mib8} si'4 |
+    r8 mi, \t {mi mi mi} \tt {mi16 mi mi mi mi} |
   }
 }

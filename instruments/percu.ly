@@ -1754,7 +1754,7 @@ ActeDeuxSceneTroisPercus = <<
     R1*6 R2*3
 
     %%% Baryton 2 %%%
-    R2.*11\GrandMarimba R4.
+    R2.*11\GrandVibraphone R4.
     R2.*14
     re''4 re re re2*3/2\laissezVibrer |
     \gauche r8 sib,, \droite \t {la' solb fa'} re16 dod'8. |
@@ -1768,10 +1768,28 @@ ActeDeuxSceneTroisPercus = <<
     \tt {mi,,16 sold sol si dod,} fa mi' mi, sold'
     \t {sol,8 si sib'} |
     \pl re,4 re' r |
-    R2*11 R2. R2*6 R2.*4
+    R2*11R2. R2*6 R2.*4
 
     %%% Ensemble %%%
+    R1 r4 mi,, sold la sib1 R1*3
+    \gauche r8 mi,, si' do \droite sol' lab
+    mib' si | sib'4 r8 <sib, si'!>~
+    \t {<sib si'>4 si,! sib'} lab'1
+    s1 R1 r2 s2 <la,! lab'>1 |
+    r4 la8 sold do4 la | sold' r r
+    \pl {<mi, la> <re si'>} {<re' sol> <mi sold>} r r2 |
+    R1 s1*2 re,8 sib' la' re,, sold' sold la re,, |
+    si' \gauche fa, mi' \droite re' si'4 \t {do,8 \gauche lab, reb \droite} |
+    r2 <si' dod'>4 <dod si'> |
+    <red la'> <mi sold> \pl {red red8 dod} {la' mi la si} |
+    <si, dod'>4 reb'8 do reb mib fa4 | R2.
 
+    %%% Chute %%%
+    R2.*5 R2*3
+
+    %%% Andante al fine %%%
+    R2.*6 <do,, si'>2.~ <do si'>4. <si do'>~ <si do'>4 <do si'>2\laissezVibrer |
+    R2.*5 <dod si'>2. <do si'>\laissezVibrer R2.*24
   }
   \relative {
     %%% Larghetto %%%
@@ -1849,6 +1867,23 @@ ActeDeuxSceneTroisPercus = <<
     R2*12 R2. R2*6 R2.*4
 
     %%% Ensemble %%%
+    \t {r4 fa, la} sold8 do si red~ red1 R1*4
+    s1 R1 r4 re,2. re4 sold \droite re' sold \gauche |
+    re, si' sold8 fad re4 |
+    dod8 re sold la \t {\droite re4 lab' \gauche sib,}|
+    r2 r8 sol si sib | re4 r r2 | R1*3
+    re,8 la' \droite mi' \gauche re,
+    \droite sold' \gauche re, la' \droite mi' |
+    \gauche la, re \droite sold
+    \gauche la, \droite do' \gauche la, re \droite do' \gauche R1 s1
+    re,,1\laissezVibrer s1 R1 R2.
+
+    %%% Chute %%%
+    R2.*5 R2*3
+
+    %%% Andante al fine %%%
+    R2.*40
+
   }
   \new DrumStaff \drummode {
     %%% Larghetto %%%
@@ -1910,8 +1945,10 @@ ActeDeuxSceneTroisPercus = <<
     R2. R2*6 R2.*4
 
     %%% Ensemble %%%
-    R1*27
-    R2.*6 R2*3
+    R1*24 R2.
+    r2 r8 \ind #"Tam-tam (bag. de timbale)" \t {cb16 cb cb} |
+    cb2\laissezVibrer s4 R2. \ind #"Cymbale" hh2\laissezVibrer s4 |
+    R2. R2*3
 
     %%% Épilogue %%%
     R2.*40
@@ -1985,5 +2022,16 @@ ActeDeuxSceneTroisPercus = <<
     R2*12 R2. R2*6 R2.*4
 
     %%% Ensemble %%%
+    R1*24 R2.
+    R2. r2 r8 sold, r sold \t {sold sold sold} sold4 |
+    r4 sold2:32\glissando lad4.:32\glissando mi8 \t {re' mi, re'}
+    re re r re r re r4 R2 |
+
+    %%% Épilogue %%%
+    R2.*32
+    mi2.:32~ mi:~ mi4 r mi8 mi |
+    mi,2.:32~ mi4 mi'8 mi \t {mi mi mi} |
+    mi,2.:32~ mi:~ mi8 mi' \t {<mi, mi'> mi' mi}
+    \tt {<mi, mi'>16 mi' mi mi, mi'}
   }
 >>

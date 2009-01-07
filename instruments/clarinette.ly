@@ -985,5 +985,34 @@ ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
     sold'8 sold sold sold r4 | r8 sold sold sold sold4 |
 
     %%% Grand ensemble %%%
+    R1 r2 r8 mi, sold sol | si2 do4 mi~ |
+    mi r r2 | \t {r8 solb, sib} la do \t {re4 fa solb} |
+    r4 sib, reb mi | solb2. r4 |
+    r8 reb \t {solb, sib la} re4 mi8 sol |
+    lab4 r r8 mi, mi mi | mib mib re re r2 |
+    mib8 mib mib mib r2 |
+    la8 sold la' sold r2 |
+    r8 sib, sib sib sib sib sib sib |
+    r mi, mi mi r4 la'8 la |
+    sold4 r r sold,8 sold | la4 r r2 | R1
+    re,4 la' sold8 mi r mi |
+    r sold' r sold' r do, do sold |
+    re2. r4 |
+    dod8 dod dod4 r8 la r4 |
+    red'4 dod si lad si8 lad si dod red4 si |
+    dod' do si la | R2.
+
+    %%% Chute %%%
+    sib2. \t {la4 la sib~} sib | la lab sol |
+    solb fa mi do si, do re r R2*2
+
+    %%% Andante al fine %%%
+    R2.*6
+    do2.~ do4 r8 si~si4~ | si4 do2~ do r4 | R2.*4
+    dod2 r4 do2.~ do2 r4 | R2.*18
+    mi4 r2 | r4 red2
+    mi4 r \t {r8 sol do } |
+    \t {sib mib dod} fad fad16 la sol4 |
+    r8 mi,, \t {mi mi mi} \tt {mi16 mi mi mi mi}
   }
 }

@@ -1062,5 +1062,32 @@ ActeDeuxSceneTroisClarinetteDeux = { \ClarinetteDeux
     la'8 la la la r4 | r8 la la la la4 |
 
     %%% Grand ensemble %%%
+    R1 mi4 sold \t {sol si sib} |
+    re2. dod4 la sold do re |
+    fad, r r2 |
+    r4 solb lab sib reb2. do4 |
+    lab2 la mi4 r r2 |
+    mi,8 mi mi mi r2 |
+    re8 re re re r2 |
+    sold8 la sold' la r2 |
+    fa4 mib re do si8 do re mi fa4. sol8 |
+    lab4 r r la8 la sold4 r r2 |
+    R1 r8 re r la' sold mi re mi |
+    r la r la' r re, re la sold2. r4 |
+    re8 re re4 r8 sold r4 |
+    si4 sib lab sol r sold' fad mi |
+    red mi8 mib fa sol lab4 | R2.
+
+    %%% Chute %%%
+    mi'2.~ mi4 mib re reb do si sib la sold fa re sold, re r R2*2
+
+    %%% Andante al fine %%%
+    R2.*6
+    si'2.~ si4 r8 do~do4~ | do4 si2~ si r4 | R2.*4
+    si2 r4 si2.~ si2 r4 |R2.*18
+    mi4 r2 | R2.
+    mi4 r \t {r8 sol, do } |
+    \t {sib mib reb} solb sol do4 |
+    r8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi}
   }
 }

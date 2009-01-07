@@ -96,6 +96,10 @@
     subdivideBeams = ##t
     beatLength = #(ly:make-moment 1 8)
   }
+  \context {
+    \DrumStaff
+    \override StaffSymbol #'line-count = #1
+  }
 }
 
 
@@ -160,6 +164,7 @@ includePartsLayout = \layout {
   }
   \context {
     \DrumStaff
+    % Perhaps it's better? Not sure.
     \override VerticalAxisGroup #'remove-empty = ##f
   }
   \context {
@@ -208,7 +213,6 @@ includeScoreLayout = \layout {
     \remove Axis_group_engraver
     \override VerticalAxisGroup #'remove-empty = ##t
     \consists Hara_kiri_engraver
-    \override StaffSymbol #'line-count = #1
   }
   \context {
     \type Engraver_group
