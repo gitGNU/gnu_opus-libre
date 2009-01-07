@@ -1218,7 +1218,7 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
     sold' sold la la, sold' sold la la, |
     mid' mid fad la, mid' mid fad la, |
     la' la sib sib, la' la sib4 |
-    <si red>8 <si red> <do mi>4
+    <si, red>8 <si red> <do mi>4
     <si red>8 <si red> <do mi>4 |
     <red sol>8 <red sol> <mi sold>4
     <red sol>8 <red sol> <mi sold>4 |
@@ -1234,11 +1234,11 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
     mid' mid fad fad, mid' mid fad fad, |
     la' la sib sib, la' la sib sib, |
     do' do dod dod, sid' sid dod4 |
-    <mid, dod'>8 <mid dod'> <fad re>4
+    <mid, dod'>8 <mid dod'> <fad re'>4
     <mid dod'>8 <mid dod'> <fad re'>4 |
     <sold mid'>8 <sold mid'> <la fad'>4
     <sold mid'>8 <sold mid'> <la fad'>4 |
-    <mid, dod'>8 <mid dod'> <fad re>4
+    <mid dod'>8 <mid dod'> <fad re'>4
     <mid dod'>8 <mid dod'> <fad re'>4 |
     <sold mid'>8 <sold mid'> <la fad'>4
     <sold mid'>8 <sold mid'> <la fad'>4 |
