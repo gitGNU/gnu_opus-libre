@@ -755,5 +755,29 @@ ActeDeuxSceneTroisSaxophoneUn = { \SaxAltoUn
     reb' reb, r | sol r2 |
 
     %%% Grand ensemble %%%
+    R1*2 r2 r8 fad fad fad |
+    fad fad fad fad r4 reb~ |
+    reb r r8 fad fad fad r4 sol4 fa lab |
+    mi2 fa mi fa4 sol | la r r sold8 sold |
+    la4 r sol lab | r2 r8 re, sol do |
+    sold'4 r r2 |
+    la4 sol fa mi fa8 mi fa sol la4 mi~ | mi r r2 |
+    mi4 r r2 | R1 re,2. r4 |
+    r8 re re re re re re re |
+    r4 fad' mi re dod re8 dod re mi fad r |
+    mi4 fad sold la sold8 la sold fad mi4 la8 r |
+    re8 mib re do sib4 mi R2.
+
+    %%% Chute %%%
+    r4 \t {r8 fad, mi'~} mi4~ |
+    mi sib re mi,4. fad~ fad8 mib4 re8 r4 | R2. R2*3
+
+    %%% Andante al fine %%%
+    R2.*32
+    r2 mi,4 sold4. sol8 si4~ si8 sib re2 |
+    r8 mi, la sol do sib mib2. |
+    \t {r8 mi, si'} \t {la mi' re} la'4 |
+    r8 sol do sib reb4 |
+    r8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi}
   }
 }

@@ -112,14 +112,14 @@ PercuDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{
   \new PianoStaff <<
-    \new Staff = "percuDroite" \with { \remove Accidental_engraver }
+    \new Staff = "percuDroite"
     <<
-     \new Voice \with { \consists Accidental_engraver } { \clef treble $droite }
+     \new Voice { \clef treble $droite }
      \new Voice { \makeGhost $gauche }
     >>
-    \new Staff = "percuGauche" \with { \remove Accidental_engraver }
+    \new Staff = "percuGauche"
     <<
-     \new Voice \with { \consists Accidental_engraver } { \clef bass $gauche }
+     \new Voice { \clef bass $gauche }
      \new Voice { \makeGhost $droite }
     >>
   >>

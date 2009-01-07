@@ -770,5 +770,28 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     reb8 reb' reb'4 r | sol,, r2 |
 
     %%% Grand ensemble %%%
+    R1*2 r2 r8 sol sol sol |
+    sol sol sol sol r4 reb~ |
+    reb r r8 sol sol sol |
+    sol sol sol sol r2 |
+    mi1~ mi2 r8 mi mi mi |
+    mi mi mi mi r4 la8 re |
+    mi4 r sib la r2 r8 dod do si |
+    la4 r r2 | sib1~ sib2 r4 la8 la |
+    sib4 r r2 | sib4 r r2 |
+    R1 re,2. r4 |
+    r8 re re re re re re re |
+    r4 re'2.~ re8 re re re re re re re |
+    re2 r4 reb' mib fa solb fa8 solb |
+    fa mib reb4 solb lab | R2.
+
+    %%% Chute %%%
+    r8 re,, do'2 re,4 do'4. re,8~ re2 sold4~ sold si sib re2 r4 R2*3
+
+    %%% Andante al fine %%%
+    R2.*35
+    mi,2.~ mi2 r4 |
+    mi,2. \t {r8 mi sol} \t {red' sol re'} fad4 |
+    r8 mi,, \t {mi mi mi} \tt {mi16 mi mi mi mi}
   }
 }
