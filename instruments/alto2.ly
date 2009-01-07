@@ -1164,84 +1164,84 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     fa fa mi mi mi mi fa fa} |
 
     %%% Doppio tempo %%%
-    re2:16 re: re: re: re: re: re4 r |
-    sold2.~ sold~sold2 r4 |
-    re4 la' sold8 mi | re4 mi8 re la' sold~ |
+    re2:16\f re: re: re: re: re: re4-- r |
+    sold2.~\p sold~ sold2 r4 |
+    \st {re4\p la'} sold8( mi) | re4-. mi8( re) la'-. sold~-- |
     sold2.~ sold2 r4 |
-    r8 mi' re r r re r2 |
-    r4 <la re>~ <la re> r \clef treble sold'8 sold la4 r |
-    r2 sol8 sol sold4 r r2 sold8 sold la4 r |
-    r fa2:16 mib: la2: la4: | sol: mi: sib': sold: re: |
+    r8 mi'( re) r r re-> r2 |
+    r4 <la re>~-- <la re> r \clef treble \det {sold'8\mp sold la4 r |
+    r2 sol8 sol sold4 r r2 sold8 sold la4} r |
+    r fa2:16\p mib: la2: la4: | sol: mi: sib': sold: re: |
 
     %%% Climax %%%
     re4 r R4. |
-    re''16 dod si sold mi8 si \clef alto |
-    fa si, sib16 la sol mi | re8 r r4 | R4. \clef treble |
-    re'''8 si sold16 fad re si |
-    la8 re, \clef alto sib16 sol fa mi |
-    re8 r r4 | R2 \clef treble
-    re''4 r8 sib16 sib sib fa fa fa |
-    do2 r4 |
-    re''4 re,16 la sold fad re4 \clef alto sold,16 fad mi mib |
+    \ind #"détaché" re''16-> dod si sold \st {mi8 si \clef alto |
+    fa si,} sib16 la sol mi | re8-> r r4 | R4. \clef treble |
+    \st {re'''8 si} sold16 fad re si |
+    \st {la8 re,} \clef alto sib16 sol fa mi |
+    re8-> r r4 | R2 \clef treble
+    re''4 r8 sib16\> sib sib fa fa fa |
+    do2--\! r4 |
+    re''4---> re,16 la sold fad re4 \clef alto sold,16 fad mi mib |
 
     %%% Soprano 2 %%%
-    re8 r r2 | R1
-    r8 re r4 re8 re | red red r red red r dod dod |
-    re4 r8 re r re r re r re re r re re |
-    do do r do r do | r do r do do r do do |
-    dod dod r dod r dod r dod r dod r dod r dod |
+    re8-> r r2 | R1
+    r8 re-.-> r4 \st {re8 re | red red r red red r dod dod |
+    re4-- r8 re r re r re r re re r re\< re |
+    do\! do r do r do | r do r do do r do do |
+    dod dod r dod r dod r dod r dod r dod r dod} |
     R2. R1 R2. R1 R2. R1
-    <re sold>4 <re sold>8 <re sold> r4 |
-    sold'8 sold la4 r2 | r4 sol sol | sold4 r r2 |
-    \pizz sold,8 fad la fa' r4 r2 r4 \arco lad, |
-    si r2 \clef treble |
-    re4 la' sold8 mi re4 mi8 re la' sold r mi |
-    sold4 r r2 | <re' si'>4 sold8 mi re4 |
-    <sol,\harmonic la'\harmonic> r r2 \clef alto |
-    r4 r8 mi, r mi |
+    <re sold>4-- \st {<re sold>8 <re sold> r4 |
+    sold'8->\mp sold la4 r2 | r4 sol sol | sold4->} r r2 |
+    \pizz sold,8 fad la fa' r4 r2 r4 \arco lad,( |
+    si) r2 \clef treble |
+    re4-.\mf la'-. sold8( mi) re4-. mi8( re) la'( sold) r mi-. |
+    sold4-- r r2 | <re' si'>4-- sold8( mi) re4-- |
+    <sol,\harmonic la'\harmonic>-> r r2 \clef alto |
+    r4 r8 mi,-.\p r mi-. |
     R1 R2.
 
     %%% Soprano 1 %%%
-    sib'8 sib r sib r sib r sib sib sib r sib r sib |
-    sib sib r sib r sib r sib do do r do r do |
+    \st {sib'8\pp sib r sib r sib r sib sib sib r sib r sib |
+    sib sib r sib r sib r sib do\p do r do r do |
     do do r do r do r do dod dod r dod r dod |
-    r dod r dod r dod r dod |
+    r dod r dod r dod r dod} |
     R2. R1 R2. R1 R2. R1 R2.
-    sold'8 sold la4 r2 | r4 fad fad sol r r2 |
+    \st {sold'8->\mf sold la4 r2 | r4 fad fad sol->} r r2 |
     R2. R1 R2. R1
-    r2 mi8 mi | mi mi, mi' mi mi sold, sol' sol |
-    lab lab, mi' mi fa fa, sold' sol la la, sold' sold la la, \clef treble |
-    mi' fa la, do' dod dod, |
+    r2 \st {mi8\p mi} | mi( mi,) mi' mi mi( sold,) sol' sol |
+    lab( lab,) mi' mi fa( fa,) \simile sold' sol la la, sold' sold la la, \clef treble |
+    mi'\< fa la, do' dod dod, |
 
     %%% Duo %%%
-    mi'4 r r2 \clef alto |
-    sold,8 la sold mi re mi sold4~ |
+    mi'4--\! r r2 \clef alto |
+    sold,8\mf( la sold mi) re( mi) sold4~-- |
     sold1~ sold2. r4 |
-    fad8 sold fad re dod re fad4~ |
-    fad2 dod~ dod4 r |
-    la la sold2 |
+    fad8( sold fad re) dod( re) fad4~-- |
+    fad2 dod~-- dod4 r |
+    \det {la la sold2} |
 
     %%% Baryton 2 %%%
-    re'8 \t {si16 do dod} re8 \t {sold,16 si dod} re8 fad,32 sold si dod |
-    re4 re re |
-    mib8 \t {do16 dod re} mib8 \t {la,16 do re} \ttt {mib sol, la do re mib} |
-    fa4 fa r \clef treble |
-    <re' re'> <re re'> <re re'> <re re'> r2 |
-    <lab lab'>4 <lab lab'> <lab lab'> <lab lab'> r2 \clef alto |
-    re,4 \tt {re16 fad, la si do} re4 |
-    \tt {mib16 fad, lad si re} mib4 \tt {re,16 fad sol si red} |
-    mi8 r16 fa r8 mi r16 fa8 dod16 |
-    mi8 r16 dod mi fa | lab4 r2 |
-    sold8 sold la4 sol8 sol | sold4 r2 |
-    <fad, mi'>8 r16 <sol fa'> r8 <lab mi'> r16 <la fa'> r8 |
-    <sib mi> fa'16 dod do mi r8 fa16 dod r8 |
-    solb'16 mib re fa mi mib solb re sol mib lab fa |
-    mi sol solb fa lab mi sol fa fad sold la si |
-    <re, re'>4 <re re'> <re re'> <re re'> r2 |
-    <re re'>4 <re re'> <re re'> <re re'> r8 <do, do'> <mib mib'> <fad fad'> |
+    re'8--->\fsubito \t {si16( do dod)} re8---> \t {sold,16( si dod)} re8---> fad,32( sold si dod) |
+    \accdet {re4\downbow re\downbow re\downbow} |
+    mib8---> \t {do16( dod re)} mib8---> \t {la,16( do re)} \ttt {mib-> sol,( la do re mib)} |
+    \accdet {fa4 fa r \clef treble |
+    <re' re'>\downbow <re re'>\downbow <re re'>\downbow <re re'>\downbow} r2 |
+    \simile <lab lab'>4 <lab lab'> <lab lab'> <lab lab'> r2 \clef alto |
+    re,4->\mf \tt {re16( fad, la si do} re4->) |
+    \tt {mib16( fad, lad si re} mib4->) \tt {re,16( fad sol si red} |
+    \acc {mi8\f) r16 fa r8 mi r16 fa8--} dod16-. |
+    mi8-> r16 dod\< mi fa | lab4->\! r2 |
+    \st {sold8\f sold} la4-> \st {sol8 sol} | sold4-> r2 |
+    \st {<fad, mi'>8\mf r16 <sol fa'> r8 <lab mi'> r16 <la fa'> r8 |
+    <sib mi> fa'16 dod do mi r8 fa16 dod} r8 |
+    \ind #"détaché" solb'16 mib re fa mi mib solb re sol mib lab fa |
+    mi sol solb fa lab mi sol fa fad\< sold la si |
+    \accdet {<re, re'>4\f <re re'> <re re'> <re re'> r2 |
+    <re re'>4 <re re'> <re re'> <re re'>} r8 \acc {<do, do'> <mib mib'> <fad fad'> |
 
     %%% Boum %%%
-    <sol la>4 r2 R2.*2
+    <sol la>4\sffz} r2 R2.*2
     r8 mi mi mi mi mi | mib mib lab lab sol sol |
     r lab lab lab lab lab |
     la la do do dod dod |

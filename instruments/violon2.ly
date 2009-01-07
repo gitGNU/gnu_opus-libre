@@ -1109,106 +1109,106 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     sib, sib sib sib sold sold la la} |
 
     %%% Doppio tempo %%%
-    re8 r r4 R2*3
-    r8 re16 re mib8 r |
-    r re r4 | r re16 re r8 |
+    re8\! r r4 R2*3
+    r8 re16\ff re mib8-> r |
+    r re-> r4 | r re16 re r8 |
     R2.*3
-    mi8 r r re16 re mi8 r |
-    r mi r la r la | la mi r4 r8 re |
-    si' re la'4 r |
-    r8 mi re r r re r2 |
-    re,8 re mi mi re re mi mi re mi |
+    mi8->\p r r \st {re16 re mi8 r |
+    r mi r la r la} | la( mi) r4 r8 \st {re |
+    si'\upbow( re} la'4--) r |
+    r8 mi( re) r r re-> r2 |
+    \st {re,8\pleggiero re mi mi re re mi mi re mi |
     re re mi mi re re mi mi re mi |
-    re re mi mi re re mi mi re mi |
-    re re mi mi re re sol sol sib sib |
-    fad fad sold sold la la si si re re |
-    sib16 sib sib sib do do do do |
+    re re mi mi re re mi mi re mi} |
+    re\< re mi mi re re sol sol sib sib\! |
+    fad\< fad sold sold la la si si re re\! |
+    sib16\< sib sib sib do do do do |
     reb reb reb reb mib mib mib mib mib mib mib mib |
 
     %%% Climax %%%
-    re4 r R4. |
-    re'8 la re, la fad16 fa mib do sol4 |
-    re'8 r r4 | R4.
-    sold''16 fad re si la8 re, |
-    re,16 si la sold sol4 | re'8 r r4 | R2
-    \ottava #1 si'''4:16 si,8:16 ~ si: fa4 \ottava #0 |
-    \loco re,8 mib fad16 sol la si do8 mib |
-    sold16 fad mi mib re4 mi,16 mib re la sold4 |
+    re4\f r R4. |
+    \st {re'8 la re, la} \ind #"détaché" fad16 fa mib do sol4->( |
+    re'8-.\sfz) r r4 | R4.
+    sold''16-> fad re si \st {la8 re,} |
+    re,16 si la sold sol4->( | re'8-.\sfz) r r4 | R2
+    \ottava #1 si'''4:16->\ff si,8:16-> ~ si: fa4-> \ottava #0 |
+    \loco re,8-.\mf mib-. fad16\< sol la si do8 mib |
+    sold16->\! fad mi mib re4-- mi,16 mib re la sold4 |
 
     %%% Soprano 2 %%%
-    re'\leftpizz r r8 sib16 sib |
-    sib4 r8 sib r r16 sib sib4 |
-    r8 re r4 re8 re |
+    re'\leftpizz r r8 sib16\f sib |
+    sib4-.-> r8 sib-> r r16 sib sib4-.-> |
+    r8 re-.-> r4 \st {re8 re |
     red red r red red r dod dod |
-    re4 r8 re r re |
-    r re r re re r re re |
-    do do r do r do |
+    re4-- r8 re r re |
+    r re r re re r re\< re |
+    do\! do r do r do |
     r do r do do r do do |
     dod dod r dod r dod |
     r dod r dod r dod r dod |
+    r mi\pp r mi mi4 mi8 mi mi4 mi8 mi r mi |
     r mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
-    r mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
-    r mi r mi r mi r mi r mi mi4 mi8 mi |
-    <sold, sold'>4 <sold sold'>8 <sold sold'> r4 |
+    r mi r mi r mi r mi r mi mi4 mi8 mi} |
+    <sold, sold'>4-- \st {<sold sold'>8 <sold sold'> r4 |
     sold8 sold sold sold sold sold sold sold |
     r la la la la la |
-    mi' mi r mi r4 mi8 mi |
-    fa fa r fa mi mi |
-    mi mi r mi r4 fad8 fad |
-    sol sol r sol sib sib |
-    sib4 r r2 R2.
-    mib4 sib' lab8 fa mib4 |
+    mi' mi r mi r4 mi8\< mi |
+    fa\! fa r fa mi mi |
+    mi mi r mi r4 fad8\< fad |
+    sol\! sol r sol\< sib sib} |
+    sib4--\! r r2 R2.
+    mib4-.\mf sib'-. lab8( fa) mib4-- |
     R2.
-    mi,8 mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
-    r mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
+    \st {mi,8\pp mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
+    r mi r mi mi4 mi8 mi} mi4-- mi8 mi r mi |
 
     %%% Soprano 1 %%%
-    <re sib'>4 r r2 | R2. R1 R2. R1
-    mid8 mid r2 mid8 mid r4 r2 |
-    mi8 mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
+    <re sib'>4---> r r2 | R2. R1 R2. R1
+    \st {mid8\p mid r2 mid8 mid r4 r2 |
+    mi8\pp mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
     r mi r mi mi4 mi8 mi mi4 mi8 mi r mi |
-    r mi r mi mi4 mi8 mi mi4 mi8 sol r sol |
-    r mi r mi mi4 |
-    sold,8 sold sold sold sold sold sold sold |
+    r mi r mi} mi4-- mi8-. mi-. mi4-- mi8-.-> sol-.-> r sol-. |
+    r mi-. r mi-. mi4-- |
+    \st {sold,8\p sold sold sold sold sold sold sold |
     r la la la la la |
-    mi' mi r4 r2 | R2.
+    mi'\pp mi r4 r2 | R2.
     mi8 mi mi r r2 |
     r4 r8 mi r4 | R1
-    mi8 mi mi sold, mi' mi mi4 r r2 | R2. R1 R2.
+    mi8\p mi} mi( sold,) \st {mi' mi} mi4-- r r2 | R2. R1 R2.
 
     %%% Duo %%%
-    sold'8 sold la la, sold' sold la la, |
+    sold'8\mp sold la( la,) sold' sold la( la,) |
+    \simile sold' sold la la, sold' sold la la, |
     sold' sold la la, sold' sold la la, |
-    sold' sold la la, sold' sold la la, |
-    sold' sold la la, sold' sold la la, |
+    sold'\mf sold la la, sold' sold la la, |
     sold' sold la la, sol' sol sold sold, |
     re' re mi mi, re' re mi mi, |
-    sold sold si dod, sold' sold la dod, |
+    sold\mp sold si dod, sold' sold la dod, |
     mid mid sold sold, |
 
     %%% Baryton 2 %%%
-    <re' re>4 <re re> <re re> <re re> r2 |
-    mib4 mib mib mib r2 |
-    re''4 re8 \t {sold,16 si dod} re4 |
-    <re, re'> <re re'> <re re'> |
-    <re re'> re'8 \t {si16 do dod} re4 |
-    lab lab,8 \t {re,16 mi sol} lab4 |
-    re,2.~ re2 r4 |
-    si16 si si si do do la la la la la la |
-    do do do dod dod dod |
-    <re re'>4 re'8 \t {si16 do dod} re4 |
-    re,16 re re re dod dod dod dod do do do do |
+    \accdet {<re' re>4\downbow\fsubito <re re>\downbow <re re>\downbow <re re>\downbow} r2 |
+    \simile mib4 mib mib mib r2 |
+    re''4-> re8-> \t {sold,16( si dod)} re4-> |
+    \accdet {<re, re'>\downbow <re re'>\downbow <re re'>\downbow |
+    <re re'>\downbow} re'8-> \t {si16->( do dod)} re4-> |
+    lab-> lab,8\> \t {re,16( mi sol)} lab4-> |
+    \ten re,2.~---> re2 r4 |
+    si16\mf si si si do do la la la la la la |
+    do\< do do dod dod dod |
+    <re re'>4--->\f re'8-> \t {si16( do dod)} re4-> |
+    re,16\mf re re re dod dod dod dod do do do do |
     si si si si lad lad si si sold sold la la |
-    lad lad lad lad si si si do do do dod dod |
-    re2:16 re4:16 re2:16 re4:16 |
-    <sold, re'>2 r16 sold'' la si |
-    re4 re8 \t {sold,16 si dod} re4 |
-    <re, re'>4 r2 |
-    re'4 re8 \t {sold,16 si dod} re4 |
-    <re, re'>4 r2 |
+    lad\mp lad lad lad si si si do do do dod dod |
+    re2:16 re4:16 re2:16\< re4:16 |
+    <sold, re'>2--->\! r16 sold''\<( la si) |
+    re4->\f re8-> \t {sold,16( si dod)} re4-> |
+    <re, re'>4---> r2 |
+    re'4---> re8-> \t {sold,16( si dod)} re4-> |
+    <re, re'>4---> r2 |
 
     %%% Boum %%%
-    <sol,,! sold'>4 r2 R2.*2
+    <sol,,! sold'>4->\sffz r2 R2.*2
     R2.
     \ottava #1 <sol'\harmonic dod fad\harmonic re' dod'>2.~
     <re'' dod'>2.~ <re dod'>2. \ottava #0
