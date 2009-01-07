@@ -370,6 +370,9 @@ plak =
      (ly:music-property m 'tweaks)))
    m)
 
+%%% TODO: custom scripts priority.
+#(define modern-scripts default-script-alist)
+
 %%%%%%%%%%%%%%%%%%%%%%%% Layout Functions %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Music layout ---------------------------------------------------%

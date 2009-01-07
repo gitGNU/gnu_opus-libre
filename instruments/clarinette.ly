@@ -851,7 +851,7 @@ ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
     fa,,2~\p fa4 r | mid'8( fad sold la si do) |
     fad,,2~\p fad4 r16 \st {fad\pp( fad fad |
     fad fad fad fad)} si8( do | red mi fad sol) |
-    r16 \st {fad, fad fad fad fad fad fad} |
+    r16 \st {fad,( fad fad fad fad fad fad)} |
     red'8( mi sol sold red' mi) r4 r8 |
     si8\mf( la) sol( fad) sol16( fad sol la si8) fad~-- fad2~ fad4 r |
     si'8( fad) sold16( lad si lad) |

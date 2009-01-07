@@ -52,10 +52,10 @@ PercuDeuxMains=
 \include "./master/common.ly"
 
 \header {
-  scoretype = "Contrebasse"
+  scoretype = "Flûtes"
 }
 
 
-%\include "./master/titling.ly"
+\include "./master/titling.ly"
 \include "./master/instruments.ly"
 

@@ -930,67 +930,77 @@ ActeDeuxSceneTroisFluteDeux = { \FluteDeux
 
     %%% Boum %%%
     R2.*3
-    r4 \tt {re16 do sol la fad} r8 \t {mi16 si dod} |
-    \tt {sib' lab mib fa re'} si,8 r r4 |
-    r \tt {reb'16 lab solb mib fa} \t {do8 sib' sol'} | R2.
-    r2 \tt {la,,16 sib la sib la} | \tt {sib la sib la sib}
-    \t {la sib la} \t {sold la sold} \t {la sib la} \t {do reb do} |
-    \tttt {re mib re mib re mib re} \tt {sol, si sib re mib} sol4 | R2.
-    r4 \t { sol16 si sib} re8 \tt {lab16 sol sib si dod} | re4
-    \tt {r16 lab, sol si sib} \tt {mi mib sol fad si} |
-    re4~ re16 sol, do, fa, \t {sib'8 mib, lab,} |
-    \tt {re,16 mi fa sol la} sib8 r sold'16 la si dod |
+    r4 \tt {re16(\ppleggiero do sol la fad)} r8 \t {mi16( si dod)} |
+    \tt {sib'( lab) mib( fa re')} si,8-. r r4 |
+    r \tt {reb'16( lab solb mib fa)} \t {do8-.( sib'-. sol'-.)} | R2.
+    r2 \tt {la,,16--(\pp sib la sib la} | \tt {sib la sib la sib)}
+    \t {la--( sib la)} \t {sold--( la sold)}
+    \t {la--( sib la)} \t {do--( reb do)} |
+    \tttt {re--( mib re mib re mib re)}
+    \tt {sol,( si) sib( re) mib(} sol4) | R2.
+    r4 \t { sol16(\p si sib} re8) \tt {lab16( sol) sib( si) dod(} | re4)
+    \tt {r16 lab,( sol) si( sib)} \tt {mi( mib) sol( fad) si-.} |
+    re4--~ re16 sol,-.( do,-. fa,-.) \t {sib'8-.( mib,-. lab,-.)} |
+    \tt {re,16( mi) fa( sol) la(} sib8) r sold'16(\< la si dod |
 
     %%% Contralto %%%
-    re8 r r4 | R2 r4 sold,8 \t {la16 si dod} |
-    re8 r r4 | R2*8-\markup { Prenez la \concat { G \super de } Flûte } \FluteDeux
+    re8->\!) r r4 | R2 r4 sold,8--\f( \t {la16 si dod} |
+    re8-.->) r r4 |
+    R2*8-\markup { Prenez la \concat { G \super de } Flûte } \FluteDeux
     R2. R2*6
-    sold,,,8 sold sold sold r4 | r8 sold sold sold sold4 |
-    dod8 dod dod dod r4 | r8 mi mi mi mi4 |
+    sold,,,8-.\pleggiero sold-. sold-. sold-. r4 |
+    r8 sold-. sold-. sold-. sold4-. |
+    dod8-.\mp dod-. dod-. dod-. r4 |
+    r8 mi-. mi-. mi-. mi4-. |
 
     %%% Grand ensemble %%%
-    fa1~ fa2 r |
-    \tt {mib,8 solb si mi sol}sold2~ sold4 r r8 dod,, dod dod |
-    dod dod dod dod r2 | sold'8 sold sold4~ sold sib16 mib solb reb |
-    lab'2. r4 |
-    mi,2~ mi4~ \t {mi8 lab sol} | si4 r r2 |
-    r2 r4 sold8 sold fad4 r re8 sold re' sold |
-    r2 sold8 r r4 |
-    mi2 fa4 red mi2 mib4 re8 re | mi4 r r sold,8 la |
-    re4 r4 r8 la do re | fad4 r r8 dod, fad la |
-    dod re re dod dod re re dod |
-    fa solb solb fa fa solb solb fa |
-    fa solb solb fa fa solb solb fa |
-    sold la la sold r2 |
-    la2~ la8 sold~ sold4 |
+    \ten fa1\pp~ fa2 r |
+    \tt {mib,8(\p \> solb) si( mi) sol-.}
+    sold2\!--~ sold4 r r8 dod,,-.(\p dod-. dod-. |
+    dod-. dod-. dod-. dod-.) r2 |
+    sold'8-. sold-. sold4--~ sold sib16(\< mib) solb-. reb-. |
+    lab'2.--\p r4 |
+    mi,2--~ mi4~ \t {mi8 lab( sol} | si4) r r2 |
+    r2 r4 sold8->\mf sold-> fad4-> r re8-.\< sold-. re'-. sold-.\! |
+    r2 sold8->-. r r4 |
+    mi2(\mp fa4 red) mi2( mib4) re8-. re-. |
+    mi4-> r r sold,8->\mp la-> |
+    re4-> r4 r8 la( do) re-. |
+    fad4-- r r8 dod,( fad) la-. |
+    dod(\p re) re( dod) dod( re) re( dod) |
+    fa( solb) solb( fa) fa( solb) solb( fa) |
+    fa( solb) solb( fa) fa( solb) solb( fa) |
+    sold( la) la( sold) r2 |
+    la2\f~ la8 sold~ sold4 |
     la4. sold8~ sold2 |
-    r8 sold'4. r8 sold4. R2.
+    r8 sold'4.---> r8 sold4.---> R2.
 
     %%% Chute %%%
-    sold8 sold la4 sold8 sold |
-    la4 sold8 sold la4 |
-    do,8 do reb4 do8 do |
-    reb4 mi,8 mi fa4 |
-    mi8 mi fa4 sold,8 sold |
-    re4 re R2*2
+    \ind #"scherzando"
+    sold8-.->\f \> sold-. la4-- sold8-.-> sold-. |
+    la4-- sold8-.-> sold-. la4-- |
+    do,8-.-> do-. reb4-- do8-.-> do-. |
+    reb4-- mi,8-.-> mi-. fa4-- |
+    mi8-.-> mi-. fa4-- sold,8-.-> sold-. |
+    re4--\p re-- R2*2
 
     %%% Andante al fine %%%
-    R2.*4 mi2.~ mi2 r4 |
-    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
-    mi2 r4 |
-    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
-    mi2 r4 |
-    mi2.~ mi~ mi2 r4 |
-    sold16 mi sold mi sold mi sold mi sold mi sold mi~ |
-    mi4. r8 sold16 mi sold mi | sol2 r4 |
-    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
-    mi2 r4 |
-    sol16 mi sol mi sol mi sol mi sol mi sol mi~ |
-    mi2 r4 |
-    mi2.~ mi2 r4 | R2.*13
-    mi2.~ mi2 r4 |
-    mi r2 |
-    \tt {r16 fad' si la re} \t {do8 fa mib} lab4 |
-    r8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi} |
+    R2.*4 \cmb #"pp" #"très clair" \ten mi2.~ mi2 r4 |
+    sol16(\p mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2) r4 |
+    sol16( mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2) r4 |
+    mi2.\pp~ mi~ mi2 r4 |
+    \ind #"senza cresc." sold16( mi sold mi sold mi sold mi sold mi sold mi~ |
+    mi4.) r8 sold16( mi sold mi) | \meno sol2-- r4 |
+    sol16( mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2) r4 |
+    sol16( mi sol mi sol mi sol mi sol mi sol mi~ |
+    mi2) r4 |
+    mi2.\>~ mi2\! r4 | R2.*13
+    \ten mi2.\p~ mi2 r4 |
+    mi--->\f r2 |
+    \tt {r16 fad'(\< si) la( re)} \t {do8( fa) mib-.} lab4--->\! |
+    r8 mi--\ff \< \t {mi-- mi mi} \tt {mi16-> mi-> mi-> mi-> mi->\!} |
   }
 }

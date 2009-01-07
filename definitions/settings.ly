@@ -43,6 +43,7 @@
     %\override SystemStartBrace #'collapse-height = #1
     \override PaperColumn #'keep-inside-line = ##t
     \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    scriptDefinitions = #modern-scripts
     autoBeamSettings = #modern-auto-beam-settings
     autoAccidentals = #modern-accidentals-style
     autoCautionaries = #modern-cautionaries-style

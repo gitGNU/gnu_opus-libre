@@ -40,8 +40,8 @@
 
   \paper {
     indent = #0
-    left-margin = #9 % ???
-    right-margin = #10
+    left-margin = #15 % ???
+    right-margin = #16
     line-width = #(- paper-width (+ left-margin right-margin))
     bookTitleMarkup = \markup {
       \vspace #20

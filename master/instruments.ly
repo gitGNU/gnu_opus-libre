@@ -26,7 +26,7 @@
 \include "./instruments/violoncelle2.ly"
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
-%{
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Flutes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,7 +50,7 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisFluteUn \ActeDeuxSceneTrois
 
 \bookpart {
   \include "./master/master.ly"
-} %
+} %{
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Clarinettes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -539,7 +539,7 @@ ActeDeuxSceneTrois = \makePianoPart \ActeDeuxSceneTroisPiano \ActeDeuxSceneTrois
   \include "./master/master.ly"
 }
 
-%}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Percus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePianoPart \ProloguePercus \PrologueMesures

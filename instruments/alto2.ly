@@ -1095,7 +1095,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     dod,8-> r | R4
     re16\mf sib' r sib dod,8-> r R4 |
     re16\mp sib' r sib dod,8
-    \arco sold''16\mp sold la8---> r |
+    \arco sold''16\mf sold la8---> r |
     \pizz <mi, do'>8 \arco sold'16 sold la8---> r |
     \ten <do,, sol' re'>4~<sol' re'>~<sol re'>8 r |
     r \pizz <sol la>\mp r <sol la> r <sol la> |
@@ -1103,7 +1103,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
-    r8 \st {la16\pp la sib8 r |
+    r8 \st {\arco la16\pp la sib8 r |
     do16 do dod8 r red16 red} |
     fa,2~\p fa~ fa4 r16 \st {si\ppleggiero do si |
     r si do si r do si8 |
@@ -1146,7 +1146,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     r8 \pizz la'\p sold4 r | R2.*5 R2*2 R2.
 
     %%% Air baryton 1 %%%
-    <do,sib'>2~\pp <do sib'>~ do r4 |
+    \flaut <do,sib'>2~\pp <do sib'>~ do r4 |
     <do sib'>2~ <do sib'>~ do r4 |
     \t {re'8 mi re} \t {mi re mi} |
     \t {re( mi re} \t {mi re mi} |
@@ -1159,7 +1159,7 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     re,8 la'( sol) do r4 \clef treble |
     sold''16->\mf sold-> la8-> r4 \clef alto |
     r8 sol,,-- r16 dod,8.-- | sol'2---> r4 \clef treble |
-    \st {sold''16 sold la la sold sold la la sold sold la la sold sold la la \clef alto |
+    \st {sold''16\f sold la la sold sold la la sold sold la la sold sold la la \clef alto |
     sol, sol sol sol re re si si si si si si |
     fa fa mi mi mi mi fa fa} |
 

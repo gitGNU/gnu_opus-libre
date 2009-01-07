@@ -232,8 +232,9 @@ ProloguePercus = <<
       hh4 hh8 hh4 r8 |
       r16 hh\> \t {hh hh hh} hh8 | hh4\! r8 R4.*2 |
       \ind #"bag. douces, sur le bord"
+      \longHairpins {
       hh4.:32~\ppp \< hh:~ hh:~\pp \> hh4\! r8 |
-      hh4.:32~\ppp \< hh:~ hh4\! hh8 r hh r hh4. | R4.*3
+      hh4.:32~\ppp \< hh:~ hh4\! hh8 r hh r hh4. | R4.*3 }
 
       %%% A tempo %%%
       R4.*27
@@ -1101,6 +1102,7 @@ ActeUnSceneQuatrePercus = <<
       do'8--->\! \t {do16 do do} do4-> r2 |
       R1 R2. R1 R2. R1 R2. R1
 
+      \longHairpins {
       r2 fad,4:32\mp\<\glissando sol4--\! r r2 |
       sol32-> sol8.. r4 r8 \t {dod16\< dod dod\>} dod4\! |
       \t {sol16->\> sol sol} sol8\!\laissezVibrer r2 |
@@ -1121,7 +1123,7 @@ ActeUnSceneQuatrePercus = <<
       re16-> re re8 r4 re-- r r re\> re re |
       re8\mp re16 re re4-> re re8 \t {re16 re re} |
       re4-> r r re8\< re16 re re4->\! r r re8\< re16 re |
-      re4->\! r r re re-> r r re re-> r r2 | R1*3
+      re4->\! r r re re-> r r re re-> r r2 | R1*3 }
       R2  R2.*2 R2 R1
       R2.*21
       R1. R1 R1. R1 R1. R1 R1. R1 R1. R1 R1.*5
@@ -1503,6 +1505,7 @@ ActeDeuxSceneUnBisPercus = <<
 
       %%% Tempo giusto %%%
       R2.*7 R2*2 R2.*4 R2 R4. R2*2
+      \longHairpins {
       r4 \ind #"Cymb." hh4:32~\< hh4.:32~\> hh4\! r2 |
       r4 hh4:32~\< hh4.:32~\> hh4\! r2 | R1*5/8
       r4 hh-- r8 hh4-- | R2.*4
@@ -1510,7 +1513,7 @@ ActeDeuxSceneUnBisPercus = <<
       r4 hh2:32~\> hh4\! r2 | r4 hh2:32~\> hh4\! r2 |
       r4 hh4:32~\> hh4\! | r hh4:32~\> hh4\! R2.
       r8 hh32\> hh hh hh hh2\! R2.-\markup \indic "étouffer"
-      R2 R4. R2 R1*5/8 R2.
+      R2 R4. R2 R1*5/8 R2. }
 
       %%% Tempo I %%%
       r2 r4 \ind #"Tambour" sn16\< sn sn sn |
@@ -1596,13 +1599,15 @@ ActeDeuxSceneDeuxPercus = <<
   }
   \new DrumStaff { \Percus
     \drummode {
-      R1.*6 R1*2 R2.*5 r1 \ind #"Crécelle" hh2:32~\mf\> hh4\! r r1 R1. R1*2
+      R1.*6 R1*2 R2.*5
+      \longHairpins {
+      r1 \ind #"Crécelle" hh2:32~\mf\> hh4\! r r1 R1. R1*2
       R2. R1 R4.
       R1*5 r4 \ind #"Crécelle" hh2.:32-- R2. R1. R1*2
       R2.*3 R2 R2.*3 R2 R4. R1*5 R2*6 R1
       r4 \ind #"Crécelle" hh2:32 R1. R1 R1.*2 R2.
       r2 hh4:32 hh4 |
-
+      }
       R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1
       R2. R1 R2. R1 R2. R1 R2.
 
@@ -1693,7 +1698,7 @@ ActeDeuxSceneTroisPercus = <<
     si4-- \gauche fa-- \droite |
     re'''8-. la4.-- | r8 si fad4-- |
     si16( fad sold8) red4-- |
-    r mib8( sib)
+    r mib8( sib) %%FIXME: Issue #721
     \gauche \t { r8 mib,( sib)} \droite lab'(
     \gauche fa,) \droite |
     fad''-. dod4-. si'8-. \tt {fad16\<(
@@ -1756,40 +1761,40 @@ ActeDeuxSceneTroisPercus = <<
     %%% Baryton 2 %%%
     R2.*11\GrandVibraphone R4.
     R2.*14
-    re''4 re re re2*3/2\laissezVibrer |
-    \gauche r8 sib,, \droite \t {la' solb fa'} re16 dod'8. |
-    re4 re re re2*3/2\laissezVibrer |
-    \gauche r16 lab,, \droite mib' sib'
+    re''4--\pp re-- re-- re2*3/2--\laissezVibrer |
+    \gauche r8 sib,,(\< \droite \t {la') solb( fa')} re16( dod'8.) |
+    re4--\pp re-- re-- re2*3/2--\laissezVibrer |
+    \gauche r16 lab,,( \droite mib' sib'
     \t {dod,8 fad si} \tt {fa16 do' sol' mi la} |
-    re4 re re re2*3/2\laissezVibrer |
-    \gauche \t {r8 do,,, si'~} \t {si \droite la' fad'~}
-    fad16 \gauche lab,, \droite sol' fa' |
-    re'4 re re re2*3/2\laissezVibrer
-    \tt {mi,,16 sold sol si dod,} fa mi' mi, sold'
-    \t {sol,8 si sib'} |
-    \pl re,4 re' r |
-    R2*11R2. R2*6 R2.*4
+    re4--) re-- re-- re2*3/2--\laissezVibrer |
+    \gauche \t {r8 do,,,\mp( si')~} \t {si \droite la'( fad')~}
+    fad16 \gauche lab,,( \droite sol' fa') |
+    re'4-- re-- re-- re2*3/2--\laissezVibrer
+    \tt {mi,,16(\< sold sol si) dod,(} fa mi') mi,( sold')
+    \t {sol,8( si sib')\!} |
+    \pl re,4-> re'-> r |
+    R2*11 R2. R2*6 R2.*4
 
     %%% Ensemble %%%
-    R1 r4 mi,, sold la sib1 R1*3
-    \gauche r8 mi,, si' do \droite sol' lab
-    mib' si | sib'4 r8 <sib, si'!>~
-    \t {<sib si'>4 si,! sib'} lab'1
-    s1 R1 r2 s2 <la,! lab'>1 |
-    r4 la8 sold do4 la | sold' r r
-    \pl {<mi, la> <re si'>} {<re' sol> <mi sold>} r r2 |
-    R1 s1*2 re,8 sib' la' re,, sold' sold la re,, |
-    si' \gauche fa, mi' \droite re' si'4 \t {do,8 \gauche lab, reb \droite} |
-    r2 <si' dod'>4 <dod si'> |
-    <red la'> <mi sold> \pl {red red8 dod} {la' mi la si} |
-    <si, dod'>4 reb'8 do reb mib fa4 | R2.
+    R1 r4 mi,,--( sold-- la-- sib1--) R1*3
+    \gauche r8 mi,,(\pdolce si' do \droite sol' lab
+    mib' si | sib'4) r8 <sib, si'!>--~
+    \t {<sib si'>4 si,!(\> sib'} lab'1)\pp
+    s1 R1 r2 s2 <la,! lab'>1->-- |
+    r4 la8( sold) do4-. la-. | sold'---. r r
+    \pl {<mi, la>-.-- <re si'>-.--} {<re' sol>-.-- <mi sold>-.--} r r2 |
+    R1 s1*2 re,8( sib' la') re,, sold'-> sold-> la-> re,, |
+    si' \gauche fa,( mi' \droite re' si'4) \t {do,8( \gauche lab, reb) \droite} |
+    r2 <si' dod'>4--\mf <dod si'>-- |
+    <red la'>-- <mi sold>--\< \pl {red red8( dod)} {la'( mi la si)} |
+    <si, dod'>4-- reb'8( do reb mib fa4--)\! | R2.
 
     %%% Chute %%%
     R2.*5 R2*3
 
     %%% Andante al fine %%%
-    R2.*6 <do,, si'>2.~ <do si'>4. <si do'>~ <si do'>4 <do si'>2\laissezVibrer |
-    R2.*5 <dod si'>2. <do si'>\laissezVibrer R2.*24
+    R2.*6 <do,, si'>2.--\p~ <do si'>4. <si do'>--~ <si do'>4 <do si'>2--\laissezVibrer |
+    R2.*5 <dod si'>2.--\> <do si'>\!\laissezVibrer R2.*24
   }
   \relative {
     %%% Larghetto %%%
@@ -1862,21 +1867,21 @@ ActeDeuxSceneTroisPercus = <<
     R2.*16
     s4 r2 R2.*2
     s4 r2 R2.*2
-    s2. R2. r4 \tt {mi16 sold sol si sib} re4 |
+    s2. R2. r4 \tt {mi16(\mf sold sol si sib} re4) |
     R2.
     R2*12 R2. R2*6 R2.*4
 
     %%% Ensemble %%%
-    \t {r4 fa, la} sold8 do si red~ red1 R1*4
-    s1 R1 r4 re,2. re4 sold \droite re' sold \gauche |
-    re, si' sold8 fad re4 |
-    dod8 re sold la \t {\droite re4 lab' \gauche sib,}|
-    r2 r8 sol si sib | re4 r r2 | R1*3
-    re,8 la' \droite mi' \gauche re,
-    \droite sold' \gauche re, la' \droite mi' |
-    \gauche la, re \droite sold
-    \gauche la, \droite do' \gauche la, re \droite do' \gauche R1 s1
-    re,,1\laissezVibrer s1 R1 R2.
+    \t {r4 fa,(\p la} sold8 do si red)~ red1 R1*4
+    s1 R1 r4 re,2.-- re4-. sold-. \droite re'-. sold-. \gauche |
+    re,-. si'-. sold8( fad) re4-. |
+    dod8( re sold la \t {\droite re4) lab'( \gauche sib,)}|
+    r2 r8 sol-.\mf si-. sib-. | re4-.-- r r2 | R1*3
+    re,8\p( la' \droite mi') \gauche re,
+    \droite sold'-- \gauche re,( la' \droite mi') |
+    \gauche la,( re \droite sold)
+    \gauche la, \droite do'-- \gauche la,( re \droite do')\gauche R1 s1
+    re,,1--\laissezVibrer s1 R1 R2.
 
     %%% Chute %%%
     R2.*5 R2*3
@@ -1939,15 +1944,15 @@ ActeDeuxSceneTroisPercus = <<
     R2.*11 R4.
     R2.*11 \ind #"Tam-tam" cb2-> s4 | R2.*14
     R2*2
-    r8 \ind #"Crécelle" hh hh4:32 hh4 r | R2
-    r4 hh4:32 hh4 r | R2*3
-    r4 hh8 hh hh4 r |
+    r8 \ind #"Crécelle" hh-.\f hh4:32-- hh4-> r | R2
+    r4 hh4:32-- hh4-> r | R2*3
+    r4 hh8-> hh-> hh4-> r |
     R2. R2*6 R2.*4
 
     %%% Ensemble %%%
     R1*24 R2.
-    r2 r8 \ind #"Tam-tam (bag. de timbale)" \t {cb16 cb cb} |
-    cb2\laissezVibrer s4 R2. \ind #"Cymbale" hh2\laissezVibrer s4 |
+    r2 r8 \ind #"Tam-tam (bag. de timbale)" \t {cb16\< cb cb} |
+    cb2\f\laissezVibrer s4 R2. \ind #"Cymbale" hh2->\laissezVibrer s4 |
     R2. R2*3
 
     %%% Épilogue %%%
@@ -2023,15 +2028,15 @@ ActeDeuxSceneTroisPercus = <<
 
     %%% Ensemble %%%
     R1*24 R2.
-    R2. r2 r8 sold, r sold \t {sold sold sold} sold4 |
-    r4 sold2:32\glissando lad4.:32\glissando mi8 \t {re' mi, re'}
-    re re r re r re r4 R2 |
+    R2. r2 r8 sold,\ff r sold\> \t {sold sold sold} sold4\! |
+    r4 sold2:32\mf\<\glissando lad4.:32\>\glissando mi8\p \t {re' mi, re'}
+    re\> re r re r re\! r4 R2 |
 
     %%% Épilogue %%%
-    R2.*32
-    mi2.:32~ mi:~ mi4 r mi8 mi |
-    mi,2.:32~ mi4 mi'8 mi \t {mi mi mi} |
-    mi,2.:32~ mi:~ mi8 mi' \t {<mi, mi'> mi' mi}
-    \tt {<mi, mi'>16 mi' mi mi, mi'}
+    R2.*32 \longHairpins {
+    mi2.:32\ppp~ mi:~ mi4 r mi8->\mf mi-> |
+    mi,2.:32~\fpp mi4 mi'8\mf\< mi \t {mi mi mi} |
+    mi,2.:32~\fpp \< mi:~\f\> mi8\! mi'\ffsubito \< \t {<mi, mi'>-- mi' mi}
+    \tt {<mi, mi'>16-- mi' mi-> mi,-> mi'->\!} }
   }
 >>

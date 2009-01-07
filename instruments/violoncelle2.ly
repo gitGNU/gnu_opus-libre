@@ -1038,7 +1038,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
 
     %%% Interlude %%%
     R2*2
-    fa2~\p fa~ fa4 si~ si2~ si2 |
+    \arco fa2~\p fa~ fa4 si~ si2~ si2 |
     fa2~ fa4. si8~ si2. |
     fad2~ fad4 r16 do8.~ do4 r8 r16 fad~ |
     fad2 r16 do'8.~\< do4~ do4. dod8~\! |
@@ -1080,7 +1080,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     r8 sol~--\mp sol16 dod,8--( sol'16-.) dod,4-- r8 |
     r sol'~-- sol16 dod,8--( sol'16-.) mi4-- r8 |
     \ten <do do'>2~\p <do do'>4 r16 sol'8-- do,16~--( do sol'-.) do,8~-- do4. r8 |
-    \pizz dod16-> sold'\mf mi'8 dod, <lad' red>-> | dod,4 r |
+    \pizz dod16->\mf sold' mi'8 dod, <lad' red>-> | dod,4 r |
     \arco <sol' sol'>2---> r4 |
     \ten re1~--->\f re2. r4 la'16-> la-> sold8-> |
 

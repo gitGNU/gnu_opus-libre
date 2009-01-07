@@ -839,7 +839,7 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     do'2--( do--) sol-- r4 |
     do2~ do~ do r4 |
     sol8-.\mp\upbow sol~-- sol16 dod8--( sol16-.) | dod4-- r8 |
-    sol-.\upbow sol~-- sol16 dod8-- sol16-. | mi'4-- r8 |
+    sol-.\upbow sol~-- sol16 dod8--( sol16-.) | mi'4-- r8 |
     \ten do2~\p do4 r16 sol8-- do16~--( do sol-.) do8~-- do4 do\upbow\<( |
     dod4\!)\thumbpizz r |
     r8 \arco sol~---> sol16 dod8--( si16-.) |

@@ -1108,7 +1108,7 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     r \pizz <sol la>\mp r <sol la> r <sol la> |
     r <sol re'> r <sol re'> r <sol re'> |
     R2.-\fermataMarkup R2.*2
-    r8 la16\p la sib8---. sol16 sol sold8---. r | R2.
+    r8 \arco la16\p la sib8---. sol16 sol sold8---. r | R2.
     r8 la16 la sib8---. sol16 sol sold8---. r | R2.
 
     %%% Interlude %%%
