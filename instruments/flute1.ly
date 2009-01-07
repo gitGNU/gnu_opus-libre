@@ -862,73 +862,73 @@ ActeDeuxSceneTroisFluteUn = { \FluteUn
     la2 r4 R2 |
 
     %%% Doppio tempo %%%
-    R2*7 mib,,2 sib'4 |
-    r mib, la r re, fad r re mi |
-    r dod sold' r fad si r sold re' |
-    r8 la' la la | re4 do re8 la~ |
+    R2*7 mib,,2\p( sib'4) |
+    r mib,( la) r re,( fad) r re( mi) |
+    r dod( sold') r fad( si) r sold( re') |
+    r8 \st {la'\mp la la} | \det {re4 do} re8-. la~-- |
     la4. r8 | R2. R2 R2. R2 R2. R2
-    r8 mi, re16 la' mib' fad la4 R2 R2. R2 |
-    sold,16 la sold la \tt {si re mi fa sol} \tt {sib do reb mib fad} |
+    r8 mi,-. re16( la') \st {mib' fad la4} R2 R2. R2 |
+    sold,16\p\<( la sold la \tt {si re mi fa sol} \tt {sib do reb mib fad} |
 
     %%% Climax %%%
-    sold8 r r4 | R4.
-    mi4. r8 r4 sol,8 r sold r r4 | R4.
-    la'4. r8 | r4 la,8 r sold r r4 |
+    sold8->\f) r r4 | R4.
+    mi4.---> r8 r4 \st {sol,8 r sold} r r4 | R4.
+    la'4.---> r8 | r4 \st {la,8 r sold r r4 |
     r r8 re' |
-    re' la16 mi si fad |
-    dod8. dod16 dod8 |
-    r8 dod~ dod dod~ dod16 dod dod8 |
-    sold'2. r4 |
+    re'\>} la16( mi) \st {si fad} |
+    dod8.--\! \st {dod16 dod8} |
+    r8 dod~-- dod dod~-- dod16 \st {dod dod8} |
+    sold'2.--\f r4 |
 
     %%% Soprano 2 %%%
-    \slap re,4 r2 | R1 r2 r8 \t {si'16 dod red} |
-    mi4 la, si8 red mi4 | sib8 la re mi r4 | R1
-    r4 r8 lab sol solb |
-    fa4 r r2 | R2. R1 r4 sol, r |
-    r r8 sol~ sol4 r | r la r |
-    r r8 la~ la4 r | r sol r |
-    r lab' fa mib | re r2 |
-    la8 la la la r2 r8 la la la la4 |
-    sold8 sold sold sold r4 sold |
-    la r sol sold r r lad |
-    si r dod | re r r2 | R2.
+    \slap re,4 r2 | R1 r2 r8 \t {si'16\<( dod red} |
+    mi4-.\p) \st {la, si8 red mi4} | sib8( la) \st {re mi} r4 | R1
+    r4 r8 lab( sol solb |
+    fa4-.) r r2 | R2. R1 r4 sol,--\pp r |
+    r r8 sol~-- sol4 r | r la-- r |
+    r r8 la~-- la4 r | r sol-- r |
+    r lab'\p( fa mib | re-.) r2 |
+    \st {la8\p la la la r2 r8 la la la la4 |
+    sold8 sold sold sold} r4 sold( |
+    la-.) r sol( sold) r r lad( |
+    si) r dod( | re) r r2 | R2.
     %%% Issue #34 (aka "grace notes are a PITA")
-    re32 mib8.. sib'4 lab8 fa mib4 R2.
-    re'32 mi!8.. r4 r2 |
-    r4 sold,, si |
-    re2 r4 re | la'2 r4 |
+    re32\mp( mib8..) sib'4-- lab8( fa mib4) R2.
+    re'32( mi!8..) r4 r2 |
+    r4 sold,,\p( si |
+    re2) r4 re( | la'2) r4 |
 
     %%% Soprano 1 %%%
-    re4 r r2 | r8 si sib sol fad mib |
-    re'4 r r2 | r8 fa mi dod do la |
-    sold'4 r r2 | r4 r8 do,, si' fad |
-    fa'4 r r2 | r4 la,, do |
-    re2. r4 | do4 re la' |
-    re1~ re4 r re |
-    la'2. r4 | R2.
-    la,,8 la la la r la la la | la4 r fad8 fad |
-    sol4 r r2 R2. sol4 r r2 R2. |
-    R1 sol4 r sol8 sol | sold4 r r2 | R2. R1
-    r4 sold la |
+    re4-- r r2 | r8 si\p( sib sol fad mib |
+    re'4) r r2 | r8 fa( mi dod do la |
+    sold'4) r r2 | r4 r8 do,,( si') fad( |
+    fa'4) r r2 | r4 la,,\pp( do |
+    re2.) r4 | do4\<( re la' |
+    re1~\p) re4 r re( |
+    la'2.) r4 | R2.
+    \st {la,,8\p la la la r la la la | la4-- r fad8 fad |
+    sol4-- r r2 R2. sol4-- r r2 R2. |
+    R1 sol4-- r sol8 sol} | sold4 r r2 | R2. R1
+    r4 sold\p\<( la) |
 
     %%% Duo %%%
-    sold'2. la4 | do2. r4 |
-    sold4 la r sold la r fad8 sold la do |
-    re2. re4 mi4. si8 r16 dod sold8~ sold4~ |
-    sold4. la,8 | sold'4. r8 | la,2 |
+    sold'2.\!( la4 | do2.) r4 |
+    sold4\mp( la) r sold( la) r fad8\>( sold la do |
+    re2.\p) re4-- mi4.( si8-.) r16 dod\>( sold8~\!) sold4~ |
+    sold4. la,8( | sold'4.) r8 | la,2--\< |
 
     %%% Baryton 2 %%%
-    re4 r2 R2. |
-    mib,2. fa4 r2 |
-    re''4 r2 |
-    \tt {re,16 fad sold la si} re4 re |
-    sold2 r4 | R2.
-    re,,2. mib mi4 r2 | R4.
-    sold''4 r2 | r8 re re re re4 |
-    re,,8 re re re r4 | R2.*3
-    sold4 sold sold | re' r2 |
-    r8 re' re re re re | R2.
-    r8 re re re re re |
+    re4->\! r2 R2. |
+    mib,2.\mf( fa4) r2 |
+    re''4---> r2 |
+    \tt {re,16\f( fad sold la si} re4->) re-- |
+    sold2---> r4 | R2.
+    re,,2.\mf( mib mi4) r2 | R4.
+    sold''4->\f r2 | r8 \st {re\p re re} re4-- |
+    \st {re,,8 re re re} r4 | R2.*3
+    \accdet {sold4\mf sold sold | re'} r2 |
+    r8 \acc {re'\f re re re re | R2.
+    r8 re re re re re} |
 
     %%% Boum %%%
     \slap sold,,4 r2 | R2.*2

@@ -871,62 +871,62 @@ ActeDeuxSceneTroisFluteDeux = { \FluteDeux
 
     %%% Doppio tempo %%%
     R2*7-\markup { Prenez la \concat { G \super de } Flûte } \FluteDeux |
-    reb,,,2. r4 mib2 r4 re2 |
-    r4 re2 r4 dod2 r4 fad2 r4 sold2 |
-    r8 la' la la re4 do re8 la~ |
+    \det {reb,,,2.\p r4 mib2 r4 re2 |
+    r4 re2 r4 dod2 r4 fad2 r4 sold2} |
+    r8 \st {la'\mp la la} \det {re4 do} re8-. la~-- |
     la4. r8 | R2.-\markup "Prenez le Piccolo" \Piccolo R2 R2. R2 R2. R2
-    R2. R2 R2. R2 r2 \t {re8 sold la} |
+    R2. R2 R2. R2 r2 \t {re8\<( sold la} |
 
     %%% Climax %%%
-    re8 r r4 | r4 \t {sold,16 si dod} |
-    re4. r8 | r4 re,8 r re, r r4 |
-    r4 \t {fa''16 fad sol} | sold4. r8 | r4 re,8 r re, r r4 |
-    R2 sib'''16 fa do sol re8 |
-    re,8. re16 re8 r8 re~ re re~ re16 re re8 |
-    re'2. r4 |
+    re8->\f) r r4 | r4 \t {sold,16( si dod} |
+    re4.--->) r8 | r4 re,8-. r re,-. r r4 |
+    r4 \t {fa''16( fad sol} | sold4.--->) r8 | r4 re,8-. r re,-. r r4 |
+    R2 sib'''16\>( fa) \st {do sol re8} |
+    re,8.--\! re16-. re8-. r8 re~-- re re~-- re16 re-. re8-. |
+    re'2.--\f r4 |
 
     %%% Soprano 2 %%%
     \slap re,4 r2 | R1-\markup { Prenez la \concat { G \super de } Flûte } \FluteDeux |
     R2. R1 R2. R1 R2. R1 R2. R1
-    r4 mi, r r r8 mi~ mi4 r |
-    r re r | r r8 re~ re4 r |
-    r mi r R1 R2.
-    sold8 sold sold sold r2 |
+    r4 mi,--\pp r r r8 mi~-- mi4 r |
+    r re-- r | r r8 re~-- re4 r |
+    r mi-- r R1 R2.
+    \st {sold8\p sold sold sold r2 |
     r8 sold sold sold sold4 |
-    mi8 mi mi mi r4 mi |
-    fa r red mi r r fad |
-    sol r la sib r r2 | R2.
+    mi8 mi mi mi} r4 mi( |
+    fa-.) r red( mi) r r fad( |
+    sol) r la( sib) r r2 | R2.
     %%% Issue #34 (love it)
-    lab4 re32 mib8.. sib8 re lab4 | R2.
-    re'4 r r2 R2. |
-    r4 r8 la,8 mi'2~ | mi4 la, re |
+    lab4--\mp re32( mib8..) sib8( re lab4) | R2.
+    re'4-- r r2 R2. |
+    r4 r8 la,8\p( mi'2~) | mi4 la,( re |
 
     %%% Soprano 1 %%%
-    sold r r2 | R2. r8 sib, la lab sol fad fa4 |
-    mi2 r4 | R1 r8 reb' lab sib sol'4 | R1
-    r4 la,2 sold4 la do re~ re2 r4 |
-    do'2 re,4 do'~ do re2~ re2. r4 |
-    R2. sold,,8 sold sold sold r sold sold sold |
-    sold4 r fad8 fad sol4 r r2 | R2. mi4 r r2 |
-    R2. R1 mi4 r mi8 mi | mi4 r r2 |
-    R2. R1 r4 mi fa |
+    sold) r r2 | R2. r8 sib,\p( la lab sol fad fa4 |
+    mi2) r4 | R1 r8 reb'( lab sib sol'4) | R1
+    r4 la,2--\pp sold4( la do re~) re2 r4 |
+    do'2--\p re,4( do'~) do re2~-- re2. r4 |
+    R2. \st {sold,,8\p sold sold sold r sold sold sold |
+    sold4-- r fad8 fad sol4-- r r2 | R2. mi4-- r r2 |
+    R2. R1 mi4-- r mi8 mi} | mi4 r r2 |
+    R2. R1 r4 mi\p\<( fa) |
 
     %%% Duo %%%
-    mi'2. fa4 | la2. r4 |
-    fa solb r mib solb r re8 mib fad sold |
-    la2. la4 | re4. sold,8 r16 si fad8~ fad4~ |
-    fad4. la,8 re4. r8 | sold,2 |
+    mi'2.\!( fa4 | la2.) r4 |
+    fa\mp( solb) r mib( solb) r re8\>( mib fad sold |
+    la2.--\p) la4-- | re4.( sold,8-.) r16 si\>( fad8~\!) fad4~ |
+    fad4. la,8( re4.) r8 | sold,2--\< |
 
     %%% Baryton 2 %%%
-    re4 r2 R2. |
-    re2.~ re4 r2 |
-    re'4 r2 |
-    re'4 \tt {re,16 fa sol lab sib} re4 |
-    re2 r4 | R2.
-    re,,2.~ re~ re4 r2 | r4 \t {re'16 sol lab} |
-    re4 r2 | r8 re, re re re4 R2.*6-\markup "Prenez le Piccolo" \Piccolo |
-    r8 sib' sib sib sib sib | R2.
-    r8 re re re \t {fad16 sold sib} re8 |
+    re4\! r2 R2. |
+    re2.~\mf re4 r2 |
+    re'4---> r2 |
+    re'4--\f \tt {re,16( fa sol lab sib} re4->) |
+    re2---> r4 | R2.
+    re,,2.~\mf re~ re4 r2 | r4 \t {re'16\f( sol lab} |
+    re4->) r2 | r8 \st {re, re re} re4-- R2.*6-\markup "Prenez le Piccolo" \Piccolo |
+    r8 \acc {sib'\f sib sib sib sib | R2.
+    r8 re re re} \t {fad16( sold sib} re8->) |
 
     %%% Boum %%%
     R2.*3
