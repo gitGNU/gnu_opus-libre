@@ -538,6 +538,7 @@ ActeDeuxSceneTrois = \makePianoPart \ActeDeuxSceneTroisPiano \ActeDeuxSceneTrois
 \bookpart {
   \include "./master/master.ly"
 }
+
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Percus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

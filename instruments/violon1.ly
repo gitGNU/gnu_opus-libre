@@ -1266,5 +1266,51 @@ ActeDeuxSceneTroisViolonUn = { \ViolonUn
     la la la la r4 |
 
     %%% Grand ensemble %%%
+    <mi' sold>8 <mi sold> <fa la>4
+    <mi sold>8 <mi sold> <fa la>4 |
+    <mi sold>8 <mi sold> <fa la>4
+    <mi sold>8 <mi sold> <fa la>4 |
+    <mi sold>8 <mi sold> <fa la>4
+    <mi sold>8 <mi sold> <fa la>4 |
+    <sold sid>8 <sold sid> <la dod>4
+    <sold sid>8 <sold sid> <la dod>4 |
+    <mid sold>8 <mid sold> <fad la>4
+    <mid sold>8 <mid sold> <fad la>4 |
+    <la do>8 <la do> <sib reb>4
+    <la do>8 <la do> <sib reb>4 |
+    r8 mi, red mi r mi red mi |
+    r lab sol lab r lab sol lab |
+    r mi red mi r mi red mi |
+    r sol fad sol r sol fad sol |
+    r re' dod re r red mi r |
+    re mib r dod re r do dod |
+    sold' sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod dod, |
+    sold' sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod dod, |
+    mi' mi fa fa, mi' mi fa fa, |
+    mid' mid fad fad, mid' mid fad fad, |
+    sold' sold la la, sold' sold la la, |
+    mid' mid fad fad, mid' mid fad fad, |
+    sold' sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    sold'8 r r2 |
+
+    %%% Chute %%%
+    sold,2.\glissando sold'2.:32~ sold4: mi: re:
+    la: sold: mi: re: la: sold: re4 r R2*2
+
+    %%% Andante al fine %%%
+    R2.*32
+    \ind #"sul tasto" mi2.~ mi2 r4 |
+    r <mi mi'> <mi mi'>8 <mi mi'> |
+    <mi mi' mi>4 r2 |
+    <mi mi'>4 <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} |
+    <mi mi' mi>4 r2 |
+    r2 \ind #"ample" <mi' mi'>4\downbow |
+    <mi mi'>8\downbow <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

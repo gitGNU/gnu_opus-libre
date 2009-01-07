@@ -1236,5 +1236,44 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     sold sold sold sold r4 |
 
     %%% Grand ensemble %%%
+    sold'8 sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod dod, |
+    sold' sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod dod, |
+    r red mi red r red mi red |
+    r sol lab sol r sol lab sol |
+    r red mi red r red mi red |
+    r fad sol fad r fad sol fad |
+    r dod' re dod r mi red r |
+    mib re r re dod r dod do |
+    sold' sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod dod, |
+    sold' sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod dod, |
+    mi' mi fa fa, mi' mi fa fa, |
+    dod' dod re re, dod' dod re re, |
+    mid' mid fad fad, mid' mid fad fad, |
+    dod' dod re re, dod' dod re re, |
+    mid' mid fad fad, mid' mid fad fad, |
+    mi' mi fa fa, mi' mi fa fa, |
+    red' red fad fad, red' red fad fad, |
+    re' re mib mib, re' re mib mib, |
+    re'8 r r2 |
+
+    %%% Chute %%%
+    sold,2.\glissando sold'2.:32~ sold4: mi: re:
+    la: sold: mi: re: la: sold: re4 r R2*2
+
+    %%% Andante al fine %%%
+    R2.*34
+    r4 <mi mi'> <mi mi'>8 <mi mi'> |
+    <mi mi' mi>4 r2 |
+    <mi mi'>4 <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} |
+    <mi mi' mi>4 r2 |
+    r2 \ind #"ample" <mi' mi'>4\downbow |
+    <mi mi'>8\downbow <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

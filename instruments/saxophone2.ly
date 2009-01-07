@@ -616,7 +616,7 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     reb8 r4 | re8 r4 |
     fad8 r4 | fa4.~fa4 r8 |
     reb r4 | re8 r4 |
-    reb r4 | do'4.~do4 r8 |
+    reb8 r4 | do'4.~do4 r8 |
     reb, r4 sol8 r4 |
     reb8 r4 sol8 r4 |
     mi4.~mi4 r8 | R4.

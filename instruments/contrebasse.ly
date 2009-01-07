@@ -957,5 +957,72 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     \pizz dod4 r2 sol4 r2 | dod4 r2 | sol4 r sold |
 
     %%% Grand ensemble %%%
+    \arco dod1~ dod sol~ sol2 dod~ |
+    dod sol~sol sold | mi1~ mi2. r4 |
+    r2 mi'~ mi4 sib~sib8 mi4 sib8 |
+    mi2. r4 | R1
+    sib'1~ sib2 r8 do,4. |
+    <la la'>1~ <la la'>2. r4 |
+    sib4 la sib do |
+    <re re'>1~ <re re'>2. r4 |
+    r <re re'> <re re'> <re re'> |
+    <re re'> <re re'> <re re'> <re re'> |
+    r <re re'> <re re'> <re re'> |
+    <re re'> <re re'> <re re'> <re re'> |
+    r8 <re re'> <re re'> <re re'>
+    <re re'> <re re'> <re re'> <re re'> |
+    R2.
+
+    %%% Chute %%%
+    re2.:32~  re2:32
+    <re re'\harmonic>4:32~ <re re'\harmonic>2.:32~
+    <re re'\harmonic>4:32 \glissando
+    <re la'\harmonic>2:32~
+    <re la'\harmonic>2:32\glissando
+    <re sol\harmonic>4:16
+    <re sol\harmonic>16 <re sol\harmonic>16
+    <re sol\harmonic>16 <re sol\harmonic>16
+    <re sol\harmonic>16 <re sol\harmonic>16
+    <re sol\harmonic>16 <re sol\harmonic>16
+    <re sol\harmonic>16 <re sol\harmonic>16
+    <re sol\harmonic>8 r4
+    R2
+
+    %%% Andante al fine %%%
+    R2.*4
+    \harmo { <la do\harmonic>2.~
+      \oneVoice
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>~
+    <la do\harmonic>2} mi'' r4 | R2.*2
+    mi,2.~ mi2 r4 |
+    mi,2.:32~ mi2:32 \ind #"ample" <mi mi'>4 |
+    <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

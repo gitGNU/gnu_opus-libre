@@ -30,7 +30,7 @@
     \Staff
     \remove Axis_group_engraver
     \consists Hara_kiri_engraver
-    \override Beam #'auto-knee-gap = #'()
+    %\override Beam #'auto-knee-gap = #'()
     \override VerticalAxisGroup #'remove-empty = ##t
   }
 

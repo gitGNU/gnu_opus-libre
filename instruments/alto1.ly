@@ -1275,5 +1275,62 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     r sol8 sol sold4 |
     sold8 sold la4 r |
     r fad8 fad sol4 |
+
+    %%% Grand ensemble %%%
+    dod,,1~ dod sol'1~ sol2 dod,~ |
+    dod sol'~ sol sold4 r \clef treble |
+    red''8 red mi mi, red' red mi mi, |
+    sol' sol lab lab, sol' sol lab lab, |
+    red red mi mi, red' red mi mi, |
+    fad' fad sol sol, fad' fad sol sol, |
+    mid' mid fad fad, red' red mi mi, |
+    re' re red red, do' do dod dod, |
+    la' la sold sold la la sold sold |
+    dod dod sid sid dod dod do do |
+    la la sold sold la la sold sold |
+    dod dod sid sid dod dod do do |
+    fa fa mi mi fa fa mi mi |
+    mid mid fad fad, mid' mid fad fad, |
+    sold' sold la la, sold' sold la la, |
+    mid' mid fad fad, mid' mid fad fad, |
+    sold' sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    sold' sold la la, sold' sold la la, |
+    re' re mib mib, re' re <mib, re'> <mib re'> |
+    <mib re'> r r2 |
+
+    %%% Chute %%%
+    <solb, sib>2.\glissando la'2.:32~ la2: sold4:
+    mi: re: la: \clef alto sold: re2: re4 r R2*2
+
+    %%% Andante al fine %%%
+    R2.*4
+    \ind #"sul tasto, con sord."
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    sold2.~ sold~ sold sol2.~ sol~ sol2 r4 | R2.*2
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2:16 mi4:16 |
+    mi2 r4 | r4 mi,2~ mi2 r4 |
+    mi'2.:32 mi2.:32 mi2. \clef treble |
+    r8 do' \tt {red16 sold fad si la} red4
+    \ind #"ample" <mi,, mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

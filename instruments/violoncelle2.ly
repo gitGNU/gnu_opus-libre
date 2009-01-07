@@ -1213,5 +1213,75 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     dod,8 sold' mi' la r4 | fad, fa la |
 
     %%% Grand ensemble %%%
+    \arco dod,1~ dod sol'~ sol2 dod,~ |
+    dod sol'~sol sold | mi1~ mi2. r4 |
+    r2 mi~ mi4 sib'~sib8 mi,4 sib'8 |
+    mi,4 r8 sold~ sold fad fa4~ |
+    fa2 solb8 fa solb lab |
+    sib1~ sib2 r8 do4. |
+    la2 r8 mib4 la8~ |
+    la mib la2. sib4 la sib do |
+    re4 re4:8 re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    re,: re': re,: re': |
+    <re, re'>: <re' re>: <re, re'>: <re' re>: |
+    <re, re'>: <re' re>: <re, re'>: <re' re>: |
+    r8 <re re> <re re> <re re>
+    <re re> <re re> <re re> <re re> | R2. \clef treble |
+
+    %%% Chute %%%
+    \pl {la'2.:32( la':)~ la:( la,:)~ la2: la4}
+    {
+      \harmonics {
+        \times 3/4 {la'4\glissando
+          mi'\glissando
+          la\glissando
+          dod\glissando
+        } \ottava #1
+        mi8\glissando
+        sol\glissando
+        la\glissando
+        si\glissando
+        dod\glissando
+        resd\glissando
+        mi\glissando
+        resd\glissando
+        dod\glissando
+        si\glissando
+        la\glissando
+        sol\glissando
+        \ottava #0
+        \times 3/4 {
+          mi4\glissando
+          dod\glissando
+          la\glissando
+          mi\glissando
+        }
+        la,2
+        la4
+      }
+    } R2*3
+
+    %%% Andante al fine %%%
+    R2.*5 \clef bass
+    <mi,,\harmonic do'\harmonic>2.~
+    <mi\harmonic do'\harmonic>~
+    <mi\harmonic do'\harmonic>~
+    <mi\harmonic do'\harmonic>~
+    <mi\harmonic do'\harmonic>2 r4 | R2.*5
+    <mi\harmonic do'\harmonic>2.~
+    <mi\harmonic do'\harmonic>~
+    <mi\harmonic do'\harmonic>~
+    <mi\harmonic do'\harmonic>~
+    <mi\harmonic do'\harmonic>2 r4 | R2.*14
+    r4 <mi' mi'> <mi mi'>8 <mi mi'> |
+    <mi mi'>4 r2 |
+    <mi, mi'>4 <mi mi'>8 <mi mi'>
+    \t {<mi mi'> <mi mi'> <mi mi'>} |
+    mi2. \clef treble |
+    \t {r8 mi'' si'} \t {la mi' re} la'4 \clef bass |
+    \ind #"ample" <mi,,, mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

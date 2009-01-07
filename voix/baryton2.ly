@@ -357,8 +357,8 @@ EntracteBarytonDeux = { \BarytonDeux
     do4( mi8) r do2-- do-- | dod-- dod-- dod-- |
     re-- re-- re-- si-- mi4( sol8) r lab2-- |
     sol4( mi8) r sol4( mi8) r sol2-- re4(\mf\< dod re mi fa sol |
-    fa2)\fp do-- la-- mi'1--\fmolto~ mi4 r mi2.-- r4 |
-    \t {fad2--(\f\< mi-- sol--} red'2.->--)\sffz~ red4 r |
+    fa2)\fp do-- la-- mi'1--~\fmolto mi4 r mi2.-- r4 |
+    \t {fad2--(\f\< mi-- sol--} red'2.->--)~\sffz red4 r |
 
   }
 }
@@ -437,7 +437,7 @@ ActeDeuxSceneDeuxBarytonDeux = { \BarytonDeux
 ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
   \relative {
     R4.*3 r4 dod,8--\mp | mi4.--( dod4) r8 | r4 mi8 mi--( r16 mi8. |
-    r8 si' la | mi4.)~ mi8 r mi | mi8.--( mi | r8 dod' si | \break
+    r8 si' la | mi4.)~ mi8 r mi | mi8.--( mi | r8 dod' si | %\break
     % FIXME: the phrasing slur looks awful when placed at a page break.
     mi,4.) r8 mi\( ( la) si( mi,) mi' | \ten mi4.\) \mf ~ mi4 r8 | R4.*12
     dod32->( re, dod' dod mi8--) dod32->( re, dod' dod |
@@ -486,7 +486,7 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     r lab,--\mf fa-- | r mib--\< fad-- | re4--\! r |
     R2 r8 re-.(\f re-. sib-. re4--) r |
     R2*8 R2. R2*6 R2.*4
-    r4 do8-.(\mp do-. do4-- do8-. do-. |
+    r4 do8-.(\mp do-. reb4-- do8-. do-. |
     do4--) mi8-.( mi-. sold4-- sol8-. sol-. |
     si4--) r r2 | R1*3
     r4 dod,8-.( dod-. fa4--  mi8-.  mi-.  |

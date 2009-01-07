@@ -1036,7 +1036,7 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
     mid' mid fad la, sold' sold la la, si' si do do, |
     <si red> <si red> <do mi>8 <si red>16 <si red> <do mi>8 |
     <red fad>16 <red fad> <mi sol>8 <red fad>16 <red fad> <mi sol>8 |
-    <si re>16 <si red> <do mi>8 <red fad>16 <red fad> <mi sol>8 |
+    <si red>16 <si red> <do mi>8 <red fad>16 <red fad> <mi sol>8 |
     <red fad>16 <red fad> <mi sol>8 <do mib>16 <do mib> <dod mi>8 |
     <do mib>16 <do mib> <dod mi>8 <do mib>16 <do mib> <dod mi>8 |
     <red fad>16 <red fad> <mi sol>8 <red fad>16 <red fad> <mi sol>8 |
@@ -1212,5 +1212,56 @@ ActeDeuxSceneTroisViolonTrois = { \ViolonTrois
     la8 la sold4 r r si8 si sib4 |
 
     %%% Grand ensemble %%%
+    mi8 mi fa la, mi' mi fa la, |
+    mi' mi fa la, mi' mi fa la, |
+    mi' mi fa la, mi' mi fa la, |
+    sold' sold la la, sold' sold la la, |
+    mid' mid fad la, mid' mid fad la, |
+    la' la sib sib, la' la sib4 |
+    <si red>8 <si red> <do mi>4
+    <si red>8 <si red> <do mi>4 |
+    <red sol>8 <red sol> <mi sold>4
+    <red sol>8 <red sol> <mi sold>4 |
+    <si red>8 <si red> <do mi>4
+    <si red>8 <si red> <do mi>4 |
+    <re fad>8 <re fad> <mib sol>4
+    <re fad>8 <re fad> <mib sol>4 |
+    <dod mid>8 <dod mid> <re fad>4
+    <red si'>8 <red si'> <mi do'>4 |
+    <sib' re>8 r r <sib re> <la dod> r <lab do> r |
+    mi' mi fa fa, mi' mi fa fa, |
+    sold' sold la la, sold' sold la la, |
+    mid' mid fad fad, mid' mid fad fad, |
+    la' la sib sib, la' la sib sib, |
+    do' do dod dod, sid' sid dod4 |
+    <mid, dod'>8 <mid dod'> <fad re>4
+    <mid dod'>8 <mid dod'> <fad re'>4 |
+    <sold mid'>8 <sold mid'> <la fad'>4
+    <sold mid'>8 <sold mid'> <la fad'>4 |
+    <mid, dod'>8 <mid dod'> <fad re>4
+    <mid dod'>8 <mid dod'> <fad re'>4 |
+    <sold mid'>8 <sold mid'> <la fad'>4
+    <sold mid'>8 <sold mid'> <la fad'>4 |
+    <sold mid'>8 <sold mid'> <la fa'> <la fa'>
+    <sold mid'> <sold mid'> <la fa'> <la fa'> |
+    <fad red'> <fad red'> <la sold'> <la sold'>
+    <fad red'> <fad red'> <la sold'> <la sold'> |
+    <la sold'> <la sold'> <la sold'> <la sold'>
+    <la sold'> <la sold'> <la sold'> <la sold'> |
+    <la sold'> r r2 |
+
+    %%% Chute %%%
+    <re, sold>2.\glissando mi'2.:32~ mi4: re: la:
+    sold: mi: re: la: sold: mi: re4 r R2*2
+
+    %%% Andante al fine %%%
+    R2.*34
+    r4 <mi mi'> <mi mi'>8 <mi mi'> |
+    <mi mi' mi>4 r2 |
+    <mi mi'>4 <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} |
+    <mi mi' mi>4 r2 |
+    r2 \ind #"ample" <mi' mi'>4\downbow |
+    <mi mi'>8\downbow <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
+    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
   }
 }

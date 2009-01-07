@@ -1942,7 +1942,195 @@ ActeDeuxSceneTroisPiano = {
   \relative {
     %%% Larghetto %%%
     R4.*30 \clef bass |
-    s4.
+    s4.*5 R4.*2 s4.*3 R4.*2 s4.*4 R4.*2 s4.*3
+    <re, sib' re>16 <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi> |
+    <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi> |
+    <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi> |
+    <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi> |
+    s4
+    <mi do' mi>16 <mi do' mi> <mi do' mi> <mi do' mi> |
+    <mi do' mi> <mi do' mi> <mi do' mi> <mi do' mi> |
+    <mid dod' mid>8 s16 <mid dod' mid> |
+    <mid dod' mid> <mid dod' mid> <mid dod' mid> <mid dod' mid> |
+    si8 <mid dod' mid>16 <mid dod' mid> |
+    <mid dod' mid> <mid dod' mid> <mid dod' mid> <mid dod' mid> |
+    <mid dod' mid> <mid dod' mid> <mid dod' mid> <mid dod' mid> |
+    <mid dod' mid> <mid dod' mid> <mid dod' mid> <mid dod' mid> |
+    <mid dod' mid> <mid dod' mid> <mid dod' mid> <mid dod' mid> |
+    \clef treble
+    <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
+    <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> |
+    <sol mi' sol> <sol mi' sol> <sol mi' sol> <sol mi' sol> | R4
+    <lab re sol>16 <lab re sol> r <lab re sol> |
+    <lab re sol> <lab re sol> r <lab re sol> |
+    <lab re sol> <lab re sol> r <lab re sol> r8 |
+    r16 <lab reb sol> r <lab reb sol> |
+    r <lab reb sol> r <lab reb sol> |
+    r <lab reb sol> r <lab reb sol> | R4*4
+    \clef bass
+    s4.*5 R4.*2 s4.*7 \clef treble
+    <do' sol' re'>16 <do sol' re'> <do la' re> <do la' re> |
+    <do sol' re'> <do sol' re'> <do la' re> <do la' re> |
+    <do re sol> <do re sol> <do re la'> <do re la'> |
+    <do re sol> <do re sol> <do re la'> <do re la'> |
+    <sol la do> <sol la do> <sol la re> <sol la re> |
+    <sol la do> <sol la do> <sol la re> <sol la re> |
+    <re sol do> <re sol do> <la re> <la re> \clef bass |
+    <re, sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <re sib' re> <re sib' re> <re sib' re> <re sib' re> |
+    <mi do' mi>8 r R4 |
+    <re sib' re>16 <re sib' re> <re sib' re> <re sib' re> |
+    <mi do' mi>8 r r4 |
+    <dod sib' dod>16 <dod sib' dod> <re sib' re> <re sib' re> |
+    <mi do' mi>8 r R4*3 \clef treble |
+    <re' la' mi'>4\arpeggio \laissezVibrer s4 R4*3
+    r8 <dod red> r <dod red> |
+    r <do re sol> r <do re sol> |
+    R2.-\fermataMarkup R2.*2
+    r8 <la sold'> la' <sol, fad'>
+    sol' r | R2.
+    r8 <la, sold'> la' <sol, fad'>
+    sol' r | R2.
+
+    %%% Interlude %%%
+    r8 <la, sold'> la' r <do, si'> do' r <mib, re'> |
+    <mi red'>2\laissezVibrer \clef bass |
+    r8 <fa, mi'>~ <fa mi'>16 <mi fa'>8.~
+    <mi fa'>2\laissezVibrer s
+    r4 \set tieWaitForNote = ##t
+    \t {la8 fa~ mi'~} <fa, mi'>2\laissezVibrer
+    \set  tieWaitForNote = ##f
+    R2
+    r4*1/2 s8 \tt {mi'16 mi, dod' fa8~} fa4 |
+    \clef treble <reb do'>4. <do' si'>8~ |
+    <do si'> <si do'>4. |
+    \t {do8 si' fa16 solb} s4 |
+    r8 r16 <la sold'> r8 <sold la'> |
+    r <la sold'> r16 <sold la'>8. |
+    r16 <la sold'>8. <sold la'>4 |
+    <la sold'> r <do la'>16 <do la'> |
+    <si fad' lad>4\laissezVibrer r4 |
+    R2*2
+    la,4 <re, dod'> R2*2 r4 <re fad dod'> |
+    <si! fa' sib> r r <fa' la mi'> |
+    <re sold dod> r8 mib16 sib~|
+    \tt {sib re' la dod' sold } sol'4 |
+    \ottava #1 r16
+    \pl {do,, fad8} {si16 fa' sib}
+    \ottava #0 r8 sold,,16 <re dod'> |
+    r sol' r8 r4 |
+    r8 <sold la'> r r16 <la sold'> |
+    r8 <sold la'> r16 <la sold'> r8 |
+    r <sold la'> r r16 <la sold'> |
+    r8 <sold la'> r16 <la sold'> r4 |
+
+    %%% Quatuor %%%
+    <sold la'>8 r r4 R4. R2 R4. R2 R4.*2
+    R2.-\fermataMarkup R2.*6 R2*2 R2. \clef bass
+
+    %%% Air baryton 1 %%%
+    do,,,8 do \t {do do do} |
+    do4 do~ do do, r |
+    do'8 do \t {do do do} |
+    do4 do~ do do, r |
+    do'8 do \t {do do do} |
+    do4 do~ do do r |
+    do,8 do \t {do do do} |
+    do2 s2. R2 s4. R2 s4. s8 r r4 |
+    R2 <do do'>4 <do do'>8 <do do'>
+    \t {<do do'> <do do'> <do do'>} | s2
+    R2 r4 r8 <dod dod'> \t {<dod dod'> <dod dod'> <dod dod'>} |
+    <re re'>1\laissezVibrer s2. R2 |
+
+    %%% Doppio tempo %%%
+    R2*7 R2.*7 R2 R2.
+    r4 <si'' re mi>~ <si re mi>2 <la re mi>4~ |
+    <la re mi>2 <si re mi>2. <la re mi>2 |
+    R2. R2 R2. R2 R2. R2 R2. |
+    r4 <re, re'>4 <re re'>8 <re re'>
+    \mg <re re'> \md \clef treble |
+    \ottava #1 \tt {re''''16 dod si sold fad}
+    \tt {fa mib do sib la} \ottava #0 |
+    \tt {sol mi dod si sold}
+    \mg \t {mib8 sib sol} \md \clef bass |
+    r4 <re re'>4 <re re'>8 <re re'>
+    \mg <re re'> \md \clef treble |
+    \ottava #1
+    \tt {sold''''16 re la mi si} \ottava #0
+    fad re sib solb | \t {fa8 do lab} \mg fa mib \md |
+    R2*2
+    \ottava #1
+    \t {sib'''''16 fa do} \t {re la mi} \t {solb reb lab} |
+    \ottava #0
+    \tt {<fa sib> do <la re> mi <reb solb>} \mg \stemUp
+    lab32 sib fa do \md \stemNeutral \clef bass |
+    re8. re16 re8 re re16 re re8 | re2. r4 \clef treble |
+
+    %%% Soprano 2 %%%
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2.
+
+    %%% Duo %%%
+    r4 <mi'' sold>8 <fa la> r4 <mi sold>8 <fa la> |
+    r4 <mi sold>8 <fa la> \mg <la, dod> \md <la' dod>
+    \mg <sold, do> \md <sold' do> |
+    r4 <mid sold>8 <fad la> r4 <mid sold>8 <fad la> |
+    s1
+    sold8 la sold' la sold, la sold' la |
+    r4 <sold, la'> r sold | R2*3 \clef bass |
+
+    %%% Baryton 2 %%%
+    <re,, re'>2. s <re dod' re> s <re do'! re> |
+    r2 s4 r4 \clef treble s2 |
+    \ttt {re''16 fa sol si dod red}
+    \ottava #1 \tt {fad sol, dod red fad}
+    \ttt {lad dod, red fad la si} |
+    <re re'>2\laissezVibrer s4\ottava #0 R2.*2 R4.
+    \tt {lab16 sol fa re do}
+    \tt {si la fad mi red}
+    \tt {dod sib lab sol fa} |
+    re8 lab' sib sol si4 r8 mi re fa dod4 |
+    r8 <fad,, lad> <sol si> r <lab do> <la dod> |
+    r <sib re> <si red> r <do mi> <dod fa> |
+    r <la sold'> <la sold'> <sold la'> r <mib' re'> |
+    <mib re'> <re mib'> r <la' sold'> <la sold'> <sold la'> |
+    <re' re'>4 <re re'> <re re'> <re re'> r2 |
+    <re re'>4 <re re'> <re re'> <re re'> r2 |
+
+    %%% Boum %%%
+    <sol,,! la sold'>4 r2 R2.*2
+    \ottava #1
+    re''''16\ppp si do dod \tt { re sold, si dod re } \tt { fad, sol la do re } |
+    \tt { mib re do re do } \tt { la do la sol la } \tt { sol fad mi dod re } |
+    \tt { si dod mi fad mi } \tt { fad sol fad lad si } \tt { lad sol sold si dod } |
+    \tt { re lad si do dod } \tt { re sold, lad si dod } \tt { re fad, sol la do } |
+    \tt { re fa mib re do } \tt { la do la sol la } \tt { fad sol si sold re' } |
+    \tt { si do mib do mi } \tt { sold sol si sol sold } \tt { mi fad mi red dod } |
+    \tt { lad dod lad sold lad } \tt { sol lab sol lab sol } \tt { fa sol sib lab sol } |
+    \tt { fa sol lab sol fa } \tt { re fa re do si } \tt { lab sol si do mib } |
+    \tt { mi sol red mi sol } \tt { si lad re sold, fad } \tt { re' fa, sold si dod } |
+    \tt { re mib, sol sib dod } \tt { re do, fa sol la } \tt { re sib, mib lab mi } |
+    \tt { re' sol, do, sib' mib, } \tt { lab, re sol red' sold } \tt { la, fad fa mi mib } |
+    \tt { re sol, la do re } \tt { mib \ottava #0 re,\< mib mi fa } \tt { fad sol sold la do\! } |
+
+    %%% Contralto %%%
+    <re, re'>4 r | R2*11 R2. R2*6 \clef bass |
+    s2.*4 \clef treble |
+
+    %%% Grand ensemble %%%
   }
   \relative {
     %%% Larghetto %%%
@@ -1951,5 +2139,196 @@ ActeDeuxSceneTroisPiano = {
     <la, mi'>4.\laissezVibrer
     \ottava #-1
     dod,,16 dod' \md dod'8 r \mg |
+    re, \md re' r \mg |
+    dod,,16 dod' \md dod'8 r \mg |
+    re, \md re' r \mg |
+    fad,,16 fad' \md fad'8 r \mg | R4.*2
+    dod,,16 dod' \md dod'8 r \mg |
+    re, \md re' r \mg |
+    dod,,16 dod' \md dod'8 r \mg | R4.*2
+    dod,,16 dod' \md dod'8 r \mg |
+    sol, \md sol' r \mg |
+    dod,,16 dod' \md dod'8 r \mg |
+    sol,16 \md sol' \mg fa, \md fa'
+    \mg lab, \md lab' \mg |
+    mi,8 r4 | R4.
+    mi16 \md mi' \mg re, \md re'
+    \mg fa, \md fa' \mg |
+    dod,16 dod' \md dod'8 r \mg |
+    dod,, dod' \md dod' \mg |
+    \ottava #0
+    <re, sib'>8 <re sib'> |
+    <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    <re sib'> <re sib'> |
+    <dod sold'> <dod sold'> |
+    <dod sold'> <dod sold'> |
+    <dod sold'> <dod sold'> |
+    <dod sold'> <dod sold'> |
+    \ottava #-1 dod,16 dod' \md dod'8 \mg |
+    <dod, sold'> <dod sold'> |
+    <dod sold'> <dod sold'> |
+    \ottava #-1
+    si,16 si' \md si'8*1/2 \mg s16 |
+    r8 si,,16 si'
+    \ottava #0 R4 |
+    <si sold'>8 <si sold'> |
+    <si sold'> <si sold'> |
+    <si sold'> <si sold'> |
+    <si sold'> <si sold'> |
+    <sib fa'> <sib fa'> |
+    <sib fa'> <sib fa'> |
+    <sib fa'> <sib fa'> | R4
+    <sib mi la>8 <sib mi la> |
+    <sib mi la> <sib mi la> |
+    <sib mi la> <sib mi la> r |
+    <sib mib la> <sib mib la> |
+    <sib mib la> <sib mib la> |
+    <sib mib la> <sib mib la> | R4*4
+
+    \ottava #-1
+    sold16 sold' \md sold'8 r \mg |
+    re,, \md <re' re'> r \mg |
+    sold,16 sold' \md sold'8 r \mg |
+    re,, \md <re' re'> r \mg |
+    sold,16 sold' \md sold'8 r \mg |
+    sold,,16 sold' r4 | R4.
+    fad,16 fad' \md fad'8 r \mg |
+    do,, \md <do' do'> r \mg |
+    fad,16 fad' \md fad'8 r \mg |
+    do,, \md <do' do'> r \mg |
+    fad,16 fad' \md fad'8 r \mg |
+    fa,,16 fa' \md fa'8 r \mg |
+    mi,,16 mi' \md <sol mi'>8 r \mg |
+    \ottava #0
+    <mib, mib'>4\laissezVibrer s4*2 R4*4
+    <re' sib'>8 <re sib'> |
+    <re sib'> <re sib'> |
+    <dod sold'> r R4 |
+    <re sib'>8 <re sib'> |
+    <dod sold'> r R4 |
+    <mib sib'>8 <re sib'> <dod sold'> r R4*3 |
+    <do sol' re'>4\arpeggio \laissezVibrer s4 R4*3
+    r8 <si sol'> r <si sol'> |
+    r <si sol'> r <si sol'> |
+    R2.-\fermataMarkup R2.*2
+    r8 sib' <si! sib'> lab <la sold'> r R2.
+    r8 sib <si! sib'> lab <la sold'> r R2.
+
+    %%% Interlude %%%
+    r8 sib <si! sib'> r |
+    dod <re dod'> r mi |
+    fa2\laissezVibrer s
+    r4 <do, si'>8. <si do'>16~ | <si do'>2
+    si8 sib' r4 |
+    <fa mi'>4. <mi fa'>8~ <mi fa'>4. <do si'>8~|
+    <do si'>16 si do' \md fa \mg r4 r16 mib,8.|
+    \pl <solb fa'>2 {s4 \t {reb''16 solb, fa~} fa8 } |
+    solb,4 r16 <do, si'>8.\laissezVibrer |
+    r4 \md fa'''16 solb, \mg fa solb,~ |
+    solb8 <solb, fa'>4. |
+    r16 <do si'>8.~ <do si'>8 <si do'>~ |
+    <si do'>16 do si' solb fa do reb,8~ |
+    reb4 r16 \pl {reb~ reb4} {<do' si'>16~ <do si'>4} |
+    <sol, sol'>4\laissezVibrer r4 |
+    R2*2 \pl sol'!4 \t {sold'8 fad mi} <mi, red'>4 R2*2 |
+    r4 <mi red' sol> <sol do fad> r r <sol fad' sib>\arpeggio |
+    <sib mib la> r R2*3
+    <sol sol'>8. <sib, sib'>16~ <sib sib'> <dod dod'>8. |
+    <mi, mi'>2 | <dod' dod'>4 <mi, mi'>~ |
+    <mi mi'>8. sib''16 <dod, dod'>8 r4 |
+
+    %%% Quatuor %%%
+    <sol'' sol'>8 r r4 R4. R2 R4. R2 R4.*2
+    R2.-\fermataMarkup R2.*6 R2*2 R2.
+
+    %%% Air baryton 1 %%%
+    <do,,, do'>2 do' fad,2 r4 |
+    <do do'>2 do' fad,2 r4 |
+    <do do'>2 do' sol2 r4 |
+    \ottava #-1
+    do,2~ do |
+    do4 \md r8 do' \t {do do do} \mg <sol sol'>2 |
+    dod16 \md dod' \t {dod dod dod} dod8 \mg |
+    <sol, sol'>2 |
+    mi'16 \md mi' \t {mi mi mi} mi8 | <do, do'>8\mg
+    <do, do'>~\t {<do do'> do' do} |
+    <do, do'>2 | do4 do do |
+    dod16 dod' \md dod'8 \mg dod,16 \md dod' dod'8 \mg |
+    dod,,,16 dod' r8 r4 | r2 dod,4 |
+    re1 re2 re4~ re8 re \t {re re re}\ottava #0 |
+
+    %%% Doppio tempo %%%
+    re'4 r | R2*6 R2.*7 R2 R2.
+    <fa, fa'>2~ <fa fa'>4 r lab |
+    <fa fa'>2 r4 lab2 | <fa fa'>2 |
+    \ottava #-1 fa4~ fa8 fa \t {fa fa fa} |
+    fa2~ fa4 r8 fa4 fa8~ \t {fa fa fa} fa4 |
+    r8 fa4 fa8~ \t {fa fa fa} |
+    fa4 r \ottava #0 R2. |
+    <re' re'>4 r r4 s8 | <re' re'>2\laissezVibrer r4 s |
+    <re, re'>4 r r4 s8 | <re' re'>2\laissezVibrer r4 s |
+    <re, re'>4 <re re'>~ <re re'>8 <re re'>
+    \t {<re re'> <re re'> <re re'>} |
+    lab'4 r8 r4 \stemDown lab'8 \stemNeutral |
+    <lab,, lab'>4 r8 re4 lab8 | re2. r4 |
+
+    %%% Soprano 2 %%%
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2. R1
+    R2. R1 R2. R1 R2. R1 R2.
+    R1 R2. R1 R2. R1 R2. \clef treble |
+
+    %%% Duo %%%
+    <mi'' sold>8 <fa la> r4
+    <mi sold>8 <fa la> r4 |
+    <mi sold>8 <fa la> r4 s2 |
+    <mid sold>8 <fad la> r4
+    <mid sold>8 <fad la> r4 |
+    <do' mib>8 <re fad>
+    <mib sold> \md <re' fad> \mg
+    <mib, sold> \md <mib' sold> \mg
+    <sold, la> \md <sold' la> \mg |
+    la,,8 sold la' sold la, sold la' sold |
+    r4 la, r <sold, la'> \clef bass R2*3
+
+    %%% Baryton 2 %%%
+    re,4 re re \t {re8 \md mi sol} la16 sib do mib fa solb lab si \mg |
+    re,,4 re re re16 \md mib fa lab sib si dod mi \t {fad8 sol la} \mg |
+    re,,4 re re re16 fa sol sold lad dod red mi fad \md la si do \mg |
+    re, mi fa sol sib \md do reb mib fad sold la si \mg |
+    r4 <re,,, re'>2 | <dod dod'>2\laissezVibrer s4 R2.*2 R4.
+    re4 re re re8 sib'' lab si sol4 |
+    r8 re mi dod fa4 |
+    re,8 r r re r4 |
+    re8 r r re r4 |
+    re8 r r4 sold8 r |
+    r4 sold,8 r r4 |
+    <re' re'>4 re re re r2 |
+    re4 re re re r2 |
+
+    %%% Boum %%%
+    <si fad' lad>4 r2 | R2.*2
+    sold2\laissezVibrer s4 s2. |
+    mi'2\laissezVibrer s4 s2. |
+    do2\laissezVibrer s4 s2. |
+    si2\laissezVibrer s4 s2. |
+    fa2\laissezVibrer s4 s2. |
+    sold2\laissezVibrer s4 s2. |
+
+    %%% Contralto %%%
+    <re' re'>4 r | R2*11 R2. R2*6
+    \ottava #-1
+    dod,8 dod' \md dod'4 r \mg |
+    sol,4 \md sol' r |
+    dod,,8 dod' \md dod'4 r \mg |
+    sol,4 \md sol' r \ottava #0 |
   }
 }

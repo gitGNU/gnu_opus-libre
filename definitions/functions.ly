@@ -313,6 +313,19 @@ harmo =
     \override Stem #'stencil = ##f $result
     \revert Stem #'stencil \revert NoteHead #'stencil \stemNeutral } >> #})
 
+harmonics =
+#(define-music-function (parser location music) (ly:music?)
+#{
+\override Dots #'transparent = ##t
+\override Stem #'transparent = ##t
+\override Beam #'transparent = ##t
+\override NoteHead #'style = #'harmonic
+$music
+\revert NoteHead #'style
+\revert Beam #'transparent
+\revert Stem #'transparent
+\revert Dots #'transparent #})
+
 thumbpizz =
 #(let* ((m (make-music 'ArticulationEvent
                        'articulation-type "stopped"
