@@ -847,56 +847,56 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     re1~--->\f re2.~ re4 r |
 
     %%% Doppio tempo %%%
-    re8 r r4 | R2*5
-    r8 sold,4 re'8 |
+    re8-> r r4 | R2*5
+    r8 sold,4--\upbow\mp( re'8-.) |
     sold,2.~ sold~ sold2 r4 |
     sold'2.~ sold~ sold2 r4 |
-    R2. R2 r8 sold,4 fad la8 |
-    fa2~ fa lab4 |
+    R2. R2 r8 sold,4--\f\>( fad--) la8-. |
+    fa2~--\mp fa lab4 |
     fa2~ fa4 lab2 |
     fa~ fa r4 | fa2~ fa r4 | fa2~ fa r4 |
-    r8 fa'4. mib2 fad4 |
+    r8 fa'4.\upbow\f mib2-- fad4-- |
 
     %%% Climax %%%
-    <re re'>4 <re re'>8 <re re'> |
-    <re re'>4:16 <re re'>8: |
-    <re re'>4 r |
-    r8 mib'do16 si la fad |
-    re4 <re re'>8 <re re'> |
-    <re re'>4:16 <re re'>8: |
-    <re re'>4 r |
-    r8 sold' fad16 mib reb do |
-    re,4 r8 <re re'>~ |
-    <re re'> <re re'> <re re'> <re re'> |
-    sold, sold sold sold4:16 sold8:16 |
-    sold4 r8 re'4 sold,8 |
-    re'2:16 re4 r |
+    <re re'>4---> \st {<re re'>8 <re re'>} |
+    <re re'>4:16\< <re re'>8: |
+    <re re'>4--->\! r |
+    r8 mib'-. \ind #"détaché" do16 si la fad |
+    re4---> \st {<re re'>8 <re re'>} |
+    <re re'>4:16\< <re re'>8: |
+    <re re'>4--->\! r |
+    r8 sold'-. fad16 mib reb do |
+    re,4---> r8 <re re'>~->\< |
+    <re re'> <re re'>-. <re re'>-. <re re'>-. |
+    sold,-. sold-. sold-. sold4:16 sold8:16 |
+    sold4---> r8 re'4---> sold,8-. |
+    re'2:16 re4-- r |
 
     %%% Soprano 2 %%%
-    \pizz re4 la sold dod do fa, mi' |
+    \pizz re4\mp la sold dod do fa, mi' |
     la, r2 | la4 r r2 |
     re4 si fad' red r la sold |
     dod r2 | reb4 do8 sol' r fa r mi |
     si4 r2 si4 r r2 |
-    sib4 fa r8 sib, |
+    sib4\p fa' r8 sib, |
     r4 r8 fa' r4 sib, |
     R2. R1
     sib4 fa' sib, fa' mib r8 do r4 |
-    R2. dod4 r r2 | sol4 r2 |
+    R2. dod4\mp r r2 | sol4 r2 |
     R1 R2. R1 R2.
-    re'4 r r2 |
-    r8 sold' re si fa re |
-    do4 r r2 | R2.
-    \arco sib'4 fa' mi8 do sib4 |
-    do8 sib fa' mi r4 |
-    \pizz sold,4 r r2 | r8 sold' r4 mi |
+    re'4\p r r2 |
+    r8 sold'\< re si fa re |
+    do4\! r r2 | R2.
+    \arco sib'4-.\mp fa'-. mi8( do) sib4-. |
+    do8( sib) fa'( mi) r4 |
+    \pizz sold,,4 r r2 | r8 sold' r4 mi |
 
     %%% Soprano 1 %%%
-    re4 r r2 | re4 r2 |
+    re4-> r r2 | re4\p r2 |
     re'4\CaV r r2 | dod,4 r2 |
     dod4 r r2 |
     si4 r2 si'4 r si, r |
-    sib8 fa' r sib, r4 |
+    sib8\p fa' r sib, r4 |
     fa' r sib, r8 fa' |
     r sib, fa' sib, r fa' |
     r4 sib, r fa' |
@@ -904,17 +904,17 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     r sib, r4 fa' r |
     sib, r8 fa' r sib, |
     dod4 r r2 | sol4 r2 |
-    sib8 fa' r4 r2 | R2.
+    sib8\p fa' r4 r2 | R2.
     sib,8 fa' sib,4 r2 |
     r4 r8 fa' r4 | R1
     sib,8 fa' sib,4 r |
-    r8 \arco dod re fa fad la sib,4 |
-    r8 dod re fa fad la |
-    r re, mib fad sol sib si,4~ |
+    r8 \arco dod\mp\( re( fa) fad( la) sib,4--\) |
+    r8 dod\( re( fa) fad( la)\) |
+    r re,\( mib( fad) sol( sib) si,4~--\) |
     si2 r4 |
 
     %%% Duo %%%
-    \pizz la do sib mib |
+    \pizz la\p do sib mib |
     fa lab, solb si | dod mi re sol, |
     sib sol la mi | re' si dod sold |
     fad mib' fa do |
@@ -922,26 +922,26 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     sold,4 r |
 
     %%% Baryton 2 %%%
-    <re' re>4 <re re> <re re> <re re> re re |
+    \arco <re' re>4--->\downbow\fsubito <re re>--->\downbow <re re>--->\downbow <re re>--->\downbow \det {re re |
     re re re re re re |
-    <re re'> <re re'> <re re'> |
-    <re re'> re8 re \t {re re re} |
-    re4 re re re re re |
+    <re re'>-> <re re'>-> <re re'>-> |
+    <re re'>->} re8\< re \t {re re re} |
+    \accdet {re4\! re re re} \det {re re |
     dod dod dod si si si |
-    sol si fa' si8 fa4 |
-    <re sib'> <re sib'> <re sib'> |
+    sol\< si fa'} si8-.->\! fa4---> |
+    \det {<re sib'>\fp <re sib'> <re sib'> |
     <re si'> <re si'> <re si'> |
-    <re do'> <re do'> <re do'> |
-    <re dod'>8 re <re dod'> re <re dod'> re |
-    <re mib'> re <re mib'> re <re mib'> re |
-    <re fad'> re <re fad'> re <re fad'> re |
-    <re sold'>4 <re sold'> re |
-    <re re'> r2 |
-    r8 si' mi, fad do mib re4 r2 |
+    <re do'> <re do'> <re do'>} |
+    <re dod'>8-> re-. <re dod'>-> re-. <re dod'>-> re-. |
+    <re mib'>-> re-. <re mib'>-> re-. <re mib'>-> re-. |
+    <re fad'>-> re-. <re fad'>-> re-. <re fad'>-> re-. |
+    <re sold'>4---> <re sold'>---> re---> |
+    <re re'>--->\sfz r2 |
+    r8 \acc {si' mi, fad do mib re4-- r2 |
     r8 sol sib do mib4 |
 
     %%% Boum %%%
-    <si, lad'>4 r2 | R2.*2
+    <si, lad'>4\sffz} r2 | R2.*2
     sold2.~ sold2 r4 |
     mi2.~ mi2 r4 |
     do'2.~ do2 r4 |

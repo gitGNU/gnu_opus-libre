@@ -1104,42 +1104,42 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
     \ten re1~--->\f re2. r4 dod'16-> dod-> do8-> |
 
     %%% Doppio tempo %%%
-    re,8 re re re' | re re, re re' |
+    re,8\f re re re' | re re, re re' |
     re re, re re' | re re, re re' |
     re re, re re' | re re, re re' |
-    re, sold16 sold sold8 re' |
-    sold,16 sold sold sold sold sold sold sold sold8 r |
+    re,-. sold16 sold sold8-. re'-. |
+    sold,16\ppleggiero sold sold sold sold sold sold sold sold8 r |
     sold16 sold sold sold sold sold sold sold sold8 r |
     sold16 sold sold sold sold sold sold sold sold8 r |
     sold16 sold sold sold sold4 r |
     sold16 sold sold sold sold4 r |
-    sold8 sold sold sold r4 |
+    \st {sold8 sold sold sold r4 |
     sold8 sold sold4 r |
-    sold8 sold r4 |
-    r8 sold4 fad la8 |
-    fa2~ fa lab4 |
+    sold8 sold} r4 |
+    r8 sold4--\f\>( fad--) la8-. |
+    fa2~--\mp fa lab4 |
     fa2~ fa4 lab2 |
     fa~ fa r4 |
     fa2~ fa r4 |
     fa2~ fa r4 |
-    r8 fa4. | mib2 fad4 |
+    r8 fa4.\upbow\f | mib2-- fad4-- |
 
     %%% Climax %%%
-    re4 r16 re'8. |
-    re8 re, re' \clef treble |
-    re'4 re'16 dod si sold \clef bass |
-    re8 sib fad16 fa mib do |
-    re,8 r16 re'~ re4 |
-    <re re>8 re, <re' re> |
-    <re re'>4 \clef treble re''8 si |
-    sold16 fad mib do \clef bass fad,8 dod |
-    re, r r <re re'>~ <re re'> <re re'> <re re'> <re re'> |
-    sold8 r16 sold8. sold8 sold sold |
-    sold4 r8 re'4 sold,8 |
+    re4---> r16 re'8.-> |
+    \st {re8 re, re'} \clef treble |
+    re'4---> \ind #"détaché" re'16-> dod si sold \clef bass |
+    \st {re8 sib} fad16 fa mib do |
+    re,8-> r16 re'~-> re4 |
+    \st {<re re>8 re, <re' re>} |
+    <re re'>4---> \clef treble \st {re''8 si} |
+    sold16 fad mib do \clef bass \st {fad,8 dod} |
+    re,-> r r <re re'>~->\< <re re'> \st {<re re'> <re re'> <re re'>} |
+    sold8--->\! r16 sold8.-> \st {sold8 sold sold} |
+    sold4---> r8 re'4---> sold,8-. |
     re2:8 re: |
 
     %%% Soprano 2 %%%
-    re8 r \pizz la' fad sold4 |
+    re8-> r \pizz la'\mp fad sold4 |
     reb'8 sib do4 fa,8 re mi4 |
     la r2 | la4 r r2 |
     re8 mi si4 fad8 sold |
@@ -1148,36 +1148,36 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
     reb'8 sib r sol r fa re4 |
     si'4 r2 si4 r r2 |
     R2. R1
-    fad4 si r8 fad r4 r8 si r4 fad |
+    fad4\p si r8 fad r4 r8 si r4 fad |
     R2. R1
-    r8 \arco re la' fad sold red |
-    \pizz dod la' fa' la r2 |
-    sol,4 r8 mib' r4 |
-    \arco mi8 r mi r mi mi r4 |
+    r8 \arco re-.\p \st {la' fad sold red} |
+    \pizz dod->\mp la' fa' la r2 |
+    sol,4 r8 mib'-> r4 |
+    \arco mi8-. r \st {mi r mi mi r4 |
     dod8 r dod r sib r |
     mi r mi r <sol, re'>\CaV <sol re'>\CaV r4 |
     re'8 r re r si r |
-    sib' sib r sib r <si mi> r <sold re'> |
-    r <sold dod> r <sib mib> r <si mi> |
-    do,,\thumbpizz <sol'' do> r <do fa> r4 \pizz do,,8 sol' |
-    re' la' r la r mi' | R1 r2 sib,4 |
-    \arco sold mi' red8 lad sold4 |
+    sib'\p sib r sib r <si mi> r <sold re'> |
+    r <sold dod> r <sib mib> r <si mi>} |
+    do,,->\thumbpizz \st {<sol'' do> r <do fa>} r4 \pizz do,,8 sol' |
+    re' la' r la\> r mi'\! | R1 r2 sib,4 |
+    \arco sold--\mp mi'-- red8( lad) sold4-- |
     r8 \pizz sold r4 mi |
 
     %%% Soprano 1 %%%
-    <re sib' re>\arpeggUp r r2 |
-    re'4 r2 |
-    r4 sib8 mib fa4 fad,8 si |
-    dod4 sold' dod, dod8 si do4 r re8 mi |
-    si4 sold r si sold' r sold, | R2. R1 R2. R1 R2. R1 R2.
-    dod,8 la' fa' la r2 |
-    sol,4 r8 mib' r4 | R1 R2. R1 R2. R1 R2.
-    r8 dod, re fa fad la r4 |
+    <re sib' re>->\arpeggUp r r2 |
+    re'4\p r2 |
+    r4 sib8\mp mib fa4 fad,8 si |
+    \det {dod4 sold' dod,} dod8 si do4 r re8 mi |
+    \det {si4 sold r si sold'} r sold, | R2. R1 R2. R1 R2. R1 R2.
+    dod,8->\mp la' fa' la r2 |
+    sol,4 r8 mib'-> r4 | R1 R2. R1 R2. R1 R2.
+    r8 dod,\p re fa fad la r4 |
     r8 dod, re fa fad4 |
     r8 re mib fad sol4 r | R2.
 
     %%% Duo %%%
-    r8 fa' do mib r reb mib, sol |
+    r8 fa'\p do mib r reb mib, sol |
     r re' sold, si r la' si, red |
     r sib mi sol r fa, sol mi' |
     r dod sol mi' r fad, mi sol |
@@ -1187,31 +1187,31 @@ ActeDeuxSceneTroisVioloncelleUn = { \VioloncelleUn
     r8 fa' sol sib |
 
     %%% Baryton 2 %%%
-    \arco <re, re>4 <re re> <re re> |
-    re8 sold, re' sold, re' sold, |
+    \arco <re, re>4--->\downbow\fsubito <re re>--->\downbow <re re>--->\downbow |
+    re8-> \st {sold, re' sold, re' sold,} |
     re' si re sib re si |
     sold' re sold re sold re |
-    re' re, re' re, re' re, |
-    <re re'> re re re re re |
-    re16 fa, mi mib re4 \tt {re'16 sib lab sol fa} |
-    re4 \tt {re'16 sib lab fa mib} re4 |
-    dod8 <re' re> r <re re> dod,4 |
+    re'-> re, re'-> re, re'-> re, |
+    <re re'>-> re re re re re |
+    re16( fa, mi mib re4->) \tt {re'16( sib lab sol fa} |
+    re4->) \tt {re'16( sib lab fa mib} re4->) |
+    dod8-> <re' re>-. r <re re>-. dod,4-- |
     r8 sol' r sol sol sol |
-    r sold sold fa sold4 |
-    si8 fa4 |
-    re'8 sib re sib re sib |
+    r sold\< sold fa sold4 |
+    si8-.->\! fa4---> |
+    \st {re'8\fp sib re sib re sib |
     re si re si re si |
     <do re> <do re> <do re> <do re> <do re> <do re> |
     <dod re> <dod re> <dod re> <dod re> <dod re> <dod re> |
-    <re mib> <re mib> <re mib> <re mib> <re mib> <re mib> |
+    <re mib> <re mib> <re mib> <re mib> <re mib> <re mib>} |
     <re fad> <re fad> <re fad> <re fad> <re fad> <re fad> |
-    <re sold> <re sold> <re sold> <re sold> <re sold>4 |
-    <re re'> r2 |
-    r8 si' mi, fad do mib | re4 r2 |
+    <re sold> <re sold> <re sold> <re sold> <re sold>4-- |
+    <re re'>--->\sfz r2 |
+    r8 \acc {si' mi, fad do mib | re4-- r2 |
     r8 sol, sib do mib fad |
 
     %%% Boum %%%
-    <fad, lad>4 r2 R2.*2 |
+    <fad, lad>4\sffz} r2 R2.*2 |
     r8 si si si si si | do do mib mib mi mi |
     r fa fa fa fa fa | mi mi la la lab lab |
     r la la la la la | sib sib dod dod re re |
