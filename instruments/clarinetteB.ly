@@ -861,188 +861,188 @@ ActeDeuxSceneDeuxClarinetteDeux = { \ClarinetteBasse
 ActeDeuxSceneTroisClarinetteDeux = { \ClarinetteDeux
   \relative {
     %%% Larghetto %%%
-    R4.*16 mi8 do si la sold la si4 r8 |
-    R4. r4 mi8 do si la sold la si |
-    R4.*2 r8 mi do si la sold la si r |
+    R4.*16 mi8\ppp( do si la sold la si4) r8 |
+    R4. r4 mi8( do si la sold la si) |
+    R4.*2 r8 mi( do si la sold la si) r |
     R4.*2
-    la16 la la la r8 |
+    \st {la16\mp la la la} r8 |
     r16 la la la la8 |
     la16 la la la r8 |
-    r la la la r4 |
-    la4.~la4 r8 |
-    la16 la la la r8 |
+    r \det {la la la} r4 |
+    \ten la4.~\pp la4 r8 |
+    \st {la16\mp la la la r8 |
     r16 la la la la8 |
-    la16 la la la r8 |
-    mi'4.~mi4 r8 |
-    la,16 la la la r8 |
+    la16 la la la} r8 |
+    \ten mi'4.~\pp mi4 r8 |
+    \st {la,16 la la la r8 |
     r16 la la la la8 |
     r8 la16 la la8 |
-    la16 la la la r8 |
-    red8 mi dod re si4~si r8 |
-    la16 la la la r8 |
-    r16 la la la la8 |
-    sib16 sib sib sib sib sib sib sib |
+    la16 la la la} r8 |
+    red8\p( mi) dod( re) si4~\pp si r8 |
+    \st {la16 la la la r8 |
+    r16 la la la la8} |
+    sib16\pleggiero sib sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib |
     sib sib r sib sib sib sib sib |
-    sib sib sib sib do do do do |
+    sib sib sib sib( do) do do do |
     do do do do do do r do |
     do do do do do do do do |
-    do do do do do do do do |
-    reb reb reb reb reb reb r reb |
+    do do do do do do do do( |
+    reb) reb reb reb reb reb r reb |
     reb reb reb reb reb reb reb reb |
     reb reb reb reb reb reb reb reb |
-    reb reb reb reb mi mi r mi |
+    reb reb reb reb( mi) mi r mi |
     mi mi r mi mi r mi mi | R4
-    sol8 sol sol sol |
+    \st {sol8 sol sol sol |
     sol sol r r sol r sol r sol | R4*4
-    la,16 la la la r8 |
+    la,16\mp la la la r8 |
     r16 la la la la8 |
     la16 la la la r8 |
     r la16 la la la |
-    la la la la r8 | r4 r16 sol' |
-    fa lab mi'8 r |
-    la, r4 r8 red,8. mi16 |
-    fa8 r4 r8 red r dod r4 |
-    sib16 sib sib sib r8 |
-    r16 sib fa' sib mib8 |
-    sol16 sol la8 sol16 sol la8 |
+    la la la la} r8 | r4 r16 sol'( |
+    fa lab mi'8-.) r |
+    la,-.-> r4 r8 red,8.\p( mi16 |
+    fa8-.) r4 r8 red-. r dod-- r4 |
+    \st {sib16 sib sib sib} r8 |
+    r16 sib\<( fa') sib-. mib8-- |
+    sol16\mf sol la8-- sol16 sol la8-- |
     sol16 sol la la sol sol la la |
     sol sol r la, sol sol la la |
     sol sol la la |
-    sib sib sib sib sib sib sib sib |
-    do8 r R4 sib16 sib sib sib |
-    do8 r R4 sib16 sib sib sib |
-    do8 r R4
-    la,16 la la la | r fad si mi |
-    mi'4~mi~mi8 r |
-    mi,16 mi mi mi r4 |
+    \st {sib sib sib sib sib sib sib sib |
+    do8-> r R4 sib16 sib sib sib |
+    do8-> r R4 sib16 sib sib sib |
+    do8-> r R4
+    la,16 la la la} | r fad( si) mi-. |
+    \ten mi'4~\mp mi~ mi8 r |
+    \st {mi,16 mi mi mi r4 |
     red16 red red red r4 |
-    re16 re re re r8 re |
+    re16\p re re re r8 re} |
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
-    mib2~ mib4 r |
-    fa,2~ fa~ fa4 r |
-    sold' \t {la8 sold la} si do re mib |
-    fa,,2~ fa4 r | sold'8 la si do re mib |
-    fad,,2~ fad4 r16 do' do do |
-    do do do do red8 mi fad sol la sib |
-    r16 do, do do do do do do |
-    sol'8 lab si do fad sol r4 r8 |
-    re2~ re8 la si16 dod re dod |
-    re2~ re4 r8 sol, re4. r8 |
-    fad'8 mi re dod re16 dod re mi fad8 dod~ |
-    dod sib4. r8 mi4. |
-    dod4. r8 | la'8 sol fa mi fa16 mi fa sol la8 mi |
-    r16 la8 mi16 r la mi8 |
-    mib16[ sib r la'] mi r red'8 dod si lad si16 lad |
-    si dod red8 lad sib,16 la sold la sib r si' lad si dod red8 |
+    \ten mib2~\pp mib4 r |
+    fa,2~\p fa~ fa4 r |
+    sold'( \t {la8 sold la} si\< do re mib) |
+    fa,,2~\p fa4 r | sold'8( la si do re mib) |
+    fad,,2~\p fad4 r16 \st {do'\pp( do do |
+    do do do do)} red8( mi fad sol la sib) |
+    r16 \st {do,( do do do do do do)} |
+    sol'8( lab si do fad sol) r4 r8 |
+    re2~\mf re8( la) si16( dod re dod) |
+    re2~-- re4 r8 sol,-. re4.-- r8 |
+    fad'8( mi) re( dod) re16( dod re mi fad8) dod~-- |
+    dod( sib4.) r8 mi4.( |
+    dod4.) r8 | la'8\mf( sol fa mi) fa16( mi fa sol) la8( mi) |
+    r16 la8( mi16) r la-. mi8-. |
+    mib16([ sib) r la'(] mi) r red'8\f( dod) si( lad) si16( lad |
+    si dod) red8( lad) sib,16( la sold la sib-.) r si'( lad si dod red8-.) |
 
     %%% Quatuor %%%
-    r16 mib,,, re re mib mib re re |
-    r mib fad si re sol |
-    r mib, re re mib mib re re |
-    r mib lab si mi sol |
-    r sol, do reb do solb' reb do |
-    r8 lab16 re sol dod |
-    r mi,, red mi' red fa' |
-    sib2 r4\fermata R2. |
-    la,4 sol fa mi2.~ mi2 r4 |
-    la sol fa mi fa8 mi fa sol |
-    la2~ la4 r R2. |
+    r16 \st {mib,,,\pp re re mib mib re re |
+    r mib\< fad si re sol\!} |
+    r \simile mib,\pp re re mib mib re re |
+    r mib\< lab si mi sol |
+    r sol,\pp do reb do solb' reb do |
+    r8 lab16\< re sol dod\! |
+    r mi,,\< red mi' red fa' |
+    sib2--->\f r4\fermata R2. |
+    la,4\p( sol fa mi2.~) mi2 r4 |
+    la( sol fa mi) fa8( mi fa sol |
+    la2~) la4 r R2. |
 
     %%% Air baryton 1 %%%
     R2*2 R2. R2*2 R2.
-    mi2~ mi4 r | R2.
-    sib2~ sib4 r |
-    r r16 mi mi mi mi mi mi mi |
-    R2 fa16 dod' fa8 la,16 dod |
-    la'2 mi4 r8 | si4. r8 |
-    r fad sol lad | si4 do8 re red4 |
-    mi16 re mi8 r4 |
-    la,16 la la la r la la la |
-    r8 re,, la' si' dod'4 |
-    r16 r32 la,, si16 re~ re8 mi~ mi4. r8 |
-    r8 mib,16 solb~ solb4. r8 | R2
+    mi2~--\pp mi4 r | R2.
+    sib2~-- sib4 r |
+    r r16 \st {mi( mi mi mi mi mi mi)} |
+    R2 fa16\mp( dod' fa8) la,16( dod |
+    la'2) mi4-- r8 | si4.-- r8 |
+    r fad( sol lad | si4) do8( re red4) |
+    mi16->\mf re-> mi8-> r4 |
+    \st {la,16 la la la} r la la la |
+    r8 re,,( la') si'( dod'4) |
+    r16 r32 la,,\ff( si16) re~-> re8 mi~-> mi4. r8 |
+    r8 mib,16-.\f solb~-> solb4. r8 | R2
 
     %%% Doppio tempo %%%
-    re'8 r r4 | R2*6
-    r8 mib mib mib sib'4 |
-    r8 mib, mib mib lab4 |
-    r8 re, re re sold4 |
-    r8 si, si si re4 |
-    r8 si si si mi4 |
-    r8 re re re sold4 |
-    r8 mi mi mi la4 |
-    r8 re, re re | la'4 sold la8 mi~ |
+    re'8-> r r4 | R2*6
+    r8 mib\mp( mib mib sib'4) |
+    r8 mib,( mib mib lab4) |
+    r8 re,( re re sold4) |
+    r8 si,( si si re4) |
+    r8 si( si si mi4) |
+    r8 re( re re sold4) |
+    r8 mi( mi mi la4) |
+    r8 \st {re,\mp re re} | la'4-- sold-- la8-. mi~-- |
     mi4. r8 | R2. R2 R2. R2
-    r2 r8 re,16 mi | sold4 r8 mi |
-    sold16 la re mi sold4 r | R2 R2.
-    \repeat tremolo 8 {la,32 sold}
-    \tt {mib'16 re mib re mib} sold16 la sold la re mib re mib |
+    r2 r8 re,16\mp( mi) | sold4-> r8 mi-. |
+    sold16( la) re-. mi-. sold4-- r | R2 R2.
+    \repeat tremolo 8 {la,32\p sold}
+    \tt {mib'16\<( re mib re mib)} sold16( la) sold la re( mib) re mib |
 
     %%% Climax %%%
-    re'8 r r4 | R4. |
-    si8. si16 si8 r |
-    r4 re,8 r re r r4 | R4.
-    si'8. si16 si8 r |
-    r4 re,8 r re r r4 | R2
-    re'4 r16 mi si fad dod sold re8~ |
-    re2 r4 | sib'4 si2 sol4 |
+    re'8->\f r r4 | R4. |
+    si8.-- si16-. si8-. r |
+    r4 re,8-. r re-. r r4 | R4.
+    si'8.-- si16-. si8-. r |
+    r4 re,8-. r re-. r r4 | R2
+    re'4---> r16 mi-. si( fad) dod-. sold-. re8~ |
+    re2-- r4 | sib'4(\fmolto si2 sol4 |
 
     %%% Soprano 2 %%%
-    sib4 r2 R1 |
-    sib,8 sib sib sib r4 | R1
+    sib4--) r2 R1 |
+    \st {sib,8\p sib sib sib r4 | R1
     sib8 sib sib r r4 | R1
     r8 do do do do do | R1
     r4 dod8 dod dod r |
-    r dod dod dod dod dod dod dod |
+    r dod( dod dod dod dod dod dod)} |
     R2. R1 R2. R1 R2. R1 R2.
-    la8 la la la r2 |
+    \st {la8\p la la la r2 |
     r8 la la la la4 |
     mi'8 mi mi mi r2 |
     fa8 fa r2 |
-    mi8 mi r4 r fad8 fad |
-    sol4 r2 |
-    sib,8 sib sib sib r2 | R2. R1
-    re''4 sold,8 mi re4 |
-    la' r r2 | R2. R1 R2.
+    mi8 mi r4 r fad8 fad} |
+    sol4-- r2 |
+    \st {sib,8\p sib sib sib} r2 | R2. R1
+    re''4--\p sold,8( mi re4) |
+    la'-- r r2 | R2. R1 R2.
 
     %%% Soprano 1 %%%
-    sib,,8 sib sib sib r2 |
+    \st {sib,,8\pp sib sib sib r2 |
     r8 sib sib sib sib4 |
     sib8 sib r4 r2 |
     r8 do do do do4 | r2 do8 do r4 |
-    dod4 r2 R1 R2. R1 R2. R1 |
-    do2.~ do2. r4 | R2.
-    la8 la la la r la la la |
-    la4 r2 mi'4 r r2 | R2.
-    mi4 r r2 R2. R1
-    mi4 r2 | R1 R2. R1 R2.
+    dod4--} r2 R1 R2. R1 R2. R1 |
+    \ten do2.~\p do2. r4 | R2.
+    \st {la8\p la la la r la la la |
+    la4-- r2 mi'4-- r r2 | R2.
+    mi4-- r r2 R2. R1
+    mi4--} r2 | R1 R2. R1 R2.
 
     %%% Duo %%%
-    sold8 la sold mi re mi sold4~ |
+    sold8\mp( la sold mi) re( mi) sold4~-- |
     sold2. r4 |
-    re2. mib4 fad2. sold4 si2. re8 mi |
-    la2 si,4 la'~ la si, la re, la2 |
+    re2.( mib4) fad2.( sold4) si2.-- re8( mi |
+    la2) si,4( la'~) la si,( la) re,-- la2--\< |
 
     %%% Baryton 2 %%%
-    re4 r2 | \tt {re,16 fad la si do} re4 re |
-    mib r2 |
-    \tt {re,16 lab' re mib mi} fa8 r16 dod32 re mib8 fa |
-    re'4 r2 | sib4 do \tt {re16 mib fa lab do} |
-    re2 r4 | r8 re,, re re re re |
-    \tt {re,16 la' sib do dod} re4 \ttt {re,16 fa fad la sib re} |
-    mib4 \tt {re,16 mi sol si do} mib4 | lab, r2 | R4.
-    re8 re re re re re | R2.
-    re,8 re re re re re | R2.
-    mib8 mib mib mib mib mib | re2 r4 |
-    re' re re re r2 |
-    r8 sib'' sib sib sib sib | R2.
-    r8 fa fad re' re re |
+    re4->\! r2 | \tt {re,16\f( fad la si do} re4->) re-> |
+    mib---> r2 |
+    \tt {re,16( lab' re mib mi} fa8->) r16 dod32( re mib8->) fa-> |
+    re'4---> r2 | sib4--\< do-- \tt {re16( mib fa lab do} |
+    re2--->\!) r4 | r8 \st {re,,\mf( re re re re)} |
+    \tt {re,16( la' sib do dod} re4->) \ttt {re,16( fa fad la sib re} |
+    mib4->) \tt {re,16( mi sol si do} mib4->) | lab,-> r2 | R4.
+    \st {re8\mf re re re re re | R2.
+    re,8\p re re re re re | R2.
+    mib8 mib mib mib mib mib} | re2-- r4 |
+    \accdet {re'\mf re re re} r2 |
+    r8 \acc {sib''\f sib sib sib sib | R2.
+    r8 fa fad re'\< re re |
 
     %%% Boum %%%
-    la,,4 r2 R2.*2 |
+    la,,4\sffz} r2 R2.*2 |
     r4 sol2 lab sol4 |
     r4 lab2 la4 do dod |
     r fad2 fa4 la sib |

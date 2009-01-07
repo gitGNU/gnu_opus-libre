@@ -1728,26 +1728,26 @@ ActeDeuxSceneTroisPercus = <<
 
     R2.\GrandMarimba R1 R2. R1 R2. R1 R2. R1
     R2. R1
-    \gauche sib,,,8 \droite mi' \gauche fa, \droite sol'
-    \gauche r sib,, | \droite mi' \gauche fa, \droite sol'
-    \gauche fa,, \droite r mi'' \gauche sib, \droite mi' |
-    \gauche fad, \droite la' \gauche si,, \droite mi' la \gauche fad,, |
-    \droite r mi'' la \gauche si,, \droite mi' la \gauche fad,4 |
-    sib,8 \droite mi' \gauche fa, \droite sol' r4 |
+    \gauche sib,,,8\p( \droite mi') \gauche fa,( \droite sol')
+    \gauche r sib,,-. | \droite mi'( \gauche fa,) \droite sol'(
+    \gauche fa,,) \droite r mi''-. \gauche sib,( \droite mi') |
+    \gauche fad,( \droite la') \gauche si,,( \droite mi' la) \gauche fad,,-. |
+    \droite r mi''-. la( \gauche si,,) \droite mi'( la) \gauche fad,4-- |
+    sib,8( \droite mi') \gauche fa,( \droite sol') r4 |
     R1 R2. R1 R2. R1 R2. R1
     R2. R1 R2. R1 R2.
-    \gauche sib,,8 \droite mi' \gauche fa, \droite sol' r4 r8 mi |
-    sol4 \gauche fa,8 \droite mi' r4 | R1 r2 mi8 sold |
+    \gauche sib,,8\p( \droite mi') \gauche fa,( \droite sol') r4 r8 mi( |
+    sol4) \gauche fa,8( \droite mi') r4 | R1 r2 mi8( sold) |
 
     %%% Soprano 2 %%
-    <re sib'>4 r r2 | R2. R1 R2. R1
+    <re sib'>4-- r r2 | R2. R1 R2. R1
     R2. R1
-    \gauche sib,8 \droite mi' \gauche fa, \droite sol' \gauche r8 sib,, |
-    \droite mi' \gauche fa, \droite sol' \gauche fa, r sib, \droite do' \gauche fa, |
-    \droite sol' \gauche sib,, \droite sol'' re' la'4 |
-    \gauche sib,,,8 \droite mi' \gauche fa, \droite <re'' la'>
+    \gauche sib,8\p( \droite mi') \gauche fa,( \droite sol') \gauche r8 sib,,-. |
+    \droite mi'( \gauche fa,) \droite sol'( \gauche fa,) r sib, \droite do'( \gauche fa,) |
+    \droite sol'( \gauche sib,,) \droite sol''( re' la'4) |
+    \gauche sib,,,8( \droite mi') \gauche fa,( \droite <re'' la'>)
     r2 | s2. R1 | R2. R1 R2.
-    mi,8 sol r4 r2 | R2. s2 r2 |
+    mi,8( sol) r4 r2 | R2. s2 r2 |
     r4 r8 mi r4 | R1 R2. R1 R2. R1 R2.
 
     %%% Duo %%%
@@ -1822,17 +1822,17 @@ ActeDeuxSceneTroisPercus = <<
     R2. R1
     s2. s1 s2. s1 s2 r4 |
     R1 R2. R1 R2. R1 R2. R1 R2. R1 R2. R1 R2.
-    s2 mi8 do sib4 r8 sib s4 sib8 mi |
-    sold,4 r r2 | r8 sold mi' sold s4 |
+    s2 mi8( do) sib4 r8 sib-. s4 sib8( mi) |
+    sold,4-- r r2 | r8 sold mi'( sold) s4 |
 
     %%% Soprano 1 %%%
-    re4 r r2 | R2. R1 R2. R1
+    re4-- r r2 | R2. R1 R2. R1
     R2. R1
-    s2. s1 s2. s2 r8 sib fa'4 |
-    sib,8 fa' \droite do' \gauche sib, fa'4 |
-    r8 sib, r4 fa' r | sib, r2 | R1 R2.
+    s2. s1 s2. s2 r8 sib( fa'4) |
+    sib,8( fa' \droite do') \gauche sib,( fa'4) |
+    r8 sib,-- r4 fa'-- r | sib,-- r2 | R1 R2.
     sib4 r r2 | R2.
-    sib8 \droite sol'' \gauche fa,4 r2 |
+    sib8( \droite sol'') \gauche fa,4-- r2 |
     r4 r8 fa r4 | R1
     sib,8 fa' sib,4 r | R1 R2. R1 R2.
 
@@ -1881,9 +1881,9 @@ ActeDeuxSceneTroisPercus = <<
 
     %%% Climax %%%
     R2 R4.
-    r8 \ind #"Cymb. susp." hh4.\laissezVibrer |
+    r8 \ind #"Cymb. susp." hh4.->\laissezVibrer |
     R2*2 R4.
-    r8 hh4.\laissezVibrer | R2*3
+    r8 hh4.->\laissezVibrer | R2*3
     R4.*2 R2. R1
 
     %%% Soprano 2 %%%
@@ -1902,7 +1902,7 @@ ActeDeuxSceneTroisPercus = <<
 
     %%% Baryton 2 %%%
     R2.*11 R4.
-    R2.*11 \ind #"Tam-tam" cb2 s4 | R2.*14
+    R2.*11 \ind #"Tam-tam" cb2-> s4 | R2.*14
     R2*2
     r8 \ind #"Crécelle" hh hh4:32 hh4 r | R2
     r4 hh4:32 hh4 r | R2*3
@@ -1951,19 +1951,19 @@ ActeDeuxSceneTroisPercus = <<
     r8 re\f\< re16 re \tt {re32 re re re re} re2:32~\> re4\! r2 | R2
 
     %%% Doppio Tempo %%%
-    R2*2 r4 re r re re r r re r re |
-    sold, sold r sold sold r sold sold r sold r2 | R2.*3 R2 R2.
+    R2*2 r4 re\f r re re r r re\> r re |
+    sold,\p sold r sold sold r sold sold r sold r2 | R2.*3 R2 R2.
     R2 R2. R2 R2. R2 R2. R2 R2. R2 R2. R2 R2.
-    \t {re'4 re re} re8 re \t {re16 re re} re4 r R2 |
-    \t {re4 re re} re8 re \t {re16 re re} re4 r R2 |
-    \t {re4 re re} re8 re re16 re re re |
-    sold,8 \t {sold16 sold sold} sold8 |
-    \t {sold16 sold sold} sold8 r16 sold |
-    sold4 \t {sold sold sold8 sold} |
-    re'2:32 re: |
+    \t {re'4\mf\< re re} re8 re \t {re16 re re} re4->\! r R2 |
+    \t {re4\< re re} re8 re \t {re16 re re} re4->\! r R2 |
+    \t {re4\< re re} re8 re re16 re re re |
+    sold,8->\! \t {sold16 sold sold} sold8 |
+    \t {sold16 sold sold} sold8-> r16 sold |
+    sold4-> \t {sold\< sold sold8 sold} |
+    re'2:32 re:\f\> |
 
     %%% Soprano 2 %%%
-    re4 r2 R1 R2. R1 R2. R1 R2. R1
+    re4\! r2 R1 R2. R1 R2. R1 R2. R1
     R2. R1 R2. R1 R2. R1 R2. R1
     R2. R1 R2. R1 R2. R1 R2. R1
     R2. R1 R2. R1 R2. R1 R2. R1
@@ -1973,15 +1973,15 @@ ActeDeuxSceneTroisPercus = <<
     R2.
 
     %%% Duo %%%
-    R1*6 R2*2 r4 r8 \t {re16 re re} |
-    re4 r8 re re4 re2.:32 |
-    re4 r8 re \t {re re re} re2.:32 |
-    re4 re re re8. re32 re re4 r8 re re4 r2 | R2.
-    re2.:32~ re:32~ re:32 |
-    r8 r16 re re re | re4 re r R2.*5
-    sold,4 sold sold re' r8 re \t {re re re} |
-    re4 r2 | re8 re \t {re re re} \tt {re16 re re re re} |
-    re4 r2 R2.*15
+    R1*6 R2*2 r4 r8 \t {re16\< re re} |
+    re4\f r8 re re4-- re2.:32->\fp\< |
+    re4->\! r8 re \t {re\< re re} \acc {re2.:32\fp\< |
+    re4\! re re re8.} re32 re re4-> r8 re re4-> r2 | R2.
+    re2.:32~\p\< re:32~\mp\> re:32\! |
+    r8 r16 re\f re re | re4 re r R2.*5
+    \acc {sold,4\mf sold sold re'} r8 re\< \t {re re re} |
+    re4->\f r2 | re8\< re \t {re re re} \tt {re16 re re re re} |
+    re4->\! r2 R2.*15
     R2*12 R2. R2*6 R2.*4
 
     %%% Ensemble %%%
