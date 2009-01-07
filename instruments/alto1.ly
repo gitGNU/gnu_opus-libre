@@ -1036,9 +1036,9 @@ ActeDeuxSceneDeuxAltoUn = { \AltoUn
 ActeDeuxSceneTroisAltoUn = { \AltoUn
   \relative {
     %%% Larghetto %%%
-    sold'16 sold la dod, sold' sold |
-    la dod, sold' sold la dod, |
-    sold' sold la dod, sold' sold |
+    sold'16\pp sold la( dod,) sold' sold |
+    la( dod,) sold' sold la( dod,) |
+    \simile sold' sold la dod, sold' sold |
     la dod, sold' sold la dod, |
     sold' sold la dod, sold' sold |
     la dod, sold' sold la dod, |
@@ -1060,74 +1060,74 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     sold'8 r4 | R4.
     sold16 sold la do, sold' sold |
     la do, sold' sold la do, |
-    sold' sold la8 r |
-    r sold sold la r4 |
+    \st {sold'->\mf sold la8 r |
+    r sold sold la-> r4 |
     la16 la sib8 sold16 sold |
-    la8 r4 |
-    <re,, sol>4.~<re sol>4 r8 |
-    sold'16 sold la8 r |
-    r sold sold la r4 |
-    <sib, re>4.~<sib re>4 r8 |
-    sold'16 sold la8 r |
-    r sold sold la8 r4 |
-    sold16 sold la8 r |
-    <lad, sold'>4.~<lad sold'>4 r8 |
-    r4 sold'16 sold la8 r4 |
-    sold16 sold la8 r |
-    \pizz <re,, sib'>4\arpeggUp <re sib'>\arpeggUp <re sib'>8\arpeggUp
-    \arco sold'16 sold <re la'>8 sol16 sol <sib, lab'>8 r |
-    \pizz <re, sib'>4\arpeggUp <re sib'>\arpeggUp <mi do'>8
-    \arco sold'16 sold la8 fad16 fad sib8 r |
-    r sold16 sold la8 r |
-    \pizz <mi, do' sold'>\arpeggUp sold' <mi, do' la'>4\arpeggUp |
-    sold'16 sold la8 |
-    r \pizz <mid, dod'>\arpeggUp \arco sold' sold la r |
-    \pizz <mid, dod'>\arpeggUp <mid dod'>\arpeggUp r \arco sold'16 sold la8 fad16 fad sol8 r |
-    \pizz <fa, do'>4\arpeggUp <fa do'>\arpeggUp R4
+    la8->} r4 |
+    \ten <re,, sol>4.~--\p <re sol>4 r8 |
+    \st {sold'16->\mf sold la8 r |
+    r sold sold la->} r4 |
+    \ten <sib, re>4.~\p <sib re>4 r8 |
+    \st {sold'16\mf sold la8 r |
+    r sold sold la8-> r4 |
+    sold16-> sold la8} r |
+    \ten <lad, sold'>4.~\p <lad sold'>4 r8 |
+    r4 \st {sold'16\mf sold la8-> r4 |
+    sold16-> sold la8} r |
+    \pizz <re,, sib'>4\p\arpeggUp <re sib'>\arpeggUp <re sib'>8\arpeggUp
+    \arco sold'16\mf sold <re la'>8---> sol16 sol <sib, lab'>8---> r |
+    \pizz <re, sib'>4\p\arpeggUp <re sib'>\arpeggUp <mi do'>8
+    \arco sold'16\mf sold la8---> fad16 fad sib8---> r |
+    r \st {sold16\mf sold la8->} r |
+    \pizz <mi, do' sold'>\p\arpeggUp sold' <mi, do' la'>4\arpeggUp |
+    \st {sold'16\mf sold la8->} |
+    r \pizz <mid, dod'>\p\arpeggUp \arco sold'->\mf sold-> la-> r |
+    \pizz <mid, dod'>\p\arpeggUp <mid dod'>\arpeggUp r \arco sold'16-.\mf \st {sold la8-> fad16 fad sol8} r |
+    \pizz <fa, do'>4\p\arpeggUp <fa do'>\arpeggUp R4
     mi4 mi mi r8 |
     mib4 mib mib R4 |
-    <fa do'>4\arpeggUp <fa do'>\arpeggUp <fa do'>8 <fa do'> |
-    \arco sold'16 sold la8 r r sold sold la r4 |
-    r8 sold sold la r4 |
-    sold16 sold la8 r |
+    <fa do'>4\pp\arpeggUp <fa do'>\arpeggUp <fa do'>8 <fa do'> |
+    \arco sold'16-.->\mf \st {sold la8 r r sold sold la-> r4 |
+    r8 sold sold la-> r4 |
+    sold16-> sold la8 r |
     r sold16 sold la8 |
-    sib r4 | r8 sold16 sold la8 |
-    sib r4 | r8 lad16 lad si8 |
-    do r4 | r8 la la sib r4 |
-    do,4~do~do~do8 r |
-    \pizz sib16 mib, r mib |
+    sib-> r4 | r8 sold16 sold la8 |
+    sib-> r4 | r8 lad16 lad si8 |
+    do->} r4 | r8 la-- la-- sib-- r4 |
+    \ten do,4~\mp do~ do~ do8 r |
+    \pizz sib16\mp mib, r mib |
     sib' mib, r mib |
     sib' mib, r mib |
     re re' r re re, re' r re |
-    dod,8 r | R4
-    re16 re' r re dod,8 r R4 |
-    re16 re' r re dod,8
-    \arco sold''16 sold la8 r |
-    \pizz <mi, do'>8 \arco sold'16 sold la8 r |
-    <do,, sol' re'>4~<sol' re'>~<sol re'>8 r |
-    r \pizz <sol la> r <sol la> r <sol la> |
+    dod,8-> r | R4
+    re16\mf re' r re dod,8-> r R4 |
+    re16\mp re' r re dod,8
+    \arco sold''16\mf sold la8---> r |
+    \pizz <mi, do'>8 \arco sold'16 sold la8---> r |
+    \ten <do,, sol' re'>4~ <sol' re'>~ <sol re'>8 r |
+    r \pizz <sol la>\mp r <sol la> r <sol la> |
     r <sol re'> r <sol re'> r <sol re'> |
     R2.-\fermataMarkup R2.*2
-    r8 la16 la sib8 sol16 sol sold8 r | R2.
-    r8 la16 la sib8 sol16 sol sold8 r | R2.
+    r8 la16\p la sib8---. sol16 sol sold8---. r | R2.
+    r8 la16 la sib8---. sol16 sol sold8---. r | R2.
 
     %%% Interlude %%%
-    sold'16 sold la la, sold' sold la la, |
-    sold' sold la la, sold' sold la la, |
-    fa2~fa~fa4 r16 do' si do |
+    sold'16\p sold la( la,) sold' sold la( la,) |
+    sold' sold la( la,) sold' sold la( la,) |
+    fa2~\p fa~ fa4 r16 \st {do'\ppleggiero si do |
     r do si do r si do8 |
-    si16 do r si do8 si16 do |
-    r do si do do do si do |
+    si16 do r si do8 si16 do} |
+    r \simile do si do do do si do |
     do do si do do do si do |
-    r re mib8 fa16 fad8 sold16 la8 si16 do \clef treble |
-    red red mi mi, red' red mi mi, |
-    fad' fad sol sol, fad' fad sol sol, |
-    red' red mi mi, fad' fad sol sol, |
+    r re-.\< mib8-- fa16-. fad8-- sold16-. la8-- si16-. do-. \clef treble |
+    red\mp red mi( mi,) red' red mi( mi,) |
+    fad' fad sol( sol,) fad' fad sol( sol,) |
+    \simile red' red mi mi, fad' fad sol sol, |
     fad' fad sol sol, red' red mi mi, |
     red' red mi mi, do' do dod dod, |
     red' red mi mi, red' red mi mi, |
     fad' fad sol sol, fad fad' fad sol sol, fad |
-    lad lad si si, lad' lad si si, |
+    lad\mp lad si si, lad' lad si si, |
     dod' dod re re, dod' dod re re, |
     lad' lad si si, lad' lad si si, |
     dod' dod re re, dod' dod re re, |
@@ -1137,41 +1137,41 @@ ActeDeuxSceneTroisAltoUn = { \AltoUn
     mi' mi fa fa, mi' mi fa fa, |
     dod' dod re re, dod' dod re re, |
     mi' mi fa fa, mi' mi fa fa, |
-    dod' dod re re, mi' mi fa fa, |
-    sol' sol lab lab, sol' sol lab lab, |
+    dod'\< dod re re, mi' mi fa fa, |
+    sol'\mf sol lab lab, sol' sol lab lab, |
     mi' mi fa fa, lad lad si si, |
-    dod' dod re re, mi' mi fa fa, |
-    sol' sol lab lab, sol' sol lab lab, |
+    dod'\< dod re re, mi' mi fa fa, |
+    sol'\! sol lab lab, sol' sol lab lab, |
     mi' mi fa fa, mi' mi fa fa, |
-    sol' sol lab lab, sol' sol lab lab, la' la |
+    sol'\< sol lab lab, sol' sol lab lab, la'->\! la-> |
 
     %%% Quatuor %%%
-    la8 \clef alto \pizz la,, sold sib |
-    fad4 r8 | r la sold si | fa4 r8 |
+    la8-> \clef alto \pizz la,,\mp sold sib |
+    fad4-- r8 | r la sold si | fa4-- r8 |
     r fad sol sol\leftpizz |
-    \arco \ind #"jeté" <lab sol'>32 <lab sol'>16. r16 <lab sol'>32 <lab sol'> r8 |
+    \arco \ind #"jeté" <lab sol'>32\mf <lab sol'>16. r16 <lab sol'>32 <lab sol'> r8 |
     <lab sol'>32 <lab sol'>16. <lab sol'>32 <lab sol'>16. r8 |
-    mib'2 r4\fermata |
-    r8 la,16 la sold8 r r4 | R2.*2
+    mib'2--\f r4\fermata |
+    r8 \st {la,16\p la sold8} r r4 | R2.*2
     r2 r8 \pizz sold' r \arco fad16 fad sol8 \pizz mi r \arco red |
-    r re do do sib sib | lab2~lab~lab4 r2 |
+    r re--\> do--( do-- sib-- sib--) | \ten lab2~\pp lab~ lab4 r2 |
 
     %%% Air baryton 1 %%%
-    \flaut <lab la'!>2~<lab la'>4 r <fa mi'>2 r4 |
-    <lab la'!>2~<lab la'>4 r <fa mi'>2 r4 |
+    \flaut <lab la'!>2~\pp <lab la'>4 r <fa mi'>2 r4 |
+    <lab la'!>2~ <lab la'>4 r <fa mi'>2 r4 |
     \t {mi'8 re mi} \t {re mi re} |
-    \t {mi re mi} \t {re mi re} | mi2 r4 |
-    re16 mi re sib lab sib re mi | re sib lab sib re mi re sib |
-    lab sib re mi sib re mi lab re, mi lab lab |
-    la4 r16 dod,,8 sol'16  | dod,4 r8 |
-    r sol' r16 dod, r8 | mi4 r8 |
-    do! re la' sol | do4 r |
-    re,8 la' sol do r4 \clef treble |
-    sold''16 sold la8 r4 \clef alto |
-    r8 sol,, r16 dod,8. | sol'2 r4 \clef treble |
-    sold''16 sold la la sold sold la la sold sold la la sold sold la la |
+    \t {mi( re mi} \t {re mi re} | mi2) r4 |
+    re16( mi re sib lab sib) re( mi | re sib lab sib) re( mi re sib) |
+    lab( sib re mi) sib( re mi lab) re,\<( mi) lab-- lab-- |
+    la4--\! r16 dod,,8--\mp sol'16-.  | dod,4-- r8 |
+    r sol'-- r16 dod,-. r8 | mi4-- r8 |
+    do!\mp re( la' sol) | do4 r |
+    re,8 la'( sol) do r4 \clef treble |
+    sold''16->\mf sold-> la8-> r4 \clef alto |
+    r8 sol,,-- r16 dod,8.-- | sol'2---> r4 \clef treble |
+    \st {sold''16\f sold la la sold sold la la sold sold la la sold sold la la |
     sib, sib sib sib sol sol sol sol re re re re \clef alto |
-    fa, fa mi mi mi mi fa fa |
+    fa, fa mi mi mi mi fa fa} |
 
     %%% Doppio tempo %%%
     re2:16 re: re: re: re: re: re4 r |

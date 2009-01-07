@@ -757,24 +757,24 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
   \relative {
     %%% Larghetto %%%
     R4.*9
-    re,,4.~ re~ re4 r8 | R4.
+    \ten re,,4.~\pp re~ re4 r8 | R4.
     fad4.~ fad~ fad8 r4 |
     fa4.~ fa~ fa~ fa4 r8 | R4.*3
     la4.~ la4 r8 | R4.*2
-    fa4.~ fa8 r4 | la4 r8 |
-    \pizz dod,4 r8 |
+    fa4.~ fa8 r4 | la4-- r8 |
+    \pizz dod,4\mp r8 |
     re4 r8 | dod4 r8 |
     re4 r8 | fad4 r8 |
-    \arco fa4.~fa4 r8 |
-    \pizz dod4 r8 | re4 r8 |
+    \arco \ten fa4.~\p fa4 r8 |
+    \pizz dod4\mp r8 | re4 r8 |
     dod4 r8 |
-    \arco do4.~do4 r8 |
-    \pizz dod4 r8 sol4 r8 |
+    \arco \ten do4.~\p do4 r8 |
+    \pizz dod4\mp r8 sol4 r8 |
     dod4 r8 | sol fa lab |
-    \pl {mi4_\leftpizz s8 s4} {\arco mi'4.~mi4 } r8 |
-    \pizz mi re fa |
-    dod4 r8 | dod dod dod |
-    <re sib'>4\arpeggUp | <re sib'>\arpeggUp |
+    \pl {mi4_\leftpizz s8 s4} {\arco \ten mi'4.~\p mi4 } r8 |
+    \pizz mi\< re fa |
+    dod4\mp r8 | dod dod dod |
+    <re sib'>4\p\arpeggUp | <re sib'>\arpeggUp |
     <re sib'>\arpeggUp | <re sib'>\arpeggUp |
     <re sib'>\arpeggUp | <re sib'>\arpeggUp |
     <re sib'>\arpeggUp |
@@ -792,15 +792,15 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     sold,4 r8 | re'4 r8 |
     sold,4 r8 | sold'4 r8 |
     sol4 sib,8 |
-    fad4 r8 | do'4 fa,8 |
-    fad4 r8 | do'4 fa8 |
-    fad4 fad8 fa4 fad8 |
-    mi4 sol8 |
-    \arco mib4~mib~mib~mib8 r | R4*3
-    \pizz <re sib'>4\arpeggUp <re sib'>\arpeggUp |
-    dod8 r | R4
-    re4 dod8 r | R4
-    re4 dod8 sold' dod, sold' |
+    fad4 r8 | do'4-- fa,8 |
+    fad4 r8 | do'4-- fa8 |
+    fad4 fad8 fa4-- fad8 |
+    mi4-- sol8 |
+    \arco \ten mib4~\mf mib~ mib~ mib8 r | R4*3
+    \pizz <re sib'>4\mf\arpeggUp <re sib'>\arpeggUp |
+    dod8-> r | R4
+    re4 dod8-> r | R4
+    re4\mp dod8 sold' dod, sold' |
     dod, sold' dod, sold' |
     do, sol' do, sol' |
     do, sol' do, sol' |
@@ -809,42 +809,42 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
-    R2*2 \arco fa'2~ fa~ fa4 si,~ si2~ si |
+    R2*2 \arco fa'2~\p fa~ fa4 si,~ si2~ si |
     fa'2~ fa4. si8~ si2. |
     fad2~ fad4 r16 do8.~ |
     do4 r8 r16 fad~ |
-    fad2 r16 do'8.~ do4~ |
-    do4. dod8~ dod2 r8 |
-    sol,2~ sol~ sol~ sol4 mi~ |
+    fad2 r16 do'8.~\< do4~ |
+    do4. dod8~\! dod2 r8 |
+    sol,2~\p sol~ sol~ sol4 mi~ |
     mi2~ mi8 sol4.~ sol16 mi8.~ mi4 |
-    sol8 sol' sol sol sol sol sol sib, |
+    sol8\mp sol' sol sol sol sol sol sib, |
     sib sib sib sib sib sib sol' sol |
     sol8. sib,16 r sib8 sib16 |
     r sol'8 sol,16 r8 sib |
-    sol'8. sib,16~ sib dod8. |
-    <mi, mi'>2 dod'4 <mi, mi'>~ |
-    mi8. sib'16 dod8. mi,16 dod' sib |
+    sol'8.--->\f sib,16~---> sib dod8.---> |
+    <mi, mi'>2---> dod'4---> <mi, mi'>~---> |
+    mi8. sib'16-> dod8.-> mi,16->\< dod'-> sib-> |
 
     %%% Quatuor %%%
-    sol'4 \pizz sol\CaV | sol\CaV r8 |
+    sol'4--->\! \pizz sol\mf\CaV | sol\CaV r8 |
     sol4\CaV sol\CaV sol\CaV r8 |
     mi16\CaV la\CaV re8\CaV
     mi,16\CaV la\CaV re8\CaV |
     \ordin mi,4 r8 | re8. fa |
-    \arco dod2 r4\fermata | R2.*6 R2*2 R2.
+    \arco dod2--\f r4\fermata | R2.*6 R2*2 R2.
 
     %%% Air Baryton 1 %%%
-    do!2 do fad, r4 |
-    do'2 do fad, r4 |
-    do'2 do sol r4 |
+    do!2--\pp( do--) fad,-- r4 |
+    do'2--( do--) fad,-- r4 |
+    do'2--( do--) sol-- r4 |
     do2~ do~ do r4 |
-    sol8 sol~ sol16 dod8 sol16 | dod4 r8 |
-    sol sol~ sol16 dod8 sol16 | mi'4 r8 |
-    do2~ do4 r16 sol8 do16~ do sol do8~ do4 do |
-    dod4\thumbpizz r |
-    r8 \arco sol~ sol16 dod8 si16 |
-    sol'2 r4 |
-    re1~ re2.~ re4 r |
+    sol8-.\mp\upbow sol~-- sol16 dod8--( sol16-.) | dod4-- r8 |
+    sol-.\upbow sol~-- sol16 dod8-- sol16-. | mi'4-- r8 |
+    \ten do2~\p do4 r16 sol8-- do16~--( do sol-.) do8~-- do4 do\upbow\<( |
+    dod4\!)\thumbpizz r |
+    r8 \arco sol~---> sol16 dod8--( si16-.) |
+    sol'2---> r4 |
+    re1~--->\f re2.~ re4 r |
 
     %%% Doppio tempo %%%
     re8 r r4 | R2*5

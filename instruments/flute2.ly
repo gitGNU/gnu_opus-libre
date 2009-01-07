@@ -768,8 +768,8 @@ ActeDeuxSceneDeuxFluteDeux = { \FluteDeux
 ActeDeuxSceneTroisFluteDeux = { \FluteDeux
   \relative {
     %%% Larghetto %%%
-    R4.*6 sold'8 la dod,~ dod4.~ dod4 r8 |
-    sold' la dod,~ dod4 r8 |
+    R4.*6 sold'8(\pdolce la dod,~) dod4.~ dod4 r8 |
+    sold'( la dod,~) dod4 r8 |
     sold' la dod,~ dod4 r8 |
     sold' la dod,~ dod4 r8 |
     sold' la dod, do!4 r8 |
@@ -780,93 +780,93 @@ ActeDeuxSceneTroisFluteDeux = { \FluteDeux
     la sold la do, r sold' |
     la sold la do, r sold' |
     la r do, |
-    sold'16 sold sold sold r8 |
+    \st {sold'16\pleggiero sold sold sold r8 |
     r16 sold sold sold sold8 |
-    sold16 sold sold sold r8 |
-    la8 sold sold sold r4 |
-    lad16 lad si8 sold16 sold |
-    la8 lad16 lad si8 |
-    sold16 sold sold sold r8 |
+    sold16 sold sold sold} r8 |
+    \det {la8 sold sold sold} r4 |
+    lad16\pp lad( si8) sold16 sold( |
+    la8) lad16 lad( si8) |
+    \st {sold16\pleggiero sold sold sold r8 |
     r16 sold sold sold sold8 |
-    sold16 sold sold sold r8 |
-    la16 la sib8 fad16 fad |
-    sol8 la16 la sib8 |
-    sold16 sold sold sold r8 |
+    sold16 sold sold sold} r8 |
+    la16 la( sib8) fad16 fad( |
+    sol8) la16 la( sib8) |
+    \st {sold16 sold sold sold r8 |
     r16 sold sold sold sold8 |
     r8 sold16 sold sold8 |
-    sold16 sold sold sold r8 |
-    sid16 sid dod8 lad16 lad |
-    si8 sid16 sid dod8 |
-    si16 si do8 r |
-    sold16 sold sold sold r8 |
-    r16 sold sold sold sold8 |
-    R4*2 r8 \slap { \ind #"slap" sold la fad sol} r |
+    sold16 sold sold sold} r8 |
+    \ind #"poco più" sid16 sid( dod8) lad16 lad( |
+    si8) sid16 sid( dod8) |
+    si16 si( do8) r |
+    \st {sold16 sold sold sold r8 |
+    r16 sold sold sold sold8} |
+    R4*2 r8 \slap { \ind #"slap" sold\mf la fad sol} r |
     R4*2 r8 \slap { sold la fad sib r r sold16 sold sold8} r |
-    R4*2 \ordin sold16 sold sold sold |
+    R4*2 \ordin sold16-.\p \st {sold sold sold |
     r8 r16 sold sold sold sold8 |
-    sold16 sold sold sold |
-    R4 r8 \slap {sold la fad sol} r |
+    sold16 sold sold sold} |
+    R4 r8 \slap {sold\mf la fad sol} r |
     R4*5 R4. R4*7
-    sold16 sold sold sold r8 |
+    \st {sold16\p sold sold sold r8 |
     r16 sold sold sold sold8 |
     sold16 sold sold sold r8 |
     r16 sold sold sold sold8 |
-    sold16 sold sold sold r8 |
-    R4. r8 r16 dod si re |
-    fa8 r4 | r8 si,16 si sib8 |
-    la r4 | r8 do16 do si8 |
-    sib r4 |
+    sold16 sold sold sold} r8 |
+    R4. r8 r16 dod( si re |
+    fa8-.) r4 | r8 \st {si,16\mp si sib8 |
+    la-> r4 | r8 do16 do si8 |
+    sib-> r4 |
     la16 la la la r8 |
-    r16 la sib mib dod dod |
-    do4~ do~ do~ do~ do8 r |
-    sib16 sib sib sib sib sib sib sib |
+    r16 la\<} sib( mib) dod-. dod-. |
+    \ten do4~\! do~ do~ do~ do8 r |
+    \st {sib16 sib sib sib sib sib sib sib |
     sib sib sib sib sib sib sib sib |
-    do8 r R4 sib16 sib sib sib do8 r R4 |
-    la16 la sib8 do r |
-    r \slap {mi, fa} r sold16 sold la8 |
-    la si16 si la8 si16 si la la r8 |
-    \slap {sold sold la r fad fad sol r R4 do,8 do} |
+    do8-> r R4 sib16 sib sib sib do8-> r R4 |
+    la16 la sib8 do->} r |
+    r \slap {mi,\mf fa} r sold16-.\mp sold( la8) |
+    la( si16) si( la8) si16-. si( la) la-. r8 |
+    \slap {sold\mpsempre sold la r fad fad sol r R4 do,8 do} |
     R2.-\fermataMarkup R2.*6
 
     %%% Interlude %%%
     R2*2
-    mi8 fa mi fa sold la r4 |
-    mi8 fa mi fa sold la r4 | R2
-    \t {mi4 fa8~} \t {fa mi fa} |
-    sold la sold la~ la4~ \t {la8 sold la} si do |
-    r16 si8.~ si8 r |
-    \t {do4 red mi} \t {si do red} |
-    mi4. r8 fad, sol la sib do dod r4 |
-    fad,8 sol lad si re |
-    lad'2~ lad4 si fad sol lad si |
-    lad2~ lad4 r8 si fad sol lad si |
-    lad2~ lad4 \t {r8 si lad} |
-    dod4. re8 lad si~ \t {si dod re} |
-    mi4 r16 fa8. r8 mi r r16 fa | r8 mi r16 fa r8 |
-    mi fa dod re mi fa r mi |
-    r16 fa r8 mi r sold16 sold |
+    mi8\p\(( fa) mi( fa) sold( la)\) r4 |
+    mi8\(( fa) mi( fa) sold( la)\) r4 | R2
+    \t {mi4( fa8~)} \t {fa mi( fa)} |
+    sold( la) sold( la~) la4~ \t {la8 sold( la)} si( do) |
+    r16 si8.~--\mp si8 r |
+    \t {do4( red mi)} \t {si( do red} |
+    mi4.) r8 fad,( sol la sib do dod) r4 |
+    fad,8\<( sol lad si re) |
+    lad'2~\mf( lad4 si fad sol lad si |
+    lad2~) lad4 r8 si-- fad\>( sol lad si |
+    lad2~\!) lad4 \t {r8 si( lad)} |
+    dod4.\mf( re8) lad( si~ \t {si dod re} |
+    mi4) r16 fa8.-- r8 mi-- r r16 fa-.-> | r8 mi---> r16 fa-.-> r8 |
+    mi( fa dod re mi fa) r mi---> |
+    r16 fa-.-> r8 mi---> r sold16->\f sold-> |
 
     %%% Quatuor %%%
-    la8 r r4 |
-    r8 fad, do la r r4 |
-    r8 fad' do la r r4 |
-    r8 fa'! do sold r16 dod, re'8 |
-    sib'2 r4\fermata
+    la8-> r r4 |
+    r8 \st {fad,\mp do la r r4 |
+    r8 fad' do la} r r4 |
+    r8 fa'! do sold r16 dod,-.\< re'8-> |
+    sib'2--->\f r4\fermata
     R2.*6-\markup "Prenez le Piccolo" \Piccolo R2*2 R2.
 
     %%% Air baryton 1 %%%
-    R2*2 R2. R2*2 r2 \ind #"éteint" re,8 re |
-    mib2~ mib4 r | r4 r8 mi fa sol |
-    la2~ la4 r | R2.
-    r8 fa16. fa32 la8 r |
-    r8 r16 fad fad fad |
-    fad fad fad fad r4 | R4.
-    r4 la16 do re la |
-    sol'4 r | r16 la, mi' re la'4 r |
-    sold16 sold la8 r4 |
-    re,,16 re re re r re re re |
-    re re r re re re re re \tt {re la' mi' sol, re'} |
-    la'2 r8 \t {la,16 sold' fad} red'4~ |
+    R2*2 R2. R2*2 r2 \ind #"éteint" re,8--\p re-- |
+    mib2~-- mib4 r | r4 r8 mi( fa sol |
+    la2~) la4 r | R2.
+    r8 fa16.--\pp fa32( la8) r |
+    r8 r16 \st {fad( fad fad |
+    fad fad fad fad)} r4 | R4.
+    r4 la16-.\p\> do( re) la-. |
+    sol'4--\! r | r16 la,( mi') re-. la'4-- r |
+    sold16->\mf sold-> la8-> r4 |
+    \st {re,,16 re re re r re re re |
+    re re r re re re re re} \tt {re\<( la' mi') sol,( re')} |
+    la'2\f r8 \t {la,16\<( sold' fad} red'4~\!) |
     red2 r4 | R2
 
     %%% Doppio tempo %%%

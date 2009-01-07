@@ -1667,44 +1667,44 @@ ActeDeuxSceneTroisPercus = <<
   \PercuDeuxMains
   \relative { \GrandVibraphone
     %%% Larghetto %%%
-    R4.*3 \ind #"con Ped." dod8 sold' la\laissezVibrer
+    R4.*3 \ind #"con Ped." dod8\pp sold' la\laissezVibrer
     R4.*3 dod,8 sold' la\laissezVibrer |
-    R4. \gauche fa,8 \droite la mi' | <sold la>4.\laissezVibrer
-    R4.*2 \gauche fad,8 \droite fad dod' | <sold' la>4.\laissezVibrer
-    R4. <la, mi'>4.\laissezVibrer
+    R4. \gauche fa,8( \droite la mi' | <sold la>4.)\laissezVibrer
+    R4.*2 \gauche fad,8( \droite fad dod' | <sold' la>4.)\laissezVibrer
+    R4. <la, mi'>4.--\laissezVibrer
     R4.*6 mi'4.\laissezVibrer |
     R4.*3 <la, mi'>4.\laissezVibrer
     R4. mi'4.\laissezVibrer |
-    R4.*5 \gauche fa,8 \droite <do' sol'> re |
-    <mi la>4.\laissezVibrer |
-    R4.*3 \gauche do,8 \droite <re' la'> \gauche sol, |
-    \droite <mi' fad>4.\laissezVibrer R4.*4
-    si16 \gauche mi, \droite fad' \gauche mi, \droite dod' \gauche mi, |
-    \droite sold' \gauche fad, \droite red' dod <sold' lad>8 \laissezVibrer |
+    R4.*5 \gauche fa,8( \droite <do' sol'> re |
+    <mi la>4.)\laissezVibrer |
+    R4.*3 \gauche do,8( \droite <re' la'>) \gauche sol,( |
+    \droite <mi' fad>4.)\laissezVibrer R4.*4
+    si16\pp\< \gauche mi, \droite fad' \gauche mi, \droite dod' \gauche mi, |
+    \droite sold'\> \gauche fad, \droite red' dod <sold' lad>8\! \laissezVibrer |
     s4. R4.*2
     R4*27 R4. R4*7
     R4.*14 R4*28 R2.-\fermataMarkup R2.
-    re'2.\laissezVibrer R2.
+    re'2.\p\laissezVibrer R2.
     <mib, re'>2.\laissezVibrer R2.
     <mib re'>2.\laissezVibrer
 
     %%% Interlude %%%
-    R2*2 mib'8 sib4 mi,8 |
-    si4 \gauche fa \droite |
-    re'''8 la4. | r8 si fad4 |
-    si16 fad sold8 red4 |
-    r mib8 sib
-    \gauche \t { r8 mib, sib} \droite lab'
-    \gauche fa, \droite |
-    fad'' dod4 si'8 \tt {fad16
-    \gauche fa,, \droite mib' dod' si'} |
-    mi4\laissezVibrer r |
-    mi16 si re mi, do' la, si' mib,, |
-    fa'8 do fad,8. \gauche fad,16~ |
-    fad2 fa16 do si' fad fa do dod' sold |
-    sol re \droite sol' re \gauche dod sold \droite dod' sold |
-    sol re dod'' sol, sold' re \pl {lad sid dod8} {lad'16 sid dod sid} |
-    dod4 r4 | R2*15 R2*5/4
+    R2*2 mib'8-.\ppp sib4-- mi,8-. |
+    si4-- \gauche fa-- \droite |
+    re'''8-. la4.-- | r8 si fad4-- |
+    si16( fad sold8) red4-- |
+    r mib8( sib)
+    \gauche \t { r8 mib,( sib)} \droite lab'(
+    \gauche fa,) \droite |
+    fad''-. dod4-. si'8-. \tt {fad16\<(
+    \gauche fa,, \droite mib' dod' si')} |
+    mi4--\p\laissezVibrer r |
+    mi16\pp\>( si) re( mi,) do'( la,) si'( mib,,) |
+    fa'8--\! do-- fad,8.-- \gauche fad,16~ |
+    fad2 fa16( do) si'( fad fa do) dod'( sold |
+    sol re) \droite sol'( re \gauche dod sold) \droite dod'( sold |
+    sol re) dod''( sol,) sold'( re) \pl {lad-.\< sid-. dod8-.} {lad'16-. sid-. dod-. sid-.} |
+    dod4---.\! r4 | R2*15 R2*5/4
 
     %%% Quatuor %%%
     R2 R4. R2 R4. R2 R4.*2
@@ -1777,7 +1777,7 @@ ActeDeuxSceneTroisPercus = <<
     %%% Larghetto %%%
     R4.*9
     s4. R4.*3 s4. R4.*2
-    fa,!4.\laissezVibrer R4.*6 |
+    fa,!4.--\laissezVibrer R4.*6 |
     la4.\laissezVibrer R4.*3 |
     fa4.\laissezVibrer R4. |
     la4.\laissezVibrer |
@@ -1793,7 +1793,7 @@ ActeDeuxSceneTroisPercus = <<
     r8 r16 si~ si4 fa2\laissezVibrer s2 |
     r4 fa4 s | r8 fad4.\laissezVibrer R2 r4 s |
     s2*3 R2*5/4
-    sol4 r | R2*15 R1*5/8
+    sol4-- r | R2*15 R1*5/8
 
     %%% Quatuor %%%
     R2 R4. R2 R4. R2 R4.*2
@@ -1855,8 +1855,8 @@ ActeDeuxSceneTroisPercus = <<
     R4.*51
     R4*27 R4. R4*7
     R4.*14 R4*7 |
-    r8 \ind #"Crécelle" hh:32 hh4:32 hh8 r |
-    R4*9 hh8 r |
+    r8 \ind #"Crécelle" hh:32\mf hh4:32\< hh8->\! r |
+    R4*9 hh8-> r |
     R4*8 R2.*7
 
     %%% Interlude %%%
@@ -1924,31 +1924,31 @@ ActeDeuxSceneTroisPercus = <<
 
     %%% Interlude %%%
     R2*9 R2. R2*6 R1*5/8 R2*7
-    sol,16. sol32 sol16 sol r sol32 sol sol8 |
-    sol16 sol r sol32 sol sol8 sib16. sib32 |
-    sib16 sib r sib32 sib sib8 sib16. sib32 |
-    sib16 sib32 sib sib8 sol16. sol32 sol16 sol |
-    r32 sol sol16 sol sib r32 sib sib16 sib8 |
-    r16 sol32 sol32~ sol8 r16 sol sib8 |
-    r16 sib32 sib sib sib sib16 r dod8. |
-    mi,2:32 dod'16. dod32 dod8 mi,4:32~ |
-    mi8 \t {dod'16 dod dod} dod mi, r16 dod' dod dod |
-    sol4 r R4. R2 R4. R2 R4.*2
+    sol,16.\p sol32 sol16-> sol-. r sol32 sol sol8-> |
+    sol16-. sol-. r sol32 sol sol8-> sib16.-- sib32 |
+    sib16-> sib-. r sib32 sib sib8-> sib16. sib32 |
+    sib16-> sib32 sib sib8-> sol16. sol32 sol16-> sol-. |
+    r32 sol sol16-> sol sib-> r32 sib sib16-. sib8-> |
+    r16 sol32 sol32~ sol8 r16 sol sib8-. |
+    r16 sib32 sib sib sib sib16-. r dod8.-- |
+    mi,2:32--->\mf dod'16.-> dod32 dod8-. mi,4:32~---> |
+    mi8 \t {dod'16 dod dod} dod-. mi,-. r16 dod'\< dod dod |
+    sol4->\f r R4. R2 R4. R2 R4.*2
 
     %%% Baryton 1 %%%
     R2.*7 R2*2 R2.
-    do8 \tt {do32 do do do do} do4 | r do fad, fad r |
-    do'8 \tt {do32 do do do do} do4 | r do fad, fad r |
-    do'8 \tt {do32 do do do do} do4 | r do sol8. sol32 sol sol4 r |
-    do2:32~ do:32~ do4 r2 |
+    do8\pp \tt {do32\> do do do do} do4\! | r do-- fad,-- fad-- r |
+    do'8 \tt {do32\> do do do do} do4--\! | r do-- fad,-- fad-- r |
+    do'8 \tt {do32\> do do do do} do4--\! | r do-- sol8.\> sol32 sol sol4\! r |
+    do2:32~\pp do:32~ do4 r2 |
     r8 sol r16 dod8 sol16 |
-    dod8. dod16 \t {dod dod dod} |
-    sol8 sol r16 dod8 sol16 |
-    dod8. dod16 \t {dod dod dod} | do8 do4. |
-    r8 do r16 sol8 do16 |
-    r sol do8 r4 do |
-    dod r | R2 R2.
-    r8 re re16 re \tt {re32 re re re re} re2:32~ re4 r2 | R2
+    dod8.-- dod16\< \t {dod dod dod} |
+    sol8--\! sol-- r16 dod8-- sol16-. |
+    dod8.\< dod16 \t {dod dod dod} | do8\pp do4. |
+    r8 do-- r16 sol8-- do16-. |
+    r sol-. do8-- r4 do\< |
+    dod--\mf r | R2 R2.
+    r8 re\f\< re16 re \tt {re32 re re re re} re2:32~\> re4\! r2 | R2
 
     %%% Doppio Tempo %%%
     R2*2 r4 re r re re r r re r re |
