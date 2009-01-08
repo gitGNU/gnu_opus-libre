@@ -94,7 +94,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     %%% Vivo al fine %%%
     <re re'>8\sfz re'-. <do re>-. <do re>-. |
     <re mib>-. <re mib>-. <la re>-. <la re>-. |
-    <re mib> <re mib> <do re> <do re> |
+    \st {<re mib> <re mib> <do re> <do re> |
     <re mib> <re mib> <la re> <la re> |
     <re mib> <re mib> <re mib> <re mib> |
     <re mi> <re mi> <re mi> <re mi> |
@@ -107,7 +107,7 @@ PrologueVioloncelleDeux = { \VioloncelleDeux
     <re mib>\> <re mib> <do re> <do re> |
     <re mib>\mp <re mib> <la re> <la re> |
     <re mib> <re mib> <do re> <do re> |
-    <re mib>\> <re mib> <la re> <la re> |
+    <re mib>\> <re mib> <la re> <la re> } |
     <re mib>-.\p <re mib>-. r4 |
     <re mib>8-. <re mib>-. r4 |
     re8-. re-. r4 re8-. re-. r4 | re8-. r r4 \pizz re r |
@@ -134,7 +134,7 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     \t {lab,8--\<( mi'-- lab,--)} reb,4-- reb-- |
     do16\p( sol' mi' sib') \t {re8( sib mi,)}
     \t {sol,( mi' sib')} re16( sib mi, sol,) |
-    do, sol' mi' sib' \t {re8 sib mi,} \t {sol, do, sol'} |
+    \simile do, sol' mi' sib' \t {re8 sib mi,} \t {sol, do, sol'} |
     \ttt {do,16( sol' mi' sib' mi, sol,}
     \ttt {do, sol' mi' sib' mi, sol,}
     \ttt {do, sol' mi' sib' mi, sol,}
@@ -163,7 +163,8 @@ ActeUnSceneUnVioloncelleDeux = { \VioloncelleDeux
     re: mib: re: mib: re: mib: re: mib: re: mib: re: mib: |
     re: mib: re: mib: re: mib: |
     re: mib: re: mib: re: mib: re: mib: |
-    mib8\mp\upbow( fab) \ind #"serioso" mib\upbow( fab) mib\upbow( fab) mib\upbow( fab) \simile mib fab mib fab |
+    mib8\mp\downbow( fab) \ind #"serioso" mib\downbow( fab)
+    mib\downbow( fab) mib\downbow( fab) \simile mib fab mib fab |
     mib fab mib fab mib fab mib fab mib fab mib fab |
     mib fab mib fab mib fab mib fab mib fab mib fab |
     mib fab mib fab mib fab mib fab |
@@ -254,7 +255,7 @@ ActeUnSceneUnBisVioloncelleDeux = { \VioloncelleDeux
     <do mib'>4--\mp r r2 |
     R1 R2. R2 r2 r8 lab'4.\pp\upbow |
     \ten sib2.~ sib2 r4 |
-    re2--\mp\> mib~\pp mib r4 |
+    \longHairpins {re2--\mp\> mib~\pp mib r4 } |
     R2*3 R2. R1 R2.
     r4 sib8--\mf( lab--) | \ten sol2~ sol fad2.\mp |
     r2 si4-.\downbow mi,2.\downbow |
@@ -1075,7 +1076,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     <do! sol'>2~\pp <do sol'>~ do r4 |
     <do sol'>2~ <do sol'>~ do r4 |
     <do reb'>2~ <do reb'>~ <do reb'> r4 |
-    \pl {si'2 fad4\upbow( si)} {sol2--\CaV s4 sol\CaV} |
+    \pl {si'2 fad4^\upbow( si)} {sol2--\CaV s4 sol\CaV} |
     fad8--\<( <sol si>--) \t {fad-- <sol si>-- fad--} <sol si>-- fad--\! |
     r8 sol~--\mp sol16 dod,8--( sol'16-.) dod,4-- r8 |
     r sol'~-- sol16 dod,8--( sol'16-.) mi4-- r8 |
@@ -1189,49 +1190,51 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
 
     %%% Boum %%%
     <fad, lad>4\sffz} r2 R2.*2 |
-    sold2.~ sold2 r4 |
-    mi2.~ mi2 r4 |
-    do2.~ do2 r4 |
-    si'2.~ si2 r4 |
-    fa2.~ fa2 r4 |
-    sold2.~ sold2 r4 |
+    \ten sold2.--\mp~ sold2 r4 |
+    mi2.--~ mi2 r4 |
+    do2.--~ do2 r4 |
+    si'2.--~ si2 r4 |
+    fa2.--\mf~ fa2 r4 |
+    sold2.--~ sold2 r4 |
 
     %%% Contralto %%%
-    re4 r R2 r4 sold''\glissando <re, re'>
-    \pizz <fad, re'>\arpeggUp |
+    re4->-- r R2 r4 sold''\f\<\glissando <re, re'>\sfz
+    \pizz <fad, re'>\mp\arpeggUp |
     <fad re'>\arpeggUp <fad re'>\arpeggUp |
     \simile <fad re'> <fad re'> |
     <fad re'> <fad re'> |
     <fad re'> <fad re'> |
     <mi do'> <mi do'> |
     <mi do'> <mi do'> |
-    \arco <red si'>8 <red si'> r4 |
-    <do la'> r R2. | R2*4
-    \pizz mi'8 mi fa4 R2
-    \pizz dod,8 sold' mi' la r4 |
-    sol, mib si' |
-    dod,8 sold' mi' la r4 | fad, fa la |
+    \arco <red si'>8\mf <red si'> r4 |
+    <do la'>->-- r R2. | R2*4
+    \pizz mi'8\p mi fa4 R2
+    \pizz dod,8->\mp sold' mi' la r4 |
+    sol, mib-> si'-> |
+    dod,8-> sold' mi' la r4 | fad, fa-> la-> |
 
     %%% Grand ensemble %%%
-    \arco dod,1~ dod sol'~ sol2 dod,~ |
-    dod sol'~sol sold | mi1~ mi2. r4 |
-    r2 mi~ mi4 sib'~sib8 mi,4 sib'8 |
-    mi,4 r8 sold~ sold fad fa4~ |
-    fa2 solb8 fa solb lab |
-    sib1~ sib2 r8 do4. |
-    la2 r8 mib4 la8~ |
-    la mib la2. sib4 la sib do |
-    re4 re4:8 re,: re': |
+    \arco dod,1~\psubito dod sol'~ sol2 dod,~ |
+    dod sol'~sol\< sold\! | \ten mi1~ mi2. r4 |
+    r2 mi--~ mi4 sib'--~sib8 mi,4-- sib'8-. |
+    mi,4-- r8 sold--\mf~ sold-- fad fa4~ |
+    fa2 solb8--\< fa-- solb-- lab-- |
+    \ten sib1--~\! sib2 r8 do4.-- |
+    la2-- r8 mib4-- la8--~ |
+    la mib-. la2.--
+    sib4--\< la-- sib-- do-- |
+    re4--\f re4:8\p re,: re': |
     re,: re': re,: re': |
+    re,:\mf re': re,: re': |
     re,: re': re,: re': |
-    re,: re': re,: re': |
+    <re, re'>:\f <re' re>: <re, re'>: <re' re>: |
     <re, re'>: <re' re>: <re, re'>: <re' re>: |
-    <re, re'>: <re' re>: <re, re'>: <re' re>: |
-    r8 <re re> <re re> <re re>
-    <re re> <re re> <re re> <re re> | R2. \clef treble |
+    r8 <re re>-> <re re>-> <re re>->
+    <re re>-> <re re>-> <re re>-> <re re>-> |
+    R2. \clef treble |
 
     %%% Chute %%%
-    \pl {la'2.:32( la':)~ la:( la,:)~ la2: la4}
+    \pl {la'2.:32(\mp\< la':)~ la:(\f\> la,:)~ la2:\! la4}
     {
       \harmonics {
         \times 3/4 {la'4\glissando
@@ -1265,23 +1268,24 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
 
     %%% Andante al fine %%%
     R2.*5 \clef bass
-    <mi,,\harmonic do'\harmonic>2.~
+    <mi,,\harmonic do'\harmonic>2.\pp~
     <mi\harmonic do'\harmonic>~
     <mi\harmonic do'\harmonic>~
     <mi\harmonic do'\harmonic>~
     <mi\harmonic do'\harmonic>2 r4 | R2.*5
-    <mi\harmonic do'\harmonic>2.~
+    <mi\harmonic do'\harmonic>2.\pp~
     <mi\harmonic do'\harmonic>~
     <mi\harmonic do'\harmonic>~
     <mi\harmonic do'\harmonic>~
     <mi\harmonic do'\harmonic>2 r4 | R2.*14
-    r4 <mi' mi'> <mi mi'>8 <mi mi'> |
-    <mi mi'>4 r2 |
-    <mi, mi'>4 <mi mi'>8 <mi mi'>
-    \t {<mi mi'> <mi mi'> <mi mi'>} |
-    mi2. \clef treble |
-    \t {r8 mi'' si'} \t {la mi' re} la'4 \clef bass |
-    \ind #"ample" <mi,,, mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
-    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
+    r4 <mi' mi'>->--\fsubito <mi mi'>8-.-> <mi mi'>-.-> |
+    <mi mi'>4---> r2 |
+    <mi, mi'>4---> <mi mi'>8-.-> <mi mi'>-.->
+    \t {<mi mi'>-.-> <mi mi'>-. <mi mi'>-.} |
+    mi2.---> \clef treble |
+    \t {r8 mi''--(\upbow si'--)} \t {la--\< mi'-- re--} la'4->\! \clef bass |
+    \ind #"ample" <mi,,, mi'>8--->\ff\< <mi mi'>--->
+    \t {<mi mi'>---> <mi mi'>-. <mi mi'>-.}
+    \tt {<mi mi'>16---> <mi mi'>-> <mi mi'>-> <mi mi'>-> <mi mi'>->\!}
   }
 }

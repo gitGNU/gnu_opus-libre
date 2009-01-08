@@ -348,7 +348,8 @@ ActeUnSceneTroisFluteUn = { \FluteUn
     \t {sib'16\mf sib sib} mib8~-> mib4 mib4~-> mib sib\<( re | sold4.\f) r8 r4 | R2*2
 
     %%% Tempo I %%%
-    R2.*9 sol,,2.\mp\< lab8\sfz r r2 |
+    R2.*9
+    \longHairpins {sol,,2.\mp\< lab8\sfz r r2 } |
     R2.*3
 
     %%% Tempo II %%%
@@ -775,7 +776,7 @@ ActeDeuxSceneTroisFluteUn = { \FluteUn
     r16 la la la la8 |
     la16 la la la} r8 |
     \det {la8 sib la la} r4 |
-    lad16\pp( lad si8) sold16( sold |
+    lad16\pp lad( si8) sold16 sold( |
     la8) lad16 lad( si8) |
     \st {la16\pleggiero la la la r8 |
     r16 la la la la8 |
@@ -835,7 +836,7 @@ ActeDeuxSceneTroisFluteUn = { \FluteUn
     sol4) r16 lab8.-- r8 sol-- r r16 lab-.-> |
     r8 sol---> r16 lab-.-> r8 |
     sol8( lab mi fa | sol lab) r sol---> |
-    r16 lab-.-> r8 sol---> r sold16-> sold-> |
+    r16 lab-.-> r8 sol---> r sold16->\f sold-> |
 
     %%% Quatuor %%%
     la8-> r r4 | r8 \st {re,\mp sol, |

@@ -156,12 +156,14 @@ includePartsLayout = \layout {
   }
   \context {
     \Staff
+    \consists Page_turn_engraver
+    minimumPageTurnLength = #(ly:make-moment 3 2)
     \override VerticalAxisGroup #'remove-empty = ##f
 
     %%% It's silly to keep printing the instrument name in
     %%% separate parts; however some instruments (clarinets, etc)
     %%% may need it (therefore we don't remove the engraver).
-    \override InstrumentName #'stencil = #f
+    %\override InstrumentName #'stencil = #f
   }
   \context {
     \DrumStaff

@@ -868,7 +868,7 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     r8 sold'-. fad16 mib reb do |
     re,4---> r8 <re re'>~->\< |
     <re re'> <re re'>-. <re re'>-. <re re'>-. |
-    sold,-. sold-. sold-. sold4:16 sold8:16 |
+    sold,-.\! sold-. sold-. sold4:16 sold8:16 |
     sold4---> r8 re'4---> sold,8-. |
     re'2:16 re4-- r |
 
@@ -942,42 +942,42 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
 
     %%% Boum %%%
     <si, lad'>4\sffz} r2 | R2.*2
-    sold2.~ sold2 r4 |
-    mi2.~ mi2 r4 |
-    do'2.~ do2 r4 |
-    si2.~ si2 r4 |
-    fa2.~ fa2 r4 |
-    sold2.~ sold2 r4 |
+    \ten sold2.--\mp~ sold2 r4 |
+    mi2.--~ mi2 r4 |
+    do'2.--~ do2 r4 |
+    si2.--~ si2 r4 |
+    fa2.--\mf~ fa2 r4 |
+    sold2.--~ sold2 r4 |
 
     %%% Contralto %%%
-    re'4 r R2 r4 re'\CaV re, \pizz re |
+    re'4---> r R2 r4 re'--\mf\CaV re,---> \pizz re\mp |
     re re re re re re re re |
     do do do do |
-    \arco si8 si r4 | la4 r | R2. R2*6
-    \pizz dod4 r2 sol4 r2 | dod4 r2 | sol4 r sold |
+    \arco si8\mp si r4 | la4---> r | R2. R2*6
+    \pizz dod4\mp r2 sol4 r2 | dod4 r2 | sol4 r sold-> |
 
     %%% Grand ensemble %%%
-    \arco dod1~ dod sol~ sol2 dod~ |
-    dod sol~sol sold | mi1~ mi2. r4 |
-    r2 mi'~ mi4 sib~sib8 mi4 sib8 |
-    mi2. r4 | R1
-    sib'1~ sib2 r8 do,4. |
-    <la la'>1~ <la la'>2. r4 |
-    sib4 la sib do |
-    <re re'>1~ <re re'>2. r4 |
-    r <re re'> <re re'> <re re'> |
+    \arco dod1~\psubito dod sol~ sol2 dod~ |
+    dod sol~sol\< sold\! | \ten mi1~ mi2. r4 |
+    r2 mi'--\mp~ mi4 sib--~sib8 mi4-- sib8-. |
+    mi2.-- r4 | R1
+    \ten sib'1--\mf~ sib2 r8 do,4.-- |
+    <la la'>1--~ <la la'>2. r4 |
+    sib4--\< la-- sib-- do-- |
+    \ten <re re'>1\f~ <re re'>2. r4 |
+    r \det {<re re'> <re re'> <re re'> |
     <re re'> <re re'> <re re'> <re re'> |
     r <re re'> <re re'> <re re'> |
-    <re re'> <re re'> <re re'> <re re'> |
-    r8 <re re'> <re re'> <re re'>
-    <re re'> <re re'> <re re'> <re re'> |
+    <re re'> <re re'> <re re'> <re re'> }|
+    r8 <re re'>-> <re re'>-> <re re'>->
+    <re re'>-> <re re'>-> <re re'>-> <re re'>-> |
     R2.
 
     %%% Chute %%%
-    re2.:32~  re2:32
+    re2.:32\sfp~ re2:32
     <re re'\harmonic>4:32~ <re re'\harmonic>2.:32~
     <re re'\harmonic>4:32 \glissando
-    <re la'\harmonic>2:32~
+    <re la'\harmonic>2:32~\psempre
     <re la'\harmonic>2:32\glissando
     <re sol\harmonic>4:16
     <re sol\harmonic>16 <re sol\harmonic>16
@@ -990,7 +990,7 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
 
     %%% Andante al fine %%%
     R2.*4
-    \harmo { <la do\harmonic>2.~
+    \harmo { <la do\harmonic>2.\pp~
       \oneVoice
     <la do\harmonic>~
     <la do\harmonic>~
@@ -1020,9 +1020,9 @@ ActeDeuxSceneTroisContrebasse = { \Contrebasse
     <la do\harmonic>~
     <la do\harmonic>~
     <la do\harmonic>2} mi'' r4 | R2.*2
-    mi,2.~ mi2 r4 |
-    mi,2.:32~ mi2:32 \ind #"ample" <mi mi'>4 |
-    <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
-    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
+    \ten mi,2.\pp~ mi2 r4 |
+    \longHairpins {mi,2.:32\mp~\< mi2:32\f } \ind #"ample" <mi mi'>4---> |
+    <mi mi'>8--->\< <mi mi'>---> \t {<mi mi'>---> <mi mi'>-. <mi mi'>-.}
+    \tt {<mi mi'>16-> <mi mi'>-> <mi mi'>-> <mi mi'>-> <mi mi'>->\!}
   }
 }

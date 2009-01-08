@@ -274,7 +274,7 @@ ActeUnSceneUnBisViolonDeux = { \ViolonDeux
     R1 R2. R2
     r2 r8 fa'4.\pp\upbow |
     \ten re2.~ re2 r4 |
-    sib'2--\mp\> fa~\pp fa4 r2 |
+    \longHairpins { sib'2--\mp\> fa~\pp fa4 r2 } |
     R2*3 R2. R1 R2.
     r4 <sib, re>\mf\downbow \ten <sib mib>2~\downbow <sib mib>
     <la red>2.\mp r2 <la red>4-.\downbow |
@@ -1109,7 +1109,7 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     sib, sib sib sib sold sold la la} |
 
     %%% Doppio tempo %%%
-    re8\! r r4 R2*3
+    re8->\! r r4 R2*3
     r8 re16\ff re mib8-> r |
     r re-> r4 | r re16 re r8 |
     R2.*3
@@ -1138,7 +1138,7 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     %%% Soprano 2 %%%
     re'\leftpizz r r8 sib16\f sib |
     sib4-.-> r8 sib-> r r16 sib sib4-.-> |
-    r8 re-.-> r4 \st {re8 re |
+    r8 re-.-> r4 \st {re8\p re |
     red red r red red r dod dod |
     re4-- r8 re r re |
     r re r re re r re\< re |
@@ -1192,7 +1192,7 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     re''4-> re8-> \t {sold,16( si dod)} re4-> |
     \accdet {<re, re'>\downbow <re re'>\downbow <re re'>\downbow |
     <re re'>\downbow} re'8-> \t {si16->( do dod)} re4-> |
-    lab-> lab,8\> \t {re,16( mi sol)} lab4-> |
+    lab-> lab,8-> \t {re,16( mi sol)} lab4-> |
     \ten re,2.~---> re2 r4 |
     si16\mf si si si do do la la la la la la |
     do\< do do dod dod dod |
@@ -1210,70 +1210,74 @@ ActeDeuxSceneTroisViolonDeux = { \ViolonDeux
     %%% Boum %%%
     <sol,,! sold'>4->\sffz r2 R2.*2
     R2.
-    \ottava #1 <sol'\harmonic dod fad\harmonic re' dod'>2.~
+    \ottava #1 <sol'\harmonic dod fad\harmonic re' dod'>2.\pp~
     <re'' dod'>2.~ <re dod'>2. \ottava #0
-    r8 fad,, fad fad fad fad |
-    fa fa la la sib sib |
-    r lab lab lab lab lab la la do do dod dod |
-    r <do, si'> <do si'> <do si'> <do si'> <do si'> |
-    <red si'> <red si'> red' red <sol, mi'> <sol mi'> |
-    r8 si,8:32 sib: re: mib4:
+    r8 \ind #"très clair" fad,,--(\mp fad-- fad-- fad-- fad--) |
+    fa--( fa-- la-- la-- sib-- sib--) |
+    r lab--( lab-- lab-- lab-- lab--) |
+    la--( la-- do-- do-- dod-- dod--) |
+    r <do, si'>--(\mf <do si'>-- <do si'>-- <do si'>-- <do si'>--) |
+    <red si'>--( <red si'>--) red'--( red--) <sol, mi'>--( <sol mi'>--) |
+    r8 si,8:32\pp \< sib: re: mib4:
     re8: fad: sol: si: do4: |
 
     %%% Contralto %%%
-    re4 r8 \pizz re, r re r re |
-    re4\thumbpizz \arco sold'\glissando |
-    re' r8 \pizz re,, |
+    re4--->\! r8 \pizz re,\mp r re r re |
+    re4\thumbpizz \arco sold'\f\<\glissando |
+    re'\sfz r8 \pizz re,,\mp |
     r re r re | r re r re |
     r re r re | r re r re |
     r <lab mib'>\arpeggUp r <lab mib'>\arpeggUp |
     r \simile <lab mib'> r <lab mib'> |
-    r4 \arco fa'8 fa fad4 r | R2.
-    R2*5 \pizz do8 do dod4 |
-    \arco sold8 sold sold sold sold sold |
+    r4 \arco fa'8->\mf fa-> fad4-> r | R2.
+    R2*5 \pizz do8\p do dod4 |
+    \arco sold8-.\mp
+    \st {sold sold sold sold sold |
     sold sold sold sold sold sold |
     sold sold sold sold sold sold |
-    sold sold sold sold r4 |
+    sold sold sold sold} r4 |
 
     %%% Grand ensemble %%%
-    sold'8 sold la la, sold' sold la la, |
-    sold' sold la la, sold' sold la la, |
-    sold' sold la la, sold' sold la la, |
+    sold'8\pdolce sold la( la,) sold' sold la( la,) |
+    sold' sold la( la,) sold' sold la( la,) |
+    \simile sold' sold la la, sold' sold la la, |
     sid' sid dod dod, sid' sid dod dod, |
-    sold' sold la la, sold' sold la la, |
-    sid' sid dod dod, sid' sid dod dod, |
-    r red mi red r red mi red |
+    sold'\< sold la la, sold' sold la la, |
+    sid' sid dod dod, sid' sid dod\! dod, |
+    r \st {red\pleggiero mi red r red mi red |
     r sol lab sol r sol lab sol |
     r red mi red r red mi red |
     r fad sol fad r fad sol fad |
     r dod' re dod r mi red r |
-    mib re r re dod r dod do |
-    sold' sold la la, sold' sold la la, |
-    sid' sid dod dod, sid' sid dod dod, |
-    sold' sold la la, sold' sold la la, |
+    mib re r re dod r dod do} |
+    sold'\mf sold la( la,) sold' sold la( la,) |
+    sid' sid dod( dod,) sid' sid dod( dod,) |
+    \simile sold' sold la la, sold' sold la la, |
     sid' sid dod dod, sid' sid dod dod, |
     mi' mi fa fa, mi' mi fa fa, |
-    dod' dod re re, dod' dod re re, |
+    dod'\f dod re re, dod' dod re re, |
     mid' mid fad fad, mid' mid fad fad, |
     dod' dod re re, dod' dod re re, |
     mid' mid fad fad, mid' mid fad fad, |
-    mi' mi fa fa, mi' mi fa fa, |
+    mi'\fmolto mi fa fa, mi' mi fa fa, |
     red' red fad fad, red' red fad fad, |
     re' re mib mib, re' re mib mib, |
-    re'8 r r2 |
+    re'8-> r r2 |
 
     %%% Chute %%%
-    sold,2.\glissando sold'2.:32~ sold4: mi: re:
-    la: sold: mi: re: la: sold: re4 r R2*2
+    sold,2.\ff\glissando sold'2.:32\sfp~ sold4:\< mi: re:
+    la:\mp\> sold: mi: re: la: sold:\! re4-- r R2*2
 
     %%% Andante al fine %%%
     R2.*34
-    r4 <mi mi'> <mi mi'>8 <mi mi'> |
-    <mi mi' mi>4 r2 |
-    <mi mi'>4 <mi mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} |
-    <mi mi' mi>4 r2 |
-    r2 \ind #"ample" <mi' mi'>4\downbow |
-    <mi mi'>8\downbow <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
-    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
+    r4 <mi mi'>->--\f <mi mi'>8-.-> <mi mi'>-.-> |
+    <mi mi' mi>4---> r2 |
+    <mi mi'>4---> <mi mi'>8-.-> <mi mi'>-.->
+    \t {<mi mi'>-.-> <mi mi'>-. <mi mi'>-.} |
+    <mi mi' mi>4---> r2 |
+    r2 \ind #"ample" <mi' mi'>4--->\ff\<\downbow |
+    <mi mi'>8--->\downbow <mi mi'>--->
+    \t {<mi mi'>---> <mi mi'>-. <mi mi'>-.}
+    \tt {<mi mi'>16---> <mi mi'>-> <mi mi'>-> <mi mi'>-> <mi mi'>->\!}
   }
 }

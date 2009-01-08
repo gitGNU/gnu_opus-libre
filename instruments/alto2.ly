@@ -163,9 +163,9 @@ ActeUnSceneUnAltoDeux = { \AltoDeux
     la,,16 mi do' fa lab do, \t {fa lab mi'} mi4 |
     \t {fa,16 lab mi'} mi8 \t {fa,16 lab mi'} mi8
     \t {fa,16 lab mi'} mi8 \t {fa,16 lab mi'} mi8 |
-    \ttt {mi16 lab, fa do fa lab}
+    \ttt {mi16( lab, fa do fa lab}
     \ttt {mi' lab, fa do fa lab}
-    \ttt {mi' lab, fa do fa lab} |
+    \ttt {mi' lab, fa do fa lab)} |
     \ttt {mi,\p( sib' re lab' re, sib}
     \ttt {mi, sib' re lab' re, sib}
     \ttt {mi, sib' re lab' re, sib}
@@ -671,7 +671,7 @@ ActeUnSceneQuatreAltoDeux = { \AltoDeux
     \st {sold'8-> si, si sold' sold-> si, sold'-> si, |
     sold'-> si, si sold' sol-> si, sol'-> si,}|
     \ten <re, si'>2.~\ff <re si'>8 r4 |
-    sold16\mf( lad) lad( sold) sold( lad) lad( sold) sold( lad) lad( sold) |
+    sold16\mf\upbow( lad) lad( sold) sold( lad) lad( sold) sold( lad) lad( sold) |
     sold( lad) lad( sold) sold( lad) | si2~--\ff si8 r4 |
     fa16\mf( sol) sol( fa) fa( sol) sol( fa) |
     fa( sol) sol( fa) fa( sol) sol( la) | sib2~--\f sib8 r4 |
@@ -734,8 +734,8 @@ EntracteAltoDeux = { \AltoDeux
     red1~ red2.~ red~ <red sol>1~ <red sol>~ <red sol>2.~ red~
     red1~ red~ red2.~ red~ red1~ red2. r4 |
     do2:8\p do4: do2: do4: <do sol'>2:8 <do sol'>: <do sol'>: <do sol'>:
-    <do sol' re'>4\mf <sol' re' la'> <do, sol' re'> <sol' re' la'>
-    <do, sol' re'> <sol' re' la'> |
+    <do sol' re'>4--\mf <sol' re' la'>-- <do, sol' re'>-- <sol' re' la'>--
+    <do, sol' re'>-- <sol' re' la'>-- |
     <sol re'>4:8 <re' la'>: <sol, re'>: <re' la'>: |
 
     %%% Stretto %%%
@@ -776,7 +776,7 @@ EntracteAltoDeux = { \AltoDeux
     <re la' fa'>-> re' re, |
     <re sol re'>-> <si' fa'>-> <re, sol>-> |
     <do sol' mi'>-> do' do,} |
-    \accdet {<re re'> <re re'> <re re'> |
+    \accdet { \cresc <re re'> <re re'> <re re'> |
     <red red'> <red red'> <red red'> |
     <mi mi'>\f r1 | <mi mi'>2} r | R1 R2. R2
   }
@@ -825,8 +825,8 @@ ActeDeuxSceneUnAltoDeux = { \AltoDeux
     r <la re> r <la re> r <la re> r |
     <la re> <la re> r <la re> r <la re> r r <la re> r <la re>\mp |
     r8 \pizz la4\mp do re,8 | r4 lab' do re, | r8 la'4 do re,8 | r4 lab' do re, |
-    r8 la'4\mp do re,8 | r lab'4 do re,8 | r sol r2 |
-    r8 la4 do re,8 | r lab'4 do re,8 | r la'4 do re,8 | r lab'4 do8 reb,4 |
+    r8 la'4 do re,8 | r lab'4 do re,8 | r sol r2 |
+    r8 la4\mp do re,8 | r lab'4 do re,8 | r la'4 do re,8 | r lab'4 do8 reb,4 |
     r4 la' r8 do | r4 \arco do--\mf r \det {do r do-. | mib,2 r4 la | r do r |
     r si\pp r si r sib} r | R1
     r8 \pizz la4\mp do re,8 | r lab'4 lab8 do4 re, | r8 la'4 do re,8 |
@@ -885,7 +885,7 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     r8 dod,\< re la' sib4\! | r8 \simile fa fad dod' re4 |
     r8 fad, la re fa4 | r8 fa, fad dod' re4 |
     r8 mib, lab si mi4 | r8 fa, solb sib reb4 |
-    \arco \acciaccatura solb,4 fa1*7/4~\mf fa1 r2 r4 |
+    \arco \small solb,4( \normalsize fa1*6/4)~\mf fa1 r2 r4 |
     R1*7/4*2 \repeat volta 2 {\det {re1\mf mi2. re mi1 R1*7/4}
     \meno mi1} r2 r4 | R1*7/4 |
 
@@ -912,11 +912,11 @@ ActeDeuxSceneUnBisAltoDeux = { \AltoDeux
     <dod lad'>8-.-> <dod lad'>8.---> \st {<dod lad'>16 <dod lad'>8 <dod lad'>} |
     \accdet {<mib do'>4 <mib do'>8.} <mib do'>16-. \accdet {<mi do'>8.\< <sol mi' si'>} |
     <la mi' la>4\sffz r2 | re4\mf( mi si sold) r \stdet {sol\downbow sib si do} |
-    r8 \det {mib,\downbow( mib mib mib mib) | mi\<( mi sol sol lab lab\!) |
-    r mi?( mi mi mi mi) mib( mib lab lab sol sol)} |
+    r8 \det {mib,\mp\downbow( mib mib mib mib) | mi\<( mi sol sol lab lab\!) |
+    r mi?( mi mi mi mi) mib(\< mib lab lab sol sol\!)} |
     r mib mib mib mib mib \det {mi\<( mi sol sol lab lab\!) |
     r sib\upbow( sib sib) si( si) r re( re re) mib( mib)} |
-  fad4 \det {mib8 re si sib | <mi, dod'>2.\mp} R2. R2 R4. R2 R1*5/8 R2.
+    fad4 \det {mib8 re si sib | <mi, dod'>2.\mp} R2. R2 R4. R2 R1*5/8 R2.
 
     %%% Tempo I %%%
     fad'16->\mf( sol fad mib) re( mib fad mib) re( si) la( sol) la( sol) la( sol) |
@@ -958,7 +958,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     dod dod dod dod dod dod dod dod} |
 
     R2. R1. R1*2
-    r16 do,\p( fa la do4) r | r16 do,( sol' sib do4) r |
+    r16 \ind #"espr." do,(\pdolce fa la do4) r | r16 do,( sol' sib do4) r |
     r16 do,( fa la do4) r | r16 do,( fa sold si4) |
     r16 re,( sold si re4) r16 do,\upbow( la' do) |
     r16 do,( mi la do4) r | r16 sol( sib re do4) r |
@@ -980,13 +980,13 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     \pizz <la'la>4\mp r2 | R1 R2. R1 R2. R1
     \arco mib4\pp( reb dob | sib4) r r2 | R2. R1
     sib4\p( do! re! mib4) r mi\>( fad | sold\!) r2 | R1
-    \pl {la,4\leftpizz s2 s1 s2. s1 s2. s1 s2. }
+    \pl {la,4_\leftpizz s2 s1 s2. s1 s2. s1 s2. }
     {la'2.:32~\pp \oneVoice la1:~la2.:~la1:~la2.:~la1:~la2.:\<} |
     <la,la'>4--\! r R2 \clef treble fad'8\f fa \ind #"détaché" la16 sol lab sib |
     do8 si red16 dod re mi fad8 fa | la4---> r r2 \clef alto |
     fa,,16\mf\< re mib fa lab fad sol la do4\! r | la1:16
 
-    <la sold'>4---> reb8\upbow\< mi fa | \acc {la\! la sold r4 |
+    <la sold'>4--->\f reb8\upbow\< mi fa | \acc {la\! la sold r4 |
     <la, sold'>--} la8\< re mib | \acc {la\! la sold r4 |
     <la, sold'>--} mib8\< mib re | \dwnb {<mib re'>4\! <mib re'> r8 |
     <re la' mib'>4} r r8 |
@@ -995,7 +995,7 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     \acc {la'8 la sold} r4 | r8 \accdet {mi'4 mi | sold,} r r8 |
 
     R1*2 <do, la'>4->\sffz r r2 |
-    r4 \pizz red\mf dod r | r fa mib r | R1
+    r4 \pizz red\mp dod r | r fa mib r | R1
     \repeat tremolo 16 { \arco mi32\p fa}
     \repeat tremolo 8 { mi fa}
     \repeat tremolo 8 { re fad}
@@ -1003,9 +1003,9 @@ ActeDeuxSceneDeuxAltoDeux = { \AltoDeux
     <dod' red>4\sfz r2 | r8 \pizz fa,\mp r4 |
     R1*2 R2.*4 r4 la r r sol r R2. |
 
-    r16 \arco do\pleggiero mi do r si red si |
-    r sib re sib r la dod la |
-    r lab do lab r sol si sol r solb sib solb |
+    r16 \arco do-.\pleggiero \st {mi do r si red si |
+    r sib re sib r la dod la} |
+    r \simile lab do lab r sol si sol r solb sib solb |
     r la do la r sold si sold r sol sib sol |
     r fad la fad r fa lab fa |
     r mi sol mi r red fad red |
@@ -1047,15 +1047,15 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     sold16 sold la do,! sold' sold |
     la do, sold' sold la do, |
     sold'8 r4 | R4.
-    sold16 sold la do,! sold' sold |
+    sold16 sold la do, sold' sold |
     la do, sold' sold la do, |
     sold'8 r4 | R4.
-    sold16 sold la do,! sold' sold |
+    sold16 sold la do, sold' sold |
     la do, sold' sold la do, |
     sold'8 r4 | R4.
     \st {sold16->\mf sold la8 r |
     r sold sold la-> r4 |
-    la16 la sib8 sold16 sold |
+    la16-> la sib8 sold16 sold |
     la8->} r4 |
     \ten <do,, la'>4.~--\p <do la'>4 r8 |
     \st {sold''16->\mf sold la8 r |
@@ -1174,19 +1174,20 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     r fa2:16\p mib: la2: la4: | sol: mi: sib': sold: re: |
 
     %%% Climax %%%
-    re4 r R4. |
+    re4-> r R4. |
     \ind #"détaché" re''16-> dod si sold \st {mi8 si \clef alto |
     fa si,} sib16 la sol mi | re8-> r r4 | R4. \clef treble |
     \st {re'''8 si} sold16 fad re si |
     \st {la8 re,} \clef alto sib16 sol fa mi |
     re8-> r r4 | R2 \clef treble
-    re''4 r8 sib16\> sib sib fa fa fa |
+    re''4\ff r8 sib16\> sib sib fa fa fa |
     do2--\! r4 |
     re''4---> re,16 la sold fad re4 \clef alto sold,16 fad mi mib |
 
     %%% Soprano 2 %%%
     re8-> r r2 | R1
-    r8 re-.-> r4 \st {re8 re | red red r red red r dod dod |
+    r8 re-.-> r4 \st {re8\p re |
+    red red r red red r dod dod |
     re4-- r8 re r re r re r re re r re\< re |
     do\! do r do r do | r do r do do r do do |
     dod dod r dod r dod r dod r dod r dod r dod} |
@@ -1242,63 +1243,68 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
 
     %%% Boum %%%
     <sol la>4\sffz} r2 R2.*2
-    r8 mi mi mi mi mi | mib mib lab lab sol sol |
-    r lab lab lab lab lab |
-    la la do do dod dod |
-    r re re re re re |
+    r8 mi--(\mp\downbow mi-- mi-- mi-- mi--) |
+    mib--(\< mib-- lab-- lab-- sol-- sol--)\! |
+    r lab--( lab-- lab-- lab-- lab--) |
+    la--(\< la-- do-- do-- dod-- dod--)\! |
+    r \simile re re re re re |
     dod dod fad fad fa fa |
-    r fa fa fa fa fa | mi mi lab lab la la \clef treble |
-    r si sol si sol si |
-    sold si do mib do mi \clef alto |
-    r re,, mib sol fad sol |
-    si fad mi lab sol4 |
+    r fa fa fa fa fa |
+    mi mi lab lab la la \clef treble |
+    r \ind #"à la corde"
+    si(\mp sol si sol si) |
+    sold( si do mib do mi) \clef alto |
+    r re,,-- mib( sol) fad( sol) |
+    si( fad) mi( lab) sol4-- |
 
     %%% Contralto %%%
-    re'4 \pizz re, re re re r re r8 <fad re'>\arpeggUp |
+    re'4->-- \pizz re,\mp re re re
+    r re->\sfz r8 <fad re'>\mp\arpeggUp |
     r <fad re'>\arpeggUp r <fad re'>\arpeggUp |
     r \simile <fad re'> r <fad re'> |
     r <fad re'> r <fad re'> |
     r <fad re'> r <fad re'> |
     r <mib lab> r <mib lab> |
     r <mib lab> r <mib lab> |
-    r4 \arco fa8 fa fad4 r | R2. R2*3
-    r4 \pizz do8 do dod4 r | R2
-    \arco sold''8 sold la4 r |
-    r sol8 sol sold4 |
-    sold8 sold la4 r |
-    r fad8 fad sol4 |
+    r4 \arco fa8->\mf fa-> fad4-> r | R2. R2*3
+    r4 \pizz do8\p do dod4-.-- r | R2
+    \arco sold''8->-.\mf sold-. la4-. r |
+    r sol8-. sol-. sold4-. |
+    sold8-.-> sold-. la4-. r |
+    r fad8-. fad-. sol4-. |
 
     %%% Grand ensemble %%%
-    dod,,1~ dod sol'1~ sol2 dod,~ |
-    dod sol'~ sol sold4 r \clef treble |
-    si'8 si do do, si' si do do, |
-    red' red mi mi, red' red mi mi, |
-    si' si do do, si' si do do, |
+    dod,,1~\psubito dod sol'1~ sol2 dod,~ |
+    dod sol'~ sol sold4-- r \clef treble |
+    si'8\mp si do( do,) si' si do( do,) |
+    red' red mi( mi,) red' red mi( mi,) |
+    \simile si' si do do, si' si do do, |
     re' re mib mib, re' re mib mib, |
     dod' dod re re, si' si do do, |
     lad' lad si si, sold' sold la la, |
-    fa' fa mi mi fa fa mi mi |
+    \ind #"détaché"
+    fa'\mp fa mi mi fa fa mi mi |
     la la sold sold la la sold sold |
     fad fad mid mid fad fad fa fa |
-    sib sib la la sib sib la la |
+    sib\mf sib la la sib sib la la |
     dod dod sid sid dod dod sid sid |
-    dod dod re re, dod' dod re re, |
+    dod\f dod re( re,) dod' dod re( re,) |
+    mid' mid fad( fad,) mid' mid fad( fad,) |
+    \simile dod' dod re re, dod' dod re re, |
     mid' mid fad fad, mid' mid fad fad, |
-    dod' dod re re, dod' dod re re, |
-    mid' mid fad fad, mid' mid fad fad, |
-    mi' mi fa fa, mi' mi fa fa, |
+    mi'\fmolto mi fa fa, mi' mi fa fa, |
     red' red mi mi, sold' sold la la, |
     sold' sold la la, sold' sold la la, |
-    <sold la'> r r2 |
+    <sold la'>-> r r2 |
 
     %%% Chute %%%
-    <solb sib>2.\glissando la'2.:32~ la2: sold4:
-    mi: re: la: \clef alto sold: re2: re4 r R2*2
+    <solb sib>2.\ff\glissando la'2.:32\sfp~ la2:\< sold4:
+    mi:\mp\> re: la: \clef alto sold: re2:\! re4-- r R2*2
 
     %%% Andante al fine %%%
     R2.*12
     \ind #"sul tasto, con sord."
-    mi2:16 mi4:16 |
+    mi2:16\pp mi4:16 |
     mi2:16 mi4:16 |
     mi2:16 mi4:16 |
     mi2:16 mi4:16 |
@@ -1307,11 +1313,12 @@ ActeDeuxSceneTroisAltoDeux = { \AltoDeux
     mi2:16 mi4:16 |
     mi2:16 mi4:16 |
     mi4 r2 | R2.*11
-    \ind #"trem. sul tasto" mi2.:32 mi: mi2: mi4 |
-    mi,2.~ mi2 r4 |
-    mi2. \clef treble |
-    r8 do'' \tt {red16 sold fad si la} red4
-    \ind #"ample" <mi,, mi'>8 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>}
-    \tt {<mi mi'>16 <mi mi'> <mi mi'> <mi mi'> <mi mi'>}
+    \ind #"trem. sul tasto (senza sord.)" mi2.:32\pp mi: mi2: mi4-- |
+    mi,2.\p~ mi2 r4 |
+    mi2.-- \clef treble |
+    r8 do''-- \tt {red16\< sold fad si la} red4->\!\upbow
+    \ind #"ample" <mi,, mi'>8--->\ff\< <mi mi'>--->
+    \t {<mi mi'>---> <mi mi'>-. <mi mi'>-.}
+    \tt {<mi mi'>16---> <mi mi'>-> <mi mi'>-> <mi mi'>-> <mi mi'>->\!}
   }
 }

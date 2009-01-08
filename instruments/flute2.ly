@@ -350,7 +350,8 @@ ActeUnSceneTroisFluteDeux = { \FluteDeux
     sib8\mf sib'8~-> sib4 sib4~-> sib mib,\<( la | re4.\f) r8 r4 | R2*2
 
     %%% Tempo I %%%
-    R2.*9 fa,,2.\mp\< fa8\sfz r r2 |
+    R2.*9
+    \longHairpins {fa,,2.\mp\< fa8\sfz r r2 }|
     R2.*3
 
     %%% Tempo II %%%
@@ -926,7 +927,7 @@ ActeDeuxSceneTroisFluteDeux = { \FluteDeux
     re,,2.~\mf re~ re4 r2 | r4 \t {re'16\f( sol lab} |
     re4->) r2 | r8 \st {re, re re} re4-- R2.*6-\markup "Prenez le Piccolo" \Piccolo |
     r8 \acc {sib'\f sib sib sib sib | R2.
-    r8 re re re} \t {fad16( sold sib} re8->) |
+    r8 re re re} \t {\ind #"en dehors" fad16(\< sold sib} re8->\!) |
 
     %%% Boum %%%
     R2.*3

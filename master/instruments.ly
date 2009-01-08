@@ -76,7 +76,7 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisClarinetteUn \ActeDeuxScene
   \include "./master/master.ly"
 } %
 
-
+%{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makeSection \PrologueSaxophoneUn \PrologueSaxophoneDeux \PrologueMesures
@@ -127,7 +127,54 @@ ActeDeuxSceneTrois = \makeExtraSection \ActeDeuxSceneTroisViolonUn \ActeDeuxScen
 
 %
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Altos  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Alternative: violins 2+1
+
+Prologue = \makeSection \PrologueViolonUn \PrologueViolonDeux \PrologueMesures
+%Ouverture = \makeSection \%OuvertureViolonUn \%OuvertureViolonDeux \%OuvertureMesures
+ActeUnSceneUn = \makeSection \ActeUnSceneUnViolonUn \ActeUnSceneUnViolonDeux \ActeUnSceneUnMesures
+ActeUnSceneUnBis = \makeSection \ActeUnSceneUnBisViolonUn  \ActeUnSceneUnBisViolonDeux \ActeUnSceneUnBisMesures
+InterludeUn = \makeSection \InterludeUnViolonUn \InterludeUnViolonDeux \InterludeUnMesures
+ActeUnSceneDeux = \makeSection \ActeUnSceneDeuxViolonUn \ActeUnSceneDeuxViolonDeux \ActeUnSceneDeuxMesures
+InterludeDeux = \makeSection \InterludeDeuxViolonUn \InterludeDeuxViolonDeux \InterludeDeuxMesures
+ActeUnSceneTrois = \makeSection \ActeUnSceneTroisViolonUn \ActeUnSceneTroisViolonDeux \ActeUnSceneTroisMesures
+ActeUnSceneTroisBis = \makeSection \ActeUnSceneTroisBisViolonUn \ActeUnSceneTroisBisViolonDeux \ActeUnSceneTroisBisMesures
+ActeUnSceneTroisTer = \makeSection \ActeUnSceneTroisTerViolonUn \ActeUnSceneTroisTerViolonDeux \ActeUnSceneTroisTerMesures
+InterludeTrois = \makeSection \InterludeTroisViolonUn \InterludeTroisViolonDeux \InterludeTroisMesures
+ActeUnSceneQuatre = \makeSection \ActeUnSceneQuatreViolonUn \ActeUnSceneQuatreViolonDeux \ActeUnSceneQuatreMesures
+Entracte = \makeSection \EntracteViolonUn \EntracteViolonDeux \EntracteMesures
+ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnViolonUn \ActeDeuxSceneUnViolonDeux \ActeDeuxSceneUnMesures
+ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisViolonUn \ActeDeuxSceneUnBisViolonDeux \ActeDeuxSceneUnBisMesures
+ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxViolonUn \ActeDeuxSceneDeuxViolonDeux \ActeDeuxSceneDeuxMesures
+ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisViolonUn \ActeDeuxSceneTroisViolonDeux \ActeDeuxSceneTroisMesures
+
+\bookpart {
+  \include "./master/master.ly"
+}
+%{
+Prologue = \makePart \PrologueViolonTrois \PrologueMesures
+%Ouverture = \makePart \%OuvertureViolonTrois \%OuvertureMesures
+ActeUnSceneUn = \makePart \ActeUnSceneUnViolonTrois \ActeUnSceneUnMesures
+ActeUnSceneUnBis = \makePart \ActeUnSceneUnBisViolonTrois \ActeUnSceneUnBisMesures
+InterludeUn = \makePart \InterludeUnViolonTrois \InterludeUnMesures
+ActeUnSceneDeux = \makePart \ActeUnSceneDeuxViolonTrois \ActeUnSceneDeuxMesures
+InterludeDeux = \makePart \InterludeDeuxViolonTrois \InterludeDeuxMesures
+ActeUnSceneTrois = \makePart \ActeUnSceneTroisViolonTrois \ActeUnSceneTroisMesures
+ActeUnSceneTroisBis = \makePart \ActeUnSceneTroisBisViolonTrois \ActeUnSceneTroisBisMesures
+ActeUnSceneTroisTer = \makePart \ActeUnSceneTroisTerViolonTrois \ActeUnSceneTroisTerMesures
+InterludeTrois = \makePart \InterludeTroisViolonTrois \InterludeTroisMesures
+ActeUnSceneQuatre = \makePart \ActeUnSceneQuatreViolonTrois \ActeUnSceneQuatreMesures
+Entracte = \makePart \EntracteViolonTrois \EntracteMesures
+ActeDeuxSceneUn = \makePart \ActeDeuxSceneUnViolonTrois \ActeDeuxSceneUnMesures
+ActeDeuxSceneUnBis = \makePart \ActeDeuxSceneUnBisViolonTrois \ActeDeuxSceneUnBisMesures
+ActeDeuxSceneDeux = \makePart \ActeDeuxSceneDeuxViolonTrois \ActeDeuxSceneDeuxMesures
+ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonTrois \ActeDeuxSceneTroisMesures
+
+\bookpart {
+  \include "./master/master.ly"
+}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Altos  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makeSection \PrologueAltoUn \PrologueAltoDeux \PrologueMesures
 %Ouverture = \makeSection \%OuvertureAltoUn \%OuvertureAltoDeux \%OuvertureMesures
@@ -150,9 +197,9 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisAltoUn \ActeDeuxSceneTroisA
 \bookpart {
   \include "./master/master.ly"
 }
-%
+%{
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Violoncelles  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Violoncelles  %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makeSection \PrologueVioloncelleUn \PrologueVioloncelleDeux \PrologueMesures
 %Ouverture = \makeSection \%OuvertureVioloncelleUn \%OuvertureVioloncelleDeux \%OuvertureMesures
@@ -321,6 +368,7 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisSaxophoneDeux \ActeDeuxSceneTr
 \bookpart {
   \include "./master/master.ly"
 }
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ViolonUn %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -346,6 +394,8 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonUn \ActeDeuxSceneTroisMe
   \include "./master/master.ly"
 }
 
+%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ViolonDeux %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePart \PrologueViolonDeux \PrologueMesures
@@ -370,6 +420,8 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonDeux \ActeDeuxSceneTrois
   \include "./master/master.ly"
 }
 
+%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ViolonTrois %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makePart \PrologueViolonTrois \PrologueMesures
@@ -393,6 +445,8 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonTrois \ActeDeuxSceneTroi
 \bookpart {
   \include "./master/master.ly"
 }
+
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% AltoUn %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -736,48 +736,50 @@ ActeDeuxSceneTroisSaxophoneUn = { \SaxAltoUn
 
     %%% Boum %%%
     sol,,4\sffz} r2 | R2.*2
-    r4 sol2 lab4 si do |
-    r4 do2 dod4 mi fa |
-    r la,2 sib4 dod re |
-    r dod2 do4 fa mi |
-    r do2 mib4 lab sol |
-    r lab,8 sol~ \t {sol si re} |
-    mib16 si fad'8 mi lab~ \t {lab sol do} |
+    r4 sol2--\p lab4( si do) |
+    r4 do2-- dod4( mi fa) |
+    r la,2-- sib4( dod re) |
+    r dod2-- do4(\< fa mi)\! |
+    r do2--\mp mib4( lab sol) |
+    r lab,8(\mf sol)~ \t {sol si( re)} |
+    mib16( si) fad'8-- mi( lab)~ \t {lab sol( do} |
 
     %%% Contralto %%%
-    re r fad,, r fad r fad r fad r r4 |
-    re'8 r fad, r fad r fad r |
-    fad r fad r fad r fad r |
-    fad r fad r mi r mi r |
-    mi r mi r r4 fa'8 fa fad r r4 |
+    re->) r fad,,---.\p r
+    fad---. r fad---. r fad---. r r4 |
+    re'8-> r fad,---. r fad---. r fad---. r |
+    fad---. r fad---. r fad---. r fad---. r |
+    fad---. r fad---. r mi---. r mi---. r |
+    mi---. r mi---. r r4 fa'8-> fa-> fad-> r r4 |
     R2. R2*6
-    reb,4 r2 | r4 sol r |
-    reb' reb, r | sol r2 |
+    reb,4-.->\p r2 | r4 sol---. r |
+    reb'---. reb,->-. r | sol---. r2 |
 
     %%% Grand ensemble %%%
-    R1*2 r2 r8 fad fad fad |
-    fad fad fad fad r4 reb~ |
-    reb r r8 fad fad fad r4 sol4 fa lab |
-    mi2 fa mi fa4 sol | la r r sold8 sold |
-    la4 r sol lab | r2 r8 re, sol do |
-    sold'4 r r2 |
-    la4 sol fa mi fa8 mi fa sol la4 mi~ | mi r r2 |
-    mi4 r r2 | R1 re,2. r4 |
-    r8 re re re re re re re |
-    r4 fad' mi re dod re8 dod re mi fad r |
-    mi4 fad sold la sold8 la sold fad mi4 la8 r |
-    re8 mib re do sib4 mi R2.
+    R1*2 r2 r8 fad-.(\pp fad-. fad-. |
+    fad-. fad-. fad-. fad-.) r4 reb--~ |
+    reb r r8 fad-.( fad-. fad-.) r4 sol4(\p fa lab) |
+    mi2( fa) mi( fa4 sol | la) r r sold8--\mf sold-- |
+    la4---> r sol-> lab-> | r2 r8 re,-> sol-> do-> |
+    sold'4-> r r2 |
+    la4(\mf sol) fa( mi) fa8( mi) fa-. sol-. la4( mi)~ | mi r r2 |
+    mi4->\f r r2 | R1 re,2.--\mp r4 |
+    r8 re-.( re-. re-. re-. re-. re-. re-.) |
+    r4 fad'(\mf mi) re( dod) re8( dod) re-. mi-. fad-. r |
+    \ind #"poco più" mi4( fad sold la)
+    sold8( la sold fad) mi4( la8) r |
+    re8(\f mib re do) sib4( mi) R2.
 
     %%% Chute %%%
-    r4 \t {r8 fad, mi'~} mi4~ |
-    mi sib re mi,4. fad~ fad8 mib4 re8 r4 | R2. R2*3
+    r4 \t {r8 fad,(\f mi')~} mi4~ |
+    mi sib( re) mi,4.(\> fad)~ fad8 mib4(\! re8) r4 | R2. R2*3
 
     %%% Andante al fine %%%
     R2.*32
-    r2 mi,4 sold4. sol8 si4~ si8 sib re2 |
-    r8 mi, la sol do sib mib2. |
-    \t {r8 mi, si'} \t {la mi' re} la'4 |
-    r8 sol do sib reb4 |
-    r8 mi \t {mi mi mi} \tt {mi16 mi mi mi mi}
+    r2 mi,4\((\pdolce sold4.) sol8( si4)~ si8 sib( re2)\) |
+    r8 mi,(\< la sol do\mp\> sib mib2.)\! |
+    \t {r8 mi,--(\mf si'--} \t {la-> mi'-> re->} la'4--->) |
+    r8 sol->\< do-> sib-> reb4--->\! |
+    r8 mi--\ff\< \t {mi-- mi mi} \tt {mi16-> mi-> mi-> mi-> mi->\!}
   }
 }

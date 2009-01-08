@@ -710,7 +710,7 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
     la4} r2 | R1
     re8( mi) \st {si la solb lab} |
     mib4-- r la8-. solb-. lab( mib) |
-    reb4-- r2 | reb'8 sib do sol r fa' re mi |
+    reb4-- r2 | reb'8-. sib-. do( sol) r fa'( re) mi-. |
     si4-- r2 si4-- r r2 |
     R2. R1 R2. R1R2. R1
     r8 \st {re,\p\< la' solb lab mib} |
@@ -752,46 +752,50 @@ ActeDeuxSceneTroisSaxophoneDeux = { \SaxophoneBaryton
 
     %%% Boum %%%
     sold'4\sffz} r2 | R2.*2
-    sold,,4 si2 do4 r2 |
-    mi,2.~ mi2 r4 |
-    do'2.~ do4 r8 re do mib |
-    si2.~ si2 r4 |
-    fa2.~ fa2 r8 \t {fa16 fad sol} |
-    sold2.~ sold2 r4 |
+    sold,,4(\p si2) do4-- r2 |
+    mi,2.--~ mi2 r4 |
+    do'2.--~ do4 r8 re( do mib |
+    si2.--)~ si2 r4 |
+    fa2.--\mp~ fa2 r8 \t {fa16(\< fad sol} |
+    sold2.--\!)~ sold2 r4 |
 
     %%% Contralto %%%
-    re8 r re' r re r re r re r r4 |
-    re,8 r re' r |
-    re r re r re r re r |
-    re r re r re r re r |
-    do r do r do r do r |
-    r4 si8 si la r r4 | R2. R2*6
-    reb,4 r2 | sol4 r2 |
-    reb8 reb' reb'4 r | sol,, r2 |
+    re8-> r re'---.\p r
+    re---. r re---. r re---. r r4 |
+    re,8-> r re'---.\p r |
+    re---. r re---. r re---. r re---. r |
+    re---. r re---. r re---. r re---. r |
+    do---. r do---. r do---. r do---. r |
+    r4 si8-> si-> la-> r r4 | R2. R2*6
+    reb,4-.->\p r2 | sol4---. r2 |
+    reb8-. reb'-. reb'4-.-> r | sol,,---. r2 |
 
     %%% Grand ensemble %%%
-    R1*2 r2 r8 sol sol sol |
-    sol sol sol sol r4 reb~ |
-    reb r r8 sol sol sol |
-    sol sol sol sol r2 |
-    mi1~ mi2 r8 mi mi mi |
-    mi mi mi mi r4 la8 re |
-    mi4 r sib la r2 r8 dod do si |
-    la4 r r2 | sib1~ sib2 r4 la8 la |
-    sib4 r r2 | sib4 r r2 |
-    R1 re,2. r4 |
-    r8 re re re re re re re |
-    r4 re'2.~ re8 re re re re re re re |
-    re2 r4 reb' mib fa solb fa8 solb |
-    fa mib reb4 solb lab | R2.
+    R1*2 r2 r8 sol-.(\pp sol-. sol-. |
+    sol-. sol-. sol-. sol-.) r4 reb--~ |
+    reb r r8 sol-.( sol-. sol-. |
+    sol-. sol-. sol-. sol-.) r2 |
+    \ten mi1--~ mi2 r8 mi-.( mi-. mi-. |
+    mi-. mi-. mi-. mi-.) r4 la8--\mf re-- |
+    mi4---> r sib-> la-> r2 r8 dod-> do-> si-> |
+    la4-> r r2 | \ten sib1--\p~ sib2 r4 la8-.\mf la-. |
+    sib4-.-> r r2 | sib4->\p r r2 |
+    R1 re,2.--\mp r4 |
+    r8 re-.( re-. re-. re-. re-. re-. re-.) |
+    r4 re'2.--~ re8 re-.\< re-. re-. re-. re-. re-. re-. |
+    re2--\! r4 reb'(\f mib fa solb) fa8( solb |
+    fa mib) reb4(\< solb lab)\! | R2.
 
     %%% Chute %%%
-    r8 re,, do'2 re,4 do'4. re,8~ re2 sold4~ sold si sib re2 r4 R2*3
+    r8 re,,(\f do'2) re,4--( do'4.) re,8--~
+    re2 sold4~ sold si( sib re2) r4 R2*3
 
     %%% Andante al fine %%%
     R2.*35
-    mi,2.~ mi2 r4 |
-    mi,2. \t {r8 mi sol} \t {red' sol re'} fad4 |
-    r8 mi,, \t {mi mi mi} \tt {mi16 mi mi mi mi}
+    \ten mi,2.\pp~ mi2 r4 |
+    mi,2.\fp \t {r8 mi->\< sol->}
+    \t {red'-> sol-> re'->} fad4->\! |
+    r8 mi,,--\ff\< \t {mi-- mi mi}
+    \tt {mi16-> mi-> mi-> mi-> mi->\!}
   }
 }

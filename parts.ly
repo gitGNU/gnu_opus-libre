@@ -55,6 +55,8 @@ PercuDeuxMains=
   scoretype = "Flûtes"
 }
 
+\paper { #(define page-breaking ly:page-turn-breaking) }
+
 
 \include "./master/titling.ly"
 \include "./master/instruments.ly"
