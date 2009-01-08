@@ -978,8 +978,8 @@ ActeDeuxSceneTroisFluteDeux = { \FluteDeux
 
     %%% Chute %%%
     \ind #"scherzando"
-    sold8-.->\f \> sold-. la4-- sold8-.-> sold-. |
-    la4-- sold8-.-> sold-. la4-- |
+    sold8-.->\f sold-. la4-- sold8-.-> sold-. |
+    \dim la4-- sold8-.-> sold-. la4-- |
     do,8-.-> do-. reb4-- do8-.-> do-. |
     reb4-- mi,8-.-> mi-. fa4-- |
     mi8-.-> mi-. fa4-- sold,8-.-> sold-. |

@@ -1079,7 +1079,7 @@ ActeDeuxSceneTroisClarinetteDeux = { \ClarinetteDeux
     red) mi8( mib fa sol lab4) | R2.
 
     %%% Chute %%%
-    mi'2.(\mf~ mi4\> mib re reb do si sib la sold fa re sold,\! re) r R2*2
+    mi'2.(\mf~ \dim mi4 mib re reb do si sib la sold fa re sold,\! re) r R2*2
 
     %%% Andante al fine %%%
     R2.*6

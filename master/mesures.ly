@@ -1617,6 +1617,8 @@ ActeDeuxSceneTroisMesures = {
       \mark \markup \did \ActeDeuxSceneTroisZN
             R1
   \time 3/4 R2.   \bar "||"
+%%%FIXME get rid of this already!
+\break
       \mark \markup \did \ActeDeuxSceneTroisZO
             R2.*5
   \time 2/4 R2*3  \bar "||"
@@ -1636,59 +1638,3 @@ ActeDeuxSceneTroisMesures = {
       \mark \markup \Noir
             R2.*7 \bar "|."
 }
-
-%{
-    %%% Larghetto %%%
-    R4.*51
-    R4*27 R4. R4*7
-    R4.*14 R4*28 R2.*7
-
-    %%% Interlude %%%
-    R2*9 R2. R2*6 R1*5/8
-    R2*16 R1*5/8
-    R2 R4. R2 R4. R2 R4.*2
-
-    %%% Baryton 1 %%%
-    R2.*7 R2*2 R2.
-    R2*2 R2. R2*2 R2.
-    R2*2 R2. R2*2 R2.
-    R2 R4. R2 R4.
-    R2*2 R2. R2*2 R2.
-    R1 R2. R2
-
-    %%% Doppio Tempo %%%
-    R2*7 R2.*7
-    R2 R2. R2 R2.
-    R2 R2. R2 R2.
-    R2 R2. R2 R2.
-    R2 R2.
-
-    %%% Climax %%%
-    R2 R4. R2*3 R4.
-    R2*4 R4.*2 R2. R1
-
-    %%% Soprano 2 %%%
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2. R1 R2. R1 R2. R1 R2. R1
-    R2.
-
-    %%% Duo %%%
-    R1*6 R2*3
-
-    %%% Baryton 2 %%%
-    R2.*11 R4.
-    R2.*26
-    R2*12 R2. R2*6 R2.*4
-
-    %%% Ensemble %%%
-    R1*27
-    R2.*6 R2*3
-
-    %%% Épilogue %%%
-    R2.*40
-%}

@@ -250,7 +250,7 @@ ActeDeuxSceneTroisContralto= { \Contralto
     r2 r8 sold(\< la do | re2)\ff r4 sol,8-.\mf sol-. |
     sol4--\< sold8-. sold-. la4-- sol8-. sol-. |
     sold4-- la8-. la-. sib4--\! la8-. la-. | r sold-. r2 |
-    fad2.(\ff~ fad2\> mi4 dod'2 <\parenthesize sol, dod>4 |
+    fad2.(\ff~ \dim fad2 mi4 dod'2 <\parenthesize sol, dod>4 |
     fad'2. re2.)\!~ re4 r R2*2 R2.*40
   }
 }

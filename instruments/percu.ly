@@ -1951,8 +1951,8 @@ ActeDeuxSceneTroisPercus = <<
 
     %%% Ensemble %%%
     R1*24 R2.
-    r2 r8 \ind #"Tam-tam (bag. de timbale)" \t {cb16\< cb cb} |
-    cb2\f\laissezVibrer s4 R2. \ind #"Cymbale" hh2->\laissezVibrer s4 |
+    r2 r8 \ind #"Tam-tam (bag. de timbale)" \t {cb16 cb cb} |
+    cb2->--\laissezVibrer s4 R2. \ind #"Cymbale" hh2->\laissezVibrer s4 |
     R2. R2*3
 
     %%% Épilogue %%%

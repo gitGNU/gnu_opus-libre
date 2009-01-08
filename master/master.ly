@@ -86,7 +86,7 @@
   \header {
     piece = \FinaleTitre
   }
-} %
+} %}
 \score {
   \Entracte
   \header {
@@ -111,7 +111,7 @@
   \header {
     piece = \SceneDeuxTitre
   }
-} %}
+} %
 \score {
   \ActeDeuxSceneTrois
   \header {

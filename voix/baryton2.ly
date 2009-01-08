@@ -504,7 +504,7 @@ ActeDeuxSceneTroisBarytonDeux = { \BarytonDeux
     r4 re'8-.\mf re-. mi4-- mi8-. mi-. |
     re4--\< re8-. re-. re4-- re8-. re-. |
     re4-- re8-. re-. re4--\! re8-. re-. | r la'-. r2 |
-    re,2.(\ff~re4\> fad fa la sol si | sib4. lab4 si8 |
+    re,2.(\ff~ \dim re4 fad fa la sol si | sib4. lab4 si8 |
     re2.)\!~re4 r | R2*2 R2.*40
   }
 }

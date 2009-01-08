@@ -41,6 +41,6 @@
 %showFirstLength = s1*40
 \book {
   \include "./master/common.ly"
-  %\include "./master/titling.ly"
+  \include "./master/titling.ly"
   \include "./master/master.ly"
 }

@@ -313,7 +313,7 @@ ActeDeuxSceneTroisSopranoUn= { \SopranoUn
     r4 mi'8-.\mf mi-. re4-- re8-. re-. |
     mi4--\< fa8-. fa-. mib4-- mib8-. mib-. |
     fad4-- fad8-. fad-. mi4--\! sol8-. sol-. | r sold-. r2 |
-    sib,2.(\ff~sib8\> mib4 sib8 la re | la4 lab8 reb sol,4 |
+    sib,2.(\ff~ \dim sib8 mib4 sib8 la re | la4 lab8 reb sol,4 |
     mib4 dod8 fad re4)~|
     re2.\!~re4 r R2*2 R2.*40
   }

@@ -1240,7 +1240,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
         \times 3/4 {la'4\glissando
           mi'\glissando
           la\glissando
-          dod\glissando
+          dod
         } \ottava #1
         mi8\glissando
         sol\glissando
@@ -1253,7 +1253,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
         dod\glissando
         si\glissando
         la\glissando
-        sol\glissando
+        sol
         \ottava #0
         \times 3/4 {
           mi4\glissando
@@ -1283,7 +1283,7 @@ ActeDeuxSceneTroisVioloncelleDeux = { \VioloncelleDeux
     <mi, mi'>4---> <mi mi'>8-.-> <mi mi'>-.->
     \t {<mi mi'>-.-> <mi mi'>-. <mi mi'>-.} |
     mi2.---> \clef treble |
-    \t {r8 mi''--(\upbow si'--)} \t {la--\< mi'-- re--} la'4->\! \clef bass |
+    \t {r8 mi''--(\upbow si'--)} \t {la--\< mi'-- re--} la'4->\upbow\! \clef bass |
     \ind #"ample" <mi,,, mi'>8--->\ff\< <mi mi'>--->
     \t {<mi mi'>---> <mi mi'>-. <mi mi'>-.}
     \tt {<mi mi'>16---> <mi mi'>-> <mi mi'>-> <mi mi'>-> <mi mi'>->\!}

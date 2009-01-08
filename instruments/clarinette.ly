@@ -1003,7 +1003,7 @@ ActeDeuxSceneTroisClarinetteUn = { \ClarinetteUn
     dod'(\fmolto do si la) | R2.
 
     %%% Chute %%%
-    sib2.\mf \t {la4--( la-- sib--)~} sib | la(\> lab sol |
+    sib2.\mf \t {la4--( la-- sib--)~} sib | \dim la( lab sol |
     solb fa mi do) si,(\! do re) r R2*2
 
     %%% Andante al fine %%%
