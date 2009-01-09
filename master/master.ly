@@ -16,7 +16,7 @@
   \header {
     piece = \PrologueTitre
   }
-} %
+} %{
 \score {
   \Ouverture
   \header {
@@ -35,14 +35,14 @@
   \header {
     piece = \Separateur
   }
-} %
+} %}
 \score {
   \InterludeUn
   \header {
     piece = \InterludeTitre
     dessin = \Arrosoir
   }
-} %
+} %{
 \score {
   \ActeUnSceneDeux
   \header {
@@ -86,7 +86,7 @@
   \header {
     piece = \FinaleTitre
   }
-} %}
+} %
 \score {
   \Entracte
   \header {

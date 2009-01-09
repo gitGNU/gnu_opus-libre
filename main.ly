@@ -34,13 +34,13 @@
 
 %% Uncomment one of the two following lines.
 
-\include "./master/full_score.ly"
-%\include "./master/vocal_score.ly"
+%\include "./master/full_score.ly"
+\include "./master/vocal_score.ly"
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The actual score %%%%%%%%%%%%%%%%%%%%%%%%%
 %showFirstLength = s1*40
 \book {
   \include "./master/common.ly"
-  \include "./master/titling.ly"
+  %\include "./master/titling.ly"
   \include "./master/master.ly"
 }
