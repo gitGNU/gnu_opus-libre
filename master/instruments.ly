@@ -26,7 +26,7 @@
 \include "./instruments/violoncelle2.ly"
 \include "./instruments/contrebasse.ly"
 \include "./instruments/piano.ly"
-%
+%{
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Flutes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,56 +50,60 @@ ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisFluteUn \ActeDeuxSceneTrois
 
 \bookpart {
   \include "./master/master.ly"
-} %{
+}
+
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Clarinettes  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Prologue = \makeSection \PrologueClarinetteUn \PrologueClarinetteDeux \PrologueMesures
+Prologue = \makeSection  { \smart \transpose la do' \PrologueClarinetteUn } { \smart \transpose sib do' \PrologueClarinetteDeux } \PrologueMesures
 %Ouverture = \makeSection \%OuvertureClarinetteUn \%OuvertureClarinetteDeux \%OuvertureMesures
-ActeUnSceneUn = \makeSection \ActeUnSceneUnClarinetteUn \ActeUnSceneUnClarinetteDeux \ActeUnSceneUnMesures
-ActeUnSceneUnBis = \makeSection \ActeUnSceneUnBisClarinetteUn  \ActeUnSceneUnBisClarinetteDeux \ActeUnSceneUnBisMesures
-InterludeUn = \makeSection \InterludeUnClarinetteUn \InterludeUnClarinetteDeux \InterludeUnMesures
-ActeUnSceneDeux = \makeSection \ActeUnSceneDeuxClarinetteUn \ActeUnSceneDeuxClarinetteDeux \ActeUnSceneDeuxMesures
-InterludeDeux = \makeSection \InterludeDeuxClarinetteUn \InterludeDeuxClarinetteDeux \InterludeDeuxMesures
-ActeUnSceneTrois = \makeSection \ActeUnSceneTroisClarinetteUn \ActeUnSceneTroisClarinetteDeux \ActeUnSceneTroisMesures
-ActeUnSceneTroisBis = \makeSection \ActeUnSceneTroisBisClarinetteUn \ActeUnSceneTroisBisClarinetteDeux \ActeUnSceneTroisBisMesures
-ActeUnSceneTroisTer = \makeSection \ActeUnSceneTroisTerClarinetteUn \ActeUnSceneTroisTerClarinetteDeux \ActeUnSceneTroisTerMesures
-InterludeTrois = \makeSection \InterludeTroisClarinetteUn \InterludeTroisClarinetteDeux \InterludeTroisMesures
-ActeUnSceneQuatre = \makeSection \ActeUnSceneQuatreClarinetteUn \ActeUnSceneQuatreClarinetteDeux \ActeUnSceneQuatreMesures
-Entracte = \makeSection \EntracteClarinetteUn \EntracteClarinetteDeux \EntracteMesures
-ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnClarinetteUn \ActeDeuxSceneUnClarinetteDeux \ActeDeuxSceneUnMesures
-ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisClarinetteUn \ActeDeuxSceneUnBisClarinetteDeux \ActeDeuxSceneUnBisMesures
-ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxClarinetteUn \ActeDeuxSceneDeuxClarinetteDeux \ActeDeuxSceneDeuxMesures
-ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisClarinetteUn \ActeDeuxSceneTroisClarinetteDeux \ActeDeuxSceneTroisMesures
+ActeUnSceneUn = \makeSection  { \smart \transpose la do' \ActeUnSceneUnClarinetteUn } { \smart \transpose sib do' \ActeUnSceneUnClarinetteDeux } \ActeUnSceneUnMesures
+ActeUnSceneUnBis = \makeSection  { \smart \transpose la do' \ActeUnSceneUnBisClarinetteUn } { \smart \transpose sib do'  \ActeUnSceneUnBisClarinetteDeux } \ActeUnSceneUnBisMesures
+InterludeUn = \makeSection { \smart \transpose la do' \InterludeUnClarinetteUn } { \smart \transpose sib do' \InterludeUnClarinetteDeux } \InterludeUnMesures
+ActeUnSceneDeux = \makeSection  { \smart \transpose la do' \ActeUnSceneDeuxClarinetteUn } { \smart \transpose sib do' \ActeUnSceneDeuxClarinetteDeux } \ActeUnSceneDeuxMesures
+InterludeDeux = \makeSection  { \smart \transpose la do' \InterludeDeuxClarinetteUn } { \smart \transpose sib do' \InterludeDeuxClarinetteDeux } \InterludeDeuxMesures
+ActeUnSceneTrois = \makeSection  { \smart \transpose la do' \ActeUnSceneTroisClarinetteUn } { \smart \transpose sib do' \ActeUnSceneTroisClarinetteDeux } \ActeUnSceneTroisMesures
+ActeUnSceneTroisBis = \makeSection  { \smart \transpose la do' \ActeUnSceneTroisBisClarinetteUn } { \smart \transpose sib do' \ActeUnSceneTroisBisClarinetteDeux } \ActeUnSceneTroisBisMesures
+ActeUnSceneTroisTer = \makeSection  { \smart \transpose la do' \ActeUnSceneTroisTerClarinetteUn } { \smart \transpose sib do' \ActeUnSceneTroisTerClarinetteDeux } \ActeUnSceneTroisTerMesures
+InterludeTrois = \makeSection  { \smart \transpose la do' \InterludeTroisClarinetteUn } { \smart \transpose sib do' \InterludeTroisClarinetteDeux } \InterludeTroisMesures
+ActeUnSceneQuatre = \makeSection  { \smart \transpose la do' \ActeUnSceneQuatreClarinetteUn } { \smart \transpose sib do' \ActeUnSceneQuatreClarinetteDeux } \ActeUnSceneQuatreMesures
+Entracte = \makeSection  { \smart \transpose la do' \EntracteClarinetteUn } { \smart \transpose sib do' \EntracteClarinetteDeux } \EntracteMesures
+ActeDeuxSceneUn = \makeSection { \smart \transpose la do' \ActeDeuxSceneUnClarinetteUn } { \smart \transpose sib do' \ActeDeuxSceneUnClarinetteDeux } \ActeDeuxSceneUnMesures
+ActeDeuxSceneUnBis = \makeSection  { \smart \transpose la do' \ActeDeuxSceneUnBisClarinetteUn } { \smart \transpose sib do' \ActeDeuxSceneUnBisClarinetteDeux } \ActeDeuxSceneUnBisMesures
+ActeDeuxSceneDeux = \makeSection  { \smart \transpose la do' \ActeDeuxSceneDeuxClarinetteUn } { \smart \transpose sib do' \ActeDeuxSceneDeuxClarinetteDeux } \ActeDeuxSceneDeuxMesures
+ActeDeuxSceneTrois = \makeSection  { \smart \transpose la do' \ActeDeuxSceneTroisClarinetteUn } { \smart \transpose sib do' \ActeDeuxSceneTroisClarinetteDeux } \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
 } %
 
-%{
+%}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Prologue = \makeSection \PrologueSaxophoneUn \PrologueSaxophoneDeux \PrologueMesures
+Prologue = \makeSection { \smart \transpose mib do' \PrologueSaxophoneUn } { \smart \transpose mib do' \PrologueSaxophoneDeux } \PrologueMesures
 %Ouverture = \makeSection \%OuvertureSaxophoneUn \%OuvertureSaxophoneDeux \%OuvertureMesures
-ActeUnSceneUn = \makeSection \ActeUnSceneUnSaxophoneUn \ActeUnSceneUnSaxophoneDeux \ActeUnSceneUnMesures
-ActeUnSceneUnBis = \makeSection \ActeUnSceneUnBisSaxophoneUn  \ActeUnSceneUnBisSaxophoneDeux \ActeUnSceneUnBisMesures
-InterludeUn = \makeSection \InterludeUnSaxophoneUn \InterludeUnSaxophoneDeux \InterludeUnMesures
-ActeUnSceneDeux = \makeSection \ActeUnSceneDeuxSaxophoneUn \ActeUnSceneDeuxSaxophoneDeux \ActeUnSceneDeuxMesures
-InterludeDeux = \makeSection \InterludeDeuxSaxophoneUn \InterludeDeuxSaxophoneDeux \InterludeDeuxMesures
-ActeUnSceneTrois = \makeSection \ActeUnSceneTroisSaxophoneUn \ActeUnSceneTroisSaxophoneDeux \ActeUnSceneTroisMesures
-ActeUnSceneTroisBis = \makeSection \ActeUnSceneTroisBisSaxophoneUn \ActeUnSceneTroisBisSaxophoneDeux \ActeUnSceneTroisBisMesures
-ActeUnSceneTroisTer = \makeSection \ActeUnSceneTroisTerSaxophoneUn \ActeUnSceneTroisTerSaxophoneDeux \ActeUnSceneTroisTerMesures
-InterludeTrois = \makeSection \InterludeTroisSaxophoneUn \InterludeTroisSaxophoneDeux \InterludeTroisMesures
-ActeUnSceneQuatre = \makeSection \ActeUnSceneQuatreSaxophoneUn \ActeUnSceneQuatreSaxophoneDeux \ActeUnSceneQuatreMesures
-Entracte = \makeSection \EntracteSaxophoneUn \EntracteSaxophoneDeux \EntracteMesures
-ActeDeuxSceneUn = \makeSection \ActeDeuxSceneUnSaxophoneUn \ActeDeuxSceneUnSaxophoneDeux \ActeDeuxSceneUnMesures
-ActeDeuxSceneUnBis = \makeSection \ActeDeuxSceneUnBisSaxophoneUn \ActeDeuxSceneUnBisSaxophoneDeux \ActeDeuxSceneUnBisMesures
-ActeDeuxSceneDeux = \makeSection \ActeDeuxSceneDeuxSaxophoneUn \ActeDeuxSceneDeuxSaxophoneDeux \ActeDeuxSceneDeuxMesures
-ActeDeuxSceneTrois = \makeSection \ActeDeuxSceneTroisSaxophoneUn \ActeDeuxSceneTroisSaxophoneDeux \ActeDeuxSceneTroisMesures
+ActeUnSceneUn = \makeSection { \smart \transpose mib do' \ActeUnSceneUnSaxophoneUn } { \smart \transpose mib do' \ActeUnSceneUnSaxophoneDeux } \ActeUnSceneUnMesures
+ActeUnSceneUnBis = \makeSection { \smart \transpose mib do' \ActeUnSceneUnBisSaxophoneUn } { \smart \transpose mib do'  \ActeUnSceneUnBisSaxophoneDeux } \ActeUnSceneUnBisMesures
+InterludeUn = \makeSection { \smart \transpose mib do' \InterludeUnSaxophoneUn } { \smart \transpose mib do' \InterludeUnSaxophoneDeux } \InterludeUnMesures
+ActeUnSceneDeux = \makeSection { \smart \transpose mib do' \ActeUnSceneDeuxSaxophoneUn } { \smart \transpose mib do' \ActeUnSceneDeuxSaxophoneDeux } \ActeUnSceneDeuxMesures
+InterludeDeux = \makeSection { \smart \transpose mib do' \InterludeDeuxSaxophoneUn } { \smart \transpose mib do' \InterludeDeuxSaxophoneDeux } \InterludeDeuxMesures
+ActeUnSceneTrois = \makeSection { \smart \transpose mib do' \ActeUnSceneTroisSaxophoneUn } { \smart \transpose mib do' \ActeUnSceneTroisSaxophoneDeux } \ActeUnSceneTroisMesures
+ActeUnSceneTroisBis = \makeSection { \smart \transpose mib do' \ActeUnSceneTroisBisSaxophoneUn } { \smart \transpose mib do' \ActeUnSceneTroisBisSaxophoneDeux } \ActeUnSceneTroisBisMesures
+ActeUnSceneTroisTer = \makeSection { \smart \transpose mib do' \ActeUnSceneTroisTerSaxophoneUn } { \smart \transpose mib do' \ActeUnSceneTroisTerSaxophoneDeux } \ActeUnSceneTroisTerMesures
+InterludeTrois = \makeSection { \smart \transpose mib do' \InterludeTroisSaxophoneUn } { \smart \transpose mib do' \InterludeTroisSaxophoneDeux } \InterludeTroisMesures
+ActeUnSceneQuatre = \makeSection { \smart \transpose mib do' \ActeUnSceneQuatreSaxophoneUn } { \smart \transpose mib do' \ActeUnSceneQuatreSaxophoneDeux } \ActeUnSceneQuatreMesures
+Entracte = \makeSection { \smart \transpose mib do' \EntracteSaxophoneUn } { \smart \transpose mib do' \EntracteSaxophoneDeux } \EntracteMesures
+ActeDeuxSceneUn = \makeSection { \smart \transpose mib do' \ActeDeuxSceneUnSaxophoneUn } { \smart \transpose mib do' \ActeDeuxSceneUnSaxophoneDeux } \ActeDeuxSceneUnMesures
+ActeDeuxSceneUnBis = \makeSection { \smart \transpose mib do' \ActeDeuxSceneUnBisSaxophoneUn } { \smart \transpose mib do' \ActeDeuxSceneUnBisSaxophoneDeux } \ActeDeuxSceneUnBisMesures
+ActeDeuxSceneDeux = \makeSection { \smart \transpose mib do' \ActeDeuxSceneDeuxSaxophoneUn } { \smart \transpose mib do' \ActeDeuxSceneDeuxSaxophoneDeux } \ActeDeuxSceneDeuxMesures
+ActeDeuxSceneTrois = \makeSection { \smart \transpose mib do' \ActeDeuxSceneTroisSaxophoneUn } { \smart \transpose mib do' \ActeDeuxSceneTroisSaxophoneDeux } \ActeDeuxSceneTroisMesures
 
 \bookpart {
   \include "./master/master.ly"
-} %
+}
+
+%{
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Violons  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

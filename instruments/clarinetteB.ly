@@ -9,7 +9,7 @@
 
 ClarinetteBasse = {
   #(make-instrument-name 'clarinet-bass "clarinet" 25)
-  \clef bass
+  \clef "G_8"
   \revert Staff.InstrumentName #'stencil
 }
 
@@ -490,7 +490,7 @@ ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux
       r8 si\<( sib sol fad mib\> re'2\!) r4 |
       r8 si\p\<( sib sol fad mib\> re'2\!) r4 |
     }
-    re,4-- r2 \clef bass
+    re,4-- r2 \clef "G_8"
     r4 \t {r8 mi\p( dod} \t {sold) fa( do)} |
     r8 sold\mp( la do dod mi) | \ten fa,2.~-- fa4 r2 |
     r8 sold( la do dod mi) | fa,2.~-- fa4 r2 |
@@ -507,7 +507,7 @@ ActeUnSceneTroisTerClarinetteDeux = { \ClarinetteDeux
     dod,2.~--\! dod4 r2 | \clef treble
     mib''4\<( sib' si\!) |
     r8 sib\f( si fad sol re mib) sib'( si fad sol re |
-    mib) sib'\>( si4\!) \clef bass r8 sib,( si4\mp) sib,-- r |
+    mib) sib'\>( si4\!) \clef "G_8" r8 sib,( si4\mp) sib,-- r |
     R2.*15
   }
 }
@@ -668,7 +668,7 @@ EntracteClarinetteDeux = { \ClarinetteDeux
     la'4\mp( sol8 r fa4 mi8 r fa\< mi fa sol) |
     la4\!\(( sol8) r fa4( mi8) r fa\<( mi) fa sol\) |
     la4\! sol8 r fa4 mi8 r fa mi fa sol |
-    la2( mi) r \clef bass |
+    la2( mi) r \clef "G_8" |
     la,,\mf( la') la,-- si( si') r |
     do,( do') do,-- re( re') r |
     la'-- la,,-- la''-- sol-- si,,-- r |
@@ -683,9 +683,9 @@ EntracteClarinetteDeux = { \ClarinetteDeux
 ActeDeuxSceneUnClarinetteDeux = { \ClarinetteBasse
   \relative {
     R2.*4 R2 R2.*2 R2 | \ten mi2.~ | mi2.~ | mi2.~ | mi4 r \clef treble
-    mib'4\mp( sib2~) | sib4 r | do8( sol~) sol2~| sol2.~ | sol4 r \clef bass |
+    mib'4\mp( sib2~) | sib4 r | do8( sol~) sol2~| sol2.~ | sol4 r \clef "G_8" |
     mi,2.~-- | mi2.~ | mi2.~ | mi4 r |
-    R2. R2 R2.*2 R2 | R2. \clef treble | re''2.~\p\<| re2.~\mf\>| re4\! r \clef bass |
+    R2. R2 R2.*2 R2 | R2. \clef treble | re''2.~\p\<| re2.~\mf\>| re4\! r \clef "G_8" |
 
     %%% Entrée de la Soprano Deux %%%
     R2.*2 R1 R2. do,,1\mp fa,2.~-- fa4 r | mi2.~\p mi2 r |
@@ -699,7 +699,7 @@ ActeDeuxSceneUnClarinetteDeux = { \ClarinetteBasse
     r4 \clef treble fad''8\mf( sold si sold fad re) dod\>( re fad sold si fad |
 
     %%% Entrée de la Contralto %%%
-    sold2.~\p) sold2. r4 \clef bass | R2. R1 R2. R1 R2. R1
+    sold2.~\p) sold2. r4 \clef "G_8" | R2. R1 R2. R1 R2. R1
     \ten do,,2.~\p do2. r4 | R2. r4 do2-- r4 reb2.~-- reb2. r4 | r4 do-- r R1 |
     fad,8-.\mp r r2 | R1 R2. R1 R2. \ten sol2.~--\mp sol2 r4 |
     R2.*4 r4 mi'2--\mf \ten mib2.~-- mib~ mib4 r r2 | R2.
@@ -803,14 +803,14 @@ ActeDeuxSceneUnBisClarinetteDeux = { \ClarinetteBasse
 ActeDeuxSceneDeuxClarinetteDeux = { \ClarinetteBasse
   \relative {
     \clef treble lab'2\mp( fa4) r r2 | lab2( fa4) r r2 R1. | lab4-- r fa-- r r2 |
-    R1.*2 fa4\p( reb) r2 R1 R2. \clef bass
+    R1.*2 fa4\p( reb) r2 R1 R2. \clef "G_8"
     sol,4--\mf \stdet {sol8 sol r4 | mib'8 mib r4 r8 mib} |
     r16 \st {la, la la r8 mib'--} r4 | r r16 \clef treble fa8--( lab16) mi4-- |
     re1-- r2 | R1.
-    fa4( reb) r1 \clef bass | reb4( fa,) r2 | R1 R2.
+    fa4( reb) r1 \clef "G_8" | reb4( fa,) r2 | R1 R2.
     sol4--\mf \stdet {sol8 sol} r red'( mi4) | do-- r8 |
     si,2--\p r4 \clef treble \ind #"en dehors" sold''8--\mf \det {sold la4 r r sold8 sold |
-    la4 r r si8 si mib4} r r2 \clef bass | \ten solb,,1~\mp solb2. r4 |
+    la4 r r si8 si mib4} r r2 \clef "G_8" | \ten solb,,1~\mp solb2. r4 |
 
     R2. R1. la2.--\p r4 | do,2.-- r4 |
     fa,2.~\pp fa~ fa2 r4 | R2
@@ -830,15 +830,15 @@ ActeDeuxSceneDeuxClarinetteDeux = { \ClarinetteBasse
     r2 r8 \t {sol16( fa mi} | la8-.) r r4 r2 | R1*2
 
     \st {la8 la sold} r4 | sold4-- r8 \st {la la} |
-    sold4-- \clef bass \st {la,,8 la sold |
+    sold4-- \clef "G_8" \st {la,,8 la sold |
     sold'' la,,-> la sold r |
     mib mib re} r4 | mib'4---> r r8 | R2*5/4 \clef treble
-    \st {la'8 la sold} r4 | r \clef bass la,,8 la sold |
+    \st {la'8 la sold} r4 | r \clef "G_8" la,,8 la sold |
     mib'4 r r8 | R2*5/4*4
 
     R1*2 si4->\sffz r r2 | R1*6
     re4-.->\sfz r2 | re,4---.\p r | r2 r4 \clef treble solb''16\mp( mi8) solb16( |
-    fa1) R2.*2 \clef bass \ten la,2.~\p la2 r4 | R2.*3
+    fa1) R2.*2 \clef "G_8" \ten la,2.~\p la2 r4 | R2.*3
 
     \stdet {la,8\p r mib r lab r re, r |
     reb r sol r do r | fa, r si r mi, r |

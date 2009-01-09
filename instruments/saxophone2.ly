@@ -15,7 +15,7 @@ SaxAltoDeux = {
 
 SaxophoneBaryton = {
   #(make-instrument-name 'saxophone-baritone "baritone sax" 25)
-  \clef bass
+  \clef "G_8"
   \revert Staff.InstrumentName #'stencil
 }
 

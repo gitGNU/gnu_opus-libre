@@ -52,7 +52,7 @@ PercuDeuxMains=
 \include "./master/common.ly"
 
 \header {
-  scoretype = "Flûtes"
+  scoretype = "Saxophones"
 }
 
 \paper { #(define page-breaking ly:page-turn-breaking) }
