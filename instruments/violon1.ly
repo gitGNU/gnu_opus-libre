@@ -423,7 +423,7 @@ ActeUnSceneDeuxViolonUn = { \ViolonUn
     <la, la'>4--->\f <la la'>---> <la si'>---> <la si'>---> |
     <la la'>---> <la la'>---> <la si'>---> <la si'>---> |
     <la la'>16->\< \ind #"détaché" re, sol la re mi sol la |
-    <mi re'>4--->\f <mi re'>---> <re mi'>---> <re mi'>--->
+    <mi re'>4--->\ff <mi re'>---> <re mi'>---> <re mi'>--->
     <mi re'>---> \pizz <sol mi'>8 r r2 |
 
     %%% Largo assai %%%
