@@ -16,7 +16,7 @@
   \header {
     piece = \PrologueTitre
   }
-} %{
+} %
 \score {
   \Ouverture
   \header {
@@ -86,7 +86,7 @@
   \header {
     piece = \FinaleTitre
   }
-} %
+} %}
 \score {
   \Entracte
   \header {

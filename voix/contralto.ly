@@ -29,13 +29,12 @@ InterludeUnContralto = { \Contralto
     r8 fa,16-.\mp fa-. fad8-- red16-. red-. mi8-- sol16-.\< sol-.
     sold8-- mi16-. mi-. fa8-- la16-. la-. \t {sib8--\f mi,(\> fa} |
     \ten mi'2.--) \mp \t {r8 mi,(\mf \> fa} | \ten mi'2.--)\p r4 |
-    \t {r8 mi,\( ( \< fa}  \t {dod')\> fad,( sib)} la16( dod) do-. mi~
-    mi4~--\p \) r16 \ind #"scherzando" do-.\mf sold8->--  r16 la-. fad8-- |
-    do16(\> mi mib fad~)\! \t {fad8\breathe mi(\mf \< fa} mi'8 fa,16 si
-    \t {mi8-- sold,-- dod--) \!} |
+    \ttt {r16 mi,\( ( \< fa si) fa( fad} \ttt {dod')\mf \> fad,( sib) la( dod) do-.}
+    mi2--\p \) r16 \ind #"scherzando" do-.\mf sold16.->-- la32-. fad8-- \t {do16(\> mi mib} |
+    fad4)\! r \ttt {r16 mi(\mf \< fa mi' fa, si} \t {mi8-- sold,-- dod--) \!} |
     r8 \ten mi->--~ \f mi2~ | mi4 r2 |
     fad,16-.\mp sib-. re,8-- r4 r8 mib16-. fad-. | do4-- r2 | R2. do8--\> mib-- la,2--\! |
-    r4 \t {r mi'(\pdolce \< la } sol2\> ) r4\! | R2.*5
+    r4 \t {r mi'(\pdolce \< la} sol2\> ) r4\! | R2.*5
     r8 do,16-.\p do-. fad8-- do16-. do-. la4-- | \t {r8 sol( sib} fad'4--) r R2.*2
   }
 }
