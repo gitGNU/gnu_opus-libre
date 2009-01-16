@@ -18,12 +18,6 @@
   }
 } %
 \score {
-  \Ouverture
-  \header {
-    piece = \OuvertureTitre
-  }
-} %}
-\score {
   \ActeUnSceneUn
   \header {
     acte = \ActeUnTitre
