@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- master.ly                                    %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -78,7 +78,7 @@ ActeDeuxSceneTrois = \makeSection  { \smart \transpose la do' \ActeDeuxSceneTroi
   \include "./master/master.ly"
 } %
 
-%}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Saxophones  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Prologue = \makeSection { \smart \transpose mib do' \PrologueSaxophoneUn } { \smart \transpose mib do' \PrologueSaxophoneDeux } \PrologueMesures
@@ -176,7 +176,7 @@ ActeDeuxSceneTrois = \makePart \ActeDeuxSceneTroisViolonTrois \ActeDeuxSceneTroi
 \bookpart {
   \include "./master/master.ly"
 }
-%
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Altos  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

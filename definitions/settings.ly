@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- settings.ly                                       %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -100,6 +100,7 @@
   \context {
     \DrumStaff
     \override StaffSymbol #'line-count = #1
+    \override BarLine #'bar-size = #3
   }
 }
 

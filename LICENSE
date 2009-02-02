@@ -1,8 +1,8 @@
   By using this work in any way, you must comply with the following license,
-version 0.1 or later (see section 6 about future versions).
+version 0.2 or later (see section 6 about future versions).
 
 
-                 Libre Opera License v.0.1
+                 Libre Opera License v.0.2
 
 0. Introduction
 
@@ -20,8 +20,8 @@ reproduced in the PERFORMING document.
 
   The "work" means the copyrightable work licensed under this License; the
 General Public License may refer to it as "the program". The different authors
-and licensors are listed in the THANKS document, with contact informations. 
-Each licensee (individuals or organizations) is addressed as "you". 
+and licensors are listed in the THANKS document, with contact informations.
+Each licensee (individuals or organizations) is addressed as "you".
 
   The "source code" of the work is defined by the General Public License; it
 means the full machine- and human-readable (where possible) code needed to
@@ -34,13 +34,19 @@ either computer- or human-generated, any media resulting from such a
 performance, and any use of narrative elements (characters, events, lyrics,
 dramatic structure).  The Creative Commons license refers to it as the "Work".
 
+  The "source title" is the codename of the source code, used mainly while
+developing the project.
+
+  The "narrative title" is mentioned in the VERSION document; it is the title of
+the narrative work.
+
 2. Source Code
 
   If you want to modify and/or redistribute this work, you must comply with the
 GNU General Public License, with the following exception:
   any interpretation of the source code as a narrative work is not regarded as
 an object-code form of the work, and therefore will be covered by the Creative
-Commons by-NC-SA license instead of the GPL license.
+Commons by-NC-SA license instead of the GPL license, as explained in section 4.
   The source code of the work, however, may be compiled, printed and reproduced
 as a printed score under the terms and conditions of the GPL license.
 
@@ -54,39 +60,44 @@ publicly perform, or distribute, any media resulting from the narrative work,
 you must provide in a reasonable manner, either (i) the full machine-readable
 source code that has been used to generate the score, or (ii) a written document
 offering full access to the source code at no charge, to the general public.
-  The title of the narrative work may differ from the title of the source code;
-if so, both titles have to be mentioned whenever the narrative work (or a
-derived work) it either distributed or publicly performed.
+
 
 4. Derivative works
 
   Modifying this work is possible in three distinct ways:
-  
+
   a. You may use the source code (or parts of the source code) in a completely
 different work, which must not include any narrative element of the original
 work; in this case the only license you must comply with is the GPL license, as
-specified in section 2.
+specified in section 2. You are allowed to ignore the narrative title, and refer
+to the original code by using only the source title.
 
   b. You may use the source code to produce a modified version of the narrative
 work (for instance by keeping some characters or events, or by translating text
-elements); in this case you must comply with the full license, as well as the
+elements); in this case you must comply with this full license, as well as the
 GPL license and the Creative Commons license it depends on.  A copy of all three
-licenses must be distributed with the work.
+licenses must be distributed with the work. You also have to mention both the
+narrative title and the source title whenever the narrative work it either
+distributed or publicly performed. If you have made major modifications that
+change the narrative work, you have to use a different title than the original
+narrative title (which you may, however, mention as a reference).
 
   c. You may use a performance (or a media resulting from a performance) of the
 narrative work to produce a new work, without modifying its original source
-code.  In this case you must comply with the Creative Commons
+code.  In this case you must comply only with the Creative Commons
 Attribution-NonCommercial-ShareAlike license, as specified in section 3; if the
 derivative work includes any other computer-readable elements, you must also
 provide the corresponding source for these elements, as well as the unmodified
-source code of the original work.
+source code of the original work. If you have made major modifications, you have
+to use a different title than the original narrative title (which you must,
+however, mention as a reference, as well as the original source title).
 
 5. Special authorizations
 
   As implied by the Berne Convention for the Protection of Literary and Artistic
 Works, special authorizations can be given by the authors to use this work
 outside the terms of its license.  Such authorizations have to be requested
-directly from any of the authors, for specific purposes and motivations; such
+directly from all of the authors, for specific purposes and motivations; such
 authorizations (if granted) will not change any of the terms of this license,
 and will remain limited in their extent and implications.
 

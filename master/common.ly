@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- common.ly                                         %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -43,7 +43,7 @@
 
 %% Vertical margins -----------------------------------------------%
   page-top-space = #(* 7 mm)
-  between-system-space = 10 \mm
+  between-system-space = 2 \mm
   between-system-padding = #5
   %before-title-space = 10 \mm
   %between-title-space = 2 \mm

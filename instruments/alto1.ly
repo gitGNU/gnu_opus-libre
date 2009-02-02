@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- alto1.ly                                          %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -84,7 +84,7 @@ PrologueAltoUn = { \AltoUn
     re,8\sfz \clef treble r16 re'-.\mf re-. re-. |
     dod'8-.-> r16 re,-. re-. re-. | dod'8-.-> r16 re,-. re-. re-. |
     dod'8-.-> r16 re,-. re-. re-. | mi'8-.-> r16 si-. si-. si-. |
-    lad'8-.-> r16 si-. si-. si-. | lad'8-.-> r16 si,-. si-. si-. |
+    lad'8-.-> r16 si,-. si-. si-. | lad'8-.-> r16 si,-. si-. si-. |
     lad'8-.-> r16 si,-. si-. si-. | lad'8-.-> r16 si,-. si-. si-. |
     lad'-> lad, dod\< mi sol lad | sol8->\f r16 mi,\< mi mi |
     fa'8\! r16 mi,\< mi mi | mi'8\! r16 dod,\< dod dod |

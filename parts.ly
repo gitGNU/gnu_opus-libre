@@ -1,4 +1,4 @@
-%------------------------------------------------------------------%
+﻿%------------------------------------------------------------------%
 % Opéra Libre -- parts.ly                                          %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
@@ -52,7 +52,7 @@ PercuDeuxMains=
 \include "./master/common.ly"
 
 \header {
-  scoretype = "Saxophones"
+  scoretype = "Altos"
 }
 
 \paper { #(define page-breaking ly:page-turn-breaking) }
