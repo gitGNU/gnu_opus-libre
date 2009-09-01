@@ -12,7 +12,7 @@
 
 \include "italiano.ly"
 
-\include "./definitions/functions.ly"
+\include "./definitions/music-functions.ly"
 \include "./definitions/text-functions.ly"
 \include "./definitions/graphics.ly"
 \include "./definitions/settings.ly"

@@ -9,7 +9,7 @@
 \include "italiano.ly"
 
 \include "./definitions/common.ly"
-\include "./definitions/functions.ly"
+\include "./definitions/music-functions.ly"
 %%% Special hack for non-standard tempo indications
 #(define-markup-command (mvt layout props arg) (markup?)
     (interpret-markup layout props
