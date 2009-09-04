@@ -7,8 +7,31 @@
 
 %%% This is where all scenes are compiled sequentially.
 
+#(define scenes
+  '(
+    Prologue
+    Ouverture
+    ActeUnSceneUn
+    ActeUnSceneUnBis
+    InterludeUn
+    ActeUnSceneDeux
+    InterludeDeux
+    ActeUnSceneTrois
+    ActeUnSceneTroisBis
+    ActeUnSceneTroisTer
+    InterludeTrois
+    ActeUnSceneQuatre
+    Entracte
+    ActeDeuxSceneUn
+    ActeDeuxSceneUnBis
+    ActeDeuxSceneDeux
+    ActeDeuxSceneTrois
+  ))
+
 %%% Depends on: either vocal_score.ly or full_score.ly,
 %%% plus everything else.
+
+%%% FIXME: deprec!
 
 %
 \score {

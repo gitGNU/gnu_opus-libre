@@ -1,11 +1,11 @@
 %------------------------------------------------------------------%
-% Opéra Libre -- functions.ly                                      %
+% Opéra Libre -- music-functions.ly                                %
 %                                                                  %
 % (c) Valentin Villenave, 2008                                     %
 %                                                                  %
 %------------------------------------------------------------------%
 
-% Various additional functions.
+% Functions used for music notation.
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Music Shortcuts %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -92,12 +92,12 @@ PianoDeuxMains=
     \new Staff = "md"
     <<
      \new Voice { \clef treble $droite }
-     \new Voice { \makeGhost $gauche }
+     %\new Voice { \makeGhost $gauche }
     >>
     \new Staff = "mg"
     <<
      \new Voice { \clef bass $gauche }
-     \new Voice { \makeGhost $droite }
+     %\new Voice { \makeGhost $droite }
     >>
   >>
 #})
@@ -115,12 +115,12 @@ PercuDeuxMains=
     \new Staff = "percuDroite"
     <<
      \new Voice { \clef treble $droite }
-     \new Voice { \makeGhost $gauche }
+     %\new Voice { \makeGhost $gauche }
     >>
     \new Staff = "percuGauche"
     <<
      \new Voice { \clef bass $gauche }
-     \new Voice { \makeGhost $droite }
+     %\new Voice { \makeGhost $droite }
     >>
   >>
 #})
@@ -378,7 +378,7 @@ plak =
 %% Music layout ---------------------------------------------------%
 
 #(define modern-auto-beam-settings
-  (append default-auto-beam-settings
+  (append default-beam-settings
   `(
     ((end * * 3 4) . ,(ly:make-moment 1 4))
     ((end * * 3 4) . ,(ly:make-moment 1 2))
