@@ -1,8 +1,7 @@
 %------------------------------------------------------------------%
 % Opéra Libre -- mesures.ly                                        %
 %                                                                  %
-% (c) Valentin Villenave, 2008                                     %
-%                                                                  %
+% (c) Valentin Villenave, 2008, 2009                               %                                                                 %
 %------------------------------------------------------------------%
 
 % FIXME : find this file a relevant place.

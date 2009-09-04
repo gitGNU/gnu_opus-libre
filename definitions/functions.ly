@@ -1,8 +1,7 @@
 %------------------------------------------------------------------%
 % Opéra Libre -- functions.ly                                      %
 %                                                                  %
-% (c) Valentin Villenave, 2008                                     %
-%                                                                  %
+% (c) Valentin Villenave, 2008, 2009                               %                                                                 %
 %------------------------------------------------------------------%
 
 % Core structure functions (with great help from Nicolas Sceaux and

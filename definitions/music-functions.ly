@@ -1,8 +1,7 @@
 %------------------------------------------------------------------%
 % Opéra Libre -- music-functions.ly                                %
 %                                                                  %
-% (c) Valentin Villenave, 2008                                     %
-%                                                                  %
+% (c) Valentin Villenave, 2008, 2009                               %                                                                 %
 %------------------------------------------------------------------%
 
 % Functions used for music notation.

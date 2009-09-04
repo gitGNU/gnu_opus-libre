@@ -1,8 +1,7 @@
 ﻿%------------------------------------------------------------------%
 % Opéra Libre -- master.ly                                    %
 %                                                                  %
-% (c) Valentin Villenave, 2008                                     %
-%                                                                  %
+% (c) Valentin Villenave, 2008, 2009                               %                                                                 %
 %------------------------------------------------------------------%
 
 %%% This is where all instrument parts are gathered.
