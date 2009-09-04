@@ -1,7 +1,7 @@
 %------------------------------------------------------------------%
 % Opéra Libre -- titling.ly                                        %
 %                                                                  %
-% (c) Valentin Villenave, 2008, 2009                               %                                                                 %
+% (c) Valentin Villenave, 2008, 2009                               %
 %------------------------------------------------------------------%
 
 %%depends on: text-functions.ly, decoupage.ly, nomenclature.ly, graphics.ly
