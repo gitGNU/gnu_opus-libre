@@ -538,7 +538,7 @@ EntracteFluteDeux = { \FluteDeux
     r8 dod,16-.\mf\< re-. fad8-- \t {sold16( fad sold} si) re-. mi-. sold-. \t {la16( mi re} mi8--) |
 
     %%% Fugato %%%
-    \ten re4--\f r \ten re,2~--\mp re2. r4 | R2.*2 R2
+    re4--\f r \ten re,2~--\mp re2. r4 | R2.*2 R2
     R1 r4 \ten re2~\p re2.~ re4 r r2 |
     solb\mp( fa8) r r4 | R2. solb2( fa8) r |
     R1 solb2( fa8) r r4 R2. sol!2.( fad4) r r2 | R1
