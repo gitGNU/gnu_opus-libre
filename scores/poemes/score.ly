@@ -8,6 +8,17 @@
 
 \version "2.13"
 
+%% Music functions for standalone compilation ( %FIXME: remove)
+
+t =
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 2/3 $music #})
+
+pl =
+#(define-music-function (parser location one two) (ly:music? ly:music?)
+#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%% Music Inclusion %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include "voix.ly"

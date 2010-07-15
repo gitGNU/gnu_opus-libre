@@ -6,7 +6,7 @@
 %-----------------------------    I    ----------------------------%
 
 UnPianoMd = \relative {
-  
+  r4 | R2
 }
 
 UnPianoMg = \relative {
