@@ -17,8 +17,8 @@ UnTexte = \lyricmode {
   des é -- toiles en grand nombre.
   Ta clar -- té dé -- ser -- tique
   re -- ssemble é -- tran -- ge -- ment
-  _ __ _ _ à mon dé -- sir
-  fu -- y -- ant.
+  _ __ _ _ _ à mon dé -- sir
+  fuy -- ant.
   Re -- _ gar -- de moi,
   mi -- roir au teint de pierre.
 }

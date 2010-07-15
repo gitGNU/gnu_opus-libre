@@ -55,7 +55,7 @@ UnSoprano = \relative {
   \time 5/8
   do2 r8 | r4 \acciaccatura fa16 re4. |
   \time 2/4
-  la2 |
+  la!2 |
   \time 5/8 R1*5/8
   \time 2/4 R2
   \time 5/8 R1*5/8
