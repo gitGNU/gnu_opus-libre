@@ -18,6 +18,33 @@ pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
 
+#(define (make-dynamic-extra dynamic string)
+     (make-music
+       'AbsoluteDynamicEvent
+       'tweaks
+         ;; calculate centering for text
+         (list (cons (quote X-offset)
+           (+ -0.5 (* -0.5 (string-length dynamic)))))
+       'text
+         (markup
+           #:line (
+               dynamic
+               #:hspace -0.3
+               #:normal-text #:italic string))
+      ))
+ppptresclair = #(make-dynamic-extra "ppp" "très clair")
+
+\layout {
+  \context {
+    \Voice
+    \remove Arpeggio_engraver
+  }
+  \context {
+    \Staff
+    \consists Arpeggio_engraver
+  }
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Music Inclusion %%%%%%%%%%%%%%%%%%%%%%%%%%
 
