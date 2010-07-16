@@ -14,6 +14,14 @@ t =
 #(define-music-function (parser location music) (ly:music?)
 #{ \times 2/3 $music #})
 
+tt =
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 4/5 $music #})
+
+ttt =
+#(define-music-function (parser location music) (ly:music?)
+#{ \times 4/6 $music #})
+
 pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
@@ -64,8 +72,8 @@ ppptresclair = #(make-dynamic-extra "ppp" "très clair")
       \new Staff \new Voice = "soprano" \UnSoprano
       \new Lyrics \lyricsto "soprano" \UnTexte
       \new PianoStaff <<
-        \new Staff \UnPianoMd
-        \new Staff \UnPianoMg
+        \new Staff = "md" \UnPianoMd
+        \new Staff = "mg" \UnPianoMg
       >>
     >>
     \header {
@@ -77,8 +85,8 @@ ppptresclair = #(make-dynamic-extra "ppp" "très clair")
       \new Staff \new Voice = "soprano" \DeuxSoprano
       \new Lyrics \lyricsto "soprano" \DeuxTexte
       \new PianoStaff <<
-        \new Staff \DeuxPianoMd
-        \new Staff \DeuxPianoMg
+        \new Staff = "md" \DeuxPianoMd
+        \new Staff = "mg" \DeuxPianoMg
       >>
     >>
     \header {
@@ -90,8 +98,8 @@ ppptresclair = #(make-dynamic-extra "ppp" "très clair")
       \new Staff \new Voice = "soprano" \TroisSoprano
       \new Lyrics \lyricsto "soprano" \TroisTexte
       \new PianoStaff <<
-        \new Staff \TroisPianoMd
-        \new Staff \TroisPianoMg
+        \new Staff = "md" \TroisPianoMd
+        \new Staff = "mg" \TroisPianoMg
       >>
     >>
     \header {
