@@ -26,6 +26,16 @@ pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
 
+dash = {
+  \once \override LyricHyphen #'minimum-distance = #4
+  \once \override LyricHyphen #'length = #2
+  \once \override LyricHyphen #'thickness = #1.2
+}
+
+leftSyl = {
+  \once \override LyricText #'self-alignment-X = #0.9
+}
+
 #(define (make-dynamic-extra dynamic string)
      (make-music
        'AbsoluteDynamicEvent
@@ -67,19 +77,19 @@ ppptresclair = #(make-dynamic-extra "ppp" "très clair")
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Score %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
-  \score {
-    <<
-      \new Staff \new Voice = "soprano" \UnSoprano
-      \new Lyrics \lyricsto "soprano" \UnTexte
-      \new PianoStaff <<
-        \new Staff = "md" \UnPianoMd
-        \new Staff = "mg" \UnPianoMg
-      >>
-    >>
-    \header {
-      piece = "I"
-    }
-  }
+%   \score {
+%     <<
+%       \new Staff \new Voice = "soprano" \UnSoprano
+%       \new Lyrics \lyricsto "soprano" \UnTexte
+%       \new PianoStaff <<
+%         \new Staff = "md" \UnPianoMd
+%         \new Staff = "mg" \UnPianoMg
+%       >>
+%     >>
+%     \header {
+%       piece = "I"
+%     }
+%   }
   \score {
     <<
       \new Staff \new Voice = "soprano" \DeuxSoprano

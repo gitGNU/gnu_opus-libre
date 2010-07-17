@@ -24,7 +24,19 @@ UnTexte = \lyricmode {
 }
 
 DeuxTexte = \lyricmode {
-  
+  \set ignoreMelismata = ##t
+  Fuir, comme un \dash pur -- sang au crin de feu_;
+  fuir, fuir, __ _
+  %%FIXME: issue #773
+  a -- _ veu -- _ _ \leftSyl gle_et __ _ fou,
+  dans la fo -- rêt dé -- funte.
+  Et em -- bra -- ser __ _ les feu -- illes
+  ju -- squ'au sang_;
+  qu'il cou -- le, en -- cre pou -- rpre,
+  ju -- squ'au ciel_;
+  qu'il noie les é -- toiles __ _ _ _ _ _ _ _
+  Ces __ _ di -- a -- mants pe -- _ rdus __ _ _ _ _ _
+  Se -- mence poi -- vrée des Dieux. __ _ _
 }
 
 TroisTexte = \lyricmode {

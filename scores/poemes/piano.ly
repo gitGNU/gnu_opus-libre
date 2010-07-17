@@ -129,11 +129,183 @@ UnPianoMg = \relative {
 %-----------------------------    II   ----------------------------%
 
 DeuxPianoMd = \relative {
+  \pl {
+    s8 s16 <sib' mi> s <mi la> s <mi la>
+    s <sib mi> s <sib mi> s <mi la> s <mi la>
+    s <sib mi> s <sib mi> s <mi la> s <mi la>
+    s <sib mi> s <sib mi> s <mi la> s <mi la>
+    s <sib mi> s <sib mi> s <mi la> s <mi la>
+  }
+  {
+    <mi fa sib mi>8 <sib' mi>16 mi,
+    <fa sib> la <fa sib> la
+    <sib mi> mi, <sib' mi> mi,
+    <fa sib> la <fa sib> la
+    <sib mi> mi, <sib' mi> mi,
+    <fa sib> la <fa sib> la
+    <sib mi> mi, <sib' mi> mi,
+    <fa sib> la <fa sib> la
+    <sib mi> mi, <sib' mi> mi,
+    <fa sib> la <fa sib> la
+  }
+  <sib mi> la <sib mi> la
+  <sib mi> <mi, fa> <sib' mi> <mi, fa>
+  <sib' mi> la <sib mi> la
+  <sib mi> <mi, fa> <sib' mi> <mi, fa> |
+  \pl
+  {
+    s4 <lab, do re sol>8 s s4 <lab do re sol>8 s
+     %%FIXME: Issue #984
+    s <lab do re sol> s16 <mi lad dod>8 s16
+    s8 <lab do re sol> s16 <mi lad dod>8 s16
+    s8 <lab do re sol> s16 <mi lad dod>8 s16
+  }
+  {
+    <mi'' si'!> sib <sib mi> fa
+    sol fa <sib mi> mi
+    <mi si'!> sib <sib mi> fa
+    sol fa <sib mi> mi |
+    <mi si'!> sib sol <sib mi>
+    %%FIXME: Issue #984
+    fa red <re'! sol> la
+    <mi' si'!> sib sol <sib mi>
+    fa red <re'! sol> la
+    <mi' si'!> sib sol <sib mi>
+    fa red <re sol> la |
+  }
+  \pl
+  {
+    s <lab, re> s <lab reb> s <la do> s <fa la>
+    s <fa lab> s q s <fa la> s q
+    s <fa lab> s q s <fa la> s q
+    s <fa lab> s q s <fa la> s q
+    s fa s fa s lab s lab s fa s fa s la s la
+  }
+  {
+    <mib' lab> re <mib lab> reb
+    <re lab'> do <re lab'> la
+    <mib' lab> lab, <mib' lab> lab,
+    <re lab'> la <re lab'> la
+    <re sol> lab <re sol> lab
+    <dod sol'> la <dod sol'> la
+    <re sol> fa, <re' sol> fa,
+    <dod' sol'> lab <dod sol'> lab
+    <re sol> fa, <re' sol> fa,
+    <dod' sol'> la <dod sol'> la
+  }
+  solb' reb solb reb do reb do reb
+  solb reb solb reb do reb do reb
+  solb reb solb reb \t {do8 reb si}
+  <lab do mib sol>2.*5/3\laissezVibrer R1*5/4
+  \clef bass
+  mi,4. fa8 sol sib4.~ sib1~ sib |
+  mi,4. fa8 sol \pl lad4. { si!4 do8 }
+  <re, re'>4. \acciaccatura <mib'' fad>16 <fa,! re'>8~
+  <fa re'>2~ <fa re'>1 |
+  <mib fad re'> <re? fad dod'> <re sol dod>2 |
+  <mib la? re>4 q2 q2. <solb mib' fa>4 q2 q2. |
+  \clef treble
+  <fa do'? solb'>4 q2 <do'? solb' si>2 <fa, do' solb'>4 |
+  <la! mib' lab>4 q2 <mib' lab mi'!>2 <la,! mib' lab>4~
+  q <fa'! la! mi'!>2 q4 q q <do re fad sib> <re fa sib re>2 |
   
+  <re'' sol>16 la <re sol> la <sol dod> mi <sol dod> mi
+  \pl
+  {
+    <dod, fad sol si>4 <sol' si dod mi>
+    <dod, fad sol si> <sol' si dod mi>
+    <dod, fad sol si> <sol' si dod mi>
+    <dod, fad sol si> <sol' si dod mi>
+    <dod, fad sol si>2
+  }
+  {
+    <re'' sol>16 la <re sol> la
+    <sol dod> mi <sol dod> mi
+    <re' sol> la <re sol> la
+    <sol dod> mi <sol dod> mi
+    <re' sol> la <re sol> la
+    <sol dod> mi <sol dod> mi
+    <re' sol> la <re sol> la
+    <sol dod> mi <sol dod> mi
+    <re' sol> la <re sol> la
+    <sol dod> mi <sol dod> mi
+  }
+    <re' sol> la <re sol> la dod la dod la
+    \pl
+    {
+      s4 <fa, sol sib reb>
+      <do reb sol sib> <fa sol sib reb>
+      <do reb sol sib> <fa sol sib reb>
+      <do reb sol sib> <fa sol sib reb>
+      <do reb sol sib> sol' fa do
+      sol4*2
+    }
+    {
+      <sol'' reb'>16 lab sol mib reb mib sol lab
+      <sol reb'> lab sol mib reb mib sol lab
+      <sol reb'> lab sol mib reb mib sol lab
+      <sol reb'> lab sol mib reb mib sol lab
+      <sol reb'> lab sol mib lab sol mib reb
+      mib reb sib fa sol fa reb do
+      fa re! dob sib \change Staff = "mg" lab mi si lab
+    }
+    r2 R1*2
+    <sol' lab sib reb>1~ q |
+    <fa sol sib>~ q~ q~ q |
+    \change Staff = "mg"
+    \set tieWaitForNote = ##t
+    reb,4~ lab'~ \change Staff = "md"
+    \t { solb' la!~ \change Staff = "mg"
+    re,!~ \change Staff = "md" }
+    fa'2~ \change Staff = "mg"
+    do,,,2~ \change Staff = "md"
+    mi''''1*1/16\fermata \laissezVibrer
+    \hideNotes fa, la, \change Staff = "mg"
+    re, lab reb, do, s s2
 }
 
 DeuxPianoMg = \relative {
+  \clef bass
+  <sol,, sol'>2*4\laissezVibrer
+  r2 r4 <sol sol'>4. <lab lab'>4 <sib sib'>8 |
+  <reb reb'>2*5\laissezVibrer
+  R1*3
+  fa'8 lab fa la fa lab fa la fa lab fa r |
+  <mi,, mi'>4 q1 q4 q1 |
+  \ottava #-1
+  \pl
+  {
+    mi4. fa8 sol sib4.~ sib1~ sib1
+    mi,4. fa8 sol lad4.
+    <mi mi'>4 mi2. mi4 mi2. mi4 <mi mi'>2.
+    %%FIXME: issue #1110
+    <mi red'>4 <mi red'>2 <mi red'>4
+  }
+  {
+    mi4 <mi mi'>2.
+    <mi mi'>4 <mi mi'>2.
+    <mi mi'>4 <mi mi'>2.
+    mi4 <mi mi'>2. s4 s8 fa'~ fa2~ fa1~ fa1
+    fa?1
+  }
+  fa,2 <sol mi'? lab>4 q2 q2~ q8 <do, lab'>
+  \ottava #0
+  <dod' sol'? re'>4 q2 q
+  \ottava #-1
+  dod,4
+  \ottava #0
+  <re' mi dod'>4 q2 <mi dod' fa>2 <re mi dod>4 |
+  <dod sib' re>4 q2 q q4~ q <sol'! fad' sold>2 |
+  q4 q q <re dod'> <re lad' si fad' sold>2\arpeggio
   
+  <sol, sol'>1~ q~ q \t {<dod dod'>4 <re re'> <mi mi'>} |
+  <sol sol'>1~ q~ q r4 s
+  sol'16 fa re sib lab mi si! lab |
+  \pl { sol4 sol2. sol4 sol2. } { lab'1~ lab } |
+  <sol, sol'>4 q2. q4 q2.
+  <mi mi'>4 q2. q4 q2.
+  <re re'>4 q2. q1 |
+  s1*3
 }
 
 %-----------------------------   III   ----------------------------%

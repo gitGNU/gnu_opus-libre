@@ -53,7 +53,7 @@ UnSoprano = \relative {
   lab4 \t {r8 fad si!~} si4~ |
   si \t {lab mib fa!} |
   \time 5/8
-  do2 r8 | r4 \acciaccatura fa16 re4. |
+  do2 r8 | r4 \grace fa16 re4. |
   \time 2/4
   la!2 |
   \time 5/8 R1*5/8
@@ -66,7 +66,46 @@ UnSoprano = \relative {
 }
 
 DeuxSoprano = \relative {
-  
+  \tempo "Presto agitato"
+  \time 2/2
+  \grace sol'16 sol'2. sol4 |
+  sol sol sol8 sol sol sol |
+  \time 3/2
+  sol2. r4 r fa |
+  \time 2/2
+  r8 \grace sib,16 sib'8~ sib2. |
+  \time 3/2
+  r4 re,~ re16 mi sold,4.~ sold8 dod4 sib8 | \break
+  \time 2/2
+  sol'2. r4 | r2 si,! si si |
+  \time 3/2
+  si2. si
+  \bar "||"
+  \time 5/4
+  si r2 | R1*5/4
+  \time 2/2
+  R1*6
+  r2 r8 sol4. |
+  \grace lab16 sol4. sol \grace la16 sol4~ |
+  \time 2/4
+  sol sol |
+  \time 3/4
+  sib2 solb4 | r fa lab | mi'2 r4 |
+  r2 mib4 | sol2 re4 | r dod mi | sol2 re4 |
+  r si fa' | sib2. | r2 mi,4 | lab4. re,8 sol4 |
+  \time 2/2
+  \grace sol16 dod1~ |
+  \t {dod4 sib do} \t {sol sib fa} |
+  \time 3/2
+  mi2. r4 r2 |
+  \time 2/2
+  R1 r4 reb~ reb16 sol mib4. |
+  \t {do2 reb sol} |
+  do,4.~ sib8~ \t {sib4 reb lab} |
+  sib2 r r r8 sib4. | fa4 r r2 |
+  r r8 sol4. | re4 r r2 | R1*2
+  r2 reb \grace do16 do'1~ do~ do4 r r2\fermata
+  \bar "|."
 }
 
 TroisSoprano = \relative {
