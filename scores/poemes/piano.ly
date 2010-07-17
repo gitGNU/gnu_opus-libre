@@ -39,7 +39,7 @@ UnPianoMd = \relative {
   \ttt {<sold' si> mi si <sold' si> mi si}
   \ttt {<sold' si> mi si mi sold si}
   \ttt {<la do> fa do fa do' do} |
-  \pl {r4 r8 <do la'> fa, do} <fa' la do>2. |
+  \pl {r4 r8 <do la'> fa, do} <fa' la? do>2. |
   <reb, sol>8 do <reb sol> do
   <reb sol> do <reb sol> do |
   <mib sol> do <mib sol> do
@@ -77,7 +77,7 @@ UnPianoMg = \relative {
   r4 | <mi,,, mi'>2\laissezVibrer s2. s2
   <mi mi'>2.\laissezVibrer s2 |
   mi2*2\laissezVibrer s1
-  sol8 sol' \t {sol' sol, sol}
+  sol!8 sol' \t {sol' sol, sol}
   sol, sol' \t {fad' sol, sol} |
   \pl { sol,2 sol' sol si si si sol! sol
   <sol, sol'> sib' <sol, sol'> si'! }
@@ -311,9 +311,82 @@ DeuxPianoMg = \relative {
 %-----------------------------   III   ----------------------------%
 
 TroisPianoMd = \relative {
-  
+  mi4 mi2 mi4 |
+  <mi sol> q2 q4 |
+  <reb solb> <do fa>2 q4 |
+  r4 r8 <la' re>~ q2 |
+  <si, mi>8 <la' re> <si, mi> <la' re>~ q2 |
+  <si, mi>8 <la' re> <si, mi> <la' re>~ q2 |
+  \pl
+  {
+    \hideNotes s4 <si, mi> ~ \unHideNotes <si mi>
+    \hideNotes s <si mi> ~ \unHideNotes <si mi>
+    \hideNotes s <do fa> ~ \unHideNotes <do fa>
+    \hideNotes s <do fa> ~ \unHideNotes <do fa>
+    \hideNotes s <mi la> ~ \unHideNotes <mi la>
+    \hideNotes s <mi la> ~ \unHideNotes <mi la>
+    \hideNotes s <reb solb> ~ \unHideNotes <reb solb>
+    \hideNotes <do fa>8 ~ \unHideNotes <do fa>4
+  }
+  {
+    <si mi>8 <la' re> <si, mi> <la' re>~ <la re>4
+    <si, mi>8 <la' re> <si, mi> <la' re>~ <la re>4
+    <do, fa>8 <si' mi> <do, fa> <si' mi>~ <si mi>4
+    <do, fa>8 <si' mi> <do, fa> <si' mi>~ <si mi>4
+    <mi, la>8 <re' sol> <mi, la> <re' sol>~ <re sol>4
+    <mi, la>8 <re' sol> <mi, la> <re' sol>~ <re sol>4
+    <reb, solb sib>8 <mib' lab> <reb, solb> <sib' mib lab>~ <sib mib lab>4
+    <do, fa>8 <sib' mib lab>4
+  }
+  r8 <fad, si!> r q r q r q r q r q |
+  r <fad do' fa!> r q r q r q |
+  r <sol? do? fad> r q r q r q r q |
+  r <sol! reb' solb> r q r q |
+  r8 <la! re! mi!>4 mi'8 fa fa |
+  \pl
+  {
+    r8 <fa, do'> r <fa do'>~ <fa do'>4 s s1
+    \voiceOne r2 r4 r8 <si' mi la>~ <si mi la>2
+  }
+  {
+    sol2. \oneVoice <fa, do' sol'>4 <do' fa si>1~
+    \voiceTwo <do fa si>~ <do fa>2
+  }
+  r2\fermata 
 }
 
 TroisPianoMg = \relative {
-  
+  \clef bass
+  R1*3 \pl fad,1 {r4 <si mi>2.}
+  R1*2 R2.*2
+  <re, sol>2. q
+  \pl { <do fa> <do fa> <sib mib>}
+  { si'4 si2 si4 si2 lab4 lab2 }
+  <sib, mib lab>4. |
+
+  re,8 <sol do> re <sol do> |
+  re <sol do> re <sol do> |
+  re <sol do> re <sol do> |
+  re <sol dod> re <sol dod> |
+  re <sol dod> re <sol dod> |
+  re <sold dod> re <sold dod> re <sold dod> |
+  re <sold dod> re <sold dod> |
+  mib <lab re?> mib <lab re> mib <lab re> |
+  \pl
+  { s4 \hideNotes mi~ \unHideNotes mi }
+  { mi!8 <lad red> mi <lad red>~ <lad red>4 }
+  \set tieWaitForNote = ##t
+  mi8 si' mi,~ si'~ <mi, si'>4 si' |
+  \pl
+  {
+    \set tieWaitForNote = ##t
+    s4 \hideNotes <mi, la>~ \unHideNotes <mi la>2
+    \hideNotes mi8~ la~ \unHideNotes <mi la>2.~ <mi la>2
+  }
+  {
+    \set tieWaitForNote = ##t
+    <mi la>8 <re' sol> <mi, la> <re' sol>~ <re sol>2
+    <mi, re'>8~ <la sol'>~ <re sol>2.~ <re sol>2
+  }
+  r2\fermata
 }

@@ -40,5 +40,18 @@ DeuxTexte = \lyricmode {
 }
 
 TroisTexte = \lyricmode {
-  
+  \set ignoreMelismata = ##t
+  J'ai re -- spi -- ré ton âme
+  dans un bai -- ser, u -- ne la -- rme.
+  Et j'ai vu, dé -- sa -- rmée,
+  ton re -- gard va -- ci -- ller, __ _
+  tes pau -- piè -- res se clo -- re
+  en un __ _ trou -- blant my -- stè -- re
+  qui file et puis fri -- sso -- nne.
+  J'ai sen -- ti sous
+  l'é -- to -- ffe des sou -- pirs
+  m'e -- ffleu -- rer co -- mme brai -- ses
+  des pa -- pi -- llons fu -- rtifs
+  qui pa -- lpi -- taient si las
+  sur mon corps in -- ca -- rné sous tes doigts.
 }

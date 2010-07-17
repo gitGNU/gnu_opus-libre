@@ -72,24 +72,29 @@ ppptresclair = #(make-dynamic-extra "ppp" "très clair")
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Titling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\header {
+  title = "Trois poèmes d'Edwige Hudson"
+  composer = "Valentin Villenave"
+  arranger = "2004"
+  tagline = "Partition éditée avec le logiciel libre GNU LilyPond"
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Score %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
-%   \score {
-%     <<
-%       \new Staff \new Voice = "soprano" \UnSoprano
-%       \new Lyrics \lyricsto "soprano" \UnTexte
-%       \new PianoStaff <<
-%         \new Staff = "md" \UnPianoMd
-%         \new Staff = "mg" \UnPianoMg
-%       >>
-%     >>
-%     \header {
-%       piece = "I"
-%     }
-%   }
+  \score {
+    <<
+      \new Staff \new Voice = "soprano" \UnSoprano
+      \new Lyrics \lyricsto "soprano" \UnTexte
+      \new PianoStaff <<
+        \new Staff = "md" \UnPianoMd
+        \new Staff = "mg" \UnPianoMg
+      >>
+    >>
+    \header {
+      piece = "I"
+    }
+  }
   \score {
     <<
       \new Staff \new Voice = "soprano" \DeuxSoprano

@@ -66,7 +66,7 @@ UnSoprano = \relative {
 }
 
 DeuxSoprano = \relative {
-  \tempo "Presto agitato"
+  \tempo "Presto agitato" 4 = 132
   \time 2/2
   \grace sol'16 sol'2. sol4 |
   sol sol sol8 sol sol sol |
@@ -109,5 +109,42 @@ DeuxSoprano = \relative {
 }
 
 TroisSoprano = \relative {
-  
+  \tempo "Andantino" 4 = 66
+  r4 mi mi8 mi fa fa |
+  sol4 r r8 sol sib sib |
+  solb4 fa8 fa la4 mib8 r |
+  R1
+  r2 r4 lab8 lab |
+  sol4 si8 si sib4 lab8 lab |
+  \time 3/4
+  \t { sol4 mib' << \voiceOne sib'
+  \new CueVoice \with { \override Stem #'direction = #DOWN }
+  \parenthesize fad >> } \oneVoice re~ |
+  re r r8 re |
+  mi! mi sol, sol la! la |
+  r4 r8 la4 lab8~ |
+  lab do do si mi fa, |
+  r si sib4 r8 re |
+  reb solb lab do, r4 |
+  \time 3/8 R4.
+  \bar "||"
+  \time 2/4
+  R2
+  r8 mi,16 mi red8 sol16 sol |
+  fad fad mi red fad4 |
+  r4 r8 fa!16 mi |
+  lab8 sol16 sol si8 sib |
+  \time 3/4
+  r4 r8 fa reb' fa |
+  \time 2/4
+  do sol sol4 |
+  \time 3/4
+  r r8 lab mib' sib' |
+  re,!4 r mi! |
+  \time 4/4
+  si! r si do |
+  sol2 r |
+  mi4 mi8 mi fa fa sol4
+  R1-\fermataMarkup
+  \bar "|."
 }
