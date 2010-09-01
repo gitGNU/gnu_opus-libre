@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Global library
+Name[fr]=Bibliothèque globale
+
+Comment=General Scheme functions
+Comment[fr]=Fonctions Scheme générales
+
+Icon=
+Type=Directory
+Path=lib/
+Encoding=UTF-8

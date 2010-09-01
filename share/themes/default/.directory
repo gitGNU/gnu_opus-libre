@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Default theme
+Name[fr]=Thème par défaut
+
+Comment=Default graphic theme
+Comment[fr]=Thème graphique par défaut
+
+Icon=
+Type=Directory
+Path=share/themes/default/
+Encoding=UTF-8

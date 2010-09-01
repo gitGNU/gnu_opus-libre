@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Localization
+Name[fr]=Localisation
+
+Comment=Language-specific data, for both entry and output
+Comment[fr]=Fichiers de langues, pour la saisie et le rendu
+
+Icon=
+Type=Directory
+Path=locale/
+Encoding=UTF-8

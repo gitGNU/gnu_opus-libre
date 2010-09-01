@@ -39,8 +39,6 @@ theme = "default"
 
 %% Automatic functions inclusion, do not edit ---------------------%
 \include "lib/include.ly"
-#(display include-ly-string)
-#(ly:parser-parse-string parser include-ly-string)
 %#(ly:parser-parse-string (ly:parser-clone parser) include-ly-string)
 %% Select edition or instrument -----------------------------------%
 

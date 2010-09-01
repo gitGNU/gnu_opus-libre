@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Graphics
+Name[fr]=Ressources graphiques
+
+Comment=Pictures and graphic objects
+Comment[fr]=Images et objets graphiques
+
+Icon=
+Type=Directory
+Path=share/images/
+Encoding=UTF-8

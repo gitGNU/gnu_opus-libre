@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- common.scm                                         ;
+; opus_libre -- lang.scm                                           ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -9,16 +9,18 @@
 ;                                                                  ;
 ;------------------------------------------------------------------;
 
-; Common functions (this file has to be loaded first).
+; Language selection.
+(let* ((input-language
+        (if (is-defined? 'input)
+         (ly:parser-lookup parser 'input)
+         default-language))
+       (input-language-file
+        (string-append locale-dir "/" input-language ".ly")))
+ (if (string? (ly:find-file input-language-file))
+  (set! include-ly-string
+   (string-append "\\include \"" input-language-file "\""
+    include-ly-string))
+  (ly:warning "Language file not found: ~a."
+   input-language-file)))
 
 
-;; Scheme shortcuts
-(define (is-defined? sym) (string? (ly:parser-lookup parser sym)))
-(define (exists? loc) (access? loc F_OK))
-(define (not-null? x) (not (null? x)))
-
-;; Simple define-music-function shortcuts
-(defmacro make-simple-function (sym expr)
- `(define-public ,sym
-   (define-music-function (parser location x) (ly:music?)
-    ,expr)))

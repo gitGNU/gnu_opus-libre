@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Global Settings
+Name[fr]=Réglages globaux
+
+Comment=Default and score-independent settings
+Comment[fr]=Réglages communs à tous types de partitions
+
+Icon=
+Type=Directory
+Path=etc/
+Encoding=UTF-8
