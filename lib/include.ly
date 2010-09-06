@@ -14,29 +14,24 @@
 
 %% FIXME: relative includes don't work in Scheme -- Issue 1078.
 #(ly:set-option 'relative-includes #f)
+%#(ly:set-option 'debug-messages #t)
+%#(ly:set-option 'ignore-output-dir)
+%#(ly:set-option 'use-variable-names #t)
+%#(ly:set-option 'allow-suffixless-varnames #t)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Base includes %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Default function set -------------------------------------------%
-\include "etc/ly.conf"
-
 %% Base libraries -------------------------------------------------%
 
-#(let* ((lib (if (string? libDir) libDir "lib"))
-       (files '(
-                "fstree"
-                "conf"
-                )))
- (map (lambda (x)
-       (let* ((path (string-append lib "/" x ".scm")))
-        (begin (load path)
-         (ly:message "Loading ~a..." path))))
-  files))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Load libraries %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
+#(load "lib/init.scm")
+#(include-scm conf:lib-dir #t)
+%#(display conf:locale-dir)
+%#(load "lib/toto.scm")
+#(include-ly score-dir)
 %%%%%%%%%%%%%%%%%%%%%% Define music-functions %%%%%%%%%%%%%%%%%%%%%%
 
 %% Required by main.ly --------------------------------------------%
@@ -53,6 +48,23 @@
 % make =
 % #(define-music-function (parser location dir) (string?)
 %   (use-score-dir dir))
+
+% #(define (exists? loc) (access? loc F_OK))
+%
+% #(define (load-lib dir file)
+%   (let* ((path (string-append dir "/" file ".scm")))
+%    (if (exists? path)
+%      (begin (load path)
+%        (if debug-messages (ly:message "Loading ~a..." path)))
+%      (if debug-messages (ly:message "File not found: ~a" path)))))
+%
+% #(let* ((files '(
+%   "score"
+%   "fstree"
+%   "readconf"
+%   "")))
+%   (map (lambda (x) (load-lib conf:lib-dir x))
+%        files))
 
 
 %------------------------------------------------------------------%

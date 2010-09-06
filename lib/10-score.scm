@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- score.scm                                          ;
+; opus_libre -- 10-score.scm                                       ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -11,17 +11,25 @@
 
 ; Score assembly.
 
-
 ;; Browsing scores sub-directory
+(define score-dir #f)
+(define conf:scores-dir "scores")
+(define conf:default-score "etc/blank")
+
+(define-public (is-defined? sym)
+ (string? (ly:parser-lookup parser sym)))
+
+(define-public (exists? loc) (access? loc F_OK))
+
 (if (is-defined? 'scores)
- (let* ((score-subdir (ly:parser-lookup parser 'scores))
-        (full-dir
-         (string-append scores-dir "/" score-subdir)))
-  (if (exists? full-dir) (include-ly full-dir)
-   (begin (ly:warning "Score directory not found: ~a.
+    (let* ((score-subdir (ly:parser-lookup parser 'scores))
+           (full-dir
+            (string-append conf:scores-dir "/" score-subdir)))
+      (if (exists? full-dir) (set! score-dir full-dir)
+          (begin (ly:warning "Score directory not found: ~a.
 A blank score will be created instead."
-     full-dir)
-    (include-ly default-score))))
- (begin (ly:warning "Score directory not defined!
+                             full-dir)
+                 (set! score-dir conf:default-score))))
+    (begin (ly:warning "Score directory not defined!
 A blank score will be created instead.")
-  (include-ly default-score)))
+           (set! score-dir conf:default-score)))

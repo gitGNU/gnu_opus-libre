@@ -1,0 +1,5 @@
+<<
+  \newStaff $"" $"voiceOne"
+  \newLyrics $"" $"voiceOne" $numbers
+  \newStaff $"" $"voiceTwo"
+>>

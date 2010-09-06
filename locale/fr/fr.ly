@@ -18,15 +18,4 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Numbers %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-#(define numbers #(
-    "un"
-    "deux"
-    "trois"
-    "quatre"
-    "cinq"
-    "six"
-    "sept"
-    "huit"
-    "neuf"
-    "dix"
-    ))
+#(define numbers '("un" "deux" "trois" "quatre"))

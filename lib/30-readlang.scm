@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- lang.scm                                           ;
+; opus_libre -- 30-readlang.scm                                    ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -10,17 +10,20 @@
 ;------------------------------------------------------------------;
 
 ; Language selection.
+
+
 (let* ((input-language
         (if (is-defined? 'input)
-         (ly:parser-lookup parser 'input)
-         default-language))
+            (ly:parser-lookup parser 'input)
+            default-language))
        (input-language-file
-        (string-append locale-dir "/" input-language ".ly")))
- (if (string? (ly:find-file input-language-file))
-  (set! include-ly-string
-   (string-append "\\include \"" input-language-file "\""
-    include-ly-string))
-  (ly:warning "Language file not found: ~a."
-   input-language-file)))
+        (string-append conf:locale-dir "/" input-language ".conf")))
+  (if (exists? input-language-file)
+      (begin
+        (if (ly:get-option 'debug-messages)
+            (ly:message "Loading language file ~a..." input-language-file))
+        (parse-def-file input-language-file))
+      (ly:warning "Language file not found: ~a."
+                  input-language-file)))
 
-
+;; TODO add local score-level language files

@@ -7,5 +7,5 @@ Comment[fr]=Macros pour faciliter la saisie de code LilyPond
 
 Icon=
 Type=Directory
-Path=bin/
+Path=bin
 Encoding=UTF-8

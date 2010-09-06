@@ -7,5 +7,5 @@ Comment[fr]=Toutes sortes de réglages peuvent être ajoutés ici
 
 Icon=
 Type=Directory
-Path=etc/ly.d/
+Path=etc/ly.conf.d/
 Encoding=UTF-8
