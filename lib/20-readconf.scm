@@ -12,9 +12,9 @@
 ; Load configuration files and set variables.
 
 (define conf:conf-prefix "conf")
-(define conf:local-conf-dir #f)
+(define conf:conf-file "etc/ly.conf")
 
-(define (parse-lines-in port)
+(define (parse-lines-in port prefix)
   "Read a file line by line and look for defs."
   (let ((line (read-line port)))
     (if (string? line)
@@ -26,57 +26,56 @@
             (if (not (boolean? eq))
                 (let* ((var (string-take line (- eq 1)))
                        (val (string-drop line (+ eq 1)))
-          ;; LilyPond variables are camelCased instead of hyphen-ated
+                       ;; LilyPond variables are camelCased instead of hyphen-ated
                        (lyvar (string->symbol
-                                (regexp-substitute/global #f "-[a-z]" var 'pre
-                                  (lambda (m)
-                                    (string-drop (string-upcase
-                                      (match:substring m)) 1)) 'post))))
-                   (set! var (string-append
-                              (if (string? conf:conf-prefix)
-                                  (string-append conf:conf-prefix ":")
-                                  "") var))
-          ;; Native .ly definitions take precedence over .conf defs
-                   (if (is-defined? lyvar)
-                     (set! val (string-append "\""
-                        (ly:parser-lookup parser lyvar) "\"")))
-                   (eval-string
-                    (format #f "(define-public ~a ~a)" var val)))))
+                               (regexp-substitute/global #f "-[a-z]" var 'pre
+                                                         (lambda (m)
+                                                           (string-drop (string-upcase
+                                                                         (match:substring m)) 1)) 'post))))
+                  (if (not (string=? prefix ""))
+                      (set! var (string-append prefix ":" var)))
+                  ;; Native .ly definitions take precedence over .conf defs
+                  (if (is-defined? lyvar)
+                      (set! val (string-append "\""
+                                               (ly:parser-lookup parser lyvar) "\"")))
+                  (eval-string
+                   (format #f "(define-public ~a ~a)" var val)))))
           ;; then move on to the next line, until EOF.
-          (parse-lines-in port))
+          (parse-lines-in port prefix))
         (close-port port))))
 
-(define (parse-def-file file)
- "Read FILE and turn all definitions into Scheme values."
+(define (parse-def-file file prefix)
+  "Read FILE and turn all definitions into Scheme values."
   (let ((port (open-input-file file)))
     (if (ly:get-option 'debug-messages)
         (ly:message "Parsing configuration file ~a..." file))
-    (parse-lines-in port)))
+    (parse-lines-in port prefix)))
 
-(define (parse-def-dir dir)
+(define (parse-def-dir dir . prefix)
   "Parse all .conf files found in DIR."
   (let ((def-files (find-files dir ".conf$" #f)))
     (map (lambda (x)
-                 (parse-def-file x))
+           (parse-def-file x
+             (if (string? prefix) prefix
+               (string-drop-right
+                 (regexp-substitute/global #f "/+" x 'post)
+                  5))))
          def-files)))
 
-(define conf:conf-file "etc/ly.conf")
-(define conf:conf-dir "etc/ly.conf.d")
-
-(parse-def-file conf:conf-file)
-(parse-def-dir conf:conf-dir)
-
-(if (is-defined? 'conf:local-conf-dir)
-  (begin
-    (set! conf:local-conf-dir
-      (let ((usr-dir (string-append score-dir "/" conf:local-conf-dir)))
-        (if (exists? usr-dir)
-            (begin
-              (if (ly:get-option 'debug-messages)
-                  (ly:message "Local configuration dir found in ~a" usr-dir))
-              usr-dir)
-            (begin
-              (if (ly:get-option 'debug-messages)
-                  (ly:message "No local overrides found: ~a does not exist." usr-dir))
-            #f))))
-     (parse-def-dir conf:conf-dir)))
+(define eval-conf
+  (let ((usr-conf (if (is-defined? 'conf:local-conf-dir)
+                      (let ((usr-dir (string-append score-dir "/" conf:local-conf-dir)))
+                        (if (exists? usr-dir)
+                            (begin
+                              (if (ly:get-option 'debug-messages)
+                                  (ly:message "Local configuration dir found in ~a" usr-dir))
+                              usr-dir)
+                            (begin
+                              (if (ly:get-option 'debug-messages)
+                                  (ly:message "No local overrides found: ~a does not exist." usr-dir))
+                              score-dir)))
+                      score-dir)))
+  (parse-def-file conf:conf-file conf:conf-prefix)
+  (parse-def-dir conf:conf-dir)
+  (set! conf:local-conf-dir usr-conf)
+  (parse-def-dir conf:local-conf-dir conf:conf-prefix)))

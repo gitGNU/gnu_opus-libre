@@ -11,9 +11,10 @@
 
 ; Init file: mandatory variables and functions.
 
-
 (use-modules
+ ;; regexp-substitute
  (ice-9 regex)
+ ;; read-line
  (ice-9 rdelim))
 
 ;; Base variables initialization ----------------------------------;

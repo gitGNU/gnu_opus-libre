@@ -1,5 +1,5 @@
 <<
-  \newStaff $"" $"voiceOne"
-  \newLyrics $"" $"voiceOne" $numbers
-  \newStaff $"" $"voiceTwo"
+  \newStaff $"v1"
+  \newLyrics $"v1"
+  \newStaff $"v2"
 >>

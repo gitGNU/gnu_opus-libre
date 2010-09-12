@@ -10,7 +10,7 @@
 %------------------------------------------------------------------%
 
 % Entry point for scores compilation.
-\version "2.13.31"
+\version "2.13.32"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,6 +34,7 @@ skel = "song"
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
+structure = #'("" "scene")
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Main include %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -45,9 +46,8 @@ theme = "default"
 % (e.g. "fullscore", "pianoscore" or any instrument name)
 %\make #"all"
 % { c }
+%\bookOutputName #"toto"
 
-numbers = #'("one" "two" "three")
-
-\make #'("toto")
+\make #"all"
 
 %%-----------------------------------------------------------------%

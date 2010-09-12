@@ -12,24 +12,24 @@
 ; Score assembly.
 
 ;; Browsing scores sub-directory
-(define score-dir #f)
 (define conf:scores-dir "scores")
 (define conf:default-score "etc/blank")
 
 (define-public (is-defined? sym)
- (string? (ly:parser-lookup parser sym)))
+  (string? (ly:parser-lookup parser sym)))
 
 (define-public (exists? loc) (access? loc F_OK))
 
-(if (is-defined? 'scores)
-    (let* ((score-subdir (ly:parser-lookup parser 'scores))
-           (full-dir
-            (string-append conf:scores-dir "/" score-subdir)))
-      (if (exists? full-dir) (set! score-dir full-dir)
-          (begin (ly:warning "Score directory not found: ~a.
-A blank score will be created instead."
-                             full-dir)
-                 (set! score-dir conf:default-score))))
-    (begin (ly:warning "Score directory not defined!
+(define score-dir
+  (if (is-defined? 'scores)
+      (let* ((score-subdir (ly:parser-lookup parser 'scores))
+             (full-dir
+               (string-append conf:scores-dir "/" score-subdir)))
+        (if (exists? full-dir)
+            full-dir
+            (begin (ly:warning "Score directory not found: ~a.
+A blank score will be created instead." full-dir)
+               conf:default-score)))
+  (begin (ly:warning "Score directory not defined!
 A blank score will be created instead.")
-           (set! score-dir conf:default-score)))
+     conf:default-score)))

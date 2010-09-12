@@ -7,5 +7,5 @@ Comment[fr]=Fichiers de langues, pour la saisie et le rendu
 
 Icon=
 Type=Directory
-Path=locale/
+Path=etc/locale/
 Encoding=UTF-8
