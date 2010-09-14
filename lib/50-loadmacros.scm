@@ -1,11 +1,12 @@
 
 (defmacro make-simple-function (token expr)
   (let* ((sym (if (is-defined? token)
-              (string->symbol (primitive-eval token))
-              token)))
+                  (string->symbol (primitive-eval token))
+                  token)))
     `(define-public ,sym
-      (define-music-function (parser location x) (ly:music?)
-    ,expr))))
+      (ly:make-music-function (list ly:music?)
+        (lambda (parser location x)
+    ,expr)))))
 
 (define eval-macros
   (map (lambda (x)
