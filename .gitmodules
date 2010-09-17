@@ -1,0 +1,3 @@
+[submodule "scores/opera"]
+	path = scores/opera
+	url = git://repo.or.cz/opera_libre.git
