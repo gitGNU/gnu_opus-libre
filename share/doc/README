@@ -1,0 +1,28 @@
+opus_libre is a framework for the GNU LilyPond music notation software.
+
+It originated with the Opera Libre project, a large music score that
+was written, published, performed and recorded using only Free Software.
+
+opus_libre is designed with portability in mind, to make it easier to
+create new scores as well as to integrate existing ones within the
+framework.  It should also eventually have support for graphic themes,
+input/edition languages choice, automatic scores inclusion using
+predefined skeletons, etc.
+
+LilyPond is a GNU Free software that is both powerful and simple to
+learn, and that you can download on http://www.lilypond.org.
+It runs on most modern Operating Systems, and has been
+ported for various architectures.
+
+More documentation will be added later; for now, you may learn more
+about LilyPond on its official website or on the community website
+http://www.lilynet.net.
+
+My own music is stored in various branches of the opus_libre.git
+project, and my Opera Libre project may be found on
+http://repo.or.cz/w/opera_libre.git, or on my personal website
+http://valentin.villenave.net.
+
+Please feel free to stop by and let me know about your thoughts!
+
+   - Valentin Villenave.
