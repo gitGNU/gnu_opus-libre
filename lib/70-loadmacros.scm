@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 80-includemusicvars.scm                            ;
+; opus_libre -- 70-loadmacros.scm                                  ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -11,13 +11,17 @@
 
 
 
-(define-public (include-ly dir)
-  "Include all LilyPond code found in DIR, recursively."
-  (let ((ly-files (find-files dir ".i?ly$" #t)))
-    (map (lambda (x)
-           (if (string-ci=? conf:local-ly-score
-                            (string-take-right x (string-length conf:local-ly-score)))
-               (if (ly:get-option 'debug-messages)
-                   (ly:message "Skipping local score file: ~a..." x))
-               (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
-         ly-files)))
+(defmacro make-simple-function (token expr)
+  (let* ((sym (if (is-defined? token)
+                  (string->symbol (primitive-eval token))
+                  token)))
+    `(define-public ,sym
+      (ly:make-music-function (list ly:music?)
+        (lambda (parser location x)
+    ,expr)))))
+
+(define eval-macros
+  (map (lambda (x)
+               ;; ugh.
+               (load (string-append "../" x)))
+       (find-files conf:macros-dir ".scm$")))
