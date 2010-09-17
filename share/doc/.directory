@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Documentation
+Name[fr]=Documentation
+
+Comment=Framework documentation and licensing
+Comment[fr]=Documentation du code et licence
+
+Icon=
+Type=Directory
+Path=share/doc
+Encoding=UTF-8
