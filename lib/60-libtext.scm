@@ -99,6 +99,11 @@
               currents current-is-lower)
         prev-result)))))))
 
+
+
+;; rounded-whiteout: this allows us to override
+;; the standard whiteout markup definition.
+
 (define-public (rounded-whiteout-stencil stencil blot)
   (let*
       ((x-ext (ly:stencil-extent stencil X))

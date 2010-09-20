@@ -8,83 +8,10 @@
 
 % Functions used for music notation.
 
-%%%%%%%%%%%%%%%%%%%%%%%%% Music Shortcuts %%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% Rhythm shortcuts -----------------------------------------------%
-
-t =
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 2/3 $music #})
-
-tt =
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 4/5 $music #})
-
-ttt =
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 4/6 $music #})
-
-tttt =
-#(define-music-function (parser location music) (ly:music?)
-#{ \times 4/7 $music #})
-
-
-%% Polyphony shortcuts --------------------------------------------%
-
-%%% Functions (Issue #442 workaround)
-
-#(define (remove music) ; throw everything into the Big Void...
- (context-spec-music music 'Devnull))
-
-#(define (unpitch music)
-  ; in addition to the PitchSquash thing, we need to make
-  ; accidentals disappear (since these are engraved at a
-  ; Staff level, and since we don't want to affect the
-  ; real Voice).
-  (let* ((es (ly:music-property music 'elements))
-         (e (ly:music-property music 'element))
-         (p (ly:music-property music 'pitch)))
-    (if (pair? es)
-        (ly:music-set-property!
-         music 'elements
-         (map (lambda (x) (unpitch x)) es)))
-    (if (ly:music? e)
-        (ly:music-set-property!
-         music 'element
-         (unpitch e)))
-    (if (ly:pitch? p)
-          (ly:music-set-property! music 'pitch 0)))
-   music)
-
-#(define (event-filter event)
- (let ((n (ly:music-property event 'name)))
-  (if (or
-    (eq? n 'ContextSpeccedMusic) ; to avoid clefs and ottavas
-    (eq? n 'ContextChange) ; cross-staff voices are supported
-    (eq? n 'ArpeggioEvent)) ; arpeggios need to go too
-    (music-map remove event))
-  (if (eq? n 'SimultaneousMusic) ; we don't want a new Voice to be created
-    (ly:music-set-property! event 'name 'NoteEvent))))
-
-makeGhost =
-#(define-music-function (parser location music) (ly:music?)
- (context-spec-music (music-filter event-filter (unpitch music)) 'PseudoVoice))
 
 pl =
 #(define-music-function (parser location one two) (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
-
-%%% Piano implementation
-
-showAnyway = %not needed
-#(define-music-function (parser location music) (ly:music?)
-#{
-  \unset Score.keepAliveInterfaces
-  $music
-  \set Score.keepAliveInterfaces = #'(rhythmic-grob-interface
-  lyric-interface percent-repeat-item-interface
-  percent-repeat-interface stanza-number-interface)
-#})
 
 PianoDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
@@ -189,113 +116,8 @@ sk = \set Score.skipTypesetting = ##t
 
 unsk = \set Score.skipTypesetting = ##f
 
-% This might not be needed
-#(define (octave-up noteevent)
- (let* ((pitch (ly:music-property noteevent 'pitch))
-        (octave (ly:pitch-octave pitch))
-        (note (ly:pitch-notename pitch))
-        (alteration (ly:pitch-alteration pitch))
-        (duration (ly:music-property noteevent 'duration))
-        (newnoteevent
-          (make-music 'NoteEvent
-            'duration duration
-            'pitch (ly:make-pitch (1- octave) note alteration))))
-   newnoteevent))
-
-#(define (octavize-chord elements)
- (cond ((null? elements) elements)
-       ((eq? (ly:music-property (car elements) 'name) 'NoteEvent)
-         (cons (car elements)
-               (cons (octave-up (car elements))
-                     (octavize-chord (cdr elements)))))
-       (else (cons (car elements) (octavize-chord (cdr elements))))))
-
-#(define (octavize music)
- (let* ((es (ly:music-property music 'elements))
-        (e (ly:music-property music 'element))
-        (name (ly:music-property music 'name)))
-   (cond ((eq? name 'EventChord)
-          (ly:music-set-property! music 'elements (octavize-chord es)))
-         ((pair? es)
-          (for-each (lambda(x) (octavize x)) es))
-         ((ly:music? e)
-          (octavize e))))
- music)
-
-oct = #(define-music-function (parser location mus) (ly:music?)
- (octavize mus))
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%% Music Decoration %%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% Articulation marks ---------------------------------------------%
-
-#(define (make-script x)
-   (make-music 'ArticulationEvent
-               'articulation-type x))
-
-#(define (add-script m x)
- (let ( (eventname (ly:music-property m 'name)))
-  (if (equal? eventname 'EventChord)
-    (let ( (elements (ly:music-property m 'elements)) )
-      (if (not (equal? (ly:music-property (car elements)
-                'name) 'RestEvent))
-        (set! (ly:music-property m 'elements)
-          (append elements (list
-          (make-script x)))))))
-          m))
-
-#(define (double-script m t tt)
-       (add-script (add-script m t) tt))
-
-st =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "staccato"))
-    (music-map make-script-music music))
-
-acc =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "accent"))
-    (music-map make-script-music music))
-
-det = % I call these "det" as in "détaché".
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "tenuto"))
-    (music-map make-script-music music))
-
-stdet =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "portato"))
-    (music-map make-script-music music))
-
-accdet =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (double-script m "tenuto" "accent"))
-    (music-map make-script-music music))
-
-accst =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (double-script m "accent" "staccato"))
-    (music-map make-script-music music))
-
-dwnb =
-#(define-music-function (parser location music)
-          (ly:music?)
-          (define (make-script-music m)
-   (add-script m "downbow"))
-    (music-map make-script-music music))
 
 CaV=
 #(let ((m (make-music 'ArticulationEvent

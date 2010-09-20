@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 00-init.scm                                        ;
+; opus_libre -- init.scm                                           ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
