@@ -23,7 +23,7 @@ input = "en"
 %%%%%%%%%%%%%%%%%%%%%%%%%% Score selection %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code directory (see scores/ ) ---------------------------%
-scores = "free"
+scores = "poemes"
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,7 +34,7 @@ skel = "song"
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
-structure = #'("")
+structure = #'("Un" "Deux" "Trois")
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Main include %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -45,6 +45,9 @@ structure = #'("")
 
 % (e.g. "fullscore", "pianoscore" or any instrument name)
 %\make #"all"
-{ c }
+% { c }
+%\bookOutputName #"toto"
+
+\make #"all"
 
 %%-----------------------------------------------------------------%
