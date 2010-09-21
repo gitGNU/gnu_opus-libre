@@ -1,6 +1,5 @@
 (define numbers #f)
 (define current-part #f)
-(define structure #f)
 (define conf:structure numbers)
 
 (define (assoc-name alist name)
@@ -47,6 +46,7 @@
            (lyrics (ly:parser-lookup parser
                                      (string->symbol
                                       (string-append mus-name lang:lyrics-suffix)))))
+      (if (ly:get-option 'debug-messages) (ly:message "Loading music from ~a..." mus-name))
       (if (ly:music? music)
 ;;  (if (ly:moment<? (ly:music-length music) (ly:make-moment 1 1000))
           #{ <<
@@ -120,8 +120,10 @@
     eval-lang
     eval-macros
     (include-ly score-dir)
-    (let* ((struct (if (is-defined? 'structure) (list (ly:parser-lookup parser 'structure))
-           conf:default-structure)))
+    (let* ((defined-structure (ly:parser-lookup parser 'structure))
+           (struct (cond ((not defined-structure) conf:default-structure)
+                         ((string? defined-structure) (list defined-structure))
+                         ((list? defined-structure) defined-structure))))
       (if (string? (member arg struct))
           (set! struct arg))
     (map (lambda (part)

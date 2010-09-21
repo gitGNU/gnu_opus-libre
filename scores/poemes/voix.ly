@@ -25,7 +25,7 @@ UnSoprano = \relative {
   \time 4/4 R1
   r4 si8 -\dyn "p_semplice" si sib4 re8 re16( fa |
   dod4) si!8 si \t {sib4( -\dyn "senza cresc" mib sib'} |
-  re,2. r4 |
+  re,2.) r4 |
   \time 3/4 R2.
   \t {r4 fa,8~( -\dyn "p_sempre" } \t {fa4 fa do'} |
   \time 4/4
@@ -102,7 +102,7 @@ DeuxSoprano = \relative {
   r si(\< fa' | sib2.--)\f | r2 mi,4(\< |
   lab4.)\! re,8(\< sol4) |
   \time 2/2
-  \grace sol16 dod1~->--\ff) |
+  \grace sol16 dod1~->--\ff |
   \t {dod4( sib do} \t {sol\> sib fa} |
   \time 3/2
   mi2.)\! r4 r2 |
