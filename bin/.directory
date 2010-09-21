@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Input macros
+Name[fr]=Macros de saisie
+
+Comment=User-friendly macros, to make LilyPond input easier
+Comment[fr]=Macros pour faciliter la saisie de code LilyPond
+
+Icon=
+Type=Directory
+Path=bin
+Encoding=UTF-8

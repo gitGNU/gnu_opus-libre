@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Configuration files
+Name[fr]=Fichiers de configuration
+
+Comment=Various settings may be added here
+Comment[fr]=Toutes sortes de réglages peuvent être ajoutés ici
+
+Icon=
+Type=Directory
+Path=etc/ly.conf.d/
+Encoding=UTF-8

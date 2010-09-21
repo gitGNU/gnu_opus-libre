@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Output
+Name[fr]=Rendu
+
+Comment=PDF output files
+Comment[fr]=Fichiers de rendu PDF
+
+Icon=
+Type=Directory
+Path=out/
+Encoding=UTF-8

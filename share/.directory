@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Shared
+Name[fr]=Commun
+
+Comment=Score-independent, non-code resources
+Comment[fr]=Ressources générales et non algorithmiques
+
+Icon=
+Type=Directory
+Path=share/
+Encoding=UTF-8

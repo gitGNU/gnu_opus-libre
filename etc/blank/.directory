@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Blank sheet music
+Name[fr]=Papier à musique vierge
+
+Comment=Default blank sheet music
+Comment[fr]=Papier à musique vierge par défaut
+
+Icon=
+Type=Directory
+Path=etc/blank/
+Encoding=UTF-8

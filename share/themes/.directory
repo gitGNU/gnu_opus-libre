@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Themes directory
+Name[fr]=Répertoire de thèmes
+
+Comment=Global graphic themes
+Comment[fr]=Thèmes graphiques globaux
+
+Icon=
+Type=Directory
+Path=share/themes/
+Encoding=UTF-8

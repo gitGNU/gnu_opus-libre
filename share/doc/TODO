@@ -1,0 +1,19 @@
+ALREADY ACHIEVED:
+
+- file tree layout
+- automatic variables inclusion
+- properties-retrieval functions
+- basic macros
+- example score
+
+TO BE DONE:
+
+- Add more skeletons
+- Improve localization support
+- Basic themes support (layout, paper)
+
+LONG TERM:
+
+- Advanced themes support (fonts, graphics)
+- Language detection
+- Walk your dog and do the washing up for you.

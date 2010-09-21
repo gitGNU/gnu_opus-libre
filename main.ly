@@ -10,7 +10,7 @@
 %------------------------------------------------------------------%
 
 % Entry point for scores compilation.
-
+\version "2.13.32"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -29,22 +29,22 @@ scores = "free"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Skeleton (see etc/skel/ ) --------------------------------------%
-skel = "fullscore"
+skel = "song"
 
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
+structure = #'("")
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Main include %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Automatic functions inclusion, do not edit ---------------------%
 \include "lib/include.ly"
-#(display include-ly-string)
-#(ly:parser-parse-string parser include-ly-string)
-%#(ly:parser-parse-string (ly:parser-clone parser) include-ly-string)
+
 %% Select edition or instrument -----------------------------------%
 
 % (e.g. "fullscore", "pianoscore" or any instrument name)
 %\make #"all"
 { c }
+
 %%-----------------------------------------------------------------%

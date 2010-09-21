@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Skeleton catalog
+Name[fr]=Catalogue de squelettes
+
+Comment=Universal score skeletons
+Comment[fr]=Squelettes de partitions universels
+
+Icon=
+Type=Directory
+Path=etc/skel/
+Encoding=UTF-8

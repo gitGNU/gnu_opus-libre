@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Fonts
+Name[fr]=Polices
+
+Comment=System-independent fonts
+Comment[fr]=Polices non installées sur le système
+
+Icon=
+Type=Directory
+Path=share/fonts/
+Encoding=UTF-8

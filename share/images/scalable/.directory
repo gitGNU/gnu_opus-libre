@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Vector images
+Name[fr]=Images vectorielles
+
+Comment=Embeddable PostScript and SVG images
+Comment[fr]=Images au format PostScript ou SVG pour inclusion
+
+Icon=
+Type=Directory
+Path=share/images/scalable/
+Encoding=UTF-8
