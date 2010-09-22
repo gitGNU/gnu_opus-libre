@@ -13,10 +13,12 @@
 (define (include-music name)
   (let ((mus (ly:parser-lookup parser (string->symbol name))))
     (if (ly:music? mus)
-    mus
-    (begin (if (ly:get-option 'debug-messages)
-               (ly:message "Variable ~a doesn't exist." mus-name))
-           (make-music 'Music 'void #t)))))
+        (begin (if (ly:get-option 'debug-messages)
+                  (ly:message "Loading music from ~a..." name))
+               mus)
+        (begin (if (ly:get-option 'debug-messages)
+                  (ly:message "Variable ~a doesn't exist." name))
+               (make-music 'Music 'void #t)))))
 
 (define newStaff
   (define-music-function (parser location name) (string?)
@@ -83,9 +85,9 @@
 
 (define newPianoStaff ;; TODO: include lyrics?
   (define-music-function (parser location name) (string?)
-    (let ((name (string-append current-part (assoc-name lang:instruments name)))
-          (upper (string-append name (string-capitalize lang:right-hand)))
-          (lower (string-append name (string-capitalize lang:left-hand)))
+    (let ((current-name (string-append current-part (assoc-name lang:instruments name)))
+          (upper (string-append current-name (string-capitalize lang:right-hand)))
+          (lower (string-append current-name (string-capitalize lang:left-hand)))
           (dynamics (string-append name lang:dynamics-suffix)))
     #{ \new PianoStaff <<
          \new Staff = $lang:right-hand $(include-music upper)
