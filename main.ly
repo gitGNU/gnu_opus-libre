@@ -19,23 +19,6 @@ leftSyl = {
   \once \override LyricText #'self-alignment-X = #0.9
 }
 
-ten =
-#(define-music-function (parser location music) (ly:music?)
-   (if
-     (equal? (ly:music-property music 'name) 'EventChord)
-     (set! (ly:music-property music 'elements)
-           (append (ly:music-property music 'elements)
-                  (list (make-music 'TextScriptEvent 'text
-                    (markup #:translate (cons 4 0)
-                    #:italic "(ten.)"))))))
-                 music)
-
-
-pl =
-#(define-music-function (parser location one two) (ly:music? ly:music?)
-#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
-
-
 % Entry point for scores compilation.
 \version "2.13.32"
 
@@ -50,6 +33,7 @@ input = "en"
 %%%%%%%%%%%%%%%%%%%%%%%%%% Score selection %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code directory (see scores/ ) ---------------------------%
+
 scores = "poemes"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,6 +47,8 @@ theme = "default"
 structure = #'("Un" "Deux" "Trois")
 
 lyricsSuffix = "Texte"
+
+%lyricsSuffix = "Texte"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Main include %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
