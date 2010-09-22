@@ -8,11 +8,6 @@
 
 % Functions used for music notation.
 
-
-pl =
-#(define-music-function (parser location one two) (ly:music? ly:music?)
-#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
-
 PianoDeuxMains=
 #(define-music-function (parser location droite gauche) (ly:music? ly:music?)
 #{
@@ -130,9 +125,9 @@ harmo =
 #(define-music-function (parser location chord result) (ly:music? ly:music?)
  #{ << \oneStemDown $chord \\ { \stemUp %FIXME: ties could look better.
    \override NoteHead #'stencil = #ly:text-interface::print
-   \override NoteHead #'text = \markup { \null \musicglyph #"noteheads.s2"}
+   \override NoteHead #'text = \markup { \null \musicglyph #"noteheads.s2" }
    \once \override NoteHead #'text = \markup {\null \override #'(direction . 1)
-      \dir-column {\musicglyph #"noteheads.s2" \teeny \musicglyph #"eight"}}
+      \dir-column {\musicglyph #"noteheads.s2" \teeny \musicglyph #"eight" }}
     \override Stem #'stencil = ##f $result
     \revert Stem #'stencil \revert NoteHead #'stencil \stemNeutral } >> #})
 

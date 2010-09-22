@@ -44,6 +44,7 @@
   (octavize mus)))
 
 ;; Articulation shortcuts -----------------------------------------;
+;;TODO: how about an alist? (see libmusic.scm)
 (make-script '(st . "staccato"))
 (make-script '(acc . "accent"))
 (make-script '(det . "tenuto")) ; as in "détaché"
@@ -51,3 +52,23 @@
 (make-script '(accdet . '("tenuto" "accent")))
 (make-script '(accst . '("accent" "staccato")))
 (make-script '(dwnb . "downbow"))
+
+(define ten
+  (define-music-function (parser location music) (ly:music?)
+   (if
+     (equal? (ly:music-property music 'name) 'EventChord)
+     (set! (ly:music-property music 'elements)
+           (append (ly:music-property music 'elements)
+                  (list (make-music 'TextScriptEvent 'text
+                    ;; ugh. Haphazard alignment.
+                    (markup #:translate-scaled (cons 4 0)
+                    #:indic "(ten.)"))))))
+                 music))
+
+
+;; Polyphony shortcuts --------------------------------------------;
+(define pl
+  (define-music-function (parser location one two)
+                         (ly:music? ly:music?)
+#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #}))
+

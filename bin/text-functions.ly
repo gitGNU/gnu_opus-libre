@@ -11,17 +11,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Advanced definitions -------------------------------------------%
-
-%%% This code was provided by Nicolas Sceaux.
-
-
-
-%% Expressive indications -----------------------------------------%
-
-#(define-markup-command (indic layout props arg) (markup?)
-    (interpret-markup layout props
-    (markup #:rounded-whiteout 1 #:small #:italic arg)))
 
 %% Dynamics -------------------------------------------------------%
 
@@ -143,19 +132,6 @@ nind =
               (markup  #:text #:indic texte)))
 
 %% Predefined commands
-
-ten =
-#(define-music-function (parser location music) (ly:music?)
-   (if
-     (equal? (ly:music-property music 'name) 'EventChord)
-     (set! (ly:music-property music 'elements)
-           (append (ly:music-property music 'elements)
-                  (list (make-music 'TextScriptEvent 'text
-                    (markup #:translate (cons 4 0)
-                    #:indic "(ten.)"))))))
-                 music)
-
-
 pizz =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"pizz." $music #})

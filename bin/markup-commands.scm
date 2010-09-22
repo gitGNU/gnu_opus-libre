@@ -42,38 +42,38 @@ marks.  Regular spaces are allowed inside words.
 }
 @end lilypond"
   (let ((composite-chars (char-set-union
-			  char-set:dynamics
-			  char-set:whitespace
-			  char-set:punctuation))
+        char-set:dynamics
+        char-set:whitespace
+        char-set:punctuation))
         (split (lambda (s) (string-index s #\_ )))
         (str-list '())
         (style-markup (lambda (s)
-			(make-normal-text-markup
-			 (make-italic-markup s)))))
+      (make-normal-text-markup
+       (make-italic-markup s)))))
     (do ((current-str (string-append str "_")))
         ((not (split current-str)))
       (begin
-	(set! str-list
-	      (append str-list (list
-				(string-take current-str (split current-str)))))
-	(set! current-str
-	      (string-drop current-str (+ (split current-str) 1)))))
+  (set! str-list
+        (append str-list (list
+        (string-take current-str (split current-str)))))
+  (set! current-str
+        (string-drop current-str (+ (split current-str) 1)))))
     (interpret-markup layout props
-		      (make-line-markup
-		       (map (lambda (word)
-			      (if (string-every composite-chars word)
-				  (if (string-every char-set:dynamics word)
-				      (make-dynamic-markup word)
-				      (let ((word-lst (string->list word)))
-					(make-concat-markup
-					 (map (lambda (ch)
-						(let ((print-ch (string ch)))
-						  (if (char-punctuation? ch)
-						      (style-markup print-ch)
-						      (make-dynamic-markup print-ch))))
-					      word-lst))))
-				  (style-markup word)))
-			    str-list)))))
+          (make-line-markup
+           (map (lambda (word)
+            (if (string-every composite-chars word)
+          (if (string-every char-set:dynamics word)
+              (make-dynamic-markup word)
+              (let ((word-lst (string->list word)))
+          (make-concat-markup
+           (map (lambda (ch)
+            (let ((print-ch (string ch)))
+              (if (char-punctuation? ch)
+                  (style-markup print-ch)
+                  (make-dynamic-markup print-ch))))
+                word-lst))))
+          (style-markup word)))
+          str-list)))))
 
 (define-markup-command (whiteout layout props arg)
                         (markup?)
@@ -81,8 +81,13 @@ marks.  Regular spaces are allowed inside words.
          (radius (if (number? def) def 0)))
   (rounded-whiteout-stencil (interpret-markup layout props arg) radius)))
 
-;;FIXME: Probably stolen from Nicolas' code -- is this really useful here?
+;; Probably stolen from Nicolas' code -- is this really useful here?
 (define-markup-command (line-width-ratio layout props width-ratio arg) (number? markup?)
   (interpret-markup layout props
    (markup #:override (cons 'line-width (* width-ratio (chain-assoc-get 'line-width props)))
            arg)))
+
+;; TODO: to be theme-ized.
+(define-markup-command (indic layout props arg) (markup?)
+    (interpret-markup layout props
+    (markup #:whiteout #:small #:italic arg)))

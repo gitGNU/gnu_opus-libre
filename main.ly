@@ -19,21 +19,6 @@ leftSyl = {
   \once \override LyricText #'self-alignment-X = #0.9
 }
 
-ten =
-#(define-music-function (parser location music) (ly:music?)
-   (if
-     (equal? (ly:music-property music 'name) 'EventChord)
-     (set! (ly:music-property music 'elements)
-           (append (ly:music-property music 'elements)
-                  (list (make-music 'TextScriptEvent 'text
-                    (markup #:translate (cons 4 0)
-                    #:italic "(ten.)"))))))
-                 music)
-
-
-pl =
-#(define-music-function (parser location one two) (ly:music? ly:music?)
-#{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #})
 
 
 % Entry point for scores compilation.
@@ -55,14 +40,14 @@ scores = "free"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Skeleton (see etc/skel/ ) --------------------------------------%
-skel = "melodie"
+skel = "song"
 
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
 structure = #'("" "scene")
 
-lyricsSuffix = "Texte"
+%lyricsSuffix = "Texte"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Main include %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -76,6 +61,6 @@ lyricsSuffix = "Texte"
 % { c }
 %\bookOutputName #"toto"
 
-\make #"Un"
+\make #"all"
 
 %%-----------------------------------------------------------------%
