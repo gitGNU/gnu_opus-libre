@@ -1,7 +1,0 @@
-<<
-  \newStaff $"Soprano"
-  \new PianoStaff <<
-    \newStaff $"PianoMd"
-    \newStaff $"PianoMg"
-  >>
->>
