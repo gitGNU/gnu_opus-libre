@@ -12,7 +12,11 @@
 
 (define (include-music name)
   (let ((mus (ly:parser-lookup parser (string->symbol name))))
-    (if (ly:music? mus) mus (make-music 'Music 'void #t))))
+    (if (ly:music? mus)
+    mus
+    (begin (if (ly:get-option 'debug-messages)
+               (ly:message "Variable ~a doesn't exist." mus-name))
+           (make-music 'Music 'void #t)))))
 
 (define newStaff
   (define-music-function (parser location name) (string?)
