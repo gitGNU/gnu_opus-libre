@@ -72,3 +72,5 @@
                          (ly:music? ly:music?)
 #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #}))
 
+(staff-change-command lang:upper-hand) ;; depending on your input language:
+(staff-change-command lang:lower-hand) ;; \rh or \md etc. for switching staves.
