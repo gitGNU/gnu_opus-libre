@@ -18,10 +18,10 @@
   "Print @var{arg} as small caps.
 This version of the @code{\\smallCaps} command adds basic support
 for accented characters."
- (interpret-markup layout props
-  (if (string? text)
-   (make-small-caps (string->list text) (list) #f (list))
-   text)))
+  (interpret-markup layout props
+                    (if (string? text)
+                        (make-small-caps (string->list text) (list) #f (list))
+                        text)))
 
 
 (define-markup-command (dynamic-string layout props str) (string?)
@@ -42,52 +42,52 @@ marks.  Regular spaces are allowed inside words.
 }
 @end lilypond"
   (let ((composite-chars (char-set-union
-        char-set:dynamics
-        char-set:whitespace
-        char-set:punctuation))
+                          char-set:dynamics
+                          char-set:whitespace
+                          char-set:punctuation))
         (split (lambda (s) (string-index s #\_ )))
         (str-list '())
         (style-markup (lambda (s)
-      (make-normal-text-markup
-       (make-italic-markup s)))))
+                        (make-normal-text-markup
+                         (make-italic-markup s)))))
     (do ((current-str (string-append str "_")))
         ((not (split current-str)))
       (begin
-  (set! str-list
-        (append str-list (list
-        (string-take current-str (split current-str)))))
-  (set! current-str
-        (string-drop current-str (+ (split current-str) 1)))))
+        (set! str-list
+              (append str-list (list
+                                (string-take current-str (split current-str)))))
+        (set! current-str
+              (string-drop current-str (+ (split current-str) 1)))))
     (interpret-markup layout props
-          (make-line-markup
-           (map (lambda (word)
-            (if (string-every composite-chars word)
-          (if (string-every char-set:dynamics word)
-              (make-dynamic-markup word)
-              (let ((word-lst (string->list word)))
-          (make-concat-markup
-           (map (lambda (ch)
-            (let ((print-ch (string ch)))
-              (if (char-punctuation? ch)
-                  (style-markup print-ch)
-                  (make-dynamic-markup print-ch))))
-                word-lst))))
-          (style-markup word)))
-          str-list)))))
+                      (make-line-markup
+                       (map (lambda (word)
+                              (if (string-every composite-chars word)
+                                  (if (string-every char-set:dynamics word)
+                                      (make-dynamic-markup word)
+                                      (let ((word-lst (string->list word)))
+                                        (make-concat-markup
+                                         (map (lambda (ch)
+                                                (let ((print-ch (string ch)))
+                                                  (if (char-punctuation? ch)
+                                                      (style-markup print-ch)
+                                                      (make-dynamic-markup print-ch))))
+                                              word-lst))))
+                                  (style-markup word)))
+                            str-list)))))
 
 (define-markup-command (whiteout layout props arg)
-                        (markup?)
-   (let* ((def (ly:parser-lookup parser 'conf:rounded-whiteout))
+  (markup?)
+  (let* ((def (ly:parser-lookup parser 'conf:rounded-whiteout))
          (radius (if (number? def) def 0)))
-  (rounded-whiteout-stencil (interpret-markup layout props arg) radius)))
+    (rounded-whiteout-stencil (interpret-markup layout props arg) radius)))
 
 ;; Probably stolen from Nicolas' code -- is this really useful here?
 (define-markup-command (line-width-ratio layout props width-ratio arg) (number? markup?)
   (interpret-markup layout props
-   (markup #:override (cons 'line-width (* width-ratio (chain-assoc-get 'line-width props)))
-           arg)))
+                    (markup #:override (cons 'line-width (* width-ratio (chain-assoc-get 'line-width props)))
+                            arg)))
 
 ;; TODO: to be theme-ized.
 (define-markup-command (indic layout props arg) (markup?)
-    (interpret-markup layout props
-    (markup #:whiteout #:small #:italic arg)))
+  (interpret-markup layout props
+                    (markup #:whiteout #:small #:italic arg)))
