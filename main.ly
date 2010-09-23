@@ -25,7 +25,7 @@ leftSyl = {
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code language (see locale/ ) ----------------------------%
-input = "en"
+input = "fr"
 
 %% Edition localisation (if different) ----------------------------%
 %edition = "fr"
