@@ -12,18 +12,25 @@
 ; Language selection.
 
 (define eval-lang
-  (let* ((input-language
+  (let* ((input-lang
           (if (is-defined? 'input)
               (ly:parser-lookup parser 'input)
               default-language))
-        (input-language-file
-          (string-append conf:locale-dir "/" input-language ".conf")))
-    (if (exists? input-language-file)
-        (begin
-          (if (ly:get-option 'debug-messages)
-              (ly:message "Loading language file ~a..." input-language-file))
-          (parse-def-file input-language-file ""))
-        (ly:warning "Language file not found: ~a."
-                    input-language-file))))
+        (input-lang-file
+          (string-append conf:locale-dir "/" input-lang ".conf"))
+        (local-lang-file
+          (string-append conf:local-conf-dir "/" input-lang ".conf"))
+        (load-lang-file
+          (lambda (f)
+                  (if (exists? f)
+                      (begin
+                        (if (ly:get-option 'debug-messages)
+                            (ly:message "Loading language file ~a..." f))
+                        (parse-def-file f ""))
+                      (if (ly:get-option 'debug-messages)
+                          (ly:warning "Language file not found: ~a."
+                                  f))))))
+     (load-lang-file input-lang-file)
+     (load-lang-file local-lang-file)))
 
 ;; TODO add local score-level language files

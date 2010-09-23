@@ -12,6 +12,7 @@
 ; Load configuration files and set variables.
 
 (define conf:conf-prefix "conf")
+(define conf:ly-prefix "ly")
 (define conf:conf-file "etc/ly.conf")
 
 (define (parse-lines-in port prefix)
@@ -46,7 +47,9 @@
 
 (define (parse-def-file file prefix)
   "Read FILE and turn all definitions into Scheme values."
-  (let ((port (open-input-file file)))
+  (let ((port (open-input-file file))
+        ;; we don't want ly:prefixed variables, use conf: instead.
+        (prefix (if (eq? conf:ly-prefix prefix) conf:conf-prefix prefix)))
     (if (ly:get-option 'debug-messages)
         (ly:message "Parsing configuration file ~a..." file))
     (parse-lines-in port prefix)))
@@ -78,4 +81,4 @@
   (parse-def-file conf:conf-file conf:conf-prefix)
   (parse-def-dir conf:conf-dir)
   (set! conf:local-conf-dir usr-conf)
-  (parse-def-dir conf:local-conf-dir conf:conf-prefix)))
+  (parse-def-dir conf:local-conf-dir)))
