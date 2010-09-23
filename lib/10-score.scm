@@ -15,13 +15,13 @@
 (define conf:scores-dir "scores")
 (define conf:default-score "etc/blank")
 
-(define-public (is-defined? sym)
+(define-public (defined-string? sym)
   (string? (ly:parser-lookup parser sym)))
 
 (define-public (exists? loc) (access? loc F_OK))
 
 (define score-dir
-  (if (is-defined? 'scores)
+  (if (defined-string? 'scores)
       (let* ((score-subdir (ly:parser-lookup parser 'scores))
              (full-dir
                (string-append conf:scores-dir "/" score-subdir)))

@@ -50,7 +50,7 @@
          #f))))
 
 (define skel-file
-  (if (is-defined? 'skel)
+  (if (defined-string? 'skel)
       (let* ((requested-skel (ly:parser-lookup parser 'skel))
              (file (find-skel requested-skel)))
         (if (not file)

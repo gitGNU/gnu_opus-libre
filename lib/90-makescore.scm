@@ -13,25 +13,6 @@
 (define current-part #f)
 (define conf:structure numbers)
 
-(define (assoc-name alist name)
-  (let ((res (assoc-ref alist name)))
-    (if (not (string=? "" name))
-        (if (char-lower-case? (car (string->list name)))
-            (if (string? res) res name) name) name)))
-
-(define (in-list? str lst)
-  (let ((m (member str lst))
-        (ret (if (list? m) (car m) m)))
-        ret))
-
-(define (alist-reverse alist)
-  (if (null? alist) '()
-      (cons (cons (cdr (car alist)) (car (car alist)))
-            (alist-reverse (cdr alist)))))
-
-(define (ls-index str lst)
-  (number->string (- (length lst) (length (member str lst)))))
-
 (define-public (include-ly dir)
   "Include all LilyPond code found in DIR, recursively."
   (let ((ly-files (find-files dir ".i?ly$" #t)))
@@ -42,6 +23,14 @@
                    (ly:message "Skipping local score file: ~a..." x))
                (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
          ly-files)))
+
+(define (alist-reverse alist)
+  (if (null? alist) '()
+      (cons (cons (cdr (car alist)) (car (car alist)))
+            (alist-reverse (cdr alist)))))
+
+(define (ls-index str lst)
+  (number->string (- (length lst) (length (member str lst)))))
 
 (define (eval-skel file)
   (eval-string (format #f
@@ -60,13 +49,13 @@
 
 (define output-redirect
   (set! book-filename
-    (let* ((orig-filename (if (is-defined? 'book-filename)
+    (let* ((orig-filename (if (defined-string? 'book-filename)
                               book-filename
                               (ly:parser-output-name parser)))
-           (prefix (if (is-defined? 'conf:output-dir)
+           (prefix (if (defined-string? 'conf:output-dir)
                        (string-append conf:output-dir "/")
                        #f))
-           (new-filename (if (is-defined? 'scores)
+           (new-filename (if (defined-string? 'scores)
                              (ly:parser-lookup parser 'scores)
                              orig-filename)))
       (if (not prefix)
