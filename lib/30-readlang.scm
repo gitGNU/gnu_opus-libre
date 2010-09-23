@@ -16,21 +16,19 @@
           (if (defined-string? 'input)
               (ly:parser-lookup parser 'input)
               default-language))
-        (input-lang-file
+         (input-lang-file
           (string-append conf:locale-dir "/" input-lang ".conf"))
-        (local-lang-file
+         (local-lang-file
           (string-append conf:local-conf-dir "/" input-lang ".conf"))
-        (load-lang-file
+         (load-lang-file
           (lambda (f)
-                  (if (exists? f)
-                      (begin
-                        (if (ly:get-option 'debug-messages)
-                            (ly:message "Loading language file ~a..." f))
-                        (parse-def-file f conf:lang-prefix))
-                      (if (ly:get-option 'debug-messages)
-                          (ly:warning "Language file not found: ~a."
-                                  f))))))
-     (load-lang-file input-lang-file)
-     (load-lang-file local-lang-file)))
-
-;; TODO add local score-level language files
+            (if (exists? f)
+                (begin
+                  (if (ly:get-option 'debug-messages)
+                      (ly:message "Loading language file ~a..." f))
+                  (parse-def-file f conf:lang-prefix))
+                (if (ly:get-option 'debug-messages)
+                    (ly:warning "Language file not found: ~a."
+                                f))))))
+    (load-lang-file input-lang-file)
+    (load-lang-file local-lang-file)))

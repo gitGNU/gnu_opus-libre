@@ -59,10 +59,10 @@
   (let ((def-files (find-files dir ".conf$" #f)))
     (map (lambda (x)
            (parse-def-file x
-             (if (string? prefix) prefix
-               (string-drop-right
-                 (regexp-substitute/global #f "/+" x 'post)
-                  5))))
+                           (if (string? prefix) prefix
+                               (string-drop-right
+                                (regexp-substitute/global #f "/+" x 'post)
+                                5))))
          def-files)))
 
 (define eval-conf
@@ -78,7 +78,7 @@
                                   (ly:message "No local overrides found: ~a does not exist." usr-dir))
                               score-dir)))
                       score-dir)))
-  (parse-def-file conf:conf-file conf:conf-prefix)
-  (parse-def-dir conf:conf-dir)
-  (set! conf:local-conf-dir usr-conf)
-  (parse-def-dir conf:local-conf-dir)))
+    (parse-def-file conf:conf-file conf:conf-prefix)
+    (parse-def-dir conf:conf-dir)
+    (set! conf:local-conf-dir usr-conf)
+    (parse-def-dir conf:local-conf-dir)))

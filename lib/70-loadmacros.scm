@@ -16,9 +16,9 @@
                   (string->symbol (primitive-eval token))
                   token)))
     `(define-public ,sym
-      (ly:make-music-function (list ly:music?)
-        (lambda (parser location x)
-    ,expr)))))
+       (ly:make-music-function (list ly:music?)
+                               (lambda (parser location x)
+                                 ,expr)))))
 
 (defmacro staff-change-command (token)
   (let* ((str (primitive-eval token))
@@ -26,10 +26,10 @@
                   (string->symbol str)
                   token)))
     `(define-public ,sym
-      (ly:make-music-function '()
-        (lambda (parser location)
-        (make-music 'ContextChange 'change-to-type 'Staff
-                                   'change-to-id ,str))))))
+       (ly:make-music-function '()
+                               (lambda (parser location)
+                                 (make-music 'ContextChange 'change-to-type 'Staff
+                                             'change-to-id ,str))))))
 
 (defmacro make-script (str)
   (let* ((sym (car (primitive-eval str)))

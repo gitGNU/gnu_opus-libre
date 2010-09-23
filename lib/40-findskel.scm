@@ -41,13 +41,13 @@
 (define (find-skel skelname)
   (let ((local-skel (find-files conf:local-conf-dir
                                 (string-append "/"
-                                skelname ".lyskel")))
+                                               skelname ".lyskel")))
         (global-skel (find-files conf:skel-dir
                                  (string-append "/"
-                                 skelname ".lyskel"))))
-     (if (not (null? local-skel)) (car local-skel)
-         (if (not (null? global-skel)) (car global-skel)
-         #f))))
+                                                skelname ".lyskel"))))
+    (if (not (null? local-skel)) (car local-skel)
+        (if (not (null? global-skel)) (car global-skel)
+            #f))))
 
 (define skel-file
   (if (defined-string? 'skel)
@@ -56,7 +56,7 @@
         (if (not file)
             (begin (ly:warning "Skeleton not found: ~a.
 Defaulting to \"universal\" skeleton." requested-skel)
-                       default-skel)
-             file))
+                   default-skel)
+            file))
       (begin (ly:warning "No skeleton defined;
 defaulting to \"universal\" skeleton.") default-skel)))

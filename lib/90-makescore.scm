@@ -34,7 +34,7 @@
 
 (define (eval-skel file)
   (eval-string (format #f
-   "(define-public (apply-skel arg instr-list)
+                       "(define-public (apply-skel arg instr-list)
       (set! current-part (car arg))
       (let* ((str (cdr arg))
              (key (assoc-ref (alist-reverse instr-list) str)))
@@ -45,22 +45,22 @@
                       (ly:warning \"Unknown instrument variable;
   ---> please check your `make' argument.\")))
                  #{ ~a #}))))"
-        (read-file (open-input-file file)))))
+                       (read-file (open-input-file file)))))
 
 (define output-redirect
   (set! book-filename
-    (let* ((orig-filename (if (defined-string? 'book-filename)
-                              book-filename
-                              (ly:parser-output-name parser)))
-           (prefix (if (defined-string? 'conf:output-dir)
-                       (string-append conf:output-dir "/")
-                       #f))
-           (new-filename (if (defined-string? 'scores)
-                             (ly:parser-lookup parser 'scores)
-                             orig-filename)))
-      (if (not prefix)
-          orig-filename
-          (string-append prefix new-filename)))))
+        (let* ((orig-filename (if (defined-string? 'book-filename)
+                                  book-filename
+                                  (ly:parser-output-name parser)))
+               (prefix (if (defined-string? 'conf:output-dir)
+                           (string-append conf:output-dir "/")
+                           #f))
+               (new-filename (if (defined-string? 'scores)
+                                 (ly:parser-lookup parser 'scores)
+                                 orig-filename)))
+          (if (not prefix)
+              orig-filename
+              (string-append prefix new-filename)))))
 
 (define make
   (define-music-function (parser location arg) (string?)
@@ -74,25 +74,25 @@
                          ((list? defined-structure) defined-structure))))
       (if (string? (member arg struct))
           (set! struct arg))
-    (map (lambda (part)
-          (let* ((skel-name (if (string? (find-skel arg)) arg (ly:parser-lookup parser 'skel)))
-                 (skel-part (find-skel (string-append skel-name "-" part)))
-                 (skel-num (find-skel (string-append skel-name "-" (ls-index part struct)))))
-            (if (string? skel-part) (eval-skel skel-part)
-                  (if (string? skel-num) (eval-skel skel-num)
-                      (eval-skel (find-skel skel-name))))
+      (map (lambda (part)
+             (let* ((skel-name (if (string? (find-skel arg)) arg (ly:parser-lookup parser 'skel)))
+                    (skel-part (find-skel (string-append skel-name "-" part)))
+                    (skel-num (find-skel (string-append skel-name "-" (ls-index part struct)))))
+               (if (string? skel-part) (eval-skel skel-part)
+                   (if (string? skel-num) (eval-skel skel-num)
+                       (eval-skel (find-skel skel-name))))
 
-            (let* ((music (apply-skel (cons part arg) lang:instruments))
-                   (score (scorify-music music parser))
-                   (layout (ly:output-def-clone $defaultlayout))
-                   (header (make-module))
-                   (title (make-this-text part lang:title-suffix)))
-              (module-define! header 'piece title)
+               (let* ((music (apply-skel (cons part arg) lang:instruments))
+                      (score (scorify-music music parser))
+                      (layout (ly:output-def-clone $defaultlayout))
+                      (header (make-module))
+                      (title (make-this-text part lang:title-suffix)))
+                 (module-define! header 'piece title)
 
-              (ly:score-set-header! score header)
-              (ly:score-add-output-def! score layout)
-              (add-score parser score)
-              output-redirect)))
+                 (ly:score-set-header! score header)
+                 (ly:score-add-output-def! score layout)
+                 (add-score parser score)
+                 output-redirect)))
 
-        struct)
-    (make-music 'Music 'void #t))))
+           struct)
+      (make-music 'Music 'void #t))))
