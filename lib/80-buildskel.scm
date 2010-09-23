@@ -86,8 +86,8 @@
 (define newPianoStaff ;; TODO: include lyrics?
   (define-music-function (parser location name) (string?)
     (let* ((current-name (string-append current-part (assoc-name lang:instruments name)))
-           (upper (string-append current-name (string-capitalize lang:right-hand)))
-           (lower (string-append current-name (string-capitalize lang:left-hand)))
+           (upper (string-append current-name (string-capitalize lang:upper-hand)))
+           (lower (string-append current-name (string-capitalize lang:lower-hand)))
            (dynamics (string-append current-name lang:dynamics-suffix))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
@@ -96,7 +96,7 @@
          shortInstrumentName = $short-instr
        }
      <<
-         \new Staff = $lang:right-hand $(include-music upper)
+         \new Staff = $lang:upper-hand $(include-music upper)
          \new Dynamics $(include-music dynamics)
-         \new Staff = $lang:left-hand $(include-music lower)
+         \new Staff = $lang:lower-hand $(include-music lower)
      >> #})))
