@@ -56,7 +56,7 @@ UnPianoMd = \relative {
   r4 <lab sol'>32 re8..\laissezVibrer
   r8 <mi, red'>32 lad16.\laissezVibrer r4 |
   \t {r8 <do, si'>32 fad16. <la, sold'>32 red16.\laissezVibrer }
-  r4 \t {sib,8 \change Staff = "mg" sib, la' \change Staff = "md" }
+  r4 \t {sib,8 \mg sib, la' \md }
   lab' la, | <mib si' mi!>2.~ \arpeggio <mib si' mi>2 r4 |
   R2*2 \clef bass
   \t {r8 mib~ lab~} <mib lab>2. |
@@ -247,20 +247,20 @@ DeuxPianoMd = \relative {
       <sol reb'> lab sol mib reb mib sol lab
       <sol reb'> lab sol mib lab sol mib reb
       mib reb sib fa sol fa reb do
-      fa re! dob sib \change Staff = "mg" lab mi si lab
+      fa re! dob sib \mg lab mi si lab
     }
     r2 R1*2
     <sol' lab sib reb>1~ q |
     <fa sol sib>~ q~ q~ q |
-    \change Staff = "mg"
+    \mg
     \set tieWaitForNote = ##t
-    reb,4~ lab'~ \change Staff = "md"
-    \t { solb' la!~ \change Staff = "mg"
-    re,!~ \change Staff = "md" }
-    fa'2~ \change Staff = "mg"
-    do,,,2~ \change Staff = "md"
+    reb,4~ lab'~ \md
+    \t { solb' la!~ \mg
+    re,!~ \md }
+    fa'2~ \mg
+    do,,,2~ \md
     mi''''1*1/16\fermata \laissezVibrer
-    \hideNotes fa, la, \change Staff = "mg"
+    \hideNotes fa, la, \mg
     re, lab reb, do, s s2
 }
 
