@@ -26,7 +26,7 @@
                       (begin
                         (if (ly:get-option 'debug-messages)
                             (ly:message "Loading language file ~a..." f))
-                        (parse-def-file f ""))
+                        (parse-def-file f conf:lang-prefix))
                       (if (ly:get-option 'debug-messages)
                           (ly:warning "Language file not found: ~a."
                                   f))))))
