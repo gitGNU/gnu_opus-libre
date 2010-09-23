@@ -13,7 +13,7 @@
 
 (define eval-lang
   (let* ((input-lang
-          (if (is-defined? 'input)
+          (if (defined-string? 'input)
               (ly:parser-lookup parser 'input)
               default-language))
         (input-lang-file

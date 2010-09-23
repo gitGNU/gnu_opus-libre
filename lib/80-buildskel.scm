@@ -10,6 +10,12 @@
 ;------------------------------------------------------------------;
 
 
+(define (assoc-name alist name)
+  (let ((res (assoc-ref alist name)))
+    (if (not (string=? "" name))
+        (if (char-lower-case? (car (string->list name)))
+            (if (string? res) res name) name) name)))
+
 (define (include-music name)
   (let ((mus (ly:parser-lookup parser (string->symbol name))))
     (if (ly:music? mus)
@@ -32,7 +38,6 @@
                                       (string-append mus-name lang:lyrics-suffix)))))
       (if (ly:get-option 'debug-messages) (ly:message "Loading music from ~a..." mus-name))
       (if (ly:music? music)
-;;  (if (ly:moment<? (ly:music-length music) (ly:make-moment 1 1000))
           #{ <<
              \new Staff \with {
                instrumentName = $instr

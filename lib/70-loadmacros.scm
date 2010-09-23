@@ -12,7 +12,7 @@
 
 
 (defmacro make-simple-function (token expr)
-  (let* ((sym (if (is-defined? token)
+  (let* ((sym (if (defined-string? token)
                   (string->symbol (primitive-eval token))
                   token)))
     `(define-public ,sym
@@ -22,7 +22,7 @@
 
 (defmacro staff-change-command (token)
   (let* ((str (primitive-eval token))
-         (sym (if (is-defined? token)
+         (sym (if (defined-string? token)
                   (string->symbol str)
                   token)))
     `(define-public ,sym

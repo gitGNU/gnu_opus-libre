@@ -36,7 +36,7 @@
                   (if (not (string=? prefix ""))
                       (set! var (string-append prefix ":" var)))
                   ;; Native .ly definitions take precedence over .conf defs
-                  (if (is-defined? lyvar)
+                  (if (defined-string? lyvar)
                       (set! val (string-append "\""
                                                (ly:parser-lookup parser lyvar) "\"")))
                   (eval-string
@@ -66,7 +66,7 @@
          def-files)))
 
 (define eval-conf
-  (let ((usr-conf (if (is-defined? 'conf:local-conf-dir)
+  (let ((usr-conf (if (defined-string? 'conf:local-conf-dir)
                       (let ((usr-dir (string-append score-dir "/" conf:local-conf-dir)))
                         (if (exists? usr-dir)
                             (begin
