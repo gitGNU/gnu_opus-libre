@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 40-findskel.scm                                    ;
+; opus_libre -- 60-findskel.scm                                    ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;

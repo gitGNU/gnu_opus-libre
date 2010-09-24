@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 70-loadmacros.scm                                  ;
+; opus_libre -- 40-loadmacros.scm                                  ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
