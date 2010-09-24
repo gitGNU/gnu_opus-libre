@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 60-libtext.scm                                     ;
+; opus_libre -- libtext.scm                                        ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;

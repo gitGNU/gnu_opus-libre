@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 50-libmusic.scm                                    ;
+; opus_libre -- libmusic.scm                                       ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;

@@ -11,6 +11,7 @@
 
 ; Markup commands.
 
+(load "../lib/libtext.scm")
 
 (define-markup-command (smallCaps layout props text) (markup?)
   ;; Thanks to Nicolas Sceaux! See libtext.scm.

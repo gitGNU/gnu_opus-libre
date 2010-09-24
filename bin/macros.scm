@@ -11,6 +11,8 @@
 
 ; Input macros.
 
+(load "../lib/libmusic.scm")
+
 ;; Rhythm shortcuts -----------------------------------------------;
 (make-simple-function lang:tuplet-letter ; default: \t
                       #{ \times 2/3 $x #})
