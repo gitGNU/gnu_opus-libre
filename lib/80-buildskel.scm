@@ -11,12 +11,15 @@
 
 
 (define (assoc-name alist name)
+  "If NAME begins with a lower case letter, then
+try to find a matching entry in ALIST."
   (let ((res (assoc-ref alist name)))
     (if (not (string=? "" name))
         (if (char-lower-case? (car (string->list name)))
             (if (string? res) res name) name) name)))
 
 (define (include-music name)
+  "Turn NAME into a music expression if one exists."
   (let ((mus (ly:parser-lookup parser (string->symbol name))))
     (if (ly:music? mus)
         (begin (if (ly:get-option 'debug-messages)
@@ -26,7 +29,25 @@
                   (ly:message "Variable ~a doesn't exist." name))
                (make-music 'Music 'void #t)))))
 
+(define (make-this-text name suffix)
+  "Associate NAME with SUFFIX, and check if a suitable
+markup exists."
+  (let ((mark (ly:parser-lookup parser
+                                (string->symbol
+                                 (string-append name suffix)))))
+    (if (markup? mark) mark
+        (begin
+          (if (ly:get-option 'debug-messages)
+              (ly:warning "No text found in ~a~a" name suffix))
+          (if (ly:get-option 'use-variable-names)
+              (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
+              point-stencil)))))
+
 (define newStaff
+;;   "If NAME matches a defined music expression, then
+;; create a Staff for it.  Then find and include any
+;; instrumentName or Lyrics expression that could match
+;; this staff (using appropriate suffixes)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (mus-name (string-append current-part name))
@@ -52,6 +73,11 @@
               (make-music 'Music 'void #t))))))
 
 (define newLyrics
+;;   "From the given NAME, try and find as many Lyrics
+;; expressions as possible, using the lyrics suffix and
+;; (unless 'only-suffixed-varnames is set) numbers as
+;; suffixes: in case there would be multiple verses, etc.
+;; Create Lyrics contexts accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (mus-name (string-append current-part name)))
@@ -72,6 +98,10 @@
       #})))
 
 (define newGrandStaff
+;;   "From the given NAME, try and find as many instrument
+;; parts as possible, by appending numbers as suffixes.  Then
+;; create a GrandStaff containing staves for e.g.
+;; \fluteOne, \fluteTwo, \fluteThree etc. as needed."
   (define-music-function (parser location name) (string?)
     #{ \new GrandStaff
        $(let* ((name (assoc-name lang:instruments name))
@@ -89,6 +119,12 @@
      #} ))
 
 (define newPianoStaff ;; TODO: include lyrics?
+;;   "Create a PianoStaff with two staves named after
+;; the appropriate upper-hand/lower-hand localized definitions,
+;; that are also used in the variables as suffixes (e.g.
+;; \PianoRh, \PianoLh).  This also allows for localized
+;; Staff-\changing shorthands.  If a suitable Dynamics expression
+;; is found, it will also be included accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((current-name (string-append current-part (assoc-name lang:instruments name)))
            (upper (string-append current-name (string-capitalize lang:upper-hand)))

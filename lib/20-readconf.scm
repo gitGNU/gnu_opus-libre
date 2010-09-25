@@ -66,6 +66,10 @@
          def-files)))
 
 (define eval-conf
+;;   "Read all conf files: first in the global conf dir, then in a
+;;   dedicated subdir of the score dir, or if none can be found, in
+;;   the score dir itself.  This allows for local overrides to be
+;;   loaded early in the compilation process."
   (let ((usr-conf (if (defined-string? 'conf:local-conf-dir)
                       (let ((usr-dir (string-append score-dir "/" conf:local-conf-dir)))
                         (if (exists? usr-dir)
@@ -75,10 +79,13 @@
                               usr-dir)
                             (begin
                               (if (ly:get-option 'debug-messages)
-                                  (ly:message "No local overrides found: ~a does not exist." usr-dir))
+                                  (ly:message "~a does not exist; looking for overrides in parent directory."
+                                              usr-dir))
                               score-dir)))
                       score-dir)))
     (parse-def-file conf:conf-file conf:conf-prefix)
     (parse-def-dir conf:conf-dir)
+    ;; Set the conf:local-conf-dir variable, that will
+    ;; be used later for macros, themes, local overrides etc.
     (set! conf:local-conf-dir usr-conf)
     (parse-def-dir conf:local-conf-dir)))

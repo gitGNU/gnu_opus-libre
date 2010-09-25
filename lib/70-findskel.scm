@@ -15,18 +15,6 @@
                       conf:skel-dir "/"
                       conf:default-skel ".lyskel"))
 
-(define (make-this-text name suffix)
-  (let ((mark (ly:parser-lookup parser
-                                (string->symbol
-                                 (string-append name suffix)))))
-    (if (markup? mark) mark
-        (begin
-          (if (ly:get-option 'debug-messages)
-              (ly:warning "No text found in ~a~a" name suffix))
-          (if (ly:get-option 'use-variable-names)
-              (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
-              point-stencil)))))
-
 (define (read-file x)
   "Read a skeleton file and return it as a single string."
   (let ((ret-str ""))
@@ -39,6 +27,8 @@
     ret-str))
 
 (define (find-skel skelname)
+  "Try to find a skeleton of the given name, either
+in the local conf dir or in the global skeleton repository."
   (let ((local-skel (find-files conf:local-conf-dir
                                 (string-append "/"
                                                skelname ".lyskel")))
@@ -50,6 +40,9 @@
             #f))))
 
 (define skel-file
+;;   "The skeleton that will be used to compile the current part.
+;; If no skeleton has been specified or if the requested skeleton
+;; wasn't found, a default, versatile skeleton will be tried."
   (if (defined-string? 'skel)
       (let* ((requested-skel (ly:parser-lookup parser 'skel))
              (file (find-skel requested-skel)))
