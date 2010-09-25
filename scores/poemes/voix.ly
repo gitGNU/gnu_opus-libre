@@ -80,14 +80,13 @@ DeuxSoprano = \relative {
   sold8 dod4--(\< sib8) | \break
   \time 2/2
   sol'2.->\! r4 |
-  %\strtTxtSpan #"poco a poco rit."
-  r2 si,!--(\p si-- si--) |
+  r2\startText "poco a poco rit."
+  si,!--(\p si-- si--) |
   \time 3/2
-  %\stopTxtSpan
   si2.--(\> si--)
   \bar "||"
   \time 5/4
-  si--\! r2 | R1*5/4
+  si--\! \stopText r2 | R1*5/4
   \time 2/2
   R1*6
   r2 r8 sol4.-> -\dyn "mf_intense" |
@@ -97,11 +96,12 @@ DeuxSoprano = \relative {
   sol sol |
   \time 3/4
   sib2--( solb4) | r fa(\< lab | mi'2--)\! r4 |
-  %\strtTxtSpan #"poco a poco più agitato"
-  r2 mib4 | sol2--( re4) | r dod( mi) | sol2--( re4) |
+  r2\startText "poco a poco più agitato"
+  mib4 | sol2--( re4) | r dod( mi) | sol2--( re4) |
   r si(\< fa' | sib2.--)\f | r2 mi,4(\< |
-  lab4.)\! re,8(\< sol4) |
+  lab4.)\! re,8(\< sol4)\stopText |
   \time 2/2
+  \tempo "Tempo I"
   \grace sol16 dod1~->--\ff |
   \t {dod4( sib do} \t {sol\> sib fa} |
   \time 3/2
@@ -109,7 +109,7 @@ DeuxSoprano = \relative {
   \time 2/2
   R1 r4 reb~\mf \dim reb16 sol mib4. |
   \t {do2 reb( sol)} |
-  do,4.(~ sib8~ \t {sib4\> reb lab} |
+  do,4.(~ \! sib8~ \t {sib4\> reb lab} |
   sib2)\! r r r8 sib4. -\dyn "p_semplice" | fa4 r r2 |
   r r8 sol4. | re4 r r2 | R1*2
   r2 reb\pp \grace do16( do'1--)~\ten do~ do4 r r2\fermata
