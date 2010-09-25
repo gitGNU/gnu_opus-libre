@@ -26,20 +26,6 @@
 (make-simple-function lang:tuplet-letter-quad ; \tttt
                       #{ \times 4/7 $x #})
 
-
-;; Composite dynamics ---------------------------------------------;
-(define dyn
-  ;;syntax: -\dyn instead of \dyn (see Issue #1264).
-  (define-music-function (parser location arg) (markup?)
-    (make-music 'AbsoluteDynamicEvent
-                'text (cond
-                       ((string? arg)
-                        (if (string-every char-set:dynamics arg)
-                            arg
-                            (markup #:dynamic-string arg)))
-                       (else arg)))))
-
-
 ;; Auto octavation ------------------------------------------------;
 (define oct
   (define-music-function (parser location mus) (ly:music?)
@@ -54,19 +40,6 @@
 (make-script '(accdet . '("tenuto" "accent")))
 (make-script '(accst . '("accent" "staccato")))
 (make-script '(dwnb . "downbow"))
-
-(define ten
-  (define-music-function (parser location music) (ly:music?)
-    (if
-     (equal? (ly:music-property music 'name) 'EventChord)
-     (set! (ly:music-property music 'elements)
-           (append (ly:music-property music 'elements)
-                   (list (make-music 'TextScriptEvent 'text
-                                     ;; ugh. Haphazard alignment.
-                                     (markup #:translate-scaled (cons 4 0)
-                                             #:indic "(ten.)"))))))
-    music))
-
 
 ;; Polyphony shortcuts --------------------------------------------;
 (define pl
