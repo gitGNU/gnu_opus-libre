@@ -108,7 +108,9 @@
   (let*
       ((x-ext (ly:stencil-extent stencil X))
        (y-ext (ly:stencil-extent stencil Y))
-       (blot (if (list? rad) (car rad) 0.0)))
+       (def (ly:parser-lookup parser 'conf:rounded-whiteout))
+       (radius (if (number? def) def 0))
+       (blot (if (list? rad) (car rad) radius)))
     (ly:stencil-add
      (stencil-with-color (ly:round-filled-box x-ext y-ext blot)
                          white)

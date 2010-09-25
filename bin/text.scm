@@ -25,8 +25,6 @@
                             (markup #:dynamic-string arg)))
                        (else arg)))))
 
-
-
 (define startText
   (define-music-function (location parser txt) (markup?)
      (make-text-span txt)))
