@@ -6,44 +6,6 @@
 
 %% FIXME: adapt to new framework
 
-#(use-modules (ice-9 regex))
-#(use-modules (ice-9 optargs))
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%% Dynamics -------------------------------------------------------%
-
-%%% This function was provided by Graham Percival.
-#(define (make-dynamic-extra dynamic string)
-     (make-music
-       'AbsoluteDynamicEvent
-       'tweaks
-         ;; calculate centering for text
-         (list (cons (quote X-offset)
-           (+ -0.5 (* -0.5 (string-length dynamic)))))
-       'text
-         (markup #:rounded-whiteout 1
-           #:line (
-               dynamic
-               #:hspace -0.3
-               #:normal-text #:italic string))
-      ))
-
-#(define (make-extra-dynamic string dynamic)
-     (make-music
-       'AbsoluteDynamicEvent
-       'tweaks
-         ;; calculate centering for text
-         (list (cons (quote X-offset)
-           (+ -0.5 (* -0.5 (string-length dynamic)))))
-       'text
-         (markup #:rounded-whiteout 1
-           #:line (
-               #:normal-text #:italic string
-               #:hspace -0.3
-               #:dynamic dynamic))
-      ))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -163,57 +125,6 @@ meno =
 jet =
 #(define-music-function (parser location music) (ly:music?)
 #{ \ind #"jeté" $music #})
-
-
-%% Text Spanners --------------------------------------------------%
-
-#(define (make-txt-span music t)
- (set! (ly:music-property music 'elements)
-                       (append (ly:music-property music 'elements)
-                       (list (make-music 'TextSpanEvent
-                         'span-direction t))))
-                         music)
-
-%% The two following functions are deprecated. Better code follows below.
-startTxt =
-#(define-music-function (parser location texte music ) (string? ly:music?)
-#{ \override TextSpanner #'bound-details #'left #'text =
-  \markup { \bold $texte }
-                $(make-txt-span music -1)#})
-
-stopTxt =
-#(define-music-function (parser location music) (ly:music?)
-     (make-txt-span music 1))
-
-#(define (make-text-span txt)
-"Make a TextSpanner that begins with the given STR."
-  (let* ((m (make-music 'TextSpanEvent
-             'span-direction -1))
-         (details (assoc-get 'bound-details
-                   (assoc-get 'TextSpanner
-                    all-grob-descriptions)))
-         (left-details (assoc-get 'left
-                        details)))
-   (ly:music-set-property! m 'tweaks
-    (acons 'bound-details
-     (acons 'left
-      (acons 'text txt
-       left-details)
-      details)
-     (ly:music-property m 'tweaks)))
-   m))
-
-startText=
-#(define-music-function (location parser txt) (string?)
-(make-text-span txt))
-
-stopText= #(make-music 'TextSpanEvent 'span-direction 1)
-
-%% Predefined commands
-
-rit = #(make-text-span "rit.")
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Other Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

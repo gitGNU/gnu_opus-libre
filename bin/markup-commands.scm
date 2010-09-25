@@ -11,8 +11,6 @@
 
 ; Markup commands.
 
-(load "../lib/libtext.scm")
-
 (define-markup-command (smallCaps layout props text) (markup?)
   ;; Thanks to Nicolas Sceaux! See libtext.scm.
   #:category font
@@ -80,7 +78,7 @@ marks.  Regular spaces are allowed inside words.
   (markup?)
   (let* ((def (ly:parser-lookup parser 'conf:rounded-whiteout))
          (radius (if (number? def) def 0)))
-    (rounded-whiteout-stencil (interpret-markup layout props arg) radius)))
+    (stencil-whiteout (interpret-markup layout props arg) radius)))
 
 ;; Probably stolen from Nicolas' code -- is this really useful here?
 (define-markup-command (line-width-ratio layout props width-ratio arg) (number? markup?)

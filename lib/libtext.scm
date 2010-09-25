@@ -101,14 +101,34 @@
 
 
 
-;; rounded-whiteout: this allows us to override
-;; the standard whiteout markup definition.
+;; overriding the standard whiteout markup definition
+;; allows us to add an optional radius argument.
 
-(define-public (rounded-whiteout-stencil stencil blot)
+(define-public (stencil-whiteout stencil . rad)
   (let*
       ((x-ext (ly:stencil-extent stencil X))
-       (y-ext (ly:stencil-extent stencil Y)))
+       (y-ext (ly:stencil-extent stencil Y))
+       (blot (if (list? rad) (car rad) 0.0)))
     (ly:stencil-add
      (stencil-with-color (ly:round-filled-box x-ext y-ext blot)
                          white)
      stencil)))
+
+
+(define (make-text-span str)
+"Make a TextSpanner that begins with the given STR."
+  (let* ((m (make-music 'TextSpanEvent
+             'span-direction -1))
+         (details (assoc-get 'bound-details
+                   (assoc-get 'TextSpanner
+                    all-grob-descriptions)))
+         (left-details (assoc-get 'left
+                        details)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'bound-details
+     (acons 'left
+      (acons 'text str
+       left-details)
+      details)
+     (ly:music-property m 'tweaks)))
+   m))
