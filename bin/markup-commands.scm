@@ -74,12 +74,6 @@ marks.  Regular spaces are allowed inside words.
                                   (style-markup word)))
                             str-list)))))
 
-(define-markup-command (whiteout layout props arg)
-  (markup?)
-  (let* ((def (ly:parser-lookup parser 'conf:rounded-whiteout))
-         (radius (if (number? def) def 0)))
-    (stencil-whiteout (interpret-markup layout props arg) radius)))
-
 ;; Probably stolen from Nicolas' code -- is this really useful here?
 (define-markup-command (line-width-ratio layout props width-ratio arg) (number? markup?)
   (interpret-markup layout props

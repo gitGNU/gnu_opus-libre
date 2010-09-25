@@ -16,11 +16,23 @@
 (define conf:default-score "etc/blank")
 
 (define-public (defined-string? sym)
-  (string? (ly:parser-lookup parser sym)))
-
-(define-public (exists? loc) (access? loc F_OK))
+  "Does SYM refer to a string?"
+   (string? (ly:parser-lookup parser sym)))
+ 
+;; This one isn't actually used. 
+(define-public (defined-music? sym)
+  "Does SYM refer to a music expression?"
+  (ly:music? (ly:parser-lookup parser sym)))
+ 
+(define-public (exists? loc)
+  "Is LOC an accessible file/directory?"
+  (access? loc F_OK))
 
 (define score-dir
+;;   "The directory that contains all music variables
+;; and local settings, typically located in scores/.
+;; Think of it as the usr/ directory in a standard
+;; *nix file-tree."
   (if (defined-string? 'scores)
       (let* ((score-subdir (ly:parser-lookup parser 'scores))
              (full-dir

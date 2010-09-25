@@ -57,8 +57,17 @@
           (add-script mus \"~a\"))))" sym script)))
     (if (not (null? rest)) (make-scripts rest))))
 
+(define (load-macros-in dir)
+   (map (lambda (x)
+          ;; ugh.
+          (load (string-append "../" x)))
+       (find-files dir ".scm$")))
+
 (define eval-macros
-  (map (lambda (x)
-         ;; ugh.
-         (load (string-append "../" x)))
-       (find-files conf:macros-dir ".scm$")))
+;;   "Load macros, first at a global level
+;; (typically in bin/), then locally (which
+;; allows the score to override some definitions
+;; if needed)."
+  (begin 
+    (load-macros-in conf:macros-dir)
+    (load-macros-in conf:local-conf-dir)))

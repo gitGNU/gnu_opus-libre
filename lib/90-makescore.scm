@@ -25,14 +25,18 @@
          ly-files)))
 
 (define (alist-reverse alist)
+  "Browse ALIST by looking for props, not by keys."
   (if (null? alist) '()
       (cons (cons (cdr (car alist)) (car (car alist)))
             (alist-reverse (cdr alist)))))
 
 (define (ls-index str lst)
+  "Where is STR in LST?"
   (number->string (- (length lst) (length (member str lst)))))
 
 (define (eval-skel file)
+  "Load skeleton in FILE, and apply it to the
+current-part music."
   (eval-string (format #f
                        "(define-public (apply-skel arg instr-list)
       (set! current-part (car arg))
@@ -48,6 +52,10 @@
                        (read-file (open-input-file file)))))
 
 (define output-redirect
+;;   "Make sure that the PDF output will be placed in
+;; the output-dir directory.  If book-filename has already
+;; been defined by the user, just keep it, otherwise it
+;; will be named after the score directory's name in scores/."
   (set! book-filename
         (let* ((orig-filename (if (defined-string? 'book-filename)
                                   book-filename
@@ -63,6 +71,14 @@
               (string-append prefix new-filename)))))
 
 (define make
+;;   "This is where the score is put together and all functions
+;; are evaluated.  \make takes a string argument, that can be either:
+;;   - the name of an instrument (to compile just a separate part)
+;;   - the name of a section, or a separate piece
+;;   - the name of a specific skeleton.
+;; If ARG is an empty string or #"all" (or a localized equivalent),
+;; then the whole score will be built.
+;; Unrecognized string arguments are tolerated for now, but not recommended."
   (define-music-function (parser location arg) (string?)
     eval-conf
     eval-lang

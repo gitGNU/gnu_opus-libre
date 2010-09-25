@@ -12,6 +12,12 @@
 ; Language selection.
 
 (define eval-lang
+;;   "Look for a user-specified language, and load
+;; language files accordingly, first globally, then
+;; locally.  Note that the default language file,
+;; typically in etc/ly.conf.d/lang.conf, is always
+;; loaded (which allows for lighter language files
+;; that only define what needs to be overriden)."
   (let* ((input-lang
           (if (defined-string? 'input)
               (ly:parser-lookup parser 'input)
