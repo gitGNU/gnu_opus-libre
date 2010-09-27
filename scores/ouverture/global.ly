@@ -7,6 +7,8 @@ PianoIIInstr = "Secondo"
 PianoIShortInstr = "I."
 PianoIIShortInstr = "II."
 
+\include "italiano.ly"
+
 % TODO: Use global-measures context.
 
 PianoIDynamics = {

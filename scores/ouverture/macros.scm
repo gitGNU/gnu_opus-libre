@@ -5,7 +5,7 @@
 ; (when ready, which obviously isn't so right now).
 
 (define bracketDown
-  (define-music-function (parser location text music) (ly:music?)
+  (define-music-function (parser location text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
       (set! current-staff-position 1)
