@@ -58,3 +58,7 @@
 \once \override Beam  #'transparent = ##t
 \once \override Accidental  #'transparent = ##t
 #})
+
+(define graceNotes
+  (define-music-function (parser location x) (ly:music?)
+  #{ \tiny $x \normalsize #}))
