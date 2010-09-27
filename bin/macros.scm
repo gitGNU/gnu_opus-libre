@@ -49,3 +49,12 @@
 
 (staff-change-command lang:upper-hand) ;; depending on your input language:
 (staff-change-command lang:lower-hand) ;; \rh or \md etc. for switching staves.
+
+
+(define hideNote #{
+\once \override NoteHead  #'transparent = ##t
+\once \override NoteHead  #'no-ledgers = ##t
+\once \override Stem  #'transparent = ##t
+\once \override Beam  #'transparent = ##t
+\once \override Accidental  #'transparent = ##t
+#})
