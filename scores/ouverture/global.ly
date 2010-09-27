@@ -20,7 +20,7 @@ PianoIDynamics = {
   \time 2/4 s2
   \time 3/8 s4.
   \time 9/16 s16*9*3
-  \time 2/4 s2
+  \time 2/4 s2*2
   \time 3/8 s4.
   \time 4/4 s1 \bar "||"
   
