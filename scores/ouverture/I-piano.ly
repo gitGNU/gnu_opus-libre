@@ -24,8 +24,8 @@ PianoIMd = \relative do' {
 
   <re la' re>8 s s4
   \pl {re8 lab' re lab'}
-  {s8 \grace \tt {lab,32 do mib solb sib}
-  s8 \grace \tt {lab32 do mib solb sib} }
+  {s8 \graceNotes \tt {lab,32 do mib solb sib}
+  s8 \graceNotes \tt {lab32 do mib solb sib} }
 }
 
 PianoIMg = \relative do' {
@@ -50,11 +50,11 @@ PianoIMg = \relative do' {
   <mi,, mi'>8. dod'8 red <mi, mi'>16~ |
   <mi mi'> sib'8 sol'8. <mi la re>16 <fad si mi>~ |
   <fad si mi> <sold do fa>8 <la re sol>8. |
-  \ottava #1
+  \ottava #-1
   <re,,, re'>16 <mi mi'>8. \ottava #0
   <re' re'>16 <mi mi'>8.~ \t {<mi mi'>4 <re re'> <mi mi'>} |
   \pl {<re la' re>8 lab' re \md lab' }
-  {s8 \grace \tt {lab,32 do mib solb sib}
-  s8 \grace \md \tt {lab32 do mib solb sib} } \mg
+  {s8 \graceNotes \tt {lab,32 do mib solb sib}
+  s8 \graceNotes \md \tt {lab32 do mib solb sib} } \mg
   s2
 }
