@@ -9,25 +9,13 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-dash = {
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
-
-leftSyl = {
-  \once \override LyricText #'self-alignment-X = #0.9
-}
-
-
-
 % Entry point for scores compilation.
 \version "2.13.32"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code language (see locale/ ) ----------------------------%
-input = "en"
+input = "fr"
 
 %% Edition localisation (if different) ----------------------------%
 %edition = "fr"
@@ -35,17 +23,17 @@ input = "en"
 %%%%%%%%%%%%%%%%%%%%%%%%%% Score selection %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code directory (see scores/ ) ---------------------------%
-scores = "free"
+scores = "ouverture"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Skeleton (see etc/skel/ ) --------------------------------------%
-skel = "song"
+skel = "2pianos"
 
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
-structure = #'("" "scene")
+structure = #'("")
 
 %lyricsSuffix = "Texte"
 
@@ -61,6 +49,6 @@ structure = #'("" "scene")
 % { c }
 %\bookOutputName #"toto"
 
-\make #"all"
+\make #""
 
 %%-----------------------------------------------------------------%
