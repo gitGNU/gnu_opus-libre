@@ -18,12 +18,12 @@
 (define-public (defined-string? sym)
   "Does SYM refer to a string?"
    (string? (ly:parser-lookup parser sym)))
- 
-;; This one isn't actually used. 
+
+;; This one isn't actually used.
 (define-public (defined-music? sym)
   "Does SYM refer to a music expression?"
   (ly:music? (ly:parser-lookup parser sym)))
- 
+
 (define-public (exists? loc)
   "Is LOC an accessible file/directory?"
   (access? loc F_OK))
@@ -33,15 +33,25 @@
 ;; and local settings, typically located in scores/.
 ;; Think of it as the usr/ directory in a standard
 ;; *nix file-tree."
-  (if (defined-string? 'scores)
-      (let* ((score-subdir (ly:parser-lookup parser 'scores))
-             (full-dir
-              (string-append conf:scores-dir "/" score-subdir)))
-        (if (exists? full-dir)
-            full-dir
-            (begin (ly:warning "Score directory not found: ~a.
-A blank score will be created instead." full-dir)
-                   conf:default-score)))
-      (begin (ly:warning "Score directory not defined!
-A blank score will be created instead.")
-             conf:default-score)))
+  (let* ((defined-score (ly:parser-lookup parser 'scores))
+         (branch (if (ly:get-option 'git-branch-as-score-name)
+                     (let* ((port (open-input-pipe "git branch | grep \\*"))
+                            (str (string-drop (read-line port) 2)))
+                       (close-pipe port)
+                       str)
+                     #f))
+         (make-path (lambda (f) (string-append conf:scores-dir "/" f))))
+  (if branch
+      (if (eq? branch "master")
+          conf:default-score
+          (if (exists? (make-path branch))
+              (make-path branch))))
+      (if defined-score
+          (if (exists? (make-path defined-score))
+              (make-path defined-score)
+              (begin (ly:warning "Score directory ~a not found in ~a.
+    A blank score will be created instead." defined-score conf:scores-dir)
+                  conf:default-score))
+          (begin (ly:warning "Score directory not defined!
+          A blank score will be created instead.")
+                  conf:default-score))))

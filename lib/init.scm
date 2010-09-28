@@ -14,7 +14,8 @@
 (use-modules
  (ice-9 regex)
  (ice-9 optargs)
- (ice-9 rdelim))
+ (ice-9 rdelim)
+ (ice-9 popen))
 
 ;; Base variables initialization ----------------------------------;
 ;; (may be overriden later when parsing conf-file)
