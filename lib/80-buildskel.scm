@@ -43,6 +43,27 @@ markup exists."
               (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
               point-stencil)))))
 
+(define newVoice
+;;   "If NAME matches a defined music expression, then
+;; create a Voice for it.  If a matching timeline can be
+;; found, try and squash it as well."
+  (define-music-function (parser location name) (string?)
+    (let* ((current-name (string-append current-part name))
+           (music (ly:parser-lookup parser (string->symbol current-name)))
+           (timeline (ly:parser-lookup parser
+                                       (string->symbol
+                                        (string-append current-name lang:timeline-suffix)))))
+      (if (ly:get-option 'debug-messages) (ly:progress "Loading music from ~a..." current-name))
+      (if (ly:music? music)
+          #{ \new Voice = $name <<
+               $music
+               $(if (ly:music? timeline)
+                  #{ $timeline #})
+              >> #}
+          (begin (if (ly:get-option 'debug-messages)
+                     (ly:message "Variable ~a doesn't exist." mus-name))
+              (make-music 'Music 'void #t))))))
+
 (define newStaff
 ;;   "If NAME matches a defined music expression, then
 ;; create a Staff for it.  Then find and include any
@@ -50,21 +71,19 @@ markup exists."
 ;; this staff (using appropriate suffixes)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (mus-name (string-append current-part name))
-           (music (ly:parser-lookup parser (string->symbol mus-name)))
+           (music (ly:parser-lookup parser (string->symbol (string-append current-part name))))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix))
            (lyrics (ly:parser-lookup parser
                                      (string->symbol
-                                      (string-append mus-name lang:lyrics-suffix)))))
-      (if (ly:get-option 'debug-messages) (ly:message "Loading music from ~a..." mus-name))
+                                      (string-append current-part name lang:lyrics-suffix)))))
       (if (ly:music? music)
           #{ <<
              \new Staff \with {
                instrumentName = $instr
                shortInstrumentName = $short-instr
              }
-             \new Voice = $name $music
+             \newVoice $name
                $(if (ly:music? lyrics)
                   #{ \new Lyrics \lyricsto $name $lyrics #})
           >> #}
@@ -105,13 +124,12 @@ markup exists."
   (define-music-function (parser location name) (string?)
     #{ \new GrandStaff
        $(let* ((name (assoc-name lang:instruments name))
-               (mus-name (string-append current-part name))
                (musiclist (list #{ {} #}))
                (numlist (if (ly:get-option 'only-suffixed-varnames)
                             lang:numbers
                             (cons "" lang:numbers))))
           (map (lambda (x)
-                  (let ((staff-name (string-append mus-name (string-capitalize x))))
+                  (let ((staff-name (string-append current-part mus-name (string-capitalize x))))
                      (append! musiclist (list
                         #{ \newStaff $staff-name #}))))
             lang:numbers)
@@ -126,10 +144,10 @@ markup exists."
 ;; Staff-\changing shorthands.  If a suitable Dynamics expression
 ;; is found, it will also be included accordingly."
   (define-music-function (parser location name) (string?)
-    (let* ((current-name (string-append current-part (assoc-name lang:instruments name)))
-           (upper (string-append current-name (string-capitalize lang:upper-hand)))
-           (lower (string-append current-name (string-capitalize lang:lower-hand)))
-           (dynamics (string-append current-name lang:dynamics-suffix))
+    (let* ((name (assoc-name lang:instruments name))
+           (upper (string-append name (string-capitalize lang:upper-hand)))
+           (lower (string-append name (string-capitalize lang:lower-hand)))
+           (dynamics (string-append current-part name lang:dynamics-suffix))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
     #{ \new PianoStaff \with {
@@ -137,7 +155,7 @@ markup exists."
          shortInstrumentName = $short-instr
        }
      <<
-         \new Staff = $lang:upper-hand $(include-music upper)
+         \new Staff = $lang:upper-hand \newVoice $upper
          \new Dynamics $(include-music dynamics)
-         \new Staff = $lang:lower-hand $(include-music lower)
+         \new Staff = $lang:lower-hand \newVoice $lower
      >> #})))
