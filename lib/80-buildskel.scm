@@ -44,25 +44,32 @@ markup exists."
               point-stencil)))))
 
 (define newVoice
-;;   "If NAME matches a defined music expression, then
-;; create a Voice for it.  If a matching timeline can be
-;; found, try and squash it as well."
+  ;;   "If NAME matches a defined music expression, then
+  ;; create a Voice for it.  If a matching timeline can be
+  ;; found, try and squash it as well."
   (define-music-function (parser location name) (string?)
     (let* ((current-name (string-append current-part name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
-           (timeline (ly:parser-lookup parser
-                                       (string->symbol
-                                        (string-append current-name lang:timeline-suffix)))))
+           (part-timeline (ly:parser-lookup parser
+                                            (string->symbol
+                                             (string-append current-part lang:timeline-suffix))))
+           (instr-timeline (ly:parser-lookup parser
+                                             (string->symbol
+                                              (string-append current-name lang:timeline-suffix)))))
       (if (ly:get-option 'debug-messages) (ly:progress "Loading music from ~a..." current-name))
       (if (ly:music? music)
-          #{ \new Voice = $name <<
+          #{ \new Voice = $name
+             <<
                $music
-               $(if (ly:music? timeline)
-                  #{ $timeline #})
-              >> #}
+               $(if (ly:music? instr-timeline)
+                    instr-timeline
+                    (if (ly:music? part-timeline)
+                        part-timeline))
+             >>
+          #}
           (begin (if (ly:get-option 'debug-messages)
                      (ly:message "Variable ~a doesn't exist." mus-name))
-              (make-music 'Music 'void #t))))))
+                 (make-music 'Music 'void #t))))))
 
 (define newStaff
 ;;   "If NAME matches a defined music expression, then
