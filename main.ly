@@ -19,13 +19,15 @@ leftSyl = {
   \once \override LyricText #'self-alignment-X = #0.9
 }
 
+
+
 % Entry point for scores compilation.
 \version "2.13.32"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code language (see locale/ ) ----------------------------%
-input = "fr"
+input = "en"
 
 %% Edition localisation (if different) ----------------------------%
 %edition = "fr"
@@ -33,20 +35,17 @@ input = "fr"
 %%%%%%%%%%%%%%%%%%%%%%%%%% Score selection %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code directory (see scores/ ) ---------------------------%
-
-scores = "poemes"
+scores = "free"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Skeleton (see etc/skel/ ) --------------------------------------%
-skel = "melodie"
+skel = "song"
 
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
-structure = #'("Un" "Deux" "Trois")
-
-lyricsSuffix = "Texte"
+structure = #'("" "scene")
 
 %lyricsSuffix = "Texte"
 
@@ -62,6 +61,6 @@ lyricsSuffix = "Texte"
 % { c }
 %\bookOutputName #"toto"
 
-\make #"Un"
+\make #"all"
 
 %%-----------------------------------------------------------------%
