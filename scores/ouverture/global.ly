@@ -1,7 +1,7 @@
 %-- Ouverture -- global.ly ----------------------------------------%
 % (c) 2002-2010 Valentin Villenave <valentin@villenave.net>
 
-Titre = "Ouverture"
+Titre = "Ouverture pour deux pianos"
 PianoIInstr = "Primo"
 PianoIIInstr = "Secondo"
 PianoIShortInstr = "I."
@@ -11,7 +11,7 @@ PianoIIShortInstr = "II."
 
 % TODO: Use global-measures context.
 
-PianoIDynamics = {
+Mesures = {
   \tempo "Très décidé" 4 = 92
   \time 4/4 s1*2
   \time 5/8 s1*5/8*4
@@ -23,7 +23,7 @@ PianoIDynamics = {
   \time 2/4 s2*2
   \time 3/8 s4.
   \time 4/4 s1 \bar "||"
-  
+
             s1*2
   \time 2/4 s2
   \time 4/4 s1*2
@@ -37,7 +37,7 @@ PianoIDynamics = {
   \time 4/4 s1*2
   \time 2/4 s2*7
   \time 3/8 s4. \bar "||"
-  
+
   \tempo "Plus large" 4 = 60
   \time 2/2 s1*8
   \time 3/4 s2.
@@ -87,7 +87,7 @@ PianoIDynamics = {
   \time 2/4 s2
   \time 3/8 s4.*2
   \time 2/4 s2 \bar "||"
-  
+
   \tempo "Poco stringendo" 4 = 100 %FIXME: use markup?
   \time 7/4 s4*7*10
   \time 5/4 s4*5

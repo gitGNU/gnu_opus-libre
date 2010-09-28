@@ -52,7 +52,7 @@
                             (acons 'self-alignment-Y 1
                                    (acons 'text
                                           (markup #:normal-text #:fontsize 3
-                                                  #:center-column 
+                                                  #:center-column
                                                   (#:postscript (format #f "
                                                      .5 0 -.5 0 lineto
                                                      -.5 0 -.5 ~a lineto
@@ -80,7 +80,7 @@
                             (acons 'self-alignment-Y -1
                                    (acons 'text
                                           (markup #:normal-text #:fontsize 3
-                                                  #:center-column 
+                                                  #:center-column
                                                   (
                                                    #:with-dimensions '(0 . 0) '(0 . 0)
                                                    #:center-align text
@@ -93,3 +93,19 @@
                                           (ly:music-property obj 'tweaks))))
                       obj)))))
    music))
+
+(define lightBeam
+#{
+\once \override Beam #'beam-thickness = #0.36
+\once \override Beam #'gap = #0.5
+#})
+
+(define lightBeams
+  (define-music-function (parser location x) (ly:music?)
+#{
+\override Beam #'beam-thickness = #0.36
+\override Beam #'gap = #0.5
+$x
+\revert Beam #'beam-thickness
+\revert Beam #'gap
+#}))

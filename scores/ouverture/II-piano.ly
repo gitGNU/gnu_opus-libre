@@ -23,7 +23,18 @@ PianoIIMd = \relative do' {
   \clef bass
   <fa,,,, sold si re mi>2 \clef treble |
 
-  s2
+  s2 \pl {re''8 sold re' sold}
+  \lightBeams { \tt {re,32 \graceNotes {fad la do mi}} s8
+  \tt {re32 \graceNotes {fad la do mi}} s8}
+  \stemUp \ottava #1
+  \mg \lightBeams {\tt {re32 \md \graceNotes {fad la do mi}}
+  \mg s8 \tt {re32 \md \graceNotes {la' fad mi do}}
+  \mg s8 \tt {re,32 \md \graceNotes {fad la do mi}}
+  \mg s8 \tt {re32 \md \graceNotes {la' fad mi do}}
+  \mg s8 \tt {re,32 \md \graceNotes {fad la do mi}}
+  \mg s8 \tt {re32 \md \graceNotes {la' fad mi do}}
+  s2 \ottava #0 s2 \stemNeutral |
+  s2 \ottava #1 <sold sold'>8 s s4 | s2 |
 }
 
 
@@ -53,4 +64,24 @@ PianoIIMg = \relative do' {
   \clef bass <re, la' re>16 <mi si' mi>4..
   \ottava #-1
   <mi,, si' re>2 \ottava #0
+  \stemDown
+  <re re'>8 sold' re' sold s2 \clef treble \ottava #1
+  re'r8 sold re' sold, re sold re' sold, |
+  re sold re' sold, | \ottava #0 \stemNeutral
+  \ind "loco"
+  re32 \md do' la fad
+  \mg sold, \md fad' mib do
+  \mg dod, \md mib' do la
+  \mg sol, \md do la fad
+  \mg mib, \md fa' re si
+  \mg sib, \md mib' do la
+  \mg \clef bass fad, \md lab' fa re
+  \mg \t {la16 mi la,} |
+
+  \t {re, la' mi'} \md \t {mi' \mg la, re,}
+  \t {re, la' mi'} \md \t {mi' \mg la, re,}
+  \t {re, la' mi'} \md \t {mi' \mg la, re,}
+  \t {re, la' mi'} \md \t {mi' \mg la, re,}
+  \t {re, la' mi'} \md \t {mi' \mg la, re,}
+  \t {re, la' mi'} \md re' la' re mi |
 }
