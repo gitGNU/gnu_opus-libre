@@ -32,7 +32,7 @@
 ;; for consistency only.
 (define stopText
   stopTextSpan)
- 
+
 (define ten
   (define-music-function (parser location music) (ly:music?)
     (if
@@ -44,3 +44,13 @@
                                      (markup #:translate-scaled (cons 4 0)
                                              #:indic "(ten.)"))))))
     music))
+
+(define ind
+ (define-music-function (parser location text music) (string? ly:music?)
+   (if
+     (equal? (ly:music-property music 'name) 'EventChord)
+     (set! (ly:music-property music 'elements)
+           (append (ly:music-property music 'elements)
+                  (list (make-music 'TextScriptEvent 'direction 1
+                  'text (markup #:indic text))))))
+   music))
