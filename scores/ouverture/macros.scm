@@ -109,3 +109,20 @@ $x
 \revert Beam #'beam-thickness
 \revert Beam #'gap
 #}))
+
+(define whiteNote
+  (define-music-function (parser location arg) (ly:music?)
+    (set! (ly:music-property arg 'tweaks)
+                                 (acons 'duration-log 1
+                                    (ly:music-property arg 'tweaks)))
+                         arg))
+
+(define blackNote
+  (define-music-function (parser location arg) (ly:music?)
+    (set! (ly:music-property arg 'tweaks)
+                                 (acons 'duration-log 4
+                                    (ly:music-property arg 'tweaks)))
+                         arg))
+
+(define graceNote
+  #{ \once \set fontSize = #-2 #})

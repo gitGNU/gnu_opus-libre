@@ -34,15 +34,60 @@ PianoIMd = \relative do' {
   \mg s8 \tt {lab,32 \md \graceNotes {solb' mib do sib}}
   \mg s8 \tt {lab32 \md \graceNotes {do mib solb sib}}
   \mg s8 \tt {lab,32 \md \graceNotes {solb' mib do sib}}
-  \tt {\mg re, \md \graceNotes {fad la do mi}}
-  \tt {\mg lab, \md \graceNotes {do mib solb sib}}
-  \tt {\mg re, \md \graceNotes {la' fad mi do}}
-  \tt {\mg lab \md \graceNotes {solb' mib do sib}}
-  \tt {\mg re, \md \graceNotes {fad la do mi}}
-  \tt {\mg lab, \md \graceNotes {do mib solb sib}}}
-  \mg re,8 \md r |
+  \tt {\mg re,[ \md \graceNotes {fad la do mi]}}
+  \tt {\mg lab,[ \md \graceNotes {do mib solb sib]}}
+  \tt {\mg re,[ \md \graceNotes {la' fad mi do]}}
+  \tt {\mg lab[ \md \graceNotes {solb' mib do sib]}}
+  \tt {\mg re,[ \md \graceNotes {fad la do mi]}}
+  \tt {\mg lab,[ \md \graceNotes {do mib solb sib]}}}
+  \mg re,8 \md  \ottava #0 r |
   \stemNeutral
 
+  <sol,,, \whiteNote re' sol>16 <la la'>4..*3/7
+  \ottava #1 re''8 mi \ottava #0
+  <sol,,, \whiteNote re' sol>16 <la la'>4.. |
+  <sol \whiteNote re' sol>16 <la la'>8. <sib sib'>16 <do do'>8. |
+  s1 s2 |
+  <dod dod'>16 <red red'>4..*1/7
+  \ottava #1 fa''8 la re,\rest \ottava #0
+  <dod,, dod'>16 <red red'>4.. |
+  <dod dod'>16 <red red'>8 <do do'>16 <sib sib'>8
+  <fad fad'>16 <mi mi'>~ <mi mi'>8 <mib la> |
+  <\whiteNote re sol dod>16 <la' red>4..*3/7
+  \ottava #1 mib'''16 fa la8 \ottava #0
+  <dod,,,, \whiteNote sib' dod>16 <red red'>4.. |
+  <dod dod'>16 <red red'>8 <la la'>16 <sib sib'>8
+  <sold' sold'>16 <la la'>~ <la la'> <fad' fad'> <sol sol'>8 |
+
+  \lightBeams {
+  <sold sold'>8 \graceNotes { la,,32 re mi la }
+  \bracketDown "m.s." mi' \graceNotes {
+  \bracketUp "m.d." la, mi re la \mg mi re la}
+  re, \graceNotes {la' re mi \md la re mi la}
+  \ind #"simile" mi' \graceNotes {la, mi re la \mg mi re la} |
+  re, \graceNotes {la' re mi \md la re mi la}
+  mi' \graceNotes {la, mi re la \mg mi re la}
+  re, \graceNotes {la' re mi}
+  la, \graceNotes {re la' re}
+  re, \graceNotes { \md la' mi' la} \mg
+  la, \graceNotes { \md re la' re}}
+  \ottava #1
+  <sold' sold'>8 <red red'>16 dod' <sold sold'>8 mi |
+  do'16 sib <sold sold'> la <red, red'> <dod dod'> <sold' sold'>8 |
+  <sold sold'>16 <red red'> dod' <sold sold'> mi do' sib <sold sold'> |
+  la <red, red'> <dod dod'>8 <sold' sold'>16 mi do sib |
+  \ottava #0
+  \ind #"loco"
+  <re, fad re'>16 <mi sold mi'>8. r16 \ottava #1
+  <sold' sold'> <red red'> dod' |
+  <sold sold'>8 mi16 do' sib <sold sold'> la red |
+  <dod, dod'>8 <sold' sold'>16 la
+  <red, red'> dod' \t {<sold sold'> red' dod} |
+  \t {<mi, mi'> do' sib}
+  \t {<sol sol'> re' do}
+  \t {<sold sol'> red' dod} |
+
+  <la la'>2*2\laissezVibrer \ottava #0
 }
 
 PianoIMg = \relative do' {
@@ -79,4 +124,47 @@ PianoIMg = \relative do' {
   re'8 lab' re lab re, lab' re lab |
   re, lab' re lab |
   re, lab' re lab re, lab' re r | \stemNeutral
+
+  \clef bass \ottava #0
+  <\whiteNote re,,,, si' mi>16 <dod' fad>4..
+  <\whiteNote re, si' mi>16 <dod' fad>4.. |
+  <\whiteNote re, si' mi>16 <dod' fad>8. \clef treble
+  <re sol>16 <mi la>8. \clef bass
+  \lightBeams {
+  \t {re,,16 \graceNotes {la' mi'}} \graceNotes { \t {re la' mi'}
+  \t {si, fad' dod'} \md \t {lab mib' sib'} \mg
+  \t {sib,, fa' do'} \md \t {sol re' la'} \mg
+  \t {sol,, re' la'} \t {mi' la, re,}
+  \t {fa, do' sol'} \md \t {la mi' si'}} \mg
+  \t {fad, \graceNotes {dod' sold'}} \md
+  \t {sib \graceNotes {fa' do'}} \mg |
+  \t {<sol,, sol'> \graceNotes {re' sol,}} \t {re \graceNotes {la' re}}
+  \t {sol, \graceNotes {re' sol,}} \t {re \graceNotes {la' re}}
+  \t {sol, \graceNotes {re' sol,}} \t {re \graceNotes {la' re}}
+  \t {sol, \graceNotes {re' sol,}} \t {re \graceNotes {la' re}} |
+  \t {sol, \graceNotes {re' sol,}} \t {re \graceNotes {la' re}}
+  \t {sol, \graceNotes {la re}} \t {sol \graceNotes {re sol,}}
+  \t {re' \graceNotes {la re,}} \t {sol \graceNotes {re la}}
+  \t {sol \graceNotes {re' la'}} \graceNotes \t {re, sol re}
+  \graceNotes { \t {sol, re' la'} \t {re, sol re}}
+  \t {mi, \graceNotes {si' fad'}} \graceNotes \t {si, re si}
+  \t {mi, \graceNotes {si' fad'}} \graceNotes \t {si, re si} |
+  \t {mib, \graceNotes {sib' sol'}} \t {\graceNote sib, mib, \graceNote sib'}
+  \t {\graceNotes {sol' sib,} mib,} \graceNotes \t {sib' sol' sib,}}
+  \t {mib, \graceNote sib' mib,} \t {sib' mib, la}
+
+  \ottava #-1 <re,, re'>2*1/2\laissezVibrer \ottava #0 s2. | s1 \clef treble
+  \t {re''16 la' mi'} re la' \t {mi' la, re,} mi la, |
+  \t {re, la' mi'} re la' \t {mi' la, re,} mi la, |
+  \t {re, la' mi'} re la' \t {mi' la, re,} \t {mi la, re,} \clef bass
+  \t {re, la' mi'} \t {la, re la'}
+  \t {re, la' mi'} \t {la, re la'} \clef treble |
+  <mi sol sib>16 <re la' do>4.. |
+  <mi sol re'>16 <fa la mi'>4.. |
+  <mi sol la re>16 <fa la si mi>8 <sol si do fa>16
+  <la do re sol>8 <fa sib re mi>16 <sol do mi fad>~ |
+  <sol do mi fad>8 \clef bass
+  r16 <dod,,, dod'>8. |
+
+  <la la'>2
 }
