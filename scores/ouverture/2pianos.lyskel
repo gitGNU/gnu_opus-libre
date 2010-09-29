@@ -1,0 +1,4 @@
+<<
+  \newPianoStaff $"PianoI"
+  \newPianoStaff $"PianoII"
+>>
