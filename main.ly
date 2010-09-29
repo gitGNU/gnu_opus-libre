@@ -9,20 +9,8 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-dash = {
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
-
-leftSyl = {
-  \once \override LyricText #'self-alignment-X = #0.9
-}
-
-
-
 % Entry point for scores compilation.
-\version "2.13.32"
+\version "2.13.35"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -45,7 +33,7 @@ skel = "song"
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
-structure = #'("" "scene")
+structure = #'("")
 
 %lyricsSuffix = "Texte"
 
@@ -57,10 +45,6 @@ structure = #'("" "scene")
 %% Select edition or instrument -----------------------------------%
 
 % (e.g. "fullscore", "pianoscore" or any instrument name)
-%\make #"all"
-% { c }
-%\bookOutputName #"toto"
-
 \make #"all"
 
 %%-----------------------------------------------------------------%
