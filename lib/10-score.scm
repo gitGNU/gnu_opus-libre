@@ -41,17 +41,15 @@
                        str)
                      #f))
          (make-path (lambda (f) (string-append conf:scores-dir "/" f))))
-  (if branch
-      (if (eq? branch "master")
-          conf:default-score
-          (if (exists? (make-path branch))
-              (make-path branch))))
+  (if (and branch (not (equal? branch "master")))
+      (if (exists? (make-path branch))
+          (make-path branch))
       (if defined-score
           (if (exists? (make-path defined-score))
               (make-path defined-score)
               (begin (ly:warning "Score directory ~a not found in ~a.
-    A blank score will be created instead." defined-score conf:scores-dir)
+A blank score will be created instead." defined-score conf:scores-dir)
                   conf:default-score))
           (begin (ly:warning "Score directory not defined!
-          A blank score will be created instead.")
-                  conf:default-score))))
+A blank score will be created instead.")
+                  conf:default-score)))))
