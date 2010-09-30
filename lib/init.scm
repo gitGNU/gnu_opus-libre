@@ -19,7 +19,7 @@
 
 
 (define-public (ly:debug-message string . rest)
-   (if (ly:get-option 'debug-messages)
+   (if (ly:get-option 'verbose)
        (apply ly:message (cons string rest))))
 
 ;; Base variables initialization ----------------------------------;
