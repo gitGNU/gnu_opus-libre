@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 20-readconf.scm                                    ;
+; opus_libre -- 30-readconf.scm                                    ;
 ;                                                                  ;
 ; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -56,8 +56,7 @@
   (let ((port (open-input-file file))
         ;; we don't want ly:prefixed variables, use conf: instead.
         (prefix (if (equal? conf:ly-prefix prefix) conf:conf-prefix prefix)))
-    (if (ly:get-option 'debug-messages)
-        (ly:message "Parsing configuration file ~a..." file))
+    (ly:debug-message "Parsing configuration file ~a..." file)
     (parse-lines-in port prefix)))
 
 (define (parse-def-dir dir . prefix)
@@ -81,22 +80,19 @@
                       (let ((usr-dir (string-append score-dir "/" conf:local-conf-dir)))
                         (if (exists? usr-dir)
                             (begin
-                              (if (ly:get-option 'debug-messages)
-                                  (ly:progress "Local configuration dir found in ~a" usr-dir))
+                              (ly:debug-message "Local configuration dir found in ~a" usr-dir)
                               usr-dir)
                             (begin
-                              (if (ly:get-option 'debug-messages)
-                                  (ly:message "~a does not exist; looking for overrides in parent directory."
-                                              usr-dir))
+                              (ly:debug-message "~a does not exist; looking for overrides in parent directory."
+                                usr-dir)
                               score-dir)))
                       score-dir)))
     (parse-def-file conf:conf-file conf:conf-prefix)
     (parse-def-dir conf:conf-dir)
     (if (exists? local-score)
         (if (not (ly:get-option 'skip-local-score-file))
-            (begin (if (ly:get-option 'debug-messages)
-                       (ly:progress "Parsing local definitions in ~a" local-score)
-                       (parse-def-file local-score #f)))))
+            (begin (ly:debug-message "Parsing local definitions in ~a" local-score)
+                       (parse-def-file local-score #f))))
     ;; Set the conf:local-conf-dir variable, that will
     ;; be used later for macros, themes, local overrides etc.
     (set! conf:local-conf-dir usr-conf)

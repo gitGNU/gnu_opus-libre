@@ -32,18 +32,15 @@
           (if (defined-string? 'input)
               (ly:parser-lookup parser 'input)
               (begin
-                (if (ly:get-option 'debug-messages)
-                    (ly:message "Input language not defined."))
+                (ly:debug-message "Input language not defined.")
                     (if guess-lang
                         (begin
-                           (if (ly:get-option 'debug-messages)
-                               (ly:message "Using system's default: ~a"
-                                  guess-lang))
+                           (ly:debug-message "Using system's default: ~a"
+                                  guess-lang)
                            guess-lang)
                         (begin
-                           (if (ly:get-option 'debug-messages)
-                               (ly:message "Using default language: ~a"
-                                  conf:default-language))
+                           (ly:debug-message "Using default language: ~a"
+                                  conf:default-language)
                            conf:default-language)))))
          (input-lang-file
           (string-append conf:locale-dir "/" input-lang ".conf"))
@@ -53,11 +50,9 @@
           (lambda (f)
             (if (exists? f)
                 (begin
-                  (if (ly:get-option 'debug-messages)
-                      (ly:message "Loading language file ~a..." f))
+                  (ly:debug-message "Loading language file ~a..." f)
                   (parse-def-file f conf:lang-prefix))
-                (if (ly:get-option 'debug-messages)
-                    (ly:warning "Language file not found: ~a."
-                                f))))))
+                (ly:debug-message "Language file not found: ~a."
+                                f)))))
     (load-lang-file input-lang-file)
     (load-lang-file local-lang-file)))

@@ -17,6 +17,11 @@
  (ice-9 rdelim)
  (ice-9 popen))
 
+
+(define-public (ly:debug-message string . rest)
+   (if (ly:get-option 'debug-messages)
+       (apply ly:message (cons string rest))))
+
 ;; Base variables initialization ----------------------------------;
 ;; (may be overriden later when parsing conf-file)
 
@@ -73,8 +78,7 @@
   (let* ((regx (if numbered "[0-9].*.scm$" ".scm$"))
          (scm-files (find-files dir regx)))
     (map (lambda (x)
-           (begin (if (ly:get-option 'debug-messages)
-                      (ly:message "Loading ~a..." x))
+           (begin (ly:debug-message "Loading ~a..." x)
                   (load x)))
          scm-files)))
 

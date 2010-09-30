@@ -22,11 +22,9 @@ try to find a matching entry in ALIST."
   "Turn NAME into a music expression if one exists."
   (let ((mus (ly:parser-lookup parser (string->symbol name))))
     (if (ly:music? mus)
-        (begin (if (ly:get-option 'debug-messages)
-                  (ly:message "Loading music from ~a..." name))
+        (begin (ly:debug-message "Loading music from ~a..." name)
                mus)
-        (begin (if (ly:get-option 'debug-messages)
-                  (ly:message "Variable ~a doesn't exist." name))
+        (begin (ly:debug-message "Variable ~a doesn't exist." name)
                (make-music 'Music 'void #t)))))
 
 (define (make-this-text name suffix)
@@ -37,8 +35,7 @@ markup exists."
                                  (string-append name suffix)))))
     (if (markup? mark) mark
         (begin
-          (if (ly:get-option 'debug-messages)
-              (ly:warning "No text found in ~a~a" name suffix))
+          (ly:debug-message "No text found in ~a~a" name suffix)
           (if (ly:get-option 'use-variable-names)
               (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
               point-stencil)))))
@@ -56,7 +53,7 @@ markup exists."
            (instr-timeline (ly:parser-lookup parser
                                              (string->symbol
                                               (string-append current-name lang:timeline-suffix)))))
-      (if (ly:get-option 'debug-messages) (ly:progress "Loading music from ~a..." current-name))
+      (ly:debug-message "Loading music from ~a..." current-name)
       (if (ly:music? music)
           #{ \new Voice = $name
              <<
@@ -67,8 +64,7 @@ markup exists."
                         part-timeline))
              >>
           #}
-          (begin (if (ly:get-option 'debug-messages)
-                     (ly:message "Variable ~a doesn't exist." mus-name))
+          (begin (ly:debug-message "Variable ~a doesn't exist." mus-name)
                  (make-music 'Music 'void #t))))))
 
 (define newStaff
@@ -94,8 +90,7 @@ markup exists."
                $(if (ly:music? lyrics)
                   #{ \new Lyrics \lyricsto $name $lyrics #})
           >> #}
-          (begin (if (ly:get-option 'debug-messages)
-                     (ly:message "Variable ~a doesn't exist." mus-name))
+          (begin (ly:debug-message "Variable ~a doesn't exist." mus-name)
               (make-music 'Music 'void #t))))))
 
 (define newLyrics
