@@ -17,6 +17,11 @@
  (ice-9 rdelim)
  (ice-9 popen))
 
+
+(define-public (ly:debug-message string . rest)
+   (if (ly:get-option 'verbose)
+       (apply ly:message (cons string rest))))
+
 ;; Base variables initialization ----------------------------------;
 ;; (may be overriden later when parsing conf-file)
 
@@ -67,14 +72,13 @@
     (sort (do-dir dir '()) string<?)))
 
 ;; Automatic includes ---------------------------------------------;
-(define-public (include-scm dir . numbered)
+(define-public (include-scm dir . numbered?)
   "Load all Scheme files in DIR. If NUMBERED is set,
  load only numbered files."
-  (let* ((regx (if numbered "[0-9].*.scm$" ".scm$"))
+  (let* ((regx (if numbered? "[0-9].*.scm$" ".scm$"))
          (scm-files (find-files dir regx)))
     (map (lambda (x)
-           (begin (if (ly:get-option 'debug-messages)
-                      (ly:message "Loading ~a..." x))
+           (begin (ly:debug-message "Loading ~a..." x)
                   (load x)))
          scm-files)))
 

@@ -18,10 +18,30 @@
 ;; typically in etc/ly.conf.d/lang.conf, is always
 ;; loaded (which allows for lighter language files
 ;; that only define what needs to be overriden)."
-  (let* ((input-lang
+  (let* ((guess-lang
+           (let* ((port (open-input-pipe "locale | grep LANG"))
+                  (str (read-line port)))
+             (set! str (if (string? str)
+                           (string-take
+                             (car (reverse (string-split str #\=)))
+                             2)
+                           #f))
+            (close-pipe port)
+            str))
+         (input-lang
           (if (defined-string? 'input)
               (ly:parser-lookup parser 'input)
-              default-language))
+              (begin
+                (ly:debug-message "Input language not defined.")
+                    (if guess-lang
+                        (begin
+                           (ly:debug-message "Using system's default: ~a"
+                                  guess-lang)
+                           guess-lang)
+                        (begin
+                           (ly:debug-message "Using default language: ~a"
+                                  conf:default-language)
+                           conf:default-language)))))
          (input-lang-file
           (string-append conf:locale-dir "/" input-lang ".conf"))
          (local-lang-file
@@ -30,11 +50,9 @@
           (lambda (f)
             (if (exists? f)
                 (begin
-                  (if (ly:get-option 'debug-messages)
-                      (ly:message "Loading language file ~a..." f))
+                  (ly:debug-message "Loading language file ~a..." f)
                   (parse-def-file f conf:lang-prefix))
-                (if (ly:get-option 'debug-messages)
-                    (ly:warning "Language file not found: ~a."
-                                f))))))
+                (ly:debug-message "Language file not found: ~a."
+                                f)))))
     (load-lang-file input-lang-file)
     (load-lang-file local-lang-file)))

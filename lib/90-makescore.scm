@@ -34,9 +34,8 @@ current-part music."
         (if (string? key) #{ \\newStaff $key #}
             (begin
               (if (not (or (string=? \"\" str) (string=? lang:all)))
-                  (if (ly:get-option 'debug-messages)
-                      (ly:warning \"Unknown instrument variable;
-  ---> please check your `make' argument.\")))
+                  (ly:debug-message \"Unknown instrument variable;
+  ---> please check your `make' argument.\"))
                  #{ ~a #}))))"
                        (read-file (open-input-file file)))))
 

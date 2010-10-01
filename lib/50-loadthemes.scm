@@ -15,8 +15,7 @@
     (map (lambda (x)
            (if (string-ci=? conf:local-ly-score
                             (string-take-right x (string-length conf:local-ly-score)))
-               (if (ly:get-option 'debug-messages)
-                   (ly:message "Skipping local score file: ~a..." x))
+               (ly:debug-message "Skipping local score file: ~a..." x)
                (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
          ly-files)))
 
@@ -29,15 +28,16 @@
                          (ly:parser-lookup parser 'theme)
                          #f))
          (include-theme-dir
-          (lambda (f)
-            (if (exists? f)
+          (lambda (dir)
+            (if (exists? dir)
                 (begin
-                  (if (ly:get-option 'debug-messages)
-                      (ly:message "Loading theme files in ~a..." f))
-                  (include-ly f))
-                (if (ly:get-option 'debug-messages)
-                    (ly:warning "Theme directory not found: ~a."
-                                f))))))
+                  (ly:debug-message "Loading theme in ~a..." dir)
+                  (load-macros-in dir)
+                  (include-ly dir))
+                (ly:debug-message "Theme directory not found: ~a."
+                                f)))))
     (include-theme-dir default-theme)
-    (if user-theme (include-theme-dir
-                     (string-append conf:themes-dir "/" user-theme)))))
+    (if user-theme
+        (if (not (equal? user-theme conf:default-theme))
+            (include-theme-dir
+                     (string-append conf:themes-dir "/" user-theme))))))
