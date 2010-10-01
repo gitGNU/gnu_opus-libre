@@ -28,13 +28,16 @@
                          (ly:parser-lookup parser 'theme)
                          #f))
          (include-theme-dir
-          (lambda (f)
-            (if (exists? f)
+          (lambda (dir)
+            (if (exists? dir)
                 (begin
-                  (ly:debug-message "Loading theme files in ~a..." f)
-                  (include-ly f))
+                  (ly:debug-message "Loading theme in ~a..." dir)
+                  (load-macros-in dir)
+                  (include-ly dir))
                 (ly:debug-message "Theme directory not found: ~a."
                                 f)))))
     (include-theme-dir default-theme)
-    (if user-theme (include-theme-dir
-                     (string-append conf:themes-dir "/" user-theme)))))
+    (if user-theme
+        (if (not (equal? user-theme conf:default-theme))
+            (include-theme-dir
+                     (string-append conf:themes-dir "/" user-theme))))))

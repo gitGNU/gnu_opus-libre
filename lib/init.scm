@@ -72,10 +72,10 @@
     (sort (do-dir dir '()) string<?)))
 
 ;; Automatic includes ---------------------------------------------;
-(define-public (include-scm dir . numbered)
+(define-public (include-scm dir . numbered?)
   "Load all Scheme files in DIR. If NUMBERED is set,
  load only numbered files."
-  (let* ((regx (if numbered "[0-9].*.scm$" ".scm$"))
+  (let* ((regx (if numbered? "[0-9].*.scm$" ".scm$"))
          (scm-files (find-files dir regx)))
     (map (lambda (x)
            (begin (ly:debug-message "Loading ~a..." x)
