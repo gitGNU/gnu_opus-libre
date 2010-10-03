@@ -22,3 +22,8 @@
 #{
   \once \override LyricText #'self-alignment-X = #0.9
 #})
+
+(define rightSyl
+#{
+  \once \override LyricText #'self-alignment-X = #-0.9
+#})
