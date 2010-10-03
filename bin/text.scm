@@ -12,6 +12,7 @@
 ;; Macros for entering text elements.
 
 (load "../lib/libtext.scm")
+(load "../lib/libgraphics.scm")
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn
@@ -54,3 +55,37 @@
                   (list (make-music 'TextScriptEvent 'direction 1
                   'text (markup #:indic text))))))
    music))
+
+(define bracketUp
+  (define-music-function (parser location text music) (markup? ly:music?)
+    (let ((current-staff-position 0))
+      ; this shouldn't be needed!!!
+      (set! current-staff-position 1)
+      (make-music 'ApplyOutputEvent
+                  'origin location
+                  'context-type 'Voice
+                  'procedure
+                  (lambda (grob grob-origin context)
+                    (let ((staff-pos (ly:grob-property grob 'staff-position)))
+                      (if (number? staff-pos)
+                          (set! current-staff-position staff-pos)))))
+      #{ \once \set fingeringOrientations = #'(left)
+         $(add-bracket current-staff-position #t text music)
+         $music #})))
+
+(define bracketDown
+  (define-music-function (parser location text music) (markup? ly:music?)
+    (let ((current-staff-position 0))
+      ; this shouldn't be needed!!!
+      (set! current-staff-position 1)
+      (make-music 'ApplyOutputEvent
+                  'origin location
+                  'context-type 'Voice
+                  'procedure
+                  (lambda (grob grob-origin context)
+                    (let ((staff-pos (ly:grob-property grob 'staff-position)))
+                      (if (number? staff-pos)
+                          (set! current-staff-position staff-pos)))))
+      #{ \once \set fingeringOrientations = #'(left)
+         $(add-bracket current-staff-position #f text music)
+         $music #})))
