@@ -15,7 +15,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code language (see locale/ ) ----------------------------%
-input = "en"
+%input = "en"
 
 %% Edition localisation (if different) ----------------------------%
 %edition = "fr"
