@@ -87,7 +87,100 @@ PianoIMd = \relative do' {
   \t {<sol sol'> re' do}
   \t {<sold sol'> red' dod} |
 
-  <la la'>2*2\laissezVibrer \ottava #0
+  <la la'>2*2\laissezVibrer \ottava #0 s1 R1
+  <sib,, sib'>32 <do do'>4...\laissezVibrer s2 |
+  la''2\laissezVibrer la,,~ | la \mg la, \md |
+  \t {sib4 do8~} do4. sib8~ \t {sib4 do8~} |
+  do1\laissezVibrer s2. R1 R2.
+  sib'4. do8~ do2~ | do4 do2\laissezVibrer s2 R4.
+
+  <dod mi>4 <dod mi>2 <dod fa>4 |
+  <dod mi> <do mib> <dod mi> |
+  <dod fa>4 <dod mi>2.\laissezVibrer s2. |
+  <la sold'>2 q | q4. q | q2 q | q4. q |
+  <si mi sol>8 <si mi sol>~ \t {<si mi sol> <do fa la> <si mi sol>} |
+  <lad red fad> <si mi sol> <re sol sib> |
+  <si red sold si>4\laissezVibrer s2 \clef bass |
+  s4 <fa, mi'> <fad red'> | R2.
+  r2 fa8 dod | mi4. la,8 fa' dod |
+  mi4 la8 la, fa' dod |
+  mi \acciaccatura fa mi red mi do'! sold |
+  si2\laissezVibrer s4 |
+  r <mi, sold red'> <fad si dod> |
+  <red mi sold dod> <sid red la' sid> r |
+  r <fad' lad si fad'> <mi sold mi'> |
+  r <mi sold si mi> <red fadd red'> |
+  \clef treble r <lad' si red lad'> <sold sold'> |
+  <si dod mi si'> <lad lad'> <red red'> |
+  \clef bass r sold,, sold sold sold s4 | \clef treble
+
+  \ottava #1 <sold'''' sold'>8
+  \t { sol16 re la} \t {mi' si fa} \t {red' lad mi}
+  \t {do' sol reb} \t {si' fad do} | <dod red sold>4.\laissezVibrer
+
+  \ottava #0
+  <sold sold'>4. \pl {
+  <mi la dod> <do! mi sol do> <sib reb fa>2\laissezVibrer}
+  {<mi' la dod mi>4. <mi sol do!> <sib reb fa sib>2\laissezVibrer }
+  r4 \ottava #1 \pl {
+  \acciaccatura <re' sol la>16~ <re sol la>4
+  \acciaccatura <dod fad sold>16~ <dod fad sold>4}
+  {<si' dod fad> <sol sib do fa>}
+  r4 \pl {
+  \acciaccatura <sib, mib fa>16~ <sib mib fa>4
+  \acciaccatura <la re mi>16~ <la re mi>4}
+  {<sol' la re> <fad sold dod>} \ottava #0
+  r8 \pl {sold,,16. mi'32~ mi4 <mib sib'>}
+  {s8 <red' sold>4 <do sol'>} |
+  \acciaccatura {mi,16[ fa']} mi,8 <re re'>
+  <dod dod'> <re re'> <fa fa'> %\noBeam %%FIXME
+  dod, |
+  mi2*1/2 \acciaccatura red''16 mi8 r \pl {
+  fad,,8 dod \oneVoice mi4 \voiceTwo red8 re' re sold,}
+  {\acciaccatura mi''16 \stemUp fa!8 r s4
+  \acciaccatura fad16 sol8 r
+  \acciaccatura fadd16 sold8 r \stemNeutral}
+  <la,,, dod mi la>4 la''8 r r2 \clef bass
+
+  reb,,,16 mib8.~ mib4. <mib, mib'>8 | <fa fa'> r r8. \clef treble |
+  R1*7/16*2 s1*3/16 R1*7/16*2 s1*7/16 R1*7/16 |
+  re''16 mi8. re16 mi8. <la, re>16 mi'8. | s2. s1 |
+  R2.*3 R4.
+
+  <re' fad la re>2 <dod fad lad dod> |
+  <dod fa la dod> <dod fa la do!> |
+  <do fa la do> <do? mi sold dod> |
+  <si mi sold dod> <si mi sol do> |
+  <sib mi sol do> <sib mib sol reb'> |
+  \pl {<la sol' reb'> <lab reb fa do'>}
+  {reb4 mib \hideNote fa }
+  <do mi sol do>2\laissezVibrer s4 |
+  r4. \bracketDown "m.s." <do, la> |
+  <la do> <la do> <la do>~ <la do>1\laissezVibrer | R1
+
+  \clef bass
+  <re, re'>16 <mi mi'>8.~ <mi mi'>2~ |
+  <mi mi'>4~ \t {<mi mi'> <fa fa'> <mi mi'>} |
+  \clef treble
+  <sol sol'>2 <mi mi'>16 <fa fa'>8. <sib sib'>4 |
+  <reb reb'>16 <mib mib'>4..~ \t {<mib mib'>4 <solb solb'> <mib mib'>} |
+  <sol, sol'> <sib sib'> <do do'>16 <reb reb'>4.. \clef bass |
+  <re, re'>16 <mi mi'>8.~ <mi mi'>8 <sol sol'>~
+  \t {<sol sol'>4 <la la'> <sol sol'>} | \clef treble
+  <la la'>16 <sib sib'>8.~ <sib sib'>8 <do do'>~
+  \t {<do do'>4 <mib mib'> <do do'>} |
+  <mib mib'>16 <fa fa'>8.~ <fa fa'>8 <solb solb'>~
+  \t {<solb solb'>4 <lab lab'> <solb solb'>} |
+  <lab lab'>16 <si si'>8.~ <si si'>8 <dod dod'>
+  \t {<si si'>4 <re re'> <dod dod'>} |
+  <re,, re'>16 <mi mi'>8. <fa fa'>8 <sol sol'> |
+  \t {<sib sib'>16 <do do'>8. <dod dod'>4 <red red'>} |
+  <fad fad'>16 <sold sold'>8. <la la'>8 <si si'> |
+  \t {<re re'>16 <mi mi'>8. <re, re'>4 <mib mib'>} |
+  <fa fa'>16 <sold sold'>8. <lad lad'>8 <si si'> |
+  \t {<dod dod'>16 <mi mi'>8. <lad,, lad'>4 <dod dod'>} |
+
+  <red red'>16 <mi mi'>8.\laissezVibrer s8 |
 }
 
 PianoIMg = \relative do' {
@@ -166,5 +259,43 @@ PianoIMg = \relative do' {
   <sol do mi fad>8 \clef bass
   r16 <dod,,, dod'>8. |
 
-  <la la'>2
+  <la la'>2 la~ la la
+  \pl la la''1*1/2\laissezVibrer la,,2~ la la |
+  <la la'>4 la2. | la4 la2*1/2 s4 la |
+  \pl {s1 la\laissezVibrer}
+  {\oneVoice \t {la'4 sib8~} sib4. do8~ \t {do4 \bracketUp "m.d." la'8~} |
+  \voiceOne la1\laissezVibrer} s2. |
+  \ottava #-1 la,,,2*2\laissezVibrer \ottava #0 | R2. \clef treble
+  <sib''' do la'>2.\laissezVibrer \pl {red4~ red fa!2\laissezVibrer}
+  {<fad sold>4~<fad sold>2.} s2 | R4.
+
+  <fa lab>4 <fa lab>2 <mi lab>4 |
+  <fa lab> <fad la> <fa lab> |
+  <mi lab> <fa lab>2.\laissezVibrer | s2.
+  <la, do>4 <la do> q q | q q q |
+  q q q q | q q q |
+  \pl { sol sol} {<red' fad sold>8 <red fad sold>~
+  \t {<red fad sold> <re fa sol> <red fad sold>}}
+  <sol, mi' sol la> <red' fad sold> \clef bass <red, la' dod> |
+
+  <sold,, fadd'>4\laissezVibrer <red'' mi'> <mi red'> |
+  \ottava #-1 <dodd,, red'>4*3\laissezVibrer
+  <fadd sold'>\laissezVibrer <red dodd'>\laissezVibrer |
+  <sold sold'>\laissezVibrer <sold fadd'>\laissezVibrer |
+  <fadd sold'>\laissezVibrer <dod dod'>\laissezVibrer |
+  <dod dod'>\laissezVibrer <dod sid'>\laissezVibrer |
+  <fadd sold'>\laissezVibrer <sid, dod'>\laissezVibrer |
+  <la sold'>\laissezVibrer <dod sid'>\laissezVibrer |
+  \ottava #0
+  \ind "loco" <sold' sold'>2\laissezVibrer s4 |
+  s2 \ottava #-1 <dod, dod'>4 |
+  <la sold'>8\laissezVibrer \ottava #0 \clef treble
+  <mib''''' si'?> <do la'> <si fad'> <lab fa'> <sol re'> |
+  <mi la si>4.\laissezVibrer | \clef bass \ottava #-1
+  <la,,,, sold'>2.\laissezVibrer \ottava #0 | s4. s2 \acciaccatura
+  <dod'' dod'>16 \ottava #-1 <dod,, fa lab dod>4*3\laissezVibrer
+  \ottava #0 \acciaccatura <sold''' sold'>16 <sold,, sold'>4*3
+  \md \acciaccatura <dod'' dod'>16 \mg <dod,, dod'>4*3 |
+  <re re'>4\laissezVibrer r8 <la' la'> <fa' fa'> dod |
+  mi,4\laissezVibrer
 }

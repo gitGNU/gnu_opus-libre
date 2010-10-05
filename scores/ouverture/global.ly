@@ -81,7 +81,7 @@ Mesures = {
   \time 2/2 s1*2 \bar "||"
 
   \time 3/4 s2.*2
-  \time 4/4 s1*5
+  \time 4/4 s1*7
   \time 2/4 s2*6
   \time 3/8 s4.*8
   \time 2/4 s2
