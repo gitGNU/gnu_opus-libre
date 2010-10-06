@@ -180,7 +180,17 @@ PianoIMd = \relative do' {
   <fa fa'>16 <sold sold'>8. <lad lad'>8 <si si'> |
   \t {<dod dod'>16 <mi mi'>8. <lad,, lad'>4 <dod dod'>} |
 
-  <red red'>16 <mi mi'>8.\laissezVibrer s8 |
+  <red red'>16 <mi mi'>8.\laissezVibrer s8 | s4.
+  re!16 mi~ mi4\laissezVibrer s4. \clef bass |
+  <re, re'>16 <mi mi'>8 <sol sol'> <fa fa'>16 \clef treble |
+  <sold sold'>16 <lad lad'>8 <dod dod'> <si si'>16 |
+  <do do'>16 <dod dod'>8 <red red'>16 <mi mi'> <fad fad'>~ |
+  <fad fad'> <sol sol'> <la la'> <si si'>8. |
+  <re re'>16 <mi mi'>8.~ <mi mi'>8 r |
+  <re fad re'>16 <mi sold mi'>~ <mi sold mi'>4\laissezVibrer |
+  s8. <re, re'>~ <re re'>4 <mi mi'> |
+
+  <re re'>16
 }
 
 PianoIMg = \relative do' {
@@ -297,5 +307,49 @@ PianoIMg = \relative do' {
   \ottava #0 \acciaccatura <sold''' sold'>16 <sold,, sold'>4*3
   \md \acciaccatura <dod'' dod'>16 \mg <dod,, dod'>4*3 |
   <re re'>4\laissezVibrer r8 <la' la'> <fa' fa'> dod |
-  mi,4\laissezVibrer
+  mi,4\laissezVibrer r s mi s2 |
+
+  la4 \clef treble \ottava #1 \acciaccatura sol''''16 la8
+  \ottava #0 r r4 \clef bass fa,,,,, |
+  fa8 fa \t {fa fa fa} fa16 fa fa fa |
+  fa8 r r8. | R1*7/16*2
+  \pl {<re' mib si'>16 <mi fa? dod'>8}
+  {<re' sol re'>16 <mi la mi'>8} |
+  R1*7/16*2
+  \pl {<re, sol sib>16 <mi la do>8. <re sold dod>16 <mi lad red>8}
+  {<mib' fad si re>16 <fa sold dod mi>8. <mi la re>16 <fad si mi>8}
+  R1*7/16
+  <sib, mib lab>4 <sol do fad> <fa sib reb solb> |
+  \pl {<re re'>16 <mi la do>4..\laissezVibrer}
+  {re''16 <fa, sold dod mi>4..\laissezVibrer}
+  mi,32 re' mi re' mi, re' \md mi re' | \t {mi,16 re' mi} re'8
+  \ottava #1 re'32 sib fa mi re sib fa mi \ottava #0
+  re'64 sib fa mi re sib fa mi re' sib fa mi
+  \mg re sib fa mi re' sib fa mi re sib fa mi
+  \t {re'32 sib fa} \t {mi re sib} |
+  \ottava #-1 mi,4*3\laissezVibrer \ottava #0 |
+  R2.*2 R4. R1*6 R2. s2.*2 s4. R1*2
+
+  \ottava #-1 <mi mi'>2. <mi mi'> <mi mi'>2 <mi mi'> |
+  \t {<mi mi'> <mi mi'> <mi mi'>}
+  <mi mi'>4.~ <mi mi'>8~ <mi mi'> <mi mi'>4. |
+  <mi mi'>4 <mi mi'> <mi mi'> <mi mi'>~ |
+  <mi mi'>8 <mi mi'>4. <mi mi'>4 <mi mi'> |
+  <mi mi'> <mi mi'>4. <mi mi'> |
+  <mi mi'>2 \t {<mi mi'>4 <mi mi'>2} |
+  <mi mi'>4 <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} |
+  <mi mi'> <mi mi'> \t {<mi mi'> <mi mi'> <mi mi'>} |
+  <mi mi'> <mi mi'> \t {<mi mi'> <mi mi'> <re re'>} |
+  <mi mi'>4.\laissezVibrer \ottava #0 s4.
+  <re' mi re' mi>\laissezVibrer s |
+  \ottava #-1 <mi, mi'>8 <fa fa'> <sol sol'> |
+  \ottava #0 <sib sib'> <dod dod'> <red red'> |
+  <mi mi'> <fa fa'> <sol sol'> |
+  <sib sib'> <dod dod'> <red red'> |
+  <mi mi'>4. r8 |
+  <re fa! la re>16 <mi sol! si mi>~ <mi sol si mi>4\laissezVibrer
+  \pl {\ottava #-1 <mi,, si' re>8.} <fa' sold si re mi> \ottava #0
+  s r4 <mi mi'> |
+
+  <re re'>16
 }
