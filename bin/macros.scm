@@ -52,12 +52,21 @@
 
 
 (define hideNote #{
-\once \override NoteHead  #'transparent = ##t
-\once \override NoteHead  #'no-ledgers = ##t
-\once \override Stem  #'transparent = ##t
-\once \override Beam  #'transparent = ##t
-\once \override Accidental  #'transparent = ##t
+\once \override Dots #'transparent = ##t
+\once \override NoteHead #'transparent = ##t
+\once \override NoteHead #'no-ledgers = ##t
+\once \override Stem #'transparent = ##t
+\once \override Beam #'transparent = ##t
+\once \override Accidental #'transparent = ##t
 #})
+
+(define hideNoteHead #{
+\once \override NoteHead #'transparent = ##t
+#})
+
+(define hideNoteHeads
+  (define-music-function (parser location x) (ly:music?)
+  #{\override NoteHead #'transparent = ##t $x \revert NoteHead #'transparent #}))
 
 (define graceNote #{
 \once \set fontSize = #-2
