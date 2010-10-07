@@ -226,11 +226,77 @@ PianoIMd = \relative do' {
   <fa fa'>~ <fa fa'>16 <sol sol'>8. | %%%
 
   R2.*4
-  re2.\startTrillSpan ~ re re s2.*2\stopTrillSpan |
-  \pl { re32\startTrillSpan mi\stopTrillSpan s16
-  re32 mi s16 re32 mi \hideNote \ind "simile" re4..\startTrillSpan
+  re2.\startTrillSpan ~ re re
+  \mg \stemUp \lightBeams \graceNotes {
+  re,,32\stopTrillSpan mi re' mi re mi \md re' mi
+  re mi re' mi re mi re' mi \stemNeutral \ottava #1
+  re mi re' mi re mi re mi |
+  re, mi re mi \ottava #0 re, mi re mi re, mi re mi \mg
+  re, mi re mi re, mi re' mi re mi \md re' mi} |
+  \pl { re\startTrillSpan mi s16
+  re32 mi s16 re32 mi \hideNote \ind "simile" s4..
   \oneVoice re2.\stopTrillSpan}
   {s16 re32 mi s16 re32 mi s16 \hideNoteHeads {re32 mi} s4.}
+  <la, do>2. | \clef bass
+
+  <re, re'>16 <mi mi'>8. <re re'>16 <mi mi'>8. |
+  <re re'>16 <mi mi'>4..\laissezVibrer s2 R1 \clef treble
+  r16 <mi' mi'>8. <re re'>4 r16 <mi mi'>8. <re re'>4 r16 <mi mi'>8. |
+  <re re'>16 <mi mi'>8.~ <mi mi'>1 | \clef bass
+  <re, la' re>16 <mi si' mi>8 \clef treble <sol re' sol>
+  <la mi' la> <si sol' si> <re sol re'>16 |
+  <mi la mi'>2\laissezVibrer s8 \clef bass
+  <re, la' re>16 <mi do' mi>8 \clef treble <sol re' sol>
+  <la mi' la>16 <do sol' do>8 <re la' re> |
+  <mi do' mi>2\laissezVibrer s16 \clef bass
+  <re, la' re>16 <mi do' mi> <sol re' sol>8 \clef treble
+  <sib fa' sib> <do sol' do> <re sib' re>16 |
+  <fa do' fa>4\laissezVibrer s16*5 |
+  <do mi do'>16 <re sol re'>8 <fa fa'>16 <lab lab'> |
+  <sib sib'>4~ <sib sib'>16 |
+  \ottava #1
+  <lab lab'>16 <do do'> <mib mib'> <solb solb'>8 |
+  <lab mib' lab>8. <sib sib'>8 |
+  <do, do'>16 <mib mib'> <solb solb'> <lab lab'> <sib sib'> |
+  <reb reb'>4~ <reb reb'>16 |
+  \lightBeams {
+  reb'32 \graceNotes {sib lab solb mib solb lab sib}
+  reb \graceNotes {sib lab solb mib solb lab sib} |
+  reb \graceNotes {sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib |
+  reb sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib |
+  reb sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib |
+  reb sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib |
+  reb sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib |
+  reb sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib |
+  reb sib lab solb mib solb lab sib
+  reb sib lab solb mib solb lab sib} |
+  reb \graceNotes {sib lab solb mib solb lab sib}
+  reb \graceNotes {sib lab solb mib solb lab sib}}
+  \t {reb16 sib lab} solb32 lab sib reb |
+  <red, red'>8 <lad lad'>16 sold' <red red'>8 <red red'>16 mi
+  lad sold <red red'> dod' <sold sold'> mi' do sib |
+  <red, red'>8 <lad lad'>16 sold' <red red'>8 <red red'>16 mi
+  do'? sib <red, red'> lad' <sold, sold'>8 <red' red'> |
+  <sold sold'> <red red'>16 dod' <sold sold'>8 <sold sold'>16 red'
+  <dod, dod'>8 <sold' sold'>16 la <red, red'> dod' <sold sold'>8 |
+  <sold sold'>16 red' dod <sold sold'> la <red, red'> dod'8
+  <sold sold'>16 mi do' sib <sold sold'> la <red, red'> dod' |
+  <sold sold'>8 <sold sold'>16 la <red, red'> dod' <sold sold'>8
+  <sold sold'>16 la <red, red'> dod' <sold sold'>8 <red red'>16 dod' |
+  <sold sold'> red' dod <sold sold'> red' <sold, sold'> red' dod
+  <sold sold'> red' <sold, sold'> red' <mi, mi'> do' sib <sold sold'> |
+  red' dod <lad lad'> red <do do'> q q q q q q q \ottava #0 R2
+  \mg s16 \stemUp <mi,,,, mi'>8. s16 <mi mi'>8. |
+  s16 <mi mi'>8. s16 <mi mi'>8. |
+  s16 <mi mi'>8. \md \stemNeutral r4 r8. \t {re'''32 mi sol} |
+  \stemDown <la, re mi la>16
+  \stemUp <la,, re mi la>8.~ <la re mi la>2 \stemNeutral s4 |
 }
 
 PianoIMg = \relative do' {
@@ -391,5 +457,105 @@ PianoIMg = \relative do' {
   \pl {\ottava #-1 <mi,, si' re>8.} <fa' sold si re mi> \ottava #0
   s r4 <mi mi'> |
 
-  <re re'>16
+  <re re'>16 r r8 r2 r1 |
+  re'16 re re re re re re re re re re re re re re re
+  re re re re re re re re re re re re |
+  <re la'>8 si' do re16 la si8 do
+  re la16 si do8 re la16 si do8 re la |
+  si do re8. la16 si8 do re la16 si
+  do8 re la16 si do8 re16 la si8 |
+  sol8 re16 mi fa8 sol16 re mi8 fa16 sol
+  re8 mi16 fa sol8 re16 mi fa8 sol16 re mi8 fa16 sol |
+  re16 mi8 fa16 sol8 re16 mi~ mi fa sol8
+  re16 mi8 fa16 sol <re sol>8 <mi la>16~
+  <mi la>8 <fa sib>~ <fa sib>16 <sol do>8. |
+  <sib, reb>8 <do mib> <reb solb> <mib lab>
+  <sib reb>16 <do mib>8 <reb solb>16 <mib lab>8 <sib reb>
+  <do mib>16 <reb solb> <mib lab>8 sib16 do reb mib solb lab la si |
+  r2 re,8 mi fa sol re mi fa sol lab16 sib si dod |
+  fa, lab sib si dod fa, lab sib si dod fa, lab sib si dod
+  fa, lab sib si dod lab sib si dod lab sib si dod |
+  <re,, re'> <mi mi'>8.~ <mi mi'>4 <sib' mib lab>8 <do fa sib>
+  <re sol do> <fa, fa'>16 <sol sol'>~ <sol sol'>4
+  <si mi la>8 <dod fad si> <re sol do> <mi la re> |
+  %% First version:
+  %<re, re'>16 <re' re'> <mi, mi'> <mi' mi'>
+  %<fa, fa'> <fa' fa'> <sol, sol'> <sol' sol>
+  %<re re'> \md <re' re'> \mg <mi, mi'> \md <mi' mi'>
+  %\mg <fa, fa'> \md <fa' fa'> \mg <sol, sol'> \md <sol' sol'>
+  %<re re'> <re' re'> <mi, mi'> <mi' mi'>
+  %<fa, fa'> <fa' fa'> <sol, sol'> <sol' sol'>
+  %\mg <re,, re'> \md <re' re'> \mg <mi, mi'> \md <mi' mi'> |
+  %\mg <fa, fa'> \md <fa' fa'> \mg <sol, sol'> \md <sol' sol'>
+  %\mg <re,, re'> <re' re'> <mi, mi'> <mi' mi'>
+  %<fa, fa'> <fa' fa'> <sol, sol'> <sol' sol'>
+  %<re re'> \md <re' re'> \mg <mi, mi'> \md <mi' mi'>
+  %\mg <fa, fa'> \md <fa' fa'> \mg <sol, sol'> \md <sol' sol'>
+  %<re re'> <re' re'> <mi, mi'> <mi' mi'>
+  %<fa, fa'> <fa' fa'> <sol, sol'> <sol' sol'> |
+  %% Second version:
+  fa,,2\laissezVibrer <re'' sol si>4. <fa si re> |
+  <fa re'>16 <si mi>8. <si mi>16 <re fa>8. |
+  <re, sol si!>8 <re sol si> <mi sol si re> <mi sol si re> |
+  <fa si? re> <fa si re> \t {<sol si re sol> q q} |
+  <mib,, mib'>4 <fa fa'> <solb solb'>8 <lab lab'> | %%%
+  R2.*4 s2.*3
+  \stemDown \lightBeams \graceNotes {
+  re32 mi s16 re'32 mi s16 \md re'32 mi s16 re'32 mi s16 } \mg s4 |
+  s2.*4 \ottava #-1
+  <re,,,, re'>16 <mi mi'>8. <re re'>16 <mi mi'>8. |
+  <re re'>16 <mi mi'>4..\laissezVibrer s2 \ottava #0 R1
+  \ottava #-1
+  r16 <mi mi'>8. <re re'>4 r16 <mi mi'>8. <re re'>4 <re re'> |
+  \ottava #0 \ind "loco" <re' re'>16 <mi mi'>8.~ <mi mi'>4
+  \ottava #-1 mi,2. \ottava #0 |
+  mi'2 mi8 <mi, mi'>2\laissezVibrer s8 |
+  mi'4 mi8 mi mi <mi, mi'>2\laissezVibrer s16 |
+  mi'4~ mi16 <fad fad'>8 <re re'> |
+  <mi mi'>4\laissezVibrer s16*5 |
+  <mi, mi'>8 <re' re'>8. | <mi mi'>4~ <mi mi'>16 |
+  <mi, mi'>4 <re' re'>16 | <mi mi'>4~ <mi mi'>16 |
+  <mi, mi'>4~ <mi mi'>16 | <mi' mi'>4~ <mi mi'>16 |
+  <mi,? mi'?>2\laissezVibrer |
+  <re' re'>16 <mi mi'>8. <re re'>16 <mi mi'>8. |
+  <re re'>16 <mi mi'>8.
+  \lightBeams { \graceNotes {sol''32 mi re do} la8}
+  <re,, re'>16 <mi mi'>8.
+  \lightBeams { \graceNotes {sol''32 mi re do} la8}
+  <re,, re'>16 <mi mi'>8.
+  \lightBeams { \graceNotes {sol''32 mi re do} la8}
+  <re,, re'>16 <mi mi'>8.
+  \lightBeams { \graceNotes {sol''32 mi re do} la8}
+  <re,, re'>16 <mi mi'>8.
+  \lightBeams { \graceNotes {la'32 fad mi re} si8}
+  <re, re'>16 <mi mi'>8.
+  \lightBeams { \graceNotes {la'32 fad mi re} si8}
+  <re, fad si re>16 <mi sold mi'>8.~ <mi sold mi'>2 |
+  \t {la,16 mi' si'} la mi' \t {si' mi, la,} si mi,
+  \t {la, mi' si'} la mi' \t {si' mi, la,} si mi, |
+  \t {la, mi' si'} la mi' \t {si' mi, la,} si mi,
+  \t {la, mi' si'} la mi' \t {si' mi, la,} si mi |
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi,
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi, |
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi,
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi, |
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi,
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi, |
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi,
+  \t {la, mi' si'} \clef treble la mi'
+  \t {si' mi, la,} \clef bass si mi, |
+  \t {la, mi' si'} \clef treble \t {la mi' si'}
+  \t {la, mi' si'} \t {mi, la re} \t {la mi' si'} \t {mi, la re} |
+  \clef bass R2
+  <re,,, re'>16 s8. <re re'>16 s8. |
+  <re re'>16 s8. <re re'>16 s8. |
+  <re re'>16 s8. r2 |
+  s2. \ottava #-1 la,,4 \ottava #0 |
 }
