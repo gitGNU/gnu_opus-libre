@@ -1,5 +1,6 @@
 %-- Ouverture -- I-piano.ly ---------------------------------------%
 % (c) 2002-2010 Valentin Villenave <valentin@villenave.net>
+showLastLength = R16*883
 
 PianoIMd = \relative do' {
   R1
@@ -190,7 +191,46 @@ PianoIMd = \relative do' {
   <re fad re'>16 <mi sold mi'>~ <mi sold mi'>4\laissezVibrer |
   s8. <re, re'>~ <re re'>4 <mi mi'> |
 
-  <re re'>16
+  <re re'>16 r fa8 sol re16 mi r8 fa sol re16 mi
+  fa8 sol~ sol16 re mi fa sol8 re |
+  mi fa sol re16 mi r fa8 sol16 r re mi fa
+  r sol8 re16 mi fa sol8 re mi |
+  fa16 sol re mi fa8 sol re16 mi fa sol
+  r re mi fa r sol8 re16 mi8 fa sol16 re mi fa |
+  sol8 re16 mi r8 fa sol16 la re, mi fa8 sol
+  r16 re mi fa sol8. re16 mi8 fa16 sol |
+  <do, re>8 <re mi>16 la <si? fa'>8 <do sol'>16 sol re' la mi' sib
+  <do fa>8 <do sol'>16 re sib8 <do mi> fa sol <la, re>16 si <do mi>8
+  <sol la re>16 mi'8 <sib do fa>16 sol'8 <sol, la re>16 mi'~
+  mi <sib do fa> sol'8 <sol, la re>16 mi'8 <sib do fa>16
+  sol' <la, re>8 <si mi>16~ <si mi>8 <do fa>~ <do fa>16 <re sol>8. |
+  <fa sib>8 <sol do> <sib reb> <do mib>
+  <fa, sib>16 <sol do>8 <sib reb>16 <do mib>8 <fa, sib>
+  <sol do>16 <sib reb> <do mib>8 sib16 do reb mib solb, lab la si |
+  re,8 mi fa sol re16 mi8 fa16 r sol8 re16
+  mi fa8 sol16 r re mi fa sol8 mi |
+  re16 mi8 fa16 sol8 re16 mi fa8 sol
+  re16 mi8 fa16 sol8 re16 mi fa8 sol re16 mi fa8 |
+  <re' re'>16 <mi mi'>8.~ <mi mi'>4
+  <sol, do fa>8 <la re sol> <sib mib lab> <fa' fa'>16 <sol sol'>~
+  <sol sol'>4 <sol, do fa>8 <la re sol> <sib mib lab> <do fa sib> |
+  %% First version:
+  % s1*7/4*2 %%%
+  %% Second version:
+  r2 re,4. mi | fa4 sol |
+  \t {<re sol sib re>8 <re sol sib re> <re sol sib re>}
+  \t {<mi sol sib mi> <mi sol sib mi> <mi sol sib mi>} |
+  \t {<fa sol sib re fa> <fa sol sib re fa> <fa sol sib re fa>}
+  <la sib re sol> <la sib re sol> |
+  <re, re'>8. <mi mi'>16~ <mi mi'>8
+  <fa fa'>~ <fa fa'>16 <sol sol'>8. | %%%
+
+  R2.*4
+  re2.\startTrillSpan ~ re re s2.*2\stopTrillSpan |
+  \pl { re32\startTrillSpan mi\stopTrillSpan s16
+  re32 mi s16 re32 mi \hideNote \ind "simile" re4..\startTrillSpan
+  \oneVoice re2.\stopTrillSpan}
+  {s16 re32 mi s16 re32 mi s16 \hideNoteHeads {re32 mi} s4.}
 }
 
 PianoIMg = \relative do' {

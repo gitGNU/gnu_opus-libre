@@ -90,9 +90,13 @@ Mesures = {
 
   \tempo "Poco stringendo" 4 = 100 %FIXME: use markup?
   \time 7/4 s4*7*10
+  %% First version:
+  %\time 7/4 s4*7*2 %%%
+  %% Second version:
   \time 5/4 s4*5
   \time 2/4 s2*3
-  \time 3/4 s2. \bar "||"
+  \time 3/4 s2. %%%
+                \bar "||"
 
   \tempo "Tempo I" 4 = 92
             s2.*12
