@@ -155,7 +155,129 @@ PianoIIMd = \relative do' {
   <re,, sol re'>16 <mi la mi'>~ <mi la mi'>4\laissezVibrer
   s4. r4 <mi mi'> |
 
-  <re re'>16
+  <re re'>16 re re re re re re re re re re re re re re re
+  re re re re re re re re re re re re |
+  re mi fa sol re8 mi fa sol16 re mi8 fa
+  sol re16 mi r8 fa sol re |
+  mi fa sol16 re mi8 fa16 sol8 re16 mi fa sol8
+  re16 mi fa8 sol re16 mi fa sol re mi |
+  fa8 sol16 re mi fa8 sol16 re mi fa8 r16 sol8 re16
+  mi fa sol8 re mi16 fa sol re mi fa |
+  sol8 re16 mi sib fa' sol8 <la, re>16 mi'8 fa16
+  <si, re>8 <sol mi'>16 <la fa'> re sol re la
+  mi' fa sib, sol' re do mi fa |
+  re8 mi fa sol16 re r mi8 fa16~ fa sol8 re16
+  mi8 fa sol <re re'>16 <mi mi'> r <fa fa'>8 <sol sol'>16 |
+  \pl r2 <fad' la re>\laissezVibrer
+  <re, sib'>8 <mi do'> <fa reb'> <sol mib'>16 <re sib'>
+  r <mi do'>8 <fa reb'>16 <sol mib'>8 r sib16 do reb mib |
+  \pl {s8 re,16 s re s re s} {re re re re re re re re}
+  s4*5 s4*7
+  <sol do fa>8 <la re sol> <sib mib lab> <do fa sib>
+  <sol do fa>16 <la re sol>8 <sib mib lab>16 <do fa sib>8
+  <sol do fa> <la re sol>16 <sib mib lab> <do fa sib>8
+  <fa sib mib> <sol do fa> <lab reb solb> <sib mib lab> |
+  %% First version:
+  %s4*7*2
+  %% Second version:
+  <si mi la>\laissezVibrer s s1 |
+  \mg \stemUp sold,,,32 dod red sold sold dod \md red sold
+  sold dod red sold sold dod red sold |
+  \ottava #1
+  \t {<sold mi'!>8 <sold mi'>16 dod, <sold' mi'> dod,}
+  \t {<sold' mi'!>8 <sold mi'>16 dod, <sold' mi'> dod,}
+  <sold' mi'> <sold mi'> \t {dod, <sold' mi'> dod,}
+  <sold' mi'> <sold mi'> \t {dod, <sold' mi'> dod,}
+  <re sold dod re>8 <sold dod>16 <mi mi'> <sold dod>8
+  <fa fa'> <sold dod>16 <sol sol'> <sold dod>8 \ottava #0 | %%%
+
+  R2. <la,,, do>4. <la do> q q q q |
+  q2\laissezVibrer s4 | r \ind "simile" <la do>2\laissezVibrer |
+  s2.
+  re16 <mi, mi'>4..\laissezVibrer s4 s2.
+  \ind "(ordin.)" re'2.\startTrillSpan ~ re~ re~ re2\stopTrillSpan |
+  s1*2
+  <re re'>4 r16 <mi mi'>8. <re re'>4 r16 <mi mi'>8. <re re'>4 |
+  <re re'>16 <mi mi'>8.~ <mi mi'>2 re\startTrillSpan |
+  <re mi>4\laissezVibrer \stopTrillSpan s4. |
+  \clef bass <re, fad re'>16 <mi la mi'>8
+  \clef treble <fad si fad'> <la re la'> <si fad' si>16 <re la' re>8
+  <mi si' mi>2\laissezVibrer s8 |
+  \clef bass <re, la' re>16 <mi do' mi>8
+  \clef treble <sol re' sol>16
+  <sib mi sib'>8 <do sol' do> <re sib' re>16
+  <fa do' fa>2\laissezVibrer s16 |
+  \clef bass <re, la' re>16 <mi si'! mi>8
+  \clef treble <sol sol'>16 <sib sib'> <do do'> <re re'>8 <fa do' fa>16
+  <lab re lab'>4~ <lab re lab'>16 |
+  <fa fa'> <lab lab'> <sib sib'>8 <do do'>16 |
+  <mib sib' mib>4~ <mib sib' mib>16 |
+  \ottava #1
+  <do do'>16 <mib mib'> <solb solb'> <lab lab'> <sib sib'> |
+  <reb reb'>4~ <reb reb'>16 |
+  <do, do'> <mib mib'> <solb solb'> <lab lab'> <sib sib'> |
+  <reb reb'>8 \ottava #0
+  \lightBeams { \graceNotes {sib32 lab fa re}
+  do \graceNotes {re fa lab sib lab fa re}
+  do \graceNotes {re fa lab sib lab fa re}
+  do \graceNotes {re fa lab sib lab fa re} |
+  do \graceNotes {re fa lab sib lab fa re}
+  do \graceNotes {re fa lab sib lab fa re} |
+  do \graceNotes {re fa lab sib lab fa re}
+  do \graceNotes {re fa lab sib lab fa re} |
+  do \graceNotes {re fa lab sib lab fa re}
+  do \graceNotes {re fa lab sib lab fa re} |
+  do \graceNotes {re fa lab sib lab fa re}
+  do \graceNotes {re fa lab sib lab fa re |
+  mib' do sib lab fa lab sib do
+  mib do sib lab fa lab sib do | \ottava #1
+  solb' mib reb dob lab dob reb mib
+  solb mib reb dob lab dob reb mib |
+  lab fa mib reb sib reb mib fa
+  lab fa mib reb sib reb mib fa}
+  \tt {la \graceNotes {fad mi re si}}
+  \tt \graceNotes {la fad mi re si} \ottava #0 }
+
+  \mg \ottava #-1
+  \t {<la,,,, la'>16 \ottava #0 \graceNotes {mi''' si'}}
+  \md \graceNotes {<re mi>32 la' si re}
+  \lightBeams {\stemUp 
+  mi \graceNotes {re si la \t {<re, mi>16 \mg si mi,}}
+  \t {la, \graceNotes {mi' si'}}
+  \md \graceNotes {<re mi>32 la' si re}
+  mi \graceNotes {re si la \t {<re, mi>16 \mg si mi,}} |
+  \t {la, \graceNotes {mi' si'}}
+  \md \graceNotes {<re mi>32 la' si re}
+  mi \graceNotes {re si la \t {<re, mi>16 \mg si mi,}}
+  \t {la, \graceNotes {mi' si'}}
+  \md \graceNotes {<re mi>32 la' si re}
+  mi \graceNotes {re si la \t {<re, mi>16 \mg si mi,}}
+  \stemNeutral } |
+
+  \md \ottava #1
+  <sib''' re sib'>16 <do mi do'>8 <reb fa reb'>16
+  r <mib sol mib'>8 <sib re sib'>16 <do mi do'>8 <reb fa reb'>
+  <mib sol mib'> <sib re sib'>16 <do mi do'> |
+  <reb fa reb'>8 <mib mib'>16 <sib sib'>
+  <do mi do'> <reb fa reb'> <mib sol mib'>8
+  <sib re sib'>8. <do mi do'>16~ <do mi do'>8 <mib sol mib'> |
+  <dod dod'>16 <red red'>8 <mi mi'>16 r <fad fad'>8 <dod dod'>16
+  <red red'> <mi mi'> <fad fad'>8
+  <dod dod'>16 <red red'> <mi mi'> <fad fad'> |
+  <dod dod'> <red red'> <mi mi'> <fad fad'>
+  <sold sold'>8 <dod, dod'>16 <red red'>
+  <mi mi'> <fad fad'> <sold sold'>8
+  <dod, dod'>16 <red red'> <mi mi'> <fad fad'> |
+  <sold sold'>8 <dod, do'>16 <red red'>
+  <mi mi'> <fad fad'> <sold sold'> <la la'>
+  <lad lad'> <si si'> <do do'> <do do'> | \ottava #0
+  \clef bass r2 |
+  <re,,,, mi la re>4 <re mi sold si re> |
+  <re mi sol la sib re> <fad sold si dod re> |
+  <re mi lab do re> r2 |
+  \clef treble \ottava #1
+  \stemDown <la'''' re mi la>16
+  \mg \stemUp <la,,,, re mi la>8.~ <la re mi la>2 \md s4 |
 }
 
 PianoIIMg = \relative do' {
