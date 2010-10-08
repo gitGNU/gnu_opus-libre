@@ -59,8 +59,10 @@
 
 (define (load-macros-in dir)
    (map (lambda (x)
-          ;; ugh.
-          (load (string-append "../" x)))
+          (begin
+            (ly:debug-message "Loading macros file ~a..." x)
+            ;; ugh.
+            (load (string-append "../" x))))
        (find-files dir ".scm$")))
 
 (define eval-macros
@@ -68,6 +70,6 @@
 ;; (typically in bin/), then locally (which
 ;; allows the score to override some definitions
 ;; if needed)."
-  (begin 
+  (begin
     (load-macros-in conf:macros-dir)
     (load-macros-in conf:local-conf-dir)))

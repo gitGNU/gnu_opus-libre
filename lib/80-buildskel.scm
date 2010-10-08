@@ -22,11 +22,9 @@ try to find a matching entry in ALIST."
   "Turn NAME into a music expression if one exists."
   (let ((mus (ly:parser-lookup parser (string->symbol name))))
     (if (ly:music? mus)
-        (begin (if (ly:get-option 'debug-messages)
-                  (ly:message "Loading music from ~a..." name))
+        (begin (ly:debug-message "Loading music from ~a..." name)
                mus)
-        (begin (if (ly:get-option 'debug-messages)
-                  (ly:message "Variable ~a doesn't exist." name))
+        (begin (ly:debug-message "Variable ~a doesn't exist." name)
                (make-music 'Music 'void #t)))))
 
 (define (make-this-text name suffix)
@@ -37,8 +35,7 @@ markup exists."
                                  (string-append name suffix)))))
     (if (markup? mark) mark
         (begin
-          (if (ly:get-option 'debug-messages)
-              (ly:warning "No text found in ~a~a" name suffix))
+          (ly:debug-message "No text found in ~a~a" name suffix)
           (if (ly:get-option 'use-variable-names)
               (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
               point-stencil)))))
@@ -56,7 +53,7 @@ markup exists."
            (instr-timeline (ly:parser-lookup parser
                                              (string->symbol
                                               (string-append current-name lang:timeline-suffix)))))
-      (if (ly:get-option 'debug-messages) (ly:progress "Loading music from ~a..." current-name))
+      (ly:debug-message "Loading music from ~a..." current-name)
       (if (ly:music? music)
           #{ \new Voice = $name
              <<
@@ -67,8 +64,7 @@ markup exists."
                         part-timeline))
              >>
           #}
-          (begin (if (ly:get-option 'debug-messages)
-                     (ly:message "Variable ~a doesn't exist." mus-name))
+          (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
                  (make-music 'Music 'void #t))))))
 
 (define newStaff
@@ -78,12 +74,13 @@ markup exists."
 ;; this staff (using appropriate suffixes)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (music (ly:parser-lookup parser (string->symbol (string-append current-part name))))
+           (current-name (string-append current-part name))
+           (music (ly:parser-lookup parser (string->symbol current-name)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix))
            (lyrics (ly:parser-lookup parser
                                      (string->symbol
-                                      (string-append current-part name lang:lyrics-suffix)))))
+                                      (string-append current-name lang:lyrics-suffix)))))
       (if (ly:music? music)
           #{ <<
              \new Staff \with {
@@ -94,8 +91,7 @@ markup exists."
                $(if (ly:music? lyrics)
                   #{ \new Lyrics \lyricsto $name $lyrics #})
           >> #}
-          (begin (if (ly:get-option 'debug-messages)
-                     (ly:message "Variable ~a doesn't exist." mus-name))
+          (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
               (make-music 'Music 'void #t))))))
 
 (define newLyrics
@@ -106,14 +102,14 @@ markup exists."
 ;; Create Lyrics contexts accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (mus-name (string-append current-part name)))
+           (current-name (string-append current-part name)))
       #{
         $(let* ((musiclist (list #{ {} #}))
                 (numlist (if (ly:get-option 'only-suffixed-varnames)
                             lang:numbers
                             (cons "" lang:numbers))))
           (map (lambda (x)
-                  (let* ((lyr-name (string-append mus-name lang:lyrics-suffix
+                  (let* ((lyr-name (string-append current-name lang:lyrics-suffix
                                                   (string-capitalize x)))
                         (lyrics (ly:parser-lookup parser (string->symbol lyr-name))))
                     (if (ly:music? lyrics)
@@ -136,7 +132,7 @@ markup exists."
                             lang:numbers
                             (cons "" lang:numbers))))
           (map (lambda (x)
-                  (let ((staff-name (string-append current-part mus-name (string-capitalize x))))
+                  (let ((staff-name (string-append current-part name (string-capitalize x))))
                      (append! musiclist (list
                         #{ \newStaff $staff-name #}))))
             lang:numbers)

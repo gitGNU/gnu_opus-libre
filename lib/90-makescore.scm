@@ -34,9 +34,8 @@ current-part music."
         (if (string? key) #{ \\newStaff $key #}
             (begin
               (if (not (or (string=? \"\" str) (string=? lang:all)))
-                  (if (ly:get-option 'debug-messages)
-                      (ly:warning \"Unknown instrument variable;
-  ---> please check your `make' argument.\")))
+                  (ly:debug-message \"Unknown instrument variable;
+  ---> please check your `make' argument.\"))
                  #{ ~a #}))))"
                        (read-file (open-input-file file)))))
 
@@ -52,9 +51,8 @@ current-part music."
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
                            #f))
-               (new-filename (if (defined-string? 'scores)
-                                 (ly:parser-lookup parser 'scores)
-                                 orig-filename)))
+               (new-filename (car (reverse
+                                    (string-split score-dir #\/)))))
           (if (not prefix)
               orig-filename
               (string-append prefix new-filename)))))

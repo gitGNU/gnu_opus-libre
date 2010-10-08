@@ -35,8 +35,11 @@
 ;; *nix file-tree."
   (let* ((defined-score (ly:parser-lookup parser 'scores))
          (branch (if (ly:get-option 'git-branch-as-score-name)
-                     (let* ((port (open-input-pipe "git branch | grep \\*"))
-                            (str (string-drop (read-line port) 2)))
+                     (let* ((port (open-input-pipe "git branch --no-color | grep \\*"))
+                            (str (read-line port)))
+                       (if (string? str)
+                           (set! str (string-drop str 2))
+                           #f)
                        (close-pipe port)
                        str)
                      #f))
