@@ -9,6 +9,8 @@
 ;                                                                  ;
 ;------------------------------------------------------------------;
 
+(load "liblayout.scm")
+
 (define-public (include-ly dir)
   "Include all LilyPond code found in DIR, recursively."
   (let ((ly-files (find-files dir ".i?ly$" #t)))

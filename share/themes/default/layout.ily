@@ -1,8 +1,21 @@
 
+%% Only cosmetic stuff.
+%% i.e. don't use this file to fiddle with things that
+%% affect input syntax, like ignoreMelismata etc.
+
 \layout {
   \context {
     \Score
     subdivideBeams = ##t
+    \override TrillPitchAccidental #'avoid-slur = #'inside
+    \override TimeSignature #'style = #'()
+    \override SystemStartBracket #'collapse-height = #1
+    %\override SystemStartBrace #'collapse-height = #1
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #modern-accidentals-style % see liblayout.scm
+    autoCautionaries = #modern-cautionaries-style
+    extraNatural = ##f
   }
   \context {
     \Voice
