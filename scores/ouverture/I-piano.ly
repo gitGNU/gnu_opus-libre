@@ -1,6 +1,5 @@
 %-- Ouverture -- I-piano.ly ---------------------------------------%
 % (c) 2002-2010 Valentin Villenave <valentin@villenave.net>
-showLastLength = R16*883
 
 PianoIMd = \relative do' {
   R1
@@ -502,7 +501,7 @@ PianoIMg = \relative do' {
   R2.*4 s2.*3
   \stemDown \lightBeams \graceNotes {
   re32 mi s16 re'32 mi s16 \md re'32 mi s16 re'32 mi s16 } \mg s4 |
-  s2.*4 \ottava #-1
+  \stemNeutral s2.*4 \ottava #-1
   <re,,,, re'>16 <mi mi'>8. <re re'>16 <mi mi'>8. |
   <re re'>16 <mi mi'>4..\laissezVibrer s2 \ottava #0 R1
   \ottava #-1
