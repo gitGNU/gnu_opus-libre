@@ -35,8 +35,9 @@
                                     (string-drop (string-upcase
                                                   (match:substring m)) 1)) 'post))))
                   (if (not prefix)
-                      (if (or (string-every char-set:whitespace val)
-                              (string-any (char-set #\{ #\# #\< #\\) val))
+                      (if (or (string-any (char-set #\{ #\# #\< #\\) var)
+                              (string-any (char-set #\{ #\# #\< #\\) val)
+                              (string-every char-set:whitespace val))
                           (set! val #f))
                       ;; Native .ly definitions take precedence over .conf defs
                       (begin
@@ -45,8 +46,8 @@
                                        "\"" (ly:parser-lookup parser lyvar) "\"")))
                         (if (not (string=? prefix ""))
                             (set! var (string-append prefix ":" var)))))
-                  (let ((str (format #f "(define-public ~a ~a)" var val)))
-                    (eval-string str)))))
+                  (if val (let ((str (format #f "(define-public ~a ~a)" var val)))
+                            (eval-string str))))))
           ;; then move on to the next line, until EOF.
           (parse-lines-in port prefix))
         (close-port port))))
