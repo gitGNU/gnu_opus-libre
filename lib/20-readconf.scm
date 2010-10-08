@@ -46,8 +46,8 @@
                                        "\"" (ly:parser-lookup parser lyvar) "\"")))
                         (if (not (string=? prefix ""))
                             (set! var (string-append prefix ":" var)))))
-                  (let ((str (format #f "(define-public ~a ~a)" var val)))
-                    (eval-string str)))))
+                  (if var (let ((str (format #f "(define-public ~a ~a)" var val)))
+                            (eval-string str))))))
           ;; then move on to the next line, until EOF.
           (parse-lines-in port prefix))
         (close-port port))))
