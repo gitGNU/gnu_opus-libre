@@ -49,8 +49,8 @@ PianoIMd = \relative do' {
   <sol \whiteNote re' sol>16 <la la'>8. <sib sib'>16 <do do'>8. |
   s1 s2 |
   <dod dod'>16 <red red'>4..*1/7
-  \ottava #1 fa''8 la re,\rest \ottava #0
-  <dod,, dod'>16 <red red'>4.. |
+  \ottava #1 fa''8 la \ottava #0 re,,\rest 
+  <dod, dod'>16 <red red'>4.. |
   <dod dod'>16 <red red'>8 <do do'>16 <sib sib'>8
   <fad fad'>16 <mi mi'>~ <mi mi'>8 <mib la> |
   <\whiteNote re sol dod>16 <la' red>4..*3/7
