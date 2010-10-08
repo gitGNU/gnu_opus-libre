@@ -51,9 +51,8 @@ current-part music."
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
                            #f))
-               (new-filename (if (defined-string? 'scores)
-                                 (ly:parser-lookup parser 'scores)
-                                 orig-filename)))
+               (new-filename (car (reverse
+                                    (string-split score-dir #\/)))))
           (if (not prefix)
               orig-filename
               (string-append prefix new-filename)))))

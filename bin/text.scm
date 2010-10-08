@@ -60,7 +60,7 @@
   (define-music-function (parser location text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
-      (set! current-staff-position 1)
+      (set! current-staff-position 4)
       (make-music 'ApplyOutputEvent
                   'origin location
                   'context-type 'Voice
@@ -70,6 +70,7 @@
                       (if (number? staff-pos)
                           (set! current-staff-position staff-pos)))))
       #{ \once \set fingeringOrientations = #'(left)
+         \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #t text music)
          $music #})))
 
@@ -77,7 +78,7 @@
   (define-music-function (parser location text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
-      (set! current-staff-position 1)
+      (set! current-staff-position -4)
       (make-music 'ApplyOutputEvent
                   'origin location
                   'context-type 'Voice
@@ -87,5 +88,6 @@
                       (if (number? staff-pos)
                           (set! current-staff-position staff-pos)))))
       #{ \once \set fingeringOrientations = #'(left)
+         \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
