@@ -1,7 +1,18 @@
 %-- Trois poèmes -- texte.ly --------------------------------------%
 % (c) 2004-2010 Valentin Villenave <valentin@villenave.net>
 
-UnTexte = \lyricmode {
+\header {
+  title = "Trois poèmes d'Edwige Hudson"
+  composer = "Valentin Villenave"
+  arranger = "2004"
+  tagline = "Partition éditée avec le logiciel libre GNU LilyPond"
+}
+
+UnTitre = "I."
+DeuxTitre = "II."
+TroisTitre = "III."
+
+UnSopranoTexte = \lyricmode {
   \set ignoreMelismata = ##t
   Tu es noi -- re vrai -- ment
   co -- _ mme le sou -- ri -- _ re du soir,
@@ -23,7 +34,7 @@ UnTexte = \lyricmode {
   mi -- roir au teint de pierre.
 }
 
-DeuxTexte = \lyricmode {
+DeuxSopranoTexte = \lyricmode {
   \set ignoreMelismata = ##t
   Fuir, comme un \dash pur -- sang au crin de feu_;
   fuir, fuir, __ _
@@ -39,7 +50,7 @@ DeuxTexte = \lyricmode {
   Se -- mence poi -- vrée des Dieux. __ _ _
 }
 
-TroisTexte = \lyricmode {
+TroisSopranoTexte = \lyricmode {
   \set ignoreMelismata = ##t
   J'ai re -- spi -- ré ton âme
   dans un bai -- ser, u -- ne la -- rme.

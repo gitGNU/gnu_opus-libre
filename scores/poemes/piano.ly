@@ -7,7 +7,7 @@
 
 UnPianoMd = \relative {
   r4 | R2
-  \pl <si' red sold>2.\arpeggio \laissezVibrer \ppptresclair
+  \pl <si' red sold>2.\arpeggio \laissezVibrer -\dyn "ppp_très clair"
   <si' red sold>\arpeggio \laissezVibrer |
   \pl <la, do fa>2\arpeggio \laissezVibrer
   <la' do fa>\arpeggio \laissezVibrer |
