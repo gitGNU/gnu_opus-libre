@@ -60,7 +60,7 @@
   (define-music-function (parser location text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
-      (set! current-staff-position 4)
+      (set! current-staff-position -4)
       (make-music 'ApplyOutputEvent
                   'origin location
                   'context-type 'Voice
@@ -78,7 +78,7 @@
   (define-music-function (parser location text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
-      (set! current-staff-position -4)
+      (set! current-staff-position -1)
       (make-music 'ApplyOutputEvent
                   'origin location
                   'context-type 'Voice

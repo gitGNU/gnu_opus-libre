@@ -210,14 +210,6 @@ plak =
     ((end * * 5 8) . ,(ly:make-moment 5 8))
     )))
 
-#(define modern-accidentals-style
-     `(Staff ,(make-accidental-rule 'same-octave 0)
-             ,(make-accidental-rule 'any-octave 0)
-             ,(make-accidental-rule 'same-octave 1)
-                   ,neo-modern-accidental-rule))
-#(define modern-cautionaries-style
-     `(Staff ,(make-accidental-rule 'same-octave 1)
-             ,(make-accidental-rule 'any-octave 1)))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Editorial %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
