@@ -87,22 +87,21 @@ marks.  Regular spaces are allowed inside words.
 
 (define-markup-command (bracketText layout props num up? arg) (number? boolean? markup?)
   (let ((pos (max 3 (- 10 (- num))))
-        (text (markup #:with-dimensions '(0 . 0)'(0 . 0) arg)))
+        (text (markup #:with-dimensions '(0 . 0)'(0 . 0) arg))
+        (stack (lambda (x)
+                  (markup #:normal-text #:fontsize 3
+                          #:center-column
+                          ((if up? text "")
+                          #:with-dimensions
+                          '(0 . .5)
+                          (if up?
+                              (cons 0 (+ x .2))
+                              (cons (- x .2) 0))
+                          #:postscript (format #f "
+                            .12 setlinewidth
+                            .5 0 -.5 0 lineto
+                            -.5 0 -.5 ~a lineto
+                            stroke" x)
+                          (if up? "" text))))))
     (if (not up?) (set! pos (- pos)))
-    (interpret-markup layout props
-                      (markup #:normal-text #:fontsize 3
-                              #:center-column
-                              ((if up? text "")
-                               #:with-dimensions
-                               '(0 . .5)
-                               (if up?
-                                   (cons 0 (+ pos .2))
-                                   (cons (- pos .2) 0))
-                               #:postscript (format #f "
-                                 .12 setlinewidth
-                                 .5 0 -.5 0 lineto
-                                 -.5 0 -.5 ~a lineto
-                                 stroke" pos)
-                               (if up? "" text))
-                              ))
-    ))
+    (interpret-markup layout props (stack pos))))
