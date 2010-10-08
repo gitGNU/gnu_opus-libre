@@ -43,8 +43,8 @@ PianoIIMd = \relative do' {
   <sol,, \whiteNote sib \whiteNote re sol>16 <la la'>4..
   <sol sib re sol>16 <la dod mi la>4.. |
   <sol sol'>16 <la la'>8. <sib sib'>16 <do do'>8 mi,32 la |
-  <dod, \whiteNote fad \whiteNote sib \whiteNote do!>16 red'4..
-  <dod, \whiteNote sol' \whiteNote sib dod>16 <red red'>4..*3/7
+  <dod, \whiteNote fad \whiteNote sib \whiteNote do!>16 red4..
+  <dod \whiteNote sol' \whiteNote sib dod>16 <red red'>4..*3/7
   \ottava #1 <si''' la'>8 \ottava #0 r |
   <dod,,, dod'>16 <red red'>8. <re re'>16 <mi mi'>8.~
   \t {<mi mi'>8 <sol sol'> <sib sib'>} |
@@ -80,9 +80,9 @@ PianoIIMd = \relative do' {
   <la la'>2*2\laissezVibrer | s1 R1
   <sib, sib'>32 <do do'>4...\laissezVibrer s2 |
   la''2\laissezVibrer
-  \pl {<sib,, do la'>2~ <sib do la' do>\laissezVibrer
+  \pl {<sib,, do la'>2~ <sib do la'>\laissezVibrer
   \bracketDown "m.s." la2}
-  {\t {sib'8 do4~} do~ \hideNote do2*2} |
+  {\t {sib'8 do4~} do~ do2*2\laissezVibrer } |
   R1 \bracketDown "m.s." <do, la>4 <la do> q q q q q |
   \bracketUp "m.d." <la do> \bracketDown "m.s." <do la>
   <la do> q q q q | q q q q q q q |
