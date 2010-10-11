@@ -7,9 +7,15 @@
 % redistribute it and/or modify it under the terms of the GNU      %
 % General Public License, version 3 or later: gnu.org/licenses     %
 %                                                                  %
+% Full licensing information and documentation are to be found     %
+% in the share/doc subdirectory.                                   %
+%                                                                  %
 %------------------------------------------------------------------%
 
+
 % Entry point for scores compilation.
+
+
 \version "2.13.35"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,3 +54,4 @@ structure = #'("")
 \make #"all"
 
 %%-----------------------------------------------------------------%
+
