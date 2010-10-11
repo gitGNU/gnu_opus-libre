@@ -1,3 +1,7 @@
+%-- The Free Software Song -- voiceTwo.ly -------------------------%
+% (c) 1993 Richard M. Stallman
+% http://www.gnu.org/music/free-software-song.html
+
 voiceTwo = \relative c' {
  \time 7/4
  \clef violin
