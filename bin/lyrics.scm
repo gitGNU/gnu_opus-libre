@@ -27,3 +27,4 @@
 #{
   \once \override LyricText #'self-alignment-X = #-0.9
 #})
+

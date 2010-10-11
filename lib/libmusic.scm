@@ -11,9 +11,6 @@
 
 ; Music functions.
 
-
-
-
 ;; Articulation marks -- after Gilles Thibault's snippet: see
 ;; http://lists.gnu.org/archive/html/lilypond-user/2008-06/msg00012.html
 
@@ -83,3 +80,4 @@
           ((ly:music? e)
            (octavize e))))
   music)
+

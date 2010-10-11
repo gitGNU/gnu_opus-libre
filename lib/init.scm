@@ -82,26 +82,5 @@
                   (load x)))
          scm-files)))
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;; Load libraries ;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-;;;;;;;;;;;;;;;;;;;;;; Define music-functions ;;;;;;;;;;;;;;;;;;;;;;
-
-;; Required by main.ly --------------------------------------------;
-; lang =
-; #(define-music-function (parser location lang-code) (string?)
-;   (input-language lang-code)
-;   (make-sequential-music 'void #t))
-;
-; edition =
-; #(define-music-function (parser location lang-code) (string?)
-;   (edition-language lang-code)
-;   (make-sequential-music 'void #t))
-;
-; make =
-; #(define-music-function (parser location dir) (string?)
-;   (use-score-dir dir))
-
-
 ;------------------------------------------------------------------;
+;

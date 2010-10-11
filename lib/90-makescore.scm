@@ -100,3 +100,4 @@ current-part music."
 
            struct)
       (make-music 'Music 'void #t))))
+

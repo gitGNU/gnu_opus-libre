@@ -1,10 +1,4 @@
-%------------------------------------------------------------------%
-% Opéra Libre -- text-functions.ly                                 %
-%                                                                  %
-% (c) Valentin Villenave, 2008, 2009                               %
-%------------------------------------------------------------------%
-
-%% FIXME: adapt to new framework
+%% FIXME: This file is deprecated and must be adapted to the framework
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% In-score Text %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -228,3 +222,4 @@ tocQuote =
                   'Staff)
                 (context-spec-music (make-property-set 'midiInstrument midi)
                   'Staff))))))
+

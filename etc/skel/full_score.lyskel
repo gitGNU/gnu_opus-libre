@@ -1,10 +1,4 @@
-%------------------------------------------------------------------%
-% Opéra Libre -- full_score.ly                                     %
-%                                                                  %
-% (c) Valentin Villenave, 2008, 2009                               %
-%------------------------------------------------------------------%
-
-
+%%FIXME: This file is deprecated. 
 %%%%%%%%%%%%%%%%%%%%%% Additional Inclusions %%%%%%%%%%%%%%%%%%%%%%%
 
 \layout { \includeScoreLayout }

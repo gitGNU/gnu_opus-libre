@@ -1,8 +1,4 @@
-%------------------------------------------------------------------%
-% Opéra Libre -- settings.ly                                       %
-%                                                                  %
-% (c) Valentin Villenave, 2008, 2009                               %
-%------------------------------------------------------------------%
+%%FIXME: This file is deprecated and needs to be adapted to the framework
 
 %% Depends on: music-functions.ly
 

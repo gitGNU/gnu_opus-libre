@@ -1,8 +1,4 @@
-%------------------------------------------------------------------%
-% Opéra Libre -- functions.ly                                      %
-%                                                                  %
-% (c) Valentin Villenave, 2008, 2009                               %
-%------------------------------------------------------------------%
+%%FIXME: this file is deprecated and must be adapted to the framework
 
 % Core structure functions (with great help from Nicolas Sceaux and
 % Reinhold Kainhofer).
@@ -54,3 +50,4 @@ includeAll =
 
        variable-names)
    (make-music 'Music 'void #t))
+
