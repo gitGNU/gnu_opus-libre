@@ -3,7 +3,9 @@ ALREADY ACHIEVED:
 - file tree layout
 - automatic variables inclusion
 - properties-retrieval functions
+- language and git branch detection
 - basic macros
+- default theme
 - example score
 
 TO BE DONE:

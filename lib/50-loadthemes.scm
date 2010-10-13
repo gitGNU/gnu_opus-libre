@@ -43,3 +43,4 @@
         (if (not (equal? user-theme conf:default-theme))
             (include-theme-dir
                      (string-append conf:themes-dir "/" user-theme))))))
+

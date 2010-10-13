@@ -1,28 +1,137 @@
+** what it is **
 opus_libre is a framework for the GNU LilyPond music notation software.
-
-It originated with the Opera Libre project, a large music score that
-was written, published, performed and recorded using only Free Software.
-
-opus_libre is designed with portability in mind, to make it easier to
-create new scores as well as to integrate existing ones within the
-framework.  It should also eventually have support for graphic themes,
-input/edition languages choice, automatic scores inclusion using
-predefined skeletons, etc.
 
 LilyPond is a GNU Free software that is both powerful and simple to
 learn, and that you can download on http://www.lilypond.org.
 It runs on most modern Operating Systems, and has been
 ported for various architectures.
 
+
+** principle **
+opus_libre is designed with portability in mind, to make it easier to
+create new scores as well as to integrate existing ones within the
+framework.  It should also eventually have support for graphic themes,
+input/edition languages choice, automatic scores inclusion using
+predefined skeletons, etc.
+
+
+** usage **
+You may use opus_libre by adding your music in an appropriately-named
+separate subdirectory of the scores/ directory.  If you plan on
+distributing the source code of score (which I hope you'll do),
+please remember to add your name, copyright, and license to all of
+your score's source files.  Using opus_libre does not mandate you to
+publish your score under a free license (it's okay to be afraid, we've
+all been there), but even if you don't, please be a good citizen and
+at least have a look at http://freedomdefined.org...
+
+(Or http://artlibre.org if you happen to speak French :-)
+
+
+** how does it work? **
+Well, let me walk you through the file tree, that should give you
+a few pointers.
+
+opus_libre follows the *nix Filesystem Hierarchy Standard, which
+you should be familiar with if you use a GNU/Linux or BSD system.
+
+Think of the opus_libre root directory as / or /usr/ (kind of both,
+actually. Oh well).  Which means that:
+  - /bin contains "applications" (well, in this case, LilyPond macros)
+         that you can use to make your life (well, at least your music
+         typesetting) a bit easier.
+  - /lib contains "libraries" (in this case, Scheme functions) that
+         you normally don't have to deal with directly.  As long as your
+         entry file (the one you'll feed to LilyPond, typically main.ly)
+         has something like \include "lib/include.ly", everything else will
+         be done automatically.
+  - /etc contains "system-wide settings" (in this case, definitions
+         that will be useful no matter what score you want to compile). Which,
+         in turn, includes
+    - ly.conf (the main configuration file)
+    - ly.conf.d/ (additional conf files)
+    - locale/ (you know what I mean)
+    - skel/ (.lyskel skeleton files that will give tell opus_libre
+            how to "vertically" organize your score: staffs, staff groups,
+            lyrics, etc.)
+  - /out is the directory where your compiled PDF (png, svg, midi,...) files
+         will appear.
+  - /scores is where you put your music (we've covered that bit, haven't we?).
+            Please note that *everything* that lives in / (meaning, the
+            opus_libre root directory) may be overriden by what's in
+            score/yourscore/.  Think of your score directory as the /usr/local/
+            directory, where you can have customized macros, local settings,
+            skeletons, themes, language files, whatever you might need that's
+            specific to a particular score.
+  - /share contains resources that aren't algorithmic (that's not entirely
+           true however, as we'll see):
+    - doc/ You're reading it. Duh.
+    - fonts/ Fancier fonts than Lily's Century SchoolBook or whatever are the
+             default fonts on your system.
+    - images/ Cute little thingies you might want on your scores.  Mostly Postscript
+              code (though pixmaps aren't entirely off the table yet).
+    - themes/ This is where you can select graphic themes (provided that different
+              themes actually exist, of course).  Layout, Paper variables are
+              also set here.  The default theme is loaded anyway, so that
+              selecting an additional theme will only override what's needed.
+
 More documentation will be added later; for now, you may learn more
 about LilyPond on its official website or on the community website
 http://www.lilynet.net.
 
-My own music is stored in various branches of the opus_libre.git
-project, and my Opera Libre project may be found on
-http://repo.or.cz/w/opera_libre.git, or on my personal website
-http://valentin.villenave.net.
+
+** what it does (and what it doesn't do) **
+opus_libre does try to be clever so you don't have to be.
+
+For instance, music variables can be named using your native language
+or English; another example is the swiss-knife-like \make command,
+that you can provide with either the name of an instrument, a piece of
+your score, a list of pieces or special arguments!
+
+What opus_libre also tries to do is allow you to easily override
+*anything* you might think of.  We've seen that your score directory may
+contain local overrides; any .ly file (even your main.ly, although that's
+not recommended) can also set definitions.  All in all, there are quite a
+few places where you can set or override a setting, in order of precedence:
+  - any .ly file
+  - your local score.ly file
+  - main.ly
+  - any local .conf file
+  - any etc/ly.conf.d/* conf file
+  - the etc/ly.conf file
+
+All of this comes at a cost: what opus_libre will NOT do is
+make your music compile faster.  All files are processed, all
+variables are defined no matter what will actually be used;
+many variables are even defined several times because of the
+override paradigm.  So let's face it: there IS a memory overhead,
+that can even be quite substantial (even if all you want to do is
+compile only the flute part of one movement of a symphony,
+opus_libre will still load the whole full score into RAM!), and
+there IS an additional delay compared to the amount of time
+GNU LilyPond usually takes.
+
+
+** history **
+opus_libre originated with the Opera Libre project, a large music score
+of mine that was entirely written, published, performed and recorded
+using only Free Software.  Although I had been coding quite a lot of
+macros and functions for this project, all of this remained tightly
+connected with this particular score, on a (relatively speaking) low
+level.  This is why I started the opus_libre project, in an attempt
+to make the framework more abstract, portable and extensible.
+
+
+** Who am I? **
+I'm a 26-years-old French composer, GNU LilyPond contributor and
+free software activist.  But mostly, that's just a fancy way of
+saying that I'm your average computer geek.
+
+My own music is stored on various git repositories,
+for instance my Opera Libre project may be found on
+http://repo.or.cz/w/opera_libre.git.
+I also have a personal website on http://valentin.villenave.net.
 
 Please feel free to stop by and let me know about your thoughts!
 
-   - Valentin Villenave.
+   - Valentin Villenave, September 2010.

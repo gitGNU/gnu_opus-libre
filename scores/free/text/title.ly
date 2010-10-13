@@ -1,3 +1,6 @@
+%-- The Free Software Song -- title.ly ----------------------------%
+% (c) 1993 Richard M. Stallman
+% http://www.gnu.org/music/free-software-song.html
 
 \header {
   filename = "free.ly"

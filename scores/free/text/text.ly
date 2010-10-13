@@ -1,3 +1,7 @@
+%-- The Free Software Song -- text.ly -----------------------------%
+% (c) 1993 Richard M. Stallman
+% http://www.gnu.org/music/free-software-song.html
+
 voiceOneWordsOne = \lyricmode {
  Join us now and
  share the so -- ftware;

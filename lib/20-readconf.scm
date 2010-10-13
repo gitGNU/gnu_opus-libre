@@ -98,3 +98,4 @@
     ;; be used later for macros, themes, local overrides etc.
     (set! conf:local-conf-dir usr-conf)
     (parse-def-dir conf:local-conf-dir)))
+
