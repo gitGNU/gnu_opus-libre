@@ -34,6 +34,28 @@
                             (markup #:dynamic-string arg)))
                        (else arg)))))
 
+(define dyncresc
+  (define-music-function (parser location arg) (markup?)
+    (make-music 'CrescendoEvent 'span-direction START
+                'span-type 'text
+                'span-text (cond
+                            ((string? arg)
+                             (if (string-every char-set:dynamics arg)
+                                 arg
+                                 (markup #:dynamic-string arg)))
+                            (else arg)))))
+
+(define dyndim
+  (define-music-function (parser location arg) (markup?)
+    (make-music 'DecrescendoEvent 'span-direction START
+                'span-type 'text
+                'span-text (cond
+                            ((string? arg)
+                             (if (string-every char-set:dynamics arg)
+                                 arg
+                                 (markup #:dynamic-string arg)))
+                            (else arg)))))
+
 (define startText
   (define-music-function (location parser txt) (markup?)
      (make-text-span txt)))
