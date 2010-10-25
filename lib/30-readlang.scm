@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 ; Language selection.
 
@@ -56,3 +64,4 @@
                                 f)))))
     (load-lang-file input-lang-file)
     (load-lang-file local-lang-file)))
+

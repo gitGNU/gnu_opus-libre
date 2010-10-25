@@ -1,3 +1,6 @@
+%-- The Free Software Song -- voiceOne.ly -------------------------%
+% (c) 1993 Richard M. Stallman
+% http://www.gnu.org/music/free-software-song.html
 
 voiceOne = \relative c' {
  \time 7/4

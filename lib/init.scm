@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 ; Init file: mandatory variables and functions.
 
@@ -82,26 +90,5 @@
                   (load x)))
          scm-files)))
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;; Load libraries ;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-;;;;;;;;;;;;;;;;;;;;;; Define music-functions ;;;;;;;;;;;;;;;;;;;;;;
-
-;; Required by main.ly --------------------------------------------;
-; lang =
-; #(define-music-function (parser location lang-code) (string?)
-;   (input-language lang-code)
-;   (make-sequential-music 'void #t))
-;
-; edition =
-; #(define-music-function (parser location lang-code) (string?)
-;   (edition-language lang-code)
-;   (make-sequential-music 'void #t))
-;
-; make =
-; #(define-music-function (parser location dir) (string?)
-;   (use-score-dir dir))
-
-
 ;------------------------------------------------------------------;
+;

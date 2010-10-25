@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 ;; Macros for entering text elements.
 
@@ -25,6 +33,28 @@
                             arg
                             (markup #:dynamic-string arg)))
                        (else arg)))))
+
+(define dyncresc
+  (define-music-function (parser location arg) (markup?)
+    (make-music 'CrescendoEvent 'span-direction START
+                'span-type 'text
+                'span-text (cond
+                            ((string? arg)
+                             (if (string-every char-set:dynamics arg)
+                                 arg
+                                 (markup #:dynamic-string arg)))
+                            (else arg)))))
+
+(define dyndim
+  (define-music-function (parser location arg) (markup?)
+    (make-music 'DecrescendoEvent 'span-direction START
+                'span-type 'text
+                'span-text (cond
+                            ((string? arg)
+                             (if (string-every char-set:dynamics arg)
+                                 arg
+                                 (markup #:dynamic-string arg)))
+                            (else arg)))))
 
 (define startText
   (define-music-function (location parser txt) (markup?)
@@ -91,3 +121,4 @@
          \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
+
