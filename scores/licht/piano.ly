@@ -11,7 +11,7 @@ PianoMd =
   \pl {sol4 do re lab} { sol'2. sol4}
   do re8 lab~ | lab4.~ lab8 <mi si'> <fad mi'>
   <fa sib> <sib, mib> <mib, re'> <do fa> <la' dod> <lab si>|
-  <sol sol'>2. \grace {fa'16 sol} \times 3/2 {fa8 mi16 la,}
+  <sol sol'>2. \grace {fa'16[ sol]} \times 3/2 {fa8 mi16 la,}
   fa'8 <sib, sib'> <do do'> |
   \pl {solb8. sib} solb'4.
   <la, la'>8 <re re'> <mi mi'> <lab, lab'>4.
@@ -34,6 +34,19 @@ PianoMd =
   R1*14/4 \clef bass
   mi,,4 sold do re2 si4 dod lad sid |
   mi,2 sold4 do re si dod la si fad2 |
+  mi4 sold do re2 si4 dod lad fa |
+  mi2 sold4 do re si dod la si sold lad |
+  fad2 reb'4 |
+  mi sold si lad red2 la4 fa |
+  mi sold si2 lad4 red la fa2 |
+  mi4 sol si dod sold |
+  mi sol si dod fad, r2 |
+  mi4 fad2\fermata |
+  mi4 sol lad2\fermata |
+  mi4 sol <fa do'> <si sold'>2\fermata |
+  mib,4 la <solb reb'> <sib sol'> <sold mid'> <re' la'>4. |
+  \clef treble \stemDown la'2.*1/3 \stemNeutral \t {r4 mib re'} |
+  
 }
 
 PianoMg =

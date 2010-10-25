@@ -121,6 +121,6 @@ Mesures = {
   \time 5/16 s1*5/16
   \time 2/8 s4
   \time 3/8 s4.
-  \once \override TimeSignature #'stencil = ##f
+  \once \override Staff.TimeSignature #'stencil = ##f
   \time 4/4 s1 \bar "|."
 }
