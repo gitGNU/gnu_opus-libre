@@ -5,29 +5,27 @@
 %                                                                  %
 %     opus_libre is a free framework for GNU LilyPond: you may     %
 % redistribute it and/or modify it under the terms of the GNU      %
-% General Public License, version 3 or later: gnu.org/licenses     %
+% General Public License as published by the Free Software         %
+% Foundation, either version 3 of the License, or (at your option) %
+% any later version.                                               %
+%     This program is distributed WITHOUT ANY WARRANTY; without    %
+% even the implied warranty of MERCHANTABILITY or FITNESS FOR A    %
+% PARTICULAR PURPOSE.  You should have received a copy of the GNU  %
+% General Public License along with this program (typically in the %
+% share/doc/ directory).  If not, see http://www.gnu.org/licenses/ %
 %                                                                  %
 %------------------------------------------------------------------%
 
-dash = {
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
-
-leftSyl = {
-  \once \override LyricText #'self-alignment-X = #0.9
-}
-
-
 
 % Entry point for scores compilation.
-\version "2.13.32"
+
+
+\version "2.13.35"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code language (see locale/ ) ----------------------------%
-input = "en"
+%input = "en"
 
 %% Edition localisation (if different) ----------------------------%
 %edition = "fr"
@@ -45,7 +43,7 @@ skel = "song"
 %% Graphic theme (see share/themes/ ) -----------------------------%
 theme = "default"
 
-structure = #'("" "scene")
+structure = #'("")
 
 %lyricsSuffix = "Texte"
 
@@ -57,10 +55,7 @@ structure = #'("" "scene")
 %% Select edition or instrument -----------------------------------%
 
 % (e.g. "fullscore", "pianoscore" or any instrument name)
-%\make #"all"
-% { c }
-%\bookOutputName #"toto"
-
 \make #"all"
 
 %%-----------------------------------------------------------------%
+

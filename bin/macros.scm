@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 ; Input macros.
 
@@ -52,13 +60,55 @@
 
 
 (define hideNote #{
-\once \override NoteHead  #'transparent = ##t
-\once \override NoteHead  #'no-ledgers = ##t
-\once \override Stem  #'transparent = ##t
-\once \override Beam  #'transparent = ##t
-\once \override Accidental  #'transparent = ##t
+\once \override Dots #'transparent = ##t
+\once \override NoteHead #'transparent = ##t
+\once \override NoteHead #'no-ledgers = ##t
+\once \override Stem #'transparent = ##t
+\once \override Beam #'transparent = ##t
+\once \override Accidental #'transparent = ##t
+#})
+
+(define hideNoteHead #{
+\once \override NoteHead #'transparent = ##t
+#})
+
+(define hideNoteHeads
+  (define-music-function (parser location x) (ly:music?)
+  #{\override NoteHead #'transparent = ##t $x \revert NoteHead #'transparent #}))
+
+(define graceNote #{
+\once \set fontSize = #-2
 #})
 
 (define graceNotes
   (define-music-function (parser location x) (ly:music?)
   #{ \tiny $x \normalsize #}))
+
+(define lightBeam #{
+\once \override Beam #'beam-thickness = #0.36
+\once \override Beam #'gap = #0.5
+#})
+
+(define lightBeams
+  (define-music-function (parser location x) (ly:music?) #{
+\override Beam #'beam-thickness = #0.36
+\override Beam #'gap = #0.5
+$x
+\revert Beam #'beam-thickness
+\revert Beam #'gap
+#}))
+
+(define whiteNote
+  (define-music-function (parser location arg) (ly:music?)
+    (set! (ly:music-property arg 'tweaks)
+                                 (acons 'duration-log 1
+                                    (ly:music-property arg 'tweaks)))
+                         arg))
+
+(define blackNote
+  (define-music-function (parser location arg) (ly:music?)
+    (set! (ly:music-property arg 'tweaks)
+                                 (acons 'duration-log 4
+                                    (ly:music-property arg 'tweaks)))
+                         arg))
+

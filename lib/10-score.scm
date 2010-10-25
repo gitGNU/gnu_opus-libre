@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 ; Score assembly.
 
@@ -35,8 +43,11 @@
 ;; *nix file-tree."
   (let* ((defined-score (ly:parser-lookup parser 'scores))
          (branch (if (ly:get-option 'git-branch-as-score-name)
-                     (let* ((port (open-input-pipe "git branch | grep \\*"))
-                            (str (string-drop (read-line port) 2)))
+                     (let* ((port (open-input-pipe "git branch --no-color | grep \\*"))
+                            (str (read-line port)))
+                       (if (string? str)
+                           (set! str (string-drop str 2))
+                           #f)
                        (close-pipe port)
                        str)
                      #f))
@@ -53,3 +64,4 @@ A blank score will be created instead." defined-score conf:scores-dir)
           (begin (ly:warning "Score directory not defined!
 A blank score will be created instead.")
                   conf:default-score)))))
+

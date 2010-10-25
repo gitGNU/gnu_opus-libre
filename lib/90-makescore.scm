@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 (define numbers #f)
 (define current-part #f)
@@ -34,9 +42,8 @@ current-part music."
         (if (string? key) #{ \\newStaff $key #}
             (begin
               (if (not (or (string=? \"\" str) (string=? lang:all)))
-                  (if (ly:get-option 'debug-messages)
-                      (ly:warning \"Unknown instrument variable;
-  ---> please check your `make' argument.\")))
+                  (ly:debug-message \"Unknown instrument variable;
+  ---> please check your `make' argument.\"))
                  #{ ~a #}))))"
                        (read-file (open-input-file file)))))
 
@@ -52,9 +59,8 @@ current-part music."
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
                            #f))
-               (new-filename (if (defined-string? 'scores)
-                                 (ly:parser-lookup parser 'scores)
-                                 orig-filename)))
+               (new-filename (car (reverse
+                                    (string-split score-dir #\/)))))
           (if (not prefix)
               orig-filename
               (string-append prefix new-filename)))))
@@ -102,3 +108,4 @@ current-part music."
 
            struct)
       (make-music 'Music 'void #t))))
+

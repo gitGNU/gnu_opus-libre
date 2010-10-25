@@ -5,9 +5,17 @@
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
-; General Public License, version 3 or later: gnu.org/licenses     ;
+; General Public License as published by the Free Software         ;
+; Foundation, either version 3 of the License, or (at your option) ;
+; any later version.                                               ;
+;     This program is distributed WITHOUT ANY WARRANTY; without    ;
+; even the implied warranty of MERCHANTABILITY or FITNESS FOR A    ;
+; PARTICULAR PURPOSE.  You should have received a copy of the GNU  ;
+; General Public License along with this program (typically in the ;
+; share/doc/ directory).  If not, see http://www.gnu.org/licenses/ ;
 ;                                                                  ;
 ;------------------------------------------------------------------;
+
 
 ; Markup commands.
 
@@ -84,3 +92,25 @@ marks.  Regular spaces are allowed inside words.
 (define-markup-command (indic layout props arg) (markup?)
   (interpret-markup layout props
                     (markup #:whiteout #:small #:italic arg)))
+
+(define-markup-command (bracketText layout props num up? arg) (number? boolean? markup?)
+  (let* ((pos (max 3 (- 10 (- num))))
+         (text (markup #:with-dimensions '(0 . 0)'(0 . 0) arg))
+         (stack (lambda (x)
+                   (markup #:normal-text #:fontsize 3
+                           #:center-column
+                           ((if up? text "")
+                           #:with-dimensions
+                           '(0 . .5)
+                           (if up?
+                               (cons 0 (+ x .2))
+                               (cons (- x .2) 0))
+                           #:postscript (format #f "
+                             .12 setlinewidth
+                             .5 0 -.5 0 lineto
+                             -.5 0 -.5 ~a lineto
+                             stroke" x)
+                           (if up? "" text))))))
+    (if (not up?) (set! pos (- pos)))
+    (interpret-markup layout props (stack pos))))
+

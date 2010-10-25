@@ -1,6 +1,19 @@
-  If you want to modify and/or redistribute this work as a LilyPond score, 
-you must comply with the GNU General Public License (reproduced below)
-version 3 or later.
+  opus_libre is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License
+(reproduced below), or, at your option, any later version: see
+<http://www.gnu.org/licenses/>.
+
+  IMPORTANT WARNING: Please note that the above does not necessarily
+extend to music scores edited using the opus_libre program. If you
+have received this program bundled with a specific score (typically
+located in the scores/ directory), you are mandated to verify that
+said score does not come with its own copyright and license.
+
+  This program is distributed WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
