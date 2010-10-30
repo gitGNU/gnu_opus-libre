@@ -100,6 +100,7 @@
      (eq? name 'SpanDynamicEvent))))
 
 (define keepDyn
+;; Tag all dynamics in MUSIC.
   (define-music-function (parser location music) (ly:music?)
     (music-filter
      (lambda (x)
@@ -110,6 +111,7 @@
        x) music)))
 
 (define removeDynamics
+;; Remove untagged dynamics.
   (define-music-function (parser location test music) (boolean? ly:music?)
     (if test
         (music-filter
@@ -120,3 +122,18 @@
                    (not (memq 'staff-dynamics tags))))))
          music)
         music)))
+
+(define excludeTag
+;; Like \removeWithTag, but will not affect other contexts
+;; (i.e. no \change, no \bar or \time etc.)
+  (define-music-function (parser location tag music) (symbol? ly:music?)
+    (music-filter
+      (lambda (x)
+        (let ((name (ly:music-property x 'name))
+              (tags (ly:music-property x 'tags)))
+          (not (or
+(eq? name 'ContextChange)
+(eq? name 'ContextSpeccedMusic)
+(memq tag tags)
+))))
+      music)))
