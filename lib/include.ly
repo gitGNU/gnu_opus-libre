@@ -24,7 +24,7 @@
 %#(ly:set-option 'ignore-output-dir #t)
 %#(ly:set-option 'use-variable-names #t)
 %#(ly:set-option 'allow-suffixless-varnames #t)
-%#(ly:set-option 'automatic-piano-dynamics)
+%#(ly:set-option 'auto-piano-dynamics "up")
 #(ly:set-option 'git-branch-as-score-name #t)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Base includes %%%%%%%%%%%%%%%%%%%%%%%%%%%
