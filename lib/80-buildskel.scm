@@ -93,7 +93,7 @@ markup exists."
                          (append ret-list
                                  (list
                                    #{\context Dynamics = $name
-                                      \removeWithTag #'staff-dynamics
+                                      \excludeTag $'staff-dynamics
                                       $m
                                    #}))))))
            str-list)
