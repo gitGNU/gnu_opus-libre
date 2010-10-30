@@ -89,3 +89,34 @@
            (octavize e))))
   music)
 
+;; automatic dynamics
+(define (dynamic? x)
+  (let ((name (ly:music-property x 'name)))
+    (or
+     (eq? name 'DynamicEvent)
+     (eq? name 'AbsoluteDynamicEvent)
+     (eq? name 'CrescendoEvent)
+     (eq? name 'DecrescendoEvent)
+     (eq? name 'SpanDynamicEvent))))
+
+(define keepDyn
+  (define-music-function (parser location music) (ly:music?)
+    (music-filter
+     (lambda (x)
+       (if (dynamic? x)
+           (set! (ly:music-property x 'tags)
+                 (cons 'staff-dynamics
+                       (ly:music-property x 'tags))))
+       x) music)))
+
+(define removeDynamics
+  (define-music-function (parser location test music) (boolean? ly:music?)
+    (if test
+        (music-filter
+         (lambda (x)
+           (let ((tags (ly:music-property x 'tags)))
+             (not (and
+                   (dynamic? x)
+                   (not (memq 'staff-dynamics tags))))))
+         music)
+        music)))

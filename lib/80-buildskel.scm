@@ -75,11 +75,37 @@ markup exists."
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
                  (make-music 'Music 'void #t))))))
 
+(define newDynamics
+  ;;   "If NAME matches an existing music expression, then
+  ;; create a Dynamics context for it.  If NAME includes
+  ;; several names separated with spaces, then look for
+  ;; music expressions matching each available names."
+  (define-music-function (parser location name) (string?)
+    (let ((str-list (if (string-any #\sp name)
+                        (string-split name #\sp)
+                        (list name)))
+          (ret-list '()))
+      (map (lambda (x)
+             (let ((m (ly:parser-lookup parser
+                                        (string->symbol x))))
+               (if (ly:music? m)
+                   (set! ret-list
+                         (append ret-list
+                                 (list
+                                   #{\context Dynamics = $name
+                                      \removeWithTag #'staff-dynamics
+                                      $m
+                                   #}))))))
+           str-list)
+      (if (not (null? ret-list))
+          (make-simultaneous-music ret-list)
+          (make-music 'Music 'void #t)))))
+
 (define newStaff
-;;   "If NAME matches a defined music expression, then
-;; create a Staff for it.  Then find and include any
-;; instrumentName or Lyrics expression that could match
-;; this staff (using appropriate suffixes)."
+  ;;   "If NAME matches a defined music expression, then
+  ;; create a Staff for it.  Then find and include any
+  ;; instrumentName or Lyrics expression that could match
+  ;; this staff (using appropriate suffixes)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (current-name (string-append current-part name))
@@ -152,22 +178,39 @@ markup exists."
 ;; the appropriate upper-hand/lower-hand localized definitions,
 ;; that are also used in the variables as suffixes (e.g.
 ;; \PianoRh, \PianoLh).  This also allows for localized
-;; Staff-\changing shorthands.  If a suitable Dynamics expression
-;; is found, it will also be included accordingly."
+;; Staff-\changing shorthands.  If a suitable Dynamics
+;; expression is found, it will also be included accordingly;
+;; else if automatic-piano-dynamics is set, a Dynamics context
+;; will be created using dynamics from either staff (or both)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (upper (string-append name (string-capitalize lang:upper-hand)))
            (lower (string-append name (string-capitalize lang:lower-hand)))
            (dynamics (string-append current-part name lang:dynamics-suffix))
+           (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
-           (short-instr (make-this-text name lang:short-instr-suffix)))
+           (short-instr (make-this-text name lang:short-instr-suffix))
+           (autodyn (ly:get-option 'auto-piano-dynamics))
+           (both (or lang:both "both"))
+           (up (or lang:upper-hand "up"))
+           (down (or lang:lower-hand "down")))
+      (if (not autodyn) (set! autodyn ""))
+      ;; requires removeDynamics, defined in libmusic.scm
+      ;; (which should have been loaded by now, since macros need it).
     #{ \new PianoStaff \with {
          instrumentName = $instr
          shortInstrumentName = $short-instr
-       }
-     <<
-         \new Staff = $lang:upper-hand \newVoice $upper
-         \new Dynamics $(include-music dynamics)
-         \new Staff = $lang:lower-hand \newVoice $lower
+       } <<
+         \new Staff = $lang:upper-hand
+           \removeDynamics $(string=? autodyn (or both up))
+           \newVoice $upper
+         \newDynamics $(if (ly:music? dynvar) dynamics
+                           (cond ((string=? autodyn up) upper)
+                                 ((string=? autodyn down) lower)
+                                 ((string=? autodyn both)
+                                  (string-append upper " " lower))
+                                 (else "")))
+         \new Staff = $lang:lower-hand
+           \removeDynamics $(string=? autodyn (or both down))
+           \newVoice $lower
      >> #})))
-
