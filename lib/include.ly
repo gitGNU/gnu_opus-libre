@@ -24,7 +24,7 @@
 %#(ly:set-option 'ignore-output-dir #t)
 %#(ly:set-option 'use-variable-names #t)
 %#(ly:set-option 'allow-suffixless-varnames #t)
-%#(ly:set-option 'auto-piano-dynamics "up")
+%#(ly:set-option 'no-auto-piano-dynamics#t)
 #(ly:set-option 'git-branch-as-score-name #t)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Base includes %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,8 +36,6 @@
 
 #(load "lib/init.scm")
 #(include-scm conf:lib-dir #t)
-%#(display conf:locale-dir)
-%#(load "lib/toto.scm")
 #(include-ly score-dir)
 %%%%%%%%%%%%%%%%%%%%%% Define music-functions %%%%%%%%%%%%%%%%%%%%%%
 

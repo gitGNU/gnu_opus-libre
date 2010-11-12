@@ -112,28 +112,33 @@
 
 (define removeDynamics
 ;; Remove untagged dynamics.
-  (define-music-function (parser location test music) (boolean? ly:music?)
-    (if test
+  (define-music-function (parser location music) (ly:music?)
+    (if (ly:get-option 'no-auto-piano-dynamics)
+        music
         (music-filter
          (lambda (x)
-           (let ((tags (ly:music-property x 'tags)))
+           (let ((tags (ly:music-property x 'tags))
+                 (dir (ly:music-property x 'direction)))
              (not (and
                    (dynamic? x)
-                   (not (memq 'staff-dynamics tags))))))
-         music)
-        music)))
+                   (not (memq 'staff-dynamics tags))
+                   (null? dir)))))
+         music))))
 
-(define excludeTag
+(define filterDynamics
 ;; Like \removeWithTag, but will not affect other contexts
 ;; (i.e. no \change, no \bar or \time etc.)
-  (define-music-function (parser location tag music) (symbol? ly:music?)
-    (music-filter
-      (lambda (x)
-        (let ((name (ly:music-property x 'name))
-              (tags (ly:music-property x 'tags)))
-          (not (or
-(eq? name 'ContextChange)
-(eq? name 'ContextSpeccedMusic)
-(memq tag tags)
-))))
-      music)))
+  (define-music-function (parser location music) (ly:music?)
+    (if (ly:get-option 'no-auto-piano-dynamics)
+        (make-music 'Music 'void #t)
+        (music-filter
+          (lambda (x)
+            (let ((name (ly:music-property x 'name))
+                  (tags (ly:music-property x 'tags))
+                  (dir (ly:music-property x 'direction)))
+              (not (or
+                    (eq? name 'ContextChange)
+                    (eq? name 'ContextSpeccedMusic)
+                    (memq 'staff-dynamics tags)
+                    (not (null? dir))))))
+          music))))
