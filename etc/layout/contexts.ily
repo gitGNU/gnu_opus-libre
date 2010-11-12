@@ -1,5 +1,5 @@
 %------------------------------------------------------------------%
-% opus_libre -- layout.ily                                         %
+% opus_libre -- contexts.ily                                       %
 %                                                                  %
 % (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        %
 %                                                                  %
@@ -16,18 +16,19 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-%% Only cosmetic stuff.
-%% For critical settings, that affect contexts or input syntax,
-%% (like ignoreMelismata etc.), see etc/layout/*.ily.
-
+%% Contexts, Engravers,...
 
 \layout {
   \context {
-    \Score
-    subdivideBeams = ##t
-    \override TrillPitchAccidental #'avoid-slur = #'inside
-    \override TimeSignature #'style = #'()
-    \override SystemStartBracket #'collapse-height = #1
-    \override SystemStartBrace #'collapse-height = #1
+    \Dynamics
+    \name PianoDynamics
+    \alias Voice
+    \alias Staff
+    \remove "Script_engraver"
+    \remove "Text_engraver"
+  }
+  \context {
+    \PianoStaff
+    \accepts PianoDynamics
   }
 }

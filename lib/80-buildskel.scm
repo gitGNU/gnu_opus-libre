@@ -92,7 +92,7 @@ markup exists."
                    (set! ret-list
                          (append ret-list
                                  (list
-                                   #{\context Dynamics = $name
+                                   #{\context PianoDynamics = $name
                                       \filterDynamics $m
                                    #}))))))
            str-list)

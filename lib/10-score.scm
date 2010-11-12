@@ -64,4 +64,3 @@ A blank score will be created instead." defined-score conf:scores-dir)
           (begin (ly:warning "Score directory not defined!
 A blank score will be created instead.")
                   conf:default-score)))))
-
