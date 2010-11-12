@@ -86,15 +86,14 @@ markup exists."
                         (list name)))
           (ret-list '()))
       (map (lambda (x)
-             (let ((m (ly:parser-lookup parser
+             (let* ((m (ly:parser-lookup parser
                                         (string->symbol x))))
                (if (ly:music? m)
                    (set! ret-list
                          (append ret-list
                                  (list
                                    #{\context Dynamics = $name
-                                      \excludeTag $'staff-dynamics
-                                      $m
+                                      \filterDynamics $m
                                    #}))))))
            str-list)
       (if (not (null? ret-list))
@@ -171,7 +170,7 @@ markup exists."
                         #{ \newStaff $staff-name #}))))
             lang:numbers)
           (make-simultaneous-music musiclist))
-     #} ))
+     #}))
 
 (define newPianoStaff ;; TODO: include lyrics?
 ;;   "Create a PianoStaff with two staves named after
@@ -189,12 +188,7 @@ markup exists."
            (dynamics (string-append current-part name lang:dynamics-suffix))
            (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
-           (short-instr (make-this-text name lang:short-instr-suffix))
-           (autodyn (ly:get-option 'auto-piano-dynamics))
-           (both (or lang:both "both"))
-           (up (or lang:upper-hand "up"))
-           (down (or lang:lower-hand "down")))
-      (if (not autodyn) (set! autodyn ""))
+           (short-instr (make-this-text name lang:short-instr-suffix)))
       ;; requires removeDynamics, defined in libmusic.scm
       ;; (which should have been loaded by now, since macros need it).
     #{ \new PianoStaff \with {
@@ -202,15 +196,10 @@ markup exists."
          shortInstrumentName = $short-instr
        } <<
          \new Staff = $lang:upper-hand
-           \removeDynamics $(string=? autodyn (or both up))
-           \newVoice $upper
-         \newDynamics $(if (ly:music? dynvar) dynamics
-                           (cond ((string=? autodyn up) upper)
-                                 ((string=? autodyn down) lower)
-                                 ((string=? autodyn both)
-                                  (string-append upper " " lower))
-                                 (else "")))
+           \removeDynamics \newVoice $upper
+         \newDynamics $(if (ly:music? dynvar)
+                           dynamics
+                           (string-append upper " " lower))
          \new Staff = $lang:lower-hand
-           \removeDynamics $(string=? autodyn (or both down))
-           \newVoice $lower
-     >> #})))
+           \removeDynamics \newVoice $lower
+     >>#})))
