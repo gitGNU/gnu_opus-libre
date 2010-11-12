@@ -1,5 +1,5 @@
 %------------------------------------------------------------------%
-% opus_libre -- layout.ily                                         %
+% opus_libre -- notationrules.ily                                  %
 %                                                                  %
 % (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        %
 %                                                                  %
@@ -16,18 +16,15 @@
 %                                                                  %
 %------------------------------------------------------------------%
 
-%% Only cosmetic stuff.
-%% For critical settings, that affect contexts or input syntax,
-%% (like ignoreMelismata etc.), see etc/layout/*.ily.
-
+%% Notation rules.
 
 \layout {
   \context {
     \Score
-    subdivideBeams = ##t
-    \override TrillPitchAccidental #'avoid-slur = #'inside
-    \override TimeSignature #'style = #'()
-    \override SystemStartBracket #'collapse-height = #1
-    \override SystemStartBrace #'collapse-height = #1
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #modern-accidentals-style % see liblayout.scm
+    autoCautionaries = #modern-cautionaries-style
+    extraNatural = ##f
   }
 }

@@ -78,6 +78,7 @@ current-part music."
     eval-conf
     eval-lang
     eval-macros
+    eval-layout
     eval-theme
     (include-ly score-dir)
     (let* ((defined-structure (ly:parser-lookup parser 'structure))
@@ -108,4 +109,3 @@ current-part music."
 
            struct)
       (make-music 'Music 'void #t))))
-
