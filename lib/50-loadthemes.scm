@@ -29,6 +29,9 @@
                (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
          ly-files)))
 
+(define eval-layout
+  (include-ly conf:layout-dir))
+
 (define eval-theme
 ;;    "Load the default "theme" (that provides basic layout)
 ;;  then overload user-specified themes (if any) on top of
@@ -51,4 +54,3 @@
         (if (not (equal? user-theme conf:default-theme))
             (include-theme-dir
                      (string-append conf:themes-dir "/" user-theme))))))
-
