@@ -18,11 +18,11 @@ PianoIMd = \relative do' {
 
   R2. R2 s4.
   <sol, re'>8\mp( <fad la mi'> <sol sib fa'> <la re sol>) fad16 |
-  \keepDyn { <la re>\sf <si mi>8->
+  <la re>^\sf <si mi>8->
   <re fa>-> <mi sold>-> <sol si>-> |
-  <sold do>16\sf <fa si re>8.-> <sib mi>8\mp(
+  <sold do>16^\sf <fa si re>8.-> <sib mi>8_\mp(
   <sol do fa> <la dod sol'>16) |
-  <la, re>\sf <si mi>8->}
+  <la, re>\sf <si mi>8->
   <la re fa>->\cresc <si mi sol>-> <re fa sib>16->~ |
   <re fa sib> <mi sol do>8 <fa sib dod>
   <sol do re> <fa sib mi>16~ |
@@ -108,8 +108,8 @@ PianoIMd = \relative do' {
   la\>( \mg la,--)\p \md |
   \t {\ind "dolce espr." sib4( do8~} do4. sib8~ \t {sib4 do8~)} |
   do1\laissezVibrer s2. R1 R2.
-  sib'4. -\dyn "p_très clair" do8~ do2~ |
-  do4\> do2\ppp\laissezVibrer s2 R4.
+  sib'4. -\dyn "p_très clair" do8~ do2~\> |
+  do4 do2\ppp\laissezVibrer s2 R4.
 
   <dod mi>4--( -\dyn "pp_calme" <dod mi>2-- <dod fa>4--) |
   <dod mi>-- <do mib>--( <dod mi>--) |
@@ -118,7 +118,7 @@ PianoIMd = \relative do' {
   <si mi sol>8--\mf <si mi sol>~
   \t {<si mi sol> <do fa la> <si mi sol>} |
   <lad red fad>\> <si mi sol> <re sol sib> |
-  <si red sold si>4\p\laissezVibrer s2 \clef bass |
+  <si red sold si>4^\p\laissezVibrer s2 \clef bass |
   s4 <fa, mi'>( <fad red'>) | R2.
   r2 \ind "légèrement en dehors" \keepDyn fa8\mf( dod |
   mi4.) la,8( fa' dod |
@@ -385,7 +385,7 @@ PianoIMg = \relative do' {
   \stemDown
   re'8-. lab'-. re-. lab-. re,-. lab'-. re-. lab-. |
   re,-. lab'-. re-. lab-. |
-  re,-. lab'-. re-. lab-. re,-. lab'-. re-. r | \stemNeutral
+  re,-. lab'-. re-. lab-. re,-. lab'-. re r | \stemNeutral
 
   \clef bass \ottava #0
   <\whiteNote re,,,, si' mi>16-> <dod' fad>4..
@@ -433,8 +433,8 @@ PianoIMg = \relative do' {
   \keepDyn la-\dyn "(mp_sempre)" |
   <la la'>4 la2. | la4 la2*1/2 \keepDyn {s4\> la\!} |
   \pl {s1 la--\laissezVibrer}
-  \keepDyn {\oneVoice \t {la'4\mp( sib8~}
-  sib4.\> do8~ \t {do4 \bracketUp "m.d." la'8~)} |
+  \keepDyn {\oneVoice \t {la'4\mp(\> sib8~}
+  sib4. do8~ \t {do4 \bracketUp "m.d." la'8~)} |
   \voiceOne la1\pp\laissezVibrer} s2. |
   \ottava #-1 la,,,2*2\ppp\laissezVibrer \ottava #0 | R2. \clef treble
   <sib''' do la'>2.\laissezVibrer \pl {red4~ red fa!2\laissezVibrer}
@@ -450,7 +450,7 @@ PianoIMg = \relative do' {
   \t {<red fad sold> <re fa sol> <red fad sold>}}
   <sol, mi' sol la> <red' fad sold> \clef bass <red, la' dod> |
 
-  \keepDyn <sold,, fadd'>4\f\laissezVibrer
+  <sold,, fadd'>4_\f\laissezVibrer
   <red'' mi'>-\dyn "f_ample"( <mi red'>) |
   \ottava #-1 <dodd,, red'>4*3\laissezVibrer
   <fadd sold'>\>\laissezVibrer <red dodd'>--\!\laissezVibrer |
