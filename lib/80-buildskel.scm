@@ -110,10 +110,7 @@ markup exists."
            (current-name (string-append current-part name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
            (instr (make-this-text name lang:instr-suffix))
-           (short-instr (make-this-text name lang:short-instr-suffix))
-           (lyrics (ly:parser-lookup parser
-                                     (string->symbol
-                                      (string-append current-name lang:lyrics-suffix)))))
+           (short-instr (make-this-text name lang:short-instr-suffix)))
       (if (ly:music? music)
           #{ <<
              \new Staff \with {
@@ -121,8 +118,7 @@ markup exists."
                shortInstrumentName = $short-instr
              }
              \newVoice $name
-               $(if (ly:music? lyrics)
-                  #{ \new Lyrics \lyricsto $name $lyrics #})
+             \newLyrics $name
           >> #}
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
               (make-music 'Music 'void #t))))))
@@ -148,7 +144,7 @@ markup exists."
                     (if (ly:music? lyrics)
                         (append! musiclist (list
                                             #{ \new Lyrics \lyricsto $name $lyrics #})))))
-                lang:numbers)
+                numlist)
           (make-simultaneous-music musiclist))
       #})))
 
