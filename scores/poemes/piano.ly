@@ -6,21 +6,21 @@
 %-----------------------------    I    ----------------------------%
 
 UnPianoMd = \relative {
-  r4 | R2
-  \pl <si' red sold>2.\arpeggio \laissezVibrer -\dyn "ppp_très clair"
+  r4 | R2-\dyn "ppp_très clair"
+  \pl <si' red sold>2.\arpeggio \laissezVibrer
   <si' red sold>\arpeggio \laissezVibrer |
   \pl <la, do fa>2\arpeggio \laissezVibrer
   <la' do fa>\arpeggio \laissezVibrer |
   r4 \pl { \set tieWaitForNote = ##t
-  lab,8~ reb~ fa4~ <lab, reb fa>2 }
+  \ind "(dolce)" lab,8~ reb~ fa4~ <lab, reb fa>2 }
   {s4 \set tieWaitForNote = ##t
   \t {s8 sol'~ do~} <sol do mib>2 } |
   r2 \pl <sol, sib mib>\arpeggio <fa' la re>\arpeggio
   \pl <solb, dob mib>\arpeggio \laissezVibrer
   <fa' sib reb>\arpeggio \laissezVibrer s2 |
   
-  \t {la'8 re, la} re re, \t {la' re, la} re la |
-  <re, la'> do <re la'> la
+  \t {la'8(-\dyn "ppp_sempre"\< re, la} re-- re,--) \t {la'( re, la} re-- la--) |
+  <re, la'>-\dyn "pp_ben legato" do <re la'> la
   <re la'> do <re la'> la
   <re la'> do <re la'> la |
   <si sold'> sold <red' sold> sold,
@@ -32,14 +32,14 @@ UnPianoMd = \relative {
   <re sol> sol, <sib sol'> sol |
   <re' la'> do <re la'> la
   <si sold'> sold <red' sold> sold, |
-  \ttt {la'16 re, do la' re, la}
+  \ttt {la'16(-\dyn "pp_sempre" re, do la' re, la}
   \ttt {la' re, do la' re, la}
   \ttt {la' re, do la' re, la}
-  \ttt {la' re, do la' re, la} |
-  \ttt {<sold' si> mi si <sold' si> mi si}
-  \ttt {<sold' si> mi si mi sold si}
-  \ttt {<la do> fa do fa do' do} |
-  \pl {r4 r8 <do la'> fa, do} <fa' la? do>2. |
+  \ttt {la' re, do la' re, la)} |
+  \ttt {<sold' si>( mi si <sold' si> mi si}
+  \ttt {<sold' si> mi si mi sold si)}
+  \ttt {<la do>( fa do fa do' do)} |
+  \pl {r4 r8 <do la'>-. fa,-. do-.} <fa' la? do>2.-- |
   <reb, sol>8 do <reb sol> do
   <reb sol> do <reb sol> do |
   <mib sol> do <mib sol> do
@@ -77,8 +77,8 @@ UnPianoMg = \relative {
   r4 | <mi,,, mi'>2\laissezVibrer s2. s2
   <mi mi'>2.\laissezVibrer s2 |
   mi2*2\laissezVibrer s1
-  sol!8 sol' \t {sol' sol, sol}
-  sol, sol' \t {fad' sol, sol} |
+  sol!8( sol' \t {sol'-- sol, sol)}
+  sol,( sol' \t {fad'-- sol, sol)} |
   \pl { sol,2 sol' sol si si si sol! sol
   <sol, sol'> sib' <sol, sol'> si'! }
   {

@@ -11,13 +11,13 @@ UnSoprano = \relative {
   \time 3/4
   si) r8 si--~ si16. si32 si8 |
   \time 2/4
-  re8.--( re16~ re--\> re do8 |
+  re8.--( re16--~ re\> re do8 |
   \time 3/4
   si2)\! r4 |
   \time 2/4
   r8 si--~ si si |
   \time 4/4
-  re8.(\< -\dyn "poco" re16 do8 do fa\! fa mib\> mib |
+  re8.(\< -\dyn "poco" re16 do8 do fa fa mib\> mib |
   lab2)\! r8 mib4--\pp fad8
   \bar "||"
   re2.\ten r4 |
