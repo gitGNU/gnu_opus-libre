@@ -113,4 +113,3 @@ marks.  Regular spaces are allowed inside words.
                            (if up? "" text))))))
     (if (not up?) (set! pos (- pos)))
     (interpret-markup layout props (stack pos))))
-
