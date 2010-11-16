@@ -61,4 +61,3 @@ Defaulting to \"universal\" skeleton." requested-skel)
             file))
       (begin (ly:warning "No skeleton defined;
 defaulting to \"universal\" skeleton.") default-skel)))
-

@@ -121,4 +121,3 @@
          \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
-
