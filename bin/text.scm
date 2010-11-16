@@ -26,13 +26,18 @@
 (define dyn
   ;;syntax: -\dyn instead of \dyn (see Issue #1264).
   (define-music-function (parser location arg) (markup?)
-    (make-music 'AbsoluteDynamicEvent
-                'text (cond
-                       ((string? arg)
-                        (if (string-every char-set:dynamics arg)
-                            arg
-                            (markup #:dynamic-string arg)))
-                       (else arg)))))
+    (let ((d (make-music 'AbsoluteDynamicEvent)))
+      (ly:music-set-property! d 'tweaks
+        (acons 'self-alignment-X -0.8
+          (ly:music-property d 'tweaks)))
+      (ly:music-set-property! d 'text
+        (cond
+          ((string? arg)
+           (if (string-every char-set:dynamics arg)
+               arg
+               (markup #:dynamic-string arg)))
+          (else arg)))
+      d)))
 
 (define dyncresc
   (define-music-function (parser location arg) (markup?)
