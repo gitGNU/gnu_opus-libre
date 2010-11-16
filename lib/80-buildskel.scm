@@ -195,7 +195,10 @@ markup exists."
            \removeDynamics \newVoice $upper
          \newDynamics $(if (ly:music? dynvar)
                            dynamics
-                           (string-append upper " " lower))
+                           (string-append
+                             (*current-part*) upper
+                             " "
+                             (*current-part*) lower))
          \new Staff = $lang:lower-hand
            \removeDynamics \newVoice $lower
      >>#})))
