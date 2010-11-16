@@ -53,11 +53,11 @@ markup exists."
   ;; create a Voice for it.  If a matching timeline can be
   ;; found, try and squash it as well."
   (define-music-function (parser location name) (string?)
-    (let* ((current-name (string-append current-part name))
+    (let* ((current-name (string-append (*current-part*) name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
            (part-timeline (ly:parser-lookup parser
                                             (string->symbol
-                                             (string-append current-part lang:timeline-suffix))))
+                                             (string-append (*current-part*) lang:timeline-suffix))))
            (instr-timeline (ly:parser-lookup parser
                                              (string->symbol
                                               (string-append current-name lang:timeline-suffix)))))
@@ -107,13 +107,10 @@ markup exists."
   ;; this staff (using appropriate suffixes)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (current-name (string-append current-part name))
+           (current-name (string-append (*current-part*) name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
            (instr (make-this-text name lang:instr-suffix))
-           (short-instr (make-this-text name lang:short-instr-suffix))
-           (lyrics (ly:parser-lookup parser
-                                     (string->symbol
-                                      (string-append current-name lang:lyrics-suffix)))))
+           (short-instr (make-this-text name lang:short-instr-suffix)))
       (if (ly:music? music)
           #{ <<
              \new Staff \with {
@@ -121,8 +118,7 @@ markup exists."
                shortInstrumentName = $short-instr
              }
              \newVoice $name
-               $(if (ly:music? lyrics)
-                  #{ \new Lyrics \lyricsto $name $lyrics #})
+             \newLyrics $name
           >> #}
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
               (make-music 'Music 'void #t))))))
@@ -135,7 +131,7 @@ markup exists."
 ;; Create Lyrics contexts accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (current-name (string-append current-part name)))
+           (current-name (string-append (*current-part*) name)))
       #{
         $(let* ((musiclist (list #{ {} #}))
                 (numlist (if (ly:get-option 'only-suffixed-varnames)
@@ -148,7 +144,7 @@ markup exists."
                     (if (ly:music? lyrics)
                         (append! musiclist (list
                                             #{ \new Lyrics \lyricsto $name $lyrics #})))))
-                lang:numbers)
+                numlist)
           (make-simultaneous-music musiclist))
       #})))
 
@@ -165,7 +161,7 @@ markup exists."
                             lang:numbers
                             (cons "" lang:numbers))))
           (map (lambda (x)
-                  (let ((staff-name (string-append current-part name (string-capitalize x))))
+                  (let ((staff-name (string-append (*current-part*) name (string-capitalize x))))
                      (append! musiclist (list
                         #{ \newStaff $staff-name #}))))
             lang:numbers)
@@ -185,7 +181,7 @@ markup exists."
     (let* ((name (assoc-name lang:instruments name))
            (upper (string-append name (string-capitalize lang:upper-hand)))
            (lower (string-append name (string-capitalize lang:lower-hand)))
-           (dynamics (string-append current-part name lang:dynamics-suffix))
+           (dynamics (string-append (*current-part*) name lang:dynamics-suffix))
            (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))

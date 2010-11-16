@@ -29,4 +29,3 @@
 (define modern-cautionaries-style
   `(Staff ,(make-accidental-rule 'same-octave 1)
           ,(make-accidental-rule 'any-octave 1)))
- 

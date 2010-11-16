@@ -36,7 +36,6 @@
 
 #(load "lib/init.scm")
 #(include-scm conf:lib-dir #t)
-#(include-ly score-dir)
 %%%%%%%%%%%%%%%%%%%%%% Define music-functions %%%%%%%%%%%%%%%%%%%%%%
 
 %% Required by main.ly --------------------------------------------%
