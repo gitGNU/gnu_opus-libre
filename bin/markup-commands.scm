@@ -95,7 +95,7 @@ marks.  Regular spaces are allowed inside words.
 ;; TODO: to be theme-ized.
 (define-markup-command (indic layout props arg) (markup?)
   (interpret-markup layout props
-                    (markup #:whiteout #:small #:italic arg)))
+                    (markup #:whiteout #:medium #:small #:italic arg)))
 
 (define-markup-command (bracketText layout props num up? arg) (number? boolean? markup?)
   (let* ((pos (max 3 (- 10 (- num))))
