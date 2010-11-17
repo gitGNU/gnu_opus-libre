@@ -26,6 +26,7 @@
     \alias Staff
     \remove "Script_engraver"
     \remove "Text_engraver"
+    \consists "Tweak_engraver"
   }
   \context {
     \PianoStaff
