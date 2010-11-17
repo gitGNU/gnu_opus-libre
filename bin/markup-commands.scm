@@ -54,9 +54,13 @@ marks.  Regular spaces are allowed inside words.
                           char-set:punctuation))
         (split (lambda (s) (string-index s #\_ )))
         (str-list '())
-        (style-markup (lambda (s)
-                        (make-normal-text-markup
-                         (make-italic-markup s)))))
+        (dyn-markup (lambda (s)
+                      (make-whiteout-markup
+                        (make-dynamic-markup s))))
+        (text-markup (lambda (s)
+                       (make-whiteout-markup
+                         (make-normal-text-markup
+                           (make-italic-markup s))))))
     (do ((current-str (string-append str "_")))
         ((not (split current-str)))
       (begin
@@ -70,16 +74,16 @@ marks.  Regular spaces are allowed inside words.
                        (map (lambda (word)
                               (if (string-every composite-chars word)
                                   (if (string-every char-set:dynamics word)
-                                      (make-dynamic-markup word)
+                                      (dyn-markup word)
                                       (let ((word-lst (string->list word)))
                                         (make-concat-markup
                                          (map (lambda (ch)
                                                 (let ((print-ch (string ch)))
                                                   (if (char-punctuation? ch)
-                                                      (style-markup print-ch)
-                                                      (make-dynamic-markup print-ch))))
+                                                      (text-markup print-ch)
+                                                      (dyn-markup print-ch))))
                                               word-lst))))
-                                  (style-markup word)))
+                                  (text-markup word)))
                             str-list)))))
 
 ;; Probably stolen from Nicolas' code -- is this really useful here?
