@@ -17,6 +17,7 @@
 ;------------------------------------------------------------------;
 
 
+(define *has-timeline* (make-parameter #f))
 
 (define (assoc-name alist name)
   "If NAME begins with a lower case letter, then
@@ -55,21 +56,23 @@ markup exists."
   (define-music-function (parser location name) (string?)
     (let* ((current-name (string-append (*current-part*) name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
-           (part-timeline (ly:parser-lookup parser
-                                            (string->symbol
-                                             (string-append (*current-part*) lang:timeline-suffix))))
-           (instr-timeline (ly:parser-lookup parser
-                                             (string->symbol
-                                              (string-append current-name lang:timeline-suffix)))))
+           (global-timeline (if (not (*has-timeline*))
+                                (ly:parser-lookup parser
+                                  (string->symbol
+                                    (string-append (*current-part*) lang:timeline-suffix)))
+                                #f))
+           (local-timeline (ly:parser-lookup parser
+                             (string->symbol
+                               (string-append current-name lang:timeline-suffix)))))
       (ly:debug-message "Loading music from ~a..." current-name)
       (if (ly:music? music)
           #{ \new Voice = $name
              <<
                $music
-               $(if (ly:music? instr-timeline)
-                    instr-timeline
-                    (if (ly:music? part-timeline)
-                        part-timeline))
+               $(if (ly:music? local-timeline)
+                    local-timeline
+                    (if (ly:music? global-timeline)
+                        (begin (*has-timeline* #t) global-timeline)))
              >>
           #}
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
