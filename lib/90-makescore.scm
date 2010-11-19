@@ -23,7 +23,7 @@
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
   (if (null? alist) '()
-      (cons (cons (cdr (car alist)) (car (car alist)))
+      (cons (cons (cdar alist) (caar alist))
             (alist-reverse (cdr alist)))))
 
 (define (ls-index str lst)
