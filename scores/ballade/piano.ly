@@ -39,7 +39,22 @@ PianoMd = \relative do' {
   <sol sol'>( dod\> si sib)\!
 
   %%% C %%%
-  <sol, si re sol>2\laissezVibrer \pp
+  \pl {\oneVoice \tieDown <sol, si re sol>2 \pp ~
+  \voiceTwo
+  \hideNote <sol si re>~
+  \hideNote <sol si re>~ \oneVoice
+  <sol si re sol>4 \tieNeutral r }
+{ s2 \appoggiatura sib'16~ <sib sib'>4-. r %%FIXME #1333
+  \appoggiatura lab16~ <lab lab'>4-. r s2 }
+  R2
+  \pl {<dob, fa sib>2\pp ~<dob fa sib>}
+  {dod'4 re8 mi sol2}
+  <lab, sib>2
+  \pl <lab sib> {dod4( re)}
+  \pl <lab sib>2. {dod4\> re mi\!} |
+
+  %%% D %%%
+  
 }
 
 PianoMg = \relative do' {
@@ -60,5 +75,9 @@ PianoMg = \relative do' {
   \pl <la, la'>2.\laissezVibrer <re' mi>\laissezVibrer |
   <dod,, dod'>2
   \pl <re re'>1 <la'' mi'> |
-  <fa,, fa'>2\laissezVibrer
+  <fa,, fa'>2~ \hideNote q~ \hideNote q~ q4 r |
+  R2*5 R2. \clef treble
+
+  %%% D %%%
+  
 }
