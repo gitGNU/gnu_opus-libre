@@ -88,6 +88,9 @@ Flute = \relative do' {
   \bar "||"
 
   %%% A %%%
+  %% Although this may not look like it, it's
+  %% actually a twelve-tone series.  There's also
+  %% some (very) "soft serialism" in the piano part.
   dod4\p( re8 mi sol4)~ |
   sol8 mi'\( mib reb4 do8 |
   sib\> reb lab4( sol8)\! \) r |
