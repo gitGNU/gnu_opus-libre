@@ -29,5 +29,12 @@
     \override TimeSignature #'style = #'()
     \override SystemStartBracket #'collapse-height = #1
     \override SystemStartBrace #'collapse-height = #1
+
+  %% TextScript indications are printed using the \indic markup command
+  %% (see bin/markup-commands.scm)
+    \override TextScript #'stencil =
+      #(lambda (grob)
+         (let ((grob-markup (ly:grob-property grob 'text)))
+           (grob-interpret-markup grob (make-indic-markup grob-markup))))
   }
 }
