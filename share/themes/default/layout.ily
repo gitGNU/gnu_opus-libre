@@ -36,5 +36,6 @@
       #(lambda (grob)
          (let ((grob-markup (ly:grob-property grob 'text)))
            (grob-interpret-markup grob (make-indic-markup grob-markup))))
+    \override TextScript #'direction = #UP
   }
 }
