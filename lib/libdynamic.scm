@@ -70,5 +70,5 @@
                     (eq? name 'ContextChange)
                     ;(eq? name 'ContextSpeccedMusic)
                     (memq 'staff-dynamics tags)
-                    (not (null? dir))))))
+                    (ly:dir? dir)))))
           music))))
