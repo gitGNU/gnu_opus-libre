@@ -8,12 +8,14 @@ PianoMd =
   <do mi>4--(\pp q-- q-- q-- q-- q-- q--) |
   q--( q-- q-- q-- q-- q-- q--) |
   q--( q-- q-- q-- q-- q-- q--) |
-  \ind "simile" <do mi> q q q q q q |
+  <do mi>-"simile" q q q q q q |
   q q q q q q q |
   q q q q q q q |
   <do re mi> q q q q q q |
-  r <la do re mi sol>-\dyn "pp_senza cresc." q q q q q |
-  q q q q q q r |
+  r <la do re mi sol>-\dyn "pp_senza cresc." q q q q
+  %% Hideous trick to lengthen the violin's crescendo.
+  q4*1/2 \hideNote q |
+  q4 q q q q q r |
 
   <sib do fa>-\dyn "f_ample" q q q q q q |
   q q q q q q q |
@@ -46,11 +48,11 @@ PianoMd =
 
   \ottava #1
   <fad fad' la>4.-\dyn "f_espr." <sib sib'>8~ <sib sib'>4~ \t {sib8
-  \ottava #0 \ind "(loco)" <la, la'> <fad fad'>} <sib, sib'> <la la'>
-  <fad fad'> <la' la'>4 <sib sib'>8
+  \ottava #0 <la, la'>-"(loco)"( <fad fad'>)} <sib, sib'>( <la la'>
+  <fad fad'>) <la' la'>4( <sib sib'>8
   \ottava #1
-  <la' dod fad la>4. \ottava #0 <la, dod la'>8~ <la dod la'>4
-  <sib sib'>2~ \t {<sib sib'>8\> <la la'> <fad fad'>}
+  <la' dod fad la>4.) \ottava #0 <la, dod la'>8~ <la dod la'>4
+  <sib sib'>2~ \t {<sib sib'>8\> <la la'>( <fad fad'>)}
   <fa fa'> <dod dod'>\! |
   <la sib fa' la>2\mf fad'4\> fa <dod re>2.*1/2\! s4.\p |
 
@@ -60,9 +62,9 @@ PianoMd =
   <si do re fa sol la>-\dyn "pp_très clair." q q4. q q2*1/2\laissezVibrer
   s4\fermata | \hideNote q1*7/4\laissezVibrer \pppp
 
-  \ind "semplice" la'4.-\dyn "p_(tre corde)" sib8~ sib2.~
+  la'4.-"semplice"-\dyn "p_(tre corde)" sib8~ sib2.~
   \t {sib4\> sib, la} |
-  la'4.\pp sib8~ sib2.( la4\> fad) |
+  la'4.\pp sib8~ sib2.\>( la4 fad) |
   <do fa>4--(-\dyn "ppp_al fine (una corda)" q-- q-- q-- q-- q-- q--) |
   q--( q-- q-- <do mi>-- q-- q-- <do fa>--) |
   q--( q-- <do mi>-- q-- q-- <do fa>-- q--) |
@@ -81,7 +83,7 @@ PianoMg =
   <sib sib'>2 <sib sib'>~ <sib sib'>2. |
   <sib sib'>4. <si si'>8~ <si si'>2~ <si si'>2. \clef treble
   r8 <sol''' sib do fa>-.-- r <sol sib do fa>-.-- r4 \clef bass
-  sol, <mi sol> <re mi sol> r |
+  sol,--( <mi sol>-- <re mi sol>--) r |
 
   \pl {re,1~ \hideNote re2.
   re1~ \hideNote re2.

@@ -6,16 +6,16 @@
 Violon =
 \relative do' {
   \time 7/4
-  \tempo "Andantino" 4 = 72 % was 60 originally
+  \tempo "Andantino" 4 = 60~72 % was 60 originally
   R1*7/4
   la4.(\upbow \p\> sib8)~ sib1\! r4 |
-  la2~\upbow \p\< la8 la4\mp\>( sib8)~ sib2 r4 |
+  la2~\upbow \p\< la8 la4\mp\>( sib8)~ sib2\! r4 |
   r r8 la2\downbow \p\> sib4( mib8) mi2\!~ |
   mi4 r r8 la,~\upbow \t {la sib mib}
-  mi8\downbow \< sol4( fad8) la4~\> |
+  mi8\downbow \< sol4( fad8) \longHairpin la4~\> |
   la\! r8 fad~\downbow \p \> \t {fad dod mib}
   sib4\! 
-  \pl {\oneVoice \ind "(du talon)" do8--
+  \pl {\oneVoice do8-- -"(du talon)"
   \downbow sol->--~\downbow sol2~ \voiceTwo sol2~ sol8}
   {s2. r8 <la' mi'>-+ r <la mi'>-+ r4*1/2}
   sol,4\upbow ( la8) sib2.~ |
@@ -47,7 +47,7 @@ Violon =
   lad4.-\dyn "p_pos. nat." si8~(\upbow si2~
   si8 lad4-- red--) lad8\upbow |
   si4~ si8 lad4 fad'-- lad,8 si( red-.) lad-. fad'4.->\downbow |
-  \ind "scherzando" fad8\downbow ( mi) si-. fad'->~(
+  fad8\downbow-"scherzando" ( mi) si-. fad'->~(
   fad si,-.) mi( si')
   fad(-\dyncresc "cresc." mi) si-. fad'-. mi16( fad si la) |
 
@@ -67,21 +67,20 @@ Violon =
   la,4.\mp sib8~ sib4~ sib8 mib~\<
   \t {mib dod\downbow fad(} mi) la sol do |
   la'\f la, la, sib'->~ sib16 mib,8( fa16~)
-  sib,16( do) fad(\< sold)
-  \ttt {mib( fa) si( dod) \ind "molto" fad,( sold)}
+  \tt {fa sib,( do) fad(\< sold)}
+  \ttt {mib( fa) si( dod) fad,(-"molto" sold)}
   re'( mi) si( re) \t {mi8 si' la} |
-  mi'2.~-\dyn "pp_sub." \ind "(non vib.)" mi2 r2\fermata |
+  mi'2.~-\dyn "pp_sub." mi2-"(non vib.)" r2\fermata |
 
   <do,, mi>4--(\downbow -\dyn "p_vers la touche"
   <do mi>-- q-- q-- q-- q-- q--) |
   q--(\downbow q-- q-- q-- q-- q-- q--) |
   q--(\downbow q-- q-- q-- q-- q--) r |
-  \ind "très à la corde"
-  la2.\mp~ la2~ la8 sib4.~ |
+  la2.-"très à la corde"\mp~ la2~ la8 sib4.~ |
   sib2 la~ la4. sib8~ sib4 |
   sib4.\>( la8)\!~ la2~ la4. sib8~ sib4 |
   sib4.\>(\downbow la8)\!~ la2~ la2.-\dyn "dim." |
   sib4.\>(\downbow la8)\!~ la2~ la2. |
-  \ind "(non vib.)" la1*7/4\fermata \laissezVibrer
+  la1*7/4\fermata-"(non vib.)" \laissezVibrer
   -\dyn "pp_sul tasto" \bar "|."
 }
