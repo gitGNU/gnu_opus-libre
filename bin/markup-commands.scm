@@ -92,7 +92,7 @@ marks.  Regular spaces are allowed inside words.
                     (markup #:override (cons 'line-width (* width-ratio (chain-assoc-get 'line-width props)))
                             arg)))
 
-;; TODO: to be theme-ized.
+;; This markup-command may be overriden later by a theme-specific file.
 (define-markup-command (indic layout props arg) (markup?)
   (interpret-markup layout props
                     (markup #:whiteout #:medium #:small #:italic arg)))
