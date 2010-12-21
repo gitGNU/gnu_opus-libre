@@ -98,6 +98,17 @@ $x
 \revert Beam #'gap
 #}))
 
+(define longHairpin #{
+\once \override Hairpin #'to-barline = ##f
+#})
+
+(define longHairpins
+  (define-music-function (parser location x) (ly:music?) #{
+\override Hairpin #'to-barline = ##f
+$x
+\revert Hairpin #'to-barline
+#}))
+
 (define whiteNote
   (define-music-function (parser location arg) (ly:music?)
     (set! (ly:music-property arg 'tweaks)
