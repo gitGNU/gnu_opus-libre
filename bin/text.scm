@@ -79,7 +79,7 @@
                             UP
                             DOWN)))))
         (make-music
-         'OverrideProperty
+         'OverrideProperty 'once #t
          'grob-property-path (list 'stencil)
          'grob-value (lambda (grob)
                        (ly:stencil-aligned-to
