@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- markup-commands.scm                                ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -54,9 +54,13 @@ marks.  Regular spaces are allowed inside words.
                           char-set:punctuation))
         (split (lambda (s) (string-index s #\_ )))
         (str-list '())
-        (style-markup (lambda (s)
-                        (make-normal-text-markup
-                         (make-italic-markup s)))))
+        (dyn-markup (lambda (s)
+                      (make-whiteout-markup
+                        (make-dynamic-markup s))))
+        (text-markup (lambda (s)
+                       (make-whiteout-markup
+                         (make-normal-text-markup
+                           (make-italic-markup s))))))
     (do ((current-str (string-append str "_")))
         ((not (split current-str)))
       (begin
@@ -70,16 +74,16 @@ marks.  Regular spaces are allowed inside words.
                        (map (lambda (word)
                               (if (string-every composite-chars word)
                                   (if (string-every char-set:dynamics word)
-                                      (make-dynamic-markup word)
+                                      (dyn-markup word)
                                       (let ((word-lst (string->list word)))
                                         (make-concat-markup
                                          (map (lambda (ch)
                                                 (let ((print-ch (string ch)))
                                                   (if (char-punctuation? ch)
-                                                      (style-markup print-ch)
-                                                      (make-dynamic-markup print-ch))))
+                                                      (text-markup print-ch)
+                                                      (dyn-markup print-ch))))
                                               word-lst))))
-                                  (style-markup word)))
+                                  (text-markup word)))
                             str-list)))))
 
 ;; Probably stolen from Nicolas' code -- is this really useful here?
@@ -88,10 +92,10 @@ marks.  Regular spaces are allowed inside words.
                     (markup #:override (cons 'line-width (* width-ratio (chain-assoc-get 'line-width props)))
                             arg)))
 
-;; TODO: to be theme-ized.
+;; This markup-command may be overriden later by a theme-specific file.
 (define-markup-command (indic layout props arg) (markup?)
   (interpret-markup layout props
-                    (markup #:whiteout #:small #:italic arg)))
+                    (markup #:whiteout #:medium #:small #:italic arg)))
 
 (define-markup-command (bracketText layout props num up? arg) (number? boolean? markup?)
   (let* ((pos (max 3 (- 10 (- num))))

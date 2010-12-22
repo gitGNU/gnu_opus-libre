@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- macros.scm                                         ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -96,6 +96,17 @@
 $x
 \revert Beam #'beam-thickness
 \revert Beam #'gap
+#}))
+
+(define longHairpin #{
+\once \override Hairpin #'to-barline = ##f
+#})
+
+(define longHairpins
+  (define-music-function (parser location x) (ly:music?) #{
+\override Hairpin #'to-barline = ##f
+$x
+\revert Hairpin #'to-barline
 #}))
 
 (define whiteNote

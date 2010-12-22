@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- 90-makescore.scm                                   ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -23,7 +23,7 @@
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
   (if (null? alist) '()
-      (cons (cons (cdr (car alist)) (car (car alist)))
+      (cons (cons (cdar alist) (caar alist))
             (alist-reverse (cdr alist)))))
 
 (define (ls-index str lst)

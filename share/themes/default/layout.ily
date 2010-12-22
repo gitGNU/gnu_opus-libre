@@ -1,7 +1,7 @@
 %------------------------------------------------------------------%
 % opus_libre -- layout.ily                                         %
 %                                                                  %
-% (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        %
+% (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        %
 %                                                                  %
 %     opus_libre is a free framework for GNU LilyPond: you may     %
 % redistribute it and/or modify it under the terms of the GNU      %
@@ -29,5 +29,13 @@
     \override TimeSignature #'style = #'()
     \override SystemStartBracket #'collapse-height = #1
     \override SystemStartBrace #'collapse-height = #1
+
+  %% TextScript indications are printed using the \indic markup command
+  %% (see bin/markup-commands.scm)
+    \override TextScript #'stencil =
+      #(lambda (grob)
+         (let ((grob-markup (ly:grob-property grob 'text)))
+           (grob-interpret-markup grob (make-indic-markup grob-markup))))
+    \override TextScript #'direction = #UP
   }
 }
