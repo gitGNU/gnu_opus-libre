@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- 80-buildskel.scm                                   ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -16,6 +16,8 @@
 ;                                                                  ;
 ;------------------------------------------------------------------;
 
+
+(load "libdynamics.scm")
 
 (define *has-timeline* (make-parameter #f))
 
@@ -188,8 +190,7 @@ markup exists."
            (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
-      ;; requires removeDynamics, defined in libmusic.scm
-      ;; (which should have been loaded by now, since macros need it).
+      ;; requires removeDynamics, defined in libdynamics.scm
     #{ \new PianoStaff \with {
          instrumentName = $instr
          shortInstrumentName = $short-instr
