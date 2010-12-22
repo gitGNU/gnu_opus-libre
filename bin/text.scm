@@ -86,7 +86,8 @@
                         (ly:stencil-combine-at-edge
                          (ly:stencil-aligned-to (ly:hairpin::print grob) X CENTER)
                          Y (*hairpin-text-direction*)
-                         (ly:stencil-aligned-to (grob-interpret-markup grob text) X CENTER))
+                         (ly:stencil-aligned-to (grob-interpret-markup grob
+                                                   (make-indic-markup text)) X CENTER))
                         X LEFT))
          'symbol
          'Hairpin)))))
