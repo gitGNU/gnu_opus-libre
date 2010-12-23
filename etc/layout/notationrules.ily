@@ -28,5 +28,7 @@
     extraNatural = ##f
 
     scriptDefinitions = #modern-script-alist
+    timeSignatureSettings = #modern-time-signature-settings
+    subdivideBeams = ##t
   }
 }
