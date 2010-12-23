@@ -61,7 +61,6 @@
                                  (markup #:dynamic-string arg)))
                             (else arg)))))
 
-(define *hairpin-text-direction* (make-parameter #f))
 ;; Adapted from LSR snippet #233 (from Reinhold?)
 (define (make-hairpin-text dir text)
   (make-music
@@ -71,29 +70,34 @@
                    (ly:stencil-aligned-to
                     (ly:stencil-combine-at-edge
                      (ly:stencil-aligned-to (ly:hairpin::print grob) X CENTER)
-                     Y dir
+                     Y dir ;;FIXME:direction should be computer automatically
                      (ly:stencil-aligned-to (grob-interpret-markup grob
                                                (make-indic-markup text)) X CENTER))
                     X LEFT))
      'symbol
      'Hairpin))
 
+;; (define *hairpin-text-direction* (make-parameter #f))
+;; (define hairpinText
+;;   (define-music-function (parser location text) (markup?)
+;;     (make-sequential-music
+;;      (list
+;;        (make-music
+;;         'ApplyContext
+;;         'procedure (lambda (ctx)
+;;                      (let ((parent-staff (ly:context-id (ly:context-parent ctx)))
+;;                            (global-dir (assoc-get 'direction
+;;                                                   (ly:context-grob-definition ctx 'DynamicLineSpanner))))
+;;                        (*hairpin-text-direction*
+;;                         (if (or (string-suffix-ci? lang:upper-hand parent-staff)
+;;                                 (eq? global-dir UP))
+;;                             UP
+;;                             DOWN)))))
+;;         (make-hairpin-text (*hairpin-text-direction*) text)))))
+
 (define hairpinText
   (define-music-function (parser location text) (markup?)
-    (make-sequential-music
-     (list
-       (make-music
-        'ApplyContext
-        'procedure (lambda (ctx)
-                     (let ((parent-staff (ly:context-id (ly:context-parent ctx)))
-                           (global-dir (assoc-get 'direction
-                                                  (ly:context-grob-definition ctx 'DynamicLineSpanner))))
-                       (*hairpin-text-direction*
-                        (if (or (string-suffix-ci? lang:upper-hand parent-staff)
-                                (eq? global-dir UP))
-                            UP
-                            DOWN)))))
-        (make-hairpin-text (*hairpin-text-direction*) text)))))
+    (make-hairpin-text DOWN text)))
 
 (define hairpinTextUp
   (define-music-function (parser location text) (markup?)
