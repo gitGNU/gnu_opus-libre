@@ -21,7 +21,8 @@
 
 (define colpugno ;;TODO: add to scripts alist.
  (let* ((m (make-music 'ArticulationEvent
-                       'articulation-type "staccatissimo")))
+                       'articulation-type "staccatissimo"
+                       'direction 1)))
    (ly:music-set-property! m 'tweaks
      (acons 'text (markup #:scale (cons 2 1.6)
                   #:musicglyph "scripts.ustaccatissimo")
