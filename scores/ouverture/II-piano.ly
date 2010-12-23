@@ -20,7 +20,7 @@ PianoIIMd = \relative do' {
   <fa sib mib>16\sf\! <sol do mi>4..-> r16 |
   <la, re>16^\sf \ff <sib mi>8-> <dod fa>->\<
   <re sol>-> <fa lab>-> |
-  <fa sib>16->\! <sol do> <sib re>8-> -\dyncresc "cresc."
+  <fa sib>16->\! <sol do> <sib re>8->\cresc
   <do mi>-> <dod fad>-> |
   <red sold>-> <dod mi la> <red sold si> <mi la re> |
   \ottava #1
@@ -116,27 +116,29 @@ PianoIIMd = \relative do' {
   r4 r8 red''_\mf( fa,-"souple" dod | mi4.) la,8( fa dod' |
   mi2) r8 dod mi mi( do'-\dyn "poco cresc." sold si) si |
   \t {sol'( red fad} \t {fad re' lad} dod4) |
-  r4. \pl {<la,, dod mi la>-- <mib' sol sib>-- <reb fa lab>--}
-  {<dod' mi la>-- <mib sol sib mib>-- <reb fa lab reb>--}
+  r4. \pl {<la,, dod mi la>--( <mib' sol sib>-- <reb fa lab>--)}
+  {<dod' mi la>--( <mib sol sib mib>-- <reb fa lab reb>--)}
   <sold sold'>4\laissezVibrer s2 |
   \stemUp \mg mi,32 \md <mi mi'> la <la la'>
   do <do do'> dod <dod dod'> mi <mi mi'> fa <fa fa'> |
   \stemNeutral <sold sold'>2.\laissezVibrer R4.
-  \t {r4 <sib, sib'> <mi, mi'>} |
-  <la la'>4. <sib sib'>8 <sib sib'> <mi, mi'> |
-  <sol la dod mi sol la>4. <la, la'>8 <sib' sib'> <mi, mi'> |
-  <la la'>4 <la, la'>8 <sib' sib'> <sib sib'> <mi, mi'> |
+  \t {r4 <sib, sib'>\f( <mi, mi'>} |
+  <la la'>4.) <sib sib'>8 <sib sib'>( <mi, mi'>) |
+  <sol la dod mi sol la>4. <la, la'>8( <sib' sib'> <mi, mi'>) |
+  <la la'>4 <la, la'>8( <sib' sib'>) <sib sib'>( <mi, mi'>) |
   <la fa' la>4\laissezVibrer r2 | \clef bass
-  <mi, la dod mi>4 <fa lab do> <fad lad dod> |
-  <sol si re> <sold sid red> <sib re mi> |
+  <mi, la dod mi>4( <fa lab do> <fad lad dod>) |
+  <sol si re>( <sold sid red> <sib re mi>) |
 
-  <fa lab sib reb>16 <sol sib do mib>4..\laissezVibrer s2
+  <fa lab sib reb>16->-\dyn "mfp" <sol sib do mib>4..\laissezVibrer s2
   \clef treble
   R2. s1*7/16*3 R8. s1*7/16*2 R1*7/16
-  <mib' mib'>16 \mg \stemUp mi,, <fa fa'> re <reb reb'> mi <fa fa'> |
+  <mib' mib'>16->-- \mg \stemUp mi,, <fa fa'>-.-- re
+  <reb reb'>-.-- mi <fa fa'>-.-- |
   \md \stemNeutral R2. s2. s1
 
-  \bracketDown "m.s." <do'' la>4. <la do> q q q q q~ q4*4\laissezVibrer |
+  \bracketDown "m.s." <do'' la>4.--(-\dyn "pp,_blanc"
+  <la do>-- q-- q-- q-- q-- q--)~ q4*4\laissezVibrer |
   R1*5
   do4. do do do\laissezVibrer | R2. R4.
   <si mi sold si>2 <si mi sol do> |
@@ -408,44 +410,47 @@ PianoIIMg = \relative do' {
   <fadd sold'>\laissezVibrer <sid, dod'>\laissezVibrer
   <la sold'>2\f\laissezVibrer \ottava #0 s4 s2.
   <sold' sold'>2\laissezVibrer s4
-  \stemDown <mi'' mi'>16 \md <la la'> <do do'>
+  \stemDown <mi'' mi'>16_\f _\< \md <la la'> <do do'>
   <dod dod'> <mi mi'> <fa fa'> \mg \stemNeutral |
-  <sold,,, sold'>4 <sold sold'> q q q8~ q q q q |
+  <sold,,, sold'>4--_\! -\dyn "f_ample" <sold sold'>-- q-- q-- q8--~
+  q q-- q-- q-- |
   <dod mi sold dod>4\laissezVibrer <dod' mi fa do'!> <dod mi fa do'> |
   <sold, sold'>\laissezVibrer <dod' fa sol do!> <dod fa sol do> |
   \ottava #-1 <dod,, do'!>\laissezVibrer \ottava #0
   <dod'' sol' do!> <dod sol' la do> | \ottava #-1
-  <re,, re'>4\laissezVibrer r <red red'> |
-  mi2.\startTrillSpan ~ \afterGrace mi2. {red16[ mi]\stopTrillSpan } |
+  <re,, re'>4\laissezVibrer r <red red'>-\dyn "p_sub." |
+  mi2._\pp\startTrillSpan ~ \afterGrace mi2. {red16[ mi]\stopTrillSpan } |
   \repeat tremolo 16 { fa32 fa'} \ottava #0
   \repeat tremolo 12 { fa, fa'}
 
-  \pl { r16 <fa, fa'>8 <fa' fa'> <fa fa'>
-  r16 <fa mi'>8 <fa mi'> <fa mi'>
-  r16 <fa mib'>8 <fa mib'> <fa mib'>}
-  {<mib' mib'>16 fa, fa' fa reb fa fa
-  fa' mi, reb' mi, fa mi mib
-  reb' mib, mib mib fa mib reb}
+  
+  \pl {
+  r16 <fa, fa'>8-. <fa' fa'>-. <fa fa'>-.
+  r16-. <fa mi'>8-. <fa mi'>-. <fa mi'>-.
+  r16-. <fa mib'>8-. <fa mib'>-. <fa mib'>-.}
+  {<mib' mib'>16->--\mf fa, fa'-.-- fa reb-.-- fa fa-.--
+  fa'->-- mi, reb'-.-- mi, fa-.-- mi mib-.--
+  reb'->-- mib, mib-.-- mib fa-.-- mib reb-.--}
   R8.
-  \pl { s16 <sol, fad'>8 <fad mi'> <fa mib'>
-  s16 <fad mi'>8 <fa mib'> <mi re'>}
-  {<mib' mib'>16 fad fa mi reb mib fa
-  mib' mi, fa mib reb re fa}
+  \pl { s16 <sol, fad'>8-. <fad mi'>-. <fa mib'>-.
+  s16-. <fad mi'>8-. <fa mib'>-. <mi re'>-.}
+  {<mib' mib'>16->-. fad fa-.-- mi reb-.-- mib fa-.--
+  mib'->-- mi, fa-.-- mib reb-.-- re fa-.--}
   R1*7/16
-  r16 \ottava #-1 \stemDown <mi,, mi'>8 <re re'> <mi mi'>
+  r16 \ottava #-1 \stemDown <mi,, mi'>8-. <re re'>-. <mi mi'>-.
   \ottava #0 \stemNeutral R2.
-  \ottava #-1 re32 mi re' mi \ottava #0
-  re mi re' mi re mi \md re' mi re mi re' mi
-  re mi re' mi \ottava #1 re mi re' mi
-  \pl {r4 re,\startTrillSpan \stopTrillSpan } %%FIXME: issue 1297.
-  re'2\startTrillSpan la'64\stopTrillSpan mi re la
-  \t {mi32 re la} \ottava #0
-  la'64 mi re la \t {mi32 re la}
-  la'64 mi re la \t {mi32 re la} la' mi re la |
+  \ottava #-1 re32(-\dyn "p_cresc." mi re' mi \ottava #0
+  re mi re' mi re mi \md re' mi re mi re' mi)
+  re( mi re' mi \ottava #1 re mi re' mi)
+  \pl {r4 re,--\startTrillSpan \stopTrillSpan } %%FIXME: issue 1297.
+  re'2--\f\startTrillSpan la'64(\stopTrillSpan mi re la
+  \t {\hairpinTextDown "molto" mi32\> re la)} \ottava #0
+  la'64( mi re la \t {mi32 re la)}
+  la'64(\! mi re la \t {mi32 re la)} la'--( mi-- re-- la--) |
   \mg s2.*3 s4. s1 R1*5 R2.*3 R4. R1*2
 
   \ottava #-1
-  <mi,, mi'>2 <mi mi'>4~ <mi mi'> <mi mi'>2 |
+  <mi,, mi'>2 \set Score.skipTypesetting = ##t <mi mi'>4~ <mi mi'> <mi mi'>2 |
   \t {<mi mi'> <mi mi'> <mi mi'>} <mi mi'> <mi mi'> |
   <mi mi'> <mi mi'>4 <mi mi'> <mi mi'>4. <mi mi'> <mi mi'>4 |
   <mi mi'> <mi mi'> <mi mi'>4. <mi mi'>8~
