@@ -2,6 +2,7 @@
 % (c) 2002-2010 Valentin Villenave <valentin@villenave.net>
 
 Titre = "Ouverture pour deux pianos"
+Date = "Décembre 2002 − Janvier 2004"
 PianoIInstr = "Primo"
 PianoIIInstr = "Secondo"
 PianoIShortInstr = "I."
@@ -10,34 +11,6 @@ PianoIIShortInstr = "II."
 \language "italiano"
 
 % TODO: Use global-measures context.
-
-#(ly:set-option 'auto-piano-dynamics "both")
-
-\layout {
-  \context {
-  \type "Engraver_group"
-  \name Dynamics
-  \alias Voice
-  \alias Staff
-  \consists "Output_property_engraver"
-  \consists "Bar_engraver"
-  \consists "Piano_pedal_engraver"
-  \consists "New_dynamic_engraver"
-  \consists "Dynamic_align_engraver"
-  \consists "Text_spanner_engraver"
-  \consists "Axis_group_engraver"
-
-  pedalSustainStrings = #'("Ped." "*Ped." "*")
-  pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-  \override VerticalAxisGroup #'staff-affinity = #CENTER
-  \override VerticalAxisGroup #'inter-staff-spacing = #'((space . 5) (padding . 0.5))
-  \override TextScript #'font-shape = #'italic
-  \override DynamicLineSpanner #'Y-offset = #0
-
-  \description "Holds a single line of dynamics, which will be
-centered between the staves surrounding this context."
-}
-}
 
 Mesures = {
   \tempo "Très décidé" 4 = 92

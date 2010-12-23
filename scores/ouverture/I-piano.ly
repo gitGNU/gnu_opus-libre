@@ -32,9 +32,9 @@ PianoIMd = \relative do' {
   \t {<mi mi'>4( <re re'>-- <mi mi'>--)} |
 
   <re la' re>8\sf s s4
-  \pl {re8 lab' re lab'}
-  {s8 \lightBeams { \tt {lab,32 \graceNotes {do mib solb sib}}
-  s8 \tt {lab32 \graceNotes {do mib solb sib}}}}
+  \pl {re8-. lab'-. re-. lab'-.}
+  {s8 \lightBeams { \tt {lab,32( \graceNotes {do mib solb sib)}}
+  s8 \tt {lab32( \graceNotes {do mib solb sib)}}}}
   \ottava #1
   \stemUp
   \mg s8 \lightBeams { \tt {lab32 \md \graceNotes {do mib solb sib}}
@@ -73,7 +73,7 @@ PianoIMd = \relative do' {
   \bracketDown "m.s." mi'( \graceNotes {
   \bracketUp "m.d." la, mi re la \mg mi re la)}
   re,( \graceNotes {la' re mi \md la re mi la)}
-  \ind "simile" mi'( \graceNotes {la, mi re la \mg mi re la)} |
+  mi'(-"simile" \graceNotes {la, mi re la \mg mi re la)} |
   re,( \graceNotes {la' re mi \md la re mi la)}
   mi'( \graceNotes {la, mi re la \mg mi re la)}
   re,( \graceNotes {la' re mi)}
@@ -90,8 +90,7 @@ PianoIMd = \relative do' {
   la-. <red, red'>-. <dod dod'>8-.
   <sold' sold'>16-> mi-. do-. sib-. |
   \ottava #0
-  \ind "loco"
-  <re, fad re'>16->\f <mi sold mi'>8. r16 \ottava #1
+  <re, fad re'>16->\f-"loco" <mi sold mi'>8. r16 \ottava #1
   \keepDyn <sold' sold'>-.\p <red red'>-. dod'-. |
   <sold sold'>8-. mi16-. do'-.
   sib-. <sold sold'>-> la-. red-. |
@@ -102,25 +101,26 @@ PianoIMd = \relative do' {
   \t {<sold sol'>( red' dod)} |
 
   <la la'>2*2\fff \laissezVibrer \ottava #0 s1 R1
-  \keepDyn <sib,, sib'>32->\ff <do do'>4...->\laissezVibrer
+  \stemDown \keepDyn <sib,, sib'>32->\ff
+  \stemUp <do do'>4...->\laissezVibrer \stemNeutral
   s2 -\dyn "peu à peu plus souple" |
   \keepDyn la''2--\f\laissezVibrer la,,~\mp |
   la\>( \mg la,--)\p \md |
-  \t {\ind "dolce espr." sib4( do8~} do4. sib8~ \t {sib4 do8~)} |
+  \t {sib4(-"dolce espr." do8~} do4. sib8~ \t {sib4 do8~)} |
   do1\laissezVibrer s2. R1 R2.
-  sib'4. -\dyn "p_très clair" do8~ do2~\> |
+  sib'4.( -\dyn "p_très clair" do8~) do2~\> |
   do4 do2\ppp\laissezVibrer s2 R4.
 
   <dod mi>4--( -\dyn "pp_calme" <dod mi>2-- <dod fa>4--) |
   <dod mi>-- <do mib>--( <dod mi>--) |
   <dod fa>4--( <dod mi>2.--)\laissezVibrer s2. |
-  <la sold'>2-.-- q-.-- | q4. q | q2 q | q4. q |
+  <la sold'>2-.-- q-.-- | q4.-.-- q-.-- | q2 q | q4. q |
   <si mi sol>8--\mf <si mi sol>~
   \t {<si mi sol> <do fa la> <si mi sol>} |
-  <lad red fad>\> <si mi sol> <re sol sib> |
+  <lad red fad>^\>( <si mi sol> <re sol sib>) |
   <si red sold si>4^\p\laissezVibrer s2 \clef bass |
   s4 <fa, mi'>( <fad red'>) | R2.
-  r2 \ind "légèrement en dehors" \keepDyn fa8\mf( dod |
+  r2 \keepDyn fa8\mf(-"légèrement en dehors" dod |
   mi4.) la,8( fa' dod |
   mi4) la8( la, fa' dod |
   mi) \acciaccatura fa mi( red \keepDyn{ mi\> do'! sold |
@@ -155,8 +155,8 @@ PianoIMd = \relative do' {
   \acciaccatura {mi,16[ fa']} mi,8( <re re'>
   <dod dod'> <re re'> <fa fa'>) %\noBeam %%FIXME
   dod,-\dyn "p_sub." |
-  mi2*1/2 \ind "m.s. (sopra)"
-  \acciaccatura red''16 mi8-. r \pl {
+  mi2*1/2 \acciaccatura red''16-"m.s. (sopra)"
+  mi8-. r \pl {
   fad,,8( dod \oneVoice mi4)
   \voiceTwo red8( re') re( sold,)}
   {\acciaccatura mi''16 \stemUp fa!8-. r s4
@@ -275,7 +275,7 @@ PianoIMd = \relative do' {
   re, mi re mi \ottava #0 re, mi re mi re, mi re mi \mg
   re, mi re mi re, mi re' mi re mi \md re' mi} |
   \pl { re\startTrillSpan mi s16
-  re32 mi s16 re32 mi \hideNote \ind "simile" s4..
+  re32 mi s16 re32 mi \hideNote s4..-"simile"
   \oneVoice re2.\stopTrillSpan}
   {s16 re32 mi s16 re32 mi s16 \hideNoteHeads {re32 mi} s4.}
   <la, do>2. | \clef bass
@@ -362,8 +362,7 @@ PianoIMg = \relative do' {
   re16\sf <mi mi'>8.->
   re16\sf <mi mi'>8.-> |}
   <re mi la si re mi>16\sf <mi,, mi'>4..->~
-  <mi mi'>8 \md \ind "staccato leggiero"
-  \keepDyn re'''''16-.\pp
+  <mi mi'>8 \md re'''''16-.^\dyn "pp_staccato leggiero"
   re,-. \mg re,-. re,-. |
   \pl {mi,8~ \hideNote mi4.}
   {<sold mi'>16 si~ <mi, si'>4.} r16 |
@@ -377,9 +376,9 @@ PianoIMg = \relative do' {
   <re,,, re'>16 <mi mi'>8. \ottava #0
   <re' re'>16 <mi mi'>8.~
   \t {<mi mi'>4( <re re'>-- <mi mi'>--)} |
-  \pl {<re la' re>8-. \keepDyn lab'-.\pp re-. \md lab'-. }
-  {s8 \lightBeam \tt {lab,32 \graceNotes {do mib solb sib}}
-  s8 \md \lightBeam \tt {lab32 \graceNotes {do mib solb sib}}} \mg
+  \pl {<re la' re>8-. lab'-.^\pp re-. \md lab'-. }
+  {s8 \lightBeam \tt {lab,32( \graceNotes {do mib solb sib)}}
+  s8 \md \lightBeam \tt {lab32( \graceNotes {do mib solb sib)}}} \mg
   s2
   \clef treble \ottava #1
   \stemDown
@@ -428,22 +427,22 @@ PianoIMg = \relative do' {
   <sol do mi fad>8 \clef bass
   r16 <dod,,, dod'>8.-- |
 
-  <la la'>2 la->~ \keepDyn {la\> la\mp }
-  \pl la \keepDyn la''1*1/2--^\f\laissezVibrer la,,2~ la
-  \keepDyn la-\dyn "(mp_sempre)" |
-  <la la'>4 la2. | la4 la2*1/2 \keepDyn {s4\> la\!} |
+  <la la'>2 la->~ la_\> la_\mp
+  \pl la la''1*1/2--^\f\laissezVibrer la,,2~ la
+  la_\dyn "(mp_sempre)" |
+  <la la'>4 la2. | la4 la2*1/2 s4_\> la_\! |
   \pl {s1 la--\laissezVibrer}
-  \keepDyn {\oneVoice \t {la'4\mp(\> sib8~}
+  {\oneVoice \t {la'4\mp(\> sib8~}
   sib4. do8~ \t {do4 \bracketUp "m.d." la'8~)} |
-  \voiceOne la1\pp\laissezVibrer} s2. |
-  \ottava #-1 la,,,2*2\ppp\laissezVibrer \ottava #0 | R2. \clef treble
+  \voiceOne la1\! _\pp \laissezVibrer} s2. |
+  \ottava #-1 la,,,2*2^\ppp\laissezVibrer \ottava #0 | R2. \clef treble
   <sib''' do la'>2.\laissezVibrer \pl {red4~ red fa!2\laissezVibrer}
   {<fad sold>4~<fad sold>2.} s2 | R4.
 
   <fa lab>4--( <fa lab>2-- <mi lab>4--) |
   <fa lab>-- <fad la>--( <fa lab>--) |
   <mi lab>--( <fa lab>2.--)\laissezVibrer | s2.
-  \keepDyn {\ind "(poco)" <la, do>4--\> <la do>\!
+  \keepDyn {\hairpinText "(poco)" <la, do>4--\> <la do>\!
   q--\> q\! | q--\> q q\! |
   q--\> q\! q--\> q\! | q--\> q q\! }|
   \pl { sol-- sol} {<red' fad sold>8 <red fad sold>~
@@ -460,7 +459,7 @@ PianoIMg = \relative do' {
   <fadd sold'>\laissezVibrer <sid, dod'>\laissezVibrer |
   <la sold'>\laissezVibrer <dod sid'>\laissezVibrer |
   \ottava #0
-  \ind "loco" <sold' sold'>2\laissezVibrer s4 |
+  <sold' sold'>2\laissezVibrer -"loco" s4 |
   s2 \ottava #-1 <dod, dod'>4-- |
   <la sold'>8--\laissezVibrer \ottava #0 \clef treble
   <mib''''' si'?>-- <do la'>-- <si fad'>--
@@ -496,7 +495,7 @@ PianoIMg = \relative do' {
   {mi,32 re' mi re' mi, re' \md mi re'
   \t {mi,16\ff re' mi} re'8
   \ottava #1 re'32--( sib fa mi re sib fa mi \ottava #0
-  re'64 sib fa mi re^\> sib fa mi \ind "molto" re' sib fa mi
+  re'64 sib fa mi re^\> sib fa mi re'-"molto" sib fa mi
   \mg re sib fa mi re'\! sib fa mi re sib fa mi
   \t {re'32 sib fa} \t {mi re sib}} |
   \ottava #-1 mi,4*3)\pp\laissezVibrer \ottava #0 |
@@ -578,7 +577,7 @@ PianoIMg = \relative do' {
   <re re'>16 <mi mi'>4..\laissezVibrer s2 \ottava #0 R1
   \ottava #-1
   r16 <mi mi'>8. <re re'>4 r16 <mi mi'>8. <re re'>4 <re re'> |
-  \ottava #0 \ind "loco" <re' re'>16 <mi mi'>8.~ <mi mi'>4
+  \ottava #0 <re' re'>16-"loco" <mi mi'>8.~ <mi mi'>4
   \ottava #-1 mi,2. \ottava #0 |
   mi'2 mi8 <mi, mi'>2\laissezVibrer s8 |
   mi'4 mi8 mi mi <mi, mi'>2\laissezVibrer s16 |
