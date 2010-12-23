@@ -40,3 +40,12 @@
      (set-prio! "accent" -105)
      (set-prio! "tenuto" -110)
      new-alist))
+
+(define modern-time-signature-settings
+  (append default-time-signature-settings
+    '(
+      ((3 . 16) .
+                ((beamExceptions . ((end . (((1 . 16) . (3))))))))
+      ((7 . 16) .
+                ((baseMoment . (1 . 16))
+                 (beatStructure . (4 3)))))))

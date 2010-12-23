@@ -24,7 +24,7 @@
 \layout {
   \context {
     \Score
-    subdivideBeams = ##t
+    %% subdivideBeams = ##t % set by default (see notationrules.ily)
     \override TrillPitchAccidental #'avoid-slur = #'inside
     \override TimeSignature #'style = #'()
     \override SystemStartBracket #'collapse-height = #1
