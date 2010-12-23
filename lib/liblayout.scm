@@ -29,3 +29,14 @@
 (define modern-cautionaries-style
   `(Staff ,(make-accidental-rule 'same-octave 1)
           ,(make-accidental-rule 'any-octave 1)))
+
+(define modern-script-alist
+  (let* ((new-alist default-script-alist)
+         (set-prio! (lambda (script prio) (assoc-set! new-alist script
+                              (acons 
+                                    'script-priority prio
+                                     (assoc-get script default-script-alist))))))
+     ;(set-prio! "staccato" -100)
+     (set-prio! "accent" -105)
+     (set-prio! "tenuto" -110)
+     new-alist))
