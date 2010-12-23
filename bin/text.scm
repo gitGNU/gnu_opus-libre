@@ -63,6 +63,21 @@
 
 (define *hairpin-text-direction* (make-parameter #f))
 ;; Adapted from LSR snippet #233 (from Reinhold?)
+(define (make-hairpin-text dir text)
+  (make-music
+     'OverrideProperty 'once #t
+     'grob-property-path (list 'stencil)
+     'grob-value (lambda (grob)
+                   (ly:stencil-aligned-to
+                    (ly:stencil-combine-at-edge
+                     (ly:stencil-aligned-to (ly:hairpin::print grob) X CENTER)
+                     Y dir
+                     (ly:stencil-aligned-to (grob-interpret-markup grob
+                                               (make-indic-markup text)) X CENTER))
+                    X LEFT))
+     'symbol
+     'Hairpin))
+
 (define hairpinText
   (define-music-function (parser location text) (markup?)
     (make-sequential-music
@@ -78,19 +93,15 @@
                                 (eq? global-dir UP))
                             UP
                             DOWN)))))
-        (make-music
-         'OverrideProperty 'once #t
-         'grob-property-path (list 'stencil)
-         'grob-value (lambda (grob)
-                       (ly:stencil-aligned-to
-                        (ly:stencil-combine-at-edge
-                         (ly:stencil-aligned-to (ly:hairpin::print grob) X CENTER)
-                         Y (*hairpin-text-direction*)
-                         (ly:stencil-aligned-to (grob-interpret-markup grob
-                                                   (make-indic-markup text)) X CENTER))
-                        X LEFT))
-         'symbol
-         'Hairpin)))))
+        (make-hairpin-text (*hairpin-text-direction*) text)))))
+
+(define hairpinTextUp
+  (define-music-function (parser location text) (markup?)
+    (make-hairpin-text UP text)))
+
+(define hairpinTextDown
+  (define-music-function (parser location text) (markup?)
+    (make-hairpin-text DOWN text)))
 
 (define startText
   (define-music-function (location parser txt) (markup?)
