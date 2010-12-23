@@ -45,7 +45,7 @@
   (append default-time-signature-settings
     '(
       ((3 . 16) .
-                ((beamExceptions . ((end . (((1 . 16) . (3))))))))
+                ((baseMoment . (3 . 16))))
       ((7 . 16) .
-                ((baseMoment . (1 . 16))
-                 (beatStructure . (4 3)))))))
+                ((baseMoment . (4 . 16))))
+    )))
