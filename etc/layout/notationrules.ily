@@ -26,5 +26,7 @@
     autoAccidentals = #modern-accidentals-style % see liblayout.scm
     autoCautionaries = #modern-cautionaries-style
     extraNatural = ##f
+
+    scriptDefinitions = #modern-script-alist
   }
 }
