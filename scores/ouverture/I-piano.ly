@@ -19,8 +19,8 @@ PianoIMd = \relative do' {
   R2. R2 s4.
   <sol, re'>8\mp( <fad la mi'> <sol sib fa'> <la re sol>) fad16 |
   <la re>^\sf <si mi>8->
-  <re fa>-> <mi sold>-> <sol si>-> |
-  <sold do>16^\sf <fa si re>8.-> <sib mi>8_\mp(
+  <re fa>->\< <mi sold>-> <sol si>-> |
+  <sold do>16^\sf\! <fa si re>8.-> <sib mi>8_\mp(
   <sol do fa> <la dod sol'>16) |
   <la, re>\sf <si mi>8->
   <la re fa>->\cresc <si mi sol>-> <re fa sib>16->~ |
@@ -98,13 +98,13 @@ PianoIMd = \relative do' {
   <red, red'>-. dod'-. \t {<sold sold'>( red' dod)} |
   \t {<mi, mi'>(\< do' sib)}
   \t {<sol sol'>( re' do)}
-  \t {<sold sol'>( red' dod)} |
+  \t {<sold sold'>( red' dod)} |
 
   <la la'>2*2\fff \laissezVibrer \ottava #0 s1 R1
   \stemDown \keepDyn <sib,, sib'>32->\ff
   \stemUp <do do'>4...->\laissezVibrer \stemNeutral
   s2 -\dyn "peu à peu plus souple" |
-  \keepDyn la''2--\f\laissezVibrer la,,~\mp |
+  \keepDyn la''2--\f\laissezVibrer la,,~_\mp |
   la\>( \mg la,--)\p \md |
   \t {sib4(-"dolce espr." do8~} do4. sib8~ \t {sib4 do8~)} |
   do1\laissezVibrer s2. R1 R2.
@@ -170,7 +170,7 @@ PianoIMd = \relative do' {
   reb,,,16-> mib8.~ mib4. <mib, mib'>8-> |
   <fa fa'>\sfz r r8. \clef treble |
   R1*7/16*2 s1*3/16 R1*7/16*2 s1*7/16 R1*7/16 |
-  re''16-> mi8. re16-> mi8. <la, re>16 mi'8. | s2. s1 |
+  re''16-> mi8. re16-> mi8. <la, re>16-> mi'8. | s2. s1 |
   R2.*3 R4.
 
   <re' fad la re>2--(-\dyn "p_dolce espr., très calme"
@@ -225,7 +225,7 @@ PianoIMd = \relative do' {
   <re fad re'>16->\ff <mi sold mi'>->~ <mi sold mi'>4\laissezVibrer |
   s8. <re, re'>->~ <re re'>4 <mi mi'>(\ff |
 
-  <re re'>16-.) r fa8-.\mf sol-- re16-. mi-.
+  <re re'>16-.) r fa8-._\mf sol-- re16-. mi-.
   r8 fa-. sol-- re16( mi
   fa8-.) sol--~ sol16 re( mi fa sol8--) re-. |
   mi-. fa-. sol-- re16( mi)
@@ -235,10 +235,10 @@ PianoIMd = \relative do' {
   r re( mi fa) r sol8--( re16) mi8-. fa-. sol16 re mi fa |
   sol8-- re16 mi r8 fa-. sol16 la re, mi fa8-. sol-.
   r16 re-\dyncresc "poco a poco cresc."
-  mi fa sol8.-- re16 mi8 fa16 sol |
+  mi fa sol8.-- re16 mi8-- fa16 sol |
   <do, re>8-. <re mi>16( la <si? fa'>8-.) <do sol'>16 sol
   re' la mi' sib <do fa>8-. <do sol'>16 re
-  sib8 <do mi>-. fa-. sol-. <la, re>16( si <do mi>8-.)
+  sib8\! <do mi>-. fa-. sol-. <la, re>16( si <do mi>8-.)
   <sol la re>16-- mi'8 <sib do fa>16--
   sol'8 <sol, la re>16-- mi'~
   mi <sib do fa>-- sol'8 <sol, la re>16 mi'8 <sib do fa>16
@@ -251,7 +251,7 @@ PianoIMd = \relative do' {
   re,8-.\mp \cresc mi-. fa-. sol-.
   re16 mi8 fa16 r sol8-- re16
   mi fa8 sol16 r re( mi fa sol8-.) mi-. |
-  re16( mi8) fa16( sol8) re16 mi fa8-. sol--
+  re16( mi8) fa16( sol8) re16 mi fa8-.\! sol--
   re16( mi8) fa16( sol8) re16 mi fa8-. sol-- re16( mi fa8-.) |
   <re' re'>16->\ff <mi mi'>8.~ <mi mi'>4
   <sol, do fa>8-.\f <la re sol>-. <sib mib lab>-.
@@ -366,7 +366,7 @@ PianoIMg = \relative do' {
   re'16\sf <mi, mi'>8.->
   re'16\sf <mi, mi'>8.->
   re'16\sf <mi, mi'>8.-> |}
-  \pl {mi,2( mi,-|)}
+  \pl {mi,2( mi,)-|}
   {mi''16 fad8.~ fad2. }
   <mi, mi'>8. <mi' sold>8->(
   <fad la>-> <sold si>-> <la re>16->) |
@@ -564,8 +564,8 @@ PianoIMg = \relative do' {
   <re,, re'>-> <mi mi'>8.~ <mi mi'>4
   <sib' mib lab>8-. <do fa sib>-.
   <re sol do>-. <fa, fa'>16-> <sol sol'>~ <sol sol'>4
-  <si mi la>8-. <dod fad si>-.
-  <re sol do>-. <mi la re>-. |
+  <si mi la>8->-- <dod fad si>->--
+  <re sol do>->-- <mi la re>->-- |
   %% First version:
   %<re, re'>16 <re' re'> <mi, mi'> <mi' mi'>
   %<fa, fa'> <fa' fa'> <sol, sol'> <sol' sol>
@@ -590,8 +590,8 @@ PianoIMg = \relative do' {
   <mib,, mib'>4->--(\< <fa fa'>->-- <solb solb'>8->-- <lab lab'>->--) \!| %%%
   R2.*4 s2.*3
   \stemDown \lightBeams \graceNotes {
-  re32_\mf _\< mi s16 re'32 mi s16 \md re'32 mi s16 re'32 mi s16 } \mg s4 |
-  \stemNeutral s4. _\ff _\> s8_\! s4 _\< s2.*3 _\! \ottava #-1
+  re32\mf \< mi s16 re'32 mi s16 \md re'32 mi s16 re'32 mi s16 } \mg s4 |
+  \stemNeutral s4. \ff \> s8\! s4 _\< s2.*3 _\! \ottava #-1
   <re,,,, re'>16-> <mi mi'>8. <re re'>16-> <mi mi'>8. |
   <re re'>16-> <mi mi'>4..\laissezVibrer s2 \ottava #0 R1
   \ottava #-1

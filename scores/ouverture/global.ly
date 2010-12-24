@@ -10,7 +10,20 @@ PianoIIShortInstr = "II."
 
 \language "italiano"
 
-% TODO: Use global-measures context.
+%%TODO: use automatic headers.
+\header {
+  title=\Titre
+  subtitle="sur le nom d'Anne-Marie de Lavilléon − Verdier"
+  composer="Valentin Villenave"
+  tagline=\markup \fill-line {"" \indic \Date}
+}
+\paper {
+  scoreTitleMarkup = ##f
+  #(set-paper-size "a4" 'landscape)
+  min-systems-per-page = #2
+}
+#(set-global-staff-size 18)
+\pointAndClickOff
 
 Mesures = {
   \tempo "Très décidé" 4 = 92
