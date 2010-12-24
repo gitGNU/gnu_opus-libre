@@ -92,6 +92,11 @@ marks.  Regular spaces are allowed inside words.
                     (markup #:override (cons 'line-width (* width-ratio (chain-assoc-get 'line-width props)))
                             arg)))
 
+;; center titles vertically (FIXME: it doesn't actually work :-)
+(define-markup-command (mid-space layout props) ()
+  (let ((h (ly:paper-get-number layout 'paper-height)))
+    (interpret-markup layout props (make-vspace-markup (/ h 10)))))
+
 ;; This markup-command may be overriden later by a theme-specific file.
 (define-markup-command (indic layout props arg) (markup?)
   (interpret-markup layout props
