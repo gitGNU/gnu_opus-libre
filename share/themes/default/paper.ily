@@ -36,34 +36,37 @@
 
   bookTitleMarkup = \markup {
     \override #'(baseline-skip . 3.5)
-    \column {
-      \hspace #0 \mid-space
-      \fill-line { \fromproperty #'header:dedication }
-      \override #'(baseline-skip . 3.5)
-      \column {
-        \huge \larger \bold
-        \fill-line {
-          \larger \fromproperty #'header:title
-        }
-        \fill-line {
-          \large \smaller \bold
-          \larger \fromproperty #'header:subtitle
-        }
-        \fill-line {
-          \smaller \bold
-          \fromproperty #'header:subsubtitle
-        }
-        \fill-line {
-%           \fromproperty #'header:poet
-%           { \large \bold \fromproperty #'header:instrument }
-          \fromproperty #'header:composer
-        }
-        \fill-line {
-          \fromproperty #'header:meter
-          \fromproperty #'header:arranger
-        }
-        \fill-line {
-          \fromproperty #'header:date
+    \fill-page {
+      \rounded-box \column {
+        \vspace #1
+        \fill-line { \fromproperty #'header:dedication }
+        \override #'(baseline-skip . 3.5)
+        \column {
+          \huge \larger \bold
+          \fill-line {
+            \larger \fromproperty #'header:title
+          }
+          \fill-line {
+            \large \smaller \bold
+            \larger \fromproperty #'header:subtitle
+          }
+          \fill-line {
+            \smaller \bold
+            \fromproperty #'header:subsubtitle
+          }
+          \fill-line {
+%             \fromproperty #'header:poet
+%             { \large \bold \fromproperty #'header:instrument }
+            \fromproperty #'header:composer
+          }
+          \fill-line {
+            \fromproperty #'header:meter
+            \fromproperty #'header:arranger
+          }
+          \fill-line {
+            \fromproperty #'header:date
+          }
+          \vspace #1
         }
       }
     }
@@ -81,3 +84,5 @@
   }
 
 }
+
+\pageBreak
