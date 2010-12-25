@@ -2,10 +2,15 @@
 % (c) 2004-2010 Valentin Villenave <valentin@villenave.net>
 
 \header {
-  title = "Trois poèmes d'Edwige Hudson"
+  title = "Trois poèmes"
+  subtitle = "d’Edwige Hudson"
+  instrument = "pour soprano et piano"
   composer = "Valentin Villenave"
-  arranger = "2004"
-  tagline = "Partition éditée avec le logiciel libre GNU LilyPond"
+  date = "octobre 2004 − avril 2010"
+}
+
+\paper {
+  first-page-number = #-1
 }
 
 UnTitre = "I."
