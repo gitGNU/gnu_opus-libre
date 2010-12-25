@@ -3,7 +3,7 @@
 
 PianoIIMd = \relative do' {
   <la si re>4->-- <si dod re>->-- <la do re>->-- <sol do re>->-- R1
-  <sol re'>16^\sf <fad la mi'>~ <fad la mi'>2 |
+  <sol re'>16\sf <fad la mi'>~ <fad la mi'>2 |
   <la re>16\sf <do mi>8->( <re fad>->\<
   <mi la>-> <fad si>-> <la do>16->) |
   <si re>2->\! r8 |
@@ -232,11 +232,11 @@ PianoIIMd = \relative do' {
   \clef treble <fad si fad'> <la re la'>\<
   <si fad' si>16 <re la' re>8->-.
   <mi si' mi>2->\!\laissezVibrer s8 |
-  \clef bass <re, la' re>16 <mi do' mi>8
+  \clef bass <re, la' re>16-> <mi do' mi>8
   \clef treble <sol re' sol>16
   <sib mi sib'>8\< <do sol' do> <re sib' re>16
   <fa do' fa>2->\!\laissezVibrer s16 |
-  \clef bass <re, la' re>16 <mi si'! mi>8
+  \clef bass <re, la' re>16-> <mi si'! mi>8
   \clef treble <sol sol'>16 <sib sib'>\< <do do'> <re re'>8 <fa do' fa>16
   <lab re lab'>4->~\! <lab re lab'>16 |
   <fa fa'>\< <lab lab'> <sib sib'>8 <do do'>16 |
@@ -331,7 +331,7 @@ PianoIIMg = \relative do' {
   <mi mi'>8._\sf <mi' sol>8-> <fad la>-> <sol sib>-> |
   <mi dod'>_\mp( <fa mi'> <fad fa'!> <la sol'>) sib,16-. |
   <mi, mi'>8.\ff <mi' sol>8-> <fad la>-> <sol sib>-> |
-  <mi, mi'>8._\sf <fad' la>8( <sold si>) \keepDyn <mi la re>16\sf |
+  <mi, mi'>8._\sf <fad' la>8( <sold si>) <mi la re>16^\sf |
   <fad si mi>8-> <la re fa> <si mi sol> \clef treble
   <re fa sib> | <mi sol do> <fa sib dod> <sol do re> |
   \clef bass <re, la' re>16 <mi si' mi>4..
@@ -444,7 +444,7 @@ PianoIIMg = \relative do' {
   r16 <fa, fa'>8-. <fa' fa'>-. <fa fa'>-.
   r16-. <fa mi'>8-. <fa mi'>-. <fa mi'>-.
   r16-. <fa mib'>8-. <fa mib'>-. <fa mib'>-.}
-  {<mib' mib'>16->--\mf fa, fa'-.-- fa reb-.-- fa fa-.--
+  {<mib' mib'>16->---\dyn "mf_sec" fa, fa'-.-- fa reb-.-- fa fa-.--
   fa'->-- mi, reb'-.-- mi, fa-.-- mi mib-.--
   reb'->-- mib, mib-.-- mib fa-.-- mib reb-.--}
   R8.
