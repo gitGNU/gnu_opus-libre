@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- 80-buildskel.scm                                   ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -17,6 +17,9 @@
 ;------------------------------------------------------------------;
 
 
+(load "libdynamics.scm")
+
+(define *has-timeline* (make-parameter #f))
 
 (define (assoc-name alist name)
   "If NAME begins with a lower case letter, then
@@ -55,21 +58,23 @@ markup exists."
   (define-music-function (parser location name) (string?)
     (let* ((current-name (string-append (*current-part*) name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
-           (part-timeline (ly:parser-lookup parser
-                                            (string->symbol
-                                             (string-append (*current-part*) lang:timeline-suffix))))
-           (instr-timeline (ly:parser-lookup parser
-                                             (string->symbol
-                                              (string-append current-name lang:timeline-suffix)))))
+           (global-timeline (if (not (*has-timeline*))
+                                (ly:parser-lookup parser
+                                  (string->symbol
+                                    (string-append (*current-part*) lang:timeline-suffix)))
+                                #f))
+           (local-timeline (ly:parser-lookup parser
+                             (string->symbol
+                               (string-append current-name lang:timeline-suffix)))))
       (ly:debug-message "Loading music from ~a..." current-name)
       (if (ly:music? music)
           #{ \new Voice = $name
              <<
                $music
-               $(if (ly:music? instr-timeline)
-                    instr-timeline
-                    (if (ly:music? part-timeline)
-                        part-timeline))
+               $(if (ly:music? local-timeline)
+                    local-timeline
+                    (if (ly:music? global-timeline)
+                        (begin (*has-timeline* #t) global-timeline)))
              >>
           #}
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
@@ -185,8 +190,7 @@ markup exists."
            (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
-      ;; requires removeDynamics, defined in libmusic.scm
-      ;; (which should have been loaded by now, since macros need it).
+      ;; requires removeDynamics, defined in libdynamics.scm
     #{ \new PianoStaff \with {
          instrumentName = $instr
          shortInstrumentName = $short-instr
