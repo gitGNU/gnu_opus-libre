@@ -3,6 +3,59 @@
 
 \include "italiano.ly"
 
+\header {
+  title = "Impromptu en La"
+  subtitle = "pour violon et piano"
+  composer = "Valentin Villenave"
+  date = "mai 2004"
+}
+
+\paper {
+  first-page-number = #-1
+}
+
+\pageBreak
+\markup \fill-page {
+  ""
+  \fill-line {
+    ""
+    \italic "en hommage à Jean Sibelius."
+  }
+  ""
+  \fill-line {
+    \override #'(box-padding . 6)
+    \box \center-column {
+      \line {
+        Copyright & copyleft © Valentin Villenave, 2004-2010.
+      }
+      \line {
+        \with-url #"http://valentin.villenave.net"
+        \typewriter http://valentin.villenave.net
+      }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \justify {
+        Cette partition est publiée suivant les termes de la licence
+        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
+        \bold { Creative Commons, Paternité, Partage des
+        conditions initiales à \concat {l'identique \medium . }}
+        Vous pouvez la copier, la modifier et la jouer \italic librement
+        sans contrevenir au droit d'auteur, à condition de respecter les
+        termes de la licence (notamment en veillant à mentionner le nom
+        de l'auteur et l'adresse web d'origine).
+      }
+      \vspace #.5
+      \line {
+        Gravure réalisée au moyen du logiciel libre
+        \with-url #"http://www.LilyPond.org"
+        \concat {\bold "GNU LilyPond" ,}
+        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) } 
+      }
+    }
+  }
+}
+\pageBreak
+
 Violon =
 \relative do' {
   \time 7/4
@@ -67,8 +120,8 @@ Violon =
   la,4.\mp sib8~ sib4~ sib8 mib~\<
   \t {mib dod\downbow fad(} mi) la sol do |
   la'\f la, la, sib'->~ sib16 mib,8( fa16~)
-  \tt {fa sib,( do) fad(\< sold)}
-  \ttt {mib( fa) si( dod) fad,(-"molto" sold)}
+  \tt {fa sib,( do) \hairpinText "molto" fad(\< sold)}
+  \ttt {mib( fa) si( dod) fad,( sold)}
   re'( mi) si( re) \t {mi8 si' la} |
   mi'2.~-\dyn "pp_sub." mi2-"(non vib.)" r2\fermata |
 
