@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- libgraphics.scm                                    ;
+; opus_libre -- scripts.scm                                        ;
 ;                                                                  ;
 ; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -17,21 +17,15 @@
 ;------------------------------------------------------------------;
 
 
-; Graphics.
+; Articulations, etc.
 
-
-(define (add-bracket pos up? text music)
-  (if
-   (equal? (ly:music-property music 'name) 'EventChord)
-   (let ((note (car (ly:music-property music 'elements))))
-     (set! (ly:music-property note 'articulations)
-           (append (ly:music-property note 'articulations)
-                   (list
-                    (let ((obj (make-music 'FingeringEvent)))
-                      (set! (ly:music-property obj 'tweaks)
-                            (acons 'self-alignment-Y (if up? -1 1)
-                                   (acons 'text
-                                          (markup #:bracketText pos up? text)
-                                          (ly:music-property obj 'tweaks))))
-                      obj)))))
-   music))
+(define colpugno ;;TODO: add to scripts alist.
+ (let* ((m (make-music 'ArticulationEvent
+                       'articulation-type "staccatissimo"
+                       'direction 1)))
+   (ly:music-set-property! m 'tweaks
+     (acons 'text (markup #:scale (cons 2 1.6)
+                  #:musicglyph "scripts.ustaccatissimo")
+         (acons 'stencil ly:text-interface::print
+           (ly:music-property m 'tweaks))))
+   m))
