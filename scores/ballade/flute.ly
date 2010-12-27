@@ -3,6 +3,67 @@
 
 \language "italiano"
 
+Titre = "Ballade pour un mois de mai"
+FluteInstr = "Flûte"
+PianoInstr = "Piano"
+
+\header {
+  title = \markup {
+    \vconcat
+    \center-column {
+      \larger "Ballade"
+      \smaller "pour un mois de mai"
+      \vspace #.5
+    }
+  }
+  subtitle = "pour flûte et piano"
+  composer = "Valentin Villenave"
+  date = "mai 2003"
+}
+
+\paper {
+  first-page-number = #-1
+  min-systems-per-page = #4
+}
+
+\pointAndClickOff
+\pageBreak
+\markup \fill-page {
+  ""
+  \fill-line {
+    \override #'(box-padding . 6)
+    \box \center-column {
+      \line {
+        Copyright & copyleft © Valentin Villenave, 2003-2010.
+      }
+      \line {
+        \with-url #"http://valentin.villenave.net"
+        \typewriter http://valentin.villenave.net
+      }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \justify {
+        Cette partition est publiée suivant les termes de la licence
+        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
+        \bold { Creative Commons, Paternité, Partage des
+        conditions initiales à \concat {l'identique \medium . }}
+        Vous pouvez la copier, la modifier et la jouer \italic librement
+        sans contrevenir au droit d'auteur, à condition de respecter les
+        termes de la licence (notamment en veillant à mentionner le nom
+        de l'auteur et l'adresse web d'origine).
+      }
+      \vspace #.5
+      \line {
+        Gravure réalisée au moyen du logiciel libre
+        \with-url #"http://www.LilyPond.org"
+        \concat {\bold "GNU LilyPond" ,}
+        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) } 
+      }
+    }
+  }
+}
+\pageBreak
+
 Mesures = {
   \tempo \markup \indic "très libre"
   \time 3/4 s2.*2
@@ -51,7 +112,8 @@ Mesures = {
   s2*4
   \time 3/4 s2.
   \time 2/4 s2*12
-  \time 3/4 s2.*2
+  \time 3/4
+  \grace s8 s2.*2
   \mark \default %%% J
   \tempo "Tempo giusto"
   \time 2/4 s2
@@ -84,20 +146,21 @@ Mesures = {
 
 Flute = \relative do' {
   mi''16( fa) r8 r la,( \t {sib) red,( mi)} |
-  lad,( si) \t {fad4( sol8)} r4
+  lad,(\> si) \t {fad4( sol8)\!} r4
   \bar "||"
 
   %%% A %%%
-  %% Although this may not look like it, it's
+
+  %% (Although this may not look like it, it's
   %% actually a twelve-tone series.  There's also
-  %% some (very) "soft serialism" in the piano part.
+  %% some (very) "soft serialism" in the piano part.)
   dod4\p( re8 mi sol4)~ |
   sol8 mi'\( mib reb4 do8 |
-  sib\> reb lab4( sol8)\! \) r |
+  sib reb\> lab4( sol8)\! \) r |
   la(\p sol4 sib fad8 |
-  red sol,) fad'4( \ind "poco" sol8\< mi')~ |
+  red sol,) fad'4( \hairpinText "poco" sol8\< mi')~ |
   mi\! \breathe sol4( fa8 sib mi, |
-  \t {dod4 do sib} sol2\>) |
+  \t {dod4 do sib} sol2*1/2 s4\>) |
 
   %%% B %%%
   r2\! r8 dod,,(\mf \t {re mi sol} |
@@ -120,7 +183,7 @@ Flute = \relative do' {
   \bar "||"
 
   %%% D %%%
-  \ind "dolce" sol4.)\startTrillSpan \mp \> |
+  sol4.)-"dolce"\startTrillSpan \mp \> |
   sol8\stopTrillSpan \! r4 | %FIXME longhairpin.
   R4.
   R4
@@ -135,10 +198,10 @@ Flute = \relative do' {
   re-- re-- r |
 
   %%% E %%%
-  dod16\mp dod8 dod16 dod8 |
+  dod16\mp dod8-. dod16 dod8-. |
   si4( sold8)-\dyncresc "poco a poco cresc." |
   dod4-- do8--~ | do sib16( sol sib sol) |
-  fa'8-- fa-- r |
+  fa'8-.-- fa-.-- r |
 
   %%% F %%%
   dod,8(\mf re16 mi) |
@@ -149,7 +212,7 @@ Flute = \relative do' {
   dod,4-> re8-- mi-- |
   sol4.-> \breathe |
   dod,4-> re8-- mi-- |
-  sol4-> dod,8->~ dod re-- mi-- |
+  sol4->\cresc dod,8->~ dod re-- mi-- |
   sol4-> r8 dod,-- \t {re->\<( mi sol}
 
   %%% G %%%
@@ -166,14 +229,15 @@ Flute = \relative do' {
   r8 mi4( fa8) | dod4( do) |
   r8 mi4(\mp \> fa8) | dod4( do)\! |
   r8 mi4(\mf \< fa8
-  \ind "molto espr." \t {sol4 sib re} |
+  \t {sol4-"molto espr." sib re} |
   sol2)\f | r4 re8( sol |
   dod2)~ \cresc dod8 sol~ \t {sol re(\! sol} |
+  \grace s8
   dod2)->\dyncresc "cresc. sempre" r8 re,16( sol |
-  dod4) sol8( dod)~ dod8. sold'16 |
+  dod4) sol?8( dod)~ dod8. sold'16 |
 
   %%% J %%%
-  sold2-\dyn sffz | R4.
+  sold2-\dyn "sffz" | R4.
   r4 mi8\ff( fa) r4 |
   \t { r8 re,( sol)} dod-- mi-- fa4-- |
   r4 mi16( fa) r8 r4 |
@@ -185,15 +249,15 @@ Flute = \relative do' {
   r8 sol(-\dyn "p_semplice" mi re dod2) |
   r4 sol-- mi-- re-- | dod2.-- r4 |
   mi'16(\sfz fa) r8 r4
-  \ind "poco" dod,8(\< re~ \t {re mi sol\!)}
+  \hairpinText "poco" dod,8(\< re~ \t {re mi sol\!)}
   dod2(-\dyn "p_sub." re4 mi sol2 |
-  sol,4) r \ind "détimbré" sib'--\pp r lab-- r |
+  sol,4) r sib'--\pp -"détimbré" r lab-- r |
   dod,,2.--\mp re2( mi4\< |
   \t {sol si mi)} sib'2--\mf( lab--\> |
 
   %%% L %%%
   sol)\! r4 r8 sol,-.\p |
-  \ind "scherzando" dod,4-- r |
+  dod,4-- -"scherzando" r |
   r4 r8 sol'-. | dod,4-- r |
   r8 sol'-. dod,-. sol'-. | dod,4-- r |
 
@@ -206,10 +270,10 @@ Flute = \relative do' {
 
   %%% N %%%
   sold8->\! r  r do,,,!32\p do do do |
-  do-> do do do do do do do \ind "simile" do4:32 |
+  do-> do do do do do do do do4:32_"simile" |
   do8 r red'16(\sfz mi) r8 |
   do,2:32->\mf do8-> r fad'16(\sfz sold la8) |
-  \ind "flatt." do,,4:32~\< do8->\! red16-. mi-. |
+  do,,4:32~-"flatt."\< do8->\! red16-. mi-. |
   fad-> sold-. la8-. \t {dod16\< dod dod} \t {red red red} |
   mi8->\! r sol16(\sfz sib) r8 |
   \t {sib16\< sib sib} \t {do do do} \t {dod dod dod} dod8\! |
@@ -218,15 +282,15 @@ Flute = \relative do' {
 
   %%% O %%%
   do?2.\fff \ten r4 |
-  r2 \ind "calme" lad,,8\p( si dod sold16 lad~) |
+  r2 lad,,8\p(-"calme" si dod sold16 lad~) |
   lad2 r4 |
   lad8( si16 dod mi8 sol,!16 lad~) lad2 |
   r2 lad2( si4 dod mi2)~ | mi2. r4 |
 
   %%% P %%%
-  R1 \ind "dolce" sol,2\mp( sib4 do |
+  R1 sol,2\mp(-"dolce" sib4 do |
   dod2.) fad4( | mid red2 do!4 |
-  si mi sold,2\> fa4) r fad'(\mp mi~ |
+  si mi sold,2\> fa4)\! r fad'(\mp mi~ |
   mi la2 dod,4 | lad) r mi8(\p re'4.) |
   fad,4\< mi'2*1/2--\! s4\< sol4--\!~ |
   sol( fad\< si\mf \> mi,) |
