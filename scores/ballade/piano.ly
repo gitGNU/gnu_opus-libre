@@ -215,7 +215,7 @@ PianoMd = \relative do' {
   \pl {<lad,,, red>1*1/4 <mi'' mi'>4--( <fa fa'>--) s}
   {la,2. sol4} |
   <sol, do!>2( \mg <mid lad>) \md |
-  \pl <fa si re sol>1 {r2 <dod''' sol'>4\laissezVibrer r }
+  \pl <fa si re sol>1-- {r2 <dod''' sol'>4\laissezVibrer r }
 }
 
 PianoMg = \relative do' {
@@ -379,5 +379,5 @@ PianoMg = \relative do' {
   \pl <re' fa sol>2*1/2 {lab'16 sib8.\laissezVibrer}
   \clef bass <dod,,,, dod'>2 |
   dod'1 dod \pl { r2 sol,4\laissezVibrer r}
-  <sol' mi'>1
+  <sol' mi'>1--
 }

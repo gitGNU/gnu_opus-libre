@@ -31,6 +31,15 @@ PianoInstr = "Piano"
 \markup \fill-page {
   ""
   \fill-line {
+    ""
+    \line \italic {
+      Pour
+      \concat { M \super lle}
+      F., à l'occasion de ses 20 ans.
+    }
+  }
+  ""
+  \fill-line {
     \override #'(box-padding . 6)
     \box \center-column {
       \line {
