@@ -123,7 +123,7 @@ PianoMd = \relative do' {
   <mib,, mib'>4_\mf(-"cantabile assai" <fa fa'>8 | <dod dod'>4 <si si'>) |
   \grace s8
   \pl \t {<mi la mi'>16(\sfz fa8)} \t {<fa' la mi'>16( fa'8)}
-  <mib,, mib'>4\mf( <fa fa'>8 <dod dod'> <si si'>) |
+  <mib,, mib'>4_\mf( <fa fa'>8 <dod dod'> <si si'>) |
   r16\< <mib' mib'>-. <fad fad'>8--
   <sold, sold'>-- <reb reb'>16-. <mib mib'>--~
   <mib mib'> <sib sib'>-. <do do'>8-- |
@@ -295,10 +295,10 @@ PianoMg = \relative do' {
   <mi? mi'?>16([ fa)]} r8 <mi? mi'?>16( fa') r8
   <re,,, re'>4\laissezVibrer |
   mib''16( fa) dod( si) r sold-. r mib'( fa) dod( si8) |
+  \set Score.tieWaitForNote = ##f
   r4 <re,, re'>4~ \hideNote \grace re s2 |
 
   %%% H %%%
-  \set Score.tieWaitForNote = ##f
   <re' la' do>2~ \hideNotes re~ re~ re~ re2.~ re2~ re \unHideNotes |
   <re la' do>~<re la' do> <re do'>~ <re do'> |
   <re sib' re>~ q~ q~ q |
