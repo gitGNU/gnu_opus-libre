@@ -116,16 +116,16 @@ $x
 
 (define whiteNote
   (define-music-function (parser location x) (ly:music?)
-    (set! (ly:music-property arg 'tweaks)
-                                 (acons 'duration-log 1
-                                    (ly:music-property arg 'tweaks)))
+    (set! (ly:music-property x 'tweaks)
+                               (acons 'duration-log 1
+                                  (ly:music-property x 'tweaks)))
                          x))
 
 (define blackNote
   (define-music-function (parser location x) (ly:music?)
-    (set! (ly:music-property arg 'tweaks)
-                                 (acons 'duration-log 4
-                                    (ly:music-property arg 'tweaks)))
+    (set! (ly:music-property x 'tweaks)
+                               (acons 'duration-log 4
+                                  (ly:music-property x 'tweaks)))
                          x))
 
 (define parlato
