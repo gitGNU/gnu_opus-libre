@@ -19,7 +19,18 @@
 
 ; Articulations, etc.
 
-(define colpugno ;;TODO: add to scripts alist.
+;; Articulation shortcuts -----------------------------------------;
+(make-script '(st . "staccato"))
+(make-script '(acc . "accent"))
+(make-script '(det . "tenuto")) ; as in "détaché"
+(make-script '(stdet . "portato"))
+(make-script '(accdet . '("tenuto" "accent")))
+(make-script '(accst . '("accent" "staccato")))
+(make-script '(dwnb . "downbow"))
+
+;; Customized articulations ---------------------------------------;
+ ;;TODO: add to scripts alist.
+(define colpugno
  (let* ((m (make-music 'ArticulationEvent
                        'articulation-type "staccatissimo"
                        'direction 1)))
@@ -28,4 +39,58 @@
                   #:musicglyph "scripts.ustaccatissimo")
          (acons 'stencil ly:text-interface::print
            (ly:music-property m 'tweaks))))
+   m))
+
+(define CaV
+ (let ((m (make-music 'ArticulationEvent
+        'articulation-type "flageolet")))
+       (set! (ly:music-property m 'tweaks)
+             (acons 'font-size -3
+                    (ly:music-property m 'tweaks)))
+   m))
+
+(define thumbpizz
+ (let* ((m (make-music 'ArticulationEvent
+                       'articulation-type "stopped"
+                       'direction 1)))
+   (ly:music-set-property! m 'tweaks
+     (acons 'font-size 3
+       (acons 'text (markup
+                   #:hspace 0
+                   #:rotate 45
+                   #:musicglyph "scripts.stopped")
+         (acons 'stencil ly:text-interface::print
+           (ly:music-property m 'tweaks)))))
+   m))
+
+(define leftpizz
+ (let* ((m (make-music 'ArticulationEvent
+                       'articulation-type "stopped"
+                       'direction 1)))
+   (ly:music-set-property! m 'tweaks
+     (acons 'font-size 3
+           (ly:music-property m 'tweaks)))
+   m))
+
+;; Arpeggios ------------------------------------------------------;
+
+(define arpeggUp
+ (let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'arpeggio-direction 1
+     (ly:music-property m 'tweaks)))
+   m))
+
+(define arpeggDown
+ (let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'arpeggio-direction -1
+     (ly:music-property m 'tweaks)))
+   m))
+
+(define plak ;;FIXME: find a better name? OTOH this is kinda fun :)
+ (let* ((m (make-music 'ArpeggioEvent)))
+   (ly:music-set-property! m 'tweaks
+    (acons 'stencil ly:arpeggio::brew-chord-bracket
+     (ly:music-property m 'tweaks)))
    m))

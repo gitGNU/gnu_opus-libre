@@ -288,4 +288,6 @@ marks.  Regular spaces are allowed inside words.
              (1+ (tm:mon today))
              (tm:mday today)))))
 
-
+(define-markup-command (vconcat layout props arg) (markup?)
+  (interpret-markup layout
+    (cons (list (cons 'baseline-skip 0)) props) arg))

@@ -37,5 +37,11 @@
          (let ((grob-markup (ly:grob-property grob 'text)))
            (grob-interpret-markup grob (make-indic-markup grob-markup))))
     \override TextScript #'direction = #UP
+
+    \override BreathingSign #'text = \markup {
+      \hspace #0
+      \raise #4
+      \musicglyph #"scripts.upbow"
+    }
   }
 }
