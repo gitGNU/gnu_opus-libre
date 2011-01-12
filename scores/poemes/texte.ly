@@ -1,6 +1,9 @@
 %-- Trois poèmes -- texte.ly --------------------------------------%
 % (c) 2004-2010 Valentin Villenave <valentin@villenave.net>
 
+SopranoInstr = "Soprano"
+PianoInstr = "Piano"
+
 \header {
   title = \markup {
     \vconcat
@@ -17,6 +20,7 @@
 
 \paper {
   first-page-number = #-1
+  ragged-last-bottom = ##f
 }
 
 \pointAndClickOff
@@ -54,7 +58,7 @@
         Gravure réalisée au moyen du logiciel libre
         \with-url #"http://www.LilyPond.org"
         \concat {\bold "GNU LilyPond" ,}
-        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) } 
+        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) }
       }
     }
   }
