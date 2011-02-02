@@ -124,9 +124,14 @@ $x
 (define blackNote
   (define-music-function (parser location x) (ly:music?)
     (set! (ly:music-property x 'tweaks)
-                               (acons 'duration-log 4
-                                  (ly:music-property x 'tweaks)))
-                         x))
+       (acons 'before-line-breaking
+              (lambda (grob)
+                (let ((dots (ly:grob-object grob 'dot)))
+                  (ly:grob-set-property! grob 'duration-log 2)
+                  (and (ly:grob? dots)
+                       (ly:grob-set-property! dots 'dot-count 0))))
+              (ly:music-property x 'tweaks)))
+        x))
 
 (define parlato
  (define-music-function (parser location x) (ly:music?)
