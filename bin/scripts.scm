@@ -72,7 +72,7 @@
            (ly:music-property m 'tweaks)))
    m))
 
-#(define slashStem #{
+(define slashStem #{
  \once \override Stem #'stencil =
  #(lambda (grob)
     (let* ((x-parent (ly:grob-parent grob X))
