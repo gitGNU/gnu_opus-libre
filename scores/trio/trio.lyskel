@@ -1,9 +1,5 @@
 <<
   \newStaff $"Flute"
-  \new PianoStaff
-  <<
-    \newStaff $"VioloncelleGhost"
-    \newStaff $"Violoncelle"
-  >>
+  \newStaff $"Violoncelle"
   \newPianoStaff $"Piano"
 >>

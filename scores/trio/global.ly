@@ -43,6 +43,7 @@ Mesures = {
   s2
   \time 4/4
   s1
+  \bar "||"
   \time 3/4
   \tempo "Tempo giusto"
   s2.
@@ -70,6 +71,7 @@ Mesures = {
   \tempo "Presto (doppio tempo)" 2 = 96 ~ 104
   s2*33
   \time 3/8
+  \mark \markup { \note #"8" #UP = \note #"8" #UP }
   s4.
   \bar "||"
   \time 4/4
