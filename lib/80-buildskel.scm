@@ -118,7 +118,7 @@ markup exists."
            (short-instr (make-this-text name lang:short-instr-suffix)))
       (if (ly:music? music)
           #{ <<
-             \new Staff \with {
+             \new Staff = $name \with {
                instrumentName = $instr
                shortInstrumentName = $short-instr
              }
