@@ -59,6 +59,7 @@ Mesures = {
   s1*5/4
   \time 4/4
   s1*2
+  \bar "||"
   \tempo "Calme et étrange"
   s1*15
   \bar "||"
