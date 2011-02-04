@@ -35,3 +35,18 @@
                                           (ly:music-property obj 'tweaks))))
                       obj)))))
    music))
+
+(define (add-script glyph music)
+  (if
+   (equal? (ly:music-property music 'name) 'EventChord)
+   (let ((note (car (ly:music-property music 'elements))))
+     (set! (ly:music-property note 'articulations)
+           (append (ly:music-property note 'articulations)
+                   (list
+                    (let ((obj (make-music 'FingeringEvent)))
+                      (set! (ly:music-property obj 'tweaks)
+                            (acons 'text
+                                   (markup #:musicglyph glyph)
+                                   (ly:music-property obj 'tweaks)))
+                      obj)))))
+   music))

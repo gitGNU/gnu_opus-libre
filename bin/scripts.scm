@@ -72,6 +72,13 @@
            (ly:music-property m 'tweaks)))
    m))
 
+(define accentedNote
+ (define-music-function (parser location x) (ly:music?)
+   #{ \once \set fingeringOrientations = #'(left)
+      \once \override Fingering #'X-extent = #'(0 . 1)
+      \once \override Fingering #'font-size = #1 %% default is -5
+      $(add-script "scripts.sforzato" x) $x #})
+
 (define slashStem #{
  \once \override Stem #'stencil =
  #(lambda (grob)
