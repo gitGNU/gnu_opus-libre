@@ -77,7 +77,7 @@
    #{ \once \set fingeringOrientations = #'(left)
       \once \override Fingering #'X-extent = #'(0 . 1)
       \once \override Fingering #'font-size = #1 %% default is -5
-      $(add-script "scripts.sforzato" x) $x #})
+      $(add-script "scripts.sforzato" x) $x #}))
 
 (define slashStem #{
  \once \override Stem #'stencil =
