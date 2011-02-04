@@ -130,8 +130,8 @@ Violoncelle = \relative do' {
 
   %%% Tempo primo %%%
   R1*2 R2 R2. \clef bass
-  r2 r8 re,,4(\upbow -\dyn "p_dolce" sib8) |
-  mi,2--\< \longHairpin mib2--\> R1*3\!
+  r2 r8 re,,4(\upbow -\dyn "p_dolce"\< sib8) |
+  mi,2-- \longHairpin mib2--\> \grace s8\! R1*3
   r4 mib,--\upbow\f mi-- dod-- |
   << {do4--~ \stemDown do s2 s4 do do do\stemNeutral }
   \new Staff \with {\remove "Time_signature_engraver" alignAboveContext = #"Violoncelle" }
@@ -151,7 +151,7 @@ Violoncelle = \relative do' {
   r2 r4 lab'''8(\p\upbow sol |
   \t {mi4--) lab( sol)} mi8(\< lab) sol16( mi) lab( sol) |
   R1\! \clef bass
-  <\blackNote do,,, sol' mi'>2.\p r4 |
-  <do sol'>2. r4 |
+  <\blackNote do,,, sol' mi'>2.--\p r4 |
+  <do sol'>2.-- r4 |
   do4\fermata -"pizz." r r2
 }

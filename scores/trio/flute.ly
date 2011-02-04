@@ -86,7 +86,7 @@ Flute = \relative do' {
   si,4~ \t {si8 fa' lab} fa4-- \t {r8 si,(\( fa')} |
   lab--(-\dyn "p_sempre" fa4) \acciaccatura lab8 mi8--~ mi red re( fa) |
   si,2--\) fa8(\( fad) la( si) |
-  \t {re( mib fa)} lab la4.\) fa,8(-\dyncresc "poco a poco cresc." sol |
+  \t {re(-\dyncresc "poco a poco cresc." mib fa)} lab la4.\) fa,8( sol |
   si re \t {mib16 si mib} fa8) si,--( sold'16) mi32( sold fa8) si,( |
   sold'16) mi32( sold fa8) \t {si,16( mi sold} fa8) \breathe
   \t {si,16( mi sold} \t {fa re fa} \t {la fa la} \t {dod fa la)} |
@@ -144,7 +144,7 @@ Flute = \relative do' {
   %%% Tempo primo %%%
   R1*2 R2 R2.
   r2 r8 re,,4(\p-"dolce espr." fad8 |
-  do'4..\< fa16 \longHairpin dod2\>) | R1*3\!
+  do'4..\< fa16 \longHairpin dod2\>) | \grace s8\! R1*3
   r4 la'--\f lab-- do-- |
   \lightBeams {
   \stemUp do,,,16._( \graceNotes {sol'32 re' si' fa' la} \stemNeutral
