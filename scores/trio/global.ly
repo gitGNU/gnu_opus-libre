@@ -7,7 +7,69 @@ FluteInstr = "Flûte"
 VioloncelleInstr = "Violoncelle"
 PianoInstr = "Piano"
 
+Titre = \markup \vconcat \center-column {
+  \larger "Trio"
+  \smaller "pour flûte, violoncelle et piano"
+}
+
+\header {
+  title = "Trio"
+  subtitle = "pour flûte, violoncelle et piano"
+  composer = "Valentin Villenave"
+  date = "mars 2003"
+}
+
+#(set-global-staff-size 18)
+
+\paper {
+  first-page-number = #-1
+  ragged-last-bottom = ##f
+}
+
 \pointAndClickOff
+\pageBreak
+\markup \fill-page {
+  ""
+  ""
+  \wordwrap {
+    Cette pièce a été crée le 7 mai 2003 à l'auditorium Jean-Philippe Rameau
+    du conservatoire de Saint-Maur des Fossés.  Les parties de flûte et de
+    violoncelle étaient respectivement tenues par Cécile Clouet et Sophie Pécriaux,
+    en compagnie de l'auteur au piano.
+  }
+  \fill-line {
+    \override #'(box-padding . 6)
+    \box \center-column {
+      \line {
+        Copyright & copyleft © Valentin Villenave, 2003-2011.
+      }
+      \line {
+        \with-url #"http://valentin.villenave.net"
+        \typewriter http://valentin.villenave.net
+      }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \justify {
+        Cette partition est publiée suivant les termes de la licence
+        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
+        \bold { Creative Commons, Paternité, Partage des
+        conditions initiales à \concat {l'identique \medium . }}
+        Vous pouvez la copier, la modifier et la jouer \italic librement
+        sans contrevenir au droit d'auteur, à condition de respecter les
+        termes de la licence (notamment en veillant à mentionner le nom
+        de l'auteur et l'adresse web d'origine).
+      }
+      \vspace #.5
+      \line {
+        Gravure réalisée au moyen du logiciel libre
+        \with-url #"http://www.LilyPond.org"
+        \concat {\bold "GNU LilyPond" ,}
+        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) }
+      }
+    }
+  }
+}
+\pageBreak
 
 Mesures = {
   \time 4/4

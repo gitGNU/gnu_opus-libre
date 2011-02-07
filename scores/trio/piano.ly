@@ -28,30 +28,30 @@ PianoMd = \relative do' {
   r2 r4 r8. re,32( fad) |
   dod1~ dod4.. re32( fad) |
   dod2.. r8 |
-  dod2~ \t {dod4( re fad4*3/4) \slashStem \graceNotes \lightBeams {re32( fad)}}
+  dod2--~ \t {dod4( re fad4*3/4) \slashStem \graceNotes \lightBeams {re32( fad)}}
   dod1~ dod~ dod2 |
   \pl {<la, re sol>2--_( <la re sol>--)}
   {r8 dod'~ dod2.} |
 
   %%% Tempo giusto %%%
-  <si mi sold si>2.\arpeggio -\dyn "f_dolce espr."
-  <sib sib'>4 <sol sol'> |
-  \t {r <si mi sold si> <sib sib'>} <sol sol'>-- <fad fad'>-- |
-  r8 <si si'>4.~ \t {<si si'>4 <sib sib'> <sol sol'>} |
-  \t {<fad fad'>8 si dod} \t {si fad' \ottava #1 dod'}
-  si16 fad' dod' fad, si, dod fad, dod |
+  <si mi sold si>2.(\arpeggio -\dyn "f_dolce espr."
+  <sib sib'>4 <sol sol'>) |
+  \t {r <si mi sold si>( <sib sib'>} <sol sol'>-- <fad fad'>--) |
+  r8 <si si'>4.(~ \t {<si si'>4 <sib sib'> <sol sol'>} |
+  \t {<fad fad'>8) si( dod} \t {si fad' \ottava #1 dod'}
+  si16 fad' dod' fad, si, dod fad, dod) |
   \ottava #0
-  \t {<fad, red'>8 la si} \t {fad' red si'}
-  la16 dod mid dod la red, si fad |
-  <re re'> sol si dod re sol si dod
-  \t {re8 la fa} \t {si, fad red} |
-  \t {<re re'> fad si} re16 fad lad do
-  \t {sol'!8 do, fad,} lad16 re, fad fad, |
+  \t {<fad, red'>8( la si} \t {fad' red si'}
+  la16 dod mid dod la red, si fad) |
+  <re re'>( sol si dod re sol si dod)
+  \t {re8( la fa} \t {si, fad red)} |
+  \t {<re re'>( fad si} re16 fad lad do
+  \t {sol'!8) do, fad,} lad16 re, fad fad, |
   \slashStem \graceNotes \lightBeams {
-  si,32\laissezVibrer mi sold si mi sold si si} si'2.-.--\laissezVibrer |
+  si,32(\laissezVibrer mi sold si mi sold si si} si'2.)-.--\laissezVibrer |
   R2*3
-  r4 \stemUp sol,,! <si, red fa!>8 \mg do \md \stemNeutral <sold si re mi!>4 |
-  <si dod mi sol lad> <lad'' sold'>->--(_\ff <la sol'>->-- <fad mi'>->--) |
+  r4 \stemUp sol,,! <si, red fa!>8 \mg do \md \stemNeutral <sold si re mi!>4-- |
+  <si dod mi sol lad>-- <lad'' sold'>->--(_\ff <la sol'>->-- <fad mi'>->--) |
   <lad sold'>4.->--( <la sol'>8) \t {<fad mi'>4->--( <fa mib'>-- <la sol'>--)} |
   <mi re'>->-- <lad sold'>8.->-- <la sol'>16->--~
   <la sol'>8 <fad mi'>->--~ <fad mi'>16 <fa mib'>8.->-- |
@@ -74,8 +74,8 @@ PianoMd = \relative do' {
   mi,8( fad la sib re red4) mi,8( |
   fad la sib re4) mi,8( fa la |
   si4)-\dyncresc "poco a poco cresc." \clef treble
-  re?8 mib fa la4 re,8 |
-  mib8 si'4 \t {fa16 re' fa} <fa la>8( <re dod'>4->) <fa la>8( |
+  re?8( mib fa la4) re,8( |
+  mib8 si'4) \t {fa16( re' fa)} <fa la>8( <re dod'>4->) <fa la>8( |
   <re dod'>4->) <fa la>8( <re dod'>)->~
   <re dod'>8. <si re mib fa la>16->~ <si re mib fa la>4 |
 
@@ -127,25 +127,26 @@ PianoMd = \relative do' {
   <lad lad'>\noBeam <si si'>\noBeam <sid sid'> |
 
   %%% Plus large %%%
-  <dod fad lad dod>2\arpeggio <do do'>4 <la la'> |
-  \t {r <dod fad lad dod> <do do'>} \t {<la la'>2 <do re fad la do>4} |
-  <sold dod mid sold>2 <sol sol'>4 <mi mi'> |
-  \t {r <sold sold'> <sol sol'>} <mi mi'> <mib mib'> |
-  \t {<sold dod mid sold> <sol sol'> <mi mi'>} \t {<mib mib'> <si si'> <sol sol'>} |
-  r4 \ottava #1 \pl <sol' re' la'>2.\laissezVibrer _\dyn "(sans_dureté)"
-  <mi'' fa lab do?>\laissezVibrer | \ottava #0
+  <dod fad lad dod>2(\arpeggio <do do'>4 <la la'>) |
+  \t {r <dod fad lad dod>( <do do'>} \t {<la la'>2) <do re fad la do>4} |
+  <sold dod mid sold>2( <sol sol'>4 <mi mi'>) |
+  \t {r <sold sold'>( <sol sol'>} <mi mi'> <mib mib'>) |
+  \t {<sold dod mid sold>( <sol sol'> <mi mi'>)}
+  \t {<mib mib'>( <si si'> <sol sol'>)} |
+  r4 \ottava #1 \pl <sol' re' la'>2.->\laissezVibrer _\dyn "(sans_dureté)"
+  <mi'' fa lab do?>->\laissezVibrer | \ottava #0
 
   %%% Tempo primo %%%
   r2 r4 r8. re,32( fad) |
   \pl {<sib,, re>1-\dyn "pp_très clair" <sib re>2
   r4 <sib re>2--( <mi, sib' re>-- <mi sib' re>--) s4}
-  { la'2 sol8 la4.~ la4 \t {re8 fad sol,}
-  la2 re4~ re8 fad~ \t {fad do' sol,} la2~ \oneVoice la4}
+  { la'2( sol8 la4.)~ la4 \t {re8( fad sol,)}
+  la2 re4--~ re8 fad--~ \t {fad( do' sol,} la2)~ \oneVoice la4}
   r4 r r8. re32( fad) |
   \pl fad,1-- -\dyn "p_toujours très clair"
   {dod'2( mi4 fa)}
   r \pl {s4 <sol, la>2-- <do, mib sol la>-- <si mi la>--}
-  {dod'4 mi fa~ \t {fa mi do} \t {dod mi fa}}
+  {dod'4( mi fa~ \t {fa mi do} \t {dod mi fa)}}
   la2. r4 |
   r4 \ottava #1 \pl {<sol, dod fad>2.~<sol dod fad>1\laissezVibrer}
   {<sib' mi lab do!>2.~ <sib mi lab do>1\laissezVibrer} \ottava #0
@@ -171,25 +172,25 @@ PianoMg = \relative do {
   <sol si lad'>--( q--~ q q--) |
   \clef bass
   <mib la re>--( q--~ q q--)~ q |
-  mib <sib mib> |
+  mib--( <sib mib>--) |
 
   %%% Tempo giusto %%%
-  <\whiteNote fa, fa'>4. do''8 \t {fa, do' la'~} |
-  la mib' \t {fa, la do,} |
-  fa,4-- fa,--\laissezVibrer \t {fa''8 do' mib~} \t {mib la, do,} |
-  \t {fa, do' la'} \t {fa do' mib} sol-. mib-. la,-. do,-. |
-  fa,?16 do' sol' fa do' sol' do, fa \t {sol8 do, fa,} \t {sol do, fa} |
-  fa,16 do' la' fa do' la' mib sol \t {la8 do, fa,} \t {la mib do} |
-  \t {fa, do' sol'} \t {fa do' la'} mib16 sol do, fa, fa sol mib do |
-  fa, mi' do lab' \t {fa8 do' lab} solb'16 do, mi lab, \t {fa8 mi do} |
+  <\whiteNote fa, fa'>4. do''8 \t {fa,( do' la'~} |
+  la mib') \t {fa,( la do,)} |
+  fa,4-- fa,--\laissezVibrer \t {fa''8( do' mib~} \t {mib la, do,)} |
+  \t {fa,( do' la'} \t {fa do' mib)} sol-.( mib-. la,-. do,-.) |
+  fa,?16( do' sol' fa do' sol' do, fa \t {sol8 do, fa,} \t {sol do, fa)} |
+  fa,16( do' la' fa do' la' mib sol) \t {la8( do, fa,} \t {la mib do)} |
+  \t {fa,( do' sol'} \t {fa do' la'} mib16 sol do, fa, fa sol mib do) |
+  fa,( mi' do lab' \t {fa8 do' lab} solb'16 do, mi lab, \t {fa8 mi do)} |
   \slashStem \graceNote <fa,, fa'>4 <fa fa'>2.\laissezVibrer |
   R2*3
   r4 \stemDown \md <sold'' si re>\f fad8 \mg <si, reb fa> \stemNeutral <do mib>4 |
-  \t {fa,16->_\f do' sol'} \t {dod, fad sold} fa,8-> \t {do'16 fa la}
-  mi' lad, dod fad, lad mi sold dod, |
-  \t {fa,-> do' sol'} \t {dod, fad lad} fa,8-> \t {lad'16 dod mi}
-  sold8--\cresc <fad, lad mi'>-- <red fad dod'>-- <dod mi lad>-- |
-  \t {fa,16->\ff do' la'} \t {fad lad dod} fa,,8.-> do''16(_\<
+  \t {fa,16->_\f( do' sol'} \t {dod, fad sold)} fa,8-> \t {do'16( fa la}
+  mi') lad, dod fad, lad mi sold dod, |
+  \t {fa,->( do' sol'} \t {dod, fad lad)} fa,8-> \t {lad'16( dod mi}
+  sold8)--\cresc <fad, lad mi'>-- <red fad dod'>-- <dod mi lad>-- |
+  \t {fa,16(->\ff do' la'} \t {fad lad dod)} fa,,8.-> do''16(_\<
   fad, dod) mid'(-> lad, fad) la'(-> mi lad,) |
   <fa,, fa'>4--(_\dyn "p_sub." <fa fa'>2--) <fa fa'>4--( |
   <fa fa'>2--) <fa fa'>4--( <fa fa'>2--) |
@@ -201,9 +202,9 @@ PianoMg = \relative do {
   \pl {fa1_\ppp fa} {fa'4-- fa2.-- fa4-- fa2.--} |
   <fa, fa'>1--~_"(s'élevant)" <fa fa'> R1*4
   sol1~_\dyn "ppp_profond" sol\laissezVibrer R1*2
-  <reb' lab' fa'>2\laissezVibrer fa'8 sol lad si |
-  re4 fa,8 sol si re red4 |
-  <reb,, lab' fa'>8 sol' si re
+  <reb' lab' fa'>2\laissezVibrer fa'8( sol lad si |
+  re4) fa,8( sol si re red4) |
+  <reb,, lab' fa'>8( sol' si re)
   <fa, red'>--( <sol si>--) <reb si'>--( <fa sol>--) |
 
   %%% Risoluto %%%
@@ -269,13 +270,13 @@ PianoMg = \relative do {
   <mi, mi'>8.--( <mib mib'>--) |
 
   %%% Plus large %%%
-  \t {re,8\f la'! fad'} \t {re la'! do!}
+  \t {re,8(\f la'! fad'} \t {re la'! do!)}
   mi--( la,-- mi-- la,--) |
-  re,4--( re,--) \t {la''8 fad' la} \t {do? mi la,} |
-  \t {re,, la' mi'?} \t {re fad la} do? la re, la |
-  re, la' re fad \t {re la' do} \t {la do mi} |
-  sol!16 mi do la do la fad mi
-  \t {la8 fad do} <re, dod'> la' |
+  re,4--( re,--) \t {la''8( fad' la} \t {do? mi la,)} |
+  \t {re,,( la' mi'?} \t {re fad la)} do?( la re, la) |
+  re,( la' re fad) \t {re( la' do)} \t {la( do mi)} |
+  sol!16( mi do la do la fad mi
+  \t {la8 fad do} <re, dod'>-- la'--) |
   \pl <do,, do'>4*4--\laissezVibrer do''--\laissezVibrer |
 
   %%% Tempo primo %%%
