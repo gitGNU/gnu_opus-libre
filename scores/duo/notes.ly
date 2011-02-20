@@ -1,13 +1,82 @@
 %-- Duo -- notes.ly -----------------------------------------------%
 % (c) 2003-2011 Valentin Villenave <valentin@villenave.net>
 
-Date = "octobre 2003"
-
 \language "italiano"
+
+UnTitre = "I."
+DeuxTitre = "II."
+TroisTitre = "II½."
+
+FluteUnInstr = "Flûte 1"
+FluteDeuxInstr = "Flûte 2"
+
+\header {
+  title = \markup {
+    \vconcat
+    \center-column {
+      \larger "Deux petits duos"
+      \smaller "(et demi)"
+      \vspace #.5
+    }
+  }
+  subtitle = "pour deux flûtes"
+  composer = "Valentin Villenave"
+  date = "automne 2003"
+}
+
+\paper {
+  first-page-number = #-1
+  ragged-last-bottom = ##f
+  system-separator-markup = \slashSeparator
+}
+
+\pointAndClickOff
+\pageBreak
+\markup \fill-page {
+  ""
+  \fill-line {
+    \override #'(box-padding . 6)
+    \box \center-column {
+      \line {
+        Copyright & copyleft © Valentin Villenave, 2003-2011.
+      }
+      \line {
+        \with-url #"http://valentin.villenave.net"
+        \typewriter http://valentin.villenave.net
+      }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \justify {
+        Cette partition est publiée suivant les termes de la licence
+        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
+        \bold { Creative Commons, Paternité, Partage des
+        conditions initiales à \concat {l'identique \medium . }}
+        Vous pouvez la copier, la modifier et la jouer \italic librement
+        sans contrevenir au droit d'auteur, à condition de respecter les
+        termes de la licence (notamment en veillant à mentionner le nom
+        de l'auteur et l'adresse web d'origine).
+      }
+      \vspace #.5
+      \line {
+        Gravure réalisée au moyen du logiciel libre
+        \with-url #"http://www.LilyPond.org"
+        \concat {\bold "GNU LilyPond" ,}
+        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) }
+      }
+    }
+  }
+}
+\pageBreak
+
+#(set-global-staff-size 19)
 
 UnFluteUn =
 \relative do' {
-  \time 2/2
+  %% This isn't an actual 2/2 meter.
+  \once \override Score.TimeSignature #'stencil = #(lambda (grob)
+      (grob-interpret-markup grob
+        (make-override-markup '(baseline-skip . 0)
+          (make-number-markup (make-column-markup (list "2" "2"))))))
   \tempo \markup {
     \concat {Moderato \medium \italic ,}
     \medium \indic \line {avec souplesse}
@@ -85,28 +154,31 @@ UnFluteUn =
   \t {do4(\p re do)} \t {re( sol, la')} |
 
   % Page 5
-  r8 mi'16 mi red red do? do
+  r8 mi'16(\f\> mi red red do? do
   dod dod sold sold la la fa? fa |
-  mi dod do fa sol fa sib mi,
-  si do sold dod sol fa re si' |
-  r2 do2~ | \t {do4 sib sol~} sol2~ |
-  sol2. r4 | r2 r4 do,~ |
+  mi-.)-\dyn "p_scherzando" dod-. do-. fa-.
+  sol-. fa-. sib-. mi,-.
+  si-. do-. sold-. dod-.
+  sol-. fa-. re-. si'-. |
+  r2 do2~\mp -"dolce espr." | \t {do4( sib sol)~} sol2~ |
+  sol2. r4 | r2 r4 do,~-\dyn "p_legato" |
   \t {do re do} \t {re do re} |
   \t {do re do} \t {re do re} |
   \t {do re do} \t {re do re} |
 
   % Page 6
-  do2. r4 | r lab' sol4. fa8~ |
-  fa2. sol4 | si1~ si4 re, r2 |
-  \t {do4 re sol} fa8 do lab' si |
-  mi4 r8 sol~ sol fa sib4~ |
-  \t {sib do,, si'} sib'4. si,16 sib' |
-  la'8 sib,4 si,8 r2 |
-  \tt {sib'16 do sib do sib} mi, sib' do sib
-  \tt {sol sib sol sib sol} dod, mi fa sol |
-  \t {si,8 do si} lab16 si lab sol
-  \t {fa8 sol fa} re fa |
-  r2 do fa2. r4 sol1\fermata \bar "|."
+  do2.-- r4 | r lab'(\mp -"espr." sol4. fa8~ |
+  fa2. sol4 | si1~ si4 re,) r2 |
+  \t {do4( re sol)} fa8(\< do) lab' si |
+  mi4--\! r8 sol~( sol fa sib4~) |
+  \t {sib do,,(\< si')} sib'4.\!
+  \longHairpin si,16\< sib' |
+  la'8\!( sib,4) si,8 r2 |
+  \tt {sib'16(\f do sib do sib)} mi,( sib') do sib
+  \tt {sol( sib sol sib sol)} dod,( mi) fa sol |
+  \t {si,8\>( do si} lab16 si lab sol)
+  \t {fa8( sol fa)} re-- fa--\! |
+  r2 do(\mp fa2.) r4 sol1--\p\fermata \bar "|."
 }
 
 UnFluteDeux =
@@ -187,36 +259,39 @@ UnFluteDeux =
   sold sold fad fad red red re re)\! |
 
   % Page 5
-  r8 red'16 red mi mi red red
+  r8 red'16(\f\> red mi mi red red
   do do la la fad fad re re |
-  dod mi fa do fa sol mi sib'
-  do, si dod sold fa sol si re, |
-  r2 do4( re fa1) |
-  \t {do4 re do} \t {re do re}
+  dod-.)-\dyn "p_scherzando" mi-. fa-. do-.
+  fa-. sol-. mi-. sib'-.
+  do,-. si-. dod-. sold-.
+  fa-. sol-. si-. re,-. |
+  r2 do4(\mp re fa1--) |
+  \t {do4-\dyn "p_legato" re do} \t {re do re}
   \t {do re do} \t {re do re} |
-  do2. r4 | r2 fa4. sol8~ sol2. r4 |
+  do2.-- r4 | r2 fa4.(\mp sol8)~ sol2. r4 |
 
   % Page 6
-  \t {r re do} \t {re do re} |
+  \t {r re-\dyn "p_legato" do} \t {re do re} |
   \t {do re do} \t {re do re} |
   \t {do re do} \t {re do re} |
   \t {do re do} \t {re do re} |
-  \t {do lab'( sol} \t {fa lab do} |
+  \t {do lab'(\mp -"espr." sol} \t {fa lab do} |
   si2.) r4 |
-  \t {do,8 re fa} \t {sol lab si} mi4 r8 si~ |
-  si4 \t {sib' do,,8~}
-  \t {do si' do,} \t {si' do, si'} |
-  sib' si,4 do,8 r4 \t {do''8 sib sol} |
-  fa16 sol fa sol \tt {fa sol fa sol fa}
-  mi fa mi fa \tt {mi fa mi fa mi} |
-  dod mi dod do \t {si8 do si}
-  lab sol \t {fa re do} |
-  r2 r4 re~ re2. r4 | do1\fermata \bar "|."
+  \t {do,8(\< re) fa} \t {sol( lab) si} mi4--\! r8 si~ |
+  si4(\< \t {sib')\! do,,8~}
+  \t {do si' do,} \t {si' \longHairpin do,\< si'} |
+  sib'(\! si,4) do,8 r4 \t {do''8\f( sib sol)} |
+  fa16( sol) fa sol \tt {fa( sol fa sol fa)}
+  mi( fa) mi fa \tt {mi( fa mi fa mi)} |
+  dod(\> mi) dod do \t {si8( do si)}
+  lab-- sol-- \t {fa( re do\!)} |
+  r2 r4 re--\mp~ re2. r4 | do1--\p\fermata \bar "|."
 }
 
 DeuxFluteUn =
 \relative do' {
   \time 3/4
+  \tempo "Andantino" 2. = 48
   do2.\mp~ do2 r4 R2.
   do4.\>( re sol2\!-"(bref)")\fermata r4 |
   R2.
@@ -291,7 +366,7 @@ DeuxFluteUn =
   \t {sol( do,) fa,} \t {do'-.\< sol'-. si-.} red-.\! r |
   \t {fa,,-.\< do'-. sol'-.} mib'->\! mib,,-. fa''-> fad,-. |
   la'4->-- \t {do,,,8(\p\< fa la} \t {sib reb mib} |
-  sol-.->)\! r r4 sol16(-> la re la |
+  sol-.->)\! r r4 sol16(->\f la re la |
   re sol, la re sol,8) r r4 |
 
   % Page 7
@@ -405,185 +480,195 @@ DeuxFluteDeux =
 TroisFluteUn =
 \relative do' {
   \time 2/4
+  \tempo "Vivo" 2 = 84
   \partial 4
-  do8 re
-  \t {fad16 sol fad} \t {sol fad sol}
+  do8-.\mf re-.
+  \t {fad16->\sfp\> sol fad} \t {sol fad sol}
   \t {fad sol fad} \t {sol fad sol~} |
-  sol8 r \t {do,16 do do} \t {re re re} |
-  fad2~ fad4. r8 |
-  do re fad sol |
-  \t {do,16 re fad} \t {sol fad sol}
-  \t {fad re do} \t {re do re} |
-  do8 r \t {do16 re fad} \t {sol fad re} |
-  do re fad sol \t {do, re fad} \t {sol fad re} |
-  do re do re do re do re |
+  sol8\! r \t {do,16\< do do} \t {re re re} |
+  fad2~\!-"ten." fad4. r8 |
+  do-. re-. fad-. sol-. |
+  \t {do,16(->\< re fad} \t {sol fad sol)}
+  \t {fad(\> re do} \t {re do re)} |
+  do8--\! r
+  \t {do16(\< re fad} \t {sol\> fad re)} |
+  do-.\! re-. fad-. sol-.
+  \t {do,(\< re fad} \t {sol\> fad re)} |
+  do--\! re-- do-- re-- do-"simile" re do re |
   \time 3/4
-  \t {do re do} \t {re do re}
+  \t {do-"legato" re do} \t {re do re}
   \t {do re do} \t {re do re} r4 |
   \time 3/8
-  do32 re fad sol
-  \ttt {la re, sol do re fad} sol8 |
+  do32(\< re fad sol
+  \ttt {la re, sol do re fad} sol8-.->)-\dyn "sffz" |
 
   \time 3/4
-  \t {sol16 la dod} re8
-  \t {sol,16 la dod} re8
-  \t {sol,16 la dod} re8 |
+  \t {sol16(\f la) dod} re8--
+  \t {sol,16( la) dod} re8--
+  \t {sol,16( la) dod} re8-- |
   \time 2/4
-  \t {sol,16 la dod} \t {re dod re}
-  \t {fad re dod} \t {re dod re} |
-  \t {fad re dod} \t {re dod re}
-  \t {fad re dod} \t {la mi dod} |
+  \t {sol,16( la dod} \t {re dod re)}
+  \t {fad->( re dod} \t {re dod re)} |
+  \t {fad->( re dod} \t {re dod re)}
+  \t {fad->( re dod} \t {la mi dod)} |
   \time 3/4
-  \t {fad, dod' si} \t {dod si dod}
-  \t {sol' dod, si} \t {dod si dod}
-  \t {sol' dod, si} \t {dod si dod} |
+  \t {fad,(\mp dod' si} \t {dod si dod)}
+  \t {sol'( dod, si} \t {dod si dod)}
+  \t {sol'( dod, si} \t {dod si dod)} |
   \time 2/4
-  \t {fad, sol si} dod8
-  \t {fad,16 si dod} mi8 |
-  \t {fad,16 sol si} \t {dod mi fad}
-  \t {fad, si dod} \t {mi sold red'} |
-  \t {dod sold fad} r8
-  \t {la16 mi re} r8
+  \t {fad,(\cresc sol) si} dod8--
+  \t {fad,16( si) dod} mi8-- |
+  \t {fad,16(\< sol si} \t {dod mi fad)\!}
+  \t {fad,(\< si dod} \t {mi sold red')\!} |
+  \t {dod(\pp sold fad)} r8
+  \t {la16( mi re)} r8
   \time 3/8
-  \t {fa16 do sol} r8 \t {sib16 fa mib} |
+  \t {fa16( do sol)} r8
+  \t {sib16(-\dyn "f_sub." fa mib} |
 
   \time 2/4
-  do8 r \t {do16 re do} \t {re do re} |
-  do8 r \t {do16 re do} \t {re do re} |
-  do re do re \t {sol8 lab do} | re4. r8 |
-  \t {do,16 re do} \t {re do re}
-  \t {do re sol} \t {lab sol re} |
-  \t {sol lab do} \t {re do lab}
-  \t {sol re do} \t {re do re} |
-  do8 r \t {do' re fa} | sib4. r8 |
-  \t {do,16 re fa} sib8
-  \t {do,16 fa sib} mib8 |
-  \t {do,16 fa sib} \t {mib sib fa}
-  \t {do sol re} \t {sol do fa} |
-  \t {sib mib sib} \t {fa do fa}
-  \t {sib mib sib} \t {fa do sol'} | lab4. r8 |
-  \t {re16 la mi} \t {si fad mi'}
-  \t {re' la mi} \t {si mi la} |
-  re8 r \t {dod,,16 re fad} \t {sold si dod} |
-  mi8 r dod,16 sol' si dod |
+  do8->) r \t {do16(\p re do} \t {re do re} |
+  do8) r \t {do16( re do} \t {re do re)} |
+  do-- re-- do-- re--
+  \t {sol8(-"espr."-\mf\< lab do} |
+  re4.--\!)-"ten." r8 |
+  \t {do,16\p( re do} \t {re do re)}
+  \t {do( re sol} \t {lab sol re)} |
+  \t {sol(\< lab do} \t {re\> do lab)}
+  \t {sol(\! re do} \t {re do re)} |
+  do8-- r \t {do'(\mf re fa} | sib4.) r8 |
+  \t {do,16\mp( re) fa} sib8--
+  \t {do,16( fa) sib} mib8-- |
+  \t {do,16(\< fa sib} \t {mib sib fa)}
+  \t {do( sol re)} \t {sol( do) fa} |
+  \t {sib(\f mib) sib} \t {fa( do) fa}
+  \t {sib( mib) sib} \t {fa( do) sol'} |
+  lab4.-- r8 |
+  \t {re16( la) mi} \t {si( fad) mi'}
+  \t {re'(\< la) mi} \t {si( mi) la} |
+  re8--\! r
+  \t {dod,,16(\mp\< re) fad} \t {sold( si) dod} |
+  mi8--\! r dod,16--\< sol'-- si-- dod-- |
 
   \time 3/4
-  \t {sol'8 la dod} re2~ |
+  \t {sol'8(-\dyn "p_sub."-"dolce" la dod} re2)-"ten."~ |
   \time 2/4
-  re8 r fad,,4 |
+  re8 r fad,,4-- |
   \time 3/4
-  \t {sol16 dod si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod} |
+  \t {sol16(--\pp dod si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)} |
   \time 2/4
-  \t {fad, dod' si} \t {dod si dod}
-  \t {sol' la dod} \t {re dod re} |
-  la'4 r8 re,,16 la' |
-  \t {sol, re' dod'} \t {re dod re}
-  sol,, re' la' re |
-  si' mi, fad dod si fad sol,8 |
+  \t {fad,(-- dod' si} \t {dod si dod)}
+  \t {sol'(\< la dod} \t {re) dod( re} |
+  la'4)\!-- r8 re,,16-.\pp la'-. |
+  \t {sol,( re' dod'} \t {re dod re)}
+  sol,,( re') la'-. re-. |
+  si'(\mp-"gracieux" mi, fad dod) si( fad) sol,8-- |
   \time 3/4
-  \t {si''16 mi, la,} \t {mi' la, re,}
-  \t {la' re, sol,} \t {re' sol, re'}
-  \t {fad re sol,} \t {re' sol, re'} |
+  \t {si''16(\> mi, la,)} \t {mi'( la, re,)}
+  \t {la'( re, sol,} \t {re' sol, re')\!}
+  \t {fad( re sol,} \t {re' sol, re')} |
   \time 2/4
-  fad,4 \t {do16 re do} \t {re do re} |
+  fad,4-- \t {do16(\p re do} \t {re do re)} |
   \time 3/4
-  \t {do re fad} sol8~ sol2 |
-  \t {do,16 re fad} \t {sol do, re}
-  \t {do re do} \t {re do re}
-  \t {do re do} \t {re do re} |
+  \t {do(\< re) fad} sol8--\mf~-"ten." sol2 |
+  \t {do,16(\< re fad} \t {sol\! do,-\dyn "p_al fine" re)}
+  \t {do( re do} \t {re do re)}
+  \t {do( re do} \t {re do re)} |
   \time 2/4
-  do re do re do re do re |
-  \t {do re do} \t {re do re}
-  do re do re |
-  \t {do re fad} sol8 r4 |
+  do-- re-- do-- re-- do-"simile" re do re |
+  \t {do( re do} \t {re do re)}
+  do-- re-- do-- re-- |
+  \t {do(-"(senza cresc.)" re) fad} sol8-. r4 |
   \bar "|."
 }
 
 TroisFluteDeux =
 \relative do' {
-  \t {do16 do do} \t {re re re}
-  fad2~ fad8 r do re |
-  \t {fad16 sol fad} \t {sol fad sol}
+  \t {do16\< do do} \t {re re re}
+  fad2\mf -"ten."~ fad8 r do-. re-. |
+  \t {fad16->\sfp\> sol fad} \t {sol fad sol}
   \t {fad sol fad} \t {sol fad sol~} |
-  sol4. r8 |
-  \t {do,16 re fad} \t {sol fad sol}
-  \t {fad re do} \t {re do re} |
-  do8 r re sol |
-  \t {do,16 re fad} \t {sol fad re} do8 r |
-  \t {do16 re fad} \t {sol fad re} do8 r |
-  \t {do16 re do} \t {re do re}
-  \t {do re do} \t {re do re} |
-  do2 r4 |
-  \t {re16 do re} do32 fad la re sol8 |
+  sol4.\!-"ten." r8 |
+  \t {do,16->(\< re fad} \t {sol fad sol)}
+  \t {fad(\> re do} \t {re do re)} |
+  do8-- r re-. sol-. |
+  \t {do,16(\< re fad} \t {sol\> fad re)} do8--\! r |
+  \t {do16(\< re fad} \t {sol\> fad re)} do8--\! r |
+  \t {do16( re do} \t {re do re)}
+  \t {do( re do} \t {re do re)} |
+  do2-- -"ten." r4 |
+  \t {re16(\< do re} do32 fad la re sol8-.->)-\dyn "sffz" |
 
-  \t {sol,16 dod si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod} |
-  \t {sol si dod} mi8
-  \t {sol,16 si dod} mi8 |
-  \t {sol,16 si dod} mi8
-  \t {sol,16 si dod} \t {mi sol la} |
-  \t {mi la dod} re8
-  \t {mi,16 la dod} re8
-  \t {mi,16 la dod} re8 |
-  \t {mi,16 la dod} \t {re dod re}
-  \t {fad re dod} \t {re dod re} |
-  \t {la' re, dod} \t {re dod re}
-  \t {sold fad re} \t {dod la mi} |
-  si8 \t {sol16 do fa}
-  r8 \t {mib,16 lab reb} |
-  r8 \t {re,16 mi la} r8 |
+  \t {sol,16(\mp dod si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)} |
+  \t {sol(\cresc si) dod} mi8--
+  \t {sol,16( si) dod} mi8-- |
+  \t {sol,16( si) dod} mi8--
+  \t {sol,16(\< si dod} \t {mi sol la)} |
+  \t {mi(\f la) dod} re8--
+  \t {mi,16( la) dod} re8--
+  \t {mi,16( la) dod} re8-- |
+  \t {mi,16( la dod} \t {re dod re)}
+  \t {fad->( re dod} \t {re dod re)} |
+  \t {la'->( re, dod} \t {re dod re)}
+  \t {sold(\> fad re} \t {dod la mi)} |
+  si8--\! \t {sol16(\pp do fa)}
+  r8 \t {mib,16( lab reb)} |
+  r8 \t {re,16( mi la)} r8 |
 
-  \t {do,16 re do} \t {re do re} do8 r |
-  \t {do16 re do} \t {re do re}
-  do re do re |
-  \t {do re do} \t {re do re}
-  \t {do re do} \t {re do re} |
-  \t {do re do} \t {re do re}
-  \t {do re sol} \t {lab sol re} |
-  \t {sol lab do} re8
-  \t {sol,16 lab do} re8~ |
-  re4. r8 |
-  \t {sol,16 lab do} \t {re do lab}
-  \t {sol re do} \t {re sol lab} |
-  \t {sol lab do} \t {re do lab}
-  \t {sol re do} \t {re sol lab} |
-  \t {sol lab do} \t {re do lab}
-  \t {sol do re} \t {fa do sol} |
-  re8 r re16 lab' re lab' |
-  re lab re, sol, re' lab' re sib |
-  \t {re mib re} \t {sib lab sib}
-  \t {re mib re} \t {sib lab sib} |
-  lab re, sold, re sold re' sold8 |
-  \t {dod,,16 re fad} \t {sold fad si}
-  mi si mi la |
-  \t {dod,, re fad} \t {si fad si}
-  \t {mi si dod} \t {mi la re,} |
+  \t {do,16->(\p re do} \t {re do re)} do8-- r |
+  \t {do16( re do} \t {re do re)}
+  do-- re-- do-- re-- |
+  \t {do( re do} \t {re do re)}
+  \t {do( re do} \t {re do re)} |
+  \t {do( re do} \t {re do re)}
+  \t {do(\< re sol} \t {lab\> sol re)} |
+  \t {sol\mf(-"en dehors" lab) do} re8--
+  \t {sol,16( lab) do} re8~-- |
+  re4.-"ten." r8 |
+  \t {sol,16(\< lab do} \t {re\> do lab)}
+  \t {sol(\! re do} \t {re sol lab)} |
+  \t {sol(\< lab) do} \t {re\>( do) lab}
+  \t {sol(\! re do} \t {re sol lab)} |
+  \t {sol( lab) do} \t {re( do) lab}
+  \t {sol(\< do) re} \t {fa(\> do) sol} |
+  re8--\! r re16--\< lab'-- re-- lab'-- |
+  re--\! lab-. re,-. sol,-.
+  re'--\< lab'-- re-- sib-- |
+  \t {re(\f mib) re(} \t {sib) lab( sib)}
+  \t {re( mib) re(} \t {sib) lab( sib)} |
+  lab-- re,-. sold,-. re-. sold-. re'-. sold8-- |
+  \t {dod,,16(\mp\< re) fad} \t {sold( fad) si}
+  mi--\! si-. mi-. la-. |
+  \t {dod,,(\mp\< re fad} \t {si) fad( si}
+  \t {mi)\! si( dod} \t {mi la) re,} |
 
-  \t {sol, dod si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod} |
-  \t {fad, dod' si} \t {dod si dod}
-  \t {mi dod si} \t {dod si dod} |
-  \t {sol'8 la dod} re2 |
-  r8 fad,,16 si mi si dod si |
-  \t {sol re' la'} \t {re, la' re,}
-  \t {sol, re' dod'} \t {re dod re} |
-  la'4 r8 \t {dod,16 la re,} |
-  \t {sol, re' la'} \t {re, la' re,}
-  \t {mi' la, re,} \t {la' re, sol,} |
-  \t {do, sol' re'} \t {sol, re' sol,}
-  \t {do, sol' re'} \t {sol, re' sol,}
-  do, sol' la' re, |
-  \t {do, sol' do,} \t {sol' do, sol'} re4 |
-  \t  {do16 re do} \t {re fad re}
-  \t {do re do} \t {re do re}
-  \t {do re do} \t {re do re} |
-  \t {do re fad} sol8~ sol2 |
-  \t {do,16 re do} \t {re do re}
-  \t {do re do} \t {re do re} |
-  do re do re \t {do re do} \t {re do re} |
-  \t {do re sol} fad8 r4
+  \t {sol,--\pp( dod si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)} |
+  \t {fad,--( dod' si} \t {dod si dod)}
+  \t {mi( dod si} \t {dod si dod)} |
+  \t {sol'8(-\dyn "p_dolce" la dod} re2)-"ten." |
+  r8 fad,,16--\pp si-- mi( si) dod-. si-. |
+  \t {sol( re' la'} \t {re, la' re,)}
+  \t {sol,(\< re' dod'} \t {re) dod( re} |
+  la'4)\mp r8 \t {dod,16(\> la re,)} |
+  \t {sol,(\pp re' la'} \t {re, la' re,)}
+  \t {mi'(\> la, re,)} \t {la'( re, sol,)} |
+  \t {do,(\! sol' re'} \t {sol, re' sol,)}
+  \t {do,( sol' re'} \t {sol, re' sol,)}
+  do,( sol') la'-. re,-. |
+  \t {do,( sol' do,} \t {sol' do, sol')} re4-- |
+  \t  {do16( re do\<} \t {re fad\! re)}
+  \t {do( re do} \t {re do re)}
+  \t {do( re do} \t {re do re)} |
+  \t {do(\< re) fad} sol8\mf-"ten."~ sol2 |
+  \t {do,16(-\dyn "p_al fine" re do} \t {re do re)}
+  \t {do( re do} \t {re do re)} |
+  do-- re-- do-- re--
+  \t {do( re do} \t {re do re)} |
+  \t {do(-"(senza cresc.)" re) sol} fad8-. r4
 }
