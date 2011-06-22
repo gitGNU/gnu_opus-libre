@@ -176,3 +176,7 @@ $x
 \revert Beam #'transparent
 \revert Stem #'transparent
 \revert Dots #'transparent #}))
+
+(define smart
+ (define-music-function (parser location x) (ly:music?)
+   (naturalize m))
