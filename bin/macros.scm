@@ -179,4 +179,4 @@ $x
 
 (define smart
  (define-music-function (parser location x) (ly:music?)
-   (naturalize m))
+   (naturalize m)))
