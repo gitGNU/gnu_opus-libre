@@ -52,4 +52,6 @@
                 ((baseMoment . (4 . 16))))
       ((2 . 8) .
                 ((baseMoment . (2 . 8))))
+      ((7 . 8) .
+                ((baseMoment . (4 . 8))))
     )))
