@@ -14,6 +14,7 @@ PianoInstr = "Piano"
   date = "printemps 2009"
 }
 
+#(set-global-staff-size 18)
 \paper {
   first-page-number = #-1
 %  min-systems-per-page = #4
@@ -26,7 +27,7 @@ PianoInstr = "Piano"
   \fill-line {
     ""
     \line \italic {
-      Pour la classe de M. Claude Lherminier.
+      Pour la classe de Claude Lherminier.
     }
   }
   ""
@@ -65,7 +66,7 @@ PianoInstr = "Piano"
 \pageBreak
 
 Mesures = {
-  \tempo 2 = 84
+  \tempo Deciso 2 = 84 ~ 92
   \time 2/2 s1*42 \bar "||"
   \tempo Sostenuto
   s1
@@ -108,7 +109,24 @@ Mesures = {
   \time 7/8 s1*7/8
   \time 3/2 s1. \bar "||"
   \tempo "Poco allargando"
-  \time 2/2 s1*42
+  \time 2/2 s1*24 \bar "||"
+  \tempo "Tempo I"
+  s1
+  \time 7/8 s1*7/8
+  \time 2/2 s1
+  \time 7/8 s1*7/8
+  \time 2/2 s1
+  \time 7/8 s1*7/8
+  \time 2/2 s1
+  \time 7/8 s1*7/4
+  \time 5/8 s1*5/8 \bar "||"
+  \time 2/2 s1*21 \bar "||"
+  s1*21 \bar "||"
+  s1
+  \time 7/8 s1*7/8
+  \time 2/2 s1
+  \time 7/8 s1*7/4
+  \bar "|."
  }
 
  Tuba =
@@ -198,5 +216,66 @@ Mesures = {
   la8 sol fad lab4 sol8 fa mi fad4 r |
 
   do1~ do2. r4 |
-  
+  R1*4
+  r4 fad' si dod~ |
+  dod fad2. |
+  fa2 mib4 reb |
+  mib sib2. |
+  sol1~ sol2. r4 |
+  R1*2
+  r2 sib2~ |
+  sib4 fa! sib do! |
+  fa2.~ \t {fa8 mi fa} |
+  mi2 re4 do~ |
+  do4. re8~ re2~ re2. r4 |
+  r2 r4 re, |
+  mi fa sol2 |
+  lab4 sol fa sol |
+  mib2 fad~ | fad2. r4 |
+  r4 fad8 mi re mi sib |
+  sol4 r r2 |
+  r4 fad'8 mi re mi sib |
+  sol sib reb do mib fad mi la |
+  si re fa2~ fa8~ |
+  fa fa, sib do fa2~ |
+  fa4 r r r8 |
+  solb,, sib re dod fa la lab |
+  sib lab solb lab mib |
+
+  mi si' do sol'~ sol2~ sol2. r4 |
+  r2 mib,4 sib' do sol'2.~ sol2. r4 |
+  mi,,4. fa8~ fa2~ |
+  fa4 r fa do' sol'2. fa,4~ |
+  fa2 sol~ sol2. r4 |
+  r8 sol' do re sol2~ sol2. r4 |
+  sol,,8 do re sol4 re,8 sol do | sol'2. r4 |
+  r2 r4 re, |
+  mi r8 fa r4 sol~ |
+  sol2. r4 |
+  fa2. r4 |
+  mi4. fa8~ fa mi fa sol |
+  la4. sol8 la sib do4~ |
+  do r mib,!2 |
+
+  <fa~ \parenthesize fa,>1 fa2. r4 |
+  R1 r2 solb4. lab8~ |
+  lab4 mib r8 fa4 solb8 |
+  lab4 solb8 fa mib fa sib, do~ |
+  do2. r4 | R1*2
+  r8 mib fa solb lab4 solb8 fa |
+  mib fa sib do~ do2 |
+  do,8 fa sib do~ do4 mib,8 sib' |
+  mib fa4 sib,8 do fa sib4 |
+
+  fa8 sib do fa4 mi sib8 |
+  do4 r r2 |
+  fa,8 sib do fa[ fa,] mi'[ fa mi |
+  sib do] solb2.~ solb4 fad si dod |
+  fad2. sol,4 | do! re sol2 |
+  fad8 dod si fad4 sold mib8 |
+  fa4 r r2 |
+  r4 sold,8 fad mi fad do |
+  re4 la'8 re sol, re' sol do, |
+  sol' do fa, do' fa sib, mib |
+  fa, sib do fa4 r |
 }
