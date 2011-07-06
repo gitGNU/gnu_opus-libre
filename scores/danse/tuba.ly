@@ -29,8 +29,9 @@ PianoInstr = "Piano"
   ""
   \fill-line {
     ""
-    \line \italic {
-      Pour la classe de Claude Lherminier.
+    \right-column \italic {
+      "Pour Camille, Cécilia, Raphaël et Clément,"
+      "ainsi que pour la classe de Claude Lherminier."
     }
   }
   ""
