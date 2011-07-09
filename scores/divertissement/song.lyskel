@@ -1,0 +1,6 @@
+\new StaffGroup <<
+  \newStaff $"ViolonUn"
+  \newStaff $"ViolonDeux"
+  \newStaff $"Alto"
+  \newStaff $"Violoncelle"
+>>
