@@ -69,18 +69,21 @@ Mesures = {
   \time 8/4 s1*2
   \time 2/4 s2
   \time 4/4 s1*8
-  \mark \default
+  \mark \default                %% 1 %%
   \time 5/4 s1*5/4*19
-  \mark \default s1*5/4
+  \mark \default s1*5/4         %% 2 %%
   \time 4/4 s1*11
-  \mark \default s1*10
+  \mark \default s1*8           %% 3 %%
+  \time 3/4 s2.
+  \time 4/4 s1
   \time 5/4 s1*5/4*3
   \tempo "Plus calme"
-  \mark \default
+  \mark \default                %% 4 %%
   \time 4/4 s1*3
+  \time 6/4 s1.*2
   \tempo "Mélancolique"
-  s1*31
-  \mark \default s1*12
+  \time 4/4 s1*31
+  \mark \default s1*12          %% 5 %%
   \time 11/8 s1*11/8
   \time 2/4 s2
   \time 4/4 s1*4
@@ -88,7 +91,7 @@ Mesures = {
   \time 4/4 s1*2
   \time 3/4 s2.
   \time 4/4 s1
-  \mark \default s1*2
+  \mark \default s1*2           %% 6 %%
   \time 5/4 s1*5/4
   \time 2/4 s2
   \time 4/4 s1*2
@@ -96,21 +99,23 @@ Mesures = {
   \tempo "Peu à peu au Tempo I"
   \time 3/4 s2.
   \time 4/4 s1*2
-  \mark \default s1*12
+  \mark \default s1*12          %% 7 %%
   \tempo "Plus vite"
-  \mark \default
+  \mark \default                %% 8 %%
   \time 3/4 s2.
   \time 5/4 s1*5/4
   \time 4/4 s1
   \time 3/4 s2.*2
   \time 5/4 s1*5/4*4
   \tempo "Tempo I"
-  \mark \default
-  \time 4/4 s1*11
+  \mark \default                %% 9 %%
+  \time 4/4 s1*7
+  \time 5/4 s1*5/4*2
+  \time 4/4 s1*2
   \time 3/4 s2.
   \time 2/8 s4
   \tempo "Presto"
-  \mark \default
+  \mark \default                %% 10 %%
   \time 9/8 s1*9/8
   \time 4/8 s2
   \time 6/8 s2.
@@ -141,7 +146,7 @@ Mesures = {
   \time 6/8 s2.
   \time 1/8 s8
   \time 2/8 s4*2
-  \mark \default
+  \mark \default                %% 11 %%
   \time 9/8 s1*9/8
   \time 10/8 s1*10/8
   \time 7/8 s1*7/8
@@ -157,7 +162,7 @@ Mesures = {
   \time 4/8 s2
   \time 7/8 s1*7/8
   \tempo "Tempo I"
-  \mark \default
+  \mark \default                %% 12 %%
   \time 5/4 s1*5/4
   \tempo "Vite"
   \time 4/4 s1*4
