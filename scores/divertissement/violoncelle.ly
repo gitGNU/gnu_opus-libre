@@ -5,64 +5,64 @@
 
 Violoncelle = \relative do' {
   \clef bass
-  do4 reb sib r8 fa? reb4 |
-  sol2~ sol~ sol~ sol | R2
-  r4 sol, r sol | r sol sol sol |
-  r <do,sol'> r <do sol'> |
-  <fa do'> r dod \t {dod dod8} |
-  sol'4 r sol r | sol sol sol2 |
-  <do,sol'>4 r <do sol'> r |
-  \t {r8 sol' re'} \t {la' re, la'}
-  \t {mi' si fad} \t {dod4 re8} |
+  do4--\ff\downbow reb--\downbow sib--\downbow r8 fa? reb4-.\upbow |
+  sol2~-- -"ten." sol~ sol~ sol | R2
+  r4 sol,--\mp r sol-- | r sol-- sol-- sol-- |
+  r <do,sol'>-- r <do sol'>-- |
+  <fa do'>-- r dod\p\<\upbow ( \t {dod dod8-.\!)} |
+  sol'4-- r sol-- r | sol--( sol--) sol2 |
+  <do,sol'>4-- r <do sol'>-- r |
+  \t {r8 sol'( re'} \t {la') re,(\< la')}
+  \t {mi'(\! si fad} \t {dod4) re8-.} |
 
   %%% 1 %%%
-  sol,4 lab fa r8 fa'? reb4 |
-  sol lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r2 |
-  sol4 lab fa r8 mib4 re8 |
-  sol,4 lab fa r8 do4 si'8 |
-  sol4 lab fa r8 do4 si'8 |
-  sol4 lab fa r8 do4 si'8 |
-  sol4 lab fa r8 mib reb4 |
-  sol4 lab fa r8 do4 si'8 |
-  sol4 lab fa r8 mib reb4 |
-  sol4 lab fa r8 do4 si'8 |
-  sol4 lab fa r8 fa re?4 |
+  sol,4--\downbow\f lab--\downbow fa--\downbow r8 fa'? reb4-.\upbow |
+  sol(-\dyn "p_sub." lab fa-.) r2 |
+  sol4( lab fa-.) r2 |
+  sol4( lab fa) r2 |
+  sol4( lab fa) r2 |
+  sol4( lab fa) r2 |
+  sol4( lab fa) r2 |
+  sol4( lab fa) r2 |
+  sol4( lab fa) r2 |
+  sol4(\cresc lab fa) r2 |
+  sol4( lab fa) r8 mib4--( re8) |
+  sol,4--\f lab-- fa-- r8 do4--(\upbow si'8) |
+  sol4-- lab-- fa-- r8 do4--( si'8-.) |
+  sol4-- lab-- fa-- r8 do4->( si'8-.) |
+  sol4-- lab-- fa-- r8 mib-. reb4-> |
+  sol4-- lab-- fa-- r8 do4->( si'8) |
+  sol4-- -\dyn "f_sempre" lab-- fa-- r8 mib reb4-> |
+  sol4-- lab-- fa-- r8 do4->( si'8) |
+  sol4-- lab-- fa-- r8 fa-> re?4-> |
 
   %%% 2 %%%
-  do' reb sib r8 fa? <re? si'>4 |
-  sol r sol r sol r sol sol |
-  <do,sol'> r <do sol'> r |
-  <fa do'> r <sol fa'> <fa mib'> |
-  <sol re'> r <sol re'> r |
-  <sol fa'> r <sol mi'> r |
-  <sol fa'> r <sol re'> <re sol> |
-  <do sol'> r <do sol'> r |
-  <do sol'>2 <sol' re'>4 <sol re'> |
-  <do,sol' re'> r8 <sol're'> <sol re'>4 r8 <sol re'> |
-  <fa do' sol>4 r8 <fa do'> <fa do' sol'>4 r8 re |
+  do'--\downbow\f reb--\downbow sib--\downbow r8 fa? <re? si'>4-.\upbow |
+  sol--\mp r sol-- r sol-- r sol-- sol-- |
+  <do,sol'>-- r <do sol'>-- r |
+  <fa do'>-- r <sol fa'>--( <fa mib'>--) |
+  <sol re'>-- r <sol re'>-- r |
+  <sol fa'>-- r <sol mi'>-- r |
+  <sol fa'>-- r <sol re'>--( <re sol>--) |
+  <do sol'>-- r <do sol'>-- r |
+  <do sol'>2-- <sol' re'>4-- <sol re'>-- |
+  <do,sol' re'>--\sf r8 <sol're'>-. <sol re'>4-- r8 <sol re'>-. |
+  <fa do' sol>4--\sf r8 <fa do'>-. <fa do' sol'>4-- r8 re-. |
 
   %%% 3 %%%
-  <sol re'>1~ <sol re'> |
-  sol-"vibrato" sol <sol sol'> |
-  <sol sol'>4. q8 q4. q8 |
-  q4. q8 q4. q8 |
-  <fa do'>4 q8 q \t {q q q} q16 q q q |
-  sol16 fa' fad dod' la8 r r4 |
-  sol,4 lab fa r8 mib |
-  reb''1*5/4-"(sul C)" |
-  reb,4-"pizz." r2 mib4 r |
-  do r r2 fad,4 |
+  <sol re'>1--\sfp~ <sol re'> |
+  sol-"vibrato"-- sol-- <sol sol'>-- |
+  <sol sol'>4.-- q8 q4.-- q8 |
+  q4.--\cresc q8 q4.-- q8 |
+  <fa do'>4--\f q8 q \t {q q q} q16 q q q |
+  sol16\p\< fa' fad dod' la8\! r r4 |
+  sol,4--\downbow\ff lab--\downbow fa--\downbow r8 mib-.\p |
+  reb''1*5/4-"(sul C)"-- |
+  reb,4-"pizz."--\mp r2 mib4-- r |
+  do-- r r2 fad,4-- |
 
   %%% 4 %%%
-  sol1-"arco"~ sol~ sol2.\fermata r4 |
+  sol1-"arco"\pp~ sol~ sol2.\fermata r4 |
   sol2.~ <sol fa'>2.~ <sol fa'>1~ <sol fa'>4\fermata r |
   \pl {sol1~ sol~ sol~ sol}
   {la'4 fa la fa la fa la fa

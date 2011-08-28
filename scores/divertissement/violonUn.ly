@@ -4,89 +4,89 @@
 \language "italiano"
 
 ViolonUn = \relative do' {
-  fad4 fad fad r8 fad re?4 |
-  sol,2 r1. |
-  r4 \t {r re''8} |
-  sol4 \t {r re8} sol4 \t {r re8} |
-  \t {sol re dod} \t {fad4 do8} fa4 \t {r do8} |
-  fa4 \t {r do8} fa4 \t {r do8} |
-  \t {fa sib mib} \ottava #1 \t {lab mib lab}
-  \t {reb lab mib} \ottava #0 \t {sib4 re,8} |
-  sol4 \t {r re8} sol4 \t {r re8} |
-  \t {sol re dod} \t {fad4 do8} fa4 \t {r do8} |
-  fa4 \t {r do8} fa4 \t {r do8} |
-  \t {fa si, mi} \t {sib mib la,}
+  fad4--\ff\downbow fad--\downbow fad--\downbow r8 fad re?4->\upbow |
+  sol,2-- r1. |
+  r4 \t {r re''8\mp\upbow} |
+  sol4-- \t {r re8} sol4-- \t {r re8} |
+  \t {sol( re dod} \t {fad4) do8} fa4-- \t {r do8} |
+  fa4-- \t {r do8} fa4-- \t {r do8} |
+  \t {fa( sib mib)} \ottava #1 \t {lab(\< mib lab)}
+  \t {reb(\> lab mib} \ottava #0 \t {sib4)\! re,8} |
+  sol4-- \t {r re8} sol4-- \t {r re8} |
+  \t {sol( re dod} \t {fad4) do8} fa4-- \t {r do8} |
+  fa4-- \t {r do8} fa4-- \t {r do8} |
+  \t {fa( si, mi} \t {sib mib la,)}
   %% Weird enharmonic thing. But somehow I like it.
-  \t {re sold, dod} \t {lab4 re,8} |
+  \t {re-"(détaché)" sold, dod} \t {lab4 re,8-.} |
 
   %%% 1 %%%
-  sol4 fad fa r8 fad re4 |
-  sol,1*5/4~ sol |
-  <sol re'>~ <sol re'>~ |
+  sol4--\downbow\f fad--\downbow fa--\downbow r8 fad re4-.\upbow |
+  sol,1*5/4--\<~ sol\> |
+  <sol re'>\p -"détimbré"~ <sol re'>~ |
   \t {<sol re'>8 q q} q q q16 q q q \t {q8 q q} q q |
   \t {q q q} q q q16 q q q \t {q8 q q} q q |
   %% Was --------> sol4. sol4 re8 originally. Hard to read.
-  \t {sol sol re'} sol4 r8 sol4 re8 r sol, |
-  \t {sol sol do} fa4 r8 fa4 do8 r sol |
-  \t {sol sol re'} sol4 r8 sol4 re8 r sol, |
-  \t {sol sol do} fa4 r8 fa4 do8 mi?16 lab do mib |
+  \t {sol sol( re')} sol4 r8 sol4(-- re8) r sol,-. |
+  \t {sol sol( do)} fa4 r8 fa4(-- do8) r sol-. |
+  \t {sol sol(\cresc re')} sol4 r8 sol4(-- re8) r sol,-. |
+  \t {sol sol( do)} fa4\! r8 fa4(-- do8) mi?16\< lab do mib |
   %% 16th-notes tremolo isn't much. But makes for a cleaner look.
-  <sol sol'>1*5/4:16 q: q: q:
-  <sol fa'>: <sol re'>: <sol mib'>: <sol do>2. r4 r8 re |
+  <sol sol'>1*5/4:16\fp q: q:\pp q:
+  <sol fa'>: <sol re'>:\p <sol mib'>: <sol do>2.\upbow\< r4\! r8 re-. |
 
   %%% 2 %%%
   %% Was originally--> <la,reb>4 |. Shame.
-  fad,4 fad fad r8 fad la,?4 |
-  \t {sol re''8} sol4 \t {r re8} sol4 |
+  fad,4--\downbow\f fad--\downbow fad--\downbow r8 fad la,?4-.\upbow |
+  \t {sol-- re''8\mf} sol4-- \t {r re8} sol4-- |
   %% And now we're off-beat. Meh.
-  \t {r re8} \t {sol re dod} \t {fad4 do8} fa4 |
-  \t {r do8} fa4 \t {r do8} fa4 |
-  \t {r do8} \t {fa si dod}
-  %% Was: mib sib. Better use sharps everywhere.
-  \t {fad red lad} \t {mi si sold} |
-  \t {r4 re'8} sol re, \t {sol4 re'8} sol re, |
-  \t {sol,4 re''8} sol re, \t {sol4 re'8} sol re, |
-  \t {sol,4 re''8} sol re, \t {re'4 sol,8} fa'4 |
-  \t {r re8} sol4 \t {r re8} sol4 |
-  \t {r re8} sol2. |
-  \t {r8 lab si} \t {mi do sol}
-  \t {fad' si, lab} \t {sib solb mib} |
-  \t {sol, lab do} \t {mib si' re} \ottava #1
-  \t {sib' fad mi} \ottava #0 \t {la, reb, fa,} |
+  \t {r re8} \t {sol( re dod} \t {fad4) do8} fa4-- |
+  \t {r do8} fa4-- \t {r do8} fa4-- |
+  \t {r do8} \t {fa(\< si dod)}
+  %% Was:--> mib sib. Better use sharps everywhere.
+  \t {fad(\> red lad)} \t {mi(\! si sold)} |
+  \t {r4 re'8->} sol-> re, \t {sol4-- re'8->} sol-> re, |
+  \t {sol,4-- re''8->} sol-> re, \t {sol4-- re'8->} sol-> re, |
+  \t {sol,4-- re''8->} sol-> re, \t {re'4->\< sol,8} fa'4->\! |
+  \t {r re8} sol4-- \t {r re8} sol4-- |
+  \t {r re8(\upbow} sol2.)\< |
+  \t {r8\! lab\p( si} \t {mi do sol)}
+  \t {fad'( si, lab)} \t {sib( solb mib)} |
+  \t {sol,(\< lab do} \t {mib si' re)} \ottava #1
+  \t {sib'(\> fad mi} \ottava #0 \t {la,-.-"jeté"\! reb,-. fa,-.)} |
 
   %%% 3 %%%
-  sol2.~ <dod, sol'>4~ <fa sol>2.~ <mi sol>4 |
+  sol2.--~ -\dyn "sfp_legato assai" <dod, sol'>4~ <fa sol>2.\<~ <mi sol>4 |
   %% This looks awfully badly written.
-  <re sol>2:16~ <re lab'>4:~ <reb lab'>: |
+  <re sol>2:16\<~ <re lab'>4:~ <reb lab'>: |
   <fa la>2:
   fa4\startTrillSpan
   sol\startTrillSpan
-  \pitchedTrill do2\startTrillSpan reb
+  \pitchedTrill do2\p\startTrillSpan reb
   \pitchedTrill mi\startTrillSpan fad |
-  <la, la'>1:16\stopTrillSpan |
-  <re mib'>1*3/4
-  \pl { s4 lab'4 lab8 lab \t {lab lab lab} lab16 lab lab lab}
+  <la, la'>1:16\mp\<\stopTrillSpan |
+  <re mib'>1*3/4\mf
+  \pl { s4 lab'4--\f lab8 lab \t {lab lab lab} lab16 lab lab lab}
   {\graceNote mi4 \glissando lab4 lab8 lab \t {lab lab lab} lab16 lab lab lab} |
-  %% Look, a twelve-tone series...
-  sol,,16 sib mib si do mi sold re la' dod fad fa' |
-  sol2. r4 | R1*5/4
-  %% Look, a Stravinsky quote...
-  reb,,4-"pizz." r2 mib4 r | do r1 |
+  %% Oh look: a twelve-tone series...
+  sol,,16\p sib mib si do\< mi sold re la' dod fad fa' |
+  sol2.\! r4 | R1*5/4
+  %% Look! A Stravinsky quote...
+  reb,,4-"pizz."--\mp r2 mib4-- r | do-- r1 |
 
   %%% 4 %%%
   R1*2
-  mi2.-"arco" \fermata r4 |
+  mi2.-"arco, senza vib."\pp \fermata r4 |
   r1 r4 mib~ | mib2~ <mib reb'>~ <mib reb'>4\fermata r |
   R1*3
   %% This should be a tie (see upstream issue 1581).
-  r2 lab~ lab \pitchedTrill do2(\startTrillSpan reb
-  do) \pitchedTrill mi2\startTrillSpan fad |
-  \ottava #1 la'1\CaV\stopTrillSpan ~ la\CaV |
-  %% Was: mib. But it's more fun this way:
-  mi'?4\CaV \ottava #0 r r2 |
+  r2 lab~-"vibrato"\p lab \pitchedTrill do2(\startTrillSpan reb
+  do)\> \pitchedTrill mi2\startTrillSpan fad |
+  \ottava #1 la'1\!\CaV\stopTrillSpan ~ la\>\CaV |
+  %% Was: mib. But it's probably more fun this way:
+  mi'?4\!\CaV \ottava #0 r r2 |
   R1*3
-  fa,,,2. mi4 | fad2 si | do4 lab2. |
-  sol2. sib4 | reb,2 mib | la!1( | re,!)\CaV |
+  fa,,,2.\mp\( mi4 | fad2 si | do4\> lab2.\! |
+  sol2.-"semplice" sib4 | reb,2 mib | la!1( | re,!)\)\CaV |
   R1*6 si'4 mi, sib' do | mib solb, fa'2 |
   reb re4 sol | la1 sold | R1
 

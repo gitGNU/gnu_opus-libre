@@ -5,78 +5,78 @@
 
 Alto = \relative do' {
   \clef alto
-  mib4 re? reb r8 do lab4 |
-  sol2~ sol~ sol r2 |
+  mib4--\ff\downbow re?--\downbow reb--\downbow r8 do lab4-.\upbow |
+  sol2~\>-- -"ten." sol~ sol\! r2 |
   R2 |
-  r4 sol r sol |
-  r <re re'> <re dod'> <re do'> |
-  r <re do'> r <re do'> |
-  <sol re'> r <sib dob>~ \t {<sib dob> fa8} |
-  \t {sol sol re'} sol4
-  \t {r8 sol, re'} \t {sol4 re8} |
-  \t {r sol, do} \t {fa mi la}
-  \t {re la mi} \t {sib mib, r} |
-  \t {r sol do} fa4 \t {r8 sol, do} fa4 |
-  r <re, re'> <re dod'> <re do'> |
+  r4 sol--\mp r sol-- |
+  r <re re'>-- <re dod'>-- <re do'>-- |
+  r <re do'>-- r <re do'>-- |
+  <sol re'>-- r <sib dob>~\upbow\p\<( \t {<sib dob> fa8-.)\!} |
+  \t {sol sol(\< re')} sol4--\!
+  \t {r8 sol,(\< re')} \t {sol4--\! re8-.} |
+  \t {r sol,( do)} \t {fa(\< mi la)}
+  \t {re(\! la mi} \t {sib-.-"(jeté)" mib,-.) r} |
+  \t {r sol(\upbow do)} fa4-- \t {r8 sol,( do)} fa4-- |
+  r <re, re'>-- <re dod'>-- <re do'>-- |
 
   %%% 1 %%%
-  red fa? si? r8 la do4 |
-  sol1*5/4~ sol sol~ sol |
-  do4:16-"trem." reb: sib2.: |
+  red--\downbow\f fa?--\downbow si?--\downbow r8 la do4-.\upbow |
+  sol1*5/4--\<~ sol\> sol\p~ sol |
+  do4:16-"trem., sul C"\pp reb: sib2.: |
   do4: reb: sib2.: |
   \t {do8 do do} reb reb sib16 sib sib sib
   \t {sib8 sib sib} sib sib |
   \t {do do do} reb reb sib16 sib sib sib
   \t {sib8 sib sib} sib sib |
-  \t {do do do} reb reb sib16 sib sib sib
+  \t {do\cresc do do} reb reb sib16 sib sib sib
   \t {sib8 sib sib} sib sib |
-  \t {do do do} reb reb sib4 r la16 do re fa |
-  sol8 re sol4 re8 sol4 re8 sol r |
-  sol8 re sol4 re8 sol4 re8 sol r |
-  r re sol re dod fad4 do8 fa4 |
-  la,8 re sol re dod fad4 do8 fa4 |
-  r8 re sol4 fa,8 sib mib lab reb re, |
-  sol4 \t {r4 re8} sol4 \t {r4 re8} \t {sol re dod} |
-  \t {fad4 do8} fa4 \t {r4 do8} fa4 \t {r4 do8} |
-  \t {fa4 do8} \t {fa \clef treble sib mib}
-  \t {lab mib lab} \t {reb lab mib} sib \clef alto re,, |
+  \t {do-> do do} reb-> reb sib4->\! r la16\< do re fa |
+  sol8\fp re-. sol4-- re8-. sol4 re8-. sol-. r |
+  sol8\cresc re sol4 re8 sol4 re8 sol r |
+  r re sol-> re dod fad4-> do8 fa4-> |
+  la,8\f re sol-> re dod fad4-> do8 fa4-> |
+  r8 re\cresc sol4 fa,8-"détaché" sib mib lab reb re, |
+  sol4--\mf \t {r4 re8} sol4-- \t {r4 re8} \t {sol( re dod} |
+  \t {fad4) do8} fa4-- \t {r4 do8} fa4-- \t {r4 do8} |
+  \t {fa4-- do8} \t {fa( \clef treble sib mib)}
+  \t {lab(\< mib lab)} \t {reb(\> lab mib} sib)-.\! \clef alto re,,-. |
 
   %%% 2 %%%
-  lab'4 mi mib r8 si' <fad dod'>4 |
-  sol r sol r <re sol> r <re re'> <re dod'> |
-  <re do'> r <re do'> r |
-  <re do'> r <mib re'> <reb si'>8 re' |
-  <fa, sol>4 r <mi sol> r |
-  <re sol> r <dod sol'> r |
-  <re sol> r <mib lab> <mib si'>8 re' |
-  <re sol>4 r <lab mib'> r |
-  <fa sib>~ <fa sib>8 r16 re sol8. do,16 fa4 |
-  <sol do fa> r <sol do fa> r |
-  <re do'> \t {r do'8} <do fa>4 r8 re, |
+  lab'4--\downbow\f mi--\downbow mib--\downbow r8 si' <fad dod'>4-.\upbow |
+  sol--\mf r sol-- r <re sol>-- r <re re'>-- <re dod'>-- |
+  <re do'>-- r <re do'>-- r |
+  <re do'>-- r <mib re'>-- <reb si'>8-.\< re'-. |
+  <fa, sol>4--\! r <mi sol>-- r |
+  <re sol>-- r <dod sol'>-- r |
+  <re sol>-- r <mib lab>-- <mib si'>8-.\< re'-. |
+  <re sol>4--\! r <lab mib'>-- r |
+  <fa sib>--~ <fa sib>8 r16 re sol8.-- do,16 fa4-- |
+  <sol do fa>-- r <sol do fa>-- r |
+  <re do'>-- \t {r do'8} <do fa>4-- r8 re,-> |
 
   %%% 3 %%%
-  sol re' sol re sol, re' sol re |
-  sol, re' sol re sol, re' sol re |
-  \t {sol, re sol} \t {re sol re}
-  \t {sol re sol} \t {re sol re} |
-  \t {sol re sol} \t {re sol re}
-  \t {sol re sol} \t {re sol re} |
-  \t {sol re sol} \t {re sol re}
-  \t {sol re sol} \t {re sol re} |
+  sol-\dyn "sfpp"( re') sol( re) sol,( re') sol( re) |
+  sol,( re') sol( re) sol,( re') sol( re) |
+  \t {sol,( re sol} \t {re sol re}
+  \t {sol re sol} \t {re sol re)} |
+  \t {sol( re sol} \t {re sol re}
+  \t {sol re sol} \t {re sol re)} |
+  \t {sol( re sol} \t {re sol re}
+  \t {sol re sol} \t {re sol re)} |
   \repeat tremolo 8 {sol16 re'} |
   \repeat tremolo 8 {fa do} |
-  <sol mib'>4 <sol mib'>8 <sol mib'>
+  <sol mib'>4--\f <sol mib'>8 <sol mib'>
   \t {<sol mib'> <sol mib'> <sol mib'>}
   <sol mib'>16 <sol mib'> <sol mib'> <sol mib'> |
-  r4 la16 re, sold mi' do8 r |
-  sol4 lab fa r8 mib |
-  reb1*5/4 | r2 r4 mib'-"pizz." r | do r1 |
+  r4 la16\< re, sold mi' do8\! r |
+  sol4--\downbow\ff lab--\downbow fa--\downbow r8 mib-.\p |
+  reb1*5/4-- | r2 r4 mib'-"pizz."--\mp r | do-- r1 |
 
   %%% 4 %%%
-  R1 re,1-"arco"~ re2.\fermata r4 |
+  R1 re,?1-"arco"\pp~ re2.\fermata r4 |
   r2 do~ <do sib'>~ | <do sib'>1~ <do sib'>4\fermata r4 |
   %% Courtesy of S. Prokofiev (hint: piano concerto #2)
-  r2 re4 do | re do re do |
+  r2 re4-"(non legato)" do | re do re do |
   re do re do | re do re <fa do'> |
   <la mi'> <sib mib> <la mi'> <sib mib> |
   <la mi'> <sib mib> <la mi'> <sib mib> |

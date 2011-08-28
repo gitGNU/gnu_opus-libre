@@ -4,74 +4,75 @@
 \language "italiano"
 
 ViolonDeux = \relative do' {
-  mi?4 fa? mib r8 mib si4 |
-  sol2~ sol r1 |
+  mi?4--\ff\downbow fa?--\downbow mib--\downbow r8 mib si4-.\upbow |
+  sol2~--\> -"ten." sol r1\! |
   R2 |
-  r4 sol r sol |
-  r <sol sol'> <sol fad'> <sol fa'> |
-  r <sol fa'> r <sol fa'> |
-  <mi' la> r <mi fa>~ \t {<mi fa> mib8} |
-  <si sol'>4 r <sol' re'> r |
-  <mib sol> <sol dod> <fa do'>2 |
-  <fa do'>4 r <la, fa'> r |
-  r <sol sol'> <sol fad'> <sol fa'> |
+  r4 sol--\mp r sol-- |
+  r <sol sol'>-- <sol fad'>-- <sol fa'>-- |
+  r <sol fa'>-- r <sol fa'>-- |
+  <mi' la>-- r <mi fa>~\upbow\p\<( \t {<mi fa> mib8-.)\!} |
+  <si sol'>4-- r <sol' re'>-- r |
+  <mib sol>--( <sol dod>--) <fa do'>2 |
+  <fa do'>4-- r <la, fa'>-- r |
+  r <sol sol'>-- <sol fad'>-- <sol fa'>-- |
 
   %%% 1 %%%
-  do reb sib r8 dod la4 |
-  sol1*5/4~ sol sol~ sol~ sol~ sol~ |
-  <sol re'>~ <sol re'>~ <sol mib'> |
+  do--\downbow\f reb--\downbow sib--\downbow r8 dod la4-.\upbow |
+  sol1*5/4--\<~ sol\> sol\mf -"(vibrato)"~ sol~ sol~ sol~ |
+  <sol re'>~ <sol re'>~ <sol mib'>\cresc |
   %% Was originally <sol reb'> . Shame, shame.
-  reb'4 \t {sol,8 reb' sol,} reb'4 r \t {dod8 fad dod} |
-  <sol re'>1*5/4:16 <sol re'>: <sol mib'>: |
-  <mib' la>: <sol do>: |
-  r8 sol  re'4 sol,8 re'4 sol,8 re'4 |
+  reb'4 \t {sol,8 reb' sol,} reb'4->\! r \t {dod8\< fad dod} |
+  <sol re'>1*5/4:16\fp <sol re'>: <sol mib'>: |
+  <mib' la>: <sol do>:\cresc |
+  r8\! sol-\dyn "p_sub."-. re'4-- sol,8-"léger" re'4 sol,8 re'4 |
   r8 sol, re'4 sol,8 re'4 sol,8 re'4 |
-  r8 sol, re'4 sol,8 re'4 sol,8 do re, |
+  r8 sol, re'4 sol,8 re'4 sol,8\< do re, |
 
   %%% 2 %%%
-  re4 si la r8 re lab4 |
-  sol4 r sol r |
-  <sol sol'> r <sol sol'> <sol fad'> |
-  <sol fa'> r <sol fa'> r |
-  <sol fa'> \t {r8 lab' si}
-  \t {mi do sol} \t {sib solb mib} |
-  <sol, re'>4 r <sol re'> r |
-  sol r sol r |
-  la r dod~ \t {dod re8} |
-  <sib mib>4 r8 re sol4 r8 re |
-  sol4~ \t {sol8 re dod} \t {fad4 do8} fa4 |
-  \t {r do'8} fa4 \t {r do8} fa4 |
-  <la,, fa'>8 reb \t {lab' sib re}
-  \t {fad' sib, re,} \t {si sol re} |
+  re4--\downbow\f si--\downbow la--\downbow r8 re lab4-.\upbow |
+  sol4--\mf r sol-- r |
+  <sol sol'>-- r <sol sol'>-- <sol fad'>-- |
+  <sol fa'>-- r <sol fa'>-- r |
+  <sol fa'>-- \t {r8 lab'( si)}
+  \t {mi( do sol)} \t {sib( solb mib)} |
+  <sol, re'>4-- r <sol re'>-- r |
+  sol-- r sol-- r |
+  la-- r dod~(\upbow\< \t {dod re8)} |
+  <sib mib>4--\! r8 re sol4-- r8 re |
+  sol4--~ \t {sol8 re( dod)} \t {fad4 do8} fa4-- |
+  \t {r do'8\mf} fa4-- \t {r do8} fa4 |
+  <la,, fa'>8-> reb-. \t {lab'(\< sib re)}
+  \t {fad'(\> sib, re,)} \t {si-"détaché" sol re} |
 
   %%% 3 %%%
-  \t {sol re sol} \t {re sol re}
-  \t {sol re sol} \t {re sol re} |
-  \t {sol re sol} \t {re sol re}
-  \t {sol re sol} \t {re sol re} |
-  <sol, re'>4. q8 q4. q8 |
-  q4. q8 q4. q8 |
+  \t {sol(-\dyn "sfpp" re sol} \t {re sol re}
+  \t {sol re sol} \t {re sol re)} |
+  \t {sol( re sol} \t {re sol re}
+  \t {sol re sol} \t {re sol re)} |
+  <sol, re'>4.-- -"sotto voce" q8 q4.-- q8 |
+  q4.-- q8 q4.\cresc q8 |
   q4. q8 <dod la'>4. q8 |
-  <sol' re'>4~ \t {<sol re'> <sol re'>8}
-  <sol dod>4~ \t {<sol dod> <sol dod>8} |
-  <la re>4~ \t {<la re> <la re>8}
+  <sol' re'>4--~ \t {<sol re'> <sol re'>8}
+  <sol dod>4--~ \t {<sol dod> <sol dod>8} |
+  <la re>4\!~ \t {<la re> <la re>8}
   <la re>4~ \t {<la re> <la re>8} |
-  <sib mi?>4 <sib mi>8 <sib mi> \t {<sib mi> <sib mi> <sib mi>}
+  <sib mi?>4--\f <sib mi>8 <sib mi> \t {<sib mi> <sib mi> <sib mi>}
   <sib mi>16 <sib mi> <sib mi> <sib mi> |
-  r2 do,16 si' mib sib' |
-  sol'4-\CaV lab fa r8 mib, |
+  r2 do,16\< si' mib sib' |
+  sol'4-\ff--\CaV\downbow lab--\downbow fa--\downbow r8 mib,-.\p |
   R1*5/4
-  reb,4-"pizz." r2 mib4 r |
-  do r1 |
+  reb,4-"pizz."--\mp r2 mib4-- r |
+  do-- r1 |
 
   %%% 4 %%%
-  R1 r2 la-"arco"~ la2.\fermata r4 |
+  R1 r2 la-"arco"\pp~ la2.\fermata r4 |
   R1. lab'1~ lab4\fermata r |
-  R1 r2 re,2-"vibrato"~ re dod fa~ fa:16 |
+  R1 r2 re,2-"vibrato"~\mp( re dod fa)~ fa:16 |
   sol\startTrillSpan \pitchedTrill do(\startTrillSpan reb
-  do) \pitchedTrill mi\startTrillSpan fad
-  la1\startTrillSpan ~ la <fa mib'>4\stopTrillSpan r r2 |
-  r2 re,-"espr."~ re~ re~ re dod red sold la fa mi sol sib, do fad( si,)~ si4 r r2 |
+  do)\> \pitchedTrill mi\startTrillSpan fad
+  la1\!\startTrillSpan ~ la\> \stopTrillSpan <fa mib'>4\!r r2 |
+  r2 re,-"espr."~\<\( re~ re~\> re dod red\pp sold la
+  fa mi sol sib,-"semplice" do fad( si,)~ si4\) r r2 |
   R1*5 si2. sib4~ sib2 do fa solb mib dod4 mi do' la re,2 |
   R1
 
