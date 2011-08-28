@@ -36,7 +36,7 @@ ViolonUn = \relative do' {
 
   %%% 2 %%%
   %% Was originally--> <la,reb>4 |. Shame.
-  fad,4 fad fad r8 fad <la, re>4 |
+  fad,4 fad fad r8 fad la,?4 |
   \t {sol re''8} sol4 \t {r re8} sol4 |
   %% And now we're off-beat. Meh.
   \t {r re8} \t {sol re dod} \t {fad4 do8} fa4 |
@@ -68,7 +68,7 @@ ViolonUn = \relative do' {
   \pl { s4 lab'4 lab8 lab \t {lab lab lab} lab16 lab lab lab}
   {\graceNote mi4 \glissando lab4 lab8 lab \t {lab lab lab} lab16 lab lab lab} |
   %% Look, a twelve-tone series...
-  sol,,16 sib mib si do mi lab re, la' dod fad fa' |
+  sol,,16 sib mib si do mi sold re la' dod fad fa' |
   sol2. r4 | R1*5/4
   %% Look, a Stravinsky quote...
   reb,,4-"pizz." r2 mib4 r | do r1 |
@@ -76,8 +76,7 @@ ViolonUn = \relative do' {
   %%% 4 %%%
   R1*2
   mi2.-"arco" \fermata r4 |
-  R1.
-  lab2~ <lab reb>2.\fermata r4 |
+  r1 r4 mib~ | mib2~ <mib reb'>~ <mib reb'>4\fermata r |
   R1*3
   %% This should be a tie (see upstream issue 1581).
   r2 lab~ lab \pitchedTrill do2(\startTrillSpan reb
@@ -95,20 +94,22 @@ ViolonUn = \relative do' {
   <si,? mi\harmonic si''>1~ <si mi\harmonic si''>2 r4
   <sib mib\harmonic sib''>4~ <sib mib\harmonic sib''>1
   do'2 fa fad re dod mi sol, la mib1( lab,) |
-  R1 r2 dod <si? mi\harmonic si''>2. r4 |
-  la,4. sold'8 lad[ red,] mi do16[ si' re,8] fa[ sol] |
+  R1 r2 dod \ottava #1 si''2.\CaV \ottava #0 r4 |
+  la,,,4. sold'8 lad[ red,] mi do16[ si' re,8] fa[ sol] |
   dod,2 fad1 |
   %% I'm actually unsure whether I did want harmonics here.
   <fa' sib\harmonic fa''>1 <sol do\harmonic sol''> <mib lab\harmonic mib''>
   R2 <fa do'>1 R1 R2. <si, mi>1 |
 
-  %%% 6 %%
+  %%% 6 %%%
+  %% I may, or may have not, listened to
+  %% S. Reich's `City Life' prior to writing this.
   <fa sib>2 <sol do> <mib lab>2. r4 |
   %% Was: <la,reb>4. Shame, shame.
   reb2. <mi la>2 | R2
   <fa sib>2 <sol do> <mib lab> r2 |
   <mi la> <si' mi>2. |
-  sol,16 sib mib si do mi lab re, la' dod fad fa' |
+  sol,16 sib mib si do mi sold re la' dod fad fa' |
   sol4 r r2 | R1
 
   %%% 7 %%%
@@ -132,7 +133,7 @@ ViolonUn = \relative do' {
   %%% 8 %%%
   sib,2-"legato molto" la4 si mi fa reb2 |
   do4-"espr." mib fad sold, | re'2.
-  sol,16 sib mib si do mi lab re, la' dod fad fa' |
+  sol,16 sib mib si do mi sold re la' dod fad fa' |
   sol1*5/4 sol,,,~ sol |
   sol'4 fad fa r8 fad re?4 |
 
@@ -155,17 +156,17 @@ ViolonUn = \relative do' {
 
   %%% 10 %%%
   sol,,8 r | sol' sol sol lab lab lab fa fa fa |
-  sol sol sol sol | reb reb mib mib do do | si' |
+  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' |
   sol, r | sol' r4 lab8 r4 fa8 r4 |
   sol8 r r4 | reb8 r mib r do r | si' |
   sol,4 | sol'4. lab fa | sol2 |
   reb4 mib do | si'8 | sol, r |
   \times 3/2 {re' re} \times 3/2 {mib mib} \times 3/2 {do do} |
-  re4 re | lab8 lab sib sib do do | si' | sol,4 |
+  re4 re | lab8[ lab] sib[ sib] do[ do] | si' | sol,4 |
   \times 3/2 {sol'8 sol} \times 3/2 {lab lab} \times 3/2 {fa fa} |
-  sol sol sol sol | reb4 mib do | si'8 | sol,4 |
+  sol[ sol sol sol] | reb4 mib do | si'8 | sol,4 |
   sol'8 sol sol lab lab lab fa fa fa |
-  sol sol sol sol | reb reb mib mib do do | si' |
+  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' |
   sol,4 | r8 re' |
 
   %%% 11 %%%
@@ -180,14 +181,14 @@ ViolonUn = \relative do' {
   sol'[ dod,] la[ do re] sol[ dod,] la[ do re] sol[ dod,] |
   dod dod dod | sol4 |
   sol'8 sol sol lab lab lab fa fa fa |
-  sol sol sol sol |
+  sol[ sol sol sol] |
   sol4. lab fa sol2 reb4 mib do4. |
 
   %%% 12 %%%
   <sib' fad' si!>4 <sib fad' si> <sib fad' si> r8 fa' reb4 |
-  r2 r8 sib mib re, |
+  r2 r8 sib mib[ re,] |
   sol, sol16 do fa8 sib,4. r8 re |
-  sol4 r r8 sib mib re, |
+  sol4 r r8 sib mib[ re,] |
   sol,8. sol16 re'8 la' mi' si' fad' reb |
   <sol, sol'>4
 }

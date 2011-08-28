@@ -42,7 +42,8 @@ Violoncelle = \relative do' {
   <do,sol'> r <do sol'> r |
   <fa do'> r <sol fa'> <fa mib'> |
   <sol re'> r <sol re'> r |
-  sol r sol r sol r <sol re'> <re sol> |
+  <sol fa'> r <sol mi'> r |
+  <sol fa'> r <sol re'> <re sol> |
   <do sol'> r <do sol'> r |
   <do sol'>2 <sol' re'>4 <sol re'> |
   <do,sol' re'> r8 <sol're'> <sol re'>4 r8 <sol re'> |
@@ -61,8 +62,8 @@ Violoncelle = \relative do' {
   do r r2 fad,4 |
 
   %%% 4 %%%
-  sol1-"arco"~ sol~ sol2. r4 |
-  sol1.~ sol1~ sol4 r |
+  sol1-"arco"~ sol~ sol2.\fermata r4 |
+  sol2.~ <sol fa'>2.~ <sol fa'>1~ <sol fa'>4\fermata r |
   \pl {sol1~ sol~ sol~ sol}
   {la'4 fa la fa la fa la fa
   la fa la fa la fa re do}
@@ -70,7 +71,7 @@ Violoncelle = \relative do' {
   reb'4 r r <sol,sol'>~ sol1~ sol2 r |
   R1*6
   r2 sol~ sol1~ sol2 fad |
-  sold1 dod,2 r4 re~ |
+  sold1( dod,2) r4 re~ |
   re2. sib'4~ |
   sib2 la~ la do |
   mib,2. fa4 si?2 mi!~ mi mi |
@@ -145,10 +146,10 @@ Violoncelle = \relative do' {
   sol4 R1*9/8 R1*4/8 R1*6/8 R1*1/8
   \clef tenor sol'8 re' \clef treble
   sol sol sol lab lab lab fa fa fa |
-  sol sol sol sol | reb reb mib mib do do | si' |
+  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' |
   \clef bass sol,,4 \clef tenor
   re''8 re re mib mib mib do do do |
-  re re re re | lab lab sib sib fad fad | fa' |
+  re[ re re re] | lab[ lab] sib[ sib] fad[ fad] | fa' |
   sol, r | \clef treble
   sol'4.-"flaut." lab fa | sol2 |
   reb4 mib do8 r | fa! | \clef bass sol,,4 |
