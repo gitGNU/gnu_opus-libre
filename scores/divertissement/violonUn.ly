@@ -82,113 +82,116 @@ ViolonUn = \relative do' {
   r2 lab~-"vibrato"\p lab \pitchedTrill do2(\startTrillSpan reb
   do)\> \pitchedTrill mi2\startTrillSpan fad |
   \ottava #1 la'1\!\CaV\stopTrillSpan ~ la\>\CaV |
-  %% Was: mib. But it's probably more fun this way:
-  mi'?4\!\CaV \ottava #0 r r2 |
+  %% Was: mib. But it's much more fun this way:
+  mi'?4--\!\CaV \ottava #0 r r2 |
   R1*3
   fa,,,2.\mp\( mi4 | fad2 si | do4\> lab2.\! |
   sol2.-"semplice" sib4 | reb,2 mib | la!1( | re,!)\)\CaV |
-  R1*6 si'4 mi, sib' do | mib solb, fa'2 |
-  reb re4 sol | la1 sold | R1
+  R1*6 si'4(\pp mi, sib' do | mib\cresc solb, fa'2 |
+  reb re4\! sol | la1\< sold)\mf | R1
 
   %%% 5 %%%
-  <si,? mi\harmonic si''>1~ <si mi\harmonic si''>2 r4
+  <si,? mi\harmonic si''>1\pp~ <si mi\harmonic si''>2 r4
   <sib mib\harmonic sib''>4~ <sib mib\harmonic sib''>1
-  do'2 fa fad re dod mi sol, la mib1( lab,) |
-  R1 r2 dod \ottava #1 si''2.\CaV \ottava #0 r4 |
-  la,,,4. sold'8 lad[ red,] mi do16[ si' re,8] fa[ sol] |
-  dod,2 fad1 |
+  do'2\mf\( fa fad re dod mi sol, la mib1(\> lab,)\)\! |
+  R1 r2 dod\pp \ottava #1 si''2.\CaV \ottava #0 r4 |
+  la,,,4.\mf \cresc sold'8 lad[ red,] mi do16[ si' re,8] fa[ sol] |
+  dod,2--\! fad1-- |
   %% I'm actually unsure whether I did want harmonics here.
-  <fa' sib\harmonic fa''>1 <sol do\harmonic sol''> <mib lab\harmonic mib''>
-  R2 <fa do'>1 R1 R2. <si, mi>1 |
+  <fa' sib\harmonic fa''>1(\pp <sol do\harmonic sol''> <mib lab\harmonic mib''>)
+  R2 <fa do'>1-- R1 R2. <si, mi>1-- |
 
   %%% 6 %%%
-  %% I may, or may have not, listened to
+  %% I may, or may not, have been listening to
   %% S. Reich's `City Life' prior to writing this.
-  <fa sib>2 <sol do> <mib lab>2. r4 |
+  <fa sib>2(\p <sol do> <mib lab>2.) r4 |
   %% Was: <la,reb>4. Shame, shame.
-  reb2. <mi la>2 | R2
-  <fa sib>2 <sol do> <mib lab> r2 |
-  <mi la> <si' mi>2. |
-  sol,16 sib mib si do mi sold re la' dod fad fa' |
-  sol4 r r2 | R1
+  reb2.( <mi la>2) | R2
+  <fa sib>2(\mp <sol do> <mib lab>) r2 |
+  <mi la>( <si' mi>2.) |
+  sol,16\p sib mib si do\< mi sold re la' dod fad fa' |
+  sol4--\f r r2 | R1
 
   %%% 7 %%%
   %% Offbeat again. Let's just pretend it's on purpose.
-  \t {r4 re,8} sol4 \t {r4 re8} sol4 |
-  \t {r4 re8} \t {sol re dod} \t {fad4 do8} fa4 |
-  \t {r4 do8} fa4 \t {r4 do8} fa4 |
-  \t {r4 do8} \t {fa sib mib}
-  \ottava #1 \t {lab mib lab} \t {reb lab mib} |
-  \ottava #0 \t {sib4 re,8} sol4 \t {r4 re8} sol4 |
-  \t {r4 re8} \t {sol re dod} \t {fad4 do8} fa4 |
-  \t {r4 do8} fa4 \t {r do8} fa4 |
-  \t {r4 do8} \t {fa sib mib}
-  \ottava #1 \t {lab mib lab} \t {reb lab mib}
-  \ottava #0 <sib, si'!>4-"détimbré" -- r8 <si! sib'>-.
+  \t {r4 re,8\f} sol4-- \t {r4 re8} sol4-- |
+  \t {r4 re8} \t {sol( re dod} \t {fad4) do8} fa4-- |
+  \t {r4 do8} fa4-- \t {r4 do8} fa4-- |
+  \t {r4 do8} \t {fa( sib mib)}
+  \ottava #1 \t {lab( mib lab)} \t {reb( lab mib} |
+  \ottava #0 \t {sib4) re,8} sol4-- \t {r4 re8} sol4-- |
+  \t {r4 re8} \t {sol( re dod} \t {fad4) do8} fa4-- |
+  \t {r4 do8} fa4-- \t {r do8} fa4-- |
+  \t {r4 do8} \t {fa( sib mib)}
+  \ottava #1 \t {lab( mib lab)} \t {reb( lab) mib}
+  \ottava #0 <sib, si'!>4-"détimbré" --\p r8 <si! sib'>-.
   <sib si'!>4-- r8 <si sib'>-. |
   <sib si'!>4-- <si sib'>-- <do la'>-- r |
-  r16 re'-"(ordin.)" sol8~ sol4
+  r16 re'-"(ordin.)"\mp sol8~ sol4
   r16 re sol8~ sol4 | <sib,, si'!>--\sf r r2 |
 
   %%% 8 %%%
-  sib,2-"legato molto" la4 si mi fa reb2 |
-  do4-"espr." mib fad sold, | re'2.
-  sol,16 sib mib si do mi sold re la' dod fad fa' |
-  sol1*5/4 sol,,,~ sol |
-  sol'4 fad fa r8 fad re?4 |
+  sib,2-"legato molto"( -\dyn "ff_intense" la4 si mi fa reb2) |
+  do4-"espr."( mib fad sold,\> | re'2.*2/3) s4\!
+  sol,16\pp sib mib si do mi sold re la' dod fad fa' |
+  sol1*5/4-\dyn "(pp_sempre)" sol,,,~ sol |
+  sol'4--\downbow\ff fad--\downbow fa--\downbow r8 fad re?4-. |
 
   %%% 9 %%%
-  r8 re' sol4 \t {r4 re8} sol8. re16 |
-  \t {sol8 fad dod} fa do \t {sol4 re'8} sol4 |
-  r8 re sol4 \t {r re8} sol8. re16 |
-  \t {sol8 fad dod} fa do sol lab fa4 |
-  r8 re' sol4 r8 re sol8. re16 |
-  \t {sol8 fad dod} \t {fa do si}
-  \t {mi sib mib} \t {la, re sol} |
-  <si,, la'>4 <do sib'> <sol mib'> \t {lab'8 reb sol} |
-  sol,4 r r r8 sib16 mib lab8 re, |
-  <sol,, sol'>4 r r r8 sib'16 mib lab8 re, |
-  sol sib,16 mib lab8 re,
-  sol sib,16 mib lab8 re, |
-  sol8 lab16 fa sol8 lab16 fa
-  sol8 lab16 fa sol8 lab16 fa |
-  R2.
+  r8 re'\f sol4-- \t {r4 re8} sol8.-- re16 |
+  \t {sol8( fad) dod} fa-. do-. \t {sol4-- re'8} sol4-- |
+  r8 re sol4-- \t {r re8} sol8.-- re16 |
+  \t {sol8( fad) dod} fa-. do-. sol-> lab-> fa4->-- |
+  r8 re'\mf sol4-- r8 re sol8.-- re16 |
+  \t {sol8( fad dod} \t {fa do si}
+  \t {mi sib mib} \t {la, re sol)} |
+  <si,, la'>4-- <do sib'>-- <sol mib'>-- \t {lab'8( reb sol)} |
+  sol,4-- r r r8 sib16\< mib lab8-.\! re,-.\sf |
+  <sol,, sol'>4-- r r r8 sib'16\< mib lab8-.\! re,-. |
+  %% Perhaps the two most useless bars I've ever written:
+  sol-.\sf sib,16( mib) lab8 re,-.
+  sol-.\sf sib,16( mib) lab8 re,-. |
+  sol8\ff lab16( fa) sol8 lab16( fa)
+  sol8\< lab16( fa) sol8 lab16 fa\! |
+  R2. sol,,8-+ r |
 
   %%% 10 %%%
-  sol,,8 r | sol' sol sol lab lab lab fa fa fa |
-  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' |
-  sol, r | sol' r4 lab8 r4 fa8 r4 |
-  sol8 r r4 | reb8 r mib r do r | si' |
-  sol,4 | sol'4. lab fa | sol2 |
-  reb4 mib do | si'8 | sol, r |
-  \times 3/2 {re' re} \times 3/2 {mib mib} \times 3/2 {do do} |
-  re4 re | lab8[ lab] sib[ sib] do[ do] | si' | sol,4 |
+  sol'-.\pp sol-. sol-. lab-. lab-. lab-. fa-. fa-. fa-. |
+  sol-.[ sol-. sol-. sol-.] | reb[ reb] mib[ mib] do[ do] | si'-. |
+  sol, r | sol'-. -"du talon" r4 lab8-. r4 fa8-. r4 |
+  sol8-. r r4 | reb8 r mib r do r | si'-. |
+  sol,4 | sol'4.-"legato, ordin." lab fa | sol2 |
+  reb4 mib do | si'8-. | sol, r |
+  \times 3/2 {re'\mf re} \times 3/2 {mib mib} \times 3/2 {do do} |
+  re4 re | lab8[ lab] sib[ sib] do[ do] | si'-. | sol,4-- |
   \times 3/2 {sol'8 sol} \times 3/2 {lab lab} \times 3/2 {fa fa} |
   sol[ sol sol sol] | reb4 mib do | si'8 | sol,4 |
-  sol'8 sol sol lab lab lab fa fa fa |
-  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' |
-  sol,4 | r8 re' |
+  sol'8\f sol sol lab lab lab fa fa fa |
+  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si'-. |
+  sol,4-- | r8 re' |
 
   %%% 11 %%%
-  sol sol sol lab lab lab fa fa fa |
-  sol[ sol sol sol] reb[ reb] mib[ mib] do[ do] |
-  si' sol,[ re'] <sol, sol'>[ <sol sol'> <sol sol'>] <lab sol'> |
-  <reb sol>[ q q q q] <sol, sol'> |
+  sol->\ff -"détaché" sol sol lab-> lab lab fa-> fa fa |
+  sol[-> sol sol sol] reb[ reb] mib[ mib] do[ do] |
+  si' sol,[ re'] <sol, sol'>[-> <sol sol'> <sol sol'>] <lab sol'> |
+  <reb sol>[-> q q q q] <sol, sol'> |
   <sol sol'> <lab sol'>[ <lab sol'>] <reb sol>[ q q] |
-  sol[ dod,] sol'[ dod,] sol'[ do, re] sol[ do, re] sol[ dod,] |
-  dod[ dod sol] dod[ dod dod sol] |
-  sol'[ dod,] la[ do re] sol[ dod,] la[ do re] sol[ dod,] |
-  sol'[ dod,] la[ do re] sol[ dod,] la[ do re] sol[ dod,] |
-  dod dod dod | sol4 |
-  sol'8 sol sol lab lab lab fa fa fa |
-  sol[ sol sol sol] |
-  sol4. lab fa sol2 reb4 mib do4. |
+  sol[\p dod,] sol'[ dod,] sol'[ do, re] sol[ do, re] sol[ dod,] |
+  dod[->\ff dod sol] dod[-> dod dod sol] |
+  sol'[\p dod,] la[ do re] sol[ dod,] la[ do re] sol[ dod,] |
+  sol'[\cresc dod,] la[ do re] sol[ dod,] la[ do re] sol[ dod,] |
+  dod\ff-> dod dod | sol4-- |
+  sol'8\mf-> sol sol lab-> lab lab fa-> fa fa |
+  sol[-> sol sol sol] |
+  sol4.(\ff lab fa sol2) reb4(\upbow mib do4.) |
 
   %%% 12 %%%
-  <sib' fad' si!>4 <sib fad' si> <sib fad' si> r8 fa' reb4 |
-  r2 r8 sib mib[ re,] |
-  sol, sol16 do fa8 sib,4. r8 re |
-  sol4 r r8 sib mib[ re,] |
-  sol,8. sol16 re'8 la' mi' si' fad' reb |
-  <sol, sol'>4
+  <sib' fad' si!>4--\downbow\sf
+  <sib fad' si>--\downbow\sf
+  <sib fad' si>--\downbow\sf r8 fa'-.\mp reb4-- |
+  r2 r8 sib(\upbow\< mib[-.)\! re,]->\f |
+  sol,-> sol16 do fa8-. sib,4.-- r8 re-. |
+  sol4-- r r8 sib(\upbow\< mib[-.)\! re,]-> |
+  sol,8.\ff sol16 re'8 la' mi' si' fad' reb-> |
+  <sol, sol'>4->--
 }

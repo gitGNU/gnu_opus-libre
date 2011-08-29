@@ -68,7 +68,7 @@ Alto = \relative do' {
   <sol mib'>4--\f <sol mib'>8 <sol mib'>
   \t {<sol mib'> <sol mib'> <sol mib'>}
   <sol mib'>16 <sol mib'> <sol mib'> <sol mib'> |
-  r4 la16\< re, sold mi' do8\! r |
+  r4 la16\mp\< re, sold mi' do8\! r |
   sol4--\downbow\ff lab--\downbow fa--\downbow r8 mib-.\p |
   reb1*5/4-- | r2 r4 mib'-"pizz."--\mp r | do-- r1 |
 
@@ -78,102 +78,104 @@ Alto = \relative do' {
   %% Courtesy of S. Prokofiev (hint: piano concerto #2)
   r2 re4-"(non legato)" do | re do re do |
   re do re do | re do re <fa do'> |
-  <la mi'> <sib mib> <la mi'> <sib mib> |
-  <la mi'> <sib mib> <la mi'> <sib mib> |
-  <si fad'> <reb lab'> <si fad'> <reb lab'> |
-  <si fad'> <reb lab'> <si fad'> <reb lab'> |
-  <la sol'> r r2 |
+  <la mi'>( <sib mib> <la mi'> <sib mib>) |
+  <la mi'>( <sib mib> <la mi'> <sib mib>) |
+  <si fad'>( <reb lab'>) <si fad'>( <reb lab'>) |
+  <si fad'>( <reb lab'>) <si fad'>( <reb lab'>) |
+  <la sol'>-- r r2 |
   R1*11
-  r2 do,( sol') r4 reb~ reb2 si'?~ si lab~ lab2. fa4~ fa2 solb sib la! mi' re |
-  R1 mib1 R1 |
+  r2 do,(\p sol') r4 reb~( reb2 si'?~ si lab~ lab2. fa4~ fa2 solb sib\< la! mi' re)\! |
+  R1 mib1\f R1 |
 
   %%% 5 %%%
-  r2 re( sol1~) sol2 r |
-  dod, red fad la, lab mi' re mib re1( mib) |
-  r2 fa,4~ <fa sib>~ <fa sib>1 <re la'>2. r4 |
+  r2 re(\pp sol1~) sol2 r |
+  dod,\mf\( red fad la, lab mi' re mib re1(\> mib)\)\! |
+  r2 fa,4~\pp <fa sib>~ <fa sib>1 <re la'>2. r4 |
   %% I'm assuming there's a-->mib here (was: mi)
-  \t {r4 si'8} fad[ do] sib'2 mib,16[ sol'] fa,[ la lab mi] |
-  dod2 re1 |
-  re4 do? re do <re sib'> <do la'> <re sib'> <do la'> |
-  <sib' mib> <la mi'> <sib mib> <la mi'> |
-  R2 <reb, lab'>1 R1 R2. <mib sib'>1 |
+  \t {r4 si'8\mf\cresc} fad[ do] sib'2 mib,16[ sol'] fa,[ la lab mi] |
+  dod2--\! re1-- |
+  re4(\p-"flaut." do? re do <re sib'> <do la'> <re sib'> <do la'> |
+  <sib' mib> <la mi'> <sib mib> <la mi'>) |
+  R2 <reb, lab'>1-- R1 R2. <mib sib'>1-- |
 
   %%% 6 %%%
   %% Don't tell me you don't like to play barrés. You know you want to.
-  <la mi'>2 <sib fa'> <solb reb'>2. r4 |
-  <mib sib'>2. <sol re'>2 |
+  <la mi'>2(\p <sib fa'> <solb reb'>2.) r4 |
+  <mib sib'>2.( <sol re'>2) |
   R2
-  <mi! si'!>2 <fad dod'> <sol re'> r |
-  <fa do'> <mib sib'>2. |
-  r4 la16 re, sold mi' do8 r |
-  sol4 lab fa r sol lab fa r |
+  <mi! si'!>2(\mp <fad dod'> <sol re'>) r |
+  <fa do'>( <mib sib'>2.) |
+  r4 la16\mp\< re, sold mi' do8\! r |
+  sol4--\fp lab-- fa-- r sol-- lab-- fa-- r |
 
   %%% 7 %%%
-  <sol re'> r <lab mib'> r | <fa do'> r r2 |
-  <sol re'>4 r <lab mib'> r | <fa do'> r r2 |
-  <sol re'>4 r <mib lab> r <fa do'> r <sol re'> <sol re'> |
-  <re do'> r <mib reb'> r |
-  \t {<re do'> r mib2 reb} |
-  \t {sol8 sol re'} sol4~ \t {sol8 sol, re'} sol4~ |
-  \t {sol8 sol, mib'} \t {lab mi mib,} <do' la'>4 r |
-  \t {<sol do fa>4 sol8} do4 \t {<re, sol fa'>4 sol8} do4 |
-  <fa, mi'> r r2 |
+  <sol re'>--\mf r <lab mib'>-- r | <fa do'>-- r r2 |
+  <sol re'>4-- r <lab mib'>-- r | <fa do'>-- r r2 |
+  <sol re'>4--\f r <mib lab>-- r <fa do'>-- r <sol re'>-- <sol re'>-- |
+  <re do'>-- r <mib reb'>-- r |
+  \t {<re do'>-- r mib2--(\upbow reb--)} |
+  \t {sol8 sol(\mf re')} sol4--~ \t {sol8 sol,( re')} sol4--~ |
+  \t {sol8 sol,(\< mib')} \t {lab( mi) mib,} <do' la'>4--\! r |
+  \t {<sol do fa>4->-- sol8-.} do4-- \t {<re, sol fa'>4->-- sol8-.} do4-- |
+  <fa, mi'>--\sf r r2 |
 
   %%% 8 %%%
-  sib2-"sul C" la4 | si mi fa reb2 |
-  do4 mib fad, sold | re'2. |
-  r4 la16 re, sold mi' do8 r |
-  sol1*5/4~ sol~ sol |
-  mib4 fa si r8 la do4 |
+  sib2-"sul C"( -\dyn "ff_intense" la4 | si mi fa reb2) |
+  do4( mib fad, sold\> | re'2.*2/3) s4\! |
+  r4 la16\pp re, sold mi' do8 r |
+  sol1*5/4~\pp sol~ sol |
+  mib4--\downbow\ff fa--\downbow si--\downbow r8 la do4-. |
 
   %%% 9 %%%
-  sol16 sol sol8 r <re sol> sol16 sol sol8 <do, sol'>4 |
-  <mib sib'> re8 re sol4 <do fa> |
-  sol16 sol sol8 r <re sol> sol16 sol sol8 <do, sol'>4 |
-  <mib sib'> re8 re sol4 <mi re'> |
-  <sol fa'> r <sol fa'> r |
-  <fad re'> <fa re'> <sol do> <la re> |
-  <fad red'> <fa mi'> <re do'> <mi si' fad'> |
-  sol r8 reb16 lab' mib'4. reb,16 lab' mib'8 re, |
-  sol4 r8 reb16 lab' mib'4. reb,16 lab' mib'8 re, |
-  sol8 reb16 lab' mib'8 re, sol reb16 lab' mib'8 re, |
-  <sol re'>4 <fad red'>8 <fad red'> <mib re'>4 <fad dod'>8 <fad dod'> |
-  r4 r8 do4 si'8 | sol4 |
+  sol16->\fp -"net" sol sol8-. r <re sol>-. sol16 sol sol8-. <do, sol'>4-- |
+  <mib sib'>-- re8-. re-. sol4-. <do fa>-- |
+  sol16-> sol sol8-. r <re sol>-. sol16 sol sol8-. <do, sol'>4-- |
+  <mib sib'>-- re8-. re-. sol4-. <mi re'>->-- |
+  <sol fa'>--\mf r <sol fa'>-- r |
+  <fad re'>-- <fa re'>-- <sol do>-- <la re>-- |
+  <fad red'>-- <fa mi'>-- <re do'>-- <mi si' fad'>->-- |
+  sol-- r8 reb16\mp\< lab' mib'4.--\! reb,16 lab' mib'8-. re,-.\sf |
+  sol4-- r8 reb16\< lab' mib'4.\! reb,16 lab' mib'8-. re,-. |
+  sol8-.\sf reb16( lab') mib'8 re,-. sol-.\sf reb16( lab') mib'8 re,-. |
+  <sol re'>4--\ff <fad red'>8-. <fad red'>-. <mib re'>4-- <fad dod'>8-. <fad dod'>-. |
+  r4 r8 do4->--\upbow( si'8) | sol4-. |
 
   %%% 10 %%%
   R1*9/8 R1*4/8 R1*6/8 R1*1/8 R1*2/8 |
-  re'8-"sul C" re re mib mib mib do do do |
-  re[ re re re] | lab[ lab] sib[ sib] do[ do] | si' | sol,4 |
-  sol'8 sol sol lab lab lab fa fa fa |
-  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' | sol, re' |
-  sol sol sol lab lab lab fa fa fa |
-  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si' | <re,, sol>4 |
+  re'8-.-"sul C"\p re-. re-. mib-. mib-. mib-. do-. do-. do-. |
+  re-.[ re-. re-. re-.] | lab[ lab] sib[ sib] do[ do] | si'-. | sol,4-- |
+  sol'8\mp sol sol lab lab lab fa fa fa |
+  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si'-. | sol,\< re' |
+  sol\mf sol sol lab lab lab fa fa fa |
+  sol[ sol sol sol] | reb[ reb] mib[ mib] do[ do] | si'-. | <re,, sol>4 --|
   do'8 do do reb reb reb sib sib sib |
-  do[ do do do] | solb[ solb] lab[ lab] fa[ fa] | mi' | sol,!4 |
-  do8 do do reb reb reb sib sib sib |
-  do[ do do do] | solb[ solb] lab[ lab] sib[ sib] | fad' | sol,4 |
+  do[ do do do] | solb[ solb] lab[ lab] fa[ fa] | mi'-. | sol,!4-- |
+  do8\f do do reb reb reb sib sib sib |
+  do[ do do do] | solb[ solb] lab[ lab] sib[ sib] | fad'-. | sol,4-- |
   R4
 
   %%% 11 %%%
-  r4. r4. r4 sol8 |
-  sol[ sol] lab[ lab lab] fa[ fa fa] sol[ sol] |
+  r4. r4. r4 sol8->\mf |
+  sol[ sol] lab[-> lab lab] fa[-> fa fa] sol[-> sol] |
   sol[ sol] reb[ reb] mib[ mib] do |
   si' sol[ sol] lab[ lab] fa |
   <la mi'>[ do,] do[ si'] sol[ sol] |
-  fa sib mi fa, sib mi fa, sib mi fa, sib mi |
-  dod[ dod sol] dod[ dod dod sol] |
-  fa sib mi fa, sib mi fa, sib mi fa, sib mi |
-  fa, sib mi fa, sib mi fa, sib mi fa, sib mi |
-  dod[ dod dod] | sol re' |
-  do4. reb sib | do2 |
-  re,4. mib do | re2 |
-  fad4 si do,4. |
+  fa\p sib mi fa, sib mi fa, sib mi fa, sib mi |
+  dod[->\ff dod sol] dod[-> dod dod sol] |
+  fa\p sib mi fa, sib mi fa, sib mi fa, sib mi |
+  fa,\cresc sib mi fa, sib mi fa, sib mi fa, sib mi |
+  dod[->\ff dod dod] | sol-. re'-. |
+  do4.--\downbow\mf reb--\downbow sib--\downbow | do2--\downbow |
+  re,4.(\ff mib do | re2) |
+  fad4(\upbow si do,4.) |
 
   %%% 12 %%%
-  <fa do' mi>4 <fa do' mi> <fa do' mi> r8 fa' reb4 |
-  <re, sol>2 r4 r8 re' |
-  <re, sol>2 r4 r8 re' |
-  <re, sol>2 r4 r8 re' |
-  sol,4 re8 la' mi' si' fad' reb, |
-  <sol, sol'>4
+  <fa do' mi>4--\downbow\sf
+  <fa do' mi>--\downbow\sf
+  <fa do' mi>--\downbow\sf r8 fa'-.\mp reb4-- |
+  <re, sol>2--\f r4 r8 re'-. |
+  <re, sol>2-- r4 r8 re'-. |
+  <re, sol>2-- r4 r8 re'-. |
+  sol,4--\ff re8 la' mi' si' fad' reb,-> |
+  <sol, sol'>4->--
 }

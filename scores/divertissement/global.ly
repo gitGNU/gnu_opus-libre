@@ -94,10 +94,10 @@ Mesures = {
   \mark \default s1*2           %% 6 %%
   \time 5/4 s1*5/4
   \time 2/4 s2
-  \time 4/4 s1*2
+  \time 4/4 s1 s1\startText "rit."
   \time 5/4 s1*5/4
   \tempo "Peu à peu au Tempo I"
-  \time 3/4 s2.
+  \time 3/4 s2.\stopText
   \time 4/4 s1*2
   \mark \default s1*12          %% 7 %%
   \tempo "Plus vite"
@@ -159,11 +159,11 @@ Mesures = {
   \time 9/8 s1*9/8
   \time 4/8 s2
   \time 9/8 s1*9/8
-  \time 4/8 s2
+  \time 4/8 s2\startText "rit."
   \time 7/8 s1*7/8
   \tempo "Tempo I"
   \mark \default                %% 12 %%
-  \time 5/4 s1*5/4
+  \time 5/4 s1*5/4\stopText
   \tempo "Vite"
   \time 4/4 s1*4
   \time 1/4 s4
