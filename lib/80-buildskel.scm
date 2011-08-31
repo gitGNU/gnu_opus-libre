@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- 80-buildskel.scm                                   ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -17,6 +17,9 @@
 ;------------------------------------------------------------------;
 
 
+(load "libdynamics.scm")
+
+(define *has-timeline* (make-parameter #f))
 
 (define (assoc-name alist name)
   "If NAME begins with a lower case letter, then
@@ -53,23 +56,25 @@ markup exists."
   ;; create a Voice for it.  If a matching timeline can be
   ;; found, try and squash it as well."
   (define-music-function (parser location name) (string?)
-    (let* ((current-name (string-append current-part name))
+    (let* ((current-name (string-append (*current-part*) name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
-           (part-timeline (ly:parser-lookup parser
-                                            (string->symbol
-                                             (string-append current-part lang:timeline-suffix))))
-           (instr-timeline (ly:parser-lookup parser
-                                             (string->symbol
-                                              (string-append current-name lang:timeline-suffix)))))
+           (global-timeline (if (not (*has-timeline*))
+                                (ly:parser-lookup parser
+                                  (string->symbol
+                                    (string-append (*current-part*) lang:timeline-suffix)))
+                                #f))
+           (local-timeline (ly:parser-lookup parser
+                             (string->symbol
+                               (string-append current-name lang:timeline-suffix)))))
       (ly:debug-message "Loading music from ~a..." current-name)
       (if (ly:music? music)
           #{ \new Voice = $name
              <<
                $music
-               $(if (ly:music? instr-timeline)
-                    instr-timeline
-                    (if (ly:music? part-timeline)
-                        part-timeline))
+               $(if (ly:music? local-timeline)
+                    local-timeline
+                    (if (ly:music? global-timeline)
+                        (begin (*has-timeline* #t) global-timeline)))
              >>
           #}
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
@@ -107,22 +112,18 @@ markup exists."
   ;; this staff (using appropriate suffixes)."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (current-name (string-append current-part name))
+           (current-name (string-append (*current-part*) name))
            (music (ly:parser-lookup parser (string->symbol current-name)))
            (instr (make-this-text name lang:instr-suffix))
-           (short-instr (make-this-text name lang:short-instr-suffix))
-           (lyrics (ly:parser-lookup parser
-                                     (string->symbol
-                                      (string-append current-name lang:lyrics-suffix)))))
+           (short-instr (make-this-text name lang:short-instr-suffix)))
       (if (ly:music? music)
           #{ <<
-             \new Staff \with {
+             \new Staff = $name \with {
                instrumentName = $instr
                shortInstrumentName = $short-instr
              }
              \newVoice $name
-               $(if (ly:music? lyrics)
-                  #{ \new Lyrics \lyricsto $name $lyrics #})
+             \newLyrics $name
           >> #}
           (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
               (make-music 'Music 'void #t))))))
@@ -135,7 +136,7 @@ markup exists."
 ;; Create Lyrics contexts accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (current-name (string-append current-part name)))
+           (current-name (string-append (*current-part*) name)))
       #{
         $(let* ((musiclist (list #{ {} #}))
                 (numlist (if (ly:get-option 'only-suffixed-varnames)
@@ -148,7 +149,7 @@ markup exists."
                     (if (ly:music? lyrics)
                         (append! musiclist (list
                                             #{ \new Lyrics \lyricsto $name $lyrics #})))))
-                lang:numbers)
+                numlist)
           (make-simultaneous-music musiclist))
       #})))
 
@@ -165,7 +166,7 @@ markup exists."
                             lang:numbers
                             (cons "" lang:numbers))))
           (map (lambda (x)
-                  (let ((staff-name (string-append current-part name (string-capitalize x))))
+                  (let ((staff-name (string-append (*current-part*) name (string-capitalize x))))
                      (append! musiclist (list
                         #{ \newStaff $staff-name #}))))
             lang:numbers)
@@ -185,12 +186,11 @@ markup exists."
     (let* ((name (assoc-name lang:instruments name))
            (upper (string-append name (string-capitalize lang:upper-hand)))
            (lower (string-append name (string-capitalize lang:lower-hand)))
-           (dynamics (string-append current-part name lang:dynamics-suffix))
+           (dynamics (string-append (*current-part*) name lang:dynamics-suffix))
            (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
-      ;; requires removeDynamics, defined in libmusic.scm
-      ;; (which should have been loaded by now, since macros need it).
+      ;; requires removeDynamics, defined in libdynamics.scm
     #{ \new PianoStaff \with {
          instrumentName = $instr
          shortInstrumentName = $short-instr
@@ -199,7 +199,10 @@ markup exists."
            \removeDynamics \newVoice $upper
          \newDynamics $(if (ly:music? dynvar)
                            dynamics
-                           (string-append upper " " lower))
+                           (string-append
+                             (*current-part*) upper
+                             " "
+                             (*current-part*) lower))
          \new Staff = $lang:lower-hand
            \removeDynamics \newVoice $lower
      >>#})))

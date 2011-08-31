@@ -1,7 +1,7 @@
 %------------------------------------------------------------------%
 % opus_libre -- include.ly                                         %
 %                                                                  %
-% (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        %
+% (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        %
 %                                                                  %
 %     opus_libre is a free framework for GNU LilyPond: you may     %
 % redistribute it and/or modify it under the terms of the GNU      %
@@ -36,7 +36,6 @@
 
 #(load "lib/init.scm")
 #(include-scm conf:lib-dir #t)
-#(include-ly score-dir)
 %%%%%%%%%%%%%%%%%%%%%% Define music-functions %%%%%%%%%%%%%%%%%%%%%%
 
 %% Required by main.ly --------------------------------------------%

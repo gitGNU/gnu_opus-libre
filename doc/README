@@ -1,6 +1,6 @@
  opus_libre -- README
 
- (c) 2008-2010 Valentin Villenave <valentin@villenave.net>
+ (c) 2008-2011 Valentin Villenave <valentin@villenave.net>
     opus_libre is a free framework for GNU LilyPond: you may
  redistribute it and/or modify it under the terms of the GNU
  General Public License as published by the Free Software
@@ -55,6 +55,9 @@ actually. Oh well).  Which means that:
   - /bin contains "applications" (well, in this case, LilyPond macros)
          that you can use to make your life (well, at least your music
          typesetting) a bit easier.
+  - doc/ You're reading it. Duh.
+    - snippets/ Short snippets, intended to be merged with upstream
+                documentation or the LSR.  Eventually. If I care.
   - /lib contains "libraries" (in this case, Scheme functions) that
          you normally don't have to deal with directly.  As long as your
          entry file (the one you'll feed to LilyPond, typically main.ly)
@@ -80,7 +83,6 @@ actually. Oh well).  Which means that:
             specific to a particular score.
   - /share contains resources that aren't algorithmic (that's not entirely
            true however, as we'll see):
-    - doc/ You're reading it. Duh.
     - fonts/ Fancier fonts than Lily's Century SchoolBook or whatever are the
              default fonts on your system.
     - images/ Cute little thingies you might want on your scores.  Mostly Postscript

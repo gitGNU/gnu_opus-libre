@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- liblayout.scm                                      ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -29,4 +29,29 @@
 (define modern-cautionaries-style
   `(Staff ,(make-accidental-rule 'same-octave 1)
           ,(make-accidental-rule 'any-octave 1)))
- 
+
+(define modern-script-alist
+  (let* ((new-alist default-script-alist)
+         (set-prio! (lambda (script prio) (assoc-set! new-alist script
+                              (acons 
+                                    'script-priority prio
+                                     (assoc-get script default-script-alist))))))
+     ;(set-prio! "staccato" -100)
+     (set-prio! "accent" -105)
+     (set-prio! "tenuto" -110)
+     new-alist))
+
+(define modern-time-signature-settings
+  (append default-time-signature-settings
+    '(
+      ((3 . 16) .
+                ((baseMoment . (3 . 16))))
+      ((5 . 16) .
+                ((baseMoment . (3 . 16))))
+      ((7 . 16) .
+                ((baseMoment . (4 . 16))))
+      ((2 . 8) .
+                ((baseMoment . (2 . 8))))
+      ((7 . 8) .
+                ((baseMoment . (4 . 8))))
+    )))

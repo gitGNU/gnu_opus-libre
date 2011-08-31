@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- 30-readconf.scm                                    ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -84,9 +84,9 @@
 ;;   dedicated subdir of the score dir, or if none can be found, in
 ;;   the score dir itself.  This allows for local overrides to be
 ;;   loaded early in the compilation process."
-  (let ((local-score (string-append score-dir "/score.ly"))
+  (let ((local-score (string-append (*current-score*) "/score.ly"))
         (usr-conf (if (defined-string? 'conf:local-conf-dir)
-                      (let ((usr-dir (string-append score-dir "/" conf:local-conf-dir)))
+                      (let ((usr-dir (string-append (*current-score*) "/" conf:local-conf-dir)))
                         (if (exists? usr-dir)
                             (begin
                               (ly:debug-message "Local configuration dir found in ~a" usr-dir)
@@ -94,8 +94,8 @@
                             (begin
                               (ly:debug-message "~a does not exist; looking for overrides in parent directory."
                                 usr-dir)
-                              score-dir)))
-                      score-dir)))
+                              (*current-score*))))
+                       (*current-score*))))
     (parse-def-file conf:conf-file conf:conf-prefix)
     (parse-def-dir conf:conf-dir)
     (if (exists? local-score)
@@ -106,4 +106,3 @@
     ;; be used later for macros, themes, local overrides etc.
     (set! conf:local-conf-dir usr-conf)
     (parse-def-dir conf:local-conf-dir)))
-

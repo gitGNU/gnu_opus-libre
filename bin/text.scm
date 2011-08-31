@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- text.scm                                           ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -26,13 +26,18 @@
 (define dyn
   ;;syntax: -\dyn instead of \dyn (see Issue #1264).
   (define-music-function (parser location arg) (markup?)
-    (make-music 'AbsoluteDynamicEvent
-                'text (cond
-                       ((string? arg)
-                        (if (string-every char-set:dynamics arg)
-                            arg
-                            (markup #:dynamic-string arg)))
-                       (else arg)))))
+    (let ((d (make-music 'AbsoluteDynamicEvent)))
+      (ly:music-set-property! d 'tweaks
+        (acons 'self-alignment-X -0.8
+          (ly:music-property d 'tweaks)))
+      (ly:music-set-property! d 'text
+        (cond
+          ((string? arg)
+           (if (string-every char-set:dynamics arg)
+               arg
+               (markup #:dynamic-string arg)))
+          (else arg)))
+      d)))
 
 (define dyncresc
   (define-music-function (parser location arg) (markup?)
@@ -55,6 +60,52 @@
                                  arg
                                  (markup #:dynamic-string arg)))
                             (else arg)))))
+
+;; Adapted from LSR snippet #233 (from Reinhold?)
+(define (make-hairpin-text dir text)
+  (make-music
+     'OverrideProperty 'once #t
+     'grob-property-path (list 'stencil)
+     'grob-value (lambda (grob)
+                   (ly:stencil-aligned-to
+                    (ly:stencil-combine-at-edge
+                     (ly:stencil-aligned-to (ly:hairpin::print grob) X CENTER)
+                     Y dir ;;FIXME:direction should be computer automatically
+                     (ly:stencil-aligned-to (grob-interpret-markup grob
+                                               (make-indic-markup text)) X CENTER))
+                    X LEFT))
+     'symbol
+     'Hairpin))
+
+;; (define *hairpin-text-direction* (make-parameter #f))
+;; (define hairpinText
+;;   (define-music-function (parser location text) (markup?)
+;;     (make-sequential-music
+;;      (list
+;;        (make-music
+;;         'ApplyContext
+;;         'procedure (lambda (ctx)
+;;                      (let ((parent-staff (ly:context-id (ly:context-parent ctx)))
+;;                            (global-dir (assoc-get 'direction
+;;                                                   (ly:context-grob-definition ctx 'DynamicLineSpanner))))
+;;                        (*hairpin-text-direction*
+;;                         (if (or (string-suffix-ci? lang:upper-hand parent-staff)
+;;                                 (eq? global-dir UP))
+;;                             UP
+;;                             DOWN)))))
+;;         (make-hairpin-text (*hairpin-text-direction*) text)))))
+
+(define hairpinText
+  (define-music-function (parser location text) (markup?)
+    (make-hairpin-text DOWN text)))
+
+(define hairpinTextUp
+  (define-music-function (parser location text) (markup?)
+    (make-hairpin-text UP text)))
+
+(define hairpinTextDown
+  (define-music-function (parser location text) (markup?)
+    (make-hairpin-text DOWN text)))
 
 (define startText
   (define-music-function (location parser txt) (markup?)
@@ -121,4 +172,3 @@
          \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
-

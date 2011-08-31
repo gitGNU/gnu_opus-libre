@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- init.scm                                           ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -20,10 +20,16 @@
 ; Init file: mandatory variables and functions.
 
 (use-modules
+ ; regular expressions
  (ice-9 regex)
+ ; optional arguments
  (ice-9 optargs)
+ ; delimited i/o
  (ice-9 rdelim)
- (ice-9 popen))
+ ; command pipe
+ (ice-9 popen)
+ ; parameters
+ (srfi srfi-39))
 
 
 (define-public (ly:debug-message string . rest)
@@ -91,4 +97,3 @@
          scm-files)))
 
 ;------------------------------------------------------------------;
-;

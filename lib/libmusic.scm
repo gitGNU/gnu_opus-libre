@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- libmusic.scm                                       ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -89,56 +89,64 @@
            (octavize e))))
   music)
 
-;; automatic dynamics
-(define (dynamic? x)
-  (let ((name (ly:music-property x 'name)))
-    (or
-     (eq? name 'DynamicEvent)
-     (eq? name 'AbsoluteDynamicEvent)
-     (eq? name 'CrescendoEvent)
-     (eq? name 'DecrescendoEvent)
-     (eq? name 'SpanDynamicEvent))))
 
-(define keepDyn
-;; Tag all dynamics in MUSIC.
-  (define-music-function (parser location music) (ly:music?)
-    (music-filter
-     (lambda (x)
-       (if (dynamic? x)
-           (set! (ly:music-property x 'tags)
-                 (cons 'staff-dynamics
-                       (ly:music-property x 'tags))))
-       x) music)))
+;;; Smart transposition -- from LSR #266
 
-(define removeDynamics
-;; Remove untagged dynamics.
-  (define-music-function (parser location music) (ly:music?)
-    (if (ly:get-option 'no-auto-piano-dynamics)
-        music
-        (music-filter
-         (lambda (x)
-           (let ((tags (ly:music-property x 'tags))
-                 (dir (ly:music-property x 'direction)))
-             (not (and
-                   (dynamic? x)
-                   (not (memq 'staff-dynamics tags))
-                   (null? dir)))))
-         music))))
+(define  (naturalize-pitch p)
+ (let* ((o (ly:pitch-octave p))
+        (a (* 4 (ly:pitch-alteration p)))
+   ; alteration, a, in quarter tone steps, for historical reasons
+        (n (ly:pitch-notename p)))
+   (cond
+    ((and (> a 1) (or (eq? n 6) (eq? n 2)))
+     (set! a (- a 2))
+     (set! n (+ n 1)))
+    ((and (< a -1) (or (eq? n 0) (eq? n 3)))
+     (set! a (+ a 2))
+     (set! n (- n 1))))
+   (cond
+    ((> a 2) (set! a (- a 4)) (set! n (+ n 1)))
+    ((< a -2) (set! a (+ a 4)) (set! n (- n 1))))
+   (if (< n 0) (begin (set! o (- o 1)) (set! n (+ n 7))))
+   (if (> n 6) (begin (set! o (+ o 1)) (set! n (- n 7))))
+   (ly:make-pitch o n (/ a 4))))
 
-(define filterDynamics
-;; Like \removeWithTag, but will not affect other contexts
-;; (i.e. no \change, no \bar or \time etc.)
-  (define-music-function (parser location music) (ly:music?)
-    (if (ly:get-option 'no-auto-piano-dynamics)
-        (make-music 'Music 'void #t)
-        (music-filter
-          (lambda (x)
-            (let ((name (ly:music-property x 'name))
-                  (tags (ly:music-property x 'tags))
-                  (dir (ly:music-property x 'direction)))
-              (not (or
-                    (eq? name 'ContextChange)
-                    (eq? name 'ContextSpeccedMusic)
-                    (memq 'staff-dynamics tags)
-                    (not (null? dir))))))
-          music))))
+(define (naturalize music)
+ (let* ((es (ly:music-property music 'elements))
+        (e (ly:music-property music 'element))
+        (p (ly:music-property music 'pitch)))
+   (if (pair? es)
+       (ly:music-set-property!
+        music 'elements
+        (map (lambda (x) (naturalize x)) es)))
+   (if (ly:music? e)
+       (ly:music-set-property!
+        music 'element
+        (naturalize e)))
+   (if (ly:pitch? p)
+       (begin
+         (set! p (naturalize-pitch p))
+         (ly:music-set-property! music 'pitch p)))
+   music))
+
+;; copied from upstream scm/define-markup-commands.scm
+;; for some reason it wasn't define-public'ed there...
+
+(define (parse-my-duration duration-string)
+  "Parse the `duration-string', e.g. ''4..'' or ''breve.'',
+and return a (log dots) list.
+  Unlike the original `parse-simple-duration',
+this function is whitespace-insensitive."
+  (let* ((duration-string (string-trim-both duration-string))
+         (match (regexp-exec (make-regexp "(breve|longa|maxima|[0-9]+)(\\.*)")
+                             duration-string)))
+    (if (and match (string=? duration-string (match:substring match 0)))
+        (let ((len (match:substring match 1))
+              (dots (match:substring match 2)))
+          (list (cond ((string=? len "breve") -1)
+                      ((string=? len "longa") -2)
+                      ((string=? len "maxima") -3)
+                      (else (log2 (string->number len))))
+                (if dots (string-length dots) 0)))
+        (ly:error (_ "not a valid duration string: ~a") duration-string))))
+

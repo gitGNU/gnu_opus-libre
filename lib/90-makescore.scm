@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------;
 ; opus_libre -- 90-makescore.scm                                   ;
 ;                                                                  ;
-; (c) 2008-2010 Valentin Villenave <valentin@villenave.net>        ;
+; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
 ;     opus_libre is a free framework for GNU LilyPond: you may     ;
 ; redistribute it and/or modify it under the terms of the GNU      ;
@@ -18,13 +18,12 @@
 
 
 (define numbers #f)
-(define current-part #f)
 (define conf:structure numbers)
 
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
   (if (null? alist) '()
-      (cons (cons (cdr (car alist)) (car (car alist)))
+      (cons (cons (cdar alist) (caar alist))
             (alist-reverse (cdr alist)))))
 
 (define (ls-index str lst)
@@ -36,7 +35,7 @@
 current-part music."
   (eval-string (format #f
                        "(define-public (apply-skel arg instr-list)
-      (set! current-part (car arg))
+      (*current-part* (car arg))
       (let* ((str (cdr arg))
              (key (assoc-ref (alist-reverse instr-list) str)))
         (if (string? key) #{ \\newStaff $key #}
@@ -60,7 +59,7 @@ current-part music."
                            (string-append conf:output-dir "/")
                            #f))
                (new-filename (car (reverse
-                                    (string-split score-dir #\/)))))
+                                    (string-split (*current-score*) #\/)))))
           (if (not prefix)
               orig-filename
               (string-append prefix new-filename)))))
@@ -80,7 +79,6 @@ current-part music."
     eval-macros
     eval-layout
     eval-theme
-    (include-ly score-dir)
     (let* ((defined-structure (ly:parser-lookup parser 'structure))
            (struct (cond ((not defined-structure) conf:default-structure)
                          ((string? defined-structure) (list defined-structure))
@@ -109,3 +107,5 @@ current-part music."
 
            struct)
       (make-music 'Music 'void #t))))
+
+(include-ly (*current-score*))
