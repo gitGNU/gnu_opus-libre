@@ -128,3 +128,25 @@
          (set! p (naturalize-pitch p))
          (ly:music-set-property! music 'pitch p)))
    music))
+
+;; copied from upstream scm/define-markup-commands.scm
+;; for some reason it wasn't define-public'ed there...
+
+(define (parse-my-duration duration-string)
+  "Parse the `duration-string', e.g. ''4..'' or ''breve.'',
+and return a (log dots) list.
+  Unlike the original `parse-simple-duration',
+this function is whitespace-insensitive."
+  (let* ((duration-string (string-trim-both duration-string))
+         (match (regexp-exec (make-regexp "(breve|longa|maxima|[0-9]+)(\\.*)")
+                             duration-string)))
+    (if (and match (string=? duration-string (match:substring match 0)))
+        (let ((len (match:substring match 1))
+              (dots (match:substring match 2)))
+          (list (cond ((string=? len "breve") -1)
+                      ((string=? len "longa") -2)
+                      ((string=? len "maxima") -3)
+                      (else (log2 (string->number len))))
+                (if dots (string-length dots) 0)))
+        (ly:error (_ "not a valid duration string: ~a") duration-string))))
+

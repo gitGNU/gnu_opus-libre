@@ -36,6 +36,34 @@
 (make-simple-function lang:tuplet-letter-quad ; \tttt
                       #{ \times 4/7 $x #})
 
+;; Time signature equivalence
+(define equiv
+ (define-music-function (parser location str) (string?)
+   (let* ((mark-ev (make-music 'MarkEvent))
+          (mark-ch (make-event-chord (list mark-ev)))
+          (equiv-lst (string-split str #\= ))
+          (before (parse-my-duration (car equiv-lst)))
+          (after (parse-my-duration (cadr equiv-lst)))
+          (before-mark (make-note-by-number-markup (car before) (cadr before) 1))
+          (after-mark (make-note-by-number-markup (car after) (cadr after) 1))
+          (equiv-mark
+            (make-concat-markup
+              (list
+                (make-general-align-markup Y DOWN
+                  (make-smaller-markup before-mark))
+                (make-simple-markup " ")
+                (make-simple-markup "=")
+                (make-simple-markup " ")
+                (make-general-align-markup Y DOWN
+                  (make-smaller-markup after-mark))
+                )))
+          (mark-set (context-spec-music
+              (make-property-set 'rehearsalMark equiv-mark)
+              'Score)))
+         (ly:music-set-property! mark-ev 'origin location)
+         (ly:music-set-property! mark-ev 'label equiv-mark)
+         mark-ch)))
+
 ;; Auto octavation ------------------------------------------------;
 (define oct
   (define-music-function (parser location x) (ly:music?)
@@ -180,3 +208,4 @@ $x
 (define smart
  (define-music-function (parser location x) (ly:music?)
    (naturalize x)))
+
