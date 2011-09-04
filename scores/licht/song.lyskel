@@ -1,0 +1,13 @@
+<<
+  \new StaffGroup \with {
+    fontSize = #-2
+    \override StaffSymbol #'staff-space = #(magstep -2)
+    \override StaffSymbol #'thickness = #(magstep -2)
+  } <<
+    \newStaff $"FluteSoprano"
+    \newStaff $"FluteAlto"
+    \newStaff $"FluteTenor"
+    \newStaff $"FluteBasse"
+  >>
+  \newPianoStaff $"Piano"
+>>
