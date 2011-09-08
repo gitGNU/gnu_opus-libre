@@ -47,5 +47,42 @@ FluteAlto =
   R1*5/4*2 r8 fa8. sib16 |
 
   %%% Tempo primo %%%
-  mib2.
+  mib2. \t {r8 sol,, do} \t {sol' do, sol} |
+  \t {r sol do} sol'16 do, fad, sol |
+  \tt {la do re mi fa} sol la sib sol |
+  do, re mib sol re do fa, sol |
+  lab2~ lab8 r |
+  sib'2 la,!2.~ la1 |
+  r2 r4 fad'~ |
+
+  %%% Lent et blanc %%%
+  fad2 mid4 r |
+  la2 sold4 r |
+  red2 mi4 r |
+  lad,2 si4 r |
+  do2 sol4 r |
+  re'2 dod4 r |
+  fad2 sol4 r |
+  red2 mi4 r |
+  la2 sold4 r |
+  re2 dod4 r |
+  do'2 mib,4 r |
+  la2 si?4 r |
+  fad2 mid4 r |
+  si'2 lad4 r |
+  mi2 red4 r |
+  la'2 sold4 r |
+  re2 dod4 r |
+  sol'2 fad4 r |
+  do2 si4 r |
+  fa'2 mi4 r |
+  mib2 re4 r |
+  mi2 red4 r |
+  lab'2 sol4 r |
+  la2 sold sol solb fa mi4 mib |
+  re2 reb do2. do4~\downprall do1 |
+  do4. si~ si4 do2. dod1\fermata
+
+  %%% Tempo primo %%%
+  
 }

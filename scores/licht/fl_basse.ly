@@ -40,7 +40,37 @@ FluteBasse =
   R1 R1*5/4*2 r8 fa'4 |
 
   %%% Tempo primo %%%
-  do'2.
+  do'2. \t {do,8 sol' r} \t {r4 sol8} |
+  \t {do, fad sol} \t {r do, fa,} |
+  do'8. sol'16 do,8. sol'16 |
+  dod,8 sol'16 re~ re sol mib8 |
+  sol16 mi8 sol16 \tt {fa8 fad sol fa si} |
+  mi4 r | r r8 la, sol,4~ sol1 R1
+
+  %%% lent et blanc %%%
+  R1*10 r4 fad'2 mid4 |
+  r do2 sol4 |
+  r sold2 la4 |
+  r red2 mi4 |
+  r si2 lad4 |
+  r re2 dod4 |
+  r fad2. |
+  r4 do?2. |
+  r4 mi2. |
+  r4 sib2. |
+  r4 re2. |
+  r4 la2. |
+  r4 lab2. |
+  r4 sol' si2 |
+  r4 sol sib2 |
+  r4 fad la2 |
+  r4 sol, lab'2 |
+  sol,4 lab'2 sol,4 |
+  lab'2 sol,4 lab'~ |
+  lab sol, lab'~ lab sol,2. lab'1
+
+  %%% Tempo primo %%%
+  
 }
 
 

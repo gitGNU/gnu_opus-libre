@@ -42,5 +42,27 @@ FluteTenor =
   R1 R1*5/4*2 r8 re' mi,16 do' |
 
   %%% Tempo primo %%%
-  lab'2.
+  lab'2. \t {re,8 do re} \t {do re do} |
+  re16 sol, re do \tt {re sol do re sol} |
+  la re, sol, do, re fa do' sol' |
+  si4 do,, fa sol la? la'2 |
+  r4 la,8 re,4.~ re1 R1
+
+  %%% lent et blanc %%%
+  R1*7
+  r2 dod' sid4 r mi2 |
+  red4 r lad2 si4 r fa'2 |
+  fad4 r sol2 re4 r la2 |
+  sold4 r dod2 re4 r lad2 |
+  si4 r mi2 red4 r la'2 |
+  sold4 r mib2 re4 r sol2 |
+  fad4 r reb2 do4 r si2 |
+  sib4 r sol'2 fad4 r fa2~ |
+  fa4 mi2 red4~ red re2 reb4~ |
+  reb do2 r4 |
+  do si sib2 |
+  fa2. fa4~ fa1 fa4. mi~ mi4 re2. mib1\fermata
+
+  %%% Tempo primo %%%
+  
 }

@@ -58,7 +58,28 @@ PianoMd =
 
   %%% Tempo primo %%%
   \pl <fa, sib fa' la>2.\arpeggio {r4 \t {r mib' re'}}
-%   \ottava #1
+  \ottava #1
+  \mg dod'16 \md dod dod' dod,
+  \mg do \md do do' do,16*1/2\mg \lightBeams \graceNotes \t {lab,32*1/2[ sol' \md solb]} |
+  \md fa'16 \mg fa \md fa' fa,
+  \mg mi \md mi mi' \mg \lightBeams \graceNotes \tt {sib,,32*1/2[ mi \md la re sol]} |
+  \mg \ottava #1 si16 \md si si' si,
+  \mg sib \md sib sib' sib, |
+  \mg \ottava #0 <si, sol'> \md sol' sol'
+  \mg <lad,, fad'> \md fad' fad'
+  \mg <sol,, mib'> \md mib' mib'
+  \mg re, \md re re'
+  \mg <mi,, do'> \md do'' \mg si, \md si'
+  \mg <do,, la'> \md la'' \mg <dob,, lab'> \md lab'' |
+  \ttt {sol8[ fad fa mi mib re]}
+  \tt {dod16 do si sib la}
+  \tt {lab sol fad fa mi} \ottava #0
+  \tt {dod do si lab sol} |
+  \t {fad8 mi re} re dod \clef bass sib[ la] <solb lab>[ fa] |
+  \pl {fa2 mi\fermata} <sol do>1\fermata |
+
+  %%% Lent et blanc %%%
+  
 }
 
 PianoMg =
@@ -117,5 +138,12 @@ PianoMg =
   <do,lab'>4 <fa do'> sib mib dod | <fad>4.\arpeggio
 
   %%% Tempo primo %%%
-  <do, sol' re'>2.\arpeggio
+  <do, sol' re'>2.\arpeggio\laissezVibrer
+  \clef treble s2*3 s1*5/4
+  <mib''' sib'>2 <la, mi'>4 <re, la'>4. \clef bass <sol, re'>8 |
+  <do, sol'>4 <la mi'> <fa do'> <reb lab'> |
+  <do sol'>1\fermata
+
+  %%% Lent et blanc %%%
+  
 }

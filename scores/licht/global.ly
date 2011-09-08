@@ -120,7 +120,7 @@ Mesures = {
   \time 3/4 s2.
   \time 4/4 s1*2 \bar "||"
 
-  \tempo "Lent et blanc" 4 = 60
+  \tempo "Lent et blanc" 2 = 30
   s1*28
   s1\startText "rit."
   \time 3/4 s2.

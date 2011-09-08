@@ -44,5 +44,41 @@ FluteSoprano =
   r8 do' \t {sol,16 do sol'} |
 
   %%% Tempo primo %%%
-  reb'2.
+  reb'2. \t {do,,8 re do} \t {re do re} |
+  \t {do re do} re16 do re do |
+  \t {re8 sol do} \t {lab' re, fad,} |
+  re16 sol do re \t {fa8 sol lab} |
+  sol,2~ sol8 r |
+  mib2 mi2.~ mi1 | R1
+
+  %%% Lent et blanc %%%
+  R1*3 r2 r4 si'~ |
+  si lad r fa'~ |
+  fa do r dod~ |
+  dod re r sold~ |
+  sold la r mi~ |
+  mi red r sol?~ |
+  sol fad r si,~ |
+  si mi r fa~ |
+  fa sib, r la~ |
+  la sold r re'~ |
+  re dod r fad~ |
+  fad sol r fad~ |
+  fad mid r si~ |
+  si lad r mi'~ |
+  mi red r la~ |
+  la sold r re'~ |
+  re dod r re~ |
+  re dod r re~ |
+  re dod r re~ |
+  re dod r re~ |
+  re dod2 do4~ |
+  do si2 sib4~ |
+  sib la4. lab |
+  sol2*3/4 \graceNotes \lightBeams {mib16 fa} \grace sol16 fa2\prallprall
+  sol2. sol4~ sol1
+  sol4. sol~ sol4 fa2. fad1\fermata
+
+  %%% Tempo primo %%%
+  
 }
