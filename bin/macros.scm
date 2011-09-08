@@ -110,21 +110,68 @@
 #})
 
 (define graceNote #{
-\once \set fontSize = #-2
+%% Pasted from graceSettings definition in engraver-init.ly
+%% \once \override Stem #'direction = #UP
+\once \override Stem #'font-size = #-3
+\once \override NoteHead #'font-size = #-3
+\once \override TabNoteHead #'font-size = #-4
+\once \override Dots #'font-size = #-3
+\once \override Stem #'length-fraction = #0.8
+%% \once \override Stem #'no-stem-extend = ##t
+\once \override Beam #'beam-thickness = #0.384
+\once \override Beam #'length-fraction = #0.8
+\once \override Accidental #'font-size = #-4
+\once \override AccidentalCautionary #'font-size = #-4
+%% \once \override Slur #'direction = #DOWN
+\once \override Script #'font-size = #-3
+\once \override Fingering #'font-size = #-8
+\once \override StringNumber #'font-size = #-8
 #})
 
 (define graceNotes
   (define-music-function (parser location x) (ly:music?)
-  #{ \tiny $x \normalsize #}))
+  #{
+%% \override Stem #'direction = #UP %% Nope.
+\override Stem #'font-size = #-3
+\override NoteHead #'font-size = #-3
+\override TabNoteHead #'font-size = #-4
+\override Dots #'font-size = #-3
+\override Stem #'length-fraction = #0.8
+%% \override Stem #'no-stem-extend = ##t %% Not sure.
+\override Beam #'beam-thickness = #0.384
+\override Beam #'length-fraction = #0.8
+\override Accidental #'font-size = #-4
+\override AccidentalCautionary #'font-size = #-4
+%% \override Slur #'direction = #DOWN
+\override Script #'font-size = #-3
+\override Fingering #'font-size = #-8
+\override StringNumber #'font-size = #-8
+$x
+%% \revert Stem #'direction
+\revert Stem #'font-size
+\revert NoteHead #'font-size
+\revert TabNoteHead #'font-size
+\revert Dots #'font-size
+\revert Stem #'length-fraction
+%% \revert Stem #'no-stem-extend
+\revert Beam #'beam-thickness
+\revert Beam #'length-fraction
+\revert Accidental #'font-size
+\revert AccidentalCautionary #'font-size
+%% \revert Slur #'direction
+\revert Script #'font-size
+\revert Fingering #'font-size
+\revert StringNumber #'font-size
+#}))
 
 (define lightBeam #{
-\once \override Beam #'beam-thickness = #0.36
+\once \override Beam #'beam-thickness = #0.384
 \once \override Beam #'gap = #0.5
 #})
 
 (define lightBeams
   (define-music-function (parser location x) (ly:music?) #{
-\override Beam #'beam-thickness = #0.36
+\override Beam #'beam-thickness = #0.384
 \override Beam #'gap = #0.5
 $x
 \revert Beam #'beam-thickness
