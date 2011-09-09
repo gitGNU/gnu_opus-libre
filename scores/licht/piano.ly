@@ -79,7 +79,107 @@ PianoMd =
   \pl {fa2 mi\fermata} <sol do>1\fermata |
 
   %%% Lent et blanc %%%
-  
+  R1*12 <lab, mi'>1 <si? sol'> <fad re'> <reb' lab'> <sib la'> |
+  <mi! sib' mib> \clef treble <la do re fa> <si dod mi fad sold> |
+  <re mi sol la si> <fad sold si dod red> <la si re mi sol> |
+  <sol sib do re fa?> <lab sib reb mib solb> <do? mib fa sol sib> |
+  <fad, la si re mi>2 <lab sib reb mib fa> |
+  <si dod mi fad sold> <re mi fad la si> |
+  \ottava #1 <lab' sib do mib fa>1 <reb mib solb lab sib>2. \ottava #0
+  R1 <la,, re>1\fermata
+
+  %%% Tempo primo %%%
+  <sol' sol'>1~ <sol sol'>2
+  si16 mi fad sib \tt {mib, re reb mi, lab}
+  \graceNote fad'16 <sol, do sol'>2.*11/12~
+  sol'16 do re lab |
+  si mi, mi' fad, sib fa mib sib
+  \tttt {re mib, do fa reb' la si} |
+  \graceNote lab <sol do sol'>2.*11/12~
+  <sol do sol'>4*3/4 \graceNotes {fa'16*1/2 sol}
+  fa8 mi16 la, \t {fa'8 <sib, sib'> <do do'>} |
+  <solb solb'>4 <reb' reb'>~ \t {<reb reb'>8 <re re'> <mi mi'>}
+  \ottava #1 la'16 <re, re'> \ottava #0 <lab lab'> <reb, reb'>~
+  <reb reb'>2 s4 r2 |
+  \graceNote <fad, lab'>16_"(m.s.)"
+  \pl {do'2*7/8 si2\fermata\laissezVibrer}
+  <sol re' sol>1*15/16^"(m.d.)"
+  R1*4 \clef bass <mib, sol re'>4 <re sold dod>2.\fermata R1*2
+
+  %%% lent et statique %%%
+  R1*7/4*2
+  s2. R1*5/4 s2. R1*5/4*2
+
+  %%% lento e simplice %%%
+  R2. R1
+  <mib, sib'>1 <do sol'> <re la'>2.~ <re la'> R2.
+  <mib sib'>1 <si fad'>2. <re la'> |
+  <do sol'>~ <do sol'>2 |
+  <sol' do sol'>2.~ <sol do sol'> |
+  lab2 fa | R1 R2 R1
+  r4 <sol' si re>4. <solb sib mib> |
+  R1*2
+
+  %%% au mouvement %%%
+  \pl {
+    \t {r8 sol si} \t {sol si sol} \t {si sol si} \t {sol si sol}
+    \t {r solb sib} \t {solb sib solb} \t {sib solb sib} \t {solb sib solb}
+    \t {r sol si} \t {sol si sol} \t {si sol si} \t {sol si sol}
+  }
+  {
+    \t {re' si re} \t {si re si} \t {re si re} \t {si re si}
+    \t {mib sib mib} \t {sib mib sib} \t {mib sib mib} \t {sib mib sib}
+    \t {re si re} \t {si re si} \t {re si re} \t {si re si}
+  }
+  \t {mi <mi, si'> <sold mi'>} \t {<mi si'> <sold mi'> <mi si'>}
+  \t {<sold mi'> <mi si'> <sold mi'>} \t {<mi si'> <sold mi'> <mi si'>} |
+  \t {re' <sol, si> <si re>} \t {<sol si> <si re> <sol si>}
+  \t {<si re> <sol si> <si re>} \t {<sol si> <si re> <sol si>} |
+  \t {mib' <solb, sib> <sib mib>} \t {<solb sib> <sib mib> <solb sib>}
+  \t {<sib mib> <solb sib> <sib mib>} \t {<solb sib> <sib mib> <solb sib>} |
+  \t {re' <sol, si> <si re>} \t {<sol si> <si re> <sol si>}
+  \t {<si re> <sol si> <si re>} \t {<sol si> <si re> <sol si>} |
+  \t {mi' <mi, si'> <sold mi'>} \t {<mi si'> <sold mi'> <mi si'>}
+  \t {<sold mi'> <mi si'> <sold mi'>}
+  \pl \t {mi sold \mg \stemUp red \stemNeutral} \t {\md si' mi \clef treble sold} |
+  \ttt {<si re>16 re, <sol si> re <si' re> re,}
+  \ttt {<sol si> re <si' re> re, <sol si> re}
+  \ttt {<si' re> re, <sol si> re <si' re> re,} |
+  \ttt {<dob' mib> mib, <lab dob> mib <dob' mib> mib,}
+  \ttt {<lab dob> mib <dob' mib> mib, <lab dob> mib}
+  \ttt {<dob' mib> mib, <lab dob> mib <dob' mib> mib,} |
+  \ttt {<si' re> re, <sol si> re <si' re> re,}
+  \ttt {<sol si> re <si' re> re, <sol si> re}
+  \ttt {<si' re> re, <sol si> re <si' re> re,} |
+  \ttt {<dod' mi> mi, <la dod> mi <dod' mi> mi,}
+  \ttt {<la dod> mi <dod' la'> mi, <dod' mi> mi,}
+  \ttt {<do' lab'> lab <do mi?> lab <do lab'> lab} |
+  \ttt {<sol' si re> re <sol, si re> re <sol' si re> re}
+  \ttt {<sol, si re> re <sol' si re> re <sol, si re> re}
+  \ttt {<sol' si re> re <sol, si re> re <solb' mib'> <mib sib'>} |
+  \ttt {<mib, solb sib> sib <solb'' mib'> <mib sib'> <mib, solb sib> sib}
+  \ttt {<solb'' mib'> <mib sib'> <mib, solb sib> sib <solb'' mib'> <mib sib'>}
+  \ttt {<mib, solb sib> sib <solb'' mib'> <mib sib'> <mib, solb sib> sib} |
+  \ttt {<sol'' si re> <re sol si> <sol, si re> re <sol' si re> <re sol si>}
+  \ttt {<sol, si re> re <sol' si re> <re sol si> <sol, si re> re}
+  \ttt {<sol' si re> <re sol si> <sol, si re> re <re' sol si> si} |
+  \ttt {<sold' si mi> mi <mi, sold si> si <sold'' si mi> mi}
+  \ttt {<mi, sold si> si <sold'' si mi> mi <mi, sold si> si}
+  \ttt {<si'' mi sold> sold <mi, sold si> si \ottava #1 <si'' sold'> mi} |
+
+  %%% toujours très calme %%%
+  \t {si'16*2/3 sold mi} \ottava #0 \t {si sold mi} \t {si sold mi}
+  \mg \t {si sold mi} \t {si mi sold} \md \t {si mi sold} |
+  \t {do, fa la} \t {do la fa} \t {do fa la}
+  \t {do fa la} \ottava #1 \t {do fa la} \t {dod, fad lad}
+  \t {si16 sold mi} \ottava #0 \t {si sold mi} \t {si sold mi}
+  \mg \t {si sold mi} \t {si mi sold} \md \t {si mi sold} |
+  \t {do, fa la} \t {do fa la} \ottava #1 \t {do fa la} \t {dod, fad lad} |
+  \t {si sold mi} \ottava #0 \t {si sold mi} \t {si sold mi} \t {si mi sold} |
+  \t {do, fa la} \t {do fa la} \ottava #1 \t {do fa la} \t {dod, fad lad} |
+
+  %%% a tempo %%%
+  <si, mi sold si>2.~ _"(non arp.)" <si mi sold si>~ <si mi sold si>2 r4 |
 }
 
 PianoMg =
@@ -145,5 +245,69 @@ PianoMg =
   <do sol'>1\fermata
 
   %%% Lent et blanc %%%
+  R1*12
+  \ottava #-1 <sol red'>1 <sib fad'> <mid, dod'> <do' la'?> re |
+  <fa, do'> \ottava #0 <mib' mib'> <re re'> <la la'> <mi mi'> |
+  <fa fa'> <fad fad'> <do' do'> <dod dod'> <sold sold'>~ |
+  <sold sold'>4 <sol sol'>2.~ <sol sol'>2 \ottava #-1 <si,? si'?>~ |
+  <si si'>2. \ottava #0 sib'1 <si' mi>\fermata
+
+  %%% Tempo primo %%%
+  \ottava #-1 do,,4 fa sol \ottava #0 do |
+  fa sol reb' sib |
+  do, fa sol si | mi la <re, sib'> |
+  do, fa sol do sol' do |
+  sol do, sol fa mib' lab |
+  \md <si fa' sol si> \mg <mib, reb' mib> <sol, fa'> |
+  R1*5
+  <reb lab'>4 <mib la>2.\fermata |
+  R1*2
+
+  %%% lent et statique %%%
+  R1*7/4*2
+  \ottava #-1 \graceNotes {do,16*1/2[ sold' si] \ottava #0 \md mi[ sib' re]}
+  \mg dod2.*18/24\fermata _"loco"
+  R1*5/4
+  \ottava #-1 \graceNotes {do,,16*1/2[ sol'! si] \ottava #0 \md fa'[ si! mi]}
+  \mg dod2.*18/24\fermata _"loco"
+  R1*5/4*2
+
+  % %% lento e simplice %%%
+  R2.
+  <sold la'>2. fad4 |
+  \ottava #-1 mib,1 do re2.~ re |
+  \ottava #0 <solb' lab'>2 <fa sol>4
+  \ottava #-1 mib,1 si2. re do~ do2 |
+  <do do'>2.~ <do do'>
+  <do do'>2 <do do'> \ottava #0
+  <sol' sol'>1~ <sol sol'>2
+  <fa fa'>1~ <fa fa'>
+  <fa fa'>~ <fa fa'> |
+
+  %%% au mouvement %%%
+  <fa fa'>~ <fa fa'> <fa fa'>~ <fa fa'> |
+  <fa fa'>~ <fa fa'> <fa fa'>~ <fa fa'>1*3/4 s4 |
+  \pl {<fa fa'>2.~ <fa fa'> <fa fa'>~ <fa fa'>4. <re re'>}
+  {
+    \ttt {r8 si'''16 re, sol re}
+    \ttt {si' re, sol re si' re,}
+    \ttt {sol re si' re, sol re} |
+    \ttt {r8 dob'16 mib, lab mib}
+    \ttt {dob' mib, lab mib dob' mib,}
+    \ttt {lab mib dob' mib, lab mib} |
+    \ttt {r8 si'16 re, sol re}
+    \ttt {si' re, sol re si' re,}
+    \ttt {sol re si' re, sol re} |
+    \t {r8 dod'16 mi, la8} r4 \t {r8 mi'?16 lab, do8}
+  }
+
+  %%% toujours très calme %%%
+  <fa,,, fa'>2.~ <fa fa'> <fa fa'>~ <fa fa'>
+  <fa fa'>2\laissezVibrer r8 <re re'>4.
+  <fa fa'>2.\laissezVibrer <re re'>2
+  <fa fa'> <re re'>4 <sol sol'> |
+  <fa fa'>2.~ <fa fa'>~ <fa fa'>2 r4 |
+
+  %%% Più mosso %%%
   
 }

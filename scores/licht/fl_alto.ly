@@ -84,5 +84,53 @@ FluteAlto =
   do4. si~ si4 do2. dod1\fermata
 
   %%% Tempo primo %%%
-  
+  do1~ do4 r r2 |
+  R1 R2.*6 R1
+  r4 fad2 mid4 |
+  \t {la2 sold red'} |
+  red,4 mi la4. si8 |
+  fa4 re2. |
+  R1*3
+
+  %%% lent et statique %%%
+  r1 re2. | mib1~ mib4 r2 |
+  R2. R1*5/4 R2.
+  r2 fa,2.~ fa1*15/16 \graceNote sol16 fad4\startTrillSpan |
+
+  %%% lento e semplice %%%
+  \t {fad8\stopTrillSpan sol fad} \t {sol fad sol} \t {fad sol fad} |
+  \t {sol fad sol} \t {fad sol fad} \t {r fad sol} \t {fad sol fad} |
+  \t {sol fad sol} \t {fad sol fad} \t {sol fad sol} \t {r sol fad} |
+  \t {sol fad sol} \t {fad sol fad} \t {sol fad sol} \t {fad sol fad} |
+  \t {r fad sol} \t {fad sol fad} \t {sol fad sol} |
+  \t {fad sol fad} \t {sol fad sol} \t {r sol fad} |
+  \t {fa lab fa} \t {lab fa sol} \t {lab sib r} |
+  r4 mi red r |
+  r sol fad | r dod re |
+  \t {r4 fa,8~} \t {fa fad sol} fa16 sol' lab8~ |
+  lab4 la8 sib16 fa |
+  si,2.~ si4 sib2 |
+  r8 re~ \t {re4 dod lad~} lad |
+  r4 dod2. | R2
+  r2 r4 r8 si'?~ si2. r4 |
+  r2 do~ do si |
+
+  %%% au mouvement %%%
+  r2 r8 re r4 | R1
+  r4 r8 re,~ re2~ re4 r r8 do'4. |
+  r4 \ttt {do16 do do do do8} r2 |
+  r \t {r4 si16 si} \t {si si si8 r} |
+  r4 do32 do do do do16 r r4 si32 si si si si16 r |
+  R1
+  r4 do32 do do do do16 r r4 |
+  r si32 si si si si16 r r4 |
+  R2.
+  dod32 dod dod dod dod16 r r2 |
+  r4 r8 do32 do do do do8 r |
+  r4 si32 si si si si16 r r4 |
+  \t {r16 do do do do do} r4 \ttt {r8 r16 si si si} |
+  \t {si si r4} r2 |
+
+  %%% toujours très calme %%%
+  r4
 }

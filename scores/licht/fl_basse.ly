@@ -70,7 +70,47 @@ FluteBasse =
   lab sol, lab'~ lab sol,2. lab'1
 
   %%% Tempo primo %%%
-  
+  sol,1~ sol4 r r2 |
+  R1 R2.*6 R1*3
+  r4 fad'2 mid4 red4 mi2.
+  R1*3
+
+  %%% lent et statique %%%
+  r4 fad2 fa4~ fa2. sol1~ sol4 r2 |
+  R2. fa,4 solb'2*3/4 \graceNote solb,8 fa'2
+  R2. r2 solb,2.~ solb1 r4 |
+
+  %%% lento e semplice %%%
+  \t {r8 fad' sol} \t {fad sol fad} \t {sol fad sol}
+  \t {fad sol fad} \t {sol fad sol} \t {fad sol fad} \t {sol r sol} |
+  \t {fad sol fad} \t {sol fad sol} \t {fad sol fad} \t {sol fad sol} |
+  \t {fad sol fad} \t {sol r sol} \t {fad sol fad} \t {sol fad sol} |
+  \t {fad sol fad} \t {sol fad sol} \t {fad sol fad} |
+  \t {sol r sol} \t {fad sol fad} \t {sol fad sol} | solb4 fa mi |
+  \t {solb8 fa solb} \t {fa solb fa} \t {solb fa solb} \t {fa solb fa} |
+  \t {solb fa solb} \t {fa solb fa} \t {solb fa r} |
+  \t {fa solb fa} \t {solb fa solb} \t {fa solb fa} |
+  \t {fad mi dod} sib4. fa8 fad sold si dod |
+  \t {re mib re} \t {mib re mib} \t {re mib re} |
+  \t {mib re mib} \t {re mib re} \t {mib re mib} |
+  \t {re mib r} \t {mib re mib} \t {re mib re} \t {mib re mib} |
+  \t {re mib re} \t {mib re mib} \t {re mib re} \t {mib re mib} |
+  \t {si mib si} \t {mib si mib} |
+  R1*4
+
+  %%% au mouvement %%%
+  R1 r4 r8 r16 mib r2 |
+  R1 do'2. r4 |
+  R1*2 fa,,2. r4 | R1
+  fa2~ fa8 r | fa2~ fa8 r |
+  fa2~ fa8 r fa16 sol8.~ sol2 |
+  fa4 r8 sol4. |
+  fa4 sol8 r fa sol |
+  fa sol fa16 sol fa sol fa sol fa sol |
+  \t {fad8 sol fad} \t {sol fad sol} fad sol16 r |
+
+  %%% toujours très calme %%%
+  fa4
 }
 
 

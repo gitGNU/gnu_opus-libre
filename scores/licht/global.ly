@@ -134,9 +134,9 @@ Mesures = {
   s2.*3
   \tempo \markup \medium \italic "a tempo"
   s2.\stopText
-  \time 4/4 s1*3
+  \time 4/4 s1*2
   s1\startText "poco string."
-  s1\stopText
+  s1 s\stopText
   s1*3
   \time 7/4 s1*7/4*2 \bar "||"
   \time 3/4 s2.

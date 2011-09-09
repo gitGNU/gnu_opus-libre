@@ -64,5 +64,48 @@ FluteTenor =
   fa2. fa4~ fa1 fa4. mi~ mi4 re2. mib1\fermata
 
   %%% Tempo primo %%%
-  
+  re1~ re4 r r2 |
+  R1 R2.*6 R1*2
+  r4 fad2 mid8 la~ |
+  la4. sold8~ sold2 |
+  sib4 la2. |
+  R1*3
+
+  %%% lent et statique %%%
+  r2 lab2~ lab2. | sib1~ sib4 r2 |
+  R2. R1*5/4 R2. |
+  r2 r4 mib, si'~ |
+  si2 sib r4 |
+
+  %%% lento e semplice %%%
+  R2. R1
+  r4 mi red r | r mi red r |
+  r4 r8 mi4. | red sib |
+  \t {la?8 sib la} \t {sib la sib} \t {la sib sol} |
+  \t {fa solb fa} \t {solb fa solb}
+  \t {fa solb fa} \t {solb fa solb} |
+  \t {fa solb fa} \t {r fa solb} \t {fa solb fa} |
+  \t {solb fa solb} \t {fa solb fa} \t {solb fa solb} |
+  \t {fa solb fa} \t {solb fa solb} \t {r solb sol} |
+  \t {fa solb fa} \t {solb fa mi} |
+  \t {mib re mib} \t {re mib re} \t {mib re mib} |
+  \t {re mib re} \t {mib r mib} \t {re mib re} |
+  \t {mib re mib} \t {re mib re} \t {mib re mib} re16 mib re reb |
+  \t {do8 reb do} \t {reb do reb} \t {do4 do8 r do4} re4. sib'8~ | sib2 r |
+  R1
+
+  %%% au mouvement %%%
+  R1*3 r8 si' r4 r2 |
+  r si,~ si2. r4 |
+  R1 r2 \t {si4 fa r}
+  R1 si,2. r4 |
+  r4 r8 si4.\glissando -"gliss." do?2~ do8 r |
+  re2~ re8 r red4 mi fad |
+  \t {red mi fad8 r} red mi~ |
+  mi fad \t {red mi fad} \t {red mi fad} |
+  \t {red mi red} \t {mi red mi} \t {red r red} |
+  mi16 red mi red mi red mi red \t {mi8 red mi} |
+
+  %%% toujours très calme %%%
+  r4
 }

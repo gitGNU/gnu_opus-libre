@@ -80,5 +80,49 @@ FluteSoprano =
   sol4. sol~ sol4 fa2. fad1\fermata
 
   %%% Tempo primo %%%
-  
+  sol1~ sol4 r r2 | R1
+  R2.*6
+  r4 fad2 mid4 |
+  la2 sold red' mi |
+  \t {lad,2 si do} |
+  do4 sol2. R1*2
+
+  %%% lent et statique %%
+  sol'2.\fermata _"(long)" r4  |
+  sol,1~ sol2. fad1~ fad4 r2 |
+  R2. R1*5/4 R2. R1*5/4
+  re1 r4 |
+
+  %%% lento e semplice %%%
+  R2. R1
+  r4 \t {r sol8~} \t {sol lab mi'} sol4 |
+  r2 r8 fa reb4 |
+  r2 fa4~ fa2 r4 |
+  R2.
+  r4 \t {r8 sol, mi'~} \t {mi lab, mi'} sol4 |
+  r8 fa4 reb4. |
+  r8 sol si dod lab4 |
+  r8 do,, fa sol reb4~ | \tt {reb8 re mi fa sol} |
+  r4 r8 re'4. | dod2. |
+  r8 re~ \t {re4 dod lad~} lad4 |
+  r4 dod'2. | R2
+  R1*3 re,1 |
+
+  %%% au mouvement %%%
+  r4 do r2 | R1 |
+  r8 do,~ do4~ do2~ | do4 r r8 re'4. |
+  r2 r4 \ttt {r8 re16 re re re} |
+  re8 r r4 r2 |
+  r re32 re re re re16 r r4 |
+  r red32 red red red red16 r r2 |
+  r re32 re re re re16 r |
+  r4 lad'32 lad lad lad lad16 r r4 |
+  r r8 lad,32 lad lad lad lad8 r |
+  \t {r8 lad'16 r8.} r16 sold,32 sold sold sold sold16 \t {r4 sol'16 r} |
+  r2 r8 re32 re re re re8 r r2 |
+  r4 \ttt {r8 re16 re re re} re8 r |
+  r4 \tt {r16 red red red red} red8 r |
+
+  %%% Toujours très calme %%%
+  r4
 }
