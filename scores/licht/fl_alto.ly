@@ -132,5 +132,72 @@ FluteAlto =
   \t {si si r4} r2 |
 
   %%% toujours très calme %%%
-  r4
+  r8 do,~ \t {do re si~} |
+  si4 do | r do8 si si sib |
+  r4 \tt {fad'16 fad fad fad mid} |
+  R2 fad16 fad fad fad mid8 r |
+  R2.
+  si'4 la sol fad2.~
+
+  %%% Più mosso %%%
+  fad1 r2 r4 |
+  R1*5/4*2 R4. R2
+  sol2 fad4 fa4. mi8~ mi2 |
+  mib2.~ mib2 | r2 fad4 |
+  r2 fa8 dod mi[ si dod] fad |
+  r2 r8 fad | R2 r8 si, dod si |
+  r2 fad'4 | R2 r8 mi sib' |
+  mib r r2 |
+  r4 r8 mib | R2
+  fad8 r r2 | r8 fad r4 |
+  R2.
+  r2 r8 sold8 r4 |
+  \t {sold8 sold sold} \t {sol sol sol} \t {mi mi mi}
+  \t {mib mib mib} \t {sib sib sib} |
+  la2 r r4 | la4 sol reb sib sol |
+  reb'2. r2 | re'2. r2 |
+  sol,8 fad r4 | r fa'8 r4 |
+  \t {mib8 mib mib} mib r r4 | R2.
+  do,8 si mib re sol si sol mib re do |
+  si la sold' sol si si si4 r |
+  R2. fad1 r4 | R1*5/4
+  mi'1 r4 | mi1 r4 | mi1 r4 |
+  \t {re,8 re re} \t {do do do} \t {si si si}
+  \t {mib mib mib} \t {re re re} |
+  si si si2 r |
+
+  %%% lent et paisible %%%
+  R2.*3 R1
+  r4 sol4. fad8 sib la mi' fa r4 |
+  r \t {sol8 do, sol} r4 \t {sol'8 do, sol} |
+  r4 \t {sol'8 do, sol} r4 \t {sol'8 do, sol} |
+  r4 \t {sol'8 do, sol} r4 \t {sol'8 do, sol} |
+  r4 \t {sol'8 do, sol} r4 \t {sol'8 do, sol} |
+  r4 \t {sol'8 do, sol} r4 \t {sol'8 do, sol} |
+  r4 do16 re mi fa |
+  sib2 \tt {dod16 do si sib la} lab8 r r4 |
+  \t {si8 la sol} sol fad mib re si sib |
+  \t {sib2 la lab} |
+  R1 R1*5/4
+  re8 mi fa sol la4 re,2 |
+
+  %%% très calme %%%
+  mi1\fermata R1*5
+  r2 r4 \t {r8 sol4} |
+  \t {fa8 mi la2} \t {fa4 lab sol} |
+  fad1\fermata R1*2
+  r1 r16 mib8 fad16 sol fa8 sold16 |
+  la1\fermata r2
+  r2 r8 red, mi reb |
+  do1\fermata R1
+  r1 \t {fad4 si, dod} |
+  do1\fermata r2 R1.
+  r4 re si R1*3
+  r4 mi2 si'4~ si sol'2.\fermata
+  R1
+
+  %%% très clair %%%
+  r2 fa, |
+  mi2 re~ re~ re8 dod4. |
+  re1~ re\fermata
 }

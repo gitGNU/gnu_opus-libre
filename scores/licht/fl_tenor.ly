@@ -107,5 +107,67 @@ FluteTenor =
   mi16 red mi red mi red mi red \t {mi8 red mi} |
 
   %%% toujours très calme %%%
-  r4
+  r4 mi'8 si'~ \t {si sol mib} r4 |
+  r4 r8 r8 r16 re32 re re re dod16 |
+  r4 do | R2 r4 \tt {do16 do do do si} |
+  R2. r4 r16 do8.~ do16 si8.~ si16 sib8.~ sib2~
+
+  %%% Più mosso %%%
+  sib1 r2 r4 |
+  R1*5/4*2 R4. R2 R2.
+  do4. si8~ si2 | fad2.~ fad2 |
+  r2 dod'4 | r2 dod8 si do[ sold si] dod |
+  r2 r8 dod | R2 r8 fa, si dod |
+  r2 dod4 | R2 r8 dod mi? |
+  sol8 r r2 | r4 r8 sol |
+  R2 do?8 r r2 | r8 re r4 |
+  R2. r2 r8 mib r4 |
+  si4 la re do r | re do sib la r |
+  \t {si8 si si} \t {la la la} \t {sol sol sol}
+  \t {fa fa fa} \t {mib mib mib} |
+  solb,2. r2 | r2 sib8 la r4 mi'8 red |
+  r4 sib'8 la | R1*5/8
+  \t {sol8 sol sol} sol r r4 | R2.
+  sol,8 fa mi lab sol reb' do fad sol red |
+  mi lad, si do sol fa' fa4 r |
+  R2. mi,1 r4 | R1*5/4
+  fad'1 r4 | fad1 r4 | fad1 r4 |
+  \t {fa,8 fa fa} \t {mi mi mi} \t {lab lab lab}
+  \t {sol sol sol} \t {reb reb reb} |
+  sol sol sol2 r4 do,~ |
+
+  %%% lent et paisible %%%
+  do2.~ do~ do2. |
+  R1
+  r8 fa4 mi8 lab[ sol] re' mib la, sib r4 |
+  \t {r8 sol re'} sol r \t {r sol, re'} sol r |
+  \t {r sol, re'} sol r \t {r sol, re'} sol r |
+  \t {r sol, re'} sol r \t {r sol, re'} sol r |
+  \t {r sol, re'} sol r \t {r sol, re'} sol r |
+  \t {r sol, re'} sol r \t {r sol, re'} sol r |
+  do,,16 sol' do re sol8 r | mib2 |
+  r4 \tt {lab16 sol fad fa mi} reb8 r |
+  do4 la fa reb | do1
+  R1 R1*5/4
+  la'8 sold la si do4 do si |
+
+  %%% très calme %%%
+  do1\fermata R1*5
+  r2 r4 \t {r8 re4} |
+  \t {red4 mi2} \t {re4 mi2} |
+  mib1\fermata R1*2
+  r1  r16 sol,8 la16~ la sib8 re16 |
+  mib1\fermata r2 |
+  r2 r8 lab, sol lab16 sol |
+  lab1\fermata R1
+  r1 \t {do4 la8 si sib4} |
+  la1\fermata r2 | R1.
+  r4 reb, do | R1*2
+  r4 mid2 sold4~ | sold2 lad~ lad1\fermata
+  R1
+
+  %%% très clair %%%
+  r2 do do2.~ do8 si16 la | sib8 la sol2.~ |
+  sol8 mi4*3/4 \graceNote sol8*1/2 fad4.\prallprall mi4 |
+  fad1\fermata
 }

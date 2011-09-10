@@ -107,10 +107,73 @@ FluteBasse =
   fa4 r8 sol4. |
   fa4 sol8 r fa sol |
   fa sol fa16 sol fa sol fa sol fa sol |
-  \t {fad8 sol fad} \t {sol fad sol} fad sol16 r |
+  \t {fad8 sol fad} \t {sol fad sol} fad sol |
 
   %%% toujours très calme %%%
-  fa4
+  r16 fa8.~ fa16 mi' si' sold'~ sold8 fa r4 |
+  fa,,4 solb'8~ solb4. \graceNote solb,8*1/2 fa'2*7/8 |
+  r4 solb, \t {fa' la do} |
+  R2. r8 r16 si~ si8. sib16~ sib8. la16~ la8. sol16~ sol2~ |
+
+  %%% Pîù mosso %%%
+  sol1 r2 r4 |
+  R1*5/4*2 R4. R2 R2.
+  fad4. do8~ do2 |
+  sol2.~ sol2 |
+  r2 fa'?4 | r2 re8 la re fa sold do? |
+  r2 r8 fa,? | R2
+  r8 re la re |
+  r2 fa4 | R2
+  r8 fa si? mi? r r2 |
+  r4 r8 mi | R2
+  mi8 r r2 | r8 mi r4 | R2.
+  r2 r8 mi r4 |
+  fad2 r r4 |
+  sol2 r r4 |
+  sol2 r r4 |
+  r4 -"ad lib." la, re fa do |
+  sol4. fad8 r4 reb'8 do r4 |
+  R2 R1*5/8
+  \t {fad8 fad fad} fad r r4 |
+  \t {sol,,8 sol sol} \t {do do do} \t {re re re} |
+  \t {lab lab lab} \t {mi' mi mi} \t {la la la}
+  \t {si si si} \t {sol fad fad} |
+  \t {mi re re} \t {dod si lad} sol sol sol4 r |
+  R2.
+  sol1 r4 | R1*5/4
+  sol'1 r4 |
+  sol1 r4 |
+  sol1 r4 |
+  sol,8 do re lab mib' la si sib fad reb |
+  do do do1 |
+
+  %%% lent et paisible %%%
+  R2.*2 r2 do4~ do8\fermata si mib re la sib fa sol |
+  \t {solb reb' lab'~} lab2~ lab2 sol4 |
+  do,2 do do do |
+  do do do do |
+  do do | sol |
+  R2 r2 \tt {dod'16 do si lab sol} |
+  fa4 re sib solb | fa2. sol4 |
+  R1 R1*5/4
+  fa'4 re8 mi fa4 sol sol, |
+
+  %%% très calme %%%
+  do1\fermata R1*5
+  r2 r4 \t {r8 la' la,} |
+  \t {sold dod fa2} \t {fad4 sib,2} |
+  la1\fermata R1*2
+  r1 r16 la8 re16~ re sol8. |
+  do1\fermata r2 |
+  r2 r8 mi, fa re |
+  lab1\fermata R1
+  r1 \t {red4 mi re} |
+  dod1\fermata r2 R1.
+  r4 fa,8 sol lab4 |
+  R1*2
+  fad2 la red1~ red1\fermata
+  R1
+
+  %%% très clair %%%
+  r2 re2 sol1~ sol re~ re\fermata
 }
-
-

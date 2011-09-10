@@ -88,7 +88,8 @@ Mesures = {
   \time 4/4 s1*5
   \time 7/4 s1*7/4*4 \bar "||"
 
-  \time 3/4 s2.*3\startText "stringendo"
+  \time 3/4 s2.*0\startText "stringendo"
+  s2.*3
   \time 2/4 s2
   \time 3/4 s2.
   \tempo "Piu mosso" 4 = 116
@@ -97,8 +98,8 @@ Mesures = {
   \time 3/4 s2.*4
   \time 2/4 s2
   \time 3/4 s2.*3
-  \time 2/4 s2\startText "poco string."
-  s2*4
+  \time 2/4 s2*0\startText "poco string."
+  s2*5
   \time 3/4 s2.
   \time 2/4 s2*2
   s2\stopText
@@ -121,8 +122,9 @@ Mesures = {
   \time 4/4 s1*2 \bar "||"
 
   \tempo "Lent et blanc" 2 = 30
-  s1*28
-  s1\startText "rit."
+  s1*27
+  s1*0\startText "rit."
+  s1*2
   \time 3/4 s2.
   \time 4/4 s1
   s1\stopText \bar "||"
@@ -130,14 +132,18 @@ Mesures = {
   \tempo "Tempo I" 4 = 56
   s1*3
   \time 3/4 s2.
-  s2.\startText "stringendo"
-  s2.*3
+  s2.*0\startText "stringendo"
+  s2.*4
   \tempo \markup \medium \italic "a tempo"
   s2.\stopText
-  \time 4/4 s1*2
-  s1\startText "poco string."
-  s1 s\stopText
-  s1*3
+  \time 4/4 s1*3
+  s1*0\startText "poco string."
+  s1*2
+  s1\stopText
+  s1 \bar "||"
+
+  \tempo "Lent et statique" 4 = 48
+  s1
   \time 7/4 s1*7/4*2 \bar "||"
   \time 3/4 s2.
   \time 5/4 s1*5/4
@@ -181,7 +187,7 @@ Mesures = {
   \time 2/4 s2*2
   \time 3/4 s2.
   \time 2/4 s2
-  \time 3/4 s2.
+  \time 3/4 s2.*2
   \time 2/4 s2
   \time 3/4 s2.
   \time 2/4 s2*2
@@ -201,7 +207,8 @@ Mesures = {
   \time 5/4 s1*5/4*2
   \time 3/4 s2.
   \time 5/4 s1*5/4*4
-  s1*5/4*2\startText "ral. e dim."
+  s1*0\startText "ral. e dim."
+  s1*5/4*2
   s1*5/4\stopText \bar "||"
 
   \time 3/4
@@ -209,10 +216,11 @@ Mesures = {
   s2.*3
   \time 4/4 s1
   \time 3/4 s2.*2
-  \time 4/4 s1*5/4
+  \time 4/4 s1*5
   \time 2/4 s2*2
   \time 3/4 s2.
-  \time 4/4 s1\startText "rit."
+  \time 4/4 s1*0\startText "rit."
+  s1
   s1\stopText
   \tempo \markup \medium \italic "au mouvement"
   s1
@@ -227,7 +235,7 @@ Mesures = {
   \time 4/4 s1*3
   \time 6/4 s1.*3
   \time 3/4 s2.
-  \time 4/4 s1*5
+  \time 4/4 s1*6
   \tempo \markup \medium \italic "très clair"
   s1*5 \bar "|."
 }

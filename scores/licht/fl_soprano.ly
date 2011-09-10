@@ -124,5 +124,72 @@ FluteSoprano =
   r4 \tt {r16 red red red red} red8 r |
 
   %%% Toujours très calme %%%
-  r4
+  r8 re~ \t {re4 do8~} do4 si |
+  r4 re8~ re do4 | r4 si'8 sib |
+  r4 do,16 do do do si8 r r4 |
+  R2. r8 do~ do sib~ sib la~ la2.~
+
+  %%% Più mosso %%%
+  la1 r2 r4 |
+  R1*5/4*2 R4. R2
+  sol2 sold4 la4. lad8~ lad2 | si2.~ si2 |
+  r2 si4 r2 si8 sol sib[ mi, sol] si |
+  r2 r8 si | R2 r8 sold fa sold |
+  r2 si4 R2 r8 sol mib' | si' r r2 |
+  r4 r8 si | R2 dod8 r r2 |
+  r8 dod r4 | R2.
+  r2 r8 re r4 |
+  fa,2 r r4 |
+  \t {si8 si si} \t {sib sib sib} \t {sol sol sol}
+  \t {fad fad fad} \t {mib mib mib} |
+  re2 r r4 | R1*5/4 dod'2. r2 R2
+  re,8 dod r \t {fad sol la} |
+  \t {si si si} \t {si si si} \t {sol sol sol} |
+  \t {fad fad fad} \t {re re re} \t {dod dod dod} |
+  \t {lad lad lad} \t {la la la} \t {re re re} dod r lad lad |
+  la la re, re dod dod dod4 r |
+  R2. si'1 r4 | R1*5/4
+  si'1 r4 | si1 r4 |
+  \t {si8 si si} \t {sib sib sib} \t {sol sol sol}
+  \t {fad fad fad} \t {re re re} |
+  \t {dod dod dod} \t {sol' sol sol} \t {fad fad fad}
+  \t {re re re} \t {dod dod dod} |
+  si si si2 r |
+
+  %%% lent et paisible %%%
+  R2.*3 R1 R2.*2 R1
+  r2 sol~ sol \graceNote lab8*1/2 sol4*3/4 \t {mi8 sol lab} |
+  sol4 \t {mi8 sol lab} sol do re lab |
+  sol2. r4 |
+  \t {mi4 sol lab} |
+  \t {sol'8 fad fa} \t {mi mib re} |
+  dod r r2 |
+  r2 r4 reb, do1 |
+  R1
+  mib2~ mib8 si'~ si2 |
+  re4 do8 si la4 sol2
+
+  %%% très calme %%%
+  sol1\fermata |
+  R1*5
+  r2 r4 \t {r8 do4} |
+  \t {la8 si do2} \t {re4 dod2} |
+  re1\fermata |
+  R1*2
+  r1 r16 re do dod sib si8 sol16 |
+  fad1\fermata r2 |
+  r2 r8 do' lab mi16 si' |
+  re1\fermata |
+  R1
+  r1 \t {si4 sold fad8 sold} |
+  mi1\fermata r2 |
+  R1.
+  r4 sib' mi, |
+  R1*4
+  do''1\fermata |
+  R1
+
+  %%% très clair %%%
+  r2 sib,4 la |
+  sol1~ sol la~ la\fermata
 }
