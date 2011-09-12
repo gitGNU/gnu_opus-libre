@@ -76,12 +76,15 @@ Mesures = {
   \time 2/4 s2
   \time 4/4 s1*8
   \time 2/4 s2
+      \equiv "4. = 4"
   \time 6/8 s2.
   \time 2/8 s4
+      \equiv "4 = 4."
   \time 15/16 s1*15/16
   \time 4/4 s1
   \time 2/4 s2
   \time 3/4 s2.*2
+      \equiv "8 = 8"
   \time 5/8 s2*5/4*2
   \time 4/4 s1*3
   \time 7/4 s1*7/4*3
@@ -93,7 +96,8 @@ Mesures = {
   \time 2/4 s2
   \time 3/4 s2.
   \tempo "Piu mosso" 4 = 116
-  s2.*6\stopText
+  s2.\stopText
+  s2.*5-"(quasi improvisato)"
   \time 2/4 s2
   \time 3/4 s2.*4
   \time 2/4 s2
@@ -110,6 +114,7 @@ Mesures = {
   \time 3/4 s2.
   \time 4/4 s1
   \time 5/4 s1*5/4*2
+      \equiv "8 = 8"
   \time 3/8 s4.
 
   \time 3/4
@@ -172,7 +177,9 @@ Mesures = {
   \time 2/4
   \tempo \markup {Très calme \medium \italic "(ralentir au besoin)"}
   s2*2
+      \equiv "4. = 4"
   \time 6/8 s2.
+      \equiv "8 = 8"
   \time 4/8 s2*3
   \time 3/4
   \tempo "Tempo I"
@@ -181,6 +188,7 @@ Mesures = {
   \tempo "Più mosso" 4 = 132
   s1*7/4
   \time 5/4 s1*5/4*2
+      \equiv "8 = 8"
   \time 3/8 s4.
   \time 2/4 s2
   \time 3/4 s2.
@@ -193,6 +201,7 @@ Mesures = {
   \time 2/4 s2*2
   \time 3/4 s2.
   \time 2/4 s2
+      \equiv "8 = 8"
   \time 3/8 s4.
   \time 3/4 s2.
   \time 2/4 s2*2
@@ -202,6 +211,7 @@ Mesures = {
   \time 4/4 s1
   \time 5/4 s1*5/4*5
   \time 2/4 s2
+      \equiv "8 = 8"
   \time 5/8 s2*5/4
   \time 3/4 s2.*2
   \time 5/4 s1*5/4*2
