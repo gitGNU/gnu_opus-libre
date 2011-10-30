@@ -1,0 +1,8 @@
+<<
+  \newStaff $"Flute"
+  \newStaff $"Guitare"
+  \newPianoStaff $"Marimba"
+  \new RhythmicStaff \newVoice $"Recitant"
+  \newLyrics $"Recitant"
+  \newPianoStaff $"Piano"
+>>
