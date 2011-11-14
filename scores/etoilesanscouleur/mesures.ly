@@ -1,6 +1,7 @@
 %-- Étoile sans couleur -- mesures.ly -----------------------------%
 % (c) 2011 Valentin Villenave <valentin@villenave.net>
 
+
 Mesures = {
   \tempo "Adagio" 4 = 60
   \time 7/16
@@ -27,3 +28,31 @@ Mesures = {
   s2.*20 \bar "||"
   s2. \bar "|."
 }
+
+
+%- Beaming rules --------------------------------------------------%
+
+%%% Default beaming is pretty dumb and ugly.
+%%% (Or perhaps I may have a peculiar taste.)
+
+
+#(define my-time-signature-settings
+  (append modern-time-signature-settings
+    '(
+      ((3 . 2) .
+       ((baseMoment . (1 . 4))
+	(beamExceptions . ((end .  (((1 . 16) . (4 4 4 4 4 4))))))))
+      ((3 . 4) .
+       ((baseMoment . (1 . 8))
+	(beamExceptions . ((end . (((1 . 8) . (2 4 6))))))))
+    )))
+
+\layout {
+  \context {
+    \Score
+    timeSignatureSettings = #my-time-signature-settings
+    subdivideBeams = ##t
+  }
+}
+
+%------------------------------------------------------------------%

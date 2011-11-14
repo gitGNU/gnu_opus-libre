@@ -4,6 +4,12 @@
 \language "italiano"
 
 
+harmonics =
+#(define-music-function (parser location music) (ly:music?)
+#{ \override NoteHead #'style = #'harmonic-mixed
+$music
+\revert NoteHead #'style #})
+
 arpeggUp =
 #(let* ((m (make-music 'ArpeggioEvent)))
    (ly:music-set-property! m 'tweaks
@@ -18,15 +24,61 @@ arpeggDown =
      (ly:music-property m 'tweaks)))
    m)
 
-plak =
-#(let* ((m (make-music 'ArpeggioEvent)))
-   (ly:music-set-property! m 'tweaks
-    (acons 'stencil ly:arpeggio::brew-chord-bracket
-     (ly:music-property m 'tweaks)))
-   m)
+%%% Muffle symbol. (Mostly used in harp scores, but
+%%% it certainly is convenient for guitar notation.)
+#(define-markup-command (muffle layout props)
+  ()
+  (let ((my-path (make-path-markup 0.12 '(
+            (moveto 0 -1.2)
+            (lineto 0 1.2)
+            (moveto -1.2 0)
+            (lineto 1.2 0))))
+        (inner-circle (make-circle-stencil 0.9 0.15 #f))
+        (outer-circle (make-circle-stencil 1.6 0.12 #f)))
+       (ly:stencil-add (interpret-markup layout props my-path)
+                       (ly:stencil-add inner-circle outer-circle))))
 
+\layout {
+  \context {
+    \Voice
+    harmonicDots = ##t
+  }
+}
 
 Guitare = \relative do' {
+
+%%%% Pedal-like Laissez Vibrer spanners.
+%%%% This is a mere, hackish workaround (not breakable, for example).
+\override Staff.SostenutoPedalLineSpanner #'direction = #UP
+
+%% Hm. It seems "laissez Vibrer" is not genuine guitar lingo.
+%% I'm confident they'll look it up, though.
+\set Staff.pedalSostenutoStrings = #'("l.v." "" "")
+
+%% After Neil Puttock on http://lists.gnu.org/archive/html/bug-lilypond/2010-04/msg00030.html
+  \override Staff.PianoPedalBracket #'stencil =
+ #(lambda (grob)
+    (let* (;; the bracket stencil
+           (bracket (ly:piano-pedal-bracket::print grob))
+           ;; its horizontal extent
+           (bracket-ext (ly:stencil-extent bracket X))
+           ;; a pedal asterisk, aligned on its right edge
+           (asterisk (grob-interpret-markup grob
+               (markup #:right-align #:general-align Y -0.5 #:muffle )))
+           ;; the vertical parent of this bracket (a PianoPedalLineSpanner)
+           (pedal-span (ly:grob-parent grob Y))
+           ;; the right NonMusicalPaperColumn of the line spanner
+           (right-column (ly:spanner-bound pedal-span RIGHT))
+           ;; the column's length relative to the system (effectively the width of the barline)
+           (col-length (interval-length
+               (ly:grob-extent right-column (ly:grob-system grob) X)))
+           (length-result (- (cdr bracket-ext) col-length)))
+      ;; return an asterisk moved the same distance as a bracket, minus the width of the barline
+      (ly:stencil-add
+        (make-line-stencil 0.1 2 0 (- length-result 4) 0)
+        (ly:stencil-translate-axis asterisk length-result X))))
+
+
   \clef "G_8"
   \partial 16 s16
   R1*7/16*2

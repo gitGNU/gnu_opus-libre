@@ -40,7 +40,8 @@ MarimbaMg = \relative do {
   \tt {\mg r16 do, \md dod' \mg mi, \md sold'} |
   \t {\mg r16 do,, do'} \md dod''32 sold, \mg mi,16~
   \t {mi8 \md dod''' fa,} sol do,, | \mg
-  fa,,4:32~ \tt {fa16 re' sib' \md mi do'} \tt {sib re, \mg do mi, fa,} |
+  fa,,4:32~ \tt {\stemUp fa16 re' sib' \md \stemDown mi do'} 
+  \tt {\stemDown sib re, \mg \stemUp do mi, fa,} | \stemNeutral
   \md r16 do''' sib \mg re,, \t {mi8 \md sol'' r} \mg
   \ttt {re,,16 mi do' sib re, mi} |
   \md dod'4:32~ \tt {dod16 \mg re, mi \md sol'' \mg dod,,} \md fa4 |
