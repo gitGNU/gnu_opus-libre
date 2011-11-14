@@ -1,7 +1,5 @@
-%-- Étoile sans couleur -- texte.ly -------------------------------%
+%-- Étoile sans couleur -- definitions.ly -------------------------%
 % (c) 2011 Valentin Villenave <valentin@villenave.net>
-% Texte (c) 2011 Jacques Roubaud.
-
 
 
 %-- Look-and-feel -------------------------------------------------%
@@ -67,7 +65,7 @@ oeil =
 %%% something pronouncable (and preferably
 %%% not too serious).
 
-#(define-public word-list '("pa" "ta" "touille"))
+#(define word-list '("pa" "ta" "touille"))
 
 %%% This will retrieve the text from a separate file,
 %%% and assign it to the appropriate variable.
@@ -108,7 +106,7 @@ oeil =
   (set!
    (ly:music-property note 'tweaks)
    (acons 'letter str
-   (ly:music-property note 'tweaks)))
+    (ly:music-property note 'tweaks)))
   note)
 
 %%% Let's enclose it in a music function (and use it
@@ -160,9 +158,9 @@ oeil =
 lettersOn = {
   \override NoteHead #'stencil = #note-head::brew-ez-stencil
   %% ... which allows us to tweak the defaults:
-  \override NoteHead #'font-size = #-5 %% was 8 originally
+  \override NoteHead #'font-size = #-7 %% was 8 originally
   \override NoteHead #'font-family = #'sans
-  % \override NoteHead #'font-series = #'bold %% bold is ugly.
+  \override NoteHead #'font-series = #'bold %% ugly. But safer.
 }
 lettersOff = {
   \easyHeadsOff

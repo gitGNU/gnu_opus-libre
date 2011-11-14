@@ -82,32 +82,35 @@ Guitare = \relative do' {
   \clef "G_8"
   \partial 16 s16
   R1*7/16*2
-  r4 r16 <red'\2 \harmonic >8_"IV."\laissezVibrer |
+  r4 r16 \harmonics <red'\2>8-"h. 4"\laissezVibrer |
   s1*7/16
   la,,4-0\laissezVibrer dod'\laissezVibrer sib'4*1/2\laissezVibrer 
   \hideNote <la,, dod' sib'>~
-  \hideNote \grace <la dod' sib'>4 r4 <mi'\6-0 \harmonic>2
+  \hideNote \grace <la dod' sib'>4 r4 <mi'\6\harmonic>2-"h. 12"\fermata
 
   %%% 1 %%%
-  <red''\2 \harmonic >4^"laissez vibrer."\laissezVibrer
+  \harmonics <red''\2>4-"h. 16"\laissezVibrer
   <la,,\6>\laissezVibrer dod'\laissezVibrer |
   sib'2.\laissezVibrer |
-  <red\2\harmonic>4 <la,,\6> dod' sib'2.\laissezVibrer R2. |
-  <red\2\harmonic>4 <la,,\6> dod' sib'2.\laissezVibrer |
-  <red\2\harmonic>4 la,,-0 dod' | <re,! dod' red sib'>2.\arpeggio \laissezVibrer |
-  r4 <mi\6-0\harmonic>2\laissezVibrer |
+  \harmonics <red\2>4_"laissez vibrer" <la,,\6> dod' sib'2.\laissezVibrer R2. |
+  \harmonics <red\2>4 <la,,\6> dod' sib'2.\laissezVibrer |
+  \harmonics <red\2>4 la,,-0 dod' |
+  <re,! dod' red sib'>2.\arpeggio \laissezVibrer |
+  r4 <mi\6\harmonic>2-"h. 12" \laissezVibrer |
   red''8_"XI." mi,,, la-0 mi dod'' la, |
-  \pl {r4 r8 <mi'\6-0\harmonic>4.} sib''2.\laissezVibrer |
-  red4 <la,\5-0\harmonic> \t {dod8 fad sol} |
+  \pl {r4 r8 \harmonics <mi'>4.} sib''2.\laissezVibrer |
+  red4 \harmonics <la,\5>-"h. 12" \t {dod8 fad( sol)} |
   sib4\laissezVibrer \t {r8 red mi,,,} la16-0 mi dod'' la, |
   \t {sib''16 mi,,, dod''} \t {la, fad''( sol)}
   sib-. <la,, red''>-- \t {dod' sib' sol} \t {red'8 la,, dod'} |
-  <re,! sib'' dod red>4 <la sib' re fad dod'!>\arpeggio
+  <re,! mi' sol red'>4 <la sib' re fad dod'!>\arpeggio
   \acciaccatura {mi32[ red' sol si]} sold'8 mi,, |
-  \pl fa2. {r16 la' \t {sol' do, la} \t {sol' do, la} \t {sol' do, la} \t {sol' do, sib} \t {sold' dod, sol!}} |
-  \ttt {fa la, la'' do, sib sol'}
+  \pl {fa2 r4}
+  {r16 la' \t {sol' do, la} \t {sol' do, la} \t {sol' do, la}
+  \t {sol' do, sib} \t {sold' dod, sol!}} |
+  \ttt {fa la,\laissezVibrer la'' do,( sib) sol'}
   \pl fa,,2 {r8 sol''32 do, sol mi sol' do, sol mi sol' do, sol mi} |
-  \tt {re16-0 mi sol' dod, fa} \tt {re,(-0 mi) si'!(-0 dod) fa(} sol4)\laissezVibrer |
+  \tt {re16-0 <mi\5> sol' dod, fa} \tt {re,-0 <mi\5> si'!-0 <dod\3> fa} sol4\laissezVibrer |
   r4 \t {re,16-0\laissezVibrer lad' si-0} fa'8 r8 <sol, re' mib sib'>_"IV."\arpeggio |
   \tt {r16 la,-0\laissezVibrer si'! fad' sol} re'4 red\laissezVibrer |
   la,,-0 <dod'\4> sib'~ |
@@ -115,11 +118,11 @@ Guitare = \relative do' {
   %%% 2 %%%
   sib2 r4 |
   \pl re,,2.-0 {r4 <la' dod fad>2} |
-  \pl la,2.-0 {r8 <mi'\6-0\harmonic>\laissezVibrer <sib' re sol>2} |
-  \pl {re,2-0 <dod\6>4} {r8 <la'\5-0\harmonic>\laissezVibrer <mi' sold dod>2} |
+  \pl la,2.-0 {r8 \harmonics <mi'\6>-"h. 12"\laissezVibrer <sib' re sol>2} |
+  \pl {re,2-0 <dod\6>4} {r8 \harmonics <la'\5>-"h. 12"\laissezVibrer <mi' sold dod>2} |
   \pl sol,,2. {r8 re'-0\laissezVibrer <si' mi la>2\arpeggio} |
-  r8 <si\6-0\harmonic>_"VII."\laissezVibrer
-  \t {<mi\5-0\harmonic>\laissezVibrer <re'\3-0\harmonic> <la\4-0\harmonic>\laissezVibrer} r4 |
+  r8 \harmonics {<si\6>-"h. 7"\laissezVibrer
+  \t {<mi\5>\laissezVibrer <re'\3> <la\4>\laissezVibrer}} r4 |
   \pl sol,2.-0 {r4 <si-0 fad'>2}
   \pl re,2.-0 {r4 <la' dod fad>2}
   <la,-0 la'>4*3/4~ \hideNote la4*1/4 <sib' re sol>4 \tt {r16 red,16( mi) dod'( sib)} |
@@ -127,9 +130,9 @@ Guitare = \relative do' {
   \pl mi,,2. {r4 <sol' do mib lab>2\arpeggio} |
   \tt {mi16 si'' do, dod sold'} \pl mi,,2 {mi16 sol' <sib dod fad la>4.} |
   \tt {mi,,16 red' la' re! fa!} sib4^"(bend)" -\bendAfter #+2 \tt {mi,,,16 red' la' re fa} |
-  sib4-\bendAfter #+4 mi,,,8\laissezVibrer <re'!\4-0\harmonic>
-  \t {<la'\4-0\harmonic> <re\3-0\harmonic> <fad\2-0\harmonic>} |
-  <si\1-0\harmonic>2.\laissezVibrer |
+  sib4-\bendAfter #+4 mi,,,8\laissezVibrer \harmonics { <re'!\4>-"h. 12"
+  \t {<la'\4>-"h. 7" <re\3> <fad\2>} |
+  <si\1>2.\laissezVibrer } |
   <fa,, si mi sol re' mi>4. <fa la re sold dod mi> |
   <fa' sib red mi-0>2.~_"III." <fa sib red mi>2 la,4-0\laissezVibrer |
   <dod' red mi-0 si'>2_"VIII." r4 |
@@ -167,5 +170,109 @@ Guitare = \relative do' {
   fa fa fa2.\laissezVibrer s2 |
 
   %%% 5 %%%
-  R1.*2
+  R1.
+  \ttt {r16 mi'' re mi si sol} \ttt {la re, mi la, si la} fa2.\laissezVibrer r4 |
+  \t {r4 fa fa} fa2 fa4 fa8 fa |
+  <mi mi'>16 mi mi4.\laissezVibrer <mi''\5\harmonic>1-"h. 7" |
+  <mi'\1\harmonic>1.-"h. 12"\laissezVibrer |
+  R1.
+  r2 r4 re,16 sib dod la \t {sib8 fad re} \t {mi sib fad} |
+  mi1\laissezVibrer <mi'''\1\harmonic>2-"h. 12" |
+  \harmonics {\t {r4 mi mi~} mi8 mi mi4} \bendAfter #+4 mi2~ mi1 r2 |
+  R1.
+
+  %%% 6 %%%
+  \xNote {
+  R1.*2 \t {r4 do,, do} r do r do |
+  R1.*2 \t {r4 do do} r do r do |
+  R1. \t {r4 do do} r do r do | r do
+  r2 r4 r8 \t {la''16 la la} la4 r r1 |
+  R1.*2 \t {r4 do,, do} \t {r do do} \t {r do8} \t {la'' do,, la''} |
+  \tupletUp \t {r4 \tupletDown \t {la8 la la} do,,4} \tupletNeutral
+  \ttt {la''8 do,, la'' do,, la'' do,,}
+  \ttt {la'' do,, la'' do,, la''16 do,, la'' do,,} |
+
+  %%% 7 %%%
+  la''4 r2 } |
+  <mi,, mi'\5>2.\laissezVibrer \snappizzicato |
+  s2.
+  \t {mi8 sib''' fa} do4 si'~
+  si la,, \acciaccatura dod''8 mi,4~ |
+  mi8 dod' la,, si'' do, fa |
+  \pl {r2 \harmonics <mi\5>4_"h. 7" s2}
+  {sib'2.~ sib2} do,8 sib |
+  sib' \harmonics <mi,\5>4 sib'8 \t {mi,,, sib'' do} |
+  sib4 r \harmonics <mi,\6>-"h. 12" \laissezVibrer
+  s2.
+  r4 sib' mi,,8 dod'' | fa,,2.\laissezVibrer |
+  r4 sib''8 mi,, dod'' fa,, |
+  r4 \harmonics <sol'\2>-"h.12" <dod,,\6>_"IX." |
+  sold'''4\snappizzicato r2 |
+  R2.*7
+  \harmonics {\t {re,8-"h. 12" sol si} mi4} r |
+  R2.*25
+
+  %%% 8 %%%
+  \pl re,,2.\laissezVibrer {r4 <dod' fa sib>2\laissezVibrer}
+  R2.*3
+  re,4\laissezVibrer dod'\laissezVibrer sib'\laissezVibrer
+  R2.*2
+  \t {la,,4-0\laissezVibrer dod'\laissezVibrer sib'~} sib4\laissezVibrer
+  R2.
+  red4_"XI."\laissezVibrer la,,\laissezVibrer dod'\laissezVibrer |
+  sib'2.\laissezVibrer R2.
+  r2 \t {red8 la,, dod'~} \t {dod sib'4~} sib2~ |
+  sib4. sib~ | sib8 sib2 si8 |
+  \pl {
+    fa,\laissezVibrer do' lab'4 <do, lab'>
+    mi,8\laissezVibrer si' sol'4
+  } {
+    do2~ do8 si dod2
+  } r4 | R2. r2 r8 \pl {
+    s8 fa,,\laissezVibrer do' lab'4 <do, lab'>
+    mi,8\laissezVibrer si' sol'4 <sib, sol'>~
+    <sib sol'> <dod,\6>8\laissezVibrer sol'
+  } {
+    si'8 do2 r8 si dod2. si!2
+  } <si, la' re>4~ | <si la' re>2 r4 |
+  r4 <fa do' fa lab>2\arpeggio |
+  r4 <mi si' mi sol>2\arpeggio |
+  r4 <si fad' si re fad>2\arpeggio |
+  r4 <si' re fad>2_"(non arp.)" |
+  r4 <sib, mi sol do mi>2\arpeggio |
+  r4 <la fa' sol dod fa>2 |
+  r4 <re la' dod fad>2~ |
+
+  %%% 9 %%%
+  <re la' dod fad>4 r2 |
+  R2.*3
+  \pl {
+    la2. la la la la
+  } {
+    s8 mi'\laissezVibrer <red' mi> si\laissezVibrer <red mi>4
+    s8 mi,\laissezVibrer <red' mi> si <red mi> mi,
+    s8 mi <red' mi> si <red mi>4
+    s8 mi, <red' mi> si <red mi> mi,,
+    s8 mi' <red' mi> si <red mi>4
+  }
+  R2.
+  \pl {
+    la,2. la la
+  } {
+    s8 mi'\laissezVibrer <re'! mi> si\laissezVibrer <re mi>4
+    s8 mi, <re' mi> si <re mi> mi,,
+    s8 mi' <re' mi> si <red mi>4
+  }
+  \set tieWaitForNote = ##t
+  \t {la,4~ mi'~ <si' re mi>~} <la, mi' si' re mi>~
+  \hideNotes <la mi' si' re mi>2. \unHideNotes
+  R2.
+  red''4_"XI."\laissezVibrer la,,-0\laissezVibrer dod'\laissezVibrer |
+  sib'2.\laissezVibrer |
+  red4\laissezVibrer la,,-0\laissezVibrer
+  \harmonics {<dod'\6>_"(h. d'octave)"\laissezVibrer
+  r4 <sib'\4>2\laissezVibrer \fermata
+  <mi,,\5>2.-"h. 7"\laissezVibrer }
 }
+
+%------------------------------------------------------------------%

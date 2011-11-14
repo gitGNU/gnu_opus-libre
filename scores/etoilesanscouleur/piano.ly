@@ -37,9 +37,10 @@
 PianoMd = \relative do' {
   \partial 16 s16
   R1*7/16*4
-  R2.*19
+  R2. R2.-\fermataMarkup
 
   %%% 1 %%%
+  R2.*17
   \quasiHarp {
   r8 \acciaccatura {si16[^"simile" _"(gliss.)" do] \glissando} dod8\laissezVibrer
   r4 \t {r8 la''4\laissezVibrer} |
@@ -246,9 +247,10 @@ PianoMg = \relative do {
   \clef bass
   \partial 16 s16
   R1*7/16*4
-  R2.*18
+  R2. R2.-\fermataMarkup
 
   %%% 1 %%%
+  R2.*16
   \quasiHarp {
   fa,2.\laissezVibrer ^"cordes pincées" _"(con Ped.)"
   R2. s4 s2
@@ -298,9 +300,12 @@ PianoMg = \relative do {
   \stemDown \tt {fa lab sib reb sol} sold la reb, sib
   \tt {fa sib reb mib lab} \md sol' reb sib lab
   \mg fa, si lab' \md sol' la' mib fad, \mg sol, |
-  fa, re' lab' \md sib' la' do, fad, \mg mi, \stemNeutral
-  \t {\tt {fa do' sol' \md sol' re'} la'4 \tt {\mg fa,,,16 dod' mi \md sib'' reb}} \tupletUp
-  \t {la'4 \tupletDown \tttt {fa,,,16 si re lab \md fad' do' mib} sib'8 \mg fa,,,} | \tupletNeutral
+  %% ... And this, my friend, is what we call: a hack.
+  fa,16*7/8[ re' lab' \md sib'] la'[ do, fad, \mg mi,] \stemNeutral
+  \t {\tt {fa,16[ do' sol' \md sol' re']} la'4 \tt {\mg fa,,,16[ dod' mi \md sib'' reb]}}
+  \tupletUp \t {la'4
+  \tupletDown \stemDown \tttt {\mg fa,,,16[ si re lab' \md fad' do' mib]} \stemNeutral
+  sib'4} \tupletNeutral \mg \graceNote fa,,,8*1/2 |
   \t {mi,8 mi' red'} \t {sol lab red} \tt {sol red lab sol si,} \tt {mi, re' sol lab reb} |
   \tt {sol reb lab sol sib,} \tt {mi, re' fad sol la} si16 la sol fad sol fad mi dod |
   mib,8 sib' \t {si fad' sol} \t {re' si lad} \t {si lad fad} \t {re' si lad} \t {si lad fad} |
@@ -308,8 +313,8 @@ PianoMg = \relative do {
   \tt {mi, red' sol red lab'} \tt {si lab sol red do} \tt {mi, si' re fa lab} |
   \tt {si lab sol re sib} \tt {mi, si' fad' sol re'} \clef treble \t {la' sib fa'} do'4 | \clef bass
   <la,,,, la'>1.*1/3\laissezVibrer \clef treble
-  \t {la''''4 mi dod} \t {sold' la mi,} |
-  dod' sold' la2.\laissezVibrer r4 |
+  \t {la''''4 mi dod} \t {sold' la mi,\laissezVibrer} |
+  dod'\laissezVibrer sold'\laissezVibrer la2.\laissezVibrer r4 |
 
   %%% 6 %%%
   R1. \clef bass

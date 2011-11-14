@@ -1,14 +1,30 @@
+
 %-- Étoile sans couleur -- flute.ly -------------------------------%
 % (c) 2011 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"
 
+
+%%% This part is written for a Hulusi flute, a traditional Chinese
+%%% instrument stubstubstub
+%%% Here a hulusi "in G" is required, that is natively able to produce
+%%% the notes D - E - G - A - B - D - E (half-tones and complementary
+%%% notes are obtained with half holes or letting the fingers float
+%%% above the holes without covering them). An additional low B may
+%%% be obtained stubstubstubs
+
+%%% (sigh) I'm not supposed to say this, but: if you *really* can't
+%%% get ahold of a hulusi, then you *may* try and get away with a
+%%% tenor recorder. Shame, though.
+
+
 Flute = \relative do' {
   \partial 16 r16
   R1*7/16*4
-  R2.*12
+  R2. R2.-\fermataMarkup
 
   %%% 1 %%%
+  R2.*10
   r4 si2~ si2 r4 |
   \grace si4 mi2.~^"(non vib.)" mi8 redsd mi2 |
   re!4\glissando -"gliss." mi2~ | mi r4 |
@@ -65,4 +81,70 @@ Flute = \relative do' {
   \tt {re mi re mi re} \t {mi8 re mi} re2~\startTrillSpan re4\stopTrillSpan r |
 
   %%% 5 %%%
+  R1.*4 mi'2~ \t {mi4 re mi~} \tt {mi8 re mi re mi} |
+  \tt {re re, mi sol la} \t {sib la sib} \t {la sib la} \t {sib la sib\glissando} la4~ |
+  la2:32~ la4 r r2 |
+  r1 mi'2~ mi re4 mi~ mi16 re mi re \t {si8 la sib} |
+  la2 sol4\glissando la2.~ la4 r r1 |
+
+  %%% 6 %%%
+  R1.*2 r2 si1:32\glissando ladsd4 r r1 |
+  R1. r2 \pl {si1~ si2.} {si2.\glissando ladsd4 lasd2.} r4
+  \pl {si2~ si1} {si2\glissando do1} r8 \pl {si4.~ si1.}
+  {si4.\glissando \t {dod4 dodsd dod~} dod1} |
+  r4 \pl {\oneVoice si2.~ \voiceTwo si2~ si4} {s2. re2~ re4}
+  r4 r2 \t {r4 <mib, si'>4:32~ <re si'>4} |
+  r <re si'>4:32~ <re si'>8 r r4 <si si'>2~ |
+  <si si'>2. r4 r2 |
+  R1.
+
+  %%% 7 %%%
+  r2 re16 mi sol la |
+  re2 r4 | \acciaccatura mi,8 re4 r2 |
+  R2.
+  si'4 do dod |
+  r \t {mi8 re mi} r4 |
+  r4 sib4:32~ \t {sib8 si sib} | la4 r2 |
+  R2.
+  fad8 fa r2 | \pitchedTrill mib2.:32\startTrillSpan re
+  re4\stopTrillSpan r2 |
+  R2.*6
+  si'2.~ si4\glissando ladsd r |
+  R2.*2
+  <si dod>2.~ <si re>4 r2 |
+  R2.*5
+  %% This is a low note, so I wouldn't
+  %% worry too much about air.
+  si,2.~ si~ si~ si~ si~ si4 r2 |
+  R2.
+  si2. re2 mi4~ | mi2.~ mi~ mi4 r2 |
+  red2.\glissando mi2.~ mi~ mi2 r4 |
+  R2.*4
+
+  %%% 8 %%%
+  R2. \t {r4 si'8~} si4.\glissando ladsd8 |
+  R2.
+  si4. do~ do si\glissando dod2.~ dod4 r2 |
+  R2.*3
+  r2 \t {r8 si,4~} si2 r4 |
+  R2.
+  r2 si4 mi2\glissando redsd4 |
+  R2.*8
+  %% This is a quote from Kurt Weill and Bertolt Brecht's
+  %% Berliner Requiem (specifically, the Marterl song).
+  r2 r8 si'\glissando | do2~ do8 si\glissando | dod2~ dod8 si |
+  re2.~ re2 r8 fad, | sol2~ sol8 fad |
+  la2~ la8 si\glissando | dod2.~ |
+
+  %%% 9 %%%
+  dod4 r2 R2.*3
+  red,4 mi~ \t {mi8 red mi} |
+  \tt {red16 mi red mi red} mi4 r |
+  red2 si4 red2 si4~ si2 r4 |
+  R2.
+  re!2 si4 re2 si4~ si \t {re8 mi re} \tt {mi16 re mi re mi} |
+  re2 mi'4~ mi2.~ mi2 r4 |
+  R2.*3 R2.*2-\fermataMarkup
 }
+
+%------------------------------------------------------------------%
