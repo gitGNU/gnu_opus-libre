@@ -18,7 +18,7 @@ Mesures = {
   s1.*9 \bar "||"
   s1.*11 \bar "||"
   s1.*14 \bar "||"
-  \tempo "Presto"
+  \tempo "Presto" 4 = 160~176
   \time 3/4
   %% 49 is 6+9+11+14+9
   %% (not necessarily in that order)

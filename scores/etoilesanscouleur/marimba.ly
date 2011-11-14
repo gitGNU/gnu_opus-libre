@@ -103,25 +103,39 @@ MarimbaMg = \relative do {
 
   %%% 1 %%%
   R2.*9
-  r4 mi2:32~ mi2.:32~
-  \t {mi8 mi mi} \tt {mi16 mi mi mi mi} mi8 mi |
-  <la, mi'>4 r8 \t {la16 la la} la4 |
-  \tt {r16 la sib mib mi}
-  \t {si'8 \md \t {fa'16 do sol'} \mg \t {mi, mi mi}}
-  \pl {la,4 s} {mi'4:32~ | \t {mi8 do dod}} \t {r do \md dod'}
-  \tt {\mg r16 do, \md dod' \mg mi, \md sold'} |
-  \t {\mg r16 do,, do'} \md dod''32 sold, \mg mi,16~
-  \t {mi8 \md dod''' fa,} sol do,, | \mg
-  fa,,4:32~ \tt {\stemUp fa16 re' sib' \md \stemDown mi do'} 
-  \tt {\stemDown sib re, \mg \stemUp do mi, fa,} | \stemNeutral
-  \md r16 do''' sib \mg re,, \t {mi8 \md sol'' r} \mg
-  \ttt {re,,16 mi do' sib re, mi} |
-  \md dod'4:32~ \tt {dod16 \mg re, mi \md sol'' \mg dod,,} \md fa4 |
-  \mg fa,,16 dod' re la' \ttt {sib \md fa' fad dod' re la'}
-  \tt {r16 la, \mg la,, \md si''' \mg dod,,} |
-  \md sib'8 \t {sol'16 do, \mg dod,} \md
-  \acciaccatura fa'16 \mg la,,,4:32~ la16 red la red |
-  la2:32~ la8 r |
+  r4 mi2:32~\pp ^"(bag. douces)" mi2.:32~
+  \t {mi8\< mi mi} \tt {mi16 mi mi mi mi} mi8\> mi |
+  <la, mi'>4--\pp r8 \t {la16 la la} la4 |
+  \tt {r16 la( sib mib mi}
+  \t {si'8) \md
+  \lettersOn
+  \t {\letter "r" fa'16\mf\> \letter "o" do \letter "s" sol'}
+  \mg \t {\letter "e" mi, \lettersOff mi mi\!}}
+  \pl {la,4 s} {mi'4:32~ | \t {mi8 do( dod)}} \t {r do( \md dod')}
+  \lettersOn
+  \tt {\mg r16 \letter "c" do,(\< \md \letter "i" dod'
+  \mg \letter "e" mi, \md \letter "l" sold')} |
+  \t {\mg r16 \letter "c" do,,( \letter "o" do')}
+  \md \letter "u" dod''32\sf \letter "l" sold,
+  \mg \letter "e" mi,16~ \lettersOff
+  \t {mi8 \md \lettersOn \letter "u" dod'''\mp \letter "r" fa,}
+  \letter "s" sol-- \lettersOff do,,-- | \mg
+  fa,,4:32--~ \tt {\stemUp fa16( re' sib' \md \stemDown mi do')}
+  \tt {\stemDown sib( re, \mg \stemUp do mi, fa,)} | \stemNeutral
+  \lettersOn
+  \md r16 \letter "o" do'''(--\p \letter "n" sib--
+  \mg \letter "d" re,,-- \t { \letter "e" mi8-- \md \letter "s" sol''--) r} \mg
+  \lettersOff
+  \ttt {re,,16\< mi do' sib re, mi} |
+  \md dod'4:32~\sfp \tt {dod16 \mg re, mi \md sol'' \mg dod,,} \md fa4 |
+  \mg fa,,16( dod' re la' \ttt {sib \md fa' fad dod' re la')}
+  \lettersOn
+  \tt {r16 \letter "m" la,-. \mg \letter "a" la,,-.
+  \md \letter "t" si'''-. \mg \letter "i" dod,,-.} |
+  \md \letter "n" sib'8-.
+  \t {\letter "s" sol'16( \letter "o" do, \mg \letter "i" dod,)} \md
+  \letter "r" \acciaccatura fa'16^\sfz \mg \lettersOff la,,,4:32~\> la16 red la red |
+  la2:32~\pp la8 r |
 
   %%% 2 %%%
   R2.

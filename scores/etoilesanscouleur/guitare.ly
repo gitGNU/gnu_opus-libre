@@ -82,38 +82,46 @@ Guitare = \relative do' {
   \clef "G_8"
   \partial 16 s16
   R1*7/16*2
-  r4 r16 \harmonics <red'\2>8-"h. 4"\laissezVibrer |
+  r4 r16 \harmonics <red'\2>8-"h. 4"\mp\laissezVibrer |
   s1*7/16
   la,,4-0\laissezVibrer dod'\laissezVibrer sib'4*1/2\laissezVibrer 
   \hideNote <la,, dod' sib'>~
   \hideNote \grace <la dod' sib'>4 r4 <mi'\6\harmonic>2-"h. 12"\fermata
 
   %%% 1 %%%
-  \harmonics <red''\2>4-"h. 16"\laissezVibrer
+  \harmonics <red''\2>4-"h. 16"\p\laissezVibrer
   <la,,\6>\laissezVibrer dod'\laissezVibrer |
   sib'2.\laissezVibrer |
   \harmonics <red\2>4_"laissez vibrer" <la,,\6> dod' sib'2.\laissezVibrer R2. |
   \harmonics <red\2>4 <la,,\6> dod' sib'2.\laissezVibrer |
-  \harmonics <red\2>4 la,,-0 dod' |
-  <re,! dod' red sib'>2.\arpeggio \laissezVibrer |
+  \harmonics <red\2>4\< la,,-0 dod' |
+  <re,! dod' red sib'>2.\!\arpeggio \laissezVibrer |
   r4 <mi\6\harmonic>2-"h. 12" \laissezVibrer |
-  red''8_"XI." mi,,, la-0 mi dod'' la, |
-  \pl {r4 r8 \harmonics <mi'>4.} sib''2.\laissezVibrer |
+  red''8-- _"XI."\mp mi,,, la-0 mi dod''-- la, |
+  \pl {r4 r8 \harmonics <mi'>4.} sib''2.--\laissezVibrer |
   red4 \harmonics <la,\5>-"h. 12" \t {dod8 fad( sol)} |
   sib4\laissezVibrer \t {r8 red mi,,,} la16-0 mi dod'' la, |
-  \t {sib''16 mi,,, dod''} \t {la, fad''( sol)}
+  \t {sib''16\cresc mi,,, dod''} \t {la, fad''( sol)}
   sib-. <la,, red''>-- \t {dod' sib' sol} \t {red'8 la,, dod'} |
-  <re,! mi' sol red'>4 <la sib' re fad dod'!>\arpeggio
-  \acciaccatura {mi32[ red' sol si]} sold'8 mi,, |
-  \pl {fa2 r4}
-  {r16 la' \t {sol' do, la} \t {sol' do, la} \t {sol' do, la}
+  <re,! mi' sol red'>4-- -\dyn "poco_f" <la sib' re fad dod'!>--\arpeggio
+  \acciaccatura {mi32[ red' sol si]} sold'8-- mi,, |
+  \pl {fa2-- r4}
+  {r16 la' \t {sol'^\p do, la} \t {sol' do, la} \t {sol' do, la}
   \t {sol' do, sib} \t {sold' dod, sol!}} |
-  \ttt {fa la,\laissezVibrer la'' do,( sib) sol'}
-  \pl fa,,2 {r8 sol''32 do, sol mi sol' do, sol mi sol' do, sol mi} |
-  \tt {re16-0 <mi\5> sol' dod, fa} \tt {re,-0 <mi\5> si'!-0 <dod\3> fa} sol4\laissezVibrer |
-  r4 \t {re,16-0\laissezVibrer lad' si-0} fa'8 r8 <sol, re' mib sib'>_"IV."\arpeggio |
-  \tt {r16 la,-0\laissezVibrer si'! fad' sol} re'4 red\laissezVibrer |
-  la,,-0 <dod'\4> sib'~ |
+  \lettersOn
+  \ttt {\letter "r" fa^"semplice" \letter "a" la,\laissezVibrer
+  \letter "y" la'' \letter "o" do,( \letter "n" sib) \letter "s" sol'}
+  \pl fa,,2 {r8 sol''32\mf\< do, sol mi sol' do, sol mi sol' do, sol mi} |
+  \lettersOn
+  \tt {\letter "d" re16-0\f \letter "e" <mi\5> \letter "s" sol' \letter "i" dod, \letter "r" fa}
+  \lettersOff
+  \tt {re,-0 <mi\5> si'!-0 <dod\3> fa} sol4\laissezVibrer |
+  r4 \t {re,16-0\p\laissezVibrer lad' si-0} fa'8-. r8 <sol, re' mib sib'-.>\sf _"IV."\arpeggio |
+  \tt {r16 la,-0\<\laissezVibrer si'! fad' sol} re'4\!
+  \lettersOn
+  \letter "v" red\f\laissezVibrer |
+  \letter "a" la,,-0 \letter "i" <dod'\4> \letter "n" sib'~ |
+  \lettersOff
 
   %%% 2 %%%
   sib2 r4 |

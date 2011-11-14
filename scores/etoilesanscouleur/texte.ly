@@ -1,10 +1,10 @@
-%-- Étoile sans couleur -- definitions.ly -------------------------%
+%-- Étoile sans couleur -- texte.ly -------------------------------%
 % (c) 2011 Valentin Villenave <valentin@villenave.net>
 
 
 %-- Look-and-feel -------------------------------------------------%
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 12)
 
 \paper {
   system-separator-markup = \slashSeparator
@@ -24,17 +24,116 @@
 
 % No you didn't, no you didn't!...
 %#(ly:set-option 'untainted #t)
+#(ly:set-option 'show-letters #t)
+
+
+%-- Titling -------------------------------------------------------%
+
+\header {
+  title = "Étoile sans couleur"
+  subtitle = "pour récitant et quatre instruments, sur un texte de Jacques Roubaud"
+  composer = "Valentin Villenave"
+  date = "automne 2011"
+}
+
+\paper {
+  first-page-number = #-1
+%   min-systems-per-page = #4
+}
+
+\pageBreak
+\markup \fill-page {
+  ""
+  \fill-line {
+    ""
+    \line \italic {
+      Pièce rédigée pour le concours Pierre-Jean Jouve, « Printemps des poètes » 2011.
+    }
+  }
+  \fill-line {
+    \override #'(line-width . 100)
+    \left-column {
+      \wordwrap {
+        \hspace #4 Cette pièce s’inscrit dans le cadre d’un projet de refondation de l’Ouvroir de Musique Potentielle
+        \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),} dédié à l’écriture
+        musicale sous contraintes formelles.
+      }
+      \vspace #.5
+      \wordwrap {
+        \hspace #4 À ce titre, la construction harmonique et mélodique est entièrement dictée par les termes
+        récurrents du texte, et la construction structurelle et rythmique est gouvernée par la
+        longueur des vers ainsi que par leur prosodie. L’écriture tente également de satisfaire aux
+        deux \italic \line {« principes de Roubaud »}, énoncés dans le tbc.
+      }
+      \vspace #.5
+      \wordwrap {
+        \hspace #4 Par ailleurs, cette pièce contient une courte citation du \italic "Berliner Requiem" de
+        Kurt Weill et Bertolt Brecht (Universal Editions, Berlin, 1931).
+      }
+    }
+  }
+  \fill-line {
+    \override #'(box-padding . 6)
+    \box \center-column {
+      \line {
+        Texte : Jacques Roubaud.
+      }
+      \line {
+        Copyright & copyleft © Valentin Villenave, 2011.
+      }
+      \line {
+        \with-url #"http://valentin.villenave.net"
+        \typewriter http://valentin.villenave.net
+      }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \justify {
+        Cette partition est publiée suivant les termes de la licence
+        \with-url #"http://artlibre.org/licence/lal"
+        \bold { Art \concat {Libre \medium . }}
+        Vous pouvez la copier, la modifier et la jouer \italic librement
+        sans contrevenir au droit d'auteur, à condition de respecter les
+        termes de la licence (notamment en veillant à mentionner le nom
+        de l'auteur et l'adresse web d'origine).
+      }
+      \vspace #.5
+      \line {
+        Gravure réalisée au moyen du logiciel libre
+        \with-url #"http://www.LilyPond.org"
+        \concat {\bold "GNU LilyPond" ,}
+        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) }
+      }
+    }
+  }
+}
+\pageBreak
 
 
 %-- Instrument names ----------------------------------------------%
 
-FluteInstr = "Flûte hulusi"
+FluteInstr = \markup {
+  \override #'(baseline-skip . 0)
+  \center-column {
+    \vspace #1
+    "Flûte hulusi"
+    \vspace #.4
+    \smaller "(instrument"
+    \smaller "traditionnel"
+    \smaller "chinois)"
+  }
+}
 FluteShortInstr = "Fl."
 GuitareInstr = "Guitare"
 GuitareShortInstr = "G."
-MarimbaInstr = "Marimba"
+MarimbaInstr = \markup \center-column {
+  "Marimba"
+  \smaller "(cinq octaves)"
+}
 MarimbaShortInstr = "M."
-RecitantInstr = "Récitant"
+RecitantInstr = \markup \center-column {
+  "Récitant"
+  \smaller "(sans amplification)"
+}
 RecitantShortInstr = "R."
 PianoInstr = "Piano"
 PianoShortInstr = "P."
@@ -118,8 +217,10 @@ oeil =
    ;; simple note, or even inside a chord construct.
    (music-map
      (lambda (x)
-       (if (eq? (ly:music-property x 'name) 'NoteEvent)
-           (set-letter str x)))
+             ; ugh. Causes a memory leak.
+             ;  (if (eq? (ly:music-property x 'name) 'NoteEvent)
+           (set-letter str x))
+     ; )
      note)
    note))
 
@@ -136,10 +237,7 @@ oeil =
                           (tweaks (ly:event-property (event-cause grob) 'tweaks))
                           (str (ly:assoc-get 'letter tweaks))
                           (letter
-                            (if
-                              ;; of course, if we're going 'untainted,
-                              ;; that point becomes pretty moot.
-                              (and (not (ly:get-option 'untainted)) str)
+                            (if str
                               ;; only the first letter if there are several.
                               (string-upcase (string-take str 1))
                               ""))
@@ -155,13 +253,16 @@ oeil =
 
 %%% Just for consistency (and fun!), let's hide
 %%% the \easyHeads command behind a suitably-named wrapper...
-lettersOn = {
+lettersOn =
+#(if (ly:get-option 'show-letters)
+#{
   \override NoteHead #'stencil = #note-head::brew-ez-stencil
   %% ... which allows us to tweak the defaults:
   \override NoteHead #'font-size = #-7 %% was 8 originally
   \override NoteHead #'font-family = #'sans
   \override NoteHead #'font-series = #'bold %% ugly. But safer.
-}
+#}
+(void-music))
 lettersOff = {
   \easyHeadsOff
 }

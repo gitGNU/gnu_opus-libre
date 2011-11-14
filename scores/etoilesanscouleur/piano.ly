@@ -44,14 +44,14 @@ PianoMd = \relative do' {
   \quasiHarp {
   r8 \acciaccatura {si16[^"simile" _"(gliss.)" do] \glissando} dod8\laissezVibrer
   r4 \t {r8 la''4\laissezVibrer} |
-  \t {r8 sol \mg dod,,} \md fa'4\laissezVibrer r4
+  \t {r8 sol\pp \mg dod,,} \md fa'4\laissezVibrer r4
   R2.
-  \t {r8 red'4\laissezVibrer} r4 r8 dod,,8\laissezVibrer |
+  \t {r8 red'4\p\laissezVibrer} r4 r8 dod,,8\laissezVibrer |
   r4 sib'\laissezVibrer r |
 
   %%% 2 %%%
   R2.
-  \acciaccatura {sold16[-"(gliss.)" la]} sib2\laissezVibrer r4 |
+  \acciaccatura {sold16[\ppp -"(gliss.)" la]} sib2\laissezVibrer r4 |
   \acciaccatura {fad16[-"(simile)" sol]} sold2\laissezVibrer r4 |
   r4 \acciaccatura {mi16[ fa]} fad2\laissezVibrer |
   R2.*2
@@ -252,7 +252,7 @@ PianoMg = \relative do {
   %%% 1 %%%
   R2.*16
   \quasiHarp {
-  fa,2.\laissezVibrer ^"cordes pincées" _"(con Ped.)"
+  fa,2.\mp\laissezVibrer ^"cordes pincées" _"(con Ped.)"
   R2. s4 s2
   R2.
   r4 la\laissezVibrer r |
