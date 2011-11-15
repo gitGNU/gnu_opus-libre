@@ -4,7 +4,7 @@
 
 %-- Look-and-feel -------------------------------------------------%
 
-#(set-global-staff-size 12)
+#(set-global-staff-size 14)
 
 \paper {
   system-separator-markup = \slashSeparator
@@ -53,22 +53,31 @@
   \fill-line {
     \override #'(line-width . 100)
     \left-column {
+      \fill-line {\epsfile #X #30 #"scores/etoilesanscouleur/oumupo.eps"}
       \wordwrap {
-        \hspace #4 Cette pièce s’inscrit dans le cadre d’un projet de refondation de l’Ouvroir de Musique Potentielle
-        \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),} dédié à l’écriture
-        musicale sous contraintes formelles.
+        \hspace #4 Cette pièce s’inscrit dans le cadre d’un projet de refondation
+        de l’Ouvroir de Musique Potentielle
+        \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),}
+        dédié à l’écriture musicale sous contraintes formelles.
       }
       \vspace #.5
       \wordwrap {
-        \hspace #4 À ce titre, la construction harmonique et mélodique est entièrement dictée par les termes
-        récurrents du texte, et la construction structurelle et rythmique est gouvernée par la
-        longueur des vers ainsi que par leur prosodie. L’écriture tente également de satisfaire aux
-        deux \italic \line {« principes de Roubaud »}, énoncés dans le tbc.
+        \hspace #4 À ce titre, la construction harmonique et mélodique est
+        entièrement dictée par une correspondance entre notes et lettres,
+        mots et motifs (dont quelques-uns ont ici été explicités littéralement,
+        même si ce n’est pas nécessaire à la compréhension de la partition).
+        De même, la construction structurelle et rythmique est gouvernée par
+        le schéma de longueur des vers ainsi que par leur prosodie.
+        L’écriture s’inspire également de contraintes suggérées
+        par Jacques Roubaud lui-même dans son \italic \wordwrap { Atlas de
+        Littérature Potentielle } (Paris, Gallimard, 1981), et notamment des célèbres
+        \italic \wordwrap {« principes de Roubaud »} auxquels elle tente de proposer
+        ici quelques réponses musicales.
       }
       \vspace #.5
       \wordwrap {
-        \hspace #4 Par ailleurs, cette pièce contient une courte citation du \italic "Berliner Requiem" de
-        Kurt Weill et Bertolt Brecht (Universal Editions, Berlin, 1931).
+        \hspace #4 Cette pièce contient également une courte citation extraite de la première version du
+        \italic \line {Berliner Requiem} de Kurt Weill et Bertolt Brecht (commande de Radio Frankfurt, 1929).
       }
     }
   }
@@ -90,7 +99,8 @@
       \justify {
         Cette partition est publiée suivant les termes de la licence
         \with-url #"http://artlibre.org/licence/lal"
-        \bold { Art \concat {Libre \medium . }}
+        \bold { Art Libre }
+        \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
         Vous pouvez la copier, la modifier et la jouer \italic librement
         sans contrevenir au droit d'auteur, à condition de respecter les
         termes de la licence (notamment en veillant à mentionner le nom
