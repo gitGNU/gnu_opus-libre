@@ -308,8 +308,8 @@ Guitare = \relative do' {
   r4 <si fad' si re fad>2\arpeggio |
   r4 <si' re fad>2\pp_"(non arp.)" |
   r4 <sib, mi sol do mi>2\p\arpeggio |
-  r4 <la fa' sol dod fa>2 |
-  r4 <re la' dod fad>2~ |
+  r4 <la fa' sol dod fa>2\arpeggio\> |
+  r4 <re la' dod fad>2\arpeggio \! ~ |
 
   %%% 9 %%%
   <re la' dod fad>4 r2 |

@@ -137,7 +137,7 @@ Recitant = \relative do' {
   r2 do8(\mf do4. r8 do do do |
   do2) r1 |
   \t {r4 do( do} \t {do do do} do2) |
-      %% If left untampered with, this verse wouldn't
+      %% If left untampered with, this verse
       %% wouldn't fit in the overall syllable scheme.
       %% Can't say I get why.
   r4 do-. r8 do4-- \parenthesize do8 do do do4 |
