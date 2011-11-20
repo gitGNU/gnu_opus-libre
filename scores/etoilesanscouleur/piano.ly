@@ -261,7 +261,7 @@ PianoMd = \relative do' {
   r4 \quasiHarp red2_"cordes pincées" | R2.
   r4 \quasiHarp {dod,2 sib'2.\laissezVibrer } R2.*2
   r4 \pl {s2 <fa, sol!>2.}
-  {\oneVoice \tieUp <dod' sold'>2~ \voiceOne
+  {\oneVoice \tieUp <dod' sold'>2\pp ~ \voiceOne
   <dod sold'> \tieNeutral \oneVoice si'4} |
 
   %%% 9 %%%
@@ -365,7 +365,7 @@ PianoMg = \relative do {
   mi8 fa4-- mi \md \stemUp
   <lab' sib reb>32(-> sol \mg <sib, reb> fa) | \stemNeutral
   mi8 fa4.-- fa4~-- fa8 fa-.-- r2 |
-  fa8-.-- r r4 r8 \md \stemUp
+  fa8-.-- r r4 r8 \md \stemDown
   \ttt {sol''32 reb sib lab \mg reb, sib} | \stemNeutral
 
   %%% 4 %%%
@@ -522,7 +522,7 @@ PianoMg = \relative do {
   mi8 do' \stemDown \md \t {si' sol sold} red'4 | \stemNeutral \mg
   red,,8 dod' \stemDown \md \t {sol'4 si, la'} fa'2. | \stemNeutral \mg
   <la,,,, la'>2.*1/3-\dyn "pp_al fine"\laissezVibrer \clef treble
-  la''''16 mi dod sold' la mi dod sold' |
+  la''''16( mi dod sold') la( mi dod sold') |
   la( mi dod sold') la( mi dod sold') la( mi dod sold') |
   \lettersOn
   \letter "y" la( \letter "e" mi,\laissezVibrer
@@ -554,7 +554,10 @@ PianoMg = \relative do {
   \lettersOff
   fa( do sol' mi,)
   \t {red'8( \stemUp la, \stemDown dod')} |
-  r4 r8 \ottava #-1 la,,4._\ppp\laissezVibrer \ottava #0 s2.*3
+  \stemNeutral
+  r4 r8 \ottava #-1
+  la,,4._\ppp\laissezVibrer
+  \ottava #0 s2.*3
   R2.*2-\fermataMarkup
 }
 

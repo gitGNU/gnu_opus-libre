@@ -37,7 +37,7 @@ Flute = \relative do' {
   R2.*10
   r4 si2\pp~ si2 r4 |
   \grace si4( mi2.)~^"(non vib.)" mi8 redsd( mi2) |
-  re!4(\glissando -"gliss." mi2)~ | mi\> r4 |
+  re!4(\glissando -"gliss." mi2)~ | mi\> r4\! |
   si(--\pp \t {re16^"détimbré"\> mi re} \tt {mi32 re mi re mi}
   \pitchedTrill re8)\!\startTrillSpan mibsb r8\stopTrillSpan |
   \tt {sol16(\< re) mi sol( fad)} \acciaccatura sol

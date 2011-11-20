@@ -31,9 +31,14 @@
 
 \header {
   title = "Étoile sans couleur"
-  subtitle = "pour récitant et quatre instruments, sur un texte de Jacques Roubaud"
+  subtitle = \markup \center-column {
+    "pour récitant et quatre instruments,"
+    "sur un texte de Jacques Roubaud"
+    \vspace #2
+  }
   composer = "Valentin Villenave"
   date = "automne 2011"
+  piece = "Étoile sans couleur"
 }
 
 \paper {
@@ -41,19 +46,49 @@
 %   min-systems-per-page = #4
 }
 
+taintedText =
+\markup \justify {
+  Avant de reproduire cette partition, vous êtes toutefois invité à
+  vous assurer de ne pas contrevenir au droit moral de l’auteur du
+  texte qu’elle contient. Si ce point vous semble incertain, il vous
+  est possible de recompiler la partition avec l’option
+  \concat { \typewriter untainted , } ce qui aura pour effet de remplacer
+  toutes les syllabes du texte d’origine par d’autres syllabes aléatoires
+  (par défaut \concat { «  \bold pa  » ,} \concat { «  \bold ta  » }
+  et \concat { «  \bold touille  »). } La partition ainsi produite pourra
+  être diffusée librement, sans autres restrictions que celles indiquées
+  par sa licence.
+}
+
+untaintedText =
+\markup \justify {
+  Cet exemplaire a été compilé avec l’option \concat { \typewriter untainted  : }
+  toutes les syllabes du texte d’origine ont été remplacées par des
+  syllabes aléatoires. De ce fait, la présente partition peut être diffusée
+  librement, sans autres restrictions que celles indiquées par sa licence.
+}
+
+#(define-markup-command (choose-text layout props) ()
+  (let ((text (if (ly:get-option 'untainted)
+                  untaintedText
+                  taintedText)))
+  (interpret-markup layout props text)))
+
 \pageBreak
 \markup \fill-page {
-  ""
+  " "
   \fill-line {
     ""
-    \line \italic {
+    \italic \line {
       Pièce rédigée pour le concours Pierre-Jean Jouve, « Printemps des poètes » 2011.
     }
   }
+  " "
+  " "
   \fill-line {
     \override #'(line-width . 100)
     \left-column {
-      \fill-line {\epsfile #X #30 #"scores/etoilesanscouleur/oumupo.eps"}
+      \fill-line {\epsfile #X #30 #"scores/etoilesanscouleur/oumupo.eps" }
       \wordwrap {
         \hspace #4 Cette pièce s’inscrit dans le cadre d’un projet de refondation
         de l’Ouvroir de Musique Potentielle
@@ -76,8 +111,10 @@
       }
       \vspace #.5
       \wordwrap {
-        \hspace #4 Cette pièce contient également une courte citation extraite de la première version du
-        \italic \line {Berliner Requiem} de Kurt Weill et Bertolt Brecht (commande de Radio Frankfurt, 1929).
+        \hspace #4 Cette pièce contient également une courte
+        citation extraite de la première version du
+        \italic \line {Berliner Requiem} de Kurt Weill
+        et Bertolt Brecht (commande de Radio Frankfurt, 1929).
       }
     }
   }
@@ -102,10 +139,13 @@
         \bold { Art Libre }
         \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
         Vous pouvez la copier, la modifier et la jouer \italic librement
-        sans contrevenir au droit d'auteur, à condition de respecter les
+        sans contrevenir au droit d’auteur, à condition de respecter les
         termes de la licence (notamment en veillant à mentionner le nom
-        de l'auteur et l'adresse web d'origine).
+        de l’auteur et l’adresse web d’origine).
       }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \choose-text
       \vspace #.5
       \line {
         Gravure réalisée au moyen du logiciel libre
@@ -115,6 +155,7 @@
       }
     }
   }
+  " "
 }
 \pageBreak
 
@@ -261,6 +302,11 @@ oeil =
   }
 }
 
+%%% Of course, if we're running in 'untainted mode,
+%%% then this whole thingamajig becomes moot.
+#(if (ly:get-option 'untainted)
+     (ly:set-option 'show-letters #f))
+
 %%% Just for consistency (and fun!), let's hide
 %%% the \easyHeads command behind a suitably-named wrapper...
 lettersOn =
@@ -272,7 +318,7 @@ lettersOn =
   \override NoteHead #'font-family = #'sans
   \override NoteHead #'font-series = #'bold %% ugly. But safer.
 #}
-(void-music))
+(make-music 'Music 'void #t))
 lettersOff = {
   \easyHeadsOff
 }

@@ -289,8 +289,8 @@ MarimbaMg = \relative do {
   \md \t {<fad' dod'> \mg la, mi'} \md \t {<red lad'> \mg la mi'} |
   \md \t {<red lad'> \mg <la mi'> \md <red lad'>}
   \mg \t {<la mi'> \md <red lad'> \mg <la mi'>}
-  \md <red lad'>16\> \mg <la mi'> \md <red lad'> \mg <la mi'>
-  \md <red lad'>4\! \mg r2 \tupletNeutral |
+  \stemUp \md <red lad'>16\> \mg <la mi'> \md <red lad'> \mg <la mi'>
+  \md <red lad'>4\! \mg r2 \tupletNeutral \stemNeutral |
 
   %%% 6 %%%
   R1.

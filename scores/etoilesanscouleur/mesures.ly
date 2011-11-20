@@ -40,24 +40,19 @@ Mesures = {
 
 %%% Default LilyPond beaming is pretty dumb and ugly.
 %%% (Or perhaps I may have a peculiar taste.)
+%%% OTOH, I'm not sure I'll want these settings for
+%%% other scores yet to come. Thus, I'm just overwriting
+%%% the modern-time-signature-settings locally here,
+%%% without merging these changes into the master branch.
 
-#(define my-time-signature-settings
-  (append modern-time-signature-settings
+#(define-public modern-time-signature-settings
+  (append
     '(
       ((3 . 2) .
-       ((baseMoment . (1 . 4))
-	(beamExceptions . ((end .  (((1 . 16) . (4 4 4 4 4 4))))))))
+                ((beamExceptions . ((end . (((1 . 12) . (3 3 3 3 3 3))))))))
       ((3 . 4) .
-       ((baseMoment . (1 . 8))
-	(beamExceptions . ((end . (((1 . 8) . (2 4 6))))))))
-    )))
-
-\layout {
-  \context {
-    \Score
-    timeSignatureSettings = #my-time-signature-settings
-    subdivideBeams = ##t
-  }
-}
+                ((beamExceptions . ((end . (((1 . 8) . (2 2 2))))))))
+     )
+     modern-time-signature-settings))
 
 %------------------------------------------------------------------%
