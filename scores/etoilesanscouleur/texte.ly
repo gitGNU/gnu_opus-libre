@@ -150,8 +150,8 @@ untaintedText =
       \line {
         Gravure réalisée au moyen du logiciel libre
         \with-url #"http://www.LilyPond.org"
-        \concat {\bold "GNU LilyPond" ,}
-        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) }
+        \concat {\bold "GNU LilyPond" ,} version
+        \concat { $(lilypond-version) . }
       }
     }
   }
