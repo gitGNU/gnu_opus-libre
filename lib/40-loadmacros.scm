@@ -24,9 +24,8 @@
                   (string->symbol (primitive-eval token))
                   token)))
     `(define-public ,sym
-       (ly:make-music-function (list ly:music?)
-                               (lambda (parser location x)
-                                 ,expr)))))
+       (define-music-function (parser location x) (ly:music?)
+         ,expr))))
 
 (defmacro staff-change-command (token)
   (let* ((str (primitive-eval token))
@@ -34,18 +33,16 @@
                   (string->symbol str)
                   token)))
     `(define-public ,sym
-       (ly:make-music-function '()
-                               (lambda (parser location)
-                                 (make-music 'ContextChange 'change-to-type 'Staff
-                                             'change-to-id ,str))))))
+       (define-music-function (parser location) ()
+         (make-music 'ContextChange 'change-to-type 'Staff
+                                    'change-to-id ,str)))))
 
 (defmacro make-script (str)
   (let* ((sym (car (primitive-eval str)))
          (script (cdr (primitive-eval str))))
     `(define-public ,sym
-       (ly:make-music-function (list ly:music?)
-                               (lambda (parser location mus)
-                                 (add-script mus ,script))))))
+       (define-music-function (parser location mus) (ly:music?)
+         (add-script mus ,script)))))
 
 
 ;; Not used. See make-script above.
@@ -60,9 +57,8 @@
       (eval-string (format #f
                            ;; hackish, but oh sooo convenient
                            "(define-public ~a
-          (ly:make-music-function (list ly:music?)
-          (lambda (parser location mus)
-          (add-script mus \"~a\"))))" sym script)))
+          (define-music-function (parser location mus) (ly:music?)
+          (add-script mus \"~a\")))" sym script)))
     (if (not (null? rest)) (make-scripts rest))))
 
 (define (load-macros-in dir)
