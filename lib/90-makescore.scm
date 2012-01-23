@@ -103,6 +103,7 @@ current-part music."
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score layout)
                  (add-score parser score)
+                 (*has-timeline* #f)
                  output-redirect)))
 
            struct)
