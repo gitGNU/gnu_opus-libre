@@ -17,10 +17,63 @@
 
 \pointAndClickOff
 
+#(set-global-staff-size 18)
 
 
 UnMesures = {
+  %%% Variation I %%%
+  \time 5/4
+  \tempo Lent
+  s1*5/4*21
+  \bar "||"
+  
+  %%% Variation II %%%
+  \time 7/4
+  \tempo "Stesso Tempo"
+  s1*7/4*15
+  \bar "||"
+  
+  %%% Variation III %%%
+  \time 3/4 s2.
+  \time 4/4 s1*2
+  \time 3/4 s2.*2
+  \time 4/4 s1*2
+  \time 3/4 s2.
+  \time 4/4 s1
+  \time 3/4 s2.*2
+  \time 4/4 s1*2
+  \time 3/4 s2.*2
+  \time 4/4 s1
+  \time 3/4 s2.
+  \time 4/4 s1*2
+  \time 3/4 s2.*2
+  \time 4/4 s1*2
+  \time 3/4 s2.
+  \bar "||"
+  
+  %%% Variation IV %%%
+  \time 3/4 %% TODO: add tempo indication
+  s2.*35
+  \bar "||"
+  
+  %%% Variation V %%%
+  \time 2/4 %%%FIXME: tempo
+  s2*5
+  \time 3/4 %%%FIXME: tempo
+  s2.*25
+  \time 2/4 %%%FIXME: tempo
+  s2*5
+  \bar "||"
+  
+  %%% Variation VI %%%
+  \time 5/4
+  \tempo "Un poco più largo"
+  s1*5/4*21
+  \bar "||"
 
+  %%% Variation VII %%%
+  s1*5/4*21
+  \bar "|."
 }
 
 ter = {
