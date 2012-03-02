@@ -101,6 +101,26 @@
 \once \override TupletNumber #'transparent = ##t
 #})
 
+(define noTuplets
+  (define-music-function (parser location x) (ly:music?)
+  #{
+\override TupletBracket #'transparent = ##t
+\override TupletNumber #'transparent = ##t
+$x
+\revert TupletBracket #'transparent
+\revert TupletNumber #'transparent
+#})
+
+(define tupletsOff #{
+\override TupletBracket #'transparent = ##t
+\override TupletNumber #'transparent = ##t
+#})
+
+(define tupletsOn #{
+\override TupletBracket #'transparent = ##f
+\override TupletNumber #'transparent = ##f
+#})
+
 (define oneStemDown #{
 \once \override Stem #'direction = #DOWN
 #})
