@@ -109,7 +109,7 @@
 $x
 \revert TupletBracket #'transparent
 \revert TupletNumber #'transparent
-#})
+#}))
 
 (define tupletsOff #{
 \override TupletBracket #'transparent = ##t
