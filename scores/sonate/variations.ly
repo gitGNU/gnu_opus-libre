@@ -47,19 +47,18 @@ UnPianoMd = \relative {
   <re,? la'>2(\> <mi fa si>2.)\! \fermata |
 
   %%% Variation II %%%
-  r4\pp si'2~( si8. do16 si2.) |
+  r4 si'2~--\pp si8. do16( si2.) |
   r8 si--~( si4.. do32 si la4~)
-  %%FIXME: ugly tuplet
   la8 r \stemUp \t {la4( si8~)} si r \stemNeutral |
   si8(-\dyn "poco_più" do~) \t {do reb,( do'~)}
-  do do--~ do4 si8.( do16~) do4 \t {r8 si(\< do)} |
+  do do--~ do4 si8.( do16~) do4 \t {r8 \longHairpin si(\< do)} |
   do(\! reb~) reb reb4-- do8--~ \t {do re,!( do')}
-  do(\< reb~\! \t {reb do si'~} si do,?) |
+  do(\< reb~ \t {reb do si'\!~} si do,?) |
   r8 reb16( mib~) \t {mib8 la,?( si~}
   si32\> mi fa,8 sol16~ sol8 do,)
-  \t {r4 si'8--~} si2\! |
+  \t {r4 si'8--~} si2 |
 
-  r4\pp si2( \t {do8 si4~)} si2. |
+  r4\! si2--\pp \t {do8( si4~)} si2. |
   r8 si--~ si4~ si16\< -"cantando" la8( red16~
   red16.\! do,32 fa8~) fa4. si8--~ si r |
   la8-\dyn "p_dolce" ( sib~) \t {sib sold( la~)}
@@ -75,208 +74,239 @@ UnPianoMd = \relative {
   \ttt {mib si'( la mi sol lab,)}
   \ttt {si'( la mi fad sol, do}
   \tt {sib) la'( fad sol, red'}
-  \tt {\mg re,) \md la''( fad sol, mi')}
-  fa,(\> dod' sol') si, \t {sold'8( la lad)} | %%FIXME deco.
+  \showStaffSwitch
+  \tt {\mg re,) \hideStaffSwitch \md la''( fad sol, mi')}
+  fa,(\> dod' sol') si, \t {sold'8( la lad)} |
 
   si2.\ppp \startTrillSpan ~ si8\stopTrillSpan la\startTrillSpan ~
-  la4~ \t {la\stopTrillSpan si sold8 \t {sold16( la lad}} |
-  si4)\startTrillSpan ~ \tt {si32\stopTrillSpan do si do si}
-  la8\startTrillSpan ~ \t {la16\stopTrillSpan si sold}
-  \t {si32 sold sol} si16~
-  \t {si mi,16. fad32} \t {red8 si'16~}
-  si do si8\startTrillSpan ~ si4~ si8~ si16\stopTrillSpan r |
-  si32 la si sold sol si mi, fad \t {red4( si'8)\startTrillSpan ~}
-  \t {si8.\stopTrillSpan do,16 si8\startTrillSpan ~}
-  \t {si16\stopTrillSpan do8} \t {reb si16~}
-  si32 reb do solb' fa la si16\startTrillSpan ~
+  la4~ \t {la(\stopTrillSpan si) sold8 \t {sold16( la lad}} |
+  si4)\startTrillSpan ~ \tt {si32(\stopTrillSpan do si do si}
+  la8)\startTrillSpan ~ \t {la16\stopTrillSpan si( sold}
+  \t {si32 sold sol)} si16~
+  \t {si mi,16.(-- fad32)} \t {red8-.-- si'16--~}
+  si do( si8)\startTrillSpan ~ si4~ si8~ si16\stopTrillSpan r |
+  si32(\< la si sold sol si) mi,( fad)
+  \t {red4(\! si'8)\startTrillSpan ~}
+  \t {si8.\stopTrillSpan do,16( si8)\startTrillSpan ~}
+  \t {si16\stopTrillSpan do8(->--} \t {reb->-- si16~->--)}
+  si32\> reb( do solb' fa la si16\!)\startTrillSpan ~
   si4~ si8\stopTrillSpan r |
-  \times 8/12 {r32 la si sold sol sib mib, re fad do reb fa}
-  \t {\mg \stemUp re,4 \md \stemNeutral si'8\startTrillSpan ~} si4~
-  si8.\stopTrillSpan la16 si8 r
-  do16 si8 do16 \t {si8 la16~} la16 si32 sold |
-  \t {sol4 si8\startTrillSpan ~} si8~ si\stopTrillSpan ~
-  si16. do32 si8~ si r <re, la'>4
-  <mi fa si>2\laissezVibrer \fermata |
+  \showStaffSwitch
+  \times 8/12 {r32 la(_\mp si sold sol sib mib, re fad do reb fa}
+  \t {\mg \stemUp re,!4--) \md \stemNeutral si'8--\startTrillSpan ~}
+  si4~\> si8.\stopTrillSpan \stemUp la16( si8)\! r
+  \hideStaffSwitch
+  do16(\p si8) do16( \t {si8) la16~(} la16 si32 sold) | \stemNeutral
+  \t {sol4_( si8)\startTrillSpan ~} si8~ si\stopTrillSpan ~
+  si16. do32( si8~) si r <re, la'>4\>(
+  <mi fa si>2)\!\laissezVibrer \fermata |
 
   %%% Variation III %%%
   R2.
-  r8 solb'~ solb16. fa32 solb8~
-  solb16 fa' mib32 do sib solb~
-  solb16. lab32 fa16. sol32 |
-  \t {mi8 red'16} \t {dod lad sold}
-  mi16. lad32 mi8~
-  \ttt {mi16 red' dod lad sold mi~}
-  mi16. fad32 mib16. fa32 |
-  \t {re8 dod'16} \t {si sold fad}
-  \t {re8 do'16} \t {sib sol fa}
-  \tt {reb si' la fad mi} |
+  r8 solb'--^\mp ~ solb16. fa32( solb8)~
+  solb16 fa'--( mib32 do sib solb)~
+  solb16. lab32( fa16.) sol32( |
+  \t {mi8) red'16--(} \t {dod lad sold}
+  mi16.)_\> lad32(-> mi8)~
+  \ttt {mi16_\! red'--( dod lad sold mi)~}
+  mi16. fad32( mib16.) fa32( |
+  \t {re8)\dim dod'16(} \t {si sold fad)}
+  \t {re8( do'16} \t {sib sol fa)}
+  \tt {reb( si' la fad mi)} |
 
-  r4 \pl {
+  r4\pp \pl {
     <do>2\arpeggio
-    r4 do2.
-    s2 s8 \hideNote do~
-    do8.[ reb16] %%%FIXME: no flag???
-    do4
+    r4 do2.--
+    s2 s8 \hideNote do_~
+    do8.[ reb16]( %%%FIXME: no flag???
+    do4)
   } {
-    <si'>4.\arpeggio do8
-    si2~ si8 si4.
-    \oneVoice \t {r4 <fa mi'>\arpeggio <mib re'>\arpeggio }
+    <si'>4.^(\arpeggio do8
+    si2)~ si8 si4.--
+    \oneVoice \t {r4
+    <fa mi'>^(^-\arpeggio
+    <mib re'>^-\arpeggio }
     \set tieWaitForNote = ##t
-    \voiceOne \t {r16 do~ si'~}
-    <do, si'>8~ si'4~ si
+    \voiceOne \tupletDown \t {r16 do_~ si'^-)~}
+    \tupletNeutral <do, si'>8~ si'4~ si
     \set tieWaitForNote = ##f
   }
-  r8 <solb fa'>~ \t {<solb fa'> mi' mib} |
+  r8 <solb fa'>--_\dyn "rf" _\> ( ~ \t {<solb fa'> mi' mib} |
 
-  <do, si'>2 \ottava #1
+  <do, si'>2--)_\pp \ottava #1
   \pl {
-    \oneVoice r16. lad''32 si,8~ \t {si do, si'~}
-    \voiceTwo si4~ \t {si4 do,8~} do4
+    \oneVoice r16. lad''32(_\sf si,8)~ \t {si do,( si')~}
+    \voiceTwo si4~ \t {si4 do,8^- ~} do4
   } {
-    s2 r8 solb''~ solb16 solb8.~
-    solb16 lab \t {fa solb lab}
+    s2 r8^\cresc solb''-- ~ solb16 solb8.->-- ~
+    solb16 lab \t {fa_(^\! solb lab)}
   }
-  <si, lad'>8 <si lad'>~ <si lad'>16. si32 lad'8
-  do,16 si~ \t {si do, si'} |
+  <si, lad'>8->-- \mf <si lad'>--~ <si lad'>16. si32( lad'8)->
+  do,16\<( si)~ \t {si do,_( si')\!} |
   \pl {
-    r16. do32 si8~ si16 la~ \t {la si sold}
+    r16. do32(_- si8)~ si16 la^(~ \t {la si sold)}
   } {
-    lad'8 \t {r lad16~} lad4
+    lad'8->-- \t {r lad16--~} lad4
   }
   \ottava #0
-  si,16-"loco" sold sol si~ \tt {si sol sold mi red} |
+  si,16(-"loco"-\dyndim "dim. molto" sold sol si)~
+  \tt {si sol( sold mi red} |
 
-  fad8. mid16 fad2~ fad16 do reb32 do mid fad~ |
-  fad8 \t {do16 si'8~} si16 sol? sold32 mi red fad~
-  fad16 sold \tt {mid32 fad sold sib la} |
-  <do, si'>4 \pl {
+  fad8.)-\dyn "p_semplice" mid16( fad2)~
+  fad16 do( reb32-- do mid fad)~ |
+  fad8 \t {do16( si'8)~} si16 sol? sold32( mi red fad~
+  fad16 sold) \tt {mid32(\< fad sold sib la)} |
+  <do, si'>4--\mp \pl {
     do2~ do8. reb16
   } {
-    si'4. do8 si2*1/2\laissezVibrer
-  } do,16 do' \ottava #1 si si'~
-  si la fa?8 \t {sol mi mib} |
+    si'4.-- do8^( si2*1/2)\laissezVibrer
+  } do,16(\> do' \ottava #1 si si'--)~
+  si\! la( fa?8-- \t {sol\> mi mib)} |
 
-  solb4 solb4.. lab16 |
-  fa4 r8 solb \t {r16 solb lab}
-  solb8\startTrillSpan ~ \tt {solb8\stopTrillSpan r16 fa solb} |
+  solb4--\pp solb4..-- lab16( |
+  fa4) r8 solb-- \t {r16 solb( lab}
+  solb8)\startTrillSpan ~ \tt {solb8\stopTrillSpan r16 fa( solb)} |
   \pl {
-    do,8 si si do si4
+    do,8(-- si-- si-- do-- si4--)
   } {
-    si'2.
+    si'2.--
   } r4 \ottava #0 |
   r4 r8 \pl {
     s8 s4
-    s4 r8 r16 reb,, do4~
+    s4 r8 r16 reb,,( do4)~
     do s do2~ do8
   } {
-    \oneVoice si'8-"(loco)" ~ si8. la16~ |
-    \t {la8 si4~} \voiceOne si2~
-    si4 \oneVoice <fa mi'>8 <mib re'> \voiceOne
-    si'8. do16 si4~
+    \oneVoice si'8-"(loco)" _\dyn "p_très clair" ~
+    si8.-- la16(~ |
+    \t {la8 si4)~} \voiceOne si2~
+    si4 \oneVoice <fa mi'>8(-- <mib re'> --\voiceOne
+    si'8.--) do16( si4)~
     si8
-  } r \t {r <si, lad'>4}
-  <re, la'>2 |
-  <mi fa si>2.\laissezVibrer \fermata
+  } r \t {r \stemUp  <si, lad'>4-- \stemNeutral }
+  \longHairpin <re, la'>2(\> |
+  <mi fa si>2.)\! \laissezVibrer \fermata
 
   %%% Variation IV %%%
-  <do fa sol si>4. <mi la si red>~ <mi la si red>2 r4 |
-  <do fa sol si> <mi la si red> <fa sib do mi> |
-  <mi la si red>2.~ <mi la si red>4 r <do fa sol si> |
-  <mi la si red>2 <fa sib do mi>4 |
-  <mi la si red> \pl {
-    <mib solb lab>8[ si']
+  <do fa sol si>4.^-^( -\dyn "f_(franc)"
+  <mi la si red>^-)~ <mi la si red>2 r4 |
+  <do fa sol si>^-( <mi la si red>^- <fa sib do mi>^-) |
+  <mi la si red>2.^- ~ <mi la si red>4 r <do fa sol si>^- |
+  <mi la si red>2^-( <fa sib do mi>4^-) |
+  \pl {
+    s4 <mib solb lab>8[ si'] s4
   } {
-    re4
-  } <lab reb mib sol>4 |
-  <mi la si red>2.\laissezVibrer R2.
-  r2 <do fa sol si>4 |
-  <mi la si red>2 <fa sib do mi>4 |
-  <mi sold lad red>2. |
-  r8 <do' fa sol si>~ <do fa sol si>4 <mi, la si red>~ |
+    \oneVoice <mi, la si red>^-(
+    \voiceOne re'^-
+    \oneVoice <lab reb mib sol>^-)
+  }
+  <mi la si red>2.^-\laissezVibrer R2.
+  r2 <do fa sol si>4-- |
+  <mi la si red>2( <fa sib do mi>4) |
+  <mi sold lad red>2.-- |
+  r8 <do' fa sol si>~(\>
+  <do fa sol si>4^"(espr.)" <mi, la si red>)~\! |
   <mi la si red>2 r4 |
-  r4 \t {<mi la si red>8 <fa sib do mi> <do fa sol si>}
-  <mi sold lad red> r16. <lab reb mib sol>32 |
-  <do mi fad si>2 r8
-  \t {<mi, sold lad red>16 <fa la si mi> <do mi fad si>} |
-  <mi la si red>8 \t {r32 <lab do re sol> <do fa sol si>}
-  <mi sold lad red>16~ <mi sold lad red>4. r8 |
+
+  r4 \t {<mi la si red>8\fff ( <fa sib do mi> <do fa sol si>}
+  <mi sold lad red>) r16. \longHairpin <lab reb mib sol>32->\< |
+  <do mi fad si>2->--\! r8
+  \t {<mi, sold lad red>16( <fa la si mi> <do mi fad si>} |
+  <mi la si red>8) \t {r32 <lab do re sol>->\< <do fa sol si>->}
+  <mi sold lad red>16~->--\! <mi sold lad red>4. r8 |
   \tt {
-    <do, mi fad si>16 <fa' sib do mi> <mi sold lad red>
+    <do, mi fad si>16_\fff ( <fa' sib do mi> <mi sold lad red>
     <lab,, do reb sol> <la re mib sold>
-  } \t {<mi' la si red>8 \mg <mib, sol la re> <solb sib do fa> \md }
+  } \t {
+    <mi' la si red>8-.) \mg
+    <mib, sol la re>-.-- <solb sib do fa>-.-- \md
+  }
   \tttt {
-    \stemDown <la'' dod red sold>16 \mg \stemUp <do,,, fa sol si> \md
-    \stemDown <lab''' re mi sol> <sib,, reb mib la>
-    <mi fa re' dod'> <reb' do'> \mg \stemUp <sol,, si dod fad> \md
-  } | \t {\stemNeutral <do fa sol si>4 <mi la si red>8~ } <mi la si red>2 |
+    \stemDown <la'' dod red sold>16-> \mg \stemUp <do,,, fa sol si>-> \md
+    \stemDown <lab''' re mi sol>(-. <sib,, reb mib la>-.
+    <mi fa re' dod'>-. <reb' do'>-. \mg \stemUp <sol,, si dod fad>-.) \md
+  } | \t {\stemNeutral \tupletDown
+    <do fa sol si>4^(^\dyn "mp_sub." <mi la si red>8)~ } <mi la si red>2 |
   \pl {
     s4 \noTuplet \tt {s16 <lab' sol'> s <fa mi'> r} s4 s2.
   } {
     \ottava #1
-    \oneVoice <la re mi sold>16 <lab reb fa sol> <do mi fad si>8~
-    \voiceOne \tt {<do mi fad si>16 sol' <la, dod red sold> mi' <mi, sold lad red>~}
-    \oneVoice <mi sold lad red>32 \bracketDown "m.s." <fad' sol,> \ottava #0
-    <mib,, lab sib re>8.-"(loco)" ~ |
-    \t {<mib lab sib re>4 <do' mi fad si> <mi, la si red>~ }
+    \oneVoice
+    <la re mi sold>16(\fff\< <lab reb fa sol> <do mi fad si>8->\!)~
+    \voiceOne \tt {<do mi fad si>16 sol'->
+    <la, dod red sold>(-> mi' <mi, sold lad red>)~}
+    \oneVoice <mi sold lad red>32 \bracketDown "m.s."
+    <fad' sol,>->( \ottava #0
+    <mib,, lab sib re>8.)-"(loco)" ~ |
+    \t {<mib lab sib re>4 <do' mi fad si>(^"(espr.)" <mi, la si red>~) }
     <mi la si red>8 r
   }
-  <lab, reb mib sol>4 <lab reb mib sol>4.. <sibb lab'>16 |
-  <lab do re sol>2 r4 |
-  <lab reb mib sol>4 <do mi fad si>2 |
-  r4 \t {<lab reb mib sol> <do mi fad si> <reb solb lab do>} |
-  <do fa sol si>2 <si mi fad lad>4 |
-  <sib re mi la> <la re mi sold> <la'? do re sol!> |
-  <mi sold lad red>2. |
-  <do mi fad si>4 <mi la si red> <fa sib do mi> |
-  <mi la si red>2. |
-  <do fa sol si>2~ <do fa sol si>8 <mi la si red>~ |
-  <mi la si red>2 \stemUp <do' mi fad si>4~ |
-  <do mi fad si>8 <mi, la si red>~ \stemNeutral <mi la si red>2 |
-  r4 <re la'>2 | <do mi fa sol si>2.\laissezVibrer
+
+  <lab, reb mib sol>4---\dyn "mp_caloroso" %% FIXME: is that a word?
+  <lab reb mib sol>4..-- <sibb lab'>16( |
+  <lab do re sol>2) r4 |
+  <lab reb mib sol>4--^( <do mi fad si>2--) |
+  r4 \t {<lab reb mib sol>--^(
+  <do mi fad si>-- <reb solb lab do>--)} |
+  <do fa sol si>2-- <si mi fad lad>4-- |
+  <sib re mi la>--( <la re mi sold>--
+  <la'? do re sol!>--)_"(dolce espr.)" |
+  <mi sold lad red>2.-- |
+  <do mi fad si>4--( <mi la si red>-- <fa sib do mi>--) |
+  <mi la si red>2.-- |
+  <do fa sol si>2~--^(\mp <do fa sol si>8 <mi la si red>~--) |
+  <mi la si red>2 \stemUp <do' mi fad si>4^~^( \> |
+  <do mi fad si>8_"(molto espr.)" <mi, la si red>~)\!
+  \stemNeutral <mi la si red>2 |
+  r4 <re la'>2( | <do mi fa sol si>2.)\laissezVibrer
 
   %%% Variation V %%%
-  do4~ \t {do8 do4~} | \t {do8. si16 do8~} do4~ |
-  \t {do8 si do} \t {si \mg mi, red} | \md do'4 \t {si8 si do} |
-  \tt {solb' fa red16~} red mi lab sol |
-  si4. do8 si4~ | si8 do do si fa' solb |
-  si,2~ si8 do | si2 si4~ | si8 sib la lab fab' mib |
-  sol,4. sol8~ sol4~ |
-  sol8. sol16~ sol8 lab16 sol~ sol8 mi? |
-  red fad lad si~ si16 reb,8 do'16~ |
-  \t {do8 si'4\laissezVibrer } r8 sol,~ sol4~ |
-  sol8 sol~ \t {sol la lad~} \t {lad si la'16 si} |
+  do4--~-\dyn "mf_(con Ped.)" \t {do8 do4~} |
+  \t {do8. si16( do8)~} do4~ |
+  \t {do8 si( do} \t {si \mg mi, red} |
+  \md do'4) \t {si8--( si-- do--)} |
+  \tt {solb'--( fa-- red16--~} red\> mi) lab( sol) |
+  si4.--\p do8( si4)~ |
+  si8 do do( si) fa'( solb) |
+  si,2~ si8 do | si2 si4~ |
+  si8 sib la( lab) fab'( mib) |
+  sol,4.-- sol8--~ sol4~ |
+  sol8. sol16--~ sol8 lab16( sol)~ sol8 mi? |
+  red( fad lad si)~ si16 reb,8( do'16~ |
+  \t {do8 si'4)\laissezVibrer } r8 sol,--~ sol4~ |
+  sol8 sol--~ \t {sol la lad(~} \t {lad si) la'16( si} |
 
-  <do, la' do>4. <si sold' si>8 <do la' do>4~ |
-  <do la' do>8 <si sol' si> <si sol' si> <do lab' do>
-  <mi, do' mi> <red si' red> |
-  <si' sol' si>4. <do la' do>8 <si sold' si>4~ |
-  <si sold' si>8 <do lab' do> <do lab' do> <si sol' si>
-  <sol' mi' sol> <lab fa' lab> |
-  <si,? sol' si?>4. <si sol' si>8 <fa'? re' fa?> <mi dod' mi> |
+  <do, la' do>4.)-\dyn "mf_malinconico" %% FIXME: word?
+  <si sold' si>8( <do la' do>4)~ |
+  <do la' do>8 <si sol' si> <si sol' si>( <do lab' do>)
+  <mi, do' mi>( <red si' red>) |
+  <si' sol' si>4.-- <do la' do>8( <si sold' si>4)~ |
+  <si sold' si>8 <do lab' do> <do lab' do>( <si sol' si>)
+  <sol' mi' sol>( <lab fa' lab>) |
+  <si,? sol' si?>4.--\> <si sol' si>8 <fa'? re' fa?>(\! <mi dod' mi>) |
 
   \ottava #1
-  \t {<sol sib>4 <red' fad> dod~} dod8 <sib' la'> |
-  r4 <sol si dod fad> <fad do' re fa> |
-  r <dob mib fa sib> <sib mi fad la> |
+  \t {<sol sib>4(^\> <red' fad> dod)~} dod8^\pp <sib' la'>-.-- |
+  r4 <sol si dod fad>--( <fad do' re fa>--) |
+  r <dob mib fa sib>--( <sib mi fad la>--) |
   \ottava #0
-  r <sol sid dod fad> r |
-  r <mib lab re> <do fa reb'> |
+  r <sol sid dod fad>-- r |
+  r <mib lab re>(\> <do fa reb'>)\! |
 
   \pl {
-    <lab reb sol>2*3/2\laissezVibrer <lab sol'>
-    <lab reb mib>4 <lab reb mib>2 lab s4 s2.
+    <lab reb sol>2*3/2--\laissezVibrer \p <lab sol'>--
+    <lab reb mib>4--( <lab reb mib>2--) lab-- s4 s2.
   } {
-    mib'4. fab8 mib4~ mib8 do si re fad sol~
-    sol4. lab8 sol4~ sol8[ mib]
-    \oneVoice mib[ re] sib'[ la]
-    dod,4. do8 do fa,?
+    mib'4.-- fab8( mib4)~ mib8 do si( re fad sol)~
+    sol4. lab8( sol4)~ sol8[ mib]
+    \oneVoice mib[(_"dolce" re] sib'[ la]
+    dod,4.)\> do8 do^( fa,?)\!
   }
   
-  si,4~ \t {si8 si4~} | \t {si8 do si~} si4~ |
-  \t {si8 \mg \stemUp do, si} \t {lab mib' do} |
+  si,4--~\mp \t {si8 si4--~} | \t {si8 do( si)~} si4~ |
+  \t {si8 \mg \stemUp do,( si)} \t {lab^( mib' do} |
   \set tieWaitForNote = ##t
-  \md \stemNeutral si'4~ \t {si8 la~ re~} |
-  <la re sol>2\laissezVibrer \fermata
+  \md \stemNeutral si'4)~\> \t {si8 la~ re~} |
+  <la re sol>2\!\laissezVibrer \fermata
   \set tieWaitForNote = ##f
 
   %%% Variation VI %%%
@@ -449,28 +479,29 @@ UnPianoMg = \relative {
 
   %%% Variation II %%%
   \clef bass
-  mi4--( fa,-- si-- do,-- sol'-- si-- fa--) |
-  mi'--( fa,-- si-- do,-- sol'-- si-- fa--) |
-  mi'_"simile" fa, si do, sol' si fad |
-  sol' lab, red mi, si' la dod |
-  sol' lab, red mi, si'--( la-- lab--) |
+  mi4--_( fa,-- si-- do,-- sol'-- si-- fa--) |
+  mi'--_( fa,-- si-- do,-- sol'-- si-- fa--) |
+  mi'--_( fa,-- si-- do,-- sol'-- si-- fad--) |
+  sol'--_( lab,-- red-- mi,-- si'-- la-- dod--) |
+  sol'--_( lab,-- red-- mi,--) si'--_( la-- lab--) |
 
   sol--( fad-- fa-- mi--) lab--( sol-- fad--) |
-  sol--( fad'-- fa,-- mi'-- do,-- si'-- fad--) |
+  sol--_( fad'-- fa,-- mi'-- do,-- si'-- fad--) |
   re'--( dod-- do-- si--) mib,--( mi-- fa--) |
   re--( dod'-- do,-- si'--) fad--( sol-- sold--) |
   la--_( sold'-- do,,-- reb'--
   \stemDown mi,-- \stemNeutral mib-- sib'--) |
-  mi_"simile" fa, si do, sol' si fa |
-  mi' fa, si do, sol' si fa |
-  mi' fa, si do, fa si sol |
-  si--( \stemDown do,--) \stemNeutral re--( fa--) sol--( si-- fa--) |
+  mi--( fa,-- si-- do,-- sol'-- si-- fa--) |
+  mi'--( fa,-- si-- do,-- sol'-- si-- fa--) |
+  mi'--_( fa,-- si-- do,-- fa-- si-- sol--) |
+  si--_( \stemDown do,--) \stemNeutral re--( fa--) sol--( si-- fa--) |
   si--( fa-- si-- mi--) r \clef treble
   <do re sol la>2\fermata \laissezVibrer
   \clef bass |
 
   %%% Variation III %%%
-  \tt {si16-"legato assai" do, re fa sol}
+  \tt {si16_"legato assai"
+  -\dyn "pp_sotto voce, con Ped." do, re fa sol}
   \tt {si do, re fa sol}
   \tt {si do, re fa sol} |
   \tt {si do, re fa sol}
@@ -500,22 +531,22 @@ UnPianoMg = \relative {
   \tt {sold la, si do red}
   \tt {sol la, si do re} |
 
-  \tt {mib lab, do si' sol}
+  \tt {mib_"(sempre legato assai)" lab, do si' sol}
   \tt {mib sol, do si' lab}
   \tt {mib lab, do si' sol}
   \tt {mib sol, do si' lab} |
   \tt {mib lab, do si' sol}
   \tt {mib sol, do si' lab}
   \tt {red, fad, do' si' la} |
-  \tt {red, mi, do' si' sol}
+  \tt {red, mi,( do' si' sol}
   \tt {lab, si do, fa sol}
-  \tt {red' fa, do' si' sold} |
-  \tt {red mi, do' si' sol}
+  \tt {red') fa,( do' si' sold} |
+  \tt {red) mi,( do' si' sol}
   \tt {lab, si do, fa sol}
-  \tt {red' mi, lab sol' si,}
-  \ttt {re mib, sol la do re} |
+  \tt {red') mi,( lab sol' si,}
+  \ttt {re) mib,( sol la do re} |
 
-  \tt {red mi, sold lad dod}
+  \tt {red) mi, sold lad dod}
   \tt {red mi, sold lad dod}
   \tt {red mi, sold lad dod}
   \tt {red mi, sold lad dod} |
@@ -541,7 +572,7 @@ UnPianoMg = \relative {
   \tt {si do, re fa sol}
   \tt {si do, re fa sol}
   \tt {si do, re fa sol} |
-  \tt {sib do, reb fa sol}
+  \tt {sib_\dyn "pp_sempre" do, reb fa sol}
   \tt {sib do, reb fa sol}
   \tt {sib do, reb fa sol} |
 
@@ -553,101 +584,122 @@ UnPianoMg = \relative {
   \tt {sold do, dod re mib}
   \tt {sol do, dod re mib} |
   \tt {fad re mi fa sol}
-  \tt {sold mib sol la lad}
-  <mi si'>2 | <do re sol la>2.\fermata \laissezVibrer
+  \tt {sold mib( sol la lad}
+  <mi si'>2) | <do re sol la>2.\fermata \laissezVibrer
 
   %%% Variation IV %%%
-  R2. r4 \ottava #-1 <do,, si'>2\laissezVibrer \ottava #0 R2.
-  r2 r8 \ottava #-1 <do si'>~ <do si'>2\laissezVibrer \ottava #0 r4 |
-  r r8 \ottava #-1 do~ do4\laissezVibrer \ottava #0 R2.
-  r2 r8 \stemUp <do'' fa sol si>~_"(loco)" |
+  R2. r4 \ottava #-1
+  <do,, si'>2--\laissezVibrer^\dyn "sffz"
+  \ottava #0 R2.
+  r2 r8 \ottava #-1
+  <do si'>--~^\sf <do si'>2\laissezVibrer
+  \ottava #0 r4 |
+  r r8 \ottava #-1
+  do--~ do4\laissezVibrer \ottava #0 R2.
+  r2 r8 \stemUp <do'' fa sol si>--~^\dyn "f_franc"_"(loco)" |
   <do fa sol si>4 \stemNeutral \pl {
-    r4 r8 <reb,, do'>~ <reb do'>2\laissezVibrer s4
-    r <reb do'>2\laissezVibrer
-    r2 r8 <reb do'>~ <reb do'>2\laissezVibrer s4
-    r <do si'>2\laissezVibrer
+    r4 r8 <reb,, do'>--~ <reb do'>2\laissezVibrer s4
+    r <reb do'>2--\laissezVibrer
+    r2 r8 <reb do'>--~ <reb do'>2\laissezVibrer s4
+    r <do si'>2-- ^\p \laissezVibrer
   } {
-    <mi'' sold lad red>2 r <fa sib mi>4
-    <mi sold lad red>2 <mib sol la re>4
-    <mi la si red>2.
-    r8 <do fa sol si>~ <do fa sol si>4 <mi la si red>~
+    <mi'' sold lad red>2-- r <fa sib mi>4--
+    <mi sold lad red>2( <mib sol la re>4)
+    <mi la si red>2.--
+    r8 <do fa sol si>~( <do fa sol si>4 <mi la si red>~)
     <mi la si red>2 r4
   }
+
   r4 r8 <re fad sold dod>16-. r
-  \ottava #-1 \t {r8 la, re,}
-  r16. mi32 <fa sol>8~ \t {<fa sol>8 <re la'> <do si'>~}
+  \ottava #-1 \t {r8 la,^\dyn "mp,_non legato"-.-- re,-.--}
+  r16. mi32( <fa sol>8)->~ \t {<fa sol>8 <re la'>-.-- <do si'>--~}
   <do si'> \ottava #0 r16 <re'' sol la dod>-. _"(loco)" |
-  r4 \ottava #-1 r16 <do,, si'>16. <do si'>~
-  <do si'>32 <reb sib'> <do si'>8. \ottava #0 |
+  r4 \ottava #-1 r16 <do,, si'>16.->^\mf <do si'>~->
+  <do si'>32 <reb sib'>( <do si'>8.) \ottava #0 |
   s2.
-  \ottava #-1 \t {r8 <do reb>4} r16 <do reb>16. <do reb>~
-  <do reb>32 <lad' si> <do, reb>8. \ottava #0 |
-  \t {r4 <mi'' la si red>8~ _"(loco)" } <mi la si red>4
-  \t {r8 <fa lab sib mi> <mi la si red>\laissezVibrer } |
-  \ottava #-1 r8 <fa,, solb> r <fad sol> \ottava #0 r4 |
-  r8 \ottava #-1 do r do r mib | r do r mib r si' |
-  r do, r mib r si' | r lab r do, r mib |
-  r do r lab' r mib \ottava #0 |
+  \ottava #-1 \t {r8 <do reb>4->-.}
+  r16 <do reb>16.--^\ff <do reb>->~
+  <do reb>32 <lad' si>(-> <do, reb>8.) \ottava #0 |
+  \t {r4 <mi'' la si red>8~->-- _"(loco)" } <mi la si red>4
+  \t {r8 <fa lab sib mi?>->( <mi la si red>->)\laissezVibrer } |
+  \ottava #-1 r8 <fa,, solb>-.^\mf^\> r <fad sol>-.^\!
+  \ottava #0 r4 |
+
+  r8 \ottava #-1 do-.( r do-. r mib-.) |
+  r do-.( r mib-. r si'-.) |
+  r do,-.( r mib-. r si'-.) |
+  r lab-.( r do,-. r mib-.) |
+  r do-._( r lab'-. r mib-.) \ottava #0 |
   \pl {
-    r8 \ottava #-1 do \ottava #0 r \ottava #-1 mib \ottava #0 r4
-    r8 \ottava #-1 do r do \ottava #0 r4
+    r8 \ottava #-1 do-.-- \ottava #0
+    r \ottava #-1 mib-.-- \ottava #0 r4
+    r8 \ottava #-1 do-.-- r do-.-- \ottava #0 r4
   } {
-    <do'' fa sol si>4 ^"(loco)" <mi sold lad red> <fa sib do mi>
-    <mi sold lad red>2.
+    <do'' fa sol si>4--( ^"(loco)" <mi sold lad red>-- <fa sib do mi>--)
+    <mi sold lad red>2.--
   }
-  <do fa sol si>4 <mi sold lad red> \ottava #-1 do,, \ottava #0 |
+  <do fa sol si>4--(^\p <mi sold lad red>--)\laissezVibrer
+  \ottava #-1 do,,-.\laissezVibrer \ottava #0 |
   \pl {
-    r \ottava #-1 do \ottava #0 r
-    r \ottava #-1 do \ottava #0 r
-    r8 \ottava #-1 <do si'>4. \ottava #0 r4
+    r \ottava #-1 do-.\laissezVibrer \ottava #0 r
+    r \ottava #-1 do-.\laissezVibrer \ottava #0 r
+    r8 \ottava #-1 <do si'>4.--\laissezVibrer \ottava #0 r4
     s2.
   } {
-    <mi'' la si red>2. <do fa sol si>2~
-    <do fa sol si>8 <mi la si red>~
-    <mi la si red>2 \md \stemDown <si' mi fad lad>4~ %%FIXME: ugly tie
-    <si mi fad lad>8 \mg \oneVoice \stemNeutral <mi, la si red>~
+    <mi'' la si red>2.-- <do fa sol si>2~--(
+    <do fa sol si>8 <mi la si red>~--)
+    <mi la si red>2 \md \stemDown <si' mi fad lad>4_~--_(
+    <si mi fad lad>8 \mg \oneVoice \stemNeutral <mi, la si red>)~
     <mi la si red>2
   }
-  r4 \ottava #-1 <do,, si'>2 <re la'>2.\laissezVibrer
+  r4 \ottava #-1 \longHairpin
+  <do,, si'>2(\> <re la'>2.\!)\laissezVibrer
   \ottava #0
 
   %%% Variation V %%%
   R2*2 s2 R2*2 \clef treble
   \pl {
-    lab'''2. lab s4 lab2 s4 <lab sib>2~ \hideNote <lab sib>2.
+    lab'''2.-- lab-- s4 lab2--
+    s4 <lab sib>2--~ \hideNote <lab sib>2.
     \clef bass
-    do,2. do2 do4~ \hideNote do2 do4~ \hideNote do2. do2.
+    do,2.-- do2-- do4--~ \hideNote do2
+    do4--~ \hideNote do2. do2.--
   } {
-    r4 <reb' mib sol> <reb mib sol>
-    r <reb mib sol> <reb mib sol> <reb mib sol>
-    r <reb mib sol> <reb mib sol>
-    r <reb mib sol> <reb mib sol>2 <reb mib sol>4
-    r <fa, si> <fa si> r q2 q4 q r <fa si re>2 q4 r <mi fa si>2
+    r4 <reb' mib sol>--( <reb mib sol>--)
+    r <reb mib sol>--( <reb mib sol>-- <reb mib sol>--)
+    r <reb mib sol>--( <reb mib sol>--)
+    r <reb mib sol>-- <reb mib sol>2--( <reb mib sol>4--)
+    r <fa, si>--( <fa si>--) r q2--
+    q4--( q--) r <fa si re>2--( q4--) r <mi fa si>2--
   }
 
-  re,4 <fa' solb sib reb> <fa solb sib reb> |
-  lab, <la' sib re fa> <la dod fad> |
-  fad, <sol' sib mib> <solb mib mib> |
-  do,, <la'' sib reb solb> <la re fad> |
-  sib, <dod' re fad> <sold la re> |
+  re,4--_( <fa' solb sib reb> <fa solb sib reb>) |
+  lab,--_( <la' sib re fa> <la dod fad>) |
+  fad,--_( <sol' sib mib> <solb mib mib>) |
+  do,,--_( <la'' sib reb solb> <la re fad>) |
+  sib,--_( <dod' re fad> <sold la re>) |
 
   \pl {
-    <mi fa> <mi, fa'>2 fa2. <mi fa> <mi' fa>4 fa,2
-    <mi' fa>4 <mi, fa mi' fa>2 s4 do2 do2.\laissezVibrer
-    do' s4 reb2 re red4
+    <mi fa>--( <mi, fa'>2--) fa2.--
+    <mi fa>-- <mi' fa>4--( fa,2--)
+    <mi' fa>4--( <mi, fa mi' fa>2--)
+    s4 do2-- do2.--\laissezVibrer
+    do'( s4 reb2 re red4)
   } {
-    si'4. do8 si4~ si8 mi, fa do' si4~
-    si8 lab sol sib re red
-    si4. mi,8 red do' si2.
-    <do, fa sol si>4 r <do fa sol si>
-    r <mi la si red> <mi la si red>
-    r <fa sol si> <fa sol si> <fa sol si>
-    r <solb lab do> r <fa sol si> r
+    si'4.--^\dyn "mf_en dehors" do8( si4)~
+    si8 mi,( fa do' si4)~
+    si8 lab( sol) sib re( red)
+    si4.-- mi,8 red( do' si2.)
+    <do, fa sol si>4--( r <do fa sol si>--)
+    r <mi la si red>--( <mi la si red>--)
+    r <fa sol si>--( <fa sol si>-- <fa sol si>--)
+    r <solb lab do>-- r <fa sol si>-- r
   }
-  <mi fa>8 <mi fa>4. | <mi fa>8 <mi fa>4. |
-  <mi fa>2*1/8 s4.. | r8 <fa sol>4
+  <mi fa>8--( <mi fa>4.--) |
+  <mi fa>8--( <mi fa>4.--) |
+  <mi fa>2*1/8-- s4.. | r8 <fa sol>4--
   \pl {\oneVoice do8~ \voiceTwo do2\laissezVibrer}
-  {s8 <mi fa si>2\fermata \laissezVibrer }
+  {s8 <mi fa si>2--\fermata \laissezVibrer }
 
   %%% Variation VI %%%
   r4 s1 |

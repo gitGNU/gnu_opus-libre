@@ -1,2 +1,2 @@
 skel = "piano"
-structure = '("Un" "Deux" "Trois")
+structure = '("Trois")

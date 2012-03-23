@@ -112,5 +112,39 @@ DeuxMesures = {
 }
 
 TroisMesures = {
-
+  \time 2/4
+  s2*63 \bar "||"
+  %%FIXME: tempo
+  s2*2
+  \time 3/4 s2.*2
+  \time 2/4 s2*4
+  \time 3/4 s2.*2
+  \time 2/4 s2*4
+  \time 3/4 s2.*2
+  \time 2/4 s2*3
+  \time 3/4 s2.
+  \time 2/4 s2*2
+  \time 3/4 s2.
+  \time 2/4 s2*3
+  \time 3/4 s2.*2
+  \time 2/4 s2*4
+  \time 3/4 s2.*2
+  \time 2/4 s2*4
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/4 s2*2
+  \time 3/4 s2.
+  \time 2/4 s2*3
+  \time 3/4 s2.*2
+  \time 2/4 s2*4
+  \time 3/4 s2.*2
+  \time 2/4 s2*4
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/4 s2 \bar "||"
+  s2*63 \bar "||"
+  s2*7 \bar "|."
 }
+
