@@ -4,6 +4,17 @@
 \language "italiano"
 
 
+UnTitre = "I."
+DeuxTitre = "II."
+TroisTitre = "III."
+
+\header {
+  title = "Sonate"
+  subtitle = "pour piano seul"
+  composer = "Valentin Villenave"
+  date = "2009-2012"
+}
+
 \layout {
   \context {
     \Staff
@@ -52,16 +63,20 @@ UnMesures = {
   \bar "||"
   
   %%% Variation IV %%%
-  \time 3/4 %% TODO: add tempo indication
+  \time 3/4
+  \tempo "(Non allargando)"
   s2.*35
   \bar "||"
   
   %%% Variation V %%%
-  \time 2/4 %%%FIXME: tempo
+  \time 2/4
+  \tempo "A piacere"
   s2*5
-  \time 3/4 %%%FIXME: tempo
+  \time 3/4
+  \tempo "Tempo di minuetto"
   s2.*25
-  \time 2/4 %%%FIXME: tempo
+  \time 2/4
+  \tempo "Tempo I"
   s2*5
   \bar "||"
   
@@ -72,6 +87,7 @@ UnMesures = {
   \bar "||"
 
   %%% Variation VII %%%
+  \tempo "Tempo I"
   s1*5/4*21
   \bar "|."
 }
@@ -147,4 +163,3 @@ TroisMesures = {
   s2*63 \bar "||"
   s2*7 \bar "|."
 }
-
