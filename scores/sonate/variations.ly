@@ -12,8 +12,6 @@
   }
 }
 
-%\paper { annotate-spacing = ##t }
-
 UnPianoMd = \relative {
 
   %%% Variation I %%%
@@ -305,7 +303,7 @@ UnPianoMd = \relative {
   }
   
   si,4--~\mp \t {si8 si4--~} | \t {si8 do( si)~} si4~ |
-  \t {si8 \mg \stemUp do,(^"cantando" si)} \t {lab^( mib' do} |
+  \t {si8 \mg \stemUp do,(-\dyn "cantando" si)} \t {lab^( mib' do} |
   \set tieWaitForNote = ##t
   \md \stemNeutral si'4)~\> \t {si8 la~ re~} |
   <la re sol>2\!\laissezVibrer \fermata
@@ -330,7 +328,7 @@ UnPianoMd = \relative {
   \t {red'4_- \ottava #0 re,,_-_"loco" \stemUp \mg dod,^-} |
   \stemNeutral \md \t {r16 mi'''(-> _\> fa,~} fa re)~
   \t {re8_\! \mg \stemUp sol,,( \stemNeutral \md sold')}
-  \pl { r4 la8^"(loco)"_\mf}
+  \pl { r4 la8_"(loco)"\mf}
   {\ottava #1 r32 dod'(_\pp red'8.-.) \ottava #0
   r4 r8 \ottava #1 lad'-.}
   r4 \t {sib,8(^\p re,4)} r4 r8 r16 fad'-. \ottava #0
@@ -374,18 +372,22 @@ UnPianoMd = \relative {
   <la la'>8 <si si'>->--)~ <si si'>2}
 
   \pl r4 <si si'>2*1/2->--^\sfz\laissezVibrer \>
-  r8\mp do'32( si, re la) sol(^\dyn "pp_élégant" fa, la mi)
+  r8\mp \lightBeams \graceNotes {do'32( si, re la)
+   sol(^\dyn "pp_élégant" fa, la mi)
   \tt {re( sol do mi si}
-  fa') do'( re, mi' \t {fa16_\> sol la} si8)_\! r |
+  fa') do'( re, mi' \t {fa16_\> sol la} si8)_\! } r |
   \tt {r16 re,,,( sol do la'} <si si'>4)
   \pl {\ottava #0 <si,,, mi fa si>4._-_"loco"_(
   \ottava #0 <do re sol la>_-_)
   \ottava #0 <si mi fa si>2_- _"loco" <si mi fa si>2*1/2_- }
   { r16^\pp r32 \ottava #1 <la''' do'>_( <si si'>8)\laissezVibrer s2 |
-  r32 \ottava #1 do'( si) re,( mi sol la) fa
+  r32 \ottava #1 \lightBeams \graceNotes {
+  do'( si) re,( mi sol la) fa
   mi, sol re( la' si fa do') si, \ottava #0
-  do^"loco" la re, mi( fa\> si sol do,)} \clef bass
-  \t {r16 la,( si,)} do32 mi, re'( mi \tt {fa) sol, fa( la sol')} r8 |
+  do la^"loco" re, mi( fa\> si sol do,)}} \clef bass
+  \t {r16 \lightBeams \graceNotes { la,( si,)}}
+  \lightBeams \graceNotes {do32 mi, re'( mi
+  \tt {fa) sol, fa( la sol')}} r8 |
   \clef treble \pl <do mi fad si>2*1/2--\p
   \t {r8 \ottava #1 fad'''32_>_( sol la si si,_> do re mi)}
   \t {fa16-.(_"(with swing)" reb-. mib-.}
@@ -393,7 +395,8 @@ UnPianoMd = \relative {
   \t {r16 sib,(\> reb} \t {mib) fa,(-. lab-.)}
   \pl r8 <si,, dod mid sold lad>2*1/4\mp-- \clef bass
   r32 lab(^\ppp mib fad si,16) r \clef treble
-  \ottava #1 \t {do'''''( lab sib)} \ottava #0 |
+  \ottava #2 \lightBeams \graceNotes
+  \t {do'''''( lab sib)} \ottava #0 |
   \pl {r16 <do,,,, fa sol si>4..--}
   { \t {r8 \ottava #1 \acciaccatura do''''16-> si,8-- re-.}
   \oneVoice \t {sib \acciaccatura mi16-> red,8-- fad-.} }
@@ -700,7 +703,7 @@ UnPianoMg = \relative {
     r <reb mib sol>--( <reb mib sol>--)
     r <reb mib sol>-- <reb mib sol>2--( <reb mib sol>4--)
     r <fa, si>--( <fa si>--) r q2--
-    q4--( q--) r <fa si re>2--( q4--) r <mi fa si>2--
+    q4--( q--) r <fa si re?>2--( q4--) r <mi fa si>2--
   }
 
   re,4--_( <fa' solb sib reb> <fa solb sib reb>) |
@@ -779,11 +782,13 @@ UnPianoMg = \relative {
   r4 <do, mi fa si>8^( <re sol la>) <do, mi fa la>(-- <re sol>--)}
 
   \pl si2*1/4\laissezVibrer
-  \ttt {si16 si' \ottava #0 do^"loco"_( la' re sol)}
+  \ttt {si16 \graceNotes {si' \ottava #0 do^"loco"_( la' re sol)}}
   \clef treble <si mi fa si>2^- <si mi fa si>4..^-
   \pl {s16 r4} {do'16( <si, mi fa si>2*1/2)} \clef bass
-  re,,32(^"leggiero" do' si mi la, fa' re sol) s2 r8 \ottava #-1
-  \tt {si,,,32( do' \ottava #0 la'_"loco" re sol)} |
+  \lightBeams \graceNotes {re,,32(^"leggiero" do' si mi
+  la, fa' re sol)} s2 r8 \ottava #-1
+  \lightBeams \graceNotes
+  \tt {si,,,32( do' \ottava #0 la' re_"loco" sol)} |
   s4 \ottava #-1 si,,,16(-. do'-. la-. re-.) \ottava #0 r4
   \ottava #-1 la,16(-. sol'-. fa-. si-. re,-. mi-. do8--) |
   \pl si2*1/2\laissezVibrer \t {r8 \ottava #1 \clef treble
