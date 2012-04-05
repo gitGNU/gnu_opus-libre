@@ -12,7 +12,7 @@ TroisTitre = "III."
   title = "Sonate"
   subtitle = "pour piano seul"
   composer = "Valentin Villenave"
-  date = "2009-2012"
+  date = "printemps 2009 — printemps 2012"
 }
 
 \layout {
@@ -28,7 +28,7 @@ TroisTitre = "III."
 
 \pointAndClickOff
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 
 
 UnMesures = {
@@ -110,7 +110,7 @@ off = {
 DeuxMesures = {
   \time 6/4
   \set beamExceptions = #'()
-  \tempo "Vif"
+  \tempo "Vif (avec souplesse)"
   \off s1.*3
   \ter s1.
   \bin s1.
@@ -129,6 +129,7 @@ DeuxMesures = {
 
 TroisMesures = {
   \time 2/4
+  \tempo "Presto possibile"
   s2*63 \bar "||"
   %%FIXME: tempo
   s2*2

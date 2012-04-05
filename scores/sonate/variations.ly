@@ -397,7 +397,7 @@ UnPianoMd = \relative {
   r32 lab(^\ppp mib fad si,16) r \clef treble
   \ottava #2 \lightBeams \graceNotes
   \t {do'''''( lab sib)} \ottava #0 |
-  \pl {r16 <do,,,, fa sol si>4..--}
+  \pl {r16 <do,,,, fa sol si>4..--_"loco"}
   { \t {r8 \ottava #1 \acciaccatura do''''16-> si,8-- re-.}
   \oneVoice \t {sib \acciaccatura mi16-> red,8-- fad-.} }
   \t {re \ottava #0 \acciaccatura lab'16-> sol,8-- sib-.(}
@@ -472,7 +472,7 @@ UnPianoMd = \relative {
     r4 mib^(~ mib8. fab16 mib2) |
     lab,2.(\> solb2)\! \breathe
   } |
-  <reb mib sol>2--(\p <reb mib sol>~-- sol8. lab16 |
+  <reb mib sol>2--(-\dyn "p_possibile" <reb mib sol>~-- sol8. lab16 |
   sol2.--) \longHairpin lab2(\> <re, mib fad>1--)\! r4
   \pl mi1*5/4_-_"dolce assai" {r4 r8 fa^(~ fa2 sol4)} |
   <re sol la>2^(~\> <re sol la>8 <mi fa si>2*5/4)\!\laissezVibrer\fermata

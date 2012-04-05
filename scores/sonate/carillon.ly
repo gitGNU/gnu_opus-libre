@@ -114,7 +114,7 @@ TroisPianoMd =
   <fa, mi'> \mg \stemUp lad, \md \stemNeutral <mi' dod'>
   re' red <fa, mi'> \tupletsOn r red' mi
   <sol, fad'>4 <la sold'>8
-  r <fa mi'> fa' <sol, fad'> <la sol'>4 \tupletsOff
+  r <fa mi'> fa' <sol, fad'> <la sold'>4 \tupletsOff
   <mi' la>8 <dod fad> <sib mib> <sol do> <sib mib> <dod fad> |
   <mi la> <si fad'> <lab mib'> <fa do'> <lab mib'> <si fad'> |
   <re la'> fa dod sold mi do \ottava #0 |
@@ -199,7 +199,7 @@ TroisPianoMd =
   <si re fa> mi, <sold si re> \mg \stemUp dod,
   \md \stemNeutral <re fa sold> \mg \stemUp mib, \md \stemNeutral |
   <mi' sol sib> \mg \stemUp la, \md \stemNeutral <sold' si re>
-  \mg \stemUp dod, \md \stemNeutral <do' mib fa> \stemUp fa, |
+  \mg \stemUp dod, \md \stemNeutral <do' mib fad> \stemUp fa, |
   \stemNeutral \tupletsOn
   <mi' sold si>4 <re fa sol dod>8 \voiceOne r <mib sib'> do' |
   \tupletsOff
@@ -306,7 +306,7 @@ TroisPianoMd =
   r4  <mi fa si>--~ <mi fa si>
   \pl {s4 <mi fa>2--~ <mi fa>4}
   {\oneVoice <mi fa si>^~ \voiceOne si'4..( do16
-  \oneVoice si4)} \tupletsOn
+  si4)} \tupletsOn
   \graceNotes \lightBeams \t {fad8 sib re}
   \pl \graceNotes \lightBeams { \tupletsOff
     \t {sol, si mib}
