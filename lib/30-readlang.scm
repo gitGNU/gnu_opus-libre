@@ -27,7 +27,7 @@
 ;; loaded (which allows for lighter language files
 ;; that only define what needs to be overriden)."
   (let* ((guess-lang
-           (let* ((port (open-input-pipe "locale | grep LANG"))
+           (let* ((port (open-input-pipe "locale | grep --color=never LANG"))
                   (str (read-line port)))
              (set! str (if (string? str)
                            (string-take
