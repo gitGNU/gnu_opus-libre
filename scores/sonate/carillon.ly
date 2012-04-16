@@ -11,114 +11,121 @@ TroisPianoMd =
   \t {
 
   %%% 0x7 %%%
-  <mi' sold si>4\f \stemUp <mi sold si>8
-  red <do mi sold> red |
-  <mi sold si> mi, <mi' sold si> 
+  <mi' sold si>4->-- _\dyn "molto_f_(con Ped.)" \stemUp <mi sold si>8
+  red^( <do mi sold> red) |
+  <mi sold si>^-^( mi, <mi' sold si> 
   \tupletsOff
-  do <si red sol> do |
-  <mi sold si> \mg mi,, \md <mi'' sold si>
-  la, <sib re fad> la |
-  <mi' sold si> \mg fad, \md <la dod fa>
-  \mg do, \md <dod red fad> \mg sib, | \md
+  do <si red sol> do) |
+  <mi sold si>^-^( \mg mi,, \md <mi'' sold si>
+  la, <sib re fad> la) |
+  \longHairpin
+  <mi' sold si>^(\< \mg fad, \md <la dod fa>
+  \mg do, \md <dod red fad> \mg sib,) | \md
   \stemNeutral \tupletsOn
-  <mi'' sold si>4 \stemUp <mi sold si>8
-  red <dod mi sold> red \tupletsOff |
-  <mi sold si> mi, <red' sold si>
-  re <si red sol> re |
-  <mi sold si> \mg mi,, \md <re'' fad si>
-  fa, <sib re fad> fa |
-  <mi' sold si> \mg do, \md <red' sol si>
-  \mg do, \md <sol' si red> \mg sib,, | \md
+  <mi'' sold si>4->--\! \stemUp <mi sold si>8
+  red^( <dod mi sold> red) \tupletsOff |
+  <mi sold si>^-^( mi, <red' sold si>
+  re <si red sol> re) |
+  <mi sold si>^-^( \mg mi,, \md <re'' fad si>
+  fa, <sib re fad> fa) |
+  <mi' sold si>^( \mg do, \md <red' sol si>
+  \mg do, \md <sol' si red> \mg sib,,) | \md
   \stemNeutral \tupletsOn
-  <mi'' sold si>4 \stemUp <mi sold si>8
-  red <do mi sold> red \tupletsOff |
+  <mi'' sold si>4->-- \stemUp <mi sold si>8
+  red^( <do mi sold> red) \tupletsOff |
   %%% blurgh.
-  <mi sold si> mi, <fa' sold si> dod <si re fa> dod |
-  <mi sold si> sib <mib do'> lab, <la fad'> sol |
-  <re' fa sol dod> sib, <re' dod'> la <fad do'> la |
-  <re sold dod> fad, <re' dod'> do, <sib' re> fad |
-  <re' sol la dod> \mg red, \md <re' dod'>
+  <mi sold si>^-^( mi, <fa' sold si> dod <si re fa> dod) |
+  <mi sold si>^-^(\< sib <mib do'>^-) lab, <la fad'> sol |
+  <re' fa sol dod>^>^-^( -\dyn "sempre_f"
+  sib, <re' dod'>^.) la^"meno legato" <fad do'> la |
+  <re sold dod>^>^-^( fad, <re' dod'>^.) do, <sib' re> fad |
+  <re' sol la dod>^>^-^( \mg red, \md <re' dod'>)
   %%% blurgh.
-  si <mib sib'> do' |
-  <re, sol la dod> \mg red, \md <re' dod'>
+  si <mib sib'>^.\cresc do'^. |
+  <re, sol la dod>^>^-^( \mg red, \md <re' dod'>)
   %%% blurgh.
-  \mg mi,, \md <reb'' fa sol do> \mg si, |
-  \md <re' sol la dod> \mg red, \md sib''
+  \mg mi,, \md <reb'' fa sol do>^. \mg si, |
+  \md <re' sol la dod>^>^- \mg red, \md sib''^.
   \stemNeutral \tupletsOn
-  do <re, sol la dod>4 |
-  r8 <dob sib'> do' <re, sol la dod>4 <re dod'>8 |
-  r <sol sib> do \tupletUp dod \stemUp fa4 |
+  do^.\! <re, sol la dod>4^>^- |
+  r8 <dob sib'>^. do'^. <re, sol la dod>4^>^-^( <re dod'>8^.) |
+  r_\< <sol sib>^. do^. \tupletUp dod^. \stemUp fa4^-_\! |
   }
   \stemNeutral \tupletsOff \tupletNeutral
   \ottava #1 \acciaccatura {\stemDown fad16[ sol sold]}
   \t {
-  \stemNeutral la8 fad mib \ottava #0 do la fad |
-  mib do la fad mib do \clef bass la fad mib do la fad |
+  \stemNeutral la8->-. -\dyn "sfp_staccato leggiero"
+  fad-. mib-. \ottava #0 do-. la-. fad-. |
+  mib-. do-. la-. fad-. mib-. do-.
+  \clef bass la-.-\dyn "(senza cresc.)"
+  fad-. mib-. do-. la-. fad-. |
 
   %%% 1x7 %%%
-  \mg \stemUp s8 fa, s <la si> s <la si> |
-  s fa s <la si> s <la si> | \tupletsOn
-  s <la' do>[ <sold si>] \tupletsOff s s <la si> |
-  s mib s <la, si> s <la si> | \tupletsOn
-  s <la' dod>[ <sold do>] \tupletsOff s s <sold do> |
-  s <do mi>[ <si red>] s s <si red> |
+  \mg \stemUp s8 fa, s <la si>^> s <la si>^> |
+  s fa s <la si>^> s <la si>^> | \tupletsOn
+  s <la' do>[_(_\p <sold si>]) \tupletsOff s s <la si>-. |
+  s mib s <la, si>^> s <la si>^> | \tupletsOn
+  s <la' dod>[_(_\p <sold do>]) \tupletsOff s s <sold do>-. |
+  s <do mi>[_( <si red>]) s s <si red>-. |
   s <fad, re'> s <la si> s s | \stemNeutral
   }
   \md \acciaccatura {fad'''16[ sol sold]}
   \t {
-  la8 fad mib do la fad mib do la fad do fad |
-  \mg \stemUp s <sol, dod> s <la si> s <la si> |
+  la8->-. fad-. mib-. do-. la-. fad-.
+  mib-. do-. la-. fad-. do-. fad-. |
+  \mg \stemUp s <sol, dod> s <la si>^> s <la si>^> |
   \md \clef treble \ottava #1 \stemDown
-  <re'''' do'> <fad sold> <re do'>
-  \ottava #0 \stemUp <lab,, solb'> <do re> <lab solb'> |
-  \clef bass \mg s <lab,, do> s <la si> s <la si>
+  <re'''' do'>(_\dyn "ff_sempre" <fad sold> <re do'>)
+  \ottava #0 \stemUp <lab,, solb'>( <do re> <lab solb'>) |
+  \clef bass \mg s <lab,, do> s <la si>^> s <la si>
   s <la si> s \stemNeutral 
-  \md <la'' si>^"loco" \mg si,,, \md <la'' si>
+  \md <la'' si>_"(loco)"^>^.^\sf \mg si,,, \md <la'' si>
   \clef treble \stemUp
-  s <la' mib' fa si> s <mib'' la si fa'> s s | \stemNeutral
-  \clef bass \ottava #-1 reb,,,, \ottava #0
-  mi''^"loco" mib \tupletsOn r si re |
+  s <la' mib' fa si>\< s <mib'' la si fa'>^>^.\! s s | \stemNeutral
+  \clef bass \ottava #-1 reb,,,,-. \ottava #0
+  mi''^"loco"_\dyn "fpp_staccato molto" mib \tupletsOn r si re |
   r <sol sib> <fad la> r <reb fa> <sol la> |
   \clef treble r <re' fad> <dod fa> r <la dod> <do fa> |
   r <sol' si> <fad lad> r <fa la> <do' mi> |
-  r <si re> <fa' la> r <mi sol> <si' re> | \tupletsOff
-  \ottava #1 r <la do> <mi' sol> r <la, si> <fad' la> |
+  r <si re>( <fa' la>) r <mi sol>( <si' re>) | \tupletsOff
+  \ottava #1 r <la do>( <mi' sol>) r <la, si>( <fad' la>) |
   s2 r4 | \ottava #0
 
   %%% 2x7 %%%
   \tupletsOn
-  <sib, reb fa> \stemUp <sib reb fa>8
-  \tupletsOff la <fad sib re> la |
-  <sib reb fa> \mg fa, \md <la' dod fa> fad <fa la dod> fad |
-  <sib reb fa> \mg fa, \md <sib' reb mi> re, <fad la do> sol |
+  <sib, reb fa>->-- _\dyn "molto_f_(con Ped.)" \stemUp <sib reb fa>8
+  \tupletsOff la^( <fad sib re> la) |
+  <sib reb fa>^-^( \mg fa, \md <la' dod fa> fad <fa la dod> fad) |
+  <sib reb fa>^-^( \mg fa, \md <sib' reb mi> re, <fad la do> sol) |
   \tupletsOn
-  \stemNeutral <sib reb fa>4 \stemUp <sib reb fa>8
-  \tupletsOff sol <mi sold do> sol |
-  <sib reb fa> \mg fa, \md <la' dod fa> mi <red sol si> mi |
-  <sib' reb fa> \mg fa,, \md <sol'' do fa>
-  si, <sib mib lab> \mg re,\md | \tupletsOn
-  \stemNeutral <sib'' reb fa>4 \stemUp <sib reb fa>8
-  \tupletsOff  mi, <fa solb la> si, |
-  <sib' reb fa> \mg fa,, \md <sib'' re fad> sol <fa la dod> mi |
-  <sib' reb fa> \mg fa, \md <si' re sol> mi, <reb' mib fa> la |
+  \stemNeutral <sib reb fa>4->-- \stemUp <sib reb fa>8
+  \tupletsOff sol^( <mi sold do> sol) |
+  <sib reb fa>^-^( \mg fa, \md <la' dod fa> mi <red sol si> mi) |
+  <sib' reb fa>^-^( \mg fa,, \md <sol'' do fa>
+  si, <sib mib lab> \mg re,)\md | \tupletsOn
+  \stemNeutral <sib'' reb fa>4->-- \stemUp <sib reb fa>8
+  \tupletsOff  mi,^( <fa solb la> si,) |
+  <sib' reb fa>^-^( \mg fa,, \md <sib'' re fad> sol <fa la dod> mi) |
+  <sib' reb fa>^-^( \mg fa, \md <si' re sol> mi, <reb' mib fa> la) |
   \ottava #1
-  <mi' fad sold> \mg fa, \md <fadd' sold la> re <sold la sib> red |
-  \stemNeutral <mi red'> \mg \stemUp la, \md \stemNeutral <mi' red'>
-  \mg \stemUp fad, \md \stemNeutral <mib' do'> re' |
-  <mi, red'> \mg \stemUp fa, \md \stemNeutral re''
-  <mi, red'> \mg \stemUp dod, \md \stemNeutral <mi' red'> |
+  <mi' fad sold>^-^(\< \mg fa, \md <fadd' sold la>^-) re <sold la sib> red |
+  \stemNeutral <mi red'>^>^-^(-\dyn "mf_étincelant"
+  \mg \stemUp la, \md \stemNeutral <mi' red'>^.)
+  \mg \stemUp fad, \md \stemNeutral \longHairpin <mib' do'>^.\< re'^. |
+  <mi, red'>^>^- \! \mg \stemUp fa, \md \stemNeutral re''^.
+  <mi, red'>^>^-^( \mg \stemUp dod, \md \stemNeutral <mi' red'>^.) |
   \tupletsOn
-  r <reb do'> re' r <mib, dod'> red' | \tupletsOff
-  <fa, mi'> \mg \stemUp lad, \md \stemNeutral <fa' mi'>
-  \tupletsOn r <re dod'> red' | \tupletsOff
-  <fa, mi'> \mg \stemUp lad, \md \stemNeutral <mi' dod'>
-  re' red <fa, mi'> \tupletsOn r red' mi
-  <sol, fad'>4 <la sold'>8
-  r <fa mi'> fa' <sol, fad'> <la sold'>4 \tupletsOff
-  <mi' la>8 <dod fad> <sib mib> <sol do> <sib mib> <dod fad> |
-  <mi la> <si fad'> <lab mib'> <fa do'> <lab mib'> <si fad'> |
-  <re la'> fa dod sold mi do \ottava #0 |
-  sol^"loco" mib si fad re sib |
+  r <reb do'>^. re'^. r \longHairpin <mib, dod'>^.\< red'^. | \tupletsOff
+  <fa, mi'>\!^>^-^( \mg \stemUp lad, \md \stemNeutral <fa' mi'>^.)
+  \tupletsOn r <re dod'>^. red'^. | \tupletsOff
+  <fa, mi'>^>^- \mg \stemUp lad, \md \stemNeutral <mi' dod'>-.\<
+  re'-. red-.\! <fa, mi'>->-- \tupletsOn r red'-.\< mi-.
+  <sol, fad'>4->--(\! <la sold'>8-.) |
+  r <fa mi'>-.\< fa'-. <sol, fad'>-. <la sold'>4-> \tupletsOff
+  <mi' la>8->-. <dod fad>-. <sib mib>-. <sol do>-. <sib mib>-. <dod fad>-. |
+  <mi la>-. <si fad'>-. <lab mib'>-. <fa do'>-. <lab mib'>-. <si fad'>-. |
+  <re la'>-. fa-. dod-. sold-. mi-. do-. \ottava #0 |
+  sol-.^"loco" mib-. si-. fad-. re-. sib-. |
   }
 
   %%% 3x7 %%%
@@ -328,83 +335,85 @@ TroisPianoMg =
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
 
   %%% 0x7 %%%
-  r32 <mi,, mi'>4...*7/15 \laissezVibrer \md \stemDown
+  r32 <mi,, mi'>4...*7/15->-- \laissezVibrer \md \stemDown
   \t {
   <sol''' si red>8 s <sol si red> |
   \tupletsOff
-  s mi s <sold do> s <sold do> |
-  \mg s mi, s \md <dod' fa la> s <dod fa la> |
+  s mi_-_\laissezVibrer s <sold do> s <sold do> |
+  \mg s mi,_-_\laissezVibrer s \md <dod' fa la> s <dod fa la> |
   \mg s <sib re fad> s <mi, sold do> s sib |
   }
   \stemNeutral
-  r32 <mi,, mi'>4...*7/15 \laissezVibrer \md \stemDown
+  r32 <mi,, mi'>4...*7/15->-- \laissezVibrer \md \stemDown
   \t {
   <sol''' si red>8 s <sol si red> |
-  s mi s <fad sib re> s <fad sib re> |
-  \mg s mi, s \md <la dod fa> s <la dod fa> |
+  s mi_-_\laissezVibrer s <fad sib re> s <fad sib re> |
+  \mg s mi,_-_\laissezVibrer s \md <la dod fa> s <la dod fa> |
   \mg s <mi sold do> s <mi sold do> s sib |
   }
   \stemNeutral
-  r32 mi,4...*7/15 \laissezVibrer \md \stemDown
+  r32 mi,4...*7/15->-- \laissezVibrer \md \stemDown
   \t {
   <sol'' si red>8 s <sol si red> |
-  s mi s <sol sib dod> s <sol sib dod> |
+  s mi_-_\laissezVibrer s <sol sib dod> s <sol sib dod> |
   s <dod, sol' sib> s <re fa lab> s <mi sol> |
-  s sib s <mib la> s <mib la> |
-  s <sol, fad'> s do s <do fad> |
-  \mg s <mi, red'> s \md <dod' la' si> s4 |
-  \mg s8 <mi, red'> s <fa, mi'> s <la' si> |
-  s <mi red'> s \stemNeutral \tupletsOn <re dod'> r fad,, |
-  <fa' mi'> r red'' r mi, fa, |
+  s sib_-_\laissezVibrer s <mib la> s <mib la> |
+  s <sol, fad'>_-\laissezVibrer s do s <do fad> |
+  \mg s <mi, red'>_-\laissezVibrer s \md <dod' la' si> s4 |
+  \mg s8 <mi, red'> s <fa, mi'>_-\laissezVibrer s <la' si> |
+  s <mi red'>-.-- s \stemNeutral
+  \tupletsOn <re dod'>-.-- r fad,, |
+  <fa' mi'>->-. r red''->-. r mi,-. fa,-. |
   \tupletsOff
-  fad, dod' re' \stemUp red'
+  fad,-._( dod'-. re'-. \stemUp red'-.)
   \md \stemDown <mi' fa> \stemUp
   \mg \clef treble sold | \stemNeutral
 
-  mi' dod sib sol mi dod |
-  sib fa dod \clef bass sold fa re |
-  si sold fa re si sold |
+  mi'->-. dod-. sib-. sol-. mi-. dod-. |
+  sib-. fa-. dod-. \clef bass sold-. fa-. re-. |
+  si-. sold-. fa-. re-. si-. sold-. |
 
   %%% 1x7 %%%
   \stemDown \ottava #-1
-  <fa mib'> fa <fa mib'> la <fa mib'> la |
-  <fa mib'> fa <fa mib'> la <fa mib'> la |
-  <fa mib'> s s \tupletsOn <mi' sol> <fad sold> s \tupletsOff |
-  <fa, mib'> mib' <fa, mib'> la <fa mib'> la |
-  <fa mib'> s s <mi' sold> <fa la> s |
+  <fa mib'>^>\ff fa <fa mib'>^> la <fa mib'>^> la |
+  <fa mib'>^> fa <fa mib'>^> la <fa mib'>^> la |
+  <fa mib'>^> s s \tupletsOn
+  <mi' sol>^( <fad sold>) s \tupletsOff |
+  <fa, mib'>^>^\ff mib' <fa, mib'>^> la <fa mib'>^> la |
+  <fa mib'>^> s s <mi' sold>^( <fa la>) s |
   \ottava #0
-  <la, si la' si>^"loco" s s
-  \tupletsOn <sol' si> <lab do> s \tupletsOff |
+  <la, si la' si>->-.^"loco" s s
+  \tupletsOn <sol' si>^( <lab do>) s \tupletsOff |
   \ottava #-1
-  <fa, mib'> fad <fa mib'> la <fa mib'> \stemNeutral r |
+  <fa, mib'>^\ff fad <fa mib'> la <fa mib'> \stemNeutral r |
   \ottava #0 
-  mi'''^"loco" dod sib sol mi dod |
-  si sold fa re si sold |
+  mi'''_"loco"^\fp ->-. dod-. sib-. sol-. mi-. dod-. |
+  si-. sold-. fa-. re-. si-. sold-. |
   \ottava #-1 \stemDown
-  <fa mib'> sol <fa mib'> la <fa mib'> la |
+  <fa mib'>^>^\ff sol <fa mib'>^> la <fa mib'>^> la |
   \ottava #0 s2. \ottava #-1
-  <fa mib'>8 lab <fa mib'> la <fa mib'> la
-  <fa mib'> la <fa mib'> s <la, si> s |
+  <fa mib'>8^>^\mf lab <fa mib'> la <fa mib'> la
+  <fa mib'>^> la <fa mib'> s <la, si> s |
   \stemNeutral <fa' mib'> \ottava #0
   \stemDown \md la'' \stemNeutral
   \mg <si,, la'>_"loco"
   \stemDown \md mib''' \stemNeutral
   \mg \ottava #-1 <fa,,,, mib'> <la si>} |
   \ottava #0
-  <re do'>_"loco" r <la' sib> r |
-  <sold fad'> r <do red mi> r |
-  <re do'> r <mi sold> r |
-  <si' sold'> r <sol mib'> r |
-  \clef treble <reb' lab'> r <la' mib'> r |
+  <re do'>-._"loco" r <la' sib>-. r |
+  <sold fad'>-. r <do red mi>-. r |
+  <re do'>-. r <mi sold>-. r |
+  <si' sold'>-. r <sol mib'>-. r |
+  \clef treble <reb' lab'>\cresc r <la' mib'> r |
   <fa' sib> r <si red> r |
   \t {
   <mi, do'> \md <dod' fa lad> \mg <sib, sol'>
-  \md <do' fad si> \mg <mi,, re'> r |
+  \md <do' fad si>-.\! \mg <mi,, re'>-. r |
   }
 
   %%% 2x7 %%%
   \tupletsOn
-  r32 <fa, fa'>4...*7/15 \laissezVibrer \md \stemDown
+  r32 <fa, fa'>4...*7/15->-- \laissezVibrer \md \stemDown
   \t {
   <dod'' fa la>8 s <dod fa la>
   \tupletsOff
@@ -412,35 +421,37 @@ TroisPianoMg =
   \mg s fa s \md <sold si re> s <mib' sol> |
   }
   \stemNeutral \mg
-  r32 <fa,, fa'>4...*7/15 \laissezVibrer \md \stemDown
+  r32 <fa,, fa'>4...*7/15->-- \laissezVibrer \md \stemDown
   \t {
   <si' red sol>8 s <si red sol>
   \mg s fa s \md <sold do mi> s <sold do mi> |
   \mg \clef bass s fa, s \md <dod' fad si> s \mg <mi,! la! re!> |
   }
-  r32 <fa, fa'>4...*7/15 \laissezVibrer \md \stemDown
+  r32 <fa, fa'>4...*7/15->-- \laissezVibrer \md \stemDown
   \t {
   <sold'' do mi>8 s <mib sol si> |
   \mg s fa, s \md <si' red sol> s <sold do mi> |
   \mg \clef treble s fa s \md <sib dod mi> s <fa' sol la> |
   \mg s fa s \md <sib do re> s <si dod red> |
-  \mg s <sib, la'> s <sol fad'>[ s <mi red'>] |
-  \tupletsOn r <solb fa'>4 r8 <re dod'>4 |
+  \mg s <sib, la'> s <sol fad'>[_- s <mi red'>] |
+  \tupletsOn r <solb fa'>4_-\laissezVibrer r8 <re dod'>4_- |
   }
-  \stemNeutral <sib la'>4 <sol' fad'> |
-  \t { \stemDown r8 <si lad'>4 } \stemNeutral <sol fad'> |
-  \t { \stemDown r8 <si lad'>4 \stemNeutral <sol fad'> <si lad'>8}
-  <sol fad'>4 \t {r8 <mib re'>4}
+  \stemNeutral <sib la'>4-- \laissezVibrer <sol' fad'>-- \laissezVibrer |
+  \t { \stemDown r8 <si lad'>4 } \stemNeutral <sol fad'>-- \laissezVibrer |
+  \t { \stemDown r8 <si lad'>4 \stemNeutral
+  <sol fad'>-- \laissezVibrer <si lad'>8}
+  <sol fad'>4-- \t {r8 <mib re'>4}
   \set tupletSpannerDuration = #'()
-  \t {<si' lad'>8 fad' <mib, re'>4 <mib' re'>}
+  \t {<si' lad'>8 fad' <mib, re'>4-- <mib' re'>--}
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
-  \mg <la, la'>8 r \acciaccatura {mi'16[ fad]}
+  \mg <la, la'>8->-.\sfp r \acciaccatura {mi'16[ fad]}
   \t { \tupletsOff
-  sold8 fa re si sol mi \clef bass dod sib fa? |
-  \tupletsOn fad, r \clef treble si'' \tupletsOff
-  sib lab fa \clef bass }
+  sold8-._( fa-. re-. si-. sol-. mi-.
+  \clef bass dod-. sib-. fa?-. |
+  \tupletsOn fad,-.) r \clef treble si''-._( \tupletsOff
+  sib-. lab-. fa-. \clef bass }
   \set tupletSpannerDuration = #'()
-  \tupletsOn \t {do4 mi, mib,} |
+  \tupletsOn \t {do4-.--) mi,-.-- mib,-.-- } |
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
 
   %%% 3x7 %%%
