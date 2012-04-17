@@ -24,8 +24,7 @@
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn
-  ;;syntax: -\dyn instead of \dyn (see Issue #1264).
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (parser location arg) (markup?)
     (let ((d (make-music 'AbsoluteDynamicEvent)))
       (ly:music-set-property! d 'tweaks
         (acons 'self-alignment-X -0.8
@@ -40,7 +39,7 @@
       d)))
 
 (define dyncresc
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (parser location arg) (markup?)
     (make-music 'CrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -51,7 +50,7 @@
                             (else arg)))))
 
 (define dyndim
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (parser location arg) (markup?)
     (make-music 'DecrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -96,6 +95,7 @@
 ;;         (make-hairpin-text (*hairpin-text-direction*) text)))))
 
 (define hairpinText
+  ;; beware - this is a _music_ function, not a postfix event!
   (define-music-function (parser location text) (markup?)
     (make-hairpin-text DOWN text)))
 
