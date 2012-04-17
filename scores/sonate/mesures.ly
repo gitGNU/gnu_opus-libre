@@ -26,7 +26,7 @@ TroisTitre = "III."
   }
 }
 
-\pointAndClickOff
+%\pointAndClickOff
 
 #(set-global-staff-size 17)
 
@@ -131,7 +131,7 @@ TroisMesures = {
   \time 2/4
   \tempo "Presto possibile"
   s2*63 \bar "||"
-  %%FIXME: tempo
+  \tempo "Presto commodo"
   s2*2
   \time 3/4 s2.*2
   \time 2/4 s2*4
