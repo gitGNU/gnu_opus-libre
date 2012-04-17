@@ -161,6 +161,7 @@ TroisMesures = {
   \time 2/4 s2
   \time 3/4 s2.
   \time 2/4 s2 \bar "||"
+  \tempo "Tempo I"
   s2*63 \bar "||"
   s2*7 \bar "|."
 }
