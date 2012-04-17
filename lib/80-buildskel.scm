@@ -49,7 +49,7 @@ markup exists."
           (ly:debug-message "No text found in ~a~a" name suffix)
           (if (ly:get-option 'use-variable-names)
               (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
-              point-stencil)))))
+              (make-null-markup))))))
 
 (define newVoice
   ;;   "If NAME matches a defined music expression, then
