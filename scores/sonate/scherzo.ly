@@ -3,6 +3,18 @@
 
 \language "italiano"
 
+
+% Code duplication. That's right, baby.
+ter = {
+  \set Score.baseMoment = #(ly:make-moment 3 16)
+  \set Score.beatStructure = #'(2 2 2 2)
+}
+
+off = {
+  \set Score.baseMoment = #(ly:make-moment 3 2)
+  \set Score.beatStructure = #'(1)
+}
+
 DeuxPianoMd =
 \relative do' {
   \ottava #1
@@ -100,12 +112,7 @@ DeuxPianoMd =
   dod[ mi dod do red]-.\p |
 }
 
-%% Blurgh.
-\include "scores/sonate/mesures.ly"
-
 DeuxPianoMg =
-%% This really, really should NOT be here.
-\context Voice << \DeuxMesures
 \relative do' {
   \clef bass s64 \clef treble
   \slurDashed
@@ -147,8 +154,8 @@ DeuxPianoMg =
   sol16-.[ mib-. r do''] do do r8 fad,,16 do'' do8 |
   do,,16(-. reb'-. sib-. do') do do do8 mib,,-.-- do''16 do
   do fa,,, r8 la16 do'' fad,,,8-. re'16( do,) r8
-  do'''16 do do do do do do do do do do do
-  r8 reb,,16( do, re'' fad,-.) r si,8-. r8. |
+  \ter do'''16[ do do do do do] do[ do do do do do]
+  \off r8 reb,,16( do, re'' fad,-.) r si,8-. r8. |
   \stemUp <mib' do'>16-- \md <do' la'> \mg do \md <do fad>\<
   <do sib'>\! \mg <fa, do'> \md <do' lab'> \mg <mi, do'>--
   \md <do' re>\< <do sol'> <do si'>\! \mg <reb, do'>
@@ -208,4 +215,3 @@ DeuxPianoMg =
   re?[ si re red fad,]
   do'?[ la fa si, mi,]-. |
 }
->>
