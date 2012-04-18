@@ -23,7 +23,7 @@
   "Include all LilyPond code found in DIR, recursively.
  If HIDDEN is set, also load hidden or temporary files."
   (let* ((regx (if (false-or-null? hidden?)
-                   "/[^\\s.][^/]*\\.i?ly$"
+                   "/[^\\.][^/]*\\.i?ly$"
                    ".i?ly$"))
          (ly-files (find-files dir regx #t)))
     (map (lambda (x)
