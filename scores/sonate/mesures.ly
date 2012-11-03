@@ -50,7 +50,6 @@ TroisTitre = "III."
       \override #'(line-width . 100)
       \justify {
         Cette partition est publiée suivant les termes de la licence
-        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
         \with-url #"http://artlibre.org/licence/lal"
         \bold { Art Libre }
         \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
