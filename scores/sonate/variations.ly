@@ -193,6 +193,7 @@ UnPianoMd = \relative {
   <mi la si red>2.^- ~ <mi la si red>4 r <do fa sol si>^- |
   <mi la si red>2^-( <fa sib do mi>4^-) |
   \pl {
+    %% ...or <mib solb lab>8[ sib]? I’m hesitating.
     s4 <mib solb lab>8[ si'] s4
   } {
     \oneVoice <mi, la si red>^-(
@@ -749,7 +750,7 @@ UnPianoMg = \relative {
   la4-- r16 \t {mib'32^(^> re dod} si8)_>~ si4}
   {r4 r8 fa''-- si,,16.^( lad'32-.) r8 s2
   r4 s r4 r8 do?4.-- r8 mi,16(^\f^\< fa)\laissezVibrer
-  r8 sol'~ sol4--^\! \t {do8-> sold'4->~} sold
+  r8 sol'~-- sol4^\! \t {do8-> sold'4->~} sold
   \t {r16 \ottava #0 lab,(_"loco" mib'} fa'8)
   \t {mi,16( fad' sib,} dod8->)\laissezVibrer
   r4 \tt {la,,32(^\< sol sold dod re} mi8->)^\!~ mi4

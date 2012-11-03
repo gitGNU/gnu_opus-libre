@@ -56,7 +56,7 @@ TroisTitre = "III."
         Vous pouvez la copier, la modifier et la jouer \italic librement
         sans contrevenir au droit d'auteur, à  condition de respecter les
         termes de la licence (notamment en veillant à  mentionner le nom
-        de l’auteur et l’adresse web d'origine).
+        de l’auteur et l’adresse web d’origine).
       }
       \vspace #.5
       \line {
@@ -131,7 +131,9 @@ UnMesures = {
   \tempo "A piacere"
   s2*5 \allowPageTurn
   \time 3/4
-  \tempo "Tempo di minuetto"
+  \tempo "Tempo di minuetto" % or waltz?
+  % OTOH, minuetto refers to ancient music
+  % so it’s sort of fitting in this context.
   s2.*10 \allowPageTurn
   s2.*10 \allowPageTurn
   s2.*5 \allowPageTurn
