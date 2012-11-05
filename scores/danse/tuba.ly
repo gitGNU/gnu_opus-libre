@@ -1,9 +1,13 @@
 %-- Danse -- tuba.ly ----------------------------------------------%
-% (c) 2009 - 2011 Valentin Villenave <valentin@villenave.net>
+% (c) 2009 - 2012 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"
 
-Titre = "Danse kàla"
+Titre = "Danses kàla"
+UnTitre = "La première."
+DeuxTitre = "La deuxième."
+TroisTitre = "La troisième."
+QuatreTitre = "La quatrième."
 TubaInstr = \markup \center-column {
   "Tuba"
   \line {(en Si \concat {\flat )}}
@@ -14,7 +18,7 @@ PianoInstr = "Piano"
   title = \Titre
   subtitle = "pour tuba et piano"
   composer = "Valentin Villenave"
-  date = "printemps 2009"
+  date = "printemps 2009 - automne 2012"
 }
 
 #(set-global-staff-size 18)
@@ -49,27 +53,27 @@ PianoInstr = "Piano"
       \override #'(line-width . 100)
       \justify {
         Cette partition est publiée suivant les termes de la licence
-        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
-        \bold { Creative Commons, Paternité, Partage des
-        conditions initiales à \concat {l'identique \medium . }}
+        \with-url #"http://artlibre.org/licence/lal"
+        \bold { Art Libre }
+        \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
         Vous pouvez la copier, la modifier et la jouer \italic librement
-        sans contrevenir au droit d'auteur, à condition de respecter les
-        termes de la licence (notamment en veillant à mentionner le nom
-        de l'auteur et l'adresse web d'origine).
+        sans contrevenir au droit d'auteur, à  condition de respecter les
+        termes de la licence (notamment en veillant à  mentionner le nom
+        de l’auteur et l’adresse web d’origine).
       }
       \vspace #.5
       \line {
         Gravure réalisée au moyen du logiciel libre
         \with-url #"http://www.LilyPond.org"
         \concat {\bold "GNU LilyPond" ,}
-        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) } 
+        \concat { $(string-append "version " (lilypond-version) ".") } 
       }
     }
   }
 }
 \pageBreak
 
-Mesures = {
+UnMesures = {
   \tempo Deciso 2 = 84 ~ 92
   \time 2/2 s1*42 \bar "||"
   \tempo Sostenuto
@@ -131,9 +135,52 @@ Mesures = {
   \time 2/2 s1
   \time 7/8 s1*7/4
   \bar "|."
- }
+}
 
- Tuba =
+QuatreMesures = {
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1.*2
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*3
+  \time 3/2 s1.
+  \time 2/2 s1 \bar "||"
+  \time 3/4 s2.*27 \bar "||"
+  \time 2/2 s1
+  \time 3/4 s2.*2
+  \time 2/2 s1*2
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/2 s1*2
+  \time 3/4 s2.*2
+  \time 2/2 s1 \bar "||"
+  s1*16 \bar "||"
+  s1
+  \time 3/2 s1.
+  \time 2/2 s1
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*4
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1.
+  \time 2/2 s1*2
+  \time 3/2 s1. \bar "|."
+}
+
+UnTuba =
  %% Transpose
  \smart \transpose do re
  \relative do' {
@@ -283,3 +330,175 @@ Mesures = {
   sol' do fa, do' fa sib, mib |
   fa,\< sib do fa4->\! r |
 }
+
+TroisTuba = \relative do' {
+  \clef bass
+  \time 3/4
+  R2.*2
+  mib,8 fa mib fa mib fa |
+  r mib fa sib, lab' reb |
+  mib, fa mib fa mib fa |
+  r fa sib, mib, sol' do, |
+  reb mib reb mib reb mib |
+  r4 reb8 mib r sib |
+  si' dod si dod si dod |
+  r mib, fa sib re, mi |
+  si' dod4. lab,8 sib |
+  si' dod4 lab,8 \t {re, la' mi'} |
+  fad si dod4 fad~ fad2 r4 |
+
+  r2 mi,?4~ mi8 fad4. r4 |
+  mib8 fa mib fa r4 |
+  mib8 fa re mib do re |
+  mib fa mib fa r re |
+  mib si do re mib fa |
+  solb lab solb lab r mi, |
+  si' solb' lab mi, \t {do sol' re'} |
+  la'4. si8~ si4 |
+  r8 la si la si4 |
+  la8 si fad, sold la' si~ |
+  \t {si mib, fa} mi'4 la~ |
+  la r8 la,, sib,4~ |
+  sib2.~
+
+  sib4 r2 | sol''2 r4 |
+  mib8 fa r4 r8 mib |
+  r fa r si,? do re |
+  mib fa r4 mib8 fa |
+  r sol, r re' reb mib |
+  si dod r si' dod si, |
+  dod' si dod4 r |
+  r8 si dod sol' sol, la |
+  la, sol' sol, la' r sol, |
+  la sol la fad fa sol |
+  mib4. fa8 mib' fa |
+  mib fa mib fa mib fa |
+  r4 r8 do' re,4\fermata \bar "|."
+}
+
+QuatreTuba = \relative do' {
+  \clef bass
+  \t {fa8 fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  \t {fa fa fa} \t {do do do}
+  \t {mib mib mib} \t {sib sib sib} |
+  \t {fa' fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do}
+  \t {mib mib mib} \t {sib mib sib} |
+  fa4 r r2 | R1 R1.
+  \t {fa8 sib lab} \t {sib fa mib}
+  \t {fa sib, fa'} \t {mib lab sib} |
+  \t {sold dod si} \t {dod sold fad}
+  \t {sold dod, si} \t {dod sold' dod} |
+  \t {si mi re} \t {sol fad, si}
+  \t {la re sol} \t {r fa, sib}
+  \t {mi reb sol} \t {r reb, lab'} |
+  \t {fa' fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do}
+  \t {mib mib mib} \t {sib sib sib} |
+  \t {fa' fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  \t {fa fa fa} \t {do do do}
+  \t {mib mib mib} \t {sib mib sib} |
+  fa4 r r2 r4 \t {mib8 sib' mib,} |
+  fa,4 r r \t {mib'8 lab fa,} |
+  r2 \t {mib8 fa r} r4 |
+  \t {mib'8 lab solb} \t {lab mib reb}
+  \t {mib sib fa'} \t {mib sib' do}
+  \t {la re do} \t {re sib, mib} |
+  \t {la re do} \t {re mib, sib}
+  \t {la' re do} \t {fa r sib,,} |
+  \t {la' re do} \t {fa r sib,,}
+  \t {la' mi re'} \t {r sib do} |
+  \t {fa fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  r2 \t {mib8 mib mib} \t {sib sib sib}
+  r4 \t {sib8 mib sib} |
+  \t {do fa do} fa,4
+  \t {sib8 mib sib} \t {fa do sol} |
+
+  reb2.~ reb2 r4 | R2.
+  reb2 mib4~ mib2 r4 |
+  reb'4~ \t {reb8 mib reb} mib4~ mib2 r4 |
+  \t {r4 si'' fad} \t {mi8 la sol} |
+  re2 r4 |
+  sib'4. fa~ fa2.~ |
+  fa8 r mib2 |
+  sib'4~ \t {sib8 do sib} do4~ |
+  do2 fa,4~ fa2 r4 |
+  \t {r4 sib fa} \t {mib8 lab solb} |
+  reb2. |
+  si8 mi re la \t {dod si sold} |
+  fad4. mi8 fad4~ fad2 r4 |
+  mi4~ \t {mi8 fad mi} fad4~ |
+  fad2 r4 |
+  mi,2 fad4~ fad2 r4 |
+  si,4. fad8 si fad |
+  mi' si la' fad, r4 |
+  \t {mi'8 la re} sol4 r |
+
+  \t {fa'8 fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  \t {mib mib mib} \t {sib sib sib} \t {mib sib mib} |
+  \t {fa fa fa} \t {do do do} \t {fa do fa} |
+  \t {mib mib mib} \t {sib sib sib}
+  \t {mib mib mib} \t {sib mib sib} |
+  fa4 r r2 |
+  dod,4 sol8 dod r4 |
+  \t {dod'8 fad mi} \t {fad red dod} |
+  \t {red la si} \t {dod red fa} \t {sol do sib} |
+  \t {do fa mib} \t {sol fa la} |
+  si4 r2 |
+  r4 dod,,, r8 la''16 dod r4 |
+  \t {fa8 fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  \t {mib mib mib} \t {sib sib sib} \t {fa' fa fa} |
+  \t {do do do} \t {fa fa fa} \t {do do fa} |
+  r4 \t {sib,8 mib sib} \t {fa do sol'} \t {re la mi} |
+
+  fa,1~ fa2. r4 |
+  mib''4. fa8~ fa2~ fa4 r r2 |
+  sib'2 fa~ fa4 r mib2 |
+  sib'4~ \t {sib8 do sib} do4 fa,~ |
+  fa2. r4 |
+  sib8 do \t {fa, mib lab} solb2~ |
+  solb4 r reb2 |
+  solb4. dod,8~ \t {dod fad mi} fad4~ |
+  fad2 r4 sold,8 dod |
+  fad4 mi,~ \t {mi8 la, si'} fad'4~ |
+  fad r \t {do8 fa sib} \t {lab mib sib} |
+  \t {lab reb fad} \t {mi si fad}
+  \t {mi la re} \t {do sol re} |
+  \t {do fa sib} \t {lab mib sib} fa4 r |
+
+  \t {fa''8 fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  \t {mib mib mib} \t {sib sib sib}
+  \t {fa' sib, mib} \t {do, fa sib}
+  \t {mib do, fa} \t {sib do mib} |
+  \t {fa fa fa} \t {do do do}
+  \t {mib mib mib} \t {sib mib sib} |
+  fa4 r r1 | R1*2
+  \t {si,8 mi re} \t {mi si la}
+  \t {si mi, fad} \t {lab sib do}
+  \t {re sol fa} \t {sol mi re} |
+  \t {fa fa mi} \t {mi re re}
+  \t {fa fa fa} \t {mi mi mi} |
+  \t {re re re} \t {sol sol sol}
+  \t {mi mi mi} \t {la la la} |
+  si4 r \t {fa,8 fa fa} si,4 r2 |
+  fa'''4 do mib sib reb lab si r |
+  fa,8 fa' do fa do mib sib fa |
+  fa' do fa do mib sib fa fa' |
+  r fa do mib sib fa fa' do fa do mib sib |
+  fa si fad si fad la mi si |
+  dod' r dod sold si fad dod red' |
+  lad red r dod sold mi' si mi si re la4 |
+  \t {fa''8 fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do} |
+  \t {mib sib mib} \t {fa, do fa}
+  \t {sib fa sib} \t {do sol do} |
+  \t {fa, sol do} \t {re mib, sib'}
+  \t {do fa re} \t {sol fa la} si4 fa,, |
+}
+
