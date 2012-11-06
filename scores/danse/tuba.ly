@@ -183,7 +183,7 @@ QuatreMesures = {
 UnTuba =
  %% Transpose
  \smart \transpose do re
- \relative do' {
+\relative do' {
   \clef bass
   R1*2
   fa,8-\dyn "f,_franc"\< ^"détaché" sib do fa4\!-- mi-- sib8( |
@@ -331,7 +331,63 @@ UnTuba =
   fa,\< sib do fa4->\! r |
 }
 
-TroisTuba = \relative do' {
+DeuxTuba =
+ %% Transpose
+ \smart \transpose do re
+ \relative do' {
+  \clef bass
+  \time 4/4
+  fa,,8. la16 r4 solb8. lab16 r4 |
+  \time 3/4
+  r8 fa r la r16 solb8 lab16 |
+  \time 2/4
+  R2
+  \time 4/4
+  fa8. la16 r4 solb8. lab16 r4 |
+  \time 3/4
+  r8 fa r16 la8 solb16 r8 lab |
+  \time 2/4
+  R2
+  \time 4/4
+  fa8. la16 r16 mib' reb8 solb,8. lab16 r mi'8 do16 |
+  fa,8 la r16 mib'8 reb16 solb, lab mi' do sib re si sol |
+  fa8. la16 r4 solb8 lab mib'16 reb mi do |
+  fa,8. la16 r mib' reb8 solb, lab r16 mi'8 do16 |
+  fa,8. la16 r mib' reb8~ reb16 solb, lab mi'~ mi8 do |
+  fa,8 la dod16 si8. solb8 lab r16 re8 sib16 |
+  re' fad red si~ si do sib8 la16 dod sold mi~ mi8 fa16 sol |
+  red'16 fad re si~ si fa8 sol16 sold mi la dod~ dod do sib8 |
+  re16 fad red si~ si sol \t {la sib do} mi sold mi dod~ dod4 |
+  r16 dod,, \t {sol' sib mi}
+  \tttt {fa la sold do si mib re} fad4 sold8 mid |
+  la4. r16 la~ la2~ | la8 r r4 r2 |
+  \stemUp \xNote la,4^"(snap)" \xNote la \stemNeutral
+  r16 fa, fa fa fa fa fa fa |
+  r4 \stemUp \xNote la'4 \stemNeutral r8 si,16 si si si si si |
+  r lab lab lab lab lab mi' mi mi mi r8 r dod16 dod |
+  dod4 r8 sol'16 sol mib fad fad8 do16 do do do |
+  r4 la16 la la la la la la la r4 |
+  r16 sib' sib sib sib sib sib sib sib sib sib sib sib8 r16 re, |
+  \time 3/4
+  re re re re re re re re re re re re |
+  \time 4/4
+  sib' re si sol~ sol4 r8 mib16 reb r mi do8 |
+  sib'16 re si sol~ sol4. r8 mib16 reb mi do |
+  mib' sol mi do~ do4 r8
+  \stemUp \xNote la \stemNeutral r \stemUp \xNote la \stemNeutral |
+  sib8. re16~ re8 si r sol4. |
+  do,,16 la' \t {sib mi fa} \tttt {lab solb la si re do red} mi4. r8 |
+  \t {sold4 sol si~} si2~ si2. r4 |
+  \time 3/4
+  r8 do,, r16 re8 red16 r8 si |
+  \time 2/4
+  \stemUp \xNote la'4 \xNote la \bar "|."
+}
+
+TroisTuba =
+ %% Transpose
+ \smart \transpose do re
+ \relative do' {
   \clef bass
   \time 3/4
   R2.*2
@@ -376,7 +432,10 @@ TroisTuba = \relative do' {
   r4 r8 do' re,4\fermata \bar "|."
 }
 
-QuatreTuba = \relative do' {
+QuatreTuba =
+ %% Transpose
+ \smart \transpose do re
+ \relative do' {
   \clef bass
   \t {fa8 fa fa} \t {do do do}
   \t {fa fa fa} \t {do do do} |
@@ -422,7 +481,7 @@ QuatreTuba = \relative do' {
   reb'4~ \t {reb8 mib reb} mib4~ mib2 r4 |
   \t {r4 si'' fad} \t {mi8 la sol} |
   re2 r4 |
-  sib'4. fa~ fa2.~ |
+  sib'!4. fa!~ fa2.~ |
   fa8 r mib2 |
   sib'4~ \t {sib8 do sib} do4~ |
   do2 fa,4~ fa2 r4 |

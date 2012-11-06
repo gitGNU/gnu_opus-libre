@@ -354,6 +354,89 @@ UnPianoMg = \relative do' {
   <fa fa'>4->-- \ottava #0 r8 <fa' fa'>4->-._"loco" r |
 }
 
+DeuxPianoMd = \relative do' {
+  R1 R2.
+  \stemUp \xNote sol''4 \xNote sol |
+  R1 R2.
+  \stemUp \xNote sol4 \xNote sol \stemNeutral |
+  R1*2
+  r8 <sol re'> \stemUp \xNote sol4 \stemNeutral
+  r16 sib8.~ sib8 si |
+  r8 <sol re'>16 <sol re'> <sol re'> <sol re'> <sol re'> <sol re'>
+  r sib dob re dob sib64 dob sib dob \t {sib32 dob sib} sol16 |
+  r <sol re'> <sol re'> <sol re'> <sol re'> <sol re'> <sol re'> <sol re'>
+  r8 sib16 re r si sol8 |
+  mib'16 sol mi do~ do8 do r4 \stemUp \xNote sol \stemNeutral |
+  r4 r8 <sol re'> r4 \stemUp <reb, mib>16 \stemDown sib'' si \stemUp <do,, mi> |
+  \stemNeutral r8 <do mi sol>4 <re mib sib'>8 r4 r8 <si dod'> |
+  r4 <sol' si re>4. <do, reb sib'>4 <mi red'>8 |
+  r2 r8 <do' mib lab si> r16 <sol' sib dod mi> r8 |
+  r2 \ottava #1 \pl {sol16 sib si re dod, fa mi sold}
+  {re'' sib si sol sold mi fa dod}
+  sib' fad sol, mib \ottava #0 mi^"loco" do dod la fad' re red si do sold la8 |
+  fa la16 fad r re lab' do mib si8 dod16 \stemUp mi, sol \mg sib,8 \md \stemNeutral
+  fa'8 la16 fad r lab si, red do re sib'8 \stemUp sol16 mi'8 dod'16 \mg
+  fa,,8 \md la16 fad \stemNeutral re mi sold8 r16 \stemUp si sol \mg sib, \md reb' mib8 \mg do,16 \md \stemNeutral
+  fa8 la16 fad lab mib' reb8 mi16 do8 sib16 r re si sol |
+  fa8 la16 fad re do8 mi16 sol mib reb8 r16 \stemUp lad si \mg sold \md \stemNeutral |
+  fa'8 la16 fad lab re8 do16 r red si sol' dod sib mi8 |
+  fa,,16 la fad re sib' sol mib do si' sold mi dod |
+  \clef bass
+  s1*4 s2 s4 fa,,16 la fad re |
+  sol si sold mi dod' sib' mib, do' \clef treble
+  la' dod lad fad mib' do lab fa |
+  sol' mi re si la' fad mi dod do' lab fa mib sib' re si sol |
+  r4 <la,, mi'>8 r r16 <sib fa'> r8 |
+  \stemUp \xNote sol''4 \xNote sol
+}
+
+DeuxPianoMg = \relative do' {
+  \clef bass
+  R1 R2.
+  \stemUp \xNote si4\dyn "(snap)" \xNote si |
+  R1 R2.
+  \stemUp \xNote si4 \xNote si \stemNeutral |
+  R1*2
+  \clef treble
+  r8 <sol' re'> \stemUp \xNote sol'4 \stemNeutral
+  r16 sib,8.~ sib8 si |
+  r8 <sol re'>16 <sol re'> <sol re'> <sol re'> <sol re'> <sol re'>
+  r dob sib re sib dob sib sol |
+  r <sol re'> <sol re'> <sol re'> <sol re'> <sol re'> <sol re'> <sol re'>
+  r8 si!16 sol r sib re r |
+  mi! do mib sol~ sol8 sol r4 \stemUp \xNote sol \stemNeutral \clef bass |
+  <fa,,,, fa'>8. <la la'>16 r4 <solb solb'>8. <lab lab'>16 r4 |
+  <fa fa'>8. <la la'>16 r4 <solb solb'>8. <lab lab'>16 r4 |
+  <fa fa'>8. <la la'>16 r4 <solb solb'>8. <lab lab'>16 r4 |
+  <fa fa'>8 <la la'>16 <fad fad'> r8 <re re'>~ <re re'>2 |
+  r8 <fa fa'>16 <dod dod'> <mi mi'> <sol sol'>8.~ <sol sol'>2 |
+  \clef treble mib'''16_"loco" sol fad sib la, dod do mi \clef bass
+  si red re fad r la, sold do |
+  fa,8 la16 fad r re lab' do mib si8 dod16 \stemDown mi, sol sib,8 \stemNeutral
+  fa'8 la16 fad r lab si, red do re sib'8 \stemDown sol16 mi'8 \md dod'16 \mg
+  fa,,8 la16 fad \stemNeutral re mi sold8
+  r16 \stemDown si sol sib, \md reb' mib8 \mg do,16 \stemNeutral
+  fa8 la16 fad lab mib' reb8 mi16 do8 sib16 r re si sol |
+  fa8 la16 fad re do8 mi16 sol mib reb8 r16 \stemDown lad si sold \stemNeutral |
+  fa'8 la16 fad lab re8 do16 \clef treble r red si sol' dod sib mi8 | \clef bass
+  fa,,16 la fad re do mib sol sib dod, mi sold si |
+  fa,, fa' \md fa \mg la, la' \md la la' la, \mg
+  solb, solb' \md solb \mg lab, lab' \md lab' lab, \mg lab, \md |
+  fa' \mg fa fa, \md la' \mg la la, \md la'' la, \mg
+  solb, solb' \md solb \mg lab, \md lab'' lab, \mg lab lab, |
+  fa fa' \md fa \mg la, \pl {s \md dod' si8} {\mg la16 \md dod si la'} \mg
+  solb,, solb' \md solb \mg lab, \pl {s \md re'8 sib16} {lab \md re lab' sib,} \mg |
+  fa, fa' la, la' \md \pl {mib' reb la' la,} {mib' reb8 s16} \mg
+  solb,, solb' \md solb \mg lab, \md \pl {mi'' lab do, lab} {mi'8 do} \mg \ottava #-1 |
+  fa,,16 fa' \md fa^"(loco)" \mg reb, reb' \md reb' \mg mi,, mi' \md
+  mi \mg re, \md re'' re, \mg fa, la fad re |
+  sol si sold mi \ottava #0 dod'_"loco" sib' mib, do'
+  la' fad lad dod fa, lab do mib | \clef treble
+  si re mi sol dod, mi fad la mib fa lab do si! sol sib re | \clef bass
+  r4 <sol,,, fad'>8 r r16 <reb lab'> r8 |
+  \stemUp \xNote si''4 \xNote si
+}
+
 TroisPianoMd = \relative do' {
   <lab sib'>4 <lab sib'>2~| <lab sib'>4 <lab sib'>2 |
   <lab sib'>4 <lab sib'>2 | <lab sib'> <lab sib'>4 |
