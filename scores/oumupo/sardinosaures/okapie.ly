@@ -1,64 +1,12 @@
+%-- Sardinosaures -- okapie.ly ------------------------------------%
+% (c) 2012 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
-
-\header {
-  title = "Okapie"
-  poet = "Olivier Salon"
-  composer = "Valentin Villenave"
-  copyright = "© V. Villenave, 2012. Licence Art Libre"
-}
-
-#(set-global-staff-size 15)
-\pointAndClickOff
-
-dash ={
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
-
-texte = \lyricmode {
-  Ô -- \dash te -- donc, o -- ka -- pie,
-  ton ké -- pi, ton cha -- peau,
-  ta ki -- pa, pâle o -- ka -- pie, o -- kay_?
-  Dé -- ca -- po -- \dash te -- toi,
-  mets ta cape au pi -- quet
-  et cla -- \dash que -- nous
-  tes airs de pi -- peau,
-  tes airs de pi -- cco -- lo,
-  tes airs d’é -- po -- que,
-  tes airs de pa -- co -- ti -- lle
-  qui cla -- po -- tent co -- mme des bé -- cots,
-  pen -- dant qu’on pi -- cole,
-  pa -- pi -- lles pi -- co -- tantes,
-  les col -- chiques aux cols chics
-  et pen -- dant qu’on pi -- co -- re les co -- quilles
-  o -- pa -- ques de co -- co,
-  et le ka -- pok à pi -- cots
-  qu’on pique à Pâques
-  à Vla -- di -- vo -- stok
-  con -- tre quel -- ques ko -- peks.
-  On t’é -- coute, tout é -- bau -- bis,
-  \dash porc -- é -- pics pires
-  qu’au Pecq, et les quat’ co -- pies
-  de \dash porc -- é -- pics
-  "(oh" la co -- quine a -- po -- co -- "pe)"
-  qui sont nos p’tits
-  "(co" -- pie d’a -- po -- co -- "pe)"
-  et qui ont la co -- li -- que
-  dans les  co -- que -- li -- cots
-  et les bro -- co -- lis.
-  On dan -- se la pol -- ka, belle o -- ka -- pie,
-  comme un co -- lloque é -- pi -- que
-  dans les é -- pis et les coques.
-  Qui donc est l’o -- ka -- pie
-  qui claque à nos ké -- pis_?
-}
-
-voix = \relative do' {
+OkapieVoix = \relative do' {
   \time 4/4
   \tempo "Presto alla Poulenca" 4 = 96
-%  \dynamicUp
+  \dynamicUp
   r2 r4 r8 mi16^"leggiero"\mp sol |
   si8-- red,16 sol si8-- fad16 sol
   si8-- red,16 sol do8-- fa,16 la |
@@ -111,16 +59,16 @@ voix = \relative do' {
   \bar "|."
 }
 
-pianoMd = \relative do' {
+OkapiePianoMd = \relative do' {
   \stemUp
   mi''16-.-5^(\p ^ "leggiero" si-.-3 fa-.-2 sib,-.)
   do'-.^( sol-. dod,-. fad,-.)
   \stemNeutral sold'-.( red-. la-. fad-.)
   <<
     { \voiceOne <mi mi'>4->-. } \\
-    { \voiceTwo mi16 \change Staff = "mg" \stemUp sib-. mi,8^>}
+    { \voiceTwo mi16 \mg \stemUp sib-. mi,8^>}
   >>
-  \change Staff = "md" \stemNeutral
+  \md \stemNeutral
   R1 r2
   sold''16-.\sfz mi-. si-. fa!-. sib,4-> |
   do16\pp ^"secco" sold si sol
@@ -131,18 +79,18 @@ pianoMd = \relative do' {
   r <sol,, re'>( <sib fa'>) <mi reb'>( <fad sib> <sol mi'?>) |
   sold,(\< <la mi'> <dod sold'> <la' mi'>)
   <dod-2 sold'-5>16-.\fp dod-.-3 sol-. re-. |
-  \change Staff = "mg" \stemUp
+  \mg \stemUp
   <fad, lad>16\p <fad lad> dod <fad lad> <fa la> <fa la>
   re <fa la> <fad lad> <fad lad> dod <fad lad> |
-  la \change Staff = "md" \stemNeutral fa' sold mi
+  la \md \stemNeutral fa' sold mi
   la(-.\< mib'-. sib'-. solb')-.\! |
   r8 <lab,,, mib'>(\mf <do sol'> <lab' mib'>) <si sol'>( re) |
   r <sol,, re'>( <sib fa'>) <re sib'>( <mi? reb'> <fad do'>) |
   <sol si>(\> <re fad> <si la'> <re sol> <mi dod'> <la mi'>) |
   <dod la'>16-.\fp fad-. re-. la-. s4 |
-  \change Staff = "mg" \stemUp
+  \mg \stemUp
   <sold, si>16^\p ^"non legato" <sold si> red <sold si>
-  \change Staff = "md" \stemNeutral
+  \md \stemNeutral
   <fa re'>->( dod') mi sol la
   \stemUp fa, \stemNeutral sold si? dod-4 <si-1 mi-3> <dod sol'> la' |
   <sib do> <la fa'> <la fa'> <do mib>
@@ -163,7 +111,7 @@ pianoMd = \relative do' {
   <la fa'> <sib re> <sib re> <la fa'>) |
   <sib reb>( <sol mi'> <sol mi'> <sib do> la dod,)
   <sold do>[^ "secco" <sold do>]
-  \change Staff = "mg" \stemUp mi \change Staff = "md" \stemNeutral
+  \mg \stemUp mi \md \stemNeutral
   <sold do> <sold do> sib |
   <dob solb'>( sib') <sib solb'>( <dob mib>
   <dob mib> <sib solb'>) <sib solb'>( <do mib>) |
@@ -204,14 +152,14 @@ pianoMd = \relative do' {
   r8 <sol do mi>->-- \ottava #1 mi''''4-.
 }
 
-pianoMg = \relative do' {
+OkapiePianoMg = \relative do' {
   \clef bass
   mi16-.
-  \change Staff = "md" \stemDown
+  \md \stemDown
   si'-. r8
-  \change Staff = "mg" \stemNeutral
-  sold,16-. red'-. \change Staff = "md" \stemDown la'8-.
-  \change Staff = "mg" \stemNeutral
+  \mg \stemNeutral
+  sold,16-. red'-. \md \stemDown la'8-.
+  \mg \stemNeutral
   do,,16_(-. sol'-. dod-. re)-. r16 \stemDown sib,-. mi,8_> |
   <<
     { \voiceOne
@@ -251,13 +199,13 @@ pianoMg = \relative do' {
       <mi, mi'>2--
     }
   >> <sib' sib'>4
-  <re, re'> \change Staff = "md" mib'''16(-.
-  \change Staff = "mg" sold,-. do,!-. red,)-. |
+  <re, re'> \md mib'''16(-.
+  \mg sold,-. do,!-. red,)-. |
   \stemDown mi4-- \stemNeutral
   sib'8-. mi,-. fad'4*1/4(->
-  \change Staff = "md" \stemDown
+  \md \stemDown
   \hideNotes fa4*3/4) \unHideNotes
-  \stemNeutral \change Staff = "mg"
+  \stemNeutral \mg
   sib,16(-> la) do? red |
   <mi, fa'>8-. sib'-. <sol fad'>-. do-.
   <la si'>-. mib'-. <sib reb'>-. fa'-. |
@@ -294,38 +242,4 @@ pianoMg = \relative do' {
   mi,,(-. la-. red)-. r sold,-.( red'-. la'-.) r do,-. sol'-. r8
   r8 <sol, lab>-- | <do, fa>-- <lad si>16 fad <re sol do>4-.
   r8 <mi' sold si>->-- \ottava #-1 mi,,4-.
-}
-
-\score {
-<<
-  \new Staff \new Voice = "voix" \with { midiInstrument = "voice oohs" } \voix
-  \new Lyrics \lyricsto "voix" \texte
-  \new PianoStaff <<
-    \new Staff = "md" \pianoMd
-    \new Staff = "mg" \pianoMg
-  >>
->>
-  \midi {}
-  \layout {
-    \context {
-      \Score
-      \override PaperColumn #'keep-inside-line = ##t
-      \override NonMusicalPaperColumn #'keep-inside-line = ##t
-      
-      \override TimeSignature #'style = #'()
-      \override TextScript #'stencil =
-        #(lambda (grob)
-           (let ((grob-markup (ly:grob-property grob 'text)))
-             (grob-interpret-markup grob (make-italic-markup grob-markup))))
-      \override TextScript #'direction = #UP
-
-      autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
-			   ,(make-accidental-rule 'any-octave 0)
-			   ,(make-accidental-rule 'same-octave 1)
-			   ,neo-modern-accidental-rule)
-      autoCautionaries = #`(Staff ,(make-accidental-rule 'same-octave 1)
-			    ,(make-accidental-rule 'any-octave 1))
-      extraNatural = ##f
-    }
-  }
 }

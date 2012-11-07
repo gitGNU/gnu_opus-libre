@@ -1,0 +1,1 @@
+structure = '("Tortulipe" "Kiwistiti" "Escargoeland" "Okapie")

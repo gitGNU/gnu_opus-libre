@@ -1,76 +1,43 @@
+%-- Sardinosaures -- tortulipe.ly ---------------------------------%
+% (c) 2012 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
-
-\header {
-  title = "La tortulipe"
-  poet = "Jacques Roubaud"
-  composer = "Valentin Villenave"
-  copyright = "© V. Villenave, 2012. Licence Art Libre"
-}
-
-#(set-global-staff-size 15)
-\pointAndClickOff
-
-dash ={
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
-
-texte = \lyricmode {
-  Co -- nnai -- \dash ssez -- vous la tor -- tu -- lipe
-  qui se pro -- mène fu -- mant sa pipe
-
-  douce est la tor -- tu -- li -- pe blan -- che
-  qui fait son mar -- ché le di -- manche
-
-  len -- te la tor -- tu -- li -- pe rouge
-  à peine on di -- rait qu’elle bou -- ge
-
-  c’est au prin -- temps dans les sa -- lades
-  que les tor -- tu li -- pes gam -- badent
-
-  les tor -- tu -- li -- pes de cou -- leur
-  sont sa -- ges et ne font pas peur
-
-  mais si vous la croi -- sez le soir
-  gare à la tor -- tu -- li -- pe noire
-}
-
-voix = \relative do' {
+TortulipeVoix = \relative do' {
   \time 7/4
-  \tempo "Andante comodo" 4 = 80
-  sib4 re fad sib sol mi dod |
-  sib r sib re fad sib r |
-  sol mi dod sib r2 r4 |
+  \tempo "Andante serioso" 4 = 80
+  \dynamicUp
+  sib4--\(\dyn "mf_pesante" re-- fad-- sib-- sol-- mi-- dod-- |
+  sib--\) r sib--\( re-- fad-- sib--\) r |
+  sol--\( mi-- dod-- sib--\) r2 r4 |
   R1*7/4
-  r1 r2 sib4~ |
-  sib4. r8 sib sib~ sib16 sib8 sib16 sib16. sib32 mi2 sib8 |
-  r2 mi8 mi~ \times 2/3 {mi mi mi} sib' mi,~ mi16 sib mi4. |
+  r1 r2 sib4~\p\< |
+  sib4. r8\! sib\mp\< sib~ sib16 sib8 sib16 sib16. sib32 mi2--\! sib8 |
+  r2 mi8\mf\> mi~ \times 2/3 {mi mi mi} sib' mi,~ mi16 sib mi4.\! |
   R1*7/4
-  \acciaccatura fa'8 mi4. mi16. dod32~ \times 2/3 {dod4 re8~}
-  re16 mi fa sol \acciaccatura fa16 mi4. r8 r4 |
-  r4 r8 do4. mib4~ \times 2/3 {mib8 si4~} si16 la8. do4 |
-  r lab sib2. fad4. r8 |
+  \acciaccatura fa'8-> mi4.\fp mi16. dod32~-- \times 2/3 {dod4 re8~\(}
+  re16 mi fa sol \acciaccatura fa16-> mi4.\) r8 r4 |
+  r4 r8 do4.--\mp mib4~-- \times 2/3 {mib8 si4~} si16 la8. do4 |
+  r lab--\>\( sib2.-- fad4.\) r8\! |
   R1*7/4
-  r4 mi fad8-. mi-. red4 r dod mi8-. sold-. |
-  fa4 r2 r4 re r mi |
-  fad8-. sold-. sib4 la r2 fa4-. dod-. |
+  r4 mi-.--\mp fad8-. mi-. red4-.-- r dod-.-- mi8-. sold-. |
+  fa4-.-- r2 r4 re-.--\p r mi-.-- |
+  fad8-. sold-. sib4-- la-- r2 fa4-. dod-. |
   R1*7/4
-  sib'4( mi) mib la, lab2 sol4 |
-  fad4. do'8~ do2 dob2. |
-  r4 la dod2\( \glissando fa,4\) r mi |
-  red-- do-- red-- la'2 r2 |
-  r2 mi2. r4 mi |
-  la4. mib8~ mib4 sold4. do,8~ do4 fa |
-  dob2. r2 r4 sib'~ |
-  sib sol mi dod sib re fad |
-  sib,1 r2 r4 |
+  sib'4\(\dyn "mf_ben legato" mi\) mib la, lab2 sol4 |
+  fad4. do'8~\> do2 dob2. |
+  r4\! la\f dod2\(\> \glissando fa,4\)\! r mi\p |
+  red-- do-- red-- la'2-- r2 |
+  r2 mi2.--\f r4 mi\( |
+  la4.^"large" mib8~ mib4 sold4. do,8~\< do4 fa |
+  dob2.\)\! r2 r4 sib'~->--\f |
+  sib sol--\(\mp\> mi-- dod-- sib-- re-- fad--\) |
+  sib,1\mf ^"ten." r2 r4 |
 }
 
-md = \relative do' {
+TortulipePianoMd = \relative do' {
   \clef bass
-  sib,4 re fad sib sol mi dod | %1: C-c
+  sib,4^\dyn "mp_al fine" re fad sib sol mi dod | %1: C-c
   sib dod sol' sib la mi dob | %2: D-e
   sib mib fa sib sol mi dod | %3: E-c
   sib dod sol' sib fa mi mib | %4: D-a
@@ -106,7 +73,7 @@ md = \relative do' {
   R1*7/4 \bar "|."
 }
 
-mg = \relative do' {
+TortulipePianoMg = \relative do' {
   \clef bass
   sib,4 sol mi dod sib re fad | %1: c-C
   sib fa mi mib sib do lab' | %2: a-B
@@ -142,40 +109,4 @@ mg = \relative do' {
   sib lab mi do sib re fad | %24: d-C
   %  sib la mi dob sib dob la' | %25: e-A
   R1*7/4 \bar "|."
-}
-
-\score {
-<<
-  \new Staff \new Voice = "voix" \voix
-  \new Lyrics \lyricsto "voix" \texte
-  \new PianoStaff <<
-    \new Staff <<
-      \new Voice {\stemUp \md}
-      \new Voice {\stemDown \mg}
-    >>
-  >>
->>
-  \layout {
-    \context {
-      \Score
-      \override SystemStartBrace #'collapse-height = #1
-      \override PaperColumn #'keep-inside-line = ##t
-      \override NonMusicalPaperColumn #'keep-inside-line = ##t
-
-      \override TimeSignature #'style = #'()
-      \override TextScript #'stencil =
-        #(lambda (grob)
-           (let ((grob-markup (ly:grob-property grob 'text)))
-             (grob-interpret-markup grob (make-italic-markup grob-markup))))
-      \override TextScript #'direction = #UP
-
-      autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
-			   ,(make-accidental-rule 'any-octave 0)
-			   ,(make-accidental-rule 'same-octave 1)
-			   ,neo-modern-accidental-rule)
-      autoCautionaries = #`(Staff ,(make-accidental-rule 'same-octave 1)
-			    ,(make-accidental-rule 'any-octave 1))
-      extraNatural = ##f
-    }
-  }
 }
