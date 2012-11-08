@@ -91,7 +91,8 @@ current-part music."
                     (skel-num (find-skel (string-append skel-name "-" (ls-index part struct)))))
                (if (string? skel-part) (eval-skel skel-part)
                    (if (string? skel-num) (eval-skel skel-num)
-                       (eval-skel skel-name)))
+                       (eval-skel (find-skel (skel-file skel-name)))))
+
                (let* ((music (apply-skel (cons part arg) lang:instruments))
                       (score (scorify-music music parser))
                       (layout (ly:output-def-clone $defaultlayout))
