@@ -51,13 +51,31 @@ TortulipeVoixTexte = \lyricmode {
 
 EscargoelandVoixTexte = \lyricmode {
   A -- vec ses deux ailes
-  qui traî -- nent à terre
-  co -- mme dez hal -- tères
-  au bout de bre -- telles,
-  l’es -- car -- go -- é -- land
-  ja -- mais ne se presse_:
-  il sait que sans cesse
-  l’es -- car -- go -- é -- land.
+  Qui traî -- nent à terre
+  Co -- mme dez hal -- tères
+  Au bout de bre -- telles,
+  L’es -- car -- go -- é -- land
+  Ja -- mais ne se presse_:
+  Il sait que sans cesse
+  L’es -- car -- go -- é -- land.
+}
+
+CachalotarieVoixTexte = \lyricmode {
+  Un ca -- cha -- lot d’ex -- ce -- llente com -- po -- si -- tion
+  Ten -- contre un jour une o -- ta -- rie à la na -- ture heu -- reu -- se.
+  Par ti -- mi -- di -- té, cha -- cun cache à \dash l’au --
+  Tre son bo -- nheur si simple et si beau,
+  Mais leur en -- fant, qui hé -- rite au -- ssi -- tôt
+  de leurs jo -- vi -- a -- les na -- tures
+  Se met à rire, mais à rire, en -- core plus fort que ce -- la,
+  Et plus il a -- vance en na -- ge,
+  Plus il rit, plus il rit, plus il rit, en -- core plus fort que ce -- la.
+
+  Les sa -- vants et les spé -- cia -- listes
+  Se penchent et s’in -- te -- rrogent
+  Sur ce ca -- ra -- ctère peu co -- mmun.
+  Ils ont à l’a -- ni -- mal do -- nné
+  Le nom de ca -- cha -- lo -- tarie.
 }
 
 OkapieVoixTexte = \lyricmode {

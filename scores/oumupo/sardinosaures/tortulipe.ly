@@ -37,6 +37,7 @@ TortulipeVoix = \relative do' {
 
 TortulipePianoMd = \relative do' {
   \clef bass
+  \voiceOne
   sib,4^\dyn "mp_al fine" re fad sib sol mi dod | %1: C-c
   sib dod sol' sib la mi dob | %2: D-e
   sib mib fa sib sol mi dod | %3: E-c
@@ -75,6 +76,7 @@ TortulipePianoMd = \relative do' {
 
 TortulipePianoMg = \relative do' {
   \clef bass
+  \voiceTwo
   sib,4 sol mi dod sib re fad | %1: c-C
   sib fa mi mib sib do lab' | %2: a-B
   sib sol mi dod sib dob la' | %3: c-A

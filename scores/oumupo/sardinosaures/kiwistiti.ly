@@ -68,13 +68,14 @@ KiwistitiPianoMd = \relative do' {
   <la si la' si>16 <la si la' si> <la si la' si> <la si la' si> |
   r2 r16 <si si'> <si si'> <si si'> |
   s2.*3 s4 la,2 |
+  si16 si' si, si si si si si <la si> si si si |
   
 }
 
 KiwistitiPianoMg = \relative do' {
   \clef bass
   r4 s \ottava #-1
-  si,,, si si si |
+  si,,,16 si si si |
   si si si si si si si si si si si si |
   r si si si si8 si si16 si si do |
   si' do si si si si, si' si <si do> si si si |
@@ -85,7 +86,7 @@ KiwistitiPianoMg = \relative do' {
   si \ottava #-1 si,, si si \ottava #0
   si''^"loco" si, si' si si, si' si si |
   si, si si si' \ottava #-1 si,,
-  \ottava #0 si'^"loco" si si si si si si |
+  \ottava #0 si''^"loco" si si si si si si |
   <la' si> si, si si <la' si> <la si> si, si
   \ottava #-1 la,, si \ottava #0 la'^"loco" si |
   si'' si si si, si' si si, si si' si, si si |
@@ -97,5 +98,14 @@ KiwistitiPianoMg = \relative do' {
   \ottava #-1 si,,,16 si si si si si si si' r4 |
   <la, si>16 \ottava #0 <la' si>^"loco" <la' si> <la' si>
   si si si si r4 |
-  si,16 si
+  \stemUp si,16 si' \md \stemDown <si' si'> \mg \stemUp si,,
+  si \md \stemDown <si' si'> \mg \stemUp si,, si'
+  si' \md \stemDown si' si si' |
+  si' \mg \stemUp si,,,, si' si'
+  \md \stemNeutral si' si' si, si \mg si, si si, si |
+  si, si si si \ottava #-1
+  \md \stemDown <si re> \mg \stemUp si,,, \md \stemDown <si''' re> <si re>
+  \mg \stemNeutral \ottava #0 <si re> re si si |
+  \stemUp si \md \stemDown si''' \mg \stemNeutral si,,, si
+  si si si si |
 }
