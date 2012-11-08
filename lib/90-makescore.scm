@@ -19,6 +19,15 @@
 
 (define numbers #f)
 (define conf:structure numbers)
+(define *has-pagebreak* (make-parameter #f))
+; This is admittedly ugly.
+(define pagebreak
+(make-music 'EventChord 'elements
+  '((make-music 'LineBreakEvent 'break-permission 'force)
+    (make-music 'PageBreakEvent 'break-permission 'force))
+  'page-break-permission 'force
+  'line-break-permission 'force
+  'page-marker #t))
 
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
@@ -85,7 +94,15 @@ current-part music."
                          ((list? defined-structure) defined-structure))))
       (if (string? (member arg struct))
           (set! struct arg))
+
       (map (lambda (part)
+         (if (string-suffix? "|" part)
+             (begin (*has-pagebreak* #t)
+                    (set! part (string-drop-right part 1))))
+         (if (string-suffix? (or ".ly" ".ily") part)
+             (let* ((regx (string-append "/" part "$"))
+                    (file (car (find-files (*current-score*) regx))))
+                (ly:parser-include-string parser (format #f "\\include \"~a\"" file)))
              (let* ((skel-name (skel-file arg))
                     (skel-part (find-skel (string-append skel-name "-" part)))
                     (skel-num (find-skel (string-append skel-name "-" (ls-index part struct)))))
@@ -102,9 +119,11 @@ current-part music."
 
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score layout)
+                 (if (*has-pagebreak*) (add-music parser pagebreak))
                  (add-score parser score)
                  (*has-timeline* #f)
-                 output-redirect)))
+                 (*has-pagebreak* #f)
+                 output-redirect))))
 
            struct)
       (make-music 'Music 'void #t))))
