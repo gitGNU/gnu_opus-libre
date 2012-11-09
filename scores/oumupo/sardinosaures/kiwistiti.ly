@@ -69,7 +69,31 @@ KiwistitiPianoMd = \relative do' {
   r2 r16 <si si'> <si si'> <si si'> |
   s2.*3 s4 la,2 |
   si16 si' si, si si si si si <la si> si si si |
-  
+  si si' si, si si si si si si si' si si' |
+  \ottava #1 si si' si si' si, si' si,, si'
+  si' \ottava #0 \mg si,,,, \md si'^"loco" si' |
+  r si si si si, si' \ottava #1 si' si' \ottava #0
+  r16 \mg \stemUp si,,,,, \md \stemDown si'' si' |
+  \mg \stemUp si,, \md \stemDown si'' si'8 \stemNeutral
+  r16 si,, si' si' \ottava #1 si, si' si'8 |
+  \mg \stemUp si,,,,8 \md \stemDown si''''16 si, \stemNeutral
+  si si, si si \ottava #0 si,^"loco" si si si |
+  r4 \ottava #1 r16 <si'' si'> \ottava #0 r8
+  r16 si si,8*1/2 s16 |
+  r8 si \stemUp si,4 s |
+  \stemNeutral r4 r8 si16 si' \ottava #1 si' si' \ottava #0 r8 |
+  \clef "G^15" \mg si,,,16_"(sempre loco)" \md si''' si, \mg si,
+  \md si'' si, \mg si,  \md si' \mg si,, \md si'' si' \mg si,, |
+  \md si' si' \mg si,, \md si' \mg si,, \md si''' si, \mg si, \md si'' si, \mg si, \md si' |
+  \mg si,, \md si'' si' \mg si,,, \md si'' \mg si, si, \md si'' si' \mg si,,, \md si''' si, |
+  \mg si, \md si' si' \mg si,, \md si' si' \mg si,, \md si' \mg si, \md si' si' \mg si,, |
+  \md si'' si si si \mg la,, \md si' si' \mg la,, \md si' si' \mg la,, \md si' |
+  \mg si, \md si' si' \mg si,, \md si' si' si, si' \mg si,, \md si' si' \mg si,, |
+  \md si' si' si, si' si si, si' si, si' si si, si' |
+  si, si' si si, si' si, si' si si, si' si si |
+  si, si' si si si si, si si si si si si |
+  si'8 si16 si r si si si r si si si |
+  si si r8 si16 si r8 si r | si4 r si |
 }
 
 KiwistitiPianoMg = \relative do' {
@@ -99,13 +123,22 @@ KiwistitiPianoMg = \relative do' {
   <la, si>16 \ottava #0 <la' si>^"loco" <la' si> <la' si>
   si si si si r4 |
   \stemUp si,16 si' \md \stemDown <si' si'> \mg \stemUp si,,
-  si \md \stemDown <si' si'> \mg \stemUp si,, si'
-  si' \md \stemDown si' si si' |
-  si' \mg \stemUp si,,,, si' si'
+  si' \md \stemDown <si' si'> \mg \stemUp si,, si'
+  si \md \stemDown si' si si' |
+  si' \mg \stemUp si,,,,, si' si'
   \md \stemNeutral si' si' si, si \mg si, si si, si |
   si, si si si \ottava #-1
-  \md \stemDown <si re> \mg \stemUp si,,, \md \stemDown <si''' re> <si re>
+  \md \stemDown <si'' re> \mg \stemUp si,,, \md \stemDown <si''' re> <si re>
   \mg \stemNeutral \ottava #0 <si re> re si si |
   \stemUp si \md \stemDown si''' \mg \stemNeutral si,,, si
-  si si si si |
+  si si si si si si si si |
+  <la,, si'>8. <si la'>16 r la <si si'> la <la si'>8 <si la'> |
+  <la si'>8. <si la'>16 r si si' si, si8 si'' |
+  si,,8. si16 r2 |
+  si'4. si8 r16 \stemDown si \stemNeutral r8 |
+  \stemDown si'4\laissezVibrer s2 | si4\laissezVibrer  s2 | \stemNeutral
+  si16 si si si si si si si \stemDown si si si \md si' \mg \stemNeutral
+  si, si si si \stemDown \md si' \mg \stemNeutral si, si si si si si si |
+  si si si si si4 r |
+  \clef treble s2.*12 
 }
