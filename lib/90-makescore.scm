@@ -22,12 +22,12 @@
 (define *has-pagebreak* (make-parameter #f))
 ; This is admittedly ugly.
 (define pagebreak
-(make-music 'TextScript 'elements
-  '((make-music 'LineBreakEvent 'break-permission 'force)
-    (make-music 'PageBreakEvent 'break-permission 'force))
-  'page-break-permission 'force
-  'line-break-permission 'force
-  'page-marker #t))
+  (make-music 'EventChord 'elements
+    '((make-music 'LineBreakEvent 'break-permission 'force)
+      (make-music 'PageBreakEvent 'break-permission 'force))
+    'page-break-permission 'force
+    'line-break-permission 'force
+    'page-marker #t))
 
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
