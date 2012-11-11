@@ -1,5 +1,5 @@
 <<
-  \new ChordNames $"Grille"
+  \newChordNames $"Grille"
   \newStaff $"Voix"
   \newPianoStaff $"Piano"
 >>

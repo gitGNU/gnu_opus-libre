@@ -62,20 +62,21 @@ EscargoelandVoixTexte = \lyricmode {
 
 CachalotarieVoixTexte = \lyricmode {
   Un ca -- cha -- lot d’ex -- ce -- llente com -- po -- si -- tion
-  Ten -- contre un jour une o -- ta -- rie à la na -- ture heu -- reu -- se.
+  Ren -- contre un jour une o -- ta -- rie à la na -- ture heu -- reu -- se.
   Par ti -- mi -- di -- té, cha -- cun cache à \dash l’au --
   Tre son bo -- nheur si simple et si beau,
   Mais leur en -- fant, qui hé -- rite au -- ssi -- tôt
   de leurs jo -- vi -- a -- les na -- tures
-  Se met à rire, mais à rire, en -- core plus fort que ce -- la,
+  Se met à ri -- re, mais à rire, en -- core plus fort que ce -- la,
   Et plus il a -- vance en na -- ge,
   Plus il rit, plus il rit, plus il rit, en -- core plus fort que ce -- la.
 
   Les sa -- vants et les spé -- cia -- listes
-  Se penchent et s’in -- te -- rrogent
-  Sur ce ca -- ra -- ctère peu co -- mmun.
+  Se pen -- chent le front sou -- ci -- eux
+  Et in -- te -- rro -- gent gra -- ve -- ment
+  Ce ca -- ra -- ctè -- re peu co -- mmun.
   Ils ont à l’a -- ni -- mal do -- nné
-  Le nom de ca -- cha -- lo -- tarie.
+  Le nom de ca -- cha -- lo -- ta -- rie.
 }
 
 OkapieVoixTexte = \lyricmode {
@@ -120,7 +121,7 @@ KiwistitiVoixTexte = \lyricmode {
   Le ki -- wi -- sti -- ti
   Est un sim -- ple fruit
   Vert, et vert au -- ssi.
-  Qui, oui
+  Qui, oui,
   Pro -- vient d’Au -- stra -- lie,
   Mais pousse au -- ssi
   Dans le Mi -- di.

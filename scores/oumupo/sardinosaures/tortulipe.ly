@@ -24,7 +24,7 @@ TortulipeVoix = \relative do' {
   fa4-.-- r2 r4 re-.--\p r mi-.-- |
   fad8-. sold-. sib4-- la-- r2 fa4-. dod-. |
   R1*7/4
-  sib'4\(\dyn "mf_ben legato" mi\) mib la, lab2 sol4 |
+  sib'4(\dyn "mf_ben legato" mi) mib la, lab2 sol4 |
   fad4. do'8~\> do2 dob2. |
   r4\! la\f dod2\(\> \glissando fa,4\)\! r mi\p |
   red-- do-- red-- la'2-- r2 |
