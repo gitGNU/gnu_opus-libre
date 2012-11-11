@@ -206,3 +206,16 @@ markup exists."
          \new Staff = $lang:lower-hand
            \removeDynamics \newVoice $lower
      >>#})))
+
+(define newChordNames
+  ;;   "If NAME matches a defined music expression, then
+  ;; create a Voice for it.  If a matching timeline can be
+  ;; found, try and squash it as well."
+  (define-music-function (parser location name) (string?)
+    (let* ((current-name (string-append (*current-part*) name))
+           (music (ly:parser-lookup parser (string->symbol current-name))))
+      (ly:debug-message "Loading music from ~a..." current-name)
+      (if (ly:music? music)
+          #{ \new ChordNames = $name $music #}
+          (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
+          (make-music 'Music 'void #t))))))
