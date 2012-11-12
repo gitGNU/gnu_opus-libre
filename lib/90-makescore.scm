@@ -19,6 +19,15 @@
 
 (define numbers #f)
 (define conf:structure numbers)
+(define *has-pagebreak* (make-parameter #f))
+; This is admittedly ugly.
+(define pagebreak
+  (make-music 'EventChord 'elements
+    '((make-music 'LineBreakEvent 'break-permission 'force)
+      (make-music 'PageBreakEvent 'break-permission 'force))
+    'page-break-permission 'force
+    'line-break-permission 'force
+    'page-marker #t))
 
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
@@ -26,9 +35,10 @@
       (cons (cons (cdar alist) (caar alist))
             (alist-reverse (cdr alist)))))
 
+
 (define (ls-index str lst)
   "Where is STR in LST?"
-  (number->string (- (length lst) (length (member str lst)))))
+  (- (length lst) (length (member str lst))))
 
 (define (eval-skel file)
   "Load skeleton in FILE, and apply it to the
@@ -85,10 +95,21 @@ current-part music."
                          ((list? defined-structure) defined-structure))))
       (if (string? (member arg struct))
           (set! struct arg))
+
       (map (lambda (part)
+         (if (string-suffix? "|" part)
+             (let* ((num (ls-index part struct))
+                    (trimmed (string-drop-right part 1)))
+               (*has-pagebreak* #t)
+               (set! part trimmed)
+               (list-set! struct num trimmed)))
+         (if (string-suffix? (or ".ly" ".ily") part)
+             (let* ((regx (string-append "/" part "$"))
+                    (file (car (find-files (*current-score*) regx))))
+                (ly:parser-include-string parser (format #f "\\include \"~a\"" file)))
              (let* ((skel-name (skel-file arg))
                     (skel-part (find-skel (string-append skel-name "-" part)))
-                    (skel-num (find-skel (string-append skel-name "-" (ls-index part struct)))))
+                    (skel-num (find-skel (string-append skel-name "-" (number->string (ls-index part struct))))))
                (if (string? skel-part) (eval-skel skel-part)
                    (if (string? skel-num) (eval-skel skel-num)
                        (eval-skel (find-skel (skel-file skel-name)))))
@@ -102,9 +123,11 @@ current-part music."
 
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score layout)
+                 (if (*has-pagebreak*) (add-music parser pagebreak))
                  (add-score parser score)
                  (*has-timeline* #f)
-                 output-redirect)))
+                 (*has-pagebreak* #f)
+                 output-redirect))))
 
            struct)
       (make-music 'Music 'void #t))))
