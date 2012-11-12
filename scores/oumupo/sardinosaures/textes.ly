@@ -9,16 +9,25 @@ EscargoelandTitre = "L’escargoéland"
 OkapieTitre = "L’okapie"
 KiwistitiTitre = "Le kiwistiti"
 CachalotarieTitre = "Le cachalotarie"
+BaobabouinTitre = \markup \center-column {
+  \smallCaps { ~ Annexe ~ }
+  "Le baobabouin"
+}
 
 \header {
   title = \Titre
-  composer = "Valentin Villenave"
+  composer = \markup \center-column {
+    "Valentin Villenave"
+    "(sur des textes d’Olivier Salon et Jacques Roubaud)"
+  }
   copyright = \markup {
     © et \translate #'(1.5 . 0) \scale #'(-1 . 1) ©
     V. Villenave, 2012. Licence Art Libre
   }
   date = "2012"
 }
+
+
 
 \pointAndClickOff
 #(set-global-staff-size 16)
@@ -27,6 +36,66 @@ dash = {
   \once \override LyricHyphen #'minimum-distance = #4
   \once \override LyricHyphen #'length = #2
   \once \override LyricHyphen #'thickness = #1.2
+}
+
+\paper {
+  first-page-number = #-1
+}
+
+\pageBreak
+\markup \fill-page {
+  ""
+  \fill-line {
+  ""
+  \general-align #Y #0.5 {\epsfile #X #30 #"scores/oumupo/oumupo.eps" }
+  \line {
+    \override #'(line-width . 45)
+    \wordwrap {
+      \hspace #4 Ces pièces s’inscrivent dans le cadre de
+      l’Ouvroir de Musique Potentielle
+      \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),}
+      dédié à l’écriture musicale sous contraintes formelles.
+    }
+  }
+  ""
+  }
+  \fill-line {
+    \override #'(box-padding . 6)
+    \box \center-column {
+      \line {
+        Copyright & copyleft © Valentin Villenave, 2012.
+      }
+      \wordwrap {
+        D’après le livre \italic Sardinosaures \italic &
+        \concat { \italic compagnie ,} de Jacques Roubaud
+        et Olivier Salon, publié en 2008 aux éditions Les
+        mille univers.
+      }
+      \line {
+        \with-url #"http://valentin.villenave.net"
+        \typewriter http://valentin.villenave.net
+      }
+      \vspace #.5
+      \override #'(line-width . 100)
+      \justify {
+        Cette partition est publiée suivant les termes de la licence
+        \with-url #"http://artlibre.org/licence/lal"
+        \bold { Art Libre }
+        \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
+        Vous pouvez la copier, la modifier et la jouer \italic librement
+        sans contrevenir au droit d'auteur, à  condition de respecter les
+        termes de la licence (notamment en veillant à  mentionner le nom
+        de l’auteur et l’adresse web d’origine).
+      }
+      \vspace #.5
+      \line {
+        Gravure réalisée au moyen du logiciel libre
+        \with-url #"http://www.lilypond.org"
+        \concat {\bold "GNU LilyPond" ,}
+        \concat { $(string-append "version " (lilypond-version) ".") }
+      }
+    }
+  }
 }
 
 TortulipeVoixTexte = \lyricmode {
@@ -156,40 +225,47 @@ KiwistitiVoixTexte = \lyricmode {
   \dash Ci -- gît six p’tits ki -- wi -- sti -- tis.
 }
 
-texte = \lyricmode {
+BaobabouinVoixTexte = \lyricmode {
   Il n’est pas na -- bab
-  Il n’est pas mar -- souin
-  Le ba -- o -- ba -- bouin
-  Il vo -- yage en cab
-  A -- vec le pin -- gouin
-  Le ba -- o -- ba -- bouin
-  S’il n’a pas de rab
-  Il fait du tin -- touin
-  Le ba -- o -- ba -- bouin
-  Un bon chich -- ke -- bab
-  Il n’en veut pas mouins
-  Le ba -- o -- ba -- bouin
+  il n’est pas mar -- souin
+  le ba -- o -- ba -- bouin
 
-  Il vous met k. o.
-  A -- vec son ca -- bas
-  C’est un vrai sa -- gouin
-  Le ba -- o -- ba -- bouin
-  \dash Là -- bas ou \dash là -- haut
-  Vo -- yez les é -- bats
-  Du ba -- o -- ba -- bouin
+  il vo -- yage en cab
+  a -- vec le pin -- gouin
+  le ba -- o -- ba -- bouin
 
-  Il fait du mé -- lo
-  Pour une pêche mel -- ba
-  Le ba -- o -- ba -- bouin
-  Il fait du sa -- bbat
+  s’il a pas de rab
+  il fait du tin -- touin
+  le ba -- o -- ba -- bouin
+
+  un bon chich’ -- ke -- bab
+  il ne veut pas mouins
+  le ba -- o -- ba -- bouin
+
+  il vous met \dash k. -- o.
+  a -- vec son ca -- bas
+  c’est un vrai sa -- gouin
+  le ba -- o -- ba -- bouin
+
+  \dash là -- bas ou \dash là -- haut
+  vo -- yez les é -- bats
+  du ba -- o -- ba -- bouin
+
+  il fait du mé -- lo
+  pour une pêche mel -- ba
+  le ba -- o -- ba -- bouin
+
+  il fait un sa -- bbat
   a -- vec ses sa -- bots
-  Le ba -- o -- ba -- bouin
-  Il va \dash d’Saint -- Ma -- lo
-  En A -- la -- ba -- ma
-  Le ba -- o -- ba -- bouin
-  Il pince comme un crabe
-  Comme un ma -- rin -- gouin
-  Le ba -- o -- ba -- bouin_!
+  le ba -- o -- ba -- bouin
+
+  il va \dash d’Saint -- Ma -- lo
+  en A -- la -- ba -- ma
+  le ba -- o -- ba -- bouin
+
+  il pince comme un crabe
+  comme un ma -- rin -- gouin
+  le ba -- o -- ba -- bouin_!
 }
 
 \layout {
