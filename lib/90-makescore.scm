@@ -19,7 +19,9 @@
 
 (define numbers #f)
 (define conf:structure numbers)
-(define *has-pagebreak* (make-parameter #f))
+(define *pagebreak-after* (make-parameter #f))
+(define *pagebreak-before* (make-parameter #f))
+
 ; This is admittedly ugly.
 (define pagebreak
   (make-music 'EventChord 'elements
@@ -100,7 +102,13 @@ current-part music."
          (if (string-suffix? "|" part)
              (let* ((num (ls-index part struct))
                     (trimmed (string-drop-right part 1)))
-               (*has-pagebreak* #t)
+               (*pagebreak-after* #t)
+               (set! part trimmed)
+               (list-set! struct num trimmed)))
+         (if (string-prefix? "|" part)
+             (let* ((num (ls-index part struct))
+                    (trimmed (string-drop part 1)))
+               (*pagebreak-before* #t)
                (set! part trimmed)
                (list-set! struct num trimmed)))
          (if (string-suffix? (or ".ly" ".ily") part)
@@ -123,10 +131,12 @@ current-part music."
 
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score layout)
-                 (if (*has-pagebreak*) (add-music parser pagebreak))
+                 (if (*pagebreak-before*) (add-music parser pagebreak))
                  (add-score parser score)
+                 (if (*pagebreak-after*) (add-music parser pagebreak))
                  (*has-timeline* #f)
-                 (*has-pagebreak* #f)
+                 (*pagebreak-before* #f)
+                 (*pagebreak-after* #f)
                  output-redirect))))
 
            struct)
