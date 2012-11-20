@@ -63,9 +63,9 @@ current-part music."
 ;; the output-dir directory.  If book-filename has already
 ;; been defined by the user, just keep it, otherwise it
 ;; will be named after the score directory's name in scores/."
-  (set! book-filename
-        (let* ((orig-filename (if (defined-string? 'book-filename)
-                                  book-filename
+  (set! output-filename
+        (let* ((orig-filename (if (defined-string? 'output-filename)
+                                  output-filename
                                   (ly:parser-output-name parser)))
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
