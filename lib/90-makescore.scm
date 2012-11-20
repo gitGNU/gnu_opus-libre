@@ -124,13 +124,14 @@ current-part music."
 
                (let* ((music (apply-skel (cons part arg) lang:instruments))
                       (score (scorify-music music parser))
-                      (layout (ly:output-def-clone $defaultlayout))
+                      (local-layout (make-this-layout part lang:layout))
+                      (layout $defaultlayout)
                       (header (make-module))
                       (title (make-this-text part lang:title-suffix)))
-                 (module-define! header 'piece title)
 
+                 (module-define! header 'piece title)
                  (ly:score-set-header! score header)
-                 (ly:score-add-output-def! score layout)
+                 (ly:score-add-output-def! score (if local-layout local-layout layout))
                  (if (*pagebreak-before*) (add-music parser pagebreak))
                  (add-score parser score)
                  (if (*pagebreak-after*) (add-music parser pagebreak))
