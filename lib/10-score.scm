@@ -68,4 +68,4 @@ A blank score will be created instead.")
 
 (define-public *current-part* (make-parameter ""))
 
-(define-public book-filename "")
+(define-public output-filename "")

@@ -19,7 +19,9 @@
 
 (define numbers #f)
 (define conf:structure numbers)
-(define *has-pagebreak* (make-parameter #f))
+(define *pagebreak-after* (make-parameter #f))
+(define *pagebreak-before* (make-parameter #f))
+
 ; This is admittedly ugly.
 (define pagebreak
   (make-music 'EventChord 'elements
@@ -61,9 +63,9 @@ current-part music."
 ;; the output-dir directory.  If book-filename has already
 ;; been defined by the user, just keep it, otherwise it
 ;; will be named after the score directory's name in scores/."
-  (set! book-filename
-        (let* ((orig-filename (if (defined-string? 'book-filename)
-                                  book-filename
+  (set! output-filename
+        (let* ((orig-filename (if (defined-string? 'output-filename)
+                                  output-filename
                                   (ly:parser-output-name parser)))
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
@@ -100,7 +102,13 @@ current-part music."
          (if (string-suffix? "|" part)
              (let* ((num (ls-index part struct))
                     (trimmed (string-drop-right part 1)))
-               (*has-pagebreak* #t)
+               (*pagebreak-after* #t)
+               (set! part trimmed)
+               (list-set! struct num trimmed)))
+         (if (string-prefix? "|" part)
+             (let* ((num (ls-index part struct))
+                    (trimmed (string-drop part 1)))
+               (*pagebreak-before* #t)
                (set! part trimmed)
                (list-set! struct num trimmed)))
          (if (string-suffix? (or ".ly" ".ily") part)
@@ -116,17 +124,20 @@ current-part music."
 
                (let* ((music (apply-skel (cons part arg) lang:instruments))
                       (score (scorify-music music parser))
-                      (layout (ly:output-def-clone $defaultlayout))
+                      (local-layout (make-this-layout part lang:layout))
+                      (layout $defaultlayout)
                       (header (make-module))
                       (title (make-this-text part lang:title-suffix)))
-                 (module-define! header 'piece title)
 
+                 (module-define! header 'piece title)
                  (ly:score-set-header! score header)
-                 (ly:score-add-output-def! score layout)
-                 (if (*has-pagebreak*) (add-music parser pagebreak))
+                 (ly:score-add-output-def! score (if local-layout local-layout layout))
+                 (if (*pagebreak-before*) (add-music parser pagebreak))
                  (add-score parser score)
+                 (if (*pagebreak-after*) (add-music parser pagebreak))
                  (*has-timeline* #f)
-                 (*has-pagebreak* #f)
+                 (*pagebreak-before* #f)
+                 (*pagebreak-after* #f)
                  output-redirect))))
 
            struct)
