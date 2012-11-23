@@ -16,7 +16,7 @@ PianoInstr = "Piano"
 
 \header {
   title = \Titre
-  subtitle = "pour tuba et piano"
+  subtitle = "pour tuba (ou saxhorn) et piano"
   composer = "Valentin Villenave"
   date = "printemps 2009 - automne 2012"
 }
@@ -66,7 +66,7 @@ PianoInstr = "Piano"
         Gravure réalisée au moyen du logiciel libre
         \with-url #"http://www.LilyPond.org"
         \concat {\bold "GNU LilyPond" ,}
-        \concat { $(string-append "version " (lilypond-version) ".") } 
+        \concat { $(string-append "version " (lilypond-version) ".") }
       }
     }
   }
@@ -335,101 +335,118 @@ DeuxTuba =
  %% Transpose
  \smart \transpose do re
  \relative do' {
+  \tempo Cool 4 = 56~66
   \clef bass
   \time 4/4
-  fa,,8. la16 r4 solb8. lab16 r4 |
+  fa,,8.-.--\p la16-.-- r4 solb8.-.-- lab16-.-- r4 |
   \time 3/4
-  r8 fa r la r16 solb8 lab16 |
+  r8 fa-.-- r la-.-- r16 solb8-.-- lab16-.-- |
   \time 2/4
   R2
   \time 4/4
-  fa8. la16 r4 solb8. lab16 r4 |
+  fa8.-.-- la16-.-- r4 solb8.-.-- lab16-.-- r4 |
   \time 3/4
-  r8 fa r16 la8 solb16 r8 lab |
+  r8 fa-.-- r16 la8( solb16) r8 lab-.-- |
   \time 2/4
   R2
   \time 4/4
-  fa8. la16 r16 mib' reb8 solb,8. lab16 r mi'8 do16 |
-  fa,8 la r16 mib'8 reb16 solb, lab mi' do sib re si sol |
-  fa8. la16 r4 solb8 lab mib'16 reb mi do |
-  fa,8. la16 r mib' reb8 solb, lab r16 mi'8 do16 |
-  fa,8. la16 r mib' reb8~ reb16 solb, lab mi'~ mi8 do |
-  fa,8 la dod16 si8. solb8 lab r16 re8 sib16 |
-  re' fad red si~ si do sib8 la16 dod sold mi~ mi8 fa16 sol |
-  red'16 fad re si~ si fa8 sol16 sold mi la dod~ dod do sib8 |
-  re16 fad red si~ si sol \t {la sib do} mi sold mi dod~ dod4 |
-  r16 dod,, \t {sol' sib mi}
-  \tttt {fa la sold do si mib re} fad4 sold8 mid |
-  la4. r16 la~ la2~ | la8 r r4 r2 |
-  \stemUp \xNote la,4^"(snap)" \xNote la \stemNeutral
-  r16 fa, fa fa fa fa fa fa |
-  r4 \stemUp \xNote la'4 \stemNeutral r8 si,16 si si si si si |
-  r lab lab lab lab lab mi' mi mi mi r8 r dod16 dod |
-  dod4 r8 sol'16 sol mib fad fad8 do16 do do do |
-  r4 la16 la la la la la la la r4 |
-  r16 sib' sib sib sib sib sib sib sib sib sib sib sib8 r16 re, |
+  fa8.-.--\p la16-. r16 mib'(\mf reb8)
+  solb,8.-.--\p lab16-. r mi'8(\mf do16) |
+  fa,8-.--^"simile" la-. r16 mib'8( reb16)
+  solb,-. lab-. mi'(\mf\> do) sib-. re-. si-. sol-. |
+  fa8.-.--\p la16-. r4
+  solb8-- lab-- mib'16(\mf reb) mi-. do-. |
+  fa,8.-.-- la16-. r mib'( reb8)
+  solb,-. lab-. r16 mi'8->( do16) |
+  fa,8.-.-- la16-. r mib'( reb8~
+  reb16 solb,) lab-. mi'~->( mi8 do) |
+  fa,8-.-- la-. reb16->( dob8.)
+  solb8-. lab-. r16 re8->( sib16) |
+  re'(\mf solb) mib-. dob--~ dob do(\p sib8)
+  la16(\mf reb) lab-. fab--~ fab8 fa16(\p sol) |
+  mib'16(\mf solb) re-. si--~ si fa8->( sol16)
+  lab(\< mi) la-. reb--~\! reb do(\p sib8) |
+  re16( solb) mib-. dob--~ dob sol-.\< \t {la( sib do)}
+  mi(\! lab) fab-. reb--~ reb4 |
+  r16 reb,,--\< \t {sol( sib) mi}
+  \tttt {fa( la) sold do( si) mib( re)} solb4-- lab8-- fa-- |
+  la4.->--\ff r16 la->--~ la2~^"ten." | la8 r r4 r2 |
+  \stemUp \xNote la,4->\f ^"(snap)" \xNote la-> \stemNeutral
+  r16 fa,\mp\< ^"(très détaché)" fa fa fa fa fa fa\! |
+  r4 \stemUp \xNote la'4-> \stemNeutral
+  r8 si,16\< si si si si si\! |
+  r lab\< lab lab lab lab\! mi'-> mi->
+  mi-> mi-> r8 r dod16\mp dod |
+  dod4-. r8 sol'16-. sol-.
+  mib-. solb-. solb8-. do,16\< do do do\! |
+  r4 la16\< la la la la la la la\! r4 |
+  r16 sib'\pp\< sib sib sib sib sib sib
+  sib sib sib sib sib8\! r16 re,\f\> |
   \time 3/4
-  re re re re re re re re re re re re |
+  re re re re re re re re re re re re\! |
   \time 4/4
-  sib' re si sol~ sol4 r8 mib16 reb r mi do8 |
-  sib'16 re si sol~ sol4. r8 mib16 reb mi do |
-  mib' sol mi do~ do4 r8
-  \stemUp \xNote la \stemNeutral r \stemUp \xNote la \stemNeutral |
-  sib8. re16~ re8 si r sol4. |
-  do,,16 la' \t {sib mi fa} \tttt {lab solb la si re do red} mi4. r8 |
-  \t {sold4 sol si~} si2~ si2. r4 |
+  sib'(\mf re) si-. sol--~ sol4 r8 mib16(\p reb) r mi( do8) |
+  sib'16(\mf re) si-. sol--~ sol4. r8 mib16(\p reb) mi-. do-. |
+  mib'(\f sol) mi-. do--~ do4 r8
+  \stemUp \xNote la-> \stemNeutral
+  r \stemUp \xNote la-> \stemNeutral |
+  sib8.--\(\mp\> re16--~ re8 si-- r sol4.--\)\! |
+  do,,16--\< la'-. \t {sib( mi) fa}
+  \tttt {lab( solb) la( si) re do red} mi4.-- r8 |
+  \t {lab4->--\ff sol->-- si->--~} si2~^"ten." si2. r4 |
   \time 3/4
-  r8 do,, r16 re8 red16 r8 si |
+  r8 do,,-.\mp r16 re8-. red16-. r8 si-. |
   \time 2/4
-  \stemUp \xNote la'4 \xNote la \bar "|."
+  \stemUp \xNote la'4\p \xNote la \bar "|."
 }
 
 TroisTuba =
  %% Transpose
  \smart \transpose do re
  \relative do' {
+  \tempo Lento 4 = 48~56
   \clef bass
   \time 3/4
   R2.*2
-  mib,8 fa mib fa mib fa |
-  r mib fa sib, lab' reb |
-  mib, fa mib fa mib fa |
-  r fa sib, mib, sol' do, |
-  reb mib reb mib reb mib |
-  r4 reb8 mib r sib |
-  si' dod si dod si dod |
-  r mib, fa sib re, mi |
-  si' dod4. lab,8 sib |
-  si' dod4 lab,8 \t {re, la' mi'} |
-  fad si dod4 fad~ fad2 r4 |
+  mib,8\((\mp fa) mib( fa) mib( fa) |
+  r mib(^"senza cresc." fa sib,) lab'( reb)\) |
+  mib,\(( fa) mib( fa) mib( fa) |
+  r fa( sib, mib,) sol'( do,)\) |
+  reb\((\dyn "p_dolce" mib) reb( mib) reb( mib)\) |
+  r4 reb8( mib) r sib-. |
+  dob'(\< reb) dob( reb) dob( reb)\mp |
+  r mib,( fa sib) re,( mi) |
+  dob'(\< reb4.)\! lab,8(\< sib |
+  dob' reb4)\! lab,8 \t {re,( la' mi')} |
+  solb(\< dob reb4) solb--~\dyn "p_sub." solb2^"ten." r4 |
 
-  r2 mi,?4~ mi8 fad4. r4 |
-  mib8 fa mib fa r4 |
-  mib8 fa re mib do re |
-  mib fa mib fa r re |
-  mib si do re mib fa |
-  solb lab solb lab r mi, |
-  si' solb' lab mi, \t {do sol' re'} |
-  la'4. si8~ si4 |
-  r8 la si la si4 |
-  la8 si fad, sold la' si~ |
-  \t {si mib, fa} mi'4 la~ |
-  la r8 la,, sib,4~ |
-  sib2.~
+  r2 fab,4~\p( fab8 solb4.) r4 |
+  mib8(\mp fa) mib( fa) r4 |
+  mib8( fa re mib^"espr." do re |
+  mib fa) mib( fa) r re( |
+  mib) si(\< do re mib fa |
+  solb lab)\> solb( lab)\! r fab,( |
+  dob') solb'( lab) mi, \t {do(\< sol' re')} |
+  la'4.->--\mf si8~->-- si4 |
+  r8 la( si) la( si4) |
+  la8( si) solb,(\< lab la' si)~ |
+  \t {si\! mib,(\< fa} mi'4)-- la--~\! |
+  la r8 la,,(\p sib,4~) |
+  sib2.~^"ten."
 
-  sib4 r2 | sol''2 r4 |
-  mib8 fa r4 r8 mib |
-  r fa r si,? do re |
-  mib fa r4 mib8 fa |
-  r sol, r re' reb mib |
-  si dod r si' dod si, |
-  dod' si dod4 r |
-  r8 si dod sol' sol, la |
-  la, sol' sol, la' r sol, |
-  la sol la fad fa sol |
-  mib4. fa8 mib' fa |
-  mib fa mib fa mib fa |
-  r4 r8 do' re,4\fermata \bar "|."
+  sib4 r2 | sol''2-- r4 |
+  mib8(\mp fa) r4 r8 mib-- |
+  r fa-- r si,( do) re |
+  mib( fa) r4 mib8( fa) |
+  r sol,-- r re' reb( mib) |
+  dob( reb) r dob'( reb dob, |
+  reb'^"espr." dob reb4--) r |
+  r8 si(\> dod sol') sol,( la) |
+  la,\(( sol') sol,( la')\! r sol,(\> |
+  la) sol( la) solb fa( sol)\) |
+  mib4.(\mp fa8 mib' fa) |
+  mib( fa) mib( fa) mib( fa) |
+  r4 r8 do'(\pp re,4)\fermata \bar "|."
 }
 
 QuatreTuba =
@@ -437,127 +454,150 @@ QuatreTuba =
  \smart \transpose do re
  \relative do' {
   \clef bass
-  \t {fa8 fa fa} \t {do do do}
+  \t {fa8-.\f( fa-. fa-.} \t {do-. do-. do-.)}
+  \t {fa(-. fa-. fa-.} \t {do-. do-. do-.)} |
+  \t {fa(-. fa-. fa-.} \t {do-. do-. do-.)}
+  \t {mib(-. mib-. mib-.} \t {sib-. sib-. sib-.)} |
+  \tupletsOff
+  \t {fa'^"simile" fa fa} \t {do do do}
+  \t {fa fa fa} \t {do do do}
+  \t {mib(-. mib-. mib-.)} \t {sib(\< mib) sib-.} |
+  fa4--\! r r2 | R1 R1.
+  \tupletsOn
+  \t {fa8(\mp sib lab} \t {sib fa mib}
+  \tupletsOff
+  \t {fa sib, fa'} \t {mib lab sib)} |
+  \t {lab( reb dob} \t {reb lab solb}
+  \t {lab reb, dob} \t {reb lab' reb)} |
+  \t {si(\< mi re} \t {sol)\! fad,(\< si}
+  \t {la re sol\!)} \tupletsOn \t {r fa,(\< sib}
+  \tupletsOff
+  \t {mi reb sol)\!} \tupletsOn \t {r reb,(\< lab')} |
+  \t {fa'(-.\f fa-. fa-.} \t {do-. do-. do-.)}
+  \t {fa(-. fa-. fa-.} \t {do-. do-. do-.)}
+  \tupletsOff
+  \t {mib^"simile" mib mib} \t {sib sib sib} |
+  \t {fa' fa fa} \t {do do do}
   \t {fa fa fa} \t {do do do} |
   \t {fa fa fa} \t {do do do}
-  \t {mib mib mib} \t {sib sib sib} |
-  \t {fa' fa fa} \t {do do do}
-  \t {fa fa fa} \t {do do do}
-  \t {mib mib mib} \t {sib mib sib} |
-  fa4 r r2 | R1 R1.
-  \t {fa8 sib lab} \t {sib fa mib}
-  \t {fa sib, fa'} \t {mib lab sib} |
-  \t {sold dod si} \t {dod sold fad}
-  \t {sold dod, si} \t {dod sold' dod} |
-  \t {si mi re} \t {sol fad, si}
-  \t {la re sol} \t {r fa, sib}
-  \t {mi reb sol} \t {r reb, lab'} |
-  \t {fa' fa fa} \t {do do do}
-  \t {fa fa fa} \t {do do do}
-  \t {mib mib mib} \t {sib sib sib} |
-  \t {fa' fa fa} \t {do do do}
+  \t {mib mib mib} \t {sib(\< mib) sib} |
+  \tupletsOn
+  fa4--\! r r2 r4 \t {mib8(\dyn "f_sempre" sib') mib,} |
+  fa,4->-- r r \t {mib'8( lab) fa,->} |
+  r2 \t {mib8-> fa-> r} r4 |
+  \t {mib'8(\p lab solb} \t {lab mib reb}
+  \tupletsOff
+  \t {mib sib fa'} \t {mib sib' do)}
+  \t {la( re do} \t {re) sib,(\< mib} |
+  \t {la re do} \t {re)\! mib, sib}
+  \t {la'(\< re do} \tupletsOn \t {fa)\! r sib,,} |
+  \tupletsOff
+  \t {la'(\< re do} \tupletsOn \t {fa)\! r sib,,}
+  \tupletsOff
+  \t {la'\< mi re'\!} \tupletsOn \t {r sib( do)} |
+  \tupletsOff
+  \t {fa\ff fa fa} \t {do do do}
   \t {fa fa fa} \t {do do do} |
-  \t {fa fa fa} \t {do do do}
-  \t {mib mib mib} \t {sib mib sib} |
-  fa4 r r2 r4 \t {mib8 sib' mib,} |
-  fa,4 r r \t {mib'8 lab fa,} |
-  r2 \t {mib8 fa r} r4 |
-  \t {mib'8 lab solb} \t {lab mib reb}
-  \t {mib sib fa'} \t {mib sib' do}
-  \t {la re do} \t {re sib, mib} |
-  \t {la re do} \t {re mib, sib}
-  \t {la' re do} \t {fa r sib,,} |
-  \t {la' re do} \t {fa r sib,,}
-  \t {la' mi re'} \t {r sib do} |
-  \t {fa fa fa} \t {do do do}
-  \t {fa fa fa} \t {do do do} |
-  r2 \t {mib8 mib mib} \t {sib sib sib}
-  r4 \t {sib8 mib sib} |
-  \t {do fa do} fa,4
-  \t {sib8 mib sib} \t {fa do sol} |
+  r2 \t {mib8\mf mib mib} \t {sib sib sib}
+  r4 \t {sib8( mib) sib} |
+  \t {do( fa) do} fa,4--
+  \t {sib8( mib) sib} \t {fa\< do sol} |
 
-  reb2.~ reb2 r4 | R2.
-  reb2 mib4~ mib2 r4 |
-  reb'4~ \t {reb8 mib reb} mib4~ mib2 r4 |
-  \t {r4 si'' fad} \t {mi8 la sol} |
-  re2 r4 |
-  sib'!4. fa!~ fa2.~ |
-  fa8 r mib2 |
-  sib'4~ \t {sib8 do sib} do4~ |
-  do2 fa,4~ fa2 r4 |
-  \t {r4 sib fa} \t {mib8 lab solb} |
-  reb2. |
-  si8 mi re la \t {dod si sold} |
-  fad4. mi8 fad4~ fad2 r4 |
-  mi4~ \t {mi8 fad mi} fad4~ |
-  fad2 r4 |
-  mi,2 fad4~ fad2 r4 |
-  si,4. fad8 si fad |
-  mi' si la' fad, r4 |
-  \t {mi'8 la re} sol4 r |
+  \tupletsOn
+  reb2.->--\f~ ^"ten." reb2 r4 | R2.
+  reb2(\p mib4)~ mib2 r4 |
+  reb'4(\p~ \t {reb8 mib reb} mib4)~ mib2 r4 |
+  \t {r4 si''(\mf fad)} \t {mi8( la sol} |
+  re2)-- r4 |
+  sib'!4.(\p\> fa!)\!~ fa2.~ ^"ten." |
+  fa8 r mib2-- |
+  sib'4~(\< \t {sib8 do sib} do4)~\mf |
+  do2 fa,4--~ fa2 r4 |
+  \t {r4 sib(\> fa)} \t {mib8( lab solb} |
+  reb2.)\! |
+  si8-- mi-- re-- la-- \t {reb(\> dob lab)} |
+  solb4.--\mp fab8( solb4)~ solb2 r4 |
+  fab4(~ \t {fab8 solb fab} solb4)~ |
+  solb2 r4 |
+  fab,2(\p solb4)~ solb2 r4 |
+  dob,4.--\dyn "mf_pesante" solb8-- dob-- solb-- |
+  fab'-- dob-- la'-- solb,-- r4 |
+  \t {mi'8(\< la) re->} sol4->\! r |
 
-  \t {fa'8 fa fa} \t {do do do}
-  \t {fa fa fa} \t {do do do} |
-  \t {mib mib mib} \t {sib sib sib} \t {mib sib mib} |
-  \t {fa fa fa} \t {do do do} \t {fa do fa} |
+  \t {fa'8(\f fa fa} \t {do do do)}
+  \t {fa( fa fa} \t {do do do)} |
+  \tupletsOff
+  \t {mib mib mib} \t {sib sib sib} \t {mib( sib) mib} |
+  \t {fa fa fa} \t {do do do} \t {fa( do) fa} |
   \t {mib mib mib} \t {sib sib sib}
-  \t {mib mib mib} \t {sib mib sib} |
-  fa4 r r2 |
-  dod,4 sol8 dod r4 |
-  \t {dod'8 fad mi} \t {fad red dod} |
-  \t {red la si} \t {dod red fa} \t {sol do sib} |
-  \t {do fa mib} \t {sol fa la} |
-  si4 r2 |
-  r4 dod,,, r8 la''16 dod r4 |
-  \t {fa8 fa fa} \t {do do do}
-  \t {fa fa fa} \t {do do do} |
+  \t {mib mib mib} \t {sib( mib) sib} |
+  fa4-- r r2 |
+  reb,4--\f sol,8-. reb'-. r4 | \tupletsOn
+  \t {reb'8(\mp \cresc solb fab} \t {solb mib reb} |
+  \tupletsOff
+  \t {mib la, si} \t {reb mib fa)} \t {sol( do) sib} |
+  \t {do( fa) mib} \t {sol\< fa la} |
+  si4->--\sfz r2 |
+  r4 reb,,,-.\f r8 la''16( reb) r4 | \tupletsOn
+  \t {fa8\dyn "p_leggierissimo" fa fa} \t {do do do}
+  \tupletsOff \t {fa fa fa} \t {do do do} |
   \t {mib mib mib} \t {sib sib sib} \t {fa' fa fa} |
-  \t {do do do} \t {fa fa fa} \t {do do fa} |
-  r4 \t {sib,8 mib sib} \t {fa do sol'} \t {re la mi} |
+  \t {do do do} \t {fa\< fa fa} \t {do do fa\!} |
+  r4 \t {sib,8\< ^"(détaché)" mib sib}
+  \t {fa do sol'} \t {re la mi} |
 
-  fa,1~ fa2. r4 |
-  mib''4. fa8~ fa2~ fa4 r r2 |
-  sib'2 fa~ fa4 r mib2 |
-  sib'4~ \t {sib8 do sib} do4 fa,~ |
+  \tupletsOn
+  fa,1~--\ff fa2. r4 |
+  mib''4.->\f fa8~-> fa2~^"ten." fa4 r r2 |
+  sib'2--\f fa~-- fa4 r mib2-- |
+  sib'4~(\< \t {sib8 do sib} do4)\! fa,--~ |
   fa2. r4 |
-  sib8 do \t {fa, mib lab} solb2~ |
-  solb4 r reb2 |
-  solb4. dod,8~ \t {dod fad mi} fad4~ |
-  fad2 r4 sold,8 dod |
-  fad4 mi,~ \t {mi8 la, si'} fad'4~ |
-  fad r \t {do8 fa sib} \t {lab mib sib} |
-  \t {lab reb fad} \t {mi si fad}
-  \t {mi la re} \t {do sol re} |
-  \t {do fa sib} \t {lab mib sib} fa4 r |
+  sib8( do) \t {fa,( mib lab} solb2)~ |
+  solb4 r reb2-- |
+  solb4.--\> reb8--~ \t {reb( solb fab} solb4)~ |
+  solb2\! r4 lab,8( reb) |
+  solb4--\mf mi,--~ \t {mi8 la,-. dob'-.} solb'4~-> |
+  solb r \t {do,8\mp\< fa sib} \t {lab mib sib} |
+  \tupletsOff
+  \t {lab reb solb} \t {fab dob solb}
+  \t {mi\f\> la re} \t {do sol re} |
+  \t {do fa sib} \t {lab mib sib} fa4--\! r |
 
-  \t {fa''8 fa fa} \t {do do do}
-  \t {fa fa fa} \t {do do do} |
+  \tupletsOn
+  \t {fa''8(\f fa fa} \t {do do do)}
+  \t {fa( fa fa} \t {do do do)} |
+  \tupletsOff
   \t {mib mib mib} \t {sib sib sib}
-  \t {fa' sib, mib} \t {do, fa sib}
-  \t {mib do, fa} \t {sib do mib} |
+  \t {fa' sib, mib} \t {do,( fa) sib}
+  \t {mib do,( fa)} \t {sib( do mib)} |
   \t {fa fa fa} \t {do do do}
-  \t {mib mib mib} \t {sib mib sib} |
-  fa4 r r1 | R1*2
-  \t {si,8 mi re} \t {mi si la}
-  \t {si mi, fad} \t {lab sib do}
-  \t {re sol fa} \t {sol mi re} |
-  \t {fa fa mi} \t {mi re re}
-  \t {fa fa fa} \t {mi mi mi} |
-  \t {re re re} \t {sol sol sol}
-  \t {mi mi mi} \t {la la la} |
-  si4 r \t {fa,8 fa fa} si,4 r2 |
-  fa'''4 do mib sib reb lab si r |
-  fa,8 fa' do fa do mib sib fa |
+  \t {mib mib mib} \t {sib( mib) sib} |
+  fa4-- r r1 | R1*2
+  \tupletsOn
+  \t {si,8(\p mi re} \t {mi si la}
+  \tupletsOff
+  \t {si) mi,(\< fad} \t {lab sib do)}
+  \t {re(\! sol fa} \t {sol mi re)} |
+  \t {fa-> fa mi->} \t {mi re-> re}
+  \t {fa-> fa fa} \t {mi-> mi mi} |
+  \t {re->\< re re} \t {sol-> sol sol}
+  \t {mi-> mi mi} \t {la-> la la} |
+  \tupletsOn
+  si4->\mf r \t {fa,8-. fa-. fa-.} si,4-. r2 |
+  fa'''4--\f do-- mib-- sib-- reb-- lab-- si-- r |
+  fa,8\dyn "p_staccato leggiero"
+  fa' do fa do mib sib fa |
   fa' do fa do mib sib fa fa' |
   r fa do mib sib fa fa' do fa do mib sib |
   fa si fad si fad la mi si |
-  dod' r dod sold si fad dod red' |
-  lad red r dod sold mi' si mi si re la4 |
-  \t {fa''8 fa fa} \t {do do do}
+  reb' r reb lab dob solb reb mib' |
+  sib\cresc mib r reb lab mi' si mi si re la4-. |
+  \t {fa''8\f fa fa} \t {do do do}
+  \tupletsOff
   \t {fa fa fa} \t {do do do} |
-  \t {mib sib mib} \t {fa, do fa}
-  \t {sib fa sib} \t {do sol do} |
-  \t {fa, sol do} \t {re mib, sib'}
-  \t {do fa re} \t {sol fa la} si4 fa,, |
+  \t {mib( sib) mib} \t {fa,( do) fa}
+  \t {sib( fa) sib} \t {do( sol) do} |
+  \t {fa,(\< sol do} \t {re) mib,( sib'}
+  \t {do fa) re-.} \t {sol-. fa-. la-.} si4->-.\!
+  fa,,->-.\sfz |
 }
-

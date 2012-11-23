@@ -2,3 +2,4 @@
 % (c) 2009 - 2012 Valentin Villenave <valentin@villenave.net>
 
 structure = '("Un" "Deux" "Trois" "Quatre")
+
