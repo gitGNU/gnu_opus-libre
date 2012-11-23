@@ -54,7 +54,7 @@ markup exists."
 (define (make-this-layout name suffix)
   "Associate NAME with SUFFIX, and check if a local \\layout{} block
 exists with that name.  If so, parse it."
-  (let* ((fullname (string-append name suffix))
+  (let* ((fullname (string-append name (string-capitalize suffix)))
          (def (ly:parser-lookup parser (string->symbol fullname))))
     (if (ly:output-def? def)
         (begin (ly:debug-message "Using layout definition from variable ~a" fullname)
