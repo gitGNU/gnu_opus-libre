@@ -33,7 +33,7 @@
 (define modern-script-alist
   (let* ((new-alist default-script-alist)
          (set-prio! (lambda (script prio) (assoc-set! new-alist script
-                              (acons 
+                              (acons
                                     'script-priority prio
                                      (assoc-get script default-script-alist))))))
      ;(set-prio! "staccato" -100)
@@ -42,7 +42,7 @@
      new-alist))
 
 (define modern-time-signature-settings
-  (append default-time-signature-settings
+  (append
     '(
       ((3 . 16) .
                 ((baseMoment . (3 . 16))))
@@ -52,6 +52,28 @@
                 ((baseMoment . (4 . 16))))
       ((2 . 8) .
                 ((baseMoment . (2 . 8))))
+      ((3 . 8) .
+                ((beamExceptions . ((end . (((1 . 8) . (3))))))))
+      ((4 . 8) .
+                ((beatStructure . (2 2))))
+      ((5 . 8) .
+                ((beatStructure . (3 2))))
+      ((8 . 8) .
+                ((beatStructure . (3 3 2))))
       ((7 . 8) .
                 ((baseMoment . (4 . 8))))
-    )))
+      ((3 . 4) .
+                ((beamExceptions . ((end . (((1 . 8) . (2 2 2))
+                                            ((1 . 12) . (3 3 3))))))))
+      ((4 . 4) .
+                ((beamExceptions . ((end . (((1 . 8) . (4 4))
+                                            ((1 . 12) . (3 3 3 3))))))))
+      ((6 . 4) .
+                ((beamExceptions . ((end .  (((1 . 16) . (4 4 4 4 4 4))))))))
+      ((2 . 2) .
+                ((beamExceptions . ((end . (((1 . 12) . (3 3 3 3))))))))
+      ((3 . 2) .
+                ((beamExceptions . ((end .  (((1 . 12) . (3 3 3 3 3 3))))))))
+      ((4 . 2) .
+                ((beamExceptions . ((end . (((1 . 16) . (4 4 4 4 4 4 4 4))))))))
+    ) default-time-signature-settings))
