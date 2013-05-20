@@ -84,6 +84,7 @@
 \once \override NoteHead #'transparent = ##t
 \once \override NoteHead #'no-ledgers = ##t
 \once \override Stem #'transparent = ##t
+\once \override Flag #'transparent = ##t
 \once \override Beam #'transparent = ##t
 \once \override Accidental #'transparent = ##t
 #})
@@ -137,6 +138,7 @@ $x
 \once \override TabNoteHead #'font-size = #-4
 \once \override Dots #'font-size = #-3
 \once \override Stem #'length-fraction = #0.8
+\once \override Flag #'font-size = #-3
 %% \once \override Stem #'no-stem-extend = ##t
 \once \override Beam #'beam-thickness = #0.384
 \once \override Beam #'length-fraction = #0.8
@@ -153,6 +155,7 @@ $x
   #{
 %% \override Stem #'direction = #UP %% Nope.
 \override Stem #'font-size = #-3
+\override Flag #'font-size = #-3
 \override NoteHead #'font-size = #-3
 \override TabNoteHead #'font-size = #-4
 \override Dots #'font-size = #-3
@@ -187,15 +190,18 @@ $x
 (define lightBeam #{
 \once \override Beam #'beam-thickness = #0.384
 \once \override Beam #'gap = #0.5
+\override Flag #'font-size = #-3
 #})
 
 (define lightBeams
   (define-music-function (parser location x) (ly:music?) #{
 \override Beam #'beam-thickness = #0.384
 \override Beam #'gap = #0.5
+\override Flag #'font-size = #-3
 $x
 \revert Beam #'beam-thickness
 \revert Beam #'gap
+\revert Flag #'font-size
 #}))
 
 (define longHairpin #{
