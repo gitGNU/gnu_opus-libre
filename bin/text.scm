@@ -108,7 +108,7 @@
     (make-hairpin-text DOWN text)))
 
 (define startText
-  (define-music-function (location parser txt) (markup?)
+  (define-event-function (parser location txt) (markup?)
      (make-text-span txt)))
 
 ;; for consistency only.
