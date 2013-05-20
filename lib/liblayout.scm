@@ -45,13 +45,13 @@
   (append
     '(
       ((3 . 16) .
-                ((baseMoment . (3 . 16))))
+                ((baseMoment . 3/16)))
       ((5 . 16) .
-                ((baseMoment . (3 . 16))))
+                ((baseMoment . 3/16)))
       ((7 . 16) .
-                ((baseMoment . (4 . 16))))
+                ((baseMoment . 4/16)))
       ((2 . 8) .
-                ((baseMoment . (2 . 8))))
+                ((baseMoment . 2/8)))
       ((3 . 8) .
                 ((beamExceptions . ((end . (((1 . 8) . (3))))))))
       ((4 . 8) .
@@ -61,7 +61,7 @@
       ((8 . 8) .
                 ((beatStructure . (3 3 2))))
       ((7 . 8) .
-                ((baseMoment . (4 . 8))))
+                ((baseMoment . 4/8)))
       ((3 . 4) .
                 ((beamExceptions . ((end . (((1 . 8) . (2 2 2))
                                             ((1 . 12) . (3 3 3))))))))
