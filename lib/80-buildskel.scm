@@ -112,7 +112,7 @@ exists with that name.  If so, parse it."
                                       \filterDynamics $m
                                    #}))))))
            str-list)
-      (if (not (null? ret-list))
+      (if (not-null? ret-list)
           (make-simultaneous-music ret-list)
           (make-music 'Music 'void #t)))))
 

@@ -31,6 +31,8 @@
  ; parameters
  (srfi srfi-39))
 
+(define-public (not-null? x) (not (null? x)))
+(define-public (false-or-null? x) (or (not x) (null? x)))
 
 (define-public (ly:debug-message string . rest)
    (if (ly:get-option 'verbose)
@@ -86,7 +88,7 @@
     (sort (do-dir dir '()) string<?)))
 
 ;; Automatic includes ---------------------------------------------;
-(define-public (false-or-null? x) (or (not x) (null? x)))
+
 (define-public (include-scm dir . numbered?)
   "Load all Scheme files in DIR. If NUMBERED is set,
  load only numbered files."
