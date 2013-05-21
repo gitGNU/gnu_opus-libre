@@ -24,17 +24,26 @@
 ;; TODO: use make-simple-function everywhere possible.
 
 ;; Rhythm shortcuts -----------------------------------------------;
-(make-simple-function lang:tuplet-letter ; default: \t
-                      #{ \times 2/3 $x #})
+(make-function lang:tuplet-letter ; default: \t
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 3/2 $(if (not-null? span) span) $music #}))
 
-(make-simple-function lang:tuplet-letter-double ; \tt
-                      #{ \times 4/5 $x #})
+(make-function lang:tuplet-letter-double ; \tt
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 5/4 $(if (not-null? span) span) $music #}))
 
-(make-simple-function lang:tuplet-letter-triple ; \ttt
-                      #{ \times 4/6 $x #})
+(make-function lang:tuplet-letter-triple ; \ttt
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 6/4 $(if (not-null? span) span) $music #}))
 
-(make-simple-function lang:tuplet-letter-quad ; \tttt
-                      #{ \times 4/7 $x #})
+(make-function lang:tuplet-letter-quad ; \tttt
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 7/4 $(if (not-null? span) span) $music #}))
+
 
 ;; Time signature equivalence
 (define equiv

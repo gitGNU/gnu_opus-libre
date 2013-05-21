@@ -43,8 +43,8 @@ in the local conf dir or in the global skeleton repository."
         (global-skel (find-files conf:skel-dir
                                  (string-append "/"
                                                 skelname ".lyskel$"))))
-    (if (not (null? local-skel)) (car local-skel)
-        (if (not (null? global-skel)) (car global-skel)
+    (if (not-null? local-skel) (car local-skel)
+        (if (not-null? global-skel) (car global-skel)
             #f))))
 
 (define (skel-file arg)

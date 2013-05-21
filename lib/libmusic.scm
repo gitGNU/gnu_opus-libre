@@ -49,7 +49,7 @@
         (map (lambda (m) (add-script m x)) elts)))
      ((ly:music? elt) (add-script elt x))
      ((eq? eventname 'TieEvent) (set! tieEvent? #t)))
-    (if (not (null? rest)) (add-script music rest))
+    (if (not-null? rest) (add-script music rest))
     music))
 
 
