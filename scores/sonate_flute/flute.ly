@@ -1,9 +1,9 @@
-%-- Ballade -- flute.ly -------------------------------------------%
+%-- Sonate -- flute.ly --------------------------------------------%
 % (c) 2003-2010 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"
 
-Titre = "Ballade pour un mois de mai"
+Titre = "Sonate pour un mois de mai"
 FluteInstr = "Flûte"
 PianoInstr = "Piano"
 
@@ -11,14 +11,14 @@ PianoInstr = "Piano"
   title = \markup {
     \vconcat
     \center-column {
-      \larger "Ballade"
+      \larger "Sonate"
       \smaller "pour un mois de mai"
       \vspace #.5
     }
   }
   subtitle = "pour flûte et piano"
   composer = "Valentin Villenave"
-  date = "mai 2003"
+  date = "mai 2013"
 }
 
 \paper {
@@ -35,7 +35,7 @@ PianoInstr = "Piano"
     \line \italic {
       Pour
       \concat { M \super lle}
-      F., à l'occasion de ses 20 ans.
+      F., à l'occasion de ses 30 ans.
     }
   }
   ""
@@ -43,7 +43,7 @@ PianoInstr = "Piano"
     \override #'(box-padding . 6)
     \box \center-column {
       \line {
-        Copyright & copyleft © Valentin Villenave, 2003-2010.
+        Copyright & copyleft © Valentin Villenave, 2013.
       }
       \line {
         \with-url #"http://valentin.villenave.net"

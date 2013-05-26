@@ -1,5 +1,5 @@
-%-- Ballade -- piano.ly -------------------------------------------%
-% (c) 2003-2010 Valentin Villenave <valentin@villenave.net>
+%-- Sonate -- piano.ly --------------------------------------------%
+% (c) 2013 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"
 
