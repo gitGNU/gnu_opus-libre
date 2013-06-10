@@ -66,7 +66,8 @@ PianoInstr = "Piano"
         Gravure réalisée au moyen du logiciel libre
         \with-url #"http://www.LilyPond.org"
         \concat {\bold "GNU LilyPond" ,}
-        \concat { $(string-append "version " (lilypond-version) ".") }
+	version
+        \concat { $(lilypond-version) . }
       }
     }
   }
