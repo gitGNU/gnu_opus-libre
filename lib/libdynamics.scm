@@ -68,6 +68,7 @@
                   (dir (ly:music-property x 'direction)))
               (not (or
                     (eq? name 'ContextChange)
+                    (eq? name 'VoiceSeparator)
                     ;(eq? name 'ContextSpeccedMusic)
                     (memq 'staff-dynamics tags)
                     (ly:dir? dir)))))
