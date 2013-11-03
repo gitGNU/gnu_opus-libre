@@ -32,9 +32,11 @@
                   (str (if (string? result)
                            (car (reverse (string-split result #\=)))
                            #f)))
-             (set! str (if (and str (not (eq? str "C")))
+             (if str
+                 (set! str
+                       (if (>= (string-length str) 2)
                            (string-take str 2)
-                           #f))
+                           #f)))
             (close-pipe port)
             str))
          (input-lang
