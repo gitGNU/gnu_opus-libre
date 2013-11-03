@@ -28,11 +28,12 @@
 ;; that only define what needs to be overriden)."
   (let* ((guess-lang
            (let* ((port (open-input-pipe "locale | grep --color=never LANG"))
-                  (str (read-line port)))
-             (set! str (if (string? str)
-                           (string-take
-                             (car (reverse (string-split str #\=)))
-                             2)
+                  (result (read-line port))
+                  (str (if (string? result)
+                           (car (reverse (string-split result #\=)))
+                           #f)))
+             (set! str (if (and str (not (eq? str "C")))
+                           (string-take str 2)
                            #f))
             (close-pipe port)
             str))
