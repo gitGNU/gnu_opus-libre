@@ -51,6 +51,17 @@ markup exists."
               (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
               (make-null-markup))))))
 
+(define (make-this-layout name suffix)
+  "Associate NAME with SUFFIX, and check if a local \\layout{} block
+exists with that name.  If so, parse it."
+  (let* ((fullname (string-append name (string-capitalize suffix)))
+         (def (ly:parser-lookup parser (string->symbol fullname))))
+    (if (ly:output-def? def)
+        (begin (ly:debug-message "Using layout definition from variable ~a" fullname)
+               def)
+        (begin (ly:debug-message "No layout definitions stored in ~a" fullname)
+               #f ))))
+
 (define newVoice
   ;;   "If NAME matches a defined music expression, then
   ;; create a Voice for it.  If a matching timeline can be
@@ -101,7 +112,7 @@ markup exists."
                                       \filterDynamics $m
                                    #}))))))
            str-list)
-      (if (not (null? ret-list))
+      (if (not-null? ret-list)
           (make-simultaneous-music ret-list)
           (make-music 'Music 'void #t)))))
 
