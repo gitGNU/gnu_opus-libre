@@ -1,70 +1,43 @@
+%-- Chansons Oulipiennes -- antilope.ly ---------------------------%
+% (c) 2012 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
-\header {
-  title = "L’antilope et l’antiquaire"
-  poet = "Jacques Roubaud"
-  composer = "Valentin Villenave"
-  copyright = "© V. Villenave, 2012. Licence Art Libre"
-}
-
-#(set-global-staff-size 18)
-\pointAndClickOff
-
-dash ={
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
-
-texte = \lyricmode {
-  É -- trange, é -- trange est l’an -- ti -- lope
-  L’an -- ti -- lope de l’an -- ti -- sa -- vane
-  Qui an -- ti -- broute et an -- ti -- ga -- lope
-  Et se nou -- rrit d’an -- ti -- ba -- nanes
-  É -- trange, é -- trange est l’an -- ti -- lope
-
-  É -- trange, é -- trange est l’an -- ti -- quaire
-  L’an -- ti -- quaire des an -- ti -- car -- pathes
-  Qui met son an -- ti -- cha -- peau sur l’an -- ti -- pa -- tère
-  Et vend des an -- ti -- ta -- bleaux qu’il an -- ti -- date
-  É -- trange, é -- trange est l’an -- ti -- quaire
-
-  É -- trange, é -- trange est l’an -- ti -- lope
-  L’an -- ti -- lope de l’an -- ti -- cam -- brousse
-  Qui boit de l’an -- ti -- punch et fume des an -- ti -- clopes
-  L’an -- ti -- lope an -- ti -- an -- ti -- rousse
-  É -- trange, é -- trange est l’an -- ti -- lope
-}
-
-voix = \relative do' {
+AntilopeVoix =
+\relative do' {
   \time 4/4
-  \partial 8 dod'8 |
-  mib,4\fermata r8 dod' mib, sib' dod, la' |
-  re,4 r \times 2/3 { r mib sib' } |
-  la4. re,8 \times 2/3 { do?4 mib sib' } |
-  la2 r8 re, mib sib' |
-  la4. re,8 \times 2/3 { mib4 sib dod } |
-  la2 r8 do mib sib' |
-  la2 \times 2/3 { dod,4 mib sib' } |
+  R1 r2 r4 r8
+  \tempo "Andantino"
+  dod'8-. |
+  mib,4--\fermata r8 dod' mib,-. sib'-. dod,-. la'-. |
+  re,4-. r \times 2/3 { r mib( sib' } |
+  la4.) re,8 \times 2/3 { do?4( mib sib' } |
+  la2) r8 re,-. mib-. sib'-. |
+  la4.-- re,8 \times 2/3 { mib4( sib dod } |
+  la2) r8 do( mib sib' |
+  la2) \times 2/3 { dod,4( mib sib' } |
   \time 3/4
-  la2 r8 dod |
+  la2) r8 dod-. |
   \time 4/4
-  mib,4\fermata r8 dod' mib, sib' dod, la' |
+  mib,4--\fermata r8 dod' mib, sib' dod, la' |
   re,4 r r\fermata r8 red'
   \bar "||"
   fa,4\fermata r8 red' fa, do' red, si' |
-  mi,4 r \times 2/3 { r fa? do' } |
+  mi,4 r \times 2/3 { r fa?( do' } |
   si4. mi,8 \times 2/3 { red4 fa? do' } |
-  si2 r8 mi, fa do' |
-  si si sib mi, fa fa do red |
-  si2 r8 mi fa do' |
-  si si sib mi, \times 2/3 { fa4 re? do' } |
+  si2) r8 mi,-. fa-. do'-. |
+  si-. si-. sib-. mi,-. fa( fa-.) do-. red-. |
+  si2-- r8 mi( fa do') |
+  si-. si-. sib-. mi,-. \times 2/3 { fa4( re? do' } |
   \time 3/4
-  si2 r8 red |
+  si2) r8 red-. |
   \time 4/4
-  fa,4\fermata r8 re'! fa, sib dod, la' |
+  fa,4--\fermata r8 re'! fa, sib dod, la' |
   \bar "||"
+  \tempo "Allegro furioso"
   re,2 r\longfermata ^ "(BREAK)"
+  R1*15
+  \tempo "Tempo I"
   r2 r4 r8 dod' |
   mib,4\fermata r8 dod' mib, sib' dod, la' |
   re,4 r \times 2/3 { r mib sib' } |
@@ -81,8 +54,13 @@ voix = \relative do' {
   \bar "|."
 }
 
-pianoMd = \relative do' {
-  r8 r8 dod''-. mib,4--\fermata <sib, reb mib>-. <sol dod fa>-. |
+AntilopePianoMd =
+\relative do' {
+  \makeClusters { sold32 la si re
+  mi re si la sold la si re}
+  \makeClusters {fa sol sib do reb fa, sol sib}
+  \makeClusters {mib fa sol lab fa solb lab sib } dod4 r
+  r8 dod-. mib,4--\fermata <sib, reb mib>-. <sol dod fa>-. |
   s1*6
   r8 <sib mib sol>-. r <si mi sol>-. r4
   r8 dod'' mib,4\fermata <sib, reb mib>-. <sol dod fa>-. |
@@ -92,6 +70,21 @@ pianoMd = \relative do' {
   r8 <si mi la>-. r <do? fa? sib>-. r4 |
   r8 lab''' sib,4\fermata <fa,, lab re>-. <mi sol dod>-. |
   <fa re'> r r2
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
   R1
   r8 dod''' mib,4 \fermata <sib, reb mib>-. <sol dod fa>-. |
   s1*6
@@ -101,14 +94,12 @@ pianoMd = \relative do' {
   \acciaccatura mib''8 <re re'>4-. r8
 }
 
-md = { \change Staff = "md" }
-
-mg = { \change Staff = "mg" }
-
-pianoMg = \relative do' {
+AntilopePianoMg =
+\relative do' {
   \clef bass
+  \makeClusters {
   r8 r2 r8 sol,-. la,4-. |
-  re8( la' \md <la' re fad>-.) \mg
+  re8(\mp la' \md <la' re fad>-.) \mg
   mib,( sib') \md <sib' mib solb>4.--
   \mg re,,8( la' \md <la' re fa>-.) \mg
   mib,( sib') \md <sib' mib sol>4.--
@@ -120,9 +111,10 @@ pianoMg = \relative do' {
   mib,( sib') \md <sib' mib solb>4.--
   \mg re,,8( la' \md <la' re fa>-.) \mg
   mib,( sib') \md <sib' mib sol>4.--
-  \mg mib,,8( sib') mi,( si') r4 |
+  \mg mib,,8(\< sib') mi,( si')\! r4 |
   r2 r8 sol la,4 |
-  re'8-. la'-. re-. \md sold-. re'-. la'-. \mg <si,, la'>4-. |
+  re'8-. la'-. re-. \md sold-.
+  re'-.\p la'-. \mg <si,, la'>4-. |
   r2 r8 do, si,4 |
   mi8( si' \md <si' mi sol>-.) \mg
   fa,( do') \md <do' fa la>4.-- \mg
@@ -138,7 +130,26 @@ pianoMg = \relative do' {
   fa,( do') \md <do' fa lab>4.-- \mg
   fa,,8( do') fad,( dod') r4 |
   r2 r8 sol la,4 |
-  re r r2
+  
+  % BREAK
+  re8.->\dyn "ff_subito" re16 la8-. la,-.
+  r16 mib'8 mib16( sib'8-.) mib,-. |
+  re8.-> re16 la8-. la,-. r do( sol'-.) sol,-. |
+  re8.-> re16 la8-. la,-.
+  r16 mib'8 mib16( sib'8-.) mib,-. |
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  %
+  r r2
   R1
   r2 r8 sol-. la,4-. |
   re8( la' \md <la' re fad>-.) \mg
@@ -155,37 +166,4 @@ pianoMg = \relative do' {
   mib,( sib') \md <sib' mib sol>4.--
   \mg mib,,8( sib') mi,( si') r4 |
   r2 sol4-. la-. | r re,-. r4 r8
-}
-
-\score {
-<<
-  \new Staff \new Voice = "voix" \voix
-  \new Lyrics \lyricsto "voix" \texte
-  \new PianoStaff <<
-    \new Staff = "md" \pianoMd
-    \new Staff = "mg" \pianoMg
-  >>
->>
-  \layout {
-    \context {
-      \Score
-      \override PaperColumn #'keep-inside-line = ##t
-      \override NonMusicalPaperColumn #'keep-inside-line = ##t
-      
-      \override TimeSignature #'style = #'()
-      \override TextScript #'stencil =
-        #(lambda (grob)
-           (let ((grob-markup (ly:grob-property grob 'text)))
-             (grob-interpret-markup grob (make-italic-markup grob-markup))))
-      \override TextScript #'direction = #UP
-
-      autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
-			   ,(make-accidental-rule 'any-octave 0)
-			   ,(make-accidental-rule 'same-octave 1)
-			   ,neo-modern-accidental-rule)
-      autoCautionaries = #`(Staff ,(make-accidental-rule 'same-octave 1)
-			    ,(make-accidental-rule 'any-octave 1))
-      extraNatural = ##f
-    }
-  }
 }
