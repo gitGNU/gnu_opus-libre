@@ -217,8 +217,8 @@ $x
 
 (define fullBeat #{
 \set baseMoment = #(ly:make-moment 1 4)
-; the beatStructure length doesn’t really matter here,
-; 16 should be enough for most cases.
+% the beatStructure length doesn’t really matter here,
+% 16 should be enough for most cases.
 \set beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
 #})
 
