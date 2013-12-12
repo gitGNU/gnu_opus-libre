@@ -87,7 +87,7 @@
 (staff-change-command lang:upper-hand) ;; depending on your input language:
 (staff-change-command lang:lower-hand) ;; \rh or \md etc. for switching staves.
 
-
+;; Hiding stuff ---------------------------------------------------;
 (define hideNote #{
 \once \override Dots #'transparent = ##t
 \once \override NoteHead #'transparent = ##t
@@ -131,6 +131,8 @@ $x
 \override TupletNumber #'transparent = ##f
 #})
 
+
+;; Stems and beaming ----------------------------------------------;
 (define oneStemDown #{
 \once \override Stem #'direction = #DOWN
 #})
@@ -213,6 +215,25 @@ $x
 \revert Flag #'font-size
 #}))
 
+(define fullBeat #{
+\set baseMoment = #(ly:make-moment 1 4)
+; the beatStructure length doesn’t really matter here,
+; 16 should be enough for most cases.
+\set beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
+#})
+
+(define halfBeat #{
+\set baseMoment = #(ly:make-moment 1 8)
+\set beatStructure = #'(2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2)
+#})
+
+(define quarterBeat #{
+\set baseMoment = #(ly:make-moment 1 6)
+\set beatStructure = #'(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4)
+#})
+
+
+;; Expressive marks -----------------------------------------------;
 (define longHairpin #{
 \once \override Hairpin #'to-barline = ##f
 #})
@@ -224,6 +245,8 @@ $x
 \revert Hairpin #'to-barline
 #}))
 
+
+;; Custom note heads ----------------------------------------------;
 (define whiteNote
   (define-music-function (parser location x) (ly:music?)
     (set! (ly:music-property x 'tweaks)
