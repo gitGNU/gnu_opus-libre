@@ -1,1 +1,1 @@
-structure = '( "I" "II" "III")
+structure = '( "I" "|II" "|III")
