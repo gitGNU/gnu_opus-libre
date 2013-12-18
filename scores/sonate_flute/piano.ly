@@ -14,10 +14,10 @@ IPianoMd = \relative do' {
   % 0 %
   R1*7/4*2
   \ottava #1
-  <fa'' mi'>4*7\pp \laissezVibrer \arpeggio
+  <fa'' mi'>4*7\dyn "pp" \laissezVibrer \arpeggio
   \ottava #0
   r4 r8 fad,--\laissezVibrer s1*5/4
-  <red, fad'>2\ppp \laissezVibrer \arpeggio s1*5/4 |
+  <red, fad'>2_\ppp \laissezVibrer \arpeggio s1*5/4 |
   r8 \pl {
     <red sold>4_( lad'8)~ lad2 <red, sold lad>4.--(\< q--
     <red sold>4--)\pp \laissezVibrer
@@ -43,7 +43,7 @@ IPianoMd = \relative do' {
   si4)\dyn "pp_(con Ped.)" \mg r \t {r8 sol,,,_( dod}
   \t {fad lad dod}
   \md \t {\stemUp red[ mi] <si' si'>)\laissezVibrer }
-  \stemNeutral \t {r4 mi,8} \t {la_( sib do} |
+  \stemNeutral \t {r4 mi,8^(} \t {la sib do} |
   <si mib si'>4)\arpeggio \mg r
   \t {sol,,8_( mi' re'} \md
   \t {\stemUp dod' <si si'>4)\laissezVibrer}
@@ -129,7 +129,7 @@ IPianoMd = \relative do' {
   r8 sold'''''->(
   \t {lad-> <dod, dod'>->
   <red red'>->)\laissezVibrer } |
-  r8 \mg \stemUp <sold,,, lad dod>4->--
+  r8 \mg \stemUp <sold,,, lad dod>4^>^-
   \md \stemNeutral <sold'' sold'>8-.
   \t {<lad lad'>8(\< <dod dod'> <red red'>)\!}
   r16 s8. \ottava #0 \clef bass 
@@ -242,10 +242,10 @@ IPianoMg = \relative do' {
   r4 \t {<re dod'>8(_\mp_\> fa sol)}
   <lab sol'>2--_\!\laissezVibrer
   r2 r4 |
-  r4 r8 <lab sol'>4(_\< <re, dod'>8-.)
+  r4 r8 <lab sol'>4_(_\< <re, dod'>8-.)
   <sol lab'>2--_\mf \laissezVibrer
   \ottava #0 r2 |
-  \t {r4 <sol lab'>(-- _"(loco)"_\< <dod re'>--}
+  \t {r4 <sol lab'>_(-- _"(loco)"_\< <dod re'>--}
   <lab' sol'>2--) _\! \laissezVibrer r4
   r8 <re dod'>4.-- _\mp \laissezVibrer |
   \clef treble
@@ -270,7 +270,7 @@ IPianoMg = \relative do' {
   r8 <sold'''' sold'>->(
   \t {<lad lad'>-> dod-> red->)\laissezVibrer } |
   \clef bass
-  r8 \stemDown <sold,,, lad dod>4->--
+  r8 \stemDown <sold,,, lad dod>4_>_-
   \stemNeutral sold''8-.
   \clef treble \t {lad( dod red) } 
   r8*1/2 \md <fad' red' fad>16-.
@@ -288,8 +288,8 @@ IPianoMg = \relative do' {
   sib reb lab sib reb lab sib |
   reb lab sib reb lab sib reb lab |
   sib reb \md do reb sol reb sol lab |
-  do,( reb sol reb sol lab) do,( reb |
-  sold la) do,( reb sold la) do, reb |
+  do,(\pp\> reb sol reb sol lab) do,( reb |
+  sold la) do,( reb sold la) do, reb\! |
   \mg r4 <mi,, mi'>16-> <fa fa'>8.->~ |
   <fa fa'>2\laissezVibrer |
   R2 \clef bass
@@ -325,7 +325,7 @@ IIPianoMd = \relative do' {
   q--( q-- q8-- q4--) |
   <reb sib'>--( q-- q-- q8--)
   q4--( <solb sib>--) <reb sib'>--( <solb sib>8--) |
-  \t {<reb sib'>( solb reb}
+  \t {<reb sib'>(\p solb reb}
   <solb sib>-- <reb sib'>--
   solb) <sib mib>(\cresc <reb, solb>)
   <sib' la'>--( <solb mib'>4--)
@@ -395,48 +395,48 @@ IIPianoMd = \relative do' {
   }
   \ottava #1
   \ttt 4 {
-    <fad re'>16\dim si fad <re si'> fad si
+    <fad re'>16(\dim si fad <re si'> fad si)
     \tupletsOff
-    <fa re'> la fa <re la'> fa la
-    <fad re'> la fad <re la'> fad la
-    <fa re'> sib fa <re sib'> fa sib
-    <sol re'> sib sol <re sib'> sol sib
-    <sol re'> si sol <re si'> sol si
-    <fad re'> sib fad <re sib'> re' fad
+    <fa re'>( la fa <re la'> fa la)
+    <fad re'>( la fad <re la'> fad la)
+    <fa re'>( sib fa <re sib'> fa sib)
+    <sol re'>( sib sol <re sib'> sol sib)
+    <sol re'>( si sol <re si'> sol si)
+    <fad re'>( sib fad <re sib'> re' fad)
   }
   \ottava #2
   \ttt 4 {
-    sib(\pp fa si, \mg mi, sib fa) \md
+    sib( fa\dyn "pp" si, \mg mi, sib fa) \md
     sib''( mi, la, \mg mib sib mi,) \md
     sib'''( mi, la, \mg dod, fad, do) \md
     sib'''( mib, sol, \mg do, fad, si,) \md
     sib'''( mib, la, \mg mi sib mib,) \md
     \tupletsOn
   } \tttt {sib'''( mi, si \mg fa sib, \md si' mi)}
-  \ttt {sib'( fa si, \mg mib, si' fa')\md}
+  \ttt {sib'( fa si, \mg mib, si' \md fa')} |
   sib4-- sib--\dim sib-- sib--
-  sib-- sib-- sib8-.--(\dyn "al niente" mi,-.--)
+  sib-- sib-- sib8-.--(\dyn "al niente" mi,-.--) |
   \ottava #0
 
   %%
   \clef bass
-  s2. \stemUp re,,,,16^( mi) \stemNeutral
-  <si sol'>8->-.  q->-. r16 q s2 |
-  s2. <si la'>16( <sib sib'>) <mib dod'>8->-.
+  s4 s s \stemUp re,,,,16^( mi) \stemNeutral
+  <si sol'>8 ^>^. q->-. r16 q-. s4 s |
+  s4 s s <si la'>16( <sib sib'>) <mib dod'>8\mf ^>^.
   q16-> q-> <la, si>-. q-.
   <mib' dod'>-> q-> q-> <la, si>-.
   q-. q-. <mib' dod'>-> <la, si>-. |
   \halfBeat
   \t 8 {
-    do16(\p\< mi lab) sol( si mib)
+    do16(\p\< mi lab) sol( si mib\!)
     \tupletsOff
-    re,(\< fad sib) la( dod fa)
+    re,(\< fad sib) la( dod fa\!)
     mi,(\< sold do \clef treble si red sol)
   }
     \fullBeat \tupletsOn
-  \ttt {sib(\f\> fad re dod la fa)}
-  sol-.(\< dod-. sib-. mi-.)
-  lab,-.(\< re-. si-. fa'-.)
+  \ttt {sib(\f\> fad re dod la fa\!)}
+  sol-.( dod-. sib-. mi-.)
+  lab,-.( re-. si-. fa'-.)
   \t {la,(\< mib' do} fad8)->\ff
 
   %%
@@ -554,14 +554,15 @@ IIPianoMg = \relative do' {
   <la' dob>-. <sol dod>-. \mg sib,,-. sib'-. \md
   <lab' do>-. <fa mib'>-. \mg sib,-. \md <sol' dod>-.
   \stemDown fad_( mi) \mg \stemNeutral <dod la'>8->-.
-  q->-. sib,16-. <dod' la'>-.\<
-  sib-. \md <dod' sol'>-. <si la'>-.\! \mg sib,,-. \md
-  <mib'' fa>-.\< <re fad>-.
-  \mg sib,-. \md <do' sold'>->-.\! \mg |
-  mi,,-.\mp \md mi''-.\< <mib fa>-. \mg mi,-. \md
-  <re' fad>-. <do sold'>-. \mg mi,-. \md <dod' sol'>-.
-  <do sold'>-. <si la'>-.\! \mg mi,-. mi,-. s8
-  <sol fa'>->-.\mf q16-> q-> s s
+  q->-. sib,16-. <dod' la'>-.^\<
+  sib-. \md <dod' sol'>-. <si la'>-.^\! \mg sib,,-. \md
+  <mib'' fa>-.^\< <re fad>-.
+  \mg sib,-. \md <do' sold'>->-.^\! \mg |
+  mi,,-.^\mp^\< \md mi''-. <mib fa>-.^\! \mg mi,-. \md
+  <re' fad>-.^\< <do sold'>-.^\! \mg mi,-.
+  \md <dod' sol'>-.^\<
+  <do sold'>-. <si la'>-.^\! \mg mi,-. mi,-. s8
+  <sol fa'>->-. q16-> q-> s s
   q-> q-> q-> s s s q8-> |
   \ottava #0
   sold'16(-._"loco" re'-. si-. fa'-.)
@@ -569,9 +570,9 @@ IIPianoMg = \relative do' {
   sib,-.( mi-. dod-. sol'-.)
   \ttt 4 {
     sib,,( mi sold dod fad) la,
-    dod,( fa sib mi la) do,
+    dod,(\< fa sib mi la) do,\!
     \halfBeat
-  } \t 8 {sol( si red) re( fad sib)}
+  } \t 8 {sol(\< si red) re( fad sib)\!}
   sold,32( do fa re sol mib') r16 |
 
   %%
@@ -742,8 +743,8 @@ IIIPianoMd = \relative do' {
     <mi! la mib' sib'>4->--)\!\arpeggio
     <fad do' lab'>8-.(\> <sol sol'>-.\!)
     r <mib lab reb>( |
-    \t {<re re'>_\f_\< <mi mi'> <sol sol'>} \ottava #1
-    <si si'>--_\dyn "lirico" <red red'>--
+    \t {<re re'>_\dyn "f_lirico" _\< <mi mi'> <sol sol'>} \ottava #1
+    <si si'>-- <red red'>--
     \t {<do do'>_\> <sib sib'> <la la'>_\!)}
     r <dod dod'>(\f <do do'> <sib sib'>\!)
     \t {<sol sol'>^(\dim do mi,} \ottava #0

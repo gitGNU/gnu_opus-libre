@@ -82,6 +82,7 @@ highd =
      (cc . (twoR threeR four five))
      (rh . (ees)))
 
+%% Probably ridiculously wrong.
 highe =
 \markup \override #'(size . 0.5) \woodwind-diagram #'flute
   #'((lh . ())

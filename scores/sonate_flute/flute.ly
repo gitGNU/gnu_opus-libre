@@ -34,6 +34,14 @@ IIITitre = "III."
   % min-systems-per-page = #4
 }
 
+\layout {
+  \context {
+    \Score
+    \override RehearsalMark.break-visibility =
+    #end-of-line-visible
+  }
+}
+
 %\pointAndClickOff
 \pageBreak
 \markup \fill-page {
@@ -112,9 +120,10 @@ IFlute = \relative do' {
   \halfBeat
   \t {dod16(\p re8)~} re16 fad-.
   \t {mid( sold, si)~} si16. dod32(
-  \t {re8) dod16-.} re32(^"détimbré (éolien mixte)"
+  \t {re8) dod16-.} re32(
+  ^\markup {\center-column {"détimbré" "(éolien mixte)"}}
   \xNotesOn dod si sold)
-  \xNotesOff \t {r8 mid(\mp fad)}
+  \xNotesOff \t {r8 mid(\mp ^"(ordin.)" fad)}
   \t {re( fad mid)}
   \tt {la16( sib do mib-. fa-.)} \t {r8 solb( fa~)} |
   \fullBeat
@@ -154,26 +163,29 @@ IFlute = \relative do' {
   fad sold fad red dod4~)\mp |
   
   % 3 %
-  dod8 r r2 r8 mi'(\dyn "p_semplice" fa, sol la si do re) |
-  mi( fa, sol la si do re) mi( fa, sol la si do re) |
-  r mi( fa, sol la si) r mi( fa, sol sib4) r |
+  dod8 r r2 r8 mi'(\dyn "p_semplice"
+  fa, sol la si do re) |
+  mi( fa, sol la si do re)
+  mi( fa, sol la si do re) |
+  r mi( fa, sol la si) r
+  mi( fa, sol sib4) r |
   mi8( fa,) r2 r1 |
   r4 r8 do~--\dyn "pp_détimbré" do2. r2 |
   r r4 do2\mp\< (-"gliss."\glissando dod)~ |
-  dod4\! r8 do~\< do2\glissando
+  dod4\! r8 do~\<^"(gliss.)" do2\glissando
   dod2(\>\glissando do4)\! |
 
   % 4 %
   r4 r8 dod~^(\dyn "mf_calorosamente"
   ^"(ordin.)" \< dod2 re4. mi) |
   sol2~^(\> sol8 \xNotesOn fad32 fa mi mib)\!
-  \xNotesOff r8 do!~(
+  \xNotesOff r8 do!~(\mf
   do32 re mi sol la sol mi re
   dod8) \t {re16(\< dod re)}
   \t {mi( re mi)} \t {sol( mi sol)} |
   la8--\! re,32(-\< mi sol la)
   sib8(\! \xNotesOn \t {la16 sol fad)} \xNotesOff
-  r4 dod8-- \t {re16(\cresc dod re)}
+  r4 dod8--\mf \t {re16(\cresc dod re)}
   \t {mi( re mi)} \t {sol( mi sol)}
   \t {la( dod, mi} \t {sol la sib)}
   \t {do( mi, sol} \t {la do mib)} |
@@ -181,7 +193,7 @@ IFlute = \relative do' {
   r8 dod32(\mp\< la sol fad)
   re'( dod si sold) mi'( dod si lad)
   \t {sol'4(\f fad16 fa}
-  mi32 \xNotesOn dod la mib) \xNotesOff
+  mi32\> \xNotesOn dod la mib\!) \xNotesOff
   r8 \t {dod(\mf mi fad} |
   sol16) do,( \t {mib fa solb}
   \t {lab8)-. si?-. r16 do,(}
@@ -219,8 +231,8 @@ IFlute = \relative do' {
   fa,: sol: la: si: |
   do: re: mi: fa,: |
   sol:\dyn "(senza dim.)" la: si: do: |
-  re8 r fa8:16 mi,: |
-  sol:\dyn "senza dim." la: si: do: |
+  re8 r fa8:16\dyn "f_sempre" mi,: |
+  sol: la: si: do: |
   re: fa: mi,: sol: |
   la: si: do: re: |
   fa: re,: sol:\< la: |
@@ -244,7 +256,7 @@ IFlute = \relative do' {
   fa( mi) mi( fa) fa( mi) |
   mi( fa) fa( mi) fa'( mi,) mi( fa) |
   fa( mi) mi( fa) fa( mi) mi( fa) |
-  r fa( mi') fa-. mi'( fa,) mi( mi,) |
+  r fa(\< mi') fa-. mi'(\> fa,) mi( mi,)\! |
   fa( mi) mi( fa) r mi-. mi( fa) |
   fa( mi') r fa,-. sol-. la-. si-. do-. |
   re( mi,) r fa'-.\mp sol-. la-. si-. do-. |
@@ -255,8 +267,8 @@ IFlute = \relative do' {
   \t {sib4->-- do->-- reb->--\dyn "f_non troppo"} |
   R2*2
   dod,4~(\dyn "mp_semplice"\> dod16 sib8) do16( |
-  \t {sol4) fa( sib')} |
-  mi,4--\p fad,16( lad) dod red |
+  \t {sol4 fa sib'} |
+  mi,4)--\p fad,16( lad) dod red |
   \t {mi4( re8)} la-- mib16-. lab,-. |
   \t {r4 do'( fad8 fa,~} |
   fa16\> la, mib'' sol, fad' la,)\! r8 |
@@ -268,8 +280,8 @@ IFlute = \relative do' {
   do,1~--^"(ten.)" do4 r2 |
   r4 r8 fad'4(\dyn "p_dolce espressivo"
   mib,8~ mib4~ \t {mib8 sib' reb} sib2~) |
-  sib8 r sib4--\< lab8( sib4.) lab--\> sib--\! |
-  \t {r8 do4--(~} \t {do sib8~}
+  sib8 r sib4--\p\< lab8( sib4.) lab--\> sib--\! |
+  \t {r8 do4--\mp(~} \t {do sib8~}
   sib4.\> la8)~ la2\!~ la8 r |
   r re( do sib \t {la4\> sol8)~}
   sol2~\! sol8 r r4 |
@@ -277,9 +289,6 @@ IFlute = \relative do' {
   fa4 mi'2.\!--~^"(ten., non vibrato)"
   mi4 r2 \bar "|." 
 }
-
-%% Ideally, this should be done automatically.
-\include "scores/sonate_flute/00_diagrams.ily"
 
 IIFlute = \relative do' {
   \time 7/4
@@ -352,8 +361,8 @@ IIFlute = \relative do' {
   la''16(\mp\> la, si si,^"leggiero"
   sib-. do,-.)\! r8 r
   mi'4:--_\highe mi,8:--~_\enatural
-  mi2*7/8: \glissando
-  \hideNote re16^"gliss." r4
+  mi2*7/8:\> \glissando
+  \hideNote re16^"gliss." r4\!
   \ttt 4 {
     re''16(\dyn "p_scherzando"
     si) fad si( fad) si
@@ -365,15 +374,16 @@ IIFlute = \relative do' {
     re( si) sol si( sol) si-.
     re-. fad,,( sib re fad sib)
     \tupletsOn
-  } re,8-- \t {sold,16( si dod)}
+  } re,8--\< \t {sold,16( si dod)}
   re8-- \t {sol,16( lab sib)}
-  reb--( fa,-- lab-- sib-- si8-- do,--)
-  reb'( mib fad4)~ fad8 r |
+  reb--(\mf ^"pesante"
+  fa,-- lab-- sib-- si8-- do,--)
+  reb'(\> mib fad4)\p ~ fad8 r |
   mi,4^(\mp~_\enatural
   \t {mi fa_\fnatural sol_\gnatural}
   sib2)~ _\bflat sib8 r
   \tt {r16 sol(\<^"(ordin.)" sib) mi-. la-.}
-  dod2\flageolet(\mf\> mi4\flageolet
+  dod2(\mf\> mi4\flageolet
   fad\flageolet sol2\flageolet)\pp~ sol8 r
   \bar "||"
   \halfBeat
@@ -398,7 +408,7 @@ IIFlute = \relative do' {
   sol4 r16 \stopTrillSpan
   sib8.~->--^\markup \flat _\bflattrill \startTrillSpan
   sib4~ sib8. sib'16->\stopTrillSpan
-  \tt {r16 sib,(->\< sib'-> sib,-> sib'')->\!}
+  \tt {r16 sib,(->\< ^"(ordin.)" sib'-> sib,-> sib'')->\!}
   \bar "||"
   \mark \markup \fermata
   r8 dod,,4(\dyn "mp_semplice" mi fad2 sold8 si2)
@@ -447,7 +457,7 @@ IIIFlute = \relative do' {
   r sold,, sib'(\< sib,)
   la'( la,) sol( sol')
   fad'(\! fad,) sol( sol'?) |
-  r dob,, sib'( sib,)
+  r dob,,\mf sib'( sib,)
   la'( la,) sol'( sol,)
   mi'( mi') dod( dod,)
   red,( red') mi( mi') |
@@ -469,17 +479,17 @@ IIIFlute = \relative do' {
   fa'( dod,) mi'( fa) |
   \t 8 {
     \halfBeat
-    mi,,16->\dyn "mf_sub."
-    r mi( fa) r mi(
-    fa fad) r mi( fa sol)
-    lad( si) r lad( si do)
+    mi,,16->[\dyn "mf_sub."
+    r mi( fa) r mi(]
+    fa[ fad) r mi( fa sol)]
+    lad([ si) r lad( si do)]
     r lad( si dod re dod)
   }
   r32 lad( si sold)
   \t 8 {
     re'16(\cresc dod) mi-.
-    fa-> r mi( fa fad) sol,-.
-    mi'( fa sol lab) r sol(
+    fa->[ r mi( fa fad) sol,-.]
+    mi'([ fa sol lab) r sol(]
     lab sib reb) la( si re)
   } mi4.(\f _"elegiaco" fa8)~ fa4 r |
   r8 mi(~ mi4 fa4. fad8)~ |
@@ -525,20 +535,20 @@ IIIFlute = \relative do' {
     do'( sold mi} re)-- dod--
   \fullBeat
   sib4.(\p ^"espr." la8) r2 |
-  do16( sib8.~ sib8 la)
+  do16(-> sib8.~ sib8 la)
   \t 4 {lab(\> si do)\!} r4 |
   \t 2 {
-    sib4--(^\dyn "mp_détimbré" _\bflat
+    sib4--(^\mp _\bflat
     la-- _\anatural
     sol--) _\gnatural
-  } \tt {fad16(\< sol) si-. dod-. re(~}
+  } \tt {fad16(\< ^"détimbré" sol) si-. dod-. re(~}
   re8\! dod) |
-  r sib--(~ \dyncresc "mf_(timbrer progressivement)"
+  r sib--(~ ^\dyncresc "timbrer progressivement"
   \t {sib la sol)}
   mi-- dod-- \t {red( mi si'}
   \t {dod mi sol)}
-  fa16(\! _"(ordin.)" fa') mi,( mi') r8
-  fa,16(\mf\> fa') mi( mi,) mib( mib')\! |
+  fa16(^"ordin." _\mf fa') mi,( mi') r8
+  fa,16(\> fa') mi( mi,) mib( mib')\! |
   r8 fa,16(\> fa') mi( mi,)
   re( re') dod( dod,) re(\! re') r8
   fa,16( fa') mi,(\dyn "mp_dolce" mi')
@@ -558,8 +568,8 @@ IIIFlute = \relative do' {
   \mark \markup \fermata
   r8 sib,,4(\dyn "mp_semplice"
   la sol mi8~ mi do4 mib fa fad8) |
-  \t 2 {r4 sib( la sol\dyn "(senza dim.)" mi re}
-  dod4) r8 sib'(\dyncresc "p_cresc."
+  \t 2 {r4 sib(\p la sol mi re}
+  dod4) r8 sib'(\dyncresc "poco_cresc."
   \t 4 {
     lab sol fa re) sib'( sol
     fa mi) sib'(\< la) si(\mf fad)
