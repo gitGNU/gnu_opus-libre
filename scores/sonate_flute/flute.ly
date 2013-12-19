@@ -31,7 +31,7 @@ IIITitre = "III."
 
 \paper {
   first-page-number = #-1
-  % min-systems-per-page = #4
+  % system-system-spacing #'basic-distance = #24
 }
 
 \layout {
@@ -42,7 +42,7 @@ IIITitre = "III."
   }
 }
 
-%\pointAndClickOff
+\pointAndClickOff
 \pageBreak
 \markup \fill-page {
   ""
@@ -135,7 +135,8 @@ IFlute = \relative do' {
   \t {re(\< dod mi)} fad32( sol la sib |
   
   % 2 %
-  dod4.)\mf r8 re,(^"con lirismo" dod')~ \t {dod re,( dod'~}
+  dod4.)\mf r8 re,(^"con lirismo" dod')~
+  \t {dod re,( dod'~}
   \t {dod mi16->} fa,8~ fa sol)
   \tt {la16(\< si do re dod~} |
   dod8.)\! r16 re,8( dod'~
@@ -152,7 +153,8 @@ IFlute = \relative do' {
   \t {mi fad, fa'\flageolet} |
   sold16\flageolet) la,(_"dolce" si dod
   \t {red8 mi fad} \t {mi) fa,( sol)}
-  la16( si do re \t {dod8) re,( fa} lad-- si,-- re) r |
+  la16( si do re \t {dod8) re,( fa}
+  lad-- si,-- re) r |
   dod'2.\flageolet(\pp do4.\flageolet
   sib\flageolet sol4\flageolet~) |
   sol16 r sol8~( \t {sol lab sib)}
@@ -414,9 +416,9 @@ IIFlute = \relative do' {
   r8 dod,,4(\dyn "mp_semplice" mi fad2 sold8 si2)
   la8(\> mi4 sol8~ sol2 re4.\!)_\highd
   mi8~^( _\highe mi4~ | mi dod_\highcsharp
-  si4.)_\bnatural la8^(\pp_\anatural do_\highc
+  si4.)_\bnatural la8^(^\pp_\anatural do_\highc
   re~ _\highd re2) |
-  r4 mib,(~_\eflat \mp mib8 fa2)_\fnatural
+  r4 mib,(~_\eflat ^\mp mib8 fa2)_\fnatural
   mib8~(^"simile"\< \t {mib fa mib} fa4~ |
   fa)\mf r r2 mib(\dyn "poco_f"\> fa4~ |
   fa2.*2/3) s4\! r8 mib4(^"(ordin.)"\ppp
@@ -500,7 +502,7 @@ IIIFlute = \relative do' {
   lab'''8(--~\dyn "f_molto" lab4 |
   sol4.) r8 r4 \t {mi8(\fp red16)}
   mi32( mi,) red( red') |
-  \t {mi16-. red,,-. mi'-.} fa'8\f\< ~
+  \t {mi16-. red,,-. mi'-.} fa'8\dyn "f"\< ~
   \t {fa fa,,-- fa''--} sol4--\!
   \t {mi16( fa sol)} sib8--~ |
   sib \t {mi,16( fa sol)}
