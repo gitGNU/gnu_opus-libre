@@ -4,6 +4,7 @@
 \language "italiano"
 
 AutobusVoix =
+%\transpose sol fa
 \relative do' {
     r8 re sol sib \times 2/3 {dod4 fa8~} fa4 |
     mib8 la,4. r4 sib8 mib |
@@ -28,9 +29,19 @@ AutobusVoix =
 }
 
 AutobusPianoMd =
+%\transpose sol fa
 \relative do' {
   \clef treble R1
-  r4 <do mib sol la>2 q4
+  r4 <do mib sol la>2^\markup {
+    \score {
+      \new RhythmicStaff \with {
+        \remove Time_signature_engraver
+        \remove Staff_symbol_engraver
+        fontSize = #-6
+      } { do8 do do4 do s r do8 do do4 do }
+      \layout { indent = 0 }
+    } \italic etc.
+  } q4
   r <si mi la>2 q4
   r <do mib sol la>2 <do mib fad la>4
   r <si mi la>2 q4
@@ -56,6 +67,7 @@ AutobusPianoMd =
 }
 
 AutobusPianoMg =
+%\transpose sol fa
 \relative do' {
   \clef bass
   R1 do,1 sol do, sol'

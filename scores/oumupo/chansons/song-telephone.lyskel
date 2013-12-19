@@ -1,0 +1,6 @@
+<<
+  \newStaff $"Voix"
+  \new RhythmicStaff \newVoice $"Bip"
+  \newLyrics $"Bip"
+  \newStaff $"Basse"
+>>

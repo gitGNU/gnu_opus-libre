@@ -4,22 +4,43 @@
 % Ian Monk, François Caradec, Jacques Jouet,
 % Paul Fournel.
 
+
+%% Inclusion du Baobabouin de Jacques Roubaud.
+\include "scores/oumupo/sardinosaures/baobabouin.ly"
+BaobabouinTitre = "Le baobabouin"
+
+
 Titre = "Chansons Oulipiennes"
 
 AntilopeTitre = "L’antilope et l’antiquaire"
 AutobusTitre = "Chanson de l’autobus"
 CharlesTitre = "Habanera de Charles"
+DebutTitre = "Début"
 IdeechansonTitre = "L’idée de la chanson"
 MakimococoTitre = "Le maki mococo"
 PetitmariTitre = "Le petit mari"
 PopincourtTitre = "Chanson de Popincourt"
+QuandjepenseTitre = "Quand je pense"
 RaisonTitre = "Sans raison"
 TelephoneTitre = "Le téléphone"
+
+AntilopeAuteur = "Jacques Roubaud."
+AutobusAuteur = "François Caradec."
+BaobouinAuteur = "Jacques Roubaud."
+CharlesAuteur = "Olivier Salon"
+DebutAuteur = "Hervé Le Tellier"
+IdeechansonAuteur = "Frédéric Forte"
+MakimococoAuteur = "Jacques Roubaud."
+PetitmariAuteur = "Paul Fournel"
+PopincourtAuteur = "Jacques Jouet"
+QuandjepenseAuteur = "Jacques Roubaud."
+RaisonAuteur = "Ian Monk."
+TelephoneAuteur = "Jacques Roubaud."
 
 \header {
   title = \Titre
   composer = \markup \center-column {
-    "Valentin Villenave"
+    "Valentin Villenave & Mike Solomon"
     "(sur des textes d’auteurs de l’Oulipo)"
   }
   copyright = \markup {
@@ -161,7 +182,36 @@ CharlesChantTexte = \lyricmode {
   Charles a -- ttend.
 }
 
-IdeeChansonVoixTexte = \lyricmode {
+DebutVoixTexte = \lyricmode {
+  % Hervé Le Tellier.
+  Tell’ -- ment tell’ -- ment
+  on s’est tell’ -- ment
+  com -- ment ça peut com -- ment ça peut
+  si vite aus -- si et pour tou -- jours et à ja -- mais
+  com -- ment ça peut 
+  c'est pas pos -- sible
+  moi ce que je
+  tout ce que je 
+  ça se -- rait que 
+  en -- fin bien sûr si c’est pos -- sible
+  si toi tu veux au -- tant que moi ou juste un peu
+  ça suf -- fi -- rait pour un dé -- but
+  au dé -- but tu
+  au dé -- but je
+  mais ça pass’ -- rait
+  à pe -- tits
+  et toi et moi
+  on ou -- blie -- rait
+  ça re -- vien -- drait
+  pas comme a -- vant
+  mais mieux qu’a -- vant
+  parce qu’on sau -- rait
+  que toi et moi
+  ça s’en va pas
+  comm’ ça
+}
+
+IdeechansonVoixTexte = \lyricmode {
   % Frédéric Forte.
   c’est simple un mot
           en suit un autre
@@ -404,9 +454,34 @@ PopincourtVoixTexte = \lyricmode {
   le lieu des ren -- \dash dez -- vous d’a -- mour
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   le lieu des ren -- \dash dez -- vous d’a -- mour
+}	
+
+QuandjepenseVoixTexte = \lyricmode {
+  % Jacques Roubaud.
+  Quand je pense
+  quand je pense
+  quand je pense à toi
+  je me de -- mande
+  je me de -- mande
+  si tu penses à moi
+  et s’il se trouve que tu penses
+  que tu penses à moi
+  au mo -- ment même où je me de -- mande
+  où je me de -- mande
+  si tu penses à moi
+  est-ce que tu te de -- mandes
+  te de -- mandes
+  si je pense à "toi ?"
+  et tant je me de -- mande
+  de -- mande
+  si tu penses à moi
+  qu’à la fin je me de -- mande
+  je me de -- mande
+  si j’ai pen -- sé à toi
 }
 
 RaisonVoixTexte = \lyricmode {
+  % Ian Monk.
   Tu me de -- man -- des la rai -- son
   de ce -- tte danse
   y_en a pas tu sais
@@ -479,7 +554,7 @@ TelephoneVoixTexte = \lyricmode {
   D’être é -- lu mai -- re de Car -- ca -- ssonne_!
   Je crains que dans ces con -- di -- tions
   Las, on ne rie du Té -- lé -- phone.
-  }
+}
 
 \layout {
   \context {
@@ -501,6 +576,7 @@ TelephoneVoixTexte = \lyricmode {
     autoCautionaries = #`(Staff ,(make-accidental-rule 'same-octave 1)
                           ,(make-accidental-rule 'any-octave 1))
     extraNatural = ##f
+    melismaBusyProperties = #'(melismaBusy tieMelismaBusy)
   }
 }
 

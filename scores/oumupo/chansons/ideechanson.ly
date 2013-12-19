@@ -3,6 +3,8 @@
 
 \language "italiano"
 
+GuitareInstr = "Guitare"
+
 IdeechansonVoix =
 \relative do' {
   \partial 4 r16

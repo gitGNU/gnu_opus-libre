@@ -1,4 +1,5 @@
 <<
+  \newChordNames $"Grille"
   \newStaff $"Voix"
   \newStaff $"Guitare"
 >>

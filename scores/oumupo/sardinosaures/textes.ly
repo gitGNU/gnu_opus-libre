@@ -200,18 +200,18 @@ KiwistitiVoixTexte = \lyricmode {
   Il se ba -- lance, de ci
   De là, et re -- joint par i -- ci,
   Grand mer -- ci,
-  La bran -- che que voi -- ci :
+  La bran -- che que voi -- ci :
   Il est a -- lors a -- dou -- ci.
   Pour fai -- re ce -- ci
   Le ki -- wi -- sti -- ti
   Par la queue sa -- pri -- sti
   Se ba -- lan -- ce sans sou -- ci
-  Et s’é -- lance ain -- si :
-  Il a ré -- u -- ssi !
+  Et s’é -- lance ain -- si :
+  Il a ré -- u -- ssi !
   On dit par là, ou par ci
   Que le ki -- wi -- sti -- ti
   Dan -- se le twist i -- \dash ti --
-  Né -- rant, mais si !
+  Né -- rant, mais si !
   Les ki -- wi -- sti -- tis
   É -- vo -- luent \dash gra -- ci --
   Eu -- se -- ment par ban -- des de six
@@ -223,49 +223,6 @@ KiwistitiVoixTexte = \lyricmode {
   Tom -- bent en con -- fe -- tti.
 
   \dash Ci -- gît six p’tits ki -- wi -- sti -- tis.
-}
-
-BaobabouinVoixTexte = \lyricmode {
-  Il n’est pas na -- bab
-  il n’est pas mar -- souin
-  le ba -- o -- ba -- bouin
-
-  il vo -- yage en cab
-  a -- vec le pin -- gouin
-  le ba -- o -- ba -- bouin
-
-  s’il a pas de rab
-  il fait du tin -- touin
-  le ba -- o -- ba -- bouin
-
-  un bon chich’ -- ke -- bab
-  il ne veut pas mouins
-  le ba -- o -- ba -- bouin
-
-  il vous met \dash k. -- o.
-  a -- vec son ca -- bas
-  c’est un vrai sa -- gouin
-  le ba -- o -- ba -- bouin
-
-  \dash là -- bas ou \dash là -- haut
-  vo -- yez les é -- bats
-  du ba -- o -- ba -- bouin
-
-  il fait du mé -- lo
-  pour une pêche mel -- ba
-  le ba -- o -- ba -- bouin
-
-  il fait un sa -- bbat
-  a -- vec ses sa -- bots
-  le ba -- o -- ba -- bouin
-
-  il va \dash d’Saint -- Ma -- lo
-  en A -- la -- ba -- ma
-  le ba -- o -- ba -- bouin
-
-  il pince comme un crabe
-  comme un ma -- rin -- gouin
-  le ba -- o -- ba -- bouin_!
 }
 
 \layout {
