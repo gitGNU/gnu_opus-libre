@@ -17,7 +17,7 @@
 ;------------------------------------------------------------------;
 
 
-(load "liblayout.scm")
+(scm-load "liblayout.scm")
 
 (define-public (include-ly dir . hidden?)
   "Include all LilyPond code found in DIR, recursively.

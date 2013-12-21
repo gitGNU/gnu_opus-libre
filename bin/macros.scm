@@ -19,7 +19,7 @@
 
 ; Input macros.
 
-(load "../lib/libmusic.scm")
+(scm-load "../lib/libmusic.scm")
 
 ;; TODO: use make-simple-function everywhere possible.
 

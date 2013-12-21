@@ -19,8 +19,8 @@
 
 ;; Macros for entering text elements.
 
-(load "../lib/libtext.scm")
-(load "../lib/libgraphics.scm")
+(scm-load "../lib/libtext.scm")
+(scm-load "../lib/libgraphics.scm")
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn

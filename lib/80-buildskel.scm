@@ -17,7 +17,8 @@
 ;------------------------------------------------------------------;
 
 
-(load "libdynamics.scm")
+(scm-load "libdynamics.scm")
+(scm-load "libtext.scm")
 
 (define *has-timeline* (make-parameter #f))
 

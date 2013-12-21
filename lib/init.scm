@@ -87,6 +87,14 @@
         ret-ls))
     (sort (do-dir dir '()) string<?)))
 
+;; Loading files (similar to ly:load) -----------------------------;
+
+(define-public (scm-load file-name)
+  (ly:debug "[~A" file-name)
+  (load file-name)
+  (if (ly:get-option 'verbose)
+      (ly:progress "]\n")))
+
 ;; Automatic includes ---------------------------------------------;
 
 (define-public (include-scm dir . numbered?)
@@ -95,8 +103,7 @@
   (let* ((regx (if (not (false-or-null? numbered?)) "/[0-9].*\\.scm$" ".scm$"))
          (scm-files (find-files dir regx)))
     (map (lambda (x)
-           (begin (ly:debug-message "Loading ~a..." x)
-                  (load x)))
+           (scm-load x))
          scm-files)))
 
 ;------------------------------------------------------------------;

@@ -64,7 +64,7 @@
           (begin
             (ly:debug-message "Loading macros file ~a..." x)
             ;; ugh.
-            (load (string-append "../" x))))
+            (scm-load (string-append "../" x))))
        (find-files dir ".scm$")))
 
 (define eval-macros
