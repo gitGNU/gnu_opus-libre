@@ -29,7 +29,9 @@
  ; command pipe
  (ice-9 popen)
  ; parameters
- (srfi srfi-39))
+ (srfi srfi-39)
+ ; *->lily-string
+ (scm display-lily))
 
 (define-public (not-null? x) (not (null? x)))
 (define-public (false-or-null? x) (or (not x) (null? x)))

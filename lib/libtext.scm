@@ -60,3 +60,57 @@
       details)
      (ly:music-property m 'tweaks)))
    m))
+
+;; Untainted text (lyrics)
+(define-public (untaint-string str wordlist)
+  "Replace all words in STR with harmless
+words randomly taken from WORDLIST."
+  (*untainted* #t)
+  (regexp-substitute/global #f "[\\#a-zA-Z'’]+" str
+       'pre
+       (lambda (x)
+            (let* ((word (match:substring x))
+                   (prior (match:prefix x))
+                   (rand (list-ref wordlist
+                           (random (length wordlist))))
+                   (result (if (or (string-prefix? "\\" word)
+                                   (string-prefix? "#" word))
+                               word
+                               rand)))
+              (if (string-match
+"[\\](set|unset|override|revert|tweak) \
+([A-Z][a-z]+[.])?\
+([A-Za-z]+[.])?\
+([a-z]+[-])?$"
+                   prior)
+                  (set! result word))
+              (if (string-any char-set:upper-case
+                    (string-take word 1))
+                  (string-capitalize result)
+                  result)))
+       'post))
+
+(define-public (untaint-this expr)
+ "Take EXPR, a variable containing a
+\\lyricmode expression and replace it with a
+similar, untainted expression."
+  (let* ((tainted-string (music->lily-string expr parser))
+         (untainted-string
+          (untaint-string tainted-string lang:word-list)))
+    (ly:debug-message
+     "Untainted expression translated into:\n ~a" untainted-string)
+    (ly:parser-include-string parser untainted-string)))
+
+(define-public (is-this-tainted? name)
+  (let ((cmd-arg (ly:get-option 'untainted)))
+    (if cmd-arg
+        (if (boolean? cmd-arg)
+            #t
+            (if (symbol? cmd-arg)
+                (let* ((str-arg (symbol->string cmd-arg))
+                       (ls-arg (string-split str-arg #\+)))
+                  (if (member name ls-arg)
+                      #t
+                      #f))
+                #f))
+        #f)))

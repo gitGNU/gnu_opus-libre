@@ -24,7 +24,6 @@
 		  token)))
     `(define-public ,sym ,funct)))
 
-
 (defmacro staff-change-command (token)
   (let* ((str (primitive-eval token))
          (sym (if (defined-string? token)
