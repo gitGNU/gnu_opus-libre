@@ -83,11 +83,11 @@ words randomly taken from WORDLIST."
 ([A-Za-z]+[.])?\
 ([a-z]+[-])?$"
                    prior)
-                  (set! result word))
-              (if (string-any char-set:upper-case
-                    (string-take word 1))
-                  (string-capitalize result)
-                  result)))
+                  word
+                  (if (string-any char-set:upper-case
+                        (string-take word 1))
+                      (string-capitalize result)
+                      result))))
        'post))
 
 (define-public (untaint-this expr)
