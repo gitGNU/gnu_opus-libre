@@ -95,32 +95,34 @@ DebutVoix =
 DebutPianoMd =
 %\transpose mi do
 \relative do'{
+  \key re \major
   mi1(\p mid fad fa)
   <si, re sol>4--( q--) r8 <si re sol la>4-- q8 |
   <dod sol'>4--( la8 <dod sol' la>)~ q la( <dod sol'> la |
   lad <dod mi fad>4) q8--~ q lad <mi' la>4 |
   <dod re fad>4-- q-- r8 <re si'>( sib' la |
   <si, do sol'>4.) q8~ q <do sol'>4 <si la'>8 |
-  <do mi fad>4 q r8 <do mib fad>4.
-  <re fad>8 la si <re fad> r <dod mi fad>4 la8 |
-  <sol re' fad>4 <re' sol si> r8 <re fad la>4 re8 |
-  <re mi sol>4 q8 <dod mi sol> r \acciaccatura sold'' la mi la, |
-  r8 <do, red fad> r \acciaccatura sold'' la red,4 <si, do mib> |
-  <la si re> q r8 \acciaccatura lad'' si4. |
-  <si,, re sol la>4 si8 <re sol la>~ q <re sol>4 si8 |
-  r8 \acciaccatura sold'' la4 si,8 <sold re'>4 <si, sold'> |
+  <do mi fad>4-- q-- r8 <do mib fad>4.
+  <re fad>8( la si <re fad>) r <dod mi fad>4 la8 |
+  <sol re' fad>4-- <re' sol si>-- r8 <re fad la>4 re8 |
+  <re mi sol>4 q8 <dod mi sol> r \acciaccatura sold'' la(\mp mi la,) |
+  r8 <do, red fad> r \acciaccatura sold'' la( red,4) <si, do mib> |
+  <la si re>-- q-- r8 \acciaccatura lad'' si4.-> |
+  <si,, re sol la>4 si8( <re sol la>~) q <re sol>4 si8 |
+  r8 \acciaccatura sold'' la4( si,8) <sold re'>4 <si, sold'> |
   <sold' la dod>8 fad4 <fad dod'>8~ q4 <fad la> |
-  <mi lad>8 dod' \acciaccatura sold' la4 <lad,, mi' fad>2 |
-  <fad' fad'>8 si re <sol, sol'> si re <fad, fad'> si |
-  <do, do'> fad la <sol sol'> do red <fad, fad'> la |
-  si <mi, mi'>4 <si re sol>8 r <fad' fad'> <sol sol'> <sold sold'> |
-  <la la'>4 r r r8 <fad, la re>
+  <mi lad>8-. dod'-. \acciaccatura sold' la4 <lad,, mi' fad>2 |
+  <fad' fad'>8--( si re) <sol, sol'>--( si re) <fad, fad'>--( si) |
+  <do, do'>--( fad la) <sol sol'>--( do red) <fad, fad'>( la |
+  si) <mi, mi'>4-- <si re sol>8 r <fad' fad'>\< <sol sol'> <sold sold'> |
+  <la la'>4\! r r r8 <fad, la re>-.
 }
 
 DebutPianoMg =
 %\transpose mi do
 \relative do' {
   \clef bass
+  \key re \major
   R1*3 r2 fa,-- |
   mi4.( si8~ si4 mi4) |
   la,4.( mi'8)~ mi mi,( la4) |
@@ -134,11 +136,11 @@ DebutPianoMg =
   fad4 fad'8 do~ do mid,( fad sol)~ |
   sol4. re'8~ re4 re, |
   mi2 si'4 mi, |
-  mid2 r4 mi8 mid |
-  fad4 dod'8( \acciaccatura sold' la~ la sold fad dod) |
+  mid2 r4 mi8( mid |
+  fad4) dod'8( \acciaccatura sold' la~ la sold fad dod) |
   fad,4 r r8 dod'4( do8) |
-  si4. mid8 fad4 fad, |
+  si4.( mid8 fad4) fad, |
   red4( la'8 red) r do si mi,~ |
-  mi4. si'8~ si4 sib |
-  <si' dod sol'>8 la, r4 r r8 <re, re'> |
+  mi4. si'8~-- si4 sib-- |
+  <si' dod sol'>8 la,-. r4 r r8 <re, re'>-. |
 }

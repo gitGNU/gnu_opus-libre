@@ -179,7 +179,7 @@ PopincourtPianoMd =
   r <lad re fad>2-- | r4 <la re fad>2-- |
   r4 << <si re fad>2 \\ {la4( sold)} >> |
   <fad sol si re>2( <la mi'>4) |
-  << <mi fad dod'>2 \\ {si'4 la} >> <dod, mi fad> |
+  << <mi fad dod'>2 \\ {si'4( la)} >> <dod, mi fad> |
   r4 << <mi sol>2 \\ {lad,4( si)} >> |
   <do mi>8.-- sol16 <do fa>8.-- sol16
   <do sol'>8.-- sol16 |

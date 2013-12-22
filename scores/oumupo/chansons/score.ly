@@ -1,1 +1,1 @@
-structure = '("Antilope" "Autobus" "Baobabouin" "Charles" "Debut" "Ideechanson" "Makimococo" "Petitmari" "Popincourt" "Quandjepense" "Raison" "Telephone")
+structure = '("Debut" "Charles" "Makimococo" "Autobus" "Popincourt" "Antilope" "Ideechanson" "Telephone" "Raison" "Baobabouin" "Petitmari" "Quandjepense")

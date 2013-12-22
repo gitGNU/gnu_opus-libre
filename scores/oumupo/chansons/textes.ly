@@ -24,18 +24,18 @@ QuandjepenseTitre = "Quand je pense"
 RaisonTitre = "Sans raison"
 TelephoneTitre = "Le téléphone"
 
-AntilopeAuteur = "Jacques Roubaud."
-AutobusAuteur = "François Caradec."
-BaobouinAuteur = "Jacques Roubaud."
+AntilopeAuteur = "Jacques Roubaud"
+AutobusAuteur = "François Caradec"
+BaobouinAuteur = "Jacques Roubaud"
 CharlesAuteur = "Olivier Salon"
 DebutAuteur = "Hervé Le Tellier"
 IdeechansonAuteur = "Frédéric Forte"
-MakimococoAuteur = "Jacques Roubaud."
+MakimococoAuteur = "Jacques Roubaud"
 PetitmariAuteur = "Paul Fournel"
 PopincourtAuteur = "Jacques Jouet"
-QuandjepenseAuteur = "Jacques Roubaud."
-RaisonAuteur = "Ian Monk."
-TelephoneAuteur = "Jacques Roubaud."
+QuandjepenseAuteur = "Jacques Roubaud"
+RaisonAuteur = "Ian Monk"
+TelephoneAuteur = "Jacques Roubaud"
 
 \header {
   title = \Titre
@@ -45,25 +45,75 @@ TelephoneAuteur = "Jacques Roubaud."
   }
   copyright = \markup {
     © et \translate #'(1.5 . 0) \scale #'(-1 . 1) ©
-    V. Villenave, 2012. Licence Art Libre
+    V. Villenave \concat {\italic "et al.",} 2012.
+    Musique sous Licence Art Libre.
   }
   date = "2012"
 }
 
-
-
 \pointAndClickOff
 #(set-global-staff-size 16)
 
-dash = {
-  \once \override LyricHyphen #'minimum-distance = #4
-  \once \override LyricHyphen #'length = #2
-  \once \override LyricHyphen #'thickness = #1.2
-}
 
 \paper {
   first-page-number = #-1
+  bottom-margin = 40
 }
+
+taintedText =
+\markup \center-column {
+  \justify {
+    Les textes contenus dans cette partition restent propriété
+    de leurs auteurs, pour lesquels tous droits demeurent réservés.
+    La musique est en revanche publiée suivant les termes de la licence
+    \with-url #"http://artlibre.org/licence/lal"
+    \bold { Art Libre }
+    \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
+    Vous pouvez la copier, la modifier et la jouer \italic librement
+    sans contrevenir au droit d'auteur, à  condition de respecter les
+    termes de la licence (notamment en veillant à  mentionner le nom
+    des auteurs et adresses web d’origine).
+  }
+  \vspace #.2
+  \justify {
+    Pour obtenir une partition entièrement sous licence Libre, veuillez
+    recompiler la partition avec l’option \concat { \typewriter untainted , }
+    ce qui aura pour effet de remplacer tous les mots du texte d’origine
+    par des syllabes aléatoires (par défaut \concat { « pa » ,}
+    \concat { « ta » } et \concat { « touille »). } La partition ainsi
+    produite pourra être diffusée librement, sans autres restrictions que
+    celles indiquées par sa licence.
+  }
+}
+
+untaintedText =
+\markup \center-column {
+  \justify {
+    Les textes éventuellement contenus dans cette partition restent propriété
+    de leurs auteurs, pour lesquels tous droits demeurent réservés.
+    Toutefois, cet exemplaire a été compilé avec l’option
+    \concat { \typewriter untainted  : } tout ou partie des textes d’origine
+    ont été remplacés par des syllabes aléatoires, et peuvent donc être
+    diffusés suivant les termes de la licence
+    \with-url #"http://artlibre.org/licence/lal"
+    \bold { Art Libre }
+    \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
+  }
+  \vspace #.2
+  \justify {
+    La partition ainsi obtenue peut être \italic librement copiée,
+    interprétée et modifiée sans contrevenir au droit d'auteur,
+    à condition de respecter les termes de la licence (notamment
+    en veillant à  mentionner le nom des auteurs et adresses web d’origine).
+  }
+}
+
+#(define-markup-command (choose-text layout props) ()
+  (let ((text (if (ly:get-option 'untainted)
+                  untaintedText
+                  taintedText)))
+  (interpret-markup layout props text)))
+
 
 \pageBreak
 \markup \fill-page {
@@ -84,27 +134,42 @@ dash = {
   }
   \fill-line {
     \override #'(box-padding . 6)
+    \override #'(line-width . 100)
     \box \center-column {
+      \bold "Textes d’origine :"
+      \justify {
+        Jacques Roubaud,
+        François Caradec,
+        Olivier Salon,
+        Hervé Le Tellier,
+        Frédéric Forte,
+        Paul Fournel,
+        Jacques Jouet,
+        et Ian Monk.
+        Tous les auteurs sont membres de l’Oulipo
+        \concat { ( \with-url #"http://oulipo.net" \typewriter http://oulipo.net )} ;
+        ces textes ont été réunis ou rédigés dans le cadre du spectacle
+        \italic "Chant’Oulipo"
+        \concat { ( \with-url #"http://chantoulipo.net" \typewriter http://chantoulipo.net )}
+        sur une idée de Jehanne Carillon et dans une mise en scène de Laurent Gutmann.
+      }
+      \vspace #.5
+      \bold "Mise en musique :"
       \line {
         Copyright & copyleft © Valentin Villenave, 2012 pour la mise en musique.
       }
-      %TODO: copyright notice for texts.
       \line {
         \with-url #"http://valentin.villenave.net"
         \typewriter http://valentin.villenave.net
       }
-      \vspace #.5
-      \override #'(line-width . 100)
       \justify {
-        Cette partition est publiée suivant les termes de la licence
-        \with-url #"http://artlibre.org/licence/lal"
-        \bold { Art Libre }
-        \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
-        Vous pouvez la copier, la modifier et la jouer \italic librement
-        sans contrevenir au droit d'auteur, à  condition de respecter les
-        termes de la licence (notamment en veillant à  mentionner le nom
-        de l’auteur et l’adresse web d’origine).
+        Les chansons « Début » et « Quand je pense » sont mises
+        en musique par \bold "Mike Solomon"
+        \concat { ( \with-url #"http://mikesolomon.org" \typewriter http://mikesolomon.org ),}
+        de l’Oumupo.
       }
+      \vspace #.5
+      \choose-text
       \vspace #.5
       \line {
         Gravure réalisée au moyen du logiciel libre
@@ -229,8 +294,8 @@ IdeechansonVoixTexte = \lyricmode {
   fau -- drait re -- voir
           le mode d’em -- ploi
 
-                  Quelle est l’i -- dée de la chan -- son ?
-                  Com -- bien de cou -- leurs au Ja -- pon ?
+                  Quelle est l’i -- dée de la chan -- son_?
+                  Com -- bien de cou -- leurs au Ja -- pon_?
                   J’veux pas sa -- voir je m’en tam -- ponne
                   Le pa -- ra -- dis c’est mo -- no -- tone
 
@@ -243,9 +308,9 @@ IdeechansonVoixTexte = \lyricmode {
           la tête à qui
 
                   Le pa -- ra -- dis c’est mo -- no -- tone
-                  Quelle est l’i -- dée de la chan -- son ?
+                  Quelle est l’i -- dée de la chan -- son_?
                   J’veux pas sa -- voir je m’en tam -- ponne
-                  Com -- bien de cou -- leurs au Ja -- pon ?
+                  Com -- bien de cou -- leurs au Ja -- pon_?
 
   de temps en temps
           quand ça s’a -- llonge
@@ -255,10 +320,10 @@ IdeechansonVoixTexte = \lyricmode {
   et puis tout dort
           \dash tais -- toi mon ange
 
-                  Com -- bien de cou -- leurs au Ja -- pon ?
+                  Com -- bien de cou -- leurs au Ja -- pon_?
                   Le pa -- ra -- dis c’est mo -- no -- tone
                   J’veux pas sa -- voir je m’en tam -- ponne
-                  Quelle est l’i -- dée de la chan -- son ?
+                  Quelle est l’i -- dée de la chan -- son_?
 
   ré fa ré fa mi do mi do
   fa ré fa ré do mi do mi
@@ -266,8 +331,8 @@ IdeechansonVoixTexte = \lyricmode {
   La mé -- lo -- die
           (s’a -- rrête i -- ci)
 
-                  Quelle est l’i -- dée de la chan -- son ?
-                  Com -- bien de cou -- leurs au Ja -- pon ?
+                  Quelle est l’i -- dée de la chan -- son_?
+                  Com -- bien de cou -- leurs au Ja -- pon_?
                   J’veux pas sa -- voir je m’en tam -- ponne
                   Le pa -- ra -- dis c’est mo -- no -- tone
 }
@@ -485,7 +550,7 @@ RaisonVoixTexte = \lyricmode {
   Tu me de -- man -- des la rai -- son
   de ce -- tte danse
   y_en a pas tu sais
-  le mouve -- ment su -- ffit à lui -- même
+  le mou -- ve -- ment su -- ffit à lui -- même
   pour scul -- pter sa pla -- ce dans l’air
 
   Pour scul -- pter sa pla -- ce dans l’air

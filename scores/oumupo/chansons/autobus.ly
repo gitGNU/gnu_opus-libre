@@ -32,7 +32,7 @@ AutobusPianoMd =
 %\transpose sol fa
 \relative do' {
   \clef treble R1
-  r4 <do mib sol la>2^\markup {
+  r4\p <do mib sol la>2--(^\markup {
     \score {
       \new RhythmicStaff \with {
         \remove Time_signature_engraver
@@ -41,41 +41,41 @@ AutobusPianoMd =
       } { do8 do do4 do s r do8 do do4 do }
       \layout { indent = 0 }
     } \italic etc.
-  } q4
-  r <si mi la>2 q4
-  r <do mib sol la>2 <do mib fad la>4
-  r <si mi la>2 q4
-  r <sold re' mi>2 q4
-  r <sol do fa>2 <sol do fad>4
-  r <la do sol'>2 <lad dod fad>4
-  r <si re mi>2 <si re mi>4
-  r <do mi sol>2 <do fa>4
-  r <si re mi sol>2 <si re mi sol>4
-  <dod mi fad la>1
-  r4 <do mib sol la>2 q4
-  r <do mib fad la>2 <do mib sol la>4
-  r <si mi la>2 q4
+  } q4--)
+  r <si mi la>2--( q4--)
+  r <do mib sol la>2--( <do mib fad la>4--)
+  r <si mi la>2(-- q4--)
+  r <sold re' mi>2(-- q4--)
+  r <sol do fa>2(-- <sol do fad>4--)
+  r <la do sol'>2(-- <lad dod fad>4--)
+  r <si re mi>2(-- <si re mi>4--)
+  r <do mi sol>2(-- <do fa>4--)
+  r^\< <si re mi sol>2(-- <si re mi sol>4--)
+  <dod mi fad la>1--\mp \fermata
+  r4 <do mib sol la>2--( q4--)
+  r <do mib fad la>2--( <do mib sol la>4--)
+  r <si mi la>2--( q4--)
   r <si re mi>2 <si re fa>4
-  r <sol do mi>2 <fad do' mi>4
+  r <sol do mi>2--( <fad do' mi>4--)
   r <fa sol si mi>2 <sol sib mi>4
-  r <lab do reb fa>2 <lab reb solb>4
-  <si mi sol>1
-  <la do mi sol>\arpeggio
+  r <lab do reb fa>2--( <lab reb solb>4--
+  <si mi sol>1--)
+  <la do mi sol>--\arpeggio
   <do mib fad>
-  r4 <si re mi sol>2 <si re mi sol>4
-  <si re mi sol>1
+  r4 <si re mi sol>2--( <si re mi sol>4--
+  <si re mi sol>1--)\fermata
 }
 
 AutobusPianoMg =
 %\transpose sol fa
 \relative do' {
   \clef bass
-  R1 do,1 sol do, sol'
-  mi la, re sol
-  lab2 reb2
-  sol,1 sol,
-  do' do
-  sol sol2 sold la1
-  re2 do sib1
-  la re re, sol~ sol
+  R1 do,1-- sol-- do,-- sol'--
+  mi-- la,-- re-- sol--
+  lab2-- reb2--
+  sol,1-- sol,--\fermata
+  do'-- do--
+  sol-- sol2( sold la1)
+  re2-- do-- sib1--
+  la-- re-- re,-- sol--~ sol\fermata
 }

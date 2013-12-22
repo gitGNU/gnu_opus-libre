@@ -148,7 +148,7 @@ IdeechansonPianoMd =
   <re fad dod'>\arpeggio
   <do mi sold si>\arpeggio
   <do mi sold> <si red sol>
-  <sib re fad>1
+  <sib re fad>1\arpeggio
   do16\ppp mi sold sib, re fad do mi sold sib, re fad
   do sold' sib, fad' r2 \ottava #1 <mi'' mi'>\arpeggio
 }
@@ -177,7 +177,7 @@ IdeechansonPianoMg =
   <la, la'>2 <sol sol'>
   <lab lab'> <fad fad'>
   <re' fa la> <dod mi sold>
-  <do mib sol>1 <si, si'>
+  <do mib sol>1 <si, si'>\arpeggio
   re'8 \md <re' fad> r4 \mg
   do,8 \md <do' mi> r4 \mg
   sib,8 \md <re' fad> r4 \mg
@@ -194,7 +194,7 @@ IdeechansonPianoMg =
   <la, la'>2 <fad fad'>
   <lab lab'> <sol sol'>
   <re' fa la> <do mib sol>
-  <dod mi sold>1 <si, si'>
+  <dod mi sold>1 <si, si'>\arpeggio
   re'8-. \md <sib' fad'>-.\mp r4 \mg
   do,8-. \md <lab' mi'>-. r4 \mg
   re,8-. \md <sib' fad'>-. r4 \mg
@@ -209,7 +209,7 @@ IdeechansonPianoMg =
   R1
   <la,, la'>2 <fad fad'> <lab lab'> <sol sol'>
   <re' fa la> <do mib sol>
-  <dod mi sold> <si, si'>
+  <dod mi sold> <si, si'>\arpeggio
   fad'8-. \md <re'' fad>-.\p r4 \mg
   mi,,8-. \md <do'' mi>-. r4 \mg
   fad,,8-. \md <re'' fad>-. r4 \mg
@@ -221,6 +221,6 @@ IdeechansonPianoMg =
   <la,, la'>2 <sol sol'>
   <lab lab'> <fad fad'>
   <re' fa la> <dod mi sold>
-  <do mib sol>1\laissezVibrer
+  <do mib sol>1\arpeggio\laissezVibrer
   R1*2
 }

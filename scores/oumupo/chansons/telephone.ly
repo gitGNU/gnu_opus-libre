@@ -3,6 +3,9 @@
 
 \language "italiano"
 
+BassInstr = "Basse"
+BipInstr = "Téléphone"
+
 TelephoneVoix =
 \relative do' {
   \key si \minor
@@ -49,7 +52,7 @@ TelephoneVoix =
   r8 re \times 2/3 {r dod si} lad4 | r8 fad re'4 dod | si r \bar "|."
 }
 
-TelephoneBasse =
+TelephoneBass =
 \relative do' {
   \clef bass
   \key si \minor
@@ -155,50 +158,52 @@ TelephoneBip =
   r2
 }
 
-BipInstr = "Téléphone"
-
 TelephoneBipTexte = \lyricmode {
   \override LyricText.font-size = #-1
 #(make-sequential-music
   (map
    (lambda (num)
-     (let ((num (if (number? num)
+     (let ((num (if (< num 10)
                     (number->string num)
-                    num)))
+                    (make-char-markup num ))))
      (make-music 'LyricEvent
        ; gotta specify a duration,
        ; even though it will be ignored.
        'duration (ly:make-duration 2 0 1)
        'text num)))
    (list
+    ; in case we need to untaint the whole score,
+    ; we can’t use strings here, only numbers.
+    ; Thus, # is referred to as Unicode decimal 32, and
+    ; guess what’s the number for * ?
     4 7
-    4 "#"
-    4 8 "#"
+    4 35
+    4 8 35
     
     7 9 7 9
     7 5 9 7 5 7 9 7 4 1
-    4 8 "#"
+    4 8 35
     
-    4 8 8 "#"
-    3 "#" 8 5 1 9 4
+    4 8 8 35
+    3 35 8 5 1 9 4
     2 0
     
-    9 "#" 0 5 3
-    "*" 1 4
+    9 35 0 5 3
+    42 1 4
     4 7 7 0
     
     1 4 5 3 6 9 2 5 8
-    "#" "*" 0 "#" 9 7 5
+    35 42 0 35 9 7 5
     5 4 1
     
-    5 8 5 8 8 "#" 8 "#"
-    1 4 1 5 8 "#"
-    8 7 4 "*"
+    5 8 5 8 8 35 8 35
+    1 4 1 5 8 35
+    8 7 4 42
     
     7 5 0 9
     1 4 8
-    "#" 8 7 4 2
-    6 6 1 6 2 6 1 6 9 "#"
+    35 8 7 4 2
+    6 6 1 6 2 6 1 6 9 35
     4
     )))
 }
