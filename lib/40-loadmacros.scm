@@ -24,7 +24,6 @@
 		  token)))
     `(define-public ,sym ,funct)))
 
-
 (defmacro staff-change-command (token)
   (let* ((str (primitive-eval token))
          (sym (if (defined-string? token)
@@ -64,7 +63,7 @@
           (begin
             (ly:debug-message "Loading macros file ~a..." x)
             ;; ugh.
-            (load (string-append "../" x))))
+            (scm-load (string-append "../" x))))
        (find-files dir ".scm$")))
 
 (define eval-macros

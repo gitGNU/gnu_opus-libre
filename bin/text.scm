@@ -19,8 +19,8 @@
 
 ;; Macros for entering text elements.
 
-(load "../lib/libtext.scm")
-(load "../lib/libgraphics.scm")
+(scm-load "../lib/libtext.scm")
+(scm-load "../lib/libgraphics.scm")
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn
@@ -172,3 +172,7 @@
          \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
+
+(define untaint
+   (define-music-function (parser location expr) (ly:music?)
+     #{ $(untaint-this expr) #}))

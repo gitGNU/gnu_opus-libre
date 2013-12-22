@@ -17,7 +17,7 @@
 ;------------------------------------------------------------------;
 
 
-(load "liblayout.scm")
+(scm-load "liblayout.scm")
 
 (define-public (include-ly dir . hidden?)
   "Include all LilyPond code found in DIR, recursively.
@@ -31,7 +31,7 @@
                             (string-take-right x (string-length conf:local-ly-score)))
                (ly:debug-message "Skipping local score file: ~a..." x)
                (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
-         ly-files)))
+         (reverse ly-files))))
 
 (define eval-layout
   (include-ly conf:layout-dir))

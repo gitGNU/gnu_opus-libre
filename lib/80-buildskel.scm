@@ -17,9 +17,11 @@
 ;------------------------------------------------------------------;
 
 
-(load "libdynamics.scm")
+(scm-load "libdynamics.scm")
+(scm-load "libtext.scm")
 
 (define *has-timeline* (make-parameter #f))
+(define *untainted* (make-parameter #f))
 
 (define (assoc-name alist name)
   "If NAME begins with a lower case letter, then
@@ -38,13 +40,19 @@ try to find a matching entry in ALIST."
         (begin (ly:debug-message "Variable ~a doesn't exist." name)
                (make-music 'Music 'void #t)))))
 
-(define (make-this-text name suffix)
+(define (make-this-text name suffix . disclaimer)
   "Associate NAME with SUFFIX, and check if a suitable
 markup exists."
   (let ((mark (ly:parser-lookup parser
                                 (string->symbol
                                  (string-append name suffix)))))
-    (if (markup? mark) mark
+    (if (markup? mark)
+        (if (and (not-null? disclaimer) (*untainted*))
+            (markup
+             #:concat ("(" (car disclaimer))
+            ; #:hspace 1
+             #:concat (mark ".)"))
+            mark)
         (begin
           (ly:debug-message "No text found in ~a~a" name suffix)
           (if (ly:get-option 'use-variable-names)
@@ -147,7 +155,9 @@ exists with that name.  If so, parse it."
 ;; Create Lyrics contexts accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (current-name (string-append (*current-part*) name)))
+           (current-name (string-append (*current-part*) name))
+           (tainted? (or (is-this-tainted? (*current-part*))
+                         (is-this-tainted? current-name))))
       #{
         $(let* ((musiclist (list #{ {} #}))
                 (numlist (if (ly:get-option 'only-suffixed-varnames)
@@ -156,10 +166,16 @@ exists with that name.  If so, parse it."
           (map (lambda (x)
                   (let* ((lyr-name (string-append current-name lang:lyrics-suffix
                                                   (string-capitalize x)))
-                        (lyrics (ly:parser-lookup parser (string->symbol lyr-name))))
+                         (lyrics (ly:parser-lookup parser (string->symbol lyr-name))))
                     (if (ly:music? lyrics)
-                        (append! musiclist (list
-                                            #{ \new Lyrics \lyricsto $name $lyrics #})))))
+                        (append! musiclist
+                          (list
+                           #{
+                             \new Lyrics \lyricsto $name
+                               $(if tainted?
+                                    (untaint-this lyrics)
+                                    lyrics)
+                           #})))))
                 numlist)
           (make-simultaneous-music musiclist))
       #})))

@@ -127,9 +127,11 @@ current-part music."
                       (local-layout (make-this-layout part lang:layout))
                       (layout $defaultlayout)
                       (header (make-module))
-                      (title (make-this-text part lang:title-suffix)))
+                      (title (make-this-text part lang:title-suffix))
+                      (author (make-this-text part lang:author-suffix lang:untaint-disclaimer)))
 
                  (module-define! header 'piece title)
+                 (module-define! header 'author author)
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score (if local-layout local-layout layout))
                  (if (*pagebreak-before*) (add-music parser pagebreak))
@@ -138,6 +140,7 @@ current-part music."
                  (*has-timeline* #f)
                  (*pagebreak-before* #f)
                  (*pagebreak-after* #f)
+                 (*untainted* #f)
                  output-redirect))))
 
            struct)

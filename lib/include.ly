@@ -26,6 +26,7 @@
 %#(ly:set-option 'allow-suffixless-varnames #t)
 %#(ly:set-option 'no-auto-piano-dynamics#t)
 %#(ly:set-option 'git-branch-as-score-name #t)
+%#(ly:set-option 'untainted #t)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Base includes %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
