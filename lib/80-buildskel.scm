@@ -17,9 +17,11 @@
 ;------------------------------------------------------------------;
 
 
-(load "libdynamics.scm")
+(scm-load "libdynamics.scm")
+(scm-load "libtext.scm")
 
 (define *has-timeline* (make-parameter #f))
+(define *untainted* (make-parameter #f))
 
 (define (assoc-name alist name)
   "If NAME begins with a lower case letter, then
@@ -38,18 +40,35 @@ try to find a matching entry in ALIST."
         (begin (ly:debug-message "Variable ~a doesn't exist." name)
                (make-music 'Music 'void #t)))))
 
-(define (make-this-text name suffix)
+(define (make-this-text name suffix . disclaimer)
   "Associate NAME with SUFFIX, and check if a suitable
 markup exists."
   (let ((mark (ly:parser-lookup parser
                                 (string->symbol
                                  (string-append name suffix)))))
-    (if (markup? mark) mark
+    (if (markup? mark)
+        (if (and (not-null? disclaimer) (*untainted*))
+            (markup
+             #:concat ("(" (car disclaimer))
+            ; #:hspace 1
+             #:concat (mark ".)"))
+            mark)
         (begin
           (ly:debug-message "No text found in ~a~a" name suffix)
           (if (ly:get-option 'use-variable-names)
               (regexp-substitute/global #f "[A-Z]" name 'pre " "0 'post)
-              point-stencil)))))
+              (make-null-markup))))))
+
+(define (make-this-layout name suffix)
+  "Associate NAME with SUFFIX, and check if a local \\layout{} block
+exists with that name.  If so, parse it."
+  (let* ((fullname (string-append name (string-capitalize suffix)))
+         (def (ly:parser-lookup parser (string->symbol fullname))))
+    (if (ly:output-def? def)
+        (begin (ly:debug-message "Using layout definition from variable ~a" fullname)
+               def)
+        (begin (ly:debug-message "No layout definitions stored in ~a" fullname)
+               #f ))))
 
 (define newVoice
   ;;   "If NAME matches a defined music expression, then
@@ -101,7 +120,7 @@ markup exists."
                                       \filterDynamics $m
                                    #}))))))
            str-list)
-      (if (not (null? ret-list))
+      (if (not-null? ret-list)
           (make-simultaneous-music ret-list)
           (make-music 'Music 'void #t)))))
 
@@ -136,7 +155,9 @@ markup exists."
 ;; Create Lyrics contexts accordingly."
   (define-music-function (parser location name) (string?)
     (let* ((name (assoc-name lang:instruments name))
-           (current-name (string-append (*current-part*) name)))
+           (current-name (string-append (*current-part*) name))
+           (tainted? (or (is-this-tainted? (*current-part*))
+                         (is-this-tainted? current-name))))
       #{
         $(let* ((musiclist (list #{ {} #}))
                 (numlist (if (ly:get-option 'only-suffixed-varnames)
@@ -145,10 +166,16 @@ markup exists."
           (map (lambda (x)
                   (let* ((lyr-name (string-append current-name lang:lyrics-suffix
                                                   (string-capitalize x)))
-                        (lyrics (ly:parser-lookup parser (string->symbol lyr-name))))
+                         (lyrics (ly:parser-lookup parser (string->symbol lyr-name))))
                     (if (ly:music? lyrics)
-                        (append! musiclist (list
-                                            #{ \new Lyrics \lyricsto $name $lyrics #})))))
+                        (append! musiclist
+                          (list
+                           #{
+                             \new Lyrics \lyricsto $name
+                               $(if tainted?
+                                    (untaint-this lyrics)
+                                    lyrics)
+                           #})))))
                 numlist)
           (make-simultaneous-music musiclist))
       #})))
@@ -206,3 +233,16 @@ markup exists."
          \new Staff = $lang:lower-hand
            \removeDynamics \newVoice $lower
      >>#})))
+
+(define newChordNames
+  ;;   "If NAME matches a defined music expression, then
+  ;; create a Voice for it.  If a matching timeline can be
+  ;; found, try and squash it as well."
+  (define-music-function (parser location name) (string?)
+    (let* ((current-name (string-append (*current-part*) name))
+           (music (ly:parser-lookup parser (string->symbol current-name))))
+      (ly:debug-message "Loading music from ~a..." current-name)
+      (if (ly:music? music)
+          #{ \new ChordNames = $name $music #}
+          (begin (ly:debug-message "Variable ~a doesn't exist." current-name)
+          (make-music 'Music 'void #t))))))

@@ -67,3 +67,5 @@ A blank score will be created instead.")
                     conf:default-score))))))
 
 (define-public *current-part* (make-parameter ""))
+
+(define-public output-filename "")

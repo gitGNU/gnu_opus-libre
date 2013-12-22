@@ -41,7 +41,7 @@
                                               currents current-is-lower)
                                             prev-result)))
         (let* ((ch1 (car rest-chars))
-               (ch2 (and (not (null? (cdr rest-chars))) (cadr rest-chars)))
+               (ch2 (and (not-null? (cdr rest-chars)) (cadr rest-chars)))
                (this-char-string (string ch1))
                (is-lower (char-lower-case? ch1))
                (next-rest-chars (cdr rest-chars)))

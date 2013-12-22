@@ -19,13 +19,12 @@
 
 ;; Macros for entering text elements.
 
-(load "../lib/libtext.scm")
-(load "../lib/libgraphics.scm")
+(scm-load "../lib/libtext.scm")
+(scm-load "../lib/libgraphics.scm")
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn
-  ;;syntax: -\dyn instead of \dyn (see Issue #1264).
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (parser location arg) (markup?)
     (let ((d (make-music 'AbsoluteDynamicEvent)))
       (ly:music-set-property! d 'tweaks
         (acons 'self-alignment-X -0.8
@@ -40,7 +39,7 @@
       d)))
 
 (define dyncresc
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (parser location arg) (markup?)
     (make-music 'CrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -51,7 +50,7 @@
                             (else arg)))))
 
 (define dyndim
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (parser location arg) (markup?)
     (make-music 'DecrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -96,6 +95,7 @@
 ;;         (make-hairpin-text (*hairpin-text-direction*) text)))))
 
 (define hairpinText
+  ;; beware - this is a _music_ function, not a postfix event!
   (define-music-function (parser location text) (markup?)
     (make-hairpin-text DOWN text)))
 
@@ -108,7 +108,7 @@
     (make-hairpin-text DOWN text)))
 
 (define startText
-  (define-music-function (location parser txt) (markup?)
+  (define-event-function (parser location txt) (markup?)
      (make-text-span txt)))
 
 ;; for consistency only.
@@ -172,3 +172,7 @@
          \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
+
+(define untaint
+   (define-music-function (parser location expr) (ly:music?)
+     #{ $(untaint-this expr) #}))
