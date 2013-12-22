@@ -242,7 +242,7 @@ Guitare = \relative do' {
   r2 r4 re,16\mf sib dod la \t {sib8 fad re} \t {mi\< sib fad} |
   mi1\!\laissezVibrer <mi'''\1\harmonic>2-"h. 12"\f |
   \harmonics {\t {r4 mi\< mi~} mi8 mi mi4\!}
-  \bendAfter #-7 mi2~_"(bend)"\f mi1 r2 |
+   mi2~_"(bend)"\f \bendAfter #-7 mi1 r2 |
   R1.
 
   %%% 6 %%%
