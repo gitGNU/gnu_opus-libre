@@ -50,19 +50,19 @@ AutobusPianoMd =
   r <la do sol'>2(-- <lad dod fad>4--)
   r <si re mi>2(-- <si re mi>4--)
   r <do mi sol>2(-- <do fa>4--)
-  r^\< <si re mi sol>2(-- <si re mi sol>4--)
-  <dod mi fad la>1--\mp \fermata
+  r \< <si re mi sol>2(-- <si re mi sol>4--)
+  <dod mi fad la>1-- \mp \fermata
   r4 <do mib sol la>2--( q4--)
   r <do mib fad la>2--( <do mib sol la>4--)
   r <si mi la>2--( q4--)
   r <si re mi>2 <si re fa>4
   r <sol do mi>2--( <fad do' mi>4--)
   r <fa sol si mi>2 <sol sib mi>4
-  r <lab do reb fa>2--( <lab reb solb>4--
-  <si mi sol>1--)
+  r <lab do reb fa>2--(\< <lab reb solb>4--
+  <si mi sol>1--)\!
   <la do mi sol>--\arpeggio
   <do mib fad>
-  r4 <si re mi sol>2--( <si re mi sol>4--
+  r4\pp <si re mi sol>2--( <si re mi sol>4--
   <si re mi sol>1--)\fermata
 }
 

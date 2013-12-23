@@ -26,7 +26,7 @@ TelephoneTitre = "Le téléphone"
 
 AntilopeAuteur = "Jacques Roubaud"
 AutobusAuteur = "François Caradec"
-BaobouinAuteur = "Jacques Roubaud"
+BaobabouinAuteur = "Jacques Roubaud"
 CharlesAuteur = "Olivier Salon"
 DebutAuteur = "Hervé Le Tellier"
 IdeechansonAuteur = "Frédéric Forte"
@@ -70,7 +70,7 @@ taintedText =
     \bold { Art Libre }
     \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
     Vous pouvez la copier, la modifier et la jouer \italic librement
-    sans contrevenir au droit d'auteur, à  condition de respecter les
+    sans contrevenir au droit d’auteur, à  condition de respecter les
     termes de la licence (notamment en veillant à  mentionner le nom
     des auteurs et adresses web d’origine).
   }
@@ -102,7 +102,7 @@ untaintedText =
   \vspace #.2
   \justify {
     La partition ainsi obtenue peut être \italic librement copiée,
-    interprétée et modifiée sans contrevenir au droit d'auteur,
+    interprétée et modifiée sans contrevenir au droit d’auteur,
     à condition de respecter les termes de la licence (notamment
     en veillant à  mentionner le nom des auteurs et adresses web d’origine).
   }
@@ -206,7 +206,7 @@ AutobusVoixTexte = \lyricmode {
   % François Caradec.
   On a -- tten -- dait sous la pluie l’au -- to -- bus
   on se de -- man -- dait que \dash fait -- il_?
-  \dash y_a -- \dash t_—_il un bou -- chon rue Pic -- pus
+  \dash y_a -- \dash t_-_il un bou -- chon rue Pic -- pus
   u -- ne ma -- nif un in -- cen -- die_?
   On a -- tten -- dait long -- temps long -- temps.
   Au -- jour -- d’hui j’a -- ttends l’au -- to -- bus
@@ -254,7 +254,7 @@ DebutVoixTexte = \lyricmode {
   com -- ment ça peut com -- ment ça peut
   si vite aus -- si et pour tou -- jours et à ja -- mais
   com -- ment ça peut 
-  c'est pas pos -- sible
+  c’est pas pos -- sible
   moi ce que je
   tout ce que je 
   ça se -- rait que 
@@ -450,7 +450,7 @@ PetitmariVoixTexte = \lyricmode {
   Mais il pou -- rrait ê -- tre po -- li
 
   J’ai vé -- ri -- fié tou -- tes les pièces
-  Il a ce_qu’il faut à son es -- pè -- ce
+  Il a ce_qu'il faut à son es -- pè -- ce
   Sim -- ple -- ment il ne mar -- che pas
   Sim -- ple -- ment il ne bou -- ge pas
   Moi qui vou -- lais un brin de cour
@@ -478,34 +478,34 @@ PopincourtVoixTexte = \lyricmode {
   mieux qu’Cher -- bourg ou \dash Saint -- Pe -- ters -- burg
   ou même que Bou -- \dash logne -- Bi -- llan -- court
   il me dit viens, bah moi j’a -- ccours
-  ça_s’ -- ra le_p’ -- tit bo -- nheur du jour
+  ça_s' -- ra le_p' -- tit bo -- nheur du jour
   Po -- pin -- court Po -- pin -- court
   le lieu des ren -- \dash dez -- vous d’a -- mour
 
   Po -- pin -- court Po -- pin -- court
   a -- sile ou mar -- ché Po -- pin -- court
-  je_m’ pom -- ponne comme la Pom -- pa -- dour
-  fau -- drait pas_qu’ j’a -- rrive à la bourre
+  je_m' pom -- ponne comme la Pom -- pa -- dour
+  fau -- drait pas_qu' j’a -- rrive à la bourre
   j’lui pré -- pare mes yeux de ve -- lours
   ça vaut mieux que de beaux dis -- cours
   Po -- pin -- court Po -- pin -- court
   le lieu des ren -- \dash dez -- vous d’a -- mour
 
   Po -- pin -- court Po -- pin -- court
-  tout près_d’ la Fo -- \dash lie -- Mé -- ri -- court
+  tout près_d' la Fo -- \dash lie -- Mé -- ri -- court
   j’ai un bou -- quet de belles de jour
   plus un tu -- pper -- ware de boul -- gour
   une pro -- vi -- sion de ca -- lem -- bours
-  j’ai même a -- ppor -- té des_p’ -- tits fours
+  j’ai même a -- ppor -- té des_p' -- tits fours
   Po -- pin -- court Po -- pin -- court
   le lieu des ren -- \dash dez -- vous d’a -- mour
 
-  Il est pas là, je crie au_s’ -- cours_!
+  Il est pas là, je crie au_s' -- cours_!
   le temps de rê -- ver est bien court
-  quand_j’ fais_l’ poi -- reau j’ai les doigts gourds
+  quand_j' fais_l' poi -- reau j’ai les doigts gourds
   l’a -- mour pé -- dale dans le yo -- gourt
   rou -- lez trom -- pettes sou -- fflez tam -- bours
-  c’est ma chan -- son mor -- ceau_d’ bra -- voure
+  c’est ma chan -- son mor -- ceau_d' bra -- voure
   Po -- pin -- court Po -- pin -- court
   le lieu des grands râ -- teaux d’a -- mour_?
 

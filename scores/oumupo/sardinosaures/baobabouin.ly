@@ -153,24 +153,46 @@ BaobabouinPianoMd = \relative do' {
   <si re mi sol>-- <si re mi sol>--
   <si re mi sol>8-. <sib do mi sol>~-- |
   <sib do mi sol>2. |
-  <lab do mib sol>1\mf\arpeggio ^"(fill)"
-  <lab do re sol>2\arpeggio <lab si re? solb>\arpeggio |
-  <sol sib re fa>1\arpeggio ^"(fill)"
-  <sol sib reb mi>4.\arpeggio <sol sib re mi>8~ <sol sib re mi>2 |
-  <lab do mib sol>1\<\arpeggio ^"(fill)"
-  <si? mib fa sol>1\!\fermata
-  r4 <sol si do mi>-- <sol si do mi>--
-  <sol si do mi>8-. <sol sib re mi>~-- | <sol sib re mi>1 |
-  <lab do mib sol>1\arpeggio ^"(fill)"
-  <lab do re sol>2\arpeggio <lab si re? solb>\arpeggio |
-  <sol sib re fa>1\arpeggio ^"(fill)"
-  \clef bass r8 <mi! sib' mib>~->-- <mi sib' mib>2 r4 |
+  << {
+    r8 sol''4( sib8 \t {lab4 sol re)}
+    do8( re mib sib)~ sib2 |
+    r4 \acciaccatura dod8 re-. fa4( mib8
+    \t {re sib sol)}
+    \t {reb'16( mib reb} do4) do8-.\laissezVibrer
+  } \\ {
+    <lab, do mib sol>1\mf\arpeggio
+    <lab re sol>2\arpeggio <lab si re solb>\arpeggio |
+    <sol sib re fa>1 <sib mi?>2
+  } >>
+  r8 <sol sib reb mi>4. |
+  \t {r8\< sol( lab} \t {do mib lab}
+  \t {sol sib do} \t {mib fa fad}
+  <sol, si mib fa sol>2)\arpeggio \fermata \! r |
+  r4 <sol, si do mi>-- <sol si do mi>--
+  <sol si do mi>8-. <sol sib re mi>~-- |
+  <sol sib re mi>1 |
+  << {
+    r4 mib'''8--( ^"(straight)" mib-- la,?-- la--
+    do-- do)--~ do4
+    sib8( sib la? la solb solb |
+    fa fa4.) \t {mib8(\< fa solb} \t {la sib do)}
+  } \\ {
+    <lab,, do mib sol>1\arpeggio
+    <lab do re sol>2\arpeggio
+    <lab si re? solb>\arpeggio |
+    <sol sib re fa>1\arpeggio
+  } >>
+  mib'''8\! \clef bass <mi,,,! sib' mib>~->--
+  <mi sib' mib>2 r4 |
   <re fa la do>\<\arpeggio <fa la do mi>\arpeggio
   \clef treble
   <la do mi sol>\arpeggio <mi' la si red>\arpeggio |
-  <fa lab si mi>1\!\arpeggio \fermata ^"(cadenza)"
-  R1
-  r8 <do mi fa la>-.\p r4 r2 |
+  \ottava #1 r8\f dod''16(_\pp lad' fad8-.) dod16( lad'
+  fad8-.) fa16( solb) lab_"rit." lab-. sol-. la-.
+  <si, si'>4->\arpeggio \fermata
+  \ottava #0
+  r4 r2
+  r8 <do,, mi fa la>-.\p r4 r2 |
   r8 <si mib fa lab>-. r4 r2 |
   r4 <si do mi>( <fad' sol>)-. |
   \acciaccatura fad''8 <sol, sol'>4-. r2 |
@@ -189,7 +211,7 @@ BaobabouinPianoMd = \relative do' {
   <fa si re>-. r2 |
   r2 <fa' do'>4-.\pp r |
   <fad do'>4-. r8 <sol do>-. r2 |
-  <mi, sol la re>1:32\f\fermata ^ "(fill)"
+  <mi, sol la re>1:32\f\fermata
 }
 
 BaobabouinPianoMg = \relative do {
@@ -210,18 +232,29 @@ BaobabouinPianoMg = \relative do {
   re4.-- re8 la4-- re-- |
   reb4.-- lab8~-- lab reb lab( sol) |
   do2-- r4 | do-. sib8( lab sol4) |
-  fa2.-- fa4 | sib2.-- sib4 |
-  mib,2-- re4-- reb-- |
-  do2-- r4 do' |
-  fa,2.-- fa4 |
-  <reb lab'>1\fermata
-  do2 r |
-  r4 do' sib8( lab sol4) |
-  fa2.-- fa4 | sib2.-- sib4 |
-  mib,2-- re4-- reb-- |
-  do2-- r4 do |
-  re1-- <sol, sol'>1->--\fermata
-  R1
+  fa-- sol-- lab-- la-- |
+  sib-- sib,8-- si'( do4--) re-- |
+  mib-- sol,-- re'-- reb-- |
+  do-- sib8-- sol( do,4--) solb'-- |
+  fa-- sol-- lab-- \t {fa8( mi mib)} |
+  <reb lab'>2 \fermata r4 si
+  do4.-- do8 sol4.-- sol8 |
+  do4 do'-. sib8( lab sol4) |
+  fa-- sol-- lab-- \t {fa8 lab fa} |
+  sib4-- si'-- do-- re,--
+  mib-- mib,8-- mib'( re4--) reb-- |
+  do,8-- fad( sol-.) do~-- do4 do,-- |
+  re-- mi-- fa-- fad--
+  \set tieWaitForNote = ##t
+  << {
+    r4 \clef treble
+    <fa'' lab si mi>2.\arpeggio \fermata
+    s4
+  } \\ {
+    <sol,,, sol'>1~ \oneVoice
+    \clef bass q4_\fermata
+  } >>
+  r4 r2
   r8 <re'' la'>-. r4 r2 |
   r8 <reb sol>-. r4 r2 |
   r4 <do sol'>( sol)-. |
@@ -238,5 +271,7 @@ BaobabouinPianoMg = \relative do {
   r4 sol'-. r |
   sol'4-. r2 |
   R1*2
-  <do, sol' sib>1 \fermata
+  <do, sol' sib>2.:32 \fermata
+  \ottava #-1
+  \acciaccatura sol,8 do,4->-.
 }

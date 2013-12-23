@@ -121,8 +121,8 @@ QuandjepensePianoMd =
   r8 re,( mib fa lab sib
   <mib, la do>4.)
   \pl {<sol lab> <sib re> <sib mib> <sol lab do>4}
-  {\times 6/4 {re'16(^\< mib fa sol}
-  lab8.--^\mf sol-- fa-- fad-- sol4--}
+  {\times 6/4 {re'16(^\< mib fa sol)}
+  lab8.--^\mf sol-- fa-- fad-- sol4-- }
   re16( sol do, mib fa lab \times 2/3 {sib do re)} |
   <mib, lab mib'>4.(\arpeggio re'8. do) |
   sib8( sol re do8. sib)
@@ -135,7 +135,7 @@ QuandjepensePianoMd =
   do''-- sib-- lab-- |
   << {\oneVoice <sol, re' sol>4-- sol16 do mib sol8.
   \times 2/3 {lab,16 dob mib~}
-  \voiceTwo <lab, dob mib sol>2.~ q} \\
+  \voiceTwo <lab, dob mib sol>2.~ <lab mib' sol>} \\
   {s2. \voiceOne r8. dob'~ dob8 sib4 r8 dob4 sib8 lab sol} >>
   <sol, lab mib'>4.~ mib'8( re do
   <mib, lab do re>4.)~ <mib lab sib re>4 do'8 |
