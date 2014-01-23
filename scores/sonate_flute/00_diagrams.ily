@@ -61,7 +61,7 @@ bflattrill =
 bnatural =
 \markup \override #'(size . 0.5) \woodwind-diagram #'flute
   #'((lh . (b))
-     (cc . (twoR three four five six))
+     (cc . (two three four))
      (rh . (ees)))
 
 highc =
@@ -78,11 +78,12 @@ highcsharp =
 
 highd =
 \markup \override #'(size . 0.5) \woodwind-diagram #'flute
-  #'((lh . ())
-     (cc . (twoR threeR four five))
-     (rh . (ees)))
+  #'((lh . (b))
+     (cc . (two three))
+     (rh . (ees d)))
 
 %% Probably ridiculously wrong.
+%% Surprise: turns out it isn’t.
 highe =
 \markup \override #'(size . 0.5) \woodwind-diagram #'flute
   #'((lh . ())

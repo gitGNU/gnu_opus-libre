@@ -805,7 +805,7 @@ IIIPianoMg = \relative do' {
   \pl {
     mi,,4--(_\pp fa--)\oneVoice r \voiceTwo
     mi--( fa-- fad--) \oneVoice r \voiceTwo
-    mi--( fa-- sol-- la-- lab--) r mi--( fa--
+    mi--( fa-- sol-- la-- sold--) r mi--( fa--
     sol-- sib-- reb-- dob-- sib--) r mi,--( fa--
     sol-- sib-- re-- fad-- mib-- reb-- do-- sib--
     sol--) r reb'--( la-- fad-- mi-- red-- dod--
@@ -930,5 +930,6 @@ IIIPianoMg = \relative do' {
     \oneVoice dod4) \voiceTwo re dod\)
   } { s4 do' s sib8( do? re4) }
   r \pl {sib,( si \oneVoice do)} {sol'~ sol s}
-  r \pl {sib,(\ppp \> si2)} {dob'4( sib2)} r2\! |
+  r \pl {sib,(\ppp \> si2*3/4 s8\!)}
+  {dob'4( sib2)} r2 |
 }
