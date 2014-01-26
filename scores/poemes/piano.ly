@@ -1,12 +1,12 @@
 %-- Trois poèmes -- piano.ly --------------------------------------%
 % (c) 2004-2010 Valentin Villenave <valentin@villenave.net>
 
-\include "italiano.ly"
+\language "italiano"
 
 %-----------------------------    I    ----------------------------%
 
-UnPianoMd = \relative {
-  r4 | R2-\dyn "ppp_très clair"
+UnPianoMd = \relative do' {
+  r4 | R2\dyn "ppp_très clair"
   \pl <si' red sold>2.\arpeggio \laissezVibrer
   <si' red sold>\arpeggio \laissezVibrer |
   \pl <la, do fa>2\arpeggio \laissezVibrer
@@ -19,9 +19,9 @@ UnPianoMd = \relative {
   \pl <solb, dob mib>\arpeggio \laissezVibrer
   <fa' sib reb>\arpeggio \laissezVibrer s2 |
 
-  \t {la'8(-\dyn "ppp_sempre"\< re, la}
+  \t {la'8(\dyn "ppp_sempre"\< re, la}
   re-- re,--) \t {la'( re, la} re-- la--) |
-  <re, la'>-\dyn "pp_ben legato" do <re la'> la
+  <re, la'>\dyn "pp_ben legato" do <re la'> la
   <re la'> do <re la'> la
   <re la'> do <re la'> la |
   <si sold'> sold <red' sold> sold,
@@ -33,7 +33,7 @@ UnPianoMd = \relative {
   <re sol> sol, <sib sol'> sol |
   <re' la'> do <re la'> la
   <si sold'> sold <red' sold> sold, |
-  \ttt {la'16(-\dyn "pp_sempre" re, do la' re, la}
+  \ttt {la'16(\dyn "pp_sempre" re, do la' re, la}
   \ttt {la' re, do la' re, la}
   \ttt {la' re, do la' re, la}
   \ttt {la' re, do la' re, la)} |
@@ -42,7 +42,7 @@ UnPianoMd = \relative {
   \ttt {<la do>(\> fa do fa do' do)} |
   \pl {r4 r8 <do la'>-.( fa,-. do-.)}
   <fa' la? do>2.--\ppp |
-  <reb, sol>8-\dyn "pp_ben legato" do <reb sol> do
+  <reb, sol>8\dyn "pp_ben legato" do <reb sol> do
   <reb sol> do <reb sol> do |
   <mib sol> do <mib sol> do
   <mib sol> do <mib sol> do |
@@ -59,16 +59,16 @@ UnPianoMd = \relative {
   r8 <mi, red'>32^( lad16.)\laissezVibrer r4 |
   \t {r8 <do, si'>32^( fad16.)
   <la, sold'>32^( red16.)\laissezVibrer }
-  r4\! \t {sib,8_- ( \change Staff = "mg" sib,
-  la') \change Staff = "md" }
+  r4\! \t {sib,8_- ( \mg sib,
+  la') \md }
   lab'( la,) | <mib si' mi!>2.~ \arpeggio \sf
   <mib si' mi>2 r4 |
   R2*2 \clef bass
-  \t {r8\pp mib~( lab~)} <mib lab>2. |
+  \t {r8 mib~( lab~)} <mib lab>2. |
   \t {r8 sib~^( fa'~)} <sib, fa'>2 |
   \t {r16 la!~ mi'!~} mi8~ <la, mi'>2~ <la mi'> r8 |
   R1*5/8 \clef treble
-  <re' la'>8(-\dyn "pp_ben legato" do
+  <re' la'>8(\dyn "pp_ben legato" do
   <re la'>~ la~) <la re la'>2*5/4 |
   <re la'>8( do <re la'>4~) <re la'>2*5/4 |
   <re la'>8~_( dod mi si~) <si la'>2 |
@@ -79,7 +79,7 @@ UnPianoMd = \relative {
   <sold' si>\fermata\laissezVibrer
 }
 
-UnPianoMg = \relative {
+UnPianoMg = \relative do' {
   \clef bass
   r4 | <mi,,, mi'>2\laissezVibrer _"con Ped." s2. s2
   <mi mi'>2.\laissezVibrer s2 |
@@ -145,7 +145,7 @@ UnPianoMg = \relative {
 
 %-----------------------------    II   ----------------------------%
 
-DeuxPianoMd = \relative {
+DeuxPianoMd = \relative do' {
   \slurUp
   \pl {
     s8 s16 <sib' mi> s <mi la> s <mi la>
@@ -173,7 +173,7 @@ DeuxPianoMd = \relative {
   \slurNeutral
   \pl
   {
-    s4-\dyn "ff_sempre" <lab, do re sol>8 s
+    s4\dyn "ff_sempre" <lab, do re sol>8 s
     s4 <lab do re sol>8 s
     %%FIXME: Issue #984
     s <lab do re sol> s16 <mi lad dod>8 s16
@@ -195,7 +195,7 @@ DeuxPianoMd = \relative {
   }
   \pl
   {
-    s-\dyn "mf_subito" <lab, re> s <lab reb> s <la do> s <fa la>
+    s\dyn "mf_subito" <lab, re> s <lab reb> s <la do> s <fa la>
     s <fa lab> s q s <fa la> s q
     s <fa lab> s q s <fa la> s q
     s <fa lab> s q s <fa la> s q
@@ -232,7 +232,7 @@ DeuxPianoMd = \relative {
   \longHairpin <la! mib' lab>4--\< q2 <mib' lab mi'!>2->--\!( <la,! mib' lab>4--~
   q <fa'! la! mi'!>2) q4(--\< q-- q--) <do re fad sib>-. <re fa sib re>2-> |
 
-  <re'' sol>16->(-\dyn "f_molto" la <re sol> la)
+  <re'' sol>16->(\dyn "f_molto" la <re sol> la)
   <sol dod>( mi <sol dod> mi)
   \pl
   {
@@ -271,24 +271,24 @@ DeuxPianoMd = \relative {
     <sol reb'>( lab sol mib) reb( mib sol lab)
     <sol reb'>( lab sol mib) lab( sol mib reb)
     mib( reb sib fa) sol( fa reb do)
-    fa( re! dob sib \change Staff = "mg" lab mi si lab)
+    fa( re! dob sib \mg lab mi si lab)
   }
   r2 R1*2
   <sol' lab sib reb>1--~ q |
   <fa sol sib>--~ q~ q~ q |
-  \change Staff = "mg"
+  \mg
   \set tieWaitForNote = ##t
-  reb,4(-\dyn "pp_(tre corde)"~ lab'~ \change Staff = "md"
-  \t { solb' la!~ \change Staff = "mg"
-  re,!~ \change Staff = "md" }
-  fa'2~ \change Staff = "mg"
-  do,,,2_-~ \change Staff = "md"
+  reb,4(\dyn "pp_(tre corde)"~ lab'~ \md
+  \t { solb' la!~ \mg
+  re,!~ \md }
+  fa'2~ \mg
+  do,,,2_-~ \md
   mi''''1*1/16)\fermata \laissezVibrer _"quasi niente"
-  \hideNotes fa, la, \change Staff = "mg"
+  \hideNotes fa, la, \mg
   re, lab reb, do, s s2
 }
 
-DeuxPianoMg = \relative {
+DeuxPianoMg = \relative do' {
   \clef bass
   <sol,, sol'>2*4--\ff\laissezVibrer
   r2 r4 <sol sol'>4.--_\< <lab lab'>4-- <sib sib'>8-. |
@@ -322,8 +322,8 @@ DeuxPianoMg = \relative {
   <dod sib' re>4-- q2 q->--( q4--~ q <sol'! fad' sold>2) |
   q4(-- q-- q--) <re dod'>-. <re lad' si fad' sold>2->\arpeggio
 
-  <sol, sol'>1~->-- -\dyn "f_molto" q~ q \t {<dod dod'>4--\> <re re'>-- <mi mi'>--} |
-  <sol sol'>1~\mp q~ q\dim r4\! s
+  <sol, sol'>1~->-- \dyn "f_molto" q~ q \t {<dod dod'>4--\> <re re'>-- <mi mi'>--} |
+  <sol sol'>1~\mp <sol sol'>~ <sol sol'> \dim r4\! s
   sol'16(\> fa re sib lab mi si! lab)\! |
   \pl { sol4-- sol2. sol4-- sol2. } { lab'1~ lab } |
   <sol, sol'>4--_\dim q2. q4-- q2.
@@ -334,12 +334,12 @@ DeuxPianoMg = \relative {
 
 %-----------------------------   III   ----------------------------%
 
-TroisPianoMd = \relative {
+TroisPianoMd = \relative do' {
   mi4--(\p mi2-- mi4--) |
   <mi sol>--( q2-- q4--) |
   <reb solb>--( <do fa>2-- q4--) |
-  r4\> r8 <la' re>-.--~ q2\! |
-  <si, mi>8-.(-\dyn "pp_(tre corde)" <la' re>-. <si, mi>-. <la' re>--)~ q2 |
+  r4\> r8 <la' re>-.--~ <la re>2\! |
+  <si, mi>8-.(\dyn "pp_(tre corde)" <la' re>-. <si, mi>-. <la' re>--)~ q2 |
   <si, mi>8-.( <la' re>-. <si, mi>-. <la' re>--)~ q2 |
   \pl
   {
@@ -355,14 +355,14 @@ TroisPianoMd = \relative {
   {
     <si mi>8( <la' re> <si, mi> <la' re>)~ <la re>4
     <si, mi>8( <la' re> <si, mi> <la' re>)~ <la re>4
-    <do, fa>8(-\dyncresc "poco cresc." <si' mi> <do, fa> <si' mi>)~ <si mi>4
+    <do, fa>8(\dyncresc "poco cresc." <si' mi> <do, fa> <si' mi>)~ <si mi>4
     <do, fa>8( <si' mi> <do, fa> <si' mi>)~ <si mi>4
     <mi, la>8(\mp <re' sol> <mi, la> <re' sol>)~ <re sol>4
     <mi, la>8( <re' sol> <mi, la> <re' sol>)~ <re sol>4
     <reb, solb sib>8(\> <mib' lab> <reb, solb> <sib' mib lab>)~ <sib mib lab>4
     <do, fa>8\!( <sib' mib lab>4)
   }
-  r8-\dyn "mf_sec" <fad, si!>-. r q-. r q-. r q-. r q-. r q-. |
+  r8\dyn "mf_sec" <fad, si!>-. r q-. r q-. r q-. r q-. r q-. |
   r <fad do' fa!>-. r q-. r q-. r q-. |
   r <sol? do? fad>-.-- r q-.-- r\> q-.-- r q-.-- r q-.-- |
   r\pp <sol! reb' solb>-.-- r q-.-- r q-.-- |
@@ -373,14 +373,14 @@ TroisPianoMd = \relative {
     \voiceOne r2 r4 r8 <si' mi la>-.--~ <si mi la>2
   }
   {
-    \oneVoice r8 <la,! re! mi!>4--(-\dyn "mp_ en dehors" mi'8 fa fa |
+    \oneVoice r8 <la,! re! mi!>4--(\dyn "mp_ en dehors" mi'8 fa fa |
     \voiceOne sol2.)^"ten" \oneVoice <fa, do' sol'>4-- <do' fa si>1\p->-- -"ped. al fine"~
     \voiceTwo <do fa si>~ <do fa>2
   }
   r2\fermata
 }
 
-TroisPianoMg = \relative {
+TroisPianoMg = \relative do' {
   \clef bass
   R1*3 \pl fad,1-- {r4 <si mi>2.--}
   R1*2 R2.*2

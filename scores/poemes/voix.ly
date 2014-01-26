@@ -1,9 +1,9 @@
 %-- Trois poèmes -- voix.ly ---------------------------------------%
 % (c) 2004-2010 Valentin Villenave <valentin@villenave.net>
 
-\include "italiano.ly"
+\language "italiano"
 
-UnSoprano = \relative {
+UnSoprano = \relative do' {
   \dynamicUp %%FIXME: this should be done by the skeleton
   \tempo "Adagio non troppo" 4 = 52
   \time 2/4
@@ -18,18 +18,18 @@ UnSoprano = \relative {
   \time 2/4
   r8 si--~ si si |
   \time 4/4
-  re8.(\< -\dyn "poco" re16 do8 do fa fa
+  re8.(\< \dyn "poco" re16 do8 do fa fa
   \longHairpin mib\> mib |
   lab2)\! r8 mib4--\pp fad8
   \bar "||"
   \ten re2. r4 |
   \time 6/4 R1.*2
   \time 4/4 R1
-  r4 si8 -\dyn "p_semplice" si sib4 re8 re16( fa |
-  dod4) si!8 si \t {sib4( -\dyn "senza cresc" mib sib')} |
+  r4 si8 \dyn "p_semplice" si sib4 re8 re16( fa |
+  dod4) si!8 si \t {sib4( \dyn "senza cresc" mib sib')} |
   re,2. r4 |
   \time 3/4 R2.
-  \t {r4 fa,8~( -\dyn "p_sempre" } \t {fa4 fa do'} |
+  \t {r4 fa,8~( \dyn "p_sempre" } \t {fa4 fa do'} |
   \time 4/4
   sol2) r4 fa | fa4.-- fa8--~ fa fa4-- do'8(~|
   \time 3/4
@@ -68,9 +68,9 @@ UnSoprano = \relative {
   si'2.--)\fermata r4 \bar "|."
 }
 
-DeuxSoprano = \relative {
+DeuxSoprano = \relative do' {
   \dynamicUp
-  \tempo "Presto agitato" 4 = 116~132
+  \tempo "Presto agitato" 4 = 116-132
   \time 2/2
   \grace sol'16\ff( sol'2.)-> sol4-- |
   sol-- sol-- sol8-- sol-- sol-- sol-- |
@@ -79,11 +79,12 @@ DeuxSoprano = \relative {
   \time 2/2
   r8 \grace sib,16( sib'8->)\!~ sib2. |
   \time 3/2
-  r4 re,~ -\dyn "ff_sempre" re16 mi->( sold,4.)~
+  r4 re,~ \dyn "ff_sempre" re16 mi->( sold,4.)~
   sold8 dod4--(\< sib8) | \break
   \time 2/2
   sol'2.->\! r4 |
-  r2\startText "poco a poco rit." si,!--(\p si-- si--\stopText |
+  r2 si,!--(\p \startText "poco a poco rit."
+  si-- si--\stopText |
   \time 3/2
   si2.--\> si--
   \bar "||"
@@ -91,16 +92,15 @@ DeuxSoprano = \relative {
   si--)\! r2 | R1*5/4
   \time 2/2
   R1*6
-  r2 r8 sol4.-> -\dyn "mf_intense" |
+  r2 r8 sol4.-> \dyn "mf_intense" |
   \grace lab16->( sol4.) sol
   \grace la16->( sol4)~ |
   \time 2/4
   sol sol |
   \time 3/4
   sib2--( solb4) | r fa(\< lab | mi'2--)\! r4 |
-  r2 mib4 |
-  \startText "poco a poco più agitato"
-  sol2--( re4) | r dod( mi) | sol2--( re4) |
+  r2 mib4 sol2--(\startText "poco a poco più agitato"
+  re4) | r dod( mi) | sol2--( re4) |
   r si(\< fa' | sib2.--)\f | r2 \longHairpin mi,4(\< |
   lab4.)\! re,8(\< sol4) \stopText |
   \time 2/2
@@ -112,15 +112,15 @@ DeuxSoprano = \relative {
   R1 r4 reb~\mf \dim reb16 sol mib4. |
   \t {do2 reb( sol)} |
   do,4.( sib8~ \t {sib4\> reb lab} |
-  sib2)\! r r r8 sib4. -\dyn "p_semplice" | fa4-- r r2 |
+  sib2)\! r r r8 sib4. \dyn "p_semplice" | fa4-- r r2 |
   r r8 sol4. | re4-- r r2 | R1*2
   r2 reb\pp \grace do16( \ten do'1--)~ do~ do4 r r2\fermata
   \bar "|."
 }
 
-TroisSoprano = \relative {
+TroisSoprano = \relative do' {
   \dynamicUp
-  \tempo "Andantino" 4 = 60~66
+  \tempo "Andantino" 4 = 60-66
   r4 mi\<(^"semplice" mi8 mi fa fa |
   sol4\mp) r r8 sol( sib sib |
   solb4) fa8\> fa la4( mib8)\! r |
