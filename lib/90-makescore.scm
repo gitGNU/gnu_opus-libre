@@ -19,6 +19,17 @@
 
 (define numbers #f)
 (define conf:structure numbers)
+(define *pagebreak-after* (make-parameter #f))
+(define *pagebreak-before* (make-parameter #f))
+
+; This is admittedly ugly.
+(define pagebreak
+  (make-music 'EventChord 'elements
+    '((make-music 'LineBreakEvent 'break-permission 'force)
+      (make-music 'PageBreakEvent 'break-permission 'force))
+    'page-break-permission 'force
+    'line-break-permission 'force
+    'page-marker #t))
 
 (define (alist-reverse alist)
   "Browse ALIST by looking for props, not by keys."
@@ -26,9 +37,10 @@
       (cons (cons (cdar alist) (caar alist))
             (alist-reverse (cdr alist)))))
 
+
 (define (ls-index str lst)
   "Where is STR in LST?"
-  (number->string (- (length lst) (length (member str lst)))))
+  (- (length lst) (length (member str lst))))
 
 (define (eval-skel file)
   "Load skeleton in FILE, and apply it to the
@@ -51,9 +63,9 @@ current-part music."
 ;; the output-dir directory.  If book-filename has already
 ;; been defined by the user, just keep it, otherwise it
 ;; will be named after the score directory's name in scores/."
-  (set! book-filename
-        (let* ((orig-filename (if (defined-string? 'book-filename)
-                                  book-filename
+  (set! output-filename
+        (let* ((orig-filename (if (defined-string? 'output-filename)
+                                  output-filename
                                   (ly:parser-output-name parser)))
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
@@ -85,25 +97,51 @@ current-part music."
                          ((list? defined-structure) defined-structure))))
       (if (string? (member arg struct))
           (set! struct arg))
+
       (map (lambda (part)
-             (let* ((skel-name (if (string? (find-skel arg)) arg (ly:parser-lookup parser 'skel)))
+         (if (string-suffix? "|" part)
+             (let* ((num (ls-index part struct))
+                    (trimmed (string-drop-right part 1)))
+               (*pagebreak-after* #t)
+               (set! part trimmed)
+               (list-set! struct num trimmed)))
+         (if (string-prefix? "|" part)
+             (let* ((num (ls-index part struct))
+                    (trimmed (string-drop part 1)))
+               (*pagebreak-before* #t)
+               (set! part trimmed)
+               (list-set! struct num trimmed)))
+         (if (string-suffix? (or ".ly" ".ily") part)
+             (let* ((regx (string-append "/" part "$"))
+                    (file (car (find-files (*current-score*) regx))))
+                (ly:parser-include-string parser (format #f "\\include \"~a\"" file)))
+             (let* ((skel-name (skel-file arg))
                     (skel-part (find-skel (string-append skel-name "-" part)))
-                    (skel-num (find-skel (string-append skel-name "-" (ls-index part struct)))))
+                    (skel-num (find-skel (string-append skel-name "-" (number->string (ls-index part struct))))))
                (if (string? skel-part) (eval-skel skel-part)
                    (if (string? skel-num) (eval-skel skel-num)
-                       (eval-skel (find-skel skel-name))))
+                       (eval-skel (find-skel (skel-file skel-name)))))
 
                (let* ((music (apply-skel (cons part arg) lang:instruments))
                       (score (scorify-music music parser))
-                      (layout (ly:output-def-clone $defaultlayout))
+                      (local-layout (make-this-layout part lang:layout))
+                      (layout $defaultlayout)
                       (header (make-module))
-                      (title (make-this-text part lang:title-suffix)))
-                 (module-define! header 'piece title)
+                      (title (make-this-text part lang:title-suffix))
+                      (author (make-this-text part lang:author-suffix lang:untaint-disclaimer)))
 
+                 (module-define! header 'piece title)
+                 (module-define! header 'author author)
                  (ly:score-set-header! score header)
-                 (ly:score-add-output-def! score layout)
+                 (ly:score-add-output-def! score (if local-layout local-layout layout))
+                 (if (*pagebreak-before*) (add-music parser pagebreak))
                  (add-score parser score)
-                 output-redirect)))
+                 (if (*pagebreak-after*) (add-music parser pagebreak))
+                 (*has-timeline* #f)
+                 (*pagebreak-before* #f)
+                 (*pagebreak-after* #f)
+                 (*untainted* #f)
+                 output-redirect))))
 
            struct)
       (make-music 'Music 'void #t))))

@@ -31,4 +31,8 @@
     timeSignatureSettings = #modern-time-signature-settings
     subdivideBeams = ##t
   }
+  \context {
+    \PianoStaff
+    connectArpeggios = ##t
+  }
 }

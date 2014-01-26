@@ -3,13 +3,13 @@
 # License: GNU GPL v3 or later
 
 [Desktop Entry]
-Name=Documentation
-Name[fr]=Documentation
+Name=Snippets
+Name[fr]=Snippets
 
-Comment=Framework documentation and licensing
-Comment[fr]=Documentation du code et licence
+Comment=Temporary snippet repository, waiting to be commited upstream
+Comment[fr]=Quelques exemples en attente d'être soumis en haut lieu.
 
 Icon=
 Type=Directory
-Path=share/doc
+Path=doc/snippets/
 Encoding=UTF-8

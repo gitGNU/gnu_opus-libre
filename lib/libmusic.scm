@@ -49,7 +49,7 @@
         (map (lambda (m) (add-script m x)) elts)))
      ((ly:music? elt) (add-script elt x))
      ((eq? eventname 'TieEvent) (set! tieEvent? #t)))
-    (if (not (null? rest)) (add-script music rest))
+    (if (not-null? rest) (add-script music rest))
     music))
 
 
@@ -88,3 +88,65 @@
           ((ly:music? e)
            (octavize e))))
   music)
+
+
+;;; Smart transposition -- from LSR #266
+
+(define  (naturalize-pitch p)
+ (let* ((o (ly:pitch-octave p))
+        (a (* 4 (ly:pitch-alteration p)))
+   ; alteration, a, in quarter tone steps, for historical reasons
+        (n (ly:pitch-notename p)))
+   (cond
+    ((and (> a 1) (or (eq? n 6) (eq? n 2)))
+     (set! a (- a 2))
+     (set! n (+ n 1)))
+    ((and (< a -1) (or (eq? n 0) (eq? n 3)))
+     (set! a (+ a 2))
+     (set! n (- n 1))))
+   (cond
+    ((> a 2) (set! a (- a 4)) (set! n (+ n 1)))
+    ((< a -2) (set! a (+ a 4)) (set! n (- n 1))))
+   (if (< n 0) (begin (set! o (- o 1)) (set! n (+ n 7))))
+   (if (> n 6) (begin (set! o (+ o 1)) (set! n (- n 7))))
+   (ly:make-pitch o n (/ a 4))))
+
+(define (naturalize music)
+ (let* ((es (ly:music-property music 'elements))
+        (e (ly:music-property music 'element))
+        (p (ly:music-property music 'pitch)))
+   (if (pair? es)
+       (ly:music-set-property!
+        music 'elements
+        (map (lambda (x) (naturalize x)) es)))
+   (if (ly:music? e)
+       (ly:music-set-property!
+        music 'element
+        (naturalize e)))
+   (if (ly:pitch? p)
+       (begin
+         (set! p (naturalize-pitch p))
+         (ly:music-set-property! music 'pitch p)))
+   music))
+
+;; copied from upstream scm/define-markup-commands.scm
+;; for some reason it wasn't define-public'ed there...
+
+(define (parse-my-duration duration-string)
+  "Parse the `duration-string', e.g. ''4..'' or ''breve.'',
+and return a (log dots) list.
+  Unlike the original `parse-simple-duration',
+this function is whitespace-insensitive."
+  (let* ((duration-string (string-trim-both duration-string))
+         (match (regexp-exec (make-regexp "(breve|longa|maxima|[0-9]+)(\\.*)")
+                             duration-string)))
+    (if (and match (string=? duration-string (match:substring match 0)))
+        (let ((len (match:substring match 1))
+              (dots (match:substring match 2)))
+          (list (cond ((string=? len "breve") -1)
+                      ((string=? len "longa") -2)
+                      ((string=? len "maxima") -3)
+                      (else (log2 (string->number len))))
+                (if dots (string-length dots) 0)))
+        (ly:error (_ "not a valid duration string: ~a") duration-string))))
+

@@ -17,17 +17,21 @@
 ;------------------------------------------------------------------;
 
 
-(load "liblayout.scm")
+(scm-load "liblayout.scm")
 
-(define-public (include-ly dir)
-  "Include all LilyPond code found in DIR, recursively."
-  (let ((ly-files (find-files dir ".i?ly$" #t)))
+(define-public (include-ly dir . hidden?)
+  "Include all LilyPond code found in DIR, recursively.
+ If HIDDEN is set, also load hidden or temporary files."
+  (let* ((regx (if (false-or-null? hidden?)
+                   "/[^\\._][^/]*\\.i?ly$"
+                   ".i?ly$"))
+         (ly-files (find-files dir regx #t)))
     (map (lambda (x)
            (if (string-ci=? conf:local-ly-score
                             (string-take-right x (string-length conf:local-ly-score)))
                (ly:debug-message "Skipping local score file: ~a..." x)
                (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
-         ly-files)))
+         (reverse ly-files))))
 
 (define eval-layout
   (include-ly conf:layout-dir))

@@ -20,7 +20,7 @@
 % Entry point for scores compilation.
 
 
-\version "2.13.35"
+\version "2.18"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,6 +34,9 @@
 
 %% Source code directory (see scores/ ) ---------------------------%
 scores = "free"
+% Setting this option overrides the scores variable with
+% the name of the current git branch.
+#(ly:set-option 'git-branch-as-score-name #t)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Optional %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

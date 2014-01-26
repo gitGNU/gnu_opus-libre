@@ -19,22 +19,59 @@
 
 ; Input macros.
 
-(load "../lib/libmusic.scm")
+(scm-load "../lib/libmusic.scm")
 
 ;; TODO: use make-simple-function everywhere possible.
 
 ;; Rhythm shortcuts -----------------------------------------------;
-(make-simple-function lang:tuplet-letter ; default: \t
-                      #{ \times 2/3 $x #})
+(make-function lang:tuplet-letter ; default: \t
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 3/2 $(if (not-null? span) span) $music #}))
 
-(make-simple-function lang:tuplet-letter-double ; \tt
-                      #{ \times 4/5 $x #})
+(make-function lang:tuplet-letter-double ; \tt
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 5/4 $(if (not-null? span) span) $music #}))
 
-(make-simple-function lang:tuplet-letter-triple ; \ttt
-                      #{ \times 4/6 $x #})
+(make-function lang:tuplet-letter-triple ; \ttt
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 6/4 $(if (not-null? span) span) $music #}))
 
-(make-simple-function lang:tuplet-letter-quad ; \tttt
-                      #{ \times 4/7 $x #})
+(make-function lang:tuplet-letter-quad ; \tttt
+  (define-music-function (parser location span music)
+    ((ly:duration? '()) ly:music?)
+    #{ \tuplet 7/4 $(if (not-null? span) span) $music #}))
+
+
+;; Time signature equivalence
+(define equiv
+ (define-music-function (parser location str) (string?)
+   (let* ((mark-ev (make-music 'MarkEvent))
+          (mark-ch (make-event-chord (list mark-ev)))
+          (equiv-lst (string-split str #\= ))
+          (before (parse-my-duration (car equiv-lst)))
+          (after (parse-my-duration (cadr equiv-lst)))
+          (before-mark (make-note-by-number-markup (car before) (cadr before) 1))
+          (after-mark (make-note-by-number-markup (car after) (cadr after) 1))
+          (equiv-mark
+            (make-concat-markup
+              (list
+                (make-general-align-markup Y DOWN
+                  (make-smaller-markup before-mark))
+                (make-simple-markup " ")
+                (make-simple-markup "=")
+                (make-simple-markup " ")
+                (make-general-align-markup Y DOWN
+                  (make-smaller-markup after-mark))
+                )))
+          (mark-set (context-spec-music
+              (make-property-set 'rehearsalMark equiv-mark)
+              'Score)))
+         (ly:music-set-property! mark-ev 'origin location)
+         (ly:music-set-property! mark-ev 'label equiv-mark)
+         mark-ch)))
 
 ;; Auto octavation ------------------------------------------------;
 (define oct
@@ -50,12 +87,13 @@
 (staff-change-command lang:upper-hand) ;; depending on your input language:
 (staff-change-command lang:lower-hand) ;; \rh or \md etc. for switching staves.
 
-
+;; Hiding stuff ---------------------------------------------------;
 (define hideNote #{
 \once \override Dots #'transparent = ##t
 \once \override NoteHead #'transparent = ##t
 \once \override NoteHead #'no-ledgers = ##t
 \once \override Stem #'transparent = ##t
+\once \override Flag #'transparent = ##t
 \once \override Beam #'transparent = ##t
 \once \override Accidental #'transparent = ##t
 #})
@@ -73,6 +111,28 @@
 \once \override TupletNumber #'transparent = ##t
 #})
 
+(define noTuplets
+  (define-music-function (parser location x) (ly:music?)
+  #{
+\override TupletBracket #'transparent = ##t
+\override TupletNumber #'transparent = ##t
+$x
+\revert TupletBracket #'transparent
+\revert TupletNumber #'transparent
+#}))
+
+(define tupletsOff #{
+\override TupletBracket #'transparent = ##t
+\override TupletNumber #'transparent = ##t
+#})
+
+(define tupletsOn #{
+\override TupletBracket #'transparent = ##f
+\override TupletNumber #'transparent = ##f
+#})
+
+
+;; Stems and beaming ----------------------------------------------;
 (define oneStemDown #{
 \once \override Stem #'direction = #DOWN
 #})
@@ -82,27 +142,98 @@
 #})
 
 (define graceNote #{
-\once \set fontSize = #-2
+%% Pasted from graceSettings definition in engraver-init.ly
+%% \once \override Stem #'direction = #UP
+\once \override Stem #'font-size = #-3
+\once \override NoteHead #'font-size = #-3
+\once \override TabNoteHead #'font-size = #-4
+\once \override Dots #'font-size = #-3
+\once \override Stem #'length-fraction = #0.8
+\once \override Flag #'font-size = #-3
+%% \once \override Stem #'no-stem-extend = ##t
+\once \override Beam #'beam-thickness = #0.384
+\once \override Beam #'length-fraction = #0.8
+\once \override Accidental #'font-size = #-4
+\once \override AccidentalCautionary #'font-size = #-4
+%% \once \override Slur #'direction = #DOWN
+\once \override Script #'font-size = #-3
+\once \override Fingering #'font-size = #-8
+\once \override StringNumber #'font-size = #-8
 #})
 
 (define graceNotes
   (define-music-function (parser location x) (ly:music?)
-  #{ \tiny $x \normalsize #}))
+  #{
+%% \override Stem #'direction = #UP %% Nope.
+\override Stem #'font-size = #-3
+\override Flag #'font-size = #-3
+\override NoteHead #'font-size = #-3
+\override TabNoteHead #'font-size = #-4
+\override Dots #'font-size = #-3
+\override Stem #'length-fraction = #0.8
+%% \override Stem #'no-stem-extend = ##t %% Not sure.
+\override Beam #'beam-thickness = #0.384
+\override Beam #'length-fraction = #0.8
+\override Accidental #'font-size = #-4
+\override AccidentalCautionary #'font-size = #-4
+%% \override Slur #'direction = #DOWN
+\override Script #'font-size = #-3
+\override Fingering #'font-size = #-8
+\override StringNumber #'font-size = #-8
+$x
+%% \revert Stem #'direction
+\revert Stem #'font-size
+\revert NoteHead #'font-size
+\revert TabNoteHead #'font-size
+\revert Dots #'font-size
+\revert Stem #'length-fraction
+%% \revert Stem #'no-stem-extend
+\revert Beam #'beam-thickness
+\revert Beam #'length-fraction
+\revert Accidental #'font-size
+\revert AccidentalCautionary #'font-size
+%% \revert Slur #'direction
+\revert Script #'font-size
+\revert Fingering #'font-size
+\revert StringNumber #'font-size
+#}))
 
 (define lightBeam #{
-\once \override Beam #'beam-thickness = #0.36
+\once \override Beam #'beam-thickness = #0.384
 \once \override Beam #'gap = #0.5
+\override Flag #'font-size = #-3
 #})
 
 (define lightBeams
   (define-music-function (parser location x) (ly:music?) #{
-\override Beam #'beam-thickness = #0.36
+\override Beam #'beam-thickness = #0.384
 \override Beam #'gap = #0.5
+\override Flag #'font-size = #-3
 $x
 \revert Beam #'beam-thickness
 \revert Beam #'gap
+\revert Flag #'font-size
 #}))
 
+(define fullBeat #{
+\set baseMoment = #(ly:make-moment 1 4)
+% the beatStructure length doesn’t really matter here,
+% 16 should be enough for most cases.
+\set beatStructure = #'(1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1)
+#})
+
+(define halfBeat #{
+\set baseMoment = #(ly:make-moment 1 8)
+\set beatStructure = #'(2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2)
+#})
+
+(define quarterBeat #{
+\set baseMoment = #(ly:make-moment 1 6)
+\set beatStructure = #'(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4)
+#})
+
+
+;; Expressive marks -----------------------------------------------;
 (define longHairpin #{
 \once \override Hairpin #'to-barline = ##f
 #})
@@ -114,6 +245,8 @@ $x
 \revert Hairpin #'to-barline
 #}))
 
+
+;; Custom note heads ----------------------------------------------;
 (define whiteNote
   (define-music-function (parser location x) (ly:music?)
     (set! (ly:music-property x 'tweaks)
@@ -124,9 +257,14 @@ $x
 (define blackNote
   (define-music-function (parser location x) (ly:music?)
     (set! (ly:music-property x 'tweaks)
-                               (acons 'duration-log 4
-                                  (ly:music-property x 'tweaks)))
-                         x))
+       (acons 'before-line-breaking
+              (lambda (grob)
+                (let ((dots (ly:grob-object grob 'dot)))
+                  (ly:grob-set-property! grob 'duration-log 2)
+                  (and (ly:grob? dots)
+                       (ly:grob-set-property! dots 'dot-count 0))))
+              (ly:music-property x 'tweaks)))
+        x))
 
 (define parlato
  (define-music-function (parser location x) (ly:music?)
@@ -171,3 +309,8 @@ $x
 \revert Beam #'transparent
 \revert Stem #'transparent
 \revert Dots #'transparent #}))
+
+(define smart
+ (define-music-function (parser location x) (ly:music?)
+   (naturalize x)))
+
