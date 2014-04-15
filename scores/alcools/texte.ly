@@ -18,9 +18,6 @@ SigneTitre = "Signe"
 SaltimbanquesTitre = "Saltimbanques"
 VentTitre = "Le vent nocturne"
 
-NuitSopranoTexte = { }
-
-
 \header {
   title = \markup {
     \vconcat
@@ -32,7 +29,7 @@ NuitSopranoTexte = { }
   }
   subtitle = "pour soprano et piano"
   composer = "Valentin Villenave"
-  date = "février 1998 − mai 2014"
+  date = "mars 1999 − mai 2014"
 }
 
 \paper {
@@ -164,11 +161,11 @@ MirabeauSopranoTexte = \lyricmode {
 ColchiquesSopranoTexte = \lyricmode {
   \set ignoreMelismata = ##t
 
-  Le pré est vé -- né -- neux mais jo -- li en au -- tomne
-  Les va -- ches y pai -- ssant
-  Len -- te -- ment s’em -- poi -- sonnent
-  Le col -- chi -- que cou -- leur de cerne et de li -- las
-  Y fleu -- rit tes y -- eux sont co -- mme ce -- tte \dash fleur -- là
+  Le pré est vé -- né -- neux __ _ mais jo -- li en au -- tomne
+  Les va -- _ ches y pai -- ssant
+  Len -- te -- ment s’em -- poi -- sonnent __ _
+  Le col -- chi -- que __ _ cou -- leur de cerne et de li -- las
+  Y fleu -- rit tes yeux __ _ sont co -- mme ce -- tte \dash fleur -- _ là
   Vio -- lâ -- tres co -- mme leur ce -- rne et co -- mme cet au -- tomne
   Et ma vie pour tes yeux len -- te -- ment s’em -- poi -- sonne
 
@@ -253,8 +250,7 @@ VentSopranoTexte = { }
 
 NuitSopranoTexte = { }
 
-
-LoreleiSopranoTexte = \lyricmode {
+LoreleySopranoTexte = \lyricmode {
   \set ignoreMelismata = ##t
 
        Ich weiß nicht, was soll_es be -- deu -- ten,
