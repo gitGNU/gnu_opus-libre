@@ -1,7 +1,7 @@
 %-- Sweet suite -- title.ly ----------------------------------------%
 % (c) 2014 Valentin Villenave <valentin@villenave.net>
 
-#(ly:set-option 'use-variable-names #t)
+% #(ly:set-option 'use-variable-names #t)
 
 \header {
   title = "Sweet Suite"
@@ -9,6 +9,13 @@
   composer = "Valentin Villenave"
   date = "printemps 2014"
 }
+
+% No, I have no shame. Why?
+FantasiaTitre = "Fun Tase Ya"
+ToccataTitre = "Talk At'Tcha"
+RicercarTitre = "Recheck Car"
+CanzonaTitre = "Calzone"
+CapriccioTitre = "Ka Preach, Yo"
 
 %#(set-global-staff-size 18)
 
