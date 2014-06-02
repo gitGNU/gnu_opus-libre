@@ -1,10 +1,10 @@
-%-- Iowa suite -- title.ly -----------------------------------------%
+%-- Sweet suite -- title.ly ----------------------------------------%
 % (c) 2014 Valentin Villenave <valentin@villenave.net>
 
 #(ly:set-option 'use-variable-names #t)
 
 \header {
-  title = "Iowa Suite"
+  title = "Sweet Suite"
   subtitle = "pour clavecin seul"
   composer = "Valentin Villenave"
   date = "printemps 2014"

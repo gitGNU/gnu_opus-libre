@@ -1,4 +1,4 @@
-%-- Iowa suite -- score.ly -----------------------------------------%
+%-- Sweet suite -- score.ly ----------------------------------------%
 % (c) 2014 Valentin Villenave <valentin@villenave.net>
 
 skel = "clavecin"

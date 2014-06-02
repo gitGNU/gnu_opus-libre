@@ -1,4 +1,4 @@
-%-- Iowa suite -- toccata.ly ---------------------------------------%
+%-- Sweet suite -- toccata.ly --------------------------------------%
 % (c) 2014 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"

@@ -1,4 +1,4 @@
-%-- Iowa suite -- capriccio.ly -------------------------------------%
+%-- Sweet suite -- capriccio.ly ------------------------------------%
 % (c) 2014 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"
