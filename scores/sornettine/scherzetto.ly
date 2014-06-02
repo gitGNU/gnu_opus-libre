@@ -5,6 +5,14 @@
 
 ScherzettoTitre = "II. Scherzetto"
 
+\layout {
+  \context {
+    \Staff
+    \consists "Span_arpeggio_engraver"
+    connectArpeggios = ##t
+  }
+}
+
 ScherzettoMesures = {
   \tempo "Tempo di marcia"
   \time 4/4 \partial 8 s8 s1
@@ -243,7 +251,7 @@ ScherzettoGuitare = \relative do' {
   } >> \tuplet 3/2 {<mib la> <re lab'> <reb sol>} |
   fad16 fad fad fad |
   % e %
-  <do, re sol do fad>8 sol16 la
+  <do, sol' re' fad>8 sol16 la
   sib <re sol dod fad> r <sol dod fad>
   r sol, la sib <sol' mib' lab> lab' <dod, fad> <re sol> |
   <mib lab> re, sol <mib' lab>
@@ -284,18 +292,22 @@ ScherzettoGuitare = \relative do' {
   <re fad> sol, <mi' sold> <fa la> |
   % h %
   <fad lad>8 sib,, |
-  <re mi' la mi'>4\arpeggio <fa? do' fad si> <lab reb sol do> |
-  <re, mi' la mi'> <fa? do' fad si> <re mi' la mi'> <sol do fad si> |
-  <re' la' mi'>8 r16 <fad do' sol'> r8
-  <fa si mi> r16 <la, sold' dod>8. |
-  <re, mi' la mi'>4 <fa do' sol'>
-  << {
-    sib8 do16 sib la la la la la8 r
-  } \\ {
-    <lab, mib'>4 <sol re'> <fa dod'>8 mi16 fad
-  } >> |
+  \pl {
+    <re>8\arpeggio re4 re lab'8
+    re, re4 fa? sol re8 ~
+    re re re2
+    <re>4\arpeggio do sib8 lab <sol re'>4
+    <fa dod'>8 mi16 fad
+  } {
+    <mi'' la mi'>4\arpeggio  <do fad si> <reb sol do>
+    <mi la mi'> <do fad si> <mi la mi'> <do fad si>
+    <mi la mi'>8 r16 <fad do' sol'> r8
+    <fa si mi> r16 <do! sold' dod>8.
+    <si mi la>4\arpeggio <fa do' sol'>
+    <mib lab do>8 <mib dob'>16 sib' la la la la la8 r
+  } |
   % i %
-  sol <do fa si mi> r <fa si mi> r mi, fad sol
+  sol,16 <do fa si mi> r <fa si mi> r mi, fad sol
   <dod red' sold> sold'' <sid, mid> <dodd fadd> |
   <red sold> dod, fad <red' sold> <do, re> q q q
   << {<dod' fad> q <si mi> <sid mid>} \\ {re,8 r} >>
@@ -309,14 +321,15 @@ ScherzettoGuitare = \relative do' {
   <sid mid> <dod fad> <red sold>8 |
   r16 fad,, mid dod sib fa la re |
   % j %
-  << {<red fa sib mi sold>4 <mid fad>16 q q q} \\ {mi,2} >>
-  <mid' fad>16 mi, do' sold' |
+  \pl mi,2\arpeggio
+  {<fa' sib red sold>4\arpeggio <mid fad>16 q q q}
+  <mid fad>16 mi, do' sold' |
   << {lad'4} \\ {<si, do>16 q q q} >>
   <si dod>8 <do, re>16 <dod re> <re mib>8 <dodd' re>16 <mi fa>
   << {<mid fad> q q q} \\ {sol,4} >> |
   <mid' fad>8 <fadd sold>16 <soldd lad>
   <lad si>8 <fadd sold>16 <soldd lad> |
-  <re lad' si>8 <la mi' si'> r <dod mid si'> r <do fad' si> |
+  <re lad' si>8 <la mi' si'> r <dod mid si'> r <do fad si> |
   r16 <sol' si> q q <dod, sol' si> <la dod> q q
   q <sol la> <mib sol la> q q8 r |
   % k %
