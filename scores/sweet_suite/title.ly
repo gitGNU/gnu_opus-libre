@@ -15,7 +15,7 @@ FantasiaTitre = "Fun Tase Ya"
 ToccataTitre = "Talk At'Tcha"
 RicercarTitre = "Recheck Car"
 CanzonaTitre = "Calzone"
-CapriccioTitre = "Ka Preach, Yo"
+CapriccioTitre = "Ka-Preach, Yo"
 
 %#(set-global-staff-size 18)
 
