@@ -163,7 +163,7 @@ CachalotarieVoix = \relative do' {
   re,2--\p
 }
 
-CachalotariePianoMd = \relative {
+CachalotariePianoMd = \relative do' {
   r2 R1
   \clef treble la8(-. si-. dod-. re-.)
   <fad la>( re) <mi sold>( dod) |
@@ -213,7 +213,7 @@ CachalotariePianoMd = \relative {
   \ottava #1 la''4\laissezVibrer
 }
 
-CachalotariePianoMg = \relative {
+CachalotariePianoMg = \relative do' {
   \clef bass
   r4 \ottava #-1 \pl
   { \acciaccatura fad,,,8\dyn "mp_sévère" \stemDown sol4-.}
@@ -270,3 +270,4 @@ CachalotariePianoMg = \relative {
   sol,~ re'~ la'4~ <sol, re' la'>2*1/2
   sol,4\laissezVibrer
 }
+
