@@ -31,6 +31,7 @@ RossignolTubaUn =
   do( re) fa4-. do8( re)
   fa4-. do8( sol) re'( fa) |
   \time 6/4
+  \tempo "Largo (ad lib.)"
   sol1~\fp sol4 r |
   sol1*1/2\< \hideNotes sol2\f\>\glissando \unHideNotes
   fad4\p r |
@@ -41,6 +42,7 @@ RossignolTubaUn =
   \time 4/4
   r8 re~\> re2 r4\! |
   \time 3/2
+  \tempo "Adagietto"
   \tuplet 3/2 2 {
     sol,4\pp^"legato assai" mi sol mi sol mi sol mi sol
     mi sol mi sol mi sol
@@ -57,6 +59,7 @@ RossignolTubaUn =
     sol mi sol re-- mi sol
   } r2 |
   \time 3/4
+  \tempo "Poco a poco tempo I"
   do,8(\pp re) fa4-. r
   re8( fa)^"leggiero" sol-. sib-. do-. re-.
   do,4-. r2 |

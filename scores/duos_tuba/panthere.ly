@@ -9,6 +9,7 @@ PanthereTubaUn =
 \relative do' {
   \clef bass
   \time 2/2
+  \tempo "Andantino"
   fa,4(\mp re) re-. fa-.
   fa( re) re-. fa-.
   solb(\< mib solb)\! r
