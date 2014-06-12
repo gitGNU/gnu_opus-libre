@@ -35,9 +35,10 @@ RossignolTubaUn =
   sol1~\fp sol4 r |
   sol1*1/2\< \hideNotes sol2\f\>\glissando \unHideNotes
   fad4\p r |
-  sol8 mib32\p mib mib mib
+  sol8-- mib32\p mib mib mib
   \tuplet 3/2 {si si si si la la la la re re re re}
-  \acciaccatura si,16 \tuplet 5/4 {mib,8-. sol,-.->\sfz sol16-.\sfz}
+  \acciaccatura si,16
+  \tuplet 5/4 {mib,8*1/2[-. s sol,-.->\sfz s sol16]-.->\sfz}
   \tuplet 3/2 {r16 la'( fa')} si32( sold la dod sol'4) r
   \time 4/4
   r8 re~\> re2 r4\! |
@@ -118,10 +119,10 @@ RossignolTubaDeux =
   do,4-. sol'8 sib la do
   do,( re) fa4-. do'8( re) |
   sol1\fp \glissando fad4 r |
-  sol4~\< \tuplet 3/2 {sol8 re do~}
-  \tuplet 5/4 {do16 sib fa sib re,}
-  mib,32\f\> lab re do \tuplet 6/4 {re fa sol la do re}
-  sol4\p r
+  sol4~\< \tuplet 3/2 {sol8 re( do)~}
+  \tuplet 5/4 {do16 sib( fa sib re,)}
+  mib,32(\f\> lab re) do( \tuplet 6/4 {re fa sol la do re}
+  sol4)\p r
   sol1*1/2\<\hideNotes sol2\f\>\glissando  \unHideNotes
   fad4\p r16 sol,,,->-. r8 |
   r do''~\> do2 r4\! |
@@ -173,7 +174,7 @@ RossignolTubaDeux =
   do,4-. fa'8( re) do-> sol->
   do-> re, fa( sol) do( re)
   do,4-. la''?8( mi) si-> fad->
-  do'-> re,-. fa4-. si,,\mp
+  do'-> re,-. fa4-. si,,-.\mp
   r dod-.^"leggiero" si8-. dod-. |
   r dod-. si-. dod-. fa?4-.
   do8--\< re-- \tuplet 3/2 4 {fa( sol do re sol re')}
