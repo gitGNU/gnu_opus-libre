@@ -3,3 +3,4 @@
 
 skel = "clavecin"
 structure = '("Fantasia" "Canzona" "Capriccio" "Ricercar" "Toccata")
+input = "fr"
