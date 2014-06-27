@@ -11,11 +11,13 @@
 }
 
 % No, I have no shame. Why?
-FantasiaTitre = "Fun Tase Ya"
+FantasiaTitre = "Pray Lewd"
 ToccataTitre = "Talk At'Tcha"
 RicercarTitre = "Recheck Car"
 CanzonaTitre = "Calzone"
 CapriccioTitre = "Ka-Preach, Yo"
+AllemandeTitre = "Almond (Bore, Eh?)"
+MenuetTitre = "Menu A"
 
 %#(set-global-staff-size 18)
 
