@@ -5,21 +5,26 @@
 
 \header {
   title = "Sweet Suite"
-  subtitle = "pour clavecin seul"
+  subtitle = \markup \center-column {
+    \medium "sept petites pièces"
+    \medium "sous contraintes formelles"
+    "pour clavecin seul"
+    \vspace #0.5
+  }
   composer = "Valentin Villenave"
   date = "printemps 2014"
 }
 
 % No, I have no shame. Why?
-FantasiaTitre = "Pray Lewd"
+FantasiaTitre = "Ka-Preach, Yo"
 ToccataTitre = "Talk At'Tcha"
 RicercarTitre = "Recheck Car"
 CanzonaTitre = "Calzone"
-CapriccioTitre = "Ka-Preach, Yo"
+CapriccioTitre = "Pray Lewd" % how about: "Fun Tase Ya"?
 AllemandeTitre = "Almond (Bore, Eh?)"
 MenuetTitre = "Menu A"
 
-%#(set-global-staff-size 18)
+#(set-global-staff-size 24)
 
 \paper {
   first-page-number = #-1
@@ -40,14 +45,14 @@ MenuetTitre = "Menu A"
     \override #'(box-padding . 6)
     \box \center-column {
       \line {
-        Copyright & copyleft © Valentin Villenave, 2009-2011.
+        Copyright & copyleft © Valentin Villenave, 2014.
       }
       \line {
         \with-url #"http://valentin.villenave.net"
         \typewriter http://valentin.villenave.net
       }
       \vspace #.5
-      \override #'(line-width . 100)
+      \override #'(line-width . 80)
       \justify {
         Cette partition est publiée suivant les termes de la licence
         \with-url #"http://artlibre.org/licence/lal"
