@@ -5,6 +5,7 @@
 
 CanzonaClavecinMd =
 \relative do' {
+  \tempo "Lore Ghetto"
   \time 21/8
   r8 si'4~ si8 fad4~ fad8 sol re' fa4 dod8~
   dod la sold mi' sib8.do,16 mib4.
@@ -25,8 +26,8 @@ CanzonaClavecinMd =
 CanzonaClavecinMg =
 \relative do' {
   \clef bass
-  <la dod>4 q8 <la do>4 q8 <lab do>4 q8 <sold si>4 q8
-  <sol sib>4 q8 <fad lad>4 q8 <fa la>4 q8
+  <la dod>4-- q8 <la do>4 q8 <lab do>4-- q8 <sold si>4-- q8
+  <sol sib>4-- q8 <fad lad>4 q8 <fa la>4 q8
   <la dod>4 q8 <lab do>4 q8 <sold si>4 q8 <sol si>4 q8
   <sol sib>4 q8 <fad la>4 q8 <fa la>4 q8
   <sib re>4 q8 <la dod>4 q8 <la do>4 q8 <sold si>4 q8

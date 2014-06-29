@@ -5,6 +5,7 @@
 
 AllemandeClavecinMd =
 \relative do' {
+  \tempo "On Dante"
   \time 2/2
   \partial 4 si'4
   si' la sol fad8 sol
@@ -56,7 +57,7 @@ AllemandeClavecinMg =
     fa sol la si8 la
     lab4 sib do re8 do
     si4 dod red8 mid red dod
-    do4 re mi mi,
+    do4 re mi mib,
     sib8 lab sib do re mib re do
     dob reb mib fa solb labb solb fa
     solb lab sib do reb mib fa sol

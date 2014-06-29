@@ -21,10 +21,10 @@ ToccataTitre = "Talk At'Tcha"
 RicercarTitre = "Recheck Car"
 CanzonaTitre = "Calzone"
 CapriccioTitre = "Pray Lewd" % how about: "Fun Tase Ya"?
-AllemandeTitre = "Almond (Bore, Eh?)"
+AllemandeTitre = \markup \center-column {"Almond" \smaller "(Bore, Eh?)"}
 MenuetTitre = "Menu A"
 
-#(set-global-staff-size 24)
+#(set-global-staff-size 17.6)
 
 \paper {
   first-page-number = #-1
@@ -52,7 +52,7 @@ MenuetTitre = "Menu A"
         \typewriter http://valentin.villenave.net
       }
       \vspace #.5
-      \override #'(line-width . 80)
+      \override #'(line-width . 100)
       \justify {
         Cette partition est publiée suivant les termes de la licence
         \with-url #"http://artlibre.org/licence/lal"
