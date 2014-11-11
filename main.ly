@@ -33,7 +33,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%% Score selection %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Source code directory (see scores/ ) ---------------------------%
-scores = "oumupo/sardinosaures"
+scores = "oumupo/quatuor"
 % Setting this option overrides the scores variable with
 % the name of the current git branch.
 #(ly:set-option 'git-branch-as-score-name #f)
