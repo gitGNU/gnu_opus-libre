@@ -81,6 +81,9 @@
         \fromproperty #'header:piece
     %      \fromproperty #'paper:papersizename
       }
+      \fill-line {
+        \fromproperty #'header:piece-subtitle
+      }
       \vspace #1
       \fill-line {
         \fromproperty #'header:instrument

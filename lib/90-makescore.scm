@@ -128,9 +128,11 @@ current-part music."
                       (layout $defaultlayout)
                       (header (make-module))
                       (title (make-this-text part lang:title-suffix))
+                      (subtitle (make-this-text part lang:subtitle-suffix))
                       (author (make-this-text part lang:author-suffix lang:untaint-disclaimer)))
 
                  (module-define! header 'piece title)
+                 (module-define! header 'piece-subtitle subtitle)
                  (module-define! header 'author author)
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score (if local-layout local-layout layout))
