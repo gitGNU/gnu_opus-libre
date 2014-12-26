@@ -13,8 +13,16 @@
 % #(set-global-staff-size 17.6)
 
 \pointAndClickOff
+\pageBreak
 \markup \fill-page {
   ""
+  \fill-line {""
+    \italic \right-column {
+      "Avec une pensée amicale envers mes deux"
+      "professeurs, Hervé Moreau et Thierry Barbé."
+      "— V.V."
+    }
+  }
   \fill-line {
     \override #'(box-padding . 6)
     \box \center-column {
@@ -85,6 +93,7 @@ FunnyTitre= "Who says funny?"
 FunnySoustitre= "(d’après un thème de jazz)"
 
 \paper {
+  first-page-number = #-1
   tocTitleMarkup = \markup \huge \bold \column {
     \null \vspace #3
     \fill-line { \null \magnify #2.5 "~ Sommaire ~" \null }
