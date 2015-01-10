@@ -2,100 +2,30 @@
 % (c) 2012 Valentin Villenave <valentin@villenave.net>,
 % Olivier Salon et Jacques Roubaud.
 
-Titre = "Sardinosaures"
+SardinosauresTitre = "Sardinosaures"
 
 TortulipeTitre = "La tortulipe"
 EscargoelandTitre = "L’escargoéland"
 OkapieTitre = "L’okapie"
 KiwistitiTitre = "Le kiwistiti"
 CachalotarieTitre = "Le cachalotarie"
+BaobabouinRawTitre = "Le baobabouin"
 BaobabouinTitre = \markup \center-column {
   \smallCaps { ~ Annexe ~ }
-  "Le baobabouin"
+  \BaobabouinRawTitre
 }
 
-\header {
-  title = \Titre
-  composer = \markup \center-column {
-    "Valentin Villenave"
-    "(sur des textes d’Olivier Salon et Jacques Roubaud)"
-  }
-  copyright = \markup {
-    © et \translate #'(1.5 . 0) \scale #'(-1 . 1) ©
-    V. Villenave, 2012. Licence Art Libre
-  }
-  date = "2012"
-}
-
-
-
-\pointAndClickOff
-#(set-global-staff-size 16)
+TortulipeToc = \TortulipeTitre
+EscargoelandToc = \EscargoelandTitre
+OkapieToc = \OkapieTitre
+KiwistitiToc = \KiwistitiTitre
+CachalotarieToc = \CachalotarieTitre
+BaobabouinToc = \BaobabouinRawTitre
 
 dash = {
   \once \override LyricHyphen #'minimum-distance = #4
   \once \override LyricHyphen #'length = #2
   \once \override LyricHyphen #'thickness = #1.2
-}
-
-\paper {
-  first-page-number = #-1
-}
-
-\pageBreak
-\markup \fill-page {
-  ""
-  \fill-line {
-  ""
-  \general-align #Y #0.5 {\epsfile #X #30 #"scores/oumupo/oumupo.eps" }
-  \line {
-    \override #'(line-width . 45)
-    \wordwrap {
-      \hspace #4 Ces pièces s’inscrivent dans le cadre de
-      l’Ouvroir de Musique Potentielle
-      \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),}
-      dédié à l’écriture musicale sous contraintes formelles.
-    }
-  }
-  ""
-  }
-  \fill-line {
-    \override #'(box-padding . 6)
-    \box \center-column {
-      \line {
-        Copyright & copyleft © Valentin Villenave, 2012.
-      }
-      \wordwrap {
-        D’après le livre \italic Sardinosaures \italic &
-        \concat { \italic compagnie ,} de Jacques Roubaud
-        et Olivier Salon, publié en 2008 aux éditions Les
-        mille univers.
-      }
-      \line {
-        \with-url #"http://valentin.villenave.net"
-        \typewriter http://valentin.villenave.net
-      }
-      \vspace #.5
-      \override #'(line-width . 100)
-      \justify {
-        Cette partition est publiée suivant les termes de la licence
-        \with-url #"http://artlibre.org/licence/lal"
-        \bold { Art Libre }
-        \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
-        Vous pouvez la copier, la modifier et la jouer \italic librement
-        sans contrevenir au droit d'auteur, à  condition de respecter les
-        termes de la licence (notamment en veillant à  mentionner le nom
-        de l’auteur et l’adresse web d’origine).
-      }
-      \vspace #.5
-      \line {
-        Gravure réalisée au moyen du logiciel libre
-        \with-url #"http://www.lilypond.org"
-        \concat {\bold "GNU LilyPond" ,}
-        \concat { $(string-append "version " (lilypond-version) ".") }
-      }
-    }
-  }
 }
 
 TortulipeVoixTexte = \lyricmode {
@@ -200,18 +130,18 @@ KiwistitiVoixTexte = \lyricmode {
   Il se ba -- lance, de ci
   De là, et re -- joint par i -- ci,
   Grand mer -- ci,
-  La bran -- che que voi -- ci :
+  La bran -- che que voi -- ci_:
   Il est a -- lors a -- dou -- ci.
   Pour fai -- re ce -- ci
   Le ki -- wi -- sti -- ti
   Par la queue sa -- pri -- sti
   Se ba -- lan -- ce sans sou -- ci
-  Et s’é -- lance ain -- si :
-  Il a ré -- u -- ssi !
+  Et s’é -- lance ain -- si_:
+  Il a ré -- u -- ssi_!
   On dit par là, ou par ci
   Que le ki -- wi -- sti -- ti
   Dan -- se le twist i -- \dash ti --
-  Né -- rant, mais si !
+  Né -- rant, mais si_!
   Les ki -- wi -- sti -- tis
   É -- vo -- luent \dash gra -- ci --
   Eu -- se -- ment par ban -- des de six
@@ -225,27 +155,48 @@ KiwistitiVoixTexte = \lyricmode {
   \dash Ci -- gît six p’tits ki -- wi -- sti -- tis.
 }
 
-\layout {
-  \context {
-    \Score
-    \override SystemStartBrace #'collapse-height = #1
-    \override PaperColumn #'keep-inside-line = ##t
-    \override NonMusicalPaperColumn #'keep-inside-line = ##t
-    \override TimeSignature #'style = #'()
-    \override TextScript #'stencil =
-      #(lambda (grob)
-          (let ((grob-markup (ly:grob-property grob 'text)))
-            (grob-interpret-markup grob (make-italic-markup grob-markup))))
-    \override TextScript #'direction = #UP
 
-    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
-                          ,(make-accidental-rule 'any-octave 0)
-                          ,(make-accidental-rule 'same-octave 1)
-                          ,neo-modern-accidental-rule)
-    autoCautionaries = #`(Staff ,(make-accidental-rule 'same-octave 1)
-                          ,(make-accidental-rule 'any-octave 1))
-    extraNatural = ##f
-  }
+BaobabouinVoixTexte = \lyricmode {
+  %% Jacques Roubaud.
+  Il n’est pas na -- bab
+  il n’est pas mar -- souin
+  le ba -- o -- ba -- bouin
+
+  il vo -- yage en cab
+  a -- vec le pin -- gouin
+  le ba -- o -- ba -- bouin
+
+  s’il a pas de rab
+  il fait du tin -- touin
+  le ba -- o -- ba -- bouin
+
+  un bon chich’ -- ke -- bab
+  il ne veut pas mouins
+  le ba -- o -- ba -- bouin
+
+  il vous met \dash k. -- o.
+  a -- vec son ca -- bas
+  c’est un vrai sa -- gouin
+  le ba -- o -- ba -- bouin
+
+  \dash là -- bas ou \dash là -- haut
+  vo -- yez les é -- bats
+  du ba -- o -- ba -- bouin
+
+  il fait du mé -- lo
+  pour une pêche mel -- ba
+  le ba -- o -- ba -- bouin
+
+  il fait un sa -- bbat
+  a -- vec ses sa -- bots
+  le ba -- o -- ba -- bouin
+
+  il va \dash d’Saint -- Ma -- lo
+  en A -- la -- ba -- ma
+  le ba -- o -- ba -- bouin
+
+  il pince comme un crabe
+  comme un ma -- rin -- gouin
+  le ba -- o -- ba -- bouin_!
 }
 
-\pageBreak

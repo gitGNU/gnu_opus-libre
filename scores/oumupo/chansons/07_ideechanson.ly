@@ -7,6 +7,7 @@ GuitareInstr = "Guitare"
 
 IdeechansonVoix =
 \relative do' {
+  \tocItem \IdeechansonToc
   \partial 4 r16
                  re^\p fad re fad8[ r16 mi] do mi8 do16
   r4 r16 re fad re fad4 mi8 do16 mi r16 do8. r16 re fad re |
@@ -158,7 +159,7 @@ IdeechansonPianoMg =
 \relative do' {
   \clef bass
   r4
-  re,8-. \md <re' fad>-.\p r4 \mg
+  re,8-.\p \md <re' fad>-. r4 \mg
   do,8-. \md <do' mi>-. r4 \mg
   re,8 \md <re' fad> r4 \mg
   do,8 \md <do' mi> r4 \mg

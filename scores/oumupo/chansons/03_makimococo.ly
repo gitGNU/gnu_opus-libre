@@ -2,7 +2,7 @@
 % (c) 2012 Valentin Villenave <valentin@villenave.net>
 
 \language "italiano"
-\include "articulate.ly"
+
 MakimococoGrille =
 \chordmode {
   do1*7/4:m s s la:m s
@@ -16,6 +16,7 @@ MakimococoGrille =
 
 MakimococoVoix =
 \relative do' {
+  \tocItem \MakimococoToc
   \time 7/4
   \tempo 4 = 160
   \key do \minor
@@ -116,7 +117,7 @@ MakimococoPianoMd =
   la4( do8) sold4 re8~ re2 r8 mi'~ mi4 |
   red8( sold, dod,) si'( mi, la,) sold'(
   dod, fad,) mi'( la, re,) sib( si) |
-  do4-- re8( mib sol sib, mib <la, do re fa>4) 
+  do4-- re8( mib sol sib, mib <la, do re fa>4)
   re8( mib fa mib re) |
   do4-- re8( mib sol sib) r <fad' sol do> fa( mib)
   <la, mi' fa>( mib' sib sol) |

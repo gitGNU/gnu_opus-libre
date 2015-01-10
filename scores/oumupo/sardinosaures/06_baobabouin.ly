@@ -3,52 +3,8 @@
 
 \language "italiano"
 
-
-BaobabouinVoixTexte = \lyricmode {
-  %% Jacques Roubaud.
-  Il n’est pas na -- bab
-  il n’est pas mar -- souin
-  le ba -- o -- ba -- bouin
-
-  il vo -- yage en cab
-  a -- vec le pin -- gouin
-  le ba -- o -- ba -- bouin
-
-  s’il a pas de rab
-  il fait du tin -- touin
-  le ba -- o -- ba -- bouin
-
-  un bon chich’ -- ke -- bab
-  il ne veut pas mouins
-  le ba -- o -- ba -- bouin
-
-  il vous met \dash k. -- o.
-  a -- vec son ca -- bas
-  c’est un vrai sa -- gouin
-  le ba -- o -- ba -- bouin
-
-  \dash là -- bas ou \dash là -- haut
-  vo -- yez les é -- bats
-  du ba -- o -- ba -- bouin
-
-  il fait du mé -- lo
-  pour une pêche mel -- ba
-  le ba -- o -- ba -- bouin
-
-  il fait un sa -- bbat
-  a -- vec ses sa -- bots
-  le ba -- o -- ba -- bouin
-
-  il va \dash d’Saint -- Ma -- lo
-  en A -- la -- ba -- ma
-  le ba -- o -- ba -- bouin
-
-  il pince comme un crabe
-  comme un ma -- rin -- gouin
-  le ba -- o -- ba -- bouin_!
-}
-
 BaobabouinGrille = \chordmode {
+  \tocItem \BaobabouinToc
   R2. R
   do1 dod:dim re2.:m sol
   re1:m reb:7 do2. sol/do

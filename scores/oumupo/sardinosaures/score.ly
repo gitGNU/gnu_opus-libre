@@ -1,1 +1,1 @@
-structure = '("Cachalotarie" "Kiwistiti" "Tortulipe" "Escargoeland" "Okapie" "Baobabouin|")
+structure = '("Cachalotarie" "Kiwistiti" "Tortulipe" "Escargoeland" "Okapie" "Baobabouin")

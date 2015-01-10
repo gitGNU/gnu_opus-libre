@@ -6,6 +6,7 @@
 PopincourtVoix =
 %\transpose re fa
 \relative do' {
+  \tocItem \PopincourtToc
   \time 3/4
   \key si \minor
   \tempo "Tempo de java (très swingué)" 4 = 152
@@ -151,7 +152,7 @@ PopincourtPianoMd =
   <dod, fad lad>4->-- <la fad'>8.-. lad16 dod4-. |
   r4 <si mi si'>->--~ <sib mi do'>-. |
   <dod fad lad>2-- r4 |
-  
+
   r8.\mp <si re fad>16-. r4 <si re fad si>4-- |
   r8. <si re fad>16-. r4 <dod re fad lad>4-- |
   r8. <si re fa>16 r4 <si re fad la>4 |
@@ -174,7 +175,7 @@ PopincourtPianoMd =
   <mi soldd lad dod>-. |
   r4 << {do'( si)} \\ <si, do mi>2 >> |
   <mi fad lad>4-- <dod mi fad>-- <lad dod lad'>-- |
-  
+
   r4\pp << <re' fad>2 \\ {dod4( si)} >> |
   r <lad re fad>2-- | r4 <la re fad>2-- |
   r4 << <si re fad>2 \\ {la4( sold)} >> |
@@ -283,7 +284,7 @@ PopincourtPianoMg =
   <fad, fad'>2->-- r4 |
   <do' do'>2->-- r8. do'16 |
   <fad, fad'>4(-- sold8-. r lad-.) r |
-  
+
   si4-.-- r8. si,16-. r8. si'16( |
   lad4-.--) r8. lad,16-. r4 |
   la'4-.-- r8. la,16-. r8. la'16-. |
@@ -303,7 +304,7 @@ PopincourtPianoMg =
   <fad fad'>4..->-- q16 r4 |
   << {do'4( re mi)} \\ do,2 >> |
   <fad fad'>4(-- sold'8-. r lad-.) r |
-  
+
   << {r8. si16 r8. si16 r8. fad16} \\ si,2. >>
   << {r8. si'16 r4 r8. fad16} \\ si,2. >>
   << {r8. si'16 r8. fad16 si8. fad16} \\ si,2. >>

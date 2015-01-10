@@ -4,12 +4,6 @@
 % Ian Monk, François Caradec, Jacques Jouet,
 % Paul Fournel.
 
-
-%% Inclusion du Baobabouin de Jacques Roubaud.
-\include "scores/oumupo/sardinosaures/baobabouin.ly"
-BaobabouinTitre = "Le baobabouin"
-
-
 Titre = "Chansons Oulipiennes"
 
 AntilopeTitre = "L’antilope et l’antiquaire"
@@ -37,10 +31,42 @@ QuandjepenseAuteur = "Jacques Roubaud"
 RaisonAuteur = "Ian Monk"
 TelephoneAuteur = "Jacques Roubaud"
 
+AntilopeToc = \markup { \AntilopeTitre \concat { ( \AntilopeAuteur ) } }
+AutobusToc = \markup { \AutobusTitre \concat { ( \AutobusAuteur ) } }
+CharlesToc = \markup { \CharlesTitre \concat { ( \CharlesAuteur ) } }
+DebutToc = \markup { \DebutTitre \concat { ( \DebutAuteur ) } }
+IdeechansonToc = \markup { \IdeechansonTitre \concat { ( \IdeechansonAuteur ) } }
+MakimococoToc = \markup { \MakimococoTitre \concat { ( \MakimococoAuteur ) } }
+PetitmariToc = \markup { \PetitmariTitre \concat { ( \PetitmariAuteur ) } }
+PopincourtToc = \markup { \PopincourtTitre \concat { ( \PopincourtAuteur ) } }
+RaisonToc = \markup { \RaisonTitre \concat { ( \RaisonAuteur ) } }
+TelephoneToc = \markup { \TelephoneTitre \concat { ( \TelephoneAuteur ) } }
+
+QuandjepenseToc = \markup \left-column {
+  \line {\QuandjepenseTitre \concat { ( \QuandjepenseAuteur ) } }
+  \vspace #1
+  \huge \smallCaps "~ Annexe ~"
+  \huge \bold Sardinosaures
+  \vspace #.5
+}
+
+
+#(define-markup-command (choose-text layout props untainted-text tainted-text) (markup? markup?)
+  (let ((text (if (ly:get-option 'untainted)
+                  untainted-text
+                  tainted-text)))
+  (interpret-markup layout props text)))
+
 \header {
-  title = \Titre
+  title = \markup { \choose-text "" Quelques \Titre }
+  subtitle = \markup \choose-text "" "extraites du spectacle"
+  subsubtitle = \markup \choose-text "" \general-align #Y #0.5 {
+    \epsfile #X #30 #"scores/oumupo/chansons/chantoulipo.eps"
+  }
   composer = \markup \center-column {
+    \vspace #2
     "Valentin Villenave & Mike Solomon"
+    \choose-text "(d’après des auteurs de l’Oulipo)"
     "(sur des textes d’auteurs de l’Oulipo)"
   }
   copyright = \markup {
@@ -58,6 +84,35 @@ TelephoneAuteur = "Jacques Roubaud"
 \paper {
   first-page-number = #-1
   bottom-margin = 40
+  tocTitleMarkup = \markup \huge \bold \column {
+    \null \vspace #3
+    \fill-line { \null \magnify #2.5 \smallCaps "~ Sommaire ~" \null }
+    \vspace #3
+  }
+  tocItemMarkup = \markup \large \fill-line {
+    \tocItemWithDotsMarkup
+    \vspace #1.5
+  }
+  scoreTitleMarkup = \markup {
+    \center-column {
+      \vspace #2
+      \on-the-fly #print-all-headers { \bookTitleMarkup \hspace #1 }
+      \fill-line {
+        \huge \bold % default was regular size and weight
+        \fromproperty #'header:piece
+    %      \fromproperty #'paper:papersizename
+      }
+      \override #'(line-width . 65)
+      \fill-line {
+        \italic \line { [ \fromproperty #'header:piece-subtitle ] }
+      }
+      \vspace #1
+      \fill-line {
+        \fromproperty #'header:instrument
+        \fromproperty #'header:author
+      }
+    }
+  }
 }
 
 taintedText =
@@ -108,30 +163,34 @@ untaintedText =
   }
 }
 
-#(define-markup-command (choose-text layout props) ()
-  (let ((text (if (ly:get-option 'untainted)
-                  untaintedText
-                  taintedText)))
-  (interpret-markup layout props text)))
-
-
 \pageBreak
-\markup \fill-page {
-  ""
+\markup \fill-line {
+  \center-column {
+  \vspace #6
   \fill-line {
-  ""
-  \general-align #Y #0.5 {\epsfile #X #30 #"scores/oumupo/oumupo.eps" }
-  \line {
-    \override #'(line-width . 45)
-    \wordwrap {
-      \hspace #4 Ces pièces s’inscrivent dans le cadre de
-      l’Ouvroir de Musique Potentielle
-      \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),}
-      dédié à l’écriture musicale sous contraintes formelles.
+    ""
+    \general-align #Y #0.5 {\epsfile #X #30 #"scores/oumupo/oumupo.eps" }
+    \line {
+      \override #'(line-width . 45)
+      \wordwrap {
+        \hspace #4 Ces chansons s’inscrivent dans le cadre de
+        l’Ouvroir de Musique Potentielle
+        \concat { ( \with-url #"http://oumupo.org" \typewriter http://oumupo.org ),}
+        dédié à l’écriture musicale sous contraintes formelles.
+      }
+    }
+    ""
+  }
+  \vspace #2
+  \fill-line {
+    \center-column {
+      \huge \bold "Pour en savoir plus sur ces chansons :"
+      \choose-text "" \huge \with-url #"http://chantoulipo.net" \typewriter http://chantoulipo.net
+      \huge \with-url #"http://valentin.villenave.net/chansons-oulipiennes" \typewriter http://valentin.villenave.net/chansons-oulipiennes
+      \huge \with-url #"http://valentin.villenave.net/sardinosaures" \typewriter http://valentin.villenave.net/sardinosaures
     }
   }
-  ""
-  }
+  \vspace #4
   \fill-line {
     \override #'(box-padding . 6)
     \override #'(line-width . 100)
@@ -146,12 +205,19 @@ untaintedText =
         Paul Fournel,
         Jacques Jouet,
         et Ian Monk.
-        Tous les auteurs sont membres de l’Oulipo
-        \concat { ( \with-url #"http://oulipo.net" \typewriter http://oulipo.net )} ;
-        ces textes ont été réunis ou rédigés dans le cadre du spectacle
+        Ces textes ont été réunis ou rédigés dans le cadre du spectacle
         \italic "Chant’Oulipo"
         \concat { ( \with-url #"http://chantoulipo.net" \typewriter http://chantoulipo.net )}
         sur une idée de Jehanne Carillon et dans une mise en scène de Laurent Gutmann.
+        Ils sont ici mis en musique et utilisés avec l’aimable autorisation
+        de leurs auteurs, tous membres de l’Oulipo
+        \concat { ( \with-url #"http://oulipo.net" \typewriter http://oulipo.net ).}
+      }
+      \vspace #.5
+      \justify {
+        Les \italic "Sardinosaures & compagnie" sont un recueil
+        de Jacques Roubaud et Olivier Salon, publié en 2008 aux
+        éditions Les mille univers.
       }
       \vspace #.5
       \bold "Mise en musique :"
@@ -169,7 +235,7 @@ untaintedText =
         de l’Oumupo.
       }
       \vspace #.5
-      \choose-text
+      \choose-text \untaintedText \taintedText
       \vspace #.5
       \line {
         Gravure réalisée au moyen du logiciel libre
@@ -179,7 +245,51 @@ untaintedText =
       }
     }
   }
+  }
 }
+
+\pageBreak
+
+\markup \fill-line {
+  \override #'(line-width . 65)
+  \center-column {
+    \justify \italic {
+    C’est en décembre 2011, peu après l’émergence de l’Oumupo dans
+    sa forme actuelle, que Jehanne Carillon me présenta son projet
+    de "« cabaret" "oulipien »", pas encore intitulé Chant’Oulipo.
+    Pendant les douze mois suivants, Mike Solomon et moi-même, bientôt
+    rejoints par Jean-François Piette, rédigeâmes une trentaine de
+    chansons et numéros musicaux, inspirés par divers langages musicaux
+    populaires et "« de" "variété »." J’en présente ici les plus
+    marquants du point de vue des contraintes formelles utilisées,
+    avec des arrangements réécrits pour l’occasion ainsi que quelques
+    explications techniques.
+    }
+    \vspace #.5
+    \justify \italic {
+    À cette même époque, Olivier Salon m’offrit un exemplaire de son
+    recueil Sardinosaures, co-écrit avec Jacques Roubaud, qui me donna
+    l’occasion d’écrire un court cycle de mélodies pour soprano et piano,
+    dans un style plus personnel et plus savant (évoquant par exemple
+    certaines mélodies de Francis Poulenc, par exemple sur des poèmes
+    d’Apollinaire), là encore sous diverses contraintes d’écriture.
+    }
+    \vspace #.5
+    \justify \italic {
+    Avec mes remerciements aux auteurs oulipiens, ainsi qu’à mon collègue
+    oumupien Mike Solomon pour m’avoir permis d’utiliser ici deux de ses
+    chansons.
+    }
+    \vspace #.5
+    \italic "Bonne lecture !"
+    \fill-line {"" \italic "Valentin Villenave, janvier 2015."}
+  }
+}
+\markuplist \table-of-contents
+
+\pageBreak
+
+\pageBreak
 
 AntilopeVoixTexte = \lyricmode {
   % Jacques Roubaud.
@@ -202,6 +312,14 @@ AntilopeVoixTexte = \lyricmode {
   É -- trange, é -- trange est l’an -- ti -- lope
 }
 
+AntilopeSoustitre = \markup \justify {
+  Style musical évoquant les mélodies françaises du début du
+  \concat { \smallCaps xx \super \tiny e} siècle. La mélodique en lignes
+  brisées s’approche chromatiquement de la tonique et de la "quinte ;"
+  l’harmonisation oscille (de façon combinatoire) entre accords mineurs
+  et majeurs.
+}
+
 AutobusVoixTexte = \lyricmode {
   % François Caradec.
   On a -- tten -- dait sous la pluie l’au -- to -- bus
@@ -214,6 +332,14 @@ AutobusVoixTexte = \lyricmode {
   je co -- nnais le temps de l’a -- ttente
   il faut bien que je m’en con -- tente.
   On a -- ttend tou -- jours l’au -- to -- bus.
+}
+
+AutobusSoustitre = \markup \justify {
+  Genre "musical :" Song à la manière de Kurt Weill.
+  Contrainte "mélodique :" Sérialisme «détendu» dans un contexte
+  purement "tonal :" toutes les hauteurs du tempérament doivent
+  être données un même nombre de fois (4 fois, puis 2 puis enfin
+  "1 :" la fin de la mélodie est une véritable série).
 }
 
 CharlesChantTexte = \lyricmode {
@@ -247,17 +373,26 @@ CharlesChantTexte = \lyricmode {
   Charles a -- ttend.
 }
 
+CharlesSoustitre = \markup \justify {
+  Genre "musical :" habanera. La mélodie suit fidèlement le
+  bi-vocalisme des paroles (les seules voyelles autorisées sont
+  A et E), en montant ou descendant d’une sixte à chaque changement
+  de voyelle. Contrairement à l’écriture obligatoire d’une habanera,
+  la ligne de basse est rédigée sans aucune quinte (contrainte en
+  «lipovalle»).
+}
+
 DebutVoixTexte = \lyricmode {
   % Hervé Le Tellier.
   Tell’ -- ment tell’ -- ment
   on s’est tell’ -- ment
   com -- ment ça peut com -- ment ça peut
   si vite aus -- si et pour tou -- jours et à ja -- mais
-  com -- ment ça peut 
+  com -- ment ça peut
   c’est pas pos -- sible
   moi ce que je
-  tout ce que je 
-  ça se -- rait que 
+  tout ce que je
+  ça se -- rait que
   en -- fin bien sûr si c’est pos -- sible
   si toi tu veux au -- tant que moi ou juste un peu
   ça suf -- fi -- rait pour un dé -- but
@@ -274,6 +409,15 @@ DebutVoixTexte = \lyricmode {
   que toi et moi
   ça s’en va pas
   comm’ ça
+}
+
+DebutSoustitre = \markup \justify {
+  Genre "musical :" samba-bossa.
+  Contrainte "mélodique/rythmique :" la mélodie ne s’éloigne de
+  sa note-pivot que toutes les cinq croches, vers des intervalles
+  variés fournissant in fine le total chromatique.
+  Contrainte "harmonique :" la tonique ne se fait pas entendre
+  avant le dernier temps du morceau.
 }
 
 IdeechansonVoixTexte = \lyricmode {
@@ -336,6 +480,18 @@ IdeechansonVoixTexte = \lyricmode {
                   J’veux pas sa -- voir je m’en tam -- ponne
                   Le pa -- ra -- dis c’est mo -- no -- tone
 }
+
+IdeechansonSoustitre = \markup \justify {
+  Genre "musical :" reggae-fusion.
+  Contrainte "harmonique :" à proprement parler, le discours est ici
+  atonal, s’appuyant dans les couplets sur des accords de quinte
+  augmentée (gamme par tons) et dans les refrains sur des accords
+  enrichis recombinés chromatiquement (en dodécaphonisme) de façon
+  dépolarisée. La mélodie procède également d’une écriture
+  combinatoire, dans ses motifs en tierces majeures (couplet) ou en
+  arpèges brisés suivis de mouvements conjoints (refrain).
+}
+
 
 MakimococoVoixTexte = \lyricmode {
   % Jacques Roubaud.
@@ -405,6 +561,12 @@ MakimococoVoixTexte = \lyricmode {
   il s’a -- ppelle Du -- du.
 }
 
+MakimococoSoustitre = \markup \justify {
+  Genre "musical :" afro-jazz.
+  Contrainte "rythmique :" mesure irrégulière en miroir (2+2+3+3+2+2).
+  Contrainte "harmonique :" modulations par tierces mineures.
+}
+
 PetitmariVoixTexte = \lyricmode {
   % Paul Fournel.
   J’ai ache -- té un pe -- tit ma -- ri
@@ -471,6 +633,14 @@ PetitmariVoixTexte = \lyricmode {
   J’ai re -- mis le mien sur e -- Bay_!
 }
 
+PetitmariSoustitre = \markup \justify {
+  Genre "musical :" opérette française kitsch.
+  La musique est ici construite (sous une forme sérieusement détraquée)
+  sur une célèbre comptine enfantine ayant pour thème l’insatisfaction
+  sexuelle féminine dans un cadre conjugal. Contrainte "harmonique :"
+  le cycle des quintes est ici remplacé par des sauts de tierce majeure.
+}
+
 PopincourtVoixTexte = \lyricmode {
   % Jacques Jouet.
   Po -- pin -- court Po -- pin -- court
@@ -519,7 +689,14 @@ PopincourtVoixTexte = \lyricmode {
   le lieu des ren -- \dash dez -- vous d’a -- mour
   \skip 4 \skip 4 \skip 4 \skip 4 \skip 4 \skip 4
   le lieu des ren -- \dash dez -- vous d’a -- mour
-}	
+}
+
+PopincourtSoustitre = \markup \justify {
+  Genre "musical :" java. Contraintes "mélodiques :" les rimes en «our»
+  (il s’agit d’un poème monorime) tombent systématiquement sur la même
+  note, même lorsque le discours module. En revanche, la tonique
+  est systématiquement évitée, jusqu’à la dernière note.
+}
 
 QuandjepenseVoixTexte = \lyricmode {
   % Jacques Roubaud.
@@ -543,6 +720,19 @@ QuandjepenseVoixTexte = \lyricmode {
   qu’à la fin je me de -- mande
   je me de -- mande
   si j’ai pen -- sé à toi
+}
+
+QuandjepenseSoustitre = \markup \justify {
+  Genre "musical :" ballade (slow).
+  Contrainte "harmonique :" l’harmonisation n’est composée que
+  d’«anatoles» (enchaînements VI-II-V-I) incomplets.
+  Contrainte "mélodique :" la mélodie est entièrement gouvernée par
+  les prédicats du texte (lequel n’est constitué que de groupes verbaux,
+  avec seulement deux verbes différents).
+  Le verbe «penser» produit une quinte, le verbe «demander» une tierce.
+  Suivant qu’il s’agit de la première ou de la deuxième personne, l’intervalle
+  est ascendant ou descendant (et inversement selon le verbe). Enfin,
+  la deuxième personne majore les tierces mais minore les secondes.
 }
 
 RaisonVoixTexte = \lyricmode {
@@ -578,47 +768,73 @@ RaisonVoixTexte = \lyricmode {
   y_a pas de rai -- son
 }
 
+RaisonSoustitre = \markup \justify {
+  Genre "musical :" rock lent.
+  Contrainte "structurelle :" cinq carrures de cinq mesures à cinq temps.
+  Contrainte "mélodique :" la mélodie n’utilise que cinq hauteurs,
+  correspondant aux cinq mots-rimes du texte (en «quenoum»), et
+  suivant une écriture combinatoire similaire. Contrainte
+  "harmonique :" les notes de la mélodie, bien qu’invariantes,
+  sont tantôt perçues dans un contexte de ré mineur, tantôt de
+  mi \general-align #Y #DOWN \teeny \flat mineur.
+  Contrainte "rythmique :" les appuis tombent toutes
+  les cinq double-croches (en décalage avec les temps).
+}
+
 TelephoneVoixTexte = \lyricmode {
   % Jacques Roubaud.
   Dans les her -- bes, dans les bui -- ssons
   Dans les fleurs bleues, rou -- ges ou jaunes
   C’est pour en -- ten -- dre ta chan -- son
   Que je t’a -- ppelle ô Té -- lé -- phone.
-  
+
   Gaie co -- mme ce -- lle du pin -- son
   Ce -- lle de la grive en au -- tomne
   Si dou -- ce qu’elle donne le fri -- sson
   Est la no -- te du Té -- lé -- phone.
-  
+
   Très peu u -- tile est l’ha -- me -- çon
   Sans in -- té -- rêt le sa -- xo -- phone
   Pas be -- soin de tant de fa -- çons
   Pour la pri -- se du Té -- lé -- phone.
-  
+
   À l’é -- po -- que de la mou -- sson
   Pour fuir l’o -- ra -- ge qui l’é -- tonne
   Il court et tom -- be chez les poi -- ssons
   À l’eau, à l’eau, le Té -- lé -- phone.
-  
+
   Plu -- ma -- ges bruns, plu -- ma -- ges blonds
   Plu -- ma -- ges roux co -- mme l’au -- tomne
   Ces cous courts ou bien ces cous longs
   Ce sont des cous de Té -- lé -- phone.
-  
+
   Becs ou -- verts a -- vec con -- vi -- ction
   Pia -- illant ju -- squ’à s’en rendre a -- phones
   Pour ré -- cla -- mer dou -- ble ra -- tion
   Tels sont les fi(l)s du Té -- lé -- phone.
-  
+
   Fin co -- mme le pa -- pier Can -- son
   Co -- mme le bec de la ci -- gogne
   Ou la tru -- ffe du hé -- ri -- sson
   Tu as beau nez ô Té -- lé -- phone.
-  
+
   Mais on dit qu’il a l’am -- bi -- tion
   D’être é -- lu mai -- re de Car -- ca -- ssonne_!
   Je crains que dans ces con -- di -- tions
   Las, on ne rie du Té -- lé -- phone.
+}
+
+TelephoneSoustitre = \markup \justify {
+  Genre "musical :" \concat {
+    \bold fa \general-align #Y #DOWN \teeny \sharp
+    \bold do \general-align #Y #DOWN \teeny \flat .
+  }
+  Contrainte de "hauteurs :" la partition est rédigée
+  pour clavier téléphonique à double-fréquence (norme
+  DTMF), en écriture concertante avec la voix et la basse.
+  La tonalité de si mineur est choisie pour correspondre
+  approximativement aux sons du téléphone, qui ne se situent
+  pas dans le tempérament harmonique habituel.
 }
 
 \layout {

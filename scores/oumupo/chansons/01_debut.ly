@@ -1,6 +1,8 @@
 %-- Chansons Oulipiennes -- debut.ly -------------------------------%
 % (c) 2012 Mike Solomon <mike@mikesolomon.org>.
 
+\language "italiano"
+
 DebutGrille =
 %\transpose mi do
 \chordmode {
@@ -44,10 +46,10 @@ DebutGrille =
   a a a a a a a a |
   a a a a a a a a |
   a a a a a r a a |
-  a a a a a a a a |  
+  a a a a a a a a |
   a a a a a a a a |
   a a a a a r r a |
-  a a a r r4. a8 |  
+  a a a r r4. a8 |
   a a a r8 r2 |
   r8 a a a a r4. |
   r2 r8 a a a |
@@ -63,6 +65,7 @@ DebutGrille =
 DebutVoix =
 %\transpose mi do
 \relative do'' {
+  \tocItem \DebutToc
   \time 2/2
   \key re \major
   \tempo Samba
@@ -76,10 +79,10 @@ DebutVoix =
   la la la si la la la la |
   mi la la la la mi la la |
   la la dod la la r la dod |
-  la la la la sol la la la |  
+  la la la la sol la la la |
   la si la la la la si la |
   la la la mi la r r la |
-  fad la la r r4. la8 |  
+  fad la la r r4. la8 |
   la la sol r8 r2 |
   r8 la la la sol r4. |
   r2 r8 la mid la |

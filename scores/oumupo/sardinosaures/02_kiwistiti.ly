@@ -4,6 +4,7 @@
 \language "italiano"
 
 KiwistitiVoix = \relative do' {
+  \tocItem \KiwistitiToc
   \key mib \minor
   \time 3/4
   R2.

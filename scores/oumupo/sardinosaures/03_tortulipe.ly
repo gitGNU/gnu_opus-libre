@@ -4,6 +4,7 @@
 \language "italiano"
 
 TortulipeVoix = \relative do' {
+  \tocItem \TortulipeToc
   \time 7/4
   \tempo "Andante serioso" 4 = 80
   \dynamicUp

@@ -5,6 +5,7 @@
 
 AntilopeVoix =
 \relative do' {
+  \tocItem \AntilopeToc
   \time 4/4
   R1 r2 r4 r8
   \tempo "Andantino"
@@ -83,7 +84,7 @@ AntilopePianoMd =
   } s32 \makeClusters {
     fa,16 sold la dod fa sold la dod16*1/2
   } \ottava #1 s32
-  
+
   \makeClusters {
     <la' la'>8._> <la la'>16 <la la'>8_.
     <la la'>~ <la la'> <la la'>_. <la la'>4_- ~
@@ -143,9 +144,9 @@ AntilopePianoMg =
   fa,( do') \md <do' fa lab>4.-- \mg
   fa,,8( do') fad,( dod') r4 |
   r2 r8 sol la,4 |
-  
+
   % BREAK
-  
+
     re8.^>\dyn "ff_subito" re16 la'8^. la,^.
     r16 mib'8 mib16( sib'8^.) mib,^. |
     re8.^> re16 la'8^. la,^. r

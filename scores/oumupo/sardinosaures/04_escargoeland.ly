@@ -4,6 +4,7 @@
 \language "italiano"
 
 EscargoelandVoix = \relative do' {
+  \tocItem \EscargoelandToc
   \time 5/4
   \tempo Adagietto
   \dynamicUp

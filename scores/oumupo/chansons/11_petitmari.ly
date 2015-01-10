@@ -5,6 +5,7 @@
 
 PetitmariVoix =
 \relative do' {
+  \tocItem \PetitmariToc
   \partial 4 r4
   R1*4
   r4 sol'8^"détaché et rebondissant"

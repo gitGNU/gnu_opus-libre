@@ -4,6 +4,7 @@
 \language "italiano"
 
 OkapieVoix = \relative do' {
+  \tocItem \OkapieToc
   \time 4/4
   \tempo "Presto alla Poulenca" 4 = 96
   \dynamicUp
@@ -124,7 +125,7 @@ OkapiePianoMd = \relative do' {
   mi'''16(-.\f si-. fa-. sib,)-.
   do'(-. sol-. dod,-. fad,)-.
   sold'(-. red-. la-. re,)-.
-  \ottava #0 \clef bass 
+  \ottava #0 \clef bass
   r8
   <<
     { \voiceOne <re,, sol si!>8^. <re sol si>4^>^- } \\
@@ -170,7 +171,7 @@ OkapiePianoMg = \relative do' {
     } \\
     { \voiceTwo
       <mi,, red'>4-- la,?-- <mi' red'>-- la,-- |
-      <mi' re'!>-- la,-- re'4-- la,-- } 
+      <mi' re'!>-- la,-- re'4-- la,-- }
   >> | \stemNeutral
   mi'16 mi' red mi fa re' dod re do, si' sold sol mi8-. si-. |
   <<

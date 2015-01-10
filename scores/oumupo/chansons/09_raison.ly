@@ -8,10 +8,11 @@ RaisonGrille =
   re2*5/4:m sol re:m sol re:m sol re:m sol re:m sol
   mib:m lab mib:m lab mib:m lab mib:m lab mib:m lab
   re:m
-} 
+}
 
 RaisonVoix =
 \relative do' {
+  \tocItem \RaisonToc
   \time 5/4
   \key re \locrian
   r2 r2 r16 re-. fa-. fa-. |

@@ -6,26 +6,27 @@
 AutobusVoix =
 %\transpose sol fa
 \relative do' {
-    r8 re sol sib \times 2/3 {dod4 fa8~} fa4 |
-    mib8 la,4. r4 sib8 mib |
-    re2. r4 |
-    r8 sol, la fad sib mib, r8 do |
-    fad si2.. r8 mi, fad sold la si re4 |
-    do8 fa,4. r8 mi fad red |
-    si'4 r r8 dod, mi re |
-    si'2 r |
-    r8 mi do reb lab sol fa lab |
-    sol2 r |
-    r8 dod, sold' la do sib~ \times 2/3 {sib fa'4~}
-    fa mib8 la,~ la2 |
-    r8 do, fad sold la sib do mib |
-    re2. r4 r8 mi, sold lad
-    si8 fa4 mi8 |
-    fa8 fad4. r8 re dod re |
-    si'4. lab8 reb4. do8 |
-    fa,2. r4 r si fad4. mi8 |
-    la2. sib4~ | sib2 mib,4 re |
-    sol1 R1 \bar "|."
+  \tocItem \AutobusToc
+  r8 re sol sib \times 2/3 {dod4 fa8~} fa4 |
+  mib8 la,4. r4 sib8 mib |
+  re2. r4 |
+  r8 sol, la fad sib mib, r8 do |
+  fad si2.. r8 mi, fad sold la si re4 |
+  do8 fa,4. r8 mi fad red |
+  si'4 r r8 dod, mi re |
+  si'2 r |
+  r8 mi do reb lab sol fa lab |
+  sol2 r |
+  r8 dod, sold' la do sib~ \times 2/3 {sib fa'4~}
+  fa mib8 la,~ la2 |
+  r8 do, fad sold la sib do mib |
+  re2. r4 r8 mi, sold lad
+  si8 fa4 mi8 |
+  fa8 fad4. r8 re dod re |
+  si'4. lab8 reb4. do8 |
+  fa,2. r4 r si fad4. mi8 |
+  la2. sib4~ | sib2 mib,4 re |
+  sol1 R1 \bar "|."
 }
 
 AutobusPianoMd =

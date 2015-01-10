@@ -4,6 +4,7 @@
 \language "italiano"
 
 CachalotarieMesures = {
+  \tocItem \CachalotarieToc
   \time 2/2
   \tempo "Allegro risoluto"
   \partial 2

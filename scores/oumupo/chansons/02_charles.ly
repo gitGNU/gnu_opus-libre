@@ -9,6 +9,7 @@ BasseInstr = "Centrebasse"
 
 CharlesChant = \transpose si la
 \relative do' {
+  \tocItem \CharlesToc
   \key si \minor
   R1*3
   \dynamicUp
@@ -83,7 +84,7 @@ CharlesTrempette = \transpose si la
            X right
            (ly:staff-symbol::print grob))
           (cons -5.5 0)))
-       
+
      } {
           mi,8\repeatTie r fad( sol la sol fad mi) sol2*7/8( s16)
         } >>

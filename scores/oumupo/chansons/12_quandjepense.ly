@@ -33,7 +33,7 @@ QuandjepenseGrille =
   sib
   do4.:7 dob:maj7
   sib2.
-  mib4. lab4. 
+  mib4. lab4.
   reb:5-
   do:7
   fa:m
@@ -51,11 +51,12 @@ QuandjepenseGrille =
 
 QuandjepenseVoix =
 \relative do' {
+  \tocItem \QuandjepenseToc
   \time 6/8
   \key mib \major
   \partial 4
   \tempo Lent
-  sib8 do 
+  sib8 do
   sol'4. r8 sib,8 do |
   sol'4. r8 sib,8 do |
   sol'4. ~ sol8 lab4 |
