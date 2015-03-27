@@ -6,8 +6,8 @@ SiCb =
   \key la \minor
   \acciaccatura {si'16[ do]}
   si4\mf la8-. fa'4-- mi8-. re16-> do si la
-  si8(\> la) mi-. fa4--\! re8-. la'16-> sib do re
-  si8--\< mi,-. sol'8-.\! fa4( re8)
+  si8(\> la) mi-. fa4--\! mi8-. la'16-> sib do re
+  red8--\< si-. sol'-.\! fa4( re8)
   mib,16-> fa sol la
   si4-. \clef bass la,4--\f sol-- fa--
   mi8--\fp si'-.( sold-.) mi-- si'-.( sold-.)
@@ -114,8 +114,8 @@ SiPianoMd = \relative do' {
   <sol sol'>( do) <fad, fad'> <fa fa'>(
   la) <mi mi'>( dod' la)
   <re, do' re>4( mi8 <re fa do'>~ q4 <fa si>)
-  <re mi si'>4.( <mi la>8~ q do <re la'>4)
-  <re la'>4.( <re lab'>8~ q do <sib lab'>4)
+  <re mi si'>4.( <mi la>8~ q do <re la'> mi)
+  <fa la>4.( <re lab'>8~ q do <sib lab'>4)
   <sib re sol>( la8 <sold re' sold>~
   q4 <la do fa>)
   <fa la si mi>4.( <fa sold si mi>8~
@@ -176,7 +176,7 @@ SiPianoMg = \relative do' {
   sib,-- re-- mib-- mi--
   la-- mi'( la sol)
   fa4.( sol8~ sol4 sol,)
-  do4.( fa8~ fa4 la,)
+  do4.( fa8~ fa4 do8 dod)
   re4.( sib8~ sib4 re)
   mib4.( mi8)~ mi4 si8( do)
   re4.( dod8~ dod4 do)~

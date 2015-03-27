@@ -8,4 +8,5 @@ LaTitre = "Tangola"
   date = "mars 2015"
 }
 
-% #(set-global-staff-size 22)
+\pointAndClickOff
+#(set-global-staff-size 16)

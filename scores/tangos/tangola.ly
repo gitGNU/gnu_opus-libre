@@ -54,7 +54,7 @@ LaCb =
   \clef treble
   la'''(\mf do,) sol'-. fad4-- \clef bass
   \grace s8
-  sib,,,--\p do-- reb-- sib-- sol-- r8
+  sib,,,4--\p do-- reb-- sib-- sol-- r8
   \clef treble
   mi'''(\mp sol,) do-. sib4
   \clef bass
@@ -130,7 +130,7 @@ LaPianoMd = \relative do' {
   r8 <mi' do' mi>4. r8 <fa do' fa>4.
   r8 <fad do' fad>4 <sol si do sol'>8~ q2
   r8 <red la' si red>4. r8 <mi sold mi'>4.
-  r8 <fa do' fa>4 <sold do re fad>8~ q2
+  r8 <fa sol do fa>4 <sold do re fad>8~ q2
   r8 <re fa re'>4.
   <red la' si red>4. <mi la do mi>8~
   q <fa la do fa>4.~ q2
