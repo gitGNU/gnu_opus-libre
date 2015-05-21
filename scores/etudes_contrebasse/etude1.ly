@@ -27,12 +27,12 @@ Un =
   sol8(\p\downbow sold) fad( sol) dod4 |
   \t {sol8( sold) sol} fad sold do4\upbow |
   mi,4.\downbow \f fad8 la si |
-  mi,4\downbow la8--( si--) re-0-- fa-- |
-  mi,4 \t {la8-0(\< re-0 mi)} sol-0-- sib-- |
+  mi,4\downbow la8--( si--) re\CaV-- fa-- |
+  mi,4 \t {la8\CaV(\< re\CaV mi)} sol\CaV-- sib-- |
   mi,,2^>^-\! sold8^-^(\> sol^-) |
   mi2^-\p r4 |
-  dod'16(\(\downbow re-0) mi( fa)
-  \t {re8( mi fa)} sol-0( mi) |
+  dod'16(\(\downbow re\CaV) mi( fa)
+  \t {re8( mi fa)} sol\CaV( mi) |
   fad(\< sol) sib2\mp\)^"(ten.)" |
   si16\(( la si la) fad( mi fad mi) do( la si la) |
   \t {fad8(^"(senza dim.)" mi fad)} mi2\) |
@@ -42,9 +42,9 @@ Un =
     {sol2.\p ~ sol2} \\
     {\voiceTwo r4 r8 re_+ la4_+ mi_+ r}
   >> sol'4\glissando \upbow \< |
-  sib8\((\f la) fa( fad) la4~ |
-  la\) fa8\((\upbow \mf mi) do dod |
-  mi2\) si8\((\upbow\mp do) |
-  fad,\> sold do4\)\p\fermata
+  sib8\((\f\downbow la) fa( fad) la4~\downbow |
+  la\) fa8\((\upbow \mf mi) do\downbow dod\upbow |
+  mi2\)\downbow si8\((\upbow\mp do) |
+  fad,\>\downbow sold\upbow do4\downbow\)\p\fermata
   mi,-.^"pizz." | la->\laissezVibrer la'-> r \bar "|."
 }

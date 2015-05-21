@@ -33,6 +33,10 @@
         \with-url #"http://valentin.villenave.net"
         \typewriter http://valentin.villenave.net
       }
+      \line {
+        (Remerciements à Thierry Barbé pour
+	l’ajout de quelques doigtés et annotations.)
+      }
       \vspace #.5
       \override #'(line-width . 100)
       \justify {
@@ -58,6 +62,19 @@
 
 \pageBreak
 
+ZeroSoustitre =		\markup { \concat { (1 \super er } degré)}
+UnSoustitre =		\markup { \concat { (2 \super e } degré)}
+DeuxSoustitre =		\markup { (degrés 1 et 2) }
+TroisSoustitre =	\markup { (degrés 1, 2 et 3) }
+QuatreSoustitre =	\markup { (degrés 1 à 5) }
+CinqSoustitre =		\markup { (degrés 1 à 5) }
+SixSoustitre =		\markup { (degrés 1 à 5) }
+SeptSoustitre =		\markup { (degrés 1, 2 et 3) }
+HuitSoustitre =		\markup { (degrés 1 à 7) }
+NeufSoustitre =		\markup { (degrés 1 à 10) }
+DixSoustitre =		\markup { (degrés 1 à 10) }
+OnzeSoustitre =		\markup { (degrés 1 à 10) }
+
 ZeroTitre   = "Étude 0 : les bottes en caoutchouc"
 UnTitre     = "Étude 1 : les moufles"
 DeuxTitre   = "Étude 2 : le gilet bleu à pois verts et à rayures rouges"
@@ -75,8 +92,9 @@ OnzeTitre   = "Étude 11 : ... le slip !"
 
 SchubertTitre= "Deux phrases romantiques"
 SchubertSoustitre= \markup \center-column {
-  "(d’après les Sonates pour piano"
-  "en La mineur de Franz Schubert)"
+  "(degrés 1 à 10 — d’après les deux"
+  "Sonates pour piano en La mineur"
+  "de Franz Schubert)"
 }
 
 JimboShortTitre= "Jimbo’s back"
@@ -87,10 +105,10 @@ JimboTitre = \markup \center-column {
   \JimboShortTitre
   \vspace #.5
 }
-JimboSoustitre= "(d’après Claude Debussy)"
+JimboSoustitre= "(degré 1 — d’après Claude Debussy)"
 
 FunnyTitre= "Who says funny?"
-FunnySoustitre= "(d’après un thème de jazz)"
+FunnySoustitre= "(degrés 1 et 2 — d’après un thème de jazz)"
 
 \paper {
   first-page-number = #-1

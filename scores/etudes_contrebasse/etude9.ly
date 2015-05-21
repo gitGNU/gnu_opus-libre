@@ -9,11 +9,11 @@ Neuf =
   \clef bass
   \time 4/4
   \tempo "Grotesco"
-  re,4-+\mf la'8(\upbow \< si do4-.)\! sold-.
-  re-+ la'8(\upbow \< si do)\! dod,-.\p mib( fa)
+  re,4-+\mf_"pizz." la'8(\upbow ^"arco" \< si do4-.)\! sold-.
+  re-+_"simile" la'8(\upbow \< si do)\! dod,-.\p mib( fa)
   re4-+\mf la'8(\< si do4-.\!) re,-+
   sib'8(\< do reb4-.) <lab mib'>-.\sfp la,-+
-  re-+ la'8(\mf si do4) sold,^"pizz."
+  re-+ la'8(\mf si do4) sold,_"pizz."
   re'8-+ si'(\<\upbow do^"(arco)" re mib4-.\!) fa,8-. la,-+
   sold'(\downbow \mp\> lad si) sol-+ fad(\upbow sold la4-.)
   re,8(\p la') re,( sib')
@@ -49,6 +49,6 @@ Neuf =
   <fa, do'>8-. <fad dod'>-. <fa do'>-. <sol\CaV lab>-.
   <do, sol'>-. <reb lab'>-. <do sol'>-. <re\CaV mib>-.
   \t {fa,--\ff fad-- sol--} <sold la\CaV >4-.r2
-  \grace re'8^"pizz."_\CaV re'1\harmonic _"(sul G)"
+  \grace re'8^"pizz."_\CaV re'1\harmonic _"(sul G)" \laissezVibrer
   \bar "|."
 }

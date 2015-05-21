@@ -37,8 +37,8 @@ Trois =
     dob( fa dob fa dob fa)
     re(\(\< fa) mi( sol) fa( la)\)
     mi(\(\> sol) fa( la) sol( sib)\)
-    si(\>\downbow sol mib)\! sol fad(\> re
-    sib)\! re mi(\> do lab)\! do
+    si(\>\downbow sol mib\! sol fad\> re)
+    sib(\! re mi\> do lab\! do)
     mi,(\p si' mi, si' mi, si')
     fa(\< do') sol( sib) fad( la)
     mi(\p\downbow si' mi, si' mi, si')
