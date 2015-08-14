@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 30-readconf.scm                                    ;
+; opus_libre -- 20-readconf.scm                                    ;
 ;                                                                  ;
 ; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -51,7 +51,7 @@
                       (begin
                         (if (defined-string? lyvar)
                             (set! val (string-append
-                                       "\"" (ly:parser-lookup parser lyvar) "\"")))
+                                       "\"" (ly:parser-lookup lyvar) "\"")))
                         (if (not (string=? prefix ""))
                             (set! var (string-append prefix ":" var)))))
                   (if val (let ((str (format #f "(define-public ~a ~a)" var val)))

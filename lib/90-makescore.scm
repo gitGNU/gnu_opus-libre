@@ -66,7 +66,7 @@ current-part music."
   (set! output-filename
         (let* ((orig-filename (if (defined-string? 'output-filename)
                                   output-filename
-                                  (ly:parser-output-name parser)))
+                                  (ly:parser-output-name)))
                (prefix (if (defined-string? 'conf:output-dir)
                            (string-append conf:output-dir "/")
                            #f))
@@ -85,13 +85,13 @@ current-part music."
 ;; If ARG is an empty string or #"all" (or a localized equivalent),
 ;; then the whole score will be built.
 ;; Unrecognized string arguments are tolerated for now, but not recommended."
-  (define-music-function (parser location arg) (string?)
+  (define-music-function (arg) (string?)
     eval-conf
     eval-lang
     eval-macros
     eval-layout
     eval-theme
-    (let* ((defined-structure (ly:parser-lookup parser 'structure))
+    (let* ((defined-structure (ly:parser-lookup 'structure))
            (struct (cond ((not defined-structure) conf:default-structure)
                          ((string? defined-structure) (list defined-structure))
                          ((list? defined-structure) defined-structure))))
@@ -114,7 +114,7 @@ current-part music."
          (if (string-suffix? (or ".ly" ".ily") part)
              (let* ((regx (string-append "/" part "$"))
                     (file (car (find-files (*current-score*) regx))))
-                (ly:parser-include-string parser (format #f "\\include \"~a\"" file)))
+                (ly:parser-include-string (format #f "\\include \"~a\"" file)))
              (let* ((skel-name (skel-file arg))
                     (skel-part (find-skel (string-append skel-name "-" part)))
                     (skel-num (find-skel (string-append skel-name "-" (number->string (ls-index part struct))))))
@@ -123,20 +123,22 @@ current-part music."
                        (eval-skel (find-skel (skel-file skel-name)))))
 
                (let* ((music (apply-skel (cons part arg) lang:instruments))
-                      (score (scorify-music music parser))
+                      (score (scorify-music music))
                       (local-layout (make-this-layout part lang:layout))
                       (layout $defaultlayout)
                       (header (make-module))
                       (title (make-this-text part lang:title-suffix))
+                      (subtitle (make-this-text part lang:subtitle-suffix))
                       (author (make-this-text part lang:author-suffix lang:untaint-disclaimer)))
 
                  (module-define! header 'piece title)
+                 (module-define! header 'piece-subtitle subtitle)
                  (module-define! header 'author author)
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score (if local-layout local-layout layout))
-                 (if (*pagebreak-before*) (add-music parser pagebreak))
-                 (add-score parser score)
-                 (if (*pagebreak-after*) (add-music parser pagebreak))
+                 (if (*pagebreak-before*) (add-music pagebreak))
+                 (add-score score)
+                 (if (*pagebreak-after*) (add-music pagebreak))
                  (*has-timeline* #f)
                  (*pagebreak-before* #f)
                  (*pagebreak-after* #f)
