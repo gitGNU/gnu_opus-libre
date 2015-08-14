@@ -31,7 +31,7 @@
 
 (define keepDyn
 ;; Tag all dynamics in MUSIC.
-  (define-music-function (parser location music) (ly:music?)
+  (define-music-function (music) (ly:music?)
     (music-filter
      (lambda (x)
        (if (dynamic? x)
@@ -42,7 +42,7 @@
 
 (define removeDynamics
 ;; Remove untagged dynamics.
-  (define-music-function (parser location music) (ly:music?)
+  (define-music-function (music) (ly:music?)
     (if (ly:get-option 'no-auto-piano-dynamics)
         music
         (music-filter
@@ -58,7 +58,7 @@
 (define filterDynamics
 ;; Like \removeWithTag, but will not affect other contexts
 ;; (i.e. no \change, no \bar or \time etc.)
-  (define-music-function (parser location music) (ly:music?)
+  (define-music-function (music) (ly:music?)
     (if (ly:get-option 'no-auto-piano-dynamics)
         (make-music 'Music 'void #t)
         (music-filter

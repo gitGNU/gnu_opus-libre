@@ -30,7 +30,7 @@
                   (string->symbol str)
                   token)))
     `(define-public ,sym
-       (define-music-function (parser location) ()
+       (define-music-function () ()
          (make-music 'ContextChange 'change-to-type 'Staff
                                     'change-to-id ,str)))))
 
@@ -38,7 +38,7 @@
   (let* ((sym (car (primitive-eval str)))
          (script (cdr (primitive-eval str))))
     `(define-public ,sym
-       (define-music-function (parser location mus) (ly:music?)
+       (define-music-function (mus) (ly:music?)
          (add-script mus ,script)))))
 
 
@@ -54,7 +54,7 @@
       (eval-string (format #f
                            ;; hackish, but oh sooo convenient
                            "(define-public ~a
-          (define-music-function (parser location mus) (ly:music?)
+          (define-music-function (mus) (ly:music?)
           (add-script mus \"~a\")))" sym script)))
     (if (not-null? rest) (make-scripts rest))))
 

@@ -25,12 +25,12 @@
 
 (define-public (defined-string? sym)
   "Does SYM refer to a string?"
-   (string? (ly:parser-lookup parser sym)))
+   (string? (ly:parser-lookup sym)))
 
 ;; This one isn't actually used.
 (define-public (defined-music? sym)
   "Does SYM refer to a music expression?"
-  (ly:music? (ly:parser-lookup parser sym)))
+  (ly:music? (ly:parser-lookup sym)))
 
 (define-public (exists? loc)
   "Is LOC an accessible file/directory?"
@@ -42,7 +42,7 @@
   ;; and local settings, typically located in scores/.
   ;; Think of it as the usr/ directory in a standard
   ;; *nix file-tree."
-    (let* ((defined-score (ly:parser-lookup parser 'scores))
+    (let* ((defined-score (ly:parser-lookup 'scores))
            (branch (if (ly:get-option 'git-branch-as-score-name)
                        (let* ((port (open-input-pipe "git branch --no-color | grep \\*"))
                               (str (read-line port)))

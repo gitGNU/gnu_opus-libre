@@ -24,7 +24,7 @@
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn
-  (define-event-function (parser location arg) (markup?)
+  (define-event-function (arg) (markup?)
     (let ((d (make-music 'AbsoluteDynamicEvent)))
       (ly:music-set-property! d 'tweaks
         (acons 'self-alignment-X -0.8
@@ -39,7 +39,7 @@
       d)))
 
 (define dyncresc
-  (define-event-function (parser location arg) (markup?)
+  (define-event-function (arg) (markup?)
     (make-music 'CrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -50,7 +50,7 @@
                             (else arg)))))
 
 (define dyndim
-  (define-event-function (parser location arg) (markup?)
+  (define-event-function (arg) (markup?)
     (make-music 'DecrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -78,7 +78,7 @@
 
 ;; (define *hairpin-text-direction* (make-parameter #f))
 ;; (define hairpinText
-;;   (define-music-function (parser location text) (markup?)
+;;   (define-music-function (text) (markup?)
 ;;     (make-sequential-music
 ;;      (list
 ;;        (make-music
@@ -96,19 +96,19 @@
 
 (define hairpinText
   ;; beware - this is a _music_ function, not a postfix event!
-  (define-music-function (parser location text) (markup?)
+  (define-music-function (text) (markup?)
     (make-hairpin-text DOWN text)))
 
 (define hairpinTextUp
-  (define-music-function (parser location text) (markup?)
+  (define-music-function (text) (markup?)
     (make-hairpin-text UP text)))
 
 (define hairpinTextDown
-  (define-music-function (parser location text) (markup?)
+  (define-music-function (text) (markup?)
     (make-hairpin-text DOWN text)))
 
 (define startText
-  (define-event-function (parser location txt) (markup?)
+  (define-event-function (txt) (markup?)
      (make-text-span txt)))
 
 ;; for consistency only.
@@ -116,7 +116,7 @@
   stopTextSpan)
 
 (define ten
-  (define-music-function (parser location music) (ly:music?)
+  (define-music-function (music) (ly:music?)
     (if
      (equal? (ly:music-property music 'name) 'EventChord)
      (set! (ly:music-property music 'elements)
@@ -128,7 +128,7 @@
     music))
 
 (define ind
- (define-music-function (parser location text music) (string? ly:music?)
+ (define-music-function (text music) (string? ly:music?)
    (if
      (equal? (ly:music-property music 'name) 'EventChord)
      (set! (ly:music-property music 'elements)
@@ -138,7 +138,7 @@
    music))
 
 (define bracketUp
-  (define-music-function (parser location text music) (markup? ly:music?)
+  (define-music-function (text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
       (set! current-staff-position -4)
@@ -156,7 +156,7 @@
          $music #})))
 
 (define bracketDown
-  (define-music-function (parser location text music) (markup? ly:music?)
+  (define-music-function (text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
       (set! current-staff-position -1)
@@ -174,5 +174,5 @@
          $music #})))
 
 (define untaint
-   (define-music-function (parser location expr) (ly:music?)
+   (define-music-function (expr) (ly:music?)
      #{ $(untaint-this expr) #}))

@@ -73,11 +73,11 @@
     (ly:music-set-property! event 'name 'NoteEvent))))
 
 (define makeGhost
-(define-music-function (parser location music) (ly:music?)
+(define-music-function (music) (ly:music?)
  (context-spec-music (music-filter event-filter (unpitch music)) 'PseudoVoice)))
 
 (define showAnyWay
-(define-music-function (parser location music) (ly:music?)
+(define-music-function (music) (ly:music?)
 #{
   \unset Score.keepAliveInterfaces
   $music
