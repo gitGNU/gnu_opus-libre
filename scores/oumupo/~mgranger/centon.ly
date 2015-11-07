@@ -1,5 +1,14 @@
 \language "italiano"
 
+\pointAndClickOn
+
+\header {
+  title="Prendre un enfant par la main"
+  subtitle="... c’est bon pour le moral"
+  composer="Martin Granger"
+  arranger="(relevé : V. Villenave)"
+}
+
 refrain = \lyricmode {
     Ta -- ta yo -- yo                                               % Annie Cordy
     Ta -- ga -- da ta -- ga -- da                                   % Joe Dassin
@@ -68,6 +77,8 @@ paroles = \lyricmode {
   Que les fi -- lles soient nues, qu’elles se je -- ttent sur moi   % Daniel Balavoine
   Et j’ai cri -- é, cri -- é __ _                                   % Christophe
 
+  \refrain
+
   Si j’a -- vais un ma -- rteau                                     % Claude François
   Je fe -- rais n’im -- po -- rte quoi                              % Michel Delpech
   J’i -- rai au bout de mes rê -- ves                                   % Jean-Jacques Goldman
@@ -108,10 +119,14 @@ music = <<
     fad2:7 si:m re1 si:m mi:m la2:7 sol:7
     re sol:maj7 mi:m9 la:6 fad:m si:7
     mi1:m mi:m mi:m7 la:m re re
-    la la si:m si:m6- do re sol2 mi:7
+    la re si:m si:m6- do re sol2 mi:7
     la1:m7 re:7 sol mi:m do2 re sol1
-    do2 re sol1 si:m sol2 do sol1 si:7
+    do2 re sol1 si:m sol2 do sol1 si2:7 re:7
 
+    sol1:6 sol sol re
+    la:7 sol:7 re sol2 re
+    dod1:7 fad2:m si fad:m7 si:7 mi dod:m
+    fad:7 si:7 mi1 la:/si
     mi dod:m dod2:m re la1
     re:6/la la la mi la mi la
   }
@@ -154,6 +169,7 @@ music = <<
     \tuplet 3/2 4 {fad4 sold8 mi4 fad8 mi4 fad8~ fad4 mi8~}
     mi4~ \tuplet 3/2 {mi4 dod8~} dod4 r
     r \tuplet 3/2 4 {fadd4 sold8 mi4 fad8~ fad4 mi8~} mi2 r
+
     r r4 r8 re si' si si si~ si si la la~
     la sol sol sol~ sol4 si,~ si dod2 la'4
     fad fad8 mid fad4 fad8 fad mi re4. sol4 la
@@ -187,7 +203,19 @@ music = <<
     la4 sol la re, sol r r r8 re do4. sol'8 fad mi fad re
     si re'4 re8 mi re dod re16( dod si8) re4 re8 re dod si si~
     si4 r8 sol~ \tuplet 3/2 {sol4 la si} si r r r8 re
-    \tuplet 3/2 {re4 si r8 si}
+    \tuplet 3/2 {re4 si r} r2
+
+    mi2 re4 si sol re8 re sol4 sol8 sol sol4
+    \ottava #1 re' re' si la \ottava #0
+    fad,8. mi16 fad8. la16~ la8 \xNotesOn mi'16 mi
+    mi4 r r r8 re r2 r4 \xNotesOff
+    fad,8 sol la4 la8 la~ la la la fad si4 si8 sol
+    la dod si la sold4 r r8 si la sold fad fad la fad si la4 fad8~
+    \tuplet 3/2 4 {fad4 sold8 mi4 fad8 mi4 fad8~ fad4 mi8~}
+    mi4~ \tuplet 3/2 {mi4 dod8~} dod4 r
+    r \tuplet 3/2 4 {fadd4 sold8 mi4 fad8~ fad4 mi8~} mi2 r
+
+    r4 r8 si'
     sold la si dod si2 sold4 si fad' mi mi8 red4 dod8~ dod8
     la la la sold la sold la~ la mi sold4 la si
     si1 la4 r \tuplet 3/2 2 {la4 si dod dod si dod}

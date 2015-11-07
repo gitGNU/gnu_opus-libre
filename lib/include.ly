@@ -41,17 +41,17 @@
 
 %% Required by main.ly --------------------------------------------%
 % lang =
-% #(define-music-function (parser location lang-code) (string?)
+% #(define-music-function (lang-code) (string?)
 %   (input-language lang-code)
 %   (make-sequential-music 'void #t))
 %
 % edition =
-% #(define-music-function (parser location lang-code) (string?)
+% #(define-music-function (lang-code) (string?)
 %   (edition-language lang-code)
 %   (make-sequential-music 'void #t))
 %
 % make =
-% #(define-music-function (parser location dir) (string?)
+% #(define-music-function (dir) (string?)
 %   (use-score-dir dir))
 
 % #(define (exists? loc) (access? loc F_OK))
