@@ -25,7 +25,8 @@
 %#(ly:set-option 'use-variable-names #t)
 %#(ly:set-option 'allow-suffixless-varnames #t)
 %#(ly:set-option 'no-auto-piano-dynamics#t)
-#(ly:set-option 'git-branch-as-score-name #t)
+%#(ly:set-option 'git-branch-as-score-name #t)
+%#(ly:set-option 'untainted #t)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Base includes %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -40,17 +41,17 @@
 
 %% Required by main.ly --------------------------------------------%
 % lang =
-% #(define-music-function (parser location lang-code) (string?)
+% #(define-music-function (lang-code) (string?)
 %   (input-language lang-code)
 %   (make-sequential-music 'void #t))
 %
 % edition =
-% #(define-music-function (parser location lang-code) (string?)
+% #(define-music-function (lang-code) (string?)
 %   (edition-language lang-code)
 %   (make-sequential-music 'void #t))
 %
 % make =
-% #(define-music-function (parser location dir) (string?)
+% #(define-music-function (dir) (string?)
 %   (use-score-dir dir))
 
 % #(define (exists? loc) (access? loc F_OK))

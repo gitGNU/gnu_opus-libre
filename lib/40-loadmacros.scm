@@ -18,14 +18,11 @@
 
 
 
-
-(defmacro make-simple-function (token expr)
+(defmacro make-function (token funct)
   (let* ((sym (if (defined-string? token)
-                  (string->symbol (primitive-eval token))
-                  token)))
-    `(define-public ,sym
-       (define-music-function (parser location x) (ly:music?)
-         ,expr))))
+		  (string->symbol (primitive-eval token))
+		  token)))
+    `(define-public ,sym ,funct)))
 
 (defmacro staff-change-command (token)
   (let* ((str (primitive-eval token))
@@ -33,7 +30,7 @@
                   (string->symbol str)
                   token)))
     `(define-public ,sym
-       (define-music-function (parser location) ()
+       (define-music-function () ()
          (make-music 'ContextChange 'change-to-type 'Staff
                                     'change-to-id ,str)))))
 
@@ -41,7 +38,7 @@
   (let* ((sym (car (primitive-eval str)))
          (script (cdr (primitive-eval str))))
     `(define-public ,sym
-       (define-music-function (parser location mus) (ly:music?)
+       (define-music-function (mus) (ly:music?)
          (add-script mus ,script)))))
 
 
@@ -57,16 +54,16 @@
       (eval-string (format #f
                            ;; hackish, but oh sooo convenient
                            "(define-public ~a
-          (define-music-function (parser location mus) (ly:music?)
+          (define-music-function (mus) (ly:music?)
           (add-script mus \"~a\")))" sym script)))
-    (if (not (null? rest)) (make-scripts rest))))
+    (if (not-null? rest) (make-scripts rest))))
 
 (define (load-macros-in dir)
    (map (lambda (x)
           (begin
             (ly:debug-message "Loading macros file ~a..." x)
             ;; ugh.
-            (load (string-append "../" x))))
+            (scm-load (string-append "../" x))))
        (find-files dir ".scm$")))
 
 (define eval-macros
