@@ -69,7 +69,7 @@
           (mark-set (context-spec-music
               (make-property-set 'rehearsalMark equiv-mark)
               'Score)))
-         (ly:music-set-property! mark-ev 'origin location)
+         (ly:music-set-property! mark-ev 'origin (*location*))
          (ly:music-set-property! mark-ev 'label equiv-mark)
          mark-ch)))
 

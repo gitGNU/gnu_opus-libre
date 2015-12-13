@@ -143,7 +143,7 @@
       ; this shouldn't be needed!!!
       (set! current-staff-position -4)
       (make-music 'ApplyOutputEvent
-                  'origin location
+                  'origin (*location*)
                   'context-type 'Voice
                   'procedure
                   (lambda (grob grob-origin context)
@@ -161,7 +161,7 @@
       ; this shouldn't be needed!!!
       (set! current-staff-position -1)
       (make-music 'ApplyOutputEvent
-                  'origin location
+                  'origin (*location*)
                   'context-type 'Voice
                   'procedure
                   (lambda (grob grob-origin context)
