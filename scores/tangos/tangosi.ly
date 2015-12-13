@@ -6,7 +6,7 @@ SiCb =
   \key la \minor
   \acciaccatura {si'16[ do]}
   si4\mf la8-. fa'4-- mi8-. re16-> do si la
-  si8(\> la) mi-. fa4--\! mi8-. la'16-> sib do re
+  si8(\> la) mi-. fa4--\! re8-. la'16-> sib do re
   red8--\< si-. sol'-.\! fa4( re8)
   mib,16-> fa sol la
   si4-. \clef bass la,4--\f sol-- fa--
@@ -68,6 +68,8 @@ SiCb =
 }
 
 SiPianoMd = \relative do' {
+  \key la \minor
+  \grace s8
   R1*7 s1
   \ottava #1
   \acciaccatura {si'''16[ do]}
@@ -133,6 +135,7 @@ SiPianoMd = \relative do' {
 
 SiPianoMg = \relative do' {
   \clef bass
+  \key la \minor
   \grace s8
   R1*4
   mi,,4-.\p r8 mi-. r4 mi-.

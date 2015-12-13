@@ -1,12 +1,17 @@
 SiTitre = "Tangosi"
 LaTitre = "Tangola"
+SolTitre= "Tangosol"
+FaTitre = "Tangofa"
+MiTitre = "Tangomi"
+ReTitre = "Tangore"
+DoTitre = "Tangodo"
 
 \header {
-  title = "Tangosi et Tangola"
-  subtitle = "pour contrebasse et piano"
+  title = "Siete tangos"
+  subtitle = "para contrabajo y piano"
   composer = "V."
   date = "mars 2015"
 }
 
-\pointAndClickOff
+%\pointAndClickOff
 #(set-global-staff-size 16)

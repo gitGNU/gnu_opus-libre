@@ -1,3 +1,3 @@
-structure = '("Si" "La")
+structure = '("Mi")
 skel = "duo"
-lang = "fr"
+input = "fr"

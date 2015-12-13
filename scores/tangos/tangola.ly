@@ -76,6 +76,7 @@ LaCb =
 }
 
 LaPianoMd = \relative do' {
+  \key la \minor
   R1*4
   \clef bass
   <mi, fa si>2 <fa sol do>
@@ -139,6 +140,7 @@ LaPianoMd = \relative do' {
 }
 
 LaPianoMg = \relative do' {
+  \key la \minor
   \clef bass
   R1*4
   r4 mi,, r mi
