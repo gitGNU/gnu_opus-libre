@@ -9,20 +9,21 @@
     \Voice
     \remove Forbid_line_break_engraver
     \override Glissando #'breakable = ##t
+    subdivideBeams = ##t
   }
 }
 
-UnPianoMd = \relative {
+UnPianoMd = \relative do' {
 
   %%% Variation I %%%
   si'2--\p si2~( si8. do16 | si2.) si2 |
   si2.( la2) | si1*5/4 |
-  si2--(-\dyn "p_sempre" si2.--) |
+  si2--(\dyn "p_sempre" si2.--) |
   si2~( si8. do16 si2~ | si\> la2.) |
 
   si2\! si~( si8 do | <sold la si>2.)\pp si2 |
-  si2.~( si8 la~ la4) | si1*5/4\> |
-  si2-\dyn "p_sub."
+  si2.~( si8 la?~ la4) | si1*5/4\> |
+  si2\dyn "p_sub."
 
   \pl {
     s2. r2 <mi,? fa>2. s1*5/4 |
@@ -41,7 +42,7 @@ UnPianoMd = \relative {
   }{
     sol2\mp sol~( sol8. lab16 |
     sol1) fa4~( | fa2 sol2.) |
-    si4.(-\dyn "più_p" la8~ la4 si2~ |
+    si4.(\dyn "più_p" la8~ la4 si2~ |
     si4~ si8. do16 si2.~) | si2 si2. |
   }
   <re,? la'>2(\> <mi fa si>2.)\! \fermata |
@@ -50,7 +51,7 @@ UnPianoMd = \relative {
   r4 si'2~--\pp si8. do16( si2.) |
   r8 si--~( si4.. do32 si la4~)
   la8 r \stemUp \t {la4( si8~)} si r \stemNeutral |
-  si8(-\dyn "poco_più" do~) \t {do reb,( do'~)}
+  si8(\dyn "poco_più" do~) \t {do reb,( do'~)}
   do do--~ do4 si8.( do16~) do4 \t {r8 \longHairpin si(\< do)} |
   do(\! reb~) reb reb4-- do8--~ \t {do re,!( do')}
   do(\< reb~ \t {reb do si'\!~} si do,?) |
@@ -61,15 +62,17 @@ UnPianoMd = \relative {
   r4\! si2--\pp \t {do8( si4~)} si2. |
   r8 si--~ si4~ si16\< -"cantando" la8( red16~
   red16.\! do,32 fa8~) fa4. si8--~ si r |
-  la8-\dyn "p_dolce" ( sib~) \t {sib sold( la~)}
+  la8\dyn "p_dolce" ( sib~) \t {sib sold( la~)}
   la16 sib( sold la)
-  la8( sib~) sib16 fa( mi'8~)
+  la8( sib~) sib16 fa( mi'?8~)
   \t {mi la,16.-- sold'32 sib,8--~} sib r |
-  si(-\dyn "poco_più" do~) do16 do8-- fad16(
+  si(\dyn "poco_più" do~) do16 do8-- fad16(
   \tt {sol,16) mib'( la dod, sib)}
+  \halfBeat
   mi32->( fa,16.) \t {la'16( sib, mi}
   \t {fa,4--) do'16(\> reb,~)} reb8.\! mi16
   la16(\< fa) \t {lad( si do)} |
+  \fullBeat
   \tt {dod8--(\! re-- mib16--~)}
   \ttt {mib si'( la mi sol lab,)}
   \ttt {si'( la mi fad sol, do}
@@ -80,6 +83,7 @@ UnPianoMd = \relative {
 
   si2.\ppp \startTrillSpan ~ si8\stopTrillSpan la\startTrillSpan ~
   la4~ \t {la(\stopTrillSpan si) sold8 \t {sold16( la lad}} |
+  \halfBeat
   si4)\startTrillSpan ~ \tt {si32(\stopTrillSpan do si do si}
   la8)\startTrillSpan ~ \t {la16\stopTrillSpan si( sold}
   \t {si32 sold sol)} si16~
@@ -87,15 +91,18 @@ UnPianoMd = \relative {
   si do( si8)\startTrillSpan ~ si4~ si8~ si16\stopTrillSpan r |
   si32(\< la si sold sol si) mi,( fad)
   \t {red4(\! si'8)\startTrillSpan ~}
+  \fullBeat
   \t {si8.\stopTrillSpan do,16( si8)\startTrillSpan ~}
   \t {si16\stopTrillSpan do8(->--} \t {reb->-- si16~->--)}
   si32\> reb( do solb' fa la si16\!)\startTrillSpan ~
   si4~ si8\stopTrillSpan r |
   \showStaffSwitch
-  \times 8/12 {r32 la(_\mp si sold sol sib mib, re fad do reb fa}
+  \graceNotes \lightBeams \tuplet 12/8 {
+    r32 la(_\mp si sold sol sib mib, re fad do reb fa
+  }
   \t {\mg \stemUp re,!4--) \md \stemNeutral si'8--\startTrillSpan ~}
   si4~\> si8.\stopTrillSpan \stemUp la16( si8)\! r
-  \hideStaffSwitch
+  \hideStaffSwitch \halfBeat
   do16(\p si8) do16( \t {si8) la16~(} la16 si32 sold) | \stemNeutral
   \t {sol4_( si8)\startTrillSpan ~} si8~ si\stopTrillSpan ~
   si16. do32( si8~) si r <re, la'>4\>(
@@ -108,7 +115,9 @@ UnPianoMd = \relative {
   solb16. lab32( fa16.) sol32( |
   \t {mi8) red'16--(} \t {dod lad sold}
   mi16.)_\> lad32(-> mi8)~
+  \fullBeat
   \ttt {mi16_\! red'--( dod lad sold mi)~}
+  \halfBeat
   mi16. fad32( mib16.) fa32( |
   \t {re8)\dim dod'16(} \t {si sold fad)}
   \t {re8( do'16} \t {sib sol fa)}
@@ -139,20 +148,24 @@ UnPianoMd = \relative {
     \voiceTwo si4~ \t {si4 do,8^- ~} do4
   } {
     s2 r8^\cresc solb''-- ~ solb16 solb8.->-- ~
+    \halfBeat
     solb16 lab \t {fa_(^\! solb lab)}
   }
   <si, lad'>8->-- \mf <si lad'>--~ <si lad'>16. si32( lad'8)->
   do,16\<( si)~ \t {si do,_( si')\!} |
   \pl {
+    \halfBeat
     r16. do32(_- si8)~ si16 la^(~ \t {la si sold)}
   } {
     lad'8->-- \t {r lad16--~} lad4
   }
   \ottava #0
-  si,16(-"loco"-\dyndim "dim. molto" sold sol si)~
+  \fullBeat
+  si,16(-"loco"\dyndim "dim. molto" sold sol si)~
   \tt {si sol( sold mi red} |
 
-  fad8.)-\dyn "p_semplice" mid16( fad2)~
+  fad8.)\dyn "p_semplice" mid16( fad2)~
+  \halfBeat
   fad16 do( reb32-- do mid fad)~ |
   fad8 \t {do16( si'8)~} si16 sol? sold32( mi red fad~
   fad16 sold) \tt {mid32(\< fad sold sib la)} |
@@ -160,7 +173,7 @@ UnPianoMd = \relative {
     do2~ do8. reb16
   } {
     si'4.-- do8^( si2*1/2)\laissezVibrer
-  } do,16(\> do' \ottava #1 si si'--)~
+  } \fullBeat do,16(\> do' \ottava #1 si si'--)~
   si\! la( fa?8-- \t {sol\> mi mib)} |
 
   solb4--\pp solb4..-- lab16( |
@@ -187,7 +200,7 @@ UnPianoMd = \relative {
   <mi fa si>2.)\! \laissezVibrer \fermata
 
   %%% Variation IV %%%
-  <do fa sol si>4.^-^( -\dyn "f_(franc)"
+  <do fa sol si>4.^-^( \dyn "f_(franc)"
   <mi la si red>^-)~ <mi la si red>2 r4 |
   <do fa sol si>^-( <mi la si red>^- <fa sib do mi>^-) |
   <mi la si red>2.^- ~ <mi la si red>4 r <do fa sol si>^- |
@@ -242,7 +255,7 @@ UnPianoMd = \relative {
     <mi la si red>8 r
   }
 
-  <lab, reb mib sol>4---\dyn "mp_calorosamente" %% FIXME: is that a word?
+  <lab, reb mib sol>4--\dyn "mp_calorosamente" %% FIXME: is that a word?
   <lab reb mib sol>4..-- <sibb lab'>16( |
   <lab do re sol>2) r4 |
   <lab reb mib sol>4--^( <do mi fad si>2--) |
@@ -261,12 +274,13 @@ UnPianoMd = \relative {
   r4 <re la'>2( | <do mi fa sol si>2.)\laissezVibrer
 
   %%% Variation V %%%
-  do4--~-\dyn "mf_(con Ped.)" \t {do8 do4~} |
+  \fullBeat
+  do4--~\dyn "mf_(con Ped.)" \t {do8 do4~} |
   \t {do8. si16( do8)~} do4~ |
   \t {do8 si( do} \t {si \mg mi, red} |
   \md do'4) \t {si8--( si-- do--)} |
   \tt {solb'--( fa-- red16--~} red\> mi) lab( sol) |
-  si4.-- -\dyn "p_dolce" do8( si4)~ |
+  si4.-- \dyn "p_dolce" do8( si4)~ |
   si8 do do( si) fa'( solb) |
   si,2~ si8 do( | si2) si4~ |
   si8 sib la( lab) fab'( mib) |
@@ -276,7 +290,7 @@ UnPianoMd = \relative {
   \t {do8 si'4)\laissezVibrer } r8 sol,--~ sol4~ |
   sol8 sol--~ \t {sol la lad(~} \t {lad si) la'16( si} |
 
-  <do, la' do>4.)-\dyn "mf_malinconico" %% FIXME: word?
+  <do, la' do>4.)\dyn "mf_malinconico" %% FIXME: word?
   <si sold' si>8( <do la' do>4)~ |
   <do la' do>8 <si sol' si> <si sol' si>( <do lab' do>)
   <mi, do' mi>( <red si' red>) |
@@ -302,9 +316,9 @@ UnPianoMd = \relative {
     \oneVoice mib[(_"dolce" re] sib'[ la]
     dod,4.)\> do8 do^( fa,?)\!
   }
-  
+
   si,4--~\mp \t {si8 si4--~} | \t {si8 do( si)~} si4~ |
-  \t {si8 \mg \stemUp do,(-\dyn "cantando" si)} \t {lab^( mib' do} |
+  \t {si8 \mg \stemUp do,(\dyn "cantando" si)} \t {lab^( mib' do} |
   \set tieWaitForNote = ##t
   \md \stemNeutral si'4)~\> \t {si8 la~ re~} |
   <la re sol>2\!\laissezVibrer \fermata
@@ -327,8 +341,10 @@ UnPianoMd = \relative {
   fad,16-- la8.--\laissezVibrer
   r8 \ottava #1 mi''''16^(_\sf sold,,) %%%BUG
   \t {red'4_- \ottava #0 re,,_-_"loco" \stemUp \mg dod,^-} |
+  \halfBeat
   \stemNeutral \md \t {r16 mi'''(-> _\> fa,~} fa re)~
   \t {re8_\! \mg \stemUp sol,,( \stemNeutral \md sold')}
+  \fullBeat
   \pl { r4 la8_"(loco)"\mf}
   {\ottava #1 r32 dod'(_\pp red'8.-.) \ottava #0
   r4 r8 \ottava #1 lad'-.}
@@ -373,11 +389,13 @@ UnPianoMd = \relative {
   <la la'>8 <si si'>->--)~ <si si'>2}
 
   \pl r4 <si si'>2*1/2->--^\sfz\laissezVibrer \>
+  \halfBeat
   r8\mp \lightBeams \graceNotes {do'32( si, re la)
    sol(^\dyn "pp_élégant" fa, la mi)
   \tt {re( sol do mi si}
   fa') do'( re, mi' \t {fa16_\> sol la} si8)_\! } r |
   \tt {r16 re,,,( sol do la'} <si si'>4)
+  \fullBeat
   \pl {\ottava #0 <si,,, mi fa si>4._-_"loco"_(
   \ottava #0 <do re sol la>_-_)
   \ottava #0 <si mi fa si>2_- _"loco" <si mi fa si>2*1/2_- }
@@ -386,11 +404,13 @@ UnPianoMd = \relative {
   do'( si) re,( mi sol la) fa
   mi, sol re( la' si fa do') si, \ottava #0
   do la^"loco" re, mi( fa\> si sol do,)}} \clef bass
+  \halfBeat
   \t {r16 \lightBeams \graceNotes { la,( si,)}}
   \lightBeams \graceNotes {do32 mi, re'( mi
   \tt {fa) sol, fa( la sol')}} r8 |
   \clef treble \pl <do mi fad si>2*1/2--\p
-  \t {r8 \ottava #1 fad'''32_>_( sol la si si,_> do re mi)}
+  \t {\tupletBeat r8 \ottava #1 fad'''32_>_( sol la si si,_> do re mi)}
+  \halfBeat
   \t {fa16-.(_"(with swing)" reb-. mib-.}
   \t {lab,-. sib-. fa-.)} \ottava #0
   \t {r16 sib,(\> reb} \t {mib) fa,(-. lab-.)}
@@ -402,7 +422,7 @@ UnPianoMd = \relative {
   { \t {r8 \ottava #1 \acciaccatura do''''16-> si,8-- re-.}
   \oneVoice \t {sib \acciaccatura mi16-> red,8-- fad-.} }
   \t {re \ottava #0 \acciaccatura lab'16-> sol,8-- sib-.(}
-  fad-.) si,4.\glissando \ottava #1 |
+  fad-.) si,4.\glissando ^"gliss." \ottava #1 |
   si'''4->-- r si,,,\<\glissando si'''->--\! \ottava #0
   \pl { s4 r } { \oneVoice si,,,,-"loco"\<\glissando
   \ottava #1 <do'''' do,>2*1/2->--\fp\laissezVibrer }
@@ -473,13 +493,13 @@ UnPianoMd = \relative {
     r4 mib^(~ mib8. fab16 mib2) |
     lab,2.(\> solb2)\! \breathe
   } |
-  <reb mib sol>2--(-\dyn "p_possibile" <reb mib sol>~-- sol8. lab16 |
+  <reb mib sol>2--(\dyn "p_possibile" <reb mib sol>~-- sol8. lab16 |
   sol2.--) \longHairpin lab2(\> <re, mib fad>1--)\! r4
   \pl mi1*5/4_-_"dolce assai" {r4 r8 fa^(~ fa2 sol4)} |
   <re sol la>2^(~\> <re sol la>8 <mi fa si>2*5/4)\!\laissezVibrer\fermata
 }
 
-UnPianoMg = \relative {
+UnPianoMg = \relative do' {
   <mi fa>2--( <mi fa>2.--) |
   <mi fa>2--( <mi fa>2.--) |
   <mi fa>2_"simile" <mi fa>2. |
@@ -535,7 +555,7 @@ UnPianoMg = \relative {
 
   %%% Variation III %%%
   \tt {si16_"legato assai"
-  -\dyn "pp_sotto voce, con Ped." do, re fa sol}
+  \dyn "pp_sotto voce, con Ped." do, re fa sol}
   \tt {si do, re fa sol}
   \tt {si do, re fa sol} |
   \tt {si do, re fa sol}
@@ -793,8 +813,10 @@ UnPianoMg = \relative {
   s4 \ottava #-1 si,,,16(-. do'-. la-. re-.) \ottava #0 r4
   \ottava #-1 la,16(-. sol'-. fa-. si-. re,-. mi-. do8--) |
   \pl si2*1/2\laissezVibrer \t {r8 \ottava #1 \clef treble
+  \tupletBeat
   \tupletDown \t {sol''''''16_(-. la-. fad-.}
   \t {mi-. do-. re-.)}} \tupletNeutral
+  \halfBeat
   \ottava #0 fad,32( sol la si do, dod red mi)
   <mib, sol la re>4--_"(espr.)" \clef bass
   r32 mi,(_\ppp fa sol \tt {la) la,( sib do re)}
@@ -802,6 +824,7 @@ UnPianoMg = \relative {
   \ottava #-1 si,2\laissezVibrer \ottava #0 \clef treble
   \longHairpin <lab''' reb mib sol>8(^\mp^\<
   <do fa sol si>4) <do fa sol si>4.-- | \clef bass
+  \fullBeat
   r8^\! \ottava #-1 si,,,4.\laissezVibrer \clef treble \ottava #0
   \graceNotes { \tttt {r16 dod'''_( red fad sold lad dod}
   \tttt {red fad sold lad \ottava #1 dod red fad}

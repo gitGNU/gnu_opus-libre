@@ -20,8 +20,8 @@ DeuxPianoMd =
   \ottava #1
   \slurDashed
   s64
-  do'''16([-\dyn "mf,_non legato (quasi staccato)"
-  la do si sold])
+  do'''16([\dyn "mf,_non legato (quasi staccato)"
+  la do si? sold])
   si[( sold si sib sol])
   la[( fad fa lab])
   sol[( mi mib solb])
@@ -42,13 +42,13 @@ DeuxPianoMd =
   sib(\< reb mib fab)-.--\! mib-. reb-.
   do( la do si)-. sold-. la-.
   dod(\< sib mi fa)-.--\! re-. reb-. |
-  do(^\> si) la-. do-. si^\! fad re' do
+  do(^\> si) la-. do?-. si^\! fad re' do
   lab'(^\> sol) fa-. lab-. sol^\! sib, dod sol
   mi'(^\> red) dod-. mi-. mib(^\! re) dod si |
   do lab do si sol lab si mi\< red lab' sol do
-  re(-\dyn "poco_f" dod) sib re
+  re(\dyn "poco_f" dod) sib re
   dod la fa fad sib(\> la) fa reb |
-  do[-\dyn "p_articolato ad lib" la do]
+  do[\dyn "p_articolato ad lib" la do]
   si[ sol lab sib] dod[\cresc mi dod] re[ fad
   fa mib] si'[ sold sib] la[ fad sol mib'] fa[ re mi] |
   do'->\mf do-> do-> la, sib' \ottava #1 si' do'-> do->
@@ -57,7 +57,7 @@ DeuxPianoMd =
 
   do,->[\! do r do] do^"netto" do do do do_ "(senza dim.)" do do do
   do do do do do do do do do do do do |
-  si''8-.-- -\dyn "p_sempre"
+  si''8-.-- \dyn "p_sempre"
   r do,,16 sold''-.-- r8 fa16-. la-. do,, do
   do do do8 reb''-.-> do,,16 do do sib''-. r do,, |
   do do do8 mi'16_(_"simile" sol') r do,,, do do r8
@@ -65,9 +65,10 @@ DeuxPianoMd =
   \ottava #1 re'''(\fp do') \ottava #0 do,,,,-"loco" do |
   r8. la'''16(_\dyn "pp_leggiero" fa lab
   mib, sol' mi sib,8-.) r16
-  do, do do do do do do do do do do do |
+  do,[ do do do do do] do do do do do do |
   s1.*2
-  <do do'>16->-\dyn "fpp" <do la'> <do do'> <do si'> sold' si
+  <do do'>16->\dyn "fpp" ^"non legato"
+  <do la'> <do do'> <do si'> sold' si
   sib sol do, do do do <do reb'>-> <do do'> <do sib'> <do reb'>
   do' si la do si sold^\< do mi |
   fa([^\! reb fa] mi)[ si mi mib]
@@ -85,7 +86,7 @@ DeuxPianoMd =
   re[ sib, re solb]
   sib[\> la lab sol fa]
   solb[\> fa mi mib reb] |
-  do'[-\dyn "f_sub." la do si sold]
+  do'[\dyn "f_sub." la do si sold]
   sib[ sol la fa]
   solb[ mib solb] fa[ re reb] \ottava #0
   do[\dim la si sold]\!
@@ -100,11 +101,11 @@ DeuxPianoMd =
   fad[ do'(-> la] do[ si)
   sol sib] lab[ do(-> la] do[ si) sold
   do]->( la[ si sold]) |
-  \ottava #1 do'[-\dyn "ff_quasi martelato" la do si sold]
+  \ottava #1 do'[\dyn "ff_quasi martelato" la do si sold]
   si[ sold si sib sol]
   la[ fad fa lab]
   fad[ re dod mi]
-  \ottava #0 do[-"loco" -\dyn "meno_f" la do] si[ sol sib] |
+  \ottava #0 do[-"loco" \dyn "meno_f" la do] si[ sol sib] |
   fad[ re fad] fa[ dod mi]
   do[\dim la si sold]
   sol[ sib fad la]
@@ -118,7 +119,7 @@ DeuxPianoMg =
   \slurDashed
   si''16[( sold si sib sol])
   do[( la do si la])
-  sold[( mid fad la])
+  sold[( mid fad la?])
   fad[( red mi sol])
   mi[( do reb]) fa[( re lad16*3/4]) |
   si16[( sold si do sib])
@@ -129,7 +130,7 @@ DeuxPianoMg =
   si[ sold si] do[ la sol]
   fad[ la sib sol]
   mi[ sol lab fa]
-  re[ fa mib solb mib]
+  re[ fa? mib solb mib]
   do[ mib reb fa, si,] |
 
   mi,--( red' sol do) mi dod

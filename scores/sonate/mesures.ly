@@ -63,7 +63,7 @@ TroisTitre = "III."
         Gravure réalisée au moyen du logiciel libre
         \with-url #"http://www.lilypond.org"
         \concat {\bold "GNU LilyPond" ,}
-        \concat { $(string-append "version " (lilypond-version) ".") } 
+        \concat { $(string-append "version " (lilypond-version) ".") }
       }
     }
   }
@@ -79,7 +79,7 @@ UnMesures = {
   s1*5/4*7 \allowPageTurn
   s1*5/4*7 \allowPageTurn
   \bar "||"
-  
+
   %%% Variation II %%%
   \time 7/4
   \tempo "Stesso Tempo"
@@ -93,7 +93,7 @@ UnMesures = {
   s1*7/4*2 \allowPageTurn
   s1*7/4 \allowPageTurn
   \bar "||"
-  
+
   %%% Variation III %%%
   \time 3/4 s2.
   \time 4/4 s1*2
@@ -111,7 +111,7 @@ UnMesures = {
   \time 4/4 s1*2
   \time 3/4 s2. \allowPageTurn
   \bar "||"
-  
+
   %%% Variation IV %%%
   \time 3/4
   \tempo "(Non allargando)"
@@ -125,7 +125,7 @@ UnMesures = {
   s2.*5 \allowPageTurn
   s2.*2 \allowPageTurn
   \bar "||"
-  
+
   %%% Variation V %%%
   \time 2/4
   \tempo "A piacere"
@@ -141,7 +141,7 @@ UnMesures = {
   \tempo "Tempo I"
   s2*5 \allowPageTurn
   \bar "||"
-  
+
   %%% Variation VI %%%
   \time 5/4
   \tempo "Un poco più largo"
@@ -182,6 +182,7 @@ off = {
 DeuxMesures = {
   \time 6/4
   \set beamExceptions = #'()
+  \set subdivideBeams = ##t
   \tempo "Vif (avec souplesse)"
   \off s1.*3 \allowPageTurn
   \ter s1.
