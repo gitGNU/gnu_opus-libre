@@ -232,6 +232,11 @@ $x
 \set beatStructure = #'(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4)
 #})
 
+(define tupletBeat #{
+\set baseMoment = #(ly:make-moment 1 12)
+\set beatStructure = #'(3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3)
+#})
+
 
 ;; Expressive marks -----------------------------------------------;
 (define longHairpin #{
