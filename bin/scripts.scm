@@ -72,6 +72,53 @@
            (ly:music-property m 'tweaks)))
    m))
 
+(define accentedNote
+ (define-music-function (x) (ly:music?)
+   #{ \once \set fingeringOrientations = #'(left)
+      \once \override Fingering #'X-extent = #'(0 . 1)
+      \once \override Fingering #'font-size = #1 %% default is -5
+      $(add-script "scripts.sforzato" x) $x #}))
+
+(define slashStem #{
+ \once \override Stem #'stencil =
+ #(lambda (grob)
+    (let* ((x-parent (ly:grob-parent grob X))
+            (is-rest? (ly:grob? (ly:grob-object x-parent 'rest))))
+      (if is-rest?
+          empty-stencil
+          (let* ((dir (ly:grob-property grob 'direction))
+                 (stem (ly:stem::print grob))
+                 (stem-y (ly:grob-extent grob grob Y))
+                 (stem-length (- (cdr stem-y) (car stem-y))))
+            (ly:stencil-combine-at-edge
+              stem Y dir
+              (grob-interpret-markup grob
+                (markup
+                  #:translate (cons -1 -1)
+                  #:draw-line (cons 2 (* dir 2)))) (* stem-length -0.5))))))
+#})
+
+(define unflatGliss
+ (define-music-function (pair) (pair?)
+#{
+ \once \override Glissando $'left-bound-info =
+   $(lambda (grob)
+      (let ((anchor-Y (assoc-get 'Y (ly:line-spanner::calc-left-bound-info grob))))
+        (acons 'Y (+ (car pair) anchor-Y) (ly:line-spanner::calc-left-bound-info grob))))
+ \once \override Glissando $'right-bound-info =
+   $(lambda (grob)
+      (let ((anchor-Y (assoc-get 'Y (ly:line-spanner::calc-right-bound-info grob))))
+        (acons 'Y (+ (cdr pair) anchor-Y) (ly:line-spanner::calc-right-bound-info grob))))
+#}))
+
+(define downGliss #{
+\unflatGliss #'(0.5 . -0.5)
+#})
+
+(define upGliss #{
+\unflatGliss #'(-0.5 . 0.5)
+#})
+
 ;; Arpeggios ------------------------------------------------------;
 
 (define arpeggUp

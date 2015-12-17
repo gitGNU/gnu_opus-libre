@@ -27,18 +27,21 @@
 ;; loaded (which allows for lighter language files
 ;; that only define what needs to be overriden)."
   (let* ((guess-lang
-           (let* ((port (open-input-pipe "locale | grep LANG"))
-                  (str (read-line port)))
-             (set! str (if (string? str)
-                           (string-take
-                             (car (reverse (string-split str #\=)))
-                             2)
-                           #f))
+           (let* ((port (open-input-pipe "locale | grep --color=never LANG"))
+                  (result (read-line port))
+                  (str (if (string? result)
+                           (car (reverse (string-split result #\=)))
+                           #f)))
+             (if str
+                 (set! str
+                       (if (>= (string-length str) 2)
+                           (string-take str 2)
+                           #f)))
             (close-pipe port)
             str))
          (input-lang
           (if (defined-string? 'input)
-              (ly:parser-lookup parser 'input)
+              (ly:parser-lookup 'input)
               (begin
                 (ly:debug-message "Input language not defined.")
                     (if guess-lang

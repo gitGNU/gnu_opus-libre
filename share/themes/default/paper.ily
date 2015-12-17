@@ -74,11 +74,20 @@
 
   scoreTitleMarkup = \markup {
     \column {
+      \vspace #2
       \on-the-fly #print-all-headers { \bookTitleMarkup \hspace #1 }
       \fill-line {
         \huge \bold % default was regular size and weight
         \fromproperty #'header:piece
     %      \fromproperty #'paper:papersizename
+      }
+      \fill-line {
+        \fromproperty #'header:piece-subtitle
+      }
+      \vspace #1
+      \fill-line {
+        \fromproperty #'header:instrument
+        \fromproperty #'header:author
       }
     }
   }

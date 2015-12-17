@@ -19,13 +19,12 @@
 
 ;; Macros for entering text elements.
 
-(load "../lib/libtext.scm")
-(load "../lib/libgraphics.scm")
+(scm-load "../lib/libtext.scm")
+(scm-load "../lib/libgraphics.scm")
 
 ;; Composite dynamics ---------------------------------------------;
 (define dyn
-  ;;syntax: -\dyn instead of \dyn (see Issue #1264).
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (arg) (markup?)
     (let ((d (make-music 'AbsoluteDynamicEvent)))
       (ly:music-set-property! d 'tweaks
         (acons 'self-alignment-X -0.8
@@ -40,7 +39,7 @@
       d)))
 
 (define dyncresc
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (arg) (markup?)
     (make-music 'CrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -51,7 +50,7 @@
                             (else arg)))))
 
 (define dyndim
-  (define-music-function (parser location arg) (markup?)
+  (define-event-function (arg) (markup?)
     (make-music 'DecrescendoEvent 'span-direction START
                 'span-type 'text
                 'span-text (cond
@@ -79,7 +78,7 @@
 
 ;; (define *hairpin-text-direction* (make-parameter #f))
 ;; (define hairpinText
-;;   (define-music-function (parser location text) (markup?)
+;;   (define-music-function (text) (markup?)
 ;;     (make-sequential-music
 ;;      (list
 ;;        (make-music
@@ -96,19 +95,20 @@
 ;;         (make-hairpin-text (*hairpin-text-direction*) text)))))
 
 (define hairpinText
-  (define-music-function (parser location text) (markup?)
+  ;; beware - this is a _music_ function, not a postfix event!
+  (define-music-function (text) (markup?)
     (make-hairpin-text DOWN text)))
 
 (define hairpinTextUp
-  (define-music-function (parser location text) (markup?)
+  (define-music-function (text) (markup?)
     (make-hairpin-text UP text)))
 
 (define hairpinTextDown
-  (define-music-function (parser location text) (markup?)
+  (define-music-function (text) (markup?)
     (make-hairpin-text DOWN text)))
 
 (define startText
-  (define-music-function (location parser txt) (markup?)
+  (define-event-function (txt) (markup?)
      (make-text-span txt)))
 
 ;; for consistency only.
@@ -116,7 +116,7 @@
   stopTextSpan)
 
 (define ten
-  (define-music-function (parser location music) (ly:music?)
+  (define-music-function (music) (ly:music?)
     (if
      (equal? (ly:music-property music 'name) 'EventChord)
      (set! (ly:music-property music 'elements)
@@ -128,7 +128,7 @@
     music))
 
 (define ind
- (define-music-function (parser location text music) (string? ly:music?)
+ (define-music-function (text music) (string? ly:music?)
    (if
      (equal? (ly:music-property music 'name) 'EventChord)
      (set! (ly:music-property music 'elements)
@@ -138,12 +138,12 @@
    music))
 
 (define bracketUp
-  (define-music-function (parser location text music) (markup? ly:music?)
+  (define-music-function (text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
       (set! current-staff-position -4)
       (make-music 'ApplyOutputEvent
-                  'origin location
+                  'origin (*location*)
                   'context-type 'Voice
                   'procedure
                   (lambda (grob grob-origin context)
@@ -156,12 +156,12 @@
          $music #})))
 
 (define bracketDown
-  (define-music-function (parser location text music) (markup? ly:music?)
+  (define-music-function (text music) (markup? ly:music?)
     (let ((current-staff-position 0))
       ; this shouldn't be needed!!!
       (set! current-staff-position -1)
       (make-music 'ApplyOutputEvent
-                  'origin location
+                  'origin (*location*)
                   'context-type 'Voice
                   'procedure
                   (lambda (grob grob-origin context)
@@ -172,3 +172,7 @@
          \once \override Fingering #'X-extent = #'(-2.0 . 0.0)
          $(add-bracket current-staff-position #f text music)
          $music #})))
+
+(define untaint
+   (define-music-function (expr) (ly:music?)
+     #{ $(untaint-this expr) #}))

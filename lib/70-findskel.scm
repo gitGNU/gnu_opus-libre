@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 60-findskel.scm                                    ;
+; opus_libre -- 70-findskel.scm                                    ;
 ;                                                                  ;
 ; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -39,25 +39,27 @@
 in the local conf dir or in the global skeleton repository."
   (let ((local-skel (find-files conf:local-conf-dir
                                 (string-append "/"
-                                               skelname ".lyskel")))
+                                               skelname ".lyskel$")))
         (global-skel (find-files conf:skel-dir
                                  (string-append "/"
-                                                skelname ".lyskel"))))
-    (if (not (null? local-skel)) (car local-skel)
-        (if (not (null? global-skel)) (car global-skel)
+                                                skelname ".lyskel$"))))
+    (if (not-null? local-skel) (car local-skel)
+        (if (not-null? global-skel) (car global-skel)
             #f))))
 
-(define skel-file
-;;   "The skeleton that will be used to compile the current part.
-;; If no skeleton has been specified or if the requested skeleton
-;; wasn't found, a default, versatile skeleton will be tried."
-  (if (defined-string? 'skel)
-      (let* ((requested-skel (ly:parser-lookup parser 'skel))
-             (file (find-skel requested-skel)))
-        (if (not file)
-            (begin (ly:warning "Skeleton not found: ~a.
+(define (skel-file arg)
+  "The skeleton that will be used to compile the current part.
+If no skeleton has been specified or if the requested skeleton
+wasn't found, a default, versatile skeleton will be tried."
+  (if (string? (find-skel arg)) arg
+      (if (defined-string? 'skel)
+          (let* ((requested-skel (ly:parser-lookup 'skel))
+                 (file (find-skel requested-skel)))
+             (if (or (not file)
+                     (eq? file ""))
+                 (begin (ly:warning "Skeleton not found: ~a.
 Defaulting to \"universal\" skeleton." requested-skel)
-                   default-skel)
-            file))
-      (begin (ly:warning "No skeleton defined;
-defaulting to \"universal\" skeleton.") default-skel)))
+                        default-skel)
+                 requested-skel))
+          (begin (ly:warning "No skeleton defined;
+defaulting to \"universal\" skeleton.") default-skel))))
