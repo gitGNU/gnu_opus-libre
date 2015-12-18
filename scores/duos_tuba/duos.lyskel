@@ -1,4 +1,3 @@
-\transpose do re
 \new ChoirStaff <<
   \newStaff $"TubaUn"
   \newStaff $"TubaDeux"
