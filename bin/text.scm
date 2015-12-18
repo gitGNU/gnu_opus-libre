@@ -27,7 +27,13 @@
   (define-event-function (arg) (markup?)
     (let ((d (make-music 'AbsoluteDynamicEvent)))
       (ly:music-set-property! d 'tweaks
-        (acons 'self-alignment-X -0.8
+        ; not very elegant, but these composite dynamic
+        ; indication might get quite lengthy.
+        (acons 'X-extent (cons 0 0)
+          (ly:music-property d 'tweaks)))
+      (ly:music-set-property! d 'tweaks
+        ; ugh. hardcoded offset.
+        (acons 'X-offset -1.8
           (ly:music-property d 'tweaks)))
       (ly:music-set-property! d 'text
         (cond
