@@ -41,7 +41,7 @@
             str))
          (input-lang
           (if (defined-string? 'input)
-              (ly:parser-lookup parser 'input)
+              (ly:parser-lookup 'input)
               (begin
                 (ly:debug-message "Input language not defined.")
                     (if guess-lang

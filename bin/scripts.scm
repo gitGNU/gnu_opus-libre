@@ -73,7 +73,7 @@
    m))
 
 (define accentedNote
- (define-music-function (parser location x) (ly:music?)
+ (define-music-function (x) (ly:music?)
    #{ \once \set fingeringOrientations = #'(left)
       \once \override Fingering #'X-extent = #'(0 . 1)
       \once \override Fingering #'font-size = #1 %% default is -5
@@ -99,7 +99,7 @@
 #})
 
 (define unflatGliss
- (define-music-function (parser location pair) (pair?)
+ (define-music-function (pair) (pair?)
 #{
  \once \override Glissando $'left-bound-info =
    $(lambda (grob)
