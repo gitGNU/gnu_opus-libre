@@ -13,7 +13,7 @@ PianoIIShortInstr = "II."
 %%TODO: use automatic headers.
 \header {
   title=\Titre
-  subtitle="sur le nom d'Anne-Marie de Lavilléon − Verdier"
+  subtitle="sur le nom d’Anne-Marie de Lavilléon − Verdier"
   composer="Valentin Villenave"
   date=\Date
 }
@@ -25,7 +25,6 @@ PianoIIShortInstr = "II."
 }
 #(set-global-staff-size 18)
 
-
 \pointAndClickOff
 \pageBreak
 \markup \fill-page {
@@ -33,14 +32,14 @@ PianoIIShortInstr = "II."
   ""
   \left-column {
     \wordwrap {
-      Cette pièce a été crée le 6 février 2004 à l'auditorium
+      Cette pièce a été crée le 6 février 2004 à l’auditorium
       Jean-Philippe Rameau du conservatoire de Saint-Maur des
       Fossés.
     }
     \vspace #.5
     \wordwrap {
       \bold { Cécile Hugonnard-Roche } tenait la partie de
-      premier piano, en compagnie de l'auteur au second piano.
+      premier piano, en compagnie de l’auteur au second piano.
     }
   }
   \fill-line {
@@ -57,20 +56,20 @@ PianoIIShortInstr = "II."
       \override #'(line-width . 100)
       \justify {
         Cette partition est publiée suivant les termes de la licence
-        \with-url #"http://fr.wikipedia.org/wiki/Wikipedia:CC-BY-SA"
-        \bold { Creative Commons, Paternité, Partage des
-        conditions initiales à \concat {l'identique \medium . }}
+        \with-url #"http://artlibre.org/licence/lal"
+        \bold { Art Libre }
+        \concat { ( \with-url #"http://artlibre.org" \typewriter http://artlibre.org ).}
         Vous pouvez la copier, la modifier et la jouer \italic librement
-        sans contrevenir au droit d'auteur, à condition de respecter les
-        termes de la licence (notamment en veillant à mentionner le nom
-        de l'auteur et l'adresse web d'origine).
+        sans contrevenir au droit d'auteur, à  condition de respecter les
+        termes de la licence (notamment en veillant à  mentionner le nom
+        de l’auteur et l’adresse web d’origine).
       }
       \vspace #.5
       \line {
         Gravure réalisée au moyen du logiciel libre
-        \with-url #"http://www.LilyPond.org"
+        \with-url #"http://lilypond.org"
         \concat {\bold "GNU LilyPond" ,}
-        \concat { #(ly:export (string-append "version " (lilypond-version) ".")) } 
+        \concat { $(string-append "version " (lilypond-version) ".") }
       }
     }
   }

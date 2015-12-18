@@ -1,2 +1,3 @@
-skel = "2pianos" 
+input = "fr"
+skel = "2pianos"
 #(ly:set-option 'auto-piano-dynamics "both")
