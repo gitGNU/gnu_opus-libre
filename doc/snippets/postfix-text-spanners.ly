@@ -1,4 +1,4 @@
-\version "2.14"
+\version "2.19"
 
 \header {
   texidoc "The traditional way of printing text spanners in
@@ -29,7 +29,7 @@
 
 %% Wrapper for the make-text-span function
 #(define startText
-  (define-music-function (location parser txt) (markup?)
+  (define-music-function (txt) (markup?)
      (make-text-span txt)))
 
 %% for consistency only.

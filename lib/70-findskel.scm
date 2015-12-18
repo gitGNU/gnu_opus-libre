@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------;
-; opus_libre -- 60-findskel.scm                                    ;
+; opus_libre -- 70-findskel.scm                                    ;
 ;                                                                  ;
 ; (c) 2008-2011 Valentin Villenave <valentin@villenave.net>        ;
 ;                                                                  ;
@@ -53,7 +53,7 @@ If no skeleton has been specified or if the requested skeleton
 wasn't found, a default, versatile skeleton will be tried."
   (if (string? (find-skel arg)) arg
       (if (defined-string? 'skel)
-          (let* ((requested-skel (ly:parser-lookup parser 'skel))
+          (let* ((requested-skel (ly:parser-lookup 'skel))
                  (file (find-skel requested-skel)))
              (if (or (not file)
                      (eq? file ""))

@@ -33,7 +33,7 @@ try to find a matching entry in ALIST."
 
 (define (include-music name)
   "Turn NAME into a music expression if one exists."
-  (let ((mus (ly:parser-lookup parser (string->symbol name))))
+  (let ((mus (ly:parser-lookup (string->symbol name))))
     (if (ly:music? mus)
         (begin (ly:debug-message "Loading music from ~a..." name)
                mus)
@@ -43,8 +43,7 @@ try to find a matching entry in ALIST."
 (define (make-this-text name suffix . disclaimer)
   "Associate NAME with SUFFIX, and check if a suitable
 markup exists."
-  (let ((mark (ly:parser-lookup parser
-                                (string->symbol
+  (let ((mark (ly:parser-lookup (string->symbol
                                  (string-append name suffix)))))
     (if (markup? mark)
         (if (and (not-null? disclaimer) (*untainted*))
@@ -63,7 +62,7 @@ markup exists."
   "Associate NAME with SUFFIX, and check if a local \\layout{} block
 exists with that name.  If so, parse it."
   (let* ((fullname (string-append name (string-capitalize suffix)))
-         (def (ly:parser-lookup parser (string->symbol fullname))))
+         (def (ly:parser-lookup (string->symbol fullname))))
     (if (ly:output-def? def)
         (begin (ly:debug-message "Using layout definition from variable ~a" fullname)
                def)
@@ -74,15 +73,15 @@ exists with that name.  If so, parse it."
   ;;   "If NAME matches a defined music expression, then
   ;; create a Voice for it.  If a matching timeline can be
   ;; found, try and squash it as well."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     (let* ((current-name (string-append (*current-part*) name))
-           (music (ly:parser-lookup parser (string->symbol current-name)))
+           (music (ly:parser-lookup (string->symbol current-name)))
            (global-timeline (if (not (*has-timeline*))
-                                (ly:parser-lookup parser
+                                (ly:parser-lookup
                                   (string->symbol
                                     (string-append (*current-part*) lang:timeline-suffix)))
                                 #f))
-           (local-timeline (ly:parser-lookup parser
+           (local-timeline (ly:parser-lookup
                              (string->symbol
                                (string-append current-name lang:timeline-suffix)))))
       (ly:debug-message "Loading music from ~a..." current-name)
@@ -104,14 +103,13 @@ exists with that name.  If so, parse it."
   ;; create a Dynamics context for it.  If NAME includes
   ;; several names separated with spaces, then look for
   ;; music expressions matching each available names."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     (let ((str-list (if (string-any #\sp name)
                         (string-split name #\sp)
                         (list name)))
           (ret-list '()))
       (map (lambda (x)
-             (let* ((m (ly:parser-lookup parser
-                                        (string->symbol x))))
+             (let* ((m (ly:parser-lookup (string->symbol x))))
                (if (ly:music? m)
                    (set! ret-list
                          (append ret-list
@@ -129,10 +127,10 @@ exists with that name.  If so, parse it."
   ;; create a Staff for it.  Then find and include any
   ;; instrumentName or Lyrics expression that could match
   ;; this staff (using appropriate suffixes)."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (current-name (string-append (*current-part*) name))
-           (music (ly:parser-lookup parser (string->symbol current-name)))
+           (music (ly:parser-lookup (string->symbol current-name)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
       (if (ly:music? music)
@@ -153,7 +151,7 @@ exists with that name.  If so, parse it."
 ;; (unless 'only-suffixed-varnames is set) numbers as
 ;; suffixes: in case there would be multiple verses, etc.
 ;; Create Lyrics contexts accordingly."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (current-name (string-append (*current-part*) name))
            (tainted? (or (is-this-tainted? (*current-part*))
@@ -166,7 +164,7 @@ exists with that name.  If so, parse it."
           (map (lambda (x)
                   (let* ((lyr-name (string-append current-name lang:lyrics-suffix
                                                   (string-capitalize x)))
-                         (lyrics (ly:parser-lookup parser (string->symbol lyr-name))))
+                         (lyrics (ly:parser-lookup (string->symbol lyr-name))))
                     (if (ly:music? lyrics)
                         (append! musiclist
                           (list
@@ -185,7 +183,7 @@ exists with that name.  If so, parse it."
 ;; parts as possible, by appending numbers as suffixes.  Then
 ;; create a GrandStaff containing staves for e.g.
 ;; \fluteOne, \fluteTwo, \fluteThree etc. as needed."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     #{ \new GrandStaff
        $(let* ((name (assoc-name lang:instruments name))
                (musiclist (list #{ {} #}))
@@ -209,12 +207,12 @@ exists with that name.  If so, parse it."
 ;; expression is found, it will also be included accordingly;
 ;; else if automatic-piano-dynamics is set, a Dynamics context
 ;; will be created using dynamics from either staff (or both)."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     (let* ((name (assoc-name lang:instruments name))
            (upper (string-append name (string-capitalize lang:upper-hand)))
            (lower (string-append name (string-capitalize lang:lower-hand)))
            (dynamics (string-append (*current-part*) name lang:dynamics-suffix))
-           (dynvar (ly:parser-lookup parser (string->symbol dynamics)))
+           (dynvar (ly:parser-lookup (string->symbol dynamics)))
            (instr (make-this-text name lang:instr-suffix))
            (short-instr (make-this-text name lang:short-instr-suffix)))
       ;; requires removeDynamics, defined in libdynamics.scm
@@ -238,9 +236,9 @@ exists with that name.  If so, parse it."
   ;;   "If NAME matches a defined music expression, then
   ;; create a Voice for it.  If a matching timeline can be
   ;; found, try and squash it as well."
-  (define-music-function (parser location name) (string?)
+  (define-music-function (name) (string?)
     (let* ((current-name (string-append (*current-part*) name))
-           (music (ly:parser-lookup parser (string->symbol current-name))))
+           (music (ly:parser-lookup (string->symbol current-name))))
       (ly:debug-message "Loading music from ~a..." current-name)
       (if (ly:music? music)
           #{ \new ChordNames = $name $music #}
