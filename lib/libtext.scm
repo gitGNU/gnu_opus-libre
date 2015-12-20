@@ -35,7 +35,7 @@
   (let*
       ((x-ext (ly:stencil-extent stencil X))
        (y-ext (ly:stencil-extent stencil Y))
-       (def (ly:parser-lookup parser 'conf:rounded-whiteout))
+       (def (ly:parser-lookup 'conf:rounded-whiteout))
        (radius (if (number? def) def 0))
        (blot (if (list? rad) (car rad) radius)))
     (ly:stencil-add
@@ -94,12 +94,12 @@ words randomly taken from WORDLIST."
  "Take EXPR, a variable containing a
 \\lyricmode expression and replace it with a
 similar, untainted expression."
-  (let* ((tainted-string (music->lily-string expr parser))
+  (let* ((tainted-string (music->lily-string expr))
          (untainted-string
           (untaint-string tainted-string lang:word-list)))
     (ly:debug-message
      "Untainted expression translated into:\n ~a" untainted-string)
-    (ly:parser-include-string parser untainted-string)))
+    (ly:parser-include-string untainted-string)))
 
 (define-public (is-this-tainted? name)
   (let ((cmd-arg (ly:get-option 'untainted)))

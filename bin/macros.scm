@@ -25,29 +25,29 @@
 
 ;; Rhythm shortcuts -----------------------------------------------;
 (make-function lang:tuplet-letter ; default: \t
-  (define-music-function (parser location span music)
+  (define-music-function (tuplet-span music)
     ((ly:duration? '()) ly:music?)
-    #{ \tuplet 3/2 $(if (not-null? span) span) $music #}))
+    #{ \tuplet 3/2 $(if (not-null? tuplet-span) tuplet-span) $music #}))
 
 (make-function lang:tuplet-letter-double ; \tt
-  (define-music-function (parser location span music)
+  (define-music-function (tuplet-span music)
     ((ly:duration? '()) ly:music?)
-    #{ \tuplet 5/4 $(if (not-null? span) span) $music #}))
+    #{ \tuplet 5/4 $(if (not-null? tuplet-span) tuplet-span) $music #}))
 
 (make-function lang:tuplet-letter-triple ; \ttt
-  (define-music-function (parser location span music)
+  (define-music-function (tuplet-span music)
     ((ly:duration? '()) ly:music?)
-    #{ \tuplet 6/4 $(if (not-null? span) span) $music #}))
+    #{ \tuplet 6/4 $(if (not-null? tuplet-span) tuplet-span) $music #}))
 
 (make-function lang:tuplet-letter-quad ; \tttt
-  (define-music-function (parser location span music)
+  (define-music-function (tuplet-span music)
     ((ly:duration? '()) ly:music?)
-    #{ \tuplet 7/4 $(if (not-null? span) span) $music #}))
+    #{ \tuplet 7/4 $(if (not-null? tuplet-span) tuplet-span) $music #}))
 
 
 ;; Time signature equivalence
 (define equiv
- (define-music-function (parser location str) (string?)
+ (define-music-function (str) (string?)
    (let* ((mark-ev (make-music 'MarkEvent))
           (mark-ch (make-event-chord (list mark-ev)))
           (equiv-lst (string-split str #\= ))
@@ -69,18 +69,18 @@
           (mark-set (context-spec-music
               (make-property-set 'rehearsalMark equiv-mark)
               'Score)))
-         (ly:music-set-property! mark-ev 'origin location)
+         (ly:music-set-property! mark-ev 'origin (*location*))
          (ly:music-set-property! mark-ev 'label equiv-mark)
          mark-ch)))
 
 ;; Auto octavation ------------------------------------------------;
 (define oct
-  (define-music-function (parser location x) (ly:music?)
+  (define-music-function (x) (ly:music?)
     (octavize x)))
 
 ;; Polyphony shortcuts --------------------------------------------;
 (define pl
-  (define-music-function (parser location one two)
+  (define-music-function (one two)
     (ly:music? ly:music?)
     #{ << { \voiceTwo $one } \\ { \voiceOne $two } >> #}))
 
@@ -103,7 +103,7 @@
 #})
 
 (define hideNoteHeads
-  (define-music-function (parser location x) (ly:music?)
+  (define-music-function (x) (ly:music?)
   #{\override NoteHead #'transparent = ##t $x \revert NoteHead #'transparent #}))
 
 (define noTuplet #{
@@ -112,7 +112,7 @@
 #})
 
 (define noTuplets
-  (define-music-function (parser location x) (ly:music?)
+  (define-music-function (x) (ly:music?)
   #{
 \override TupletBracket #'transparent = ##t
 \override TupletNumber #'transparent = ##t
@@ -162,7 +162,7 @@ $x
 #})
 
 (define graceNotes
-  (define-music-function (parser location x) (ly:music?)
+  (define-music-function (x) (ly:music?)
   #{
 %% \override Stem #'direction = #UP %% Nope.
 \override Stem #'font-size = #-3
@@ -205,7 +205,7 @@ $x
 #})
 
 (define lightBeams
-  (define-music-function (parser location x) (ly:music?) #{
+  (define-music-function (x) (ly:music?) #{
 \override Beam #'beam-thickness = #0.384
 \override Beam #'gap = #0.5
 \override Flag #'font-size = #-3
@@ -232,6 +232,11 @@ $x
 \set beatStructure = #'(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4)
 #})
 
+(define tupletBeat #{
+\set baseMoment = #(ly:make-moment 1 12)
+\set beatStructure = #'(3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3)
+#})
+
 
 ;; Expressive marks -----------------------------------------------;
 (define longHairpin #{
@@ -239,7 +244,7 @@ $x
 #})
 
 (define longHairpins
-  (define-music-function (parser location x) (ly:music?) #{
+  (define-music-function (x) (ly:music?) #{
 \override Hairpin #'to-barline = ##f
 $x
 \revert Hairpin #'to-barline
@@ -248,14 +253,14 @@ $x
 
 ;; Custom note heads ----------------------------------------------;
 (define whiteNote
-  (define-music-function (parser location x) (ly:music?)
+  (define-music-function (x) (ly:music?)
     (set! (ly:music-property x 'tweaks)
                                (acons 'duration-log 1
                                   (ly:music-property x 'tweaks)))
                          x))
 
 (define blackNote
-  (define-music-function (parser location x) (ly:music?)
+  (define-music-function (x) (ly:music?)
     (set! (ly:music-property x 'tweaks)
        (acons 'before-line-breaking
               (lambda (grob)
@@ -267,7 +272,7 @@ $x
         x))
 
 (define parlato
- (define-music-function (parser location x) (ly:music?)
+ (define-music-function (x) (ly:music?)
 #{
 \override NoteHead #'style = #'cross
 $x
@@ -275,7 +280,7 @@ $x
 #}))
 
 (define slap ;;TODO: adapt accordingly to stem direction?
- (define-music-function (parser location x) (ly:music?)
+ (define-music-function (x) (ly:music?)
 #{
 \override NoteHead #'stencil = #ly:text-interface::print
 \override NoteHead #'text = \markup \musicglyph #"scripts.sforzato"
@@ -287,7 +292,7 @@ $x
 #}))
 
 (define harmoChord ;; FIXME: overly complicated.
- (define-music-function (parser location chord result) (ly:music? ly:music?)
+ (define-music-function (chord result) (ly:music? ly:music?)
  #{
 << \oneStemDown $chord \\ { \stemUp %FIXME: ties could look better.
 \override NoteHead #'stencil = #ly:text-interface::print
@@ -298,7 +303,7 @@ $x
 \revert Stem #'stencil \revert NoteHead #'stencil \stemNeutral } >> #}))
 
 (define harmonics
- (define-music-function (parser location x) (ly:music?)
+ (define-music-function (x) (ly:music?)
 #{
 \override Dots #'transparent = ##t
 \override Stem #'transparent = ##t
@@ -311,6 +316,6 @@ $x
 \revert Dots #'transparent #}))
 
 (define smart
- (define-music-function (parser location x) (ly:music?)
+ (define-music-function (x) (ly:music?)
    (naturalize x)))
 

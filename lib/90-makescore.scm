@@ -63,18 +63,35 @@ current-part music."
 ;; the output-dir directory.  If book-filename has already
 ;; been defined by the user, just keep it, otherwise it
 ;; will be named after the score directory's name in scores/."
-  (set! output-filename
-        (let* ((orig-filename (if (defined-string? 'output-filename)
-                                  output-filename
-                                  (ly:parser-output-name parser)))
-               (prefix (if (defined-string? 'conf:output-dir)
-                           (string-append conf:output-dir "/")
-                           #f))
-               (new-filename (car (reverse
-                                    (string-split (*current-score*) #\/)))))
+  (let* ((orig-filename (if (defined-string? 'output-filename)
+                            output-filename
+                            (ly:parser-output-name)))
+         (prefix (if (defined-string? 'conf:output-dir)
+                     (string-append conf:output-dir "/")
+                     #f))
+         (suffix (if (eq? (ly:get-option 'backend) 'ps)
+                     ".pdf"
+                     #f))
+         (new-filename (car (reverse (string-split (*current-score*) #\/))))
+         (new-filepath (string-append prefix new-filename))
+         (main-filepath (string-append conf:main-file suffix))
+         (long-filepath (string-append new-filepath suffix))
+         (main-symlink (if (access? main-filepath 0)
+                           (readlink main-filepath)
+                           #f)))
+    (if suffix
+        (if (and main-symlink (string=? main-symlink long-filepath))
+            (ly:debug
+             "Output file ~a already points to ~a, not making a new symlink."
+             main-filepath
+             long-filepath)
+            (begin
+             (if main-symlink (delete-file main-filepath))
+             (symlink long-filepath main-filepath))))
+    (set! output-filename
           (if (not prefix)
               orig-filename
-              (string-append prefix new-filename)))))
+              new-filepath))))
 
 (define make
 ;;   "This is where the score is put together and all functions
@@ -85,13 +102,13 @@ current-part music."
 ;; If ARG is an empty string or #"all" (or a localized equivalent),
 ;; then the whole score will be built.
 ;; Unrecognized string arguments are tolerated for now, but not recommended."
-  (define-music-function (parser location arg) (string?)
+  (define-music-function (arg) (string?)
     eval-conf
     eval-lang
     eval-macros
     eval-layout
     eval-theme
-    (let* ((defined-structure (ly:parser-lookup parser 'structure))
+    (let* ((defined-structure (ly:parser-lookup 'structure))
            (struct (cond ((not defined-structure) conf:default-structure)
                          ((string? defined-structure) (list defined-structure))
                          ((list? defined-structure) defined-structure))))
@@ -114,7 +131,7 @@ current-part music."
          (if (string-suffix? (or ".ly" ".ily") part)
              (let* ((regx (string-append "/" part "$"))
                     (file (car (find-files (*current-score*) regx))))
-                (ly:parser-include-string parser (format #f "\\include \"~a\"" file)))
+                (ly:parser-include-string (format #f "\\include \"~a\"" file)))
              (let* ((skel-name (skel-file arg))
                     (skel-part (find-skel (string-append skel-name "-" part)))
                     (skel-num (find-skel (string-append skel-name "-" (number->string (ls-index part struct))))))
@@ -123,7 +140,7 @@ current-part music."
                        (eval-skel (find-skel (skel-file skel-name)))))
 
                (let* ((music (apply-skel (cons part arg) lang:instruments))
-                      (score (scorify-music music parser))
+                      (score (scorify-music music))
                       (local-layout (make-this-layout part lang:layout))
                       (layout $defaultlayout)
                       (header (make-module))
@@ -136,9 +153,9 @@ current-part music."
                  (module-define! header 'author author)
                  (ly:score-set-header! score header)
                  (ly:score-add-output-def! score (if local-layout local-layout layout))
-                 (if (*pagebreak-before*) (add-music parser pagebreak))
-                 (add-score parser score)
-                 (if (*pagebreak-after*) (add-music parser pagebreak))
+                 (if (*pagebreak-before*) (add-music pagebreak))
+                 (add-score score)
+                 (if (*pagebreak-after*) (add-music pagebreak))
                  (*has-timeline* #f)
                  (*pagebreak-before* #f)
                  (*pagebreak-after* #f)

@@ -30,7 +30,7 @@
            (if (string-ci=? conf:local-ly-score
                             (string-take-right x (string-length conf:local-ly-score)))
                (ly:debug-message "Skipping local score file: ~a..." x)
-               (ly:parser-include-string parser (format #f "\\include \"~a\"" x))))
+               (ly:parser-include-string (format #f "\\include \"~a\"" x))))
          (reverse ly-files))))
 
 (define eval-layout
@@ -42,7 +42,7 @@
 ;;  it."
   (let* ((default-theme (string-append conf:themes-dir "/" conf:default-theme))
          (user-theme (if (defined-string? 'theme)
-                         (ly:parser-lookup parser 'theme)
+                         (ly:parser-lookup 'theme)
                          #f))
          (include-theme-dir
           (lambda (dir)
