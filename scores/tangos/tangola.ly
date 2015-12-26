@@ -1,8 +1,12 @@
+%-- 7 Tangos -- tangola.ly ----------------------------------------%
+% 2015 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
 LaCb =
 % \transpose re do
 \relative do' {
+  \tempo "Andante con moto" 4 = 96
   \key la \minor
   la''8(->\mp do,) fa-. mib4-- re8-. mi16 red mi fad
   sol8(-> sib,) mib-. dod4-- sold8( la mi'-.)

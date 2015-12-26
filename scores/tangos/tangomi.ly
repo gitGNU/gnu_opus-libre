@@ -1,13 +1,16 @@
+%-- 7 Tangos -- tangomi.ly ----------------------------------------%
+% 2015 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
 MiCb =
 % \transpose re do
 \relative do' {
-  \tempo 4=96
+  \tempo "Andante con moto" 4 = 96
   \clef treble
   \key la \minor
-  <mi si'>4. <fa do'>8~ q2
-  <mi si'>4. <fa do'>8~ q2
+  mi8~ <mi si'>4 fa8~ <fa do'>2
+  mi8~ <mi si'>4 <fa do'>8~ q2
   <mi si'>4. <fa do'>8~ q2
   <mi si'>4. <fa do'>8~ q2
   <mi si'>8 mi si <fa' do'>8~ q mi sib16 sib sib sib
@@ -35,8 +38,7 @@ MiPianoMd = \relative do' {
   sol8\prall fa16 mi re8 fa\prall mi16 re do8\prall si16 la sold fa
   lab sib mib fa mib8 \xNotesOn do,,16[ \mg do, \md do'8] \xNotesOff fa'16 sol do re do8
   re,16 mi la si sib, do fa sol
-  \ottava #0
-  sol, la re mi mi, fad si dod
+  sol, la re mi mi, fad si dod  \ottava #0
   <mi,, si'>8 \t {si16 si si} \mg \stemUp si4 \md \stemNeutral
   r8 \t {si16_4 si_3 si_2} \ttt {si_1 si_3 si_2 si_1 si_3 si_2}
 

@@ -1,3 +1,6 @@
+%-- 7 Tangos -- mesures.ly ----------------------------------------%
+% 2015 Valentin Villenave <valentin@villenave.net>
+
 SiTitre = "Tangosi"
 LaTitre = "Tangola"
 SolTitre= "Tangosol"

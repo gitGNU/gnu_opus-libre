@@ -1,3 +1,6 @@
+%-- 7 Tangos -- tangodo.ly ----------------------------------------%
+% 2015 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
 DoCb =
@@ -5,7 +8,7 @@ DoCb =
 \relative do' {
   \clef bass
   \key la \minor
-  \tempo "Andante con moto" 4=104
+  \tempo "Andante con moto" 4 = 96
   do,8 re16 mib fa8 fad4 mib8 do si'~
   si fad do mib'4 fad,8 si do,
   mi fad16 sol la8 lad4 si,8 mi red'~

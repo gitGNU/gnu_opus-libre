@@ -1,8 +1,12 @@
+%-- 7 Tangos -- tangosi.ly ----------------------------------------%
+% 2015 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
 SiCb =
 % \transpose re do
 \relative do' {
+  \tempo "Andante con moto" 4 = 96
   \key la \minor
   \acciaccatura {si'16[ do]}
   si4\mf la8-. fa'4-- mi8-. re16-> do si la

@@ -1,3 +1,6 @@
+%-- 7 Tangos -- tangore.ly ----------------------------------------%
+% 2015 Valentin Villenave <valentin@villenave.net>
+
 \language "italiano"
 
 ReCb =
@@ -5,7 +8,7 @@ ReCb =
 \relative do' {
   \clef bass
   \key la \minor
-  \tempo 4 = 92
+  \tempo "Andante con moto" 4 = 96
   re,4.^"pizz."\mp sib' la4
   re,4. sib' la4
   dod,4. sib' la4
