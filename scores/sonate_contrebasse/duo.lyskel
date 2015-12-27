@@ -1,5 +1,5 @@
 % In case of so-called "solo tuning":
-\transpose do re
+% \transpose do re
 <<
   \newStaff $"Contrebasse"
   \newPianoStaff $"Piano"
