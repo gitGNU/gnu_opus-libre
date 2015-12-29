@@ -201,4 +201,3 @@ LaPianoMg = \relative do' {
   r2 r4 \clef bass
   <la,,,, mi' la>8 r
 }
-

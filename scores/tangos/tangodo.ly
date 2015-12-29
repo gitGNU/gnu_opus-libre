@@ -102,9 +102,9 @@ DoPianoMd = \relative do' {
   <sol reb'> lab16 sib do8 fa,4 fad16 sold <mi lad>8 dodd
   red sold dod, <do fad>4. <si fa' sol>4
   << {
-      \oneVoice r2 do8 re16 mib fa8 fad~
-      \voiceTwo fad do mib si'4 do,8 fad mib'~ mib fad,8 si \mg \voiceOne sib,
-      mib \md \voiceTwo fa16 solb lab8 la~ la solb sib, re' dod la sib sol
+       \oneVoice r2 do8 re16 mib fa8 fad~
+       \voiceTwo fad do mib si'4 do,8 fad mib'~ mib fad,8 si \mg \voiceOne sib,
+       mib \md \voiceTwo fa16 solb lab8 la~ la solb sib, re' dod la sib sol
      } \\ { \voiceOne
        s1 r2 do8 re16 mib fa?8 fad~
        fad mib do si'4 mib,8 do solb'

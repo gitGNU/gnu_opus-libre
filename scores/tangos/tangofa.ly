@@ -174,19 +174,3 @@ FaPianoMg = \relative do' {
   la4. la8~ la2 la4. la8~ la2
   r4. la8~ la2\laissezVibrer R1
 }
-
-
-\include "articulate.ly"
-\score {
-  \articulate <<
-   {\set Score.skipTypesetting=##t
-    r1*4*8
-    \set Score.skipTypesetting=##f
-   }
-  \new Staff \with { midiInstrument = "baritone sax" }
-    \transpose do do, \FaCb
-  \newPianoStaff $"FaPiano"
-  >>
-  \midi {}
-}
-%}
