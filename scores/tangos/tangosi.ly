@@ -99,8 +99,8 @@ SiPianoMd = \relative do' {
   q4 <sol sib mi>^-)
   r8 <sold la dod mi>^-^(~ q4
   <sol la do mi>8^-)\noBeam
-  fad'' mid16^( fad sold lad
-  <si, red si'>2) r8 sold' dod16^( si lad sold
+  fad'' mid16^( fad\> sold lad
+  <si, red si'>2)\! r8 sold' dod16^( si lad sold
   <lad, mid' lad>2) r8 fad' si16^( la sold fad
   <sold, re'! sold>2) r8 mi' dodd16^( red mid sold
   <lad, red fad>2) r8 dodd16( red mid fad sold lad)
@@ -111,7 +111,7 @@ SiPianoMd = \relative do' {
   <si,? sold'>4. <sol dod>8~-- q mi'16 red
   <sold, dodd>(_- red' mi mid)
   <lad, fad'>4. <dod, sol' la>8~ q2
-  <do' do'>8( fa do) <si si'>(
+  <do' do'>8(\p fa do) <si si'>(
   fa' si,) <mi mi'>( fa)
   <si, si'>( mi si) <la la'>(
   mib' la,) <re re'>( mib)
@@ -131,7 +131,7 @@ SiPianoMd = \relative do' {
   <si? re mi>) r r2
   \ottava #1
   \acciaccatura {si'''16[ do]}
-  si2~ si8 la sold16( do re red
+  si2~\mp si8 la sold16( do re red
   si2)~ si4 la16( sol fa mib
   si'2) r
   r4 <lad si>-. \ottava #0 r2

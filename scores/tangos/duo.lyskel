@@ -1,3 +1,4 @@
+% \transpose re do
 <<
   \newStaff $"Cb"
   \newPianoStaff $"Piano"

@@ -10,7 +10,7 @@ SolCb =
   \tempo "Andante con moto" 4 = 96
   \clef bass
   \key la \minor
-  sol4^"pizzicato al fine"
+  sol4\f ^"pizzicato al fine"
   \xNote re'16 \palmMute re \xNote re \palmMute re
   \xNote re4 mib,
   sol
@@ -38,56 +38,57 @@ SolCb =
     mi4 r8 mi4.-+ mi8-+ si-+
     mi4 si8-+ mi4 si8-+ mi-+ si-+
   } >>
-  mi la re sol
-  \clef treble do fa4 mi16( red)
-  mi8\noBeam \clef bass mi,,16 la re8 sol
-  \clef treble do fa4 dodd16( red)
-  mi8\noBeam \clef bass sold,, re' sol
-  \clef treble do fa4 mi16( red)
-  mi8\noBeam \clef bass mi,,16 sold re'8 sol
-  \clef treble do fa sol16( fa) mi( red)
-  mi8\noBeam la,, re sol \t {do4 fa mi'}
-  mi,8\noBeam fad,16 si mi8 la4 sol8\prall fa red
-  mi\noBeam \clef bass mi,, re' sol
-  \clef treble do fa4 mi16( red)
-  mi8\noBeam la,, re sol \t {do4 dod fa}
-  mi8\noBeam la,, si mi la re4 sol,8
+  mi\< la re sol
+  \clef treble do fa4--\! mi16( red)
+  mi8\noBeam \clef bass mi,,16\< la re8 sol
+  \clef treble do fa4--\! dodd16( red)
+  mi8\noBeam \clef bass sold,,\< re' sol
+  \clef treble do fa4--\! mi16( red)
+  mi8\noBeam \clef bass mi,,16\< sold re'8 sol
+  \clef treble do\! fa-. sol16(-> fa) mi(-> red)
+  mi8\noBeam la,,\< re sol \t {do4\! fa mi'\open}
+  mi,8\noBeam fad,16 si mi8 la4->-- sol8\prall fa red
+  mi\noBeam \clef bass mi,,\< re' sol
+  \clef treble do fa4--\! mi16( red)
+  mi8\noBeam la,, re sol \t {do4\> dod fa}
+  mi8\!\noBeam la,, si mi la re4-- sol,8
   re'\noBeam \clef bass do,,16 fa sib8
-  \clef treble mib lab re?4 sib16( si)
+  \clef treble mib lab re?4-- sib16( si)
   do8\noBeam \clef bass fa,, sib mib
-  \clef treble lab reb4 \t {do16( reb do)}
+  \clef treble lab reb4-- \t {do16( reb do)}
   si8\noBeam \clef bass fad,,16 si mi8 la
-  \clef treble re sol do( si)
-  mi la, re, do' \t {si4 lad fad}
+  \clef treble re\< sol do( si)
+  mi\! la, re, do' \t {si4 lad fad}
   \clef bass
   sol8 sib, do, re' \t {dod4 sold' mi}
-  fa8 la, si, fa'' la, si, sol'' si,,
-  mi' re si mi, r fad, sol sold
-  la4 si do si la do re red
+  fa8-- la, si, fa''-- la, si, sol''-- si,,
+  mi'-- re si mi, r fad,\> sol sold
+  la4\! si do si la do re red
   mi fa sol fa mi re do si
   la sol fad sold la si do dod
   re mi fa re sib re mib fa
-  mi8 mi16 la re8 sol \clef treble do fa4 mi8\laissezVibrer
-  r4 sol,,8 do fa sib mib( mi)
-  mi,, mi16 la re8 sol do fa4 mi8\laissezVibrer
-  r4 r8 \xNotesOn do,16 \palmMute do do8 do do4 \xNotesOff
-  mi,8 mi16 la re8 sol do fa4 mi8\laissezVibrer
-  r8 \xNote do,[ \xNote do] do fa sib mib4
-  mi,,8 la re sol do fa4 mi8\laissezVibrer
+  mi8 mi16\< la re8 sol \clef treble
+  do\> fa4-- mi8--\laissezVibrer
+  r4\! sol,,8 do fa sib mib( mi)
+  mi,, mi16\< la re8 sol do\> fa4-- mi8--\laissezVibrer
+  r4\! r8 \xNotesOn do,16 \palmMute do do8 do do4 \xNotesOff
+  mi,8 mi16\< la re8 sol do\> fa4-- mi8--\laissezVibrer
+  r8\! \xNote do,[ \xNote do] do fa sib mib4--
+  mi,,8\< la re sol do\> fa4-- mi8--\laissezVibrer
   \clef bass
-  r8 \xNotesOn \t {re,16 \palmMute re re} \palmMute re8 \xNotesOff
+  r8\! \xNotesOn \t {re,16 \palmMute re re} \palmMute re8 \xNotesOff
   si,-+ \xNote re' mi,-+ \xNote re'16 \palmMute re \xNote re8
   mi,8 la re sol
   \clef treble
-  do fa4 mi8\laissezVibrer
+  do fa4-- mi8--\laissezVibrer
   r8 \xNote do,16 \palmMute do \xNote do8\noBeam
-  do fa sib mib4
+  do fa sib mib4--
+  mi,,8\> la re sol do fa4-- mi8--\laissezVibrer
+  r\! dod, fad si mi2--
   mi,,8 la re sol do fa4 mi8\laissezVibrer
-  r dod, fad si mi2
-  mi,,8 la re sol do fa4 mi8\laissezVibrer
-  r4 sold,, \t {dod fad si}
+  r4 sold,,\dim \t {dod fad si}
   mi mi8 la re4 r
-  r sol2\laissezVibrer r4
+  r sol2\pp\laissezVibrer r4
   \bar "|."
 }
 
@@ -98,67 +99,71 @@ SolPianoMd = \relative do' {
   \mg fad,,-- \md fad16 si mi8-. la4->( re,8) sol( do,)
   \mg fad,-- \md si16 mi la8-. re-.
   sol( do) fa( <fa, sib>)
-  \ottava #1 <si mi si'>1\arpeggio
-  \ottava #0 r4 sol,8 do fa4
-  \ottava #1 <sib mib lab> <si mi si'>1*1/4\arpeggio
+  \ottava #1 <si mi si'>1\fp\arpeggio
+  \ottava #0 r4 sol,8( do fa4)
+  \ottava #1 <sib mib lab>-.--
+  <si mi si'>1*1/4\arpeggio
   \ottava #0
   \mg <sib,,, mib lab>8
   \showStaffSwitch
-  \md <si''! mi! la!>4
+  \md <si''! mi! la!>4--
   \mg <sib,,! mib! lab!>8
-  \md <la''! re sol>4
+  \md <la''! re sol>4--
   \hideStaffSwitch
-  \mg \stemUp <sib,, mib>8 \md \stemNeutral <sold'' dod fad>
+  \mg \stemUp <sib,, mib>8
+  \md \stemNeutral <sold'' dod fad>\cresc
   r16 <sol do fa>8. r8 <mid fad si mi>4.
-  mi8 la si do r <mi, la fa'>4 <do' mi>16 <si red>
-  <la mi'>8 mi la si r <mi, do' fa>4 <sib' re>16 <la red>
-  <sold mi'>8 mi lad si r <fadd sold? re' fa>4 <la mi'>16 <lad red>
-  <si mi>8 mi, si' do re <si la'> <mi sol>16 <re fa> <do mi> <si red>
-  <la mi'>4 si8 do r <do fa>4 <si red>8
-  <la mi'> mi si' do r <si do fa>4 <la red>8
-  <sold mi'>4 lad8 si r <do re fa>4 <la mi'>16 <lad red>
-  <si mi>4 do8\prall sib16 la sol8 mi fa sol
-  <mi fa la>4 re8 <mi fa la> r <sib re fa la>4 lab'8
-  <re, mib sol> do <re mib sol> sib
-  \t {r4 \pl <lab do mib>2*1/2 sol'4 solb}
-  <do, reb fa>8 lab \clef bass <fa do'> reb
-  r <reb sol do>4. <re sold si>2 \clef treble
-  r8 \pl {sib' la sol} <sol dod mi>4.
-  <la do re fa>4. q8 r <lad si red fad>4.
-  <sib re mib sol>4 q8 <la dod mi sold>~ q2
-  <la fa' la>8 re si <si fa' la>4
-  \pl {s16 <do re fa>~ q4} {sold'8 la lad}
-  \pl \t {fa4 mi red} <re sold si>1*1/2 mi2
+  mi8(\mf la) si( do) r <mi, la fa'>4-- <do' mi>16( <si red>)
+  <la mi'>8( mi) la( si) r <mi, do' fa>4-- <sib' re>16( <la red>)
+  <sold mi'>8( mi) lad( si) r <fadd sold? re' fa>4-- <la mi'>16( <lad red>)
+  <si mi>8( mi,) si'( do) re-. <si la'>-.
+  <mi sol>16(\> <re fa> <do mi> <si red>
+  <la mi'>4)\mp si8( do) r <do fa>4-- <si red>8-.
+  <la mi'>( mi) si'( do) r <si do fa>4-- <la red>8-.
+  <sold mi'>4-- lad8( si) r <do re fa>4-- <la mi'>16( <lad red>
+  <si mi>4) do8(\>\prall sib16 la) sol8-- mi-- fa( sol)
+  <mi fa la>4(--\p re8) <mi fa la> r <sib re fa la>4^(-- lab'8)
+  <re, mib sol>( do) <re mib sol>( sib)
+  \t {r4 \pl <lab do mib>2*1/2 sol'4-- solb--}
+  <do, reb fa>8( lab) \clef bass <fa do'>( reb)
+  r <reb sol do>4.-- <re sold si>2-- \clef treble
+  r8\cresc \pl {sib'( la sol)} <sol dod mi>4.--
+  <la do re fa>4.(--\mp q8-.) r <lad si red fad>4.--
+  <sib re mib sol>4(-- q8-.) <la dod mi sold>--~ q2
+  <la fa' la>8( re-.) si-. <si fa' la>4--
+  \pl {s16 <do re fa>--~ q4} {sold'8( la lad)}
+  \pl \t {fa4(-- mi-- red--)} <re sold si>1*1/2 mi2
   \clef bass
-  \acciaccatura mi8 mi, mi16 la re8 sol \clef treble
-  do <red, la' si fa'>4\arpeggio <mi do' mi>8~
-  \t {q4 <si' do sol'> <la fad'>}
+  \acciaccatura mi8-> mi,\mf mi16( la re8) sol-. \clef treble
+  do-. <red, la' si fa'>4(--\arpeggio
+  <mi do' mi>8--~)
+  \t {q4 <si' do sol'>(-- <la fad'>--)}
   \pl {<sold do>( la)} {fa'8( mi) <si red>( <do mi>)}
   \clef bass
-  re,, re16 sol do8 fa
-  \clef treble sib <mi, si' red>4 <fa sold re'>8~
-  q8 <fadd sold mi'> <re' sol>16 <dod fad> <do fa>4 red8
-  \pl <mi, fa>4 {mi'16 sold, sol fa}
-  mi8 mi,16 la re8 sol16 do fa8
-  <sol, la red sib'>4\arpeggio <sol dod mi la>8~
-  q4 \t {<red' sold>8 <re sol> <do fa>~}
-  \t 2 {q4 red <sib mi>}
-  <la mi'>8 re,16 sol do8 <fa, la fa'>4 la8 <fa re' mi>4~
-  \t {q4 <mi do'> <re sib'>} <fa re'>8 sold sol fa
+  re,, re16( sol do8) fa-.
+  \clef treble sib-. <mi, si' red>4(-- <fa sold re'>8--~)
+  q8 <fadd sold mi'>-. <re' sol>16(-> <dod fad> <do fa>4) red8-.
+  \pl <mi, fa>4 {mi'16( sold, sol fa)}
+  mi8 mi,16( la re8) sol16( do) fa8-.
+  <sol, la red sib'>4(--\arpeggio <sol dod mi la>8--~)
+  q4 \t {<red' sold>8(-> <re sol> <do fa>~)}
+  \t 2 {q4 red^( <sib mi>}
+  <la mi'>8-.) re,16( sol do8) <fa, la fa'>4^(-- la8) <fa re' mi>4--~
+  \t {q4 <mi do'>(\dim <re sib'>)} <fa re'>8^( sold sol fa)
   \clef bass
-  <mi, la do mi>1\laissezVibrer
-  r4 r8 red'16 mi fa8 mi red mi
+  <mi, la do mi>1\dyn "pp_al fine" \laissezVibrer
+  r4 r8 red'16( mi) fa8( mi red mi)
   <mi, la re mi>1\laissezVibrer
-  \t {r4 sold' sol} fa red
+  \t {r4 sold'(-- sol--)} fa( red)
   <mi, la do mi>1\laissezVibrer
-  \t {r4 fa' mi} \t 4 {red mi8 red mi fa}
+  \t {r4 fa'( mi} \t 4 {red) mi8( red mi fa)}
   <mi, la re mi>1\laissezVibrer
   \clef treble
-  \t 2 {r4 sol do fa sib red}
-  <mi, la do mi>1\laissezVibrer
-  fa'4. mi8~ \t {mi4 red re}
-  <mi, fa do'>2.. <re fad sold dod>8~ q1
-  <fa la si mi>~\arpeggio q~ \hideNotes q s
+  \t 2 {r4 sol(_\< do fa sib red_\!}
+  <mi, la do mi>1)\laissezVibrer
+  fa'4.( mi8~) \t {mi4 red( re}
+  <mi, fa do'>2..)\> <re fad sold dod>8--~ <re fad sold dod>1 \!
+  <fa la si mi>--~\arpeggio q~ \hideNotes q s
 }
 
 SolPianoMg = \relative do' {
@@ -170,7 +175,7 @@ SolPianoMg = \relative do' {
   mi8-. la4.-> <do, sol'>4--
   \stemDown fad,8( \stemNeutral si) mi-.
   <re la'>4( do8) <sib fa'>4--
-  \pl mi,,1*1/4\laissezVibrer r4 si''8 mi la4 re~
+  \pl mi,,1*1/4\laissezVibrer r4 si''8( mi la4 re~)
   re1
   mi,,,8\laissezVibrer mi' s2.
   \stemDown mi4 \stemNeutral re do si
@@ -189,23 +194,24 @@ SolPianoMg = \relative do' {
   re-. fa-. sold-. si,-. do-. mi-. fad-. la,-.
   si-. do-. re-. si-. mi-. re-. do-. si-.
   \ottava #0
-  la8 mi' si' do~ do2
-  r8 mi16 la si8 do~ do2
-  mi,,,8 mi' si' re~ re2
-  r8 mi,16 si' re8 sold~ sold2
-  la,,8 mi' si' la4 la8 mi' sib'
-  dod, \clef treble la'16 mi' sol8 sib~ sib4 r
+  la8( mi') si'-. do~ do2
+  r8 mi16( la si8-.) do~ do2
+  mi,,,8( mi') si'-. re~ re2
+  r8 mi,16( si' re8-.) sold~ sold2
+  la,,8( mi') si' la4 la8( mi') sib'
+  dod,-- \clef treble la'16( mi' sol8) sib~ sib4 r
   \clef bass
-  re,,,8 la' mi' re~ re4 la
-  sib,8 fa' do' re4 sib,8 do re
-  \pl {mi,4. mi r4} mi'1\laissezVibrer mi8 si' do la'~ la2
-  \pl {mi,,4. mi r4} mi'1\laissezVibrer mi8 si' re la'~ la2
-  \pl {mi,,4. mi r4} mi'1\laissezVibrer mi8 si' do la'~ la2
-  \pl {mi,,4. mi r4} mi'1\laissezVibrer mi8 si' re la'~ la2
-  \pl {mi,4. mi8~ mi2} mi'1\laissezVibrer mi8 la si do~ do2
-  \pl {mi,,4. mi8~ mi2} mi'1\laissezVibrer mi8 la si re~ re2
-  << {\oneVoice mi,8 la si mi~ mi2~
+  re,,,8( la') mi' re~ re4 la
+  sib,8( fa') do' re4-- sib,8 do( re)
+  \pl {mi,4. mi r4} mi'1\laissezVibrer mi8( si') do la'~ la2
+  \pl {mi,,4. mi r4} mi'1\laissezVibrer mi8( si') re la'~ la2
+  \pl {mi,,4. mi r4} mi'1\laissezVibrer mi8( si') do la'~ la2
+  \pl {mi,,4. mi r4} mi'1\laissezVibrer mi8( si') re la'~ la2
+  \pl {mi,4. mi8~ mi2} mi'1\laissezVibrer mi8( la) si do~ do2
+  \pl {mi,,4. mi8~ mi2} mi'1\laissezVibrer mi8( la) si re~ re2
+  << {\oneVoice mi,8( la) si mi~ mi2~
       \voiceOne mi1~ \hideNotes mi}
-     \\ {s <la,,, mi' si'>~\arpeggio \hideNotes q}
+     \\ {s <la,,, mi' si'>--~\arpeggio \hideNotes q}
   >> s
 }
+
