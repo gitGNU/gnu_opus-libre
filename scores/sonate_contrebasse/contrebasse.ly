@@ -14,7 +14,7 @@
 ContrebasseInstr= "Contrebasse"
 PianoInstr= "Piano"
 
-%\pointAndClickOff
+\pointAndClickOff
 #(set-global-staff-size 18)
 
 
@@ -364,7 +364,7 @@ IIMesures = {
   \time 5/8 s1*5/8
   \time 3/4 s2.
   \time 5/8 s1*5/8
-  \time 3/4 s2.
+  \time 3/4 \grace s4 s2.
   \time 5/8 s1*5/8
   % K %
   \time 6/4 s1.
@@ -382,18 +382,19 @@ IIContrebasse =
   \romanStringNumbers
   % A %
   % \clef treble
-  sib''1\(\dyn "p_poco flaut." re2\CaV
-  la2. fa2\)
-  mi1\(_"(sul tasto)" sol2
-  mib si2.\)
-  dod2.\( fad2 do4~
-  do lab1\)
+  sib''1\(\<\dyn "p_poco flaut." re2\mp\CaV
+  la2.\> fa2\!\)
+  mi1\(\<_"(sul tasto)" sol2\!
+  mib\> si2.\!\)
+  dod2.\(\< fad2\> do4~
+  do\dim lab1\)
+  \phrasingSlurSolid
 
   % B %
-  sol2.~\CaV sol2:32\CaV ^"(sul pont.)"
+  sol2.~\!\CaV sol2:32\CaV ^"(sul pont.)"
   \glissando sol'8\CaV r
   \clef bass
-  r8 re,,^"pizz." \t {r sol, mib'}
+  r8 re,,\mp ^"pizz." \t {r sol, mib'}
   \clef tenor
   la fa' r mi do' dod
   \clef bass
@@ -402,126 +403,140 @@ IIContrebasse =
   \t {r4 si sib} la'4 mi8 dod' r2 r4
   \clef bass
   \t {r8 mi,,, do'} si' sib, r fad'
-  r4 la'\2\CaV r8 fa,,
-  mib' si' r fa,-.^"arco (ordin.)"
-  do'16 fad la,\CaV mi
-  \t {sib'8 dod' re,\CaV}
-  \t {sol\CaV \clef treble mib' lab}
+  r4 la'\2\CaV r8 fa,,-.
+  mib' si' r fa,-.\upbow ^"arco (ordin.)"
+  do'16\cresc fad la,(-.\CaV mi-.)
+  \t {sib'8-.\< dod'-. re,(-.\upbow\CaV}
+  \t {sol-.)\CaV \clef treble mib'-- lab--}
 
   % C %
   \tupletUp
   \set stringNumberOrientations = #'(down)
   \t 4 {
-    do8\2 do\3 do\2 do\3 do\2 do
-    do_"simile" do do fad fad, fad'
-    si,\2 si\3 si si si si
-    fa\2 fa\3 fa
-  } fa \clef bass dod, sol'\CaV re\CaV red la'
+    do8(\2\mf do\3 do\2 do\3 do\2 do
+    do\<_"simile" do do) fad(\! fad, fad')
+    si,(\>\2 si\3 si si si si)
+    fa(\!\2 fa\3 fa
+  } fa) \clef bass dod,--\downbow
+  sol'(-.\CaV re-.)\CaV red-. la'-.
   \clef treble
   \t 4 {
-    mi':16 lab: sib:
-    re\2\CaV re\3 re\2\CaV re re\CaV re re\CaV re re\CaV
-    sol\CaV sol,\2 sol'\CaV sol, sol'\CaV sol,
-    dod\2 dod\3 dod
-  } sib16\2 sib\3 sib sib sib8
+    mi':16\< lab: sib:
+    re(\2\mf\CaV re\3 re\2\CaV re re\CaV re
+    re\<\CaV re re)\CaV
+    sol(\!\CaV sol,\2 sol'\CaV sol, sol'\CaV sol,)
+    dod(\>\2 dod\3 dod)
+  } sib16\!\2\upbow sib\3 sib sib sib8-.--
   \clef bass
   do,,:16 mi: fa:
-  \t {mib: lab: fad:}
+  \t {mib:\< lab: fad:}
   \clef treble la': si:
   \ttt 4 {
-    la'16\1 la\2\CaV la la\CaV la la\CaV
-    la la\CaV la la\CaV la la\CaV
-    la la\CaV la la\CaV la la\CaV
-  } \tt { mi'\CaV mi, mi'\CaV mi, mi'\CaV}
-  \ttt 4 {sold,\1 sold\2 sold sold sold sold
-    red\2 red\3 red\2 red\3 red8:16\2
+    la'16(\1\f la\2\CaV la la\CaV la la\CaV
+    la la\CaV la la\CaV la la)\CaV
+    la(\< la\CaV la la\CaV la la)\CaV
+  } \tt { mi'(\!\CaV mi, mi'\CaV mi, mi'\CaV}
+  \ttt 4 {sold,)\1 sold(\2\> sold sold sold sold
+    red\!\2 red\3 red\2 red)\3 red8:16\2\mf
   }
-  \t {<dod red>: <dodd red>: <do red>:}
-  <lad red>: <si red>: <fa red'>: <sol red'>:
+  \t {<dod red>:-- <dodd red>:-- <do red>:--}
+  <lad red>:--\dim <si red>:-- <fa red'>:-- <sol red'>:--
   \clef tenor
-  \pl \t {sol sol sol} \t {sol sol sol}
-  <si, sol'> <si sol'>
+  \pl \t {sol sol sol} \t {sol-- sol-- sol--}
+  <si, sol'>(-- <si sol'>--)
 
   % D %
-  si4.\glissando si'4 r8
-  r si8.^"pizz." red16 do8 mi,
+  si4.\sfp\glissando si'4 r8
+  r si8.\mp ^"pizz." red16 do8 mi,
   r4 sold re'16 la8.
   r8 dod,4 r
   \t {r fa sib} fad
   sol,4.\CaV r4
 
   % E %
-  re''4~\1 ^"arco"
+  re''4(~\1\< ^"arco"
   \t 4 {
-    re8 re,,\CaV re''
+    re8 re,,)\CaV re''
     \clef treble
-    sib' sib, sib'
-    reb,:16\1 reb:\2 reb\1
+    sib'(\mf sib,) sib'
+    reb,:16\1\> reb:\2 reb\1
   }
-  fa,~ fa16 mi \t {fa^"(quasi gliss.)" fad sol}
-  lab4~
-  \t 4 {lab8 lab_"(simile)" lab mib' mib, mib'}
+  fa,(~\! fa16 mi) \t {fa(^"(quasi gliss.)" fad sol)}
+  lab4(--~\<
+  \t 4 {lab8 lab_"(simile)" lab) mib'(\> mib, mib') <>\!}
   \clef tenor
-  \pl {s4. sol,,8_\CaV sol'_\CaV}
+  \pl {s4. sol,,8_\CaV sol'-._\CaV\upbow}
   {
-    \oneVoice fad16 fad fad,4\2\CaV
+    \oneVoice fad16-. fad-. fad,4--\2\CaV
     \glissando \voiceOne sol'8 sol
   } \t 4 {
-    do,:16\3 do:\4 do: do do do la'\2\CaV la,\3\CaV la'\CaV
-  } \tt {si,16\4\CaV mi\CaV si'\CaV mi,\CaV si\CaV}
-  mi,4\CaV \clef bass mi,16 mid
+    do,:16\3\< do:\4 do: do( do do)
+    la'(\!\2\CaV la,\3\CaV la')\CaV
+  } \tt {si,16(\4\CaV mi\CaV si'\CaV mi,\CaV si\CaV}
+  mi,4)\CaV \clef bass mi,16-- mid--
 
   % F %
-  fad4 r8 \clef tenor fad'4^"pizz." lab'8
+  fad4-- r8 \clef tenor fad'4\mf ^"pizz." lab'8
   sol,4\CaV sib'4.
   si,4 red'8 do,8 r4 fa4. r4
-  r8 dod,\3 mi4\harmonic re\2\glissando
-  la'4. r4
+  r8 dod,\3 mi4\harmonic
+  re\2\upbow\glissando ^"arco"
+  la'4.-- r4
 
   % G %
   \clef treble
   \set glissandoMap = #'((1 . 1))
-  <mi' mi'>2\glissando <re' re'>4->-. mib,
-  r8 \pl do4 do4
-  <si si'>2\glissando <sold' sold'>4->-. <sib, sib'>
-  <la la'>4.
+  <mi' mi'>2\f\glissando <re' re'>4->-. mib,-.--\upbow
+  r8 \pl do4 do4\downbow
+  <si si'>2\downbow\glissando
+  <sold' sold'>4->-. <sib, sib'>-.--\upbow
+  <la la'>4.--
   \pl {fad'4*2 s4. dod8~ dod4.}
-  {fad4. \glissando fad'8-. \oneVoice
-  r8 \clef tenor <sol,, sol'>4 \voiceOne dod8~ dod4.}
-  dod16 dod dod dod dod re,\CaV dod' dod
-  sol\CaV dod dod dod dod red dod dod
-  la dod dod si sib lab
-  dod dod dod mi dod dod fa dod
-  fad sold sol la dod, dod sib sib
-  sib sib sib sib sib sib
-  dod dod dod dod mi mi mi mi
-  dod dod mi mi mi mi si do
-  dod dod re red fa fa
+  {\mergeDifferentlyDottedOn 
+    fad4. \glissando fad'8-. \oneVoice
+    r8 \clef tenor <sol,, sol'>4 \voiceOne
+    dod8~ dod4.
+  }
+  dod16->\dyn "f_molto" dod dod dod
+  dod-> re,\CaV dod' dod
+  sol->\CaV dod dod dod dod red dod dod
+  la-> dod\< dod si sib lab
+  dod->\! dod dod mi dod dod fa-> dod
+  fad-> sold-> sol-> la-> dod, dod sib sib
+  sib-> sib sib sib sib sib
+  dod-> dod dod dod mi-> mi mi mi
+  dod-> dod mi-> mi mi mi si do
+  %% I seem to have
+  %% dod dod re red fa fa
+  %% in my notebook. Probably a typo.
+  dod-> dod\< re-> red mi-> fa
   \clef treble
-  fad fad fad fad fad do' re red
-  sol\CaV sol sol sol fa, fa fa fa
-  fa mi mi mi sold la
-  sib sib sib sib sib la' la la
-  la la la sold, sold sold sold sold
-  dod, dod dod dod dod si'
-  dod dod dod re'\CaV re re si, si
-  red red red red dodd' red red red
-  dodd red red red dodd red
+  fad->\! fad fad fad fad do' re-> red
+  sol->\CaV sol sol sol fa,-> fa fa fa
+  fa-> mi mi mi sold-> la
+  sib-> sib sib sib sib la' la-> la
+  la la la sold, sold-> sold sold sold
+  dod,-> dod dod dod dod si'
+  dod-> dod dod re'\CaV re-> re si,-> si
+  red-> red red red dodd'-> red red red
+  dodd-> red\< red red dodd-> red
 
   % J %
   \ttt 4 {
+    mi(\fp\CaV sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV
     mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV
     mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV
-    mi\CaV sol\CaV mi\CaV sol\CaV mi\CaV sol\CaV
-  } \t {mi\CaV sol\CaV mi\CaV~} mi8 dod8. fa,
-  \ttt {lab16 do lab do lab do}
-  \repeat tremolo 8 {lab32 do}
-  \ttt {sib16 re sib re sib re~} re8 mib4\glissando
-  \grace la,4( \repeat tremolo 12 {sol32) sib}
-  \t {sol16 sib sol} sib8 fad~ fad16 mi \t {fa fad sol}
+  } \t {mi\CaV sol\CaV mi\CaV~} mi8) dod8.(--\> fa,--)
+  \ttt {lab16(\! do lab do lab do}
+  \repeat tremolo 8 {lab32 do)}
+  \ttt {sib16(\< re sib re sib re~} re8\> mib4)\glissando
+  \grace la,4(\! \repeat tremolo 12 {sol32)\( sib}
+  \t {sol16 sib sol} sib8\) fad(--~ fad16 mi \t {fa fad sol)}
 
   % K %
-  lab2. si2 sol4~ sol mi1
-  reb mib2 do fad2.
-  sib,1 re2 la2. fa2\fermata
+  \phrasingSlurDashed
+  lab2.\(\p si2 sol4~ sol mi1\)
+  reb\(\dim mib2 do fad2.\)
+  sib,1\(\pp re2 la2.\> fa2\!\)\fermata
 }
+

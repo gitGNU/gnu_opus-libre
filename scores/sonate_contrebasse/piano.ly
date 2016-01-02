@@ -453,94 +453,102 @@ IPianoMg =
 
 IIPianoMd = \relative do' {
   % A %
-  sib'4 mib, lab, do re' sol,
-  la, mi' si' dod fad,
+  sib'4-.--_(\dyn "ppp_(2 ped.)"
+  mib,-.-- lab,-.-- do-.-- re'-.-- sol,-.--)
+  la,(-.-- mi'-.-- si'-.--) dod(-.-- fad,-.--)
   \showStaffSwitch
-  mi \mg re, la' do \md sol' \mg fa,
-  \md mib' lab, sib' \mg fad, dod
-  si sol' \md red' re \mg sib do,
-  la fa' \md dod' mi sold
+  mi( \mg re, la') do( \md sol' \mg fa,)
+  \md mib'( lab, sib' \mg fad, dod)
+  si( sol' \md red' re \mg sib do,)
+  la( fa' \md dod' mi sold)
 
   % B %
   \hideStaffSwitch
-  si1 mi2 sib2. \stemUp fad2 \stemNeutral
-  fa'1 la2 mib do2.
-  lab' re2 sol,4~ sol dod,1
+  si1(\dyn "p_impavide" mi2 sib2.
+  \stemUp \mergeDifferentlyHeadedOn
+  fad2) \stemNeutral
+  fa'1( la2 mib do2.)
+  lab'( re2 sol,4~ sol dod,1)
 
   % C %
-  <do sol' re'>2~ \arpeggio q8 re'4 \acciaccatura sol8 mib8~ mib2
+  <do sol' re'>2--~ \arpeggio q8 re'4-- \acciaccatura sol8 mib8~ mib2
   r8 \acciaccatura mib lab,~ lab1
-  \t {r16 sol, re'} la'4 \acciaccatura mi'8 sib8~
-  sib16 dod8.~ dod2.
+  \t {r16 sol,( re'} la'4) \acciaccatura mi'8 sib8~
+  sib16 dod8.--~ dod2.
   s1*5/4
-  r2 si4. fa'16 do~ do2
-  r8 do4 fad, do8 fad, do
-  \mg \t {fad, do fad,} \md
+  r2 si4.--_\mp fa'16 do~ do2
+  r8 do4( fad, do8 fad, do)
+  \mg \t {fad,( do fad,)} \md
 
   % D %
-  reb'''2 lab'4 do,4. sol?4
-  sib2 mi4 la, fa4.
+  reb'''2(\mf lab'4 do,4. sol?4)
+  sib2( mi4 la, fa4.)
   \showStaffSwitch
-  mib4. si'!4 re,8~ re \stemUp \mg
-  fad,2 \md \stemNeutral
+  mib4.(\dim si'!4 re,8~ re\! \stemUp \mg
+  fad,2) \md \stemNeutral
   \hideStaffSwitch
 
   % E %
   R2.
   \ottava #1
-  r8 do'''~ do16. mib'32 reb,8~ reb32 lab' lab,16~
-  lab8 r mi'4 \acciaccatura la16 fad8. fa16~
-  fa4~ fa8 \acciaccatura fa'8 fa,4
+  r8\p do'''\(--~ do16. mib'32( reb,8~) reb32 lab'( lab,16~)\)
+  lab8 r mi'4(-- \acciaccatura la16 fad8. fa16~)
+  fa4~ fa8 \acciaccatura mi'8 fa,4
   % ?
   \ottava #0
-  r8 sib,4 \acciaccatura re8 si4 sol8~ sol2 r8
+  r8 sib,4(--\> \acciaccatura re8 si4 sol8~) sol2\! r8
 
   % F %
-  <mib mib'>2 <do'! do'!>4 <re, re'>4. <sol, sol'>4
-  r8 <fa' fa'>4~ <fa fa'>16 <dod' dod'>~ q8 <mi, mi'>~
-  q8 <si si'>2
-  sib'4. sold'8 la,4~ la8 fad2
+  <mib mib'>2\dyn "mp_appassionato"
+  <do'! do'!>4( <re, re'>4.) <sol, sol'>4
+  r8 <fa' fa'>4~ <fa fa'>16 <dod' dod'>(~
+  q8 <mi, mi'>~) q8 <si si'>2
+  sib'4.\p sold'8( la,4~) la8 fad2
 
   % G %
-  <do,! do'!>4 <reb' reb'>8 <si, si'> r fa' r
-  <sol, fad'> sold' la sib
-  r <sol sol'>4 <sib' sib'>8 <lab, lab'> <la la'>4 <do, re>8
-  <dod red> <mi fa> fad
-  <re re'> <mi' mi'>4. <red red'>4 fad8
-  <do, sold'> la' sib si
+  <do,! do'!>4--\mf <reb' reb'>8-. <si, si'>-. r fa'-- r
+  <sol, fad'>^(-- sold'-> la-> sib->)
+  r <sol sol'>4-- <sib' sib'>8-. <lab, lab'>-. <la la'>4-- <do, re>8^(-.
+  <dod red>-. <mi fa>-. fad-.)
+  <re re'>-. <mi' mi'>4.(-- <red red'>4--) fad8--\noBeam
+  <do, sold'>^(-. la'-.\< sib-. si-.)
 
   % H %
-  <fa fa'>2 <mi' mi'>4. <fad, fad'>8 r <do do'>4
-  <mib mib'>2 <dod' dod'>4 <re, re'>8 <si si'>~ q4.
-  <la la'> <sib' sib'>8 <lab, lab'>4. <sol la sol'>8~
+  <fa fa'>2(\f <mi' mi'>4. <fad, fad'>8) r <do do'>4--
+  <mib mib'>2( <dod' dod'>4 <re, re'>8 <si si'>~) q4.
+  <la la'>( <sib' sib'>8 <lab, lab'>4.) <sol la sol'>8--~
   q4.
 
   % I %
-  <sol sol'>8 q q <sol fa' sol> q q <lab sol'> q <mi' sol> q q
-  <sol, la sol'> q <sol lad sol'> q <si sol'> s <sol fad'>
+  <sol sol'>8->^\dyn "fp_secco" q q <sol fa' sol>-> q q <lab sol'> q <mi' sol> q q
+  <sol, la sol'> q <sol lad sol'>-> q <si sol'> q <sol fad'>
   <si sol'> q <sol fad'> q
-  q q <sol dod sol'> q <dod sol' dod> q <do sol' do> q
-  <sol' do sol'> <sol re' sol> <sol mib' sol>
+  q q <sol dod sol'>-> q <dod sol' dod>^\mp q <do sol' do> q
+  <sol' do sol'>\< <sol re' sol> <sol mib' sol>
 
   % J %
   \ottava #1
-  <sol' sol'>4. <la' la'>4 <fad, fad'>8 <sib sib'>2 s8
-  <mi, mi'>8 <fa' fa'>4. <re, re'>4 <reb reb'>2 s8
+  <sol' sol'>4.(\fp <la' la'>4-- <fad, fad'>8 <sib sib'>2*3/4)
+  \ottava #0 s4^"(loco)" \ottava #1
+  <mi, mi'>8( <fa' fa'>4. <re, re'>4--\> <reb reb'>2--) s8\!
   \ottava #0
-  r8 do4. mib4 si sold8
+  \grace s4 r8 do4.( mib4 si\> sold8) <>\!
   << {
-    \t {sold sold sold~} sold2*1/2
+    \t {sold( sold sold)~} sold2*1/2
    } \\ {
-    s4 sold
+    s4 sold-.--\pp
   } >>
 
   % K %
-  dod, fad, si'' red, sol,
-  re' do,2 \mg \stemUp fa,4 sib, \md \stemNeutral
-  dod' sold' fad, sib' mib fa
-  si mi, sol, do, re
-  sib' mib, lab, do re' sol,
-  mi si' fad'2 dod4\verylongfermata
+  dod,(-.-- fad,-.--) si''(-.-- red,-.-- sol,-.--)
+  re'(-.-- do,2-- \mg \stemUp fa,4-.--
+  sib,-.--) \md \stemNeutral
+  dod'(\dim sold' fad, sib' mib fa)
+  si( mi, sol, do, re)
+  sib'(\ppp mib, lab, do re' sol,)
+  mi(\>\laissezVibrer
+  si'\laissezVibrer fad'2\laissezVibrer
+  dod4)\!\laissezVibrer\verylongfermata
 }
 
 IIPianoMg = \relative do' {
@@ -550,54 +558,55 @@ IIPianoMg = \relative do' {
   s1*6/4 s1*5/4
 
   % B %
-  sol,4 re'8 sol, re' la' mi' re, si' fad' la, re,
-  mib sol, re' fad si mib,
-  \stemDown fad' \stemNeutral si, mi, mib
-  si do sol mi' la fa re' do fa sib, la re,
-  fa dod si' sol, re' lab' re sib fad' dod
-  mib sib do fa, sol, re' la' mi' fad si, dod lab'
-  sib mib, fa la, si mi, fad re do lab
+  sol,4( re'8 sol, re' la' mi') re,( si' fad' la, re,)
+  mib( sol, re' fad si) mib,(
+  \stemDown \mergeDifferentlyHeadedOn
+  \md fad' \mg \stemNeutral si, mi, mib)
+  si( do) sol( mi' la fa re') do( fa sib, la re,)
+  fa dod si'( sol, re' lab' re) sib( fad' dod)
+  mib( sib do fa,) sol,( re' la' mi' fad si,) dod( lab')
+  sib( mib, fa la, si mi, fad re do lab)
 
   % C %
-  fad, dod' sold' dod, <mib' fa> lab, sib dod, la' mi si dod
-  fad dod' re la' sib fa' do sol si mi,
-  do fa sib mib sold, dod, fad, mi' si' re la' sol,
-  \t {do, \md lab' mib'} si' mi, \mg la, sib4 fa'8
-  \t {dod, \md sol'' re'} \mg
+  fad,( dod' sold') dod,( <mib' fa> lab, sib) dod,( la' mi si dod)
+  fad( dod' re la' sib) fa'( do sol si mi,)
+  do( fa sib mib sold, dod,) fad,( mi' si' re la' sol,)
+  \t {do,( \md lab' mib'} si' mi,) \mg la,( sib4 fa'8)
+  \t {dod,( \md sol'' re')} \mg
   \t 4 {
-    fad,,, si mi do sol' re'
-    sold, dod, fad, sib' fa do
-    fad, la' mib do mib' la,
-    dod re sib' la fa si, sold' mi mib
-  } sol,4 \md r8 \t {lad'16 si do} \mg
+    fad,,,(\( si mi) do( sol' re')
+    sold,( dod, fad,)\) sib'(\( fa do)
+    fad,( la' mib) do( mib' la,)\)
+    dod(\( re sib') la( fa si,) sold'( mi mib)
+  } sol,4--\) \md r8 \t {lad'16( si do)} \mg
 
   % D %
   \mergeDifferentlyHeadedOn
-  \pl fa,,,!2*1/2\laissezVibrer {fa8 do'}
-  <la' mi'> dod <la mi'>4
-  dod,8 sold' <si mi>4 dod,8
-  la fa' <dod' fad> re <dod fad>4
-  dod,8 <mi sold>4 <fad sib>8 <do' re>
-  fa,, re' <fad sib> sol <fad si>4
-  \pl {la,4 la8 sib si} {la8 s2}
+  \pl fa,,,!2*1/2\laissezVibrer {fa8( do')}
+  <la' mi'>( dod <la mi'>4)
+  dod,8( sold' <si mi>4--) dod,8
+  la( fa') <dod' fad>( re <dod fad>4)
+  dod,8( <mi sold>4 <fad sib>8 <do' re>)
+  fa,,( re') <fad sib>( sol <fad si>4)
+  \pl {la,4-- la8( sib si)} {la8 s2}
 
   % E %
   << {
-    r8 <dod fa la> <red sol si> <fa la dod> <sold si red> <do mi>
+    r8 <dod fa la>( <red sol si> <fa la dod> <sold si red> <do mi>)
     \mergeDifferentlyHeadedOn
     <la fa'>2*5/4
-    r8 <red, sol si> <fa la dod> <sol si red> <la dod fa> <re fad>
+    r8 <red, sol si>( <fa la dod> <sol si red> <la dod fa> <re fad>)
     <red sol>2*5/4
-    r8 <lab reb fa> <do mi sold> \clef treble
-    <fa la> <fad sib> <sold si> \clef bass
-    s \clef treble <re fad la> <reb fa sib> <mib lab do> <mi sol re'>
+    r8 <lab reb fa>( <do mi sold> \clef treble
+    <fa la> <fad sib> <sold si>) \clef bass
+    s \clef treble <re fad la>( <reb fa sib> <mib lab do> <mi sol re'>)
     \clef bass
    } \\ {
     <mi,, do'>2 sol4
     \mergeDifferentlyHeadedOn
-    \t {la'8 sold fa} reb do la
-    mi4. sib'
-    \t 4 {red'8 si sib sol mib re} si
+    \t {la'8( sold fa} reb do la
+    mi4.) sib'--
+    \t 4 {red'8( si sib sol mib re} si)
     s4 \acciaccatura dod8~ dod2
     mi,8 s2
    } \\ {
@@ -611,63 +620,64 @@ IIPianoMg = \relative do' {
     re8*4\laissezVibrer sold4 re' sold, re8
   }
   { \t 8 {
-    re16 la' dod fad la sib
+    re16( la' dod fad la sib
     fa fad sib si sib fa
-    dod sold' si sold dod, sold
-    fad si mi la mi si
-    mi, sib' dod fa fad fa
-    sold, mi' la
-    re, mib lab si lab mib
+    dod sold' si sold dod, sold)
+    fad( si mi la mi si)
+    mi,( sib' dod fa fad fa)
+    sold,( mi' la)
+    re,( mib lab si lab mib
     re lab' si mi si lab
-    re, si' mi sol lab, mib
-    sib mib lab la re sol
-    do,, fa sib la mi si
-    sold dod fad
+    re, si' mi sol lab, mib)
+    sib( mib lab la re sol)
+    do,,( fa sib la mi si)
+    sold( dod fad)
   }
   \tt 4 {
-    re, la' re mi si'
-    fad' dod la mi re
-    sold, mib' sib' do fa,
-    re do' sib lab' si,
+    re,( la' re mi si')
+    fad'( dod la mi re)
+    sold,( mib' sib' do fa,)
+    re( do' sib lab') si,
   } \t {sold, fad' dod}
   do sol re re'
   }
 
   % G %
-  <dod, dod'>8 mib re <mid dod'>
-  fad <dod la'> sol' sold
-  <dod, si'> do' mi
+  <dod, dod'>8-> mib re_"non legato" <mid dod'>
+  fad <dod la'> sol' sold^(-.
+  <dod, si'>-. do'-. mi-.)
   <dod, dod'> mi re red
-  <dod fad> <sold' dod> <dod, sib'> la'
-  <dod, si'> do' fa
+  <dod fad> <sold' dod> <dod, sib'> la'^(-.
+  <dod, si'>-. do'-. fa-.)
   <dod, dod'> re do' fad,
   dod sol' sold si
-  <dod, mib'> fa' sib,
+  <dod, mib'>( fa' sib,)
 
   % H %
-  <do, do'> dod' do' re,~
-  re si fad4 do' fad,8
-  do fad' sold' sol,~
-  sol sib, lab4 sib fad8
-  do mi' fa' mib,~
-  mib mi, la la' re,, fad4
+  <do, do'>( dod' do') re,(--~
+  re si fad4--) do'(-- fad,8)
+  do( fad' sold') sol,(~
+  sol sib, lab4) sib( fad8)
+  do( mi' fa') mib,--~
+  mib mi,( la la') re,,( fad4)
 
   % I %
-  si, si <dod' sib'>2 sol4.
-  si,4 si <red' mi do' re>4 r8 fa,~ fa4.
-  si,4 si <sold'' la si re>2 re,4 si8
+  si,-.-- si-.-- <dod' sib'>2->-- sol4.(--
+  si,4-.--) si-.-- <red' mi do' re>4->-- r8 fa,--~ fa4.
+  si,4-.-- si-.-- <sold'' la si re>2->-- re,4( si8)
 
   % J %
-  <sib sib'>4 \t 4 {<sib' re>8 mib <dod mi> fa <sold si> do}
-  \pl {mi,,4 sib8 mi4}
-  {r8 \t 4 {<la' dod> re <do mib> \md <fa sold> fad <sol si>} \mg}
-  sib,,,4 \t 4 {<lab'' do>8 la <si fad'> sol' <red sold> la'}
-  \pl {mi,,4 sib' mi,8}
-  {r8 \t 4 {<re' fad> sol <fa sold> <la si> do <lad dod>} }
-  sib,,4 \t 4 {si'8 dod re fa fad sol}
-  \pl {mi,4. mi4} {r8 la'2}
+  <sib sib'>4--\laissezVibrer \t 4 {<sib' re>8( mib <dod mi> fa <sold si> do)}
+  \pl {mi,,4(-- sib8-. mi4--)}
+  {r8 \t 4 {<la' dod>( re <do mib> \md <fa sold> fad <sol si>)} \mg}
+  sib,,,4--\laissezVibrer \t 4 {<lab'' do>8( la <si fad'> sol' <red sold> la')}
+  \pl {mi,,4(-- sib'-- mi,8-.)}
+  {r8 \t 4 {<re' fad>( sol <fa sold> <la si> do <lad dod>)} }
+  \grace s4 sib,,4--\laissezVibrer \t 4 {si'8( dod re fa fad sol)}
+  \pl {mi,4.-- mi4--} {r8 la'2}
 
   % K %
   la,,1.~ la2 la2.~ la1~ la4 la~ la1~ la4~ la2 la1~ la~
-  la4\verylongfermata
+  la4\laissezVibrer\verylongfermata
 }
+
