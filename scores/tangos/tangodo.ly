@@ -25,7 +25,7 @@ DoCb =
   la8\! sol16\downbow fa mi re do si
   la sol fa'\> mi re do si la
   sol\! fa mi'\> re do si la sol
-  fa\! mi re do si la sold8-.	
+  fa\! mi re do si la sold8-.
   \clef bass
   la16\p\< si do re red\> re do si\!
   la\< si do re red\> re do si
@@ -40,7 +40,7 @@ DoCb =
   si,-.-- \clef treble dod'''\flageolet r
   \clef bass re,,,^"pizz." si' sold'
   \clef treble
-  la(\mp la') dod,-. re-.
+  la(\mp ^"arco" la') dod,-. re-.
   mi4-- fad-- sol-- sold2->-- la4-.
   la,8( la') re,-. mi-.
   fad4-- sol-- sold-- la2->-- si4-.

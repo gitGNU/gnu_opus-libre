@@ -11,7 +11,7 @@ SiCb =
   \acciaccatura {si'16[ do]}
   si4\mf la8-. fa'4-- mi8-. re16-> do si la
   si8(\> la) mi-. fa4--\! re8-. la'16-> sib do re
-  red8--\< si-. sol'-.\! fa4( re8)
+  red8(--\< si-.) sol'-.\! fa4( re8)
   mib,16-> fa sol la
   si4-. \clef bass la,4--\f sol-- fa--
   mi8--\fp si'-.( sold-.) mi-- si'-.( sold-.)
@@ -62,7 +62,7 @@ SiCb =
   mi->\f mi4 mi8-> mi4 mi8-> mi~
   mi re( sol) fa-. do-.\> la-. sol-. fa-.
   \clef bass
-  mi->\mf mi4 mi8-> mi4 mi--~
+  mi->\mf mi4-- mi8-> mi4-- mi->--~
   mi fa8( mi) do-.\> la-. fa-. sol-.
   mi-.\p si'-. sold-. mi-. si'-. sold-. mi-. fa-.
   mi-. do'-. la-. mi-. do'-. la-. mi-. fa-.
@@ -77,9 +77,9 @@ SiPianoMd = \relative do' {
   R1*7 s1
   \ottava #1
   \acciaccatura {si'''16[ do]}
-  si2~\mp si8 la re16( do si la
-  si2)~ si8 sol mib16( fa sol la
-  si2)~ si8 la sold16( la sold fad
+  si2~\mp si8 la-. re16( do si la
+  si2)~ si8 sol-. mib16( fa sol la
+  si2)~ si8 la-. sold16( la sold fad
   mi4) r r2
   \acciaccatura {si'16[ do]}
   si2~ si16 sold la si do( lab solb fa
@@ -131,7 +131,7 @@ SiPianoMd = \relative do' {
   <si? re mi>) r r2
   \ottava #1
   \acciaccatura {si'''16[ do]}
-  si2~\mp si8 la sold16( do re red
+  si2~\mp si8 la-. sold16( do re red
   si2)~ si4 la16( sol fa mib
   si'2) r
   r4 <lad si>-. \ottava #0 r2
@@ -149,9 +149,9 @@ SiPianoMg = \relative do' {
   mi'-. <lad si>-. mi'4-. \mg
   \clef treble
   \acciaccatura {si16[ do]}
-  si2~ si8 la re16( do si la
-  si2)~ si8 sol mib16( fa sol la
-  si2)~ si8 la sold16( la sold fad
+  si2~ si8 la-. re16( do si la
+  si2)~ si8 sol-. mib16( fa sol la
+  si2)~ si8 la-. sold16( la sold fad
   mi4) r r2
   \acciaccatura {si'16[ do]}
   si2~ si16 sold la si do( lab solb fa
@@ -170,7 +170,7 @@ SiPianoMg = \relative do' {
   sold8-.( red'-. <fad sold>-.
   <dod mid si'>~--) q4 r
   fad,8-.( dod'-. <fad sold>-.
-  <si, red la'>~--) q4 r
+  <si, red la'!>~--) q4 r
   mi,8-.( si'-. <re mi>-. <la dod sol'>~--) q4
   <lad dodd sold'>--
   red,8-.( lad'-. red-. mid-. fad4-- fadd--)
@@ -192,7 +192,7 @@ SiPianoMg = \relative do' {
   sold) r r2
   \clef treble
   \acciaccatura {si''16[ do]}
-  si2~ si8 la sold16( do re red
+  si2~ si8 la-. sold16( do re red
   si2)~ si4 la16( sol fa mib
   si'2) r
   r4 <si do>-. r2
