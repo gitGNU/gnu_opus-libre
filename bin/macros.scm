@@ -69,7 +69,7 @@
           (mark-set (context-spec-music
               (make-property-set 'rehearsalMark equiv-mark)
               'Score)))
-         (ly:music-set-property! mark-ev 'origin location)
+         (ly:music-set-property! mark-ev 'origin (*location*))
          (ly:music-set-property! mark-ev 'label equiv-mark)
          mark-ch)))
 
@@ -230,6 +230,11 @@ $x
 (define quarterBeat #{
 \set baseMoment = #(ly:make-moment 1 6)
 \set beatStructure = #'(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4)
+#})
+
+(define tupletBeat #{
+\set baseMoment = #(ly:make-moment 1 12)
+\set beatStructure = #'(3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3)
 #})
 
 

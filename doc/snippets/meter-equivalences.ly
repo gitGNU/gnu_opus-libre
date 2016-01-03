@@ -1,4 +1,4 @@
-\version "2.14"
+\version "2.19"
 
 \header {
   texidoc = "When switching between time signatures, it is
@@ -15,7 +15,7 @@ between two written durations."
 #(use-modules (ice-9 regex))
 
 equiv =
-#(define-music-function (parser location str) (string?)
+#(define-music-function (str) (string?)
 
    (define (parse-my-duration duration-string)
   "Parse the `duration-string', e.g. ''4..'' or ''breve.'',
@@ -56,7 +56,7 @@ this function is whitespace-insensitive."
           (mark-set (context-spec-music
               (make-property-set 'rehearsalMark equiv-mark)
               'Score)))
-         (ly:music-set-property! mark-ev 'origin location)
+         (ly:music-set-property! mark-ev 'origin (*location*))
          (ly:music-set-property! mark-ev 'label equiv-mark)
          mark-ch))
 

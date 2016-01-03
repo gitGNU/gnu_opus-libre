@@ -21,6 +21,7 @@
 
 %% FIXME: relative includes don't work in Scheme -- Issue 1078.
 #(ly:set-option 'relative-includes #f)
+#(ly:set-option 'delete-intermediate-files #t)
 %#(ly:set-option 'ignore-output-dir #t)
 %#(ly:set-option 'use-variable-names #t)
 %#(ly:set-option 'allow-suffixless-varnames #t)

@@ -63,18 +63,35 @@ current-part music."
 ;; the output-dir directory.  If book-filename has already
 ;; been defined by the user, just keep it, otherwise it
 ;; will be named after the score directory's name in scores/."
-  (set! output-filename
-        (let* ((orig-filename (if (defined-string? 'output-filename)
-                                  output-filename
-                                  (ly:parser-output-name)))
-               (prefix (if (defined-string? 'conf:output-dir)
-                           (string-append conf:output-dir "/")
-                           #f))
-               (new-filename (car (reverse
-                                    (string-split (*current-score*) #\/)))))
+  (let* ((orig-filename (if (defined-string? 'output-filename)
+                            output-filename
+                            (ly:parser-output-name)))
+         (prefix (if (defined-string? 'conf:output-dir)
+                     (string-append conf:output-dir "/")
+                     #f))
+         (suffix (if (eq? (ly:get-option 'backend) 'ps)
+                     ".pdf"
+                     #f))
+         (new-filename (car (reverse (string-split (*current-score*) #\/))))
+         (new-filepath (string-append prefix new-filename))
+         (main-filepath (string-append conf:main-file suffix))
+         (long-filepath (string-append new-filepath suffix))
+         (main-symlink (if (access? main-filepath 0)
+                           (readlink main-filepath)
+                           #f)))
+    (if suffix
+        (if (and main-symlink (string=? main-symlink long-filepath))
+            (ly:debug
+             "Output file ~a already points to ~a, not making a new symlink."
+             main-filepath
+             long-filepath)
+            (begin
+             (if main-symlink (delete-file main-filepath))
+             (symlink long-filepath main-filepath))))
+    (set! output-filename
           (if (not prefix)
               orig-filename
-              (string-append prefix new-filename)))))
+              new-filepath))))
 
 (define make
 ;;   "This is where the score is put together and all functions

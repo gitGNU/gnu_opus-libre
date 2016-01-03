@@ -20,7 +20,7 @@
 % Entry point for scores compilation.
 
 
-\version "2.18"
+\version "2.19"
 
 %%%%%%%%%%%%%%%%%%%%%%%% Language selection %%%%%%%%%%%%%%%%%%%%%%%%
 
