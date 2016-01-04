@@ -274,15 +274,9 @@ IContrebasse =
   q r4 <mi mi'>~
   <mi mi'>8\glissando <fa si>2..~
   q4 r \clef treble
-  <\parenthesize re''' sol sol\harmonic do\harmonic>2~\p
-  <\parenthesize re sol sol\harmonic do\harmonic>4
-  <\parenthesize mi la la\harmonic re\harmonic>2(
-  <\parenthesize do fa fa\harmonic sib\harmonic>4)
-  <\parenthesize re sol sol\harmonic do\harmonic>4.\glissando
-  <\parenthesize sib mib mib\harmonic lab\harmonic>
-  <\parenthesize do fa fa\harmonic sib\harmonic>8
-  <\parenthesize la re re\harmonic sol\harmonic>
-  <\parenthesize sib mib mib\harmonic lab\harmonic>2. r4
+  <re''' sol>2~\p ^\CaV q4 <mi la>2( <do fa>4)
+  <re sol>4.\glissando <sib mib> <do fa>8 <la re>
+  <sib mib>2. r4
   \clef bass
   <mi,,, mi'>4.\mf \glissando <fa si>8~ q2~
   q r4 <mi mi'>~\mp
@@ -492,7 +486,7 @@ IIContrebasse =
   <sold' sold'>4->-. <sib, sib'>-.--\upbow
   <la la'>4.--
   \pl {fad'4*2 s4. dod8~ dod4.}
-  {\mergeDifferentlyDottedOn 
+  {\mergeDifferentlyDottedOn
     fad4. \glissando fad'8-. \oneVoice
     r8 \clef tenor <sol,, sol'>4 \voiceOne
     dod8~ dod4.
