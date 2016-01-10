@@ -6,5 +6,9 @@
 BagatelleTitre = "Bagatelle infatuée"
 
 BagatelleContrebasse = \relative do' {
-  \clef bass
+  \romanStringNumbers
+  \clef bass la,16 \clef treble mi''\III fa fad sol\thumb fad fa mi
+  \clef bass mi,, \clef treble red'' mi fa fad\thumb fa mi red
+  \clef bass la, \clef treble re' red mi fa\thumb mi red re
+  %% TBC
 }

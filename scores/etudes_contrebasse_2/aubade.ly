@@ -4,3 +4,9 @@
 \language "italiano"
 
 AubadeTitre = "Aubade hypocondriaque"
+
+AubadeContrebasse = \relative do' {
+  \clef bass
+
+  %% TBW
+}

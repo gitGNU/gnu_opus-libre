@@ -7,4 +7,6 @@ OffertoireTitre = "Offertoire égocentrique"
 
 OffertoireContrebasse = \relative do' {
   \clef bass
+
+  %% TBW
 }

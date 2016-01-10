@@ -7,4 +7,6 @@ ThrenodieTitre = "Thénodie obnubilée"
 
 ThrenodieContrebasse = \relative do' {
   \clef bass
+
+  %% TBW
 }

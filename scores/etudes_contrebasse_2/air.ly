@@ -8,7 +8,7 @@ AirTitre = "Air monomane"
 AirContrebasse = \relative do' {
   \clef bass
   \time 6/4
-  \tempo "Moderato serioso"
+  \tempo "Moderato serioso" 4 = 76
   do,4->--\f\downbow fad->--\downbow si->--\downbow
   mib,->--\downbow la->--\downbow r8 sold-.\upbow
   do,4->--\downbow fad->--\downbow si->--\downbow
@@ -25,6 +25,7 @@ AirContrebasse = \relative do' {
   r8 dod,4-.\upbow sol'8-.\upbow r fad4.--\upbow
   do,8-> si'-. fa-. mi-. r4 la-. sib-. r
 
+  %% TBC
 }
 
 AirPianoMd = \relative do' {

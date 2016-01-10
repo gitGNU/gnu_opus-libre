@@ -7,4 +7,6 @@ VocaliseTitre = "Vocalise oligophrène"
 
 VocaliseContrebasse = \relative do' {
   \clef bass
+
+  %% TBW
 }

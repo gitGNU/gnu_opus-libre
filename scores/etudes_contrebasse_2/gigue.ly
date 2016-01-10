@@ -9,7 +9,7 @@ GigueTitre = "Gigue neurasthénique"
 GigueContrebasse = \relative do' {
   \clef bass
   \romanStringNumbers
-  \tempo "Moderato ruvido"
+  \tempo "Moderato ruvido" 4 = 92
   \tuplet 3/2 4 {
     re8(\mf red mi) la,(\2 sib si) do( si sib) fa'(\1 mi red)
     re(^"simile" red mi) la,( sib si) do( si sib) fa'( mi red)

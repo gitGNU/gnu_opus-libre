@@ -9,6 +9,7 @@ ElegieTitre = "Élégie atrabilaire"
 ElegieContrebasse = \relative do' {
   \clef bass
   \time 2/2
+  \tempo "Adagio" 2 = 42
   \romanStringNumbers
   la8(\mp si do re) si( dod re mi)
   la,(\1 si do re) si( dod re mi)
