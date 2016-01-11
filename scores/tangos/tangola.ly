@@ -51,7 +51,7 @@ LaCb =
   red' \glissando
   <red, mi,>-.\f <lad, si>-. q-. <mi' red'>16-> q q q r4
   <fa' do'>8.--\mp\< <sol re'>16~--
-  q8 <sold red'>4.--\!
+  q8 <sold red'>~--\! q4
   <lad,, si>8-.\f q-. <mi' red'>16-> q q q r4 r8
   \clef bass sol,(-.\p\< \t {lab sib si)}
   do4--\! re-- mib-- do-- fad,-- r8
@@ -90,28 +90,28 @@ LaPianoMd = \relative do' {
   \clef treble
   r8\mf <la do mi>4.(-- <la do fa>-- <la do fad>8~--
   q <si do sol'>4.~--) q4 r
-  r8 <la si red>4.-- << <si mi>4.-- \\ {la8 sold4}>>
+  r8 <la si red>4.-- << <si-3 mi>4.-- \\ {la8(-1 sold4)-2}>>
   <sol sib mi>8~-- q <fa re' fa>4.~-- q4 r
   r8 <fa la re>4.-- <fa la mib'>4.-- <fa la mi'>8~--
   q <sold si fa'>4.~-- q4 r
   <la do la'>4.--_\< <si re la'>8~-- q4
   <si red la'>8^( si')
-  <mi do' mi>(_\f <fa, fa'>) <si? si'?>-. <la la'>~-- q
-  sold16^(\p la si do re mi
-  <la, fa'>8) do16( re do8) si16( lad) si8(
-  \t {red16 mi la)} sold( fad mi re)
-  <si mi>8.--( lad16 si re do si)
-  \t {lad4( dod8)} fadd16( sold mi dod)
-  red8( la) red-. <sold, re'>~->--
-  q <fad do'>~->-- q16 <fa si>(-. <mi sib'>-. <re sold>-.)
-  <mi si'>8( la) mi-. do~--
-  do \t {la'16( si la} \ttt {sold la si do re mi)}
-  \tt {fa^( sol fa mi re} \tt {dod re fa la do}
-  <si, fad' si>2)
-  mi16^( fa mi red mi fad sol si
-  <lad, mid' lad>2)
+  <mi do'^4 mi^5>(_\f <fa, fa'>) <si? si'?>-. <la la'>~-- q
+  sold16^(-2\p la-3 si-1 do re mi
+  <la, fa'>8) do16( re do8) si16(-1 lad)-2 si8(-1
+  \t {red16-2 mi-3 la)-5} sold( fad mi re)-1
+  <si^3 mi^5>8.--( lad16-2 si-1 re-4 do!-3 si)-1
+  \t {lad4(-2 dod8)-3} fadd16(-5 sold-4 mi-2 dod)-1
+  red8(-3 la) red-. <sold, re'>~->--
+  q <fad do'>~->-- q16 <fa^1 si^5>(-. <mi^2 sib'^5>-. <re^1 sold^3>-.)
+  <mi^2 si'^5>8( la) mi-. do~--
+  do \t {la'16(-3 si la} \ttt {sold-2 la-1 si do-3 re-1 mi)}
+  \tt {fa^( sol fa mi re} \tt {dod-2 re-1 fa-2 la-3 do-5}
+  <si, fad'^2 si^4>2)
+  mi16^(-3 fa mi red mi-1 fad sol si^5
+  <lad, mid' lad^4>2)
   \t {lad8( si red} \t {mid fad la)}
-  \t {<re, sold>4--(\< <do fad la>-- <si sold' si>--)}
+  \t {<re,^1 sold^3>4--(\< <do fad^2 la^4>-- <si sold' si>--)}
   re'8^(\! <do, mi>) si'-. la~-- la4 r
   \clef bass
   <mi,, fa si>2\mp <fa sol do>
@@ -126,7 +126,7 @@ LaPianoMd = \relative do' {
   re4.-- r8 r2
   \acciaccatura {reb16[ mib]}
   reb4 do8 reb~ reb do( reb re)
-  mib16( reb do8)~ do r r2
+  mib16(-4 reb-2 do8)~-1 do r r2
   <fa, do'>8(--\mf lab sib) <fa do'>(--
   lab sib) si( fa~)
   <fa do'>( lab sib) <fa si>~-- q4 r
@@ -184,9 +184,9 @@ LaPianoMg = \relative do' {
   mi sol fad fa
   r2 r4 lad,16( si do re)
   mi4 sold sol fa R1
-  do'8( sol' lab) do,( sol' lab sib do)
+  do'8( sol'-1 lab)-2 do,( sol'-1 lab-3 sib-2 do)-1
   do,( fad la) r r2
-  sib,8( fa' solb lab) sib,( reb solb sib)
+  sib,8( fa'-1 solb-3 lab) sib,(-5 reb-4 solb sib)
   <sib, mi?>( sol') r4 r2
   <reb, reb'>4.(-- q8~-- q4 <sol re'>--)
   reb8( reb') reb,-. <sol, sol'>~-- q4 re'8( red)

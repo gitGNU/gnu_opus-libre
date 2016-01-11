@@ -68,7 +68,7 @@ SiCb =
   mi-. do'-. la-. mi-. do'-. la-. mi-. fa-.
   mi-. re'-. sold,-. si-. r4
   fa16(\upbow \f\< mi re do)
-  si4\sfz r r2 \bar "|."
+  si4->\sfz r r2 \bar "|."
 }
 
 SiPianoMd = \relative do' {
@@ -83,8 +83,8 @@ SiPianoMd = \relative do' {
   mi4) r r2
   \acciaccatura {si'16[ do]}
   si2~ si16 sold la si do( lab solb fa
-  si2)~ si8 mi, red16( fad sold la)
-  si--( re do si) la--( do si la)
+  si2)~ si8 mi, red16(-1 fad-2 sold-3 la)-1
+  si--(-3 re-5 do-4 si)-3 la--(-1 do-4 si la)
   sol--( si la sold) fa--( la sold fad)
   mi4-- \ottava #0 r r2
   r4 <fa,,, la si mi>2.^-
@@ -103,14 +103,14 @@ SiPianoMd = \relative do' {
   <si, red si'>2)\! r8 sold' dod16^( si lad sold
   <lad, mid' lad>2) r8 fad' si16^( la sold fad
   <sold, re'! sold>2) r8 mi' dodd16^( red mid sold
-  <lad, red fad>2) r8 dodd16( red mid fad sold lad)
+  <lad, red fad>2) r8 dodd16(-1 red-2 mid-1 fad-2 sold lad)
   <si, red si'>4 <si, red fad>8-. <si dod mid>4--
   sold''8 fad16( mid fad sold)
   <mid lad>4 <lad,, fad'>8-. <la si red>4--
   red'8 dodd16( red mid fad)
-  <si,? sold'>4. <sol dod>8~-- q mi'16 red
-  <sold, dodd>(_- red' mi mid)
-  <lad, fad'>4. <dod, sol' la>8~ q2
+  <si,? sold'>4. <sol dod>8~-- q mi'16-4 red
+  <sold,-1 dodd-2>(_- red'-3 mi-4 mid)-5
+  <lad, fad'-4>4. <dod, sol' la>8~ q2
   <do' do'>8(\p fa do) <si si'>(
   fa' si,) <mi mi'>( fa)
   <si, si'>( mi si) <la la'>(
@@ -155,9 +155,9 @@ SiPianoMg = \relative do' {
   mi4) r r2
   \acciaccatura {si'16[ do]}
   si2~ si16 sold la si do( lab solb fa
-  si2)~ si8 mi, red16( fad sold la)
-  si--( re do si) la--( do si la)
-  sol--( si la sold) fa--( la sold fad)
+  si2)~ si8 mi, red16(-5 fad-3 sold-2 la)-1
+  si--(-3 re do si) la--( do si la)
+  sol--(-4 si la sold) fa--(-5 la-1 sold fad)
   mi4-- r r \clef bass \t {mi,,8_(\< fa mib}
   <re re'>2)\mf r4 re
   <dod dod'>2 r4 dod

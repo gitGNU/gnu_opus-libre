@@ -97,52 +97,54 @@ DoPianoMd = \relative do' {
   red si,( mi) sold'-- sol( fad) fa( red)
   \oneVoice mi( mi, do'-. si-. la4-- sol-- fa-- mi--) red8( mi fad4)
   << {
-       mi'8( mi, si'-. la-.
-       sol4-- fad-- fa-- mi8) re(
-       fa) mi16( re) do8( re)
+       mi'8( mi,-4 si'-.-5 la-.
+       sol4-- fad--^5 fa--^5 mi8) re(
+       fa) mi16( re) do8(^3 re)^4
      } \\ {
-       \mg \voiceOne mi,,8 \md \voiceTwo fad'16( sol
-       la8-.) sib4-- \mg \voiceOne si,?8( \md \voiceTwo mi) red'--~
+       \mg \voiceOne mi,,8 \md \voiceTwo fad'16(_1 sol_1
+       la8-.)_1 sib4-- \mg \voiceOne si,?8( \md \voiceTwo mi) red'--~^4
        red \mg \voiceOne si,( \md \voiceTwo mi) do'4-- si8 mi,( si')
   } >>
-  <do mi>16(\mf\dim la' si do re8-.) red--~
+  <do^1 mi^2>16(\mf\dim la'-3 si-4 do-5 re8-.)-3 red--~-4
   red16 mi,( fa sol la8-.) sib--~
   sib16 si,( do re mi8-.) fa--~
   fa16 sold,( la si do) mi,( fad sold)
-  la8(\p la, sol'-. fa-.
-  mi-. re-. do-. si-. la4) r r2
+  \voiceOne
+  la8^(\p la, sol'-. fa-.
+  mi-. re-. do-. si-. \oneVoice la4) r r2
   <fad' la>8(\p dod) <si mid>( dod)
   <sol? la fad'>( <dod mid>) <la fad'>( dod)
-  <do fa sol>( si16 la si8-.) <fa' sol re'>-. r sol-. la16( si do re)
-  <si mi>8( sol) <fa si>( sol16 la) <mi sol>8( si) <dod red fad>( sid)
-  <mid sold>16( si re la') mid( sold <re' si'>8-.) r2
+  <do_2 fa sol>( si16-1 la-2 si8-.)-3 <fa' sol re'>-.
+  r sol-.-2 la16(-1 si do re)
+  <si mi>8( sol) <fa^2 si^5>( sol16-3 la)-4 <mi^2 sol^3>8( si) <dod red fad>( sid)
+  <mid sold>16( si re la') mid(-1 sold-2 <re'-1 si'-5>8-.) r2
   dod'4(\p dod, la'2-- sold-- fad4 mi)
   si'( si, sold'2-- fad-- mi4 re)
   <sib solb'>( solb <sib fa'> <solb fabb'>)
   <sib mib>8( <solb do?> <mib sib'> <reb solb>)
   <fa do'>( <solb sib> <do, fa> <reb mib>)
   \clef bass
-  mib,16( la sib do reb) solb, re'( re,)
-  re'( \clef treble la' sib do reb) solb, re'( re,)
-  re'(\< mib solb sib \ottava #1 re mib solb sib
+  mib,16(-1 la-2 sib-3 do-4 reb)-3 solb,-2 re'(-5 re,)
+  re'(-5 \clef treble la'-2 sib do-4 reb)-3 solb, re'(-5 re,)
+  re'(-5\< mib-1 solb sib \ottava #1 re mib solb sib
   <re, solb sib re>2--)\! \arpeggio \ottava #0
-  << {do2.\mf si4 la( sol4.) sol16( sold la4)} \\
+  << {do2.\mf si4 la4.( sol4-) sol16( sold la4)} \\
      {do,8-- re16( mi fa8-.) <do fad>4-- dod8 re( lad)
       <si mi>-- do16( dod re8-.) <la mib'>4.-- re8( la)}>>
   <sol reb'>-- lab16( sib do8-.) fa,4-- fad16( sold) <mi lad>8( dodd)
   red-.-- sold-.-- dod,-.-- <do fad>4.->-- <si fa' sol>4--\sfz
   << {
        \oneVoice r2 do8--\mp re16( mib fa8-.) fad--~
-       \voiceTwo fad do( mib-.) si'4--
+       \voiceTwo fad do(^1 mib-.)^2 si'4--^3
        do,8( fad-.) mib'--~ mib fad,8(
-       si) \mg \voiceOne sib,-.
+       si?) \mg \voiceOne sib,-.
        mib-- \md \voiceTwo fa16( solb lab8-.)
        la--~ la solb( sib,) re' dod la sib sol
      } \\ { \voiceOne
-       s1 r2 do8-- re16( mib fa?8-.) fad--~
-       fad mib( do-.) si'4--
-       mib,8( do-.) solb'(--
-       fa) mib4-- re8-. dod( sold'--) sol(-- mi--)
+       s1 r2 do8-- re16(^5 mib^3 fa?8-.) fad--~
+       fad mib( do-.) si'?4--
+       mib,8( do-.) solb'-.
+       fa-- mib4-- re8-. dod( sold'--) sol(-- mi--)
   } >>
   <fa, fa'>16^( mi' re dod re8) do16( sib la8-.) <si, fa' lab>--~ lab'16^( sol fad sol)
   mi( mi' re do si8-.) sib4--
@@ -151,19 +153,19 @@ DoPianoMd = \relative do' {
   <>\cresc
   << {
        <fa do'>16(\prall sib lab sol fad8-.) <mib sol>4--
-       \oneVoice <la>8(\arpeggio sol fa)
+       \oneVoice <la>8(^>\arpeggio sol fa)
      } \\ {
        s4. si,8[ do] <la re>4.\arpeggio
   } >>
   \clef bass
   <si mi>2->--\mf r8 fa-. sol16( la sib8)
   <si mi>4->-- r r8 sold-. la16( si do8)
-  <fa, re' mi>4-- r \clef treble si?8-- do16( re mi8) <la, mi' fa si>->--~
-  q4 r re16(\< mib fa sol sold la si re)
+  <fa, re' mi>4-- r \clef treble si?8-- do16( re mi8) <la, mi' fa si>^>^-~
+  q4 r re16(-1\< mib fa sol-4 sold-1 la-2 si-3 re)-5
   <fa si re mi>8->\sfp r do8-- re16( mib fa8-.) fad4-- mib8-.
-  << { r16 sold'( sol fa mi8) do-- si?16( la sold8) fad16( mi re do)}
-  \\ {do8-. si'-- red,-. dod16( do sib8) la4.--} >>
-  r4 la'8--\mf\> sol16( fad mi8-.) red-- dod16( do si8-.) la-- sol16( fad mi8-.) red-.\! r4
+  << { r16 sold'(-5 sol-5 fa-4 mi8)-5 do!-- si?16(-5 la-4 sold8)-3 fad16( mi re do)}
+  \\ {do8-. si'-- red,-. dod16(-1 do-1 sib8)-1 la4.--} >>
+  r4 la'8--^4\mf\> sol16( fad mi8-.)^1 red--^4 dod16( do si8-.)^1 la--^4 sol16( fad mi8-.)^1 red-.^2\! r4
   s8 \ottava #2 s
 }
 
@@ -177,14 +179,20 @@ DoPianoMg = \relative do' {
   \mg \oneVoice
   <la, la'>8-- si16( do re8-.) red4-- do8-. la-. sold'--~
   sold do,-. la-. do'4-- fad,8-. si( <la, red>)
-  \voiceTwo sol4-- \oneVoice mi-- do'-- si8-- sib16( la
+  \voiceTwo sol4-- \oneVoice mi-- do'-- si8--_2 sib16(_3 la
   sol4) do8(-- si--) la4-- sold--
   la-- mi'16( sold la si do8-.) dod--~
   dod16 re,( mi fa
   sol8-.) lab--~ lab16 do,( re mi fa8-.)
   fad--~ fad16 sold( la si)
-  do8( la, si'-. la-. sol-. fa-. fad-. sold-.)
-  r4 r8 sold,-. la16( si sid8-.) re?( dod)
+  << {
+      \md \stemDown do8_( \mg \stemUp la,)
+      \md \stemDown si'_. la_. sol_. fa fad sold
+     } \\ {
+       s8 la,-. r la-. \oneVoice r la-.( la-. la-.)
+     }
+  >>
+  r4 r8 sold-. la16( si sid8-.) re?( dod)
   fad,4-- sold-- la-- re,-- sol( la8-.) si-. r2
   do,4-- re-- mi-- sold-- dod,( sold'8-.) dod-. r2
   la,8( <la' si> la <si mi> la la) <la si>( la,)
@@ -201,22 +209,22 @@ DoPianoMg = \relative do' {
   si8( mi,) <la, la'>4-- <re re'>-- <sol sol'>--
   r1
   do,8-- re16( mib fa8-.) fad4-- mib8( do-.) si'--~
-  si mib,( sib-.) \voiceTwo mib'4-- \oneVoice fad,8( si-.) re,-.
-  mib-- fa16( solb lab8-.) la4-- fa8-- sol(-- la--)
+  si mib,( sib-.) \voiceTwo mib'4--_2_5 \oneVoice fad,8(_2 si-.)_1 re,-._4
+  mib--_5 fa16( solb lab8-.) la4-- fa8-- sol(-- la--)
   re,( re' mi,) fa-. sol4-- si--
-  do8( do, re') mi-. <fa, mib'>4-- lab--
-  sib8( sib' sib,-.) <mib sib'>--
-  re16( do sib8-.) <lab sol'>4--
-  re,8( re' re,-.) <sol sol'>( la16 sol)
-  <fa mib'>4-- do16( re)
+  do8( do, re')_2 mi-._1 <fa, mib'_1>4-- lab--
+  sib8( sib' sib,-.) <mib_2 sib'>--
+  re16(_2 do sib8-.) <lab sol'>4--
+  re,8( re' re,-.) <sol_5 sol'>( la16_3 sol)_4
+  <fa_5 mib'>4-- do16( re)
   mi8-- fa16( sol la8-.) sib4-- r8 sib( sib,)
-  mi8-- fa16( sol la8-.) sib4-- si,8( si') si,-.
+  mi8-- fa16( sol la8-.) sib4-- si,8-. si'( si,)
   mi8-- fa16( sol la8-.) sib4-- re8 do(\prall si)
   mi,8-- fa16( sol la8-.) sib4-- sib'-- sib,8-.
-  <mi,, mi'>8-> r <mi mi'>4-- <mi fad'>8^( sold'16 la)
-  << {\oneVoice si8-. do--~ \voiceOne do[ red]} \\ {s4 mi,--}>>
-  <fa, fa'>4(-- <sol sol'>-- <sold sold'>--) r4
-  la8-- si16( do re8-.) red-- mid16( fad sold8-.) la-- si16( do re8-.) red-. r4
+  <mi,, mi'>8-> r <mi mi'>4-- <mi fad'>8^( sold'16_3 la)_2
+  << {\oneVoice si8-._1 do--~ \voiceOne do[ red]} \\ {s4 mi,--}>>
+  <fa,! fa'!>4(-- <sol! sol'!>-- <sold sold'>--) r4
+  la8--_4 si16( do re8-.)_1 red--_4 mid16( fad sold8-.)_1 la--_4 si16( do re8-.)_1 red-._2 r4
   \ottava #-1
   <la,, la'>8(\mp \md <do'''''' do'>-.)
 }

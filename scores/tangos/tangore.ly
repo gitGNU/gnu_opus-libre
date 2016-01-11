@@ -78,11 +78,11 @@ RePianoMd = \relative do' {
   \t {q4 <la la'> <fa fa'>}
   <mi mi'>\)\! dod'( sib\prall la)
   la''8(\(\pp la, sib) la'( la, fa') <la, la'>( sib)\)
-  la'(\( do, la) fa'( re la) sold'( mi)\)
+  la'(\( do, la) fa'(-4 re-2 la) sold'( mi)\)
   la(\( red, la) la'( mi la,) sold'( fa)\)
   la(\( mi la,) mi'( la, mi) red'( la)\)
   re(\( fad, re) la'( fa si,) dod'( sold)\)
-  do(\( fa, do) sold'( re sold,) si'( fa)\)
+  do(\( fa, do) sold'( re sold,) si'?( fa)\)
   <do la'>(\( la) <la mi'>( mi)
   <mi si'>( do) <do sold'>( la)
   <si do sol'>2.\) r4
@@ -104,8 +104,8 @@ RePianoMd = \relative do' {
   sold4 la(~ la8 mi4.~)
   mi4 la8( mi'~ \t {mi4\dim fa,) fad8( re'}
   \ottava #1
-  \t 2 {la'2)\pp re,4(~ re fa do'~}
-  do8 <sold sold'>4.)\arpeggio <red red' do'>2--\arpeggio\laissezVibrer
+  \t 2 {la'2)\dyn "pp_al fine" re,4(~ re fa do'~}
+  do8 <sold sold'>4.)\arpeggio <red-1 red'-4 do'-5>2--\arpeggio\laissezVibrer
   s1*2
   r4 << <do' si'>2.--\arpeggio\laissezVibrer \\ <do, si'>\arpeggio\laissezVibrer >>
   s1 r4 <do si'>4.( <la sold'>)\laissezVibrer
@@ -125,12 +125,12 @@ RePianoMg = \relative do' {
   r4 sib,8( fa' sold re'4.)\laissezVibrer
   r8 la,( si red mi sold la do
   si) la,( fa' la) la,( red sold mi)
-  re,( la' fa' sib do sol'4.)\laissezVibrer
+  re,( la'_2 fa'_1 sib_3 do_2 sol'4._1)\laissezVibrer
   re,,8( la' mi' la sib fa'4.)\laissezVibrer
-  dod,,8( sold' la fa' dod' mi4.)\laissezVibrer
-  do,,8( sold' la red mi sib'4.)\laissezVibrer
-  si,,8( la' re fa) \t {sold4(-- sol'-- fa--)}
-  sib,,,8( lab' re fa sib mi4)\laissezVibrer sold,,,8(
+  dod,,8( sold'_2 la_1 fa'_5 dod'_2 mi4.)\laissezVibrer
+  do,,8( sold'_2 la_1 red_3 mi sib'4.)\laissezVibrer
+  si,,8( la'_1 re_5 fa?)_3 \t {sold4(--_2 sol'-- fa--)}
+  sib,,,8( lab'_1 re_5 fa_4 sib_2 mi4)_1\laissezVibrer sold,,,8(
   la) mi'( si') do,( sold' mi') red,( mi)
   la( la') sol,( sol') fa,( fa') mi,( mi')
   re,4-- \clef treble re'' <mi fa la>( re)

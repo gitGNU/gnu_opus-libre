@@ -82,7 +82,7 @@ FaCb =
   <mi fa'>4.--\p <mi mi'>8~ q2~ q2. r4
   \clef tenor
   <la fa'>4. <mi' si'>8~ q2~ \t {si'4\> si( mi,)}
-  do'-- fa,--\!\fermata
+  do'-- fa,--\pp\fermata
   \bar "|."
 }
 
@@ -98,46 +98,47 @@ FaPianoMd = \relative do' {
   mi-._"loco" fad-. si-. lad-. re-. dod-. sol-. sold-.
   la-. sold-. do-. si-. fa'-. red-. sib-. fad-.
   mi-. la-. re-. do-. red-. dod-. sol-. fa-.
-  sold la re red re la sold' red
+  sold la re mib re la sold' red
   <mi la do fa>1(\p\arpeggio \clef treble
   <la si re sol>\arpeggio
   <do mi fa la>2\arpeggio <re fad sol si>)\arpeggio
-  <mi fa do'>8^(\cresc la) sold <mi fa do'>4--
-  la8 \t {<do, re sol>^( sold' la)}
+  <mi fa do'^5>8^(\cresc la)-4 sold-3 <mi fa do'>4--
+  la8 \t {<do,_1 re_1 sol-3>^( sold'-2 la)-4}
   <fa sib>4.(--\mp <mi sib'>8--~) q4 red8( mi)
   mi( la) mi <re la'>4-- sib8 do( dod)
   <re la'>4.(-- <re sold>8--~) q la' si( do)
   \t {si4(\> la\prall fa} mi)\! << fa \\ {si,8( do)} >>
   reb16(\mf\prall do reb mib fa sol lab8)
-  mi16( sol si? do) mib( reb do sib)
-  sib( sol lab sib do si do8)
-  fa,16( lab do mi) sol( fa mib reb)
+  mi16( sol-2 si?-3 do)-4 mib(-3 reb-2 do-1 sib)-3
+  sib(-2 sol-1 lab-2 sib do si do8)
+  fa,16(-1 lab-2 do-4 mi)-3 sol(-5 fa mib reb)
   do8(\prall sib16 lab sol8)
-  si(\prall sib16 lab sol8) lab16( sol fad fa)
+  si(\prall ^\markup \magnify #.5 \center-align \number \tied-lyric #"3~5~4"
+  sib16 lab sol8) lab16(-3 sol-1 fad-4 fa)-3
   <>\>
-  \pl sib,2. {\t {mi4-- fa-- fad--} <reb sol>--\!} r
+  \pl sib,2. {\t {mi4-- -2 fa-- -3 fad-- -4} <reb^2 sol^5>--\!} r
   \pl {<do fa>1~\p\arpeggio q2}
   {<sib'>4.(\arpeggio la8~) la2~ la2} <do, fa la>--
-  <si re sol>1~\arpeggio q4 dod-- \t {re( mi fa)}
+  <si! re sol>1~\arpeggio q4 dod-- \t {re( mi fa)}
   \pl {<sib, reb fa>1~\arpeggio q2}
   {<lab'>4.(\arpeggio sol8~) sol2~ sol2} <sib, reb mi sol>--
   \set tieWaitForNote = ##t
-  fa'8~ la,~ do4~ <la do fa>2
+  fa'8~ la,!~ do4~ <la do fa>2
   \set tieWaitForNote = ##f
-  fa'8 la,( reb do) \t {fa4^(\< <fad fad'> <sold sold'>)} <>\mf
+  fa'8 la,( reb do) \t {fa4^(-5\< <fad fad'^4> <sold sold'>)} <>\mf
   \pl dod1*7/8 {<si si'>4.(\arpeggio <lad lad'>8~) <lad lad'>2*3/4}
-  dod8 \t {<re, re'>4( <si' si'> <lad lad'>~)}
+  dod!8 \t {<re, re'>4( <si' si'> <lad lad'>~)}
   q8 dod\< <sold sold'>( <fadd fadd'>)
   <>\!
-  \pl <sid red>1*3/2\arpeggio
-  {<lad'>4.(\arpeggio <sold, sold'>8~) q2~ q} r
+  \pl <sid_2 red_3>1*3/2\arpeggio
+  {<lad'>4.(^5\arpeggio <sold, sold'>8~) q2~ q} r
   \pl <si re>1
   {<la! la'!>4.( <sold sold'>8~) \t {q4 <mid mid'>( <fad fad'>)}}
   \pl re'1
   {<lab lab'>4.(\arpeggio <sol sol'>8~) q4 <mid mid'>8( <fad fad'>)} <>\dim
   << {fad'4.( mid8~) mid4 sold,4--} \\ {fad2. s4} \\ <sold dod>1 >>
   \pl {sold,2( la)} {mid'4.( mi8~) mi2} \clef bass
-  <mi, la do fa>1\p\arpeggio <fa sold si mi>\arpeggio
+  <mi, la do! fa>1\p\arpeggio <fa sold si mi>\arpeggio
   <fa la do re>2\arpeggio <re sold si>\arpeggio
   <>\dim
   \pl <mi fa>2\arpeggio {<sib'>2(\arpeggio sold)}
@@ -165,11 +166,11 @@ FaPianoMg = \relative do' {
   fa4.-- sib8( sol'4) sib,-.
   fa4.-- sib8( sol'4) sib,-.
   fa4-- la8( do) sol'4( fa)
-  la,4.(-- reb--) fa,4--_\<
+  la,4.(-- reb--) fa,!4--_\<
   <fad fad'>1~_\! q2. r4
   <fad red' sold>1~ q4 dodd'-- \t {red( mid fad)}
   \pl {<fad,>1\arpeggio ~ fad}
-  {<si re sold> \arpeggio <si sol' re'>}
+  {<si re sold> \arpeggio <si sol' re'>\arpeggio }
   dod1 dod,2. dod4_\(
   re4.^(--_\) fa'-- la,4)
   dod,4.(-- re'-- sold,4)

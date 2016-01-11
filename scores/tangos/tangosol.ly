@@ -97,27 +97,27 @@ SolPianoMd = \relative do' {
   sol8--\sfz sol16 do fa8-. sib4->( mib,8) lab( reb,)
   sol,8-- sol16 do fa8-. sib-. mib( lab) reb( reb,)
   \mg fad,,-- \md fad16 si mi8-. la4->( re,8) sol( do,)
-  \mg fad,-- \md si16 mi la8-. re-.
-  sol( do) fa( <fa, sib>)
-  \ottava #1 <si mi si'>1\fp\arpeggio
+  \mg fad,-- \md si16 mi-2 la8-.-5 re-.-1
+  sol(-2 do)-4 fa( <fa, sib>)
+  \ottava #1 <si mi si'>1*15/16\fp\arpeggio s16
   \ottava #0 r4 sol,8( do fa4)
   \ottava #1 <sib mib lab>-.--
   <si mi si'>1*1/4\arpeggio
   \ottava #0
   \mg <sib,,, mib lab>8
   \showStaffSwitch
-  \md <si''! mi! la!>4--
+  \md <si''! mi! la!>4-- ^"(loco)"
   \mg <sib,,! mib! lab!>8
   \md <la''! re sol>4--
   \hideStaffSwitch
   \mg \stemUp <sib,, mib>8
-  \md \stemNeutral <sold'' dod fad>\cresc
-  r16 <sol do fa>8. r8 <mid fad si mi>4.
+  \md \stemNeutral <sold'' dod fad>(--\cresc
+  r16 <sol do fa>8.-- r8 <mid fad si mi>4.--)
   mi8(\mf la) si( do) r <mi, la fa'>4-- <do' mi>16( <si red>)
-  <la mi'>8( mi) la( si) r <mi, do' fa>4-- <sib' re>16( <la red>)
-  <sold mi'>8( mi) lad( si) r <fadd sold? re' fa>4-- <la mi'>16( <lad red>)
+  <la mi'>8( mi) la( si) r <mi, do' fa>4-- <sib'^2 re^4>16( <la^1 red^3>)
+  <sold^2 mi'^5>8( mi) lad( si) r <fadd sold? re' fa>4-- <la mi'>16( <lad red>)
   <si mi>8( mi,) si'( do) re-. <si la'>-.
-  <mi sol>16(\> <re fa> <do mi> <si red>
+  <mi^3 sol^5>16(\> <re fa> <do^1 mi^3> <si^2 red^4>
   <la mi'>4)\mp si8( do) r <do fa>4-- <si red>8-.
   <la mi'>( mi) si'( do) r <si do fa>4-- <la red>8-.
   <sold mi'>4-- lad8( si) r <do re fa>4-- <la mi'>16( <lad red>
@@ -134,21 +134,21 @@ SolPianoMd = \relative do' {
   \pl {s16 <do re fa>--~ q4} {sold'8( la lad)}
   \pl \t {fa4(-- mi-- red--)} <re sold si>1*1/2 mi2
   \clef bass
-  \acciaccatura mi8-> mi,\mf mi16( la re8) sol-. \clef treble
-  do-. <red, la' si fa'>4(--\arpeggio
+  \acciaccatura mi8-> mi,\mf mi16( la-2 re8)-5 sol-.-3 \clef treble
+  do-.-4 <red, la'^2 si^3 fa'^5>4(--\arpeggio
   <mi do' mi>8--~)
   \t {q4 <si' do sol'>(-- <la fad'>--)}
-  \pl {<sold do>( la)} {fa'8( mi) <si red>( <do mi>)}
+  \pl {<sold do>( la)} {fa'8(-5 mi)-4 <si^2 red^4>( <do mi>)}
   \clef bass
   re,, re16( sol do8) fa-.
   \clef treble sib-. <mi, si' red>4(-- <fa sold re'>8--~)
   q8 <fadd sold mi'>-. <re' sol>16(-> <dod fad> <do fa>4) red8-.
-  \pl <mi, fa>4 {mi'16( sold, sol fa)}
-  mi8 mi,16( la re8) sol16( do) fa8-.
+  \pl <mi,-1 fa-1>4 {mi'16( sold,-2 sol-1 fa)-4}
+  mi8-3 mi,16( la re8) sol16( do) fa8-.
   <sol, la red sib'>4(--\arpeggio <sol dod mi la>8--~)
-  q4 \t {<red' sold>8(-> <re sol> <do fa>~)}
-  \t 2 {q4 red^( <sib mi>}
-  <la mi'>8-.) re,16( sol do8) <fa, la fa'>4^(-- la8) <fa re' mi>4--~
+  q4 \t {<red'^2 sold^4>8(-> <re^1 sol^5> <do^2 fa^4>~)}
+  \t 2 {q4 red^(^3 <sib^2 mi^4>}
+  <la^1 mi'^5>8-.) re,16( sol do8)-3 <fa, la fa'>4^(-- la8) <fa re' mi>4--~
   \t {q4 <mi do'>(\dim <re sib'>)} <fa re'>8^( sold sol fa)
   \clef bass
   <mi, la do mi>1\dyn "pp_al fine" \laissezVibrer
@@ -179,27 +179,24 @@ SolPianoMg = \relative do' {
   re1
   mi,,,8\laissezVibrer mi' s2.
   \stemDown mi4 \stemNeutral re do si
-  la-. si-. do-. si-. la-.
-  \ottava #-1 sol-. fad-. fa-.
+  \ottava #-1
+  la-. si-. do-. si-. la-.sol-. fad-. fa-.
   mi-. sold-. si-. la-. sold-. mi-. fad-. sold-.
-  \ottava #0
-  la-._"loco" si-. do-. si-. la-.
-  \ottava #-1 sol-. fad-. fa-.
+  la-. si-. do-. si-. la-.
+  sol-. fad-. fa-.
   mi-. sold-. si-. la-. sold-. mi-. la-.
-  \ottava #0 dod-._"loco"
-  re-. fa-. sol-. re-. do-. mib-. fa-.
-  \ottava #-1 lab,-.
-  sib-. reb,-. mib-. fa-. mi-. sold-. la-.
+  dod-. re-. fa-. sol-. re-. do-. mib-. fa-.
+  lab,-. sib-. reb,-. mib-. fa-. mi-. sold-. la-.
   \ottava #0 dod-._"loco"
   re-. fa-. sold-. si,-. do-. mi-. fad-. la,-.
   si-. do-. re-. si-. mi-. re-. do-. si-.
   \ottava #0
   la8( mi') si'-. do~ do2
   r8 mi16( la si8-.) do~ do2
-  mi,,,8( mi') si'-. re~ re2
+  mi,,,8( mi')_1 si'-._2 re~_1 re2
   r8 mi,16( si' re8-.) sold~ sold2
   la,,8( mi') si' la4 la8( mi') sib'
-  dod,-- \clef treble la'16( mi' sol8) sib~ sib4 r
+  dod,-- \clef treble la'16(_5 mi'_2 sol8)-.-1 sib~ sib4 r
   \clef bass
   re,,,8( la') mi' re~ re4 la
   sib,8( fa') do' re4-- sib,8 do( re)

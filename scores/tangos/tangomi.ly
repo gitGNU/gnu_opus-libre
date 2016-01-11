@@ -33,7 +33,7 @@ MiCb =
   <do fa>4--\downbow la'8(-. \t {sib si do)}
   <la, si mi>->\arpeggio la'-. <si, mi>-.\downbow
   <do fa>4--\downbow la'8(-. si16 do si sib)
-  <si, mi>8( la-.) <si mi>-.	
+  <si, mi>8( la-.) <si mi>-.
   <do fa>4-- <sol' la>8-. \t {<fad la>--\< <fa la>-- <mi la>--}
   <la, si>\!\downbow <mi' la> <la, si> <do fa>
   <mi la> <do fa> \t {sib'(\> do) dod}
@@ -133,7 +133,8 @@ MiPianoMd = \relative do' {
   do,,16^[ \mg do, \md do'8]
   \xNotesOff fa'16( sol do re do8)
   re,16( mi la si) sib,( do fa sol)
-  sol,( la re mi) mi,( fad si dod)  \ottava #0
+  sol,( la re mi) mi,( fad si dod)
+  \ottava #0 <>^"(loco)"
   <mi,, si'>8->\fp \t {si16 si si}
   \mg \stemUp si4 \md \stemNeutral
   \halfBeat
@@ -161,16 +162,16 @@ MiPianoMd = \relative do' {
   mi16 re) do8(\prall si16 la sold fa)
   \tt {lad(\> sold red dod red~)\!} red4~
   red8 dod-- \t {red( sold lad)}
-  si16(\cresc la mi re mi8) mi16( re)
-  la( sol re do re8) \t {mi,16( si' do)}
-  <mi si'>8-.--\mf si16( re mi8) <fa do'>4.->-- r4
-  <mi si'>8-.-- si16( re mi8) <fa do'>4.->-- r4
-  <si mi>8-.-- fa16( la si8) <do fa>4.->-- r4
-  <si mi>8-.-- fa16( la si8) <do fa>4.->-- la'8( lad)
+  si16(\cresc la mi re mi8) mi16(-5 re)-4
+  la(-2 sol-1 re-3 do-2 re8)-3 \t {mi,16(-1 si'-2 do)-3}
+  <mi^2 si'^5>8-.--\mf si16( re mi8-.) <fa do'>4.->-- r4
+  <mi si'>8-.-- si16( re mi8-.) <fa do'>4.->-- r4
+  <si mi>8-.-- fa16( la si8-.) <do fa>4.->-- r4
+  <si mi>8-.-- fa16( la si8-.) <do fa>4.->-- la'8( lad)
   <mi si'>( si) mi,-. <fa' do'>4--
   <do, mi>8 <fa si>( <do' mi>)
-  <mi sib'>( sib) mi, <mi' la>4-- mi,8 do'( dod)
-  <la si mi>8( mi) la <do fa>4-- re,8 sold( sol)
+  <mi sib'>( sib) mi,-. <mi' la>4-- mi,8 do'( dod)
+  <la si mi>8( mi) la-. <do fa>4-- re,8 sold( sol)
   <si mi>-. <do fa>4-- <si mi>8 <do fa>( <si mi>)
   <re sol>16(-> <dod fad> <do fa>8)
   r8 <mi, si' mi>4-- <fa do'>8(--~ q4 fa')
@@ -200,14 +201,14 @@ MiPianoMd = \relative do' {
   \tt {r16 sol'''(\< la re mi}
   re2~)\mp re8 sol,( \t {la re mi}
   re8) sol,32( la re mi re4) r8 sol,16( la re8 mi,)
-  \pl {sol8(-- fa16 mi re8) fa(-- mi16 re do8) mi16( re do si)}
+  \pl {sol8(-- fa16 mi re8) fa(-- mi16 re do8) mi16(^2 re^1 do^3 si)^1}
   {
   \lightBeams {sol'64 \graceNotes {la re la sol16}} s4
   \lightBeams {fa64 \graceNotes {sol do sol fa16}} s4
   \lightBeams \t {mi64 \graceNote fa \graceNote si} s8.
   }
-  \ottava #0 sib,16( la sol fa)
-  mi( re do si) sib( la sol fa) mi( re do si)
+  \ottava #0 sib,16(-4 la? sol fa)
+  mi?(-4 re do si) sib(-4 la sol fa) mi(-4 re do si)
   <mi si'>8-. \t {si16 si si}
   \mg \stemUp si4 \md \stemNeutral
   r8 \xNotesOn do do16 do do8 \xNotesOff
@@ -247,13 +248,13 @@ MiPianoMg = \relative do' {
   <dod, dod'> <red red'> <mi mi'> <dod dod'>
   <do do'> re' mi <sold, sold'>
   \pl {
-    <la la'>4 s s \t {mib4(-- mi32 fa sol sold}
-    la4-.) s s \t {mib4(-- mi32 fa fad sol}
-    sold4-.) s s \t {re4(-- mi32 fa fad sol}
-    sold4-.) s s \t {mib4(-- mi32 fa sol sold}
-    la4-.) s s \t {sol'4(-- fa32 mi mib re}
-    dod4-.) s s \t {sold4(-- la32 si do dod}
-    re4-.) s s \t {sib4(-- si32 do re red)}
+    <la la'>4 s s \ottava #-1 \t {mib4^(-- mi32 fa sol sold}
+    la4*1/2-.) \ottava #0 s s2 \ottava #-1 \t {mib4^(-- mi32 fa fad sol}
+    sold4*1/2-.) \ottava #0 s s2 \ottava #-1 \t {re4^(-- mi32 fa fad sol}
+    sold4*1/2-.) \ottava #0 s s2 \ottava #-1 \t {mib4^(-- mi32 fa sol sold}
+    la4*1/2-.) \ottava #0 s s2 \t {sol'4^(-- fa32 mi mib re}
+    dod4-.) s s \t {sold4^(-- la32 si do dod}
+    re4-.) s s \t {sib4^(-- si32 do re red)}
   } {
     r8 re'16( mi la8-.) <la, fa' si>4.-- r4
     r8 re16( mi la8-.) <la, fa' si>4.-- r4
@@ -269,11 +270,11 @@ MiPianoMg = \relative do' {
   la-- si-- r mib,( la--) do-- r mib,(
   la--) mi'-- r mib, la-- fa'-- r mib,
   \pl {
-    la4 fa'2-- mi8( mib,) la4 fa'2-- mi4
+    la4 fa'2-- mi8(^1 mib,)^5 la4 fa'2-- mi4
     la,4 fa'2-- mib,4 la fa'2.--
   } {
-    la,8 si'4( do8~) do2
-    la,8 si'4( do8~) do2
+    la,8^5 si'4(^1 do8~) do2
+    la,8^5 si'4( do8~) do2
     la,8 si'4 si8--~ si2
     la,8 si'4 si8--~ si2
   }
@@ -284,8 +285,8 @@ MiPianoMg = \relative do' {
   re2~) re8 sol,( \t {la re mi}
   re8) sol,32( la re mi re4) r8 sol,16( la re8 mi)
   sol(-- fa16 mi re8) fa(-- mi16 re do8)
-  mi16( re do si)
-  lab( sib mib fa)
+  mi16(_1 re_2 do_3 si)_4
+  lab(_5 sib mib fa)
   sol,( la re mi)
   fad,( sold dod red)
   fa,( sol) r8

@@ -6,7 +6,7 @@
   subtitle = "para contrabajo y piano"
   composer = "Valentin Villenave"
   % dedication = "À Denis Germain"
-  date = "marzo - diciembre 2015"
+  date = "29 de marzo – 31 de diciembre 2015"
 }
 
 SiTitre = "Tangosi"
