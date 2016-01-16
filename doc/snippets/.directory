@@ -1,0 +1,15 @@
+# This directory is part of the opus_libre framework
+# (c) 2008-2010 Valentin Villenave <valentin@villenave.net>
+# License: GNU GPL v3 or later
+
+[Desktop Entry]
+Name=Snippets
+Name[fr]=Snippets
+
+Comment=Temporary snippet repository, waiting to be commited upstream
+Comment[fr]=Quelques exemples en attente d'être soumis en haut lieu.
+
+Icon=
+Type=Directory
+Path=doc/snippets/
+Encoding=UTF-8

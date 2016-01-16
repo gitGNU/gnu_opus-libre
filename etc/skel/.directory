@@ -1,0 +1,15 @@
+# This directory is part of the opus_libre framework
+# (c) 2008-2010 Valentin Villenave <valentin@villenave.net>
+# License: GNU GPL v3 or later
+
+[Desktop Entry]
+Name=Skeleton catalog
+Name[fr]=Catalogue de squelettes
+
+Comment=Universal score skeletons
+Comment[fr]=Squelettes de partitions universels
+
+Icon=
+Type=Directory
+Path=etc/skel/
+Encoding=UTF-8

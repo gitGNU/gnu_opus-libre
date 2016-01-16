@@ -1,0 +1,15 @@
+# This directory is part of the opus_libre framework
+# (c) 2008-2010 Valentin Villenave <valentin@villenave.net>
+# License: GNU GPL v3 or later
+
+[Desktop Entry]
+Name=Blank sheet music
+Name[fr]=Papier à musique vierge
+
+Comment=Default blank sheet music
+Comment[fr]=Papier à musique vierge par défaut
+
+Icon=
+Type=Directory
+Path=etc/blank/
+Encoding=UTF-8

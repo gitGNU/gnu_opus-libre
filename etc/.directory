@@ -1,0 +1,15 @@
+# This directory is part of the opus_libre framework
+# (c) 2008-2010 Valentin Villenave <valentin@villenave.net>
+# License: GNU GPL v3 or later
+
+[Desktop Entry]
+Name=Global Settings
+Name[fr]=Réglages globaux
+
+Comment=Default and score-independent settings
+Comment[fr]=Réglages communs à tous types de partitions
+
+Icon=
+Type=Directory
+Path=etc/
+Encoding=UTF-8

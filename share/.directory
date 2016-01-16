@@ -1,0 +1,15 @@
+# This directory is part of the opus_libre framework
+# (c) 2008-2010 Valentin Villenave <valentin@villenave.net>
+# License: GNU GPL v3 or later
+
+[Desktop Entry]
+Name=Shared
+Name[fr]=Commun
+
+Comment=Score-independent, non-code resources
+Comment[fr]=Ressources générales et non algorithmiques
+
+Icon=
+Type=Directory
+Path=share/
+Encoding=UTF-8
