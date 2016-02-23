@@ -1,33 +1,7 @@
-%{
-/usr/local/bin/barcam:
-
-#!/bin/bash
-
-tmp="/tmp/zbartmp"
-
-/usr/bin/zbarcam > $tmp &
-pid=$!
-disown
-while [[ ! -s $tmp ]]
-  do
-    sleep 1
-    trap "rm -f $tmp; kill -s 9 $pid; exit" SIGHUP SIGINT SIGTERM
-done
-
-kill -s 9 $pid
-decoded=$(grep -m 1 -w -Po "(?<=EAN-13:).*" $tmp)
-lines=$(barcode -b $decoded | grep -Po "(?<=% 9).*\N")
-
-echo $decoded
-echo $lines
-
-rm -f $tmp
-
-%}
-
 #(use-modules
   (ice-9 rdelim)
   (ice-9 popen)
+  (ice-9 format)
   (ice-9 regex))
 
 majScale = $'(0 1 2 3 4 5 6 7 8 9)
@@ -40,8 +14,45 @@ dimScale = $'(0 1 (2 . -1/2) 3 (3 . 1/2) (4 . 1/2) 5 6 7 (8 . -1/2))
           (string->number (string x)))
      (string->list str)))
 
+#(define (make-script bin-file tmp-file)
+   (let* ((tmpl (string-append
+               (string-append (or (getenv "TMPDIR") "/tmp") "/")
+               "lilybarcam-XXXXXX"))
+          (script-tmp (mkstemp! tmpl))
+          (outputter (ly:make-paper-outputter script-tmp 'ps))
+          (port (ly:outputter-port outputter))
+          (script-name (port-filename port)))
+   (display
+    (format
+"#!/bin/bash
+tmp=\"~a\"
+~a > ~36ctmp &
+pid=~36c!
+disown
+while [[ ! -s ~36ctmp ]]
+  do
+    sleep 1
+    trap \"rm -f ~36ctmp; kill -s 9 ~36cpid; exit\" SIGHUP SIGINT SIGTERM
+done
+kill -s 9 ~36cpid
+decoded=~36c(grep -m 1 -w -Po \"(?<=EAN-13:).*\" ~36ctmp)
+lines=~36c(barcode -b ~36cdecoded | grep -Po \"(?<=% 9).*\\N\")
+echo ~36cdecoded
+echo ~36clines
+rm -f ~36ctmp"
+     tmp-file bin-file)
+    port)
+   (chmod (port-filename port) #o755)
+   (close-output-port port)
+   script-name))
+
 #(define double-list
-   (let* ((port (open-input-pipe "/usr/local/bin/barcam"))
+   (let* ((tmpl (string-append
+               (string-append (or (getenv "TMPDIR") "/tmp") "/")
+               "lilybarcam-XXXXXX"))
+          (tmp-file (mkstemp! tmpl))
+          (script-name (make-script "/usr/bin/zbarcam" (port-filename tmp-file)))
+          (port (open-input-pipe script-name))
           (biglist (string-split
                     (read-delimited "EOF" port)
                     (integer->char 10))))
@@ -204,7 +215,7 @@ grestore
   \new Staff {
   \clef bass
   \time 2/4
-  \transpose c d, \barCodeMusic #bluScale #numlist #rtmlist ##f #0
+  \transpose c d, \barCodeMusic #majScale #numlist #rtmlist ##f #0
   %\transpose c d, \barCodeMusic #bluScale #numlist #neglist ##f #0
   %R1*16
   %r8
