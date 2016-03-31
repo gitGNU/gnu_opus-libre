@@ -1,0 +1,9 @@
+<<
+  \newChordNames $"Grille"
+  \newStaff $"Flo"
+  \newStaff $"Prune"
+  \newStaff $"Marc"
+  \newStaff $"Brice"
+  \newPianoStaff $"Piano"
+>>
+
