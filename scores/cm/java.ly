@@ -3,7 +3,8 @@
 
 \language "italiano"
 
-JavaGrille = \chordmode {
+JavaGrille =
+\chordmode {
   la2.:m mi:m la2:m/fad si4
   mi2.:m la:m mi:m/si si:7 mi2 mi4:7
   la2.:m mi:m la2:m/fad si4

@@ -3,6 +3,16 @@
 
 %% version 37
 
+#(ly:set-option 'use-variable-names #t)
+%#(set-global-staff-size 28)
+
+\layout {
+  \context {
+    \Staff
+    %  \override StaffSymbol.thickness = #3
+  }
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%    Scène I     %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Java (Marc) ----------------------------------------------------%
@@ -253,24 +263,24 @@ DiscoBriceTexte = \keepWithTag #'Brice \DiscoList
 
 %{
 A - O - I
-    Traditionnel
-    Chanson française
-    Chant grégorien
-    Electronica
-    Italo dance
-    Kizomba (Angola)
-    Kwaito (Afrique du Sud)
-    Maloya (créole - Réunion)
-    Milonga
-    Adagio
-    National socialist
-    Oratorio
-    Piano
-    Polonaise
-    Latino
-    Rhapsodie
-    Rockabilly
-    Zarico (créole - Louisiane)
+Traditionnel
+Chanson française
+Chant grégorien
+Electronica
+Italo dance
+Kizomba (Angola)
+Kwaito (Afrique du Sud)
+Maloya (créole - Réunion)
+Milonga
+Adagio
+National socialist
+Oratorio
+Piano
+Polonaise
+Latino
+Rhapsodie
+Rockabilly
+Zarico (créole - Louisiane)
 %}
 
 
@@ -278,41 +288,42 @@ A - O - I
 
 %% Pastiche (Brice, Marc) -----------------------------------------%
 
-PasticheMarcTexte =
+PasticheIMarcTexte =
 \lyricmode {
-  Ne me lâ -- che pas
-  Ça va s’ef -- fa -- cer
-  Je pars ef -- fa -- cer
-  Ça s’en va dé -- jà
+  Ne me la- (Hm hm.)
+  Ne me lâ -- che pas...
+  Ça va s’ef -- fa -- cer,
+  Je pars ef -- fa -- cer,
+  Ça s’en va dé -- jà.
   Ef -- fa -- cer le temps
-  De la mé -- sen -- tente
-  Le temps de l’at -- tente
+  De la mé -- sen -- ten -- te,
+  Le temps de l’at -- tente,
   En se de -- man -- dant
   D’ef -- fa -- cer ces phases
-  De re -- cher -- ches blêmes
+  De re -- cher -- ches blêmes,
   À é -- tran -- gler même
-  L’âme de l’ex -- tase
-  Ne me lâ -- che pas
-  Ne me lâ -- che pas
-  Ne me lâ -- che pas
-  Ne me lâ -- che pas
+  L’â -- me de l’ex -- tase.
+  Ne me lâ -- che pas,
+  Ne me lâ -- che pas,
+  Ne me lâ -- che pas,
+  Ne me lâ -- che pas.
 
   Je pars te cher -- cher
-  Des pe -- rles de mer
+  Des pe -- rles de mer,
   Ve -- nant de dé -- serts
-  Â -- pres et des -- sé -- chés
-  Le sel de ma terre
-  A -- près le tré -- pas
+  Â -- pres et des -- sé -- chés.
+  Le sel de ma terre,
+  A -- près le tré -- pas,
   Pa -- re -- ra tes ap -- pas
-  D’é -- clat et de fer
-  Rè -- gne -- ra sans trêve
-  La cé -- le -- ste flamme
-  La cé -- le -- ste femme
-  Dé -- es -- se de rêve
-  Ne me lâ -- che pas
-  Ne me lâ -- che pas
-  Ne me lâ -- che pas
-  Ne me lâ -- che pas
+  D’é -- clat et de fer.
+  Rè -- gne -- ra sans trê -- ve
+  La cé -- le -- ste flam -- me,
+  La cé -- le -- ste fem -- me,
+  Dé -- es -- se de rê -- ve.
+  Ne me lâ -- che pas,
+  Ne me lâ -- che pas,
+  Ne me lâ -- che pas,
+  Ne me lâ -- che pas.
 }
 
 PasticheIIBriceTexte =
@@ -449,21 +460,23 @@ LiedIBriceTexte =
 \lyricmode {
   In die steil -- sten Fel -- sen -- spit -- zen
   si -- cher -- te mich ein Irr -- licht hin:
-  Wie ich Frei -- heit wie -- der fin -- de
+  Wie ich Frei -- heit wie -- der fin -- de,
   liegt nicht schwer mir in dem Sinn,
   liegt nicht schwer mir in dem Sinn.
 }
 
 LiedIIBriceTexte =
 \lyricmode {
-  Vin, di -- ssi -- pe cette tris -- tesse
-  Je me sens dé -- pé -- rir
-  J’en -- vie les rêves de l’ivresse
-  Et l'im -- per -- ti -- nent rire
-  Bel élixir de liesse
-  Verse l’ivresse
-  Viens rem -- plir mes dé -- si -- rs
-  Cher élixir
+  Vin, di -- ssi -- pe cet -- te tris -- tes -- se_;
+  Je me sens dé -- pé -- rir.
+  J’en -- vie les rê -- ves de l’i -- vres -- se
+  Et l'im -- per -- ti -- nent rire_!
+
+  Bel é -- li -- xir de li -- es -- se,
+  Ver -- se l’i -- vres -- se_;
+  Viens rem -- plir mes dé -- sirs,
+  Cher é -- li -- xir_:
+  Viens rem -- plir mes dé -- sirs_!
 }
 
 LiedIIIBriceTexte =
@@ -525,8 +538,143 @@ BluesPruneTexte = \lyricmode {
 
 %   Chorus / Punk rock / Soul / Bourrée / Nocturne
 
-%FIXME: TBC
+ZoukList =
+\lyricmode {
+  \tag #'Flo {
+    Je cherche des poses
+    Modernes et drôles
+    Et je te propose
+    Ces formes fofolles
+    Le dos de cochon
+    Le gros polochon
+    Et les vers de terre
 
+    Emmêlons nos corps
+    Et tentons encore
+    Le bock de rosé
+    Le bonbon osé
+  }
+  \tag #'Prune {
+    Je te cède en plus
+    Mes trucs les plus crus :
+    Le mur de culbute
+    Le sculpteur de flûte
+  }
+  \tag #'Flo {
+    Le dos de cochon
+    Le gros polochon
+  }
+  \tag #'(Flo Prune) {
+    Et les vers de terre
+  }
+  \tag #'Flo {
+    Je te sens en forme,
+    Restons donc hors-norme :
+    Le bécot félon
+    Le choc de tromblon
+  }
+  \tag #'Prune {
+    Le fumeur velu
+    Le nez de merlu
+  }
+  \tag #'Flo {
+    Le bock de rosé
+    Le bonbon osé
+  }
+  \tag #'Prune {
+    Le mur de culbute
+    Le sculpteur de flûte
+  }
+  \tag #'Flo {
+    Le dos de cochon
+    Le gros polochon
+  }
+  \tag #'(Flo Prune) {
+    Et les vers de terre
+  }
+  \tag #'Flo {
+    Prolongeons l'effort,
+    Mon tendre trésor :
+    Le bol enfoncé
+    Le porc désossé
+  }
+  \tag #'Prune {
+    Les feux de recul
+    Les flèches d'Hercule
+  }
+  \tag #'Flo {
+    Le bécot félon
+    Le choc de tromblon
+  }
+  \tag #'Prune {
+    Le fumeur velu
+    Le nez de merlu
+  }
+  \tag #'Flo {
+    Le bock de rosé
+    Le bonbon osé
+  }
+  \tag #'Prune {
+    Le mur de culbute
+    Le sculpteur de flûte
+  }
+  \tag #'Flo {
+    Le dos de cochon
+    Le gros polochon
+  }
+  \tag #'(Flo Prune) {
+    Et les vers de terre
+  }
+  \tag #'Prune {
+    Quelle belle gerbe
+    De gestes superbes !
+    Le déjeuner russe
+    Le dresseur de puces
+  }
+  \tag #'Flo {
+    Le monstre d'Écosse
+    Le boléro corse
+  }
+  \tag #'Prune {
+    Le Turc enrhumé
+    Le punk déplumé
+  }
+  \tag #'Flo {
+    Le bol enfoncé
+    Le porc désossé
+  }
+  \tag #'Prune {
+    Les feux de recul
+    Les flèches d'Hercule
+  }
+  \tag #'Flo {
+    Le bécot félon
+    Le choc de tromblon
+  }
+  \tag #'Prune {
+    Le fumeur velu
+    Le nez de merlu
+  }
+  \tag #'Flo {
+    Le bock de rosé
+    Le bonbon osé
+  }
+  \tag #'Prune {
+    Le mur de culbute
+    Le sculpteur de flûte
+  }
+  \tag #'Flo {
+    Le dos de cochon
+    Le gros polochon
+  }
+  \tag #'(Flo Prune) {
+    Et les vers de terre
+    Et les vers de terre
+  }
+}
+
+ZoukFloTexte = \keepWithTag #'Flo \ZoukList
+ZoukPruneTexte = \keepWithTag #'Prune \ZoukList
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%    Scène XI    %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -536,20 +684,20 @@ BluesPruneTexte = \lyricmode {
 
 %{
 O - U - I
-    Electronic body music (EBM)
-    Eurodisco
-    Hip-house
-    fusion
-    gothique ++
-    symphonique
-    mélodique
-    Microhouse
-    électronique ++
-    post-industriel
-    Nu-disco (disco house)
-    Quiet storm (ballades soul)
-    communiste
-    World music +++
+Electronic body music (EBM)
+Eurodisco
+Hip-house
+fusion
+gothique ++
+symphonique
+mélodique
+Microhouse
+électronique ++
+post-industriel
+Nu-disco (disco house)
+Quiet storm (ballades soul)
+communiste
+World music +++
 %}
 
 

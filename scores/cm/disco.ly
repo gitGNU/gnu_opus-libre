@@ -4,7 +4,8 @@
 \language "italiano"
 
 
-DiscoGrille = \chordmode {
+DiscoGrille =
+\chordmode {
   sol4.:m9 do8 s2
   sol4.:m9 do8 s2
   sol4.:maj7 do8:7 s2

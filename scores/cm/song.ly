@@ -4,7 +4,8 @@
 \language "italiano"
 
 
-SongGrille = \chordmode {
+SongGrille =
+\chordmode {
   la1:m11.6 s s
   s2 mi:m la1:m11 s
   s s2 mi:m la1:m11 s
@@ -18,7 +19,7 @@ SongGrille = \chordmode {
   la:m11 s
 }
 
-Song =
+SongFlo =
 \relative do' {
   \key la \minor
   \tempo "con moto"

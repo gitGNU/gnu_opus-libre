@@ -4,14 +4,17 @@
 \language "italiano"
 
 
-TangoGrille = \chordmode {
+TangoGrille =
+\chordmode {
   R1*8
-  sib1*2 mib:m/sib lab:m/sib fa1 sib:7
+  sib1*2 mib:m/sib lab1:m/sib fa sib1*2:7
   la1:m la2:m sol re:m sib la1:m re:maj7 re:m7
   mi2:7 fa:7 sol mi:7
   sib1*2:7 mib1:m/sib sib:7
   si:7/si mi:7/sib re2:7/sib sol:7/sib sib1:7
-  sib1*2 mib:m/sib lab:m/sib fa1 sib:7
+  dob:maj7/fa
+  sib lab:m/sib sib:7 mib1*2:m/sib
+  lab:m/sib fa1 sib:7
 }
 
 TangoFlo =
@@ -39,7 +42,7 @@ TangoFlo =
   \tuplet 3/2 {la fa solb} dob2
   r8 solb4 sib8~ sib fa la mi
   lab4. re,8 solb2 r
-  R1*3
+  R1*4
   \tuplet 3/2 {r8 solb re} solb reb~ reb solb do,4
   reb8 solb4 re8 mib fa sib4~
   sib2 lab8 mib~ \tuplet 3/2 {mib sibb' lab}
@@ -50,20 +53,22 @@ TangoFlo =
 TangoMarc =
 \relative do' {
   \key mib \minor
-  R1*8
+  R1*7
+  r8 sib dob reb re mib fa fa
   \tempo "Tango"
   \bar "||"
-  r8 sib dob reb re mib fa fa
   re'2. r4 r8 fa, mib re mib fa solb solb
   mib'2. r4 r8 fa, reb' dob mib,4 r8 re
   dob dob lab'2 r8 dob,
-  lab' solb sib, solb' la,4 r8 lab~ lab fa'2..
+  lab' solb sib, solb' la,4 r8 lab~ lab fa'2..~
+  fa4 r r2
   \key la \minor
   R1*8
   \key mib \minor
   R1*7 r8 lab, fa' la, sib4 r8 solb'
-  \tuplet 3/2 {sib,4 do re~} re8 mib fa fa re'4. fa,8
-  \tuplet 3/2 {re' fa, solb~} solb16 fa mib dod
+  \tuplet 3/2 {sib,4 do re~} re8 mib fa fa
+  re'2. fa,8 r
+  \tuplet 3/2 {r4 re' fa,} fab8 dob' mib, dod
   \tuplet 3/2 {re8 r sib'4 dob} mib,8 fa solb solb
   mib'2. r4
 }

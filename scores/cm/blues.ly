@@ -3,7 +3,8 @@
 
 \language "italiano"
 
-BluesGrille = \chordmode {
+BluesGrille =
+\chordmode {
   s2
   mi2.:m do:7 si:dim mi4:maj mi2:m7
   la2.:m7 re:7 sol:maj7 do
