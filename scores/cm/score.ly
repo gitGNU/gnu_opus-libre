@@ -4,5 +4,5 @@
 lang = "fr"
 input = "fr"
 skel = "cm"
-structure = '("Ouverture" "Java" "Tango" "Song" "Disco" "LiedI" "LiedII" "LiedIII" "Blues" "Zouk" "Biguine")
-% structure = '()
+structure = '("Ouverture" "Java" "Tango" "Song" "Disco" "Chanson" "LiedI" "LiedII" "LiedIII" "Blues" "Zouk" "Biguine" "Cubain")
+structure = '("Biguine")

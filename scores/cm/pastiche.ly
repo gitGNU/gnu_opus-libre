@@ -107,3 +107,21 @@ PasticheIMarc =
   mi mi \t {mi fad mi} mi4 r r2
   \bar "|."
 }
+
+PasticheIIIMarc = \relative do' {
+  \clef "G_8"
+  \time 3/4
+  \key sol \minor
+  \partial 4
+  sol8 sol sib4 re,8 sib'4 do8
+  re4 r8 mi re4
+  do do8 la r4 fa4. r8 sol la
+  sib4. sol8 sol4 sol4. r8 fa sol
+  la4 la4. fad8 re4. r8 sol la
+  sib4 re,8 sib'4 do8
+  re4 r8 mi re4
+  do do8 la r4 fa4. r8 sol la
+  sib4 r8 la sol fad~
+  fad2 mi8 fad sol4 re do si2 r4
+  \bar "|."
+}

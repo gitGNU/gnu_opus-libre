@@ -42,17 +42,17 @@ JavaMarcTexte =
   À la cam -- pagne, en va -- can -- ces,
   Chez ma mère et à la dan -- se,
   Et même en na -- geant le crawl
-  Ce n’est fran -- che -- ment pas dr...
+  Ce n’est fran -- che -- ment pas dr…
 
   % [Parlé: ] Par exemple ! Même en chantant ça me reprend !
   Et même en na -- geant le crawl
-  Ce n’est fran -- che -- ment pas dr...
+  Ce n’est fran -- che -- ment pas dr…
 
   % [Parlé: ] Attendez, je prends de l’élan :
   Et même en na -- geant la brasse
   Ça me gêne et m’em -- bar -- rasse
   Et même en na -- geant le crawl
-  Ce n’est fran -- che -- ment pas dr... pas dr...
+  Ce n’est fran -- che -- ment pas dr… pas dr…
 
   % [accablé] C’est franchement pas marrant !
   % [Il se prend la tête dans les mains.]
@@ -117,7 +117,7 @@ TangoList =
     Les se -- con -- des s’é -- grènent, on en comp -- te le nombre.
     En op -- po -- sé, le temps s’en -- vole promp -- te -- ment
     Lors des bel -- les ren -- contres et des très bons mo -- ments.
-    Comme en vo -- tre pré -- sence, mon cher... mon cher... Er -- nest
+    Comme en vo -- tre pré -- sence, mon cher… mon cher… Er -- nest
   }
 }
 
@@ -129,7 +129,8 @@ TangoMarcTexte = \keepWithTag #'Marc \TangoList
 
 %% Song (Flo) -----------------------------------------------------%
 
-SongFloTexte = \lyricmode {
+SongFloTexte =
+\lyricmode {
   Les hom -- mes rê -- vent de con -- tem -- pler
   Mes mè -- ches blon -- des
   %[Note : selon l’interprète du rôle on peut remplacer blondes par sombres,
@@ -178,76 +179,79 @@ SongFloTexte = \lyricmode {
 DiscoList =
 \lyricmode {
   \tag #'Flo {
-    Gos -- se pré -- co -- ce, vers mes onze é -- tés
+    Gos -- se pré -- co -- ce, vers mes onze é -- tés,
     Je me ber -- ce de rê -- ves per -- vers
   }
   \tag #'Brice {
-    Pe -- ti -- te fille très é -- veil -- lée
+    Pe -- ti -- te fille très é -- veil -- lée,
     Elle se ber -- ce de rê -- ves per -- vers
   }
   \tag #'Flo {
-    Dès mes for -- mes dé -- ve -- lop -- pées
+    Dès mes for -- mes dé -- ve -- lop -- pées,
     Je prends des mecs, je me rends femme
   }
   \tag #'Brice {
-    Vir -- gi -- ni -- té vi -- te dis -- si -- pée
+    Vir -- gi -- ni -- té vi -- te dis -- si -- pée,
     Elle prend des mecs, elle se rend femme
   }
   \tag #'Flo {
-    J’of -- fre mon corps, je tombe les hom -- mes
-    Je cé -- lèbre le sexe en fête
+    J’of -- fre mon corps, je tom -- be les hom -- mes_;
+    Je cé -- lè -- bre le sexe en fê -- te
+    Je cé -- lè -- bre le sexe en fê -- te
   }
   \tag #'Brice {
-    Gri -- sée d’ex -- ci -- ter le dé -- sir
-    Elle cé -- lèbre le sexe en fête
+    Gri -- sée d’ex -- ci -- ter le dé -- sir,
+    El -- le cé -- lè -- bre le sexe en fê -- te
   }
   \tag #'Flo {
-    Je dé -- vore les bons mo -- ments
-    Je ré -- vère le temps pré -- sent
+    Je dé -- vo -- re les bons mo -- ments,
+    Je ré -- vè -- re le temps pré -- sent
   }
   \tag #'Brice {
-    C’est le prin -- temps et c’est l’ivresse
-    Elle ré -- vère le temps pré -- sent
+    C’est le prin -- temps et c’est l’i -- vresse,
+    El -- le ré -- vè -- re le temps pré -- sent
   }
   \tag #'Flo {
-    Folle de mon corps trop long -- temps
-    Je re -- jette les ser -- ments éter -- nels
+    Fol -- le de mon corps trop long -- temps,
+    Je re -- jet -- te les ser -- ments é -- ter -- nels
   }
   \tag #'Brice {
-    Pri -- vi -- lège de femme libre
-    Elle re -- jette les ser -- ments éter -- nels
+    Pri -- vi -- lè -- ge de fem -- me li -- bre,
+    El -- le re -- jet -- te les ser -- ments é -- ter -- nels
   }
   \tag #'Flo {
-    En ce mo -- ment, proche des trente,
-    Je rêve d’en -- tente pé -- renne
+    En ce mo -- ment, pro -- che des trente,
+    Je rê -- ve d’en -- ten -- te pé -- ren -- ne
+    Je rê -- ve d’en -- ten -- te pé -- ren -- ne
   }
   \tag #'Brice {
-    Pei -- née de se sen -- tir vieillir
-    Elle rêve d’en -- tente pé -- renne
+    Pei -- née de se sen -- tir vieil -- lir,
+    El -- le rê -- ve d’en -- ten -- te pé -- ren -- ne
   }
   \tag #'Flo {
-    Je pro -- jette de convo -- ler
-    De me ré -- gler et d’être mère
+    Je pro -- jet -- te de con -- vo -- ler,
+    De me ré -- gler et d’ê -- tre mè -- re
+    De me ré -- gler et d’ê -- tre mè -- re
   }
   \tag #'Brice {
-    Il vient l’en -- vie de s’in -- ves -- tir
-    De se ré -- gler et d’être mère
+    Il vient l’en -- vie de s’in -- ves -- tir,
+    De se ré -- gler et d’ê -- tre mè -- re
   }
   \tag #'Flo {
     Oh, com -- ment ren -- con -- trer l’homme ho -- no -- ré
-    D’être le père de mes bé -- bés_!
+    D’ê -- tre le père de mes bé -- bés_!
   }
   \tag #'Brice {
-    Il est si dif -- fi -- cile d’être digne
-    D’être le père de ses bé -- bés_!
+    Il est si dif -- fi -- cile d’ê -- tre digne
+    D’ê -- tre le père de ses bé -- bés_!
   }
   \tag #'Flo {
-    L’homme bon, fort, noble, co -- ol, drôle, sobre,
-    Tendre, zen, leste, ferme et fervent
+    L’hom -- me bon, fort, noble, cool, drôle, sobre,
+    Ten -- dre, zen, le -- ste, ferme et fervent
   }
   \tag #'Brice {
-    Existe-t-il, ce phé -- nix pres -- sen -- ti
-    Tendre, zen, leste, ferme et fervent
+    E -- xi -- \dash ste -- t_-_il, ce phé -- nix pres -- sen -- ti,
+    Ten -- dre, zen, le -- ste, ferme et fervent
   }
 }
 
@@ -259,28 +263,85 @@ DiscoBriceTexte = \keepWithTag #'Brice \DiscoList
 
 %(Flo, Brice, Marc)
 
-%FIXME: TBC
+ChansonList =
+\lyricmode {
+  \tag #'Brice {
+    Di -- tes bien ce -- ci
+  }
+  \tag #'Flo {
+    Ré -- pé -- tons ces mots
+  }
+  \tag #'Marc {
+    Ra -- bâ -- cher ce -- la
+  }
+  \tag #'Brice {
+    Res -- tez pré -- cis
+  }
+  \tag #'Flo {
+    Comme en é -- cho
+  }
+  \tag #'Marc {
+    Ne m’em -- bal -- le pas
+  }
+  \tag #'Brice {
+    Je te dis mes en -- vies,
+    Je te dis mes dé -- sirs
+  }
+  \tag #'Flo {
+    Je te con -- te mes vo -- lon -- tés,
+    Je te con -- te mes ef -- forts
+  }
+  \tag #'Marc {
+    Je te nar -- re mes at -- ten -- tes,
+    Je te nar -- re mes de -- mandes
+  }
+  \tag #'Brice {
+    Je de -- vi -- ne tes i -- dées,
+    Tes i -- dées sen -- sibles
+  }
+  \tag #'Flo {
+    Je com -- prends tes pro -- pos,
+    Tes pro -- pos pro -- fonds
+  }
+  \tag #'Marc {
+    Je par -- ta -- ge tes sché -- mas,
+    Tes sché -- mas é -- lé -- gants
+  }
+  %{
+Dites bien ceci	Répétons ces mots	Rabâcher cela
+Restez précis	Comme en écho	Ne m’emballe pas
+
+Je médite tes titres, tes mérites
+	Je contemple tes fort bons côtés	Je regarde tes grands avantages
+
+Je m’entiche de l’esprit d’élite
+	Je gobe ce corps de Roméo	Je m’attache à cette âme exaltée
+
+Dites bien ceci	Répétons ces mots	Rabâcher cela
+Restez précis	Comme en écho	Ne m’emballe pas
+
+Je décide de tisser des liens
+	Je m’efforce de former des rencontres	Je tâche de lancer des amarres
+
+Je dessine le destin de ces vies
+	Je compose le sort de ces personnes	Je présage l’après de ces âges
+  %}
+}
+
+ChansonMarcTexte = \keepWithTag #'Marc \ChansonList
+ChansonFloTexte = \keepWithTag #'Flo \ChansonList
+ChansonBriceTexte = \keepWithTag #'Brice \ChansonList
 
 %{
 A - O - I
 Traditionnel
 Chanson française
 Chant grégorien
-Electronica
-Italo dance
-Kizomba (Angola)
-Kwaito (Afrique du Sud)
-Maloya (créole - Réunion)
 Milonga
 Adagio
-National socialist
 Oratorio
 Piano
-Polonaise
 Latino
-Rhapsodie
-Rockabilly
-Zarico (créole - Louisiane)
 %}
 
 
@@ -291,7 +352,7 @@ Zarico (créole - Louisiane)
 PasticheIMarcTexte =
 \lyricmode {
   Ne me la- (Hm hm.)
-  Ne me lâ -- che pas...
+  Ne me lâ -- che pas…
   Ça va s’ef -- fa -- cer,
   Je pars ef -- fa -- cer,
   Ça s’en va dé -- jà.
@@ -356,14 +417,14 @@ PasticheIIMarcTexte =
 
 PasticheIIIMarcTexte =
 \lyricmode {
-  Dans la rade d’Am -- ster -- dam
+  Dans la ra -- de d’Am -- ster -- dam,
   Des tas de ma -- tafs chantent
-  Car des rêves les hantent
-  En par -- tant d’Am -- ster -- dam
-  Dans la rade d’Am -- ster -- dam
-  Des tas de ma -- tafs crêvent
-  Char -- gés d’ale et de drame
-  Et la clar -- té se lève
+  Car des rê -- ves les hantent,
+  En par -- tant d’Am -- ster -- dam.
+  Dans la ra -- de d’Am -- ster -- dam,
+  Des tas de ma -- tafs crêvent,
+  Char -- gés d’ale et de drame_;
+  Et la clar -- té se lève.
 }
 
 PasticheIVList =
@@ -441,10 +502,10 @@ PasticheIVList =
     C’est la valse à trente ans
   }
   \tag #'Brice {
-    C’est le twist en cent temps...
+    C’est le twist en cent temps…
   }
   \tag #'Marc {
-    C’est la valse à cent ans...
+    C’est la valse à cent ans…
   }
 }
 
@@ -496,7 +557,8 @@ LiedIIIBriceTexte =
 
 %% Blues (Prune) --------------------------------------------------%
 
-BluesPruneTexte = \lyricmode {
+BluesPruneTexte =
+\lyricmode {
   En -- ten -- dez le blues des gueux
   Les hur -- le -- ments, les mur -- mures
   Des hum -- bles et des té -- né -- breux
@@ -521,7 +583,7 @@ BluesPruneTexte = \lyricmode {
   Que les rè -- gle -- ments cen -- surent
   En -- ten -- dez le blues des gueux
 
-  Culs-ter -- reux, pé -- teux, mer -- deux,
+  \dash Culs -- ter -- reux, pé -- teux, mer -- deux,
   Trem -- blez d’hu -- mer ce qu’en -- durent
   Les humbles et les té -- né -- breux
 
@@ -536,136 +598,136 @@ BluesPruneTexte = \lyricmode {
 
 %% Zouk (Prune, Flo) ----------------------------------------------%
 
-%   Chorus / Punk rock / Soul / Bourrée / Nocturne
+%   Chorus / Punk rock / Soul / Funkcore
 
 ZoukList =
 \lyricmode {
   \tag #'Flo {
-    Je cherche des poses
-    Modernes et drôles
-    Et je te propose
-    Ces formes fofolles
-    Le dos de cochon
-    Le gros polochon
+    Je cher -- che des po -- ses
+    Mo -- der -- nes et drô -- les
+    Et je te pro -- po -- se
+    Ces for -- mes fo -- fol -- les_:
+    Le dos de co -- chon
+    Le gros po -- lo -- chon
     Et les vers de terre
 
-    Emmêlons nos corps
-    Et tentons encore
-    Le bock de rosé
-    Le bonbon osé
+    Em -- mê -- lons nos corps
+    Et ten -- tons en -- core
+    Le bock de ro -- sé
+    Le bon -- bon o -- sé
   }
   \tag #'Prune {
     Je te cède en plus
-    Mes trucs les plus crus :
-    Le mur de culbute
-    Le sculpteur de flûte
+    Mes trucs les plus crus_:
+    Le mur de cul -- bute
+    Le sculp -- teur de flûte
   }
   \tag #'Flo {
-    Le dos de cochon
-    Le gros polochon
+    Le dos de co -- chon
+    Le gros po -- lo -- chon
   }
   \tag #'(Flo Prune) {
     Et les vers de terre
   }
   \tag #'Flo {
-    Je te sens en forme,
-    Restons donc hors-norme :
-    Le bécot félon
-    Le choc de tromblon
+    Je te sens en for -- me,
+    Res -- tons donc \dash hors -- nor -- me_:
+    Le bé -- cot fé -- lon
+    Le choc de trom -- blon
   }
   \tag #'Prune {
-    Le fumeur velu
-    Le nez de merlu
+    Le fu -- meur ve -- lu
+    Le nez de mer -- lu
   }
   \tag #'Flo {
-    Le bock de rosé
-    Le bonbon osé
+    Le bock de ro -- sé
+    Le bon -- bon o -- sé
   }
   \tag #'Prune {
-    Le mur de culbute
-    Le sculpteur de flûte
+    Le mur de cul -- bute
+    Le sculp -- teur de flûte
   }
   \tag #'Flo {
-    Le dos de cochon
-    Le gros polochon
+    Le dos de co -- chon
+    Le gros po -- lo -- chon
   }
   \tag #'(Flo Prune) {
     Et les vers de terre
   }
   \tag #'Flo {
-    Prolongeons l'effort,
-    Mon tendre trésor :
-    Le bol enfoncé
-    Le porc désossé
+    Pro -- lon -- geons l’ef -- fort,
+    Mon ten -- dre tré -- sor_:
+    Le bol en -- fon -- cé
+    Le porc dé -- sos -- sé
   }
   \tag #'Prune {
-    Les feux de recul
-    Les flèches d'Hercule
+    Les feux de re -- cul
+    Les flè -- ches d’Her -- cule
   }
   \tag #'Flo {
-    Le bécot félon
-    Le choc de tromblon
+    Le bé -- cot fé -- lon
+    Le choc de trom -- blon
   }
   \tag #'Prune {
-    Le fumeur velu
-    Le nez de merlu
+    Le fu -- meur ve -- lu
+    Le nez de mer -- lu
   }
   \tag #'Flo {
-    Le bock de rosé
-    Le bonbon osé
+    Le bock de ro -- sé
+    Le bon -- bon o -- sé
   }
   \tag #'Prune {
-    Le mur de culbute
-    Le sculpteur de flûte
+    Le mur de cul -- bute
+    Le sculp -- teur de flûte
   }
   \tag #'Flo {
-    Le dos de cochon
-    Le gros polochon
+    Le dos de co -- chon
+    Le gros po -- lo -- chon
   }
   \tag #'(Flo Prune) {
     Et les vers de terre
   }
   \tag #'Prune {
-    Quelle belle gerbe
-    De gestes superbes !
-    Le déjeuner russe
-    Le dresseur de puces
+    Quel -- le bel -- le ger -- be
+    De ge -- stes su -- per -- bes_!
+    Le dé -- jeu -- ner russe %% 3
+    Le dres -- seur de puces
   }
   \tag #'Flo {
-    Le monstre d'Écosse
-    Le boléro corse
+    Le mon -- stre d’É -- cosse
+    Le bo -- lé -- ro corse
   }
   \tag #'Prune {
-    Le Turc enrhumé
-    Le punk déplumé
+    Le Turc en -- rhu -- mé
+    Le punk dé -- plu -- mé
   }
   \tag #'Flo {
-    Le bol enfoncé
-    Le porc désossé
+    Le bol en -- fon -- cé
+    Le porc dé -- sos -- sé
   }
   \tag #'Prune {
-    Les feux de recul
-    Les flèches d'Hercule
+    Les feux de re -- cul
+    Les flè -- ches d’Her -- cule
   }
   \tag #'Flo {
-    Le bécot félon
-    Le choc de tromblon
+    Le bé -- cot fé -- lon
+    Le choc de trom -- blon
   }
   \tag #'Prune {
-    Le fumeur velu
-    Le nez de merlu
+    Le fu -- meur ve -- lu
+    Le nez de mer -- lu
   }
   \tag #'Flo {
-    Le bock de rosé
-    Le bonbon osé
+    Le bock de ro -- sé
+    Le bon -- bon o -- sé
   }
   \tag #'Prune {
-    Le mur de culbute
-    Le sculpteur de flûte
+    Le mur de cul -- bute
+    Le sculp -- teur de flûte
   }
   \tag #'Flo {
-    Le dos de cochon
-    Le gros polochon
+    Le dos de co -- chon
+    Le gros po -- lo -- chon
   }
   \tag #'(Flo Prune) {
     Et les vers de terre
@@ -752,10 +814,63 @@ BiguinePruneTexte = \keepWithTag #'Prune \BiguineList
 
 %% Musique cubaine (Prune, Brice, Marc) ---------------------------%
 
-%     Changüí - Cumbia - Guajira (musiques cubaines)
-% ----> ou : africaine ?
+CubainMarcTexte =
+\lyricmode {
+  Hi -- er mi -- di, j’é -- mer -- ge du pieu
+  Je me sens le ven -- tre bien vide
+  Je cherche un peu, je cher -- che mieux_:
+  Rien qui pui -- sse_m’em -- plir le bide.
 
-%FIXME: TBC
+  Je des -- cends vi -- si -- ter les rues.
+  Entre l’fleu -- riste et l’ci -- \dash né -- club
+  J’prends une en -- seigne en pleine vue
+  Qui dit ce -- ci_: «Great En -- glish Pub»
+
+  Puis je lis en lettres qui brillent_:
+  Dix heures – mi -- nuit, bière et gin.
+  Der -- rière les vitres, deux filles,
+  Une est en jupe et une en jean.
+
+  Dès que je zieu -- te, c’est dé -- ment,
+  Je m’in -- vente plein de bê -- tises_:
+  Je les re -- tiens, rem -- pli d’ai -- mants,
+  Je les sur -- prends en plein \dash strip -- tease.
+
+  Je de -- viens vi -- te leur in -- time,
+  Je les en -- fi -- le, je les nique.
+  Quel en -- semble, quel -- le dream team,
+  Plus li -- bé -- rés que des beat -- niks_!
+}
+
+CubainBriceTexte =
+\lyricmode {
+  …é -- mer -- ge du pieu_!
+  …ven -- tre bien vide_!
+  …cher -- che mieux_!
+  …t’em -- plir le bide_!
+
+  …les rues_!
+  …ci -- \dash né -- club_!
+  …saigne en pleine vue_!
+  …«Great En -- glish Pub»_!
+
+  …lettres qui brillent_!
+  …bière et gin_!
+  …deux filles_!
+  …une en jean_!
+
+  …c’est dé -- ment_!
+  …plein de bê -- tises_!
+  …pli d’ai -- mants_!
+  …en plein \dash strip -- tease_!
+
+  …leur in -- time_!
+  …tu les niques_!
+  …quelle dream team_!
+  …des beat -- niks_!
+}
+
+CubainPruneTexte = \CubainBriceTexte
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%    Scène XIV   %%%%%%%%%%%%%%%%%%%%%%%%%%

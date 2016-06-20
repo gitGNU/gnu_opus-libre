@@ -6,7 +6,7 @@
 
 BiguinePrune =
 \relative do' {
-  \tempo "Biguine"
+  \tempo "Biguine" 2 = 92
   R\breve*2
   sol'4 la8 re,~ re4 mi re la' do2
   fa,4 si,8 la'~ la4 fa si, do si'2
