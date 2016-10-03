@@ -1,0 +1,7 @@
+\new StaffGroup <<
+  \newStaff $"Cs"
+  \newStaff $"Css"
+  \newStaff $"Cb"
+  \newStaff $"Cbb"
+>>
+

@@ -1,0 +1,41 @@
+%-- Arkipel -- 0_structure.ly -------------------------------------%
+% (c) 2016 Valentin Villenave <valentin@villenave.net>
+
+Titre = "Arkipel"
+Soustitre = "pour quatre contrebasses"
+Date = "Automne 2016"
+
+Mesures = {
+  \tempo "Largo" 4 = 100
+  \time 3/4
+  s2.*9
+  \mark \default
+  s2.*9
+  s2.*6 s2.*4
+  \mark \default
+  \time 4/4 s1
+  \time 3/4 s2.
+  \time 4/4 s1
+  \time 3/4 s2.*2
+  \time 2/4 s2
+  \time 3/4 s2.*6
+  \time 2/4 s2
+  \mark \default
+  \time 3/4 s2.
+  s2.*4^"poco animando..."
+  \time 2/4 s2*4
+  \time 3/4 s2.
+  \time 2/4 s2*5
+  \time 3/4 s2.
+  \mark \default
+  s2.*3
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/4 s2*2
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \bar "|."
+}
