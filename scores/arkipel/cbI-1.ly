@@ -46,7 +46,54 @@ Cs =
   mib2.~ mib2 r8 mib~
   mib4 lab, mib'8 r
   fab reb4 do8
-  mib2.~ mib4 reb do8 mib4 mi8~
-  mi2 mi4 red8 fad4 sol8
-  mi4. fa8 re dod mi4 re
+  mib2.~ mib2 lab,8 mib'~
+  mib4 reb do8 mib~
+  mib mi re dod
+  mi4. la,8 mi' si re4
+  dod8 mi4 fa8 re si
+  mi4 mi8 re mi re dod mi4 fa8
+  re sol fad fa mi4 r8 re4 dod8
+  mi fa re4 r8 mi4 re8
+  fad4. mi8~ mi4~ mi red fad
+  sol mi2 red4 fad2~ fad8 sol mi red r4
+  <mib sol> q2 q q4
+  \t 4 {r mi8( dod) fa( re)}
+  <mib sol>4 q2 q
+  r8 mi:16 red: fad:
+  \t 4 {
+    sol mi sol mi sol mi sol mi sol
+    mi sol mi sol mi sol mi sol mi
+    sol mi si sold si mi
+  } sol mi sol mi
+  sol r sol mi sol mi
+  sol r sol mi sol mi
+  sol4 r2
+  fa4. sol8~ sol2~ sol4 r
+  R2*3 R2.*2
+  \clef bass
+  \t {fad,,,4-> fad8->} r fad r4 fad
+  r8 sib mib16 mi fad la
+  \t {fad,4-> fad8->} r fad-> r fad->
+  r sib16 sib mib mib mi8
+  \t 4 {r fad,-> fad-> r fad-> r}
+  dod''16-> si lad8 r re16-> dod si lad r8
+  mi'16-> re mi si-> la si sib-> lab sib fa-> mib fa
+  \improvisationOn
+  \t {mi,4^"perc." mi8} r mi
+  \improvisationOff
+  r do'16 do fad fad si8
+  \improvisationOn
+  \t {mi,,4 mi8}
+  \improvisationOff
+  r mi'16 fa sol sold lad si
+  fad, mid' fad, mid' sold la do dod
+  fad,, mid' fad, la' si re mi sol
+  fad,, mid' fad, la' dod mi sold si
+  mi,, la si do dod fad \clef treble sol sold
+  lad red \clef bass mi,, sol la dod re fa
+  \clef treble fad sib do mib
+  \clef bass mi,, sol si do
+  \clef treble re fa sol lab
+  do mib \clef bass mi,, sol
+  la si do dod re8 r r4
 }

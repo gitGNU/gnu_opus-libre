@@ -30,12 +30,44 @@ Mesures = {
   \mark \default
   s2.*3
   \time 2/4 s2
+  \time 3/4 s2.*3
+  \time 2/4 s2*3
+  \time 3/4 s2.
+  \time 2/4 s2
+  \time 3/4 s2.
+  \time 2/4 s2
   \time 3/4 s2.
   \time 2/4 s2*2
-  \time 3/4 s2.
+  \time 3/4 s2.*5
+  \mark \default
+  \tempo "Tempo I"
+  s2.*2
   \time 2/4 s2
   \time 3/4 s2.
-  \time 2/4 s2
+  \time 2/4 s2*2
+  \time 3/4 s2.*2
+  \time 2/4 s2*2
+  \time 3/4 s2.*3
+  \time 2/4 s2*6
+  \time 3/4 s2.*2
+  \mark \default
+  \time 2/4 s2*3
   \time 3/4 s2.
+  \time 2/4 s2*2
+  \time 3/4 s2.*2
+  \time 2/4 s2*2
+  \time 3/4 s2.
+  \time 2/4 s2*7
+  \time 3/4 s2.
+  \time 4/4
+  \mark \default
+  s1^"poco allargando..."
+  \time 3/4 s2.*2
+  \time 4/4 s1*2
+  \time 3/4 s2.
+  \time 2/4 s2
+  \tempo "Tempo I"
+  \time 3/4 s2.*22
+  \time 2/4 s2*5
   \bar "|."
 }
