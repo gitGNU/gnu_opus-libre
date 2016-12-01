@@ -1,6 +1,6 @@
 \new StaffGroup <<
-  \newStaff $"Cs"
-  \newStaff $"Css"
+  \smart \transpose re do \newStaff $"Cs"
+  \smart \transpose re do \newStaff$"Css"
   \newStaff $"Cb"
   \newStaff $"Cbb"
 >>

@@ -110,7 +110,176 @@ Cbb =
   re8 re r4
   re8 re r4
   re8 re r4
-  re8 re r re re4
+  re8 re
   \improvisationOff
+  \clef treble
+  do''16 red mi fa solb lab sib reb
+  \improvisationOn \clef bass
+  re,,,4
+  \improvisationOff \xNotesOn
+  re''^"sul ponti. col legno" re re
+  re8 \xNotesOff <la, re>-+
+  \xNotesOn re' \xNotesOff <la, re>-+
+  \xNotesOn re' \improvisationOn re,,
+  re \improvisationOff \xNotesOn re'' r
+  \improvisationOn re,,
+  \improvisationOff \xNotesOn re''4
+  \improvisationOn re,,8
+  \improvisationOff \xNotesOn re''16
+  \xNotesOff <la, re>-+ \xNotesOn re'8
+  \improvisationOn re,,
+  \improvisationOff \xNotesOn re''16
+  \xNotesOff <la, re>-+ \xNotesOn re'8
+  << {\xNotesOn re8 re} \\ {\improvisationOn re,,8 re} >>
+  \improvisationOn re4
+  \improvisationOff \xNotesOn
+  re''8 \xNotesOff <la, re>-+
+  \xNotesOn re'4 re8 \xNotesOff <la, re>-+
+  \xNotesOn re' \improvisationOn re,,
+  \improvisationOff \xNotesOn re''
+  \xNotesOff <la, re>-+ \xNotesOn re'
+  \improvisationOn re,, re
+  \improvisationOff \xNotesOn re'' re
+  \improvisationOn re,,
+  \improvisationOff \xNotesOn re'' re
+  r << {\xNotesOn re} \\ {\improvisationOn re,,} >>
+  r << {\xNotesOn re''} \\ {\improvisationOn re,,} >>
+  r << {\xNotesOn re''} \\ {\improvisationOn re,,} >>
+  r << {\xNotesOn re''} \\ {\improvisationOn re,,} >>
+  << {\xNotesOn re'' re16 \xNotesOff <la, re>-+}
+     \\ {\improvisationOn re,8 s} >>
+  re''16 \xNotesOff <la, re>-+ \xNotesOn re'
+  \improvisationOn re,, re8
+  \improvisationOff \xNotesOn re''16
+  \xNotesOff <la, re>-+ \xNotesOn re'
+  \xNotesOff <la, re>-+ \xNotesOn re'
+  \improvisationOn re,, re8
+  \improvisationOff \xNotesOn re''16
+  \xNotesOff <la, re>-+ \xNotesOn re'8
+  \improvisationOn re,,
+  \improvisationOff \xNotesOn re''16
+  \xNotesOff <la, re>-+ \xNotesOn re'8
+  \xNotesOff r
+  << {\xNotesOn re re re} \\ {\improvisationOn re,, re re} >>
+  R2.*3
+  \clef treble
+  r4 <sol''' sol>2~ q2 q4 q q q
+  \t 4 {
+    <re,, sol''\CaV>4~ <re la''\CaV>8~ la'' re,, la''
+    re,, do' la~\harmonic la\harmonic do re,
+    re la' do la\harmonic do la
+  } re, la' do4 la'~\CaV la2.^"(vib.)"
+  mi'2.~\CaV mi~\CaV mi4\CaV r2
+  r2 <sol sol>4~ q2 r4
+  \clef bass
+  \t 4 {
+    dod,,8 sold dod, sold' dod, sold
+    dod sold dod sold' dod, sold'
+    dod sold dod, sold' dod, sold
+    dod sold' dod, sold' dod, sold
+    dod sold dod sold' dod, sold
+    dod sold dod sold' dod, sold
+  } dod sold si fad la mi
+  \t 4 {
+    la mi la mi' la, mi
+    la mi la mi' la, mi
+    la mi sib' mi, do' mi,
+    la mi la mi' la, mi
+    la mi la mi' la, mi
+    la mi sol mi fad mi
+    la mi la mi sol mi sol mi fad
+    la mi sib' la mi sol mi fad mi
+    la mi sol mi fad mi la mi sib'
+    sol mi sol mi sol mi
+    fad mi fad mi fad mi
+  }
+  fa16 mi fa mi \repeat tremolo 2 {fa mi}
+  \repeat tremolo 4 {fa mi}
+  \repeat tremolo 4 {fa mi}
+  \t {fa4 mi fa} r4
+  sol16 lab sib sol fa8 mi16 sol lab fa8 mi16
+  sol si dod mi, re' mib fa lab, sib' la do, fad~
+  fad8 sol,16 lab sib sol fa8 mi16 sol lab fa~
+  fa mi sib' sol lab fad' mib reb do re sib dod
+  sol8 fa mi16 sol lab fa~ fa mi sib' lab
+  sol lab sib dob sib lab sol fa~ fa mi sol lab
+  fa8. mi16 sib' lab sol8 fa16 dob' sib lab
+  sol8 fa mi16 sol lab fa~ fa mi sol lab
+  sib dob sib lab sol fa sib lab sol fa sib lab
+  sol fa lab sol fa lab sol fa lab sol lab sol
+  sib mi, red' si la fad' lab sol fa' re, do' dod
+  mi8 sib la fa mib do re dod si sold fad sol
+  mi-+ \xNotesOn re'' re re re \improvisationOn
+  re,, \improvisationOff \xNotesOn re'' re re
+  \improvisationOn re,, \improvisationOff \xNotesOn re'' re
+  \improvisationOn re,, \improvisationOff \xNotesOn re''
+  r8 \xNotesOff fa,16 fa mi'8 r
+  \improvisationOn re,, \improvisationOff \xNotesOn re'' re16
+  \improvisationOn re,, \improvisationOff \xNotesOn re''8 re16
+  \improvisationOn re,, \improvisationOff \xNotesOn re''8
+  << {\xNotesOn re re} \\ {\improvisationOn re,, re} >>
+  \xNotesOff r4 \t {lab''' sol fad}
+  \improvisationOn re,, re8 re re re
+  \improvisationOff r8 fa''4.
+  \clef treble
+  sib2 reb4~ reb sib reb
+  sib2 sib4 reb sib2
+  sib4. reb sib reb sib reb
+  sib reb sib reb sib reb
+  sib reb sib reb sib reb sib reb
+  dod4 la dod dod la dod dod dod8 la dod4
+  dod la red dod la red dod4 dod8 la red la
+  dod4 la red dod la dod
+  <lab re>4. do <lab re> do <lab re> do
+  <lab re> do <lab re>2 r4
+  sol mi sol mi4. sol mi sol
+  mi sol mi sol mi4 sol mi~ mi sol mi
+  \clef bass
+  sol,4. mi' sol, mi
+  sol,2.~ sol2 r4
+  red''8 si red si red4 r
+  sol,,2 fa4~ fa8 mi sol lab sib4
+  r8 la4 sol8 sib do la4 \t {sold4 si8} r4
+  la8 sold fad fa sol4
+  r8 fa4 mi8 lab sib \t {sol4 la dod~}
+  dod2~ <dod fad\harmonic>~ q4 r
+  si8_"(ordin.)" dod re mi fa si,
+  dod re mi fa si, re
+  mi fa sol sib si, re
+  mi fa sol sib do si,
+  re mi fa sol sib do
+  reb si, re mi fa sol
+  sib do \clef treble
+  dod red fad sold
+  sol, sib do dod red fad
+  sold la si do, dod red
+  fad sold la si re4~
+  re2.~ re4 r8 si4 mi8
+  re2.~ re8 mi \t {si4 lab re~}
+  re2.~ re4 r dod8 si
+  \t {lad4 sold8~} sold4 si mi re2~ re2.~ re~
+  re~ re~ re~ re~
+  re~ re4 mi re~ re mi re~ re mi re~
+  re mi re r re mi
+  do mi do fa do mi do fa do
+  sold4. red' sold, red' sold,4 red'2
+  sold, red'4~ red sold, red'
+  r4 r8 red8~ red4
+  fa, do' fa, do' fa, do'~ <fa, do'>4. q
+  <reb lab'>2.~ q4. do' <reb, lab'> do'
+  <reb, lab'>2 q4~ q q2 <dod la'>2.~ q r4
+  fad la fad la fad la
+  fad la fad la fad la
+  mid sold mid sold mid fad
+  \clef bass
+  r4 r8 la,,4.\laissezVibrer ^"pizz."
+  <mi sol'>2\laissezVibrer s4
+  \clef treble
+  sol'''2.~\CaV sol~\CaV sol~\CaV sol4\CaV r8
+  sib,^"pizz. al fine" dod mib sol4 r8 sol mib sib
+  sol4\CaV r2 R2. r4 r8
+  sib re mi sold4 r8 sold mi sib
+  sol4\CaV r2 R2.*2 r4 r8
+  si? dod sold' lad4 r2
 }
 
