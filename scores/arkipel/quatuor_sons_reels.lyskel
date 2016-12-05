@@ -1,10 +1,13 @@
 \new StaffGroup <<
   \new GrandStaff \with {
-    instrumentName =  "Cb. en ré  "
+    instrumentName =  \markup \center-column {
+      "Cb. en ré  "
+      "(sons réels)"
+    }
   } <<
-    \smart \transpose re do
+   % \smart \transpose re do
       \newStaff $"Cs"
-    \smart \transpose re do
+   % \smart \transpose re do
       \newStaff$"Css"
   >>
   \new GrandStaff \with {
