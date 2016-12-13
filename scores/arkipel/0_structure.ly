@@ -1,6 +1,7 @@
 %-- Arkipel -- 0_structure.ly -------------------------------------%
 % (c) 2016 Valentin Villenave <valentin@villenave.net>
 
+%#(set-global-staff-size 22.5)
 #(set-global-staff-size 16.5)
 
 #(set-default-paper-size "a4" 'landscape)
@@ -16,6 +17,11 @@ CsInstr  = "1"
 CssInstr = "2"
 CbInstr  = "3"
 CbbInstr = "4"
+
+partieITitre = "Contrebasse en ré — 1"
+partieIITitre = "Contrebasse en ré — 2"
+partieIIITitre = "Contrebasse en ut — 3"
+partieIIIITitre = "Contrebasse en ut — 4"
 
 \paper { first-page-number = #-1 }
 

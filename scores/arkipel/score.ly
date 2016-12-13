@@ -4,3 +4,4 @@
 skel = "quatuor"
 input = "fr"
 structure = '("")
+structure = '("partieI|" "partieII|" "partieIII|" "partieIIII")

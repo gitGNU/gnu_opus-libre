@@ -30,8 +30,8 @@ Cs =
   r4\! mi8(\<\upbow dod mi4)
   <fad, si>2--\mf r4
   q4.-- q--
-  r8 q~-- q2->--
-  q4 r8 mi\p ^"pizz." re si
+  r8 q~-- q2
+  q4->-- r8 mi\p ^"pizz." re si
   \clef bass
   dod fad, dod' fad,
   r dod' fad, dod'
