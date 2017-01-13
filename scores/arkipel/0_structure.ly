@@ -1,10 +1,10 @@
 %-- Arkipel -- 0_structure.ly -------------------------------------%
 % (c) 2016 Valentin Villenave <valentin@villenave.net>
 
-%#(set-global-staff-size 22.5)
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 22.5)
+%#(set-global-staff-size 16)
 
-#(set-default-paper-size "a4" 'landscape)
+%#(set-default-paper-size "a4" 'landscape)
 
 \header {
   title = "Arkipel"

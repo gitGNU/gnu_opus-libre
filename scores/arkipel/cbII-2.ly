@@ -82,11 +82,11 @@ Cbb =
   q16->--~ q8 q->--~ q16 q8.->--~
   <mi sol'>8 q-> q-> q->~ q2~^"ten." q r4
   r8. mi16->--~\< mi8 mi(->-- mi->--) mi(->--~\ff
-  mi16 sol do mib) do( sol mi sol)
-  mi( sol) mi( sol)
-  mi( sol) do mib do( sol) mi sol
-  mi( sol) do mib do( sol) mi sol
-  mi( sol) mi sol mi( sol) do mib
+  mi16 sol do mib) do(\> sol mi sol)
+  mi(\mp sol) mi( sol)
+  mi(\< sol) do mib\fp do( sol) mi sol
+  mi(\< sol) do mib\fp do( sol) mi sol
+  mi( sol) mi sol mi(\< sol) do mib\fp
   do( sol) mi sol mi( sol) do sol
   \repeat tremolo 4 {mi( sol)}
   \t {mi8-- sol-- r} r4
@@ -277,7 +277,7 @@ Cbb =
   r8 la4(-> sol8) sib( do) la4--\upbow
   \t {sold4(\> si8)\!} r4
   la8(\upbow sold) fad-- fa-- sol4--
-  r8 fa4(\upbow\dyn "(f)" mi8) lab(\< sib)
+  r8 fa4(\upbow\dyn "(f)" mi8) lab\< sib
   \t {sol4(-- la--) dod--\!~}
   dod2~ <dod fad\harmonic>~ q4 r
   si8(\dyn "f_(ordin.)" dod re mi fa) si,(
@@ -320,5 +320,5 @@ Cbb =
   sol4\!\CaV r2 R2. r4 r8
   sib\< re mi sold4\mp r8 sold\> mi sib
   sol4\!\CaV r2 R2.*2 r4 r8
-  si?\p dod sold' lad4 r2
+  si?\p\> dod sold' lad4\! r2
 }

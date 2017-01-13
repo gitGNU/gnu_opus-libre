@@ -246,10 +246,12 @@ Css =
   la''2.(\dyn "mp_solo" ^"arco" sol)
   fad4( la sib) sol2( fad4~ fad2) r4
   R2.*2 \clef bass
-  r2 r8 dod,,\p\CaV ^"pizz."
+  r2 r8^\markup {
+    pizz. (harm. \concat { 5 \super te )}
+  } dod,,\p\CaV
   \t {si'4\CaV fad\CaV mi'\CaV} r
   R2.
-  mi,4 r si r fad r
+  mi,4^"(pizz. ordin.)" r si r fad r
   fa'8 do sol fad' r dod r sold r4 sol'
   re r la \t {sold' red lad} r
   R2. \clef treble
@@ -272,7 +274,7 @@ Css =
   r8 la4(-> sol8) sib( do) la4--\upbow
   \t {sold4(\> si8)\!} r4
   la8(\upbow sold) fad-- fa-- sol4--
-  r8 fa4(\upbow\dyn "(f)" mi8) lab(\< sib)
+  r8 fa4(\upbow\dyn "(f)" mi8) lab\< sib
   \t {sol4(-- la--) dod--\!~}
   dod2~ <dod mi\harmonic>~ q4 r
   \clef treble
@@ -336,6 +338,6 @@ Css =
   <si,, fad''>4\!\plak r \clef treble fa''
   mi(\pp ^"arco" sol mi sol mi sol)
   mi( sol mi sol mi8)\noBeam
-  sol\p ^"pizz." mi fa
-  fad4 r2
+  sol\p\> ^"pizz." mi fa
+  fad4\! r2
 }

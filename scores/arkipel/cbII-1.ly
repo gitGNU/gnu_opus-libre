@@ -106,13 +106,13 @@ Cb =
   } mi\! r
   \t {mib'(\> do sol)} mi\! r
   \t 4 {mib'( do sol) mi(\< sol do)}
-  mib\! r mib,16(\p do) sol mi
-  sol8 r mib'16( do) sol mi
+  mib\! r mib,16(\fp do) sol mi
+  sol8 r mib'16(\fp do) sol mi
   \repeat tremolo 4 {sol( mi)}
   \repeat tremolo 4 {sol( mi)}
-  \repeat tremolo 6 {sol( mi)}
+  \repeat tremolo 6 {sol(\cresc mi)}
   \repeat tremolo 4 {sol( mi)}
-  \t {sol8-- mi-- sol--}
+  \t {sol8--\ff mi-- sol--}
   \t {mi4->\downbow mi8->\downbow}
   r mi->\downbow r4 mi->\downbow
   r8 sold-.\<\upbow dod16 re mi sol
@@ -253,7 +253,7 @@ Cb =
   r8 la4(-> sol8) sib( do) la4--\upbow
   \t {sold4(\> si8)\!} r4
   la8(\upbow sold) fad-- fa-- sol4--
-  r8 fa4(\upbow\dyn "(f)" mi8) lab(\< sib)
+  r8 fa4(\upbow\dyn "(f)" mi8) lab\< sib
   \t {sol4(-- la--) dod--\!~}
   dod2~ <re,\harmonic dod'>~ q4 r
   re'8:16\ff\> do: si: do: si: la:
@@ -319,6 +319,6 @@ Cb =
   \clef treble sib''8\> lab
   sol4(\pp ^"arco" mi sol mi sol mi)
   sol( mi sol mi sol8)\noBeam
-  sold\p ^"pizz." la lad
-  si4 r2
+  sold\p\> ^"pizz." la lad
+  si4\! r2
 }

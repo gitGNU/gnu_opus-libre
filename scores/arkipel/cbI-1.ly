@@ -161,7 +161,7 @@ Cs =
   \repeat tremolo 2 {mi fa}
   \repeat tremolo 2 {sol fad}
   \t {sol8--\< sol(-- sol--)}
-  fadd->\f sold,(-. dod,-.) mid'4-> sold,8-.
+  fadd->\f^"solo" sold,(-. dod,-.) mid'4-> sold,8-.
   fadd'(-> sold-.) dod,,-- mid'-. sold,-- fadd'(
   sold) mid-. dod,--\downbow mid'-. sold, redd'-.
   fadd( sold) mid-. dod,-- sold''( lad)
@@ -234,7 +234,7 @@ Cs =
   r8 la4(-> sol8) sib( do) la4--\upbow
   \t {sold4(\> si8)\!} r4
   la8(\upbow sold) fad-- fa-- sol4--
-  r8 fa4(\upbow\dyn "(f)" mi8) lab(\< sib)
+  r8 fa4(\upbow\dyn "(f)" mi8) lab\< sib
   \t {sol4(-- la--) dod--\!~}
   dod2~ <mi,\harmonic dod'>~ q4 r
   mi'8:16\ff\> re: dod: re: dod: si:
@@ -277,5 +277,5 @@ Cs =
   r4 r8 dod'\< fa la
   do4\mp r8 do\> la dod,
   mi,4\!\CaV r2 R2.*2 r4 r8
-  re'\p fa do' red4 r2
+  re'\p\> fa do' red4\! r2
 }
